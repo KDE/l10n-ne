@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkcal\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-10 03:17+0100\n"
+"POT-Creation-Date: 2007-01-27 02:44+0100\n"
 "PO-Revision-Date: 2007-01-30 11:30+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -49,7 +49,8 @@ msgstr "परीक्षार्थ"
 msgid "Delegated"
 msgstr "प्रत्यायोजन गरिएको"
 
-#: attendee.cpp:89 htmlexport.cpp:354 incidence.cpp:673
+#: attendee.cpp:89 htmlexport.cpp:358 incidence.cpp:671
+#: incidenceformatter.cpp:428
 msgid "Completed"
 msgstr "समाप्त"
 
@@ -84,10 +85,12 @@ msgstr "unknown@nowhere"
 #: calendarlocal.cpp:554
 msgid ""
 "The timezone setting was changed. In order to display the calendar you are "
-"looking at in the new timezone, it needs to be saved. Do you want to save "
-"the pending changes or rather wait and apply the new timezone on the next "
-"reload?"
-msgstr "टाइमजोन सेटिङ परिवर्तन भएको छ । क्यालेन्डर प्रदर्शन गर्न तपाईँ नयाँ टाइमजोनमा हेरिरहनुभएको छ, यो बचत गर्न आवश्यक छ । तपाईँ विचारधीन परिवर्तनहरू बचत गर्न चाहनुहुन्छ वा प्रतिक्षा गरि पछिल्लो रिलोडमा नयाँ टाइमजोन लागू गर्न चाहनुहुन्छ?"
+"looking at in the new timezone, it needs to be saved. Do you want to save the "
+"pending changes or rather wait and apply the new timezone on the next reload?"
+msgstr ""
+"टाइमजोन सेटिङ परिवर्तन भएको छ । क्यालेन्डर प्रदर्शन गर्न तपाईँ नयाँ टाइमजोनमा "
+"हेरिरहनुभएको छ, यो बचत गर्न आवश्यक छ । तपाईँ विचारधीन परिवर्तनहरू बचत गर्न "
+"चाहनुहुन्छ वा प्रतिक्षा गरि पछिल्लो रिलोडमा नयाँ टाइमजोन लागू गर्न चाहनुहुन्छ?"
 
 #: calendarlocal.cpp:560
 msgid "Save before applying timezones?"
@@ -193,192 +196,200 @@ msgstr "आईक्यालेन्डर संस्करण २.० प�
 msgid "Restriction violation"
 msgstr "सीमा भङ्ग"
 
-#: htmlexport.cpp:148
+#: htmlexport.cpp:149
 msgid ""
 "_: month_year\n"
 "%1 %2"
 msgstr "%1 %2"
 
-#: htmlexport.cpp:223
+#: htmlexport.cpp:224
 msgid "Start Time"
 msgstr "सुरु गर्नुहोस्"
 
-#: htmlexport.cpp:224
+#: htmlexport.cpp:225
 msgid "End Time"
 msgstr "अन्तिम गर्नुहोस्"
 
-#: htmlexport.cpp:225
+#: htmlexport.cpp:226
 msgid "Event"
 msgstr "घटना"
 
-#: htmlexport.cpp:227 htmlexport.cpp:360 incidenceformatter.cpp:289
+#: htmlexport.cpp:228 htmlexport.cpp:364 incidenceformatter.cpp:327
+#: incidenceformatter.cpp:406
 msgid "Location"
 msgstr "स्थान"
 
-#: htmlexport.cpp:231 htmlexport.cpp:364 incidenceformatter.cpp:104
+#: htmlexport.cpp:232 htmlexport.cpp:368
 msgid "Categories"
 msgstr "कोटि"
 
-#: htmlexport.cpp:235 htmlexport.cpp:368 incidenceformatter.cpp:177
+#: htmlexport.cpp:236 htmlexport.cpp:372 incidenceformatter.cpp:157
 msgid "Attendees"
 msgstr "सहभागि"
 
-#: htmlexport.cpp:352
+#: htmlexport.cpp:356
 msgid "Task"
 msgstr "कार्य"
 
-#: htmlexport.cpp:353
+#: htmlexport.cpp:357 incidenceformatter.cpp:419
 msgid "Priority"
 msgstr "प्राथमिकता"
 
-#: htmlexport.cpp:356
+#: htmlexport.cpp:360
 msgid "Due Date"
 msgstr "देयमिति"
 
-#: htmlexport.cpp:387
+#: htmlexport.cpp:391
 msgid "Sub-Tasks of: "
 msgstr "यसको उप-कार्य: "
 
-#: htmlexport.cpp:437
+#: htmlexport.cpp:441
 msgid "Sub-Tasks"
 msgstr "उप-कार्य"
 
-#: htmlexport.cpp:453
+#: htmlexport.cpp:454 incidenceformatter.cpp:429
 msgid "%1 %"
 msgstr "%1 %"
 
-#: htmlexport.cpp:604
+#: htmlexport.cpp:605
 msgid "This page was created "
 msgstr "यो पृष्ठ सिर्जना गरिएको थियो "
 
-#: htmlexport.cpp:612 htmlexport.cpp:614
+#: htmlexport.cpp:613 htmlexport.cpp:615
 msgid "by <a href=\"mailto:%1\">%2</a> "
 msgstr "<a href=\"mailto:%1\">%2</a> द्वारा"
 
-#: htmlexport.cpp:617
+#: htmlexport.cpp:618
 msgid "by %1 "
 msgstr "%1 द्वारा"
 
-#: htmlexport.cpp:621
+#: htmlexport.cpp:622
 msgid "with <a href=\"%1\">%2</a>"
 msgstr "<a href=\"%1\">%2</a> सँग"
 
-#: htmlexport.cpp:625
+#: htmlexport.cpp:626
 #, c-format
 msgid "with %1"
 msgstr "%1 सँग"
 
-#: icalformat.cpp:130
+#: htmlexport.cpp:701
+msgid ""
+"_: list of holidays\n"
+"%1, %2"
+msgstr ""
+
+#: icalformat.cpp:131
 msgid "Could not save '%1'"
 msgstr "'%1' बचत गर्न सकेन"
 
-#: icalformat.cpp:266
+#: icalformat.cpp:269
 msgid "libical error"
 msgstr "लिबिकल त्रुटि"
 
-#: icalformatimpl.cpp:1889
+#: icalformatimpl.cpp:1916
 msgid "Expected iCalendar format"
 msgstr "अपेक्षित आइक्यालेन्डर ढाँचा"
 
-#: incidence.cpp:671
+#: incidence.cpp:669
 msgid ""
 "_: incidence status\n"
 "Tentative"
 msgstr "परीक्षार्थ"
 
-#: incidence.cpp:672
+#: incidence.cpp:670
 msgid "Confirmed"
 msgstr "यकीन भएको"
 
-#: incidence.cpp:674
+#: incidence.cpp:672
 msgid "Needs-Action"
 msgstr "कार्य-आवश्यक पर्दछ"
 
-#: incidence.cpp:675
+#: incidence.cpp:673
 msgid "Canceled"
 msgstr "रद्द गरियो"
 
-#: incidence.cpp:676
+#: incidence.cpp:674
 msgid "In-Process"
 msgstr "प्रक्रियामा"
 
-#: incidence.cpp:677
+#: incidence.cpp:675
 msgid "Draft"
 msgstr "ड्राफ्ट"
 
-#: incidence.cpp:678
+#: incidence.cpp:676
 msgid "Final"
 msgstr "अन्तिम"
 
-#: incidence.cpp:706
+#: incidence.cpp:704
 msgid "Public"
 msgstr "सार्वजनिक"
 
-#: incidence.cpp:708
+#: incidence.cpp:706
 msgid "Private"
 msgstr "व्यक्तिगत"
 
-#: incidence.cpp:710
+#: incidence.cpp:708
 msgid "Confidential"
 msgstr "गोप्य"
 
-#: incidence.cpp:712
+#: incidence.cpp:710
 msgid "Undefined"
 msgstr "अपरिभाषित"
 
-#: incidenceformatter.cpp:102
-msgid "Category"
-msgstr "कोटि"
-
-#: incidenceformatter.cpp:170
+#: incidenceformatter.cpp:150
 msgid "Organizer"
 msgstr "आयोजक"
 
-#: incidenceformatter.cpp:199
+#: incidenceformatter.cpp:179
 msgid "Show mail"
 msgstr "पत्र देखाउनुहोस्"
 
-#: incidenceformatter.cpp:297 incidenceformatter.cpp:307
-#: incidenceformatter.cpp:312
+#: incidenceformatter.cpp:278 incidenceformatter.cpp:288
+#: incidenceformatter.cpp:293
 msgid "Time"
 msgstr "समय"
 
-#: incidenceformatter.cpp:298 incidenceformatter.cpp:308
-#: incidenceformatter.cpp:314
+#: incidenceformatter.cpp:279 incidenceformatter.cpp:289
+#: incidenceformatter.cpp:295
 msgid ""
 "_: <beginTime> - <endTime>\n"
 "%1 - %2"
 msgstr "%1 - %2"
 
-#: incidenceformatter.cpp:302 incidenceformatter.cpp:321
+#: incidenceformatter.cpp:283 incidenceformatter.cpp:302
 msgid "Date"
 msgstr "मिति"
 
-#: incidenceformatter.cpp:303 incidenceformatter.cpp:322
+#: incidenceformatter.cpp:284 incidenceformatter.cpp:303
 #, c-format
 msgid ""
 "_: date as string\n"
 "%1"
 msgstr "%1"
 
-#: incidenceformatter.cpp:330
+#: incidenceformatter.cpp:311
 msgid "Birthday"
 msgstr "जन्मदिन"
 
-#: incidenceformatter.cpp:346
-#, c-format
+#: incidenceformatter.cpp:320 incidenceformatter.cpp:399
+#, fuzzy
+msgid "Description"
+msgstr "वर्णन:"
+
+#: incidenceformatter.cpp:334 incidenceformatter.cpp:413
+#, fuzzy, c-format
 msgid ""
-"_n: 1 category\n"
-"%n categories"
+"_n: 1 Category\n"
+"%n Categories"
 msgstr ""
 "१ कोटि\n"
 "%n कोटि"
 
-#: incidenceformatter.cpp:355
-msgid "Next Occurrence"
-msgstr "पछिल्लो घटना"
+#: incidenceformatter.cpp:343 incidenceformatter.cpp:436
+msgid "Next on"
+msgstr ""
 
-#: incidenceformatter.cpp:367
+#: incidenceformatter.cpp:364 incidenceformatter.cpp:457
 #, c-format
 msgid ""
 "_n: 1 attachment\n"
@@ -387,58 +398,39 @@ msgstr ""
 "१ सङ्लग्नता\n"
 "%n सङ्लग्नता"
 
-#: incidenceformatter.cpp:373 incidenceformatter.cpp:412
+#: incidenceformatter.cpp:370 incidenceformatter.cpp:463
 #, c-format
 msgid "Creation date: %1."
 msgstr "सिर्जना मिति: %1."
 
-#: incidenceformatter.cpp:384 resourcelocalconfig.cpp:49
-#: resourcelocaldirconfig.cpp:47
-msgid "Location:"
-msgstr "स्थान:"
+#: incidenceformatter.cpp:384
+msgid "Due on"
+msgstr ""
 
-#: incidenceformatter.cpp:389
-#, c-format
-msgid "<b>Due on:</b> %1"
-msgstr "<b>यस अवधिमा:</b> %1"
-
-#: incidenceformatter.cpp:397
-msgid "<p><b>Priority:</b> %2</p>"
-msgstr "<p><b>प्राथमिकता:</b> %2</p>"
-
-#: incidenceformatter.cpp:398 incidenceformatter.cpp:586
+#: incidenceformatter.cpp:423 incidenceformatter.cpp:644
 msgid "Unspecified"
 msgstr "निर्दिष्ट नगरिएको"
 
-#: incidenceformatter.cpp:400
-msgid "<p><i>%1 % completed</i></p>"
-msgstr "<p><i>%1 % पूरा भयो</i></p>"
-
-#: incidenceformatter.cpp:407
-#, c-format
-msgid "This is a recurring to-do. The next occurrence will be on %1."
-msgstr "यो दोहोरिने गर्नुपर्ने कार्य हो । पछिल्लो घटना %1 मा हुनेछ ।"
-
-#: incidenceformatter.cpp:423
+#: incidenceformatter.cpp:477
 #, c-format
 msgid "Journal for %1"
 msgstr " %1 का लागि जर्नल"
 
-#: incidenceformatter.cpp:432 incidenceformatter.cpp:1684
+#: incidenceformatter.cpp:489 incidenceformatter.cpp:1742
 #, c-format
 msgid "Free/Busy information for %1"
 msgstr "%1 का लागि निशुल्क/व्यस्त सूचना"
 
-#: incidenceformatter.cpp:433
+#: incidenceformatter.cpp:491
 msgid "Busy times in date range %1 - %2:"
 msgstr "मिति दायरा %1 - %2 मा व्यस्त समय:"
 
-#: incidenceformatter.cpp:439
+#: incidenceformatter.cpp:497
 msgid "Busy:"
 msgstr "व्यस्त:"
 
-#: incidenceformatter.cpp:447 incidenceformatter.cpp:597
-#: incidenceformatter.cpp:678
+#: incidenceformatter.cpp:505 incidenceformatter.cpp:655
+#: incidenceformatter.cpp:736
 #, c-format
 msgid ""
 "_n: 1 hour \n"
@@ -447,7 +439,7 @@ msgstr ""
 "१ घण्टा \n"
 "%n घण्टा "
 
-#: incidenceformatter.cpp:451 incidenceformatter.cpp:600
+#: incidenceformatter.cpp:509 incidenceformatter.cpp:658
 #, c-format
 msgid ""
 "_n: 1 minute \n"
@@ -456,7 +448,7 @@ msgstr ""
 "१ मिनेट \n"
 "%n मिनेट "
 
-#: incidenceformatter.cpp:455 incidenceformatter.cpp:686
+#: incidenceformatter.cpp:513 incidenceformatter.cpp:744
 #, c-format
 msgid ""
 "_n: 1 second\n"
@@ -465,107 +457,107 @@ msgstr ""
 "१ सेकेन्ड\n"
 "%n सेकेन्ड"
 
-#: incidenceformatter.cpp:457 incidenceformatter.cpp:688
+#: incidenceformatter.cpp:515 incidenceformatter.cpp:746
 msgid ""
 "_: startDate for duration\n"
 "%1 for %2"
 msgstr "%2 का लागि %1"
 
-#: incidenceformatter.cpp:463 incidenceformatter.cpp:694
+#: incidenceformatter.cpp:521 incidenceformatter.cpp:752
 msgid ""
 "_: date, fromTime - toTime \n"
 "%1, %2 - %3"
 msgstr "%1, %2 - %3"
 
-#: incidenceformatter.cpp:468 incidenceformatter.cpp:699
+#: incidenceformatter.cpp:526 incidenceformatter.cpp:757
 msgid ""
 "_: fromDateTime - toDateTime\n"
 "%1 - %2"
 msgstr "%1 - %2"
 
-#: incidenceformatter.cpp:547 incidenceformatter.cpp:618
-#: incidenceformatter.cpp:639
+#: incidenceformatter.cpp:605 incidenceformatter.cpp:676
+#: incidenceformatter.cpp:697
 msgid "Summary unspecified"
 msgstr "सारांश निर्दिष्ट नगरिएको छैन"
 
-#: incidenceformatter.cpp:552
+#: incidenceformatter.cpp:610
 msgid "Location unspecified"
 msgstr "स्थान निर्दिष्ट गरिएको छैन"
 
-#: incidenceformatter.cpp:563
+#: incidenceformatter.cpp:621
 msgid "What:"
 msgstr "के:"
 
-#: incidenceformatter.cpp:564
+#: incidenceformatter.cpp:622
 msgid "Where:"
 msgstr "कहाँ:"
 
-#: incidenceformatter.cpp:568
+#: incidenceformatter.cpp:626
 msgid ""
 "_: %1: Start Date, %2: Start Time\n"
 "%1 %2"
 msgstr "%1 %2"
 
-#: incidenceformatter.cpp:571
+#: incidenceformatter.cpp:629
 msgid ""
 "_: %1: Start Date\n"
 "%1 (time unspecified)"
 msgstr "%1 (समय निर्दिष्ट गरिएको छैन)"
 
-#: incidenceformatter.cpp:574
+#: incidenceformatter.cpp:632
 msgid "Start Time:"
 msgstr "सुरु समय:"
 
-#: incidenceformatter.cpp:579
+#: incidenceformatter.cpp:637
 msgid ""
 "_: %1: End Date, %2: End Time\n"
 "%1 %2"
 msgstr "%1 %2"
 
-#: incidenceformatter.cpp:582
+#: incidenceformatter.cpp:640
 msgid ""
 "_: %1: End Date\n"
 "%1 (time unspecified)"
 msgstr "%1 (समय निर्दिष्ट गरिएको छैन)"
 
-#: incidenceformatter.cpp:588
+#: incidenceformatter.cpp:646
 msgid "End Time:"
 msgstr "समाप्ति समय:"
 
-#: incidenceformatter.cpp:603
+#: incidenceformatter.cpp:661
 msgid "Duration:"
 msgstr "अवधि:"
 
-#: incidenceformatter.cpp:619 incidenceformatter.cpp:640
+#: incidenceformatter.cpp:677 incidenceformatter.cpp:698
 msgid "Description unspecified"
 msgstr "वर्णन निर्दिष्ट गरिएको छैन"
 
-#: incidenceformatter.cpp:627 incidenceformatter.cpp:648
+#: incidenceformatter.cpp:685 incidenceformatter.cpp:706
 msgid "Summary:"
 msgstr "सारांश:"
 
-#: incidenceformatter.cpp:628 incidenceformatter.cpp:650
-#: incidenceformatter.cpp:1073
+#: incidenceformatter.cpp:686 incidenceformatter.cpp:708
+#: incidenceformatter.cpp:1131
 msgid "Description:"
 msgstr "वर्णन:"
 
-#: incidenceformatter.cpp:649
+#: incidenceformatter.cpp:707
 msgid "Date:"
 msgstr "मिति:"
 
-#: incidenceformatter.cpp:662
+#: incidenceformatter.cpp:720
 msgid "Person:"
 msgstr "व्यक्ति:"
 
-#: incidenceformatter.cpp:663
+#: incidenceformatter.cpp:721
 msgid "Start date:"
 msgstr "सुरु मिति:"
 
-#: incidenceformatter.cpp:664
+#: incidenceformatter.cpp:722
 msgid "End date:"
 msgstr "अन्त्य मिति:"
 
-#: incidenceformatter.cpp:682
+#: incidenceformatter.cpp:740
 #, c-format
 msgid ""
 "_n: 1 minute\n"
@@ -574,368 +566,387 @@ msgstr ""
 "१ मिनेट\n"
 "%n मिनेट "
 
-#: incidenceformatter.cpp:718
+#: incidenceformatter.cpp:776
 msgid "This event has been published"
 msgstr "यो घटना प्रकाशन भएको छ"
 
-#: incidenceformatter.cpp:720
+#: incidenceformatter.cpp:778
 msgid "You have been invited to this meeting"
 msgstr "तपाईँलाई यो बैठकमा बोलाइएको छ"
 
-#: incidenceformatter.cpp:722
+#: incidenceformatter.cpp:780
 msgid "This invitation was refreshed"
 msgstr "यो निमन्त्रणा ताजा गरिएको थियो"
 
-#: incidenceformatter.cpp:724
+#: incidenceformatter.cpp:782
 msgid "This meeting has been canceled"
 msgstr "यो बैठक रद्द गरिएको छ"
 
-#: incidenceformatter.cpp:726
+#: incidenceformatter.cpp:784
 msgid "Addition to the meeting invitation"
 msgstr "बैठक निमन्त्रणामा थप"
 
-#: incidenceformatter.cpp:740
+#: incidenceformatter.cpp:798
 msgid "Sender indicates this invitation still needs some action"
 msgstr "प्रेषकले यो निमन्त्रण इङ्कित गर्दछ अझै केही कार्य बाकी छ"
 
-#: incidenceformatter.cpp:742
+#: incidenceformatter.cpp:800
 msgid "Sender accepts this meeting invitation"
 msgstr "प्रेषकले यो बैठक निमन्त्रणा स्वीकार गर्दछ"
 
-#: incidenceformatter.cpp:744
+#: incidenceformatter.cpp:802
 msgid "Sender tentatively accepts this meeting invitation"
 msgstr "प्रेषकले परीक्षार्थ रूपमा यो बैठक निमन्त्रणा स्वीकार गर्दछ"
 
-#: incidenceformatter.cpp:746
+#: incidenceformatter.cpp:804
 msgid "Sender declines this meeting invitation"
 msgstr "प्रेषकले यो बैठक निमन्त्रणा घटाउदछ"
 
-#: incidenceformatter.cpp:748
+#: incidenceformatter.cpp:806
 msgid "Sender has delegated this meeting invitation"
 msgstr "प्रेषकले यो बैठक निमन्त्रणा प्रत्यायोजन गरेको छ"
 
-#: incidenceformatter.cpp:750
+#: incidenceformatter.cpp:808
 msgid "This meeting invitation is now completed"
 msgstr "यो बैठक निमन्त्रणा अहिले पूरा भएको छ"
 
-#: incidenceformatter.cpp:752 incidenceformatter.cpp:808
-#: incidenceformatter.cpp:865
+#: incidenceformatter.cpp:810 incidenceformatter.cpp:866
+#: incidenceformatter.cpp:923
 msgid "Sender is still processing the invitation"
 msgstr "प्रेषकले निमन्त्रणा अझै प्रक्रिया गरिरहेको छ"
 
-#: incidenceformatter.cpp:754
+#: incidenceformatter.cpp:812
 msgid "Unknown response to this meeting invitation"
 msgstr "यो बैठक निमन्त्रणामा अज्ञात प्रतिक्रिया"
 
-#: incidenceformatter.cpp:758 incidenceformatter.cpp:814
-#: incidenceformatter.cpp:871
+#: incidenceformatter.cpp:816 incidenceformatter.cpp:872
+#: incidenceformatter.cpp:929
 msgid "Sender makes this counter proposal"
 msgstr "प्रेषकले यसको विपरित प्रस्तावना बनाउदछ"
 
-#: incidenceformatter.cpp:760 incidenceformatter.cpp:816
-#: incidenceformatter.cpp:873
+#: incidenceformatter.cpp:818 incidenceformatter.cpp:874
+#: incidenceformatter.cpp:931
 msgid "Sender declines the counter proposal"
 msgstr "प्रेषकले विपरित प्रस्तावना घटाउदछ"
 
-#: incidenceformatter.cpp:762 incidenceformatter.cpp:818
-#: incidenceformatter.cpp:875
+#: incidenceformatter.cpp:820 incidenceformatter.cpp:876
+#: incidenceformatter.cpp:933
 msgid "Error: iMIP message with unknown method: '%1'"
 msgstr "त्रुटि: अज्ञात विधिको iMIP सन्देश: '%1'"
 
-#: incidenceformatter.cpp:774
+#: incidenceformatter.cpp:832
 msgid "This task has been published"
 msgstr "यो कार्य प्रकाशन गरिएको छ"
 
-#: incidenceformatter.cpp:776
+#: incidenceformatter.cpp:834
 msgid "You have been assigned this task"
 msgstr "तपाईँले यो कार्य मानाङ्कन गर्नुभएको छ"
 
-#: incidenceformatter.cpp:778
+#: incidenceformatter.cpp:836
 msgid "This task was refreshed"
 msgstr "यो कार्य ताजा गरिएको छ"
 
-#: incidenceformatter.cpp:780
+#: incidenceformatter.cpp:838
 msgid "This task was canceled"
 msgstr "यो कार्य रद्द गरिएको छ"
 
-#: incidenceformatter.cpp:782
+#: incidenceformatter.cpp:840
 msgid "Addition to the task"
 msgstr "कार्यमा थप"
 
-#: incidenceformatter.cpp:796
+#: incidenceformatter.cpp:854
 msgid "Sender indicates this task assignment still needs some action"
-msgstr "प्रेषकले यो कार्य इङ्कित गर्दछ कार्य मानाङ्कनमा अझै केही कार्य आवश्यक पर्दछ"
+msgstr ""
+"प्रेषकले यो कार्य इङ्कित गर्दछ कार्य मानाङ्कनमा अझै केही कार्य आवश्यक पर्दछ"
 
-#: incidenceformatter.cpp:798
+#: incidenceformatter.cpp:856
 msgid "Sender accepts this task"
 msgstr "प्रेषकले यो कार्य स्वीकार गर्दछ"
 
-#: incidenceformatter.cpp:800
+#: incidenceformatter.cpp:858
 msgid "Sender tentatively accepts this task"
 msgstr "प्रेषकले परीक्षार्थ रूपमा यो कार्य स्वीकार गर्दछ"
 
-#: incidenceformatter.cpp:802
+#: incidenceformatter.cpp:860
 msgid "Sender declines this task"
 msgstr "प्रेषकले यो कार्य घटाउदछ"
 
-#: incidenceformatter.cpp:804
+#: incidenceformatter.cpp:862
 msgid "Sender has delegated this request for the task "
 msgstr "प्रेषकले कार्यका लागि यो अनुरोध प्रत्यायोजन गरेको छ "
 
-#: incidenceformatter.cpp:806
+#: incidenceformatter.cpp:864
 msgid "The request for this task is now completed"
 msgstr "यो कार्यका लागि अनुरोध अहिले समाप्त भएको छ"
 
-#: incidenceformatter.cpp:810
+#: incidenceformatter.cpp:868
 msgid "Unknown response to this task"
 msgstr "यो कार्यमा अज्ञात प्रतिक्रिया"
 
-#: incidenceformatter.cpp:831
+#: incidenceformatter.cpp:889
 msgid "This journal has been published"
 msgstr "यो जर्नल प्रकाशन गरिएको छ"
 
-#: incidenceformatter.cpp:833
+#: incidenceformatter.cpp:891
 msgid "You have been assigned this journal"
 msgstr "तपाईँले यो जर्नल मानाङ्कन गर्नुभएको छ"
 
-#: incidenceformatter.cpp:835
+#: incidenceformatter.cpp:893
 msgid "This journal was refreshed"
 msgstr "यो जर्नल ताजा गरिएको थियो"
 
-#: incidenceformatter.cpp:837
+#: incidenceformatter.cpp:895
 msgid "This journal was canceled"
 msgstr "यो जर्नल रद्द गरिएको थियो"
 
-#: incidenceformatter.cpp:839
+#: incidenceformatter.cpp:897
 msgid "Addition to the journal"
 msgstr "जर्नलमा थप"
 
-#: incidenceformatter.cpp:853
+#: incidenceformatter.cpp:911
 msgid "Sender indicates this journal assignment still needs some action"
 msgstr "प्रेषकले यो जर्नल कार्यमा अझै केही कार्य आवश्यक भएको इङ्कित गर्दछ"
 
-#: incidenceformatter.cpp:855
+#: incidenceformatter.cpp:913
 msgid "Sender accepts this journal"
 msgstr "प्रेषकले यो जर्नल स्वीकार गर्दछ"
 
-#: incidenceformatter.cpp:857
+#: incidenceformatter.cpp:915
 msgid "Sender tentatively accepts this journal"
 msgstr "प्रेषकले परीक्षार्थ रूपमा यो जर्नल स्वीकार गर्दछ"
 
-#: incidenceformatter.cpp:859
+#: incidenceformatter.cpp:917
 msgid "Sender declines this journal"
 msgstr "प्रेषकले यो जर्नल घटाउदछ"
 
-#: incidenceformatter.cpp:861
+#: incidenceformatter.cpp:919
 msgid "Sender has delegated this request for the journal"
 msgstr "प्रेषकले जर्नलका लागि यो अनुरोध प्रत्यायोजन गर्यो"
 
-#: incidenceformatter.cpp:863
+#: incidenceformatter.cpp:921
 msgid "The request for this journal is now completed"
 msgstr "यो जर्नलका लागि अनुरोध अहिले पूरा भएको छ"
 
-#: incidenceformatter.cpp:867
+#: incidenceformatter.cpp:925
 msgid "Unknown response to this journal"
 msgstr "यो जर्नलमा अज्ञात प्रतिक्रिया"
 
-#: incidenceformatter.cpp:887
+#: incidenceformatter.cpp:945
 msgid "This free/busy list has been published"
 msgstr "यो निशुल्क/व्यस्त सूची प्रकाश गरियो"
 
-#: incidenceformatter.cpp:889
+#: incidenceformatter.cpp:947
 msgid "The free/busy list has been requested"
 msgstr "निशुल्क/व्यस्त सूची अनुरोध गरियो"
 
-#: incidenceformatter.cpp:891
+#: incidenceformatter.cpp:949
 msgid "This free/busy list was refreshed"
 msgstr "निशुल्क/व्यस्त सूची ताजा गरिएको थियो"
 
-#: incidenceformatter.cpp:893
+#: incidenceformatter.cpp:951
 msgid "This free/busy list was canceled"
 msgstr "निशुल्क/व्यस्त सूची रद्द गरिएको थियो"
 
-#: incidenceformatter.cpp:895
+#: incidenceformatter.cpp:953
 msgid "Addition to the free/busy list"
 msgstr "निशुल्क/व्यस्त सूचीमा थप"
 
-#: incidenceformatter.cpp:898
+#: incidenceformatter.cpp:956
 msgid "Error: Free/Busy iMIP message with unknown method: '%1'"
 msgstr "त्रुटि: अज्ञात विधिसँग निशुल्क/व्यस्त iMIP सन्देश: '%1'"
 
-#: incidenceformatter.cpp:1020 incidenceformatter.cpp:1056
+#: incidenceformatter.cpp:1078 incidenceformatter.cpp:1114
 msgid "[Enter this into my calendar]"
 msgstr "[मेरो क्यालेन्डरमा यो प्रविष्ट गर्नुहोस्]"
 
-#: incidenceformatter.cpp:1032
+#: incidenceformatter.cpp:1090
 msgid "[Accept]"
 msgstr "[स्वीकार गर्नुहोस्]"
 
-#: incidenceformatter.cpp:1035
+#: incidenceformatter.cpp:1093
 msgid ""
 "_: Accept conditionally\n"
 "[Accept cond.]"
 msgstr "[अवस्था अनुसार स्वीकार गर्नुहोस्]"
 
-#: incidenceformatter.cpp:1038
+#: incidenceformatter.cpp:1096
 msgid "[Decline]"
 msgstr "[घटाउनुहोस्]"
 
-#: incidenceformatter.cpp:1042
+#: incidenceformatter.cpp:1100
 msgid "[Check my calendar...]"
 msgstr "[मेरो क्यालेन्डर जाँच गर्नुहोस्...]"
 
-#: incidenceformatter.cpp:1048
+#: incidenceformatter.cpp:1106
 msgid "[Remove this from my calendar]"
 msgstr "[मेरो क्यालेन्डरबाट यो हटाउनुहोस्]"
 
-#: incidenceformatter.cpp:1054
+#: incidenceformatter.cpp:1112
 msgid "[Enter this into my task list]"
 msgstr "[मेरो कार्य सूचीमा यो प्रविष्ट गर्नुहोस्]"
 
-#: incidenceformatter.cpp:1416
+#: incidenceformatter.cpp:1474
 msgid "Reminder"
 msgstr "बाकी"
 
-#: incidenceformatter.cpp:1585
+#: incidenceformatter.cpp:1643
 #, c-format
 msgid ""
 "_: Event start\n"
 "<i>From:</i>&nbsp;%1"
 msgstr "<i>बाट:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1591
+#: incidenceformatter.cpp:1649
 #, c-format
 msgid ""
 "_: Event end\n"
 "<i>To:</i>&nbsp;%1"
 msgstr "<i>लाई:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1599 incidenceformatter.cpp:1648
+#: incidenceformatter.cpp:1657 incidenceformatter.cpp:1706
 #, c-format
 msgid "<i>Date:</i>&nbsp;%1"
 msgstr "<i>मिति:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1604
+#: incidenceformatter.cpp:1662
 #, c-format
 msgid ""
 "_: time for event, &nbsp; to prevent ugly line breaks\n"
 "<i>Time:</i>&nbsp;%1"
 msgstr "<i>समय:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1608
+#: incidenceformatter.cpp:1666
 msgid ""
 "_: time range for event, &nbsp; to prevent ugly line breaks\n"
 "<i>Time:</i>&nbsp;%1&nbsp;-&nbsp;%2"
 msgstr "<i>समय:</i>&nbsp;%1&nbsp;-&nbsp;%2"
 
-#: incidenceformatter.cpp:1627
+#: incidenceformatter.cpp:1685
 #, c-format
 msgid "<i>Start:</i>&nbsp;%1"
 msgstr "<i>सुरु:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1632
+#: incidenceformatter.cpp:1690
 #, c-format
 msgid "<i>Due:</i>&nbsp;%1"
 msgstr "<i>देय:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1637
+#: incidenceformatter.cpp:1695
 #, c-format
 msgid "<i>Completed:</i>&nbsp;%1"
 msgstr "<i>पूरा भयो:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1639
+#: incidenceformatter.cpp:1697
 msgid "%1 % completed"
 msgstr "%1 % पूरा भयो"
 
-#: incidenceformatter.cpp:1655 incidenceformatter.cpp:1657
+#: incidenceformatter.cpp:1713 incidenceformatter.cpp:1715
 #, c-format
 msgid "<i>Period start:</i>&nbsp;%1"
 msgstr "<i>सुरु अवधि:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1699
+#: incidenceformatter.cpp:1760
 #, c-format
 msgid "<i>Location:</i>&nbsp;%1"
 msgstr "<i>स्थान:</i>&nbsp;%1"
 
-#: incidenceformatter.cpp:1707
+#: incidenceformatter.cpp:1768
 msgid "<i>Description:</i><br>"
 msgstr "<i>वर्णन:</i><br>"
 
-#: incidenceformatter.cpp:1745
+#: incidenceformatter.cpp:1806
 msgid "This is a Free Busy Object"
 msgstr "यो निशुल्क व्यस्त वस्तु हो"
 
-#: incidenceformatter.cpp:1755
-msgid "Summary: %1\n"
-msgstr "सारांश: %1\n"
+#: incidenceformatter.cpp:1816
+msgid ""
+"Summary: %1\n"
+msgstr ""
+"सारांश: %1\n"
 
-#: incidenceformatter.cpp:1758
-msgid "Organizer: %1\n"
-msgstr "आयोजक: %1\n"
+#: incidenceformatter.cpp:1819
+msgid ""
+"Organizer: %1\n"
+msgstr ""
+"आयोजक: %1\n"
 
-#: incidenceformatter.cpp:1761
-msgid "Location: %1\n"
-msgstr "स्थान: %1\n"
+#: incidenceformatter.cpp:1822
+msgid ""
+"Location: %1\n"
+msgstr ""
+"स्थान: %1\n"
 
-#: incidenceformatter.cpp:1768
+#: incidenceformatter.cpp:1829
 msgid ""
 "_: no recurrence\n"
 "None"
 msgstr "कुनै पनि होइन"
 
-#: incidenceformatter.cpp:1769
+#: incidenceformatter.cpp:1830
 msgid "Minutely"
 msgstr "मिनेटमा"
 
-#: incidenceformatter.cpp:1769
+#: incidenceformatter.cpp:1830
 msgid "Hourly"
 msgstr "घण्टामा"
 
-#: incidenceformatter.cpp:1769
+#: incidenceformatter.cpp:1830
 msgid "Daily"
 msgstr "दैनिक"
 
-#: incidenceformatter.cpp:1770
+#: incidenceformatter.cpp:1831
 msgid "Weekly"
 msgstr "साप्ताहिक"
 
-#: incidenceformatter.cpp:1770
+#: incidenceformatter.cpp:1831
 msgid "Monthly Same Day"
 msgstr "महिनावारी उही दिन"
 
-#: incidenceformatter.cpp:1770
+#: incidenceformatter.cpp:1831
 msgid "Monthly Same Position"
 msgstr "महिनावारी उही स्थिति"
 
-#: incidenceformatter.cpp:1771
+#: incidenceformatter.cpp:1832
 msgid "Yearly"
 msgstr "वार्षिक"
 
-#: incidenceformatter.cpp:1774 incidenceformatter.cpp:1822
-msgid "Start Date: %1\n"
-msgstr "सुरु मिति: %1\n"
+#: incidenceformatter.cpp:1835 incidenceformatter.cpp:1883
+msgid ""
+"Start Date: %1\n"
+msgstr ""
+"सुरु मिति: %1\n"
 
-#: incidenceformatter.cpp:1776 incidenceformatter.cpp:1824
-msgid "Start Time: %1\n"
-msgstr "सुरु समय: %1\n"
+#: incidenceformatter.cpp:1837 incidenceformatter.cpp:1885
+msgid ""
+"Start Time: %1\n"
+msgstr ""
+"सुरु समय: %1\n"
 
-#: incidenceformatter.cpp:1779
-msgid "End Date: %1\n"
-msgstr "समाप्त मिति: %1\n"
+#: incidenceformatter.cpp:1840
+msgid ""
+"End Date: %1\n"
+msgstr ""
+"समाप्त मिति: %1\n"
 
-#: incidenceformatter.cpp:1782
-msgid "End Time: %1\n"
-msgstr "समाप्त समय: %1\n"
+#: incidenceformatter.cpp:1843
+msgid ""
+"End Time: %1\n"
+msgstr ""
+"समाप्त समय: %1\n"
 
-#: incidenceformatter.cpp:1787
-msgid "Recurs: %1\n"
-msgstr "दोहोरिन्छ: %1\n"
+#: incidenceformatter.cpp:1848
+msgid ""
+"Recurs: %1\n"
+msgstr ""
+"दोहोरिन्छ: %1\n"
 
-#: incidenceformatter.cpp:1789
-msgid "Frequency: %1\n"
-msgstr "आवृत्ति: %1\n"
+#: incidenceformatter.cpp:1850
+msgid ""
+"Frequency: %1\n"
+msgstr ""
+"आवृत्ति: %1\n"
 
-#: incidenceformatter.cpp:1793
+#: incidenceformatter.cpp:1854
 #, c-format
 msgid ""
 "_n: Repeats once\n"
@@ -944,15 +955,19 @@ msgstr ""
 "एकपटक दोहोर्याउछ\n"
 "%n पटक दोहोर्याउछ"
 
-#: incidenceformatter.cpp:1804
-msgid "Repeat until: %1\n"
-msgstr "यहाँसम्म दोहोर्याउनुहोस्: %1\n"
+#: incidenceformatter.cpp:1865
+msgid ""
+"Repeat until: %1\n"
+msgstr ""
+"यहाँसम्म दोहोर्याउनुहोस्: %1\n"
 
-#: incidenceformatter.cpp:1806
-msgid "Repeats forever\n"
-msgstr "सधै दोहोर्याउदछ\n"
+#: incidenceformatter.cpp:1867
+msgid ""
+"Repeats forever\n"
+msgstr ""
+"सधै दोहोर्याउदछ\n"
 
-#: incidenceformatter.cpp:1812 incidenceformatter.cpp:1835
+#: incidenceformatter.cpp:1873 incidenceformatter.cpp:1896
 msgid ""
 "Details:\n"
 "%1\n"
@@ -960,23 +975,31 @@ msgstr ""
 "विवरण:\n"
 "%1\n"
 
-#: incidenceformatter.cpp:1828
-msgid "Due Date: %1\n"
-msgstr "देयमिति: %1\n"
+#: incidenceformatter.cpp:1889
+msgid ""
+"Due Date: %1\n"
+msgstr ""
+"देयमिति: %1\n"
 
-#: incidenceformatter.cpp:1830
-msgid "Due Time: %1\n"
-msgstr "देय समय: %1\n"
+#: incidenceformatter.cpp:1891
+msgid ""
+"Due Time: %1\n"
+msgstr ""
+"देय समय: %1\n"
 
-#: incidenceformatter.cpp:1843
-msgid "Date: %1\n"
-msgstr "मिति: %1\n"
+#: incidenceformatter.cpp:1904
+msgid ""
+"Date: %1\n"
+msgstr ""
+"मिति: %1\n"
 
-#: incidenceformatter.cpp:1845
-msgid "Time: %1\n"
-msgstr "समय: %1\n"
+#: incidenceformatter.cpp:1906
+msgid ""
+"Time: %1\n"
+msgstr ""
+"समय: %1\n"
 
-#: incidenceformatter.cpp:1848
+#: incidenceformatter.cpp:1909
 msgid ""
 "Text of the journal:\n"
 "%1\n"
@@ -1090,7 +1113,9 @@ msgstr "शैली पाना"
 msgid ""
 "CSS style sheet to be used by the final HTML page. This string contains the "
 "actual contents of the CSS, not a path to the style sheet."
-msgstr "अन्तिम एचटीएमएल पृष्ठद्वारा प्रयोग गरिने सीएसएस शैली पाना । यो स्ट्रिङले सीएसएस को वास्तविक सामग्री समाविष्ट गर्दछ, तर शैली पानामा मार्ग होइन ।"
+msgstr ""
+"अन्तिम एचटीएमएल पृष्ठद्वारा प्रयोग गरिने सीएसएस शैली पाना । यो स्ट्रिङले सीएसएस "
+"को वास्तविक सामग्री समाविष्ट गर्दछ, तर शैली पानामा मार्ग होइन ।"
 
 #. i18n: file htmlexportsettings.kcfg line 53
 #: rc.cpp:54
@@ -1252,12 +1277,20 @@ msgid "Type: %1"
 msgstr "प्रकार: %1"
 
 #: resourcecalendar.cpp:137
-msgid "Error while loading %1.\n"
-msgstr "%1 लोड गर्दा त्रुटि ।\n"
+msgid ""
+"Error while loading %1.\n"
+msgstr ""
+"%1 लोड गर्दा त्रुटि ।\n"
 
 #: resourcecalendar.cpp:174
-msgid "Error while saving %1.\n"
-msgstr "%1 बचत गर्दा त्रुटि ।\n"
+msgid ""
+"Error while saving %1.\n"
+msgstr ""
+"%1 बचत गर्दा त्रुटि ।\n"
+
+#: resourcelocalconfig.cpp:49 resourcelocaldirconfig.cpp:47
+msgid "Location:"
+msgstr "स्थान:"
 
 #: resourcelocalconfig.cpp:54
 msgid "Calendar Format"
@@ -1276,7 +1309,9 @@ msgid ""
 "You did not specify a URL for this resource. Therefore, the resource will be "
 "saved in %1. It is still possible to change this location by editing the "
 "resource properties."
-msgstr "तपाईँले यो संसाधानका लागि यूआरएल निर्दिष्ट गर्नुभएन । त्यसैले, संसाधान %1 मा बचत गरिनेछ । संसाधान गुण सम्पादन गरेर यो स्थान परिवर्तन गर्न अझै सम्भव छ ।"
+msgstr ""
+"तपाईँले यो संसाधानका लागि यूआरएल निर्दिष्ट गर्नुभएन । त्यसैले, संसाधान %1 मा "
+"बचत गरिनेछ । संसाधान गुण सम्पादन गरेर यो स्थान परिवर्तन गर्न अझै सम्भव छ ।"
 
 #: scheduler.cpp:49
 msgid "Updated Publish"
@@ -1331,3 +1366,20 @@ msgstr "काउन्टर घटाउनुहोस्"
 msgid "Unknown"
 msgstr "अज्ञात"
 
+#~ msgid "Category"
+#~ msgstr "कोटि"
+
+#~ msgid "Next Occurrence"
+#~ msgstr "पछिल्लो घटना"
+
+#~ msgid "<b>Due on:</b> %1"
+#~ msgstr "<b>यस अवधिमा:</b> %1"
+
+#~ msgid "<p><b>Priority:</b> %2</p>"
+#~ msgstr "<p><b>प्राथमिकता:</b> %2</p>"
+
+#~ msgid "<p><i>%1 % completed</i></p>"
+#~ msgstr "<p><i>%1 % पूरा भयो</i></p>"
+
+#~ msgid "This is a recurring to-do. The next occurrence will be on %1."
+#~ msgstr "यो दोहोरिने गर्नुपर्ने कार्य हो । पछिल्लो घटना %1 मा हुनेछ ।"
