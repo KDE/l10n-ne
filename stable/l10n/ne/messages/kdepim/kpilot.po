@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-16 02:43+0100\n"
+"POT-Creation-Date: 2007-04-17 02:17+0200\n"
 "PO-Revision-Date: 2007-02-25 14:39+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -14,47 +14,35 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: lib/pilotTodoEntry.cc:137
+#: lib/pilotTodoEntry.cc:133
 msgid "Completed"
 msgstr "पूरा भयो"
 
-#: lib/pilotTodoEntry.cc:139
+#: lib/pilotTodoEntry.cc:135
 msgid "Not completed"
 msgstr "पूरा भएन"
 
-#: lib/pilotTodoEntry.cc:147
+#: lib/pilotTodoEntry.cc:143
 #, c-format
 msgid "Due date: %1"
 msgstr "देय मिति: %1"
 
-#: lib/pilotTodoEntry.cc:155
+#: lib/pilotTodoEntry.cc:151
 #, c-format
 msgid "Priority: %1"
 msgstr "प्राथमिकता: %1"
 
-#: lib/pilotDateEntry.cc:258 lib/pilotTodoEntry.cc:162
+#: lib/pilotDateEntry.cc:277 lib/pilotTodoEntry.cc:158
 msgid "<b><em>Note:</em></b><br>"
 msgstr "<b><em>द्रष्टव्य:</em></b><br>"
 
-#: lib/pilotDateEntry.cc:258 lib/pilotTodoEntry.cc:162
+#: lib/pilotDateEntry.cc:277 lib/pilotTodoEntry.cc:158
 msgid ""
 "Note:\n"
 msgstr ""
 "द्रष्टव्य:\n"
 
-#: lib/pilotSerialDatabase.cc:354
-msgid "Cannot open database"
-msgstr "डाटाबेस खोल्न सकिदैन"
-
-#: lib/pilotSerialDatabase.cc:355
-msgid "Pilot database error"
-msgstr "पाइलट डाटाबेस त्रुटि"
-
-#: lib/pilotSerialDatabase.cc:375
-msgid "Cannot create database %1 on the handheld"
-msgstr "ह्यान्डहेल्डमा %1 डाटाबेस सिर्जना गर्न सकिदैन"
-
-#: lib/pilotMemo.cc:55
+#: lib/pilotMemo.cc:81
 msgid ""
 "<i>Title:</i> %1"
 "<br>\n"
@@ -66,7 +54,7 @@ msgstr ""
 "<i>मेमो पाठ:</i>"
 "<br>%2"
 
-#: lib/pilotMemo.cc:58
+#: lib/pilotMemo.cc:86
 msgid ""
 "Title: %1\n"
 "MemoText:\n"
@@ -76,16 +64,49 @@ msgstr ""
 "मेमो पाठ:\n"
 "%2"
 
-#: kpilot/addressWidget.cc:395 lib/pilotMemo.cc:103
+#: kpilot/addressWidget.cc:393 lib/pilotMemo.cc:132
 msgid "[unknown]"
 msgstr "[अज्ञात]"
+
+#: lib/actionQueue.cc:136
+msgid ""
+"The connection to the handheld was lost. Synchronization cannot continue."
+msgstr "ह्यान्डहेल्डसँगको जडान विच्छेद भयो । समक्रमण जारी राख्न सकिदैन ।"
+
+#: lib/actions.cc:54
+msgid ""
+"KPilot %1 HotSync starting...\n"
+msgstr ""
+"केडीई पाइलट %1 हटसिन्क सुरु हुँदैछ...\n"
+
+#: lib/actions.cc:56
+msgid "Using encoding %1 on the handheld."
+msgstr "ह्यान्डहेल्डमा सङ्केतन %1 प्रयोग गर्दैछ"
+
+#: lib/actions.cc:67
+msgid "KPilot is busy and cannot process the HotSync right now."
+msgstr "केडीई पाइलट व्यस्त छ र अहिले हटसिन्क प्रक्रिया गर्न सक्दैन ।"
+
+#: lib/actions.cc:114
+msgid ""
+"Testing.\n"
+msgstr ""
+"परिक्षण\n"
+
+#: lib/actions.cc:130
+msgid "Syncing database %1..."
+msgstr "डाटाबेस %1 समक्रमण गर्दैछ..."
+
+#: kpilot/logFile.cc:97 lib/actions.cc:134
+msgid "HotSync finished."
+msgstr "हटसिन्क समाप्त भयो ।"
 
 #: lib/syncAction.cc:103
 msgid "The conduit %1 could not be executed."
 msgstr "कन्ड्युट %1 कार्यान्वयन गर्न सकेन ।"
 
-#: kpilot/conduitConfigDialog.cc:399 kpilot/kpilot.cc:295 kpilot/kpilot.cc:297
-#: kpilot/kpilot.cc:567 kpilot/kpilotConfigDialog.cc:245 lib/syncAction.cc:204
+#: kpilot/conduitConfigDialog.cc:398 kpilot/kpilot.cc:261 kpilot/kpilot.cc:263
+#: kpilot/kpilot.cc:515 kpilot/kpilotConfigDialog.cc:242 lib/syncAction.cc:204
 msgid "HotSync"
 msgstr "HotSync"
 
@@ -94,18 +115,18 @@ msgid "Full Synchronization"
 msgstr "पूर्ण समक्रमण"
 
 #. i18n: file ./kpilot/kpilotConfigDialog_sync.ui line 54
-#: kpilot/kpilot.cc:618 lib/syncAction.cc:206 rc.cpp:1018
+#: kpilot/kpilot.cc:566 lib/syncAction.cc:206 rc.cpp:1018
 #, no-c-format
 msgid "Copy PC to Handheld"
 msgstr "PC बाट ह्यान्डहेल्ड प्रतिलिपि गर्नुहोस्"
 
 #. i18n: file ./kpilot/kpilotConfigDialog_sync.ui line 59
-#: kpilot/kpilot.cc:609 lib/syncAction.cc:207 rc.cpp:1021
+#: kpilot/kpilot.cc:557 lib/syncAction.cc:207 rc.cpp:1021
 #, no-c-format
 msgid "Copy Handheld to PC"
 msgstr "ह्यान्डहेल्डबाट PC मा प्रतिलिपि गर्नुहोस्"
 
-#: kpilot/conduitConfigDialog.cc:398 kpilot/kpilotConfigDialog.cc:331
+#: kpilot/conduitConfigDialog.cc:397 kpilot/kpilotConfigDialog.cc:328
 #: lib/syncAction.cc:208
 msgid "Backup"
 msgstr "जगेडा"
@@ -113,6 +134,16 @@ msgstr "जगेडा"
 #: lib/syncAction.cc:209
 msgid "Restore From Backup"
 msgstr "जगेडाबाट पूर्वावस्थामा ल्याउनुहोस्"
+
+#: lib/syncAction.cc:220
+#, fuzzy
+msgid "Test Sync"
+msgstr "पछिल्लो समक्रमण"
+
+#: lib/syncAction.cc:224
+#, fuzzy
+msgid "Local Sync"
+msgstr "समक्रमण छैन"
 
 #: lib/syncAction.cc:316 lib/syncAction.cc:428
 msgid "Question"
@@ -126,105 +157,7 @@ msgstr "फेरि नसोध्नुहोस्"
 msgid "Do not ask again"
 msgstr "फेरि नसोध्नुहोस्"
 
-#: lib/kpilotlink.cc:449
-msgid "Pilot device %1 is not read-write."
-msgstr "पाइलट यन्त्र %1 पढ्न-लेख्न सकिने होइन"
-
-#: lib/kpilotlink.cc:458
-msgid ""
-"Pilot device %1 does not exist. Probably it is a USB device and will appear "
-"during a HotSync."
-msgstr ""
-"पाइलट यन्त्र %1 अवस्थित छैन । संभवत यो USB यन्त्र हो र HotSync को बेलामा "
-"देखापर्दछ ।"
-
-#: lib/kpilotlink.cc:483
-msgid "Trying to open device %1..."
-msgstr "यन्त्र %1 खोल्न प्रयास गर्दैछ..."
-
-#: lib/kpilotlink.cc:488 lib/kpilotlink.cc:492
-msgid "Device link ready."
-msgstr "यन्त्र लिङ्क तयार"
-
-#: lib/kpilotlink.cc:496
-msgid "Could not open device: %1 (will retry)"
-msgstr "यन्त्र खोल्न सकेन: %1 (पुन: प्रयास)"
-
-#: lib/kpilotlink.cc:529
-msgid "The Pilot device is not configured yet."
-msgstr "पाइलट यन्त्र अझ सम्म कन्फिगर भएको छैन ।"
-
-#: lib/kpilotlink.cc:536
-msgid "Already listening on that device"
-msgstr "त्यो यन्त्रमा पहिल्यै सुनिएको हो"
-
-#: lib/kpilotlink.cc:555
-msgid "Cannot create socket for communicating with the Pilot"
-msgstr "पाइलटसँग सम्पर्क गर्नका लागि सकेट सिर्जना गर्न सकिदैन"
-
-#: lib/kpilotlink.cc:612
-msgid "Cannot open Pilot port \"%1\". "
-msgstr "पाइलट पोर्ट \"%1\" खोल्न सकिदैन । "
-
-#: lib/kpilotlink.cc:634
-msgid "(empty)"
-msgstr "(रित्तो)"
-
-#: lib/kpilotlink.cc:649
-msgid " The port does not exist."
-msgstr " पोर्ट अवस्थित छैन ।"
-
-#: lib/kpilotlink.cc:652
-msgid " These is no such device."
-msgstr " त्यस्तो प्रकारको यन्त्र छैन"
-
-#: lib/kpilotlink.cc:655
-msgid " You do not have permission to open the Pilot device."
-msgstr " तपाईँलाई पाइलट यन्त्र खोल्ने अनुमति छैन ।"
-
-#: lib/kpilotlink.cc:659
-msgid " Check Pilot path and permissions."
-msgstr " पाइलट मार्ग र अनुमति जाँच गर्नुहोस् ।"
-
-#: lib/kpilotlink.cc:723
-msgid "Cannot listen on Pilot socket (%1)"
-msgstr "पाइलट सकेट (%1) मा सुन्न सकिदैन"
-
-#: lib/kpilotlink.cc:741 lib/kpilotlink.cc:755
-msgid "Cannot accept Pilot (%1)"
-msgstr "पाइलट (%1) स्विकार गर्न सकिदैन"
-
-#: lib/kpilotlink.cc:756
-msgid "already connected"
-msgstr "पहिल्यै जडान भएको हो"
-
-#: lib/kpilotlink.cc:767
-msgid "Unable to read system information from Pilot"
-msgstr "पाइलटबाट प्रणाली सूचना पढ्न असक्षम"
-
-#: lib/kpilotlink.cc:800
-msgid "Checking last PC..."
-msgstr "अन्तिम PC का लागि जाँच गर्दैछ..."
-
-#: lib/kpilotlink.cc:808
-msgid ""
-"Could not read user information from the Pilot. Perhaps you have a password set "
-"on the device?"
-msgstr ""
-"पाइलटबाट प्रयोगकर्ता सूचना पढ्न सकेन । तपाईँसँग यन्त्रमा पासवर्ड सेट भएको "
-"हुनसक्छ ?"
-
-#: lib/kpilotlink.cc:877 lib/kpilotlink.cc:887
-msgid "<qt>Cannot install the file &quot;%1&quot;.</qt>"
-msgstr "<qt>फाइल &quot;%1&quot; स्थापना गर्न सकिदैन ।</qt>"
-
-#: lib/kpilotlink.cc:966
-msgid ""
-"End of HotSync\n"
-msgstr ""
-" HotSync को अन्त्य\n"
-
-#: lib/recordConduit.cc:289
+#: lib/recordConduit.cc:69 lib/recordConduit.cc:289
 msgid "Unable to open the %1 database on the handheld."
 msgstr "ह्यान्डहेल्डमा %1 डाटाबेस खोल्न असक्षम ।"
 
@@ -233,112 +166,176 @@ msgstr "ह्यान्डहेल्डमा %1 डाटाबेस ख�
 msgid "Unable to open %1."
 msgstr "%1 खोल्न असक्षम ।"
 
-#: lib/pilotDateEntry.cc:160
+#: lib/kpilotdevicelink.cc:292
+msgid " The port does not exist."
+msgstr " पोर्ट अवस्थित छैन ।"
+
+#: lib/kpilotdevicelink.cc:295
+#, fuzzy
+msgid " There is no such device."
+msgstr " त्यस्तो प्रकारको यन्त्र छैन"
+
+#: lib/kpilotdevicelink.cc:298
+msgid " You do not have permission to open the Pilot device."
+msgstr " तपाईँलाई पाइलट यन्त्र खोल्ने अनुमति छैन ।"
+
+#: lib/kpilotdevicelink.cc:302
+msgid " Check Pilot path and permissions."
+msgstr " पाइलट मार्ग र अनुमति जाँच गर्नुहोस् ।"
+
+#: lib/kpilotdevicelink.cc:332
+msgid "Trying to open device %1..."
+msgstr "यन्त्र %1 खोल्न प्रयास गर्दैछ..."
+
+#: lib/kpilotdevicelink.cc:376
+msgid "Already listening on that device"
+msgstr "त्यो यन्त्रमा पहिल्यै सुनिएको हो"
+
+#: lib/kpilotdevicelink.cc:398
+#, fuzzy
+msgid "Cannot create socket for communicating with the Pilot (%1)"
+msgstr "पाइलटसँग सम्पर्क गर्नका लागि सकेट सिर्जना गर्न सकिदैन"
+
+#: lib/kpilotdevicelink.cc:427
+msgid "Cannot open Pilot port \"%1\". "
+msgstr "पाइलट पोर्ट \"%1\" खोल्न सकिदैन । "
+
+#: lib/kpilotdevicelink.cc:462
+msgid "Cannot listen on Pilot socket (%1)"
+msgstr "पाइलट सकेट (%1) मा सुन्न सकिदैन"
+
+#: lib/kpilotdevicelink.cc:488 lib/kpilotdevicelink.cc:503
+msgid "Cannot accept Pilot (%1)"
+msgstr "पाइलट (%1) स्विकार गर्न सकिदैन"
+
+#: lib/kpilotdevicelink.cc:504
+msgid "already connected"
+msgstr "पहिल्यै जडान भएको हो"
+
+#: lib/kpilotdevicelink.cc:518
+msgid "Unable to read system information from Pilot"
+msgstr "पाइलटबाट प्रणाली सूचना पढ्न असक्षम"
+
+#: lib/kpilotdevicelink.cc:546
+msgid "Checking last PC..."
+msgstr "अन्तिम PC का लागि जाँच गर्दैछ..."
+
+#: lib/kpilotdevicelink.cc:556
+msgid ""
+"Could not read user information from the Pilot. Perhaps you have a password set "
+"on the device?"
+msgstr ""
+"पाइलटबाट प्रयोगकर्ता सूचना पढ्न सकेन । तपाईँसँग यन्त्रमा पासवर्ड सेट भएको "
+"हुनसक्छ ?"
+
+#: lib/kpilotdevicelink.cc:615
+msgid "Could not open device: %1 (will retry)"
+msgstr "यन्त्र खोल्न सकेन: %1 (पुन: प्रयास)"
+
+#: lib/kpilotdevicelink.cc:812
+msgid "The Pilot device is not configured yet."
+msgstr "पाइलट यन्त्र अझ सम्म कन्फिगर भएको छैन ।"
+
+#: lib/kpilotdevicelink.cc:853
+msgid "Pilot device %1 is not read-write."
+msgstr "पाइलट यन्त्र %1 पढ्न-लेख्न सकिने होइन"
+
+#: lib/kpilotdevicelink.cc:862
+msgid ""
+"Pilot device %1 does not exist. Probably it is a USB device and will appear "
+"during a HotSync."
+msgstr ""
+"पाइलट यन्त्र %1 अवस्थित छैन । संभवत यो USB यन्त्र हो र HotSync को बेलामा "
+"देखापर्दछ ।"
+
+#: lib/kpilotdevicelink.cc:909 lib/kpilotdevicelink.cc:918
+msgid "<qt>Cannot install the file &quot;%1&quot;.</qt>"
+msgstr "<qt>फाइल &quot;%1&quot; स्थापना गर्न सकिदैन ।</qt>"
+
+#: lib/kpilotdevicelink.cc:990
+msgid ""
+"End of HotSync\n"
+msgstr ""
+" HotSync को अन्त्य\n"
+
+#: lib/pilotDateEntry.cc:179
 #, c-format
 msgid "Start date: %1"
 msgstr "सुरु मिति: %1"
 
-#: lib/pilotDateEntry.cc:166
+#: lib/pilotDateEntry.cc:185
 msgid "Whole-day event"
 msgstr "पूरा-दिनको घटना"
 
-#: lib/pilotDateEntry.cc:174
+#: lib/pilotDateEntry.cc:193
 #, c-format
 msgid "End date: %1"
 msgstr "अन्त्य मिति: %1"
 
-#: lib/pilotDateEntry.cc:181
+#: lib/pilotDateEntry.cc:200
 msgid ""
 "_: %1 is the duration, %2 is the time unit\n"
 "Alarm: %1 %2 before event starts"
 msgstr "सचेतक: %1 %2 घटना हुनु अगाडि"
 
-#: lib/pilotDateEntry.cc:185
+#: lib/pilotDateEntry.cc:204
 msgid "minutes"
 msgstr "मिनेट"
 
-#: lib/pilotDateEntry.cc:186
+#: lib/pilotDateEntry.cc:205
 msgid "hours"
 msgstr "घण्टा"
 
-#: lib/pilotDateEntry.cc:187
+#: lib/pilotDateEntry.cc:206
 msgid "days"
 msgstr "दिन"
 
-#: lib/pilotDateEntry.cc:197
+#: lib/pilotDateEntry.cc:216
 msgid "Recurrence: every %1 %2"
 msgstr "पुनरावृत्ति: हरेक %1 %2"
 
-#: lib/pilotDateEntry.cc:203
+#: lib/pilotDateEntry.cc:222
 msgid "day(s)"
 msgstr "दिन"
 
-#: lib/pilotDateEntry.cc:204
+#: lib/pilotDateEntry.cc:223
 msgid "week(s)"
 msgstr "हप्ता"
 
-#: lib/pilotDateEntry.cc:206
+#: lib/pilotDateEntry.cc:225
 msgid "month(s)"
 msgstr "महिना"
 
-#: lib/pilotDateEntry.cc:207
+#: lib/pilotDateEntry.cc:226
 msgid "year(s)"
 msgstr "वर्ष"
 
-#: lib/pilotDateEntry.cc:216
+#: lib/pilotDateEntry.cc:235
 msgid "Repeats indefinitely"
 msgstr "असिमित पुनरावृत्ती गर्दछ"
 
-#: lib/pilotDateEntry.cc:221
+#: lib/pilotDateEntry.cc:240
 #, c-format
 msgid "Until %1"
 msgstr "सम्म %1"
 
-#: lib/pilotDateEntry.cc:225
+#: lib/pilotDateEntry.cc:244
 msgid "Repeating on the i-th day of week j"
 msgstr "ञ हप्ताको झ औ दिनमा दोहर्याउनुहोस्"
 
-#: lib/pilotDateEntry.cc:226
+#: lib/pilotDateEntry.cc:245
 msgid "Repeating on the n-th day of the month"
 msgstr "महिनाको कुनै दिनमा दोहर्याउनुहोस्"
 
-#: lib/pilotDateEntry.cc:244
+#: lib/pilotDateEntry.cc:263
 msgid "Exceptions:"
 msgstr "अपवाद:"
 
-#: lib/uiDialog.cc:82
-msgid "Send questions and comments to kdepim-users@kde.org"
-msgstr "kdepim-users@kde.org मा प्रश्न र टिप्पणी पठाउनुहोस्"
-
-#: lib/uiDialog.cc:132
-msgid "Send questions and comments to <a href=\"mailto:%1\">%2</a>."
-msgstr " <a href=\"mailto:%1\">%2</a> मा प्रश्न र टिप्पणी पठाउनुहोस् ।"
-
-#: lib/uiDialog.cc:136
-msgid "Send bug reports to <a href=\"mailto:%1\">%2</a>."
-msgstr "बगलाई <a href=\"mailto:%1\">%2</a> मा पठाउनुहोस्"
-
-#: lib/uiDialog.cc:140
-msgid ""
-"For trademark information, see the <a href=\"help:/kpilot/trademarks.html\">"
-"KPilot User's Guide</a>."
-msgstr ""
-"ब्यापारिक चिन्ह सूचनाका लागि, <a href=\"help:/kpilot/trademarks.html\">"
-"केडीई प्रयोगकर्ताको मार्गदर्शन </a> हेर्नुहोस् ।"
-
-#: lib/uiDialog.cc:151
-msgid "<b>Authors:</b> "
-msgstr "<b>लेखक:</b> "
-
-#: lib/uiDialog.cc:172
-msgid "<b>Credits:</b> "
-msgstr "<b>श्रेय:</b> "
-
-#: lib/plugin.cc:59
+#: lib/plugin.cc:73
 msgid "Unnamed"
 msgstr "बेनामी"
 
-#: lib/plugin.cc:79
+#: lib/plugin.cc:93
 msgid ""
 "<qt>The <i>%1</i> conduit's settings have been changed. Do you want to save the "
 "changes before continuing?</qt>"
@@ -346,9 +343,110 @@ msgstr ""
 "<qt> <i>%1</i> कन्ड्युटको सेटिङ परिवर्तन गरिएको छैन । पुन: निरन्तरता दिनु अगाडि "
 "तपाईँले परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?</qt>"
 
-#: lib/plugin.cc:91
+#: lib/plugin.cc:105
 msgid "%1 Conduit"
 msgstr "%1 कन्ड्युट"
+
+#: lib/plugin.cc:144
+msgid "Send questions and comments to kdepim-users@kde.org"
+msgstr "kdepim-users@kde.org मा प्रश्न र टिप्पणी पठाउनुहोस्"
+
+#: lib/plugin.cc:194
+msgid "Send questions and comments to <a href=\"mailto:%1\">%2</a>."
+msgstr " <a href=\"mailto:%1\">%2</a> मा प्रश्न र टिप्पणी पठाउनुहोस् ।"
+
+#: lib/plugin.cc:198
+msgid "Send bug reports to <a href=\"mailto:%1\">%2</a>."
+msgstr "बगलाई <a href=\"mailto:%1\">%2</a> मा पठाउनुहोस्"
+
+#: lib/plugin.cc:202
+msgid ""
+"For trademark information, see the <a href=\"help:/kpilot/trademarks.html\">"
+"KPilot User's Guide</a>."
+msgstr ""
+"ब्यापारिक चिन्ह सूचनाका लागि, <a href=\"help:/kpilot/trademarks.html\">"
+"केडीई प्रयोगकर्ताको मार्गदर्शन </a> हेर्नुहोस् ।"
+
+#: lib/plugin.cc:213
+msgid "<b>Authors:</b> "
+msgstr "<b>लेखक:</b> "
+
+#: lib/plugin.cc:234
+msgid "<b>Credits:</b> "
+msgstr "<b>श्रेय:</b> "
+
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1524
+#: conduits/vcalconduit/vcal-conduitbase.cc:438 lib/plugin.cc:308
+msgid "Handheld"
+msgstr "ह्यान्डहेल्ड"
+
+#: conduits/vcalconduit/vcal-conduitbase.cc:438 lib/plugin.cc:309
+msgid "PC"
+msgstr "PC"
+
+#: lib/plugin.cc:480
+msgid "Large Changes Detected"
+msgstr ""
+
+#: lib/plugin.cc:482
+msgid ""
+"The %1 conduit has made a large number of changes to your %2.  Do you want to "
+"allow this change?\n"
+"Details:\n"
+"\t%3"
+msgstr ""
+
+#: lib/plugin.cc:536
+#, c-format
+msgid "Could not find conduit %1."
+msgstr "कन्ड्युट %1 फेला पार्न सकेन ।"
+
+#: lib/plugin.cc:559
+#, c-format
+msgid "Could not load conduit %1."
+msgstr "कन्ड्युट %1 लोड गर्न सकेन ।"
+
+#: lib/plugin.cc:571
+msgid "Conduit %1 has wrong version (%2)."
+msgstr "कन्ड्युट %1 सँग गलत संस्करण (%2) छ ।"
+
+#: lib/plugin.cc:581
+#, c-format
+msgid "Could not initialize conduit %1."
+msgstr "कन्ड्युट %1 सुरुआत गर्न सकेन ।"
+
+#: lib/plugin.cc:594 lib/plugin.cc:603
+#, c-format
+msgid "Could not create conduit %1."
+msgstr "कन्ड्युट %1 सिर्जना गर्न सकेन ।"
+
+#: lib/plugin.cc:607
+msgid "[Conduit %1]"
+msgstr "[कन्ड्युट %1]"
+
+#: lib/plugin.cc:749
+msgid "Start: %1. End: %2. "
+msgstr ""
+
+#: lib/plugin.cc:751
+#, fuzzy
+msgid "%1 new. "
+msgstr "पाममा %1 नयाँ "
+
+#: lib/plugin.cc:752
+#, fuzzy
+msgid "%1 changed. "
+msgstr "पाममा %1 लाई परिवर्तन गरियो । "
+
+#: lib/plugin.cc:753
+#, fuzzy
+msgid "%1 deleted. "
+msgstr "मेटिएको"
+
+#: lib/plugin.cc:755
+#, fuzzy
+msgid "No changes made. "
+msgstr " परिवर्तन गरेको छैन"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -362,26 +460,26 @@ msgid ""
 "Your emails"
 msgstr "submanesh@gmail.com"
 
-#: conduits/null/null-conduit.cc:63 conduits/null/null-factory.cc:64
+#: conduits/null/null-conduit.cc:63 conduits/null/null-factory.cc:63
 msgid "Null"
 msgstr "शून्य"
 
-#: conduits/null/null-factory.cc:66
+#: conduits/null/null-factory.cc:65
 msgid "Null Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि शून्य कन्ड्युट"
 
-#: conduits/null/null-factory.cc:68
+#: conduits/null/null-factory.cc:67
 msgid "Configures the Null Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि नुल कन्ड्युट कन्फिगर गर्दछ"
 
 #: Documentation/ConduitProgrammingTutorial/mal-factory.cc:56
-#: conduits/abbrowserconduit/abbrowser-setup.cc:55
-#: conduits/knotes/knotes-factory.cc:73 conduits/malconduit/mal-factory.cc:74
-#: conduits/memofileconduit/memofile-factory.cc:70
-#: conduits/notepadconduit/notepad-factory.cc:74
-#: conduits/null/null-factory.cc:72 conduits/recordconduit/factory.cc:73
-#: conduits/sysinfoconduit/sysinfo-setup.cc:102
-#: conduits/timeconduit/time-setup.cc:55
+#: conduits/abbrowserconduit/abbrowser-setup.cc:54
+#: conduits/knotes/knotes-factory.cc:73 conduits/malconduit/mal-factory.cc:76
+#: conduits/memofileconduit/memofile-factory.cc:69
+#: conduits/notepadconduit/notepad-factory.cc:73
+#: conduits/null/null-factory.cc:71 conduits/recordconduit/factory.cc:72
+#: conduits/sysinfoconduit/sysinfo-setup.cc:101
+#: conduits/timeconduit/time-setup.cc:54
 msgid "Primary Author"
 msgstr "प्राथमिक लेखक"
 
@@ -389,117 +487,94 @@ msgstr "प्राथमिक लेखक"
 msgid "NULL conduit is programmed to fail."
 msgstr "नुल कन्ड्युटलाई असफलमा प्रोग्राम गरिएको छ ।"
 
-#: conduits/memofileconduit/memofiles.cc:768
-msgid "%1 new to filesystem. "
-msgstr "फाइल प्रणालीमा नयाँ %1 "
-
-#: conduits/memofileconduit/memofiles.cc:771
-msgid "%1 changed to filesystem. "
-msgstr "फाइल प्रणालीमा %1 परिवर्तन गरियो । "
-
-#: conduits/memofileconduit/memofiles.cc:774
-msgid "%1 deleted from filesystem. "
-msgstr "फाइल प्रणालीबाट %1 मेटियो । "
-
 #: conduits/memofileconduit/memofile-conduit.cc:70
-#: conduits/memofileconduit/memofile-factory.cc:62
+#: conduits/memofileconduit/memofile-factory.cc:61
 msgid "Memofile"
 msgstr "मेमो फाइल"
 
-#: conduits/memofileconduit/memofile-conduit.cc:87
+#: conduits/memofileconduit/memofile-conduit.cc:97
 msgid "Unable to open the memo databases on the handheld."
 msgstr "ह्यान्डहेल्डमा मेमो डाटाबेस खोल्न असक्षम"
 
-#: conduits/memofileconduit/memofile-conduit.cc:94
+#: conduits/memofileconduit/memofile-conduit.cc:105
 msgid "Cannot initialize from pilot."
 msgstr "पाइलटबाट सुरुआत गर्न सकिदैन"
 
-#: conduits/memofileconduit/memofile-conduit.cc:105
+#: conduits/memofileconduit/memofile-conduit.cc:112
+#, fuzzy
+msgid "Cannot initialize the memo files from disk."
+msgstr "पाइलटबाट सुरुआत गर्न सकिदैन"
+
+#: conduits/memofileconduit/memofile-conduit.cc:119
 #, c-format
 msgid " Syncing with %1."
 msgstr " %1 सँग समक्रमण गर्दैछ"
 
-#: conduits/memofileconduit/memofile-conduit.cc:108
+#: conduits/memofileconduit/memofile-conduit.cc:122
 msgid " Copying Pilot to PC..."
 msgstr " पाइलटबाट PC मा प्रतिलिपि गर्दैछ..."
 
-#: conduits/memofileconduit/memofile-conduit.cc:117
+#: conduits/memofileconduit/memofile-conduit.cc:127
 msgid " Copying PC to Pilot..."
 msgstr " PC बाट पाइलटमा प्रतिलिपि गर्दैछ..."
 
-#: conduits/memofileconduit/memofile-conduit.cc:123
+#: conduits/memofileconduit/memofile-conduit.cc:131
 msgid " Doing regular sync..."
 msgstr " नियमित समक्रमण गर्दैछ..."
 
-#: conduits/memofileconduit/memofile-conduit.cc:619
-msgid "%1 new to Palm. "
-msgstr "पाममा %1 नयाँ "
-
-#: conduits/memofileconduit/memofile-conduit.cc:622
-msgid "%1 changed to Palm. "
-msgstr "पाममा %1 लाई परिवर्तन गरियो । "
-
-#: conduits/memofileconduit/memofile-conduit.cc:625
-msgid "%1 deleted from Palm. "
-msgstr "पामबाट %1 मेटियो । "
-
-#: conduits/memofileconduit/memofile-conduit.cc:630
-msgid " no changes made."
-msgstr " परिवर्तन गरेको छैन"
-
-#: conduits/memofileconduit/memofile-factory.cc:64
+#: conduits/memofileconduit/memofile-factory.cc:63
 msgid "Memofile Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि मेमोफाइल कन्ड्युट"
 
-#: conduits/memofileconduit/memofile-factory.cc:66
+#: conduits/memofileconduit/memofile-factory.cc:65
 msgid "Configures the Memofile Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि मेमोफाइल कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:53
+#: conduits/sysinfoconduit/sysinfo-setup.cc:52
 msgid "HardwareInfo"
 msgstr "हार्डवेयर सूचना"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:54
+#: conduits/sysinfoconduit/sysinfo-setup.cc:53
 msgid "UserInfo"
 msgstr "प्रयोगकर्ता सूचना"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:55
+#: conduits/sysinfoconduit/sysinfo-setup.cc:54
 msgid "MemoryInfo"
 msgstr "स्मृति सूचना"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:56
+#: conduits/sysinfoconduit/sysinfo-setup.cc:55
 msgid "StorageInfo"
 msgstr "भण्डारण सूचना"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:57
+#: conduits/sysinfoconduit/sysinfo-setup.cc:56
 msgid "DatabaseList"
 msgstr "डाटाबेस सूची"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:58
+#: conduits/sysinfoconduit/sysinfo-setup.cc:57
 msgid "RecordNumbers"
 msgstr "रेकर्ड नम्बर"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:59
+#: conduits/sysinfoconduit/sysinfo-setup.cc:58
 msgid "SyncInfo"
 msgstr "समक्रमण सूचना"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:60
+#: conduits/sysinfoconduit/sysinfo-setup.cc:59
 msgid "KDEVersion"
 msgstr "केडीई संस्करण"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:61
+#: conduits/sysinfoconduit/sysinfo-setup.cc:60
 msgid "PalmOSVersion"
 msgstr "PalmOSVersion"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:62
+#: conduits/sysinfoconduit/sysinfo-setup.cc:61
 msgid "DebugInformation"
 msgstr "डिबग सूचना"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:96
+#: conduits/sysinfoconduit/sysinfo-setup.cc:95
 msgid "KPilot System Information conduit"
 msgstr "केडीई पाइलट प्रणाली कन्ड्युट"
 
-#: conduits/sysinfoconduit/sysinfo-setup.cc:98
+#: conduits/sysinfoconduit/sysinfo-setup.cc:97
 msgid ""
 "Retrieves System, Hardware, and User Info from the Handheld and stores them to "
 "a file."
@@ -508,53 +583,51 @@ msgstr ""
 "तिनिहरूलाई फाइलमा भण्डारण गर्दछ ।"
 
 #: conduits/sysinfoconduit/sysinfo-conduit.cc:163
-#: conduits/sysinfoconduit/sysinfo-setup.cc:113
+#: conduits/sysinfoconduit/sysinfo-setup.cc:112
 msgid "System Information"
 msgstr "प्रणाली जानकारी"
 
-#: conduits/docconduit/doc-conflictdialog.cc:162
+#: conduits/docconduit/doc-conflictdialog.cc:161
 #: conduits/sysinfoconduit/sysinfo-conduit.cc:207
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:395
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:396
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:397
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:398
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:404
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:405
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:406
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:407
 msgid "unknown"
 msgstr "अज्ञात"
 
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:252
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:254
 msgid "Password set"
 msgstr "पासवर्ड सेट"
 
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:254
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:258
 msgid "No password set"
 msgstr "पासवर्ड सेट छैन"
 
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:299
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:308
 msgid "No Cards available via pilot-link"
 msgstr "पाइलट-लिङ्कबाट कार्ड उपलब्ध छैन"
 
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:454
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:463
 msgid "No debug data"
 msgstr "डिबग डेटा छैन"
 
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:575
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:576
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:587
 msgid "Unable to open output file, using %1 instead."
 msgstr "निर्गत फाइल खोल्न असक्षम, सट्टामा %1 प्रयोग गर्दैछ ।"
 
 #: conduits/notepadconduit/notepad-conduit.cc:79
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:579
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:580
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:591
 #, c-format
 msgid "Unable to open %1"
 msgstr " %1 खोल्न असक्षम"
 
-#: conduits/sysinfoconduit/sysinfo-conduit.cc:591
+#: conduits/sysinfoconduit/sysinfo-conduit.cc:602
 #, c-format
 msgid "Handheld system information written to the file %1"
 msgstr " %1 फाइलमा ह्यान्डहेल्ड प्रणाली सूचना लेखियो"
 
-#: conduits/malconduit/mal-conduit.cc:121 conduits/malconduit/mal-setup.cc:63
+#: conduits/malconduit/mal-conduit.cc:121 conduits/malconduit/mal-setup.cc:62
 msgid "MAL"
 msgstr "MAL"
 
@@ -586,27 +659,27 @@ msgid "Using SOCKS proxy: %1"
 msgstr "SOCKS प्रोक्सी प्रयोग गर्दैछ: %1"
 
 #: Documentation/ConduitProgrammingTutorial/mal-factory.cc:50
-#: conduits/malconduit/mal-factory.cc:68
+#: conduits/malconduit/mal-factory.cc:70
 msgid "MAL Synchronization Conduit for KPilot"
 msgstr "केडीई पाइलटमा MAL समक्रमण कन्ड्युट"
 
 #: Documentation/ConduitProgrammingTutorial/mal-factory.cc:52
-#: conduits/malconduit/mal-factory.cc:70
+#: conduits/malconduit/mal-factory.cc:72
 msgid "Synchronizes the content from MAL Servers like AvantGo to the Handheld"
 msgstr "AvantGo बाट ह्यान्डहेल्डमा जस्तै MAL सर्भरहरूबाट सामग्री समक्रमण गर्दछ"
 
 #: Documentation/ConduitProgrammingTutorial/mal-factory.cc:58
-#: conduits/malconduit/mal-factory.cc:76
+#: conduits/malconduit/mal-factory.cc:78
 msgid "Author of libmal and the JPilot AvantGo conduit"
 msgstr "libmal र JPilot AvantGo कन्ड्युटको लेखक"
 
 #: Documentation/ConduitProgrammingTutorial/mal-factory.cc:60
-#: conduits/malconduit/mal-factory.cc:78
+#: conduits/malconduit/mal-factory.cc:80
 msgid "Author of syncmal"
 msgstr "syncmal को लेखक"
 
 #: Documentation/ConduitProgrammingTutorial/mal-factory.cc:62
-#: conduits/malconduit/mal-factory.cc:80
+#: conduits/malconduit/mal-factory.cc:82
 msgid "Authors of the malsync library (c) 1997-1999"
 msgstr "malsync library (c) 1997-1999 को लेखक"
 
@@ -618,38 +691,74 @@ msgstr "केडीइ पाइलटका लागि KNotes कन्ड�
 msgid "Configures the KNotes Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि केडीई द्रष्टव्य कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/abbrowserconduit/abbrowser-setup.cc:62
+#: conduits/abbrowserconduit/abbrowser-setup.cc:61
 #: conduits/knotes/knotes-factory.cc:77
 msgid "UI"
 msgstr "UI"
 
-#: conduits/knotes/knotes-action.cc:261
-msgid ""
-"No DCOP connection could be made. The conduit cannot function without DCOP."
-msgstr "DCOP जडान गर्न सकेन । कन्ड्युटले DCOP बिना कार्य गर्न सक्दैन"
+#: conduits/knotes/knotes-action.cc:232
+#, fuzzy
+msgid "Could not open MemoDB on the handheld."
+msgstr "रेकर्ड मेट्न MemoDB खोल्न सकिदैन ।"
 
-#: conduits/knotes/knotes-action.cc:276
+#: conduits/knotes/knotes-action.cc:272
+#, fuzzy, c-format
+msgid "Could not load the resource at: %1"
+msgstr "कन्ड्युट %1 लोड गर्न सकेन ।"
+
+#: conduits/knotes/knotes-action.cc:808
+#, c-format
 msgid ""
-"KNotes is not running. The conduit must be able to make a DCOP connection to "
-"KNotes for synchronization to take place. Please start KNotes and try again."
+"_n: Added one new memo.\n"
+"Added %n new memos."
 msgstr ""
-"KNotes चलिरहेको छैन । समक्रमणले कार्य गर्न कन्ड्युटले KNotes सँग  DCOP जडान "
-"गर्न सक्षम हुनुपर्दछ । कृपया KNotes सुरु गर्नुहोस् र पुन: प्रयास गर्नुहोस् ।"
 
-#: conduits/knotes/knotes-action.cc:293
+#: conduits/knotes/knotes-action.cc:814
+#, c-format
 msgid ""
-"Could not retrieve list of notes from KNotes. The KNotes conduit will not be "
-"run."
+"_n: Modified one memo.\n"
+"Modified %n memos."
 msgstr ""
-"KNotes बाट द्रष्टव्यहरूको सूची पुन: प्राप्त गर्न सकेन । KNotes कन्ड्युट चल्ने "
-"छैन ।"
 
-#: conduits/knotes/knotes-setup.cc:60
+#: conduits/knotes/knotes-action.cc:821
+#, fuzzy, c-format
+msgid ""
+"_n: Deleted one memo.\n"
+"Deleted %n memos."
+msgstr "चयन गरेको मेमो मेट्नुहोस् ।"
+
+#: conduits/knotes/knotes-action.cc:827
+#, c-format
+msgid ""
+"_n: Added one note to KNotes.\n"
+"Added %n notes to KNotes."
+msgstr ""
+
+#: conduits/knotes/knotes-action.cc:833
+#, c-format
+msgid ""
+"_n: Modified one note in KNotes.\n"
+"Modified %n notes in KNotes."
+msgstr ""
+
+#: conduits/knotes/knotes-action.cc:839
+#, c-format
+msgid ""
+"_n: Deleted one note from KNotes.\n"
+"Deleted %n notes from KNotes."
+msgstr ""
+
+#: conduits/knotes/knotes-action.cc:844
+#, fuzzy
+msgid "No change to KNotes."
+msgstr "फाइल प्रणालीमा %1 परिवर्तन गरियो । "
+
+#: conduits/knotes/knotes-setup.cc:59
 msgid "KNotes"
 msgstr "KNotes"
 
 #: conduits/timeconduit/time-conduit.cc:57
-#: conduits/timeconduit/time-setup.cc:69 kpilot/datebookWidget.cc:68
+#: conduits/timeconduit/time-setup.cc:68 kpilot/datebookWidget.cc:68
 msgid "Time"
 msgstr "समय"
 
@@ -665,38 +774,38 @@ msgstr ""
 "PalmOS 3.25 र 3.3 ले प्रणाली समयमा सेटिङ समर्थन गर्दैन । समय कन्ड्युट "
 "छोड्दैछ..."
 
-#: conduits/timeconduit/time-setup.cc:49
+#: conduits/timeconduit/time-setup.cc:48
 msgid "Time Synchronization Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि समक्रमण कन्ड्युट"
 
-#: conduits/timeconduit/time-setup.cc:51
+#: conduits/timeconduit/time-setup.cc:50
 msgid "Synchronizes the Time on the Handheld and the PC"
 msgstr "ह्यान्डहेल्ड र PC मा समय समक्रमण गर्दछ"
 
-#: conduits/abbrowserconduit/abbrowser-setup.cc:49
+#: conduits/abbrowserconduit/abbrowser-setup.cc:48
 msgid "Abbrowser Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि एबब्राउजर कन्ड्युट"
 
-#: conduits/abbrowserconduit/abbrowser-setup.cc:51
+#: conduits/abbrowserconduit/abbrowser-setup.cc:50
 msgid "Configures the Abbrowser Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि एबब्राउजर कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/abbrowserconduit/abbrowser-setup.cc:57
-#: conduits/abbrowserconduit/abbrowser-setup.cc:60
-#: conduits/docconduit/doc-factory.cc:68 conduits/popmail/setupDialog.cc:75
-#: conduits/vcalconduit/todo-setup.cc:60 conduits/vcalconduit/todo-setup.cc:64
-#: conduits/vcalconduit/vcal-setup.cc:51 conduits/vcalconduit/vcal-setup.cc:55
-#: kpilot/kpilot.cc:1101 kpilot/pilotDaemon.cc:1329
+#: conduits/abbrowserconduit/abbrowser-setup.cc:56
+#: conduits/abbrowserconduit/abbrowser-setup.cc:59
+#: conduits/docconduit/doc-factory.cc:68 conduits/popmail/setupDialog.cc:74
+#: conduits/vcalconduit/todo-setup.cc:59 conduits/vcalconduit/todo-setup.cc:63
+#: conduits/vcalconduit/vcal-setup.cc:50 conduits/vcalconduit/vcal-setup.cc:54
+#: kpilot/kpilot.cc:1027 kpilot/pilotDaemon.cc:1323
 msgid "Maintainer"
 msgstr "मर्मतकर्ता"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:98
-#: conduits/abbrowserconduit/abbrowser-setup.cc:72
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:129
+#: conduits/abbrowserconduit/abbrowser-setup.cc:71
 msgid "Addressbook"
 msgstr "ठेगाना पुस्तक"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:251
-#: conduits/vcalconduit/vcal-conduitbase.cc:300
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:296
+#: conduits/vcalconduit/vcal-conduitbase.cc:298
 msgid ""
 "You chose to sync with the file \"%1\", which cannot be opened. Please make "
 "sure to supply a valid file name in the conduit's configuration dialog. "
@@ -706,11 +815,18 @@ msgstr ""
 "कन्ड्युटको कन्फिगरेसन संवादमा वैध फाइलनाम प्रदान गर्नेमा यकिन गर्नुहोस् । "
 "कन्ड्युट परित्याग गर्दैछ ।"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:286
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:331
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:332
 msgid "Unable to initialize and load the addressbook for the sync."
 msgstr "समक्रमणका लागि ठेगाना पुस्तक सुरुआत र लोड गर्न असक्षम ।"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:356
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:344
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:345
+#, fuzzy
+msgid "Unable to lock addressbook for writing.  Can't sync!"
+msgstr "समक्रमणका लागि ठेगाना पुस्तक सुरुआत र लोड गर्न असक्षम ।"
+
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:400
 msgid ""
 "An error occurred while uploading \"%1\". You can try to upload the temporary "
 "local file \"%2\" manually"
@@ -718,116 +834,111 @@ msgstr ""
 " \"%1\" अपलोड गर्दा त्रुटि देखा पर्यो । तपाईँले म्यानुअली अस्थायी स्थानिय फाइल "
 "\"%2\" मा अपलोड गर्ने प्रयास गर्न सक्नुहुन्छ"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:722
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:511
 msgid "Unable to open the addressbook databases on the handheld."
 msgstr "ह्यान्डहेल्डमा ठेगाना पुस्तक डाटाबेस खोल्न असक्षम"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:743
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:532
 msgid "Unable to open the addressbook."
 msgstr "ठेगाना पुस्तक खोल्न असक्षम"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1970
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1523
 msgid "Item on PC"
 msgstr "PC मा वस्तु"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1971
-#: conduits/vcalconduit/vcal-conduitbase.cc:442
-msgid "Handheld"
-msgstr "ह्यान्डहेल्ड"
-
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1972
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1525
 msgid "Last sync"
 msgstr "अन्तिम समक्रमण"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1993
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1546
 msgid "Last name"
 msgstr "अन्तिम नाम"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1994
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1547
 msgid "First name"
 msgstr "पहिलो नाम"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1995
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1548
 msgid "Organization"
 msgstr "संगठन"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1996
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1549
 msgid "Title"
 msgstr "शीर्षक"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1997
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1550
 msgid "Note"
 msgstr "द्रष्टव्य"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1998
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1552
 msgid "Custom 1"
 msgstr "अनुकूल १"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:1999
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1553
 msgid "Custom 2"
 msgstr "अनुकूल २"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2000
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1554
 msgid "Custom 3"
 msgstr "अनुकूल ३"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2001
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1555
 msgid "Custom 4"
 msgstr "अनुकूल ४"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2002
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1557
 msgid "Work Phone"
 msgstr "कार्य फोन"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2003
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1558
 msgid "Home Phone"
 msgstr "गृह फोन"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2004
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1559
 msgid "Mobile Phone"
 msgstr "मोबाइल फोन"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2005
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1560
 msgid "Fax"
 msgstr "फ्याक्स"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2006
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1561
 msgid "Pager"
 msgstr "पेजर"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2007
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1562
 msgid "Other"
 msgstr "अन्य"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2008
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1563
 msgid "Email"
 msgstr "इमेल"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2011
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1566
 msgid "Address"
 msgstr "ठेगाना"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2012
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1567
 msgid "City"
 msgstr "शहर"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2013
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1568
 msgid "Region"
 msgstr "क्षेत्र"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2014
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1569
 msgid "Postal code"
 msgstr "हुलाकी सङ्केत"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2015
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1570
 msgid "Country"
 msgstr "देश"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2017 kpilot/listCat.cc:84
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1583 kpilot/listCat.cc:84
 msgid "Category"
 msgstr "कोटी"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2168
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1748
 msgid ""
 "The following address entry was changed, but does no longer exist on the "
 "handheld. Please resolve this conflict:"
@@ -835,7 +946,7 @@ msgstr ""
 "निम्न ठेगाना प्रविष्ट परिवर्तन गरिएको छ, तर ह्यान्डहेल्डमा धेरै समयसम्म रहने "
 "छैन । कृपया यो समस्या समाधान गर्नुहोस् ।"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2172
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1752
 msgid ""
 "The following address entry was changed, but does no longer exist on the PC. "
 "Please resolve this conflict:"
@@ -843,7 +954,7 @@ msgstr ""
 "निम्न ठेगाना प्रविष्ट परिवर्तन गरिएको छ, तर PC धेरै समयसम्म रहने छैन । कृपया यो "
 "समस्या समाधान गर्नुहोस् ।"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2176
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1756
 msgid ""
 "The following address entry was changed on the handheld as well as on the PC "
 "side. The changes could not be merged automatically, so please resolve the "
@@ -852,7 +963,7 @@ msgstr ""
 "निम्न ठेगाना प्रविष्टहरू PC र ह्यान्डहेल्डमा परिवर्तन गरिएको छ । ति परिवर्तनहरू "
 "स्वचालित रूपमा गाभ्न सकिदैन, त्यसैले कृपया आफै समस्या समाधान गर्नुहोस्:"
 
-#: conduits/abbrowserconduit/abbrowser-conduit.cc:2178
+#: conduits/abbrowserconduit/abbrowser-conduit.cc:1758
 msgid "Address conflict"
 msgstr "ठेगाना द्वन्द्ध"
 
@@ -1056,7 +1167,7 @@ msgstr ""
 "<qt>डाटाबेस फाइल <em>%1</em> पहिल्यै अवस्थित छ । यसलाई अधिलेखन गर्नुहुन्छ ?</qt>"
 
 #: conduits/docconduit/kpalmdoc_dlg.cc:457
-#: conduits/docconduit/kpalmdoc_dlg.cc:502 kpilot/addressWidget.cc:700
+#: conduits/docconduit/kpalmdoc_dlg.cc:502 kpilot/addressWidget.cc:698
 #: kpilot/logWidget.cc:356
 msgid "Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
@@ -1079,7 +1190,7 @@ msgstr "केडीई पाइलटका लागि पाम DOC कन�
 msgid "Configures the DOC Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि DOC कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/docconduit/doc-setup.cc:65
+#: conduits/docconduit/doc-setup.cc:64
 msgid "Palm DOC"
 msgstr "पाम DOC"
 
@@ -1142,31 +1253,31 @@ msgstr "दुबै डाटाबेस मेट्नुहोस्"
 msgid "More Info..."
 msgstr "बढी जानकारी..."
 
-#: conduits/docconduit/doc-conflictdialog.cc:156
+#: conduits/docconduit/doc-conflictdialog.cc:155
 msgid "unchanged"
 msgstr "अपरिवर्तित"
 
-#: conduits/docconduit/doc-conflictdialog.cc:157
+#: conduits/docconduit/doc-conflictdialog.cc:156
 msgid "new"
 msgstr "नयाँ"
 
-#: conduits/docconduit/doc-conflictdialog.cc:158
+#: conduits/docconduit/doc-conflictdialog.cc:157
 msgid "changed"
 msgstr "परिवर्तित"
 
-#: conduits/docconduit/doc-conflictdialog.cc:159
+#: conduits/docconduit/doc-conflictdialog.cc:158
 msgid "only bookmarks changed"
 msgstr "पुस्तकचिनो मात्र परिवर्तन गरियो"
 
-#: conduits/docconduit/doc-conflictdialog.cc:160
+#: conduits/docconduit/doc-conflictdialog.cc:159
 msgid "deleted"
 msgstr "मेटिएको"
 
-#: conduits/docconduit/doc-conflictdialog.cc:161
+#: conduits/docconduit/doc-conflictdialog.cc:160
 msgid "does not exist"
 msgstr "अवस्थित छैन"
 
-#: conduits/docconduit/doc-conflictdialog.cc:172
+#: conduits/docconduit/doc-conflictdialog.cc:171
 msgid ""
 "Status of the database %1:\n"
 "\n"
@@ -1174,24 +1285,24 @@ msgstr ""
 "डाटाबेस %1 को वस्तुस्थिति:\n"
 "\n"
 
-#: conduits/docconduit/doc-conflictdialog.cc:173
+#: conduits/docconduit/doc-conflictdialog.cc:172
 msgid ""
 "Handheld: %1\n"
 msgstr ""
 "ह्यान्डहेल्ड: %1\n"
 
-#: conduits/docconduit/doc-conflictdialog.cc:174
+#: conduits/docconduit/doc-conflictdialog.cc:173
 msgid ""
 "Desktop: %1\n"
 msgstr ""
 "डेस्कटप: %1\n"
 
-#: conduits/docconduit/doc-conflictdialog.cc:176
+#: conduits/docconduit/doc-conflictdialog.cc:175
 msgid "Database information"
 msgstr "डाटाबेस जानकारी"
 
 #: conduits/notepadconduit/notepad-conduit.cc:59
-#: conduits/notepadconduit/notepad-factory.cc:90
+#: conduits/notepadconduit/notepad-factory.cc:89
 msgid "Notepad"
 msgstr "नोटप्याड"
 
@@ -1213,55 +1324,60 @@ msgstr ""
 "एउटा नोटप्याड बचत भयो\n"
 "%n नोटप्याड बचत भयो"
 
-#: conduits/notepadconduit/notepad-factory.cc:68
+#: conduits/notepadconduit/notepad-factory.cc:67
 msgid "Saves notepads to png files"
 msgstr "नोटप्याडहरू png फाइलमा बचत गर्दछ"
 
-#: conduits/notepadconduit/notepad-factory.cc:70
+#: conduits/notepadconduit/notepad-factory.cc:69
 msgid "Configures the Notepad Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि नोटप्याड कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/notepadconduit/notepad-factory.cc:79
+#: conduits/notepadconduit/notepad-factory.cc:78
 msgid "Notepad conduit is based on Angus' read-notepad, part of pilot-link"
 msgstr ""
 "नोटप्याड कन्ड्युट पाइलट-लिङ्कको भाग, एन्गुस रिड-नोटप्याडमा आधारित हुन्छ"
 
-#: conduits/recordconduit/factory.cc:67
+#: conduits/recordconduit/factory.cc:64
+#, fuzzy
+msgid "Record Conduit"
+msgstr "केडीई पाइलटका लागि रेकर्ड कन्ड्युट"
+
+#: conduits/recordconduit/factory.cc:66
 msgid "Record Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि रेकर्ड कन्ड्युट"
 
-#: conduits/recordconduit/factory.cc:69
+#: conduits/recordconduit/factory.cc:68
 msgid "Configures the Record Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि रेकर्ड कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/popmail/popmail-conduit.cc:88 conduits/popmail/setupDialog.cc:67
+#: conduits/popmail/popmail-conduit.cc:89 conduits/popmail/setupDialog.cc:66
 msgid "KMail"
 msgstr "केडीई मेल"
 
-#: conduits/popmail/setupDialog.cc:69
+#: conduits/popmail/setupDialog.cc:68
 msgid "Mail Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि मेल कन्ड्युट"
 
-#: conduits/popmail/setupDialog.cc:71
+#: conduits/popmail/setupDialog.cc:70
 msgid "Configures the Mail Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि मेल कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/popmail/setupDialog.cc:79 conduits/vcalconduit/todo-setup.cc:54
-#: conduits/vcalconduit/todo-setup.cc:56 conduits/vcalconduit/todo-setup.cc:58
-#: conduits/vcalconduit/vcal-setup.cc:59 conduits/vcalconduit/vcal-setup.cc:61
-#: conduits/vcalconduit/vcal-setup.cc:63
+#: conduits/popmail/setupDialog.cc:78 conduits/vcalconduit/todo-setup.cc:53
+#: conduits/vcalconduit/todo-setup.cc:55 conduits/vcalconduit/todo-setup.cc:57
+#: conduits/vcalconduit/vcal-setup.cc:58 conduits/vcalconduit/vcal-setup.cc:60
+#: conduits/vcalconduit/vcal-setup.cc:62
 msgid "Original Author"
 msgstr "मौलिक लेखक"
 
-#: conduits/popmail/setupDialog.cc:81
+#: conduits/popmail/setupDialog.cc:80
 msgid "POP3 code"
 msgstr "POP3 सङ्केत"
 
-#: conduits/popmail/setupDialog.cc:83
+#: conduits/popmail/setupDialog.cc:82
 msgid "SMTP support and redesign"
 msgstr "SMTP समर्थन र रिडिजाइन"
 
-#: conduits/popmail/popmail-conduit.cc:117
+#: conduits/popmail/popmail-conduit.cc:118
 #, c-format
 msgid ""
 "_n: Sent one message\n"
@@ -1270,48 +1386,48 @@ msgstr ""
 "एउटा सन्देश पठाइयो\n"
 "%n सन्देशहरू पठाइयो"
 
-#: conduits/popmail/popmail-conduit.cc:139
+#: conduits/popmail/popmail-conduit.cc:138
 msgid "No mail was sent."
 msgstr "मेल पठाएको छैन"
 
-#: conduits/popmail/popmail-conduit.cc:146
+#: conduits/popmail/popmail-conduit.cc:145
 msgid "No mail could be sent."
 msgstr "मेल पठाउन सकिएन"
 
-#: conduits/popmail/popmail-conduit.cc:197
+#: conduits/popmail/popmail-conduit.cc:195
 msgid "Could not connect to DCOP server for the KMail connection."
 msgstr "केडीई मेल जडानका लागि DCOP सर्भरमा जडान गर्न सकेन ।"
 
-#: conduits/popmail/popmail-conduit.cc:199
-#: conduits/popmail/popmail-conduit.cc:236
-#: conduits/popmail/popmail-conduit.cc:250
-#: conduits/popmail/popmail-conduit.cc:280
+#: conduits/popmail/popmail-conduit.cc:197
+#: conduits/popmail/popmail-conduit.cc:232
+#: conduits/popmail/popmail-conduit.cc:245
+#: conduits/popmail/popmail-conduit.cc:273
 msgid "Error Sending Mail"
 msgstr "मेल पठाउदा त्रुटि"
 
-#: conduits/popmail/popmail-conduit.cc:234
-#: conduits/popmail/popmail-conduit.cc:248
+#: conduits/popmail/popmail-conduit.cc:230
+#: conduits/popmail/popmail-conduit.cc:243
 msgid "Cannot open temporary file to store mail from Pilot in."
 msgstr "पाइलटबाट मेल भण्डार गर्न अस्थायी फाइल खोल्न सकिदैन"
 
-#: conduits/popmail/popmail-conduit.cc:279
+#: conduits/popmail/popmail-conduit.cc:272
 msgid "DCOP connection with KMail failed."
 msgstr "केडीई मेलसँग DCOP जडान असफल"
 
-#: conduits/popmail/popmail-conduit.cc:384
+#: conduits/popmail/popmail-conduit.cc:397
 msgid "Cannot perform backup of mail database"
 msgstr "मेल डाटाबेसको जगेडा गर्न सकिदैन"
 
-#: conduits/popmail/popmail-conduit.cc:392
+#: conduits/popmail/popmail-conduit.cc:405
 msgid "Unable to open mail database on handheld"
 msgstr "ह्यान्डहेल्डमा मेल डाटाबेस खोल्न असक्षम"
 
-#: conduits/vcalconduit/vcal-conduit.cc:173
-#: conduits/vcalconduit/vcal-setup.cc:71
+#: conduits/vcalconduit/vcal-conduit.cc:178
+#: conduits/vcalconduit/vcal-setup.cc:70
 msgid "Calendar"
 msgstr "पात्रो"
 
-#: conduits/vcalconduit/vcal-conduit.cc:235
+#: conduits/vcalconduit/vcal-conduit.cc:222
 msgid ""
 "Event \"%1\" has a yearly recurrence other than by month, will change this to "
 "recurrence by month on handheld."
@@ -1319,24 +1435,24 @@ msgstr ""
 "अरूहरू जस्तो महिनामा नभएर \"%1\" घटना वार्षिक रूपमा पुनरावृत्ती हुन्छ, यसले "
 "ह्यान्डहेल्डमा महिनाद्वारा पुनरावृत्तीमा परिवर्तन गर्दछ ।"
 
-#: conduits/vcalconduit/vcal-setup.cc:45
+#: conduits/vcalconduit/vcal-setup.cc:44
 msgid "VCal Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि VCal कन्ड्युट"
 
-#: conduits/vcalconduit/vcal-setup.cc:47
+#: conduits/vcalconduit/vcal-setup.cc:46
 msgid "Configures the VCal Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि VCal कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/vcalconduit/vcal-setup.cc:65
+#: conduits/vcalconduit/vcal-setup.cc:64
 msgid "iCalendar port"
 msgstr "आई क्यालेन्डर पोर्ट"
 
-#: conduits/vcalconduit/vcal-setup.cc:67 kpilot/kpilot.cc:1112
-#: kpilot/kpilot.cc:1113
+#: conduits/vcalconduit/vcal-setup.cc:66 kpilot/kpilot.cc:1038
+#: kpilot/kpilot.cc:1039
 msgid "Bugfixer"
 msgstr "बग मर्मतकर्ता"
 
-#: conduits/vcalconduit/vcal-setup.cc:70
+#: conduits/vcalconduit/vcal-setup.cc:69
 msgid "Calendar Destination"
 msgstr "क्यालेन्डर गन्तव्य"
 
@@ -1352,8 +1468,8 @@ msgstr ""
 " \"%1\" अपलोड गर्दा त्रुटि देखा पर्यो । तपाईँले म्यानुअली अस्थायी स्थानिय फाइल "
 "\"%2\" अपलोड गर्न प्रयास गर्न सक्नुहुन्छ ।"
 
-#: conduits/vcalconduit/todo-conduit.cc:180
-#: conduits/vcalconduit/todo-setup.cc:46
+#: conduits/vcalconduit/todo-conduit.cc:183
+#: conduits/vcalconduit/todo-setup.cc:45
 msgid "To-do"
 msgstr "'गर्नु पर्ने'"
 
@@ -1365,15 +1481,15 @@ msgstr "पाइलटमा रेकर्डहरू प्रतिलि�
 msgid "Initializing conduit ..."
 msgstr "कन्ड्युट सुरुआत गर्दैछ..."
 
-#: conduits/vcalconduit/todo-setup.cc:48
+#: conduits/vcalconduit/todo-setup.cc:47
 msgid "To-do Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि 'गर्नु पर्ने' कन्ड्युट"
 
-#: conduits/vcalconduit/todo-setup.cc:50
+#: conduits/vcalconduit/todo-setup.cc:49
 msgid "Configures the To-do Conduit for KPilot"
 msgstr "केडीई पाइलटका लागि 'गर्नु पर्ने' कन्ड्युट कन्फिगर गर्दछ"
 
-#: conduits/vcalconduit/todo-setup.cc:70
+#: conduits/vcalconduit/todo-setup.cc:69
 msgid "To-do Destination"
 msgstr "'गर्नु पर्ने' गन्तव्य"
 
@@ -1381,7 +1497,7 @@ msgstr "'गर्नु पर्ने' गन्तव्य"
 msgid "Could not open the calendar databases."
 msgstr "क्यालेन्डर डाटाबेस खोल्न सकेन"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:271
+#: conduits/vcalconduit/vcal-conduitbase.cc:269
 msgid ""
 "You selected to sync with an iCalendar file, but did not give a filename. "
 "Please select a valid file name in the conduit's configuration dialog"
@@ -1389,19 +1505,19 @@ msgstr ""
 "तपाईँले आई क्यालेन्डर फाइलसँग समक्रमण गर्न चयन गर्नुभ‍एको छ, तर फाइलनाम दिएको "
 "छैन । कृपया कन्ड्युटको कन्फिगरेसन संवादमा वैध फाइल नाम चयन गर्नुहोस् ।"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:293
-#: conduits/vcalconduit/vcal-conduitbase.cc:360
+#: conduits/vcalconduit/vcal-conduitbase.cc:291
+#: conduits/vcalconduit/vcal-conduitbase.cc:356
 #, c-format
 msgid "Using local time zone: %1"
 msgstr "स्थानिय समय क्षेत्रको प्रयोग: %1"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:294
-#: conduits/vcalconduit/vcal-conduitbase.cc:361
+#: conduits/vcalconduit/vcal-conduitbase.cc:292
+#: conduits/vcalconduit/vcal-conduitbase.cc:357
 #, c-format
 msgid "Using non-local time zone: %1"
 msgstr "बाहिरको समय क्षेत्रको प्रयोग: %1"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:323
+#: conduits/vcalconduit/vcal-conduitbase.cc:321
 msgid ""
 "You chose to sync with the file \"%1\", which cannot be opened or created. "
 "Please make sure to supply a valid file name in the conduit's configuration "
@@ -1411,21 +1527,21 @@ msgstr ""
 "सकिदैन । कृपया कन्ड्युटको कन्फिगरेसन संवादमा वैध फाइल नाम प्रदान गरेकोमा यकिन "
 "गर्नुहोस् । कन्ड्युट परित्याग गरिदैछ ।"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:332
+#: conduits/vcalconduit/vcal-conduitbase.cc:330
 msgid "Syncing with file \"%1\""
 msgstr "फाइल \"%1\" सँग समक्रमण"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:358
+#: conduits/vcalconduit/vcal-conduitbase.cc:354
 msgid "Syncing with standard calendar resource."
 msgstr "मानक क्यालेन्डर संसाधानसँग समक्रमण"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:371
+#: conduits/vcalconduit/vcal-conduitbase.cc:367
 msgid ""
 "Unable to initialize the calendar object. Please check the conduit's setup"
 msgstr ""
 "क्यालेन्डर वस्तु सुरुआत गर्न असक्षम । कृपया कन्ड्युटको सेटअप जाँच गर्नुहोस्"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:429
+#: conduits/vcalconduit/vcal-conduitbase.cc:425
 msgid ""
 "The following item was modified both on the Handheld and on your PC:\n"
 "PC entry:\n"
@@ -1435,7 +1551,7 @@ msgstr ""
 "PC प्रविष्टि:\n"
 "\t"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:432
+#: conduits/vcalconduit/vcal-conduitbase.cc:428
 msgid ""
 "\n"
 "Handheld entry:\n"
@@ -1445,7 +1561,7 @@ msgstr ""
 "ह्यान्डहेल्ड प्रविष्टि:\n"
 "\t"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:434
+#: conduits/vcalconduit/vcal-conduitbase.cc:430
 msgid ""
 "\n"
 "\n"
@@ -1455,27 +1571,23 @@ msgstr ""
 "\n"
 "कुन प्रविष्टि राख्न चाहनुहुन्छ ? यसले अन्य प्रविष्टि अधिलेखन गर्दछ ।"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:439
+#: conduits/vcalconduit/vcal-conduitbase.cc:435
 msgid "Conflicting Entries"
 msgstr "समस्या भएको प्रविष्टिहरू"
 
-#: conduits/vcalconduit/vcal-conduitbase.cc:442
-msgid "PC"
-msgstr "PC"
-
-#: kpilot/conduitConfigDialog.cc:253
+#: kpilot/conduitConfigDialog.cc:252
 msgid "<qt>This conduit appears to be broken and cannot be configured.</qt>"
 msgstr "<qt>यो कन्ड्युट बिग्रेको र कन्फिगर गर्न नसकिने देखिन्छ ।</qt>"
 
-#: kpilot/conduitConfigDialog.cc:261
+#: kpilot/conduitConfigDialog.cc:260
 msgid "<qt>This is an old-style conduit.</qt>"
 msgstr "<qt>यो पुरानो शैलीको कन्ड्युट हो ।</qt>"
 
-#: kpilot/conduitConfigDialog.cc:265
+#: kpilot/conduitConfigDialog.cc:264
 msgid "Configure..."
 msgstr "कन्फिगर गर्नुहोस्..."
 
-#: kpilot/conduitConfigDialog.cc:275
+#: kpilot/conduitConfigDialog.cc:274
 msgid ""
 "<qt><i>Conduits</i> are external (possibly third-party) programs that perform "
 "synchronization actions. They may have individual configurations. Select a "
@@ -1486,7 +1598,7 @@ msgstr ""
 "कन्ड्युट चयन गर्नुहोस्, र यसको जाँचबाकसमा क्लिक गरेर यसलाई सक्षम पार्नुहोस् "
 "।</qt>"
 
-#: kpilot/conduitConfigDialog.cc:283
+#: kpilot/conduitConfigDialog.cc:282
 msgid ""
 "<qt>"
 "<p>The <i>general</i> portion of KPilot's setup contains settings for your "
@@ -1510,67 +1622,67 @@ msgstr ""
 "सक्नुहुन्छ । चेक गरेको कन्ड्युट हटसिन्कको बेलामा चलेको हुन्छ । यसलाई कन्फिगर "
 "गर्न कन्ड्युट चयन गर्नुहोस् ।</p></qt>"
 
-#: kpilot/conduitConfigDialog.cc:296
+#: kpilot/conduitConfigDialog.cc:295
 msgid "Configuration Wizard"
 msgstr "कन्फिगरेसन विजार्ड"
 
-#: kpilot/conduitConfigDialog.cc:370
+#: kpilot/conduitConfigDialog.cc:369
 msgid "About KPilot. Credits."
 msgstr "केडीई पाइलटका बारेमा, श्रेय"
 
-#: kpilot/conduitConfigDialog.cc:373
+#: kpilot/conduitConfigDialog.cc:372
 msgid "Conduits"
 msgstr "कन्ड्युट"
 
-#: kpilot/conduitConfigDialog.cc:375
+#: kpilot/conduitConfigDialog.cc:374
 msgid "General Setup"
 msgstr "साधारण सेटअप"
 
-#: kpilot/conduitConfigDialog.cc:383
+#: kpilot/conduitConfigDialog.cc:382
 msgid "General setup of KPilot (User name, port, general sync settings)"
 msgstr ""
 "केडीई पाइलटका लागि साधारण सेटअप (प्रयोगकर्ता नाम, पोर्ट, साधारण समक्रमण सेटिङ)"
 
-#: kpilot/conduitConfigDialog.cc:385
+#: kpilot/conduitConfigDialog.cc:384
 msgid "Actions for HotSync with individual configuration."
 msgstr "छुट्टा छुट्टै कन्फिगरेसनसँग हटसिन्कका लागि कार्य"
 
-#: kpilot/conduitConfigDialog.cc:396 kpilot/kpilotConfigDialog.cc:473
+#: kpilot/conduitConfigDialog.cc:395 kpilot/kpilotConfigDialog.cc:470
 msgid "Startup and Exit"
 msgstr "सुरुआत र अन्त्य"
 
-#: kpilot/conduitConfigDialog.cc:396
+#: kpilot/conduitConfigDialog.cc:395
 msgid "Behavior at startup and exit."
 msgstr "सुरुआत र अन्त्य हुँदाको व्यवहार"
 
 #. i18n: file ./kpilot/kpilotConfigDialog_viewers.ui line 33
-#: kpilot/conduitConfigDialog.cc:397 kpilot/kpilotConfigDialog.cc:421
+#: kpilot/conduitConfigDialog.cc:396 kpilot/kpilotConfigDialog.cc:418
 #: rc.cpp:1225
 #, no-c-format
 msgid "Viewers"
 msgstr "दृश्यकर्ता"
 
-#: kpilot/conduitConfigDialog.cc:397
+#: kpilot/conduitConfigDialog.cc:396
 msgid "Viewer settings."
 msgstr "दृश्यकर्ता सेटिङ"
 
-#: kpilot/conduitConfigDialog.cc:398
+#: kpilot/conduitConfigDialog.cc:397
 msgid "Special settings for backup."
 msgstr "जगेडाका लागि विशेष सेटिङ"
 
-#: kpilot/conduitConfigDialog.cc:399
+#: kpilot/conduitConfigDialog.cc:398
 msgid "Special behavior during HotSync."
 msgstr "हटसिन्कका बेलामा विशेष व्यवहार"
 
-#: kpilot/conduitConfigDialog.cc:400 kpilot/kpilotConfigDialog.cc:102
+#: kpilot/conduitConfigDialog.cc:399 kpilot/kpilotConfigDialog.cc:102
 msgid "Device"
 msgstr "यन्त्र"
 
-#: kpilot/conduitConfigDialog.cc:400
+#: kpilot/conduitConfigDialog.cc:399
 msgid "Hardware settings and startup and exit options."
 msgstr "हार्डवेयर सेटिङ तथा सुरुआत र अन्त्य विकल्प"
 
-#: kpilot/conduitConfigDialog.cc:544
+#: kpilot/conduitConfigDialog.cc:542
 msgid ""
 "<qt>This is an internal action which has no configuration options. The action's "
 "description is: <i>%1</i> </qt>"
@@ -1578,11 +1690,11 @@ msgstr ""
 "<qt>यो कन्फिगरेसन विकल्प नभएको आन्तरिक कार्य हो । कार्यको वर्णन यस्तो छ: <i>"
 "%1</i> </qt>"
 
-#: kpilot/conduitConfigDialog.cc:724
+#: kpilot/conduitConfigDialog.cc:722
 msgid "KPilot Setup"
 msgstr "केडीई पाइलट सेटअप"
 
-#: kpilot/conduitConfigDialog.cc:737
+#: kpilot/conduitConfigDialog.cc:735
 msgid ""
 "<qt>No library could be found for the conduit %1. This means that the conduit "
 "was not installed properly.</qt>"
@@ -1590,11 +1702,11 @@ msgstr ""
 "<qt>कन्ड्युट %1 का लागि लाइब्रेरी फेला पार्न सकेन । यसको अर्थ कन्ड्युट "
 "राम्रोसँग स्थापना नभएको हुनसक्दछ ।</qt>"
 
-#: kpilot/conduitConfigDialog.cc:747 kpilot/conduitConfigDialog.cc:764
+#: kpilot/conduitConfigDialog.cc:745 kpilot/conduitConfigDialog.cc:762
 msgid "Conduit Error"
 msgstr "कन्ड्युट त्रुटि"
 
-#: kpilot/conduitConfigDialog.cc:754
+#: kpilot/conduitConfigDialog.cc:752
 msgid ""
 "<qt>There was a problem loading the library for the conduit %1. This means that "
 "the conduit was not installed properly.</qt>"
@@ -1708,41 +1820,41 @@ msgstr ""
 msgid "Handheld Detection"
 msgstr "ह्यान्डहेल्ड पत्ता"
 
-#: kpilot/kpilotConfig.cc:164
+#: kpilot/kpilotConfig.cc:163
 msgid "The configuration file is outdated."
 msgstr "कन्फिगरेसनको म्याद समाप्त भएको छ"
 
-#: kpilot/kpilotConfig.cc:166
+#: kpilot/kpilotConfig.cc:165
 msgid "The configuration file has version %1, while KPilot needs version %2."
 msgstr ""
 "कन्फिगरेसन %1 संस्करणको हो, जबकी केडीई पाइलटलाई %2 संस्करण आवश्यक पर्दछ ।"
 
-#: kpilot/kpilotConfig.cc:171
+#: kpilot/kpilotConfig.cc:170
 msgid ""
 "Please run KPilot and check the configuration carefully to update the file."
 msgstr ""
 "कृपया फाइल अद्यावधिक गर्न केडीई पाइलट चलाउनुहोस् र सावधानीपूर्वक कन्फिगरेसन "
 "जाँच गर्नुहोस् ।"
 
-#: kpilot/kpilotConfig.cc:175
+#: kpilot/kpilotConfig.cc:174
 msgid "Important changes to watch for are:"
 msgstr "हेर्नका लागि महत्वपूर्ण परिवर्तनहरू:"
 
-#: kpilot/kpilotConfig.cc:179
+#: kpilot/kpilotConfig.cc:178
 msgid ""
 "Renamed conduits, Kroupware and file installer have been made conduits as well."
 msgstr ""
 "पुन: नामकरण गरिएको कन्ड्युट, Kroupware र फाइल स्थापकले कन्ड्युट पनि बनाएको छ ।"
 
-#: kpilot/kpilotConfig.cc:182
+#: kpilot/kpilotConfig.cc:181
 msgid "Conflict resolution is now a global setting."
 msgstr "द्वन्द्ध समाधान अहिले विश्वव्यापी सेटिङ हो ।"
 
-#: kpilot/kpilotConfig.cc:187
+#: kpilot/kpilotConfig.cc:186
 msgid "Changed format of no-backup databases."
 msgstr "जगेडा नगरेको डाटाबेसको परिवर्तित ढाँचा"
 
-#: kpilot/kpilotConfig.cc:200
+#: kpilot/kpilotConfig.cc:199
 msgid ""
 "The configuration file for KPilot is out-of date. Please run KPilot to update "
 "it."
@@ -1750,11 +1862,11 @@ msgstr ""
 "केडीई पाइलटका लागि कन्फिगरेसन फाइलको म्याद समाप्त भएको छ । यसलाई अद्यावधिक गर्न "
 "कृपया केडीई पाइलट चलाउनुहोस् ।"
 
-#: kpilot/kpilotConfig.cc:203 kpilot/kpilotConfig.cc:328
+#: kpilot/kpilotConfig.cc:202 kpilot/kpilotConfig.cc:327
 msgid "Configuration File Out-of Date"
 msgstr "कन्फिगरेसन फाइलको म्याद समाप्त भएको छ"
 
-#: kpilot/kpilotConfig.cc:221
+#: kpilot/kpilotConfig.cc:220
 msgid ""
 "The settings for the file installer have been moved to the conduits "
 "configuration. Check the installed conduits list."
@@ -1762,11 +1874,11 @@ msgstr ""
 "फाइल स्थापकका लागि सेटिङलाई कन्ड्युट कन्फिगरेसनमा सारिएको छ । स्थापित कन्ड्युट "
 "सूची चेक गर्नुहोस् ।"
 
-#: kpilot/kpilotConfig.cc:224
+#: kpilot/kpilotConfig.cc:223
 msgid "Settings Updated"
 msgstr "सेटिङ अद्यावधिक"
 
-#: kpilot/kpilotConfig.cc:249
+#: kpilot/kpilotConfig.cc:248
 msgid ""
 "<qt>The following old conduits were found on your system. It is a good idea to "
 "remove them and the associated <tt>.la</tt> and <tt>.so.0</tt> files.</qt>"
@@ -1774,11 +1886,11 @@ msgstr ""
 "<qt>निम्न पुराना कन्ड्युट तपाईँको प्रणालीमा फेला पर्यो । यसलाई <tt>.la</tt> "
 "र <tt>.so.0</tt> फाइलहरूसँग मेट्दा राम्रो हुन सक्दछ ।</qt>"
 
-#: kpilot/kpilotConfig.cc:254
+#: kpilot/kpilotConfig.cc:253
 msgid "Old Conduits Found"
 msgstr "पुरानो कन्ड्युट फेला पर्यो"
 
-#: kpilot/kpilotConfig.cc:286
+#: kpilot/kpilotConfig.cc:285
 msgid ""
 "<qt>The no backup databases listed in your configuration file have been "
 "adjusted to the new format. Database creator IDs have been changed to use "
@@ -1788,11 +1900,11 @@ msgstr ""
 "समायोजन गरिएको छ । डाटाबेस सर्जक IDs वर्ग कोष्ठक [] प्रयोग गर्न परिवर्तन गरिएको "
 "छ ।"
 
-#: kpilot/kpilotConfig.cc:290
+#: kpilot/kpilotConfig.cc:289
 msgid "No Backup Databases Updated"
 msgstr "जगेडा डाटाबेस अद्यावधिक छैन"
 
-#: kpilot/kpilotConfig.cc:311
+#: kpilot/kpilotConfig.cc:310
 msgid ""
 "KPilot is not configured for use. You may use the configuration wizard or the "
 "normal configure dialog to configure KPilot."
@@ -1800,19 +1912,19 @@ msgstr ""
 "प्रयोग गर्नलाई केडीई पाइलट कन्फिगर गरिएको छ । तपाईँले केडीई पाइलट कन्फिगर गर्न "
 "कन्फिगरेसन विजार्ड वा सामान्य कन्फिगर संवाद प्रयोग गर्न सक्नुहुन्छ ।"
 
-#: kpilot/kpilotConfig.cc:314
+#: kpilot/kpilotConfig.cc:313
 msgid "Not Configured"
 msgstr "कन्फिगर गरिएको छैन"
 
-#: kpilot/kpilotConfig.cc:315
+#: kpilot/kpilotConfig.cc:314
 msgid "Use &Wizard"
 msgstr "विजार्ड प्रयोग गर्नुहोस्"
 
-#: kpilot/kpilotConfig.cc:316
+#: kpilot/kpilotConfig.cc:315
 msgid "Use &Dialog"
 msgstr "संवाद प्रयोग गर्नुहोस्"
 
-#: kpilot/kpilotConfig.cc:324
+#: kpilot/kpilotConfig.cc:323
 msgid ""
 "The configuration file for KPilot is out-of date. KPilot can update some parts "
 "of the configuration automatically. Do you wish to continue?"
@@ -1821,11 +1933,11 @@ msgstr ""
 "कन्फिगरेसनको केहि भागहरू स्वचालित रूपमा अद्यावधिक गर्न सक्छ । तपाईँले जारी "
 "राख्न चाहनुहुन्छ ?"
 
-#: kpilot/dbRecordEditor.cc:55
+#: kpilot/dbRecordEditor.cc:53
 msgid "Edit Record"
 msgstr "रेकर्ड सम्पादन गर्नुहोस्"
 
-#: kpilot/dbRecordEditor.cc:77
+#: kpilot/dbRecordEditor.cc:75
 msgid ""
 "Changing the record data and flags might corrupt the whole record, or even make "
 "the database unusable. Do not change the values unless you are absolutely sure "
@@ -1839,66 +1951,66 @@ msgstr ""
 "\n"
 "साच्चिकै ति नयाँ झन्डाहरू मानाङ्कन गर्नुहुन्छ ?"
 
-#: kpilot/dbRecordEditor.cc:77
+#: kpilot/dbRecordEditor.cc:75
 msgid "Changing Record"
 msgstr "रेकर्ड परिवर्तन गर्दैछ"
 
-#: kpilot/dbFlagsEditor.cc:60 kpilot/dbRecordEditor.cc:77
+#: kpilot/dbFlagsEditor.cc:60 kpilot/dbRecordEditor.cc:75
 msgid "Assign"
 msgstr "मानाङ्कन गर्नुहोस्"
 
 #. i18n: file ./kpilot/dbRecordEditor_base.ui line 24
-#: kpilot/dbRecordEditor.cc:112 rc.cpp:1390
+#: kpilot/dbRecordEditor.cc:106 rc.cpp:1390
 #, no-c-format
 msgid "Record index:"
 msgstr "रेकर्ड अनुक्रमणिका:"
 
 #. i18n: file ./kpilot/dbRecordEditor_base.ui line 32
-#: kpilot/dbRecordEditor.cc:113 rc.cpp:1393
+#: kpilot/dbRecordEditor.cc:107 rc.cpp:1393
 #, no-c-format
 msgid "Record ID:"
 msgstr "रेकर्ड ID:"
 
 #. i18n: file ./kpilot/todoEditor_base.ui line 99
-#: kpilot/dbRecordEditor.cc:114 kpilot/dbRecordEditor.cc:115 rc.cpp:982
+#: kpilot/dbRecordEditor.cc:108 kpilot/dbRecordEditor.cc:109 rc.cpp:982
 #: rc.cpp:1396 rc.cpp:1399
 #, no-c-format
 msgid "1"
 msgstr "१"
 
 #. i18n: file ./kpilot/dbRecordEditor_base.ui line 70
-#: kpilot/dbRecordEditor.cc:116 rc.cpp:1402
+#: kpilot/dbRecordEditor.cc:110 rc.cpp:1402
 #, no-c-format
 msgid "Flags"
 msgstr "झण्डा"
 
 #. i18n: file ./kpilot/dbRecordEditor_base.ui line 81
-#: kpilot/dbRecordEditor.cc:117 rc.cpp:1405
+#: kpilot/dbRecordEditor.cc:111 rc.cpp:1405
 #, no-c-format
 msgid "&Dirty"
 msgstr "फोहर"
 
-#: kpilot/dbRecordEditor.cc:118
+#: kpilot/dbRecordEditor.cc:112
 msgid "De&leted"
 msgstr "मेटियो"
 
-#: kpilot/dbRecordEditor.cc:119
+#: kpilot/dbRecordEditor.cc:113
 msgid "&Busy"
 msgstr "व्यस्त"
 
 #. i18n: file ./kpilot/dbRecordEditor_base.ui line 105
-#: kpilot/dbRecordEditor.cc:120 rc.cpp:1414
+#: kpilot/dbRecordEditor.cc:114 rc.cpp:1414
 #, no-c-format
 msgid "&Secret"
 msgstr "गुप्त"
 
 #. i18n: file ./kpilot/dbRecordEditor_base.ui line 113
-#: kpilot/dbRecordEditor.cc:121 rc.cpp:1417
+#: kpilot/dbRecordEditor.cc:115 rc.cpp:1417
 #, no-c-format
 msgid "&Archived"
 msgstr "सङ्ग्रह"
 
-#: kpilot/dbRecordEditor.cc:200
+#: kpilot/dbRecordEditor.cc:193
 msgid ""
 "To view and edit the record data, please install a hex editor (e.g. kbytesedit "
 "from kdeutils)."
@@ -2055,25 +2167,25 @@ msgstr "पूर्वनिर्धारण (%1)"
 msgid "Next &Sync"
 msgstr "पछिल्लो समक्रमण"
 
-#: kpilot/pilotDaemon.cc:675
+#: kpilot/pilotDaemon.cc:670
 msgid "Next HotSync will be: %1. "
 msgstr "पछिल्लो हटसिन्क यो हुन्छ: %1 "
 
-#: kpilot/kpilot.cc:401 kpilot/kpilot.cc:409 kpilot/kpilot.cc:417
-#: kpilot/kpilot.cc:425 kpilot/kpilot.cc:433 kpilot/kpilot.cc:441
-#: kpilot/pilotDaemon.cc:676
+#: kpilot/kpilot.cc:361 kpilot/kpilot.cc:369 kpilot/kpilot.cc:377
+#: kpilot/kpilot.cc:385 kpilot/kpilot.cc:393 kpilot/kpilot.cc:401
+#: kpilot/pilotDaemon.cc:671
 msgid "Please press the HotSync button."
 msgstr "कृपया हटसिन्क बटन थिच्नुहोस् ।"
 
-#: kpilot/kpilot.cc:312 kpilot/kpilot.cc:315 kpilot/pilotDaemon.cc:741
+#: kpilot/kpilot.cc:278 kpilot/kpilot.cc:281 kpilot/pilotDaemon.cc:736
 msgid "File Installer"
 msgstr "फाइल स्थापक"
 
-#: kpilot/pilotDaemon.cc:908
+#: kpilot/pilotDaemon.cc:902
 msgid "HotSync is disabled while the screen is locked."
 msgstr "पर्दा ताल्चा लगाएको बेला हटसिन्क अक्षम पारियो ।"
 
-#: kpilot/pilotDaemon.cc:913
+#: kpilot/pilotDaemon.cc:907
 msgid ""
 "HotSync is disabled because KPilot could not determine the state of the screen "
 "saver. You can disable this security feature by unchecking the 'do not sync "
@@ -2084,94 +2196,38 @@ msgstr ""
 "कन्फिगरेसन संवादको हटसिन्क पृष्ठमा ' स्क्रिनसेभर सक्रिय हुँदा समक्रमण "
 "नगर्नुहोस्' लाई अनचेक गरेर यो सुरक्षा सुविधा अक्षम पार्न सक्नुहुन्छ ।"
 
-#: kpilot/pilotDaemon.cc:1169 kpilot/pilotDaemon.cc:1170
+#: kpilot/pilotDaemon.cc:1165 kpilot/pilotDaemon.cc:1166
 msgid "HotSync Completed.<br>"
 msgstr "हटसिन्क सम्पन्न<br>"
 
-#: kpilot/pilotDaemon.cc:1279
+#: kpilot/pilotDaemon.cc:1274
 #, c-format
 msgid "Next sync is %1."
 msgstr "पछिल्लो समक्रमण %1 हो ।"
 
-#: kpilot/kpilot.cc:1066 kpilot/pilotDaemon.cc:1301
+#: kpilot/kpilot.cc:993 kpilot/pilotDaemon.cc:1296
 msgid "Set debugging level"
 msgstr "डिबग स्तर सेट गर्नुहोस्"
 
-#: kpilot/pilotDaemon.cc:1303
+#: kpilot/pilotDaemon.cc:1298
 msgid "Device to try first"
 msgstr "पहिलो प्रयास गर्ने यन्त्र"
 
-#: kpilot/pilotDaemon.cc:1317
+#: kpilot/pilotDaemon.cc:1299
+msgid "Exit instead of complaining about bad configuration files"
+msgstr ""
+
+#: kpilot/pilotDaemon.cc:1311
 msgid "KPilot Daemon"
 msgstr "केडीई पाइलट डेइमन"
 
-#: kpilot/kpilot.cc:1098 kpilot/pilotDaemon.cc:1326
+#: kpilot/kpilot.cc:1024 kpilot/pilotDaemon.cc:1320
 msgid "Project Leader"
 msgstr "परियोजना नेता"
 
-#: kpilot/pilotDaemon.cc:1332
+#: kpilot/pilotDaemon.cc:1326
 msgid "Developer"
 msgstr "विकासकर्ता"
-
-#: kpilot/syncStack.cc:65
-msgid ""
-"KPilot %1 HotSync starting...\n"
-msgstr ""
-"केडीई पाइलट %1 हटसिन्क सुरु हुँदैछ...\n"
-
-#: kpilot/syncStack.cc:67
-msgid "Using encoding %1 on the handheld."
-msgstr "ह्यान्डहेल्डमा सङ्केतन %1 प्रयोग गर्दैछ"
-
-#: kpilot/syncStack.cc:78
-msgid "KPilot is busy and cannot process the HotSync right now."
-msgstr "केडीई पाइलट व्यस्त छ र अहिले हटसिन्क प्रक्रिया गर्न सक्दैन ।"
-
-#: kpilot/syncStack.cc:110
-msgid "Cannot create local backup."
-msgstr "स्थानिय जगेडा सिर्जना गर्न सकिदैन"
-
-#: kpilot/syncStack.cc:114
-#, c-format
-msgid "Creating local backup of databases in %1."
-msgstr " %1 मा डाटाबेसको स्थानिय जगेडा सिर्जना गर्दैछ"
-
-#: kpilot/syncStack.cc:115
-msgid "Creating local backup .."
-msgstr "स्थानिय जगेडा सिर्जना गर्दैछ .."
-
-#: kpilot/syncStack.cc:154
-#, c-format
-msgid "Could not find conduit %1."
-msgstr "कन्ड्युट %1 फेला पार्न सकेन ।"
-
-#: kpilot/syncStack.cc:181
-#, c-format
-msgid "Could not load conduit %1."
-msgstr "कन्ड्युट %1 लोड गर्न सकेन ।"
-
-#: kpilot/syncStack.cc:195
-msgid "Conduit %1 has wrong version (%2)."
-msgstr "कन्ड्युट %1 सँग गलत संस्करण (%2) छ ।"
-
-#: kpilot/syncStack.cc:207
-#, c-format
-msgid "Could not initialize conduit %1."
-msgstr "कन्ड्युट %1 सुरुआत गर्न सकेन ।"
-
-#: kpilot/syncStack.cc:225 kpilot/syncStack.cc:237
-#, c-format
-msgid "Could not create conduit %1."
-msgstr "कन्ड्युट %1 सिर्जना गर्न सकेन ।"
-
-#: kpilot/syncStack.cc:242
-msgid "[Conduit %1]"
-msgstr "[कन्ड्युट %1]"
-
-#: kpilot/syncStack.cc:373
-msgid ""
-"The connection to the handheld was lost. Synchronization cannot continue."
-msgstr "ह्यान्डहेल्डसँगको जडान विच्छेद भयो । समक्रमण जारी राख्न सकिदैन ।"
 
 #: kpilot/kroupware.cc:126
 msgid "Syncing to-dos with KMail"
@@ -2201,11 +2257,11 @@ msgstr "ठेगानासँग केडीई मेल समक्रम
 msgid "Syncing KMail with Notes"
 msgstr "द्रष्टव्यसँग केडीई मेल समक्रमण"
 
-#: kpilot/dbAppInfoEditor.cc:48
+#: kpilot/dbAppInfoEditor.cc:46
 msgid "Edit AppInfo Block"
 msgstr "अनुप्रयोग जानकारी निषेध सम्पादन गर्नुहोस्"
 
-#: kpilot/dbAppInfoEditor.cc:71
+#: kpilot/dbAppInfoEditor.cc:68
 msgid ""
 "To view the Application info block data, please install a hex editor (e.g. "
 "khexedit from kdeutils)."
@@ -2213,13 +2269,13 @@ msgstr ""
 "अनुप्रयोग जानकारी निषेध डेटा हेर्न, कृपया हेक्स सम्पादक स्थापना गर्नुहोस् "
 "(जस्तै केडीई उपयोगिताबाट केडीई हेक्स सम्पादन)"
 
-#: kpilot/dbAppInfoEditor.cc:90
+#: kpilot/dbAppInfoEditor.cc:86
 msgid "Changing the AppInfo block isn't yet supported by KPilot!"
 msgstr ""
 "अनुप्रयोग जानकारी निषेध परिवर्तन गर्न अहिलेसम्म केडीई पाइलटले समर्थन गरेको छैन "
 "!"
 
-#: kpilot/memoWidget.cc:235
+#: kpilot/memoWidget.cc:234
 msgid ""
 "Select the category of addresses\n"
 "to display here."
@@ -2227,16 +2283,16 @@ msgstr ""
 "यहाँ प्रर्दशन गर्ने\n"
 "ठेगाना पुस्तकको कोटि चयन गर्नुहोस् ।"
 
-#: kpilot/memoWidget.cc:238
+#: kpilot/memoWidget.cc:237
 msgid "Memos:"
 msgstr "मेमो:"
 
-#: kpilot/addressWidget.cc:228 kpilot/memoWidget.cc:239
-#: kpilot/todoWidget.cc:222
+#: kpilot/addressWidget.cc:226 kpilot/memoWidget.cc:238
+#: kpilot/todoWidget.cc:220
 msgid "Category:"
 msgstr "कोटि:"
 
-#: kpilot/memoWidget.cc:250
+#: kpilot/memoWidget.cc:249
 msgid ""
 "This list displays all the memos\n"
 "in the selected category. Click on\n"
@@ -2246,70 +2302,70 @@ msgstr ""
 "सबै मेमो प्रर्दशन गर्दछ । यसलाई बायाँ देखाउन\n"
 "एउटामा क्लिक गर्नुहोस् ।"
 
-#: kpilot/memoWidget.cc:254
+#: kpilot/memoWidget.cc:253
 msgid "Memo text:"
 msgstr "मेमो पाठ:"
 
-#: kpilot/memoWidget.cc:262
+#: kpilot/memoWidget.cc:261
 msgid "The text of the selected memo appears here."
 msgstr "चयन गरेको मेमोको पाठ यहाँ प्रर्दशन हुन्छ ।"
 
-#: kpilot/memoWidget.cc:265
+#: kpilot/memoWidget.cc:264
 msgid "Import Memo..."
 msgstr "मेमो आयात गर्नुहोस्..."
 
-#: kpilot/memoWidget.cc:269
+#: kpilot/memoWidget.cc:268
 msgid "Read a text file and add it to the Pilot's memo database."
 msgstr "पाठ फाइल पढ्नुहोस् र यसलाई पाइलटको मेमो डाटाबेसमा थप्नुहोस् ।"
 
-#: kpilot/memoWidget.cc:270
+#: kpilot/memoWidget.cc:269
 msgid "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
 msgstr ""
 "<qt><i>'आन्तरिक सम्पादकको सेटिङ' द्वारा आयात अक्षम पारिएको छ ।</i></qt>"
 
-#: kpilot/memoWidget.cc:273
+#: kpilot/memoWidget.cc:272
 msgid "Export Memo..."
 msgstr "मेमो निर्यात गर्नुहोस्..."
 
-#: kpilot/memoWidget.cc:278
+#: kpilot/memoWidget.cc:277
 msgid "Write the selected memo to a file."
 msgstr "फाइलमा चयन गरेको मेमो लेख्नुहोस् ।"
 
-#: kpilot/memoWidget.cc:280
+#: kpilot/memoWidget.cc:279
 msgid "Delete Memo"
 msgstr "मेमो मेट्नुहोस्"
 
-#: kpilot/memoWidget.cc:285
+#: kpilot/memoWidget.cc:284
 msgid "Delete the selected memo."
 msgstr "चयन गरेको मेमो मेट्नुहोस् ।"
 
-#: kpilot/addressWidget.cc:277 kpilot/memoWidget.cc:286
-#: kpilot/todoWidget.cc:283
+#: kpilot/addressWidget.cc:275 kpilot/memoWidget.cc:285
+#: kpilot/todoWidget.cc:281
 msgid "<qt><i>Deleting is disabled by the 'internal editors' setting.</i></qt>"
 msgstr ""
 "<qt><i>'आन्तरिक सम्पादकको सेटिङ' द्वारा मेट्न अक्षम पारिएको छ ।</i></qt>"
 
-#: kpilot/memoWidget.cc:289
+#: kpilot/memoWidget.cc:288
 msgid "Add Memo"
 msgstr "मेमो थप्नुहोस्"
 
-#: kpilot/memoWidget.cc:292
+#: kpilot/memoWidget.cc:291
 msgid "Add a new memo to the database."
 msgstr "डाटाबेसमा नयाँ मेमो थप्नुहोस् ।"
 
-#: kpilot/memoWidget.cc:344
+#: kpilot/memoWidget.cc:343
 msgid "Delete currently selected memo?"
 msgstr "हालै चयन गरेको मेमो मेट्नुहुन्छ ?"
 
-#: kpilot/memoWidget.cc:345
+#: kpilot/memoWidget.cc:344
 msgid "Delete Memo?"
 msgstr "मेमो मेट्नुहुन्छ ?"
 
-#: kpilot/memoWidget.cc:368
+#: kpilot/memoWidget.cc:367
 msgid "Cannot open MemoDB to delete record."
 msgstr "रेकर्ड मेट्न MemoDB खोल्न सकिदैन ।"
 
-#: kpilot/memoWidget.cc:369
+#: kpilot/memoWidget.cc:368
 msgid "Cannot Delete Memo"
 msgstr "मेमो मेट्न सकिदैन"
 
@@ -2317,175 +2373,65 @@ msgstr "मेमो मेट्न सकिदैन"
 msgid "Address Editor"
 msgstr "ठेगाना सम्पादक"
 
-#: kpilot/addressEditor.cc:107
+#: kpilot/addressEditor.cc:108
 msgid "Phone"
 msgstr "फोन"
 
-#: kpilot/addressEditor.cc:191
+#: kpilot/addressEditor.cc:181
 msgid "Last name:"
 msgstr "अन्तिम नाम:"
 
-#: kpilot/addressEditor.cc:192
+#: kpilot/addressEditor.cc:182
 msgid "First name:"
 msgstr "पहिलो नाम:"
 
-#: kpilot/addressEditor.cc:193
+#: kpilot/addressEditor.cc:183
 msgid "Title:"
 msgstr "शीर्षक:"
 
-#: kpilot/addressEditor.cc:194
+#: kpilot/addressEditor.cc:184
 msgid "Company:"
 msgstr "कम्पनी:"
 
-#: kpilot/addressEditor.cc:202
+#: kpilot/addressEditor.cc:193
 msgid "Address:"
 msgstr "ठेगाना:"
 
-#: kpilot/addressEditor.cc:203
+#: kpilot/addressEditor.cc:194
 msgid "City:"
 msgstr "शहर:"
 
-#: kpilot/addressEditor.cc:204
+#: kpilot/addressEditor.cc:195
 msgid "State:"
 msgstr "राज्य:"
 
-#: kpilot/addressEditor.cc:205
+#: kpilot/addressEditor.cc:196
 msgid "Zip code:"
 msgstr "जिप कोड:"
 
-#: kpilot/addressEditor.cc:206
+#: kpilot/addressEditor.cc:197
 msgid "Country:"
 msgstr "देश:"
 
-#: kpilot/addressEditor.cc:207
+#: kpilot/addressEditor.cc:198
 msgid "Custom 1:"
 msgstr "अनुकूल १:"
 
-#: kpilot/addressEditor.cc:208
+#: kpilot/addressEditor.cc:199
 msgid "Custom 2:"
 msgstr "अनुकूल २:"
 
-#: kpilot/addressEditor.cc:209
+#: kpilot/addressEditor.cc:200
 msgid "Custom 3:"
 msgstr "अनुकूल ३:"
 
-#: kpilot/addressEditor.cc:210
+#: kpilot/addressEditor.cc:201
 msgid "Custom 4:"
 msgstr "अनुकूल ४:"
 
 #: kpilot/pilotComponent.cc:153
 msgid "All"
 msgstr "सबै"
-
-#: kpilot/interactiveSync.cc:98
-msgid ""
-"_: A common name\n"
-"John Doe"
-msgstr "जोन डेय"
-
-#: kpilot/interactiveSync.cc:100
-msgid ""
-"<qt>Neither KPilot nor the handheld have a username set. They <i>should</i> "
-"be set. Should KPilot set them to a default value (<i>%1</i>)?</qt>"
-msgstr ""
-"<qt>केडीई पाइलट र ह्यान्डहेल्डमा प्रयोगकर्ता नाम सेट गरेको छैन । तिनिहरू सेट "
-"गरिनु <i>पर्दछ</i> । केडीई पाइलटलाई तिनिहरूको पूर्वनिर्धारित मान (<i>%1</i>"
-") मा सेट गर्नुहुन्छ ?</qt>"
-
-#: kpilot/interactiveSync.cc:106 kpilot/interactiveSync.cc:123
-#: kpilot/interactiveSync.cc:140
-msgid "User Unknown"
-msgstr "प्रयोगकर्ता अज्ञात छ"
-
-#: kpilot/interactiveSync.cc:118
-msgid ""
-"<qt>The handheld has a username set (<i>%1</i>) but KPilot does not. Should "
-"KPilot use this username in future?"
-msgstr ""
-"<qt>ह्यान्डहेल्डमा प्रयोगकर्ता नाम सेट छ (<i>%1</i>) तर केडीई पाइलटमा छैन । "
-"केडीई पाइलटमा भविष्यमा यो प्रयोगकर्ता नाम प्रयोग गर्नुहुन्छ ?"
-
-#: kpilot/interactiveSync.cc:135
-msgid ""
-"<qt>KPilot has a username set (<i>%1</i>) but the handheld does not. Should "
-"KPilot's username be set in the handheld as well?"
-msgstr ""
-"<qt>केडीई पाइलटमा प्रयोगकर्ता नाम सेट छ (<i>%1</i>) तर ह्यान्डहेल्डमा छैन । "
-"केडीई पाइलटको प्रयोगकर्ता नाम ह्यान्डहेल्डमा पनि प्रयोग गर्नुहुन्छ ?"
-
-#: kpilot/interactiveSync.cc:157
-msgid ""
-"<qt>The handheld thinks that the username is %1; however, KPilot says you are "
-"%2.Which of these is the correct name?\n"
-"If you click on Cancel, the sync will proceed, but the usernames will not be "
-"changed."
-msgstr ""
-"<qt>ह्यान्डहेल्डले प्रयोगकर्ता नाम %1 भएको मान्दछ; यद्यपी, केडीई पाइलटले "
-"तपाईहरूलाई %2 भन्छ । ति मध्ये कुन चाहि ठीक हो ?\n"
-"यदि तपाईँले 'रद्द गर्नुहोस्' क्लिक गर्नुभयो भने, समक्रमणले प्रक्रिया गर्दछ तर "
-"प्रयोगकर्ता नाम परिवर्तन हुनेछैन ।"
-
-#: kpilot/interactiveSync.cc:167
-msgid "User Mismatch"
-msgstr "प्रयोगकर्ता मिलेन"
-
-#: kpilot/interactiveSync.cc:170
-msgid "Use KPilot Name"
-msgstr "केडीई पाइलट नाम प्रयोग गर्नुहोस्"
-
-#: kpilot/interactiveSync.cc:171
-msgid "Use Handheld Name"
-msgstr "ह्यान्डहेल्ड नाम प्रयोग गर्नुहोस्"
-
-#: kpilot/interactiveSync.cc:278
-msgid "Restore directory does not exist."
-msgstr "पूर्वावस्थामा ल्याउने डाइरेक्टरी अवस्थित छैन ।"
-
-#: kpilot/interactiveSync.cc:279 kpilot/interactiveSync.cc:294
-msgid "Restore not performed."
-msgstr "पूर्वावस्थामा ल्याउने हुन सक्दैन"
-
-#: kpilot/interactiveSync.cc:284
-msgid ""
-"<qt>Are you sure you want to completely restore your Pilot from the backup "
-"directory (<i>%1</i>)? This will erase any information you currently have on "
-"your Pilot.</qt>"
-msgstr ""
-"<qt>तपाईँले जगेडा डाइरेक्टरी (<i>%1</i>) बाट तपाईँको पाइलट सम्पूर्ण रूपमा "
-"पूरावस्थामा ल्याउन चाहनुहुन्छ ? यसले हालै तपाईँको पाइलटमा भएको जानकारी मेट्दछ "
-"।</qt>"
-
-#: kpilot/interactiveSync.cc:289
-msgid "Restore Pilot"
-msgstr "पाइलट पूर्वावस्थामा ल्याउनुहोस्"
-
-#: kpilot/interactiveSync.cc:291
-msgid "Restore <i>not</i> performed."
-msgstr "पूर्वावस्थामा ल्याउने कार्य <i>हुन</i> सक्दैन"
-
-#: kpilot/interactiveSync.cc:293
-msgid "Canceled by user."
-msgstr "प्रयोगकर्ताद्वारा रद्द गरियो"
-
-#: kpilot/interactiveSync.cc:305 kpilot/interactiveSync.cc:377
-msgid "Restoring %1..."
-msgstr "पूर्वावस्थामा ल्याउदैछ %1..."
-
-#: kpilot/interactiveSync.cc:326
-msgid "File '%1' cannot be read."
-msgstr "फाइल '%1' पढ्न सकिदैन ।"
-
-#: kpilot/interactiveSync.cc:353
-msgid "OK."
-msgstr "ठीक छ"
-
-#: kpilot/interactiveSync.cc:368
-msgid "Restore incomplete."
-msgstr "पूर्वावस्थामा ल्याउने अपूर्ण भयो"
-
-#: kpilot/interactiveSync.cc:384
-msgid "Cannot restore file `%1'."
-msgstr " `%1' फाइल पूर्वावस्थामा ल्याउन सकिदैन ।"
 
 #: kpilot/kpilotConfigDialog.cc:68
 msgid ""
@@ -2495,7 +2441,7 @@ msgstr ""
 "<qt>कन्फिगरेसन पृष्ठ <i>%1</i> का लागि सेटिङ परिवर्तन गर्न सकिदैन । जारी राख्नु "
 "अगाडि तपाईँले परिवर्तनहरू बचत गर्न चाहनुहुन्छ ?</qt>"
 
-#: kpilot/kpilotConfigDialog.cc:146
+#: kpilot/kpilotConfigDialog.cc:145
 msgid ""
 "<qt>The device name you entered (<i>%1</i>) is longer than 13 characters. This "
 "is probably unsupported and can cause problems. Are you sure you want to use "
@@ -2505,15 +2451,15 @@ msgstr ""
 ") १३ क्यारेक्टर भन्दा लामो छ । यो सामान्यतया समर्थन नगरिने र कहिले काहि समस्या "
 "ल्याउने हुन सक्दछ । तपाईँ यो यन्त्र नाम प्रयोग गर्न यकिन हुनुहुन्छ ?</qt>"
 
-#: kpilot/kpilotConfigDialog.cc:151
+#: kpilot/kpilotConfigDialog.cc:150
 msgid "Device Name too Long"
 msgstr "यन्त्र नाम धेरै लामो छ"
 
-#: kpilot/kpilotConfigDialog.cc:151
+#: kpilot/kpilotConfigDialog.cc:150
 msgid "Use"
 msgstr "प्रयोग गर्नुहोस्"
 
-#: kpilot/kpilotConfigDialog.cc:151
+#: kpilot/kpilotConfigDialog.cc:150
 msgid "Do Not Use"
 msgstr "प्रयोग नगर्नुहोस्"
 
@@ -2606,11 +2552,11 @@ msgstr ""
 msgid "Deleting Record"
 msgstr "रेकर्ड मेट्दैछ"
 
-#: kpilot/todoWidget.cc:176
+#: kpilot/todoWidget.cc:174
 msgid "There are still %1 to-do editing windows open."
 msgstr "त्यहाँ अझै %1 'गर्नु पर्ने' सम्पादन सञ्याल खुला छन् ।"
 
-#: kpilot/todoWidget.cc:180
+#: kpilot/todoWidget.cc:178
 #, c-format
 msgid ""
 "_n: There is still a to-do editing window open.\n"
@@ -2619,15 +2565,15 @@ msgstr ""
 "त्यहाँ अझै 'गर्नु पर्ने' सम्पादन सञ्याल खुला छन् ।\n"
 "त्यहाँ अझै %n 'गर्नु पर्ने' सम्पादन सञ्याल खुला छन् ।"
 
-#: kpilot/todoWidget.cc:220
+#: kpilot/todoWidget.cc:218
 msgid "<qt>Select the category of to-dos to display here.</qt>"
 msgstr "<qt>यहाँ प्रर्दशन गर्न 'गर्नु पर्ने' को कोटि चयन गर्नुहोस् ।</qt>"
 
-#: kpilot/todoWidget.cc:227
+#: kpilot/todoWidget.cc:225
 msgid "To-do Item"
 msgstr "'गर्नु पर्ने' वस्तु"
 
-#: kpilot/todoWidget.cc:245
+#: kpilot/todoWidget.cc:243
 msgid ""
 "<qt>This list displays all the to-dos in the selected category. Click on one to "
 "display it to the right.</qt>"
@@ -2635,57 +2581,57 @@ msgstr ""
 "<qt>यो सूचीले चयन गरिएको कोटिमा सबै 'गर्नु पर्ने' प्रर्दशन गर्दछ । यसलाई दायाँ "
 "तिर देखाउन एउटामा क्लिक गर्नुहोस् ।</qt>"
 
-#: kpilot/todoWidget.cc:249
+#: kpilot/todoWidget.cc:247
 msgid "To-do info:"
 msgstr "'गर्नु पर्ने' जानकारी:"
 
-#: kpilot/addressWidget.cc:253 kpilot/todoWidget.cc:259
+#: kpilot/addressWidget.cc:251 kpilot/todoWidget.cc:257
 msgid "Edit Record..."
 msgstr "रेकर्ड सम्पादन गर्नुहोस्..."
 
-#: kpilot/todoWidget.cc:264
+#: kpilot/todoWidget.cc:262
 msgid "<qt>You can edit a to-do when it is selected.</qt>"
 msgstr ""
 "<qt>यो चयन गरेको बेलामा तपाईँले 'गर्नु पर्ने' लाई सम्पादन गर्न सक्नुहुन्छ ।</qt>"
 
-#: kpilot/addressWidget.cc:258 kpilot/todoWidget.cc:265
+#: kpilot/addressWidget.cc:256 kpilot/todoWidget.cc:263
 msgid "<qt><i>Editing is disabled by the 'internal editors' setting.</i></qt>"
 msgstr ""
 "<qt><i>सम्पादनलाई 'आन्तरिक सम्पादक' सेटिङद्वारा अक्षम पारिएको छ ।</i></qt>"
 
-#: kpilot/addressWidget.cc:261 kpilot/todoWidget.cc:268
+#: kpilot/addressWidget.cc:259 kpilot/todoWidget.cc:266
 msgid "New Record..."
 msgstr "नयाँ रेकर्ड..."
 
-#: kpilot/todoWidget.cc:272
+#: kpilot/todoWidget.cc:270
 msgid "<qt>Add a new to-do to the to-do list.</qt>"
 msgstr "<qt>'गर्नु पर्ने' सूचीमा नयाँ 'गर्नु पर्ने' थप्नुहोस् ।</qt>"
 
-#: kpilot/todoWidget.cc:273
+#: kpilot/todoWidget.cc:271
 msgid ""
 "<qt><i>Adding new to-dos is disabled by the 'internal editors' setting.</i></qt>"
 msgstr ""
 "<qt><i>'आन्तरिक सम्पादक' सेटिङद्वारा नयाँ 'गर्नु पर्ने' थप्न अक्षम पारिएको छ "
 "।</i></qt>"
 
-#: kpilot/addressWidget.cc:271 kpilot/todoWidget.cc:277
+#: kpilot/addressWidget.cc:269 kpilot/todoWidget.cc:275
 msgid "Delete Record"
 msgstr "रेकर्ड मेट्नुहोस्"
 
-#: kpilot/todoWidget.cc:282
+#: kpilot/todoWidget.cc:280
 msgid "<qt>Delete the selected to-do from the to-do list.</qt>"
 msgstr "<qt>'गर्नु पर्ने' सूचीबाट चयन गरेको 'गर्नु पर्ने' मेट्नुहोस् ।</qt>"
 
-#: kpilot/addressWidget.cc:437 kpilot/todoWidget.cc:365
+#: kpilot/addressWidget.cc:435 kpilot/todoWidget.cc:363
 msgid "Cannot edit new records until HotSynced with Pilot."
 msgstr "पाइलटसँग हटसिन्क नगरेसम्म नयाँ रेकर्ड सम्पादन गर्न सकिदैन ।"
 
-#: kpilot/addressWidget.cc:439 kpilot/addressWidget.cc:576
-#: kpilot/todoWidget.cc:367 kpilot/todoWidget.cc:500
+#: kpilot/addressWidget.cc:437 kpilot/addressWidget.cc:574
+#: kpilot/todoWidget.cc:365 kpilot/todoWidget.cc:498
 msgid "HotSync Required"
 msgstr "हटसिन्क आवश्यक"
 
-#: kpilot/todoWidget.cc:410
+#: kpilot/todoWidget.cc:408
 msgid ""
 "You cannot add to-dos to the to-do list until you have done a HotSync at least "
 "once to retrieve the database layout from your Pilot."
@@ -2693,53 +2639,53 @@ msgstr ""
 "तपाईँको पाइलटबाट कम्तिमा पनि एक पटक डाटाबेस पुन: प्राप्त गर्न हटसिन्क नगरेसम्म "
 "'गर्नु पर्ने' सूचीमा 'गर्नु पर्ने' थप्न सकिदैन ।"
 
-#: kpilot/todoWidget.cc:413
+#: kpilot/todoWidget.cc:411
 msgid "Cannot Add New To-do"
 msgstr "नयाँ 'गर्नु पर्ने' थप्न सकिदैन"
 
-#: kpilot/addressWidget.cc:574 kpilot/todoWidget.cc:498
+#: kpilot/addressWidget.cc:572 kpilot/todoWidget.cc:496
 msgid "New records cannot be deleted until HotSynced with pilot."
 msgstr "पाइलटसँग हटसिन्क नगरेसम्म नयाँ रेकर्ड मेट्न सकिदैन ।"
 
-#: kpilot/addressWidget.cc:581 kpilot/todoWidget.cc:505
+#: kpilot/addressWidget.cc:579 kpilot/todoWidget.cc:503
 msgid "Delete currently selected record?"
 msgstr "हालै चयन गरेको रेकर्ड मेट्नुहुन्छ ?"
 
-#: kpilot/addressWidget.cc:582 kpilot/todoWidget.cc:506
+#: kpilot/addressWidget.cc:580 kpilot/todoWidget.cc:504
 msgid "Delete Record?"
 msgstr "रेकर्ड मेट्नुहुन्छ ?"
 
-#: kpilot/internalEditorAction.cc:64
+#: kpilot/internalEditorAction.cc:62
 msgid "[Internal Editors]"
 msgstr "[आन्तरिक सम्पादक]"
 
-#: kpilot/internalEditorAction.cc:78
+#: kpilot/internalEditorAction.cc:76
 #, c-format
 msgid "Databases with changed records: %1"
 msgstr "परिवर्तित रेकर्डसँग डाटाबेसहरू: %1"
 
-#: kpilot/internalEditorAction.cc:103
+#: kpilot/internalEditorAction.cc:101
 msgid "Unable to open the serial or local database for %1. Skipping it."
 msgstr ""
 " %1 का लागि श्रृङ्खला वा स्थानिय डाटाबेस खोल्न असक्षम । यसलाई फड्काउदैछ ।"
 
-#: kpilot/internalEditorAction.cc:158
+#: kpilot/internalEditorAction.cc:156
 msgid "record"
 msgstr "रेकर्ड"
 
-#: kpilot/internalEditorAction.cc:168
+#: kpilot/internalEditorAction.cc:166
 msgid "address"
 msgstr "ठेगाना"
 
-#: kpilot/internalEditorAction.cc:179
+#: kpilot/internalEditorAction.cc:177
 msgid "to-do entry"
 msgstr "'गर्नु पर्ने' प्रविष्टि"
 
-#: kpilot/internalEditorAction.cc:188
+#: kpilot/internalEditorAction.cc:186
 msgid "memo"
 msgstr "मेमो"
 
-#: kpilot/internalEditorAction.cc:199
+#: kpilot/internalEditorAction.cc:197
 msgid "calendar entry"
 msgstr "क्यालेन्डर प्रविष्टि"
 
@@ -2774,15 +2720,15 @@ msgstr "केडीई पाइलट प्रयोग गर्नुहो
 msgid "Use &Handheld"
 msgstr "ह्यान्डहेल्ड प्रयोग गर्नुहोस्"
 
-#: kpilot/internalEditorAction.cc:228 kpilot/internalEditorAction.cc:245
+#: kpilot/internalEditorAction.cc:228 kpilot/internalEditorAction.cc:244
 msgid "Entry in KPilot"
 msgstr "केडीई पाइलटमा प्रविष्टि"
 
-#: kpilot/internalEditorAction.cc:235 kpilot/internalEditorAction.cc:273
+#: kpilot/internalEditorAction.cc:235 kpilot/internalEditorAction.cc:272
 msgid "Entry on Handheld"
 msgstr "ह्यान्डहेल्डमा प्रविष्टि"
 
-#: kpilot/internalEditorAction.cc:264 kpilot/internalEditorAction.cc:292
+#: kpilot/internalEditorAction.cc:263 kpilot/internalEditorAction.cc:291
 msgid ""
 "To view and edit the record data, please install a hex editor (e.g. khexedit "
 "from kdeutils)."
@@ -2790,16 +2736,16 @@ msgstr ""
 "रेकर्ड डेटा हेर्न र सम्पादन गर्न, कृपया हेक्स सम्पादक स्थापना गर्नुहोस् (जस्तै "
 "केडीइ उपयोगिताबाट केडीई हेक्स सम्पादन)"
 
-#: kpilot/internalEditorAction.cc:317
+#: kpilot/internalEditorAction.cc:315
 #, c-format
 msgid "Databases with changed flags: %1"
 msgstr "परिवर्तित झण्डासँग डाटाबेस: %1"
 
-#: kpilot/internalEditorAction.cc:335
+#: kpilot/internalEditorAction.cc:333
 msgid "Setting the database flags on the handheld is not yet supported."
 msgstr "ह्यान्डहेल्डमा डाटाबेस झण्डा सेटिङलाई अझै समर्थन गर्दैन ।"
 
-#: kpilot/internalEditorAction.cc:358
+#: kpilot/internalEditorAction.cc:356
 #, c-format
 msgid "Databases with changed AppBlock: %1"
 msgstr "परिवर्तित अनुप्रयोग निषेधसँग डाटाबेस: %1"
@@ -2812,7 +2758,7 @@ msgstr "तपाईँको ह्यान्डहेल्डमा स्�
 msgid "Restart Detection"
 msgstr "पत्ता पुन: सुरु गर्नुहोस्"
 
-#: kpilot/kpilotProbeDialog.cc:95
+#: kpilot/kpilotProbeDialog.cc:97
 msgid ""
 "KPilot is now trying to automatically detect the device of your handheld. "
 "Please press the hotsync button if you have not done so already."
@@ -2820,43 +2766,43 @@ msgstr ""
 "केडीई पाइलटले तपाईँको ह्यान्डहेल्डको यन्त्र स्वचालित रूपमा पत्ता लगाउन प्रयास "
 "गर्दैछ । कृपया यदि तपाईँले पहिल्यै हटसिन्क बटन थिच्नु भएको छैन भने थिच्नुहोस् ।"
 
-#: kpilot/kpilotProbeDialog.cc:98
+#: kpilot/kpilotProbeDialog.cc:100
 msgid "Status"
 msgstr "वस्तुस्थिति"
 
-#: kpilot/kpilotProbeDialog.cc:102
+#: kpilot/kpilotProbeDialog.cc:104
 msgid "Autodetection not yet started..."
 msgstr "स्वत: पत्ता लगाउने अझै सुरु गरिएको छैन..."
 
-#: kpilot/kpilotProbeDialog.cc:111
+#: kpilot/kpilotProbeDialog.cc:113
 msgid "Detected Values"
 msgstr "पत्ता लागेको मानहरू"
 
-#: kpilot/kpilotProbeDialog.cc:117
+#: kpilot/kpilotProbeDialog.cc:119
 msgid "Handheld user:"
 msgstr "ह्यान्डहेल्ड प्रयोगकर्ता:"
 
-#: kpilot/kpilotProbeDialog.cc:121
+#: kpilot/kpilotProbeDialog.cc:123
 msgid "Device:"
 msgstr "यन्त्र:"
 
-#: kpilot/kpilotProbeDialog.cc:124 kpilot/kpilotProbeDialog.cc:127
+#: kpilot/kpilotProbeDialog.cc:126 kpilot/kpilotProbeDialog.cc:129
 msgid "[Not yet known]"
 msgstr "[अझै थाहा छैन]"
 
-#: kpilot/kpilotProbeDialog.cc:193
+#: kpilot/kpilotProbeDialog.cc:195
 msgid "Starting detection..."
 msgstr "पत्ता लगाउन सुरु गर्दैछ..."
 
-#: kpilot/kpilotProbeDialog.cc:227
+#: kpilot/kpilotProbeDialog.cc:233
 msgid "Waiting for handheld to connect..."
 msgstr "जडान गर्नका लागि ह्यान्डहेल्डलाई प्रतिक्षा गर्दैछ..."
 
-#: kpilot/kpilotProbeDialog.cc:261
+#: kpilot/kpilotProbeDialog.cc:266
 msgid "Timeout reached, could not detect a handheld."
 msgstr "समय समाप्त भयो, ह्यान्डहेल्ड पत्ता लगाउन सकेन ।"
 
-#: kpilot/kpilotProbeDialog.cc:262
+#: kpilot/kpilotProbeDialog.cc:267
 msgid ""
 "<qt>A handheld could not be detected. Possible check the following things:</p>"
 "<ul>"
@@ -2876,16 +2822,16 @@ msgstr ""
 "(http://www.kpilot.org हेर्नुहोस्) ।\n"
 "</ul>"
 
-#: kpilot/kpilotProbeDialog.cc:268
+#: kpilot/kpilotProbeDialog.cc:273
 msgid "Automatic Detection Failed"
 msgstr "स्वत: पत्ता लगाउन असफल"
 
-#: kpilot/kpilotProbeDialog.cc:284
+#: kpilot/kpilotProbeDialog.cc:288
 #, c-format
 msgid "Found a connected device on %1"
 msgstr " %1 मा जडान भएको यन्त्र फेला पर्यो"
 
-#: kpilot/kpilotProbeDialog.cc:332
+#: kpilot/kpilotProbeDialog.cc:338
 msgid "Disconnected from all devices"
 msgstr "सबै यन्त्रबाट विच्छेदित"
 
@@ -2924,76 +2870,80 @@ msgstr ""
 msgid "*.pdb *.prc|PalmOS Databases (*.pdb *.prc)"
 msgstr "*.pdb *.prc|PalmOS डाटाबेस (*.pdb *.prc)"
 
-#: kpilot/hotSync.cc:82
+#: kpilot/fileInstallWidget.cc:291
 msgid ""
-"Testing.\n"
+"_: Delete a single file item\n"
+"Delete"
 msgstr ""
-"परिक्षण\n"
 
-#: kpilot/hotSync.cc:98
-msgid "Syncing database %1..."
-msgstr "डाटाबेस %1 समक्रमण गर्दैछ..."
+#: kpilot/fileInstallWidget.cc:294
+#, fuzzy
+msgid "Delete selected files"
+msgstr "चयन गरेको मेमो मेट्नुहोस् ।"
 
-#: kpilot/hotSync.cc:104 kpilot/logFile.cc:98
-msgid "HotSync finished."
-msgstr "हटसिन्क समाप्त भयो ।"
-
-#: kpilot/hotSync.cc:264
+#: kpilot/hotSync.cc:339
 #, c-format
 msgid "Backup directory: %1."
 msgstr "जगेडा डाइरेक्टरी: %1"
 
-#: kpilot/hotSync.cc:278
+#: kpilot/hotSync.cc:353
 msgid "Full backup started."
 msgstr "पूरा जगेडा सुरु भयो ।"
 
-#: kpilot/hotSync.cc:283
+#: kpilot/hotSync.cc:358
 msgid "Fast backup started"
 msgstr "छिटो जगेडा सुरु भयो"
 
-#: kpilot/hotSync.cc:356
+#: kpilot/hotSync.cc:387
 msgid "Exiting on cancel."
 msgstr "रद्द गर्दा निस्कदैछ ।"
 
-#: kpilot/hotSync.cc:367
+#: kpilot/hotSync.cc:399
 msgid "Full backup complete."
 msgstr "पूरा जगेडा सम्पन्न भयो"
 
-#: kpilot/hotSync.cc:369
+#: kpilot/hotSync.cc:403
 msgid "Fast backup complete."
 msgstr "छिटो जगेडा सम्पन्न भयो"
 
-#: kpilot/hotSync.cc:400
-#, c-format
-msgid "Skipping %1"
-msgstr " %1 छोड्दैछ"
-
-#: kpilot/hotSync.cc:415
+#: kpilot/hotSync.cc:419
 #, c-format
 msgid "Backing up: %1"
 msgstr "जगेडा बनाउदैछ: %1"
 
-#: kpilot/hotSync.cc:424
+#: kpilot/hotSync.cc:447
+#, c-format
+msgid "Skipping %1"
+msgstr " %1 छोड्दैछ"
+
+#: kpilot/hotSync.cc:482
 msgid ""
 "Backup of %1 failed.\n"
 msgstr ""
 " %1 को जगेडा बनाउन असफल\n"
 
-#: kpilot/hotSync.cc:429
+#: kpilot/hotSync.cc:540
+#, fuzzy
 msgid ""
-" .. OK\n"
+"... OK.\n"
 msgstr ""
 " .. ठीक छ\n"
 
-#: kpilot/hotSync.cc:585
+#: kpilot/hotSync.cc:548
+#, fuzzy
+msgid "Backup failed."
+msgstr ""
+" %1 को जगेडा बनाउन असफल\n"
+
+#: kpilot/hotSync.cc:607
 msgid "[File Installer]"
 msgstr "[फाइल स्थापक]"
 
-#: kpilot/hotSync.cc:590
+#: kpilot/hotSync.cc:612
 msgid "No Files to install"
 msgstr "स्थापना गर्नलाई फाइल छैन"
 
-#: kpilot/hotSync.cc:602
+#: kpilot/hotSync.cc:624
 #, c-format
 msgid ""
 "_n: Installing one file\n"
@@ -3002,28 +2952,28 @@ msgstr ""
 "एउटा फाइल स्थापना गर्दैछ\n"
 " %n फाइल स्थापना गर्दैछ"
 
-#: kpilot/hotSync.cc:627
+#: kpilot/hotSync.cc:649
 msgid "Done Installing Files"
 msgstr "फाइल स्थापना भयो"
 
-#: kpilot/hotSync.cc:641
+#: kpilot/hotSync.cc:663
 #, c-format
 msgid "Installing %1"
 msgstr "स्थापना गर्दैछ %1"
 
-#: kpilot/hotSync.cc:664
+#: kpilot/hotSync.cc:686
 msgid "Cannot install file &quot;%1&quot;."
 msgstr " &quot;%1&quot; फाइल स्थापना गर्न सकिदैन"
 
-#: kpilot/hotSync.cc:691 kpilot/hotSync.cc:701
+#: kpilot/hotSync.cc:713 kpilot/hotSync.cc:723
 msgid "Unable to open file &quot;%1&quot;."
 msgstr " &quot;%1&quot; फाइल खोल्न असक्षम"
 
-#: kpilot/hotSync.cc:710
+#: kpilot/hotSync.cc:732
 msgid "Unable to read file &quot;%1&quot;."
 msgstr " &quot;%1&quot; फाइल पढ्न असक्षम"
 
-#: kpilot/hotSync.cc:726
+#: kpilot/hotSync.cc:748
 msgid ""
 "The database in &quot;%1&quot; has a resource name that is longer than 31 "
 "characters. This suggests a bug in the tool used to create the database. KPilot "
@@ -3033,96 +2983,215 @@ msgstr ""
 "डाटाबेस सिर्जना गर्न प्रयोग गर्ने उपकरणमा वग सुझाव गर्दछ । केडीई पाइलटले यो "
 "डाटाबेस स्थापना गर्न सक्दैन ।"
 
-#: kpilot/kpilot.cc:179
+#: kpilot/hotSync.cc:806
+msgid ""
+"_: A common name\n"
+"John Doe"
+msgstr "जोन डेय"
+
+#: kpilot/hotSync.cc:808
+msgid ""
+"<qt>Neither KPilot nor the handheld have a username set. They <i>should</i> "
+"be set. Should KPilot set them to a default value (<i>%1</i>)?</qt>"
+msgstr ""
+"<qt>केडीई पाइलट र ह्यान्डहेल्डमा प्रयोगकर्ता नाम सेट गरेको छैन । तिनिहरू सेट "
+"गरिनु <i>पर्दछ</i> । केडीई पाइलटलाई तिनिहरूको पूर्वनिर्धारित मान (<i>%1</i>"
+") मा सेट गर्नुहुन्छ ?</qt>"
+
+#: kpilot/hotSync.cc:814 kpilot/hotSync.cc:831 kpilot/hotSync.cc:855
+msgid "User Unknown"
+msgstr "प्रयोगकर्ता अज्ञात छ"
+
+#: kpilot/hotSync.cc:826
+#, fuzzy
+msgid ""
+"<qt>The handheld has a username set (<i>%1</i>) but KPilot does not. Should "
+"KPilot use this username in future?</qt>"
+msgstr ""
+"<qt>ह्यान्डहेल्डमा प्रयोगकर्ता नाम सेट छ (<i>%1</i>) तर केडीई पाइलटमा छैन । "
+"केडीई पाइलटमा भविष्यमा यो प्रयोगकर्ता नाम प्रयोग गर्नुहुन्छ ?"
+
+#: kpilot/hotSync.cc:844
+#, fuzzy
+msgid ""
+"KPilot has a username set (<i>%1</i>) but the handheld does not. Should "
+"KPilot's username be set in the handheld as well?"
+msgstr ""
+"<qt>केडीई पाइलटमा प्रयोगकर्ता नाम सेट छ (<i>%1</i>) तर ह्यान्डहेल्डमा छैन । "
+"केडीई पाइलटको प्रयोगकर्ता नाम ह्यान्डहेल्डमा पनि प्रयोग गर्नुहुन्छ ?"
+
+#: kpilot/hotSync.cc:848
+msgid ""
+"<br/>(<i>Note:</i> If your handheld has been reset to factory defaults, you "
+"should use <i>Restore</i> instead of a regular HotSync. Click on Cancel to stop "
+"this sync.)"
+msgstr ""
+
+#: kpilot/hotSync.cc:877
+#, fuzzy
+msgid ""
+"<qt>The handheld thinks that the username is %1; however, KPilot says you are "
+"%2.Which of these is the correct name?\n"
+"If you click on Cancel, the sync will proceed, but the usernames will not be "
+"changed.</qt>"
+msgstr ""
+"<qt>ह्यान्डहेल्डले प्रयोगकर्ता नाम %1 भएको मान्दछ; यद्यपी, केडीई पाइलटले "
+"तपाईहरूलाई %2 भन्छ । ति मध्ये कुन चाहि ठीक हो ?\n"
+"यदि तपाईँले 'रद्द गर्नुहोस्' क्लिक गर्नुभयो भने, समक्रमणले प्रक्रिया गर्दछ तर "
+"प्रयोगकर्ता नाम परिवर्तन हुनेछैन ।"
+
+#: kpilot/hotSync.cc:887
+msgid "User Mismatch"
+msgstr "प्रयोगकर्ता मिलेन"
+
+#: kpilot/hotSync.cc:890
+msgid "Use KPilot Name"
+msgstr "केडीई पाइलट नाम प्रयोग गर्नुहोस्"
+
+#: kpilot/hotSync.cc:891
+msgid "Use Handheld Name"
+msgstr "ह्यान्डहेल्ड नाम प्रयोग गर्नुहोस्"
+
+#: kpilot/hotSync.cc:997
+msgid "Restore directory does not exist."
+msgstr "पूर्वावस्थामा ल्याउने डाइरेक्टरी अवस्थित छैन ।"
+
+#: kpilot/hotSync.cc:998 kpilot/hotSync.cc:1013
+msgid "Restore not performed."
+msgstr "पूर्वावस्थामा ल्याउने हुन सक्दैन"
+
+#: kpilot/hotSync.cc:1003
+msgid ""
+"<qt>Are you sure you want to completely restore your Pilot from the backup "
+"directory (<i>%1</i>)? This will erase any information you currently have on "
+"your Pilot.</qt>"
+msgstr ""
+"<qt>तपाईँले जगेडा डाइरेक्टरी (<i>%1</i>) बाट तपाईँको पाइलट सम्पूर्ण रूपमा "
+"पूरावस्थामा ल्याउन चाहनुहुन्छ ? यसले हालै तपाईँको पाइलटमा भएको जानकारी मेट्दछ "
+"।</qt>"
+
+#: kpilot/hotSync.cc:1008
+msgid "Restore Pilot"
+msgstr "पाइलट पूर्वावस्थामा ल्याउनुहोस्"
+
+#: kpilot/hotSync.cc:1010
+msgid "Restore <i>not</i> performed."
+msgstr "पूर्वावस्थामा ल्याउने कार्य <i>हुन</i> सक्दैन"
+
+#: kpilot/hotSync.cc:1012
+msgid "Canceled by user."
+msgstr "प्रयोगकर्ताद्वारा रद्द गरियो"
+
+#: kpilot/hotSync.cc:1024 kpilot/hotSync.cc:1094
+msgid "Restoring %1..."
+msgstr "पूर्वावस्थामा ल्याउदैछ %1..."
+
+#: kpilot/hotSync.cc:1044
+msgid "File '%1' cannot be read."
+msgstr "फाइल '%1' पढ्न सकिदैन ।"
+
+#: kpilot/hotSync.cc:1071
+msgid "OK."
+msgstr "ठीक छ"
+
+#: kpilot/hotSync.cc:1085
+msgid "Restore incomplete."
+msgstr "पूर्वावस्थामा ल्याउने अपूर्ण भयो"
+
+#: kpilot/hotSync.cc:1100
+msgid "Cannot restore file `%1'."
+msgstr " `%1' फाइल पूर्वावस्थामा ल्याउन सकिदैन ।"
+
+#: kpilot/kpilot.cc:162
 msgid "Starting the KPilot daemon ..."
 msgstr "केडीई पाइलट डेइमन सुरु गर्दैछ ..."
 
-#: kpilot/kpilot.cc:197
+#: kpilot/kpilot.cc:179
 msgid ""
 "Could not start the KPilot daemon. The system error message was: &quot;%1&quot;"
 msgstr ""
 "केडीई पाइलट डेइमन सुरु गर्ने सकेन । प्रणाली त्रुटि यस्तो थियो: &quot;%1&quot;"
 
-#: kpilot/kpilot.cc:217
+#: kpilot/kpilot.cc:196
 msgid "Daemon status is `%1'"
 msgstr "डेइमनको वस्तुस्थिति यस्तो छ  `%1'"
 
-#: kpilot/kpilot.cc:218
+#: kpilot/kpilot.cc:197
 msgid "not running"
 msgstr "चलिरहेको छैन"
 
-#: kpilot/kpilot.cc:235
+#: kpilot/kpilot.cc:214
 msgid "Using character set %1 on the handheld."
 msgstr "ह्यान्डहेल्डमा  %1 क्यारेक्टर सेट प्रयोग गर्दैछ"
 
-#: kpilot/kpilot.cc:300 kpilot/kpilot.cc:302
+#: kpilot/kpilot.cc:266 kpilot/kpilot.cc:268
 msgid "To-do Viewer"
 msgstr "'गर्नु पर्ने' दृश्यकर्ता"
 
 #. i18n: file ./kpilot/kpilotConfigDialog_viewers.ui line 74
-#: kpilot/kpilot.cc:304 kpilot/kpilot.cc:306 rc.cpp:1240
+#: kpilot/kpilot.cc:270 kpilot/kpilot.cc:272 rc.cpp:1240
 #, no-c-format
 msgid "Address Viewer"
 msgstr "ठेगाना दृश्यकर्ता"
 
-#: kpilot/kpilot.cc:308 kpilot/kpilot.cc:310
+#: kpilot/kpilot.cc:274 kpilot/kpilot.cc:276
 msgid "Memo Viewer"
 msgstr "मेमो दृश्यकर्ता"
 
-#: kpilot/kpilot.cc:317 kpilot/kpilot.cc:319
+#: kpilot/kpilot.cc:283 kpilot/kpilot.cc:285
 msgid "Generic DB Viewer"
 msgstr "जेनेरिक DB दृश्यकर्ता"
 
-#: kpilot/kpilot.cc:400
+#: kpilot/kpilot.cc:360
 msgid "Next sync will be a backup. "
 msgstr "पछिल्लो समक्रमणलाई जगेडा गरिने छ । "
 
-#: kpilot/kpilot.cc:408
+#: kpilot/kpilot.cc:368
 msgid "Next sync will restore the Pilot from backup. "
 msgstr "पछिल्लो समक्रमणले जगेडाबाट पाइलट पूर्वावस्थामा ल्याउने छ । "
 
-#: kpilot/kpilot.cc:416
+#: kpilot/kpilot.cc:376
 msgid "Next sync will be a regular HotSync. "
 msgstr "पछिल्लो समक्रमण नियमित हटसिन्क हुनेछ । "
 
-#: kpilot/kpilot.cc:424
+#: kpilot/kpilot.cc:384
 msgid "Next sync will be a Full Sync. "
 msgstr "पछिल्लो समक्रमण पूरा समक्रमण हुनेछ । "
 
-#: kpilot/kpilot.cc:432
+#: kpilot/kpilot.cc:392
 msgid "Next sync will copy Handheld data to PC. "
 msgstr "पछिल्लो समक्रमणले ह्यान्डहेल्ड डेटालाई PC मा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:440
+#: kpilot/kpilot.cc:400
 msgid "Next sync will copy PC data to Handheld. "
 msgstr "पछिल्लो समक्रमणले PC डेटालाई ह्यान्डहेल्डमा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:470
+#: kpilot/kpilot.cc:428
 msgid "The daemon has exited."
 msgstr "डेइमन निस्केको छ ।"
 
-#: kpilot/kpilot.cc:471
+#: kpilot/kpilot.cc:429
 msgid "No further HotSyncs are possible."
 msgstr "अब हटसिन्क संभव छैन ।"
 
-#: kpilot/kpilot.cc:472
+#: kpilot/kpilot.cc:430
 msgid "Restart the daemon to HotSync again."
 msgstr "डेइमनलाई हटसिन्कमा फेरि सुरु गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:492
+#: kpilot/kpilot.cc:450
 #, c-format
 msgid "Cannot start a Sync now. %1"
 msgstr "अहिले समक्रमण सुरु गर्न सकिदैन । %1"
 
-#: kpilot/kpilot.cc:510
+#: kpilot/kpilot.cc:463
 msgid "Cannot start Sync"
 msgstr "समक्रमण सुरु गर्न सकिदैन ।"
 
-#: kpilot/kpilot.cc:569
+#: kpilot/kpilot.cc:517
 msgid "Select the kind of HotSync to perform next."
 msgstr "पछि गर्ने हटसिन्कको प्रकार चयन गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:570
+#: kpilot/kpilot.cc:518
 msgid ""
 "Select the kind of HotSync to perform next. This applies only to the next "
 "HotSync; to change the default, use the configuration dialog."
@@ -3130,27 +3199,27 @@ msgstr ""
 "पछि गर्ने हटसिन्कको प्रकार चयन गर्नुहोस् । यो केबल पछिल्लो हटसिन्कमा लागू "
 "गरिन्छ; पूर्वनिर्धारितलाई परिवर्तन गर्न, कन्फिगरेसन संवाद प्रयोग गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:577
+#: kpilot/kpilot.cc:525
 msgid "&HotSync"
 msgstr "हटसिन्क"
 
-#: kpilot/kpilot.cc:580
+#: kpilot/kpilot.cc:528
 msgid "Next HotSync will be normal HotSync."
 msgstr "पछिल्लो हटसिन्क सामान्य हटसिन्क हुनेछ ।"
 
-#: kpilot/kpilot.cc:581
+#: kpilot/kpilot.cc:529
 msgid "Tell the daemon that the next HotSync should be a normal HotSync."
 msgstr "पछिल्लो हटसिन्क सामान्य हटसिन्क हुनु पर्दछ भनेर डेइमनलाई भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:585
+#: kpilot/kpilot.cc:533
 msgid "Full&Sync"
 msgstr "पूरा समक्रमण"
 
-#: kpilot/kpilot.cc:588
+#: kpilot/kpilot.cc:536
 msgid "Next HotSync will be a FullSync."
 msgstr "पछिल्लो हटसिन्क पूरा समक्रमण हुनेछ ।"
 
-#: kpilot/kpilot.cc:589
+#: kpilot/kpilot.cc:537
 msgid ""
 "Tell the daemon that the next HotSync should be a FullSync (check data on both "
 "sides)."
@@ -3158,29 +3227,29 @@ msgstr ""
 "पछिल्लो हटसिन्क पूरा समक्रमण हुनेछ भनेर डेइमनलाई भन्नुहोस् (दुबै तिर डेटा जाँच "
 "गर्नुहोस् ) ।"
 
-#: kpilot/kpilot.cc:593
+#: kpilot/kpilot.cc:541
 msgid "&Backup"
 msgstr "जगेडा"
 
-#: kpilot/kpilot.cc:596 kpilot/kpilot.cc:612
+#: kpilot/kpilot.cc:544 kpilot/kpilot.cc:560
 msgid "Next HotSync will be backup."
 msgstr "पछिल्लो हटसिन्क जगेडा हुनेछ ।"
 
-#: kpilot/kpilot.cc:597
+#: kpilot/kpilot.cc:545
 msgid ""
 "Tell the daemon that the next HotSync should back up the Handheld to the PC."
 msgstr ""
 "पछिल्लो हटसिन्कले ह्यान्डहेल्डलाई PC मा जगेडा गर्नेछ भनेर डेइमनलाई भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:601
+#: kpilot/kpilot.cc:549
 msgid "&Restore"
 msgstr "पूर्वावस्थामा ल्याउनुहोस्"
 
-#: kpilot/kpilot.cc:604
+#: kpilot/kpilot.cc:552
 msgid "Next HotSync will be restore."
 msgstr "पछिल्लो हटसिन्क पूर्वावस्थामा ल्याइने छ ।"
 
-#: kpilot/kpilot.cc:605
+#: kpilot/kpilot.cc:553
 msgid ""
 "Tell the daemon that the next HotSync should restore the Handheld from data on "
 "the PC."
@@ -3188,7 +3257,7 @@ msgstr ""
 "पछिल्लो हटसिन्कले डेटाबाट ह्यान्डहेल्डलाई PC मा पूर्वावस्थामा ल्याउनु पर्छ भनेर "
 "डेइमनलाई भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:613
+#: kpilot/kpilot.cc:561
 msgid ""
 "Tell the daemon that the next HotSync should copy all data from the Handheld to "
 "the PC, overwriting entries on the PC."
@@ -3196,11 +3265,11 @@ msgstr ""
 "पछिल्लो हटसिन्कले ह्यान्डहेल्डबाट सबै डेटा PC मा प्रतिलिपि गर्नु पर्दछ भनेर "
 "डेइमनलाई भन्नुहोस्, PC मा प्रविष्टिहरू अधिलेखन गर्दैछ ।"
 
-#: kpilot/kpilot.cc:621
+#: kpilot/kpilot.cc:569
 msgid "Next HotSync will copy PC to Handheld."
 msgstr "पछिल्लो हटसिन्कले ह्यान्डहेल्डमा PC लाई प्रतिलिपि गर्नेछ ।"
 
-#: kpilot/kpilot.cc:622
+#: kpilot/kpilot.cc:570
 msgid ""
 "Tell the daemon that the next HotSync should copy all data from the PC to the "
 "Handheld, overwriting entries on the Handheld."
@@ -3208,15 +3277,15 @@ msgstr ""
 "पछिल्लो हटसिन्कले ह्यान्डहेल्डमा PC बाट सबै डेटा प्रतिलिपि गर्नेछ भनेर "
 "भन्नुहोस्, ह्यान्डहेल्डमा प्रविष्टिहरू अधिलेखन गर्दैछ ।"
 
-#: kpilot/kpilot.cc:629
+#: kpilot/kpilot.cc:577
 msgid "&List Only"
 msgstr "सूची मात्र"
 
-#: kpilot/kpilot.cc:632
+#: kpilot/kpilot.cc:580
 msgid "Next HotSync will list databases."
 msgstr "पछिल्लो हटसिन्कले डाटाबेस सूचीकृत गर्नेछ ।"
 
-#: kpilot/kpilot.cc:633
+#: kpilot/kpilot.cc:581
 msgid ""
 "Tell the daemon that the next HotSync should just list the files on the "
 "Handheld and do nothing else."
@@ -3224,32 +3293,32 @@ msgstr ""
 "पछिल्लो हटसिन्कले ह्यान्डहेल्डमा फाइलहरू सूचीकृत गर्नुपर्दछ र अरू केहि नगर्न "
 "भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:640
+#: kpilot/kpilot.cc:588
 msgid "Rese&t Link"
 msgstr "लिङ्क रिसेट गर्नुहोस्"
 
-#: kpilot/kpilot.cc:643
+#: kpilot/kpilot.cc:591
 msgid "Reset the device connection."
 msgstr "यन्त्र जडान रिसेट गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:644
+#: kpilot/kpilot.cc:592
 msgid "Try to reset the daemon and its connection to the Handheld."
 msgstr "डेइमन र यसको जडान ह्यान्डहेल्डमा रिसेट गर्न प्रयास गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:649
+#: kpilot/kpilot.cc:597
 msgid "Quit KPilot, (and stop the daemon if configured that way)."
 msgstr ""
 "केडीई पाइलट अन्त्य गर्नुहोस्, (र कन्फिगरेसन भैरहेको छ भने रोक्नुहोस्) ।"
 
-#: kpilot/kpilot.cc:665
+#: kpilot/kpilot.cc:613
 msgid "Configuration &Wizard..."
 msgstr "कन्फिगरेसन विजार्ड..."
 
-#: kpilot/kpilot.cc:668
+#: kpilot/kpilot.cc:616
 msgid "Configure KPilot using the configuration wizard."
 msgstr "कन्फिगरेसन विजार्ड प्रयोग गरेर केडीई पाइलट कन्फिगर गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:923
+#: kpilot/kpilot.cc:851
 msgid ""
 "The library containing the configuration wizard for KPilot could not be loaded, "
 "and the wizard is not available. Please try to use the regular configuration "
@@ -3259,15 +3328,15 @@ msgstr ""
 "विजार्ड उपलब्ध छैन । कृपया नियमित कन्फिगरेसन संवाद प्रयोग गर्न प्रयास गर्नुहोस् "
 "।"
 
-#: kpilot/kpilot.cc:926
+#: kpilot/kpilot.cc:854
 msgid "Wizard Not Available"
 msgstr "विजार्ड उपलब्ध छैन"
 
-#: kpilot/kpilot.cc:970
+#: kpilot/kpilot.cc:898
 msgid "Changed username to `%1'."
 msgstr "प्रयोगकर्ता नाम `%1' मा परिवर्तन गरियो ।"
 
-#: kpilot/kpilot.cc:999
+#: kpilot/kpilot.cc:927
 msgid ""
 "Cannot run KPilot's configuration wizard right now (KPilot's UI is already "
 "busy)."
@@ -3275,52 +3344,52 @@ msgstr ""
 "अहिले केडीई पाइलटको कन्फिगरेसन विजार्ड चलाउन सकिदैन (केडीई पाइलटको UI पहिल्यै "
 "व्यस्त छ) ।"
 
-#: kpilot/kpilot.cc:1023
+#: kpilot/kpilot.cc:951
 msgid "Cannot configure KPilot right now (KPilot's UI is already busy)."
 msgstr ""
 "केडीई पाइलट अहिले कन्फिगर गर्न सकिदैन (केडीई पाइलटको UI पहिले नै व्यस्त छ) ।"
 
-#: kpilot/kpilot.cc:1063
+#: kpilot/kpilot.cc:991
 msgid "Setup the Pilot device, conduits and other parameters"
 msgstr "पाइलट यन्त्र, कन्ड्युट र अन्य परिमितिहरू सेटअप गर्नुहोस्"
 
-#: kpilot/kpilot.cc:1089
+#: kpilot/kpilot.cc:1015
 msgid "KPilot"
 msgstr "केडीई पाइलट"
 
-#: kpilot/kpilot.cc:1104 kpilot/kpilot.cc:1106
+#: kpilot/kpilot.cc:1030 kpilot/kpilot.cc:1032
 msgid "Core and conduits developer"
 msgstr "कोर र कन्ड्युट विकासकर्ता"
 
-#: kpilot/kpilot.cc:1108
+#: kpilot/kpilot.cc:1034
 msgid "VCal conduit"
 msgstr "VCal कन्ड्युट"
 
-#: kpilot/kpilot.cc:1109
+#: kpilot/kpilot.cc:1035
 msgid "Abbrowser conduit"
 msgstr "एबब्राउजर कन्ड्युट"
 
-#: kpilot/kpilot.cc:1110
+#: kpilot/kpilot.cc:1036
 msgid "Expenses conduit"
 msgstr "क्षय कन्ड्युट"
 
-#: kpilot/kpilot.cc:1111
+#: kpilot/kpilot.cc:1037
 msgid "Notepad conduit, Bugfixer"
 msgstr "नोटप्याड कन्ड्युट, त्रुटिमोचक"
 
-#: kpilot/kpilot.cc:1115
+#: kpilot/kpilot.cc:1041
 msgid "XML GUI"
 msgstr "XML GUI"
 
-#: kpilot/kpilot.cc:1118
+#: kpilot/kpilot.cc:1044
 msgid ".ui files"
 msgstr ".ui फाइल"
 
-#: kpilot/kpilot.cc:1120
+#: kpilot/kpilot.cc:1046
 msgid "Bugfixer, coolness"
 msgstr "त्रुटिमोचक, राम्रो"
 
-#: kpilot/kpilot.cc:1122
+#: kpilot/kpilot.cc:1048
 msgid "VCalconduit state machine, CMake"
 msgstr "VCalconduit तोक्ने मेसिन, CMake"
 
@@ -3337,83 +3406,83 @@ msgstr ""
 "फाइल स्थापकद्वारा केबल PalmOS डाटाबेस फाइल (जस्तै *.pdb र *.prc) स्थापना गर्न "
 "सकिन्छ ।"
 
-#: kpilot/main-test.cc:64
+#: kpilot/main-test.cc:66
 msgid "Path to Pilot device node"
 msgstr "प्याचबाट पाइलट यन्त्र मोड"
 
-#: kpilot/main-test.cc:67
+#: kpilot/main-test.cc:69
 msgid "List DBs"
 msgstr "सूची DBs"
 
-#: kpilot/main-test.cc:69
+#: kpilot/main-test.cc:71
 msgid "Backup Pilot to <dest dir>"
 msgstr " <dest dir> मा पाइलट जगेडा गर्नुहोस्"
 
-#: kpilot/main-test.cc:71
+#: kpilot/main-test.cc:73
 msgid "Restore Pilot from backup"
 msgstr "जगेडाबाट पाइलट पूर्वावस्थामा ल्याउनुहोस्"
 
-#: kpilot/main-test.cc:74
+#: kpilot/main-test.cc:76
 msgid "Run conduit from desktop file <filename>"
 msgstr "डेस्कटप फाइल <filename> बाट कन्ड्युट चलाउनुहोस्"
 
-#: kpilot/main-test.cc:78
+#: kpilot/main-test.cc:80
 msgid "Run a specific check (with the device)"
 msgstr "निर्दिष्ट जाँच (यन्त्रसँग) चलाउनुहोस्"
 
-#: kpilot/main-test.cc:81
+#: kpilot/main-test.cc:83
 msgid "Show KPilot configuration information"
 msgstr "केडीई पाइलट कन्फिगरेसन सूचना देखाउनुहोस्"
 
-#: kpilot/main-test.cc:84
+#: kpilot/main-test.cc:86
 msgid "Set the debug level"
 msgstr "त्रुचिमोचन स्तर सेट गर्नुहोस्"
 
-#: kpilot/main-test.cc:92
+#: kpilot/main-test.cc:94
 msgid "*Really* run the conduit, not in test mode."
 msgstr "*Really* कन्ड्युट चलाउनुहोस्, परिक्षण मोडमा होइन ।"
 
-#: kpilot/main-test.cc:96
+#: kpilot/main-test.cc:98
 msgid "Run the conduit in file-test mode."
 msgstr "फाइल-परिक्षण मोडमा कन्ड्युट चलाउनुहोस् ।"
 
-#: kpilot/main-test.cc:99
+#: kpilot/main-test.cc:101
 msgid "Copy Pilot to Desktop."
 msgstr "पाइलटलाई डेस्कटपमा प्रतिलिपि गर्नुहोस् ।"
 
-#: kpilot/main-test.cc:102
+#: kpilot/main-test.cc:104
 msgid "Copy Desktop to Pilot."
 msgstr "डेस्कटपलाई पाइलटमा प्रतिलिपि गर्नुहोस् ।"
 
-#: kpilot/main-test.cc:105
+#: kpilot/main-test.cc:107
 msgid "Repeated perform action - only useful for --list"
 msgstr "केबल सूचीका लागि उपयोगि हुने दोहर्याएर गरिने कार्य"
 
-#: kpilot/main-test.cc:343
+#: kpilot/main-test.cc:347
 msgid "KPilotTest"
 msgstr "केडीई पाइलट परिक्षण"
 
-#: kpilot/main-test.cc:348
+#: kpilot/main-test.cc:352
 msgid "KPilot Maintainer"
 msgstr "केडीई पाइलट मर्मतकर्ता"
 
 #. i18n: file ./conduits/null/setup_base.ui line 68
-#: kpilot/main-test.cc:353 rc.cpp:6 rc.cpp:21 rc.cpp:34 rc.cpp:79 rc.cpp:209
+#: kpilot/main-test.cc:357 rc.cpp:6 rc.cpp:21 rc.cpp:34 rc.cpp:79 rc.cpp:209
 #: rc.cpp:224 rc.cpp:306 rc.cpp:594 rc.cpp:747 rc.cpp:837 rc.cpp:846
 #: rc.cpp:912
 #, no-c-format
 msgid "General"
 msgstr "साधारण"
 
-#: kpilot/main-test.cc:355
+#: kpilot/main-test.cc:359
 msgid "Conduit Actions"
 msgstr "कन्ड्युट कार्य"
 
-#: kpilot/addressWidget.cc:189
+#: kpilot/addressWidget.cc:187
 msgid "There are still %1 address editing windows open."
 msgstr "त्यहाँ अझै %1 ठेगाना सम्पादन गर्ने सञ्झ्याल खुला छन् ।"
 
-#: kpilot/addressWidget.cc:193
+#: kpilot/addressWidget.cc:191
 #, c-format
 msgid ""
 "_n: There is still an address editing window open.\n"
@@ -3422,11 +3491,11 @@ msgstr ""
 "त्यहाँ अझै ठेगाना सम्पादन गर्ने सञ्झ्याल खुला छन् ।\n"
 "त्यहाँ अझै %n ठेगाना सम्पादन गर्ने सञ्झ्याल खुला छन् ।"
 
-#: kpilot/addressWidget.cc:226
+#: kpilot/addressWidget.cc:224
 msgid "<qt>Select the category of addresses to display here.</qt>"
 msgstr "<qt>यहाँ प्रर्दशन गर्ने ठेगाना पुस्तकको कोटि चयन गर्नुहोस् ।</qt>"
 
-#: kpilot/addressWidget.cc:239
+#: kpilot/addressWidget.cc:237
 msgid ""
 "<qt>This list displays all the addresses in the selected category. Click on one "
 "to display it to the right.</qt>"
@@ -3434,28 +3503,41 @@ msgstr ""
 "<qt>यस सूचीले चयन गरेको कोटिमा सबै ठेगाना पुस्तक प्रर्दशन गर्दछ । दायाँ तिर "
 "देखाउन कुनै एउटालाई क्लिक गर्नुहोस् ।</qt>"
 
-#: kpilot/addressWidget.cc:243
+#: kpilot/addressWidget.cc:241
 msgid "Address info:"
 msgstr "ठेगाना जानकारी:"
 
-#: kpilot/addressWidget.cc:257
+#: kpilot/addressWidget.cc:255
 msgid "<qt>You can edit an address when it is selected.</qt>"
 msgstr ""
 "<qt>यसलाई चयन गरेको बेलामा तपाईँले ठेगाना सम्पादन गर्न सक्नुहुन्छ ।</qt>"
 
-#: kpilot/addressWidget.cc:265
+#: kpilot/addressWidget.cc:263
 msgid "<qt>Add a new address to the address book.</qt>"
 msgstr "<qt>ठेगाना पुस्तकमा नयाँ ठेगाना थप्नुहोस् ।</qt>"
 
-#: kpilot/addressWidget.cc:266
+#: kpilot/addressWidget.cc:264
 msgid "<qt><i>Adding is disabled by the 'internal editors' setting.</i></qt>"
 msgstr "<qt><i>'आन्तरिक सम्पादक' सेटिङद्वारा थप्न अक्षम पारिएको छ ।</i></qt>"
 
-#: kpilot/addressWidget.cc:276
+#: kpilot/addressWidget.cc:274
 msgid "<qt>Delete the selected address from the address book.</qt>"
 msgstr "<qt>ठेगाना पुस्तकबाट चयन गरेको ठेगना मेट्नुहोस् ।</qt>"
 
-#: kpilot/addressWidget.cc:482
+#: kpilot/addressWidget.cc:277
+msgid ""
+"_: Export addresses to file\n"
+"Export..."
+msgstr ""
+
+#: kpilot/addressWidget.cc:281
+#, fuzzy
+msgid "<qt>Export all addresses in the selected category to CSV format.</qt>"
+msgstr ""
+"<qt>यस सूचीले चयन गरेको कोटिमा सबै ठेगाना पुस्तक प्रर्दशन गर्दछ । दायाँ तिर "
+"देखाउन कुनै एउटालाई क्लिक गर्नुहोस् ।</qt>"
+
+#: kpilot/addressWidget.cc:480
 msgid ""
 "You cannot add addresses to the address book until you have done a HotSync at "
 "least once to retrieve the database layout from your Pilot."
@@ -3463,28 +3545,28 @@ msgstr ""
 "तपाईँको पाइलटबाट डाटाबेस सजावट पुन: प्राप्त गर्न तपाईँले कम्तिमा पनि एकपटक "
 "हटसिन्क नगरेसम्म ठेगाना पुस्तकमा ठेगानाहरू थप्न सक्नुहुन्न ।"
 
-#: kpilot/addressWidget.cc:485
+#: kpilot/addressWidget.cc:483
 msgid "Cannot Add New Address"
 msgstr "नयाँ ठेगाना थप्न सकिदैन"
 
-#: kpilot/addressWidget.cc:679
+#: kpilot/addressWidget.cc:677
 msgid "Export All Addresses"
 msgstr "सबै ठेगानाहरू निर्यात गर्नुहोस्"
 
-#: kpilot/addressWidget.cc:680
+#: kpilot/addressWidget.cc:678
 #, c-format
 msgid "Export Address Category %1"
 msgstr "ठेगाना कोटि %1 निर्यात गर्नुहोस्"
 
-#: kpilot/addressWidget.cc:698
+#: kpilot/addressWidget.cc:696
 msgid "The file <i>%1</i> exists. Overwrite?"
 msgstr "फाइल <i>%1</i> अवस्थित छ । अधिलेखन गर्नुहुन्छ ?"
 
-#: kpilot/addressWidget.cc:699
+#: kpilot/addressWidget.cc:697
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: kpilot/addressWidget.cc:712
+#: kpilot/addressWidget.cc:710
 msgid "The file <i>%1</i> could not be opened for writing."
 msgstr "लेख्नका लागि फाइल <i>%1</i> खोल्न सकेन ।"
 
@@ -6441,3 +6523,45 @@ msgstr "मेटिएको"
 #, no-c-format
 msgid "Busy"
 msgstr "व्यस्त"
+
+#~ msgid "Cannot open database"
+#~ msgstr "डाटाबेस खोल्न सकिदैन"
+
+#~ msgid "Pilot database error"
+#~ msgstr "पाइलट डाटाबेस त्रुटि"
+
+#~ msgid "Cannot create database %1 on the handheld"
+#~ msgstr "ह्यान्डहेल्डमा %1 डाटाबेस सिर्जना गर्न सकिदैन"
+
+#~ msgid "Device link ready."
+#~ msgstr "यन्त्र लिङ्क तयार"
+
+#~ msgid "(empty)"
+#~ msgstr "(रित्तो)"
+
+#~ msgid "%1 new to filesystem. "
+#~ msgstr "फाइल प्रणालीमा नयाँ %1 "
+
+#~ msgid "%1 deleted from filesystem. "
+#~ msgstr "फाइल प्रणालीबाट %1 मेटियो । "
+
+#~ msgid "%1 deleted from Palm. "
+#~ msgstr "पामबाट %1 मेटियो । "
+
+#~ msgid "No DCOP connection could be made. The conduit cannot function without DCOP."
+#~ msgstr "DCOP जडान गर्न सकेन । कन्ड्युटले DCOP बिना कार्य गर्न सक्दैन"
+
+#~ msgid "KNotes is not running. The conduit must be able to make a DCOP connection to KNotes for synchronization to take place. Please start KNotes and try again."
+#~ msgstr "KNotes चलिरहेको छैन । समक्रमणले कार्य गर्न कन्ड्युटले KNotes सँग  DCOP जडान गर्न सक्षम हुनुपर्दछ । कृपया KNotes सुरु गर्नुहोस् र पुन: प्रयास गर्नुहोस् ।"
+
+#~ msgid "Could not retrieve list of notes from KNotes. The KNotes conduit will not be run."
+#~ msgstr "KNotes बाट द्रष्टव्यहरूको सूची पुन: प्राप्त गर्न सकेन । KNotes कन्ड्युट चल्ने छैन ।"
+
+#~ msgid "Cannot create local backup."
+#~ msgstr "स्थानिय जगेडा सिर्जना गर्न सकिदैन"
+
+#~ msgid "Creating local backup of databases in %1."
+#~ msgstr " %1 मा डाटाबेसको स्थानिय जगेडा सिर्जना गर्दैछ"
+
+#~ msgid "Creating local backup .."
+#~ msgstr "स्थानिय जगेडा सिर्जना गर्दैछ .."
