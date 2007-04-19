@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-18 05:45+0200\n"
+"POT-Creation-Date: 2007-04-19 05:47+0200\n"
 "PO-Revision-Date: 2007-02-01 12:29+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -47,11 +47,11 @@ msgstr "जडान स्वीकार गर्नुहोस्"
 msgid "Refuse Connection"
 msgstr "जडान अस्वीकार गर्नुहोस्"
 
-#: invitedialog.cpp:35 manageinvitationsdialog.cpp:54
+#: invitedialog.cpp:35 manageinvitationsdialog.cpp:55
 msgid "Invitation"
 msgstr "निमन्त्रणा"
 
-#: invitedialog.cpp:71 rc.cpp:57
+#: invitedialog.cpp:71 rc.cpp:60
 #, qt-format
 msgid "&Manage Invitations (%1)..."
 msgstr "निमन्त्रण (%1) प्रबन्ध गर्नुहोस्..."
@@ -85,12 +85,12 @@ msgstr ""
 "तपाईँ डेस्कटप साझेदारीका लागि स्थायी पासवर्ड बनाउन चाहनुहुन्छ भने, कन्फिगरेसनमा "
 "'निमन्त्रणा नगरिएको जडान' अनुमति दिनुहोस। । </p>\">निमन्त्रणाको बारे अझ धेरै ...</a>"
 
-#: krfbserver.cpp:184
+#: krfbserver.cpp:185 krfbserver.cpp:202
 #, qt-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (साझेदार गरिएको डेस्कटप)"
 
-#: krfbserver.cpp:273
+#: krfbserver.cpp:279
 msgid ""
 "Your X11 Server does not support the required XTest extension version 2.2. "
 "Sharing your desktop is not possible."
@@ -98,7 +98,7 @@ msgstr ""
 "तपाईँको X11 सर्भरले आवश्यक X परीक्षण विस्तार संस्करण २.२ समर्थन गर्दैन । तपाईँको डेस्कटप "
 "साझेदारी सम्भव छैन ।"
 
-#: krfbserver.cpp:274
+#: krfbserver.cpp:280
 msgid "Desktop Sharing Error"
 msgstr "डेस्कटप साझेदारी त्रुटि"
 
@@ -106,7 +106,7 @@ msgstr "डेस्कटप साझेदारी त्रुटि"
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "केडीई डेस्कटप साझेदार गर्न भी एन सी-मिल्दोजुल्दो सर्भर"
 
-#: main.cpp:46 trayicon.cpp:77 trayicon.cpp:90
+#: main.cpp:46 trayicon.cpp:74 trayicon.cpp:87
 msgid "Desktop Sharing"
 msgstr "डेस्कटपको साझेदारी"
 
@@ -146,7 +146,7 @@ msgstr "जडान किनारा छवि"
 msgid "KDesktop background deactivation"
 msgstr "केडीई डेस्कटप पृष्ठभूमि निष्क्रियता"
 
-#: manageinvitationsdialog.cpp:86
+#: manageinvitationsdialog.cpp:93
 #, fuzzy
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
@@ -175,12 +175,26 @@ msgstr ""
 "तपाईँ डेस्कटप साझेदारीका लागि स्थायी पासवर्ड बनाउन चाहनुहुन्छ भने, कन्फिगरेसनमा "
 "'निमन्त्रणा नगरिएको जडान' अनुमति दिनुहोस। । </p>\">निमन्त्रणाको बारे अझ धेरै ...</a>"
 
-#: manageinvitationsdialog.cpp:128
+#: manageinvitationsdialog.cpp:137
 msgid "Network"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:129
+#: manageinvitationsdialog.cpp:138
 msgid "Security"
+msgstr ""
+
+#: manageinvitationsdialog.cpp:146
+msgid "<qt>Are you sure you want to delete all invitations?</qt>"
+msgstr ""
+
+#: manageinvitationsdialog.cpp:147 manageinvitationsdialog.cpp:163
+#, fuzzy
+#| msgid "Delete all invitations"
+msgid "Confirm delete Invitations"
+msgstr "सबै निमन्त्रणा मेट्नुहोस्"
+
+#: manageinvitationsdialog.cpp:162
+msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr ""
 
 #: personalinvitedialog.cpp:35
@@ -252,19 +266,23 @@ msgstr "%1 बाट निमन्त्रना नगरिएको जड
 msgid "Uninvited connections password"
 msgstr "%1 बाट निमन्त्रना नगरिएको जडान स्वीकार गरियो"
 
-#: rc.cpp:21
-msgid "Use default port"
+#: rc.cpp:21 rc.cpp:78
+msgid "Announce the service on the local network"
 msgstr ""
 
 #: rc.cpp:24
-msgid "Listening Port:"
+msgid "Use default port"
 msgstr ""
 
 #: rc.cpp:27
+msgid "Listening Port:"
+msgstr ""
+
+#: rc.cpp:30
 msgid "Attention"
 msgstr "सावधान"
 
-#: rc.cpp:30
+#: rc.cpp:33
 msgid ""
 "Somebody is requesting a connection to your computer. Granting this will "
 "allow the remote user to watch your desktop. "
@@ -272,11 +290,11 @@ msgstr ""
 "कोही मानिस तपाईँको कम्प्युटरमा जडान गर्न अनुरोध गरिरहेको छ । यसलाई स्वीकार गर्नाले "
 "तपाईँको डेस्कटपमा टाढाको प्रयोगकर्तालाई अनुमति दिनेछ ।"
 
-#: rc.cpp:33
+#: rc.cpp:36
 msgid "123.234.123.234"
 msgstr "123.234.123.234"
 
-#: rc.cpp:36
+#: rc.cpp:39
 msgid ""
 "If you turn this option on, the remote user can enter keystrokes and use "
 "your mouse pointer. This gives them full control over your computer, so be "
@@ -288,15 +306,15 @@ msgstr ""
 "दिन्छ, त्यसैले सावधान हुनुहोस् । विकल्प अक्षम गर्दा टाढाको प्रयोगकर्ताले तपाईँको पर्दा मात्र "
 "हेर्न सक्छ ।"
 
-#: rc.cpp:39
+#: rc.cpp:42
 msgid "Allow remote user to &control keyboard and mouse"
 msgstr "टाढाको प्रयोगकर्तालाई कुञ्जीपाटी र माउस नियन्त्रण गर्न अनुमति दिनुहोस्"
 
-#: rc.cpp:42
+#: rc.cpp:45
 msgid "Remote system:"
 msgstr "टाढाको प्रणाली:"
 
-#: rc.cpp:45 rc.cpp:135
+#: rc.cpp:48 rc.cpp:141
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -310,7 +328,7 @@ msgid ""
 "body></html>"
 msgstr ""
 
-#: rc.cpp:51
+#: rc.cpp:54
 msgid ""
 "This button will start your email application with a pre-configured text "
 "that explains to the recipient how to connect to your computer. "
@@ -318,11 +336,11 @@ msgstr ""
 "यो बटनले पूर्व-कन्फिगर गरिएको पाठसँग तपाईँको इमेल अनुप्रयोग सुरु गर्नेछ जसले तपाईँको "
 "कम्प्युटरमा कसरी जडान गर्ने भन्ने बारे प्रापकलाई व्याख्या गर्दछ । "
 
-#: rc.cpp:54
+#: rc.cpp:57
 msgid "Invite via &Email..."
 msgstr "इमेल मार्फत निमन्त्रणा गर्नुहोस्..."
 
-#: rc.cpp:60
+#: rc.cpp:63
 msgid ""
 "Create a new invitation and display the connection data. Use this option if "
 "you want to invite somebody personally, for example, to give the connection "
@@ -332,57 +350,57 @@ msgstr ""
 "कसैलाई निमन्त्रणा गर्न चाहनुहुन्छ भने यो विकल्प प्रयोग गर्नुहोस्, उदाहरणका लागि, फोनमा "
 "जडान डेटा दिन ।"
 
-#: rc.cpp:63
+#: rc.cpp:66
 msgid "Create &Personal Invitation..."
 msgstr "व्यक्तिगत निमन्त्रणा सिर्जना गर्नुहोस्..."
 
-#: rc.cpp:66 rc.cpp:90
+#: rc.cpp:69 rc.cpp:96
 msgid "Welcome to KDE Desktop Sharing"
 msgstr "केडीई डेस्कटप साझेदारीमा स्वागत छ"
 
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "Use the default port for VNC (5900)"
 msgstr ""
 
-#: rc.cpp:72
+#: rc.cpp:75
 msgid "This is the port on wich krfb will listen."
 msgstr ""
 
-#: rc.cpp:75
+#: rc.cpp:81
 msgid "Allow remote connections to manage the desktop."
 msgstr ""
 
-#: rc.cpp:78
+#: rc.cpp:84
 msgid "Ask before allowing a remote connection."
 msgstr ""
 
-#: rc.cpp:81
+#: rc.cpp:87
 msgid "Allow connections without an invitation."
 msgstr ""
 
-#: rc.cpp:84
+#: rc.cpp:90
 #, fuzzy
 #| msgid "Accepted uninvited connection from %1"
 msgid "Password for uninvited connections."
 msgstr "%1 बाट निमन्त्रना नगरिएको जडान स्वीकार गरियो"
 
-#: rc.cpp:87
+#: rc.cpp:93
 msgid "Manage Invitations - Desktop Sharing"
 msgstr "निमन्त्रणा - डेस्कटप साझेदारी प्रबन्ध गर्नुहोस्"
 
-#: rc.cpp:93
+#: rc.cpp:99
 msgid "Created"
 msgstr "सिर्जित"
 
-#: rc.cpp:96
+#: rc.cpp:102
 msgid "Expire Time"
 msgstr ""
 
-#: rc.cpp:99
+#: rc.cpp:105
 msgid "Delete the selected invitation"
 msgstr "चयन गरिएको निमन्त्रणा मेट्नुहोस्"
 
-#: rc.cpp:102
+#: rc.cpp:108
 msgid ""
 "Delete the selected invitation. The invited person will not be able to "
 "connect using this invitation anymore."
@@ -390,47 +408,47 @@ msgstr ""
 "चयन गरिएको निमन्त्रणा मेट्नुहोस् । आमन्त्रित व्यक्तिले यो निमन्त्रणा भन्दा बढी प्रयोग गरेर "
 "जडान गर्न सक्नेछैन ।"
 
-#: rc.cpp:105
+#: rc.cpp:111
 msgid "&Delete"
 msgstr ""
 
-#: rc.cpp:108
+#: rc.cpp:114
 msgid "Delete all invitations"
 msgstr "सबै निमन्त्रणा मेट्नुहोस्"
 
-#: rc.cpp:111
+#: rc.cpp:117
 msgid "Deletes all open invitations."
 msgstr "सबै खुल्ला निमन्त्रणा मेट्दछ ।"
 
-#: rc.cpp:114
+#: rc.cpp:120
 msgid "Delete All"
 msgstr ""
 
-#: rc.cpp:117
+#: rc.cpp:123
 msgid "Send a new invitation via email..."
 msgstr "इमेल मार्फत नयाँ निमन्त्रणा पठाउनुहोस्..."
 
-#: rc.cpp:120
+#: rc.cpp:126
 msgid "Click this button to send a new invitation via email."
 msgstr "इमेल मार्फत नयाँ निमन्त्रणा पठाउन यो बटन क्लिक गर्नुहोस् ।"
 
-#: rc.cpp:123
+#: rc.cpp:129
 msgid "&New Email Invitation..."
 msgstr "नयाँ इमेल निमन्त्रणा..."
 
-#: rc.cpp:126
+#: rc.cpp:132
 msgid "Create a new personal invitation..."
 msgstr "नयाँ व्यक्तिगत निमन्त्रणा सिर्जना गर्नुहोस्..."
 
-#: rc.cpp:129
+#: rc.cpp:135
 msgid "Click this button to create a new personal invitation."
 msgstr "नयाँ व्यक्तिगत निमन्त्रणा सिर्जना गर्न यो बटन क्लिक गर्नुहोस् ।"
 
-#: rc.cpp:132
+#: rc.cpp:138
 msgid "New &Personal Invitation..."
 msgstr "नयाँ व्यक्तिगत निमन्त्रणा..."
 
-#: rc.cpp:141
+#: rc.cpp:147
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -447,19 +465,19 @@ msgid ""
 "body></html>"
 msgstr ""
 
-#: rc.cpp:148
+#: rc.cpp:154
 msgid "<b>Password:</b>"
 msgstr "<b>पासवर्ड:</b>"
 
-#: rc.cpp:151
+#: rc.cpp:157
 msgid "<b>Expiration time:</b>"
 msgstr "<b>समाप्ति समय:</b>"
 
-#: rc.cpp:154
+#: rc.cpp:160
 msgid "<b>Host:</b>"
 msgstr "<b>होस्ट:</b>"
 
-#: rc.cpp:157
+#: rc.cpp:163
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -471,17 +489,17 @@ msgid ""
 "p></body></html>"
 msgstr ""
 
-#: rc.cpp:161
+#: rc.cpp:167
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "श्यामकृष्ण बल"
 
-#: rc.cpp:162
+#: rc.cpp:168
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Shyam krishna bal<shyamkrishna_bal@yahoo.com>"
 
-#: trayicon.cpp:38 trayicon.cpp:88
+#: trayicon.cpp:38 trayicon.cpp:85
 msgid "Desktop Sharing - disconnected"
 msgstr "डेस्कटप साझेदारी - विच्छेदन गरियो"
 
@@ -493,16 +511,16 @@ msgstr "टाढाको नियन्त्रण सक्षम गर्
 msgid "Disable Remote Control"
 msgstr "टाढाको नियन्त्रण अक्षम गर्नुहोस्"
 
-#: trayicon.cpp:78
+#: trayicon.cpp:75
 msgid "The remote user has been authenticated and is now connected."
 msgstr "टाढाको प्रयोगकर्ता प्रमाणीकरण भयो र अहिले जडान गरियो ।"
 
-#: trayicon.cpp:81
+#: trayicon.cpp:78
 #, qt-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "डेस्कटप साझेदारी - %1 सँग जडान गरियो"
 
-#: trayicon.cpp:91
+#: trayicon.cpp:88
 msgid "The remote user has closed the connection."
 msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
 
