@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-10 05:52+0200\n"
+"POT-Creation-Date: 2007-05-12 05:48+0200\n"
 "PO-Revision-Date: 2007-02-11 15:37+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -162,8 +162,8 @@ msgstr "क्यालेन्डर सूची प्यानल"
 #. i18n: file reports/tasklist.ktf line 22
 #: rc.cpp:66 rc.cpp:395 rc.cpp:452 rc.cpp:909 rc.cpp:930
 #: kptaccountseditor.cc:364 kptcalendareditor.cc:429
-#: kptdoublelistviewbase.cc:366 kptresourceeditor.cc:855
-#: kptresourceview.cc:416 kptscheduleeditor.cc:522 kpttaskeditor.cc:1092
+#: kptdoublelistviewbase.cc:366 kptnodeitemmodel.cc:1148
+#: kptresourceeditor.cc:855 kptresourceview.cc:416 kptscheduleeditor.cc:522
 #: kpttaskstatusview.cc:543
 msgid "Name"
 msgstr "नाम"
@@ -760,8 +760,8 @@ msgstr "माइलस्टोन प्रगति प्यानल आध
 
 #. i18n: tag string
 #. i18n: file kptmilestoneprogresspanelbase.ui line 26
-#: rc.cpp:335 kptresourceassignmentview.cc:270
-#: kptresourceassignmentview.cc:348 kpttaskstatusview.cc:72
+#: rc.cpp:335 kptresourceassignmentview.cc:269
+#: kptresourceassignmentview.cc:347 kpttaskstatusview.cc:72
 #: kpttaskstatusview.cc:356
 msgid "Finished"
 msgstr "समाप्त भयो"
@@ -783,7 +783,7 @@ msgstr "कार्यको आईडी: "
 #. i18n: file kptperteditor.ui line 49
 #. i18n: tag string
 #. i18n: file kptresourceassignmentview.ui line 42
-#: rc.cpp:344 rc.cpp:401 kptview.cc:841
+#: rc.cpp:344 rc.cpp:401 kptview.cc:828
 #, fuzzy
 msgid "Tasks"
 msgstr "कार्य"
@@ -858,7 +858,7 @@ msgstr ""
 #. i18n: file kptpertresult.ui line 77
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 192
-#: rc.cpp:371 rc.cpp:446 kptview.cc:645
+#: rc.cpp:371 rc.cpp:446 kptview.cc:642
 msgid "Float"
 msgstr "उत्प्लावन"
 
@@ -910,8 +910,8 @@ msgstr "संसाधन मानाङ्कन गरिएको छैन
 
 #. i18n: tag string
 #. i18n: file kptresourceassignmentview.ui line 35
-#: rc.cpp:398 kptcalendareditor.cc:1296 kptresourceeditor.cc:856
-#: kptresourceview.cc:417 kpttaskeditor.cc:1093
+#: rc.cpp:398 kptcalendareditor.cc:1296 kptnodeitemmodel.cc:1149
+#: kptresourceeditor.cc:856 kptresourceview.cc:417
 msgid "Type"
 msgstr "प्रकार"
 
@@ -1134,11 +1134,12 @@ msgstr "जोखिम:"
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 484
 #: rc.cpp:661 kptaccountspanel.cc:155 kptcalendarlistdialog.cc:331
-#: kptnode.cc:1226 kptrequestresourcespanel.cc:118 kptresourcedialog.cc:145
-#: kptresourceeditor.cc:527 kptresourceeditor.cc:542 kptresourceview.cc:539
-#: kptscheduleeditor.cc:407 kptscheduleeditor.cc:409 kpttaskcostpanel.cc:42
-#: kpttaskeditor.cc:814 kpttaskeditor.cc:824 kpttaskeditor.cc:862
-#: kpttaskeditor.cc:872 kpttaskeditor.cc:942 kpttaskeditor.cc:952
+#: kptnode.cc:1226 kptnodeitemmodel.cc:834 kptnodeitemmodel.cc:844
+#: kptnodeitemmodel.cc:882 kptnodeitemmodel.cc:892 kptnodeitemmodel.cc:962
+#: kptnodeitemmodel.cc:972 kptrequestresourcespanel.cc:118
+#: kptresourcedialog.cc:145 kptresourceeditor.cc:527 kptresourceeditor.cc:542
+#: kptresourceview.cc:539 kptscheduleeditor.cc:407 kptscheduleeditor.cc:409
+#: kpttaskcostpanel.cc:42
 msgid "None"
 msgstr "कुनै पनि होइन"
 
@@ -1373,14 +1374,14 @@ msgstr "संसाधन प्रकार:"
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 173
 #: rc.cpp:802 kptresource.cc:97 kptresource.cc:330
-#: kptresourceassignmentview.cc:96 kptresourceview.cc:528
+#: kptresourceassignmentview.cc:95 kptresourceview.cc:528
 msgid "Work"
 msgstr "कार्य"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 178
 #: rc.cpp:805 kptresource.cc:98 kptresource.cc:331
-#: kptresourceassignmentview.cc:100 kptresourceview.cc:531
+#: kptresourceassignmentview.cc:99 kptresourceview.cc:531
 msgid "Material"
 msgstr "सामग्री"
 
@@ -1448,7 +1449,7 @@ msgstr "नयाँ..."
 
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 99
-#: rc.cpp:847 kptview.cc:727
+#: rc.cpp:847 kptview.cc:720
 msgid "Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
 
@@ -1643,7 +1644,7 @@ msgstr "WBS"
 
 #. i18n: tag Label attribute Text
 #. i18n: file reports/tasklist.ktf line 103
-#: rc.cpp:951 kpttaskeditor.cc:1094
+#: rc.cpp:951 kptnodeitemmodel.cc:1150
 #, fuzzy
 msgid "Responsible"
 msgstr "उत्तरदायी:"
@@ -1656,7 +1657,8 @@ msgstr "खाता"
 msgid "Edit Accounts"
 msgstr "खाता सम्पादन गर्नुहोस्"
 
-#: kptaccountseditor.cc:365 kptdoublelistviewbase.cc:366 kpttaskeditor.cc:1109
+#: kptaccountseditor.cc:365 kptdoublelistviewbase.cc:366
+#: kptnodeitemmodel.cc:1165
 msgid "Description"
 msgstr "वर्णन"
 
@@ -1867,21 +1869,6 @@ msgstr "हप्ता %1"
 msgid "Close"
 msgstr "सङ्केत"
 
-#: kptcanvasitem.cc:92 kptcanvasitem.cc:171 kptcanvasitem.cc:252
-#, qt-format
-msgid "From: %1"
-msgstr "बाट: %1"
-
-#: kptcanvasitem.cc:93 kptcanvasitem.cc:172 kptcanvasitem.cc:253
-#, qt-format
-msgid "To: %1"
-msgstr "लाई: %1"
-
-#: kptcanvasitem.cc:95 kptcanvasitem.cc:174 kptcanvasitem.cc:255
-#, qt-format
-msgid "Lag:  %1"
-msgstr "ल्याग:  %1"
-
 #: kptchartdialog.cc:29
 msgid "Project Charts Indicators"
 msgstr ""
@@ -1894,23 +1881,23 @@ msgstr "केडीई प्लाटो कन्फिगर गर्नु
 msgid "Task Defaults"
 msgstr "कार्य पूर्वानिर्धारण"
 
-#: kptdependencyeditor.cc:1361 kpttaskeditor.cc:1578 kpttaskstatusview.cc:912
+#: kptdependencyeditor.cc:1361 kpttaskeditor.cc:241 kpttaskstatusview.cc:912
 #, fuzzy
 msgid "Add Task..."
 msgstr "कार्य थप्नुहोस्"
 
-#: kptdependencyeditor.cc:1366 kpttaskeditor.cc:1583
+#: kptdependencyeditor.cc:1366 kpttaskeditor.cc:246
 #, fuzzy
 msgid "Add Sub-Task..."
 msgstr "सहायक कार्य..."
 
-#: kptdependencyeditor.cc:1371 kpttaskeditor.cc:1588
+#: kptdependencyeditor.cc:1371 kpttaskeditor.cc:251
 #, fuzzy
 msgid "Add Milestone..."
 msgstr "माइलस्टोन थप्नुहोस्"
 
-#: kptdependencyeditor.cc:1376 kpttaskeditor.cc:1593 kptview.cc:733
-#: kptview.cc:1841 kptview.cc:1859
+#: kptdependencyeditor.cc:1376 kpttaskeditor.cc:256 kptview.cc:726
+#: kptview.cc:1828 kptview.cc:1846
 msgid "Delete Task"
 msgstr "कार्य मेट्नुहोस्"
 
@@ -1930,80 +1917,6 @@ msgstr "%1h:%2m"
 msgctxt "<days>d <hours>h:<minutes>m"
 msgid "%1d %2h:%3m"
 msgstr "%1d %2h:%3m"
-
-#: kptganttview.cc:115
-msgctxt "Work Breakdown Structure"
-msgid "WBS"
-msgstr "WBS"
-
-#: kptganttview.cc:563 kptganttview.cc:644 kptganttview.cc:751
-#, qt-format
-msgid "Name: %1"
-msgstr "नाम: %1"
-
-#: kptganttview.cc:565 kptganttview.cc:647
-#, qt-format
-msgid "Start: %1"
-msgstr "सुरुआत: %1"
-
-#: kptganttview.cc:566 kptganttview.cc:649
-#, qt-format
-msgid "End: %1"
-msgstr "अन्त्य: %1"
-
-#: kptganttview.cc:570 kptganttview.cc:666 kptganttview.cc:766
-#: kptschedule.cc:140 kptschedule.cc:1192 kptview.cc:2478
-msgid "Not scheduled"
-msgstr "तालिकिकरण नगरिएको"
-
-#: kptganttview.cc:652
-#, qt-format
-msgid "Completion: %1%"
-msgstr "समाप्ति: %1%"
-
-#: kptganttview.cc:655 kptganttview.cc:756
-#, qt-format
-msgid "Float: %1"
-msgstr "उत्प्लावन: %1"
-
-#: kptganttview.cc:658 kptganttview.cc:759
-msgid "Critical path"
-msgstr "असामान्य बाटो"
-
-#: kptganttview.cc:660 kptganttview.cc:761
-msgid "Critical"
-msgstr "असामान्य"
-
-#: kptganttview.cc:670
-msgid "No resource assigned"
-msgstr "संसाधन मानाङ्कन गरिएको छैन"
-
-#: kptganttview.cc:674 kptschedule.cc:146
-msgid "Resource not available"
-msgstr "संसाधन उपलब्ध छैन"
-
-#: kptganttview.cc:678 kptganttview.cc:770
-msgid "Scheduling conflict"
-msgstr "तालिकिकरणमा द्वन्द"
-
-#: kptganttview.cc:682
-msgid "Requested effort could not be met"
-msgstr "अनुरोध गरे अनुरुप हुन सकेन"
-
-#: kptganttview.cc:688
-#, qt-format
-msgctxt "arg: list of resources"
-msgid "Resource overbooked: %1"
-msgstr "संसाधन बढि संरक्षण भयो: %1"
-
-#: kptganttview.cc:753
-#, qt-format
-msgid "Time: %1"
-msgstr "समय: %1"
-
-#: kptganttview.cc:1172 kptganttview.cc:1177
-msgid "Cannot link these nodes"
-msgstr "यी नोड लिङ्क गर्न सकिदैन"
 
 #: kptmainprojectdialog.cc:36
 msgid "Project Settings"
@@ -2080,6 +1993,142 @@ msgstr "यो भन्दा ढिलो अन्त्य नगर्न�
 msgid "FixedDuration"
 msgstr "अवधि"
 
+#: kptnodeitemmodel.cc:355 kptnodeitemmodel.cc:364 kptnodeitemmodel.cc:398
+#: kptnodeitemmodel.cc:401 kptresourcesdialog.cc:37 kptview.cc:630
+#: kptview.cc:811 kptview.cc:1000
+msgid "Resources"
+msgstr "संसाधन"
+
+#: kptnodeitemmodel.cc:361
+#, fuzzy
+msgid "Add Resource"
+msgstr "संसाधन"
+
+#: kptnodeitemmodel.cc:376
+#, fuzzy
+msgid "Modify Resource Allocations"
+msgstr "सम्बन्ध परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:715
+#, fuzzy
+msgid "Modify estimate"
+msgstr "नाम परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:867
+#, fuzzy
+msgid "Modify Running Account"
+msgstr "खाता परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:916
+#, fuzzy
+msgid "Modify Startup Account"
+msgstr "खाता परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:949
+#, fuzzy
+msgid "Modify Startup Cost"
+msgstr "कार्य लागत परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:995
+#, fuzzy
+msgid "Modify Shutdown Account"
+msgstr "खाता परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:1028
+#, fuzzy
+msgid "Modify Shutdown Cost"
+msgstr "कार्य लागत परिमार्जन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:1151
+#, fuzzy
+msgid "Allocation"
+msgstr "बाँडफाँट देखाउनुहोस्"
+
+#: kptnodeitemmodel.cc:1152
+#, fuzzy
+msgid "Estimate Type"
+msgstr "अनुमान:"
+
+#: kptnodeitemmodel.cc:1153
+#, fuzzy
+msgid "Estimate"
+msgstr "अनुमान:"
+
+#: kptnodeitemmodel.cc:1154 kptschedule.cc:119
+msgid "Optimistic"
+msgstr "आशावादी"
+
+#: kptnodeitemmodel.cc:1155 kptschedule.cc:121
+msgid "Pessimistic"
+msgstr "निराशावादी"
+
+#: kptnodeitemmodel.cc:1156
+#, fuzzy
+msgid "Risk"
+msgstr "जोखिम:"
+
+#: kptnodeitemmodel.cc:1157
+#, fuzzy
+msgid "Constraint"
+msgstr "अवरोध"
+
+#: kptnodeitemmodel.cc:1158
+#, fuzzy
+msgid "Constraint Start"
+msgstr "अवरोध"
+
+#: kptnodeitemmodel.cc:1159
+#, fuzzy
+msgid "Constraint End"
+msgstr "अवरोध"
+
+#: kptnodeitemmodel.cc:1160
+#, fuzzy
+msgid "Running Account"
+msgstr "खाता सम्पादन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:1161
+#, fuzzy
+msgid "Startup Account"
+msgstr "खाता सम्पादन गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:1162
+#, fuzzy
+msgid "Startup Cost"
+msgstr "सुरुआत"
+
+#: kptnodeitemmodel.cc:1163
+#, fuzzy
+msgid "Shutdown Account"
+msgstr "बन्द गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:1164
+#, fuzzy
+msgid "Shutdown Cost"
+msgstr "बन्द गर्नुहोस्"
+
+#: kptnodeitemmodel.cc:1166
+#, fuzzy
+msgid "Start Time"
+msgstr "सुरु गरियो:"
+
+#: kptnodeitemmodel.cc:1167
+msgid "End Time"
+msgstr ""
+
+#: kptnodeitemmodel.cc:1392
+#, fuzzy
+msgid "Move tasks"
+msgstr "कार्य माथि सार्नुहोस्"
+
+#: kptnodeitemmodel.cc:1430 kptview.cc:1567
+msgid "Add Task"
+msgstr "कार्य थप्नुहोस्"
+
+#: kptnodeitemmodel.cc:1445 kptview.cc:1546
+msgid "Add Subtask"
+msgstr "सहायक कार्य थप्नुहोस्"
+
 #: kptpart.cc:157
 msgid "Invalid document. No mimetype specified."
 msgstr "अवैद्य कागजात । माइमप्रकार निर्दिष्ट गरिएको छैन ।"
@@ -2143,7 +2192,7 @@ msgctxt "minutes"
 msgid "m"
 msgstr "मिनेट"
 
-#: kptrelationdialog.cc:88 kptview.cc:1962
+#: kptrelationdialog.cc:88 kptview.cc:1949
 msgid "Add Relation"
 msgstr "सम्बन्ध थप्नुहोस्"
 
@@ -2199,23 +2248,23 @@ msgstr "टेम्प्लेट फाइल डाउनलोड गर्
 msgid "Available"
 msgstr "उपलब्ध"
 
-#: kptresourceassignmentview.cc:256
+#: kptresourceassignmentview.cc:255
 msgid "No task attributed"
 msgstr ""
 
-#: kptresourceassignmentview.cc:268 kptresourceassignmentview.cc:346
+#: kptresourceassignmentview.cc:267 kptresourceassignmentview.cc:345
 #: kpttaskstatusview.cc:66
 #, fuzzy
 msgid "Not Started"
 msgstr "सुरु गरियो:"
 
-#: kptresourceassignmentview.cc:269 kptresourceassignmentview.cc:347
+#: kptresourceassignmentview.cc:268 kptresourceassignmentview.cc:346
 #: kpttaskstatusview.cc:368
 #, fuzzy
 msgid "Started"
 msgstr "सुरु गरियो:"
 
-#: kptresourceassignmentview.cc:335
+#: kptresourceassignmentview.cc:334
 #, fuzzy
 msgid "No resource attributed"
 msgstr "संसाधन मानाङ्कन गरिएको छैन"
@@ -2279,7 +2328,7 @@ msgstr[1] "ठेगाना पुस्तकबाट संसाधन र
 msgid "Add resource group"
 msgstr "संसाधन समूह"
 
-#: kptresourceeditor.cc:1006 kptview.cc:2045
+#: kptresourceeditor.cc:1006 kptview.cc:2017
 #, fuzzy
 msgid "Add resource"
 msgstr "संसाधन परिमार्जन गर्नुहोस्"
@@ -2292,12 +2341,6 @@ msgstr "संसाधन समूह"
 #: kptresourceeditor.cc:1206
 msgid "Delete Selected Items"
 msgstr ""
-
-#: kptresourcesdialog.cc:37 kpttaskeditor.cc:351 kpttaskeditor.cc:360
-#: kpttaskeditor.cc:394 kpttaskeditor.cc:397 kptview.cc:633 kptview.cc:824
-#: kptview.cc:1013
-msgid "Resources"
-msgstr "संसाधन"
 
 #: kptresourcesdialog.cc:63
 msgid "Modify resources"
@@ -2317,18 +2360,14 @@ msgstr "क्यान्डेलर नाम"
 msgid "Expected"
 msgstr "अपेक्षित"
 
-#: kptschedule.cc:119 kpttaskeditor.cc:1098
-msgid "Optimistic"
-msgstr "आशावादी"
-
-#: kptschedule.cc:121 kpttaskeditor.cc:1099
-msgid "Pessimistic"
-msgstr "निराशावादी"
-
 #: kptschedule.cc:138
 #, fuzzy
 msgid "Deleted"
 msgstr "कार्य मेट्नुहोस्"
+
+#: kptschedule.cc:140 kptschedule.cc:1192 kptview.cc:2450
+msgid "Not scheduled"
+msgstr "तालिकिकरण नगरिएको"
 
 #: kptschedule.cc:142
 msgid "Cannot fullfill constraints"
@@ -2338,6 +2377,10 @@ msgstr ""
 #, fuzzy
 msgid "No resource allocated"
 msgstr "संसाधन मानाङ्कन गरिएको छैन"
+
+#: kptschedule.cc:146
+msgid "Resource not available"
+msgstr "संसाधन उपलब्ध छैन"
 
 #: kptschedule.cc:148
 #, fuzzy
@@ -2447,132 +2490,19 @@ msgstr "संसाधन"
 msgid "&Cost"
 msgstr "लागत"
 
-#: kpttaskeditor.cc:357
-#, fuzzy
-msgid "Add Resource"
-msgstr "संसाधन"
-
-#: kpttaskeditor.cc:372
-#, fuzzy
-msgid "Modify Resource Allocations"
-msgstr "सम्बन्ध परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:695
-#, fuzzy
-msgid "Modify estimate"
-msgstr "नाम परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:847
-#, fuzzy
-msgid "Modify Running Account"
-msgstr "खाता परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:896
-#, fuzzy
-msgid "Modify Startup Account"
-msgstr "खाता परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:929
-#, fuzzy
-msgid "Modify Startup Cost"
-msgstr "कार्य लागत परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:975
-#, fuzzy
-msgid "Modify Shutdown Account"
-msgstr "खाता परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:1008
-#, fuzzy
-msgid "Modify Shutdown Cost"
-msgstr "कार्य लागत परिमार्जन गर्नुहोस्"
-
-#: kpttaskeditor.cc:1095
-#, fuzzy
-msgid "Allocation"
-msgstr "बाँडफाँट देखाउनुहोस्"
-
-#: kpttaskeditor.cc:1096
-#, fuzzy
-msgid "Estimate Type"
-msgstr "अनुमान:"
-
-#: kpttaskeditor.cc:1097
-#, fuzzy
-msgid "Estimate"
-msgstr "अनुमान:"
-
-#: kpttaskeditor.cc:1100
-#, fuzzy
-msgid "Risk"
-msgstr "जोखिम:"
-
-#: kpttaskeditor.cc:1101
-#, fuzzy
-msgid "Constraint"
-msgstr "अवरोध"
-
-#: kpttaskeditor.cc:1102
-#, fuzzy
-msgid "Constraint Start"
-msgstr "अवरोध"
-
-#: kpttaskeditor.cc:1103
-#, fuzzy
-msgid "Constraint End"
-msgstr "अवरोध"
-
-#: kpttaskeditor.cc:1104
-#, fuzzy
-msgid "Running Account"
-msgstr "खाता सम्पादन गर्नुहोस्"
-
-#: kpttaskeditor.cc:1105
-#, fuzzy
-msgid "Startup Account"
-msgstr "खाता सम्पादन गर्नुहोस्"
-
-#: kpttaskeditor.cc:1106
-#, fuzzy
-msgid "Startup Cost"
-msgstr "सुरुआत"
-
-#: kpttaskeditor.cc:1107
-#, fuzzy
-msgid "Shutdown Account"
-msgstr "बन्द गर्नुहोस्"
-
-#: kpttaskeditor.cc:1108
-#, fuzzy
-msgid "Shutdown Cost"
-msgstr "बन्द गर्नुहोस्"
-
-#: kpttaskeditor.cc:1334
-#, fuzzy
-msgid "Move tasks"
-msgstr "कार्य माथि सार्नुहोस्"
-
-#: kpttaskeditor.cc:1372 kptview.cc:1580
-msgid "Add Task"
-msgstr "कार्य थप्नुहोस्"
-
-#: kpttaskeditor.cc:1387 kptview.cc:1559
-msgid "Add Subtask"
-msgstr "सहायक कार्य थप्नुहोस्"
-
-#: kpttaskeditor.cc:1600 kptview.cc:1878
+#: kpttaskeditor.cc:263 kptview.cc:1865
 msgid "Indent Task"
 msgstr "इन्डेण्ट कार्य"
 
-#: kpttaskeditor.cc:1605 kptview.cc:1892
+#: kpttaskeditor.cc:268 kptview.cc:1879
 msgid "Unindent Task"
 msgstr "इन्डेण्ट नगरिएको कार्य"
 
-#: kpttaskeditor.cc:1610
+#: kpttaskeditor.cc:273
 msgid "Move Up"
 msgstr "माथि सार्नुहोस्"
 
-#: kpttaskeditor.cc:1615
+#: kpttaskeditor.cc:278
 msgid "Move Down"
 msgstr "तल सार्नुहोस्"
 
@@ -2715,289 +2645,285 @@ msgstr ""
 msgid "Sunday"
 msgstr ""
 
-#: kptview.cc:448 kptview.cc:522
+#: kptview.cc:445 kptview.cc:519
 msgid "Remove Document"
 msgstr ""
 
-#: kptview.cc:519
+#: kptview.cc:516
 msgid "Edit Document Title"
 msgstr ""
 
-#: kptview.cc:591
+#: kptview.cc:588
 #, fuzzy
 msgid "Editors"
 msgstr "खाता सम्पादन गर्नुहोस्"
 
-#: kptview.cc:600
+#: kptview.cc:597
 msgid "Views"
 msgstr ""
 
-#: kptview.cc:625
+#: kptview.cc:622
 #, fuzzy
 msgid "Show Selector"
 msgstr "बाँडफाँट देखाउनुहोस्"
 
-#: kptview.cc:636
+#: kptview.cc:633
 msgid "Task Name"
 msgstr "कार्य नाम"
 
-#: kptview.cc:639
+#: kptview.cc:636
 msgid "Task Links"
 msgstr "कार्य लिङ्क"
 
-#: kptview.cc:642
+#: kptview.cc:639
 msgid "Progress"
 msgstr "प्रगति"
 
-#: kptview.cc:648
+#: kptview.cc:645
 msgid "Critical Tasks"
 msgstr "असामान्य कार्य"
 
-#: kptview.cc:651
+#: kptview.cc:648
 msgid "Critical Path"
 msgstr "असामान्य बाटो"
 
-#: kptview.cc:659 kptview.cc:663
+#: kptview.cc:656 kptview.cc:660
 #, fuzzy
 msgid "Show allocations"
 msgstr "बाँडफाँट देखाउनुहोस्"
 
-#: kptview.cc:670
+#: kptview.cc:667
 msgid "Edit Main Project..."
 msgstr "मुख्य परियोजना सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:674
+#: kptview.cc:671
 msgid "Chart Indicators..."
 msgstr ""
 
-#: kptview.cc:678
+#: kptview.cc:675
 msgid "Edit Standard Worktime..."
 msgstr "मानक कार्यअवधि सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:681 kptview.cc:741
+#: kptview.cc:678 kptview.cc:734
 msgid "Edit Calendar..."
 msgstr "क्यालेन्डर सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:684
+#: kptview.cc:681
 msgid "Edit Accounts..."
 msgstr "खाता सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:687
+#: kptview.cc:684
 msgid "Edit Resources..."
 msgstr "संसाधन सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:709
+#: kptview.cc:706
 msgid "Define WBS Pattern..."
 msgstr "WBS बाँन्की परिभाषित गर्नुहोस्..."
 
-#: kptview.cc:713
+#: kptview.cc:710
 msgid "Generate WBS Code"
 msgstr "WBS सङ्केत सिर्जना गर्नुहोस्"
 
-#: kptview.cc:722
+#: kptview.cc:715
 msgid "Configure KPlato..."
 msgstr "केडीई प्लाटो कन्फिगर गर्नुहोस्..."
 
-#: kptview.cc:730
+#: kptview.cc:723
 msgid "Progress..."
 msgstr "प्रगति..."
 
-#: kptview.cc:737
+#: kptview.cc:730
 msgid "Edit Resource..."
 msgstr "संसाधन सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:745
+#: kptview.cc:738
 #, fuzzy
 #| msgid "Edit Calendar..."
 msgid "Edit Dependency..."
 msgstr "क्यालेन्डर सम्पादन गर्नुहोस्..."
 
-#: kptview.cc:748
+#: kptview.cc:741
 msgid "Delete Dependency..."
 msgstr ""
 
-#: kptview.cc:757
+#: kptview.cc:750
 msgid "Toggle no information"
 msgstr ""
 
-#: kptview.cc:774
-msgid "Export Gantt"
-msgstr "गान्ट निर्यात गर्नुहोस्"
-
-#: kptview.cc:825
+#: kptview.cc:812
 #, fuzzy
 msgid "Edit resource breakdown structure."
 msgstr "कार्य भङ्ग गर्ने संरचना"
 
-#: kptview.cc:842
+#: kptview.cc:829
 #, fuzzy
 msgid "Edit work breakdown structure"
 msgstr "कार्य भङ्ग गर्ने संरचना"
 
-#: kptview.cc:868 kptview.cc:1029
+#: kptview.cc:855 kptview.cc:1016
 msgid "Accounts"
 msgstr "खाता"
 
-#: kptview.cc:869
+#: kptview.cc:856
 #, fuzzy
 msgid "Edit cost breakdown structure."
 msgstr "कार्य भङ्ग गर्ने संरचना"
 
-#: kptview.cc:882
+#: kptview.cc:869
 msgid "Work & Vacation"
 msgstr ""
 
-#: kptview.cc:883
+#: kptview.cc:870
 msgid "Edit working- and vacation days for resources"
 msgstr ""
 
-#: kptview.cc:898
+#: kptview.cc:885
 #, fuzzy
 msgid "Schedules"
 msgstr "तालिका:"
 
-#: kptview.cc:899
+#: kptview.cc:886
 #, fuzzy
 msgid "Calculate project schedules"
 msgstr "गणना गर्नुहोस्"
 
-#: kptview.cc:917
+#: kptview.cc:904
 msgid "Dependencies"
 msgstr ""
 
-#: kptview.cc:918
+#: kptview.cc:905
 msgid "Edit task dependenies"
 msgstr ""
 
-#: kptview.cc:947
+#: kptview.cc:934
 #, fuzzy
 msgid "Pert"
 msgstr "प्रतिवेदन"
 
-#: kptview.cc:948
+#: kptview.cc:935
 msgid "Edit task dependencies"
 msgstr ""
 
-#: kptview.cc:961
+#: kptview.cc:948
 msgid "Pert Result"
 msgstr ""
 
-#: kptview.cc:962
+#: kptview.cc:949
 msgid "PERT/CPM analizes"
 msgstr ""
 
-#: kptview.cc:974
+#: kptview.cc:961
 #, fuzzy
 msgid "Task Status"
 msgstr "कार्य सेटिङ"
 
-#: kptview.cc:975
+#: kptview.cc:962
 msgid "View task progress information"
 msgstr ""
 
-#: kptview.cc:989
+#: kptview.cc:976
 msgid "Gantt"
 msgstr "गान्ट"
 
-#: kptview.cc:990
+#: kptview.cc:977
 msgid "View gantt chart"
 msgstr ""
 
-#: kptview.cc:1014
+#: kptview.cc:1001
 #, fuzzy
 msgid "View resource information"
 msgstr "सम्बन्ध परिमार्जन गर्नुहोस्"
 
-#: kptview.cc:1030
+#: kptview.cc:1017
 #, fuzzy
 msgid "View planned cost"
 msgstr "प्रयास"
 
-#: kptview.cc:1042
+#: kptview.cc:1029
 #, fuzzy
 msgid "Tasks by resources"
 msgstr "संसाधन मानाङ्कन गर्नुहोस्:"
 
-#: kptview.cc:1043
+#: kptview.cc:1030
 msgid "View task status per resource"
 msgstr ""
 
-#: kptview.cc:1505
+#: kptview.cc:1492
 #, fuzzy, qt-format
 msgid "%1: Calculating..."
 msgstr "गणना"
 
-#: kptview.cc:1508
+#: kptview.cc:1495
 #, fuzzy, qt-format
 msgid "Calculate %1"
 msgstr "गणना गर्नुहोस्"
 
-#: kptview.cc:1512
+#: kptview.cc:1499
 #, fuzzy, qt-format
 msgid "%1: Calculating done"
 msgstr "गणना"
 
-#: kptview.cc:1522
+#: kptview.cc:1509
 #, fuzzy, qt-format
 msgid "Add Schedule %1"
 msgstr "तालिका:"
 
-#: kptview.cc:1531
+#: kptview.cc:1518
 #, fuzzy, qt-format
 msgid "Delete Schedule %1"
 msgstr "तालिका (%1)"
 
-#: kptview.cc:1603
+#: kptview.cc:1590
 msgid "Add Milestone"
 msgstr "माइलस्टोन थप्नुहोस्"
 
-#: kptview.cc:1825
+#: kptview.cc:1812
 #, fuzzy
 msgid "Delete Tasks"
 msgstr "कार्य मेट्नुहोस्"
 
-#: kptview.cc:1914
+#: kptview.cc:1901
 msgid "Move Task Up"
 msgstr "कार्य माथि सार्नुहोस्"
 
-#: kptview.cc:1935
+#: kptview.cc:1922
 msgid "Move Task Down"
 msgstr "कार्य तल सार्नुहोस्"
 
-#: kptview.cc:1974
+#: kptview.cc:1961
 msgid "Delete Relation"
 msgstr "सम्बन्ध मेट्नुहोस्"
 
-#: kptview.cc:2017
+#: kptview.cc:2004
 #, fuzzy
 #| msgid "Delete Task"
 msgid "Delete Task Dependency"
 msgstr "कार्य मेट्नुहोस्"
 
-#: kptview.cc:2077
+#: kptview.cc:2049
 #, fuzzy
 msgid "Delete Resource"
 msgstr "संसाधन"
 
-#: kptview.cc:2082
+#: kptview.cc:2054
 #, fuzzy
 msgid "Delete Resourcegroup"
 msgstr "संसाधन समूह"
 
-#: kptview.cc:2116
+#: kptview.cc:2088
 #, fuzzy
 msgid "Delete Resource Objects"
 msgstr "संसाधन सेटिङ"
 
-#: kptview.cc:2232 kptview.cc:2293
+#: kptview.cc:2204 kptview.cc:2265
 msgid "Documents"
 msgstr ""
 
-#: kptview.cc:2299
+#: kptview.cc:2271
 msgid "Insert Document"
 msgstr ""
 
-#: kptview.cc:2396
+#: kptview.cc:2368
 msgid "Modify Name"
 msgstr "नाम परिमार्जन गर्नुहोस्"
 
@@ -3053,6 +2979,62 @@ msgstr "(c) 1998-2006, केडीई प्लाटो समूह"
 #: kptaboutdata.h:43
 msgid "Application icon for kplato"
 msgstr "केडीई प्लाटो का लागि प्रतिमा अनुप्रयोग"
+
+#~ msgid "From: %1"
+#~ msgstr "बाट: %1"
+
+#~ msgid "To: %1"
+#~ msgstr "लाई: %1"
+
+#~ msgid "Lag:  %1"
+#~ msgstr "ल्याग:  %1"
+
+#~ msgctxt "Work Breakdown Structure"
+#~ msgid "WBS"
+#~ msgstr "WBS"
+
+#~ msgid "Name: %1"
+#~ msgstr "नाम: %1"
+
+#~ msgid "Start: %1"
+#~ msgstr "सुरुआत: %1"
+
+#~ msgid "End: %1"
+#~ msgstr "अन्त्य: %1"
+
+#~ msgid "Completion: %1%"
+#~ msgstr "समाप्ति: %1%"
+
+#~ msgid "Float: %1"
+#~ msgstr "उत्प्लावन: %1"
+
+#~ msgid "Critical path"
+#~ msgstr "असामान्य बाटो"
+
+#~ msgid "Critical"
+#~ msgstr "असामान्य"
+
+#~ msgid "No resource assigned"
+#~ msgstr "संसाधन मानाङ्कन गरिएको छैन"
+
+#~ msgid "Scheduling conflict"
+#~ msgstr "तालिकिकरणमा द्वन्द"
+
+#~ msgid "Requested effort could not be met"
+#~ msgstr "अनुरोध गरे अनुरुप हुन सकेन"
+
+#~ msgctxt "arg: list of resources"
+#~ msgid "Resource overbooked: %1"
+#~ msgstr "संसाधन बढि संरक्षण भयो: %1"
+
+#~ msgid "Time: %1"
+#~ msgstr "समय: %1"
+
+#~ msgid "Cannot link these nodes"
+#~ msgstr "यी नोड लिङ्क गर्न सकिदैन"
+
+#~ msgid "Export Gantt"
+#~ msgstr "गान्ट निर्यात गर्नुहोस्"
 
 #, fuzzy
 #~ msgid "Calendars"
