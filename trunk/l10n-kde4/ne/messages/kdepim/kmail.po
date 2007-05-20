@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-19 05:50+0200\n"
+"POT-Creation-Date: 2007-05-20 05:48+0200\n"
 "PO-Revision-Date: 2007-02-12 16:41+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2934,7 +2934,7 @@ msgstr ""
 "फाइल %1 लेख्न सकेन:\n"
 "\"%2\" विस्तृत त्रुटि विवरण हो ।"
 
-#: filterlogdlg.cpp:272 kmcommands.cpp:2680 kmcommands.cpp:2705
+#: filterlogdlg.cpp:272 kmcommands.cpp:2581 kmcommands.cpp:2606
 #: kmmainwidget.cpp:1779 kmmainwidget.cpp:1796 urlhandlermanager.cpp:438
 msgid "KMail Error"
 msgstr "केडीई मेल त्रुटि"
@@ -3095,8 +3095,7 @@ msgstr "%2 %3 मध्ये %1 प्रयोग भयो"
 msgid "Select Folder"
 msgstr "फोल्डर चयन गर्नुहोस्"
 
-#: folderrequester.cpp:104 kmcommands.cpp:1811 kmfoldermgr.cpp:37
-#: kmfoldertree.cpp:564
+#: folderrequester.cpp:104 kmfoldermgr.cpp:37 kmfoldertree.cpp:564
 msgid "Local Folders"
 msgstr "स्थानीय फोल्डर"
 
@@ -3136,7 +3135,7 @@ msgid "Unknown"
 msgstr "अज्ञात"
 
 #: headeritem.cpp:175 headerstyle.cpp:140 headerstyle.cpp:238
-#: headerstyle.cpp:446 headerstyle.cpp:632 kmmainwidget.cpp:1012
+#: headerstyle.cpp:456 headerstyle.cpp:642 kmmainwidget.cpp:1012
 msgid "No Subject"
 msgstr "कुनै विषयवस्तु छैन"
 
@@ -3160,27 +3159,27 @@ msgstr "स्थिति:"
 msgid "Any Status"
 msgstr "कुनै पनि स्थिति"
 
-#: headerstyle.cpp:169 headerstyle.cpp:296 headerstyle.cpp:654
+#: headerstyle.cpp:169 headerstyle.cpp:296 headerstyle.cpp:664
 msgid "[vCard]"
 msgstr "[vCard]"
 
-#: headerstyle.cpp:174 headerstyle.cpp:314 headerstyle.cpp:679
+#: headerstyle.cpp:174 headerstyle.cpp:314 headerstyle.cpp:689
 msgid "CC: "
 msgstr "बोधार्थ प्रतिलिपि: "
 
-#: headerstyle.cpp:177 headerstyle.cpp:318 headerstyle.cpp:686
+#: headerstyle.cpp:177 headerstyle.cpp:318 headerstyle.cpp:696
 msgid "BCC: "
 msgstr "गुप्त बोधार्थ प्रतिलिपि: "
 
-#: headerstyle.cpp:272 headerstyle.cpp:692
+#: headerstyle.cpp:272 headerstyle.cpp:702
 msgid "Date: "
 msgstr "मिति: "
 
-#: headerstyle.cpp:292 headerstyle.cpp:646
+#: headerstyle.cpp:292 headerstyle.cpp:656
 msgid "From: "
 msgstr "यसबाट: "
 
-#: headerstyle.cpp:310 headerstyle.cpp:672
+#: headerstyle.cpp:310 headerstyle.cpp:682
 msgid "To: "
 msgstr "यसलाई: "
 
@@ -3188,39 +3187,52 @@ msgstr "यसलाई: "
 msgid "Reply to: "
 msgstr "यसलाई जवाफ दिनुहोस्: "
 
-#: headerstyle.cpp:412
+#: headerstyle.cpp:416
 #, fuzzy, qt-format
 msgid ""
 "%1% probability of being spam with confidence %3%.\n"
 "\n"
 "Full report:\n"
 "Probability=%2\n"
-" Confidence=%4"
+"Confidence=%4"
 msgstr ""
 "स्पाम हुने %1% सम्भाव्यता ।\n"
 "\n"
 "पूरा प्रतिवेदन:\n"
 "%2"
 
-#: headerstyle.cpp:616
+#: headerstyle.cpp:421
+#, fuzzy, qt-format
+msgid ""
+"%1% probability of being spam.\n"
+"\n"
+"Full report:\n"
+"%2"
+msgstr ""
+"स्पाम हुने %1% सम्भाव्यता ।\n"
+"\n"
+"पूरा प्रतिवेदन:\n"
+"%2"
+
+#: headerstyle.cpp:626
 msgid "Launch IM"
 msgstr "IM सुरुआत गर्नुहोस्"
 
-#: headerstyle.cpp:649
+#: headerstyle.cpp:659
 #, qt-format
 msgid "(resent from %1)"
 msgstr "(%1 बाट पुन: पठाइएको)"
 
-#: headerstyle.cpp:701
+#: headerstyle.cpp:711
 #, fuzzy
 msgid "User-Agent: "
 msgstr "जरुरी"
 
-#: headerstyle.cpp:710
+#: headerstyle.cpp:720
 msgid "X-Mailer: "
 msgstr ""
 
-#: headerstyle.cpp:729
+#: headerstyle.cpp:739
 msgid "Spam Status:"
 msgstr "स्पाम स्थिति:"
 
@@ -4516,98 +4528,90 @@ msgstr "%2 मध्ये %1 सन्देश फिल्टर हुँद
 msgid "Not enough free disk space?"
 msgstr "के पर्याप्त डिस्क रिक्तस्थान छैन?"
 
-#: kmcommands.cpp:1863 kmfoldertree.cpp:1913
-msgid "Move to This Folder"
-msgstr "यो फोल्डरमा सार्नुहोस्"
-
-#: kmcommands.cpp:1865 kmfoldertree.cpp:1915
-msgid "Copy to This Folder"
-msgstr "यो फोल्डरमा प्रतिलिपि गर्नुहोस्"
-
-#: kmcommands.cpp:2104
+#: kmcommands.cpp:2005
 msgid "Moving messages"
 msgstr "सन्देश सार्दैछ"
 
-#: kmcommands.cpp:2104
+#: kmcommands.cpp:2005
 msgid "Deleting messages"
 msgstr "सन्देश मेट्दैछ"
 
-#: kmcommands.cpp:2381
+#: kmcommands.cpp:2282
 msgid "Opening URL..."
 msgstr "यूआरएल खोल्दैछ..."
 
-#: kmcommands.cpp:2388
+#: kmcommands.cpp:2289
 #, qt-format
 msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
 msgstr "<qt>के तपाईँ वास्तवमै <b>%1</b> कार्यान्वयन गर्न चाहनुहुन्छ?</qt>"
 
-#: kmcommands.cpp:2389
+#: kmcommands.cpp:2290
 msgid "Execute"
 msgstr "कार्यान्वयन गर्नुहोस्"
 
-#: kmcommands.cpp:2470
+#: kmcommands.cpp:2371
 msgid "Found no attachments to save."
 msgstr "बचत गर्न सङ्लग्नता फेला पारेन ।"
 
-#: kmcommands.cpp:2483
+#: kmcommands.cpp:2384
 msgid "Save Attachments To"
 msgstr "यसमा सङ्लग्नता बचत गर्नुहोस्"
 
-#: kmcommands.cpp:2503
+#: kmcommands.cpp:2404
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr "सङ्लग्नता.१"
 
-#: kmcommands.cpp:2531
+#: kmcommands.cpp:2432
 #, qt-format
 msgctxt "filename for the %1-th unnamed attachment"
 msgid "attachment.%1"
 msgstr "सङ्लग्नता.%1"
 
-#: kmcommands.cpp:2570
+#: kmcommands.cpp:2471
 #, qt-format
 msgid "A file named %1 already exists. Do you want to overwrite it?"
 msgstr "%1 नाम गरिएको फाइल पहिलानै अवस्थित छ । के तपाईँ यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: kmcommands.cpp:2572
+#: kmcommands.cpp:2473
 msgid "File Already Exists"
 msgstr "फाइल पहिलानै अवस्थित छ"
 
-#: kmcommands.cpp:2572 kmcommands.cpp:3232
+#: kmcommands.cpp:2473 kmcommands.cpp:3133
 msgid "&Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: kmcommands.cpp:2594
+#: kmcommands.cpp:2495
 #, qt-format
 msgid ""
 "The part %1 of the message is encrypted. Do you want to keep the encryption "
 "when saving?"
 msgstr "सन्देशको %1 भाग गुप्तिकृत गरिएको छ । के तपाईँ बचत गर्दा गुप्तिकरण राख्न चाहनुहुन्छ?"
 
-#: kmcommands.cpp:2596 kmcommands.cpp:2605
+#: kmcommands.cpp:2497 kmcommands.cpp:2506
 msgid "KMail Question"
 msgstr "केडीई मेल प्रश्न"
 
-#: kmcommands.cpp:2596
+#: kmcommands.cpp:2497
 msgid "Keep Encryption"
 msgstr "गुप्तिकरण राख्नुहोस्"
 
-#: kmcommands.cpp:2596 kmcommands.cpp:2605
+#: kmcommands.cpp:2497 kmcommands.cpp:2506
 msgid "Do Not Keep"
 msgstr "नराख्नुहोस्"
 
-#: kmcommands.cpp:2603
+#: kmcommands.cpp:2504
 #, qt-format
 msgid ""
 "The part %1 of the message is signed. Do you want to keep the signature when "
 "saving?"
 msgstr "सन्देशको %1 भाग हस्ताक्षर गरिएको छ । के तपाईँ बचत गर्दा हस्ताक्षर राख्न चाहनुहुन्छ?"
 
-#: kmcommands.cpp:2605
+#: kmcommands.cpp:2506
 msgid "Keep Signature"
 msgstr "हस्ताक्षर राख्नुहोस्"
 
-#: kmcommands.cpp:2677
+#: kmcommands.cpp:2578
 #, qt-format
 msgctxt "%2 is detailed error description"
 msgid ""
@@ -4617,12 +4621,12 @@ msgstr ""
 "फाइल %1 लेख्न सकेन:\n"
 "%2"
 
-#: kmcommands.cpp:2703
+#: kmcommands.cpp:2604
 #, qt-format
 msgid "Could not write the file %1."
 msgstr "फाइल %1 लेख्न सकेन ।"
 
-#: kmcommands.cpp:2927
+#: kmcommands.cpp:2828
 msgid ""
 "There is no Address Book entry for this email address. Add them to the "
 "Address Book and then add instant messaging addresses using your preferred "
@@ -4631,7 +4635,7 @@ msgstr ""
 "त्यहाँ यो इमेल ठेगानाका लागि ठेगाना पुस्तक प्रविष्ट छैन । तिनीहरूलाई ठेगाना पुस्तकमा "
 "थप्नुहोस् र त्यसपछि तपाईँलाई रुचाएको सन्देश क्लाइन्ट प्रयोग गरेर दृष्टान्त ठेगाना थप्नुहोस् ।"
 
-#: kmcommands.cpp:2938
+#: kmcommands.cpp:2839
 #, qt-format
 msgid ""
 "More than one Address Book entry uses this email address:\n"
@@ -4642,7 +4646,7 @@ msgstr ""
 " %1\n"
 " को सँग च्याट गर्ने निर्धारण गर्न सम्भव छैन ।"
 
-#: kmcommands.cpp:3153 kmcomposewin.cpp:5024 objecttreeparser.cpp:1617
+#: kmcommands.cpp:3054 kmcomposewin.cpp:5024 objecttreeparser.cpp:1617
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -4650,15 +4654,15 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डले \"x प्राप्त गर्ने कुञ्जी\" प्रकार्य प्रस्ताव गर्दैन । कृपया यो बग "
 "प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3155 kmcommands.cpp:3160 kmcommands.cpp:3169
-#: kmcommands.cpp:3178 kmcommands.cpp:3196 kmcommands.cpp:3207
-#: kmcommands.cpp:3264 kmcomposewin.cpp:5026 kmcomposewin.cpp:5031
+#: kmcommands.cpp:3056 kmcommands.cpp:3061 kmcommands.cpp:3070
+#: kmcommands.cpp:3079 kmcommands.cpp:3097 kmcommands.cpp:3108
+#: kmcommands.cpp:3165 kmcomposewin.cpp:5026 kmcomposewin.cpp:5031
 #: kmcomposewin.cpp:5040 messagecomposer.cpp:580 messagecomposer.cpp:588
 #: messagecomposer.cpp:602 objecttreeparser.cpp:1623
 msgid "Chiasmus Backend Error"
 msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
 
-#: kmcommands.cpp:3166 kmcomposewin.cpp:5037 objecttreeparser.cpp:1629
+#: kmcommands.cpp:3067 kmcomposewin.cpp:5037 objecttreeparser.cpp:1629
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -4666,25 +4670,25 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x प्राप्ति कुञ्जी \" प्रकार्यले स्ट्रिङ सूची "
 "फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3175 kmcomposewin.cpp:5046 objecttreeparser.cpp:1637
+#: kmcommands.cpp:3076 kmcomposewin.cpp:5046 objecttreeparser.cpp:1637
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 "कुञ्जी फेला परेको छैन । कृपया व्यतिक्रम कन्फिगरेसनमा वैध कुञ्जी बाटो सेट भएको जाँच गर्नुहोस् ।"
 
-#: kmcommands.cpp:3182 objecttreeparser.cpp:1644
+#: kmcommands.cpp:3083 objecttreeparser.cpp:1644
 msgid "Chiasmus Decryption Key Selection"
 msgstr "गुप्तिकरण व्यतिक्रम कुञ्जी चयन"
 
-#: kmcommands.cpp:3194 objecttreeparser.cpp:1656
+#: kmcommands.cpp:3095 objecttreeparser.cpp:1656
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 "व्यतिक्रम ब्याकइन्डले \"x-decrypt\" प्रकार्य प्रस्ताव गर्दैन । कृपया बग प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3205 objecttreeparser.cpp:1664
+#: kmcommands.cpp:3106 objecttreeparser.cpp:1664
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
@@ -4692,11 +4696,11 @@ msgstr ""
 "\"x-decrypt\" प्रकार्यले अपेक्षित परिमिति स्वीकार गर्दैन । कृपया यो बग प्रतिवेदन गर्नुहोस् "
 "।"
 
-#: kmcommands.cpp:3213 kmcommands.cpp:3256 objecttreeparser.cpp:1670
+#: kmcommands.cpp:3114 kmcommands.cpp:3157 objecttreeparser.cpp:1670
 msgid "Chiasmus Decryption Error"
 msgstr "ब्यतिक्रम गुप्तिकरण उल्टाउने त्रुटि"
 
-#: kmcommands.cpp:3229
+#: kmcommands.cpp:3130
 #, qt-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
@@ -4704,11 +4708,11 @@ msgstr ""
 "\"%1\" नाम गरिएको फाइल पहिला नै अवस्थित छ । के तपाईँ यसमा अधिलेखन गर्न निश्चिन्त "
 "हुनुहुन्छ?"
 
-#: kmcommands.cpp:3231
+#: kmcommands.cpp:3132
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुभयो?"
 
-#: kmcommands.cpp:3261 objecttreeparser.cpp:1676
+#: kmcommands.cpp:3162 objecttreeparser.cpp:1676
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -6515,12 +6519,12 @@ msgstr ""
 "एक पटक अदृश्य हुनेछ । तपाईँले यो फोल्डर पुन: हटाउन चाहेमा, यसलाई देख्न समर्थ हुन समूहगत "
 "फोल्डर अस्थायी रुपमा लुकाउने अक्षम पार्नु पर्छ ।"
 
-#: kmfolderdir.cpp:187
+#: kmfolderdir.cpp:188
 #, qt-format
 msgid "<qt>Cannot enter folder <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> फोल्डर प्रविष्ट गर्न सकिदैन ।</qt>"
 
-#: kmfolderdir.cpp:195
+#: kmfolderdir.cpp:196
 #, qt-format
 msgid "<qt>Folder <b>%1</b> is unreadable.</qt>"
 msgstr "<qt>फोल्डर <b>%1</b> पढ्नयोग्य छैन ।</qt>"
@@ -6892,27 +6896,35 @@ msgstr "नपढ्नुहोस्"
 msgid "Total"
 msgstr "कूल"
 
-#: kmfoldertree.cpp:1969
+#: kmfoldertree.cpp:1915
+msgid "Move to This Folder"
+msgstr "यो फोल्डरमा सार्नुहोस्"
+
+#: kmfoldertree.cpp:1917
+msgid "Copy to This Folder"
+msgstr "यो फोल्डरमा प्रतिलिपि गर्नुहोस्"
+
+#: kmfoldertree.cpp:1971
 #, fuzzy, qt-format
 msgid ""
 "<qt>Cannot move or copy folder <b>%1</b> here because a folder with the same "
 "name already exists.</qt>"
 msgstr "<qt>फोल्डर <b>%1</b> सिर्जना गर्न असफल, फोल्डर पहिलानै अवस्थित छ ।</qt>"
 
-#: kmfoldertree.cpp:1978
+#: kmfoldertree.cpp:1980
 #, fuzzy, qt-format
 msgid ""
 "<qt>Cannot move or copy folder <b>%1</b> because it is not completely copied "
 "itself.</qt>"
 msgstr "<qt>फोल्डर <b>%1</b> तलको आफ्नो सब-फोल्डरमा सार्न सकिदैन ।</qt>"
 
-#: kmfoldertree.cpp:1986
+#: kmfoldertree.cpp:1988
 #, fuzzy, qt-format
 msgid ""
 "<qt>Cannot move or copy folder <b>%1</b> into a subfolder below itself.</qt>"
 msgstr "<qt>फोल्डर <b>%1</b> तलको आफ्नो सब-फोल्डरमा सार्न सकिदैन ।</qt>"
 
-#: kmfoldertree.cpp:2027
+#: kmfoldertree.cpp:2029
 msgid "Moving the selected folders is not possible"
 msgstr ""
 
