@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-29 05:51+0200\n"
+"POT-Creation-Date: 2007-05-30 05:41+0200\n"
 "PO-Revision-Date: 2007-01-17 16:12+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -126,11 +126,11 @@ msgstr "पर्दा साइज"
 msgid "Orientation"
 msgstr "अज्ञात अभिमुखिकरण"
 
-#: krandrtray.cpp:181
+#: krandrtray.cpp:182
 msgid "Refresh Rate"
 msgstr "ताजा पार्ने दर"
 
-#: krandrtray.cpp:250
+#: krandrtray.cpp:251
 msgid "Configure Display"
 msgstr "प्रदर्शन कन्फिगर गर्नुहोस्"
 
@@ -161,24 +161,19 @@ msgstr "मर्मतकर्ता"
 msgid "Many fixes"
 msgstr "थुप्रै समाधानहरू"
 
-#: randrdisplay.cpp:44
-#, fuzzy, qt-format
-msgid "X Resize and Rotate extension version %1.%2"
-msgstr "प्रणाली ट्रे अनुप्रयोग रिसाइज र परिक्रमण गर्नुहोस्"
-
-#: randrscreen.cpp:162
+#: oldrandrscreen.cpp:144
 msgid "Confirm Display Setting Change"
 msgstr "प्रदर्शन सेटिङ परिवर्तन यकिन गर्नुहोस्"
 
-#: randrscreen.cpp:166
+#: oldrandrscreen.cpp:148
 msgid "&Accept Configuration"
 msgstr "कन्फिगरेसन स्वीकार गर्नुहोस्"
 
-#: randrscreen.cpp:167
+#: oldrandrscreen.cpp:149
 msgid "&Return to Previous Configuration"
 msgstr "अघिल्लो कन्फिगरेसनमा फर्कनुहोस्"
 
-#: randrscreen.cpp:169
+#: oldrandrscreen.cpp:151
 msgid ""
 "Your screen orientation, size and refresh rate have been changed to the "
 "requested settings. Please indicate whether you wish to keep this "
@@ -189,7 +184,7 @@ msgstr ""
 "तपाईँले यो कन्फिगरेसन राख्न चाहनुहुन्छ की हुदैन निर्दिष्ट गर्नुहोस् । १५ सेकेन्डको प्रदर्शन पछि "
 "तपाईँको अघिल्लो सेटिङमा फर्किन्छ ।"
 
-#: randrscreen.cpp:199
+#: oldrandrscreen.cpp:181
 #, qt-format
 msgid ""
 "New configuration:\n"
@@ -200,7 +195,7 @@ msgstr ""
 "रिजोल्युसन: %1 x %2\n"
 "अभिमुखिकरण: %3"
 
-#: randrscreen.cpp:204
+#: oldrandrscreen.cpp:186
 #, qt-format
 msgid ""
 "New configuration:\n"
@@ -213,79 +208,84 @@ msgstr ""
 "अभिमुखिकरण: %3\n"
 "ताजा दर: %4"
 
-#: randrscreen.cpp:233 randrscreen.cpp:250
-msgid "Normal"
-msgstr "साधारण"
-
-#: randrscreen.cpp:235
-msgid "Left (90 degrees)"
-msgstr "बायाँ (९० डिग्री)"
-
-#: randrscreen.cpp:237
-msgid "Upside-down (180 degrees)"
-msgstr "माथि-तल (१८० डिग्री)"
-
-#: randrscreen.cpp:239
-msgid "Right (270 degrees)"
-msgstr "दायाँ (२७० डिग्री)"
-
-#: randrscreen.cpp:241
-msgid "Mirror horizontally"
-msgstr "तेर्सो ऐना"
-
-#: randrscreen.cpp:243
-msgid "Mirror vertically"
-msgstr "ठाडो ऐना"
-
-#: randrscreen.cpp:245 randrscreen.cpp:276
-msgid "Unknown orientation"
-msgstr "अज्ञात अभिमुखिकरण"
-
-#: randrscreen.cpp:252
-msgid "Rotated 90 degrees counterclockwise"
-msgstr "९० डिग्री घडिको विपरित दिशामा घुमाइयो"
-
-#: randrscreen.cpp:254
-msgid "Rotated 180 degrees counterclockwise"
-msgstr "१८० डिग्री घडिको विपरित दिशामा घुमाइयो"
-
-#: randrscreen.cpp:256
-msgid "Rotated 270 degrees counterclockwise"
-msgstr "२७० डिग्री घडिको विपरित दिशामा घुमाइयो"
-
-#: randrscreen.cpp:261
-msgid "Mirrored horizontally and vertically"
-msgstr "तेर्सो र ठाडो ऐना राखियो"
-
-#: randrscreen.cpp:263
-msgid "mirrored horizontally and vertically"
-msgstr "तेर्सो र ठाडो ऐना राखियो"
-
-#: randrscreen.cpp:266
-msgid "Mirrored horizontally"
-msgstr "तेर्सो पारिएको ऐना"
-
-#: randrscreen.cpp:268
-msgid "mirrored horizontally"
-msgstr "तेर्सो पारिएको ऐना"
-
-#: randrscreen.cpp:271
-msgid "Mirrored vertically"
-msgstr "ठाडो पारिएको ऐना"
-
-#: randrscreen.cpp:273
-msgid "mirrored vertically"
-msgstr "ठाडो पारिएको ऐना"
-
-#: randrscreen.cpp:278
-msgid "unknown orientation"
-msgstr "अज्ञात अभिमुखिकरण"
-
-#: randrscreen.cpp:402 randrscreen.cpp:407
+#: oldrandrscreen.cpp:291 oldrandrscreen.cpp:296
 #, qt-format
 msgctxt "Refresh rate in Hertz (Hz)"
 msgid "%1 Hz"
 msgstr "%1 Hz"
+
+#: randr.cpp:12 randr.cpp:29
+msgid "Normal"
+msgstr "साधारण"
+
+#: randr.cpp:14
+msgid "Left (90 degrees)"
+msgstr "बायाँ (९० डिग्री)"
+
+#: randr.cpp:16
+msgid "Upside-down (180 degrees)"
+msgstr "माथि-तल (१८० डिग्री)"
+
+#: randr.cpp:18
+msgid "Right (270 degrees)"
+msgstr "दायाँ (२७० डिग्री)"
+
+#: randr.cpp:20
+msgid "Mirror horizontally"
+msgstr "तेर्सो ऐना"
+
+#: randr.cpp:22
+msgid "Mirror vertically"
+msgstr "ठाडो ऐना"
+
+#: randr.cpp:24 randr.cpp:55
+msgid "Unknown orientation"
+msgstr "अज्ञात अभिमुखिकरण"
+
+#: randr.cpp:31
+msgid "Rotated 90 degrees counterclockwise"
+msgstr "९० डिग्री घडिको विपरित दिशामा घुमाइयो"
+
+#: randr.cpp:33
+msgid "Rotated 180 degrees counterclockwise"
+msgstr "१८० डिग्री घडिको विपरित दिशामा घुमाइयो"
+
+#: randr.cpp:35
+msgid "Rotated 270 degrees counterclockwise"
+msgstr "२७० डिग्री घडिको विपरित दिशामा घुमाइयो"
+
+#: randr.cpp:40
+msgid "Mirrored horizontally and vertically"
+msgstr "तेर्सो र ठाडो ऐना राखियो"
+
+#: randr.cpp:42
+msgid "mirrored horizontally and vertically"
+msgstr "तेर्सो र ठाडो ऐना राखियो"
+
+#: randr.cpp:45
+msgid "Mirrored horizontally"
+msgstr "तेर्सो पारिएको ऐना"
+
+#: randr.cpp:47
+msgid "mirrored horizontally"
+msgstr "तेर्सो पारिएको ऐना"
+
+#: randr.cpp:50
+msgid "Mirrored vertically"
+msgstr "ठाडो पारिएको ऐना"
+
+#: randr.cpp:52
+msgid "mirrored vertically"
+msgstr "ठाडो पारिएको ऐना"
+
+#: randr.cpp:57
+msgid "unknown orientation"
+msgstr "अज्ञात अभिमुखिकरण"
+
+#: randrdisplay.cpp:41
+#, fuzzy, qt-format
+msgid "X Resize and Rotate extension version %1.%2"
+msgstr "प्रणाली ट्रे अनुप्रयोग रिसाइज र परिक्रमण गर्नुहोस्"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
