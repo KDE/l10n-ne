@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kbattleship\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-06-13 17:42+0200\n"
+"POT-Creation-Date: 2007-06-21 05:10+0200\n"
 "PO-Revision-Date: 2007-01-23 14:46+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -14,19 +14,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: generalcontroller.cpp:47 gamechooser.cpp:312
+#: generalcontroller.cpp:47 gamechooser.cpp:314
 #, fuzzy
 #| msgid "Computer Player"
 msgid "Computer"
 msgstr "कम्प्युटर खेलाडी"
 
-#: main.cpp:27
+#: main.cpp:25
 msgid "KBattleship"
 msgstr "केडीई लडाकू पानीजहाज"
 
-#: main.cpp:27
+#: main.cpp:25
 msgid "The KDE Battleship clone"
 msgstr "केडीई लडाकू पानीजहाज क्लोन"
+
+#: simplemenu.cpp:25
+#, fuzzy
+#| msgid "S&ingle Player"
+msgid "Single player"
+msgstr "एकल खेलाडी"
+
+#: simplemenu.cpp:26
+msgid "Host network game"
+msgstr ""
+
+#: simplemenu.cpp:27
+#, fuzzy
+#| msgid "Connect to Server"
+msgid "Connect to network game"
+msgstr "सर्भरमा जडान गर्नुहोस्"
+
+#: networkdialog.cpp:24
+#, fuzzy
+#| msgid "&Nick name:"
+msgid "&Nickname:"
+msgstr "उपनाम:"
+
+#: networkdialog.cpp:37
+msgid "&Hostname:"
+msgstr ""
+
+#: networkdialog.cpp:53
+msgid "&Port:"
+msgstr "पोर्ट:"
 
 #: playfield.cpp:59
 msgid "Shots"
@@ -40,67 +70,87 @@ msgstr "हान्नुहोस्"
 msgid "Misses"
 msgstr ""
 
-#: playfield.cpp:197
+#: playfield.cpp:195
 msgid "You win!"
 msgstr ""
 
-#: playfield.cpp:200
+#: playfield.cpp:198
 #, fuzzy
 #| msgid "You lost the game. :("
 msgid "You lose."
 msgstr "तपाईँले खेल हार्नु भयो । :("
 
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 9
+#: rc.cpp:3
+msgid "Default hostname for multiplayer games."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 13
+#: rc.cpp:6
+msgid "Default port for multiplayer games."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 19
+#: rc.cpp:9
+msgid "User nickname."
+msgstr ""
+
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 6
-#: rc.cpp:3
+#: rc.cpp:12
 #, fuzzy
 msgid "&Game"
 msgstr "खेल नाम:"
 
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 10
-#: rc.cpp:6
+#: rc.cpp:15
 msgid "&Settings"
 msgstr ""
 
-#: rc.cpp:7
+#: rc.cpp:16
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Mahesh Subedi"
 
-#: rc.cpp:8
+#: rc.cpp:17
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "submanesh@gmail.com"
 
-#: gamechooser.cpp:133
+#: gamechooser.cpp:135
 msgid "Easy"
 msgstr ""
 
-#: gamechooser.cpp:136
+#: gamechooser.cpp:138
 msgid "Medium"
 msgstr ""
 
-#: gamechooser.cpp:139
+#: gamechooser.cpp:141
 msgid "Hard"
 msgstr ""
 
-#: gamechooser.cpp:190
+#: gamechooser.cpp:192
 msgid "Wait for a connection"
 msgstr ""
 
-#: gamechooser.cpp:193
+#: gamechooser.cpp:195
 #, fuzzy
 #| msgid "&Connect to server"
 msgid "Connect to a server"
 msgstr "सर्भरमा जडान गर्नुहोस्"
 
-#: gamechooser.cpp:308
-msgid "You"
-msgstr ""
+#: gamechooser.cpp:310
+#, fuzzy
+#| msgid "LAN games:"
+msgid "Local game"
+msgstr "LAN खेल:"
 
-#: gamechooser.cpp:316
-msgid "Over the network"
+#: gamechooser.cpp:318
+msgid "Network play"
 msgstr ""
 
 #: kwelcomescreen/test.cpp:32
@@ -115,16 +165,6 @@ msgstr ""
 msgid "Test class for KWelcomeScreen"
 msgstr ""
 
-#: mainwindow.cpp:53
-#, fuzzy
-#| msgid "Start Server"
-msgid "Start Ser&ver"
-msgstr "सर्भर सुरु गर्नुहोस्"
-
-#: mainwindow.cpp:57
-msgid "&Connect"
-msgstr "जडान गर्नुहोस्"
-
 #: playerentity.cpp:166
 #, qt-format
 msgid "Your opponent is now known as %1"
@@ -136,6 +176,14 @@ msgid ""
 "to the rules enforced by old clients, ships cannot be placed adjacent to one "
 "another."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Start Server"
+#~ msgid "Start Ser&ver"
+#~ msgstr "सर्भर सुरु गर्नुहोस्"
+
+#~ msgid "&Connect"
+#~ msgstr "जडान गर्नुहोस्"
 
 #~ msgid "     Player 1: %1     "
 #~ msgstr "     खेलाडी १: %1     "
@@ -283,9 +331,6 @@ msgstr ""
 #~ msgid "The connection broke down!"
 #~ msgstr "जडान विच्छेद भयो!"
 
-#~ msgid "Connect to Server"
-#~ msgstr "सर्भरमा जडान गर्नुहोस्"
-
 #~ msgid "Connection to client lost. Aborting the game."
 #~ msgstr "क्लाइन्टसँगको जडान हरायो । खेल परित्याग गर्दैछ ।"
 
@@ -390,20 +435,11 @@ msgstr ""
 #~ msgid "Chat Dialog:"
 #~ msgstr "च्याट संवाद:"
 
-#~ msgid "&Nick name:"
-#~ msgstr "उपनाम:"
-
 #~ msgid "Enter a name that identifies you in the game"
 #~ msgstr "खेलमा तपाईँलाई परिचित गर्ने नाम प्रविष्ट गर्नुहोस्"
 
 #~ msgid "&Server:"
 #~ msgstr "सर्भर:"
-
-#~ msgid "LAN games:"
-#~ msgstr "LAN खेल:"
-
-#~ msgid "&Port:"
-#~ msgstr "पोर्ट:"
 
 #~ msgid "Choose a port to connect to"
 #~ msgstr "जडान गर्न पोर्ट छनोट गर्नुहोस्"
@@ -452,9 +488,6 @@ msgstr ""
 
 #~ msgid "Shows all water shots"
 #~ msgstr "सबै पानी गोली हानेको देखाउदछ"
-
-#~ msgid "S&ingle Player"
-#~ msgstr "एकल खेलाडी"
 
 #~ msgid "S&ingle game"
 #~ msgstr "एकल खेल"
