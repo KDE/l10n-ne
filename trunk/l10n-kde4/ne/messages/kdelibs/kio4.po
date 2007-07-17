@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-16 05:39+0200\n"
+"POT-Creation-Date: 2007-07-17 06:00+0200\n"
 "PO-Revision-Date: 2007-02-11 16:43+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kio/netaccess.cpp:82
+#: kio/netaccess.cpp:105
 #, qt-format
 msgid "File '%1' is not readable"
 msgstr "'%1' फाइल पढ्न योग्य छैन"
 
-#: kio/netaccess.cpp:407
+#: kio/netaccess.cpp:430
 #, qt-format
 msgid "ERROR: Unknown protocol '%1'"
 msgstr "ERROR: अज्ञात प्रोटोकल '%1'"
@@ -93,7 +93,7 @@ msgstr "माउन्ट बिन्दु:"
 msgid "Unmounting"
 msgstr "अनमाउन्ट गर्दै"
 
-#: kio/job.cpp:1831 kio/paste.cpp:62 kio/copyjob.cpp:1036 kio/copyjob.cpp:1540
+#: kio/job.cpp:1831 kio/paste.cpp:62 kio/copyjob.cpp:1101 kio/copyjob.cpp:1605
 #: kio/global.cpp:698
 msgid "File Already Exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
@@ -106,11 +106,11 @@ msgstr "सबै तस्वीर"
 msgid "Data format:"
 msgstr "डेटा ढाँचा:"
 
-#: kio/slaveinterface.cpp:522
+#: kio/slaveinterface.cpp:499
 msgid "The peer SSL certificate appears to be corrupt."
 msgstr "जोडी SSL प्रमाणपत्र बिग्रेको देखिन्छ ।"
 
-#: kio/slaveinterface.cpp:522 kio/tcpslavebase.cpp:753
+#: kio/slaveinterface.cpp:499 kio/tcpslavebase.cpp:753
 msgid "SSL"
 msgstr "SSL"
 
@@ -271,7 +271,7 @@ msgstr "'%1' स्रोत फाइल हो"
 msgid "The desktop is offline"
 msgstr ""
 
-#: kio/chmodjob.cpp:157
+#: kio/chmodjob.cpp:200
 #, qt-format
 msgid ""
 "<qt>Could not modify the ownership of file <b>%1</b>. You have insufficient "
@@ -280,15 +280,15 @@ msgstr ""
 "<qt>फाइल <b>%1</b>को स्वामित्व परिमार्जन गर्न सकिदैन । परिवर्तन सम्पादन गर्न तपाईँसँग "
 "फाइलमा पर्याप्त पँहुच छैन ।</qt>"
 
-#: kio/chmodjob.cpp:157
+#: kio/chmodjob.cpp:200
 msgid "&Skip File"
 msgstr "फाइल फड्काउनुहोस्"
 
-#: kio/kbuildsycocaprogressdialog.cpp:26
+#: kio/kbuildsycocaprogressdialog.cpp:33
 msgid "Updating System Configuration"
 msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दैछ"
 
-#: kio/kbuildsycocaprogressdialog.cpp:27
+#: kio/kbuildsycocaprogressdialog.cpp:34
 msgid "Updating system configuration."
 msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दै ।"
 
@@ -424,19 +424,19 @@ msgstr "फड्काउनुहोस्"
 msgid "AutoSkip"
 msgstr "स्वत: फड्काउनुहोस्"
 
-#: kio/copyjob.cpp:763 kio/global.cpp:708
+#: kio/copyjob.cpp:828 kio/global.cpp:708
 msgid "Folder Already Exists"
 msgstr "फोल्डर पहिल्यै अवस्थित छ"
 
-#: kio/copyjob.cpp:1036 kio/copyjob.cpp:1540
+#: kio/copyjob.cpp:1101 kio/copyjob.cpp:1605
 msgid "Already Exists as Folder"
 msgstr "फोल्डरको रूपमा पहिल्यै अवस्थित छ"
 
-#: kio/kscan.cpp:42
+#: kio/kscan.cpp:50
 msgid "Acquire Image"
 msgstr "प्राप्त छवि"
 
-#: kio/kscan.cpp:83
+#: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "OCR छवि"
 
@@ -2345,7 +2345,7 @@ msgstr "%1 (%2) मा लिङ्क गर्नुहोस्"
 msgid "Name:"
 msgstr "नाम:"
 
-#: kio/kfileitem.cpp:939 kfile/kpropertiesdialog.cpp:958
+#: kio/kfileitem.cpp:939 kfile/kpropertiesdialog.cpp:973
 msgid "Type:"
 msgstr "प्रकार:"
 
@@ -2354,11 +2354,11 @@ msgstr "प्रकार:"
 msgid "Link to %1 (%2)"
 msgstr "%1 (%2) मा लिङ्क गर्नुहोस्"
 
-#: kio/kfileitem.cpp:948 kfile/kpropertiesdialog.cpp:1006
+#: kio/kfileitem.cpp:948 kfile/kpropertiesdialog.cpp:1021
 msgid "Size:"
 msgstr "साइज:"
 
-#: kio/kfileitem.cpp:953 kfile/kpropertiesdialog.cpp:1069
+#: kio/kfileitem.cpp:953 kfile/kpropertiesdialog.cpp:1084
 msgid "Modified:"
 msgstr "परिमार्जित:"
 
@@ -2375,27 +2375,22 @@ msgstr "अनुमति:"
 msgid "No service implementing %1"
 msgstr "%1 सेवा कार्यान्वयन छैन"
 
-#: kio/slave.cpp:392
-#, qt-format
-msgid "Unable to create io-slave: %1"
-msgstr "io-slave सिर्जना गर्न अक्षम: %1"
-
-#: kio/slave.cpp:432
+#: kio/slave.cpp:406
 #, qt-format
 msgid "Unknown protocol '%1'."
 msgstr "अज्ञात प्रोटोकल '%1' ।"
 
-#: kio/slave.cpp:440
+#: kio/slave.cpp:414
 #, qt-format
 msgid "Can not find io-slave for protocol '%1'."
 msgstr "'%1' प्रोटोकलका लागि io-slave फेला पार्न सकिदैन ।"
 
-#: kio/slave.cpp:459
+#: kio/slave.cpp:433
 #, fuzzy, qt-format
 msgid "Cannot talk to klauncher: %1"
 msgstr "केडीई सुरुआतकर्तासँग कुरा गर्न सकिदैन"
 
-#: kio/slave.cpp:467
+#: kio/slave.cpp:441
 #, qt-format
 msgid ""
 "Unable to create io-slave:\n"
@@ -2404,11 +2399,11 @@ msgstr ""
 "io-slave सिर्जना गर्न अक्षम:\n"
 "केडीई सुरुआतकर्ताले भन्यो: %1"
 
-#: kio/kmimetypechooser.cpp:73 kfile/kpropertiesdialog.cpp:2700
+#: kio/kmimetypechooser.cpp:73 kfile/kpropertiesdialog.cpp:2734
 msgid "Mime Type"
 msgstr "माइम प्रकार"
 
-#: kio/kmimetypechooser.cpp:77 kfile/kpropertiesdialog.cpp:2712
+#: kio/kmimetypechooser.cpp:77 kfile/kpropertiesdialog.cpp:2747
 msgid "Comment"
 msgstr "टिप्पणी"
 
@@ -2423,6 +2418,11 @@ msgstr "सम्पादन..."
 #: kio/kmimetypechooser.cpp:104
 msgid "Click this button to display the familiar KDE mime type editor."
 msgstr "परिचित KDE माइम प्रकार प्रदर्शन गर्न यो बटन क्लिक गर्नुहोस् ।"
+
+#: kio/connection.cpp:165
+#, qt-format
+msgid "Unable to create io-slave: %1"
+msgstr "io-slave सिर्जना गर्न अक्षम: %1"
 
 #: kio/kdirmodel.cpp:554 kfile/kacleditwidget.cpp:626
 #: ../kfile/k3filedetailview.cpp:65
@@ -2447,7 +2447,7 @@ msgstr "अनुमति"
 msgid "Owner"
 msgstr "मालिक"
 
-#: kio/kdirmodel.cpp:564 kfile/kpropertiesdialog.cpp:1988
+#: kio/kdirmodel.cpp:564 kfile/kpropertiesdialog.cpp:2015
 #: ../kfile/k3filedetailview.cpp:70
 msgid "Group"
 msgstr "समूह"
@@ -2509,7 +2509,7 @@ msgstr "वितरक:"
 msgid "IP address:"
 msgstr "आईपी ठेगाना:"
 
-#: kssl/ksslinfodialog.cpp:236 kfile/kpropertiesdialog.cpp:2575
+#: kssl/ksslinfodialog.cpp:236 kfile/kpropertiesdialog.cpp:2604
 msgid "URL:"
 msgstr "यूआरएल:"
 
@@ -3018,7 +3018,7 @@ msgstr "स्वचालित पूर्वावलोकन"
 msgid "&Preview"
 msgstr "पूर्वावलोकन"
 
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:998
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:1013
 #: bookmarks/kbookmarkmenu.cc:650
 msgid "Location:"
 msgstr "स्थान:"
@@ -3146,7 +3146,7 @@ msgid "Owning Group"
 msgstr "समूह स्वीकार गर्दै"
 
 #: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
-#: kfile/kpropertiesdialog.cpp:1992
+#: kfile/kpropertiesdialog.cpp:2019
 msgid "Others"
 msgstr "अन्य"
 
@@ -3336,76 +3336,76 @@ msgid_plural "Properties for %1 Selected Items"
 msgstr[0] "%1 का गुणहरू"
 msgstr[1] "%1 का गुणहरू"
 
-#: kfile/kpropertiesdialog.cpp:773
+#: kfile/kpropertiesdialog.cpp:788
 msgid "&General"
 msgstr "सामान्य"
 
-#: kfile/kpropertiesdialog.cpp:974
+#: kfile/kpropertiesdialog.cpp:989
 msgid "Create new file type"
 msgstr "नयाँ फाइल प्रकार सिर्जना गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:976
+#: kfile/kpropertiesdialog.cpp:991
 msgid "Edit file type"
 msgstr "फाइल प्रकार सम्पादन गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:989
+#: kfile/kpropertiesdialog.cpp:1004
 msgid "Contents:"
 msgstr "सामाग्रीहरू:"
 
-#: kfile/kpropertiesdialog.cpp:1026
+#: kfile/kpropertiesdialog.cpp:1041
 msgid "Calculate"
 msgstr "गणना गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1027
+#: kfile/kpropertiesdialog.cpp:1042
 #, fuzzy
 msgid "Stop"
 msgstr "रोकियो"
 
-#: kfile/kpropertiesdialog.cpp:1037 kfile/kpropertiesdialog.cpp:1244
+#: kfile/kpropertiesdialog.cpp:1052 kfile/kpropertiesdialog.cpp:1259
 msgid "Refresh"
 msgstr "ताजा पार्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1045
+#: kfile/kpropertiesdialog.cpp:1060
 msgid "Points to:"
 msgstr "बिन्दुहरू:"
 
-#: kfile/kpropertiesdialog.cpp:1058
+#: kfile/kpropertiesdialog.cpp:1073
 msgid "Created:"
 msgstr "सिर्जना गरिएको:"
 
-#: kfile/kpropertiesdialog.cpp:1080
+#: kfile/kpropertiesdialog.cpp:1095
 msgid "Accessed:"
 msgstr "पहुँच प्राप्त भयो:"
 
-#: kfile/kpropertiesdialog.cpp:1099
+#: kfile/kpropertiesdialog.cpp:1114
 msgid "Mounted on:"
 msgstr "यसमा माउन्ट गरिएको:"
 
-#: kfile/kpropertiesdialog.cpp:1106 kfile/kpropertiesdialog.cpp:2910
+#: kfile/kpropertiesdialog.cpp:1121 kfile/kpropertiesdialog.cpp:2953
 msgid "Free disk space:"
 msgstr "स्वतन्त्र डिस्क खाली स्थान:"
 
-#: kfile/kpropertiesdialog.cpp:1209 kfile/kpropertiesdialog.cpp:3051
+#: kfile/kpropertiesdialog.cpp:1224 kfile/kpropertiesdialog.cpp:3094
 #, qt-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 out of %2 (%3% used)"
 msgstr "%2 मध्ये %1 (%3% प्रयोग गरियो)"
 
-#: kfile/kpropertiesdialog.cpp:1223 kfile/kpropertiesdialog.cpp:1239
+#: kfile/kpropertiesdialog.cpp:1238 kfile/kpropertiesdialog.cpp:1254
 #, fuzzy, qt-format
 msgid "1 file"
 msgid_plural "%1 files"
 msgstr[0] "1 फाइल"
 msgstr[1] "%1 फाइलहरू"
 
-#: kfile/kpropertiesdialog.cpp:1224 kfile/kpropertiesdialog.cpp:1240
+#: kfile/kpropertiesdialog.cpp:1239 kfile/kpropertiesdialog.cpp:1255
 #, fuzzy, qt-format
 msgid "1 sub-folder"
 msgid_plural "%1 sub-folders"
 msgstr[0] "1 सहायक-फोल्डर"
 msgstr[1] "%1 सहायक-फोल्डरहरू"
 
-#: kfile/kpropertiesdialog.cpp:1220
+#: kfile/kpropertiesdialog.cpp:1235
 #, qt-format
 msgid ""
 "Calculating... %1 (%2)\n"
@@ -3414,95 +3414,95 @@ msgstr ""
 "गणना गर्दै... %1 (%2)\n"
 "%3, %4"
 
-#: kfile/kpropertiesdialog.cpp:1253
+#: kfile/kpropertiesdialog.cpp:1268
 msgid "Calculating..."
 msgstr "गणना गर्दै..."
 
-#: kfile/kpropertiesdialog.cpp:1292
+#: kfile/kpropertiesdialog.cpp:1307
 msgid "Stopped"
 msgstr "रोकियो"
 
-#: kfile/kpropertiesdialog.cpp:1328
+#: kfile/kpropertiesdialog.cpp:1343
 msgid "The new file name is empty."
 msgstr "नयाँ फाइल नाम खाली छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1467 kfile/kpropertiesdialog.cpp:2631
-#: kfile/kpropertiesdialog.cpp:2794 kfile/kpropertiesdialog.cpp:3080
-#: kfile/kpropertiesdialog.cpp:3295
+#: kfile/kpropertiesdialog.cpp:1482 kfile/kpropertiesdialog.cpp:2660
+#: kfile/kpropertiesdialog.cpp:2830 kfile/kpropertiesdialog.cpp:3123
+#: kfile/kpropertiesdialog.cpp:3360
 #, qt-format
 msgid ""
 "<qt>Could not save properties. You do not have sufficient access to write to "
 "<b>%1</b>.</qt>"
 msgstr "<qt>गुणहरू बचत गर्न सकेन । तपाईँलाई<b>%1</b>मा लेख्न पर्याप्त पहुँच छैन ।</qt>"
 
-#: kfile/kpropertiesdialog.cpp:1538 kfile/kpropertiesdialog.cpp:1542
-#: kfile/kpropertiesdialog.cpp:1547
+#: kfile/kpropertiesdialog.cpp:1565 kfile/kpropertiesdialog.cpp:1569
+#: kfile/kpropertiesdialog.cpp:1574
 msgid "Forbidden"
 msgstr "निषेध गरिएको"
 
-#: kfile/kpropertiesdialog.cpp:1539
+#: kfile/kpropertiesdialog.cpp:1566
 msgid "Can Read"
 msgstr "पढ्न सक्नुहुन्छ"
 
-#: kfile/kpropertiesdialog.cpp:1540
+#: kfile/kpropertiesdialog.cpp:1567
 msgid "Can Read & Write"
 msgstr "पढ्न र लेख्न सक्नुहुन्छ"
 
-#: kfile/kpropertiesdialog.cpp:1543
+#: kfile/kpropertiesdialog.cpp:1570
 msgid "Can View Content"
 msgstr "सामाग्री हेर्न सक्नुहुन्छ"
 
-#: kfile/kpropertiesdialog.cpp:1544
+#: kfile/kpropertiesdialog.cpp:1571
 msgid "Can View & Modify Content"
 msgstr "सामाग्री हेर्न र परिमार्जन गर्न सक्नुहुन्छ"
 
-#: kfile/kpropertiesdialog.cpp:1548
+#: kfile/kpropertiesdialog.cpp:1575
 msgid "Can View Content & Read"
 msgstr "सामाग्री हेर्न र पढ्न सक्नुहुन्छ"
 
-#: kfile/kpropertiesdialog.cpp:1549
+#: kfile/kpropertiesdialog.cpp:1576
 msgid "Can View/Read & Modify/Write"
 msgstr "हेर्न/पढ्न र परिमार्जन/लेख्न सक्नुहुन्छ"
 
-#: kfile/kpropertiesdialog.cpp:1645
+#: kfile/kpropertiesdialog.cpp:1672
 msgid "&Permissions"
 msgstr "अनुमति"
 
-#: kfile/kpropertiesdialog.cpp:1658 kfile/kpropertiesdialog.cpp:1915
+#: kfile/kpropertiesdialog.cpp:1685 kfile/kpropertiesdialog.cpp:1942
 msgid "Access Permissions"
 msgstr "पहुँच अनुमति"
 
-#: kfile/kpropertiesdialog.cpp:1668
+#: kfile/kpropertiesdialog.cpp:1695
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
 msgstr[0] "यो फाइल लिङ्क हो  र अनुमति विहिन छ"
 msgstr[1] "सबै फाइलहरू लिङ्क हुन् र अनुमति विहिन छन् ।"
 
-#: kfile/kpropertiesdialog.cpp:1672
+#: kfile/kpropertiesdialog.cpp:1699
 msgid "Only the owner can change permissions."
 msgstr "मालिकले मात्र अनुमति परिवर्तन गर्न सक्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1675
+#: kfile/kpropertiesdialog.cpp:1702
 msgid "O&wner:"
 msgstr "मालिक:"
 
-#: kfile/kpropertiesdialog.cpp:1681
+#: kfile/kpropertiesdialog.cpp:1708
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "मालिकले गर्न दिएका कार्य निर्दिष्ट गर्दछ ।"
 
-#: kfile/kpropertiesdialog.cpp:1683
+#: kfile/kpropertiesdialog.cpp:1710
 msgid "Gro&up:"
 msgstr "समूह:"
 
-#: kfile/kpropertiesdialog.cpp:1689
+#: kfile/kpropertiesdialog.cpp:1716
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "समूहका सदस्यले गर्न दिएका कार्य निर्दिष्ट गर्दछ ।"
 
-#: kfile/kpropertiesdialog.cpp:1691
+#: kfile/kpropertiesdialog.cpp:1718
 msgid "O&thers:"
 msgstr "अन्य:"
 
-#: kfile/kpropertiesdialog.cpp:1697
+#: kfile/kpropertiesdialog.cpp:1724
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
@@ -3510,15 +3510,15 @@ msgstr ""
 "सबै प्रयोगकर्ताका कार्यहरू निर्दिष्ट गर्छ, जो न मालिक हुन् न समूहमा छन्, तिनीहरूलाई त्यसो "
 "गर्न स्वीकृत छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1702
+#: kfile/kpropertiesdialog.cpp:1729
 msgid "Only own&er can rename and delete folder content"
 msgstr "मालिकले मात्र फोल्डर सामाग्री नाम फेर्न र मेट्न सक्छ"
 
-#: kfile/kpropertiesdialog.cpp:1703
+#: kfile/kpropertiesdialog.cpp:1730
 msgid "Is &executable"
 msgstr "कार्यान्वयन योग्य छ"
 
-#: kfile/kpropertiesdialog.cpp:1707
+#: kfile/kpropertiesdialog.cpp:1734
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
@@ -3528,7 +3528,7 @@ msgstr ""
 "पार्नुहोस् । अन्य प्रयोगकर्ताले नयाँ फाइलहरू थप्न मात्र सक्छन्, जसका लागि 'परिमार्जन "
 "सामाग्री' अनुमति आवश्यक हुन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1711
+#: kfile/kpropertiesdialog.cpp:1738
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
@@ -3537,35 +3537,35 @@ msgstr ""
 "कार्यक्रमहरू र स्क्रिप्टहरूका लागि अर्थ दिन्छ । तपाईँले तिनीहरूलाई कार्यान्वयन गर्न चाहेमा "
 "यो आवश्यक हुन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1718
+#: kfile/kpropertiesdialog.cpp:1745
 msgid "A&dvanced Permissions"
 msgstr "उन्नत अनुमति"
 
-#: kfile/kpropertiesdialog.cpp:1727
+#: kfile/kpropertiesdialog.cpp:1754
 msgid "Ownership"
 msgstr "स्वामित्व"
 
-#: kfile/kpropertiesdialog.cpp:1736
+#: kfile/kpropertiesdialog.cpp:1763
 msgid "User:"
 msgstr "प्रयोगकर्ता:"
 
-#: kfile/kpropertiesdialog.cpp:1822
+#: kfile/kpropertiesdialog.cpp:1849
 msgid "Group:"
 msgstr "समूह:"
 
-#: kfile/kpropertiesdialog.cpp:1865
+#: kfile/kpropertiesdialog.cpp:1892
 msgid "Apply changes to all subfolders and their contents"
 msgstr "सबै फोल्डरमा र तिनीहरूको समाग्रीमा परिवर्तनहरू लागू गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1905
+#: kfile/kpropertiesdialog.cpp:1932
 msgid "Advanced Permissions"
 msgstr "उन्नत अनुमति"
 
-#: kfile/kpropertiesdialog.cpp:1925
+#: kfile/kpropertiesdialog.cpp:1952
 msgid "Class"
 msgstr "वर्ग"
 
-#: kfile/kpropertiesdialog.cpp:1930
+#: kfile/kpropertiesdialog.cpp:1957
 msgid ""
 "Show\n"
 "Entries"
@@ -3573,19 +3573,19 @@ msgstr ""
 "प्रविष्टिहरू\n"
 "देखाउनुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1932
+#: kfile/kpropertiesdialog.cpp:1959
 msgid "Read"
 msgstr "पढ्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1937
+#: kfile/kpropertiesdialog.cpp:1964
 msgid "This flag allows viewing the content of the folder."
 msgstr "यो झण्डाले फोल्डरको समाग्री देखाउने अनुमति दिन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1939
+#: kfile/kpropertiesdialog.cpp:1966
 msgid "The Read flag allows viewing the content of the file."
 msgstr "पढ्ने झण्डाले फोल्डरको समाग्री देखाउने अनुमति दिन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1943
+#: kfile/kpropertiesdialog.cpp:1970
 msgid ""
 "Write\n"
 "Entries"
@@ -3593,11 +3593,11 @@ msgstr ""
 "प्रविष्टिहरू\n"
 "लेख्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1945
+#: kfile/kpropertiesdialog.cpp:1972
 msgid "Write"
 msgstr "लेख्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1950
+#: kfile/kpropertiesdialog.cpp:1977
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
@@ -3605,39 +3605,39 @@ msgstr ""
 "यस झण्डाले फाइलहरूमा थप्न, नाम फेर्न, र मेट्न अनुमति दिन्छ । याद गर्नुहोस् कि टाँसिने झण्डा "
 "प्रयोग गरेर मेट्ने र नाम फेर्ने सीमित हुन सक्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1953
+#: kfile/kpropertiesdialog.cpp:1980
 msgid "The Write flag allows modifying the content of the file."
 msgstr "लेखिएको झण्डाले फाइलको सामाग्री परिमार्जन गर्न अनुमति दिन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1958
+#: kfile/kpropertiesdialog.cpp:1985
 msgctxt "Enter folder"
 msgid "Enter"
 msgstr "प्रविष्ट गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:1959
+#: kfile/kpropertiesdialog.cpp:1986
 msgid "Enable this flag to allow entering the folder."
 msgstr "फोल्डरमा प्रविष्टि गर्दा अनुमति दिन यो झण्डा सक्षम पार्नुहोस् ।"
 
-#: kfile/kpropertiesdialog.cpp:1962
+#: kfile/kpropertiesdialog.cpp:1989
 msgid "Exec"
 msgstr "Exec"
 
-#: kfile/kpropertiesdialog.cpp:1963
+#: kfile/kpropertiesdialog.cpp:1990
 msgid "Enable this flag to allow executing the file as a program."
 msgstr "कार्यक्रमको रूपमा फाइल कार्यान्वयन गर्दा अनुमति दिन यो सक्षम पार्नुहोस् ।"
 
-#: kfile/kpropertiesdialog.cpp:1973
+#: kfile/kpropertiesdialog.cpp:2000
 msgid "Special"
 msgstr "विशेष"
 
-#: kfile/kpropertiesdialog.cpp:1977
+#: kfile/kpropertiesdialog.cpp:2004
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
 msgstr ""
 "विशेष झण्डा । सबै फोल्डरका लागि वैद्य हुन्छ, झण्डाको दुरुस्त अर्थ दायाँ स्तम्भमा देख्न सकिन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:1980
+#: kfile/kpropertiesdialog.cpp:2007
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
@@ -3645,21 +3645,21 @@ msgstr "विशेष झण्डा । झण्डाको दुरु�
 
 #. i18n: tag string
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 89
-#: kfile/kpropertiesdialog.cpp:1984 rc.cpp:83
+#: kfile/kpropertiesdialog.cpp:2011 rc.cpp:83
 msgid "User"
 msgstr "प्रयोगकर्ता"
 
-#: kfile/kpropertiesdialog.cpp:1996
+#: kfile/kpropertiesdialog.cpp:2023
 msgid "Set UID"
 msgstr "UID सेट गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:2000
+#: kfile/kpropertiesdialog.cpp:2027
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
 msgstr "यदि झण्डा सेट भएमा, यो फोल्डरको मालिक सबै नयाँ फाइलको मालिक हुनेछ ।"
 
-#: kfile/kpropertiesdialog.cpp:2003
+#: kfile/kpropertiesdialog.cpp:2030
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
@@ -3667,28 +3667,28 @@ msgstr ""
 "यदि यो फाइल कार्यान्वयन योग्य छ र झण्डा सेट भएमा, यो मालिकको अनुमतिसँग कार्यान्वयन "
 "हुनेछ ।"
 
-#: kfile/kpropertiesdialog.cpp:2007
+#: kfile/kpropertiesdialog.cpp:2034
 msgid "Set GID"
 msgstr "GID सेट गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:2011
+#: kfile/kpropertiesdialog.cpp:2038
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr "यदि यो झण्डा सेट भएमा, यो फोल्डरको समूह सबै नयाँ फाइलहरूका लागि सेट हुनेछ ।"
 
-#: kfile/kpropertiesdialog.cpp:2014
+#: kfile/kpropertiesdialog.cpp:2041
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
 msgstr ""
 "यदि यो फाइल कार्यान्वयन योग्य छ र झण्डा सेट भएमा, यो समूहको अनुमतिसँग कार्यान्वयन हुनेछ ।"
 
-#: kfile/kpropertiesdialog.cpp:2018
+#: kfile/kpropertiesdialog.cpp:2045
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "टाँसिने"
 
-#: kfile/kpropertiesdialog.cpp:2022
+#: kfile/kpropertiesdialog.cpp:2049
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
@@ -3696,157 +3696,157 @@ msgstr ""
 "यदि टाँसिने झण्डा फोल्डरमा सेट भएमा, मालिक रुट मात्र मेट्न सकिन्छ वा फाइलहरू नाम फेर्न "
 "सकिन्छ । अन्यथा लेख्ने अनुमति हुने सबैजना यो गर्न सक्छन् ।"
 
-#: kfile/kpropertiesdialog.cpp:2026
+#: kfile/kpropertiesdialog.cpp:2053
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
 msgstr "लिनक्समा फाइलको टाँसिने झण्डा उपेक्षा गरिन्छ, तर केही प्रणालीहरूमा प्रयोग हुन सक्छ"
 
-#: kfile/kpropertiesdialog.cpp:2200
+#: kfile/kpropertiesdialog.cpp:2227
 msgid "Link"
 msgstr "लिङ्क गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:2216
+#: kfile/kpropertiesdialog.cpp:2243
 msgid "Varying (No Change)"
 msgstr "भिन्न गराउँदै (परिवर्तन छैन)"
 
-#: kfile/kpropertiesdialog.cpp:2314
+#: kfile/kpropertiesdialog.cpp:2341
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "यो फाइलले उन्नत अनुमतिहरू प्रयोग गर्छ"
 msgstr[1] "यी फाइलहरूले उन्नत अनुमति प्रयोग गर्छन् ।"
 
-#: kfile/kpropertiesdialog.cpp:2335
+#: kfile/kpropertiesdialog.cpp:2362
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "यो फोल्डरले उन्नत अनुमतिहरू प्रयोग गर्छ"
 msgstr[1] "यी फोल्डरहरूले उन्नत अनुमति प्रयोग गर्छन् ।"
 
-#: kfile/kpropertiesdialog.cpp:2351
+#: kfile/kpropertiesdialog.cpp:2378
 msgid "These files use advanced permissions."
 msgstr "यी फाइलहरूले उन्नत अनुमति प्रयोग गर्छन् ।"
 
-#: kfile/kpropertiesdialog.cpp:2567
+#: kfile/kpropertiesdialog.cpp:2596
 msgid "U&RL"
 msgstr "यूआरएल"
 
-#: kfile/kpropertiesdialog.cpp:2675
+#: kfile/kpropertiesdialog.cpp:2711
 msgid "A&ssociation"
 msgstr "संघ"
 
-#: kfile/kpropertiesdialog.cpp:2687
+#: kfile/kpropertiesdialog.cpp:2720
 msgid "Pattern ( example: *.html;*.htm )"
 msgstr "बाँन्की ( उदाहरण: *.html;*.htm )"
 
-#: kfile/kpropertiesdialog.cpp:2722
+#: kfile/kpropertiesdialog.cpp:2758
 msgid "Left click previews"
 msgstr "पूर्वावलोकन बायाँ क्लिक गर्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:2842
+#: kfile/kpropertiesdialog.cpp:2885
 msgid "De&vice"
 msgstr "यन्त्र"
 
-#: kfile/kpropertiesdialog.cpp:2874
+#: kfile/kpropertiesdialog.cpp:2917
 msgid "Device (/dev/fd0):"
 msgstr "यन्त्र (/dev/fd0):"
 
-#: kfile/kpropertiesdialog.cpp:2875
+#: kfile/kpropertiesdialog.cpp:2918
 msgid "Device:"
 msgstr "यन्त्र:"
 
-#: kfile/kpropertiesdialog.cpp:2888
+#: kfile/kpropertiesdialog.cpp:2931
 msgid "Read only"
 msgstr "पढ्ने मात्र"
 
-#: kfile/kpropertiesdialog.cpp:2892
+#: kfile/kpropertiesdialog.cpp:2935
 msgid "File system:"
 msgstr "फाइल प्रणाली:"
 
-#: kfile/kpropertiesdialog.cpp:2900
+#: kfile/kpropertiesdialog.cpp:2943
 msgid "Mount point (/mnt/floppy):"
 msgstr "माउन्ट बिन्दु (/mnt/फ्लपी):"
 
-#: kfile/kpropertiesdialog.cpp:2901
+#: kfile/kpropertiesdialog.cpp:2944
 msgid "Mount point:"
 msgstr "माउन्ट बिन्दु:"
 
-#: kfile/kpropertiesdialog.cpp:2934
+#: kfile/kpropertiesdialog.cpp:2977
 msgid "Unmounted Icon"
 msgstr "माउन्ट नगरिएको प्रतिमा"
 
-#: kfile/kpropertiesdialog.cpp:3113
+#: kfile/kpropertiesdialog.cpp:3179
 msgid "&Application"
 msgstr "अनुप्रयोग"
 
-#: kfile/kpropertiesdialog.cpp:3233
+#: kfile/kpropertiesdialog.cpp:3298
 #, qt-format
 msgid "Add File Type for %1"
 msgstr "%1 का लागि फाइल प्रकार थप्नुहोस्"
 
-#: kfile/kpropertiesdialog.cpp:3234
+#: kfile/kpropertiesdialog.cpp:3299
 msgid "Select one or more file types to add:"
 msgstr "थप्नका लागि एक वा धेरै फाइल प्रकारहरू चयन गर्नुहोस्:"
 
-#: kfile/kpropertiesdialog.cpp:3368
+#: kfile/kpropertiesdialog.cpp:3433
 msgid "Only executables on local file systems are supported."
 msgstr "स्थानीय फाइल प्रणालीमा कार्यान्वयन योग्य मात्र समर्थन गरिन्छ ।"
 
-#: kfile/kpropertiesdialog.cpp:3382
+#: kfile/kpropertiesdialog.cpp:3447
 #, qt-format
 msgid "Advanced Options for %1"
 msgstr "%1 का लागि उन्नत विकल्प"
 
-#: kfile/kfilesharedialog.cpp:55
+#: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
 msgstr "बाँड्नुहोस्"
 
-#: kfile/kfilesharedialog.cpp:129
+#: kfile/kfilesharedialog.cpp:133
 msgid "Only folders in your home folder can be shared."
 msgstr "तपाईँका गृह फोल्डरका फोल्डरहरू मात्र बाँड्न सकिन्छ ।"
 
-#: kfile/kfilesharedialog.cpp:139
+#: kfile/kfilesharedialog.cpp:143
 msgid "Not shared"
 msgstr "बाँडिएको छैन"
 
-#: kfile/kfilesharedialog.cpp:144
+#: kfile/kfilesharedialog.cpp:148
 msgid "Shared"
 msgstr "बाँडिएको"
 
-#: kfile/kfilesharedialog.cpp:156
+#: kfile/kfilesharedialog.cpp:160
 msgid ""
 "Sharing this folder makes it available under Linux/UNIX (NFS) and Windows "
 "(Samba)."
 msgstr "यो फोल्डर बाँड्दा लिनक्स/यूनिक्स (NFS) र सञ्झ्यालहरू (साम्बा) मा उपलब्ध हुन्छन् ।"
 
-#: kfile/kfilesharedialog.cpp:163
+#: kfile/kfilesharedialog.cpp:167
 msgid "You can also reconfigure file sharing authorization."
 msgstr "तपाईँले फाइल बाँडफाँड अधिकार प्रदान कार्य पुन: कन्फिगर गर्न पनि सक्नुहुन्छ ।"
 
-#: kfile/kfilesharedialog.cpp:167 kfile/kfilesharedialog.cpp:191
+#: kfile/kfilesharedialog.cpp:171 kfile/kfilesharedialog.cpp:195
 msgid "Configure File Sharing..."
 msgstr "फाइल बाँडफाँड कन्फिगर गर्नुहोस्..."
 
-#: kfile/kfilesharedialog.cpp:176
+#: kfile/kfilesharedialog.cpp:180
 msgid ""
 "Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
 msgstr ""
 "'फाइल बाँडफाँड सूची' चलाउदा त्रुटि । स्थापीत भएको र $बाटोमा वा /usr/sbin मा भएको "
 "जाँच गर्नुहोस् ।"
 
-#: kfile/kfilesharedialog.cpp:183
+#: kfile/kfilesharedialog.cpp:187
 msgid "You need to be authorized to share folders."
 msgstr "फोल्डरहरू बाँडफाँड गर्न तपाईँ आधिकारीक हुनु आवश्यक छ ।"
 
-#: kfile/kfilesharedialog.cpp:186
+#: kfile/kfilesharedialog.cpp:190
 msgid "File sharing is disabled."
 msgstr "फाइल बाँडफाँड अक्षम पारिएको छ ।"
 
-#: kfile/kfilesharedialog.cpp:253
+#: kfile/kfilesharedialog.cpp:257
 #, qt-format
 msgid "Sharing folder '%1' failed."
 msgstr "'%1' फोल्डरको बाँडफाँड असफल भयो ।"
 
-#: kfile/kfilesharedialog.cpp:254
+#: kfile/kfilesharedialog.cpp:258
 #, qt-format
 msgid ""
 "An error occurred while trying to share folder '%1'. Make sure that the Perl "
@@ -3855,12 +3855,12 @@ msgstr ""
 "'%1' फोल्डरमा बाँडफाँड गर्ने प्रयास गर्दा त्रुटि देखापरेको छ । पर्ल स्क्रिप्ट 'फाइल बाँडफाँड "
 "सेट' सुइड रुट सेट भएको निश्चित गर्नुहोस् ।"
 
-#: kfile/kfilesharedialog.cpp:259
+#: kfile/kfilesharedialog.cpp:263
 #, qt-format
 msgid "Unsharing folder '%1' failed."
 msgstr "'%1' फोल्डर बाँडफाँड असफल भयो ।"
 
-#: kfile/kfilesharedialog.cpp:260
+#: kfile/kfilesharedialog.cpp:264
 #, qt-format
 msgid ""
 "An error occurred while trying to unshare folder '%1'. Make sure that the "
@@ -4829,7 +4829,7 @@ msgstr "%1 मा लगइन गर्न सकेन ।"
 msgid "Setting ACL for %1"
 msgstr "%1 मा डेटा पठाउँदै"
 
-#: ../kioslave/file/file.cpp:756 ../kioslave/file/file.cpp:990
+#: ../kioslave/file/file.cpp:760 ../kioslave/file/file.cpp:994
 #, qt-format
 msgid ""
 "Could not change permissions for\n"
@@ -4838,33 +4838,33 @@ msgstr ""
 "यसका लागि अनुमतिहरू परिवर्तन गर्न सकेन\n"
 "%1"
 
-#: ../kioslave/file/file.cpp:921
+#: ../kioslave/file/file.cpp:925
 #, qt-format
 msgid "Cannot copy file from %1 to %2. (Errno: %3)"
 msgstr "%1 बाट %2 मा फाइल प्रतिलिपि गर्न सकिँदैन । (Errno: %3)"
 
-#: ../kioslave/file/file.cpp:1364
+#: ../kioslave/file/file.cpp:1368
 #, qt-format
 msgid "No media in device for %1"
 msgstr "%1 का लागि यन्त्रमा मिडिया छैन"
 
-#: ../kioslave/file/file.cpp:1516
+#: ../kioslave/file/file.cpp:1520
 msgid "No Media inserted or Media not recognized."
 msgstr "मिडिया घुसाइएको छैन वा परिचित छैन ।"
 
-#: ../kioslave/file/file.cpp:1526 ../kioslave/file/file.cpp:1727
+#: ../kioslave/file/file.cpp:1530 ../kioslave/file/file.cpp:1731
 msgid "\"vold\" is not running."
 msgstr "\"भोल्ड\" चलेको छैन ।"
 
-#: ../kioslave/file/file.cpp:1561
+#: ../kioslave/file/file.cpp:1565
 msgid "Could not find program \"mount\""
 msgstr "\"माउन्ट\" कार्यक्रम फेला पार्न सकेन"
 
-#: ../kioslave/file/file.cpp:1740
+#: ../kioslave/file/file.cpp:1744
 msgid "Could not find program \"umount\""
 msgstr "\"अनमाउन्ट\" कार्यक्रम फेला पार्न सकेन"
 
-#: ../kioslave/file/file.cpp:1828
+#: ../kioslave/file/file.cpp:1832
 #, qt-format
 msgid "Could not read %1"
 msgstr "%1 पढ्न सकेन"
