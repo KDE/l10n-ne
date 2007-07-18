@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-17 06:04+0200\n"
+"POT-Creation-Date: 2007-07-18 05:35+0200\n"
 "PO-Revision-Date: 2007-04-15 15:43+0300\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,7 +18,7 @@ msgstr ""
 msgid "Writing tag..."
 msgstr "ट्याग लेख्दैछ..."
 
-#: meta/meta.cpp:137 playlistbrowser.cpp:1801
+#: meta/PlaylistFileSupport.cpp:30 playlistbrowser.cpp:1801
 #, qt-format
 msgid "Cannot write playlist (%1)."
 msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
@@ -842,7 +842,7 @@ msgstr "साधारण खोजी"
 #: metabundle.cpp:125 collectionbrowser/CollectionTreeItemModelBase.cpp:408
 #: rc.cpp:458 smartplaylisteditor.cpp:174 smartplaylisteditor.cpp:188
 #: transferdialog.cpp:84 playlist/PlaylistHeader.cpp:33
-#: playlist/PlaylistModel.cpp:223 playlistbrowseritem.cpp:3072
+#: playlist/PlaylistModel.cpp:221 playlistbrowseritem.cpp:3072
 #: playlistbrowseritem.cpp:3303
 msgid "Album"
 msgstr "एल्बम"
@@ -853,43 +853,43 @@ msgstr "एल्बम"
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:409 rc.cpp:455
 #: smartplaylisteditor.cpp:174 smartplaylisteditor.cpp:188
 #: transferdialog.cpp:83 playlist/PlaylistHeader.cpp:33
-#: playlist/PlaylistModel.cpp:219 playlistbrowseritem.cpp:3052
+#: playlist/PlaylistModel.cpp:217 playlistbrowseritem.cpp:3052
 #: playlistbrowseritem.cpp:3299
 msgid "Artist"
 msgstr "कलाकार"
 
 #: editfilterdialog.cpp:133 metabundle.cpp:134 smartplaylisteditor.cpp:178
-#: playlist/PlaylistModel.cpp:232
+#: playlist/PlaylistModel.cpp:230
 msgid "Bitrate"
 msgstr "बिट्रेट"
 
 #: editfilterdialog.cpp:135 metabundle.cpp:128 smartplaylisteditor.cpp:178
-#: playlist/PlaylistModel.cpp:226
+#: playlist/PlaylistModel.cpp:224
 msgid "BPM"
 msgstr "बीपीएम"
 
 #: editfilterdialog.cpp:137 metabundle.cpp:130 smartplaylisteditor.cpp:175
-#: playlist/PlaylistModel.cpp:228
+#: playlist/PlaylistModel.cpp:226
 msgid "Comment"
 msgstr "टिप्पणी"
 
 #: editfilterdialog.cpp:139 metabundle.cpp:123
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:410
 #: smartplaylisteditor.cpp:174 smartplaylisteditor.cpp:188
-#: playlist/PlaylistModel.cpp:221 playlistbrowseritem.cpp:3062
+#: playlist/PlaylistModel.cpp:219 playlistbrowseritem.cpp:3062
 #: playlistbrowseritem.cpp:3301
 msgid "Composer"
 msgstr "कम्पोजर"
 
-#: editfilterdialog.cpp:141 metabundle.cpp:131 playlist/PlaylistModel.cpp:229
+#: editfilterdialog.cpp:141 metabundle.cpp:131 playlist/PlaylistModel.cpp:227
 msgid "Directory"
 msgstr "डाइरेक्टरी"
 
-#: editfilterdialog.cpp:143 metabundle.cpp:126 playlist/PlaylistModel.cpp:224
+#: editfilterdialog.cpp:143 metabundle.cpp:126 playlist/PlaylistModel.cpp:222
 msgid "Disc Number"
 msgstr "डिस्क सङ्ख्या"
 
-#: editfilterdialog.cpp:145 metabundle.cpp:119 playlist/PlaylistModel.cpp:217
+#: editfilterdialog.cpp:145 metabundle.cpp:119 playlist/PlaylistModel.cpp:215
 msgid "Filename"
 msgstr "फाइलनाम"
 
@@ -904,13 +904,13 @@ msgstr "फाइल प्रकार"
 #: editfilterdialog.cpp:151 metabundle.cpp:129
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:411
 #: smartplaylisteditor.cpp:174 smartplaylisteditor.cpp:188
-#: transferdialog.cpp:85 playlist/PlaylistModel.cpp:227
+#: transferdialog.cpp:85 playlist/PlaylistModel.cpp:225
 #: playlistbrowseritem.cpp:3042 playlistbrowseritem.cpp:3297
 msgid "Genre"
 msgstr "विधा"
 
 #: editfilterdialog.cpp:153 metabundle.cpp:133 smartplaylisteditor.cpp:174
-#: playlist/PlaylistHeader.cpp:33 playlist/PlaylistModel.cpp:231
+#: playlist/PlaylistHeader.cpp:33 playlist/PlaylistModel.cpp:229
 #: playlistbrowseritem.cpp:838
 msgid "Length"
 msgstr "लम्बाइ"
@@ -926,40 +926,40 @@ msgstr "लेबुल"
 msgid "Lyrics"
 msgstr "रचना"
 
-#: editfilterdialog.cpp:159 metabundle.cpp:138 playlist/PlaylistModel.cpp:236
+#: editfilterdialog.cpp:159 metabundle.cpp:138 playlist/PlaylistModel.cpp:234
 msgid "Play Count"
 msgstr "प्ले गणना"
 
 #: editfilterdialog.cpp:163 metabundle.cpp:137 smartplaylisteditor.cpp:176
-#: playlist/PlaylistModel.cpp:235
+#: playlist/PlaylistModel.cpp:233
 msgid "Rating"
 msgstr "मूल्याङ्कन"
 
-#: editfilterdialog.cpp:166 metabundle.cpp:135 playlist/PlaylistModel.cpp:233
+#: editfilterdialog.cpp:166 metabundle.cpp:135 playlist/PlaylistModel.cpp:231
 msgid "Sample Rate"
 msgstr "नमूना दर"
 
 #: editfilterdialog.cpp:170 scriptmanager.cpp:172 scriptmanager.cpp:816
 #: metabundle.cpp:136 smartplaylisteditor.cpp:176
-#: playlist/PlaylistModel.cpp:234
+#: playlist/PlaylistModel.cpp:232
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
-#: editfilterdialog.cpp:173 metabundle.cpp:141 playlist/PlaylistModel.cpp:239
+#: editfilterdialog.cpp:173 metabundle.cpp:141 playlist/PlaylistModel.cpp:237
 msgid "File Size"
 msgstr "फाइल साइज"
 
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 92
 #: editfilterdialog.cpp:175 metabundle.cpp:120 rc.cpp:452
-#: smartplaylisteditor.cpp:174 playlist/PlaylistModel.cpp:218
+#: smartplaylisteditor.cpp:174 playlist/PlaylistModel.cpp:216
 msgid "Title"
 msgstr "शीर्षक"
 
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 125
 #: editfilterdialog.cpp:177 metabundle.cpp:127 rc.cpp:461
-#: playlist/PlaylistModel.cpp:225
+#: playlist/PlaylistModel.cpp:223
 msgid "Track"
 msgstr "ट्रयाक"
 
@@ -968,7 +968,7 @@ msgstr "ट्रयाक"
 #: editfilterdialog.cpp:179 metabundle.cpp:124
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:412 rc.cpp:464
 #: smartplaylisteditor.cpp:175 smartplaylisteditor.cpp:188
-#: smartplaylisteditor.cpp:906 playlist/PlaylistModel.cpp:222
+#: smartplaylisteditor.cpp:906 playlist/PlaylistModel.cpp:220
 #: playlistbrowseritem.cpp:3082 playlistbrowseritem.cpp:3305
 msgid "Year"
 msgstr "वर्ष"
@@ -1171,7 +1171,7 @@ msgstr "खाली पाठ फाँट"
 msgid "Sorry, the '%1' could not be loaded, instead we have loaded the '%2'."
 msgstr "माफ गर्नुहोस्, '%1' लोड गर्न सकेन, यसको सट्टामा हामीले '%2' लोड गर्यो ।"
 
-#: enginecontroller.cpp:191
+#: enginecontroller.cpp:192
 msgid ""
 "<p>Amarok could not find any sound-engine plugins. Amarok is now updating "
 "the KDE configuration database. Please wait a couple of minutes, then "
@@ -1191,7 +1191,7 @@ msgstr ""
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
 
-#: enginecontroller.cpp:245
+#: enginecontroller.cpp:246
 #, qt-format
 msgid ""
 "<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to choose a "
@@ -1205,23 +1205,23 @@ msgstr ""
 "जाँच गर्न सक्नुहुन्छ जुन हालको इन्जिनले प्रयोग गर्दछ । <p>तपाईँ <i>अमारोक हातेपुस्तिका</"
 "i>को <i>FAQ</i> सेक्सनमा उपयोगी सूचना फेला पार्न सक्नुहुन्छ</p> ।."
 
-#: enginecontroller.cpp:270
+#: enginecontroller.cpp:271
 msgid "Amarok currently cannot play MP3 files."
 msgstr "अमारोकले हालै MP3 फाइलहरू प्ले गर्न सक्दैन ।"
 
-#: enginecontroller.cpp:271
+#: enginecontroller.cpp:272
 msgid "No MP3 Support"
 msgstr "MP3 समर्थन छैन"
 
-#: enginecontroller.cpp:380 playlist.cpp:1672
+#: enginecontroller.cpp:382 playlist.cpp:1672
 msgid "Local file does not exist."
 msgstr "स्थानीय फाइल अवस्थित हुँदैन ।"
 
-#: enginecontroller.cpp:387
+#: enginecontroller.cpp:389
 msgid "Starting CD Audio track..."
 msgstr "सीडी अडियो ट्रयाक सुरु गर्दैछ..."
 
-#: enginecontroller.cpp:389
+#: enginecontroller.cpp:391
 msgid "Connecting to stream source..."
 msgstr "प्रवाह स्रोतमा जडान गर्दैछ..."
 
@@ -5723,23 +5723,23 @@ msgstr "२०%"
 msgid "0%"
 msgstr "०%"
 
-#: metabundle.cpp:122 playlist/PlaylistModel.cpp:220
+#: metabundle.cpp:122 playlist/PlaylistModel.cpp:218
 msgid "Album Artist"
 msgstr "एल्बम कलाकार"
 
-#: metabundle.cpp:132 playlist/PlaylistModel.cpp:230
+#: metabundle.cpp:132 playlist/PlaylistModel.cpp:228
 #: playlistbrowseritem.cpp:2748
 msgid "Type"
 msgstr "प्रकार"
 
-#: metabundle.cpp:139 playlist/PlaylistModel.cpp:237
+#: metabundle.cpp:139 playlist/PlaylistModel.cpp:235
 #, fuzzy
 #| msgid "Last Played"
 msgctxt "Column name"
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
 
-#: metabundle.cpp:140 playlist/PlaylistModel.cpp:238
+#: metabundle.cpp:140 playlist/PlaylistModel.cpp:236
 msgid "Mood"
 msgstr "मुड"
 
@@ -10705,11 +10705,11 @@ msgstr "चयन गरिएको ट्रयाक लाम लगाउ�
 msgid "&Stop Playing After Track"
 msgstr "ट्रयाक पछि प्ले गर्न रोक्नुहोस्"
 
-#: playlist.cpp:493 playlist/PlaylistModel.cpp:284
+#: playlist.cpp:493 playlist/PlaylistModel.cpp:282
 msgid "Attempted to insert nothing into playlist."
 msgstr "प्लेसूचीमा केही नघुसाउन प्रयास गरियो ।"
 
-#: playlist.cpp:566 playlist/PlaylistModel.cpp:300
+#: playlist.cpp:566 playlist/PlaylistModel.cpp:298
 #, fuzzy, qt-format
 #| msgid ""
 #| "_n: One track was already in the playlist, so it was not added.\n"
@@ -11431,11 +11431,11 @@ msgstr "एल्बम पुन-डाउनलोड गर्न सके�
 msgid "There seems to be a problem with the selected redownload info file."
 msgstr "त्यहाँ चयन गरिएको पुन: डाउनलोड सूचना फाइलसँग केही समस्या देखिन्छ ।"
 
-#: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:61
+#: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:67
 msgid "Downloading album"
 msgstr "एल्बम डाउनलोड गर्दै"
 
-#: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:131
+#: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:137
 msgid "Adding album cover to collection"
 msgstr "सङ्कलनमा एल्बम आवरण थप्दै"
 
