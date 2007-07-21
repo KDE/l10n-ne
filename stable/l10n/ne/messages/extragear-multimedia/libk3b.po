@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libk3b\n"
 "Report-Msgid-Bugs-To: <info@mpp.org.np> \n"
-"POT-Creation-Date: 2007-07-19 01:16+0200\n"
+"POT-Creation-Date: 2007-07-21 01:16+0200\n"
 "PO-Revision-Date: 2007-03-25 14:16+0300\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -380,35 +380,46 @@ msgstr "खाली गर्दा त्रुटि"
 msgid "Sorry, no error handling yet."
 msgstr "माफ गर्नुहोस्, अहिले सम्म कुनै त्रुटि ह्यान्डल गरिएको छैन ।"
 
-#: jobs/k3bverificationjob.cpp:156
+#: jobs/k3bcdcopyjob.cpp:1017 jobs/k3bverificationjob.cpp:153
+#: projects/mixedcd/k3bmixedjob.cpp:512
+#, fuzzy
+msgid "Reloading the medium"
+msgstr "मिडिया पुन: लोड गर्दै"
+
+#: jobs/k3bverificationjob.cpp:166
+#, fuzzy
+msgid "Unable to Close the Tray"
+msgstr "ट्रे बन्द गर्न असक्षम भयो"
+
+#: jobs/k3bverificationjob.cpp:168
 #, fuzzy
 msgid "Checking medium"
 msgstr "मिडिया जाँच गर्दै"
 
-#: jobs/k3bverificationjob.cpp:177
+#: jobs/k3bverificationjob.cpp:189
 #, fuzzy
 msgid "No tracks to verify found."
 msgstr "कुनै cdrdao ड्राइभर फेला परेन ।"
 
-#: jobs/k3bverificationjob.cpp:192
+#: jobs/k3bverificationjob.cpp:204
 msgid "Internal Error: Verification job improperly initialized"
 msgstr ""
 
-#: jobs/k3bverificationjob.cpp:215
+#: jobs/k3bverificationjob.cpp:227
 #, fuzzy, c-format
 msgid "Verifying track %1"
 msgstr "%2 को ट्रयाक %1 लेख्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:271 jobs/k3bverificationjob.cpp:245
-#: jobs/k3bverificationjob.cpp:331
+#: jobs/k3bdvdcopyjob.cpp:270 jobs/k3bverificationjob.cpp:257
+#: jobs/k3bverificationjob.cpp:343
 msgid "Unable to determine the ISO9660 filesystem size."
 msgstr "ISO9660 फाइलप्रणाली साइज निर्धारण गर्न असक्षम भयो ।"
 
-#: jobs/k3bverificationjob.cpp:283
+#: jobs/k3bverificationjob.cpp:295
 msgid "Written data in track %1 differs from original."
 msgstr ""
 
-#: jobs/k3bverificationjob.cpp:287
+#: jobs/k3bverificationjob.cpp:299
 #, fuzzy
 msgid "Written data verified."
 msgstr "लेखिएको डेटा फरक छ ।"
@@ -570,13 +581,13 @@ msgstr "%2 प्रतिलिपि %1 लेख्दै"
 msgid "Waiting for medium"
 msgstr "मिडियाका लागि पर्खदै"
 
-#: jobs/k3biso9660imagewritingjob.cpp:391 projects/audiocd/k3baudiojob.cpp:549
-#: projects/datacd/k3bdatajob.cpp:677 projects/mixedcd/k3bmixedjob.cpp:628
-#: projects/mixedcd/k3bmixedjob.cpp:670
+#: jobs/k3biso9660imagewritingjob.cpp:389 projects/audiocd/k3baudiojob.cpp:549
+#: projects/datacd/k3bdatajob.cpp:672 projects/mixedcd/k3bmixedjob.cpp:632
+#: projects/mixedcd/k3bmixedjob.cpp:673
 msgid "IO Error"
 msgstr "आगत निर्गात त्रुटि"
 
-#: jobs/k3biso9660imagewritingjob.cpp:405 projects/datadvd/k3bdvdjob.cpp:213
+#: jobs/k3biso9660imagewritingjob.cpp:401 projects/datadvd/k3bdvdjob.cpp:211
 msgid ""
 "K3b does not support simulation with DVD+R(W) media. Do you really want to "
 "continue? The media will be written for real."
@@ -584,20 +595,20 @@ msgstr ""
 "K3b ले DVD+R(W) मिडिया सँग नक्कल समर्थन गर्दैन । तपाईँ साँचिकै जारी राख्न "
 "चाहनुहुन्छ ? मिडिया वास्तविकका लागि लेखिनेछ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:771 jobs/k3biso9660imagewritingjob.cpp:408
-#: projects/datadvd/k3bdvdjob.cpp:216
+#: jobs/k3bdvdcopyjob.cpp:765 jobs/k3biso9660imagewritingjob.cpp:404
+#: projects/datadvd/k3bdvdjob.cpp:214
 msgid "No Simulation with DVD+R(W)"
 msgstr "DVD+R(W) सँग कुनै नक्कल छैन"
 
-#: jobs/k3biso9660imagewritingjob.cpp:449
+#: jobs/k3biso9660imagewritingjob.cpp:443
 msgid "Simulating ISO9660 Image"
 msgstr "ISO9660 छवि नक्कल गर्दै"
 
-#: jobs/k3biso9660imagewritingjob.cpp:451
+#: jobs/k3biso9660imagewritingjob.cpp:445
 msgid "Burning ISO9660 Image"
 msgstr "ISO9660 छवि बर्न गर्दै"
 
-#: jobs/k3bbinimagewritingjob.cpp:218 jobs/k3biso9660imagewritingjob.cpp:453
+#: jobs/k3bbinimagewritingjob.cpp:218 jobs/k3biso9660imagewritingjob.cpp:447
 #, c-format
 msgid ""
 "_n:  - %n Copy\n"
@@ -666,7 +677,7 @@ msgstr "क्लोन प्रतिलिपि नक्कल गर्द
 msgid "Writing clone copy %1"
 msgstr "क्लोन प्रतिलिपि लेख्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1077 jobs/k3bclonejob.cpp:342
+#: jobs/k3bcdcopyjob.cpp:1081 jobs/k3bclonejob.cpp:342
 msgid "Removing image files."
 msgstr "छवि फाइल हटाउँदै ।"
 
@@ -699,56 +710,56 @@ msgstr ""
 "१ क्लोन प्रतिलिपि सिर्जना गर्दै\n"
 "%n क्लोन प्रतिलिपि सिर्जना गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:160 jobs/k3bdvdcopyjob.cpp:120
+#: jobs/k3bcdcopyjob.cpp:159 jobs/k3bdvdcopyjob.cpp:119
 #, fuzzy
 msgid "Checking Source Medium"
 msgstr "स्रोत मिडिया जाँच गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:163 jobs/k3bdvdcopyjob.cpp:130
+#: jobs/k3bcdcopyjob.cpp:162 jobs/k3bdvdcopyjob.cpp:129
 #, fuzzy
 msgid "Waiting for source medium"
 msgstr "मिडियाका लागि पर्खदै"
 
-#: jobs/k3bcdcopyjob.cpp:173 jobs/k3bdvdcopyjob.cpp:142
+#: jobs/k3bcdcopyjob.cpp:172 jobs/k3bdvdcopyjob.cpp:141
 #, fuzzy
 msgid "Checking source medium"
 msgstr "स्रोत मिडिया जाँच गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:201
+#: jobs/k3bcdcopyjob.cpp:200
 msgid "K3b does not copy CDs containing multiple data tracks."
 msgstr "K3b ले बहुविध डेटा ट्रयाकहरू समाविष्ट गरेको सीडीहरू प्रतिलिपि गर्दैन ।"
 
-#: jobs/k3bcdcopyjob.cpp:205
+#: jobs/k3bcdcopyjob.cpp:204
 msgid "Copying Multisession Data CD."
 msgstr "बहुसत्रिय डेटा सीडी प्रतिलिपि गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:207
+#: jobs/k3bcdcopyjob.cpp:206
 msgid "Copying Data CD."
 msgstr "डेटा सीडी प्रतिलिपि गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:213
+#: jobs/k3bcdcopyjob.cpp:212
 msgid "K3b can only copy CD-Extra mixed mode CDs."
 msgstr "K3b ले मात्र सीडी-अतिरिक्त मिश्रित मोड सीडीहरू प्रतिलिपि गर्न सक्छ ।"
 
-#: jobs/k3bcdcopyjob.cpp:217
+#: jobs/k3bcdcopyjob.cpp:216
 msgid "Copying Enhanced Audio CD (CD-Extra)."
 msgstr "विस्तारित अडियो सीडी (सीडी-अतिरिक्त) प्रतिलिपि गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:222
+#: jobs/k3bcdcopyjob.cpp:221
 msgid "Copying Audio CD."
 msgstr "अडियो सीडी प्रतिलिपि गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:227
+#: jobs/k3bcdcopyjob.cpp:226
 msgid "The source disk is empty."
 msgstr "स्रोत डिस्क खाली छ ।"
 
-#: jobs/k3bcdcopyjob.cpp:269
+#: jobs/k3bcdcopyjob.cpp:268
 msgid "K3b needs cdrecord 2.01a12 or newer to copy Mode2 data tracks."
 msgstr ""
 "K3b लाई मोड२ डेटा ट्रयाक प्रतिलिपि गर्न सीडी रेकर्ड 2.01a12 वा नयाँ आवश्यक "
 "पर्दछ ।"
 
-#: jobs/k3bcdcopyjob.cpp:281
+#: jobs/k3bcdcopyjob.cpp:280
 msgid ""
 "You will only be able to copy the first session in raw writing mode. Continue "
 "anyway?"
@@ -756,207 +767,212 @@ msgstr ""
 "तपाईँले कच्चा लेखन मोडमा पहिलो सत्र मात्र प्रतिलिपि गर्नुपर्नेछ । जे भए पनि "
 "जारी राख्नुहुन्छ ?"
 
-#: jobs/k3bcdcopyjob.cpp:283
+#: jobs/k3bcdcopyjob.cpp:282
 msgid "Multisession CD"
 msgstr "बहुसत्रिय सीडी"
 
-#: jobs/k3bcdcopyjob.cpp:288
+#: jobs/k3bcdcopyjob.cpp:287
 msgid "Only copying first session."
 msgstr "पहिलो सत्र मात्र प्रतिलिपि गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:317 jobs/k3bdvdcopyjob.cpp:320
+#: jobs/k3bcdcopyjob.cpp:316 jobs/k3bdvdcopyjob.cpp:319
 msgid "Unable to determine free space in temporary directory '%1'."
 msgstr ""
 "अस्थायी डाइरेक्टरी '%1' मा स्वतन्त्र खाली स्थान निर्धारण गर्न असक्षम भयो ।"
 
-#: jobs/k3bcdcopyjob.cpp:323 jobs/k3bdvdcopyjob.cpp:327
+#: jobs/k3bcdcopyjob.cpp:322 jobs/k3bdvdcopyjob.cpp:326
 msgid "Not enough space left in temporary directory."
 msgstr "अस्थायी डाइरेक्टरीमा पर्याप्त खाली स्थान बाँकी छैन ।"
 
-#: jobs/k3bcdcopyjob.cpp:332 jobs/k3bdvdcopyjob.cpp:344
+#: jobs/k3bcdcopyjob.cpp:331 jobs/k3bdvdcopyjob.cpp:343
 #, fuzzy
 msgid "Unmounting source medium"
 msgstr "स्रोत मिडिया पढ्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:361
+#: jobs/k3bcdcopyjob.cpp:360
 msgid "Unable to read TOC"
 msgstr "टीओसी पढ्न असक्षम भयो"
 
-#: jobs/k3bcdcopyjob.cpp:369
+#: jobs/k3bcdcopyjob.cpp:368
 msgid "Searching CD-TEXT"
 msgstr "सीडी-पाठ खोजी गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:383
+#: jobs/k3bcdcopyjob.cpp:382
 msgid "Found CD-TEXT (%1 - %2)."
 msgstr "सीडी-पाठ फेला पर्यो (%1 - %2) ।"
 
-#: jobs/k3bcdcopyjob.cpp:388
+#: jobs/k3bcdcopyjob.cpp:387
 msgid "Found corrupted CD-TEXT. Ignoring it."
 msgstr "दूषित सीडी-पाठ फेला पर्यो । यसलाई उपेक्षा गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:398
+#: jobs/k3bcdcopyjob.cpp:397
 msgid "No CD-TEXT found."
 msgstr "कुनै सीडी-पाठ फेला परेन ।"
 
-#: jobs/k3bcdcopyjob.cpp:409
+#: jobs/k3bcdcopyjob.cpp:408
 msgid "Querying Cddb"
 msgstr "सीडीडीबी क्वेरी गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:433
+#: jobs/k3bcdcopyjob.cpp:432
 msgid "Found Cddb entry (%1 - %2)."
 msgstr "सीडीडी प्रविष्टि फेला पर्यो (%1 - %2) ।"
 
-#: jobs/k3bcdcopyjob.cpp:442
+#: jobs/k3bcdcopyjob.cpp:441
 msgid "No Cddb entry found."
 msgstr "कुनै सीडीडीबी प्रविष्टि फेला परेन ।"
 
-#: jobs/k3bcdcopyjob.cpp:445
+#: jobs/k3bcdcopyjob.cpp:444
 msgid "Cddb error (%1)."
 msgstr "सीडीडीबी त्रुटि (%1) ।"
 
-#: jobs/k3bcdcopyjob.cpp:458 projects/k3bcdrdaowriter.cpp:556
+#: jobs/k3bcdcopyjob.cpp:457 projects/k3bcdrdaowriter.cpp:556
 #: projects/k3bcdrecordwriter.cpp:326 projects/k3bgrowisofswriter.cpp:354
 msgid "Preparing write process..."
 msgstr "लेख्ने प्रक्रिया तयार गरिँदैछ..."
 
-#: jobs/k3bcdcopyjob.cpp:517 jobs/k3bcdcopyjob.cpp:563
-#: jobs/k3bdvdcopyjob.cpp:304
+#: jobs/k3bcdcopyjob.cpp:516 jobs/k3bcdcopyjob.cpp:562
+#: jobs/k3bdvdcopyjob.cpp:303
 msgid "Specified an unusable temporary path. Using default."
 msgstr ""
 "एउटा अनुपयोगी अस्थायी मार्ग निर्दिष्ट गरियो । पूर्वनिर्धाण प्रयोग गर्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:528 projects/videodvd/k3bvideodvdimager.cpp:111
+#: jobs/k3bcdcopyjob.cpp:527 projects/videodvd/k3bvideodvdimager.cpp:111
 #: projects/videodvd/k3bvideodvdimager.cpp:117
 msgid "Unable to create temporary directory '%1'."
 msgstr "अस्थायी डाइरेक्टरी सिर्जना गर्न असक्षम भयो '%1' ।"
 
-#: jobs/k3bcdcopyjob.cpp:535
+#: jobs/k3bcdcopyjob.cpp:534
 #, c-format
 msgid "Using temporary directory %1."
 msgstr "अस्थायी डाइरेक्टरी %1 प्रयोग गर्दे ।"
 
-#: jobs/k3bcdcopyjob.cpp:558 jobs/k3bdvdcopyjob.cpp:299
+#: jobs/k3bcdcopyjob.cpp:557 jobs/k3bdvdcopyjob.cpp:298
 msgid "Do you want to overwrite %1?"
 msgstr "तपाईँ %1 अधिलेखन चाहनुहुन्छ ?"
 
-#: jobs/k3bcdcopyjob.cpp:559 jobs/k3bdvdcopyjob.cpp:300
+#: jobs/k3bcdcopyjob.cpp:558 jobs/k3bdvdcopyjob.cpp:299
 msgid "File Exists"
 msgstr "फाइल अवस्थित छ"
 
-#: jobs/k3bcdcopyjob.cpp:568 jobs/k3bdvdcopyjob.cpp:309
+#: jobs/k3bcdcopyjob.cpp:567 jobs/k3bdvdcopyjob.cpp:308
 #, c-format
 msgid "Writing image file to %1."
 msgstr "%1 मा छवि फाइल लेख्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:584
+#: jobs/k3bcdcopyjob.cpp:583
 #, c-format
 msgid "Reading Session %1"
 msgstr "सत्र %1 पढ्दै"
 
-#: jobs/k3bcdcopyjob.cpp:586
+#: jobs/k3bcdcopyjob.cpp:585
 #, fuzzy
 msgid "Reading Source Medium"
 msgstr "स्रोत मिडिया पढ्दै ।"
 
-#: jobs/k3bcdcopyjob.cpp:589 jobs/k3bcdcopyjob.cpp:1158
+#: jobs/k3bcdcopyjob.cpp:588 jobs/k3bcdcopyjob.cpp:1162
 msgid "Reading track %1 of %2"
 msgstr "%2 को ट्रयाक %1 पढ्दै"
 
-#: jobs/k3bcdcopyjob.cpp:681
+#: jobs/k3bcdcopyjob.cpp:680
 #, c-format
 msgid "Simulating Session %1"
 msgstr "सत्र %1 नक्कल गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:683
+#: jobs/k3bcdcopyjob.cpp:682
 msgid "Writing Copy %1 (Session %2)"
 msgstr "प्रतिलिपि %1 (सत्र %2) लेख्दै"
 
-#: jobs/k3bcdcopyjob.cpp:685
+#: jobs/k3bcdcopyjob.cpp:684
 msgid "Writing Copy (Session %2)"
 msgstr "प्रतिलिपि लेख्दै (सत्र %2)"
 
-#: jobs/k3bcdcopyjob.cpp:689 projects/audiocd/k3baudiojob.cpp:651
+#: jobs/k3bcdcopyjob.cpp:688 projects/audiocd/k3baudiojob.cpp:651
 #: projects/datacd/k3bdatajob.cpp:371 projects/k3bcdrdaowriter.cpp:597
 #: projects/k3bcdrdaowriter.cpp:613 projects/k3bcdrecordwriter.cpp:351
-#: projects/k3bgrowisofswriter.cpp:379 projects/mixedcd/k3bmixedjob.cpp:1004
+#: projects/k3bgrowisofswriter.cpp:379 projects/mixedcd/k3bmixedjob.cpp:1006
 msgid "Simulating"
 msgstr "नक्कल गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:691 projects/audiocd/k3baudiojob.cpp:653
-#: projects/datacd/k3bdatajob.cpp:373 projects/mixedcd/k3bmixedjob.cpp:1006
+#: jobs/k3bcdcopyjob.cpp:690 projects/audiocd/k3baudiojob.cpp:653
+#: projects/datacd/k3bdatajob.cpp:373 projects/mixedcd/k3bmixedjob.cpp:1008
 #, c-format
 msgid "Writing Copy %1"
 msgstr "प्रतिलिपि %1 लेख्दै"
 
-#: jobs/k3bcdcopyjob.cpp:693
+#: jobs/k3bcdcopyjob.cpp:692
 msgid "Writing Copy"
 msgstr "प्रतिलिपि लेख्दै"
 
-#: jobs/k3bcdcopyjob.cpp:696 projects/audiocd/k3baudiojob.cpp:658
+#: jobs/k3bcdcopyjob.cpp:695 projects/audiocd/k3baudiojob.cpp:658
 #: projects/datadvd/k3bdvdbooktypejob.cpp:116
-#: projects/datadvd/k3bdvdjob.cpp:192 projects/mixedcd/k3bmixedjob.cpp:1013
+#: projects/datadvd/k3bdvdjob.cpp:190 projects/mixedcd/k3bmixedjob.cpp:1015
 msgid "Waiting for media"
 msgstr "मिडियाका लागि पर्खदै"
 
-#: jobs/k3bcdcopyjob.cpp:838 projects/audiocd/k3baudiojob.cpp:304
+#: jobs/k3bcdcopyjob.cpp:836 projects/audiocd/k3baudiojob.cpp:304
 msgid "It is not possible to write CD-Text in TAO mode."
 msgstr "TAO मोडमा सीडी-पाठ लेख्न सम्भव छैन ।"
 
-#: jobs/k3bcdcopyjob.cpp:958
+#: jobs/k3bcdcopyjob.cpp:956
 #, c-format
 msgid "Successfully read session %1."
 msgstr "सत्र %1 सफलतापूर्वक पढियो ।"
 
-#: jobs/k3bcdcopyjob.cpp:960
+#: jobs/k3bcdcopyjob.cpp:958
 msgid "Successfully read source disk."
 msgstr "स्रोत डिस्क सफलतापूर्वक पढियो ।"
 
-#: jobs/k3bcdcopyjob.cpp:975 jobs/k3bdvdcopyjob.cpp:545
+#: jobs/k3bcdcopyjob.cpp:973 jobs/k3bdvdcopyjob.cpp:543
 #, fuzzy
 msgid "K3b was unable to eject the source disk. Please do so manually."
 msgstr "K3b डिस्क मेट्न असक्षम भयो ।"
 
-#: jobs/k3bcdcopyjob.cpp:992
+#: jobs/k3bcdcopyjob.cpp:990
 #, c-format
 msgid "Error while reading session %1."
 msgstr "सत्र %1 पढ्दा त्रुटि ।"
 
-#: jobs/k3bcdcopyjob.cpp:1031 jobs/k3bdvdcopyjob.cpp:637
-#, fuzzy
-msgid "K3b was unable to eject the written disk. Please do so manually."
-msgstr "K3b डिस्क मेट्न असक्षम भयो ।"
+#: jobs/k3bcdcopyjob.cpp:1060 projects/k3bcdrecordwriter.cpp:623
+#: projects/mixedcd/k3bmixedjob.cpp:538
+msgid "Please reload the medium and press 'ok'"
+msgstr "कृपया माध्यम पुन: लोड गर्नुहोस् र 'ठीक छ' थिच्नुहोस्"
 
-#: jobs/k3bcdcopyjob.cpp:1071 projects/audiocd/k3baudiojob.cpp:695
+#: jobs/k3bcdcopyjob.cpp:1061 projects/k3bcdrecordwriter.cpp:624
+#: projects/mixedcd/k3bmixedjob.cpp:539
+msgid "Unable to close the tray"
+msgstr "ट्रे बन्द गर्न असक्षम भयो"
+
+#: jobs/k3bcdcopyjob.cpp:1075 projects/audiocd/k3baudiojob.cpp:696
 msgid "Removing temporary files."
 msgstr "अस्थायी फाइल हटाउँदै ।"
 
-#: jobs/k3bbinimagewritingjob.cpp:210 jobs/k3bcdcopyjob.cpp:1136
-#: jobs/k3bcdcopyjob.cpp:1138 jobs/k3bcdcopyjob.cpp:1141
-#: jobs/k3bcdcopyjob.cpp:1143
+#: jobs/k3bbinimagewritingjob.cpp:210 jobs/k3bcdcopyjob.cpp:1140
+#: jobs/k3bcdcopyjob.cpp:1142 jobs/k3bcdcopyjob.cpp:1145
+#: jobs/k3bcdcopyjob.cpp:1147
 msgid "Writing track %1 of %2"
 msgstr "%2 को ट्रयाक %1 लेख्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1166
+#: jobs/k3bcdcopyjob.cpp:1170
 msgid "Creating CD Image"
 msgstr "सीडी छवि सिर्जना गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1170
+#: jobs/k3bcdcopyjob.cpp:1174
 msgid "Simulating CD Copy On-The-Fly"
 msgstr "फ्लाइमा सीडी प्रतिलिपि नक्कल गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1172
+#: jobs/k3bcdcopyjob.cpp:1176
 msgid "Simulating CD Copy"
 msgstr "सीडी प्रतिलिपि नक्कल गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1176
+#: jobs/k3bcdcopyjob.cpp:1180
 msgid "Copying CD On-The-Fly"
 msgstr "फ्लाइमा सीडी प्रतिलिपि गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1178
+#: jobs/k3bcdcopyjob.cpp:1182
 msgid "Copying CD"
 msgstr "सीडी प्रतिलिपि गर्दै"
 
-#: jobs/k3bcdcopyjob.cpp:1186 jobs/k3bdvdcopyjob.cpp:890
+#: jobs/k3bcdcopyjob.cpp:1190 jobs/k3bdvdcopyjob.cpp:884
 #, c-format
 msgid ""
 "_n: Creating 1 copy\n"
@@ -1001,11 +1017,11 @@ msgid "Reading with sector size %1."
 msgstr "सेक्टर साइज %1 सँग पढ्दै ।"
 
 #: jobs/k3baudiosessionreadingjob.cpp:157 jobs/k3bdatatrackreader.cpp:202
-#: jobs/k3bdvdcopyjob.cpp:336
+#: jobs/k3bdvdcopyjob.cpp:335
 msgid "Unable to open '%1' for writing."
 msgstr "लेख्नका लागि '%1' खोल्न असक्षम भयो ।"
 
-#: jobs/k3bdatatrackreader.cpp:234 jobs/k3bdatatrackreader.cpp:415
+#: jobs/k3bdatatrackreader.cpp:234 jobs/k3bdatatrackreader.cpp:414
 #, c-format
 msgid "Error while reading sector %1."
 msgstr "सेक्टर %1 पढ्दा त्रुटि ।"
@@ -1024,7 +1040,7 @@ msgstr ""
 msgid "Problem while reading. Retrying from sector %1."
 msgstr "पढ्दा त्रुटि । सेक्टर %1 बाट पुन: प्रयास गर्दै ।"
 
-#: jobs/k3bdatatrackreader.cpp:407
+#: jobs/k3bdatatrackreader.cpp:406
 #, c-format
 msgid "Ignoring read error in sector %1."
 msgstr "सेक्टर %1 मा पढ्ने त्रुटि उपेक्षा गर्दै ।"
@@ -1092,45 +1108,45 @@ msgstr "%1 ले त्रुटि फर्कायो: %2"
 msgid "Readcd exited abnormally."
 msgstr "पढ्ने सीडी असामन्य रूपमा अन्त्य भयो ।"
 
-#: jobs/k3bdvdcopyjob.cpp:125
+#: jobs/k3bdvdcopyjob.cpp:124
 #, fuzzy, c-format
 msgid "K3b does not support writing on-the-fly with growisofs %1."
 msgstr "K3b ले growisofs सँग फ्लाइमा लेखन समर्थन गर्दैन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:127
+#: jobs/k3bdvdcopyjob.cpp:126
 msgid "Disabling on-the-fly writing."
 msgstr "फ्लाइ लेखनमा अक्षम पार्दै "
 
-#: jobs/k3bdvdcopyjob.cpp:162
+#: jobs/k3bdvdcopyjob.cpp:161
 #, fuzzy
 msgid "No source medium found."
 msgstr "कुनै स्रोत मिडिया फेला परेन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:168
+#: jobs/k3bdvdcopyjob.cpp:167
 msgid "Found encrypted DVD."
 msgstr "गुप्तिकृत डीभीडी फेला पर्यो ।"
 
-#: jobs/k3bdvdcopyjob.cpp:184
+#: jobs/k3bdvdcopyjob.cpp:183
 msgid "Cannot copy encrypted DVDs."
 msgstr "गुप्तिकृत डीभीडीहरू प्रतिलिपि गर्न सकिँदैन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:220
+#: jobs/k3bdvdcopyjob.cpp:219
 msgid "The writer does not support writing Double Layer DVD."
 msgstr "राइटरले दोहोरो लेख्ने तह डीभीडी समर्थन गर्दैन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:228
+#: jobs/k3bdvdcopyjob.cpp:227
 msgid "Growisofs >= 5.20 is needed to write Double Layer DVD+R."
 msgstr "दोहोरो तह DVD+R लेख्न Growisofs >= 5.20 को आवश्यक पर्दछ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:242
+#: jobs/k3bdvdcopyjob.cpp:241
 msgid "K3b does not support copying multi-session DVDs."
 msgstr "K3b ले बहुविध-सत्र डीभीडीहरू प्रतिलिपि गर्न समर्थन गर्दैन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:263
+#: jobs/k3bdvdcopyjob.cpp:262
 msgid "K3b relies on the size saved in the ISO9660 header."
 msgstr "K3b ISO9660 हेडरमा बचत गरिएको साइजमा आश्रित हुन्छ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:264
+#: jobs/k3bdvdcopyjob.cpp:263
 msgid ""
 "This might result in a corrupt copy if the source was mastered with buggy "
 "software."
@@ -1138,63 +1154,68 @@ msgstr ""
 "यदि स्रोत बग्गी सफ्टवेयरबाट मास्टर गरिएको छ भने यसले दूषित प्रतिलिपिको नतिजा "
 "दिन सक्छ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:280
+#: jobs/k3bdvdcopyjob.cpp:279
 msgid "K3b does not support copying DVD-RAM."
 msgstr "K3b ले डीभीडी र्याम प्रतिलिपि गर्न समर्थन गर्दैन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:286
+#: jobs/k3bdvdcopyjob.cpp:285
 msgid "Unable to determine DVD media type."
 msgstr "डीभीडी मिडिया प्रकार निर्धारण गर्न असक्षम भयो ।"
 
-#: jobs/k3bdvdcopyjob.cpp:310
+#: jobs/k3bdvdcopyjob.cpp:309
 #, fuzzy
 msgid "Reading source medium."
 msgstr "स्रोत मिडिया पढ्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:349
+#: jobs/k3bdvdcopyjob.cpp:348
 msgid "Creating DVD image"
 msgstr "डीभीडी छवि सिर्जना गर्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:355
+#: jobs/k3bdvdcopyjob.cpp:354
 msgid "Simulating DVD copy"
 msgstr "डीभीडी प्रतिलिपि नक्कल गर्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:357 jobs/k3bdvdcopyjob.cpp:553
-#: jobs/k3bdvdcopyjob.cpp:642 jobs/k3bdvdcopyjob.cpp:695
+#: jobs/k3bdvdcopyjob.cpp:356 jobs/k3bdvdcopyjob.cpp:551
+#: jobs/k3bdvdcopyjob.cpp:640 jobs/k3bdvdcopyjob.cpp:689
 #, c-format
 msgid "Writing DVD copy %1"
 msgstr "डीभीडी प्रतिलिपि %1 लेख्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:359 jobs/k3bdvdcopyjob.cpp:555
-#: jobs/k3bdvdcopyjob.cpp:777
+#: jobs/k3bdvdcopyjob.cpp:358 jobs/k3bdvdcopyjob.cpp:553
+#: jobs/k3bdvdcopyjob.cpp:771
 msgid "Writing DVD copy"
 msgstr "डीभीडी प्रतिलिपि लेख्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:534
+#: jobs/k3bdvdcopyjob.cpp:532
 msgid "Successfully read source DVD."
 msgstr "स्रोत डीभीडी सफलतापूर्वक पढियो ।"
 
-#: jobs/k3bdvdcopyjob.cpp:602
+#: jobs/k3bdvdcopyjob.cpp:600
 #, c-format
 msgid "Successfully written DVD copy %1."
 msgstr "डीभीडी प्रतिलिपि %1 सफलतापूर्वक लेखियो ।"
 
-#: jobs/k3bdvdcopyjob.cpp:625
+#: jobs/k3bdvdcopyjob.cpp:623
 #, fuzzy, c-format
 msgid "Verifying DVD copy %1"
 msgstr "डीभीडी प्रतिलिपि %1 लेख्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:627
+#: jobs/k3bdvdcopyjob.cpp:625
 #, fuzzy
 msgid "Verifying DVD copy"
 msgstr "डीभीडी प्रतिलिपि लेख्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:756 projects/datadvd/k3bdvdjob.cpp:204
+#: jobs/k3bdvdcopyjob.cpp:635
+#, fuzzy
+msgid "K3b was unable to eject the written disk. Please do so manually."
+msgstr "K3b डिस्क मेट्न असक्षम भयो ।"
+
+#: jobs/k3bdvdcopyjob.cpp:750 projects/datadvd/k3bdvdjob.cpp:202
 msgid "Forced by user. Growisofs will be called without further tests."
 msgstr ""
 "प्रयोगकर्ताद्वारा जोर गरियो । Growisofs लाई अगाडि परीक्षण बिना नै बोलाइनेछ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:768
+#: jobs/k3bdvdcopyjob.cpp:762
 msgid ""
 "K3b does not support simulation with DVD+R(W) media. Do you really want to "
 "continue? The media will actually be written to."
@@ -1202,23 +1223,23 @@ msgstr ""
 "K3b ले DVD+R(W) मिडियासँग नक्कल समर्थन गर्दैन । तपाईँ साँचिकै जारी राख्न "
 "चाहनुहुन्छ ? यसमा साँचिकै मिडिया लेखिनेछ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:781 projects/datadvd/k3bdvdjob.cpp:225
+#: jobs/k3bdvdcopyjob.cpp:775 projects/datadvd/k3bdvdjob.cpp:223
 msgid "Writing mode ignored when writing DVD+R(W) media."
 msgstr "DVD+R(W) मिडिया लेख्दा लेख्ने मोड उपेक्षा गरियो ।"
 
-#: jobs/k3bdvdcopyjob.cpp:784 projects/datadvd/k3bdvdjob.cpp:230
+#: jobs/k3bdvdcopyjob.cpp:778 projects/datadvd/k3bdvdjob.cpp:228
 msgid "Writing DVD+RW."
 msgstr "DVD+RW लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:786 projects/datadvd/k3bdvdjob.cpp:235
+#: jobs/k3bdvdcopyjob.cpp:780 projects/datadvd/k3bdvdjob.cpp:233
 msgid "Writing Double Layer DVD+R."
 msgstr "दोहोरो तह DVD+R लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:788 projects/datadvd/k3bdvdjob.cpp:237
+#: jobs/k3bdvdcopyjob.cpp:782 projects/datadvd/k3bdvdjob.cpp:235
 msgid "Writing DVD+R."
 msgstr "DVD+R लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:796 projects/datadvd/k3bdvdjob.cpp:245
+#: jobs/k3bdvdcopyjob.cpp:790 projects/datadvd/k3bdvdjob.cpp:243
 msgid ""
 "Your writer (%1 %2) does not support simulation with DVD-R(W) media. Do you "
 "really want to continue? The media will be written for real."
@@ -1226,49 +1247,49 @@ msgstr ""
 "तपाईँको राइटर (%1 %2) ले DVD-R(W) मिडियासँग नक्कल समर्थन गर्दैन । तपाईँ साँचिकै "
 "जारी राख्न चाहनुहुन्छ ? मिडिया वास्तविकका लागि लेखिनेछ ।"
 
-#: jobs/k3bdvdcopyjob.cpp:801 projects/datadvd/k3bdvdjob.cpp:250
+#: jobs/k3bdvdcopyjob.cpp:795 projects/datadvd/k3bdvdjob.cpp:248
 msgid "No Simulation with DVD-R(W)"
 msgstr "DVD-R(W) सँग कुनै नक्कल छैन"
 
-#: jobs/k3bdvdcopyjob.cpp:822 projects/datadvd/k3bdvdjob.cpp:262
+#: jobs/k3bdvdcopyjob.cpp:816 projects/datadvd/k3bdvdjob.cpp:260
 msgid "Writing DVD-RW in restricted overwrite mode."
 msgstr "प्रतिबन्धित अधिलेखन मोडमा DVD-RW लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:830
+#: jobs/k3bdvdcopyjob.cpp:824
 msgid "Writing DVD-RW in DAO mode."
 msgstr "DAO मोडमा DVD-RW लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:834
+#: jobs/k3bdvdcopyjob.cpp:828
 msgid "Writing DVD-RW in incremental mode."
 msgstr "बढोत्तरित मोडमा DVD-RW लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:843 projects/datadvd/k3bdvdjob.cpp:297
+#: jobs/k3bdvdcopyjob.cpp:837 projects/datadvd/k3bdvdjob.cpp:295
 msgid "Restricted Overwrite is not possible with DVD-R media."
 msgstr "DVD-R मिडियासँग प्रतिबन्धित अधिलेखन सम्भव छैन ।"
 
-#: jobs/k3bdvdcopyjob.cpp:848 projects/datadvd/k3bdvdjob.cpp:276
-#: projects/datadvd/k3bdvdjob.cpp:291
+#: jobs/k3bdvdcopyjob.cpp:842 projects/datadvd/k3bdvdjob.cpp:274
+#: projects/datadvd/k3bdvdjob.cpp:289
 msgid "Writing %1 in DAO mode."
 msgstr "DAO मोडमा %1 लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:852 projects/datadvd/k3bdvdjob.cpp:299
+#: jobs/k3bdvdcopyjob.cpp:846 projects/datadvd/k3bdvdjob.cpp:297
 msgid "Writing %1 in incremental mode."
 msgstr "बढोत्तरित मोडमा %1 लेख्दै ।"
 
-#: jobs/k3bdvdcopyjob.cpp:868 projects/datacd/k3bdatajob.cpp:961
+#: jobs/k3bdvdcopyjob.cpp:862 projects/datacd/k3bdatajob.cpp:956
 #, c-format
 msgid "Removed image file %1"
 msgstr "हटाइएको छवि फाइल %1"
 
-#: jobs/k3bdvdcopyjob.cpp:876
+#: jobs/k3bdvdcopyjob.cpp:870
 msgid "Creating DVD Image"
 msgstr "DVD छवि सिर्जना गर्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:880
+#: jobs/k3bdvdcopyjob.cpp:874
 msgid "Copying DVD On-The-Fly"
 msgstr "फ्लाइमा DVD प्रतिलिपि गर्दै"
 
-#: jobs/k3bdvdcopyjob.cpp:882
+#: jobs/k3bdvdcopyjob.cpp:876
 msgid "Copying DVD"
 msgstr "DVD प्रतिलिपि गर्दै"
 
@@ -1685,21 +1706,21 @@ msgstr ""
 "त्यसपछि डीभीडी राइट गर्न बर्न बटन थिच्नुहोस् ।"
 
 #: projects/audiocd/k3baudiojob.cpp:655 projects/datacd/k3bdatajob.cpp:375
-#: projects/datadvd/k3bdvdjob.cpp:221 projects/k3bcdrdaowriter.cpp:602
+#: projects/datadvd/k3bdvdjob.cpp:219 projects/k3bcdrdaowriter.cpp:602
 #: projects/k3bcdrecordwriter.cpp:358 projects/k3bgrowisofswriter.cpp:384
 msgid "Writing"
 msgstr "लेख्दै"
 
-#: projects/datadvd/k3bdvdjob.cpp:232
+#: projects/datadvd/k3bdvdjob.cpp:230
 msgid "Growing ISO9660 filesystem on DVD+RW."
 msgstr "DVD+RW मा ISO9660 फाइलप्रणाली वृद्धि गर्दै ।"
 
-#: projects/datadvd/k3bdvdjob.cpp:264
+#: projects/datadvd/k3bdvdjob.cpp:262
 msgid "Growing ISO9660 filesystem on DVD-RW in restricted overwrite mode."
 msgstr ""
 "प्रतिबन्धित अधिलेखन मोड भित्र DVD-RW मा ISO9660 फाइलप्रणाली वृद्धि गर्दै ।"
 
-#: projects/datadvd/k3bdvdjob.cpp:282
+#: projects/datadvd/k3bdvdjob.cpp:280
 msgid ""
 "Your writer (%1 %2) does not support Incremental Streaming with %3 media. "
 "Multisession will not be possible. Continue anyway?"
@@ -1707,23 +1728,23 @@ msgstr ""
 "तपाईँको राइटर (%1 %2) ले %3 मिडियासँग बढोत्तरित प्रवाह समर्थन गर्दैन । बहुसत्र "
 "सम्भव हुनेछैन । जे भए पनि जारी राख्नुहुन्छ ?"
 
-#: projects/datadvd/k3bdvdjob.cpp:287
+#: projects/datadvd/k3bdvdjob.cpp:285
 msgid "No Incremental Streaming"
 msgstr "कुनै बढोत्तरित प्रवाह छैन"
 
-#: projects/datacd/k3bdatajob.cpp:916 projects/datadvd/k3bdvdjob.cpp:313
+#: projects/datacd/k3bdatajob.cpp:911 projects/datadvd/k3bdvdjob.cpp:311
 msgid "Creating Data Image File"
 msgstr "डेटा छवि फाइल सिर्जना गर्दै"
 
-#: projects/datadvd/k3bdvdjob.cpp:317
+#: projects/datadvd/k3bdvdjob.cpp:315
 msgid "Writing Data DVD"
 msgstr "डेटा डीभीडी लेख्दै"
 
-#: projects/datadvd/k3bdvdjob.cpp:323
+#: projects/datadvd/k3bdvdjob.cpp:321
 msgid "Writing Multisession DVD"
 msgstr "बहुसत्रिय डीभीडी लेख्दै"
 
-#: projects/datacd/k3bdatajob.cpp:941 projects/datadvd/k3bdvdjob.cpp:338
+#: projects/datacd/k3bdatajob.cpp:936 projects/datadvd/k3bdvdjob.cpp:336
 msgid ""
 "_n: ISO9660 Filesystem (Size: %1) - %n copy\n"
 "ISO9660 Filesystem (Size: %1) - %n copies"
@@ -1731,7 +1752,7 @@ msgstr ""
 "ISO9660 फाइलप्रणाली (साइज: %1) - %n प्रतिलिपि\n"
 "ISO9660 फाइलप्रणाली (साइज: %1) - %n प्रतिलिपि"
 
-#: projects/datacd/k3bdatajob.cpp:945 projects/datadvd/k3bdvdjob.cpp:342
+#: projects/datacd/k3bdatajob.cpp:940 projects/datadvd/k3bdvdjob.cpp:340
 msgid "ISO9660 Filesystem (Size: %1)"
 msgstr "ISO9660 फाइलप्रणाली (साइज: %1)"
 
@@ -1811,122 +1832,114 @@ msgstr "ISO छवि सिर्जना गर्दा त्रुटि �
 msgid "ISO image successfully created."
 msgstr "ISO छवि सफलतापूर्वक सिर्जना गरियो ।"
 
-#: projects/k3bcdrecordwriter.cpp:623 projects/mixedcd/k3bmixedjob.cpp:534
-msgid "Please reload the medium and press 'ok'"
-msgstr "कृपया माध्यम पुन: लोड गर्नुहोस् र 'ठीक छ' थिच्नुहोस्"
-
-#: projects/k3bcdrecordwriter.cpp:624 projects/mixedcd/k3bmixedjob.cpp:535
-msgid "Unable to close the tray"
-msgstr "ट्रे बन्द गर्न असक्षम भयो"
-
-#: projects/audiocd/k3baudiojob.cpp:450 projects/mixedcd/k3bmixedjob.cpp:572
+#: projects/audiocd/k3baudiojob.cpp:450 projects/mixedcd/k3bmixedjob.cpp:576
 msgid "Error while decoding audio tracks."
 msgstr "अडियो ट्रयाकमा सङ्केतन हटाउँदा त्रुटि ।"
 
-#: projects/mixedcd/k3bmixedjob.cpp:585
+#: projects/mixedcd/k3bmixedjob.cpp:589
 msgid "Audio images successfully created."
 msgstr "अडियो छविहरू सफलतापूर्वक सिर्जना गरियो ।"
 
-#: projects/audiocd/k3baudiojob.cpp:482 projects/mixedcd/k3bmixedjob.cpp:609
+#: projects/audiocd/k3baudiojob.cpp:482 projects/mixedcd/k3bmixedjob.cpp:613
 #, fuzzy
 msgid "Decoding audio track %1 of %2%3"
 msgstr "%2%3 को अडियो ट्रयाक सङ्केतनबाट हटाउँदै"
 
-#: projects/audiocd/k3baudiojob.cpp:590 projects/mixedcd/k3bmixedjob.cpp:875
+#: projects/audiocd/k3baudiojob.cpp:590 projects/mixedcd/k3bmixedjob.cpp:877
 msgid "Writing track %1 of %2%3"
 msgstr "%2%3 को ट्रयाक %1 लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:882
+#: projects/mixedcd/k3bmixedjob.cpp:884
 msgid "Writing track %1 of %2 (%3)"
 msgstr "%2 (%3) को ट्रयाक %1 लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:882
+#: projects/mixedcd/k3bmixedjob.cpp:884
 msgid "ISO9660 data"
 msgstr "ISO9660 डेटा"
 
-#: projects/mixedcd/k3bmixedjob.cpp:988
+#: projects/mixedcd/k3bmixedjob.cpp:990
 msgid "Simulating second session"
 msgstr "दोस्रो सत्र नक्कल गर्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:990
+#: projects/mixedcd/k3bmixedjob.cpp:992
 #, c-format
 msgid "Writing second session of copy %1"
 msgstr "दोस्रो सत्रको प्रतिलिपि %1 लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:992
+#: projects/mixedcd/k3bmixedjob.cpp:994
 msgid "Writing second session"
 msgstr "दोस्रो सत्र लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:996
+#: projects/mixedcd/k3bmixedjob.cpp:998
 msgid "Simulating first session"
 msgstr "पहिलो सत्र नक्कल गर्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:998
+#: projects/mixedcd/k3bmixedjob.cpp:1000
 #, c-format
 msgid "Writing first session of copy %1"
 msgstr "पहिलो सत्र को प्रतिलिपि %1 लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1000
+#: projects/mixedcd/k3bmixedjob.cpp:1002
 msgid "Writing first session"
 msgstr "पहिलो सत्र लेख्दै"
 
 #: projects/k3bcdrecordwriter.cpp:505 projects/k3bgrowisofshandler.cpp:102
-#: projects/mixedcd/k3bmixedjob.cpp:1029
+#: projects/mixedcd/k3bmixedjob.cpp:1031
 msgid "Trying to write more than the official disk capacity"
 msgstr "अफिसल डिस्क क्षमता भन्दा बढी लेख्ने प्रयास गर्दै"
 
 #: projects/k3bcdrdaowriter.cpp:911 projects/k3bcdrecordwriter.cpp:702
-#: projects/k3bgrowisofshandler.cpp:239 projects/mixedcd/k3bmixedjob.cpp:1032
+#: projects/k3bgrowisofshandler.cpp:239 projects/mixedcd/k3bmixedjob.cpp:1034
 msgid "Data does not fit on disk."
 msgstr "डेटा डिस्कमा मिलेन ।"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1070
+#: projects/mixedcd/k3bmixedjob.cpp:1072
 msgid "Creating ISO image file"
 msgstr "ISO छवि फाइल सिर्जना गर्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1071 projects/mixedcd/k3bmixedjob.cpp:1072
+#: projects/mixedcd/k3bmixedjob.cpp:1073 projects/mixedcd/k3bmixedjob.cpp:1074
 #, c-format
 msgid "Creating ISO image in %1"
 msgstr "%1 मा ISO छवि सिर्जना गर्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1097
+#: projects/mixedcd/k3bmixedjob.cpp:1100
 msgid "Removing buffer files."
 msgstr "बफर फाइलहरू हटाउँदै ।"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1101
+#: projects/mixedcd/k3bmixedjob.cpp:1105
 #, c-format
 msgid "Could not delete file %1."
 msgstr "%1 फाइल मेट्न सकेन ।"
 
-#: projects/audiocd/k3baudiojob.cpp:292 projects/mixedcd/k3bmixedjob.cpp:1205
+#: projects/audiocd/k3baudiojob.cpp:292 projects/mixedcd/k3bmixedjob.cpp:1210
 msgid "On-the-fly writing with cdrecord < 2.01a13 not supported."
 msgstr "फ्लाइमा cdrecord <2.01a13 सँग लेखन समर्थन गर्दैन ।"
 
-#: projects/audiocd/k3baudiojob.cpp:299 projects/mixedcd/k3bmixedjob.cpp:1211
+#: projects/audiocd/k3baudiojob.cpp:299 projects/mixedcd/k3bmixedjob.cpp:1216
 msgid "Cdrecord %1 does not support CD-Text writing."
 msgstr "cdrecord %1 ले सीडी-पाठ लेखन समर्थन गर्दैन ।"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1214
+#: projects/mixedcd/k3bmixedjob.cpp:1219
 msgid "It is not possible to write CD-Text in TAO mode. Try DAO or RAW."
 msgstr "TAO मोडमा सीडी-पाठ लेख्न सम्भव छैन । DAO वा RAW मा प्रयास गर्नुहोस् ।"
 
-#: projects/audiocd/k3baudiojob.cpp:727 projects/mixedcd/k3bmixedjob.cpp:1246
+#: projects/audiocd/k3baudiojob.cpp:730 projects/mixedcd/k3bmixedjob.cpp:1251
 msgid "Normalizing volume levels"
 msgstr "भोल्युम तहहरू सामान्यकरण गर्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1311
+#: projects/mixedcd/k3bmixedjob.cpp:1316
 msgid "Writing Enhanced Audio CD"
 msgstr "विस्तार गरिएको अडियो सीडी लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1316
+#: projects/mixedcd/k3bmixedjob.cpp:1321
 msgid "Writing Mixed Mode CD"
 msgstr "मिश्रित मोड सीडी लेख्दै"
 
-#: projects/mixedcd/k3bmixedjob.cpp:1325
+#: projects/mixedcd/k3bmixedjob.cpp:1330
 msgid "%1 tracks (%2 minutes audio data, %3 ISO9660 data)"
 msgstr "%1 ट्रयाक (%2 मिनेट अडियो डेटा, %3 ISO9660 डेटा)"
 
-#: projects/audiocd/k3baudiojob.cpp:857 projects/mixedcd/k3bmixedjob.cpp:1330
+#: projects/audiocd/k3baudiojob.cpp:860 projects/mixedcd/k3bmixedjob.cpp:1335
 #: projects/movixcd/k3bmovixjob.cpp:128
 #: projects/movixdvd/k3bmovixdvdjob.cpp:127 projects/videocd/k3bvcdjob.cpp:563
 #: projects/videodvd/k3bvideodvdjob.cpp:97
@@ -2328,30 +2341,30 @@ msgstr "%1 मा छवि सफलतापूर्वक सिर्जन
 msgid "Error while creating ISO image"
 msgstr "ISO छवि सिर्जना गर्दा त्रुटि"
 
-#: projects/datacd/k3bdatajob.cpp:610
+#: projects/datacd/k3bdatajob.cpp:607
 msgid "Most writers do not support writing multisession CDs in DAO mode."
 msgstr "धेरैजसो राइटरहरूले DAO मोडमा बहुसत्रिय सीडीहरू लेख्न समर्थन गर्दैन ।"
 
-#: projects/datacd/k3bdatajob.cpp:713
+#: projects/datacd/k3bdatajob.cpp:708
 msgid "Unable to determine the last track's datamode. Using default."
 msgstr ""
 "अन्तिम ट्रयाकको डेटामोड निर्धारन गर्न असक्षम भयो । पूर्वनिर्धारित प्रयोग गर्दै "
 "।"
 
-#: projects/datacd/k3bdatajob.cpp:776
+#: projects/datacd/k3bdatajob.cpp:771
 msgid "Searching for old session"
 msgstr "पुरानो सत्रका लागि खोजी गर्दै"
 
-#: projects/datacd/k3bdatajob.cpp:899
+#: projects/datacd/k3bdatajob.cpp:894
 #, fuzzy
 msgid "Waiting for a medium"
 msgstr "मिडियाका लागि पर्खदै"
 
-#: projects/datacd/k3bdatajob.cpp:920
+#: projects/datacd/k3bdatajob.cpp:915
 msgid "Writing Data CD"
 msgstr "डेटा सीडी लेख्दै"
 
-#: projects/datacd/k3bdatajob.cpp:926
+#: projects/datacd/k3bdatajob.cpp:921
 msgid "Writing Multisession CD"
 msgstr "बहुसत्रिय सीडी लेख्दै"
 
@@ -2813,11 +2826,11 @@ msgstr "सबै ट्रयाकहरू सफलतापूर्वक 
 msgid "IO Error. Most likely no space left on harddisk."
 msgstr ""
 
-#: projects/audiocd/k3baudiojob.cpp:844
+#: projects/audiocd/k3baudiojob.cpp:847
 msgid "Writing Audio CD"
 msgstr "अडियो सीडी लेख्दै"
 
-#: projects/audiocd/k3baudiojob.cpp:854
+#: projects/audiocd/k3baudiojob.cpp:857
 msgid ""
 "_n: 1 track (%1 minutes)\n"
 "%n tracks (%1 minutes)"
@@ -3412,9 +3425,6 @@ msgstr ""
 
 #~ msgid "Formatting DVD±RW"
 #~ msgstr "DVD±RW ढाँचाबद्ध गर्दै"
-
-#~ msgid "Reloading the media"
-#~ msgstr "मिडिया पुन: लोड गर्दै"
 
 #~ msgid "Calculating the image's md5sum"
 #~ msgstr "छविको md5sum गणना गर्दै"
