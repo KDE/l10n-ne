@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-26 05:31+0200\n"
+"POT-Creation-Date: 2007-07-27 05:45+0200\n"
 "PO-Revision-Date: 2007-02-20 16:05+0200\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -79,6 +79,12 @@ msgid "Start KGet with drop target"
 msgstr "छोड्ने लक्ष्यसँग के गेट सुरु गर्नुहोस्"
 
 #: main.cpp:128
+#, fuzzy
+#| msgid "Start KGet with drop target"
+msgid "Start KGet with hidden main window"
+msgstr "छोड्ने लक्ष्यसँग के गेट सुरु गर्नुहोस्"
+
+#: main.cpp:129
 msgid "URL(s) to download"
 msgstr "डाउनलोड गर्न यूआरएल "
 
@@ -99,14 +105,13 @@ msgstr "स्थानान्तरण सूची निर्यात ग
 msgid "Edit Groups..."
 msgstr ""
 
-#: mainwindow.cpp:120
-#, fuzzy
-msgid "Delete Group."
-msgstr "पूर्वानिर्धारित फोल्डर"
+#: mainwindow.cpp:120 ui/groupseditdialog.cpp:37
+msgid "Delete Group"
+msgstr ""
 
 #: mainwindow.cpp:125
 #, fuzzy
-msgid "Rename Group."
+msgid "Rename Group"
 msgstr "पूर्वानिर्धारित फोल्डर"
 
 #: mainwindow.cpp:130
@@ -179,38 +184,38 @@ msgstr "<shyamkrishna_bal@yahoo.com>"
 msgid "Copy URL to Clipboard"
 msgstr "क्लिपबोर्डमा यूआरएल प्रतिलिपि गर्नुहोस्"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:250
 #, fuzzy
 msgid ""
 "This is the first time you have run KGet.\n"
-"Would you like to use KGet as the download manager for Konqueror?"
+"Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 "यो तपाईँले केडीई गेट चलाउनु भएको पहिलो पटक हो ।\n"
 "तपाईँ कन्क्वेररका लागि डाउनलोड प्रबन्धकको रूपमा केडीई गेट प्रयोग गर्न चाहनुहुन्छ ?"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Konqueror Integration"
 msgstr "कन्क्वेरर इन्टिगरेसन"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Enable"
 msgstr "सक्षम पार्नुहोस्"
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:253
 msgid "Do Not Enable"
 msgstr "सक्षम नपार्नुहोस्"
 
-#: mainwindow.cpp:282
+#: mainwindow.cpp:284
 #, fuzzy
 msgid "All Openable Files"
 msgstr "फाइल खोल्नुहोस्"
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:285
 #, fuzzy
 msgid "Open File"
 msgstr "फाइल खोल्नुहोस्"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:301
 #, fuzzy
 msgid ""
 "Some transfers are still running.\n"
@@ -219,37 +224,37 @@ msgstr ""
 "केही स्थानान्तरणहरू अझै चलिरहेका छन् ।\n"
 "तपाईँ केडीई गेट अन्त्य गर्न निश्चित हुनुहुन्छ ?"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:303
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:334
+#: mainwindow.cpp:336
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "स्थानान्तरण सूची निर्यात गर्नुहोस्..."
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:338
 #, fuzzy
 msgid "Export Transfers"
 msgstr "स्थानान्तरण सूची निर्यात गर्नुहोस्..."
 
-#: mainwindow.cpp:366 ui/groupseditdialog.cpp:65
+#: mainwindow.cpp:368 ui/groupseditdialog.cpp:65
 msgid "Enter Group Name"
 msgstr ""
 
-#: mainwindow.cpp:367 ui/groupseditdialog.cpp:66
+#: mainwindow.cpp:369 ui/groupseditdialog.cpp:66
 #, fuzzy
 msgid "Group name:"
 msgstr "श्यामकृष्ण बल"
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:547
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:548
+#: mainwindow.cpp:550
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "कन्क्वेरर इन्टिगरेसन"
@@ -787,31 +792,42 @@ msgstr "प्रगति संवाद"
 msgid "Speed"
 msgstr "गति"
 
-#: ui/droptarget.cpp:82
-msgid "Hide Me"
-msgstr ""
-
 #: ui/droptarget.cpp:83
+#, fuzzy
+msgid "Hide Drop Target"
+msgstr "छोड्ने लक्ष्य लुकाउनुहोस्"
+
+#: ui/droptarget.cpp:84
 msgid "Sticky"
 msgstr "टाँसिने"
 
-#: ui/droptarget.cpp:254
+#: ui/droptarget.cpp:260
 #, fuzzy
 msgid "Show Main Window"
 msgstr "लग सञ्झ्याल देखाउनुहोस्"
 
-#: ui/droptarget.cpp:255
+#: ui/droptarget.cpp:261
 #, fuzzy
 msgid "Hide Main Window"
 msgstr "लग सञ्झ्याल लुकाउनुहोस्"
 
-#: ui/droptarget.cpp:375
+#: ui/droptarget.cpp:338
+#, fuzzy
+#| msgid "Drop target"
+msgid "Drop Target"
+msgstr "छोड्ने लक्ष्य"
+
+#: ui/droptarget.cpp:339
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:385
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
 msgstr ""
 
-#: ui/droptarget.cpp:377
+#: ui/droptarget.cpp:387
 #, fuzzy
 msgid "Hiding drop target"
 msgstr "छोड्ने लक्ष्य लुकाउनुहोस्"
@@ -822,10 +838,6 @@ msgstr ""
 
 #: ui/groupseditdialog.cpp:32
 msgid "Add Group..."
-msgstr ""
-
-#: ui/groupseditdialog.cpp:37
-msgid "Delete Group"
 msgstr ""
 
 #: ui/groupseditdialog.cpp:74
@@ -884,6 +896,10 @@ msgstr "स्थान्तरण"
 #, fuzzy
 msgid "Transfer details:"
 msgstr " स्थानान्तरण: %1 "
+
+#, fuzzy
+#~ msgid "Delete Group."
+#~ msgstr "पूर्वानिर्धारित फोल्डर"
 
 #~ msgid ""
 #~ "Each row consists of exactly one\n"
@@ -1574,9 +1590,6 @@ msgstr " स्थानान्तरण: %1 "
 
 #~ msgid "Normal"
 #~ msgstr "सामान्य"
-
-#~ msgid "Drop target"
-#~ msgstr "छोड्ने लक्ष्य"
 
 #~ msgid "Copy file from: %1"
 #~ msgstr "यसबाट फाइल प्रतिलिपि गर्नुहोस्: %1"
