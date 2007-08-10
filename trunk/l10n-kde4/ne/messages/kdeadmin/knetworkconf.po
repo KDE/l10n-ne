@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knetworkconf\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:07+0200\n"
+"POT-Creation-Date: 2007-08-10 05:32+0200\n"
 "PO-Revision-Date: 2007-06-15 10:49+0300\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -55,7 +55,7 @@ msgstr "उपनाम:"
 #. i18n: file kreloadnetworkdlg.ui line 73
 #. i18n: tag string
 #. i18n: file kselectdistrodlg.ui line 38
-#: kaddknownhostdlg.ui.h:72 knetworkconf.cpp:217 kadddevicecontainer.cpp:63
+#: kaddknownhostdlg.ui.h:72 kadddevicecontainer.cpp:63 knetworkconf.cpp:217
 #: rc.cpp:189 rc.cpp:365 rc.cpp:375
 msgid "&OK"
 msgstr ""
@@ -63,6 +63,59 @@ msgstr ""
 #: kaddknownhostdlg.ui.h:96
 msgid "Add New Alias"
 msgstr "नयाँ उपनाम थप्नुहोस्"
+
+#: version.h:5
+msgid ""
+"KNetworkConf - A KDE Control Center module to configure TCP/IP settings."
+msgstr ""
+"केडीई सञ्जाल कन्फिग - टीसीपी/आईपी सेटिङ कन्फिगर गर्न एउटा केडीई नियन्त्रण केन्द्र मोड्युल ।"
+
+#: kadddevicecontainer.cpp:60
+msgid "&Advanced Settings"
+msgstr "उन्नत सेटिङ"
+
+#: kadddevicecontainer.cpp:61 kadddevicecontainer.cpp:62
+msgid "Toggle between advanced and basic settings"
+msgstr "उन्नत र आधारभूत सेटिङ बीचमा टगल गर्नुहोस्"
+
+#: kadddevicecontainer.cpp:64
+msgid "Apply changes"
+msgstr "परिवर्तन लागू गर्नुहोस्"
+
+#. i18n: tag string
+#. i18n: file kadddnsserverdlg.ui line 120
+#. i18n: tag string
+#. i18n: file kaddknownhostdlg.ui line 104
+#. i18n: tag string
+#. i18n: file kselectdistrodlg.ui line 55
+#: kadddevicecontainer.cpp:65 rc.cpp:174 rc.cpp:186 rc.cpp:379
+msgid "&Cancel"
+msgstr ""
+
+#: kadddevicecontainer.cpp:66
+msgid "Forget changes"
+msgstr "परिवर्तन बिर्सनुहोस्"
+
+#: kadddevicecontainer.cpp:129 kadddevicecontainer.cpp:132
+#, fuzzy
+msgid "Invalid IP Address "
+msgstr "अवैध आईपी ठेगाना"
+
+#: kadddevicecontainer.cpp:132
+msgid "The format of the specified netmask is not valid."
+msgstr "निर्दिष्ट गरिएको नेटमास्कको ढाँचा अवैध छ ।"
+
+#: kadddevicecontainer.cpp:135
+msgid "The format of the specified broadcast is not valid."
+msgstr "निर्दिष्ट गरिएको प्रसारणको ढाँचा अवैध छ ।"
+
+#: kadddevicecontainer.cpp:174
+msgid "Basic Settings"
+msgstr "आधारभूत सेटिङ"
+
+#: kadddevicecontainer.cpp:179
+msgid "Advanced Settings"
+msgstr "उन्नत सेटिङ"
 
 #: knetworkconf.cpp:65
 #, fuzzy
@@ -186,52 +239,164 @@ msgstr "चयन गरिएको सञ्जाल प्रोफाइल
 msgid "Error Reading Profile"
 msgstr "प्रोफाइल पढ्दा त्रुटि"
 
-#: kadddevicecontainer.cpp:60
-msgid "&Advanced Settings"
-msgstr "उन्नत सेटिङ"
+#: knetworkconfigparser.cpp:45
+#, fuzzy, qt-format
+msgid ""
+"Could not find the network detection scripts. Something is wrong with your "
+"installation.\n"
+" Please check that  \n"
+"{KDE_PATH}/%1 \n"
+"file is present."
+msgstr ""
+"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट फेला पार्न सकेन । तपाईँको "
+"स्थापनामा केही गलत छ ।\n"
+" कृपया फाइल \n"
+"{KDE_PATH}/%1 \n"
+"उपस्थित भएको जाँच गर्नुहोस् ।"
 
-#: kadddevicecontainer.cpp:61 kadddevicecontainer.cpp:62
-msgid "Toggle between advanced and basic settings"
-msgstr "उन्नत र आधारभूत सेटिङ बीचमा टगल गर्नुहोस्"
+#: knetworkconfigparser.cpp:46
+#, fuzzy
+msgid "Could Not Find Network Backend Script"
+msgstr "सञ्जाल कनफिगरेसन ब्याकइन्ड स्क्रिप्ट फेला पार्न सकेन"
 
-#: kadddevicecontainer.cpp:64
-msgid "Apply changes"
-msgstr "परिवर्तन लागू गर्नुहोस्"
+#: knetworkconfigparser.cpp:70 knetworkconfigparser.cpp:101
+#, fuzzy
+msgid ""
+"Could not execute network detection scripts. Something is wrong with your "
+"installation."
+msgstr ""
+"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट कार्यान्वयन गर्न सकेन । तपाईँको "
+"स्थापनामा केही बिग्रेको छ ।"
+
+#: knetworkconfigparser.cpp:71 knetworkconfigparser.cpp:102
+#: knetworkconfigparser.cpp:310 knetworkconfigparser.cpp:974
+#, fuzzy
+msgid "Could Not Launch Network Backend Script"
+msgstr "सञ्जाल कन्फिगरेसन ब्याकइन्ड स्क्रिप्ट सुरुआत गर्न सकेन"
+
+#: knetworkconfigparser.cpp:120 knetworkconfigparser.cpp:794
+#, fuzzy
+msgid "Could not parse the XML file."
+msgstr "फाइल खोल्न सकेन"
+
+#: knetworkconfigparser.cpp:121
+msgid "Error While Listing Network Interfaces"
+msgstr "सञ्जाल इन्टरफेस सूचीकृत गर्दा त्रुटि"
+
+#: knetworkconfigparser.cpp:201
+msgid "Could not open file /proc/net/route."
+msgstr "/proc/net/route फाइल खोल्न सकेन ।"
+
+#: knetworkconfigparser.cpp:202
+msgid "Could Not Open File"
+msgstr "फाइल खोल्न सकेन"
 
 #. i18n: tag string
-#. i18n: file kadddnsserverdlg.ui line 120
-#. i18n: tag string
-#. i18n: file kaddknownhostdlg.ui line 104
-#. i18n: tag string
-#. i18n: file kselectdistrodlg.ui line 55
-#: kadddevicecontainer.cpp:65 rc.cpp:174 rc.cpp:186 rc.cpp:379
-msgid "&Cancel"
+#. i18n: file kreloadnetworkdlg.ui line 28
+#: knetworkconfigparser.cpp:295 rc.cpp:361
+msgid "Reloading Network"
+msgstr "सञ्जाल पुन: लोड गर्दैछ"
+
+#: knetworkconfigparser.cpp:296
+#, fuzzy
+msgid "<center>Please wait while reloading the network...</center>"
+msgstr "%1कृपया सञ्जाल सेटिङ बचत गर्दा प्रतिक्षा गर्नुहोस्...%2"
+
+#: knetworkconfigparser.cpp:309
+#, fuzzy
+msgid ""
+"Could not execute network saving scripts. Something is wrong with your "
+"installation."
+msgstr ""
+"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट कार्यान्वयन गर्न सकेन । तपाईँको "
+"स्थापनामा केही बिग्रेको छ ।"
+
+#: knetworkconfigparser.cpp:713
+msgid "Ethernet Network Device"
+msgstr "इथरनेट सञ्जाल यन्त्र"
+
+#: knetworkconfigparser.cpp:715
+msgid "Wireless Network Device"
+msgstr "ताररहित सञ्जाल यन्त्र"
+
+#: knetworkconfigparser.cpp:973
+#, fuzzy
+msgid ""
+"Could not list supported platforms. Something is wrong with your "
+"installation."
+msgstr ""
+"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट कार्यान्वयन गर्न सकेन । तपाईँको "
+"स्थापनामा केही बिग्रेको छ ।"
+
+#: knetworkconfigparser.cpp:988
+#, fuzzy
+msgid "Could not parse the XML file of supported platforms."
+msgstr "सञ्जाल कन्फिगरेसन ब्याकइन्डबाट समर्थित प्लेटफर्मको सूची पदवर्णन गर्न सकेन ।"
+
+#: knetworkconfmodule.cpp:100
+msgid "KNetworkConf"
+msgstr "केडिई सञ्जाल कन्फिग"
+
+#: knetworkconfmodule.cpp:102
+msgid "(c) 2003 - 2005, Juan Luis Baptiste"
 msgstr ""
 
-#: kadddevicecontainer.cpp:66
-msgid "Forget changes"
-msgstr "परिवर्तन बिर्सनुहोस्"
+#: knetworkconfmodule.cpp:103
+msgid "Juan Luis Baptiste"
+msgstr ""
 
-#: kadddevicecontainer.cpp:129 kadddevicecontainer.cpp:132
+#: knetworkconfmodule.cpp:103
+msgid "Lead Developer"
+msgstr "मुख्य विकासकर्ता"
+
+#: knetworkconfmodule.cpp:105
+msgid "Carlos Garnacho and the Gnome System Tools Team"
+msgstr ""
+
+#: knetworkconfmodule.cpp:105
+msgid "Provided the Network backend which KNetworkConf relies on."
+msgstr "केडीई सञ्जाल कन्फिगमा निर्भर सञ्जाल ब्याकइन्ड उपलब्ध गरायो ।"
+
+#: knetworkconfmodule.cpp:107
+msgid "Helio Chissini de Castro"
+msgstr ""
+
+#: knetworkconfmodule.cpp:107
+msgid "Conectiva Linux Support"
+msgstr "कनेक्टिभा लिनक्स समर्थन"
+
+#: knetworkconfmodule.cpp:109
+msgid "Christoph Eckert"
+msgstr ""
+
+#: knetworkconfmodule.cpp:109
+msgid "Documentation maintainer, and German translator"
+msgstr "मिसिलीकरण मर्मतकर्ता र जर्मनी अनुवादक"
+
+#: knetworkconfmodule.cpp:111
+msgid "David Sansome"
+msgstr ""
+
+#: knetworkconfmodule.cpp:111
+msgid "Various bugfixes and features"
+msgstr "विभिन्न बग समाधान र बिशेषता"
+
+#: knetworkconfmodule.cpp:113
+msgid "Gustavo Pichorim Boiko"
+msgstr ""
+
+#: knetworkconfmodule.cpp:113
+msgid "Various bugfixes and Brazilian Portuguese translator"
+msgstr "विभिन्न बग समाधान र ब्राजिलियन पोर्चुगाली अनुवादक"
+
+#: knetworkconfmodule.cpp:119
 #, fuzzy
-msgid "Invalid IP Address "
-msgstr "अवैध आईपी ठेगाना"
-
-#: kadddevicecontainer.cpp:132
-msgid "The format of the specified netmask is not valid."
-msgstr "निर्दिष्ट गरिएको नेटमास्कको ढाँचा अवैध छ ।"
-
-#: kadddevicecontainer.cpp:135
-msgid "The format of the specified broadcast is not valid."
-msgstr "निर्दिष्ट गरिएको प्रसारणको ढाँचा अवैध छ ।"
-
-#: kadddevicecontainer.cpp:174
-msgid "Basic Settings"
-msgstr "आधारभूत सेटिङ"
-
-#: kadddevicecontainer.cpp:179
-msgid "Advanced Settings"
-msgstr "उन्नत सेटिङ"
+msgid ""
+"<h1>Network configuration</h1><p>This module allows you to configure your "
+"TCP/IP settings.</p>"
+msgstr ""
+"%1सञ्जाल कन्फिगरेसन %2 यो मोड्युलले तपाईँलाई टीसीपी/आईपी सेटिङ कन्फिगर गर्न अनुमति दिन्छ "
+"।%3"
 
 #. i18n: tag string
 #. i18n: file kadddevicedlg.ui line 44
@@ -864,12 +1029,6 @@ msgid "&Delete"
 msgstr "चयन गरिएका मेट्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file kreloadnetworkdlg.ui line 28
-#: rc.cpp:361 knetworkconfigparser.cpp:295
-msgid "Reloading Network"
-msgstr "सञ्जाल पुन: लोड गर्दैछ"
-
-#. i18n: tag string
 #. i18n: file kreloadnetworkdlg.ui line 109
 #: rc.cpp:368
 msgid ""
@@ -922,165 +1081,6 @@ msgstr "Nabin Gautam"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nabin@mpp.org.np"
-
-#: knetworkconfmodule.cpp:100
-msgid "KNetworkConf"
-msgstr "केडिई सञ्जाल कन्फिग"
-
-#: knetworkconfmodule.cpp:102
-msgid "(c) 2003 - 2005, Juan Luis Baptiste"
-msgstr ""
-
-#: knetworkconfmodule.cpp:103
-msgid "Juan Luis Baptiste"
-msgstr ""
-
-#: knetworkconfmodule.cpp:103
-msgid "Lead Developer"
-msgstr "मुख्य विकासकर्ता"
-
-#: knetworkconfmodule.cpp:105
-msgid "Carlos Garnacho and the Gnome System Tools Team"
-msgstr ""
-
-#: knetworkconfmodule.cpp:105
-msgid "Provided the Network backend which KNetworkConf relies on."
-msgstr "केडीई सञ्जाल कन्फिगमा निर्भर सञ्जाल ब्याकइन्ड उपलब्ध गरायो ।"
-
-#: knetworkconfmodule.cpp:107
-msgid "Helio Chissini de Castro"
-msgstr ""
-
-#: knetworkconfmodule.cpp:107
-msgid "Conectiva Linux Support"
-msgstr "कनेक्टिभा लिनक्स समर्थन"
-
-#: knetworkconfmodule.cpp:109
-msgid "Christoph Eckert"
-msgstr ""
-
-#: knetworkconfmodule.cpp:109
-msgid "Documentation maintainer, and German translator"
-msgstr "मिसिलीकरण मर्मतकर्ता र जर्मनी अनुवादक"
-
-#: knetworkconfmodule.cpp:111
-msgid "David Sansome"
-msgstr ""
-
-#: knetworkconfmodule.cpp:111
-msgid "Various bugfixes and features"
-msgstr "विभिन्न बग समाधान र बिशेषता"
-
-#: knetworkconfmodule.cpp:113
-msgid "Gustavo Pichorim Boiko"
-msgstr ""
-
-#: knetworkconfmodule.cpp:113
-msgid "Various bugfixes and Brazilian Portuguese translator"
-msgstr "विभिन्न बग समाधान र ब्राजिलियन पोर्चुगाली अनुवादक"
-
-#: knetworkconfmodule.cpp:119
-#, fuzzy
-msgid ""
-"<h1>Network configuration</h1><p>This module allows you to configure your "
-"TCP/IP settings.</p>"
-msgstr ""
-"%1सञ्जाल कन्फिगरेसन %2 यो मोड्युलले तपाईँलाई टीसीपी/आईपी सेटिङ कन्फिगर गर्न अनुमति दिन्छ "
-"।%3"
-
-#: knetworkconfigparser.cpp:45
-#, fuzzy, qt-format
-msgid ""
-"Could not find the network detection scripts. Something is wrong with your "
-"installation.\n"
-" Please check that  \n"
-"{KDE_PATH}/%1 \n"
-"file is present."
-msgstr ""
-"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट फेला पार्न सकेन । तपाईँको "
-"स्थापनामा केही गलत छ ।\n"
-" कृपया फाइल \n"
-"{KDE_PATH}/%1 \n"
-"उपस्थित भएको जाँच गर्नुहोस् ।"
-
-#: knetworkconfigparser.cpp:46
-#, fuzzy
-msgid "Could Not Find Network Backend Script"
-msgstr "सञ्जाल कनफिगरेसन ब्याकइन्ड स्क्रिप्ट फेला पार्न सकेन"
-
-#: knetworkconfigparser.cpp:70 knetworkconfigparser.cpp:101
-#, fuzzy
-msgid ""
-"Could not execute network detection scripts. Something is wrong with your "
-"installation."
-msgstr ""
-"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट कार्यान्वयन गर्न सकेन । तपाईँको "
-"स्थापनामा केही बिग्रेको छ ।"
-
-#: knetworkconfigparser.cpp:71 knetworkconfigparser.cpp:102
-#: knetworkconfigparser.cpp:310 knetworkconfigparser.cpp:974
-#, fuzzy
-msgid "Could Not Launch Network Backend Script"
-msgstr "सञ्जाल कन्फिगरेसन ब्याकइन्ड स्क्रिप्ट सुरुआत गर्न सकेन"
-
-#: knetworkconfigparser.cpp:120 knetworkconfigparser.cpp:794
-#, fuzzy
-msgid "Could not parse the XML file."
-msgstr "फाइल खोल्न सकेन"
-
-#: knetworkconfigparser.cpp:121
-msgid "Error While Listing Network Interfaces"
-msgstr "सञ्जाल इन्टरफेस सूचीकृत गर्दा त्रुटि"
-
-#: knetworkconfigparser.cpp:201
-msgid "Could not open file /proc/net/route."
-msgstr "/proc/net/route फाइल खोल्न सकेन ।"
-
-#: knetworkconfigparser.cpp:202
-msgid "Could Not Open File"
-msgstr "फाइल खोल्न सकेन"
-
-#: knetworkconfigparser.cpp:296
-#, fuzzy
-msgid "<center>Please wait while reloading the network...</center>"
-msgstr "%1कृपया सञ्जाल सेटिङ बचत गर्दा प्रतिक्षा गर्नुहोस्...%2"
-
-#: knetworkconfigparser.cpp:309
-#, fuzzy
-msgid ""
-"Could not execute network saving scripts. Something is wrong with your "
-"installation."
-msgstr ""
-"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट कार्यान्वयन गर्न सकेन । तपाईँको "
-"स्थापनामा केही बिग्रेको छ ।"
-
-#: knetworkconfigparser.cpp:713
-msgid "Ethernet Network Device"
-msgstr "इथरनेट सञ्जाल यन्त्र"
-
-#: knetworkconfigparser.cpp:715
-msgid "Wireless Network Device"
-msgstr "ताररहित सञ्जाल यन्त्र"
-
-#: knetworkconfigparser.cpp:973
-#, fuzzy
-msgid ""
-"Could not list supported platforms. Something is wrong with your "
-"installation."
-msgstr ""
-"सञ्जाल कन्फिगरेसन पत्ता लगाउनका लागि ब्याकइन्ड स्क्रिप्ट कार्यान्वयन गर्न सकेन । तपाईँको "
-"स्थापनामा केही बिग्रेको छ ।"
-
-#: knetworkconfigparser.cpp:988
-#, fuzzy
-msgid "Could not parse the XML file of supported platforms."
-msgstr "सञ्जाल कन्फिगरेसन ब्याकइन्डबाट समर्थित प्लेटफर्मको सूची पदवर्णन गर्न सकेन ।"
-
-#: version.h:5
-msgid ""
-"KNetworkConf - A KDE Control Center module to configure TCP/IP settings."
-msgstr ""
-"केडीई सञ्जाल कन्फिग - टीसीपी/आईपी सेटिङ कन्फिगर गर्न एउटा केडीई नियन्त्रण केन्द्र मोड्युल ।"
 
 #~ msgid ""
 #~ "The new configuration has not been saved.\n"
