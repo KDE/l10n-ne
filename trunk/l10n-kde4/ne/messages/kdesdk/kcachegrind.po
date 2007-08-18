@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcachegrind\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-31 05:14+0200\n"
+"POT-Creation-Date: 2007-08-18 05:31+0200\n"
 "PO-Revision-Date: 2007-05-06 12:23+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -245,7 +245,7 @@ msgstr "लुकेका भाग देखाउनुहोस्"
 msgid "Go Back"
 msgstr "पछाडि जानुहोस्"
 
-#: partselection.cpp:321 callgraphview.cpp:2586
+#: partselection.cpp:321 callgraphview.cpp:2760
 msgid "Visualization"
 msgstr "दृष्टिकरण"
 
@@ -379,13 +379,21 @@ msgid "Flat Profile"
 msgstr "फ्ल्याट प्रोफाइल"
 
 #: toplevel.cpp:346
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "<b>The Flat Profile</b><p>The flat profile contains a group and a "
+#| "function selection list. The group list contains all groups where costs "
+#| "are spent in, depending on the chosen group type. The group list is "
+#| "hidden when group type 'Function' is selected.<p><p>The function list "
+#| "contains the functions of the selected group (or all for 'Function' group "
+#| "type), ordered by the costs spent therein. Functions with costs less than "
+#| "1% are hidden on default.</p>"
 msgid ""
 "<b>The Flat Profile</b><p>The flat profile contains a group and a function "
 "selection list. The group list contains all groups where costs are spent in, "
 "depending on the chosen group type. The group list is hidden when group type "
-"'Function' is selected.<p><p>The function list contains the functions of the "
-"selected group (or all for 'Function' group type), ordered by the costs "
+"'Function' is selected.</p><p>The function list contains the functions of "
+"the selected group (or all for 'Function' group type), ordered by the costs "
 "spent therein. Functions with costs less than 1% are hidden on default.</p>"
 msgstr ""
 "<b>फ्ल्याट प्रोफाइल</b><p>फ्ल्याट प्रोफाइलमा एउटा समूह र प्रकार्य चयन सूची समाविष्ट हुन्छ "
@@ -848,8 +856,8 @@ msgstr ""
 "प्याकेजको 'objdump' युटिलिटीबाट उत्पन्न हुन्छ ।</p><p>हालको कललाई गन्तब्य प्रकार्य "
 "बनाउन कल सूचना भएको लाइन चयन गर्नुहोस् ।</p>"
 
-#: instrview.cpp:211 callgraphview.cpp:2409 callgraphview.cpp:2413
-#: callgraphview.cpp:2431 sourceview.cpp:116 coverageview.cpp:166
+#: instrview.cpp:211 callgraphview.cpp:2539 callgraphview.cpp:2543
+#: callgraphview.cpp:2561 sourceview.cpp:116 coverageview.cpp:166
 #: callview.cpp:123 callview.cpp:128
 #, qt-format
 msgid "Go to '%1'"
@@ -931,21 +939,21 @@ msgstr "आदेश कार्यान्वयन गर्ने प्र
 msgid "Check that the ELF object used in the command exists."
 msgstr "आदेशमा प्रयोग गरिएको ईएलएफ वस्तु अवस्थित छ या छैन जाँच गर्नुहोस् ।"
 
-#: callgraphview.cpp:321
+#: callgraphview.cpp:331
 #, qt-format
 msgid "Call(s) from %1"
 msgstr "%1 बाट कल(हरू)"
 
-#: callgraphview.cpp:322
+#: callgraphview.cpp:334
 #, qt-format
 msgid "Call(s) to %1"
 msgstr "%1 मा कल(हरू)"
 
-#: callgraphview.cpp:323
+#: callgraphview.cpp:336
 msgid "(unknown call)"
 msgstr "(अज्ञात कल)"
 
-#: callgraphview.cpp:1437
+#: callgraphview.cpp:1471
 msgid ""
 "<b>Call Graph around active Function</b><p>Depending on configuration, this "
 "view shows the call graph environment of the active function. Note: the "
@@ -969,7 +977,7 @@ msgstr ""
 "प्यानर देखिन्छ । कल ट्रीमानचित्रमा त्यहाँ समान दृष्टीकरण विकल्प छन्; चयन गरिएका प्रकार्य "
 "हाइलाइट गरिन्छ ।<p>"
 
-#: callgraphview.cpp:1801
+#: callgraphview.cpp:1884
 msgid ""
 "Warning: a long lasting graph layouting is in progress.\n"
 "Reduce node/edge limits for speedup.\n"
@@ -977,24 +985,24 @@ msgstr ""
 "चेतावनी: एउटा अन्त्यसम्म रहने ग्राफ सजावट प्रगतिमा छ ।\n"
 "गति बढाउनका लागि नोड/किनारा दायरा घटाउनुहोस् ।\n"
 
-#: callgraphview.cpp:1804
+#: callgraphview.cpp:1887
 msgid "Layouting stopped.\n"
 msgstr "सजावट कार्य रोकियो ।\n"
 
-#: callgraphview.cpp:1806
+#: callgraphview.cpp:1889
 #, qt-format
 msgid "The call graph has %1 nodes and %2 edges.\n"
 msgstr "कल ग्राफमा %1 नोड र %2 किनारा छन् ।\n"
 
-#: callgraphview.cpp:1839
+#: callgraphview.cpp:1923
 msgid "No item activated for which to draw the call graph."
 msgstr "कल ग्राफ कोर्नका लागि विषयवस्तु सक्रिय पारिएको छैन ।"
 
-#: callgraphview.cpp:1850
+#: callgraphview.cpp:1934
 msgid "No call graph can be drawn for the active item."
 msgstr "सक्रिय वस्तुका लागि कल ग्राफ कोर्न सकिने छैन ।"
 
-#: callgraphview.cpp:1879
+#: callgraphview.cpp:1961
 #, qt-format
 msgid ""
 "No call graph is available because the following\n"
@@ -1005,15 +1013,15 @@ msgstr ""
 "कल ग्राफ उपलब्ध हुदैन:\n"
 "'%1'\n"
 
-#: callgraphview.cpp:1882 callgraphview.cpp:2211
+#: callgraphview.cpp:1963 callgraphview.cpp:2326
 msgid "Please check that 'dot' is installed (package GraphViz)."
 msgstr "कृपया 'dot' स्थापना भएको छ छैन जाँच गर्नुहोस् (प्याकेज GraphViz) ।"
 
-#: callgraphview.cpp:2210
+#: callgraphview.cpp:2325
 msgid "Error running the graph layouting tool.\n"
 msgstr "ग्राफ सजावट उपकरण चलाउँदा त्रुटि ।\n"
 
-#: callgraphview.cpp:2218
+#: callgraphview.cpp:2330
 #, qt-format
 msgid ""
 "There is no call graph available for function\n"
@@ -1024,171 +1032,171 @@ msgstr ""
 "प्रकार्यका लागि कल ग्राफ उपलब्ध छैन\n"
 "किनकी यसको चयन गरिएको घटना प्रकारको लागत छैन ।"
 
-#: callgraphview.cpp:2440
+#: callgraphview.cpp:2570
 msgid "Stop Layouting"
 msgstr "सजावट गर्न रोक्नुहोस्"
 
-#: callgraphview.cpp:2448
+#: callgraphview.cpp:2578
 msgid "As PostScript"
 msgstr "पोस्टस्क्रिप्ट अनुरुप"
 
-#: callgraphview.cpp:2449
+#: callgraphview.cpp:2579
 msgid "As Image ..."
 msgstr "छवि अनुरुप ..."
 
-#: callgraphview.cpp:2451
+#: callgraphview.cpp:2581
 msgid "Export Graph"
 msgstr "ग्राफ निर्यात गर्नुहोस्"
 
-#: callgraphview.cpp:2456 callgraphview.cpp:2479
+#: callgraphview.cpp:2586 callgraphview.cpp:2623
 msgid "Unlimited"
 msgstr "असीमित"
 
-#: callgraphview.cpp:2459 callgraphview.cpp:2482
+#: callgraphview.cpp:2589 callgraphview.cpp:2626
 msgid "None"
 msgstr "कुनै पनि होइन"
 
-#: callgraphview.cpp:2460 callgraphview.cpp:2483
+#: callgraphview.cpp:2590 callgraphview.cpp:2627
 msgid "max. 2"
 msgstr "अधिकतम २"
 
-#: callgraphview.cpp:2461 callgraphview.cpp:2484
+#: callgraphview.cpp:2591 callgraphview.cpp:2628
 msgid "max. 5"
 msgstr "अधिकतम ५"
 
-#: callgraphview.cpp:2462 callgraphview.cpp:2485
+#: callgraphview.cpp:2592 callgraphview.cpp:2629
 msgid "max. 10"
 msgstr "अधिकतम १०"
 
-#: callgraphview.cpp:2463 callgraphview.cpp:2486
+#: callgraphview.cpp:2593 callgraphview.cpp:2630
 msgid "max. 15"
 msgstr "अधिकतम १५"
 
-#: callgraphview.cpp:2473 callgraphview.cpp:2496
+#: callgraphview.cpp:2616 callgraphview.cpp:2653
 #, qt-format
 msgid "< %1"
 msgstr "< %1"
 
-#: callgraphview.cpp:2502
+#: callgraphview.cpp:2660
 msgid "No Minimum"
 msgstr "न्यूनतम छैन"
 
-#: callgraphview.cpp:2506
+#: callgraphview.cpp:2663
 msgid "50 %"
 msgstr "५० %"
 
-#: callgraphview.cpp:2507
+#: callgraphview.cpp:2664
 msgid "20 %"
 msgstr "२० %"
 
-#: callgraphview.cpp:2508
+#: callgraphview.cpp:2665
 msgid "10 %"
 msgstr "१० %"
 
-#: callgraphview.cpp:2509
+#: callgraphview.cpp:2666
 msgid "5 %"
 msgstr "५ %"
 
-#: callgraphview.cpp:2510
+#: callgraphview.cpp:2667
 msgid "3 %"
 msgstr "३ %"
 
-#: callgraphview.cpp:2511
+#: callgraphview.cpp:2668
 msgid "2 %"
 msgstr "२ %"
 
-#: callgraphview.cpp:2512
+#: callgraphview.cpp:2669
 msgid "1.5 %"
 msgstr "१.५ %"
 
-#: callgraphview.cpp:2513
+#: callgraphview.cpp:2670
 msgid "1 %"
 msgstr "१ %"
 
-#: callgraphview.cpp:2529
+#: callgraphview.cpp:2697
 msgid "Same as Node"
 msgstr "नोड जस्तै"
 
-#: callgraphview.cpp:2531
+#: callgraphview.cpp:2699
 #, no-c-format
 msgid "50 % of Node"
 msgstr "50 % of Node"
 
-#: callgraphview.cpp:2533
+#: callgraphview.cpp:2701
 #, no-c-format
 msgid "20 % of Node"
 msgstr "20 % of Node"
 
-#: callgraphview.cpp:2535
+#: callgraphview.cpp:2703
 #, no-c-format
 msgid "10 % of Node"
 msgstr "10 % of नोडको"
 
-#: callgraphview.cpp:2545
+#: callgraphview.cpp:2719
 msgid "Caller Depth"
 msgstr "कल गर्नेको प्रौढता"
 
-#: callgraphview.cpp:2546
+#: callgraphview.cpp:2720
 msgid "Callee Depth"
 msgstr "कल प्राप्त गर्नेको प्रौढता"
 
-#: callgraphview.cpp:2547
+#: callgraphview.cpp:2721
 msgid "Min. Node Cost"
 msgstr "न्यूनतम नोड लागत"
 
-#: callgraphview.cpp:2548
+#: callgraphview.cpp:2722
 msgid "Min. Call Cost"
 msgstr "न्यूनतम कल लागत"
 
-#: callgraphview.cpp:2550
+#: callgraphview.cpp:2724
 msgid "Arrows for Skipped Calls"
 msgstr "फड्किएका कलका लागि बाँणहरू"
 
-#: callgraphview.cpp:2552
+#: callgraphview.cpp:2726
 msgid "Inner-cycle Calls"
 msgstr "आन्तरिक-चक्रिय कल"
 
-#: callgraphview.cpp:2554
+#: callgraphview.cpp:2728
 msgid "Cluster Groups"
 msgstr "झुप्पा समूह"
 
-#: callgraphview.cpp:2559
+#: callgraphview.cpp:2733
 msgid "Compact"
 msgstr "सङ्कुचित"
 
-#: callgraphview.cpp:2560
+#: callgraphview.cpp:2734
 msgid "Normal"
 msgstr "सामान्य"
 
-#: callgraphview.cpp:2561
+#: callgraphview.cpp:2735
 msgid "Tall"
 msgstr "अग्लो"
 
-#: callgraphview.cpp:2566
+#: callgraphview.cpp:2740
 msgid "Top to Down"
 msgstr "माथि देखि तलसम्म"
 
-#: callgraphview.cpp:2567
+#: callgraphview.cpp:2741
 msgid "Left to Right"
 msgstr "बायाँ देखि दायाँसम्म"
 
-#: callgraphview.cpp:2568
+#: callgraphview.cpp:2742
 msgid "Circular"
 msgstr "वृत्ताकार"
 
-#: callgraphview.cpp:2574
+#: callgraphview.cpp:2748
 msgid "TopLeft"
 msgstr "माथिको बायाँ"
 
-#: callgraphview.cpp:2575
+#: callgraphview.cpp:2749
 msgid "TopRight"
 msgstr "माथिको दायाँ"
 
-#: callgraphview.cpp:2576
+#: callgraphview.cpp:2750
 msgid "BottomLeft"
 msgstr "तलको दायाँ"
 
-#: callgraphview.cpp:2577
+#: callgraphview.cpp:2751
 msgid "BottomRight"
 msgstr "तलको दायाँ"
 
@@ -1204,15 +1212,15 @@ msgstr "तलको दायाँ"
 #. i18n: file configdlgbase.ui line 286
 #. i18n: tag string
 #. i18n: file configdlgbase.ui line 302
-#: callgraphview.cpp:2578 rc.cpp:24 rc.cpp:34 rc.cpp:38
+#: callgraphview.cpp:2752 rc.cpp:24 rc.cpp:34 rc.cpp:38
 msgid "Automatic"
 msgstr "स्वचालित"
 
-#: callgraphview.cpp:2585
+#: callgraphview.cpp:2759
 msgid "Graph"
 msgstr "ग्राफ"
 
-#: callgraphview.cpp:2587
+#: callgraphview.cpp:2761
 msgid "Birds-eye View"
 msgstr "Birds-eye दृश्य"
 
