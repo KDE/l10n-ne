@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-17 05:42+0200\n"
+"POT-Creation-Date: 2007-08-19 05:34+0200\n"
 "PO-Revision-Date: 2007-02-19 00:07+0545\n"
 "Last-Translator: Shiva Pokharel <shiva@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -651,8 +651,8 @@ msgid "Click or drag to erase."
 msgstr "मेटाउन क्लिक गर्नुहोस् वा तान्नुहोस् ।"
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/selection/kpToolSelection.cpp:168
-#: tools/selection/kpToolSelection.cpp:1047 tools/kpToolZoom.cpp:196
+#: tools/selection/kpAbstractSelectionTool.cpp:250
+#: tools/selection/kpAbstractSelectionTool.cpp:493 tools/kpToolZoom.cpp:196
 #: tools/rectangular/kpToolRectangularBase.cpp:333
 #: tools/kpToolFloodFill.cpp:131 tools/polygonal/kpToolPolygonalBase.cpp:433
 msgid "Let go of all the mouse buttons."
@@ -703,174 +703,173 @@ msgstr "छविबाट रङ चयन गर्न तपाईँला�
 msgid "Click to select a color."
 msgstr "रङ चयन गर्न क्लिक गर्नुहोस् ।"
 
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:113
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:180
-#: tools/selection/text/kpToolText.cpp:148
+#: tools/selection/text/kpToolText_Create.cpp:47
+msgid "Left drag to create text box."
+msgstr "पाठ बाकस सिर्जना गर्न बायाँ तान्नुहोस् ।"
+
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:118
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:185
+#: tools/selection/text/kpToolText_Commands.cpp:87
 msgid "Text: Delete"
 msgstr "पाठ: मेट्नुहोस्"
 
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:133
-#: tools/selection/text/kpToolText_InputMethodEvents.cpp:202
-#: tools/selection/text/kpToolText_KeyboardEvents.cpp:391
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:138
+#: tools/selection/text/kpToolText_InputMethodEvents.cpp:207
+#: tools/selection/text/kpToolText_Commands.cpp:121
 msgid "Text: Write"
 msgstr "पाठ: लेख्नुहोस्"
 
-#: tools/selection/text/kpToolText.cpp:57
+#: tools/selection/text/kpToolText_Commands.cpp:70
+msgid "Text: Backspace"
+msgstr "पाठ: ब्याकस्पेस"
+
+#: tools/selection/text/kpToolText_Commands.cpp:104
+msgid "Text: New Line"
+msgstr "पाठ: नयाँ रेखा"
+
+#: tools/selection/text/kpToolText.cpp:62
 #: layers/selections/text/kpTextSelection.cpp:136
 msgid "Text"
 msgstr "पाठ"
 
-#: tools/selection/text/kpToolText.cpp:57
+#: tools/selection/text/kpToolText.cpp:62
 msgid "Writes text"
 msgstr "पाठ लेख्दछ"
 
-#: tools/selection/text/kpToolText.cpp:85
-msgid "Left drag to resize text box."
-msgstr "पाठ बाकस रिसाइज गर्न बायाँ तान्नुहोस् ।"
-
-#: tools/selection/text/kpToolText.cpp:92
-msgid "Left click to change cursor position."
-msgstr "कर्सर स्थिति परिवर्तन गर्न बायाँ क्लिक गर्नुहोस् ।"
-
-#: tools/selection/text/kpToolText.cpp:94
-msgid "Left drag to move text box."
-msgstr "पाठ बाकस सार्न बायाँ तान्नुहोस् ।"
-
-#: tools/selection/text/kpToolText.cpp:100
-msgid "Left drag to create text box."
-msgstr "पाठ बाकस सिर्जना गर्न बायाँ तान्नुहोस् ।"
-
-#: tools/selection/text/kpToolText.cpp:132
-msgid "Text: Backspace"
-msgstr "पाठ: ब्याकस्पेस"
-
-#: tools/selection/text/kpToolText.cpp:441
-#: mainWindow/kpMainWindow_Edit.cpp:400
+#: tools/selection/text/kpToolText.cpp:99 mainWindow/kpMainWindow_Edit.cpp:400
 msgid "Text: Create Box"
 msgstr "पाठ: बाकस सिर्जना गर्नुहोस्"
 
-#: tools/selection/text/kpToolText.cpp:502
-msgid "Text: Move Box"
-msgstr "पाठ: बाकस सार्नुहोस्"
-
-#: tools/selection/text/kpToolText.cpp:587
+#: tools/selection/text/kpToolText_TextStyle.cpp:118
 msgid "Text: Opaque Background"
 msgstr "पाठ: अपारदर्शी पृष्ठभूमि"
 
-#: tools/selection/text/kpToolText.cpp:588
+#: tools/selection/text/kpToolText_TextStyle.cpp:119
 msgid "Text: Transparent Background"
 msgstr "पाठ: पारदर्शी पृष्ठभूमि"
 
-#: tools/selection/text/kpToolText.cpp:610
+#: tools/selection/text/kpToolText_TextStyle.cpp:141
 msgid "Text: Swap Colors"
 msgstr "पाठ: रङ साटासाट गर्नुहोस्"
 
-#: tools/selection/text/kpToolText.cpp:630
+#: tools/selection/text/kpToolText_TextStyle.cpp:161
 msgid "Text: Foreground Color"
 msgstr "पाठ: अग्रभूमि रङ"
 
-#: tools/selection/text/kpToolText.cpp:650
+#: tools/selection/text/kpToolText_TextStyle.cpp:181
 msgid "Text: Background Color"
 msgstr "पाठ: पृष्ठभूमि रङ"
 
-#: tools/selection/text/kpToolText.cpp:686
+#: tools/selection/text/kpToolText_TextStyle.cpp:217
 msgid "Text: Font"
 msgstr "पाठ: फन्ट"
 
-#: tools/selection/text/kpToolText.cpp:713
+#: tools/selection/text/kpToolText_TextStyle.cpp:244
 msgid "Text: Font Size"
 msgstr "पाठ: फन्ट साइज"
 
-#: tools/selection/text/kpToolText.cpp:735
+#: tools/selection/text/kpToolText_TextStyle.cpp:266
 msgid "Text: Bold"
 msgstr "पाठ: बाक्लो"
 
-#: tools/selection/text/kpToolText.cpp:756
+#: tools/selection/text/kpToolText_TextStyle.cpp:287
 msgid "Text: Italic"
 msgstr "पाठ: छड्के"
 
-#: tools/selection/text/kpToolText.cpp:777
+#: tools/selection/text/kpToolText_TextStyle.cpp:308
 msgid "Text: Underline"
 msgstr "पाठ: अधोरेखा"
 
-#: tools/selection/text/kpToolText.cpp:798
+#: tools/selection/text/kpToolText_TextStyle.cpp:329
 msgid "Text: Strike Through"
 msgstr "पाठ: स्ट्राइकथ्रु"
 
-#: tools/selection/text/kpToolText_KeyboardEvents.cpp:354
-msgid "Text: New Line"
-msgstr "पाठ: नयाँ रेखा"
+#: tools/selection/text/kpToolText_SelectText.cpp:56
+msgid "Left click to change cursor position."
+msgstr "कर्सर स्थिति परिवर्तन गर्न बायाँ क्लिक गर्नुहोस् ।"
 
-#: tools/selection/kpToolFreeFormSelection.cpp:46
+#: tools/selection/text/kpToolText_Move.cpp:42
+msgid "Left drag to move text box."
+msgstr "पाठ बाकस सार्न बायाँ तान्नुहोस् ।"
+
+#: tools/selection/text/kpToolText_Move.cpp:61
+msgid "Text: Move Box"
+msgstr "पाठ: बाकस सार्नुहोस्"
+
+#: tools/selection/text/kpToolText_ResizeScale.cpp:42
+msgid "Left drag to resize text box."
+msgstr "पाठ बाकस रिसाइज गर्न बायाँ तान्नुहोस् ।"
+
+#: tools/selection/image/kpToolFreeFormSelection.cpp:45
 msgid "Selection (Free-Form)"
 msgstr "चयन (यसबाट स्वतन्त्र)"
 
-#: tools/selection/kpToolFreeFormSelection.cpp:47
+#: tools/selection/image/kpToolFreeFormSelection.cpp:46
 msgid "Makes a free-form selection"
 msgstr "चयनबाट स्वतन्त्र बनाउछ  "
 
-#: tools/selection/kpToolSelection.cpp:140
-msgid "Left drag to scale selection."
-msgstr "चयन मापन गर्न बायाँ तान्नुहोस् ।"
+#: tools/selection/image/kpToolRectSelection.cpp:41
+msgid "Selection (Rectangular)"
+msgstr "चयन (आयात)"
 
-#: tools/selection/kpToolSelection.cpp:146
-msgid "Left drag to move selection."
-msgstr "चयन सार्न बायाँ तान्नुहोस् ।"
+#: tools/selection/image/kpToolRectSelection.cpp:42
+msgid "Makes a rectangular selection"
+msgstr "आयात चयन बनाउँदछ"
 
-#: tools/selection/kpToolSelection.cpp:153
-msgid "Left drag to create selection."
-msgstr "चयन सिर्जना गर्न बायाँ तान्नुहोस् ।"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:118
+msgid "Selection: Transparency"
+msgstr "चयन: पारदर्शीता"
 
-#: tools/selection/kpToolSelection.cpp:1060
-msgid "Selection: Move"
-msgstr "चयन: सार्नुहोस्"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:174
+msgid "Selection: Opaque"
+msgstr "चयन: अपारदर्शी"
 
-#: tools/selection/kpToolSelection.cpp:1084
-#, qt-format
-msgid "%1: Smear"
-msgstr "%1: पोत्नु"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:175
+msgid "Selection: Transparent"
+msgstr "चयन: पारदर्शी"
 
-#: tools/selection/kpToolSelection.cpp:1128
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:223
+msgid "Selection: Transparency Color"
+msgstr "चयन: पारदर्शी रङ"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:267
+msgid "Selection: Transparency Color Similarity"
+msgstr "चयन: पारदर्शी रङ मिल्दो"
+
+#: tools/selection/image/kpToolEllipticalSelection.cpp:42
+msgid "Selection (Elliptical)"
+msgstr "चयन (दीर्घवृत्ताकार)"
+
+#: tools/selection/image/kpToolEllipticalSelection.cpp:43
+msgid "Makes an elliptical or circular selection"
+msgstr "एउटा दीर्घवृत्तकार वा वृत्तकार चयन बनाउँदछ"
+
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
 #: imagelib/transforms/kpTransformCrop.cpp:371
 #: mainWindow/kpMainWindow_Edit.cpp:401 mainWindow/kpMainWindow_Image.cpp:289
 msgid "Selection: Create"
 msgstr "चयन: सिर्जना गर्नुहोस्"
 
-#: tools/selection/kpToolSelection.cpp:1277
-msgid "Selection: Transparency"
-msgstr "चयन: पारदर्शीता"
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:89
+msgid "Left drag to create selection."
+msgstr "चयन सिर्जना गर्न बायाँ तान्नुहोस् ।"
 
-#: tools/selection/kpToolSelection.cpp:1333
-msgid "Selection: Opaque"
-msgstr "चयन: अपारदर्शी"
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:95
+msgid "Left drag to move selection."
+msgstr "चयन सार्न बायाँ तान्नुहोस् ।"
 
-#: tools/selection/kpToolSelection.cpp:1334
-msgid "Selection: Transparent"
-msgstr "चयन: पारदर्शी"
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:101
+msgid "Left drag to scale selection."
+msgstr "चयन मापन गर्न बायाँ तान्नुहोस् ।"
 
-#: tools/selection/kpToolSelection.cpp:1382
-msgid "Selection: Transparency Color"
-msgstr "चयन: पारदर्शी रङ"
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:311
+msgid "Selection: Move"
+msgstr "चयन: सार्नुहोस्"
 
-#: tools/selection/kpToolSelection.cpp:1426
-msgid "Selection: Transparency Color Similarity"
-msgstr "चयन: पारदर्शी रङ मिल्दो"
-
-#: tools/selection/kpToolRectSelection.cpp:42
-msgid "Selection (Rectangular)"
-msgstr "चयन (आयात)"
-
-#: tools/selection/kpToolRectSelection.cpp:43
-msgid "Makes a rectangular selection"
-msgstr "आयात चयन बनाउँदछ"
-
-#: tools/selection/kpToolEllipticalSelection.cpp:43
-msgid "Selection (Elliptical)"
-msgstr "चयन (दीर्घवृत्ताकार)"
-
-#: tools/selection/kpToolEllipticalSelection.cpp:44
-msgid "Makes an elliptical or circular selection"
-msgstr "एउटा दीर्घवृत्तकार वा वृत्तकार चयन बनाउँदछ"
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:331
+#, qt-format
+msgid "%1: Smear"
+msgstr "%1: पोत्नु"
 
 #: tools/kpToolZoom.cpp:72
 msgid "Zoom"
