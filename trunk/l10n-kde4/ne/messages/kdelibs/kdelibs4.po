@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-21 05:34+0200\n"
+"POT-Creation-Date: 2007-08-22 05:38+0200\n"
 "PO-Revision-Date: 2007-08-19 14:27+0545\n"
 "Last-Translator: Shiva Prasad Pokharel <pokharelshiv@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1414,7 +1414,7 @@ msgstr "पछिल्लो लाइनमा जानुहोस्..."
 #. i18n: tag string
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 90
 #: rc.cpp:639 rc.cpp:880 kdeui/util/kstandardguiitem.cpp:265
-#: kdeui/util/kkeyserver_x11.cpp:109 kdeui/findreplace/kreplace.cpp:342
+#: kdeui/util/kkeyserver_x11.cpp:109 kdeui/findreplace/kreplace.cpp:343
 #: khtml/ecma/kjs_debugwin.cpp:483 khtml/ecma/debugger/debugwindow.cpp:176
 #: kross/ui/view.cpp:308
 msgid "Stop"
@@ -5039,10 +5039,13 @@ msgstr ""
 "भएकोमा निश्चित हुनुहोस्, अन्यथा डाउनलोड गरिएका संसाधनको वैधता सम्भव हुँदैन ।</qt>"
 
 #: knewstuff/knewstuff2/core/security.cpp:216
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br><i>%2&lt;%3&gt;"
+#| "</i></br>:</qt>"
 msgid ""
-"<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br><i>%2&lt;%3&gt;</"
-"i></br>:</qt>"
+"<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br /><i>%2&lt;%3&gt;</"
+"i></br />:</qt>"
 msgstr ""
 "<qt> <br><i>%2&lt;%3&gt;</i>:मा रहेको, <b>0x%1</b> कुञ्जीका लागि पासफ्रेज प्रविष्ट "
 "गर्नुहोस्:</qt>"
@@ -5188,6 +5191,16 @@ msgstr "Alt"
 #: kdeui/util/kkeyserver.cpp:52
 msgid "Meta"
 msgstr "मेटा"
+
+#: kdeui/util/kundostack.cpp:48
+#, fuzzy
+#| msgid "Redo"
+msgid "Redo"
+msgstr "रिडू गर्नुहोस्"
+
+#: kdeui/util/kundostack.cpp:67 kdeui/util/kkeyserver_x11.cpp:112
+msgid "Undo"
+msgstr "पूर्वस्थितिमा फर्काउनुहोस्"
 
 #: kdeui/util/ksystemtrayicon.cpp:105
 msgid "Minimize"
@@ -5480,10 +5493,6 @@ msgstr "फेरि"
 msgid "Props"
 msgstr "रोक्दछ"
 
-#: kdeui/util/kkeyserver_x11.cpp:112
-msgid "Undo"
-msgstr "पूर्वस्थितिमा फर्काउनुहोस्"
-
 #: kdeui/util/kkeyserver_x11.cpp:113
 msgid "Front"
 msgstr "अगाडि"
@@ -5598,18 +5607,29 @@ msgid "About KDE"
 msgstr "केडीईका बारेमा"
 
 #: kdeui/dialogs/kaboutkdedialog.cpp:46
-#, qt-format
-msgid "<font size=\"4\">K Desktop Environment</font><br><b>Version %1</b>"
+#, fuzzy, qt-format
+#| msgid "<font size=\"4\">K Desktop Environment</font><br><b>Version %1</b>"
+msgid "<font size=\"4\">K Desktop Environment</font><br /><b>Version %1</b>"
 msgstr "<font size=\"4\">केडीई डेस्कटप परिवेश</font><br><b>संस्करण %1</b>"
 
 #: kdeui/dialogs/kaboutkdedialog.cpp:54
+#, fuzzy
+#| msgid ""
+#| "The <b>K Desktop Environment</b> is written and maintained by the KDE "
+#| "Team, a world-wide network of software engineers committed to <a href="
+#| "\"http://www.gnu.org/philosophy/free-sw.html\">Free Software</a> "
+#| "development.<br><br>No single group, company or organization controls the "
+#| "KDE source code. Everyone is welcome to contribute to KDE.<br><br>Visit "
+#| "<a href=\"http://www.kde.org/\">http://www.kde.org</A> for more "
+#| "information on the KDE project."
 msgid ""
 "The <b>K Desktop Environment</b> is written and maintained by the KDE Team, "
 "a world-wide network of software engineers committed to <a href=\"http://www."
-"gnu.org/philosophy/free-sw.html\">Free Software</a> development.<br><br>No "
-"single group, company or organization controls the KDE source code. Everyone "
-"is welcome to contribute to KDE.<br><br>Visit <a href=\"http://www.kde.org/"
-"\">http://www.kde.org</A> for more information on the KDE project."
+"gnu.org/philosophy/free-sw.html\">Free Software</a> development.<br /><br /"
+">No single group, company or organization controls the KDE source code. "
+"Everyone is welcome to contribute to KDE.<br /><br />Visit <a href=\"http://"
+"www.kde.org/\">http://www.kde.org</a> for more information on the KDE "
+"project."
 msgstr ""
 "<b>केडीई डेक्स्टप परिवेश</b> लाई,<a href=\"http://www.gnu.org/philosophy/free-sw."
 "html\"> नि:शुल्क सफ्टवेयर</a> विकासमा समर्पित सफ्टवेयर इन्जिनियरको विश्वव्यापी, केडीई "
@@ -5619,15 +5639,25 @@ msgstr ""
 "\">http://www.kde.org</A> मा जानुहोस् ।"
 
 #: kdeui/dialogs/kaboutkdedialog.cpp:69
+#, fuzzy
+#| msgid ""
+#| "Software can always be improved, and the KDE Team is ready to do so. "
+#| "However, you - the user - must tell us when something does not work as "
+#| "expected or could be done better.<br><br>The K Desktop Environment has a "
+#| "bug tracking system. Visit <a href=\"http://bugs.kde.org/\">http://bugs."
+#| "kde.org</a> or use the \"Report Bug...\" dialog from the \"Help\" menu to "
+#| "report bugs.<br><br>If you have a suggestion for improvement then you are "
+#| "welcome to use the bug tracking system to register your wish. Make sure "
+#| "you use the severity called \"Wishlist\"."
 msgid ""
 "Software can always be improved, and the KDE Team is ready to do so. "
 "However, you - the user - must tell us when something does not work as "
-"expected or could be done better.<br><br>The K Desktop Environment has a bug "
-"tracking system. Visit <a href=\"http://bugs.kde.org/\">http://bugs.kde.org</"
-"a> or use the \"Report Bug...\" dialog from the \"Help\" menu to report bugs."
-"<br><br>If you have a suggestion for improvement then you are welcome to use "
-"the bug tracking system to register your wish. Make sure you use the "
-"severity called \"Wishlist\"."
+"expected or could be done better.<br /><br />The K Desktop Environment has a "
+"bug tracking system. Visit <a href=\"http://bugs.kde.org/\">http://bugs.kde."
+"org</a> or use the \"Report Bug...\" dialog from the \"Help\" menu to report "
+"bugs.<br /><br />If you have a suggestion for improvement then you are "
+"welcome to use the bug tracking system to register your wish. Make sure you "
+"use the severity called \"Wishlist\"."
 msgstr ""
 "सफ्टवेयरलाई सधै सुधार गर्न सकिन्छ र केडीई समूह त्यो गर्न सधै तत्पर छ । यद्यपि, तपाईँ - "
 "प्रयोगकर्ताले - राम्रो गर्न नसकेमा वा अपेक्षा गरिए जस्तो काम नगरेमा हामीलाई सम्पर्क गर्न "
@@ -5638,15 +5668,25 @@ msgstr ""
 "स्वागत छ । \"इच्छा सूची\" प्रयोग गर्ने कुरामा यकीन हुनुहोस् ।"
 
 #: kdeui/dialogs/kaboutkdedialog.cpp:86
+#, fuzzy
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br><br>Visit <a href=\"http://www.kde.org/jobs/\">http://www.kde."
+#| "org/jobs/</A> for information on some projects in which you can "
+#| "participate.<br><br>If you need more information or documentation, then a "
+#| "visit to <a href=\"http://techbase.kde.org/\">http://techbase.kde.org</A> "
+#| "will provide you with what you need."
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
 "You can join the national teams that translate program interfaces. You can "
 "provide graphics, themes, sounds, and improved documentation. You decide!"
-"<br><br>Visit <a href=\"http://www.kde.org/jobs/\">http://www.kde.org/jobs/</"
-"A> for information on some projects in which you can participate.<br><br>If "
-"you need more information or documentation, then a visit to <a href=\"http://"
-"techbase.kde.org/\">http://techbase.kde.org</A> will provide you with what "
-"you need."
+"<br /><br />Visit <a href=\"http://www.kde.org/jobs/\">http://www.kde.org/"
+"jobs/</a> for information on some projects in which you can participate.<br /"
+"><br />If you need more information or documentation, then a visit to <a "
+"href=\"http://techbase.kde.org/\">http://techbase.kde.org</a> will provide "
+"you with what you need."
 msgstr ""
 "तपाईँ केडीई समूहको सदस्य हुनलाई सफ्टवेयर विकासकर्ता हुनुपर्दछ भन्ने छैन ।तपाईँ कार्यक्रम "
 "इन्टरफेस अनुवाद गर्ने राष्ट्रिय समूहको सदस्यमा आवद्ध हुन सक्नुहुन्छ । तपाईँले ग्राफिक्स, "
@@ -5657,17 +5697,30 @@ msgstr ""
 "\"http://techbase.kde.org/\">http://techbase.kde.org</A> मा जानुहोस् ।"
 
 #: kdeui/dialogs/kaboutkdedialog.cpp:106
+#, fuzzy
+#| msgid ""
+#| "KDE is available free of charge, but making it is not free.<br><br>Thus, "
+#| "the KDE team formed the KDE e.V., a non-profit organization legally "
+#| "founded in Tuebingen, Germany. The KDE e.V. represents the KDE project in "
+#| "legal and financial matters. See <a href=\"http://www.kde-ev.org/"
+#| "\">http://www.kde-ev.org</a> for information on the KDE e.V.<br><br>The "
+#| "KDE team does need financial support. Most of the money is used to "
+#| "reimburse members and others on expenses they experienced when "
+#| "contributing to KDE. You are encouraged to support KDE through a "
+#| "financial donation, using one of the ways described at <a href=\"http://"
+#| "www.kde.org/support/\">http://www.kde.org/support/</a>.<br><br>Thank you "
+#| "very much in advance for your support."
 msgid ""
 "KDE is available free of charge, but making it is not free.<br><br>Thus, the "
 "KDE team formed the KDE e.V., a non-profit organization legally founded in "
 "Tuebingen, Germany. The KDE e.V. represents the KDE project in legal and "
 "financial matters. See <a href=\"http://www.kde-ev.org/\">http://www.kde-ev."
-"org</a> for information on the KDE e.V.<br><br>The KDE team does need "
+"org</a> for information on the KDE e.V.<br /><br />The KDE team does need "
 "financial support. Most of the money is used to reimburse members and others "
 "on expenses they experienced when contributing to KDE. You are encouraged to "
 "support KDE through a financial donation, using one of the ways described at "
-"<a href=\"http://www.kde.org/support/\">http://www.kde.org/support/</a>."
-"<br><br>Thank you very much in advance for your support."
+"<a href=\"http://www.kde.org/support/\">http://www.kde.org/support/</a>.<br /"
+"><br />Thank you very much in advance for your support."
 msgstr ""
 "केडीई नि:शुल्क उपलब्ध हुन्छ, तर बनाउँदा यो नि:शुल्क हुदैन ।<br><br>त्यसैले, केडीई समूहले केडीई "
 "e.V. बनाएको छ, टुबिनगेन, जर्मनीमा कानुनी रूपमा स्थापित गैर नाफा मुलक सङ्गठन हो । केडीई "
@@ -5967,8 +6020,11 @@ msgstr ""
 "दिइएको केडीई बारेको डेटा वस्तु अवस्थित छैन ।"
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:83
-#, qt-format
-msgid "<font size=\"5\">%1</font><br><b>Version %2</b><br>Using KDE %3</html>"
+#, fuzzy, qt-format
+#| msgid ""
+#| "<font size=\"5\">%1</font><br><b>Version %2</b><br>Using KDE %3</html>"
+msgid ""
+"<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3</html>"
 msgstr "<font size=\"5\">%1</font><br><b>संस्करण %2</b><br>प्रयोग KDE %3</html>"
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:111
@@ -6426,7 +6482,9 @@ msgid "Relative"
 msgstr "सापेक्षिक"
 
 #: kdeui/fonts/kfontchooser.cpp:299
-msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+#, fuzzy
+#| msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+msgid "Font size<br /><i>fixed</i> or <i>relative</i><br />to environment"
 msgstr "परिवेशमा<br><i>स्थिर</i> वा <i>सापेक्षिक</i><br> फन्ट साइज"
 
 #: kdeui/fonts/kfontchooser.cpp:301
@@ -6559,12 +6617,19 @@ msgid "Enter a replacement string, or select a previous one from the list."
 msgstr "प्रतिस्थापन स्ट्रिङ प्रविष्ट गर्नुहोस्, वा सूचीबाट अघिल्लो एउटालाई चयन गर्नुहोस् ।"
 
 #: kdeui/findreplace/kfinddialog.cpp:234
+#, fuzzy
+#| msgid ""
+#| "<qt>If enabled, any occurrence of <code><b>\\N</b></code>, where "
+#| "<code><b>N</b></code> is a integer number, will be replaced with the "
+#| "corresponding capture (\"parenthesized substring\") from the pattern."
+#| "<p>To include (a literal <code><b>\\N</b></code> in your replacement, put "
+#| "an extra backslash in front of it, like <code><b>\\\\N</b></code>.</qt>"
 msgid ""
 "<qt>If enabled, any occurrence of <code><b>\\N</b></code>, where <code><b>N</"
 "b></code> is a integer number, will be replaced with the corresponding "
 "capture (\"parenthesized substring\") from the pattern.<p>To include (a "
 "literal <code><b>\\N</b></code> in your replacement, put an extra backslash "
-"in front of it, like <code><b>\\\\N</b></code>.</qt>"
+"in front of it, like <code><b>\\\\N</b></code>.</p></qt>"
 msgstr ""
 "<qt>यदि सक्षम पारिएमा, <code><b>\\N</b></code> को कुनै पनि घटना, जहाँ "
 "<code><b>N</b></code> एउटा इन्टिजर सङ्ख्या हुन्छ, त्यसलाई बाँन्कीबाट अनुकूल अधिग्रहण "
@@ -6690,34 +6755,34 @@ msgstr "फड्काउनुहोस्"
 msgid "Replace '%1' with '%2'?"
 msgstr " '%1' लाई '%2' सँग बदल्नुहुन्छ ?"
 
-#: kdeui/findreplace/kreplace.cpp:128 kdeui/findreplace/kreplace.cpp:323
+#: kdeui/findreplace/kreplace.cpp:128 kdeui/findreplace/kreplace.cpp:324
 msgid "No text was replaced."
 msgstr "पाठ बदलिएको छैन ।"
 
-#: kdeui/findreplace/kreplace.cpp:130 kdeui/findreplace/kreplace.cpp:325
+#: kdeui/findreplace/kreplace.cpp:130 kdeui/findreplace/kreplace.cpp:326
 #, qt-format
 msgid "1 replacement done."
 msgid_plural "%1 replacements done."
 msgstr[0] "१ प्रतिस्थापन पूरा भयो ।"
 msgstr[1] "%1 प्रतिस्थापन पूरा भयो ।"
 
-#: kdeui/findreplace/kreplace.cpp:330 kdeui/findreplace/kfind.cpp:614
+#: kdeui/findreplace/kreplace.cpp:331 kdeui/findreplace/kfind.cpp:614
 msgid "Beginning of document reached."
 msgstr "कागजातको सुरुआतमा पुगियो ।"
 
-#: kdeui/findreplace/kreplace.cpp:332 kdeui/findreplace/kfind.cpp:616
+#: kdeui/findreplace/kreplace.cpp:333 kdeui/findreplace/kfind.cpp:616
 msgid "End of document reached."
 msgstr "कागजातको अन्त्यमा पुगियो ।"
 
-#: kdeui/findreplace/kreplace.cpp:339
+#: kdeui/findreplace/kreplace.cpp:340
 msgid "Do you want to restart search from the end?"
 msgstr "तपाईँ अन्त्यबाट खोजी फेरि सुरु गर्न चाहनुहुन्छ ?"
 
-#: kdeui/findreplace/kreplace.cpp:340
+#: kdeui/findreplace/kreplace.cpp:341
 msgid "Do you want to restart search at the beginning?"
 msgstr "तपाईँ सुरुबाट खोजी फेरि सुरु गर्न चाहनुहुन्छ ?"
 
-#: kdeui/findreplace/kreplace.cpp:342
+#: kdeui/findreplace/kreplace.cpp:343
 msgid "Restart"
 msgstr "फेरि सुरु गर्नुहोस्"
 
@@ -7281,9 +7346,13 @@ msgid "Show St&atusbar"
 msgstr "स्थितिपट्टी देखाउनुहोस्"
 
 #: kdeui/actions/kstandardaction.cpp:477
+#, fuzzy
+#| msgid ""
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information."
 msgid ""
-"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
-"window used for status information."
+"Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+"bottom of the window used for status information."
 msgstr ""
 "स्थितिपट्टी देखाउनुहोस्<p>स्थितिपट्टी देखाउँदछ, जुन स्थिति जानकारीका लागि प्रयोग गरिने "
 "सञ्झ्यालको तलतिरको पट्टी हो ।"
@@ -8726,8 +8795,14 @@ msgid "No preview available."
 msgstr "पूर्वावलोकन उपलब्ध छैन ।"
 
 #: kfile/kfilewidget.cpp:175
+#, fuzzy
+#| msgid ""
+#| "<p>While typing in the text area, you may be presented with possible "
+#| "matches. This feature can be controlled by clicking with the right mouse "
+#| "button and selecting a preferred mode from the <b>Text Completion</b> "
+#| "menu."
 msgid ""
-"<p>While typing in the text area, you may be presented with possible "
+"<qt>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
 "button and selecting a preferred mode from the <b>Text Completion</b> menu."
 msgstr ""
@@ -8775,11 +8850,15 @@ msgid "Desktop: %1"
 msgstr "डेस्कटप: %1"
 
 #: kfile/kfilewidget.cpp:290
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
+#| "current location is file:/home/%1 clicking this button will take you to "
+#| "file:/home.</qt>"
 msgid ""
-"<qt>Click this button to enter the parent folder.<p>For instance, if the "
-"current location is file:/home/%1 clicking this button will take you to "
-"file:/home.</qt>"
+"<qt>Click this button to enter the parent folder.<br /><br />For instance, "
+"if the current location is file:/home/%1 clicking this button will take you "
+"to file:/home.</qt>"
 msgstr ""
 "<qt>प्रमूल फोल्डर प्रविष्ट गर्न यो बटन क्लिक गर्नुहोस् ।<p>दृष्टान्तका लागि, यदि हालको "
 "स्थान file:/home/%1 छ भने यो बटन क्लिक गर्दा यसले तपाईँलाईfile:/home मा लैजान्छ ।</"
@@ -8828,11 +8907,17 @@ msgid "&Location:"
 msgstr "स्थान:"
 
 #: kfile/kfilewidget.cpp:391
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the filter to apply to the file list. File names that do not "
+#| "match the filter will not be shown.<p>You may select from one of the "
+#| "preset filters in the drop down menu, or you may enter a custom filter "
+#| "directly into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
 "filters in the drop down menu, or you may enter a custom filter directly "
-"into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
+"into the text area.</p><p>Wildcards such as * and ? are allowed.</p></qt>"
 msgstr ""
 "<qt>यो फाइल सूची लागू गरिने फिल्टर हो । फिल्टरसँग नमिल्ने फाइलनाम देखाइने छैन ।<p>तपाईँले "
 "ड्रप डाउन मेनुको एउटा पूर्वसेट फिल्टरबाट चयन गर्न सक्नुहुन्छ, वा पाठ क्षेत्रमा अनुकूल फिल्टर "
@@ -8945,19 +9030,31 @@ msgid "a suitable extension"
 msgstr "उपयुक्त विस्तार"
 
 #: kfile/kfilewidget.cpp:1664
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "This option enables some convenient features for saving files with "
+#| "extensions:<br><ol><li>Any extension specified in the <b>%1</b> text area "
+#| "will be updated if you change the file type to save in.<br><br></"
+#| "li><li>If no extension is specified in the <b>%2</b> text area when you "
+#| "click <b>Save</b>, %3 will be added to the end of the filename (if the "
+#| "filename does not already exist). This extension is based on the file "
+#| "type that you have chosen to save in.<br><br>If you do not want KDE to "
+#| "supply an extension for the filename, you can either turn this option off "
+#| "or you can suppress it by adding a period (.) to the end of the filename "
+#| "(the period will be automatically removed).</li></ol>If unsure, keep this "
+#| "option enabled as it makes your files more manageable."
 msgid ""
 "This option enables some convenient features for saving files with "
-"extensions:<br><ol><li>Any extension specified in the <b>%1</b> text area "
-"will be updated if you change the file type to save in.<br><br></li><li>If "
-"no extension is specified in the <b>%2</b> text area when you click <b>Save</"
-"b>, %3 will be added to the end of the filename (if the filename does not "
-"already exist). This extension is based on the file type that you have "
-"chosen to save in.<br><br>If you do not want KDE to supply an extension for "
-"the filename, you can either turn this option off or you can suppress it by "
-"adding a period (.) to the end of the filename (the period will be "
-"automatically removed).</li></ol>If unsure, keep this option enabled as it "
-"makes your files more manageable."
+"extensions:<br /><ol><li>Any extension specified in the <b>%1</b> text area "
+"will be updated if you change the file type to save in.<br /><br /></"
+"li><li>If no extension is specified in the <b>%2</b> text area when you "
+"click <b>Save</b>, %3 will be added to the end of the filename (if the "
+"filename does not already exist). This extension is based on the file type "
+"that you have chosen to save in.<br /><br />If you do not want KDE to supply "
+"an extension for the filename, you can either turn this option off or you "
+"can suppress it by adding a period (.) to the end of the filename (the "
+"period will be automatically removed).</li></ol>If unsure, keep this option "
+"enabled as it makes your files more manageable."
 msgstr ""
 "यो विकल्पले विस्तारसँग फाइल बचत गर्नका लागि केही सुविधाजनक विशेषता सक्षम पार्दछ:"
 "<br><ol><li>तपाईँले बचत गर्दा फाइल प्रकार परिवर्तन गरेमा पाठ क्षेत्र <b>%1</b> मा "
@@ -8974,11 +9071,17 @@ msgid "Bookmarks"
 msgstr "पुस्तकचिनो"
 
 #: kfile/kfilewidget.cpp:1935
+#, fuzzy
+#| msgid ""
+#| "<qt>This button allows you to bookmark specific locations. Click on this "
+#| "button to open the bookmark menu where you may add, edit or select a "
+#| "bookmark.<p>These bookmarks are specific to the file dialog, but "
+#| "otherwise operate like bookmarks elsewhere in KDE.</qt>"
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
-"bookmark.<p>These bookmarks are specific to the file dialog, but otherwise "
-"operate like bookmarks elsewhere in KDE.</qt>"
+"bookmark.<br /><br />These bookmarks are specific to the file dialog, but "
+"otherwise operate like bookmarks elsewhere in KDE.</qt>"
 msgstr ""
 "<qt>यो बटनले तपाईँलाई निर्दिष्ट स्थान पुस्तकचिनो गर्न अनुमति दिन्छ । पुस्तकचिनो मेनु "
 "खोल्नलाई यो बटनमा क्लिक गर्नुहोस् जहाँ तपाईँले पुस्तकचिनो थप्न, सम्पादन गर्न वा चयन गर्न "
@@ -9075,18 +9178,27 @@ msgid "Edit Quick Access Entry"
 msgstr "छिटो पहुँच प्रविष्टि सम्पादन गर्नुहोस्"
 
 #: kfile/kfileplaceeditdialog.cpp:91
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Please provide a description, URL and icon for this Quick Access "
+#| "entry.</b></br></qt>"
 msgid ""
 "<qt><b>Please provide a description, URL and icon for this Quick Access "
-"entry.</b></br></qt>"
+"entry.</b><br /></qt>"
 msgstr ""
 "<qt><b>कृपया छिटो पहुँच प्रविष्टिका लागि वर्णन, यूआरएल र प्रतिमा उपलब्ध गराउँनुहोस् ।</"
 "b></br></qt>"
 
 #: kfile/kfileplaceeditdialog.cpp:99
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the text that will appear in the Quick Access panel.<p>The "
+#| "description should consist of one or two words that will help you "
+#| "remember what this entry refers to.</qt>"
 msgid ""
-"<qt>This is the text that will appear in the Quick Access panel.<p>The "
-"description should consist of one or two words that will help you remember "
-"what this entry refers to.</qt>"
+"<qt>This is the text that will appear in the Quick Access panel.<br /><br /"
+">The description should consist of one or two words that will help you "
+"remember what this entry refers to.</qt>"
 msgstr ""
 "<qt>यो छिटो पहुँच प्यानलमा देखा पर्ने पाठ हो ।<p>वर्णनमा यस प्रविष्टिले सन्दर्भ गर्ने कुरा "
 "याद दिलाउन मद्दत गर्ने एक वा दुइ शब्द समावेश गर्नुपर्दछ ।</qt>"
@@ -9096,12 +9208,17 @@ msgid "&Description:"
 msgstr "वर्णन:"
 
 #: kfile/kfileplaceeditdialog.cpp:109
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>This is the location associated with the entry. Any valid URL may be "
+#| "used. For example:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/"
+#| "kde/stable<p>By clicking on the button next to the text edit box you can "
+#| "browse to an appropriate URL.</qt>"
 msgid ""
 "<qt>This is the location associated with the entry. Any valid URL may be "
-"used. For example:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/kde/"
-"stable<p>By clicking on the button next to the text edit box you can browse "
-"to an appropriate URL.</qt>"
+"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
+"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
+"edit box you can browse to an appropriate URL.</qt>"
 msgstr ""
 "<qt>यो प्रविष्टिसँग सम्बन्धित स्थान हो । कुनै पनि वैध यूआरएल प्रयोग हुनसक्छ । उदाहरणका "
 "लागि:<p>%1<br>http://www.kde.org<br>ftp://ftp.kde.org/pub/kde/stable<p>पाठ "
@@ -9112,9 +9229,13 @@ msgid "&URL:"
 msgstr "यूआरएल:"
 
 #: kfile/kfileplaceeditdialog.cpp:120
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the icon that will appear in the Quick Access panel.<p>Click "
+#| "on the button to select a different icon.</qt>"
 msgid ""
-"<qt>This is the icon that will appear in the Quick Access panel.<p>Click on "
-"the button to select a different icon.</qt>"
+"<qt>This is the icon that will appear in the Quick Access panel.<br /><br /"
+">Click on the button to select a different icon.</qt>"
 msgstr ""
 "<qt>यो छिटो पहुँच प्यानलमा देखापर्ने प्रतिमा हो ।<p>भिन्न प्रतिमा चयन गर्न बटनमा क्लिक "
 "गर्नुहोस् ।</qt>"
@@ -9129,11 +9250,15 @@ msgid "&Only show when using this application (%1)"
 msgstr "अनुप्रयोग (%1) प्रयोग गर्ने बेलामा मात्र देखाउनुहोस्"
 
 #: kfile/kfileplaceeditdialog.cpp:142
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>Select this setting if you want this entry to show only when using "
+#| "the current application (%1).<p>If this setting is not selected, the "
+#| "entry will be available in all applications.</qt>"
 msgid ""
 "<qt>Select this setting if you want this entry to show only when using the "
-"current application (%1).<p>If this setting is not selected, the entry will "
-"be available in all applications.</qt>"
+"current application (%1).<br /><br />If this setting is not selected, the "
+"entry will be available in all applications.</qt>"
 msgstr ""
 "<qt>तपाईँले हालको अनुप्रयोग (%1) प्रयोग गर्दा मात्र यो प्रविष्टि देखाउन चाहेमा यो सेटिङ "
 "प्रयोग गर्नुहोस् ।<p>यदि यो सेटिङ चयन गरिएको छैन भने, प्रविष्टि सबै अनुप्रयोगमा उपलब्ध "
@@ -9644,9 +9769,13 @@ msgid "Enlarge Font"
 msgstr "फन्ट ठूलो बनाउनुहोस्"
 
 #: khtml/khtml_part.cpp:344
+#, fuzzy
+#| msgid ""
+#| "Enlarge Font<p>Make the font in this window bigger. Click and hold down "
+#| "the mouse button for a menu with all available font sizes."
 msgid ""
-"Enlarge Font<p>Make the font in this window bigger. Click and hold down the "
-"mouse button for a menu with all available font sizes."
+"Enlarge Font<br /><br />Make the font in this window bigger. Click and hold "
+"down the mouse button for a menu with all available font sizes."
 msgstr ""
 "फन्ट ठूलो पार्नुहोस्<p>यो सझ्ञ्यालमा फन्ट ठूलो बनाउँदछ । सबै उपलब्ध फन्ट साइजसँग मेनुका लागि "
 "माउस बटन राख्न क्लिक गर्नुहोस् ।"
@@ -9656,32 +9785,48 @@ msgid "Shrink Font"
 msgstr "फन्ट सानो बनाउनुहोस्"
 
 #: khtml/khtml_part.cpp:352
+#, fuzzy
+#| msgid ""
+#| "Shrink Font<p>Make the font in this window smaller. Click and hold down "
+#| "the mouse button for a menu with all available font sizes."
 msgid ""
-"Shrink Font<p>Make the font in this window smaller. Click and hold down the "
-"mouse button for a menu with all available font sizes."
+"Shrink Font<br /><br />Make the font in this window smaller. Click and hold "
+"down the mouse button for a menu with all available font sizes."
 msgstr ""
 "फन्ट सानो पार्नुहोस्<p>यो सञ्झ्यालमा फन्ट सानो पार्दछ । फन्टका लागि सबै उपलब्ध फन्ट "
 "साइजसँग माउस बटन क्लिक गरेर होल्ड गर्नुहोस् ।"
 
 #: khtml/khtml_part.cpp:358
+#, fuzzy
+#| msgid ""
+#| "Find text<p>Shows a dialog that allows you to find text on the displayed "
+#| "page."
 msgid ""
-"Find text<p>Shows a dialog that allows you to find text on the displayed "
-"page."
+"Find text<br /><br />Shows a dialog that allows you to find text on the "
+"displayed page."
 msgstr ""
 "पाठ फेला पार्नुहोस्<p>प्रदर्शित पृष्ठमा तपाईँलाई पाठ फेला पार्न अनुमति दिने संवाद देखाउँदछ ।"
 
 #: khtml/khtml_part.cpp:362
+#, fuzzy
+#| msgid ""
+#| "Find next<p>Find the next occurrence of the text that you have found "
+#| "using the <b>Find Text</b> function"
 msgid ""
-"Find next<p>Find the next occurrence of the text that you have found using "
-"the <b>Find Text</b> function"
+"Find next<br /><br />Find the next occurrence of the text that you have "
+"found using the <b>Find Text</b> function"
 msgstr ""
 "पछिल्लो फेला पार्नुहोस्<p>तपाईँले <b>पाठ फेला पार्नुहोस्</b> प्रकार्य प्रयोग गरेर फेला पार्नु "
 "भएको पाठको पछिल्लो घटना फेला पार्नुहोस्"
 
 #: khtml/khtml_part.cpp:368
+#, fuzzy
+#| msgid ""
+#| "Find previous<p>Find the previous occurrence of the text that you have "
+#| "found using the <b>Find Text</b> function"
 msgid ""
-"Find previous<p>Find the previous occurrence of the text that you have found "
-"using the <b>Find Text</b> function"
+"Find previous<br /><br />Find the previous occurrence of the text that you "
+"have found using the <b>Find Text</b> function"
 msgstr ""
 "अघिल्लो फेला पार्नुहोस्<p>तपाईँले <b>पाठ फेला पार्नुहोस्</b> प्रकार्य प्रयोग गरेर फेला पार्नु "
 "भएको पाठको अघिल्लो घटना फेला पार्नुहोस्"
@@ -9695,9 +9840,13 @@ msgid "Find Links as You Type"
 msgstr "तपाईँले टाइप गरे जस्तै लिङ्क फेला पार्नुहोस्"
 
 #: khtml/khtml_part.cpp:398
+#, fuzzy
+#| msgid ""
+#| "Print Frame<p>Some pages have several frames. To print only a single "
+#| "frame, click on it and then use this function."
 msgid ""
-"Print Frame<p>Some pages have several frames. To print only a single frame, "
-"click on it and then use this function."
+"Print Frame<br /><br />Some pages have several frames. To print only a "
+"single frame, click on it and then use this function."
 msgstr ""
 "फ्रेम मुद्रण गर्नुहोस्<p>केही पृष्ठमा धेरै फ्रेम हुन्छन् । केबल एउटा फ्रेम मुद्रण गर्न, यसमा क्लिक "
 "गर्नुहोस् र त्यसपछि यो प्रकार्य प्रयोग गर्नुहोस् ।"
@@ -9850,10 +9999,13 @@ msgid " - BCC: "
 msgstr "गुप्त बोधार्थ प्रतिलिपि: "
 
 #: khtml/khtml_part.cpp:3928
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>This untrusted page links to<BR><B>%1</B>.<BR>Do you want to follow "
+#| "the link?"
 msgid ""
-"<qt>This untrusted page links to<BR><B>%1</B>.<BR>Do you want to follow the "
-"link?"
+"<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to follow "
+"the link?"
 msgstr ""
 "<qt>यो अविश्वास गरिएको पृष्ठ <BR><B>%1</B>मा लिङ्क हुन्छ ।<BR>तपाईँ लिङ्क अनुगमन गर्न "
 "चाहनुहुन्छ ?"
@@ -9930,10 +10082,13 @@ msgid "&Send Email"
 msgstr "इमेल पठाउनुहोस्"
 
 #: khtml/khtml_part.cpp:4824
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>The form will be submitted to <BR><B>%1</B><BR>on your local "
+#| "filesystem.<BR>Do you want to submit the form?"
 msgid ""
-"<qt>The form will be submitted to <BR><B>%1</B><BR>on your local filesystem."
-"<BR>Do you want to submit the form?"
+"<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
+"filesystem.<br />Do you want to submit the form?"
 msgstr ""
 "<qt>फारम तपाईँको स्थानीय फाइल प्रणालीको <BR><B>%1</B><BR>मा पेश गरिन्छ ।<BR>तपाईँ "
 "फारम पेश गर्न चाहनुहुन्छ ?"
@@ -9961,8 +10116,9 @@ msgid "Security Warning"
 msgstr "सुरक्षा चेतावनी"
 
 #: khtml/khtml_part.cpp:6875
-#, qt-format
-msgid "<qt>Access by untrusted page to<BR><B>%1</B><BR> denied."
+#, fuzzy, qt-format
+#| msgid "<qt>Access by untrusted page to<BR><B>%1</B><BR> denied."
+msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied."
 msgstr "<qt>अविश्वासिलो पृष्ठबाट <BR><B>%1</B><BR> मा पहुँच अस्वीकार गरियो ।"
 
 #: khtml/khtml_part.cpp:6876 khtml/java/kjavaappletserver.cpp:823
@@ -10597,7 +10753,9 @@ msgid "Embeddable component for multipart/mixed"
 msgstr "बहुभाग/मिश्रणका लागि सम्मिलित अवयव"
 
 #: khtml/kmultipart/kmultipart.cpp:579
-msgid "(c) 2001, David Faure <david@mandrakesoft.com>"
+#, fuzzy
+#| msgid "(c) 2001, David Faure <david@mandrakesoft.com>"
+msgid "Copyright 2001, David Faure <email>david@mandrakesoft.com</email>"
 msgstr "(c) 2001, डेभिड फाउर <david@mandrakesoft.com>"
 
 #: khtml/rendering/render_form.cpp:405 kde3support/kdeui/k3textedit.cpp:348
@@ -10979,8 +11137,9 @@ msgid "Unknown error"
 msgstr "अज्ञात त्रुटि"
 
 #: kparts/browserextension.cpp:651
-#, qt-format
-msgid "<qt>Do you want to search the Internet for <b>%1</b>?"
+#, fuzzy, qt-format
+#| msgid "<qt>Do you want to search the Internet for <b>%1</b>?"
+msgid "<qt>Do you want to search the Internet for <b>%1</b>?</qt>"
 msgstr "<qt>तपाईँ <b>%1</b> का लागि इन्टरनेट खोजी गर्न चाहनुहुन्छ ?"
 
 #: kparts/browserextension.cpp:652
@@ -11048,11 +11207,16 @@ msgid "&Open With..."
 msgstr "यससँग खोल्नुहोस्..."
 
 #: kutils/kcmoduleloader.cpp:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt>There was an error when loading the module '%1'.<br><br>The desktop "
+#| "file (%2) as well as the library (%3) was found but yet the module could "
+#| "not be loaded properly. Most likely the factory declaration was wrong, or "
+#| "the create_* function was missing.</qt>"
 msgid ""
-"<qt>There was an error when loading the module '%1'.<br><br>The desktop file "
-"(%2) as well as the library (%3) was found but yet the module could not be "
-"loaded properly. Most likely the factory declaration was wrong, or the "
+"<qt>There was an error when loading the module '%1'.<br /><br />The desktop "
+"file (%2) as well as the library (%3) was found but yet the module could not "
+"be loaded properly. Most likely the factory declaration was wrong, or the "
 "create_* function was missing.</qt>"
 msgstr ""
 "<qt> मोड्युल '%1' लोड गर्दा त्यहाँ त्रुटि थियो ।<br><br>(%2) डेस्कटप फाइलको साथै (%3) "
@@ -11070,9 +11234,11 @@ msgid "The module %1 could not be found."
 msgstr "%1 मोड्युल फेला पार्न सक्दैन ।"
 
 #: kutils/kcmoduleloader.cpp:138
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt><p>The diagnostics is:<br>The desktop file %1 could not be found.</qt>"
 msgid ""
-"<qt><p>The diagnostics is:<br>The desktop file %1 could not be found.</qt>"
+"<qt><p>The diagnostics is:<br />The desktop file %1 could not be found.</qt>"
 msgstr "<qt> <p>निदान: <br>डेस्कटप फाइल %1 फेला पार्न सक्दैन ।</qt>"
 
 #: kutils/kcmoduleloader.cpp:140
@@ -11099,9 +11265,12 @@ msgid "The module %1 is not a valid configuration module."
 msgstr "%1 मोड्युल वैध कन्फिगरेसन मोड्युल होइन ।"
 
 #: kutils/kcmoduleloader.cpp:170
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt><p>The diagnostics is:<br>The desktop file %1 does not specify a "
+#| "library.</qt>"
 msgid ""
-"<qt><p>The diagnostics is:<br>The desktop file %1 does not specify a library."
+"<qt>The diagnostics is:<br />The desktop file %1 does not specify a library."
 "</qt>"
 msgstr "<qt> <p>निदान: <br>डेस्कटप फाइल %1 ले लाइब्रेरी निर्दिष्ट गर्दैन ।</qt>"
 
@@ -11109,15 +11278,44 @@ msgstr "<qt> <p>निदान: <br>डेस्कटप फाइल %1 ल�
 msgid "There was an error loading the module."
 msgstr "मोड्युल लोड गर्दा त्यहाँ त्रुटि थियो ।"
 
-#: kutils/kcmoduleloader.cpp:190 kutils/kcmoduleloader.cpp:205
-#, qt-format
+#: kutils/kcmoduleloader.cpp:190
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error "
+#| "occurred during your last KDE upgrade leaving an orphaned control "
+#| "module<li>You have old third party modules lying around.</ul><p>Check "
+#| "these points carefully and try to remove the module mentioned in the "
+#| "error message. If this fails, consider contacting your distributor or "
+#| "packager.</p></qt>"
 msgid ""
-"<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error "
-"occurred during your last KDE upgrade leaving an orphaned control "
-"module<li>You have old third party modules lying around.</ul><p>Check these "
-"points carefully and try to remove the module mentioned in the error "
+"<qt>The diagnostics is:<br />%1<p>Possible reasons:</p><ul><li>An error "
+"occurred during your last KDE upgrade leaving an orphaned control module</"
+"li><li>You have old third party modules lying around.</li></ul><p>Check "
+"these points carefully and try to remove the module mentioned in the error "
 "message. If this fails, consider contacting your distributor or packager.</"
 "p></qt>"
+msgstr ""
+"<qt><p>निदान:<br>%1<p>सम्भाव्य कारण:</p><ul><li>नविनतम केडीई स्तरबृद्धिले अर्फान "
+"नियन्त्रण मोड्युललाई छोड्दा एउटा त्रुटि उत्पन्न भयो<li>तपाईँसँग त्यहाँ वरिपरि पुरानो तेर्स्रो "
+"पक्षिय मोड्युल छ ।</ul><p>ती बिन्दुहरू सावधानीपूर्वक जाँच गर्नुहोस् र त्रुटि सन्देशमा "
+"तोकिएको मोड्युल हटाउन प्रयास गर्नुहोस् । यदि यो असफल भएमा, तपाईँको वितरक वा प्याकेज "
+"बनाउनेलाई सम्पर्क गर्ने विचार गर्नुहोस् ।</p></qt>"
+
+#: kutils/kcmoduleloader.cpp:205
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error "
+#| "occurred during your last KDE upgrade leaving an orphaned control "
+#| "module<li>You have old third party modules lying around.</ul><p>Check "
+#| "these points carefully and try to remove the module mentioned in the "
+#| "error message. If this fails, consider contacting your distributor or "
+#| "packager.</p></qt>"
+msgid ""
+"<qt>The diagnostics is:<br />%1<p>Possible reasons:<ul><li>An error occurred "
+"during your last KDE upgrade leaving an orphaned control module</li><li>You "
+"have old third party modules lying around.</li></ul><p>Check these points "
+"carefully and try to remove the module mentioned in the error message. If "
+"this fails, consider contacting your distributor or packager.</p></qt>"
 msgstr ""
 "<qt><p>निदान:<br>%1<p>सम्भाव्य कारण:</p><ul><li>नविनतम केडीई स्तरबृद्धिले अर्फान "
 "नियन्त्रण मोड्युललाई छोड्दा एउटा त्रुटि उत्पन्न भयो<li>तपाईँसँग त्यहाँ वरिपरि पुरानो तेर्स्रो "
@@ -11616,7 +11814,7 @@ msgid "&Client:"
 msgstr "क्लाइन्ट:"
 
 #: kde3support/kdeui/k3sconfig.cpp:255 kde3support/kdeui/k3sconfig.cpp:415
-#: kde3support/kdeui/k3sconfig.cpp:673
+#: kde3support/kdeui/k3sconfig.cpp:679
 #, fuzzy
 #| msgid "Hebrew"
 msgctxt "@item Spelling dictionary"
@@ -11624,7 +11822,7 @@ msgid "Hebrew"
 msgstr "हिब्रु"
 
 #: kde3support/kdeui/k3sconfig.cpp:260 kde3support/kdeui/k3sconfig.cpp:420
-#: kde3support/kdeui/k3sconfig.cpp:678
+#: kde3support/kdeui/k3sconfig.cpp:684
 #, fuzzy
 #| msgid "Turkish"
 msgctxt "@item Spelling dictionary"
@@ -11785,12 +11983,12 @@ msgctxt "@item Spelling dictionary"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: kde3support/kdeui/k3sconfig.cpp:461 kde3support/kdeui/k3sconfig.cpp:613
+#: kde3support/kdeui/k3sconfig.cpp:461 kde3support/kdeui/k3sconfig.cpp:617
 msgctxt "@item Spelling dictionary"
 msgid "<application>ISpell</application> Default"
 msgstr ""
 
-#: kde3support/kdeui/k3sconfig.cpp:507 kde3support/kdeui/k3sconfig.cpp:659
+#: kde3support/kdeui/k3sconfig.cpp:509 kde3support/kdeui/k3sconfig.cpp:665
 #, fuzzy, qt-format
 #| msgctxt "default spelling dictionary"
 #| msgid "Default - %1 [%2]"
@@ -11798,12 +11996,12 @@ msgctxt "@item Spelling dictionary: %1 dictionary name, %2 file name"
 msgid "Default - %1 [%2]"
 msgstr "पूर्वनिर्धारित - %1 [%2]"
 
-#: kde3support/kdeui/k3sconfig.cpp:528 kde3support/kdeui/k3sconfig.cpp:686
+#: kde3support/kdeui/k3sconfig.cpp:530 kde3support/kdeui/k3sconfig.cpp:692
 msgctxt "@item Spelling dictionary"
 msgid "<application>ASpell</application> Default"
 msgstr ""
 
-#: kde3support/kdeui/k3sconfig.cpp:591 kde3support/kdeui/k3sconfig.cpp:749
+#: kde3support/kdeui/k3sconfig.cpp:595 kde3support/kdeui/k3sconfig.cpp:757
 #, fuzzy, qt-format
 #| msgctxt "default spelling dictionary"
 #| msgid "Default - %1"
@@ -12240,11 +12438,15 @@ msgid "Tip of the &Day"
 msgstr "आजको टिप"
 
 #: kdeui/widgets/kcharselect_p.h:176
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Character"
+#| msgid ""
+#| "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Unicode code point: %"
+#| "4<br>(In decimal: %5)</qt>"
 msgctxt "Character"
 msgid ""
-"<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Unicode code point: %"
-"4<br>(In decimal: %5)</qt>"
+"<qt><font size=\"+4\" face=\"%1\">%2</font><br />%3<br />Unicode code point: "
+"%4<br />(In decimal: %5)</qt>"
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>युनिकोड सङ्केत बिन्दु: %4<br>"
 "(दशमलवमा: %5)</qt>"
