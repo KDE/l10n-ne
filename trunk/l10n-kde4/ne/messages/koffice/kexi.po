@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-05 05:39+0200\n"
+"POT-Creation-Date: 2007-08-25 05:37+0200\n"
 "PO-Revision-Date: 2007-02-11 15:12+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -267,7 +267,7 @@ msgstr "\"%1\" वस्तु खोल्न असफल ।"
 msgid "This project is opened as read only."
 msgstr "यो परियोजना पढ्नको लागि मात्र खोलियो ।"
 
-#: core/kexiproject.cpp:822 main/KexiMainWindow.cpp:4274
+#: core/kexiproject.cpp:822 main/KexiMainWindow.cpp:4309
 msgid "Could not set empty name for this object."
 msgstr "यो वस्तुका लागि खाली नाम सेट गर्न सकेन ।"
 
@@ -294,7 +294,7 @@ msgstr ""
 "परियोजना %1 पहिलेनै अवस्थित छ ।\n"
 "के तपाईं यसलाई नयाँ, एउटा खालीसँग बदल्न चाहनुहुन्छ?"
 
-#: core/kexiproject.cpp:973 main/kexifinddialog.cpp:232
+#: core/kexiproject.cpp:973 main/kexifinddialog.cpp:233
 #, fuzzy
 msgid "Replace"
 msgstr "बदल्नुहोस्"
@@ -317,23 +317,62 @@ msgstr ""
 msgid "Could not load \"%1\" plugin."
 msgstr "\"%1\" प्लगइन लोड गर्न सकेन ।"
 
-#: core/KexiWindow.cpp:450
+#: core/KexiWindow.cpp:76
+msgid "Switch to data view"
+msgstr "डेटा दृश्यमा स्विच गर्नुहोस्"
+
+#: core/KexiWindow.cpp:77
+msgid "Switches to data view."
+msgstr "डेटा दृश्यमा स्विच गर्दछ ।"
+
+#: core/KexiWindow.cpp:81
+msgid "Switch to design view"
+msgstr "डिजाइन दृश्यमा स्विच गर्नुहोस्"
+
+#: core/KexiWindow.cpp:82
+msgid "Switches to design view."
+msgstr "डिजाइन दृश्यमा स्विच गर्दछ ।"
+
+#: core/KexiWindow.cpp:86
+msgid "Switch to text view"
+msgstr "पाठ दृश्यमा स्विच गर्नुहोस्"
+
+#: core/KexiWindow.cpp:87
+msgid "Switches to text view."
+msgstr "पाठ दृश्यमा स्विच गर्दछ ।"
+
+#: core/KexiWindow.cpp:268
+#, fuzzy
+msgid "Save Design"
+msgstr "डिजाइन"
+
+#: core/KexiWindow.cpp:269
+msgid "Save current design"
+msgstr ""
+
+#: core/KexiWindow.cpp:270
+#, fuzzy
+#| msgid "Saves changes made to the current row."
+msgid "Saves changes made to the current design."
+msgstr "हालको पङ्क्तिमा गरिएको परिवर्तनहरू बचत गर्दछ ।"
+
+#: core/KexiWindow.cpp:641
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr ""
 "डिजाइन परिवर्तन गरिएको छ । तपाईंले यसलाई अर्को दृश्यमा स्विच गर्नु भन्दा पहिले बचत "
 "गर्नुपर्दछ ।"
 
-#: core/KexiWindow.cpp:514 main/KexiMainWindow.cpp:3403
+#: core/KexiWindow.cpp:705 main/KexiMainWindow.cpp:3427
 #, qt-format
 msgid "Switching to other view failed (%1)."
 msgstr "अर्को दृश्यमा स्विच गर्न असफल (%1) भयो ।"
 
-#: core/KexiWindow.cpp:669
+#: core/KexiWindow.cpp:878
 msgid "Saving object's definition failed."
 msgstr "वस्तुको परिभाषा बचत गर्दा असफल ।"
 
-#: core/KexiWindow.cpp:749
+#: core/KexiWindow.cpp:958
 #, fuzzy
 msgid "Saving object's data failed."
 msgstr "वस्तुको परिभाषा बचत गर्दा असफल ।"
@@ -684,29 +723,41 @@ msgstr "वस्तु डेटा दृश्यमा खुल्न स�
 msgid "Do you want to open it in Text View?"
 msgstr "के तपाईं यसलाई पाठ दृश्यमा खोल्न चाहनुहुन्छ?"
 
-#: core/kexipart.cpp:311
+#: core/kexipart.cpp:150
+#, fuzzy, qt-format
+#| msgid "cannot create object of type \"%1\""
+msgid "Create new object of type \"%1\""
+msgstr "\"%1\" प्रकारको वस्तु सिर्जना गर्न सकिँदैन"
+
+#: core/kexipart.cpp:152
+#, fuzzy, qt-format
+#| msgid "cannot create object of type \"%1\""
+msgid "Creates new object of type \"%1\""
+msgstr "\"%1\" प्रकारको वस्तु सिर्जना गर्न सकिँदैन"
+
+#: core/kexipart.cpp:304
 msgid "Could not load object's definition."
 msgstr "वस्तुको परिभाषा लोड गर्न सकेन ।"
 
-#: core/kexipart.cpp:311
+#: core/kexipart.cpp:304
 msgid "Object design may be corrupted."
 msgstr "वस्तु डिजाइन ध्वस्त हुनुपर्दछ ।"
 
-#: core/kexipart.cpp:313
+#: core/kexipart.cpp:306
 #, qt-format
 msgid "You can delete \"%1\" object and create it again."
 msgstr "तपाईं \"%1\" वस्तु मेटेर यसलाई फेरि सिर्जना गर्न सक्नुहुन्छ ।"
 
-#: core/kexipart.cpp:400
+#: core/kexipart.cpp:394
 msgid "Could not load object's data."
 msgstr "वस्तुको डेटा लोड गर्न सकेन ।"
 
-#: core/kexipart.cpp:400
+#: core/kexipart.cpp:394
 #, qt-format
 msgid "Data identifier: \"%1\"."
 msgstr "डेटा पहिचायक: \"%1\""
 
-#: core/kexipart.cpp:449
+#: core/kexipart.cpp:443
 #, fuzzy
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -716,7 +767,7 @@ msgctxt ""
 msgid "object"
 msgstr "वस्तु"
 
-#: core/kexipart.cpp:454 kexidb/field.cpp:718 kexidb/field.cpp:742
+#: core/kexipart.cpp:448 kexidb/field.cpp:718 kexidb/field.cpp:742
 msgid "Object"
 msgstr "वस्तु"
 
@@ -754,39 +805,55 @@ msgstr "निर्दिष्ट गरिएको भाग अवस्थ
 msgid "Specified document could not be opened."
 msgstr "निर्दिष्ट गरिएको कागजात खुल्न सकेन ।"
 
-#: core/kexi.cpp:144
-msgid "No View"
+#: core/kexi.cpp:131
+#, fuzzy
+#| msgid "No View"
+msgid "&No View"
 msgstr "दृश्य छैन"
 
-#: core/kexi.cpp:145
-msgid "Data View"
+#: core/kexi.cpp:133
+msgid "&Data View"
 msgstr "डेटा दृश्य"
 
-#: core/kexi.cpp:146
-msgid "Design View"
+#: core/kexi.cpp:135
+msgid "D&esign View"
 msgstr "डिजाइन दृश्य"
 
-#: core/kexi.cpp:147
-msgid "Text View"
+#: core/kexi.cpp:137
+msgid "&Text View"
 msgstr "पाठ दृश्य"
 
-#: core/kexi.cpp:149
-msgid "Unknown"
+#: core/kexi.cpp:139
+#, fuzzy
+#| msgid "Unknown"
+msgid "&Unknown"
 msgstr "अज्ञात"
 
-#: core/kexi.cpp:155
+#: core/kexi.cpp:146
+msgid "state_data"
+msgstr ""
+
+#: core/kexi.cpp:148
+msgid "state_edit"
+msgstr ""
+
+#: core/kexi.cpp:150
+msgid "state_sql"
+msgstr ""
+
+#: core/kexi.cpp:157
 msgid ""
 "You can correct data in this row or use \"Cancel row changes\" function."
 msgstr ""
 "तपाईं यो पङ्क्तिमा डेटा सुधार गर्न सक्नुहुन्छ वा \"पङ्क्ति परिवर्तनहरू रद्द गर्नुहोस्\" प्रकार्य "
 "प्रयोग गर्न सक्नुहुन्छ ।"
 
-#: core/kexi.cpp:322
+#: core/kexi.cpp:324
 #, qt-format
 msgid "This function is not available for version %1 of %2 application."
 msgstr "यो प्रकार्य संस्करण %2 को %1 अनुप्रयोगका लागि उपलब्ध हुँदैन ।"
 
-#: core/kexi.cpp:327
+#: core/kexi.cpp:329
 #, qt-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "\"%1\" प्रकार्य संस्करण %3 को %2 अनुप्रयोगका लागि उपलब्ध हुँदैन ।"
@@ -1227,7 +1294,7 @@ msgstr "परियोजना <b>%1</b> डाटाबेस सर्भर
 msgid "Creating New Project"
 msgstr "नयाँ परियोजना सिर्जना गर्दै"
 
-#: main/startup/KexiNewProjectWizard.cpp:116 main/KexiMainWindow_p.h:89
+#: main/startup/KexiNewProjectWizard.cpp:116 main/KexiMainWindow_p.h:140
 msgid "Create"
 msgstr "सिर्जना गर्नुहोस्"
 
@@ -1305,104 +1372,104 @@ msgid "Close the current tab"
 msgstr "हालको ट्याब बन्द गर्नुहोस्"
 
 #. i18n: tag text
-#. i18n: file data/kexiui.rc line 125
-#: main/KexiMainWindow.cpp:427 main/KexiMainWindow.cpp:513 rc.cpp:47
-msgid "&Window"
-msgstr "सञ्झ्याल"
-
-#. i18n: tag text
 #. i18n: file data/kexiui.rc line 88
-#: main/KexiMainWindow.cpp:434 rc.cpp:29
+#: main/KexiMainWindow.cpp:411 rc.cpp:29
 #, fuzzy
 msgid "&Insert"
 msgstr "घुसाउनुहोस्"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 21
-#: main/KexiMainWindow.cpp:440 rc.cpp:11
+#: main/KexiMainWindow.cpp:417 rc.cpp:11
 msgid "&Import"
 msgstr "आयात गर्नुहोस्"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 57
-#: main/KexiMainWindow.cpp:441 rc.cpp:23
+#: main/KexiMainWindow.cpp:418 rc.cpp:23
 msgid "Paste &Special"
 msgstr "विशेष टाँस्नुहोस्"
 
-#: main/KexiMainWindow.cpp:471
+#: main/KexiMainWindow.cpp:448
 msgctxt "Close the current tab page in Kexi tab interface"
 msgid "Close the current tab"
 msgstr "हालको ट्याब बन्द गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:584
+#. i18n: tag text
+#. i18n: file data/kexiui.rc line 125
+#: main/KexiMainWindow.cpp:490 rc.cpp:47
+msgid "&Window"
+msgstr "सञ्झ्याल"
+
+#: main/KexiMainWindow.cpp:561
 #, qt-format
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr "प्रयोगकर्ता इन्टरफेस मोड अर्को %1 अनुप्रयोग सुरुआतमा IDEAL मा स्विच गरिनेछ ।"
 
-#: main/KexiMainWindow.cpp:611
+#: main/KexiMainWindow.cpp:588
 #, qt-format
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
 "startup."
 msgstr "प्रयोगकर्ता इन्टरफेस मोड अर्को %1 अनुप्रयोग सुरुआतमा शाखाफ्रेममा स्विच गरिनेछ ।"
 
-#: main/KexiMainWindow.cpp:658
+#: main/KexiMainWindow.cpp:635
 msgid "&New..."
 msgstr "नयाँ..."
 
-#: main/KexiMainWindow.cpp:660
+#: main/KexiMainWindow.cpp:637
 msgid "Create a new project"
 msgstr "नयाँ परियोजना सिर्जना गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:662
+#: main/KexiMainWindow.cpp:639
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "नयाँ परियोजना सिर्जना गर्दछ । हालै खोलिएको परियोजना प्रभावित हुदैन ।"
 
-#: main/KexiMainWindow.cpp:667
+#: main/KexiMainWindow.cpp:644
 msgid "Open an existing project"
 msgstr "एउटा अवस्थित परियोजना खोल्नुहोस्"
 
-#: main/KexiMainWindow.cpp:669
+#: main/KexiMainWindow.cpp:646
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr "एउटा अवस्थित परियोजना खोल्दछ । हालै खोलिएको परियोजना प्रभावित हुँदैन ।"
 
-#: main/KexiMainWindow.cpp:673
+#: main/KexiMainWindow.cpp:650
 msgid "&Download Example Databases..."
 msgstr "उदाहरण डाटाबेस डाउनलोड गर्नुहोस्..."
 
-#: main/KexiMainWindow.cpp:674
+#: main/KexiMainWindow.cpp:651
 msgid "Download example databases from the Internet"
 msgstr "इन्टरनेटबाट उदाहरण डाटाबेस डाउनलोड गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:675
+#: main/KexiMainWindow.cpp:652
 msgid "Downloads example databases from the Internet."
 msgstr "इन्टरनेटबाट उदाहरण डाटाबेस डाउनलोड गर्दछ ।"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 11
-#: main/KexiMainWindow.cpp:684 main/KexiMainWindow.cpp:3211 rc.cpp:8
+#: main/KexiMainWindow.cpp:661 main/KexiMainWindow.cpp:3229 rc.cpp:8
 #, fuzzy
 msgid "Open Recent"
 msgstr "भर्खरको परियोजना खोल्नुहोस्"
 
-#: main/KexiMainWindow.cpp:704
+#: main/KexiMainWindow.cpp:681
 msgid "Save object changes"
 msgstr "वस्तु परिवर्तन बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:705
+#: main/KexiMainWindow.cpp:682
 msgid "Saves object changes from currently selected window."
 msgstr "हालै चयन गरिएको सञ्झ्यालबाट वस्तु परिवर्तनहरू बचत गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:710
+#: main/KexiMainWindow.cpp:687
 msgid "Save &As..."
 msgstr "यस रूपमा बचत गर्नुहोस्..."
 
-#: main/KexiMainWindow.cpp:711 main/KexiMainWindow.cpp:3227
+#: main/KexiMainWindow.cpp:688 main/KexiMainWindow.cpp:3245
 msgid "Save object as"
 msgstr "यस रूपमा वस्तु बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:713
+#: main/KexiMainWindow.cpp:690
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
@@ -1410,55 +1477,59 @@ msgstr ""
 "नयाँ नाम (उही परियोजना भित्र) अन्तर्गत हालै चयन गरिएको सञ्झ्यालबाट वस्तु परिवर्तनहरू "
 "बचत गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:719
+#: main/KexiMainWindow.cpp:696
 msgid "Project Properties"
 msgstr "परियोजना गुण"
 
-#: main/KexiMainWindow.cpp:728
+#: main/KexiMainWindow.cpp:705
 msgid "&Close Project"
 msgstr "परियोजना बन्द गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:729
+#: main/KexiMainWindow.cpp:706
 msgid "Close the current project"
 msgstr "हालको परियोजना बन्द गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:730
+#: main/KexiMainWindow.cpp:707
 msgid "Closes the current project."
 msgstr "हालको परियोजना बन्द गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:740
+#: main/KexiMainWindow.cpp:713
+msgid "Quits Kexi application. Kexi prompts you to save changes."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:718
 msgid "&Relationships..."
 msgstr "सम्बन्ध..."
 
-#: main/KexiMainWindow.cpp:742
+#: main/KexiMainWindow.cpp:720
 msgid "Project relationships"
 msgstr "परियोजना सम्बन्ध"
 
-#: main/KexiMainWindow.cpp:743
+#: main/KexiMainWindow.cpp:721
 msgid "Shows project relationships."
 msgstr "परियोजना सम्बन्ध देखाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:752
+#: main/KexiMainWindow.cpp:730
 msgid "&Import Database..."
 msgstr "डाटाबेस आयात गर्नुहोस्..."
 
-#: main/KexiMainWindow.cpp:753
+#: main/KexiMainWindow.cpp:731
 msgid "Import entire database as a Kexi project"
 msgstr "केक्सी परियोजनाको रूपमा सम्पूर्ण डाटाबेस आयात गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:755
+#: main/KexiMainWindow.cpp:733
 msgid "Imports entire database as a Kexi project."
 msgstr "केक्सी परियोजनाको रूपमा सम्पूर्ण डाटाबेस आयात गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:763
+#: main/KexiMainWindow.cpp:741
 msgid "&Compact Database..."
 msgstr "डाटाबेस सङ्कुचन गर्नुहोस्..."
 
-#: main/KexiMainWindow.cpp:764
+#: main/KexiMainWindow.cpp:742
 msgid "Compact the current database project"
 msgstr "हालको डाटाबेस परियोजना सङ्कुचन गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:766
+#: main/KexiMainWindow.cpp:744
 msgid ""
 "Compacts the current database project, so it will take less space and work "
 "faster."
@@ -1466,269 +1537,233 @@ msgstr ""
 "हालको डाटाबेस परियोजना सङ्कुचन गर्दछ, किनकि यसले कम खाली स्थान लिन्छ र कार्य छिटो "
 "हुन्छ।"
 
-#: main/KexiMainWindow.cpp:776
+#: main/KexiMainWindow.cpp:754
 msgctxt "Import->Table Data From File..."
 msgid "Table Data From &File..."
 msgstr "फाइलबाट तालिका डेटा..."
 
-#: main/KexiMainWindow.cpp:777
+#: main/KexiMainWindow.cpp:755
 msgid "Import table data from a file"
 msgstr "फाइलबाट तालिका डेटा आयात गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:778
+#: main/KexiMainWindow.cpp:756
 msgid "Imports table data from a file."
 msgstr "फाइलबाट तालिका डेटा आयात गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:786
+#: main/KexiMainWindow.cpp:764
 msgctxt "Export->Table or Query Data to File..."
 msgid "Table or Query Data to &File..."
 msgstr "फाइलमा तालिका वा क्वेरी डेटा..."
 
-#: main/KexiMainWindow.cpp:788
+#: main/KexiMainWindow.cpp:766
 msgid "Export data from the active table or query data to a file"
 msgstr "फाइलमा डेटा सक्रिय तालिका वा क्वेरी डेटाबाट निर्यात गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:790
+#: main/KexiMainWindow.cpp:768
 msgid "Exports data from the active table or query data to a file."
 msgstr "फाइलमा डेटा सक्रिय तालिका वा क्वेरी डेटाबाट निर्यात गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:801
+#: main/KexiMainWindow.cpp:779
 msgid "Print data from the active table or query"
 msgstr "सक्रिय तालिका वा क्वेरीबाट डेटा मुद्रण गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:802
+#: main/KexiMainWindow.cpp:780
 msgid "Prints data from the active table or query."
 msgstr "सक्रिय तालिका वा क्वेरीबाट डेटा मुद्रण गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:808
+#: main/KexiMainWindow.cpp:786
 msgid "Show print preview for the active table or query"
 msgstr "सक्रिय तालिका वा क्वेरीका लागि मुद्रण पूर्वावलोकन देखाउनुहोस्"
 
-#: main/KexiMainWindow.cpp:810
+#: main/KexiMainWindow.cpp:788
 msgid "Shows print preview for the active table or query."
 msgstr "सक्रिय तालिका वा क्वेरीका लागि मुद्रण पूर्वावलोकन देखाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:816
+#: main/KexiMainWindow.cpp:794
 #: main/printing/kexisimpleprintpreviewwindow.cpp:184
 msgid "Page Set&up..."
 msgstr "पृष्ठ सेटअप..."
 
-#: main/KexiMainWindow.cpp:818
+#: main/KexiMainWindow.cpp:796
 msgid "Show page setup for printing the active table or query"
 msgstr "सक्रिय तालिका वा क्वेरीका लागि पृष्ठ सेटअप देखाउनुहोस्"
 
-#: main/KexiMainWindow.cpp:820 widget/kexibrowser.cpp:222
+#: main/KexiMainWindow.cpp:798 widget/kexibrowser.cpp:222
 msgid "Shows page setup for printing the active table or query."
 msgstr "सक्रिय तालिका वा क्वेरी मुद्रण गर्नका लागि पृष्ठ सेटअप देखाउदछ ।"
 
-#: main/KexiMainWindow.cpp:835
+#: main/KexiMainWindow.cpp:813
 msgctxt "Paste Special->As Data &Table..."
 msgid "As Data &Table..."
 msgstr "डेटा तालिकाको रूपमा..."
 
-#: main/KexiMainWindow.cpp:837
+#: main/KexiMainWindow.cpp:815
 msgid "Paste clipboard data as a table"
 msgstr "तालिकाको रूपमा क्लिपबोर्ड टाँस्नुहोस्"
 
-#: main/KexiMainWindow.cpp:839
+#: main/KexiMainWindow.cpp:817
 msgid "Pastes clipboard data to a table."
 msgstr "तालिकामा क्लिपबोर्ड डेटा टाँस्दछ ।"
 
-#: main/KexiMainWindow.cpp:847
+#: main/KexiMainWindow.cpp:825
 msgctxt "Copy Special->Table or Query Data..."
 msgid "Table or Query as Data Table..."
 msgstr "डेटा तालिकाको रूपमा तालिका वा क्वेरी..."
 
-#: main/KexiMainWindow.cpp:850
+#: main/KexiMainWindow.cpp:828
 msgid "Copy selected table or query data to clipboard"
 msgstr "क्लिपबोर्डमा चयन तालिका वा क्वेरी डेटा प्रतिलिपि गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:852
+#: main/KexiMainWindow.cpp:830
 msgid "Copies selected table or query data to clipboard."
 msgstr "क्लिपबोर्डमा चयन तालिका वा क्वेरी डेटा प्रतिलिपि गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:857
+#: main/KexiMainWindow.cpp:835
 msgid "Reverts the most recent editing action."
 msgstr "हालैको सम्पादन कार्य उल्टाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:859
+#: main/KexiMainWindow.cpp:837
 msgid "Reverts the most recent undo action."
 msgstr "हालै पूर्वास्थितिमा फर्काइएको कार्य उल्टाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:888 widget/kexibrowser.cpp:154
+#: main/KexiMainWindow.cpp:866 widget/kexibrowser.cpp:154
 #, fuzzy
 msgid "&Delete"
 msgstr "पङ्क्ति मेट्नुहोस्"
 
-#: main/KexiMainWindow.cpp:890
+#: main/KexiMainWindow.cpp:868
 msgid "Delete selected object"
 msgstr "चयन गरिएको वस्तु मेट्नुहोस्"
 
-#: main/KexiMainWindow.cpp:891
+#: main/KexiMainWindow.cpp:869
 msgid "Deletes currently selected object."
 msgstr "हालै चयन गरिएको वस्तु मेट्दछ ।"
 
-#: main/KexiMainWindow.cpp:893
+#: main/KexiMainWindow.cpp:871
 msgid "Delete Row"
 msgstr "पङ्क्ति मेट्नुहोस्"
 
-#: main/KexiMainWindow.cpp:895
+#: main/KexiMainWindow.cpp:873
 msgid "Delete currently selected row"
 msgstr "हालै चयन गरिएको पङ्क्ति मेट्नुहोस्"
 
-#: main/KexiMainWindow.cpp:896
+#: main/KexiMainWindow.cpp:874
 msgid "Deletes currently selected row."
 msgstr "हालै चयन गरिएको पङ्क्ति मेट्दछ ।"
 
-#: main/KexiMainWindow.cpp:898
+#: main/KexiMainWindow.cpp:876
 msgid "Clear Table Contents"
 msgstr "तालिका सामग्री हटाउनुहोस्"
 
-#: main/KexiMainWindow.cpp:900
+#: main/KexiMainWindow.cpp:878
 msgid "Clear table contents"
 msgstr "तालिका सामग्री हटाउनुहोस्"
 
-#: main/KexiMainWindow.cpp:901
+#: main/KexiMainWindow.cpp:879
 msgid "Clears table contents."
 msgstr "तालिका सामग्री हटाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:904
+#: main/KexiMainWindow.cpp:882
 msgid "Edit Item"
 msgstr "वस्तु सम्पादन गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:907
+#: main/KexiMainWindow.cpp:885
 msgid "Edit currently selected item"
 msgstr "हालै चयन गरिएको वस्तु सम्पादन गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:908
+#: main/KexiMainWindow.cpp:886
 msgid "Edits currently selected item."
 msgstr "हालै चयन गरिएको वस्तु सम्पादन गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:910
+#: main/KexiMainWindow.cpp:888
 msgid "&Insert Empty Row"
 msgstr "खाली पङ्क्ति घुसाउनुहोस्"
 
-#: main/KexiMainWindow.cpp:914
+#: main/KexiMainWindow.cpp:892
 msgid "Insert one empty row above"
 msgstr "माथि एउटा खाली पङ्क्ति घुसाउनुहोस्"
 
-#: main/KexiMainWindow.cpp:916
+#: main/KexiMainWindow.cpp:894
 msgid "Inserts one empty row above currently selected table row."
 msgstr "हालै चयन गरिएको तालिका पङ्क्तिको माथि एउटा खाली पङ्क्ति घुसाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:923
-msgid "&Data View"
-msgstr "डेटा दृश्य"
-
-#: main/KexiMainWindow.cpp:927
-msgid "Switch to data view"
-msgstr "डेटा दृश्यमा स्विच गर्नुहोस्"
-
-#: main/KexiMainWindow.cpp:928
-msgid "Switches to data view."
-msgstr "डेटा दृश्यमा स्विच गर्दछ ।"
-
-#: main/KexiMainWindow.cpp:941
-msgid "D&esign View"
-msgstr "डिजाइन दृश्य"
-
-#: main/KexiMainWindow.cpp:945
-msgid "Switch to design view"
-msgstr "डिजाइन दृश्यमा स्विच गर्नुहोस्"
-
-#: main/KexiMainWindow.cpp:946
-msgid "Switches to design view."
-msgstr "डिजाइन दृश्यमा स्विच गर्दछ ।"
-
-#: main/KexiMainWindow.cpp:957
-msgid "&Text View"
-msgstr "पाठ दृश्य"
-
-#: main/KexiMainWindow.cpp:961
-msgid "Switch to text view"
-msgstr "पाठ दृश्यमा स्विच गर्नुहोस्"
-
-#: main/KexiMainWindow.cpp:962
-msgid "Switches to text view."
-msgstr "पाठ दृश्यमा स्विच गर्दछ ।"
-
-#: main/KexiMainWindow.cpp:972 widget/kexibrowser.cpp:88
+#: main/KexiMainWindow.cpp:951 widget/kexibrowser.cpp:88
 msgid "Project Navigator"
 msgstr "परियोजना नेभिगेटर"
 
-#: main/KexiMainWindow.cpp:974
+#: main/KexiMainWindow.cpp:953
 msgid "Go to project navigator panel"
 msgstr "परियोजना नेभिगेटर प्यानलमा जानुहोस्"
 
-#: main/KexiMainWindow.cpp:975
+#: main/KexiMainWindow.cpp:954
 msgid "Goes to project navigator panel."
 msgstr "परियोजना नेभिगेटर प्यानलमा जान्छ ।"
 
-#: main/KexiMainWindow.cpp:983
+#: main/KexiMainWindow.cpp:962
 msgid "Main Area"
 msgstr "मुख्य क्षेत्र"
 
-#: main/KexiMainWindow.cpp:985
+#: main/KexiMainWindow.cpp:964
 msgid "Go to main area"
 msgstr "मुख्य क्षेत्रमा जानुहोस्"
 
-#: main/KexiMainWindow.cpp:986
+#: main/KexiMainWindow.cpp:965
 msgid "Goes to main area."
 msgstr "मुख्य क्षेत्रमा जान्छ ।"
 
-#: main/KexiMainWindow.cpp:992 main/KexiMainWindow.cpp:2123
+#: main/KexiMainWindow.cpp:971 main/KexiMainWindow.cpp:2102
 msgid "Property Editor"
 msgstr "विशेषता सम्पादक"
 
-#: main/KexiMainWindow.cpp:994
+#: main/KexiMainWindow.cpp:973
 msgid "Go to property editor panel"
 msgstr "विशेषता सम्पादक प्यानलमा जानुहोस्"
 
-#: main/KexiMainWindow.cpp:995
+#: main/KexiMainWindow.cpp:974
 msgid "Goes to property editor panel."
 msgstr "विशेषता सम्पादक प्यानलमा जान्छ ।"
 
-#: main/KexiMainWindow.cpp:1003
+#: main/KexiMainWindow.cpp:982
 msgid "&Save Row"
 msgstr "पङ्क्ति बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1005
+#: main/KexiMainWindow.cpp:984
 msgid "Save changes made to the current row"
 msgstr "हालको पङ्क्तिमा गरिएको परिवर्तनहरू बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1006
+#: main/KexiMainWindow.cpp:985
 msgid "Saves changes made to the current row."
 msgstr "हालको पङ्क्तिमा गरिएको परिवर्तनहरू बचत गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:1009
+#: main/KexiMainWindow.cpp:988
 msgid "&Cancel Row Changes"
 msgstr "पङ्क्ति परिवर्तनहरू रद्द गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1012
+#: main/KexiMainWindow.cpp:991
 msgid "Cancel changes made to the current row"
 msgstr "हालको पङ्क्तिमा गरिएको परिवर्तनहरू रद्द गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1014
+#: main/KexiMainWindow.cpp:993
 msgid "Cancels changes made to the current row."
 msgstr "हालको पङ्क्तिमा गरिएको परिवर्तनहरू रद्द गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:1018
+#: main/KexiMainWindow.cpp:997
 msgid "&Execute"
 msgstr "कार्यान्वयन गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1023
+#: main/KexiMainWindow.cpp:1002
 msgid "&Filter"
 msgstr "फिल्टर"
 
-#: main/KexiMainWindow.cpp:1030
+#: main/KexiMainWindow.cpp:1009
 msgid "&Ascending"
 msgstr "बढ्दो क्रम"
 
-#: main/KexiMainWindow.cpp:1032
+#: main/KexiMainWindow.cpp:1011
 msgid "Sort data in ascending order"
 msgstr "बढ्दो क्रममा डेटालाई क्रमबद्व गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1033
+#: main/KexiMainWindow.cpp:1012
 msgid ""
 "Sorts data in ascending order (from A to Z and from 0 to 9). Data from "
 "selected column is used for sorting."
@@ -1736,15 +1771,15 @@ msgstr ""
 "(A देखि Z सम्म र ० देखि ९ सम्म) बढ्दो क्रममा डेटा क्रमबद्व गर्दछ । चयन गरिएको स्तम्भको "
 "डेटा क्रमबद्व गरिन्छ ।"
 
-#: main/KexiMainWindow.cpp:1035
+#: main/KexiMainWindow.cpp:1014
 msgid "&Descending"
 msgstr "घट्दो क्रम"
 
-#: main/KexiMainWindow.cpp:1037
+#: main/KexiMainWindow.cpp:1016
 msgid "Sort data in descending order"
 msgstr "डेटा घट्दो क्रममा क्रमबद्व गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1038
+#: main/KexiMainWindow.cpp:1017
 msgid ""
 "Sorts data in descending (from Z to A and from 9 to 0). Data from selected "
 "column is used for sorting."
@@ -1752,63 +1787,96 @@ msgstr ""
 "(Z देखि A सम्म र ९ देखि ० सम्म) घट्दो क्रममा डेटा क्रमबद्व गर्दछ । चयन गरिएको स्तम्भको "
 "डेटा क्रमबद्व गरिन्छ ।"
 
-#: main/KexiMainWindow.cpp:1048
+#: main/KexiMainWindow.cpp:1027
 msgid "&Font..."
 msgstr "फन्ट..."
 
-#: main/KexiMainWindow.cpp:1050
+#: main/KexiMainWindow.cpp:1029
 msgid "Change font for selected object"
 msgstr "चयन गरिएको वस्तुका लागि फन्ट परिवर्तन गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1051
+#: main/KexiMainWindow.cpp:1030
 msgid "Changes font for selected object."
 msgstr "चयन गरिएको वस्तुका लागि फन्ट परिवर्तन गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:1075
+#: main/KexiMainWindow.cpp:1054
 msgid "&Next Window"
 msgstr "पछिल्लो सञ्झ्याल"
 
-#: main/KexiMainWindow.cpp:1083
+#: main/KexiMainWindow.cpp:1062
 msgid "Next window"
 msgstr "पछिल्लो सञ्झ्याल"
 
-#: main/KexiMainWindow.cpp:1084
+#: main/KexiMainWindow.cpp:1063
 msgid "Switches to the next window."
 msgstr "पछिल्लो सञ्झ्यालमा स्विच गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:1089
+#: main/KexiMainWindow.cpp:1068
 msgid "&Previous Window"
 msgstr "अघिल्लो सञ्झ्याल"
 
-#: main/KexiMainWindow.cpp:1097
+#: main/KexiMainWindow.cpp:1076
 msgid "Previous window"
 msgstr "अघिल्लो सञ्झ्याल"
 
-#: main/KexiMainWindow.cpp:1098
+#: main/KexiMainWindow.cpp:1077
 msgid "Switches to the previous window."
 msgstr "अघिल्लो सञ्झ्यालमा स्विच गर्दछ ।"
 
-#: main/KexiMainWindow.cpp:1109
+#: main/KexiMainWindow.cpp:1088
 msgid "Lets you configure shortcut keys."
 msgstr "तपाईंलाई सर्टकट कुञ्जीहरू कन्फिगर गर्न अनुमति दिन्छ ।"
 
-#: main/KexiMainWindow.cpp:1160
+#: main/KexiMainWindow.cpp:1130
+msgid "Lets you configure Kexi."
+msgstr "तपाईंलाई केक्सी कन्फिगर गर्न अनुमति दिन्छ ।"
+
+#: main/KexiMainWindow.cpp:1139
+msgid "Shows bug reporting tool for Kexi application."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1141
+msgid "Shows \"What's This\" tool."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1143 migration/importwizard.cpp:1005
+#: migration/importwizard.cpp:1013 migration/importwizard.cpp:1017
+#: migration/importwizard.cpp:1021 migration/importwizard.cpp:1025
+#: migration/importwizard.cpp:1029
+msgid "Help"
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1144
+msgid "Shows Kexi Handbook."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1146
+#, fuzzy
+#| msgid "Could not start Kexi application this way."
+msgid "Shows information about Kexi application."
+msgstr "यस प्रकारले केक्सी अनुप्रयोग सुरु गर्न सकिएन ।"
+
+#: main/KexiMainWindow.cpp:1148
+msgid "Shows information about K Desktop Environment."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:1152
 msgid "This shows useful tips on the use of this application."
 msgstr "यसले यो अनुप्रयोगको प्रयोगका लागि महत्त्वपूर्ण टिपहरू देखाउँदछ ।"
 
-#: main/KexiMainWindow.cpp:1163 main/KexiMainWindow.cpp:4408
+#: main/KexiMainWindow.cpp:1155 main/KexiMainWindow.cpp:4446
 msgid "Important Information"
 msgstr "महत्वपूर्ण सूचना"
 
-#: main/KexiMainWindow.cpp:1170
+#: main/KexiMainWindow.cpp:1162
 msgid "Give Feedback..."
 msgstr "पुनर्निवेश दिनुहोस्..."
 
-#: main/KexiMainWindow.cpp:1536
+#: main/KexiMainWindow.cpp:1533
 msgid "reason:"
 msgstr "कारण:"
 
-#: main/KexiMainWindow.cpp:1573
+#: main/KexiMainWindow.cpp:1570
 #, qt-format
 msgid ""
 "<qt>Database project %1 does not appear to have been created using Kexi."
@@ -1817,85 +1885,85 @@ msgstr ""
 "<qt>%1 डाटाबेस परियोजना केक्सी प्रयोग गरेर सिर्जना भएको जस्तो देखिदैन ।<br><br>के "
 "तपाईँले नयाँ केक्सी परियोजनाको रूपमा यसलाई आयात गर्न चाहनुहुन्छ ?</qt>"
 
-#: main/KexiMainWindow.cpp:1575
+#: main/KexiMainWindow.cpp:1572
 msgctxt "Import Database"
 msgid "&Import..."
 msgstr "आयात गर्नुहोस्..."
 
-#: main/KexiMainWindow.cpp:1610
+#: main/KexiMainWindow.cpp:1607
 #, fuzzy
 msgid "Select New Project's Location"
 msgstr "परियोजनाको स्थान चयन गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:1708
+#: main/KexiMainWindow.cpp:1705
 #, qt-format
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "वस्तु सिर्जना गर्न सकिँदैन - अज्ञात वस्तु प्रकार \"%1\""
 
-#: main/KexiMainWindow.cpp:1710
+#: main/KexiMainWindow.cpp:1707
 #, qt-format
 msgid "unknown object type \"%1\""
 msgstr "अज्ञात वस्तु प्रकार \"%1\""
 
-#: main/KexiMainWindow.cpp:1718
+#: main/KexiMainWindow.cpp:1715
 #, qt-format
 msgid "cannot create object of type \"%1\""
 msgstr "\"%1\" प्रकारको वस्तु सिर्जना गर्न सकिँदैन"
 
-#: main/KexiMainWindow.cpp:1731
+#: main/KexiMainWindow.cpp:1728
 msgid "making print preview for"
 msgstr "यसका लागि मुद्रण पूर्वावलोकन बनाउँदै"
 
-#: main/KexiMainWindow.cpp:1733
+#: main/KexiMainWindow.cpp:1730
 msgid "printing"
 msgstr "मुद्रण गर्दै"
 
-#: main/KexiMainWindow.cpp:1735
+#: main/KexiMainWindow.cpp:1732
 msgctxt "\"executing object\" action"
 msgid "executing"
 msgstr "कार्यान्वयन गर्दै"
 
-#: main/KexiMainWindow.cpp:1737
+#: main/KexiMainWindow.cpp:1734
 msgid "opening"
 msgstr "खोल्दै"
 
-#: main/KexiMainWindow.cpp:1741
+#: main/KexiMainWindow.cpp:1738
 msgid "table not found"
 msgstr "तालिका फेला परेन"
 
-#: main/KexiMainWindow.cpp:1743
+#: main/KexiMainWindow.cpp:1740
 msgid "query not found"
 msgstr "क्वेरी फेला परेन"
 
-#: main/KexiMainWindow.cpp:1745
+#: main/KexiMainWindow.cpp:1742
 msgid "macro not found"
 msgstr "म्याक्रो फेला परेन"
 
-#: main/KexiMainWindow.cpp:1747
+#: main/KexiMainWindow.cpp:1744
 msgid "script not found"
 msgstr "स्क्रिप्ट फेला परेन"
 
-#: main/KexiMainWindow.cpp:1749
+#: main/KexiMainWindow.cpp:1746
 msgid "object not found"
 msgstr "वस्तु फेला परेन"
 
-#: main/KexiMainWindow.cpp:1757
+#: main/KexiMainWindow.cpp:1754
 msgid "cannot execute object"
 msgstr "वस्तु कार्यान्वयन गर्न सकिँदैन"
 
-#: main/KexiMainWindow.cpp:1765
+#: main/KexiMainWindow.cpp:1762
 msgid "cannot print object"
 msgstr "वस्तु मुद्रण गर्न सकिँदैन"
 
-#: main/KexiMainWindow.cpp:1773
+#: main/KexiMainWindow.cpp:1770
 msgid "cannot make print preview of object"
 msgstr "वस्तुको मुद्रण पूर्वावलोकन बनाउन सकिँदैन"
 
-#: main/KexiMainWindow.cpp:1795
+#: main/KexiMainWindow.cpp:1792
 msgid "cannot open object"
 msgstr "वस्तु खोल्न सकिँदैन"
 
-#: main/KexiMainWindow.cpp:1810
+#: main/KexiMainWindow.cpp:1807
 msgid ""
 "You have requested selected objects to be automatically opened or processed "
 "on startup. Several objects cannot be opened or processed."
@@ -1903,98 +1971,98 @@ msgstr ""
 "तपाईँले सुरुआतमा चयन गरिएको वस्तुहरू स्वचालित रूपमा अगाडि बढ्ने वा खोलिने हुन अनुरोध गर्नु "
 "भएको छ । धेरै वस्तुहरू खोल्न वा अगाडि बढाउन सकिदैन ।"
 
-#: main/KexiMainWindow.cpp:2130 widget/utils/kexicontextmenuutils.cpp:99
+#: main/KexiMainWindow.cpp:2116 widget/utils/kexicontextmenuutils.cpp:99
 #: widget/kexipropertyeditorview.cpp:114
 #, fuzzy
 msgid "Properties"
 msgstr "परियोजना गुण"
 
-#: main/KexiMainWindow.cpp:3168
+#: main/KexiMainWindow.cpp:3186
 msgid "Recently Opened Databases"
 msgstr "भर्खरै खोलिएको डाटाबेसहरू"
 
-#: main/KexiMainWindow.cpp:3187
+#: main/KexiMainWindow.cpp:3205
 msgid "Recently Connected Database Servers"
 msgstr "भर्खरै जडान गरिएको डाटाबेस सर्भरहरू"
 
-#: main/KexiMainWindow.cpp:3281
+#: main/KexiMainWindow.cpp:3299
 msgid "From File..."
 msgstr "फाइलबाट..."
 
-#: main/KexiMainWindow.cpp:3286
+#: main/KexiMainWindow.cpp:3304
 msgid "From Server..."
 msgstr "सर्भरबाट..."
 
-#: main/KexiMainWindow.cpp:3389
+#: main/KexiMainWindow.cpp:3412
 #, qt-format
 msgid "Selected view is not supported for \"%1\" object."
 msgstr "चयन गरिएको दृश्य \"%1\" वस्तुका लागि समर्थित छैन ।"
 
-#: main/KexiMainWindow.cpp:3391
+#: main/KexiMainWindow.cpp:3414
 #, qt-format
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "चयन गरिएको दृश्य (%1) यस वस्तु प्रकार (%2) द्वारा समर्थन गर्दैन ।"
 
-#: main/KexiMainWindow.cpp:3485
+#: main/KexiMainWindow.cpp:3513
 msgid "Save Object As"
 msgstr "यस रूपमा वस्तु बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:3506
+#: main/KexiMainWindow.cpp:3534
 msgid "Do you want to replace it?"
 msgstr "के तपाईं यसलाई बदल्न चाहनुहुन्छ?"
 
 #. i18n: tag string
 #. i18n: file ./main/kexifinddialog.ui line 103
-#: main/KexiMainWindow.cpp:3508 migration/importwizard.cpp:836 rc.cpp:184
+#: main/KexiMainWindow.cpp:3536 migration/importwizard.cpp:836 rc.cpp:184
 #: widget/utils/kexicontextmenuutils.cpp:231
 msgid "&Replace"
 msgstr "बदल्नुहोस्"
 
-#: main/KexiMainWindow.cpp:3509
+#: main/KexiMainWindow.cpp:3537
 msgid "&Choose Other Name..."
 msgstr "अन्य नाम छनोट गर्नुहोस्..."
 
-#: main/KexiMainWindow.cpp:3527
+#: main/KexiMainWindow.cpp:3555
 msgid "Please choose other name."
 msgstr "कृपया अर्को नाम छनोट गर्नुहोस् ।"
 
-#: main/KexiMainWindow.cpp:3551
+#: main/KexiMainWindow.cpp:3579
 #, qt-format
 msgid "Saving \"%1\" object failed."
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: main/KexiMainWindow.cpp:3568
+#: main/KexiMainWindow.cpp:3596
 #, qt-format
 msgid "Saving new \"%1\" object failed."
 msgstr "नयाँ \"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: main/KexiMainWindow.cpp:3617 main/KexiMainWindow.cpp:4850
+#: main/KexiMainWindow.cpp:3645 main/KexiMainWindow.cpp:4888
 msgid "Save changes"
 msgstr "परिवर्तनहरू बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:3619 main/KexiMainWindow.cpp:4852
+#: main/KexiMainWindow.cpp:3647 main/KexiMainWindow.cpp:4890
 #, qt-format
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
 msgstr "यो बटन थिच्दा \"%1\" वस्तुमा बनाइएको भर्खरका सबै परिवर्तनहरू बचत गर्नेछ ।"
 
-#: main/KexiMainWindow.cpp:3623
+#: main/KexiMainWindow.cpp:3651
 #, qt-format
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
 msgstr "यो बटन थिच्दा \"%1\" वस्तुमा बनाइएको भर्खरका सबै परिवर्तनहरू अस्वीकार गर्नेछ ।"
 
-#: main/KexiMainWindow.cpp:3641
+#: main/KexiMainWindow.cpp:3669
 msgid "Do you want to save changes?"
 msgstr "के तपाईं परिवर्तनहरू बचत गर्न चाहनुहुन्छ?"
 
-#: main/KexiMainWindow.cpp:4016
+#: main/KexiMainWindow.cpp:4044
 #, qt-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr " \"%1\" मोडमा खोल्न अनुमति छैन ।"
 
-#: main/KexiMainWindow.cpp:4207
+#: main/KexiMainWindow.cpp:4242
 #, fuzzy, qt-format
 msgid ""
 "Do you want to permanently delete:\n"
@@ -2007,47 +2075,47 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/queries/kexiparameterlisteditor.ui line 75
-#: main/KexiMainWindow.cpp:4211 rc.cpp:313
+#: main/KexiMainWindow.cpp:4246 rc.cpp:313
 #, fuzzy
 msgid "Delete"
 msgstr "पङ्क्ति मेट्नुहोस्"
 
-#: main/KexiMainWindow.cpp:4259
+#: main/KexiMainWindow.cpp:4294
 msgid "Could not remove object."
 msgstr "वस्तु हटाउन सकेन ।"
 
-#: main/KexiMainWindow.cpp:4282
+#: main/KexiMainWindow.cpp:4317
 #, qt-format
 msgid "Renaming object \"%1\" failed."
 msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
 
-#: main/KexiMainWindow.cpp:4469
+#: main/KexiMainWindow.cpp:4507
 #, qt-format
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "अन्तिम मोडमा परियोजना \"%1\" सुरु गर्न सकेन ।"
 
-#: main/KexiMainWindow.cpp:4474
+#: main/KexiMainWindow.cpp:4512
 msgid "No Final Mode data found."
 msgstr "कुनै अन्तिम मोड डेटा फेला परेन ।"
 
-#: main/KexiMainWindow.cpp:4482
+#: main/KexiMainWindow.cpp:4520
 msgid "Error reading Final Mode data."
 msgstr "अन्तिम मोड डेटा पढ्दा त्रुटि ।"
 
-#: main/KexiMainWindow.cpp:4512
+#: main/KexiMainWindow.cpp:4550
 msgid "Specified plugin does not exist."
 msgstr "निर्दिष्ट गरिएको प्लगइन अवस्थित छैन ।"
 
-#: main/KexiMainWindow.cpp:4521
+#: main/KexiMainWindow.cpp:4559
 msgid "Specified object could not be opened."
 msgstr "निर्दिष्ट गरिएको वस्तु खोल्न सकेन ।"
 
-#: main/KexiMainWindow.cpp:4591
+#: main/KexiMainWindow.cpp:4629
 #, qt-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "सङ्कुचित गरिएको डाटाबेस फाइल <nobr>\"%1\"</nobr> समर्थित छैन ।"
 
-#: main/KexiMainWindow.cpp:4604
+#: main/KexiMainWindow.cpp:4642
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -2059,26 +2127,37 @@ msgstr ""
 "\n"
 "के तपाईँले निरन्तरता दिन चाहनुहुन्छ ?"
 
-#: main/KexiMainWindow.cpp:4856
+#: main/KexiMainWindow.cpp:4894
 #, qt-format
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
 msgstr ""
 "यो बटन थिच्दा \"%1\" वस्तुमा गरिएको सबै बचत नगरिएको परिवर्तनहरू उपेक्षा गरिनेछ ।"
 
-#: main/KexiMainWindow.cpp:4861
+#: main/KexiMainWindow.cpp:4899
 msgid "Do you want to save changes before printing?"
 msgstr "मुद्रण गर्नुभन्दा अगाडि के तपाईं परिवर्तनहरू बचत गर्न चाहनुहुन्छ?"
 
-#: main/KexiMainWindow.cpp:4863
+#: main/KexiMainWindow.cpp:4901
 msgid "Do you want to save changes before making print preview?"
 msgstr "मुद्रण पूर्वावलोकन बनाउनु भन्दा अगाडि के तपाईं परिवर्तनहरू बचत गर्न चाहनुहुन्छ?"
 
-#: main/KexiMainWindow.cpp:4865
+#: main/KexiMainWindow.cpp:4903
 msgid "Do you want to save changes before showing page setup?"
 msgstr "पृष्ठ सेटअप देखाउनु भन्दा अगाडि के तपाईं परिवर्तनहरू बचत गर्न चाहननुहुन्छ?"
 
-#: main/KexiMainWindow_p.h:43
+#: main/KexiMainWindow_p.h:83
+msgid "Task-based tabbed toolbar groups commands for application using tabs."
+msgstr ""
+
+#: main/KexiMainWindow_p.h:115
+#, fuzzy
+#| msgid "kexi_"
+msgctxt "Application name as menu entry"
+msgid "Kexi"
+msgstr "kexi_"
+
+#: main/KexiMainWindow_p.h:127
 #, fuzzy
 #| msgid "&Project"
 msgid "Project"
@@ -2086,68 +2165,56 @@ msgstr "परियोजना"
 
 #. i18n: tag text
 #. i18n: file data/kexiui.rc line 185
-#: main/KexiMainWindow_p.h:69 rc.cpp:68
+#: main/KexiMainWindow_p.h:144 rc.cpp:68
 msgid "Data"
 msgstr "डेटा"
 
-#: main/KexiMainWindow_p.h:92
+#: main/KexiMainWindow_p.h:158
 msgid "External Data"
 msgstr ""
 
-#: main/KexiMainWindow_p.h:121
+#: main/KexiMainWindow_p.h:186
 #, fuzzy
 msgid "Tools"
 msgstr "जम्मा"
 
-#: main/KexiMainWindow_p.h:129
-#, fuzzy
-msgid "Settings"
-msgstr "क्रमबद्ध गर्दै"
-
-#: main/KexiMainWindow_p.h:134 migration/importwizard.cpp:1005
-#: migration/importwizard.cpp:1013 migration/importwizard.cpp:1017
-#: migration/importwizard.cpp:1021 migration/importwizard.cpp:1025
-#: migration/importwizard.cpp:1029
-msgid "Help"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:475
+#: main/KexiMainWindow_p.h:611
 #, qt-format
 msgid "Could not start %1 application."
 msgstr "%1 अनुप्रयोग सुरु गर्न सकेन ।"
 
-#: main/KexiMainWindow_p.h:476
+#: main/KexiMainWindow_p.h:612
 #, qt-format
 msgid "Command \"%1\" failed."
 msgstr "आदेश \"%1\" असफल भयो ।"
 
-#: main/kexifinddialog.cpp:178
+#: main/kexifinddialog.cpp:179
 #, fuzzy
 msgid "(All fields)"
 msgstr "उपलब्ध फिल्डहरू:"
 
-#: main/kexifinddialog.cpp:179
+#: main/kexifinddialog.cpp:180
 #, fuzzy
 msgid "(Current field)"
 msgstr "मुद्रा"
 
-#: main/kexifinddialog.cpp:234
+#: main/kexifinddialog.cpp:235
 #, fuzzy, qt-format
 msgid "Replace in \"%1\""
 msgstr "बदल्नुहोस्"
 
 #. i18n: tag string
 #. i18n: file ./main/kexifinddialog.ui line 13
-#: main/kexifinddialog.cpp:238 rc.cpp:178
+#: main/kexifinddialog.cpp:239 rc.cpp:178
 msgid "Find"
 msgstr ""
 
-#: main/kexifinddialog.cpp:240
+#: main/kexifinddialog.cpp:241
 #, qt-format
 msgid "Find in \"%1\""
 msgstr ""
 
-#: main/kexifinddialog.cpp:263
+#: main/kexifinddialog.cpp:264
 #, fuzzy
 msgid "The search item was not found"
 msgstr "स्क्रिप्ट फेला परेन"
@@ -2867,19 +2934,19 @@ msgstr "नेस्टेड कारोबार समर्थन"
 msgid "KexiDB driver version"
 msgstr "KexiDB ड्राइभर संस्करण"
 
-#: kexidb/cursor.cpp:142
+#: kexidb/cursor.cpp:145
 msgid "No query statement or schema defined."
 msgstr "क्वेरी कथन वा स्कीमा परिभाषित गरिएको छैन ।"
 
-#: kexidb/cursor.cpp:152
+#: kexidb/cursor.cpp:155
 msgid "Query statement is empty."
 msgstr "क्वेरी कथन खाली छ ।"
 
-#: kexidb/cursor.cpp:162
+#: kexidb/cursor.cpp:165
 msgid "Error opening database cursor."
 msgstr "डाटाबेस कर्सर खोल्दा त्रुटि ।"
 
-#: kexidb/cursor.cpp:418 kexidb/cursor.cpp:441
+#: kexidb/cursor.cpp:421 kexidb/cursor.cpp:444
 msgid "Cannot fetch next record."
 msgstr "पछिल्लो रेकर्ड तान्न सकिदैन ।"
 
@@ -3239,7 +3306,7 @@ msgstr ""
 msgid "Could not create the same table \"%1\" twice."
 msgstr "\"%1\" उही तालिकालाई दुई पटक सिर्जना गर्न सकेन ।"
 
-#: kexidb/connection.cpp:1596 plugins/tables/kexitablepart.cpp:217
+#: kexidb/connection.cpp:1596 plugins/tables/kexitablepart.cpp:219
 #, qt-format
 msgid "Table \"%1\" already exists."
 msgstr "\"%1\" तालिका पहिल्यै अवस्थित छ ।"
@@ -4064,7 +4131,9 @@ msgid "Open object"
 msgstr "वस्तु खोल्नुहोस्"
 
 #: widget/kexibrowser.cpp:134
-msgid "Opens object selected in the list"
+#, fuzzy
+#| msgid "Opens object selected in the list"
+msgid "Opens object selected in the list."
 msgstr "सूचीमा चयन गरिएको वस्तु खोल्दछ"
 
 #: widget/kexibrowser.cpp:155
@@ -4074,7 +4143,7 @@ msgstr "वस्तु मेट्नुहोस्"
 
 #: widget/kexibrowser.cpp:155
 #, fuzzy
-msgid "Deletes the object selected in the list"
+msgid "Deletes the object selected in the list."
 msgstr "सूचीमा चयन गरिएको वस्तु खोल्दछ"
 
 #: widget/kexibrowser.cpp:158
@@ -4088,7 +4157,7 @@ msgstr "वस्तु सिर्जना गर्नुहोस्"
 
 #: widget/kexibrowser.cpp:159
 #, fuzzy
-msgid "Renames the object selected in the list"
+msgid "Renames the object selected in the list."
 msgstr "सूचीमा चयन गरिएको वस्तु खोल्दछ"
 
 #: widget/kexibrowser.cpp:167
@@ -4100,7 +4169,9 @@ msgid "Design object"
 msgstr "वस्तु डिजाइन गर्नुहोस्"
 
 #: widget/kexibrowser.cpp:168
-msgid "Starts designing of the object selected in the list"
+#, fuzzy
+#| msgid "Starts designing of the object selected in the list"
+msgid "Starts designing of the object selected in the list."
 msgstr "सूचीमा चयन गरिएको वस्तुको डिजाइन गर्दा सुरु गर्दछ"
 
 #: widget/kexibrowser.cpp:176
@@ -4112,7 +4183,9 @@ msgid "Open object in text view"
 msgstr "पाठ दृश्यमा वस्तु खोल्नुहोस्"
 
 #: widget/kexibrowser.cpp:177
-msgid "Opens selected object in the list in text view"
+#, fuzzy
+#| msgid "Opens selected object in the list in text view"
+msgid "Opens selected object in the list in text view."
 msgstr "पाठ दृश्यको सूचीमा चयन गरिएको वस्तु खोल्दछ"
 
 #: widget/kexibrowser.cpp:201 plugins/forms/kexiactionselectiondialog.cpp:277
@@ -4246,70 +4319,93 @@ msgstr "* (सबै स्तम्भ)"
 msgid "(autonumber)"
 msgstr "(स्वचालित नम्बर)"
 
-#: widget/utils/kexirecordnavigator.cpp:88
+#: widget/utils/kexirecordnavigator.cpp:107
 msgid "Row:"
 msgstr "पङ्क्ति:"
 
-#: widget/utils/kexirecordnavigator.cpp:100
-#: widget/utils/kexirecordnavigator.cpp:485
-msgid "First row"
-msgstr "पहिलो पङ्क्ति"
-
-#: widget/utils/kexirecordnavigator.cpp:107
-#: widget/utils/kexirecordnavigator.cpp:486
-msgid "Previous row"
-msgstr "अघिल्लो पङ्क्ति"
-
-#: widget/utils/kexirecordnavigator.cpp:119
+#: widget/utils/kexirecordnavigator.cpp:128
 msgid "Current row number"
 msgstr "हालको पङ्क्ति नम्बर"
 
-#: widget/utils/kexirecordnavigator.cpp:121
+#: widget/utils/kexirecordnavigator.cpp:130
 msgid "of"
 msgstr "को"
 
-#: widget/utils/kexirecordnavigator.cpp:136
+#: widget/utils/kexirecordnavigator.cpp:140
 msgid "Number of rows"
 msgstr "पङ्क्तिहरूको नम्बर"
 
-#: widget/utils/kexirecordnavigator.cpp:148
-#: widget/utils/kexirecordnavigator.cpp:487
-msgid "Next row"
-msgstr "पछिल्लो पङ्क्ति"
-
-#: widget/utils/kexirecordnavigator.cpp:154
-#: widget/utils/kexirecordnavigator.cpp:488
-msgid "Last row"
-msgstr "अन्तिम पङ्क्ति"
-
-#: widget/utils/kexirecordnavigator.cpp:161
-#: widget/utils/kexirecordnavigator.cpp:489
-msgid "New row"
-msgstr "नयाँ पङ्क्ति"
-
-#: widget/utils/kexirecordnavigator.cpp:471
+#: widget/utils/kexirecordnavigator.cpp:461
 msgid "Editing indicator"
 msgstr "सम्पादन सूचक"
 
-#: widget/utils/kexirecordnavigator.cpp:485
+#: widget/utils/kexirecordnavigator.cpp:488
+msgid "First row"
+msgstr "पहिलो पङ्क्ति"
+
+#: widget/utils/kexirecordnavigator.cpp:488
 msgid "Go to first row"
 msgstr "पहिलो पङ्क्तिमा जानुहोस्"
 
-#: widget/utils/kexirecordnavigator.cpp:486
+#: widget/utils/kexirecordnavigator.cpp:489
+msgid "Previous row"
+msgstr "अघिल्लो पङ्क्ति"
+
+#: widget/utils/kexirecordnavigator.cpp:489
 msgid "Go to previous row"
 msgstr "अघिल्लो पङ्क्तिमा जानुहोस्"
 
-#: widget/utils/kexirecordnavigator.cpp:487
+#: widget/utils/kexirecordnavigator.cpp:490
+msgid "Next row"
+msgstr "पछिल्लो पङ्क्ति"
+
+#: widget/utils/kexirecordnavigator.cpp:490
 msgid "Go to next row"
 msgstr "पछिल्लो पङ्क्तिमा जानुहोस्"
 
-#: widget/utils/kexirecordnavigator.cpp:488
+#: widget/utils/kexirecordnavigator.cpp:491
+msgid "Last row"
+msgstr "अन्तिम पङ्क्ति"
+
+#: widget/utils/kexirecordnavigator.cpp:491
 msgid "Go to last row"
 msgstr "अन्तिम पङ्क्तिमा जानुहोस्"
 
-#: widget/utils/kexirecordnavigator.cpp:489
+#: widget/utils/kexirecordnavigator.cpp:492
+msgid "New row"
+msgstr "नयाँ पङ्क्ति"
+
+#: widget/utils/kexirecordnavigator.cpp:492
 msgid "Go to new row"
 msgstr "नयाँ पङ्क्तिमा जानुहोस्"
+
+#: widget/utils/kexirecordnavigator.cpp:494
+#, fuzzy
+#| msgid "Go to first row"
+msgid "Moves cursor to first row."
+msgstr "पहिलो पङ्क्तिमा जानुहोस्"
+
+#: widget/utils/kexirecordnavigator.cpp:495
+#, fuzzy
+#| msgid "Go to previous row"
+msgid "Moves cursor to previous row."
+msgstr "अघिल्लो पङ्क्तिमा जानुहोस्"
+
+#: widget/utils/kexirecordnavigator.cpp:496
+#, fuzzy
+#| msgid "Go to next row"
+msgid "Moves cursor to next row."
+msgstr "पछिल्लो पङ्क्तिमा जानुहोस्"
+
+#: widget/utils/kexirecordnavigator.cpp:497
+#, fuzzy
+#| msgid "Go to last row"
+msgid "Moves cursor to last row."
+msgstr "अन्तिम पङ्क्तिमा जानुहोस्"
+
+#: widget/utils/kexirecordnavigator.cpp:498
+msgid "Moves cursor to new row and allows inserting."
+msgstr ""
 
 #: widget/utils/kexicontextmenuutils.cpp:74
 msgid "Insert From &File..."
@@ -4343,11 +4439,11 @@ msgctxt "Object name : Object type"
 msgid "%1 : %2"
 msgstr ""
 
-#: widget/kexiscrollview.cpp:358
+#: widget/kexiscrollview.cpp:360
 msgid "Outer Area"
 msgstr "बाहिरी क्षेत्र"
 
-#: widget/kexiscrollview.cpp:359
+#: widget/kexiscrollview.cpp:361
 msgid ""
 "Outer\n"
 "Area"
@@ -4383,7 +4479,7 @@ msgid "&Open Selected Table/Query"
 msgstr "चयन गरिएको तालिका/क्वेरी खोल्नुहोस्"
 
 #: widget/relations/kexirelationwidget.cpp:65
-#: widget/relations/kexirelationwidget.cpp:351
+#: widget/relations/kexirelationwidget.cpp:352
 #: plugins/queries/kexiquerydesignerguieditor.cpp:227
 #: plugins/tables/kexitablepart.cpp:70
 msgid "Table"
@@ -4401,7 +4497,7 @@ msgstr "तालिका डिजाइन गर्नुहोस्"
 msgid "&Hide Table"
 msgstr "तालिका लुकाउनुहोस्"
 
-#: widget/relations/kexirelationwidget.cpp:356
+#: widget/relations/kexirelationwidget.cpp:357
 msgid "Relationship"
 msgstr "सम्बन्ध"
 
@@ -4519,16 +4615,16 @@ msgstr "सामग्रीहरू खाली गर्नुहोस्"
 msgid "Row: "
 msgstr "पङ्क्ति: "
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1854
+#: widget/tableview/kexidataawareobjectiface.cpp:1861
 msgctxt "Correct Changes"
 msgid "Correct"
 msgstr "सहि"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1856
+#: widget/tableview/kexidataawareobjectiface.cpp:1863
 msgid "Correct changes"
 msgstr "परिवर्तन सच्याउनुहोस्"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1857
+#: widget/tableview/kexidataawareobjectiface.cpp:1864
 msgid "Discard Changes"
 msgstr "परिवर्तन छोड्नुहोस्"
 
@@ -4562,13 +4658,17 @@ msgstr "हालै चयन गरिएको पङ्क्तिमा �
 msgid "Row navigator"
 msgstr "पङ्क्ति नेभिगेटर"
 
-#: widget/tableview/kexitableview.cpp:252
+#: widget/tableview/kexitableview.cpp:253
 msgid "Add Record"
 msgstr "रेकर्ड थप्नुहोस्"
 
-#: widget/tableview/kexitableview.cpp:255
+#: widget/tableview/kexitableview.cpp:256
 msgid "Remove Record"
 msgstr "रेकर्ड हटाउनुहोस्"
+
+#: widget/tableview/kexitableview.cpp:260
+msgid "Row"
+msgstr "पङ्क्ति"
 
 #: plugins/reports/kexireportview.cpp:50
 msgid "Page:"
@@ -4587,12 +4687,26 @@ msgstr ""
 msgid "Report"
 msgstr "प्रतिवेदन"
 
-#: plugins/reports/kexireportpart.cpp:123
+#: plugins/reports/kexireportpart.cpp:58
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "tooltip"
+msgid "Create new report"
+msgstr "नयाँ परियोजना सिर्जना गर्नुहोस्"
+
+#: plugins/reports/kexireportpart.cpp:59
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "what's this"
+msgid "Creates new report."
+msgstr "नयाँ परियोजना सिर्जना गर्नुहोस्"
+
+#: plugins/reports/kexireportpart.cpp:125
 #, qt-format
 msgid "Design of report \"%1\" has been modified."
 msgstr "प्रतिवेदन \"%1\" को डिजाइन परिमार्जित गरियो ।"
 
-#: plugins/reports/kexireportpart.cpp:125
+#: plugins/reports/kexireportpart.cpp:127
 #, qt-format
 msgid "Report \"%1\" already exists."
 msgstr "प्रतिवेदन \"%1\" पहिले नै अवस्थित छ।"
@@ -4823,7 +4937,7 @@ msgid "A command button to execute actions"
 msgstr "कार्यहरू कार्यान्वयन गर्नका लागि आदेश बटन"
 
 #: plugins/forms/kexidbfactory.cpp:295 plugins/forms/kexidatasourcepage.cpp:63
-#: plugins/forms/kexiformpart.cpp:548
+#: plugins/forms/kexiformpart.cpp:550
 msgid "Data Source"
 msgstr "डेटा स्रोत"
 
@@ -5147,121 +5261,135 @@ msgctxt ""
 msgid "form"
 msgstr "फारम"
 
-#: plugins/forms/kexiformpart.cpp:150 plugins/forms/kexiformpart.cpp:187
+#: plugins/forms/kexiformpart.cpp:95
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "tooltip"
+msgid "Create new form"
+msgstr "नयाँ परियोजना सिर्जना गर्नुहोस्"
+
+#: plugins/forms/kexiformpart.cpp:96
+#, fuzzy
+#| msgid "Creates a new object"
+msgctxt "what's this"
+msgid "Creates new form."
+msgstr "नयाँ वस्तु सिर्जना गर्दछ"
+
+#: plugins/forms/kexiformpart.cpp:152 plugins/forms/kexiformpart.cpp:189
 msgid "Edit Tab Order..."
 msgstr "ट्याब क्रम सम्पादन गर्नुहोस्..."
 
-#: plugins/forms/kexiformpart.cpp:151
+#: plugins/forms/kexiformpart.cpp:153
 msgid "Adjust Size"
 msgstr "साइज समायोजन गर्नुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:171
+#: plugins/forms/kexiformpart.cpp:173
 msgid "Show Form UI Code"
 msgstr "फारम UI कोड देखाउनुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:185
+#: plugins/forms/kexiformpart.cpp:187
 msgid "Clear Widget Contents"
 msgstr "विजेट सामग्री खाली गर्नुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:194
+#: plugins/forms/kexiformpart.cpp:196
 msgid "Layout Widgets"
 msgstr "सजावट विजेट"
 
-#: plugins/forms/kexiformpart.cpp:198
+#: plugins/forms/kexiformpart.cpp:200
 msgid "&Horizontally"
 msgstr "तेर्सो रूपमा"
 
-#: plugins/forms/kexiformpart.cpp:200
+#: plugins/forms/kexiformpart.cpp:202
 msgid "&Vertically"
 msgstr "ठाडो रूपमा"
 
-#: plugins/forms/kexiformpart.cpp:202
+#: plugins/forms/kexiformpart.cpp:204
 msgid "In &Grid"
 msgstr "ग्रीडमा"
 
-#: plugins/forms/kexiformpart.cpp:205
+#: plugins/forms/kexiformpart.cpp:207
 msgid "Horizontally in &Splitter"
 msgstr "स्प्लिटरमा तेर्सो रूपमा"
 
-#: plugins/forms/kexiformpart.cpp:207
+#: plugins/forms/kexiformpart.cpp:209
 msgid "Verti&cally in Splitter"
 msgstr "स्प्लिटरमा ठाडो रूपमा"
 
-#: plugins/forms/kexiformpart.cpp:211
+#: plugins/forms/kexiformpart.cpp:213
 msgid "&Break Layout"
 msgstr "विच्छेदित सजावट"
 
-#: plugins/forms/kexiformpart.cpp:218
+#: plugins/forms/kexiformpart.cpp:220
 msgid "Bring Widget to Front"
 msgstr "विजेटलाई अगाडि ल्याउनुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:220
+#: plugins/forms/kexiformpart.cpp:222
 msgid "Send Widget to Back"
 msgstr "विजेटलाई पछाडि पठाउनुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:224
+#: plugins/forms/kexiformpart.cpp:226
 msgid "Other Widgets"
 msgstr "अन्य विजेटहरू"
 
-#: plugins/forms/kexiformpart.cpp:228
+#: plugins/forms/kexiformpart.cpp:230
 msgid "Align Widgets Position"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:231
+#: plugins/forms/kexiformpart.cpp:233
 msgid "To Left"
 msgstr "बायाँका लागि"
 
-#: plugins/forms/kexiformpart.cpp:233
+#: plugins/forms/kexiformpart.cpp:235
 msgid "To Right"
 msgstr "दायाँका लागि"
 
-#: plugins/forms/kexiformpart.cpp:235
+#: plugins/forms/kexiformpart.cpp:237
 msgid "To Top"
 msgstr "माथिका लागि"
 
-#: plugins/forms/kexiformpart.cpp:237
+#: plugins/forms/kexiformpart.cpp:239
 msgid "To Bottom"
 msgstr "बटनका लागि"
 
-#: plugins/forms/kexiformpart.cpp:239 plugins/forms/kexiformpart.cpp:247
+#: plugins/forms/kexiformpart.cpp:241 plugins/forms/kexiformpart.cpp:249
 msgid "To Grid"
 msgstr "ग्रीडका लागि"
 
-#: plugins/forms/kexiformpart.cpp:242
+#: plugins/forms/kexiformpart.cpp:244
 msgid "Adjust Widgets Size"
 msgstr "विजेट साइज समायोजन गर्नुहोस्"
 
-#: plugins/forms/kexiformpart.cpp:245
+#: plugins/forms/kexiformpart.cpp:247
 msgid "To Fit"
 msgstr "ठीक हुने गरि "
 
-#: plugins/forms/kexiformpart.cpp:249
+#: plugins/forms/kexiformpart.cpp:251
 msgid "To Shortest"
 msgstr "सबैभन्दा छोटो"
 
-#: plugins/forms/kexiformpart.cpp:251
+#: plugins/forms/kexiformpart.cpp:253
 msgid "To Tallest"
 msgstr "सबैभन्दा अग्लो"
 
-#: plugins/forms/kexiformpart.cpp:253
+#: plugins/forms/kexiformpart.cpp:255
 msgid "To Narrowest"
 msgstr "सबैभन्दा नजिक"
 
-#: plugins/forms/kexiformpart.cpp:255
+#: plugins/forms/kexiformpart.cpp:257
 msgid "To Widest"
 msgstr "सबैभन्दा चौडा"
 
-#: plugins/forms/kexiformpart.cpp:480
+#: plugins/forms/kexiformpart.cpp:482
 #, qt-format
 msgid "Design of form \"%1\" has been modified."
 msgstr "फारम \"%1\" को डिजाइन परिमार्जित गरियो ।"
 
-#: plugins/forms/kexiformpart.cpp:482
+#: plugins/forms/kexiformpart.cpp:484
 #, qt-format
 msgid "Form \"%1\" already exists."
 msgstr "फारम \"%1\" पहिले नै अवस्थित छ ।"
 
-#: plugins/forms/kexiformpart.cpp:551
+#: plugins/forms/kexiformpart.cpp:553
 msgid "Widgets"
 msgstr "विजेट"
 
@@ -5517,28 +5645,47 @@ msgstr "क्वेरी"
 msgid "Query"
 msgstr "क्वेरी"
 
-#: plugins/queries/kexiquerypart.cpp:151 plugins/queries/kexiquerypart.cpp:153
+#: plugins/queries/kexiquerypart.cpp:51
+#, fuzzy
+#| msgid "Create a new project"
+msgctxt "tooltip"
+msgid "Create new query"
+msgstr "नयाँ परियोजना सिर्जना गर्नुहोस्"
+
+#: plugins/queries/kexiquerypart.cpp:52
+#, fuzzy
+#| msgid "Creates a new object"
+msgctxt "what's this"
+msgid "Creates new query."
+msgstr "नयाँ वस्तु सिर्जना गर्दछ"
+
+#: plugins/queries/kexiquerypart.cpp:53
+#, fuzzy
+msgid "&SQL View"
+msgstr "दृश्य छैन"
+
+#: plugins/queries/kexiquerypart.cpp:154 plugins/queries/kexiquerypart.cpp:156
 msgid "Check Query"
 msgstr "क्वेरी जाँच गर्नुहोस्"
 
-#: plugins/queries/kexiquerypart.cpp:154
+#: plugins/queries/kexiquerypart.cpp:157
 msgid "Checks query for validity."
 msgstr "वैधताका लागि क्वेरी जाँच गर्नुहोस् ।"
 
-#: plugins/queries/kexiquerypart.cpp:157
+#: plugins/queries/kexiquerypart.cpp:160
 msgid "Show SQL History"
 msgstr "SQL इतिहास देखाउनुहोस्"
 
-#: plugins/queries/kexiquerypart.cpp:159
+#: plugins/queries/kexiquerypart.cpp:162
 msgid "Shows or hides SQL editor's history."
 msgstr "SQL सम्पादकको इतिहास देखाउँदछ वा लुकाउँदछ ।"
 
-#: plugins/queries/kexiquerypart.cpp:202
+#: plugins/queries/kexiquerypart.cpp:205
 #, qt-format
 msgid "Design of query \"%1\" has been modified."
 msgstr "क्वेरी \"%1\" का लागि डिजाइन परिमार्जित गरियो ।"
 
-#: plugins/queries/kexiquerypart.cpp:204
+#: plugins/queries/kexiquerypart.cpp:207
 #, qt-format
 msgid "Query \"%1\" already exists."
 msgstr "क्वेरी \"%1\" पहिले नै अवस्थित छ ।"
@@ -5920,16 +6067,30 @@ msgctxt ""
 msgid "table"
 msgstr "तालिका"
 
-#: plugins/tables/kexitablepart.cpp:88
+#: plugins/tables/kexitablepart.cpp:71
+#, fuzzy
+#| msgid "Create New Object"
+msgctxt "tooltip"
+msgid "Create new table"
+msgstr "नयाँ वस्तु सिर्जना गर्नुहोस्"
+
+#: plugins/tables/kexitablepart.cpp:72
+#, fuzzy
+#| msgid "Creates a new object"
+msgctxt "what's this"
+msgid "Creates new table."
+msgstr "नयाँ वस्तु सिर्जना गर्दछ"
+
+#: plugins/tables/kexitablepart.cpp:90
 #: plugins/tables/kexitabledesignerview.cpp:426
 msgid "Primary Key"
 msgstr "प्राथमिक कुञ्जी"
 
-#: plugins/tables/kexitablepart.cpp:91
+#: plugins/tables/kexitablepart.cpp:93
 msgid "Sets or removes primary key for currently selected field."
 msgstr "हालै चयन गरिएको फिल्डका लागि प्राथमिक कुञ्जी सेट गर्दछ वा हटाउँदछ ।"
 
-#: plugins/tables/kexitablepart.cpp:142
+#: plugins/tables/kexitablepart.cpp:144
 #, qt-format
 msgid ""
 "You are about to remove table \"%1\" but following objects using this table "
@@ -5937,24 +6098,24 @@ msgid ""
 msgstr ""
 "तपाईँ तालिका \"%1\" हटाउन लाग्दै हुनुहुन्छ तर तलका वस्तुहरू यो तालिका प्रयोग गरेर खोल्दछ:"
 
-#: plugins/tables/kexitablepart.cpp:194
+#: plugins/tables/kexitablepart.cpp:196
 msgid "Do you want to close all windows for these objects?"
 msgstr "के तपाईँ यी वस्तुका लागि सबै सञ्झ्याल बन्द गर्न चाहनुहुन्छ?"
 
-#: plugins/tables/kexitablepart.cpp:195
+#: plugins/tables/kexitablepart.cpp:197
 msgid "Close windows"
 msgstr "सञ्झ्याल बन्द गर्नुहोस्"
 
-#: plugins/tables/kexitablepart.cpp:214
+#: plugins/tables/kexitablepart.cpp:216
 #, qt-format
 msgid "Design of table \"%1\" has been modified."
 msgstr "तालिका \"%1\" को डिजाइन परिमार्जित गरियो ।"
 
-#: plugins/tables/kexitablepart.cpp:221
+#: plugins/tables/kexitablepart.cpp:223
 msgid "Warning! Any data in this table will be removed upon design's saving!"
 msgstr "चेतावनी! डिजाइनको बचत गर्दा यस तालिकामा कुनै पनि डेटा हटाइन्छ!"
 
-#: plugins/tables/kexitablepart.cpp:251
+#: plugins/tables/kexitablepart.cpp:253
 msgid "Lookup column"
 msgstr "खोजी स्तम्भ"
 
@@ -6211,6 +6372,19 @@ msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "रिक्त पङ्क्ति"
 
+#~ msgid "Data View"
+#~ msgstr "डेटा दृश्य"
+
+#~ msgid "Design View"
+#~ msgstr "डिजाइन दृश्य"
+
+#~ msgid "Text View"
+#~ msgstr "पाठ दृश्य"
+
+#, fuzzy
+#~ msgid "Settings"
+#~ msgstr "क्रमबद्ध गर्दै"
+
 #~ msgid "&Create Object: %1..."
 #~ msgstr "वस्तु सिर्जना गर्नुहोस्: %1..."
 
@@ -6225,9 +6399,6 @@ msgstr "रिक्त पङ्क्ति"
 
 #~ msgid "Create object"
 #~ msgstr "वस्तु सिर्जना गर्नुहोस्"
-
-#~ msgid "Creates a new object"
-#~ msgstr "नयाँ वस्तु सिर्जना गर्दछ"
 
 #~ msgid "We are sorry, templates are not yet available."
 #~ msgstr "हामीलाई माफ गर्नुहोस्, टेम्प्लेट अहिलेलाई उपलब्ध छैन ।"
@@ -6269,9 +6440,6 @@ msgstr "रिक्त पङ्क्ति"
 
 #~ msgid "Hide Context Help"
 #~ msgstr "सामग्री मद्दत लुकाउनुहोस्"
-
-#~ msgid "Lets you configure Kexi."
-#~ msgstr "तपाईंलाई केक्सी कन्फिगर गर्न अनुमति दिन्छ ।"
 
 #~ msgid "Close the current window"
 #~ msgstr "हालको सञ्झ्याल बन्द गर्नुहोस्"
@@ -6347,9 +6515,6 @@ msgstr "रिक्त पङ्क्ति"
 
 #~ msgid "Navigate"
 #~ msgstr "नेभिगेट"
-
-#~ msgid "Row"
-#~ msgstr "पङ्क्ति"
 
 #~ msgid "No window active."
 #~ msgstr "कुनै सञ्झ्याल सक्रिय छैन ।"

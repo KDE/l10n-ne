@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-24 05:36+0200\n"
+"POT-Creation-Date: 2007-08-25 05:36+0200\n"
 "PO-Revision-Date: 2007-02-25 14:39+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -111,8 +111,8 @@ msgstr "हटसिन्क समाप्त भयो ।"
 msgid "The conduit %1 could not be executed."
 msgstr "कन्ड्युट %1 कार्यान्वयन गर्न सकेन ।"
 
-#: lib/syncAction.cc:202 kpilot/config_dialog.cc:306 kpilot/kpilot.cc:267
-#: kpilot/kpilot.cc:308 kpilot/config_pages.cc:215
+#: lib/syncAction.cc:202 kpilot/config_dialog.cc:306 kpilot/kpilot.cc:259
+#: kpilot/kpilot.cc:295 kpilot/config_pages.cc:215
 msgid "HotSync"
 msgstr "HotSync"
 
@@ -124,7 +124,7 @@ msgstr "पूर्ण समक्रमण"
 msgid "Copy PC to Handheld"
 msgstr "PC बाट ह्यान्डहेल्ड प्रतिलिपि गर्नुहोस्"
 
-#: lib/syncAction.cc:205 kpilot/kpilot.cc:353
+#: lib/syncAction.cc:205 kpilot/kpilot.cc:340
 msgid "Copy Handheld to PC"
 msgstr "ह्यान्डहेल्डबाट PC मा प्रतिलिपि गर्नुहोस्"
 
@@ -2049,7 +2049,7 @@ msgstr ""
 msgid "Changing Database Flags"
 msgstr "डाटाबेस झण्डा परिवर्तन"
 
-#: kpilot/viewer_page_base.cc:129 kpilot/pilotComponent.cc:148
+#: kpilot/viewer_page_base.cc:133 kpilot/pilotComponent.cc:148
 #, fuzzy
 #| msgid "All"
 msgctxt "This adds the Category all"
@@ -2144,6 +2144,10 @@ msgstr "केडीई पाइलट कन्फिगर गर्नुह
 msgid "Default (%1)"
 msgstr "पूर्वनिर्धारण (%1)"
 
+#: kpilot/pilotDaemon.cc:133
+msgid "Next &Sync"
+msgstr "पछिल्लो समक्रमण"
+
 #: kpilot/pilotDaemon.cc:138
 msgctxt ""
 "Appended to names of sync types to indicate the sync will happen just one "
@@ -2151,30 +2155,26 @@ msgctxt ""
 msgid " (once)"
 msgstr " (एक पटक)"
 
-#: kpilot/pilotDaemon.cc:169
-msgid "Next &Sync"
-msgstr "पछिल्लो समक्रमण"
-
-#: kpilot/pilotDaemon.cc:676
+#: kpilot/pilotDaemon.cc:675
 #, qt-format
 msgid "Next HotSync will be: %1. "
 msgstr "पछिल्लो हटसिन्क यो हुन्छ: %1 "
 
-#: kpilot/pilotDaemon.cc:677 kpilot/kpilot.cc:406 kpilot/kpilot.cc:414
-#: kpilot/kpilot.cc:422 kpilot/kpilot.cc:430 kpilot/kpilot.cc:438
-#: kpilot/kpilot.cc:446
+#: kpilot/pilotDaemon.cc:676 kpilot/kpilot.cc:393 kpilot/kpilot.cc:401
+#: kpilot/kpilot.cc:409 kpilot/kpilot.cc:417 kpilot/kpilot.cc:425
+#: kpilot/kpilot.cc:433
 msgid "Please press the HotSync button."
 msgstr "कृपया हटसिन्क बटन थिच्नुहोस् ।"
 
-#: kpilot/pilotDaemon.cc:766 kpilot/kpilot.cc:276
+#: kpilot/pilotDaemon.cc:765 kpilot/kpilot.cc:274
 msgid "File Installer"
 msgstr "फाइल स्थापक"
 
-#: kpilot/pilotDaemon.cc:914
+#: kpilot/pilotDaemon.cc:913
 msgid "HotSync is disabled while the screen is locked."
 msgstr "पर्दा ताल्चा लगाएको बेला हटसिन्क अक्षम पारियो ।"
 
-#: kpilot/pilotDaemon.cc:919
+#: kpilot/pilotDaemon.cc:918
 msgid ""
 "HotSync is disabled because KPilot could not determine the state of the "
 "screen saver. You can disable this security feature by unchecking the 'do "
@@ -2185,44 +2185,44 @@ msgstr ""
 "संवादको हटसिन्क पृष्ठमा ' स्क्रिनसेभर सक्रिय हुँदा समक्रमण नगर्नुहोस्' लाई चिनो हटाएर यो "
 "सुरक्षा सुविधा अक्षम पार्न सक्नुहुन्छ ।"
 
-#: kpilot/pilotDaemon.cc:1156 kpilot/pilotDaemon.cc:1157
+#: kpilot/pilotDaemon.cc:1155 kpilot/pilotDaemon.cc:1156
 #, fuzzy
 #| msgid "HotSync Completed.<br>"
 msgid "HotSync Completed.<br/>"
 msgstr "हटसिन्क सम्पन्न<br>"
 
-#: kpilot/pilotDaemon.cc:1198
+#: kpilot/pilotDaemon.cc:1197
 #, qt-format
 msgid "Next sync is %1."
 msgstr "पछिल्लो समक्रमण %1 हो ।"
 
-#: kpilot/pilotDaemon.cc:1239
+#: kpilot/pilotDaemon.cc:1238
 msgid "KPilot Daemon"
 msgstr "केडीई पाइलट डेइमन"
 
-#: kpilot/pilotDaemon.cc:1241 kpilot/kpilot.cc:748
+#: kpilot/pilotDaemon.cc:1240 kpilot/kpilot.cc:735
 #, fuzzy
 #| msgid "KPilot %1 HotSync starting...\n"
 msgid "KPilot - HotSync software for KDE"
 msgstr "केडीई पाइलट %1 हटसिन्क सुरु हुँदैछ...\n"
 
-#: kpilot/pilotDaemon.cc:1256 kpilot/kpilot.cc:762
+#: kpilot/pilotDaemon.cc:1255 kpilot/kpilot.cc:749
 msgid "Set debugging level"
 msgstr "डिबग स्तर सेट गर्नुहोस्"
 
-#: kpilot/pilotDaemon.cc:1258
+#: kpilot/pilotDaemon.cc:1257
 msgid "Device to try first"
 msgstr "पहिलो प्रयास गर्ने यन्त्र"
 
-#: kpilot/pilotDaemon.cc:1259
+#: kpilot/pilotDaemon.cc:1258
 msgid "Exit instead of complaining about bad configuration files"
 msgstr ""
 
-#: kpilot/pilotDaemon.cc:1260
+#: kpilot/pilotDaemon.cc:1259
 msgid "kpilotconfig"
 msgstr ""
 
-#: kpilot/todoviewer_page.cc:36 kpilot/kpilot.cc:270
+#: kpilot/todoviewer_page.cc:36 kpilot/kpilot.cc:262
 msgid "To-do Viewer"
 msgstr "'गर्नु पर्ने' दृश्यकर्ता"
 
@@ -2245,6 +2245,10 @@ msgstr "तपाईँले सूचीमा मेट्नका लाग
 #: kpilot/config_dialog_dbselection.cc:143
 msgid "No Database Selected"
 msgstr "डाटाबेस चयन गरेको छैन"
+
+#: kpilot/viewer_page_base.h:66 kpilot/viewer_page_base.h:72
+msgid "not implemented by subclass"
+msgstr ""
 
 #: kpilot/dbAppInfoEditor.cc:50
 msgid "Edit AppInfo Block"
@@ -2552,7 +2556,7 @@ msgstr "मेमो निर्यात गर्नुहोस्..."
 msgid "Write the selected memo to a file."
 msgstr "फाइलमा चयन गरेको मेमो लेख्नुहोस् ।"
 
-#: kpilot/dbviewerWidget.cc:65 kpilot/kpilot.cc:273
+#: kpilot/dbviewerWidget.cc:65 kpilot/kpilot.cc:271
 msgid "Generic DB Viewer"
 msgstr "जेनेरिक DB दृश्यकर्ता"
 
@@ -2862,6 +2866,10 @@ msgstr " %1 मा जडान भएको यन्त्र फेला प
 msgid "Disconnected from all devices"
 msgstr "सबै यन्त्रबाट विच्छेदित"
 
+#: kpilot/memoviewer_page.cc:36 kpilot/kpilot.cc:268
+msgid "Memo Viewer"
+msgstr "मेमो दृश्यकर्ता"
+
 #: kpilot/fileInstallWidget.cc:73
 msgid "Files to install:"
 msgstr "स्थापन गर्ने फाइलहरू:"
@@ -3146,42 +3154,46 @@ msgstr "पूर्वावस्थामा ल्याउने अपू�
 msgid "Cannot restore file `%1'."
 msgstr " `%1' फाइल पूर्वावस्थामा ल्याउन सकिदैन ।"
 
-#: kpilot/kpilot.cc:191
+#: kpilot/kpilot.cc:183
 msgid "Starting the KPilot daemon ..."
 msgstr "केडीई पाइलट डेइमन सुरु गर्दैछ ..."
 
-#: kpilot/kpilot.cc:201
+#: kpilot/kpilot.cc:193
 #, qt-format
 msgid ""
 "Could not start the KPilot daemon. The system error message was: &quot;%"
 "1&quot;"
 msgstr "केडीई पाइलट डेइमन सुरु गर्ने सकेन । प्रणाली त्रुटि यस्तो थियो: &quot;%1&quot;"
 
-#: kpilot/kpilot.cc:209
+#: kpilot/kpilot.cc:201
 #, fuzzy
 #| msgid "Daemon status is `%1'"
 msgid "Daemon started."
 msgstr "डेइमनको वस्तुस्थिति यस्तो छ  `%1'"
 
-#: kpilot/kpilot.cc:231
+#: kpilot/kpilot.cc:223
 msgid "not running"
 msgstr "चलिरहेको छैन"
 
-#: kpilot/kpilot.cc:231
+#: kpilot/kpilot.cc:223
 #, qt-format
 msgid "Daemon status is `%1'"
 msgstr "डेइमनको वस्तुस्थिति यस्तो छ  `%1'"
 
-#: kpilot/kpilot.cc:244
+#: kpilot/kpilot.cc:236
 #, qt-format
 msgid "Using character set %1 on the handheld."
 msgstr "ह्यान्डहेल्डमा  %1 क्यारेक्टर सेट प्रयोग गर्दैछ"
 
-#: kpilot/kpilot.cc:313
+#: kpilot/kpilot.cc:265 kpilot/addressviewer_page.cc:36
+msgid "Address Viewer"
+msgstr "ठेगाना दृश्यकर्ता"
+
+#: kpilot/kpilot.cc:300
 msgid "Select the kind of HotSync to perform next."
 msgstr "पछि गर्ने हटसिन्कको प्रकार चयन गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:314
+#: kpilot/kpilot.cc:301
 msgid ""
 "Select the kind of HotSync to perform next. This applies only to the next "
 "HotSync; to change the default, use the configuration dialog."
@@ -3189,55 +3201,55 @@ msgstr ""
 "पछि गर्ने हटसिन्कको प्रकार चयन गर्नुहोस् । यो केबल पछिल्लो हटसिन्कमा लागू गरिन्छ; "
 "पूर्वनिर्धारितलाई परिवर्तन गर्न, कन्फिगरेसन संवाद प्रयोग गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:322
+#: kpilot/kpilot.cc:309
 msgid "&HotSync"
 msgstr "हटसिन्क"
 
-#: kpilot/kpilot.cc:324
+#: kpilot/kpilot.cc:311
 msgid "Next HotSync will be normal HotSync."
 msgstr "पछिल्लो हटसिन्क सामान्य हटसिन्क हुनेछ ।"
 
-#: kpilot/kpilot.cc:325
+#: kpilot/kpilot.cc:312
 msgid "Tell the daemon that the next HotSync should be a normal HotSync."
 msgstr "पछिल्लो हटसिन्क सामान्य हटसिन्क हुनु पर्दछ भनेर डेइमनलाई भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:329
+#: kpilot/kpilot.cc:316
 msgid "Full&Sync"
 msgstr "पूरा समक्रमण"
 
-#: kpilot/kpilot.cc:331
+#: kpilot/kpilot.cc:318
 msgid "Next HotSync will be a FullSync."
 msgstr "पछिल्लो हटसिन्क पूरा समक्रमण हुनेछ ।"
 
-#: kpilot/kpilot.cc:332
+#: kpilot/kpilot.cc:319
 msgid ""
 "Tell the daemon that the next HotSync should be a FullSync (check data on "
 "both sides)."
 msgstr ""
 "पछिल्लो हटसिन्क पूरा समक्रमण हुनेछ भनेर डेइमनलाई भन्नुहोस् (दुबै तिर डेटा जाँच गर्नुहोस् ) ।"
 
-#: kpilot/kpilot.cc:337
+#: kpilot/kpilot.cc:324
 msgid "&Backup"
 msgstr "जगेडा"
 
-#: kpilot/kpilot.cc:339 kpilot/kpilot.cc:355
+#: kpilot/kpilot.cc:326 kpilot/kpilot.cc:342
 msgid "Next HotSync will be backup."
 msgstr "पछिल्लो हटसिन्क जगेडा हुनेछ ।"
 
-#: kpilot/kpilot.cc:340
+#: kpilot/kpilot.cc:327
 msgid ""
 "Tell the daemon that the next HotSync should back up the Handheld to the PC."
 msgstr "पछिल्लो हटसिन्कले ह्यान्डहेल्डलाई PC मा जगेडा गर्नेछ भनेर डेइमनलाई भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:345
+#: kpilot/kpilot.cc:332
 msgid "&Restore"
 msgstr "पूर्वावस्थामा ल्याउनुहोस्"
 
-#: kpilot/kpilot.cc:347
+#: kpilot/kpilot.cc:334
 msgid "Next HotSync will be restore."
 msgstr "पछिल्लो हटसिन्क पूर्वावस्थामा ल्याइने छ ।"
 
-#: kpilot/kpilot.cc:348
+#: kpilot/kpilot.cc:335
 msgid ""
 "Tell the daemon that the next HotSync should restore the Handheld from data "
 "on the PC."
@@ -3245,7 +3257,7 @@ msgstr ""
 "पछिल्लो हटसिन्कले डेटाबाट ह्यान्डहेल्डलाई PC मा पूर्वावस्थामा ल्याउनु पर्छ भनेर डेइमनलाई "
 "भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:356
+#: kpilot/kpilot.cc:343
 msgid ""
 "Tell the daemon that the next HotSync should copy all data from the Handheld "
 "to the PC, overwriting entries on the PC."
@@ -3253,85 +3265,85 @@ msgstr ""
 "पछिल्लो हटसिन्कले ह्यान्डहेल्डबाट सबै डेटा PC मा प्रतिलिपि गर्नु पर्दछ भनेर डेइमनलाई "
 "भन्नुहोस्, PC मा प्रविष्टिहरू अधिलेखन गर्दैछ ।"
 
-#: kpilot/kpilot.cc:362
+#: kpilot/kpilot.cc:349
 msgid "Rese&t Link"
 msgstr "लिङ्क रिसेट गर्नुहोस्"
 
-#: kpilot/kpilot.cc:364
+#: kpilot/kpilot.cc:351
 msgid "Reset the device connection."
 msgstr "यन्त्र जडान रिसेट गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:365
+#: kpilot/kpilot.cc:352
 msgid "Try to reset the daemon and its connection to the Handheld."
 msgstr "डेइमन र यसको जडान ह्यान्डहेल्डमा रिसेट गर्न प्रयास गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:370
+#: kpilot/kpilot.cc:357
 msgid "Quit KPilot, (and stop the daemon if configured that way)."
 msgstr "केडीई पाइलट अन्त्य गर्नुहोस्, (र कन्फिगरेसन भैरहेको छ भने रोक्नुहोस्) ।"
 
-#: kpilot/kpilot.cc:405
+#: kpilot/kpilot.cc:392
 msgid "Next sync will be a backup. "
 msgstr "पछिल्लो समक्रमणलाई जगेडा गरिने छ । "
 
-#: kpilot/kpilot.cc:413
+#: kpilot/kpilot.cc:400
 msgid "Next sync will restore the Pilot from backup. "
 msgstr "पछिल्लो समक्रमणले जगेडाबाट पाइलट पूर्वावस्थामा ल्याउने छ । "
 
-#: kpilot/kpilot.cc:421
+#: kpilot/kpilot.cc:408
 msgid "Next sync will be a regular HotSync. "
 msgstr "पछिल्लो समक्रमण नियमित हटसिन्क हुनेछ । "
 
-#: kpilot/kpilot.cc:429
+#: kpilot/kpilot.cc:416
 msgid "Next sync will be a Full Sync. "
 msgstr "पछिल्लो समक्रमण पूरा समक्रमण हुनेछ । "
 
-#: kpilot/kpilot.cc:437
+#: kpilot/kpilot.cc:424
 msgid "Next sync will copy Handheld data to PC. "
 msgstr "पछिल्लो समक्रमणले ह्यान्डहेल्ड डेटालाई PC मा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:445
+#: kpilot/kpilot.cc:432
 msgid "Next sync will copy PC data to Handheld. "
 msgstr "पछिल्लो समक्रमणले PC डेटालाई ह्यान्डहेल्डमा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:471
+#: kpilot/kpilot.cc:458
 msgid "The daemon has exited."
 msgstr "डेइमन निस्केको छ ।"
 
-#: kpilot/kpilot.cc:472
+#: kpilot/kpilot.cc:459
 #, fuzzy
 #| msgid "No further HotSyncs are possible."
 msgid "No further HotSyncs are possible."
 msgstr "अब हटसिन्क संभव छैन ।"
 
-#: kpilot/kpilot.cc:473
+#: kpilot/kpilot.cc:460
 msgid "Restart the daemon to HotSync again."
 msgstr "डेइमनलाई हटसिन्कमा फेरि सुरु गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:570
+#: kpilot/kpilot.cc:557
 #, fuzzy
 #| msgid "Reset the device connection."
 msgid "Resetting device connection ..."
 msgstr "यन्त्र जडान रिसेट गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:591
+#: kpilot/kpilot.cc:578
 #, fuzzy
 #| msgid "Configuration Wizard"
 msgid "Configuration"
 msgstr "कन्फिगरेसन विजार्ड"
 
-#: kpilot/kpilot.cc:704
+#: kpilot/kpilot.cc:691
 msgid "Cannot configure KPilot right now (KPilot's UI is already busy)."
 msgstr "केडीई पाइलट अहिले कन्फिगर गर्न सकिदैन (केडीई पाइलटको UI पहिले नै व्यस्त छ) ।"
 
-#: kpilot/kpilot.cc:746
+#: kpilot/kpilot.cc:733
 msgid "KPilot"
 msgstr "केडीई पाइलट"
 
-#: kpilot/kpilot.cc:760
+#: kpilot/kpilot.cc:747
 msgid "Setup the Pilot device, conduits and other parameters"
 msgstr "पाइलट यन्त्र, कन्ड्युट र अन्य परिमितिहरू सेटअप गर्नुहोस्"
 
-#: kpilot/kpilot.cc:764
+#: kpilot/kpilot.cc:751
 #, fuzzy
 #| msgid "KPilot"
 msgid "kpilot"
@@ -3512,12 +3524,6 @@ msgstr "Mahesh Subedi"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "submanesh@gmail.com"
-
-#~ msgid "Address Viewer"
-#~ msgstr "ठेगाना दृश्यकर्ता"
-
-#~ msgid "Memo Viewer"
-#~ msgstr "मेमो दृश्यकर्ता"
 
 #~ msgid "Cannot start a Sync now. %1"
 #~ msgstr "अहिले समक्रमण सुरु गर्न सकिदैन । %1"
