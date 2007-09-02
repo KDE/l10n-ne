@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-01 05:36+0200\n"
+"POT-Creation-Date: 2007-09-02 05:41+0200\n"
 "PO-Revision-Date: 2007-01-15 03:42+0545\n"
 "Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -137,7 +137,7 @@ msgstr "आयात नगर्नुहोस्"
 
 #: keylistview.cpp:386 keylistview.cpp:442 keylistview.cpp:557
 #: keylistview.cpp:624 keysmanager.cpp:577 keysmanager.cpp:1232
-#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2407
+#: keysmanager.cpp:1753 keysmanager.cpp:1833 keysmanager.cpp:2399
 #, qt-format
 msgid "%1 Keys, %2 Groups"
 msgstr "%1 कुञ्जी, %2 समूह"
@@ -291,7 +291,7 @@ msgstr "कुञ्जी सर्भरबाट कुञ्जी आया
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 141
-#: keyservers.cpp:391 kgpgview.cpp:393 rc.cpp:425
+#: keyservers.cpp:391 kgpgview.cpp:392 rc.cpp:425
 msgid "&Import"
 msgstr "आयात गर्नुहोस्"
 
@@ -344,7 +344,7 @@ msgstr "GnuPG म्यानुअल हेर्नुहोस्"
 msgid "&Open Editor"
 msgstr "सम्पादक खोल्नुहोस्"
 
-#: keysmanager.cpp:167 selectpublickeydialog.cpp:224
+#: keysmanager.cpp:167 selectpublickeydialog.cpp:230
 msgid "&Go to Default Key"
 msgstr "पूर्वनिर्धारित कुञ्जीमा जानुहोस्"
 
@@ -676,7 +676,7 @@ msgstr ""
 "कुञ्जी निर्यात गर्न निरन्तरता दिनुहुन्छ ?"
 
 #: keysmanager.cpp:1488 keysmanager.cpp:1736 keysmanager.cpp:2268
-#: keysmanager.cpp:2342 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
+#: keysmanager.cpp:2336 kgpg.cpp:648 kgpgeditor.cpp:314 kgpgeditor.cpp:324
 #: kgpglibrary.cpp:210
 msgid "Warning"
 msgstr ""
@@ -903,7 +903,18 @@ msgstr ""
 "<p> <b>गुप्त कुञ्जी</b> जोडी <b>%1</b> मेट्नुहुन्छ ?</p>यो कुञ्जी जोडी मेट्नुको अर्थ तपाईँले "
 "यो कुञ्जीसँग गुप्तिकरण गरिएको फाइललाई कहिल्यै पनि गुप्तिकरण उल्टाउन नसक्नु भन्ने हुन्छ ।"
 
-#: keysmanager.cpp:2334
+#: keysmanager.cpp:2292
+#, qt-format
+msgid "Can not delete key <b>%1</b> while it is edited in terminal."
+msgstr ""
+
+#: keysmanager.cpp:2292
+#, fuzzy
+#| msgid "&Delete Keys"
+msgid "Delete key"
+msgstr "कुञ्जी मेट्नुहोस्"
+
+#: keysmanager.cpp:2328
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -913,22 +924,22 @@ msgid ""
 "deleted.</qt>"
 msgstr "<qt>निम्न गुप्त कुञ्जी जोडी:<br><b>%1</b>तिनीहरू मेटिने छैन ।<br></qt>"
 
-#: keysmanager.cpp:2342
+#: keysmanager.cpp:2336
 #, fuzzy, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "<qt><b>निम्न सार्वजनिक कुञ्जी मेट्नुहुन्छ ?</b></qt>"
 msgstr[1] "<qt><b>निम्न %1 सार्वजनिक कुज्जी मेट्नुहुन्छ ?</b></qt>"
 
-#: keysmanager.cpp:2413
+#: keysmanager.cpp:2405
 msgid "Key Import"
 msgstr "कुञ्जी आयात"
 
-#: keysmanager.cpp:2420
+#: keysmanager.cpp:2412
 msgid "Open File"
 msgstr "फाइल खोल्नुहोस्"
 
-#: keysmanager.cpp:2427
+#: keysmanager.cpp:2419
 msgid "Importing..."
 msgstr "आयात गरिँदैछ..."
 
@@ -1455,7 +1466,7 @@ msgstr ""
 "<qt><b>BAD हस्ताक्षर</b> :<br> %1<br>कुञ्जीआईडी: %2<br><br><b>फाइल दुषित छ !</b></"
 "qt>"
 
-#: kgpginterface.cpp:2944 kgpgview.cpp:400
+#: kgpginterface.cpp:2944 kgpgview.cpp:399
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1621,7 +1632,7 @@ msgstr ""
 "<p><b>%1</b> फाइल व्यक्तिगत कुञ्जी खण्ड हो । कृपया यसलाई आयात गर्न KGpg कुञ्जी "
 "प्रबन्धकको प्रयोग गर्नुहोस् ।</p>"
 
-#: kgpglibrary.cpp:231 kgpgview.cpp:314 kgpgview.cpp:355
+#: kgpglibrary.cpp:231 kgpgview.cpp:313 kgpgview.cpp:354
 msgid "Decryption failed."
 msgstr "गुप्तिकरण उल्टाउन असफल ।"
 
@@ -1812,11 +1823,11 @@ msgstr ""
 msgid "Could not download file."
 msgstr "फाइल डाउनलोड गर्न सकेन ।"
 
-#: kgpgview.cpp:228
+#: kgpgview.cpp:227
 msgid "Unable to read file."
 msgstr "फाइल पढ्न अक्षम ।"
 
-#: kgpgview.cpp:269
+#: kgpgview.cpp:268
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>public</b> key.\n"
@@ -1825,7 +1836,7 @@ msgstr ""
 "यो फाइल सार्वजनिक कुञ्जी हो ।\n"
 "कृपया यसलाई आयात गर्न kgpg कुञ्जी व्यवस्थापन प्रयोग गर्नुहोस् ।"
 
-#: kgpgview.cpp:275
+#: kgpgview.cpp:274
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
@@ -1837,41 +1848,41 @@ msgstr ""
 "यो फाइल सार्वजनिक कुञ्जी हो ।\n"
 "कृपया यसलाई आयात गर्न kgpg कुञ्जी व्यवस्थापन प्रयोग गर्नुहोस् ।"
 
-#: kgpgview.cpp:326
+#: kgpgview.cpp:325
 msgid "Encryption failed."
 msgstr "गुप्तिकरण असफल ।"
 
-#: kgpgview.cpp:363
+#: kgpgview.cpp:362
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "साइनिङ सम्भव छैन: खराब पासफ्रेज वा हराइरहेको कुञ्जी"
 
-#: kgpgview.cpp:394
+#: kgpgview.cpp:393
 #, fuzzy
 msgid "Import key in your list"
 msgstr "किरिङमा आयात गर्नुहोस्"
 
-#: kgpgview.cpp:397
+#: kgpgview.cpp:396
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "आयात नगर्नुहोस्"
 
-#: kgpgview.cpp:398
+#: kgpgview.cpp:397
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: kgpgview.cpp:400
+#: kgpgview.cpp:399
 msgid "Missing Key"
 msgstr "हराइरहेको कुञ्जी"
 
-#: kgpgview.cpp:425
+#: kgpgview.cpp:424
 msgid "S&ign/Verify"
 msgstr "साइन/रूजू गर्नुहोस्"
 
-#: kgpgview.cpp:426
+#: kgpgview.cpp:425
 msgid "En&crypt"
 msgstr "गुप्तिकरण गर्नुहोस्"
 
-#: kgpgview.cpp:427
+#: kgpgview.cpp:426
 msgid "&Decrypt"
 msgstr "गुप्तिकरण उल्टाउनुहोस्"
 
@@ -2016,7 +2027,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 42
-#: rc.cpp:30 selectpublickeydialog.cpp:164
+#: rc.cpp:30 selectpublickeydialog.cpp:169
 msgid "ASCII armored encryption"
 msgstr "ASCII आर्मोरेड गुप्तिकरण"
 
@@ -2055,7 +2066,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 64
-#: rc.cpp:44 selectpublickeydialog.cpp:174
+#: rc.cpp:44 selectpublickeydialog.cpp:180
 msgid "Hide user id"
 msgstr "प्रयोगकर्ता आईडी लुकाउनुहोस्"
 
@@ -2080,7 +2091,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 75
-#: rc.cpp:51 selectpublickeydialog.cpp:186
+#: rc.cpp:51 selectpublickeydialog.cpp:192
 msgid "Shred source file"
 msgstr "स्रोत फाइल टुक्रा पार्नुहोस्"
 
@@ -2169,7 +2180,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf_encryption.ui line 172
-#: rc.cpp:79 selectpublickeydialog.cpp:168
+#: rc.cpp:79 selectpublickeydialog.cpp:174
 msgid "Allow encryption with untrusted keys"
 msgstr "अविश्वासिलो कुज्जीसँग गुप्तिकरण अनुमति दिनुहोस्"
 
@@ -3506,7 +3517,7 @@ msgid ""
 "<b>Public keys list</b>: select the key that will be used for encryption."
 msgstr "<b>सार्वजनिक कुञ्जी सूची</b>: गुप्तिकरणका लागि प्रयोग गरिने कुञ्जी चयन गर्नुहोस् ।"
 
-#: selectpublickeydialog.cpp:166
+#: selectpublickeydialog.cpp:171
 msgid ""
 "<b>ASCII encryption</b>: makes it possible to open the encrypted file/"
 "message in a text editor"
@@ -3514,7 +3525,7 @@ msgstr ""
 "<b>ASCII गुप्तिकरण</b>: पाठ सम्पादकमा गुप्तिकरण गरिएको फाइल/सन्देश खोल्न यसले सम्भव "
 "बनाउदछ ।"
 
-#: selectpublickeydialog.cpp:170
+#: selectpublickeydialog.cpp:176
 msgid ""
 "<b>Allow encryption with untrusted keys</b>: when you import a public key, "
 "it is usually marked as untrusted and you cannot use it unless you sign it "
@@ -3526,7 +3537,7 @@ msgstr ""
 "बनाउनका लागि साइन नगरिकन प्रयोग गर्न सक्नुहुन्न । यदि यसलाई साइन गरिएको छैन भने पनि, "
 "यो बाकसमा जाँच गर्नाले तपाईँले कुनै कुञ्जी प्रयोग गर्न सक्षम पार्दछ ।"
 
-#: selectpublickeydialog.cpp:176
+#: selectpublickeydialog.cpp:182
 msgid ""
 "<b>Hide user ID</b>: Do not put the keyid into encrypted packets. This "
 "option hides the receiver of the message and is a countermeasure against "
@@ -3537,7 +3548,7 @@ msgstr ""
 "यो विकल्पले सन्देशको प्रापक र ट्राफिक विश्लेषणको विपरित नापलाई लुकाउदछ । यसले गुप्तिकरण "
 "हटाउने काम ढिला गर्न सक्दछ किनभने सबै उपलब्ध गुप्त कुञ्जीलाई प्रयास गरिन्छ ।"
 
-#: selectpublickeydialog.cpp:187
+#: selectpublickeydialog.cpp:193
 msgid ""
 "<b>Shred source file</b>: permanently remove source file. No recovery will "
 "be possible"
@@ -3545,7 +3556,7 @@ msgstr ""
 "<b>टुक्रा पारिएको स्रोत फाइल</b>: ले सधैका लागि स्रोत फाइल हटाउदछ । पुन: प्राप्ति गर्न "
 "सम्भव छैन"
 
-#: selectpublickeydialog.cpp:191
+#: selectpublickeydialog.cpp:197
 msgid ""
 "<qt><b>Shred source file:</b><br /><p>Checking this option will shred "
 "(overwrite several times before erasing) the files you have encrypted. This "
@@ -3562,16 +3573,16 @@ msgstr ""
 "वा अस्थायी फाइलमा त्यो फाइलको भाग बचत हुन सक्दछ । फाइलमा मात्र (फोल्डरमा होइन) काम "
 "गर्दछ ।</p></qt>"
 
-#: selectpublickeydialog.cpp:193
+#: selectpublickeydialog.cpp:199
 #, qt-format
 msgid "<a href=\"whatsthis:%1\">Read this before using shredding</a>"
 msgstr "<a href=\"whatsthis:%1\">टुक्रा पार्नु अगाडि यो पढ्नुहोस्</a>"
 
-#: selectpublickeydialog.cpp:198
+#: selectpublickeydialog.cpp:204
 msgid "Symmetrical encryption"
 msgstr "सममित गुप्तिकरण"
 
-#: selectpublickeydialog.cpp:199
+#: selectpublickeydialog.cpp:205
 msgid ""
 "<b>Symmetrical encryption</b>: encryption does not use keys. You just need "
 "to give a password to encrypt/decrypt the file"
@@ -3579,11 +3590,11 @@ msgstr ""
 "<b>सममित गुप्तिकरण</b>: गुप्तिकरणले कुञ्जीको प्रयोग गर्दैन । तपाईँले फाइल गुप्तिकरण गर्न/"
 "गुप्तिकरण उल्टाउन पासवर्ड दिनुपर्दछ"
 
-#: selectpublickeydialog.cpp:213
+#: selectpublickeydialog.cpp:219
 msgid "Custom option:"
 msgstr "अनुकूल विकल्प:"
 
-#: selectpublickeydialog.cpp:217
+#: selectpublickeydialog.cpp:223
 msgid ""
 "<b>Custom option</b>: for experienced users only, allows you to enter a gpg "
 "command line option, like: '--armor'"
