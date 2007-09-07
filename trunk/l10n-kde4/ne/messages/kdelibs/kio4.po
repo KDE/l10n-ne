@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-06 05:36+0200\n"
+"POT-Creation-Date: 2007-09-07 05:32+0200\n"
 "PO-Revision-Date: 2007-02-11 16:43+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -4398,7 +4398,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kfile/kpropertiesdesktopbase.ui line 122
-#: rc.cpp:162 ../kfile/kfileplaceeditdialog.cpp:102
+#: rc.cpp:162 ../kfile/kfileplaceeditdialog.cpp:99
 msgid "&Description:"
 msgstr "वर्णन:"
 
@@ -4590,7 +4590,7 @@ msgstr "पुस्तकचिनो सम्पादकमा फोल्�
 msgid "Delete Folder"
 msgstr "फोल्डर मेट्नुहोस्"
 
-#: bookmarks/kbookmarkmenu.cc:263 ../kfile/kdiroperator.cpp:1713
+#: bookmarks/kbookmarkmenu.cc:263 ../kfile/kdiroperator.cpp:1591
 #, fuzzy
 msgid "Properties"
 msgstr "%1 का गुणहरू"
@@ -4722,9 +4722,9 @@ msgstr ""
 msgid "Select Folder"
 msgstr "फोल्डर चयन गर्नुहोस्"
 
-#: bookmarks/kbookmarkdialog.cc:128 ../kfile/kdirselectdialog.cpp:428
-#: ../kfile/kdirselectdialog.cpp:432 ../kfile/kdiroperator.cpp:671
-#: ../kfile/kdiroperator.cpp:679
+#: bookmarks/kbookmarkdialog.cc:128 ../kfile/kdirselectdialog.cpp:429
+#: ../kfile/kdirselectdialog.cpp:433 ../kfile/kdiroperator.cpp:607
+#: ../kfile/kdiroperator.cpp:615
 msgid "New Folder"
 msgstr "नयाँ फोल्डर"
 
@@ -5303,7 +5303,7 @@ msgstr ""
 msgid "&Remove '%1'"
 msgstr "प्रविष्टि हटाउनुहोस्"
 
-#: ../kfile/k3filedetailview.cpp:63 ../kfile/kdiroperator.cpp:1686
+#: ../kfile/k3filedetailview.cpp:63 ../kfile/kdiroperator.cpp:1572
 msgid "Detailed View"
 msgstr "विस्तृत दृश्य"
 
@@ -5407,7 +5407,9 @@ msgid "Click this button to create a new folder."
 msgstr "नयाँ फोल्डर सिर्जना गर्न यो बटन क्लिक गर्नुहोस् ।"
 
 #: ../kfile/kfilewidget.cpp:306
-msgid "Show Quick Access Navigation Panel"
+#, fuzzy
+#| msgid "Show Quick Access Navigation Panel"
+msgid "Show Places Navigation Panel"
 msgstr "छिटो पहुँच नेभिगेसन प्यानल देखाउनुहोस्"
 
 #: ../kfile/kfilewidget.cpp:313
@@ -5416,16 +5418,24 @@ msgstr "पुस्तकचिनोहरू देखाउनुहोस�
 
 #: ../kfile/kfilewidget.cpp:318
 #, fuzzy
-msgid "Configure"
-msgstr "जारी राख्नुहोस्"
+#| msgid "Operation"
+msgid "Options"
+msgstr "सञ्चालन"
 
 #: ../kfile/kfilewidget.cpp:320
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the configuration menu for the file dialog. Various options "
+#| "can be accessed from this menu including: <ul><li>how files are sorted in "
+#| "the list</li><li>types of view, including icon and list</li><li>showing "
+#| "of hidden files</li><li>the Quick Access navigation panel</li><li>file "
+#| "previews</li><li>separating folders from files</li></ul></qt>"
 msgid ""
-"<qt>This is the configuration menu for the file dialog. Various options can "
-"be accessed from this menu including: <ul><li>how files are sorted in the "
-"list</li><li>types of view, including icon and list</li><li>showing of "
-"hidden files</li><li>the Quick Access navigation panel</li><li>file "
-"previews</li><li>separating folders from files</li></ul></qt>"
+"<qt>This is the preferences menu for the file dialog. Various options can be "
+"accessed from this menu including: <ul><li>how files are sorted in the list</"
+"li><li>types of view, including icon and list</li><li>showing of hidden "
+"files</li><li>the Places navigation panel</li><li>file previews</"
+"li><li>separating folders from files</li></ul></qt>"
 msgstr ""
 "<qt>यो फाइल संवादका लागि कन्फिगरेसन मेनु हो । दृश्यका प्रकारहरू<ul><li>कति फाइल सूचीमा "
 "क्रमबद्ध गरिएका छन्</li><li>, प्रतिमा र सूची समावेश गर्दै </li><li>लुकेका फाइलहरू देखाउदै "
@@ -5433,7 +5443,7 @@ msgstr ""
 "फोल्डरहरू विभाजन गर्दै </li></ul> यो मेनु समावेशबाट बिभिन्न विकल्प पहुँच प्राप्त गर्न सकिने "
 "छ:</qt>"
 
-#: ../kfile/kfilewidget.cpp:364
+#: ../kfile/kfilewidget.cpp:364 ../kfile/kfileplaceeditdialog.cpp:110
 msgid "&Location:"
 msgstr "स्थान:"
 
@@ -5658,20 +5668,20 @@ msgstr "%2 मा प्रयास गर्दा अनपेक्षित
 msgid "Custom Path"
 msgstr ""
 
-#: ../kfile/kdirselectdialog.cpp:104 ../kfile/kdirselectdialog.cpp:142
-#: ../kfile/kdiroperator.cpp:1629
+#: ../kfile/kdirselectdialog.cpp:104 ../kfile/kdirselectdialog.cpp:143
+#: ../kfile/kdiroperator.cpp:1520
 msgid "New Folder..."
 msgstr "नयाँ फोल्डर..."
 
-#: ../kfile/kdirselectdialog.cpp:126
+#: ../kfile/kdirselectdialog.cpp:127
 msgid "Folders"
 msgstr "फोल्डर"
 
-#: ../kfile/kdirselectdialog.cpp:148
+#: ../kfile/kdirselectdialog.cpp:149
 msgid "Show Hidden Folders"
 msgstr "लुकेका फोल्डरहरू देखाउनुहोस्"
 
-#: ../kfile/kdirselectdialog.cpp:433 ../kfile/kdiroperator.cpp:680
+#: ../kfile/kdirselectdialog.cpp:434 ../kfile/kdiroperator.cpp:616
 #, qt-format
 msgid ""
 "Create new folder in:\n"
@@ -5680,46 +5690,36 @@ msgstr ""
 "यसमा नयाँ फोल्डर सिर्जना गर्नुहोस्:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:456 ../kfile/kdiroperator.cpp:706
+#: ../kfile/kdirselectdialog.cpp:457 ../kfile/kdiroperator.cpp:642
 #, qt-format
 msgid "A file or folder named %1 already exists."
 msgstr "%1 नाम गरिएको फाइल वा फोल्डर पहिले नै अवस्थित छ ।"
 
-#: ../kfile/kdirselectdialog.cpp:460 ../kfile/kdiroperator.cpp:709
+#: ../kfile/kdirselectdialog.cpp:461 ../kfile/kdiroperator.cpp:645
 msgid "You do not have permission to create that folder."
 msgstr "तपाईँलाई त्यो फोल्डर सिर्जना गर्ने अनुमति छैन ।"
 
 #: ../kfile/kfileplaceeditdialog.cpp:85
-msgid "Edit Quick Access Entry"
-msgstr "छिटो पहुँच गर्ने प्रविष्टि सम्पादन गर्नुहोस्"
-
-#: ../kfile/kfileplaceeditdialog.cpp:91
 #, fuzzy
-#| msgid ""
-#| "<qt><b>Please provide a description, URL and icon for this Quick Access "
-#| "entry.</b></br></qt>"
-msgid ""
-"<qt><b>Please provide a description, URL and icon for this Quick Access "
-"entry.</b><br /></qt>"
-msgstr ""
-"<qt><b>कृपया यूआरएल र प्रतिमाका लागि छिटो पहुँच प्रविष्टि बर्णन उपलब्ध गराउनुहोस् ।</"
-"b></br></qt>"
+#| msgid "Edit ACL Entry"
+msgid "Edit Places Entry"
+msgstr "ACL प्रविष्टि सम्पादन गर्नुहोस्"
 
-#: ../kfile/kfileplaceeditdialog.cpp:99
+#: ../kfile/kfileplaceeditdialog.cpp:96
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the text that will appear in the Quick Access panel.<p>The "
 #| "description should consist of one or two words that will help you "
 #| "remember what this entry refers to.</qt>"
 msgid ""
-"<qt>This is the text that will appear in the Quick Access panel.<br /><br /"
-">The description should consist of one or two words that will help you "
-"remember what this entry refers to.</qt>"
+"<qt>This is the text that will appear in the Places panel.<br /><br />The "
+"description should consist of one or two words that will help you remember "
+"what this entry refers to.</qt>"
 msgstr ""
 "<qt>यो छिटो पहुँच गर्ने प्यानलमा देखापर्ने पाठ हो ।<p>बर्णनमा एक वा दुई शब्द समावेश "
 "गर्नुपर्छ जसले तपाईँलाई यो प्रविष्टिले सन्दर्भ गर्ने सम्झाउन मद्दत गर्छ ।</qt>"
 
-#: ../kfile/kfileplaceeditdialog.cpp:109
+#: ../kfile/kfileplaceeditdialog.cpp:106
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>This is the location associated with the entry. Any valid URL may be "
@@ -5737,32 +5737,28 @@ msgstr ""
 "stable<p> बटनमा क्लिकद्वारा पछिल्लो पाठ सम्पादन बाकसमा उपयुक्त यूआरएल ब्राउज गर्न "
 "सक्नुहुन्छ ।</qt>"
 
-#: ../kfile/kfileplaceeditdialog.cpp:113
-msgid "&URL:"
-msgstr "यूआरएल:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:120
+#: ../kfile/kfileplaceeditdialog.cpp:117
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the icon that will appear in the Quick Access panel.<p>Click "
 #| "on the button to select a different icon.</qt>"
 msgid ""
-"<qt>This is the icon that will appear in the Quick Access panel.<br /><br /"
-">Click on the button to select a different icon.</qt>"
+"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
+"on the button to select a different icon.</qt>"
 msgstr ""
 "<qt>यो छिटो पहुँच गर्ने प्यानलमा देखापर्ने प्रतिमा हो ।<p>फरक प्रतिमा चयन गर्न यो बटनमा "
 "क्लिक गर्नुहोस् ।</qt>"
 
-#: ../kfile/kfileplaceeditdialog.cpp:122
+#: ../kfile/kfileplaceeditdialog.cpp:119
 msgid "Choose an &icon:"
 msgstr "एउटा प्रतिमा चयन गर्नुहोस्:"
 
-#: ../kfile/kfileplaceeditdialog.cpp:140
+#: ../kfile/kfileplaceeditdialog.cpp:137
 #, qt-format
 msgid "&Only show when using this application (%1)"
 msgstr "यो अनुप्रयोग (%1) प्रयोग गर्दा मात्र देखाउनुहोस्"
 
-#: ../kfile/kfileplaceeditdialog.cpp:142
+#: ../kfile/kfileplaceeditdialog.cpp:139
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Select this setting if you want this entry to show only when using "
@@ -5777,15 +5773,15 @@ msgstr ""
 "यो सेटिङ चयन गर्नुहोस् ।<p>यदि यो सेटिङ चयन नगरिएमा, सबै अनुप्रयोगहरूमा प्रविष्टि उपलब्ध "
 "हुनेछ ।</qt>"
 
-#: ../kfile/kdiroperator.cpp:730
+#: ../kfile/kdiroperator.cpp:666
 msgid "You did not select a file to delete."
 msgstr "तपाईँले मेट्नका लागि फाइल चयन गर्नु भएन ।"
 
-#: ../kfile/kdiroperator.cpp:731
+#: ../kfile/kdiroperator.cpp:667
 msgid "Nothing to Delete"
 msgstr "मेट्नका लागि केही छैन"
 
-#: ../kfile/kdiroperator.cpp:745
+#: ../kfile/kdiroperator.cpp:681
 #, qt-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -5794,30 +5790,30 @@ msgstr ""
 "<qt>के तपाईँ वास्तवमा मेट्न चाहनुहुन्छ\n"
 " <b>'%1'</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:747
+#: ../kfile/kdiroperator.cpp:683
 msgid "Delete File"
 msgstr "फाइल मेट्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:752
+#: ../kfile/kdiroperator.cpp:688
 #, fuzzy, qt-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "के तपाईँ यो वस्तु साँच्चिकै मेट्न चाहनुहुन्छ?"
 msgstr[1] "के तपाईँ यी %1 वस्तुहरू साँच्चिकै मेट्न चाहनुहुन्छ?"
 
-#: ../kfile/kdiroperator.cpp:754
+#: ../kfile/kdiroperator.cpp:690
 msgid "Delete Files"
 msgstr "फाइलहरू मेट्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:787
+#: ../kfile/kdiroperator.cpp:723
 msgid "You did not select a file to trash."
 msgstr "तपाईँले रद्दी टोकरीमा सार्न फाइल च्चयन गर्नुभएन ।"
 
-#: ../kfile/kdiroperator.cpp:788
+#: ../kfile/kdiroperator.cpp:724
 msgid "Nothing to Trash"
 msgstr "रद्दी टोकरीमा सार्न कुनै पनि वस्तु छैन"
 
-#: ../kfile/kdiroperator.cpp:802
+#: ../kfile/kdiroperator.cpp:738
 #, qt-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -5826,100 +5822,100 @@ msgstr ""
 "<qt>के तपाईँ साँच्चिकै रद्दी टोकरीमा सार्न चाहनुहुन्छ\n"
 " <b>'%1'</b>?</qt>"
 
-#: ../kfile/kdiroperator.cpp:804
+#: ../kfile/kdiroperator.cpp:740
 msgid "Trash File"
 msgstr "फाइल रद्दी टोकरीमा सार्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:805 ../kfile/kdiroperator.cpp:812
+#: ../kfile/kdiroperator.cpp:741 ../kfile/kdiroperator.cpp:748
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "रद्दी टोकरीमा सार्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:809
+#: ../kfile/kdiroperator.cpp:745
 #, fuzzy, qt-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "अनुवादक: n == 1 कल नगरिएको"
 msgstr[1] "तपाईँले निश्चित रूपमा %1 वस्तुहरू रद्दिटोकरीमा सार्न चाहनुहुन्छ ?"
 
-#: ../kfile/kdiroperator.cpp:811
+#: ../kfile/kdiroperator.cpp:747
 msgid "Trash Files"
 msgstr "फाइलहरू रद्दी टोकरीमा सार्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:932 ../kfile/kdiroperator.cpp:1022
+#: ../kfile/kdiroperator.cpp:868 ../kfile/kdiroperator.cpp:958
 msgid "The specified folder does not exist or was not readable."
 msgstr "निर्दिष्ट गरिएको फोल्डर अवस्थित छैन वा पढ्नयोग्य छैन ।"
 
-#: ../kfile/kdiroperator.cpp:1612
+#: ../kfile/kdiroperator.cpp:1503
 msgid "Menu"
 msgstr "मेनु"
 
-#: ../kfile/kdiroperator.cpp:1616
+#: ../kfile/kdiroperator.cpp:1507
 msgid "Parent Folder"
 msgstr "प्यारेन्ट फोल्डर"
 
-#: ../kfile/kdiroperator.cpp:1623
+#: ../kfile/kdiroperator.cpp:1514
 msgid "Home Folder"
 msgstr "गृह फोल्डर"
 
-#: ../kfile/kdiroperator.cpp:1626
+#: ../kfile/kdiroperator.cpp:1517
 #, fuzzy
 msgid "Reload"
 msgstr "पढ्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:1634
+#: ../kfile/kdiroperator.cpp:1525
 msgid "Move to Trash"
 msgstr "रद्दी टोकरीमा सार्नुहोस्"
 
-#: ../kfile/kdiroperator.cpp:1640
+#: ../kfile/kdiroperator.cpp:1531
 #, fuzzy
 msgid "Delete"
 msgstr "मेट्दै"
 
-#: ../kfile/kdiroperator.cpp:1647
+#: ../kfile/kdiroperator.cpp:1538
 msgid "Sorting"
 msgstr "क्रमबद्ध गर्दै"
 
-#: ../kfile/kdiroperator.cpp:1650
+#: ../kfile/kdiroperator.cpp:1541
 msgid "By Name"
 msgstr "नाम द्वारा"
 
-#: ../kfile/kdiroperator.cpp:1654
+#: ../kfile/kdiroperator.cpp:1545
 msgid "By Date"
 msgstr "मिति अनुरूप"
 
-#: ../kfile/kdiroperator.cpp:1658
+#: ../kfile/kdiroperator.cpp:1549
 msgid "By Size"
 msgstr "साइज अनुरुप"
 
-#: ../kfile/kdiroperator.cpp:1662
+#: ../kfile/kdiroperator.cpp:1553
 #, fuzzy
 #| msgid "Type"
 msgid "By Type"
 msgstr "प्रकार"
 
-#: ../kfile/kdiroperator.cpp:1666
+#: ../kfile/kdiroperator.cpp:1557
 #, fuzzy
 #| msgid "Deleting"
 msgid "Descending"
 msgstr "मेट्दै"
 
-#: ../kfile/kdiroperator.cpp:1677
-#, fuzzy
-msgid "&View"
-msgstr "पूर्वावलोकन"
-
-#: ../kfile/kdiroperator.cpp:1681
+#: ../kfile/kdiroperator.cpp:1567
 msgid "Short View"
 msgstr "छोटो दृश्य"
 
-#: ../kfile/kdiroperator.cpp:1695
+#: ../kfile/kdiroperator.cpp:1581
 msgid "Show Hidden Files"
 msgstr "लुकेका फाईलहरू देखाउनुहोस्"
 
-#: ../kfile/kdiroperator.cpp:1703
+#: ../kfile/kdiroperator.cpp:1585
 msgid "Show Preview"
 msgstr "पूर्वावलोकन देखाउनुहोस्"
+
+#: ../kfile/kdiroperator.cpp:1597
+#, fuzzy
+msgid "&View"
+msgstr "पूर्वावलोकन"
 
 #: ../kfile/kurltogglebutton.cpp:81
 msgid "Click for Location Navigation"
@@ -5947,6 +5943,27 @@ msgstr "सम्पादन..."
 #: ../kfile/kurlbutton.cpp:100
 msgid "Navigate"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Configure"
+#~ msgstr "जारी राख्नुहोस्"
+
+#~ msgid "Edit Quick Access Entry"
+#~ msgstr "छिटो पहुँच गर्ने प्रविष्टि सम्पादन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><b>Please provide a description, URL and icon for this Quick Access "
+#~| "entry.</b></br></qt>"
+#~ msgid ""
+#~ "<qt><b>Please provide a description, URL and icon for this Quick Access "
+#~ "entry.</b><br /></qt>"
+#~ msgstr ""
+#~ "<qt><b>कृपया यूआरएल र प्रतिमाका लागि छिटो पहुँच प्रविष्टि बर्णन उपलब्ध गराउनुहोस् ।</"
+#~ "b></br></qt>"
+
+#~ msgid "&URL:"
+#~ msgstr "यूआरएल:"
 
 #~ msgid "Reverse"
 #~ msgstr "उल्टाउनुहोस्"
@@ -6340,9 +6357,6 @@ msgstr ""
 
 #~ msgid "Local Filename"
 #~ msgstr "स्थानीय फाइलनाम"
-
-#~ msgid "Operation"
-#~ msgstr "सञ्चालन"
 
 #~ msgid "%1 / %2"
 #~ msgstr "%1 / %2"
