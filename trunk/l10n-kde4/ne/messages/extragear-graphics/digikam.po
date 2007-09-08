@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-07 05:37+0200\n"
+"POT-Creation-Date: 2007-09-08 05:36+0200\n"
 "PO-Revision-Date: 2007-04-29 12:10+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -75,11 +75,11 @@ msgstr ""
 "<p><b>१००</b>: उच्च गुणस्तर (सङ्कुचन हुँदैन र ठूलो फाइल साइज)<p><b>द्रष्टव्य: तपाईँले यो "
 "सेटिङ प्रयोग गर्दा जेपीईजी २००० नोक्सान रहित छवि सङ्कुचन ढाँचा होइन ।</b>"
 
-#: libs/dimg/loaders/jpegsettings.cpp:77
+#: libs/dimg/loaders/jpegsettings.cpp:82
 msgid "JPEG quality:"
 msgstr "जेपीईजी गुणस्तर:"
 
-#: libs/dimg/loaders/jpegsettings.cpp:79
+#: libs/dimg/loaders/jpegsettings.cpp:84
 msgid ""
 "<p>The quality value for JPEG images:<p><b>1</b>: low quality (high "
 "compression and small file size)<p><b>50</b>: medium quality<p><b>75</b>: "
@@ -91,13 +91,54 @@ msgstr ""
 "<p><b>१००</b>: उच्च गुणस्तर (सङ्कुचन हुँदैन र ठूलो फाइल साइज)<p><b>द्रष्टव्य: जेपीईजीले "
 "नोक्सान हुँने सङ्कुचन छवि एल्गोरिदम प्रयोग गर्दछ ।</b>"
 
-#: libs/dimg/loaders/jpegsettings.cpp:88
+#: libs/dimg/loaders/jpegsettings.cpp:93
 msgid ""
 "<qt><font size=-1 color=\"red\"><i>Warning: <a href='http://en.wikipedia.org/"
 "wiki/JPEG'>JPEG</a> is a<br>lossy compression<br>image format!</p></i></qt>"
 msgstr ""
 "<qt><font size=-1 color=\"red\"><i>चेतावनी: <a href='http://en.wikipedia.org/"
 "wiki/JPEG'>जेपीईजी</a> नोक्सान हुँने<br>छवि ढाँचा<br> हो!</p></i></qt>"
+
+#: libs/dimg/loaders/jpegsettings.cpp:104
+msgid "Chroma subsampling:"
+msgstr ""
+
+#: libs/dimg/loaders/jpegsettings.cpp:107
+#: libs/imageproperties/imagepropertiestab.cpp:434
+#: libs/imageproperties/imagedescedittab.cpp:869 digikam/tagfilterview.cpp:826
+#: digikam/ratingpopupmenu.cpp:134
+#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:212
+#: imageplugins/inserttext/imageeffect_inserttext.cpp:170
+#: imageplugins/restoration/imageeffect_restoration.cpp:109
+#: imageplugins/freerotation/imageeffect_freerotation.cpp:135
+#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:111
+#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:202
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:175
+msgid "None"
+msgstr "कुनै होइन"
+
+#: libs/dimg/loaders/jpegsettings.cpp:108
+#, fuzzy
+#| msgid "Median:"
+msgid "Medium"
+msgstr "मेडियन:"
+
+#: libs/dimg/loaders/jpegsettings.cpp:109
+#, fuzzy
+#| msgid "Height:"
+msgid "High"
+msgstr "उचाइ:"
+
+#: libs/dimg/loaders/jpegsettings.cpp:110
+msgid ""
+"<p>The level of chroma subsampling for JPEG images:<p><b>None</b>: use 4:4:4 "
+"ratio. It does not have any chroma subsampling at all. This preserves "
+"borders and contrasting colors, but compression is less<p><b>Medium</b>: use "
+"4:2:2 ratio. Medium compression; reduces the bandwidth for the picture by "
+"one-third with little to no visual difference<p><b>High</b>: use 4:1:1 "
+"ratio. Important compression; suits images with weak borders but tends to "
+"denature colors<p><b>Note: JPEG use a lossy compression image algorithm.</b>"
+msgstr ""
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:92
 msgid "Comments/Tags"
@@ -240,28 +281,15 @@ msgid "<nobr><b>White balance</b></nobr>:"
 msgstr "<nobr><b>सेतो सन्तुलन</b></nobr>:"
 
 #: libs/imageproperties/imagepropertiestab.cpp:402
-#: libs/imageproperties/cameraitempropertiestab.cpp:465
+#: libs/imageproperties/cameraitempropertiestab.cpp:467
 msgid "<i>unavailable</i>"
 msgstr "<i>उपलब्ध छैन</i>"
 
 #: libs/imageproperties/imagepropertiestab.cpp:433
-#: libs/imageproperties/cameraitempropertiestab.cpp:404
+#: libs/imageproperties/cameraitempropertiestab.cpp:406
 #: libs/thumbbar/thumbbar.cpp:941 digikam/albumfiletip.cpp:375
 msgid "RAW Image"
 msgstr "RAW छवि"
-
-#: libs/imageproperties/imagepropertiestab.cpp:434
-#: libs/imageproperties/imagedescedittab.cpp:869 digikam/tagfilterview.cpp:826
-#: digikam/ratingpopupmenu.cpp:134
-#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:212
-#: imageplugins/inserttext/imageeffect_inserttext.cpp:170
-#: imageplugins/restoration/imageeffect_restoration.cpp:109
-#: imageplugins/freerotation/imageeffect_freerotation.cpp:135
-#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:111
-#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:202
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:175
-msgid "None"
-msgstr "कुनै होइन"
 
 #: libs/imageproperties/imagepropertiestab.cpp:437
 msgid "Uncalibrated"
@@ -289,7 +317,7 @@ msgid "Unknown"
 msgstr "अज्ञात"
 
 #: libs/imageproperties/imagepropertiestab.cpp:507
-#: libs/imageproperties/cameraitempropertiestab.cpp:445
+#: libs/imageproperties/cameraitempropertiestab.cpp:447
 #: libs/thumbbar/thumbbar.cpp:978 digikam/albumiconitem.cpp:322
 #: digikam/albumfiletip.cpp:412 showfoto/showfoto.cpp:742
 #: utilities/imageeditor/editor/imagewindow.cpp:611
@@ -303,14 +331,14 @@ msgid "%1 bpp"
 msgstr "%1 bpp"
 
 #: libs/imageproperties/imagepropertiestab.cpp:585
-#: libs/imageproperties/cameraitempropertiestab.cpp:536
+#: libs/imageproperties/cameraitempropertiestab.cpp:538
 #: libs/thumbbar/thumbbar.cpp:1028 digikam/albumfiletip.cpp:463
 #, qt-format
 msgid "%1 (35mm: %2)"
 msgstr "%1 (35mm: %2)"
 
 #: libs/imageproperties/imagepropertiestab.cpp:590
-#: libs/imageproperties/cameraitempropertiestab.cpp:542
+#: libs/imageproperties/cameraitempropertiestab.cpp:544
 #: libs/thumbbar/thumbbar.cpp:1040 digikam/albumfiletip.cpp:472
 #: utilities/slideshow/slideshow.cpp:370
 #, qt-format
@@ -347,7 +375,7 @@ msgstr "<i>अज्ञात</i>"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:378
 #: libs/imageproperties/cameraitempropertiestab.cpp:387
-#: libs/imageproperties/cameraitempropertiestab.cpp:456
+#: libs/imageproperties/cameraitempropertiestab.cpp:458
 #: libs/imageproperties/imagepropertiescolorstab.cpp:791
 #, fuzzy
 #| msgid "None"
@@ -356,20 +384,20 @@ msgstr "कुनै होइन"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:380
 #: libs/imageproperties/cameraitempropertiestab.cpp:389
-#: libs/imageproperties/cameraitempropertiestab.cpp:458
+#: libs/imageproperties/cameraitempropertiestab.cpp:460
 #: libs/imageproperties/imagepropertiescolorstab.cpp:791
 #, fuzzy
 #| msgid "yes"
 msgid "Yes"
 msgstr "हो"
 
-#: libs/imageproperties/cameraitempropertiestab.cpp:397
+#: libs/imageproperties/cameraitempropertiestab.cpp:399
 #: libs/thumbbar/thumbbar.cpp:929 digikam/albumfiletip.cpp:364
 #, qt-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: libs/imageproperties/cameraitempropertiestab.cpp:451
+#: libs/imageproperties/cameraitempropertiestab.cpp:453
 msgid "<i>unchanged</i>"
 msgstr "<i>अपरिवर्तित</i>"
 
@@ -595,7 +623,7 @@ msgid "Deselect"
 msgstr "चयन हटाउनुहोस्"
 
 #: libs/imageproperties/imagedescedittab.cpp:864 digikam/tagfilterview.cpp:821
-#: digikam/digikamapp.cpp:758 utilities/cameragui/cameraui.cpp:324
+#: digikam/digikamapp.cpp:766 utilities/cameragui/cameraui.cpp:324
 msgid "Invert Selection"
 msgstr "चयन उल्टाउनुहोस्"
 
@@ -645,9 +673,9 @@ msgstr "'%1' ट्याग मेट्नुहुन्छ ?"
 #: libs/imageproperties/imagedescedittab.cpp:1110
 #: digikam/searchfolderview.cpp:269 digikam/tagfolderview.cpp:601
 #: digikam/tagfolderview.cpp:616 digikam/tagfilterview.cpp:1127
-#: digikam/tagfilterview.cpp:1141 digikam/digikamapp.cpp:641
-#: utilities/cameragui/cameraui.cpp:1478 utilities/cameragui/cameraui.cpp:1545
-#: utilities/cameragui/cameraiconview.cpp:459
+#: digikam/tagfilterview.cpp:1141 digikam/digikamapp.cpp:649
+#: utilities/cameragui/cameraui.cpp:1485 utilities/cameragui/cameraui.cpp:1552
+#: utilities/cameragui/cameraiconview.cpp:467
 #, fuzzy
 #| msgid "D&elete"
 msgid "Delete"
@@ -680,7 +708,7 @@ msgstr "मेटाडेटा"
 
 #: libs/imageproperties/talbumlistview.cpp:299 digikam/albumfolderview.cpp:898
 #: digikam/albumfolderview.cpp:1019 digikam/albumfolderview.cpp:1126
-#: digikam/tagfolderview.cpp:708 digikam/albumiconview.cpp:1202
+#: digikam/tagfolderview.cpp:708 digikam/albumiconview.cpp:1206
 #: digikam/tagfilterview.cpp:461
 msgid "&Move Here"
 msgstr "यहाँ सार्नुहोस्"
@@ -691,9 +719,9 @@ msgstr "यहाँ सार्नुहोस्"
 #: digikam/albumfolderview.cpp:988 digikam/albumfolderview.cpp:1025
 #: digikam/albumfolderview.cpp:1077 digikam/albumfolderview.cpp:1129
 #: digikam/tagfolderview.cpp:710 digikam/tagfolderview.cpp:784
-#: digikam/tagfolderview.cpp:815 digikam/albumiconview.cpp:1205
-#: digikam/albumiconview.cpp:1389 digikam/tagfilterview.cpp:463
-#: digikam/tagfilterview.cpp:526 utilities/cameragui/cameraiconview.cpp:620
+#: digikam/tagfolderview.cpp:815 digikam/albumiconview.cpp:1209
+#: digikam/albumiconview.cpp:1393 digikam/tagfilterview.cpp:463
+#: digikam/tagfilterview.cpp:526 utilities/cameragui/cameraiconview.cpp:628
 msgid "C&ancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -1202,10 +1230,10 @@ msgid ""
 msgstr ""
 
 #: libs/greycstoration/greycstorationwidget.cpp:131
-#: digikam/digikamapp.cpp:1805 showfoto/setup/setup.cpp:96
+#: digikam/digikamapp.cpp:1815 showfoto/setup/setup.cpp:96
 #: utilities/imageeditor/editor/editorwindow.cpp:597
-#: utilities/lighttable/lighttablewindow.cpp:1165
-#: utilities/cameragui/cameraui.cpp:1776
+#: utilities/lighttable/lighttablewindow.cpp:1174
+#: utilities/cameragui/cameraui.cpp:1788
 msgid "General"
 msgstr "साधारण"
 
@@ -1387,7 +1415,7 @@ msgstr "थम्बनेल"
 
 #: libs/themeengine/themeengine.cpp:91 libs/themeengine/themeengine.cpp:93
 #: libs/themeengine/themeengine.cpp:202 digikam/albumsettings.cpp:280
-#: digikam/digikamapp.cpp:2016
+#: digikam/digikamapp.cpp:2026
 msgid "Default"
 msgstr ""
 
@@ -1611,8 +1639,8 @@ msgid "The ICC profile product description"
 msgstr "ICC प्रोफाइल वस्तु वर्णन"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:131
-#: utilities/cameragui/cameraui.cpp:293 utilities/cameragui/cameraui.cpp:1462
-#: utilities/cameragui/cameraui.cpp:1529
+#: utilities/cameragui/cameraui.cpp:293 utilities/cameragui/cameraui.cpp:1469
+#: utilities/cameragui/cameraui.cpp:1536
 #, fuzzy
 #| msgid "Image Information"
 msgid "Information"
@@ -1970,8 +1998,8 @@ msgstr ""
 "।<p>क्लिप फोकस परिवर्तन गर्न रातो आयातकारमा माउस कर्सर क्लिक गर्नुहोस् र तान्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:360
-#: digikam/digikamapp.cpp:2097 utilities/lighttable/lighttablewindow.cpp:1208
-#: utilities/lighttable/lighttablewindow.cpp:1231
+#: digikam/digikamapp.cpp:2107 utilities/lighttable/lighttablewindow.cpp:1217
+#: utilities/lighttable/lighttablewindow.cpp:1240
 #, fuzzy, qt-format
 #| msgid "Zoom: "
 msgid "zoom: %1%"
@@ -2319,7 +2347,7 @@ msgstr ""
 #: digikam/albumfolderview.cpp:897 digikam/albumfolderview.cpp:985
 #: digikam/albumfolderview.cpp:1018 digikam/albumfolderview.cpp:1071
 #: digikam/albumfolderview.cpp:1125 digikam/albummanager.cpp:327
-#: digikam/albumiconview.cpp:1383 digikam/kipiinterface.cpp:498
+#: digikam/albumiconview.cpp:1387 digikam/kipiinterface.cpp:498
 #: digikam/album.cpp:344
 msgid "My Albums"
 msgstr "मेरो एल्बम"
@@ -2347,7 +2375,7 @@ msgid "New Album..."
 msgstr "नयाँ एल्बम..."
 
 #: digikam/albumfolderview.cpp:443 digikam/albumiconview.cpp:574
-#: digikam/digikamapp.cpp:632
+#: digikam/digikamapp.cpp:640
 msgid "Rename..."
 msgstr "पुन: नामकरण गर्नुहोस्..."
 
@@ -2382,17 +2410,17 @@ msgid "Set as Album Thumbnail"
 msgstr "एल्बम थम्बनेलको रूपमा सेट गर्नुहोस्"
 
 #: digikam/albumfolderview.cpp:1020 digikam/albumfolderview.cpp:1127
-#: digikam/albumiconview.cpp:1203
+#: digikam/albumiconview.cpp:1207
 msgid "&Copy Here"
 msgstr "यहाँ प्रतिलिपि बनाउनुहोस्"
 
-#: digikam/albumfolderview.cpp:1073 digikam/albumiconview.cpp:1385
+#: digikam/albumfolderview.cpp:1073 digikam/albumiconview.cpp:1389
 #, fuzzy
 #| msgid "&Upload into camera"
 msgid "Download from camera"
 msgstr "क्यामेरामा अपलोड गर्नुहोस्"
 
-#: digikam/albumfolderview.cpp:1075 digikam/albumiconview.cpp:1387
+#: digikam/albumfolderview.cpp:1075 digikam/albumiconview.cpp:1391
 msgid "Download && Delete from camera"
 msgstr ""
 
@@ -2743,9 +2771,9 @@ msgstr[1] ""
 "'%1' ट्यागमा %n सहायक ट्याग छ । यसलाई मेट्दा त्यसका सबै सहायक ट्यागहरू मेटिन्छ । तपाईँले "
 "जारी राख्न यकिन हुनुहुन्छ ?"
 
-#: digikam/tagfolderview.cpp:825 digikam/albumiconview.cpp:1275
-#: digikam/albumiconview.cpp:1285 digikam/albumiconview.cpp:1350
-#: digikam/albumiconview.cpp:1359 digikam/albumiconview.cpp:2003
+#: digikam/tagfolderview.cpp:825 digikam/albumiconview.cpp:1279
+#: digikam/albumiconview.cpp:1289 digikam/albumiconview.cpp:1354
+#: digikam/albumiconview.cpp:1363 digikam/albumiconview.cpp:2007
 #: digikam/tagfilterview.cpp:537
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
@@ -3265,6 +3293,7 @@ msgid "Edit..."
 msgstr "सम्पादन..."
 
 #: digikam/albumiconview.cpp:539 digikam/imagepreviewview.cpp:374
+#: digikam/digikamapp.cpp:632
 msgid "Add to Light Table"
 msgstr ""
 
@@ -3302,16 +3331,16 @@ msgstr "ट्याग हटाउनुहोस्"
 msgid "Assign Rating"
 msgstr "दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:818
+#: digikam/albumiconview.cpp:819
 #, qt-format
 msgid "Rename Item (%1)"
 msgstr "वस्तु (%1) पुन: नामकरण गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:819
+#: digikam/albumiconview.cpp:820
 msgid "Enter new name (without extension):"
 msgstr "नयाँ नाम (विस्तार बिना) प्रविष्ट गर्नुहोस्:"
 
-#: digikam/albumiconview.cpp:1014
+#: digikam/albumiconview.cpp:1015
 #: utilities/imageeditor/editor/imagewindow.cpp:1150
 #: utilities/imageeditor/editor/imagewindow.cpp:1177
 #: utilities/imageeditor/editor/imagewindow.cpp:1209
@@ -3319,61 +3348,61 @@ msgstr "नयाँ नाम (विस्तार बिना) प्रव
 msgid "Album \"%1\""
 msgstr "एल्बम \"%1\""
 
-#: digikam/albumiconview.cpp:1255
+#: digikam/albumiconview.cpp:1259
 #, qt-format
 msgid "Assign '%1' to &Selected Items"
 msgstr "चयन गरेको वस्तुमा '%1' मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1260
+#: digikam/albumiconview.cpp:1264
 #, fuzzy, qt-format
 #| msgid "Assign '%1' to &All Items"
 msgid "Assign '%1' to &This Item"
 msgstr "सबै वस्तुमा '%1' मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1263
+#: digikam/albumiconview.cpp:1267
 #, qt-format
 msgid "Assign '%1' to &All Items"
 msgstr "सबै वस्तुमा '%1' मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1266 digikam/albumiconview.cpp:1341
+#: digikam/albumiconview.cpp:1270 digikam/albumiconview.cpp:1345
 #, fuzzy
 #| msgid "C&ancel"
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1331
+#: digikam/albumiconview.cpp:1335
 msgid "Assign Tags to &Selected Items"
 msgstr "चयन गरेको वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1335
+#: digikam/albumiconview.cpp:1339
 #, fuzzy
 #| msgid "Assign Tags to &All Items"
 msgid "Assign Tags to &This Item"
 msgstr "सबै वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1338
+#: digikam/albumiconview.cpp:1342
 msgid "Assign Tags to &All Items"
 msgstr "सबै वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1603
+#: digikam/albumiconview.cpp:1607
 #, fuzzy
 #| msgid "Fix Exif Orientation tag on pictures. Please wait..."
 msgid "Revising Exif Orientation tags. Please wait..."
 msgstr "तस्विरमा Exif अभिमुखीकरण ट्याग स्थिर । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: digikam/albumiconview.cpp:1615
+#: digikam/albumiconview.cpp:1619
 #, fuzzy, qt-format
 #| msgid "Failed to correct Exif orientation for file %1."
 msgid "Failed to revise Exif orientation for file %1."
 msgstr "%1 फाइलका लागि Exif अभिमुखीकरण सुधार गर्न असफल"
 
-#: digikam/albumiconview.cpp:2013
+#: digikam/albumiconview.cpp:2017
 #, fuzzy
 #| msgid "Remove tag from pictures. Please wait..."
 msgid "Removing image tags. Please wait..."
 msgstr "तस्विरबाट ट्याग हटाउनुहोस् । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: digikam/albumiconview.cpp:2023
+#: digikam/albumiconview.cpp:2027
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
 msgid "Assigning image ratings. Please wait..."
@@ -3655,7 +3684,7 @@ msgstr "फोल्डरद्वारा"
 msgid "By Collection"
 msgstr "सङ्कलनद्वारा"
 
-#: digikam/digikamapp.cpp:535 digikam/digikamapp.cpp:682
+#: digikam/digikamapp.cpp:535 digikam/digikamapp.cpp:690
 msgid "By Date"
 msgstr "मितिद्वारा"
 
@@ -3718,101 +3747,109 @@ msgid "Place onto Light Table"
 msgstr ""
 
 #: digikam/digikamapp.cpp:626
-msgid "Insert the selected items into the light table thumbbar."
-msgstr ""
+#, fuzzy
+#| msgid "<p>Customize the background color to use in the image editor area."
+msgid "Put the selected items into the light table thumbbar."
+msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
 
 #: digikam/digikamapp.cpp:634
+#, fuzzy
+#| msgid "This option adds new items to the current Album."
+msgid "Add selected items to the light table thumbbar."
+msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
+
+#: digikam/digikamapp.cpp:642
 #, fuzzy
 #| msgid ""
 #| "This option allows you to rename the filename of the current selected item"
 msgid "Rename the filename of the currently selected item."
 msgstr "यो विकल्पले हालै चयन गरेको वस्तुको फाइलनाम पुन: नामकरण गर्न अनुमति दिन्छ ।"
 
-#: digikam/digikamapp.cpp:649
+#: digikam/digikamapp.cpp:657
 #, fuzzy
 #| msgid "Delete Permanently"
 msgid "Delete permanently"
 msgstr "सदाका लागि मेट्नुहोस्"
 
-#: digikam/digikamapp.cpp:659
+#: digikam/digikamapp.cpp:667
 #, fuzzy
 #| msgid "Delete Permanently without Confirmation"
 msgid "Delete permanently without confirmation"
 msgstr "यकिन नगरिकन सदाका लागि मेट्नुहोस्"
 
-#: digikam/digikamapp.cpp:667
+#: digikam/digikamapp.cpp:675
 #, fuzzy
 #| msgid "Move to Trash without Confirmation"
 msgid "Move to trash without confirmation"
 msgstr "यकिन नगरिकन रद्दीटोकरीमा सार्नुहोस्"
 
-#: digikam/digikamapp.cpp:674
+#: digikam/digikamapp.cpp:682
 msgid "&Sort Images"
 msgstr "छवि क्रमबद्ध गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:680
+#: digikam/digikamapp.cpp:688
 msgid "By Name"
 msgstr "नामद्वारा"
 
-#: digikam/digikamapp.cpp:681
+#: digikam/digikamapp.cpp:689
 msgid "By Path"
 msgstr "मार्गद्वारा"
 
-#: digikam/digikamapp.cpp:683
+#: digikam/digikamapp.cpp:691
 msgid "By File Size"
 msgstr "फाइल साइजद्वारा"
 
-#: digikam/digikamapp.cpp:684
+#: digikam/digikamapp.cpp:692
 msgid "By Rating"
 msgstr "दरद्वारा"
 
-#: digikam/digikamapp.cpp:694
+#: digikam/digikamapp.cpp:702
 #, fuzzy
 #| msgid "Correct Exif Orientation Tag"
 msgid "Adjust Exif orientation tag"
 msgstr "Exif अभिमुखीकरण ट्याग सुधार गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:699
+#: digikam/digikamapp.cpp:707
 msgid "Normal"
 msgstr "सामान्य"
 
-#: digikam/digikamapp.cpp:701
+#: digikam/digikamapp.cpp:709
 msgid "Flipped Horizontally"
 msgstr "तेर्सो तरिकाले घुमाइएको"
 
-#: digikam/digikamapp.cpp:703
+#: digikam/digikamapp.cpp:711
 msgid "Rotated upside down"
 msgstr ""
 
-#: digikam/digikamapp.cpp:705
+#: digikam/digikamapp.cpp:713
 msgid "Flipped Vertically"
 msgstr "ठाडो तरिकाले घुमाइएको"
 
-#: digikam/digikamapp.cpp:707
+#: digikam/digikamapp.cpp:715
 #, fuzzy
 #| msgid "Rotated 90 Degrees / Horiz. Flipped"
 msgid "Rotated right / Horiz. Flipped"
 msgstr "९० डिग्रीमा घुमाइएको / तेर्सो तरिकाले घुमाइएको"
 
-#: digikam/digikamapp.cpp:709
+#: digikam/digikamapp.cpp:717
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotated right"
 msgstr "घुमाउनुहोस्"
 
-#: digikam/digikamapp.cpp:711
+#: digikam/digikamapp.cpp:719
 #, fuzzy
 #| msgid "Rotated 90 Degrees / Vert. Flipped"
 msgid "Rotated right / Vert. Flipped"
 msgstr "९० डिग्रिमा घुमाइएको / ठाडो तरिकाले घुमाइएको"
 
-#: digikam/digikamapp.cpp:713
+#: digikam/digikamapp.cpp:721
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotated left"
 msgstr "घुमाउनुहोस्"
 
-#: digikam/digikamapp.cpp:744
+#: digikam/digikamapp.cpp:752
 #: utilities/imageeditor/editor/editorwindow.cpp:359
 #: utilities/cameragui/cameraui.cpp:310
 #, fuzzy
@@ -3820,13 +3857,13 @@ msgstr "घुमाउनुहोस्"
 msgid "Select All"
 msgstr "सबै चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:751
+#: digikam/digikamapp.cpp:759
 #: utilities/imageeditor/editor/editorwindow.cpp:364
 #: utilities/cameragui/cameraui.cpp:317
 msgid "Select None"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
-#: digikam/digikamapp.cpp:781
+#: digikam/digikamapp.cpp:789
 #: utilities/imageeditor/editor/editorwindow.cpp:379
 #: utilities/lighttable/lighttablewindow.cpp:418
 #, fuzzy
@@ -3834,186 +3871,186 @@ msgstr "कुनै पनि चयन नगर्नुहोस्"
 msgid "Zoom to 1:1"
 msgstr "जुम घटाउनुहोस्"
 
-#: digikam/digikamapp.cpp:788
+#: digikam/digikamapp.cpp:796
 #: utilities/imageeditor/editor/editorwindow.cpp:384
 #: utilities/lighttable/lighttablepreview.cpp:386
 #: utilities/lighttable/lighttablewindow.cpp:423
 msgid "Fit to &Window"
 msgstr ""
 
-#: digikam/digikamapp.cpp:800 showfoto/setup/setup.cpp:121
+#: digikam/digikamapp.cpp:808 showfoto/setup/setup.cpp:121
 #: utilities/setup/setup.cpp:204
 #: utilities/imageeditor/editor/editorwindow.cpp:428
 #: utilities/lighttable/lighttablewindow.cpp:431
 msgid "Slide Show"
 msgstr "स्लाइड प्रर्दशन"
 
-#: digikam/digikamapp.cpp:804
+#: digikam/digikamapp.cpp:812
 msgid "All"
 msgstr "सबै"
 
-#: digikam/digikamapp.cpp:810
+#: digikam/digikamapp.cpp:818
 msgid "Selection"
 msgstr "चयन"
 
-#: digikam/digikamapp.cpp:816
+#: digikam/digikamapp.cpp:824
 #, fuzzy
 #| msgid "Date-based sub-albums"
 msgid "With all sub-albums"
 msgstr "मितिमा आधारित सहायक एल्बम"
 
-#: digikam/digikamapp.cpp:829
+#: digikam/digikamapp.cpp:837
 msgid "Kipi Plugins Handbook"
 msgstr "किपि प्लगइन ह्यान्डबुक"
 
-#: digikam/digikamapp.cpp:840
+#: digikam/digikamapp.cpp:848
 msgid "Make a donation..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:850 utilities/imageeditor/editor/imagewindow.cpp:321
+#: digikam/digikamapp.cpp:858 utilities/imageeditor/editor/imagewindow.cpp:321
 #: utilities/lighttable/lighttablewindow.cpp:456
 msgid "Assign Rating \"No Star\""
 msgstr "\"तारा नभएको\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:855 utilities/imageeditor/editor/imagewindow.cpp:326
+#: digikam/digikamapp.cpp:863 utilities/imageeditor/editor/imagewindow.cpp:326
 #: utilities/lighttable/lighttablewindow.cpp:461
 msgid "Assign Rating \"One Star\""
 msgstr "\"एउटा तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:860 utilities/imageeditor/editor/imagewindow.cpp:331
+#: digikam/digikamapp.cpp:868 utilities/imageeditor/editor/imagewindow.cpp:331
 #: utilities/lighttable/lighttablewindow.cpp:466
 msgid "Assign Rating \"Two Stars\""
 msgstr "\"दुइ तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:865 utilities/imageeditor/editor/imagewindow.cpp:336
+#: digikam/digikamapp.cpp:873 utilities/imageeditor/editor/imagewindow.cpp:336
 #: utilities/lighttable/lighttablewindow.cpp:471
 msgid "Assign Rating \"Three Stars\""
 msgstr "\"तिन तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:870 utilities/imageeditor/editor/imagewindow.cpp:341
+#: digikam/digikamapp.cpp:878 utilities/imageeditor/editor/imagewindow.cpp:341
 #: utilities/lighttable/lighttablewindow.cpp:476
 msgid "Assign Rating \"Four Stars\""
 msgstr "\"चार तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:875 utilities/imageeditor/editor/imagewindow.cpp:346
+#: digikam/digikamapp.cpp:883 utilities/imageeditor/editor/imagewindow.cpp:346
 #: utilities/lighttable/lighttablewindow.cpp:481
 msgid "Assign Rating \"Five Stars\""
 msgstr "\"पाँच तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:884
+#: digikam/digikamapp.cpp:892
 msgid "Quick Search..."
 msgstr "छिटो खोजी..."
 
-#: digikam/digikamapp.cpp:891
+#: digikam/digikamapp.cpp:899
 msgid "Advanced Search..."
 msgstr "उन्नत खोजी..."
 
-#: digikam/digikamapp.cpp:896 utilities/setup/setup.cpp:174
+#: digikam/digikamapp.cpp:904 utilities/setup/setup.cpp:174
 #: utilities/lighttable/lighttablewindow.cpp:102
-#: utilities/lighttable/lighttablewindow.cpp:964
+#: utilities/lighttable/lighttablewindow.cpp:973
 #, fuzzy
 #| msgid "Lightness"
 msgid "Light Table"
 msgstr "प्रकाश"
 
-#: digikam/digikamapp.cpp:903
+#: digikam/digikamapp.cpp:911
 msgid "Scan for New Images"
 msgstr "नयाँ छविका लागि स्क्यान गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:909
+#: digikam/digikamapp.cpp:917
 msgid "Rebuild all Thumbnails..."
 msgstr "सबै थम्बनेल पुन: निर्माण गर्नुहोस्..."
 
-#: digikam/digikamapp.cpp:916
+#: digikam/digikamapp.cpp:924
 msgid "Update Metadata Database..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:931
+#: digikam/digikamapp.cpp:939
 msgid "Loading cameras"
 msgstr "क्यामेरा लोडिङ"
 
-#: digikam/digikamapp.cpp:1157
+#: digikam/digikamapp.cpp:1167
 msgid "No item selected"
 msgstr "वस्तु चयन गरेको छैन"
 
-#: digikam/digikamapp.cpp:1173
+#: digikam/digikamapp.cpp:1183
 #, fuzzy, qt-format
 #| msgid " (%2 of %3)"
 msgid " (%1 of %2)"
 msgstr " (%3 को %2)"
 
-#: digikam/digikamapp.cpp:1179
+#: digikam/digikamapp.cpp:1189
 #, fuzzy, qt-format
 #| msgid "%1 items selected"
 msgid "%1/%2 items selected"
 msgstr "%1 वस्तु चयन गरेको छ"
 
-#: digikam/digikamapp.cpp:1229
+#: digikam/digikamapp.cpp:1239
 #, fuzzy
 #| msgid "Cameras"
 msgid "Digital Cameras"
 msgstr "क्यामेरा"
 
-#: digikam/digikamapp.cpp:1232
+#: digikam/digikamapp.cpp:1242
 msgid "USB Storage Devices"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1235
+#: digikam/digikamapp.cpp:1245
 #, fuzzy
 #| msgid "Camera Folders"
 msgid "Card Readers"
 msgstr "क्यामेरा फोल्डर"
 
-#: digikam/digikamapp.cpp:1238
+#: digikam/digikamapp.cpp:1248
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Cameras Added Manually"
 msgstr "क्यामेरा म्यानुअल"
 
-#: digikam/digikamapp.cpp:1240
+#: digikam/digikamapp.cpp:1250
 msgid "Add Camera..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1306 digikam/digikamapp.cpp:1463
+#: digikam/digikamapp.cpp:1316 digikam/digikamapp.cpp:1473
 #, qt-format
 msgid "Images found in %1"
 msgstr "%1 मा छवि फेला पर्यो"
 
-#: digikam/digikamapp.cpp:1487
+#: digikam/digikamapp.cpp:1497
 msgid "Cannot access the storage device.\n"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1592
+#: digikam/digikamapp.cpp:1602
 msgid "CompactFlash Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1595
+#: digikam/digikamapp.cpp:1605
 msgid "Memory Stick Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1598
+#: digikam/digikamapp.cpp:1608
 msgid "SmartMedia Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1601
+#: digikam/digikamapp.cpp:1611
 msgid "SD / MMC Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1604
+#: digikam/digikamapp.cpp:1614
 msgid "xD-Picture Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1902
+#: digikam/digikamapp.cpp:1912
 #, fuzzy
 #| msgid "Kipi Plugins"
 msgid "Loading Kipi Plugins"
 msgstr "किपि प्लगइन"
 
-#: digikam/digikamapp.cpp:2007
+#: digikam/digikamapp.cpp:2017
 msgid "Loading themes"
 msgstr "विषयवस्तु लोडिङ"
 
-#: digikam/digikamapp.cpp:2039
+#: digikam/digikamapp.cpp:2049
 #, fuzzy
 #| msgid ""
 #| "Rebuild all albums items thumbnails can take a while.\n"
@@ -4025,7 +4062,7 @@ msgstr ""
 "एल्बमको सबै वस्तु थम्बनेल पुन: निर्माण हुँदा केहि समय लिन सक्दछ ।\n"
 "तपाईँले जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2060
+#: digikam/digikamapp.cpp:2070
 #, fuzzy
 #| msgid ""
 #| "Sync all pictures metadata from all albums with digiKam database can take "
@@ -4038,13 +4075,13 @@ msgstr ""
 "डिजिक्याम डाटाबेससँग सबै एल्बमबाट सबै तस्विर मेटाडाटा सिन्क गर्दा केहि समय लिन सक्दछ ।\n"
 "तपाईँ जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2091 utilities/cameragui/cameraui.cpp:889
+#: digikam/digikamapp.cpp:2101 utilities/cameragui/cameraui.cpp:898
 #, fuzzy, qt-format
 #| msgid "Size:"
 msgid "Size: %1"
 msgstr "साइज:"
 
-#: digikam/digikamapp.cpp:2125
+#: digikam/digikamapp.cpp:2135
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
@@ -4185,7 +4222,7 @@ msgstr "मिति"
 msgid "Searches"
 msgstr "खोजी"
 
-#: digikam/digikamview.cpp:1195
+#: digikam/digikamview.cpp:1214
 #, fuzzy, qt-format
 #| msgid "Prepare data for slideshow from %1 pictures. Please wait..."
 msgid "Preparing slideshow from %1 pictures. Please wait..."
@@ -4587,8 +4624,8 @@ msgstr ""
 "तपाईँ यकिन हुनुहुन्छ ?"
 
 #: showfoto/showfoto.cpp:1109
-#: utilities/imageeditor/editor/editorwindow.cpp:1228
-#: utilities/cameragui/cameraui.cpp:1477 utilities/cameragui/cameraui.cpp:1544
+#: utilities/imageeditor/editor/editorwindow.cpp:1230
+#: utilities/cameragui/cameraui.cpp:1484 utilities/cameragui/cameraui.cpp:1551
 #, fuzzy
 #| msgid "Rating"
 msgid "Warning"
@@ -4682,7 +4719,7 @@ msgid "&Image"
 msgstr "छवि"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 55
+#. i18n: file ./digikam/digikamui.rc line 56
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 27
 #. i18n: tag text
@@ -4696,7 +4733,7 @@ msgid "&Edit"
 msgstr "सम्पादन..."
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 62
+#. i18n: file ./digikam/digikamui.rc line 63
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 37
 #. i18n: tag text
@@ -4706,14 +4743,14 @@ msgstr "सम्पादन..."
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 41
 #: rc.cpp:21 rc.cpp:45 rc.cpp:252 rc.cpp:282 rc.cpp:303
-#: utilities/cameragui/cameraiconview.cpp:453
+#: utilities/cameragui/cameraiconview.cpp:461
 #, fuzzy
 #| msgid "View..."
 msgid "&View"
 msgstr "दृश्य..."
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 75
+#. i18n: file ./digikam/digikamui.rc line 76
 #: rc.cpp:24
 #, fuzzy
 #| msgid "&Colors"
@@ -4721,7 +4758,7 @@ msgid "&Tools"
 msgstr "रङ"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 88
+#. i18n: file ./digikam/digikamui.rc line 89
 #: rc.cpp:27
 #, fuzzy
 #| msgid "&Batch Processes"
@@ -4729,7 +4766,7 @@ msgid "&Batch Process"
 msgstr "ब्याच प्रक्रिया"
 
 #. i18n: tag Text
-#. i18n: file ./digikam/digikamui.rc line 95
+#. i18n: file ./digikam/digikamui.rc line 96
 #. i18n: tag Text
 #. i18n: file ./showfoto/showfotoui.rc line 84
 #. i18n: tag Text
@@ -4745,7 +4782,7 @@ msgid "&Settings"
 msgstr "सेटिङ"
 
 #. i18n: tag Text
-#. i18n: file ./digikam/digikamui.rc line 106
+#. i18n: file ./digikam/digikamui.rc line 107
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 78
 #. i18n: tag text
@@ -4761,7 +4798,7 @@ msgid "&Help"
 msgstr "मेट्नुहोस्"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 118
+#. i18n: file ./digikam/digikamui.rc line 119
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 96
 #. i18n: tag text
@@ -11792,7 +11829,7 @@ msgid "Exit Fullscreen mode"
 msgstr "पूरापर्दा मोडबाट निस्कनुहोस्"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:520
-#: utilities/imageeditor/editor/editorwindow.cpp:1152
+#: utilities/imageeditor/editor/editorwindow.cpp:1154
 #, fuzzy
 #| msgid "Selection"
 msgid "No selection"
@@ -11816,7 +11853,7 @@ msgstr "%1 मुद्रण गर्नुहोस्"
 msgid "Failed to print file: '%1'"
 msgstr "फाइल मुद्रण गर्न असफल: '%1'"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1053
+#: utilities/imageeditor/editor/editorwindow.cpp:1055
 #, qt-format
 msgid ""
 "The image '%1' has been modified.\n"
@@ -11825,20 +11862,20 @@ msgstr ""
 "'%1' छवि परिमार्जन गरिएको छ ।\n"
 "तपाईँ यसलाई बचत गर्न चाहनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1110
+#: utilities/imageeditor/editor/editorwindow.cpp:1112
 msgid "Please wait while the image is being saved..."
 msgstr "कृपया छवि बचत हुँदै गर्दा प्रतिक्षा गर्नुहोस्..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1181
+#: utilities/imageeditor/editor/editorwindow.cpp:1183
 msgid "Loading: "
 msgstr "लोड हुँदैछ: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1199
+#: utilities/imageeditor/editor/editorwindow.cpp:1201
 #, qt-format
 msgid "Failed to load image \"%1\""
 msgstr "\"%1\" छवि लोड गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1227
+#: utilities/imageeditor/editor/editorwindow.cpp:1229
 #, fuzzy, qt-format
 #| msgid ""
 #| "About to delete file \"%1\"\n"
@@ -11850,16 +11887,16 @@ msgstr ""
 "\"%1\" फाइल मेट्ने बारेमा\n"
 "तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1228
+#: utilities/imageeditor/editor/editorwindow.cpp:1230
 msgid "Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1243
+#: utilities/imageeditor/editor/editorwindow.cpp:1245
 msgid "Saving: "
 msgstr "बचत हुँदैछ: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1257
-#: utilities/imageeditor/editor/editorwindow.cpp:1298
+#: utilities/imageeditor/editor/editorwindow.cpp:1259
+#: utilities/imageeditor/editor/editorwindow.cpp:1300
 #, qt-format
 msgid ""
 "Failed to save file\n"
@@ -11872,16 +11909,16 @@ msgstr ""
 "लाई\n"
 "\"%2\" मा बचत गर्न असफल ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1431
+#: utilities/imageeditor/editor/editorwindow.cpp:1433
 msgid "New Image File Name"
 msgstr "नयाँ छवि फाइलनाम"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1483
+#: utilities/imageeditor/editor/editorwindow.cpp:1485
 #, qt-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "लक्ष्य छवि फाइल ढाँचा \"%1\" समर्थन गर्दैन ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1492
+#: utilities/imageeditor/editor/editorwindow.cpp:1494
 #, qt-format
 msgid ""
 "Failed to save file\n"
@@ -11892,18 +11929,18 @@ msgstr ""
 "\"%1\" लाई\n"
 "\"%2\"मा बचत गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1519
+#: utilities/imageeditor/editor/editorwindow.cpp:1521
 #, qt-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "\"%1\" नामको फाइल पहिल्यै अवस्थित छ । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1523
-#: utilities/imageeditor/editor/editorwindow.cpp:1572
+#: utilities/imageeditor/editor/editorwindow.cpp:1525
+#: utilities/imageeditor/editor/editorwindow.cpp:1574
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1567
+#: utilities/imageeditor/editor/editorwindow.cpp:1569
 #, qt-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -11911,41 +11948,41 @@ msgid ""
 msgstr ""
 "\"%1\" नामको फाइलमा तपाईँलाई लेख्ने अनुमति छैन । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1601
+#: utilities/imageeditor/editor/editorwindow.cpp:1603
 msgid "Failed to overwrite original file"
 msgstr "मौलिक फाइल अधिलेखन गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1602
+#: utilities/imageeditor/editor/editorwindow.cpp:1604
 msgid "Error Saving File"
 msgstr "फाइल बचत गर्दा त्रुटि"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1650
+#: utilities/imageeditor/editor/editorwindow.cpp:1652
 msgid "Color Managed View is enabled"
 msgstr "रङ सन्तुलन दृश्य सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1652
+#: utilities/imageeditor/editor/editorwindow.cpp:1654
 msgid "Color Managed View is disabled"
 msgstr "रङ सन्तुलन दृश्य अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1656
+#: utilities/imageeditor/editor/editorwindow.cpp:1658
 msgid ""
 "Color Management is not configured, so the Color Managed View is not "
 "available"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1678
+#: utilities/imageeditor/editor/editorwindow.cpp:1680
 msgid "Under-Exposure indicator is enabled"
 msgstr "न्यून-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1679
+#: utilities/imageeditor/editor/editorwindow.cpp:1681
 msgid "Under-Exposure indicator is disabled"
 msgstr "न्यून-प्रर्दशन सूचक अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1699
+#: utilities/imageeditor/editor/editorwindow.cpp:1701
 msgid "Over-Exposure indicator is enabled"
 msgstr "अधिक-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1700
+#: utilities/imageeditor/editor/editorwindow.cpp:1702
 msgid "Over-Exposure indicator is disabled"
 msgstr "अधिक-प्रर्दशन सूचक अक्षम गरियो"
 
@@ -12060,20 +12097,20 @@ msgstr ""
 msgid "Navigate by Pair"
 msgstr ""
 
-#: utilities/lighttable/lighttablewindow.cpp:566
+#: utilities/lighttable/lighttablewindow.cpp:573
 msgid "No item on Light Table"
 msgstr ""
 
-#: utilities/lighttable/lighttablewindow.cpp:570
+#: utilities/lighttable/lighttablewindow.cpp:577
 msgid "1 item on Light Table"
 msgstr ""
 
-#: utilities/lighttable/lighttablewindow.cpp:574
+#: utilities/lighttable/lighttablewindow.cpp:581
 #, qt-format
 msgid "%1 items on Light Table"
 msgstr ""
 
-#: utilities/lighttable/lighttablewindow.cpp:1010
+#: utilities/lighttable/lighttablewindow.cpp:1019
 #, fuzzy
 #| msgid "Prepare slideshow. Please wait..."
 msgid "Preparing slideshow. Please wait..."
@@ -12117,7 +12154,7 @@ msgstr ""
 "USB/IEEE1394 बृहत भण्डारण क्यामेरा र फ्ल्यास डिस्क कार्ड रिडरका लागि <b>माउन्ट गरिएको "
 "क्यामेरा</b> ड्राइभर<br><br>"
 
-#: utilities/cameragui/umscamera.cpp:490 utilities/cameragui/gpcamera.cpp:1160
+#: utilities/cameragui/umscamera.cpp:490 utilities/cameragui/gpcamera.cpp:1161
 #, fuzzy, qt-format
 #| msgid "Title: %1<br>Model: %2<br>Port: %3<br>Path: %4<br>"
 msgid ""
@@ -12128,22 +12165,22 @@ msgstr "शीर्षक: %1<br>नमुना: %2<br>पोर्ट: %3<br>
 #: utilities/cameragui/umscamera.cpp:505 utilities/cameragui/umscamera.cpp:506
 #: utilities/cameragui/umscamera.cpp:507 utilities/cameragui/umscamera.cpp:508
 #: utilities/cameragui/umscamera.cpp:509 utilities/cameragui/umscamera.cpp:510
-#: utilities/cameragui/gpcamera.cpp:1175 utilities/cameragui/gpcamera.cpp:1176
-#: utilities/cameragui/gpcamera.cpp:1177 utilities/cameragui/gpcamera.cpp:1178
-#: utilities/cameragui/gpcamera.cpp:1179 utilities/cameragui/gpcamera.cpp:1180
+#: utilities/cameragui/gpcamera.cpp:1176 utilities/cameragui/gpcamera.cpp:1177
+#: utilities/cameragui/gpcamera.cpp:1178 utilities/cameragui/gpcamera.cpp:1179
+#: utilities/cameragui/gpcamera.cpp:1180 utilities/cameragui/gpcamera.cpp:1181
 msgid "yes"
 msgstr "हो"
 
 #: utilities/cameragui/umscamera.cpp:505 utilities/cameragui/umscamera.cpp:506
 #: utilities/cameragui/umscamera.cpp:507 utilities/cameragui/umscamera.cpp:508
 #: utilities/cameragui/umscamera.cpp:509 utilities/cameragui/umscamera.cpp:510
-#: utilities/cameragui/gpcamera.cpp:1175 utilities/cameragui/gpcamera.cpp:1176
-#: utilities/cameragui/gpcamera.cpp:1177 utilities/cameragui/gpcamera.cpp:1178
-#: utilities/cameragui/gpcamera.cpp:1179 utilities/cameragui/gpcamera.cpp:1180
+#: utilities/cameragui/gpcamera.cpp:1176 utilities/cameragui/gpcamera.cpp:1177
+#: utilities/cameragui/gpcamera.cpp:1178 utilities/cameragui/gpcamera.cpp:1179
+#: utilities/cameragui/gpcamera.cpp:1180 utilities/cameragui/gpcamera.cpp:1181
 msgid "no"
 msgstr "होइन"
 
-#: utilities/cameragui/umscamera.cpp:499 utilities/cameragui/gpcamera.cpp:1169
+#: utilities/cameragui/umscamera.cpp:499 utilities/cameragui/gpcamera.cpp:1170
 #, fuzzy, qt-format
 #| msgid ""
 #| "Title: %1\n"
@@ -12198,31 +12235,43 @@ msgstr ""
 msgid "Camera Folders"
 msgstr "क्यामेरा फोल्डर"
 
-#: utilities/cameragui/freespacewidget.cpp:234
+#: utilities/cameragui/capturedlg.cpp:72
+#, fuzzy, qt-format
+#| msgid "Nature"
+msgid "Capture from %1"
+msgstr "प्रकृति"
+
+#: utilities/cameragui/capturedlg.cpp:75 utilities/cameragui/cameraui.cpp:299
+#, fuzzy
+#| msgid "Nature"
+msgid "Capture"
+msgstr "प्रकृति"
+
+#: utilities/cameragui/freespacewidget.cpp:239
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Camera Media"
 msgstr "क्यामेरा म्यानुअल"
 
-#: utilities/cameragui/freespacewidget.cpp:235
+#: utilities/cameragui/freespacewidget.cpp:240
 #, fuzzy
 #| msgid "Album Library Path"
 msgid "Album Library"
 msgstr "एल्बम लाइब्रेरी मार्ग"
 
-#: utilities/cameragui/freespacewidget.cpp:247
-#: utilities/cameragui/freespacewidget.cpp:258
+#: utilities/cameragui/freespacewidget.cpp:252
+#: utilities/cameragui/freespacewidget.cpp:263
 msgid "Capacity:"
 msgstr ""
 
-#: utilities/cameragui/freespacewidget.cpp:250
-#: utilities/cameragui/freespacewidget.cpp:261
+#: utilities/cameragui/freespacewidget.cpp:255
+#: utilities/cameragui/freespacewidget.cpp:266
 #, fuzzy
 #| msgid "unavailable"
 msgid "Available:"
 msgstr "उपलब्ध छैन"
 
-#: utilities/cameragui/freespacewidget.cpp:253
+#: utilities/cameragui/freespacewidget.cpp:258
 msgid "Require:"
 msgstr ""
 
@@ -12399,6 +12448,14 @@ msgstr "मिति र समय ढाँचा परिवर्तन ग�
 msgid "photo"
 msgstr "फोटो"
 
+#: utilities/cameragui/gpconfigdlg.cpp:262
+msgid "Button (not supported by KControl)"
+msgstr ""
+
+#: utilities/cameragui/gpconfigdlg.cpp:270
+msgid "Date (not supported by KControl)"
+msgstr ""
+
 #: utilities/cameragui/albumselectdialog.cpp:87
 msgid "Select Album"
 msgstr "एल्बम चयन गर्नुहोस्"
@@ -12428,157 +12485,157 @@ msgstr ""
 " '%1' मा नयाँ एल्बम सिर्जना गर्न\n"
 "एल्बम नाम प्रविष्ट गर्नुहोस्:"
 
-#: utilities/cameragui/cameracontroller.cpp:302
+#: utilities/cameragui/cameracontroller.cpp:311
 msgid "Connecting to camera..."
 msgstr "क्यामेरामा जडान गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:309
+#: utilities/cameragui/cameracontroller.cpp:318
 msgid "Connection established"
 msgstr "जडान स्थापना भयो"
 
-#: utilities/cameragui/cameracontroller.cpp:311
+#: utilities/cameragui/cameracontroller.cpp:320
 msgid "Connection failed"
 msgstr "जडान असफल भयो"
 
-#: utilities/cameragui/cameracontroller.cpp:317
+#: utilities/cameragui/cameracontroller.cpp:326
 msgid "Getting camera information..."
 msgstr "क्यामेरा सूचना प्राप्त गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:330
+#: utilities/cameragui/cameracontroller.cpp:339
 #, fuzzy
 #| msgid "Getting camera information..."
 msgid "Getting camera freespace available..."
 msgstr "क्यामेरा सूचना प्राप्त गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:339
+#: utilities/cameragui/cameracontroller.cpp:348
 #, fuzzy
 #| msgid "Settings..."
 msgid "Getting preview..."
 msgstr "सेटिङ..."
 
-#: utilities/cameragui/cameracontroller.cpp:347
+#: utilities/cameragui/cameracontroller.cpp:356
 #, fuzzy
 #| msgid "Nature"
 msgid "Capture picture..."
 msgstr "प्रकृति"
 
-#: utilities/cameragui/cameracontroller.cpp:355
+#: utilities/cameragui/cameracontroller.cpp:364
 msgid "Listing folders..."
 msgstr "फोल्डर सूचीकृत गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:362
+#: utilities/cameragui/cameracontroller.cpp:371
 msgid "Listing folders is complete..."
 msgstr "फोल्डर सूचीकरण समाप्त भयो..."
 
-#: utilities/cameragui/cameracontroller.cpp:370
+#: utilities/cameragui/cameracontroller.cpp:379
 #, qt-format
 msgid "Listing files in %1..."
 msgstr " %1 मा फाइल सूचीकरण..."
 
-#: utilities/cameragui/cameracontroller.cpp:376
+#: utilities/cameragui/cameracontroller.cpp:385
 #, qt-format
 msgid "Failed to list files in %1"
 msgstr "%1 मा फाइल सूचीकरण गर्न असफल"
 
-#: utilities/cameragui/cameracontroller.cpp:384
+#: utilities/cameragui/cameracontroller.cpp:393
 #, qt-format
 msgid "Listing files in %1 is complete"
 msgstr "%1 मा फाइल सूचीकरण समाप्त भयो"
 
-#: utilities/cameragui/cameracontroller.cpp:393
+#: utilities/cameragui/cameracontroller.cpp:402
 #, fuzzy
 #| msgid "Getting thumbnail for %1/%2..."
 msgid "Getting thumbnail in progress..."
 msgstr "%1/%2 का लागि थम्बनेल प्राप्त गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:419
+#: utilities/cameragui/cameracontroller.cpp:428
 #, fuzzy, qt-format
 #| msgid "Getting EXIF information for %1/%2..."
 msgid "Getting EXIF information for %1..."
 msgstr "%1/%2 का लागि EXIT सूचना प्राप्त गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:457
+#: utilities/cameragui/cameracontroller.cpp:466
 #, qt-format
 msgid "Downloading file %1..."
 msgstr "%1 फाइल डाउनलोड गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:475
+#: utilities/cameragui/cameracontroller.cpp:484
 #, qt-format
 msgid "EXIF rotating file %1..."
 msgstr "%1 फाइल EXIT परिक्रमण गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:481
+#: utilities/cameragui/cameracontroller.cpp:490
 #, qt-format
 msgid "Setting Metadata tags to file %1..."
 msgstr "%1 फाइलमा मेटाडाटा ट्याग सेट गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:501
+#: utilities/cameragui/cameracontroller.cpp:510
 #, qt-format
 msgid "Converting %1 to lossless file format..."
 msgstr "%1 लाई नोक्सानरहित ढाँचाको फाइलमा रूपान्तरण गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:532
+#: utilities/cameragui/cameracontroller.cpp:541
 #, qt-format
 msgid "Retrieving file %1 from camera..."
 msgstr "क्यामेराबाट %1 फाइल पुन: प्राप्त गर्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:542
+#: utilities/cameragui/cameracontroller.cpp:551
 #, qt-format
 msgid "Failed to retrieve file %1 from camera"
 msgstr "क्यामेराबाट %1 फाइल पुन: प्राप्त गर्न असफल"
 
-#: utilities/cameragui/cameracontroller.cpp:557
+#: utilities/cameragui/cameracontroller.cpp:566
 #, qt-format
 msgid "Uploading file %1 to camera..."
 msgstr "क्यामेरामा %1 फाइल अपलोड हुँदैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:578
+#: utilities/cameragui/cameracontroller.cpp:587
 #, qt-format
 msgid "Deleting file %1..."
 msgstr "%1 फाइल मेट्दैछ..."
 
-#: utilities/cameragui/cameracontroller.cpp:598
+#: utilities/cameragui/cameracontroller.cpp:607
 #, qt-format
 msgid "Toggle lock file %1..."
 msgstr "%1 फाइल टगल लक गर्नुहोस्..."
 
-#: utilities/cameragui/cameracontroller.cpp:655
+#: utilities/cameragui/cameracontroller.cpp:664
 msgid "Rename File"
 msgstr "फाइल पुन: नामकरण गर्नुहोस्"
 
-#: utilities/cameragui/cameracontroller.cpp:710
+#: utilities/cameragui/cameracontroller.cpp:719
 #, qt-format
 msgid "Skipped file %1"
 msgstr "फड्काएको फाइल %1"
 
-#: utilities/cameragui/cameracontroller.cpp:731
+#: utilities/cameragui/cameracontroller.cpp:740
 #, qt-format
 msgid "Failed to download file \"%1\"."
 msgstr "\"%1\" फाइल डाउनलोड गर्न असफल"
 
-#: utilities/cameragui/cameracontroller.cpp:741
-#: utilities/cameragui/cameracontroller.cpp:764
-#: utilities/cameragui/cameracontroller.cpp:786
-#: utilities/cameragui/cameracontroller.cpp:808
+#: utilities/cameragui/cameracontroller.cpp:750
+#: utilities/cameragui/cameracontroller.cpp:773
+#: utilities/cameragui/cameracontroller.cpp:795
+#: utilities/cameragui/cameracontroller.cpp:817
 msgid " Do you want to continue?"
 msgstr " तपाईँ जारी राख्न चाहनुहुन्छ ?"
 
-#: utilities/cameragui/cameracontroller.cpp:754
+#: utilities/cameragui/cameracontroller.cpp:763
 #, qt-format
 msgid "Failed to upload file \"%1\"."
 msgstr "\"%1\" फाइल अपलोड गर्न असफल"
 
-#: utilities/cameragui/cameracontroller.cpp:776
+#: utilities/cameragui/cameracontroller.cpp:785
 #, qt-format
 msgid "Failed to delete file \"%1\"."
 msgstr "\"%1\" फाइल मेट्न असफल"
 
-#: utilities/cameragui/cameracontroller.cpp:798
+#: utilities/cameragui/cameracontroller.cpp:807
 #, qt-format
 msgid "Failed to toggle lock file \"%1\"."
 msgstr "\"%1\" फाइल टगल लक गर्न असफल"
 
-#: utilities/cameragui/cameracontroller.cpp:826
+#: utilities/cameragui/cameracontroller.cpp:835
 #, qt-format
 msgid "Camera \"%1\""
 msgstr "क्यामेरा \"%1\""
@@ -12737,12 +12794,6 @@ msgstr "फ्लाइ सञ्चालन मात्र (JPEG मात्
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: utilities/cameragui/cameraui.cpp:299
-#, fuzzy
-#| msgid "Nature"
-msgid "Capture"
-msgstr "प्रकृति"
-
 #: utilities/cameragui/cameraui.cpp:331
 #, fuzzy
 #| msgid "Select &New Items"
@@ -12797,23 +12848,23 @@ msgstr "एल्बम मेट्नुहोस्"
 msgid "Cancelling current operation, please wait..."
 msgstr "हालको सञ्चालन रद्द गर्दैछ, कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: utilities/cameragui/cameraui.cpp:734
+#: utilities/cameragui/cameraui.cpp:743
 msgid "Do you want to close the dialog and cancel the current operation?"
 msgstr "तपाईँ संवाद बन्द गरेर हालको सञ्चालन रद्द गर्न चाहनुहुन्छ ?"
 
-#: utilities/cameragui/cameraui.cpp:741
+#: utilities/cameragui/cameraui.cpp:750
 msgid "Disconnecting from camera, please wait..."
 msgstr "क्यामेराबाट जडान विच्छेदन गर्दैछ, कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: utilities/cameragui/cameraui.cpp:777
+#: utilities/cameragui/cameraui.cpp:786
 msgid "Scanning for new files, please wait..."
 msgstr "नयाँ फाइलका लागि स्क्यान गर्दैछ, कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: utilities/cameragui/cameraui.cpp:828
+#: utilities/cameragui/cameraui.cpp:837
 msgid "Ready"
 msgstr "तयार"
 
-#: utilities/cameragui/cameraui.cpp:914
+#: utilities/cameragui/cameraui.cpp:923
 msgid ""
 "Failed to connect to the camera. Please make sure it is connected properly "
 "and turned on. Would you like to try again?"
@@ -12821,23 +12872,23 @@ msgstr ""
 "क्यामेरामा जडान गर्न असफल । कृपया यो राम्रोसँग जडान भएको छ र खुला छ भन्ने यकिन गर्नुहोस् "
 "। तपाईँ पुन: प्रयास गर्न चाहनुहुन्छ ?"
 
-#: utilities/cameragui/cameraui.cpp:918
+#: utilities/cameragui/cameraui.cpp:927
 msgid "Connection Failed"
 msgstr "जडान असफल"
 
-#: utilities/cameragui/cameraui.cpp:919
+#: utilities/cameragui/cameraui.cpp:928
 msgid "Retry"
 msgstr "पुन: प्रयास गर्नुहोस्"
 
-#: utilities/cameragui/cameraui.cpp:920
+#: utilities/cameragui/cameraui.cpp:929
 msgid "Abort"
 msgstr "परित्याग गर्नुहोस्"
 
-#: utilities/cameragui/cameraui.cpp:1036
+#: utilities/cameragui/cameraui.cpp:1045
 msgid "Select Image to Upload"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: utilities/cameragui/cameraui.cpp:1061
+#: utilities/cameragui/cameraui.cpp:1070
 #, qt-format
 msgid ""
 "There is no enough free space on Camera Media to upload pictures.\n"
@@ -12846,7 +12897,7 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1094
+#: utilities/cameragui/cameraui.cpp:1103
 #, qt-format
 msgid ""
 "Camera Folder <b>%1</b> already contains item <b>%2</b><br>Please enter a "
@@ -12855,11 +12906,11 @@ msgstr ""
 "क्यामेरा फोल्डर <b>%1</b> ले पहिल्यै <b>%2</b>वस्तुहरू समाविष्ट गर्दछ <br>कृपया नयाँ फाइल "
 "नाम (विस्तार बिना) प्रविष्ट गर्नुहोस्:"
 
-#: utilities/cameragui/cameraui.cpp:1097
+#: utilities/cameragui/cameraui.cpp:1106
 msgid "File already exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
-#: utilities/cameragui/cameraui.cpp:1152
+#: utilities/cameragui/cameraui.cpp:1162
 #, qt-format
 msgid ""
 "There is no enough free space on Album Library Path to download and process "
@@ -12869,14 +12920,14 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1194
+#: utilities/cameragui/cameraui.cpp:1203
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "the camera pictures into.</p>"
 msgstr ""
 "<p>क्यामेरा तस्विर आयात गर्न कृपया डिजिक्याम लाइब्रेरीबाट गन्तव्य एल्बम चयन गर्नुहोस् ।</p>"
 
-#: utilities/cameragui/cameraui.cpp:1459
+#: utilities/cameragui/cameraui.cpp:1466
 msgid ""
 "The items listed below are locked by the camera (read-only). These items "
 "will not be deleted. If you really want to delete these items, please unlock "
@@ -12886,7 +12937,7 @@ msgstr ""
 "तपाईँले साच्चीकै ति वस्तुहरू मेट्न चाहनुहुन्छ भने, कृपया तिनिहरुको लक हटाउनुहोस् र पुन: प्रयास "
 "गर्नुहोस् ।"
 
-#: utilities/cameragui/cameraui.cpp:1468 utilities/cameragui/cameraui.cpp:1535
+#: utilities/cameragui/cameraui.cpp:1475 utilities/cameragui/cameraui.cpp:1542
 #, fuzzy, qt-format
 #| msgid ""
 #| "_n: About to delete this image. Deleted files are unrecoverable. Are you "
@@ -12909,7 +12960,7 @@ msgstr[1] ""
 "%n छविहरू मेट्न लाग्नुभएको रहेछ । मेटिएको फाइल पुन: प्राप्त गर्न नसकिने किसिमको हो । "
 "तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/cameragui/cameraui.cpp:1526
+#: utilities/cameragui/cameraui.cpp:1533
 msgid ""
 "The items listed below are locked by camera (read-only). These items will "
 "not be deleted. If you really want to delete these items, please unlock them "
@@ -12919,17 +12970,17 @@ msgstr ""
 "तपाईँले साच्चीकै ति वस्तुहरू मेट्न चाहनुहुन्छ भने, कृपया तिनिहरुको लक हटाउनुहोस् र पुन: प्रयास "
 "गर्नुहोस् ।"
 
-#: utilities/cameragui/cameraui.cpp:1695
+#: utilities/cameragui/cameraui.cpp:1707
 #, qt-format
 msgid "A file with same name (%1) exists in folder %2"
 msgstr " (%1) नामको फाइल %2 फोल्डरमा अवस्थित छ"
 
-#: utilities/cameragui/cameraui.cpp:1707
+#: utilities/cameragui/cameraui.cpp:1719
 #, qt-format
 msgid "Failed to find Album for path '%1'"
 msgstr "'%1' मार्गका लागि एल्बम फेला पार्न असफल"
 
-#: utilities/cameragui/gpcamera.cpp:1243
+#: utilities/cameragui/gpcamera.cpp:1244
 msgid ""
 "\n"
 "\n"
@@ -12943,23 +12994,33 @@ msgstr ""
 "\n"
 "http://gphoto.org/bugs"
 
-#: utilities/cameragui/cameraiconview.cpp:455
+#: utilities/cameragui/cameraiconview.cpp:463
 msgid "Download"
 msgstr "डाउनलोड गर्नुहोस्"
 
-#: utilities/cameragui/cameraiconview.cpp:456
+#: utilities/cameragui/cameraiconview.cpp:464
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download && Delete"
 msgstr "चयन गरेको डाउनलोड गर्नुहोस्"
 
-#: utilities/cameragui/cameraiconview.cpp:457
+#: utilities/cameragui/cameraiconview.cpp:465
 msgid "Toggle lock"
 msgstr "लक टगल गर्नुहोस्"
 
-#: utilities/cameragui/cameraiconview.cpp:618
+#: utilities/cameragui/cameraiconview.cpp:626
 msgid "&Upload into camera"
 msgstr "क्यामेरामा अपलोड गर्नुहोस्"
+
+#: utilities/cameragui/capturewidget.cpp:98
+#, fuzzy
+#| msgid ""
+#| "Cannot display preview for\n"
+#| "\"%1\""
+msgid "Cannot display camera preview"
+msgstr ""
+"यसको पूर्वावलोकन देखाउन सकिदैन\n"
+"\"%1\""
 
 #: utilities/slideshow/slideshow.cpp:438
 #, qt-format
