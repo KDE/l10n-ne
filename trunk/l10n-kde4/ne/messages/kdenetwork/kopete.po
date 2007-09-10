@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-07 05:34+0200\n"
+"POT-Creation-Date: 2007-09-10 05:33+0200\n"
 "PO-Revision-Date: 2007-02-13 11:28+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -230,7 +230,7 @@ msgid "Invisible"
 msgstr "अदृश्य"
 
 #: libkopete/kopeteonlinestatus.cpp:122 libkopete/kopetemetacontact.cpp:473
-#: libkopete/kopeteidentity.cpp:128
+#: libkopete/kopeteidentity.cpp:128 kopete/kopetewindow.cpp:310
 #: kopete/identity/identitystatuswidget.cpp:151
 #: plugins/statistics/statisticscontact.cpp:262
 #: plugins/statistics/statisticsdialog.cpp:354 protocols/qq/qqprotocol.cpp:39
@@ -561,11 +561,11 @@ msgstr "तपाईँ आदेश \"%1\" सम्पादन गर्न �
 msgid "Command Error"
 msgstr "आदेश त्रुटि"
 
-#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1029
+#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1013
 msgid "No Message"
 msgstr "सन्देश छैन"
 
-#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1023
+#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1007
 msgid "New Message..."
 msgstr "नयाँ सन्देश..."
 
@@ -982,18 +982,23 @@ msgstr "सम्पर्क हटाउनुहोस्"
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
-#: libkopete/kopetecontact.cpp:555
-#, qt-format
-msgctxt "@label:textbox display name"
-msgid "<b>DISPLAY NAME</b><br /><img src=\"%2\">&nbsp;CONTACT STATUS"
-msgstr ""
+#: libkopete/kopetecontact.cpp:556
+#, fuzzy, qt-format
+#| msgctxt "<b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
+#| msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
+msgctxt "@label:textbox %3 is contact-display-name, %1 is its status"
+msgid "<b><nobr>%3</nobr></b><br /><img src=\"%2\">&nbsp;%1"
+msgstr "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
 
-#: libkopete/kopetecontact.cpp:562
-#, qt-format
-msgctxt "@label:textbox display name"
-msgid ""
-"<b>DISPLAY NAME</b> (CONTACT ID)<br /><img src=\"%2\">&nbsp;CONTACT STATUS"
-msgstr ""
+#: libkopete/kopetecontact.cpp:563
+#, fuzzy, qt-format
+#| msgctxt ""
+#| "<b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;CONTACT STATUS"
+#| msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
+msgctxt ""
+"@label:textbox %4 is contact-display-name, %3 is contact-id, %1 is its status"
+msgid "<nobr><b>%4</b> (%3)</nobr><br /><img src=\"%2\">&nbsp;%1"
+msgstr "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
 
 #: libkopete/kopetecontact.cpp:581
 #, fuzzy, qt-format
@@ -1025,10 +1030,13 @@ msgctxt "@label:textbox formatted status message"
 msgid "<br /><b>Status&nbsp;Message:</b>&nbsp;%1"
 msgstr "<br><b>टाढा&nbsp;सन्देश:</b>&nbsp;%1"
 
-#: libkopete/kopetecontact.cpp:645
-msgctxt "@label:textbox property label"
-msgid "<br /><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-msgstr ""
+#: libkopete/kopetecontact.cpp:646
+#, fuzzy, qt-format
+#| msgctxt "<br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
+#| msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
+msgctxt "@label:textbox property label %2 is name, %1 is value"
+msgid "<br /><nobr><b>%2:</b></nobr>&nbsp;%1"
+msgstr "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
 
 #: libkopete/kopetecontact.cpp:669
 #, qt-format
@@ -1111,7 +1119,7 @@ msgstr "अनलाइन अवधि"
 msgid "Last Seen"
 msgstr "अन्तिम देखिएको"
 
-#: libkopete/kopeteglobal.cpp:153 kopete/kopetewindow.cpp:1006
+#: libkopete/kopeteglobal.cpp:153 kopete/kopetewindow.cpp:990
 #: protocols/meanwhile/meanwhileprotocol.cpp:62
 msgid "Status Message"
 msgstr "वस्तुस्थिति सन्देश"
@@ -1213,16 +1221,6 @@ msgstr "विश्वव्यापी वस्तुस्थिति स�
 msgid "&Add Contact"
 msgstr "सम्पर्क थप्नुहोस्"
 
-#. i18n: tag string
-#. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 112
-#: kopete/kopetewindow.cpp:310 rc.cpp:3192 protocols/qq/qqprotocol.cpp:39
-#: protocols/gadu/gaduprotocol.cpp:60
-#: protocols/oscar/aim/aimstatusmanager.cpp:67
-#: protocols/oscar/icq/icqstatusmanager.cpp:74
-#: protocols/groupwise/gwprotocol.cpp:52
-msgid "O&ffline"
-msgstr "अफलाइन"
-
 #: kopete/kopetewindow.cpp:315
 msgid "&Export Contacts..."
 msgstr "सम्पर्क निर्यात गर्नुहोस्..."
@@ -1323,7 +1321,7 @@ msgstr "सम्पर्क सूची देखाउनुहोस् व
 msgid "Set Away/Back"
 msgstr "टाढा/फर्केको सेट गर्नुहोस्"
 
-#: kopete/kopetewindow.cpp:677
+#: kopete/kopetewindow.cpp:661
 msgid ""
 "<qt>Closing the main window will keep Kopete running in the system tray. Use "
 "'Quit' from the 'File' menu to quit the application.</qt>"
@@ -1331,11 +1329,11 @@ msgstr ""
 "<qt>मुख्य सञ्झ्याल बन्द गर्दा पनि प्रणाली ट्रेमा कोपेट मेसेन्जर चलिरहेको हुन्छ । अनुप्रयोग पूर्ण "
 "रूपमा अन्त्य गर्न 'फाइल' मेनुबाट 'अन्त्य गर्नुहोस्' संवादमा क्लिक गर्नुहोस्।</qt>"
 
-#: kopete/kopetewindow.cpp:679
+#: kopete/kopetewindow.cpp:663
 msgid "Docking in System Tray"
 msgstr "प्रणाली ट्रेमा डक गर्न"
 
-#: kopete/kopetewindow.cpp:841
+#: kopete/kopetewindow.cpp:825
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "Account tooltip information: <nobr>ICON <b>PROTOCOL:</b> NAME (<i>STATUS</"
@@ -1352,12 +1350,12 @@ msgid ""
 msgstr ""
 "<nobr><img src=\"kopete-account-icon:%3:%4\"> <b>%1:</b> %2 (<i>%5</i>)<br/>"
 
-#: kopete/kopetewindow.cpp:1012
+#: kopete/kopetewindow.cpp:996
 #, fuzzy
 msgid "Add "
 msgstr "थप्नुहोस् >>"
 
-#: kopete/kopetewindow.cpp:1087
+#: kopete/kopetewindow.cpp:1071
 #: kopete/contactlist/kopetecontactlistview.cpp:1772
 msgid "Add Contact"
 msgstr "सम्पर्क थप्नुहोस्"
@@ -2540,135 +2538,142 @@ msgstr "कुराकानी"
 msgid "<qt><i>%1</i> is now %2.</qt>"
 msgstr "<qt><i>%1</i> अहिले %2 छ ।</qt>"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:223
-#: kopete/chatwindow/kopeteemailwindow.cpp:501
-#: kopete/chatwindow/kopeteemailwindow.cpp:519
+#: kopete/chatwindow/kopetechatwindow.cpp:225
+#, fuzzy
+#| msgid "Send"
+msgctxt "@action:button"
 msgid "Send"
 msgstr "पठाउनुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:234
+#: kopete/chatwindow/kopetechatwindow.cpp:236
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status"
 msgid "Ready."
 msgstr "तयार"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:340
+#: kopete/chatwindow/kopetechatwindow.cpp:339
 #: kopete/chatwindow/kopeteemailwindow.cpp:225
 msgid "&Send Message"
 msgstr "सन्देश पठाउनुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:350
+#: kopete/chatwindow/kopetechatwindow.cpp:349
 msgid "Close All Chats"
 msgstr "सबै कुराकानी बन्द गर्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:355
+#: kopete/chatwindow/kopetechatwindow.cpp:354
 msgid "&Activate Next Tab"
 msgstr "पछिल्लो ट्याब सक्रिय गर्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:361
+#: kopete/chatwindow/kopetechatwindow.cpp:360
 msgid "&Activate Previous Tab"
 msgstr "अघिल्लो ट्याब सक्रिय गर्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:367
+#: kopete/chatwindow/kopetechatwindow.cpp:366
 msgid "Nic&k Completion"
 msgstr "निक समाप्ति"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:372
+#: kopete/chatwindow/kopetechatwindow.cpp:371
 msgid "&Detach Chat"
 msgstr "कुराकानी अलग गर्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:377
+#: kopete/chatwindow/kopetechatwindow.cpp:376
 msgid "&Move Tab to Window"
 msgstr "ट्याब सञ्झ्यालमा सार्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:384
+#: kopete/chatwindow/kopetechatwindow.cpp:383
 msgid "&Tab Placement"
 msgstr "ट्याब स्थापन"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:396
+#: kopete/chatwindow/kopetechatwindow.cpp:395
 msgid "Set Default &Font..."
 msgstr "पूर्वानिर्धारित फन्ट सेट गर्नुहोस्..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:400
+#: kopete/chatwindow/kopetechatwindow.cpp:399
 msgid "Set Default Text &Color..."
 msgstr "पूर्वानिर्धारित पाठ रङ सेट गर्नुहोस्..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:404
+#: kopete/chatwindow/kopetechatwindow.cpp:403
 #: kopete/chatwindow/kopeteemailwindow.cpp:246
 msgid "Set &Background Color..."
 msgstr "पृष्ठभूमि रङ सेट गर्नुहोस्..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:408
+#: kopete/chatwindow/kopetechatwindow.cpp:407
 msgid "Previous History"
 msgstr "अघिल्लो इतिहास"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:413
+#: kopete/chatwindow/kopetechatwindow.cpp:412
 msgid "Next History"
 msgstr "पछिल्लो इतिहास"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:425
+#: kopete/chatwindow/kopetechatwindow.cpp:424
 msgid "Place to Left of Chat Area"
 msgstr "कुराकानी क्षेत्रको बायाँ राख्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:429
+#: kopete/chatwindow/kopetechatwindow.cpp:428
 msgid "Place to Right of Chat Area"
 msgstr "कुराकानी क्षेत्रको दायाँ राख्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:433
+#: kopete/chatwindow/kopetechatwindow.cpp:432
 msgid "Show"
 msgstr "देखाउनुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:435
+#: kopete/chatwindow/kopetechatwindow.cpp:434
 msgid "Hide"
 msgstr "लुकाउनुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:438
+#: kopete/chatwindow/kopetechatwindow.cpp:437
 msgid "Automatic Spell Checking"
 msgstr "स्वचालित हिज्जे जाँच"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:448
+#: kopete/chatwindow/kopetechatwindow.cpp:447
 msgid "Co&ntacts"
 msgstr "सम्पर्क"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:472
+#: kopete/chatwindow/kopetechatwindow.cpp:471
 #: kopete/chatwindow/kopeteemailwindow.cpp:274
 msgid "Toolbar Animation"
 msgstr "उपकरणपट्टी एनिमेसन"
 
 #: kopete/chatwindow/kopetechatwindow.cpp:626
+#, fuzzy
+#| msgid "Close the current tab"
+msgctxt "@info:tooltip"
 msgid "Close the current tab"
 msgstr "हालको ट्याब बन्द गर्नुहोस्"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1036
+#: kopete/chatwindow/kopetechatwindow.cpp:1033
 msgid "More..."
 msgstr "धेरै..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1052
+#: kopete/chatwindow/kopetechatwindow.cpp:1049
 #, fuzzy
 msgid "Top"
 msgstr "विषय"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1055
+#: kopete/chatwindow/kopetechatwindow.cpp:1052
 msgid "Bottom"
 msgstr ""
 
-#: kopete/chatwindow/chatmessagepart.cpp:244
+#: kopete/chatwindow/chatmessagepart.cpp:243
 #: plugins/history/historydialog.cpp:186
 msgid "Copy Link Address"
 msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
 
-#: kopete/chatwindow/chatmessagepart.cpp:271
+#: kopete/chatwindow/chatmessagepart.cpp:267
 msgid "Save Conversation"
 msgstr "वार्तालाप बचत गर्नुहोस्"
 
-#: kopete/chatwindow/chatmessagepart.cpp:313
+#: kopete/chatwindow/chatmessagepart.cpp:309
 #, qt-format
 msgid "<qt>Could not open <b>%1</b> for writing.</qt>"
 msgstr "<qt>लेख्नका लागि <b>%1</b> खोल्न सकेन ।</qt>"
 
-#: kopete/chatwindow/chatmessagepart.cpp:314
+#: kopete/chatwindow/chatmessagepart.cpp:310
 msgid "Error While Saving"
 msgstr "बचत गर्दा त्रुटि"
 
-#: kopete/chatwindow/chatmessagepart.cpp:652
+#: kopete/chatwindow/chatmessagepart.cpp:648
 msgid "User Has Left"
 msgstr "प्रयोगकर्ताले छोड्यो"
 
@@ -2714,8 +2719,6 @@ msgstr "समूह सूची बन्द गर्दै"
 #: kopete/chatwindow/kopeteemailwindow.cpp:462
 #: kopete/chatwindow/kopeteemailwindow.cpp:469
 #: kopete/chatwindow/kopeteemailwindow.cpp:476
-#: kopete/chatwindow/chatview.cpp:347 kopete/chatwindow/chatview.cpp:354
-#: kopete/chatwindow/chatview.cpp:361
 msgid "Cl&ose Chat"
 msgstr "कुराकानी बन्द गर्नुहोस्"
 
@@ -2747,6 +2750,11 @@ msgstr ""
 #: kopete/chatwindow/chatview.cpp:360
 msgid "Message in Transit"
 msgstr "सन्देश बाटोमा छ"
+
+#: kopete/chatwindow/kopeteemailwindow.cpp:501
+#: kopete/chatwindow/kopeteemailwindow.cpp:519
+msgid "Send"
+msgstr "पठाउनुहोस्"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:508
 msgid "Reply"
@@ -2826,6 +2834,14 @@ msgstr "समरेखन गर्नुहोस्"
 #, fuzzy
 msgid "Chat members list"
 msgstr "कुराकानी सदस्य सूची"
+
+#: kopete/chatwindow/chatview.cpp:347 kopete/chatwindow/chatview.cpp:354
+#: kopete/chatwindow/chatview.cpp:361
+#, fuzzy
+#| msgid "Cl&ose Chat"
+msgctxt "@action:button"
+msgid "Close Chat"
+msgstr "कुराकानी बन्द गर्नुहोस्"
 
 #: kopete/chatwindow/chatview.cpp:396
 #, fuzzy, qt-format
@@ -10127,6 +10143,16 @@ msgid "Choose this status to disconnect with description entered below."
 msgstr "तल प्रविष्ट गरिएको वर्णनसँग विच्छेदन गर्न यो वस्तुस्थिति रोज्नुहोस् ।"
 
 #. i18n: tag string
+#. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 112
+#: rc.cpp:3192 protocols/qq/qqprotocol.cpp:39
+#: protocols/gadu/gaduprotocol.cpp:60
+#: protocols/oscar/aim/aimstatusmanager.cpp:67
+#: protocols/oscar/icq/icqstatusmanager.cpp:74
+#: protocols/groupwise/gwprotocol.cpp:52
+msgid "O&ffline"
+msgstr "अफलाइन"
+
+#. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 132
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 151
@@ -14610,11 +14636,6 @@ msgstr ""
 msgid "Select public key for %1"
 msgstr " %1 का लागि सार्वजनिक कुञ्जी चयन गर्नुहोस्"
 
-#: plugins/cryptography/cryptographyselectuserkey.cpp:84
-#: plugins/cryptography/cryptographyguiclient.cpp:143
-msgid "Public Keys Found"
-msgstr ""
-
 #: plugins/cryptography/cryptographypreferences.cpp:48
 #: plugins/cryptography/cryptographypreferences.cpp:49
 #, fuzzy
@@ -14677,60 +14698,53 @@ msgstr "सार्वजनिक कुञ्जी चयन गर्नु
 msgid "Export checked keys to address book"
 msgstr "ठेगाना पुस्तिकामा निर्यात गर्नुहोस्"
 
-#: plugins/cryptography/exportkeys.cpp:71
+#: plugins/cryptography/exportkeys.cpp:69
 #, fuzzy
 #| msgid "No Contacts with Photo Support"
 msgid "<No meta-contacts with keys to export>"
 msgstr "फोटो समर्थनसँग कुनै सम्पर्क छैन"
 
-#: plugins/cryptography/cryptographyplugin.cpp:70
+#: plugins/cryptography/kabckeyselector.cpp:29
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Public Key Found"
+msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/kabckeyselector.cpp:40
+msgid "Public Keys Found"
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:69
 #, fuzzy
 #| msgid "Select Public Key"
 msgid "&Select Public Key..."
 msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
 
-#: plugins/cryptography/cryptographyplugin.cpp:76
+#: plugins/cryptography/cryptographyplugin.cpp:75
 #, fuzzy
 #| msgid "Export to Address Book"
-msgid "&Export Public Key To Address Book..."
+msgid "&Export Public Keys To Address Book..."
 msgstr "ठेगाना पुस्तिकामा निर्यात गर्नुहोस्"
 
-#: plugins/cryptography/cryptographyplugin.cpp:153
-#: plugins/cryptography/cryptographyplugin.cpp:166
+#: plugins/cryptography/cryptographyplugin.cpp:154
+#: plugins/cryptography/cryptographyplugin.cpp:167
 msgid ""
 "Cryptography plugin refuses to show the most recent message because it "
 "contains an attempt to forge an encrypted or signed message"
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:212
+#: plugins/cryptography/cryptographyplugin.cpp:211
 msgid "You have not chosen an encryption key for one or more recipients"
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:267
-#, fuzzy
-#| msgid "Play a sound when this event occurs for this contact"
-msgid "No key has been set for this meta-contact"
-msgstr "यो सम्पर्कका लागि सो घटना घट्दा ध्वनि बजाउनुहोस् ।"
-
-#: plugins/cryptography/cryptographyplugin.cpp:267
-#, fuzzy
-msgid "No Key"
-msgstr "कुनै होइन"
-
-#: plugins/cryptography/cryptographyplugin.cpp:278
-#, fuzzy
-#| msgid "Select Public Key"
-msgid "Export Public Key"
-msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#: plugins/cryptography/cryptographyplugin.cpp:295
+#: plugins/cryptography/cryptographyplugin.cpp:272
 #, fuzzy
 #| msgid "Enter passphrase for <b>%1</b>:"
 msgid "Enter password for GPG encryption and signing key"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:"
 
-#: plugins/cryptography/cryptographyplugin.cpp:309
-#: plugins/cryptography/cryptographyguiclient.cpp:164
+#: plugins/cryptography/cryptographyplugin.cpp:288
+#: plugins/cryptography/cryptographyguiclient.cpp:153
 msgid ""
 "This protocol may not work with messages that are encrypted. This is because "
 "encrypted messages are very long, and the server or peer may reject them due "
@@ -14738,8 +14752,8 @@ msgid ""
 "temporarily suspended, turn off encryption."
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:309
-#: plugins/cryptography/cryptographyguiclient.cpp:164
+#: plugins/cryptography/cryptographyplugin.cpp:288
+#: plugins/cryptography/cryptographyguiclient.cpp:153
 #, fuzzy
 #| msgid "Unsupported protocol version."
 msgid "Cryptography Unsupported Protocol"
@@ -14753,29 +14767,27 @@ msgid ""
 "You have %2 tries left."
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:78
+#: plugins/cryptography/cryptographyguiclient.cpp:56
+msgid "Cryptography"
+msgstr "गुप्तलेखन"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:80
 msgid "Encrypt Messages"
 msgstr "सन्देश गुप्तिकृत गर्नुहोस्"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:80
+#: plugins/cryptography/cryptographyguiclient.cpp:82
 #, fuzzy
 #| msgid "&Send Message"
 msgid "Sign Messages"
 msgstr "सन्देश पठाउनुहोस्"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:82
+#: plugins/cryptography/cryptographyguiclient.cpp:84
 #, fuzzy
 #| msgid "Export Contacts to Address Book"
-msgid "Export Contact's Key to Address Book"
+msgid "Export Contacts' Keys to Address Book"
 msgstr "ठेगाना पुस्तिकामा सम्पर्क निर्यात गर्नुहोस्"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:132
-#, fuzzy
-#| msgid "Select Public Key"
-msgid "Public Key Found"
-msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#: plugins/cryptography/cryptographyguiclient.cpp:174
+#: plugins/cryptography/cryptographyguiclient.cpp:164
 #, qt-format
 msgid ""
 "To send encrypted messages to %2, you still need to select a public key for "
@@ -14787,7 +14799,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: plugins/cryptography/cryptographyguiclient.cpp:174
+#: plugins/cryptography/cryptographyguiclient.cpp:164
 msgid "Missing public key"
 msgid_plural "Missing public keys"
 msgstr[0] ""
@@ -20719,33 +20731,19 @@ msgstr ""
 "कृपया एउटा स्वत: जवाफ सन्देश प्रविष्ट गर्नुहोस् जुन प्रयोगकर्तालाई देखाइनेछ जसले तपाईँ टाढा "
 "वा व्यस्त हुँदा सन्देश गर्छ"
 
-#~ msgid "Cryptography"
-#~ msgstr "गुप्तलेखन"
+#, fuzzy
+#~| msgid "Play a sound when this event occurs for this contact"
+#~ msgid "No key has been set for this meta-contact"
+#~ msgstr "यो सम्पर्कका लागि सो घटना घट्दा ध्वनि बजाउनुहोस् ।"
 
 #, fuzzy
-#~| msgctxt "<b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~| msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
-#~ msgctxt ""
-#~ "@label:textbox <b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~ msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
-#~ msgstr "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
+#~ msgid "No Key"
+#~ msgstr "कुनै होइन"
 
 #, fuzzy
-#~| msgctxt ""
-#~| "<b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~| msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-#~ msgctxt ""
-#~ "@label:textbox <b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;"
-#~ "CONTACT STATUS"
-#~ msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-#~ msgstr "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-
-#, fuzzy
-#~| msgctxt "<br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-#~| msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
-#~ msgctxt "@label:textbox <br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-#~ msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
-#~ msgstr "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
+#~| msgid "Select Public Key"
+#~ msgid "Export Public Key"
+#~ msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
 
 #, fuzzy
 #~ msgid "The list of accounts"
