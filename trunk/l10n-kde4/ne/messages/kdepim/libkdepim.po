@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdepim\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-11 05:37+0200\n"
+"POT-Creation-Date: 2007-09-14 05:36+0200\n"
 "PO-Revision-Date: 2007-02-12 16:45+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -518,7 +518,7 @@ msgctxt "@item unknown mail account"
 msgid "Unknown"
 msgstr ""
 
-#: kaddrbook.cpp:90
+#: kaddrbookexternal.cpp:105
 #, qt-format
 msgid ""
 "<qt>The email address <b>%1</b> was added to your addressbook; you can add "
@@ -527,12 +527,12 @@ msgstr ""
 "<qt><b>%1</b> इमेल ठेगाना तपाईँको ठेगाना पुस्तिकामा थपियो; तपाईँले ठेगाना पुस्तिका खोलेर "
 "यो प्रविष्टिमा बढी जानकारी थप्न सक्नुहुन्छ ।</qt>"
 
-#: kaddrbook.cpp:96
+#: kaddrbookexternal.cpp:112
 #, qt-format
 msgid "<qt>The email address <b>%1</b> is already in your addressbook.</qt>"
 msgstr "<qt> <b>%1</b> इमेल ठेगाना पहिल्यै तपाईँको ठेगाना पुस्तिकामा छ ।</qt>"
 
-#: kaddrbook.cpp:127
+#: kaddrbookexternal.cpp:144
 msgid ""
 "The VCard was added to your addressbook; you can add more information to "
 "this entry by opening the addressbook."
@@ -540,7 +540,7 @@ msgstr ""
 "भी कार्ड तपाईँको ठेगाना पुस्तिकामा थप गरियो; तपाईँले ठेगाना पुस्तिका खोलेर यो प्रविष्टिमा "
 "बढी जानकारी थप्न सक्नुहुन्छ ।"
 
-#: kaddrbook.cpp:134
+#: kaddrbookexternal.cpp:151
 msgid ""
 "The VCard's primary email address is already in your addressbook; however, "
 "you may save the VCard into a file and import it into the addressbook "
@@ -701,57 +701,92 @@ msgstr "क्लासनेम:"
 msgid "Description:"
 msgstr "वर्णन:"
 
-#: kconfigpropagator.cpp:39
+#: kconfigpropagator.cpp:41
 msgid "Change Config Value"
 msgstr "कन्फिग मान परिवर्तन गर्नुहोस्"
 
-#: kconfigwizard.cpp:41 kconfigwizard.cpp:53
+#: kconfigwizard.cpp:43 kconfigwizard.cpp:55
+#, fuzzy
+#| msgid "Configuration Wizard"
+msgctxt "@title:window"
 msgid "Configuration Wizard"
 msgstr "कन्फिगरेसन विजार्ड"
 
-#: kconfigwizard.cpp:96
+#: kconfigwizard.cpp:98
+#, fuzzy
+#| msgid "Rules"
+msgctxt "@title:tab"
 msgid "Rules"
 msgstr "नियम"
 
-#: kconfigwizard.cpp:97
+#: kconfigwizard.cpp:99
 #, fuzzy
+msgctxt "@title:window"
 msgid "Setup Rules"
 msgstr "नियम"
 
-#: kconfigwizard.cpp:105
+#: kconfigwizard.cpp:107
+#, fuzzy
+#| msgid "Source"
+msgctxt "@title:column source file,group,entry"
 msgid "Source"
 msgstr "स्रोत"
 
-#: kconfigwizard.cpp:106
+#: kconfigwizard.cpp:108
+#, fuzzy
+#| msgid "Target"
+msgctxt "@title:column target file,group,entry"
 msgid "Target"
 msgstr "लक्ष्य"
 
-#: kconfigwizard.cpp:107
+#: kconfigwizard.cpp:109
+#, fuzzy
+#| msgid "Condition"
+msgctxt "@title:column file,group,key,value"
 msgid "Condition"
 msgstr "शर्त"
 
-#: kconfigwizard.cpp:141
+#: kconfigwizard.cpp:143
+#, fuzzy
+#| msgid "Changes"
+msgctxt "@title:tab"
 msgid "Changes"
 msgstr "परिवर्तन"
 
-#: kconfigwizard.cpp:142
+#: kconfigwizard.cpp:144
 #, fuzzy
+msgctxt "@title:window"
 msgid "Setup Changes"
 msgstr "परिवर्तन"
 
-#: kconfigwizard.cpp:149
+#: kconfigwizard.cpp:151
+#, fuzzy
+#| msgid "Action"
+msgctxt "@title:column change action"
 msgid "Action"
 msgstr "कार्य"
 
-#: kconfigwizard.cpp:150
+#: kconfigwizard.cpp:152
+#, fuzzy
+#| msgid "Option"
+msgctxt "@title:column option to change"
 msgid "Option"
 msgstr "विकल्प"
 
-#: kconfigwizard.cpp:151
+#: kconfigwizard.cpp:153
+#, fuzzy
+#| msgid "Value"
+msgctxt "@title:column value for option"
 msgid "Value"
 msgstr "मान"
 
-#: kconfigwizard.cpp:184
+#: kconfigwizard.cpp:187
+#, fuzzy
+#| msgid ""
+#| "Please make sure that the programs which are configured by the wizard do "
+#| "not run in parallel to the wizard; otherwise, changes done by the wizard "
+#| "could be lost."
+msgctxt "@info"
 msgid ""
 "Please make sure that the programs which are configured by the wizard do not "
 "run in parallel to the wizard; otherwise, changes done by the wizard could "
@@ -760,11 +795,15 @@ msgstr ""
 "विजार्डद्वारा कन्फिगर गरिएको कार्यक्रम विजार्डमा समानान्तर रूपमा चलेको छैन भन्नेमा यकीन "
 "गर्नुहोस्; अन्यथा, विजार्डद्वारा गरिएको परिवर्तनहरू हराउन सक्दछ ।"
 
-#: kconfigwizard.cpp:187
+#: kconfigwizard.cpp:190
+msgctxt "@title:window warn about running instances"
 msgid "Warning"
 msgstr ""
 
-#: kconfigwizard.cpp:187
+#: kconfigwizard.cpp:191
+#, fuzzy
+#| msgid "Run Wizard Now"
+msgctxt "@action:button"
 msgid "Run Wizard Now"
 msgstr "विजार्ड अहिले चलाउनुहोस्"
 
