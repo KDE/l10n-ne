@@ -1,18 +1,22 @@
 # translation of kig.po to Nepali
 # Mahesh Subedi <submanesh@gmail.com>, 2006, 2007.
 # shyam krishna bal <shyamkrishna_bal@yahoo.com>, 2007.
+# Nabin Gautam <nabin@mpp.org.np>, 2007.
+# Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-08 05:35+0200\n"
-"PO-Revision-Date: 2007-02-13 10:28+0200\n"
-"Last-Translator: shyam krishna bal <shyamkrishna_bal@yahoo.com>\n"
+"POT-Creation-Date: 2007-07-05 05:18+0200\n"
+"PO-Revision-Date: 2007-09-10 14:36+0545\n"
+"Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Plural-Forms: nplurals=2; plural=n !=1\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: tips.cpp:3
 msgid ""
@@ -38,6 +42,27 @@ msgid ""
 "hexagons (Point(0,0), Point(1,0), 5)\n"
 "</pre></code>\n"
 msgstr ""
+"<p>तपाईँ \"pykig\" \n"
+"पाइथोन स्क्रिप्ट मार्फत किग निर्माण नियन्त्रण गर्न सक्नुहुन्छ, जुन आदेश \n"
+"<code>pykig.py</code> द्वारा कार्यान्वयन गर्न सकिन्छ ।  यहाँ राम्रो उदाहरण छ \n"
+"(<code>hexagons.kpy</code>) तपाईँ प्रयास गर्न सक्नुहुन्छ:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
 
 #: tips.cpp:28
 msgid ""
@@ -46,6 +71,10 @@ msgid ""
 "of objects with the same construction, especially if there is\n"
 "no shortcut for that construction.</p>\n"
 msgstr ""
+"<p>तपाईँ सामान्य रूपमा 'Z' कुञ्जी थिचेर पछिल्लो निर्माण दोहोर्याउन सक्नुहुन्छ;\n"
+"यदि तपाईँलाई एउटै निर्माणसँग वस्तुहरूको क्रम निर्माण गर्न आवश्यक भयो भने\n"
+"खास गरेर त्यहाँ त्यो निर्माणका लागि कुनै सर्टकट नभएमा,\n"
+"यो धेरै कुशल भएर आउँछ ।</p>\n"
 
 #: tips.cpp:36
 msgid ""
@@ -83,14 +112,14 @@ msgstr ""
 "र <em>Cabri&#8482;</em> फाइल</p>\n"
 
 #: tips.cpp:58
-#, fuzzy
 msgid ""
 "<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
 "constructions you can use in your documents: open the <em>Objects</em> \n"
 "menu to see them all.</p>\n"
 msgstr ""
-"<p>तपाईँको कागजातमा रचना गर्न र प्रयोग गर्न सक्ने किगसँग ४० वस्तु र १० रूपान्तरण छ\n"
-": तिनीहरू सबैलाई हेर्न <em>वस्तु</em> मेनु खोल्नुहोस् ।</p>\n"
+"<p>किगसँग ८० भन्दा बढी निर्माणसँग २० वस्तुहरू र १० स्थानान्तरणहरू छन्\n"
+"जुन तपाईँ आफ्नो कागजातमा प्रयोग गर्न सक्नुहुन्छ: तिनीहरू सबैलाई हेर्न <em>वस्तु</em> \n"
+"मेनु खोल्नुहोस् ।</p>\n"
 
 #: tips.cpp:65
 msgid ""
@@ -148,23 +177,20 @@ msgstr "submanesh@gmail.com, shyamkrishna_bal@yahoo.com"
 #. i18n: tag text
 #. i18n: file kig/kigui.rc line 4
 #: rc.cpp:5 rc.cpp:95
-#, fuzzy
 msgid "&File"
-msgstr "लुकाउनुहोस्"
+msgstr "फाइल"
 
 #. i18n: tag text
 #. i18n: file kig/kigpartui.rc line 16
 #: rc.cpp:8
-#, fuzzy
 msgid "&Edit"
-msgstr "सम्पादन गर्नुहोस्..."
+msgstr "सम्पादन"
 
 #. i18n: tag text
 #. i18n: file kig/kigpartui.rc line 27
 #: rc.cpp:11
-#, fuzzy
 msgid "&View"
-msgstr "लुकाउनुहोस्"
+msgstr "दृश्य"
 
 #. i18n: tag text
 #. i18n: file kig/kigpartui.rc line 35
@@ -260,7 +286,7 @@ msgstr "प्रकार"
 #. i18n: file kig/kigpartui.rc line 180
 #: rc.cpp:59
 msgid "&Tools"
-msgstr ""
+msgstr "उपकरण"
 
 #. i18n: tag text
 #. i18n: file kig/kigpartui.rc line 192
@@ -268,7 +294,7 @@ msgstr ""
 #. i18n: file kig/kigui.rc line 34
 #: rc.cpp:62 rc.cpp:104
 msgid "Main Toolbar"
-msgstr ""
+msgstr "मुख्य उपकरणपट्टी"
 
 #. i18n: tag text
 #. i18n: file kig/kigpartui.rc line 206
@@ -328,152 +354,157 @@ msgstr "अन्य वस्तु"
 #. i18n: file kig/kigpartui.rc line 291
 #: rc.cpp:92
 msgid "View"
-msgstr ""
+msgstr "दृश्य"
 
 #. i18n: tag text
 #. i18n: file kig/kigui.rc line 13
 #: rc.cpp:98
 msgid "&Settings"
-msgstr ""
+msgstr "सेटिङ"
 
 #. i18n: tag text
 #. i18n: file kig/kigui.rc line 22
 #: rc.cpp:101
-#, fuzzy
 msgid "&Help"
-msgstr "लुकाउनुहोस्"
+msgstr "मद्दत"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 25
-#: rc.cpp:107
+#. i18n: file filters/imageexporteroptionswidget.ui line 16
+#. i18n: tag string
+#. i18n: file filters/latexexporteroptionswidget.ui line 16
+#. i18n: tag string
+#. i18n: file filters/svgexporteroptionswidget.ui line 16
+#. i18n: tag string
+#. i18n: file modes/edittypewidget.ui line 30
+#: rc.cpp:107 rc.cpp:131 rc.cpp:146 rc.cpp:158
+msgid "Form"
+msgstr "फाराम"
+
+#. i18n: tag string
+#. i18n: file filters/imageexporteroptionswidget.ui line 28
+#: rc.cpp:110
 msgid "Resolution"
 msgstr "रिजोल्युसन"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 40
-#: rc.cpp:110
-#, fuzzy
+#. i18n: file filters/imageexporteroptionswidget.ui line 43
+#: rc.cpp:113
 msgid "&Keep Aspect Ratio"
 msgstr "आकार अनुपात राख्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 57
-#: rc.cpp:113
+#. i18n: file filters/imageexporteroptionswidget.ui line 60
+#: rc.cpp:116
 msgid "Height:"
 msgstr "उचाइ:"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 113
-#: rc.cpp:116
+#. i18n: file filters/imageexporteroptionswidget.ui line 116
+#: rc.cpp:119
 msgid "Width:"
 msgstr "चौडाइ:"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 123
+#. i18n: file filters/imageexporteroptionswidget.ui line 126
 #. i18n: tag string
-#. i18n: file filters/latexexporteroptionswidget.ui line 25
+#. i18n: file filters/latexexporteroptionswidget.ui line 28
 #. i18n: tag string
-#. i18n: file filters/svgexporteroptionswidget.ui line 25
-#: rc.cpp:119 rc.cpp:128 rc.cpp:140 misc/kigfiledialog.cc:34
-#, fuzzy
+#. i18n: file filters/svgexporteroptionswidget.ui line 28
+#: rc.cpp:122 rc.cpp:134 rc.cpp:149 misc/kigfiledialog.cc:34
 msgid "Options"
-msgstr "SVG विकल्प"
+msgstr "विकल्प"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 143
+#. i18n: file filters/imageexporteroptionswidget.ui line 146
 #. i18n: tag string
-#. i18n: file filters/latexexporteroptionswidget.ui line 52
+#. i18n: file filters/latexexporteroptionswidget.ui line 55
 #. i18n: tag string
-#. i18n: file filters/svgexporteroptionswidget.ui line 45
-#: rc.cpp:122 rc.cpp:134 rc.cpp:143
-#, fuzzy
+#. i18n: file filters/svgexporteroptionswidget.ui line 48
+#: rc.cpp:125 rc.cpp:140 rc.cpp:152
 msgid "Show Axes"
 msgstr "अक्ष देखाउनुहोस्"
 
 #. i18n: tag string
-#. i18n: file filters/imageexporteroptionswidget.ui line 150
+#. i18n: file filters/imageexporteroptionswidget.ui line 153
 #. i18n: tag string
-#. i18n: file filters/latexexporteroptionswidget.ui line 59
+#. i18n: file filters/latexexporteroptionswidget.ui line 62
 #. i18n: tag string
-#. i18n: file filters/svgexporteroptionswidget.ui line 52
-#: rc.cpp:125 rc.cpp:137 rc.cpp:146
-#, fuzzy
+#. i18n: file filters/svgexporteroptionswidget.ui line 55
+#: rc.cpp:128 rc.cpp:143 rc.cpp:155
 msgid "Show Grid"
 msgstr "ग्रिड देखाउनुहोस्"
 
 #. i18n: tag string
-#. i18n: file filters/latexexporteroptionswidget.ui line 45
-#: rc.cpp:131
-#, fuzzy
+#. i18n: file filters/latexexporteroptionswidget.ui line 48
+#: rc.cpp:137
 msgid "Show Extra Frame"
 msgstr "अतिरिक्त फ्रेम देखाउनुहोस्"
 
 #. i18n: tag string
-#. i18n: file modes/edittypewidget.ui line 39
-#: rc.cpp:149
+#. i18n: file modes/edittypewidget.ui line 42
+#: rc.cpp:161
 msgid ""
 "Here you can modify the name, the description and the icon of this macro "
 "type."
 msgstr "यहाँ तपाईँले नाम, वर्णन र म्याक्रो प्रकारको प्रतिमा परिमार्जन गर्न सक्नुहुन्छ ।"
 
 #. i18n: tag string
-#. i18n: file modes/edittypewidget.ui line 76
-#: rc.cpp:152
+#. i18n: file modes/edittypewidget.ui line 79
+#: rc.cpp:164
 msgid "Name:"
 msgstr "नाम:"
 
 #. i18n: tag string
-#. i18n: file modes/edittypewidget.ui line 96
-#: rc.cpp:155
+#. i18n: file modes/edittypewidget.ui line 99
+#: rc.cpp:167
 msgid "Description:"
 msgstr "वर्णन:"
 
 #. i18n: tag string
-#. i18n: file modes/historywidget.ui line 25
-#: rc.cpp:158
-msgid "Description of the current step:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file modes/historywidget.ui line 56
-#: rc.cpp:161
-#, fuzzy
-msgid "First step"
-msgstr "पहिलो फोकस"
-
-#. i18n: tag string
-#. i18n: file modes/historywidget.ui line 69
-#: rc.cpp:164
-msgid "One step back"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file modes/historywidget.ui line 85
-#: rc.cpp:167
-msgid "/"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file modes/historywidget.ui line 99
+#. i18n: file modes/historywidget.ui line 28
 #: rc.cpp:170
-msgid "One step forward"
-msgstr ""
+msgid "Description of the current step:"
+msgstr "हालको चरणको वर्णन:"
 
 #. i18n: tag string
-#. i18n: file modes/historywidget.ui line 112
+#. i18n: file modes/historywidget.ui line 59
 #: rc.cpp:173
-msgid "Last step"
-msgstr ""
+msgid "First step"
+msgstr "पहिलो चरण"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 37
+#. i18n: file modes/historywidget.ui line 72
 #: rc.cpp:176
-msgid "Select types here..."
-msgstr "यहाँ प्रकार चयन गर्नुहोस्"
+msgid "One step back"
+msgstr "एक चरण पछाडि"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 40
+#. i18n: file modes/historywidget.ui line 88
 #: rc.cpp:179
+msgid "/"
+msgstr "/"
+
+#. i18n: tag string
+#. i18n: file modes/historywidget.ui line 102
+#: rc.cpp:182
+msgid "One step forward"
+msgstr "एक चरण अगाडि"
+
+#. i18n: tag string
+#. i18n: file modes/historywidget.ui line 115
+#: rc.cpp:185
+msgid "Last step"
+msgstr "अन्तिम चरण"
+
+#. i18n: tag string
+#. i18n: file modes/typeswidget.ui line 33
+#: rc.cpp:188
+msgid "Select types here..."
+msgstr "यहाँ प्रकार चयन गर्नुहोस्..."
+
+#. i18n: tag string
+#. i18n: file modes/typeswidget.ui line 36
+#: rc.cpp:191
 msgid ""
 "This is a list of the current macro types... You can select, edit, delete, "
 "export and import them..."
@@ -482,211 +513,207 @@ msgstr ""
 "आयात गर्न सक्नुहुन्छ..."
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 99
-#: rc.cpp:182
+#. i18n: file modes/typeswidget.ui line 68
+#: rc.cpp:194
 msgid "Edit the selected type."
 msgstr "चयन गरेको प्रकार सम्पादन गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 102
-#: rc.cpp:185 modes/typesdialog.cpp:367
+#. i18n: file modes/typeswidget.ui line 71
+#: rc.cpp:197 modes/typesdialog.cpp:328
 msgid "&Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 109
-#: rc.cpp:188
+#. i18n: file modes/typeswidget.ui line 78
+#: rc.cpp:200
 msgid "Delete all the selected types in the list."
 msgstr "सूचीमा सबै चयन गरेको प्रकार मेट्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 112
-#: rc.cpp:191 modes/popup.cc:374 modes/typesdialog.cpp:368
-#, fuzzy
+#. i18n: file modes/typeswidget.ui line 81
+#: rc.cpp:203 modes/popup.cc:374 modes/typesdialog.cpp:329
 msgid "&Delete"
-msgstr "वस्तु मेट्नुहोस्"
+msgstr "मेट्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 151
-#: rc.cpp:194
+#. i18n: file modes/typeswidget.ui line 111
+#: rc.cpp:206
 msgid "Export all the selected types to a file."
 msgstr "फाइलमा सबै चयन गरेको प्रकार निर्यात गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 154
-#: rc.cpp:197 modes/typesdialog.cpp:370
+#. i18n: file modes/typeswidget.ui line 114
+#: rc.cpp:209 modes/typesdialog.cpp:331
 msgid "E&xport..."
 msgstr "निर्यात गर्नुहोस्..."
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 161
-#: rc.cpp:200
+#. i18n: file modes/typeswidget.ui line 121
+#: rc.cpp:212
 msgid "Import macros that are contained in one or more files."
 msgstr "एउटा वा बढी फाइलमा रहेको म्याक्रो आयात गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file modes/typeswidget.ui line 164
-#: rc.cpp:203
-#, fuzzy
+#. i18n: file modes/typeswidget.ui line 124
+#: rc.cpp:215
 msgid "&Import..."
 msgstr "आयात गर्नुहोस्..."
 
-#: rc.cpp:204
+#: rc.cpp:216
 msgid "Circle by Center && Line"
 msgstr "केन्द्र र रेखाद्वारा वृत्त"
 
-#: rc.cpp:205
+#: rc.cpp:217
 msgid "A circle constructed by its center and tangent to a given line"
 msgstr "यसको केन्द्र र दिएको रेखामा ट्यान्जेन्ट भएको वृत्त रचना गरियो"
 
-#: rc.cpp:206
+#: rc.cpp:218
 msgid "Construct a circle tangent to this line"
 msgstr "यो रेखामा ट्यान्जेन्ट वृत्त रचना गर्नुहोस्"
 
-#: rc.cpp:207 rc.cpp:212 objects/circle_type.cc:32
+#: rc.cpp:219 rc.cpp:224 objects/circle_type.cc:32
 msgid "Construct a circle with this center"
 msgstr "यो केन्द्रसँग वृत्त रचना गर्नुहोस्"
 
-#: rc.cpp:208
+#: rc.cpp:220
 msgid "Select the line that the new circle should be tangent to..."
 msgstr "नयाँ वृत्तमा ट्यान्जेन्ट हुँने रेखा चयन गर्नुहोस्..."
 
-#: rc.cpp:209 rc.cpp:214 objects/circle_type.cc:37 objects/circle_type.cc:192
+#: rc.cpp:221 rc.cpp:226 objects/circle_type.cc:37 objects/circle_type.cc:192
 msgid "Select the center of the new circle..."
 msgstr "नयाँ वृत्तको केन्द्र चयन गर्नुहोस्..."
 
-#: rc.cpp:210
+#: rc.cpp:222
 msgid "Circle by Point && Segment (as the Diameter)"
 msgstr "बिन्दु र खण्डद्वारा वृत्त (व्यास जस्तै)"
 
-#: rc.cpp:211
-msgid ""
-"A circle defined by its center and the length of a segment as the diameter"
+#: rc.cpp:223
+msgid "A circle defined by its center and the length of a segment as the diameter"
 msgstr "व्यास जस्तै खण्डको लम्बाइ र त्यसको केन्द्रद्वारा परिभाषित वृत्त"
 
-#: rc.cpp:213
-msgid ""
-"Construct a circle with the diameter given by the length of this segment"
+#: rc.cpp:225
+msgid "Construct a circle with the diameter given by the length of this segment"
 msgstr "यो खण्डको लम्बाइद्वारा दिएको व्याससँग वृत्त रचना गर्नुहोस्"
 
-#: rc.cpp:215
+#: rc.cpp:227
 msgid "Select the segment whose length gives the diameter of the new circle..."
 msgstr "नयाँ वृत्तको व्यास दिने लम्बाइको खण्ड चयन गर्नुहोस्..."
 
-#: rc.cpp:216
+#: rc.cpp:228
 msgid "Equilateral Triangle"
 msgstr "समभुजीय त्रिभुज"
 
-#: rc.cpp:217
+#: rc.cpp:229
 msgid "Equilateral triangle with given two vertices"
 msgstr "दिएको दुई भेक्टरसँग समभुजीय त्रिभुज"
 
-#: rc.cpp:218
+#: rc.cpp:230
 msgid "Evolute"
 msgstr "इभोलुट"
 
-#: rc.cpp:219
+#: rc.cpp:231
 msgid "Evolute of a curve"
 msgstr "वक्रको इभोलुट"
 
-#: rc.cpp:220
+#: rc.cpp:232
 msgid "Evolute of this curve"
 msgstr "यो वक्रको इभोलुट"
 
-#: rc.cpp:221 rc.cpp:226 objects/centerofcurvature_type.cc:35
+#: rc.cpp:233 rc.cpp:238 objects/centerofcurvature_type.cc:35
 #: objects/tangent_type.cc:36
 msgid "Select the curve..."
 msgstr "वक्र चयन गर्नुहोस्..."
 
-#: rc.cpp:222
+#: rc.cpp:234
 msgid "Osculating Circle"
 msgstr "ओस्कुलेटिङ वृत्त"
 
-#: rc.cpp:223
+#: rc.cpp:235
 msgid "Osculating circle of a curve at a point"
 msgstr "बिन्दुमा वक्रको ओस्कुलेटिङ वृत्त"
 
-#: rc.cpp:224
+#: rc.cpp:236
 msgid "Osculating circle of this curve"
 msgstr "यो वक्रको ओस्कुलेटिङ वृत्त"
 
-#: rc.cpp:225
+#: rc.cpp:237
 msgid "Osculating circle at this point"
 msgstr "यो बिन्दुमा ओस्कुलेटिङ बिन्दु"
 
-#: rc.cpp:227
+#: rc.cpp:239
 msgid "Select the point..."
 msgstr "बिन्दु चयन गर्नुहोस्..."
 
-#: rc.cpp:228
+#: rc.cpp:240
 msgid "Segment Axis"
 msgstr "खण्ड अक्ष"
 
-#: rc.cpp:229
+#: rc.cpp:241
 msgid "The perpendicular line through a given segment's mid point."
 msgstr "दिएको खण्डको मध्य बिन्दुबाट समानान्तर रेखा ।"
 
-#: rc.cpp:230
+#: rc.cpp:242
 msgid "Construct the axis of this segment"
 msgstr "यो खण्डको अक्ष रचना गर्नुहोस्"
 
-#: rc.cpp:231
+#: rc.cpp:243
 msgid "Select the segment of which you want to draw the axis..."
 msgstr "तपाईँले अक्ष कोर्न चाहनुभएको खण्ड चयन गर्नुहोस्..."
 
-#: rc.cpp:232
+#: rc.cpp:244
 msgid "Square"
 msgstr "वर्ग"
 
-#: rc.cpp:233
+#: rc.cpp:245
 msgid "Square with two given adjacent vertices"
 msgstr "दिएको दुई निकटवर्ती कोणीय बिन्दु भएको वर्ग"
 
-#: rc.cpp:234
+#: rc.cpp:246
 msgid "Vector Difference"
 msgstr "भेक्टर फरक"
 
-#: rc.cpp:235
+#: rc.cpp:247
 msgid "Construct the vector difference of two vectors."
 msgstr "दुई भेक्टरहरूको भेक्टर फरक रचना गर्नुहोस्"
 
-#: rc.cpp:236
+#: rc.cpp:248
 msgid "Construct the vector difference of this vector and another one."
 msgstr "यो भेक्टर र अन्यको भेक्टर फरक रचना गर्नुहोस् ।"
 
-#: rc.cpp:237
+#: rc.cpp:249
 msgid "Construct the vector difference of the other vector and this one."
 msgstr "अन्य भेक्टर र यसको भेक्टर फरक रचना गर्नुहोस् ।"
 
-#: rc.cpp:238
+#: rc.cpp:250
 msgid "Construct the vector difference starting at this point."
 msgstr "यो बिन्दुमा सुरु भेक्टर फरक रचना गर्नुहोस् ।"
 
-#: rc.cpp:239
+#: rc.cpp:251
 msgid ""
 "Select the first of the two vectors of which you want to construct the "
 "difference..."
 msgstr "तपाईँले फरक रचना गर्न चाहनुभएको दुई भेक्टरको पहिलो चयन गर्नुहोस्..."
 
-#: rc.cpp:240
+#: rc.cpp:252
 msgid ""
 "Select the other of the two vectors of which you want to construct the "
 "difference..."
 msgstr "तपाईँले रचना गर्न चाहनुभएको दुई भेक्टरबाट अन्य चयन गर्नुहोस्..."
 
-#: rc.cpp:241
+#: rc.cpp:253
 msgid "Select the point to construct the difference vector in..."
 msgstr "फरक भेक्टरमा रचना गर्न बिन्दु चयन गर्नुहोस्..."
 
 #: filters/filter.h:55 filters/cabri-utils.cc:33 misc/object_hierarchy.cc:486
 #: objects/object_imp_factory.cc:294
-#, fuzzy, qt-format
+#, qt-format
 msgid "An error was encountered at line %1 in file %2."
-msgstr "\"%1\" फाइल पद वर्णन गर्दा त्रुटि भयो ।  यो खोल्न सकेन ।"
+msgstr "%2 फाइलमा %1 रेखा भित्र एउटा त्रुटि फेला परेको थियो ।"
 
 #: kig/aboutdata.h:26
 msgid "KDE Interactive Geometry"
-msgstr "KDE अन्तर्क्रियात्मक ज्यामिति"
+msgstr "केडीई अन्तर्क्रियात्मक ज्यामिति"
 
 #: kig/aboutdata.h:30
 msgid "(C) 2002-2005, The Kig developers"
@@ -694,7 +721,7 @@ msgstr "(C) 2002-2005, किग विकासकर्ता"
 
 #: kig/aboutdata.h:32
 msgid "Dominique Devriese"
-msgstr ""
+msgstr "डोमिनिक्यु डेभ्रियस"
 
 #: kig/aboutdata.h:33
 msgid "Original author, long time maintainer, design and lots of code."
@@ -702,7 +729,7 @@ msgstr "मौलिक लेखक, लामो समयका सम्भ�
 
 #: kig/aboutdata.h:36
 msgid "Maurizio Paolini"
-msgstr ""
+msgstr "माउरिजियो पाओलिनि"
 
 #: kig/aboutdata.h:37
 msgid ""
@@ -714,7 +741,7 @@ msgstr ""
 
 #: kig/aboutdata.h:42
 msgid "Pino Toscano"
-msgstr ""
+msgstr "पिनो टोस्कानो"
 
 #: kig/aboutdata.h:43
 msgid ""
@@ -726,7 +753,7 @@ msgstr ""
 
 #: kig/aboutdata.h:48
 msgid "Franco Pasquarelli"
-msgstr ""
+msgstr "फ्रान्को पासक्वारेली"
 
 #: kig/aboutdata.h:49
 msgid ""
@@ -738,7 +765,7 @@ msgstr ""
 
 #: kig/aboutdata.h:54
 msgid "Eric Depagne"
-msgstr ""
+msgstr "इरिक डेपाग्ने"
 
 #: kig/aboutdata.h:55
 msgid ""
@@ -748,7 +775,7 @@ msgstr "फ्रान्सेली अनुवादक, उहाँले
 
 #: kig/aboutdata.h:59
 msgid "Marc Bartsch"
-msgstr ""
+msgstr "मार्क बार्टस्च"
 
 #: kig/aboutdata.h:60
 msgid ""
@@ -758,7 +785,7 @@ msgstr "केडीई भूगोलको लेखक, जसबाट म�
 
 #: kig/aboutdata.h:64
 msgid "Christophe Devriese"
-msgstr ""
+msgstr "क्रिस्टोफे डेभरियस"
 
 #: kig/aboutdata.h:65
 msgid ""
@@ -770,7 +797,7 @@ msgstr ""
 
 #: kig/aboutdata.h:70
 msgid "Christophe Prud'homme"
-msgstr ""
+msgstr "क्रिस्टोफे प्रुडहोम"
 
 #: kig/aboutdata.h:71
 msgid "Sent me a patch for some bugs."
@@ -778,7 +805,7 @@ msgstr "केही बगका लागि मलाई प्याच प�
 
 #: kig/aboutdata.h:74
 msgid "Robert Gogolok"
-msgstr ""
+msgstr "रोबर्ट गोगोलक"
 
 #: kig/aboutdata.h:75
 msgid ""
@@ -790,7 +817,7 @@ msgstr ""
 
 #: kig/aboutdata.h:80
 msgid "David Vignoni"
-msgstr ""
+msgstr "डेभिड भिग्नोनी"
 
 #: kig/aboutdata.h:81
 msgid "Responsible for the nice application SVG Icon."
@@ -798,7 +825,7 @@ msgstr "राम्रो अनुप्रयोग SVG प्रतिमा
 
 #: kig/aboutdata.h:84
 msgid "Danny Allen"
-msgstr ""
+msgstr "ड्यानी एलेन"
 
 #: kig/aboutdata.h:85
 msgid "Responsible for the new object action icons."
@@ -814,6 +841,8 @@ msgid ""
 "This Cabri version (%1) is not supported yet.\n"
 "Please contact the Kig authors to help supporting this Cabri version."
 msgstr ""
+"यो क्याब्री संस्करण (%1) अहिले सम्म समर्थित छैन ।\n"
+"कृपया यो क्याब्री संस्करणको समर्थनलाई मद्दत गर्न किग लेखकलाई सम्पर्क गर्नुहोस् ।"
 
 #: filters/cabri-filter.cc:623
 #, qt-format
@@ -912,8 +941,7 @@ msgstr ""
 
 #: filters/filter.cc:82
 #, qt-format
-msgid ""
-"An error was encountered while parsing the file \"%1\".  It cannot be opened."
+msgid "An error was encountered while parsing the file \"%1\".  It cannot be opened."
 msgstr "\"%1\" फाइल पद वर्णन गर्दा त्रुटि भयो ।  यो खोल्न सकेन ।"
 
 #: filters/filter.cc:84
@@ -942,13 +970,11 @@ msgid ""
 msgstr "यो केडीई खण्ड फाइलले किगले हाल समर्थन नगर्ने भरिएको वृत्त समावेश गर्दैन ।"
 
 #: filters/kseg-filter.cc:567
-msgid ""
-"This KSeg file contains an arc sector, which Kig does not currently support."
+msgid "This KSeg file contains an arc sector, which Kig does not currently support."
 msgstr "केडीई खण्ड फाइलले किगले हाल समर्थन नगर्ने चाप सेक्टर समावेश गर्दछ ।"
 
 #: filters/kseg-filter.cc:573
-msgid ""
-"This KSeg file contains an arc segment, which Kig does not currently support."
+msgid "This KSeg file contains an arc segment, which Kig does not currently support."
 msgstr "यो केडीई खण्ड फाइलले किगले हाल समर्थन नगर्ने चाप खण्ड समावेश गर्दछ ।"
 
 #: filters/latexexporter.cc:72
@@ -973,10 +999,8 @@ msgstr "लाटेक्स विकल्प"
 
 #: filters/native-filter.cc:194
 #, qt-format
-msgid ""
-"This file was created by Kig version \"%1\", which this version cannot open."
-msgstr ""
-"यो फाइल किग संस्करण \"%1\" द्वारा सिर्जना गरिएको हो, जसले यो संस्करण खोल्न सक्दैन ।"
+msgid "This file was created by Kig version \"%1\", which this version cannot open."
+msgstr "यो फाइल किग संस्करण \"%1\" द्वारा सिर्जना गरिएको हो, जसले यो संस्करण खोल्न सक्दैन ।"
 
 #: filters/native-filter.cc:200
 #, qt-format
@@ -1018,7 +1042,7 @@ msgid ""
 "This Kig file uses an object of type \"%1\", which is obsolete, you should "
 "save the construction with a different name and check that it works as "
 "expected."
-msgstr ""
+msgstr "यो किग फाइलले \"%1\" प्रकारको एउटा वस्तु प्रयोग गर्दछ, जुन अप्रचलित छ, तपाईँले फरक नाममा निर्माण बचत गर्नुपर्छ र यसले आशा गरे जस्तो काम गर्छ या गर्दैन जाँच गर्नुहोस् ।"
 
 #: filters/svgexporter.cc:45
 msgid "&Export to SVG..."
@@ -1062,13 +1086,12 @@ msgid "Export as XFig File"
 msgstr "एक्स फिगको रूपमा निर्यात गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:59
-#, fuzzy
 msgid "Point by Numeric Labels"
-msgstr "समन्वयद्वारा बिन्दु"
+msgstr "सङ्ख्यात्मक लेबुलद्वारा इङ्कित गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:60
 msgid "A point whose coordinates are given by two numeric labels"
-msgstr ""
+msgstr "एउटा बिन्दु जसको समकक्षहरू दुई सङ्ख्यात्मक लेबुलद्वारा दिएका छन्"
 
 #: misc/builtin_stuff.cc:67
 msgid "Segment"
@@ -1099,8 +1122,7 @@ msgid "Perpendicular"
 msgstr "परपेन्डिकुलर"
 
 #: misc/builtin_stuff.cc:91
-msgid ""
-"A line constructed through a point, perpendicular to another line or segment."
+msgid "A line constructed through a point, perpendicular to another line or segment."
 msgstr "अन्य खण्ड वा रेखासँग परपेन्डिकुलर, बिन्दु हुँदै रेखा रचना गरियो ।"
 
 #: misc/builtin_stuff.cc:98
@@ -1108,8 +1130,7 @@ msgid "Parallel"
 msgstr "समानान्तर"
 
 #: misc/builtin_stuff.cc:99
-msgid ""
-"A line constructed through a point, and parallel to another line or segment"
+msgid "A line constructed through a point, and parallel to another line or segment"
 msgstr "अन्य रेखा र खण्डसँग समानान्तर बिन्दु हुँदै रचना गरिएको रेखा"
 
 #: misc/builtin_stuff.cc:106
@@ -1129,12 +1150,10 @@ msgid "A circle constructed through three points"
 msgstr "तीन बिन्दु हुँदै रचना गरिएको वृत्त"
 
 #: misc/builtin_stuff.cc:120
-#, fuzzy
 msgid "Circle by Point && Radius"
-msgstr "बिन्दु र खण्डद्वारा वृत्त (अर्धव्यास जस्तै)"
+msgstr "बिन्दु र अर्धव्यासद्वारा वृत्त"
 
 #: misc/builtin_stuff.cc:121
-#, fuzzy
 msgid "A circle defined by its center and the length of the radius"
 msgstr "यसको केन्द्र र अर्धव्यासको रूपमा खण्डको लम्बाइद्वारा परिभाषित वृत्त"
 
@@ -1243,14 +1262,12 @@ msgid "A cubic curve with a horizontal cusp at the origin through four points"
 msgstr "चार बिन्दु हुँदै मौलिकमा तेर्सो शीर्षसँग क्युबिक वक्र"
 
 #: misc/builtin_stuff.cc:234
-#, fuzzy
 msgid "Cubic Function by Four Points"
-msgstr "चार बिन्दुद्वारा शीर्षसँग क्युबिक वक्र"
+msgstr "चार बिन्दुद्वारा क्युबिक प्रकार्य"
 
 #: misc/builtin_stuff.cc:235
-#, fuzzy
 msgid "A cubic function through four points"
-msgstr "पाँच बिन्दु हुँदै कोनिक रचना गरियो"
+msgstr "चार बिन्दु मार्फत क्युबिक प्रकार्य"
 
 #: misc/builtin_stuff.cc:242
 msgid "Directrix of a Conic"
@@ -1329,32 +1346,27 @@ msgid "Construct an arc through three points."
 msgstr "तीन बिन्दु हुँदै चाप रचना गर्नुहोस् ।"
 
 #: misc/builtin_stuff.cc:332
-#, fuzzy
 msgid "Conic Arc by Center and Three Points"
-msgstr "तीन बिन्दुद्वारा चाप"
+msgstr "केन्द्र र तीन बिन्दुद्वारा कोनिक चाप"
 
 #: misc/builtin_stuff.cc:333
-#, fuzzy
 msgid "Construct a conic arc with given center through three points."
-msgstr "तीन बिन्दु हुँदै चाप रचना गर्नुहोस् ।"
+msgstr "तीन बिन्दु मार्फत दिएको केन्द्रसँग कोनिक चाप रचना गर्नुहोस् ।"
 
 #: misc/builtin_stuff.cc:340
-#, fuzzy
 msgid "Conic Arc by Five Points"
-msgstr "पाँच बिन्दुद्वारा कोनिक"
+msgstr "पाँच बिन्दुद्वारा कोनिक चाप"
 
 #: misc/builtin_stuff.cc:341
-#, fuzzy
 msgid "Construct a conic arc through five points."
-msgstr "तीन बिन्दु हुँदै चाप रचना गर्नुहोस् ।"
+msgstr "पाँच बिन्दु मार्फत कोनिक चाप रचना गर्नुहोस् ।"
 
 #: misc/builtin_stuff.cc:348
 msgid "Arc by Center, Angle && Point"
 msgstr "केन्द्र, कोण र बिन्दुद्वारा चाप"
 
 #: misc/builtin_stuff.cc:349
-msgid ""
-"Construct an arc by its center and a given angle, starting at a given point"
+msgid "Construct an arc by its center and a given angle, starting at a given point"
 msgstr "त्यसको केन्द्र र दिएको कोण, दिएको बिन्दुको सुरुद्वारा चाप रचना गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:357
@@ -1402,8 +1414,7 @@ msgid "Scale"
 msgstr "मापन गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:411
-msgid ""
-"Scale an object over a point, by the ratio given by the length of a segment"
+msgid "Scale an object over a point, by the ratio given by the length of a segment"
 msgstr "खण्डको लम्बाइद्वारा दिएको अनुपातमा बिन्दु माथि वस्तु मापन गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:418
@@ -1411,8 +1422,7 @@ msgid "Scale over Line"
 msgstr "रेखा माथि मापन गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:419
-msgid ""
-"An object scaled over a line, by the ratio given by the length of a segment"
+msgid "An object scaled over a line, by the ratio given by the length of a segment"
 msgstr "खण्डको लम्बाइद्वारा दिएको अनुपातमा रेखा माथि मापन गरिएको वस्तु"
 
 #: misc/builtin_stuff.cc:426
@@ -1440,11 +1450,10 @@ msgid "Apply Similitude"
 msgstr "समानता लागू गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:443
-#, fuzzy
 msgid ""
 "Apply a similitude to an object (the sequence of a scaling and rotation "
 "around a center)"
-msgstr "वस्तुमा समानता लागू गर्नुहोस् ( केन्द्रको वरिपरि मापन र परिक्रमणको अनुक्रम )"
+msgstr "एउटा वस्तुमा समानता लागू गर्नुहोस् ( केन्द्रको वरिपरि मापन र परिक्रमणको अनुक्रम )"
 
 #: misc/builtin_stuff.cc:450
 msgid "Harmonic Homology"
@@ -1539,14 +1548,12 @@ msgid "Test whether a given polygon is convex"
 msgstr "दिएको बहुभुज कन्भेक्स हो की होइन परीक्षण गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:582
-#, fuzzy
 msgid "Existence Test"
-msgstr "दूरी परीक्षण"
+msgstr "अस्तित्व परीक्षण"
 
 #: misc/builtin_stuff.cc:583
-#, fuzzy
 msgid "Test whether a given object is constructible"
-msgstr "दिएको बहुभुज कन्भेक्स हो की होइन परीक्षण गर्नुहोस्"
+msgstr "दिएको वस्तु रचनायोग्य हो होइन परीक्षण गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:590
 msgid "Distance Test"
@@ -1556,8 +1563,7 @@ msgstr "दूरी परीक्षण"
 msgid ""
 "Test whether a given point have the same distance from a given point and "
 "from another given point"
-msgstr ""
-"दिएको बिन्दु र अन्य दिएको बिन्दुबाट दिएको बिन्दुमा समान दूरी छ की छैन परीक्षण गर्नुहोस्"
+msgstr "दिएको बिन्दु र अन्य दिएको बिन्दुबाट दिएको बिन्दुमा समान दूरी छ की छैन परीक्षण गर्नुहोस्"
 
 #: misc/builtin_stuff.cc:599
 msgid "Vector Equality Test"
@@ -1625,20 +1631,19 @@ msgid "Enter the coordinates for the new point."
 msgstr "नयाँ बिन्दुका लागि समन्वय प्रविष्ट गर्नुहोस् ।"
 
 #: misc/guiaction.cc:250
-#, fuzzy
 msgid "Construct a Numeric Value"
-msgstr "पाठ लेबुल रचना गर्नुहोस् ।"
+msgstr "सङ्ख्यात्मक मान रचना गर्नुहोस्"
 
 #: misc/guiaction.cc:260
 msgid "Numeric Value"
-msgstr ""
+msgstr "सङ्ख्यात्मक मान"
 
-#: misc/kigfiledialog.cc:54 kig/kig_part.cpp:653 modes/typesdialog.cpp:455
+#: misc/kigfiledialog.cc:54 kig/kig_part.cpp:646 modes/typesdialog.cpp:424
 #, qt-format
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr "\"%1\" फाइल पहिल्यै अवस्थित छ । तपाईँले यसलाई अधिलेखन गर्न चाहनुहुन्छ ?"
 
-#: misc/kigfiledialog.cc:55 kig/kig_part.cpp:654 modes/typesdialog.cpp:457
+#: misc/kigfiledialog.cc:55 kig/kig_part.cpp:647 modes/typesdialog.cpp:426
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहोस् ?"
 
@@ -1655,7 +1660,6 @@ msgid "Use this edit field to modify the size of this angle."
 msgstr "यो कोणको साइज परिमार्जन गर्न यो सम्पादन फिल्ड प्रयोग गर्नुहोस् ।"
 
 #: misc/kiginputdialog.cc:160
-#, fuzzy
 msgid ""
 "Choose from this list the goniometric unit you want to use to modify the "
 "size of this angle.<br />\n"
@@ -1664,7 +1668,7 @@ msgid ""
 msgstr ""
 "तपाईँले यो कोणको साइज परिमार्जन गर्न चाहनुभएको ज्यामितिय एकाइ सूचीबाट यो छनोट "
 "गर्नुहोस् ।<br>\n"
-"यदि तपाईँले अन्य एकाइमा स्विच गर्नुभएमा, बायाँको सम्पादन फिल्डमा मान नयाँ चयन गरेको "
+"यदि तपाईँले अन्य एकाइमा स्विच गर्नुभएमा, बायाँको सम्पादन फाँटमा मान नयाँ चयन गरेको "
 "एकाइमा रूपान्तरण गरिन्छ ।"
 
 #: misc/lists.cc:302 misc/lists.cc:308
@@ -1688,21 +1692,20 @@ msgstr ""
 "हालको किग संस्करणद्वारा हटाइएको छ । तपाईँले पुरानो किग संस्करण (0.4 देखि 0.6) को "
 "प्रयोग गरेर यो म्याक्रो आयात गरेर नयाँ ढाँचामा निर्यात गर्न सक्नुहुन्छ ।"
 
-#: misc/lists.cc:376
+#: misc/lists.cc:374
 #, qt-format
 msgid "Unnamed Macro #%1"
 msgstr "बेनामी म्याक्रो #%1"
 
 #: misc/object_hierarchy.cc:551
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "This Kig file uses an object of type \"%1\", which this Kig version does not "
 "support. Perhaps you have compiled Kig without support for this object type, "
 "or perhaps you are using an older Kig version."
 msgstr ""
-"यो किग फाइलले त्यो किग संस्करणले समर्थन नगर्ने \"%1\" प्रकारको वस्तु प्रयोग गर्दछ । संभवत "
-"तपाईँले यो वस्तुका लागि समर्थन बिना किग कम्पाइल गर्नुभयो वा तपाईँले पुरानो किग संस्करण "
-"प्रयोग गर्दै हुनुहुन्छ ।"
+"यो किग फाइलले \"%1\" प्रकारको एउटा वस्तु प्रयोग गर्दछ, जहाँ यो किग संस्करणले समर्थन गर्दैन । तपाईँले यो वस्तु प्रकारका लागि समर्थन बिना किग कम्पाइल गर्नुभएको हुन सक्छ, "
+"वा तपाईँ एउटा पुरानो किग संस्करण प्रयोग गरिरहनु भएको हुन सक्छ ।"
 
 #: misc/special_constructors.cc:220
 msgid "Radical Lines for Conics"
@@ -1757,8 +1760,7 @@ msgid "Construct a polygon by giving its vertices"
 msgstr "यसको कोणिय बिन्दु दिएर बहुभुज रचना गर्नुहोस्"
 
 #: misc/special_constructors.cc:489
-msgid ""
-"... with this vertex (click on the first vertex to terminate construction)"
+msgid "... with this vertex (click on the first vertex to terminate construction)"
 msgstr "यो कोणिय बिन्दुसँग (रचना रोक्नका लागि पहिलो कोणिय बिन्दुमा क्लिक गर्नुहोस् )"
 
 #: misc/special_constructors.cc:490
@@ -1851,8 +1853,7 @@ msgstr "जेनेरिक आकर्षण"
 msgid ""
 "The unique affinity that maps three points (or a triangle) onto three other "
 "points (or a triangle)"
-msgstr ""
-"तीन अन्य बिन्दु (वा त्रिकोण) मा तीन बिन्दु (वा त्रिकोण) नक्शाङ्कन गर्ने अद्वितिय आकर्षण"
+msgstr "तीन अन्य बिन्दु (वा त्रिकोण) मा तीन बिन्दु (वा त्रिकोण) नक्शाङ्कन गर्ने अद्वितिय आकर्षण"
 
 #: misc/special_constructors.cc:1136
 msgid "Generic Projective Transformation"
@@ -1876,44 +1877,43 @@ msgstr "वृत्तसँग सम्बन्धित बिन्दु,
 
 #: misc/special_constructors.cc:1229
 msgid "Measure Transport"
-msgstr "ट्रान्सपोर्ट मापन गर्नुहोस्"
+msgstr "परिवहन मापन गर्नुहोस"
 
 #: misc/special_constructors.cc:1234
 msgid "Transport the measure of a segment or arc over a line or circle."
-msgstr "वृत्त वा रेका माथि खण्ड वा चापको मापन ट्रान्सपोर्ट"
+msgstr "वृत्त वा रेखा माथि खण्ड वा चापको मापन परिवहन गर्नुहोस्"
 
 #: misc/special_constructors.cc:1347 objects/special_calcers.cc:24
 msgid "Segment to transport"
-msgstr "ट्रान्सपोर्टको खण्ड"
+msgstr "परिवहनमा खण्ड"
 
 #: misc/special_constructors.cc:1349
 msgid "Arc to transport"
-msgstr "ट्रान्सपोर्टमा चाप"
+msgstr "परिवहनमा चाप"
 
 #: misc/special_constructors.cc:1351
-#, fuzzy
 msgid "Value to transport"
-msgstr "ट्रान्सपोर्टमा चाप"
+msgstr "परिवहन गर्न मान"
 
 #: misc/special_constructors.cc:1353
 msgid "Transport a measure on this line"
-msgstr "यो रेखामा मापन ट्रान्सपोर्ट"
+msgstr "यो रेखामा मापन परिवहन गर्नुहोस्"
 
 #: misc/special_constructors.cc:1355 objects/special_calcers.cc:22
 msgid "Transport a measure on this circle"
-msgstr "यो वृत्तमा मापन ट्रान्सपोर्ट"
+msgstr "यो वृत्तमा मापन परिवहन गर्नुहोस्"
 
 #: misc/special_constructors.cc:1359
 msgid "Start transport from this point of the circle"
-msgstr "वृत्तको यो बिन्दुबाट ट्रान्सपोर्ट सुरु गर्नुहोस्"
+msgstr "वृत्तको यो बिन्दुबाट परिवहन सुरु गर्नुहोस्"
 
 #: misc/special_constructors.cc:1361
 msgid "Start transport from this point of the line"
-msgstr "रेखाको यो बिन्दुबाट ट्रान्सपोर्ट सुरु गर्नुहोस्"
+msgstr "रेखाको यो बिन्दुबाट परिवहन सुरु गर्नुहोस्"
 
 #: misc/special_constructors.cc:1363
 msgid "Start transport from this point of the curve"
-msgstr "वक्रको यो बिन्दुबाट ट्रान्सपोर्ट सुरु गर्नुहोस्"
+msgstr "वक्रको यो बिन्दुबाट परिवहन सुरु गर्नुहोस्"
 
 #: misc/special_constructors.cc:1411 objects/intersection_types.cc:34
 msgid "Intersect with this conic"
@@ -1930,7 +1930,7 @@ msgstr "यो वृत्तसँग प्रतिच्छेदन गर
 
 #: misc/special_constructors.cc:1427
 msgid "Intersect"
-msgstr "प्रतिच्छेद"
+msgstr "प्रतिच्छेद गर्नुह"
 
 #: misc/special_constructors.cc:1428
 msgid "The intersection of two objects"
@@ -1989,8 +1989,7 @@ msgid "Construct Midpoint of This Point and Another One"
 msgstr "यो बिन्दु र अन्य कुनैको मध्यबिन्दु रचना गर्नुहोस्"
 
 #: misc/special_constructors.cc:1549
-msgid ""
-"Select the first of the points of which you want to construct the midpoint..."
+msgid "Select the first of the points of which you want to construct the midpoint..."
 msgstr "तपाईँले मध्यबिन्दु रचना गर्न चाहनुभएको बिन्दुको पहिलो बिन्दु चयन गर्नुहोस्"
 
 #: misc/special_constructors.cc:1550
@@ -2066,21 +2065,19 @@ msgid "Center of Curvature at This Point"
 msgstr "यो बिन्दुमा वक्रताको केन्द्र"
 
 #: misc/unit.cc:121
-#, fuzzy
 msgctxt "Translators: Pixel"
 msgid "pixel"
-msgstr " पिक्सेल"
+msgstr "पिक्सेल"
 
 #: misc/unit.cc:122
 msgctxt "Translators: Centimeter"
 msgid "cm"
-msgstr ""
+msgstr "सेन्टिमिटर"
 
 #: misc/unit.cc:123
-#, fuzzy
 msgctxt "Translators: Inch"
 msgid "in"
-msgstr "रेखा"
+msgstr "इञ्च"
 
 #: modes/construct_mode.cc:262 modes/normal.cc:278
 msgid "Which object?"
@@ -2120,20 +2117,19 @@ msgstr ""
 msgid "Use this button to change the icon of the current macro type."
 msgstr "हालको म्याक्रो प्रकारको प्रतिमा परिवर्तन गर्न यो बटन प्रयोग गर्नुहोस् ।"
 
-#: modes/edittype.cc:81
+#: modes/edittype.cc:80
 msgid "The name of the macro can not be empty."
 msgstr "म्याक्रोको नाम खाली हुन सक्दछ ।"
 
 #: modes/historydialog.cc:41
 msgid "History Browser"
-msgstr ""
+msgstr "इतिहास ब्राउजर"
 
-#: modes/historydialog.cc:125
-#, fuzzy
+#: modes/historydialog.cc:124
 msgid "Start of the construction"
-msgstr "रचना रद्द गर्नुहोस्"
+msgstr "निर्माण सुरु गर्नुहोस्"
 
-#: modes/label.cc:167 modes/macrowizard.cc:130 modes/typesdialog.cpp:313
+#: modes/label.cc:167 modes/macrowizard.cc:130 modes/typesdialog.cpp:278
 msgid "Name"
 msgstr "नाम"
 
@@ -2165,19 +2161,16 @@ msgid "Change Label"
 msgstr "लेबुल परिवर्तन गर्नुहोस्"
 
 #: modes/label.cc:649 objects/text_type.cc:324
-#, fuzzy
 msgid "Set Value"
-msgstr "शैली सेट गर्नुहोस्"
+msgstr "मान सेट गर्नुहोस्"
 
 #: modes/label.cc:649
-#, fuzzy
 msgid "Enter value:"
-msgstr "लेबुल पाठ प्रविष्ट गर्नुहोस्"
+msgstr "मान प्रविष्ट गर्नुहोस्:"
 
 #: modes/label.cc:680
-#, fuzzy
 msgid "Select the position for the new numeric value..."
-msgstr "नयाँ चापको अन्त्य बिन्दु चयन गर्नुहोस्..."
+msgstr "नयाँ सङ्ख्यात्मक मानका लागि स्थिति चयन गर्नुहोस्..."
 
 #: modes/macro.cc:91
 msgid ""
@@ -2221,19 +2214,16 @@ msgid "Enter a name and description for your new type."
 msgstr "तपाईँको नयाँ म्याक्रोका लागि नाम र वर्णन प्रविष्ट गर्नुहोस् ।"
 
 #: modes/macrowizard.cc:139
-#, fuzzy
 msgid "&Name:"
 msgstr "नाम:"
 
 #: modes/macrowizard.cc:146
-#, fuzzy
 msgid "&Description:"
 msgstr "वर्णन:"
 
 #: modes/macrowizard.cc:152
-#, fuzzy
 msgid "&Icon:"
-msgstr "प्रतिमा"
+msgstr "प्रतिमा:"
 
 #: modes/macrowizard.cc:174
 msgid "Define New Macro"
@@ -2271,7 +2261,7 @@ msgstr "रचना गर्नुहोस्"
 
 #: modes/popup.cc:248
 msgid "&Start"
-msgstr ""
+msgstr "सुरु गर्नुहोस्"
 
 #: modes/popup.cc:249
 msgid "Add Te&xt Label"
@@ -2295,33 +2285,31 @@ msgstr "समन्वय प्रणाली सेट गर्नुहो
 
 #: modes/popup.cc:336
 msgid "Black"
-msgstr ""
+msgstr "कालो"
 
 #: modes/popup.cc:337
-#, fuzzy
 msgid "Gray"
-msgstr "ग्रेडियन्ट"
+msgstr "खैरो"
 
 #: modes/popup.cc:338
-#, fuzzy
 msgid "Red"
-msgstr "रेडियन"
+msgstr "रातो"
 
 #: modes/popup.cc:339
 msgid "Green"
-msgstr ""
+msgstr "हरियो"
 
 #: modes/popup.cc:340
 msgid "Cyan"
-msgstr ""
+msgstr "सायन"
 
 #: modes/popup.cc:341
 msgid "Yellow"
-msgstr ""
+msgstr "पहेँलो"
 
 #: modes/popup.cc:342
 msgid "Dark Red"
-msgstr ""
+msgstr "गाढा रातो"
 
 #: modes/popup.cc:366
 msgid "&Hide"
@@ -2371,12 +2359,12 @@ msgstr "बिन्दु शैली परिवर्तन गर्नु
 msgid "Change Object Style"
 msgstr "वस्तु शैली परिवर्तन गर्नुहोस्"
 
-#: modes/popup.cc:921 kig/kig_part.cpp:251
+#: modes/popup.cc:921 kig/kig_part.cpp:252
 msgid "U&nhide All"
 msgstr "सबै लुकाएको हटाउनुहोस्"
 
 #: modes/popup.cc:1134
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 Object"
 msgid_plural "%1 Objects"
 msgstr[0] "%1 वस्तु"
@@ -2400,7 +2388,7 @@ msgstr ""
 msgid "Show text in a frame"
 msgstr "फ्रेममा पाठ देखाउनुहोस्"
 
-#: modes/textlabelwizard.cc:93 scripting/newscriptwizard.cc:67
+#: modes/textlabelwizard.cc:93 scripting/newscriptwizard.cc:66
 msgid "Select Arguments"
 msgstr "तर्क चयन गर्नुहोस्"
 
@@ -2422,8 +2410,7 @@ msgid "Construct an angle through this point"
 msgstr "यो बिन्दु हुँदै कोण रचना गर्नुहोस्"
 
 #: objects/angle_type.cc:44
-msgid ""
-"Select a point that the first half-line of the angle should go through..."
+msgid "Select a point that the first half-line of the angle should go through..."
 msgstr "पहिलो आधा-रेखा हुँदै जाने बिन्दु चयन गर्नुहोस्..."
 
 #: objects/angle_type.cc:45
@@ -2435,8 +2422,7 @@ msgid "Select the point to construct the angle in..."
 msgstr "कोण रचना गर्न बिन्दु चयन गर्नुहोस्..."
 
 #: objects/angle_type.cc:48
-msgid ""
-"Select a point that the second half-line of the angle should go through..."
+msgid "Select a point that the second half-line of the angle should go through..."
 msgstr "कोणको दोस्रो आधा-रेखा हुँदै जाने बिन्दु चयन गर्नुहोस्..."
 
 #: objects/angle_type.cc:103
@@ -2488,44 +2474,36 @@ msgid "Select the angle of the new arc..."
 msgstr "नयाँ चापको कोण चयन गर्नुहोस्..."
 
 #: objects/arc_type.cc:224
-#, fuzzy
 msgid "Construct a conic arc starting at this point"
-msgstr "यो बिन्दुमा सुरु चाप रचना गर्नुहोस्"
+msgstr "बिन्दुबाट सुरु भएको कोनिक चाप रचना गर्नुहोस्"
 
 #: objects/arc_type.cc:225
-#, fuzzy
 msgid "Select the start point of the new conic arc..."
-msgstr "नयाँ चापको सुरु बिन्दु चयन गर्नुहोस्..."
+msgstr "नयाँ कोनिक चापको सुरुआत बिन्दु चयन गर्नुहोस्..."
 
 #: objects/arc_type.cc:226
-#, fuzzy
 msgid "Construct a conic arc through this point"
-msgstr "यो बिन्दु हुँदै कोनिक रचना गर्नुहोस्"
+msgstr "यो बिन्दु मार्फत कोनिक चाप रचना गर्नुहोस्"
 
 #: objects/arc_type.cc:227
-#, fuzzy
 msgid "Select a point for the new conic arc to go through..."
-msgstr "यो हुँदै जाने नयाँ कोनिकका लागि बिन्दु चयन गर्नुहोस्..."
+msgstr "यस मार्फत जान नयाँ कोनिक चापका लागि बिन्दु चयन गर्नुहोस्..."
 
 #: objects/arc_type.cc:228
-#, fuzzy
 msgid "Construct a conic arc ending at this point"
-msgstr "यो बिन्दुमा अन्त्य हुँने चाप रचना गर्नुहोस्"
+msgstr "यो बिन्दुमा कोनिक चाप सङ्केतन रचना गर्नुहोस्"
 
 #: objects/arc_type.cc:229
-#, fuzzy
 msgid "Select the end point of the new conic arc..."
-msgstr "नयाँ चापको अन्त्य बिन्दु चयन गर्नुहोस्..."
+msgstr "नयाँ कोनिक चापको अन्त्य बिन्दु चयन गर्नुहोस्..."
 
 #: objects/arc_type.cc:233
-#, fuzzy
 msgid "Construct an conic arc with this center"
-msgstr "यो केन्द्रसँग चाप रचना गर्नुहोस्"
+msgstr "यो केन्द्रसँग एउटा कोनिक चाप रचना गर्नुहोस्"
 
 #: objects/arc_type.cc:234
-#, fuzzy
 msgid "Select the center of the new conic arc..."
-msgstr "नयाँ चापको केन्द्र चयन गर्नुहोस्..."
+msgstr "नयाँ कोनिक चापको केन्द्र चयन गर्नुहोस्..."
 
 #: objects/bogus_imp.cc:338
 msgid "Test Result"
@@ -2549,11 +2527,11 @@ msgstr "अर्धव्यास"
 
 #: objects/circle_imp.cc:149 objects/conic_imp.cc:83 objects/other_imp.cc:375
 msgid "Center"
-msgstr ""
+msgstr "केन्द्र"
 
 #: objects/circle_imp.cc:150
 msgid "Expanded Cartesian Equation"
-msgstr "विस्तारित कार्टेसियन समिकरण"
+msgstr "विस्तारित कार्टेसियन समीकरण"
 
 #: objects/circle_imp.cc:151 objects/conic_imp.cc:86 objects/cubic_imp.cc:293
 msgid "Cartesian Equation"
@@ -2615,14 +2593,12 @@ msgid "Select a point for the new circle to go through..."
 msgstr "यो हुँदै जान नयाँ वृत्तका लागि बिन्दु चयन गर्नुहोस्..."
 
 #: objects/circle_type.cc:193
-#, fuzzy
 msgid "With this radius"
-msgstr "यो चापसँग"
+msgstr "यो अर्धव्याससँग"
 
 #: objects/circle_type.cc:194
-#, fuzzy
 msgid "Select the length of the radius..."
-msgstr "परिक्रमणको कोण चयन गर्नुहोस्..."
+msgstr "अर्धव्यासको लम्बाइ चयन गर्नुहोस्..."
 
 #: objects/conic_imp.cc:82
 msgid "Conic Type"
@@ -2650,20 +2626,20 @@ msgstr "पाराबोला"
 
 #: objects/conic_imp.cc:262
 msgid "rho"
-msgstr ""
+msgstr "rho"
 
 #: objects/conic_imp.cc:269
 msgid "cos theta"
-msgstr ""
+msgstr "कस थिटा"
 
 #: objects/conic_imp.cc:270
 msgid "sin theta"
-msgstr ""
+msgstr "साइन थिटा"
 
 #: objects/conic_imp.cc:272
-#, fuzzy, qt-format
+#, qt-format
 msgid "[centered at %1]"
-msgstr "rho = %1   [ %2 मा केन्द्रित]"
+msgstr "[%1 मा केन्द्रित]"
 
 #: objects/conic_imp.cc:382
 msgid "conic"
@@ -2704,7 +2680,7 @@ msgstr "कोनिक लुकाउनुहोस्"
 
 #: objects/conic_imp.cc:532
 msgid "Supporting Conic"
-msgstr ""
+msgstr "कोनिक समर्थन गर्दै"
 
 #: objects/conic_imp.cc:533 objects/line_imp.cc:126 objects/other_imp.cc:383
 msgid "First End Point"
@@ -2715,49 +2691,41 @@ msgid "Second End Point"
 msgstr "दोस्रो अन्त्य बिन्दु"
 
 #: objects/conic_imp.cc:608
-#, fuzzy
 msgid "conic arc"
-msgstr "कोनिक"
+msgstr "कोनिक चाप"
 
 #: objects/conic_imp.cc:609
-#, fuzzy
 msgid "Select this conic arc"
-msgstr "यो कोनिक चयन गर्नुहोस्"
+msgstr "यो कोनिक चाप चयन गर्नुहोस्"
 
 #: objects/conic_imp.cc:610
-#, fuzzy, qt-format
+#, qt-format
 msgid "Select conic arc %1"
-msgstr " %1 कोनिक चयन गर्नुहोस्"
+msgstr "%1 कोनिक चाप चयन गर्नुहोस्"
 
 #: objects/conic_imp.cc:611
-#, fuzzy
 msgid "Remove a Conic Arc"
-msgstr "कोनिक हटाउनुहोस्"
+msgstr "कोनिक चाप हटाउनुहोस्"
 
 #: objects/conic_imp.cc:612
-#, fuzzy
 msgid "Add a Conic Arc"
-msgstr "कोनिक थप्नुहोस्"
+msgstr "कोनिक चाप थप्नुहोस्"
 
 #: objects/conic_imp.cc:613
-#, fuzzy
 msgid "Move a Conic Arc"
-msgstr "कोनिक सार्नुहोस्"
+msgstr "कोनिक चाप सार्नुहोस्"
 
 #: objects/conic_imp.cc:614
-#, fuzzy
 msgid "Attach to this conic arc"
-msgstr "यो कोनिकमा संलग्र गर्नुहोस्"
+msgstr "यो कोनिक चापमा संलग्र गर्नुहोस्"
 
 #: objects/conic_imp.cc:615
-#, fuzzy
 msgid "Show a Conic Arc"
-msgstr "कोनिक देखाउनुहोस्"
+msgstr "कोनिक चाप देखाउनुहोस्"
 
 #: objects/conic_imp.cc:616
-#, fuzzy
 msgid "Hide a Conic Arc"
-msgstr "कोनिक लुकाउनुहोस्"
+msgstr "कोनिक चाप लुकाउनुहोस्"
 
 #: objects/conic_types.cc:33 objects/conic_types.cc:87
 #: objects/conic_types.cc:221
@@ -2785,7 +2753,7 @@ msgstr "नयाँ कोनिकको दोस्रो एसयम्ट
 
 #: objects/conic_types.cc:140
 msgid "Construct an ellipse with this focus"
-msgstr "यो फोकससँग दीर्घवृत्त रचना गर्नुहोस्"
+msgstr "यो फोकससँग एउटा दीर्घवृत्त रचना गर्नुहोस्"
 
 #: objects/conic_types.cc:145
 msgid "Select the first focus of the new ellipse..."
@@ -3025,14 +2993,12 @@ msgid "Select the circle we want to invert against..."
 msgstr "हामिले फेरि उल्टाउन चाहेको वृत्त चयन गर्नुहोस्..."
 
 #: objects/inversion_type.cc:38
-#, fuzzy
 msgid "Compute the inversion of this object"
 msgstr "यो बिन्दुको व्युत्क्रम गणना गर्नुहोस्"
 
 #: objects/inversion_type.cc:39
-#, fuzzy
 msgid "Select the object to invert..."
-msgstr "उल्टाउन बिन्दु चयन गर्नुहोस्..."
+msgstr "उल्टाउन वस्तु चयन गर्नुहोस्..."
 
 #: objects/inversion_type.cc:290
 msgid "Compute the inversion of this point"
@@ -3087,14 +3053,12 @@ msgid "Length"
 msgstr "लम्बाइ"
 
 #: objects/line_imp.cc:125 objects/line_imp.cc:195
-#, fuzzy
 msgid "Support Line"
-msgstr "समर्थन गरेन"
+msgstr "समर्थन रेखा"
 
 #: objects/line_imp.cc:196
-#, fuzzy
 msgid "End Point"
-msgstr "मध्यबिन्दु"
+msgstr "अन्त्य बिन्दु"
 
 #: objects/line_imp.cc:523 objects/line_imp.cc:532
 msgid "line"
@@ -3430,9 +3394,8 @@ msgid "Arc Length"
 msgstr "चाप लम्बाइ"
 
 #: objects/other_imp.cc:382
-#, fuzzy
 msgid "Support Circle"
-msgstr "वृत्त देखाउनुहोस्"
+msgstr "समर्थन वृत्त"
 
 #: objects/other_imp.cc:571
 msgid "angle"
@@ -3655,14 +3618,12 @@ msgid "Select the segment to transport on the circle..."
 msgstr "वृत्तमा ट्रान्सपोर्ट गर्ने खण्ड चयन गर्नुहोस्..."
 
 #: objects/point_type.cc:684
-#, fuzzy
 msgid "Select a number/length as x coordinate of the point..."
-msgstr "मापनको तत्व भएको खण्ड लम्बाइ चयन गर्नुहोस्..."
+msgstr "बिन्दुको x समकक्षको रुपमा सङ्ख्या/लम्बाइ चयन गर्नुहोस्..."
 
 #: objects/point_type.cc:686
-#, fuzzy
 msgid "Select a number/length as y coordinate of the point..."
-msgstr "मापनको तत्व भएको खण्ड लम्बाइ चयन गर्नुहोस्..."
+msgstr "बिन्दुको y समकक्षको रूपमा सङ्ख्या/लम्बाइ चयन गर्नुहोस्..."
 
 #: objects/polygon_imp.cc:225
 msgid "Number of sides"
@@ -3808,35 +3769,28 @@ msgid "Select the polygon of which you want the intersection with a line..."
 msgstr "तपाईँले रेखासँग प्रतिच्छेदन गर्न चाहनुभएको बहुभुज चयन गर्नुहोस्..."
 
 #: objects/polygon_type.cc:393
-#, fuzzy
 msgid "Intersect this line with a polygon"
-msgstr "रेखासँग यो बहुभुज प्रतिच्छेद गर्नुहोस्"
+msgstr "यो रेखा बहुभुजसँग प्रतिच्छेदन गर्नुहोस्"
 
 #: objects/polygon_type.cc:394
-#, fuzzy
 msgid "Select the line of which you want the intersection with a polygon..."
-msgstr "तपाईँले रेखासँग प्रतिच्छेदन गर्न चाहनुभएको बहुभुज चयन गर्नुहोस्..."
+msgstr "तपाईँले बहुभुजसँग प्रतिक्षेदन गर्न चाहनुभएको रेखा चयन गर्नुहोस्..."
 
 #: objects/polygon_type.cc:603
-#, fuzzy
 msgid "Intersect this polygon with another polygon"
-msgstr "रेखासँग यो बहुभुज प्रतिच्छेद गर्नुहोस्"
+msgstr "यो बहुभुज अर्को बहुभुजसँग प्रतिच्छेद गर्नुहोस्"
 
 #: objects/polygon_type.cc:604
-#, fuzzy
-msgid ""
-"Select the polygon of which you want the intersection with another polygon..."
-msgstr "तपाईँले रेखासँग प्रतिच्छेदन गर्न चाहनुभएको बहुभुज चयन गर्नुहोस्..."
+msgid "Select the polygon of which you want the intersection with another polygon..."
+msgstr "तपाईँले अर्को बहुभुजसँग प्रतिच्छेदन गर्न चाहनुभएको बहुभुज चयन गर्नुहोस्..."
 
 #: objects/polygon_type.cc:605
-#, fuzzy
 msgid "Intersect with this polygon"
-msgstr "यो रेखासँग प्रतिच्छेदन गर्नुहोस्"
+msgstr "यो बहुभुजसँग प्रतिच्छेदन गर्नुहोस्"
 
 #: objects/polygon_type.cc:606
-#, fuzzy
 msgid "Select the second polygon for the intersection..."
-msgstr "प्रतिच्छेदन गर्न दोस्रो वस्तु चयन गर्नुहोस्..."
+msgstr "प्रतिक्षेदनका लागि दोस्रो बहुभुज चयन गर्नुहोस्..."
 
 #: objects/polygon_type.cc:752
 msgid "Construct the vertices of this polygon"
@@ -4015,8 +3969,7 @@ msgid "Check if this point has the same distance"
 msgstr "यो बिन्दु समान दूरीमा छ की छैन जाँच गर्नुहोस्"
 
 #: objects/tests_type.cc:300
-msgid ""
-"Select the point which might have the same distance from two other points..."
+msgid "Select the point which might have the same distance from two other points..."
 msgstr "दुई अन्य बिन्दुबाट समान दूरीमा हुन सक्ने बिन्दु चयन गर्नुहोस्..."
 
 #: objects/tests_type.cc:301
@@ -4068,25 +4021,20 @@ msgid "The two vectors are not the same."
 msgstr "दुई भेक्टर समान छैन ।"
 
 #: objects/tests_type.cc:386
-#, fuzzy
 msgid "Check whether this object exists"
-msgstr "यो बिन्दु वक्रमा छ की छैन जाँच गर्नुहोस्"
+msgstr "यो वस्तु अवस्थित छ छैन जाँच गर्नुहोस्"
 
 #: objects/tests_type.cc:387
-#, fuzzy
 msgid "Select the object for the existence check..."
-msgstr "मापनमा वस्तु चयन गर्नुहोस्..."
+msgstr "अस्तित्व जाँचका लागि वस्तु चयन गर्नुहोस्..."
 
 #: objects/tests_type.cc:411
-#, fuzzy
-msgid "The object exists."
-msgstr "वस्तु प्रकार"
+msgid "Object exists."
+msgstr "वस्तु अवस्थित छ ।"
 
 #: objects/tests_type.cc:413
-#, fuzzy
-#| msgid "The two vectors are not the same."
-msgid "The object does not exist."
-msgstr "दुई भेक्टर समान छैन ।"
+msgid "The Object does not exist."
+msgstr "वस्तु अवस्थित छैन ।"
 
 #: objects/text_imp.cc:84
 msgid "Text"
@@ -4131,96 +4079,81 @@ msgstr "लेबुल लुकाउनुहोस्"
 
 #: objects/text_imp.cc:193
 msgid "numeric label"
-msgstr ""
+msgstr "सङ्ख्यात्मक लेबुल"
 
 #: objects/text_imp.cc:194
-#, fuzzy
 msgid "Select this numeric label"
-msgstr "यो लेबुल चयन गर्नुहोस्"
+msgstr "यो सङ्ख्यात्मक लेबुल चयन गर्नुहोस्"
 
 #: objects/text_imp.cc:195
-#, fuzzy, qt-format
+#, qt-format
 msgid "Select numeric label %1"
-msgstr "%1 लेबुल चयन गर्नुहोस्"
+msgstr "%1 सङ्ख्यात्मक लेबुल चयन गर्नुहोस्"
 
 #: objects/text_imp.cc:196
-#, fuzzy
 msgid "Remove a Numeric Label"
-msgstr "लेबुल हटाउनुहोस्"
+msgstr "सङ्ख्यात्मक लेबुल हटाउनुहोस्"
 
 #: objects/text_imp.cc:197
-#, fuzzy
 msgid "Add a Numeric Label"
-msgstr "लेबुल थप्नुहोस्"
+msgstr "सङ्ख्यात्मक लेबुल थप्नुहोस्"
 
 #: objects/text_imp.cc:198
-#, fuzzy
 msgid "Move a Numeric Label"
-msgstr "लेबुल सार्नुहोस्"
+msgstr "सङ्ख्यात्मक लेबुल सार्नुहोस्"
 
 #: objects/text_imp.cc:199
-#, fuzzy
 msgid "Attach to this numeric label"
-msgstr "यो लेबुलमा संलग्र गर्नुहोस्"
+msgstr "यो सङ्ख्यात्मक लेबुलमा संलग्र गर्नुहोस्"
 
 #: objects/text_imp.cc:200
-#, fuzzy
 msgid "Show a Numeric Label"
-msgstr "लेबुल देखाउनुहोस्"
+msgstr "सङ्ख्यात्मक लेबुल देखाउनुहोस्"
 
 #: objects/text_imp.cc:201
-#, fuzzy
 msgid "Hide a Numeric Label"
-msgstr "लेबुल लुकाउनुहोस्"
+msgstr "सङ्ख्यात्मक लेबुल लुकाउनुहोस्"
 
 #: objects/text_imp.cc:231 objects/text_imp.cc:323
 msgid "Numeric value"
-msgstr ""
+msgstr "सङ्ख्यात्मक मान"
 
 #: objects/text_imp.cc:285
-#, fuzzy
 msgid "boolean label"
-msgstr "लेबुल सार्नुहोस्"
+msgstr "बूलियन लेबुल"
 
 #: objects/text_imp.cc:286
-#, fuzzy
 msgid "Select this boolean label"
-msgstr "यो लेबुल चयन गर्नुहोस्"
+msgstr "यो बूलियन लेबुल चयन गर्नुहोस्"
 
 #: objects/text_imp.cc:287
-#, fuzzy, qt-format
+#, qt-format
 msgid "Select boolean label %1"
-msgstr "%1 लेबुल चयन गर्नुहोस्"
+msgstr "%1 बूलियन लेबुल चयन गर्नुहोस्"
 
 #: objects/text_imp.cc:288
-#, fuzzy
 msgid "Remove a Boolean Label"
-msgstr "लेबुल हटाउनुहोस्"
+msgstr "बूलियन लेबुल हटाउनुहोस्"
 
 #: objects/text_imp.cc:289
-#, fuzzy
 msgid "Add a Boolean Label"
-msgstr "लेबुल थप्नुहोस्"
+msgstr "बूलियन लेबुल थप्नुहोस्"
 
 #: objects/text_imp.cc:290
-#, fuzzy
 msgid "Move a Boolean Label"
-msgstr "लेबुल सार्नुहोस्"
+msgstr "बूलियन लेबुल सार्नुहोस्"
 
 #: objects/text_imp.cc:291
-#, fuzzy
 msgid "Attach to this boolean label"
-msgstr "यो लेबुलमा संलग्र गर्नुहोस्"
+msgstr "यो बूलियन लेबुलमा संलग्र गर्नुहोस्"
 
 #: objects/text_imp.cc:292
-#, fuzzy
 msgid "Show a Boolean Label"
-msgstr "लेबुल देखाउनुहोस्"
+msgstr "बूलियन लेबुल देखाउनुहोस्"
 
 #: objects/text_imp.cc:293
-#, fuzzy
 msgid "Hide a Boolean Label"
-msgstr "लेबुल लुकाउनुहोस्"
+msgstr "बूलियन लेबुल लुकाउनुहोस्"
 
 #: objects/text_type.cc:175
 msgid "&Copy Text"
@@ -4231,36 +4164,32 @@ msgid "&Toggle Frame"
 msgstr "फ्रेम टगल गर्नुहोस्"
 
 #: objects/text_type.cc:177
-#, fuzzy
 msgid "Set &Font..."
-msgstr "लम्बाइ सेट गर्नुहोस्..."
+msgstr "फन्ट सेट गर्नुहोस्..."
 
 #: objects/text_type.cc:206
 msgid "Toggle Label Frame"
 msgstr "लेबुल फ्रेम टगल गर्नुहोस्"
 
 #: objects/text_type.cc:218
-#, fuzzy
 msgid "Change Label Font"
-msgstr "लेबुल परिवर्तन गर्नुहोस्"
+msgstr "लेबुल फन्ट परिवर्तन गर्नुहोस्"
 
 #: objects/text_type.cc:245
 msgid "&Redefine..."
 msgstr "पुन: परिभाषित गर्नुहोस्..."
 
 #: objects/text_type.cc:296
-#, fuzzy
 msgid "Change &Value..."
-msgstr "लेबुल परिवर्तन गर्नुहोस्"
+msgstr "मान परिवर्तन गर्नुहोस्..."
 
 #: objects/text_type.cc:324
-#, fuzzy
-msgid "Enter the new value:"
-msgstr "नयाँ समकक्ष प्रविष्ट गर्नुहोस् ।"
+msgid "Enter the new value: "
+msgstr "नयाँ मान प्रविष्ट गर्नुहोस्:"
 
 #: objects/text_type.cc:329
 msgid "Change Displayed Value"
-msgstr ""
+msgstr "प्रदर्शन गरिएका मान परिवर्तन गर्नुहोस्"
 
 #: objects/transform_types.cc:33
 msgid "Translate this object"
@@ -4344,37 +4273,28 @@ msgid "Select the center point of the scaling..."
 msgstr "मापनको केन्द्र बिन्दु चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:186 objects/transform_types.cc:273
-#, fuzzy
 msgid "Scale by this length"
-msgstr "यो केन्द्रसँग मापन गर्नुहोस्"
+msgstr "यो लम्बाइद्वारा मापन गर्नुहोस्"
 
 #: objects/transform_types.cc:187 objects/transform_types.cc:274
-#, fuzzy
-msgid ""
-"Select a length or a segment whose length is the factor of the scaling..."
-msgstr "मापनको तत्व भएको खण्ड लम्बाइ चयन गर्नुहोस्..."
+msgid "Select a length or a segment whose length is the factor of the scaling..."
+msgstr "लम्बाइ वा खण्ड चयन गर्नुहोस् जसको लम्बाइ मापनको तत्व हो..."
 
 #: objects/transform_types.cc:229 objects/transform_types.cc:312
-#, fuzzy
 msgid "Scale this length..."
-msgstr "लम्बाइ सेट गर्नुहोस्..."
+msgstr "यो लम्बाइ मापन गर्नुहोस्..."
 
 #: objects/transform_types.cc:230 objects/transform_types.cc:313
-#, fuzzy
-msgid ""
-"Select the first of two lengths whose ratio is the factor of the scaling..."
-msgstr "मापनको तत्व भएको दुई खण्ड अनुपातको पहिलो चयन गर्नुहोस्..."
+msgid "Select the first of two lengths whose ratio is the factor of the scaling..."
+msgstr "पहिलो दुई लम्बाइहरू चयन गर्नुहोस् जसको अनुपात मापनको तत्व हो..."
 
 #: objects/transform_types.cc:231 objects/transform_types.cc:314
-#, fuzzy
 msgid "...to this other length"
-msgstr "यो अर्को त्रिभुजमा"
+msgstr "...यो अन्य लम्बाइमा"
 
 #: objects/transform_types.cc:232 objects/transform_types.cc:315
-#, fuzzy
-msgid ""
-"Select the second of two lengths whose ratio is the factor of the scaling..."
-msgstr "मापनको तत्व भएको दुई खण्ड अनुपातको दोस्रो चयन गर्नुहोस्..."
+msgid "Select the second of two lengths whose ratio is the factor of the scaling..."
+msgstr "दोस्रो दुई लम्बाइहरू चयन गर्नुहोस् जसको अनुपात मापनको तत्व हो..."
 
 #: objects/transform_types.cc:270 objects/transform_types.cc:308
 msgid "Select the object to scale"
@@ -4469,8 +4389,7 @@ msgid "First of 3 starting points"
 msgstr "तीन सुरु बिन्दुमा पहिलो"
 
 #: objects/transform_types.cc:472
-msgid ""
-"Select the first of the three starting points of the generic affinity..."
+msgid "Select the first of the three starting points of the generic affinity..."
 msgstr "जेनेरिक आकर्षणको तीन सुरु बिन्दुको पहिलो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:473
@@ -4478,8 +4397,7 @@ msgid "Second of 3 starting points"
 msgstr "तीन सुरु बिन्दुको दोस्रो"
 
 #: objects/transform_types.cc:474
-msgid ""
-"Select the second of the three starting points of the generic affinity..."
+msgid "Select the second of the three starting points of the generic affinity..."
 msgstr "जेनेरिक आकर्षणको तीन सुरु बिन्दुको दोस्रो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:475
@@ -4487,8 +4405,7 @@ msgid "Third of 3 starting points"
 msgstr "तीन सुरु बिन्दुको तेस्रो"
 
 #: objects/transform_types.cc:476
-msgid ""
-"Select the third of the three starting points of the generic affinity..."
+msgid "Select the third of the three starting points of the generic affinity..."
 msgstr "जेनेरिक आकर्षणको तीन सुरु बिन्दुको तेस्रो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:477 objects/transform_types.cc:578
@@ -4544,8 +4461,7 @@ msgid "First of 4 starting points"
 msgstr "चार सुरु बिन्दुको पहिलो"
 
 #: objects/transform_types.cc:571
-msgid ""
-"Select the first of the four starting points of the generic projectivity..."
+msgid "Select the first of the four starting points of the generic projectivity..."
 msgstr "जेनेरिक प्रक्षेपित चार सुरु बिन्दुको पहिलो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:572
@@ -4553,8 +4469,7 @@ msgid "Second of 4 starting points"
 msgstr "चार सुरु बिन्दुको दोस्रो"
 
 #: objects/transform_types.cc:573
-msgid ""
-"Select the second of the four starting points of the generic projectivity..."
+msgid "Select the second of the four starting points of the generic projectivity..."
 msgstr "जेनेरिक प्रक्षेपित चार सुरु बिन्दुको दोस्रो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:574
@@ -4562,8 +4477,7 @@ msgid "Third of 4 starting points"
 msgstr "चार सुरु बिन्दुको तेस्रो"
 
 #: objects/transform_types.cc:575
-msgid ""
-"Select the third of the four starting points of the generic projectivity..."
+msgid "Select the third of the four starting points of the generic projectivity..."
 msgstr "जेनेरिक प्रक्षेपितको चार सुरु बिन्दुको तेस्रो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:576
@@ -4571,8 +4485,7 @@ msgid "Fourth of 4 starting points"
 msgstr "चार सुरु बिन्दुको चौथो"
 
 #: objects/transform_types.cc:577
-msgid ""
-"Select the fourth of the four starting points of the generic projectivity..."
+msgid "Select the fourth of the four starting points of the generic projectivity..."
 msgstr "जेनेरिक प्रक्षेपित चार सुरु बिन्दुको चौथो चयन गर्नुहोस्..."
 
 #: objects/transform_types.cc:579
@@ -4652,8 +4565,7 @@ msgid "Apply a similitude mapping a point onto this point"
 msgstr "यो बिन्दुमा अनुरूपता मानचित्र बिन्दु लागू गर्नुहोस्"
 
 #: objects/transform_types.cc:898
-msgid ""
-"Select the point onto which the similitude should map the first point..."
+msgid "Select the point onto which the similitude should map the first point..."
 msgstr "पहिलो बिन्दुमा अनुरूप नक्शाङ्कन गर्नु पर्ने बिन्दु चयन गर्नुहोस्..."
 
 #: objects/vector_type.cc:26
@@ -4677,8 +4589,7 @@ msgid "Construct the vector sum of this vector and another one."
 msgstr "यो भेक्टर र अन्यको भेक्टर योग रचना गर्नुहोस्"
 
 #: objects/vector_type.cc:62
-msgid ""
-"Select the first of the two vectors of which you want to construct the sum..."
+msgid "Select the first of the two vectors of which you want to construct the sum..."
 msgstr "तपाईँले योग रचना गर्न चाहनुभएको दुई भेक्टरको पहिलो चयन गर्नुहोस्..."
 
 #: objects/vector_type.cc:63
@@ -4686,8 +4597,7 @@ msgid "Construct the vector sum of this vector and the other one."
 msgstr "यो भेक्टर र अर्को एउटाको भेक्टर योग रचना गर्नुहोस्"
 
 #: objects/vector_type.cc:64
-msgid ""
-"Select the other of the two vectors of which you want to construct the sum..."
+msgid "Select the other of the two vectors of which you want to construct the sum..."
 msgstr "तपाईँले योग रचना गर्न चाहनुभएको दुई भेक्टरको अर्को चयन गर्नुहोस्..."
 
 #: objects/vector_type.cc:65
@@ -4698,23 +4608,19 @@ msgstr "यो बिन्दुमा सुरु भेक्टर यो�
 msgid "Select the point to construct the sum vector in..."
 msgstr "यसमा भेक्टर योग रचना गर्ने बिन्दु चयन गर्नुहोस्..."
 
-#: scripting/newscriptwizard.cc:63
+#: scripting/newscriptwizard.cc:62
 msgid "New Script"
 msgstr "नयाँ स्क्रिप्ट"
 
-#: scripting/newscriptwizard.cc:73
-#, fuzzy
-#| msgid ""
-#| "Select the argument objects ( if any )\n"
-#| "in the Kig window and press \"Next\"."
+#: scripting/newscriptwizard.cc:72
 msgid ""
-"Select the argument objects (if any)\n"
+"Select the argument objects ( if any )\n"
 "in the Kig window and press \"Next\"."
 msgstr ""
 "किग सञ्झ्यालमा तर्क वस्तु ( यदि कुनै छ भने )\n"
 "चयन गर्नुहोस् र \"पछिल्लो\" थिच्नुहोस् ।"
 
-#: scripting/newscriptwizard.cc:79
+#: scripting/newscriptwizard.cc:78
 msgid "Enter Code"
 msgstr "सङ्केत प्रविष्ट गर्नुहोस्"
 
@@ -4743,7 +4649,7 @@ msgstr ""
 "तपाईँको स्क्रिप्ट कार्यान्वयन गर्दा पाइथोन व्याख्यताले त्रुटि फेला पार्यो । कृपया स्क्रिप्ट "
 "समाधान गरेर समाप्त बटन फेरि क्लिक गर्नुहोस् ।"
 
-#: scripting/script_mode.cc:209 scripting/script_mode.cc:351
+#: scripting/script_mode.cc:209 scripting/script_mode.cc:356
 #, qt-format
 msgid ""
 "The Python Interpreter generated the following error output:\n"
@@ -4762,16 +4668,16 @@ msgstr ""
 "वैध वस्तु उत्पन्न गर्दैन । कृपया स्क्रिप्ट समाधान गर्नुहोस् र समाप्त बटनलाई फेरि क्लिक गर्नुहोस् "
 "।"
 
-#: scripting/script_mode.cc:317
+#: scripting/script_mode.cc:322
 msgctxt "'Edit' is a verb"
 msgid "Edit Script"
 msgstr "स्क्रिप्ट सम्पादन गर्नुहोस्"
 
-#: scripting/script_mode.cc:339
+#: scripting/script_mode.cc:344
 msgid "Edit Python Script"
 msgstr "पाइथोन स्क्रिप्ट सम्पादन गर्नुहोस्"
 
-#: scripting/script_mode.cc:349
+#: scripting/script_mode.cc:354
 msgid ""
 "The Python interpreter caught an error during the execution of your script. "
 "Please fix the script."
@@ -4779,7 +4685,7 @@ msgstr ""
 "तपाईँको स्क्रिप्ट कार्यान्वयन गर्दा पाइथोन व्याख्यताले त्रुटि फेला पार्यो । कृपया स्क्रिप्ट "
 "समाधान गरेर समाप्त बटन फेरि क्लिक गर्नुहोस् ।"
 
-#: scripting/script_mode.cc:356
+#: scripting/script_mode.cc:361
 msgid ""
 "There seems to be an error in your script. The Python interpreter reported "
 "no errors, but the script does not generate a valid object. Please fix the "
@@ -4789,33 +4695,22 @@ msgstr ""
 "वैध वस्तु उत्पन्न गर्दैन । कृपया स्क्रिप्ट समाधान गर्नुहोस् र समाप्त बटनलाई फेरि क्लिक गर्नुहोस् "
 "।"
 
-#: kig/kig.cpp:90
+#: kig/kig.cpp:91
 msgid "Could not find the necessary Kig library, check your installation."
 msgstr "आवश्यक किग लाइब्रेरी फेला पार्न सकेन, तपाईँको स्थापना जाँच गर्नुहोस् ।"
 
-#: kig/kig.cpp:203
+#: kig/kig.cpp:204
 #, qt-format
 msgid "Save changes to document %1?"
 msgstr "परिवर्तनहरू %1 कागजातमा बचत गर्न चाहनुहुन्छ ?"
 
-#: kig/kig.cpp:204
+#: kig/kig.cpp:205
 msgid "Save Changes?"
 msgstr "परिवर्तनहरू बचत गर्नुहुन्छ ?"
 
-#: kig/kig.cpp:239
-#, fuzzy
-#| msgid ""
-#| "*.kig *.kigz *.kgeo *.seg|All Supported Files (*.kig *.kigz *.kgeo *."
-#| "seg)\n"
-#| "*.kig|Kig Documents (*.kig)\n"
-#| "*.kigz|Compressed Kig Documents (*.kigz)\n"
-#| "*.kgeo|KGeo Documents (*.kgeo)\n"
-#| "*.seg|KSeg Documents (*.seg)\n"
-#| "*.fgeo|Dr. Geo Documents (*.fgeo)\n"
-#| "*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
+#: kig/kig.cpp:240
 msgid ""
-"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
-"seg *.fgeo *.fig)\n"
+"*.kig *.kigz *.kgeo *.seg|All Supported Files (*.kig *.kigz *.kgeo *.seg)\n"
 "*.kig|Kig Documents (*.kig)\n"
 "*.kigz|Compressed Kig Documents (*.kigz)\n"
 "*.kgeo|KGeo Documents (*.kgeo)\n"
@@ -4831,194 +4726,185 @@ msgstr ""
 "*.fgeo|डा. जिव कागजात (*.fgeo)\n"
 "*.fig *.FIG|काब्री कागजात (*.fig *.FIG)"
 
-#: kig/kig_commands.cpp:99
+#: kig/kig_commands.cpp:100
 #, qt-format
 msgid "Remove %1 Objects"
 msgstr "%1 वस्तु हटाउनुहोस्"
 
-#: kig/kig_commands.cpp:111
+#: kig/kig_commands.cpp:112
 #, qt-format
 msgid "Add %1 Objects"
 msgstr "%1 वस्तु थप्नुहोस्"
 
-#: kig/kig_part.cpp:86
+#: kig/kig_part.cpp:85
 msgid "KigPart"
 msgstr "किग भाग"
 
-#: kig/kig_part.cpp:91
+#: kig/kig_part.cpp:90
 msgid "&Set Coordinate System"
 msgstr "समकक्ष प्रणाली सेट गर्नुहोस्"
 
-#: kig/kig_part.cpp:128
+#: kig/kig_part.cpp:127
 msgid "Kig Options"
 msgstr "किग विकल्प"
 
-#: kig/kig_part.cpp:132
+#: kig/kig_part.cpp:131
 msgid "Show grid"
 msgstr "ग्रिड देखाउनुहोस्"
 
-#: kig/kig_part.cpp:135
+#: kig/kig_part.cpp:134
 msgid "Show axes"
 msgstr "अक्ष देखाउनुहोस्"
 
-#: kig/kig_part.cpp:222
+#: kig/kig_part.cpp:223
 msgid "Invert Selection"
 msgstr "चयन उल्टाउनुहोस्"
 
-#: kig/kig_part.cpp:229
+#: kig/kig_part.cpp:230
 msgid "&Delete Objects"
 msgstr "वस्तु मेट्नुहोस्"
 
-#: kig/kig_part.cpp:233
+#: kig/kig_part.cpp:234
 msgid "Delete the selected objects"
 msgstr "चयन गरेको वस्तु मेट्नुहोस्"
 
-#: kig/kig_part.cpp:235
+#: kig/kig_part.cpp:236
 msgid "Cancel Construction"
 msgstr "रचना रद्द गर्नुहोस्"
 
-#: kig/kig_part.cpp:240
+#: kig/kig_part.cpp:241
 msgid "Cancel the construction of the object being constructed"
 msgstr "रचना गरिरहेको वस्तुको रचना रद्द गर्नुहोस्"
 
-#: kig/kig_part.cpp:243
-#, fuzzy
+#: kig/kig_part.cpp:244
 msgid "Repeat Construction"
-msgstr "रचना रद्द गर्नुहोस्"
+msgstr "रचना दोहोर्याउनुहोस्"
 
-#: kig/kig_part.cpp:248
+#: kig/kig_part.cpp:249
 msgid "Repeat the last construction (with new data)"
-msgstr ""
+msgstr "(नयाँ डेटासँगै) अन्तिम रचना दोहोर्याउनुहोस्"
 
-#: kig/kig_part.cpp:254
+#: kig/kig_part.cpp:255
 msgid "Show all hidden objects"
 msgstr "सबै लुकाइएको वस्तु देखाउनुहोस्"
 
-#: kig/kig_part.cpp:257
+#: kig/kig_part.cpp:258
 msgid "&New Macro..."
 msgstr "नयाँ म्याक्रो..."
 
-#: kig/kig_part.cpp:260
+#: kig/kig_part.cpp:261
 msgid "Define a new macro"
 msgstr "नयाँ म्याक्रो परिभाषित गर्नुहोस्"
 
-#: kig/kig_part.cpp:262
+#: kig/kig_part.cpp:263
 msgid "Manage &Types..."
 msgstr "प्रकार व्यवस्थापन गर्नुहोस्..."
 
-#: kig/kig_part.cpp:265
+#: kig/kig_part.cpp:266
 msgid "Manage macro types."
 msgstr "म्याक्रो प्रकार व्यवस्थापन गर्नुहोस् ।"
 
-#: kig/kig_part.cpp:267
+#: kig/kig_part.cpp:268
 msgid "&Browse History..."
-msgstr ""
+msgstr "इतिहास ब्राउज गर्नुहोस्..."
 
-#: kig/kig_part.cpp:270
-#, fuzzy
-msgid "Browse the history of the current construction."
-msgstr "रचना रद्द गर्नुहोस्"
+#: kig/kig_part.cpp:271
+msgid "Browse the history of the current costruction."
+msgstr "हालको रचनाको इतिहास ब्राउज गर्नुहोस् ।"
 
-#: kig/kig_part.cpp:277 kig/kig_part.cpp:278
+#: kig/kig_part.cpp:278 kig/kig_part.cpp:279
 msgid "Zoom in on the document"
 msgstr "कागजातको जुम बढाउनुहोस्"
 
-#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
+#: kig/kig_part.cpp:283 kig/kig_part.cpp:284
 msgid "Zoom out of the document"
 msgstr "कागजातको जुम घटाउनुहोस्"
 
-#: kig/kig_part.cpp:289 kig/kig_part.cpp:290
+#: kig/kig_part.cpp:290 kig/kig_part.cpp:291
 msgid "Recenter the screen on the document"
 msgstr "कागजातमा स्क्रिन पुन: केन्द्रित गर्नुहोस्"
 
-#: kig/kig_part.cpp:293 kig/kig_part.cpp:294
+#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
 msgid "View this document full-screen."
 msgstr "यो कागजात पुरा पर्दामा हेर्नुहोस्"
 
-#: kig/kig_part.cpp:297
+#: kig/kig_part.cpp:298
 msgid "&Select Shown Area"
 msgstr "देखिएको क्षेत्र चयन गर्नुहोस्"
 
-#: kig/kig_part.cpp:300 kig/kig_part.cpp:301
+#: kig/kig_part.cpp:301 kig/kig_part.cpp:302
 msgid "Select the area that you want to be shown in the window."
 msgstr "सञ्झ्यालमा देखिने बनाउन चाहनुभएको क्षेत्र चयन गर्नुहोस्"
 
-#: kig/kig_part.cpp:303
+#: kig/kig_part.cpp:304
 msgid "S&elect Zoom Area"
 msgstr "जुम क्षेत्र चयन गर्नुहोस्"
 
-#: kig/kig_part.cpp:309
+#: kig/kig_part.cpp:310
 msgid "Show &Grid"
 msgstr "ग्रिड देखाउनुहोस्"
 
-#: kig/kig_part.cpp:311
+#: kig/kig_part.cpp:312
 msgid "Show or hide the grid."
 msgstr "ग्रिड देखाउनुहोस् वा लुकाउनुहोस् ।"
 
-#: kig/kig_part.cpp:315
+#: kig/kig_part.cpp:316
 msgid "Show &Axes"
 msgstr "अक्ष देखाउनुहोस्"
 
-#: kig/kig_part.cpp:317
+#: kig/kig_part.cpp:318
 msgid "Show or hide the axes."
 msgstr "अक्ष देखाउनुहोस् वा लुकाउनुहोस् ।"
 
-#: kig/kig_part.cpp:321
+#: kig/kig_part.cpp:322
 msgid "Wear Infrared Glasses"
 msgstr "अवरक्त ग्लास लगाउनुहोस्"
 
-#: kig/kig_part.cpp:323
-#, fuzzy
-#| msgid "Enable/Disable hidden objects visibility."
-msgid "Enable/disable hidden objects visibility."
+#: kig/kig_part.cpp:324
+msgid "Enable/Disable hidden objects visibility."
 msgstr "लुकाइएको वस्तुको दृश्यता सक्षम पार्नुहोस्/अक्षम पार्नुहोस्"
 
-#: kig/kig_part.cpp:355
-#, fuzzy, qt-format
+#: kig/kig_part.cpp:356
+#, qt-format
 msgid "Repeat Construction (%1)"
-msgstr "रचना रद्द गर्नुहोस्"
+msgstr "रचना (%1) दोहोर्याउनुहोस्"
 
-#: kig/kig_part.cpp:357
+#: kig/kig_part.cpp:358
 #, qt-format
 msgid "Repeat %1 (with new data)"
-msgstr ""
+msgstr "(नयाँ डेटासँगै) %1 दोहोर्याउनुहोस्"
 
-#: kig/kig_part.cpp:386
+#: kig/kig_part.cpp:387
 #, qt-format
 msgid ""
 "The file \"%1\" you tried to open does not exist. Please verify that you "
 "entered the correct path."
 msgstr ""
-"तपाईँले खोल्न प्रयास गर्नुभएको \"%1\" फाइल अवस्थि छैन । सहि मार्ग प्रविष्ट गरेकोमा जाँच "
+"तपाईँले खोल्न प्रयास गर्नुभएको \"%1\" फाइल अवस्थित छैन । कृपया सही मार्ग प्रविष्ट गरेकोमा जाँच "
 "गर्नुहोस् ।"
 
-#: kig/kig_part.cpp:388
+#: kig/kig_part.cpp:389
 msgid "File Not Found"
 msgstr "फाइल फेला परेन"
 
-#: kig/kig_part.cpp:406
-#, fuzzy, qt-format
-#| msgid ""
-#| "You tried to open a document of type \"%1\"; unfortunately, Kig does not "
-#| "support this format. If you think the format in question would be worth "
-#| "implementing support for, you can always ask us nicely on mailto:toscano."
-#| "pino@tiscali.it or do the work yourself and send me a patch."
+#: kig/kig_part.cpp:404
+#, qt-format
 msgid ""
 "You tried to open a document of type \"%1\"; unfortunately, Kig does not "
 "support this format. If you think the format in question would be worth "
-"implementing support for, you can always ask us nicely on mailto:pino@kde."
-"org or do the work yourself and send me a patch."
+"implementing support for, you can always ask us nicely on mailto:toscano."
+"pino@tiscali.it or do the work yourself and send me a patch."
 msgstr ""
 "तपाईँले \"%1\" प्रकारको कागजात खोल्न प्रयास गर्नुभयो; दुर्भाग्यवश, किगले यस्तो ढाँचालाई "
 "समर्थन गर्दैन । यदि तपाईँलाई यो ढाँचा समर्थन महत्वपूर्ण छ जस्तो लागेमा, तपाईँले "
 "हामिहरूलाईmailto:toscano.pino@tiscali.it मा सोध्न सक्नुहुन्छ वा तपाईँले आफैले गरेर मलाई "
 "प्याच पठाउन सक्नुहुन्छ ।"
 
-#: kig/kig_part.cpp:412 kig/kig_part.cpp:455
+#: kig/kig_part.cpp:410 kig/kig_part.cpp:448
 msgid "Format Not Supported"
 msgstr "ढाँचा समर्थन गरेन"
 
-#: kig/kig_part.cpp:453
+#: kig/kig_part.cpp:446
 msgid ""
 "Kig does not support saving to any other file format than its own. Save to "
 "Kig's format instead?"
@@ -5026,11 +4912,11 @@ msgstr ""
 "किगले उसको ढाँचा बाहेकको अन्य कुनै ढाँचामा बचत गर्न समर्थन गर्दैन । यसको सट्टामा किगको "
 "ढाँचामा बचत गर्नुहुन्छ ?"
 
-#: kig/kig_part.cpp:455
+#: kig/kig_part.cpp:448
 msgid "Save Kig Format"
 msgstr "किगको ढाँचामा बचत गर्नुहोस्"
 
-#: kig/kig_part.cpp:642
+#: kig/kig_part.cpp:635
 msgid ""
 "*.kig|Kig Documents (*.kig)\n"
 "*.kigz|Compressed Kig Documents (*.kigz)"
@@ -5038,56 +4924,52 @@ msgstr ""
 "*.kig|किग कागजात (*.kig)\n"
 "*.kigz|सङ्कुचित किग कागजात (*.kigz)"
 
-#: kig/kig_part.cpp:814
+#: kig/kig_part.cpp:807
 msgid "Print Geometry"
 msgstr "ज्यामिति मुद्रण गर्नुहोस्"
 
-#: kig/kig_part.cpp:886
+#: kig/kig_part.cpp:879
 #, qt-format
 msgid "Hide %1 Object"
 msgid_plural "Hide %1 Objects"
 msgstr[0] "%1 वस्तु लुकाउनुहोस्"
 msgstr[1] "%1 वस्तुहरू लुकाउनुहोस्"
 
-#: kig/kig_part.cpp:905
+#: kig/kig_part.cpp:898
 #, qt-format
 msgid "Show %1 Object"
 msgid_plural "Show %1 Objects"
 msgstr[0] "%1 वस्तु देखाउनुहोस्"
 msgstr[1] "%1 वस्तुहरू देखाउनुहोस्"
 
-#: kig/kig_view.cpp:219
+#: kig/kig_view.cpp:221
 msgid "Zoom In"
 msgstr "जुम बढाउनुहोस्"
 
-#: kig/kig_view.cpp:239
+#: kig/kig_view.cpp:241
 msgid "Zoom Out"
 msgstr "जुम घटाउनुहोस्"
 
-#: kig/kig_view.cpp:519
+#: kig/kig_view.cpp:521
 msgid "Recenter View"
 msgstr "पुन: केन्द्र दृश्य"
 
-#: kig/kig_view.cpp:541
+#: kig/kig_view.cpp:543
 msgid "Select the rectangle that should be shown."
 msgstr "देखाउने त्रिभुज चयन गर्नुहोस्"
 
-#: kig/kig_view.cpp:549 kig/kig_view.cpp:597
+#: kig/kig_view.cpp:551 kig/kig_view.cpp:599
 msgid "Change Shown Part of Screen"
 msgstr "पर्दाको देखिने भाग परिवर्तन गर्नुहोस्"
 
-#: kig/kig_view.cpp:586
+#: kig/kig_view.cpp:588
 msgid "Select Zoom Area"
 msgstr "जुम क्षेत्र चयन गर्नुहोस्"
 
-#: kig/kig_view.cpp:587
-#, fuzzy
-#| msgid ""
-#| "Select the zoom area by entering the coordinates of the upper left corner "
-#| "and the lower right corner."
+#: kig/kig_view.cpp:589
 msgid ""
-"Select the zoom area by entering the coordinates<br />of the upper left "
-"corner and the lower right corner."
+"Select the zoom area by entering the coordinates of the upper left corner "
+"and the lower right corner."
 msgstr "माथिल्लो बायाँ कुना र तल्लो दायाँ कुनाको समन्वय प्रविष्ट गरेर जुम क्षेत्र चयन गर्नुहोस्"
 
 #: kig/main.cpp:98
@@ -5114,7 +4996,7 @@ msgstr ""
 msgid "Document to open"
 msgstr "खोल्ने कागजात"
 
-#: misc/coordinate_system.cpp:324
+#: misc/coordinate_system.cpp:309
 msgid ""
 "Enter coordinates in the following format: \"x;y\",\n"
 "where x is the x coordinate, and y is the y coordinate."
@@ -5122,16 +5004,13 @@ msgstr ""
 "समकक्षलाई निम्न ढाँचा: \"x;y\" मा प्रविष्ट गर्नुहोस्,\n"
 "जहाँ x एक्स समकक्ष र y वाइ समकक्ष हो ।"
 
-#: misc/coordinate_system.cpp:330
-#, fuzzy
+#: misc/coordinate_system.cpp:315
 msgid ""
 "Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
 "the x coordinate, and y is the y coordinate."
-msgstr ""
-"समकक्षलाई: <b>\"x;y\"</b> ढाँचामा प्रविष्ट गर्नुहोस्, जहाँ x एक्स समकक्ष र y वाइ समकक्ष "
-"हो ।"
+msgstr "समकक्षहरूलाई निम्न ढाँचामा प्रविष्ट गर्नुहोस्: <b>\"x;y\"</b>,<br />जहाँ x, x समकक्ष हो र y, य समकक्ष हो ।"
 
-#: misc/coordinate_system.cpp:372
+#: misc/coordinate_system.cpp:357
 msgid ""
 "Enter coordinates in the following format: \"r; θ°\",\n"
 "where r and θ are the polar coordinates."
@@ -5139,60 +5018,62 @@ msgstr ""
 "समकक्षहरू : \"r; θ°\" ढाँचामा प्रविष्ट गर्नुहोस्,\n"
 "जहाँ r र θ पोलार समकक्ष हुन् ।"
 
-#: misc/coordinate_system.cpp:379
-#, fuzzy
+#: misc/coordinate_system.cpp:364
 msgid ""
 "Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
 "and θ are the polar coordinates."
 msgstr ""
-"समकक्षहरूलाई : <b>\"r; θ°\"</b> ढाँचामा प्रविष्ट गर्नुहोस्, जहाँ r र θ पोलार समकक्ष हुन् "
-"।"
+"समकक्षहरू निम्न ढाँचामा प्रविष्ट गर्नुहोस्: <b>\"r; θ°\"</b>,<br />जहाँ r "
+"र θ पोलार समकक्षहरू हुन् ।"
 
-#: misc/coordinate_system.cpp:531
+#: misc/coordinate_system.cpp:516
 msgid "&Euclidean"
 msgstr "युक्लिडेयन"
 
-#: misc/coordinate_system.cpp:532
+#: misc/coordinate_system.cpp:517
 msgid "&Polar"
 msgstr "पोलार"
 
-#: misc/coordinate_system.cpp:582
+#: misc/coordinate_system.cpp:567
 msgid "Set Euclidean Coordinate System"
 msgstr "युक्लिडेयन समकक्ष प्रणाली सेट गर्नुहोस्"
 
-#: misc/coordinate_system.cpp:584
+#: misc/coordinate_system.cpp:569
 msgid "Set Polar Coordinate System"
 msgstr "पोलार समकक्ष प्रणाली सेट गर्नुहोस्"
 
 #: modes/typesdialog.cpp:129
 msgid "Macro"
-msgstr ""
+msgstr "म्याक्रो"
 
-#: modes/typesdialog.cpp:312
-#, fuzzy
+#: modes/typesdialog.cpp:276
+msgid "Icon"
+msgstr "प्रतिमा"
+
+#: modes/typesdialog.cpp:277
 msgid "Type"
 msgstr "प्रकार"
 
-#: modes/typesdialog.cpp:314
+#: modes/typesdialog.cpp:279
 msgid "Description"
 msgstr "वर्णन"
 
-#: modes/typesdialog.cpp:338
+#: modes/typesdialog.cpp:295
 msgid "Manage Types"
 msgstr "प्रकार व्यवस्थापन गर्नुहोस्"
 
-#: modes/typesdialog.cpp:425
-#, fuzzy, qt-format
+#: modes/typesdialog.cpp:384
+#, qt-format
 msgid "Are you sure you want to delete this type?"
 msgid_plural "Are you sure you want to delete these %1 types?"
-msgstr[0] "यो प्रकार मेट्न तपाईँ निश्चित हुनुहुन्छ ?"
-msgstr[1] "%1 प्रकारहरू मेट्न तपाईँ निश्चित हुनुहुन्छ ?"
+msgstr[0] "तपाईँ यस प्रकारको मेट्न निश्चित हुनुहुन्छ ?"
+msgstr[1] "तपाईँ %1 प्रकार मेट्न निश्चित हुनुहुन्छ ?"
 
-#: modes/typesdialog.cpp:427
+#: modes/typesdialog.cpp:386
 msgid "Are You Sure?"
 msgstr "तपाईँ निश्चित हुनुहुन्छ ?"
 
-#: modes/typesdialog.cpp:450 modes/typesdialog.cpp:465
+#: modes/typesdialog.cpp:419 modes/typesdialog.cpp:434
 msgid ""
 "*.kigt|Kig Types Files\n"
 "*|All Files"
@@ -5200,15 +5081,15 @@ msgstr ""
 "*.kigt|किग प्रकार फाइल\n"
 "*|सबै फाइल"
 
-#: modes/typesdialog.cpp:450
+#: modes/typesdialog.cpp:419
 msgid "Export Types"
 msgstr "निर्यात प्रकार"
 
-#: modes/typesdialog.cpp:465
+#: modes/typesdialog.cpp:434
 msgid "Import Types"
 msgstr "आयात प्रकार"
 
-#: modes/typesdialog.cpp:493
+#: modes/typesdialog.cpp:463
 msgid ""
 "There is more than one type selected. You can only edit one type at a time. "
 "Please select only the type you want to edit and try again."
@@ -5216,93 +5097,7 @@ msgstr ""
 "त्यहाँ एक भन्दा बढी प्रकार चयन गरिएको छ । तपाईँले एक समयमा केबल एउटा मात्र सम्पादन "
 "गर्न सक्नुहुन्छ । तपाईँले चाहनुभएको प्रकार मात्र चयन गर्नुहोस् र फेरि प्रयास गर्नुहोस् ।"
 
-#: modes/typesdialog.cpp:496
+#: modes/typesdialog.cpp:466
 msgid "More Than One Type Selected"
 msgstr "एक भन्दा बढी प्रकार चयन गरियो"
 
-#~ msgid "Icon"
-#~ msgstr "प्रतिमा"
-
-#~ msgid ""
-#~ "Here you can manage types; you can remove them, and load and save them "
-#~ "from and to files..."
-#~ msgstr ""
-#~ "यहाँ तपाईँले प्रकार व्यवस्थापन गर्न सक्नुहुन्छ; तिनीहरूलाई हटाउन र फाइलमा लोड गर्न र "
-#~ "बचत गर्न सक्नुहुन्छ..."
-
-#~ msgid "Edit..."
-#~ msgstr "सम्पादन गर्नुहोस्..."
-
-#~ msgid "Export..."
-#~ msgstr "निर्यात गर्नुहोस्..."
-
-#~ msgid ""
-#~ "Construct a circle with the radius given by the length of this segment"
-#~ msgstr "यो खण्डको लम्बाइद्वारा दिएको अर्धव्यासमा वृत्त रचना गर्नुहोस्"
-
-#~ msgid ""
-#~ "Select the segment whose length gives the radius of the new circle..."
-#~ msgstr "नयाँ वृत्तको अर्धव्यास दिने लम्बाइको खण्ड चयन गर्नुहोस्..."
-
-#~ msgid "Please select a figure."
-#~ msgstr "कृपया आकृति चयन गर्नुहोस् ।"
-
-#~ msgid "Overwrite"
-#~ msgstr "अधिलेखन गर्नुहोस्"
-
-#~ msgid "Edit Script..."
-#~ msgstr "स्क्रिप्ट सम्पादन गर्नुहोस्..."
-
-#~ msgid "x² + y² + %1 x + %2 y + %3 = 0"
-#~ msgstr "x² + y² + %1 x + %2 y + %3 = 0"
-
-#~ msgid "( x - %1 )² + ( y - %2 )² = %3"
-#~ msgstr "( x - %1 )² + ( y - %2 )² = %3"
-
-#~ msgid "%1 x² + %2 y² + %3 xy + %4 x + %5 y + %6 = 0"
-#~ msgstr "%1 x² + %2 y² + %3 xy + %4 x + %5 y + %6 = 0"
-
-#~ msgid ""
-#~ "rho = %1/(1 + %2 cos theta + %3 sin theta)\n"
-#~ "    [centered at %4]"
-#~ msgstr ""
-#~ "rho = %1/(1 + %2 cos theta + %3 sin theta)\n"
-#~ "    [%4 मा केन्द्रित]"
-
-#~ msgid ""
-#~ "%6 x³ + %9 y³ + %7 x²y + %8 xy² + %5 y² + %3 x² + %4 xy + %1 x + %2 y"
-#~ msgstr ""
-#~ "%6 x³ + %9 y³ + %7 x²y + %8 xy² + %5 y² + %3 x² + %4 xy + %1 x + %2 y"
-
-#~ msgid " + %1 = 0"
-#~ msgstr " + %1 = 0"
-
-#~ msgid "Already computed intersection point"
-#~ msgstr "पहिल्यै गणना गरिएको प्रतिच्छेदन बिन्दु"
-
-#~ msgid "Scale by the length of this segment"
-#~ msgstr "यो खण्डको लम्बाइद्वारा मापन गर्नुहोस्"
-
-#~ msgid "Scale the length of this segment..."
-#~ msgstr "यो खण्डको लम्बाइ मापन गर्नुहोस्..."
-
-#~ msgid "...to the length of this other segment"
-#~ msgstr "...यो अर्को खण्डको लम्बाइमा"
-
-#~ msgid "Select a segment whose length is the factor for the scaling"
-#~ msgstr "मापनका लागि तत्व भएको खण्ड लम्बाइ चयन गर्नुहोस्"
-
-#~ msgid ""
-#~ "Select the first of two segments whose ratio is the factor for the scaling"
-#~ msgstr "मापनका लागि तत्व भएको दुई खण्ड अनुपातको पहिलो चयन गर्नुहोस्..."
-
-#~ msgid "...to the length of this segment"
-#~ msgstr "...यो खण्डको लम्बाइमा"
-
-#~ msgid ""
-#~ "Select the second of two segments whose ratio is the factor for the "
-#~ "scaling"
-#~ msgstr "मापनका लागि तत्व भएको दुई खण्ड अनुपातको दोस्रो चयन गर्नुहोस्..."
-
-#~ msgid "Full Screen"
-#~ msgstr "पुरा पर्दा"
