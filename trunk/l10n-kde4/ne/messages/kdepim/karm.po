@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-03 05:07+0200\n"
+"POT-Creation-Date: 2007-09-18 05:44+0200\n"
 "PO-Revision-Date: 2007-09-07 12:56+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,56 +17,99 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 230
-#: csvexportdialog.cpp:96 preferences.cpp:162 rc.cpp:45
+#. i18n: file csvexportdialog_base.ui line 179
+#: csvexportdialog.cpp:98 rc.cpp:96
+#, fuzzy
+#| msgid "Decimal"
+msgctxt "format to display times"
 msgid "Decimal"
 msgstr "दशमलव"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 257
-#: csvexportdialog.cpp:113 rc.cpp:54
+#. i18n: file csvexportdialog_base.ui line 206
+#: csvexportdialog.cpp:113 rc.cpp:105
 msgid "Session Times"
 msgstr "सत्र समय"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 274
-#: csvexportdialog.cpp:114 printdialog.cpp:81 rc.cpp:57
+#. i18n: file csvexportdialog_base.ui line 223
+#: csvexportdialog.cpp:114 printdialog.cpp:82 rc.cpp:108
 msgid "All Tasks"
 msgstr "सबै कार्य"
 
-#: edittaskdialog.cpp:61
+#: edithistorydialog.cpp:76
+#, fuzzy
+#| msgid "Edit history"
+msgid "Edit History"
+msgstr "इतिहास सम्पादन गर्नुहोस्"
+
+#: edithistorydialog.cpp:89 timekard.cpp:67
+msgid "Task"
+msgstr "कार्य"
+
+#: edithistorydialog.cpp:89
+#, fuzzy
+#| msgid "&Start"
+msgid "StartTime"
+msgstr "सुरु गर्नुहोस्"
+
+#: edithistorydialog.cpp:89
+#, fuzzy
+#| msgid "Time"
+msgid "EndTime"
+msgstr "समय"
+
+#: edithistorydialog.cpp:90
+#, fuzzy
+#| msgid "Comma"
+msgid "Comment"
+msgstr "अल्पविराम"
+
+#: edithistorydialog.cpp:111
+msgid "You can change this task's comment, start time and end time."
+msgstr "तपाईँले कार्यको टिप्पणी, सुरु समय र अन्त्य समय परिवर्तन गर्न सक्नुहुन्छ ।"
+
+#: edithistorydialog.cpp:153 edithistorydialog.cpp:172
+msgid "This is not a valid Date/Time."
+msgstr "यो वैध मिति/समय होइन ।"
+
+#: edittaskdialog.cpp:66
 msgid "Task &name:"
 msgstr "कार्य नाम:"
 
-#: edittaskdialog.cpp:77
+#: edittaskdialog.cpp:80
 msgid "Edit &absolute"
 msgstr "सम्पादन निश्चित गर्नुहोस्"
 
-#: edittaskdialog.cpp:92
-msgid "&Session time: "
-msgstr "सत्र समय: "
-
-#: edittaskdialog.cpp:96
+#: edittaskdialog.cpp:83
 msgid "&Time:"
 msgstr "समय:"
 
-#: edittaskdialog.cpp:135
+#: edittaskdialog.cpp:86
+#, fuzzy
+#| msgid "&Session time: "
+msgid "&Session time:"
+msgstr "सत्र समय: "
+
+#: edittaskdialog.cpp:91
 msgid "Edit &relative (apply to both time and session time)"
 msgstr "सम्बन्धित सम्पादन गर्नुहोस् (समय र सत्र समय दुबैमा लागू गर्नुहोस्)"
 
-#: edittaskdialog.cpp:187
-msgid "A&uto tracking"
+#: edittaskdialog.cpp:131
+#, fuzzy
+#| msgid "A&uto tracking"
+msgid "A&uto Tracking"
 msgstr "स्वत: ट्र्याकिङ"
 
-#: edittaskdialog.cpp:194
+#: edittaskdialog.cpp:137
 msgid "In Desktop"
 msgstr "डेस्कटपमा"
 
-#: edittaskdialog.cpp:248
+#: edittaskdialog.cpp:189
 msgid "Enter the name of the task here. This name is for your eyes only."
 msgstr "यहाँ कार्यको नाम प्रविष्ट गर्नुहोस् । यो देखावटी नामका लागि मात्र हो ।"
 
-#: edittaskdialog.cpp:251
+#: edittaskdialog.cpp:192
 msgid ""
 "Use this option to set the time spent on this task to an absolute value.\n"
 "\n"
@@ -78,7 +121,7 @@ msgstr ""
 "उदाहरणका लागि, तपाईँले हालको सत्रमा यो कार्य ठीक चार घण्टा गरेको भएमा, सत्र समय ४ "
 "घण्टा सेट गर्नुहुनेछ ।"
 
-#: edittaskdialog.cpp:256
+#: edittaskdialog.cpp:197
 msgid ""
 "Use this option to change the time spent on this task relative to its "
 "current value.\n"
@@ -91,287 +134,166 @@ msgstr ""
 "\n"
 "उदाहरणका लागि, यदि तपाईँले टाइमर नचलाईकन एक घण्टा कार्य गरेमा, एक घण्टा थप्नुहुनेछ ।"
 
-#: edittaskdialog.cpp:261
+#: edittaskdialog.cpp:202
 msgid "This is the time the task has been running since all times were reset."
 msgstr "यो सबै समय रिसेट गरेदेखि चलाएका सबै कार्यका समय हो ।"
 
-#: edittaskdialog.cpp:264
+#: edittaskdialog.cpp:205
 msgid "This is the time the task has been running this session."
 msgstr "यो हालका सत्रमा चलेका कामको समय हो ।"
 
-#: edittaskdialog.cpp:266
-msgid "Specify how much time to add or subtract to the overall and session time"
+#: edittaskdialog.cpp:208
+msgid ""
+"Specify how much time to add or subtract to the overall and session time"
 msgstr "सम्पुर्ण र सत्र समयमा थप्ने वा घटाउने समय निर्दिष्ट गर्नुहोस्"
 
-#: edittaskdialog.cpp:270
+#: edittaskdialog.cpp:211
+#, fuzzy
+#| msgid ""
+#| "Use this option to automatically start the timer on this task when you "
+#| "switch to the specified desktop(s)."
 msgid ""
 "Use this option to automatically start the timer on this task when you "
-"switch to the specified desktop(s)."
+"switch to the specified desktop(s). Select the desktop(s) that will "
+"automatically start the timer on this task."
 msgstr ""
 "निर्दिष्ट गरिएको डेस्कटप(हरू)मा तपाईँले स्विच गरेपछि यो कार्यमा टाइमर स्वचालित रूपमा "
 "सुरुआत गर्न यो विकल्प प्रयोग गर्नुहोस् ।"
 
-#: edittaskdialog.cpp:273
-msgid "Select the desktop(s) that will automatically start the timer on this task."
-msgstr "यो कार्यमा स्वचालित रूपमा टाइमर सुरुआत गर्ने डेस्कटप(हरू) चयन गर्नुहोस् ।"
-
-#: idletimedetector.cpp:117
+#: idletimedetector.cpp:118
 #, qt-format
 msgid "Continue timing. Timing has started at %1"
 msgstr "समय गणना जारी राख्नुहोस् । समय गणना %1 मा सुरु भएकोछ"
 
-#: idletimedetector.cpp:118
+#: idletimedetector.cpp:119
 #, qt-format
 msgid "Stop timing and revert back to the time at %1."
 msgstr "समय गणना रोक्नुहोस् र समयलाई %1 मा फर्काउनुहोस् ।"
 
-#: idletimedetector.cpp:119
+#: idletimedetector.cpp:120
 msgid "Continue timing."
 msgstr "समय गणना जारी राख्नुहोस् ।"
 
-#: idletimedetector.cpp:120
+#: idletimedetector.cpp:121
 msgid "Revert timing"
 msgstr "समय गणना पछाडि फर्काउनुहोस्"
 
-#: karm.cpp:26 karm.cpp:27
+#: karm.cpp:46 karm.cpp:47
 msgid "KArmReminder"
 msgstr "KArmReminder"
 
-#: karm.cpp:28
+#: karm.cpp:48
 msgid "(c) 2006"
 msgstr "(प्रतिलिपि अधिकार) २००६"
 
-#: karm.cpp:33
+#: karm.cpp:53
 msgid "Someone, probably you, has called karm.\n"
 msgstr "कोही व्यक्तिले, सम्भवत तपाईँले, केडीई आर्म कल गर्नुभएको छ ।\n"
 
-#: karm.cpp:34
-msgid "KArm has been renamed to KTimeTracker. This makes it easier to recognize.\n"
-msgstr "केडीई आर्मलाई केडीई समय ट्र्याकरमा पुन: नामकरण गरिएको छ । यसले पहिचान गर्न सजिलो बनाउछ ।\n"
+#: karm.cpp:54
+#, fuzzy
+#| msgid ""
+#| "Someone, probably you, has called karm. KArm has been renamed to "
+#| "KTimeTracker. This makes it easier to recognize. Please learn to call "
+#| "ktimetracker as this reminder may be removed in the future."
+msgid ""
+"KArm has been renamed to KTimeTracker. This makes it easier to recognize.\n"
+"Compatibility advice: Do not give ktimetracker files to karm users. Using "
+"karm files with ktimetracker is possible.\n"
+msgstr ""
+"कुनै व्यक्ति, सम्भवत तपाईँले, केडीई आर्म कल गर्नुभएकोछ । केडीई आर्मलाई केडीई टाइम ट्र्याकरमा "
+"पुन: नामकरण गरिएको छ । यसले पहिचान गर्न सजिलो बनाउछ । कृपया यस सचेतकबाट "
+"ktimetracker कल गर्न सिक्नुहोस् किनकी भविश्यमा यसलाई हटाउन सकिन्छ ।"
 
-#: karm.cpp:35
+#: karm.cpp:55
 msgid ""
 "Please learn to call ktimetracker as this reminder may be removed in the "
 "future.\n"
-msgstr "यस सचेतकबाट ktimetracker लाई कल गर्न सिक्नुहोस् किनकी भविश्यमा यसलाई हटाउन सकिन्छ ।\n"
+msgstr ""
+"यस सचेतकबाट ktimetracker लाई कल गर्न सिक्नुहोस् किनकी भविश्यमा यसलाई हटाउन सकिन्छ "
+"।\n"
 
-#: karm.cpp:36
+#: karm.cpp:56
+#, fuzzy
+#| msgid ""
+#| "Someone, probably you, has called karm. KArm has been renamed to "
+#| "KTimeTracker. This makes it easier to recognize. Please learn to call "
+#| "ktimetracker as this reminder may be removed in the future."
 msgid ""
 "Someone, probably you, has called karm. KArm has been renamed to "
-"KTimeTracker. This makes it easier to recognize. Please learn to call "
-"ktimetracker as this reminder may be removed in the future."
-msgstr "कुनै व्यक्ति, सम्भवत तपाईँले, केडीई आर्म कल गर्नुभएकोछ । केडीई आर्मलाई केडीई टाइम ट्र्याकरमा पुन: नामकरण गरिएको छ । यसले पहिचान गर्न सजिलो बनाउछ । कृपया यस सचेतकबाट ktimetracker कल गर्न सिक्नुहोस् किनकी भविश्यमा यसलाई हटाउन सकिन्छ ।"
+"KTimeTracker. This makes it easier to recognize. Compatibility advice: Do "
+"not give ktimetracker files to karm users. Using karm files with "
+"ktimetracker is possible. Please learn to call ktimetracker as this reminder "
+"may be removed in the future."
+msgstr ""
+"कुनै व्यक्ति, सम्भवत तपाईँले, केडीई आर्म कल गर्नुभएकोछ । केडीई आर्मलाई केडीई टाइम ट्र्याकरमा "
+"पुन: नामकरण गरिएको छ । यसले पहिचान गर्न सजिलो बनाउछ । कृपया यस सचेतकबाट "
+"ktimetracker कल गर्न सिक्नुहोस् किनकी भविश्यमा यसलाई हटाउन सकिन्छ ।"
 
-#: karm.cpp:36
+#: karm.cpp:56
 msgid "KArm is now ktimetracker"
 msgstr "केडीई आर्म अहिले ktimetrcker हो"
 
-#: karm_part.cpp:157 mainwindow.cpp:268
-msgid "Start &New Session"
-msgstr "नयाँ सत्र सुरु गर्नुहोस्"
-
-#: karm_part.cpp:160 mainwindow.cpp:283
-msgid "&Reset All Times"
-msgstr "सबै समय रिसेट गर्नुहोस्"
-
-#: karm_part.cpp:163 mainwindow.cpp:292
-msgid "&Start"
-msgstr "सुरु गर्नुहोस्"
-
-#: karm_part.cpp:167 mainwindow.cpp:307
-msgid "S&top"
-msgstr "रोक्नुहोस्"
-
-#: karm_part.cpp:170 mainwindow.cpp:315
-msgid "Stop &All Timers"
-msgstr "सबै टाइमर रोक्नुहोस्"
-
-#: karm_part.cpp:176 mainwindow.cpp:324
-msgid "&New..."
-msgstr "नयाँ..."
-
-#: karm_part.cpp:180 mainwindow.cpp:330
-msgid "New &Subtask..."
-msgstr "नयाँ उप-कार्य..."
-
-#: karm_part.cpp:184 mainwindow.cpp:338
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
-
-#: karm_part.cpp:188 mainwindow.cpp:347
-msgid "&Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#: karm_part.cpp:199 mainwindow.cpp:357
-msgid "&Mark as Complete"
-msgstr "समापनका रूपमा चिनो लगाउनुहोस्"
-
-#: karm_part.cpp:203 mainwindow.cpp:363
-msgid "&Mark as Incomplete"
-msgstr "अपूर्णका रूपमा चिनो लगाउनुहोस्"
-
-#: karm_part.cpp:208
-msgid "&Export to CSV File..."
-msgstr "CSV फाइलमा निर्यात गर्नुहोस्..."
-
-#: karm_part.cpp:211
-msgid "Export &History to CSV File..."
-msgstr "CSV फाइलमा इतिहास निर्यात गर्नुहोस्..."
-
-#: karm_part.cpp:214 mainwindow.cpp:379
-msgid "Import Tasks From &Planner..."
-msgstr "योजनाकर्ताबाट कार्य आयात गर्नुहोस्..."
-
-#: karm_part.cpp:217
-msgid "Configure KArm..."
-msgstr "केडीई आर्म कन्फिगर गर्नुहोस्..."
-
-#: karm_part.cpp:229 mainwindow.cpp:386
+#: karm_part.cpp:105 mainwindow.cpp:184
 msgid "Configure key bindings"
 msgstr "कुञ्जी बाइन्डिङ कन्फिगर गर्नुहोस्"
 
-#: karm_part.cpp:230 mainwindow.cpp:387
-msgid "This will let you configure keybindings which is specific to karm"
+#: karm_part.cpp:106 mainwindow.cpp:185
+#, fuzzy
+#| msgid "This will let you configure keybindings which is specific to karm"
+msgid ""
+"This will let you configure keybindings which are specific to ktimetracker"
 msgstr "यसले तपाईँलाई केडीई आर्म निर्दिष्ट गरिएका कुञ्जी बाइन्डिङ कन्फिगर गर्न अनुमति दिन्छ"
 
-#: karm_part.cpp:233 mainwindow.cpp:271
-msgid "Start a new session"
-msgstr "नयाँ सत्र सुरु गर्नुहोस्"
-
-#: karm_part.cpp:234 mainwindow.cpp:272
-msgid ""
-"This will reset the session time to 0 for all tasks, to start a new session, "
-"without affecting the totals."
-msgstr "कूल सबैलाई प्रभाव नपारिकन, नयाँ सत्र सुरु गर्न, यसले सबै कार्यका लागि सत्र समय रिसेट गर्नेछ ।छ ।"
-
-#: karm_part.cpp:238 mainwindow.cpp:286
-msgid "Reset all times"
-msgstr "सबै समय रिसेट गर्नुहोस्"
-
-#: karm_part.cpp:239 mainwindow.cpp:287
-msgid ""
-"This will reset the session and total time to 0 for all tasks, to restart "
-"from scratch."
-msgstr "यसले स्क्र्याचबाट पुन: सुरु गर्न, सबै कार्यका लागि सत्र र कूल समय ० मा रिसेट गर्नेछ ।"
-
-#: karm_part.cpp:243 mainwindow.cpp:296
-msgid "Start timing for selected task"
-msgstr "चयन गरिएका कार्यका लागि टाइमिङ सुरु गर्नुहोस्"
-
-#: karm_part.cpp:244 mainwindow.cpp:297
-msgid ""
-"This will start timing for the selected task.\n"
-"It is even possible to time several tasks simultaneously.\n"
-"\n"
-"You may also start timing of a tasks by double clicking the left mouse "
-"button on a given task. This will, however, stop timing of other tasks."
-msgstr ""
-"यसले चयन गरेका कार्यका लागि टाइमिङ सुरु गर्नेछ ।\n"
-"तापनि एकैसाथ धेरै कार्यमा समय दिन सम्भव हुन्छ ।\n"
-"\n"
-"तपाईँले दिएका कार्यमा माउसको बायाँ बटन डबल क्लिक गरेर कार्यको टाइमिङ सुरु गर्न सक्नुहुन्छ "
-"। तापनि, यसले, अन्य कार्यको टाइमिङ रोक्नेछ ।"
-
-#: karm_part.cpp:253 karm_part.cpp:254 mainwindow.cpp:311 mainwindow.cpp:312
-msgid "Stop timing of the selected task"
-msgstr "चयन गरिएका कार्यको टाइमिङ रोक्नुहोस्"
-
-#: karm_part.cpp:256 karm_part.cpp:257 mainwindow.cpp:320 mainwindow.cpp:321
-msgid "Stop all of the active timers"
-msgstr "सबै सक्रिय टाइमर रोक्नुहोस्"
-
-#: karm_part.cpp:259 mainwindow.cpp:334
-msgid "Create new top level task"
-msgstr "नयाँ उच्च स्तर कार्य सिर्जना गर्नुहोस्"
-
-#: karm_part.cpp:260 mainwindow.cpp:335
-msgid "This will create a new top level task."
-msgstr "यसले नयाँ उच्च स्तर कार्य सिर्जना गर्नेछ ।"
-
-#: karm_part.cpp:262 mainwindow.cpp:342
-msgid "Delete selected task"
-msgstr "चयन गरिएका कार्य मेट्नुहोस्"
-
-#: karm_part.cpp:263 mainwindow.cpp:343
-msgid "This will delete the selected task and all its subtasks."
-msgstr "यसले चयन गरिएका कार्य र यसका सबै उप-कार्य मेट्नेछ ।"
-
-#: karm_part.cpp:266 mainwindow.cpp:351
-msgid "Edit name or times for selected task"
-msgstr "चयन गरिएका कार्यका लागि नाम वा समय सम्पादन गर्नुहोस्"
-
-#: karm_part.cpp:267 mainwindow.cpp:352
-msgid ""
-"This will bring up a dialog box where you may edit the parameters for the "
-"selected task."
-msgstr "यसले चयन गरिएका कार्यका लागि तपाईँले परिमिति सम्पादन गर्न सक्ने संवाद बाकस ल्याउनेछ ।"
-
-#: karm_part.cpp:276
-msgid "Copy task totals to clipboard"
-msgstr "क्लिपबोर्डमा कूल कार्य प्रतिलिपि गर्नुहोस्"
-
-#: karm_part.cpp:277
-msgid "Copy time card history to clipboard."
-msgstr "क्लिबोर्डमा समय कार्ड इतिहास प्रतिलिपि गर्नुहोस् ।"
-
-#: karm_part.cpp:409
+#: karm_part.cpp:167
 msgid "karmPart"
 msgstr "karmPart"
 
-#: karm_part.cpp:410
+#: karm_part.cpp:168
 msgid "Thorsten Staerk"
 msgstr "थोर्स्टेन स्टेर्क"
 
-#: karm_part.cpp:428 mainwindow.cpp:434
+#: karm_part.cpp:186 mainwindow.cpp:224
 msgid "task_popup"
 msgstr "कार्य पपअप"
 
-#: karm_part.cpp:485 mainwindow.cpp:154
-msgid "Successfully saved tasks and history"
-msgstr "कार्य र इतिहास सफलतापूर्वक बचत गरियो"
-
-#: karm_part.cpp:580 mainwindow.cpp:571
-#, qt-format
-msgid "Invalid error number: %1"
-msgstr "अवैद्य त्रुटि नम्बर: %1"
-
-#: karmstorage.cpp:196 karmstorage.cpp:264
+#: karmstorage.cpp:198 karmstorage.cpp:266
 #, qt-format
 msgid "Error loading \"%1\": could not find parent (uid=%2)"
 msgstr "\"%1\" लोड गर्दा त्रुटि: प्यारेन्ट (uid=%2) फेला पार्न सकेन"
 
-#: karmstorage.cpp:409
+#: karmstorage.cpp:401
 msgid "Export Progress"
 msgstr "निर्यात प्रगति"
 
-#: karmstorage.cpp:489 karmstorage.cpp:849
+#: karmstorage.cpp:481 karmstorage.cpp:848
 #, qt-format
 msgid "Could not open \"%1\"."
 msgstr "\"%1\" खोल्न सकेन ।"
 
-#: karmstorage.cpp:743
+#: karmstorage.cpp:740
 msgid "Task History\n"
 msgstr "कार्य इतिहास\n"
 
-#: karmstorage.cpp:744 timekard.cpp:334
+#: karmstorage.cpp:741 timekard.cpp:339
 #, qt-format
 msgid "From %1 to %2"
 msgstr "%1 बाट %2 मा"
 
-#: karmstorage.cpp:748 timekard.cpp:338
+#: karmstorage.cpp:745 timekard.cpp:343
 #, qt-format
 msgid "Printed on: %1"
 msgstr "मुद्रित: %1"
 
-#: karmstorage.cpp:785
+#: karmstorage.cpp:782
 msgid "Sum"
 msgstr "जोड"
 
-#: karmstorage.cpp:785
+#: karmstorage.cpp:782
 msgid "Total Sum"
 msgstr "कूल जोड"
 
-#: karmstorage.cpp:785
+#: karmstorage.cpp:782
 msgid "Task Hierarchy"
 msgstr "कार्य सोपानक्रम"
 
@@ -379,16 +301,19 @@ msgstr "कार्य सोपानक्रम"
 msgid "  No hours logged."
 msgstr "  घन्ट लग गरिएको छैन ।"
 
-#: karmstorage.cpp:836 mainwindow.cpp:222 print.cpp:67 print.cpp:105
-#: timekard.cpp:98 timekard.cpp:321
+#: karmstorage.cpp:835 mainwindow.cpp:150 print.cpp:68 print.cpp:104
+#: timekard.cpp:97 timekard.cpp:326
+#, fuzzy
+#| msgid "Total"
+msgctxt "total time of all tasks"
 msgid "Total"
 msgstr "कूल"
 
-#: karmstorage.cpp:962
+#: karmstorage.cpp:972
 msgid "KArm"
 msgstr "केडीई आर्म"
 
-#: ktimewidget.cpp:107
+#: ktimewidget.cpp:109
 msgctxt "abbreviation for hours"
 msgid " hr. "
 msgstr " घण्टा. "
@@ -398,340 +323,299 @@ msgctxt "abbreviation for minutes"
 msgid " min. "
 msgstr " मिनेट. "
 
-#: main.cpp:34
+#: main.cpp:38
 msgid "KDE Time tracker tool"
 msgstr "केडीई समय ट्र्याकर उपकरण"
 
-#: main.cpp:38
+#: main.cpp:42
 msgid "Just caught a software interrupt."
 msgstr "सफ्टवेयर रोकावट मात्र समात्नुहोस् ।"
 
-#: main.cpp:45
+#: main.cpp:49
 msgid "KTimeTracker"
 msgstr "केडीई समय ट्र्याकर"
 
-#: main.cpp:47
+#: main.cpp:51
 msgid "(c) 1997-2007, KDE PIM Developers"
 msgstr "(प्रतिलिपि अधिकार) १९९७-२००७, केडीफ PIM विकासकर्ता"
 
-#: main.cpp:49
+#: main.cpp:53
 msgid "Thorsten St&auml;rk"
 msgstr "थोर्स्टेन St&auml;rk"
 
-#: main.cpp:49
+#: main.cpp:53
 msgid "Current Maintainer"
 msgstr "हालको मर्मतकर्ता"
 
-#: main.cpp:51
+#: main.cpp:55
 msgid "Sirtaj Singh Kang"
 msgstr "सिर्टाज सिङ काङ"
 
-#: main.cpp:51
+#: main.cpp:55
 msgid "Original Author"
 msgstr "मौलिक लेखक"
 
-#: main.cpp:53
+#: main.cpp:57
 msgid "Allen Winter"
 msgstr "एलेन विन्टर"
 
-#: main.cpp:54
+#: main.cpp:58
 msgid "David Faure"
 msgstr "डेभिड फाउर"
 
-#: main.cpp:55
+#: main.cpp:59
 msgid "Mathias Soeken"
 msgstr "माथियास सोयकेन"
 
-#: main.cpp:56
+#: main.cpp:60
 msgid "Jesper Pedersen"
 msgstr "जेस्पर पेडेर्सन"
 
-#: main.cpp:57
+#: main.cpp:61
 msgid "Kalle Dalheimer"
 msgstr "क्याली डाल्हिमेर"
 
-#: main.cpp:58
+#: main.cpp:62
 msgid "Mark Bucciarelli"
 msgstr "मार्क बुसियारेली"
 
-#: main.cpp:63
+#: main.cpp:67
 msgid "The iCalendar file to open"
 msgstr "खोलिने आई क्यालेन्डर फाइल"
 
-#: mainwindow.cpp:106
-msgid "Save failed, most likely because the file could not be locked."
-msgstr "बचत असफल भयो, यसको कारणले धेरै जसो फाइलमा ताल्चा लगाउन सक्ने छैन ।"
-
-#: mainwindow.cpp:108
-msgid "Could not modify calendar resource."
-msgstr "क्यालेन्डर स्रोत परिमार्जन गर्न सकेन ।"
-
-#: mainwindow.cpp:110
-msgid "Out of memory--could not create object."
-msgstr "स्मृति बाहिर--वस्तु सिर्जना गर्न सकेन ।"
-
-#: mainwindow.cpp:112
-msgid "UID not found."
-msgstr "UID फेला परेन ।"
-
-#: mainwindow.cpp:114
-msgid "Invalidate date--format is YYYY-MM-DD."
-msgstr "अवैध मिति--ढाँचा YYYY-MM-DD हो ।"
-
-#: mainwindow.cpp:116
-msgid "Invalid time--format is YYYY-MM-DDTHH:MM:SS."
-msgstr "अवैध समय--ढाँचा YYYY-MM-DDTHH:MM:SS हो ।"
-
-#: mainwindow.cpp:118
-msgid "Invalid task duration--must be greater than zero."
-msgstr "अवैद्य कार्य अवधि--शून्य भन्दा ठूलो हुनुपर्छ ।"
-
-#: mainwindow.cpp:164
-msgid "Successfully exported History to CSV-file"
-msgstr "CSV-फाइलमा इतिहास सफलतापूर्वक निर्यात गरियो"
-
-#: mainwindow.cpp:213
+#: mainwindow.cpp:141
 #, qt-format
 msgid "Session: %1"
 msgstr "सत्र: %1"
 
-#: mainwindow.cpp:216
-#, qt-format
+#: mainwindow.cpp:144
+#, fuzzy, qt-format
+#| msgid "Total: %1"
+msgctxt "total time of all tasks"
 msgid "Total: %1"
 msgstr "कूल: %1"
 
-#: mainwindow.cpp:221 print.cpp:69 print.cpp:105
+#: mainwindow.cpp:149 print.cpp:70 print.cpp:104
 msgid "Session"
 msgstr "सत्र"
 
-#: mainwindow.cpp:250
-msgid "Do you really want to reset the time to zero for all tasks?"
-msgstr "साँच्चिकै तपाईँले सबै कार्यका लागि समय शून्यमा रिसेट गर्न चाहनुहुन्छ ?"
-
-#: mainwindow.cpp:251
-msgid "Confirmation Required"
-msgstr "स्वीकृति आवश्यक"
-
-#: mainwindow.cpp:251
-msgid "Reset All Times"
-msgstr "सबै समय रिसेट गर्नुहोस्"
-
-#: mainwindow.cpp:278
-msgid "Edit history"
-msgstr "इतिहास सम्पादन गर्नुहोस्"
-
-#: mainwindow.cpp:369
-msgid "&Export Times..."
-msgstr "समय निर्यात गर्नुहोस्..."
-
-#: mainwindow.cpp:374
-msgid "Export &History..."
-msgstr "इतिहास निर्यात गर्नुहोस्..."
-
-#: preferences.cpp:51
-msgid "Preferences"
-msgstr "प्राथमिकता"
-
-#: preferences.cpp:83
-msgid "Behavior"
-msgstr "व्यवहार"
-
-#: preferences.cpp:84
-msgid "Behavior Settings"
-msgstr "व्यवहार सेटिङ"
-
-#: preferences.cpp:96
-msgid "Detect desktop as idle after"
-msgstr "पछिका निस्क्रिय डेस्कटप पत्ता लगाउनुहोस्"
-
-#: preferences.cpp:101 preferences.cpp:200
-msgid " min"
-msgstr " मिनेट"
-
-#: preferences.cpp:103
-msgid "Prompt before deleting tasks"
-msgstr "कार्य मेट्न पहिला प्रस्तुत गर्नुहोस्"
-
-#: preferences.cpp:106
-msgid "Allow only one timer at a time"
-msgstr "एक समयमा एउटा टाइमरलाई मात्र अनुमति दिनुहोस्"
-
-#: preferences.cpp:108
-msgid ""
-"Unitasking - allow only one task to be timed at a time. Does not stop any "
-"timer."
-msgstr "Unitasking - एक समयमा एउटा कार्यलाई मात्र समय दिन अनुमति दिन्छ । कुनै पनि टाइमर नरोक्नुहोस् ।"
-
-#: preferences.cpp:110
-msgid "Place an icon to the SysTray"
-msgstr "प्राणाली ट्रेमा एउटा प्रतिमा राख्नुहोस्"
-
-#: preferences.cpp:130
-msgid "Display"
-msgstr "प्रदर्शन गर्नुहोस्"
-
-#: preferences.cpp:131
-msgid "Display Settings"
-msgstr "सेटिङ प्रदर्शन गर्नुहोस्"
-
-#: preferences.cpp:142
-msgid "Columns displayed:"
-msgstr "प्रदर्शित स्तम्भ:"
-
-#: preferences.cpp:144
-msgid "Session time"
-msgstr "सत्र समय"
-
-#: preferences.cpp:147
-msgid "Cumulative task time"
-msgstr "सञ्चीत कार्य समय"
-
-#: preferences.cpp:150
-msgid "Total session time"
-msgstr "कूल सत्र समय"
-
-#: preferences.cpp:153
-msgid "Total task time"
-msgstr "कूल कार्य समय"
-
-#: preferences.cpp:156 taskview.cpp:121
-msgid "Percent Complete"
-msgstr "समापन प्रतिशत"
-
-#: preferences.cpp:160
-msgid "Number format:"
-msgstr "सङ्ख्या ढाँचा:"
-
-#: preferences.cpp:182
-msgid "Storage"
-msgstr "भण्डारण"
-
-#: preferences.cpp:183
-msgid "Storage Settings"
-msgstr "भण्डारण सेटिङ"
-
-#: preferences.cpp:195
-msgid "Save tasks every"
-msgstr "प्रत्येक कार्यलाई बचत गर्नुहोस्"
-
-#: preferences.cpp:203
-msgid "iCalendar file:"
-msgstr "आई क्यालेन्डर फाइल:"
-
-#: preferences.cpp:209
-msgid "Log history"
-msgstr "काम इतिहास"
-
-#: print.cpp:43
+#: print.cpp:45
 msgid "Print Times"
 msgstr "मुद्रण समय"
 
-#: print.cpp:74
+#: print.cpp:75
 msgid "Task Name "
 msgstr "कार्य नाम "
 
-#: print.cpp:99
+#: print.cpp:98
 #, qt-format
 msgid "KArm - %1"
 msgstr "KArm - %1"
 
-#: print.cpp:105 taskview.cpp:121
+#: print.cpp:104 taskview.cpp:152
 msgid "Task Name"
 msgstr "कार्य नाम"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 156
-#: printdialog.cpp:52 rc.cpp:33
+#. i18n: file csvexportdialog_base.ui line 108
+#: printdialog.cpp:53 rc.cpp:84
 msgid "Date Range"
 msgstr "मिति दायरा"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 168
-#: printdialog.cpp:59 rc.cpp:39
+#. i18n: file csvexportdialog_base.ui line 117
+#: printdialog.cpp:60 rc.cpp:90
 msgid "From:"
 msgstr "बाट:"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 193
-#: printdialog.cpp:69 rc.cpp:42
+#. i18n: file csvexportdialog_base.ui line 142
+#: printdialog.cpp:70 rc.cpp:93
 msgid "To:"
 msgstr "सम्म:"
 
-#: printdialog.cpp:80
+#: printdialog.cpp:81
 msgid "Selected Task"
 msgstr "चयन गरिएका कार्य"
 
-#: printdialog.cpp:84
+#: printdialog.cpp:85
 msgid "Summarize per week"
 msgstr "प्रत्येक हप्तामा संक्षिप्त बनाउनुहोस्"
 
-#: printdialog.cpp:86
+#: printdialog.cpp:87
 msgid "Totals only"
 msgstr "कूल मात्र"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 16
+#. i18n: file cfgbehavior.ui line 16
 #: rc.cpp:3
+msgid "Detect desktop as idle after"
+msgstr "पछिका निस्क्रिय डेस्कटप पत्ता लगाउनुहोस्"
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 23
+#. i18n: tag string
+#. i18n: file cfgstorage.ui line 35
+#: rc.cpp:6 rc.cpp:60
+msgid " min"
+msgstr " मिनेट"
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 36
+#: rc.cpp:9
+msgid "Minimum desktop active time"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 43
+#: rc.cpp:12
+msgid " sec"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 56
+#: rc.cpp:15
+msgid "Prompt before deleting tasks"
+msgstr "कार्य मेट्न पहिला प्रस्तुत गर्नुहोस्"
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 63
+#: rc.cpp:18
+msgid ""
+"Unitasking - allow only one task to be timed at a time. Does not stop any "
+"timer."
+msgstr ""
+"Unitasking - एक समयमा एउटा कार्यलाई मात्र समय दिन अनुमति दिन्छ । कुनै पनि टाइमर "
+"नरोक्नुहोस् ।"
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 66
+#: rc.cpp:21
+msgid "Allow only one timer at a time"
+msgstr "एक समयमा एउटा टाइमरलाई मात्र अनुमति दिनुहोस्"
+
+#. i18n: tag string
+#. i18n: file cfgbehavior.ui line 73
+#: rc.cpp:24
+msgid "Place an icon to the SysTray"
+msgstr "प्राणाली ट्रेमा एउटा प्रतिमा राख्नुहोस्"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 28
+#: rc.cpp:27
+msgctxt "title of group box, general options"
+msgid "General"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 34
+#: rc.cpp:30
+#, fuzzy
+#| msgid "Number format:"
+msgid "Decimal number format"
+msgstr "सङ्ख्या ढाँचा:"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 41
+#: rc.cpp:33
+msgid "Alternating row colors"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 51
+#: rc.cpp:36
+#, fuzzy
+#| msgid "Columns displayed:"
+msgid "Columns displayed"
+msgstr "प्रदर्शित स्तम्भ:"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 57
+#: rc.cpp:39
+msgid "Session time"
+msgstr "सत्र समय"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 64
+#: rc.cpp:42
+msgid "Cumulative task time"
+msgstr "सञ्चीत कार्य समय"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 71
+#: rc.cpp:45
+msgid "Total session time"
+msgstr "कूल सत्र समय"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 78
+#: rc.cpp:48
+msgid "Total task time"
+msgstr "कूल कार्य समय"
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 85
+#: rc.cpp:51 taskview.cpp:154
+msgid "Priority"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file cfgdisplay.ui line 92
+#: rc.cpp:54 taskview.cpp:154
+msgid "Percent Complete"
+msgstr "समापन प्रतिशत"
+
+#. i18n: tag string
+#. i18n: file cfgstorage.ui line 28
+#: rc.cpp:57
+msgid "Save tasks every"
+msgstr "प्रत्येक कार्यलाई बचत गर्नुहोस्"
+
+#. i18n: tag string
+#. i18n: file csvexportdialog_base.ui line 16
+#: rc.cpp:63
 msgid "CSV Export"
 msgstr "CSV निर्यात"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 57
-#: rc.cpp:6
-msgid "&Export to Clipboard"
-msgstr "क्लिपबोर्डमा निर्यात गर्नुहोस्"
-
-#. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 70
-#: rc.cpp:9
-msgid "&Export"
-msgstr "निर्यात गर्नुहोस्"
-
-#. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 80
-#: rc.cpp:12
-msgid "&Cancel"
-msgstr "रद्द गर्नुहोस्"
-
-#. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 87
-#: rc.cpp:15
+#. i18n: file csvexportdialog_base.ui line 39
+#: rc.cpp:66
 msgid "Export to:"
 msgstr "यसमा निर्यात गर्नुहोस्:"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 97
-#: rc.cpp:18
+#. i18n: file csvexportdialog_base.ui line 49
+#: rc.cpp:69
 msgid "The file where Karm will write the data."
 msgstr "Karm ले डेटा लेख्ने फाइल ।"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 115
-#: rc.cpp:21
+#. i18n: file csvexportdialog_base.ui line 67
+#: rc.cpp:72
 msgid "Quotes:"
 msgstr "उद्धरण:"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 136
-#: rc.cpp:24
+#. i18n: file csvexportdialog_base.ui line 88
+#: rc.cpp:75
 msgid "All fields are quoted in the output."
 msgstr "सबै फिल्ड निर्गतमा उद्धरण गरिएका छन् ।"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 140
-#: rc.cpp:27
+#. i18n: file csvexportdialog_base.ui line 92
+#: rc.cpp:78
 msgid "\""
 msgstr "\""
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 145
-#: rc.cpp:30
+#. i18n: file csvexportdialog_base.ui line 97
+#: rc.cpp:81
 msgid "'"
 msgstr "'"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 159
-#: rc.cpp:36
+#. i18n: file csvexportdialog_base.ui line 111
+#: rc.cpp:87
 msgid ""
 "<p>An inclusive date range for reporting on time card history.  Not enabled "
 "when reporting on totals.</p>"
@@ -740,146 +624,176 @@ msgstr ""
 "गर्दा सक्षम पारिएको थिएन ।</p>"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 235
-#: rc.cpp:48
+#. i18n: file csvexportdialog_base.ui line 184
+#: rc.cpp:99
 msgid "Hours:Minutes"
 msgstr "घन्टा:मिनेट"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 252
-#: rc.cpp:51
+#. i18n: file csvexportdialog_base.ui line 201
+#: rc.cpp:102
 msgid "All Times"
 msgstr "सबै समय"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 279
-#: rc.cpp:60
+#. i18n: file csvexportdialog_base.ui line 228
+#: rc.cpp:111
 msgid "Only Selected"
 msgstr "चयन गरिएका मात्र"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 295
-#: rc.cpp:63
+#. i18n: file csvexportdialog_base.ui line 244
+#: rc.cpp:114
 msgid "Delimiter"
 msgstr "डेलिमिटर"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 298
-#: rc.cpp:66
-msgid "The character used to seperate one field from another in the output."
+#. i18n: file csvexportdialog_base.ui line 247
+#: rc.cpp:117
+#, fuzzy
+#| msgid "The character used to seperate one field from another in the output."
+msgid "The character used to separate one field from another in the output."
 msgstr "निर्गतमा एउटा फिल्डबाट अन्यमा बिभाजन गर्न प्रयोग गरिएको क्यारेक्टर ।"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 307
-#: rc.cpp:69
+#. i18n: file csvexportdialog_base.ui line 259
+#: rc.cpp:120
+#, fuzzy
+#| msgid "Tab"
+msgctxt "tabulator delimiter"
 msgid "Tab"
 msgstr "ट्याब"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 314
-#: rc.cpp:72
+#. i18n: file csvexportdialog_base.ui line 266
+#: rc.cpp:123
+#, fuzzy
+#| msgid "Other:"
+msgctxt "user can set an user defined delimiter"
 msgid "Other:"
 msgstr "अन्य:"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 321
-#: rc.cpp:75
+#. i18n: file csvexportdialog_base.ui line 273
+#: rc.cpp:126
 msgid "Space"
 msgstr "खाली स्थान"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 328
-#: rc.cpp:78
+#. i18n: file csvexportdialog_base.ui line 280
+#: rc.cpp:129
 msgid "Comma"
 msgstr "अल्पविराम"
 
 #. i18n: tag string
-#. i18n: file csvexportdialog_base.ui line 365
-#: rc.cpp:81
+#. i18n: file csvexportdialog_base.ui line 317
+#: rc.cpp:132
 msgid "Semicolon"
 msgstr "अर्धविराम"
 
 #. i18n: tag text
 #. i18n: file karmui.rc line 4
-#: rc.cpp:84
+#: rc.cpp:135
 msgid "&File"
 msgstr "फाइल"
 
 #. i18n: tag text
-#. i18n: file karmui.rc line 14
-#: rc.cpp:87
+#. i18n: file karmui.rc line 17
+#: rc.cpp:138
+#, fuzzy
+#| msgid "&Export"
+msgid "&Import"
+msgstr "निर्यात गर्नुहोस्"
+
+#. i18n: tag text
+#. i18n: file karmui.rc line 21
+#: rc.cpp:141
+msgid "&Export"
+msgstr "निर्यात गर्नुहोस्"
+
+#. i18n: tag text
+#. i18n: file karmui.rc line 32
+#: rc.cpp:144
 msgid "&Clock"
 msgstr "घडी"
 
 #. i18n: tag text
-#. i18n: file karmui.rc line 20
-#: rc.cpp:90
+#. i18n: file karmui.rc line 39
+#: rc.cpp:147
 msgid "&Task"
 msgstr "कार्य"
 
 #. i18n: tag text
-#. i18n: file karmui.rc line 31
-#: rc.cpp:93
+#. i18n: file karmui.rc line 50
+#: rc.cpp:150
 msgid "&Settings"
 msgstr "सेटिङ"
 
 #. i18n: tag text
-#. i18n: file karmui.rc line 36
-#: rc.cpp:96
+#. i18n: file karmui.rc line 57
+#: rc.cpp:153
 msgid "Main Toolbar"
 msgstr "मुख्य उपकरणपट्टी"
 
-#: rc.cpp:97
+#. i18n: tag text
+#. i18n: file karmui.rc line 65
+#: rc.cpp:156
+#, fuzzy
+#| msgid "Task"
+msgid "Tasks"
+msgstr "कार्य"
+
+#: rc.cpp:157
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Nabin Gautam"
 
-#: rc.cpp:98
+#: rc.cpp:158
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nabin@mpp.org.np"
 
-#: taskview.cpp:121
+#: taskview.cpp:152
 msgid "Session Time"
 msgstr "सत्र समय"
 
-#: taskview.cpp:121 timekard.cpp:66
+#: taskview.cpp:152 timekard.cpp:66
 msgid "Time"
 msgstr "समय"
 
-#: taskview.cpp:121
+#: taskview.cpp:153
 msgid "Total Session Time"
 msgstr "कूल सत्र समय"
 
-#: taskview.cpp:121
+#: taskview.cpp:153
 msgid "Total Time"
 msgstr "कूल समय"
 
-#: taskview.cpp:519
-msgid "You can change this task's comment, start time and end time."
-msgstr "तपाईँले कार्यको टिप्पणी, सुरु समय र अन्त्य समय परिवर्तन गर्न सक्नुहुन्छ ।"
+#: taskview.cpp:201
+#, qt-format
+msgid "%1 %"
+msgstr ""
 
-#: taskview.cpp:564 taskview.cpp:584
-msgid "This is not a valid Date/Time."
-msgstr "यो वैध मिति/समय होइन ।"
+#: taskview.cpp:212
+msgid "unspecified"
+msgstr ""
 
-#: taskview.cpp:635
-msgid "Saved successfully"
-msgstr "सफलतापूर्वक बचत गरियो"
+#: taskview.cpp:215
+msgctxt "combox entry for highest priority"
+msgid "1 (highest)"
+msgstr ""
 
-#: taskview.cpp:635
-msgid "Error during saving"
-msgstr "बचत गर्दा त्रुटि"
+#: taskview.cpp:218
+msgctxt "combox entry for medium priority"
+msgid "5 (medium)"
+msgstr ""
 
-#: taskview.cpp:749
-msgid "New Task"
-msgstr "नयाँ कार्य"
+#: taskview.cpp:221
+msgctxt "combox entry for lowest priority"
+msgid "9 (lowest)"
+msgstr ""
 
-#: taskview.cpp:761 taskview.cpp:835
-msgid "Unnamed Task"
-msgstr "नाम नदिइएको कार्य"
-
-#: taskview.cpp:776
+#: taskview.cpp:260 taskview.cpp:710
 msgid ""
 "Error storing new task. Your changes were not saved. Make sure you can edit "
 "your iCalendar file. Also quit all applications using this file and remove "
@@ -887,22 +801,38 @@ msgid ""
 msgstr ""
 "नयाँ कार्य भण्डारण गर्दा त्रुटि । तपाईँका परिवर्तन बचत गरिएका थिएनन् । तपाईँ आई "
 "क्यालेन्डर फाइल सम्पादन गर्न निश्चित हुनुहोस् । यस फाइलको प्रयोग गरेर सबै अनुप्रयोग अन्त्य "
-"गर्नुहोस् र ~/.kde/share/apps/kabc/lock/ बाट यसको नामसँग सम्बन्धित ताल्चा लगाउने कुनै पनि "
-"फाइल हटाउनुहोस् ।"
+"गर्नुहोस् र ~/.kde/share/apps/kabc/lock/ बाट यसको नामसँग सम्बन्धित ताल्चा लगाउने कुनै "
+"पनि फाइल हटाउनुहोस् ।"
 
-#: taskview.cpp:814
+#: taskview.cpp:548
+msgid "Saved successfully"
+msgstr "सफलतापूर्वक बचत गरियो"
+
+#: taskview.cpp:548
+msgid "Error during saving"
+msgstr "बचत गर्दा त्रुटि"
+
+#: taskview.cpp:683
+msgid "New Task"
+msgstr "नयाँ कार्य"
+
+#: taskview.cpp:695 taskview.cpp:769
+msgid "Unnamed Task"
+msgstr "नाम नदिइएको कार्य"
+
+#: taskview.cpp:748
 msgid "New Sub Task"
 msgstr "नयाँ उप-कार्य"
 
-#: taskview.cpp:828
+#: taskview.cpp:762
 msgid "Edit Task"
 msgstr "कार्य सम्पादन गर्नुहोस्"
 
-#: taskview.cpp:884 taskview.cpp:903
+#: taskview.cpp:818 taskview.cpp:837
 msgid "No task selected."
 msgstr "कार्य चयन गरिएको छैन ।"
 
-#: taskview.cpp:911
+#: taskview.cpp:845
 #, qt-format
 msgid ""
 "Are you sure you want to delete the task named\n"
@@ -911,11 +841,11 @@ msgstr ""
 "तपाईँ\n"
 "\"%1\" नाम गरिएको कार्य र यसको पूरै इतिहास मेट्न निश्चित हुनुहुन्छ ?"
 
-#: taskview.cpp:914 taskview.cpp:922
+#: taskview.cpp:848 taskview.cpp:856
 msgid "Deleting Task"
 msgstr "कार्य मेट्दै"
 
-#: taskview.cpp:918
+#: taskview.cpp:852
 #, qt-format
 msgid ""
 "Are you sure you want to delete the task named\n"
@@ -926,52 +856,281 @@ msgstr ""
 "\"%1\" नाम गरिएको कार्य र यसको पूरै इतिहास मेट्न निश्चित हुनुहुन्छ ?\n"
 "द्रष्टव्य: यसका सबै सहायक कार्य र तीनका इतिहास पनि मेटिन्छन् ।"
 
-#: timekard.cpp:62 timekard.cpp:332
+#: timekard.cpp:62 timekard.cpp:337
 msgid "Task Totals"
 msgstr "कूल कार्य"
 
-#: timekard.cpp:67
-msgid "Task"
-msgstr "कार्य"
-
-#: timekard.cpp:101
+#: timekard.cpp:100
 msgid "No tasks."
 msgstr "कार्य होइन ।"
 
-#: timekard.cpp:277
+#: timekard.cpp:272
 msgid "No hours logged."
 msgstr "घन्टा लग गरिएको छैन ।"
 
-#: timekard.cpp:332
+#: timekard.cpp:337
 msgid "Task History"
 msgstr "कार्य इतिहास"
 
-#: timekard.cpp:375
+#: timekard.cpp:380
 #, qt-format
 msgid "Week of %1"
 msgstr "%1 को हप्ता"
 
-#: tray.cpp:144
+#: timetrackerwidget.cpp:106
+msgid "Search or add task"
+msgstr ""
+
+#: timetrackerwidget.cpp:150
+msgid "Cannot create new file."
+msgstr ""
+
+#: timetrackerwidget.cpp:163 timetrackerwidget.cpp:398
+msgid "Untitled"
+msgstr ""
+
+#: timetrackerwidget.cpp:397
+msgid "This document has not been saved yet. Do you want to save it?"
+msgstr ""
+
+#: timetrackerwidget.cpp:587
+msgid "Behavior"
+msgstr "व्यवहार"
+
+#: timetrackerwidget.cpp:594
+#, fuzzy
+#| msgid "Display"
+msgctxt "settings page for customizing user interface"
+msgid "Display"
+msgstr "प्रदर्शन गर्नुहोस्"
+
+#: timetrackerwidget.cpp:600
+msgid "Storage"
+msgstr "भण्डारण"
+
+#: timetrackerwidget.cpp:710
+msgid "Do you really want to reset the time to zero for all tasks?"
+msgstr "साँच्चिकै तपाईँले सबै कार्यका लागि समय शून्यमा रिसेट गर्न चाहनुहुन्छ ?"
+
+#: timetrackerwidget.cpp:711
+msgid "Confirmation Required"
+msgstr "स्वीकृति आवश्यक"
+
+#: timetrackerwidget.cpp:711
+msgid "Reset All Times"
+msgstr "सबै समय रिसेट गर्नुहोस्"
+
+#: timetrackerwidget.cpp:845
+msgid "Save failed, most likely because the file could not be locked."
+msgstr "बचत असफल भयो, यसको कारणले धेरै जसो फाइलमा ताल्चा लगाउन सक्ने छैन ।"
+
+#: timetrackerwidget.cpp:847
+msgid "Could not modify calendar resource."
+msgstr "क्यालेन्डर स्रोत परिमार्जन गर्न सकेन ।"
+
+#: timetrackerwidget.cpp:849
+msgid "Out of memory--could not create object."
+msgstr "स्मृति बाहिर--वस्तु सिर्जना गर्न सकेन ।"
+
+#: timetrackerwidget.cpp:851
+msgid "UID not found."
+msgstr "UID फेला परेन ।"
+
+#: timetrackerwidget.cpp:853
+msgid "Invalidate date--format is YYYY-MM-DD."
+msgstr "अवैध मिति--ढाँचा YYYY-MM-DD हो ।"
+
+#: timetrackerwidget.cpp:855
+msgid "Invalid time--format is YYYY-MM-DDTHH:MM:SS."
+msgstr "अवैध समय--ढाँचा YYYY-MM-DDTHH:MM:SS हो ।"
+
+#: timetrackerwidget.cpp:857
+msgid "Invalid task duration--must be greater than zero."
+msgstr "अवैद्य कार्य अवधि--शून्य भन्दा ठूलो हुनुपर्छ ।"
+
+#: timetrackerwidget.cpp:859
+#, qt-format
+msgid "Invalid error number: %1"
+msgstr "अवैद्य त्रुटि नम्बर: %1"
+
+#: tray.cpp:164
 msgid "No active tasks"
 msgstr "सक्रिय कार्य छैन"
 
-#: tray.cpp:151
+#: tray.cpp:169
 msgid ", ..."
 msgstr ", ..."
 
-#: tray.cpp:166
+#: tray.cpp:184
 msgid ", "
 msgstr ", "
 
-#: treeviewheadercontextmenu.cpp:23
+#: treeviewheadercontextmenu.cpp:45
 msgid "Columns"
 msgstr "स्तम्भ"
 
-#: treeviewheadercontextmenu.cpp:103
+#: treeviewheadercontextmenu.cpp:125
 msgid "Show"
 msgstr "देखाउनुहोस्"
 
-#: treeviewheadercontextmenu.cpp:103
+#: treeviewheadercontextmenu.cpp:125
 msgid "Hide"
 msgstr "लुकाउनुहोस्"
 
+#~ msgid ""
+#~ "Select the desktop(s) that will automatically start the timer on this "
+#~ "task."
+#~ msgstr "यो कार्यमा स्वचालित रूपमा टाइमर सुरुआत गर्ने डेस्कटप(हरू) चयन गर्नुहोस् ।"
+
+#~ msgid ""
+#~ "KArm has been renamed to KTimeTracker. This makes it easier to "
+#~ "recognize.\n"
+#~ msgstr ""
+#~ "केडीई आर्मलाई केडीई समय ट्र्याकरमा पुन: नामकरण गरिएको छ । यसले पहिचान गर्न सजिलो "
+#~ "बनाउछ ।\n"
+
+#~ msgid "Start &New Session"
+#~ msgstr "नयाँ सत्र सुरु गर्नुहोस्"
+
+#~ msgid "&Reset All Times"
+#~ msgstr "सबै समय रिसेट गर्नुहोस्"
+
+#~ msgid "S&top"
+#~ msgstr "रोक्नुहोस्"
+
+#~ msgid "Stop &All Timers"
+#~ msgstr "सबै टाइमर रोक्नुहोस्"
+
+#~ msgid "&New..."
+#~ msgstr "नयाँ..."
+
+#~ msgid "New &Subtask..."
+#~ msgstr "नयाँ उप-कार्य..."
+
+#~ msgid "&Delete"
+#~ msgstr "मेट्नुहोस्"
+
+#~ msgid "&Edit..."
+#~ msgstr "सम्पादन गर्नुहोस्..."
+
+#~ msgid "&Mark as Complete"
+#~ msgstr "समापनका रूपमा चिनो लगाउनुहोस्"
+
+#~ msgid "&Mark as Incomplete"
+#~ msgstr "अपूर्णका रूपमा चिनो लगाउनुहोस्"
+
+#~ msgid "&Export to CSV File..."
+#~ msgstr "CSV फाइलमा निर्यात गर्नुहोस्..."
+
+#~ msgid "Export &History to CSV File..."
+#~ msgstr "CSV फाइलमा इतिहास निर्यात गर्नुहोस्..."
+
+#~ msgid "Import Tasks From &Planner..."
+#~ msgstr "योजनाकर्ताबाट कार्य आयात गर्नुहोस्..."
+
+#~ msgid "Configure KArm..."
+#~ msgstr "केडीई आर्म कन्फिगर गर्नुहोस्..."
+
+#~ msgid "Start a new session"
+#~ msgstr "नयाँ सत्र सुरु गर्नुहोस्"
+
+#~ msgid ""
+#~ "This will reset the session time to 0 for all tasks, to start a new "
+#~ "session, without affecting the totals."
+#~ msgstr ""
+#~ "कूल सबैलाई प्रभाव नपारिकन, नयाँ सत्र सुरु गर्न, यसले सबै कार्यका लागि सत्र समय रिसेट "
+#~ "गर्नेछ ।छ ।"
+
+#~ msgid "Reset all times"
+#~ msgstr "सबै समय रिसेट गर्नुहोस्"
+
+#~ msgid ""
+#~ "This will reset the session and total time to 0 for all tasks, to restart "
+#~ "from scratch."
+#~ msgstr ""
+#~ "यसले स्क्र्याचबाट पुन: सुरु गर्न, सबै कार्यका लागि सत्र र कूल समय ० मा रिसेट गर्नेछ ।"
+
+#~ msgid "Start timing for selected task"
+#~ msgstr "चयन गरिएका कार्यका लागि टाइमिङ सुरु गर्नुहोस्"
+
+#~ msgid ""
+#~ "This will start timing for the selected task.\n"
+#~ "It is even possible to time several tasks simultaneously.\n"
+#~ "\n"
+#~ "You may also start timing of a tasks by double clicking the left mouse "
+#~ "button on a given task. This will, however, stop timing of other tasks."
+#~ msgstr ""
+#~ "यसले चयन गरेका कार्यका लागि टाइमिङ सुरु गर्नेछ ।\n"
+#~ "तापनि एकैसाथ धेरै कार्यमा समय दिन सम्भव हुन्छ ।\n"
+#~ "\n"
+#~ "तपाईँले दिएका कार्यमा माउसको बायाँ बटन डबल क्लिक गरेर कार्यको टाइमिङ सुरु गर्न "
+#~ "सक्नुहुन्छ । तापनि, यसले, अन्य कार्यको टाइमिङ रोक्नेछ ।"
+
+#~ msgid "Stop timing of the selected task"
+#~ msgstr "चयन गरिएका कार्यको टाइमिङ रोक्नुहोस्"
+
+#~ msgid "Stop all of the active timers"
+#~ msgstr "सबै सक्रिय टाइमर रोक्नुहोस्"
+
+#~ msgid "Create new top level task"
+#~ msgstr "नयाँ उच्च स्तर कार्य सिर्जना गर्नुहोस्"
+
+#~ msgid "This will create a new top level task."
+#~ msgstr "यसले नयाँ उच्च स्तर कार्य सिर्जना गर्नेछ ।"
+
+#~ msgid "Delete selected task"
+#~ msgstr "चयन गरिएका कार्य मेट्नुहोस्"
+
+#~ msgid "This will delete the selected task and all its subtasks."
+#~ msgstr "यसले चयन गरिएका कार्य र यसका सबै उप-कार्य मेट्नेछ ।"
+
+#~ msgid "Edit name or times for selected task"
+#~ msgstr "चयन गरिएका कार्यका लागि नाम वा समय सम्पादन गर्नुहोस्"
+
+#~ msgid ""
+#~ "This will bring up a dialog box where you may edit the parameters for the "
+#~ "selected task."
+#~ msgstr ""
+#~ "यसले चयन गरिएका कार्यका लागि तपाईँले परिमिति सम्पादन गर्न सक्ने संवाद बाकस ल्याउनेछ ।"
+
+#~ msgid "Copy task totals to clipboard"
+#~ msgstr "क्लिपबोर्डमा कूल कार्य प्रतिलिपि गर्नुहोस्"
+
+#~ msgid "Copy time card history to clipboard."
+#~ msgstr "क्लिबोर्डमा समय कार्ड इतिहास प्रतिलिपि गर्नुहोस् ।"
+
+#~ msgid "Successfully saved tasks and history"
+#~ msgstr "कार्य र इतिहास सफलतापूर्वक बचत गरियो"
+
+#~ msgid "Successfully exported History to CSV-file"
+#~ msgstr "CSV-फाइलमा इतिहास सफलतापूर्वक निर्यात गरियो"
+
+#~ msgid "&Export Times..."
+#~ msgstr "समय निर्यात गर्नुहोस्..."
+
+#~ msgid "Export &History..."
+#~ msgstr "इतिहास निर्यात गर्नुहोस्..."
+
+#~ msgid "Preferences"
+#~ msgstr "प्राथमिकता"
+
+#~ msgid "Behavior Settings"
+#~ msgstr "व्यवहार सेटिङ"
+
+#~ msgid "Display Settings"
+#~ msgstr "सेटिङ प्रदर्शन गर्नुहोस्"
+
+#~ msgid "Storage Settings"
+#~ msgstr "भण्डारण सेटिङ"
+
+#~ msgid "iCalendar file:"
+#~ msgstr "आई क्यालेन्डर फाइल:"
+
+#~ msgid "Log history"
+#~ msgstr "काम इतिहास"
+
+#~ msgid "&Export to Clipboard"
+#~ msgstr "क्लिपबोर्डमा निर्यात गर्नुहोस्"
+
+#~ msgid "&Cancel"
+#~ msgstr "रद्द गर्नुहोस्"
