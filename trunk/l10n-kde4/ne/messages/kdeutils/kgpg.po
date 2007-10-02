@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-01 05:35+0200\n"
+"POT-Creation-Date: 2007-10-02 05:33+0200\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -218,12 +218,12 @@ msgstr "<p>तपाईँको कुञ्जी रिङमा <b>%1</b> �
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keylistview.cpp:351 kgpginterface.cpp:3096 rc.cpp:451
+#: keylistview.cpp:351 kgpginterface.cpp:3069 rc.cpp:451
 #, no-c-format
 msgid "Import"
 msgstr "आयात गर्नुहोस्"
 
-#: keylistview.cpp:351 kgpginterface.cpp:3096
+#: keylistview.cpp:351 kgpginterface.cpp:3069
 msgid "Do Not Import"
 msgstr "आयात नगर्नुहोस्"
 
@@ -236,7 +236,7 @@ msgstr "तयार"
 msgid "Loading Keys..."
 msgstr "कुञ्जी लोड गर्दैछ..."
 
-#: keylistview.cpp:608 keysmanager.cpp:1722
+#: keylistview.cpp:608 keysmanager.cpp:1733
 #, fuzzy, qt-format
 #| msgid "%1 subkey"
 msgid "%1 key"
@@ -408,7 +408,7 @@ msgid_plural "<qt><b>%1 keys imported:</b><br/></qt>"
 msgstr[0] "<qt><b>एउटा कुञ्जी आयात गरियो:</b><br></qt>"
 msgstr[1] "<qt><b>%1 कुञ्जी आयात गरियो:</b><br></qt>"
 
-#: keyservers.cpp:213 kgpginterface.cpp:2353
+#: keyservers.cpp:213 kgpginterface.cpp:2326
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -803,11 +803,16 @@ msgid "ID: "
 msgstr "आईडी: "
 
 #: keysmanager.cpp:1442
+#, fuzzy
+#| msgid ""
+#| "Secret keys SHOULD NOT be saved in an unsafe place.\n"
+#| "If someone else can access this file, encryption with this key will be "
+#| "compromised!\n"
+#| "Continue key export?"
 msgid ""
-"Secret keys SHOULD NOT be saved in an unsafe place.\n"
-"If someone else can access this file, encryption with this key will be "
-"compromised!\n"
-"Continue key export?"
+"<qt>Secret keys <b>should not</b> be saved in an unsafe place.<br/>If "
+"someone else can access this file, encryption with this key will be "
+"compromised!<br/>Continue key export?</qt>"
 msgstr ""
 "गुप्त कुञ्जीलाई असुरक्षित स्थानमा बचत गर्नुहुदैन ।\n"
 "यदि अन्य कसैले यो फाइलमा पहुँच गर्न सकेमा, यो कुञ्जीसँग गुप्तिकरण सम्झौता गर्नेछ !\n"
@@ -818,15 +823,18 @@ msgid "Export PRIVATE KEY As"
 msgstr "यस रूपमा व्यक्तिगत कुञ्जी निर्यात गर्नुहोस्"
 
 #: keysmanager.cpp:1468
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Your PRIVATE key \"%1\" was successfully exported.\n"
+#| "DO NOT leave it in an insecure place."
 msgid ""
-"Your PRIVATE key \"%1\" was successfully exported.\n"
-"DO NOT leave it in an insecure place."
+"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2 .<br/"
+"><b>Do not</b> leave it in an insecure place.</qt>"
 msgstr ""
 "तपाईँको \"%1\" व्यक्तिगत कुञ्जी सफलतापूर्वक निर्यात गरियो ।\n"
 "यसलाई असुरक्षित स्थानमा नछोड्नुहोस् ।"
 
-#: keysmanager.cpp:1470
+#: keysmanager.cpp:1471
 msgid ""
 "Your secret key could not be exported.\n"
 "Check the key."
@@ -834,20 +842,20 @@ msgstr ""
 "तपाईँको गुप्त कुञ्जी निर्यात गर्न सकेन ।\n"
 "कुञ्जी जाँच गर्नुहोस् ।"
 
-#: keysmanager.cpp:1510
+#: keysmanager.cpp:1511
 msgid "Public Key Export"
 msgstr "सार्वजनिक कुञ्जी निर्यात"
 
-#: keysmanager.cpp:1527 kgpgeditor.cpp:464
+#: keysmanager.cpp:1528 kgpgeditor.cpp:464
 msgid "Save File"
 msgstr "फाइल बचत गर्नुहोस्"
 
-#: keysmanager.cpp:1572
+#: keysmanager.cpp:1573
 #, qt-format
 msgid "Your public key \"%1\" was successfully exported\n"
 msgstr "तपाईँको \"%1\" सार्वजनिक कुञ्जी सफलतापूर्वक निर्यात गरियो\n"
 
-#: keysmanager.cpp:1574
+#: keysmanager.cpp:1575
 msgid ""
 "Your public key could not be exported\n"
 "Check the key."
@@ -855,7 +863,7 @@ msgstr ""
 "तपाईँको सार्वजनिक कुञ्जी निर्यात गर्न सकेन ।\n"
 "कुञ्जी जाँच गर्नुहोस् ।"
 
-#: keysmanager.cpp:1655
+#: keysmanager.cpp:1666
 msgid ""
 "This key is an orphaned secret key (secret key without public key.) It is "
 "currently not usable.\n"
@@ -867,45 +875,45 @@ msgstr ""
 "\n"
 "के तपाईँले सार्वजनिक कुञ्जी पुन: उत्पन्न गर्न चाहनुहुन्छ ?"
 
-#: keysmanager.cpp:1656
+#: keysmanager.cpp:1667
 msgid "Generate"
 msgstr "उत्पन्न गर्नुहोस्"
 
-#: keysmanager.cpp:1656
+#: keysmanager.cpp:1667
 msgid "Do Not Generate"
 msgstr "उत्पन्न नगर्नुहोस्"
 
-#: keysmanager.cpp:1692
+#: keysmanager.cpp:1703
 #, qt-format
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr "<qt>तपाईँ समूह मेट्न<b>%1</b>निश्चित हुनुहुन्छ ?</qt>"
 
-#: keysmanager.cpp:1692 keysmanager.cpp:2220
+#: keysmanager.cpp:1703 keysmanager.cpp:2231
 msgid "Delete"
 msgstr "मेट्नुहोस्"
 
-#: keysmanager.cpp:1766
+#: keysmanager.cpp:1777
 msgid ""
 "<qt>You cannot create a group containing signatures, subkeys or other groups."
 "</qt>"
 msgstr ""
 "<qt>तपाईँले हस्ताक्षर समाविष्ट समूह, सहायक कुञ्जी वा अन्य समूह सिर्जना गर्न सक्नुहुन्न ।</qt>"
 
-#: keysmanager.cpp:1770
+#: keysmanager.cpp:1781
 msgid "Create New Group"
 msgstr "नयाँ समूह सिर्जना गर्नुहोस्"
 
-#: keysmanager.cpp:1770
+#: keysmanager.cpp:1781
 msgid "Enter new group name:"
 msgstr "नयाँ समूह नाम प्रविष्ट गर्नुहोस्:"
 
-#: keysmanager.cpp:1776
+#: keysmanager.cpp:1787
 msgid ""
 "Following keys are not valid or not trusted and will not be added to the "
 "group:"
 msgstr "निम्न कुञ्जीहरू वैध छैन वा विश्वासिलो छैन र समूहमा थप गरिने छैन:"
 
-#: keysmanager.cpp:1792
+#: keysmanager.cpp:1803
 #, qt-format
 msgid ""
 "<qt>No valid or trusted key was selected. The group <b>%1</b> will not be "
@@ -913,22 +921,22 @@ msgid ""
 msgstr ""
 "<qt>वैध वा विश्वासिलो कुञ्जी चयन गरिएको थिएन । समूह<b>%1</b> सिर्जना गरिने छैन ।</qt>"
 
-#: keysmanager.cpp:1823
+#: keysmanager.cpp:1834
 msgid ""
 "Following keys are in the group but are not valid or not in your keyring. "
 "They will be removed from the group."
 msgstr ""
 "निम्न कुञ्जीहरू समूहमा छन् तर वैध वा तपाईँको किरिङमा छैनन् । तिनीहरू समूहबाट हटाइनेछ ।"
 
-#: keysmanager.cpp:1833
+#: keysmanager.cpp:1844
 msgid "Group Properties"
 msgstr "समूह गुण"
 
-#: keysmanager.cpp:1903
+#: keysmanager.cpp:1914
 msgid "You can only sign primary keys. Please check your selection."
 msgstr "तपाईँले प्राथमिक कुञ्जी मात्र साइन गर्न सक्नुहुन्छ । कृपया तपाईँको चयन जाँच गर्नुहोस् ।"
 
-#: keysmanager.cpp:1918
+#: keysmanager.cpp:1929
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>You are about to sign key:<br><br>%1<br>ID: %2<br>Fingerprint: <br><b>"
@@ -945,7 +953,7 @@ msgstr ""
 "3</b><br><br>तपाईँले सञ्चारमा अन्य व्यक्तिद्वारा अवरोध नहोस् भनेर निश्चित हुन कुञ्जी "
 "मालिकलाई फोन गरेर वा भेटेर कुञ्जी औठाछाप जाँच गर्नु पर्दछ ।</qt>"
 
-#: keysmanager.cpp:1935
+#: keysmanager.cpp:1946
 #, fuzzy
 #| msgid ""
 #| "<qt>You are about to sign the following keys in one pass.<br><b>If you "
@@ -960,30 +968,30 @@ msgstr ""
 "सावधानीपूर्वक सबै औठाछापहरू जाँच गर्नुभएन भने, तपाईँको सञ्चारको सुरक्षामा सम्झौता गर्नेछ ।</"
 "b></qt>"
 
-#: keysmanager.cpp:1979
+#: keysmanager.cpp:1990
 #, fuzzy, qt-format
 #| msgid "<qt>Bad passphrase, key <b>%1</b> not signed.</qt>"
 msgid "<qt>Bad passphrase, key <b>%1 (%2)</b> not signed.</qt>"
 msgstr "<qt>खराब पासफ्रेज, <b>%1</b> कुञ्जी साइन गरिएको छैन ।</qt>"
 
-#: keysmanager.cpp:1982
+#: keysmanager.cpp:1993
 #, fuzzy, qt-format
 #| msgid "<qt>The key <b>%1</b> is already signed.</qt>"
 msgid "<qt>The key <b>%1 (%2)</b> is already signed.</qt>"
 msgstr "<qt>कुञ्जी <b>%1</b> पहिल्यै साइन गरिएको छ ।</qt>"
 
-#: keysmanager.cpp:2023
+#: keysmanager.cpp:2034
 #, fuzzy
 msgid "All signatures for this key are already in your keyring"
 msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] "यो कुञ्जीका लागि सबै हस्ताक्षरहरू किरिङमा पहिल्यै छन्"
 msgstr[1] "यो कुञ्जीका लागि सबै हस्ताक्षरहरू किरिङमा पहिल्यै छन्"
 
-#: keysmanager.cpp:2130
+#: keysmanager.cpp:2141
 msgid "Edit key manually to delete a self-signature."
 msgstr "आफ्नो हस्ताक्षर मेट्न कुञ्जी म्यानुअल तरिकाले सम्पादन गर्नुहोस् ।"
 
-#: keysmanager.cpp:2134
+#: keysmanager.cpp:2145
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Are you sure you want to delete signature<br><b>%1</b> from key:"
@@ -994,16 +1002,16 @@ msgid ""
 msgstr ""
 "<qt>तपाईँले<br><b>%1</b> कुञ्जीबाट:<br><b>%2</b> हस्ताक्षर मेट्न निश्चित हुनुहुन्छ ?</qt>"
 
-#: keysmanager.cpp:2156
+#: keysmanager.cpp:2167
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr "अनुरोध गरिएको सञ्चालन असफल भयो, कृपया कुञ्जी म्यानुअल तरिकाले सम्पादन गर्नुहोस् ।"
 
-#: keysmanager.cpp:2197
+#: keysmanager.cpp:2208
 #, qt-format
 msgid "<qt>Cannot open file <b>%1</b> for printing...</qt>"
 msgstr "<qt>मुद्रणका लागि <b>%1</b> फाइल खोल्न सकिदैन...</qt>"
 
-#: keysmanager.cpp:2218
+#: keysmanager.cpp:2229
 #, fuzzy, qt-format
 #| msgid ""
 #| "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair "
@@ -1016,18 +1024,18 @@ msgstr ""
 "<p> <b>गुप्त कुञ्जी</b> जोडी <b>%1</b> मेट्नुहुन्छ ?</p>यो कुञ्जी जोडी मेट्नुको अर्थ तपाईँले "
 "यो कुञ्जीसँग गुप्तिकरण गरिएको फाइललाई कहिल्यै पनि गुप्तिकरण उल्टाउन नसक्नु भन्ने हुन्छ ।"
 
-#: keysmanager.cpp:2243
+#: keysmanager.cpp:2254
 #, qt-format
 msgid "Can not delete key <b>%1</b> while it is edited in terminal."
 msgstr ""
 
-#: keysmanager.cpp:2243
+#: keysmanager.cpp:2254
 #, fuzzy
 #| msgid "&Delete Keys"
 msgid "Delete key"
 msgstr "कुञ्जी मेट्नुहोस्"
 
-#: keysmanager.cpp:2279
+#: keysmanager.cpp:2290
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -1037,22 +1045,22 @@ msgid ""
 "deleted.</qt>"
 msgstr "<qt>निम्न गुप्त कुञ्जी जोडी हुन:<br><b>%1</b>तिनीहरू मेटिने छैन ।<br></qt>"
 
-#: keysmanager.cpp:2287
+#: keysmanager.cpp:2298
 #, qt-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "<qt><b>निम्न सार्वजनिक कुञ्जी मेट्नुहुन्छ ?</b></qt>"
 msgstr[1] "<qt><b>निम्न %1 सार्वजनिक कुज्जी मेट्नुहुन्छ ?</b></qt>"
 
-#: keysmanager.cpp:2356
+#: keysmanager.cpp:2367
 msgid "Key Import"
 msgstr "कुञ्जी आयात"
 
-#: keysmanager.cpp:2363
+#: keysmanager.cpp:2374
 msgid "Open File"
 msgstr "फाइल खोल्नुहोस्"
 
-#: keysmanager.cpp:2375 keysmanager.cpp:2388
+#: keysmanager.cpp:2386 keysmanager.cpp:2399
 msgid "Importing..."
 msgstr "आयात गर्दैछ..."
 
@@ -1405,51 +1413,51 @@ msgstr "साइन गर्न फाइल खोल्नुहोस्"
 msgid "Open File to Verify"
 msgstr "रूजु गर्न फाइल खोल्नुहोस्"
 
-#: kgpginterface.cpp:387
+#: kgpginterface.cpp:393
 msgid " or "
 msgstr " वा "
 
-#: kgpginterface.cpp:965
+#: kgpginterface.cpp:971
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "पासफ्रेज (सममित गुप्तिकरण) प्रविष्ट गर्नुहोस्"
 
-#: kgpginterface.cpp:1053 kgpginterface.cpp:1210 kgpginterface.cpp:1804
-#: kgpginterface.cpp:2689 kgpginterface.cpp:3003
+#: kgpginterface.cpp:1059 kgpginterface.cpp:1216 kgpginterface.cpp:1810
+#: kgpginterface.cpp:2662 kgpginterface.cpp:2976
 msgid "[No user id found]"
 msgstr "[प्रयोगकर्ता आईडी फेला परेन]"
 
-#: kgpginterface.cpp:1057 kgpginterface.cpp:2694
+#: kgpginterface.cpp:1063 kgpginterface.cpp:2667
 #, fuzzy
 #| msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>प्रयोगकर्ता आईडी फेला परेन</b> । सबै गुप्त कुञ्जी प्रयास गर्दैछ ।<br>"
 
-#: kgpginterface.cpp:1059 kgpginterface.cpp:1214 kgpginterface.cpp:1552
-#: kgpginterface.cpp:1695 kgpginterface.cpp:1811 kgpginterface.cpp:2091
-#: kgpginterface.cpp:2181 kgpginterface.cpp:2434 kgpginterface.cpp:2696
+#: kgpginterface.cpp:1065 kgpginterface.cpp:1220 kgpginterface.cpp:1558
+#: kgpginterface.cpp:1701 kgpginterface.cpp:1817 kgpginterface.cpp:2064
+#: kgpginterface.cpp:2154 kgpginterface.cpp:2407 kgpginterface.cpp:2669
 #, fuzzy, qt-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
 
-#: kgpginterface.cpp:1060 kgpginterface.cpp:1215 kgpginterface.cpp:1553
-#: kgpginterface.cpp:1696 kgpginterface.cpp:2092 kgpginterface.cpp:2182
-#: kgpginterface.cpp:2435 kgpginterface.cpp:2697 kgpginterface.cpp:3008
+#: kgpginterface.cpp:1066 kgpginterface.cpp:1221 kgpginterface.cpp:1559
+#: kgpginterface.cpp:1702 kgpginterface.cpp:2065 kgpginterface.cpp:2155
+#: kgpginterface.cpp:2408 kgpginterface.cpp:2670 kgpginterface.cpp:2981
 #, qt-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्"
 
-#: kgpginterface.cpp:1131
+#: kgpginterface.cpp:1137
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "खराब MDC पत्ता लाग्यो । गुप्तिकरण गरिएको पाठ मिलाइएको छ ।"
 
-#: kgpginterface.cpp:1311 kgpginterface.cpp:3066
+#: kgpginterface.cpp:1317 kgpginterface.cpp:3039
 #, fuzzy, qt-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2</qt>"
 msgstr "<qt>कुञ्जीआईडी बाट: <br><b>%1</b><br>राम्रो हस्ताक्षर:%2</qt>"
 
-#: kgpginterface.cpp:1316
+#: kgpginterface.cpp:1322
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Bad signature</b> from:<br>%1<br>Key ID: %2<br><br><b>Text is "
@@ -1461,24 +1469,24 @@ msgstr ""
 "<qt><b>कुञ्जीआईडी</b> बाट:<br>%1<br>खराब हस्ताक्षर: %2<br><br><b>पाठ अनुपयोगी छ "
 "।</b></qt>"
 
-#: kgpginterface.cpp:1326 kgpginterface.cpp:1348 kgpginterface.cpp:3063
-#: kgpginterface.cpp:3090
+#: kgpginterface.cpp:1332 kgpginterface.cpp:1354 kgpginterface.cpp:3036
+#: kgpginterface.cpp:3063
 msgid "No signature found."
 msgstr "हस्ताक्षर फेला परेन ।"
 
-#: kgpginterface.cpp:1329 kgpginterface.cpp:3078
+#: kgpginterface.cpp:1335 kgpginterface.cpp:3051
 msgid "The signature is valid, but the key is untrusted"
 msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वासिलो छ"
 
-#: kgpginterface.cpp:1332 kgpginterface.cpp:3081
+#: kgpginterface.cpp:1338 kgpginterface.cpp:3054
 msgid "The signature is valid, and the key is ultimately trusted"
 msgstr "हस्ताक्षर वैध छ र कुञ्जी अन्तिममा विश्वासिलो छ"
 
-#: kgpginterface.cpp:1422
+#: kgpginterface.cpp:1428
 msgid "Enter passphrase for your file (symmetrical encryption):"
 msgstr "तपाईँको फाइल (सममित गुप्तिकरण) का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:"
 
-#: kgpginterface.cpp:1596
+#: kgpginterface.cpp:1602
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -1490,7 +1498,7 @@ msgstr ""
 "<qt>कुञ्जीलाई<b>%1</b> कुञ्जीसँग <b>%2</b> साइनिङ गर्न असफल भयो ।<br>तपाईँ कन्सोल "
 "मोडमा कुञ्जी साइनिङका लागि प्रयास गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpginterface.cpp:1739
+#: kgpginterface.cpp:1745
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
@@ -1502,12 +1510,12 @@ msgstr ""
 "<qt><b>म्याद समाप्ति परिवर्तन गर्न असफल ।</b><br>तपाईँले कन्सोल मोडमा कुञ्जीको म्याद "
 "समाप्ति परिवर्तनका लागि प्रयास गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpginterface.cpp:1812
+#: kgpginterface.cpp:1818
 #, qt-format
 msgid "Enter old passphrase for <b>%1</b>"
 msgstr "<b>%1</b> का लागि पुरानो पासफ्रेज प्रविष्ट गर्नुहोस्"
 
-#: kgpginterface.cpp:1825
+#: kgpginterface.cpp:1831
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Enter new passphrase for <b>%1</b><br>If you forget this passphrase "
@@ -1519,19 +1527,19 @@ msgstr ""
 "<qt> <b>%1</b> का लागि नयाँ पासफ्रेज प्रविष्ट गर्नुहोस्<br>यदि तपाईँले यो पासफ्रेज "
 "बिर्सनुभएमा, तपाईँको सबै गुप्तिकरण गरिएको फाइल र सन्देशहरू पहुँचयोग्य हुने छैन<br></qt>"
 
-#: kgpginterface.cpp:2077
+#: kgpginterface.cpp:2050
 msgid "This image is very large. Use it anyway?"
 msgstr "यो छवि धरै ठूलो छ । जसरी भए पनि यसको प्रयोग गर्नुहुन्छ ?"
 
-#: kgpginterface.cpp:2077
+#: kgpginterface.cpp:2050
 msgid "Use Anyway"
 msgstr "जसरी भए पनि प्रयोग गर्नुहोस्"
 
-#: kgpginterface.cpp:2077
+#: kgpginterface.cpp:2050
 msgid "Do Not Use"
 msgstr "प्रयोग नगर्नुहोस्"
 
-#: kgpginterface.cpp:2311
+#: kgpginterface.cpp:2284
 #, fuzzy, qt-format
 #| msgid "<qt>%1 key processed.<br></qt>"
 #| msgid_plural "<qt>%1 keys processed.<br></qt>"
@@ -1540,7 +1548,7 @@ msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "<qt>%1 कुञ्जी प्रक्रिया गरियो<br></qt>"
 msgstr[1] "<qt>%1 कुञ्जी प्रक्रिया गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2314
+#: kgpginterface.cpp:2287
 #, fuzzy, qt-format
 #| msgid "<qt>One key without ID.<br></qt>"
 #| msgid_plural "<qt>%1 keys without ID.<br></qt>"
@@ -1549,7 +1557,7 @@ msgid_plural "<qt>%1 keys without ID.</qt>"
 msgstr[0] "<qt>आईडी बिनाको एउटा कुञ्जी ।<br></qt>"
 msgstr[1] "<qt> आईडी बिनाको %1 कुञ्जी ।<br></qt>"
 
-#: kgpginterface.cpp:2316
+#: kgpginterface.cpp:2289
 #, fuzzy, qt-format
 #| msgid "<qt><b>One key imported:</b><br></qt>"
 #| msgid_plural "<qt><b>%1 keys imported:</b><br></qt>"
@@ -1558,7 +1566,7 @@ msgid_plural "<qt><b>%1 keys imported:</b></qt>"
 msgstr[0] "<qt><b>एउटा कुञ्जी आयात गरियो:</b><br></qt>"
 msgstr[1] "<qt><b>%1 कुञ्जी आयात गरियो:</b><br></qt>"
 
-#: kgpginterface.cpp:2318
+#: kgpginterface.cpp:2291
 #, fuzzy, qt-format
 #| msgid "<qt>One RSA key imported.<br></qt>"
 #| msgid_plural "<qt>%1 RSA keys imported.<br></qt>"
@@ -1567,7 +1575,7 @@ msgid_plural "<qt>%1 RSA keys imported.</qt>"
 msgstr[0] "<qt>एउटा RSA कुञ्जी आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 RSA कुञ्जी आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2320
+#: kgpginterface.cpp:2293
 #, fuzzy, qt-format
 #| msgid "<qt>One key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 keys unchanged.<br></qt>"
@@ -1576,7 +1584,7 @@ msgid_plural "<qt>%1 keys unchanged.</qt>"
 msgstr[0] "<qt>एउटा कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 msgstr[1] "<qt>%1 कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 
-#: kgpginterface.cpp:2322
+#: kgpginterface.cpp:2295
 #, fuzzy, qt-format
 #| msgid "<qt>One user ID imported.<br></qt>"
 #| msgid_plural "<qt>%1 user IDs imported.<br></qt>"
@@ -1585,7 +1593,7 @@ msgid_plural "<qt>%1 user IDs imported.</qt>"
 msgstr[0] "<qt>एउटा प्रयोगकर्ता आईडी आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 प्रयोगकर्ता आईडी आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2324
+#: kgpginterface.cpp:2297
 #, fuzzy, qt-format
 #| msgid "<qt>One subkey imported.<br></qt>"
 #| msgid_plural "<qt>%1 subkeys imported.<br></qt>"
@@ -1594,7 +1602,7 @@ msgid_plural "<qt>%1 subkeys imported.</qt>"
 msgstr[0] "<qt>एउटा सहायक कुञ्जी आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 सहायक कुञ्जी आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2326
+#: kgpginterface.cpp:2299
 #, fuzzy, qt-format
 #| msgid "<qt>One signature imported.<br></qt>"
 #| msgid_plural "<qt>%1 signatures imported.<br></qt>"
@@ -1603,7 +1611,7 @@ msgid_plural "<qt>%1 signatures imported.</qt>"
 msgstr[0] "<qt>एउटा हस्ताक्षर आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 हस्ताक्षर आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2329
+#: kgpginterface.cpp:2302
 #, fuzzy, qt-format
 #| msgid "<qt>One revocation certificate imported.<br></qt>"
 #| msgid_plural "<qt>%1 revocation certificates imported.<br></qt>"
@@ -1612,7 +1620,7 @@ msgid_plural "<qt>%1 revocation certificates imported.</qt>"
 msgstr[0] "<qt>एउटा खारेजी प्रमाणपत्र आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 खारेजी प्रमाणपत्र आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2334
+#: kgpginterface.cpp:2307
 #, fuzzy, qt-format
 #| msgid "<qt>One secret key processed.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys processed.<br></qt>"
@@ -1621,7 +1629,7 @@ msgid_plural "<qt>%1 secret keys processed.</qt>"
 msgstr[0] "<qt>एउटा गुप्त कुञ्जी प्रक्रिया गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 गुप्त कुञ्जी प्रक्रिया गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:2340
+#: kgpginterface.cpp:2313
 #, fuzzy, qt-format
 #| msgid "<qt><b>One secret key imported.</b><br></qt>"
 #| msgid_plural "<qt><b>%1 secret keys imported.</b><br></qt>"
@@ -1630,7 +1638,7 @@ msgid_plural "<qt><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "<qt><b>एउटा गुप्त कुञ्जी आयात गरियो ।</b><br></qt>"
 msgstr[1] "<qt><b>%1 गुप्त कुञ्जी आयात गरियो ।</b><br></qt>"
 
-#: kgpginterface.cpp:2342
+#: kgpginterface.cpp:2315
 #, fuzzy, qt-format
 #| msgid "<qt>One secret key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys unchanged.<br></qt>"
@@ -1639,7 +1647,7 @@ msgid_plural "<qt>%1 secret keys unchanged.</qt>"
 msgstr[0] "<qt>एउटा गुप्त कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 msgstr[1] "<qt>%1 गुप्त कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 
-#: kgpginterface.cpp:2344
+#: kgpginterface.cpp:2317
 #, fuzzy, qt-format
 #| msgid "<qt>One secret key not imported.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys not imported.<br></qt>"
@@ -1648,7 +1656,7 @@ msgid_plural "<qt>%1 secret keys not imported.</qt>"
 msgstr[0] "<qt>एउटा गुप्त कुञ्जी आयात गरिएन ।<br></qt>"
 msgstr[1] "<qt>%1 गुप्त कुञ्जी आयात गरिएन ।<br></qt>"
 
-#: kgpginterface.cpp:2347
+#: kgpginterface.cpp:2320
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -1666,7 +1674,7 @@ msgstr ""
 "लागि यो गुप्त कुञ्जी पूर्ण रूपमा प्रयोग गर्न, तपाईँले कुञ्जी सम्पादन गर्नु (यसमा दोहोरो क्लिक "
 "गर्नुहोस्) पर्दछ यसको  विश्वासलाई पूर्ण अन्तिममा सेट गर्नुपर्दछ ।</qt>"
 
-#: kgpginterface.cpp:2586
+#: kgpginterface.cpp:2559
 #, fuzzy, qt-format
 #| msgid ""
 #| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
@@ -1678,22 +1686,22 @@ msgstr ""
 "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:<br>पासफ्रेजमा अक्षरांक विहिन क्यारेक्टर र "
 "अनियमित अनुक्रमहरू समाविष्ट हुनुपर्दछ ।"
 
-#: kgpginterface.cpp:2977
+#: kgpginterface.cpp:2950
 #, qt-format
 msgid "The signature file %1 was successfully created."
 msgstr "%1 हस्ताक्षर फाइल सफलतापूर्वक सिर्जना गरियो ।"
 
-#: kgpginterface.cpp:2980
+#: kgpginterface.cpp:2953
 msgid "Bad passphrase, signature was not created."
 msgstr "खराब पासफ्रेज, हस्ताक्षर सिर्जना गरिएको थिएन ।"
 
-#: kgpginterface.cpp:3007
+#: kgpginterface.cpp:2980
 #, fuzzy, qt-format
 #| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. you have %1 tries left.</p>"
 msgstr "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
 
-#: kgpginterface.cpp:3069
+#: kgpginterface.cpp:3042
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>BAD signature</b> from:<br> %1<br>Key id: %2<br><br><b>The file is "
@@ -1705,7 +1713,7 @@ msgstr ""
 "<qt><b>खराब हस्ताक्षर</b> बाट:<br> %1<br>कुञ्जीआईडी: %2<br><br><b>फाइल अनुपयोगी "
 "छ</b></qt>"
 
-#: kgpginterface.cpp:3096 kgpgview.cpp:399
+#: kgpginterface.cpp:3069 kgpgview.cpp:399
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -1717,11 +1725,11 @@ msgstr ""
 "<qt><b>हराइरहेको हस्ताक्षर:</b><br>कुञ्जीआईडी: %1<br><br>तपाईँ कुञ्जी सर्भरबाट यो "
 "कुञ्जी आयात गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpginterface.cpp:3181
+#: kgpginterface.cpp:3154
 msgid "Creation of the revocation certificate failed..."
 msgstr "खारेजी प्रमाणपत्रको सिर्जना असफल..."
 
-#: kgpginterface.cpp:3216
+#: kgpginterface.cpp:3189
 #, qt-format
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
 msgstr "<qt><b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:</qt>"
@@ -1920,8 +1928,8 @@ msgid "<b>Correct checksum</b>, file is ok."
 msgstr "<b>चेकसम सुधार गर्नुहोस्</b>, फाइल ठीक छ ।"
 
 #: kgpgmd5widget.cpp:94
-msgid "<b>Wrong checksum, FILE CORRUPTED</b>"
-msgstr "<b>गलत चेकसम, फाइल अनुपयोगी भयो</b>"
+msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
+msgstr ""
 
 #: kgpgoptions.cpp:57 kgpgoptions.cpp:69 kgpgoptions.cpp:71
 #: kgpgoptions.cpp:220 kgpgoptions.cpp:236 kgpgoptions.cpp:243
@@ -4205,6 +4213,9 @@ msgid ""
 "<p>You can reach your default key by pressing &quot;Ctrl+Home&quot; in the "
 "key manager.</p>\n"
 msgstr ""
+
+#~ msgid "<b>Wrong checksum, FILE CORRUPTED</b>"
+#~ msgstr "<b>गलत चेकसम, फाइल अनुपयोगी भयो</b>"
 
 #~ msgid "Warning"
 #~ msgstr "चेतावनी"
