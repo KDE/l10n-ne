@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-06 05:43+0200\n"
+"POT-Creation-Date: 2007-10-08 05:54+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,8 +18,8 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: meta/PlaylistFileSupport.cpp:33 PlaylistHandler.cpp:330
-#: PlaylistHandler.cpp:442 PlaylistHandler.cpp:752
+#: meta/PlaylistFileSupport.cpp:33 PlaylistHandler.cpp:336
+#: PlaylistHandler.cpp:448 PlaylistHandler.cpp:766
 #, qt-format
 msgid "Cannot write playlist (%1)."
 msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
@@ -34,7 +34,7 @@ msgstr "सङ्गीतब्रेन्च खोजी"
 msgid "Postgresql reported the following error:<br/>"
 msgstr "postgresql ले निम्न त्रुटि प्रतिवेदन गर्यो:<br>"
 
-#: collection/sqlcollection/postgresqlcollection.cpp:208 collectiondb.cpp:6556
+#: collection/sqlcollection/postgresqlcollection.cpp:208 collectiondb.cpp:6558
 msgid ""
 "<p>You can configure Postgresql in the Collection section under Settings-"
 ">Configure Amarok</p>"
@@ -51,10 +51,41 @@ msgid "Stream"
 msgstr "प्रवाह"
 
 #: collection/sqlcollection/sqlmeta.cpp:155 covermanager.cpp:325
-#: covermanager.cpp:972 metabundle.cpp:1044
+#: covermanager.cpp:972 metabundle.cpp:1043
 #, qt-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
+
+#: collection/sqlcollection/ScanController.cpp:85
+msgid "Updating Collection"
+msgstr "सङ्कलन अद्यावधिक गर्दै"
+
+#: collection/sqlcollection/ScanController.cpp:90
+msgid "Building Collection"
+msgstr "सङ्कलन निर्माण गर्दै"
+
+#: collection/sqlcollection/ScanController.cpp:104
+msgid "<p>The Collection Scanner was unable to process these files:</p>"
+msgstr "<p> सङ्कलन स्क्यानर यी फाइलहरू प्रक्रिया गर्न असक्षम भयो:</p>"
+
+#: collection/sqlcollection/ScanController.cpp:106
+msgid "Collection Scan Report"
+msgstr "सङ्कलन स्क्यान प्रतिवेदन"
+
+#: collection/sqlcollection/ScanController.cpp:109
+msgid ""
+"<p>Sorry, the Collection Scan was aborted, since too many problems were "
+"encountered.</p>"
+msgstr ""
+"<p> माफ गर्नुहोस्, अति धेरै समस्याहरू हुँदाहुँदै पनि सङ्कलन स्क्यान परित्याग गरियो ।</p>"
+
+#: collection/sqlcollection/ScanController.cpp:113
+msgid "Collection Scan Error"
+msgstr "सङ्कलन स्क्यान त्रुटि"
+
+#: collection/sqlcollection/ScanController.cpp:218
+msgid "Updating Collection..."
+msgstr "सङ्कलन अद्यावधिक गर्दै..."
 
 #: collection/sqlcollection/SqlCollectionLocation.cpp:46
 msgid "Local Collection"
@@ -326,13 +357,13 @@ msgstr ""
 msgid "Your machine does not support OpenGL applets."
 msgstr ""
 
-#: context/plasma/containment.cpp:235
+#: context/plasma/containment.cpp:241
 #, fuzzy, qt-format
 #| msgid "&Settings"
 msgid "%1 Settings..."
 msgstr "सेटिङ"
 
-#: context/plasma/containment.cpp:243
+#: context/plasma/containment.cpp:249
 #, fuzzy, qt-format
 #| msgid "Remove Playlist"
 msgid "Remove this %1"
@@ -383,7 +414,7 @@ msgstr "रचना"
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 92
 #: context/applets/lyrics/LyricsApplet.cpp:68 editfilterdialog.cpp:174
-#: metabundle.cpp:120 rc.cpp:609 smartplaylisteditor.cpp:176
+#: metabundle.cpp:119 rc.cpp:609 smartplaylisteditor.cpp:176
 #: playlist/PlaylistModel.cpp:293
 #, no-c-format
 msgid "Title"
@@ -392,7 +423,7 @@ msgstr "शीर्षक"
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 103
 #: context/applets/lyrics/LyricsApplet.cpp:72 editfilterdialog.cpp:130
-#: metabundle.cpp:121 collectionbrowser/CollectionTreeItemModelBase.cpp:411
+#: metabundle.cpp:120 collectionbrowser/CollectionTreeItemModelBase.cpp:411
 #: collectionbrowser/CollectionWidget.cpp:33 rc.cpp:613
 #: smartplaylisteditor.cpp:176 smartplaylisteditor.cpp:190
 #: transferdialog.cpp:85 playlist/PlaylistHeader.cpp:33
@@ -817,7 +848,7 @@ msgstr "साधारण खोजी"
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 114
 #: editfilterdialog.cpp:128 mediadevice/ifp/ifpmediadevice.cpp:403
-#: metabundle.cpp:125 collectionbrowser/CollectionTreeItemModelBase.cpp:410
+#: metabundle.cpp:124 collectionbrowser/CollectionTreeItemModelBase.cpp:410
 #: collectionbrowser/CollectionWidget.cpp:45 rc.cpp:617
 #: smartplaylisteditor.cpp:176 smartplaylisteditor.cpp:190
 #: transferdialog.cpp:86 playlist/PlaylistHeader.cpp:33
@@ -826,37 +857,37 @@ msgstr "साधारण खोजी"
 msgid "Album"
 msgstr "एल्बम"
 
-#: editfilterdialog.cpp:132 metabundle.cpp:134 smartplaylisteditor.cpp:180
+#: editfilterdialog.cpp:132 metabundle.cpp:133 smartplaylisteditor.cpp:180
 #: playlist/PlaylistModel.cpp:307
 msgid "Bitrate"
 msgstr "बिट्रेट"
 
-#: editfilterdialog.cpp:134 metabundle.cpp:128 smartplaylisteditor.cpp:180
+#: editfilterdialog.cpp:134 metabundle.cpp:127 smartplaylisteditor.cpp:180
 #: playlist/PlaylistModel.cpp:301
 msgid "BPM"
 msgstr "बीपीएम"
 
-#: editfilterdialog.cpp:136 metabundle.cpp:130 smartplaylisteditor.cpp:177
+#: editfilterdialog.cpp:136 metabundle.cpp:129 smartplaylisteditor.cpp:177
 #: playlist/PlaylistModel.cpp:303
 msgid "Comment"
 msgstr "टिप्पणी"
 
-#: editfilterdialog.cpp:138 metabundle.cpp:123
+#: editfilterdialog.cpp:138 metabundle.cpp:122
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:412
 #: smartplaylisteditor.cpp:176 smartplaylisteditor.cpp:190
 #: playlist/PlaylistModel.cpp:296
 msgid "Composer"
 msgstr "कम्पोजर"
 
-#: editfilterdialog.cpp:140 metabundle.cpp:131 playlist/PlaylistModel.cpp:304
+#: editfilterdialog.cpp:140 metabundle.cpp:130 playlist/PlaylistModel.cpp:304
 msgid "Directory"
 msgstr "डाइरेक्टरी"
 
-#: editfilterdialog.cpp:142 metabundle.cpp:126 playlist/PlaylistModel.cpp:299
+#: editfilterdialog.cpp:142 metabundle.cpp:125 playlist/PlaylistModel.cpp:299
 msgid "Disc Number"
 msgstr "डिस्क सङ्ख्या"
 
-#: editfilterdialog.cpp:144 metabundle.cpp:119 playlist/PlaylistModel.cpp:292
+#: editfilterdialog.cpp:144 metabundle.cpp:118 playlist/PlaylistModel.cpp:292
 msgid "Filename"
 msgstr "फाइलनाम"
 
@@ -868,14 +899,14 @@ msgstr "माउन्ट बिन्दु"
 msgid "Filetype"
 msgstr "फाइल प्रकार"
 
-#: editfilterdialog.cpp:150 metabundle.cpp:129
+#: editfilterdialog.cpp:150 metabundle.cpp:128
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:413
 #: smartplaylisteditor.cpp:176 smartplaylisteditor.cpp:190
 #: transferdialog.cpp:87 playlist/PlaylistModel.cpp:302
 msgid "Genre"
 msgstr "विधा"
 
-#: editfilterdialog.cpp:152 metabundle.cpp:133 smartplaylisteditor.cpp:176
+#: editfilterdialog.cpp:152 metabundle.cpp:132 smartplaylisteditor.cpp:176
 #: playlist/PlaylistHeader.cpp:33 playlist/PlaylistModel.cpp:306
 msgid "Length"
 msgstr "लम्बाइ"
@@ -885,32 +916,32 @@ msgstr "लम्बाइ"
 msgid "Label"
 msgstr "लेबुल"
 
-#: editfilterdialog.cpp:158 metabundle.cpp:138 playlist/PlaylistModel.cpp:311
+#: editfilterdialog.cpp:158 metabundle.cpp:137 playlist/PlaylistModel.cpp:311
 msgid "Play Count"
 msgstr "प्ले गणना"
 
-#: editfilterdialog.cpp:162 metabundle.cpp:137 smartplaylisteditor.cpp:178
+#: editfilterdialog.cpp:162 metabundle.cpp:136 smartplaylisteditor.cpp:178
 #: playlist/PlaylistModel.cpp:310
 msgid "Rating"
 msgstr "मूल्याङ्कन"
 
-#: editfilterdialog.cpp:165 metabundle.cpp:135 playlist/PlaylistModel.cpp:308
+#: editfilterdialog.cpp:165 metabundle.cpp:134 playlist/PlaylistModel.cpp:308
 msgid "Sample Rate"
 msgstr "नमूना दर"
 
 #: editfilterdialog.cpp:169 scriptmanager.cpp:172 scriptmanager.cpp:816
-#: metabundle.cpp:136 smartplaylisteditor.cpp:178
+#: metabundle.cpp:135 smartplaylisteditor.cpp:178
 #: playlist/PlaylistModel.cpp:309
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
-#: editfilterdialog.cpp:172 metabundle.cpp:141 playlist/PlaylistModel.cpp:314
+#: editfilterdialog.cpp:172 metabundle.cpp:140 playlist/PlaylistModel.cpp:314
 msgid "File Size"
 msgstr "फाइल साइज"
 
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 125
-#: editfilterdialog.cpp:176 metabundle.cpp:127 rc.cpp:621
+#: editfilterdialog.cpp:176 metabundle.cpp:126 rc.cpp:621
 #: playlist/PlaylistModel.cpp:300
 #, no-c-format
 msgid "Track"
@@ -918,7 +949,7 @@ msgstr "ट्रयाक"
 
 #. i18n: tag string
 #. i18n: file ./trackpickerdialogbase.ui line 136
-#: editfilterdialog.cpp:178 metabundle.cpp:124
+#: editfilterdialog.cpp:178 metabundle.cpp:123
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:414 rc.cpp:625
 #: smartplaylisteditor.cpp:177 smartplaylisteditor.cpp:190
 #: smartplaylisteditor.cpp:908 playlist/PlaylistModel.cpp:297
@@ -1294,37 +1325,6 @@ msgstr ""
 "यदि चयन गरियो भने, सामग्रीहरू परिमार्जन हुँदा फोल्डरहरुले स्वचालित रूपमा पुन: स्क्यान "
 "गरिनेछ, उदाहरणको लागि, नयाँ फाइल थपिदा ।"
 
-#: scancontroller.cpp:84
-msgid "Updating Collection"
-msgstr "सङ्कलन अद्यावधिक गर्दै"
-
-#: scancontroller.cpp:89
-msgid "Building Collection"
-msgstr "सङ्कलन निर्माण गर्दै"
-
-#: scancontroller.cpp:103
-msgid "<p>The Collection Scanner was unable to process these files:</p>"
-msgstr "<p> सङ्कलन स्क्यानर यी फाइलहरू प्रक्रिया गर्न असक्षम भयो:</p>"
-
-#: scancontroller.cpp:105
-msgid "Collection Scan Report"
-msgstr "सङ्कलन स्क्यान प्रतिवेदन"
-
-#: scancontroller.cpp:108
-msgid ""
-"<p>Sorry, the Collection Scan was aborted, since too many problems were "
-"encountered.</p>"
-msgstr ""
-"<p> माफ गर्नुहोस्, अति धेरै समस्याहरू हुँदाहुँदै पनि सङ्कलन स्क्यान परित्याग गरियो ।</p>"
-
-#: scancontroller.cpp:112
-msgid "Collection Scan Error"
-msgstr "सङ्कलन स्क्यान त्रुटि"
-
-#: scancontroller.cpp:217
-msgid "Updating Collection..."
-msgstr "सङ्कलन अद्यावधिक गर्दै..."
-
 #: covermanager.cpp:106 MainWindow.cpp:839
 msgid "Cover Manager"
 msgstr "आवरण प्रबन्धक"
@@ -1344,7 +1344,7 @@ msgstr "सबै एल्बमहरू"
 #: mediadevice/ipod/ipodmediadevice.cpp:1949
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:165
 #: mediadevice/generic/genericmediadevice.cpp:543 querybuilder.cpp:404
-#: querybuilder.cpp:494 querybuilder.cpp:544 metabundle.cpp:616
+#: querybuilder.cpp:494 querybuilder.cpp:544 metabundle.cpp:615
 #: collectionbrowser/OrganizeCollectionDialog.ui.h:24 collectiondb.cpp:2138
 #: collectiondb.cpp:2203 playlist/PlaylistGraphicsItem.cpp:377
 msgid "Various Artists"
@@ -2224,7 +2224,7 @@ msgid ""
 msgstr ""
 "सबै प्रिसेटहरू मेटिनेछ र पूर्वानिर्धारनहरु पूर्वावस्थामा ल्याइनेछन् । तपाईँ निश्चित हुनुहुन्छ ?"
 
-#: PlaylistHandler.cpp:165
+#: PlaylistHandler.cpp:166
 #, fuzzy
 #| msgid "Loading Playlist"
 msgid "Downloading Playlist"
@@ -5275,140 +5275,140 @@ msgstr "अडियो मोड"
 msgid "Data Mode"
 msgstr "डेटा मोड"
 
-#: metabundle.cpp:122 playlist/PlaylistModel.cpp:295
+#: metabundle.cpp:121 playlist/PlaylistModel.cpp:295
 msgid "Album Artist"
 msgstr "एल्बम कलाकार"
 
-#: metabundle.cpp:132 playlist/PlaylistModel.cpp:305
+#: metabundle.cpp:131 playlist/PlaylistModel.cpp:305
 msgid "Type"
 msgstr "प्रकार"
 
-#: metabundle.cpp:139 playlist/PlaylistModel.cpp:312
+#: metabundle.cpp:138 playlist/PlaylistModel.cpp:312
 msgctxt "Column name"
 msgid "Last Played"
 msgstr "अन्तिममा प्ले गरीएको"
 
-#: metabundle.cpp:140 playlist/PlaylistModel.cpp:313
+#: metabundle.cpp:139 playlist/PlaylistModel.cpp:313
 msgid "Mood"
 msgstr "मुड"
 
-#: metabundle.cpp:818
+#: metabundle.cpp:817
 msgid "Calculating..."
 msgstr "गणना गरिँदैछ..."
 
-#: metabundle.cpp:819
+#: metabundle.cpp:818
 msgid "Queued..."
 msgstr "लाम लागेको..."
 
-#: metabundle.cpp:1060 statusbar/queueLabel.cpp:312
+#: metabundle.cpp:1059 statusbar/queueLabel.cpp:312
 #, qt-format
 msgid "%1 by %2"
 msgstr "%2 द्वारा %1"
 
-#: metabundle.cpp:1121 metabundle.cpp:1154
+#: metabundle.cpp:1120 metabundle.cpp:1153
 msgid "?"
 msgstr "?"
 
-#: metabundle.cpp:1123 metabundle.cpp:1156
+#: metabundle.cpp:1122 metabundle.cpp:1155
 msgid "-"
 msgstr "-"
 
-#: metabundle.cpp:1139
+#: metabundle.cpp:1138
 #, c-format, qt-format
 msgctxt "seconds"
 msgid "%1s"
 msgstr "%1s"
 
-#: metabundle.cpp:1140
+#: metabundle.cpp:1139
 #, c-format, qt-format
 msgctxt "minutes, seconds"
 msgid "%2m %1s"
 msgstr "%2m %1s"
 
-#: metabundle.cpp:1141
+#: metabundle.cpp:1140
 #, qt-format
 msgctxt "hours, minutes, seconds"
 msgid "%3h %2m %1s"
 msgstr "%3h %2m %1s"
 
-#: metabundle.cpp:1142
+#: metabundle.cpp:1141
 #, qt-format
 msgctxt "days, hours, minutes, seconds"
 msgid "%4d %3h %2m %1s"
 msgstr "%4d %3h %2m %1s"
 
-#: metabundle.cpp:1196
+#: metabundle.cpp:1195
 #, qt-format
 msgid "1 week "
 msgid_plural "%1 weeks "
 msgstr[0] "१ हप्ता"
 msgstr[1] "१ हप्ता"
 
-#: metabundle.cpp:1197
+#: metabundle.cpp:1196
 #, qt-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "१ दिन"
 msgstr[1] "१ दिन"
 
-#: metabundle.cpp:1198
+#: metabundle.cpp:1197
 #, qt-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "१ घण्टा"
 msgstr[1] "१ घण्टा"
 
-#: metabundle.cpp:1205
+#: metabundle.cpp:1204
 #, qt-format
 msgid "%1:%2 hours"
 msgstr "%1:%2 घण्टा"
 
-#: metabundle.cpp:1207
+#: metabundle.cpp:1206
 #, qt-format
 msgid "%1:%2"
 msgstr "%1:%2"
 
-#: metabundle.cpp:1242
+#: metabundle.cpp:1241
 msgid "Awful"
 msgstr "Awful"
 
-#: metabundle.cpp:1243
+#: metabundle.cpp:1242
 msgid "Barely tolerable"
 msgstr "सहनीय मात्र"
 
-#: metabundle.cpp:1244
+#: metabundle.cpp:1243
 msgid "Tolerable"
 msgstr "सहनीय"
 
-#: metabundle.cpp:1245
+#: metabundle.cpp:1244
 msgid "Okay"
 msgstr "ठीक छ"
 
-#: metabundle.cpp:1246
+#: metabundle.cpp:1245
 msgid "Good"
 msgstr "राम्रो"
 
-#: metabundle.cpp:1247
+#: metabundle.cpp:1246
 msgid "Very good"
 msgstr "अति राम्रो"
 
-#: metabundle.cpp:1248
+#: metabundle.cpp:1247
 msgid "Excellent"
 msgstr "उत्तम"
 
-#: metabundle.cpp:1249
+#: metabundle.cpp:1248
 msgid "Amazing"
 msgstr "आश्चर्यजनक"
 
-#: metabundle.cpp:1250
+#: metabundle.cpp:1249
 msgid "Favorite"
 msgstr "मन पर्ने"
 
-#: metabundle.cpp:1251
+#: metabundle.cpp:1250
 msgid "Not rated"
 msgstr "दर नतोकिएको"
 
-#: metabundle.cpp:1262
+#: metabundle.cpp:1261
 #, qt-format
 msgctxt "rating - description"
 msgid "%1 - %2"
@@ -10406,19 +10406,19 @@ msgstr[1] "एउटा टाढाको फाइल"
 msgid "Unknown item"
 msgstr "अज्ञात वस्तु"
 
-#: collectiondb.cpp:3550
+#: collectiondb.cpp:3552
 msgid "from"
 msgstr "बाट"
 
-#: collectiondb.cpp:5294 collectiondb.cpp:5306
+#: collectiondb.cpp:5296 collectiondb.cpp:5308
 msgid "Updating database"
 msgstr "डाटाबेस अद्यावधिक गर्दै"
 
-#: collectiondb.cpp:6388
+#: collectiondb.cpp:6390
 msgid "MySQL reported the following error:<br>"
 msgstr "MySQL ले निम्न त्रुटि प्रतिवेदन गर्यो:<br>"
 
-#: collectiondb.cpp:6389
+#: collectiondb.cpp:6391
 msgid ""
 "<p>You can configure MySQL in the Collection section under Settings-"
 ">Configure Amarok</p>"
@@ -10426,7 +10426,7 @@ msgstr ""
 "<p>तपाईँ Settings->Configure Amarok अन्तर्गत सङ्कलन सेक्सनमा MySQL कन्फिगर गर्न "
 "सक्नुहुन्छ</p>"
 
-#: collectiondb.cpp:6555
+#: collectiondb.cpp:6557
 msgid "Postgresql reported the following error:<br>"
 msgstr "postgresql ले निम्न त्रुटि प्रतिवेदन गर्यो:<br>"
 
