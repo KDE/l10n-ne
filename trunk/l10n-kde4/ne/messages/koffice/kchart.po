@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kchart\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-11 05:44+0200\n"
+"POT-Creation-Date: 2007-10-13 05:36+0200\n"
 "PO-Revision-Date: 2007-08-05 11:26+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,25 +18,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: KChartPart.cpp:175
+#: KChartPart.cpp:177 shape/ChartShapeFactory.cpp:82
 #, kde-format
 msgid "Column %1"
 msgstr "स्तम्भ %1"
 
-#: KChartPart.cpp:181
+#: KChartPart.cpp:183 shape/ChartShapeFactory.cpp:88
 #, kde-format
 msgid "Row %1"
 msgstr "पङ्क्ति %1"
 
-#: KChartPart.cpp:990
+#: KChartPart.cpp:1000
 msgid "Invalid OASIS OpenDocument file. No office:body tag found."
 msgstr "अवैध OASIS खुल्ला कागजात फाइल । कार्यालय: को मुख्य ट्याग फेला परेन ।"
 
-#: KChartPart.cpp:1006
+#: KChartPart.cpp:1016
 msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
 msgstr "अवैध OASIS खुल्ला कागजात फाइल। कार्यालय: मुख्य भाग भित्र ट्याग फेला परेन ।"
 
-#: KChartPart.cpp:1008
+#: KChartPart.cpp:1018
 #, kde-format
 msgid ""
 "This document is not a chart, but %1. Please try opening it with the "
@@ -45,27 +45,27 @@ msgstr ""
 "यो कागजात चित्रपट होइन, तर %1. कृपया  यसलाई उपयुक्त अनुप्रयोगका साथ खोल्न प्रयास "
 "गर्नुहोस्।"
 
-#: KChartPart.cpp:1016
+#: KChartPart.cpp:1026
 msgid "Invalid OASIS OpenDocument file. No chart:chart tag found."
 msgstr "अवैध OASIS खुल्ला कागजात फाइल। चित्रपट छैन: चित्रपट ट्याग फेला परेन।"
 
-#: KChartView.cpp:97
+#: KChartView.cpp:98
 msgid "Import Data..."
 msgstr "डेटा आयात गर्नुहोस्..."
 
-#: KChartView.cpp:100
+#: KChartView.cpp:101
 msgid "&Create Template From Document..."
 msgstr "कागजातबाट टेम्प्लेट सिर्जना गर्नुहस्..."
 
-#: KChartView.cpp:104
+#: KChartView.cpp:105
 msgid "Edit &Data..."
 msgstr "डेटा सम्पादन गर्नुहोस्..."
 
-#: KChartView.cpp:648
+#: KChartView.cpp:649
 msgid "Import Data"
 msgstr "डेटा आयात गर्नुहोस्।"
 
-#: KChartView.cpp:656
+#: KChartView.cpp:657
 #, kde-format
 msgid "The file %1 could not be read."
 msgstr "फाइल %1 पढ्न सक्नुहुन्न ।"
@@ -208,13 +208,13 @@ msgstr "चौडाइ: "
 msgid "Height: "
 msgstr "उचाइ: "
 
-#: commands/ChartTypeCommand.cpp:110
+#: commands/ChartTypeCommand.cpp:110 shape/ChartTypeConfigWidget.cpp:94
 #, fuzzy
 #| msgid "KChart"
 msgid "Bar Chart"
 msgstr "केडीई चित्रपट"
 
-#: commands/ChartTypeCommand.cpp:113
+#: commands/ChartTypeCommand.cpp:113 shape/ChartTypeConfigWidget.cpp:98
 #, fuzzy
 #| msgid "Line markers"
 msgid "Line Chart"
@@ -264,69 +264,53 @@ msgstr ""
 msgid "Gantt Chart"
 msgstr ""
 
-#: shape/ChartShape.cpp:139
+#: shape/ChartShape.cpp:141
 msgid "Legend"
 msgstr "लिजेण्ड"
 
-#: shape/ChartShapeFactory.cpp:51
+#: shape/ChartShapeFactory.cpp:53
 #, fuzzy
 #| msgid "KChart"
 msgid "Chart"
 msgstr "केडीई चित्रपट"
 
-#: shape/ChartShapeFactory.cpp:53
+#: shape/ChartShapeFactory.cpp:55
 msgid "A shape that shows a chart"
 msgstr ""
 
-#: shape/ChartTypeConfigWidget.cpp:62
+#: shape/ChartTypeConfigWidget.cpp:83
 #, fuzzy
-#| msgid "Bar"
-msgid "Bars"
-msgstr "पट्टी"
+#| msgid "KChart"
+msgid "Normal Chart"
+msgstr "केडीई चित्रपट"
 
-#: shape/ChartTypeConfigWidget.cpp:66
-msgid "Lines"
-msgstr "रेखाहरू"
+#: shape/ChartTypeConfigWidget.cpp:87
+#, fuzzy
+#| msgid "Select Chart Type"
+msgid "Stacked Chart"
+msgstr "चित्रपट प्रकार चयन गर्नुहोस्।"
 
-#: shape/ChartTypeConfigWidget.cpp:70
+#: shape/ChartTypeConfigWidget.cpp:90
+#, fuzzy
+#| msgid "Percent"
+msgid "Percent Chart"
+msgstr "प्रतिशत"
+
+#: shape/ChartTypeConfigWidget.cpp:101
 msgid "Area"
 msgstr "क्षेत्र"
 
-#: shape/ChartTypeConfigWidget.cpp:76
-msgid "Pie"
-msgstr "वृत्तांश"
-
-#: shape/ChartTypeConfigWidget.cpp:81
-msgid "Ring"
-msgstr "रिङ"
-
-#: shape/ChartTypeConfigWidget.cpp:87
-msgid "Polar"
-msgstr "ध्रुवीय"
-
-#: shape/ChartTypeConfigWidget.cpp:93
-#, fuzzy
-#| msgid "Scaled"
-msgid "Scatter"
-msgstr "मापन गरिएको"
-
-#: shape/ChartTypeConfigWidget.cpp:99
-msgid "Bubble"
-msgstr ""
-
 #: shape/ChartTypeConfigWidget.cpp:105
 #, fuzzy
-#| msgid "Stacked"
-msgid "Stock"
-msgstr "थाक राखिएको"
+#| msgid "Line markers"
+msgid "Pie Chart"
+msgstr "रेखा मार्कर"
 
-#: shape/ChartTypeConfigWidget.cpp:111
-msgid "Surface"
-msgstr ""
-
-#: shape/ChartTypeConfigWidget.cpp:117
-msgid "Gantt"
-msgstr ""
+#: shape/ChartTypeConfigWidget.cpp:108
+#, fuzzy
+#| msgid "KChart"
+msgid "Polar Chart"
+msgstr "केडीई चित्रपट"
 
 #: shape/ChartTypeTool.cpp:53
 msgid "Do something"
@@ -345,6 +329,33 @@ msgstr "चित्रपट उप-प्रकार"
 #: shape/ChartTypeToolFactory.cpp:33
 msgid "ChartType editing tool"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Bar"
+#~ msgid "Bars"
+#~ msgstr "पट्टी"
+
+#~ msgid "Lines"
+#~ msgstr "रेखाहरू"
+
+#~ msgid "Pie"
+#~ msgstr "वृत्तांश"
+
+#~ msgid "Ring"
+#~ msgstr "रिङ"
+
+#~ msgid "Polar"
+#~ msgstr "ध्रुवीय"
+
+#, fuzzy
+#~| msgid "Scaled"
+#~ msgid "Scatter"
+#~ msgstr "मापन गरिएको"
+
+#, fuzzy
+#~| msgid "Stacked"
+#~ msgid "Stock"
+#~ msgstr "थाक राखिएको"
 
 #~ msgid "&Bar"
 #~ msgstr "पट्टी"
@@ -1257,9 +1268,6 @@ msgstr ""
 
 #~ msgid "Preview the sub-type you choose."
 #~ msgstr "तपाईँले रोजेको उप-प्रकारको पूर्वावलोकन गर्नुहोस् ।"
-
-#~ msgid "Percent"
-#~ msgstr "प्रतिशत"
 
 #~ msgid "Number of lines: "
 #~ msgstr "रेखाहरूको सङ्ख्या: "
