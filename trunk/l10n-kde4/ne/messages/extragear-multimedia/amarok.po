@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-13 05:37+0200\n"
+"POT-Creation-Date: 2007-10-14 05:41+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -638,11 +638,13 @@ msgstr "पूर्वनिर्धारित केडीई ब्रा�
 msgid "Media Devices"
 msgstr "मिडिया यन्त्र"
 
-#: configdialog/dialogs/MediadeviceConfig.cpp:49 mediumpluginmanager.cpp:87
+#: configdialog/dialogs/MediadeviceConfig.cpp:49
+#: MediaDevicePluginManager.cpp:87
 msgid "Autodetect Devices"
 msgstr "यन्त्र स्वत: पत्ता लगाउनुहोस्"
 
-#: configdialog/dialogs/MediadeviceConfig.cpp:52 mediumpluginmanager.cpp:91
+#: configdialog/dialogs/MediadeviceConfig.cpp:52
+#: MediaDevicePluginManager.cpp:91
 msgid "Add Device..."
 msgstr "यन्त्र थप्नुहोस्..."
 
@@ -2004,9 +2006,9 @@ msgstr "कन्फिगर गर्नुहोस्..."
 msgid "Disable"
 msgstr "अक्षम पार्नुहोस्"
 
-#: mediabrowser.cpp:218 mediabrowser.cpp:219 mediumpluginmanager.cpp:234
-#: mediumpluginmanager.cpp:304 mediumpluginmanager.cpp:458
-#: mediumpluginmanager.cpp:470 history/mediabrowser.cpp:286
+#: mediabrowser.cpp:218 mediabrowser.cpp:219 MediaDevicePluginManager.cpp:233
+#: MediaDevicePluginManager.cpp:302 MediaDevicePluginManager.cpp:454
+#: MediaDevicePluginManager.cpp:466 history/mediabrowser.cpp:286
 #: history/mediabrowser.cpp:287
 msgid "Do not handle"
 msgstr "ह्यान्डल गर्न सक्दैन"
@@ -2396,6 +2398,161 @@ msgstr "Vadim Petrunin"
 #: main.cpp:106
 msgid "Whitehawk Stormchaser"
 msgstr "Whitehawk Stormchaser"
+
+#: MediaDevicePluginManager.cpp:71
+msgid "Manage Devices and Plugins"
+msgstr "यन्त्रहरू र प्लगइनहरू प्रबन्ध गर्नुहोस्"
+
+#: MediaDevicePluginManager.cpp:79 MainWindow.cpp:301
+msgid "Devices"
+msgstr "यन्त्र"
+
+#: MediaDevicePluginManager.cpp:193
+msgid ""
+"No new media devices were found. If you feel this is an\n"
+"error, ensure that the DBUS and HAL daemons are running\n"
+"and KDE was built with support for them. You can test this\n"
+"by running\n"
+"     \"qdbus org.kde.kded /modules/mediamanager fullList\"\n"
+"in a Konsole window."
+msgstr ""
+"कुनै नयाँ मिडिया यन्त्रहरू फेला परेन । यदि तपाईँले गल्ति\n"
+"ठान्नुभयो भने, DBUS र HAL डेइमोनहरू चलिरहेको छ भन्ने\n"
+"निश्चित गर्नुहोस् र तिनीहरूको समर्थनबाट केडीई बनेको हो भन्ने निश्चित गर्नुहोस् । तपाईँ "
+"यसलाई कन्सोल\n"
+"सञ्झ्यालमा\n"
+"     \"dcop kded mediamanager fullList\"\n"
+"चलाएर परीक्षण गर्न सक्नुहुन्छ ।"
+
+#: MediaDevicePluginManager.cpp:261
+msgid ""
+"Sorry, you cannot define two devices\n"
+"with the same name and mountpoint!"
+msgstr ""
+"माफ गर्नुहोस्, तपाईँ एउटै नाम र माउन्टबिन्दु\n"
+"भएको दुई यन्त्रहरू परिभाषित गर्न सक्नुहुन्न!"
+
+#: MediaDevicePluginManager.cpp:291
+msgid "Add New Device"
+msgstr "नयाँ यन्त्र थप्नुहोस्"
+
+#: MediaDevicePluginManager.cpp:299
+msgid "Select the plugin to use with this device:"
+msgstr "यो यन्त्रसँग प्रयोग गर्न प्लगइन चयन गर्नुहोस्:"
+
+#: MediaDevicePluginManager.cpp:310
+msgid "Enter a &name for this device (required):"
+msgstr "यो (आवश्यक) यन्त्रका लागि नाम प्रविष्ट गर्नुहोस्:"
+
+#: MediaDevicePluginManager.cpp:313
+msgid "Example: My_Ipod"
+msgstr "उदाहरण: My_Ipod"
+
+#: MediaDevicePluginManager.cpp:314
+msgid ""
+"Enter a name for the device.  The name must be unique across all devices, "
+"including autodetected devices.  It must not contain the pipe ( | ) "
+"character."
+msgstr ""
+"यन्त्रका लागि नाम प्रविष्ट गर्नहोस् । नाम स्वत: पत्ता लगाउने यन्त्रहरू समावेश भएको, सबै "
+"यन्त्र मध्य अद्वितिय हुनुपर्छ । यसले पाइप ( | ) क्यारेक्टर समावेश गर्दैन ।"
+
+#: MediaDevicePluginManager.cpp:318
+msgid "Enter the &mount point of the device, if applicable:"
+msgstr "यदि अनुकूल भए, यन्त्रको माउन्ट बिन्दु प्रविष्ट गर्नुहोस्:"
+
+#: MediaDevicePluginManager.cpp:321
+msgid "Example: /mnt/ipod"
+msgstr "उदाहरण: /mnt/ipod"
+
+#: MediaDevicePluginManager.cpp:322
+#, fuzzy
+#| msgid ""
+#| "Enter the device's mount point.  Some devices (such as iRiver iFP "
+#| "devices) may not have a mount point and this can be ignored.  All other "
+#| "devices (iPods, UMS/VFAT devices) should enter the mount point here."
+msgid ""
+"Enter the device's mount point.  Some devices (such as MTP devices) may not "
+"have a mount point and this can be ignored.  All other devices (iPods, UMS/"
+"VFAT devices) should enter the mount point here."
+msgstr ""
+"यन्त्रको माउन्ट बिन्दु प्रविष्ट गर्नुहोस् । केही यन्त्रहरू (जस्तै आईरिभर आईएफपी यन्त्रहरू) सँग "
+"माउन्ट बिन्दु नहुन सक्छ र यो उपेक्षित हुन सक्छ । अरू सबै यन्त्रहरू (आईपोड, यूएमएस/भीफ्याट "
+"यन्त्रहरू) ले यहाँ माउन्ट बिन्दुमा प्रविष्टि गर्नेछ ।"
+
+#: MediaDevicePluginManager.cpp:347
+msgid ""
+"Sorry, every device must have a name and\n"
+"you cannot define two devices with the\n"
+"same name. These names must be unique\n"
+"across autodetected devices as well.\n"
+msgstr ""
+"माफ गर्नुहोस्, हरेक यन्त्रको नाम हुन्छ र\n"
+"तपाईँले एउटै नाममा दुईवटा यन्त्रहरू\n"
+"परिभाषित गर्न सक्नुहुन्न । यी नामहरू\n"
+"स्वत: पत्ता लगाउने यन्त्रहरू वरिपरि अद्वितिय हुनुपर्छ ।\n"
+
+#: MediaDevicePluginManager.cpp:423
+msgid "(none)"
+msgstr "(कुनै पनि होइन)"
+
+#: MediaDevicePluginManager.cpp:426
+msgid "Autodetected:"
+msgstr "स्वत: पत्ता लाग्यो:"
+
+#: MediaDevicePluginManager.cpp:427
+msgid "Yes"
+msgstr "वर्ष"
+
+#: MediaDevicePluginManager.cpp:427
+msgid "No"
+msgstr "होइन"
+
+#: MediaDevicePluginManager.cpp:428
+msgid "Unique ID:"
+msgstr ""
+
+#: MediaDevicePluginManager.cpp:436
+#, fuzzy
+#| msgid "Genre:"
+msgid "Vendor:"
+msgstr "विधा:"
+
+#: MediaDevicePluginManager.cpp:439
+#, fuzzy
+#| msgid "Podcasts"
+msgid "Product:"
+msgstr "पोडकास्ट"
+
+#: MediaDevicePluginManager.cpp:444
+#, kde-format
+msgid "Device information for %1"
+msgstr "%1 का लागि यन्त्र सूचना"
+
+#: MediaDevicePluginManager.cpp:447
+msgid "Name: "
+msgstr "नाम: "
+
+#: MediaDevicePluginManager.cpp:449
+#, kde-format
+msgid "(<a href='whatsthis:%1'>Details</a>)"
+msgstr "(<a href='whatsthis:%1'>विवरण</a>)"
+
+#: MediaDevicePluginManager.cpp:452
+msgid "Plugin:"
+msgstr "प्लगइन:"
+
+#: MediaDevicePluginManager.cpp:467
+msgid "Configure device settings"
+msgstr "यन्त्र सेटिङ कन्फिगर गर्नुहोस्"
+
+#: MediaDevicePluginManager.cpp:469
+msgid "Remove"
+msgstr "हटाउनुहोस्"
+
+#: MediaDevicePluginManager.cpp:471
+msgid "Remove entries corresponding to this device from configuration file"
+msgstr "कन्फिगरेसन फाइलबाट यो यन्त्रमा सम्बन्धित प्रविष्टिहरू हटाउनुहोस्"
 
 #: tagdialog.cpp:342
 msgid "Generating audio fingerprint..."
@@ -3338,10 +3495,6 @@ msgstr "फाइल"
 #: MainWindow.cpp:278
 msgid "Internet"
 msgstr "इन्टरनेट"
-
-#: MainWindow.cpp:301 mediumpluginmanager.cpp:79
-msgid "Devices"
-msgstr "यन्त्र"
 
 #: MainWindow.cpp:537
 msgid "Play Media (Files or URLs)"
@@ -7938,7 +8091,7 @@ msgstr "भुक्तानी"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 182
-#: rc.cpp:1292 mediumpluginmanager.cpp:435
+#: rc.cpp:1292
 msgid "Name:"
 msgstr "नाम:"
 
@@ -9503,160 +9656,6 @@ msgstr "सर्भर पासवर्ड"
 msgid "Passwords stored by hostname."
 msgstr "होस्टनामद्वारा भण्डारण गरिएको पासवर्डहरू ।"
 
-#: mediumpluginmanager.cpp:71
-msgid "Manage Devices and Plugins"
-msgstr "यन्त्रहरू र प्लगइनहरू प्रबन्ध गर्नुहोस्"
-
-#: mediumpluginmanager.cpp:194
-msgid ""
-"No new media devices were found. If you feel this is an\n"
-"error, ensure that the DBUS and HAL daemons are running\n"
-"and KDE was built with support for them. You can test this\n"
-"by running\n"
-"     \"qdbus org.kde.kded /modules/mediamanager fullList\"\n"
-"in a Konsole window."
-msgstr ""
-"कुनै नयाँ मिडिया यन्त्रहरू फेला परेन । यदि तपाईँले गल्ति\n"
-"ठान्नुभयो भने, DBUS र HAL डेइमोनहरू चलिरहेको छ भन्ने\n"
-"निश्चित गर्नुहोस् र तिनीहरूको समर्थनबाट केडीई बनेको हो भन्ने निश्चित गर्नुहोस् । तपाईँ "
-"यसलाई कन्सोल\n"
-"सञ्झ्यालमा\n"
-"     \"dcop kded mediamanager fullList\"\n"
-"चलाएर परीक्षण गर्न सक्नुहुन्छ ।"
-
-#: mediumpluginmanager.cpp:262
-msgid ""
-"Sorry, you cannot define two devices\n"
-"with the same name and mountpoint!"
-msgstr ""
-"माफ गर्नुहोस्, तपाईँ एउटै नाम र माउन्टबिन्दु\n"
-"भएको दुई यन्त्रहरू परिभाषित गर्न सक्नुहुन्न!"
-
-#: mediumpluginmanager.cpp:293
-msgid "Add New Device"
-msgstr "नयाँ यन्त्र थप्नुहोस्"
-
-#: mediumpluginmanager.cpp:301
-msgid "Select the plugin to use with this device:"
-msgstr "यो यन्त्रसँग प्रयोग गर्न प्लगइन चयन गर्नुहोस्:"
-
-#: mediumpluginmanager.cpp:312
-msgid "Enter a &name for this device (required):"
-msgstr "यो (आवश्यक) यन्त्रका लागि नाम प्रविष्ट गर्नुहोस्:"
-
-#: mediumpluginmanager.cpp:315
-msgid "Example: My_Ipod"
-msgstr "उदाहरण: My_Ipod"
-
-#: mediumpluginmanager.cpp:316
-msgid ""
-"Enter a name for the device.  The name must be unique across all devices, "
-"including autodetected devices.  It must not contain the pipe ( | ) "
-"character."
-msgstr ""
-"यन्त्रका लागि नाम प्रविष्ट गर्नहोस् । नाम स्वत: पत्ता लगाउने यन्त्रहरू समावेश भएको, सबै "
-"यन्त्र मध्य अद्वितिय हुनुपर्छ । यसले पाइप ( | ) क्यारेक्टर समावेश गर्दैन ।"
-
-#: mediumpluginmanager.cpp:320
-msgid "Enter the &mount point of the device, if applicable:"
-msgstr "यदि अनुकूल भए, यन्त्रको माउन्ट बिन्दु प्रविष्ट गर्नुहोस्:"
-
-#: mediumpluginmanager.cpp:323
-msgid "Example: /mnt/ipod"
-msgstr "उदाहरण: /mnt/ipod"
-
-#: mediumpluginmanager.cpp:324
-msgid ""
-"Enter the device's mount point.  Some devices (such as iRiver iFP devices) "
-"may not have a mount point and this can be ignored.  All other devices "
-"(iPods, UMS/VFAT devices) should enter the mount point here."
-msgstr ""
-"यन्त्रको माउन्ट बिन्दु प्रविष्ट गर्नुहोस् । केही यन्त्रहरू (जस्तै आईरिभर आईएफपी यन्त्रहरू) सँग "
-"माउन्ट बिन्दु नहुन सक्छ र यो उपेक्षित हुन सक्छ । अरू सबै यन्त्रहरू (आईपोड, यूएमएस/भीफ्याट "
-"यन्त्रहरू) ले यहाँ माउन्ट बिन्दुमा प्रविष्टि गर्नेछ ।"
-
-#: mediumpluginmanager.cpp:349
-msgid ""
-"Sorry, every device must have a name and\n"
-"you cannot define two devices with the\n"
-"same name. These names must be unique\n"
-"across autodetected devices as well.\n"
-msgstr ""
-"माफ गर्नुहोस्, हरेक यन्त्रको नाम हुन्छ र\n"
-"तपाईँले एउटै नाममा दुईवटा यन्त्रहरू\n"
-"परिभाषित गर्न सक्नुहुन्न । यी नामहरू\n"
-"स्वत: पत्ता लगाउने यन्त्रहरू वरिपरि अद्वितिय हुनुपर्छ ।\n"
-
-#: mediumpluginmanager.cpp:428
-msgid "(none)"
-msgstr "(कुनै पनि होइन)"
-
-#: mediumpluginmanager.cpp:431
-msgid "Autodetected:"
-msgstr "स्वत: पत्ता लाग्यो:"
-
-#: mediumpluginmanager.cpp:432
-msgid "Yes"
-msgstr "वर्ष"
-
-#: mediumpluginmanager.cpp:432
-msgid "No"
-msgstr "होइन"
-
-#: mediumpluginmanager.cpp:433
-msgid "ID:"
-msgstr "आईडी:"
-
-#: mediumpluginmanager.cpp:437
-msgid "Label:"
-msgstr "लेबुल:"
-
-#: mediumpluginmanager.cpp:439
-msgid "User Label:"
-msgstr "प्रयोगकर्ता लेबुल:"
-
-#: mediumpluginmanager.cpp:441
-msgid "Device Node:"
-msgstr "यन्त्र नोड:"
-
-#: mediumpluginmanager.cpp:443
-msgid "Mount Point:"
-msgstr "माउन्ट बिन्दु:"
-
-#: mediumpluginmanager.cpp:445
-msgid "Mime Type:"
-msgstr "माइम प्रकार:"
-
-#: mediumpluginmanager.cpp:448
-#, kde-format
-msgid "Device information for %1"
-msgstr "%1 का लागि यन्त्र सूचना"
-
-#: mediumpluginmanager.cpp:451
-msgid "Name: "
-msgstr "नाम: "
-
-#: mediumpluginmanager.cpp:453
-#, kde-format
-msgid "(<a href='whatsthis:%1'>Details</a>)"
-msgstr "(<a href='whatsthis:%1'>विवरण</a>)"
-
-#: mediumpluginmanager.cpp:456
-msgid "Plugin:"
-msgstr "प्लगइन:"
-
-#: mediumpluginmanager.cpp:471
-msgid "Configure device settings"
-msgstr "यन्त्र सेटिङ कन्फिगर गर्नुहोस्"
-
-#: mediumpluginmanager.cpp:473
-msgid "Remove"
-msgstr "हटाउनुहोस्"
-
-#: mediumpluginmanager.cpp:475
-msgid "Remove entries corresponding to this device from configuration file"
-msgstr "कन्फिगरेसन फाइलबाट यो यन्त्रमा सम्बन्धित प्रविष्टिहरू हटाउनुहोस्"
-
 #: smartplaylisteditor.cpp:72
 msgid "Create Smart Playlist"
 msgstr "छरितो प्लेसूची सिर्जना गर्नुहोस्"
@@ -11189,6 +11188,24 @@ msgstr ""
 #: konquisidebar/universalamarok.cpp:317
 msgid "Build Collection..."
 msgstr "सङ्कलन निर्माण गर्नुहोस्..."
+
+#~ msgid "ID:"
+#~ msgstr "आईडी:"
+
+#~ msgid "Label:"
+#~ msgstr "लेबुल:"
+
+#~ msgid "User Label:"
+#~ msgstr "प्रयोगकर्ता लेबुल:"
+
+#~ msgid "Device Node:"
+#~ msgstr "यन्त्र नोड:"
+
+#~ msgid "Mount Point:"
+#~ msgstr "माउन्ट बिन्दु:"
+
+#~ msgid "Mime Type:"
+#~ msgstr "माइम प्रकार:"
 
 #~ msgid "Secure time: "
 #~ msgstr "सुरक्षित समय: "
