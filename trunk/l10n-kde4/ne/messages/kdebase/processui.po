@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-19 05:38+0200\n"
+"POT-Creation-Date: 2007-10-21 05:45+0200\n"
 "PO-Revision-Date: 2007-08-21 17:19+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ksysguardprocesslist.cpp:291
+#: ksysguardprocesslist.cpp:287
 #, fuzzy
 msgid "Renice Process..."
 msgid_plural "Renice Processes..."
@@ -26,51 +26,67 @@ msgstr[1] "प्रक्रिया फेरि राम्रो बना
 
 #. i18n: tag string
 #. i18n: file ProcessWidgetUI.ui line 39
-#: ksysguardprocesslist.cpp:295 ksysguardprocesslist.cpp:570 rc.cpp:3
+#: ksysguardprocesslist.cpp:291 ksysguardprocesslist.cpp:612 rc.cpp:3
 #, fuzzy
 msgid "Kill Process"
 msgid_plural "Kill Processes"
 msgstr[0] "प्रक्रिया अन्त्य गर्नुहोस्"
 msgstr[1] "प्रक्रिया अन्त्य गर्नुहोस्"
 
-#: ksysguardprocesslist.cpp:304
+#: ksysguardprocesslist.cpp:300
 msgid "Jump to Parent Process"
 msgstr ""
 
-#: ksysguardprocesslist.cpp:311
+#: ksysguardprocesslist.cpp:307
 msgid "Jump to process debugging this one"
 msgstr ""
 
-#: ksysguardprocesslist.cpp:318
+#: ksysguardprocesslist.cpp:314
 msgid "Resume stopped process"
 msgstr ""
 
-#: ksysguardprocesslist.cpp:361
+#: ksysguardprocesslist.cpp:357
 #, kde-format
 msgid "Hide column '%1'"
 msgstr "स्तम्भ '%1' लुकाउनुहोस्"
 
-#: ksysguardprocesslist.cpp:374
+#: ksysguardprocesslist.cpp:370
 #, kde-format
 msgid "Show column '%1'"
 msgstr "स्तम्भ '%1' देखाउनुहोस्"
 
-#: ksysguardprocesslist.cpp:496 ksysguardprocesslist.cpp:560
+#: ksysguardprocesslist.cpp:383
+msgid "Display Units"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:386
+msgid "KiloBytes"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:391
+msgid "MegaBytes"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:396
+msgid "GigaBytes"
+msgstr ""
+
+#: ksysguardprocesslist.cpp:538 ksysguardprocesslist.cpp:602
 msgid "You need to select a process first."
 msgstr "तपाईँले पहिला प्रक्रिया चयन गर्नुपर्दछ ।"
 
-#: ksysguardprocesslist.cpp:565
+#: ksysguardprocesslist.cpp:607
 #, fuzzy, kde-format
 msgid "Do you want to kill the selected process?"
 msgid_plural "Do you want to kill the %1 selected processes?"
 msgstr[0] "तपाईँ चयन गरिएका प्रक्रिया अन्त्य गर्न चाहनुहुन्छ ?"
 msgstr[1] "तपाईँ चयन गरिएका प्रक्रिया अन्त्य गर्न चाहनुहुन्छ ?"
 
-#: ksysguardprocesslist.cpp:571
+#: ksysguardprocesslist.cpp:613
 msgid "Kill"
 msgstr "अन्त्य गर्नुहोस्"
 
-#: ksysguardprocesslist.cpp:590
+#: ksysguardprocesslist.cpp:632
 msgid ""
 "You do not have the permission to renice the process and there was a problem "
 "trying to run as root"
@@ -78,7 +94,7 @@ msgstr ""
 "तपाईँलाई प्रक्रिया फेरि राम्रो बनाउने अनुमति छैन र मूलको रूपमा चलाउने प्रयास गर्दा त्यहाँ "
 "त्रुटि थियो"
 
-#: ksysguardprocesslist.cpp:595
+#: ksysguardprocesslist.cpp:637
 msgid ""
 "You do not have the permission to kill the process and there was a problem "
 "trying to run as root"
@@ -334,64 +350,65 @@ msgstr "%1 (gid: %2)"
 msgid "%1 (uid: %2)"
 msgstr "%1 (uid: %2)"
 
-#: ProcessModel.cc:726
+#: ProcessModel.cc:722
 #, fuzzy, kde-format
 #| msgid "This process is being debugged by %1 (%2)"
 msgctxt "tooltip. name,pid "
-msgid "This process is being debugged by %1 (%2)"
+msgid "This process is being debugged by %1 (<numid>%2</numid>)"
 msgstr "यो प्रक्रियाको %1 (%2) द्वारा त्रुटि सच्याइरहेको छ"
 
-#: ProcessModel.cc:746
+#: ProcessModel.cc:742
 #, fuzzy, kde-format
 #| msgid "<qt><b>%1</b><br/>Process ID: %2<br/>Command: %3"
 msgctxt "name column tooltip. first item is the name"
-msgid "<qt><b>%1</b><br />Process ID: %2<br />Command: %3</qt>"
+msgid "<qt><b>%1</b><br />Process ID: <numid>%2</numid><br />Command: %3</qt>"
 msgstr "<qt><b>%1</b><br/>प्रक्रिया आईडी: %2<br/>आदेश: %3"
 
-#: ProcessModel.cc:748
+#: ProcessModel.cc:744
 #, fuzzy, kde-format
 #| msgid "<qt><b>%1</b><br/>Process ID: %2<br/>Parent's ID: %3<br/>Command: %4"
 msgctxt "name column tooltip. first item is the name"
 msgid ""
-"<qt><b>%1</b><br />Process ID: %2<br />Parent's ID: %3<br />Command: %4</qt>"
+"<qt><b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%"
+"3</numid><br />Command: %4</qt>"
 msgstr "<qt><b>%1</b><br/>प्रक्रिया आईडी: %2<br/>प्रमूलको आईडी: %3<br/>आदेश: %4"
 
-#: ProcessModel.cc:750
+#: ProcessModel.cc:746
 #, fuzzy, kde-format
 #| msgid "<br/>Running on: %1"
 msgid "<br />Running on: %1"
 msgstr "<br/>चलिराखेको छ: %1"
 
-#: ProcessModel.cc:758
+#: ProcessModel.cc:754
 #, fuzzy, kde-format
 #| msgid "<qt>This process was run with the following command:<br/>%1"
 msgid "<qt>This process was run with the following command:<br />%1"
 msgstr "<qt>यो प्रक्रिया निम्न आदेशबाट चलेको थियो:<br/>%1"
 
-#: ProcessModel.cc:760
+#: ProcessModel.cc:756
 #, fuzzy, kde-format
 #| msgid "<br/><br/>Running on: %1"
 msgid "<br /><br />Running on: %1"
 msgstr "<br/><br/>चलिराखेको छ: %1"
 
-#: ProcessModel.cc:770
+#: ProcessModel.cc:766
 #, fuzzy, kde-format
 #| msgid "Nice level: %1 (%2)"
 msgid "<qt>Nice level: %1 (%2)"
 msgstr "असल स्तर: %1 (%2)"
 
-#: ProcessModel.cc:773 ProcessModel.cc:809
+#: ProcessModel.cc:769 ProcessModel.cc:805
 #, fuzzy, kde-format
 #| msgid "<br/>Nice level: %1 (%2)"
 msgid "<br/>I/O Nice level: %1 (%2)"
 msgstr "<br/>असल स्तर: %1 (%2)"
 
-#: ProcessModel.cc:774 ProcessModel.cc:810
+#: ProcessModel.cc:770 ProcessModel.cc:806
 #, kde-format
 msgid "<br/>I/O Class: %1"
 msgstr ""
 
-#: ProcessModel.cc:780
+#: ProcessModel.cc:776
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Process status: %1 %2<br/>User CPU usage: %3%<br/>System CPU usage: %"
@@ -403,7 +420,7 @@ msgstr ""
 "<qt>प्रक्रिया वस्तुस्थिति: %1 %2<br/>प्रयोगकर्ता CPU उपयोग: %3%<br/>प्रणाली CPU "
 "उपयोग: %4%"
 
-#: ProcessModel.cc:789
+#: ProcessModel.cc:785
 #, fuzzy, kde-format
 #| msgid ""
 #| "<br/>Number of children: %1<br/>Total User CPU usage: %2%<br/>Total "
@@ -415,47 +432,47 @@ msgstr ""
 "<br/>शाखाको सङ्ख्या: %1<br/>कूल प्रयोगकर्ता CPU उपयोग: %2%<br/>कूल प्रणालीCPU "
 "उपयोग: %3%<br/>कूल CPU उपयोग: %4%"
 
-#: ProcessModel.cc:798
+#: ProcessModel.cc:794
 #, fuzzy, kde-format
 #| msgid "<br/><br/>CPU time spent running as user: %1 seconds"
 msgid "<br /><br />CPU time spent running as user: %1 seconds"
 msgstr "<br/><br/>प्रयोगकर्ताको रूपमा चलेर CPU ले विताएको समय: %1 सेकेन्ड"
 
-#: ProcessModel.cc:802
+#: ProcessModel.cc:798
 #, fuzzy, kde-format
 #| msgid "<br/>CPU time spent running in kernel: %1 seconds"
 msgid "<br />CPU time spent running in kernel: %1 seconds"
 msgstr "<br/>कर्नेलमा चलेर CPU ले विताएको समय: %1 सेकेन्ड"
 
-#: ProcessModel.cc:806
+#: ProcessModel.cc:802
 #, fuzzy, kde-format
 #| msgid "<br/>Nice level: %1 (%2)"
 msgid "<br />Nice level: %1 (%2)"
 msgstr "<br/>असल स्तर: %1 (%2)"
 
-#: ProcessModel.cc:825
+#: ProcessModel.cc:821
 #, fuzzy, kde-format
 #| msgid "Memory usage: %1 out of %2  (%3 %)<br/>"
 msgid "Memory usage: %1 out of %2  (%3 %)<br />"
 msgstr "स्मृति उपयोग: %1, %2  (%3 %) मध्येको<br/>"
 
-#: ProcessModel.cc:827
+#: ProcessModel.cc:823
 #, fuzzy, kde-format
 #| msgid "Memory usage: %1<br/>"
 msgid "Memory usage: %1<br />"
 msgstr "स्मृति उपयोग: %1<br/>"
 
-#: ProcessModel.cc:830
+#: ProcessModel.cc:826
 #, kde-format
 msgid "RSS Memory usage: %1 out of %2  (%3 %)"
 msgstr "RSS स्मृति उपयोग: %1, %2  (%3 %) मध्येको"
 
-#: ProcessModel.cc:832
+#: ProcessModel.cc:828
 #, kde-format
 msgid "RSS Memory usage: %1"
 msgstr "RSS स्मृति उपयोग: %1"
 
-#: ProcessModel.cc:837
+#: ProcessModel.cc:833
 #, fuzzy
 #| msgid ""
 #| "<qt>Your system does not seem to have this information for us to read, "
@@ -466,87 +483,102 @@ msgid ""
 msgstr ""
 "<qt>माफ गर्नुहोस्, तपाईँको प्रणालीमा हामीलाई पढ्नका लागि यो सूचना नभएको देखिन्छ ।"
 
-#: ProcessModel.cc:840
+#: ProcessModel.cc:836
 #, fuzzy, kde-format
 #| msgid "<br/><br/>Shared library memory usage: %1 out of %2  (%3 %)"
 msgid "Shared library memory usage: %1 out of %2  (%3 %)"
 msgstr "<br/><br/>सेयर गरिएको लाइब्रेरी स्मृति उपयोग: %1 out of %2  (%3 %)"
 
-#: ProcessModel.cc:842
+#: ProcessModel.cc:838
 #, fuzzy, kde-format
 #| msgid "<br/><br/>Shared library memory usage: %1"
 msgid "Shared library memory usage: %1"
 msgstr "<br/><br/>सेयर गरिएको लाइब्रेरी स्मृति उपयोग: %1"
 
-#: ProcessModel.cc:1023
+#: ProcessModel.cc:1019
 #, fuzzy
 #| msgid "Name"
 msgctxt "process heading"
 msgid "Name"
 msgstr "नाम"
 
-#: ProcessModel.cc:1024
+#: ProcessModel.cc:1020
 #, fuzzy
 #| msgid "User Name"
 msgctxt "process heading"
 msgid "User Name"
 msgstr "प्रयोगकर्ता नाम"
 
-#: ProcessModel.cc:1025
+#: ProcessModel.cc:1021
 #, fuzzy
 #| msgid "Tty"
 msgctxt "process heading"
 msgid "Tty"
 msgstr "Tty"
 
-#: ProcessModel.cc:1026
+#: ProcessModel.cc:1022
 #, fuzzy
 #| msgid "Niceness"
 msgctxt "process heading"
 msgid "Niceness"
 msgstr "राम्रोपन"
 
-#: ProcessModel.cc:1027
+#: ProcessModel.cc:1023
 #, fuzzy
 #| msgid "CPU %"
 msgctxt "process heading"
 msgid "CPU %"
 msgstr "CPU %"
 
-#: ProcessModel.cc:1028
+#: ProcessModel.cc:1024
 #, fuzzy
 #| msgid "Virtual Size"
 msgctxt "process heading"
 msgid "Virtual Size"
 msgstr "आवास्तविक साइज"
 
-#: ProcessModel.cc:1029
+#: ProcessModel.cc:1025
 #, fuzzy
 #| msgid "Memory"
 msgctxt "process heading"
 msgid "Memory"
 msgstr "स्मृति"
 
-#: ProcessModel.cc:1030
+#: ProcessModel.cc:1026
 #, fuzzy
 #| msgid "Shared Mem"
 msgctxt "process heading"
 msgid "Shared Mem"
 msgstr "सेयर गरिएको स्मृति"
 
-#: ProcessModel.cc:1031
+#: ProcessModel.cc:1027
 #, fuzzy
 #| msgid "Command"
 msgctxt "process heading"
 msgid "Command"
 msgstr "आदेश"
 
-#: ProcessModel.cc:1033
+#: ProcessModel.cc:1029
 #, fuzzy
 #| msgid "Title Name"
 msgctxt "process heading"
 msgid "Title Name"
 msgstr "शीर्षक नाम"
+
+#: ProcessModel.cc:1081
+#, kde-format
+msgid "%1 k"
+msgstr ""
+
+#: ProcessModel.cc:1083
+#, kde-format
+msgid "%1 m"
+msgstr ""
+
+#: ProcessModel.cc:1085
+#, kde-format
+msgid "%1 g"
+msgstr ""
 
 #: ReniceDlg.cc:36
 msgid "Renice Process"
