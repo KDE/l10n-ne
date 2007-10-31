@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-27 05:54+0200\n"
+"POT-Creation-Date: 2007-10-31 05:55+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -576,7 +576,7 @@ msgstr "फाइलमा मेटाडेटा लेख्दैछ । �
 #: libs/imageproperties/talbumlistview.cpp:119
 #: libs/imageproperties/talbumlistview.cpp:298
 #: libs/imageproperties/talbumlistview.cpp:372
-#: libs/imageproperties/talbumlistview.cpp:402 digikam/digikamview.cpp:175
+#: libs/imageproperties/talbumlistview.cpp:402 digikam/digikamview.cpp:176
 msgid "Tags"
 msgstr "ट्याग"
 
@@ -723,27 +723,27 @@ msgstr "फाइल गुण"
 msgid "Metadata"
 msgstr "मेटाडेटा"
 
-#: libs/imageproperties/talbumlistview.cpp:299 digikam/albumfolderview.cpp:886
-#: digikam/albumfolderview.cpp:1007 digikam/albumfolderview.cpp:1114
-#: digikam/tagfolderview.cpp:708 digikam/albumiconview.cpp:1207
+#: libs/imageproperties/talbumlistview.cpp:299 digikam/albumfolderview.cpp:897
+#: digikam/albumfolderview.cpp:1018 digikam/albumfolderview.cpp:1125
+#: digikam/tagfolderview.cpp:708 digikam/albumiconview.cpp:1301
 #: digikam/tagfilterview.cpp:461
 msgid "&Move Here"
 msgstr "यहाँ सार्नुहोस्"
 
 #: libs/imageproperties/talbumlistview.cpp:301
 #: libs/imageproperties/talbumlistview.cpp:375
-#: libs/imageproperties/talbumlistview.cpp:406 digikam/albumfolderview.cpp:888
-#: digikam/albumfolderview.cpp:976 digikam/albumfolderview.cpp:1013
-#: digikam/albumfolderview.cpp:1065 digikam/albumfolderview.cpp:1117
+#: libs/imageproperties/talbumlistview.cpp:406 digikam/albumfolderview.cpp:899
+#: digikam/albumfolderview.cpp:987 digikam/albumfolderview.cpp:1024
+#: digikam/albumfolderview.cpp:1076 digikam/albumfolderview.cpp:1128
 #: digikam/tagfolderview.cpp:710 digikam/tagfolderview.cpp:784
-#: digikam/tagfolderview.cpp:815 digikam/albumiconview.cpp:1210
-#: digikam/albumiconview.cpp:1394 digikam/tagfilterview.cpp:463
+#: digikam/tagfolderview.cpp:815 digikam/albumiconview.cpp:1304
+#: digikam/albumiconview.cpp:1488 digikam/tagfilterview.cpp:463
 #: digikam/tagfilterview.cpp:526 utilities/cameragui/cameraiconview.cpp:629
 msgid "C&ancel"
 msgstr "रद्द गर्नुहोस्"
 
 #: libs/imageproperties/talbumlistview.cpp:373 digikam/tagfolderview.cpp:782
-#: digikam/albumiconview.cpp:586 digikam/tagfilterview.cpp:524
+#: digikam/albumiconview.cpp:680 digikam/tagfilterview.cpp:524
 msgid "Set as Tag Thumbnail"
 msgstr "ट्याग थम्बनेलको रूपमा सेट गर्नुहोस्"
 
@@ -1211,14 +1211,14 @@ msgid ""
 " "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:100
+#: libs/database/schemaupdater.cpp:112
 msgid ""
 "The database is not valid: The \"DBVersion\" setting does not exist. The "
 "current database schema version cannot be verified. Try to start with an "
 "empty database. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:123
+#: libs/database/schemaupdater.cpp:141
 msgid ""
 "The database has been used with a more recent version of digiKam and has "
 "been updated to a database schema which cannot be used with this version. "
@@ -1226,7 +1226,7 @@ msgid ""
 "recent) Please use the more recent version of digikam that you used before. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:177
+#: libs/database/schemaupdater.cpp:201
 #, fuzzy
 #| msgid "Failed to add tag to database"
 msgid ""
@@ -1234,33 +1234,114 @@ msgid ""
 " "
 msgstr "डाटाबेसमा ट्याग थप्न असफल"
 
-#: libs/database/schemaupdater.cpp:554
+#: libs/database/schemaupdater.cpp:229
+msgid ""
+"The schema updating process from version 4 to 5 failed, caused by an "
+"internal error. Please delete the old database file if you want to continue "
+"with an empty database."
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:596
 #, kde-format
 msgid ""
 "Failed to copy the old database file (\"%1\")to its new location (\"%2\")."
-"Please make sure that the file can be copied."
+"Please make sure that the file can be copied, or delete it."
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:562
+#: libs/database/schemaupdater.cpp:609
+#, fuzzy
+#| msgid "Reading database"
+msgid "Copied database file"
+msgstr "डाटाबेस पढाइ"
+
+#: libs/database/schemaupdater.cpp:613
 #, kde-format
 msgid ""
 "The old database file (\"%1\") has been copied to the new location (\"%2\") "
-"but it cannot be opened. Please remove both files and try again, starting "
+"but it cannot be opened. Please delete both files and try again, starting "
 "with an empty database. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:583
+#: libs/database/schemaupdater.cpp:628
+#, fuzzy
+#| msgid "Reading database"
+msgid "Opened new database file"
+msgstr "डाटाबेस पढाइ"
+
+#: libs/database/schemaupdater.cpp:646
 #, kde-format
 msgid ""
-"Could not update from the old SQLite2 file (\"%1\"). Please remove this file "
+"Could not update from the old SQLite2 file (\"%1\"). Please delete this file "
 "and try again, starting with an empty database. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:655
+#: libs/database/schemaupdater.cpp:658
+#, fuzzy
+#| msgid "Read metadata from file to database"
+msgid "Updated from 0.7 database"
+msgstr "फाइलबाट डाटाबेसमा मेटाडेटा पढ्नुहोस्"
+
+#: libs/database/schemaupdater.cpp:715
+msgid "Prepared table creation"
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:724
+#, fuzzy
+#| msgid "Create Folder Failed"
+msgid "Created tables"
+msgstr "फोल्डर सिर्जना असफल"
+
+#: libs/database/schemaupdater.cpp:735
 msgid ""
 "No album library path has been found in the configuration file. Giving up "
 "the schema updating process. Please try with an empty database, or repair "
 "your configuration."
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:757
+msgid "Configured one album root"
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:773
+#, fuzzy
+#| msgid "&Sort Albums"
+msgid "Imported albums"
+msgstr "एल्बम क्रमबद्ध गर्नुहोस्"
+
+#: libs/database/schemaupdater.cpp:792
+#, fuzzy
+#| msgid "Image Information"
+msgid "Imported images information"
+msgstr "छवि सूचना"
+
+#: libs/database/schemaupdater.cpp:848
+msgid "Initialized and imported file suffix filter"
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:858
+msgid "Did the initial full scan"
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:873
+#, fuzzy
+#| msgid "Print image creation date"
+msgid "Imported creation dates"
+msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+
+#: libs/database/schemaupdater.cpp:886
+#, fuzzy
+#| msgid "Print image comment"
+msgid "Imported comments"
+msgstr "छवि टिप्पणी मुद्रण गर्नुहोस्"
+
+#: libs/database/schemaupdater.cpp:903
+#, fuzzy
+#| msgid "Saturation:"
+msgid "Imported ratings"
+msgstr "स्याचुरेसन:"
+
+#: libs/database/schemaupdater.cpp:911
+msgid "Dropped v3 tables"
 msgstr ""
 
 #: libs/greycstoration/greycstorationwidget.cpp:131
@@ -2147,7 +2228,7 @@ msgstr ""
 "।<p>क्लिप फोकस परिवर्तन गर्न रातो आयातकारमा माउस कर्सर क्लिक गर्नुहोस् र तान्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:360
-#: digikam/digikamapp.cpp:2117 utilities/lighttable/lighttablewindow.cpp:1419
+#: digikam/digikamapp.cpp:2116 utilities/lighttable/lighttablewindow.cpp:1419
 #: utilities/lighttable/lighttablewindow.cpp:1442
 #, fuzzy, kde-format
 #| msgid "Zoom: "
@@ -2288,7 +2369,7 @@ msgstr "आज"
 msgid "yesterday"
 msgstr "हिजो"
 
-#: digikam/scanlib.cpp:68
+#: digikam/scancontroller.cpp:185 digikam/scanlib.cpp:68
 #, fuzzy
 #| msgid ""
 #| "This shows the progress of the scan. During the scan, all files on disk "
@@ -2302,12 +2383,16 @@ msgstr ""
 "गरिन्छ । त्यसका लागि exif-मिति क्रमबद्ध गर्नुपर्दछ र डिजिक्यामको सम्पूर्ण कार्यसम्पादनको "
 "गति बढाउनुपर्दछ ।"
 
-#: digikam/scanlib.cpp:147
+#: digikam/scancontroller.cpp:343 digikam/scanlib.cpp:147
 msgid "Scanning for removed albums"
 msgstr ""
 
-#: digikam/scanlib.cpp:153
+#: digikam/scancontroller.cpp:348 digikam/scanlib.cpp:153
 msgid "Scanning images in individual albums"
+msgstr ""
+
+#: digikam/scancontroller.cpp:381
+msgid "Error"
 msgstr ""
 
 #: digikam/scanlib.cpp:165
@@ -2492,90 +2577,90 @@ msgstr ""
 "डिजिक्याम स्वचालित रूपमा पुन: सुरु गर्न सकिदैन ।\n"
 "कृपया म्यानुअल तरिकाले पुन: सुरु गर्नुहोस् ।"
 
-#: digikam/albumfolderview.cpp:210 digikam/albumfolderview.cpp:429
-#: digikam/albumfolderview.cpp:885 digikam/albumfolderview.cpp:973
-#: digikam/albumfolderview.cpp:1006 digikam/albumfolderview.cpp:1059
-#: digikam/albumfolderview.cpp:1113 digikam/albummanager.cpp:339
-#: digikam/albumiconview.cpp:1388 digikam/kipiinterface.cpp:464
+#: digikam/albumfolderview.cpp:210 digikam/albumfolderview.cpp:440
+#: digikam/albumfolderview.cpp:896 digikam/albumfolderview.cpp:984
+#: digikam/albumfolderview.cpp:1017 digikam/albumfolderview.cpp:1070
+#: digikam/albumfolderview.cpp:1124 digikam/albummanager.cpp:371
+#: digikam/albumiconview.cpp:1482 digikam/kipiinterface.cpp:464
 #: digikam/album.cpp:344
 msgid "My Albums"
 msgstr "मेरो एल्बम"
 
-#: digikam/albumfolderview.cpp:424
+#: digikam/albumfolderview.cpp:435
 #, fuzzy
 #| msgid "&Import"
 msgid "Import"
 msgstr "आयात"
 
-#: digikam/albumfolderview.cpp:425
+#: digikam/albumfolderview.cpp:436
 #, fuzzy
 #| msgid "&Export"
 msgid "Export"
 msgstr "निर्यात"
 
-#: digikam/albumfolderview.cpp:426
+#: digikam/albumfolderview.cpp:437
 #, fuzzy
 #| msgid "Batch Processes"
 msgid "Batch Process"
 msgstr "ब्याच प्रक्रिया"
 
-#: digikam/albumfolderview.cpp:430
+#: digikam/albumfolderview.cpp:441
 msgid "New Album..."
 msgstr "नयाँ एल्बम..."
 
-#: digikam/albumfolderview.cpp:443 digikam/albumiconview.cpp:575
+#: digikam/albumfolderview.cpp:454 digikam/albumiconview.cpp:665
 #: digikam/digikamapp.cpp:640
 msgid "Rename..."
 msgstr "पुन: नामकरण गर्नुहोस्..."
 
-#: digikam/albumfolderview.cpp:444
+#: digikam/albumfolderview.cpp:455
 #, fuzzy
 #| msgid "Edit Album Properties..."
 msgid "Album Properties..."
 msgstr "एल्बम गुण सम्पादन गर्नुहोस्..."
 
-#: digikam/albumfolderview.cpp:445
+#: digikam/albumfolderview.cpp:456
 msgid "Reset Album Icon"
 msgstr "एल्बम प्रतिमा रिसेट गर्नुहोस्"
 
-#: digikam/albumfolderview.cpp:487
+#: digikam/albumfolderview.cpp:498
 msgid "Move Album to Trash"
 msgstr "एल्बमलाई रद्दीटोकरीमा सार्नुहोस्"
 
-#: digikam/albumfolderview.cpp:491 digikam/digikamapp.cpp:554
+#: digikam/albumfolderview.cpp:502 digikam/digikamapp.cpp:554
 msgid "Delete Album"
 msgstr "एल्बम मेट्नुहोस्"
 
-#: digikam/albumfolderview.cpp:701
+#: digikam/albumfolderview.cpp:712
 #, kde-format
 msgid "Rename Album (%1)"
 msgstr "एल्बम (%1) पुन: नामकरण गर्नुहोस्"
 
-#: digikam/albumfolderview.cpp:702
+#: digikam/albumfolderview.cpp:713
 msgid "Enter new album name:"
 msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
 
-#: digikam/albumfolderview.cpp:974 digikam/albumfolderview.cpp:1011
-#: digikam/albumiconview.cpp:584
+#: digikam/albumfolderview.cpp:985 digikam/albumfolderview.cpp:1022
+#: digikam/albumiconview.cpp:675
 msgid "Set as Album Thumbnail"
 msgstr "एल्बम थम्बनेलको रूपमा सेट गर्नुहोस्"
 
-#: digikam/albumfolderview.cpp:1008 digikam/albumfolderview.cpp:1115
-#: digikam/albumiconview.cpp:1208
+#: digikam/albumfolderview.cpp:1019 digikam/albumfolderview.cpp:1126
+#: digikam/albumiconview.cpp:1302
 msgid "&Copy Here"
 msgstr "यहाँ प्रतिलिपि बनाउनुहोस्"
 
-#: digikam/albumfolderview.cpp:1061 digikam/albumiconview.cpp:1390
+#: digikam/albumfolderview.cpp:1072 digikam/albumiconview.cpp:1484
 #, fuzzy
 #| msgid "&Upload into camera"
 msgid "Download from camera"
 msgstr "क्यामेरामा अपलोड गर्नुहोस्"
 
-#: digikam/albumfolderview.cpp:1063 digikam/albumiconview.cpp:1392
+#: digikam/albumfolderview.cpp:1074 digikam/albumiconview.cpp:1486
 msgid "Download && Delete from camera"
 msgstr ""
 
-#: digikam/albumfolderview.cpp:1231
+#: digikam/albumfolderview.cpp:1242
 msgid "Uncategorized Albums"
 msgstr "कोटिबद्ध नगरिएको एल्बम"
 
@@ -2874,7 +2959,7 @@ msgstr "रिसेट गर्नुहोस्"
 
 #: digikam/tagfolderview.cpp:141 digikam/tagfolderview.cpp:404
 #: digikam/tagfolderview.cpp:706 digikam/tagfolderview.cpp:781
-#: digikam/tagfolderview.cpp:811 digikam/albummanager.cpp:342
+#: digikam/tagfolderview.cpp:811 digikam/albummanager.cpp:374
 #: digikam/album.cpp:403
 msgid "My Tags"
 msgstr "मेरो ट्याग"
@@ -2903,9 +2988,9 @@ msgstr[1] ""
 "'%1' ट्यागमा %n सहायक ट्याग छ । यसलाई मेट्दा त्यसका सबै सहायक ट्यागहरू मेटिन्छ । तपाईँले "
 "जारी राख्न यकिन हुनुहुन्छ ?"
 
-#: digikam/tagfolderview.cpp:825 digikam/albumiconview.cpp:1280
-#: digikam/albumiconview.cpp:1290 digikam/albumiconview.cpp:1355
-#: digikam/albumiconview.cpp:1364 digikam/albumiconview.cpp:2008
+#: digikam/tagfolderview.cpp:825 digikam/albumiconview.cpp:1374
+#: digikam/albumiconview.cpp:1384 digikam/albumiconview.cpp:1449
+#: digikam/albumiconview.cpp:1458 digikam/albumiconview.cpp:2110
 #: digikam/tagfilterview.cpp:537
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
@@ -3274,7 +3359,7 @@ msgstr "<path> मा क्यामेरा संवाद खोल्न�
 msgid "Start digikam with the album root <path>"
 msgstr ""
 
-#: digikam/albummanager.cpp:225
+#: digikam/albummanager.cpp:240
 msgid ""
 "<qt><p>Failed to open the database. </p><p>You cannot use digiKam without a "
 "working database. digiKam will attempt to start now, but it will <b>not</b> "
@@ -3282,7 +3367,7 @@ msgid ""
 "menu</b>.</p></qt>"
 msgstr ""
 
-#: digikam/albummanager.cpp:233
+#: digikam/albummanager.cpp:248
 #, kde-format
 msgid ""
 "<qt><p>Failed to open the database.  Error message from database: %1 </"
@@ -3291,7 +3376,7 @@ msgid ""
 "database settings in the <b>configuration menu</b>.</p></qt>"
 msgstr ""
 
-#: digikam/albummanager.cpp:298
+#: digikam/albummanager.cpp:316
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your locale has changed from the previous time this album was opened.\n"
@@ -3302,9 +3387,12 @@ msgstr ""
 msgid ""
 "Your locale has changed from the previous time this album was opened.\n"
 "Old Locale : %1, New Locale : %2\n"
-"This can cause unexpected problems. If you are sure that you want to "
-"continue, click 'Yes' to work with this album. Otherwise, click 'No' and "
-"correct your locale setting before restarting digiKam"
+"If you changed your locale lately, this is all right.\n"
+"Please notice that if you switched to a locale that does not support some of "
+"the file names in your collection, these files may no longer be found in the "
+"collection. If you are sure that you want to continue, click 'Yes'. "
+"Otherwise, click 'No' and correct your locale setting before restarting "
+"digiKam."
 msgstr ""
 "अघिल्लो पटक यो एल्बम खोल्दा तपाईँको लोकाल परिवर्तन गरिएको थियो ।\n"
 "पुरानो लोक्याल : %1, नयाँ लोक्याल : %2\n"
@@ -3312,65 +3400,65 @@ msgstr ""
 "एल्बमसँग काम गर्न 'हो' मा क्लिक गर्नुहोस् । अन्यथा, 'होइन' मा क्लिक गर्नुहोस् र डिजिक्याम "
 "पुन सुरु गर्नुपूर्व तपाईँको लोक्याल सेटिङ सुधार गर्नुहोस् ।"
 
-#: digikam/albummanager.cpp:806
+#: digikam/albummanager.cpp:851
 msgid "No parent found for album."
 msgstr "एल्बमका लागि प्रमूल फेला परेन ।"
 
-#: digikam/albummanager.cpp:813
+#: digikam/albummanager.cpp:858
 msgid "Album name cannot be empty."
 msgstr "एल्बमको नाम खाली हुनसक्दैन ।"
 
-#: digikam/albummanager.cpp:819
+#: digikam/albummanager.cpp:864
 msgid "Album name cannot contain '/'."
 msgstr "एल्बमको नाममा '/' हुनु हुँदैन ।"
 
-#: digikam/albummanager.cpp:828
+#: digikam/albummanager.cpp:873
 msgid "No album root path supplied"
 msgstr ""
 
-#: digikam/albummanager.cpp:844
+#: digikam/albummanager.cpp:889
 #, fuzzy
 #| msgid "Another album with same name exists."
 msgid "An existing album has the same name."
 msgstr "सोहि नामको अर्को एल्बम अवस्थित छ ।"
 
-#: digikam/albummanager.cpp:860
+#: digikam/albummanager.cpp:905
 msgid "Another file or folder with same name exists"
 msgstr "सो नामको अर्को फाइल वा फोल्डर अवस्थित छ"
 
-#: digikam/albummanager.cpp:862
+#: digikam/albummanager.cpp:907
 msgid "Access denied to path"
 msgstr "मार्गमा पहुँच गर्न अस्विकार गर्यो"
 
-#: digikam/albummanager.cpp:864
+#: digikam/albummanager.cpp:909
 #, fuzzy
 #| msgid "Disk full"
 msgid "Disk is full"
 msgstr "डिस्क भरिएको छ"
 
-#: digikam/albummanager.cpp:866
+#: digikam/albummanager.cpp:911
 msgid "Unknown error"
 msgstr "अज्ञात त्रुटि"
 
-#: digikam/albummanager.cpp:875
+#: digikam/albummanager.cpp:920
 msgid "Failed to add album to database"
 msgstr "डाटाबेसमा एल्बम थप्न असफल"
 
-#: digikam/albummanager.cpp:898 digikam/albummanager.cpp:982
-#: digikam/albummanager.cpp:1075 digikam/albummanager.cpp:1111
-#: digikam/albummanager.cpp:1151
+#: digikam/albummanager.cpp:941 digikam/albummanager.cpp:1025
+#: digikam/albummanager.cpp:1118 digikam/albummanager.cpp:1154
+#: digikam/albummanager.cpp:1194
 msgid "No such album"
 msgstr "त्यस्तो एल्बम छैन"
 
-#: digikam/albummanager.cpp:904
+#: digikam/albummanager.cpp:947
 msgid "Cannot rename root album"
 msgstr "रूट एल्बम पुन: नामकरण गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:910
+#: digikam/albummanager.cpp:953
 msgid "Album name cannot contain '/'"
 msgstr "एल्बम नाममा '/' हुनु हुँदैन"
 
-#: digikam/albummanager.cpp:920
+#: digikam/albummanager.cpp:963
 #, fuzzy
 #| msgid ""
 #| "Another Album with same name exists\n"
@@ -3382,45 +3470,45 @@ msgstr ""
 "सोहि नामको अर्को एल्बम अवस्थित छ \n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: digikam/albummanager.cpp:936
+#: digikam/albummanager.cpp:979
 msgid "Failed to rename Album"
 msgstr "एल्बम पुन: नामकरण गर्न असफल"
 
-#: digikam/albummanager.cpp:988
+#: digikam/albummanager.cpp:1031
 msgid "Cannot edit root album"
 msgstr "रूट एल्बम सम्पादन गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1008
+#: digikam/albummanager.cpp:1051
 msgid "No parent found for tag"
 msgstr "ट्यागका लागि प्रमूल फेला परेन"
 
-#: digikam/albummanager.cpp:1015
+#: digikam/albummanager.cpp:1058
 msgid "Tag name cannot be empty"
 msgstr "ट्याग नाम खाली हुन सक्दैन"
 
-#: digikam/albummanager.cpp:1021 digikam/albummanager.cpp:1123
+#: digikam/albummanager.cpp:1064 digikam/albummanager.cpp:1166
 msgid "Tag name cannot contain '/'"
 msgstr "ट्याग नाममा '/' हुनु हुँदैन"
 
-#: digikam/albummanager.cpp:1031
+#: digikam/albummanager.cpp:1074
 #, fuzzy
 #| msgid "File already exists"
 msgid "Tag name already exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
-#: digikam/albummanager.cpp:1040
+#: digikam/albummanager.cpp:1083
 msgid "Failed to add tag to database"
 msgstr "डाटाबेसमा ट्याग थप्न असफल"
 
-#: digikam/albummanager.cpp:1081
+#: digikam/albummanager.cpp:1124
 msgid "Cannot delete Root Tag"
 msgstr "रूट ट्याग मेट्न सकिदैन"
 
-#: digikam/albummanager.cpp:1117 digikam/albummanager.cpp:1181
+#: digikam/albummanager.cpp:1160 digikam/albummanager.cpp:1224
 msgid "Cannot edit root tag"
 msgstr "रूट ट्याग सम्पादन गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1133
+#: digikam/albummanager.cpp:1176
 msgid ""
 "Another tag with same name exists\n"
 "Please choose another name"
@@ -3428,11 +3516,11 @@ msgstr ""
 "सोहि नामको अर्को ट्याग अवस्थित छ\n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: digikam/albummanager.cpp:1157
+#: digikam/albummanager.cpp:1200
 msgid "Cannot move root tag"
 msgstr "रूट ट्याग सार्न सकिदैन"
 
-#: digikam/albummanager.cpp:1175
+#: digikam/albummanager.cpp:1218
 msgid "No such tag"
 msgstr "त्यस्तो ट्याग छैन"
 
@@ -3498,26 +3586,44 @@ msgstr "एल्बम:"
 msgid "Tags:"
 msgstr "ट्याग:"
 
-#: digikam/albumiconview.cpp:538 digikam/digikamapp.cpp:609
+#: digikam/albumiconview.cpp:591 digikam/searchwidgets.cpp:72
+msgid "Album"
+msgstr "एल्बम"
+
+#: digikam/albumiconview.cpp:592
+#, fuzzy
+#| msgid "Date:"
+msgid "Date"
+msgstr "मिति:"
+
+#: digikam/albumiconview.cpp:597 digikam/searchwidgets.cpp:76
+msgid "Tag"
+msgstr "ट्याग"
+
+#: digikam/albumiconview.cpp:618 digikam/digikamapp.cpp:609
 msgid "View..."
 msgstr "दृश्य..."
 
-#: digikam/albumiconview.cpp:539 digikam/imagepreviewview.cpp:373
+#: digikam/albumiconview.cpp:619 digikam/imagepreviewview.cpp:373
 #: digikam/digikamapp.cpp:616 utilities/lighttable/lighttablepreview.cpp:392
 msgid "Edit..."
 msgstr "सम्पादन..."
 
-#: digikam/albumiconview.cpp:540 digikam/imagepreviewview.cpp:374
+#: digikam/albumiconview.cpp:620 digikam/imagepreviewview.cpp:374
 #: digikam/digikamapp.cpp:632
 msgid "Add to Light Table"
 msgstr ""
 
-#: digikam/albumiconview.cpp:542 digikam/imagepreviewview.cpp:376
+#: digikam/albumiconview.cpp:623
+msgid "Go To"
+msgstr ""
+
+#: digikam/albumiconview.cpp:632 digikam/imagepreviewview.cpp:376
 #: utilities/lighttable/lighttablepreview.cpp:394
 msgid "Open With"
 msgstr "यससँग खोल्नुहोस्"
 
-#: digikam/albumiconview.cpp:620 digikam/imagepreviewview.cpp:410
+#: digikam/albumiconview.cpp:703 digikam/imagepreviewview.cpp:410
 #: showfoto/showfoto.cpp:569 utilities/imageeditor/editor/editorwindow.cpp:297
 #: utilities/lighttable/lighttablepreview.cpp:399
 #: utilities/lighttable/lighttablewindow.cpp:387
@@ -3527,35 +3633,35 @@ msgid_plural "Move %1 Files to Trash"
 msgstr[0] "रद्दीटोकरीमा सार्नुहोस्"
 msgstr[1] "रद्दीटोकरीमा सार्नुहोस्"
 
-#: digikam/albumiconview.cpp:636 digikam/imagepreviewview.cpp:423
+#: digikam/albumiconview.cpp:719 digikam/imagepreviewview.cpp:423
 #: utilities/imageeditor/editor/imagewindow.cpp:568
 #: utilities/lighttable/lighttablepreview.cpp:412
 msgid "Assign Tag"
 msgstr "ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:639 digikam/imagepreviewview.cpp:426
+#: digikam/albumiconview.cpp:722 digikam/imagepreviewview.cpp:426
 #: utilities/imageeditor/editor/imagewindow.cpp:569
 #: utilities/lighttable/lighttablepreview.cpp:415
 msgid "Remove Tag"
 msgstr "ट्याग हटाउनुहोस्"
 
-#: digikam/albumiconview.cpp:656 digikam/imagepreviewview.cpp:447
+#: digikam/albumiconview.cpp:740 digikam/imagepreviewview.cpp:447
 #: utilities/imageeditor/editor/imagewindow.cpp:590
 #: utilities/lighttable/lighttablebar.cpp:213
 #: utilities/lighttable/lighttablepreview.cpp:436
 msgid "Assign Rating"
 msgstr "दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:820
+#: digikam/albumiconview.cpp:914
 #, kde-format
 msgid "Rename Item (%1)"
 msgstr "वस्तु (%1) पुन: नामकरण गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:821
+#: digikam/albumiconview.cpp:915
 msgid "Enter new name (without extension):"
 msgstr "नयाँ नाम (विस्तार बिना) प्रविष्ट गर्नुहोस्:"
 
-#: digikam/albumiconview.cpp:1016
+#: digikam/albumiconview.cpp:1110
 #: utilities/imageeditor/editor/imagewindow.cpp:1150
 #: utilities/imageeditor/editor/imagewindow.cpp:1177
 #: utilities/imageeditor/editor/imagewindow.cpp:1209
@@ -3563,61 +3669,61 @@ msgstr "नयाँ नाम (विस्तार बिना) प्रव
 msgid "Album \"%1\""
 msgstr "एल्बम \"%1\""
 
-#: digikam/albumiconview.cpp:1260
+#: digikam/albumiconview.cpp:1354
 #, kde-format
 msgid "Assign '%1' to &Selected Items"
 msgstr "चयन गरेको वस्तुमा '%1' मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1265
+#: digikam/albumiconview.cpp:1359
 #, fuzzy, kde-format
 #| msgid "Assign '%1' to &All Items"
 msgid "Assign '%1' to &This Item"
 msgstr "सबै वस्तुमा '%1' मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1268
+#: digikam/albumiconview.cpp:1362
 #, kde-format
 msgid "Assign '%1' to &All Items"
 msgstr "सबै वस्तुमा '%1' मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1271 digikam/albumiconview.cpp:1346
+#: digikam/albumiconview.cpp:1365 digikam/albumiconview.cpp:1440
 #, fuzzy
 #| msgid "C&ancel"
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1336
+#: digikam/albumiconview.cpp:1430
 msgid "Assign Tags to &Selected Items"
 msgstr "चयन गरेको वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1340
+#: digikam/albumiconview.cpp:1434
 #, fuzzy
 #| msgid "Assign Tags to &All Items"
 msgid "Assign Tags to &This Item"
 msgstr "सबै वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1343
+#: digikam/albumiconview.cpp:1437
 msgid "Assign Tags to &All Items"
 msgstr "सबै वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1608
+#: digikam/albumiconview.cpp:1702
 #, fuzzy
 #| msgid "Fix Exif Orientation tag on pictures. Please wait..."
 msgid "Revising Exif Orientation tags. Please wait..."
 msgstr "तस्विरमा Exif अभिमुखीकरण ट्याग स्थिर । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: digikam/albumiconview.cpp:1620
+#: digikam/albumiconview.cpp:1714
 #, fuzzy, kde-format
 #| msgid "Failed to correct Exif orientation for file %1."
 msgid "Failed to revise Exif orientation for file %1."
 msgstr "%1 फाइलका लागि Exif अभिमुखीकरण सुधार गर्न असफल"
 
-#: digikam/albumiconview.cpp:2018
+#: digikam/albumiconview.cpp:2120
 #, fuzzy
 #| msgid "Remove tag from pictures. Please wait..."
 msgid "Removing image tags. Please wait..."
 msgstr "तस्विरबाट ट्याग हटाउनुहोस् । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: digikam/albumiconview.cpp:2028
+#: digikam/albumiconview.cpp:2130
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
 msgid "Assigning image ratings. Please wait..."
@@ -3629,7 +3735,7 @@ msgstr "ट्याग गरेको छैन"
 
 #: digikam/tagfilterview.cpp:202 digikam/tagfilterview.cpp:460
 #: digikam/tagfilterview.cpp:522 digikam/tagfilterview.cpp:769
-#: digikam/digikamview.cpp:180
+#: digikam/digikamview.cpp:181
 msgid "Tag Filters"
 msgstr "ट्याग फिल्टर"
 
@@ -3727,7 +3833,7 @@ msgstr "एल्बममा फर्कनुहोस्"
 msgid "SlideShow"
 msgstr "स्लाइड प्रर्दशन"
 
-#: digikam/datefolderview.cpp:120
+#: digikam/datefolderview.cpp:129
 msgid "My Dates"
 msgstr "मितिद्वारा"
 
@@ -4346,7 +4452,7 @@ msgstr "किपि प्लगइन"
 msgid "Loading themes"
 msgstr "विषयवस्तु लोडिङ"
 
-#: digikam/digikamapp.cpp:2049
+#: digikam/digikamapp.cpp:2048
 #, fuzzy
 #| msgid ""
 #| "Rebuild all albums items thumbnails can take a while.\n"
@@ -4358,7 +4464,7 @@ msgstr ""
 "एल्बमको सबै वस्तु थम्बनेल पुन: निर्माण हुँदा केहि समय लिन सक्दछ ।\n"
 "तपाईँले जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2070
+#: digikam/digikamapp.cpp:2069
 #, fuzzy
 #| msgid ""
 #| "Sync all pictures metadata from all albums with digiKam database can take "
@@ -4371,25 +4477,25 @@ msgstr ""
 "डिजिक्याम डाटाबेससँग सबै एल्बमबाट सबै तस्विर मेटाडाटा सिन्क गर्दा केहि समय लिन सक्दछ ।\n"
 "तपाईँ जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2111 utilities/cameragui/cameraui.cpp:898
+#: digikam/digikamapp.cpp:2110 utilities/cameragui/cameraui.cpp:898
 #, fuzzy, kde-format
 #| msgid "Size:"
 msgid "Size: %1"
 msgstr "साइज:"
 
-#: digikam/digikamapp.cpp:2145
+#: digikam/digikamapp.cpp:2144
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:2157
+#: digikam/digikamapp.cpp:2156
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folders to import"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:2169
+#: digikam/digikamapp.cpp:2168
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
@@ -4407,10 +4513,6 @@ msgid_plural "%1 %2 - %3 Items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: digikam/searchwidgets.cpp:72
-msgid "Album"
-msgstr "एल्बम"
-
 #: digikam/searchwidgets.cpp:73
 msgid "Album Name"
 msgstr "एल्बम नाम"
@@ -4422,10 +4524,6 @@ msgstr "एल्बम क्याप्सन"
 #: digikam/searchwidgets.cpp:75
 msgid "Album Collection"
 msgstr "एल्बम सङ्कलन"
-
-#: digikam/searchwidgets.cpp:76
-msgid "Tag"
-msgstr "ट्याग"
 
 #: digikam/searchwidgets.cpp:77
 msgid "Tag Name"
@@ -4523,19 +4621,19 @@ msgid ""
 "<p>Enter the name of the current search to save in the \"My Searches\" view"
 msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
 
-#: digikam/digikamview.cpp:173 utilities/setup/setup.cpp:144
+#: digikam/digikamview.cpp:174 utilities/setup/setup.cpp:144
 msgid "Albums"
 msgstr "एल्बम"
 
-#: digikam/digikamview.cpp:174
+#: digikam/digikamview.cpp:175
 msgid "Dates"
 msgstr "मिति"
 
-#: digikam/digikamview.cpp:176
+#: digikam/digikamview.cpp:177
 msgid "Searches"
 msgstr "खोजी"
 
-#: digikam/digikamview.cpp:1210
+#: digikam/digikamview.cpp:1286
 #, fuzzy, kde-format
 #| msgid "Prepare data for slideshow from %1 pictures. Please wait..."
 msgid "Preparing slideshow of %1 images. Please wait..."
@@ -13548,9 +13646,6 @@ msgstr "'अन्त्य गर्नुहोस्' मा क्लिक 
 
 #~ msgid "<li>the comment</li>"
 #~ msgstr "<li>टिप्पणी</li>"
-
-#~ msgid "Print image comment"
-#~ msgstr "छवि टिप्पणी मुद्रण गर्नुहोस्"
 
 #~ msgid "<p>Print image comment on bottom of screen."
 #~ msgstr "<p>स्क्रिनको तल छवि टिप्पणी मुद्रण गर्नुहोस्"
