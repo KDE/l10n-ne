@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-06 05:57+0100\n"
+"POT-Creation-Date: 2007-11-07 05:58+0100\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -23,7 +23,7 @@ msgid "&Show"
 msgstr "देखाउनुहोस्"
 
 #: koeventpopupmenu.cpp:55 kotodoview.cpp:511 actionmanager.cpp:517
-#: actionmanager.cpp:1590 actionmanager.cpp:1621 resourceview.cpp:495
+#: actionmanager.cpp:1590 actionmanager.cpp:1621 resourceview.cpp:515
 msgid "&Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
 
@@ -218,7 +218,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./publishdialog_base.ui line 77
 #: koeditordetails.cpp:308 rc.cpp:903 rc.cpp:2095 koeditorattachments.cpp:408
-#: resourceview.cpp:496
+#: resourceview.cpp:516
 msgid "&Remove"
 msgstr "हटाउनुहोस्"
 
@@ -472,7 +472,7 @@ msgstr "यो घटना वा गर्नुपर्ने कार्�
 msgid "&Recur every"
 msgstr "प्रत्येकलाई दोहोर्याउनुहोस्"
 
-#: koeditorrecurrence.cpp:168 koeditorgeneral.cpp:283
+#: koeditorrecurrence.cpp:168 koeditorgeneral.cpp:299
 #: korgac/alarmdialog.cpp:94
 msgid "day(s)"
 msgstr "दिन"
@@ -1118,7 +1118,7 @@ msgstr[0] "1 दिन"
 msgstr[1] "%1 दिन"
 
 #: koeditoralarms.cpp:119 printing/calprintdefaultplugins.cpp:353
-#: koeditorgeneralevent.cpp:441
+#: koeditorgeneralevent.cpp:425
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
@@ -1126,7 +1126,7 @@ msgstr[0] "1 घण्टा"
 msgstr[1] "%1 घण्टा"
 
 #: koeditoralarms.cpp:122 koprefsdialog.cpp:368
-#: printing/calprintdefaultplugins.cpp:356 koeditorgeneralevent.cpp:448
+#: printing/calprintdefaultplugins.cpp:356 koeditorgeneralevent.cpp:432
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
@@ -1637,40 +1637,39 @@ msgstr ""
 " निर्दिष्ट गर्नुभएको छ । प्रणालिले: <em>%2</em> सङ्केत गर्दछ ।<br>कृपया URL जाँच गर्नुहोस् "
 "वा तपाईको प्रणाली प्रशाषकलाई सम्पर्क गर्नुहोस् ।</qt>"
 
-#: koeditorgeneral.cpp:101
-msgid "Owner:"
-msgstr "मालिक:"
-
-#: koeditorgeneral.cpp:105
+#: koeditorgeneral.cpp:99
 msgid "Sets the Title of this event or to-do."
 msgstr "यस घटना वा गर्नुपर्ने कार्यको शीर्षक सेट गर्छ ।"
 
-#: koeditorgeneral.cpp:106 koeditorgeneraljournal.cpp:70
+#: koeditorgeneral.cpp:100
+#, fuzzy
+#| msgid "T&itle:"
+msgctxt "event or to-do title"
 msgid "T&itle:"
 msgstr "शीर्षक:"
 
-#: koeditorgeneral.cpp:120
+#: koeditorgeneral.cpp:114
 msgid "Sets where the event or to-do will take place."
 msgstr "घटना गर्नुपर्ने कार्य राखिने स्थान सेट गर्छ ।"
 
-#: koeditorgeneral.cpp:121
+#: koeditorgeneral.cpp:115
 msgid "&Location:"
 msgstr "स्थान:"
 
-#: koeditorgeneral.cpp:137
+#: koeditorgeneral.cpp:131
 msgid ""
 "Allows you to select the categories that this event or to-do belongs to."
 msgstr "तपाईँलाई यो घटना वा गर्नुपर्ने कार्यको स्वामित्वमा कोटि चयन गर्न अनुमति दिन्छ ।"
 
-#: koeditorgeneral.cpp:141 koeditorgeneraljournal.cpp:135
+#: koeditorgeneral.cpp:134 koeditorgeneraljournal.cpp:131
 msgid "Select Cate&gories..."
 msgstr "कोटि चयन गर्नुहोस्..."
 
-#: koeditorgeneral.cpp:158
+#: koeditorgeneral.cpp:151
 msgid "Acc&ess:"
 msgstr "पहुँच:"
 
-#: koeditorgeneral.cpp:159
+#: koeditorgeneral.cpp:152
 msgid ""
 "Sets whether the access to this event or to-do is restricted. Please note "
 "that KOrganizer currently does not use this setting, so the implementation "
@@ -1682,13 +1681,69 @@ msgstr ""
 "हुनेछ । यसको अर्थ व्यक्तिगत वा गोप्य रूपमा चिन्ह लगाइएका घटना वा गर्नुपर्ने कार्य अरूले देख्न "
 "सक्ने हुन्छन् ।"
 
-#: koeditorgeneral.cpp:216
+#: koeditorgeneral.cpp:175
+msgid "Bold text"
+msgstr ""
+
+#: koeditorgeneral.cpp:181
+msgid "Italicize text"
+msgstr ""
+
+#: koeditorgeneral.cpp:187
+#, fuzzy
+#| msgid "Reminder &text:"
+msgid "Underline text"
+msgstr "स्मरणकर्ता पाठ:"
+
+#: koeditorgeneral.cpp:193
+msgid "Strike-through text"
+msgstr ""
+
+#: koeditorgeneral.cpp:199
+msgid "Left-justify text"
+msgstr ""
+
+#: koeditorgeneral.cpp:205
+#, fuzzy
+#| msgid "Event text"
+msgid "Center text"
+msgstr "घटना पाठ"
+
+#: koeditorgeneral.cpp:211
+msgid "Right-justify text"
+msgstr ""
+
+#: koeditorgeneral.cpp:219
+msgctxt "no icon, so use the html tag"
+msgid "<placeholder>ul</placeholder>"
+msgstr ""
+
+#: koeditorgeneral.cpp:220
+msgid "Unordered-list item"
+msgstr ""
+
+#: koeditorgeneral.cpp:228
+msgctxt "no icon, so use the html tag"
+msgid "<placeholder>ol</placeholder>"
+msgstr ""
+
+#: koeditorgeneral.cpp:229
+msgid "Ordered-list item"
+msgstr ""
+
+#: koeditorgeneral.cpp:233
 #, fuzzy
 #| msgid "Text"
 msgid "Rich Text"
 msgstr "पाठ"
 
-#: koeditorgeneral.cpp:231
+#: koeditorgeneral.cpp:234
+#, fuzzy
+#| msgid "Text"
+msgid "Toggle Rich Text"
+msgstr "पाठ"
+
+#: koeditorgeneral.cpp:250
 #, fuzzy
 #| msgid ""
 #| "Sets the description for this event or to-do. This will be displayed in a "
@@ -1702,42 +1757,41 @@ msgstr ""
 "यो घटना वा गर्नुपर्ने कार्यका लागि वर्णन सेट गर्छ । यदि एउटामा सेट गरिएको भएमा यो "
 "स्मरणकर्तामा प्रदर्शित हुन्छ, साथै घटनामा अडिरहदा उपकरणटिपमा प्रदर्शित हुन्छ ।"
 
-#: koeditorgeneral.cpp:265
+#: koeditorgeneral.cpp:282
 msgid "&Reminder:"
 msgstr "स्मरणकर्ता:"
 
-#: koeditorgeneral.cpp:267
+#: koeditorgeneral.cpp:283
 msgid "Activates a reminder for this event or to-do."
 msgstr "यो घटना वा गर्नुपर्ने कार्यका लागि स्मरणकर्ता सक्रिय पार्छ ।"
 
-#: koeditorgeneral.cpp:270
+#: koeditorgeneral.cpp:287
 msgid "Sets how long before the event occurs the reminder will be triggered."
 msgstr "घटना उत्पन्न भएको कति अगाडि स्मरणकर्ता ट्रिगर हुने सेट गर्छ ।"
 
-#: koeditorgeneral.cpp:281 korgac/alarmdialog.cpp:92
+#: koeditorgeneral.cpp:297 korgac/alarmdialog.cpp:92
 msgid "minute(s)"
 msgstr "मिनेट"
 
-#: koeditorgeneral.cpp:282 korgac/alarmdialog.cpp:93
+#: koeditorgeneral.cpp:298 korgac/alarmdialog.cpp:93
 msgid "hour(s)"
 msgstr "घण्टा"
 
-#: koeditorgeneral.cpp:292
+#: koeditorgeneral.cpp:308
+#, fuzzy
+#| msgid "Advanced"
+msgctxt "advanced alarm settings"
 msgid "Advanced"
 msgstr "उन्नत"
 
-#: koeditorgeneral.cpp:345
-msgid "Owner: "
-msgstr "मालिक: "
-
-#: koeditorgeneral.cpp:377
+#: koeditorgeneral.cpp:389
 #, kde-format
 msgid "1 reminder configured"
 msgid_plural "%1 reminders configured"
 msgstr[0] "1 स्मरणकर्ता कन्फिगर गरियो"
 msgstr[1] "%1 स्मरणकर्ता कन्फिगर गरियो"
 
-#: koeditorgeneral.cpp:404
+#: koeditorgeneral.cpp:416
 msgid "1 advanced reminder configured"
 msgstr "१ उन्नत स्मरणकर्ता कन्फिगर गरियो"
 
@@ -1766,69 +1820,78 @@ msgstr "कुनै पनि कोटि"
 msgid "%1 hours ("
 msgstr "1 घण्टा "
 
-#: koeditorgeneraltodo.cpp:102 koeditorgeneralevent.cpp:102
+#: koeditorgeneraltodo.cpp:99 koeditorgeneralevent.cpp:101
 msgid "Date && Time"
 msgstr "मिति र समय"
 
-#: koeditorgeneraltodo.cpp:104
+#: koeditorgeneraltodo.cpp:101
 msgid "Sets options for due and start dates and times for this to-do."
 msgstr "यो गर्नुपर्ने कार्यको समाप्त र सुरु मितिका लागि विकल्प सेट गर्छ ।"
 
-#: koeditorgeneraltodo.cpp:114 koeditorgeneralevent.cpp:125
+#: koeditorgeneraltodo.cpp:108 koeditorgeneralevent.cpp:120
 msgid "Select the timezone for this event. It will also affect recurrences"
 msgstr ""
 
-#: koeditorgeneraltodo.cpp:123
+#: koeditorgeneraltodo.cpp:116
 msgid "Sets the start date for this to-do"
 msgstr "यो गर्नुपर्ने कार्यका लागि सुरु मिति सेट गर्छ"
 
-#: koeditorgeneraltodo.cpp:124
+#: koeditorgeneraltodo.cpp:117
 msgid "Sta&rt:"
 msgstr "सुरु:"
 
-#: koeditorgeneraltodo.cpp:137
+#: koeditorgeneraltodo.cpp:129
 msgid "Sets the start time for this to-do."
 msgstr "यो गर्नुपर्ने कार्यका लागि सुरु समय सेट गर्छ ।"
 
-#: koeditorgeneraltodo.cpp:141
+#: koeditorgeneraltodo.cpp:133
 msgid "Sets the due date for this to-do."
 msgstr "यो गर्नुपर्ने कार्यका लागि म्याद समाप्त हुने मिति सेट गर्छ ।"
 
-#: koeditorgeneraltodo.cpp:142
+#: koeditorgeneraltodo.cpp:134
+#, fuzzy
+#| msgid "&Due:"
+msgctxt "to-do due datetime"
 msgid "&Due:"
 msgstr "म्याद समाप्त:"
 
-#: koeditorgeneraltodo.cpp:157
+#: koeditorgeneraltodo.cpp:148
 msgid "Sets the due time for this to-do."
 msgstr "यस गर्नुपर्ने कार्यका लागि म्याद समाप्त हुने समय सेट गर्छ ।"
 
-#: koeditorgeneraltodo.cpp:161
+#: koeditorgeneraltodo.cpp:152
 msgid "Ti&me associated"
 msgstr "सम्बन्धित समय"
 
-#: koeditorgeneraltodo.cpp:163
+#: koeditorgeneraltodo.cpp:154
+#, fuzzy
+#| msgid ""
+#| "Sets whether or not this to-do's start and due dates have times "
+#| "associated with them."
 msgid ""
-"Sets whether or not this to-do's start and due dates have times associated "
-"with them."
+"Set if this to-do's start and due dates have times associated with them."
 msgstr ""
 "यी गर्नुपर्ने कार्यका सुरु र समाप्त मिति तिनीहरूको समयसँग सम्बन्धित भएको वा नभएको सेट गर्छ "
 "।"
 
-#: koeditorgeneraltodo.cpp:182
+#: koeditorgeneraltodo.cpp:171
 msgid "Sets the current completion status of this to-do as a percentage."
 msgstr "यो गर्नुपर्ने कार्यको हालको समाप्ति स्थिति प्रतिशतका रूपमा सेट गर्छ ।"
 
-#: koeditorgeneraltodo.cpp:188
+#: koeditorgeneraltodo.cpp:176
 #, no-c-format, kde-format
 msgctxt "Percent complete"
 msgid "%1 %"
 msgstr "%1 %"
 
-#: koeditorgeneraltodo.cpp:194 koeditorgeneraltodo.cpp:583
+#: koeditorgeneraltodo.cpp:182
+#, fuzzy
+#| msgid "co&mpleted"
+msgctxt "percent completed"
 msgid "co&mpleted"
 msgstr "समाप्त"
 
-#: koeditorgeneraltodo.cpp:205
+#: koeditorgeneraltodo.cpp:193
 msgid ""
 "Sets the priority of this to-do on a scale from one to nine, with one being "
 "the highest priority, five being a medium priority, and nine being the "
@@ -1839,82 +1902,106 @@ msgstr ""
 "पाँचलाई मध्यम प्राथमिकता दियर, र नौलाई सबैभन्दा कम प्राथमिकता दिएर सेट गर्छ । "
 "कार्यक्रममा विभिन्न स्केल हुन्छन्, नम्बर उचित स्केलमा मिलाउन समायोजन गरिन्छ ।"
 
-#: koeditorgeneraltodo.cpp:211
+#: koeditorgeneraltodo.cpp:199
 msgid "&Priority:"
 msgstr "प्राथमिकता:"
 
-#: koeditorgeneraltodo.cpp:215
+#: koeditorgeneraltodo.cpp:203
+#, fuzzy
+#| msgid "unspecified"
+msgctxt "unspecified priority"
 msgid "unspecified"
 msgstr "निर्दिष्ट नगरिएको"
 
-#: koeditorgeneraltodo.cpp:216 kotodoview.cpp:470
+#: koeditorgeneraltodo.cpp:204
+#, fuzzy
+#| msgid "1 (highest)"
+msgctxt "highest priority"
 msgid "1 (highest)"
 msgstr "१ (उच्च)"
 
-#: koeditorgeneraltodo.cpp:217 kotodoview.cpp:471
+#: koeditorgeneraltodo.cpp:205 kotodoview.cpp:471
 msgid "2"
 msgstr "२"
 
-#: koeditorgeneraltodo.cpp:218 kotodoview.cpp:472
+#: koeditorgeneraltodo.cpp:206 kotodoview.cpp:472
 msgid "3"
 msgstr "३"
 
-#: koeditorgeneraltodo.cpp:219 kotodoview.cpp:473
+#: koeditorgeneraltodo.cpp:207 kotodoview.cpp:473
 msgid "4"
 msgstr "४"
 
-#: koeditorgeneraltodo.cpp:220 kotodoview.cpp:474
+#: koeditorgeneraltodo.cpp:208
+#, fuzzy
+#| msgid "5 (medium)"
+msgctxt "medium priority"
 msgid "5 (medium)"
 msgstr "५(मध्यम)"
 
-#: koeditorgeneraltodo.cpp:221 kotodoview.cpp:475
+#: koeditorgeneraltodo.cpp:209 kotodoview.cpp:475
 msgid "6"
 msgstr "६"
 
-#: koeditorgeneraltodo.cpp:222 kotodoview.cpp:476
+#: koeditorgeneraltodo.cpp:210 kotodoview.cpp:476
 msgid "7"
 msgstr "७"
 
-#: koeditorgeneraltodo.cpp:223 kotodoview.cpp:477
+#: koeditorgeneraltodo.cpp:211 kotodoview.cpp:477
 msgid "8"
 msgstr "८"
 
-#: koeditorgeneraltodo.cpp:224 kotodoview.cpp:478
+#: koeditorgeneraltodo.cpp:212
+#, fuzzy
+#| msgid "9 (lowest)"
+msgctxt "lowest priority"
 msgid "9 (lowest)"
 msgstr "९(न्यून)"
 
-#: koeditorgeneraltodo.cpp:481
+#: koeditorgeneraltodo.cpp:464
 msgid "Please specify a valid due date."
 msgstr "कृपया वैध म्याद समाप्त मिति निर्दिष्ट गर्नुहोस् ।"
 
-#: koeditorgeneraltodo.cpp:486
+#: koeditorgeneraltodo.cpp:469
 msgid "Please specify a valid due time."
 msgstr "कृपया वैध म्याद समाप्त समय निर्दिष्ट गर्नुहोस् ।"
 
-#: koeditorgeneraltodo.cpp:494
+#: koeditorgeneraltodo.cpp:477
 msgid "Please specify a valid start date."
 msgstr "कृपया वैध सुरु मिति निर्दिष्ट गर्नुहोस् ।"
 
-#: koeditorgeneraltodo.cpp:499
+#: koeditorgeneraltodo.cpp:482
 msgid "Please specify a valid start time."
 msgstr "कृपया वैध सुरु समय निर्दिष्ट गर्नुहोस् ।"
 
-#: koeditorgeneraltodo.cpp:516
+#: koeditorgeneraltodo.cpp:498
 msgid "The start date cannot be after the due date."
 msgstr "सुरु मिति समाप्त मिति भन्दा पछाडि हुन सक्दैन ।"
 
-#: koeditorgeneraltodo.cpp:538
+#: koeditorgeneraltodo.cpp:520
 #, kde-format
 msgid "Start: %1"
 msgstr "सुरुआत: %1"
 
-#: koeditorgeneraltodo.cpp:549
-#, kde-format
+#: koeditorgeneraltodo.cpp:529
+#, fuzzy, kde-format
+#| msgid "   Due: %1"
+msgctxt "to-do due datetime"
 msgid "   Due: %1"
 msgstr "...म्याद समाप्त: %1"
 
-#: koeditorgeneraltodo.cpp:576
+#: koeditorgeneraltodo.cpp:555
+#, fuzzy
+#| msgid "co&mpleted on"
+msgctxt "to-do completed on datetime"
 msgid "co&mpleted on"
+msgstr "समाप्त"
+
+#: koeditorgeneraltodo.cpp:562
+#, fuzzy
+#| msgid "co&mpleted"
+msgctxt "to-do completed"
+msgid "co&mpleted"
 msgstr "समाप्त"
 
 #: kogroupware.cpp:162
@@ -2001,7 +2088,7 @@ msgstr "ठेगाना चयन गर्नुहोस्"
 msgid "(EmptyName)"
 msgstr "(खाली नाम)"
 
-#: kodaymatrix.cpp:240 kocorehelper.cpp:44 komonthview.cpp:1013
+#: kodaymatrix.cpp:240 kocorehelper.cpp:44 komonthview.cpp:872
 msgctxt "delimiter for joining holiday names"
 msgid ","
 msgstr ","
@@ -2119,6 +2206,18 @@ msgstr "नयाँ गर्नुपर्ने कार्य थप्न
 msgctxt "Unspecified priority"
 msgid "unspecified"
 msgstr "निर्दिष्ट नगरिएको"
+
+#: kotodoview.cpp:470
+msgid "1 (highest)"
+msgstr "१ (उच्च)"
+
+#: kotodoview.cpp:474
+msgid "5 (medium)"
+msgstr "५(मध्यम)"
+
+#: kotodoview.cpp:478
+msgid "9 (lowest)"
+msgstr "९(न्यून)"
 
 #: kotodoview.cpp:494
 msgid "&Move To"
@@ -2635,7 +2734,7 @@ msgid "Select a month"
 msgstr "महिना चयन गर्नुहोस्"
 
 #: navigatorbar.cpp:152 printing/calprintdefaultplugins.cpp:959
-#: komonthview.cpp:958
+#: komonthview.cpp:817
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
@@ -6732,7 +6831,7 @@ msgstr ""
 "यस घटना वा गर्नुपर्ने कार्यसँग सम्बन्धित भएका हालका वस्तुका (फाइल, मेल, आदि ।) सूची "
 "प्रदर्शन गर्छ ।"
 
-#: koeditorattachments.cpp:394 resourceview.cpp:505
+#: koeditorattachments.cpp:394 resourceview.cpp:523
 msgid "&Add..."
 msgstr "थप्नुहोस्..."
 
@@ -7019,7 +7118,7 @@ msgstr "थोमस ज्यान्डर"
 msgid "Fester Zigterman"
 msgstr "फेस्टर जिग्टरम्यान"
 
-#: resourceview.cpp:228
+#: resourceview.cpp:230
 #, fuzzy
 #| msgid ""
 #| "<qt><p>Select on this list the active KOrganizer resources. Check the "
@@ -7048,64 +7147,70 @@ msgstr ""
 "स्वत: पूर्वनिर्धारित स्रोत प्रयोग गर्नुहुन्छ वा तपाईँलाई प्रयोग गर्नका लागि स्रोत चयन गर्न "
 "प्रस्तुत गरिन्छ ।</p></qt>"
 
-#: resourceview.cpp:241
+#: resourceview.cpp:243
 #, fuzzy
 #| msgid "Calendar"
 msgid "Calendars"
 msgstr "क्यालेन्डर"
 
-#: resourceview.cpp:287
+#: resourceview.cpp:288
 msgid "Resource Configuration"
 msgstr "स्रोत कन्फिगरेसन"
 
-#: resourceview.cpp:288
+#: resourceview.cpp:289
 msgid "Please select type of the new resource:"
 msgstr "कृपया नयाँ स्रोतको प्रकार चयन गर्नुहोस्:"
 
-#: resourceview.cpp:298
+#: resourceview.cpp:301
 #, kde-format
 msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> प्रकारको स्रोत सिर्जना गर्न असमर्थ ।</qt>"
 
-#: resourceview.cpp:303
+#: resourceview.cpp:305
 #, kde-format
 msgid "%1 resource"
 msgstr "%1 स्रोत"
 
-#: resourceview.cpp:407
+#: resourceview.cpp:415
 #, kde-format
 msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
 msgstr "<qt>तपाईँ वास्तवमै स्रोत <b>%1</b> मेट्न चाहनुहुन्छ ?</qt>"
 
-#: resourceview.cpp:415
+#: resourceview.cpp:426
 msgid "You cannot delete your standard resource."
 msgstr "तपाईँले आफ्नो मानक स्रोत मेट्न सक्नु हुदैन ।"
 
-#: resourceview.cpp:478
+#: resourceview.cpp:496
+#, fuzzy
+#| msgid "Re&load"
+msgctxt "reload the resource"
 msgid "Re&load"
 msgstr "रिलोड गर्नुहोस्"
 
-#: resourceview.cpp:481
+#: resourceview.cpp:500
+#, fuzzy
+#| msgid "&Save"
+msgctxt "save the resource"
 msgid "&Save"
 msgstr "बचत गर्नुहोस्"
 
-#: resourceview.cpp:486
+#: resourceview.cpp:505
 msgid "Show &Info"
 msgstr "सूचना देखाउनुहोस्"
 
-#: resourceview.cpp:489
+#: resourceview.cpp:508
 msgid "Resource Colors"
 msgstr "स्रोत रङ"
 
-#: resourceview.cpp:490
+#: resourceview.cpp:509
 msgid "&Assign Color"
 msgstr "रङ मानाङ्कन गर्नुहोस्"
 
-#: resourceview.cpp:492
+#: resourceview.cpp:511
 msgid "&Disable Color"
 msgstr "रङ अक्षम पार्नुहोस्"
 
-#: resourceview.cpp:499
+#: resourceview.cpp:519
 msgid "Use as &Default Calendar"
 msgstr "पूर्वनिर्धारित क्यालेन्डरका रूपमा प्रयोग गर्नुहोस्"
 
@@ -7164,8 +7269,8 @@ msgstr "सुरु मिति छैन"
 msgid "End date: "
 msgstr "अन्त्य मिति: "
 
-#: printing/calprintdefaultplugins.cpp:152 koeditorgeneralevent.cpp:425
-#: koeditorgeneralevent.cpp:439
+#: printing/calprintdefaultplugins.cpp:152 koeditorgeneralevent.cpp:411
+#: koeditorgeneralevent.cpp:423
 msgid "Duration: "
 msgstr "अवधि: "
 
@@ -7544,81 +7649,87 @@ msgstr ""
 "प्रयोगकर्तालाई भिन्न सञ्झ्यालमा आयात गर्ने या नगर्ने, गाभ्ने या नगाभ्ने वा खोल्ने या नखोल्ने "
 "सोधिन्छ ।"
 
-#: koeditorgeneralevent.cpp:104
+#: koeditorgeneralevent.cpp:103
 msgid "Sets options related to the date and time of the event or to-do."
 msgstr "घटना वा गर्नुपर्ने कार्यको मिति र समयसँग सम्बन्धित विकल्प सेट गर्छ ।"
 
-#: koeditorgeneralevent.cpp:112
+#: koeditorgeneralevent.cpp:109
 msgid "&Start:"
 msgstr "सुरुआत:"
 
-#: koeditorgeneralevent.cpp:138
+#: koeditorgeneralevent.cpp:133
 msgid "&End:"
 msgstr "अन्त्य:"
 
-#: koeditorgeneralevent.cpp:150
+#: koeditorgeneralevent.cpp:145
 msgid "T&ime associated"
 msgstr "समय सम्बद्ध"
 
-#: koeditorgeneralevent.cpp:189
+#: koeditorgeneralevent.cpp:182
 msgid "S&how time as:"
 msgstr "यस रूपमा समय देखाउनुहोस्:"
 
-#: koeditorgeneralevent.cpp:190
+#: koeditorgeneralevent.cpp:183
 msgid "Sets how this time will appear on your Free/Busy information."
 msgstr "तपाईँको स्वतन्त्र/व्यस्त सूचनामा यो समय कति देखिन्छ सेट गर्छ ।"
 
-#: koeditorgeneralevent.cpp:198
+#: koeditorgeneralevent.cpp:190
+#, fuzzy
+#| msgid "Busy"
+msgctxt "show event as busy time"
 msgid "Busy"
 msgstr "व्यस्त"
 
-#: koeditorgeneralevent.cpp:199
+#: koeditorgeneralevent.cpp:191
+#, fuzzy
+#| msgid "Free"
+msgctxt "show event as free time"
 msgid "Free"
 msgstr "स्वतन्त्र"
 
-#: koeditorgeneralevent.cpp:426
+#: koeditorgeneralevent.cpp:412
 #, kde-format
 msgid "1 Day"
 msgid_plural "%1 Days"
 msgstr[0] "1 दिन"
 msgstr[1] "%1 दिन"
 
-#: koeditorgeneralevent.cpp:445
+#: koeditorgeneralevent.cpp:429
 msgid ", "
 msgstr ", "
 
-#: koeditorgeneralevent.cpp:456
+#: koeditorgeneralevent.cpp:442
 msgid ""
 "Shows the duration of the event or to-do with the current start and end "
 "dates and times."
 msgstr "हालको सुरु र अन्त्य मिति र समयसँग घटना र गर्नुपर्ने कार्यको अवधि देखाउछ ।"
 
-#: koeditorgeneralevent.cpp:473
+#: koeditorgeneralevent.cpp:458
 #, kde-format
 msgid "From: %1   To: %2   %3"
 msgstr "बाट: %1   लाई: %2   %3"
 
-#: koeditorgeneralevent.cpp:486
+#: koeditorgeneralevent.cpp:468
 #, kde-format
 msgid "Please specify a valid start time, for example '%1'."
 msgstr "कृपया वैध सुरुआत समय निर्दिष्ट गर्नुहोस्, उदाहरणका लागि '%1' ।"
 
-#: koeditorgeneralevent.cpp:493
+#: koeditorgeneralevent.cpp:475
 #, kde-format
 msgid "Please specify a valid end time, for example '%1'."
 msgstr "कृपया वैध अन्त्य समय निर्दिष्ट गर्नुहोस्, उदाहरणका लागि: '%1' ।"
 
-#: koeditorgeneralevent.cpp:501
+#: koeditorgeneralevent.cpp:483
 #, kde-format
 msgid "Please specify a valid start date, for example '%1'."
 msgstr "कृपया वैध सुरुआत मिति निर्दिष्ट गर्नुहोस्, उदाहरणका लागि: '%1' ।"
 
-#: koeditorgeneralevent.cpp:508
+#: koeditorgeneralevent.cpp:490
 #, kde-format
 msgid "Please specify a valid end date, for example '%1'."
 msgstr "कृपया वैध अन्तिम मिति निर्दिष्ट गर्नुहोस्, उदाहरणका लागि: '%1' ।"
 
-#: koeditorgeneralevent.cpp:524
+#: koeditorgeneralevent.cpp:506
 msgid ""
 "The event ends before it starts.\n"
 "Please correct dates and times."
@@ -7785,32 +7896,39 @@ msgstr "यो जर्नल प्रविष्टि मुद्रण �
 msgid "Opens a print dialog for this journal entry"
 msgstr "यस जर्नल प्रविष्टिका लागि मुद्रण संवाद खोल्छ"
 
-#: komonthview.cpp:378
+#: komonthview.cpp:243
 #, kde-format
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: koeditorgeneraljournal.cpp:69
+#: koeditorgeneraljournal.cpp:68
 msgid "Sets the title of this journal."
 msgstr "यस जर्नलको शीर्षक सेट गर्छ ।"
 
-#: koeditorgeneraljournal.cpp:89
+#: koeditorgeneraljournal.cpp:69
+#, fuzzy
+#| msgid "T&itle:"
+msgctxt "journal title"
+msgid "T&itle:"
+msgstr "शीर्षक:"
+
+#: koeditorgeneraljournal.cpp:87
 msgid "&Date:"
 msgstr "मिति:"
 
-#: koeditorgeneraljournal.cpp:98
+#: koeditorgeneraljournal.cpp:96
 msgid "&Time: "
 msgstr "समय: "
 
-#: koeditorgeneraljournal.cpp:131
+#: koeditorgeneraljournal.cpp:128
 #, fuzzy
 #| msgid ""
 #| "Allows you to select the categories that this event or to-do belongs to."
 msgid "Allows you to select the categories that this journal belongs to."
 msgstr "तपाईँलाई यो घटना वा गर्नुपर्ने कार्यको स्वामित्वमा कोटि चयन गर्न अनुमति दिन्छ ।"
 
-#: koeditorgeneraljournal.cpp:220
+#: koeditorgeneraljournal.cpp:216
 #, kde-format
 msgid "Please specify a valid date, for example '%1'."
 msgstr "कृपया वैध मिति निर्दिष्ट गर्नुहोस्, उदाहरणका लागि: '%1' ।"
@@ -8759,6 +8877,12 @@ msgstr "भविष्यका पुनरावृत्ति विभा�
 #: koagenda.cpp:1145
 msgid "Unable to add the future items to the calendar. No change will be done."
 msgstr "क्यालेन्डरमा भविश्यका वस्तु थप्न असमर्थ । परिवर्तन गरिने छैन ।"
+
+#~ msgid "Owner:"
+#~ msgstr "मालिक:"
+
+#~ msgid "Owner: "
+#~ msgstr "मालिक: "
 
 #~ msgid "Go to &Today"
 #~ msgstr "आजको दिनमा जानुहोस्"
