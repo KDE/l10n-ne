@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-22 05:59+0100\n"
+"POT-Creation-Date: 2007-11-23 06:02+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,8 +18,8 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: meta/PlaylistFileSupport.cpp:33 PlaylistHandler.cpp:337
-#: PlaylistHandler.cpp:449 PlaylistHandler.cpp:770
+#: meta/PlaylistFileSupport.cpp:33 PlaylistHandler.cpp:352
+#: PlaylistHandler.cpp:464 PlaylistHandler.cpp:785
 #, kde-format
 msgid "Cannot write playlist (%1)."
 msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
@@ -42,31 +42,9 @@ msgstr ""
 "<p>तपाईँ Settings->Configure Amarok अन्तर्गत सङ्कलन सेक्सनमा postgresql कन्फिगर गर्न "
 "सक्नुहुन्छ</p>"
 
-#: collection/sqlcollection/sqlcollection.cpp:56
+#: collection/sqlcollection/SqlCollection.cpp:56
 msgid "Local collection"
 msgstr "स्थानीय सङ्कलन"
-
-#: collection/sqlcollection/sqlmeta.cpp:175 metabundle.h:522
-msgid "Stream"
-msgstr "प्रवाह"
-
-#: collection/sqlcollection/sqlmeta.cpp:188 covermanager.cpp:330
-#: covermanager.cpp:991 metabundle.cpp:1043
-#, kde-format
-msgid "%1 - %2"
-msgstr "%1 - %2"
-
-#: collection/sqlcollection/sqlmeta.cpp:687
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Do not show under Various Artists"
-msgstr "विभिन्न कलाकारहरू"
-
-#: collection/sqlcollection/sqlmeta.cpp:691
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Show under Various Artists"
-msgstr "विभिन्न कलाकारहरू"
 
 #: collection/sqlcollection/ScanController.cpp:85
 msgid "Updating Collection"
@@ -102,6 +80,28 @@ msgstr "सङ्कलन अद्यावधिक गर्दै..."
 #: collection/sqlcollection/SqlCollectionLocation.cpp:47
 msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
+
+#: collection/sqlcollection/SqlMeta.cpp:175 metabundle.h:522
+msgid "Stream"
+msgstr "प्रवाह"
+
+#: collection/sqlcollection/SqlMeta.cpp:188 covermanager.cpp:330
+#: covermanager.cpp:993 metabundle.cpp:1043
+#, kde-format
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: collection/sqlcollection/SqlMeta.cpp:687
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Do not show under Various Artists"
+msgstr "विभिन्न कलाकारहरू"
+
+#: collection/sqlcollection/SqlMeta.cpp:691
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Show under Various Artists"
+msgstr "विभिन्न कलाकारहरू"
 
 #: context/engines/lastfm/LastFmEngine.cpp:50
 #: context/engines/lastfm/LastFmEngine.cpp:68
@@ -324,17 +324,17 @@ msgstr ""
 msgid "Categories:"
 msgstr ""
 
-#: context/plasma/appletbrowser.cpp:143 context/plasma/appletbrowser.cpp:239
+#: context/plasma/appletbrowser.cpp:143 context/plasma/appletbrowser.cpp:241
 #, fuzzy
 #| msgid "Add Directory"
 msgid "Add Widget"
 msgstr "डाइरेक्टरी थप्नुहोस्"
 
-#: context/plasma/appletbrowser.cpp:147 context/plasma/appletbrowser.cpp:240
+#: context/plasma/appletbrowser.cpp:147 context/plasma/appletbrowser.cpp:242
 msgid "Get New Widgets"
 msgstr ""
 
-#: context/plasma/appletbrowser.cpp:236
+#: context/plasma/appletbrowser.cpp:238
 #, fuzzy
 #| msgid "with"
 msgid "Widgets"
@@ -753,7 +753,7 @@ msgstr "सङ्कलन कन्फिगर गर्नुहोस्"
 msgid "Configure Portable Player Support"
 msgstr "पोर्टेबल प्लेयर समर्थन कन्फिगर गर्नुहोस्"
 
-#: refreshimages.cpp:80 refreshimages.cpp:134 coverfetcher.cpp:282
+#: refreshimages.cpp:80 refreshimages.cpp:134 coverfetcher.cpp:202
 msgid "There was an error communicating with Amazon."
 msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
 
@@ -1381,27 +1381,27 @@ msgstr "आवरण सहितको एल्बम"
 msgid "Albums Without Cover"
 msgstr "आवरण बिनाको एल्बम"
 
-#: covermanager.cpp:196 coverfetcher.cpp:451
+#: covermanager.cpp:196 coverfetcher.cpp:371
 msgid "International"
 msgstr "अन्तराष्ट्रिय"
 
-#: covermanager.cpp:200 coverfetcher.cpp:452
+#: covermanager.cpp:200 coverfetcher.cpp:372
 msgid "Canada"
 msgstr "क्यानडा"
 
-#: covermanager.cpp:204 coverfetcher.cpp:453
+#: covermanager.cpp:204 coverfetcher.cpp:373
 msgid "France"
 msgstr "फ्रान्स"
 
-#: covermanager.cpp:208 coverfetcher.cpp:454
+#: covermanager.cpp:208 coverfetcher.cpp:374
 msgid "Germany"
 msgstr "जर्मनी"
 
-#: covermanager.cpp:212 coverfetcher.cpp:455
+#: covermanager.cpp:212 coverfetcher.cpp:375
 msgid "Japan"
 msgstr "जापान"
 
-#: covermanager.cpp:216 coverfetcher.cpp:456
+#: covermanager.cpp:216 coverfetcher.cpp:376
 msgid "United Kingdom"
 msgstr "संयुक्त अधिराज्य"
 
@@ -1428,34 +1428,34 @@ msgstr "परित्याग गर्नुहोस्"
 msgid "Loading Thumbnails..."
 msgstr "थम्बनेलहरू लोड हुँदैछ..."
 
-#: covermanager.cpp:537 coverfetcher.cpp:47
+#: covermanager.cpp:539
 msgid "Cover Image"
 msgstr "आवरण छवि"
 
-#: covermanager.cpp:543 coverfetcher.cpp:50
+#: covermanager.cpp:545
 #, fuzzy, kde-format
 msgid "&Fetch From amazon.%1"
 msgstr "अम्याजोन %1 बाट तान्नुहोस्"
 
-#: covermanager.cpp:544
+#: covermanager.cpp:546
 #, fuzzy
 #| msgid "&Queue Selected Tracks"
 msgid "&Fetch Selected Covers"
 msgstr "चयन गरिएको ट्रयाक लाम लगाउनुहोस्"
 
-#: covermanager.cpp:549 coverfetcher.cpp:51
+#: covermanager.cpp:551
 msgid "Set &Custom Cover"
 msgid_plural "Set &Custom Cover for Selected Albums"
 msgstr[0] "चयनगरीएको एल्बमबाट अनुकूल आवरण सेट गर्नुहोस्"
 msgstr[1] "चयन गरीएको एल्बमबाट अनुकूल आवरण सेट गर्नुहोस्"
 
-#: covermanager.cpp:552 coverfetcher.cpp:57
+#: covermanager.cpp:554
 msgid "&Unset Cover"
 msgid_plural "&Unset Selected Covers"
 msgstr[0] "चयनगरीएको आवरण अनसेट गर्नुहोस्"
 msgstr[1] "चयनगरीएको आवरण अनसेट गर्नुहोस्"
 
-#: covermanager.cpp:556 Statistics.cpp:692 mediadevice/daap/daapclient.cpp:250
+#: covermanager.cpp:558 Statistics.cpp:692 mediadevice/daap/daapclient.cpp:250
 #: mediadevice/ipod/ipodmediadevice.cpp:2110
 #: mediadevice/generic/genericmediadevice.cpp:925
 #: collectionbrowser/CollectionTreeView.cpp:131 history/filebrowser.cpp:182
@@ -1465,15 +1465,15 @@ msgid_plural "&Append Selected Albums to Playlist"
 msgstr[0] "प्ले सूचीमा थप्नुहोस् चयनगरीएको एल्बम थप्नुहोस्"
 msgstr[1] "प्ले सूचीमा चयनगरीएको एल्बम थप्नुहोस्"
 
-#: covermanager.cpp:568 coverfetcher.cpp:49
+#: covermanager.cpp:570
 msgid "&Show Fullsize"
 msgstr "पूरा पर्दा देखाउनुहोस्"
 
-#: covermanager.cpp:748 coverfetcher.cpp:105
+#: covermanager.cpp:750
 msgid "Select Cover Image File"
 msgstr "आवरण छवि फाइल चयन गर्नुहोस्"
 
-#: covermanager.cpp:781
+#: covermanager.cpp:783
 #, kde-format
 msgid "Are you sure you want to remove this cover from the Collection?"
 msgid_plural ""
@@ -1481,59 +1481,59 @@ msgid_plural ""
 msgstr[0] "तपाईँ सङ्कलनबाट यो %1 आवरण मेटाउन निश्चिन्त चाहानु हुन्छ ?"
 msgstr[1] "तपाईँ सङ्कलनबाट यो %1 आवरण हटाउन मेटाउन निश्चित चाहानुहुन्छ ?"
 
-#: covermanager.cpp:839
+#: covermanager.cpp:841
 msgid "Finished."
 msgstr "समाप्त भयो ।"
 
-#: covermanager.cpp:841
+#: covermanager.cpp:843
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] " <b>%1</b> आवरण फेला परेन"
 msgstr[1] " <b>%1</b> आवरण फेला परेन"
 
-#: covermanager.cpp:853
+#: covermanager.cpp:855
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "%1 का लागि आवरण तान्दैछ..."
 
-#: covermanager.cpp:855
+#: covermanager.cpp:857
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "%1 - %2 का लागि आवरण तान्दैछ..."
 
-#: covermanager.cpp:861
+#: covermanager.cpp:863
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "<b>%1</b> आवरण तान्दैछ..."
 msgstr[1] "<b>%1</b> आवरण तान्दैछ..."
 
-#: covermanager.cpp:863
+#: covermanager.cpp:865
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "%1 तानियो"
 msgstr[1] "%1 तानियो"
 
-#: covermanager.cpp:865 mediadevice/ipod/ipodmediadevice.cpp:1555
+#: covermanager.cpp:867 mediadevice/ipod/ipodmediadevice.cpp:1555
 #: mediadevice/ipod/ipodmediadevice.cpp:1900
 #: mediadevice/ipod/ipodmediadevice.cpp:1952 osd.cpp:602
 msgid " - "
 msgstr " - "
 
-#: covermanager.cpp:866
+#: covermanager.cpp:868
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
 msgstr[0] "%1 फेला परेन"
 msgstr[1] "%1 फेला परेन"
 
-#: covermanager.cpp:869
+#: covermanager.cpp:871
 msgid "Connecting..."
 msgstr "जडान गरिँदैछ..."
 
-#: covermanager.cpp:895
+#: covermanager.cpp:897
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -1542,23 +1542,23 @@ msgid_plural "%1 results for \"%2\""
 msgstr[0] "\"%1\" को लागि १ परिणाम"
 msgstr[1] "\"%1\" को लागि १ परिणाम"
 
-#: covermanager.cpp:897
+#: covermanager.cpp:899
 #, fuzzy, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "१ एल्बम"
 msgstr[1] "१ एल्बम"
 
-#: covermanager.cpp:903
+#: covermanager.cpp:905
 msgid " by "
 msgstr "यसद्वारा "
 
-#: covermanager.cpp:908
+#: covermanager.cpp:910
 #, kde-format
 msgid " - ( <b>%1</b> without cover )"
 msgstr " - ( <b>%1</b> आवरण बिना )"
 
-#: covermanager.cpp:991 Statistics.cpp:514
+#: covermanager.cpp:993 Statistics.cpp:514
 #: mediadevice/mtp/mtpmediadevice.cpp:561
 #: mediadevice/ipod/ipodmediadevice.cpp:1524
 #: mediadevice/ipod/ipodmediadevice.cpp:1534
@@ -2192,7 +2192,7 @@ msgid ""
 msgstr ""
 "सबै प्रिसेटहरू मेटिनेछ र पूर्वानिर्धारनहरु पूर्वावस्थामा ल्याइनेछन् । तपाईँ निश्चित हुनुहुन्छ ?"
 
-#: PlaylistHandler.cpp:167
+#: PlaylistHandler.cpp:182
 #, fuzzy
 #| msgid "Loading Playlist"
 msgid "Downloading Playlist"
@@ -10416,6 +10416,10 @@ msgstr "एल्बम पुन-डाउनलोड गर्न सके�
 msgid "There seems to be a problem with the selected redownload info file."
 msgstr "त्यहाँ चयन गरिएको पुन: डाउनलोड सूचना फाइलसँग केही समस्या देखिन्छ ।"
 
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:66
+msgid "The friendly record company with the motto \"We are not evil!\""
+msgstr ""
+
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:142
 msgid "Advanced"
 msgstr "उन्नत"
@@ -10454,20 +10458,50 @@ msgstr "एल्बम डाउनलोड गर्दै"
 msgid "Adding album cover to collection"
 msgstr "सङ्कलनमा एल्बम आवरण थप्दै"
 
-#: servicebrowser/ampache/AmpacheService.cpp:66
+#: servicebrowser/shoutcast/ShoutcastService.cpp:37
+msgid "The biggest damn list of online radio stations on the net :-)"
+msgstr ""
+
+#: servicebrowser/ampache/AmpacheService.cpp:43
+msgid "Use Amarok as a seamless frontend to your Ampache server!"
+msgstr ""
+
+#: servicebrowser/ampache/AmpacheService.cpp:70
 #, fuzzy
 #| msgid "Enter a login and a password"
 msgid "Enter the server name and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
 
-#: servicebrowser/ampache/AmpacheService.cpp:101
+#: servicebrowser/ampache/AmpacheService.cpp:105
 #: servicebrowser/mp3tunes/mp3tunesservice.cpp:90
 msgid "Authenticating"
 msgstr "प्रमाणीकरण असफलता"
 
+#: servicebrowser/ampache/AmpacheService.cpp:139
+#: servicebrowser/mp3tunes/mp3tunesservice.cpp:136
+#, fuzzy
+#| msgid "Authentication Failure"
+msgid "Authentication Error!"
+msgstr "प्रमाणीकरण असफलता"
+
+#: servicebrowser/mp3tunes/mp3tunesservice.cpp:39
+msgid "The Mp3Tunes Locker service. Access your stored music!"
+msgstr ""
+
 #: servicebrowser/mp3tunes/mp3tunesservice.cpp:64
 msgid "Enter a login and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
+
+#: servicebrowser/jamendo/JamendoInfoParser.cpp:48
+#: servicebrowser/jamendo/JamendoInfoParser.cpp:78
+#, fuzzy
+#| msgid "No Device Available"
+msgid "No description available..."
+msgstr "कुनै यन्त्र उपलब्ध छैन"
+
+#: servicebrowser/jamendo/jamendoservice.cpp:40
+msgid "A site where artists can showcase their creations to the world"
+msgstr ""
 
 #: servicebrowser/jamendo/jamendoservice.cpp:120
 msgid "Downloading Jamendo.com Database"
@@ -10828,60 +10862,51 @@ msgstr "कुनै ट्रयाक प्ले भएको छैन"
 msgid "No information available for this track"
 msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
 
-#: coverfetcher.cpp:60
-msgid "Cover &Manager"
-msgstr "आवरण प्रबन्धक"
-
-#: coverfetcher.cpp:79
-msgctxt "[only-singular]"
-msgid "Are you sure you want to remove this cover from the Collection?"
-msgstr "तपाईँ सङ्कलनबाट यो आवरण हटाउन निश्चिन्त हुनहुन्छ ?"
-
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "disc"
 msgstr "डिस्क"
 
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "disk"
 msgstr "डिस्क"
 
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "remaster"
 msgstr "रिमास्टर"
 
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "cd"
 msgstr "सीडी"
 
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "single"
 msgstr "एकल"
 
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "soundtrack"
 msgstr "ध्वनि ट्रयाक"
 
-#: coverfetcher.cpp:176
+#: coverfetcher.cpp:96
 msgid "part"
 msgstr "भाग"
 
-#: coverfetcher.cpp:233 coverfetcher.cpp:435
+#: coverfetcher.cpp:153 coverfetcher.cpp:355
 msgid "No cover found"
 msgstr "आवरण फेला परेन"
 
-#: coverfetcher.cpp:292
+#: coverfetcher.cpp:212
 msgid "The XML obtained from Amazon is invalid."
 msgstr "अमाजोनबाट प्राप्त भएको एकसएमएल अवैध छ ।"
 
-#: coverfetcher.cpp:361
+#: coverfetcher.cpp:281
 msgid "The cover could not be retrieved."
 msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
 
-#: coverfetcher.cpp:372
+#: coverfetcher.cpp:292
 msgid "The cover-data produced an invalid image."
 msgstr "आवरण-डेटाले एउटा अवैध छवि उत्पन्न गर्यो ।"
 
-#: coverfetcher.cpp:428
+#: coverfetcher.cpp:348
 msgid ""
 "You have seen all the covers Amazon returned using the query below. Perhaps "
 "you can refine it:"
@@ -10889,35 +10914,35 @@ msgstr ""
 "तपाईँले तल क्वेरी प्रयोग गरेर फर्काएको सबै आवरण अमाजोन देख्नुभयो । तपाईँ यसलाई निर्मल गर्न "
 "सक्नुहुन्छ:"
 
-#: coverfetcher.cpp:447
+#: coverfetcher.cpp:367
 msgid "Amazon Query Editor"
 msgstr "अमाजोन क्वेरी सम्पादक"
 
-#: coverfetcher.cpp:465
+#: coverfetcher.cpp:385
 msgid "Amazon Locale: "
 msgstr "अमाजोन लोकेल: "
 
-#: coverfetcher.cpp:472
+#: coverfetcher.cpp:392
 msgid "&Search"
 msgstr "खोजी गर्नुहोस्"
 
-#: coverfetcher.cpp:547
+#: coverfetcher.cpp:467
 msgid "Ask Amazon for covers using this query:"
 msgstr "यो क्वेरी प्रयोग गरिरहेको आवरणका लागि अमाजोनलाई सोध्नुहोस्:"
 
-#: coverfetcher.cpp:564 coverfetcher.cpp:641
+#: coverfetcher.cpp:484 coverfetcher.cpp:561
 msgid "Aborted."
 msgstr "परित्याग गरियो।"
 
-#: coverfetcher.cpp:587
+#: coverfetcher.cpp:507
 msgid "Ne&w Search..."
 msgstr "नयाँ खोजी..."
 
-#: coverfetcher.cpp:589
+#: coverfetcher.cpp:509
 msgid "&Next Cover"
 msgstr "पछिल्लो आवरण"
 
-#: coverfetcher.cpp:600
+#: coverfetcher.cpp:520
 msgid "Cover Found"
 msgstr "आवरण फेला पर्यो"
 
@@ -11247,6 +11272,13 @@ msgstr ""
 #: konquisidebar/universalamarok.cpp:317
 msgid "Build Collection..."
 msgstr "सङ्कलन निर्माण गर्नुहोस्..."
+
+#~ msgid "Cover &Manager"
+#~ msgstr "आवरण प्रबन्धक"
+
+#~ msgctxt "[only-singular]"
+#~ msgid "Are you sure you want to remove this cover from the Collection?"
+#~ msgstr "तपाईँ सङ्कलनबाट यो आवरण हटाउन निश्चिन्त हुनहुन्छ ?"
 
 #~ msgid "&Overwrite"
 #~ msgstr "अधिलेखन गर्नुहोस्"
