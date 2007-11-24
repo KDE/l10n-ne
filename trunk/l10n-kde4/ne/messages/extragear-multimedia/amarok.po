@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-23 06:02+0100\n"
+"POT-Creation-Date: 2007-11-24 05:59+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -42,7 +42,7 @@ msgstr ""
 "<p>तपाईँ Settings->Configure Amarok अन्तर्गत सङ्कलन सेक्सनमा postgresql कन्फिगर गर्न "
 "सक्नुहुन्छ</p>"
 
-#: collection/sqlcollection/SqlCollection.cpp:56
+#: collection/sqlcollection/SqlCollection.cpp:57
 msgid "Local collection"
 msgstr "स्थानीय सङ्कलन"
 
@@ -1193,7 +1193,7 @@ msgstr "अमारोकले हालै MP3 फाइलहरू प्�
 msgid "No MP3 Support"
 msgstr "MP3 समर्थन छैन"
 
-#: scriptmanager.cpp:150 MainWindow.cpp:859
+#: scriptmanager.cpp:150 MainWindow.cpp:873
 msgid "Script Manager"
 msgstr "स्क्रिप्ट प्रबन्धक"
 
@@ -1346,7 +1346,7 @@ msgstr ""
 "यदि चयन गरियो भने, सामग्रीहरू परिमार्जन हुँदा फोल्डरहरुले स्वचालित रूपमा पुन: स्क्यान "
 "गरिनेछ, उदाहरणको लागि, नयाँ फाइल थपिदा ।"
 
-#: covermanager.cpp:101 MainWindow.cpp:823
+#: covermanager.cpp:101 MainWindow.cpp:837
 msgid "Cover Manager"
 msgstr "आवरण प्रबन्धक"
 
@@ -1457,9 +1457,8 @@ msgstr[1] "चयनगरीएको आवरण अनसेट गर्न
 
 #: covermanager.cpp:558 Statistics.cpp:692 mediadevice/daap/daapclient.cpp:250
 #: mediadevice/ipod/ipodmediadevice.cpp:2110
-#: mediadevice/generic/genericmediadevice.cpp:925
+#: mediadevice/generic/genericmediadevice.cpp:925 systray.cpp:100
 #: collectionbrowser/CollectionTreeView.cpp:131 history/filebrowser.cpp:182
-#: app.cpp:776
 msgid "&Append to Playlist"
 msgid_plural "&Append Selected Albums to Playlist"
 msgstr[0] "प्ले सूचीमा थप्नुहोस् चयनगरीएको एल्बम थप्नुहोस्"
@@ -1640,15 +1639,15 @@ msgstr "पोडकास्ट"
 msgid "Amarok Menu"
 msgstr "अमारोक मेनु"
 
-#: actionclasses.cpp:192 app.cpp:441
+#: actionclasses.cpp:192 app.cpp:437
 msgid "Play/Pause"
 msgstr "प्ले गर्नुहोस्/पज गर्नुहोस्"
 
-#: actionclasses.cpp:207 actionclasses.cpp:212 MainWindow.cpp:943 app.cpp:438
+#: actionclasses.cpp:207 actionclasses.cpp:212 MainWindow.cpp:957 app.cpp:434
 msgid "Pause"
 msgstr "पज गर्नुहोस्"
 
-#: actionclasses.cpp:217 MainWindow.cpp:937 app.cpp:433
+#: actionclasses.cpp:217 MainWindow.cpp:951 app.cpp:429
 msgid "Play"
 msgstr "प्ले गर्नुहोस्"
 
@@ -1704,7 +1703,7 @@ msgstr "ट्रयाक"
 msgid "&Album"
 msgstr "एल्बम"
 
-#: actionclasses.cpp:352 MainWindow.cpp:991
+#: actionclasses.cpp:352 MainWindow.cpp:1005
 msgid "&Playlist"
 msgstr "प्ले सूची"
 
@@ -1720,7 +1719,7 @@ msgstr "हालको प्ले सूची"
 msgid "Selected Tracks"
 msgstr "चयन गरिएको ट्रयाक"
 
-#: actionclasses.cpp:428 actionclasses.cpp:467 app.cpp:445
+#: actionclasses.cpp:428 actionclasses.cpp:467 app.cpp:441
 msgid "Stop"
 msgstr "रोक्नुहोस्"
 
@@ -1773,7 +1772,7 @@ msgstr "फ्रेमवर्क संस्करण"
 msgid "Plugin Information"
 msgstr "प्लगइन सूचना"
 
-#: queuemanager/QueueManager.cpp:51 MainWindow.cpp:863
+#: queuemanager/QueueManager.cpp:51 MainWindow.cpp:877
 msgid "Queue Manager"
 msgstr "लाम प्रबन्धक"
 
@@ -1962,7 +1961,7 @@ msgstr ""
 "पर्दछ!  सङ्कलन सिर्जना गर्नुहोस् त्यसपछि तपाईँको प्ले व्यवहारमा डेटा सङ्ग्रह गर्न ट्रयाकहरू "
 "प्ले गर्न सुरु गर्नुहोस्!</div>"
 
-#: Statistics.cpp:693 history/filebrowser.cpp:184 app.cpp:781
+#: Statistics.cpp:693 systray.cpp:103 history/filebrowser.cpp:184
 msgid "&Queue Track"
 msgstr "लाम ट्रयाक"
 
@@ -2595,7 +2594,7 @@ msgstr "सारांश"
 msgid "Tags"
 msgstr "ट्याग"
 
-#: tagdialog.cpp:430 MainWindow.cpp:877
+#: tagdialog.cpp:430 MainWindow.cpp:891
 msgid "Statistics"
 msgstr "तथ्याङ्क"
 
@@ -3512,134 +3511,148 @@ msgstr "फाइल"
 msgid "Internet"
 msgstr "इन्टरनेट"
 
-#: MainWindow.cpp:520
+#: MainWindow.cpp:479
+msgid ""
+"<qt>Closing the main-window will keep Amarok running in the System Tray. Use "
+"<B>Quit</B> from the menu, or the Amarok tray-icon to exit the application.</"
+"qt>"
+msgstr ""
+"<qt>मुख्य सञ्झ्याल बन्द गर्नाले अमारोकलाई प्रणाली ट्रेमा चलिरहेको राख्नेछ । मुख्य मेनुबाट "
+"<B>अन्त्य गर्नुहोस्</B> प्रयोग गर्नुहोस्, वा अनुप्रयोग अन्त्य गर्न अमारोक ट्रे प्रतिमा प्रयोग "
+"गर्नुहोस् ।</qt>"
+
+#: MainWindow.cpp:481
+msgid "Docking in System Tray"
+msgstr "प्रणाली ट्रेमा डक गर्दै"
+
+#: MainWindow.cpp:534
 msgid "Play Media (Files or URLs)"
 msgstr "प्ले मिडिया (फाइल वा यूआरएल)"
 
-#: MainWindow.cpp:520
+#: MainWindow.cpp:534
 msgid "Add Media (Files or URLs)"
 msgstr "मिडिया (फाइलहरू वा यूआरएलहरू) थप्नुहोस्"
 
-#: MainWindow.cpp:540
+#: MainWindow.cpp:554
 msgid "Add Stream"
 msgstr "प्रवाह थप्नुहोस्"
 
-#: MainWindow.cpp:540
+#: MainWindow.cpp:554
 msgid "URL"
 msgstr "यूआरएल"
 
-#: MainWindow.cpp:713 MainWindow.cpp:836
+#: MainWindow.cpp:727 MainWindow.cpp:850
 msgid "Hide Toolbar"
 msgstr "उपकरणपट्टी लुकाउनुहोस्"
 
-#: MainWindow.cpp:713
+#: MainWindow.cpp:727
 msgid "Show Toolbar"
 msgstr "उपकरणपट्टी देखाउनुहोस्"
 
-#: MainWindow.cpp:802
+#: MainWindow.cpp:816
 msgid "&Add Media..."
 msgstr "मिडिया थप्नुहोस्..."
 
-#: MainWindow.cpp:806
+#: MainWindow.cpp:820
 msgctxt "clear playlist"
 msgid "&Clear"
 msgstr "खाली गर्नुहोस्"
 
-#: MainWindow.cpp:810
+#: MainWindow.cpp:824
 msgid "&Add Stream..."
 msgstr "प्रवाह थप्नुहोस्..."
 
-#: MainWindow.cpp:814
+#: MainWindow.cpp:828
 msgid "&Save Playlist As..."
 msgstr "यस रूपमा प्ले सूची बचत गर्नुहोस्..."
 
-#: MainWindow.cpp:818
+#: MainWindow.cpp:832
 msgid "Burn Current Playlist"
 msgstr "हालको प्ले सूची बर्न गर्नुहोस्"
 
-#: MainWindow.cpp:827 widgets/analyzerwidget.cpp:64
+#: MainWindow.cpp:841 widgets/analyzerwidget.cpp:64
 msgid "&Visualizations"
 msgstr "दृष्टिकरण"
 
-#: MainWindow.cpp:831
+#: MainWindow.cpp:845
 msgid "E&qualizer"
 msgstr "तुल्यकारक"
 
-#: MainWindow.cpp:851
+#: MainWindow.cpp:865
 msgid "Play Media..."
 msgstr "मिडिया प्ले गर्नुहोस्..."
 
-#: MainWindow.cpp:855
+#: MainWindow.cpp:869
 msgid "Play Audio CD"
 msgstr "अडियो सीडी प्ले गर्नुहोस्"
 
-#: MainWindow.cpp:867
+#: MainWindow.cpp:881
 msgid "&Seek Forward"
 msgstr "अगाडी खोजी गर्नुहोस्"
 
-#: MainWindow.cpp:872
+#: MainWindow.cpp:886
 msgid "&Seek Backward"
 msgstr "पछाडि खोजी गर्नुहोस्"
 
-#: MainWindow.cpp:881
+#: MainWindow.cpp:895
 msgid "Update Collection"
 msgstr "सङ्कलन अद्यावधिक गर्नुहोस्"
 
-#: MainWindow.cpp:885
+#: MainWindow.cpp:899
 #, fuzzy
 #| msgid "&Rescan Collection"
 msgid "Rescan Collection"
 msgstr "सङ्कलन पुन: स्क्यान गर्नुहोस्"
 
-#: MainWindow.cpp:896 MainWindow.cpp:905
+#: MainWindow.cpp:910 MainWindow.cpp:919
 msgid "Global Tag Radio"
 msgstr "विश्वव्यापी ट्याग रेडियो"
 
-#: MainWindow.cpp:913
+#: MainWindow.cpp:927
 msgid "Play las&t.fm Stream"
 msgstr "अन्तिम.fm प्रवाह प्ले गर्नुहोस्"
 
-#: MainWindow.cpp:915 MainWindow.cpp:923
+#: MainWindow.cpp:929 MainWindow.cpp:937
 msgid "Personal Radio"
 msgstr "व्यक्तिगत रेडियो"
 
-#: MainWindow.cpp:916 MainWindow.cpp:924
+#: MainWindow.cpp:930 MainWindow.cpp:938
 msgid "Neighbor Radio"
 msgstr "छिमेकी रेडियो"
 
-#: MainWindow.cpp:917 MainWindow.cpp:925
+#: MainWindow.cpp:931 MainWindow.cpp:939
 msgid "Custom Station"
 msgstr "स्टेसन अनुकूल गर्नुहोस्"
 
-#: MainWindow.cpp:921
+#: MainWindow.cpp:935
 msgid "Add las&t.fm Stream"
 msgstr "अन्तिम.fm प्रवाह थप्नुहोस्"
 
-#: MainWindow.cpp:931 app.cpp:459
+#: MainWindow.cpp:945 app.cpp:455
 msgid "Previous Track"
 msgstr "अघिल्लो ट्रयाक"
 
-#: MainWindow.cpp:949 app.cpp:455
+#: MainWindow.cpp:963 app.cpp:451
 msgid "Next Track"
 msgstr "पछिल्लो ट्रयाक"
 
-#: MainWindow.cpp:953
+#: MainWindow.cpp:967
 msgid "Toggle Focus"
 msgstr "फोकस टगल गर्नुहोस्"
 
-#: MainWindow.cpp:976
+#: MainWindow.cpp:990
 msgid "&Amarok"
 msgstr "अमारोक"
 
-#: MainWindow.cpp:1014
+#: MainWindow.cpp:1028
 msgid "&Mode"
 msgstr "मोड"
 
-#: MainWindow.cpp:1026
+#: MainWindow.cpp:1040
 msgid "&Tools"
 msgstr "उपकरण"
 
-#: MainWindow.cpp:1047
+#: MainWindow.cpp:1061
 msgid "&Settings"
 msgstr "सेटिङ"
 
@@ -3966,7 +3979,7 @@ msgstr "चेतावनी"
 msgid "Buffering"
 msgstr "बफरिङ"
 
-#: engine/helix/helix-errors.cpp:67 app.cpp:883
+#: engine/helix/helix-errors.cpp:67 app.cpp:765
 msgid "Paused"
 msgstr "पज गरियो"
 
@@ -5521,6 +5534,18 @@ msgstr "अडियो मोड"
 #: k3bexporter.cpp:245
 msgid "Data Mode"
 msgstr "डेटा मोड"
+
+#: systray.cpp:101
+msgid "Append && &Play"
+msgstr "थप्नुहोस् र प्ले गर्नुहोस्"
+
+#. i18n: tag string
+#. i18n: file ./tagdialogbase.ui line 93
+#. i18n: tag string
+#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 43
+#: systray.cpp:106 rc.cpp:1148 rc.cpp:1241
+msgid "&Cancel"
+msgstr "रद्द गर्नुहोस्"
 
 #: metabundle.cpp:121 playlist/PlaylistModel.cpp:330
 msgid "Album Artist"
@@ -7848,14 +7873,6 @@ msgid "Sa&ve && Close"
 msgstr "बचत गर्नुहोस् र बन्द गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./tagdialogbase.ui line 93
-#. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 43
-#: rc.cpp:1148 rc.cpp:1241 app.cpp:784
-msgid "&Cancel"
-msgstr "रद्द गर्नुहोस्"
-
-#. i18n: tag string
 #. i18n: file ./tagdialogbase.ui line 120
 #: rc.cpp:1151
 msgid "Location:"
@@ -10177,15 +10194,15 @@ msgstr "पछिल्लो आवरण"
 msgid "Unset Cover"
 msgstr "चयनगरीएको आवरण अनसेट गर्नुहोस्"
 
-#: app.cpp:94 konquisidebar/universalamarok.cpp:173
+#: app.cpp:90 konquisidebar/universalamarok.cpp:173
 msgid "Amarok"
 msgstr "अमारोक"
 
-#: app.cpp:95
+#: app.cpp:91
 msgid "The audio player for KDE"
 msgstr "केडीईका लागि अडियो प्लेयर"
 
-#: app.cpp:96
+#: app.cpp:92
 msgid ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2007, The Amarok Development Squad"
@@ -10193,7 +10210,7 @@ msgstr ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2007, अमारोक विकास स्क्वाड"
 
-#: app.cpp:97
+#: app.cpp:93
 msgid ""
 "IRC:\n"
 "irc.freenode.net - #amarok, #amarok.de, #amarok.es\n"
@@ -10210,161 +10227,143 @@ msgstr ""
 "amarok@kde.org \n"
 "(निर्माण मिती: "
 
-#: app.cpp:396
+#: app.cpp:392
 msgid "Files/URLs to open"
 msgstr "फाइल/यूआरएल खोल्नका लागि "
 
-#: app.cpp:398
+#: app.cpp:394
 msgid "Skip backwards in playlist"
 msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
 
-#: app.cpp:400
+#: app.cpp:396
 msgid "Start playing current playlist"
 msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
 
-#: app.cpp:402
+#: app.cpp:398
 msgid "Play if stopped, pause if playing"
 msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
 
-#: app.cpp:403
+#: app.cpp:399
 msgid "Pause playback"
 msgstr "प्लेब्याक पज गर्नुहोस्"
 
-#: app.cpp:405
+#: app.cpp:401
 msgid "Stop playback"
 msgstr "प्लेब्याक रोक्नुहोस्"
 
-#: app.cpp:407
+#: app.cpp:403
 msgid "Skip forwards in playlist"
 msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
 
-#: app.cpp:408
+#: app.cpp:404
 msgid "Additional options:"
 msgstr "अतिरिक्त विकल्प:"
 
-#: app.cpp:410
+#: app.cpp:406
 msgid "Append files/URLs to playlist"
 msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
 
-#: app.cpp:412
+#: app.cpp:408
 msgid "See append, available for backwards compatability"
 msgstr "पछिल्तिरको मिल्दोपनाका लागि उपलब्ध, थपाई हेर्नुहोस्"
 
-#: app.cpp:413
+#: app.cpp:409
 msgid "Queue URLs after the currently playing track"
 msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
 
-#: app.cpp:415
+#: app.cpp:411
 msgid "Load URLs, replacing current playlist"
 msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
 
-#: app.cpp:417
+#: app.cpp:413
 #, fuzzy
 #| msgid "Click to get the plugin information."
 msgid "Print verbose debugging information"
 msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
 
-#: app.cpp:419
+#: app.cpp:415
 msgid "Toggle the Playlist-window"
 msgstr "प्लेसूची-सञ्झ्याल टगल गर्नुहोस्"
 
-#: app.cpp:420
+#: app.cpp:416
 msgid "Run first-run wizard"
 msgstr "पहिले चलाएको विजार्ड चलाउनुहोस्"
 
-#: app.cpp:421
+#: app.cpp:417
 msgid "Use the <name> engine"
 msgstr "<name> इन्जिन प्रयोग गर्नुहोस्"
 
-#: app.cpp:422
+#: app.cpp:418
 msgid "Base for relative filenames/URLs"
 msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
 
-#: app.cpp:423
+#: app.cpp:419
 msgid "Play an AudioCD from <device> or system:/media/<device>"
 msgstr "<device> बाट एउटा अडियो सीडी प्ले गर्नुहोस्"
 
-#: app.cpp:463
+#: app.cpp:459
 msgid "Increase Volume"
 msgstr "भोल्युम बढाउनुहोस्"
 
-#: app.cpp:467
+#: app.cpp:463
 msgid "Decrease Volume"
 msgstr "भोल्युम घटाउनुहोस्"
 
-#: app.cpp:472
+#: app.cpp:468
 msgid "Seek Forward"
 msgstr "अघिल्तिर खोजी गर्नुहोस्"
 
-#: app.cpp:477
+#: app.cpp:473
 msgid "Seek Backward"
 msgstr "पछिल्तिर खोजी गर्नुहोस्"
 
-#: app.cpp:481
+#: app.cpp:477
 msgid "Add Media..."
 msgstr "मिडिया थप्नुहोस्..."
 
-#: app.cpp:485
+#: app.cpp:481
 msgid "Toggle Playlist Window"
 msgstr "प्लेसूची सञ्झ्याल टगल गर्नुहोस्"
 
-#: app.cpp:490
+#: app.cpp:486
 msgid "Show OSD"
 msgstr "ओएसडी देखाउनुहोस्"
 
-#: app.cpp:494
+#: app.cpp:490
 msgid "Mute Volume"
 msgstr "भोल्युम मौन गर्नुहोस्"
 
-#: app.cpp:498
+#: app.cpp:494
 msgid "Rate Current Track: 1"
 msgstr "हालको ट्रयाक: १ अनुमान गर्नुहोस्"
 
-#: app.cpp:502
+#: app.cpp:498
 msgid "Rate Current Track: 2"
 msgstr "हालको ट्रयाक २ अनुमान गर्नुहोस्"
 
-#: app.cpp:506
+#: app.cpp:502
 msgid "Rate Current Track: 3"
 msgstr "हालको ट्रयाक: ३ अनुमान गर्नुहोस्"
 
-#: app.cpp:510
+#: app.cpp:506
 msgid "Rate Current Track: 4"
 msgstr "हालको ट्रयाक: ४ अनुमान गर्नुहोस्"
 
-#: app.cpp:513
+#: app.cpp:509
 msgid "Rate Current Track: 5"
 msgstr "हालको ट्रयाक: ५ अनुमान गर्नुहोस्"
 
-#: app.cpp:778
-msgid "Append && &Play"
-msgstr "थप्नुहोस् र प्ले गर्नुहोस्"
-
-#: app.cpp:846
-msgid ""
-"<qt>Closing the main-window will keep Amarok running in the System Tray. Use "
-"<B>Quit</B> from the menu, or the Amarok tray-icon to exit the application.</"
-"qt>"
-msgstr ""
-"<qt>मुख्य सञ्झ्याल बन्द गर्नाले अमारोकलाई प्रणाली ट्रेमा चलिरहेको राख्नेछ । मुख्य मेनुबाट "
-"<B>अन्त्य गर्नुहोस्</B> प्रयोग गर्नुहोस्, वा अनुप्रयोग अन्त्य गर्न अमारोक ट्रे प्रतिमा प्रयोग "
-"गर्नुहोस् ।</qt>"
-
-#: app.cpp:848
-msgid "Docking in System Tray"
-msgstr "प्रणाली ट्रेमा डक गर्दै"
-
-#: app.cpp:876
+#: app.cpp:758
 msgctxt "state, as in playing"
 msgid "Play"
 msgstr "प्ले गर्नुहोस्"
 
-#: app.cpp:879 app.cpp:899
+#: app.cpp:761 app.cpp:781
 #, kde-format
 msgid "Amarok - %1"
 msgstr "अमारोक - %1"
 
-#: app.cpp:992
+#: app.cpp:874
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
@@ -10483,6 +10482,12 @@ msgstr "प्रमाणीकरण असफलता"
 #| msgid "Authentication Failure"
 msgid "Authentication Error!"
 msgstr "प्रमाणीकरण असफलता"
+
+#: servicebrowser/ampache/AmpacheServiceCollection.cpp:50
+#, fuzzy, kde-format
+#| msgid "Advanced Server"
+msgid "Ampache Server %1"
+msgstr "उन्नत सर्भर"
 
 #: servicebrowser/mp3tunes/mp3tunesservice.cpp:39
 msgid "The Mp3Tunes Locker service. Access your stored music!"
@@ -10638,85 +10643,48 @@ msgstr "अनुकूल स्टेसन सिर्जना गर्न
 msgid "Enter the name of a band or artist you like:"
 msgstr "तपाईँलाइ मनपर्ने समूह वा कलाकारको नाम प्रविष्ट गर्नुहोस्:"
 
-#: statusbar/statusBarBase.cpp:112
-msgid "Show details"
-msgstr "विवरणहरू देखाउनुहोस्"
-
-#: statusbar/statusBarBase.cpp:118
-msgid "Abort all background-operations"
-msgstr "सबै पृष्ठभूमि-सञ्चालनहरू परित्याग गर्नुहोस्"
-
-#: statusbar/statusBarBase.cpp:119
-msgid "Show progress detail"
-msgstr "प्रगति विवरण देखाउनुहोस्"
-
-#: statusbar/statusBarBase.cpp:251
-msgid "..."
-msgstr "..."
-
-#: statusbar/statusBarBase.cpp:253
-msgid "Multiple background-tasks running"
-msgstr "बहुविध पृष्ठभूमि-कार्यहरू चलिरहेको छ"
-
-#: statusbar/statusBarBase.cpp:472
-msgid "Aborting all jobs..."
-msgstr "सबै कार्य परित्याग गरिँदैछ..."
-
-#: statusbar/statusbar.cpp:119
-msgid "Amarok is paused"
-msgstr "अमारोक पज गरिएको छ"
-
-#: statusbar/statusbar.cpp:143
-msgid ""
-"<p>One of Mike Oldfield's best pieces of work, Amarok, inspired the name "
-"behind the audio-player you are currently using. Thanks for choosing Amarok!"
-"</p><p align=right>Mark Kretschmann<br>Max Howell<br>Chris "
-"Muehlhaeuser<br>The many other people who have helped make Amarok what it "
-"is</p>"
-msgstr ""
-"<p>माइक पुरानो फाँटको उत्तम कामको एउटा टुक्रा, अमारोकले, हाल तपाईँले प्रयोग गरिरहनु "
-"भएको अडियो-प्लेयर पछाडि नाम पठायो । अमारोक!</p><p align=right>Mark "
-"Kretschmann<br>Max Howell<br>Chris Muehlhaeuser छनौट गरेकोमा धन्यवाद<br>र अरू "
-"धेरै मान्छेलाई पनि धन्यावाद जसले अमारोक के हो भन्ने कुरा बनाउँनका लागि सहयोग गर्यो</p>"
-
-#: statusbar/statusbar.cpp:151
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
-
-#: statusbar/statusbar.cpp:154
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: statusbar/statusbar.cpp:158
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: statusbar/statusbar.cpp:163
-msgid "Unknown track"
-msgstr "अज्ञात ट्रयाक"
-
-#: statusbar/statusbar.cpp:172
-#, kde-format
-msgid "Playing: %1"
-msgstr "प्ले गर्दै: %1"
-
-#: statusbar/statusbar.cpp:210
+#: statusbar/PlaylistStatusBar.cpp:130
 #, fuzzy, kde-format
 #| msgid "1 track (%1)"
 #| msgid_plural "%1 tracks (%1)"
 msgid "%1 Tracks (%2)"
 msgstr "१ ट्रयाक (%1)"
 
-#: statusbar/statusbar.cpp:211
+#: statusbar/PlaylistStatusBar.cpp:131
 #, kde-format
 msgid "Play-time: %1"
 msgstr "प्ले-समय: %1"
+
+#: statusbar/statusBarBase.cpp:114
+msgid "Show details"
+msgstr "विवरणहरू देखाउनुहोस्"
+
+#: statusbar/statusBarBase.cpp:120
+msgid "Abort all background-operations"
+msgstr "सबै पृष्ठभूमि-सञ्चालनहरू परित्याग गर्नुहोस्"
+
+#: statusbar/statusBarBase.cpp:121
+msgid "Show progress detail"
+msgstr "प्रगति विवरण देखाउनुहोस्"
+
+#: statusbar/statusBarBase.cpp:258
+msgid "..."
+msgstr "..."
+
+#: statusbar/statusBarBase.cpp:260
+msgid "Multiple background-tasks running"
+msgstr "बहुविध पृष्ठभूमि-कार्यहरू चलिरहेको छ"
+
+#: statusbar/statusBarBase.cpp:440
+msgid "Aborting all jobs..."
+msgstr "सबै कार्य परित्याग गरिँदैछ..."
+
+#: statusbar/StatusBarMessageLabel.cpp:56
+#, fuzzy
+#| msgid "Closed"
+msgctxt "@action:button"
+msgid "Close"
+msgstr "बन्द गरियो"
 
 #: statusbar/queueLabel.cpp:188
 #, kde-format
@@ -10774,6 +10742,50 @@ msgstr "परित्याग गरियो"
 #: statusbar/progressBar.cpp:118
 msgid "Aborting..."
 msgstr "परित्याग गर्दैछ..."
+
+#: statusbar/ContextStatusBar.cpp:71
+msgid "Amarok is paused"
+msgstr "अमारोक पज गरिएको छ"
+
+#: statusbar/ContextStatusBar.cpp:95
+msgid ""
+"<p>One of Mike Oldfield's best pieces of work, Amarok, inspired the name "
+"behind the audio-player you are currently using. Thanks for choosing Amarok!"
+"</p><p align=right>Mark Kretschmann<br>Max Howell<br>Chris "
+"Muehlhaeuser<br>The many other people who have helped make Amarok what it "
+"is</p>"
+msgstr ""
+"<p>माइक पुरानो फाँटको उत्तम कामको एउटा टुक्रा, अमारोकले, हाल तपाईँले प्रयोग गरिरहनु "
+"भएको अडियो-प्लेयर पछाडि नाम पठायो । अमारोक!</p><p align=right>Mark "
+"Kretschmann<br>Max Howell<br>Chris Muehlhaeuser छनौट गरेकोमा धन्यवाद<br>र अरू "
+"धेरै मान्छेलाई पनि धन्यावाद जसले अमारोक के हो भन्ने कुरा बनाउँनका लागि सहयोग गर्यो</p>"
+
+#: statusbar/ContextStatusBar.cpp:103
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
+
+#: statusbar/ContextStatusBar.cpp:106
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: statusbar/ContextStatusBar.cpp:110
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: statusbar/ContextStatusBar.cpp:115
+msgid "Unknown track"
+msgstr "अज्ञात ट्रयाक"
+
+#: statusbar/ContextStatusBar.cpp:124
+#, kde-format
+msgid "Playing: %1"
+msgstr "प्ले गर्दै: %1"
 
 #: collectionscanner/main.cpp:33
 msgid ""
@@ -11390,11 +11402,6 @@ msgstr "सङ्कलन निर्माण गर्नुहोस्..."
 #~| msgid "Download Interval"
 #~ msgid "Download from Internet"
 #~ msgstr "अन्तराल डाउउनलोड गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Closed"
-#~ msgid "Close"
-#~ msgstr "बन्द गरियो"
 
 #~ msgid "Writing tag..."
 #~ msgstr "ट्याग लेख्दैछ..."
