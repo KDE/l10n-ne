@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-28 06:08+0100\n"
+"POT-Creation-Date: 2007-11-29 06:05+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -634,7 +634,7 @@ msgid "Deselect"
 msgstr "चयन हटाउनुहोस्"
 
 #: libs/imageproperties/imagedescedittab.cpp:860 digikam/tagfilterview.cpp:889
-#: digikam/digikamapp.cpp:770 utilities/cameragui/cameraui.cpp:325
+#: digikam/digikamapp.cpp:785 utilities/cameragui/cameraui.cpp:325
 msgid "Invert Selection"
 msgstr "चयन उल्टाउनुहोस्"
 
@@ -971,23 +971,25 @@ msgstr ""
 "सक्नुहुन्छ । ति मानहरू सबै च्यानलका लागि उपलब्ध हुन्छन् ।"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:297
-#: libs/widgets/common/histogramwidget.cpp:1002
-msgid "Mean:"
-msgstr "मिन:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:302
 #: libs/widgets/common/histogramwidget.cpp:1006
 msgid "Pixels:"
 msgstr "पिक्सेल:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:307
-msgid "Standard deviation:"
-msgstr "स्ट्यान्डर्ड डेभिएसन:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:312
+#: libs/imageproperties/imagepropertiescolorstab.cpp:302
 #: libs/widgets/common/histogramwidget.cpp:1014
 msgid "Count:"
 msgstr "गणना:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:307
+#: libs/widgets/common/histogramwidget.cpp:1002
+msgid "Mean:"
+msgstr "मिन:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:312
+#, fuzzy
+#| msgid "Standard deviation:"
+msgid "Std. deviation:"
+msgstr "स्ट्यान्डर्ड डेभिएसन:"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:317
 #: libs/widgets/common/histogramwidget.cpp:1018
@@ -1389,7 +1391,7 @@ msgid ""
 msgstr ""
 
 #: libs/greycstoration/greycstorationwidget.cpp:131
-#: digikam/digikamapp.cpp:1827 showfoto/setup/setup.cpp:96
+#: digikam/digikamapp.cpp:1842 showfoto/setup/setup.cpp:96
 #: utilities/imageeditor/editor/editorwindow.cpp:590
 #: utilities/lighttable/lighttablewindow.cpp:1407
 #: utilities/cameragui/cameraui.cpp:1788
@@ -1683,7 +1685,7 @@ msgstr ""
 
 #: libs/themeengine/themeengine.cpp:91 libs/themeengine/themeengine.cpp:93
 #: libs/themeengine/themeengine.cpp:202 digikam/albumsettings.cpp:298
-#: digikam/digikamapp.cpp:2050
+#: digikam/digikamapp.cpp:2065
 msgid "Default"
 msgstr ""
 
@@ -2280,7 +2282,7 @@ msgstr ""
 "।<p>क्लिप फोकस परिवर्तन गर्न रातो आयातकारमा माउस कर्सर क्लिक गर्नुहोस् र तान्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:360
-#: digikam/digikamapp.cpp:2140 utilities/lighttable/lighttablewindow.cpp:1450
+#: digikam/digikamapp.cpp:2155 utilities/lighttable/lighttablewindow.cpp:1450
 #: utilities/lighttable/lighttablewindow.cpp:1473
 #, fuzzy, kde-format
 #| msgid "Zoom: "
@@ -3052,7 +3054,7 @@ msgstr[1] ""
 
 #: digikam/tagfolderview.cpp:891 digikam/albumiconview.cpp:1373
 #: digikam/albumiconview.cpp:1383 digikam/albumiconview.cpp:1448
-#: digikam/albumiconview.cpp:1457 digikam/albumiconview.cpp:2109
+#: digikam/albumiconview.cpp:1457 digikam/albumiconview.cpp:2123
 #: digikam/tagfilterview.cpp:605
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
@@ -3786,25 +3788,31 @@ msgstr "सबै वस्तुमा ट्याग मानाङ्कन
 msgid "Assign Tags to &All Items"
 msgstr "सबै वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1701
+#: digikam/albumiconview.cpp:1702
 #, fuzzy
 #| msgid "Fix Exif Orientation tag on pictures. Please wait..."
 msgid "Revising Exif Orientation tags. Please wait..."
 msgstr "तस्विरमा Exif अभिमुखीकरण ट्याग स्थिर । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: digikam/albumiconview.cpp:1713
+#: digikam/albumiconview.cpp:1731
 #, fuzzy, kde-format
 #| msgid "Failed to correct Exif orientation for file %1."
 msgid "Failed to revise Exif orientation for file %1."
 msgstr "%1 फाइलका लागि Exif अभिमुखीकरण सुधार गर्न असफल"
 
-#: digikam/albumiconview.cpp:2119
+#: digikam/albumiconview.cpp:1736
+#, fuzzy
+#| msgid "Failed to correct Exif orientation for file %1."
+msgid "Failed to revise Exif orientation these files:"
+msgstr "%1 फाइलका लागि Exif अभिमुखीकरण सुधार गर्न असफल"
+
+#: digikam/albumiconview.cpp:2133
 #, fuzzy
 #| msgid "Remove tag from pictures. Please wait..."
 msgid "Removing image tags. Please wait..."
 msgstr "तस्विरबाट ट्याग हटाउनुहोस् । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: digikam/albumiconview.cpp:2129
+#: digikam/albumiconview.cpp:2143
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
 msgid "Assigning image ratings. Please wait..."
@@ -4351,7 +4359,7 @@ msgstr "९० डिग्रिमा घुमाइएको / ठाडो 
 msgid "Rotated left"
 msgstr "घुमाउनुहोस्"
 
-#: digikam/digikamapp.cpp:756
+#: digikam/digikamapp.cpp:771
 #: utilities/imageeditor/editor/editorwindow.cpp:349
 #: utilities/cameragui/cameraui.cpp:311
 #, fuzzy
@@ -4359,13 +4367,13 @@ msgstr "घुमाउनुहोस्"
 msgid "Select All"
 msgstr "सबै चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:763
+#: digikam/digikamapp.cpp:778
 #: utilities/imageeditor/editor/editorwindow.cpp:354
 #: utilities/cameragui/cameraui.cpp:318
 msgid "Select None"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
-#: digikam/digikamapp.cpp:793
+#: digikam/digikamapp.cpp:808
 #: utilities/imageeditor/editor/editorwindow.cpp:369
 #: utilities/lighttable/lighttablewindow.cpp:422
 #, fuzzy
@@ -4373,87 +4381,87 @@ msgstr "कुनै पनि चयन नगर्नुहोस्"
 msgid "Zoom to 1:1"
 msgstr "जुम घटाउनुहोस्"
 
-#: digikam/digikamapp.cpp:800
+#: digikam/digikamapp.cpp:815
 #: utilities/imageeditor/editor/editorwindow.cpp:374
 #: utilities/lighttable/lighttablepreview.cpp:386
 #: utilities/lighttable/lighttablewindow.cpp:427
 msgid "Fit to &Window"
 msgstr ""
 
-#: digikam/digikamapp.cpp:812 showfoto/setup/setup.cpp:121
+#: digikam/digikamapp.cpp:827 showfoto/setup/setup.cpp:121
 #: utilities/setup/setup.cpp:214
 #: utilities/imageeditor/editor/editorwindow.cpp:418
 #: utilities/lighttable/lighttablewindow.cpp:435
 msgid "Slide Show"
 msgstr "स्लाइड प्रर्दशन"
 
-#: digikam/digikamapp.cpp:816
+#: digikam/digikamapp.cpp:831
 msgid "All"
 msgstr "सबै"
 
-#: digikam/digikamapp.cpp:822
+#: digikam/digikamapp.cpp:837
 msgid "Selection"
 msgstr "चयन"
 
-#: digikam/digikamapp.cpp:828
+#: digikam/digikamapp.cpp:843
 #, fuzzy
 #| msgid "Date-based sub-albums"
 msgid "With all sub-albums"
 msgstr "मितिमा आधारित सहायक एल्बम"
 
-#: digikam/digikamapp.cpp:841 showfoto/showfoto.cpp:509
+#: digikam/digikamapp.cpp:856 showfoto/showfoto.cpp:509
 #, fuzzy
 #| msgid "Metadata support for RAW pictures"
 msgid "RAW camera supported"
 msgstr "कच्चा तस्विरका लागि मेटाडेटा समर्थन"
 
-#: digikam/digikamapp.cpp:847
+#: digikam/digikamapp.cpp:862
 msgid "Kipi Plugins Handbook"
 msgstr "किपि प्लगइन ह्यान्डबुक"
 
-#: digikam/digikamapp.cpp:858
+#: digikam/digikamapp.cpp:873
 msgid "Make a donation..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:868 utilities/imageeditor/editor/imagewindow.cpp:320
+#: digikam/digikamapp.cpp:883 utilities/imageeditor/editor/imagewindow.cpp:320
 #: utilities/lighttable/lighttablewindow.cpp:460
 msgid "Assign Rating \"No Star\""
 msgstr "\"तारा नभएको\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:873 utilities/imageeditor/editor/imagewindow.cpp:325
+#: digikam/digikamapp.cpp:888 utilities/imageeditor/editor/imagewindow.cpp:325
 #: utilities/lighttable/lighttablewindow.cpp:465
 msgid "Assign Rating \"One Star\""
 msgstr "\"एउटा तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:878 utilities/imageeditor/editor/imagewindow.cpp:330
+#: digikam/digikamapp.cpp:893 utilities/imageeditor/editor/imagewindow.cpp:330
 #: utilities/lighttable/lighttablewindow.cpp:470
 msgid "Assign Rating \"Two Stars\""
 msgstr "\"दुइ तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:883 utilities/imageeditor/editor/imagewindow.cpp:335
+#: digikam/digikamapp.cpp:898 utilities/imageeditor/editor/imagewindow.cpp:335
 #: utilities/lighttable/lighttablewindow.cpp:475
 msgid "Assign Rating \"Three Stars\""
 msgstr "\"तिन तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:888 utilities/imageeditor/editor/imagewindow.cpp:340
+#: digikam/digikamapp.cpp:903 utilities/imageeditor/editor/imagewindow.cpp:340
 #: utilities/lighttable/lighttablewindow.cpp:480
 msgid "Assign Rating \"Four Stars\""
 msgstr "\"चार तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:893 utilities/imageeditor/editor/imagewindow.cpp:345
+#: digikam/digikamapp.cpp:908 utilities/imageeditor/editor/imagewindow.cpp:345
 #: utilities/lighttable/lighttablewindow.cpp:485
 msgid "Assign Rating \"Five Stars\""
 msgstr "\"पाँच तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:902
+#: digikam/digikamapp.cpp:917
 msgid "Quick Search..."
 msgstr "छिटो खोजी..."
 
-#: digikam/digikamapp.cpp:909
+#: digikam/digikamapp.cpp:924
 msgid "Advanced Search..."
 msgstr "उन्नत खोजी..."
 
-#: digikam/digikamapp.cpp:914 utilities/setup/setup.cpp:184
+#: digikam/digikamapp.cpp:929 utilities/setup/setup.cpp:184
 #: utilities/lighttable/lighttablewindow.cpp:100
 #: utilities/lighttable/lighttablewindow.cpp:1206
 #, fuzzy
@@ -4461,135 +4469,135 @@ msgstr "उन्नत खोजी..."
 msgid "Light Table"
 msgstr "प्रकाश"
 
-#: digikam/digikamapp.cpp:921
+#: digikam/digikamapp.cpp:936
 msgid "Scan for New Images"
 msgstr "नयाँ छविका लागि स्क्यान गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:927
+#: digikam/digikamapp.cpp:942
 msgid "Rebuild all Thumbnails..."
 msgstr "सबै थम्बनेल पुन: निर्माण गर्नुहोस्..."
 
-#: digikam/digikamapp.cpp:934
+#: digikam/digikamapp.cpp:949
 msgid "Update Metadata Database..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:949
+#: digikam/digikamapp.cpp:964
 msgid "Loading cameras"
 msgstr "क्यामेरा लोडिङ"
 
-#: digikam/digikamapp.cpp:1158
+#: digikam/digikamapp.cpp:1173
 msgid "No item selected"
 msgstr "वस्तु चयन गरेको छैन"
 
-#: digikam/digikamapp.cpp:1174
+#: digikam/digikamapp.cpp:1189
 #, fuzzy, kde-format
 #| msgid " (%2 of %3)"
 msgid " (%1 of %2)"
 msgstr " (%3 को %2)"
 
-#: digikam/digikamapp.cpp:1180
+#: digikam/digikamapp.cpp:1195
 #, fuzzy, kde-format
 #| msgid "%1 items selected"
 msgid "%1/%2 items selected"
 msgstr "%1 वस्तु चयन गरेको छ"
 
-#: digikam/digikamapp.cpp:1229
+#: digikam/digikamapp.cpp:1244
 #, fuzzy
 #| msgid "Cameras"
 msgid "Digital Cameras"
 msgstr "क्यामेरा"
 
-#: digikam/digikamapp.cpp:1231
+#: digikam/digikamapp.cpp:1246
 msgid "USB Storage Devices"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1233
+#: digikam/digikamapp.cpp:1248
 #, fuzzy
 #| msgid "Camera Folders"
 msgid "Card Readers"
 msgstr "क्यामेरा फोल्डर"
 
-#: digikam/digikamapp.cpp:1235
+#: digikam/digikamapp.cpp:1250
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Cameras Added Manually"
 msgstr "क्यामेरा म्यानुअल"
 
-#: digikam/digikamapp.cpp:1243
+#: digikam/digikamapp.cpp:1258
 msgid "Add Camera..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1251
+#: digikam/digikamapp.cpp:1266
 msgid "Add Images..."
 msgstr "छवि थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1253
+#: digikam/digikamapp.cpp:1268
 #, fuzzy
 #| msgid "This option adds new items to the current Album."
 msgid "Adds new items to an Album."
 msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
 
-#: digikam/digikamapp.cpp:1259
+#: digikam/digikamapp.cpp:1274
 #, fuzzy
 #| msgid "Add Camera..."
 msgid "Add Folders..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1260
+#: digikam/digikamapp.cpp:1275
 msgid "Adds new folders to Albums library."
 msgstr ""
 
-#: digikam/digikamapp.cpp:1327 digikam/digikamapp.cpp:1484
+#: digikam/digikamapp.cpp:1342 digikam/digikamapp.cpp:1499
 #, kde-format
 msgid "Images found in %1"
 msgstr "%1 मा छवि फेला पर्यो"
 
-#: digikam/digikamapp.cpp:1508
+#: digikam/digikamapp.cpp:1523
 msgid "Cannot access the storage device.\n"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1613
+#: digikam/digikamapp.cpp:1628
 msgid "CompactFlash Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1616
+#: digikam/digikamapp.cpp:1631
 msgid "Memory Stick Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1619
+#: digikam/digikamapp.cpp:1634
 msgid "SmartMedia Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1622
+#: digikam/digikamapp.cpp:1637
 msgid "SD / MMC Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1625
+#: digikam/digikamapp.cpp:1640
 msgid "xD-Picture Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1927 showfoto/showfoto.cpp:1236
+#: digikam/digikamapp.cpp:1942 showfoto/showfoto.cpp:1236
 #, kde-format
 msgid ""
 "<p>Using KDcraw library version %1<p>Using Dcraw program version %2<p>%3 "
 "models in the list"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1930 showfoto/showfoto.cpp:1239
+#: digikam/digikamapp.cpp:1945 showfoto/showfoto.cpp:1239
 msgid "List of supported RAW camera"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1936
+#: digikam/digikamapp.cpp:1951
 #, fuzzy
 #| msgid "Kipi Plugins"
 msgid "Loading Kipi Plugins"
 msgstr "किपि प्लगइन"
 
-#: digikam/digikamapp.cpp:2041
+#: digikam/digikamapp.cpp:2056
 msgid "Loading themes"
 msgstr "विषयवस्तु लोडिङ"
 
-#: digikam/digikamapp.cpp:2072
+#: digikam/digikamapp.cpp:2087
 #, fuzzy
 #| msgid ""
 #| "Rebuild all albums items thumbnails can take a while.\n"
@@ -4601,7 +4609,7 @@ msgstr ""
 "एल्बमको सबै वस्तु थम्बनेल पुन: निर्माण हुँदा केहि समय लिन सक्दछ ।\n"
 "तपाईँले जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2093
+#: digikam/digikamapp.cpp:2108
 #, fuzzy
 #| msgid ""
 #| "Sync all pictures metadata from all albums with digiKam database can take "
@@ -4614,25 +4622,25 @@ msgstr ""
 "डिजिक्याम डाटाबेससँग सबै एल्बमबाट सबै तस्विर मेटाडाटा सिन्क गर्दा केहि समय लिन सक्दछ ।\n"
 "तपाईँ जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2134 utilities/cameragui/cameraui.cpp:898
+#: digikam/digikamapp.cpp:2149 utilities/cameragui/cameraui.cpp:898
 #, fuzzy, kde-format
 #| msgid "Size:"
 msgid "Size: %1"
 msgstr "साइज:"
 
-#: digikam/digikamapp.cpp:2168
+#: digikam/digikamapp.cpp:2183
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:2180
+#: digikam/digikamapp.cpp:2195
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folders to import"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:2192
+#: digikam/digikamapp.cpp:2207
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
