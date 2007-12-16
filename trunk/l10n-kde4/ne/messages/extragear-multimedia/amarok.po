@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-15 06:14+0100\n"
+"POT-Creation-Date: 2007-12-16 06:18+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1454,7 +1454,7 @@ msgstr ""
 msgid "Local Podcasts"
 msgstr "पोडकास्ट"
 
-#: podcasts/PodcastCollection.h:96 mediadevice/ipod/ipodmediadevice.cpp:1296
+#: podcasts/PodcastCollection.h:96 mediadevice/ipod/ipodmediadevice.cpp:1418
 #: playlistbrowser/PlaylistBrowser.cpp:51
 msgid "Podcasts"
 msgstr "पोडकास्ट"
@@ -1766,10 +1766,10 @@ msgid "%1. %2"
 msgstr "%1. %2"
 
 #: Statistics.cpp:514 mediadevice/mtp/mtpmediadevice.cpp:561
-#: mediadevice/ipod/ipodmediadevice.cpp:1525
-#: mediadevice/ipod/ipodmediadevice.cpp:1535
-#: mediadevice/ipod/ipodmediadevice.cpp:1898
-#: mediadevice/ipod/ipodmediadevice.cpp:1950
+#: mediadevice/ipod/ipodmediadevice.cpp:1651
+#: mediadevice/ipod/ipodmediadevice.cpp:1661
+#: mediadevice/ipod/ipodmediadevice.cpp:2024
+#: mediadevice/ipod/ipodmediadevice.cpp:2076
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:170
 #: mediadevice/generic/genericmediadevice.cpp:525 querybuilder.cpp:404
 #: querybuilder.cpp:494 querybuilder.cpp:544 metabundle.cpp:616
@@ -1806,7 +1806,7 @@ msgstr ""
 "प्ले गर्न सुरु गर्नुहोस्!</div>"
 
 #: Statistics.cpp:692 mediadevice/daap/daapclient.cpp:250
-#: mediadevice/ipod/ipodmediadevice.cpp:2111
+#: mediadevice/ipod/ipodmediadevice.cpp:2237
 #: mediadevice/generic/genericmediadevice.cpp:934 systray.cpp:100
 #: collectionbrowser/CollectionTreeView.cpp:132 CoverManager.cpp:556
 msgid "&Append to Playlist"
@@ -1901,7 +1901,7 @@ msgid "Remote Media"
 msgstr "टाढाको मिडिया"
 
 #: mediabrowser.cpp:924 mediadevice/mtp/mtpmediadevice.cpp:1346
-#: mediadevice/ipod/ipodmediadevice.cpp:2295 history/mediabrowser.cpp:1001
+#: mediadevice/ipod/ipodmediadevice.cpp:2421 history/mediabrowser.cpp:1001
 msgid "New Playlist"
 msgstr "नयाँ प्ले सूची"
 
@@ -2664,7 +2664,7 @@ msgstr "डाउनलोड गर्नुहोस्"
 
 #: mediadevice/ifp/ifpmediadevice.cpp:658
 #: mediadevice/mtp/mtpmediadevice.cpp:1331
-#: mediadevice/ipod/ipodmediadevice.cpp:2194
+#: mediadevice/ipod/ipodmediadevice.cpp:2320
 #: mediadevice/generic/genericmediadevice.cpp:944
 msgid "Rename"
 msgstr "पुन: नामकरण गर्नुहोस्"
@@ -2871,7 +2871,7 @@ msgid "MTP device could not be opened"
 msgstr "एमटीपी यन्त्र खुल्न सकेन"
 
 #: mediadevice/mtp/mtpmediadevice.cpp:1184
-#: mediadevice/ipod/ipodmediadevice.cpp:1291 MainWindow.cpp:243
+#: mediadevice/ipod/ipodmediadevice.cpp:1413 MainWindow.cpp:243
 msgid "Playlists"
 msgstr "प्ले सूची"
 
@@ -2886,13 +2886,13 @@ msgid "Supported file types: "
 msgstr "समर्थित फाइल प्रकारहरू: "
 
 #: mediadevice/mtp/mtpmediadevice.cpp:1326 mediadevice/daap/daapclient.cpp:253
-#: mediadevice/ipod/ipodmediadevice.cpp:2116
+#: mediadevice/ipod/ipodmediadevice.cpp:2242
 #: mediadevice/generic/genericmediadevice.cpp:937
 msgid "&Copy Files to Collection..."
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
 #: mediadevice/mtp/mtpmediadevice.cpp:1327
-#: mediadevice/ipod/ipodmediadevice.cpp:2159
+#: mediadevice/ipod/ipodmediadevice.cpp:2285
 msgid "Make Media Device Playlist"
 msgstr "मिडिया यन्त्र प्ले सूची बनाउनुहोस्"
 
@@ -2985,14 +2985,14 @@ msgid "&Remove Computer"
 msgstr "कम्प्युटर हटाउनुहोस्"
 
 #: mediadevice/daap/daapclient.cpp:249
-#: mediadevice/ipod/ipodmediadevice.cpp:2110
+#: mediadevice/ipod/ipodmediadevice.cpp:2236
 #: mediadevice/generic/genericmediadevice.cpp:933
 #: collectionbrowser/CollectionTreeView.cpp:131
 msgid "&Load"
 msgstr "लोड गर्नुहोस्"
 
 #: mediadevice/daap/daapclient.cpp:251
-#: mediadevice/ipod/ipodmediadevice.cpp:2112
+#: mediadevice/ipod/ipodmediadevice.cpp:2238
 #: mediadevice/generic/genericmediadevice.cpp:935
 msgid "&Queue Tracks"
 msgstr "लाम ट्रयाक"
@@ -3058,64 +3058,65 @@ msgstr "टाढाको सर्भरमा जडान गर्ने �
 msgid "Downloading Media..."
 msgstr "मिडिया डाउनलोड हुँदैछ..."
 
-#: mediadevice/ipod/ipodmediadevice.cpp:282
+#: mediadevice/ipod/ipodmediadevice.cpp:281
 msgid "iPod"
 msgstr "आईपोड"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:288
+#: mediadevice/ipod/ipodmediadevice.cpp:287
 msgid "Stale and Orphaned"
 msgstr "स्टेल र अर्फानेड"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:289
+#: mediadevice/ipod/ipodmediadevice.cpp:288
 msgid "Update Artwork"
 msgstr "चित्रकला अद्यावधिक गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:292
+#: mediadevice/ipod/ipodmediadevice.cpp:291
 msgid "Set iPod Model"
 msgstr "आईपोड नमूना सेट गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:319
+#: mediadevice/ipod/ipodmediadevice.cpp:318
 #, kde-format
 msgid "%1 GB %2 (x%3)"
 msgstr "%1 गिगाबाइट %2 (x%3)"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:325
+#: mediadevice/ipod/ipodmediadevice.cpp:324
 #, kde-format
 msgid "%1 (x%2)"
 msgstr "%1 (x%2)"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:369
+#: mediadevice/ipod/ipodmediadevice.cpp:388
+#, kde-format
 msgid ""
-"Could not write sysinfo file to ipod (check the permissions of the file "
-"\"iPod_Control/Device/SysInfo\" on your iPod)"
+"Could not write SysInfo file to iPod (check the permissions of the file \"%1"
+"\" on your iPod)"
 msgstr ""
 
-#: mediadevice/ipod/ipodmediadevice.cpp:373
+#: mediadevice/ipod/ipodmediadevice.cpp:392
 #, fuzzy, kde-format
 #| msgid "Setting iPod model to %1 GB %2 (x%3)"
 msgid "Unable to set iPod model to %1 GB %2 (x%3)"
 msgstr "%1 GB %2 (x%3) मा आईपोड नमूना सेट गर्दै"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:381
+#: mediadevice/ipod/ipodmediadevice.cpp:400
 #, kde-format
 msgid "Setting iPod model to %1 GB %2 (x%3)"
 msgstr "%1 GB %2 (x%3) मा आईपोड नमूना सेट गर्दै"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:657
+#: mediadevice/ipod/ipodmediadevice.cpp:687
 #, kde-format
 msgid "Media Device: Creating directory for file %1 failed"
 msgstr "मिडिया यन्त्र: फाइल %1 का लागि डाइरेक्टरी सिर्जना गरिरहेको असफल भयो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:697
+#: mediadevice/ipod/ipodmediadevice.cpp:727
 msgid "Flushing iPod filesystem transfer cache"
 msgstr "आईपोड फाइलप्रणाली स्थान्तरण क्यास फ्लस गर्दै"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:960
+#: mediadevice/ipod/ipodmediadevice.cpp:990
 #, kde-format
 msgid "Media Device: iPod mounted at %1 already locked. "
 msgstr "मिडिया यन्त्र: %1 मा माउन्ट गरिएको आईपोड पहिल्यै ताल्चा लगाइएको छ।"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:961
+#: mediadevice/ipod/ipodmediadevice.cpp:991
 #, kde-format
 msgid ""
 "If you are sure that this is an error, then remove the file %1 and try again."
@@ -3123,45 +3124,45 @@ msgstr ""
 "यदि तपाईँ यो एउटा त्रुटि हो भन्ने निश्चित हुनुहुन्छ भने, फाइल %1 हटाउनुहोस् र फेरि प्रयास "
 "गर्नुहोस्।"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:965
+#: mediadevice/ipod/ipodmediadevice.cpp:995
 msgid "Remove iTunes Lock File?"
 msgstr "आईट्यून लक फाइल हटाउन चाहनुहुन्छ?"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:966
+#: mediadevice/ipod/ipodmediadevice.cpp:996
 msgid "&Remove"
 msgstr "हटाउनुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:969
+#: mediadevice/ipod/ipodmediadevice.cpp:999
 #, kde-format
 msgid "Media Device: removing lockfile %1 failed: %2. "
 msgstr "मिडिया यन्त्र: लकफाइल %1 हटाइरहेको असफल भयो: %2"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:983
+#: mediadevice/ipod/ipodmediadevice.cpp:1013
 #, kde-format
 msgid "Media Device: failed to create lockfile on iPod mounted at %1: %2"
 msgstr "मिडिया यन्त्र: %1: %2 मा माउन्ट भएको आईपोडमा लक फाइल सिर्जना गर्न असफल भयो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1005
+#: mediadevice/ipod/ipodmediadevice.cpp:1035
 #: mediadevice/riokarma/riokarmamediadevice.cpp:294
 #, kde-format
 msgid "Media device: Mount point %1 does not exist"
 msgstr "मिडिया यन्त्र: माउन्ट विन्दु %1 अवस्थित छैन"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1055
+#: mediadevice/ipod/ipodmediadevice.cpp:1088
 #, kde-format
 msgid "Media Device: Initialized iPod mounted at %1"
 msgstr "मिडिया यन्त्र: %1 मा माउन्ट गरिएको आईपोड सुरुआत गरियो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1074
+#: mediadevice/ipod/ipodmediadevice.cpp:1109
 #, kde-format
 msgid "Media Device: iPod at %1 already opened"
 msgstr "मिडिया यन्त्र: %1 मा आईपोड पहिल्यै खुलेको छ"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1137
+#: mediadevice/ipod/ipodmediadevice.cpp:1172
 msgid "Media Device: No mounted iPod found"
 msgstr "मिडिया यन्त्र: माउन्ट गरिएको कुनै आईपोड फेला परेन"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1145
+#: mediadevice/ipod/ipodmediadevice.cpp:1180
 #, kde-format
 msgid ""
 "Media Device: could not find iTunesDB on device mounted at %1. Should I try "
@@ -3170,145 +3171,152 @@ msgstr ""
 "मिडिया यन्त्र: %1 मा माउन्ट भएको यन्त्रमा आईटुनडीबी फेला पार्न सकेन । तपाईँको आईपोड सुरु "
 "गर्ने प्रयास गर्नुहुन्छ ?"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1149
+#: mediadevice/ipod/ipodmediadevice.cpp:1184
 msgid "Initialize iPod?"
 msgstr "आईपोड सुरु गर्नुहुन्छ ?"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1150
+#: mediadevice/ipod/ipodmediadevice.cpp:1185
 msgid "&Initialize"
 msgstr "सुरु गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1161
+#: mediadevice/ipod/ipodmediadevice.cpp:1196
 #, kde-format
 msgid "Media Device: Failed to initialize iPod mounted at %1"
 msgstr "मिडिया यन्त्र: %1 मा माउन्ट गरिएको आईपोड सुरूआत गर्न असक्षम भयो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1200
+#: mediadevice/ipod/ipodmediadevice.cpp:1232
 #, kde-format
 msgid "Media device: Failed to create directory %1"
 msgstr "मिडिया यन्त्र: डाइरेक्टरी %1 सिर्जना गर्न असफल भयो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1281
+#: mediadevice/ipod/ipodmediadevice.cpp:1366
+#, kde-format
+msgid ""
+"Your iPod's Firewire GUID is required for correctly updating its music "
+"database, but it is not known. See %1 for more information."
+msgstr ""
+
+#: mediadevice/ipod/ipodmediadevice.cpp:1376
 msgid ""
 "iPod type detection failed: no support for iPod Shuffle, for artwork or video"
 msgstr ""
 "आईपोड प्रकार पत्ता लगाउने असफल भयो: चित्रकला वा भिडियोका लागि, आईपोड सफलका लागि "
 "कुनै समर्थन छैन"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1301
+#: mediadevice/ipod/ipodmediadevice.cpp:1423
 msgid "Invisible"
 msgstr "अदृश्य"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1306
+#: mediadevice/ipod/ipodmediadevice.cpp:1428
 msgid "Stale"
 msgstr "स्टेल"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1311
+#: mediadevice/ipod/ipodmediadevice.cpp:1433
 msgid "Orphaned"
 msgstr "अर्फानेड"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1356
+#: mediadevice/ipod/ipodmediadevice.cpp:1478
 #, fuzzy, kde-format
 msgid "Updated artwork for one track"
 msgid_plural "Updated artwork for %1 tracks"
 msgstr[0] "एउटा ट्रयाकका लागि अद्यावधिक गरेको चित्रकला"
 msgstr[1] "एउटा ट्रयाकका लागि अद्यावधिक गरेको चित्रकला"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1417
+#: mediadevice/ipod/ipodmediadevice.cpp:1542
 msgid "Scanning for stale and orphaned tracks finished"
 msgstr "स्टेल र अर्फानेड ट्रयाकहरूका लागि स्कयानिङ समाप्त भयो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1556
-#: mediadevice/ipod/ipodmediadevice.cpp:1901
-#: mediadevice/ipod/ipodmediadevice.cpp:1953 osd.cpp:602 CoverManager.cpp:864
+#: mediadevice/ipod/ipodmediadevice.cpp:1682
+#: mediadevice/ipod/ipodmediadevice.cpp:2027
+#: mediadevice/ipod/ipodmediadevice.cpp:2079 osd.cpp:602 CoverManager.cpp:864
 msgid " - "
 msgstr " - "
 
-#: mediadevice/ipod/ipodmediadevice.cpp:1848
+#: mediadevice/ipod/ipodmediadevice.cpp:1974
 msgid "Media device: failed to write iPod database"
 msgstr "मिडिया यन्त्र: आईपोड डाटाबेस लेख्न असक्षम भयो"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2106
+#: mediadevice/ipod/ipodmediadevice.cpp:2232
 msgid "Create Playlist..."
 msgstr "प्ले सूची सिर्जना गर्नुहोस्..."
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2120
+#: mediadevice/ipod/ipodmediadevice.cpp:2246
 msgid "Burn All Tracks by This Artist"
 msgstr "यो कलाकारद्वारा सबै ट्रयाक बर्न गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2125
+#: mediadevice/ipod/ipodmediadevice.cpp:2251
 msgid "Burn This Album"
 msgstr "यो एल्बम बर्न गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2130
+#: mediadevice/ipod/ipodmediadevice.cpp:2256
 #: mediadevice/generic/genericmediadevice.cpp:938
 msgid "Burn to CD as Data"
 msgstr "डेटाको रूपमा सीडीमा बर्न गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2132
+#: mediadevice/ipod/ipodmediadevice.cpp:2258
 #: mediadevice/generic/genericmediadevice.cpp:940
 msgid "Burn to CD as Audio"
 msgstr "अडियोको रूपमा सीडीमा बर्न गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2143
+#: mediadevice/ipod/ipodmediadevice.cpp:2269
 msgid "Subscribe to This Podcast"
 msgstr "यो पोडकास्टमा सदस्यता जाहेर गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2171
+#: mediadevice/ipod/ipodmediadevice.cpp:2297
 msgid "Add to Playlist"
 msgstr "प्ले सूचीमा थप्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2182
+#: mediadevice/ipod/ipodmediadevice.cpp:2308
 #, fuzzy, kde-format
 msgid "Edit &Information..."
 msgid_plural "Edit &Information for %1 Tracks..."
 msgstr[0] "सूचना सम्पादन गर्नुहोस्..."
 msgstr[1] "सूचना सम्पादन गर्नुहोस्..."
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2189
+#: mediadevice/ipod/ipodmediadevice.cpp:2315
 msgid "Add to Database"
 msgstr "डाटाबेसमा थप्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2205
+#: mediadevice/ipod/ipodmediadevice.cpp:2331
 msgid "Remove Playlist"
 msgstr "प्ले सूची हटाउनुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2205
+#: mediadevice/ipod/ipodmediadevice.cpp:2331
 msgid "Remove from Playlist"
 msgstr "प्ले सूचीबाट हटाउनुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2211
+#: mediadevice/ipod/ipodmediadevice.cpp:2337
 msgid "Delete Podcasts Already Played"
 msgstr "पहिल्यै प्ले गरिएको पोडकास्ट मेट्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2215
+#: mediadevice/ipod/ipodmediadevice.cpp:2341
 #, fuzzy, kde-format
 msgid "Delete Track from iPod"
 msgid_plural "Delete %1 Tracks from iPod"
 msgstr[0] "आइपोडबाट ट्र्याक मेट्नुहोस्"
 msgstr[1] "आइपोडबाटबाट ट्र्याक मेट्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2359
+#: mediadevice/ipod/ipodmediadevice.cpp:2485
 #, fuzzy, kde-format
 msgid "One duplicate track not added to database"
 msgid_plural "%1 duplicate tracks not added to database"
 msgstr[0] "एउटा नक्कली ट्रयाक डाटाबेसमा थपिएको छैन"
 msgstr[1] "एउटा नक्कली ट्रयाक डाटाबेसमा थपिएको छैन"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2436
+#: mediadevice/ipod/ipodmediadevice.cpp:2562
 msgid "&Automatically delete podcasts"
 msgstr "स्वचालित रूपमा पोडकास्ट मेट्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2437
+#: mediadevice/ipod/ipodmediadevice.cpp:2563
 msgid ""
 "Automatically delete podcast shows already played when connecting device"
 msgstr "यन्त्र जडान गर्दा स्वचालित रूपमा पोडकास्ट मेट्नाले पहिल्यै प्ले भएको देखाउँछ"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2441
+#: mediadevice/ipod/ipodmediadevice.cpp:2567
 msgid "&Synchronize with Amarok statistics"
 msgstr "अमारोक तथ्याङ्कसँग समक्रमण गर्नुहोस्"
 
-#: mediadevice/ipod/ipodmediadevice.cpp:2442
+#: mediadevice/ipod/ipodmediadevice.cpp:2568
 msgid "Synchronize with Amarok statistics and submit tracks played to last.fm"
 msgstr "अमारोक तथ्याङ्कसँग समक्रमण गर्नुहोस् र last.fm मा प्ले गरिएको ट्रयाक पेश गर्नुहोस्"
 
@@ -7257,7 +7265,7 @@ msgstr "मोडहरू प्रयोग गर्नुहोस्"
 #. i18n: file ./configdialog/dialogs/GeneralConfig.ui line 480
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 131
-#: rc.cpp:707 rc.cpp:710 rc.cpp:2084
+#: rc.cpp:707 rc.cpp:710 rc.cpp:2096
 msgid ""
 "When enabled, the hue distribution is quantised and respread evenly, giving "
 "a prettier but less meaningful output."
@@ -7293,7 +7301,7 @@ msgstr "उत्तरी ध्रुवमा जमेको"
 #. i18n: file ./configdialog/dialogs/GeneralConfig.ui line 566
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 126
-#: rc.cpp:725 rc.cpp:2078
+#: rc.cpp:725 rc.cpp:2090
 msgid ""
 "Enabling this option stores Mood data files with the music files. Disabling "
 "stores them in your home folder."
@@ -7682,7 +7690,7 @@ msgstr "अनुकूल फन्ट प्रयोग गर्नुहो
 #. i18n: file ./configdialog/dialogs/AppearanceConfig.ui line 102
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 457
-#: rc.cpp:905 rc.cpp:908 rc.cpp:2420
+#: rc.cpp:905 rc.cpp:908 rc.cpp:2432
 msgid "The font to use in the playlist window."
 msgstr "प्लेसूची सञ्झ्यालमा प्रयोग गरिने फन्ट ।"
 
@@ -7698,7 +7706,7 @@ msgstr "प्लेसूची सञ्झ्याल:"
 #. i18n: file ./configdialog/dialogs/AppearanceConfig.ui line 124
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 461
-#: rc.cpp:914 rc.cpp:917 rc.cpp:2426
+#: rc.cpp:914 rc.cpp:917 rc.cpp:2438
 msgid "The font to use in the context browser."
 msgstr "प्रसङ्ग ब्राउजरमा प्रयोग गरिने फन्ट ।"
 
@@ -8687,8 +8695,10 @@ msgstr "रद्द गर्नुहोस्"
 #. i18n: tag string
 #. i18n: file ./servicebrowser/ampache/AmpacheConfigWidget.ui line 13
 #. i18n: tag string
+#. i18n: file ./servicebrowser/mp3tunes/Mp3tunesConfigWidget.ui line 13
+#. i18n: tag string
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 19
-#: rc.cpp:1901 rc.cpp:1934
+#: rc.cpp:1901 rc.cpp:1934 rc.cpp:1946
 msgid "Form"
 msgstr "फर्म"
 
@@ -8706,7 +8716,7 @@ msgstr "खराब सर्भर"
 #. i18n: file ./servicebrowser/ampache/AmpacheConfigWidget.ui line 54
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 568
-#: rc.cpp:1913 rc.cpp:2540
+#: rc.cpp:1913 rc.cpp:2552
 msgid "Username"
 msgstr "प्रयोगकर्ता नाम"
 
@@ -8722,7 +8732,7 @@ msgstr "प्रयोगकर्ता नाम"
 #. i18n: file ./amarokcore/amarok.kcfg line 556
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 573
-#: rc.cpp:1916 rc.cpp:2486 rc.cpp:2492 rc.cpp:2522 rc.cpp:2528 rc.cpp:2546
+#: rc.cpp:1916 rc.cpp:2498 rc.cpp:2504 rc.cpp:2534 rc.cpp:2540 rc.cpp:2558
 msgid "Password"
 msgstr "पासवर्ड"
 
@@ -8748,19 +8758,41 @@ msgstr "थप्नुहोस्"
 #. i18n: file ./servicebrowser/ampache/AmpacheConfigWidget.ui line 110
 #: rc.cpp:1931
 #, fuzzy
-#| msgid "Stale"
-msgid "Save"
-msgstr "स्टेल"
+#| msgid "Modify scheme"
+msgid "Modify"
+msgstr "योजना परिमार्जन गर्नुहोस्"
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/mp3tunes/Mp3tunesConfigWidget.ui line 19
+#: rc.cpp:1937
+msgid "Mp3tunes login"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/mp3tunes/Mp3tunesConfigWidget.ui line 25
+#: rc.cpp:1940
+#, fuzzy
+#| msgid "Email:"
+msgid "email:"
+msgstr "इमेल:"
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/mp3tunes/Mp3tunesConfigWidget.ui line 35
+#: rc.cpp:1943
+#, fuzzy
+#| msgid "Password:"
+msgid "password:"
+msgstr "पासवर्ड:"
 
 #. i18n: tag string
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 36
-#: rc.cpp:1937
+#: rc.cpp:1949
 msgid "Add Podcast..."
 msgstr "पोडकास्ट थप्नुहोस्..."
 
 #. i18n: tag string
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 39
-#: rc.cpp:1940
+#: rc.cpp:1952
 #, fuzzy
 #| msgid "Add Podcast..."
 msgid "add podcast..."
@@ -8768,7 +8800,7 @@ msgstr "पोडकास्ट थप्नुहोस्..."
 
 #. i18n: tag string
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 62
-#: rc.cpp:1943
+#: rc.cpp:1955
 msgid "Refresh All Podcasts"
 msgstr "सबै पोडकास्ट ताजा पार्नुहोस्"
 
@@ -8776,7 +8808,7 @@ msgstr "सबै पोडकास्ट ताजा पार्नुहो
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 85
 #. i18n: tag string
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 88
-#: rc.cpp:1946 rc.cpp:1949
+#: rc.cpp:1958 rc.cpp:1961
 #, fuzzy
 #| msgid "&Configure Podcasts..."
 msgid "Configure Podcasts..."
@@ -8784,37 +8816,37 @@ msgstr "पोडकास्ट कन्फिगर गर्नुहोस�
 
 #. i18n: tag string
 #. i18n: file ./playlistbrowser/PodcastCategoryBase.ui line 111
-#: rc.cpp:1952
+#: rc.cpp:1964
 msgid "Scan Interval..."
 msgstr "अन्तराल स्क्यान गर्नुहोस्..."
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 13
-#: rc.cpp:1955
+#: rc.cpp:1967
 msgid "Amarok Version"
 msgstr "अमारोक संस्करण"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 14
-#: rc.cpp:1958
+#: rc.cpp:1970
 msgid "Amarok version string, used to restart aRts in new installations."
 msgstr "नयाँ स्थापनामा कला पुन: सुरु गर्न प्रयोग गरिने, अमारोक संस्करण स्ट्रिङ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 18
-#: rc.cpp:1961
+#: rc.cpp:1973
 msgid "Position of player window"
 msgstr "प्लेयर सञ्झ्यालको स्थिति"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 19
-#: rc.cpp:1964
+#: rc.cpp:1976
 msgid "The position of the Amarok main window when Amarok is started."
 msgstr "अमारोक सुरु हुँदा अमारोक मुख्य सञ्झ्यालको स्थिति ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 22
-#: rc.cpp:1967
+#: rc.cpp:1979
 #, fuzzy
 #| msgid "Position of playlist window"
 msgid "Position of main window"
@@ -8822,7 +8854,7 @@ msgstr "प्लेसूची सञ्झ्यालको स्थित�
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 23
-#: rc.cpp:1970
+#: rc.cpp:1982
 #, fuzzy
 #| msgid "The position of the Amarok main window when Amarok is started."
 msgid "The position of the main window when Amarok is started."
@@ -8830,7 +8862,7 @@ msgstr "अमारोक सुरु हुँदा अमारोक म�
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 26
-#: rc.cpp:1973
+#: rc.cpp:1985
 #, fuzzy
 #| msgid "Size of playlist window"
 msgid "Size of main window"
@@ -8838,7 +8870,7 @@ msgstr "प्ले सूची सञ्झ्यालको साइज"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 27
-#: rc.cpp:1976
+#: rc.cpp:1988
 #, fuzzy
 #| msgid "The size of the playlist window when Amarok is started."
 msgid "The size of the main window when Amarok is started."
@@ -8846,13 +8878,13 @@ msgstr "अमारोक सुरु हुँदा प्लेसूची
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 30
-#: rc.cpp:1979
+#: rc.cpp:1991
 msgid "Whether to save playlist on quit"
 msgstr "बन्द गर्दा प्लेसूची बचत गर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 31
-#: rc.cpp:1982
+#: rc.cpp:1994
 msgid ""
 "If set, Amarok saves the current playlist on quit and restores it when "
 "restarted."
@@ -8862,13 +8894,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 35
-#: rc.cpp:1985
+#: rc.cpp:1997
 msgid "Whether to follow symlinks while adding items to playlist recursively"
 msgstr "प्लेसूचीमा पुनरावृत्तिक रूपमा वस्तुहरू थप्दा सिमलिङ्क अनुशरण गर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 36
-#: rc.cpp:1988
+#: rc.cpp:2000
 msgid ""
 "If set, amarok follows symlinks when adding files or directories to the "
 "playlist."
@@ -8878,13 +8910,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 40
-#: rc.cpp:1991
+#: rc.cpp:2003
 msgid "Whether to display a second, left time label."
 msgstr "बाँकी समय लेबुल, सेकेन्ड प्रदर्शन गर्ने ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 41
-#: rc.cpp:1994
+#: rc.cpp:2006
 msgid ""
 "Set this to display a second time label to the left of the seek slider in "
 "the player window."
@@ -8893,13 +8925,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 45
-#: rc.cpp:1997
+#: rc.cpp:2009
 msgid "Whether to display remaining track time in the left time label."
 msgstr "बाँकी ट्रयाक समय बायाँपट्टि समय लेबुलमा प्रदर्शन गर्ने ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 46
-#: rc.cpp:2000
+#: rc.cpp:2012
 msgid ""
 "Set this to display remaining track time instead of past track time in the "
 "player window."
@@ -8908,13 +8940,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 50
-#: rc.cpp:2003
+#: rc.cpp:2015
 msgid "Whether to show scores for tracks"
 msgstr "ट्रयाकहरूका लागि प्राप्ताङ्क देखाउने या नदेखाउने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 51
-#: rc.cpp:2006
+#: rc.cpp:2018
 msgid ""
 "A score is a number from 0 to 100, determined automatically by Amarok based "
 "on how often you listen to a track and how much of it you listen to."
@@ -8924,13 +8956,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 55
-#: rc.cpp:2009
+#: rc.cpp:2021
 msgid "Whether to show ratings for tracks"
 msgstr "ट्रयाकहरूका लागि मूल्याङ्कन देखाउने या नदेखाउने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 56
-#: rc.cpp:2012
+#: rc.cpp:2024
 msgid ""
 "A rating is 1 to 5 stars, set manually by you to describe how well you like "
 "a given track."
@@ -8940,13 +8972,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 60
-#: rc.cpp:2015
+#: rc.cpp:2027
 msgid "Which track(s) to play repeatedly"
 msgstr "बारबार कुन ट्रयाक प्ले गर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 61
-#: rc.cpp:2018
+#: rc.cpp:2030
 msgid ""
 "Whether to repeat the current track, the current album, or the current "
 "playlist indefinitely, or neither."
@@ -8956,37 +8988,37 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 64
-#: rc.cpp:2021
+#: rc.cpp:2033
 msgid "Don't Repeat"
 msgstr "नदोहोर्याउनुहोस्"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 67
-#: rc.cpp:2024
+#: rc.cpp:2036
 msgid "Repeat Track"
 msgstr "ट्रयाक दोहोर्याउनुहोस्"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 70
-#: rc.cpp:2027
+#: rc.cpp:2039
 msgid "Repeat Album"
 msgstr "एल्बम दोहोर्याउनुहोस्"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 73
-#: rc.cpp:2030
+#: rc.cpp:2042
 msgid "Repeat Playlist"
 msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 79
-#: rc.cpp:2033
+#: rc.cpp:2045
 msgid "Which tracks or albums to favor in Random Mode"
 msgstr "अनियमित मोडमा कुन ट्रयाक वा एल्बम मन पराउने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 80
-#: rc.cpp:2036
+#: rc.cpp:2048
 msgid ""
 "Tracks or albums with the chosen property will be more likely to be chosen "
 "in Random Mode."
@@ -8995,13 +9027,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 90
-#: rc.cpp:2039
+#: rc.cpp:2051
 msgid "Whether to play tracks or albums in random order"
 msgstr "अनियमित क्रममा ट्रयाक वा एल्बम प्ले गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 91
-#: rc.cpp:2042
+#: rc.cpp:2054
 msgid ""
 "If set, Amarok plays the tracks or albums in the playlist in a random order."
 msgstr ""
@@ -9009,56 +9041,56 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 100
-#: rc.cpp:2045
+#: rc.cpp:2057
 msgid "The most recently used Dynamic Mode"
 msgstr "सबै भन्दा पछि प्रयोग गरिएको गतिशील मोड "
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 101
-#: rc.cpp:2048
+#: rc.cpp:2060
 msgid ""
 "The title of the Dynamic Mode that was most recently loaded in the playlist"
 msgstr "गतिशील मोडको शीर्षक जुन प्लेसूचीमा सबभन्दा पछि लोड गरिएको हो"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 105
-#: rc.cpp:2051
+#: rc.cpp:2063
 msgid "The most recently used scoring script"
 msgstr "सबैभन्दा पछि प्रयोग गरिएको प्राप्ताङ्क स्क्रिप्ट"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 106
-#: rc.cpp:2054
+#: rc.cpp:2066
 msgid "The name of the custom scoring script which was most recently loaded"
 msgstr "अनुकूल प्राप्ताङ्क स्क्रिप्टको नाम जुन हालै लोड गरिएको छ"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 110
-#: rc.cpp:2057
+#: rc.cpp:2069
 msgid "Whether to show icon in system tray"
 msgstr "प्रणाली ट्रेमा प्रतिमा देखाउने या नदेखाउने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 111
-#: rc.cpp:2060
+#: rc.cpp:2072
 msgid "Enable/Disable tray icon for Amarok."
 msgstr "अमारोकका लागि ट्रे प्रतिमा सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 115
-#: rc.cpp:2063
+#: rc.cpp:2075
 msgid "Whether to animate the systray icon"
 msgstr "प्रणाली ट्रे प्रतिमा एनिमेट गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 116
-#: rc.cpp:2066
+#: rc.cpp:2078
 msgid "Enable/Disable tray icon animation."
 msgstr "ट्रे प्रतिमा एनिमेसन सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 120
-#: rc.cpp:2069
+#: rc.cpp:2081
 msgid ""
 "Whether to show moodbars in track sliders and in a column in the playlist "
 "window"
@@ -9066,7 +9098,7 @@ msgstr "प्लेसूची सञ्झ्यालमा स्तम्�
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 121
-#: rc.cpp:2072
+#: rc.cpp:2084
 msgid ""
 "Displays a visual representation of the current track in the slider bar of "
 "the player window, the playlist window, and in a column of the playlist "
@@ -9077,25 +9109,25 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 125
-#: rc.cpp:2075
+#: rc.cpp:2087
 msgid "Store Mood data files with music"
 msgstr "सङ्गीत सहित मोड डेटा फाइलहरू भण्डारण गर्नुहोस्"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 130
-#: rc.cpp:2081
+#: rc.cpp:2093
 msgid "Maximize color spread of Moodbar"
 msgstr "मोडबारको अधिक्तम रङ स्प्रेड"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 135
-#: rc.cpp:2087
+#: rc.cpp:2099
 msgid "Alter Mood data according to theme"
 msgstr "विषयवस्तु अनुसार मोड डेटा परिवर्तन गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 136
-#: rc.cpp:2090
+#: rc.cpp:2102
 msgid ""
 "The hues are distributed according to a colour theme, giving a customisable "
 "look."
@@ -9103,7 +9135,7 @@ msgstr "ह्युहरू अनुकूलनयोग्य देखा�
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 140
-#: rc.cpp:2093
+#: rc.cpp:2105
 msgid "Whether to show the toolbar in the playlist window."
 msgstr "प्लेसूची सञ्झ्यालमा उपकरणपट्टी देखाउने या नदेखाउने ।"
 
@@ -9111,43 +9143,43 @@ msgstr "प्लेसूची सञ्झ्यालमा उपकरण�
 #. i18n: file ./amarokcore/amarok.kcfg line 145
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 146
-#: rc.cpp:2096 rc.cpp:2099
+#: rc.cpp:2108 rc.cpp:2111
 msgid "Size of the cover previews in Contextbrowser and Covermanager"
 msgstr "प्रसङ्ग ब्राउजर र आवरण प्रबन्धकमा आवरण पूर्वावलोकनको साइज"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 150
-#: rc.cpp:2102
+#: rc.cpp:2114
 msgid "Whether to add directories to playlist recursively"
 msgstr "प्लेसूचीमा डाइरेक्टरीहरू पुनरावृत्तिक तरीकाले थप्ने या नथप्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 151
-#: rc.cpp:2105
+#: rc.cpp:2117
 msgid "Enable/Disable recursive directory adding to the playlist."
 msgstr "प्लेसूचीमा थपेर पुनरावृत्तिक डाइरेक्टरी सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 155
-#: rc.cpp:2108
+#: rc.cpp:2120
 msgid "Delay between tracks, in milliseconds"
 msgstr "मिलिसेकेन्डमा, ट्रयाकहरू बीच विलम्ब"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 156
-#: rc.cpp:2111
+#: rc.cpp:2123
 msgid "Delay between tracks, in milliseconds."
 msgstr "मिलिसेकेन्डमा, ट्रयाकहरू बीच विलम्ब ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 160
-#: rc.cpp:2114
+#: rc.cpp:2126
 msgid "Whether the playlist window is visible"
 msgstr "प्लेसूची सञ्झ्याल दृश्यात्मक छ या छैन"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 161
-#: rc.cpp:2117
+#: rc.cpp:2129
 msgid ""
 "Enable/Disable the playlist window. Equal to clicking the PL button in the "
 "player window."
@@ -9156,85 +9188,85 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 165
-#: rc.cpp:2120
+#: rc.cpp:2132
 msgid "Number of undo levels in playlist"
 msgstr "प्लेसूचीमा पूर्वावस्थामा फर्काएको तहहरूको सङ्ख्या"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 166
-#: rc.cpp:2123
+#: rc.cpp:2135
 msgid "The number of undo levels in the playlist."
 msgstr "प्लेसूचीमा पूर्वावस्थामा फर्काएको तहहरूको सङ्ख्या ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 170
-#: rc.cpp:2126
+#: rc.cpp:2138
 msgid "Index of current visual analyzer"
 msgstr "हालको दृश्यात्मक विश्लेषकको अनुक्रमणिका"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 171
-#: rc.cpp:2129
+#: rc.cpp:2141
 msgid "The ID of the visual analyzer to display."
 msgstr "प्रदर्शन गर्न दृश्यात्मक विश्लेषकको आईडी ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 175
-#: rc.cpp:2132
+#: rc.cpp:2144
 msgid "Index of analyzer displayed in playlist window"
 msgstr "प्लेसूची सञ्झ्यालमा प्रदर्शन गरिएको विश्लेषकको अनुक्रमणिका"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 176
-#: rc.cpp:2135
+#: rc.cpp:2147
 msgid "The ID of the visual analyzer to display in playlist window."
 msgstr "प्लेसूची सञ्झ्यालमा प्रदर्शन गर्न दृश्यात्मक विशलेषकको आईडी ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 180
-#: rc.cpp:2138
+#: rc.cpp:2150
 msgid "Playlist window splitter positions"
 msgstr "प्लेसूची सञ्झ्याल विभाजक स्थिति"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 181
-#: rc.cpp:2141
+#: rc.cpp:2153
 msgid "Currently unused"
 msgstr "हालै प्रयोग नगरिएको"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 185
-#: rc.cpp:2144
+#: rc.cpp:2156
 msgid "Whether a splash-screen should be displayed on startup"
 msgstr "स्प्ल्यास-पर्दा सुरूआतमा प्रदर्शन गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 186
-#: rc.cpp:2147
+#: rc.cpp:2159
 msgid "Enable/Disable splashscreen during Amarok startup."
 msgstr "अमारोक सुरु हुँदा स्प्ल्यास पर्दा सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 190
-#: rc.cpp:2150
+#: rc.cpp:2162
 msgid "Set CSS stylesheet used to customize ContextBrowser's rendering"
 msgstr "प्रसङ्ग ब्राउजरको रेन्डरिङ अनुकूलन गर्न प्रयोग गरिएको सीएसएस शैलीपाना सेट गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 191
-#: rc.cpp:2153
+#: rc.cpp:2165
 msgid "Set this to the style dir you want to use."
 msgstr "तपाईँले प्रयोग गर्न चाहनुभएको शैली डाइरेकटरीमा यो सेट गर्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 195
-#: rc.cpp:2156
+#: rc.cpp:2168
 msgid "Whether playlists store relative path"
 msgstr "प्लेसूचीले सापेक्षित मार्ग भण्डारण गर्छ या गर्दैन"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 196
-#: rc.cpp:2159
+#: rc.cpp:2171
 msgid ""
 "If set, Amarok's manually saved playlists will contain a relative path to "
 "each track, not an absolute path."
@@ -9244,19 +9276,19 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 200
-#: rc.cpp:2162
+#: rc.cpp:2174
 msgid "Whether organize files will overwrite existing files."
 msgstr "सङ्गठित फाइलहरूले अवस्थित फाइलहरू अधिलेखन गर्नेछ या छैन ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 201
-#: rc.cpp:2165
+#: rc.cpp:2177
 msgid "If set, Organize files will overwrite any existing destination."
 msgstr "यदि सेट भयो भने, सङ्गठित फाइलहरूले कुनै अवस्थित गन्तब्य अधिलेखन गर्नेछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 205
-#: rc.cpp:2168
+#: rc.cpp:2180
 msgid ""
 "Whether organize files will group directories according to their filetype."
 msgstr ""
@@ -9264,7 +9296,7 @@ msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 206
-#: rc.cpp:2171
+#: rc.cpp:2183
 msgid ""
 "If set, Organize files will group directories containing the same filetype."
 msgstr ""
@@ -9273,14 +9305,14 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 210
-#: rc.cpp:2174
+#: rc.cpp:2186
 msgid ""
 "Whether organize files will group artist starting in the same character."
 msgstr "सङ्गठित फाइलहरूले एउटै क्यारेक्टरमा सुरु गरेको कलाकारलाई समूहबद्ध गर्नेछ या छैन ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 211
-#: rc.cpp:2177
+#: rc.cpp:2189
 msgid ""
 "If set, Organize files will group artist starting in the same character."
 msgstr ""
@@ -9289,26 +9321,26 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 215
-#: rc.cpp:2180
+#: rc.cpp:2192
 msgid "Whether organize files will ignore The in artist names."
 msgstr "सङ्गठित फाइलहरूले कलाकार नामहरूमा उपेक्षा गर्नेछ या छैन ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 216
-#: rc.cpp:2183
+#: rc.cpp:2195
 msgid "If set, Organize files will ignore The in artist names."
 msgstr "यदि सेट भयो भने, सङ्गठित फाइलहरूले कलाकार नामहरूमा उपेक्षा गर्नेछ या छैन ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 220
-#: rc.cpp:2186
+#: rc.cpp:2198
 msgid ""
 "Whether organize files will replace spaces in filenames by an underscore."
 msgstr "सङ्गठित फाइलहरूले एउटा अन्डरस्क्रोरद्वारा फाइलनामहरूमा खाली स्थान बदल्नेछ या छैन ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 221
-#: rc.cpp:2189
+#: rc.cpp:2201
 msgid ""
 "If set, Organize files will replace spaces in filenames by an underscore."
 msgstr ""
@@ -9317,32 +9349,32 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 225
-#: rc.cpp:2192
+#: rc.cpp:2204
 msgid "Whether organize files will use cover art as folder icons."
 msgstr "सङ्गठित फाइलहरूले फोल्डर प्रतिमाको रूपमा आवरण कला प्रयोग गर्नेछ या छैन ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 226
-#: rc.cpp:2195
+#: rc.cpp:2207
 msgid "If set, Organize files will use cover art as folder icons."
 msgstr ""
 "यदि सेट भयो भने, सङ्गठित फइलहरूले फोल्डर प्रतिमाको रूपमा आवरण कला प्रयोग गर्नेछ या छैन ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 230
-#: rc.cpp:2198
+#: rc.cpp:2210
 msgid "Index of collection folder destination for Organize files."
 msgstr "सङ्गठित फाइलहरूका लागि सङ्कलन फोल्डर गन्तब्यको अनुक्रमणिका ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 231
-#: rc.cpp:2201
+#: rc.cpp:2213
 msgid "The ID of the collection folder destination for Organize files."
 msgstr "सङ्गठित फाइलहरूका लागि सङ्कलन फोल्डर गन्तब्यको आईडी ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 235
-#: rc.cpp:2204
+#: rc.cpp:2216
 msgid ""
 "Whether organize files will rename files in a manner compatible with vfat "
 "filesystems."
@@ -9352,7 +9384,7 @@ msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 236
-#: rc.cpp:2207
+#: rc.cpp:2219
 msgid ""
 "If set, Organize files will replace characters that are not compatible with "
 "vfat filesystems (such as ':', '*' and '?')."
@@ -9362,7 +9394,7 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 240
-#: rc.cpp:2210
+#: rc.cpp:2222
 msgid ""
 "Whether organize files will rename files such that they only contain 7-bit "
 "ASCII characters."
@@ -9372,7 +9404,7 @@ msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 241
-#: rc.cpp:2213
+#: rc.cpp:2225
 msgid ""
 "If set, Organize files will replace characters that are not compatible with "
 "the 7-bit ASCII character set."
@@ -9382,13 +9414,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 245
-#: rc.cpp:2216
+#: rc.cpp:2228
 msgid "Whether organize files will use a custom file naming scheme."
 msgstr "सङ्गठित फाइलहरूले अनुकूल फाइल नामकरण योजना प्रयोग गर्नेछ या छैन ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 246
-#: rc.cpp:2219
+#: rc.cpp:2231
 msgid ""
 "If set, Organize files will rename files according to a custom format string."
 msgstr ""
@@ -9397,7 +9429,7 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 250
-#: rc.cpp:2222
+#: rc.cpp:2234
 msgid "Format string for Organize files, if a custom naming scheme is used."
 msgstr ""
 "यदि अनुकूल नामकरण योजना प्रयोग गरिएको छ भने, सङ्गठित फाइलहरूका लागि स्ट्रिङ ढाँचाबद्ध "
@@ -9405,7 +9437,7 @@ msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 251
-#: rc.cpp:2225
+#: rc.cpp:2237
 msgid ""
 "If the custom filename scheme is enabled, then Organize files will rename "
 "files according to this format string."
@@ -9415,99 +9447,99 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 255
-#: rc.cpp:2228
+#: rc.cpp:2240
 msgid "Regular expression that is to be replaced."
 msgstr "प्रतिस्थापन गर्नुपर्ने नियमित अभिव्यक्ति ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 256
-#: rc.cpp:2231
+#: rc.cpp:2243
 msgid ""
 "Organize files will replace substrings matching this regular expression."
 msgstr "सङ्गठित फाइलहरूले यो नियमित अभिव्यक्ति मिल्ने उपस्ट्रिङहरू प्रतिस्थापन गर्नेछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 260
-#: rc.cpp:2234
+#: rc.cpp:2246
 msgid "Replacing string."
 msgstr "स्ट्रिङ प्रतिस्थापन गर्दै ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 261
-#: rc.cpp:2237
+#: rc.cpp:2249
 msgid "Organize files will replace matching substrings with this string."
 msgstr "सङ्गठित फाइलहरूले यो स्ट्रिङसँग मिल्ने उपस्ट्रिङहरू प्रतिस्थापन गर्नेछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 265
-#: rc.cpp:2240
+#: rc.cpp:2252
 msgid "Filename of the external web browser to be invoked by Amarok."
 msgstr "अमारोकद्वारा आह्वान गर्नुपर्ने बाह्य वेब ब्राउजरको फाइलनाम ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 269
-#: rc.cpp:2243
+#: rc.cpp:2255
 msgid "Whether Amarok's custom icon theme or the system icon theme is used."
 msgstr ""
 "अमारोकको अनुकूल प्रतिमा विषयवस्तु वा प्रणाली प्रतिमा विषयवस्तु प्रयोग गर्ने या नगर्ने ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 273
-#: rc.cpp:2246
+#: rc.cpp:2258
 msgid "Whether the collection view is in the flat or tree view mode"
 msgstr "सङ्कलन दृश्य समतलमा या ट्री दृश्य मोडमा छ"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 277
-#: rc.cpp:2249
+#: rc.cpp:2261
 msgid "Whether to use the CoverBling album art visualization."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 284
-#: rc.cpp:2252
+#: rc.cpp:2264
 msgid "Master volume"
 msgstr "मास्टर भोल्युम"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 285
-#: rc.cpp:2255
+#: rc.cpp:2267
 msgid "The Amarok master volume, a value between 0 (muted) and 100."
 msgstr "अमारोक मास्टर भोल्युम, (मौन गरिएको) ० र १०० बीचको मान ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 291
-#: rc.cpp:2258
+#: rc.cpp:2270
 msgid "Whether to crossfade between tracks"
 msgstr "ट्रयाकहरू बीच क्रसफेड गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 292
-#: rc.cpp:2261
+#: rc.cpp:2273
 msgid "Enable/Disable crossfading between track changes."
 msgstr "ट्रयाक परिवर्तनहरू बीच क्रसफेडिङ सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 296
-#: rc.cpp:2264
+#: rc.cpp:2276
 msgid "Length of crossfade, in milliseconds"
 msgstr "मिलिसेकेन्डमा, क्रसफेडको लम्बाइ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 297
-#: rc.cpp:2267
+#: rc.cpp:2279
 msgid "The length of the crossfade between tracks in milliseconds."
 msgstr "मिलिसेकेन्डमा ट्रयाकहरू बीचको क्रसफेडको लम्बाइ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 302
-#: rc.cpp:2270
+#: rc.cpp:2282
 msgid "When to Crossfade"
 msgstr "क्रसफेड कहिले गर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 303
-#: rc.cpp:2273
+#: rc.cpp:2285
 msgid ""
 "Determines whether to crossfade always, or on automatic/manual track changes "
 "only."
@@ -9516,43 +9548,43 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 307
-#: rc.cpp:2276
+#: rc.cpp:2288
 msgid "Whether to fade out tracks when pressing stop."
 msgstr "रोक्नुहोस् थिच्दा ट्रयाकहरू फेडआउट गर्ने या नगर्ने ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 308
-#: rc.cpp:2279
+#: rc.cpp:2291
 msgid "Enable/Disable fadeout."
 msgstr "फेडआउट सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 312
-#: rc.cpp:2282
+#: rc.cpp:2294
 msgid "Length of fadeout, in milliseconds"
 msgstr "मिलिसेकेन्डमा, फेडआउटको लम्बाइ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 313
-#: rc.cpp:2285
+#: rc.cpp:2297
 msgid "The length of the fadeout in milliseconds."
 msgstr "मिलिसेकेन्डमा फेडआउटको लम्बाइ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 318
-#: rc.cpp:2288
+#: rc.cpp:2300
 msgid "Whether to fade out when exiting the program."
 msgstr "कार्यक्रम अन्त्य गर्दा फेडआउट गर्ने या नगर्ने ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 322
-#: rc.cpp:2291
+#: rc.cpp:2303
 msgid "Sound system to use"
 msgstr "प्रयोग गर्नका लागि ध्वनि प्रणाली"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 323
-#: rc.cpp:2294
+#: rc.cpp:2306
 msgid ""
 "Select the sound system used to play media. Amarok currently support aRts, "
 "GStreamer, xine, and NMM; however, their availability depends on the "
@@ -9564,81 +9596,81 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 326
-#: rc.cpp:2297
+#: rc.cpp:2309
 msgid "Enables the equalizer plugin"
 msgstr "तुल्यकारक प्लगइन सक्षम पार्दछ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 327
-#: rc.cpp:2300
+#: rc.cpp:2312
 msgid "When enabled, an equalizer plugin filters the audio stream."
 msgstr "सक्षम पार्दा, एउटा तुल्यकारक प्लगइनले अडियो प्रवाह फिल्टर गर्दछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 331
-#: rc.cpp:2303
+#: rc.cpp:2315
 msgid "Equalizer pre-amplification value, range -100..100, 0 is normal."
 msgstr "तुल्यकारक पूर्व-प्रवर्धन मान, दायरा -१००..१००, ० सामान्य छ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 337
-#: rc.cpp:2306
+#: rc.cpp:2318
 msgid "Band gains for equalizer, 10 values, range -100..100, 0 is normal."
 msgstr ""
 "ब्यान्डले तुल्यकारकका लागि फाइदा गराउँदछ, १० मानहरू, दायरा -१००..१००, ० सामान्य छ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 341
-#: rc.cpp:2309
+#: rc.cpp:2321
 msgid "Equalizer preset name."
 msgstr "तुल्यकारकले नाम प्रिसेट गर्दछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 348
-#: rc.cpp:2312
+#: rc.cpp:2324
 msgid "Amazon locale for cover retrieval"
 msgstr "आवरण पुन: प्राप्तिका लागि अमाजोन लोकेल"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 349
-#: rc.cpp:2315
+#: rc.cpp:2327
 msgid "Determines which Amazon server cover images should be retrieved from."
 msgstr "यसबाट कुन अमाजोन सर्भर आवरण छविहरू पुन: प्राप्त गरिनेछ भन्ने निर्धारण गर्दछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 356
-#: rc.cpp:2318
+#: rc.cpp:2330
 msgid "Wikipedia locale for information retrieval"
 msgstr "सूचना पुन: प्राप्तिका लागि विकिपेडिया लोकेल"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 357
-#: rc.cpp:2321
+#: rc.cpp:2333
 msgid ""
 "Determines in which language the information is retrieved from Wikipedia."
 msgstr "विकिपेडियाबाट कुन भाषामा सूचना पुन: प्राप्त गरिन्छ भन्ने निर्धारण गर्दछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 364
-#: rc.cpp:2324
+#: rc.cpp:2336
 msgid "Use On-Screen Display"
 msgstr "पर्दा प्रदर्शन प्रयोग गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 365
-#: rc.cpp:2327
+#: rc.cpp:2339
 msgid "Enable/Disable the On-Screen Display."
 msgstr "पर्दा प्रदर्शन सक्षम/अक्षम पार्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 369
-#: rc.cpp:2330
+#: rc.cpp:2342
 msgid "Display the same information in the OSD as in the playlist columns."
 msgstr "प्लेसूची स्तम्भमा जस्तै ओएसडीमा एउटै सूचना प्रदर्शन गर्नुहोस् ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 370
-#: rc.cpp:2333
+#: rc.cpp:2345
 msgid ""
 "If enabled, the OSD will display the same information and in the same order "
 "as the columns in the playlist."
@@ -9648,61 +9680,61 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 374
-#: rc.cpp:2336
+#: rc.cpp:2348
 msgid "The OSD text to show"
 msgstr "देखाउनका लागि ओएसडी पाठ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 375
-#: rc.cpp:2339
+#: rc.cpp:2351
 msgid "Customize the OSD display text."
 msgstr "ओएसडी प्रदर्शन पाठ अनुकूलन गर्नुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 379
-#: rc.cpp:2342
+#: rc.cpp:2354
 msgid "Font for On-Screen Display"
 msgstr "पर्दा प्रदर्शनका लागि फन्ट"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 380
-#: rc.cpp:2345
+#: rc.cpp:2357
 msgid "The font to use for the On-Screen Display."
 msgstr "पर्दा प्रदर्शनका लागि प्रयोग गरिने फन्ट ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 384
-#: rc.cpp:2348
+#: rc.cpp:2360
 msgid "Draw a shadow around the text."
 msgstr "पाठ वरिपरि छायाँ कोर्नुहोस् ।"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 385
-#: rc.cpp:2351
+#: rc.cpp:2363
 msgid "Draws a shadow around the OSD-text."
 msgstr "ओएसडी पाठ वरिपरि छायाँ कोर्दछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 389
-#: rc.cpp:2354
+#: rc.cpp:2366
 msgid "Fake-translucency Toggle"
 msgstr "जाली-पारभसकता टगल"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 390
-#: rc.cpp:2357
+#: rc.cpp:2369
 msgid "Make the background of the OSD use fake-translucency."
 msgstr "जाली-पारभासकता प्रयोग गर्ने ओएसडीको पृष्ठभूमि बनाउँनुहोस् ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 394
-#: rc.cpp:2360
+#: rc.cpp:2372
 msgid "Whether to use custom colors for the OSD"
 msgstr "ओएसडीका लागि अनुकूल रङ प्रयोग गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 395
-#: rc.cpp:2363
+#: rc.cpp:2375
 msgid "You can use custom colors for the OSD if you set this true."
 msgstr ""
 "यदि तपाईँले यसलाई ठीक सेट गर्नुभएको छ भने तपाईँ ओएसडीका लागि अनुकूल रङ प्रयोग गर्न "
@@ -9710,13 +9742,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 399
-#: rc.cpp:2366
+#: rc.cpp:2378
 msgid "Font Color for On-Screen Display"
 msgstr "पर्दा प्रदर्शनका लागि फन्ट रङ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 400
-#: rc.cpp:2369
+#: rc.cpp:2381
 msgid ""
 "The color of the OSD text. The color is specified in RGB, a comma-separated "
 "list containing three integers between 0 and 255."
@@ -9726,13 +9758,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 404
-#: rc.cpp:2372
+#: rc.cpp:2384
 msgid "Background Color for On-Screen Display"
 msgstr "पर्दा प्रदर्शनका लागि पृष्ठभूमि रङ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 405
-#: rc.cpp:2375
+#: rc.cpp:2387
 msgid ""
 "The color of the OSD background. The color is specified in RGB, a comma-"
 "separated list containing three integers between 0 and 255."
@@ -9742,19 +9774,19 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 409
-#: rc.cpp:2378
+#: rc.cpp:2390
 msgid "The color that is used for new items in the playlist."
 msgstr "प्लेसूचीमा नयाँ वस्तुहरूका लागि प्रयोग गरिएको रङ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 413
-#: rc.cpp:2381
+#: rc.cpp:2393
 msgid "How many milliseconds the text should be displayed"
 msgstr "पाठ कति मिलिसेकेन्ड प्रदर्शन गर्नुपर्ने हो"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 414
-#: rc.cpp:2384
+#: rc.cpp:2396
 msgid ""
 "The time in milliseconds to show the OSD. A value of 0 means never hide. The "
 "default value is 5000 ms."
@@ -9764,13 +9796,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 419
-#: rc.cpp:2387
+#: rc.cpp:2399
 msgid "Y position offset"
 msgstr "वाई स्थिति अफसेट"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 420
-#: rc.cpp:2390
+#: rc.cpp:2402
 msgid ""
 "The Y position of the OSD relative to the chosen screen and  OSD alignment. "
 "If Top alignment is chosen the Y offset is the space between the upper part "
@@ -9785,13 +9817,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 426
-#: rc.cpp:2393
+#: rc.cpp:2405
 msgid "OSD screen"
 msgstr "ओएसडी पर्दा"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 427
-#: rc.cpp:2396
+#: rc.cpp:2408
 msgid ""
 "The screen that should display the OSD. For single-headed environments this "
 "setting should be 0."
@@ -9799,25 +9831,25 @@ msgstr "ओएसडी प्रदर्शन गर्ने पर्दा
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 431
-#: rc.cpp:2399
+#: rc.cpp:2411
 msgid "Whether the album cover should be shown"
 msgstr "एल्बम आवरण देखाउने या नदेखाउने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 432
-#: rc.cpp:2402
+#: rc.cpp:2414
 msgid "If enabled, shows the album cover in the OSD."
 msgstr "यदि सक्षम पारियो भने, ओएसडीमा एल्बम आवरण देखाउँदछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 436
-#: rc.cpp:2405
+#: rc.cpp:2417
 msgid "Align OSD to"
 msgstr "यसमा ओएसडी पङ्क्तिबद्ध गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 437
-#: rc.cpp:2408
+#: rc.cpp:2420
 msgid ""
 "The relative position of the OSD. Possible choices are Left, Middle, Right "
 "and Center."
@@ -9825,37 +9857,37 @@ msgstr "ओएसडीको सापेक्षित स्थिति ।
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 451
-#: rc.cpp:2411
+#: rc.cpp:2423
 msgid "Whether to use user-defined fonts"
 msgstr "प्रयोगकर्ता-परिभाषित फन्टहरू प्रयोग गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 452
-#: rc.cpp:2414
+#: rc.cpp:2426
 msgid "Enabled/Disables custom fonts."
 msgstr "अनुकूल फन्टहरू सक्षम पारियो/अक्षम पार्दछ ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 456
-#: rc.cpp:2417
+#: rc.cpp:2429
 msgid "Font in playlist window"
 msgstr "प्लेसूची सञ्झ्यालमा फन्ट"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 460
-#: rc.cpp:2423
+#: rc.cpp:2435
 msgid "Font in context browser"
 msgstr "प्रसङ्ग ब्राउजरमा फन्ट"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 467
-#: rc.cpp:2429
+#: rc.cpp:2441
 msgid "Resume playback of last played track on startup"
 msgstr "सुरूआतमा अन्तिममा प्ले गरिएको ट्रयाकको प्लेब्याक पुन: निरन्तरता दिनुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 468
-#: rc.cpp:2432
+#: rc.cpp:2444
 msgid "If set, Amarok resumes playback of the last played track on startup."
 msgstr ""
 "यदि सेट भयो भने, अमारोकले सुरुआतमा अन्तिममा प्ले गरिएको ट्रयाकको प्लेब्याक पुन: निरन्तरता "
@@ -9863,55 +9895,55 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 472
-#: rc.cpp:2435
+#: rc.cpp:2447
 msgid "Track URL to resume upon startup"
 msgstr "सुरूआत माथि पुन: निरन्तरता दिन ट्रयाक यूआरएल"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 473
-#: rc.cpp:2438
+#: rc.cpp:2450
 msgid "Internal: URL of the track to resume on startup."
 msgstr "आन्तरीक: सुरूआतमा पुन: निरन्तरता दिन ट्रयाकको यूआरएल ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 476
-#: rc.cpp:2441
+#: rc.cpp:2453
 msgid "Time to resume at, in milliseconds"
 msgstr "मिलिसेकेन्डमा, पुन: निरन्तरता दिन समय"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 477
-#: rc.cpp:2444
+#: rc.cpp:2456
 msgid "Internal: Playback position in the track to resume on startup."
 msgstr "आन्तरीक: सुरूआतमा पुन: निरन्तरता दिन ट्रयाकमा प्लेब्याकको स्थिति ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 483
-#: rc.cpp:2447
+#: rc.cpp:2459
 msgid "Database Engine"
 msgstr "डाटाबेस इन्जिन"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 484
-#: rc.cpp:2450
+#: rc.cpp:2462
 msgid "The database engine used to store collection"
 msgstr "सङ्कलन भण्डारण गर्न प्रयोग गरिने डाटाबेस इन्जिन"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 488
-#: rc.cpp:2453
+#: rc.cpp:2465
 msgid "Whether Collections folders are scanned recursively"
 msgstr "सङ्कलन फोल्डरहरू पुनरावृत्तिक रूपमा स्क्यान गरिएको छ या छैन"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 492
-#: rc.cpp:2456
+#: rc.cpp:2468
 msgid "Whether Collection folders are rescanned on change"
 msgstr "सङ्कलन फोल्डरहरू परिवर्तनमा पुन: स्क्यान गरिन्छ या गरिँदैन"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 496
-#: rc.cpp:2459
+#: rc.cpp:2471
 msgid "List of folders in the Collection"
 msgstr "सङ्कलनमा फोल्डरहरूको सूची"
 
@@ -9919,13 +9951,13 @@ msgstr "सङ्कलनमा फोल्डरहरूको सूची"
 #. i18n: file ./amarokcore/amarok.kcfg line 502
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 532
-#: rc.cpp:2462 rc.cpp:2498
+#: rc.cpp:2474 rc.cpp:2510
 msgid "Host"
 msgstr "होस्ट"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 503
-#: rc.cpp:2465
+#: rc.cpp:2477
 msgid "The host MySql server is running on"
 msgstr "होस्ट MySql सर्भर चलिरहेको छ"
 
@@ -9933,13 +9965,13 @@ msgstr "होस्ट MySql सर्भर चलिरहेको छ"
 #. i18n: file ./amarokcore/amarok.kcfg line 507
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 537
-#: rc.cpp:2468 rc.cpp:2504
+#: rc.cpp:2480 rc.cpp:2516
 msgid "Port"
 msgstr "पोर्ट"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 508
-#: rc.cpp:2471
+#: rc.cpp:2483
 msgid "The port MySql server is listening"
 msgstr "पोर्ट MySql सर्भर सुनिरहेको छ"
 
@@ -9947,7 +9979,7 @@ msgstr "पोर्ट MySql सर्भर सुनिरहेको छ"
 #. i18n: file ./amarokcore/amarok.kcfg line 512
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 542
-#: rc.cpp:2474 rc.cpp:2510
+#: rc.cpp:2486 rc.cpp:2522
 msgid "Database name"
 msgstr "डाटाबेस नाम"
 
@@ -9955,7 +9987,7 @@ msgstr "डाटाबेस नाम"
 #. i18n: file ./amarokcore/amarok.kcfg line 513
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 543
-#: rc.cpp:2477 rc.cpp:2513
+#: rc.cpp:2489 rc.cpp:2525
 msgid "The database's name"
 msgstr "डाटाबेसको नाम"
 
@@ -9963,13 +9995,13 @@ msgstr "डाटाबेसको नाम"
 #. i18n: file ./amarokcore/amarok.kcfg line 517
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 547
-#: rc.cpp:2480 rc.cpp:2516
+#: rc.cpp:2492 rc.cpp:2528
 msgid "User"
 msgstr "प्रयोगकर्ता"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 518
-#: rc.cpp:2483
+#: rc.cpp:2495
 msgid "The user's name to use for connecting MySql"
 msgstr "MySql जडान गर्नका लागि प्रयोग गर्न प्रयोगकर्ताको नाम"
 
@@ -9981,121 +10013,121 @@ msgstr "MySql जडान गर्नका लागि प्रयोग �
 #. i18n: file ./amarokcore/amarok.kcfg line 553
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 557
-#: rc.cpp:2489 rc.cpp:2495 rc.cpp:2525 rc.cpp:2531
+#: rc.cpp:2501 rc.cpp:2507 rc.cpp:2537 rc.cpp:2543
 msgid "The user's password"
 msgstr "प्रयोगकर्ताको पासवर्ड"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 533
-#: rc.cpp:2501
+#: rc.cpp:2513
 msgid "The host Postgresql server is running on"
 msgstr "होस्ट postgresql सर्भर चलिरहेको छ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 538
-#: rc.cpp:2507
+#: rc.cpp:2519
 msgid "The port Postgresql server is listening"
 msgstr "पोर्ट postgresql सर्भर सुनिरहेको छ"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 548
-#: rc.cpp:2519
+#: rc.cpp:2531
 msgid "The user's name to use for connecting Postgresql"
 msgstr "postgresql जडान गर्नका लागि प्रयोग गर्न प्रयोगकर्ताको नाम"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 563
-#: rc.cpp:2534
+#: rc.cpp:2546
 msgid "Submit played songs"
 msgstr "प्ले गरिएको गीत पेश गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 564
-#: rc.cpp:2537
+#: rc.cpp:2549
 msgid "Whether played songs are submitted to Audioscrobbler"
 msgstr "प्ले गरिएको गीतहरू अडियो स्क्रोब्लरमा पेश गर्ने या नगर्ने"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 569
-#: rc.cpp:2543
+#: rc.cpp:2555
 msgid "The username to use for connecting to Audioscrobbler"
 msgstr "अडियो स्क्रोब्लरमा जडान गर्नका लागि प्रयोग गर्न प्रयोगकर्ता नाम"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 574
-#: rc.cpp:2549
+#: rc.cpp:2561
 msgid "The password to use for connecting to Audioscrobbler"
 msgstr "अडियो स्क्रोब्लरमा जडान गर्नका लागि प्रयोग गर्न पासवर्ड"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 578
-#: rc.cpp:2552
+#: rc.cpp:2564
 msgid "Retrieve similar artists"
 msgstr "एकैखालको कलाकार पुन: प्रयास गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 579
-#: rc.cpp:2555
+#: rc.cpp:2567
 msgid "Whether similar songs are retrieved from Audioscrobbler"
 msgstr "एउटै गीतहरू अडियो स्क्रोब्लरबाट पुन: प्राप्त गरिन्छ या गरिँदैन"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 586
-#: rc.cpp:2558
+#: rc.cpp:2570
 msgid "Device type"
 msgstr "यन्त्र प्रकार"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 587
-#: rc.cpp:2561
+#: rc.cpp:2573
 msgid "The type of media device."
 msgstr "मिडिया यन्त्रको प्रकार ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 590
-#: rc.cpp:2564
+#: rc.cpp:2576
 msgid "Mount point"
 msgstr "माउन्ट बिन्दु"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 591
-#: rc.cpp:2567
+#: rc.cpp:2579
 msgid "The mount point used for the media device connection."
 msgstr "मिडिया यन्त्र जडानका लागि प्रयोग गरिएको माउन्ट बिन्दु ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 594
-#: rc.cpp:2570
+#: rc.cpp:2582
 msgid "Mount command"
 msgstr "माउन्ट आदेश"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 595
-#: rc.cpp:2573
+#: rc.cpp:2585
 msgid "The mount command used for the media device connection."
 msgstr "मिडिया यन्त्र जडानका लागि प्रयोग गरिएको माउन्ट आदेश ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 598
-#: rc.cpp:2576
+#: rc.cpp:2588
 msgid "UmountCommand"
 msgstr "आदेश अनमाउन्ट गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 599
-#: rc.cpp:2579
+#: rc.cpp:2591
 msgid "The umount command used for the media device connection."
 msgstr "मिडिया यन्त्र जडानका लागि प्रयोग गरिएको अनमाउन्ट आदेश ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 602
-#: rc.cpp:2582
+#: rc.cpp:2594
 msgid "Auto delete podcasts"
 msgstr "पोडकास्ट स्वत: मेट्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 603
-#: rc.cpp:2585
+#: rc.cpp:2597
 msgid ""
 "Whether podcasts shows already played are automatically deleted when media "
 "device is connected."
@@ -10105,13 +10137,13 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 606
-#: rc.cpp:2588
+#: rc.cpp:2600
 msgid "Sync stats"
 msgstr "तथ्याङ्क समक्रमण गर्नुहोस्"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 607
-#: rc.cpp:2591
+#: rc.cpp:2603
 msgid ""
 "Whether Amarok statistics should be synchronized with play count/ratings on "
 "device and whether tracks played should be submitted to last.fm."
@@ -10121,25 +10153,25 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 613
-#: rc.cpp:2594
+#: rc.cpp:2606
 msgid "Manually added servers"
 msgstr "म्यानुअल रूपमा थपिएको सर्भरहरू"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 614
-#: rc.cpp:2597
+#: rc.cpp:2609
 msgid "Music Sharing servers added by the user."
 msgstr "प्रयोगकर्ताद्वारा थप गरिएको सङ्गीत साझेदारी सर्भरहरू ।"
 
 #. i18n: tag label
 #. i18n: file ./amarokcore/amarok.kcfg line 618
-#: rc.cpp:2600
+#: rc.cpp:2612
 msgid "Server passwords"
 msgstr "सर्भर पासवर्ड"
 
 #. i18n: tag whatsthis
 #. i18n: file ./amarokcore/amarok.kcfg line 619
-#: rc.cpp:2603
+#: rc.cpp:2615
 msgid "Passwords stored by hostname."
 msgstr "होस्टनामद्वारा भण्डारण गरिएको पासवर्डहरू ।"
 
@@ -10881,6 +10913,10 @@ msgstr "एल्बम डाउनलोड गर्दै"
 msgid "Adding album cover to collection"
 msgstr "सङ्कलनमा एल्बम आवरण थप्दै"
 
+#: servicebrowser/lastfm/LastFmService.cpp:52
+msgid "Last.fm: The social music revolution."
+msgstr ""
+
 #: servicebrowser/shoutcast/ShoutcastService.cpp:65
 msgid "The biggest damn list of online radio stations on the net :-)"
 msgstr ""
@@ -10896,12 +10932,12 @@ msgid "Enter the server name and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
 
 #: servicebrowser/ampache/AmpacheService.cpp:152
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:121
+#: servicebrowser/mp3tunes/mp3tunesservice.cpp:128
 msgid "Authenticating"
 msgstr "प्रमाणीकरण असफलता"
 
 #: servicebrowser/ampache/AmpacheService.cpp:186
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:167
+#: servicebrowser/mp3tunes/mp3tunesservice.cpp:174
 #, fuzzy
 #| msgid "Authentication Failure"
 msgid "Authentication Error!"
@@ -10913,11 +10949,11 @@ msgstr "प्रमाणीकरण असफलता"
 msgid "Ampache Server %1"
 msgstr "उन्नत सर्भर"
 
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:70
+#: servicebrowser/mp3tunes/mp3tunesservice.cpp:77
 msgid "The Mp3Tunes Locker service. Access your stored music!"
 msgstr ""
 
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:95
+#: servicebrowser/mp3tunes/mp3tunesservice.cpp:102
 msgid "Enter a login and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
 
@@ -11779,6 +11815,11 @@ msgstr ""
 #: konquisidebar/universalamarok.cpp:317
 msgid "Build Collection..."
 msgstr "सङ्कलन निर्माण गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Stale"
+#~ msgid "Save"
+#~ msgstr "स्टेल"
 
 #, fuzzy
 #~| msgid "Initialize iPod?"
