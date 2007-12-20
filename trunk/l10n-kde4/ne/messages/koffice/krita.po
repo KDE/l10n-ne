@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-19 06:24+0100\n"
+"POT-Creation-Date: 2007-12-20 06:16+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1577,13 +1577,15 @@ msgstr "मिश्रण मोड"
 #. i18n: tag string
 #. i18n: file ./ui/wdglayerbox.ui line 87
 #: rc.cpp:347
-msgid "Create a new layer"
+#, fuzzy
+#| msgid "Create a new layer"
+msgid "Create a new mask or layer"
 msgstr "नयाँ तह सिर्जना गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 115
+#. i18n: file ./ui/wdglayerbox.ui line 112
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 118
+#. i18n: file ./ui/wdglayerbox.ui line 115
 #: rc.cpp:350 rc.cpp:353
 #, fuzzy
 #| msgid "Duplicate Mask"
@@ -1591,31 +1593,35 @@ msgid "Duplicate layer or mask"
 msgstr "मास्क नक्कल गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 121
+#. i18n: file ./ui/wdglayerbox.ui line 118
 #: rc.cpp:356
 msgid "Duplicate the currently selected layer or mask"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 146
+#. i18n: file ./ui/wdglayerbox.ui line 140
 #: rc.cpp:359
-msgid "Move layer down"
+#, fuzzy
+#| msgid "Move layer down"
+msgid "Move layer or mask down"
 msgstr "तहलाई तल सार्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 171
+#. i18n: file ./ui/wdglayerbox.ui line 162
 #: rc.cpp:362
-msgid "Move layer up"
+#, fuzzy
+#| msgid "Move layer up"
+msgid "Move layer or mask up"
 msgstr "तहलाई माथि सार्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 196
+#. i18n: file ./ui/wdglayerbox.ui line 184
 #: rc.cpp:365
 msgid "View or change the layer properties"
 msgstr "तहको विशेषता हेर्नुहोस् वा परिवर्तन गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 199
+#. i18n: file ./ui/wdglayerbox.ui line 187
 #. i18n: tag string
 #. i18n: file ./ui/wdgtextbrush.ui line 93
 #. i18n: tag string
@@ -1627,9 +1633,11 @@ msgid "..."
 msgstr "..."
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 234
+#. i18n: file ./ui/wdglayerbox.ui line 222
 #: rc.cpp:371
-msgid "Delete the layer"
+#, fuzzy
+#| msgid "Delete the layer"
+msgid "Delete the layer or mask"
 msgstr "तह मेट्नुहोस्"
 
 #. i18n: tag string
@@ -4199,7 +4207,7 @@ msgstr "गामुटको बाहिर"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/colorrange/wdg_colorrange.ui line 91
-#: rc.cpp:1822 ui/kis_selection_manager.cc:163
+#: rc.cpp:1822 ui/kis_selection_manager.cc:159
 #: plugins/filters/example/example.cc:67
 msgid "&Invert"
 msgstr "उल्टो पार्नुहोस्नुहोस्"
@@ -5909,8 +5917,13 @@ msgstr "फिल्टर मास्क..."
 msgid "Selection"
 msgstr "चयन"
 
-#: ui/kis_mask_manager.cc:381 ui/kis_mask_manager.cc:406
-#: ui/kis_layer_manager.cc:723
+#: ui/kis_mask_manager.cc:381
+#, fuzzy
+#| msgid "Mirror Layer X"
+msgid "Mirror Mask X"
+msgstr "दर्पण तह X"
+
+#: ui/kis_mask_manager.cc:406 ui/kis_layer_manager.cc:723
 msgid "Mirror Layer X"
 msgstr "दर्पण तह X"
 
@@ -6372,105 +6385,89 @@ msgstr ""
 "रूलरले छविमा माउसको ठाडो र तेर्सो स्थिति देखाउदछ र क्यानभासमा उपयुक्त स्थानमा तपाईँको "
 "माउस प्रयोग गर्न सकिन्छ । <p>रूलरलाई लुकाउन यो जाँचबाट हटाउनुहोस् ।"
 
-#: ui/kis_selection_manager.cc:147
+#: ui/kis_selection_manager.cc:143
 msgid "Paste into &New Image"
 msgstr "नयाँ छवि भित्र टाँस्नुहोस्"
 
-#: ui/kis_selection_manager.cc:158 ui/kis_selection_manager.cc:710
+#: ui/kis_selection_manager.cc:154 ui/kis_selection_manager.cc:685
 msgid "&Reselect"
 msgstr "पुन: चयन गर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:168
+#: ui/kis_selection_manager.cc:164
 msgid "Copy Selection to New Layer"
 msgstr "नयाँ तहमा चयन प्रतिलिपि बनाउनुहोस्"
 
-#: ui/kis_selection_manager.cc:173
+#: ui/kis_selection_manager.cc:169
 msgid "Cut Selection to New Layer"
 msgstr "नयाँ तहमा चयन काट्नुहोस्"
 
-#: ui/kis_selection_manager.cc:178
+#: ui/kis_selection_manager.cc:174
 msgid "Feather"
 msgstr "फिदर"
 
-#: ui/kis_selection_manager.cc:183 ui/kis_selection_manager.cc:686
+#: ui/kis_selection_manager.cc:179 ui/kis_selection_manager.cc:661
 msgid "Fill with Foreground Color"
 msgstr "अग्रभूमि रङसँग भर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:188 ui/kis_selection_manager.cc:691
+#: ui/kis_selection_manager.cc:184 ui/kis_selection_manager.cc:666
 msgid "Fill with Background Color"
 msgstr "पृष्ठभूमि रङसँग भर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:193 ui/kis_selection_manager.cc:696
+#: ui/kis_selection_manager.cc:189 ui/kis_selection_manager.cc:671
 msgid "Fill with Pattern"
 msgstr "बान्कीसँग भर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:197
+#: ui/kis_selection_manager.cc:193
 msgid "Display Selection"
 msgstr "चयन प्रर्दशन गर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:202
+#: ui/kis_selection_manager.cc:198
 msgid "Hide Selection"
 msgstr "चयन लुकाउनुहोस्"
 
-#: ui/kis_selection_manager.cc:205
-msgid "Expand..."
-msgstr "विस्तार गर्नुहोस्..."
-
-#: ui/kis_selection_manager.cc:209
+#: ui/kis_selection_manager.cc:201
 msgid "Smooth..."
 msgstr "महीन..."
 
-#: ui/kis_selection_manager.cc:213
-msgid "Contract..."
-msgstr "संकुचित गर्नुहोस्..."
-
-#: ui/kis_selection_manager.cc:217
-msgid "Similar"
-msgstr "समान"
-
-#: ui/kis_selection_manager.cc:221
-msgid "Transform..."
-msgstr "रूपान्तरण..."
-
-#: ui/kis_selection_manager.cc:429
+#: ui/kis_selection_manager.cc:404
 msgid "Cut"
 msgstr "काट्नुहोस्"
 
-#: ui/kis_selection_manager.cc:500
+#: ui/kis_selection_manager.cc:475
 msgid "(pasted)"
 msgstr "(टाँसियो)"
 
-#: ui/kis_selection_manager.cc:583
+#: ui/kis_selection_manager.cc:558
 msgid "Select All"
 msgstr "सबै चयन गर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:605
+#: ui/kis_selection_manager.cc:580
 msgid "Deselect"
 msgstr "चयन हटाउनुहोस्"
 
-#: ui/kis_selection_manager.cc:635
+#: ui/kis_selection_manager.cc:610
 msgid "Clear"
 msgstr "खालि गर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:735 plugins/filters/example/example.h:47
+#: ui/kis_selection_manager.cc:710 plugins/filters/example/example.h:47
 msgid "Invert"
 msgstr "उल्टाउनुहोस्"
 
-#: ui/kis_selection_manager.cc:789
+#: ui/kis_selection_manager.cc:764
 msgid "Feather..."
 msgstr "फिदर..."
 
-#: ui/kis_selection_manager.cc:868
+#: ui/kis_selection_manager.cc:843
 msgid "Grow"
 msgstr "बढाउनुहोस्"
 
-#: ui/kis_selection_manager.cc:1000
+#: ui/kis_selection_manager.cc:975
 #, fuzzy
 #| msgid "Sharpen"
 msgid "Shrink"
 msgstr "तिखो पार्नुहोस्"
 
-#: ui/kis_selection_manager.cc:1380
+#: ui/kis_selection_manager.cc:1355
 #, fuzzy
 #| msgid "Border..."
 msgid "Border"
@@ -6719,20 +6716,20 @@ msgstr "साइन नगरिएको Int 8 आधा हिस्टोग
 msgid "YCBCR (8-bit integer/channel)"
 msgstr "YCBCR (८-बिट इन्टिजर/च्यानल)"
 
-#: colorspaces/gray_u16/gray_u16_plugin.cc:46
+#: colorspaces/gray_u16_no_alpa/gray_u16_plugin.cc:46
 msgid "GRAY/Alpha16 Histogram"
 msgstr "GRAY/अल्फा १६ हिस्टोग्राम"
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.h:48
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.h:48
 msgid "Grayscale (16-bit integer/channel)"
 msgstr "ग्रेस्केल (१६-बिट इन्टिगर/च्यानल)"
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.cc:34
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.cc:34
 msgid "Grayscale 16-bit integer/channel)"
 msgstr "ग्रेस्केल (१६-बिट इन्टिगर/च्यानल)"
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.cc:36
-#: colorspaces/gray_u8/kis_gray_colorspace.cc:34
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.cc:36
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:34
 msgid "Gray"
 msgstr "खैरो्रे"
 
@@ -6793,17 +6790,17 @@ msgstr "छोटो"
 msgid "LMS Cone Space (32-bit float/channel)"
 msgstr "LMS कोन खाली स्थान (३२-बिट उत्प्लावन/च्यानल)"
 
-#: colorspaces/gray_u8/kis_gray_colorspace.cc:32
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:32
 #, fuzzy
 #| msgid "Grayscale (8-bit integer/channel)"
 msgid "Grayscale without alpha (8-bit integer/channel)"
 msgstr "ग्रेस्केल (८-बिट इन्टिगर/च्यानल)"
 
-#: colorspaces/gray_u8/kis_gray_colorspace.h:48
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.h:48
 msgid "Grayscale (8-bit integer/channel)"
 msgstr "ग्रेस्केल (८-बिट इन्टिगर/च्यानल)"
 
-#: colorspaces/gray_u8/gray_plugin.cc:51
+#: colorspaces/gray_u8_no_alpha/gray_plugin.cc:51
 msgid "GRAY/Alpha8 Histogram"
 msgstr "GRAY/अल्फा 8 हिस्टोग्राम"
 
@@ -7088,11 +7085,11 @@ msgid "Select similar colors"
 msgstr "उस्तै रङ चयन गर्नुहोस्"
 
 #: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:146
-#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:218
+#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:216
 msgid "Similar Selection"
 msgstr "उस्तै चयन"
 
-#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:239
+#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:237
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:155
 msgid "Fuzziness: "
 msgstr "अस्पष्टता: "
@@ -8040,6 +8037,18 @@ msgstr "बम्पम्याप"
 #: plugins/filters/bumpmap/bumpmap.cc:93
 msgid "&Bumpmap..."
 msgstr "बम्पम्याप..."
+
+#~ msgid "Expand..."
+#~ msgstr "विस्तार गर्नुहोस्..."
+
+#~ msgid "Contract..."
+#~ msgstr "संकुचित गर्नुहोस्..."
+
+#~ msgid "Similar"
+#~ msgstr "समान"
+
+#~ msgid "Transform..."
+#~ msgstr "रूपान्तरण..."
 
 #~ msgid "Applying sobel filter..."
 #~ msgstr "सोबेल फिल्टर लागू गर्दैछ..."
