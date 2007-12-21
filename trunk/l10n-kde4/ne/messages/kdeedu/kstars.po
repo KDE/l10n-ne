@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-20 06:15+0100\n"
+"POT-Creation-Date: 2007-12-21 06:16+0100\n"
 "PO-Revision-Date: 2007-09-17 20:37+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Help on custom catalog file format"
 msgstr "अनुकूल विवरणिका फाइल ढाँचामा मद्दत गर्नुहोस्"
 
-#: addcatdialog.cpp:146 skycomponents/customcatalogcomponent.cpp:290
+#: addcatdialog.cpp:146 skycomponents/customcatalogcomponent.cpp:288
 msgid "Custom"
 msgstr "अनुकूल"
 
@@ -125,13 +125,13 @@ msgid "Catalog Preview"
 msgstr "विवरणिका पूर्वावलोकन"
 
 #: addcatdialog.cpp:213 fitsviewer.cpp:292 imageviewer.cpp:222
-#: kstarsactions.cpp:505 tools/scriptbuilder.cpp:971
+#: kstarsactions.cpp:505 tools/scriptbuilder.cpp:1020
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
 msgstr "\"%1\" नामकरण गरिएको फाइल पहिल्यै अवस्थित छ । यसलाई अधिलेखन गर्नुहुन्छ ?"
 
 #: addcatdialog.cpp:215 fitsviewer.cpp:294 imageviewer.cpp:224
-#: kstarsactions.cpp:507 tools/scriptbuilder.cpp:973
+#: kstarsactions.cpp:507 tools/scriptbuilder.cpp:1022
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
@@ -162,7 +162,7 @@ msgstr ""
 "खोल्न चाहनुहुन्छ ?"
 
 #: addlinkdialog.cpp:53 fitsviewer.cpp:322 streamwg.cpp:203
-#: tools/scriptbuilder.cpp:937 tools/scriptbuilder.cpp:1010
+#: tools/scriptbuilder.cpp:986 tools/scriptbuilder.cpp:1059
 msgid "Invalid URL"
 msgstr "अवैध यूआरएल"
 
@@ -234,17 +234,17 @@ msgctxt "refers to the band of stars in the sky due to the Galactic plane"
 msgid "Milky Way"
 msgstr "मिल्की वे"
 
-#: colorscheme.cpp:77 skycomponents/equator.cpp:32
+#: colorscheme.cpp:77 skycomponents/equator.cpp:31
 msgid "Equator"
 msgstr "भूमध्य रेखा"
 
 #. i18n: tag string
 #. i18n: file opsguides.ui line 209
-#: colorscheme.cpp:80 rc.cpp:2196 rc.cpp:3859 skycomponents/ecliptic.cpp:32
+#: colorscheme.cpp:80 rc.cpp:2196 rc.cpp:3859 skycomponents/ecliptic.cpp:31
 msgid "Ecliptic"
 msgstr "क्रांतिमण्डल"
 
-#: colorscheme.cpp:83 skycomponents/horizoncomponent.cpp:86
+#: colorscheme.cpp:83 skycomponents/horizoncomponent.cpp:87
 msgid "Horizon"
 msgstr "क्षितिज"
 
@@ -252,7 +252,7 @@ msgstr "क्षितिज"
 msgid "Compass Labels"
 msgstr "कम्पास लेबुल"
 
-#: colorscheme.cpp:89 skycomponents/coordinategrid.cpp:32
+#: colorscheme.cpp:89 skycomponents/coordinategrid.cpp:31
 msgid "Coordinate Grid"
 msgstr "समकक्ष ग्रिड"
 
@@ -297,7 +297,30 @@ msgstr "उपग्रह ट्रयाक"
 msgid "No color named \"%1\" found in color scheme."
 msgstr "रङ योजनामा \"%1\" नामकरण गरिएको कुनै रङ फेला परेन ।"
 
-#: colorscheme.cpp:261
+#: colorscheme.cpp:190 kstarsdata.cpp:1093 opscolors.cpp:55
+#: tools/scriptbuilder.cpp:911
+msgctxt "use default color scheme"
+msgid "Default Colors"
+msgstr "पूर्वानिर्धारित रङ"
+
+#: colorscheme.cpp:191 kstarsdata.cpp:1094 opscolors.cpp:56
+#: tools/scriptbuilder.cpp:912
+msgctxt "use 'star chart' color scheme"
+msgid "Star Chart"
+msgstr "तारा चित्रपट"
+
+#: colorscheme.cpp:192 kstarsdata.cpp:1095 opscolors.cpp:57
+#: tools/scriptbuilder.cpp:913
+msgctxt "use 'night vision' color scheme"
+msgid "Night Vision"
+msgstr "नाइट भिजन"
+
+#: colorscheme.cpp:207 kstarsdata.cpp:1112
+#, kde-format
+msgid "Unable to load color scheme named %1. Also tried %2."
+msgstr " %1 नामकरण गरिएको रङ योजना लोड गर्न असक्षम भयो । %2 पनि प्रयास गरियो ।"
+
+#: colorscheme.cpp:284
 msgid ""
 "Local color scheme file could not be opened.\n"
 "Scheme cannot be recorded."
@@ -305,7 +328,7 @@ msgstr ""
 "स्थानीय रङ  योजना फाइल खोल्न सकेन ।\n"
 "योजना रेकर्ड गर्न सकिएन ।"
 
-#: colorscheme.cpp:262 colorscheme.cpp:280 indidriver.cpp:515
+#: colorscheme.cpp:285 colorscheme.cpp:303 indidriver.cpp:515
 #: indidriver.cpp:974 kstarsactions.cpp:583 locationdialog.cpp:246
 #: opscolors.cpp:192 skymap.cpp:1593 tools/modcalcaltaz.cpp:267
 #: tools/modcalcangdist.cpp:143 tools/modcalcapcoord.cpp:165
@@ -314,12 +337,12 @@ msgstr ""
 #: tools/modcalcjd.cpp:123 tools/modcalcplanets.cpp:278
 #: tools/modcalcsidtime.cpp:206 tools/modcalcvizequinox.cpp:95
 #: tools/modcalcvlsr.cpp:271 tools/observinglist.cpp:560
-#: tools/observinglist.cpp:635 tools/scriptbuilder.cpp:926
-#: tools/scriptbuilder.cpp:987 tools/scriptbuilder.cpp:1053
+#: tools/observinglist.cpp:635 tools/scriptbuilder.cpp:975
+#: tools/scriptbuilder.cpp:1036 tools/scriptbuilder.cpp:1102
 msgid "Could Not Open File"
 msgstr "फाइल खोल्न सकेन"
 
-#: colorscheme.cpp:279
+#: colorscheme.cpp:302
 msgid ""
 "Local color scheme index file could not be opened.\n"
 "Scheme cannot be recorded."
@@ -327,7 +350,7 @@ msgstr ""
 "स्थानीय रङ योजना अनुक्रमणिका फाइल खोल्न सकेन ।\n"
 "योजना रेकर्ड गर्न सकिएन ।"
 
-#: colorscheme.cpp:288
+#: colorscheme.cpp:311
 msgid ""
 "Invalid filename requested.\n"
 "Scheme cannot be recorded."
@@ -335,7 +358,7 @@ msgstr ""
 "अवैध फाइलनाम अनुरोध गरियो ।\n"
 "योजना रेकर्ड गर्न सकिएन ।"
 
-#: colorscheme.cpp:289
+#: colorscheme.cpp:312
 msgid "Invalid Filename"
 msgstr "अवैध फाइलनाम"
 
@@ -354,8 +377,8 @@ msgstr "सामान्य"
 #: detaildialog.cpp:118 kspopupmenu.cpp:75 kspopupmenu.cpp:124
 #: kstarsdata.cpp:78 kstarsinit.cpp:649 starobject.cpp:356 starobject.cpp:375
 #: starobject.cpp:380 starobject.cpp:383 tools/observinglist.cpp:286
-#: tools/wutdialog.cpp:256 skycomponents/starcomponent.cpp:451
-#: skycomponents/starcomponent.cpp:465
+#: tools/wutdialog.cpp:256 skycomponents/starcomponent.cpp:450
+#: skycomponents/starcomponent.cpp:464
 msgid "star"
 msgstr "तारा"
 
@@ -712,8 +735,8 @@ msgstr "FITS बचत"
 msgid "File saved."
 msgstr "फाइल बचत गरियो ।"
 
-#: fitsviewer.cpp:321 streamwg.cpp:202 tools/scriptbuilder.cpp:936
-#: tools/scriptbuilder.cpp:1009
+#: fitsviewer.cpp:321 streamwg.cpp:202 tools/scriptbuilder.cpp:985
+#: tools/scriptbuilder.cpp:1058
 #, kde-format
 msgid "Invalid URL: %1"
 msgstr "अवैध यूआरएल: %1"
@@ -21068,14 +21091,14 @@ msgstr "अर्को प्रयास गर्नुहोस्"
 msgid "Do Not Try"
 msgstr "प्रयास नगर्नुहोस्"
 
-#: kstarsactions.cpp:555 kstarsdcop.cpp:464 streamwg.cpp:195
-#: tools/scriptbuilder.cpp:1001
+#: kstarsactions.cpp:555 kstarsdcop.cpp:440 streamwg.cpp:195
+#: tools/scriptbuilder.cpp:1050
 #, kde-format
 msgid "Could not upload image to remote location: %1"
 msgstr "टाढाको स्थानमा छवि अपलोड गर्न सकेन: %1"
 
-#: kstarsactions.cpp:556 kstarsdcop.cpp:465 streamwg.cpp:196
-#: tools/scriptbuilder.cpp:1002
+#: kstarsactions.cpp:556 kstarsdcop.cpp:441 streamwg.cpp:196
+#: tools/scriptbuilder.cpp:1051
 msgid "Could not upload file"
 msgstr "फाइल अपलोड गर्न सकेन"
 
@@ -21083,11 +21106,11 @@ msgstr "फाइल अपलोड गर्न सकेन"
 msgid "Could not download the file."
 msgstr "फाइल डाउनलोड गर्न सकेन ।"
 
-#: kstarsactions.cpp:560 tools/scriptbuilder.cpp:920
+#: kstarsactions.cpp:560 tools/scriptbuilder.cpp:969
 msgid "Download Error"
 msgstr "त्रुटि डाउनलोड गर्नुहोस्"
 
-#: kstarsactions.cpp:582 kstarsdata.cpp:997 tools/observinglist.cpp:559
+#: kstarsactions.cpp:582 kstarsdata.cpp:986 tools/observinglist.cpp:559
 #, kde-format
 msgid "Could not open file %1"
 msgstr "%1 फाइल खोल्न सकेन"
@@ -21350,12 +21373,12 @@ msgstr ""
 msgid "Object named %1 not found"
 msgstr " %1 नामकरण गरिएको कुनै वस्तु फेला परेन ।"
 
-#: kstarsdata.cpp:1097
+#: kstarsdata.cpp:1152
 #, kde-format
 msgid "Could not set time: %1 / %2 / %3 ; %4:%5:%6"
 msgstr "समय सेट गर्न सकेन: %1 / %2 / %3 ; %4:%5:%6"
 
-#: kstarsdata.cpp:1214
+#: kstarsdata.cpp:1269
 #, kde-format
 msgid "Could not set location named %1, %2, %3"
 msgstr " %1, %2, %3 नामकरण गरिएको स्थान सेट गर्न सकेन"
@@ -21380,42 +21403,22 @@ msgstr "त्रुटि [DCOP setGeoLocation]: शहर "
 msgid " not found in database."
 msgstr "डाटाबेसमा फेला परेन ।"
 
-#: kstarsdcop.cpp:357 opscolors.cpp:55 tools/scriptbuilder.cpp:862
-msgctxt "use default color scheme"
-msgid "Default Colors"
-msgstr "पूर्वानिर्धारित रङ"
-
-#: kstarsdcop.cpp:358 opscolors.cpp:56 tools/scriptbuilder.cpp:863
-msgctxt "use 'star chart' color scheme"
-msgid "Star Chart"
-msgstr "तारा चित्रपट"
-
-#: kstarsdcop.cpp:359 opscolors.cpp:57 tools/scriptbuilder.cpp:864
-msgctxt "use 'night vision' color scheme"
-msgid "Night Vision"
-msgstr "नाइट भिजन"
-
-#: kstarsdcop.cpp:376
-#, kde-format
-msgid "Unable to load color scheme named %1. Also tried %2."
-msgstr " %1 नामकरण गरिएको रङ योजना लोड गर्न असक्षम भयो । %2 पनि प्रयास गरियो ।"
-
-#: kstarsdcop.cpp:426 main.cpp:83
+#: kstarsdcop.cpp:402 main.cpp:83
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
 msgstr "पीएनजी मानिएको; %1 को छवि ढाँचा पद वर्णन गर्न सकेन ।"
 
-#: kstarsdcop.cpp:459
+#: kstarsdcop.cpp:435
 #, kde-format
 msgid "Error: Unable to save image: %1 "
 msgstr "त्रुटि: छवि बचत गर्न असक्षम भयो: %1 "
 
-#: kstarsdcop.cpp:460
+#: kstarsdcop.cpp:436
 #, kde-format
 msgid "Image saved to file: %1"
 msgstr "फाइलमा छवि बचत गरियो: %1"
 
-#: kstarsdcop.cpp:484
+#: kstarsdcop.cpp:460
 msgid "Print Sky"
 msgstr "प्रिन्ट स्काइ"
 
@@ -22115,11 +22118,11 @@ msgstr "आकाशे छवि फालिदै"
 msgid "Using CPU date/time instead."
 msgstr "सट्टामा सीपीयू मिति/समय प्रयोग गर्दै ।"
 
-#: main.cpp:150
+#: main.cpp:153
 msgid "Script executed."
 msgstr "स्क्रिप्ट कार्यान्वयन गरियो ।"
 
-#: main.cpp:152
+#: main.cpp:155
 msgid "Could not execute script."
 msgstr "स्क्रिप्ट कार्यान्वयन गर्न सकेन ।"
 
@@ -22149,7 +22152,7 @@ msgstr "अस्तव्यस्त विवरणिका (छवि)"
 msgid "Messier Catalog (symbols)"
 msgstr "अस्तव्यस्त विवरणिका (सङ्केत)"
 
-#: opscolors.cpp:58 tools/scriptbuilder.cpp:865
+#: opscolors.cpp:58 tools/scriptbuilder.cpp:914
 msgctxt "use 'moonless night' color scheme"
 msgid "Moonless Night"
 msgstr "चन्द्रमारहित रात"
@@ -24985,7 +24988,7 @@ msgstr ""
 
 #. i18n: tag label
 #. i18n: file kstars.kcfg line 580
-#: rc.cpp:1248 tools/scriptbuilder.cpp:797
+#: rc.cpp:1248 tools/scriptbuilder.cpp:844
 msgid "Automatically add trail to centered solar system body?"
 msgstr "केन्द्रिकृत सौरमण्डल भागमा स्वचालित रूपमा खोज थप्न चाहनुहुन्छ ?"
 
@@ -26531,7 +26534,7 @@ msgstr "यदि जाँच गरियो भने, नक्सा चा
 
 #. i18n: tag string
 #. i18n: file opsadvanced.ui line 339
-#: rc.cpp:1920 rc.cpp:3583 skycomponents/milkyway.cpp:39
+#: rc.cpp:1920 rc.cpp:3583 skycomponents/milkyway.cpp:38
 msgid "Milky Way"
 msgstr "मिल्की वे"
 
@@ -27184,7 +27187,7 @@ msgstr "यादि जाँच गरियो भने, शनि ग्र
 #. i18n: file tools/modcalcplanets.ui line 608
 #: rc.cpp:2229 rc.cpp:3892 rc.cpp:5433 rc.cpp:5517
 #: tools/modcalcplanets.cpp:122 tools/modcalcplanets.cpp:343
-#: skycomponents/solarsystemcomposite.cpp:57
+#: skycomponents/solarsystemcomposite.cpp:56
 msgid "Saturn"
 msgstr "शनि ग्रह"
 
@@ -27228,7 +27231,7 @@ msgstr "यदि जाँच गरियो भने, मंगल ग्र
 #. i18n: file tools/modcalcplanets.ui line 598
 #: rc.cpp:2247 rc.cpp:3910 rc.cpp:5427 rc.cpp:5511
 #: tools/modcalcplanets.cpp:110 tools/modcalcplanets.cpp:343
-#: skycomponents/solarsystemcomposite.cpp:52
+#: skycomponents/solarsystemcomposite.cpp:51
 msgid "Mars"
 msgstr "मंगल ग्रह"
 
@@ -27325,7 +27328,7 @@ msgstr "यदि जाँच गरियो भने, शुक्र ग्
 #. i18n: file tools/modcalcplanets.ui line 588
 #: rc.cpp:2292 rc.cpp:3955 rc.cpp:5421 rc.cpp:5505
 #: tools/modcalcplanets.cpp:101 tools/modcalcplanets.cpp:342
-#: skycomponents/solarsystemcomposite.cpp:51
+#: skycomponents/solarsystemcomposite.cpp:50
 msgid "Venus"
 msgstr "शुक्र"
 
@@ -27367,7 +27370,7 @@ msgstr "यदि जाँच गरियो भने, बृहस्पत�
 #. i18n: file tools/modcalcplanets.ui line 603
 #: rc.cpp:2310 rc.cpp:3973 rc.cpp:5430 rc.cpp:5514
 #: tools/modcalcplanets.cpp:116 tools/modcalcplanets.cpp:343
-#: skycomponents/solarsystemcomposite.cpp:53
+#: skycomponents/solarsystemcomposite.cpp:52
 msgid "Jupiter"
 msgstr "बृहस्पति"
 
@@ -27408,7 +27411,7 @@ msgstr "यदि जाँच गरियो भने, बुध ग्रह
 #. i18n: tag string
 #. i18n: file tools/modcalcplanets.ui line 583
 #: rc.cpp:2328 rc.cpp:3991 rc.cpp:5418 rc.cpp:5502 tools/modcalcplanets.cpp:95
-#: tools/modcalcplanets.cpp:342 skycomponents/solarsystemcomposite.cpp:50
+#: tools/modcalcplanets.cpp:342 skycomponents/solarsystemcomposite.cpp:49
 msgid "Mercury"
 msgstr "बुध"
 
@@ -27432,7 +27435,7 @@ msgstr "यदि जाँच गरियो भने, वरुण ग्र
 #. i18n: file tools/modcalcplanets.ui line 618
 #: rc.cpp:2337 rc.cpp:4000 rc.cpp:5439 rc.cpp:5523
 #: tools/modcalcplanets.cpp:134 tools/modcalcplanets.cpp:344
-#: skycomponents/solarsystemcomposite.cpp:59
+#: skycomponents/solarsystemcomposite.cpp:58
 msgid "Neptune"
 msgstr "वरुण ग्रह"
 
@@ -27456,7 +27459,7 @@ msgstr "यदि जाँच गरियो भने, अरूण ग्र
 #. i18n: file tools/modcalcplanets.ui line 613
 #: rc.cpp:2346 rc.cpp:4009 rc.cpp:5436 rc.cpp:5520
 #: tools/modcalcplanets.cpp:128 tools/modcalcplanets.cpp:344
-#: skycomponents/solarsystemcomposite.cpp:58
+#: skycomponents/solarsystemcomposite.cpp:57
 msgid "Uranus"
 msgstr "अरुण ग्रह"
 
@@ -29795,7 +29798,7 @@ msgstr "सौरमण्डल भाग:"
 #. i18n: file tools/modcalcplanets.ui line 593
 #: rc.cpp:5424 rc.cpp:5508 tools/modcalcplanets.cpp:90
 #: tools/modcalcplanets.cpp:342 tools/modcalcplanets.cpp:464
-#: skycomponents/solarsystemcomposite.cpp:44
+#: skycomponents/solarsystemcomposite.cpp:43
 msgid "Earth"
 msgstr "पृथ्वी"
 
@@ -32575,8 +32578,8 @@ msgstr "AAVSO तारा सूची सफलतापूर्वक डा
 #: tools/modcalcgeodcoord.cpp:231 tools/modcalcjd.cpp:122
 #: tools/modcalcplanets.cpp:277 tools/modcalcsidtime.cpp:205
 #: tools/modcalcvizequinox.cpp:94 tools/modcalcvlsr.cpp:270
-#: tools/scriptbuilder.cpp:925 tools/scriptbuilder.cpp:986
-#: tools/scriptbuilder.cpp:1052
+#: tools/scriptbuilder.cpp:974 tools/scriptbuilder.cpp:1035
+#: tools/scriptbuilder.cpp:1101
 #, kde-format
 msgid "Could not open file %1."
 msgstr "फाइल %1 खुल्न सकेन ।"
@@ -32909,21 +32912,21 @@ msgctxt ""
 msgid "Y-position (AU)"
 msgstr "वाइ-स्थिति (AU)"
 
-#: tools/scriptbuilder.cpp:58
+#: tools/scriptbuilder.cpp:59
 #, fuzzy
 msgid "Options"
 msgstr "विकल्प:"
 
-#: tools/scriptbuilder.cpp:76
+#: tools/scriptbuilder.cpp:112
 #, fuzzy
 msgid "Script Data"
 msgstr "स्क्रिप्ट नाम:"
 
-#: tools/scriptbuilder.cpp:102
+#: tools/scriptbuilder.cpp:138
 msgid "Script Builder"
 msgstr "स्क्रिप्ट निर्माणकर्ता"
 
-#: tools/scriptbuilder.cpp:106
+#: tools/scriptbuilder.cpp:144
 #, kde-format
 msgid ""
 "Point the display at the specified location. %1 can be the name of an "
@@ -32932,7 +32935,7 @@ msgstr ""
 "निर्दिष्ट गरिएको स्थानमा प्रदर्शन इङ्गित गर्नुहोस् । %1 एउटा वस्तुको नाम, कम्पासमा मुख्य "
 "बिन्दु, वा 'जेनिथ' हुन सक्छ ।"
 
-#: tools/scriptbuilder.cpp:108
+#: tools/scriptbuilder.cpp:146
 #, fuzzy
 msgid ""
 "Point the display at the specified RA/Dec coordinates.  RA is expressed in "
@@ -32941,7 +32944,7 @@ msgstr ""
 "निर्दिष्ट गरिएको RA/Dec समकक्षमा प्रदर्शन इङ्गित गर्नुहोस् । %1 घण्टामा अभिव्यक्त गरिन्छ; "
 "%2 डिग्रीमा अभिव्यक्त गरिन्छ ।"
 
-#: tools/scriptbuilder.cpp:110
+#: tools/scriptbuilder.cpp:148
 #, fuzzy
 msgid ""
 "Point the display at the specified Alt/Az coordinates.  Alt and Az are "
@@ -32950,32 +32953,32 @@ msgstr ""
 "निर्दिष्ट गरिएको Alt/Az समकक्षमा प्रदर्शन इङ्गित गर्नुहोस् । %1 र %2 डिग्रीमा प्रस्तुत "
 "गरिन्छन् ।"
 
-#: tools/scriptbuilder.cpp:112
+#: tools/scriptbuilder.cpp:150
 msgid "Increase the display Zoom Level."
 msgstr "जुम स्तर प्रदर्शन बढाउनुहोस् ।"
 
-#: tools/scriptbuilder.cpp:113
+#: tools/scriptbuilder.cpp:151
 msgid "Decrease the display Zoom Level."
 msgstr "जुम स्तर प्रदर्शन घटाउनुहोस् ।"
 
-#: tools/scriptbuilder.cpp:114
+#: tools/scriptbuilder.cpp:152
 msgid "Set the display Zoom Level to its default value."
 msgstr "यसको पूर्वानिर्धारित मानमा जुम स्तर प्रदर्शन सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:115
+#: tools/scriptbuilder.cpp:153
 msgid "Set the display Zoom Level manually."
 msgstr "म्यानुअल तरिकाले जुम स्तर प्रदर्शन सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:116
+#: tools/scriptbuilder.cpp:154
 msgid "Set the system clock to the specified Local Time."
 msgstr "निर्दिष्ट गरिएको स्थानीय समयमा प्रणाली घडी सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:118
+#: tools/scriptbuilder.cpp:156
 #, fuzzy
 msgid "Pause script execution for specified number of seconds."
 msgstr " %1 सेकेन्डका लागि स्क्रिप्ट कार्यान्वयन पज गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:119
+#: tools/scriptbuilder.cpp:157
 #, fuzzy
 msgid ""
 "Halt script execution until the specified key is pressed.  Only single-key "
@@ -32984,38 +32987,38 @@ msgstr ""
 "कुञ्जी %1 थिचिए सम्म स्क्रिप्ट कार्यान्वयन रोक्नुहोस् । मात्र एकल-कुञ्जी प्रभाव सम्भव छ; "
 "खाली स्थानपट्टीका लागि 'खाली स्थान' प्रयोग गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:121
+#: tools/scriptbuilder.cpp:159
 msgid "Set whether the display is tracking the current location."
 msgstr "प्रदर्शनले हालको स्थान ट्रयाकिङ गरिरहेको छ छैन सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:122
+#: tools/scriptbuilder.cpp:160
 #, kde-format
 msgid "Change view option named %1 to value %2."
 msgstr " %1 नामकरण गरिएको दृश्य विकल्प मान %2 मा परिवर्तन गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:123
+#: tools/scriptbuilder.cpp:161
 #, fuzzy
 msgid ""
 "Set the geographic location to the city specified by city, province and "
 "country."
 msgstr " %1, %2 र %3 द्वारा निर्दिष्ट गरिएको शहरमा भौगोलिक स्थान सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:125
+#: tools/scriptbuilder.cpp:163
 #, kde-format
 msgid "Set the color named %1 to the value %2."
 msgstr " %1 नामकरण गरिएको रङ मान %2 मा सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:126
+#: tools/scriptbuilder.cpp:164
 #, fuzzy
 msgid "Load the color scheme specified by name."
 msgstr " %1 नामकरण गरिएको रङ योजना लोड गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:127
+#: tools/scriptbuilder.cpp:165
 #, fuzzy
 msgid "Export the sky image to the file, with specified width and height."
 msgstr "चौडाइ %2 र उचाइ %3 सँग, फाइल %1 मा आकाशे छवि निर्यात गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:128
+#: tools/scriptbuilder.cpp:166
 #, kde-format
 msgid ""
 "Print the sky image to a printer or file.  If %1 is true, it will show the "
@@ -33025,15 +33028,15 @@ msgstr ""
 "मुद्रक वा फाइलमा आकाशे छवि मुद्रण गर्नुहोस् । यदि %1 ठीक छ भने, यसले मुद्रण संवाद देखाउँनेछ "
 "। यदि %2 ठीक छ भने, यसले मुद्रणका लागि तारा चित्रपट् रङ योजना प्रयोग गर्नेछ ।"
 
-#: tools/scriptbuilder.cpp:129
+#: tools/scriptbuilder.cpp:167
 msgid "Halt the simulation clock."
 msgstr "नक्कली घडी रोक्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:130
+#: tools/scriptbuilder.cpp:168
 msgid "Start the simulation clock."
 msgstr "नक्कली घडी सुरु गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:131
+#: tools/scriptbuilder.cpp:169
 #, fuzzy
 msgid ""
 "Set the timescale of the simulation clock to specified scale.  1.0 means "
@@ -33042,36 +33045,36 @@ msgstr ""
 " %1 मा नक्कली घडीको समयमापन सेट गर्नुहोस् । १.० को अर्थ वास्तविक समय हो; २.० को अर्थ "
 "डबल वास्तविक समय हो; इत्यादि ।"
 
-#: tools/scriptbuilder.cpp:138
+#: tools/scriptbuilder.cpp:176
 msgid "Establish an INDI device either in local mode or server mode."
 msgstr "एउटा इन्दी यन्त्र या त स्थानीय मोड वा सर्भर मोडमा स्थापना गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:141
+#: tools/scriptbuilder.cpp:179
 msgid ""
 "Change current active device. All subsequent function calls will communicate "
 "with this device until changed"
 msgstr ""
 
-#: tools/scriptbuilder.cpp:144
+#: tools/scriptbuilder.cpp:182
 msgid "Shutdown an INDI device."
 msgstr "एउटा इन्दी यन्त्र बन्द गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:147
+#: tools/scriptbuilder.cpp:185
 msgid "Connect or Disconnect an INDI device."
 msgstr "एउटा इन्दी यन्त्र जडान गर्नुहोस् वा विच्छेदन गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:152
+#: tools/scriptbuilder.cpp:190
 msgid "Set INDI's device connection port."
 msgstr "इन्दीको यन्त्र जडान पोर्ट सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:156
+#: tools/scriptbuilder.cpp:194
 msgid ""
 "Set the telescope action. Available actions are SLEW, TRACK, SYNC, PARK, and "
 "ABORT."
 msgstr ""
 "टेलिस्कोप कार्य सेट गर्नुहोस् । उपलब्ध कार्यहरू SLEW, TRACK, SYNC, PARK, र ABORT हुन् ।"
 
-#: tools/scriptbuilder.cpp:161
+#: tools/scriptbuilder.cpp:199
 msgid ""
 "Set the telescope target coordinates to the RA/Dec coordinates.  RA is "
 "expressed in Hours; DEC is expressed in Degrees."
@@ -33079,21 +33082,21 @@ msgstr ""
 "RA/Dec समकक्षमा टेलिस्कोप लक्षित समकक्ष सेट गर्नुहोस् । RA घण्टा अभिव्यक्त गरिन्छ; Dec "
 "डिग्रीमा अभिव्यक्त गरिन्छ ।"
 
-#: tools/scriptbuilder.cpp:165
+#: tools/scriptbuilder.cpp:203
 msgid ""
 "Set the telescope target coorinates to the RA/Dec coordinates of the "
 "selected object."
 msgstr "चयन गरिएको वस्तुको RA/Dec समकक्षमा टेलिस्कोप लक्षित समकक्ष सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:169
+#: tools/scriptbuilder.cpp:207
 msgid "Set the telescope longitude and latitude. The longitude is E of N."
 msgstr "टेलिस्कोप देशान्तर र अक्षांश सेट गर्नुहोस् । देशान्तर दक्षिणको पूर्व हो ।"
 
-#: tools/scriptbuilder.cpp:173
+#: tools/scriptbuilder.cpp:211
 msgid "Set the device UTC time in ISO 8601 format YYYY/MM/DDTHH:MM:SS."
 msgstr "यन्त्र यूटीसी समय आईएसओ ८६०१ ढाँचा YYYY/MM/DDTHH:MM:SS मा सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:177
+#: tools/scriptbuilder.cpp:215
 msgid ""
 "Activate an INDI action. The action is the name of any INDI switch property "
 "element supported by the device."
@@ -33101,7 +33104,7 @@ msgstr ""
 "एउटा इन्दी कार्य सक्रिय गर्नुहोस् । कार्य यन्त्रद्वारा समर्थन गरेको कुनै इन्दी स्विच विशेषता "
 "तत्व हो ।"
 
-#: tools/scriptbuilder.cpp:180
+#: tools/scriptbuilder.cpp:218
 msgid ""
 "Pause script execution until action returns with OK status. The action can "
 "be the name of any INDI property supported by the device."
@@ -33109,7 +33112,7 @@ msgstr ""
 "कार्य ठीक छ वस्तुस्थितिसँग नफर्केसमम स्क्रिप्ट कार्यान्वयन पज गर्नुहोस् । कार्य यन्त्रद्वारा "
 "समर्थन गरेको कुनै इन्दी स्विच विशेषता तत्व हो ।"
 
-#: tools/scriptbuilder.cpp:183
+#: tools/scriptbuilder.cpp:221
 msgid ""
 "Set the telescope focuser speed. Set speed to 0 to halt the focuser. 1-3 "
 "correspond to slow, medium, and fast speeds respectively."
@@ -33117,13 +33120,13 @@ msgstr ""
 "टेलिस्कोप फोकसर गति सेट गर्नुहोस् । फोकसर रोक्न ० मा गति सेट गर्नुहोस् । १-३ क्रमश ढिलो, "
 "मध्यम, र छिटो गतिसँग सम्बन्धित छ ।"
 
-#: tools/scriptbuilder.cpp:187
+#: tools/scriptbuilder.cpp:225
 msgid ""
 "Start moving the focuser in the direction Dir, and for the duration "
 "specified by setINDIFocusTimeout."
 msgstr "f"
 
-#: tools/scriptbuilder.cpp:192
+#: tools/scriptbuilder.cpp:230
 msgid ""
 "Set the telescope focuser timer in seconds. This is the duration of any "
 "focusing procedure performed by calling startINDIFocus."
@@ -33131,15 +33134,15 @@ msgstr ""
 "टेलिस्कोप फोकसर समय सूचक सेकेन्डमा सेट गर्नुहोस् । यो आह्वान startINDIFocus द्वारा "
 "सम्पादन गरिएको कुनै फोकसिङ प्रक्रियाको अवधि हो ।"
 
-#: tools/scriptbuilder.cpp:196
+#: tools/scriptbuilder.cpp:234
 msgid "Set the target CCD chip temperature."
 msgstr "लक्षित सीसीडी चिप तापक्रम सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:200
+#: tools/scriptbuilder.cpp:238
 msgid "Set the target filter position."
 msgstr "लक्षित फिल्टर स्थिति सेट गर्नुहोस् ।"
 
-#: tools/scriptbuilder.cpp:204
+#: tools/scriptbuilder.cpp:242
 msgid ""
 "Set the CCD camera frame type. Available options are FRAME_LIGHT, "
 "FRAME_BIAS, FRAME_DARK, and FRAME_FLAT."
@@ -33147,418 +33150,418 @@ msgstr ""
 "सीसीडी फ्रेम प्रकार सेट गर्नुहोस् । उपलब्ध विकल्प FRAME_LIGHT, FRAME_BIAS, "
 "FRAME_DARK, र FRAME_FLAT हुन् ।"
 
-#: tools/scriptbuilder.cpp:209
+#: tools/scriptbuilder.cpp:247
 msgid "Start Camera/CCD exposure. The duration is in seconds."
 msgstr "क्यामेरा/सीसीडी प्रदर्शन सुरु गर्नुहोस् । अवधि सेकेन्डमा छ ।"
 
-#: tools/scriptbuilder.cpp:222
+#: tools/scriptbuilder.cpp:266
 msgid "Functions"
 msgstr "प्रकार्य"
 
-#: tools/scriptbuilder.cpp:517
+#: tools/scriptbuilder.cpp:564
 msgid "InfoBoxes"
 msgstr "सूचनाबाकस"
 
-#: tools/scriptbuilder.cpp:518
+#: tools/scriptbuilder.cpp:565
 msgid "Toggle display of all InfoBoxes"
 msgstr "सबै सूचनाबाकसको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:518 tools/scriptbuilder.cpp:521
-#: tools/scriptbuilder.cpp:524 tools/scriptbuilder.cpp:527
-#: tools/scriptbuilder.cpp:530 tools/scriptbuilder.cpp:533
-#: tools/scriptbuilder.cpp:536 tools/scriptbuilder.cpp:550
-#: tools/scriptbuilder.cpp:553 tools/scriptbuilder.cpp:562
 #: tools/scriptbuilder.cpp:565 tools/scriptbuilder.cpp:568
 #: tools/scriptbuilder.cpp:571 tools/scriptbuilder.cpp:574
 #: tools/scriptbuilder.cpp:577 tools/scriptbuilder.cpp:580
-#: tools/scriptbuilder.cpp:583 tools/scriptbuilder.cpp:586
-#: tools/scriptbuilder.cpp:589 tools/scriptbuilder.cpp:592
-#: tools/scriptbuilder.cpp:595 tools/scriptbuilder.cpp:598
-#: tools/scriptbuilder.cpp:601 tools/scriptbuilder.cpp:604
-#: tools/scriptbuilder.cpp:607 tools/scriptbuilder.cpp:610
-#: tools/scriptbuilder.cpp:613 tools/scriptbuilder.cpp:616
-#: tools/scriptbuilder.cpp:641 tools/scriptbuilder.cpp:644
-#: tools/scriptbuilder.cpp:647 tools/scriptbuilder.cpp:650
-#: tools/scriptbuilder.cpp:653 tools/scriptbuilder.cpp:656
-#: tools/scriptbuilder.cpp:659 tools/scriptbuilder.cpp:662
-#: tools/scriptbuilder.cpp:665 tools/scriptbuilder.cpp:668
-#: tools/scriptbuilder.cpp:671 tools/scriptbuilder.cpp:674
-#: tools/scriptbuilder.cpp:677 tools/scriptbuilder.cpp:680
-#: tools/scriptbuilder.cpp:683 tools/scriptbuilder.cpp:704
-#: tools/scriptbuilder.cpp:707 tools/scriptbuilder.cpp:710
-#: tools/scriptbuilder.cpp:719 tools/scriptbuilder.cpp:725
-#: tools/scriptbuilder.cpp:728 tools/scriptbuilder.cpp:731
-#: tools/scriptbuilder.cpp:734 tools/scriptbuilder.cpp:737
-#: tools/scriptbuilder.cpp:740 tools/scriptbuilder.cpp:743
-#: tools/scriptbuilder.cpp:746 tools/scriptbuilder.cpp:749
-#: tools/scriptbuilder.cpp:752 tools/scriptbuilder.cpp:770
-#: tools/scriptbuilder.cpp:785 tools/scriptbuilder.cpp:788
-#: tools/scriptbuilder.cpp:791 tools/scriptbuilder.cpp:794
-#: tools/scriptbuilder.cpp:797 tools/scriptbuilder.cpp:800
+#: tools/scriptbuilder.cpp:583 tools/scriptbuilder.cpp:597
+#: tools/scriptbuilder.cpp:600 tools/scriptbuilder.cpp:609
+#: tools/scriptbuilder.cpp:612 tools/scriptbuilder.cpp:615
+#: tools/scriptbuilder.cpp:618 tools/scriptbuilder.cpp:621
+#: tools/scriptbuilder.cpp:624 tools/scriptbuilder.cpp:627
+#: tools/scriptbuilder.cpp:630 tools/scriptbuilder.cpp:633
+#: tools/scriptbuilder.cpp:636 tools/scriptbuilder.cpp:639
+#: tools/scriptbuilder.cpp:642 tools/scriptbuilder.cpp:645
+#: tools/scriptbuilder.cpp:648 tools/scriptbuilder.cpp:651
+#: tools/scriptbuilder.cpp:654 tools/scriptbuilder.cpp:657
+#: tools/scriptbuilder.cpp:660 tools/scriptbuilder.cpp:663
+#: tools/scriptbuilder.cpp:688 tools/scriptbuilder.cpp:691
+#: tools/scriptbuilder.cpp:694 tools/scriptbuilder.cpp:697
+#: tools/scriptbuilder.cpp:700 tools/scriptbuilder.cpp:703
+#: tools/scriptbuilder.cpp:706 tools/scriptbuilder.cpp:709
+#: tools/scriptbuilder.cpp:712 tools/scriptbuilder.cpp:715
+#: tools/scriptbuilder.cpp:718 tools/scriptbuilder.cpp:721
+#: tools/scriptbuilder.cpp:724 tools/scriptbuilder.cpp:727
+#: tools/scriptbuilder.cpp:730 tools/scriptbuilder.cpp:751
+#: tools/scriptbuilder.cpp:754 tools/scriptbuilder.cpp:757
+#: tools/scriptbuilder.cpp:766 tools/scriptbuilder.cpp:772
+#: tools/scriptbuilder.cpp:775 tools/scriptbuilder.cpp:778
+#: tools/scriptbuilder.cpp:781 tools/scriptbuilder.cpp:784
+#: tools/scriptbuilder.cpp:787 tools/scriptbuilder.cpp:790
+#: tools/scriptbuilder.cpp:793 tools/scriptbuilder.cpp:796
+#: tools/scriptbuilder.cpp:799 tools/scriptbuilder.cpp:817
+#: tools/scriptbuilder.cpp:832 tools/scriptbuilder.cpp:835
+#: tools/scriptbuilder.cpp:838 tools/scriptbuilder.cpp:841
+#: tools/scriptbuilder.cpp:844 tools/scriptbuilder.cpp:847
 msgid "bool"
 msgstr "बूल"
 
-#: tools/scriptbuilder.cpp:521
+#: tools/scriptbuilder.cpp:568
 msgid "Toggle display of Time InfoBox"
 msgstr "समय सूचनाबाकसको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:524
+#: tools/scriptbuilder.cpp:571
 msgid "Toggle display of Geographic InfoBox"
 msgstr "भौगोलिक सूचनाबाकसको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:527
+#: tools/scriptbuilder.cpp:574
 msgid "Toggle display of Focus InfoBox"
 msgstr "फोकस सूचनाबाकसको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:530
+#: tools/scriptbuilder.cpp:577
 msgid "(un)Shade Time InfoBox"
 msgstr "समय सूचना बाकस छायाँबाट हटाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:533
+#: tools/scriptbuilder.cpp:580
 msgid "(un)Shade Geographic InfoBox"
 msgstr "भौगोलिक सूचना बाकस छायाँबाट हटाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:536
+#: tools/scriptbuilder.cpp:583
 msgid "(un)Shade Focus InfoBox"
 msgstr "फोकस सूचनाबाकस छायाँबाट हटाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:549
+#: tools/scriptbuilder.cpp:596
 msgid "Toolbars"
 msgstr "उपकरणपट्टी"
 
-#: tools/scriptbuilder.cpp:550
+#: tools/scriptbuilder.cpp:597
 msgid "Toggle display of main toolbar"
 msgstr "मुख्य उपकरणपट्टीको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:553
+#: tools/scriptbuilder.cpp:600
 msgid "Toggle display of view toolbar"
 msgstr "दृश्य उपकरणपट्टीको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:561
+#: tools/scriptbuilder.cpp:608
 msgid "Show Objects"
 msgstr "वस्तु देखाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:562
+#: tools/scriptbuilder.cpp:609
 msgid "Toggle display of Stars"
 msgstr "ताराको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:565
+#: tools/scriptbuilder.cpp:612
 msgid "Toggle display of all deep-sky objects"
 msgstr "सबै गहिरो-आकाशे छविको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:568
+#: tools/scriptbuilder.cpp:615
 msgid "Toggle display of Messier object symbols"
 msgstr "अस्तव्यस्त वस्तु प्रतीकको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:571
+#: tools/scriptbuilder.cpp:618
 msgid "Toggle display of Messier object images"
 msgstr "अस्तव्यस्त वस्तु छविको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:574
+#: tools/scriptbuilder.cpp:621
 msgid "Toggle display of NGC objects"
 msgstr "एनजीसी वस्तुको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:577
+#: tools/scriptbuilder.cpp:624
 msgid "Toggle display of IC objects"
 msgstr "आइसी वस्तुको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:580
+#: tools/scriptbuilder.cpp:627
 msgid "Toggle display of all solar system bodies"
 msgstr "सबै सौरमण्डल भागको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:583
+#: tools/scriptbuilder.cpp:630
 msgid "Toggle display of Sun"
 msgstr "घामको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:586
+#: tools/scriptbuilder.cpp:633
 msgid "Toggle display of Moon"
 msgstr "चन्द्रमाको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:589
+#: tools/scriptbuilder.cpp:636
 msgid "Toggle display of Mercury"
 msgstr "बुध ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:592
+#: tools/scriptbuilder.cpp:639
 msgid "Toggle display of Venus"
 msgstr "शुक्र ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:595
+#: tools/scriptbuilder.cpp:642
 msgid "Toggle display of Mars"
 msgstr "मंगल ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:598
+#: tools/scriptbuilder.cpp:645
 msgid "Toggle display of Jupiter"
 msgstr "बृहस्पति ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:601
+#: tools/scriptbuilder.cpp:648
 msgid "Toggle display of Saturn"
 msgstr "शनि ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:604
+#: tools/scriptbuilder.cpp:651
 msgid "Toggle display of Uranus"
 msgstr "अरूण ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:607
+#: tools/scriptbuilder.cpp:654
 msgid "Toggle display of Neptune"
 msgstr "वरुण ग्रहको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:610
+#: tools/scriptbuilder.cpp:657
 msgid "Toggle display of Pluto"
 msgstr "यमको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:613
+#: tools/scriptbuilder.cpp:660
 msgid "Toggle display of Asteroids"
 msgstr "ग्रहिकाको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:616
+#: tools/scriptbuilder.cpp:663
 msgid "Toggle display of Comets"
 msgstr "पुच्छ्रेताराको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:640
+#: tools/scriptbuilder.cpp:687
 msgid "Show Other"
 msgstr "अन्य देखाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:641
+#: tools/scriptbuilder.cpp:688
 msgid "Toggle display of constellation lines"
 msgstr "तारामण्डल रेखाको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:644
+#: tools/scriptbuilder.cpp:691
 msgid "Toggle display of constellation boundaries"
 msgstr "तारामण्डल सीमाको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:647
+#: tools/scriptbuilder.cpp:694
 msgid "Toggle display of constellation names"
 msgstr "तारामण्डल नामको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:650
+#: tools/scriptbuilder.cpp:697
 msgid "Toggle display of Milky Way"
 msgstr "मिल्की वे को प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:653
+#: tools/scriptbuilder.cpp:700
 msgid "Toggle display of the coordinate grid"
 msgstr "समकक्ष ग्रिडको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:656
+#: tools/scriptbuilder.cpp:703
 msgid "Toggle display of the celestial equator"
 msgstr "खगोलिय भूमध्य रेखाको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:659
+#: tools/scriptbuilder.cpp:706
 msgid "Toggle display of the ecliptic"
 msgstr "क्रांतिमण्डलको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:662
+#: tools/scriptbuilder.cpp:709
 msgid "Toggle display of the horizon line"
 msgstr "क्षितिज रेखाको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:665
+#: tools/scriptbuilder.cpp:712
 msgid "Toggle display of the opaque ground"
 msgstr "अस्वच्छ भूमिको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:668
+#: tools/scriptbuilder.cpp:715
 msgid "Toggle display of star name labels"
 msgstr "तारा नाम लेबुलको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:671
+#: tools/scriptbuilder.cpp:718
 msgid "Toggle display of star magnitude labels"
 msgstr "तारा गुरुत्व लेबुलको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:674
+#: tools/scriptbuilder.cpp:721
 msgid "Toggle display of asteroid name labels"
 msgstr "ग्रहिका नाम लेबुलको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:677
+#: tools/scriptbuilder.cpp:724
 msgid "Toggle display of comet name labels"
 msgstr "पुच्छ्रेतारा नाम लेबुलको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:680
+#: tools/scriptbuilder.cpp:727
 msgid "Toggle display of planet name labels"
 msgstr "ग्रह नाम लेबुलको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:683
+#: tools/scriptbuilder.cpp:730
 msgid "Toggle display of planet images"
 msgstr "ग्रह छविको प्रदर्शन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:703
+#: tools/scriptbuilder.cpp:750
 msgid "Constellation Names"
 msgstr "तारामण्डल नाम"
 
-#: tools/scriptbuilder.cpp:704
+#: tools/scriptbuilder.cpp:751
 msgid "Show Latin constellation names"
 msgstr "ल्याटिन तारामण्डल नाम देखाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:707
+#: tools/scriptbuilder.cpp:754
 msgid "Show constellation names in local language"
 msgstr "स्थानीय भाषामा तारामण्डल नाम देखाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:710
+#: tools/scriptbuilder.cpp:757
 msgid "Show IAU-standard constellation abbreviations"
 msgstr "आइएयू मानक तारामण्डल संक्षेप देखाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:718
+#: tools/scriptbuilder.cpp:765
 msgid "Hide Items"
 msgstr "वस्तु लुकाउनुहोस्"
 
-#: tools/scriptbuilder.cpp:719
+#: tools/scriptbuilder.cpp:766
 msgid "Toggle whether objects hidden while slewing display"
 msgstr "प्रदर्शन स्ल्विङ गर्दा वस्तु लुकाएको छ छैन टगल गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:722
+#: tools/scriptbuilder.cpp:769
 msgid "Timestep threshold (in seconds) for hiding objects"
 msgstr "लुकाइरहेका वस्तुका लागि (सेकेन्डमा) समयचरण थ्रेसहोल्ड"
 
-#: tools/scriptbuilder.cpp:722 tools/scriptbuilder.cpp:773
-#: tools/scriptbuilder.cpp:776 tools/scriptbuilder.cpp:818
-#: tools/scriptbuilder.cpp:821 tools/scriptbuilder.cpp:824
-#: tools/scriptbuilder.cpp:827 tools/scriptbuilder.cpp:830
-#: tools/scriptbuilder.cpp:833 tools/scriptbuilder.cpp:836
-#: tools/scriptbuilder.cpp:839 tools/scriptbuilder.cpp:842
+#: tools/scriptbuilder.cpp:769 tools/scriptbuilder.cpp:820
+#: tools/scriptbuilder.cpp:823 tools/scriptbuilder.cpp:865
+#: tools/scriptbuilder.cpp:868 tools/scriptbuilder.cpp:871
+#: tools/scriptbuilder.cpp:874 tools/scriptbuilder.cpp:878
+#: tools/scriptbuilder.cpp:881 tools/scriptbuilder.cpp:884
+#: tools/scriptbuilder.cpp:888 tools/scriptbuilder.cpp:891
 msgid "double"
 msgstr "दोहोरो"
 
-#: tools/scriptbuilder.cpp:725
+#: tools/scriptbuilder.cpp:772
 msgid "Hide faint stars while slewing?"
 msgstr "स्ल्विङ गर्दा शक्तिहीन तारा लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:728
+#: tools/scriptbuilder.cpp:775
 msgid "Hide solar system bodies while slewing?"
 msgstr "स्ल्विङ गर्दा सौरमण्डल भाग लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:731
+#: tools/scriptbuilder.cpp:778
 msgid "Hide Messier objects while slewing?"
 msgstr "स्ल्विङ गर्दा अस्तव्यस्त वस्तु लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:734
+#: tools/scriptbuilder.cpp:781
 msgid "Hide NGC objects while slewing?"
 msgstr "स्ल्विङ गर्दा एनजीसी वस्तु लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:737
+#: tools/scriptbuilder.cpp:784
 msgid "Hide IC objects while slewing?"
 msgstr "स्ल्विङ गर्दा आइसी वस्तु लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:740
+#: tools/scriptbuilder.cpp:787
 msgid "Hide Milky Way while slewing?"
 msgstr "स्ल्विङ गर्दा मिल्की वे लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:743
+#: tools/scriptbuilder.cpp:790
 msgid "Hide constellation names while slewing?"
 msgstr "स्ल्विङ गर्दा तारामण्डल नाम लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:746
+#: tools/scriptbuilder.cpp:793
 msgid "Hide constellation lines while slewing?"
 msgstr "स्ल्विङ गर्दा तारामण्डल रेखा लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:749
+#: tools/scriptbuilder.cpp:796
 msgid "Hide constellation boundaries while slewing?"
 msgstr "स्ल्विङ गर्दा तारामण्डल सीमा लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:752
+#: tools/scriptbuilder.cpp:799
 msgid "Hide coordinate grid while slewing?"
 msgstr "स्ल्विङ गर्दा समकक्ष ग्रिड लुकाउनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:769
+#: tools/scriptbuilder.cpp:816
 msgid "Skymap Options"
 msgstr "स्काइम्याप विकल्प"
 
-#: tools/scriptbuilder.cpp:770
+#: tools/scriptbuilder.cpp:817
 msgid "Use Horizontal coordinates? (otherwise, use Equatorial)"
 msgstr "तेर्सो समकक्ष प्रयोग गर्नुहुन्छ ? (अन्यथा, भूमध्यवर्ती प्रयोग गर्नुहोस्)"
 
-#: tools/scriptbuilder.cpp:773
+#: tools/scriptbuilder.cpp:820
 msgid "Set the Zoom Factor"
 msgstr "जुम तत्व सेट गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:776
+#: tools/scriptbuilder.cpp:823
 msgid "Select angular size for the FOV symbol (in arcmin)"
 msgstr "(आर्कमिनेटमा) एफओभी सङ्केतका लागि कोणिय साइज चयन गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:779
+#: tools/scriptbuilder.cpp:826
 msgid ""
 "Select shape for the FOV symbol (0=Square, 1=Circle, 2=Crosshairs, "
 "4=Bullseye)"
 msgstr "एफओभी सङ्केतका लागि आकार चयन गर्नुहोस् (०=वर्ग, १=वृत्त, २=क्रसहेयर, ४=बुल्सआइ"
 
-#: tools/scriptbuilder.cpp:779
+#: tools/scriptbuilder.cpp:826
 msgid "int"
 msgstr "int"
 
-#: tools/scriptbuilder.cpp:782
+#: tools/scriptbuilder.cpp:829
 msgid "Select color for the FOV symbol"
 msgstr "एफओभी सङ्केतका लागि रङ चयन गर्नुहोस्"
 
-#: tools/scriptbuilder.cpp:782
+#: tools/scriptbuilder.cpp:829
 msgid "string"
 msgstr "स्ट्रिङ"
 
-#: tools/scriptbuilder.cpp:785
+#: tools/scriptbuilder.cpp:832
 msgid "Use animated slewing? (otherwise, \"snap\" to new focus)"
 msgstr ""
 "एनिमेट गरिरहेको स्ल्विङ प्रयोग गर्नुहुन्छ ? (अन्यथा, नयाँ फोकसमा \"स्न्याप\" गर्नुहोस्)"
 
-#: tools/scriptbuilder.cpp:788
+#: tools/scriptbuilder.cpp:835
 msgid "Correct for atmospheric refraction?"
 msgstr "वायुमण्डलीय अपवर्तनका लागि सुधार गर्नुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:791
+#: tools/scriptbuilder.cpp:838
 msgid "Automatically attach name label to centered object?"
 msgstr "केन्द्रिकृत वस्तुमा नाम लेबुल स्वचालित रूपमा संलग्न गर्नुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:794
+#: tools/scriptbuilder.cpp:841
 msgid "Attach temporary name label when hovering mouse over an object?"
 msgstr "एउटा वस्तु माथि माउस चलिरहँदा अस्थायी नाम लेबुल संलग्न गर्नुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:800
+#: tools/scriptbuilder.cpp:847
 msgid "Planet trails fade to sky color? (otherwise color is constant)"
 msgstr "ग्रहको खोज आकाशे रङमा हराउँछ ? (अन्यथा रङ स्थिर हुन्छ)"
 
-#: tools/scriptbuilder.cpp:817
+#: tools/scriptbuilder.cpp:864
 msgid "Limits"
 msgstr "सीमा"
 
-#: tools/scriptbuilder.cpp:818
+#: tools/scriptbuilder.cpp:865
 msgid "magnitude of faintest star drawn on map when zoomed in"
 msgstr "जुम बढाउँदा नक्सामा कोरिएको शक्तिहीन ताराको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:821
+#: tools/scriptbuilder.cpp:868
 msgid "magnitude of faintest star drawn on map when zoomed out"
 msgstr "जुम घटाउँदा नक्सामा कोरिएको शक्तिहीन ताराको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:824
+#: tools/scriptbuilder.cpp:871
 msgid "magnitude of faintest nonstellar object drawn on map when zoomed in"
 msgstr "जुम बढाउँदा नक्सामा कोरिएको शक्तिहीन तारा समाविष्ट नभएको वस्तुको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:827
+#: tools/scriptbuilder.cpp:874
 msgid "magnitude of faintest nonstellar object drawn on map when zoomed out"
 msgstr "जुम घटाउँदा नक्सामा कोरिएको शक्तिहीन तारा समाविष्ट नभएको वस्तुको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:830
+#: tools/scriptbuilder.cpp:878
 msgid "magnitude of faintest star labeled on map"
 msgstr "नक्सामा लेबुल गरिएको शक्तिहीन ताराको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:833
+#: tools/scriptbuilder.cpp:881
 msgid "magnitude of brightest star hidden while slewing"
 msgstr "नष्ट गर्दा लुकेका चम्किला ताराको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:836
+#: tools/scriptbuilder.cpp:884
 msgid "magnitude of faintest asteroid drawn on map"
 msgstr "नक्सामा कोरिएको शक्तिहीन ग्रहिकाको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:839
+#: tools/scriptbuilder.cpp:888
 msgid "magnitude of faintest asteroid labeled on map"
 msgstr "नक्सामा लेबुल गरिएको शक्तिहीन ग्रहिकाको गुरुत्व"
 
-#: tools/scriptbuilder.cpp:842
+#: tools/scriptbuilder.cpp:891
 msgid "comets nearer to the Sun than this (in AU) are labeled on map"
 msgstr "नक्सामा लेबुल गरिएको यो (एयूमा) भन्दा घाममा पुच्छ्रेतारा नजिक छ"
 
-#: tools/scriptbuilder.cpp:920
+#: tools/scriptbuilder.cpp:969
 msgid "Could not download remote file."
 msgstr "टाढाको फाइल डाउनलोड गर्न सकेन ।"
 
-#: tools/scriptbuilder.cpp:1023
+#: tools/scriptbuilder.cpp:1072
 msgid "Save Changes to Script?"
 msgstr "स्क्रिप्टमा परिवर्तन बचत गर्न चाहनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:1024
+#: tools/scriptbuilder.cpp:1073
 msgid ""
 "The current script has unsaved changes.  Would you like to save before "
 "closing it?"
@@ -33566,27 +33569,27 @@ msgstr ""
 "हालको स्क्रिप्टसँग बचत नगरिएका परिवर्तनहरू छन् । तपाईँ यसलाई बन्द गर्नु अघि बचत गर्न "
 "चाहनुहुन्छ ?"
 
-#: tools/scriptbuilder.cpp:1190
+#: tools/scriptbuilder.cpp:1239
 #, kde-format
 msgid "Could not parse script.  Line was: %1"
 msgstr "स्क्रिप्ट पद वर्णन गर्न सकेन । रेखा: %1"
 
-#: tools/scriptbuilder.cpp:1529 tools/scriptbuilder.cpp:1531
-#: tools/scriptbuilder.cpp:1567 tools/scriptbuilder.cpp:2112
-#: tools/scriptbuilder.cpp:2249 tools/scriptbuilder.cpp:2250
+#: tools/scriptbuilder.cpp:1578 tools/scriptbuilder.cpp:1580
+#: tools/scriptbuilder.cpp:1616 tools/scriptbuilder.cpp:2161
+#: tools/scriptbuilder.cpp:2298 tools/scriptbuilder.cpp:2299
 msgid "true"
 msgstr "ठीक"
 
-#: tools/scriptbuilder.cpp:1851
+#: tools/scriptbuilder.cpp:1900
 msgid "Function index out of bounds."
 msgstr "सीमा बाहिरको प्रकार्य अनुक्रमणिका ।"
 
-#: tools/scriptbuilder.cpp:2112 tools/scriptbuilder.cpp:2249
-#: tools/scriptbuilder.cpp:2250
+#: tools/scriptbuilder.cpp:2161 tools/scriptbuilder.cpp:2298
+#: tools/scriptbuilder.cpp:2299
 msgid "false"
 msgstr "बेठीक"
 
-#: tools/scriptbuilder.cpp:2855
+#: tools/scriptbuilder.cpp:2904
 #, kde-format
 msgid "Mismatch between function and Arg widget (expected %1.)"
 msgstr "प्रकार्य र अर्ग विजेट बीच बेमेल (अनपेक्षित %1 ।)"
@@ -33676,31 +33679,31 @@ msgstr "पारवहन गर्ने समय: %1"
 msgid "Sets at: %1"
 msgstr "यसमा सेट गर्दछ: %1"
 
-#: skycomponents/asteroidscomponent.cpp:62
+#: skycomponents/asteroidscomponent.cpp:61
 #, fuzzy
 #| msgid "Draw asteroids?"
 msgid "Loading asteroids"
 msgstr "ग्रहिकाको रेखाचित्र गर्नुहुन्छ ?"
 
-#: skycomponents/cometscomponent.cpp:47
+#: skycomponents/cometscomponent.cpp:46
 #, fuzzy
 #| msgid "Loading sky objects"
 msgid "Loading comets"
 msgstr "स्काइ वस्तुहरू लोड गर्दै"
 
-#: skycomponents/constellationboundarylines.cpp:45
+#: skycomponents/constellationboundarylines.cpp:44
 #, fuzzy
 #| msgid "Constellation boundaries"
 msgid "Constellation Boundaries"
 msgstr "तारामण्डल सीमा"
 
-#: skycomponents/constellationboundarylines.cpp:90
+#: skycomponents/constellationboundarylines.cpp:89
 #, fuzzy
 #| msgid "Constellation boundaries"
 msgid "Loading Consellation Boundaries"
 msgstr "तारामण्डल सीमा"
 
-#: skycomponents/constellationlines.cpp:39
+#: skycomponents/constellationlines.cpp:38
 #, fuzzy
 #| msgid "Constellation lines"
 msgid "Constellation Lines"
@@ -33712,220 +33715,220 @@ msgstr "तारामण्डल रेखा"
 msgid "No star named %1 found."
 msgstr "%1 नामकरण गरिएको कुनै वस्तु फेला परेन ।"
 
-#: skycomponents/constellationnamescomponent.cpp:51
+#: skycomponents/constellationnamescomponent.cpp:50
 #, fuzzy
 #| msgid "Use Latin constellation names"
 msgid "Loading constellation names"
 msgstr "ल्याटिन तारामण्डल नाम प्रयोग गर्नुहोस्"
 
-#: skycomponents/customcatalogcomponent.cpp:47
+#: skycomponents/customcatalogcomponent.cpp:46
 #, fuzzy, kde-format
 #| msgid "Loading city data"
 msgid "Loading custom catalog: %1"
 msgstr "सिटी डेटा लोड गर्दै"
 
-#: skycomponents/customcatalogcomponent.cpp:97
+#: skycomponents/customcatalogcomponent.cpp:96
 #, kde-format
 msgid "Line %1 does not contain %2 fields.  Skipping it."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:104
+#: skycomponents/customcatalogcomponent.cpp:103
 msgid ""
 "Some lines in the custom catalog could not be parsed; see error messages "
 "below."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:105
+#: skycomponents/customcatalogcomponent.cpp:104
 #, fuzzy
 #| msgid "to cancel the download, press Cancel. "
 msgid "To reject the file, press Cancel. "
 msgstr "डाउनलोड रद्द गर्न, 'रद्द गर्नुहोस्' थिच्नुहोस् । "
 
-#: skycomponents/customcatalogcomponent.cpp:106
+#: skycomponents/customcatalogcomponent.cpp:105
 msgid "To accept the file (ignoring unparsed lines), press Accept."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:108
+#: skycomponents/customcatalogcomponent.cpp:107
 msgid "Some Lines in File Were Invalid"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:108
+#: skycomponents/customcatalogcomponent.cpp:107
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Arcetri"
 msgid "Accept"
 msgstr "अर्सेट्री"
 
-#: skycomponents/customcatalogcomponent.cpp:115
+#: skycomponents/customcatalogcomponent.cpp:114
 msgid ""
 "No lines could be parsed from the specified file, see error messages below."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:117
+#: skycomponents/customcatalogcomponent.cpp:116
 msgid "No Valid Data Found in File"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:125
-#: skycomponents/customcatalogcomponent.cpp:128
+#: skycomponents/customcatalogcomponent.cpp:124
+#: skycomponents/customcatalogcomponent.cpp:127
 #, fuzzy, kde-format
 #| msgid "Could not open file: %1"
 msgid "Could not open custom data file: %1"
 msgstr "फाइल खोल्न सकेन: %1"
 
-#: skycomponents/customcatalogcomponent.cpp:126
+#: skycomponents/customcatalogcomponent.cpp:125
 #, fuzzy
 #| msgid "Error Deleting File"
 msgid "Error opening file"
 msgstr "फाइल मेट्दा त्रुटि"
 
-#: skycomponents/customcatalogcomponent.cpp:197
-#: skycomponents/customcatalogcomponent.cpp:206
-#: skycomponents/customcatalogcomponent.cpp:215
-#: skycomponents/customcatalogcomponent.cpp:225
-#: skycomponents/customcatalogcomponent.cpp:231
-#: skycomponents/customcatalogcomponent.cpp:260
-#: skycomponents/customcatalogcomponent.cpp:265
-#: skycomponents/customcatalogcomponent.cpp:276
-#: skycomponents/customcatalogcomponent.cpp:282
-#: skycomponents/customcatalogcomponent.cpp:288
-#: skycomponents/customcatalogcomponent.cpp:293
-#: skycomponents/customcatalogcomponent.cpp:298
-#: skycomponents/customcatalogcomponent.cpp:303
+#: skycomponents/customcatalogcomponent.cpp:195
+#: skycomponents/customcatalogcomponent.cpp:204
+#: skycomponents/customcatalogcomponent.cpp:213
+#: skycomponents/customcatalogcomponent.cpp:223
+#: skycomponents/customcatalogcomponent.cpp:229
+#: skycomponents/customcatalogcomponent.cpp:258
+#: skycomponents/customcatalogcomponent.cpp:263
+#: skycomponents/customcatalogcomponent.cpp:274
+#: skycomponents/customcatalogcomponent.cpp:280
+#: skycomponents/customcatalogcomponent.cpp:286
+#: skycomponents/customcatalogcomponent.cpp:291
+#: skycomponents/customcatalogcomponent.cpp:296
+#: skycomponents/customcatalogcomponent.cpp:301
 msgid "Parsing header: "
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:198
+#: skycomponents/customcatalogcomponent.cpp:196
 #, kde-format
 msgid "Extra Name field in header: %1.  Will be ignored"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:207
+#: skycomponents/customcatalogcomponent.cpp:205
 #, kde-format
 msgid "Extra Prefix field in header: %1.  Will be ignored"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:216
+#: skycomponents/customcatalogcomponent.cpp:214
 #, kde-format
 msgid "Extra Color field in header: %1.  Will be ignored"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:226
+#: skycomponents/customcatalogcomponent.cpp:224
 #, kde-format
 msgid "Could not convert Epoch to float: %1.  Using 2000. instead"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:232
+#: skycomponents/customcatalogcomponent.cpp:230
 #, kde-format
 msgid "Extra Epoch field in header: %1.  Will be ignored"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:261
+#: skycomponents/customcatalogcomponent.cpp:259
 #, kde-format
 msgid "Duplicate data field descriptor \"%1\" will be ignored"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:266
+#: skycomponents/customcatalogcomponent.cpp:264
 #, kde-format
 msgid "Invalid data field descriptor \"%1\" will be ignored"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:277
+#: skycomponents/customcatalogcomponent.cpp:275
 msgid "No valid column descriptors found.  Exiting"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:283
+#: skycomponents/customcatalogcomponent.cpp:281
 msgid "No data lines found after header.  Exiting."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:289
+#: skycomponents/customcatalogcomponent.cpp:287
 msgid "No Catalog Name specified; setting to \"Custom\""
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:294
+#: skycomponents/customcatalogcomponent.cpp:292
 msgid "No Catalog Prefix specified; setting to \"CC\""
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:299
+#: skycomponents/customcatalogcomponent.cpp:297
 msgid "No Catalog Color specified; setting to Red"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:304
+#: skycomponents/customcatalogcomponent.cpp:302
 msgid "No Catalog Epoch specified; assuming 2000."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:333
+#: skycomponents/customcatalogcomponent.cpp:331
 #, kde-format
 msgid "Line %1, field %2: Unable to parse RA value: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:342
+#: skycomponents/customcatalogcomponent.cpp:340
 #, kde-format
 msgid "Line %1, field %2: Unable to parse Dec value: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:354
+#: skycomponents/customcatalogcomponent.cpp:352
 #, kde-format
 msgid "Line %1, field %2: Invalid object type: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:356
+#: skycomponents/customcatalogcomponent.cpp:354
 msgid "Must be one of 0, 1, 3, 4, 5, 6, 7, 8."
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:361
+#: skycomponents/customcatalogcomponent.cpp:359
 #, kde-format
 msgid "Line %1, field %2: Unable to parse Object type: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:372
+#: skycomponents/customcatalogcomponent.cpp:370
 #, kde-format
 msgid "Line %1, field %2: Unable to parse Magnitude: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:383
+#: skycomponents/customcatalogcomponent.cpp:381
 #, kde-format
 msgid "Line %1, field %2: Unable to parse Major Axis: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:394
+#: skycomponents/customcatalogcomponent.cpp:392
 #, kde-format
 msgid "Line %1, field %2: Unable to parse Minor Axis: %3"
 msgstr ""
 
-#: skycomponents/customcatalogcomponent.cpp:405
+#: skycomponents/customcatalogcomponent.cpp:403
 #, kde-format
 msgid "Line %1, field %2: Unable to parse Position Angle: %3"
 msgstr ""
 
-#: skycomponents/deepskycomponent.cpp:75
+#: skycomponents/deepskycomponent.cpp:74
 #, fuzzy
 #| msgid "Loading sky objects"
 msgid "Loading NGC/IC objects"
 msgstr "स्काइ वस्तुहरू लोड गर्दै"
 
-#: skycomponents/deepskycomponent.cpp:178
+#: skycomponents/deepskycomponent.cpp:177
 #, fuzzy
 #| msgid "unnamed object"
 msgid "Unnamed Object"
 msgstr "नामकरण नगरिएको वस्तु"
 
-#: skycomponents/horizoncomponent.cpp:45
+#: skycomponents/horizoncomponent.cpp:44
 #, fuzzy
 #| msgid "Draw horizon?"
 msgid "Creating horizon"
 msgstr "क्षितिज कोर्नुहुन्छ ?"
 
-#: skycomponents/horizoncomponent.cpp:382
+#: skycomponents/horizoncomponent.cpp:386
 msgctxt "Northeast"
 msgid "NE"
 msgstr ""
 
-#: skycomponents/horizoncomponent.cpp:383
+#: skycomponents/horizoncomponent.cpp:387
 msgctxt "East"
 msgid "E"
 msgstr ""
 
-#: skycomponents/horizoncomponent.cpp:384
+#: skycomponents/horizoncomponent.cpp:388
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -33933,7 +33936,7 @@ msgctxt "Southeast"
 msgid "SE"
 msgstr "S"
 
-#: skycomponents/horizoncomponent.cpp:385
+#: skycomponents/horizoncomponent.cpp:389
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -33941,7 +33944,7 @@ msgctxt "South"
 msgid "S"
 msgstr "S"
 
-#: skycomponents/horizoncomponent.cpp:386
+#: skycomponents/horizoncomponent.cpp:390
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -33949,28 +33952,28 @@ msgctxt "Southwest"
 msgid "SW"
 msgstr "S"
 
-#: skycomponents/horizoncomponent.cpp:387
+#: skycomponents/horizoncomponent.cpp:391
 msgctxt "West"
 msgid "W"
 msgstr ""
 
-#: skycomponents/horizoncomponent.cpp:388
+#: skycomponents/horizoncomponent.cpp:392
 msgctxt "Northwest"
 msgid "NW"
 msgstr ""
 
-#: skycomponents/horizoncomponent.cpp:389
+#: skycomponents/horizoncomponent.cpp:393
 msgctxt "North"
 msgid "N"
 msgstr ""
 
-#: skycomponents/linelistindex.cpp:366
+#: skycomponents/linelistindex.cpp:372
 #, fuzzy, kde-format
 #| msgid "Loading Image URLs"
 msgid "Loading %1"
 msgstr "छवि यूआरएल लोड गर्दै"
 
-#: skycomponents/milkyway.cpp:60
+#: skycomponents/milkyway.cpp:59
 #, fuzzy
 #| msgid "Loading city data"
 msgid "Loading Milky Way"
@@ -33980,29 +33983,29 @@ msgstr "सिटी डेटा लोड गर्दै"
 msgid "Creating Earth satellites"
 msgstr ""
 
-#: skycomponents/skymapcomposite.cpp:411
+#: skycomponents/skymapcomposite.cpp:412
 #, fuzzy, kde-format
 #| msgid "Could not find an entry named %1 in colors.dat."
 msgid "Could not find custom catalog component named %1."
 msgstr "colors.dat. मा %1 नामकरण गरिएको एउटा प्रविष्टि फेला पार्न सकेन ।"
 
-#: skycomponents/solarsystemcomposite.cpp:84
+#: skycomponents/solarsystemcomposite.cpp:83
 #, fuzzy
 #| msgid "Solar system"
 msgid "Loading solar system"
 msgstr "सौरमण्डल"
 
-#: skycomponents/starcomponent.cpp:73 skycomponents/starcomponent.cpp:348
+#: skycomponents/starcomponent.cpp:72 skycomponents/starcomponent.cpp:347
 #, fuzzy
 #| msgid "Loading sky objects"
 msgid "Loading stars"
 msgstr "स्काइ वस्तुहरू लोड गर्दै"
 
-#: skycomponents/starcomponent.cpp:110
+#: skycomponents/starcomponent.cpp:109
 msgid "Please wait while re-indexing stars ..."
 msgstr ""
 
-#: skycomponents/starcomponent.cpp:163
+#: skycomponents/starcomponent.cpp:162
 msgid "Please wait while loading faint stars ..."
 msgstr ""
 
