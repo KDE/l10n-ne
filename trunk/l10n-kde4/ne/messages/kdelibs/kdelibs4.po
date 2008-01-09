@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-04 06:26+0100\n"
+"POT-Creation-Date: 2008-01-09 07:16+0100\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1786,7 +1786,7 @@ msgid "Waldo Bastian"
 msgstr "वाल्डो वस्टिएन"
 
 #: kded/khostname.cpp:221 kded/kbuildsycoca.cpp:708 kded/kbuildsycoca.cpp:709
-#: kross/test/main.cpp:140 kross/console/main.cpp:102
+#: kross/qts/main.cpp:63 kross/test/main.cpp:140 kross/console/main.cpp:102
 #: kde3support/kdeui/k3aboutdialog.cpp:184
 msgid "Author"
 msgstr "लेखक"
@@ -3108,7 +3108,7 @@ msgstr "%1 लाइब्रेरीले केडीई ४ मिल्द
 msgid "The plugin '%1' uses incompatible KDE library. (%2)"
 msgstr "प्लगइन '%1' ले अमिल्दो केडीई लाइब्रेरी प्रयोग गर्दछ । (%2)"
 
-#: kdecore/config/kconfig.cpp:587
+#: kdecore/config/kconfig.cpp:615
 msgid "Please contact your system administrator."
 msgstr "कृपया तपाईँको प्रणाली प्रबन्धकसँग सम्पर्क गर्नुहोस् ।"
 
@@ -3422,60 +3422,64 @@ msgstr "अनुप्रयोगलाई QWS सर्भरको रूप
 msgid "mirrors the whole layout of widgets"
 msgstr "विजेटको सम्पूर्ण सजावट दर्पण गर्दछ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:303
+#: kdecore/kernel/kcmdlineargs.cpp:301
+msgid "applies the Qt stylesheet to the application widgets"
+msgstr ""
+
+#: kdecore/kernel/kcmdlineargs.cpp:304
 msgid "Use 'caption' as name in the titlebar"
 msgstr "शीर्षकपट्टीमा नामको रूपमा 'क्याप्सन' प्रयोग गर्नुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:304
+#: kdecore/kernel/kcmdlineargs.cpp:305
 msgid "Use 'icon' as the application icon"
 msgstr "अनुप्रयोग प्रतिमाको रूपमा 'प्रतिमा' प्रयोग गर्नुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:305
+#: kdecore/kernel/kcmdlineargs.cpp:306
 msgid "Use alternative configuration file"
 msgstr "वैकल्पिक कन्फिगरेसन फाइल प्रयोग गर्नुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:306
+#: kdecore/kernel/kcmdlineargs.cpp:307
 msgid "Disable crash handler, to get core dumps"
 msgstr "कोर डम्प प्राप्त गर्न, क्र्यास ह्यान्डलर अक्षम पार्नुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:308
+#: kdecore/kernel/kcmdlineargs.cpp:309
 msgid "Waits for a WM_NET compatible windowmanager"
 msgstr "WM_NET मिल्दो विन्डोज प्रबन्धकका लागि प्रतिक्षा गर्दछ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:310
+#: kdecore/kernel/kcmdlineargs.cpp:311
 msgid "sets the application GUI style"
 msgstr "अनुप्रयोग GUI शैली सेट गर्दछ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:311
+#: kdecore/kernel/kcmdlineargs.cpp:312
 msgid ""
 "sets the client geometry of the main widget - see man X for the argument "
 "format"
 msgstr "मुख्य विजेटको क्लाइन्ट ज्यामिति सेट गर्दछ - तर्क ढाँचाका लागि man X हेर्नुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:426
+#: kdecore/kernel/kcmdlineargs.cpp:427
 msgid "KDE Application"
 msgstr "केडीई अनुप्रयोग"
 
-#: kdecore/kernel/kcmdlineargs.cpp:483
+#: kdecore/kernel/kcmdlineargs.cpp:484
 msgid "Qt"
 msgstr "Qt"
 
-#: kdecore/kernel/kcmdlineargs.cpp:486 khtml/khtml_part.cpp:4817
+#: kdecore/kernel/kcmdlineargs.cpp:487 khtml/khtml_part.cpp:4820
 msgid "KDE"
 msgstr "केडीई"
 
-#: kdecore/kernel/kcmdlineargs.cpp:794 kdecore/kernel/kcmdlineargs.cpp:814
+#: kdecore/kernel/kcmdlineargs.cpp:795 kdecore/kernel/kcmdlineargs.cpp:815
 #, kde-format
 msgid "Unknown option '%1'."
 msgstr "अज्ञात विकल्प '%1' ।"
 
-#: kdecore/kernel/kcmdlineargs.cpp:822
+#: kdecore/kernel/kcmdlineargs.cpp:823
 #, kde-format
 msgctxt "@info:shell %1 is cmdoption name"
 msgid "'%1' missing."
 msgstr "'%1' हराइरेहको छ ।"
 
-#: kdecore/kernel/kcmdlineargs.cpp:907
+#: kdecore/kernel/kcmdlineargs.cpp:908
 #, kde-format
 msgctxt "the 2nd argument is a list of name+address, one on each line"
 msgid ""
@@ -3485,43 +3489,43 @@ msgstr ""
 "%1 लाई\n"
 "%2 द्वारा लेखियो"
 
-#: kdecore/kernel/kcmdlineargs.cpp:910
+#: kdecore/kernel/kcmdlineargs.cpp:911
 msgid "This application was written by somebody who wants to remain anonymous."
 msgstr "यस अनुप्रयोगलाई नाम गोप्य राख्न चाहने व्यक्तिद्वारा लेखिएको हो ।"
 
-#: kdecore/kernel/kcmdlineargs.cpp:917
+#: kdecore/kernel/kcmdlineargs.cpp:918
 msgid "Please use http://bugs.kde.org to report bugs.\n"
 msgstr "कृपया बग प्रतिवेदन गर्न http://bugs.kde.org प्रयोग गर्नुहोस् ।\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:919
+#: kdecore/kernel/kcmdlineargs.cpp:920
 #, kde-format
 msgid "Please report bugs to %1.\n"
 msgstr "कृपया %1 मा बग प्रतिवेदन गर्नुहोस् ।\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:945
+#: kdecore/kernel/kcmdlineargs.cpp:946
 #, kde-format
 msgid "Unexpected argument '%1'."
 msgstr "अनपेक्षित तर्क '%1' ।"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1061
+#: kdecore/kernel/kcmdlineargs.cpp:1062
 msgid "Use --help to get a list of available command line options."
 msgstr "उपलब्ध आदेश लाइन विकल्पको सूची प्राप्त गर्न मद्दत-- प्रयोग गर्नुहोस् ।"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1084
+#: kdecore/kernel/kcmdlineargs.cpp:1085
 msgid "[options] "
 msgstr "[विकल्प] "
 
-#: kdecore/kernel/kcmdlineargs.cpp:1091
+#: kdecore/kernel/kcmdlineargs.cpp:1092
 #, kde-format
 msgid "[%1-options]"
 msgstr "[%1-विकल्प]"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1112
+#: kdecore/kernel/kcmdlineargs.cpp:1113
 #, kde-format
 msgid "Usage: %1 %2\n"
 msgstr "उपयोग: %1 %2\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1115
+#: kdecore/kernel/kcmdlineargs.cpp:1116
 msgid ""
 "\n"
 "Generic options:\n"
@@ -3529,36 +3533,36 @@ msgstr ""
 "\n"
 "जेनेरिक विकल्प:\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1116
+#: kdecore/kernel/kcmdlineargs.cpp:1117
 msgid "Show help about options"
 msgstr "विकल्पका बारेमा मद्दत देखाउनुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1124
+#: kdecore/kernel/kcmdlineargs.cpp:1125
 #, kde-format
 msgid "Show %1 specific options"
 msgstr "%1 निर्दिष्ट विकल्प देखाउनुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1131
+#: kdecore/kernel/kcmdlineargs.cpp:1132
 msgid "Show all options"
 msgstr "सबै विकल्प देखाउनुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1132
+#: kdecore/kernel/kcmdlineargs.cpp:1133
 msgid "Show author information"
 msgstr "लेखक सूचना देखाउनुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1133
+#: kdecore/kernel/kcmdlineargs.cpp:1134
 msgid "Show version information"
 msgstr "संस्करण सूचना देखाउनुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1134
+#: kdecore/kernel/kcmdlineargs.cpp:1135
 msgid "Show license information"
 msgstr "इजाजतपत्र सूचना देखाउनुहोस्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1135
+#: kdecore/kernel/kcmdlineargs.cpp:1136
 msgid "End of options"
 msgstr "विकल्पको अन्त्य"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1156
+#: kdecore/kernel/kcmdlineargs.cpp:1157
 #, kde-format
 msgid ""
 "\n"
@@ -3567,7 +3571,7 @@ msgstr ""
 "\n"
 "%1 विकल्प:\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1158
+#: kdecore/kernel/kcmdlineargs.cpp:1159
 msgid ""
 "\n"
 "Options:\n"
@@ -3575,7 +3579,7 @@ msgstr ""
 "\n"
 "विकल्प:\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1216
+#: kdecore/kernel/kcmdlineargs.cpp:1217
 msgid ""
 "\n"
 "Arguments:\n"
@@ -3583,11 +3587,11 @@ msgstr ""
 "\n"
 "तर्क:\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1583
+#: kdecore/kernel/kcmdlineargs.cpp:1584
 msgid "The files/URLs opened by the application will be deleted after use"
 msgstr "अनप्रयोगद्वारा खोलिएका फाइल/यूआरएल प्रयोग पछि मेटिन्छन्"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1584
+#: kdecore/kernel/kcmdlineargs.cpp:1585
 msgid "KDE-tempfile"
 msgstr "केडीई अस्थायी फाइल"
 
@@ -4779,45 +4783,45 @@ msgstr "भर्नुहोस्"
 msgid "Do Not Fill Out"
 msgstr "नभर्नुहोस्"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:424
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:429
 msgid "Show:"
 msgstr "देखाउनुहोस्:"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:433
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:438
 msgid "Order by:"
 msgstr "मागकर्ता:"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:446
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:451
 msgid "Search:"
 msgstr "खोजी:"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:473
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:478
 msgid "Get Hot New Stuff!"
 msgstr "अति नयाँ सामाग्री प्राप्त गर्नुहोस्!"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:475
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:480
 #, kde-format
 msgctxt "Program name followed by 'Add On Installer'"
 msgid "%1 Add On Installer"
 msgstr "स्थापकमा %1 थप्नुहोस्"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:533
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:538
 msgid "Timeout. Check internet connection!"
 msgstr "म्याद समाप्त । इन्टरनेट जडान जाँच गर्नुहोस्!"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:716
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:721
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:402
 msgid "A protocol fault has occurred. The request has failed."
 msgstr "एउटा प्रोटोकल गल्ती उत्पन्न भयो । अनुरोध असफल भएकोछ ।"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:717
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:724
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:722
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:729
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:403
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:410
 msgid "Desktop Exchange Service"
 msgstr "डेस्कटप विनिमय सेवा"
 
-#: knewstuff/knewstuff2/ui/downloaddialog.cpp:723
+#: knewstuff/knewstuff2/ui/downloaddialog.cpp:728
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:409
 msgid "A network error has occurred. The request has failed."
 msgstr "सञ्जाल त्रुटि उत्पन्न भयो । अनुरोध असफल भएको छ ।"
@@ -5077,11 +5081,11 @@ msgstr ""
 "<qt> <i>gpg</i> सुरु गर्न र फाइल हस्ताक्षर गर्न सकिँदैन । <i>gpg</i> स्थापना भएकोमा "
 "निश्चित हुनुहोस्, अन्यथा संसाधनको हस्ताक्षर सम्भव हुदैन ।</qt>"
 
-#: kdeui/jobs/kstatusbarjobtracker.cpp:219
+#: kdeui/jobs/kstatusbarjobtracker.cpp:233
 msgid " Stalled "
 msgstr " स्थापित "
 
-#: kdeui/jobs/kstatusbarjobtracker.cpp:221
+#: kdeui/jobs/kstatusbarjobtracker.cpp:235
 #, kde-format
 msgid " %1/s "
 msgstr " %1/s "
@@ -5661,7 +5665,7 @@ msgstr ""
 
 #: kdeui/dialogs/kshortcutsdialog.cpp:742
 #: kdeui/dialogs/kshortcutsdialog.cpp:771
-#: kdeui/dialogs/kshortcutsdialog.cpp:787 kdeui/shortcuts/kglobalaccel.cpp:314
+#: kdeui/dialogs/kshortcutsdialog.cpp:787 kdeui/shortcuts/kglobalaccel.cpp:306
 #: kdeui/widgets/kkeysequencewidget.cpp:131
 msgid "Reassign"
 msgstr "फेरि मानाङ्कन गर्नुहोस्"
@@ -5814,27 +5818,27 @@ msgid "Change &Icon..."
 msgstr "प्रतिमा परिवर्तन गर्नुहोस्..."
 
 #. i18n filtering message for action names
-#: kdeui/dialogs/kedittoolbar.cpp:1037
+#: kdeui/dialogs/kedittoolbar.cpp:1039
 #, kde-format
 msgctxt "@item:intable Action name in toolbar editor"
 msgid "%1"
 msgstr "%1"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1058
+#: kdeui/dialogs/kedittoolbar.cpp:1060
 msgid ""
 "This element will be replaced with all the elements of an embedded component."
 msgstr "यो तत्व सम्मिलित अवयवको सबै तत्वसँग बदलिनेछ ।"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1060
+#: kdeui/dialogs/kedittoolbar.cpp:1062
 msgid "<Merge>"
 msgstr "<Merge>"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1062
+#: kdeui/dialogs/kedittoolbar.cpp:1064
 #, kde-format
 msgid "<Merge %1>"
 msgstr "<Merge %1>"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1068
+#: kdeui/dialogs/kedittoolbar.cpp:1070
 msgid ""
 "This is a dynamic list of actions. You can move it, but if you remove it you "
 "will not be able to re-add it."
@@ -5842,12 +5846,12 @@ msgstr ""
 "यो कार्यको गतिशील सूची हो । तपाईँले यसलाई सार्न सक्नुहुन्छ, तर यदि तपाईँले यसलाई हटाउनु "
 "भएमा यसलाई फेरि थप्न सक्नुहुने छैन ।"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1069
+#: kdeui/dialogs/kedittoolbar.cpp:1071
 #, kde-format
 msgid "ActionList: %1"
 msgstr "कार्यसूची: %1"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1160 kdeui/dialogs/kedittoolbar.cpp:1187
+#: kdeui/dialogs/kedittoolbar.cpp:1171 kdeui/dialogs/kedittoolbar.cpp:1198
 #, fuzzy, kde-format
 #| msgctxt "@application/plain"
 #| msgid "%1"
@@ -5855,7 +5859,7 @@ msgctxt "@label Action tooltip in toolbar editor, below the action list"
 msgid "%1"
 msgstr "%1"
 
-#: kdeui/dialogs/kedittoolbar.cpp:1425
+#: kdeui/dialogs/kedittoolbar.cpp:1436
 #, fuzzy
 #| msgid "Change &Icon..."
 msgid "Change Icon"
@@ -6865,11 +6869,11 @@ msgstr "सबै दृश्यात्मक स्तम्भ"
 msgid "S&earch:"
 msgstr "खोजी:"
 
-#: kdeui/shortcuts/kglobalaccel.cpp:308
+#: kdeui/shortcuts/kglobalaccel.cpp:300
 msgid "Conflict with Global Shortcut"
 msgstr "विश्वव्यापी सर्टकटसँग द्वन्द्व"
 
-#: kdeui/shortcuts/kglobalaccel.cpp:309
+#: kdeui/shortcuts/kglobalaccel.cpp:301
 #, kde-format
 msgid ""
 "The '%1' key combination has already been allocated to the global action \"%2"
@@ -7306,12 +7310,16 @@ msgid "As-you-type spell checking disabled."
 msgstr "तपाईँले टाइप गर्दा हिज्जे जाँच अक्षम पारियो ।"
 
 #: kdeui/xmlgui/kmenumenuhandler_p.cpp:48
-msgid "Add to toolbar"
+#, fuzzy
+#| msgid "Add to toolbar"
+msgid "Add to Toolbar"
 msgstr "उपकरणपट्टीमा थप्नुहोस्"
 
 #: kdeui/xmlgui/kmenumenuhandler_p.cpp:56
-msgid "Configure Shortcut"
-msgstr "सर्टकट कन्फिगर गर्नुहोस्"
+#, fuzzy
+#| msgid "Configure S&hortcuts..."
+msgid "Configure Shortcut..."
+msgstr "सर्टकट कन्फिगर गर्नुहोस्..."
 
 #: kdeui/xmlgui/kxmlguibuilder.cpp:174 kdeui/xmlgui/kxmlguibuilder.cpp:347
 msgid "No text"
@@ -8549,15 +8557,15 @@ msgctxt "@info:tooltip Tooltip of toolbar button"
 msgid "%1"
 msgstr "%1"
 
-#: kdeui/widgets/ktimezonewidget.cpp:61
+#: kdeui/widgets/ktimezonewidget.cpp:63
 msgid "Area"
 msgstr "क्षेत्र"
 
-#: kdeui/widgets/ktimezonewidget.cpp:61
+#: kdeui/widgets/ktimezonewidget.cpp:63
 msgid "Region"
 msgstr "प्रदेश"
 
-#: kdeui/widgets/ktimezonewidget.cpp:61
+#: kdeui/widgets/ktimezonewidget.cpp:63
 msgid "Comment"
 msgstr "टिप्पणी"
 
@@ -8852,8 +8860,9 @@ msgid "&Eject '%1'"
 msgstr "'%1' निकाल्नुहोस्"
 
 #: kfile/kfileplacesmodel.cpp:660
-#, kde-format
-msgid "&Safely remove '%1'"
+#, fuzzy, kde-format
+#| msgid "&Safely remove '%1'"
+msgid "&Safely Remove '%1'"
 msgstr "'%1' सूरक्षित रूपमान हटाउनुहोस्"
 
 #: kfile/kfileplacesmodel.cpp:662
@@ -9134,8 +9143,8 @@ msgstr "Testkhtml"
 msgid "a basic web browser using the KHTML library"
 msgstr "KHTML लाइब्रेरी प्रयोग गर्ने आधार वेब ब्राउजर"
 
-#: khtml/khtml_run.cpp:86 khtml/khtml_part.cpp:3827 khtml/khtml_part.cpp:4043
-#: khtml/khtml_part.cpp:4408 kparts/browserrun.cpp:434
+#: khtml/khtml_run.cpp:93 khtml/khtml_part.cpp:3830 khtml/khtml_part.cpp:4046
+#: khtml/khtml_part.cpp:4411 kparts/browserrun.cpp:434
 msgid "Save As"
 msgstr "यस रूपमा बचत गर्नुहोस्"
 
@@ -9580,154 +9589,154 @@ msgstr ""
 "फ्रेम मुद्रण गर्नुहोस्<br /><br />केही पृष्ठमा धेरै फ्रेम हुन्छन् । केबल एउटा फ्रेम मुद्रण गर्न, "
 "यसमा क्लिक गर्नुहोस् र त्यसपछि यो प्रकार्य प्रयोग गर्नुहोस् ।"
 
-#: khtml/khtml_part.cpp:411
+#: khtml/khtml_part.cpp:412
 msgid "Toggle Caret Mode"
 msgstr "क्यारेट मोड टगल गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:616
+#: khtml/khtml_part.cpp:619
 #, kde-format
 msgid "The fake user-agent '%1' is in use."
 msgstr "झुटा प्रयोगकर्ता अभिकर्ता '%1' प्रयोगमा छ ।"
 
-#: khtml/khtml_part.cpp:1101
+#: khtml/khtml_part.cpp:1104
 msgid "This web page contains coding errors."
 msgstr "यो वेब पृष्ठले सङ्केतन त्रुटि समावेश गर्दछ ।"
 
-#: khtml/khtml_part.cpp:1143
+#: khtml/khtml_part.cpp:1146
 msgid "&Hide Errors"
 msgstr "त्रुटि लुकाउनुहोस्"
 
-#: khtml/khtml_part.cpp:1144
+#: khtml/khtml_part.cpp:1147
 msgid "&Disable Error Reporting"
 msgstr "त्रुटि प्रतिवेदन अक्षम पार्नुहोस्"
 
-#: khtml/khtml_part.cpp:1188
+#: khtml/khtml_part.cpp:1191
 #, kde-format
 msgid "<b>Error</b>: %1: %2"
 msgstr "<b>त्रुटि</b>: %1: %2"
 
-#: khtml/khtml_part.cpp:1236
+#: khtml/khtml_part.cpp:1239
 #, kde-format
 msgid "<b>Error</b>: node %1: %2"
 msgstr "<b>त्रुटि</b>: नोड %1: %2"
 
-#: khtml/khtml_part.cpp:1369
+#: khtml/khtml_part.cpp:1372
 msgid "Display Images on Page"
 msgstr "पृष्ठमा छवि प्रर्दशन गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:1702
+#: khtml/khtml_part.cpp:1705
 #, kde-format
 msgid "Error while loading %1"
 msgstr "%1 लोड गर्दा त्रुटि"
 
-#: khtml/khtml_part.cpp:1704
+#: khtml/khtml_part.cpp:1707
 #, kde-format
 msgid "An error occurred while loading <B>%1</B>:"
 msgstr "<B>%1</B> लोड गर्दा एउटा त्रुटि उत्पन्न भयो:"
 
-#: khtml/khtml_part.cpp:1739
+#: khtml/khtml_part.cpp:1742
 msgid "Error: "
 msgstr "त्रुटि: "
 
-#: khtml/khtml_part.cpp:1742
+#: khtml/khtml_part.cpp:1745
 msgid "The requested operation could not be completed"
 msgstr "अनुरोध गरिएको सञ्चालन सम्पन्न गर्न सक्दैन"
 
-#: khtml/khtml_part.cpp:1748
+#: khtml/khtml_part.cpp:1751
 msgid "Technical Reason: "
 msgstr "प्राविधिक कारण: "
 
-#: khtml/khtml_part.cpp:1753
+#: khtml/khtml_part.cpp:1756
 msgid "Details of the Request:"
 msgstr "अनुरोधको विवरण:"
 
-#: khtml/khtml_part.cpp:1755
+#: khtml/khtml_part.cpp:1758
 #, kde-format
 msgid "URL: %1"
 msgstr "URL: %1"
 
-#: khtml/khtml_part.cpp:1762
+#: khtml/khtml_part.cpp:1765
 #, kde-format
 msgid "Date and Time: %1"
 msgstr "मिति र समय: %1"
 
-#: khtml/khtml_part.cpp:1764
+#: khtml/khtml_part.cpp:1767
 #, kde-format
 msgid "Additional Information: %1"
 msgstr "थप जानकारी: %1"
 
-#: khtml/khtml_part.cpp:1766 kutils/kpluginselector.cpp:1665
+#: khtml/khtml_part.cpp:1769 kutils/kpluginselector.cpp:1665
 msgid "Description:"
 msgstr "वर्णन:"
 
-#: khtml/khtml_part.cpp:1772
+#: khtml/khtml_part.cpp:1775
 msgid "Possible Causes:"
 msgstr "सम्भावित कारण:"
 
-#: khtml/khtml_part.cpp:1779
+#: khtml/khtml_part.cpp:1782
 msgid "Possible Solutions:"
 msgstr "सम्भावित समाधान:"
 
-#: khtml/khtml_part.cpp:2120
+#: khtml/khtml_part.cpp:2123
 msgid "Page loaded."
 msgstr "पृष्ठ लोड गरियो ।"
 
-#: khtml/khtml_part.cpp:2122
+#: khtml/khtml_part.cpp:2125
 #, kde-format
 msgid "%1 Image of %2 loaded."
 msgid_plural "%1 Images of %2 loaded."
 msgstr[0] "%1 छवि %2 बाट लोड गरियो ।"
 msgstr[1] "%1 छवि %2 बाट लोड गरियो ।"
 
-#: khtml/khtml_part.cpp:2283
+#: khtml/khtml_part.cpp:2286
 msgid "Automatic Detection"
 msgstr "स्वचालित खोज"
 
-#: khtml/khtml_part.cpp:3635 khtml/khtml_part.cpp:3722
-#: khtml/khtml_part.cpp:3733
+#: khtml/khtml_part.cpp:3638 khtml/khtml_part.cpp:3725
+#: khtml/khtml_part.cpp:3736
 msgid " (In new window)"
 msgstr " (नयाँ सञ्झ्यालमा)"
 
-#: khtml/khtml_part.cpp:3674
+#: khtml/khtml_part.cpp:3677
 msgid "Symbolic Link"
 msgstr "साङ्केतिक लिङ्क"
 
-#: khtml/khtml_part.cpp:3676
+#: khtml/khtml_part.cpp:3679
 #, kde-format
 msgid "%1 (Link)"
 msgstr "%1 (लिङ्क)"
 
-#: khtml/khtml_part.cpp:3696
+#: khtml/khtml_part.cpp:3699
 #, kde-format
 msgid "%2 (%1 bytes)"
 msgstr "%2 (%1 बाइट)"
 
-#: khtml/khtml_part.cpp:3700
+#: khtml/khtml_part.cpp:3703
 #, kde-format
 msgid "%2 (%1 K)"
 msgstr "%2 (%1 K)"
 
-#: khtml/khtml_part.cpp:3735
+#: khtml/khtml_part.cpp:3738
 msgid " (In other frame)"
 msgstr " (अन्य फ्रेममा)"
 
-#: khtml/khtml_part.cpp:3740
+#: khtml/khtml_part.cpp:3743
 msgid "Email to: "
 msgstr "यसलाई इमेल: "
 
-#: khtml/khtml_part.cpp:3746
+#: khtml/khtml_part.cpp:3749
 msgid " - Subject: "
 msgstr "विषय: "
 
-#: khtml/khtml_part.cpp:3748
+#: khtml/khtml_part.cpp:3751
 msgid " - CC: "
 msgstr "बोधार्थ प्रतिलिपि: "
 
-#: khtml/khtml_part.cpp:3750
+#: khtml/khtml_part.cpp:3753
 msgid " - BCC: "
 msgstr "गुप्त बोधार्थ प्रतिलिपि: "
 
-#: khtml/khtml_part.cpp:3832
+#: khtml/khtml_part.cpp:3835
 #, kde-format
 msgid ""
 "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to follow "
@@ -9736,44 +9745,44 @@ msgstr ""
 "<qt>यो अविश्वास गरिएको पृष्ठ <br /><b>%1</b> मा लिङ्क हुन्छ ।<br />तपाईँ लिङ्क अनुगमन "
 "गर्न चाहनुहुन्छ ?</qt>"
 
-#: khtml/khtml_part.cpp:3833
+#: khtml/khtml_part.cpp:3836
 msgid "Follow"
 msgstr "अनुगमन गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:3940
+#: khtml/khtml_part.cpp:3943
 msgid "Frame Information"
 msgstr "फ्रेम सूचना"
 
-#: khtml/khtml_part.cpp:3946
+#: khtml/khtml_part.cpp:3949
 #, kde-format
 msgid "   <a href=\"%1\">[Properties]</a>"
 msgstr "   <a href=\"%1\">[Properties]</a>"
 
-#: khtml/khtml_part.cpp:4031
+#: khtml/khtml_part.cpp:4034
 msgid "Save Background Image As"
 msgstr "यस रूपमा छवि पृष्ठभूमी बचत गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:4135
+#: khtml/khtml_part.cpp:4138
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr ""
 
-#: khtml/khtml_part.cpp:4137
+#: khtml/khtml_part.cpp:4140
 msgid "SSL"
 msgstr ""
 
-#: khtml/khtml_part.cpp:4154
+#: khtml/khtml_part.cpp:4157
 msgid "Save Frame As"
 msgstr "यसरूपमा फ्रेम बचत गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:4196
+#: khtml/khtml_part.cpp:4199
 msgid "&Find in Frame..."
 msgstr "ढाँचामा फेला पार्नुहोस्..."
 
-#: khtml/khtml_part.cpp:4198 kdeui/actions/kstandardaction_p.h:64
+#: khtml/khtml_part.cpp:4201 kdeui/actions/kstandardaction_p.h:64
 msgid "&Find..."
 msgstr "फेला पार्नुहोस्..."
 
-#: khtml/khtml_part.cpp:4708
+#: khtml/khtml_part.cpp:4711
 msgid ""
 "Warning:  This is a secure form but it is attempting to send your data back "
 "unencrypted.\n"
@@ -9785,16 +9794,16 @@ msgstr ""
 "तेर्स्रो पक्षले काट्न र सो जानकारी हेर्न सक्षम हुनसक्छ ।\n"
 "तपाईँ निरन्तरता दिन यकीन हुनुहुन्छ ?"
 
-#: khtml/khtml_part.cpp:4711 khtml/khtml_part.cpp:4720
-#: khtml/khtml_part.cpp:4744
+#: khtml/khtml_part.cpp:4714 khtml/khtml_part.cpp:4723
+#: khtml/khtml_part.cpp:4747
 msgid "Network Transmission"
 msgstr "सञ्जाल प्रसारण"
 
-#: khtml/khtml_part.cpp:4711 khtml/khtml_part.cpp:4721
+#: khtml/khtml_part.cpp:4714 khtml/khtml_part.cpp:4724
 msgid "&Send Unencrypted"
 msgstr "गुप्तिकरण नगरिएको पठाउनुहोस्"
 
-#: khtml/khtml_part.cpp:4718
+#: khtml/khtml_part.cpp:4721
 msgid ""
 "Warning: Your data is about to be transmitted across the network "
 "unencrypted.\n"
@@ -9803,7 +9812,7 @@ msgstr ""
 "चेतावनी: तपाईँको डेटा गुप्तिकरण नगरिएको सञ्जाल भरी प्रसारण गर्न लागिएको छ ।\n"
 "तपाईँ निरन्तरता दिन चाहनुहुन्छ ?"
 
-#: khtml/khtml_part.cpp:4742
+#: khtml/khtml_part.cpp:4745
 msgid ""
 "This site is attempting to submit form data via email.\n"
 "Do you want to continue?"
@@ -9811,11 +9820,11 @@ msgstr ""
 "यो साइटले इमेल मार्फत फारम डेटा पेश गर्ने प्रयास गर्दैछ ।\n"
 "तपाईँ निरन्तरता दिन चाहनुहुन्छ ?"
 
-#: khtml/khtml_part.cpp:4745
+#: khtml/khtml_part.cpp:4748
 msgid "&Send Email"
 msgstr "इमेल पठाउनुहोस्"
 
-#: khtml/khtml_part.cpp:4767
+#: khtml/khtml_part.cpp:4770
 #, kde-format
 msgid ""
 "<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
@@ -9824,12 +9833,12 @@ msgstr ""
 "<qt>फारम तपाईँको स्थानीय फाइल प्रणालीको <br /><b>%1</b><br />मा पेश गरिन्छ ।<br /"
 ">तपाईँ फारम पेश गर्न चाहनुहुन्छ ?</qt>"
 
-#: khtml/khtml_part.cpp:4768 khtml/khtmlview.cpp:2818 khtml/khtmlview.cpp:2860
+#: khtml/khtml_part.cpp:4771 khtml/khtmlview.cpp:2818 khtml/khtmlview.cpp:2860
 #: khtml/html/html_formimpl.cpp:1563 khtml/html/html_formimpl.cpp:2171
 msgid "Submit"
 msgstr "पेश गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:4817
+#: khtml/khtml_part.cpp:4820
 msgid ""
 "This site attempted to attach a file from your computer in the form "
 "submission. The attachment was removed for your protection."
@@ -9837,46 +9846,46 @@ msgstr ""
 "यो साइटले फारम पेश गरेर तपाईँको कम्प्युटरबाट फाइल सङ्लग्न गर्ने प्रयास गर्यो । तपाईँको "
 "सुरक्षाका लागि सङ्लग्नता हटाइयो ।"
 
-#: khtml/khtml_part.cpp:5814
+#: khtml/khtml_part.cpp:5817
 #, kde-format
 msgid "(%1/s)"
 msgstr "(%1/s)"
 
-#: khtml/khtml_part.cpp:6861
+#: khtml/khtml_part.cpp:6864
 msgid "Security Warning"
 msgstr "सुरक्षा चेतावनी"
 
-#: khtml/khtml_part.cpp:6867
+#: khtml/khtml_part.cpp:6870
 #, kde-format
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>अविश्वासिलो पृष्ठबाट<br /><b>%1</b><br /> मा पहुँच अस्वीकार गरियो ।</qt>"
 
-#: khtml/khtml_part.cpp:6868 khtml/java/kjavaappletserver.cpp:823
+#: khtml/khtml_part.cpp:6871 khtml/java/kjavaappletserver.cpp:823
 msgid "Security Alert"
 msgstr "सुरक्षा सावधानी"
 
-#: khtml/khtml_part.cpp:7215
+#: khtml/khtml_part.cpp:7218
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr "फारम डेटा र पासवर्डका लागि '%1' वालेट खोलिन्छ र प्रयोग गरिन्छ ।"
 
-#: khtml/khtml_part.cpp:7272
+#: khtml/khtml_part.cpp:7275
 msgid "&Close Wallet"
 msgstr "वालेट बन्द गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:7315
+#: khtml/khtml_part.cpp:7318
 msgid "JavaScript &Debugger"
 msgstr "जाभास्क्रिप्ट त्रुटिमोचक"
 
-#: khtml/khtml_part.cpp:7348
+#: khtml/khtml_part.cpp:7351
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr "यो पृष्ठलाई जाभास्क्रिप्टबाट नयाँ सञ्झ्याल खोल्न निषेध गरिएकोछ ।"
 
-#: khtml/khtml_part.cpp:7354
+#: khtml/khtml_part.cpp:7357
 msgid "Popup Window Blocked"
 msgstr "पपअप सञ्झ्याल रोकियो"
 
-#: khtml/khtml_part.cpp:7354
+#: khtml/khtml_part.cpp:7357
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -9886,7 +9895,7 @@ msgstr ""
 "तपाईँले यो व्यवहार नियन्त्रण गर्न वा पपअप खोल्न स्थितिपट्टीको यो प्रतिमामा\n"
 "क्लिक गर्न सक्नुहुन्छ ।"
 
-#: khtml/khtml_part.cpp:7367
+#: khtml/khtml_part.cpp:7370
 #, fuzzy, kde-format
 #| msgid "&Show Blocked Popup Window"
 #| msgid_plural "Show %1 Blocked Popup Windows"
@@ -9895,11 +9904,11 @@ msgid_plural "&Show %1 Blocked Popup Windows"
 msgstr[0] "रोकिएको पपअप सञ्झ्याल देखाउनुहोस्"
 msgstr[1] " %1 रोकिएको पपअप सञ्झ्याल देखाउनुहोस्"
 
-#: khtml/khtml_part.cpp:7368
+#: khtml/khtml_part.cpp:7371
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "रोकिएको सञ्झ्यालको निस्क्रिय पपअप सूचना देखाउनुहोस्"
 
-#: khtml/khtml_part.cpp:7370
+#: khtml/khtml_part.cpp:7373
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "जाभास्क्रिप्ट नयाँ सञ्झ्याल नीति कन्फिगर गर्नुहोस्..."
 
@@ -10647,49 +10656,61 @@ msgstr "नयाँ स्क्रिप्ट थप्नुहोस् ।
 msgid "Remove selected script."
 msgstr "चयन गरिएको स्क्रिप्ट हटाउनुहोस् ।"
 
-#: kross/core/interpreter.cpp:132
-#, kde-format
-msgid "Could not load interpreter library \"%1\""
-msgstr "अनुवादक लाइब्रेरी \"%1\" लोड गर्न सकेन"
+#: kross/qts/main.cpp:57 kross/console/main.cpp:94
+msgid "Kross"
+msgstr "क्रस"
 
-#: kross/core/interpreter.cpp:144
-msgid "Incompatible interpreter library."
-msgstr "प्रतिकूल अनुवादक लाइब्रेरी ।"
+#: kross/qts/main.cpp:58 kross/console/main.cpp:96
+msgid "KDE application to run Kross scripts."
+msgstr "क्रस स्क्रिप्ट चलाउनलाई केडीई अनुप्रयोग ।"
 
-#: kross/core/manager.cpp:102
+#: kross/qts/main.cpp:60 kross/console/main.cpp:98
+msgid "(C) 2006 Sebastian Sauer"
+msgstr "(C) 2006 सेबास्चियन साउर"
+
+#: kross/qts/main.cpp:61 kross/console/main.cpp:99
+msgid "Run Kross scripts."
+msgstr "क्रस स्क्रिप्ट चलाउनुहोस् ।"
+
+#: kross/qts/main.cpp:63 kross/test/main.cpp:140 kross/console/main.cpp:102
+msgid "Sebastian Sauer"
+msgstr "सेबास्चियन साउर"
+
+#: kross/qts/main.cpp:69 kross/test/main.cpp:143 kross/console/main.cpp:108
+msgid "Scriptfile"
+msgstr "स्क्रिप्ट फाइल"
+
+#: kross/core/manager.cpp:139
 msgid "Level of safety of the Ruby interpreter"
 msgstr "रुवी अनुवादकको सुरक्षा स्तर"
 
-#: kross/core/manager.cpp:146
-msgid "Restricted mode for untrusted scripts"
-msgstr "अविश्वासीला स्क्रिप्टका लागि निषेध मोड"
-
-#: kross/core/action.cpp:376
+#: kross/core/action.cpp:394
 #, kde-format
 msgid "There exists no such scriptfile \"%1\""
 msgstr "त्यहाँ \"%1\" जस्तो स्क्रिप्ट फाइल अवस्थित छैन"
 
-#: kross/core/action.cpp:380
+#: kross/core/action.cpp:398
 #, kde-format
 msgid "Failed to determinate interpreter for scriptfile \"%1\""
 msgstr "स्क्रिप्ट फाइल \"%1\" का लागि अनुवादक निर्धारण गर्न असफल"
 
-#: kross/core/action.cpp:384
+#: kross/core/action.cpp:402
 #, kde-format
 msgid "Failed to open scriptfile \"%1\""
 msgstr "स्क्रिप्ट फाइल \"%1\" लोड गर्न असफल"
 
-#: kross/core/action.cpp:395
-#, kde-format
-msgid "Failed to load interpreter \"%1\": %2"
+#: kross/core/action.cpp:413
+#, fuzzy, kde-format
+#| msgid "Failed to load interpreter \"%1\": %2"
+msgid "Failed to load interpreter \"%1\""
 msgstr "अनुवादक \"%1\": %2 लोड गर्न असफल"
 
-#: kross/core/action.cpp:397
+#: kross/core/action.cpp:415
 #, kde-format
 msgid "No such interpreter \"%1\""
 msgstr "\"%1\" त्यस्तो अनुवादक होइन"
 
-#: kross/core/action.cpp:403
+#: kross/core/action.cpp:421
 #, kde-format
 msgid "Failed to create script for interpreter \"%1\""
 msgstr "\"%1\" अनुवादकका लागि स्क्रिप्ट सिर्जना गर्न असफल"
@@ -10709,30 +10730,6 @@ msgstr "(C) 2005-2007 सेबास्चियन साउर"
 #: kross/test/main.cpp:137
 msgid "Test the Kross framework!"
 msgstr "क्रस फ्रेमवर्क परीक्षण गर्नुहोस्!"
-
-#: kross/test/main.cpp:140 kross/console/main.cpp:102
-msgid "Sebastian Sauer"
-msgstr "सेबास्चियन साउर"
-
-#: kross/test/main.cpp:143 kross/console/main.cpp:108
-msgid "Scriptfile"
-msgstr "स्क्रिप्ट फाइल"
-
-#: kross/console/main.cpp:94
-msgid "Kross"
-msgstr "क्रस"
-
-#: kross/console/main.cpp:96
-msgid "KDE application to run Kross scripts."
-msgstr "क्रस स्क्रिप्ट चलाउनलाई केडीई अनुप्रयोग ।"
-
-#: kross/console/main.cpp:98
-msgid "(C) 2006 Sebastian Sauer"
-msgstr "(C) 2006 सेबास्चियन साउर"
-
-#: kross/console/main.cpp:99
-msgid "Run Kross scripts."
-msgstr "क्रस स्क्रिप्ट चलाउनुहोस् ।"
 
 #: kross/modules/form.cpp:273
 msgid "Abort?"
@@ -10822,11 +10819,15 @@ msgid "Daniel Molkentin"
 msgstr "डानियल मोल्केन्टिन"
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:170
-msgid "Tag resource..."
+#, fuzzy
+#| msgid "Tag resource..."
+msgid "Tag Resource"
 msgstr "ट्याग संसाधन..."
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:183
-msgid "Create new tag..."
+#, fuzzy
+#| msgid "Create new tag..."
+msgid "Create New Tag..."
 msgstr "नयाँ ट्याग सिर्जना गर्नुहोस्..."
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:188
@@ -10834,7 +10835,9 @@ msgid "New Tag"
 msgstr "नयाँ ट्याग"
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:188
-msgid "Please insert the name of the new tag"
+#, fuzzy
+#| msgid "Please insert the name of the new tag"
+msgid "Please insert the name of the new tag:"
 msgstr "कृपया नयाँ ट्यागको नाम घुसाउनुहोस्"
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:197
@@ -10843,7 +10846,9 @@ msgid "The tag %1 already exists"
 msgstr "ट्याग %1 पहिले नै अवस्थित छ"
 
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:197
-msgid "Tag exists"
+#, fuzzy
+#| msgid "Tag exists"
+msgid "Tag Exists"
 msgstr "ट्याग अवस्थित छ"
 
 #: nepomuk/core/test/tagcloudtest.cpp:30
@@ -11156,51 +11161,51 @@ msgstr "'%1' वैध QLayout होइन ।"
 msgid "Must supply a layout name."
 msgstr "सजावट नाम दिनुपर्दछ ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:116
+#: kjsembed/kjsembed/qobject_binding.cpp:117
 msgid "Wrong object type."
 msgstr "गलत वस्तु प्रकार ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:124
+#: kjsembed/kjsembed/qobject_binding.cpp:125
 msgid "First argument must be a QObject."
 msgstr "पहिलो तर्क QObject हुनुपर्दछ ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:161
+#: kjsembed/kjsembed/qobject_binding.cpp:162
 msgid "Incorrect number of arguments."
 msgstr "तर्कको गलत सङ्ख्या ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:409
+#: kjsembed/kjsembed/qobject_binding.cpp:410
 #, kde-format
 msgid ""
 "The slot sked for %1 arguments but there are only %2 arguments available."
 msgstr "स्लटले %1 तर्कलाई स्केइड गरियो तर त्यहाँ %2 तर्क मात्र उपलब्ध छन् ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:597
+#: kjsembed/kjsembed/qobject_binding.cpp:598
 #, kde-format
 msgid "Failure to cast to %1 value from Type %2 (%3)"
 msgstr "%2 (%3) प्रकारबाट मान %1 लाई हटाउन असफल"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:632
+#: kjsembed/kjsembed/qobject_binding.cpp:633
 #, kde-format
 msgid "No such method '%1'."
 msgstr "'%1' जस्तो विधि छैन ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:647
+#: kjsembed/kjsembed/qobject_binding.cpp:648
 #, kde-format
 msgid "Call to method '%1' failed, unable to get argument %2: %3"
 msgstr "विधि '%1' लाई कल गर्न असफल, तर्क %2: %3 प्राप्त गर्न अक्षम"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:662
+#: kjsembed/kjsembed/qobject_binding.cpp:663
 #, kde-format
 msgid "Call to '%1' failed."
 msgstr "'%1' लाई कल गर्न असफल ।"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:747
+#: kjsembed/kjsembed/qobject_binding.cpp:753
 #: kjsembed/kjsembed/object_binding.h:219
 #, kde-format
 msgid "%1 is not an Object type"
 msgstr "%1 एउटा वस्तु प्रकार होइन"
 
-#: kjsembed/kjsembed/qobject_binding.cpp:753
+#: kjsembed/kjsembed/qobject_binding.cpp:759
 msgid "Could not construct value"
 msgstr "मान रचना गर्न सकेन ।"
 
@@ -12061,6 +12066,18 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br />%3<br />युनिकोड सङ्केत बिन्दु: %"
 "4<br />(दशमलवमा: %5)</qt>"
+
+#~ msgid "Configure Shortcut"
+#~ msgstr "सर्टकट कन्फिगर गर्नुहोस्"
+
+#~ msgid "Could not load interpreter library \"%1\""
+#~ msgstr "अनुवादक लाइब्रेरी \"%1\" लोड गर्न सकेन"
+
+#~ msgid "Incompatible interpreter library."
+#~ msgstr "प्रतिकूल अनुवादक लाइब्रेरी ।"
+
+#~ msgid "Restricted mode for untrusted scripts"
+#~ msgstr "अविश्वासीला स्क्रिप्टका लागि निषेध मोड"
 
 #~ msgid "Stop script execution"
 #~ msgstr "स्क्रिप्ट कार्यान्वयन रोक्नुहोस्"
