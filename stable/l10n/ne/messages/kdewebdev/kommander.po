@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kommander\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-10 01:19+0100\n"
+"POT-Creation-Date: 2008-01-17 01:19+0100\n"
 "PO-Revision-Date: 2007-04-02 15:30+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -65,13 +65,13 @@ msgstr "<qt>आदेश प्लगइन<br><b>%1</b> लोड गर्न 
 msgid "Cannot add plugin"
 msgstr "प्लगइन थप्न सकिदैन"
 
-#: _translatorinfo.cpp:1 editor/main.cpp:49
+#: _translatorinfo.cpp:1 editor/main.cpp:50
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
 msgstr "Nabin Gautam"
 
-#: _translatorinfo.cpp:3 editor/main.cpp:50
+#: _translatorinfo.cpp:3 editor/main.cpp:51
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
@@ -998,7 +998,24 @@ msgstr "संवाद खोल्नका लागि"
 msgid "Kommander"
 msgstr "आदेश"
 
-#: editor/main.cpp:70
+#: editor/main.cpp:46
+msgid "Project manager"
+msgstr ""
+
+#: editor/main.cpp:47
+#, fuzzy
+msgid "Current maintainer"
+msgstr "हालको लाइन प्रतिलिपि गर्नुहोस्"
+
+#: editor/main.cpp:48
+msgid "Previous maintainer"
+msgstr ""
+
+#: editor/main.cpp:49
+msgid "Original author"
+msgstr ""
+
+#: editor/main.cpp:71
 msgid "Kommander Dialog Editor"
 msgstr "आदेश संवाद सम्पादक"
 
@@ -1890,11 +1907,16 @@ msgstr "शाखाहरू ठाडो गरि सजाउनुहोस
 msgid "Lay Out Children in a Grid"
 msgstr "शाखा ग्रिडमा सजाउनुहोस्"
 
-#: editor/functionsimpl.cpp:136
+#: editor/functionsimpl.cpp:72 plugin/specialinformation.cpp:372
+#, fuzzy
+msgid "Slots"
+msgstr "स्लट"
+
+#: editor/functionsimpl.cpp:162
 msgid "<p>Parameters are not obligatory."
 msgstr "<p>परामितिहरू अपरिहार्य छैनन् ।"
 
-#: editor/functionsimpl.cpp:139
+#: editor/functionsimpl.cpp:165
 #, c-format
 msgid ""
 "_n: "
@@ -1904,7 +1926,7 @@ msgstr ""
 "<p>पहिलो तर्क मात्र अपरिहार्य छ ।\n"
 "<p>पहिलो %n तर्क मात्र अपरिहार्य छ ।"
 
-#: editor/functionsimpl.cpp:147
+#: editor/functionsimpl.cpp:173
 msgid ""
 "<qt>"
 "<h3>%1</h3>"
@@ -1915,6 +1937,582 @@ msgstr ""
 "<h3>%1</h3>"
 "<p><b>वर्णन:</b> %2\n"
 "<p><b>वाक्य संरचना:</b> <i>%3</i>%4</qt>"
+
+#: plugin/specialinformation.cpp:286
+msgid "Inserts the item if it will not create a duplicate."
+msgstr "यदि यसले नक्कल सिर्जना नगरेमा वस्तु घुसाउछ ।"
+
+#: plugin/specialinformation.cpp:288
+msgid ""
+"Returns scripts associated with widget. This is an advanced feature that would "
+"not be commonly used."
+msgstr ""
+"विजेटसँग सम्बन्धित स्क्रिप्ट फर्काउछ । यो सामान्यतया प्रयोग नहुने उन्नत बिशेषता "
+"हो ।"
+
+#: plugin/specialinformation.cpp:289
+msgid "Stops execution of the script associated with the widget."
+msgstr "विजेटसँग सम्बन्धित स्क्रिप्टको प्रभाव रोक्छ ।"
+
+#: plugin/specialinformation.cpp:291
+msgid "Returns text of a cell in a table."
+msgstr "तालिकामा कक्षको पाठ फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:293
+msgid "Returns 1 for checked boxes, 0 for unchecked."
+msgstr "चेक गरिएका बाकसहरूका लागि १, अनचेक गरिएकाका लागि ० फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:295
+msgid ""
+"Returns the list of child widgets contained in the parent widget. Set the <i>"
+"recursive</i> parameter to <i>true</i> to include widgets contained by child "
+"widgets."
+msgstr ""
+"प्रमूल विजेटमा समाविष्ट शाखा विजेटको सूची फर्काउछ । शाखा विजेद्वारा समाविष्ट "
+"विजेट समावेश गर्न <i>दोहोरिने</i> परिमिति <i>सत्य</i> मा सेट गर्नुहोस् ।"
+
+#: plugin/specialinformation.cpp:297
+msgid "Removes all content from the widget."
+msgstr "विजेटबाट सबै सामाग्री हटाउछ ।"
+
+#: plugin/specialinformation.cpp:300
+msgid "Returns number of items in a widget such as combobox or listbox."
+msgstr "कम्बो बाकस वा सूची बाकस जस्तै विजेटमा वसतुहरूको नम्बर फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:302
+msgid "Returns index of current column."
+msgstr "हालको स्तम्भको अनुक्रमणिका फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:304
+msgid "Returns index of current item."
+msgstr "हालको वस्तुको अनुक्रमणिका फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:306
+msgid "Returns index of current row."
+msgstr "हालको पङ्क्तिको अनुक्रमणिका फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:307
+msgid "Executes the script associated with the widget."
+msgstr "विजेटसँग सम्बन्धित स्क्रिप्ट कार्यान्वयन गर्छ ।"
+
+#: plugin/specialinformation.cpp:309
+msgid "Returns the index of an item with the given text."
+msgstr "दिएको पाठको वस्तुको अनुक्रमणिका फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:311
+msgid "Inserts new column (or <i>count</i> columns) at <i>column</i> position."
+msgstr ""
+"<i>स्तम्भ</i> स्थितिमा नयाँ स्तम्भ (वा स्तम्भहरू <i>गणना गर्नुहोस्</i>"
+") घुसाउछ ।"
+
+#: plugin/specialinformation.cpp:313
+msgid "Inserts item at <i>index</i> position."
+msgstr "<i>अनुक्रमणिका</i> स्थितिमा वस्तु घुसाउछ ।"
+
+#: plugin/specialinformation.cpp:316
+msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
+msgstr "<i>अनुक्रमणिका</i> स्थितिमा (EOL-बिभाजित) बहुबिध बस्तुहरू घुसाउछ ।"
+
+#: plugin/specialinformation.cpp:319
+msgid "Inserts new row (or <i>count</i> rows) at <i>row</i> position."
+msgstr ""
+"<i>पङ्क्ति</i> स्थितिमा नयाँ पङ्क्ति (वा पङ्क्तिहरू <i>गणना गर्नुहोस्</i>"
+") घुसाउछ ।"
+
+#: plugin/specialinformation.cpp:321
+msgid "Returns the text of the item at the given index."
+msgstr "दिएको अनुक्रमणिकामा वस्तुको पाठ फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:323
+msgid ""
+"Returns the depth of the current item in the tree. Root items have depth 0."
+msgstr "ट्रिमा हालको वस्तुको गहनता फर्काउछ । प्रमूल वस्तुमा गहिराइ ० छ ।"
+
+#: plugin/specialinformation.cpp:325
+msgid "Returns the slash-separated path to the given item in the tree."
+msgstr "ट्रीमा दिएको वस्तुको स्ल्यासद्वारा-बिभाजित मार्ग फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:327
+msgid ""
+"Removes the column (or <i>count</i> consecutive columns) with the given index."
+msgstr "दिएको अनुक्रमणिकाको स्तम्भ (वा क्रमिक स्तम्भहरू <i>गणना</i>) हटाउछ ।"
+
+#: plugin/specialinformation.cpp:329
+msgid "Removes the item with the given index."
+msgstr "दिएको अनुक्रमणिकाको वस्तु हटाउछ ।"
+
+#: plugin/specialinformation.cpp:332
+msgid ""
+"Removes the row (or <i>count</i> consecutive rows) with the given index."
+msgstr "दिएको अनुक्रमणिकाको पङ्क्ति (वा क्रमिक पङ्क्ति <i>गणना</i>) हटाउछ ।"
+
+#: plugin/specialinformation.cpp:335
+msgid ""
+"Returns selected text or text of current item.\n"
+"In case of Table widgets, returns the selection coordinates, separated by "
+"commas in TopRow,LeftColumn,BottomRow,RightColumn form. "
+msgstr ""
+
+#: plugin/specialinformation.cpp:337
+msgid ""
+"Sets scripts associated with widget. This is an advanced feature that would not "
+"be commonly used."
+msgstr ""
+"विजेटसँग सम्बन्धित स्क्रिप्ट सेट गर्छ । यो सामान्यतया प्रयोग नहुने उन्नत "
+"बिशेषता हो ।"
+
+#: plugin/specialinformation.cpp:339
+msgid "Enables or disables widget."
+msgstr "विजेट सक्षम वा अक्षम पार्छ ।"
+
+#: plugin/specialinformation.cpp:342
+msgid "Sets text of a cell in a table."
+msgstr "तालिकामा कक्षको पाठ सेट गर्छ ।"
+
+#: plugin/specialinformation.cpp:344
+#, fuzzy
+msgid "Inserts a widget into a cell of a table."
+msgstr "तालिकामा कक्षको पाठ सेट गर्छ ।"
+
+#: plugin/specialinformation.cpp:346
+msgid "Sets/unsets checkbox."
+msgstr "जाँच बाकस सेट/अनसेट गर्छ ।"
+
+#: plugin/specialinformation.cpp:348
+msgid "Sets caption of the column <i>column</i>."
+msgstr "स्तम्भको क्याप्सन सेट गर्छ <i>स्तम्भ</i> ।"
+
+#: plugin/specialinformation.cpp:350
+msgid "Selects the item at the specified index. Indexes are zero based."
+msgstr ""
+"निर्दिष्ट गरिएको अनुक्रमणिकामा वस्तु चयन गर्छ । अनुक्रमणिकाहरू शून्य आधारित छन् "
+"।"
+
+#: plugin/specialinformation.cpp:353
+#, fuzzy
+msgid ""
+"Inserts a tab to the tabwidget with the specified label at the given index. "
+"Indexes are zero based."
+msgstr ""
+"निर्दिष्ट गरिएको अनुक्रमणिकामा वस्तु चयन गर्छ । अनुक्रमणिकाहरू शून्य आधारित छन् "
+"।"
+
+#: plugin/specialinformation.cpp:355
+msgid "Sets maximum numeric value"
+msgstr "अधिकतम सङ्ख्यात्मक मान सेट गर्छ"
+
+#: plugin/specialinformation.cpp:357
+msgid ""
+"Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
+"to set the pixmap for all items."
+msgstr ""
+"निर्दिष्ट गरिएको प्रतिमाको दिएको अनुक्रमणिकामा पिक्सम्याप सेट गर्छ । सबै "
+"वस्तुका लागि पिक्सम्याप सेट गर्न <i>index = -1</i> प्रयोग गर्नुहोस् ।"
+
+#: plugin/specialinformation.cpp:359
+msgid "Sets caption of the row <i>row</i>."
+msgstr "पङ्क्तिको क्याप्सन सेट गर्छ <i>row</i> ।"
+
+#: plugin/specialinformation.cpp:361
+msgid "Selects given text or select item containing given text."
+msgstr "दिएको पाठ वा दिएको पाठ रहेको वस्तु चयन गर्छ ।"
+
+#: plugin/specialinformation.cpp:364
+msgid "Sets widget's content."
+msgstr "विजेटको सामाग्री सेट गर्छ ।"
+
+#: plugin/specialinformation.cpp:367
+msgid "Shows/hides widget."
+msgstr "विजेट देखाउछ/लुकाउछ ।"
+
+#: plugin/specialinformation.cpp:368
+msgid "Returns content of widget."
+msgstr "विजेटको सामाग्री फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:370
+msgid "Returns type(class) of widget."
+msgstr "विजेटको प्रकार (वर्ग) फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:376
+msgid ""
+"Returns current widget's content. This was required inside widget A to return "
+"widget A content when requested by widget B. The new method is to use @A.text "
+"inside B instead of just @A if you just want the unaltered text."
+msgstr ""
+"हालको विजेटको सामाग्री फर्काउछ । विजेट B द्वारा अनुरोध गरेको बेलामा विजेट A "
+"सामाग्री फर्काउन विजेट A भित्र यो आवश्यक हुन्थ्यो । यदि तपाईँले परिवर्तन "
+"नगरिएको पाठ मात्र चाहेमा @A को मात्र साटोमा B भित्रपट्टी @A. प्रयोग गर्ने नयाँ "
+"बिधि हो ।"
+
+#: plugin/specialinformation.cpp:378
+msgid ""
+"Returns selected text or text of current item. This is deprecated for <i>"
+"@mywidget.selected</i>."
+msgstr ""
+"हालको वस्तुको चयन गरिएको पाठ वा पाठ फर्काउछ । यो<i>@mywidget.selected</i> "
+"का लागि अनुचित हुन्छ ।"
+
+#: plugin/specialinformation.cpp:380
+msgid ""
+"Does nothing. This is useful if you request a CheckBox or RadioButton to return "
+"a value where a state, typically the unchecked state, has no value. The @null "
+"prevents an error indicating it is empty."
+msgstr ""
+"केहि हुदैन । यदि तपाईँले मान नभएको स्थिति, बिशेषत: चेकबाट हटाइएको स्थिति, मा "
+"जाँच बाकस वा रेडियो बटन फर्काउन अनुरोध गर्दा उपयोगि हुन्छ । @null ले यो खाली "
+"भएको सूचीत गर्ने त्रुटि रोकथाम गर्छ ।"
+
+#: plugin/specialinformation.cpp:382
+msgid "Returns the pid (process ID) of the current process."
+msgstr "हालको प्रक्रियाको pid (प्रक्रिया आईडी) फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:384
+msgid ""
+"Returns DCOP identifier of current process. This is shorthand for <i>"
+"kmdr-executor-@pid</i>."
+msgstr ""
+"हालको प्रक्रियाको डीसीओपी पहिचायक फर्काउछ । यो<i>kmdr-executor-@pid</i> "
+"का लागि संक्षेप हुन्छ ।"
+
+#: plugin/specialinformation.cpp:387
+msgid "Returns the pid of the parent Kommander window."
+msgstr "प्रमूल आदेश सञ्झ्यालको pid फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:389
+msgid "Writes <i>text</i> on stderr."
+msgstr "stderr मा <i>पाठ</i> लेख्छ ।"
+
+#: plugin/specialinformation.cpp:391
+msgid "Writes <i>text</i> on standard output."
+msgstr "मानक निर्गतमा <i>पाठ</i> लेख्छ ।"
+
+#: plugin/specialinformation.cpp:393
+msgid ""
+"Executes a script block. Bash is used if no shell is given. It is primarily for "
+"use in non-button widgets where script actions are not expected. Full path is "
+"not required for the shell which may be useful for portability. "
+"<p><i>If this is used inside a button it allows alternate script languages to "
+"be used and will return a value to the main script, which may be unexpected.</i>"
+msgstr ""
+"स्क्रिप्ट खण्ड कार्यान्वयन गर्छ । शेल नदिदा ब्यास प्रयोग गरिन्छ । यो सामान्यतया "
+"स्क्रिप्ट कार्यहरू अपेक्षा नगरिएका बटन नहुने विजेटका लागि प्रयोग गरिन्छ । शेलका "
+"लागि पूरा मार्ग आवश्यक हुदैन जुन चलाउनका लागि उपयोगि हुन्छ । "
+"<p><i> यदि यसलाई बटनको भित्रपट्टी प्रयोग गरिन्छ भने यसले प्रयोग हुने वैकल्पिक "
+"स्क्रिप्ट भाषाहरूलाई अनुमति दिन्छ र मुख्य स्क्रिप्टमा मान फर्काउछ, जुन "
+"अनपेक्षित हुनसक्छ ।</i>"
+
+#: plugin/specialinformation.cpp:395
+msgid ""
+"Returns value of an environment (shell) variable. Do not use <i>$</i> "
+"in the name. For example, <i>@env(PATH)</i>."
+msgstr ""
+"परिवेश (शेल) चलको मान फर्काउछ । नाममा <i>$</i> प्रयोग नगर्नुहोस् ।उदाहरणका "
+"लागि, <i>@env(PATH)</i> ।"
+
+#: plugin/specialinformation.cpp:397
+msgid "Executes an external shell command."
+msgstr "बाह्य शेल आदेश कार्यान्वयन गर्छ ।"
+
+#: plugin/specialinformation.cpp:399
+msgid "Parses an expression and returns computed value."
+msgstr "अभिव्यक्ति पदवर्णन गर्छ र गणना गरिएको मान फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:401
+msgid ""
+"Executes loop: values from <i>items</i> list (passed as EOL-separated string) "
+"are assigned to the variable. "
+"<br> <i>@forEach(i,A\\nB\\nC\\n)"
+"<br>  @# @i=A"
+"<br>@endif</i>"
+msgstr ""
+"लूप कार्यान्वय गर्छ: <i>वस्तु</i> सूची (EOL-बिभाजित स्ट्रिङका रुपमा पास भएका) "
+"मानहरू चलमा मानाङ्कन गरिन्छन् । "
+"<br> <i>@forEach(i,A\\nB\\nC\\n)"
+"<br>  @# @i=A"
+"<br>@endif</i>"
+
+#: plugin/specialinformation.cpp:403
+msgid ""
+"Executes loop: variable is set to <i>start</i> and is increased by <i>step</i> "
+"each time loop is executed. Execution stops when variable becomes larger then "
+"<i>end</i>. "
+"<br><i>@for(i,1,10,1)"
+"<br>  @# @i=1"
+"<br>@endif</i>."
+msgstr ""
+"लूप कार्यान्वयन गर्छ: चल <i>सुरु</i> मा सेट हुन्छ र प्रत्येक पटक लूप "
+"कार्यान्वयन भएको <i>चरण</i> मा बढाइन्छ । चल <i>अन्त्य</i> "
+"भन्दा ठूलो भएपछि कार्यान्वयन रोकिन्छ । "
+"<br><i>@for(i,1,10,1)"
+"<br>  @# @i=1"
+"<br>@endif</i>."
+
+#: plugin/specialinformation.cpp:405
+msgid "Returns the value of a global variable."
+msgstr "विश्वब्यापी चलको मान फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:407
+msgid ""
+"Translates the string into the current language. Texts in GUI would be "
+"automatically extracted for translation."
+msgstr ""
+"हालको भाषामा स्ट्रिङलाई अनुवाद गर्छ । अनुवादका लागि GUI का पाठ स्वत: झिकिन्छन् "
+"।"
+
+#: plugin/specialinformation.cpp:409
+msgid ""
+"Executes block if expression is true (non-zero number or non-empty string.) "
+"<p>Close with <b>@endif</b></p>"
+msgstr ""
+"यदि अभिव्यक्ति ठीक भएमा खण्ड कार्यान्वयन गर्छ (शून्य-विहिन नम्बर वा खाली नभएको "
+"स्ट्रिङ ।) "
+"<p>यससँग बन्द गर्नुहोस् <b>@endif</b></p>"
+
+#: plugin/specialinformation.cpp:411
+msgid ""
+"Executes another Kommander dialog. Current dialog directory is used if no path "
+"is given. Arguments may be given as named arguments which will become global "
+"variables in the new dialog. For instance: <i>var=val</i>"
+msgstr ""
+"अन्य आदेश संवाद कार्यान्वयन गर्छ । यदि मार्ग दिएको नभएमा हालको संवाद डाइरेक्टरी "
+"प्रयोग गरिन्छ । तर्कहरू नामकरण गरिएको तर्क अनुरुप दिइनस सक्छ जुन नयाँ संवादमा "
+"बिश्वब्यापी चल हुन्छन् । दृष्टान्तका लागि: <i>var=val</i>"
+
+#: plugin/specialinformation.cpp:413
+msgid "Reads setting from configration file for this dialog."
+msgstr "यो संवादका लागि कन्फिगरेसन फाइलबाट सेटिङ पढ्दछ ।"
+
+#: plugin/specialinformation.cpp:415
+msgid ""
+"Sets the value of a global variable. Global variables exist for the life of the "
+"Kommander window."
+msgstr ""
+"बिश्वब्यापी चलको मान सेट गर्दछ । बिश्वब्यापी चलहरू आदेश सञ्झ्यालका जीवनका "
+"लागिअवस्थित हुन्छ ।"
+
+#: plugin/specialinformation.cpp:417
+msgid "Stores setting in configuration file for this dialog."
+msgstr "यो संवादका लागि कन्फिगरेसन फाइलमा सेटिङ भण्डारण गर्दछ ।"
+
+#: plugin/specialinformation.cpp:419
+msgid ""
+"Begin of <b>switch</b> block. Following <b>case</b> values are compared to <i>"
+"expression</i>."
+"<p>@switch()"
+"<br>@case()"
+"<br>@end"
+msgstr ""
+"<b>स्विच</b> खण्डको सुरुआत । निम्न <b>केस</b> मानहरू <i>अभिव्यक्ति</i> "
+"सँग तुलना गरिन्छन् ।"
+"<p>@switch()"
+"<br>@case()"
+"<br>@end"
+
+#: plugin/specialinformation.cpp:421
+msgid "Executes an external DCOP call."
+msgstr "बाह्य डीसीओपी कल कार्यान्वयन गर्छ ।"
+
+#: plugin/specialinformation.cpp:423
+msgid "Adds a comment to EOL that Kommander will not parse"
+msgstr "आदेशकले पदवर्णन नगर्ने ईओएलमा टिप्पणी थप्दछ"
+
+#: plugin/specialinformation.cpp:425
+msgid ""
+"Creates a new widget with the specified type and as the child of parent."
+msgstr ""
+
+#: plugin/specialinformation.cpp:429
+msgid "Returns an EOL-separated list of all values in the array."
+msgstr "बाँणमा सबै मानहरूको एउटा ईओएलद्वारा-बिभाजीत सूची फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:431
+msgid "Returns an EOL-separated list of all keys in the array."
+msgstr "बाँणमा सबै कुञ्जीहरूको ईओएल-बिभाजीत सूची फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:433
+msgid "Removes all elements from the array."
+msgstr "बाँणबाट सबै तत्व हटाउछ ।"
+
+#: plugin/specialinformation.cpp:435
+msgid "Returns the number of elements in the array."
+msgstr "बाँणमा तत्वहरूको नम्बर फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:437
+msgid "Returns the value associated with the given key."
+msgstr "दिएको कुञ्जीसँग सम्बन्धित मान फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:439
+msgid "Removes element with the given key from the array."
+msgstr "बाँणबाट दिएको कुञ्जीसँग तत्व हटाउछ ।"
+
+#: plugin/specialinformation.cpp:441
+msgid "Adds element with the given key and value to the array"
+msgstr "बाँणमा दिएको कुञ्जी र मानसँग तत्व थप्दछ ।"
+
+#: plugin/specialinformation.cpp:443
+msgid ""
+"Adds all elements in the string to the array. String should have <i>"
+"key\\tvalue\\n</i> format."
+msgstr ""
+"बाँणमा स्ट्रिङका सबै तत्व थप्दछ । स्ट्रिङ <i>key\\tvalue\\n</i> "
+"ढाँचामा हुनुपर्छ ।"
+
+#: plugin/specialinformation.cpp:446
+msgid ""
+"Returns all elements in the array in "
+"<pre>key\\tvalue\\n</pre> format."
+msgstr ""
+"बाँणमा "
+"<pre>key\\tvalue\\n</pre> ढाँचाका सबै तत्वहरू फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:451
+msgid "Returns number of chars in the string."
+msgstr "स्ट्रिङमा क्यारेक्टरहरूको नम्बर फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:453
+msgid "Checks if the the string contains the given substring."
+msgstr "यदि स्ट्रिङमा दिएको सब-स्ट्रिङ भएमा जाँच गर्छ ।"
+
+#: plugin/specialinformation.cpp:455
+msgid ""
+"Returns the position of a substring in the string, or -1 if it is not found."
+msgstr "स्ट्रिङमा सब- स्ट्रिङको स्थिति फर्काउछ, वा यो फेला नपरेमा -१ फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:457
+msgid ""
+"Returns the position of a substring in the string, or -1 if it is not found. "
+"String is searched backwards"
+msgstr ""
+"स्ट्रिङमा सब-स्ट्रिङको स्थिति फर्काउछ, वा यो फेला नपरेमा -१ फर्काउछ । स्ट्रिङ "
+"पछिल्तिर खोजिन्छन् ।"
+
+#: plugin/specialinformation.cpp:459
+msgid "Returns the first <i>n</i> chars of the string."
+msgstr "स्ट्रिङको पहिला <i>n</i> क्यारेक्टर फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:461
+msgid "Returns the last <i>n</i> chars of the string."
+msgstr "स्ट्रिङको अन्तिम <i>n</i> क्यारेक्टर फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:463
+msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
+msgstr "<i>पहिलो</i> बाट सुरु हुने, स्ट्रिङका क्यारेक्टर <i>n</i> फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:465
+msgid "Removes all occurrences of given substring."
+msgstr "दिएका सब-स्ट्रिङका सबै घटना हटाउछ ।"
+
+#: plugin/specialinformation.cpp:467
+msgid ""
+"Replaces all occurrences of the given substring with the given replacement."
+msgstr "दिएको प्रतिस्थापनसँग दिएको सब-स्ट्रिङको घटना बदल्छ ।"
+
+#: plugin/specialinformation.cpp:469
+msgid "Converts the string to uppercase."
+msgstr "स्ट्रिङलाई ठूलो अक्षरमा रुपान्तरण गर्छ ।"
+
+#: plugin/specialinformation.cpp:471
+msgid "Converts the string to lowercase."
+msgstr "स्ट्रिङलाई सानो अक्षरमा रुपान्तरण गर्छ ।"
+
+#: plugin/specialinformation.cpp:473
+msgid ""
+"Compares two strings. Returns 0 if they are equal, -1 if the first one is "
+"lower, 1 if the first one is higher"
+msgstr ""
+"दुई स्ट्रिङ तुलना गर्छ । यदि बराबर भएमा ०, पहिलो सानो भएमा -१, पहिलो ठूलो भएमा "
+"१ फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:476
+msgid "Checks if the string is empty."
+msgstr "स्ट्रिङ खाली भएको जाँच गर्छ ।"
+
+#: plugin/specialinformation.cpp:478
+msgid "Checks if the string is a valid number."
+msgstr "स्ट्रिङ बैध नम्बर भएमा जाँच गर्छ ।"
+
+#: plugin/specialinformation.cpp:480
+msgid "Returns given section of a string."
+msgstr "स्ट्रिङको दिएको खण्ड फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:482
+msgid ""
+"Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, <i>arg2</i>"
+", <i>arg3</i> accordingly."
+msgstr ""
+"दिएको स्ट्रिङ <i>arg1</i>, <i>arg2</i>, <i>arg3</i> अनुसार %1, %2, %3 मा "
+"फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:486
+msgid "Returns content of given file."
+msgstr "दिएको फाइलको सामाग्री फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:488
+msgid "Writes given string to a file."
+msgstr "दिएको स्ट्रिङ फाइलमा लेख्छ ।"
+
+#: plugin/specialinformation.cpp:490
+msgid "Appends given string to the end of a file."
+msgstr "फाइलको अन्त्यमा दिएको स्ट्रिङ थप्दछ ।"
+
+#: plugin/specialinformation.cpp:493
+msgid "Shows color dialog. Returns color in #RRGGBB format."
+msgstr "रङ संवाद देखाउछ । रङ #RRGGBB ढाँचमा फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:495
+msgid "Shows text selection dialog. Returns entered text."
+msgstr "पाठ चयन संवाद देखाउछ । प्रविष्ट गरिएको पाठ फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:497
+msgid "Shows a dialog asking user for password and returns it."
+msgstr "पासवर्डका लागि प्रयोगकर्तालाई सोधेको संवाद देखाउछ र यसलाई फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:499
+msgid "Shows value selection dialog. Returns entered value."
+msgstr "मान चयन संवाद देखाउछ । प्रविष्ट गरिएको मान फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:501
+msgid "Shows float value selection dialog. Returns entered value."
+msgstr "उत्प्लावन मान चयन संवाद देखाउछ । प्रविष्ट गरिएको मान फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:503
+msgid "Shows existing file selection dialog. Returns selected file."
+msgstr "अवस्थित फाइल चयन संवाद देखाउछ । चयन गरिएको फाइल फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:505
+msgid "Shows save file selection dialog. Returns selected file."
+msgstr "बचत फाइल चयन संवाद देखाउछ । चयन गरिएको फाइल फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:507
+msgid "Shows directory selection dialog. Returns selected directory."
+msgstr "डाइरेक्टरी चयन संवाद देखाउछ । चयन गरिएको डाइरेक्टरी फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:509
+msgid ""
+"Shows multiple files selection dialog. Returns EOL-separated list of selected "
+"files."
+msgstr ""
+"बहुबिध फाइल चयन संवाद देखाउछ । चयन गरिएका फाइलहरूको EOL-बिभाजीत सूची फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:513
+msgid "Shows an information dialog."
+msgstr "सूचना संवाद देखाउछ ।"
+
+#: plugin/specialinformation.cpp:515
+msgid "Shows an error dialog."
+msgstr "त्रुटि संवाद देखाउछ ।"
+
+#: plugin/specialinformation.cpp:517
+msgid ""
+"Shows a warning dialog with up to three buttons. Returns number of selected "
+"button."
+msgstr "तीनवटा बटनसम्म चेतावनी संवाद देखाउछ । चयन गरिएका बटनको नम्बर फर्काउछ ।"
+
+#: plugin/specialinformation.cpp:519
+msgid ""
+"Shows a question dialog with up to three buttons. Returns number of selected "
+"button."
+msgstr "तीनवटा बटनसम्म प्रश्न संवाद देखाउछ । चयन गरिएका बटनको नम्बर फर्काउछ ।"
 
 #. i18n: file ./editor/wizardeditor.ui line 16
 #: rc.cpp:3
@@ -3825,11 +4423,11 @@ msgstr "अवैध क्यारेक्टर: '%1'"
 msgid "Constant value expected"
 msgstr ""
 
-#: widget/parser.cpp:216 widget/parser.cpp:485
+#: widget/parser.cpp:216 widget/parser.cpp:497
 msgid "'%1' is not a widget"
 msgstr "'%1' विजेट होइन"
 
-#: widget/parser.cpp:221 widget/parser.cpp:487
+#: widget/parser.cpp:221 widget/parser.cpp:500
 msgid "'%1' is not a function"
 msgstr "'%1' प्रकार्य होइन"
 
@@ -3853,15 +4451,15 @@ msgstr "अति थोरै परिमिति"
 msgid "too many parameters"
 msgstr "अति धेरै परिमिति"
 
-#: widget/parser.cpp:456
+#: widget/parser.cpp:460
 msgid "in widget function '%1.%2': %3"
 msgstr "विजेट प्रकार्य '%1.%2': %3 मा"
 
-#: widget/parser.cpp:489
+#: widget/parser.cpp:502
 msgid "Unexpected symbol after variable '%1'"
 msgstr "चल '%1' पछिको अपेक्षित सङ्केत"
 
-#: widget/parser.cpp:675
+#: widget/parser.cpp:720
 msgid ""
 "Expected '%1'"
 "<br>"
@@ -3869,610 +4467,44 @@ msgid ""
 "widget"
 msgstr ""
 
-#: widget/parser.cpp:677
+#: widget/parser.cpp:722
 msgid "Expected '%1'"
 msgstr "अपेक्षित '%1'"
 
-#: widget/parser.cpp:691 widget/parser.cpp:704
+#: widget/parser.cpp:736 widget/parser.cpp:749
 msgid "Expected variable"
 msgstr "अपेक्षित चल"
-
-#: widget/specials.cpp:24
-msgid "Inserts the item if it will not create a duplicate."
-msgstr "यदि यसले नक्कल सिर्जना नगरेमा वस्तु घुसाउछ ।"
-
-#: widget/specials.cpp:26
-msgid ""
-"Returns scripts associated with widget. This is an advanced feature that would "
-"not be commonly used."
-msgstr ""
-"विजेटसँग सम्बन्धित स्क्रिप्ट फर्काउछ । यो सामान्यतया प्रयोग नहुने उन्नत बिशेषता "
-"हो ।"
-
-#: widget/specials.cpp:27
-msgid "Stops execution of the script associated with the widget."
-msgstr "विजेटसँग सम्बन्धित स्क्रिप्टको प्रभाव रोक्छ ।"
-
-#: widget/specials.cpp:29
-msgid "Returns text of a cell in a table."
-msgstr "तालिकामा कक्षको पाठ फर्काउछ ।"
-
-#: widget/specials.cpp:31
-msgid "Returns 1 for checked boxes, 0 for unchecked."
-msgstr "चेक गरिएका बाकसहरूका लागि १, अनचेक गरिएकाका लागि ० फर्काउछ ।"
-
-#: widget/specials.cpp:33
-msgid ""
-"Returns the list of child widgets contained in the parent widget. Set the <i>"
-"recursive</i> parameter to <i>true</i> to include widgets contained by child "
-"widgets."
-msgstr ""
-"प्रमूल विजेटमा समाविष्ट शाखा विजेटको सूची फर्काउछ । शाखा विजेद्वारा समाविष्ट "
-"विजेट समावेश गर्न <i>दोहोरिने</i> परिमिति <i>सत्य</i> मा सेट गर्नुहोस् ।"
-
-#: widget/specials.cpp:35
-msgid "Removes all content from the widget."
-msgstr "विजेटबाट सबै सामाग्री हटाउछ ।"
-
-#: widget/specials.cpp:38
-msgid "Returns number of items in a widget such as combobox or listbox."
-msgstr "कम्बो बाकस वा सूची बाकस जस्तै विजेटमा वसतुहरूको नम्बर फर्काउछ ।"
-
-#: widget/specials.cpp:40
-msgid "Returns index of current column."
-msgstr "हालको स्तम्भको अनुक्रमणिका फर्काउछ ।"
-
-#: widget/specials.cpp:42
-msgid "Returns index of current item."
-msgstr "हालको वस्तुको अनुक्रमणिका फर्काउछ ।"
-
-#: widget/specials.cpp:44
-msgid "Returns index of current row."
-msgstr "हालको पङ्क्तिको अनुक्रमणिका फर्काउछ ।"
-
-#: widget/specials.cpp:45
-msgid "Executes the script associated with the widget."
-msgstr "विजेटसँग सम्बन्धित स्क्रिप्ट कार्यान्वयन गर्छ ।"
-
-#: widget/specials.cpp:47
-msgid "Returns the index of an item with the given text."
-msgstr "दिएको पाठको वस्तुको अनुक्रमणिका फर्काउछ ।"
-
-#: widget/specials.cpp:49
-msgid "Inserts new column (or <i>count</i> columns) at <i>column</i> position."
-msgstr ""
-"<i>स्तम्भ</i> स्थितिमा नयाँ स्तम्भ (वा स्तम्भहरू <i>गणना गर्नुहोस्</i>"
-") घुसाउछ ।"
-
-#: widget/specials.cpp:51
-msgid "Inserts item at <i>index</i> position."
-msgstr "<i>अनुक्रमणिका</i> स्थितिमा वस्तु घुसाउछ ।"
-
-#: widget/specials.cpp:54
-msgid "Inserts multiple items (EOL-separated) at <i>index</i> position."
-msgstr "<i>अनुक्रमणिका</i> स्थितिमा (EOL-बिभाजित) बहुबिध बस्तुहरू घुसाउछ ।"
-
-#: widget/specials.cpp:57
-msgid "Inserts new row (or <i>count</i> rows) at <i>row</i> position."
-msgstr ""
-"<i>पङ्क्ति</i> स्थितिमा नयाँ पङ्क्ति (वा पङ्क्तिहरू <i>गणना गर्नुहोस्</i>"
-") घुसाउछ ।"
-
-#: widget/specials.cpp:59
-msgid "Returns the text of the item at the given index."
-msgstr "दिएको अनुक्रमणिकामा वस्तुको पाठ फर्काउछ ।"
-
-#: widget/specials.cpp:61
-msgid ""
-"Returns the depth of the current item in the tree. Root items have depth 0."
-msgstr "ट्रिमा हालको वस्तुको गहनता फर्काउछ । प्रमूल वस्तुमा गहिराइ ० छ ।"
-
-#: widget/specials.cpp:63
-msgid "Returns the slash-separated path to the given item in the tree."
-msgstr "ट्रीमा दिएको वस्तुको स्ल्यासद्वारा-बिभाजित मार्ग फर्काउछ ।"
-
-#: widget/specials.cpp:65
-msgid ""
-"Removes the column (or <i>count</i> consecutive columns) with the given index."
-msgstr "दिएको अनुक्रमणिकाको स्तम्भ (वा क्रमिक स्तम्भहरू <i>गणना</i>) हटाउछ ।"
-
-#: widget/specials.cpp:67
-msgid "Removes the item with the given index."
-msgstr "दिएको अनुक्रमणिकाको वस्तु हटाउछ ।"
-
-#: widget/specials.cpp:70
-msgid ""
-"Removes the row (or <i>count</i> consecutive rows) with the given index."
-msgstr "दिएको अनुक्रमणिकाको पङ्क्ति (वा क्रमिक पङ्क्ति <i>गणना</i>) हटाउछ ।"
-
-#: widget/specials.cpp:73
-msgid ""
-"Returns selected text or text of current item.\n"
-"In case of Table widgets, returns the selection coordinates, separated by "
-"commas in TopRow,LeftColumn,BottomRow,RightColumn form. "
-msgstr ""
-
-#: widget/specials.cpp:75
-msgid ""
-"Sets scripts associated with widget. This is an advanced feature that would not "
-"be commonly used."
-msgstr ""
-"विजेटसँग सम्बन्धित स्क्रिप्ट सेट गर्छ । यो सामान्यतया प्रयोग नहुने उन्नत "
-"बिशेषता हो ।"
-
-#: widget/specials.cpp:77
-msgid "Enables or disables widget."
-msgstr "विजेट सक्षम वा अक्षम पार्छ ।"
-
-#: widget/specials.cpp:80
-msgid "Sets text of a cell in a table."
-msgstr "तालिकामा कक्षको पाठ सेट गर्छ ।"
-
-#: widget/specials.cpp:82
-msgid "Sets/unsets checkbox."
-msgstr "जाँच बाकस सेट/अनसेट गर्छ ।"
-
-#: widget/specials.cpp:84
-msgid "Sets caption of the column <i>column</i>."
-msgstr "स्तम्भको क्याप्सन सेट गर्छ <i>स्तम्भ</i> ।"
-
-#: widget/specials.cpp:86
-msgid "Selects the item at the specified index. Indexes are zero based."
-msgstr ""
-"निर्दिष्ट गरिएको अनुक्रमणिकामा वस्तु चयन गर्छ । अनुक्रमणिकाहरू शून्य आधारित छन् "
-"।"
-
-#: widget/specials.cpp:89
-#, fuzzy
-msgid ""
-"Inserts a tab to the tabwidget with the specified label at the given index. "
-"Indexes are zero based."
-msgstr ""
-"निर्दिष्ट गरिएको अनुक्रमणिकामा वस्तु चयन गर्छ । अनुक्रमणिकाहरू शून्य आधारित छन् "
-"।"
-
-#: widget/specials.cpp:91
-msgid "Sets maximum numeric value"
-msgstr "अधिकतम सङ्ख्यात्मक मान सेट गर्छ"
-
-#: widget/specials.cpp:93
-msgid ""
-"Sets pixmap at the given index to the specified icon. Use <i>index = -1</i> "
-"to set the pixmap for all items."
-msgstr ""
-"निर्दिष्ट गरिएको प्रतिमाको दिएको अनुक्रमणिकामा पिक्सम्याप सेट गर्छ । सबै "
-"वस्तुका लागि पिक्सम्याप सेट गर्न <i>index = -1</i> प्रयोग गर्नुहोस् ।"
-
-#: widget/specials.cpp:95
-msgid "Sets caption of the row <i>row</i>."
-msgstr "पङ्क्तिको क्याप्सन सेट गर्छ <i>row</i> ।"
-
-#: widget/specials.cpp:97
-msgid "Selects given text or select item containing given text."
-msgstr "दिएको पाठ वा दिएको पाठ रहेको वस्तु चयन गर्छ ।"
-
-#: widget/specials.cpp:100
-msgid "Sets widget's content."
-msgstr "विजेटको सामाग्री सेट गर्छ ।"
-
-#: widget/specials.cpp:103
-msgid "Shows/hides widget."
-msgstr "विजेट देखाउछ/लुकाउछ ।"
-
-#: widget/specials.cpp:104
-msgid "Returns content of widget."
-msgstr "विजेटको सामाग्री फर्काउछ ।"
-
-#: widget/specials.cpp:106
-msgid "Returns type(class) of widget."
-msgstr "विजेटको प्रकार (वर्ग) फर्काउछ ।"
-
-#: widget/specials.cpp:109
-msgid ""
-"Returns current widget's content. This was required inside widget A to return "
-"widget A content when requested by widget B. The new method is to use @A.text "
-"inside B instead of just @A if you just want the unaltered text."
-msgstr ""
-"हालको विजेटको सामाग्री फर्काउछ । विजेट B द्वारा अनुरोध गरेको बेलामा विजेट A "
-"सामाग्री फर्काउन विजेट A भित्र यो आवश्यक हुन्थ्यो । यदि तपाईँले परिवर्तन "
-"नगरिएको पाठ मात्र चाहेमा @A को मात्र साटोमा B भित्रपट्टी @A. प्रयोग गर्ने नयाँ "
-"बिधि हो ।"
-
-#: widget/specials.cpp:111
-msgid ""
-"Returns selected text or text of current item. This is deprecated for <i>"
-"@mywidget.selected</i>."
-msgstr ""
-"हालको वस्तुको चयन गरिएको पाठ वा पाठ फर्काउछ । यो<i>@mywidget.selected</i> "
-"का लागि अनुचित हुन्छ ।"
-
-#: widget/specials.cpp:113
-msgid ""
-"Does nothing. This is useful if you request a CheckBox or RadioButton to return "
-"a value where a state, typically the unchecked state, has no value. The @null "
-"prevents an error indicating it is empty."
-msgstr ""
-"केहि हुदैन । यदि तपाईँले मान नभएको स्थिति, बिशेषत: चेकबाट हटाइएको स्थिति, मा "
-"जाँच बाकस वा रेडियो बटन फर्काउन अनुरोध गर्दा उपयोगि हुन्छ । @null ले यो खाली "
-"भएको सूचीत गर्ने त्रुटि रोकथाम गर्छ ।"
-
-#: widget/specials.cpp:115
-msgid "Returns the pid (process ID) of the current process."
-msgstr "हालको प्रक्रियाको pid (प्रक्रिया आईडी) फर्काउछ ।"
-
-#: widget/specials.cpp:117
-msgid ""
-"Returns DCOP identifier of current process. This is shorthand for <i>"
-"kmdr-executor-@pid</i>."
-msgstr ""
-"हालको प्रक्रियाको डीसीओपी पहिचायक फर्काउछ । यो<i>kmdr-executor-@pid</i> "
-"का लागि संक्षेप हुन्छ ।"
-
-#: widget/specials.cpp:120
-msgid "Returns the pid of the parent Kommander window."
-msgstr "प्रमूल आदेश सञ्झ्यालको pid फर्काउछ ।"
-
-#: widget/specials.cpp:122
-msgid "Writes <i>text</i> on stderr."
-msgstr "stderr मा <i>पाठ</i> लेख्छ ।"
-
-#: widget/specials.cpp:124
-msgid "Writes <i>text</i> on standard output."
-msgstr "मानक निर्गतमा <i>पाठ</i> लेख्छ ।"
-
-#: widget/specials.cpp:126
-msgid ""
-"Executes a script block. Bash is used if no shell is given. It is primarily for "
-"use in non-button widgets where script actions are not expected. Full path is "
-"not required for the shell which may be useful for portability. "
-"<p><i>If this is used inside a button it allows alternate script languages to "
-"be used and will return a value to the main script, which may be unexpected.</i>"
-msgstr ""
-"स्क्रिप्ट खण्ड कार्यान्वयन गर्छ । शेल नदिदा ब्यास प्रयोग गरिन्छ । यो सामान्यतया "
-"स्क्रिप्ट कार्यहरू अपेक्षा नगरिएका बटन नहुने विजेटका लागि प्रयोग गरिन्छ । शेलका "
-"लागि पूरा मार्ग आवश्यक हुदैन जुन चलाउनका लागि उपयोगि हुन्छ । "
-"<p><i> यदि यसलाई बटनको भित्रपट्टी प्रयोग गरिन्छ भने यसले प्रयोग हुने वैकल्पिक "
-"स्क्रिप्ट भाषाहरूलाई अनुमति दिन्छ र मुख्य स्क्रिप्टमा मान फर्काउछ, जुन "
-"अनपेक्षित हुनसक्छ ।</i>"
-
-#: widget/specials.cpp:128
-msgid ""
-"Returns value of an environment (shell) variable. Do not use <i>$</i> "
-"in the name. For example, <i>@env(PATH)</i>."
-msgstr ""
-"परिवेश (शेल) चलको मान फर्काउछ । नाममा <i>$</i> प्रयोग नगर्नुहोस् ।उदाहरणका "
-"लागि, <i>@env(PATH)</i> ।"
-
-#: widget/specials.cpp:130
-msgid "Executes an external shell command."
-msgstr "बाह्य शेल आदेश कार्यान्वयन गर्छ ।"
-
-#: widget/specials.cpp:132
-msgid "Parses an expression and returns computed value."
-msgstr "अभिव्यक्ति पदवर्णन गर्छ र गणना गरिएको मान फर्काउछ ।"
-
-#: widget/specials.cpp:134
-msgid ""
-"Executes loop: values from <i>items</i> list (passed as EOL-separated string) "
-"are assigned to the variable. "
-"<br> <i>@forEach(i,A\\nB\\nC\\n)"
-"<br>  @# @i=A"
-"<br>@endif</i>"
-msgstr ""
-"लूप कार्यान्वय गर्छ: <i>वस्तु</i> सूची (EOL-बिभाजित स्ट्रिङका रुपमा पास भएका) "
-"मानहरू चलमा मानाङ्कन गरिन्छन् । "
-"<br> <i>@forEach(i,A\\nB\\nC\\n)"
-"<br>  @# @i=A"
-"<br>@endif</i>"
-
-#: widget/specials.cpp:136
-msgid ""
-"Executes loop: variable is set to <i>start</i> and is increased by <i>step</i> "
-"each time loop is executed. Execution stops when variable becomes larger then "
-"<i>end</i>. "
-"<br><i>@for(i,1,10,1)"
-"<br>  @# @i=1"
-"<br>@endif</i>."
-msgstr ""
-"लूप कार्यान्वयन गर्छ: चल <i>सुरु</i> मा सेट हुन्छ र प्रत्येक पटक लूप "
-"कार्यान्वयन भएको <i>चरण</i> मा बढाइन्छ । चल <i>अन्त्य</i> "
-"भन्दा ठूलो भएपछि कार्यान्वयन रोकिन्छ । "
-"<br><i>@for(i,1,10,1)"
-"<br>  @# @i=1"
-"<br>@endif</i>."
-
-#: widget/specials.cpp:138
-msgid "Returns the value of a global variable."
-msgstr "विश्वब्यापी चलको मान फर्काउछ ।"
-
-#: widget/specials.cpp:140
-msgid ""
-"Translates the string into the current language. Texts in GUI would be "
-"automatically extracted for translation."
-msgstr ""
-"हालको भाषामा स्ट्रिङलाई अनुवाद गर्छ । अनुवादका लागि GUI का पाठ स्वत: झिकिन्छन् "
-"।"
-
-#: widget/specials.cpp:142
-msgid ""
-"Executes block if expression is true (non-zero number or non-empty string.) "
-"<p>Close with <b>@endif</b></p>"
-msgstr ""
-"यदि अभिव्यक्ति ठीक भएमा खण्ड कार्यान्वयन गर्छ (शून्य-विहिन नम्बर वा खाली नभएको "
-"स्ट्रिङ ।) "
-"<p>यससँग बन्द गर्नुहोस् <b>@endif</b></p>"
-
-#: widget/specials.cpp:144
-msgid ""
-"Executes another Kommander dialog. Current dialog directory is used if no path "
-"is given. Arguments may be given as named arguments which will become global "
-"variables in the new dialog. For instance: <i>var=val</i>"
-msgstr ""
-"अन्य आदेश संवाद कार्यान्वयन गर्छ । यदि मार्ग दिएको नभएमा हालको संवाद डाइरेक्टरी "
-"प्रयोग गरिन्छ । तर्कहरू नामकरण गरिएको तर्क अनुरुप दिइनस सक्छ जुन नयाँ संवादमा "
-"बिश्वब्यापी चल हुन्छन् । दृष्टान्तका लागि: <i>var=val</i>"
-
-#: widget/specials.cpp:146
-msgid "Reads setting from configration file for this dialog."
-msgstr "यो संवादका लागि कन्फिगरेसन फाइलबाट सेटिङ पढ्दछ ।"
-
-#: widget/specials.cpp:148
-msgid ""
-"Sets the value of a global variable. Global variables exist for the life of the "
-"Kommander window."
-msgstr ""
-"बिश्वब्यापी चलको मान सेट गर्दछ । बिश्वब्यापी चलहरू आदेश सञ्झ्यालका जीवनका "
-"लागिअवस्थित हुन्छ ।"
-
-#: widget/specials.cpp:150
-msgid "Stores setting in configuration file for this dialog."
-msgstr "यो संवादका लागि कन्फिगरेसन फाइलमा सेटिङ भण्डारण गर्दछ ।"
-
-#: widget/specials.cpp:152
-msgid ""
-"Begin of <b>switch</b> block. Following <b>case</b> values are compared to <i>"
-"expression</i>."
-"<p>@switch()"
-"<br>@case()"
-"<br>@end"
-msgstr ""
-"<b>स्विच</b> खण्डको सुरुआत । निम्न <b>केस</b> मानहरू <i>अभिव्यक्ति</i> "
-"सँग तुलना गरिन्छन् ।"
-"<p>@switch()"
-"<br>@case()"
-"<br>@end"
-
-#: widget/specials.cpp:154
-msgid "Executes an external DCOP call."
-msgstr "बाह्य डीसीओपी कल कार्यान्वयन गर्छ ।"
-
-#: widget/specials.cpp:156
-msgid "Adds a comment to EOL that Kommander will not parse"
-msgstr "आदेशकले पदवर्णन नगर्ने ईओएलमा टिप्पणी थप्दछ"
-
-#: widget/specials.cpp:160
-msgid "Returns an EOL-separated list of all values in the array."
-msgstr "बाँणमा सबै मानहरूको एउटा ईओएलद्वारा-बिभाजीत सूची फर्काउछ ।"
-
-#: widget/specials.cpp:162
-msgid "Returns an EOL-separated list of all keys in the array."
-msgstr "बाँणमा सबै कुञ्जीहरूको ईओएल-बिभाजीत सूची फर्काउछ ।"
-
-#: widget/specials.cpp:164
-msgid "Removes all elements from the array."
-msgstr "बाँणबाट सबै तत्व हटाउछ ।"
-
-#: widget/specials.cpp:166
-msgid "Returns the number of elements in the array."
-msgstr "बाँणमा तत्वहरूको नम्बर फर्काउछ ।"
-
-#: widget/specials.cpp:168
-msgid "Returns the value associated with the given key."
-msgstr "दिएको कुञ्जीसँग सम्बन्धित मान फर्काउछ ।"
-
-#: widget/specials.cpp:170
-msgid "Removes element with the given key from the array."
-msgstr "बाँणबाट दिएको कुञ्जीसँग तत्व हटाउछ ।"
-
-#: widget/specials.cpp:172
-msgid "Adds element with the given key and value to the array"
-msgstr "बाँणमा दिएको कुञ्जी र मानसँग तत्व थप्दछ ।"
-
-#: widget/specials.cpp:174
-msgid ""
-"Adds all elements in the string to the array. String should have <i>"
-"key\\tvalue\\n</i> format."
-msgstr ""
-"बाँणमा स्ट्रिङका सबै तत्व थप्दछ । स्ट्रिङ <i>key\\tvalue\\n</i> "
-"ढाँचामा हुनुपर्छ ।"
-
-#: widget/specials.cpp:177
-msgid ""
-"Returns all elements in the array in "
-"<pre>key\\tvalue\\n</pre> format."
-msgstr ""
-"बाँणमा "
-"<pre>key\\tvalue\\n</pre> ढाँचाका सबै तत्वहरू फर्काउछ ।"
-
-#: widget/specials.cpp:182
-msgid "Returns number of chars in the string."
-msgstr "स्ट्रिङमा क्यारेक्टरहरूको नम्बर फर्काउछ ।"
-
-#: widget/specials.cpp:184
-msgid "Checks if the the string contains the given substring."
-msgstr "यदि स्ट्रिङमा दिएको सब-स्ट्रिङ भएमा जाँच गर्छ ।"
-
-#: widget/specials.cpp:186
-msgid ""
-"Returns the position of a substring in the string, or -1 if it is not found."
-msgstr "स्ट्रिङमा सब- स्ट्रिङको स्थिति फर्काउछ, वा यो फेला नपरेमा -१ फर्काउछ ।"
-
-#: widget/specials.cpp:188
-msgid ""
-"Returns the position of a substring in the string, or -1 if it is not found. "
-"String is searched backwards"
-msgstr ""
-"स्ट्रिङमा सब-स्ट्रिङको स्थिति फर्काउछ, वा यो फेला नपरेमा -१ फर्काउछ । स्ट्रिङ "
-"पछिल्तिर खोजिन्छन् ।"
-
-#: widget/specials.cpp:190
-msgid "Returns the first <i>n</i> chars of the string."
-msgstr "स्ट्रिङको पहिला <i>n</i> क्यारेक्टर फर्काउछ ।"
-
-#: widget/specials.cpp:192
-msgid "Returns the last <i>n</i> chars of the string."
-msgstr "स्ट्रिङको अन्तिम <i>n</i> क्यारेक्टर फर्काउछ ।"
-
-#: widget/specials.cpp:194
-msgid "Returns <i>n</i> chars of the string, starting from <i>start</i>."
-msgstr "<i>पहिलो</i> बाट सुरु हुने, स्ट्रिङका क्यारेक्टर <i>n</i> फर्काउछ ।"
-
-#: widget/specials.cpp:196
-msgid "Removes all occurrences of given substring."
-msgstr "दिएका सब-स्ट्रिङका सबै घटना हटाउछ ।"
-
-#: widget/specials.cpp:198
-msgid ""
-"Replaces all occurrences of the given substring with the given replacement."
-msgstr "दिएको प्रतिस्थापनसँग दिएको सब-स्ट्रिङको घटना बदल्छ ।"
-
-#: widget/specials.cpp:200
-msgid "Converts the string to uppercase."
-msgstr "स्ट्रिङलाई ठूलो अक्षरमा रुपान्तरण गर्छ ।"
-
-#: widget/specials.cpp:202
-msgid "Converts the string to lowercase."
-msgstr "स्ट्रिङलाई सानो अक्षरमा रुपान्तरण गर्छ ।"
-
-#: widget/specials.cpp:204
-msgid ""
-"Compares two strings. Returns 0 if they are equal, -1 if the first one is "
-"lower, 1 if the first one is higher"
-msgstr ""
-"दुई स्ट्रिङ तुलना गर्छ । यदि बराबर भएमा ०, पहिलो सानो भएमा -१, पहिलो ठूलो भएमा "
-"१ फर्काउछ ।"
-
-#: widget/specials.cpp:207
-msgid "Checks if the string is empty."
-msgstr "स्ट्रिङ खाली भएको जाँच गर्छ ।"
-
-#: widget/specials.cpp:209
-msgid "Checks if the string is a valid number."
-msgstr "स्ट्रिङ बैध नम्बर भएमा जाँच गर्छ ।"
-
-#: widget/specials.cpp:211
-msgid "Returns given section of a string."
-msgstr "स्ट्रिङको दिएको खण्ड फर्काउछ ।"
-
-#: widget/specials.cpp:213
-msgid ""
-"Returns the given string with %1, %2, %3 replaced with <i>arg1</i>, <i>arg2</i>"
-", <i>arg3</i> accordingly."
-msgstr ""
-"दिएको स्ट्रिङ <i>arg1</i>, <i>arg2</i>, <i>arg3</i> अनुसार %1, %2, %3 मा "
-"फर्काउछ ।"
-
-#: widget/specials.cpp:217
-msgid "Returns content of given file."
-msgstr "दिएको फाइलको सामाग्री फर्काउछ ।"
-
-#: widget/specials.cpp:219
-msgid "Writes given string to a file."
-msgstr "दिएको स्ट्रिङ फाइलमा लेख्छ ।"
-
-#: widget/specials.cpp:221
-msgid "Appends given string to the end of a file."
-msgstr "फाइलको अन्त्यमा दिएको स्ट्रिङ थप्दछ ।"
-
-#: widget/specials.cpp:224
-msgid "Shows color dialog. Returns color in #RRGGBB format."
-msgstr "रङ संवाद देखाउछ । रङ #RRGGBB ढाँचमा फर्काउछ ।"
-
-#: widget/specials.cpp:226
-msgid "Shows text selection dialog. Returns entered text."
-msgstr "पाठ चयन संवाद देखाउछ । प्रविष्ट गरिएको पाठ फर्काउछ ।"
-
-#: widget/specials.cpp:228
-msgid "Shows a dialog asking user for password and returns it."
-msgstr "पासवर्डका लागि प्रयोगकर्तालाई सोधेको संवाद देखाउछ र यसलाई फर्काउछ ।"
-
-#: widget/specials.cpp:230
-msgid "Shows value selection dialog. Returns entered value."
-msgstr "मान चयन संवाद देखाउछ । प्रविष्ट गरिएको मान फर्काउछ ।"
-
-#: widget/specials.cpp:232
-msgid "Shows float value selection dialog. Returns entered value."
-msgstr "उत्प्लावन मान चयन संवाद देखाउछ । प्रविष्ट गरिएको मान फर्काउछ ।"
-
-#: widget/specials.cpp:234
-msgid "Shows existing file selection dialog. Returns selected file."
-msgstr "अवस्थित फाइल चयन संवाद देखाउछ । चयन गरिएको फाइल फर्काउछ ।"
-
-#: widget/specials.cpp:236
-msgid "Shows save file selection dialog. Returns selected file."
-msgstr "बचत फाइल चयन संवाद देखाउछ । चयन गरिएको फाइल फर्काउछ ।"
-
-#: widget/specials.cpp:238
-msgid "Shows directory selection dialog. Returns selected directory."
-msgstr "डाइरेक्टरी चयन संवाद देखाउछ । चयन गरिएको डाइरेक्टरी फर्काउछ ।"
-
-#: widget/specials.cpp:240
-msgid ""
-"Shows multiple files selection dialog. Returns EOL-separated list of selected "
-"files."
-msgstr ""
-"बहुबिध फाइल चयन संवाद देखाउछ । चयन गरिएका फाइलहरूको EOL-बिभाजीत सूची फर्काउछ ।"
-
-#: widget/specials.cpp:244
-msgid "Shows an information dialog."
-msgstr "सूचना संवाद देखाउछ ।"
-
-#: widget/specials.cpp:246
-msgid "Shows an error dialog."
-msgstr "त्रुटि संवाद देखाउछ ।"
-
-#: widget/specials.cpp:248
-msgid ""
-"Shows a warning dialog with up to three buttons. Returns number of selected "
-"button."
-msgstr "तीनवटा बटनसम्म चेतावनी संवाद देखाउछ । चयन गरिएका बटनको नम्बर फर्काउछ ।"
-
-#: widget/specials.cpp:250
-msgid ""
-"Shows a question dialog with up to three buttons. Returns number of selected "
-"button."
-msgstr "तीनवटा बटनसम्म प्रश्न संवाद देखाउछ । चयन गरिएका बटनको नम्बर फर्काउछ ।"
 
 #: widget/myprocess.cpp:94
 msgid "<qt>Failed to start shell process<br><b>%1</b></qt>"
 msgstr "<qt>शेल प्रक्रिया सुरु गर्न असफल<br><b>%1</b></qt>"
 
-#: widget/kommanderfunctions.cpp:119
+#: widget/kommanderfunctions.cpp:120
 msgid "Unterminated @execBegin ... @execEnd block."
 msgstr "टर्मिनेट नगरिएको @execBegin ... @execEnd खण्ड ।"
 
-#: widget/kommanderfunctions.cpp:137 widget/kommanderfunctions.cpp:163
+#: widget/kommanderfunctions.cpp:138 widget/kommanderfunctions.cpp:164
 msgid "Unterminated @forEach ... @end block."
 msgstr "टर्मिनेट नगरिएको @forEach ... @end खण्ड ।"
 
-#: widget/kommanderfunctions.cpp:200
+#: widget/kommanderfunctions.cpp:201
 msgid "Unterminated @if ... @endif block."
 msgstr "टर्मिनेट नगरिएको @if ... @endif खण्ड ।"
 
-#: widget/kommanderfunctions.cpp:220
+#: widget/kommanderfunctions.cpp:221
 msgid "Unterminated @switch ... @end block."
 msgstr "टर्मिनेट नगरिएको @switch ... @end खण्ड ।"
 
-#: widget/kommanderfunctions.cpp:320
+#: widget/kommanderfunctions.cpp:321
 #, c-format
 msgid "Unknown widget: @%1."
 msgstr "अज्ञात विजेट: @%1."
 
-#: widget/kommanderfunctions.cpp:338
+#: widget/kommanderfunctions.cpp:339
 msgid "Infinite loop: @%1 called inside @%2."
 msgstr "अनन्त लूप: @%1 called inside @%2."
 
-#: widget/kommanderfunctions.cpp:344
+#: widget/kommanderfunctions.cpp:345
 msgid "Script for @%1 is empty."
 msgstr "@%1 का लागि स्क्रिप्ट खाली छ ।"
 
@@ -4522,27 +4554,27 @@ msgstr ""
 "विजेट %1 मा त्रुटि:\n"
 "  %2\n"
 
-#: widget/kommanderwidget.cpp:569
+#: widget/kommanderwidget.cpp:576
 msgid "Unmatched parenthesis after '%1'."
 msgstr "'%1' पछिको नमिलेको उपवाक्य ।"
 
-#: widget/kommanderwidget.cpp:578
+#: widget/kommanderwidget.cpp:585
 msgid "Unmatched quotes in argument of '%1'."
 msgstr "'%1' को तर्कमा नमिलेको उद्धरण ।"
 
-#: widget/kommanderwidget.cpp:580
+#: widget/kommanderwidget.cpp:587
 msgid "Unknown function group: '%1'."
 msgstr "अज्ञात प्रकार्य समूह: '%1'."
 
-#: widget/kommanderwidget.cpp:582
+#: widget/kommanderwidget.cpp:589
 msgid "Unknown function: '%1' in group '%2'."
 msgstr "'%2' समूहको अज्ञात प्रकार्य: '%1'"
 
-#: widget/kommanderwidget.cpp:584
+#: widget/kommanderwidget.cpp:591
 msgid "Unknown widget function: '%1'."
 msgstr "अज्ञात विजेट प्रकार्य: '%1'"
 
-#: widget/kommanderwidget.cpp:586
+#: widget/kommanderwidget.cpp:593
 msgid ""
 "Not enough arguments for '%1' (%2 instead of %3)."
 "<p>Correct syntax is: %4"
@@ -4550,7 +4582,7 @@ msgstr ""
 "'%1' का लागि पर्याप्त तर्क छैन (%3 को साटोमा %2) ।"
 "<p>ठीक वाक्य संरचना: %4 हो"
 
-#: widget/kommanderwidget.cpp:591
+#: widget/kommanderwidget.cpp:598
 msgid "Too many arguments for '%1' (%2 instead of %3).<p>Correct syntax is: %4"
 msgstr ""
 "'%1' का लागि अति धेरै तर्क (%3 को साटोमा %2) ।"
@@ -4583,16 +4615,16 @@ msgstr ""
 "त्रुटि: संवाद दिएको छैन । मानक आगतबाट संवाद पढ्नका लागि मानक आगत विकल्प प्रयोग "
 "गर्नुहोस् ।\n"
 
-#: executor/instance.cpp:113
+#: executor/instance.cpp:114
 #, fuzzy
 msgid "<qt>Unable to create dialog.</qt>"
 msgstr "<qt>फाइलबाट संवाद सिर्जना गर्न असमर्थ<br><b>%1</b></qt>"
 
-#: executor/instance.cpp:183
+#: executor/instance.cpp:184
 msgid "<qt>Kommander file<br><b>%1</b><br>does not exist.</qt>"
 msgstr "<qt>आदेश फाइल<br><b>%1</b><br>अवस्थित छैन ।</qt>"
 
-#: executor/instance.cpp:191
+#: executor/instance.cpp:192
 msgid ""
 "<qt>This file does not have a <b>.kmdr</b> extension. As a security precaution "
 "Kommander will only run Kommander scripts with a clear identity.</qt>"
@@ -4600,11 +4632,11 @@ msgstr ""
 "<qt>यो फाइलमा <b>.kmdr</b> विस्तार छैन । सुरक्षाका रुपमा निर्वाहक स्पष्ट पहिचान "
 "भएको निर्वाहक स्क्रिप्टमा मात्र चल्छ ।</qt>"
 
-#: executor/instance.cpp:193
+#: executor/instance.cpp:194
 msgid "Wrong Extension"
 msgstr "गलत विस्तार"
 
-#: executor/instance.cpp:210
+#: executor/instance.cpp:211
 msgid ""
 "<qt>This dialog is running from your <i>/tmp</i> directory.  This may mean that "
 "it was run from a KMail attachment or from a webpage. "
@@ -4618,7 +4650,7 @@ msgstr ""
 "अनुमति हुनेछ; <b>त्यस्ता संवाद चलाउनु खतरा हुनसक्छ: </b>"
 "<p>तपाईँ जारी राख्ने चहानामा निश्चिन्त हुनुहुन्छ?</qt>"
 
-#: executor/instance.cpp:214
+#: executor/instance.cpp:215
 msgid "Run Nevertheless"
 msgstr "तै पनि चलाउनुहोस्"
 
