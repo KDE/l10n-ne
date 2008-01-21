@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-18 08:03+0100\n"
+"POT-Creation-Date: 2008-01-21 07:46+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -854,7 +854,7 @@ msgstr "ग्रिड खाली स्थान"
 #. i18n: tag text
 #. i18n: file krita.rc line 63
 #. i18n: tag text
-#. i18n: file ./sdk/templates/view/view.rc line 4
+#. i18n: file ./sdk/templates/view/APPNAMELC.rc line 4
 #. i18n: tag text
 #. i18n: file ./colorspaces/lms_f32/lms_f32_plugin.rc line 3
 #. i18n: tag text
@@ -5942,6 +5942,7 @@ msgid "Performance"
 msgstr "कार्यसम्पादन"
 
 #: ui/kis_dlg_preferences.cc:843 ui/kis_dlg_preferences.cc:844
+#: plugins/tools/tool_grid/kis_tool_grid.h:73
 msgid "Grid"
 msgstr "ग्रिड"
 
@@ -6640,14 +6641,16 @@ msgstr "चयन छैन"
 msgid "No profile"
 msgstr "प्रोफाइल छैन"
 
-#: sdk/templates/view/view.cc:33
-msgid "&My action !"
-msgstr "मेरो कार्य !"
-
-#: sdk/templates/docker/APPNAMELC_dock.cc:7 sdk/templates/filter/filter.cc:43
-#: sdk/templates/filter/filter.h:21
+#: sdk/templates/tool/kis_tool_APPNAMELC.h:45
+#: sdk/templates/tool/kis_tool_APPNAMELC.h:47
+#: sdk/templates/docker/APPNAMELC_dock.cc:7
+#: sdk/templates/filter/APPNAMELC.h:21 sdk/templates/filter/APPNAMELC.cc:43
 msgid "%{APPNAME}"
 msgstr "%{APPNAME}"
+
+#: sdk/templates/view/APPNAMELC.cc:33
+msgid "&My action !"
+msgstr "मेरो कार्य !"
 
 #: image/kis_layer.cc:95
 msgid "Opacity"
@@ -7056,6 +7059,12 @@ msgstr "अनुकूल ब्रुस"
 #: plugins/tools/tool_crop/kis_tool_crop.h:141
 msgid "Crop the image to an area"
 msgstr "एउटा क्षेत्रमा छवि काँटछाँट गर्नुहोस्"
+
+#: plugins/tools/tool_grid/kis_tool_grid.h:75
+#, fuzzy
+#| msgid "Edit the perspective grid"
+msgid "Edit the grid"
+msgstr "दृश्य ग्रिड सम्पादन गर्नुहोस्"
 
 #: plugins/tools/tool_star/kis_tool_star.h:80
 msgid "Draw a star with the current brush"
@@ -7500,22 +7509,13 @@ msgstr "दीर्घवृत्ताकार क्षेत्र चय�
 msgid "Transform a layer or a selection"
 msgstr "तह वा चयन रूपान्तरण गर्नुहोस्"
 
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.cc:45
-msgid "Perspective Grid"
-msgstr "दृश्य ग्रिड"
-
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.cc:474
-msgid "&Perspective Grid"
-msgstr "दृश्य ग्रिड"
-
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.cc:479
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.h:92
-msgid "Edit the perspective grid"
-msgstr "दृश्य ग्रिड सम्पादन गर्नुहोस्"
-
 #: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.h:90
 msgid "Perspective grid"
 msgstr "दृश्य ग्रिड"
+
+#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.h:92
+msgid "Edit the perspective grid"
+msgstr "दृश्य ग्रिड सम्पादन गर्नुहोस्"
 
 #: plugins/painterlyframework/kis_ks_colorspace.h:107
 #, fuzzy
@@ -8295,6 +8295,12 @@ msgstr "बम्पम्याप"
 #: plugins/filters/bumpmap/bumpmap.cc:89
 msgid "&Bumpmap..."
 msgstr "बम्पम्याप..."
+
+#~ msgid "Perspective Grid"
+#~ msgstr "दृश्य ग्रिड"
+
+#~ msgid "&Perspective Grid"
+#~ msgstr "दृश्य ग्रिड"
 
 #, fuzzy
 #~| msgid "Painterly overlays"
