@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-23 01:18+0100\n"
+"POT-Creation-Date: 2008-01-25 01:18+0100\n"
 "PO-Revision-Date: 2007-02-12 12:01+0545\n"
 "Last-Translator: Mahesh Subedi <submanesh@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -98,17 +98,17 @@ msgstr ""
 "पात्रो डाउनलोड गर्न सकिदैन:\n"
 "%1"
 
-#: alarmevent.cpp:2148
+#: alarmevent.cpp:2125
 msgid ""
 "_: Brief form of 'At Login'\n"
 "Login"
 msgstr "लगइन"
 
-#: alarmevent.cpp:2148
+#: alarmevent.cpp:2125
 msgid "At login"
 msgstr "यसमा लगइन गर्नुहोस्"
 
-#: alarmevent.cpp:2156 alarmevent.cpp:2190
+#: alarmevent.cpp:2133 alarmevent.cpp:2167
 #, c-format
 msgid ""
 "_n: 1 Minute\n"
@@ -117,7 +117,7 @@ msgstr ""
 "१ मिनेट\n"
 "%n मिनेट"
 
-#: alarmevent.cpp:2158 alarmevent.cpp:2192
+#: alarmevent.cpp:2135 alarmevent.cpp:2169
 #, c-format
 msgid ""
 "_n: 1 Hour\n"
@@ -126,13 +126,13 @@ msgstr ""
 "१ घण्टा\n"
 "%n घण्टा"
 
-#: alarmevent.cpp:2162 alarmevent.cpp:2194
+#: alarmevent.cpp:2139 alarmevent.cpp:2171
 msgid ""
 "_: Hours and Minutes\n"
 "%1H %2M"
 msgstr "%1H %2M"
 
-#: alarmevent.cpp:2165 alarmevent.cpp:2197
+#: alarmevent.cpp:2142 alarmevent.cpp:2174
 #, c-format
 msgid ""
 "_n: 1 Day\n"
@@ -141,7 +141,7 @@ msgstr ""
 "१ दिन\n"
 "%n दिन"
 
-#: alarmevent.cpp:2167 alarmevent.cpp:2198
+#: alarmevent.cpp:2144 alarmevent.cpp:2175
 #, c-format
 msgid ""
 "_n: 1 Week\n"
@@ -150,7 +150,7 @@ msgstr ""
 "१ हप्ता\n"
 "%n हप्ता"
 
-#: alarmevent.cpp:2169
+#: alarmevent.cpp:2146
 #, c-format
 msgid ""
 "_n: 1 Month\n"
@@ -159,7 +159,7 @@ msgstr ""
 "१ महिना\n"
 "%n महिना"
 
-#: alarmevent.cpp:2171
+#: alarmevent.cpp:2148
 #, c-format
 msgid ""
 "_n: 1 Year\n"
@@ -168,11 +168,11 @@ msgstr ""
 "१ वर्ष\n"
 "%n वर्ष"
 
-#: alarmevent.cpp:2177 alarmevent.cpp:2200 soundpicker.cpp:52
+#: alarmevent.cpp:2154 alarmevent.cpp:2177 soundpicker.cpp:52
 msgid "None"
 msgstr "कुनै पनि होइन"
 
-#: alarmlistview.cpp:69 editdlg.cpp:291 editdlg.cpp:355
+#: alarmlistview.cpp:69 editdlg.cpp:293 editdlg.cpp:357
 msgid "Time"
 msgstr "समय"
 
@@ -294,7 +294,7 @@ msgstr "संसूचक तालिकिकरण गर्न मिति
 msgid "Enter the time to schedule the alarm."
 msgstr "संसूचक तालिकिकरण गर्न समय प्रविष्ट गर्नुहोस् ।"
 
-#: alarmtimewidget.cpp:130 editdlg.cpp:325
+#: alarmtimewidget.cpp:130 editdlg.cpp:327
 msgid "An&y time"
 msgstr "कुनै पनि समय"
 
@@ -417,12 +417,13 @@ msgstr ""
 "सचेतक प्रदर्शन गर्न प्रत्येक जन्मदिनका अगाडि दिनका सङ्ख्या प्रविष्ट गर्नुहोस् । "
 "जन्मदिनमा संसूचकको अतिरिक्त संसूचन गर्न यो प्रदर्शन गरिनेछ ।"
 
-#: birthdaydlg.cpp:163 editdlg.cpp:141
+#: birthdaydlg.cpp:163 editdlg.cpp:142
 msgid "Special Actions..."
 msgstr "विशेष कार्य..."
 
-#: birthdaydlg.cpp:176 editdlg.cpp:374
-msgid "Simple Repetition"
+#: birthdaydlg.cpp:176 recurrenceedit.cpp:339
+#, fuzzy
+msgid "Sub-Repetition"
 msgstr "साधारण पुनरावृत्ति"
 
 #: birthdaydlg.cpp:179
@@ -491,191 +492,190 @@ msgid "Cancel the deferred alarm. This does not affect future recurrences."
 msgstr ""
 "सारिएको संसूचक रद्द गर्नुहोस् । यसले भविश्यका पुनरावृत्तिलाई प्रभाव पार्दैन ।"
 
-#: deferdlg.cpp:97
-msgid ""
-"_: This refers to simple repetitions set up using the Simple Repetition dialog\n"
-"Cannot defer past the alarm's next repetition (currently %1)"
-msgstr "पहिलाको संसूचकको पछिल्लो पुनरावृत्ति सार्न सकिदैन(हालैको %1)"
+#: deferdlg.cpp:96
+#, fuzzy
+msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
+msgstr "पहिलाको संसूचकको पछिल्लो सचेतक सार्न सकिदैन (हालैको %1)"
 
-#: deferdlg.cpp:101
-msgid ""
-"_: This refers to recurrences set up using the Recurrence tab\n"
-"Cannot defer past the alarm's next recurrence (currently %1)"
-msgstr "पहिलाको संसुचकको पछिल्लो पुनरावृत्तिलाई सार्न सकिदैन (हालैको %1)"
+#: deferdlg.cpp:99
+#, fuzzy
+msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgstr "पहिलाको संसूचकको पछिल्लो सचेतक सार्न सकिदैन (हालैको %1)"
 
-#: deferdlg.cpp:104
+#: deferdlg.cpp:102
 msgid "Cannot defer past the alarm's next reminder (currently %1)"
 msgstr "पहिलाको संसूचकको पछिल्लो सचेतक सार्न सकिदैन (हालैको %1)"
 
-#: deferdlg.cpp:107
+#: deferdlg.cpp:105
 msgid "Cannot defer reminder past the main alarm time (%1)"
 msgstr "पहिलाको मुख्य संसूचक समय (%1) को सचेतक सार्न सकिदैन"
 
-#: editdlg.cpp:105
+#: editdlg.cpp:104
 msgid "Choose Text or Image File to Display"
 msgstr "प्रदर्शन गर्न पाठ वा छवि फाइल रोज्नुहोस्"
 
-#: editdlg.cpp:122
+#: editdlg.cpp:121
 msgid "Choose Log File"
 msgstr "लग फाइल रोज्नुहोस्"
 
-#: editdlg.cpp:139
+#: editdlg.cpp:135
+#, fuzzy
+msgid "&Recurrence - [%1]"
+msgstr "पुनारावृत्ति"
+
+#: editdlg.cpp:140
 msgid "Confirm acknowledgment"
 msgstr "एक्नलेजमेन्ट यकीन गर्नुहोस्"
 
-#: editdlg.cpp:140
+#: editdlg.cpp:141
 msgid "Confirm ac&knowledgment"
 msgstr "एक्नलेजमेन्ट यकीन गर्नुहोस्"
 
-#: editdlg.cpp:142
+#: editdlg.cpp:143
 msgid "Show in KOrganizer"
 msgstr "केडीई आयोजकमा देखाउनुहोस्"
 
-#: editdlg.cpp:143
+#: editdlg.cpp:144
 msgid "Show in KOr&ganizer"
 msgstr "केडीई आयोजकमा देखाउनुहोस्"
 
-#: editdlg.cpp:144
+#: editdlg.cpp:145
 msgid "Enter a script"
 msgstr "स्क्रिप्ट प्रविष्ट गर्नुहोस्"
 
-#: editdlg.cpp:145
+#: editdlg.cpp:146
 msgid "Enter a scri&pt"
 msgstr "स्क्रिप्ट प्रविष्ट गर्नुहोस्"
 
-#: editdlg.cpp:146
+#: editdlg.cpp:147
 msgid "Execute in terminal window"
 msgstr "टर्मिनल सञ्झ्यालमा कार्यान्वयन गर्नुहोस्"
 
-#: editdlg.cpp:147
+#: editdlg.cpp:148
 msgid "Execute in terminal &window"
 msgstr "टर्मिनल सञ्झ्यालमा कार्यान्वयन गर्नुहोस्"
 
-#: editdlg.cpp:148
+#: editdlg.cpp:149
 msgid "Exec&ute in terminal window"
 msgstr "टर्मिनल सञ्झ्यालमा कार्यान्वयन गर्नुहोस्"
 
-#: editdlg.cpp:149
+#: editdlg.cpp:150
 msgid "Lo&g to file"
 msgstr "फाइलमा लग गर्नुहोस्"
 
-#: editdlg.cpp:150
+#: editdlg.cpp:151
 msgid "Copy email to self"
 msgstr "इमेल आफ्नो स्थानमा प्रतिलिपि गर्नुहोस्"
 
-#: editdlg.cpp:151
+#: editdlg.cpp:152
 msgid "Copy &email to self"
 msgstr "इमेल आफ्नो स्थानमा प्रतिलिपि गर्नुहोस्"
 
-#: editdlg.cpp:152
+#: editdlg.cpp:153
 msgid "Copy email to &self"
 msgstr "इमेल आफ्नै स्थानमा प्रतिलिपि गर्नुहोस्"
 
-#: editdlg.cpp:153
+#: editdlg.cpp:154
 msgid ""
 "_: 'From' email address\n"
 "From:"
 msgstr "यसबाट:"
 
-#: editdlg.cpp:154
+#: editdlg.cpp:155
 msgid ""
 "_: 'From' email address\n"
 "&From:"
 msgstr "यसबाट:"
 
-#: editdlg.cpp:155 messagewin.cpp:456
+#: editdlg.cpp:156 messagewin.cpp:456
 msgid ""
 "_: Email addressee\n"
 "To:"
 msgstr "प्रापक:"
 
-#: editdlg.cpp:156 messagewin.cpp:463
+#: editdlg.cpp:157 messagewin.cpp:463
 msgid ""
 "_: Email subject\n"
 "Subject:"
 msgstr "विषयवस्तु:"
 
-#: editdlg.cpp:157
+#: editdlg.cpp:158
 msgid ""
 "_: Email subject\n"
 "Sub&ject:"
 msgstr "विषयवस्तु:"
 
-#: editdlg.cpp:189
+#: editdlg.cpp:190
 msgid "Load Template..."
 msgstr "टेम्प्लेट लोड गर्नुहोस्..."
 
-#: editdlg.cpp:197
+#: editdlg.cpp:198
 msgid "Template name:"
 msgstr "टेम्प्लेट नाम:"
 
-#: editdlg.cpp:202
+#: editdlg.cpp:203
 msgid "Enter the name of the alarm template"
 msgstr "संसूचक टेम्प्लेटको नाम प्रविष्ट गर्नुहोस्"
 
-#: editdlg.cpp:210
+#: editdlg.cpp:211
 msgid "&Alarm"
 msgstr "संसूचक"
 
-#: editdlg.cpp:219
-msgid "&Recurrence"
-msgstr "पुनारावृत्ति"
-
-#: editdlg.cpp:228
+#: editdlg.cpp:230
 msgid "Action"
 msgstr "कार्य"
 
-#: editdlg.cpp:236
+#: editdlg.cpp:238
 msgid "Te&xt"
 msgstr "पाठ"
 
-#: editdlg.cpp:239
+#: editdlg.cpp:241
 msgid "If checked, the alarm will display a text message."
 msgstr "चेक गरिएमा, संसूचकले पाठ सन्देश प्रदर्शन गर्नेछ ।"
 
-#: editdlg.cpp:247
+#: editdlg.cpp:249
 msgid ""
 "If checked, the alarm will display the contents of a text or image file."
 msgstr "चेक गरिएमा, संसूचकले पाठ वा छवि फाइलको सामाग्री प्रदर्शन गर्नेछ ।"
 
-#: editdlg.cpp:252 find.cpp:130
+#: editdlg.cpp:254 find.cpp:130
 msgid "Co&mmand"
 msgstr "आदेश"
 
-#: editdlg.cpp:255
+#: editdlg.cpp:257
 msgid "If checked, the alarm will execute a shell command."
 msgstr "चेक गरिएमा, संसूचकले शेल आदेश कार्यान्वयन गर्नेछ ।"
 
-#: editdlg.cpp:260 find.cpp:135
+#: editdlg.cpp:262 find.cpp:135
 msgid "&Email"
 msgstr "इमेल"
 
-#: editdlg.cpp:263
+#: editdlg.cpp:265
 msgid "If checked, the alarm will send an email."
 msgstr "चेक गरिएमा, संसूचकले इमेल पठाउछ ।"
 
-#: editdlg.cpp:274
+#: editdlg.cpp:276
 msgid "Deferred Alarm"
 msgstr "पछि सारिएको संसूचक"
 
-#: editdlg.cpp:276
+#: editdlg.cpp:278
 msgid "Deferred to:"
 msgstr "यसमा सार्नुहोस्:"
 
-#: editdlg.cpp:280
+#: editdlg.cpp:282
 msgid "C&hange..."
 msgstr "परिवर्तन गर्नुहोस्..."
 
-#: editdlg.cpp:283
+#: editdlg.cpp:285
 msgid "Change the alarm's deferred time, or cancel the deferral"
 msgstr ""
 "पछि सारिएको संसूचकको समय परिवर्तन गर्नुहोस्, वा पछि सारिएकोलाई रद्द गर्नुहोस्"
 
-#: editdlg.cpp:299
+#: editdlg.cpp:301
 msgid "&Default time"
 msgstr "पूर्वनिर्धारित समय"
 
-#: editdlg.cpp:303
+#: editdlg.cpp:305
 msgid ""
 "Do not specify a start time for alarms based on this template. The normal "
 "default start time will be used."
@@ -683,27 +683,27 @@ msgstr ""
 "यो टेम्प्लेटमा आधारित संसूचकका लागि सुरुआत समय निर्दिष्ट नगर्नुहोस् । सामान्य "
 "पूर्वनिर्धारित सुरुआत समय प्रयोग गरिनेछ ।"
 
-#: editdlg.cpp:309
+#: editdlg.cpp:311
 msgid "Time:"
 msgstr "समय:"
 
-#: editdlg.cpp:313
+#: editdlg.cpp:315
 msgid "Specify a start time for alarms based on this template."
 msgstr "यो टेम्प्लेटमा आधारित संसूचकका लागि सुरुआत समय निर्दिष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:319
+#: editdlg.cpp:321
 msgid "Enter the start time for alarms based on this template."
 msgstr "यो टेम्प्लेटमा आधारित संसूचकका लागि सुरुआत समय प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:329
+#: editdlg.cpp:331
 msgid "Set the '%1' option for alarms based on this template."
 msgstr "यो टेम्प्लेटमा आधारित संसूचकका लागि '%1' विकल्प सेट गर्नुहोस् ।"
 
-#: editdlg.cpp:329 recurrenceedit.cpp:261
+#: editdlg.cpp:331 recurrenceedit.cpp:262
 msgid "Any time"
 msgstr "कुनै पनि समय"
 
-#: editdlg.cpp:338
+#: editdlg.cpp:340
 msgid ""
 "Set alarms based on this template to start after the specified time interval "
 "from when the alarm is created."
@@ -711,93 +711,75 @@ msgstr ""
 "संसूचक सिर्जना गर्ने बेलामा निर्दिष्ट गरिएको समय अन्तराल पछि सुरुआत गर्न यो "
 "टेम्प्लेटमा आधारित संसूचक सेट गर्दछ ।"
 
-#: editdlg.cpp:364
-msgid "Recurrence:"
-msgstr "पुनरावृत्ति:"
-
-#: editdlg.cpp:368
-msgid ""
-"How often the alarm recurs.\n"
-"The times shown are those configured in the Recurrence tab and in the Simple "
-"Repetition dialog."
-msgstr ""
-"कति समयमा संसूचक पुनरावृत्ति हुन्छ ।\n"
-"देखिएका समय पुनरावृत्ति ट्याबमा र सामान्य दोहोरिने संवादमा कन्फिगर गरिएका समय "
-"हुन् ।"
-
-#: editdlg.cpp:378
-msgid "Set up a simple, or additional, alarm repetition"
-msgstr "सामान्य, वा अतिरिक्त, संसूचक पुनरावृत्ति सेट गर्नुहोस्"
-
-#: editdlg.cpp:382
+#: editdlg.cpp:363
 msgid ""
 "Enter how long in advance of the main alarm to display a reminder alarm."
 msgstr ""
 "सचेतक संसूचक प्रदर्शन गर्न मुख्य संसूचकको अगाडिको समय प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:383
+#: editdlg.cpp:364
 msgid "Rem&inder:"
 msgstr "सचेतक:"
 
-#: editdlg.cpp:384
+#: editdlg.cpp:365
 msgid ""
 "Check to additionally display a reminder in advance of the main alarm time(s)."
 msgstr "मुख्य संसूचक समयका अगाडि अतिरिक्त सचेतक प्रदर्शन गर्न चेक गर्नुहोस् ।"
 
-#: editdlg.cpp:407
+#: editdlg.cpp:388
 msgid "Check to copy the alarm into KOrganizer's calendar"
 msgstr "केडीई आयोजकको पात्रोमा संसूचक प्रतिलिपि गर्न चेक गर्नुहोस्"
 
-#: editdlg.cpp:411
+#: editdlg.cpp:392
 msgid "Schedule the alarm at the specified time."
 msgstr "निर्दिष्ट गरिएको समयमा संसूचक तालिकावद्ध गर्नुहोस् ।"
 
-#: editdlg.cpp:445
+#: editdlg.cpp:426
 msgid "Enter the text of the alarm message. It may be multi-line."
 msgstr "संसूचक सन्देशको पाठ प्रविष्ट गर्नुहोस् । यो धेरै लाइनको हुन सक्छ ।"
 
-#: editdlg.cpp:453
+#: editdlg.cpp:434
 msgid "Enter the name or URL of a text or image file to display."
 msgstr "प्रदर्शनका लागि नाम वा पाठको यूआरएल वा छवि फाइल प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:459 editdlg.cpp:540 sounddlg.cpp:103
+#: editdlg.cpp:440 editdlg.cpp:521 sounddlg.cpp:103
 msgid "Choose a file"
 msgstr "एउटा फाइल रोज्नुहोस्"
 
-#: editdlg.cpp:460
+#: editdlg.cpp:441
 msgid "Select a text or image file to display."
 msgstr "प्रदर्शनका लागि पाठ वा छवि फाइल चयन गर्नुहोस् ।"
 
-#: editdlg.cpp:502
+#: editdlg.cpp:483
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr ""
 "शेल आदेश लाइनको साटोमा स्क्रिप्टका सामाग्री प्रविष्ट गर्न चेक गर्नुहोस्"
 
-#: editdlg.cpp:506
+#: editdlg.cpp:487
 msgid "Enter a shell command to execute."
 msgstr "कार्यान्वयनका लागि शेल आदेश प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:510
+#: editdlg.cpp:491
 msgid "Enter the contents of a script to execute"
 msgstr "कार्यान्वयनका लागि स्क्रिप्टका सामाग्री प्रविष्ट गर्नुहोस्"
 
-#: editdlg.cpp:515
+#: editdlg.cpp:496
 msgid "Command Output"
 msgstr "आदेश निर्गत"
 
-#: editdlg.cpp:523
+#: editdlg.cpp:504
 msgid "Check to execute the command in a terminal window"
 msgstr "टर्मिनल सञ्झ्यालमा आदेश कार्यान्वयन गर्न चेक गर्नुहोस्"
 
-#: editdlg.cpp:533
+#: editdlg.cpp:514
 msgid "Enter the name or path of the log file."
 msgstr "लग फाइलको नाम वा बाटो प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:541
+#: editdlg.cpp:522
 msgid "Select a log file."
 msgstr "लग फाइल चयन गर्नुहोस् ।"
 
-#: editdlg.cpp:547
+#: editdlg.cpp:528
 msgid ""
 "Check to log the command output to a local file. The output will be appended to "
 "any existing contents of the file."
@@ -805,11 +787,11 @@ msgstr ""
 "स्थानीय फाइलमा आदेश निर्गत लग गर्न चेक गर्नुहोस् । फाइलको कुनै पनि अवस्थित "
 "सामाग्रीमा निर्गत थपिएको हुनेछ ।"
 
-#: editdlg.cpp:555
+#: editdlg.cpp:536
 msgid "Check to discard command output."
 msgstr "आदेश निर्गत अस्वीकार गर्न चेक गर्नुहोस् ।"
 
-#: editdlg.cpp:588
+#: editdlg.cpp:569
 msgid ""
 "Your email identity, used to identify you as the sender when sending email "
 "alarms."
@@ -817,7 +799,7 @@ msgstr ""
 "तपाईँको ‍इमेल परिचय, इमेल संसूचक पठाउदा तपाईँलाई प्रेषकको रुपमा पहिचान गर्न "
 "प्रयोग गरिन्छ ।"
 
-#: editdlg.cpp:600
+#: editdlg.cpp:581
 msgid ""
 "Enter the addresses of the email recipients. Separate multiple addresses by "
 "commas or semicolons."
@@ -825,67 +807,67 @@ msgstr ""
 "इमेल प्रापकको ठेगाना प्रविष्ट गर्नुहोस् । बहुविध ठेगाना अल्पविराम वा "
 "अर्धविरामद्वारा विभाजन गर्नुहोस् ।"
 
-#: editdlg.cpp:608
+#: editdlg.cpp:589
 msgid "Open address book"
 msgstr "ठेगाना पुस्तक खोल्नुहोस्"
 
-#: editdlg.cpp:609
+#: editdlg.cpp:590
 msgid "Select email addresses from your address book."
 msgstr "तपाईँको ठेगाना पुस्तकबाट इमेल ठेगाना चयन गर्नुहोस् ।"
 
-#: editdlg.cpp:620
+#: editdlg.cpp:601
 msgid "Enter the email subject."
 msgstr "इमेल विषुवस्तु प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:625
+#: editdlg.cpp:606
 msgid "Enter the email message."
 msgstr "इमेल सन्देश प्रविष्ट गर्नुहोस् ।"
 
-#: editdlg.cpp:630
+#: editdlg.cpp:611
 msgid "Attachment&s:"
 msgstr "सङ्लग्न:"
 
-#: editdlg.cpp:642
+#: editdlg.cpp:623
 msgid "Files to send as attachments to the email."
 msgstr "सङ्लग्नताका रुपमा इमेलमा पठाइने फाइल ।"
 
-#: editdlg.cpp:646
+#: editdlg.cpp:627
 msgid "Add..."
 msgstr "थप्नुहोस्..."
 
-#: editdlg.cpp:648
+#: editdlg.cpp:629
 msgid "Add an attachment to the email."
 msgstr "इमेलमा सङ्लग्नता थप्नुहोस् ।"
 
-#: editdlg.cpp:651
+#: editdlg.cpp:632
 msgid "Remo&ve"
 msgstr "हटाउनुहोस्"
 
-#: editdlg.cpp:653
+#: editdlg.cpp:634
 msgid "Remove the highlighted attachment from the email."
 msgstr "इमेलबाट हाइलाइट गरिएका सङ्लग्नता हटाउनुहोस् ।"
 
-#: editdlg.cpp:660
+#: editdlg.cpp:641
 msgid "If checked, the email will be blind copied to you."
 msgstr "चेक गरिएमा, तपाईँको इमेलमा खाली कपि हुनेछन् ।"
 
-#: editdlg.cpp:987
+#: editdlg.cpp:966
 msgid "Check to be prompted for confirmation when you acknowledge the alarm."
 msgstr "तपाईँले संसूचक स्वीकृत गर्दा यकीनका लागि तत्काल जाँच हुनेछ ।"
 
-#: editdlg.cpp:1364
+#: editdlg.cpp:1336
 msgid "You must enter a name for the alarm template"
 msgstr "संसूचक टेम्प्लेटका लागि तपाईँले नाम प्रविष्ट गर्नुपर्छ"
 
-#: editdlg.cpp:1369
+#: editdlg.cpp:1341
 msgid "Template name is already in use"
 msgstr "टेम्प्लेट नाम पहिले नै प्रयोगमा छ"
 
-#: editdlg.cpp:1412
+#: editdlg.cpp:1384
 msgid "Recurrence has already expired"
 msgstr "पनरावृत्तिको पहिले नै म्याद समाप्त भएको छ"
 
-#: editdlg.cpp:1442
+#: editdlg.cpp:1412
 msgid ""
 "Reminder period must be less than the recurrence interval, unless '%1' is "
 "checked."
@@ -893,37 +875,39 @@ msgstr ""
 "सचेतक अवधि पुनरावृत्ति अन्तराल भन्दा कम हुनुपर्छ, अन्यथा '%1' चेक गरिएको हुनेछ "
 "।"
 
-#: editdlg.cpp:1465
+#: editdlg.cpp:1426
+#, fuzzy
 msgid ""
-"Simple alarm repetition duration must be less than the recurrence interval "
-"minus any reminder period"
+"The duration of a repetition within the recurrence must be less than the "
+"recurrence interval minus any reminder period"
 msgstr ""
 "सामान्य संसूचक पुनरावृत्ति अवधि पुनरावृत्ति अन्तराल समयबाट कुनै पनि सचेतक अवधि "
 "घटाएर आएको अवधिसँग बराबर हुनुपर्नेछ"
 
-#: editdlg.cpp:1474
+#: editdlg.cpp:1433
+#, fuzzy
 msgid ""
-"Simple alarm repetition period must be in units of days or weeks for a "
-"date-only alarm"
+"For a repetition within the recurrence, its period must be in units of days or "
+"weeks for a date-only alarm"
 msgstr ""
 "मिति मात्र संसूचकका लागि सामान्य संसूचक दोहोरिने अवधि दिन वा हप्ता एकाईमा "
 "हुनुपर्छ"
 
-#: editdlg.cpp:1497
+#: editdlg.cpp:1455
 msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr ""
 "के तपाईँले वास्तवमै निर्दिष्ट गरिएका प्रापक(हरू) लाई अहिले इमेल पठाउन "
 "चाहनुहुन्छ?"
 
-#: editdlg.cpp:1498
+#: editdlg.cpp:1456
 msgid "Confirm Email"
 msgstr "इमेल यकीन गर्नुहोस्"
 
-#: editdlg.cpp:1498
+#: editdlg.cpp:1456
 msgid "&Send"
 msgstr "पठाउनुहोस्"
 
-#: editdlg.cpp:1509
+#: editdlg.cpp:1467
 #, c-format
 msgid ""
 "Command executed:\n"
@@ -932,7 +916,7 @@ msgstr ""
 "आदेश कार्यान्वयन गरियो:\n"
 "%1"
 
-#: editdlg.cpp:1516
+#: editdlg.cpp:1474
 #, c-format
 msgid ""
 "\n"
@@ -941,7 +925,7 @@ msgstr ""
 "\n"
 "गुप्त बोधार्थ प्रतिलिपि: %1"
 
-#: editdlg.cpp:1517
+#: editdlg.cpp:1475
 msgid ""
 "Email sent to:\n"
 "%1%2"
@@ -949,17 +933,17 @@ msgstr ""
 "यसलाई इमेल पठाउनुहोस्:\n"
 "%1%2"
 
-#: editdlg.cpp:1576 messagewin.cpp:1541
+#: editdlg.cpp:1535 messagewin.cpp:1541
 msgid "Defer Alarm"
 msgstr "संसूचक पछि सार्नुहोस्"
 
-#: editdlg.cpp:1743
+#: editdlg.cpp:1689
 msgid ""
 "Log file must be the name or path of a local file, with write permission."
 msgstr ""
 "लग फाइलमा लेख्ने अनुमतिका साथमा, स्थानीय फाइलको नाम वा मार्ग हुनुपर्छ ।"
 
-#: editdlg.cpp:1769
+#: editdlg.cpp:1715
 #, c-format
 msgid ""
 "Invalid email address:\n"
@@ -968,11 +952,11 @@ msgstr ""
 "अवैध इमेल ठेगाना:\n"
 "%1"
 
-#: editdlg.cpp:1776
+#: editdlg.cpp:1722
 msgid "No email address specified"
 msgstr "इमेल ठेगाना निर्दिष्ट गरिएको छैन"
 
-#: editdlg.cpp:1793
+#: editdlg.cpp:1739
 #, c-format
 msgid ""
 "Invalid email attachment:\n"
@@ -981,31 +965,31 @@ msgstr ""
 "अवैध इमेल सङ्लग्नता:\n"
 "%1"
 
-#: editdlg.cpp:1821
+#: editdlg.cpp:1767
 msgid "Display the alarm message now"
 msgstr "संसूचक सन्देश अब प्रदर्शन गर्नुहोस्"
 
-#: editdlg.cpp:1837
+#: editdlg.cpp:1783
 msgid "Display the file now"
 msgstr "फाइल अब प्रदर्शन गर्नुहोस्"
 
-#: editdlg.cpp:1849
+#: editdlg.cpp:1795
 msgid "Execute the specified command now"
 msgstr "निर्दिष्ट गरिएको आदेश अब कार्यान्वयन गर्नुहोस्"
 
-#: editdlg.cpp:1860
+#: editdlg.cpp:1806
 msgid "Send the email to the specified addressees now"
 msgstr "निर्दिष्ट गरिएको ठेगानामा अब इमेल पठाउनुहोस्"
 
-#: editdlg.cpp:1934
+#: editdlg.cpp:1880
 msgid "Choose File to Attach"
 msgstr "सङ्ग्नताका लागि फाइल रोज्नुहोस्"
 
-#: editdlg.cpp:2041
+#: editdlg.cpp:1987
 msgid "Please select a file to display"
 msgstr "कृपया प्रदर्शन गर्न फाइल चयन गर्नुहोस्"
 
-#: editdlg.cpp:2043
+#: editdlg.cpp:1989
 msgid ""
 "%1\n"
 "not found"
@@ -1013,7 +997,7 @@ msgstr ""
 "%1\n"
 "फेला परेन"
 
-#: editdlg.cpp:2044
+#: editdlg.cpp:1990
 msgid ""
 "%1\n"
 "is a folder"
@@ -1021,7 +1005,7 @@ msgstr ""
 "%1\n"
 "फोल्डर हो"
 
-#: editdlg.cpp:2045
+#: editdlg.cpp:1991
 msgid ""
 "%1\n"
 "is not readable"
@@ -1029,7 +1013,7 @@ msgstr ""
 "%1\n"
 "पढ्नयोग्य छैन"
 
-#: editdlg.cpp:2046
+#: editdlg.cpp:1992
 msgid ""
 "%1\n"
 "appears not to be a text or image file"
@@ -2738,18 +2722,22 @@ msgid "End &by:"
 msgstr "अन्त्य:"
 
 #: recurrenceedit.cpp:249
-msgid "Repeat the alarm until the date/time specified"
-msgstr "निर्दिष्ट गरिएको मिति/समयसम्म संसूचक दोहोर्याउनुहोस्"
+msgid ""
+"Repeat the alarm until the date/time specified.\n"
+"\n"
+"Note: This applies to the main recurrence only. It does not limit any "
+"sub-repetition which will occur regardless after the last main recurrence."
+msgstr ""
 
-#: recurrenceedit.cpp:254
+#: recurrenceedit.cpp:255
 msgid "Enter the last date to repeat the alarm"
 msgstr "संसूचक दोहोर्याउन अन्तिम मिति प्रविष्ट गर्नुहोस्"
 
-#: recurrenceedit.cpp:259
+#: recurrenceedit.cpp:260
 msgid "Enter the last time to repeat the alarm."
 msgstr "संसूचक दोहोर्याउन अन्तिम समय प्रविष्ट गर्नुहोस् ।"
 
-#: recurrenceedit.cpp:266
+#: recurrenceedit.cpp:267
 msgid ""
 "Stop repeating the alarm after your first login on or after the specified end "
 "date"
@@ -2757,15 +2745,15 @@ msgstr ""
 "तपाईँको पहिलो लगइनको सुरुआत पछि वा निर्दिष्ट गरिएको अन्तिम समय पछि संसूचक "
 "दोहोर्याउन रोक्नुहोस्"
 
-#: recurrenceedit.cpp:282
+#: recurrenceedit.cpp:283
 msgid "E&xceptions"
 msgstr "अपवाद"
 
-#: recurrenceedit.cpp:294
+#: recurrenceedit.cpp:295
 msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
 msgstr "अपवादका सूची, जस्तै: पुनरावृत्तिबाट मिति/समय बाहिरिन्छन्"
 
-#: recurrenceedit.cpp:310
+#: recurrenceedit.cpp:311
 msgid ""
 "Enter a date to insert in the exceptions list. Use in conjunction with the Add "
 "or Change button below."
@@ -2773,217 +2761,223 @@ msgstr ""
 "अपवाद सूचीमा घुसाउन मिति प्रविष्ट गर्नुहोस् । तलका थप्ने वा परिवर्तन गर्ने "
 "बटनमा संयोजन प्रयोग गर्नुहोस् ।"
 
-#: recurrenceedit.cpp:319
+#: recurrenceedit.cpp:320
 msgid "Add the date entered above to the exceptions list"
 msgstr "माथि प्रविष्ट गरिएको मिति अपवाद सूचीमा थप्नुहोस्"
 
-#: recurrenceedit.cpp:326
+#: recurrenceedit.cpp:327
 msgid ""
 "Replace the currently highlighted item in the exceptions list with the date "
 "entered above"
 msgstr ""
 "माथि प्रविष्ट गरिएका मितिका अपवाद सूचीमा हाल हाइलाइट गरिएका वस्तु बदल्नुहोस्"
 
-#: recurrenceedit.cpp:333
+#: recurrenceedit.cpp:334
 msgid "Remove the currently highlighted item from the exceptions list"
 msgstr "अपवाद सूचीबाट हाल हाइलाइट गरिएका वस्तु हटाउनुहोस्"
 
-#: recurrenceedit.cpp:361
+#: recurrenceedit.cpp:344
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple times "
+"each time the recurrence is due."
+msgstr ""
+
+#: recurrenceedit.cpp:371
 msgid "End date is earlier than start date"
 msgstr "अन्तिम मिति सुरु मिति भन्दा पहिला छ"
 
-#: recurrenceedit.cpp:362
+#: recurrenceedit.cpp:372
 msgid "End date/time is earlier than start date/time"
 msgstr "अन्तिम मिति/समय सुरु मिति/समय भन्दा पहिला छ"
 
-#: recurrenceedit.cpp:580
+#: recurrenceedit.cpp:640
 msgid ""
 "_: Date cannot be earlier than start date\n"
 "start date"
 msgstr "सुरुआत मिति"
 
-#: recurrenceedit.cpp:963
+#: recurrenceedit.cpp:1038
 msgid "Recur e&very"
 msgstr "प्रत्येक पुनरावृत्ति"
 
-#: recurrenceedit.cpp:1031
+#: recurrenceedit.cpp:1106
 msgid "hours:minutes"
 msgstr "घण्टा:मिनेट"
 
-#: recurrenceedit.cpp:1032
+#: recurrenceedit.cpp:1107
 msgid "Enter the number of hours and minutes between repetitions of the alarm"
 msgstr "संसूचकको पुनरागमन बीचमा घण्टा र मिनेटको सङ्ख्या प्रविष्ट गर्नुहोस्"
 
-#: recurrenceedit.cpp:1050
+#: recurrenceedit.cpp:1125
 msgid ""
 "_: On: Tuesday\n"
 "O&n:"
 msgstr "यसमा:"
 
-#: recurrenceedit.cpp:1128
+#: recurrenceedit.cpp:1203
 msgid "No day selected"
 msgstr "दिन चयन गरिएको छैन"
 
-#: recurrenceedit.cpp:1157
+#: recurrenceedit.cpp:1232
 msgid "day(s)"
 msgstr "दिन(हरू)"
 
-#: recurrenceedit.cpp:1158
+#: recurrenceedit.cpp:1233
 msgid "Enter the number of days between repetitions of the alarm"
 msgstr "संसूचकको पुनरावृत्ति बीचमा दिनका सङ्ख्या प्रविष्ट गर्नुहोस्"
 
-#: recurrenceedit.cpp:1160
+#: recurrenceedit.cpp:1235
 msgid "Select the days of the week on which the alarm is allowed to occur"
 msgstr "संसूचक देखिने अनुमति भएका हप्ताका दिन चयन गर्नुहोस्"
 
-#: recurrenceedit.cpp:1162 recurrenceedit.cpp:1176
+#: recurrenceedit.cpp:1237 recurrenceedit.cpp:1251
 msgid "Select the days of the week on which to repeat the alarm"
 msgstr "संसूचक दोहोरिने हप्ताका दिन चयन गर्नुहोस्"
 
-#: recurrenceedit.cpp:1174
+#: recurrenceedit.cpp:1249
 msgid "week(s)"
 msgstr "हप्ता(हरू)"
 
-#: recurrenceedit.cpp:1175
+#: recurrenceedit.cpp:1250
 msgid "Enter the number of weeks between repetitions of the alarm"
 msgstr "संसूचकको दोहोर्याई बीचमा हप्ताका सङ्ख्या प्रविष्ट गर्नुहोस्"
 
-#: recurrenceedit.cpp:1199
+#: recurrenceedit.cpp:1274
 msgid ""
 "_: On day number in the month\n"
 "O&n day"
 msgstr "यस दिनमा"
 
-#: recurrenceedit.cpp:1203
+#: recurrenceedit.cpp:1278
 msgid "Repeat the alarm on the selected day of the month"
 msgstr "चयन गरिएको महिनाको दिनमा संसूचक दोहोर्याउनुहोस्"
 
-#: recurrenceedit.cpp:1209
+#: recurrenceedit.cpp:1284
 msgid ""
 "_: Last day of month\n"
 "Last"
 msgstr "अन्तिम"
 
-#: recurrenceedit.cpp:1212
+#: recurrenceedit.cpp:1287
 msgid "Select the day of the month on which to repeat the alarm"
 msgstr "संसूचक दोहोर्याउन महिनाको दिन चयन गर्नुहोस्"
 
-#: recurrenceedit.cpp:1224
+#: recurrenceedit.cpp:1299
 msgid ""
 "_: On the 1st Tuesday\n"
 "On t&he"
 msgstr "यसमा"
 
-#: recurrenceedit.cpp:1229
+#: recurrenceedit.cpp:1304
 msgid ""
 "Repeat the alarm on one day of the week, in the selected week of the month"
 msgstr "चयन गरिएको महिनाको हप्ताको, एक दिनमा संसूचक दोहोर्याउनुहोस्"
 
-#: recurrenceedit.cpp:1232
+#: recurrenceedit.cpp:1307
 msgid "1st"
 msgstr "पहिलो"
 
-#: recurrenceedit.cpp:1233
+#: recurrenceedit.cpp:1308
 msgid "2nd"
 msgstr "दोस्रो"
 
-#: recurrenceedit.cpp:1234
+#: recurrenceedit.cpp:1309
 msgid "3rd"
 msgstr "तेस्रो"
 
-#: recurrenceedit.cpp:1235
+#: recurrenceedit.cpp:1310
 msgid "4th"
 msgstr "चौथो"
 
-#: recurrenceedit.cpp:1236
+#: recurrenceedit.cpp:1311
 msgid "5th"
 msgstr "पाँचौँ"
 
-#: recurrenceedit.cpp:1237
+#: recurrenceedit.cpp:1312
 msgid ""
 "_: Last Monday in March\n"
 "Last"
 msgstr "अन्तिम"
 
-#: recurrenceedit.cpp:1238
+#: recurrenceedit.cpp:1313
 msgid "2nd Last"
 msgstr "दोस्रो अन्तिम"
 
-#: recurrenceedit.cpp:1239
+#: recurrenceedit.cpp:1314
 msgid "3rd Last"
 msgstr "तेस्रो अन्तिम"
 
-#: recurrenceedit.cpp:1240
+#: recurrenceedit.cpp:1315
 msgid "4th Last"
 msgstr "चौथो अन्तिम"
 
-#: recurrenceedit.cpp:1241
+#: recurrenceedit.cpp:1316
 msgid "5th Last"
 msgstr "पाँचौँ अन्तिम"
 
-#: recurrenceedit.cpp:1244
+#: recurrenceedit.cpp:1319
 msgid ""
 "_: Every (Monday...) in month\n"
 "Every"
 msgstr "प्रत्येक दिन"
 
-#: recurrenceedit.cpp:1247
+#: recurrenceedit.cpp:1322
 msgid "Select the week of the month in which to repeat the alarm"
 msgstr "संसूचक दोहोर्याउन महिनाको हप्ता चयन गर्नुहोस्"
 
-#: recurrenceedit.cpp:1260
+#: recurrenceedit.cpp:1335
 msgid "Select the day of the week on which to repeat the alarm"
 msgstr "संसूचक दोहोर्याउन हप्ताको दिन चयन गर्नुहोस्"
 
-#: recurrenceedit.cpp:1378
+#: recurrenceedit.cpp:1453
 msgid "month(s)"
 msgstr "महिना(हरू)"
 
-#: recurrenceedit.cpp:1379
+#: recurrenceedit.cpp:1454
 msgid "Enter the number of months between repetitions of the alarm"
 msgstr "संसूचकको दोहोर्याइका बीचमा महिनाका सङ्ख्या प्रविष्ट गर्नुहोस्"
 
-#: recurrenceedit.cpp:1390
+#: recurrenceedit.cpp:1465
 msgid "year(s)"
 msgstr "वर्ष(हरू)"
 
-#: recurrenceedit.cpp:1391
+#: recurrenceedit.cpp:1466
 msgid "Enter the number of years between repetitions of the alarm"
 msgstr "संसूचकको दोहोर्याई बिचमा वर्षका सङ्ख्या प्रविष्ट गर्नुहोस्"
 
-#: recurrenceedit.cpp:1396
+#: recurrenceedit.cpp:1471
 msgid ""
 "_: first week of January\n"
 "of:"
 msgstr "यसको:"
 
-#: recurrenceedit.cpp:1425
+#: recurrenceedit.cpp:1490
 msgid "Select the months of the year in which to repeat the alarm"
 msgstr "संसूचक दोहोरिने वर्षको महिना चयन गर्नुहोस्"
 
-#: recurrenceedit.cpp:1432
+#: recurrenceedit.cpp:1497
 msgid "February 2&9th alarm in non-leap years:"
 msgstr "सामान्य वर्षको फेब्रुअरी २९ को संसूचक:"
 
-#: recurrenceedit.cpp:1435
+#: recurrenceedit.cpp:1500
 msgid ""
 "_: No date\n"
 "None"
 msgstr "कुनै पनि होइन"
 
-#: recurrenceedit.cpp:1436
+#: recurrenceedit.cpp:1501
 msgid ""
 "_: 1st March (short form)\n"
 "1 Mar"
 msgstr "१ मार्च"
 
-#: recurrenceedit.cpp:1437
+#: recurrenceedit.cpp:1502
 msgid ""
 "_: 28th February (short form)\n"
 "28 Feb"
 msgstr "२८ फेब्रुअरी"
 
-#: recurrenceedit.cpp:1443
+#: recurrenceedit.cpp:1508
 msgid ""
 "Select which date, if any, the February 29th alarm should trigger in non-leap "
 "years"
@@ -2991,7 +2985,7 @@ msgstr ""
 "सामान्य वर्षमा फेब्रुअरी २९ मा संसूचक ट्रिगर हुनुपर्ने, कुनै पनि दिन भएमा, चयन "
 "गर्नुहोस्"
 
-#: recurrenceedit.cpp:1527
+#: recurrenceedit.cpp:1592
 msgid "No month selected"
 msgstr "महिना चयन गरिएको छैन"
 
@@ -3011,67 +3005,57 @@ msgstr "अगाडि"
 msgid "Display the reminder only before the first time the alarm is scheduled"
 msgstr "संसुचक तालिकिकरण गरिएको पहिलो पटक अगाडि मात्र सचेतक प्रदर्शन गर्नुहोस्"
 
-#: repetition.cpp:87
-msgid "Alarm Repetition"
+#: repetition.cpp:85
+#, fuzzy
+msgid "Alarm Sub-Repetition"
 msgstr "संसूचक पुनरावृत्ति"
 
-#: repetition.cpp:165
-msgid ""
-"Use this dialog either:\n"
-"- instead of the Recurrence tab, or\n"
-"- after using the Recurrence tab, to set up a repetition within a repetition."
-msgstr ""
-"यो संवाद यात:\n"
-"- पुनरावृत्ति ट्याबको साटोमा, वा\n"
-"- पुनरावृत्ति ट्याब प्रयोग गरेपछि, पुनरागमनमा पुनरावृत्ति सेट गर्न प्रयोग "
-"गर्नुहोस् ।"
-
-#: repetition.cpp:183
+#: repetition.cpp:161
 msgid ""
 "_: Repeat every 10 minutes\n"
 "&Repeat every"
 msgstr "प्रत्येकलाई दोहोर्याउनुहोस्"
 
-#: repetition.cpp:184
+#: repetition.cpp:162
+#, fuzzy
 msgid ""
-"Check to repeat the alarm each time it recurs. Instead of the alarm triggering "
-"once at each recurrence, this option makes the alarm trigger multiple times at "
-"each recurrence."
+"Instead of the alarm triggering just once at each recurrence, checking this "
+"option makes the alarm trigger multiple times at each recurrence."
 msgstr ""
 "प्रत्येक पुनरावृत्तिमा संसूचक दोहोर्याउन चेक गर्नुहोस् । प्रत्येक पुनरावृत्तिमा "
 "एकपटक संसूचक ट्रिगर गर्नुको साटोमा, यो विकल्पले प्रत्येक पुनरावृत्तिमा धेरै पटक "
 "संसूचक ट्रिगर गर्ने बनाउछ ।"
 
-#: repetition.cpp:187
+#: repetition.cpp:164
 msgid "Enter the time between repetitions of the alarm"
 msgstr "संसूचकको पुनरावृत्ति बीचमा समय प्रविष्ट गर्नुहोस्"
 
-#: repetition.cpp:200
+#: repetition.cpp:177
 msgid "&Number of repetitions:"
 msgstr "पुनरावृत्तिको सङ्ख्या:"
 
-#: repetition.cpp:203
+#: repetition.cpp:180
 msgid ""
 "Check to specify the number of times the alarm should repeat after each "
 "recurrence"
 msgstr ""
 "प्रत्येक पुनरावृत्ति पछाडि संसूचक दोहोरिने सङ्ख्या निर्दिष्ट गर्न चेक गर्नुहोस्"
 
-#: repetition.cpp:211
+#: repetition.cpp:188
 msgid ""
 "Enter the number of times to trigger the alarm after its initial occurrence"
 msgstr ""
 "यसको सुरुआत घटना पछाडि संसूचक ट्रिगर गर्न समयको सङ्ख्या प्रविष्ट गर्नुहोस्"
 
-#: repetition.cpp:217
+#: repetition.cpp:194
 msgid "&Duration:"
 msgstr "अवधि:"
 
-#: repetition.cpp:220
+#: repetition.cpp:197
 msgid "Check to specify how long the alarm is to be repeated"
 msgstr "संसूचक कति पटक दोहोरिने निर्दिष्ट गर्न चेक गर्नुहोस्"
 
-#: repetition.cpp:226
+#: repetition.cpp:203
 msgid "Enter the length of time to repeat the alarm"
 msgstr "संसूचक दोहोरिने अवधि प्रविष्ट गर्नुहोस्"
 
@@ -3544,6 +3528,41 @@ msgstr "लेखक"
 #: kalarmd/admain.cpp:48
 msgid "Original Author"
 msgstr "मौलिक लेखक"
+
+#~ msgid ""
+#~ "_: This refers to simple repetitions set up using the Simple Repetition dialog\n"
+#~ "Cannot defer past the alarm's next repetition (currently %1)"
+#~ msgstr "पहिलाको संसूचकको पछिल्लो पुनरावृत्ति सार्न सकिदैन(हालैको %1)"
+
+#~ msgid ""
+#~ "_: This refers to recurrences set up using the Recurrence tab\n"
+#~ "Cannot defer past the alarm's next recurrence (currently %1)"
+#~ msgstr "पहिलाको संसुचकको पछिल्लो पुनरावृत्तिलाई सार्न सकिदैन (हालैको %1)"
+
+#~ msgid "Recurrence:"
+#~ msgstr "पुनरावृत्ति:"
+
+#~ msgid ""
+#~ "How often the alarm recurs.\n"
+#~ "The times shown are those configured in the Recurrence tab and in the Simple Repetition dialog."
+#~ msgstr ""
+#~ "कति समयमा संसूचक पुनरावृत्ति हुन्छ ।\n"
+#~ "देखिएका समय पुनरावृत्ति ट्याबमा र सामान्य दोहोरिने संवादमा कन्फिगर गरिएका समय हुन् ।"
+
+#~ msgid "Set up a simple, or additional, alarm repetition"
+#~ msgstr "सामान्य, वा अतिरिक्त, संसूचक पुनरावृत्ति सेट गर्नुहोस्"
+
+#~ msgid "Repeat the alarm until the date/time specified"
+#~ msgstr "निर्दिष्ट गरिएको मिति/समयसम्म संसूचक दोहोर्याउनुहोस्"
+
+#~ msgid ""
+#~ "Use this dialog either:\n"
+#~ "- instead of the Recurrence tab, or\n"
+#~ "- after using the Recurrence tab, to set up a repetition within a repetition."
+#~ msgstr ""
+#~ "यो संवाद यात:\n"
+#~ "- पुनरावृत्ति ट्याबको साटोमा, वा\n"
+#~ "- पुनरावृत्ति ट्याब प्रयोग गरेपछि, पुनरागमनमा पुनरावृत्ति सेट गर्न प्रयोग गर्नुहोस् ।"
 
 #~ msgid "Message color"
 #~ msgstr "सन्देश रङ"
