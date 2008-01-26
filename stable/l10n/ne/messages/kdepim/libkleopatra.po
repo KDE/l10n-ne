@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-21 01:15+0200\n"
+"POT-Creation-Date: 2008-01-26 01:19+0100\n"
 "PO-Revision-Date: 2007-01-29 12:51+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -667,6 +667,96 @@ msgstr "कुञ्जी सूची परिणाम"
 msgid "Recheck Key"
 msgstr "कुञ्जी पुन: जाँच गर्नुहोस्"
 
+#: ui/messagebox.cpp:60
+msgid "&Save to Disk..."
+msgstr ""
+
+#: ui/messagebox.cpp:64
+msgid "&Copy to Clipboard"
+msgstr ""
+
+#: ui/messagebox.cpp:64
+msgid "Copy Audit Log to Clipboard"
+msgstr ""
+
+#: ui/messagebox.cpp:68
+msgid "&Show Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:75
+msgid "View GnuPG Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:94
+msgid "Choose File to Save GnuPG Audit Log to"
+msgstr ""
+
+#: ui/messagebox.cpp:106
+msgid "Couldn't save to file \"%1\": %2"
+msgstr ""
+
+#: ui/messagebox.cpp:108
+msgid "File Save Error"
+msgstr ""
+
+#: ui/messagebox.cpp:129
+msgid "Your system does not have support for GnuPG Audit Logs"
+msgstr ""
+
+#: ui/messagebox.cpp:130
+msgid "System Error"
+msgstr ""
+
+#: ui/messagebox.cpp:136
+msgid "No GnuPG Audit Log available for this operation."
+msgstr ""
+
+#: ui/messagebox.cpp:137
+msgid "No GnuPG Audit Log"
+msgstr ""
+
+#: ui/messagebox.cpp:153 ui/messagebox.cpp:158
+msgid "GnuPG Audit Log Viewer"
+msgstr ""
+
+#: ui/messagebox.cpp:163
+#, c-format
+msgid "Signing failed: %1"
+msgstr "साइनिङ असफल: %1"
+
+#: ui/messagebox.cpp:164
+msgid "Signing successful"
+msgstr ""
+
+#: backends/chiasmus/chiasmusjob.cpp:209 ui/messagebox.cpp:173
+#, c-format
+msgid "Encryption failed: %1"
+msgstr "गुप्तिकरण असफल: %1"
+
+#: ui/messagebox.cpp:174
+#, fuzzy
+msgid "Encryption successful"
+msgstr "गुप्तिकरण कुञ्जी:"
+
+#: ui/messagebox.cpp:191
+#, fuzzy
+msgid "Signing Result"
+msgstr "स्क्यान परिणाम"
+
+#: ui/messagebox.cpp:201
+msgid "Signing Error"
+msgstr ""
+
+#: ui/messagebox.cpp:211 ui/messagebox.cpp:231
+#, fuzzy
+msgid "Encryption Result"
+msgstr "गुप्तिकरण कुञ्जी:"
+
+#: ui/messagebox.cpp:221 ui/messagebox.cpp:241
+#, fuzzy
+msgid "Encryption Error"
+msgstr "गुप्तिकरण कुञ्जी:"
+
 #: ui/passphrasedialog.cpp:85
 msgid "Please enter your passphrase:"
 msgstr "कृपया तपाईँको पासफ्रेज प्रविष्ट गर्नुहोस्:"
@@ -702,13 +792,6 @@ msgstr "\"%1\" फाइल अवस्थित छैन वा कार्�
 #: backends/chiasmus/chiasmusjob.cpp:168
 msgid "Output from chiasmus"
 msgstr "व्यतिक्रमबाट निर्गत"
-
-#: backends/chiasmus/chiasmusjob.cpp:209
-#: backends/qgpgme/qgpgmeencryptjob.cpp:103
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:119
-#, c-format
-msgid "Encryption failed: %1"
-msgstr "गुप्तिकरण असफल: %1"
 
 #: backends/chiasmus/chiasmusjob.cpp:210
 #, c-format
@@ -805,7 +888,7 @@ msgstr ""
 msgid "Error from gpgconf while saving configuration: %1"
 msgstr "कन्फिगरेसन बचत गर्दा gpgconf बाट त्रुटि आयो: %1"
 
-#: backends/qgpgme/qgpgmejob.cpp:258
+#: backends/qgpgme/qgpgmejob.cpp:277
 msgid ""
 "You need a passphrase to unlock the secret key for user:"
 "<br/> %1 (retry)"
@@ -813,14 +896,14 @@ msgstr ""
 "तपाईँसँग प्रयोगकर्ताका लागि गुप्त कुञ्जी अनलक गर्न पासफ्रेज आवश्यक पर्दछ:"
 "<br/> %1 (पुन: प्रयास)"
 
-#: backends/qgpgme/qgpgmejob.cpp:259
+#: backends/qgpgme/qgpgmejob.cpp:278
 #, c-format
 msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
 msgstr ""
 "तपाईँसँग प्रयोगकर्ताका लागि गुप्त कुञ्जी अनलक गर्न पासफ्रेज आवश्यक पर्दछ:"
 "<br/> %1"
 
-#: backends/qgpgme/qgpgmejob.cpp:262
+#: backends/qgpgme/qgpgmejob.cpp:281
 msgid ""
 "This dialog will reappear every time the passphrase is needed. For a more "
 "secure solution that also allows caching the passphrase, use gpg-agent."
@@ -828,25 +911,25 @@ msgstr ""
 "पासफ्रेज आवश्यक पर्दा प्रत्येक पटक यो संवाद देखा पर्दछ । बढी सुरक्षित समाधानका "
 "लागि यसले पासफ्रेज क्यासिङ गर्न अनुमति दिन्छ, gpg-अभिकर्ता प्रयोग गर्नुहोस् ।"
 
-#: backends/qgpgme/qgpgmejob.cpp:265
+#: backends/qgpgme/qgpgmejob.cpp:284
 msgid "gpg-agent was found in %1, but does not appear to be running."
 msgstr "gpg-अभिकर्ता %1 मा फेला पर्यो, तर चलेको जस्तो देखिदैन ।"
 
-#: backends/qgpgme/qgpgmejob.cpp:268
+#: backends/qgpgme/qgpgmejob.cpp:287
 msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
 msgstr ""
 "gpg-अभिकर्ता gnupg-%1 को भाग हो, जसलाई तपाईँले %2 बाट डाउनलोड गर्न सक्नुहुन्छ"
 
-#: backends/qgpgme/qgpgmejob.cpp:273
+#: backends/qgpgme/qgpgmejob.cpp:292
 #, c-format
 msgid "For information on how to set up gpg-agent, see %1"
 msgstr "gpg-अभिकर्ता सेट अप गर्ने बारेमा जानकारीका लागि, %1 हेर्नुहोस्"
 
-#: backends/qgpgme/qgpgmejob.cpp:276
+#: backends/qgpgme/qgpgmejob.cpp:295
 msgid "Enter passphrase:"
 msgstr "पासफ्रेज प्रविष्ट गर्नुहोस्:"
 
-#: backends/qgpgme/qgpgmejob.cpp:277
+#: backends/qgpgme/qgpgmejob.cpp:296
 msgid "Passphrase Dialog"
 msgstr "पासफ्रेज संवाद"
 
@@ -881,9 +964,3 @@ msgid ""
 msgstr ""
 "gpg-अभिकर्ता सुरु गर्दैछ (तपाईँले यसको साटोमा विश्वव्यापी दृष्टान्त सुरु गर्ने "
 "विचार गर्न सक्नुहुन्छ)..."
-
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:118
-#: backends/qgpgme/qgpgmesignjob.cpp:108
-#, c-format
-msgid "Signing failed: %1"
-msgstr "साइनिङ असफल: %1"
