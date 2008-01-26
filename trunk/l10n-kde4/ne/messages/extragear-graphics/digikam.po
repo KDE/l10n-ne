@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-23 09:03+0100\n"
+"POT-Creation-Date: 2008-01-26 09:57+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -683,6 +683,7 @@ msgid "Delete '%1' tag?"
 msgstr "'%1' ट्याग मेट्नुहुन्छ ?"
 
 #: libs/imageproperties/imagedescedittab.cpp:1106
+#: digikam/timelinefolderview.cpp:169 digikam/timelinefolderview.cpp:266
 #: digikam/searchfolderview.cpp:307 digikam/tagfolderview.cpp:717
 #: digikam/tagfolderview.cpp:732 digikam/tagfilterview.cpp:1283
 #: digikam/tagfilterview.cpp:1297 digikam/digikamapp.cpp:525
@@ -881,7 +882,7 @@ msgstr ""
 "प्रयोग गर्न सकिन्छ; यदि यो प्रयोग गरिएमा, सबै मानहरू (सानो र ठूलो) ग्राफमा देखिन्छ ।"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:194
-#: imageplugins/channelmixer/channelmixer.cpp:148
+#: digikam/timelineview.cpp:153 imageplugins/channelmixer/channelmixer.cpp:148
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:131
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:148
 #: imageplugins/adjustcurves/adjustcurves.cpp:155
@@ -897,7 +898,7 @@ msgid "<p>Linear"
 msgstr "<p>लिनियर"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:200
-#: imageplugins/channelmixer/channelmixer.cpp:154
+#: digikam/timelineview.cpp:159 imageplugins/channelmixer/channelmixer.cpp:154
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:137
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:155
 #: imageplugins/adjustcurves/adjustcurves.cpp:161
@@ -2474,6 +2475,28 @@ msgstr ""
 "क्यामेरा स्वत: पत्ता लगाउन असफल; कृपया यो राम्रोसँग जडान भएको र खुला छ भन्ने यकिन "
 "गर्नुहोस् । पुन: प्रयास गर्न चाहनुहुन्छ ?"
 
+#: digikam/timelinefolderview.cpp:95 digikam/timelinefolderview.cpp:264
+#, fuzzy
+#| msgid "My Searches"
+msgid "My Date Searches"
+msgstr "मेरो खोजीहरू"
+
+#: digikam/timelinefolderview.cpp:165
+#, kde-format
+msgid "Are you sure you want to delete the selected Date Search \"%1\"?"
+msgstr ""
+
+#: digikam/timelinefolderview.cpp:168
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Delete Date Search?"
+msgstr "खोजी मेट्नुहोस्"
+
+#: digikam/timelinefolderview.cpp:265 digikam/albumfolderview.cpp:570
+#: digikam/albumiconview.cpp:669 digikam/digikamapp.cpp:611
+msgid "Rename..."
+msgstr "पुन: नामकरण गर्नुहोस्..."
+
 #: digikam/kdateedit.cpp:368
 msgid "tomorrow"
 msgstr "भोलि"
@@ -2725,11 +2748,6 @@ msgstr "ब्याच प्रक्रिया"
 msgid "New Album..."
 msgstr "नयाँ एल्बम..."
 
-#: digikam/albumfolderview.cpp:570 digikam/albumiconview.cpp:669
-#: digikam/digikamapp.cpp:611
-msgid "Rename..."
-msgstr "पुन: नामकरण गर्नुहोस्..."
-
 #: digikam/albumfolderview.cpp:571
 #, fuzzy
 #| msgid "Edit Album Properties..."
@@ -2748,12 +2766,14 @@ msgstr "एल्बमलाई रद्दीटोकरीमा सार�
 msgid "Delete Album"
 msgstr "एल्बम मेट्नुहोस्"
 
-#: digikam/albumfolderview.cpp:828
+#: digikam/albumfolderview.cpp:828 digikam/timelineview.cpp:612
+#: digikam/timelineview.cpp:616
 #, kde-format
 msgid "Rename Album (%1)"
 msgstr "एल्बम (%1) पुन: नामकरण गर्नुहोस्"
 
-#: digikam/albumfolderview.cpp:829
+#: digikam/albumfolderview.cpp:829 digikam/timelineview.cpp:613
+#: digikam/timelineview.cpp:617
 msgid "Enter new album name:"
 msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
 
@@ -3014,7 +3034,7 @@ msgstr "अन्तिम खोजी"
 msgid "My Searches"
 msgstr "मेरो खोजीहरू"
 
-#: digikam/searchfolderview.cpp:226
+#: digikam/searchfolderview.cpp:226 digikam/timelineview.cpp:556
 #, fuzzy
 #| msgid ""
 #| "Another search with same name exists.\n"
@@ -3026,7 +3046,8 @@ msgstr ""
 "त्यो नामको अर्को खोजी पनि अवस्थित छ ।\n"
 "कृपया नयाँ नाम प्रविष्ट गर्नुहोस्:"
 
-#: digikam/searchfolderview.cpp:229
+#: digikam/searchfolderview.cpp:229 digikam/timelineview.cpp:560
+#: digikam/timelineview.cpp:562
 msgid "Name exists"
 msgstr "नाम अवस्थित छ"
 
@@ -4001,6 +4022,11 @@ msgstr "एल्बममा फर्कनुहोस्"
 msgid "SlideShow"
 msgstr "स्लाइड प्रर्दशन"
 
+#: digikam/timelinewidget.cpp:275
+#, kde-format
+msgid "Week #%1 - %2 %3"
+msgstr ""
+
 #: digikam/datefolderview.cpp:165
 msgid "My Dates"
 msgstr "मितिद्वारा"
@@ -4827,6 +4853,87 @@ msgstr ""
 #: digikam/mediaplayerview.cpp:90
 msgid "No media player available..."
 msgstr "मिडिया प्लेयर फेला परेन..."
+
+#: digikam/timelineview.cpp:132
+#, fuzzy
+#| msgid "Show file size"
+msgid "Time Unit:"
+msgstr "फाइल साइज देखाउनुहोस्"
+
+#: digikam/timelineview.cpp:134
+msgid "Day"
+msgstr ""
+
+#: digikam/timelineview.cpp:135
+msgid "Week"
+msgstr ""
+
+#: digikam/timelineview.cpp:136
+#, fuzzy
+#| msgid "Both"
+msgid "Month"
+msgstr "दुबै"
+
+#: digikam/timelineview.cpp:137
+#, fuzzy
+#| msgid "<p>Linear"
+msgid "Year"
+msgstr "<p>लिनियर"
+
+#: digikam/timelineview.cpp:140
+msgid ""
+"<p>Select here histogram time unit.<p>You can change the graph decade to "
+"zoom in or zoom out over time."
+msgstr ""
+
+#: digikam/timelineview.cpp:146
+#, fuzzy
+#| msgid ""
+#| "<p>Select here the histogram scale.<p>If the image's maximal values are "
+#| "small, you can use the linear scale.<p>Logarithmic scale can be used when "
+#| "the maximal values are big; if it is used, all values (small and large) "
+#| "will be visible on the graph."
+msgid ""
+"<p>Select here the histogram scale.<p>If the date count's maximal values are "
+"small, you can use the linear scale.<p>Logarithmic scale can be used when "
+"the maximal values are big; if it is used, all values (small and large) will "
+"be visible on the graph."
+msgstr ""
+"<p>यहाँ हिस्टोग्राम स्केल चयन गर्नुहोस् ।<p>यदि छविको अधिकतम मान सानो छ भने, तपाईँले "
+"लिनियर स्केल प्रयोग गर्न सक्नुहुन्छ ।<p>लोगारिदमिक स्केल अधिकतम मान ठूलो भएको बेलामा "
+"प्रयोग गर्न सकिन्छ; यदि यो प्रयोग गरिएमा, सबै मानहरू (सानो र ठूलो) ग्राफमा देखिन्छ ।"
+
+#: digikam/timelineview.cpp:191
+#, fuzzy
+#| msgid "Invert Selection"
+msgid "Clear current selection"
+msgstr "चयन उल्टाउनुहोस्"
+
+#: digikam/timelineview.cpp:192
+msgid ""
+"<p>If you press this button, current dates selection from time-line will be "
+"clear."
+msgstr ""
+
+#: digikam/timelineview.cpp:196
+#, fuzzy
+#| msgid ""
+#| "<p>Enter the name used to save the current search in the \"My Searches\" "
+#| "view"
+msgid ""
+"<p>Enter the name of the current dates search to save in the \"My Date "
+"Searches\" view"
+msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
+
+#: digikam/timelineview.cpp:202
+msgid "Save current selection to a new virtual Album"
+msgstr ""
+
+#: digikam/timelineview.cpp:203
+msgid ""
+"<p>If you press this button, current dates selection from time-line will be "
+"saved to a new search virtual Album using name set on the left side."
+msgstr ""
 
 #: digikam/searchquickdialog.cpp:80
 msgid "Quick Search"
