@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-03 08:55+0100\n"
+"POT-Creation-Date: 2008-02-04 11:33+0100\n"
 "PO-Revision-Date: 2008-01-03 14:44+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -29,7 +29,7 @@ msgstr "सर्टकट"
 msgid "Character"
 msgstr "क्यारेक्टर"
 
-#: prefcharacter.cpp:55 kwordquiz.cpp:403
+#: prefcharacter.cpp:55
 #, kde-format
 msgid "Special Character %1"
 msgstr "विशेष क्यारेक्टर %1"
@@ -46,7 +46,7 @@ msgstr "तपाईँको जवाफ सही थियो !"
 msgid "Your answer was incorrect."
 msgstr "तपाईँको जवाफ गलत थियो ।"
 
-#: dlglanguage.cpp:28 kwqcommands.cpp:445
+#: dlglanguage.cpp:28
 msgid "Column Titles"
 msgstr "स्तम्भ शीर्षक"
 
@@ -72,6 +72,7 @@ msgstr ""
 #: kwordquizprefs.cpp:45
 #, fuzzy
 #| msgid "Editor Settings"
+msgctxt "@title:group general settings"
 msgid "General Settings"
 msgstr "सम्पादक सेटिङ"
 
@@ -81,6 +82,9 @@ msgid "Editor"
 msgstr "सम्पादक"
 
 #: kwordquizprefs.cpp:48
+#, fuzzy
+#| msgid "Editor Settings"
+msgctxt "@title:group editor settings"
 msgid "Editor Settings"
 msgstr "सम्पादक सेटिङ"
 
@@ -90,6 +94,9 @@ msgid "Quiz"
 msgstr "क्विज"
 
 #: kwordquizprefs.cpp:51
+#, fuzzy
+#| msgid "Quiz Settings"
+msgctxt "@title:group quiz settings"
 msgid "Quiz Settings"
 msgstr "प्रश्नमाला सेटिङ"
 
@@ -103,6 +110,9 @@ msgstr ""
 "देखावट"
 
 #: kwordquizprefs.cpp:54
+#, fuzzy
+#| msgid "Flashcard Appearance Settings"
+msgctxt "@title:group flash appearance settings"
 msgid "Flashcard Appearance Settings"
 msgstr "फ्ल्यासकार्ड देखावट सेटिङ"
 
@@ -115,9 +125,10 @@ msgstr ""
 "विशेष\n"
 "क्यारेक्टर"
 
-#. i18n: tag text
-#. i18n: file kwordquizui.rc line 96
-#: kwordquizprefs.cpp:58 rc.cpp:267
+#: kwordquizprefs.cpp:58
+#, fuzzy
+#| msgid "Special Characters"
+msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "विशिष्ट क्यारेक्टर"
 
@@ -901,6 +912,12 @@ msgstr "यसमा जानुहोस्"
 msgid "Quiz"
 msgstr "प्रश्नमाला"
 
+#. i18n: tag text
+#. i18n: file kwordquizui.rc line 96
+#: rc.cpp:267
+msgid "Special Characters"
+msgstr "विशिष्ट क्यारेक्टर"
+
 #. i18n: tag string
 #. i18n: file multipleviewbase.ui line 90
 #. i18n: tag string
@@ -1651,7 +1668,7 @@ msgstr "सम्पादकमा प्रदर्शन गरिए जस
 
 #. i18n: tag string
 #. i18n: file prefgeneralbase.ui line 56
-#: rc.cpp:639 kwordquiz.cpp:290
+#: rc.cpp:639
 msgid "&Editor"
 msgstr "सम्पादक"
 
@@ -1967,13 +1984,13 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shyamkrishna_bal@yahoo.com"
 
-#: kwqcommands.h:91
+#: kwqcommands.h:94
 #, fuzzy
 #| msgid "Front"
 msgid "Font"
 msgstr "अगाडि"
 
-#: kwqcommands.h:109
+#: kwqcommands.h:112
 #, fuzzy
 #| msgid "&Undo Entry"
 msgid "Entry"
@@ -2127,6 +2144,13 @@ msgstr "प्रश्नमाला सत्रमा प्रयोग ग
 msgid "Selects this mode"
 msgstr "यो मोड चयन गर्दछ"
 
+#: kwordquiz.cpp:290
+#, fuzzy
+#| msgid "&Editor"
+msgctxt "@item:inlistbox activate vocabulary editor"
+msgid "&Editor"
+msgstr "सम्पादक"
+
 #: kwordquiz.cpp:292
 msgid "Activates the vocabulary editor"
 msgstr "शब्द सूची सम्पादक सक्रिय गर्दछ"
@@ -2233,6 +2257,12 @@ msgstr "ध्वनि र निश्चित घटनाका लाग�
 msgid "Specifies preferences for the vocabulary editor and quiz sessions"
 msgstr "शब्द सूची सम्पादक र प्रश्नमाला सत्रका लागि प्राथमिकता निर्दिष्ट गर्दछ"
 
+#: kwordquiz.cpp:403
+#, fuzzy, kde-format
+#| msgid "Special Character %1"
+msgid "Special Character <numid>%1</numid>"
+msgstr "विशेष क्यारेक्टर %1"
+
 #: kwordquiz.cpp:417
 msgid "Toggles display of the toolbars"
 msgstr "उपकरणपट्टीको प्रदर्शन टगल गर्दछ"
@@ -2250,10 +2280,16 @@ msgid "Enter search terms here"
 msgstr "यहाँ खोजी सर्तहरू प्रविष्ट गर्नुहोस्"
 
 #: kwordquiz.cpp:476
+#, fuzzy
+#| msgid "S&earch:"
+msgctxt "@label:textbox search"
 msgid "S&earch:"
 msgstr "खोजी:"
 
 #: kwordquiz.cpp:506
+#, fuzzy
+#| msgid "Editor"
+msgctxt "@item:inlistbox vocabulary editor"
 msgid "Editor"
 msgstr "सम्पादक"
 
@@ -2280,6 +2316,9 @@ msgstr "फाइल खुल्दैछ..."
 #: kwordquiz.cpp:1008 kwordquiz.cpp:1024 kwordquiz.cpp:1031 kwordquiz.cpp:1038
 #: kwordquiz.cpp:1047 kwordquiz.cpp:1055 kwordquiz.cpp:1069 kwordquiz.cpp:1077
 #: kwordquiz.cpp:1084 kwordquiz.cpp:1091 kwordquiz.cpp:1098
+#, fuzzy
+#| msgid "Ready"
+msgctxt "@info:status ready"
 msgid "Ready"
 msgstr "तयार"
 
@@ -2519,58 +2558,77 @@ msgstr "प्रश्न"
 #: kwqcommands.cpp:81
 #, fuzzy
 #| msgid "&Undo Clear"
+msgctxt "@item:inmenu undo clear"
 msgid "Clear"
 msgstr "खाली गरिएकोलाई पूर्वावस्थामा फर्काउनुहोस्"
 
 #: kwqcommands.cpp:100
+msgctxt "@item:inmenu undo cut"
 msgid "Cut"
 msgstr ""
 
 #: kwqcommands.cpp:113
 #, fuzzy
 #| msgid "&Undo Paste"
+msgctxt "@item:inmenu undo paste"
 msgid "Paste"
 msgstr "टसाइलाई पूर्वावस्थामा फर्काउनुहोस्"
 
 #: kwqcommands.cpp:206
 #, fuzzy
 #| msgid "Shortcut"
+msgctxt "@item:inmenu undo sort"
 msgid "Sort"
 msgstr "सर्टकट"
 
 #: kwqcommands.cpp:233
 #, fuzzy
 #| msgid "Sh&uffle"
+msgctxt "@item:inmenu undo shuffle"
 msgid "Shuffle"
 msgstr "शफल गर्नुहोस्"
 
 #: kwqcommands.cpp:253
 #, fuzzy
 #| msgid "Insert %1"
+msgctxt "@item:inmenu undo insert"
 msgid "Insert"
 msgstr "%1 घुसाउनुहोस्"
 
 #: kwqcommands.cpp:285
 #, fuzzy
 #| msgid "&Delete Row"
+msgctxt "@item:inmenu undo delete"
 msgid "Delete"
 msgstr "पङ्क्ति मेट्नुहोस्"
 
 #: kwqcommands.cpp:334
 #, fuzzy
 #| msgid "&Unmark Blanks"
+msgctxt "@item:inmenu undo unmark blank"
 msgid "Unmark Blank"
 msgstr "खाली ठाउँ चिन्हबाट हटाउनुहोस्"
 
 #: kwqcommands.cpp:356
+msgctxt "@item:inmenu undo formatting"
 msgid "Formatting"
 msgstr ""
+
+#: kwqcommands.cpp:445
+#, fuzzy
+#| msgid "Column Titles"
+msgctxt "@item:inmenu undo column titles"
+msgid "Column Titles"
+msgstr "स्तम्भ शीर्षक"
 
 #: dlgspecchar.cpp:28
 msgid "Select Character"
 msgstr "क्यारेक्टर चयन गर्नुहोस्"
 
 #: dlgspecchar.cpp:36
+#, fuzzy
+#| msgid "&Select"
+msgctxt "@action:button select"
 msgid "&Select"
 msgstr "चयन गर्नुहोस्"
 

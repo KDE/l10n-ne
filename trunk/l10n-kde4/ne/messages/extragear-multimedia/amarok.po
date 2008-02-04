@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-03 08:57+0100\n"
+"POT-Creation-Date: 2008-02-04 11:36+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1451,7 +1451,7 @@ msgstr "हालको प्ले सूची"
 msgid "My Playlists"
 msgstr "प्ले सूची"
 
-#: playlistmanager/PlaylistManager.cpp:193 podcasts/PodcastCollection.h:94
+#: playlistmanager/PlaylistManager.cpp:193 podcasts/PodcastCollection.h:95
 #: mediadevice/ipod/ipodmediadevice.cpp:1418
 msgid "Podcasts"
 msgstr "पोडकास्ट"
@@ -1518,8 +1518,9 @@ msgstr ""
 "स्थापना भएको छैन</li><li>कुनै libvisual प्लगइनहरू स्थापना गरिएको छैन</li></ul>कृपया "
 "यी सम्भाव्यताहरू जाँच गर्नुहोस् र अमारोक पुन: सुरूआत गर्नुहोस् ।</div>"
 
-#: podcasts/PodcastCollection.h:53 podcasts/PodcastCollection.h:92
-#: playlistbrowser/PodcastModel.cpp:245 playlistbrowser/PodcastModel.cpp:273
+#: podcasts/PodcastCollection.h:53 podcasts/PodcastCollection.h:93
+#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:244
+#: playlistbrowser/PodcastModel.cpp:243 playlistbrowser/PodcastModel.cpp:317
 #, fuzzy
 #| msgid "Podcasts"
 msgid "Local Podcasts"
@@ -1862,7 +1863,7 @@ msgstr ""
 #: mediadevice/ipod/ipodmediadevice.cpp:2237
 #: mediadevice/generic/genericmediadevice.cpp:938 systray.cpp:100
 #: collectionbrowser/CollectionTreeView.cpp:134
-#: playlistbrowser/PodcastCategory.cpp:318 CoverManager.cpp:564
+#: playlistbrowser/PodcastCategory.cpp:321 CoverManager.cpp:564
 msgid "&Append to Playlist"
 msgid_plural "&Append Selected Albums to Playlist"
 msgstr[0] "प्ले सूचीमा थप्नुहोस् चयनगरीएको एल्बम थप्नुहोस्"
@@ -2715,7 +2716,6 @@ msgstr "डाइरेक्टरी प्रविष्ट गर्न स
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 55
 #: mediadevice/ifp/ifpmediadevice.cpp:655 rc.cpp:1808
-#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:96
 #: servicebrowser/jamendo/jamendoservice.cpp:96
 msgid "Download"
 msgstr "डाउनलोड गर्नुहोस्"
@@ -3046,7 +3046,7 @@ msgstr "कम्प्युटर हटाउनुहोस्"
 #: mediadevice/ipod/ipodmediadevice.cpp:2236
 #: mediadevice/generic/genericmediadevice.cpp:937
 #: collectionbrowser/CollectionTreeView.cpp:133
-#: playlistbrowser/PodcastCategory.cpp:317
+#: playlistbrowser/PodcastCategory.cpp:320
 msgid "&Load"
 msgstr "लोड गर्नुहोस्"
 
@@ -10743,6 +10743,7 @@ msgid "Purchase Album"
 msgstr "एल्बम खरीद गर्नुहोस्"
 
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:183
+#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:92
 #: servicebrowser/jamendo/jamendoservice.cpp:89
 msgid "Update"
 msgstr "अद्यावधिक गर्नुहोस्"
@@ -10772,15 +10773,20 @@ msgstr "एल्बम डाउनलोड गर्दै"
 msgid "Adding album cover to collection"
 msgstr "सङ्कलनमा एल्बम आवरण थप्दै"
 
-#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:68
+#: servicebrowser/opmldirectory/OpmlDirectoryXmlParser.cpp:63
+#, kde-format
+msgid "OpmlDirectory update complete. Added %1 feeds in %2 categories"
+msgstr ""
+
+#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:71
 msgid "A large listing of podcasts"
 msgstr ""
 
-#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:89
+#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:99
 msgid "Subscribe"
 msgstr ""
 
-#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:150
+#: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:153
 #, fuzzy
 #| msgid "Downloading Jamendo.com Database"
 msgid "Downloading OpmlDirectory Database"
@@ -10932,11 +10938,11 @@ msgstr ""
 msgid "Downloading Jamendo.com Database"
 msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
 
-#: playlistbrowser/PodcastModel.cpp:250
+#: playlistbrowser/PodcastModel.cpp:248
 msgid "Enter Podcast URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
 
-#: playlistbrowser/PodcastCategory.cpp:324
+#: playlistbrowser/PodcastCategory.cpp:327
 msgid "&Refresh"
 msgstr ""
 
