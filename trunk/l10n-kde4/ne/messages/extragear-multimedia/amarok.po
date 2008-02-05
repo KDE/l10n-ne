@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-04 11:36+0100\n"
+"POT-Creation-Date: 2008-02-05 10:25+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1451,7 +1451,7 @@ msgstr "हालको प्ले सूची"
 msgid "My Playlists"
 msgstr "प्ले सूची"
 
-#: playlistmanager/PlaylistManager.cpp:193 podcasts/PodcastCollection.h:95
+#: playlistmanager/PlaylistManager.cpp:193 podcasts/PodcastCollection.h:105
 #: mediadevice/ipod/ipodmediadevice.cpp:1418
 msgid "Podcasts"
 msgstr "पोडकास्ट"
@@ -1518,9 +1518,19 @@ msgstr ""
 "स्थापना भएको छैन</li><li>कुनै libvisual प्लगइनहरू स्थापना गरिएको छैन</li></ul>कृपया "
 "यी सम्भाव्यताहरू जाँच गर्नुहोस् र अमारोक पुन: सुरूआत गर्नुहोस् ।</div>"
 
-#: podcasts/PodcastCollection.h:53 podcasts/PodcastCollection.h:93
+#: podcasts/PodcastCollection.cpp:172
+msgid "Downloading Podcast Media"
+msgstr "पोडकास्ट मिडिया डाउनलोड गर्दै"
+
+#: podcasts/PodcastCollection.cpp:173
+#, kde-format
+msgid "Downloading Podcast \"%1\""
+msgstr "पोडकास्ट \"%1\" डाउनलोड गर्दै"
+
+#: podcasts/PodcastCollection.h:54 podcasts/PodcastCollection.h:103
 #: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:244
-#: playlistbrowser/PodcastModel.cpp:243 playlistbrowser/PodcastModel.cpp:317
+#: playlistbrowser/PodcastModel.cpp:243 playlistbrowser/PodcastModel.cpp:318
+#: playlistbrowser/PodcastModel.cpp:352
 #, fuzzy
 #| msgid "Podcasts"
 msgid "Local Podcasts"
@@ -5477,7 +5487,7 @@ msgstr "थप्नुहोस् र प्ले गर्नुहोस्
 #. i18n: tag string
 #. i18n: file ./tagdialogbase.ui line 93
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 43
+#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 36
 #: systray.cpp:106 rc.cpp:318 rc.cpp:1565 rc.cpp:1658
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
@@ -8137,70 +8147,71 @@ msgid "If checked, overwrite files of the same name without asking."
 msgstr "यदि जाँच गरियो भने, नसोधिकन उही नामको फाइल अधिलेखन गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 16
+#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 13
 #: rc.cpp:1649
 msgid "Redownload manager"
 msgstr "प्रबन्धक पुन: डाउनलोड गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 27
+#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 19
 #: rc.cpp:1652
 msgid "These are the albums that you have previously downloaded:"
 msgstr "यी तपाईँले पहिल्यै डाउनलोड गर्नुभएका एल्बमहरू हुन्:"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 35
+#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 29
 #: rc.cpp:1655
 msgid "Re&download"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 66
+#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 60
 #: rc.cpp:1661
 msgid "Artist - Album"
 msgstr "कलाकार - एल्बम"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 16
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 13
 #: rc.cpp:1664
 msgid "Magnatune.com Album Download"
 msgstr "Magnatune.com एल्बम डाउनलोड"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 27
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 19
 #: rc.cpp:1667 servicebrowser/magnatunestore/MagnatuneMeta.cpp:190
 #: servicebrowser/magnatunestore/MagnatuneMeta.cpp:330
 #: servicebrowser/mp3tunes/Mp3tunesMeta.cpp:59
 #: servicebrowser/jamendo/JamendoMeta.cpp:114
+#: playlistbrowser/PodcastCategory.cpp:335
 msgid "&Download"
 msgstr "डाउनलोड"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 35
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 26
 #: rc.cpp:1670
 msgid "Magnatune info"
 msgstr "म्यागनाटुन सूचना"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 56
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 42
 #: rc.cpp:1673
 msgid "Download options"
 msgstr "विकल्प डाउनलोड गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 77
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 48
 #: rc.cpp:1676
 msgid "Select Format:"
 msgstr "ढाँचा चयन गर्नुहोस्:"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 85
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 61
 #: rc.cpp:1679
 msgid "Download to:"
 msgstr "यसमा डाउनलोड गर्नुहोस्:"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 93
+#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 74
 #: rc.cpp:1682
 msgid ""
 "If you download to a location that is already being monitored by Amarok, the "
@@ -10697,16 +10708,22 @@ msgstr ""
 "Magnatune.com डाटाबेसले पूरा अद्यावधिक गर्यो । %3 कलाकारबाट %2 एल्बममा %1 ट्रयाकहरू "
 "थपियो"
 
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:107
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:129
+#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:86
+#, fuzzy
+#| msgid "Processing Payment"
+msgid "Processing download"
+msgstr "भुक्तानी प्रक्रिया गर्दै"
+
+#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:134
+#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:156
 msgid "Processing Payment"
 msgstr "भुक्तानी प्रक्रिया गर्दै"
 
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:190
+#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:223
 msgid "check the gift card code"
 msgstr ""
 
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:192
+#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:225
 #, fuzzy
 #| msgid "Fetching Wikipedia Information"
 msgid "check the credit card information"
@@ -10732,31 +10749,37 @@ msgstr "त्यहाँ चयन गरिएको पुन: डाउन�
 msgid "The friendly record company with the motto \"We are not evil!\""
 msgstr ""
 
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:169
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:172
 #, fuzzy
 #| msgid "Re&download"
 msgid "Redownload"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:175
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:181
+#, fuzzy
+#| msgid "Downloading album"
+msgid "Download Album"
+msgstr "एल्बम डाउनलोड गर्दै"
+
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:183
 msgid "Purchase Album"
 msgstr "एल्बम खरीद गर्नुहोस्"
 
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:183
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:192
 #: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:92
 #: servicebrowser/jamendo/jamendoservice.cpp:89
 msgid "Update"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:189
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:198
 msgid "Show Info"
 msgstr "सूचना देखाउनुहोस्"
 
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:229
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:238
 msgid "Downloading Magnatune.com Database"
 msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
 
-#: servicebrowser/magnatunestore/MagnatuneStore.cpp:439
+#: servicebrowser/magnatunestore/MagnatuneStore.cpp:448
 msgid ""
 "Welcome to Amarok's integrated Magnatune.com store. If this is the first "
 "time you run it, you must update the database by pressing the 'Update' "
@@ -10942,7 +10965,7 @@ msgstr "Magnatune.com डाटाबेस डाउनलोड गर्द�
 msgid "Enter Podcast URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
 
-#: playlistbrowser/PodcastCategory.cpp:327
+#: playlistbrowser/PodcastCategory.cpp:329
 msgid "&Refresh"
 msgstr ""
 
@@ -12985,12 +13008,6 @@ msgstr "सङ्कलन निर्माण गर्नुहोस्..."
 
 #~ msgid "Mark as &New"
 #~ msgstr "नयाँको रूपम चिन्ह लगाउनुहोस्"
-
-#~ msgid "Downloading Podcast Media"
-#~ msgstr "पोडकास्ट मिडिया डाउनलोड गर्दै"
-
-#~ msgid "Downloading Podcast \"%1\""
-#~ msgstr "पोडकास्ट \"%1\" डाउनलोड गर्दै"
 
 #~ msgid "Media download aborted, unable to connect to server."
 #~ msgstr "मिडिया डाउनलोड परित्याग गरियो, सर्भरमा जडान गर्न असक्षम भयो ।"
