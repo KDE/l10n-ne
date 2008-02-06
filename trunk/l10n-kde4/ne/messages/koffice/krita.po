@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-04 11:34+0100\n"
+"POT-Creation-Date: 2008-02-06 10:37+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -97,7 +97,7 @@ msgstr "गहिरो समुद्र"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/colorspaceconversion/wdgconvertcolorspace.ui line 45
-#: i18ndata:20 rc.cpp:1540 image/kis_bookmarked_configuration_manager.cc:40
+#: i18ndata:20 rc.cpp:1540 image/kis_bookmarked_configuration_manager.cc:36
 msgid "Default"
 msgstr "पुर्वनिर्धारित"
 
@@ -1711,7 +1711,7 @@ msgstr "दायाँ:"
 
 #. i18n: tag string
 #. i18n: file ./ui/wdgautogradient.ui line 319
-#: rc.cpp:410 plugins/tools/defaulttools/kis_tool_gradient.cc:347
+#: rc.cpp:410
 msgid "Linear"
 msgstr "रेखात्मक"
 
@@ -2360,7 +2360,7 @@ msgstr "वृत्त"
 
 #. i18n: tag string
 #. i18n: file ./ui/wdgautobrush.ui line 273
-#: rc.cpp:734 plugins/tools/defaulttools/kis_tool_gradient.cc:350
+#: rc.cpp:734
 msgid "Square"
 msgstr "वर्ग"
 
@@ -2492,9 +2492,13 @@ msgstr "प्रक्षेपण थ्रेड सङ्ख्या:"
 #. i18n: tag string
 #. i18n: file ./ui/wdgperformancesettings.ui line 192
 #: rc.cpp:793
+#, fuzzy
+#| msgid ""
+#| "If checked, the whole canvas is repainted for every change. This is "
+#| "slower, but the bugs in the scaling code don't show up."
 msgid ""
 "If checked, the whole canvas is repainted for every change. This is slower, "
-"but the bugs in the scaling code don't show up."
+"but the bugs in the scaling code don not show up."
 msgstr ""
 "यदि जाँच गरिएमा, प्रत्येक परिवर्तनमा पूरै क्यानाभास पुन: पेन्ट हुन्छ ।यो ढिलो हुन्छ तर बग "
 "मापन सङ्केतमा नदेखाउनुहोस् ।"
@@ -2871,7 +2875,7 @@ msgstr "Y सार्नुहोस्:"
 
 #. i18n: tag string
 #. i18n: file ./ui/wdgbirdeye.ui line 24
-#: rc.cpp:970 ui/kis_birdeye_box.cc:185
+#: rc.cpp:970 ui/kis_birdeye_box.cc:184
 msgid "Overview"
 msgstr "समिक्षा"
 
@@ -2900,7 +2904,7 @@ msgstr "W: 88% V: 888 PC: 88%"
 #. i18n: file ./plugins/tools/tool_crop/wdg_tool_crop.ui line 16
 #: rc.cpp:998 image/kis_crop_visitor.h:72
 #: plugins/tools/tool_crop/kis_tool_crop.h:139
-#: plugins/tools/tool_crop/kis_tool_crop.cc:441
+#: plugins/tools/tool_crop/kis_tool_crop.cc:440
 msgid "Crop"
 msgstr "काँटछाँट गर्नुहोस्"
 
@@ -4731,7 +4735,6 @@ msgstr "लाभ नियन्त्रण:"
 #: rc.cpp:2107 ui/kis_dlg_preferences.cc:460 ui/kis_dlg_preferences.cc:461
 #: ui/kis_dlg_preferences.cc:462 ui/kis_dlg_preferences.cc:463
 #: ui/kis_dlg_preferences.cc:464 ui/kis_dlg_preferences.cc:465
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:357
 msgid "None"
 msgstr "कुनै पनि होइन"
 
@@ -5966,7 +5969,7 @@ msgstr "मौलिक: "
 msgid "Preview (needs update)"
 msgstr "पूर्वावलोकन (अद्यावधिक आवश्यक)"
 
-#: ui/kis_bookmarked_configurations_editor.cc:68
+#: ui/kis_bookmarked_configurations_editor.cc:64
 #, fuzzy, kde-format
 #| msgid "Configuration"
 msgid "New configuration %1"
@@ -6223,7 +6226,7 @@ msgstr "दर्पण खण्ड"
 msgid "Remove Segment"
 msgstr "खण्ड हटाउनुहोस्"
 
-#: ui/kis_birdeye_box.cc:213
+#: ui/kis_birdeye_box.cc:212
 msgid "Exposure:"
 msgstr "प्रर्दशन:"
 
@@ -6261,7 +6264,6 @@ msgid "&Remove"
 msgstr "हटाउनुहोस्"
 
 #: ui/kis_layer_manager.cc:168
-#: plugins/paintops/defaultpaintops/kis_duplicateop.h:46
 msgid "Duplicate"
 msgstr "नक्कल गर्नुहोस्"
 
@@ -6838,7 +6840,7 @@ msgstr "छवि मापन गर्नुहोस्"
 msgid "Merge with Layer Below"
 msgstr "तलतिर तहसँग गाभ्नुहोस्"
 
-#: image/kis_bookmarked_configuration_manager.cc:41
+#: image/kis_bookmarked_configuration_manager.cc:37
 msgid "Last used"
 msgstr "अन्तिम प्रयोग गरिएको"
 
@@ -7064,12 +7066,16 @@ msgid "Draw a star with the current brush"
 msgstr "हालको ब्रुससँग तारा कोर्नुहोस्"
 
 #: plugins/tools/defaulttools/kis_tool_line.h:80
-#: plugins/tools/defaulttools/kis_tool_line.cc:136
+#, fuzzy
+#| msgid "Line"
+msgctxt "straigh line drawing tool"
 msgid "Line"
 msgstr "रेखा"
 
 #: plugins/tools/defaulttools/kis_tool_line.h:82
-msgid "Draw a line with the current brush"
+#, fuzzy
+#| msgid "Draw a line with the current brush"
+msgid "Draw a straight line with the current brush"
 msgstr "हालको ब्रुससँग रेखा कोर्नुहोस्"
 
 #: plugins/tools/defaulttools/kis_tool_path.h:48
@@ -7085,7 +7091,7 @@ msgid "Draw a path."
 msgstr "ग्रेडियन्ट कोर्नुहोस्"
 
 #: plugins/tools/defaulttools/kis_tool_measure.cc:49
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:764
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:763
 msgid "Distance: "
 msgstr "दुरि: "
 
@@ -7093,8 +7099,8 @@ msgstr "दुरि: "
 msgid "Angle: "
 msgstr "कोण: "
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:153
-#: plugins/tools/defaulttools/kis_tool_ellipse.h:75
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:154
+#: plugins/tools/defaulttools/kis_tool_ellipse.h:72
 msgid "Ellipse"
 msgstr "दीर्घवृत्त"
 
@@ -7107,13 +7113,22 @@ msgid "Paint incrementally"
 msgstr "बढोत्तरित रुपमा रङ्गाउनुहोस्"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:157
-#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cc:250
+#, fuzzy
+#| msgid "Smooth"
+msgctxt "smooth out the curves while drawing"
 msgid "Smooth"
 msgstr "महीन"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:162
 msgid "Smoothness:"
 msgstr "महीनता:"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:136
+#, fuzzy
+#| msgid "Line"
+msgctxt "a straight drawn line"
+msgid "Line"
+msgstr "रेखा"
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:222
 msgid ""
@@ -7177,7 +7192,7 @@ msgid ""
 "the selected area"
 msgstr "जाँच गर्दा हालको तह रङमा नहेर्नुहोस् तर चयन गरिएको सबै क्षेत्रमा भर्नुहोस्"
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.h:77
+#: plugins/tools/defaulttools/kis_tool_ellipse.h:74
 msgid "Draw an ellipse"
 msgstr "दीर्घवृत्त कोर्नुहोस्"
 
@@ -7196,30 +7211,72 @@ msgid "Repeat:"
 msgstr "पुनरावृत्ति:"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:340
+#, fuzzy
+#| msgid "Reverse"
+msgctxt "the gradient will be drawn with the color order reversed"
 msgid "Reverse"
 msgstr "उल्टो"
 
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:347
+#, fuzzy
+#| msgid "Linear"
+msgctxt "the gradient will be drawn linearly"
+msgid "Linear"
+msgstr "रेखात्मक"
+
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:348
+#, fuzzy
+#| msgid "Bi-Linear"
+msgctxt "the gradient will be drawn bilinearly"
 msgid "Bi-Linear"
 msgstr "द्वि-रेखात्मक"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:349
+#, fuzzy
+#| msgid "Radial"
+msgctxt "the gradient will be drawn radially"
 msgid "Radial"
 msgstr "रेडिअल"
 
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:350
+#, fuzzy
+#| msgid "Square"
+msgctxt "the gradient will be drawn in a square around a centre"
+msgid "Square"
+msgstr "वर्ग"
+
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:351
+#, fuzzy
+#| msgid "Conical"
+msgctxt "the gradient will be drawn as an assymmetric cone"
 msgid "Conical"
 msgstr "कोनिकल"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:352
+#, fuzzy
+#| msgid "Conical Symmetric"
+msgctxt "the gradient will be drawn as a symmetric cone"
 msgid "Conical Symmetric"
 msgstr "कोनिकल सिमेट्रिक"
 
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:357
+#, fuzzy
+#| msgid "None"
+msgctxt "The gradient will not repeat"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:358
+#, fuzzy
+#| msgid "Forwards"
+msgctxt "The gradient will repeat forwards"
 msgid "Forwards"
 msgstr "अगाडि"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.cc:359
+#, fuzzy
+#| msgid "Alternating"
+msgctxt "The gradient will repeat alternatingly"
 msgid "Alternating"
 msgstr "एकान्तरण"
 
@@ -7248,8 +7305,8 @@ msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr "रङको निकटवर्ति क्षेत्र रङसँग भर्नुहोस्, वा चयन भर्नुहोस् ।"
 
 #: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.h:111
-#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:87
-#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:133
+#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:86
+#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:132
 msgid "Perspective Transform"
 msgstr "दृश्य रूपान्तरण"
 
@@ -7259,11 +7316,11 @@ msgstr "दृश्य रूपान्तरण"
 msgid "Transform the perspective appearance of a layer or a selection"
 msgstr "तह वा चयनको दृश्यात्मक देखावट3 रूपान्तरण गर्नुहोस्"
 
-#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:714
+#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:713
 msgid "&Perspective Transform"
 msgstr "दृश्य रूपान्तरण"
 
-#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:719
+#: plugins/tools/tool_perspectivetransform/kis_tool_perspectivetransform.cc:718
 msgid "Perspective transform a layer or a selection"
 msgstr "तह वा चयन दृश्य रूपान्तरण"
 
@@ -7322,32 +7379,32 @@ msgstr "उदाहरण बक्र उपकरण"
 msgid "Example tool for the curves framework"
 msgstr "वक्र फ्रेमवर्कका लागि उदाहरण उपकरण"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:559
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:558
 #: plugins/tools/tool_curves/kis_tool_moutline.h:118
 msgid "Magnetic Outline Selection"
 msgstr "चुम्बकिय रूपरेखा चयन"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:593
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:592
 msgid "Automatic Mode"
 msgstr "स्वचालित मोड"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:596
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:595
 msgid "Manual Mode"
 msgstr "म्यानुअल मोड"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:763
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:762
 msgid "Automatic mode"
 msgstr "स्वचालित मोड"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:765
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:764
 msgid "To Selection"
 msgstr "चयनमा"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:785
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:784
 msgid "&Magnetic Outline Selection"
 msgstr "चुम्बकिय रूपरेखा चयन"
 
-#: plugins/tools/tool_curves/kis_tool_moutline.cc:790
+#: plugins/tools/tool_curves/kis_tool_moutline.cc:789
 #: plugins/tools/tool_curves/kis_tool_moutline.h:120
 msgid ""
 "Magnetic Selection: move around an edge to select it. Hit Ctrl to enter/quit "
@@ -7356,15 +7413,15 @@ msgstr ""
 "चुम्बकिय चयन: यसलाई चयन गर्न किनारा वरिपरि घुमाउनुहोस् । म्यानुअल मोड प्रविष्ट/अन्त्य "
 "गर्न Ctrl थिच्नुहोस्, र समाप्त गर्न डबल क्लिक गर्नुहोस् ।"
 
-#: plugins/tools/tool_curves/kis_tool_example.cc:72
+#: plugins/tools/tool_curves/kis_tool_example.cc:66
 msgid "Tool for Curves - Example"
 msgstr "बक्रका लागि उपकरण - उदाहरण"
 
-#: plugins/tools/tool_curves/kis_tool_example.cc:92
+#: plugins/tools/tool_curves/kis_tool_example.cc:86
 msgid "&Example Tool"
 msgstr "उदाहरण उपकरण"
 
-#: plugins/tools/tool_curves/kis_tool_example.cc:97
+#: plugins/tools/tool_curves/kis_tool_example.cc:91
 msgid "This is a test tool for the Curve Framework."
 msgstr "वक्र फ्रेमवर्कका लागि यो परीक्षण उपकरण हो ।"
 
@@ -7393,7 +7450,7 @@ msgstr "बक्रसँग चयन गर्नुहोस्"
 msgid "Select an area of the image with curves"
 msgstr "बक्रसँग छविको क्षेत्र चयन गर्नुहोस्"
 
-#: plugins/tools/tool_curves/kis_tool_bezier.cc:292
+#: plugins/tools/tool_curves/kis_tool_bezier.cc:293
 msgid "Bezier Curve"
 msgstr "बेजियर बक्र"
 
@@ -7608,6 +7665,13 @@ msgstr ""
 msgid "Pixel Pencil"
 msgstr "पिक्सेल सिसाकलम"
 
+#: plugins/paintops/defaultpaintops/kis_duplicateop.h:46
+#, fuzzy
+#| msgid "Duplicate"
+msgctxt "duplicate paintbrush"
+msgid "Duplicate"
+msgstr "नक्कल गर्नुहोस्"
+
 #: plugins/paintops/dynamicbrush/lib/kis_dynamic_sensor.h:35
 msgid "Fuzzy"
 msgstr "फज्जी"
@@ -7788,7 +7852,7 @@ msgstr "यसबाट हालको तह रूपान्तरण ग�
 msgid "Small Color Selector"
 msgstr "उस्तै चयन"
 
-#: plugins/viewplugins/filtersgallery/filters_gallery.cc:65
+#: plugins/viewplugins/filtersgallery/filters_gallery.cc:64
 msgid "&Filters Gallery"
 msgstr "फिल्टर ग्यालेरी"
 
@@ -7857,12 +7921,12 @@ msgid "Add Drop Shadow..."
 msgstr "ड्रप छायाँ थप्नुहोस्..."
 
 #: plugins/viewplugins/dropshadow/kis_dropshadow_plugin.cc:78
-#: plugins/viewplugins/dropshadow/kis_dropshadow.cc:126
+#: plugins/viewplugins/dropshadow/kis_dropshadow.cc:134
 #: plugins/viewplugins/dropshadow/dlg_dropshadow.cc:42
 msgid "Drop Shadow"
 msgstr "ड्रप छायाँ"
 
-#: plugins/viewplugins/dropshadow/kis_dropshadow.cc:81
+#: plugins/viewplugins/dropshadow/kis_dropshadow.cc:89
 msgid "Add Drop Shadow"
 msgstr "ड्रप छायाँ थप्नुहोस्"
 
@@ -7879,27 +7943,46 @@ msgid "&Rotate Image..."
 msgstr "छवि घुमाउनुहोस्..."
 
 #: plugins/viewplugins/rotateimage/rotateimage.cc:69
-#: plugins/viewplugins/rotateimage/rotateimage.cc:89
 #, fuzzy
 #| msgid "Right"
+msgctxt "rotate image 90 degrees to the right"
 msgid "Right 90°"
 msgstr "दायाँ"
 
 #: plugins/viewplugins/rotateimage/rotateimage.cc:73
-#: plugins/viewplugins/rotateimage/rotateimage.cc:85
+msgctxt "rotate image 180 degrees to the right"
 msgid "1&80°"
 msgstr ""
 
 #: plugins/viewplugins/rotateimage/rotateimage.cc:77
-#: plugins/viewplugins/rotateimage/rotateimage.cc:93
 #, fuzzy
 #| msgid "Left"
+msgctxt "rotate image 90 degrees to the left"
 msgid "Left 90°"
 msgstr "बायाँ"
 
 #: plugins/viewplugins/rotateimage/rotateimage.cc:81
 msgid "&Rotate Layer..."
 msgstr "तह घुमाउनुहोस्..."
+
+#: plugins/viewplugins/rotateimage/rotateimage.cc:85
+msgctxt "rotate the layer 180 degrees"
+msgid "1&80°"
+msgstr ""
+
+#: plugins/viewplugins/rotateimage/rotateimage.cc:89
+#, fuzzy
+#| msgid "Right"
+msgctxt "rotate the layer 90 degrees to the right"
+msgid "Right 90°"
+msgstr "दायाँ"
+
+#: plugins/viewplugins/rotateimage/rotateimage.cc:93
+#, fuzzy
+#| msgid "Left"
+msgctxt "rotate the layer 90 degrees to the left"
+msgid "Left 90°"
+msgstr "बायाँ"
 
 #: plugins/viewplugins/specificcolorselector/kis_color_input.cc:41
 #, fuzzy, kde-format
@@ -8017,11 +8100,11 @@ msgstr "छवि पुन:भण्डारण (cimg-आधारित)"
 msgid "&Cubism..."
 msgstr "क्युविजम..."
 
-#: plugins/filters/cubismfilter/kis_cubism_filter.cc:459
+#: plugins/filters/cubismfilter/kis_cubism_filter.cc:472
 msgid "Tile size"
 msgstr "टायल साइज"
 
-#: plugins/filters/cubismfilter/kis_cubism_filter.cc:460
+#: plugins/filters/cubismfilter/kis_cubism_filter.cc:473
 msgid "Tile saturation"
 msgstr "टायल संतृप्ति"
 
@@ -8130,15 +8213,15 @@ msgstr "अनियमित होहल्ला..."
 msgid "&Raindrops..."
 msgstr "वर्षा..."
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cc:423
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cc:425
 msgid "Drop size"
 msgstr "साइज छोड्नुहोस्"
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cc:424
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cc:426
 msgid "Number"
 msgstr "सङ्ख्या"
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cc:425
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cc:427
 msgid "Fish eyes"
 msgstr "मिनाक्षी"
 
@@ -8298,11 +8381,18 @@ msgstr "वाइल पेन्ट..."
 msgid "Brush size"
 msgstr "ब्रुस साइज"
 
-#: plugins/filters/embossfilter/kis_emboss_filter.cc:56
+#: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cc:250
+#, fuzzy
+#| msgid "Smooth"
+msgctxt "smooth out the painting strokes the filter creates"
+msgid "Smooth"
+msgstr "महीन"
+
+#: plugins/filters/embossfilter/kis_emboss_filter.cc:55
 msgid "&Emboss with Variable Depth..."
 msgstr "चल गहिराइसँग अलंकृत गर्नुहोस्..."
 
-#: plugins/filters/embossfilter/kis_emboss_filter.cc:177
+#: plugins/filters/embossfilter/kis_emboss_filter.cc:176
 msgid "Depth"
 msgstr "गहिराइ"
 
@@ -8316,15 +8406,15 @@ msgstr "चल गहिराइसँग अलंकृत गर्नुह
 msgid "Pixelize"
 msgstr "पिक्सेल बनाउनुहोस्"
 
-#: plugins/filters/pixelizefilter/kis_pixelize_filter.cc:58
+#: plugins/filters/pixelizefilter/kis_pixelize_filter.cc:57
 msgid "&Pixelize..."
 msgstr "पिक्सेल बनाउनुहोस्..."
 
-#: plugins/filters/pixelizefilter/kis_pixelize_filter.cc:172
+#: plugins/filters/pixelizefilter/kis_pixelize_filter.cc:171
 msgid "Pixel width"
 msgstr "पिक्सेल चौडाइ"
 
-#: plugins/filters/pixelizefilter/kis_pixelize_filter.cc:173
+#: plugins/filters/pixelizefilter/kis_pixelize_filter.cc:172
 msgid "Pixel height"
 msgstr "पिक्सेल उचाइ"
 

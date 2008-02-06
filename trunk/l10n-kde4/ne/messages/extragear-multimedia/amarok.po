@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-05 10:25+0100\n"
+"POT-Creation-Date: 2008-02-06 10:38+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -738,7 +738,7 @@ msgstr "यन्त्रहरू र प्लगइनहरू प्रब
 msgid "Add Device..."
 msgstr "यन्त्र थप्नुहोस्..."
 
-#: configdialog/dialogs/OsdConfig.cpp:62
+#: configdialog/dialogs/OsdConfig.cpp:64
 #, kde-format
 msgid ""
 "<h3>Tags Displayed in OSD</h3>You can use the following tokens:<ul><li>Title "
@@ -1604,7 +1604,7 @@ msgstr "ट्रयाक"
 msgid "&Album"
 msgstr "एल्बम"
 
-#: actionclasses.cpp:359 MainWindow.cpp:1015
+#: actionclasses.cpp:359 MainWindow.cpp:1026
 msgid "&Playlist"
 msgstr "प्ले सूची"
 
@@ -1873,7 +1873,7 @@ msgstr ""
 #: mediadevice/ipod/ipodmediadevice.cpp:2237
 #: mediadevice/generic/genericmediadevice.cpp:938 systray.cpp:100
 #: collectionbrowser/CollectionTreeView.cpp:134
-#: playlistbrowser/PodcastCategory.cpp:321 CoverManager.cpp:564
+#: playlistbrowser/PodcastCategory.cpp:317 CoverManager.cpp:564
 msgid "&Append to Playlist"
 msgid_plural "&Append Selected Albums to Playlist"
 msgstr[0] "प्ले सूचीमा थप्नुहोस् चयनगरीएको एल्बम थप्नुहोस्"
@@ -3056,7 +3056,7 @@ msgstr "कम्प्युटर हटाउनुहोस्"
 #: mediadevice/ipod/ipodmediadevice.cpp:2236
 #: mediadevice/generic/genericmediadevice.cpp:937
 #: collectionbrowser/CollectionTreeView.cpp:133
-#: playlistbrowser/PodcastCategory.cpp:320
+#: playlistbrowser/PodcastCategory.cpp:316
 msgid "&Load"
 msgstr "लोड गर्नुहोस्"
 
@@ -3637,19 +3637,25 @@ msgstr "पछिल्लो ट्रयाक"
 msgid "Toggle Focus"
 msgstr "फोकस टगल गर्नुहोस्"
 
-#: MainWindow.cpp:1000
+#: MainWindow.cpp:1006
+#, fuzzy
+#| msgid "Engine"
+msgid "&Engage"
+msgstr "इन्जिन"
+
+#: MainWindow.cpp:1008
 msgid "&Amarok"
 msgstr "अमारोक"
 
-#: MainWindow.cpp:1038
+#: MainWindow.cpp:1049
 msgid "&Mode"
 msgstr "मोड"
 
-#: MainWindow.cpp:1050
+#: MainWindow.cpp:1061
 msgid "&Tools"
 msgstr "उपकरण"
 
-#: MainWindow.cpp:1071
+#: MainWindow.cpp:1082
 msgid "&Settings"
 msgstr "सेटिङ"
 
@@ -3975,7 +3981,7 @@ msgstr "चेतावनी"
 msgid "Buffering"
 msgstr "बफरिङ"
 
-#: engine/helix/helix-errors.cpp:67 app.cpp:768
+#: engine/helix/helix-errors.cpp:67 app.cpp:765
 msgid "Paused"
 msgstr "पज गरियो"
 
@@ -6442,7 +6448,7 @@ msgstr "चलाउनुहोस्"
 #. i18n: file scriptmanagerbase.ui line 105
 #. i18n: tag string
 #. i18n: file ./scriptmanagerbase.ui line 105
-#: rc.cpp:297 rc.cpp:968
+#: rc.cpp:297 rc.cpp:968 playlistbrowser/PodcastCategory.cpp:81
 msgid "&Configure"
 msgstr "कन्फिगर गर्नुहोस्..."
 
@@ -6948,7 +6954,7 @@ msgstr "मिलिसेकेन्डमा, ट्रयाकहरू ब
 #. i18n: tag string
 #. i18n: file ./configdialog/dialogs/PlaybackConfig.ui line 450
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 311
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 284
 #: rc.cpp:541 rc.cpp:559 rc.cpp:608 rc.cpp:821
 msgid " ms"
 msgstr " मिलि सेन्टिमिटर"
@@ -7358,7 +7364,7 @@ msgid "Manually sa&ved playlists use relative path"
 msgstr "म्यानुअल तरीकाले बचत गरिएको प्लेसूचीहरूले सापेक्षिक मार्ग प्रयोग गर्दछ"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 28
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 19
 #: rc.cpp:755
 msgid ""
 "Check to enable the On-Screen-Display. <br>The OSD briefly displays track "
@@ -7368,7 +7374,7 @@ msgstr ""
 "डेटा प्रदर्शन गर्दछ ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 31
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 22
 #: rc.cpp:758
 msgid ""
 "Check to enable the On-Screen-Display. The OSD briefly displays track data "
@@ -7378,99 +7384,101 @@ msgstr ""
 "डेटा प्रदर्शन गर्दछ ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 34
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 25
 #: rc.cpp:761
 msgid "&Use On-Screen-Display"
 msgstr "पर्दा प्रदर्शनमा प्रयोग गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 83
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 65
 #: rc.cpp:764
 msgid "&Font"
 msgstr "फन्ट"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 101
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 83
 #: rc.cpp:767
 msgid "Draw &shadow"
 msgstr "छायाँ कोर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 111
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 93
 #: rc.cpp:770
 msgid "C&olors"
 msgstr "रङ"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 122
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 104
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 125
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 107
 #: rc.cpp:773 rc.cpp:776
 msgid "Check to enable custom colors for the On-Screen-Display."
 msgstr "पर्दा प्रदर्शनका लागि अनुकूल रङहरू सक्षम पार्न जाँच गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 128
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 110
 #: rc.cpp:779
 msgid "Use &custom colors"
 msgstr "अनुकूल रङ प्रयोग गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 170
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 143
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 221
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 194
 #: rc.cpp:782 rc.cpp:797
 msgid "The color of the OSD background."
 msgstr "ओएसडी पृष्ठभूमिको रङ ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 176
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 149
 #: rc.cpp:785
 msgid "Background color:"
 msgstr "पृष्ठभूमि रङ:"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 192
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 165
 #: rc.cpp:788
 msgid "Click to select the color of the OSD text."
 msgstr "ओएसडी पाठको रङ चयन गर्न क्लिक गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 195
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 168
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 244
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 217
 #: rc.cpp:791 rc.cpp:800
 msgid "The color of the OSD text."
 msgstr "ओएसडी पाठको रङ ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 218
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 191
 #: rc.cpp:794
 msgid "Click to select the background color of the OSD."
 msgstr "ओएसडीको पृष्ठभूमि रङ चयन गर्न क्लिक गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 247
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 220
 #: rc.cpp:803
 msgid "Text color:"
 msgstr "पाठ रङ:"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 264
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 237
 #: rc.cpp:806
-msgid "Make the &background translucent"
+#, fuzzy
+#| msgid "Make the &background translucent"
+msgid "Make the &background transparent"
 msgstr "पृष्ठभूमिलाई पारदर्शक बनाउँनुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 280
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 253
 #: rc.cpp:809
 msgid "&Duration:"
 msgstr "अवधि:"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 299
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 272
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 302
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 275
 #: rc.cpp:812 rc.cpp:815
 msgid ""
 "The time in milliseconds to show the OSD. The value must be between 500 ms "
@@ -7480,21 +7488,21 @@ msgstr ""
 "बीचमा हुनुपर्छ ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 308
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 281
 #: rc.cpp:818
 msgid "Forever"
 msgstr "सधैका लागि"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 336
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 309
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 339
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 312
 #: rc.cpp:824 rc.cpp:827
 msgid "The screen that should display the OSD."
 msgstr "ओएसडी प्रदर्शन गर्ने पर्दा ।"
 
 #. i18n: tag string
-#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 346
+#. i18n: file ./configdialog/dialogs/OsdConfig.ui line 319
 #: rc.cpp:830
 msgid "Sc&reen:"
 msgstr "पर्दा:"
@@ -8182,7 +8190,7 @@ msgstr "Magnatune.com एल्बम डाउनलोड"
 #: servicebrowser/magnatunestore/MagnatuneMeta.cpp:330
 #: servicebrowser/mp3tunes/Mp3tunesMeta.cpp:59
 #: servicebrowser/jamendo/JamendoMeta.cpp:114
-#: playlistbrowser/PodcastCategory.cpp:335
+#: playlistbrowser/PodcastCategory.cpp:331
 msgid "&Download"
 msgstr "डाउनलोड"
 
@@ -9569,7 +9577,7 @@ msgstr "ओएसडी पाठ वरिपरि छायाँ कोर�
 #: rc.cpp:2303
 #, fuzzy
 #| msgid "Fake-translucency Toggle"
-msgid "Translucency Toggle"
+msgid "Transparency Toggle"
 msgstr "जाली-पारभसकता टगल"
 
 #. i18n: tag whatsthis
@@ -9577,7 +9585,7 @@ msgstr "जाली-पारभसकता टगल"
 #: rc.cpp:2306
 #, fuzzy
 #| msgid "Make the background of the OSD use fake-translucency."
-msgid "Make the background of the OSD use Translucency."
+msgid "Make the background of the OSD transparent."
 msgstr "जाली-पारभासकता प्रयोग गर्ने ओएसडीको पृष्ठभूमि बनाउँनुहोस् ।"
 
 #. i18n: tag label
@@ -10625,22 +10633,22 @@ msgstr "हालको ट्रयाक: ४ अनुमान गर्न�
 msgid "Rate Current Track: 5"
 msgstr "हालको ट्रयाक: ५ अनुमान गर्नुहोस्"
 
-#: app.cpp:761
+#: app.cpp:758
 msgctxt "state, as in playing"
 msgid "Play"
 msgstr "प्ले गर्नुहोस्"
 
-#: app.cpp:764
+#: app.cpp:761
 #, kde-format
 msgid "Amarok - Pre-Alpha Software. Do NOT File bugs. - %1"
 msgstr ""
 
-#: app.cpp:786
+#: app.cpp:783
 #, kde-format
 msgid "Amarok - %1"
 msgstr "अमारोक - %1"
 
-#: app.cpp:879
+#: app.cpp:876
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
@@ -10965,7 +10973,19 @@ msgstr "Magnatune.com डाटाबेस डाउनलोड गर्द�
 msgid "Enter Podcast URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
 
-#: playlistbrowser/PodcastCategory.cpp:329
+#: playlistbrowser/PodcastCategory.cpp:70
+#, fuzzy
+#| msgid "Add Podcast"
+msgid "&Add Podcast"
+msgstr "पोडकास्ट थप्नुहोस्"
+
+#: playlistbrowser/PodcastCategory.cpp:75
+#, fuzzy
+#| msgid "Update"
+msgid "&Update All"
+msgstr "अद्यावधिक गर्नुहोस्"
+
+#: playlistbrowser/PodcastCategory.cpp:325
 msgid "&Refresh"
 msgstr ""
 
@@ -11180,15 +11200,15 @@ msgstr "मौन"
 msgid "Volume: 100%"
 msgstr "भोल्युम: १००%"
 
-#: osd.cpp:481
+#: osd.cpp:469
 msgid "OSD Preview - drag to reposition"
 msgstr "ओएसडी पूर्वावलोकन - पुन: स्थिति गर्न तान्नुहोस्"
 
-#: osd.cpp:591
+#: osd.cpp:579
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
-#: osd.cpp:611
+#: osd.cpp:599
 msgid "No information available for this track"
 msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
 
@@ -12246,9 +12266,6 @@ msgstr "सङ्कलन निर्माण गर्नुहोस्..."
 
 #~ msgid "50 Random Tracks"
 #~ msgstr "५० अनियमित ट्रयाक"
-
-#~ msgid "Add Podcast"
-#~ msgstr "पोडकास्ट थप्नुहोस्"
 
 #~| msgid "Playing: %1"
 #~ msgctxt "Podcasts contained in %1"
