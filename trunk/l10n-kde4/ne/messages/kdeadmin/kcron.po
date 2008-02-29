@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-27 15:05+0100\n"
+"POT-Creation-Date: 2008-02-29 14:37+0100\n"
 "PO-Revision-Date: 2007-08-23 17:05+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,22 +17,26 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: src/crontabWidget.cpp:129
+#: src/crontabWidget.cpp:138
 msgid "Show the following Cron:"
 msgstr ""
 
-#: src/crontabWidget.cpp:133
+#: src/crontabWidget.cpp:142
 msgid "Personal Cron"
 msgstr ""
 
-#: src/crontabWidget.cpp:138
+#: src/crontabWidget.cpp:147
 #, fuzzy
 #| msgid "(System Crontab)"
 msgid "System Cron"
 msgstr "(प्रणाली क्रोनट्याब)"
 
-#: src/crontabWidget.cpp:142
+#: src/crontabWidget.cpp:151
 msgid "Cron of User:"
+msgstr ""
+
+#: src/crontabWidget.cpp:174
+msgid "Show All Personal Crons"
 msgstr ""
 
 #: src/crontablib/cthost.cpp:53
@@ -47,87 +51,89 @@ msgstr ""
 "\n"
 "अरू विवरणका लागि क्रोनट्याब म्यानुअल पृष्ठ जाँच गर्नुहोस् ।"
 
-#: src/crontablib/cttask.cpp:231
+#: src/crontablib/cttask.cpp:233
 msgid "At system startup"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:238
+#: src/crontablib/cttask.cpp:240
 #, kde-format
 msgctxt "1:Time Description, 2:Date Description"
 msgid "%1, %2"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:242
+#: src/crontablib/cttask.cpp:244
 #, fuzzy, kde-format
 #| msgid "every day "
 msgctxt "Every 'days of week'"
 msgid "every %1"
 msgstr "प्रत्येक दिन"
 
-#: src/crontablib/cttask.cpp:246
+#: src/crontablib/cttask.cpp:248
 #, kde-format
 msgctxt "'Days of month' of 'Months'"
 msgid "%1 of %2"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:257 src/crontablib/ctdom.cpp:23
+#: src/crontablib/cttask.cpp:259 src/crontablib/ctdom.cpp:23
 #: src/crontablib/ctdow.cpp:44
 msgid "every day "
 msgstr "प्रत्येक दिन"
 
-#: src/crontablib/cttask.cpp:268
+#: src/crontablib/cttask.cpp:270
 #, kde-format
 msgctxt "1:Day of month, 2:Day of week"
 msgid "%1 as well as %2"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:298
+#: src/crontablib/cttask.cpp:300
 #, fuzzy, kde-format
 #| msgid "%H:%M"
 msgctxt "1:Hour, 2:Minute"
 msgid "%1:%2"
 msgstr "%H:%M"
 
-#: src/crontablib/cttask.cpp:307
+#: src/crontablib/cttask.cpp:309
 msgid ", and "
 msgstr ", र "
 
-#: src/crontablib/cttask.cpp:309 src/crontablib/ctunit.cpp:171
+#: src/crontablib/cttask.cpp:311 src/crontablib/ctunit.cpp:171
 msgid " and "
 msgstr " र "
 
-#: src/crontablib/cttask.cpp:312 src/crontablib/ctunit.cpp:174
+#: src/crontablib/cttask.cpp:314 src/crontablib/ctunit.cpp:174
 msgid ", "
 msgstr ", "
 
-#: src/crontablib/cttask.cpp:320
+#: src/crontablib/cttask.cpp:322
 #, kde-format
 msgctxt "Hour::Minute list"
 msgid "At %1"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:328
+#: src/crontablib/cttask.cpp:330
 #, fuzzy
 #| msgid "the minutes"
 msgid "Every minutes"
 msgstr "मिनेट"
 
-#: src/crontablib/cttask.cpp:330
+#: src/crontablib/cttask.cpp:332
 #, fuzzy, kde-format
 #| msgid "the minutes"
 msgid "Every %1 minutes"
 msgstr "मिनेट"
 
-#: src/crontablib/ctcron.cpp:124
-msgid "(System Crontab)"
+#: src/crontablib/ctcron.cpp:130 src/crontabPrinter.cpp:182
+#, fuzzy
+#| msgid "(System Crontab)"
+msgid "System Crontab"
 msgstr "(प्रणाली क्रोनट्याब)"
 
-#: src/crontablib/ctcron.cpp:186
+#: src/crontablib/ctcron.cpp:193
 #, kde-format
 msgid "No password entry found for uid '%1'"
 msgstr " '%1' यूआईडी का लागि पासवर्ड प्रविष्टि फेला परेन"
 
-#: src/crontablib/ctcron.cpp:333
+#: src/crontablib/ctcron.cpp:352
 msgid "An error occurred while updating crontab."
 msgstr "क्रोनट्याब अद्यावधिक गर्दा एउटा त्रुटि उत्पन्न भयो ।"
 
@@ -188,6 +194,12 @@ msgstr "नोभेम्बर"
 #: src/crontablib/ctmonth.cpp:33
 msgid "December"
 msgstr "डिसेम्बर"
+
+#: src/crontablib/ctGlobalCron.cpp:31
+#, fuzzy
+#| msgid "Print &all users"
+msgid "All users"
+msgstr "सबै प्रयोगकर्ता मुद्रण गर्नुहोस्"
 
 #: src/crontablib/ctunit.cpp:170
 msgid ","
@@ -379,56 +391,88 @@ msgstr "आइतबार"
 msgid "<b>Scheduled Tasks</b>"
 msgstr "निर्धारित कार्य"
 
-#: src/tasksWidget.cpp:87
-msgid "Modify Task"
-msgstr "कार्य परिमार्जन गर्नुहोस्"
-
-#: src/tasksWidget.cpp:133
+#: src/tasksWidget.cpp:89
 msgctxt "Do not use any quote characters (') in this string"
 msgid "End of script execution. Type Enter or Ctrl+C to exit."
 msgstr ""
 
-#: src/tasksWidget.cpp:166
+#: src/tasksWidget.cpp:122
 #, fuzzy
 #| msgid "Tasks"
 msgid "New Task"
 msgstr "कार्य"
 
-#: src/tasksWidget.cpp:211 src/crontabPrinter.cpp:135
-msgid "Scheduling"
-msgstr ""
+#: src/tasksWidget.cpp:153
+msgid "Modify Task"
+msgstr "कार्य परिमार्जन गर्नुहोस्"
 
-#: src/tasksWidget.cpp:214
+#: src/tasksWidget.cpp:202 src/variablesWidget.cpp:156
 msgid "User"
 msgstr ""
 
-#: src/tasksWidget.cpp:217 src/crontabPrinter.cpp:135
+#: src/tasksWidget.cpp:205 src/crontabPrinter.cpp:135
+msgid "Scheduling"
+msgstr ""
+
+#: src/tasksWidget.cpp:207 src/crontabPrinter.cpp:135
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Command"
 msgstr "कार्य परिमार्जन गर्नुहोस्"
 
-#: src/tasksWidget.cpp:218 src/variablesWidget.cpp:153
+#: src/tasksWidget.cpp:208 src/variablesWidget.cpp:161
 #, fuzzy
 #| msgid "Sat"
 msgid "Status"
 msgstr "शनिबार"
 
-#: src/tasksWidget.cpp:219 src/crontabPrinter.cpp:135
+#: src/tasksWidget.cpp:209 src/crontabPrinter.cpp:135
 msgid "Description"
 msgstr "वर्णन"
 
-#: src/tasksWidget.cpp:220
+#: src/tasksWidget.cpp:210
 #, fuzzy
 #| msgid "Scheduled Tasks"
 msgid "Scheduling Details"
 msgstr "निर्धारित कार्य"
 
-#: src/kcron.cpp:87 src/kcron.cpp:312
+#: src/kcmCron.cpp:104
 msgid "Task Scheduler"
 msgstr "कार्य अनुसूचक"
 
-#: src/kcron.cpp:115
+#: src/kcmCron.cpp:105
+msgid "KDE Task Scheduler"
+msgstr "केडीई कार्य अनुसूचक"
+
+#: src/kcmCron.cpp:105
+#, fuzzy
+#| msgid "(c) 1999-2000, Gary Meyer"
+msgid ""
+"(c) 2008, Nicolas Ternisien\n"
+"(c) 1999-2000, Gary Meyer"
+msgstr "(c) १९९९-२०००, गेरि मेयर"
+
+#: src/kcmCron.cpp:107
+msgid "Nicolas Ternisien"
+msgstr ""
+
+#: src/kcmCron.cpp:108
+msgid "Gary Meyer"
+msgstr "गेरि मेयर"
+
+#: src/kcmCron.cpp:109
+msgid "Robert Berry"
+msgstr "रोबर्ट बेरे"
+
+#: src/kcmCron.cpp:110
+msgid "James Ots"
+msgstr "जेम्स अट्स"
+
+#: src/kcmCron.cpp:111
+msgid "Alberto G. Hierro"
+msgstr "अल्बर्टो जी हिरेरो"
+
+#: src/kcmCron.cpp:184
 #, kde-format
 msgid ""
 "The following error occurred while initializing KCron:\n"
@@ -443,7 +487,7 @@ msgstr ""
 "\n"
 "केडीई क्रोन अब अन्त्य हुन्छ ।\n"
 
-#: src/kcron.cpp:130
+#: src/kcmCron.cpp:199
 msgid ""
 "You can use this application to schedule programs to run in the background.\n"
 "To schedule a new task now, click on the Tasks folder and select Edit/New "
@@ -453,44 +497,37 @@ msgstr ""
 "अहिले नयाँ कार्यको अनुसूची बनाउन, कार्य फोल्डरमा क्लिक गर्नुहोस् र मेनुबाट सम्पादन/नयाँ चयन "
 "गर्नुहोस् ।"
 
-#: src/kcron.cpp:130
+#: src/kcmCron.cpp:199
 msgid "Welcome to the Task Scheduler"
 msgstr "कार्य अनुसूचकमा स्वागत छ"
 
-#: src/kcron.cpp:166
+#: src/kcmCron.cpp:264
 #, fuzzy
 #| msgid "No tasks..."
 msgctxt "Adds a new task"
 msgid "New &Task..."
 msgstr "कार्य छैन..."
 
-#: src/kcron.cpp:171
+#: src/kcmCron.cpp:269
 #, fuzzy
 #| msgid "No variables..."
 msgctxt "Adds a new variable"
 msgid "New &Variable..."
 msgstr "चल छैन..."
 
-#: src/kcron.cpp:175
+#: src/kcmCron.cpp:273
 msgid "M&odify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
-#: src/kcron.cpp:181
+#: src/kcmCron.cpp:279
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
 
-#: src/kcron.cpp:187
+#: src/kcmCron.cpp:285
 msgid "&Run Now"
 msgstr "अहिले चलाउनुहोस्"
 
-#: src/kcron.cpp:244
-#, fuzzy
-#| msgid " Ready."
-msgctxt "Ready for user input"
-msgid " Ready."
-msgstr " तयार ।"
-
-#: src/kcron.cpp:265
+#: src/kcmCron.cpp:365
 msgid ""
 "Scheduled tasks have been modified.\n"
 "Do you want to save changes?"
@@ -498,79 +535,43 @@ msgstr ""
 "निर्धारित कार्य परिमार्जन गरिएको छ ।\n"
 "तपाईँ परिवर्तन बचत गर्न चाहनुहुन्छ ?"
 
-#: src/kcron.cpp:297
+#: src/kcmCron.cpp:398
 #, fuzzy
 #| msgid "Saving..."
 msgctxt "Saving the file to the hard drive"
 msgid "Saving..."
 msgstr "बचत गर्दैछ..."
 
-#: src/kcron.cpp:299
+#: src/kcmCron.cpp:400
 #, fuzzy
 #| msgid "Ready."
 msgctxt "Ready for user input"
 msgid "Ready."
 msgstr "तयार ।"
 
-#: src/kcron.cpp:322
+#: src/kcmCron.cpp:423
 #, fuzzy
 #| msgid "Create a new task or variable."
 msgid "Create a new task."
 msgstr "नयाँ कार्य वा चल सिर्जना गर्नुहोस् ।"
 
-#: src/kcron.cpp:325
+#: src/kcmCron.cpp:426
 #, fuzzy
 #| msgid "Create a new task or variable."
 msgid "Create a new variable."
 msgstr "नयाँ कार्य वा चल सिर्जना गर्नुहोस् ।"
 
-#: src/kcron.cpp:328
+#: src/kcmCron.cpp:429
 msgid "Edit the selected task or variable."
 msgstr "चयन गरिएको कार्य वा चल सम्पादन गर्नुहोस् ।"
 
-#: src/kcron.cpp:331
+#: src/kcmCron.cpp:432
 msgid "Delete the selected task or variable."
 msgstr "चयन गरिएको कार्य वा चल मेट्नुहोस् ।"
 
-#: src/kcron.cpp:334
+#: src/kcmCron.cpp:435
 msgid "Run the selected task now."
 msgstr "चयन गरिएको कार्य अहिले चलाउनुहोस् ।"
-
-#: src/main.cpp:20
-msgid "KDE Task Scheduler"
-msgstr "केडीई कार्य अनुसूचक"
-
-#: src/main.cpp:22
-msgid "KCron"
-msgstr "केडीई क्रोन"
-
-#: src/main.cpp:23
-#, fuzzy
-#| msgid "(c) 1999-2000, Gary Meyer"
-msgid ""
-"(c) 2008, Nicolas Ternisien\n"
-"(c) 1999-2000, Gary Meyer"
-msgstr "(c) १९९९-२०००, गेरि मेयर"
-
-#: src/main.cpp:25
-msgid "Nicolas Ternisien"
-msgstr ""
-
-#: src/main.cpp:26
-msgid "Gary Meyer"
-msgstr "गेरि मेयर"
-
-#: src/main.cpp:27
-msgid "Robert Berry"
-msgstr "रोबर्ट बेरे"
-
-#: src/main.cpp:28
-msgid "James Ots"
-msgstr "जेम्स अट्स"
-
-#: src/main.cpp:29
-msgid "Alberto G. Hierro"
-msgstr "अल्बर्टो जी हिरेरो"
 
 #: src/variablesWidget.cpp:36
 #, fuzzy
@@ -578,220 +579,220 @@ msgstr "अल्बर्टो जी हिरेरो"
 msgid "<b>Environment Variables</b>"
 msgstr "चल"
 
-#: src/variablesWidget.cpp:57
+#: src/variablesWidget.cpp:58
 msgid "Modify Variable"
 msgstr "चल परिमार्जन गर्नुहोस्"
 
-#: src/variablesWidget.cpp:113
+#: src/variablesWidget.cpp:123
 #, fuzzy
 #| msgid "Variables"
 msgid "New Variable"
 msgstr "चल"
 
-#: src/variablesWidget.cpp:151
+#: src/variablesWidget.cpp:159
 #, fuzzy
 #| msgid "Variables"
 msgid "Variable"
 msgstr "चल"
 
-#: src/variablesWidget.cpp:152
+#: src/variablesWidget.cpp:160
 msgid "Value"
 msgstr "मान"
 
-#: src/variablesWidget.cpp:154
+#: src/variablesWidget.cpp:162
 #, fuzzy
 #| msgid "Co&mment:"
 msgid "Comment"
 msgstr "टिप्पणी:"
 
-#: src/taskWidget.cpp:46 src/variableWidget.cpp:35
+#: src/taskWidget.cpp:49 src/variableWidget.cpp:44
 #, fuzzy
 #| msgid "&Enabled"
 msgid "Enabled"
 msgstr "सक्षम"
 
-#: src/taskWidget.cpp:49 src/variableWidget.cpp:39
+#: src/taskWidget.cpp:52 src/variableWidget.cpp:48
 #, fuzzy
 #| msgid "Disabled"
 msgid "Disabled"
 msgstr "अक्षम"
 
-#: src/taskEditorDialog.cpp:63
-msgid "Set All"
-msgstr "सबै सेट गर्नुहोस्"
-
-#: src/taskEditorDialog.cpp:65
-msgid "Clear All"
-msgstr "सबै खाली गर्नुहोस्"
-
-#: src/taskEditorDialog.cpp:140
+#: src/taskEditorDialog.cpp:75
 #, fuzzy
 #| msgid "Modify Variable"
 msgid "Add or modify a scheduled task"
 msgstr "चल परिमार्जन गर्नुहोस्"
 
-#: src/taskEditorDialog.cpp:141 src/taskEditorDialog.cpp:829
+#: src/taskEditorDialog.cpp:76 src/taskEditorDialog.cpp:738
 msgid "<i>This task will be executed at the specified intervals.</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:149
+#: src/taskEditorDialog.cpp:84
 msgid "&Program:"
 msgstr "कार्यक्रम:"
 
-#: src/taskEditorDialog.cpp:166
+#: src/taskEditorDialog.cpp:104 src/variableEditorDialog.cpp:102
 msgid "&Run as:"
 msgstr "यस रूपमा चलाउनुहोस्:"
 
-#: src/taskEditorDialog.cpp:197
+#: src/taskEditorDialog.cpp:121
 msgid "&Comment:"
 msgstr "टिप्पणी:"
 
-#: src/taskEditorDialog.cpp:210
-msgid "&Enabled"
-msgstr "सक्षम"
+#: src/taskEditorDialog.cpp:134
+msgid "&Enable this task"
+msgstr ""
 
-#: src/taskEditorDialog.cpp:215
+#: src/taskEditorDialog.cpp:139
 msgid "Run at system &bootup"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:220
+#: src/taskEditorDialog.cpp:144
 #, fuzzy
 #| msgid "Run every day"
 msgid "Run &every day"
 msgstr "प्रत्येक दिन चलाउनुहोस्"
 
-#: src/taskEditorDialog.cpp:337
+#: src/taskEditorDialog.cpp:248
 msgid "Days of Month"
 msgstr "महिनाका दिन"
 
-#: src/taskEditorDialog.cpp:372
+#: src/taskEditorDialog.cpp:283
 msgid "Months"
 msgstr "महिना"
 
-#: src/taskEditorDialog.cpp:409
+#: src/taskEditorDialog.cpp:320
 msgid "Days of Week"
 msgstr "हप्ताका दिन"
 
-#: src/taskEditorDialog.cpp:444
+#: src/taskEditorDialog.cpp:355
 msgid "Minutes"
 msgstr "मिनेट"
 
-#: src/taskEditorDialog.cpp:486
+#: src/taskEditorDialog.cpp:397
 msgid "Hours"
 msgstr "घण्टा"
 
-#: src/taskEditorDialog.cpp:489
+#: src/taskEditorDialog.cpp:400
 msgid "AM"
 msgstr "पूर्वान्ह"
 
-#: src/taskEditorDialog.cpp:515
+#: src/taskEditorDialog.cpp:426
 msgid "PM"
 msgstr "अपरान्ह"
 
-#: src/taskEditorDialog.cpp:705
+#: src/taskEditorDialog.cpp:614
 msgid "<i>This task is disabled.</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:712
+#: src/taskEditorDialog.cpp:621
 msgid "<i>This task will be run on system bootup.</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:718 src/taskEditorDialog.cpp:760
+#: src/taskEditorDialog.cpp:627 src/taskEditorDialog.cpp:669
 msgid "<i>Please browse for a program to execute...</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:752
+#: src/taskEditorDialog.cpp:661
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select an executable program...</i>"
 msgstr "कृपया चल नाम प्रविष्ट गर्नुहोस् ।"
 
-#: src/taskEditorDialog.cpp:775
+#: src/taskEditorDialog.cpp:684
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select from the 'Months' section...</i>"
 msgstr "कृपया चल नाम प्रविष्ट गर्नुहोस् ।"
 
-#: src/taskEditorDialog.cpp:793
+#: src/taskEditorDialog.cpp:702
 msgid ""
 "<i>Please select from either the 'Days of Month' or the 'Days of Week' "
 "section...</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:807
+#: src/taskEditorDialog.cpp:716
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select from the 'Hours' section...</i>"
 msgstr "कृपया चल नाम प्रविष्ट गर्नुहोस् ।"
 
-#: src/taskEditorDialog.cpp:821
+#: src/taskEditorDialog.cpp:730
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select from the 'Minutes' section...</i>"
 msgstr "कृपया चल नाम प्रविष्ट गर्नुहोस् ।"
 
-#: src/variableEditorDialog.cpp:53
+#: src/taskEditorDialog.cpp:910
+msgid "Set All"
+msgstr "सबै सेट गर्नुहोस्"
+
+#: src/taskEditorDialog.cpp:912
+msgid "Clear All"
+msgstr "सबै खाली गर्नुहोस्"
+
+#: src/variableEditorDialog.cpp:61
 #, fuzzy
 #| msgid "Modify Variable"
 msgid "Add or modify a variable"
 msgstr "चल परिमार्जन गर्नुहोस्"
 
-#: src/variableEditorDialog.cpp:57
+#: src/variableEditorDialog.cpp:65
 #, fuzzy
 #| msgid "&Variable:"
 msgctxt "The environmental variable name ie HOME, MAILTO etc"
 msgid "&Variable:"
 msgstr "चल:"
 
-#: src/variableEditorDialog.cpp:85
+#: src/variableEditorDialog.cpp:93
 msgid "Va&lue:"
 msgstr "मान:"
 
-#: src/variableEditorDialog.cpp:94
+#: src/variableEditorDialog.cpp:120
 msgid "Co&mment:"
 msgstr "टिप्पणी:"
 
-#: src/variableEditorDialog.cpp:102
-msgid "&Enable this environment variable"
+#: src/variableEditorDialog.cpp:128
+msgid "&Enable this variable"
 msgstr ""
 
-#: src/variableEditorDialog.cpp:129
+#: src/variableEditorDialog.cpp:155
 msgid "<i>This variable will be used by scheduled tasks.</i>"
 msgstr ""
 
-#: src/variableEditorDialog.cpp:160
+#: src/variableEditorDialog.cpp:193
 msgid "Override default home folder."
 msgstr "पूर्वनिर्धारित गृह फोल्डर अधिरोहण गर्नुहोस् ।"
 
-#: src/variableEditorDialog.cpp:164
+#: src/variableEditorDialog.cpp:197
 msgid "Email output to specified account."
 msgstr "निर्दिष्ट गरिएको खातामा इमेल प्रतिफल ।"
 
-#: src/variableEditorDialog.cpp:168
+#: src/variableEditorDialog.cpp:201
 msgid "Override default shell."
 msgstr "पूर्वनिर्धारित शेल अधिरोहण गर्नुहोस् ।"
 
-#: src/variableEditorDialog.cpp:172
+#: src/variableEditorDialog.cpp:205
 msgid "Folders to search for program files."
 msgstr "कार्यक्रम फाइल खोज्नका लागि फोल्डर ।"
 
-#: src/variableEditorDialog.cpp:176
+#: src/variableEditorDialog.cpp:209
 #, fuzzy
 #| msgid "Variables"
 msgid "Local Variable"
 msgstr "चल"
 
-#: src/variableEditorDialog.cpp:182
+#: src/variableEditorDialog.cpp:215
 msgid "<i>This variable is disabled.</i>"
 msgstr ""
 
-#: src/variableEditorDialog.cpp:189
+#: src/variableEditorDialog.cpp:222
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please enter the variable name...</i>"
 msgstr "कृपया चल नाम प्रविष्ट गर्नुहोस् ।"
 
-#: src/variableEditorDialog.cpp:196
+#: src/variableEditorDialog.cpp:229
 #, fuzzy
 #| msgid "Please enter the variable value."
 msgid "<i>Please enter the variable value ...</i>"
@@ -809,13 +810,13 @@ msgstr "निर्धारित कार्य"
 msgid "Environment Variables"
 msgstr "चल"
 
-#: src/crontabPrinter.cpp:182
+#: src/crontabPrinter.cpp:184
 #, fuzzy
 #| msgid "(System Crontab)"
-msgid "System Crontab"
+msgid "All Users Crontabs"
 msgstr "(प्रणाली क्रोनट्याब)"
 
-#: src/crontabPrinter.cpp:184
+#: src/crontabPrinter.cpp:186
 #, kde-format
 msgctxt "Crontab of user login"
 msgid "Crontab of user %1"
@@ -842,6 +843,21 @@ msgstr "Nabin Gautam"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nabin@mpp.org.np"
+
+#~ msgid "(System Crontab)"
+#~ msgstr "(प्रणाली क्रोनट्याब)"
+
+#, fuzzy
+#~| msgid " Ready."
+#~ msgctxt "Ready for user input"
+#~ msgid " Ready."
+#~ msgstr " तयार ।"
+
+#~ msgid "KCron"
+#~ msgstr "केडीई क्रोन"
+
+#~ msgid "&Enabled"
+#~ msgstr "सक्षम"
 
 #~ msgid "Printing..."
 #~ msgstr "मुद्रण गर्दैछ..."
