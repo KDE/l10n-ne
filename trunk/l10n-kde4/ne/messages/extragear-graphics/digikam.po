@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-16 00:06+0100\n"
+"POT-Creation-Date: 2008-03-17 08:42+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -166,13 +166,13 @@ msgstr "<i>उपलब्ध छैन</i>"
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:438
 #: libs/imageproperties/imagepropertiessidebar.cpp:268
-#: libs/thumbbar/thumbbar.cpp:906
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:348
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:381
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:411
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:432
-#: digikam/albumiconitem.cpp:323 digikam/albumfiletip.cpp:372
-#: showfoto/showfoto.cpp:722 utilities/imageeditor/canvas/undoaction.h:135
+#: libs/widgets/common/thumbbar.cpp:900 digikam/albumiconitem.cpp:323
+#: digikam/albumfiletip.cpp:372 showfoto/showfoto.cpp:731
+#: utilities/imageeditor/canvas/undoaction.h:135
 #: utilities/imageeditor/editor/imagewindow.cpp:604
 #: utilities/lighttable/lighttablebar.cpp:888
 msgid "Unknown"
@@ -195,7 +195,7 @@ msgstr "%1 bpp"
 #: libs/imageproperties/imagepropertiessidebardb.cpp:476
 #: libs/imageproperties/cameraitempropertiestab.cpp:526
 #: libs/imageproperties/imagepropertiessidebar.cpp:298
-#: libs/thumbbar/thumbbar.cpp:956 digikam/albumfiletip.cpp:426
+#: libs/widgets/common/thumbbar.cpp:950 digikam/albumfiletip.cpp:426
 #: utilities/lighttable/lighttablebar.cpp:942
 #, kde-format
 msgid "%1 (35mm: %2)"
@@ -204,7 +204,7 @@ msgstr "%1 (35mm: %2)"
 #: libs/imageproperties/imagepropertiessidebardb.cpp:481
 #: libs/imageproperties/cameraitempropertiestab.cpp:532
 #: libs/imageproperties/imagepropertiessidebar.cpp:303
-#: libs/thumbbar/thumbbar.cpp:968 digikam/albumfiletip.cpp:435
+#: libs/widgets/common/thumbbar.cpp:962 digikam/albumfiletip.cpp:435
 #: utilities/lighttable/lighttablebar.cpp:951
 #: utilities/slideshow/slideshow.cpp:432
 #, kde-format
@@ -391,7 +391,7 @@ msgid "Yes"
 msgstr "हो"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:387
-#: libs/thumbbar/thumbbar.cpp:857 digikam/albumfiletip.cpp:357
+#: libs/widgets/common/thumbbar.cpp:851 digikam/albumfiletip.cpp:357
 #: utilities/lighttable/lighttablebar.cpp:873
 #, kde-format
 msgid "%1 (%2)"
@@ -399,14 +399,14 @@ msgstr "%1 (%2)"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:394
 #: libs/imageproperties/imagepropertiessidebar.cpp:195
-#: libs/thumbbar/thumbbar.cpp:869
+#: libs/widgets/common/thumbbar.cpp:863
 msgid "RAW Image"
 msgstr "RAW छवि"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:435
 #: libs/imageproperties/imagepropertiessidebar.cpp:268
-#: libs/thumbbar/thumbbar.cpp:906 digikam/albumiconitem.cpp:323
-#: showfoto/showfoto.cpp:722 utilities/imageeditor/editor/imagewindow.cpp:604
+#: libs/widgets/common/thumbbar.cpp:900 digikam/albumiconitem.cpp:323
+#: showfoto/showfoto.cpp:731 utilities/imageeditor/editor/imagewindow.cpp:604
 #, kde-format
 msgid "%1x%2 (%3Mpx)"
 msgstr "%1x%2 (%3Mpx)"
@@ -1794,95 +1794,12 @@ msgstr ""
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:183 libs/themeengine/themeengine.cpp:197
 #: digikam/albumsettings.cpp:303 digikam/digikamapp.cpp:2092
-#: showfoto/showfoto.cpp:543
+#: showfoto/showfoto.cpp:552
 #: utilities/imageeditor/editor/editorwindow.cpp:1795
 #: utilities/lighttable/lighttablewindow.cpp:1583
 #: utilities/cameragui/cameraui.cpp:1981
 msgid "Default"
 msgstr ""
-
-#: libs/thumbbar/thumbbar.cpp:823 digikam/albumfiletip.cpp:308
-#: utilities/lighttable/lighttablebar.cpp:840
-msgid "unavailable"
-msgstr "उपलब्ध छैन"
-
-#: libs/thumbbar/thumbbar.cpp:839 digikam/albumfiletip.cpp:339
-#: utilities/lighttable/lighttablebar.cpp:855
-msgid "File Properties"
-msgstr "फाइल गुण"
-
-#: libs/thumbbar/thumbbar.cpp:843 digikam/albumfiletip.cpp:343
-#: utilities/setup/setupcollections.cpp:249
-#: utilities/lighttable/lighttablebar.cpp:859
-msgid "Name:"
-msgstr "नाम:"
-
-#: libs/thumbbar/thumbbar.cpp:851 digikam/albumfiletip.cpp:351
-#: utilities/lighttable/lighttablebar.cpp:867
-msgid "Modified:"
-msgstr "परिमार्जन:"
-
-#: libs/thumbbar/thumbbar.cpp:856 digikam/albumfiletip.cpp:356
-#: utilities/lighttable/lighttablebar.cpp:872
-msgid "Size:"
-msgstr "साइज:"
-
-#: libs/thumbbar/thumbbar.cpp:899 digikam/albumfiletip.cpp:366
-#: imageplugins/colorfx/imageeffect_colorfx.cpp:170
-#: imageplugins/texture/imageeffect_texture.cpp:88
-#: imageplugins/blurfx/imageeffect_blurfx.cpp:90
-#: imageplugins/border/imageeffect_border.cpp:92
-#: imageplugins/distortionfx/imageeffect_distortionfx.cpp:99
-#: utilities/lighttable/lighttablebar.cpp:882
-msgid "Type:"
-msgstr "प्रकार:"
-
-#: libs/thumbbar/thumbbar.cpp:908 digikam/albumfiletip.cpp:380
-#: utilities/lighttable/lighttablebar.cpp:896
-msgid "Dimensions:"
-msgstr "आयाम:"
-
-#: libs/thumbbar/thumbbar.cpp:927 digikam/albumfiletip.cpp:397
-#: utilities/lighttable/lighttablebar.cpp:913
-msgid "Photograph Properties"
-msgstr "फोटो गुण"
-
-#: libs/thumbbar/thumbbar.cpp:934 digikam/albumfiletip.cpp:404
-#: utilities/lighttable/lighttablebar.cpp:920
-msgid "Make/Model:"
-msgstr "निर्माण/नमुना:"
-
-#: libs/thumbbar/thumbbar.cpp:943 libs/thumbbar/thumbbar.cpp:946
-#: digikam/albumfiletip.cpp:413 digikam/albumfiletip.cpp:416
-#: utilities/lighttable/lighttablebar.cpp:929
-#: utilities/lighttable/lighttablebar.cpp:932
-msgid "Created:"
-msgstr "सिर्जना:"
-
-#: libs/thumbbar/thumbbar.cpp:960 digikam/albumfiletip.cpp:429
-#: utilities/lighttable/lighttablebar.cpp:945
-msgid "Aperture/Focal:"
-msgstr "प्वाल/फोकल:"
-
-#: libs/thumbbar/thumbbar.cpp:970 digikam/albumfiletip.cpp:437
-#: utilities/lighttable/lighttablebar.cpp:953
-msgid "Exposure/Sensitivity:"
-msgstr "प्रर्दशन/संवेदनशीलता:"
-
-#: libs/thumbbar/thumbbar.cpp:985 digikam/albumfiletip.cpp:452
-#: utilities/lighttable/lighttablebar.cpp:968
-msgid "Mode/Program:"
-msgstr "मोड/कार्यक्रम:"
-
-#: libs/thumbbar/thumbbar.cpp:992 digikam/albumfiletip.cpp:459
-#: utilities/lighttable/lighttablebar.cpp:975
-msgid "Flash:"
-msgstr "फ्ल्यास:"
-
-#: libs/thumbbar/thumbbar.cpp:999 digikam/albumfiletip.cpp:466
-#: utilities/lighttable/lighttablebar.cpp:982
-msgid "White Balance:"
-msgstr "सेतो सन्तुलन:"
 
 #: libs/widgets/metadata/xmpwidget.cpp:97
 msgid "XMP Schema"
@@ -2290,6 +2207,89 @@ msgstr "डिजिक्याम परियोजना वेबसाइ�
 #| msgid "Sharpen..."
 msgid "Search..."
 msgstr "तिखोपन..."
+
+#: libs/widgets/common/thumbbar.cpp:817 digikam/albumfiletip.cpp:308
+#: utilities/lighttable/lighttablebar.cpp:840
+msgid "unavailable"
+msgstr "उपलब्ध छैन"
+
+#: libs/widgets/common/thumbbar.cpp:833 digikam/albumfiletip.cpp:339
+#: utilities/lighttable/lighttablebar.cpp:855
+msgid "File Properties"
+msgstr "फाइल गुण"
+
+#: libs/widgets/common/thumbbar.cpp:837 digikam/albumfiletip.cpp:343
+#: utilities/setup/setupcollections.cpp:249
+#: utilities/lighttable/lighttablebar.cpp:859
+msgid "Name:"
+msgstr "नाम:"
+
+#: libs/widgets/common/thumbbar.cpp:845 digikam/albumfiletip.cpp:351
+#: utilities/lighttable/lighttablebar.cpp:867
+msgid "Modified:"
+msgstr "परिमार्जन:"
+
+#: libs/widgets/common/thumbbar.cpp:850 digikam/albumfiletip.cpp:356
+#: utilities/lighttable/lighttablebar.cpp:872
+msgid "Size:"
+msgstr "साइज:"
+
+#: libs/widgets/common/thumbbar.cpp:893 digikam/albumfiletip.cpp:366
+#: imageplugins/colorfx/imageeffect_colorfx.cpp:170
+#: imageplugins/texture/imageeffect_texture.cpp:88
+#: imageplugins/blurfx/imageeffect_blurfx.cpp:90
+#: imageplugins/border/imageeffect_border.cpp:92
+#: imageplugins/distortionfx/imageeffect_distortionfx.cpp:99
+#: utilities/lighttable/lighttablebar.cpp:882
+msgid "Type:"
+msgstr "प्रकार:"
+
+#: libs/widgets/common/thumbbar.cpp:902 digikam/albumfiletip.cpp:380
+#: utilities/lighttable/lighttablebar.cpp:896
+msgid "Dimensions:"
+msgstr "आयाम:"
+
+#: libs/widgets/common/thumbbar.cpp:921 digikam/albumfiletip.cpp:397
+#: utilities/lighttable/lighttablebar.cpp:913
+msgid "Photograph Properties"
+msgstr "फोटो गुण"
+
+#: libs/widgets/common/thumbbar.cpp:928 digikam/albumfiletip.cpp:404
+#: utilities/lighttable/lighttablebar.cpp:920
+msgid "Make/Model:"
+msgstr "निर्माण/नमुना:"
+
+#: libs/widgets/common/thumbbar.cpp:937 libs/widgets/common/thumbbar.cpp:940
+#: digikam/albumfiletip.cpp:413 digikam/albumfiletip.cpp:416
+#: utilities/lighttable/lighttablebar.cpp:929
+#: utilities/lighttable/lighttablebar.cpp:932
+msgid "Created:"
+msgstr "सिर्जना:"
+
+#: libs/widgets/common/thumbbar.cpp:954 digikam/albumfiletip.cpp:429
+#: utilities/lighttable/lighttablebar.cpp:945
+msgid "Aperture/Focal:"
+msgstr "प्वाल/फोकल:"
+
+#: libs/widgets/common/thumbbar.cpp:964 digikam/albumfiletip.cpp:437
+#: utilities/lighttable/lighttablebar.cpp:953
+msgid "Exposure/Sensitivity:"
+msgstr "प्रर्दशन/संवेदनशीलता:"
+
+#: libs/widgets/common/thumbbar.cpp:979 digikam/albumfiletip.cpp:452
+#: utilities/lighttable/lighttablebar.cpp:968
+msgid "Mode/Program:"
+msgstr "मोड/कार्यक्रम:"
+
+#: libs/widgets/common/thumbbar.cpp:986 digikam/albumfiletip.cpp:459
+#: utilities/lighttable/lighttablebar.cpp:975
+msgid "Flash:"
+msgstr "फ्ल्यास:"
+
+#: libs/widgets/common/thumbbar.cpp:993 digikam/albumfiletip.cpp:466
+#: utilities/lighttable/lighttablebar.cpp:982
+msgid "White Balance:"
+msgstr "सेतो सन्तुलन:"
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:97
 #, fuzzy
@@ -2882,7 +2882,7 @@ msgid "<qt><b>\"<i>%1</i>\" Album Properties</b></qt>"
 msgstr "<qt><b>\"<i>%1</i>\" एल्बम गुण</b></qt>"
 
 #: digikam/albumpropsedit.cpp:131 digikam/tagcreatedlg.cpp:119
-#: digikam/tagcreatedlg.cpp:289
+#: digikam/tagcreatedlg.cpp:292
 msgid "&Title:"
 msgstr "शीर्षक:"
 
@@ -3142,20 +3142,20 @@ msgstr "नयाँ ट्याग"
 msgid "<qt><b>Create New Tag in <i>\"%1\"</i></b></qt>"
 msgstr "<qt><b> <i>\"%1\"</i>मा नयाँ ट्याग सिर्जना गर्नुहोस्</b></qt>"
 
-#: digikam/tagcreatedlg.cpp:128 digikam/tagcreatedlg.cpp:298
+#: digikam/tagcreatedlg.cpp:128 digikam/tagcreatedlg.cpp:301
 msgid "&Icon:"
 msgstr "प्रतिमा:"
 
-#: digikam/tagcreatedlg.cpp:246
+#: digikam/tagcreatedlg.cpp:249
 msgid "Edit Tag"
 msgstr "ट्याग सम्पादन गर्नुहोस्"
 
-#: digikam/tagcreatedlg.cpp:268
+#: digikam/tagcreatedlg.cpp:271
 #, kde-format
 msgid "<qt><b>Tag <i>\"%1\"</i> Properties </b></qt>"
 msgstr "<qt><b>ट्याग <i>\"%1\"</i> गुण </b></qt>"
 
-#: digikam/tagcreatedlg.cpp:304
+#: digikam/tagcreatedlg.cpp:307
 msgid "Reset"
 msgstr "रिसेट गर्नुहोस्"
 
@@ -3625,65 +3625,65 @@ msgstr ""
 "एल्बमसँग काम गर्न 'हो' मा क्लिक गर्नुहोस् । अन्यथा, 'होइन' मा क्लिक गर्नुहोस् र डिजिक्याम "
 "पुन सुरु गर्नुपूर्व तपाईँको लोक्याल सेटिङ सुधार गर्नुहोस् ।"
 
-#: digikam/albummanager.cpp:959
+#: digikam/albummanager.cpp:969
 msgid "No parent found for album."
 msgstr "एल्बमका लागि प्रमूल फेला परेन ।"
 
-#: digikam/albummanager.cpp:966
+#: digikam/albummanager.cpp:976
 msgid "Album name cannot be empty."
 msgstr "एल्बमको नाम खाली हुनसक्दैन ।"
 
-#: digikam/albummanager.cpp:972
+#: digikam/albummanager.cpp:982
 msgid "Album name cannot contain '/'."
 msgstr "एल्बमको नाममा '/' हुनु हुँदैन ।"
 
-#: digikam/albummanager.cpp:982
+#: digikam/albummanager.cpp:992
 msgid "No album root path supplied"
 msgstr ""
 
-#: digikam/albummanager.cpp:1002
+#: digikam/albummanager.cpp:1012
 #, fuzzy
 #| msgid "Another album with same name exists."
 msgid "An existing album has the same name."
 msgstr "सोहि नामको अर्को एल्बम अवस्थित छ ।"
 
-#: digikam/albummanager.cpp:1018
+#: digikam/albummanager.cpp:1028
 msgid "Another file or folder with same name exists"
 msgstr "सो नामको अर्को फाइल वा फोल्डर अवस्थित छ"
 
-#: digikam/albummanager.cpp:1020
+#: digikam/albummanager.cpp:1030
 msgid "Access denied to path"
 msgstr "मार्गमा पहुँच गर्न अस्विकार गर्यो"
 
-#: digikam/albummanager.cpp:1022
+#: digikam/albummanager.cpp:1032
 #, fuzzy
 #| msgid "Disk full"
 msgid "Disk is full"
 msgstr "डिस्क भरिएको छ"
 
-#: digikam/albummanager.cpp:1024
+#: digikam/albummanager.cpp:1034
 msgid "Unknown error"
 msgstr "अज्ञात त्रुटि"
 
-#: digikam/albummanager.cpp:1033
+#: digikam/albummanager.cpp:1043
 msgid "Failed to add album to database"
 msgstr "डाटाबेसमा एल्बम थप्न असफल"
 
-#: digikam/albummanager.cpp:1054 digikam/albummanager.cpp:1137
-#: digikam/albummanager.cpp:1238 digikam/albummanager.cpp:1274
-#: digikam/albummanager.cpp:1314
+#: digikam/albummanager.cpp:1064 digikam/albummanager.cpp:1147
+#: digikam/albummanager.cpp:1248 digikam/albummanager.cpp:1284
+#: digikam/albummanager.cpp:1324
 msgid "No such album"
 msgstr "त्यस्तो एल्बम छैन"
 
-#: digikam/albummanager.cpp:1060
+#: digikam/albummanager.cpp:1070
 msgid "Cannot rename root album"
 msgstr "रूट एल्बम पुन: नामकरण गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1066
+#: digikam/albummanager.cpp:1076
 msgid "Album name cannot contain '/'"
 msgstr "एल्बम नाममा '/' हुनु हुँदैन"
 
-#: digikam/albummanager.cpp:1076
+#: digikam/albummanager.cpp:1086
 #, fuzzy
 #| msgid ""
 #| "Another Album with same name exists\n"
@@ -3695,45 +3695,45 @@ msgstr ""
 "सोहि नामको अर्को एल्बम अवस्थित छ \n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: digikam/albummanager.cpp:1092
+#: digikam/albummanager.cpp:1102
 msgid "Failed to rename Album"
 msgstr "एल्बम पुन: नामकरण गर्न असफल"
 
-#: digikam/albummanager.cpp:1143
+#: digikam/albummanager.cpp:1153
 msgid "Cannot edit root album"
 msgstr "रूट एल्बम सम्पादन गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1171
+#: digikam/albummanager.cpp:1181
 msgid "No parent found for tag"
 msgstr "ट्यागका लागि प्रमूल फेला परेन"
 
-#: digikam/albummanager.cpp:1178
+#: digikam/albummanager.cpp:1188
 msgid "Tag name cannot be empty"
 msgstr "ट्याग नाम खाली हुन सक्दैन"
 
-#: digikam/albummanager.cpp:1184 digikam/albummanager.cpp:1286
+#: digikam/albummanager.cpp:1194 digikam/albummanager.cpp:1296
 msgid "Tag name cannot contain '/'"
 msgstr "ट्याग नाममा '/' हुनु हुँदैन"
 
-#: digikam/albummanager.cpp:1194
+#: digikam/albummanager.cpp:1204
 #, fuzzy
 #| msgid "File already exists"
 msgid "Tag name already exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
-#: digikam/albummanager.cpp:1203
+#: digikam/albummanager.cpp:1213
 msgid "Failed to add tag to database"
 msgstr "डाटाबेसमा ट्याग थप्न असफल"
 
-#: digikam/albummanager.cpp:1244
+#: digikam/albummanager.cpp:1254
 msgid "Cannot delete Root Tag"
 msgstr "रूट ट्याग मेट्न सकिदैन"
 
-#: digikam/albummanager.cpp:1280 digikam/albummanager.cpp:1344
+#: digikam/albummanager.cpp:1290 digikam/albummanager.cpp:1354
 msgid "Cannot edit root tag"
 msgstr "रूट ट्याग सम्पादन गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1296
+#: digikam/albummanager.cpp:1306
 msgid ""
 "Another tag with same name exists\n"
 "Please choose another name"
@@ -3741,11 +3741,11 @@ msgstr ""
 "सोहि नामको अर्को ट्याग अवस्थित छ\n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: digikam/albummanager.cpp:1320
+#: digikam/albummanager.cpp:1330
 msgid "Cannot move root tag"
 msgstr "रूट ट्याग सार्न सकिदैन"
 
-#: digikam/albummanager.cpp:1338
+#: digikam/albummanager.cpp:1348
 msgid "No such tag"
 msgstr "त्यस्तो ट्याग छैन"
 
@@ -3853,7 +3853,7 @@ msgid "Open With"
 msgstr "यससँग खोल्नुहोस्"
 
 #: digikam/albumiconview.cpp:699 digikam/imagepreviewview.cpp:408
-#: showfoto/showfoto.cpp:576 utilities/imageeditor/editor/editorwindow.cpp:304
+#: showfoto/showfoto.cpp:585 utilities/imageeditor/editor/editorwindow.cpp:304
 #: utilities/lighttable/lighttablepreview.cpp:398
 #: utilities/lighttable/lighttablewindow.cpp:399
 #, fuzzy, kde-format
@@ -4209,11 +4209,11 @@ msgstr "दर"
 msgid "Rating less or equal to %1"
 msgstr ""
 
-#: digikam/digikamapp.cpp:170 showfoto/showfoto.cpp:187
+#: digikam/digikamapp.cpp:170 showfoto/showfoto.cpp:195
 msgid "Checking ICC repository"
 msgstr "ICC भण्डारण चेकिङ"
 
-#: digikam/digikamapp.cpp:177 showfoto/showfoto.cpp:195
+#: digikam/digikamapp.cpp:177 showfoto/showfoto.cpp:203
 msgid "Checking dcraw version"
 msgstr "dcraw संस्करण चेकिङ"
 
@@ -4746,7 +4746,7 @@ msgstr ""
 msgid "Loading Kipi Plugins"
 msgstr "किपि प्लगइन"
 
-#: digikam/digikamapp.cpp:2070 showfoto/showfoto.cpp:202
+#: digikam/digikamapp.cpp:2070 showfoto/showfoto.cpp:210
 msgid "Loading themes"
 msgstr "विषयवस्तु लोडिङ"
 
@@ -5459,35 +5459,35 @@ msgstr ""
 msgid "File(s) or folder(s) to open"
 msgstr "खोल्ने फाइल"
 
-#: showfoto/showfoto.cpp:221
+#: showfoto/showfoto.cpp:229
 msgid "Brightness/Contrast/Gamma"
 msgstr "चम्किलोपन/व्यतिरेक/गामा"
 
-#: showfoto/showfoto.cpp:225
+#: showfoto/showfoto.cpp:233
 msgid "Increase Gamma"
 msgstr "गामा बढाउनुहोस्"
 
-#: showfoto/showfoto.cpp:230
+#: showfoto/showfoto.cpp:238
 msgid "Decrease Gamma"
 msgstr "गामा घटाउनुहोस्"
 
-#: showfoto/showfoto.cpp:235
+#: showfoto/showfoto.cpp:243
 msgid "Increase Brightness"
 msgstr "चम्किलोपन बढाउनुहोस्"
 
-#: showfoto/showfoto.cpp:240
+#: showfoto/showfoto.cpp:248
 msgid "Decrease Brightness"
 msgstr "चम्किलोपन घटाउनुहोस्"
 
-#: showfoto/showfoto.cpp:245
+#: showfoto/showfoto.cpp:253
 msgid "Increase Contrast"
 msgstr "व्यतिरेक बढाउनुहोस्"
 
-#: showfoto/showfoto.cpp:250
+#: showfoto/showfoto.cpp:258
 msgid "Decrease Contrast"
 msgstr "व्यतिरेक घटाउनुहोस्"
 
-#: showfoto/showfoto.cpp:372
+#: showfoto/showfoto.cpp:381
 msgid ""
 "<qt><p>The ICC profile path seems to be invalid.</p><p>If you want to set it "
 "now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
@@ -5497,36 +5497,36 @@ msgstr ""
 "भने, \"हो\" चयन गर्नुहोस्, अन्यथा \"होइन\" चयन गर्नुहोस् । यस्तो अवस्थामा, तपाईँले सो "
 "विषय समाधान नगरेसम्म \"रङ व्यवस्थापन\" सुविधा अक्षम गरिन्छ</p></qt>"
 
-#: showfoto/showfoto.cpp:498
+#: showfoto/showfoto.cpp:507
 msgid "Open folder"
 msgstr "फोल्डर खोल्नुहोस्"
 
-#: showfoto/showfoto.cpp:507
+#: showfoto/showfoto.cpp:516
 msgid "Show Thumbnails"
 msgstr "थम्बनेल देखाउनुहोस्"
 
-#: showfoto/showfoto.cpp:581
+#: showfoto/showfoto.cpp:590
 msgid "Delete File"
 msgstr "फाइल मेट्नुहोस्"
 
-#: showfoto/showfoto.cpp:803 utilities/imageeditor/editor/imagewindow.cpp:684
+#: showfoto/showfoto.cpp:812 utilities/imageeditor/editor/imagewindow.cpp:684
 #, fuzzy, kde-format
 #| msgid " (%2 of %3)"
 msgctxt "<Image file name> (<Image number> of <Images in album>)"
 msgid "%1 (%2 of %3)"
 msgstr " (%3 को %2)"
 
-#: showfoto/showfoto.cpp:888
+#: showfoto/showfoto.cpp:897
 #, fuzzy
 #| msgid "There are no pictures in this folder."
 msgid "There are no images in this folder."
 msgstr "यो फोल्डरमा तस्विर छैन"
 
-#: showfoto/showfoto.cpp:908
+#: showfoto/showfoto.cpp:917
 msgid "Open Images From Folder"
 msgstr "फोल्डरबाट छवि खोल्नुहोस्"
 
-#: showfoto/showfoto.cpp:1086
+#: showfoto/showfoto.cpp:1095
 #, kde-format
 msgid ""
 "About to delete file \"%1\"\n"
@@ -5535,7 +5535,7 @@ msgstr ""
 "\"%1\" फाइल मेट्ने बारेमा\n"
 "तपाईँ यकिन हुनुहुन्छ ?"
 
-#: showfoto/showfoto.cpp:1090
+#: showfoto/showfoto.cpp:1099
 #: utilities/imageeditor/editor/editorwindow.cpp:1071
 #: utilities/cameragui/cameraui.cpp:1500 utilities/cameragui/cameraui.cpp:1567
 #, fuzzy
@@ -5543,53 +5543,53 @@ msgstr ""
 msgid "Warning"
 msgstr "दर"
 
-#: showfoto/showfoto.cpp:1178
+#: showfoto/showfoto.cpp:1187
 #: utilities/imageeditor/editor/imagewindow.cpp:1031
 #: utilities/imageeditor/editor/imagewindow.cpp:1053
 msgid "Prepare slideshow. Please wait..."
 msgstr "स्लाइड प्रर्दशन तयार गर्नुहोस् । कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: showfoto/imagedialog.cpp:146
+#: showfoto/imagedialog.cpp:140
 #, fuzzy, kde-format
 #| msgid "Make:"
 msgid "Make: %1\n"
 msgstr "निर्माण:"
 
-#: showfoto/imagedialog.cpp:147
+#: showfoto/imagedialog.cpp:141
 #, fuzzy, kde-format
 #| msgid "Model:"
 msgid "Model: %1\n"
 msgstr "नमुना:"
 
-#: showfoto/imagedialog.cpp:150
+#: showfoto/imagedialog.cpp:144
 #, fuzzy, kde-format
 #| msgid "created : %1"
 msgid "Created: %1\n"
 msgstr "सिर्जना : %1"
 
-#: showfoto/imagedialog.cpp:153
+#: showfoto/imagedialog.cpp:147
 #, fuzzy, kde-format
 #| msgid "Aperture/Focal:"
 msgid "Aperture: f/%1\n"
 msgstr "प्वाल/फोकल:"
 
-#: showfoto/imagedialog.cpp:154
+#: showfoto/imagedialog.cpp:148
 #, kde-format
 msgid "Focal: %1 mm\n"
 msgstr ""
 
-#: showfoto/imagedialog.cpp:155
+#: showfoto/imagedialog.cpp:149
 #, kde-format
 msgid "Exposure: 1/%1 s\n"
 msgstr ""
 
-#: showfoto/imagedialog.cpp:156
+#: showfoto/imagedialog.cpp:150
 #, fuzzy, kde-format
 #| msgid "<b>Sensitivity</b>:"
 msgid "Sensitivity: %1 ISO"
 msgstr "<b>संवेदनशिलता</b>:"
 
-#: showfoto/imagedialog.cpp:220
+#: showfoto/imagedialog.cpp:214
 #, kde-format
 msgid ""
 "\n"
@@ -5598,7 +5598,7 @@ msgstr ""
 "\n"
 "%1|क्यामेरा कच्चा फाइल"
 
-#: showfoto/imagedialog.cpp:231
+#: showfoto/imagedialog.cpp:225
 msgid "Open Images"
 msgstr "छवि खोल्नुहोस्"
 
