@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kturtle\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-20 08:09+0100\n"
+"POT-Creation-Date: 2008-03-21 13:30+0100\n"
 "PO-Revision-Date: 2007-08-20 12:13+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -193,16 +193,60 @@ msgstr ""
 msgid "The function '%1' is already defined!"
 msgstr ""
 
+#: interpreter/parser.cpp:51
+#, kde-format
+msgid "Expected a command, instead got '%1'"
+msgstr ""
+
+#: interpreter/parser.cpp:84
+#, kde-format
+msgid "Could not understand '%1'"
+msgstr ""
+
+#: interpreter/parser.cpp:119
+msgid "A comma was expected here..."
+msgstr ""
+
+#: interpreter/parser.cpp:122
+#, kde-format
+msgid "Did not expect '%1', instead expected the line to end after %2"
+msgstr ""
+
+#: interpreter/parser.cpp:127
+#, kde-format
+msgid "Expected an assignment, '=', after the variable '%1'"
+msgstr ""
+
+#: interpreter/parser.cpp:131
+#, kde-format
+msgid "Did not expect '%1', instead expected the a closing parenthesis, ')'"
+msgstr ""
+
+#: interpreter/parser.cpp:135
+msgid "Expected 'to' after 'for'"
+msgstr ""
+
+#: interpreter/parser.cpp:138
+#, fuzzy
+msgid "Expected a name for a command after 'learn' command"
+msgstr "'%1' आदेशपछि नाम अपेक्षा गरियो"
+
 #: interpreter/parser.cpp:243
 #, kde-format
 msgid "You cannot put '%1' here!"
 msgstr ""
 
-#: interpreter/parser.cpp:640
+#: interpreter/parser.cpp:279
+msgid ""
+"Text string was no properly closed, expected a dubble quote, ' \" ' to close "
+"the string"
+msgstr ""
+
+#: interpreter/parser.cpp:638
 msgid "'for' was called wrongly"
 msgstr ""
 
-#: interpreter/parser.cpp:702
+#: interpreter/parser.cpp:700
 #, fuzzy
 msgid "Expected a scope after the 'learn' command"
 msgstr "'%1' आदेशपछि नाम अपेक्षा गरियो"
@@ -820,26 +864,54 @@ msgctxt ""
 msgid "flower"
 msgstr "अझ ढिलो"
 
-#: canvas.cpp:213
+#: canvas.cpp:211
 msgid "bold"
 msgstr ""
 
-#: canvas.cpp:214
+#: canvas.cpp:212
 msgid "italic"
 msgstr ""
 
-#: canvas.cpp:215
+#: canvas.cpp:213
 #, fuzzy
 msgid "underline"
 msgstr "रेखा"
 
-#: canvas.cpp:216
+#: canvas.cpp:214
 #, fuzzy
 msgid "overline"
 msgstr "रेखा"
 
-#: canvas.cpp:217
+#: canvas.cpp:215
 msgid "strikeout"
+msgstr ""
+
+#: colorpicker.cpp:37
+msgid "Color Picker"
+msgstr ""
+
+#: colorpicker.cpp:41 directiondialog.cpp:207
+msgid "&Quit"
+msgstr ""
+
+#: colorpicker.cpp:57
+msgid "Amount red:"
+msgstr ""
+
+#: colorpicker.cpp:71
+msgid "Amount green:"
+msgstr ""
+
+#: colorpicker.cpp:84
+msgid "Amount blue:"
+msgstr ""
+
+#: colorpicker.cpp:114 directiondialog.cpp:288
+msgid "&Copy to clipboard"
+msgstr ""
+
+#: colorpicker.cpp:118 directiondialog.cpp:291
+msgid "&Paste to editor"
 msgstr ""
 
 #: console.cpp:46 console.cpp:73
@@ -856,54 +928,50 @@ msgstr ""
 msgid "Console:"
 msgstr "त्रुटि खोल्नुहोस्"
 
-#: directiondialog.cpp:221
+#: directiondialog.cpp:203
 #, fuzzy
 msgid "Direction Chooser"
 msgstr "वर्णन"
 
-#: directiondialog.cpp:225
-msgid "&Quit"
-msgstr ""
-
-#: directiondialog.cpp:248
+#: directiondialog.cpp:231
 #, fuzzy
 msgid "Command &type:"
 msgstr "टिप्पणी गर्नुहोस्"
 
-#: directiondialog.cpp:262
+#: directiondialog.cpp:246
 #, fuzzy
 msgid "&Previous direction:"
 msgstr "कार्यान्वयन रोक्नुहोस्"
 
-#: directiondialog.cpp:278
+#: directiondialog.cpp:263
 #, fuzzy
 msgid "&New direction:"
 msgstr "वर्णन"
 
-#: directiondialog.cpp:305
-msgid "&Copy to clipboard"
-msgstr ""
-
-#: directiondialog.cpp:308
-msgid "&Paste to editor"
-msgstr ""
-
-#: editor.cpp:163 editor.cpp:262
+#: editor.cpp:164 editor.cpp:262
 msgid "Turtle code files"
 msgstr ""
 
-#: editor.cpp:163 editor.cpp:262
+#: editor.cpp:164 editor.cpp:262
 msgid "All files"
 msgstr ""
 
-#: editor.cpp:163
+#: editor.cpp:165
 msgid "Open"
 msgstr ""
 
-#: editor.cpp:174 editor.cpp:183
+#: editor.cpp:176
 #, fuzzy, kde-format
 msgid "Cannot read %1"
 msgstr " '%1' बुझ्न सकिँदैन"
+
+#: editor.cpp:184
+#, kde-format
+msgid ""
+"The file you try to open is not a valid KTurtle script, or incompatible with "
+"this version of KTurtle.\n"
+"Cannot open %1"
+msgstr ""
 
 #: editor.cpp:262
 msgid "Save As"
@@ -979,59 +1047,58 @@ msgid "code"
 msgstr ""
 
 #: errordialog.cpp:86
-#, fuzzy
-msgid "no errors"
-msgstr "त्रुटि खोल्नुहोस्"
+msgid "No errors occured yet."
+msgstr ""
 
-#: inspector.cpp:48
+#: inspector.cpp:44
 msgid "&Variables"
 msgstr ""
 
-#: inspector.cpp:55
+#: inspector.cpp:51
 msgid "&Functions"
 msgstr ""
 
-#: inspector.cpp:62
+#: inspector.cpp:58
 msgid "&Tree"
 msgstr ""
 
-#: inspector.cpp:98 inspector.cpp:110
+#: inspector.cpp:102 inspector.cpp:120
 #, fuzzy
 msgid "name"
 msgstr "<name>"
 
-#: inspector.cpp:98
+#: inspector.cpp:102
 #, fuzzy
 msgid "value"
 msgstr "बेठीक"
 
-#: inspector.cpp:98
+#: inspector.cpp:102
 msgid "type"
 msgstr ""
 
-#: inspector.cpp:110
-msgid "parameters"
-msgstr ""
-
-#: inspector.cpp:123 inspector.cpp:128
+#: inspector.cpp:112 inspector.cpp:129
 #, fuzzy
 msgid "Nothing to show here"
 msgstr "कर्सर अन्तर्गत केही चिज छैन"
 
-#: inspector.cpp:172 mainwindow.cpp:687
+#: inspector.cpp:120
+msgid "parameters"
+msgstr ""
+
+#: inspector.cpp:179 mainwindow.cpp:685
 msgid "boolean"
 msgstr ""
 
-#: inspector.cpp:175
+#: inspector.cpp:182
 msgid "number"
 msgstr "सङ्ख्या"
 
-#: inspector.cpp:178
+#: inspector.cpp:185
 #, fuzzy
 msgid "string"
 msgstr "<string>"
 
-#: inspector.cpp:206
+#: inspector.cpp:217
 #, fuzzy
 msgid "None"
 msgstr "पूरा भयो ।"
@@ -1051,43 +1118,43 @@ msgstr "केडीई टर्टल"
 msgid "Cies Breijs"
 msgstr ""
 
-#: main.cpp:51
+#: main.cpp:50
 msgid "Initiator and core developer"
 msgstr ""
 
-#: main.cpp:53
+#: main.cpp:51
 msgid "Niels Slot"
 msgstr ""
 
-#: main.cpp:54 main.cpp:57
+#: main.cpp:51 main.cpp:52
 msgid "Core developer"
 msgstr ""
 
-#: main.cpp:56
+#: main.cpp:52
 msgid "Mauricio Piacentini"
 msgstr ""
 
-#: main.cpp:64
+#: main.cpp:58
 msgid "File to open (in the GUI mode)"
 msgstr ""
 
-#: main.cpp:66
+#: main.cpp:60
 msgid ""
 "Starts KTurtle in testing mode (without a GUI), directly runs the specified "
 "local file"
 msgstr ""
 
-#: main.cpp:68
+#: main.cpp:62
 msgid ""
 "Specifies the localization language by a language code, defaults to \"en_US"
 "\" (only works in testing mode)"
 msgstr ""
 
-#: main.cpp:70
+#: main.cpp:64
 msgid "Only tokenizes the turtle code (only works in testing mode)"
 msgstr ""
 
-#: main.cpp:72
+#: main.cpp:66
 msgid ""
 "Translates turtle code to embeddable C++ example strings (for developers "
 "only)"
@@ -1098,475 +1165,487 @@ msgctxt "@info:status the application is ready for commands"
 msgid "Ready"
 msgstr ""
 
-#: mainwindow.cpp:169
+#: mainwindow.cpp:176
 msgid "Create a new file"
 msgstr ""
 
-#: mainwindow.cpp:170
+#: mainwindow.cpp:177
 msgid "New File: Create a new file"
 msgstr ""
 
-#: mainwindow.cpp:173
+#: mainwindow.cpp:180
 msgid "Open an existing file"
 msgstr ""
 
-#: mainwindow.cpp:174
+#: mainwindow.cpp:181
 msgid "Open File: Open an existing file"
 msgstr ""
 
-#: mainwindow.cpp:178
+#: mainwindow.cpp:185
 msgid "Open a recently used file"
 msgstr ""
 
-#: mainwindow.cpp:179
+#: mainwindow.cpp:186
 msgid "Open Recent File: Open a recently used file"
 msgstr ""
 
-#: mainwindow.cpp:182
+#: mainwindow.cpp:189
 msgid "Save the current file to disk"
 msgstr ""
 
-#: mainwindow.cpp:183
+#: mainwindow.cpp:190
 msgid "Save File: Save the current file to disk"
 msgstr ""
 
-#: mainwindow.cpp:187
+#: mainwindow.cpp:194
 msgid "Save the current file under a different name"
 msgstr ""
 
-#: mainwindow.cpp:188
+#: mainwindow.cpp:195
 msgid "Save File As: Save the current file under a different name"
 msgstr ""
 
-#: mainwindow.cpp:190 mainwindow.cpp:375
+#: mainwindow.cpp:197 mainwindow.cpp:387
 msgid "&Run"
 msgstr ""
 
-#: mainwindow.cpp:193 mainwindow.cpp:379
+#: mainwindow.cpp:200 mainwindow.cpp:391
 msgid "Execute the program"
 msgstr ""
 
-#: mainwindow.cpp:194 mainwindow.cpp:380
+#: mainwindow.cpp:201 mainwindow.cpp:392
 msgid "Run: Execute the program"
 msgstr ""
 
-#: mainwindow.cpp:197
+#: mainwindow.cpp:204
 msgid "&Pause"
-msgstr ""
-
-#: mainwindow.cpp:201
-#, fuzzy
-msgid "Pause execution"
-msgstr "कार्यान्वयन पज गर्नुहोस्"
-
-#: mainwindow.cpp:202
-#, fuzzy
-msgid "Pause: Pause execution"
-msgstr "कार्यान्वयन पज गर्नुहोस्"
-
-#: mainwindow.cpp:205
-msgid "&Abort"
 msgstr ""
 
 #: mainwindow.cpp:208
 #, fuzzy
+msgid "Pause execution"
+msgstr "कार्यान्वयन पज गर्नुहोस्"
+
+#: mainwindow.cpp:209
+#, fuzzy
+msgid "Pause: Pause execution"
+msgstr "कार्यान्वयन पज गर्नुहोस्"
+
+#: mainwindow.cpp:212
+msgid "&Abort"
+msgstr ""
+
+#: mainwindow.cpp:215
+#, fuzzy
 msgid "Stop executing program"
 msgstr "कार्यान्वयन रोक्नुहोस्"
 
-#: mainwindow.cpp:209
+#: mainwindow.cpp:216
 #, fuzzy
 msgid "Abort: Stop executing program"
 msgstr "कार्यान्वयन रोक्नुहोस्"
 
-#: mainwindow.cpp:213
+#: mainwindow.cpp:220
 #, fuzzy
 msgid "Print the code"
 msgstr "मुद्रण लोगो कोड"
 
-#: mainwindow.cpp:214
+#: mainwindow.cpp:221
 #, fuzzy
 msgid "Print: Print the code"
 msgstr "मुद्रण लोगो कोड"
 
-#: mainwindow.cpp:217
+#: mainwindow.cpp:224
 #, fuzzy
 msgid "Quit KTurtle"
 msgstr "केडीई टर्टल अन्त्य गरिँदैछ..."
 
-#: mainwindow.cpp:218
+#: mainwindow.cpp:225
 #, fuzzy
 msgid "Quit: Quit KTurtle"
 msgstr "केडीई टर्टल अन्त्य गरिँदैछ..."
 
-#: mainwindow.cpp:222
+#: mainwindow.cpp:229
 msgid "Undo a change in the editor"
 msgstr ""
 
-#: mainwindow.cpp:223
+#: mainwindow.cpp:230
 msgid "Undo: Undo a change in the editor"
 msgstr ""
 
-#: mainwindow.cpp:228
+#: mainwindow.cpp:235
 msgid "Redo a previously undone change in the editor"
 msgstr ""
 
-#: mainwindow.cpp:229
+#: mainwindow.cpp:236
 msgid "Redo: Redo a previously undone change in the editor"
 msgstr ""
 
-#: mainwindow.cpp:234
+#: mainwindow.cpp:241
 msgid "Cut the selected text to the clipboard"
 msgstr ""
 
-#: mainwindow.cpp:235
+#: mainwindow.cpp:242
 msgid "Cut: Cut the selected text to the clipboard"
 msgstr ""
 
-#: mainwindow.cpp:240
+#: mainwindow.cpp:247
 msgid "Copy the selected text to the clipboard"
 msgstr ""
 
-#: mainwindow.cpp:241
+#: mainwindow.cpp:248
 msgid "Copy: Copy the selected text to the clipboard"
 msgstr ""
 
-#: mainwindow.cpp:246
+#: mainwindow.cpp:253
 msgid "Paste the clipboard's content into the current selection"
 msgstr ""
 
-#: mainwindow.cpp:247
+#: mainwindow.cpp:254
 msgid "Paste: Paste the clipboard's content into the current selection"
 msgstr ""
 
-#: mainwindow.cpp:250
+#: mainwindow.cpp:257
 msgid "Select all the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:251
+#: mainwindow.cpp:258
 msgid "Select All: Select all the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:254
+#: mainwindow.cpp:261
 #, fuzzy
 #| msgid "&Overwrite"
 msgid "Overwrite Mode"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:263
 msgid "Toggle between the 'insert' and 'overwrite' mode"
 msgstr ""
 
-#: mainwindow.cpp:257
+#: mainwindow.cpp:264
 msgid "Overwrite Mode: Toggle between the 'insert' and 'overwrite' mode"
 msgstr ""
 
-#: mainwindow.cpp:264
+#: mainwindow.cpp:271
 msgid "Search through the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:265
+#: mainwindow.cpp:272
 msgid "Find: Search through the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:268
+#: mainwindow.cpp:275
 msgid "Continue searching through the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:269
+#: mainwindow.cpp:276
 msgid "Find Next: Continue searching through the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:272
+#: mainwindow.cpp:279
 msgid "Continue searching backwards through the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:273
+#: mainwindow.cpp:280
 msgid ""
 "Find Previous: Continue searching backwards through the code in the editor"
 msgstr ""
 
-#: mainwindow.cpp:281
+#: mainwindow.cpp:288
 #, fuzzy
 msgid "Show &Editor"
 msgstr "सम्पादक कन्फिगर गर्नुहोस्..."
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:290
 msgid "Show or hide the Code Editor"
 msgstr ""
 
-#: mainwindow.cpp:284
+#: mainwindow.cpp:291
 msgid "Show Code Editor: Show or hide the Code Editor"
 msgstr ""
 
-#: mainwindow.cpp:291
+#: mainwindow.cpp:298
 msgid "Show &Inspector"
 msgstr ""
 
-#: mainwindow.cpp:293
+#: mainwindow.cpp:300
 msgid "Show or hide the Inspector"
 msgstr ""
 
-#: mainwindow.cpp:294
+#: mainwindow.cpp:301
 msgid "Show Inspector: Show or hide the Inspector"
 msgstr ""
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:308
 #, fuzzy
 msgid "Show E&rrors"
 msgstr "त्रुटि खोल्नुहोस्"
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:310
 msgid "Show or hide the Errors tab"
 msgstr ""
 
-#: mainwindow.cpp:304
+#: mainwindow.cpp:311
 msgid "Show Errors: Show or hide the Errors tab"
 msgstr ""
 
-#: mainwindow.cpp:318
+#: mainwindow.cpp:325
 msgid "Show &Line Numbers"
 msgstr "लाइन नम्बर देखाउनुहोस्"
 
-#: mainwindow.cpp:320
+#: mainwindow.cpp:327
 msgid "Turn the line numbers on/off in the editor"
 msgstr ""
 
-#: mainwindow.cpp:321
+#: mainwindow.cpp:328
 msgid "Show Line Numbers: Turn the line numbers on/off in the editor"
 msgstr ""
 
-#: mainwindow.cpp:329
+#: mainwindow.cpp:336
 #, fuzzy
 msgid "&Direction Chooser..."
 msgstr "वर्णन"
 
-#: mainwindow.cpp:331
+#: mainwindow.cpp:338
 msgid "Shows the direction chooser dialog"
 msgstr ""
 
-#: mainwindow.cpp:332
+#: mainwindow.cpp:339
 msgid "Direction Chooser: Show the direction chooser dialog"
 msgstr ""
 
-#: mainwindow.cpp:346
+#: mainwindow.cpp:342
+msgid "&Color Picker..."
+msgstr ""
+
+#: mainwindow.cpp:344
+msgid "Shows the color picker dialog"
+msgstr ""
+
+#: mainwindow.cpp:345
+msgid "Color Picker: Show the color picker dialog"
+msgstr ""
+
+#: mainwindow.cpp:358
 #, fuzzy
 msgid "Console"
 msgstr "त्रुटि खोल्नुहोस्"
 
-#: mainwindow.cpp:358
+#: mainwindow.cpp:370
 msgid "Get help on the command under the cursor"
 msgstr ""
 
-#: mainwindow.cpp:359
+#: mainwindow.cpp:371
 msgid "Context Help: Get help on the command under the cursor"
 msgstr ""
 
-#: mainwindow.cpp:364
+#: mainwindow.cpp:376
 msgid "Help"
 msgstr ""
 
-#: mainwindow.cpp:365
+#: mainwindow.cpp:377
 msgid "Help: Open manual for KTurtle"
 msgstr ""
 
-#: mainwindow.cpp:384
+#: mainwindow.cpp:396
 #, fuzzy
 msgctxt "@option:radio"
 msgid "&Full Speed"
 msgstr "पूरा गति"
 
-#: mainwindow.cpp:388
+#: mainwindow.cpp:400
 msgid "Run the program at full speed"
 msgstr ""
 
-#: mainwindow.cpp:389
+#: mainwindow.cpp:401
 msgid "Full Speed: Run the program at full speed"
 msgstr ""
 
-#: mainwindow.cpp:394
+#: mainwindow.cpp:406
 #, fuzzy
 msgctxt "@option:radio choose the slow speed"
 msgid "&Slow"
 msgstr "ढिलो"
 
-#: mainwindow.cpp:397
+#: mainwindow.cpp:409
 msgid "Run the program at slow speed"
 msgstr ""
 
-#: mainwindow.cpp:398
+#: mainwindow.cpp:410
 msgid "Slow Speed: Run the program at slow speed"
 msgstr ""
 
-#: mainwindow.cpp:403
+#: mainwindow.cpp:415
 #, fuzzy
 msgctxt "@option:radio"
 msgid "S&lower"
 msgstr "अझ ढिलो"
 
-#: mainwindow.cpp:406
+#: mainwindow.cpp:418
 msgid "Run the program at slower speed"
 msgstr ""
 
-#: mainwindow.cpp:407
+#: mainwindow.cpp:419
 msgid "Slower Speed: Run the program at slower speed"
 msgstr ""
 
-#: mainwindow.cpp:412
+#: mainwindow.cpp:424
 #, fuzzy
 msgctxt "@option:radio"
 msgid "Sl&owest"
 msgstr "झन ढिलो"
 
-#: mainwindow.cpp:415
+#: mainwindow.cpp:427
 msgid "Run the program at slowest speed"
 msgstr ""
 
-#: mainwindow.cpp:416
+#: mainwindow.cpp:428
 msgid "Slowest Speed: Run the program at slowest speed"
 msgstr ""
 
-#: mainwindow.cpp:421
+#: mainwindow.cpp:433
 msgctxt "@option:radio"
 msgid "S&tep-by-Step"
 msgstr ""
 
-#: mainwindow.cpp:424
+#: mainwindow.cpp:436
 msgid "Run the program one step at a time"
 msgstr ""
 
-#: mainwindow.cpp:425
+#: mainwindow.cpp:437
 msgid "Step Speed: Run the program one step at a time"
 msgstr ""
 
-#: mainwindow.cpp:446
+#: mainwindow.cpp:458
 msgid ""
 "Canvas: This is where the turtle moves and draws when the program is running"
 msgstr ""
 
-#: mainwindow.cpp:448 mainwindow.cpp:471
+#: mainwindow.cpp:460 mainwindow.cpp:483
 msgid "&Canvas"
 msgstr ""
 
-#: mainwindow.cpp:455
+#: mainwindow.cpp:467
 #, fuzzy
 msgid "E&rrors"
 msgstr "त्रुटि खोल्नुहोस्"
 
-#: mainwindow.cpp:485
+#: mainwindow.cpp:497
 #, fuzzy
 msgid "&Editor"
 msgstr "सम्पादक कन्फिगर गर्नुहोस्..."
 
-#: mainwindow.cpp:499
+#: mainwindow.cpp:511
 msgid "Editor: Write your KTurtle commands here"
 msgstr ""
 
-#: mainwindow.cpp:502
+#: mainwindow.cpp:514
 msgid "&Inspector"
 msgstr ""
 
-#: mainwindow.cpp:512
+#: mainwindow.cpp:524
 msgid ""
 "Inspector: See information about variables and functions when the program "
 "runs"
 msgstr ""
 
-#: mainwindow.cpp:603
+#: mainwindow.cpp:601
 #, kde-format
 msgid "Switch to the %1 dictionary"
 msgstr ""
 
-#: mainwindow.cpp:654
+#: mainwindow.cpp:652
 msgid " OVR "
 msgstr " OVR "
 
-#: mainwindow.cpp:654
+#: mainwindow.cpp:652
 msgid " INS "
 msgstr " INS "
 
-#: mainwindow.cpp:660 mainwindow.cpp:703
+#: mainwindow.cpp:658 mainwindow.cpp:701
 msgid "<placeholder>no keyword</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:661
+#: mainwindow.cpp:659
 #, kde-format
 msgid "Help on: %1"
 msgstr "यसमा मद्दत गर्नुहोस्: %1"
 
-#: mainwindow.cpp:666
+#: mainwindow.cpp:664
 #, kde-format
 msgid " Line: %1 Column: %2 "
 msgstr " रेखा: %1 स्तम्भ: %2 "
 
-#: mainwindow.cpp:676
+#: mainwindow.cpp:674
 msgid "<placeholder>variable</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:677
+#: mainwindow.cpp:675
 msgid "<placeholder>number</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:678
+#: mainwindow.cpp:676
 msgid "<placeholder>comment</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:679
+#: mainwindow.cpp:677
 msgid "<placeholder>string</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:680
+#: mainwindow.cpp:678
 msgid "<placeholder>scope</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:681
+#: mainwindow.cpp:679
 msgid "<placeholder>assignment</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:682
+#: mainwindow.cpp:680
 msgid "<placeholder>parenthesis</placeholder>"
 msgstr ""
 
-#: mainwindow.cpp:684
+#: mainwindow.cpp:682
 msgid "mathematical operator"
 msgstr ""
 
-#: mainwindow.cpp:685
+#: mainwindow.cpp:683
 #, fuzzy
 msgid "expression"
 msgstr "एउटा अभिव्यक्ति अपेक्षा गरियो"
 
-#: mainwindow.cpp:686
+#: mainwindow.cpp:684
 msgid "boolean operator"
 msgstr ""
 
-#: mainwindow.cpp:688 mainwindow.cpp:689 mainwindow.cpp:690
+#: mainwindow.cpp:686 mainwindow.cpp:687 mainwindow.cpp:688
 #, fuzzy
 msgid "command"
 msgstr "<comment>"
 
-#: mainwindow.cpp:723
+#: mainwindow.cpp:721
 #, kde-format
 msgid "Could not change the language to %1."
 msgstr ""
 
-#: mainwindow.cpp:732
+#: mainwindow.cpp:730
 msgid "English [built in]"
 msgstr ""
 
-#: mainwindow.cpp:733
+#: mainwindow.cpp:731
 #, fuzzy, kde-format
 msgid "%1 (%2)"
 msgstr "'%1' (%2)"
 
-#: mainwindow.cpp:874
+#: mainwindow.cpp:871
 msgid "untitled"
 msgstr ""
 
-#: mainwindow.cpp:920
+#: mainwindow.cpp:917
 msgid "Input"
 msgstr "आगत"
 
-#: mainwindow.cpp:927
+#: mainwindow.cpp:924
 msgid "Message"
 msgstr "सन्देश"
 
@@ -1609,21 +1688,21 @@ msgid "&Tools"
 msgstr ""
 
 #. i18n: tag text
-#. i18n: file kturtleui.rc line 61
+#. i18n: file kturtleui.rc line 62
 #: rc.cpp:21
 #, fuzzy
 msgid "&Settings"
 msgstr "उन्नत सेटिङ"
 
 #. i18n: tag text
-#. i18n: file kturtleui.rc line 62
+#. i18n: file kturtleui.rc line 63
 #: rc.cpp:24
 #, fuzzy
 msgid "&Script Language"
 msgstr "भाषा"
 
 #. i18n: tag text
-#. i18n: file kturtleui.rc line 68
+#. i18n: file kturtleui.rc line 69
 #: rc.cpp:27
 msgid "Main Toolbar"
 msgstr ""
@@ -1637,6 +1716,10 @@ msgstr "श्यामकृष्ण बल"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shyamkrishna_bal@yahoo.com"
+
+#, fuzzy
+#~ msgid "no errors"
+#~ msgstr "त्रुटि खोल्नुहोस्"
 
 #, fuzzy
 #~ msgid "Direction"
