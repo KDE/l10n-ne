@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-22 20:29+0100\n"
+"POT-Creation-Date: 2008-03-24 14:53+0100\n"
 "PO-Revision-Date: 2007-09-07 10:35+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: aboutdata.cpp:35 articleviewer.cpp:656
+#: aboutdata.cpp:35 articleviewer.cpp:657
 msgid "Akregator"
 msgstr "एक्रिगेटर"
 
@@ -391,6 +391,14 @@ msgstr "रिलोड गर्नुहोस्"
 msgid "Stop"
 msgstr "रोक्नुहोस्"
 
+#: actions.cpp:35 pageviewer.cpp:411
+msgid "Open Link in New &Tab"
+msgstr "लिङ्क नयाँ ट्याबमा खोल्नुहोस्"
+
+#: actions.cpp:44 pageviewer.cpp:413
+msgid "Open Link in External &Browser"
+msgstr "लिङ्क बाह्य ब्राउजरमा खोल्नुहोस्"
+
 #. i18n: tag string
 #. i18n: file addfeedwidgetbase.ui line 13
 #. i18n: tag string
@@ -636,39 +644,31 @@ msgstr ""
 msgid "Content"
 msgstr "टिप्पणी"
 
-#: articleviewer.cpp:136
+#: articleviewer.cpp:137
 msgid "&Increase Font Sizes"
 msgstr "फन्ट साइज बढाउनुहोस्"
 
-#: articleviewer.cpp:142
+#: articleviewer.cpp:143
 msgid "&Decrease Font Sizes"
 msgstr "फन्ट साइज घटाउनुहोस्"
 
-#: articleviewer.cpp:147
+#: articleviewer.cpp:148
 msgid "Copy &Link Address"
 msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
 
-#: articleviewer.cpp:151
+#: articleviewer.cpp:152
 msgid "&Save Link As..."
 msgstr "लिङ्क यस रूपमा बचत गर्नुहोस्..."
 
-#: articleviewer.cpp:155
+#: articleviewer.cpp:156
 msgid "&Scroll Up"
 msgstr "माथि स्क्रोल गर्नुहोस्"
 
-#: articleviewer.cpp:160
+#: articleviewer.cpp:161
 msgid "&Scroll Down"
 msgstr "तल स्क्रोल गर्नुहोस्"
 
-#: articleviewer.cpp:266 pageviewer.cpp:411
-msgid "Open Link in New &Tab"
-msgstr "लिङ्क नयाँ ट्याबमा खोल्नुहोस्"
-
-#: articleviewer.cpp:267 pageviewer.cpp:413
-msgid "Open Link in External &Browser"
-msgstr "लिङ्क बाह्य ब्राउजरमा खोल्नुहोस्"
-
-#: articleviewer.cpp:640
+#: articleviewer.cpp:641
 #, fuzzy, kde-format
 #| msgctxt "%1: Akregator version; %2: homepage URL; --- end of comment ---"
 #| msgid ""
@@ -707,9 +707,50 @@ msgstr ""
 "क्लिक गर्नुहोस्</a> ।</p><p>तपाईँले एक्रिगेटर उपयोग गर्नुहुन्छ भन्ने हामीलाई आशा छ ।</p>\n"
 "<p>धन्यबाद,<p style='margin-bottom: 0px'>&nbsp; &nbsp; एक्रिगेटर समूह</p>\n"
 
-#: articleviewer.cpp:658
+#: articleviewer.cpp:659
 msgid "An RSS feed reader for the K Desktop Environment."
 msgstr "केडीई डेस्कटप परिवेशका लागि एउटा RSS फिड रिडर ।"
+
+#: createfoldercommand.cpp:66
+msgid "Add Folder"
+msgstr "फोल्डर थप्नुहोस्"
+
+#: createfoldercommand.cpp:67
+msgid "Folder name:"
+msgstr "फोल्डर नाम:"
+
+#: deletesubscriptioncommand.cpp:52
+msgid ""
+"<qt>Are you sure you want to delete this folder and its feeds and subfolders?"
+"</qt>"
+msgstr ""
+"<qt> तपाईँ यो फोल्डर र यसका फिड र सब-फोल्डर हटाउने चाहानामा निश्चिन्त हुनुहुन्छ ?</qt>"
+
+#: deletesubscriptioncommand.cpp:53
+#, kde-format
+msgid ""
+"<qt>Are you sure you want to delete folder <b>%1</b> and its feeds and "
+"subfolders?</qt>"
+msgstr ""
+"<qt>तपाईँ फोल्डर <b>%1</b> र यसका फिड र सब-फोल्डर मेट्ने चाहानामा निश्चिन्त हुनुहुन्छ ?</"
+"qt>"
+
+#: deletesubscriptioncommand.cpp:57
+msgid "Delete Folder"
+msgstr "फोल्डर मेट्नुहोस्"
+
+#: deletesubscriptioncommand.cpp:72
+msgid "<qt>Are you sure you want to delete this feed?</qt>"
+msgstr "<qt>तपाईँ यो फिड मेट्ने चाहानामा निश्चिन्त हुनुहुन्छ ?</qt>"
+
+#: deletesubscriptioncommand.cpp:74
+#, kde-format
+msgid "<qt>Are you sure you want to delete feed <b>%1</b>?</qt>"
+msgstr "<qt>तपाईँ फिड <b>%1</b> मेटाउने चाहानामा निश्चित हुनुहुन्छ ?</qt>"
+
+#: deletesubscriptioncommand.cpp:78
+msgid "Delete Feed"
+msgstr "फिड मेट्नुहोस्"
 
 #: feedlist.cpp:160
 msgid "All Feeds"
@@ -745,94 +786,53 @@ msgstr "लोडिङ रद्द गरियो"
 msgid "Loading completed"
 msgstr "लोडिङ समाप्त"
 
-#: main.cpp:67 mainwidget.cpp:466
+#: main.cpp:67 mainwidget.cpp:387
 msgid "Imported Folder"
 msgstr "आयातित फोल्डर"
 
-#: mainwidget.cpp:120
-msgid ""
-"<qt>Are you sure you want to delete this folder and its feeds and subfolders?"
-"</qt>"
-msgstr ""
-"<qt> तपाईँ यो फोल्डर र यसका फिड र सब-फोल्डर हटाउने चाहानामा निश्चिन्त हुनुहुन्छ ?</qt>"
-
-#: mainwidget.cpp:122
-#, kde-format
-msgid ""
-"<qt>Are you sure you want to delete folder <b>%1</b> and its feeds and "
-"subfolders?</qt>"
-msgstr ""
-"<qt>तपाईँ फोल्डर <b>%1</b> र यसका फिड र सब-फोल्डर मेट्ने चाहानामा निश्चिन्त हुनुहुन्छ ?</"
-"qt>"
-
-#: mainwidget.cpp:126
-msgid "Delete Folder"
-msgstr "फोल्डर मेट्नुहोस्"
-
-#: mainwidget.cpp:143
-msgid "<qt>Are you sure you want to delete this feed?</qt>"
-msgstr "<qt>तपाईँ यो फिड मेट्ने चाहानामा निश्चिन्त हुनुहुन्छ ?</qt>"
-
-#: mainwidget.cpp:145
-#, kde-format
-msgid "<qt>Are you sure you want to delete feed <b>%1</b>?</qt>"
-msgstr "<qt>तपाईँ फिड <b>%1</b> मेटाउने चाहानामा निश्चित हुनुहुन्छ ?</qt>"
-
-#: mainwidget.cpp:149
-msgid "Delete Feed"
-msgstr "फिड मेट्नुहोस्"
-
-#: mainwidget.cpp:244
+#: mainwidget.cpp:167
 msgid "You can view multiple articles in several open tabs."
 msgstr "तपाईँले विभिन्न खुला ट्याबमा बहुविध लेख हेर्न सक्नुहुन्छ ।"
 
-#: mainwidget.cpp:248
+#: mainwidget.cpp:171
 msgid "Articles list."
 msgstr "लेख सूची ।"
 
-#: mainwidget.cpp:306
+#: mainwidget.cpp:229
 msgid "Browsing area."
 msgstr "ब्राउजिङ क्षेत्र ।"
 
-#: mainwidget.cpp:310 mainwidget.cpp:694
+#: mainwidget.cpp:233 mainwidget.cpp:617
 msgid "Articles"
 msgstr "लेख"
 
-#: mainwidget.cpp:327
+#: mainwidget.cpp:250
 msgid "About"
 msgstr "बारेमा"
 
-#: mainwidget.cpp:469
+#: mainwidget.cpp:390
 msgid "Add Imported Folder"
 msgstr "आयातित फोल्डर थप्नुहोस्"
 
-#: mainwidget.cpp:470
+#: mainwidget.cpp:391
 msgid "Imported folder name:"
 msgstr "आयातित फोल्डरको नाम:"
 
-#: mainwidget.cpp:785
-msgid "Add Folder"
-msgstr "फोल्डर थप्नुहोस्"
-
-#: mainwidget.cpp:786
-msgid "Folder name:"
-msgstr "फोल्डर नाम:"
-
-#: mainwidget.cpp:895
+#: mainwidget.cpp:779
 msgid "Fetching Feeds..."
 msgstr "फिड तान्दैछ..."
 
-#: mainwidget.cpp:1097
+#: mainwidget.cpp:978
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>तपाईँ लेख <b>%1</b> मेट्न निश्चित हुनुहुन्छ ?</qt>"
 
-#: mainwidget.cpp:1100
+#: mainwidget.cpp:981
 #, kde-format
 msgid "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgstr "<qt>तपाईँ चयन गरिएका %1 लेख मेट्न निश्चित हुनुहुन्छ ?</qt>"
 
-#: mainwidget.cpp:1104
+#: mainwidget.cpp:985
 msgid "Delete Article"
 msgstr "लेख मेट्नुहोस्"
 
