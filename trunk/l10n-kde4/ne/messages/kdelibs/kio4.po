@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-29 21:25+0100\n"
+"POT-Creation-Date: 2008-03-31 20:06+0200\n"
 "PO-Revision-Date: 2007-08-22 16:04+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -348,9 +348,10 @@ msgid "C&ontinue Loading"
 msgstr "लोडिङ जारी राख्नुहोस्"
 
 #: kio/tcpslavebase.cpp:319
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Authentication Failed."
-msgid ": SSL negotiation failed"
+msgctxt "%1 is a host name"
+msgid "%1: SSL negotiation failed"
 msgstr "प्रमाणीकरण असफल भयो ।"
 
 #: kio/tcpslavebase.cpp:476
@@ -392,7 +393,7 @@ msgstr "सत्रका लागि क्लाइन्ट प्रमा
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
-"The server failed the authenticity check (%1)\n"
+"The server failed the authenticity check (%1).\n"
 "\n"
 msgstr "(%1) सर्भर प्रमाणपत्र प्रमाणीकरण परीक्षण असफल ।"
 
@@ -2842,19 +2843,23 @@ msgstr ""
 #| "The IP address of the host %1 does not match the one the certificate was "
 #| "issued to."
 msgid ""
-"The certificate's CA's (Certificate Authority) does not match the CA name of "
+"The certificate's CA (Certificate Authority) does not match the CA name of "
 "the certificate."
 msgstr "%1 होस्टको IP ठेगाना वितरण गरिएको एउटा प्रमाणपत्रसँग मिल्दैन ।"
 
 #: kssl/ksslcertificate.cpp:1112
+#, fuzzy
+#| msgid ""
+#| "The IP address of the host %1 does not match the one the certificate was "
+#| "issued to."
 msgid ""
-"The CA's (Certificate Authority) certificate's key ID does not match the key "
+"The CA (Certificate Authority) certificate's key ID does not match the key "
 "ID in the 'Issuer' section of the certificate you are trying to use."
-msgstr ""
+msgstr "%1 होस्टको IP ठेगाना वितरण गरिएको एउटा प्रमाणपत्रसँग मिल्दैन ।"
 
 #: kssl/ksslcertificate.cpp:1114
 msgid ""
-"The CA's (Certificate Authority) certificate's key ID and name do not match "
+"The CA (Certificate Authority) certificate's key ID and name do not match "
 "the key ID and name in the 'Issuer' section of the certificate you are "
 "trying to use."
 msgstr ""
@@ -2885,7 +2890,7 @@ msgid ""
 "CRL (Certificate Revocation List) is not valid. Any of them could not be "
 "valid yet or not valid any more. If you see this message, please let the "
 "author of the software you are using know that he or she should use the new, "
-"morespecific error messages."
+"more specific error messages."
 msgstr ""
 
 #: kssl/ksslcertificate.cpp:1131
@@ -3583,7 +3588,8 @@ msgstr "यो प्रकारको फाइलका लागि सम�
 #: kfile/kopenwithdialog.cpp:794
 #, kde-format
 msgid ""
-"Could not extract executable name from '%1', please type a valid program name"
+"Could not extract executable name from '%1', please type a valid program "
+"name."
 msgstr ""
 
 #: kfile/kmetaprops.cpp:101
@@ -5942,8 +5948,9 @@ msgid "&Unmount '%1'"
 msgstr "'%1' अनमाउन्ट गर्नुहोस्"
 
 #: ../kfile/kfileplacesmodel.cpp:727
-#, kde-format
-msgid "An error occurred while accessing '%1', the system said: %2"
+#, fuzzy, kde-format
+#| msgid "An error occurred while accessing '%1', the system said: %2"
+msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "'%1' पहुँच गर्दा एउटा त्रुटि देखापर्यो, प्रणालीले भन्यो: %2"
 
 #: ../kfile/kfileplacesmodel.cpp:731
