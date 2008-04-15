@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-12 19:20+0200\n"
+"POT-Creation-Date: 2008-04-14 19:00+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1388,6 +1388,7 @@ msgid "1/%1 s"
 msgstr ""
 
 #: libs/dialogs/imagedialog.cpp:169
+#: imageplugins/lenscorrection/klensfun.cpp:128
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:320
 #, fuzzy
 #| msgid "Make:"
@@ -1395,6 +1396,7 @@ msgid "Make:"
 msgstr "निर्माण:"
 
 #: libs/dialogs/imagedialog.cpp:170
+#: imageplugins/lenscorrection/klensfun.cpp:129
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:322
 msgid "Model:"
 msgstr "नमुना:"
@@ -2105,12 +2107,12 @@ msgstr "मुद्रकमा मेटाडेटा मुद्रण ग
 msgid "Copy metadata to clipboard"
 msgstr "क्लिपबोर्डमा मेटाडेटा प्रतिलिपि बनाउनुहोस्"
 
-#: libs/widgets/metadata/metadatawidget.cpp:300
+#: libs/widgets/metadata/metadatawidget.cpp:299
 #, kde-format
 msgid "File name: %1 (%2)"
 msgstr "फाइल नाम: %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:342
+#: libs/widgets/metadata/metadatawidget.cpp:341
 #, kde-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>फाइल नाम: %1 (%2)</b></big></big>"
@@ -2752,17 +2754,25 @@ msgstr ""
 "मौलिक छवि देख्न सक्नुहुन्छ ।"
 
 #: libs/widgets/imageplugins/imagewidget.cpp:188
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option on to display pure black over-colored on preview. This "
+#| "will help you to avoid under-exposing the image."
 msgid ""
-"<p>Set this option on to display pure black over-colored on preview. This "
-"will help you to avoid under-exposing the image."
+"<p>Set this option to display black overlaid on the preview. This will help "
+"you to avoid under-exposing the image."
 msgstr ""
 "<p>पूर्वावलोकनमा शुद्ध कालो रङ्गिन प्रर्दशनमा यो विकल्प सेट गर्नुहोस् । यसले तपाईँलाई "
 "छविको थोरै प्रर्दशन उपेक्षा गर्न मद्दत गर्दछ ।"
 
 #: libs/widgets/imageplugins/imagewidget.cpp:197
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option on to display pure white over-colored on preview. This "
+#| "will help you to avoid over-exposing the image."
 msgid ""
-"<p>Set this option on to display pure white over-colored on preview. This "
-"will help you to avoid over-exposing the image."
+"<p>Set this option to display white overlaid on the preview. This will help "
+"you to avoid over-exposing the image."
 msgstr ""
 "<p>पूर्वावलोकनमा शुद्ध सेतो रङ्गिन प्रर्दशनमा यो विकल्प सेट गर्नुहोस् । यसले तपाईँलाई छविको "
 "बढि प्रर्दशन उपेक्षा गर्न मद्दत गर्दछ ।"
@@ -2796,9 +2806,9 @@ msgstr "<b>एल्बम लाइब्रेरी फोल्डर</b>"
 #| "digiKam to use as the common Albums Library folder below."
 msgid ""
 "<p>digiKam will store the photo albums which you create in a common "
-"<b>Albums Library Folder</b>. Please select which folder you would like "
-"digiKam to use as the common Albums Library Folder below.</p><p><b>Do not "
-"use a mount path hosted by a remote computer.</b></p>"
+"<b>Albums Library Folder</b>. Below, please select which folder you would "
+"like digiKam to use as the common Albums Library Folder.</p><p><b>Do not use "
+"a mount path hosted by a remote computer.</b></p>"
 msgstr ""
 "डिजिक्यामले तपाईँले साझा <b>एल्बम लाइब्रेरी फोल्डर</b> मा सिर्जना गर्नुभएको फोटो एल्बममा "
 "भण्डारण गर्दछ । कृपया डिजिक्यामले साझा एल्बम लाइब्रेरी फोल्डरको रूपमा प्रयोग गराउन "
@@ -3483,7 +3493,6 @@ msgid "Main developer and coordinator"
 msgstr "मुख्य विकासकर्ता र समन्वयकर्ता"
 
 #: digikam/main.cpp:122 showfoto/main.cpp:93 themedesigner/main.cpp:58
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:87
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:79
 #: imageplugins/texture/imageeffect_texture.cpp:78
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:93
@@ -6277,32 +6286,40 @@ msgstr ""
 msgid "Do not &ask again"
 msgstr "फेरि नसोध्नुहोस्"
 
-#: imageplugins/lenscorrection/klensfun.cpp:111
+#: imageplugins/lenscorrection/klensfun.cpp:124
 msgid "Use Exif Data"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:65
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:72
+#: imageplugins/lenscorrection/klensfun.cpp:130
+#, fuzzy
+#| msgid "Dimensions:"
+msgid "Lens:"
+msgstr "आयाम:"
+
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:68
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:75
 #, fuzzy
 #| msgid "Red Eyes Correction"
 msgid "Lens Error Correction"
 msgstr "रातो आँखा सुधार"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:74
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:77
 msgid "A digiKam image plugin to fix errors caused by lens."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:76
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:79
+#, fuzzy
+#| msgid "(c) 2004-2007, digiKam developers team"
 msgid ""
 "(c) 2008, Adrian Schroeter\n"
-"(c) 2006-2007, Gilles Caulier and Marcel Wiesweg"
-msgstr ""
+"(c) 2008, Gilles Caulier"
+msgstr "(प्रतिलिपि अधिकार) २००४-२००७, डिजिक्याम विकासकर्ता समूह"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:81
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
 msgid "Adrian Schroeter"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:81
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:79
 #: imageplugins/channelmixer/channelmixer.cpp:107
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:81
@@ -6331,7 +6348,7 @@ msgstr ""
 msgid "Author and maintainer"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:87
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:79
 #: imageplugins/channelmixer/channelmixer.cpp:107
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:84
@@ -6360,7 +6377,6 @@ msgstr ""
 msgid "Gilles Caulier"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
 #: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:87
 msgid "provided base classes"
 msgstr ""
@@ -6386,41 +6402,41 @@ msgid ""
 "pattern."
 msgstr "<p>तपाईँले यहाँ ह्यु र स्याचुरेसन समायोजनको रङ पूर्वावलोकन हेर्न सक्नुहुन्छ ।"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:124
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:125
 msgid "Chromatic Aberration"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:125
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:126
 #, fuzzy
 #| msgid "Settings..."
 msgid "Vignetting"
 msgstr "सेटिङ..."
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:126
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:127
 #, fuzzy
 #| msgid "Auto Color Correction"
 msgid "Color Correction"
 msgstr "स्वत: रङ सुधार"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:127
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:128
 #, fuzzy
 #| msgid "Saturation"
 msgid "Distortion"
 msgstr "स्याचुरेसन"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:128
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:129
 #, fuzzy
 #| msgid "Retry"
 msgid "Geometry"
 msgstr "पुन: प्रयास गर्नुहोस्"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:266
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:277
 #, fuzzy
 #| msgid "Red Eyes Correction"
 msgid "Lens Correction"
 msgstr "रातो आँखा सुधार"
 
-#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:43
+#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:44
 #, fuzzy
 #| msgid "Auto-Correction..."
 msgid "Lens Correction..."
