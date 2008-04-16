@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-14 18:50+0200\n"
+"POT-Creation-Date: 2008-04-16 15:57+0200\n"
 "PO-Revision-Date: 2007-09-17 18:03+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1123,7 +1123,7 @@ msgstr "<qt>%1<br>\"%2\" बाट आगमन सन्देश</qt>"
 msgid "<qt>A highlighted message arrived from %1<br />\"%2\"</qt>"
 msgstr "<qt>%1<br>\"%2\" बाट हाइलाइट गरिएको सन्देश आयो</qt>"
 
-#: libkopete/private/kopeteviewmanager.cpp:312 kopete/infoeventwidget.cpp:198
+#: libkopete/private/kopeteviewmanager.cpp:312 kopete/infoeventwidget.cpp:201
 msgid "View"
 msgstr "हेर्नुहोस्"
 
@@ -1905,7 +1905,7 @@ msgstr "व्यक्तिगत जानकारी"
 msgid "No Photo"
 msgstr "फोटो"
 
-#: kopete/identity/identitystatuswidget.cpp:184
+#: kopete/identity/identitystatuswidget.cpp:187
 #, fuzzy
 #| msgid "No Account Found"
 msgctxt "Label to tell the user no accounts existed"
@@ -2068,7 +2068,7 @@ msgid "Contact List"
 msgstr "सम्पर्क सूची"
 
 #: kopete/config/appearance/appearanceconfig.cpp:116
-#: kopete/config/chatwindow/chatwindowconfig.cpp:282
+#: kopete/config/chatwindow/chatwindowconfig.cpp:221
 msgid "Colors && Fonts"
 msgstr "रङ र फन्ट"
 
@@ -2124,198 +2124,266 @@ msgstr "सीमान्त"
 msgid "General Plugins"
 msgstr "सामान्य प्लगइन"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:175
-#: kopete/config/chatwindow/chatwindowconfig.cpp:475
-msgid "The Chat Window style was successfully installed."
-msgstr "कुराकानी सञ्झ्याल शैली सफलतापूर्वक स्थापना गरियो ।"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:175
-#: kopete/config/chatwindow/chatwindowconfig.cpp:475
-msgid "Install successful"
-msgstr "स्थापना सफलता"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:180
-#: kopete/config/chatwindow/chatwindowconfig.cpp:462
-#, fuzzy
-msgid ""
-"The specified archive cannot be opened.\n"
-"Make sure that the archive is valid ZIP or TAR archive."
-msgstr ""
-"निर्दिष्ट गरिएको सङ्ग्रह खोल्न सकिने छैन ।\n"
-"सङ्ग्रह वैध ZIP वा TAR सङ्ग्रह भएकोमा यकीन गर्नुहोस् ।"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:180
-#: kopete/config/chatwindow/chatwindowconfig.cpp:462
-msgid "Cannot open archive"
-msgstr "सङ्ग्रह खोल्न सकिदैन"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:185
-#: kopete/config/chatwindow/chatwindowconfig.cpp:467
-msgid ""
-"Could not find a suitable place to install the Chat Window style in user "
-"directory."
-msgstr ""
-"प्रयोगकर्ता डाइरेक्टरीमा कुराकानी सञ्झ्याल शैली स्थापना गर्न उचित स्थान फेला पार्न सकेन ।"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:185
-#: kopete/config/chatwindow/chatwindowconfig.cpp:467
-msgid "Cannot find styles directory"
-msgstr "शैली डाइरेक्टरी फेला पार्न सकिदैन"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:190
-#: kopete/config/chatwindow/chatwindowconfig.cpp:471
-msgid "The specified archive does not contain a valid Chat Window style."
-msgstr "निर्दिष्ट गरिएको शैलीले वैध कुराकानी सञ्झ्याल शैली समावेश गर्दैन ।"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:190
-#: kopete/config/chatwindow/chatwindowconfig.cpp:471
-msgid "Invalid Style"
-msgstr "अवैध शैली"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:197
-#: kopete/config/chatwindow/chatwindowconfig.cpp:481
-msgid "An unknow error occurred while trying to install the Chat Window style."
-msgstr "कुराकानी सञ्झ्याल शैली स्थापना गर्ने प्रयास गर्दा एउटा अज्ञात त्रुटि देखापर्यो ।"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:197
-#: kopete/config/chatwindow/chatwindowconfig.cpp:481
-msgid "Unknow error"
-msgstr "अज्ञात त्रुटि"
-
-#: kopete/config/chatwindow/chatwindowconfig.cpp:223
+#: kopete/config/chatwindow/chatwindowconfig.cpp:158
 #, fuzzy
 msgid "&Style"
 msgstr "शैली"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:264
+#: kopete/config/chatwindow/chatwindowconfig.cpp:203
 msgid "&Emoticons"
 msgstr "इमोटिकन"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:399
+#: kopete/config/chatwindow/chatwindowconfig.cpp:339
 msgid "(No Variant)"
 msgstr "(फरक छैन)"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:449
-msgid "Choose Chat Window style to install."
+#: kopete/config/chatwindow/chatwindowconfig.cpp:389
+#, fuzzy
+#| msgid "Choose Chat Window style to install."
+msgid "Choose a Chat Window Style to install"
 msgstr "स्थापना गर्न कुराकानी सञ्झ्याल शैली रोज्नुहोस् ।"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:502
-#, kde-format
-msgctxt "@info"
-msgid "The style <resource>%1</resource> was successfully deleted."
+#: kopete/config/chatwindow/chatwindowconfig.cpp:400
+#, fuzzy
+msgid ""
+"The specified archive cannot be opened.\n"
+"Make sure that the archive is a valid ZIP or TAR archive."
 msgstr ""
+"निर्दिष्ट गरिएको सङ्ग्रह खोल्न सकिने छैन ।\n"
+"सङ्ग्रह वैध ZIP वा TAR सङ्ग्रह भएकोमा यकीन गर्नुहोस् ।"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:507
+#: kopete/config/chatwindow/chatwindowconfig.cpp:400
+msgid "Cannot open archive"
+msgstr "सङ्ग्रह खोल्न सकिदैन"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:405
+#, fuzzy
+#| msgid ""
+#| "Could not find a suitable place to install the Chat Window style in user "
+#| "directory."
+msgid "Could not find a suitable place to install the Chat Window Style."
+msgstr ""
+"प्रयोगकर्ता डाइरेक्टरीमा कुराकानी सञ्झ्याल शैली स्थापना गर्न उचित स्थान फेला पार्न सकेन ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:405
+msgid "Cannot find styles directory"
+msgstr "शैली डाइरेक्टरी फेला पार्न सकिदैन"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:409
+#, fuzzy
+#| msgid "The specified archive does not contain a valid Chat Window style."
+msgid "The specified archive does not contain a valid Chat Window Style."
+msgstr "निर्दिष्ट गरिएको शैलीले वैध कुराकानी सञ्झ्याल शैली समावेश गर्दैन ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:409
+msgid "Invalid Style"
+msgstr "अवैध शैली"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:413
+#, fuzzy
+#| msgid "The Chat Window style was successfully installed."
+msgid "The Chat Window Style was successfully installed."
+msgstr "कुराकानी सञ्झ्याल शैली सफलतापूर्वक स्थापना गरियो ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:413
+msgid "Install successful"
+msgstr "स्थापना सफलता"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:419
+#, fuzzy
+#| msgid ""
+#| "An unknow error occurred while trying to install the Chat Window style."
+msgid ""
+"An unknown error occurred while trying to install the Chat Window Style."
+msgstr "कुराकानी सञ्झ्याल शैली स्थापना गर्ने प्रयास गर्दा एउटा अज्ञात त्रुटि देखापर्यो ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:419
+#, fuzzy
+#| msgid "Unknown error."
+msgid "Unknown error"
+msgstr "अज्ञात त्रुटि"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:454
+#, fuzzy, kde-format
+#| msgid "The Chat Window style was successfully installed."
+msgctxt "@info"
+msgid "The Chat Window Style <resource>%1</resource> was successfully deleted."
+msgstr "कुराकानी सञ्झ्याल शैली सफलतापूर्वक स्थापना गरियो ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:459
 #, kde-format
 msgctxt "@info"
 msgid ""
-"An error occurred while trying to delete the <resource>%1</resource> style. "
-"Your account might not have permission to remove it."
+"An error occurred while trying to delete the <resource>%1</resource> Chat "
+"Window Style. Your account might not have permission to remove it."
 msgstr ""
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:541
+#: kopete/config/chatwindow/chatwindowconfig.cpp:486
+#, fuzzy, kde-format
+#| msgid "The Chat Window style was successfully installed."
+msgctxt "@title:window"
+msgid "Chat Window Style <resource>%1</resource> installation"
+msgstr "कुराकानी सञ्झ्याल शैली सफलतापूर्वक स्थापना गरियो ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:491
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"The specified archive <filename>%1</filename> cannot be opened.\n"
+"Make sure that the archive is a valid ZIP or TAR archive."
+msgstr ""
+"निर्दिष्ट गरिएको सङ्ग्रह खोल्न सकिने छैन ।\n"
+"सङ्ग्रह वैध ZIP वा TAR सङ्ग्रह भएकोमा यकीन गर्नुहोस् ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:496
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not find a suitable place to install the Chat Window style in user "
+#| "directory."
+msgctxt "@info"
+msgid ""
+"Could not find a suitable place to install the Chat Window Style <resource>%"
+"1</resource>."
+msgstr ""
+"प्रयोगकर्ता डाइरेक्टरीमा कुराकानी सञ्झ्याल शैली स्थापना गर्न उचित स्थान फेला पार्न सकेन ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:500
+#, fuzzy, kde-format
+#| msgid "The specified archive does not contain a valid Chat Window style."
+msgctxt "@info"
+msgid ""
+"The specified archive <filename>%1</filename> does not contain a valid Chat "
+"Window Style."
+msgstr "निर्दिष्ट गरिएको शैलीले वैध कुराकानी सञ्झ्याल शैली समावेश गर्दैन ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:510
+#, fuzzy, kde-format
+#| msgid ""
+#| "An unknow error occurred while trying to install the Chat Window style."
+msgctxt "@info"
+msgid ""
+"An unknown error occurred while trying to install the Chat Window Style "
+"<resource>%1</resource>."
+msgstr "कुराकानी सञ्झ्याल शैली स्थापना गर्ने प्रयास गर्दा एउटा अज्ञात त्रुटि देखापर्यो ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:519
+#, fuzzy, kde-format
+#| msgid "The Chat Window style was successfully installed."
+msgid "One Chat Window Style package has been installed."
+msgid_plural "%1 Chat Window Style packages have been installed."
+msgstr[0] "कुराकानी सञ्झ्याल शैली सफलतापूर्वक स्थापना गरियो ।"
+msgstr[1] "कुराकानी सञ्झ्याल शैली सफलतापूर्वक स्थापना गरियो ।"
+
+#: kopete/config/chatwindow/chatwindowconfig.cpp:534
 msgid "Myself"
 msgstr "आफै"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:544
+#: kopete/config/chatwindow/chatwindowconfig.cpp:537
 msgctxt "This is the myself preview contact id"
 msgid "myself@preview"
 msgstr "myself@preview"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:545
+#: kopete/config/chatwindow/chatwindowconfig.cpp:538
 msgctxt "This is the myself preview contact nickname"
 msgid "Myself"
 msgstr "Myself"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:549
+#: kopete/config/chatwindow/chatwindowconfig.cpp:542
 msgid "Jack"
 msgstr "ज्याक"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:552
+#: kopete/config/chatwindow/chatwindowconfig.cpp:545
 msgctxt "This is the other preview contact id"
 msgid "jack@preview"
 msgstr "jack@preview"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:553
+#: kopete/config/chatwindow/chatwindowconfig.cpp:546
 msgctxt "This is the other preview contact nickname"
 msgid "Jack"
 msgstr "Jack"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:567
+#: kopete/config/chatwindow/chatwindowconfig.cpp:560
 msgid "Hello, this is an incoming message :-)"
 msgstr "नमस्कार, यो आगमन सन्देश हो :-)"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:571
+#: kopete/config/chatwindow/chatwindowconfig.cpp:564
 msgid "Hello, this is an incoming consecutive message."
 msgstr "नमस्कार, यो क्रमागत आगमन सन्देश हो ।"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:575
+#: kopete/config/chatwindow/chatwindowconfig.cpp:568
 msgid "Ok, this is an outgoing message"
 msgstr "ठीक छ, यो एउटा निर्गमन सन्देश हो"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:579
+#: kopete/config/chatwindow/chatwindowconfig.cpp:572
 #, fuzzy
 #| msgid "Ok, a outgoing consecutive message."
 msgid "Ok, an outgoing consecutive message."
 msgstr "ठीक छ, यो एउटा क्रमागत निर्गमन सन्देश हो ।"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:583
+#: kopete/config/chatwindow/chatwindowconfig.cpp:576
 #, fuzzy
 msgid "Here is an incoming colored message."
 msgstr "यहाँ आगमन सन्देश रङ्गाइएको छ"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:589
+#: kopete/config/chatwindow/chatwindowconfig.cpp:582
 msgid "This is an internal message"
 msgstr "यो एउटा आन्तरीक सन्देश हो"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:593
+#: kopete/config/chatwindow/chatwindowconfig.cpp:586
 msgid "performed an action"
 msgstr "एउटा कार्य सम्पादन गर्नुहोस्"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:598
+#: kopete/config/chatwindow/chatwindowconfig.cpp:591
 msgid "This is a highlighted message"
 msgstr "यो हाइलाइट गरिएको सन्देश हो"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:604
+#: kopete/config/chatwindow/chatwindowconfig.cpp:597
+#, fuzzy
+#| msgctxt ""
+#| "This special UTF-8 string is to test if the style support Right-to-Left "
+#| "language display."
+#| msgid "הודעות טקסט"
 msgctxt ""
-"This special UTF-8 string is to test if the style support Right-to-Left "
+"This special UTF-8 string is to test if the style supports Right-to-Left "
 "language display."
 msgid "הודעות טקסט"
 msgstr "הודעות טקסט"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:608
+#: kopete/config/chatwindow/chatwindowconfig.cpp:601
 msgid "Bye"
 msgstr "फेरि भेटौला"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:698
+#: kopete/config/chatwindow/chatwindowconfig.cpp:691
 msgid "Drag or Type Emoticon Theme URL"
 msgstr "इमोटिकोन विषयवस्तु यूआरएल तान्नुहोस् वा टाइप गर्नुहोस्"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:705
+#: kopete/config/chatwindow/chatwindowconfig.cpp:698
 msgid "Sorry, emoticon themes must be installed from local files."
 msgstr "माफ गर्नुहोस्, इमोटिकोन विषयवस्तु स्थानीय फाइलबाट स्थापना हुनुपर्नेछ ।"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:706
+#: kopete/config/chatwindow/chatwindowconfig.cpp:699
 msgid "Could Not Install Emoticon Theme"
 msgstr "इमोटिकन विषयवस्तु स्थापना हुन सकेन"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:722
+#: kopete/config/chatwindow/chatwindowconfig.cpp:715
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Are you sure you want to remove the <strong>%1</strong> emoticon "
 #| "theme?<br><br>This will delete the files installed by this theme.</qt>"
+msgctxt "@info"
 msgid ""
-"<qt>Are you sure you want to remove the <strong>%1</strong> emoticon theme?"
-"<br /><br />This will delete the files installed by this theme.</qt>"
+"Are you sure you want to remove the <resource>%1</resource> emoticon theme?"
+"<br /><br /><warning>This will delete all files installed by this theme.</"
+"warning>"
 msgstr ""
 "<qt>तपाईँ <strong>%1</strong> इमोटिकन विषयवस्तु हटाउन निश्चित हुनुहुन्छ?<br><br>यसले "
 "यो विषयवस्तुद्वारा स्थापना गरिएको फाइल मेट्नेछ ।</qt>"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:728
+#: kopete/config/chatwindow/chatwindowconfig.cpp:721
 msgid "Confirmation"
 msgstr "यकीन"
 
-#: kopete/config/chatwindow/chatwindowconfig.cpp:751
+#: kopete/config/chatwindow/chatwindowconfig.cpp:744
 msgid "Get New Emoticons"
 msgstr "नयाँ इमोटिकोन प्राप्त गर्नुहोस्"
 
@@ -4873,31 +4941,31 @@ msgid "Chat Window Appearance"
 msgstr "कुराकानी सञ्झ्याल दृश्य"
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 63
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 39
 #: rc.cpp:769
 msgid "Display"
 msgstr "प्रदर्शन गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 69
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 45
 #: rc.cpp:772
 msgid "Group consecuti&ve messages"
 msgstr "क्रमागत सन्देशको समूह बनाउनुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 76
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 52
 #: rc.cpp:775
 msgid "Co&mpact style in chatrooms"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 92
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 68
 #: rc.cpp:778
 msgid "Styles"
 msgstr "शैली"
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 133
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 88
 #: rc.cpp:781
 #, fuzzy
 #| msgid "Style Variant:"
@@ -4905,25 +4973,25 @@ msgid "Style variant:"
 msgstr "भिन्न शैली:"
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 203
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 149
 #: rc.cpp:784
 msgid "Get new Chat Window styles over the Internet"
 msgstr "इन्टरनेट माथि नयाँ कुराकानी सञ्झ्याल शैली प्राप्त गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 206
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 152
 #: rc.cpp:787
 msgid "&Get New..."
 msgstr "नयाँ प्राप्त गर्नुहोस्..."
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 213
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 159
 #: rc.cpp:790
 msgid "&Install..."
 msgstr "स्थापना गर्नुहोस्..."
 
 #. i18n: tag string
-#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 220
+#. i18n: file ./kopete/config/chatwindow/chatwindowconfig_style.ui line 166
 #: rc.cpp:793 protocols/oscar/oscarlistnonservercontacts.cpp:40
 #, fuzzy
 msgid "&Delete"
@@ -22654,6 +22722,9 @@ msgid ""
 msgstr ""
 "कृपया एउटा स्वत: जवाफ सन्देश प्रविष्ट गर्नुहोस् जुन प्रयोगकर्तालाई देखाइनेछ जसले तपाईँ टाढा "
 "वा व्यस्त हुँदा सन्देश गर्छ"
+
+#~ msgid "Unknow error"
+#~ msgstr "अज्ञात त्रुटि"
 
 #, fuzzy
 #~| msgid "Registration failed."

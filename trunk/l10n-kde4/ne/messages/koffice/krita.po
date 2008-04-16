@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-10 23:27+0200\n"
+"POT-Creation-Date: 2008-04-16 16:11+0200\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1376,7 +1376,7 @@ msgstr "रिसाइज गर्नुहोस्"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgnewimage.ui line 246
-#: rc.cpp:245 ui/kis_dlg_preferences.cc:409
+#: rc.cpp:245 ui/dialogs/kis_dlg_preferences.cc:409
 msgid "Color"
 msgstr "रङ"
 
@@ -1568,7 +1568,8 @@ msgstr "रद्द गर्नुहोस्यम:"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgautogradient.ui line 25
-#: rc.cpp:335 ui/kis_gradient_chooser.cc:41 ui/kis_gradient_chooser.cc:46
+#: rc.cpp:335 ui/widgets/kis_gradient_chooser.cc:41
+#: ui/widgets/kis_gradient_chooser.cc:46
 msgid "Custom Gradient"
 msgstr "अनुकूल ग्रेडियन्ट"
 
@@ -1674,8 +1675,8 @@ msgstr "नयाँ छविका लागि पूर्वनिर्ध
 #. i18n: file ./ui/forms/wdgcolorsettings.ui line 60
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgdisplaysettings.ui line 13
-#: rc.cpp:398 rc.cpp:473 ui/kis_dlg_preferences.cc:400
-#: ui/kis_dlg_preferences.cc:401
+#: rc.cpp:398 rc.cpp:473 ui/dialogs/kis_dlg_preferences.cc:400
+#: ui/dialogs/kis_dlg_preferences.cc:401
 msgid "Display"
 msgstr "प्रर्दशन गर्नुहोस्"
 
@@ -2057,7 +2058,7 @@ msgstr "एनिमेसन गरिएको"
 #. i18n: file ./ui/forms/wdgcustombrush.ui line 98
 #. i18n: tag string
 #. i18n: file ./plugins/brushes/imagepipe/wdgcustombrush.ui line 98
-#: rc.cpp:578 rc.cpp:2731 ui/kis_brush_chooser.cc:44
+#: rc.cpp:578 rc.cpp:2731 ui/widgets/kis_brush_chooser.cc:44
 msgid "Use color as mask"
 msgstr "मास्कको रूपमा रङ प्रयोग गर्नुहोस्"
 
@@ -3563,7 +3564,7 @@ msgstr "तह गुण"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/compose/wdg_compose.ui line 22
-#: rc.cpp:1393 ui/kis_dlg_adj_layer_props.cc:75
+#: rc.cpp:1393 ui/dialogs/kis_dlg_adj_layer_props.cc:75
 msgid "Layer name:"
 msgstr "तह नाम:"
 
@@ -4935,7 +4936,7 @@ msgstr "सक्रिय तह"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/scripting/scripts/pilimport.ui line 134
-#: rc.cpp:2227 ui/kis_dlg_new_layer.cc:51
+#: rc.cpp:2227 ui/dialogs/kis_dlg_new_layer.cc:51
 msgid "New Layer"
 msgstr "नयाँ तह"
 
@@ -5775,20 +5776,6 @@ msgstr "चयन गर्नुहोस्"
 msgid "&Rotate"
 msgstr "घुमाउनुहोस्"
 
-#: ui/kis_dlg_image_properties.cc:52
-msgid "Image Properties"
-msgstr "छवि गुण"
-
-#: ui/kis_gradient_chooser.cc:55
-msgid "Custom Gradient..."
-msgstr "अनुकूल ग्रेडियन्ट..."
-
-#: ui/kis_gradient_chooser.cc:90
-#, fuzzy
-#| msgid "Choose Palette"
-msgid "Choose Gradient to Add"
-msgstr "रङदानी छनोट गर्नुहोस्"
-
 #: ui/kis_image_manager.cc:57
 msgid "I&nsert Image as Layer..."
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
@@ -5801,33 +5788,58 @@ msgstr "गुणहरू..."
 msgid "Import Image"
 msgstr "छवि आयात गर्नुहोस्"
 
-#: ui/kis_dlg_preferences.cc:148
+#: ui/dialogs/kis_dlg_image_properties.cc:52
+msgid "Image Properties"
+msgstr "छवि गुण"
+
+#: ui/dialogs/kis_dlg_preferences.cc:148
 msgid "Monitor profile: "
 msgstr "मोनिटर प्रोफाइल: "
 
-#: ui/kis_dlg_preferences.cc:152
+#: ui/dialogs/kis_dlg_preferences.cc:152
 msgid "&Monitor profile: "
 msgstr "मोनिटर प्रोफाइल: "
 
-#: ui/kis_dlg_preferences.cc:387
+#: ui/dialogs/kis_dlg_preferences.cc:387
 msgid "Preferences"
 msgstr "प्राथमिकता"
 
-#: ui/kis_dlg_preferences.cc:393 ui/kis_dlg_preferences.cc:394
+#: ui/dialogs/kis_dlg_preferences.cc:393 ui/dialogs/kis_dlg_preferences.cc:394
 msgid "General"
 msgstr "साधारण"
 
-#: ui/kis_dlg_preferences.cc:408
+#: ui/dialogs/kis_dlg_preferences.cc:408
 msgid "Color Management"
 msgstr "रङ व्यवस्थापन"
 
-#: ui/kis_dlg_preferences.cc:415 ui/kis_dlg_preferences.cc:416
+#: ui/dialogs/kis_dlg_preferences.cc:415 ui/dialogs/kis_dlg_preferences.cc:416
 msgid "Performance"
 msgstr "कार्यसम्पादन"
 
-#: ui/kis_dlg_preferences.cc:421 ui/kis_dlg_preferences.cc:422
+#: ui/dialogs/kis_dlg_preferences.cc:421 ui/dialogs/kis_dlg_preferences.cc:422
 msgid "Grid"
 msgstr "ग्रिड"
+
+#: ui/dialogs/kis_dlg_layer_properties.cc:58
+msgid "Layer Properties"
+msgstr "तह गुण"
+
+#: ui/dialogs/kis_dlg_apply_profile.cc:45
+msgid "Apply Image Profile to Clipboard Data"
+msgstr "क्लिपबोर्ड डेटामा छवि प्रोफाइल लागू गर्नुहोस्"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:62
+msgid "Name:"
+msgstr "नाम:"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:77
+msgid "Configuration"
+msgstr "कन्फिगरेसन"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:83
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:93
+msgid "No configuration options are available for this filter"
+msgstr "यो फिल्टरका लागि कुनै कन्फिगरेसन विकल्प उपलब्ध छैन"
 
 #: ui/kis_paintop_box.cc:68
 msgid "Painter's Toolchest"
@@ -5843,29 +5855,11 @@ msgstr ""
 msgid "Edit brush settings"
 msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
 
-#: ui/kis_previewwidget.cc:113 ui/kis_previewwidget.cc:165
-msgid "Preview: "
-msgstr "पूर्वावलोकन: "
-
-#: ui/kis_previewwidget.cc:168
-msgid "Original: "
-msgstr "मौलिक: "
-
-#: ui/kis_previewwidget.cc:176
-msgid "Preview (needs update)"
-msgstr "पूर्वावलोकन (अद्यावधिक आवश्यक)"
-
 #: ui/kis_bookmarked_configurations_editor.cc:63
 #, fuzzy, kde-format
 #| msgid "Configuration"
 msgid "New configuration %1"
 msgstr "कन्फिगरेसन"
-
-#: ui/kis_pattern_chooser.cc:71
-#, fuzzy
-#| msgid "Choose Palette"
-msgid "Choose Pattern to Add"
-msgstr "रङदानी छनोट गर्नुहोस्"
 
 #: ui/kis_mask_manager.cc:84 ui/kis_mask_manager.cc:197
 msgid "Transparency Mask"
@@ -5968,34 +5962,9 @@ msgstr "फिल्टर फेरि लागू गर्नुहोस्
 msgid "Apply Filter Again: %1"
 msgstr "फिल्टर फेरि लागू गर्नुहोस्: %1"
 
-#: ui/kis_dlg_layer_properties.cc:58
-msgid "Layer Properties"
-msgstr "तह गुण"
-
-#: ui/kis_gradient_slider_widget.cc:48
-msgid "Split Segment"
-msgstr "खण्ड विभाजन गर्नुहोस्"
-
-#: ui/kis_gradient_slider_widget.cc:49
-msgid "Duplicate Segment"
-msgstr "खण्ड नक्कल गर्नुहोस्"
-
-#: ui/kis_gradient_slider_widget.cc:50
-msgid "Mirror Segment"
-msgstr "दर्पण खण्ड"
-
-#: ui/kis_gradient_slider_widget.cc:52
-msgid "Remove Segment"
-msgstr "खण्ड हटाउनुहोस्"
-
 #: ui/kis_birdeye_box.cc:214
 msgid "Exposure:"
 msgstr "प्रर्दशन:"
-
-#: ui/kis_filter_dialog.cc:144
-#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
-msgid "No configuration option."
-msgstr "कन्फिगरेसन विकल्प छैन ।"
 
 #: ui/kis_layer_manager.cc:138
 msgid "&Flatten image"
@@ -6146,32 +6115,6 @@ msgstr "समतल छवि"
 msgid "Export Layer"
 msgstr "तह निर्यात गर्नुहोस्"
 
-#: ui/kis_dlg_apply_profile.cc:45
-msgid "Apply Image Profile to Clipboard Data"
-msgstr "क्लिपबोर्ड डेटामा छवि प्रोफाइल लागू गर्नुहोस्"
-
-#: ui/kis_brush_chooser.cc:38
-msgid "Spacing: "
-msgstr "खाली स्थान: "
-
-#: ui/kis_brush_chooser.cc:114
-#, fuzzy
-#| msgid "Chinese Brush"
-msgid "Choose Brush to Add"
-msgstr "चाइनिज ब्रुस"
-
-#: ui/kis_dlg_adjustment_layer.cc:62
-msgid "Name:"
-msgstr "नाम:"
-
-#: ui/kis_dlg_adjustment_layer.cc:77
-msgid "Configuration"
-msgstr "कन्फिगरेसन"
-
-#: ui/kis_dlg_adjustment_layer.cc:83 ui/kis_dlg_adj_layer_props.cc:93
-msgid "No configuration options are available for this filter"
-msgstr "यो फिल्टरका लागि कुनै कन्फिगरेसन विकल्प उपलब्ध छैन"
-
 #: ui/kis_custom_palette.cc:104 ui/kis_custom_palette.cc:142
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:181
 #, kde-format
@@ -6261,6 +6204,64 @@ msgstr ""
 "रूलरले छविमा माउसको ठाडो र तेर्सो स्थिति देखाउदछ र क्यानभासमा उपयुक्त स्थानमा तपाईँको "
 "माउस प्रयोग गर्न सकिन्छ । <p>रूलरलाई लुकाउन यो जाँचबाट हटाउनुहोस् ।"
 
+#: ui/widgets/kis_gradient_chooser.cc:55
+msgid "Custom Gradient..."
+msgstr "अनुकूल ग्रेडियन्ट..."
+
+#: ui/widgets/kis_gradient_chooser.cc:90
+#, fuzzy
+#| msgid "Choose Palette"
+msgid "Choose Gradient to Add"
+msgstr "रङदानी छनोट गर्नुहोस्"
+
+#: ui/widgets/kis_previewwidget.cc:113 ui/widgets/kis_previewwidget.cc:165
+msgid "Preview: "
+msgstr "पूर्वावलोकन: "
+
+#: ui/widgets/kis_previewwidget.cc:168
+msgid "Original: "
+msgstr "मौलिक: "
+
+#: ui/widgets/kis_previewwidget.cc:176
+msgid "Preview (needs update)"
+msgstr "पूर्वावलोकन (अद्यावधिक आवश्यक)"
+
+#: ui/widgets/kis_pattern_chooser.cc:71
+#, fuzzy
+#| msgid "Choose Palette"
+msgid "Choose Pattern to Add"
+msgstr "रङदानी छनोट गर्नुहोस्"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:48
+msgid "Split Segment"
+msgstr "खण्ड विभाजन गर्नुहोस्"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:49
+msgid "Duplicate Segment"
+msgstr "खण्ड नक्कल गर्नुहोस्"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:50
+msgid "Mirror Segment"
+msgstr "दर्पण खण्ड"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:52
+msgid "Remove Segment"
+msgstr "खण्ड हटाउनुहोस्"
+
+#: ui/widgets/kis_brush_chooser.cc:38
+msgid "Spacing: "
+msgstr "खाली स्थान: "
+
+#: ui/widgets/kis_brush_chooser.cc:114
+#, fuzzy
+#| msgid "Chinese Brush"
+msgid "Choose Brush to Add"
+msgstr "चाइनिज ब्रुस"
+
+#: ui/widgets/kis_meta_data_merge_strategy_chooser_widget.cc:61
+msgid "Choose meta data merge strategy"
+msgstr ""
+
 #: ui/kis_selection_manager.cc:144
 msgid "Paste into &New Image"
 msgstr "नयाँ छवि भित्र टाँस्नुहोस्"
@@ -6349,10 +6350,6 @@ msgstr "तिखो पार्नुहोस्"
 msgid "Border"
 msgstr "किनारा..."
 
-#: ui/kis_meta_data_merge_strategy_chooser_widget.cc:61
-msgid "Choose meta data merge strategy"
-msgstr ""
-
 #: ui/kis_tool_paint.cc:131
 msgid "Mode: "
 msgstr "मोड: "
@@ -6375,7 +6372,6 @@ msgid "Opacity"
 msgstr "अस्पष्टता"
 
 #: image/kis_layer.cc:99
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:209
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -7476,6 +7472,10 @@ msgstr "छवि विभाजन गर्नुहोस्"
 #: plugins/viewplugins/tonemapping/tonemapping.cc:53
 msgid "Tonemapping"
 msgstr ""
+
+#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
+msgid "No configuration option."
+msgstr "कन्फिगरेसन विकल्प छैन ।"
 
 #: plugins/viewplugins/tonemapping/operators/icam/kis_icam_operator.cc:67
 msgid "Icam"
