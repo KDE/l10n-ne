@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdevelop\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-18 12:00+0200\n"
+"POT-Creation-Date: 2008-04-19 21:58+0200\n"
 "PO-Revision-Date: 2007-08-24 20:49+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -486,10 +486,16 @@ msgstr "दृश्य"
 
 #. i18n: tag text
 #. i18n: file ./src/kdevelopui.rc line 72
-#: rc.cpp:211
+#. i18n: tag text
+#. i18n: file ./plugins/appwizard/kdevappwizard.rc line 5
+#. i18n: tag text
+#. i18n: file ./src/kdevelopui.rc line 72
+#. i18n: tag text
+#. i18n: file ./plugins/appwizard/kdevappwizard.rc line 5
+#: rc.cpp:211 rc.cpp:493
 #, fuzzy
 #| msgid "Project"
-msgctxt "@title:meu"
+msgctxt "@title:menu"
 msgid "Project"
 msgstr "परियोजना"
 
@@ -1117,15 +1123,6 @@ msgstr ""
 msgid "Suppress find errors:"
 msgstr ""
 
-#. i18n: tag text
-#. i18n: file ./plugins/appwizard/kdevappwizard.rc line 5
-#: rc.cpp:493
-#, fuzzy
-#| msgid "Project"
-msgctxt "@title:menu"
-msgid "Project"
-msgstr "परियोजना"
-
 #. i18n: tag string
 #. i18n: file ./plugins/appwizard/importproject.ui line 13
 #: rc.cpp:496
@@ -1731,6 +1728,11 @@ msgstr "निर्माण प्रकार:"
 msgid "Ready"
 msgstr ""
 
+#: languages/cpp/cppcodecompletionworker.cpp:225
+#, kde-format
+msgid "%1 overloads of"
+msgstr ""
+
 #: languages/cpp/cppduchain/navigationwidget.cpp:114
 msgctxt "An unknown c++ declaration that is unknown"
 msgid "Unknown"
@@ -1742,7 +1744,7 @@ msgid "Class"
 msgstr ""
 
 #: languages/cpp/cppduchain/navigationwidget.cpp:229
-#: languages/cpp/debugger/variablecollection.cpp:665
+#: languages/cpp/debugger/variablecollection.cpp:675
 msgid "Variable"
 msgstr ""
 
@@ -1871,7 +1873,7 @@ msgid "Body:"
 msgstr ""
 
 #: languages/cpp/debugger/breakpoint.cpp:275
-#: languages/cpp/debugger/breakpointcontroller.cpp:991
+#: languages/cpp/debugger/breakpointcontroller.cpp:1077
 #, fuzzy
 #| msgid "Disabled:"
 msgid "Disabled"
@@ -1895,7 +1897,7 @@ msgstr ""
 
 #: languages/cpp/debugger/breakpoint.cpp:442
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:89
-#: languages/cpp/debugger/breakpointwidget.h:206
+#: languages/cpp/debugger/breakpointwidget.h:216
 #, fuzzy
 #| msgid "Code"
 msgctxt "Code breakpoint"
@@ -2065,7 +2067,7 @@ msgstr ""
 msgid "Instruction"
 msgstr "अन्तिम स्थान:"
 
-#: languages/cpp/debugger/framestackwidget.cpp:47
+#: languages/cpp/debugger/framestackwidget.cpp:49
 msgid ""
 "<b>Frame stack</b><p>Often referred to as the \"call stack\", this is a list "
 "showing what function is currently active and who called each function to "
@@ -2119,14 +2121,14 @@ msgid ""
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:68
-#: languages/cpp/debugger/breakpointwidget.h:156
+#: languages/cpp/debugger/breakpointwidget.h:161
 #, fuzzy
 #| msgid "Debugger frontend"
 msgid "Debugger Breakpoints"
 msgstr "त्रुटिमोचक फ्रन्टइन्ड"
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:69
-#: languages/cpp/debugger/breakpointwidget.h:157
+#: languages/cpp/debugger/breakpointwidget.h:162
 msgid ""
 "<b>Breakpoint list</b><p>Displays a list of breakpoints with their current "
 "status. Clicking on a breakpoint item allows you to change the breakpoint "
@@ -2134,30 +2136,30 @@ msgid ""
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:87
-#: languages/cpp/debugger/breakpointwidget.h:203
+#: languages/cpp/debugger/breakpointwidget.h:213
 msgctxt "New breakpoint"
 msgid "New"
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:94
-#: languages/cpp/debugger/breakpointwidget.h:215
+#: languages/cpp/debugger/breakpointwidget.h:225
 msgctxt "Data breakpoint"
 msgid "Data write"
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:95
-#: languages/cpp/debugger/breakpointwidget.h:218
+#: languages/cpp/debugger/breakpointwidget.h:228
 msgctxt "Data read breakpoint"
 msgid "Data read"
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:97
-#: languages/cpp/debugger/breakpointwidget.h:222
+#: languages/cpp/debugger/breakpointwidget.h:232
 msgid "Show text"
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:99
-#: languages/cpp/debugger/breakpointwidget.h:225
+#: languages/cpp/debugger/breakpointwidget.h:235
 #, fuzzy
 #| msgid "&Edit"
 msgid "Edit"
@@ -2165,34 +2167,34 @@ msgstr "सम्पादन गर्नुहोस्"
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:102
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:328
-#: languages/cpp/debugger/breakpointwidget.h:228
-#: languages/cpp/debugger/breakpointwidget.h:269
+#: languages/cpp/debugger/breakpointwidget.h:238
+#: languages/cpp/debugger/breakpointwidget.h:279
 #, fuzzy
 #| msgid "Disabled:"
 msgid "Disable"
 msgstr "अक्षम पारिएको:"
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:104
-#: languages/cpp/debugger/breakpointwidget.h:233
+#: languages/cpp/debugger/breakpointwidget.h:243
 msgid "Delete"
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:111
-#: languages/cpp/debugger/breakpointwidget.h:242
+#: languages/cpp/debugger/breakpointwidget.h:252
 #, fuzzy
 #| msgid "Disable Plugin"
 msgid "Disable all"
 msgstr "प्लगइन अक्षम पार्नुहोस्"
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:112
-#: languages/cpp/debugger/breakpointwidget.h:243
+#: languages/cpp/debugger/breakpointwidget.h:253
 #, fuzzy
 #| msgid "Enable Plugin"
 msgid "Enable all"
 msgstr "प्लगइन सक्षम पार्नुहोस्"
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:113
-#: languages/cpp/debugger/breakpointwidget.h:244
+#: languages/cpp/debugger/breakpointwidget.h:254
 msgid "Delete all"
 msgstr ""
 
@@ -2204,7 +2206,7 @@ msgid ""
 msgstr ""
 
 #: languages/cpp/debugger/gdbbreakpointwidget.cpp:332
-#: languages/cpp/debugger/breakpointwidget.h:273
+#: languages/cpp/debugger/breakpointwidget.h:283
 #, fuzzy
 #| msgid "Enabled:"
 msgid "Enable"
@@ -2384,57 +2386,61 @@ msgstr ""
 msgid "Special debugger views"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:623
+#: languages/cpp/debugger/breakpointcontroller.cpp:237
+msgid "Double-click to create new code breakpoint"
+msgstr ""
+
+#: languages/cpp/debugger/breakpointcontroller.cpp:707
 #, fuzzy
 #| msgid "Debugger frontend"
 msgid "Breakpoint"
 msgstr "त्रुटिमोचक फ्रन्टइन्ड"
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:942
+#: languages/cpp/debugger/breakpointcontroller.cpp:1028
 msgid " temporary"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:944
+#: languages/cpp/debugger/breakpointcontroller.cpp:1030
 msgid " hw"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:991
+#: languages/cpp/debugger/breakpointcontroller.cpp:1077
 #, fuzzy
 #| msgid "Enabled:"
 msgid "Enabled"
 msgstr "सक्षम पारिएको:"
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1020
-#: languages/cpp/debugger/variablecollection.cpp:671
+#: languages/cpp/debugger/breakpointcontroller.cpp:1106
+#: languages/cpp/debugger/variablecollection.cpp:681
 #: buildtools/managers/cmake/cmakecachemodel.cpp:34
 msgid "Type"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1022
+#: languages/cpp/debugger/breakpointcontroller.cpp:1108
 msgid "Status"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1024
+#: languages/cpp/debugger/breakpointcontroller.cpp:1110
 #, fuzzy
 #| msgid "Location:"
 msgid "Location"
 msgstr "स्थान:"
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1026
+#: languages/cpp/debugger/breakpointcontroller.cpp:1112
 #, fuzzy
 #| msgid "Maintainer"
 msgid "Condition"
 msgstr "मर्मतकर्ता"
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1028
+#: languages/cpp/debugger/breakpointcontroller.cpp:1114
 msgid "Ignore Count"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1030
+#: languages/cpp/debugger/breakpointcontroller.cpp:1116
 msgid "Hits"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointcontroller.cpp:1032
+#: languages/cpp/debugger/breakpointcontroller.cpp:1118
 #, fuzzy
 #| msgid "creating"
 msgid "Tracing"
@@ -2787,7 +2793,7 @@ msgstr ""
 msgid "Process exited"
 msgstr "निर्माण प्रक्रिया असफल भयो"
 
-#: languages/cpp/debugger/variablecollection.cpp:668
+#: languages/cpp/debugger/variablecollection.cpp:678
 #: buildtools/managers/cmake/cmakecachemodel.cpp:35
 #, fuzzy
 #| msgid "Value 1"
@@ -3519,7 +3525,7 @@ msgstr "%1 का लागि भाषा प्लगइन फेला प�
 msgid "Could not create language plugin for %1."
 msgstr "%1 का लागि भाषा प्लगइन सिर्जना गर्न सकेन ।"
 
-#: buildtools/managers/cmake/cmakemanager.cpp:685
+#: buildtools/managers/cmake/cmakemanager.cpp:706
 msgid "Jump to target definition"
 msgstr ""
 
@@ -3655,17 +3661,25 @@ msgid "Uninstalled headers"
 msgstr "हेडर विस्थापन गरियो"
 
 #: buildtools/builders/cmakebuilder/cmakebuilder.cpp:181
+#: buildtools/builders/qmakebuilder/qmakebuilder.cpp:169
+#: buildtools/builders/makebuilder/makebuilder.cpp:308
+#, fuzzy
+#| msgid "Bu&ild"
+msgid "Build"
+msgstr "निर्माण गर्नुहोस्"
+
+#: buildtools/builders/cmakebuilder/cmakebuilder.cpp:182
 #, fuzzy, kde-format
 #| msgid "Make: %1"
 msgid "CMake: %1"
 msgstr "मेक: %1"
 
-#: buildtools/builders/qmakebuilder/qmakebuilder.cpp:169
+#: buildtools/builders/qmakebuilder/qmakebuilder.cpp:170
 #, kde-format
 msgid "QMake: %1"
 msgstr "QMake: %1"
 
-#: buildtools/builders/makebuilder/makebuilder.cpp:308
+#: buildtools/builders/makebuilder/makebuilder.cpp:309
 #, kde-format
 msgid "Make: %1"
 msgstr "मेक: %1"
@@ -3731,6 +3745,10 @@ msgstr ""
 
 #: plugins/grepview/grepviewplugin.cpp:214
 msgid "Unable to create a temporary file for search."
+msgstr ""
+
+#: plugins/grepview/grepviewplugin.cpp:332
+msgid "Find in Files"
 msgstr ""
 
 #: plugins/appwizard/projectvcspage.cpp:44
@@ -4037,15 +4055,20 @@ msgstr "कार्य सम्पादक"
 msgid "Object Inspector"
 msgstr "वस्तु निरिक्षक"
 
-#: languages/cpp/debugger/breakpointwidget.h:64
-msgid "Hit count"
+#: languages/cpp/debugger/breakpointwidget.h:68
+#: languages/cpp/debugger/breakpointwidget.h:113
+msgid "Not hit yet"
 msgstr ""
 
-#: languages/cpp/debugger/breakpointwidget.h:78
+#: languages/cpp/debugger/breakpointwidget.h:75
 #, fuzzy
 #| msgid "Core"
 msgid "Ignore"
 msgstr "कोर"
+
+#: languages/cpp/debugger/breakpointwidget.h:81
+msgid "next hits"
+msgstr ""
 
 #: languages/cpp/debugger/breakpoint.h:147
 #, fuzzy
@@ -4062,6 +4085,12 @@ msgid "Read Watchpoint"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Project"
+#~ msgctxt "@title:meu"
+#~ msgid "Project"
+#~ msgstr "परियोजना"
+
+#, fuzzy
 #~| msgid "Patches"
 #~ msgid "&Watch"
 #~ msgstr "प्याच"
@@ -4074,9 +4103,6 @@ msgstr ""
 
 #~ msgid "&Project"
 #~ msgstr "परियोजना"
-
-#~ msgid "Bu&ild"
-#~ msgstr "निर्माण गर्नुहोस्"
 
 #~ msgid "&Build"
 #~ msgstr "निर्माण"
