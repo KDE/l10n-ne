@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-19 21:54+0200\n"
+"POT-Creation-Date: 2008-04-21 20:00+0200\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1597,7 +1597,7 @@ msgstr "पछिल्लो लाइनमा जानुहोस्..."
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 90
 #: rc.cpp:714 rc.cpp:865 kdeui/util/kstandardguiitem.cpp:265
 #: kdeui/util/kkeyserver_x11.cpp:109 kdeui/findreplace/kreplace.cpp:353
-#: khtml/ecma/kjs_debugwin.cpp:482 khtml/ecma/debugger/debugwindow.cpp:185
+#: khtml/ecma/kjs_debugwin.cpp:482 khtml/ecma/debugger/debugwindow.cpp:186
 #: kross/ui/view.cpp:308
 msgid "Stop"
 msgstr "रोक्नुहोस्"
@@ -3118,7 +3118,9 @@ msgid "pm"
 msgstr "अपरान्ह"
 
 #: kdecore/util/klibloader.cpp:98
-msgid "Library not found"
+#, fuzzy, kde-format
+#| msgid "Library not found"
+msgid "Library \"%1\" not found"
 msgstr "लाइब्रेरी फेला परेन"
 
 #: kdecore/util/klibloader.cpp:146
@@ -3175,11 +3177,11 @@ msgstr "%1 लाइब्रेरीले केडीई ४ मिल्द
 msgid "The plugin '%1' uses an incompatible KDE library (%2)."
 msgstr "प्लगइन '%1' ले अमिल्दो केडीई लाइब्रेरी प्रयोग गर्दछ । (%2)"
 
-#: kdecore/config/kconfig.cpp:662
+#: kdecore/config/kconfig.cpp:679
 msgid "Please contact your system administrator."
 msgstr "कृपया तपाईँको प्रणाली प्रबन्धकसँग सम्पर्क गर्नुहोस् ।"
 
-#: kdecore/config/kconfigini.cpp:479
+#: kdecore/config/kconfigini.cpp:489
 #, fuzzy, kde-format
 #| msgid "Configuration files"
 msgid "Configuration file \"%1\" not writable.\n"
@@ -3520,7 +3522,7 @@ msgstr "केडीई अनुप्रयोग"
 msgid "Qt"
 msgstr "Qt"
 
-#: kdecore/kernel/kcmdlineargs.cpp:489 khtml/khtml_part.cpp:4798
+#: kdecore/kernel/kcmdlineargs.cpp:489 khtml/khtml_part.cpp:4800
 msgid "KDE"
 msgstr "केडीई"
 
@@ -3771,7 +3773,7 @@ msgctxt "@item license"
 msgid "Not specified"
 msgstr "निर्दिष्ट नगरिएको"
 
-#: kdecore/kernel/kaboutdata.cpp:791
+#: kdecore/kernel/kaboutdata.cpp:805
 msgctxt "replace this with information about your translation team"
 msgid ""
 "<p>KDE is translated into many languages thanks to the work of the "
@@ -9479,8 +9481,8 @@ msgstr "Testkhtml"
 msgid "a basic web browser using the KHTML library"
 msgstr "KHTML लाइब्रेरी प्रयोग गर्ने आधार वेब ब्राउजर"
 
-#: khtml/khtml_run.cpp:97 khtml/khtml_part.cpp:3794 khtml/khtml_part.cpp:4010
-#: khtml/khtml_part.cpp:4393 kparts/browserrun.cpp:443
+#: khtml/khtml_run.cpp:97 khtml/khtml_part.cpp:3796 khtml/khtml_part.cpp:4012
+#: khtml/khtml_part.cpp:4395 kparts/browserrun.cpp:443
 msgid "Save As"
 msgstr "यस रूपमा बचत गर्नुहोस्"
 
@@ -9951,129 +9953,131 @@ msgid "&Disable Error Reporting"
 msgstr "त्रुटि प्रतिवेदन अक्षम पार्नुहोस्"
 
 #: khtml/khtml_part.cpp:1194
-#, kde-format
-msgid "<b>Error</b>: %1: %2"
+#, fuzzy, kde-format
+#| msgid "<b>Error</b>: %1: %2"
+msgid "<qt><b>Error</b>: %1: %2</qt>"
 msgstr "<b>त्रुटि</b>: %1: %2"
 
-#: khtml/khtml_part.cpp:1242
-#, kde-format
-msgid "<b>Error</b>: node %1: %2"
+#: khtml/khtml_part.cpp:1243
+#, fuzzy, kde-format
+#| msgid "<b>Error</b>: node %1: %2"
+msgid "<qt><b>Error</b>: node %1: %2</qt>"
 msgstr "<b>त्रुटि</b>: नोड %1: %2"
 
-#: khtml/khtml_part.cpp:1351
+#: khtml/khtml_part.cpp:1353
 msgid "Display Images on Page"
 msgstr "पृष्ठमा छवि प्रर्दशन गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:1709
+#: khtml/khtml_part.cpp:1711
 #, fuzzy, kde-format
 #| msgid "<b>Error</b>: %1: %2"
 msgid "Error: %1 - %2"
 msgstr "<b>त्रुटि</b>: %1: %2"
 
-#: khtml/khtml_part.cpp:1714
+#: khtml/khtml_part.cpp:1716
 msgid "The requested operation could not be completed"
 msgstr "अनुरोध गरिएको सञ्चालन सम्पन्न गर्न सक्दैन"
 
-#: khtml/khtml_part.cpp:1720
+#: khtml/khtml_part.cpp:1722
 msgid "Technical Reason: "
 msgstr "प्राविधिक कारण: "
 
-#: khtml/khtml_part.cpp:1725
+#: khtml/khtml_part.cpp:1727
 msgid "Details of the Request:"
 msgstr "अनुरोधको विवरण:"
 
-#: khtml/khtml_part.cpp:1727
+#: khtml/khtml_part.cpp:1729
 #, kde-format
 msgid "URL: %1"
 msgstr "URL: %1"
 
-#: khtml/khtml_part.cpp:1730
+#: khtml/khtml_part.cpp:1732
 #, kde-format
 msgid "Protocol: %1"
 msgstr ""
 
-#: khtml/khtml_part.cpp:1733
+#: khtml/khtml_part.cpp:1735
 #, kde-format
 msgid "Date and Time: %1"
 msgstr "मिति र समय: %1"
 
-#: khtml/khtml_part.cpp:1735
+#: khtml/khtml_part.cpp:1737
 #, kde-format
 msgid "Additional Information: %1"
 msgstr "थप जानकारी: %1"
 
-#: khtml/khtml_part.cpp:1737 kutils/kpluginselector.cpp:1657
+#: khtml/khtml_part.cpp:1739 kutils/kpluginselector.cpp:1657
 msgid "Description:"
 msgstr "वर्णन:"
 
-#: khtml/khtml_part.cpp:1743
+#: khtml/khtml_part.cpp:1745
 msgid "Possible Causes:"
 msgstr "सम्भावित कारण:"
 
-#: khtml/khtml_part.cpp:1750
+#: khtml/khtml_part.cpp:1752
 msgid "Possible Solutions:"
 msgstr "सम्भावित समाधान:"
 
-#: khtml/khtml_part.cpp:2103
+#: khtml/khtml_part.cpp:2105
 msgid "Page loaded."
 msgstr "पृष्ठ लोड गरियो ।"
 
-#: khtml/khtml_part.cpp:2105
+#: khtml/khtml_part.cpp:2107
 #, kde-format
 msgid "%1 Image of %2 loaded."
 msgid_plural "%1 Images of %2 loaded."
 msgstr[0] "%1 छवि %2 बाट लोड गरियो ।"
 msgstr[1] "%1 छवि %2 बाट लोड गरियो ।"
 
-#: khtml/khtml_part.cpp:2266
+#: khtml/khtml_part.cpp:2268
 msgid "Automatic Detection"
 msgstr "स्वचालित खोज"
 
-#: khtml/khtml_part.cpp:3602 khtml/khtml_part.cpp:3689
-#: khtml/khtml_part.cpp:3700
+#: khtml/khtml_part.cpp:3604 khtml/khtml_part.cpp:3691
+#: khtml/khtml_part.cpp:3702
 msgid " (In new window)"
 msgstr " (नयाँ सञ्झ्यालमा)"
 
-#: khtml/khtml_part.cpp:3641
+#: khtml/khtml_part.cpp:3643
 msgid "Symbolic Link"
 msgstr "साङ्केतिक लिङ्क"
 
-#: khtml/khtml_part.cpp:3643
+#: khtml/khtml_part.cpp:3645
 #, kde-format
 msgid "%1 (Link)"
 msgstr "%1 (लिङ्क)"
 
-#: khtml/khtml_part.cpp:3663
+#: khtml/khtml_part.cpp:3665
 #, kde-format
 msgid "%2 (%1 bytes)"
 msgstr "%2 (%1 बाइट)"
 
-#: khtml/khtml_part.cpp:3667
+#: khtml/khtml_part.cpp:3669
 #, kde-format
 msgid "%2 (%1 K)"
 msgstr "%2 (%1 K)"
 
-#: khtml/khtml_part.cpp:3702
+#: khtml/khtml_part.cpp:3704
 msgid " (In other frame)"
 msgstr " (अन्य फ्रेममा)"
 
-#: khtml/khtml_part.cpp:3707
+#: khtml/khtml_part.cpp:3709
 msgid "Email to: "
 msgstr "यसलाई इमेल: "
 
-#: khtml/khtml_part.cpp:3713
+#: khtml/khtml_part.cpp:3715
 msgid " - Subject: "
 msgstr "विषय: "
 
-#: khtml/khtml_part.cpp:3715
+#: khtml/khtml_part.cpp:3717
 msgid " - CC: "
 msgstr "बोधार्थ प्रतिलिपि: "
 
-#: khtml/khtml_part.cpp:3717
+#: khtml/khtml_part.cpp:3719
 msgid " - BCC: "
 msgstr "गुप्त बोधार्थ प्रतिलिपि: "
 
-#: khtml/khtml_part.cpp:3799
+#: khtml/khtml_part.cpp:3801
 #, kde-format
 msgid ""
 "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to follow "
@@ -10082,44 +10086,44 @@ msgstr ""
 "<qt>यो अविश्वास गरिएको पृष्ठ <br /><b>%1</b> मा लिङ्क हुन्छ ।<br />तपाईँ लिङ्क अनुगमन "
 "गर्न चाहनुहुन्छ ?</qt>"
 
-#: khtml/khtml_part.cpp:3800
+#: khtml/khtml_part.cpp:3802
 msgid "Follow"
 msgstr "अनुगमन गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:3907
+#: khtml/khtml_part.cpp:3909
 msgid "Frame Information"
 msgstr "फ्रेम सूचना"
 
-#: khtml/khtml_part.cpp:3913
+#: khtml/khtml_part.cpp:3915
 #, kde-format
 msgid "   <a href=\"%1\">[Properties]</a>"
 msgstr "   <a href=\"%1\">[Properties]</a>"
 
-#: khtml/khtml_part.cpp:3998
+#: khtml/khtml_part.cpp:4000
 msgid "Save Background Image As"
 msgstr "यस रूपमा छवि पृष्ठभूमी बचत गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:4102
+#: khtml/khtml_part.cpp:4104
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr ""
 
-#: khtml/khtml_part.cpp:4104
+#: khtml/khtml_part.cpp:4106
 msgid "SSL"
 msgstr ""
 
-#: khtml/khtml_part.cpp:4121
+#: khtml/khtml_part.cpp:4123
 msgid "Save Frame As"
 msgstr "यसरूपमा फ्रेम बचत गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:4163
+#: khtml/khtml_part.cpp:4165
 msgid "&Find in Frame..."
 msgstr "ढाँचामा फेला पार्नुहोस्..."
 
-#: khtml/khtml_part.cpp:4165 kdeui/actions/kstandardaction_p.h:64
+#: khtml/khtml_part.cpp:4167 kdeui/actions/kstandardaction_p.h:64
 msgid "&Find..."
 msgstr "फेला पार्नुहोस्..."
 
-#: khtml/khtml_part.cpp:4689
+#: khtml/khtml_part.cpp:4691
 msgid ""
 "Warning:  This is a secure form but it is attempting to send your data back "
 "unencrypted.\n"
@@ -10131,16 +10135,16 @@ msgstr ""
 "तेर्स्रो पक्षले काट्न र सो जानकारी हेर्न सक्षम हुनसक्छ ।\n"
 "तपाईँ निरन्तरता दिन यकीन हुनुहुन्छ ?"
 
-#: khtml/khtml_part.cpp:4692 khtml/khtml_part.cpp:4701
-#: khtml/khtml_part.cpp:4725
+#: khtml/khtml_part.cpp:4694 khtml/khtml_part.cpp:4703
+#: khtml/khtml_part.cpp:4727
 msgid "Network Transmission"
 msgstr "सञ्जाल प्रसारण"
 
-#: khtml/khtml_part.cpp:4692 khtml/khtml_part.cpp:4702
+#: khtml/khtml_part.cpp:4694 khtml/khtml_part.cpp:4704
 msgid "&Send Unencrypted"
 msgstr "गुप्तिकरण नगरिएको पठाउनुहोस्"
 
-#: khtml/khtml_part.cpp:4699
+#: khtml/khtml_part.cpp:4701
 msgid ""
 "Warning: Your data is about to be transmitted across the network "
 "unencrypted.\n"
@@ -10149,7 +10153,7 @@ msgstr ""
 "चेतावनी: तपाईँको डेटा गुप्तिकरण नगरिएको सञ्जाल भरी प्रसारण गर्न लागिएको छ ।\n"
 "तपाईँ निरन्तरता दिन चाहनुहुन्छ ?"
 
-#: khtml/khtml_part.cpp:4723
+#: khtml/khtml_part.cpp:4725
 msgid ""
 "This site is attempting to submit form data via email.\n"
 "Do you want to continue?"
@@ -10157,11 +10161,11 @@ msgstr ""
 "यो साइटले इमेल मार्फत फारम डेटा पेश गर्ने प्रयास गर्दैछ ।\n"
 "तपाईँ निरन्तरता दिन चाहनुहुन्छ ?"
 
-#: khtml/khtml_part.cpp:4726
+#: khtml/khtml_part.cpp:4728
 msgid "&Send Email"
 msgstr "इमेल पठाउनुहोस्"
 
-#: khtml/khtml_part.cpp:4748
+#: khtml/khtml_part.cpp:4750
 #, kde-format
 msgid ""
 "<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
@@ -10170,12 +10174,12 @@ msgstr ""
 "<qt>फारम तपाईँको स्थानीय फाइल प्रणालीको <br /><b>%1</b><br />मा पेश गरिन्छ ।<br /"
 ">तपाईँ फारम पेश गर्न चाहनुहुन्छ ?</qt>"
 
-#: khtml/khtml_part.cpp:4749 khtml/khtmlview.cpp:2933 khtml/khtmlview.cpp:2975
+#: khtml/khtml_part.cpp:4751 khtml/khtmlview.cpp:2933 khtml/khtmlview.cpp:2975
 #: khtml/html/html_formimpl.cpp:1587 khtml/html/html_formimpl.cpp:2195
 msgid "Submit"
 msgstr "पेश गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:4798
+#: khtml/khtml_part.cpp:4800
 msgid ""
 "This site attempted to attach a file from your computer in the form "
 "submission. The attachment was removed for your protection."
@@ -10183,46 +10187,46 @@ msgstr ""
 "यो साइटले फारम पेश गरेर तपाईँको कम्प्युटरबाट फाइल सङ्लग्न गर्ने प्रयास गर्यो । तपाईँको "
 "सुरक्षाका लागि सङ्लग्नता हटाइयो ।"
 
-#: khtml/khtml_part.cpp:5803
+#: khtml/khtml_part.cpp:5805
 #, kde-format
 msgid "(%1/s)"
 msgstr "(%1/s)"
 
-#: khtml/khtml_part.cpp:6860
+#: khtml/khtml_part.cpp:6862
 msgid "Security Warning"
 msgstr "सुरक्षा चेतावनी"
 
-#: khtml/khtml_part.cpp:6866
+#: khtml/khtml_part.cpp:6868
 #, kde-format
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>अविश्वासिलो पृष्ठबाट<br /><b>%1</b><br /> मा पहुँच अस्वीकार गरियो ।</qt>"
 
-#: khtml/khtml_part.cpp:6867 khtml/java/kjavaappletserver.cpp:791
+#: khtml/khtml_part.cpp:6869 khtml/java/kjavaappletserver.cpp:791
 msgid "Security Alert"
 msgstr "सुरक्षा सावधानी"
 
-#: khtml/khtml_part.cpp:7214
+#: khtml/khtml_part.cpp:7216
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr "फारम डेटा र पासवर्डका लागि '%1' वालेट खोलिन्छ र प्रयोग गरिन्छ ।"
 
-#: khtml/khtml_part.cpp:7271
+#: khtml/khtml_part.cpp:7273
 msgid "&Close Wallet"
 msgstr "वालेट बन्द गर्नुहोस्"
 
-#: khtml/khtml_part.cpp:7314
+#: khtml/khtml_part.cpp:7316
 msgid "JavaScript &Debugger"
 msgstr "जाभास्क्रिप्ट त्रुटिमोचक"
 
-#: khtml/khtml_part.cpp:7347
+#: khtml/khtml_part.cpp:7349
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr "यो पृष्ठलाई जाभास्क्रिप्टबाट नयाँ सञ्झ्याल खोल्न निषेध गरिएकोछ ।"
 
-#: khtml/khtml_part.cpp:7353
+#: khtml/khtml_part.cpp:7355
 msgid "Popup Window Blocked"
 msgstr "पपअप सञ्झ्याल रोकियो"
 
-#: khtml/khtml_part.cpp:7353
+#: khtml/khtml_part.cpp:7355
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -10232,7 +10236,7 @@ msgstr ""
 "तपाईँले यो व्यवहार नियन्त्रण गर्न वा पपअप खोल्न स्थितिपट्टीको यो प्रतिमामा\n"
 "क्लिक गर्न सक्नुहुन्छ ।"
 
-#: khtml/khtml_part.cpp:7366
+#: khtml/khtml_part.cpp:7368
 #, fuzzy, kde-format
 #| msgid "&Show Blocked Popup Window"
 #| msgid_plural "Show %1 Blocked Popup Windows"
@@ -10241,11 +10245,11 @@ msgid_plural "&Show %1 Blocked Popup Windows"
 msgstr[0] "रोकिएको पपअप सञ्झ्याल देखाउनुहोस्"
 msgstr[1] " %1 रोकिएको पपअप सञ्झ्याल देखाउनुहोस्"
 
-#: khtml/khtml_part.cpp:7367
+#: khtml/khtml_part.cpp:7369
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "रोकिएको सञ्झ्यालको निस्क्रिय पपअप सूचना देखाउनुहोस्"
 
-#: khtml/khtml_part.cpp:7369
+#: khtml/khtml_part.cpp:7371
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "जाभास्क्रिप्ट नयाँ सञ्झ्याल नीति कन्फिगर गर्नुहोस्..."
 
@@ -10267,7 +10271,7 @@ msgid "Available Tests: %1 (ignored: %2)"
 msgstr "उपलब्ध परीक्षण: %1 (उपेक्षित: %2)"
 
 #: khtml/test_regression_gui_window.cpp:563 khtml/ecma/kjs_debugwin.cpp:481
-#: khtml/ecma/debugger/debugwindow.cpp:177
+#: khtml/ecma/debugger/debugwindow.cpp:178
 msgid "Continue"
 msgstr "जारी राख्नुहोस्"
 
@@ -10358,7 +10362,7 @@ msgstr "जाभास्क्रिप्ट त्रुटि"
 msgid "&Do not show this message again"
 msgstr "यो सन्देश फेरि नदेखाउनुहोस्"
 
-#: khtml/ecma/kjs_debugwin.cpp:385 khtml/ecma/debugger/debugwindow.cpp:122
+#: khtml/ecma/kjs_debugwin.cpp:385 khtml/ecma/debugger/debugwindow.cpp:123
 msgid "JavaScript Debugger"
 msgstr "जाभास्क्रिप्ट त्रुटिमोचक"
 
@@ -10387,7 +10391,7 @@ msgstr "जारी राख्नुहोस्"
 msgid "St&op"
 msgstr "रोक्नुहोस्"
 
-#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:184
+#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:185
 msgid "&Break at Next Statement"
 msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
 
@@ -10396,7 +10400,7 @@ msgctxt "Next breakpoint"
 msgid "Next"
 msgstr "पछिल्लो"
 
-#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:593
+#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:594
 #, kde-format
 msgid "Parse error at %1 line %2"
 msgstr "%2 को %1 रेखामा पद वर्णन त्रुटि"
@@ -10412,7 +10416,7 @@ msgstr ""
 "\n"
 "%1"
 
-#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:629
+#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:631
 #, kde-format
 msgid ""
 "An error occurred while attempting to run a script on this page.\n"
@@ -10528,7 +10532,7 @@ msgstr ""
 "1</p> खोल्नेछ ।<br /> तपाईँ पेश गरिने सो फारमलाई अनुमति दिन चाहनुहुन्छ ?</qt>"
 
 #: khtml/ecma/debugger/debugdocument.cpp:210
-#: khtml/ecma/debugger/debugwindow.cpp:127
+#: khtml/ecma/debugger/debugwindow.cpp:128
 msgid ""
 "A KDE text-editor component could not be found;\n"
 "please check your KDE installation."
@@ -10556,36 +10560,36 @@ msgstr ""
 msgid "Reference"
 msgstr "सन्दर्भ त्रुटि"
 
-#: khtml/ecma/debugger/debugwindow.cpp:179
 #: khtml/ecma/debugger/debugwindow.cpp:180
+#: khtml/ecma/debugger/debugwindow.cpp:181
 msgid "Continue script execution"
 msgstr "स्क्रिप्ट कार्यान्वयन जारी राख्नुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:191
-#: khtml/ecma/debugger/debugwindow.cpp:193
+#: khtml/ecma/debugger/debugwindow.cpp:192
 #: khtml/ecma/debugger/debugwindow.cpp:194
+#: khtml/ecma/debugger/debugwindow.cpp:195
 msgid "Step Into"
 msgstr "चरणमा जानुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:198
-#: khtml/ecma/debugger/debugwindow.cpp:200
+#: khtml/ecma/debugger/debugwindow.cpp:199
 #: khtml/ecma/debugger/debugwindow.cpp:201
+#: khtml/ecma/debugger/debugwindow.cpp:202
 msgid "Step Out"
 msgstr "चरणबाट बाहिरनुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:205
-#: khtml/ecma/debugger/debugwindow.cpp:207
+#: khtml/ecma/debugger/debugwindow.cpp:206
 #: khtml/ecma/debugger/debugwindow.cpp:208
+#: khtml/ecma/debugger/debugwindow.cpp:209
 msgid "Step Over"
 msgstr "माथिल्लो चरणमा जानुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:248
+#: khtml/ecma/debugger/debugwindow.cpp:249
 #, fuzzy
 #| msgid "Close Document"
 msgid "Close source"
 msgstr "कागजात बन्द गर्नुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:254
+#: khtml/ecma/debugger/debugwindow.cpp:255
 msgid "Ready"
 msgstr "तयार"
 
