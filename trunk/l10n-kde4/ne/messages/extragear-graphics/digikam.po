@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-21 20:21+0200\n"
+"POT-Creation-Date: 2008-04-24 02:07+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1388,7 +1388,7 @@ msgid "1/%1 s"
 msgstr ""
 
 #: libs/dialogs/imagedialog.cpp:169
-#: imageplugins/lenscorrection/klensfun.cpp:127
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:126
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:320
 #, fuzzy
 #| msgid "Make:"
@@ -1396,7 +1396,7 @@ msgid "Make:"
 msgstr "निर्माण:"
 
 #: libs/dialogs/imagedialog.cpp:170
-#: imageplugins/lenscorrection/klensfun.cpp:128
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:127
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:322
 msgid "Model:"
 msgstr "नमुना:"
@@ -1409,7 +1409,7 @@ msgid "Created:"
 msgstr "सिर्जना:"
 
 #: libs/dialogs/imagedialog.cpp:172
-#: imageplugins/lenscorrection/klensfun.cpp:138
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:137
 #, fuzzy
 #| msgid "Aperture/Focal:"
 msgid "Aperture:"
@@ -3260,18 +3260,18 @@ msgstr ""
 
 #: digikam/welcomepageview.cpp:110
 msgid ""
-"Database file can be stored on a customized place to support remote album "
-"library path"
+"The database file can be stored on a customized place to support remote "
+"album library paths"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:111
-msgid "Supports of multiple roots album paths"
+msgid "Support of multiple roots album paths"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:112
 msgid ""
-"Thumbnails-bar integration with preview mode and in editor to easy naviguate "
-"between images"
+"Thumbnails-bar integration with preview mode and in editor for easy "
+"navigation between images"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:113
@@ -3282,12 +3282,16 @@ msgstr ""
 msgid "Geolocation performed using KDE4 Marble interface"
 msgstr ""
 
-#: digikam/welcomepageview.cpp:118
+#: digikam/welcomepageview.cpp:115
+msgid "New tool based on LensFun libary to fix lens defaults automatically"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:119
 #, kde-format
 msgid "<li>%1</li>\n"
 msgstr "<li>%1</li>\n"
 
-#: digikam/welcomepageview.cpp:131
+#: digikam/welcomepageview.cpp:132
 #, fuzzy, kde-format
 #| msgid ""
 #| "_: %1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior "
@@ -3318,10 +3322,10 @@ msgctxt ""
 msgid ""
 "<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2><p>digiKam is a photo "
 "management program for the K Desktop Environment. It is designed to import, "
-"organize, and export your digital photographs on your computer.</p><p>You "
-"are currently in the Album view mode of digiKam. The Albums are the real "
-"containers where your files are stored, they are identical with the folders "
-"on disk.</p>\n"
+"organize, enhance and export your digital photographs on your computer.</"
+"p><p>You are currently in the Album view mode of digiKam. The Albums are the "
+"real containers where your files are stored, they are identical with the "
+"folders on disk.</p>\n"
 "<ul><li>digiKam has many powerful features which are described in the <a "
 "href=\"%2\">documentation</a></li>\n"
 "<li>The <a href=\"%3\">digiKam homepage</A> provides information about new "
@@ -3334,7 +3338,7 @@ msgid ""
 "%6\n"
 "<p>We hope that you will enjoy digiKam.</p>\n"
 "<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The digiKam Team</p>"
+"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The digiKam team</p>"
 msgstr ""
 "<h2 style='margin-top: 0px;'>डिजिक्याम %1 मा स्वागतम</h2><p>डिजिक्याम केडीईका "
 "लागि फोटो व्यवस्थापन गर्ने कार्यक्रम हो । यसलाई तपाईँको डिजिटल फोटोहरू कम्प्युटरमा आयात "
@@ -3494,6 +3498,7 @@ msgid "Main developer and coordinator"
 msgstr "मुख्य विकासकर्ता र समन्वयकर्ता"
 
 #: digikam/main.cpp:122 showfoto/main.cpp:93 themedesigner/main.cpp:58
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:82
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:79
 #: imageplugins/texture/imageeffect_texture.cpp:78
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:93
@@ -3506,7 +3511,6 @@ msgstr "मुख्य विकासकर्ता र समन्वयक
 #: imageplugins/infrared/imageeffect_infrared.cpp:80
 #: imageplugins/perspective/imageeffect_perspective.cpp:85
 #: imageplugins/superimpose/imageeffect_superimpose.cpp:93
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:85
 msgid "Marcel Wiesweg"
 msgstr ""
 
@@ -3515,7 +3519,8 @@ msgstr ""
 #: digikam/main.cpp:180 showfoto/main.cpp:94 showfoto/main.cpp:99
 #: showfoto/main.cpp:104 showfoto/main.cpp:113 showfoto/main.cpp:131
 #: showfoto/main.cpp:135 themedesigner/main.cpp:59 themedesigner/main.cpp:64
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:79
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:80
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:82
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:84
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:79
 #: imageplugins/texture/imageeffect_texture.cpp:78
@@ -3529,7 +3534,6 @@ msgstr ""
 #: imageplugins/infrared/imageeffect_infrared.cpp:80
 #: imageplugins/perspective/imageeffect_perspective.cpp:85
 #: imageplugins/superimpose/imageeffect_superimpose.cpp:93
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:85
 msgid "Developer"
 msgstr "विकासकर्ता"
 
@@ -5925,7 +5929,7 @@ msgstr "ट्याग"
 #. i18n: file ./digikam/digikamui.rc line 33
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 24
-#: rc.cpp:11 rc.cpp:308
+#: rc.cpp:11 rc.cpp:299
 msgid "&Image"
 msgstr "छवि"
 
@@ -5937,7 +5941,7 @@ msgstr "छवि"
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 24
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 16
-#: rc.cpp:14 rc.cpp:44 rc.cpp:257 rc.cpp:305
+#: rc.cpp:14 rc.cpp:44 rc.cpp:248 rc.cpp:296
 #, fuzzy
 #| msgid "&Edit..."
 msgid "&Edit"
@@ -5953,7 +5957,7 @@ msgstr "सम्पादन..."
 #. i18n: file ./utilities/lighttable/lighttablewindowui.rc line 24
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 41
-#: rc.cpp:17 rc.cpp:47 rc.cpp:260 rc.cpp:290 rc.cpp:311
+#: rc.cpp:17 rc.cpp:47 rc.cpp:251 rc.cpp:281 rc.cpp:302
 #: utilities/cameragui/cameraiconview.cpp:459
 #, fuzzy
 #| msgid "View..."
@@ -6000,7 +6004,7 @@ msgstr "निर्यात"
 #. i18n: file ./utilities/lighttable/lighttablewindowui.rc line 45
 #. i18n: tag Text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 56
-#: rc.cpp:32 rc.cpp:68 rc.cpp:281 rc.cpp:296 rc.cpp:317
+#: rc.cpp:32 rc.cpp:68 rc.cpp:272 rc.cpp:287 rc.cpp:308
 #, fuzzy
 #| msgid "Settings"
 msgid "&Settings"
@@ -6016,7 +6020,7 @@ msgstr "सेटिङ"
 #. i18n: file ./utilities/lighttable/lighttablewindowui.rc line 37
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 48
-#: rc.cpp:35 rc.cpp:65 rc.cpp:278 rc.cpp:293 rc.cpp:314
+#: rc.cpp:35 rc.cpp:65 rc.cpp:269 rc.cpp:284 rc.cpp:305
 #, fuzzy
 #| msgid "&Del"
 msgid "&Help"
@@ -6027,7 +6031,7 @@ msgstr "मेट्नुहोस्"
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 99
 #. i18n: tag text
-#. i18n: file ./imageplugins/lenscorrection/digikamimageplugin_lenscorrection_ui.rc line 13
+#. i18n: file ./imageplugins/lenscorrection/digikamimageplugin_lenscorrection_ui.rc line 17
 #. i18n: tag text
 #. i18n: file ./imageplugins/noisereduction/digikamimageplugin_noisereduction_ui.rc line 13
 #. i18n: tag text
@@ -6038,8 +6042,6 @@ msgstr "मेट्नुहोस्"
 #. i18n: file ./imageplugins/hotpixels/digikamimageplugin_hotpixels_ui.rc line 13
 #. i18n: tag text
 #. i18n: file ./imageplugins/filmgrain/digikamimageplugin_filmgrain_ui.rc line 13
-#. i18n: tag text
-#. i18n: file ./imageplugins/antivignetting/digikamimageplugin_antivignetting_ui.rc line 13
 #. i18n: tag text
 #. i18n: file ./imageplugins/whitebalance/digikamimageplugin_whitebalance_ui.rc line 13
 #. i18n: tag text
@@ -6079,8 +6081,6 @@ msgstr "मेट्नुहोस्"
 #. i18n: tag text
 #. i18n: file ./imageplugins/sheartool/digikamimageplugin_sheartool_ui.rc line 13
 #. i18n: tag text
-#. i18n: file ./imageplugins/lensdistortion/digikamimageplugin_lensdistortion_ui.rc line 13
-#. i18n: tag text
 #. i18n: file ./imageplugins/inpainting/digikamimageplugin_inpainting_ui.rc line 13
 #. i18n: tag text
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 95
@@ -6088,12 +6088,11 @@ msgstr "मेट्नुहोस्"
 #. i18n: file ./utilities/lighttable/lighttablewindowui.rc line 58
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 69
-#: rc.cpp:38 rc.cpp:71 rc.cpp:77 rc.cpp:83 rc.cpp:89 rc.cpp:95 rc.cpp:101
-#: rc.cpp:107 rc.cpp:113 rc.cpp:119 rc.cpp:125 rc.cpp:131 rc.cpp:137
-#: rc.cpp:143 rc.cpp:149 rc.cpp:155 rc.cpp:161 rc.cpp:167 rc.cpp:173
-#: rc.cpp:179 rc.cpp:185 rc.cpp:191 rc.cpp:197 rc.cpp:203 rc.cpp:209
-#: rc.cpp:215 rc.cpp:233 rc.cpp:239 rc.cpp:245 rc.cpp:251 rc.cpp:284
-#: rc.cpp:299 rc.cpp:320
+#: rc.cpp:38 rc.cpp:71 rc.cpp:80 rc.cpp:86 rc.cpp:92 rc.cpp:98 rc.cpp:104
+#: rc.cpp:110 rc.cpp:116 rc.cpp:122 rc.cpp:128 rc.cpp:134 rc.cpp:140
+#: rc.cpp:146 rc.cpp:152 rc.cpp:158 rc.cpp:164 rc.cpp:170 rc.cpp:176
+#: rc.cpp:182 rc.cpp:188 rc.cpp:194 rc.cpp:200 rc.cpp:206 rc.cpp:212
+#: rc.cpp:230 rc.cpp:236 rc.cpp:242 rc.cpp:275 rc.cpp:290 rc.cpp:311
 msgid "Main Toolbar"
 msgstr ""
 
@@ -6103,7 +6102,7 @@ msgstr ""
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 6
 #. i18n: tag text
 #. i18n: file ./utilities/lighttable/lighttablewindowui.rc line 6
-#: rc.cpp:41 rc.cpp:254 rc.cpp:287
+#: rc.cpp:41 rc.cpp:245 rc.cpp:278
 #, fuzzy
 #| msgid "&Title:"
 msgid "&File"
@@ -6125,8 +6124,8 @@ msgstr "शीर्षक:"
 #. i18n: file ./imageplugins/coreplugin/digikamimageplugin_core_ui.rc line 6
 #. i18n: tag text
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 51
-#: rc.cpp:50 rc.cpp:86 rc.cpp:92 rc.cpp:116 rc.cpp:128 rc.cpp:146 rc.cpp:218
-#: rc.cpp:263
+#: rc.cpp:50 rc.cpp:89 rc.cpp:95 rc.cpp:113 rc.cpp:125 rc.cpp:143 rc.cpp:215
+#: rc.cpp:254
 #, fuzzy
 #| msgid "&Colors"
 msgid "&Color"
@@ -6141,19 +6140,15 @@ msgstr "रङ"
 #. i18n: tag text
 #. i18n: file ./imageplugins/hotpixels/digikamimageplugin_hotpixels_ui.rc line 6
 #. i18n: tag text
-#. i18n: file ./imageplugins/antivignetting/digikamimageplugin_antivignetting_ui.rc line 6
-#. i18n: tag text
 #. i18n: file ./imageplugins/restoration/digikamimageplugin_restoration_ui.rc line 6
 #. i18n: tag text
 #. i18n: file ./imageplugins/coreplugin/digikamimageplugin_core_ui.rc line 26
 #. i18n: tag text
-#. i18n: file ./imageplugins/lensdistortion/digikamimageplugin_lensdistortion_ui.rc line 6
-#. i18n: tag text
 #. i18n: file ./imageplugins/inpainting/digikamimageplugin_inpainting_ui.rc line 6
 #. i18n: tag text
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 54
-#: rc.cpp:53 rc.cpp:74 rc.cpp:80 rc.cpp:98 rc.cpp:110 rc.cpp:176 rc.cpp:224
-#: rc.cpp:242 rc.cpp:248 rc.cpp:266
+#: rc.cpp:53 rc.cpp:74 rc.cpp:83 rc.cpp:101 rc.cpp:173 rc.cpp:221 rc.cpp:239
+#: rc.cpp:257
 #, fuzzy
 #| msgid "C&ancel"
 msgid "Enh&ance"
@@ -6171,7 +6166,7 @@ msgstr "रद्द गर्नुहोस्"
 #. i18n: file ./imageplugins/sheartool/digikamimageplugin_sheartool_ui.rc line 6
 #. i18n: tag text
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 57
-#: rc.cpp:56 rc.cpp:182 rc.cpp:206 rc.cpp:227 rc.cpp:236 rc.cpp:269
+#: rc.cpp:56 rc.cpp:179 rc.cpp:203 rc.cpp:224 rc.cpp:233 rc.cpp:260
 #, fuzzy
 #| msgid "&Transform"
 msgid "Tra&nsform"
@@ -6189,7 +6184,7 @@ msgstr "रूपान्तरण"
 #. i18n: file ./imageplugins/superimpose/digikamimageplugin_superimpose_ui.rc line 6
 #. i18n: tag text
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 68
-#: rc.cpp:59 rc.cpp:134 rc.cpp:140 rc.cpp:164 rc.cpp:212 rc.cpp:272
+#: rc.cpp:59 rc.cpp:131 rc.cpp:137 rc.cpp:161 rc.cpp:209 rc.cpp:263
 #, fuzzy
 #| msgid "&Rotate"
 msgid "&Decorate"
@@ -6217,22 +6212,30 @@ msgstr "घुमाउनुहोस्"
 #. i18n: file ./imageplugins/coreplugin/digikamimageplugin_core_ui.rc line 37
 #. i18n: tag text
 #. i18n: file ./utilities/imageeditor/editor/digikamimagewindowui.rc line 71
-#: rc.cpp:62 rc.cpp:104 rc.cpp:122 rc.cpp:152 rc.cpp:158 rc.cpp:170 rc.cpp:188
-#: rc.cpp:194 rc.cpp:200 rc.cpp:230 rc.cpp:275
+#: rc.cpp:62 rc.cpp:107 rc.cpp:119 rc.cpp:149 rc.cpp:155 rc.cpp:167 rc.cpp:185
+#: rc.cpp:191 rc.cpp:197 rc.cpp:227 rc.cpp:266
 #, fuzzy
 #| msgid "Filters"
 msgid "F&ilters"
 msgstr "फिल्टर"
 
 #. i18n: tag text
+#. i18n: file ./imageplugins/lenscorrection/digikamimageplugin_lenscorrection_ui.rc line 7
+#: rc.cpp:77
+#, fuzzy
+#| msgid "Dimensions:"
+msgid "&Lens"
+msgstr "आयाम:"
+
+#. i18n: tag text
 #. i18n: file ./imageplugins/coreplugin/digikamimageplugin_core_ui.rc line 18
-#: rc.cpp:221
+#: rc.cpp:218
 msgid "&Depth"
 msgstr "गहिराइ"
 
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 6
-#: rc.cpp:302
+#: rc.cpp:293
 #, fuzzy
 #| msgid "Device Class"
 msgid "&Device"
@@ -6240,37 +6243,37 @@ msgstr "यन्त्र वर्ग"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 42
-#: rc.cpp:323
+#: rc.cpp:314
 msgid "Icon Placeholder, not in GUI"
 msgstr "प्रतिमा प्लेसहोल्डर, जीयूआईमा होइन"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 54
-#: rc.cpp:326
+#: rc.cpp:317
 msgid "Deletion method placeholder, never shown to user."
 msgstr "मेट्ने विधि प्लेसहोल्डर, प्रयोगकर्तमा कहिल्यै देखिन्न ।"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 71
-#: rc.cpp:329
+#: rc.cpp:320
 msgid "List of files that are about to be deleted."
 msgstr "मेट्न लागेको फाइलको सूची"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 74
-#: rc.cpp:332
+#: rc.cpp:323
 msgid "This is the list of items that are about to be deleted."
 msgstr "यो मेट्न लागेको वस्तुको सूची हो ।"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 84
-#: rc.cpp:335
+#: rc.cpp:326
 msgid "Placeholder for number of files, not in GUI"
 msgstr "फाइलको नम्बरका लागि प्लेसहोल्डर, जीयूआईमा होइन"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 106
-#: rc.cpp:338
+#: rc.cpp:329
 msgid ""
 "If checked, files will be permanently removed instead of being placed in the "
 "Trash Bin"
@@ -6278,7 +6281,7 @@ msgstr "यदि चेक गरिएमा, फाइलहरू रद्�
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 111
-#: rc.cpp:341
+#: rc.cpp:332
 #, fuzzy
 #| msgid ""
 #| "<qt><p>If this box is checked, files will be <b>permanently removed</b> "
@@ -6301,13 +6304,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 114
-#: rc.cpp:346
+#: rc.cpp:337
 msgid "&Delete files instead of moving them to the trash"
 msgstr "फाइलहरूलाई रद्दीटोरकीमा सार्नुको सट्टा तिनिहरूलाई मेट्नुहोस्"
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 127
-#: rc.cpp:349
+#: rc.cpp:340
 #, fuzzy
 #| msgid ""
 #| "If checked, this dialog will no longer be shown and files will be "
@@ -6319,7 +6322,7 @@ msgstr "यदि चेक गरिएमा, यो संवाद अब �
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 130
-#: rc.cpp:352
+#: rc.cpp:343
 #, fuzzy
 #| msgid ""
 #| "If checked, this dialog will no longer be shown and files will be "
@@ -6331,44 +6334,25 @@ msgstr "यदि चेक गरिएमा, यो संवाद अब �
 
 #. i18n: tag string
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 133
-#: rc.cpp:355
+#: rc.cpp:346
 msgid "Do not &ask again"
 msgstr "फेरि नसोध्नुहोस्"
 
-#: imageplugins/lenscorrection/klensfun.cpp:123
-msgid "Use Exif Data"
-msgstr ""
-
-#: imageplugins/lenscorrection/klensfun.cpp:129
-#, fuzzy
-#| msgid "Dimensions:"
-msgid "Lens:"
-msgstr "आयाम:"
-
-#: imageplugins/lenscorrection/klensfun.cpp:137
-#, fuzzy
-#| msgid "Local Settings"
-msgid "Focal Length:"
-msgstr "स्थानिय सेटिङ"
-
-#: imageplugins/lenscorrection/klensfun.cpp:139
-#, fuzzy
-#| msgid "White Balance:"
-msgid "Subject Distance:"
-msgstr "सेतो सन्तुलन:"
-
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:59
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:67
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:59
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:67
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:282
 #, fuzzy
 #| msgid "Red Eyes Correction"
-msgid "Lens Error Correction"
+msgid "Lens Auto-Correction"
 msgstr "रातो आँखा सुधार"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:69
-msgid "A digiKam image plugin to fix errors caused by lens."
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:69
+msgid ""
+"A digiKam image plugin to fix automaticaly camera lens aberrations using "
+"LensFun library."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:71
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:72
 #, fuzzy
 #| msgid "(c) 2004-2007, digiKam developers team"
 msgid ""
@@ -6376,16 +6360,17 @@ msgid ""
 "(c) 2008, Gilles Caulier"
 msgstr "(प्रतिलिपि अधिकार) २००४-२००७, डिजिक्याम विकासकर्ता समूह"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:76
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:77
 msgid "Adrian Schroeter"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:76
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:77
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:79
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:78
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:79
 #: imageplugins/channelmixer/channelmixer.cpp:107
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:81
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:76
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:78
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:103
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:71
 #: imageplugins/adjustcurves/adjustcurves.cpp:108
@@ -6404,17 +6389,17 @@ msgstr ""
 #: imageplugins/perspective/imageeffect_perspective.cpp:82
 #: imageplugins/superimpose/imageeffect_superimpose.cpp:90
 #: imageplugins/sheartool/imageeffect_sheartool.cpp:79
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:82
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:145
 msgid "Author and maintainer"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:79
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:80
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:79
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:78
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:79
 #: imageplugins/channelmixer/channelmixer.cpp:107
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:84
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:76
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:78
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:103
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:71
 #: imageplugins/adjustcurves/adjustcurves.cpp:108
@@ -6433,12 +6418,19 @@ msgstr ""
 #: imageplugins/perspective/imageeffect_perspective.cpp:82
 #: imageplugins/superimpose/imageeffect_superimpose.cpp:90
 #: imageplugins/sheartool/imageeffect_sheartool.cpp:79
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:82
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:145
 msgid "Gilles Caulier"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:93
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:83
+msgid "Andrew Zabolotny"
+msgstr ""
+
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:83
+msgid "LensFun library author."
+msgstr ""
+
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:96
 #, fuzzy
 #| msgid ""
 #| "<p>You can see here the color preview of hue and saturation adjustments."
@@ -6447,79 +6439,299 @@ msgid ""
 "pattern."
 msgstr "<p>तपाईँले यहाँ ह्यु र स्याचुरेसन समायोजनको रङ पूर्वावलोकन हेर्न सक्नुहुन्छ ।"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:104
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:105
 msgid "Chromatic Aberration"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:105
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:106
 msgid ""
 "Chromatic aberration is easily recognised as color fringes towards the image "
 "corners. CA is due to a variing lens focus for different colors."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:107
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:109
 #, fuzzy
 #| msgid "Settings..."
 msgid "Vignetting"
 msgstr "सेटिङ..."
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:108
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:110
 msgid ""
 "Vignetting refers to an image darkening in the corners. Optical and natural "
 "vignetting can be cancelled out with this option, whereas mechanical "
-"vignetting will not be cured"
+"vignetting will not be cured."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:111
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:113
 #, fuzzy
 #| msgid "Auto Color Correction"
 msgid "Color Correction"
 msgstr "स्वत: रङ सुधार"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:112
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:114
 msgid ""
 "Lenses all have a slight color tinge to them, mostly due to the anti-"
 "reflective coating. The tinge can be taken away when the respective data is "
 "know for the lens."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:114
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:117
 #, fuzzy
 #| msgid "Saturation"
 msgid "Distortion"
 msgstr "स्याचुरेसन"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:115
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:118
 msgid ""
 "Distortion refers to an image deformation, which is most pronounced towards "
 "the corners. These Seidel aberrations are known as pincushion and barrel "
 "distorsions."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:117
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:121
 #, fuzzy
 #| msgid "Retry"
 msgid "Geometry"
 msgstr "पुन: प्रयास गर्नुहोस्"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:118
+#: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:122
 #, c-format
 msgid ""
 "Four geometries are handeled here: Rectilinear (99% of all lenses), Fisheye, "
-"Cylindrical, Equirectangular. "
+"Cylindrical, Equirectangular."
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:278
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:122
+msgid "Use Exif Data"
+msgstr ""
+
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:128
+#, fuzzy
+#| msgid "Dimensions:"
+msgid "Lens:"
+msgstr "आयाम:"
+
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:136
+#, fuzzy
+#| msgid "Local Settings"
+msgid "Focal Length:"
+msgstr "स्थानिय सेटिङ"
+
+#: imageplugins/lenscorrection/autocorrection/klensfun.cpp:138
+#, fuzzy
+#| msgid "White Balance:"
+msgid "Subject Distance:"
+msgstr "सेतो सन्तुलन:"
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:63
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:70
 #, fuzzy
 #| msgid "Red Eyes Correction"
-msgid "Lens Correction"
+msgid "Lens Distortion Correction"
 msgstr "रातो आँखा सुधार"
 
-#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:44
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:72
+msgid "A tool to reduce camera lens spherical aberrations."
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:74
 #, fuzzy
-#| msgid "Auto-Correction..."
-msgid "Lens Correction..."
+#| msgid "(c) 2004-2007, digiKam developers team"
+msgid ""
+"(c) 2004-2006, Gilles Caulier\n"
+"(c) 2006-2008, Gilles Caulier and Marcel Wiesweg"
+msgstr "(प्रतिलिपि अधिकार) २००४-२००७, डिजिक्याम विकासकर्ता समूह"
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:85
+msgid "David Hodson"
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:85
+msgid "Lens distortion correction algorithm."
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:97
+#, fuzzy
+#| msgid ""
+#| "<p>You can see here the color preview of hue and saturation adjustments."
+msgid ""
+"<p>You can see here a thumbnail preview of the distortion correction applied "
+"to a cross pattern."
+msgstr "<p>तपाईँले यहाँ ह्यु र स्याचुरेसन समायोजनको रङ पूर्वावलोकन हेर्न सक्नुहुन्छ ।"
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:102
+#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:280
+#, fuzzy
+#| msgid "Mean:"
+msgid "Main:"
+msgstr "मिन:"
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:107
+msgid ""
+"<p>This value controls the amount of distortion. Negative values correct "
+"lens barrel distortion, while positive values correct lens pincushion "
+"distortion."
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:113
+msgid "Edge:"
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:118
+msgid ""
+"<p>This value controls in the same manner as the Main control, but has more "
+"effect at the edges of the image than at the center."
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:123
+#, fuzzy
+#| msgid "Zoom: "
+msgid "Zoom:"
+msgstr "जुम गर्नुहोस्: "
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:128
+msgid "<p>This value rescales the overall image size."
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:132
+#, fuzzy
+#| msgid "Brightness:"
+msgid "Brighten:"
+msgstr "चम्किलोपन:"
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:137
+msgid "<p>This value adjusts the brightness in image corners."
+msgstr ""
+
+#: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:303
+msgid "Lens Distortion"
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:63
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:70
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:359
+#, fuzzy
+#| msgid "Red Eye Correction"
+msgid "Vignetting Correction"
+msgstr "रातो आँखा सुधार"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:72
+msgid "A digiKam image plugin to reduce image vignetting."
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:74
+#, fuzzy
+#| msgid "(c) 2004-2007, digiKam developers team"
+msgid "(c) 2004-2008, Gilles Caulier"
+msgstr "(प्रतिलिपि अधिकार) २००४-२००७, डिजिक्याम विकासकर्ता समूह"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:81
+msgid "John Walker"
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:81
+msgid "Anti Vignetting algorithm"
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:94
+#, fuzzy
+#| msgid ""
+#| "<p>You can see here the color preview of hue and saturation adjustments."
+msgid ""
+"<p>You can see here a thumbnail preview of the anti-vignetting mask applied "
+"to the image."
+msgstr "<p>तपाईँले यहाँ ह्यु र स्याचुरेसन समायोजनको रङ पूर्वावलोकन हेर्न सक्नुहुन्छ ।"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:99
+#, fuzzy
+#| msgid "Dimensions:"
+msgid "Density:"
+msgstr "आयाम:"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:104
+msgid ""
+"<p>This value controls the degree of intensity attenuation by the filter at "
+"its point of maximum density."
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:109
+#, fuzzy
+#| msgid "Lower"
+msgid "Power:"
+msgstr "लोवर"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:114
+msgid ""
+"<p>This value is used as the exponent controlling the fall-off in density "
+"from the center of the filter to the periphery."
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:119
+#: imageplugins/noisereduction/imageeffect_noisereduction.cpp:95
+#: imageplugins/coreplugin/sharpnesseditor/imageeffect_sharpen.cpp:120
+msgid "Radius:"
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:124
+msgid ""
+"<p>This value is the radius of the center filter. It is a multiple of the "
+"half-diagonal measure of the image, at which the density of the filter falls "
+"to zero."
+msgstr ""
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:132
+#: imageplugins/coreplugin/imageeffect_bcg.cpp:150
+msgid "Brightness:"
+msgstr "चम्किलोपन:"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:137
+#, fuzzy
+#| msgid "<p>Set here the brightness adjustment of the image."
+msgid "<p>Set here the brightness re-adjustment of the target image."
+msgstr "<p>यहाँ छविको चम्किलोपन समायोजन सेट गर्नुहोस् ।"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:141
+#: imageplugins/coreplugin/imageeffect_iccproof.cpp:459
+#: imageplugins/coreplugin/imageeffect_bcg.cpp:157
+#: imageplugins/coreplugin/imageeffect_bwsepia.cpp:468
+msgid "Contrast:"
+msgstr "व्यतिरेक:"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:146
+#, fuzzy
+#| msgid "<p>Set here the contrast adjustment of the image."
+msgid "<p>Set here the contrast re-adjustment of the target image."
+msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:150
+#: imageplugins/noisereduction/imageeffect_noisereduction.cpp:223
+#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:261
+#: imageplugins/coreplugin/imageeffect_bcg.cpp:164
+msgid "Gamma:"
+msgstr "गामा:"
+
+#: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:156
+#, fuzzy
+#| msgid "<p>Set here the gamma adjustment of the image."
+msgid "<p>Set here the gamma re-adjustment of the target image."
+msgstr "<p>यहाँ छविको गामा समायोजन सेट गर्नुहोस् ।"
+
+#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:53
+#: imageplugins/coreplugin/imageplugin_core.cpp:100
+msgid "Auto-Correction..."
 msgstr "स्वत: सुधार..."
+
+#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:61
+#, fuzzy
+#| msgid "Saturation"
+msgid "Distortion..."
+msgstr "स्याचुरेसन"
+
+#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:67
+#, fuzzy
+#| msgid "Settings..."
+msgid "Vignetting..."
+msgstr "सेटिङ..."
 
 #: imageplugins/noisereduction/imageplugin_noisereduction.cpp:46
 #, fuzzy
@@ -6540,7 +6752,6 @@ msgid "A noise reduction image filter plugin for digiKam."
 msgstr ""
 
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:75
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:74
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:67
 #: imageplugins/adjustcurves/adjustcurves.cpp:104
 #: imageplugins/adjustlevels/adjustlevels.cpp:103
@@ -6561,12 +6772,6 @@ msgstr ""
 
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:93
 msgid "Details"
-msgstr ""
-
-#: imageplugins/noisereduction/imageeffect_noisereduction.cpp:95
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:119
-#: imageplugins/coreplugin/sharpnesseditor/imageeffect_sharpen.cpp:120
-msgid "Radius:"
 msgstr ""
 
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:100
@@ -6676,13 +6881,6 @@ msgid ""
 "influence the main smoothing process controlled by the <b>Details</b> "
 "settings."
 msgstr ""
-
-#: imageplugins/noisereduction/imageeffect_noisereduction.cpp:223
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:150
-#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:261
-#: imageplugins/coreplugin/imageeffect_bcg.cpp:164
-msgid "Gamma:"
-msgstr "गामा:"
 
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:228
 msgid ""
@@ -7195,102 +7393,6 @@ msgid ""
 "graininess."
 msgstr ""
 
-#: imageplugins/antivignetting/imageplugin_antivignetting.cpp:47
-#, fuzzy
-#| msgid "Settings..."
-msgid "Vignetting..."
-msgstr "सेटिङ..."
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:63
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:70
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:370
-#, fuzzy
-#| msgid "Red Eye Correction"
-msgid "Vignetting Correction"
-msgstr "रातो आँखा सुधार"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:72
-msgid "A digiKam image plugin to reduce image vignetting."
-msgstr ""
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:81
-msgid "John Walker"
-msgstr ""
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:81
-msgid "Anti Vignetting algorithm"
-msgstr ""
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:94
-#, fuzzy
-#| msgid ""
-#| "<p>You can see here the color preview of hue and saturation adjustments."
-msgid ""
-"<p>You can see here a thumbnail preview of the anti-vignetting mask applied "
-"to the image."
-msgstr "<p>तपाईँले यहाँ ह्यु र स्याचुरेसन समायोजनको रङ पूर्वावलोकन हेर्न सक्नुहुन्छ ।"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:99
-#, fuzzy
-#| msgid "Dimensions:"
-msgid "Density:"
-msgstr "आयाम:"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:104
-msgid ""
-"<p>This value controls the degree of intensity attenuation by the filter at "
-"its point of maximum density."
-msgstr ""
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:109
-#, fuzzy
-#| msgid "Lower"
-msgid "Power:"
-msgstr "लोवर"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:114
-msgid ""
-"<p>This value is used as the exponent controlling the fall-off in density "
-"from the center of the filter to the periphery."
-msgstr ""
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:124
-msgid ""
-"<p>This value is the radius of the center filter. It is a multiple of the "
-"half-diagonal measure of the image, at which the density of the filter falls "
-"to zero."
-msgstr ""
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:132
-#: imageplugins/coreplugin/imageeffect_bcg.cpp:150
-msgid "Brightness:"
-msgstr "चम्किलोपन:"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:137
-#, fuzzy
-#| msgid "<p>Set here the brightness adjustment of the image."
-msgid "<p>Set here the brightness re-adjustment of the target image."
-msgstr "<p>यहाँ छविको चम्किलोपन समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:141
-#: imageplugins/coreplugin/imageeffect_iccproof.cpp:459
-#: imageplugins/coreplugin/imageeffect_bcg.cpp:157
-#: imageplugins/coreplugin/imageeffect_bwsepia.cpp:468
-msgid "Contrast:"
-msgstr "व्यतिरेक:"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:146
-#, fuzzy
-#| msgid "<p>Set here the contrast adjustment of the image."
-msgid "<p>Set here the contrast re-adjustment of the target image."
-msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/antivignetting/imageeffect_antivignetting.cpp:156
-#, fuzzy
-#| msgid "<p>Set here the gamma adjustment of the image."
-msgid "<p>Set here the gamma re-adjustment of the target image."
-msgstr "<p>यहाँ छविको गामा समायोजन सेट गर्नुहोस् ।"
-
 #: imageplugins/whitebalance/imageplugin_whitebalance.cpp:48
 #, fuzzy
 #| msgid "White Balance:"
@@ -7492,13 +7594,6 @@ msgid ""
 "<qt><a href='http://en.wikipedia.org/wiki/Exposure_value'>Exposure "
 "Compensation</a>  (E.V): </qt>"
 msgstr ""
-
-#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:280
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:105
-#, fuzzy
-#| msgid "Mean:"
-msgid "Main:"
-msgstr "मिन:"
 
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:283
 #, fuzzy
@@ -8582,7 +8677,6 @@ msgid "Emboss image effect plugin for digiKam."
 msgstr ""
 
 #: imageplugins/emboss/imageeffect_emboss.cpp:66
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:77
 msgid ""
 "(c) 2004-2006, Gilles Caulier\n"
 "(c) 2006-2007, Gilles Caulier and Marcel Wiesweg"
@@ -9311,10 +9405,6 @@ msgstr "ह्यु/स्याचुरेसन/प्रकाश..."
 #: imageplugins/coreplugin/imageplugin_core.cpp:93
 msgid "Color Balance..."
 msgstr "रङ सन्तुलन..."
-
-#: imageplugins/coreplugin/imageplugin_core.cpp:100
-msgid "Auto-Correction..."
-msgstr "स्वत: सुधार..."
 
 #: imageplugins/coreplugin/imageplugin_core.cpp:107
 #: imageplugins/coreplugin/imageplugin_core.cpp:190
@@ -10884,81 +10974,6 @@ msgstr ""
 msgid ""
 "<p>Enable this option to apply the anti-aliasing filter to the sheared "
 "image. To smooth the target image, it will be blurred a little."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:65
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:72
-#, fuzzy
-#| msgid "Red Eyes Correction"
-msgid "Lens Distortion Correction"
-msgstr "रातो आँखा सुधार"
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:74
-msgid ""
-"A digiKam image plugin to reduce spherical aberration caused by a lens to an "
-"image."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:88
-msgid "David Hodson"
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:88
-msgid "Lens distortion correction algorithm."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:100
-#, fuzzy
-#| msgid ""
-#| "<p>You can see here the color preview of hue and saturation adjustments."
-msgid ""
-"<p>You can see here a thumbnail preview of the distortion correction applied "
-"to a cross pattern."
-msgstr "<p>तपाईँले यहाँ ह्यु र स्याचुरेसन समायोजनको रङ पूर्वावलोकन हेर्न सक्नुहुन्छ ।"
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:110
-msgid ""
-"<p>This value controls the amount of distortion. Negative values correct "
-"lens barrel distortion, while positive values correct lens pincushion "
-"distortion."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:116
-msgid "Edge:"
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:121
-msgid ""
-"<p>This value controls in the same manner as the Main control, but has more "
-"effect at the edges of the image than at the center."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:126
-#, fuzzy
-#| msgid "Zoom: "
-msgid "Zoom:"
-msgstr "जुम गर्नुहोस्: "
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:131
-msgid "<p>This value rescales the overall image size."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:135
-#, fuzzy
-#| msgid "Brightness:"
-msgid "Brighten:"
-msgstr "चम्किलोपन:"
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:140
-msgid "<p>This value adjusts the brightness in image corners."
-msgstr ""
-
-#: imageplugins/lensdistortion/imageeffect_lensdistortion.cpp:306
-msgid "Lens Distortion"
-msgstr ""
-
-#: imageplugins/lensdistortion/imageplugin_lensdistortion.cpp:46
-msgid "Lens Distortion..."
 msgstr ""
 
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:110
@@ -13428,7 +13443,7 @@ msgstr ""
 "रङ रूपान्तरण लागू गरिदैन । कृपया ICC मार्ग रूजु गर्न डिजिक्यामको सेटअपमा रङ व्यवस्थापन "
 "कन्फिगरेसन चेक गर्नुहोस् ।"
 
-#: utilities/imageeditor/canvas/imagepluginloader.cpp:132
+#: utilities/imageeditor/canvas/imagepluginloader.cpp:134
 #, fuzzy
 #| msgid "Image Plugins"
 msgid "Loading Image Plugins"
@@ -15204,6 +15219,16 @@ msgstr "स्लाइड प्रर्दशन समाप्त भयो
 #: utilities/slideshow/slideshow.cpp:520
 msgid "Click To Exit..."
 msgstr "'अन्त्य गर्नुहोस्' मा क्लिक गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid "Red Eyes Correction"
+#~ msgid "Lens Error Correction"
+#~ msgstr "रातो आँखा सुधार"
+
+#, fuzzy
+#~| msgid "Auto-Correction..."
+#~ msgid "Lens Correction..."
+#~ msgstr "स्वत: सुधार..."
 
 #, fuzzy
 #~| msgid "Camera List"
