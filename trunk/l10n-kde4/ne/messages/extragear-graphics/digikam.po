@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-28 14:18+0200\n"
+"POT-Creation-Date: 2008-05-31 05:50+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -235,11 +235,13 @@ msgstr "<big><b>फाइल गुण</b></big>"
 
 #: libs/imageproperties/imagepropertiestab.cpp:170
 #: libs/imageproperties/cameraitempropertiestab.cpp:167
+#: utilities/fuzzysearch/fuzzysearchview.cpp:175
 msgid "<b>File</b>:"
 msgstr "<b>फाइल</b>:"
 
 #: libs/imageproperties/imagepropertiestab.cpp:171
 #: libs/imageproperties/cameraitempropertiestab.cpp:168
+#: utilities/fuzzysearch/fuzzysearchview.cpp:177
 msgid "<b>Folder</b>:"
 msgstr "<b>फोल्डर</b>:"
 
@@ -606,7 +608,7 @@ msgstr "फाइलमा मेटाडेटा लेख्दैछ । �
 #: libs/imageproperties/talbumlistview.cpp:167
 #: libs/imageproperties/talbumlistview.cpp:279
 #: libs/imageproperties/talbumlistview.cpp:353
-#: libs/imageproperties/talbumlistview.cpp:383 digikam/digikamview.cpp:233
+#: libs/imageproperties/talbumlistview.cpp:383 digikam/digikamview.cpp:238
 #: utilities/searchwindow/searchfields.cpp:100
 #: utilities/searchwindow/searchfields.cpp:107
 msgid "Tags"
@@ -670,7 +672,7 @@ msgid "Deselect"
 msgstr "चयन हटाउनुहोस्"
 
 #: libs/imageproperties/imagedescedittab.cpp:874 digikam/tagfilterview.cpp:910
-#: digikam/digikamapp.cpp:808 utilities/cameragui/cameraui.cpp:327
+#: digikam/digikamapp.cpp:815 utilities/cameragui/cameraui.cpp:327
 msgid "Invert Selection"
 msgstr "चयन उल्टाउनुहोस्"
 
@@ -767,12 +769,15 @@ msgstr "'%1' ट्याग मेट्नुहुन्छ ?"
 
 #: libs/imageproperties/imagedescedittab.cpp:1158
 #: digikam/timelinefolderview.cpp:169 digikam/timelinefolderview.cpp:261
-#: digikam/fuzzysearchfolderview.cpp:169 digikam/fuzzysearchfolderview.cpp:261
 #: digikam/searchfolderview.cpp:213 digikam/tagfolderview.cpp:736
 #: digikam/tagfilterview.cpp:1234 digikam/digikamapp.cpp:552
-#: digikam/digikamapp.cpp:601 digikam/digikamapp.cpp:647
+#: digikam/digikamapp.cpp:601 digikam/digikamapp.cpp:654
+#: utilities/gpssearch/gpssearchfolderview.cpp:175
+#: utilities/gpssearch/gpssearchfolderview.cpp:284
 #: utilities/cameragui/cameraui.cpp:1506 utilities/cameragui/cameraui.cpp:1573
 #: utilities/cameragui/cameraiconview.cpp:465
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:182
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:292
 #, fuzzy
 #| msgid "D&elete"
 msgid "Delete"
@@ -811,6 +816,7 @@ msgid "Geolocation"
 msgstr "चयन"
 
 #: libs/imageproperties/worldmapwidget.cpp:97
+#: utilities/gpssearch/gpssearchwidget.cpp:72
 msgid "Geolocation using Marble not available"
 msgstr ""
 
@@ -1766,7 +1772,7 @@ msgid "Unknown"
 msgstr "अज्ञात"
 
 #: libs/greycstoration/greycstorationwidget.cpp:131
-#: digikam/digikamapp.cpp:1891 showfoto/setup/setup.cpp:96
+#: digikam/digikamapp.cpp:1900 showfoto/setup/setup.cpp:96
 #: utilities/imageeditor/editor/editorwindow.cpp:625
 #: utilities/lighttable/lighttablewindow.cpp:1443
 #: utilities/cameragui/cameraui.cpp:1814
@@ -1957,107 +1963,107 @@ msgstr "%1 का लागि थम्बनेल सिर्जना ग�
 msgid "Thumbnail is null"
 msgstr "क्लिक कार्य:"
 
-#: libs/dmetadata/dmetadata.cpp:948
+#: libs/dmetadata/dmetadata.cpp:950
 msgid "Unspecified"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:950
+#: libs/dmetadata/dmetadata.cpp:952
 #, fuzzy
 #| msgid "Normal"
 msgctxt "Rotation of an unrotated image"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: libs/dmetadata/dmetadata.cpp:952 digikam/digikamapp.cpp:736
+#: libs/dmetadata/dmetadata.cpp:954 digikam/digikamapp.cpp:743
 msgid "Flipped Horizontally"
 msgstr "तेर्सो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:954
+#: libs/dmetadata/dmetadata.cpp:956
 #, fuzzy
 #| msgid "Rotate 180 Degrees"
 msgid "Rotated by 180 Degrees"
 msgstr "१८० डिग्रीमा घुमाउनुहोस्"
 
-#: libs/dmetadata/dmetadata.cpp:956 digikam/digikamapp.cpp:740
+#: libs/dmetadata/dmetadata.cpp:958 digikam/digikamapp.cpp:747
 msgid "Flipped Vertically"
 msgstr "ठाडो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:958
+#: libs/dmetadata/dmetadata.cpp:960
 #, fuzzy
 #| msgid "Flipped Horizontally"
 msgid "Flipped Horizontally and Rotated Left"
 msgstr "तेर्सो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:960
+#: libs/dmetadata/dmetadata.cpp:962
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotated Left"
 msgstr "घुमाउनुहोस्"
 
-#: libs/dmetadata/dmetadata.cpp:962
+#: libs/dmetadata/dmetadata.cpp:964
 #, fuzzy
 #| msgid "Flipped Vertically"
 msgid "Flipped Vertically and Rotated Left"
 msgstr "ठाडो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:964
+#: libs/dmetadata/dmetadata.cpp:966
 #, fuzzy
 #| msgid "Bottom-Right"
 msgid "Rotated Right"
 msgstr "तल-दायाँ"
 
-#: libs/dmetadata/dmetadata.cpp:999
+#: libs/dmetadata/dmetadata.cpp:1001
 #, fuzzy, kde-format
 #| msgid "%1 bpp"
 msgctxt "Temperature in Kelvin"
 msgid "%1 K"
 msgstr "%1 bpp"
 
-#: libs/dmetadata/dmetadata.cpp:1009 libs/dmetadata/dmetadata.cpp:1021
+#: libs/dmetadata/dmetadata.cpp:1011 libs/dmetadata/dmetadata.cpp:1023
 #, fuzzy
 #| msgid "Reset"
 msgctxt "For use in longitude coordinate"
 msgid "West"
 msgstr "रिसेट गर्नुहोस्"
 
-#: libs/dmetadata/dmetadata.cpp:1009 libs/dmetadata/dmetadata.cpp:1021
+#: libs/dmetadata/dmetadata.cpp:1011 libs/dmetadata/dmetadata.cpp:1023
 #, fuzzy
 #| msgid "&Last"
 msgctxt "For use in longitude coordinate"
 msgid "East"
 msgstr "अन्तिम"
 
-#: libs/dmetadata/dmetadata.cpp:1034 libs/dmetadata/dmetadata.cpp:1046
+#: libs/dmetadata/dmetadata.cpp:1036 libs/dmetadata/dmetadata.cpp:1048
 #, fuzzy
 #| msgid "Both"
 msgctxt "For use in latitude coordinate"
 msgid "North"
 msgstr "दुबै"
 
-#: libs/dmetadata/dmetadata.cpp:1034
+#: libs/dmetadata/dmetadata.cpp:1036
 #, fuzzy
 #| msgid "Both"
 msgctxt "For use in latitude coordinate"
 msgid "South"
 msgstr "दुबै"
 
-#: libs/dmetadata/dmetadata.cpp:1055
+#: libs/dmetadata/dmetadata.cpp:1057
 #, no-c-format
 msgctxt "Height in meters"
 msgid "%L1m"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:1178
+#: libs/dmetadata/dmetadata.cpp:1180
 msgid "Flash has been fired"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:1179
+#: libs/dmetadata/dmetadata.cpp:1181
 msgid "Flash with red-eye reduction mode"
 msgstr ""
 
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
-#: digikam/albumsettings.cpp:305 digikam/digikamapp.cpp:2121
+#: digikam/albumsettings.cpp:305 digikam/digikamapp.cpp:2130
 #: showfoto/showfoto.cpp:525
 #: utilities/imageeditor/editor/editorwindow.cpp:1833
 #: utilities/lighttable/lighttablewindow.cpp:1583
@@ -2069,20 +2075,20 @@ msgstr ""
 msgid "XMP Schema"
 msgstr ""
 
-#: libs/widgets/metadata/xmpwidget.cpp:165
-#: libs/widgets/metadata/exifwidget.cpp:172
-#: libs/widgets/metadata/makernotewidget.cpp:193
-#: libs/widgets/metadata/iptcwidget.cpp:151
+#: libs/widgets/metadata/xmpwidget.cpp:167
+#: libs/widgets/metadata/exifwidget.cpp:174
+#: libs/widgets/metadata/makernotewidget.cpp:195
+#: libs/widgets/metadata/iptcwidget.cpp:153
 msgid "No description available"
 msgstr "वर्णन उपलब्ध छैन"
 
-#: libs/widgets/metadata/xmpwidget.cpp:172
+#: libs/widgets/metadata/xmpwidget.cpp:174
 #, fuzzy
 #| msgid "EXIF File to Save"
 msgid "XMP File to Save"
 msgstr "बचत गर्नका लागि EXIF फाइल"
 
-#: libs/widgets/metadata/xmpwidget.cpp:173
+#: libs/widgets/metadata/xmpwidget.cpp:175
 #, fuzzy
 #| msgid "EXIF binary Files (*.dat)"
 msgid "XMP text Files (*.xmp)"
@@ -2092,13 +2098,13 @@ msgstr "EXIF बाइनरी फाइल (*.dat)"
 msgid "Standard EXIF Tags"
 msgstr "मानक EXIF ट्याग"
 
-#: libs/widgets/metadata/exifwidget.cpp:179
-#: libs/widgets/metadata/makernotewidget.cpp:200
+#: libs/widgets/metadata/exifwidget.cpp:181
+#: libs/widgets/metadata/makernotewidget.cpp:202
 msgid "EXIF File to Save"
 msgstr "बचत गर्नका लागि EXIF फाइल"
 
-#: libs/widgets/metadata/exifwidget.cpp:180
-#: libs/widgets/metadata/makernotewidget.cpp:201
+#: libs/widgets/metadata/exifwidget.cpp:182
+#: libs/widgets/metadata/makernotewidget.cpp:203
 #, fuzzy
 #| msgid "EXIF binary Files (*.dat)"
 msgid "EXIF binary Files (*.exif)"
@@ -2175,11 +2181,11 @@ msgstr "MakerNote EXIF ट्याग"
 msgid "IPTC Records"
 msgstr "IPTC रेकर्ड"
 
-#: libs/widgets/metadata/iptcwidget.cpp:158
+#: libs/widgets/metadata/iptcwidget.cpp:160
 msgid "IPTC File to Save"
 msgstr "बचत गर्ने IPTC फाइल"
 
-#: libs/widgets/metadata/iptcwidget.cpp:159
+#: libs/widgets/metadata/iptcwidget.cpp:161
 #, fuzzy
 #| msgid "IPTC binary Files (*.dat)"
 msgid "IPTC binary Files (*.iptc)"
@@ -2508,7 +2514,7 @@ msgstr "प्रतिशत:"
 msgid "Visit digiKam project website"
 msgstr "डिजिक्याम परियोजना वेबसाइट हेर्नुहोस्"
 
-#: libs/widgets/common/searchtextbar.h:46 digikam/digikamapp.cpp:951
+#: libs/widgets/common/searchtextbar.h:46 digikam/digikamapp.cpp:958
 #, fuzzy
 #| msgid "Sharpen..."
 msgid "Search..."
@@ -2705,7 +2711,7 @@ msgstr ""
 "।<p>क्लिप फोकस परिवर्तन गर्न रातो आयातकारमा माउस कर्सर क्लिक गर्नुहोस् र तान्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:360
-#: digikam/digikamapp.cpp:2235 utilities/lighttable/lighttablewindow.cpp:1486
+#: digikam/digikamapp.cpp:2244 utilities/lighttable/lighttablewindow.cpp:1486
 #: utilities/lighttable/lighttablewindow.cpp:1509
 #, fuzzy, kde-format
 #| msgid "Zoom: "
@@ -2890,8 +2896,9 @@ msgid "Delete Date Search?"
 msgstr "खोजी मेट्नुहोस्"
 
 #: digikam/timelinefolderview.cpp:260 digikam/albumfolderview.cpp:569
-#: digikam/fuzzysearchfolderview.cpp:260 digikam/albumiconview.cpp:663
-#: digikam/digikamapp.cpp:638
+#: digikam/albumiconview.cpp:663 digikam/digikamapp.cpp:645
+#: utilities/gpssearch/gpssearchfolderview.cpp:283
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:291
 msgid "Rename..."
 msgstr "पुन: नामकरण गर्नुहोस्..."
 
@@ -2910,7 +2917,7 @@ msgstr "एल्बम"
 #: digikam/albummanager.cpp:422 digikam/albumiconview.cpp:1580
 #: digikam/albumselectdialog.cpp:117 digikam/album.cpp:342
 #: utilities/kipiiface/kipiimagecollection.cpp:270
-#: utilities/kipiiface/kipiimagecollectionselector.cpp:139
+#: utilities/kipiiface/kipiimagecollectionselector.cpp:140
 msgid "My Albums"
 msgstr "मेरो एल्बम"
 
@@ -2918,7 +2925,7 @@ msgstr "मेरो एल्बम"
 #: digikam/tagfolderview.cpp:519 digikam/tagfolderview.cpp:826
 #: digikam/tagfolderview.cpp:901 digikam/tagfolderview.cpp:930
 #: digikam/albummanager.cpp:425 digikam/album.cpp:401
-#: utilities/kipiiface/kipiimagecollectionselector.cpp:140
+#: utilities/kipiiface/kipiimagecollectionselector.cpp:141
 msgid "My Tags"
 msgstr "मेरो ट्याग"
 
@@ -2976,17 +2983,23 @@ msgstr "खोजी:"
 msgid "Search:"
 msgstr "खोजी:"
 
-#: digikam/searchtabheader.cpp:200 digikam/digikamapp.cpp:959
+#: digikam/searchtabheader.cpp:199
+#, fuzzy
+#| msgid "Enter new album name:"
+msgid "Enter keywords here..."
+msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
+
+#: digikam/searchtabheader.cpp:201 digikam/digikamapp.cpp:966
 msgid "Advanced Search..."
 msgstr "उन्नत खोजी..."
 
-#: digikam/searchtabheader.cpp:214
+#: digikam/searchtabheader.cpp:215
 #, fuzzy
 #| msgid "Delete Search"
 msgid "Save Current Search"
 msgstr "खोजी मेट्नुहोस्"
 
-#: digikam/searchtabheader.cpp:218
+#: digikam/searchtabheader.cpp:219
 #, fuzzy
 #| msgid ""
 #| "<p>Enter the name used to save the current search in the \"My Searches\" "
@@ -2995,30 +3008,31 @@ msgid ""
 "<p>Enter a name for the current search to save it in the \"Searches\" view"
 msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
 
-#: digikam/searchtabheader.cpp:223 digikam/fuzzysearchview.cpp:185
+#: digikam/searchtabheader.cpp:224
 msgid "Save current search to a new virtual Album"
 msgstr ""
 
-#: digikam/searchtabheader.cpp:224
+#: digikam/searchtabheader.cpp:225
 msgid ""
 "<p>If you press this button, the current search will be saved to a new "
 "virtual Search Album using the name set on the left side."
 msgstr ""
 
-#: digikam/searchtabheader.cpp:238 digikam/searchtabheader.cpp:255
+#: digikam/searchtabheader.cpp:239 digikam/searchtabheader.cpp:256
 #, fuzzy
 #| msgid "Edit Search..."
 msgid "Edit Stored Search"
 msgstr "खोजी सम्पादन गर्नुहोस्..."
 
-#: digikam/searchtabheader.cpp:261 digikam/albumiconview.cpp:617
+#: digikam/searchtabheader.cpp:262 digikam/albumiconview.cpp:617
 #: digikam/imagepreviewview.cpp:375 digikam/digikamapp.cpp:614
 #: utilities/lighttable/lighttablepreview.cpp:391
 msgid "Edit..."
 msgstr "सम्पादन..."
 
-#: digikam/searchtabheader.cpp:451 digikam/fuzzysearchview.cpp:409
-#: digikam/timelineview.cpp:524
+#: digikam/searchtabheader.cpp:452 digikam/timelineview.cpp:524
+#: utilities/gpssearch/gpssearchview.cpp:301
+#: utilities/fuzzysearch/fuzzysearchview.cpp:585
 #, fuzzy
 #| msgid ""
 #| "Another search with same name exists.\n"
@@ -3030,78 +3044,11 @@ msgstr ""
 "त्यो नामको अर्को खोजी पनि अवस्थित छ ।\n"
 "कृपया नयाँ नाम प्रविष्ट गर्नुहोस्:"
 
-#: digikam/searchtabheader.cpp:454 digikam/fuzzysearchview.cpp:412
-#: digikam/timelineview.cpp:527
+#: digikam/searchtabheader.cpp:455 digikam/timelineview.cpp:527
+#: utilities/gpssearch/gpssearchview.cpp:304
+#: utilities/fuzzysearch/fuzzysearchview.cpp:588
 msgid "Name exists"
 msgstr "नाम अवस्थित छ"
-
-#: digikam/fuzzysearchview.cpp:140
-#, fuzzy
-#| msgid "<p>Set here the color used to draw composition guides."
-msgid "<p>Set here the brush color used to draw sketch."
-msgstr "<p>संयोजन मार्गदर्शन कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
-
-#: digikam/fuzzysearchview.cpp:147
-#: imageplugins/oilpaint/imageeffect_oilpaint.cpp:90
-msgid "Brush size:"
-msgstr ""
-
-#: digikam/fuzzysearchview.cpp:152
-#, fuzzy
-#| msgid "<p>Set here the width in pixels used to draw composition guides."
-msgid "<p>Set here the brush size in pixels used to draw sketch."
-msgstr "<p>यहाँ संयोजन मार्गदर्शन कोर्न प्रयोग गरिने पिक्सेलमा चौडाइ सेट गर्नुहोस्"
-
-#: digikam/fuzzysearchview.cpp:154
-#, fuzzy
-#| msgid "Quality:"
-msgid "Results:"
-msgstr "गुणस्तर:"
-
-#: digikam/fuzzysearchview.cpp:159
-#, fuzzy
-#| msgid "<p>Set here the contrast adjustment of the image."
-msgid "<p>Set here the number of items to find."
-msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
-
-#: digikam/fuzzysearchview.cpp:174
-#, fuzzy
-#| msgid "Color depth:"
-msgid "Clear sketch"
-msgstr "रङ गहिराइ:"
-
-#: digikam/fuzzysearchview.cpp:175
-#, fuzzy
-#| msgid "<p>Set this option to display image type."
-msgid "<p>Use this button to clear sketch contents."
-msgstr "<p>छवि प्रकार प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
-
-#: digikam/fuzzysearchview.cpp:179
-#, fuzzy
-#| msgid ""
-#| "<p>Enter the name used to save the current search in the \"My Searches\" "
-#| "view"
-msgid ""
-"<p>Enter the name of the current fuzzy search to save in the \"My Fuzzy "
-"Searches\" view"
-msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
-
-#: digikam/fuzzysearchview.cpp:186
-msgid ""
-"<p>If you press this button, current fuzzy search will be saved to a new "
-"search virtual Album using name set on the left side."
-msgstr ""
-
-#: digikam/fuzzysearchview.cpp:458 digikam/albumfolderview.cpp:827
-#: digikam/timelineview.cpp:575
-#, kde-format
-msgid "Rename Album (%1)"
-msgstr "एल्बम (%1) पुन: नामकरण गर्नुहोस्"
-
-#: digikam/fuzzysearchview.cpp:459 digikam/albumfolderview.cpp:828
-#: digikam/timelineview.cpp:576
-msgid "Enter new album name:"
-msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
 
 #: digikam/digikamfirstrun.cpp:81
 msgid "Album Library Path"
@@ -3214,6 +3161,19 @@ msgstr "एल्बमलाई रद्दीटोकरीमा सार�
 msgid "Delete Album"
 msgstr "एल्बम मेट्नुहोस्"
 
+#: digikam/albumfolderview.cpp:827 digikam/timelineview.cpp:575
+#: utilities/gpssearch/gpssearchview.cpp:353
+#: utilities/fuzzysearch/fuzzysearchview.cpp:638
+#, kde-format
+msgid "Rename Album (%1)"
+msgstr "एल्बम (%1) पुन: नामकरण गर्नुहोस्"
+
+#: digikam/albumfolderview.cpp:828 digikam/timelineview.cpp:576
+#: utilities/gpssearch/gpssearchview.cpp:354
+#: utilities/fuzzysearch/fuzzysearchview.cpp:639
+msgid "Enter new album name:"
+msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
+
 #: digikam/albumfolderview.cpp:1100 digikam/albumfolderview.cpp:1137
 #: digikam/albumiconview.cpp:673
 msgid "Set as Album Thumbnail"
@@ -3247,23 +3207,6 @@ msgstr "सिर्जना : %1"
 #, kde-format
 msgid "modified : %1"
 msgstr "परिमार्जन : %1"
-
-#: digikam/fuzzysearchfolderview.cpp:94 digikam/fuzzysearchfolderview.cpp:259
-#, fuzzy
-#| msgid "My Searches"
-msgid "My Fuzzy Searches"
-msgstr "मेरो खोजीहरू"
-
-#: digikam/fuzzysearchfolderview.cpp:165
-#, kde-format
-msgid "Are you sure you want to delete the selected Fuzzy Search \"%1\"?"
-msgstr ""
-
-#: digikam/fuzzysearchfolderview.cpp:168
-#, fuzzy
-#| msgid "Delete Search"
-msgid "Delete Fuzzy Search?"
-msgstr "खोजी मेट्नुहोस्"
 
 #: digikam/albumpropsedit.cpp:96 digikam/albumpropsedit.cpp:208
 msgid "New Album"
@@ -3517,7 +3460,7 @@ msgstr "अन्तिम खोजी"
 
 #: digikam/searchfolderview.cpp:115 digikam/searchfolderview.cpp:311
 #: digikam/albummanager.cpp:428
-#: utilities/kipiiface/kipiimagecollectionselector.cpp:141
+#: utilities/kipiiface/kipiimagecollectionselector.cpp:142
 msgid "My Searches"
 msgstr "मेरो खोजीहरू"
 
@@ -4277,7 +4220,7 @@ msgstr "ट्याग गरेको छैन"
 
 #: digikam/tagfilterview.cpp:281 digikam/tagfilterview.cpp:547
 #: digikam/tagfilterview.cpp:609 digikam/tagfilterview.cpp:858
-#: digikam/digikamview.cpp:247
+#: digikam/digikamview.cpp:253
 msgid "Tag Filters"
 msgstr "ट्याग फिल्टर"
 
@@ -4597,136 +4540,144 @@ msgstr "<p>छवि सम्पादक क्षेत्रमा प्र
 msgid "Add selected items to the light table thumbbar."
 msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
 
-#: digikam/digikamapp.cpp:640
+#: digikam/digikamapp.cpp:638
+msgid "Find Similiar..."
+msgstr ""
+
+#: digikam/digikamapp.cpp:639
+msgid "Find similar images using selected item as reference."
+msgstr ""
+
+#: digikam/digikamapp.cpp:647
 #, fuzzy
 #| msgid ""
 #| "This option allows you to rename the filename of the current selected item"
 msgid "Change the filename of the currently selected item."
 msgstr "यो विकल्पले हालै चयन गरेको वस्तुको फाइलनाम पुन: नामकरण गर्न अनुमति दिन्छ ।"
 
-#: digikam/digikamapp.cpp:655
+#: digikam/digikamapp.cpp:662
 #, fuzzy
 #| msgid "Delete Permanently"
 msgid "Delete permanently"
 msgstr "सदाका लागि मेट्नुहोस्"
 
-#: digikam/digikamapp.cpp:665
+#: digikam/digikamapp.cpp:672
 #, fuzzy
 #| msgid "Delete Permanently without Confirmation"
 msgid "Delete permanently without confirmation"
 msgstr "यकिन नगरिकन सदाका लागि मेट्नुहोस्"
 
-#: digikam/digikamapp.cpp:673
+#: digikam/digikamapp.cpp:680
 #, fuzzy
 #| msgid "Move to Trash without Confirmation"
 msgid "Move to trash without confirmation"
 msgstr "यकिन नगरिकन रद्दीटोकरीमा सार्नुहोस्"
 
-#: digikam/digikamapp.cpp:680
+#: digikam/digikamapp.cpp:687
 msgid "&Sort Albums"
 msgstr "एल्बम क्रमबद्ध गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:681
+#: digikam/digikamapp.cpp:688
 msgid "Sort Albums in tree-view."
 msgstr ""
 
-#: digikam/digikamapp.cpp:687
+#: digikam/digikamapp.cpp:694
 msgid "By Folder"
 msgstr "फोल्डरद्वारा"
 
-#: digikam/digikamapp.cpp:688
+#: digikam/digikamapp.cpp:695
 msgid "By Collection"
 msgstr "सङ्कलनद्वारा"
 
-#: digikam/digikamapp.cpp:689 digikam/digikamapp.cpp:717
+#: digikam/digikamapp.cpp:696 digikam/digikamapp.cpp:724
 msgid "By Date"
 msgstr "मितिद्वारा"
 
-#: digikam/digikamapp.cpp:694
+#: digikam/digikamapp.cpp:701
 msgid "Include Album Sub-Tree"
 msgstr ""
 
-#: digikam/digikamapp.cpp:695
+#: digikam/digikamapp.cpp:702
 msgid ""
 "Activate this option to recursively show all sub-albums below the current "
 "album."
 msgstr ""
 
-#: digikam/digikamapp.cpp:700
+#: digikam/digikamapp.cpp:707
 msgid "Include Tag Sub-Tree"
 msgstr ""
 
-#: digikam/digikamapp.cpp:701
+#: digikam/digikamapp.cpp:708
 msgid ""
 "Activate this option to show all images marked by the given tag and its all "
 "its sub-tags."
 msgstr ""
 
-#: digikam/digikamapp.cpp:708
+#: digikam/digikamapp.cpp:715
 msgid "&Sort Images"
 msgstr "छवि क्रमबद्ध गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:709
+#: digikam/digikamapp.cpp:716
 #, fuzzy
 #| msgid "&Sort Albums"
 msgid "Sort Albums contents."
 msgstr "एल्बम क्रमबद्ध गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:715
+#: digikam/digikamapp.cpp:722
 msgid "By Name"
 msgstr "नामद्वारा"
 
-#: digikam/digikamapp.cpp:716
+#: digikam/digikamapp.cpp:723
 msgid "By Path"
 msgstr "मार्गद्वारा"
 
-#: digikam/digikamapp.cpp:718
+#: digikam/digikamapp.cpp:725
 msgid "By File Size"
 msgstr "फाइल साइजद्वारा"
 
-#: digikam/digikamapp.cpp:719
+#: digikam/digikamapp.cpp:726
 msgid "By Rating"
 msgstr "दरद्वारा"
 
-#: digikam/digikamapp.cpp:729
+#: digikam/digikamapp.cpp:736
 #, fuzzy
 #| msgid "Correct Exif Orientation Tag"
 msgid "Adjust Exif orientation tag"
 msgstr "Exif अभिमुखीकरण ट्याग सुधार गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:734
+#: digikam/digikamapp.cpp:741
 msgid "Normal"
 msgstr "सामान्य"
 
-#: digikam/digikamapp.cpp:738
+#: digikam/digikamapp.cpp:745
 msgid "Rotated upside down"
 msgstr ""
 
-#: digikam/digikamapp.cpp:742
+#: digikam/digikamapp.cpp:749
 #, fuzzy
 #| msgid "Rotated 90 Degrees / Horiz. Flipped"
 msgid "Rotated right / Horiz. Flipped"
 msgstr "९० डिग्रीमा घुमाइएको / तेर्सो तरिकाले घुमाइएको"
 
-#: digikam/digikamapp.cpp:744
+#: digikam/digikamapp.cpp:751
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotated right"
 msgstr "घुमाउनुहोस्"
 
-#: digikam/digikamapp.cpp:746
+#: digikam/digikamapp.cpp:753
 #, fuzzy
 #| msgid "Rotated 90 Degrees / Vert. Flipped"
 msgid "Rotated right / Vert. Flipped"
 msgstr "९० डिग्रिमा घुमाइएको / ठाडो तरिकाले घुमाइएको"
 
-#: digikam/digikamapp.cpp:748
+#: digikam/digikamapp.cpp:755
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotated left"
 msgstr "घुमाउनुहोस्"
 
-#: digikam/digikamapp.cpp:794
+#: digikam/digikamapp.cpp:801
 #: utilities/imageeditor/editor/editorwindow.cpp:356
 #: utilities/cameragui/cameraui.cpp:313
 #, fuzzy
@@ -4734,13 +4685,13 @@ msgstr "घुमाउनुहोस्"
 msgid "Select All"
 msgstr "सबै चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:801
+#: digikam/digikamapp.cpp:808
 #: utilities/imageeditor/editor/editorwindow.cpp:361
 #: utilities/cameragui/cameraui.cpp:320
 msgid "Select None"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
-#: digikam/digikamapp.cpp:831
+#: digikam/digikamapp.cpp:838
 #: utilities/imageeditor/editor/editorwindow.cpp:376
 #: utilities/lighttable/lighttablewindow.cpp:433
 #, fuzzy
@@ -4748,14 +4699,14 @@ msgstr "कुनै पनि चयन नगर्नुहोस्"
 msgid "Zoom to 1:1"
 msgstr "जुम घटाउनुहोस्"
 
-#: digikam/digikamapp.cpp:838
+#: digikam/digikamapp.cpp:845
 #: utilities/imageeditor/editor/editorwindow.cpp:381
 #: utilities/lighttable/lighttablepreview.cpp:385
 #: utilities/lighttable/lighttablewindow.cpp:438
 msgid "Fit to &Window"
 msgstr ""
 
-#: digikam/digikamapp.cpp:850
+#: digikam/digikamapp.cpp:857
 #: utilities/imageeditor/editor/editorwindow.cpp:425
 #: utilities/lighttable/lighttablewindow.cpp:446
 #, fuzzy
@@ -4763,26 +4714,26 @@ msgstr ""
 msgid "Slide"
 msgstr "कडा सेतो"
 
-#: digikam/digikamapp.cpp:854
+#: digikam/digikamapp.cpp:861
 msgid "All"
 msgstr "सबै"
 
-#: digikam/digikamapp.cpp:860
+#: digikam/digikamapp.cpp:867
 msgid "Selection"
 msgstr "चयन"
 
-#: digikam/digikamapp.cpp:866
+#: digikam/digikamapp.cpp:873
 #, fuzzy
 #| msgid "Date-based sub-albums"
 msgid "With all sub-albums"
 msgstr "मितिमा आधारित सहायक एल्बम"
 
-#: digikam/digikamapp.cpp:874
+#: digikam/digikamapp.cpp:881
 #: utilities/imageeditor/editor/editorwindow.cpp:447
 msgid "Show Thumbnails"
 msgstr "थम्बनेल देखाउनुहोस्"
 
-#: digikam/digikamapp.cpp:886
+#: digikam/digikamapp.cpp:893
 #: utilities/imageeditor/editor/editorwindow.cpp:521
 #: utilities/lighttable/lighttablewindow.cpp:477
 #: utilities/cameragui/cameraui.cpp:435
@@ -4791,56 +4742,56 @@ msgstr "थम्बनेल देखाउनुहोस्"
 msgid "RAW camera supported"
 msgstr "कच्चा तस्विरका लागि मेटाडेटा समर्थन"
 
-#: digikam/digikamapp.cpp:892
+#: digikam/digikamapp.cpp:899
 msgid "Kipi Plugins Handbook"
 msgstr "किपि प्लगइन ह्यान्डबुक"
 
-#: digikam/digikamapp.cpp:903 utilities/cameragui/cameraui.cpp:427
+#: digikam/digikamapp.cpp:910 utilities/cameragui/cameraui.cpp:427
 #, fuzzy
 #| msgid "Donate Money..."
 msgid "Donate..."
 msgstr "पैसा अनुदान दिनुहोस्..."
 
-#: digikam/digikamapp.cpp:907
+#: digikam/digikamapp.cpp:914
 #: utilities/imageeditor/editor/editorwindow.cpp:517
 #: utilities/lighttable/lighttablewindow.cpp:473
 #: utilities/cameragui/cameraui.cpp:431
 msgid "Contribute..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:917 utilities/imageeditor/editor/imagewindow.cpp:365
+#: digikam/digikamapp.cpp:924 utilities/imageeditor/editor/imagewindow.cpp:365
 #: utilities/lighttable/lighttablewindow.cpp:489
 #, fuzzy
 #| msgid "Assign Rating \"No Star\""
 msgid "Assign Rating \"No Stars\""
 msgstr "\"तारा नभएको\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:922 utilities/imageeditor/editor/imagewindow.cpp:370
+#: digikam/digikamapp.cpp:929 utilities/imageeditor/editor/imagewindow.cpp:370
 #: utilities/lighttable/lighttablewindow.cpp:494
 msgid "Assign Rating \"One Star\""
 msgstr "\"एउटा तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:927 utilities/imageeditor/editor/imagewindow.cpp:375
+#: digikam/digikamapp.cpp:934 utilities/imageeditor/editor/imagewindow.cpp:375
 #: utilities/lighttable/lighttablewindow.cpp:499
 msgid "Assign Rating \"Two Stars\""
 msgstr "\"दुइ तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:932 utilities/imageeditor/editor/imagewindow.cpp:380
+#: digikam/digikamapp.cpp:939 utilities/imageeditor/editor/imagewindow.cpp:380
 #: utilities/lighttable/lighttablewindow.cpp:504
 msgid "Assign Rating \"Three Stars\""
 msgstr "\"तिन तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:937 utilities/imageeditor/editor/imagewindow.cpp:385
+#: digikam/digikamapp.cpp:944 utilities/imageeditor/editor/imagewindow.cpp:385
 #: utilities/lighttable/lighttablewindow.cpp:509
 msgid "Assign Rating \"Four Stars\""
 msgstr "\"चार तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:942 utilities/imageeditor/editor/imagewindow.cpp:390
+#: digikam/digikamapp.cpp:949 utilities/imageeditor/editor/imagewindow.cpp:390
 #: utilities/lighttable/lighttablewindow.cpp:514
 msgid "Assign Rating \"Five Stars\""
 msgstr "\"पाँच तारा\" दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:964 utilities/setup/setup.cpp:184
+#: digikam/digikamapp.cpp:971 utilities/setup/setup.cpp:184
 #: utilities/lighttable/lighttablewindow.cpp:102
 #: utilities/lighttable/lighttablewindow.cpp:1242
 #, fuzzy
@@ -4848,130 +4799,130 @@ msgstr "\"पाँच तारा\" दर मानाङ्कन गर्�
 msgid "Light Table"
 msgstr "प्रकाश"
 
-#: digikam/digikamapp.cpp:971
+#: digikam/digikamapp.cpp:978
 msgid "Scan for New Images"
 msgstr "नयाँ छविका लागि स्क्यान गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:977
+#: digikam/digikamapp.cpp:984
 msgid "Rebuild all Thumbnails..."
 msgstr "सबै थम्बनेल पुन: निर्माण गर्नुहोस्..."
 
-#: digikam/digikamapp.cpp:983
+#: digikam/digikamapp.cpp:990
 #, fuzzy
 #| msgid "Rebuild all Thumbnails..."
 msgid "Rebuild all FingerPrints..."
 msgstr "सबै थम्बनेल पुन: निर्माण गर्नुहोस्..."
 
-#: digikam/digikamapp.cpp:990
+#: digikam/digikamapp.cpp:997
 msgid "Update Metadata Database..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:1005
+#: digikam/digikamapp.cpp:1012
 msgid "Loading cameras"
 msgstr "क्यामेरा लोडिङ"
 
-#: digikam/digikamapp.cpp:1216
+#: digikam/digikamapp.cpp:1225
 msgid "No item selected"
 msgstr "वस्तु चयन गरेको छैन"
 
-#: digikam/digikamapp.cpp:1232
+#: digikam/digikamapp.cpp:1241
 #, fuzzy, kde-format
 #| msgid " (%2 of %3)"
 msgid " (%1 of %2)"
 msgstr " (%3 को %2)"
 
-#: digikam/digikamapp.cpp:1238
+#: digikam/digikamapp.cpp:1247
 #, fuzzy, kde-format
 #| msgid "%1 items selected"
 msgid "%1/%2 items selected"
 msgstr "%1 वस्तु चयन गरेको छ"
 
-#: digikam/digikamapp.cpp:1287
+#: digikam/digikamapp.cpp:1296
 #, fuzzy
 #| msgid "Cameras"
 msgid "Digital Cameras"
 msgstr "क्यामेरा"
 
-#: digikam/digikamapp.cpp:1289
+#: digikam/digikamapp.cpp:1298
 msgid "USB Storage Devices"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1291
+#: digikam/digikamapp.cpp:1300
 #, fuzzy
 #| msgid "Camera Folders"
 msgid "Card Readers"
 msgstr "क्यामेरा फोल्डर"
 
-#: digikam/digikamapp.cpp:1293
+#: digikam/digikamapp.cpp:1302
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Cameras Added Manually"
 msgstr "क्यामेरा म्यानुअल"
 
-#: digikam/digikamapp.cpp:1301
+#: digikam/digikamapp.cpp:1310
 msgid "Add Camera..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1309
+#: digikam/digikamapp.cpp:1318
 msgid "Add Images..."
 msgstr "छवि थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1311
+#: digikam/digikamapp.cpp:1320
 #, fuzzy
 #| msgid "This option adds new items to the current Album."
 msgid "Adds new items to an Album."
 msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
 
-#: digikam/digikamapp.cpp:1317
+#: digikam/digikamapp.cpp:1326
 #, fuzzy
 #| msgid "Add Camera..."
 msgid "Add Folders..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
-#: digikam/digikamapp.cpp:1318
+#: digikam/digikamapp.cpp:1327
 msgid "Adds new folders to Albums library."
 msgstr ""
 
-#: digikam/digikamapp.cpp:1385 digikam/digikamapp.cpp:1542
+#: digikam/digikamapp.cpp:1394 digikam/digikamapp.cpp:1551
 #, kde-format
 msgid "Images found in %1"
 msgstr "%1 मा छवि फेला पर्यो"
 
-#: digikam/digikamapp.cpp:1566
+#: digikam/digikamapp.cpp:1575
 msgid "Cannot access the storage device.\n"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1671
+#: digikam/digikamapp.cpp:1680
 msgid "CompactFlash Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1674
+#: digikam/digikamapp.cpp:1683
 msgid "Memory Stick Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1677
+#: digikam/digikamapp.cpp:1686
 msgid "SmartMedia Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1680
+#: digikam/digikamapp.cpp:1689
 msgid "SD / MMC Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1683
+#: digikam/digikamapp.cpp:1692
 msgid "xD-Picture Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1994
+#: digikam/digikamapp.cpp:2003
 #, fuzzy
 #| msgid "Kipi Plugins"
 msgid "Loading Kipi Plugins"
 msgstr "किपि प्लगइन"
 
-#: digikam/digikamapp.cpp:2099 showfoto/showfoto.cpp:206
+#: digikam/digikamapp.cpp:2108 showfoto/showfoto.cpp:206
 msgid "Loading themes"
 msgstr "विषयवस्तु लोडिङ"
 
-#: digikam/digikamapp.cpp:2141
+#: digikam/digikamapp.cpp:2150
 #, fuzzy
 #| msgid ""
 #| "Rebuild all albums items thumbnails can take a while.\n"
@@ -4983,7 +4934,7 @@ msgstr ""
 "एल्बमको सबै वस्तु थम्बनेल पुन: निर्माण हुँदा केहि समय लिन सक्दछ ।\n"
 "तपाईँले जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2162
+#: digikam/digikamapp.cpp:2171
 #, fuzzy
 #| msgid ""
 #| "Sync all pictures metadata from all albums with digiKam database can take "
@@ -4996,7 +4947,7 @@ msgstr ""
 "डिजिक्याम डाटाबेससँग सबै एल्बमबाट सबै तस्विर मेटाडाटा सिन्क गर्दा केहि समय लिन सक्दछ ।\n"
 "तपाईँ जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2182
+#: digikam/digikamapp.cpp:2191
 #, fuzzy
 #| msgid ""
 #| "Rebuild all albums items thumbnails can take a while.\n"
@@ -5008,25 +4959,25 @@ msgstr ""
 "एल्बमको सबै वस्तु थम्बनेल पुन: निर्माण हुँदा केहि समय लिन सक्दछ ।\n"
 "तपाईँले जारी राख्न चाहनुहुन्छ ?"
 
-#: digikam/digikamapp.cpp:2229 utilities/cameragui/cameraui.cpp:923
+#: digikam/digikamapp.cpp:2238 utilities/cameragui/cameraui.cpp:923
 #, fuzzy, kde-format
 #| msgid "Size:"
 msgid "Size: %1"
 msgstr "साइज:"
 
-#: digikam/digikamapp.cpp:2264
+#: digikam/digikamapp.cpp:2273
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:2276
+#: digikam/digikamapp.cpp:2285
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folders to import"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
-#: digikam/digikamapp.cpp:2288
+#: digikam/digikamapp.cpp:2297
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
@@ -5176,13 +5127,6 @@ msgstr ""
 msgid "Tag Path"
 msgstr "मार्गद्वारा"
 
-#: digikam/sketchwidget.cpp:168
-msgid ""
-"Draw a sketch here\n"
-"to perform a\n"
-"Fuzzy search"
-msgstr ""
-
 #: digikam/timelineview.cpp:128
 #, fuzzy
 #| msgid "Show file size"
@@ -5264,33 +5208,39 @@ msgid ""
 "saved to a new search virtual Album using name set on the left side."
 msgstr ""
 
-#: digikam/digikamview.cpp:231
+#: digikam/digikamview.cpp:236
 msgid "Albums"
 msgstr "एल्बम"
 
-#: digikam/digikamview.cpp:232
+#: digikam/digikamview.cpp:237
 #, fuzzy
 #| msgid "Standard"
 msgid "Calendar"
 msgstr "मानक"
 
-#: digikam/digikamview.cpp:234
+#: digikam/digikamview.cpp:239
 #, fuzzy
 #| msgid "Title"
 msgid "Timeline"
 msgstr "शीर्षक"
 
-#: digikam/digikamview.cpp:235
+#: digikam/digikamview.cpp:240
 msgid "Searches"
 msgstr "खोजी"
 
-#: digikam/digikamview.cpp:236
+#: digikam/digikamview.cpp:241
 #, fuzzy
 #| msgid "My Searches"
 msgid "Fuzzy Searches"
 msgstr "मेरो खोजीहरू"
 
-#: digikam/digikamview.cpp:1585
+#: digikam/digikamview.cpp:242
+#, fuzzy
+#| msgid "My Searches"
+msgid "Map Searches"
+msgstr "मेरो खोजीहरू"
+
+#: digikam/digikamview.cpp:1612
 #, fuzzy, kde-format
 #| msgid "Prepare data for slideshow from %1 pictures. Please wait..."
 msgid "Preparing slideshow of %1 images. Please wait..."
@@ -5895,7 +5845,7 @@ msgid "&Image"
 msgstr "छवि"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 47
+#. i18n: file ./digikam/digikamui.rc line 48
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 27
 #. i18n: tag text
@@ -5909,7 +5859,7 @@ msgid "&Edit"
 msgstr "सम्पादन..."
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 54
+#. i18n: file ./digikam/digikamui.rc line 55
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 37
 #. i18n: tag text
@@ -5926,7 +5876,7 @@ msgid "&View"
 msgstr "दृश्य..."
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 71
+#. i18n: file ./digikam/digikamui.rc line 72
 #: rc.cpp:20
 #, fuzzy
 #| msgid "&Colors"
@@ -5934,7 +5884,7 @@ msgid "&Tools"
 msgstr "रङ"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 87
+#. i18n: file ./digikam/digikamui.rc line 88
 #: rc.cpp:23
 #, fuzzy
 #| msgid "&Back"
@@ -5942,7 +5892,7 @@ msgid "&Batch"
 msgstr "पछाडि"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 91
+#. i18n: file ./digikam/digikamui.rc line 92
 #: rc.cpp:26
 #, fuzzy
 #| msgid "&Import"
@@ -5950,13 +5900,13 @@ msgid "I&mport"
 msgstr "आयात"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 103
+#. i18n: file ./digikam/digikamui.rc line 104
 #: rc.cpp:29
 msgid "&Export"
 msgstr "निर्यात"
 
 #. i18n: tag Text
-#. i18n: file ./digikam/digikamui.rc line 107
+#. i18n: file ./digikam/digikamui.rc line 108
 #. i18n: tag Text
 #. i18n: file ./showfoto/showfotoui.rc line 86
 #. i18n: tag Text
@@ -5972,7 +5922,7 @@ msgid "&Settings"
 msgstr "सेटिङ"
 
 #. i18n: tag Text
-#. i18n: file ./digikam/digikamui.rc line 118
+#. i18n: file ./digikam/digikamui.rc line 119
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 78
 #. i18n: tag text
@@ -5988,7 +5938,7 @@ msgid "&Help"
 msgstr "मेट्नुहोस्"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 132
+#. i18n: file ./digikam/digikamui.rc line 133
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 99
 #. i18n: tag text
@@ -8973,6 +8923,11 @@ msgstr ""
 msgid "Oil paint algorithm"
 msgstr ""
 
+#: imageplugins/oilpaint/imageeffect_oilpaint.cpp:90
+#: utilities/fuzzysearch/fuzzysearchview.cpp:270
+msgid "Brush size:"
+msgstr ""
+
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:94
 #, fuzzy
 #| msgid "<p>Set here the height selection for cropping."
@@ -11646,6 +11601,51 @@ msgstr ""
 "</table>\n"
 "</p>\n"
 
+#: utilities/gpssearch/gpssearchview.cpp:118
+#, fuzzy
+#| msgid ""
+#| "<p>Enter the name used to save the current search in the \"My Searches\" "
+#| "view"
+msgid ""
+"<p>Enter the name of the current map search to save in the \"My Map Searches"
+"\" view"
+msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
+
+#: utilities/gpssearch/gpssearchview.cpp:124
+#: utilities/fuzzysearch/fuzzysearchview.cpp:308
+msgid "Save current sketch search to a new virtual Album"
+msgstr ""
+
+#: utilities/gpssearch/gpssearchview.cpp:125
+msgid ""
+"<p>If you press this button, current map search will be saved to a new "
+"search virtual album using name set on the left side."
+msgstr ""
+
+#: utilities/gpssearch/gpssearchfolderview.cpp:94
+#: utilities/gpssearch/gpssearchfolderview.cpp:282
+#, fuzzy
+#| msgid "My Searches"
+msgid "My Map Searches"
+msgstr "मेरो खोजीहरू"
+
+#: utilities/gpssearch/gpssearchfolderview.cpp:171
+#, kde-format
+msgid "Are you sure you want to delete the selected Map Search \"%1\"?"
+msgstr ""
+
+#: utilities/gpssearch/gpssearchfolderview.cpp:174
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Delete Map Search?"
+msgstr "खोजी मेट्नुहोस्"
+
+#: utilities/gpssearch/gpssearchfolderview.cpp:199
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Current Map Search"
+msgstr "खोजी मेट्नुहोस्"
+
 #: utilities/batch/fingerprintsgenerator.cpp:89
 #, fuzzy
 #| msgid "Rebuild all Thumbnails..."
@@ -11970,7 +11970,7 @@ msgstr "छवि सिर्जना मिति मुद्रण गर�
 #: utilities/setup/setupslideshow.cpp:101
 #, fuzzy
 #| msgid "<p>Print image comment on bottom of screen."
-msgid "<p>Print the image creation at the bottom of the screen."
+msgid "<p>Print the image creation time/date at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल छवि टिप्पणी मुद्रण गर्नुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:103
@@ -15353,6 +15353,147 @@ msgstr "स्लाइड प्रर्दशन समाप्त भयो
 #: utilities/slideshow/slideshow.cpp:520
 msgid "Click To Exit..."
 msgstr "'अन्त्य गर्नुहोस्' मा क्लिक गर्नुहोस्..."
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:162
+msgid ""
+"Drag & drop an image here\n"
+"to perform similar\n"
+"items to search"
+msgstr ""
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:188
+#: utilities/fuzzysearch/fuzzysearchview.cpp:277
+#, fuzzy
+#| msgid "Quality:"
+msgid "Results:"
+msgstr "गुणस्तर:"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:193
+#, fuzzy
+#| msgid "<p>Set here the contrast adjustment of the image."
+msgid "<p>Set here the number of similar items to find."
+msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:207
+#, fuzzy
+#| msgid ""
+#| "<p>Enter the name used to save the current search in the \"My Searches\" "
+#| "view"
+msgid ""
+"<p>Enter the name of the current similar image search to save in the \"My "
+"Fuzzy Searches\" view"
+msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:213
+msgid "Save current similar image search to a new virtual Album"
+msgstr ""
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:214
+msgid ""
+"<p>If you press this button, current similar image search will be saved to a "
+"new search virtual album using name set on the left side."
+msgstr ""
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:233
+#, fuzzy
+#| msgid "&Image"
+msgid "Image"
+msgstr "छवि"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:263
+#, fuzzy
+#| msgid "<p>Set here the color used to draw composition guides."
+msgid "<p>Set here the brush color used to draw sketch."
+msgstr "<p>संयोजन मार्गदर्शन कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:275
+#, fuzzy
+#| msgid "<p>Set here the width in pixels used to draw composition guides."
+msgid "<p>Set here the brush size in pixels used to draw sketch."
+msgstr "<p>यहाँ संयोजन मार्गदर्शन कोर्न प्रयोग गरिने पिक्सेलमा चौडाइ सेट गर्नुहोस्"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:282
+#, fuzzy
+#| msgid "<p>Set here the contrast adjustment of the image."
+msgid "<p>Set here the number of items to find using sketch."
+msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:297
+#, fuzzy
+#| msgid "Color depth:"
+msgid "Clear sketch"
+msgstr "रङ गहिराइ:"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:298
+#, fuzzy
+#| msgid "<p>Set this option to display image type."
+msgid "<p>Use this button to clear sketch contents."
+msgstr "<p>छवि प्रकार प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:302
+#, fuzzy
+#| msgid ""
+#| "<p>Enter the name used to save the current search in the \"My Searches\" "
+#| "view"
+msgid ""
+"<p>Enter the name of the current sketch search to save in the \"My Fuzzy "
+"Searches\" view"
+msgstr "<p>\"मेरो खोजी\" दृश्यमा हालको खोजी बचत गर्न प्रयोग गरिने नाम प्रविष्ट गर्नुहोस्"
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:309
+msgid ""
+"<p>If you press this button, current sketch fuzzy search will be saved to a "
+"new search virtual album using name set on the left side."
+msgstr ""
+
+#: utilities/fuzzysearch/fuzzysearchview.cpp:326
+#, fuzzy
+#| msgid "Search:"
+msgid "Sketch"
+msgstr "खोजी:"
+
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:94
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:290
+#, fuzzy
+#| msgid "My Searches"
+msgid "My Fuzzy Searches"
+msgstr "मेरो खोजीहरू"
+
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:178
+#, kde-format
+msgid "Are you sure you want to delete the selected Fuzzy Search \"%1\"?"
+msgstr ""
+
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:181
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Delete Fuzzy Search?"
+msgstr "खोजी मेट्नुहोस्"
+
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:206
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Current Fuzzy Sketch Search"
+msgstr "खोजी मेट्नुहोस्"
+
+#: utilities/fuzzysearch/fuzzysearchfolderview.cpp:209
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Current Fuzzy Image Search"
+msgstr "खोजी मेट्नुहोस्"
+
+#: utilities/fuzzysearch/sketchwidget.cpp:73
+msgid ""
+"You simply draw here a rough sketch of what you want to find and digiKam "
+"will displays the best matches in thumbnail view."
+msgstr ""
+
+#: utilities/fuzzysearch/sketchwidget.cpp:171
+msgid ""
+"Draw a sketch here\n"
+"to perform a\n"
+"Fuzzy search"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Standard"
