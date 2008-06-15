@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-10 18:22+0200\n"
+"POT-Creation-Date: 2008-06-14 19:49+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -130,30 +130,31 @@ msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।
 msgid "Cannot read playlist (%1)."
 msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
 
-#: ktrm.cpp:745
+#: ktrm.cpp:749
 msgid "MusicBrainz Lookup"
 msgstr "सङ्गीतब्रेन्च खोजी"
 
-#: ktrm.cpp:757
+#: ktrm.cpp:761
 #, fuzzy
 #| msgid "Could not connect to iFP device"
 msgid "Could not connect to MusicBrainz server."
 msgstr "आईएफपी यन्त्रमा जडान गर्न सकेन"
 
-#: ktrm.cpp:769
+#: ktrm.cpp:773
 #, fuzzy
 #| msgid "Podcast returned invalid data."
 msgid "MusicBrainz returned invalid content."
 msgstr "पोडकास्टले अवैध डेटा फर्कायो ।"
 
-#: collection/nepomukcollection/NepomukCollection.cpp:71
+#: collection/nepomukcollection/NepomukCollection.cpp:82
 #, fuzzy
 #| msgid "&Copy Files to Collection..."
 msgid "Nepomuk Collection"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
 #: collection/sqlcollection/SqlCollection.cpp:62
-msgid "Local collection"
+#: collection/sqlcollection/SqlCollectionLocation.cpp:62
+msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
 
 #: collection/sqlcollection/OrganizeCollectionDialog.cpp:142
@@ -165,7 +166,7 @@ msgstr "स्थानीय सङ्कलन"
 #: mediadevice/generic/genericmediadevice.cpp:524
 #: collectionbrowser/CollectionTreeItem.cpp:136
 #: playlist/PlaylistGraphicsItem.cpp:328
-#: collectionscanner/collectionscanner.cpp:454
+#: collectionscanner/CollectionScanner.cpp:454
 #: covermanager/CoverManager.cpp:901
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
@@ -213,15 +214,11 @@ msgstr ""
 "खाली भए त्यो सेक्सन लुकाइनेछ ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 187
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:353
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 171
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:350
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:316 rc.cpp:710
 msgid "(Help)"
 msgstr "(मद्दत)"
-
-#: collection/sqlcollection/SqlCollectionLocation.cpp:62
-msgid "Local Collection"
-msgstr "स्थानीय सङ्कलन"
 
 #: collection/sqlcollection/ScanManager.cpp:362
 msgid "Scanning music"
@@ -296,7 +293,7 @@ msgstr ""
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
 
-#: context/ContextView.cpp:289
+#: context/ContextView.cpp:290
 #, fuzzy
 #| msgid "Add Directory"
 msgid "Add Applets"
@@ -537,15 +534,15 @@ msgstr ""
 msgid "Select the type of widget to install from the list below."
 msgstr ""
 
-#: context/plasma/appletbrowser/openwidgetassistant.cpp:54
+#: context/plasma/appletbrowser/openwidgetassistant.cpp:55
 msgid "Plasmoid: Native plasma widget"
 msgstr ""
 
-#: context/plasma/appletbrowser/openwidgetassistant.cpp:75
+#: context/plasma/appletbrowser/openwidgetassistant.cpp:76
 msgid "Install New Widget From File"
 msgstr ""
 
-#: context/plasma/appletbrowser/openwidgetassistant.cpp:80
+#: context/plasma/appletbrowser/openwidgetassistant.cpp:81
 #, fuzzy
 #| msgid "&Select All Files"
 msgid "Select File"
@@ -569,14 +566,14 @@ msgstr "इन्जिन"
 msgid "Script initialization failed"
 msgstr "आईपोड सुरु गर्नुहुन्छ ?"
 
-#: context/plasma/applet.cpp:470
+#: context/plasma/applet.cpp:475
 #, fuzzy
 #| msgid "Unknown title"
 msgid "Unknown Applet"
 msgstr "अज्ञात शीर्षक"
 
-#: context/plasma/applet.cpp:507 context/plasma/applet.cpp:1262
-#: context/plasma/applet.cpp:1263
+#: context/plasma/applet.cpp:512 context/plasma/applet.cpp:1276
+#: context/plasma/applet.cpp:1277
 msgid "Miscellaneous"
 msgstr ""
 
@@ -592,47 +589,47 @@ msgstr "कन्फिगर गर्नुहोस्..."
 msgid "Remove this %1"
 msgstr "प्ले सूची हटाउनुहोस्"
 
-#: context/plasma/applet.cpp:1039 context/plasma/applet.cpp:1178
+#: context/plasma/applet.cpp:1052 context/plasma/applet.cpp:1192
 #, fuzzy, kde-format
 #| msgid "&Settings"
 msgid "%1 Settings"
 msgstr "सेटिङ"
 
-#: context/plasma/applet.cpp:1153
+#: context/plasma/applet.cpp:1167
 #, fuzzy, kde-format
 #| msgid "&Settings"
 msgctxt "@title:window"
 msgid "%1 Settings"
 msgstr "सेटिङ"
 
-#: context/plasma/applet.cpp:1178
+#: context/plasma/applet.cpp:1192
 #, fuzzy
 #| msgid "&Settings"
 msgid "Settings"
 msgstr "सेटिङ"
 
-#: context/plasma/applet.cpp:1525
+#: context/plasma/applet.cpp:1542
 #, kde-format
 msgid "Could not locate the %1 package required for the %2 widget."
 msgstr ""
 
-#: context/plasma/applet.cpp:1543
+#: context/plasma/applet.cpp:1560
 #, kde-format
 msgid "Could not create a %1 ScriptEngine for the %2 widget."
 msgstr ""
 
-#: context/plasma/applet.cpp:1547
+#: context/plasma/applet.cpp:1564
 #, kde-format
 msgid "Could not open the %1 package required for the %2 widget."
 msgstr ""
 
-#: context/plasma/applet.cpp:1648
+#: context/plasma/applet.cpp:1665
 #, fuzzy
 #| msgid "The cover could not be retrieved."
 msgid "This object could not be created."
 msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
 
-#: context/plasma/applet.cpp:1650
+#: context/plasma/applet.cpp:1667
 #, fuzzy, kde-format
 #| msgid "The source cannot be read for the URL: <i>%1</i>"
 msgid ""
@@ -776,13 +773,13 @@ msgstr ""
 msgid "Previous Applet"
 msgstr "अघिल्लो ट्रयाक"
 
-#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1120
+#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1125
 #, fuzzy
 #| msgid "with"
 msgid "Lock Widgets"
 msgstr "सँग"
 
-#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1120
+#: context/plasma/containment.cpp:150 context/plasma/containment.cpp:1125
 #, fuzzy
 #| msgid "All Albums"
 msgid "Unlock Widgets"
@@ -806,19 +803,19 @@ msgstr ""
 msgid "%1 Options"
 msgstr "साधारण विकल्प"
 
-#: context/plasma/containment.cpp:734
+#: context/plasma/containment.cpp:738
 #, fuzzy
 #| msgid "Icons"
 msgid "Icon"
 msgstr "प्रतिमा"
 
-#: context/plasma/containment.cpp:990
+#: context/plasma/containment.cpp:995
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
 msgid "Do you really want to remove this %1?"
 msgstr "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: context/plasma/containment.cpp:991
+#: context/plasma/containment.cpp:996
 #, fuzzy, kde-format
 #| msgid "Remove"
 msgid "Remove %1"
@@ -845,18 +842,18 @@ msgstr "एल्बम:"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:84
 #: dialogs/ScriptManager.cpp:139 dialogs/ScriptManager.cpp:805
-#: playlist/PlaylistModel.cpp:419 widgets/TrackTooltip.cpp:107
+#: playlist/PlaylistModel.cpp:419 widgets/TrackTooltip.cpp:116
 #: SmartPlaylistEditor.cpp:189
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:87
-#: playlist/PlaylistModel.cpp:421 widgets/TrackTooltip.cpp:132
+#: playlist/PlaylistModel.cpp:421 widgets/TrackTooltip.cpp:141
 msgid "Play Count"
 msgstr "प्ले गणना"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:90
-#: widgets/TrackTooltip.cpp:137
+#: widgets/TrackTooltip.cpp:146
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
 
@@ -867,7 +864,7 @@ msgid "Show Fullsize"
 msgstr "पूरा पर्दा देखाउनुहोस्"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:131
-#: covermanager/CoverFetchingActions.cpp:41
+#: covermanager/CoverFetchingActions.cpp:40
 #, fuzzy
 #| msgid "&Next Cover"
 msgid "Fetch Cover"
@@ -876,7 +873,7 @@ msgstr[0] "पछिल्लो आवरण"
 msgstr[1] "पछिल्लो आवरण"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:132
-#: covermanager/CoverFetchingActions.cpp:75
+#: covermanager/CoverFetchingActions.cpp:74
 #, fuzzy
 #| msgid "&Unset Cover"
 #| msgid_plural "&Unset Selected Covers"
@@ -1351,6 +1348,30 @@ msgstr "चयन गरिएको फाइल मेट्ने बार�
 msgid "Deleting files"
 msgstr "फाइलहरू मेट्दै"
 
+#: dialogs/CollectionSetup.cpp:43
+msgid "These folders will be scanned for media to make up your collection:"
+msgstr "यी फोल्डरहरू तपाईँको सङ्कलन माथि उठाउन मिडियाका लागि स्क्यान गरिनेछ:"
+
+#: dialogs/CollectionSetup.cpp:47
+msgid "&Scan folders recursively"
+msgstr "फोल्डरहरू पुनरावृत्तिक रूपमा स्क्यान गर्नुहोस्"
+
+#: dialogs/CollectionSetup.cpp:48
+msgid "&Watch folders for changes"
+msgstr "परिवर्तनका लागि फोल्डरहरू हेर्नुहोस्"
+
+#: dialogs/CollectionSetup.cpp:50
+msgid "If selected, Amarok will read all subfolders."
+msgstr "यदि चयन गरियो भने, अमारोकले सबै उपफोल्डरहरू पढ्नेछ ।"
+
+#: dialogs/CollectionSetup.cpp:51
+msgid ""
+"If selected, folders will automatically get rescanned when the content is "
+"modified, e.g. when a new file was added."
+msgstr ""
+"यदि चयन गरियो भने, सामग्रीहरू परिमार्जन हुँदा फोल्डरहरुले स्वचालित रूपमा पुन: स्क्यान "
+"गरिनेछ, उदाहरणको लागि, नयाँ फाइल थपिदा ।"
+
 #: dialogs/Statistics.cpp:71
 msgid "Collection Statistics"
 msgstr "सङ्कलन तथ्याङ्क"
@@ -1493,7 +1514,7 @@ msgstr ""
 #: dialogs/Statistics.cpp:645 mediadevice/ipod/ipodmediadevice.cpp:2240
 #: mediadevice/generic/genericmediadevice.cpp:937 systray.cpp:123
 #: collectionbrowser/CollectionTreeView.cpp:666
-#: playlistbrowser/PodcastCategory.cpp:331
+#: playlistbrowser/PodcastCategory.cpp:339
 #, fuzzy
 #| msgid "&Append to Playlist"
 #| msgid_plural "&Append Selected Albums to Playlist"
@@ -1830,7 +1851,7 @@ msgstr "शीर्षक"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 124
-#: dialogs/EditFilterDialog.cpp:133 rc.cpp:1119 widgets/TrackTooltip.cpp:140
+#: dialogs/EditFilterDialog.cpp:133 rc.cpp:1119 widgets/TrackTooltip.cpp:149
 msgid "Track"
 msgstr "ट्रयाक"
 
@@ -2352,66 +2373,42 @@ msgstr "पज गरियो"
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
-#: directorylist.cpp:45
-msgid "These folders will be scanned for media to make up your collection:"
-msgstr "यी फोल्डरहरू तपाईँको सङ्कलन माथि उठाउन मिडियाका लागि स्क्यान गरिनेछ:"
-
-#: directorylist.cpp:49
-msgid "&Scan folders recursively"
-msgstr "फोल्डरहरू पुनरावृत्तिक रूपमा स्क्यान गर्नुहोस्"
-
-#: directorylist.cpp:50
-msgid "&Watch folders for changes"
-msgstr "परिवर्तनका लागि फोल्डरहरू हेर्नुहोस्"
-
-#: directorylist.cpp:52
-msgid "If selected, Amarok will read all subfolders."
-msgstr "यदि चयन गरियो भने, अमारोकले सबै उपफोल्डरहरू पढ्नेछ ।"
-
-#: directorylist.cpp:53
-msgid ""
-"If selected, folders will automatically get rescanned when the content is "
-"modified, e.g. when a new file was added."
-msgstr ""
-"यदि चयन गरियो भने, सामग्रीहरू परिमार्जन हुँदा फोल्डरहरुले स्वचालित रूपमा पुन: स्क्यान "
-"गरिनेछ, उदाहरणको लागि, नयाँ फाइल थपिदा ।"
-
 #: Osd.cpp:128
 msgid "Rating changed"
 msgstr "मूल्याङ्कन वजन गरियो"
 
-#: Osd.cpp:142
+#: Osd.cpp:144
 #, kde-format
 msgid "Volume: %1%"
 msgstr "भोल्युम: %1%"
 
-#: Osd.cpp:142
+#: Osd.cpp:144
 #, fuzzy
 #| msgid "Mute"
 msgctxt "State, as in, The playback is silent"
 msgid "Mute"
 msgstr "मौन"
 
-#: Osd.cpp:200 Osd.cpp:201
+#: Osd.cpp:204 Osd.cpp:205
 msgid "Volume: 100%"
 msgstr "भोल्युम: १००%"
 
-#: Osd.cpp:200 Osd.cpp:201
+#: Osd.cpp:204 Osd.cpp:205
 #, fuzzy
 #| msgid "Mute"
 msgctxt "State, as in, the playback is silent"
 msgid "Mute"
 msgstr "मौन"
 
-#: Osd.cpp:497
+#: Osd.cpp:501
 msgid "OSD Preview - drag to reposition"
 msgstr "ओएसडी पूर्वावलोकन - पुन: स्थिति गर्न तान्नुहोस्"
 
-#: Osd.cpp:609
+#: Osd.cpp:613
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
-#: Osd.cpp:629
+#: Osd.cpp:633
 msgid "No information available for this track"
 msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
 
@@ -2474,16 +2471,16 @@ msgstr ""
 "स्थापना भएको छैन</li><li>कुनै libvisual प्लगइनहरू स्थापना गरिएको छैन</li></ul>कृपया "
 "यी सम्भाव्यताहरू जाँच गर्नुहोस् र अमारोक पुन: सुरूआत गर्नुहोस् ।</div>"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:213
+#: podcasts/sql/SqlPodcastProvider.cpp:212
 msgid "Downloading Podcast Media"
 msgstr "पोडकास्ट मिडिया डाउनलोड गर्दै"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:214
+#: podcasts/sql/SqlPodcastProvider.cpp:213
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr "पोडकास्ट \"%1\" डाउनलोड गर्दै"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:298
+#: podcasts/sql/SqlPodcastProvider.cpp:297
 #, fuzzy, kde-format
 #| msgid "Setting iPod model to %1 GB %2 (x%3)"
 msgid "Unable to save podcast episode file to %1"
@@ -3345,11 +3342,13 @@ msgstr "डाउनलोड गर्नुहोस्"
 #: mediadevice/mtp/mtpmediadevice.cpp:1341
 #: mediadevice/ipod/ipodmediadevice.cpp:2323
 #: mediadevice/generic/genericmediadevice.cpp:947
+#: playlistbrowser/PlaylistCategory.cpp:121
 msgid "Rename"
 msgstr "पुन: नामकरण गर्नुहोस्"
 
 #: mediadevice/ifp/ifpmediadevice.cpp:658
 #: mediadevice/generic/genericmediadevice.cpp:948
+#: playlistbrowser/PlaylistCategory.cpp:118
 msgid "Delete"
 msgstr "मेट्नुहोस्"
 
@@ -4126,8 +4125,10 @@ msgid "Toggle Main Window"
 msgstr "प्लेसूची सञ्झ्याल टगल गर्नुहोस्"
 
 #: MainWindow.cpp:782
-msgid "Show OSD"
-msgstr "ओएसडी देखाउनुहोस्"
+#, fuzzy
+#| msgid "Use On-Screen Display"
+msgid "Show On Screen Display"
+msgstr "पर्दा प्रदर्शन प्रयोग गर्नुहोस्"
 
 #: MainWindow.cpp:788
 msgid "Mute Volume"
@@ -6305,13 +6306,13 @@ msgid "I&gnore 'The' in Artist Names"
 msgstr "कलाकार नाममा 'यो' उपेक्षा गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 117
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 101
 #: rc.cpp:686
 msgid "File Naming Scheme"
 msgstr "फाइल नामकरण गर्ने योजना"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 123
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 107
 #: rc.cpp:689
 msgid ""
 "If checked, use a custom format string for naming the files in the collection"
@@ -6319,26 +6320,26 @@ msgstr ""
 "यदि जाँच गरियो भने, सङ्कलनमा फाइलहरू नामङ्कन गर्न अनुकूल ढाँचा स्ट्रिङ प्रयोग गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 126
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 110
 #: rc.cpp:692
 msgid "Custo&m Format"
 msgstr "अनुकूल ढाँचा"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 133
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 117
 #: rc.cpp:695
 msgid "If checked, create a directory hierarchy using the filename extension."
 msgstr ""
 "यदि जाँच गरियो भने, फाइलनाम विस्तार प्रयोग गरेर डाइरेक्टरी श्रृंखला सिर्जना गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 136
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 120
 #: rc.cpp:698
 msgid "Group b&y File Type"
 msgstr "फाइल प्रकारद्वारा समूह गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 143
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 127
 #: rc.cpp:701
 msgid ""
 "If checked, introduce another directory hierarchy for the artists' initials."
@@ -6347,37 +6348,37 @@ msgstr ""
 "।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 146
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 130
 #: rc.cpp:704
 msgid "Group &by Artist's Initial"
 msgstr "कलाकारको प्रथामक्षरद्वारा समूह गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 158
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 142
 #: rc.cpp:707
 msgid "F&ilename Format:"
 msgstr "फाइलनाम ढाँचा:"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 238
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 202
 #: rc.cpp:713
 msgid "Character Replacement"
 msgstr "क्यारेक्टर प्रतिस्थापन"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 244
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 208
 #: rc.cpp:716
 msgid "If checked, convert spaces to underscores."
 msgstr "यदि जाँच गरियो भने, अन्डरस्कोरहरूमा खाली स्थानहरू रूपान्तरण गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 247
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 211
 #: rc.cpp:719
 msgid "&Replace Spaces with Underscores"
 msgstr "अन्डरस्कोर सहित खाली स्थानहरू प्रतिस्थापन गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 254
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 218
 #: rc.cpp:722
 msgid ""
 "If checked, replace characters that are unavailable in the 7-bit ASCII code."
@@ -6385,13 +6386,13 @@ msgstr ""
 "यदि जाँच गरियो भने, क्यारेक्टरहरू प्रतिस्थापन गर्नुहोस् जुन ७-बिट ASCII कोडमा उपलब्ध छैन ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 257
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 221
 #: rc.cpp:725
 msgid "Restrict to &ASCII"
 msgstr "ASCII मा सीमाबद्ध गर्नुहोस्"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 264
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 228
 #: rc.cpp:728
 msgid ""
 "If checked, replace characters that are incompatible with MS-DOS/VFAT file "
@@ -6401,55 +6402,55 @@ msgstr ""
 "मिल्दोजुल्दो छ ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 267
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 231
 #: rc.cpp:731
 msgid "VFAT Safe &Names"
 msgstr "भीफ्याट सुरक्षण नामहरू"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 276
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 240
 #: rc.cpp:734
 msgid "Replace"
 msgstr "पुन: बसाउने"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 286
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 250
 #: rc.cpp:737
 msgid "Regular expression"
 msgstr "नियमित अभिव्यक्ति"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 293
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 257
 #: rc.cpp:740
 msgid "with"
 msgstr "सँग"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 303
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 267
 #: rc.cpp:743
 msgid "Character string"
 msgstr "क्यारेक्टर स्ट्रिङ"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 337
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 283
 #: rc.cpp:746
 msgid "Destination Preview"
 msgstr "गन्तब्य पूर्वावलोकन"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 349
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 295
 #: rc.cpp:749
 msgid "This is what the file names will look like after renaming."
 msgstr "यो फाइल नामल पुन: नामकरण पछि कस्तो देखिन्छ भन्ने हो ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 383
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 329
 #: rc.cpp:752
 msgid "If checked, overwrite files of the same name without asking."
 msgstr "यदि जाँच गरियो भने, नसोधिकन उही नामको फाइल अधिलेखन गर्नुहोस् ।"
 
 #. i18n: tag string
-#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 386
+#. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 332
 #: rc.cpp:755
 msgid "Overwrite &Destination"
 msgstr "गन्तब्य अधिलेखन गर्नुहोस्"
@@ -7761,7 +7762,7 @@ msgstr "म्यागनाटुन सूचना"
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 83
 #: rc.cpp:2091 servicebrowser/jamendo/JamendoMeta.cpp:134
 #: servicebrowser/jamendo/JamendoMeta.cpp:361
-#: playlistbrowser/PodcastCategory.cpp:345
+#: playlistbrowser/PodcastCategory.cpp:353
 msgid "&Download"
 msgstr "डाउनलोड"
 
@@ -8528,7 +8529,7 @@ msgid "Track Number - Title"
 msgstr "ट्रयाक नम्बर - शीर्षक"
 
 #: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:416
-#: widgets/TrackTooltip.cpp:146 widgets/TrackTooltip.cpp:153
+#: widgets/TrackTooltip.cpp:155 widgets/TrackTooltip.cpp:162
 #: SmartPlaylistEditor.cpp:187
 msgid "Length"
 msgstr "लम्बाइ"
@@ -8640,7 +8641,7 @@ msgstr "बिट्रेट"
 msgid "Sample Rate"
 msgstr "नमूना दर"
 
-#: playlist/PlaylistModel.cpp:420 widgets/TrackTooltip.cpp:125
+#: playlist/PlaylistModel.cpp:420 widgets/TrackTooltip.cpp:134
 #: SmartPlaylistEditor.cpp:189
 msgid "Rating"
 msgstr "मूल्याङ्कन"
@@ -8960,62 +8961,65 @@ msgstr ""
 msgid "Skip this track"
 msgstr ""
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:333
-#, kde-format
-msgid "Global Tag Radio: %1"
-msgstr "विश्वव्यापी ट्याग रेडियो: %1"
-
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:339
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:337
 #, fuzzy, kde-format
 #| msgid "Global Tag Radio: %1"
-msgid "User Tag Radio: %1"
+msgid "Global Tag Radio: \"%1\""
 msgstr "विश्वव्यापी ट्याग रेडियो: %1"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:347
-#, kde-format
-msgid "Similar Artists to %1"
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:343
+#, fuzzy, kde-format
+#| msgid "Global Tag Radio: %1"
+msgid "User Tag Radio: \"%1\""
+msgstr "विश्वव्यापी ट्याग रेडियो: %1"
+
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:351
+#, fuzzy, kde-format
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists to \"%1\""
 msgstr "%1 मा मिल्ने कलाकारहरू"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:350
-#, kde-format
-msgid "Artist Fan Radio: %1"
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:354
+#, fuzzy, kde-format
+#| msgid "Artist Fan Radio: %1"
+msgid "Artist Fan Radio: \"%1\""
 msgstr "कलाकार समर्थक रेडियो: %1"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:359
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:363
 #, kde-format
 msgid "%1's Neighbor Radio"
 msgstr "%1 को छिमेकी रेडियो"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:362
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:366
 #, kde-format
 msgid "%1's Personal Radio"
 msgstr "%1को व्यक्तिगत रेडियो"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:365
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:369
 #, kde-format
 msgid "%1's Loved Radio"
 msgstr "%1ले माया गरेको रेडियो"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:368
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:372
 #, fuzzy, kde-format
 #| msgid "%1's Recommended Radio"
 msgid "%1's Recommended Radio (Popularity %2)"
 msgstr "%1ले सिफारिस गरेको रेडियो"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:375
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:379
 #, kde-format
 msgid "Group Radio: %1"
 msgstr "समूह रेडियो: %1"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:383
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:387
 msgid "Track Radio"
 msgstr "ट्रयाक रेडियो"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:386
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:390
 msgid "Artist Radio"
 msgstr "कलाकार रेडियो"
 
-#: servicebrowser/lastfm/meta/LastFmMeta.cpp:482
+#: servicebrowser/lastfm/meta/LastFmMeta.cpp:495
 #, fuzzy
 #| msgid "Add Last.fm Radio..."
 msgid "Last.fm is cool..."
@@ -9093,8 +9097,8 @@ msgstr "प्राय प्ले गरिएको ट्रयाक"
 msgid "last.fm"
 msgstr "last.fm"
 
-#: servicebrowser/shoutcast/ShoutcastService.cpp:67
-msgid "The biggest damn list of online radio stations on the net :-)"
+#: servicebrowser/shoutcast/ShoutcastService.cpp:59
+msgid "The biggest list of online radio stations on the Internet"
 msgstr ""
 
 #: servicebrowser/shoutcast/ShoutcastServiceQueryMaker.cpp:216
@@ -9133,7 +9137,7 @@ msgid "Enter the server name and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
 
 #: servicebrowser/ampache/AmpacheService.cpp:233
-#: servicebrowser/mp3tunes/Mp3tunesService.cpp:135
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:140
 #, fuzzy
 #| msgid "Authentication Failure"
 msgid "Authentication Error!"
@@ -9146,14 +9150,18 @@ msgid "Ampache Server %1"
 msgstr "उन्नत सर्भर"
 
 #: servicebrowser/mp3tunes/Mp3tunesService.cpp:79
-msgid "The MP3tunes Locker service. Access your stored music!"
+msgid "The MP3tunes Locker: Your Music Everywhere!"
 msgstr ""
 
-#: servicebrowser/mp3tunes/Mp3tunesService.cpp:107
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:109
 #, fuzzy
 #| msgid "Enter a login and a password"
 msgid "Enter your MP3tunes login and password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
+
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:130
+msgid "Authenticating"
+msgstr "प्रमाणीकरण असफलता"
 
 #: servicebrowser/jamendo/JamendoMeta.cpp:151
 #, fuzzy
@@ -9194,6 +9202,10 @@ msgstr ""
 "Magnatune.com डाटाबेसले पूरा अद्यावधिक गर्यो । %3 कलाकारबाट %2 एल्बममा %1 ट्रयाकहरू "
 "थपियो"
 
+#: playlistbrowser/UserPlaylistModel.cpp:288
+msgid "New Group"
+msgstr ""
+
 #: playlistbrowser/PodcastModel.cpp:284
 msgid "Enter Podcast URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
@@ -9210,16 +9222,22 @@ msgstr "पोडकास्ट थप्नुहोस्"
 msgid "&Update All"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: playlistbrowser/PodcastCategory.cpp:330
+#: playlistbrowser/PodcastCategory.cpp:338
 #, fuzzy
 #| msgid "&Load"
 msgctxt "Replace the cuurent playlist with these tracks"
 msgid "&Load"
 msgstr "लोड गर्नुहोस्"
 
-#: playlistbrowser/PodcastCategory.cpp:339
+#: playlistbrowser/PodcastCategory.cpp:347
 msgid "&Refresh"
 msgstr ""
+
+#: playlistbrowser/PlaylistCategory.cpp:84
+#, fuzzy
+#| msgid "Folder"
+msgid "Add Folder"
+msgstr "फोल्डर"
 
 #: statusbar/StatusBar.cpp:71
 msgid "Amarok is paused"
@@ -9518,45 +9536,45 @@ msgstr "तुल्यकारक"
 msgid "Click for more analyzers"
 msgstr "धेरै विश्लेषकहरूका लागि क्लिक गर्नुहोस्"
 
-#: widgets/TrackTooltip.cpp:170 covermanager/CoverManager.cpp:789
+#: widgets/TrackTooltip.cpp:179 covermanager/CoverManager.cpp:789
 msgid " by "
 msgstr "यसद्वारा "
 
-#: widgets/TrackTooltip.cpp:172
+#: widgets/TrackTooltip.cpp:181
 #, fuzzy
 #| msgid "%1: on"
 msgid " on "
 msgstr "%1: खुल्ला"
 
-#: widgets/TrackTooltip.cpp:200
+#: widgets/TrackTooltip.cpp:209
 msgid "Amarok - rediscover your music"
 msgstr "अमारोक - तपाईँ सङ्गीत पुन: बनाउनुहोस्"
 
-#: covermanager/CoverFetchingActions.cpp:43
+#: covermanager/CoverFetchingActions.cpp:42
 #, kde-format
 msgid "Fetch the artwork for this album"
 msgid_plural "Fetch artwork for %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:58
+#: covermanager/CoverFetchingActions.cpp:57
 #, fuzzy
 #| msgid "Display &Text"
 msgid "Display Cover"
 msgstr "पाठ प्रदर्शन गर्नुहोस्"
 
-#: covermanager/CoverFetchingActions.cpp:60
+#: covermanager/CoverFetchingActions.cpp:59
 msgid "Display artwork for this album"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:77
+#: covermanager/CoverFetchingActions.cpp:76
 #, kde-format
 msgid "Remove artwork for this album"
 msgid_plural "Remove artwork for %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:84
+#: covermanager/CoverFetchingActions.cpp:83
 #, kde-format
 msgid "Are you sure you want to remove this cover from the Collection?"
 msgid_plural ""
@@ -9564,21 +9582,21 @@ msgid_plural ""
 msgstr[0] "तपाईँ सङ्कलनबाट यो %1 आवरण मेटाउन निश्चिन्त चाहानु हुन्छ ?"
 msgstr[1] "तपाईँ सङ्कलनबाट यो %1 आवरण हटाउन मेटाउन निश्चित चाहानुहुन्छ ?"
 
-#: covermanager/CoverFetchingActions.cpp:107
+#: covermanager/CoverFetchingActions.cpp:106
 #, fuzzy
 #| msgid "Set &Custom Cover"
 #| msgid_plural "Set &Custom Cover for Selected Albums"
 msgid "Set Custom Cover"
 msgstr "चयनगरीएको एल्बमबाट अनुकूल आवरण सेट गर्नुहोस्"
 
-#: covermanager/CoverFetchingActions.cpp:109
+#: covermanager/CoverFetchingActions.cpp:108
 #, kde-format
 msgid "Set custom artwork for this album"
 msgid_plural "Set custom artwork for these %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:116
+#: covermanager/CoverFetchingActions.cpp:115
 msgid "Select Cover Image File"
 msgstr "आवरण छवि फाइल चयन गर्नुहोस्"
 
@@ -9986,11 +10004,14 @@ msgstr "वर्ष"
 msgid "Hours"
 msgstr "घण्टा"
 
+#~ msgid "Local collection"
+#~ msgstr "स्थानीय सङ्कलन"
+
+#~ msgid "Show OSD"
+#~ msgstr "ओएसडी देखाउनुहोस्"
+
 #~ msgid "&Save Playlist As..."
 #~ msgstr "यस रूपमा प्ले सूची बचत गर्नुहोस्..."
-
-#~ msgid "Authenticating"
-#~ msgstr "प्रमाणीकरण असफलता"
 
 #~ msgid "Amarok is not running!"
 #~ msgstr "अमारोक चलिरहेको छैन!"
@@ -13328,9 +13349,6 @@ msgstr "घण्टा"
 
 #~ msgid "%1: off"
 #~ msgstr "%1: बन्द"
-
-#~ msgid "Folder"
-#~ msgstr "फोल्डर"
 
 #~ msgid "Folder %1"
 #~ msgstr "फोल्डर %1"
