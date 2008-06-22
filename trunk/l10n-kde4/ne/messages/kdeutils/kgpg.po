@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-18 10:41+0200\n"
+"POT-Creation-Date: 2008-06-22 02:39+0200\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -354,7 +354,7 @@ msgstr ""
 msgid "Key Management"
 msgstr "कुञ्जी व्यवस्थापन"
 
-#: keysmanager.cpp:128 kgpg.cpp:922
+#: keysmanager.cpp:128 kgpg.cpp:934
 msgid "&Key Server Dialog"
 msgstr "कुञ्जी सर्भर संवाद"
 
@@ -1135,11 +1135,11 @@ msgstr "<p>तपाईँको कुञ्जी रिङमा <b>%1</b> �
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 32
-#: keytreeview.cpp:150 kgpgtextinterface.cpp:597 rc.cpp:292
+#: keytreeview.cpp:150 kgpgtextinterface.cpp:607 rc.cpp:292
 msgid "Import"
 msgstr "आयात गर्नुहोस्"
 
-#: keytreeview.cpp:151 kgpgtextinterface.cpp:597
+#: keytreeview.cpp:151 kgpgtextinterface.cpp:607
 msgid "Do Not Import"
 msgstr "आयात नगर्नुहोस्"
 
@@ -1163,7 +1163,7 @@ msgstr "फाइल साइन गर्नुहोस्"
 msgid "KGpg - encryption tool"
 msgstr "KGpg - गुप्तिकरण उपकरण"
 
-#: kgpg.cpp:145 kgpg.cpp:190 kgpg.cpp:847
+#: kgpg.cpp:145 kgpg.cpp:190 kgpg.cpp:859
 msgid "Clipboard is empty."
 msgstr "क्लिपबोर्ड खाली छ ।"
 
@@ -1205,7 +1205,7 @@ msgstr "Bzip2"
 msgid "Tar"
 msgstr ""
 
-#: kgpg.cpp:291 kgpg.cpp:477 kgpgeditor.cpp:488 kgpglibrary.cpp:115
+#: kgpg.cpp:291 kgpg.cpp:483 kgpgeditor.cpp:488 kgpglibrary.cpp:115
 msgid "File Already Exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
@@ -1213,7 +1213,7 @@ msgstr "फाइल पहिल्यै अवस्थित छ"
 msgid "Processing folder compression and encryption"
 msgstr "प्रक्रियागत फोल्डर सङ्कुचन र गुप्तिकरण"
 
-#: kgpg.cpp:302 kgpglibrary.cpp:233 kgpglibrary.cpp:245
+#: kgpg.cpp:302 kgpglibrary.cpp:236 kgpglibrary.cpp:248
 msgid "Please wait..."
 msgstr "कृपया प्रतिक्षा गर्नुहोस्..."
 
@@ -1221,15 +1221,19 @@ msgstr "कृपया प्रतिक्षा गर्नुहोस्.
 msgid "Unable to create temporary file"
 msgstr "अस्थायी फाइल सिर्जना गर्न अक्षम"
 
-#: kgpg.cpp:513
+#: kgpg.cpp:514 kgpglibrary.cpp:228 kgpgview.cpp:314 kgpgview.cpp:355
+msgid "Decryption failed."
+msgstr "गुप्तिकरण उल्टाउन असफल ।"
+
+#: kgpg.cpp:525
 msgid "Unable to read temporary archive file"
 msgstr "अस्थायी सङ्ग्रह फाइल पढ्न अक्षम"
 
-#: kgpg.cpp:519
+#: kgpg.cpp:531
 msgid "Extract to: "
 msgstr "यसलाई झिक्नुहोस्: "
 
-#: kgpg.cpp:611
+#: kgpg.cpp:623
 #, fuzzy
 #| msgid ""
 #| "<p>The dropped text is a public key.<br>Do you want to import it ?</p>"
@@ -1238,11 +1242,11 @@ msgid ""
 msgstr ""
 "<p>थोप्लो भएको पाठ सार्वजनिक कुञ्जी हो ।<br>तपाईँ यसलाई आयात गर्न चाहनुहुन्छ ?</p>"
 
-#: kgpg.cpp:632
+#: kgpg.cpp:644
 msgid "No encrypted text found."
 msgstr "गुप्तिकरण गरिएको पाठ फेला परेन ।"
 
-#: kgpg.cpp:667
+#: kgpg.cpp:679
 #, fuzzy
 #| msgid ""
 #| "<qt>You have not set a path to your GnuPG config file.<br>This may cause "
@@ -1257,15 +1261,15 @@ msgstr ""
 "कार्यान्वयनमा केही अचम्मको नतिजा ल्याउन सक्दछ ।<br>तपाईँले यो समस्या स्थिर गर्न KGpg को "
 "विजार्ड सुरु गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpg.cpp:667
+#: kgpg.cpp:679
 msgid "Start Wizard"
 msgstr "विजार्ड सुरु गर्नुहोस्"
 
-#: kgpg.cpp:667
+#: kgpg.cpp:679
 msgid "Do Not Start"
 msgstr "सुरु नगर्नुहोस्"
 
-#: kgpg.cpp:705
+#: kgpg.cpp:717
 msgid ""
 "<qt><b>The GnuPG configuration file was not found</b>. Please make sure you "
 "have GnuPG installed. Should KGpg try to create a config file ?</qt>"
@@ -1273,15 +1277,15 @@ msgstr ""
 "<qt><b>GnuPG कन्फिगरेसन फाइल फेला परेन</b> । कृपया GnuPG स्थापना गरिएको निश्चित "
 "गर्नुहोस् । KGpg ले नयाँ कन्फिग फाइल सिर्जना गर्न प्रयास गर्नुपर्छ ?</qt>"
 
-#: kgpg.cpp:705
+#: kgpg.cpp:717
 msgid "Create Config"
 msgstr "कन्फिग सिर्जना गर्नुहोस्"
 
-#: kgpg.cpp:705
+#: kgpg.cpp:717
 msgid "Do Not Create"
 msgstr "सिर्जना नगर्नुहोस्"
 
-#: kgpg.cpp:718
+#: kgpg.cpp:730
 msgid ""
 "<qt><b>The GnuPG configuration file was not found</b>. Please make sure you "
 "have GnuPG installed and give the path to the config file.</qt>"
@@ -1289,13 +1293,13 @@ msgstr ""
 "<qt><b>GnuPG कन्फिगरेसन फाइल फेला परेन</b> । कृपया GnuPG स्थापना भएको निश्चित "
 "गर्नुहोस् र कन्फिग फाइलमा मार्ग दिनुहोस् ।</qt>"
 
-#: kgpg.cpp:727
+#: kgpg.cpp:739
 msgid ""
 "GnuPG was not found on your system. Please make sure to have the &quot;"
 "gpg&quot; binary in your application search path."
 msgstr ""
 
-#: kgpg.cpp:730
+#: kgpg.cpp:742
 msgid ""
 "Your GnuPG version seems to be older than 1.2.0. Photo Id's and Key Groups "
 "will not work properly. Please consider upgrading GnuPG (http://gnupg.org)."
@@ -1303,39 +1307,39 @@ msgstr ""
 "तपाईँको GnuPG संस्करण १.२.० भन्दा पुरानो देखिन्छ । फोटो आईडी र कुञ्जी समूहले राम्रोसँग "
 "काम गर्ने छैन । कृपया GnuPG (http://gnupg.org) स्तरवृद्धि गर्ने विचार गर्नुहोस् ।"
 
-#: kgpg.cpp:765
+#: kgpg.cpp:777
 msgid "Step Three: Select your Default Private Key"
 msgstr "तेस्रो चरण: तपाईँको पूर्वनिर्धारित व्यक्तिगत कुञ्जी चयन गर्नुहोस्"
 
-#: kgpg.cpp:875
+#: kgpg.cpp:887
 msgid "Encrypted following text:"
 msgstr "गुप्तिकरण गरिएको निम्न पाठ:"
 
-#: kgpg.cpp:903
+#: kgpg.cpp:915
 #, fuzzy
 #| msgid "Editor"
 msgid "E&ditor"
 msgstr "सम्पादक"
 
-#: kgpg.cpp:907
+#: kgpg.cpp:919
 #, fuzzy
 #| msgid "Key Manager"
 msgid "Ke&y Manager"
 msgstr "कुञ्जी प्रबन्धक"
 
-#: kgpg.cpp:911
+#: kgpg.cpp:923
 msgid "&Encrypt Clipboard"
 msgstr "क्लिपबोर्ड गुप्तिकरण गर्नुहोस्"
 
-#: kgpg.cpp:914
+#: kgpg.cpp:926
 msgid "&Decrypt Clipboard"
 msgstr "क्लिपबोर्ड गुप्तिकरण उल्टाउनुहोस्"
 
-#: kgpg.cpp:917
+#: kgpg.cpp:929
 msgid "&Sign/Verify Clipboard"
 msgstr "क्लिपबोर्ड साइन/रुजु गर्नुहोस्"
 
-#: kgpg.cpp:1042
+#: kgpg.cpp:1054
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The use of <b>GnuPG Agent</b> is enabled in GnuPG's configuration "
@@ -1353,7 +1357,7 @@ msgstr ""
 "ल्याउन सक्नेछ ।<br>कृपया KGpg सेटिङबाट GnuPG अभिकर्ता अक्षम पार्नुहोस् वा अभिकर्ता स्थिर "
 "पार्नुहोस् ।</qt>"
 
-#: kgpg.cpp:1089
+#: kgpg.cpp:1101
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
@@ -1362,15 +1366,15 @@ msgstr ""
 "अनुरोध गरिएको सञ्चालन कार्यसम्पादन गर्न अक्षम ।\n"
 "कृपया एउटा मात्र फोल्डर वा धेरै फाइल चयन गर्नुहोस् तर फाइल र फोल्डर मिश्रण नगर्नुहोस् ।"
 
-#: kgpg.cpp:1108
+#: kgpg.cpp:1120
 msgid "Cannot decrypt and show folder."
 msgstr "गुप्तिकरण उल्टाउन र फोल्डर देखाउन सकिदैन ।"
 
-#: kgpg.cpp:1116
+#: kgpg.cpp:1128
 msgid "Cannot sign folder."
 msgstr "फोल्डर साइन गर्न सक्दैन ।"
 
-#: kgpg.cpp:1124
+#: kgpg.cpp:1136
 msgid "Cannot verify folder."
 msgstr "फोल्डर रूजु गर्न सक्दैन ।"
 
@@ -1469,20 +1473,20 @@ msgstr "साइन गर्न फाइल खोल्नुहोस्"
 msgid "Open File to Verify"
 msgstr "रूजु गर्न फाइल खोल्नुहोस्"
 
-#: kgpginterface.cpp:392 kgpgtextinterface.cpp:105
+#: kgpginterface.cpp:392 kgpgtextinterface.cpp:106
 msgid " or "
 msgstr " वा "
 
 #: kgpginterface.cpp:940 kgpginterface.cpp:1068 kgpginterface.cpp:1169
 #: kgpginterface.cpp:1365 kgpginterface.cpp:1429 kgpginterface.cpp:1640
-#: kgpgtextinterface.cpp:111
+#: kgpgtextinterface.cpp:112
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
 
 #: kgpginterface.cpp:941 kgpginterface.cpp:1069 kgpginterface.cpp:1366
-#: kgpginterface.cpp:1430 kgpginterface.cpp:1641 kgpgtextinterface.cpp:115
+#: kgpginterface.cpp:1430 kgpginterface.cpp:1641 kgpgtextinterface.cpp:116
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्"
@@ -1511,7 +1515,11 @@ msgstr ""
 "<qt><b>म्याद समाप्ति परिवर्तन गर्न असफल ।</b><br>तपाईँले कन्सोल मोडमा कुञ्जीको म्याद "
 "समाप्ति परिवर्तनका लागि प्रयास गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpginterface.cpp:1162 kgpgitemnode.cpp:530 kgpgtextinterface.cpp:103
+#: kgpginterface.cpp:1112
+msgid "work in progress..."
+msgstr ""
+
+#: kgpginterface.cpp:1162 kgpgitemnode.cpp:530 kgpgtextinterface.cpp:104
 msgid "[No user id found]"
 msgstr "[प्रयोगकर्ता आईडी फेला परेन]"
 
@@ -1880,7 +1888,7 @@ msgstr "<b>गुप्तिकरण गर्दैछ </b>%1"
 msgid "<p><b>Process halted</b>.<br />Not all files were encrypted.</p>"
 msgstr "<b>प्रक्रिया रोकियो</b> ।<br>सबै फाइलहरू गुप्तिकरण गरिएको थिएन ।"
 
-#: kgpglibrary.cpp:204
+#: kgpglibrary.cpp:207
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The file <b>%1</b> is a public key.<br>Do you want to import it ?</p>"
@@ -1889,7 +1897,7 @@ msgid ""
 msgstr ""
 "<p>फाइल<b>%1</b> सार्वजनिक कुञ्जी हो । <br>तपाईँ यसलाई आयात गर्न चाहनुहुन्छ ?</p>"
 
-#: kgpglibrary.cpp:220
+#: kgpglibrary.cpp:223
 #, kde-format
 msgid ""
 "<p>The file <b>%1</b> is a private key block. Please use KGpg key manager to "
@@ -1898,25 +1906,21 @@ msgstr ""
 "<p>फाइल<b>%1</b> व्यक्तिगत कुञ्जी खण्ड हो । कृपया यसलाई आयात गर्न KGpg कुञ्जी "
 "प्रबन्धकको प्रयोग गर्नुहोस् ।</p>"
 
-#: kgpglibrary.cpp:225 kgpgview.cpp:314 kgpgview.cpp:355
-msgid "Decryption failed."
-msgstr "गुप्तिकरण उल्टाउन असफल ।"
-
-#: kgpglibrary.cpp:230
+#: kgpglibrary.cpp:233
 #, kde-format
 msgid "Decrypting %1"
 msgstr "%1 गुप्तिकरण उल्टाउँदैछ"
 
-#: kgpglibrary.cpp:233
+#: kgpglibrary.cpp:236
 msgid "Processing decryption"
 msgstr "गुप्तिकरण उल्टाउने प्रक्रिया गर्दैछ"
 
-#: kgpglibrary.cpp:245
+#: kgpglibrary.cpp:248
 #, kde-format
 msgid "Processing encryption (%1)"
 msgstr "गुप्तिकरण प्रक्रिया गर्दैछ (%1)"
 
-#: kgpglibrary.cpp:255
+#: kgpglibrary.cpp:258
 msgid ""
 "The image must be a JPEG file. Remember that the image is stored within your "
 "public key.If you use a very large picture, your key will become very large "
@@ -2056,38 +2060,38 @@ msgstr "फाइल गुप्तिकरण उल्टाउनुहो�
 msgid "Sign File"
 msgstr "फाइल साइन गर्नुहोस्"
 
-#: kgpgtextinterface.cpp:89
+#: kgpgtextinterface.cpp:90
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "पासफ्रेज (सममित गुप्तिकरण) प्रविष्ट गर्नुहोस्"
 
-#: kgpgtextinterface.cpp:109
+#: kgpgtextinterface.cpp:110
 #, fuzzy
 #| msgid "<b>No user id found</b>. Trying all secret keys.<br>"
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>प्रयोगकर्ता आईडी फेला परेन</b> । सबै गुप्त कुञ्जी प्रयास गर्दैछ ।<br>"
 
-#: kgpgtextinterface.cpp:113
+#: kgpgtextinterface.cpp:114
 #, fuzzy
 #| msgid "Enter passphrase for <b>%1</b>"
 msgid "Enter passphrase"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्"
 
-#: kgpgtextinterface.cpp:292
+#: kgpgtextinterface.cpp:293
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "खराब MDC पत्ता लाग्यो । गुप्तिकरण गरिएको पाठ मिलाइएको छ ।"
 
-#: kgpgtextinterface.cpp:383 kgpgtextinterface.cpp:564
-#: kgpgtextinterface.cpp:591
+#: kgpgtextinterface.cpp:384 kgpgtextinterface.cpp:574
+#: kgpgtextinterface.cpp:601
 msgid "No signature found."
 msgstr "हस्ताक्षर फेला परेन ।"
 
-#: kgpgtextinterface.cpp:567
+#: kgpgtextinterface.cpp:577
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>कुञ्जीआईडी बाट: <br><b>%1</b><br>राम्रो हस्ताक्षर:%2</qt>"
 
-#: kgpgtextinterface.cpp:572
+#: kgpgtextinterface.cpp:582
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>BAD signature</b> from:<br> %1<br>Key id: %2<br><br><b>The file is "
@@ -2099,20 +2103,20 @@ msgstr ""
 "<qt><b>खराब हस्ताक्षर</b> बाट:<br> %1<br>कुञ्जीआईडी: %2<br><br><b>फाइल अनुपयोगी "
 "छ</b></qt>"
 
-#: kgpgtextinterface.cpp:579
+#: kgpgtextinterface.cpp:589
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वासिलो छ"
 
-#: kgpgtextinterface.cpp:581
+#: kgpgtextinterface.cpp:591
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "हस्ताक्षर वैध छ र कुञ्जी अन्तिममा विश्वासिलो छ"
 
-#: kgpgtextinterface.cpp:596 kgpgview.cpp:400
+#: kgpgtextinterface.cpp:606 kgpgview.cpp:400
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
