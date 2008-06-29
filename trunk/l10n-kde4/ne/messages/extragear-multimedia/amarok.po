@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-27 14:23+0200\n"
+"POT-Creation-Date: 2008-06-29 03:32+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -183,10 +183,16 @@ msgstr "मिडिया यन्त्र: %1 मा माउन्ट ग�
 msgid "Media device: Failed to create directory %1"
 msgstr "मिडिया यन्त्र: डाइरेक्टरी %1 सिर्जना गर्न असफल भयो"
 
-#: collection/nepomukcollection/NepomukCollection.cpp:93
+#: collection/nepomukcollection/NepomukCollection.cpp:117
 #, fuzzy
 #| msgid "&Copy Files to Collection..."
-msgid "Nepomuk Collection"
+msgid "Nepomuk Collection (fast)"
+msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
+
+#: collection/nepomukcollection/NepomukCollection.cpp:119
+#, fuzzy
+#| msgid "&Copy Files to Collection..."
+msgid "Nepomuk Collection (slow, redland?)"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
 #: collection/sqlcollection/SqlCollection.cpp:62
@@ -194,7 +200,7 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:141
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:140
 #: dialogs/Statistics.cpp:467 mediadevice/ipod/ipodmediadevice.cpp:1654
 #: mediadevice/ipod/ipodmediadevice.cpp:1664
 #: mediadevice/ipod/ipodmediadevice.cpp:2027
@@ -208,40 +214,40 @@ msgstr "स्थानीय सङ्कलन"
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:206
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:209
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:205
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:208
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:266
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:269
 #, kde-format
 msgid "%1 or %2"
 msgstr "%1 वा %2"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:210
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:209
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:270
 msgid "Artist's Initial"
 msgstr "कलाकारको प्रथमाक्षर"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:211
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:210
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:271
 msgid "File Extension of Source"
 msgstr "स्रोतको फाइल विस्तार"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:212
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:211
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:272
 msgid "Track Number"
 msgstr "ट्रयाक नम्बर"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:214
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:213
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:274
 msgid "<h3>Custom Format String</h3>"
 msgstr "<h3> अनुकूल ढाँचा स्ट्रिङ</h3>"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:215
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:214
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:275
 msgid "You can use the following tokens:"
 msgstr "तपाईँ निम्न टोकनहरू प्रयोग गर्न सक्नुहुन्छ:"
 
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:222
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:221
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:285
 msgid ""
 "If you surround sections of text that contain a token with curly-braces, "
@@ -252,7 +258,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./collection/sqlcollection/OrganizeCollectionDialogBase.ui line 171
-#: collection/sqlcollection/OrganizeCollectionDialog.cpp:354
+#: collection/sqlcollection/OrganizeCollectionDialog.cpp:353
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:316 rc.cpp:716
 msgid "(Help)"
 msgstr "(मद्दत)"
@@ -330,7 +336,7 @@ msgstr ""
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
 
-#: context/ContextView.cpp:459
+#: context/ContextView.cpp:528
 #, fuzzy
 #| msgid "Add Directory"
 msgid "Add Applets"
@@ -878,14 +884,14 @@ msgid "Album:"
 msgstr "एल्बम:"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:84
-#: dialogs/ScriptManager.cpp:148 dialogs/ScriptManager.cpp:823
-#: playlist/PlaylistModel.cpp:469 widgets/TrackTooltip.cpp:118
+#: dialogs/ScriptManager.cpp:150 dialogs/ScriptManager.cpp:841
+#: playlist/PlaylistModel.cpp:482 widgets/TrackTooltip.cpp:118
 #: SmartPlaylistEditor.cpp:189
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:87
-#: playlist/PlaylistModel.cpp:471 widgets/TrackTooltip.cpp:143
+#: playlist/PlaylistModel.cpp:484 widgets/TrackTooltip.cpp:143
 msgid "Play Count"
 msgstr "प्ले गणना"
 
@@ -1495,7 +1501,7 @@ msgstr "पहिले प्ले गरिएको %1"
 #: dialogs/Statistics.cpp:419 dialogs/Statistics.cpp:451
 #: dialogs/Statistics.cpp:466 dialogs/Statistics.cpp:468
 #: dialogs/Statistics.cpp:505 dialogs/Statistics.cpp:533
-#: dialogs/Statistics.cpp:546 dialogs/Statistics.cpp:547 App.cpp:662
+#: dialogs/Statistics.cpp:546 dialogs/Statistics.cpp:547 App.cpp:656
 #: MediaDevicePluginManager.cpp:535
 msgid "Unknown"
 msgstr "अज्ञात"
@@ -1597,7 +1603,7 @@ msgstr "सारांश"
 msgid "Tags"
 msgstr "ट्याग"
 
-#: dialogs/TagDialog.cpp:506 dialogs/ScriptManager.cpp:147
+#: dialogs/TagDialog.cpp:506 dialogs/ScriptManager.cpp:149
 msgid "Lyrics"
 msgstr "रचना"
 
@@ -1621,8 +1627,9 @@ msgid "Unknown"
 msgstr "अज्ञात"
 
 #: dialogs/TagDialog.cpp:733
-#, kde-format
-msgid "Track Information: %1 by %2"
+#, fuzzy, kde-format
+#| msgid "Track Information: %1 by %2"
+msgid "Track Details: %1 by %2"
 msgstr "%2 द्वारा ट्रयाक जानकारी: %1"
 
 #: dialogs/TagDialog.cpp:742 statusbar/queueLabel.cpp:307
@@ -1850,7 +1857,7 @@ msgstr "साधारण खोजी"
 #: mediadevice/ifp/ifpmediadevice.cpp:402
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:536
 #: collectionbrowser/CollectionWidget.cpp:69 rc.cpp:1122
-#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:458
+#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:471
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:174
 #: servicebrowser/jamendo/JamendoService.cpp:133 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
@@ -1862,7 +1869,7 @@ msgstr "एल्बम"
 #: dialogs/EditFilterDialog.cpp:127 dialogs/transferdialog.cpp:93
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:538
 #: collectionbrowser/CollectionWidget.cpp:57 rc.cpp:1119
-#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:454
+#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:467
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:166
 #: servicebrowser/jamendo/JamendoService.cpp:125 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
@@ -1871,21 +1878,21 @@ msgstr "कलाकार"
 
 #: dialogs/EditFilterDialog.cpp:129
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:539
-#: playlist/PlaylistModel.cpp:456 SmartPlaylistEditor.cpp:187
+#: playlist/PlaylistModel.cpp:469 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
 msgid "Composer"
 msgstr "कम्पोजर"
 
 #: dialogs/EditFilterDialog.cpp:131 dialogs/transferdialog.cpp:95
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:540
-#: playlist/PlaylistModel.cpp:462 SmartPlaylistEditor.cpp:187
+#: playlist/PlaylistModel.cpp:475 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
 msgid "Genre"
 msgstr "विधा"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 91
-#: dialogs/EditFilterDialog.cpp:133 rc.cpp:1116 playlist/PlaylistModel.cpp:453
+#: dialogs/EditFilterDialog.cpp:133 rc.cpp:1116 playlist/PlaylistModel.cpp:466
 #: SmartPlaylistEditor.cpp:187
 msgid "Title"
 msgstr "शीर्षक"
@@ -1900,7 +1907,7 @@ msgstr "ट्रयाक"
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 135
 #: dialogs/EditFilterDialog.cpp:137
 #: collectionbrowser/CollectionTreeItemModelBase.cpp:541 rc.cpp:1128
-#: playlist/PlaylistModel.cpp:457 SmartPlaylistEditor.cpp:188
+#: playlist/PlaylistModel.cpp:470 SmartPlaylistEditor.cpp:188
 #: SmartPlaylistEditor.cpp:201 SmartPlaylistEditor.cpp:925
 msgid "Year"
 msgstr "वर्ष"
@@ -2133,29 +2140,29 @@ msgstr "साधारण विकल्प"
 msgid "Convert spaces to underscores"
 msgstr "खाली स्थानहरूलाई अन्डरस्क्रोर रूपान्तरण गर्नुहोस्"
 
-#: dialogs/ScriptManager.cpp:125 MainWindow.cpp:666
+#: dialogs/ScriptManager.cpp:127 MainWindow.cpp:666
 msgid "Script Manager"
 msgstr "स्क्रिप्ट प्रबन्धक"
 
-#: dialogs/ScriptManager.cpp:146
+#: dialogs/ScriptManager.cpp:148
 msgid "General"
 msgstr "साधारण"
 
-#: dialogs/ScriptManager.cpp:149
+#: dialogs/ScriptManager.cpp:151
 msgid "Transcoding"
 msgstr "ट्रान्सकोडिङ"
 
-#: dialogs/ScriptManager.cpp:150
+#: dialogs/ScriptManager.cpp:152
 msgid "Context Browser"
 msgstr "प्रसङ्ग ब्राउजर"
 
-#: dialogs/ScriptManager.cpp:151
+#: dialogs/ScriptManager.cpp:153
 #, fuzzy
 #| msgid "Configure Media Device"
 msgid "Scripted Services"
 msgstr "मिडिया यन्त्र कन्फिगर गर्नुहोस्"
 
-#: dialogs/ScriptManager.cpp:327
+#: dialogs/ScriptManager.cpp:322
 msgid ""
 "No score scripts were found, or none of them worked. Automatic scoring will "
 "be disabled. Sorry."
@@ -2163,7 +2170,7 @@ msgstr ""
 "कुनै प्राप्ताङ्क स्क्रिप्ट फेला परेन, वा तिनीहरू कुनैले काम गरेन । स्वचालित प्राप्ताङ्क अक्षम "
 "गरिनेछ । माफ गर्नुहोस्।"
 
-#: dialogs/ScriptManager.cpp:408
+#: dialogs/ScriptManager.cpp:407
 msgid ""
 "Script Packages (*.amarokscript.tar, *.amarokscript.tar.bz2, *.amarokscript."
 "tar.gz)"
@@ -2175,7 +2182,7 @@ msgstr ""
 msgid "Could not read this package."
 msgstr "यो प्याकेज पढ्न सकेन ।"
 
-#: dialogs/ScriptManager.cpp:425
+#: dialogs/ScriptManager.cpp:426
 #, kde-format
 msgid ""
 "A script with the name '%1' is already installed. Please uninstall it first."
@@ -2183,11 +2190,11 @@ msgstr ""
 "'%1' नामको स्क्रिप्ट पहिल्यै स्थापना गरिएको छ । कृपया पहिले यसलाई स्थापनाबाट हटाउनुहोस् "
 "।"
 
-#: dialogs/ScriptManager.cpp:435
+#: dialogs/ScriptManager.cpp:437
 msgid "Script successfully installed."
 msgstr "स्क्रिप्ट सफलतापूर्वक स्थापित भयो ।"
 
-#: dialogs/ScriptManager.cpp:439
+#: dialogs/ScriptManager.cpp:442
 msgid ""
 "<p>Script installation failed.</p><p>The package did not contain an "
 "executable file. Please inform the package maintainer about this error.</p>"
@@ -2195,20 +2202,20 @@ msgstr ""
 "<p>स्क्रिप्ट स्थापना असफल भयो ।</p><p>प्याकेजले एउटा कार्यान्वयनयोग्य फाइल समाविष्ट "
 "गर्दैन । कृपया यो त्रुटि बारे प्याकेज सम्भारकर्तालाई सूचित गर्नुहोस् ।</p>"
 
-#: dialogs/ScriptManager.cpp:492
+#: dialogs/ScriptManager.cpp:499
 #, kde-format
 msgid "Are you sure you want to uninstall the script '%1'?"
 msgstr "तपाईँ साँचिकै स्क्रिप्ट '%1' स्थापनाबाट हटाउन चाहनुहुन्छ ?"
 
-#: dialogs/ScriptManager.cpp:492
+#: dialogs/ScriptManager.cpp:499
 msgid "Uninstall Script"
 msgstr "स्क्रिप्ट स्थापनाबाट हटाउनुहोस्"
 
-#: dialogs/ScriptManager.cpp:492
+#: dialogs/ScriptManager.cpp:499
 msgid "Uninstall"
 msgstr "स्थापनाबाट हटाउनुहोस्"
 
-#: dialogs/ScriptManager.cpp:503
+#: dialogs/ScriptManager.cpp:511
 msgid ""
 "<p>Could not uninstall this script.</p><p>The ScriptManager can only "
 "uninstall scripts which have been installed as packages.</p>"
@@ -2216,7 +2223,7 @@ msgstr ""
 "<p>यो स्क्रिप्टलाई स्थापनाबाट हटाउन सकेन ।</p><p>स्क्रिप्ट प्रबन्धकले मात्र स्क्रिप्ट "
 "स्थापनाबाट हटाउन सक्छ जुन प्याकेजको रूपमा स्थापना गरिएको छ ।</p>"
 
-#: dialogs/ScriptManager.cpp:533
+#: dialogs/ScriptManager.cpp:544
 msgid ""
 "Another lyrics script is already running. You may only run one lyrics script "
 "at a time."
@@ -2224,7 +2231,7 @@ msgstr ""
 "अर्को रचना स्क्रिप्ट पहिल्यै चलिरहेको छ । तपाईँले यो समयमा एउटा मात्र रचना स्क्रिप्ट "
 "चलाउन सक्नुहुन्छ ।"
 
-#: dialogs/ScriptManager.cpp:540
+#: dialogs/ScriptManager.cpp:552
 msgid ""
 "Another transcode script is already running. You may only run one transcode "
 "script at a time."
@@ -2232,33 +2239,33 @@ msgstr ""
 "अर्को ट्रान्सकोड स्क्रिप्ट पहिल्यै चलिरहेको छ । तपाईँ यो समयमा एउटा ट्रान्सकोड स्क्रिप्ट "
 "मात्र चलाउन सक्नुहुन्छ ।"
 
-#: dialogs/ScriptManager.cpp:641
+#: dialogs/ScriptManager.cpp:657
 msgid "There is no information available for this script."
 msgstr "त्यहाँ यो स्क्रिप्टका लागि सूचना उपलब्ध छैन ।"
 
-#: dialogs/ScriptManager.cpp:652
+#: dialogs/ScriptManager.cpp:668
 #, kde-format
 msgid "About %1"
 msgstr "%1 बारेमा"
 
-#: dialogs/ScriptManager.cpp:680
+#: dialogs/ScriptManager.cpp:697
 msgid "Debugging"
 msgstr "त्रटिमोचन"
 
-#: dialogs/ScriptManager.cpp:681
+#: dialogs/ScriptManager.cpp:698
 msgid "Show Output &Log"
 msgstr "निर्गत लग देखाउनुहोस्"
 
-#: dialogs/ScriptManager.cpp:682
+#: dialogs/ScriptManager.cpp:699
 msgid "&Edit"
 msgstr "सम्पादन गर्नुहोस्"
 
-#: dialogs/ScriptManager.cpp:705
+#: dialogs/ScriptManager.cpp:722
 #, kde-format
 msgid "Output Log for %1"
 msgstr "%1 का लागि निर्गत लग"
 
-#: dialogs/ScriptManager.cpp:760
+#: dialogs/ScriptManager.cpp:778
 #, kde-format
 msgid "The script '%1' exited with error code: %2"
 msgstr "स्क्रिप्ट '%1' त्रुटि कोडसँगै निस्कियो: %2"
@@ -2268,15 +2275,15 @@ msgstr "स्क्रिप्ट '%1' त्रुटि कोडसँग�
 msgid "There was an error communicating with Amazon."
 msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
 
-#: App.cpp:88
+#: App.cpp:87
 msgid "Amarok"
 msgstr "अमारोक"
 
-#: App.cpp:89
+#: App.cpp:88
 msgid "The audio player for KDE"
 msgstr "केडीईका लागि अडियो प्लेयर"
 
-#: App.cpp:90
+#: App.cpp:89
 #, fuzzy
 #| msgid ""
 #| "(C) 2002-2003, Mark Kretschmann\n"
@@ -2288,7 +2295,7 @@ msgstr ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2007, अमारोक विकास स्क्वाड"
 
-#: App.cpp:91
+#: App.cpp:90
 #, fuzzy
 #| msgid ""
 #| "IRC:\n"
@@ -2314,94 +2321,94 @@ msgstr ""
 "amarok@kde.org \n"
 "(निर्माण मिती: "
 
-#: App.cpp:415
+#: App.cpp:409
 msgid "Files/URLs to open"
 msgstr "फाइल/यूआरएल खोल्नका लागि "
 
-#: App.cpp:417
+#: App.cpp:411
 msgid "Skip backwards in playlist"
 msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:419
+#: App.cpp:413
 msgid "Start playing current playlist"
 msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
 
-#: App.cpp:421
+#: App.cpp:415
 msgid "Play if stopped, pause if playing"
 msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
 
-#: App.cpp:422
+#: App.cpp:416
 msgid "Pause playback"
 msgstr "प्लेब्याक पज गर्नुहोस्"
 
-#: App.cpp:424
+#: App.cpp:418
 msgid "Stop playback"
 msgstr "प्लेब्याक रोक्नुहोस्"
 
-#: App.cpp:426
+#: App.cpp:420
 msgid "Skip forwards in playlist"
 msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:427
+#: App.cpp:421
 msgid "Additional options:"
 msgstr "अतिरिक्त विकल्प:"
 
-#: App.cpp:429
+#: App.cpp:423
 msgid "Append files/URLs to playlist"
 msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
 
-#: App.cpp:430
+#: App.cpp:424
 msgid "Queue URLs after the currently playing track"
 msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
 
-#: App.cpp:432
+#: App.cpp:426
 msgid "Load URLs, replacing current playlist"
 msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
 
-#: App.cpp:434
+#: App.cpp:428
 #, fuzzy
 #| msgid "Click to get the plugin information."
 msgid "Print verbose debugging information"
 msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
 
-#: App.cpp:436
+#: App.cpp:430
 msgid "Toggle the Playlist-window"
 msgstr "प्लेसूची-सञ्झ्याल टगल गर्नुहोस्"
 
-#: App.cpp:437
+#: App.cpp:431
 msgid "Run first-run wizard"
 msgstr "पहिले चलाएको विजार्ड चलाउनुहोस्"
 
-#: App.cpp:438
+#: App.cpp:432
 msgid "Base for relative filenames/URLs"
 msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
 
-#: App.cpp:439
+#: App.cpp:433
 msgid "Play an AudioCD from <device> or system:/media/<device>"
 msgstr "<device> बाट एउटा अडियो सीडी प्ले गर्नुहोस्"
 
-#: App.cpp:659
+#: App.cpp:653
 msgctxt "state, as in playing"
 msgid "Play"
 msgstr "प्ले गर्नुहोस्"
 
-#: App.cpp:662 App.cpp:688
+#: App.cpp:656 App.cpp:682
 #, fuzzy, kde-format
 #| msgid "%1. %2 - %3"
 msgid "%1 - %2 -  %3"
 msgstr "%1. %2 - %3"
 
-#: App.cpp:666
+#: App.cpp:660
 #, fuzzy, kde-format
 #| msgid "Paused"
 msgid "Paused  -  %1"
 msgstr "पज गरियो"
 
-#: App.cpp:667
+#: App.cpp:661
 msgid "Paused"
 msgstr "पज गरियो"
 
-#: App.cpp:781
+#: App.cpp:775
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
@@ -2632,7 +2639,7 @@ msgstr "अमारोकले हालै MP3 फाइलहरू प्�
 msgid "No MP3 Support"
 msgstr "MP3 समर्थन छैन"
 
-#: EngineController.cpp:468
+#: EngineController.cpp:472
 #, fuzzy
 #| msgid "Previous Track"
 msgid "Previous track finished"
@@ -3386,7 +3393,7 @@ msgstr "पुन: नामकरण गर्नुहोस्"
 
 #: mediadevice/ifp/ifpmediadevice.cpp:658
 #: mediadevice/generic/genericmediadevice.cpp:948
-#: playlistbrowser/DynamicCategory.cpp:50
+#: playlistbrowser/DynamicCategory.cpp:53
 #: playlistbrowser/PlaylistCategory.cpp:139
 msgid "Delete"
 msgstr "मेट्नुहोस्"
@@ -8574,7 +8581,7 @@ msgstr ""
 msgid "Track Number - Title"
 msgstr "ट्रयाक नम्बर - शीर्षक"
 
-#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:466
+#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:479
 #: widgets/TrackTooltip.cpp:157 widgets/TrackTooltip.cpp:164
 #: SmartPlaylistEditor.cpp:187
 msgid "Length"
@@ -8606,7 +8613,7 @@ msgstr "प्लेसूचीबाट हटाउनुहोस्"
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
-msgid "Edit Track Information"
+msgid "Edit Track Details"
 msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
 #: playlist/PlaylistWidget.cpp:93
@@ -8630,82 +8637,82 @@ msgstr "ट्रयाक हटाइयो"
 msgid "Playlists Added"
 msgstr "प्ले सूची"
 
-#: playlist/PlaylistModel.cpp:104
+#: playlist/PlaylistModel.cpp:106
 msgid "Undo"
 msgstr "पूर्वस्थितिमा फर्काउनुहोस्"
 
-#: playlist/PlaylistModel.cpp:107
+#: playlist/PlaylistModel.cpp:109
 msgid "Redo"
 msgstr "रिडु गर्नुहोस्"
 
-#: playlist/PlaylistModel.cpp:452
+#: playlist/PlaylistModel.cpp:465
 #, fuzzy
 #| msgid "Filename"
 msgctxt "The name of the file this track is stored in"
 msgid "Filename"
 msgstr "फाइलनाम"
 
-#: playlist/PlaylistModel.cpp:455
+#: playlist/PlaylistModel.cpp:468
 msgid "Album Artist"
 msgstr "एल्बम कलाकार"
 
-#: playlist/PlaylistModel.cpp:459
+#: playlist/PlaylistModel.cpp:472
 msgid "Disc Number"
 msgstr "डिस्क सङ्ख्या"
 
-#: playlist/PlaylistModel.cpp:460
+#: playlist/PlaylistModel.cpp:473
 #, fuzzy
 #| msgid "Track"
 msgctxt "The Track number for this item"
 msgid "Track"
 msgstr "ट्रयाक"
 
-#: playlist/PlaylistModel.cpp:461 SmartPlaylistEditor.cpp:191
+#: playlist/PlaylistModel.cpp:474 SmartPlaylistEditor.cpp:191
 msgid "BPM"
 msgstr "बीपीएम"
 
-#: playlist/PlaylistModel.cpp:463 SmartPlaylistEditor.cpp:188
+#: playlist/PlaylistModel.cpp:476 SmartPlaylistEditor.cpp:188
 msgid "Comment"
 msgstr "टिप्पणी"
 
-#: playlist/PlaylistModel.cpp:464
+#: playlist/PlaylistModel.cpp:477
 #, fuzzy
 #| msgid "Directory"
 msgctxt "The location on disc of this track"
 msgid "Directory"
 msgstr "डाइरेक्टरी"
 
-#: playlist/PlaylistModel.cpp:465
+#: playlist/PlaylistModel.cpp:478
 msgid "Type"
 msgstr "प्रकार"
 
-#: playlist/PlaylistModel.cpp:467 SmartPlaylistEditor.cpp:191
+#: playlist/PlaylistModel.cpp:480 SmartPlaylistEditor.cpp:191
 msgid "Bitrate"
 msgstr "बिट्रेट"
 
-#: playlist/PlaylistModel.cpp:468
+#: playlist/PlaylistModel.cpp:481
 msgid "Sample Rate"
 msgstr "नमूना दर"
 
-#: playlist/PlaylistModel.cpp:470 widgets/TrackTooltip.cpp:136
+#: playlist/PlaylistModel.cpp:483 widgets/TrackTooltip.cpp:136
 #: SmartPlaylistEditor.cpp:189
 msgid "Rating"
 msgstr "मूल्याङ्कन"
 
-#: playlist/PlaylistModel.cpp:472
+#: playlist/PlaylistModel.cpp:485
 msgctxt "Column name"
 msgid "Last Played"
 msgstr "अन्तिममा प्ले गरीएको"
 
-#: playlist/PlaylistModel.cpp:473
+#: playlist/PlaylistModel.cpp:486
 msgid "Mood"
 msgstr "मुड"
 
-#: playlist/PlaylistModel.cpp:474
+#: playlist/PlaylistModel.cpp:487
 msgid "File Size"
 msgstr "फाइल साइज"
 
-#: playlist/PlaylistModel.cpp:657
+#: playlist/PlaylistModel.cpp:676
 #, fuzzy, kde-format
 msgid "One track was already in the playlist, so it was not added."
 msgid_plural "%1 tracks were already in the playlist, so they were not added."
@@ -9379,23 +9386,23 @@ msgstr "लोड गर्नुहोस्"
 msgid "&Refresh"
 msgstr ""
 
-#: playlistbrowser/DynamicCategory.cpp:43
+#: playlistbrowser/DynamicCategory.cpp:46
 #, fuzzy
 #| msgid "Stale"
 msgid "Save"
 msgstr "स्टेल"
 
-#: playlistbrowser/DynamicCategory.cpp:58
+#: playlistbrowser/DynamicCategory.cpp:61
 #, fuzzy
 #| msgid "Off"
 msgid "Off"
 msgstr "बन्द"
 
-#: playlistbrowser/DynamicCategory.cpp:58
+#: playlistbrowser/DynamicCategory.cpp:61
 msgid "On"
 msgstr ""
 
-#: playlistbrowser/DynamicCategory.cpp:64
+#: playlistbrowser/DynamicCategory.cpp:67
 msgid "Repopulate"
 msgstr "पुन: बसाउने"
 
@@ -10183,6 +10190,12 @@ msgstr "वर्ष"
 #: SmartPlaylistEditor.cpp:1017
 msgid "Hours"
 msgstr "घण्टा"
+
+#, fuzzy
+#~| msgid "Edit Track &Information..."
+#~| msgid_plural "Edit &Information for %1 Tracks..."
+#~ msgid "Edit Track Information"
+#~ msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
 #~ msgid ""
 #~ "<p>Could not start the script <i>%1</i>.</p><p>Please make sure that the "
