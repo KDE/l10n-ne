@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-02 10:16+0200\n"
+"POT-Creation-Date: 2008-07-05 07:38+0200\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -832,7 +832,7 @@ msgctxt ""
 msgid "object"
 msgstr "वस्तु"
 
-#: core/kexipart.cpp:448 kexidb/field.cpp:708 kexidb/field.cpp:732
+#: core/kexipart.cpp:448 kexidb/field.cpp:710 kexidb/field.cpp:734
 msgid "Object"
 msgstr "वस्तु"
 
@@ -2676,7 +2676,7 @@ msgstr "उही अवस्थामा यो सङ्केतनको �
 msgid "Could not create database \"%1\"."
 msgstr "\"%1\" डाटाबेस सिर्जना गर्न सकेन ।"
 
-#: migration/keximigrate.cpp:139
+#: migration/keximigrate.cpp:139 kexidb/drivers/xbase/xbaseexport.cpp:279
 #, kde-format
 msgid "Could not connect to data source \"%1\"."
 msgstr "\"%1\" डेटा स्रोतमा जडान गर्न सकेन ।"
@@ -2702,7 +2702,7 @@ msgstr "\"%1\" डेटा स्रोतबाट परियोजना �
 msgid "Could not import project from data source \"%1\"."
 msgstr "\"%1\" डेटा स्रोतबाट परियोजना आयात गर्न सकेन ।"
 
-#: migration/keximigrate.cpp:386
+#: migration/keximigrate.cpp:386 kexidb/drivers/xbase/xbaseexport.cpp:333
 #, kde-format
 msgid "Could not copy table \"%1\" to destination database."
 msgstr "गन्तव्य डाटाबेसमा \"%1\" तालिका प्रतिलिपि बनाउन सकेन ।"
@@ -2763,73 +2763,73 @@ msgstr "स्रोतको स्थानीय सकेट फाइलन
 msgid "Enter password for %1: "
 msgstr " %1 का लागि पासवर्ड प्रविष्ट गर्नुहोस्: "
 
-#: kexidb/field.cpp:695
+#: kexidb/field.cpp:697
 msgid "Invalid Type"
 msgstr "अवैध प्रकार"
 
-#: kexidb/field.cpp:696
+#: kexidb/field.cpp:698
 msgid "Byte"
 msgstr "बाइट"
 
-#: kexidb/field.cpp:697
+#: kexidb/field.cpp:699
 msgid "Short Integer Number"
 msgstr "छोटो इन्टिजर नम्बर"
 
-#: kexidb/field.cpp:698 kexidb/field.cpp:728
+#: kexidb/field.cpp:700 kexidb/field.cpp:730
 msgid "Integer Number"
 msgstr "इन्टिजर नम्बर"
 
-#: kexidb/field.cpp:699
+#: kexidb/field.cpp:701
 msgid "Big Integer Number"
 msgstr "ठूलो इन्टिजर नम्बर"
 
-#: kexidb/field.cpp:700
+#: kexidb/field.cpp:702
 msgid "Yes/No Value"
 msgstr "हो/होइन मान"
 
-#: kexidb/field.cpp:701 plugins/importexport/csv/kexicsvimportdialog.cpp:230
+#: kexidb/field.cpp:703 plugins/importexport/csv/kexicsvimportdialog.cpp:230
 msgid "Date"
 msgstr "मिति"
 
-#: kexidb/field.cpp:702
+#: kexidb/field.cpp:704
 msgid "Date and Time"
 msgstr "मिति र समय"
 
-#: kexidb/field.cpp:703 plugins/importexport/csv/kexicsvimportdialog.cpp:231
+#: kexidb/field.cpp:705 plugins/importexport/csv/kexicsvimportdialog.cpp:231
 msgid "Time"
 msgstr "समय"
 
-#: kexidb/field.cpp:704
+#: kexidb/field.cpp:706
 msgid "Single Precision Number"
 msgstr "एकल सूक्ष्म नम्बर"
 
-#: kexidb/field.cpp:705
+#: kexidb/field.cpp:707
 msgid "Double Precision Number"
 msgstr "दोहोरो सूक्ष्म नम्बर"
 
-#: kexidb/field.cpp:706 kexidb/field.cpp:727
+#: kexidb/field.cpp:708 kexidb/field.cpp:729
 #: plugins/reportspgz/reportentityselector.cpp:31
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:228
 msgid "Text"
 msgstr "पाठ"
 
-#: kexidb/field.cpp:707
+#: kexidb/field.cpp:709
 msgid "Long Text"
 msgstr "लामो पाठ"
 
-#: kexidb/field.cpp:726
+#: kexidb/field.cpp:728
 msgid "Invalid Group"
 msgstr "अवैध समूह"
 
-#: kexidb/field.cpp:729
+#: kexidb/field.cpp:731
 msgid "Floating Point Number"
 msgstr "उत्प्लवान बिन्दु नम्बर"
 
-#: kexidb/field.cpp:730
+#: kexidb/field.cpp:732
 msgid "Yes/No"
 msgstr "हो/होइन"
 
-#: kexidb/field.cpp:731 plugins/importexport/csv/kexicsvimportdialog.cpp:232
+#: kexidb/field.cpp:733 plugins/importexport/csv/kexicsvimportdialog.cpp:232
 msgid "Date/Time"
 msgstr "मिति/समय"
 
@@ -2855,6 +2855,37 @@ msgstr "अज्ञात त्रुटि ।"
 #: kexidb/drivers/pqxx/pqxxcursor.cpp:82
 msgid "No connection for cursor open operation specified"
 msgstr "कर्सर खुला सञ्चालनका लागि जडान निर्दिष्ट गरिएको छैन"
+
+#: kexidb/drivers/xbase/xbaseexport.cpp:263
+msgid "Data not set for migration"
+msgstr ""
+
+#: kexidb/drivers/xbase/xbaseexport.cpp:271
+#, fuzzy
+#| msgid "Could not copy table \"%1\" to destination database."
+msgid "Could not export back to destination database"
+msgstr "गन्तव्य डाटाबेसमा \"%1\" तालिका प्रतिलिपि बनाउन सकेन ।"
+
+#: kexidb/drivers/xbase/xbaseexport.cpp:307
+#, fuzzy, kde-format
+#| msgid "No tables to import found in data source \"%1\"."
+msgid "No tables to export found in data source \"%1\"."
+msgstr "\"%1\" डेटा स्रोतमा आयात गर्न कुनै तालिका फेला परेन ।"
+
+#: kexidb/drivers/xbase/xbaseexport.cpp:324
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not import project from data source \"%1\". Error reading table \"%2"
+#| "\"."
+msgid ""
+"Could not create table in destination \"%1\". Error reading table \"%2\"."
+msgstr "\"%1\" डेटा स्रोतबाट परियोजना आयात गर्न सकेन । \"%2\" तालिका पढ्दा त्रुटि ।"
+
+#: kexidb/drivers/xbase/xbaseexport.cpp:349
+#, fuzzy, kde-format
+#| msgid "Could not import data from data source \"%1\"."
+msgid "Could not export data to \"%1\"."
+msgstr "\"%1\" डेटा स्रोतबाट डेटा आयात गर्न सकेन ।"
 
 #: kexidb/drivers/sqlite/sqlitevacuum.cpp:81
 msgid "Compacting database"
@@ -3111,17 +3142,17 @@ msgstr "\"%1\" तालिका अवस्थित छैन"
 msgid "Invalid alias definition for column \"%1\""
 msgstr "\"%1\" स्तम्भका लागि अवैध उपनाम परिभाषा"
 
-#: kexidb/parser/parser_p.cpp:535
+#: kexidb/parser/parser_p.cpp:534
 #, kde-format
 msgid "Invalid \"%1\" column definition"
 msgstr "अवैध \"%1\" स्तम्भ परिभाषा"
 
-#: kexidb/parser/parser_p.cpp:601
+#: kexidb/parser/parser_p.cpp:603
 #, kde-format
 msgid "Could not define sorting - no column at position %1"
 msgstr "भण्डारण परिभाषित गर्न सकेन - स्थानमा स्तम्भ छैन %1"
 
-#: kexidb/parser/parser_p.cpp:610
+#: kexidb/parser/parser_p.cpp:612
 #, kde-format
 msgid "Could not define sorting - column name or alias \"%1\" does not exist"
 msgstr "भण्डारण परिभाषित गर्न सकेन - स्तम्भ नाम वा उपनाम \"%1\" अवस्थित छैन"
