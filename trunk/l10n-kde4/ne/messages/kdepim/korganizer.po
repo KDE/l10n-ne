@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-02 09:51+0200\n"
+"POT-Creation-Date: 2008-08-03 08:21+0200\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1713,7 +1713,7 @@ msgstr "अगाडि जानुहोस्"
 msgid "Go forward one month"
 msgstr ""
 
-#: views/monthview/monthview.cpp:311 kodaymatrix.cpp:240 kocorehelper.cpp:44
+#: views/monthview/monthview.cpp:311 kodaymatrix.cpp:266 kocorehelper.cpp:44
 msgctxt "delimiter for joining holiday names"
 msgid ","
 msgstr ","
@@ -1926,9 +1926,63 @@ msgid "&Copy To"
 msgstr "यसमा प्रतिलिपि गर्नुहोस्"
 
 #: views/todoview/kotodoview.cpp:191
+msgid "&Move To"
+msgstr "यसमा सार्नुहोस्"
+
+#: views/todoview/kotodoview.cpp:204
 msgctxt "delete completed to-dos"
 msgid "Pur&ge Completed"
 msgstr "शुद्धीकरण समाप्त"
+
+#: views/todoview/kotodoview.cpp:209
+#, fuzzy
+#| msgctxt "Unspecified priority"
+#| msgid "unspecified"
+msgctxt "Unspecified priority"
+msgid "unspecified"
+msgstr "निर्दिष्ट नगरिएको"
+
+#: views/todoview/kotodoview.cpp:210
+#, fuzzy
+#| msgid "1 (highest)"
+msgid "1 (highest)"
+msgstr "१ (उच्च)"
+
+#: views/todoview/kotodoview.cpp:211 koeditorgeneraltodo.cpp:216
+msgid "2"
+msgstr "२"
+
+#: views/todoview/kotodoview.cpp:212 koeditorgeneraltodo.cpp:217
+msgid "3"
+msgstr "३"
+
+#: views/todoview/kotodoview.cpp:213 koeditorgeneraltodo.cpp:218
+msgid "4"
+msgstr "४"
+
+#: views/todoview/kotodoview.cpp:214
+#, fuzzy
+#| msgid "5 (medium)"
+msgid "5 (medium)"
+msgstr "५(मध्यम)"
+
+#: views/todoview/kotodoview.cpp:215 koeditorgeneraltodo.cpp:220
+msgid "6"
+msgstr "६"
+
+#: views/todoview/kotodoview.cpp:216 koeditorgeneraltodo.cpp:221
+msgid "7"
+msgstr "७"
+
+#: views/todoview/kotodoview.cpp:217 koeditorgeneraltodo.cpp:222
+msgid "8"
+msgstr "८"
+
+#: views/todoview/kotodoview.cpp:218
+#, fuzzy
+#| msgid "9 (lowest)"
+msgid "9 (lowest)"
+msgstr "९(न्यून)"
 
 #: views/todoview/kotodoviewquicksearch.cpp:58
 #, fuzzy
@@ -3074,36 +3128,12 @@ msgctxt "highest priority"
 msgid "1 (highest)"
 msgstr "१ (उच्च)"
 
-#: koeditorgeneraltodo.cpp:216
-msgid "2"
-msgstr "२"
-
-#: koeditorgeneraltodo.cpp:217
-msgid "3"
-msgstr "३"
-
-#: koeditorgeneraltodo.cpp:218
-msgid "4"
-msgstr "४"
-
 #: koeditorgeneraltodo.cpp:219
 #, fuzzy
 #| msgid "5 (medium)"
 msgctxt "medium priority"
 msgid "5 (medium)"
 msgstr "५(मध्यम)"
-
-#: koeditorgeneraltodo.cpp:220
-msgid "6"
-msgstr "६"
-
-#: koeditorgeneraltodo.cpp:221
-msgid "7"
-msgstr "७"
-
-#: koeditorgeneraltodo.cpp:222
-msgid "8"
-msgstr "८"
 
 #: koeditorgeneraltodo.cpp:223
 #, fuzzy
@@ -3262,11 +3292,11 @@ msgstr "(खाली नाम)"
 msgid "(EmptyEmail)"
 msgstr "(खाली इमेल)"
 
-#: kodaymatrix.cpp:483
+#: kodaymatrix.cpp:534
 msgid "&Move"
 msgstr "सार्नुहोस्"
 
-#: kodaymatrix.cpp:485
+#: kodaymatrix.cpp:536
 msgid "&Copy"
 msgstr "प्रतिलिपि गर्नुहोस्"
 
@@ -3274,7 +3304,7 @@ msgstr "प्रतिलिपि गर्नुहोस्"
 #. i18n: file koeditoralarms_base.ui line 483
 #. i18n: tag string
 #. i18n: file ./koeditoralarms_base.ui line 483
-#: kodaymatrix.cpp:488 rc.cpp:154 rc.cpp:2329
+#: kodaymatrix.cpp:539 rc.cpp:154 rc.cpp:2329
 msgid "&Add"
 msgstr "थप्नुहोस्"
 
@@ -3282,7 +3312,7 @@ msgstr "थप्नुहोस्"
 #. i18n: file timescaleedit_base.ui line 96
 #. i18n: tag string
 #. i18n: file ./timescaleedit_base.ui line 96
-#: kodaymatrix.cpp:491 rc.cpp:1050 rc.cpp:2350
+#: kodaymatrix.cpp:542 rc.cpp:1050 rc.cpp:2350
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -3330,84 +3360,84 @@ msgctxt "Default export file"
 msgid "calendar.html"
 msgstr "calendar.html"
 
-#: koprefs.cpp:175
+#: koprefs.cpp:178
 #, fuzzy
 #| msgid "Appointment"
 msgctxt "incidence category: appointment"
 msgid "Appointment"
 msgstr "नियुक्ति"
 
-#: koprefs.cpp:176
+#: koprefs.cpp:179
 #, fuzzy
 #| msgid "Business"
 msgctxt "incidence category: "
 msgid "Business"
 msgstr "व्यवसाय"
 
-#: koprefs.cpp:177
+#: koprefs.cpp:180
 #, fuzzy
 #| msgid "Meeting"
 msgctxt "incidence category"
 msgid "Meeting"
 msgstr "बैठक"
 
-#: koprefs.cpp:178
+#: koprefs.cpp:181
 #, fuzzy
 #| msgid "Phone Call"
 msgctxt "incidence category: phone call"
 msgid "Phone Call"
 msgstr "फोन कल"
 
-#: koprefs.cpp:179
+#: koprefs.cpp:182
 #, fuzzy
 #| msgid "Education"
 msgctxt "incidence category"
 msgid "Education"
 msgstr "शिक्षा"
 
-#: koprefs.cpp:180
+#: koprefs.cpp:183
 #, fuzzy
 #| msgid "Holiday"
 msgctxt "incidence category"
 msgid "Holiday"
 msgstr "छुट्टि"
 
-#: koprefs.cpp:181
+#: koprefs.cpp:184
 #, fuzzy
 #| msgid "Vacation"
 msgctxt "incidence category"
 msgid "Vacation"
 msgstr "बिदा"
 
-#: koprefs.cpp:182
+#: koprefs.cpp:185
 #, fuzzy
 #| msgid "Special Occasion"
 msgctxt "incidence category"
 msgid "Special Occasion"
 msgstr "विशेष अवसर"
 
-#: koprefs.cpp:183
+#: koprefs.cpp:186
 #, fuzzy
 #| msgid "Personal"
 msgctxt "incidence category"
 msgid "Personal"
 msgstr "व्यक्तिगत"
 
-#: koprefs.cpp:184
+#: koprefs.cpp:187
 #, fuzzy
 #| msgid "Travel"
 msgctxt "incidence category"
 msgid "Travel"
 msgstr "यात्रा"
 
-#: koprefs.cpp:185
+#: koprefs.cpp:188
 #, fuzzy
 #| msgid "Miscellaneous"
 msgctxt "incidence category"
 msgid "Miscellaneous"
 msgstr "विविध"
 
-#: koprefs.cpp:186
+#: koprefs.cpp:189
 #, fuzzy
 #| msgid "Birthday"
 msgctxt "incidence category"
@@ -11026,9 +11056,6 @@ msgstr "पछि आउने सबै घटना र गर्नुपर�
 #~ msgctxt "@title:column reminder due date/time"
 #~ msgid "Due"
 #~ msgstr "बाँकी"
-
-#~ msgid "&Move To"
-#~ msgstr "यसमा सार्नुहोस्"
 
 #~ msgid "Sort Id"
 #~ msgstr "आईडी क्रमबद्ध गर्नुहोस्"
