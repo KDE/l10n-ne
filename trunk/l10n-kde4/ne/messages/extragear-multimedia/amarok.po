@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-10 08:36+0200\n"
+"POT-Creation-Date: 2008-08-11 08:35+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -294,7 +294,7 @@ msgstr "स्थानीय सङ्कलन"
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:175
 #: mediadevice/generic/genericmediadevice.cpp:523
 #: playlist/PlaylistGraphicsItem.cpp:350
-#: collectionscanner/CollectionScanner.cpp:584
+#: collectionscanner/CollectionScanner.cpp:585
 #: covermanager/CoverManager.cpp:345 covermanager/CoverManager.cpp:904
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
@@ -425,7 +425,7 @@ msgstr ""
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
 
-#: context/ContextView.cpp:748
+#: context/ContextView.cpp:745
 #, fuzzy
 #| msgid "Add Directory"
 msgid "Add Applets"
@@ -1021,6 +1021,12 @@ msgstr "सँग"
 msgid "Service Info (No service active)"
 msgstr ""
 
+#: context/AmarokToolBox.cpp:458
+#, fuzzy
+#| msgid "Forbidden"
+msgid "Hide menu"
+msgstr "निषेधित"
+
 #: context/containments/ColumnContainment.cpp:126
 #, fuzzy
 #| msgid "Add Directory"
@@ -1426,6 +1432,16 @@ msgstr "उन्नत"
 msgid "Search Scripts"
 msgstr "स्क्रिप्टहरू"
 
+#: dialogs/TagDialog.cpp:400
+msgid "No filename scheme to extract tags from"
+msgstr ""
+
+#: dialogs/TagDialog.cpp:400
+msgid ""
+"Please choose a filename scheme to describe the layout of the filename(s) to "
+"extract the tags."
+msgstr ""
+
 #: dialogs/TagDialog.cpp:460
 msgid "Generating audio fingerprint..."
 msgstr "अडियो औठाछाप सिर्जना गर्दैछ..."
@@ -1440,7 +1456,7 @@ msgstr "ट्युनपिम्प (सङ्गीतब्रेन्च 
 msgid "The track was not found in the MusicBrainz database."
 msgstr "ट्र्याक सङ्गीतब्रेनच डाटाबेसमा फेला परेन ।"
 
-#: dialogs/TagDialog.cpp:545
+#: dialogs/TagDialog.cpp:545 browsers/playlistbrowser/PodcastModel.cpp:241
 msgid "Summary"
 msgstr "सारांश"
 
@@ -1716,6 +1732,8 @@ msgstr "साधारण खोजी"
 #: browsers/collectionbrowser/CollectionWidget.cpp:71
 #: browsers/servicebrowser/magnatunestore/MagnatuneStore.cpp:175
 #: browsers/servicebrowser/jamendo/JamendoService.cpp:134
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:86
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:292
 #: mediadevice/ifp/ifpmediadevice.cpp:402 rc.cpp:905
 #: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:519
 #: widgets/TokenListWidget.cpp:39 widgets/FilenameLayoutWidget.cpp:289
@@ -1729,7 +1747,9 @@ msgstr "एल्बम"
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:545
 #: browsers/collectionbrowser/CollectionWidget.cpp:58
 #: browsers/servicebrowser/magnatunestore/MagnatuneStore.cpp:167
-#: browsers/servicebrowser/jamendo/JamendoService.cpp:126 rc.cpp:902
+#: browsers/servicebrowser/jamendo/JamendoService.cpp:126
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:54
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:290 rc.cpp:902
 #: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:515
 #: widgets/TokenListWidget.cpp:36 widgets/FilenameLayoutWidget.cpp:277
 #: SmartPlaylistEditor.cpp:187 SmartPlaylistEditor.cpp:201
@@ -1738,6 +1758,7 @@ msgstr "कलाकार"
 
 #: dialogs/EditFilterDialog.cpp:129
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:546
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:291
 #: playlist/PlaylistModel.cpp:517 widgets/TokenListWidget.cpp:37
 #: widgets/FilenameLayoutWidget.cpp:281 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
@@ -1746,6 +1767,7 @@ msgstr "कम्पोजर"
 
 #: dialogs/EditFilterDialog.cpp:131 dialogs/transferdialog.cpp:95
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:547
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:294
 #: playlist/PlaylistModel.cpp:523 widgets/TokenListWidget.cpp:41
 #: widgets/FilenameLayoutWidget.cpp:297 SmartPlaylistEditor.cpp:187
 #: SmartPlaylistEditor.cpp:201
@@ -1754,23 +1776,29 @@ msgstr "विधा"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 91
-#: dialogs/EditFilterDialog.cpp:133 rc.cpp:899 playlist/PlaylistModel.cpp:514
-#: widgets/TokenListWidget.cpp:35 widgets/FilenameLayoutWidget.cpp:273
-#: SmartPlaylistEditor.cpp:187
+#: dialogs/EditFilterDialog.cpp:133
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:293
+#: browsers/playlistbrowser/PodcastModel.cpp:240 rc.cpp:899
+#: playlist/PlaylistModel.cpp:514 widgets/TokenListWidget.cpp:35
+#: widgets/FilenameLayoutWidget.cpp:273 SmartPlaylistEditor.cpp:187
 msgid "Title"
 msgstr "शीर्षक"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 124
-#: dialogs/EditFilterDialog.cpp:135 rc.cpp:908 widgets/TokenListWidget.cpp:34
-#: widgets/TrackTooltip.cpp:200 widgets/FilenameLayoutWidget.cpp:269
+#: dialogs/EditFilterDialog.cpp:135
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:112 rc.cpp:908
+#: widgets/TokenListWidget.cpp:34 widgets/TrackTooltip.cpp:200
+#: widgets/FilenameLayoutWidget.cpp:269
 msgid "Track"
 msgstr "ट्रयाक"
 
 #. i18n: tag string
 #. i18n: file ./dialogs/trackpickerdialogbase.ui line 135
 #: dialogs/EditFilterDialog.cpp:137
-#: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:548 rc.cpp:911
+#: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:548
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:295
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695 rc.cpp:911
 #: playlist/PlaylistModel.cpp:518 widgets/TokenListWidget.cpp:38
 #: widgets/FilenameLayoutWidget.cpp:285 SmartPlaylistEditor.cpp:188
 #: SmartPlaylistEditor.cpp:201 SmartPlaylistEditor.cpp:925
@@ -1794,6 +1822,7 @@ msgid "larger than"
 msgstr "यसभन्दा ठूलो"
 
 #: dialogs/EditFilterDialog.cpp:171
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:446
 msgid "equal to"
 msgstr "यससँग बराबर छ"
 
@@ -2081,7 +2110,7 @@ msgstr ""
 msgid "There was an error communicating with Amazon."
 msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
 
-#: App.cpp:88
+#: App.cpp:88 browsers/playlistbrowser/PodcastModel.cpp:280
 msgid "Amarok"
 msgstr "अमारोक"
 
@@ -2521,8 +2550,8 @@ msgstr "%1 नाम गरेको प्रिसेट पहिल्यै
 #| "uses. <p>You may find useful information in the <i>FAQ</i> section of the "
 #| "<i>Amarok HandBook</i>."
 msgid ""
-"<p>Phonon claims it <b>cannot</b> play MP3 files.You may want to examine the "
-"installation of the backend that phonon uses.</p><p>You may find useful "
+"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
+"the installation of the backend that phonon uses.</p><p>You may find useful "
 "information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
 msgstr ""
 "<p>%1 ले यसले <b>MP3 फाइल</b> बज्न सक्दैन भन्ने दावी गर्दछ ।<p>तपाईँ <i>संवाद कन्फिगर "
@@ -2554,7 +2583,7 @@ msgstr "MP3 समर्थन छैन"
 msgid "Generating playlist..."
 msgstr "प्ले सूची सिर्जना गर्नुहोस्..."
 
-#: mediabrowser.cpp:120
+#: mediabrowser.cpp:120 mediabrowser.cpp:1262
 msgid "No Device Available"
 msgstr "कुनै यन्त्र उपलब्ध छैन"
 
@@ -2571,7 +2600,9 @@ msgid "Transfer"
 msgstr "स्थानान्तर गर्नुहोस्"
 
 #: mediabrowser.cpp:189
-msgid "custom"
+#, fuzzy
+#| msgid "custom"
+msgid "Custom"
 msgstr "अनुकूलन"
 
 #: mediabrowser.cpp:191
@@ -3229,11 +3260,39 @@ msgstr "फिल्टर खाली गर्नुहोस्"
 msgid "Fetching %1 Artist Info"
 msgstr "कलाकार सूचना तान्दै"
 
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:69
+#, fuzzy
+#| msgid "Genre:"
+msgid "Genre: "
+msgstr "विधा:"
+
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:70
+msgid "Release Year: "
+msgstr ""
+
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:75
+#, fuzzy
+#| msgid "Description"
+msgid "Description:"
+msgstr "वर्णन"
+
+#: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:79
+#, fuzzy
+#| msgid "Purchase Album from Magnatune.com"
+msgid "From Magnatune.com"
+msgstr "magnatune.com बाट एल्बम खरीद गर्नुहोस्"
+
 #: browsers/servicebrowser/magnatunestore/magnatuneinfoparser.cpp:155
 #, fuzzy
 #| msgid "Downloading Magnatune.com Database"
 msgid "Fetching Magnatune.com front page"
 msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: browsers/servicebrowser/magnatunestore/MagnatuneCollectionLocation.cpp:43
+#, fuzzy
+#| msgid "Previous Track"
+msgid "Preview Tracks"
+msgstr "अघिल्लो ट्रयाक"
 
 #: browsers/servicebrowser/magnatunestore/MagnatuneCollectionLocation.cpp:46
 msgid ""
@@ -3268,6 +3327,10 @@ msgstr "Magnatune.com एल्बम डाउनलोड"
 #| msgid "Magnatune.com Album Download"
 msgid "Magnatune.com: &Download Album"
 msgstr "Magnatune.com एल्बम डाउनलोड"
+
+#: browsers/servicebrowser/magnatunestore/MagnatuneMeta.cpp:270
+msgid "The non evil record label that is fair to artists and customers alike"
+msgstr ""
 
 #: browsers/servicebrowser/magnatunestore/MagnatuneAlbumDownloader.cpp:70
 msgid "Downloading album"
@@ -3517,6 +3580,56 @@ msgstr "डाटाबेस अद्यावधिक गर्दै"
 msgid "Fetching Podcast Info"
 msgstr "पोडकास्ट तानिँदै"
 
+#: browsers/servicebrowser/lastfm/core/RadioPlaylist.cpp:219
+#, fuzzy, kde-format
+#| msgid "The cover could not be retrieved."
+msgid ""
+"The playlist could not be read. Error:\n"
+"\n"
+"%1"
+msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:740
+msgid "Bad session"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:743
+msgid "Client too old"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:746
+#, fuzzy
+#| msgid "The user's password"
+msgid "Wrong username / password"
+msgstr "प्रयोगकर्ताको पासवर्ड"
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:749
+msgid "Wrong timezone"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:752
+#, fuzzy
+#| msgid "iFP: Could not open device"
+msgid "Could not reach server"
+msgstr "आईएफपी: यन्त्र खोल्न सकेन"
+
+#: browsers/servicebrowser/lastfm/core/Scrobbler-12.cpp:755
+msgid "OK"
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Radio.cpp:193
+msgid ""
+"Sorry, this track isn't in the Last.fm catalog, and thus cannot be streamed."
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Radio.cpp:461
+msgid "Can't resume a station without having listened to one first."
+msgstr ""
+
+#: browsers/servicebrowser/lastfm/core/Radio.cpp:560
+msgid "Skip limit exceeded."
+msgstr ""
+
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:93
 #, fuzzy
 #| msgid "Last.fm Radio"
@@ -3558,6 +3671,11 @@ msgstr ""
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:107
 msgid "Skip this track"
 msgstr ""
+
+#: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:151
+#: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:391
+msgid "Track Radio"
+msgstr "ट्रयाक रेडियो"
 
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:337
 #, fuzzy, kde-format
@@ -3608,10 +3726,6 @@ msgstr "%1ले सिफारिस गरेको रेडियो"
 #, kde-format
 msgid "Group Radio: %1"
 msgstr "समूह रेडियो: %1"
-
-#: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:391
-msgid "Track Radio"
-msgstr "ट्रयाक रेडियो"
 
 #: browsers/servicebrowser/lastfm/meta/LastFmMeta.cpp:395
 msgid "Artist Radio"
@@ -3666,6 +3780,17 @@ msgstr ""
 #| msgid "Similar Artists to %1"
 msgid "Play Similar Artists from Last.fm"
 msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: browsers/servicebrowser/lastfm/LastFmServiceCollection.cpp:36
+#, fuzzy, kde-format
+#| msgid "1 stream"
+#| msgid_plural "%1 streams"
+msgid "%1's Streams"
+msgstr "%1 प्रवाह"
+
+#: browsers/servicebrowser/lastfm/LastFmServiceCollection.cpp:40
+msgid "Global Tags"
+msgstr "विश्वव्यापी ट्याग"
 
 #: browsers/servicebrowser/lastfm/LastFmServiceCollection.cpp:44
 #, fuzzy
@@ -3759,7 +3884,14 @@ msgid "Ampache Server %1"
 msgstr "उन्नत सर्भर"
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesServiceCollection.cpp:51
+#: browsers/servicebrowser/mp3tunes/Mp3tunesServiceCollectionLocation.cpp:42
 msgid "MP3tunes Locker"
+msgstr ""
+
+#: browsers/servicebrowser/mp3tunes/Mp3tunesMeta.cpp:47
+msgid ""
+"Online music locker where you can safely store and access your music: http://"
+"mp3tunes.com"
 msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesService.cpp:104
@@ -3811,6 +3943,13 @@ msgstr "अधिकतम असफल प्रमाणीकरणहरू"
 #| msgid "Proxy Origin Disconnected"
 msgid "MP3Tunes Harmony: Disconnected"
 msgstr "प्रोक्सी उत्पत्ति जडान विच्छेद गरियो"
+
+#: browsers/servicebrowser/mp3tunes/Mp3tunesService.cpp:340
+#, kde-format
+msgid ""
+"Mp3tunes Harmony Error\n"
+"%1"
+msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/harmonydaemon/main.cpp:34
 #, fuzzy
@@ -3879,9 +4018,9 @@ msgid "Upload to MP3tunes Initiated"
 msgstr ""
 
 #: browsers/servicebrowser/mp3tunes/Mp3tunesWorkers.cpp:264
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Upcoming tracks:"
-msgid "Uploading Track "
+msgid "Uploading Track %1/%2"
 msgstr "आगामी ट्रयाकहरू:"
 
 #. i18n: tag string
@@ -3897,6 +4036,10 @@ msgstr "डाउनलोड"
 #| msgid "Media Download"
 msgid "Jamendo.com: &Download"
 msgstr "मिडिया डाउनलोड गर्नुहोस्"
+
+#: browsers/servicebrowser/jamendo/JamendoMeta.cpp:173
+msgid "A site where artists can freely share their music"
+msgstr ""
 
 #: browsers/servicebrowser/jamendo/JamendoService.cpp:73
 msgid "A site where artists can showcase their creations to the world"
@@ -3926,6 +4069,12 @@ msgstr "डाटाबेस अद्यावधिक गर्दै"
 msgid "No description available..."
 msgstr "कुनै यन्त्र उपलब्ध छैन"
 
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:64
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:96
+#: browsers/servicebrowser/jamendo/JamendoInfoParser.cpp:116
+msgid "From Jamendo.com"
+msgstr ""
+
 #: browsers/servicebrowser/jamendo/JamendoXmlParser.cpp:61
 #, fuzzy, kde-format
 #| msgid ""
@@ -3938,9 +4087,19 @@ msgstr ""
 "Magnatune.com डाटाबेसले पूरा अद्यावधिक गर्यो । %3 कलाकारबाट %2 एल्बममा %1 ट्रयाकहरू "
 "थपियो"
 
-#: browsers/playlistbrowser/UserPlaylistModel.cpp:417
+#: browsers/playlistbrowser/UserPlaylistModel.cpp:222
+msgid "Name"
+msgstr "नाम"
+
+#: browsers/playlistbrowser/UserPlaylistModel.cpp:419
 msgid "New Group"
 msgstr ""
+
+#: browsers/playlistbrowser/DynamicModel.cpp:99
+#, fuzzy
+#| msgid "Add to Playlist"
+msgid "Random Playlist"
+msgstr "प्ले सूचीमा थप्नुहोस्"
 
 #: browsers/playlistbrowser/DynamicModel.cpp:213
 #, fuzzy
@@ -3964,13 +4123,132 @@ msgstr "प्ले सूची हटाउनुहोस्"
 msgid "This controls what portion of the playlist should match the criteria"
 msgstr ""
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
+#, fuzzy
+#| msgid "Property Active"
+msgid "Proportion:"
+msgstr "गुण सक्रिय"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:672
+msgid "Match:"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:296
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:696
+#: playlist/PlaylistModel.cpp:532 widgets/TrackTooltip.cpp:192
+msgid "Play Count"
+msgstr "प्ले गणना"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:297
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
+#: playlist/PlaylistModel.cpp:531 widgets/TrackTooltip.cpp:185
+#: SmartPlaylistEditor.cpp:189
+msgid "Rating"
+msgstr "मूल्याङ्कन"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:298
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:698
+#: playlist/PlaylistModel.cpp:530 widgets/TrackTooltip.cpp:167
+#: SmartPlaylistEditor.cpp:189
+msgid "Score"
+msgstr "प्राप्ताङ्क"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:299
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:699
+#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:527
+#: widgets/TrackTooltip.cpp:206 widgets/TrackTooltip.cpp:213
+#: SmartPlaylistEditor.cpp:187
+msgid "Length"
+msgstr "लम्बाइ"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:300
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:700
+#: SmartPlaylistEditor.cpp:188
+msgid "Track #"
+msgstr "ट्रयाक #"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:301
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:701
+#, fuzzy
+#| msgid "disc"
+msgid "Disc #"
+msgstr "डिस्क"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:302
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
+#, fuzzy
+#| msgid "First Played:"
+msgid "First Played"
+msgstr "पहिले प्ले गरिएको:"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:303
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:703
+#: widgets/TrackTooltip.cpp:197
+msgid "Last Played"
+msgstr "अन्तिममा बजाएको"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:304
+#: playlist/PlaylistModel.cpp:524 widgets/TokenListWidget.cpp:40
+#: widgets/FilenameLayoutWidget.cpp:293 SmartPlaylistEditor.cpp:188
+msgid "Comment"
+msgstr "टिप्पणी"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:393
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:711
+#, fuzzy
+#| msgid "with"
+msgid "With:"
+msgstr "सँग"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:445
+#, fuzzy
+#| msgid "larger than"
+msgid "less than"
+msgstr "यसभन्दा ठूलो"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:447
+#, fuzzy
+#| msgid "is greater than"
+msgid "greater than"
+msgstr "यसभन्दा ठूलो"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:663
 msgid "This controls how strictly to match the given value."
 msgstr ""
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:671
+#, fuzzy
+#| msgid "Devices"
+msgid "Strictness:"
+msgstr "यन्त्र"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:239
+#: playlist/PlaylistModel.cpp:526
+msgid "Type"
+msgstr "प्रकार"
+
 #: browsers/playlistbrowser/PodcastModel.cpp:280
 msgid "Enter Podcast URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:82
+msgid "Proportional Bias"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:83
+#, fuzzy
+#| msgid "The position of the playlist window when Amarok is started."
+msgid "Match a certain portion of the playlist to a value."
+msgstr "अमारोक सुरु हुँदा प्लेसूची सञ्झ्यालको स्थिति ।"
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:99
+msgid "Fuzzy Bias"
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicBiasModel.cpp:100
+msgid "Losely match the playlist to an approximate value."
+msgstr ""
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:75
 #, fuzzy
@@ -4019,6 +4297,12 @@ msgstr "पुन: बसाउने"
 msgid "Replace the upcoming tracks with fresh ones."
 msgstr "अन्डरस्कोर सहित खाली स्थानहरू प्रतिस्थापन गर्नुहोस्"
 
+#: browsers/playlistbrowser/DynamicCategory.cpp:78
+#, fuzzy
+#| msgid "&Playlist"
+msgid "Playlist:"
+msgstr "प्ले सूची"
+
 #: browsers/playlistbrowser/DynamicCategory.cpp:108
 #, fuzzy
 #| msgid "Add new preset"
@@ -4040,6 +4324,18 @@ msgstr "प्लेसूची नाम:"
 #| msgid "&Enter a name for the playlist:"
 msgid "Enter a name for the playlist:"
 msgstr "प्ले सूचीका लागि नाम प्रविष्ट गर्नुहोस्:"
+
+#: browsers/playlistbrowser/DynamicCategory.cpp:260
+#, fuzzy
+#| msgid "Warning"
+msgid "Warning!"
+msgstr "चेतावनी"
+
+#: browsers/playlistbrowser/DynamicCategory.cpp:260
+#, fuzzy
+#| msgid "Cannot write playlist (%1)."
+msgid "Can not overwrite the random playlist."
+msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
 
 #: browsers/playlistbrowser/PlaylistCategory.cpp:92
 #, fuzzy
@@ -5081,6 +5377,11 @@ msgstr "उपकरण"
 #: MainWindow.cpp:942
 msgid "&Settings"
 msgstr "सेटिङ"
+
+#: MediaItem.cpp:437
+#, kde-format
+msgid "<i>Genre: %1</i>"
+msgstr ""
 
 #: MediaItem.cpp:444
 msgid "Drag items here to create new playlist"
@@ -8702,113 +9003,9 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:53
-msgid ""
-"Could not get a connected device list from libmtp. Possibly you are trying "
-"to run two copies of this kioslave at once, which is not supported."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:59
-#, fuzzy
-#| msgid "1 track found on device"
-#| msgid_plural "%n tracks found on device "
-msgid "libmtp found no devices."
-msgstr "यन्त्रमा %n ट्र्याक फेला पर्यो "
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:78
-msgid "Error getting a GenericInterface to the device from Solid."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:83
-msgid ""
-"Could not find serial number of MTP device in "
-"HAL.                                                   When filing a bug "
-"please include the full output of \"lshal -lt\"."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:90
-msgid "Could not get the serial number from HAL."
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:131
-#, fuzzy
-#| msgid "Failed to submit '%1' and one other track"
-#| msgid_plural "Failed to submit '%1' and %1 other tracks"
-msgid "Failed to set friendly name on the device!"
-msgstr "last.fm मा '%1' पेश गर्न असफल भयो"
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:151
-#, fuzzy
-#| msgid "Perfectplay Not Supported"
-msgid "Direct copying not supported"
-msgstr "निपूण प्ले समर्थित छैन"
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:172
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:323
-#, fuzzy
-#| msgid "Invalid Path"
-msgid "Invalid path requested!"
-msgstr "अवैध मार्ग"
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:194
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:207
-#, kde-format
-msgid "libmtp reported failure deleting %1"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:294
-#, fuzzy
-#| msgid "Could not update playlist on device."
-msgid "Could not find any folders on device!"
-msgstr "यन्त्रमा प्ले सूची अद्यावधिक गर्न सकेन ।"
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:388
-msgid "Stat requested on an invalid path!"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:491
-msgid "Receiving tracklisting...done"
-msgstr ""
-
-#: portabledevices/kioslaves/mtp_backend/pmpkioslave_mtpbackend.cpp:493
-#, kde-format
-msgid "Receiving tracklisting...%1\\%"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:84
-msgid ""
-"portable media player : Setting a hostname is not "
-"supported.                       Use a URL of the form pmp:/<udi> or pmp:///"
-"<udi>"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:95
-#, fuzzy
-#| msgid "Perfectplay Not Supported"
-msgid "Direct copying not supported."
-msgstr "निपूण प्ले समर्थित छैन"
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:197
-msgid "Destination name cannot be the same as a Solid UDI!"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:209
-msgid "Could not rename file, files cannot be renamed across devices!"
-msgstr ""
-
-#: portabledevices/kioslaves/pmpkioslave.cpp:279
-msgid "portable media player : Empty UDI passed in"
-msgstr ""
-
 #: playlist/PlaylistHeader.cpp:45
 msgid "Track Number - Title"
 msgstr "ट्रयाक नम्बर - शीर्षक"
-
-#: playlist/PlaylistHeader.cpp:45 playlist/PlaylistModel.cpp:527
-#: widgets/TrackTooltip.cpp:206 widgets/TrackTooltip.cpp:213
-#: SmartPlaylistEditor.cpp:187
-msgid "Length"
-msgstr "लम्बाइ"
 
 #: playlist/PlaylistViewCommon.cpp:43
 msgid "&Play"
@@ -8882,21 +9079,12 @@ msgstr "ट्रयाक"
 msgid "BPM"
 msgstr "बीपीएम"
 
-#: playlist/PlaylistModel.cpp:524 widgets/TokenListWidget.cpp:40
-#: widgets/FilenameLayoutWidget.cpp:293 SmartPlaylistEditor.cpp:188
-msgid "Comment"
-msgstr "टिप्पणी"
-
 #: playlist/PlaylistModel.cpp:525
 #, fuzzy
 #| msgid "Directory"
 msgctxt "The location on disc of this track"
 msgid "Directory"
 msgstr "डाइरेक्टरी"
-
-#: playlist/PlaylistModel.cpp:526
-msgid "Type"
-msgstr "प्रकार"
 
 #: playlist/PlaylistModel.cpp:528 SmartPlaylistEditor.cpp:191
 msgid "Bitrate"
@@ -8905,20 +9093,6 @@ msgstr "बिट्रेट"
 #: playlist/PlaylistModel.cpp:529
 msgid "Sample Rate"
 msgstr "नमूना दर"
-
-#: playlist/PlaylistModel.cpp:530 widgets/TrackTooltip.cpp:167
-#: SmartPlaylistEditor.cpp:189
-msgid "Score"
-msgstr "प्राप्ताङ्क"
-
-#: playlist/PlaylistModel.cpp:531 widgets/TrackTooltip.cpp:185
-#: SmartPlaylistEditor.cpp:189
-msgid "Rating"
-msgstr "मूल्याङ्कन"
-
-#: playlist/PlaylistModel.cpp:532 widgets/TrackTooltip.cpp:192
-msgid "Play Count"
-msgstr "प्ले गणना"
 
 #: playlist/PlaylistModel.cpp:533
 msgctxt "Column name"
@@ -9262,6 +9436,12 @@ msgstr "यहाँ खोजी सर्त प्रविष्ट गर�
 msgid "Enter space-separated terms to search in the playlist."
 msgstr "प्ले सूचिमा खोजी गर्न खाली स्थान-विभाजित सर्त प्रविष्ट गर्नुहोस्"
 
+#: widgets/SearchWidget.cpp:71
+#, fuzzy
+#| msgid "Advanced"
+msgid "Advanced"
+msgstr "उन्नत"
+
 #: widgets/SearchWidget.cpp:75
 #, fuzzy
 #| msgid "Color for new playlist items:"
@@ -9315,10 +9495,6 @@ msgstr " - "
 #: widgets/AnalyzerWidget.cpp:33
 msgid "Click for more analyzers"
 msgstr "धेरै विश्लेषकहरूका लागि क्लिक गर्नुहोस्"
-
-#: widgets/TrackTooltip.cpp:197
-msgid "Last Played"
-msgstr "अन्तिममा बजाएको"
 
 #: widgets/TrackTooltip.cpp:234
 #, fuzzy, kde-format
@@ -9642,10 +9818,6 @@ msgid "Edit Smart Playlist"
 msgstr "छरितो प्लेसूची सम्पादन गर्नुहोस्"
 
 #: SmartPlaylistEditor.cpp:188
-msgid "Track #"
-msgstr "ट्रयाक #"
-
-#: SmartPlaylistEditor.cpp:188
 msgid "Play Counter"
 msgstr "प्ले काउन्टर"
 
@@ -9819,6 +9991,38 @@ msgstr "वर्ष"
 msgid "Hours"
 msgstr "घण्टा"
 
+#, fuzzy
+#~| msgid "1 track found on device"
+#~| msgid_plural "%n tracks found on device "
+#~ msgid "libmtp found no devices."
+#~ msgstr "यन्त्रमा %n ट्र्याक फेला पर्यो "
+
+#, fuzzy
+#~| msgid "Failed to submit '%1' and one other track"
+#~| msgid_plural "Failed to submit '%1' and %1 other tracks"
+#~ msgid "Failed to set friendly name on the device!"
+#~ msgstr "last.fm मा '%1' पेश गर्न असफल भयो"
+
+#, fuzzy
+#~| msgid "Perfectplay Not Supported"
+#~ msgid "Direct copying not supported"
+#~ msgstr "निपूण प्ले समर्थित छैन"
+
+#, fuzzy
+#~| msgid "Invalid Path"
+#~ msgid "Invalid path requested!"
+#~ msgstr "अवैध मार्ग"
+
+#, fuzzy
+#~| msgid "Could not update playlist on device."
+#~ msgid "Could not find any folders on device!"
+#~ msgstr "यन्त्रमा प्ले सूची अद्यावधिक गर्न सकेन ।"
+
+#, fuzzy
+#~| msgid "Perfectplay Not Supported"
+#~ msgid "Direct copying not supported."
+#~ msgstr "निपूण प्ले समर्थित छैन"
+
 #~ msgid "Check to animate the Amarok system tray icon."
 #~ msgstr "अमारोक प्रणाली ट्रे प्रतिमा एनिमेट गर्न जाँच गर्नुहोस् ।"
 
@@ -9845,9 +10049,6 @@ msgstr "घण्टा"
 
 #~ msgid "Collection Statistics"
 #~ msgstr "सङ्कलन तथ्याङ्क"
-
-#~ msgid "Name"
-#~ msgstr "नाम"
 
 #~ msgid "Favorite Tracks"
 #~ msgstr "मन पर्ने ट्रयाक"
@@ -9993,11 +10194,6 @@ msgstr "घण्टा"
 
 #~ msgid "About %1"
 #~ msgstr "%1 बारेमा"
-
-#, fuzzy
-#~| msgid "Property Active"
-#~ msgid "Properties"
-#~ msgstr "गुण सक्रिय"
 
 #~ msgid "&About"
 #~ msgstr "बारेमा"
@@ -10392,11 +10588,6 @@ msgstr "घण्टा"
 #~| msgid "Track Number"
 #~ msgid "Track Name"
 #~ msgstr "ट्रयाक नम्बर"
-
-#, fuzzy
-#~| msgid "disc"
-#~ msgid "Disc #"
-#~ msgstr "डिस्क"
 
 #, fuzzy
 #~| msgid "Play Count"
@@ -11112,9 +11303,6 @@ msgstr "घण्टा"
 #~ msgid "Loved Radio"
 #~ msgstr "मनपरेको रेडियो"
 
-#~ msgid "Global Tags"
-#~ msgstr "विश्वव्यापी ट्याग"
-
 #~ msgid "Roman 'And God said, let there be Mac' Becker"
 #~ msgstr "रोमन ' र भगवानले भन्नुभयो, त्यहाँ म्याक हुन दिनुहोस्'बेक्कर"
 
@@ -11126,11 +11314,6 @@ msgstr "घण्टा"
 
 #~ msgid "OSD"
 #~ msgstr "ओएसडी"
-
-#, fuzzy
-#~| msgid "Devices"
-#~ msgid "Services"
-#~ msgstr "यन्त्र"
 
 #~ msgid "Autodetect"
 #~ msgstr "स्वत: पत्ता लगाउनुहोस्"
@@ -11520,9 +11703,6 @@ msgstr "घण्टा"
 
 #~ msgid "False"
 #~ msgstr "झूट"
-
-#~ msgid "Warning"
-#~ msgstr "चेतावनी"
 
 #~ msgid "Buffering"
 #~ msgstr "बफरिङ"
@@ -13027,11 +13207,6 @@ msgstr "घण्टा"
 #~ msgstr "प्ले सूची लोड गर्न असफल: %1"
 
 #, fuzzy
-#~| msgid "iFP: Could not open device"
-#~ msgid "Could not use device"
-#~ msgstr "आईएफपी: यन्त्र खोल्न सकेन"
-
-#, fuzzy
 #~| msgid "File Extension of Source"
 #~ msgid "Failed to set source"
 #~ msgstr "स्रोतको फाइल विस्तार"
@@ -13166,11 +13341,6 @@ msgstr "घण्टा"
 
 #~ msgid "(<a href='whatsthis:%1'>Details</a>)"
 #~ msgstr "(<a href='whatsthis:%1'>विवरण</a>)"
-
-#, fuzzy
-#~| msgid "Forbidden"
-#~ msgid "Hidden"
-#~ msgstr "निषेधित"
 
 #~ msgid "Stop Playing After Current Track"
 #~ msgstr "हालको ट्रयाक पछि प्ले गर्न रोक्नुहोस्"
@@ -13331,12 +13501,6 @@ msgstr "घण्टा"
 #~ msgid_plural "%1 dynamic playlists"
 #~ msgstr[0] "%1 गतिशील प्ले सूची"
 #~ msgstr[1] "%1 गतिशील प्ले सूची"
-
-#~| msgid "Stream"
-#~ msgid "1 stream"
-#~ msgid_plural "%1 streams"
-#~ msgstr[0] "%1 प्रवाह"
-#~ msgstr[1] "%1 प्रवाह"
 
 #~| msgid "Podcast"
 #~ msgid "1 podcast"
@@ -13615,9 +13779,6 @@ msgstr "घण्टा"
 
 #~ msgid "Playlist Toolbar"
 #~ msgstr "प्लेसूची उपकरणपट्टी"
-
-#~ msgid "The position of the playlist window when Amarok is started."
-#~ msgstr "अमारोक सुरु हुँदा प्लेसूची सञ्झ्यालको स्थिति ।"
 
 #~ msgid "&Repopulate"
 #~ msgstr "पुन: बसाउनुहोस्"
@@ -13985,9 +14146,6 @@ msgstr "घण्टा"
 
 #~ msgid "New podcasts have been retrieved!"
 #~ msgstr "नयाँ पोडकास्ट पुन: प्राप्त भयो!"
-
-#~ msgid "Description"
-#~ msgstr "वर्णन"
 
 #~ msgid "Website"
 #~ msgstr "वेबसाइट"
