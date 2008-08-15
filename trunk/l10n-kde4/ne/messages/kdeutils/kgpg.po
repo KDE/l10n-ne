@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-14 08:43+0200\n"
+"POT-Creation-Date: 2008-08-15 08:27+0200\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -319,7 +319,7 @@ msgstr "कुञ्जी सर्भरबाट कुञ्जी आया
 
 #. i18n: tag string
 #. i18n: file keyserver.ui line 140
-#: keyservers.cpp:260 kgpgview.cpp:395 rc.cpp:318
+#: keyservers.cpp:260 rc.cpp:318 editor/kgpgview.cpp:395
 msgid "&Import"
 msgstr "आयात गर्नुहोस्"
 
@@ -498,19 +498,19 @@ msgstr "कुञ्जी साइन गर्नुहोस्..."
 msgid "Import key(s) from keyserver"
 msgstr "कुञ्जी सर्भरबाट कुञ्जी आयात गर्नुहोस्"
 
-#: keysmanager.cpp:283 kgpgitemmodel.cpp:271
+#: keysmanager.cpp:283 model/kgpgitemmodel.cpp:271
 msgid "Trust"
 msgstr "विश्वास"
 
-#: keysmanager.cpp:286 kgpgitemmodel.cpp:272
+#: keysmanager.cpp:286 model/kgpgitemmodel.cpp:272
 msgid "Size"
 msgstr "साइज"
 
-#: keysmanager.cpp:289 kgpgitemmodel.cpp:274
+#: keysmanager.cpp:289 model/kgpgitemmodel.cpp:274
 msgid "Creation"
 msgstr "सिर्जना"
 
-#: keysmanager.cpp:292 kgpgitemmodel.cpp:273
+#: keysmanager.cpp:292 model/kgpgitemmodel.cpp:273
 msgid "Expiration"
 msgstr "म्याद समाप्ति"
 
@@ -791,7 +791,7 @@ msgstr ""
 msgid "Public Key Export"
 msgstr "सार्वजनिक कुञ्जी निर्यात"
 
-#: keysmanager.cpp:1459 kgpgeditor.cpp:451
+#: keysmanager.cpp:1459 editor/kgpgeditor.cpp:451
 msgid "Save File"
 msgstr "फाइल बचत गर्नुहोस्"
 
@@ -1205,7 +1205,7 @@ msgstr "Bzip2"
 msgid "Tar"
 msgstr ""
 
-#: kgpg.cpp:295 kgpg.cpp:487 kgpgeditor.cpp:473 kgpglibrary.cpp:116
+#: kgpg.cpp:295 kgpg.cpp:487 kgpglibrary.cpp:116 editor/kgpgeditor.cpp:473
 msgid "File Already Exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
@@ -1229,7 +1229,8 @@ msgid_plural "Decryption of these files failed:"
 msgstr[0] "गुप्तिकरण उल्टाउन असफल ।"
 msgstr[1] "गुप्तिकरण उल्टाउन असफल ।"
 
-#: kgpg.cpp:519 kgpglibrary.cpp:229 kgpgview.cpp:316 kgpgview.cpp:357
+#: kgpg.cpp:519 kgpglibrary.cpp:229 editor/kgpgview.cpp:316
+#: editor/kgpgview.cpp:357
 msgid "Decryption failed."
 msgstr "गुप्तिकरण उल्टाउन असफल ।"
 
@@ -1386,101 +1387,6 @@ msgstr "फोल्डर साइन गर्न सक्दैन ।"
 msgid "Cannot verify folder."
 msgstr "फोल्डर रूजु गर्न सक्दैन ।"
 
-#: kgpgeditor.cpp:70 kgpgeditor.cpp:194 kgpgeditor.cpp:669 kgpgeditor.cpp:695
-msgid "Untitled"
-msgstr "शीर्षक नभएको"
-
-#: kgpgeditor.cpp:158
-msgid "&Encrypt File..."
-msgstr "फाइल गुप्तिकरण गर्नुहोस्..."
-
-#: kgpgeditor.cpp:162
-msgid "&Decrypt File..."
-msgstr "फाइल गुप्तिकरण उल्टाउनुहोस्..."
-
-#: kgpgeditor.cpp:166
-msgid "&Open Key Manager"
-msgstr "कुञ्जी प्रबन्धक खोल्नुहोस्"
-
-#: kgpgeditor.cpp:169
-msgid "&Generate Signature..."
-msgstr "हस्ताक्षर उत्पन्न गर्नुहोस्..."
-
-#: kgpgeditor.cpp:172
-msgid "&Verify Signature..."
-msgstr "हस्ताक्षर रूजु गर्नुहोस्..."
-
-#: kgpgeditor.cpp:175
-msgid "&Check MD5 Sum..."
-msgstr "MD5 योगफल जाँच गर्नुहोस्..."
-
-#: kgpgeditor.cpp:179
-msgid "&Unicode (utf-8) Encoding"
-msgstr "युनिकोड (utf-8) सङ्केतन"
-
-#: kgpgeditor.cpp:198
-#, kde-format
-msgid ""
-"The document \"%1\" has changed.\n"
-"Do you want to save it?"
-msgstr ""
-"\"%1\" कागजात परिवर्तन भएको छ । \n"
-" तपाईँ यसलाई बचत गर्न चाहानुहुन्छ?"
-
-#: kgpgeditor.cpp:199
-msgid "Close the document"
-msgstr "कागजात बन्द गर्नुहोस्"
-
-#: kgpgeditor.cpp:246
-msgid ""
-"The document could not been saved, as the selected encoding cannot encode "
-"every unicode character in it."
-msgstr ""
-"चयन गरिएको सङ्केतनले यसमा प्रत्येक युनिकोड क्यारेक्टर सङ्केतन गर्न नसके जस्तै कागजात बचत गर्न "
-"सकेन ।"
-
-#: kgpgeditor.cpp:255 kgpgeditor.cpp:274
-msgid ""
-"The document could not be saved, please check your permissions and disk "
-"space."
-msgstr "कागजात बचत गर्न सकेन, कृपया तपाईँको अनुमति र डिस्क खाली स्थान जाँच गर्नुहोस् ।"
-
-#: kgpgeditor.cpp:299 kgpgeditor.cpp:309
-#, kde-format
-msgid "Overwrite existing file %1?"
-msgstr "अवस्थित %1 फाइल अधिलेखन गर्नुहुन्छ ?"
-
-#: kgpgeditor.cpp:420 kgpgeditor.cpp:428 kgpgeditor.cpp:565 kgpgeditor.cpp:606
-#: kgpgeditor.cpp:639
-msgid "*|All Files"
-msgstr "*|सबै फाइल"
-
-#: kgpgeditor.cpp:420
-msgid "Open File to Encode"
-msgstr "सङ्केतन गर्न फाइल खोल्नुहोस्"
-
-#: kgpgeditor.cpp:428
-msgid "Open File to Decode"
-msgstr "डिकोड गर्न फाइल खोल्नुहोस्"
-
-#: kgpgeditor.cpp:442
-msgid "Decrypt File To"
-msgstr "यसमा फाइल गुप्तिकरण उल्टाउनुहोस्"
-
-#. i18n: tag string
-#. i18n: file conf_misc.ui line 135
-#: kgpgeditor.cpp:453 rc.cpp:150
-msgid "Editor"
-msgstr "सम्पादक"
-
-#: kgpgeditor.cpp:565
-msgid "Open File to Sign"
-msgstr "साइन गर्न फाइल खोल्नुहोस्"
-
-#: kgpgeditor.cpp:606 kgpgeditor.cpp:639
-msgid "Open File to Verify"
-msgstr "रूजु गर्न फाइल खोल्नुहोस्"
-
 #: kgpginterface.cpp:392 kgpgtextinterface.cpp:106
 msgid " or "
 msgstr " वा "
@@ -1527,7 +1433,7 @@ msgstr ""
 msgid "work in progress..."
 msgstr ""
 
-#: kgpginterface.cpp:1162 kgpgitemnode.cpp:530 kgpgtextinterface.cpp:104
+#: kgpginterface.cpp:1162 kgpgtextinterface.cpp:104 model/kgpgitemnode.cpp:530
 msgid "[No user id found]"
 msgstr "[प्रयोगकर्ता आईडी फेला परेन]"
 
@@ -1716,76 +1622,6 @@ msgstr "खारेजी प्रमाणपत्रको सिर्ज�
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
 msgstr "<qt><b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:</qt>"
 
-#: kgpgitemmodel.cpp:193
-#, fuzzy, kde-format
-#| msgid "Sub Key"
-msgid "1 Key"
-msgid_plural "%1 Keys"
-msgstr[0] "सहायक कुञ्जी"
-msgstr[1] "सहायक कुञ्जी"
-
-#: kgpgitemmodel.cpp:198
-#, fuzzy, kde-format
-#| msgid "Key Group"
-msgid "1 Group"
-msgid_plural "%1 Groups"
-msgstr[0] "कुञ्जी समूह"
-msgstr[1] "कुञ्जी समूह"
-
-#. i18n: tag string
-#. i18n: file groupedit.ui line 51
-#. i18n: tag string
-#. i18n: file groupedit.ui line 135
-#: kgpgitemmodel.cpp:269 rc.cpp:247 rc.cpp:259
-msgid "Name"
-msgstr "नाम"
-
-#. i18n: tag string
-#. i18n: file groupedit.ui line 56
-#. i18n: tag string
-#. i18n: file groupedit.ui line 140
-#. i18n: tag string
-#. i18n: file keyexport.ui line 34
-#: kgpgitemmodel.cpp:270 rc.cpp:250 rc.cpp:262 rc.cpp:268
-msgid "Email"
-msgstr "इमेल"
-
-#: kgpgitemmodel.cpp:275
-msgid "ID"
-msgstr "आईडी"
-
-#: kgpgitemnode.cpp:51
-#, kde-format
-msgctxt "Name of uid (comment)"
-msgid "%1 (%2)"
-msgstr ""
-
-#: kgpgitemnode.cpp:287 kgpgitemnode.cpp:315 kgpgitemnode.cpp:386
-#: kgpgitemnode.cpp:418
-#, fuzzy, kde-format
-#| msgid "Signature"
-msgid "1 signature"
-msgid_plural "%1 signatures"
-msgstr[0] "हस्ताक्षर"
-msgstr[1] "हस्ताक्षर"
-
-#: kgpgitemnode.cpp:374
-#, kde-format
-msgid "%1 subkey"
-msgstr "%1 सहायक कुञ्जी"
-
-#: kgpgitemnode.cpp:400
-msgid "Photo id"
-msgstr "फोटो आईडी"
-
-#: kgpgitemnode.cpp:451
-#, fuzzy, kde-format
-#| msgid "%1 subkey"
-msgid "1 key"
-msgid_plural "%1 keys"
-msgstr[0] "%1 सहायक कुञ्जी"
-msgstr[1] "%1 सहायक कुञ्जी"
-
 #: kgpgkeygenerate.cpp:41
 msgid "Key Generation"
 msgstr "कुञ्जी उत्पति"
@@ -1938,37 +1774,8 @@ msgstr ""
 "गरिएको छ । यदि तपाईँले धेरै ठूलो तस्वीर प्रयोग गर्नुभएमा, तपाईँको कुञ्जी पनि धेरै ठूलो "
 "हुन्छ ! छविलाई २४०x२८८ मा राख्दा प्रयोग गर्न राम्रो हुन्छ ।"
 
-#: kgpgmd5widget.cpp:28
-msgid "MD5 Checksum"
-msgstr "MD5 चेकसम"
-
-#: kgpgmd5widget.cpp:31
-msgid "Compare MD5 with Clipboard"
-msgstr "MD5 लाई क्लिपबोर्डसँग तुलना गर्नुहोस्"
-
-#: kgpgmd5widget.cpp:46
-#, kde-format
-msgid "MD5 sum for <b>%1</b> is:"
-msgstr "<b>%1</b> का लागि MD5 योगफल:"
-
-#: kgpgmd5widget.cpp:59
-msgid "<b>Unknown status</b>"
-msgstr "<b>अज्ञात वस्तुस्थिति</b>"
-
-#: kgpgmd5widget.cpp:84
-msgid "Clipboard content is not a MD5 sum."
-msgstr "क्लिपबोर्ड सामग्री MD5 योगफल होइन ।"
-
-#: kgpgmd5widget.cpp:88
-msgid "<b>Correct checksum</b>, file is ok."
-msgstr "<b>चेकसम सुधार गर्नुहोस्</b>, फाइल ठीक छ ।"
-
-#: kgpgmd5widget.cpp:94
-msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
-msgstr ""
-
 #: kgpgoptions.cpp:54 kgpgoptions.cpp:66 kgpgoptions.cpp:68
-#: kgpgoptions.cpp:210 kgpgoptions.cpp:236 kgpgoptions.cpp:245
+#: kgpgoptions.cpp:210
 #, fuzzy
 #| msgid "(Default)"
 msgctxt "Mark default keyserver in GUI"
@@ -2053,18 +1860,25 @@ msgstr "सर्भर URL:"
 msgid "Edit Key Server"
 msgstr "कुञ्जी सर्भर सम्पादन गर्नुहोस्"
 
-#: kgpgoptions.cpp:435 kgpgoptions.cpp:436
+#: kgpgoptions.cpp:235 kgpgoptions.cpp:243
+#, fuzzy, kde-format
+#| msgid "(Default)"
+msgctxt "Mark default keyserver in GUI"
+msgid "%1 (Default)"
+msgstr "(पूर्वनिर्धारित)"
+
+#: kgpgoptions.cpp:433 kgpgoptions.cpp:434
 #, fuzzy
 #| msgid "none"
 msgctxt "no key available"
 msgid "none"
 msgstr "कुनै पनि होइन"
 
-#: kgpgoptions.cpp:471
+#: kgpgoptions.cpp:469
 msgid "Decrypt File"
 msgstr "फाइल गुप्तिकरण उल्टाउनुहोस्"
 
-#: kgpgoptions.cpp:490
+#: kgpgoptions.cpp:488
 msgid "Sign File"
 msgstr "फाइल साइन गर्नुहोस्"
 
@@ -2124,7 +1938,7 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "हस्ताक्षर वैध छ र कुञ्जी अन्तिममा विश्वासिलो छ"
 
-#: kgpgtextinterface.cpp:608 kgpgview.cpp:402
+#: kgpgtextinterface.cpp:608 editor/kgpgview.cpp:402
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -2135,89 +1949,6 @@ msgid ""
 msgstr ""
 "<qt><b>हराइरहेको हस्ताक्षर:</b><br>कुञ्जीआईडी: %1<br><br>तपाईँ कुञ्जी सर्भरबाट यो "
 "कुञ्जी आयात गर्न चाहनुहुन्छ ?</qt>"
-
-#: kgpgview.cpp:88
-#, fuzzy
-#| msgid ""
-#| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
-#| "a temporary file to process requested operation. This temporary file will "
-#| "be deleted after operation.</qt>"
-msgid ""
-"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
-"temporary file to process requested operation. This temporary file will be "
-"deleted after operation.</qt>"
-msgstr ""
-"<qt><b>टाढाको फाइल </b>छोडियो ।<br>अनुरोध गरिएको सञ्चालन प्रक्रिया गर्न टाढाको "
-"फाइललाई अस्थायी फाइलमा प्रतिलिपि गरिनेछ । यो अस्थायी फाइल सञ्चालन पछि मेटिने छ ।</"
-"qt>"
-
-#: kgpgview.cpp:93
-msgid "Could not download file."
-msgstr "फाइल डाउनलोड गर्न सकेन ।"
-
-#: kgpgview.cpp:227
-msgid "Unable to read file."
-msgstr "फाइल पढ्न अक्षम ।"
-
-#: kgpgview.cpp:268
-#, fuzzy
-#| msgid ""
-#| "This file is a public key.\n"
-#| "Please use kgpg key management to import it."
-msgid ""
-"<qt>This file is a <b>public</b> key.\n"
-"Please use kgpg key management to import it.</qt>"
-msgstr ""
-"यो फाइल सार्वजनिक कुञ्जी हो ।\n"
-"कृपया यसलाई आयात गर्न kgpg कुञ्जी व्यवस्थापन प्रयोग गर्नुहोस् ।"
-
-#: kgpgview.cpp:274
-#, fuzzy
-#| msgid ""
-#| "This file is a private key.\n"
-#| "Please use kgpg key management to import it."
-msgid ""
-"<qt>This file is a <b>private</b> key.\n"
-"Please use kgpg key management to import it.</qt>"
-msgstr ""
-"यो फाइल निजी कुञ्जी हो ।\n"
-"कृपया यसलाई आयात गर्न kgpg कुञ्जी व्यवस्थापन प्रयोग गर्नुहोस् ।"
-
-#: kgpgview.cpp:328
-msgid "Encryption failed."
-msgstr "गुप्तिकरण असफल ।"
-
-#: kgpgview.cpp:365
-msgid "Signing not possible: bad passphrase or missing key"
-msgstr "साइनिङ सम्भव छैन: खराब पासफ्रेज वा हराइरहेको कुञ्जी"
-
-#: kgpgview.cpp:396
-msgid "Import key in your list"
-msgstr "तपाईँको सूचीमा कुञ्जी आयात गर्नुहोस्"
-
-#: kgpgview.cpp:399
-msgid "Do &Not Import"
-msgstr "आयात नगर्नुहोस्"
-
-#: kgpgview.cpp:400
-msgid "Will not import this key in your list"
-msgstr "यो कुञ्जी तपाईँको सूचीमा आयत हुने छैन"
-
-#: kgpgview.cpp:402
-msgid "Missing Key"
-msgstr "हराइरहेको कुञ्जी"
-
-#: kgpgview.cpp:426
-msgid "S&ign/Verify"
-msgstr "साइन/रूजु गर्नुहोस्"
-
-#: kgpgview.cpp:427
-msgid "En&crypt"
-msgstr "गुप्तिकरण गर्नुहोस्"
-
-#: kgpgview.cpp:428
-msgid "&Decrypt"
-msgstr "गुप्तिकरण उल्टाउनुहोस्"
 
 #: main.cpp:28
 #, fuzzy
@@ -2757,6 +2488,12 @@ msgid "Key Manager"
 msgstr "कुञ्जी प्रबन्धक"
 
 #. i18n: tag string
+#. i18n: file conf_misc.ui line 135
+#: rc.cpp:150 editor/kgpgeditor.cpp:453
+msgid "Editor"
+msgstr "सम्पादक"
+
+#. i18n: tag string
 #. i18n: file conf_misc.ui line 145
 #: rc.cpp:153
 msgid "Konqueror Service Menus"
@@ -2950,6 +2687,24 @@ msgstr "सम्पादक फन्ट"
 #: rc.cpp:244
 msgid "Available Trusted Keys"
 msgstr "उपलब्ध विश्वासिलो कुञ्जी"
+
+#. i18n: tag string
+#. i18n: file groupedit.ui line 51
+#. i18n: tag string
+#. i18n: file groupedit.ui line 135
+#: rc.cpp:247 rc.cpp:259 model/kgpgitemmodel.cpp:269
+msgid "Name"
+msgstr "नाम"
+
+#. i18n: tag string
+#. i18n: file groupedit.ui line 56
+#. i18n: tag string
+#. i18n: file groupedit.ui line 140
+#. i18n: tag string
+#. i18n: file keyexport.ui line 34
+#: rc.cpp:250 rc.cpp:262 rc.cpp:268 model/kgpgitemmodel.cpp:270
+msgid "Email"
+msgstr "इमेल"
 
 #. i18n: tag string
 #. i18n: file groupedit.ui line 61
@@ -4097,6 +3852,261 @@ msgstr "अज्ञात"
 msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "असीमित"
+
+#: editor/kgpgeditor.cpp:70 editor/kgpgeditor.cpp:194
+#: editor/kgpgeditor.cpp:669 editor/kgpgeditor.cpp:695
+msgid "Untitled"
+msgstr "शीर्षक नभएको"
+
+#: editor/kgpgeditor.cpp:158
+msgid "&Encrypt File..."
+msgstr "फाइल गुप्तिकरण गर्नुहोस्..."
+
+#: editor/kgpgeditor.cpp:162
+msgid "&Decrypt File..."
+msgstr "फाइल गुप्तिकरण उल्टाउनुहोस्..."
+
+#: editor/kgpgeditor.cpp:166
+msgid "&Open Key Manager"
+msgstr "कुञ्जी प्रबन्धक खोल्नुहोस्"
+
+#: editor/kgpgeditor.cpp:169
+msgid "&Generate Signature..."
+msgstr "हस्ताक्षर उत्पन्न गर्नुहोस्..."
+
+#: editor/kgpgeditor.cpp:172
+msgid "&Verify Signature..."
+msgstr "हस्ताक्षर रूजु गर्नुहोस्..."
+
+#: editor/kgpgeditor.cpp:175
+msgid "&Check MD5 Sum..."
+msgstr "MD5 योगफल जाँच गर्नुहोस्..."
+
+#: editor/kgpgeditor.cpp:179
+msgid "&Unicode (utf-8) Encoding"
+msgstr "युनिकोड (utf-8) सङ्केतन"
+
+#: editor/kgpgeditor.cpp:198
+#, kde-format
+msgid ""
+"The document \"%1\" has changed.\n"
+"Do you want to save it?"
+msgstr ""
+"\"%1\" कागजात परिवर्तन भएको छ । \n"
+" तपाईँ यसलाई बचत गर्न चाहानुहुन्छ?"
+
+#: editor/kgpgeditor.cpp:199
+msgid "Close the document"
+msgstr "कागजात बन्द गर्नुहोस्"
+
+#: editor/kgpgeditor.cpp:246
+msgid ""
+"The document could not been saved, as the selected encoding cannot encode "
+"every unicode character in it."
+msgstr ""
+"चयन गरिएको सङ्केतनले यसमा प्रत्येक युनिकोड क्यारेक्टर सङ्केतन गर्न नसके जस्तै कागजात बचत गर्न "
+"सकेन ।"
+
+#: editor/kgpgeditor.cpp:255 editor/kgpgeditor.cpp:274
+msgid ""
+"The document could not be saved, please check your permissions and disk "
+"space."
+msgstr "कागजात बचत गर्न सकेन, कृपया तपाईँको अनुमति र डिस्क खाली स्थान जाँच गर्नुहोस् ।"
+
+#: editor/kgpgeditor.cpp:299 editor/kgpgeditor.cpp:309
+#, kde-format
+msgid "Overwrite existing file %1?"
+msgstr "अवस्थित %1 फाइल अधिलेखन गर्नुहुन्छ ?"
+
+#: editor/kgpgeditor.cpp:420 editor/kgpgeditor.cpp:428
+#: editor/kgpgeditor.cpp:565 editor/kgpgeditor.cpp:606
+#: editor/kgpgeditor.cpp:639
+msgid "*|All Files"
+msgstr "*|सबै फाइल"
+
+#: editor/kgpgeditor.cpp:420
+msgid "Open File to Encode"
+msgstr "सङ्केतन गर्न फाइल खोल्नुहोस्"
+
+#: editor/kgpgeditor.cpp:428
+msgid "Open File to Decode"
+msgstr "डिकोड गर्न फाइल खोल्नुहोस्"
+
+#: editor/kgpgeditor.cpp:442
+msgid "Decrypt File To"
+msgstr "यसमा फाइल गुप्तिकरण उल्टाउनुहोस्"
+
+#: editor/kgpgeditor.cpp:565
+msgid "Open File to Sign"
+msgstr "साइन गर्न फाइल खोल्नुहोस्"
+
+#: editor/kgpgeditor.cpp:606 editor/kgpgeditor.cpp:639
+msgid "Open File to Verify"
+msgstr "रूजु गर्न फाइल खोल्नुहोस्"
+
+#: editor/kgpgmd5widget.cpp:28
+msgid "MD5 Checksum"
+msgstr "MD5 चेकसम"
+
+#: editor/kgpgmd5widget.cpp:31
+msgid "Compare MD5 with Clipboard"
+msgstr "MD5 लाई क्लिपबोर्डसँग तुलना गर्नुहोस्"
+
+#: editor/kgpgmd5widget.cpp:46
+#, kde-format
+msgid "MD5 sum for <b>%1</b> is:"
+msgstr "<b>%1</b> का लागि MD5 योगफल:"
+
+#: editor/kgpgmd5widget.cpp:59
+msgid "<b>Unknown status</b>"
+msgstr "<b>अज्ञात वस्तुस्थिति</b>"
+
+#: editor/kgpgmd5widget.cpp:84
+msgid "Clipboard content is not a MD5 sum."
+msgstr "क्लिपबोर्ड सामग्री MD5 योगफल होइन ।"
+
+#: editor/kgpgmd5widget.cpp:88
+msgid "<b>Correct checksum</b>, file is ok."
+msgstr "<b>चेकसम सुधार गर्नुहोस्</b>, फाइल ठीक छ ।"
+
+#: editor/kgpgmd5widget.cpp:94
+msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
+msgstr ""
+
+#: editor/kgpgview.cpp:88
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
+#| "a temporary file to process requested operation. This temporary file will "
+#| "be deleted after operation.</qt>"
+msgid ""
+"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
+"temporary file to process requested operation. This temporary file will be "
+"deleted after operation.</qt>"
+msgstr ""
+"<qt><b>टाढाको फाइल </b>छोडियो ।<br>अनुरोध गरिएको सञ्चालन प्रक्रिया गर्न टाढाको "
+"फाइललाई अस्थायी फाइलमा प्रतिलिपि गरिनेछ । यो अस्थायी फाइल सञ्चालन पछि मेटिने छ ।</"
+"qt>"
+
+#: editor/kgpgview.cpp:93
+msgid "Could not download file."
+msgstr "फाइल डाउनलोड गर्न सकेन ।"
+
+#: editor/kgpgview.cpp:227
+msgid "Unable to read file."
+msgstr "फाइल पढ्न अक्षम ।"
+
+#: editor/kgpgview.cpp:268
+#, fuzzy
+#| msgid ""
+#| "This file is a public key.\n"
+#| "Please use kgpg key management to import it."
+msgid ""
+"<qt>This file is a <b>public</b> key.\n"
+"Please use kgpg key management to import it.</qt>"
+msgstr ""
+"यो फाइल सार्वजनिक कुञ्जी हो ।\n"
+"कृपया यसलाई आयात गर्न kgpg कुञ्जी व्यवस्थापन प्रयोग गर्नुहोस् ।"
+
+#: editor/kgpgview.cpp:274
+#, fuzzy
+#| msgid ""
+#| "This file is a private key.\n"
+#| "Please use kgpg key management to import it."
+msgid ""
+"<qt>This file is a <b>private</b> key.\n"
+"Please use kgpg key management to import it.</qt>"
+msgstr ""
+"यो फाइल निजी कुञ्जी हो ।\n"
+"कृपया यसलाई आयात गर्न kgpg कुञ्जी व्यवस्थापन प्रयोग गर्नुहोस् ।"
+
+#: editor/kgpgview.cpp:328
+msgid "Encryption failed."
+msgstr "गुप्तिकरण असफल ।"
+
+#: editor/kgpgview.cpp:365
+msgid "Signing not possible: bad passphrase or missing key"
+msgstr "साइनिङ सम्भव छैन: खराब पासफ्रेज वा हराइरहेको कुञ्जी"
+
+#: editor/kgpgview.cpp:396
+msgid "Import key in your list"
+msgstr "तपाईँको सूचीमा कुञ्जी आयात गर्नुहोस्"
+
+#: editor/kgpgview.cpp:399
+msgid "Do &Not Import"
+msgstr "आयात नगर्नुहोस्"
+
+#: editor/kgpgview.cpp:400
+msgid "Will not import this key in your list"
+msgstr "यो कुञ्जी तपाईँको सूचीमा आयत हुने छैन"
+
+#: editor/kgpgview.cpp:402
+msgid "Missing Key"
+msgstr "हराइरहेको कुञ्जी"
+
+#: editor/kgpgview.cpp:426
+msgid "S&ign/Verify"
+msgstr "साइन/रूजु गर्नुहोस्"
+
+#: editor/kgpgview.cpp:427
+msgid "En&crypt"
+msgstr "गुप्तिकरण गर्नुहोस्"
+
+#: editor/kgpgview.cpp:428
+msgid "&Decrypt"
+msgstr "गुप्तिकरण उल्टाउनुहोस्"
+
+#: model/kgpgitemmodel.cpp:193
+#, fuzzy, kde-format
+#| msgid "Sub Key"
+msgid "1 Key"
+msgid_plural "%1 Keys"
+msgstr[0] "सहायक कुञ्जी"
+msgstr[1] "सहायक कुञ्जी"
+
+#: model/kgpgitemmodel.cpp:198
+#, fuzzy, kde-format
+#| msgid "Key Group"
+msgid "1 Group"
+msgid_plural "%1 Groups"
+msgstr[0] "कुञ्जी समूह"
+msgstr[1] "कुञ्जी समूह"
+
+#: model/kgpgitemmodel.cpp:275
+msgid "ID"
+msgstr "आईडी"
+
+#: model/kgpgitemnode.cpp:51
+#, kde-format
+msgctxt "Name of uid (comment)"
+msgid "%1 (%2)"
+msgstr ""
+
+#: model/kgpgitemnode.cpp:287 model/kgpgitemnode.cpp:315
+#: model/kgpgitemnode.cpp:386 model/kgpgitemnode.cpp:418
+#, fuzzy, kde-format
+#| msgid "Signature"
+msgid "1 signature"
+msgid_plural "%1 signatures"
+msgstr[0] "हस्ताक्षर"
+msgstr[1] "हस्ताक्षर"
+
+#: model/kgpgitemnode.cpp:374
+#, kde-format
+msgid "%1 subkey"
+msgstr "%1 सहायक कुञ्जी"
+
+#: model/kgpgitemnode.cpp:400
+msgid "Photo id"
+msgstr "फोटो आईडी"
+
+#: model/kgpgitemnode.cpp:451
+#, fuzzy, kde-format
+#| msgid "%1 subkey"
+msgid "1 key"
+msgid_plural "%1 keys"
+msgstr[0] "%1 सहायक कुञ्जी"
+msgstr[1] "%1 सहायक कुञ्जी"
 
 #~ msgid "Could not change expiration"
 #~ msgstr "म्याद समाप्ति परिवर्तन गर्न सकेन"

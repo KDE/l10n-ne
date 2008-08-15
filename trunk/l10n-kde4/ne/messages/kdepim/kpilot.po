@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-12 08:38+0200\n"
+"POT-Creation-Date: 2008-08-15 08:29+0200\n"
 "PO-Revision-Date: 2007-09-17 17:20+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -130,8 +130,8 @@ msgstr "HotSync समाप्त भयो ।"
 msgid "The conduit %1 could not be executed."
 msgstr "कन्ड्युट %1 कार्यान्वयन गर्न सक्दैन ।"
 
-#: lib/syncAction.cc:234 kpilot/config_dialog.cc:298 kpilot/kpilot.cc:261
-#: kpilot/kpilot.cc:297 kpilot/config_pages.cc:217
+#: lib/syncAction.cc:234 kpilot/config_dialog.cc:298 kpilot/kpilot.cc:258
+#: kpilot/kpilot.cc:285 kpilot/config_pages.cc:217
 msgid "HotSync"
 msgstr "HotSync"
 
@@ -139,11 +139,11 @@ msgstr "HotSync"
 msgid "Full Synchronization"
 msgstr "पूर्ण समक्रमण"
 
-#: lib/syncAction.cc:236
+#: lib/syncAction.cc:236 kpilot/kpilot.cc:314
 msgid "Copy PC to Handheld"
 msgstr "PC लाई ह्यान्डहेल्डमा प्रतिलिपि गर्नुहोस्"
 
-#: lib/syncAction.cc:237 kpilot/kpilot.cc:342
+#: lib/syncAction.cc:237 kpilot/kpilot.cc:323
 msgid "Copy Handheld to PC"
 msgstr "ह्यान्डहेल्डलाई PC मा प्रतिलिपि गर्नुहोस्"
 
@@ -1270,7 +1270,6 @@ msgstr ""
 
 #: conduits/docconduit/kpalmdoc_dlg.cc:458
 #: conduits/docconduit/kpalmdoc_dlg.cc:503 kpilot/logWidget.cc:247
-#: kpilot/addressWidget.cc:385
 msgid "Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
@@ -1826,26 +1825,26 @@ msgctxt ""
 msgid " (once)"
 msgstr " (एक पटक)"
 
-#: kpilot/pilotDaemon.cc:690
+#: kpilot/pilotDaemon.cc:693
 #, kde-format
 msgid "Next HotSync will be: %1. "
 msgstr "पछिल्लो HotSync यो हुन्छ: %1 "
 
-#: kpilot/pilotDaemon.cc:691 kpilot/kpilot.cc:395 kpilot/kpilot.cc:403
-#: kpilot/kpilot.cc:411 kpilot/kpilot.cc:419 kpilot/kpilot.cc:427
-#: kpilot/kpilot.cc:435
+#: kpilot/pilotDaemon.cc:694 kpilot/kpilot.cc:399 kpilot/kpilot.cc:407
+#: kpilot/kpilot.cc:415 kpilot/kpilot.cc:423 kpilot/kpilot.cc:431
+#: kpilot/kpilot.cc:439
 msgid "Please press the HotSync button."
 msgstr "कृपया HotSync बटन थिच्नुहोस् ।"
 
-#: kpilot/pilotDaemon.cc:780 kpilot/kpilot.cc:276
+#: kpilot/pilotDaemon.cc:783 kpilot/kpilot.cc:264
 msgid "File Installer"
 msgstr "फाइल स्थापनाकर्ता"
 
-#: kpilot/pilotDaemon.cc:928
+#: kpilot/pilotDaemon.cc:931
 msgid "HotSync is disabled while the screen is locked."
 msgstr "पर्दामा ताल्चा लगाउदा HotSync अक्षम हुन्छ ।"
 
-#: kpilot/pilotDaemon.cc:933
+#: kpilot/pilotDaemon.cc:936
 msgid ""
 "HotSync is disabled because KPilot could not determine the state of the "
 "screen saver. You can disable this security feature by unchecking the 'do "
@@ -1856,22 +1855,22 @@ msgstr ""
 "कन्फिगरेसन संवादको HotSync पृष्ठमा ' स्क्रिनसेभर सक्रिय हुँदा समक्रमण नगर्नुहोस्' लाई चिनो "
 "हटाएर यो सुरक्षा सुविधा अक्षम पार्न सक्नुहुन्छ ।"
 
-#: kpilot/pilotDaemon.cc:1161 kpilot/pilotDaemon.cc:1162
+#: kpilot/pilotDaemon.cc:1164 kpilot/pilotDaemon.cc:1165
 #, fuzzy
 #| msgid "HotSync Completed.<br>"
 msgid "HotSync Completed.<br/>"
 msgstr "HotSync सम्पन्न ।<br>"
 
-#: kpilot/pilotDaemon.cc:1203
+#: kpilot/pilotDaemon.cc:1206
 #, kde-format
 msgid "Next sync is %1."
 msgstr "पछिल्लो समक्रमण %1 हो ।"
 
-#: kpilot/pilotDaemon.cc:1244
+#: kpilot/pilotDaemon.cc:1247
 msgid "KPilot Daemon"
 msgstr "केडीई पाइलट डेइमोन"
 
-#: kpilot/pilotDaemon.cc:1246 kpilot/kpilot.cc:748
+#: kpilot/pilotDaemon.cc:1249 kpilot/kpilot.cc:752
 #, fuzzy
 #| msgid ""
 #| "KPilot - HotSync software for KDE\n"
@@ -1881,25 +1880,21 @@ msgstr ""
 "केडीई पाइलट - केडीईका लागि HotSync सफ्टवेयर\n"
 "\n"
 
-#: kpilot/pilotDaemon.cc:1261 kpilot/kpilot.cc:762
+#: kpilot/pilotDaemon.cc:1264 kpilot/kpilot.cc:766
 msgid "Set debugging level"
 msgstr "डिबग स्तर सेट गर्नुहोस्"
 
-#: kpilot/pilotDaemon.cc:1263
+#: kpilot/pilotDaemon.cc:1266
 msgid "Device to try first"
 msgstr "पहिलो प्रयास गर्ने यन्त्र"
 
-#: kpilot/pilotDaemon.cc:1264
+#: kpilot/pilotDaemon.cc:1267
 msgid "Exit instead of complaining about bad configuration files"
 msgstr "गलत कन्फिगरेसन फाइलको बारेमा कम्प्लेन गर्नुको साटोमा बाहिरिनुहोस्"
 
-#: kpilot/pilotDaemon.cc:1265
+#: kpilot/pilotDaemon.cc:1268
 msgid "kpilotconfig"
 msgstr "kpilotconfig"
-
-#: kpilot/todoviewer_page.cc:36 kpilot/kpilot.cc:264
-msgid "To-do Viewer"
-msgstr "'गर्नु पर्ने' दृश्यकर्ता"
 
 #: kpilot/config_dialog_dbselection.cc:132
 msgid ""
@@ -2192,54 +2187,7 @@ msgstr ""
 "(प्रतिलिपि अधिकार) १९९८-२०००,२००१, डन पिलोन (प्रतिलिपि अधिकार) २०००-२००४, "
 "एड्रियान डे ग्रूट"
 
-#: kpilot/memoWidget.cc:220
-#, fuzzy
-#| msgid ""
-#| "Select the category of addresses\n"
-#| "to display here."
-msgid ""
-"Select the category of memos\n"
-"to display here."
-msgstr ""
-"यहाँ प्रर्दशन गर्ने\n"
-"ठेगाना पुस्तकको कोटि चयन गर्नुहोस् ।"
-
-#: kpilot/memoWidget.cc:223
-msgid "Memos:"
-msgstr "मेमो:"
-
-#: kpilot/memoWidget.cc:224 kpilot/todoWidget.cc:105
-#: kpilot/addressWidget.cc:184
-msgid "Category:"
-msgstr "कोटि:"
-
-#: kpilot/memoWidget.cc:235
-msgid ""
-"This list displays all the memos\n"
-"in the selected category. Click on\n"
-"one to display it to the right."
-msgstr ""
-"यो सूचीले चयन गरेको कोटिको\n"
-"सबै मेमो प्रर्दशन गर्दछ । यसलाई बायाँ देखाउन\n"
-"एउटामा क्लिक गर्नुहोस् ।"
-
-#: kpilot/memoWidget.cc:239
-msgid "Memo text:"
-msgstr "मेमो पाठ:"
-
-#: kpilot/memoWidget.cc:247
-msgid "The text of the selected memo appears here."
-msgstr "चयन गरेको मेमोको पाठ यहाँ प्रर्दशन हुन्छ ।"
-
-#: kpilot/memoWidget.cc:249
-msgid "Export Memo..."
-msgstr "मेमो निर्यात गर्नुहोस्..."
-
-#: kpilot/memoWidget.cc:254
-msgid "Write the selected memo to a file."
-msgstr "फाइलमा चयन गरेको मेमो लेख्नुहोस् ।"
-
-#: kpilot/dbviewerWidget.cc:67 kpilot/kpilot.cc:273
+#: kpilot/dbviewerWidget.cc:67 kpilot/kpilot.cc:261
 msgid "Generic DB Viewer"
 msgstr "जेनेरिक DB दृश्यकर्ता"
 
@@ -2298,22 +2246,6 @@ msgstr "सम्पादन गर्न तपाईँले रेकर्
 #: kpilot/dbviewerWidget.cc:390
 msgid "No Record Selected"
 msgstr "रेकर्ड चयन गरेको छैन"
-
-#: kpilot/todoWidget.cc:114
-msgid "<qt>Select the category of to-dos to display here.</qt>"
-msgstr "<qt>यहाँ प्रर्दशन गर्न 'गर्नु पर्ने' को कोटि चयन गर्नुहोस् ।</qt>"
-
-#: kpilot/todoWidget.cc:121
-msgid ""
-"<qt>This list displays all the to-dos in the selected category. Click on one "
-"to display it to the right.</qt>"
-msgstr ""
-"<qt>यो सूचीले चयन गरिएको कोटिमा सबै 'गर्नु पर्ने' प्रर्दशन गर्दछ । यसलाई दायाँ तिर "
-"देखाउन एउटामा क्लिक गर्नुहोस् ।</qt>"
-
-#: kpilot/todoWidget.cc:125
-msgid "To-do info:"
-msgstr "'गर्नु पर्ने' जानकारी:"
 
 #: kpilot/config_dialog_probe.cc:100
 msgid "Autodetecting Your Handheld"
@@ -2405,10 +2337,6 @@ msgstr " %1 मा जडान भएको यन्त्र फेला प
 #: kpilot/config_dialog_probe.cc:354
 msgid "Disconnected from all devices"
 msgstr "सबै यन्त्रबाट विच्छेदित"
-
-#: kpilot/memoviewer_page.cc:36 kpilot/kpilot.cc:270
-msgid "Memo Viewer"
-msgstr "मेमो दृश्यकर्ता"
 
 #: kpilot/fileInstallWidget.cc:205
 msgid "*.pdb *.prc|PalmOS Databases (*.pdb *.prc)"
@@ -2667,46 +2595,42 @@ msgstr "पूर्वावस्थामा ल्याउने अपू�
 msgid "Cannot restore file `%1'."
 msgstr " `%1' फाइल पूर्वावस्थामा ल्याउन सकिँदैन ।"
 
-#: kpilot/kpilot.cc:185
+#: kpilot/kpilot.cc:182
 msgid "Starting the KPilot daemon ..."
 msgstr "केडीई पाइलट डेइमन सुरु गर्दैछ ..."
 
-#: kpilot/kpilot.cc:195
+#: kpilot/kpilot.cc:192
 #, kde-format
 msgid ""
 "Could not start the KPilot daemon. The system error message was: &quot;%"
 "1&quot;"
 msgstr "केडीई पाइलट डेइमन सुरु गर्ने सकेन । प्रणाली त्रुटि यस्तो थियो: &quot;%1&quot;"
 
-#: kpilot/kpilot.cc:203
+#: kpilot/kpilot.cc:200
 #, fuzzy
 #| msgid "Daemon status is `%1'"
 msgid "Daemon started."
 msgstr "डेइमनको वस्तुस्थिति यस्तो छ  `%1'"
 
-#: kpilot/kpilot.cc:225
+#: kpilot/kpilot.cc:222
 msgid "not running"
 msgstr "चलिरहेको छैन"
 
-#: kpilot/kpilot.cc:225
+#: kpilot/kpilot.cc:222
 #, kde-format
 msgid "Daemon status is `%1'"
 msgstr "डेइमनको वस्तुस्थिति यस्तो छ  `%1'"
 
-#: kpilot/kpilot.cc:238
+#: kpilot/kpilot.cc:235
 #, kde-format
 msgid "Using character set %1 on the handheld."
 msgstr "ह्यान्डहेल्डमा  %1 क्यारेक्टर सेट प्रयोग गर्दैछ"
 
-#: kpilot/kpilot.cc:267 kpilot/addressviewer_page.cc:36
-msgid "Address Viewer"
-msgstr "ठेगाना दृश्यकर्ता"
-
-#: kpilot/kpilot.cc:302
+#: kpilot/kpilot.cc:290
 msgid "Select the kind of HotSync to perform next."
 msgstr "पछि गर्ने हटसिन्कको प्रकार चयन गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:303
+#: kpilot/kpilot.cc:291
 msgid ""
 "Select the kind of HotSync to perform next. This applies only to the next "
 "HotSync; to change the default, use the configuration dialog."
@@ -2714,63 +2638,58 @@ msgstr ""
 "पछि गर्ने हटसिन्कको प्रकार चयन गर्नुहोस् । यो केबल पछिल्लो हटसिन्कमा लागू गरिन्छ; "
 "पूर्वनिर्धारितलाई परिवर्तन गर्न, कन्फिगरेसन संवाद प्रयोग गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:311
+#: kpilot/kpilot.cc:299
 msgid "&HotSync"
 msgstr "हटसिन्क"
 
-#: kpilot/kpilot.cc:313
+#: kpilot/kpilot.cc:301
 msgid "Next HotSync will be normal HotSync."
 msgstr "पछिल्लो हटसिन्क सामान्य हटसिन्क हुनेछ ।"
 
-#: kpilot/kpilot.cc:314
+#: kpilot/kpilot.cc:302
 msgid "Tell the daemon that the next HotSync should be a normal HotSync."
 msgstr "पछिल्लो हटसिन्क सामान्य हटसिन्क हुनु पर्दछ भनेर डेइमनलाई भन्नुहोस् ।"
 
-#: kpilot/kpilot.cc:318
+#: kpilot/kpilot.cc:306
 msgid "Full&Sync"
 msgstr "पूरा समक्रमण"
 
-#: kpilot/kpilot.cc:320
+#: kpilot/kpilot.cc:308
 msgid "Next HotSync will be a FullSync."
 msgstr "पछिल्लो हटसिन्क पूरा समक्रमण हुनेछ ।"
 
-#: kpilot/kpilot.cc:321
+#: kpilot/kpilot.cc:309
 msgid ""
 "Tell the daemon that the next HotSync should be a FullSync (check data on "
 "both sides)."
 msgstr ""
 "पछिल्लो हटसिन्क पूरा समक्रमण हुनेछ भनेर डेइमनलाई भन्नुहोस् (दुबै तिर डेटा जाँच गर्नुहोस् ) ।"
 
-#: kpilot/kpilot.cc:326
-msgid "&Backup"
-msgstr "जगेडा"
+#: kpilot/kpilot.cc:316
+#, fuzzy
+#| msgid "Next sync will copy PC data to Handheld. "
+msgid "Next HotSync will copy PC to Handheld."
+msgstr "पछिल्लो समक्रमणले PC डेटालाई ह्यान्डहेल्डमा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:328 kpilot/kpilot.cc:344
-msgid "Next HotSync will be backup."
-msgstr "पछिल्लो हटसिन्क जगेडा हुनेछ ।"
-
-#: kpilot/kpilot.cc:329
+#: kpilot/kpilot.cc:317
+#, fuzzy
+#| msgid ""
+#| "Tell the daemon that the next HotSync should copy all data from the "
+#| "Handheld to the PC, overwriting entries on the PC."
 msgid ""
-"Tell the daemon that the next HotSync should back up the Handheld to the PC."
-msgstr "पछिल्लो हटसिन्कले ह्यान्डहेल्डलाई PC मा जगेडा गर्नेछ भनेर डेइमनलाई भन्नुहोस् ।"
-
-#: kpilot/kpilot.cc:334
-msgid "&Restore"
-msgstr "पूर्वावस्थामा ल्याउनुहोस्"
-
-#: kpilot/kpilot.cc:336
-msgid "Next HotSync will be restore."
-msgstr "पछिल्लो हटसिन्क पूर्वावस्थामा ल्याइने छ ।"
-
-#: kpilot/kpilot.cc:337
-msgid ""
-"Tell the daemon that the next HotSync should restore the Handheld from data "
-"on the PC."
+"Tell the daemon that the next HotSync should copy all data from the PC to "
+"the Handheld, overwriting entries on the Handheld."
 msgstr ""
-"पछिल्लो हटसिन्कले डेटाबाट ह्यान्डहेल्डलाई PC मा पूर्वावस्थामा ल्याउनु पर्छ भनेर डेइमनलाई "
-"भन्नुहोस् ।"
+"पछिल्लो हटसिन्कले ह्यान्डहेल्डबाट सबै डेटा PC मा प्रतिलिपि गर्नु पर्दछ भनेर डेइमनलाई "
+"भन्नुहोस्, PC मा प्रविष्टिहरू अधिलेखन गर्दैछ ।"
 
-#: kpilot/kpilot.cc:345
+#: kpilot/kpilot.cc:325
+#, fuzzy
+#| msgid "Next sync will copy Handheld data to PC. "
+msgid "Next HotSync will copy Handheld to PC."
+msgstr "पछिल्लो समक्रमणले ह्यान्डहेल्ड डेटालाई PC मा प्रतिलिपि गर्नेछ । "
+
+#: kpilot/kpilot.cc:326
 msgid ""
 "Tell the daemon that the next HotSync should copy all data from the Handheld "
 "to the PC, overwriting entries on the PC."
@@ -2778,85 +2697,114 @@ msgstr ""
 "पछिल्लो हटसिन्कले ह्यान्डहेल्डबाट सबै डेटा PC मा प्रतिलिपि गर्नु पर्दछ भनेर डेइमनलाई "
 "भन्नुहोस्, PC मा प्रविष्टिहरू अधिलेखन गर्दैछ ।"
 
-#: kpilot/kpilot.cc:351
+#: kpilot/kpilot.cc:339
+msgid "&Backup"
+msgstr "जगेडा"
+
+#: kpilot/kpilot.cc:341
+msgid "Next HotSync will be backup."
+msgstr "पछिल्लो हटसिन्क जगेडा हुनेछ ।"
+
+#: kpilot/kpilot.cc:342
+msgid ""
+"Tell the daemon that the next HotSync should back up the Handheld to the PC."
+msgstr "पछिल्लो हटसिन्कले ह्यान्डहेल्डलाई PC मा जगेडा गर्नेछ भनेर डेइमनलाई भन्नुहोस् ।"
+
+#: kpilot/kpilot.cc:347
+msgid "&Restore"
+msgstr "पूर्वावस्थामा ल्याउनुहोस्"
+
+#: kpilot/kpilot.cc:349
+msgid "Next HotSync will be restore."
+msgstr "पछिल्लो हटसिन्क पूर्वावस्थामा ल्याइने छ ।"
+
+#: kpilot/kpilot.cc:350
+msgid ""
+"Tell the daemon that the next HotSync should restore the Handheld from data "
+"on the PC."
+msgstr ""
+"पछिल्लो हटसिन्कले डेटाबाट ह्यान्डहेल्डलाई PC मा पूर्वावस्थामा ल्याउनु पर्छ भनेर डेइमनलाई "
+"भन्नुहोस् ।"
+
+#: kpilot/kpilot.cc:355
 msgid "Rese&t Link"
 msgstr "लिङ्क रिसेट गर्नुहोस्"
 
-#: kpilot/kpilot.cc:353
+#: kpilot/kpilot.cc:357
 msgid "Reset the device connection."
 msgstr "यन्त्र जडान रिसेट गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:354
+#: kpilot/kpilot.cc:358
 msgid "Try to reset the daemon and its connection to the Handheld."
 msgstr "डेइमन र यसको जडान ह्यान्डहेल्डमा रिसेट गर्न प्रयास गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:359
+#: kpilot/kpilot.cc:363
 msgid "Quit KPilot, (and stop the daemon if configured that way)."
 msgstr "केडीई पाइलट अन्त्य गर्नुहोस्, (र कन्फिगरेसन भैरहेको छ भने रोक्नुहोस्) ।"
 
-#: kpilot/kpilot.cc:394
+#: kpilot/kpilot.cc:398
 msgid "Next sync will be a backup. "
 msgstr "पछिल्लो समक्रमणलाई जगेडा गरिने छ । "
 
-#: kpilot/kpilot.cc:402
+#: kpilot/kpilot.cc:406
 msgid "Next sync will restore the Pilot from backup. "
 msgstr "पछिल्लो समक्रमणले जगेडाबाट पाइलट पूर्वावस्थामा ल्याउने छ । "
 
-#: kpilot/kpilot.cc:410
+#: kpilot/kpilot.cc:414
 msgid "Next sync will be a regular HotSync. "
 msgstr "पछिल्लो समक्रमण नियमित हटसिन्क हुनेछ । "
 
-#: kpilot/kpilot.cc:418
+#: kpilot/kpilot.cc:422
 msgid "Next sync will be a Full Sync. "
 msgstr "पछिल्लो समक्रमण पूरा समक्रमण हुनेछ । "
 
-#: kpilot/kpilot.cc:426
+#: kpilot/kpilot.cc:430
 msgid "Next sync will copy Handheld data to PC. "
 msgstr "पछिल्लो समक्रमणले ह्यान्डहेल्ड डेटालाई PC मा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:434
+#: kpilot/kpilot.cc:438
 msgid "Next sync will copy PC data to Handheld. "
 msgstr "पछिल्लो समक्रमणले PC डेटालाई ह्यान्डहेल्डमा प्रतिलिपि गर्नेछ । "
 
-#: kpilot/kpilot.cc:460
+#: kpilot/kpilot.cc:464
 msgid "The daemon has exited."
 msgstr ""
 
-#: kpilot/kpilot.cc:461
+#: kpilot/kpilot.cc:465
 #, fuzzy
 #| msgid "No further HotSyncs are possible."
 msgid "No further HotSyncs are possible."
 msgstr "अब हटसिन्क संभव छैन ।"
 
-#: kpilot/kpilot.cc:462
+#: kpilot/kpilot.cc:466
 msgid "Restart the daemon to HotSync again."
 msgstr ""
 
-#: kpilot/kpilot.cc:559
+#: kpilot/kpilot.cc:563
 #, fuzzy
 #| msgid "Reset the device connection."
 msgid "Resetting device connection ..."
 msgstr "यन्त्र जडान रिसेट गर्नुहोस् ।"
 
-#: kpilot/kpilot.cc:580
+#: kpilot/kpilot.cc:584
 #, fuzzy
 #| msgid "Configuration Wizard"
 msgid "Configuration"
 msgstr "कन्फिगरेसन विजार्ड"
 
-#: kpilot/kpilot.cc:704
+#: kpilot/kpilot.cc:708
 msgid "Cannot configure KPilot right now (KPilot's UI is already busy)."
 msgstr "केडीई पाइलट अहिले कन्फिगर गर्न सकिँदैन (केडीई पाइलटको UI पहिले नै व्यस्त छ) ।"
 
-#: kpilot/kpilot.cc:746
+#: kpilot/kpilot.cc:750
 msgid "KPilot"
 msgstr "केडीई पाइलट"
 
-#: kpilot/kpilot.cc:760
+#: kpilot/kpilot.cc:764
 msgid "Setup the Pilot device, conduits and other parameters"
 msgstr "पाइलट यन्त्र, कन्ड्युट र अन्य परिमितिहरू सेटअप गर्नुहोस्"
 
-#: kpilot/kpilot.cc:764
+#: kpilot/kpilot.cc:768
 #, fuzzy
 #| msgid "KPilot"
 msgid "kpilot"
@@ -2966,69 +2914,6 @@ msgstr "केबल सूचीका लागि उपयोगि हु�
 msgid "Conduit Actions"
 msgstr "कन्ड्युट कार्य"
 
-#: kpilot/addressWidget.cc:182
-msgid "<qt>Select the category of addresses to display here.</qt>"
-msgstr "<qt>यहाँ प्रर्दशन गर्ने ठेगाना पुस्तकको कोटि चयन गर्नुहोस् ।</qt>"
-
-#: kpilot/addressWidget.cc:194
-msgid ""
-"<qt>This list displays all the addresses in the selected category. Click on "
-"one to display it to the right.</qt>"
-msgstr ""
-"<qt>यस सूचीले चयन गरेको कोटिमा सबै ठेगाना पुस्तक प्रर्दशन गर्दछ । दायाँ तिर देखाउन कुनै "
-"एउटालाई क्लिक गर्नुहोस् ।</qt>"
-
-#: kpilot/addressWidget.cc:198
-msgid "Address info:"
-msgstr "ठेगाना जानकारी:"
-
-#: kpilot/addressWidget.cc:205
-#, fuzzy
-#| msgid "Export Memo..."
-msgctxt "Export addresses to file"
-msgid "Export..."
-msgstr "मेमो निर्यात गर्नुहोस्..."
-
-#: kpilot/addressWidget.cc:209
-#, fuzzy
-#| msgid ""
-#| "<qt>This list displays all the addresses in the selected category. Click "
-#| "on one to display it to the right.</qt>"
-msgid "<qt>Export all addresses in the selected category to CSV format.</qt>"
-msgstr ""
-"<qt>यस सूचीले चयन गरेको कोटिमा सबै ठेगाना पुस्तक प्रर्दशन गर्दछ । दायाँ तिर देखाउन कुनै "
-"एउटालाई क्लिक गर्नुहोस् ।</qt>"
-
-#: kpilot/addressWidget.cc:308
-#, fuzzy
-#| msgid "[unknown]"
-msgctxt "The title is inknown."
-msgid "[unknown]"
-msgstr "[अज्ञात]"
-
-#: kpilot/addressWidget.cc:366
-msgid "Export All Addresses"
-msgstr "सबै ठेगानाहरू निर्यात गर्नुहोस्"
-
-#: kpilot/addressWidget.cc:367
-#, kde-format
-msgid "Export Address Category %1"
-msgstr "ठेगाना कोटि %1 निर्यात गर्नुहोस्"
-
-#: kpilot/addressWidget.cc:383
-#, kde-format
-msgid "The file <i>%1</i> exists. Overwrite?"
-msgstr "फाइल <i>%1</i> अवस्थित छ । अधिलेखन गर्नुहुन्छ ?"
-
-#: kpilot/addressWidget.cc:384
-msgid "Overwrite File?"
-msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
-
-#: kpilot/addressWidget.cc:395
-#, kde-format
-msgid "The file <i>%1</i> could not be opened for writing."
-msgstr "लेख्नका लागि फाइल <i>%1</i> खोल्न सकेन ।"
-
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -3056,6 +2941,116 @@ msgstr "केडीई पाइलटका लागि VCal कन्ड्�
 #| msgid "Conduits"
 msgid "Contacts"
 msgstr "कन्ड्युट"
+
+#~ msgid "To-do Viewer"
+#~ msgstr "'गर्नु पर्ने' दृश्यकर्ता"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the category of addresses\n"
+#~| "to display here."
+#~ msgid ""
+#~ "Select the category of memos\n"
+#~ "to display here."
+#~ msgstr ""
+#~ "यहाँ प्रर्दशन गर्ने\n"
+#~ "ठेगाना पुस्तकको कोटि चयन गर्नुहोस् ।"
+
+#~ msgid "Memos:"
+#~ msgstr "मेमो:"
+
+#~ msgid "Category:"
+#~ msgstr "कोटि:"
+
+#~ msgid ""
+#~ "This list displays all the memos\n"
+#~ "in the selected category. Click on\n"
+#~ "one to display it to the right."
+#~ msgstr ""
+#~ "यो सूचीले चयन गरेको कोटिको\n"
+#~ "सबै मेमो प्रर्दशन गर्दछ । यसलाई बायाँ देखाउन\n"
+#~ "एउटामा क्लिक गर्नुहोस् ।"
+
+#~ msgid "Memo text:"
+#~ msgstr "मेमो पाठ:"
+
+#~ msgid "The text of the selected memo appears here."
+#~ msgstr "चयन गरेको मेमोको पाठ यहाँ प्रर्दशन हुन्छ ।"
+
+#~ msgid "Export Memo..."
+#~ msgstr "मेमो निर्यात गर्नुहोस्..."
+
+#~ msgid "Write the selected memo to a file."
+#~ msgstr "फाइलमा चयन गरेको मेमो लेख्नुहोस् ।"
+
+#~ msgid "<qt>Select the category of to-dos to display here.</qt>"
+#~ msgstr "<qt>यहाँ प्रर्दशन गर्न 'गर्नु पर्ने' को कोटि चयन गर्नुहोस् ।</qt>"
+
+#~ msgid ""
+#~ "<qt>This list displays all the to-dos in the selected category. Click on "
+#~ "one to display it to the right.</qt>"
+#~ msgstr ""
+#~ "<qt>यो सूचीले चयन गरिएको कोटिमा सबै 'गर्नु पर्ने' प्रर्दशन गर्दछ । यसलाई दायाँ तिर "
+#~ "देखाउन एउटामा क्लिक गर्नुहोस् ।</qt>"
+
+#~ msgid "To-do info:"
+#~ msgstr "'गर्नु पर्ने' जानकारी:"
+
+#~ msgid "Memo Viewer"
+#~ msgstr "मेमो दृश्यकर्ता"
+
+#~ msgid "Address Viewer"
+#~ msgstr "ठेगाना दृश्यकर्ता"
+
+#~ msgid "<qt>Select the category of addresses to display here.</qt>"
+#~ msgstr "<qt>यहाँ प्रर्दशन गर्ने ठेगाना पुस्तकको कोटि चयन गर्नुहोस् ।</qt>"
+
+#~ msgid ""
+#~ "<qt>This list displays all the addresses in the selected category. Click "
+#~ "on one to display it to the right.</qt>"
+#~ msgstr ""
+#~ "<qt>यस सूचीले चयन गरेको कोटिमा सबै ठेगाना पुस्तक प्रर्दशन गर्दछ । दायाँ तिर देखाउन कुनै "
+#~ "एउटालाई क्लिक गर्नुहोस् ।</qt>"
+
+#~ msgid "Address info:"
+#~ msgstr "ठेगाना जानकारी:"
+
+#, fuzzy
+#~| msgid "Export Memo..."
+#~ msgctxt "Export addresses to file"
+#~ msgid "Export..."
+#~ msgstr "मेमो निर्यात गर्नुहोस्..."
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>This list displays all the addresses in the selected category. Click "
+#~| "on one to display it to the right.</qt>"
+#~ msgid ""
+#~ "<qt>Export all addresses in the selected category to CSV format.</qt>"
+#~ msgstr ""
+#~ "<qt>यस सूचीले चयन गरेको कोटिमा सबै ठेगाना पुस्तक प्रर्दशन गर्दछ । दायाँ तिर देखाउन कुनै "
+#~ "एउटालाई क्लिक गर्नुहोस् ।</qt>"
+
+#, fuzzy
+#~| msgid "[unknown]"
+#~ msgctxt "The title is inknown."
+#~ msgid "[unknown]"
+#~ msgstr "[अज्ञात]"
+
+#~ msgid "Export All Addresses"
+#~ msgstr "सबै ठेगानाहरू निर्यात गर्नुहोस्"
+
+#~ msgid "Export Address Category %1"
+#~ msgstr "ठेगाना कोटि %1 निर्यात गर्नुहोस्"
+
+#~ msgid "The file <i>%1</i> exists. Overwrite?"
+#~ msgstr "फाइल <i>%1</i> अवस्थित छ । अधिलेखन गर्नुहुन्छ ?"
+
+#~ msgid "Overwrite File?"
+#~ msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
+
+#~ msgid "The file <i>%1</i> could not be opened for writing."
+#~ msgstr "लेख्नका लागि फाइल <i>%1</i> खोल्न सकेन ।"
 
 #~ msgid "Calendar"
 #~ msgstr "क्यालेन्डर"
