@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-27 09:44+0200\n"
+"POT-Creation-Date: 2008-08-28 09:42+0200\n"
 "PO-Revision-Date: 2007-09-07 10:35+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: src/old/feedlistview.cpp:280 src/akregator_part.cpp:306
+#: src/old/feedlistview.cpp:280 src/akregator_part.cpp:315
 #: src/subscriptionlistmodel.cpp:218
 #: plugins/onlinesync/ui/configurationwidget.cpp:21
 msgid "Feeds"
@@ -428,44 +428,44 @@ msgstr "टिप्पणी"
 msgid "Complete Story"
 msgstr "पूर्ण कथा"
 
-#: src/akregator_part.cpp:130
+#: src/akregator_part.cpp:131
 #, kde-format
 msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
 msgstr "भण्डारण ब्याकइन्ड प्लगइन \"%1\" लोड गर्न असमर्थ । फिड सङ्ग्रह गरिएको छैन ।"
 
-#: src/akregator_part.cpp:130
+#: src/akregator_part.cpp:131
 msgid "Plugin error"
 msgstr "प्लगइन त्रुटि"
 
-#: src/akregator_part.cpp:317
+#: src/akregator_part.cpp:326
 msgid "Akregator News"
 msgstr "एक्रिगेटर समाचार"
 
-#: src/akregator_part.cpp:322
+#: src/akregator_part.cpp:331
 msgid "Akregator Blog"
 msgstr "एक्रिगेटर ब्लग"
 
-#: src/akregator_part.cpp:327
+#: src/akregator_part.cpp:336
 msgid "KDE Dot News"
 msgstr "केडीई डट समाचार"
 
-#: src/akregator_part.cpp:332
+#: src/akregator_part.cpp:341
 msgid "Planet KDE"
 msgstr "प्लानेट केडीई"
 
-#: src/akregator_part.cpp:337
+#: src/akregator_part.cpp:346
 msgid "KDE Apps"
 msgstr "केडीई एप्स"
 
-#: src/akregator_part.cpp:342
+#: src/akregator_part.cpp:351
 msgid "KDE Look"
 msgstr "केडीई दृश्य"
 
-#: src/akregator_part.cpp:351
+#: src/akregator_part.cpp:360
 msgid "Opening Feed List..."
 msgstr "फिड सूची खोल्दैछ..."
 
-#: src/akregator_part.cpp:386
+#: src/akregator_part.cpp:394
 #, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). A backup was created:"
@@ -474,38 +474,69 @@ msgstr ""
 "<qt>मानक फिड सूची बिग्रिएको छ (अवैध XML) । जगेडा सिर्जना गरिएको थियो:<p><b>%1</"
 "b></p></qt>"
 
-#: src/akregator_part.cpp:386
+#: src/akregator_part.cpp:394 src/akregator_part.cpp:396
 msgid "XML Parsing Error"
 msgstr "XML पद वर्णन गर्दा त्रुटि"
 
-#: src/akregator_part.cpp:401
-#, kde-format
+#: src/akregator_part.cpp:396
+#, fuzzy
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (invalid XML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
 msgid ""
-"<qt>The standard feed list is corrupted (no valid OPML). A backup was "
-"created:<p><b>%1</b></p></qt>"
+"<qt>The standard feed list is corrupted (invalid XML). Could not create a "
+"backup!</p></qt>"
+msgstr ""
+"<qt>मानक फिड सूची बिग्रिएको छ (अवैध XML) । जगेडा सिर्जना गरिएको थियो:<p><b>%1</"
+"b></p></qt>"
+
+#: src/akregator_part.cpp:410
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (no valid OPML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
+msgid ""
+"<qt>The standard feed list is corrupted (no valid OPML). A backup of the "
+"previous list was created:<p><b>%1</b></p></qt>"
 msgstr ""
 "<qt>मानक फिड सूची बिग्रिएको छ (OPML वैध छैन) । जगेडा सिर्जना गरिएको थियो:<p><b>%1</"
 "b></p></qt>"
 
-#: src/akregator_part.cpp:401 src/akregator_part.cpp:511
+#: src/akregator_part.cpp:410 src/akregator_part.cpp:412
+#: src/akregator_part.cpp:518
 msgid "OPML Parsing Error"
 msgstr "OPML पद वर्णन गर्दा त्रुटि"
 
-#: src/akregator_part.cpp:440
-#, kde-format
-msgid "Access denied: cannot save feed list (%1)"
+#: src/akregator_part.cpp:412
+#, fuzzy
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (no valid OPML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
+msgid ""
+"<qt>The standard feed list is corrupted (no valid OPML). Could not create a "
+"backup!></p></qt>"
+msgstr ""
+"<qt>मानक फिड सूची बिग्रिएको छ (OPML वैध छैन) । जगेडा सिर्जना गरिएको थियो:<p><b>%1</"
+"b></p></qt>"
+
+#: src/akregator_part.cpp:459
+#, fuzzy, kde-format
+#| msgid "Access denied: cannot save feed list (%1)"
+msgid ""
+"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
+"permissions."
 msgstr "पहुँच अस्वीकृत: फिड सूची (%1) बचत गर्न सकिँदैन"
 
-#: src/akregator_part.cpp:440
+#: src/akregator_part.cpp:460
 msgid "Write error"
 msgstr "त्रुटि लेख्नुहोस्"
 
-#: src/akregator_part.cpp:511
+#: src/akregator_part.cpp:518
 #, kde-format
 msgid "Could not import the file %1 (no valid OPML)"
 msgstr "फाइल %1 आयात गर्न सकेन (OPML वैध छैन)"
 
-#: src/akregator_part.cpp:514
+#: src/akregator_part.cpp:521
 #, kde-format
 msgid ""
 "The file %1 could not be read, check if it exists or if it is readable for "
@@ -514,29 +545,26 @@ msgstr ""
 "फाइल %1 पढ्न सक्दैन, यो अवस्थित भएको वा हालको प्रयोगकर्ताले पढ्नयोग्य भएको जाँच गर्नुहोस् "
 "।"
 
-#: src/akregator_part.cpp:514
+#: src/akregator_part.cpp:521
 msgid "Read Error"
 msgstr "पढ्दा त्रुटि"
 
-#: src/akregator_part.cpp:528
+#: src/akregator_part.cpp:535
 #, kde-format
 msgid "The file %1 already exists; do you want to overwrite it?"
 msgstr "फाइल %1 पहिले नै अवस्थित छ; तपाईँ यसलाई अधिलेखन गर्न चाहनुहुन्छ ?"
 
-#: src/akregator_part.cpp:529
+#: src/akregator_part.cpp:536
 msgid "Export"
 msgstr "निर्यात"
 
-#: src/akregator_part.cpp:530
-msgid "Overwrite"
-msgstr "अधिलेखन"
-
-#: src/akregator_part.cpp:536
-#, kde-format
-msgid "Access denied: cannot write to file %1"
+#: src/akregator_part.cpp:542
+#, fuzzy, kde-format
+#| msgid "Access denied: cannot write to file %1"
+msgid "Access denied: cannot write to file %1. Please check your permissions."
 msgstr "पहुँच अस्वीकृत: फाइल %1 मा लेख्न सकिँदैन"
 
-#: src/akregator_part.cpp:536
+#: src/akregator_part.cpp:542
 msgid "Write Error"
 msgstr "लेख्दा त्रुटि"
 
@@ -1665,9 +1693,7 @@ msgstr "प्रतिमाका साटोमा ट्याबमा ब
 
 #. i18n: file: interfaces/akregator.kcfg:150
 #. i18n: ectx: label, entry, group (Browser)
-#. i18n: file: configuration/settings_browser.ui:174
-#. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
-#: rc.cpp:276 rc.cpp:449
+#: rc.cpp:276
 msgid "Use default KDE web browser"
 msgstr "पूर्वनिर्धारित केडीई वेब ब्राउजर प्रयोग गर्नुहोस्"
 
@@ -1985,6 +2011,14 @@ msgstr "बाह्य ब्राउजरका लागि"
 msgid "firefox %u"
 msgstr "फायरफक्स %u"
 
+#. i18n: file: configuration/settings_browser.ui:174
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
+#: rc.cpp:449
+#, fuzzy
+#| msgid "Use default KDE web browser"
+msgid "Use default web browser"
+msgstr "पूर्वनिर्धारित केडीई वेब ब्राउजर प्रयोग गर्नुहोस्"
+
 #. i18n: file: configuration/settings_archive.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:455
@@ -2192,6 +2226,9 @@ msgstr "लोड गर्दैछ..."
 #: plugins/mk4storage/storagefactorymk4impl.cpp:48
 msgid "Metakit"
 msgstr ""
+
+#~ msgid "Overwrite"
+#~ msgstr "अधिलेखन"
 
 #~ msgid "Configure &Akregator..."
 #~ msgstr "एक्रिगेटर कन्फिगर गर्नुहोस्..."
