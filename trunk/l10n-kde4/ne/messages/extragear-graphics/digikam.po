@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-30 10:27+0200\n"
+"POT-Creation-Date: 2008-08-31 10:12+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -120,7 +120,7 @@ msgstr ""
 #: digikam/tagfilterview.cpp:918 digikam/ratingpopupmenu.cpp:134
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:222
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:171
-#: imageplugins/restoration/imageeffect_restoration.cpp:110
+#: imageplugins/restoration/restorationtool.cpp:102
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:142
 #: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:119
 #: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:224
@@ -867,17 +867,17 @@ msgid "Assign tag to images. Please wait..."
 msgstr "तस्विरमा ट्याग मानाङ्कन गर्दैछ । कृपया प्रतिक्षा गर्नुहोस्..."
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:152
-#: imageplugins/channelmixer/channelmixer.cpp:132
+#: imageplugins/channelmixer/channelmixertool.cpp:127
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:117
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:133
-#: imageplugins/adjustcurves/adjustcurves.cpp:127
-#: imageplugins/adjustlevels/adjustlevels.cpp:131
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:118
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:122
 #: imageplugins/coreplugin/hsl/hsltool.cpp:103
+#: imageplugins/coreplugin/rgbtool.cpp:103
 #: imageplugins/coreplugin/bcgtool.cpp:104
+#: imageplugins/coreplugin/redeyetool.cpp:105
 #: imageplugins/coreplugin/bwsepiatool.cpp:209
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:91
 #: imageplugins/coreplugin/autocorrectiontool.cpp:105
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:93
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:171
 msgid "Channel:"
 msgstr "च्यानल:"
@@ -885,34 +885,34 @@ msgstr "च्यानल:"
 #: libs/imageproperties/imagepropertiescolorstab.cpp:156
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:120
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:136
-#: imageplugins/adjustcurves/adjustcurves.cpp:130
-#: imageplugins/adjustlevels/adjustlevels.cpp:134
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:121
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:125
 #: imageplugins/coreplugin/hsl/hsltool.cpp:106
+#: imageplugins/coreplugin/rgbtool.cpp:106
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:126
 #: imageplugins/coreplugin/bcgtool.cpp:107
+#: imageplugins/coreplugin/redeyetool.cpp:108
 #: imageplugins/coreplugin/bwsepiatool.cpp:212
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:94
 #: imageplugins/coreplugin/autocorrectiontool.cpp:108
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:96
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:174
 msgid "Luminosity"
 msgstr "ज्योति"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:157
 #: libs/imageproperties/imagepropertiescolorstab.cpp:206
-#: imageplugins/channelmixer/channelmixer.cpp:135
+#: imageplugins/channelmixer/channelmixertool.cpp:130
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:121
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:137
-#: imageplugins/adjustcurves/adjustcurves.cpp:131
-#: imageplugins/adjustlevels/adjustlevels.cpp:135
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:122
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:126
 #: imageplugins/coreplugin/hsl/hsltool.cpp:107
+#: imageplugins/coreplugin/rgbtool.cpp:107
+#: imageplugins/coreplugin/rgbtool.cpp:175
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:127
 #: imageplugins/coreplugin/bcgtool.cpp:108
+#: imageplugins/coreplugin/redeyetool.cpp:109
 #: imageplugins/coreplugin/bwsepiatool.cpp:213
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:95
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:163
 #: imageplugins/coreplugin/autocorrectiontool.cpp:109
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:97
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:175
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:221
 msgid "Red"
@@ -920,19 +920,19 @@ msgstr "रातो"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:158
 #: libs/imageproperties/imagepropertiescolorstab.cpp:207
-#: imageplugins/channelmixer/channelmixer.cpp:136
+#: imageplugins/channelmixer/channelmixertool.cpp:131
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:122
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:138
-#: imageplugins/adjustcurves/adjustcurves.cpp:132
-#: imageplugins/adjustlevels/adjustlevels.cpp:136
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:123
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:127
 #: imageplugins/coreplugin/hsl/hsltool.cpp:108
+#: imageplugins/coreplugin/rgbtool.cpp:108
+#: imageplugins/coreplugin/rgbtool.cpp:196
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:128
 #: imageplugins/coreplugin/bcgtool.cpp:109
+#: imageplugins/coreplugin/redeyetool.cpp:110
 #: imageplugins/coreplugin/bwsepiatool.cpp:214
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:96
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:184
 #: imageplugins/coreplugin/autocorrectiontool.cpp:110
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:98
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:176
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:222
 msgid "Green"
@@ -940,27 +940,27 @@ msgstr "हरियो"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:159
 #: libs/imageproperties/imagepropertiescolorstab.cpp:208
-#: imageplugins/channelmixer/channelmixer.cpp:137
+#: imageplugins/channelmixer/channelmixertool.cpp:132
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:123
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:139
-#: imageplugins/adjustcurves/adjustcurves.cpp:133
-#: imageplugins/adjustlevels/adjustlevels.cpp:137
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:124
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:128
 #: imageplugins/coreplugin/hsl/hsltool.cpp:109
+#: imageplugins/coreplugin/rgbtool.cpp:109
+#: imageplugins/coreplugin/rgbtool.cpp:217
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:129
 #: imageplugins/coreplugin/bcgtool.cpp:110
+#: imageplugins/coreplugin/redeyetool.cpp:111
 #: imageplugins/coreplugin/bwsepiatool.cpp:215
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:97
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:205
 #: imageplugins/coreplugin/autocorrectiontool.cpp:111
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:99
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:177
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:223
 msgid "Blue"
 msgstr "निलो"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:160
-#: imageplugins/adjustcurves/adjustcurves.cpp:134
-#: imageplugins/adjustlevels/adjustlevels.cpp:138
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:125
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:129
 msgid "Alpha"
 msgstr "अल्फा"
 
@@ -1014,36 +1014,36 @@ msgstr ""
 "प्रयोग गर्न सकिन्छ; यदि यो प्रयोग गरिएमा, सबै मानहरू (सानो र ठूलो) ग्राफमा देखिन्छ ।"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:185
-#: imageplugins/channelmixer/channelmixer.cpp:155
+#: imageplugins/channelmixer/channelmixertool.cpp:150
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:139
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:157
-#: imageplugins/adjustcurves/adjustcurves.cpp:156
-#: imageplugins/adjustlevels/adjustlevels.cpp:160
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:147
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:151
 #: imageplugins/coreplugin/hsl/hsltool.cpp:127
+#: imageplugins/coreplugin/rgbtool.cpp:125
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:147
 #: imageplugins/coreplugin/bcgtool.cpp:128
+#: imageplugins/coreplugin/redeyetool.cpp:129
 #: imageplugins/coreplugin/bwsepiatool.cpp:233
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:113
 #: imageplugins/coreplugin/autocorrectiontool.cpp:129
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:117
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:197
 #: utilities/timeline/timelineview.cpp:151
 msgid "<p>Linear"
 msgstr "<p>लिनियर"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:191
-#: imageplugins/channelmixer/channelmixer.cpp:161
+#: imageplugins/channelmixer/channelmixertool.cpp:156
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:145
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:164
-#: imageplugins/adjustcurves/adjustcurves.cpp:162
-#: imageplugins/adjustlevels/adjustlevels.cpp:166
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:153
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:157
 #: imageplugins/coreplugin/hsl/hsltool.cpp:133
+#: imageplugins/coreplugin/rgbtool.cpp:131
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:153
 #: imageplugins/coreplugin/bcgtool.cpp:134
+#: imageplugins/coreplugin/redeyetool.cpp:135
 #: imageplugins/coreplugin/bwsepiatool.cpp:239
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:119
 #: imageplugins/coreplugin/autocorrectiontool.cpp:135
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:123
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:203
 #: utilities/timeline/timelineview.cpp:157
 msgid "<p>Logarithmic"
@@ -1630,8 +1630,7 @@ msgstr "<b>फोकल</b>:"
 msgid "Exposure:"
 msgstr "स्वत: प्रर्दशन"
 
-#: libs/dialogs/imagedialog.cpp:175
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:156
+#: libs/dialogs/imagedialog.cpp:175 imageplugins/coreplugin/redeyetool.cpp:168
 #, fuzzy
 #| msgid "<b>Sensitivity</b>:"
 msgid "Sensitivity:"
@@ -2059,7 +2058,7 @@ msgid "Nearest Neighbor"
 msgstr ""
 
 #: libs/greycstoration/greycstorationwidget.cpp:239
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:103
+#: imageplugins/hotpixels/hotpixelstool.cpp:90
 #, fuzzy
 #| msgid "<p>Linear"
 msgid "Linear"
@@ -2779,7 +2778,7 @@ msgstr ""
 "y:%2"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:136
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:111
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:105
 msgid ""
 "<p>Here you can see the original clip image which will be used for the "
 "preview computation.<p>Click and drag the mouse cursor in the image to "
@@ -2789,14 +2788,13 @@ msgstr ""
 "।<p>क्लिप फोकस परिवर्तन गर्न छविमा माउसको कर्सर क्लिक गर्नुहोस् र तान्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:145
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:120
 #, fuzzy
 #| msgid "<p>Set here the color used to draw composition guides."
 msgid "<p>Here set the zoom factor of the preview area."
 msgstr "<p>संयोजन मार्गदर्शन कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:164
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:139
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:128
 msgid ""
 "<p>If you enable this option, you will separate the preview area "
 "horizontally, displaying the original and target image at the same time. The "
@@ -2807,7 +2805,7 @@ msgstr ""
 "छवि नक्कल गरिन्छ ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:174
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:149
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:138
 msgid ""
 "<p>If you enable this option, you will separate the preview area vertically, "
 "displaying the original and target image at the same time. The target is "
@@ -2818,7 +2816,7 @@ msgstr ""
 "लक्ष्य छवि नक्कल गरिन्छ ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:188
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:163
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:152
 msgid ""
 "<p>If you enable this option, you will separate the preview area "
 "horizontally, displaying the original and target image at the same time. The "
@@ -2829,7 +2827,7 @@ msgstr ""
 "लक्ष्य त्यसको तल हुन्छ ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:198
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:173
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:162
 msgid ""
 "<p>If you enable this option, you will separate the preview area vertically, "
 "displaying the original and target image at the same time. The original is "
@@ -2840,7 +2838,7 @@ msgstr ""
 "यसको दायाँ छ ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:209
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:184
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:173
 msgid "<p>If you enable this option, the preview area will not be separated."
 msgstr "<p>तपाईँले यो विकल्प सक्षम पार्नुभएमा, पूर्वावलोकन क्षेत्र विभाजन गरिदैन ।"
 
@@ -2863,7 +2861,6 @@ msgstr ""
 "।<p>क्लिप फोकस परिवर्तन गर्न रातो आयातकारमा माउस कर्सर क्लिक गर्नुहोस् र तान्नुहोस् ।"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:361
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:286
 #: digikam/digikamapp.cpp:2308 utilities/lighttable/lighttablewindow.cpp:1489
 #: utilities/lighttable/lighttablewindow.cpp:1512
 #, fuzzy, kde-format
@@ -2872,7 +2869,7 @@ msgid "zoom: %1%"
 msgstr "जुम गर्नुहोस्: "
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:488
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:377
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:335
 #, kde-format
 msgid "<nobr>(%1,%2)(%3x%4)</nobr>"
 msgstr ""
@@ -3120,7 +3117,6 @@ msgstr ""
 #: digikam/daboutdata.h:127 digikam/daboutdata.h:131
 #: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:82
 #: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:88
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:90
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:80
 #: imageplugins/texture/imageeffect_texture.cpp:85
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:94
@@ -6291,20 +6287,15 @@ msgstr ""
 #: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:85
 #: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:85
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:85
-#: imageplugins/channelmixer/channelmixer.cpp:114
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:87
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:77
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:111
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:78
-#: imageplugins/adjustcurves/adjustcurves.cpp:109
 #: imageplugins/texture/imageeffect_texture.cpp:82
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:91
-#: imageplugins/adjustlevels/adjustlevels.cpp:113
 #: imageplugins/raindrop/imageeffect_raindrop.cpp:80
 #: imageplugins/blurfx/imageeffect_blurfx.cpp:81
 #: imageplugins/border/imageeffect_border.cpp:86
 #: imageplugins/emboss/imageeffect_emboss.cpp:78
-#: imageplugins/restoration/imageeffect_restoration.cpp:82
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:86
 #: imageplugins/distortionfx/imageeffect_distortionfx.cpp:87
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:80
@@ -6320,20 +6311,15 @@ msgstr ""
 #: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:85
 #: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:85
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:85
-#: imageplugins/channelmixer/channelmixer.cpp:114
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:90
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:77
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:111
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:78
-#: imageplugins/adjustcurves/adjustcurves.cpp:109
 #: imageplugins/texture/imageeffect_texture.cpp:82
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:91
-#: imageplugins/adjustlevels/adjustlevels.cpp:113
 #: imageplugins/raindrop/imageeffect_raindrop.cpp:80
 #: imageplugins/blurfx/imageeffect_blurfx.cpp:81
 #: imageplugins/border/imageeffect_border.cpp:86
 #: imageplugins/emboss/imageeffect_emboss.cpp:78
-#: imageplugins/restoration/imageeffect_restoration.cpp:82
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:86
 #: imageplugins/distortionfx/imageeffect_distortionfx.cpp:87
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:80
@@ -6560,8 +6546,6 @@ msgstr ""
 
 #: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:81
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:74
-#: imageplugins/adjustcurves/adjustcurves.cpp:105
-#: imageplugins/adjustlevels/adjustlevels.cpp:109
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:82
 #: imageplugins/sheartool/imageeffect_sheartool.cpp:81
 #, fuzzy
@@ -6877,28 +6861,20 @@ msgstr "बचत गर्ने रङ व्यवस्थापन से�
 msgid "Cannot save settings to the Photograph Noise Reduction text file."
 msgstr "रङ व्यवस्थापन पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
 
-#: imageplugins/channelmixer/imageplugin_channelmixer.cpp:47
+#: imageplugins/channelmixer/imageplugin_channelmixer.cpp:49
 #, fuzzy
 #| msgid "Channel: "
 msgid "Channel Mixer..."
 msgstr "च्यानल: "
 
-#: imageplugins/channelmixer/channelmixer.cpp:98
-#: imageplugins/channelmixer/channelmixer.cpp:106
+#: imageplugins/channelmixer/channelmixertool.cpp:104
+#: imageplugins/channelmixer/channelmixertool.cpp:496
 #, fuzzy
-#| msgid "Color Managed View"
-msgid "Color Channel Mixer"
-msgstr "रङ सन्तुलित दृश्य"
+#| msgid "Channel: "
+msgid "Channel Mixer"
+msgstr "च्यानल: "
 
-#: imageplugins/channelmixer/channelmixer.cpp:108
-msgid "An image color channel mixer plugin for digiKam."
-msgstr ""
-
-#: imageplugins/channelmixer/channelmixer.cpp:110
-msgid "(c) 2005-2007, Gilles Caulier"
-msgstr ""
-
-#: imageplugins/channelmixer/channelmixer.cpp:122
+#: imageplugins/channelmixer/channelmixertool.cpp:112
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the image color-balance adjustments preview. You can "
@@ -6911,7 +6887,7 @@ msgstr ""
 "<p>यहाँ तपाईँले रङ सन्तुलन समायोजन पूर्वावलोकन हेर्न सक्नुहुन्छ । तपाईँले हिस्टोग्राममा संगत "
 "रङ तह हेर्न छविमा रङ टिप्न सक्नुहुन्छ ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:139
+#: imageplugins/channelmixer/channelmixertool.cpp:134
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
@@ -6928,11 +6904,11 @@ msgstr ""
 "।<p><b>हरियो</b>: हरियो छवि च्यानल मान प्रर्दशन गर्दछ ।<p><b>निलो</b>: निलो छवि "
 "च्यानल मान प्रर्दशन गर्दछ ।<p>"
 
-#: imageplugins/channelmixer/channelmixer.cpp:149
+#: imageplugins/channelmixer/channelmixertool.cpp:144
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:133
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:150
-#: imageplugins/adjustcurves/adjustcurves.cpp:150
-#: imageplugins/adjustlevels/adjustlevels.cpp:154
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:141
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:145
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:191
 #, fuzzy
 #| msgid ""
@@ -6950,7 +6926,7 @@ msgstr ""
 "लिनियर स्केल प्रयोग गर्न सक्नुहुन्छ ।<p>अधिकतम गणना ठूलो भएको बेलामा लोगारिदमिक स्केल "
 "प्रयोग गर्न सकिन्छ; यदि यसको प्रयोग भएमा, सबै मानहरू(सानो र ठूलो) ग्राफमा देखिन्छ ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:184
+#: imageplugins/channelmixer/channelmixertool.cpp:179
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the target preview image histogram drawing of the "
@@ -6963,99 +6939,93 @@ msgstr ""
 "<p>यहाँ तपाईँले चयन गरेको छवि च्यानलको लक्ष्य पूर्वावलोकन छवि हिस्टोग्राम रेखाचित्र हेर्न "
 "सक्नुहुन्छ । यो एउटालाई कुनै पनि सेटिङ परिवर्तनमा पुन: गणना गरिन्छ ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:194
+#: imageplugins/channelmixer/channelmixertool.cpp:189
 #, fuzzy
 #| msgid "Red"
 msgid "Red:"
 msgstr "रातो"
 
-#: imageplugins/channelmixer/channelmixer.cpp:199
+#: imageplugins/channelmixer/channelmixertool.cpp:194
 #, fuzzy
 #| msgid "<p>Set here the cyan/red color adjustment of the image."
 msgid "<p>Select the red color gain in percent for the current channel here."
 msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:202
+#: imageplugins/channelmixer/channelmixertool.cpp:197
 #, fuzzy
 #| msgid "Blue"
 msgid "Blue:"
 msgstr "निलो"
 
-#: imageplugins/channelmixer/channelmixer.cpp:207
+#: imageplugins/channelmixer/channelmixertool.cpp:202
 #, fuzzy
 #| msgid "<p>Set here the magenta/green color adjustment of the image."
 msgid "<p>Select the green color gain in percent for the current channel here."
 msgstr "<p>यहाँ छविको म्याजेन्टा/हरियो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:210
+#: imageplugins/channelmixer/channelmixertool.cpp:205
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:281
 #, fuzzy
 #| msgid "Green"
 msgid "Green:"
 msgstr "हरियो"
 
-#: imageplugins/channelmixer/channelmixer.cpp:215
+#: imageplugins/channelmixer/channelmixertool.cpp:210
 #, fuzzy
 #| msgid "<p>Set here the yellow/blue color adjustment of the image."
 msgid "<p>Select the blue color gain in percent for the current channel here."
 msgstr "<p>छविको पहेलो/निलो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:218
-#: imageplugins/adjustcurves/adjustcurves.cpp:292
-#: imageplugins/adjustlevels/adjustlevels.cpp:332
+#: imageplugins/channelmixer/channelmixertool.cpp:213
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:283
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:325
 #, fuzzy
 #| msgid "Reset"
 msgid "&Reset"
 msgstr "रिसेट गर्नुहोस्"
 
-#: imageplugins/channelmixer/channelmixer.cpp:220
+#: imageplugins/channelmixer/channelmixertool.cpp:215
 msgid ""
 "Reset color channels' gains settings from the currently selected channel."
 msgstr ""
 
-#: imageplugins/channelmixer/channelmixer.cpp:225
+#: imageplugins/channelmixer/channelmixertool.cpp:220
 msgid "Monochrome"
 msgstr ""
 
-#: imageplugins/channelmixer/channelmixer.cpp:226
+#: imageplugins/channelmixer/channelmixertool.cpp:221
 msgid ""
 "<p>Enable this option if you want the image rendered in monochrome mode. In "
 "this mode, the histogram will display only luminosity values."
 msgstr ""
 
-#: imageplugins/channelmixer/channelmixer.cpp:230
+#: imageplugins/channelmixer/channelmixertool.cpp:225
 #, fuzzy
 #| msgid "Luminosity"
 msgid "Preserve luminosity"
 msgstr "ज्योति"
 
-#: imageplugins/channelmixer/channelmixer.cpp:231
+#: imageplugins/channelmixer/channelmixertool.cpp:226
 #, fuzzy
 #| msgid "<p>If you enable this option, you will see the target image."
 msgid "<p>Enable this option is you want preserve the image luminosity."
 msgstr "<p>तपाईँले यो विकल्प सक्षम पार्नुभएमा, तपाईँले लक्ष्य छवि देख्नुहुनेछ ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:503
-#, fuzzy
-#| msgid "Channel: "
-msgid "Channel Mixer"
-msgstr "च्यानल: "
-
-#: imageplugins/channelmixer/channelmixer.cpp:654
+#: imageplugins/channelmixer/channelmixertool.cpp:646
 msgid "Select Gimp Gains Mixer File to Load"
 msgstr ""
 
-#: imageplugins/channelmixer/channelmixer.cpp:726
+#: imageplugins/channelmixer/channelmixertool.cpp:719
 #, fuzzy
 #| msgid "Cannot load settings from the Black & White text file."
 msgid "Cannot load settings from the Gains Mixer text file."
 msgstr "श्यामश्वेत पाठ फाइलबाट सेटिङ लोड गर्न सकिदैन ।"
 
-#: imageplugins/channelmixer/channelmixer.cpp:739
+#: imageplugins/channelmixer/channelmixertool.cpp:732
 msgid "Gimp Gains Mixer File to Save"
 msgstr ""
 
-#: imageplugins/channelmixer/channelmixer.cpp:801
+#: imageplugins/channelmixer/channelmixertool.cpp:795
 #, fuzzy
 #| msgid "Cannot save settings to the Black & White text file."
 msgid "Cannot save settings to the Gains Mixer text file."
@@ -7126,9 +7096,9 @@ msgstr ""
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:168
 #: imageplugins/coreplugin/hsl/hsltool.cpp:156
+#: imageplugins/coreplugin/rgbtool.cpp:154
 #: imageplugins/coreplugin/bcgtool.cpp:157
 #: imageplugins/coreplugin/bwsepiatool.cpp:262
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:142
 #: imageplugins/coreplugin/autocorrectiontool.cpp:158
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:234
 msgid ""
@@ -7207,6 +7177,57 @@ msgstr "यो विकल्पले हालै चयन गरेको �
 msgid "ColorFX"
 msgstr "रङ"
 
+#: imageplugins/hotpixels/hotpixelstool.cpp:76
+#, fuzzy
+#| msgid "File Properties"
+msgid "Hot Pixels"
+msgstr "फाइल गुण"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:87
+#, fuzzy
+#| msgid "Filters"
+msgid "Filter:"
+msgstr "फिल्टर"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:89
+msgid "Average"
+msgstr ""
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:91
+msgid "Quadratic"
+msgstr ""
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:92
+msgid "Cubic"
+msgstr ""
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:95
+#, fuzzy
+#| msgid "Black && White..."
+msgid "Black Frame..."
+msgstr "श्यामश्वेत..."
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:96
+msgid ""
+"<p>Use this button to add a new black frame file which will be used by the "
+"hot pixels removal filter."
+msgstr ""
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:145
+#: utilities/imageeditor/editor/editorwindow.cpp:1259
+msgid "Loading: "
+msgstr "लोड हुँदैछ: "
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:184
+msgid "Select Black Frame Image"
+msgstr ""
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:252
+#, fuzzy
+#| msgid "Red Eyes Correction"
+msgid "Hot Pixels Correction"
+msgstr "रातो आँखा सुधार"
+
 #: imageplugins/hotpixels/blackframelistview.cpp:52
 #, fuzzy
 #| msgid "Exit Preview"
@@ -7226,71 +7247,11 @@ msgctxt ""
 msgid "HP"
 msgstr ""
 
-#: imageplugins/hotpixels/imageplugin_hotpixels.cpp:49
+#: imageplugins/hotpixels/imageplugin_hotpixels.cpp:51
 #, fuzzy
 #| msgid "File Properties"
 msgid "Hot Pixels..."
 msgstr "फाइल गुण"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:68
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:78
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:269
-#, fuzzy
-#| msgid "Red Eyes Correction"
-msgid "Hot Pixels Correction"
-msgstr "रातो आँखा सुधार"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:80
-msgid ""
-"A digiKam image plugin for fixing dots produced by hot/stuck/dead pixels "
-"from a CCD."
-msgstr ""
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:83
-#, fuzzy
-#| msgid "(c) 2004-2007, digiKam developers team"
-msgid ""
-"(c) 2005-2006, Unai Garro\n"
-"(c) 2005-2008, Gilles Caulier"
-msgstr "(प्रतिलिपि अधिकार) २००४-२००७, डिजिक्याम विकासकर्ता समूह"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:87
-msgid "Unai Garro"
-msgstr ""
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:100
-#, fuzzy
-#| msgid "Filters"
-msgid "Filter:"
-msgstr "फिल्टर"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:102
-msgid "Average"
-msgstr ""
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:104
-msgid "Quadratic"
-msgstr ""
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:105
-msgid "Cubic"
-msgstr ""
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:108
-#, fuzzy
-#| msgid "Black && White..."
-msgid "Black Frame..."
-msgstr "श्यामश्वेत..."
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:109
-msgid ""
-"<p>Use this button to add a new black frame file which will be used by the "
-"hot pixels removal filter."
-msgstr ""
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:184
-msgid "Select Black Frame Image"
-msgstr ""
 
 #: imageplugins/filmgrain/imageplugin_filmgrain.cpp:48
 #, fuzzy
@@ -7350,7 +7311,6 @@ msgid "A digiKam image plugin to correct white color balance."
 msgstr ""
 
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:107
-#: imageplugins/restoration/imageeffect_restoration.cpp:78
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:141
 #, fuzzy
 #| msgid "(c) 2004-2007, digiKam developers team"
@@ -7635,7 +7595,7 @@ msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर
 
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:98
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:105
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:166
+#: imageplugins/coreplugin/redeyetool.cpp:178
 #, fuzzy
 #| msgid "Smoothness:"
 msgid "Smooth:"
@@ -7654,18 +7614,13 @@ msgstr ""
 msgid "Charcoal Drawing..."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:83
-#: imageplugins/adjustcurves/adjustcurves.cpp:101
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:90
 #, fuzzy
 #| msgid "Auto Color Correction"
-msgid "Adjust Color Curves"
+msgid "Adjust Curves"
 msgstr "स्वत: रङ सुधार"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:103
-msgid "An image-histogram-curves adjustment plugin for digiKam."
-msgstr ""
-
-#: imageplugins/adjustcurves/adjustcurves.cpp:117
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:103
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the image color-balance adjustments preview. You can "
@@ -7677,8 +7632,8 @@ msgstr ""
 "<p>यहाँ तपाईँले रङ सन्तुलन समायोजन पूर्वावलोकन हेर्न सक्नुहुन्छ । तपाईँले हिस्टोग्राममा संगत "
 "रङ तह हेर्न छविमा रङ टिप्न सक्नुहुन्छ ।"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:136
-#: imageplugins/adjustlevels/adjustlevels.cpp:140
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:127
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:131
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
@@ -7704,7 +7659,7 @@ msgstr ""
 "गर्नुहोस् । यो च्यानल पार्दर्शीता मानसँग अनुकूल हुन्छ र PNG वा TIFF जस्ता केहि छवि "
 "ढाँचाद्वारा समर्थित हुन्छ ।<p><b>रङ</b>: उहि समयमा सबै रङ च्यानल मान प्रर्दशन गर्नुहोस् ।"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:187
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:178
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the target preview image histogram drawing of the "
@@ -7717,106 +7672,106 @@ msgstr ""
 "<p>यहाँ तपाईँले चयन गरेको छवि च्यानलको लक्ष्य पूर्वावलोकन छवि हिस्टोग्राम रेखाचित्र हेर्न "
 "सक्नुहुन्छ । यो एउटालाई कुनै पनि सेटिङ परिवर्तनमा पुन: गणना गरिन्छ ।"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:200
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:191
 #, fuzzy
 #| msgid "<p>This is the histogram drawing of the selected image channel"
 msgid ""
 "<p>This is the curve drawing of the selected channel from original image"
 msgstr "<p>यो चयन गरेको छवि च्यानलको हिस्टोग्राम रेखाचित्र हो"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:228
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:219
 msgid "Curve free mode"
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:229
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:220
 msgid "<p>With this button, you can draw your curve free-hand with the mouse."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:236
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:227
 msgid "Curve smooth mode"
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:237
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:228
 msgid ""
 "<p>With this button, you constrains the curve type to a smooth line with "
 "tension."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:259
-#: imageplugins/adjustlevels/adjustlevels.cpp:293
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:250
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:286
 msgid "All channels shadow tone color picker"
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:260
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:251
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Shadow Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
 "channels."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:268
-#: imageplugins/adjustlevels/adjustlevels.cpp:302
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:259
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:295
 msgid "All channels middle tone color picker"
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:269
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:260
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Middle Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
 "channels."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:277
-#: imageplugins/adjustlevels/adjustlevels.cpp:311
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:268
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:304
 msgid "All channels highlight tone color picker"
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:278
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:269
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Highlight Tone</b> smooth curves point on Red, Green, Blue, and "
 "Luminosity channels."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:294
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:285
 msgid "Reset current channel curves' values."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:295
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:286
 msgid ""
 "<p>If you press this button, all curves' values from the current selected "
 "channel will be reset to the default values."
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:484
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:475
 msgid "Adjust Curve"
 msgstr ""
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:651
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:645
 #, fuzzy
 #| msgid "Black & White Settings File to Load"
 msgid "Select Gimp Curves File to Load"
 msgstr "लोड गर्ने श्यामश्वेत सेटिङ फाइल"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:657
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:652
 #, fuzzy
 #| msgid "Cannot load settings from the Black & White text file."
 msgid "Cannot load from the Gimp curves text file."
 msgstr "श्यामश्वेत पाठ फाइलबाट सेटिङ लोड गर्न सकिदैन ।"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:673
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:668
 #, fuzzy
 #| msgid "IPTC File to Save"
 msgid "Gimp Curves File to Save"
 msgstr "बचत गर्ने IPTC फाइल"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:679
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:675
 #, fuzzy
 #| msgid "Cannot save settings to the Black & White text file."
 msgid "Cannot save to the Gimp curves text file."
 msgstr "श्यामश्वेत पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
 
-#: imageplugins/adjustcurves/imageplugin_adjustcurves.cpp:48
+#: imageplugins/adjustcurves/imageplugin_adjustcurves.cpp:50
 msgid "Curves Adjust..."
 msgstr ""
 
@@ -8052,18 +8007,13 @@ msgstr ""
 msgid "Insert Text..."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:85
-#: imageplugins/adjustlevels/adjustlevels.cpp:105
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:91
 #, fuzzy
 #| msgid "Auto Levels"
-msgid "Adjust Color Levels"
+msgid "Adjust Levels"
 msgstr "स्वत: तह"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:107
-msgid "An image-histogram-levels adjustment plugin for digiKam."
-msgstr ""
-
-#: imageplugins/adjustlevels/adjustlevels.cpp:121
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:106
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the image color-balance adjustments preview. You can "
@@ -8075,7 +8025,7 @@ msgstr ""
 "<p>यहाँ तपाईँले रङ सन्तुलन समायोजन पूर्वावलोकन हेर्न सक्नुहुन्छ । तपाईँले हिस्टोग्राममा संगत "
 "रङ तह हेर्न छविमा रङ टिप्न सक्नुहुन्छ ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:188
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:179
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the target preview image histogram drawing of the "
@@ -8088,145 +8038,145 @@ msgstr ""
 "<p>यहाँ तपाईँले चयन गरेको छवि च्यानलको लक्ष्य पूर्वावलोकन छवि हिस्टोग्राम रेखाचित्र हेर्न "
 "सक्नुहुन्छ । यो एउटालाई कुनै पनि सेटिङ परिवर्तनमा पुन: गणना गरिन्छ ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:195
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:188
 #, fuzzy
 #| msgid "<p>This is the histogram drawing of the selected image channel"
 msgid ""
 "<p>This is the histogram drawing of the selected channel from original image"
 msgstr "<p>यो चयन गरेको छवि च्यानलको हिस्टोग्राम रेखाचित्र हो"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:205
-#: imageplugins/adjustlevels/adjustlevels.cpp:226
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:198
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:219
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the minimal intensity value of the histogram selection."
 msgid "<p>Select the minimal intensity input value of the histogram here."
 msgstr "<p>यहाँ हिस्टोग्राम चयनको न्यूनतम घनत्व मान चयन गर्नुहोस् ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:207
-#: imageplugins/adjustlevels/adjustlevels.cpp:228
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:200
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:221
 msgid "Minimal intensity input."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:216
-#: imageplugins/adjustlevels/adjustlevels.cpp:242
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:209
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:235
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the maximal intensity value of the histogram selection."
 msgid "<p>Select the maximal intensity input value of the histogram here."
 msgstr "<p>यहाँ हिस्टोग्राम चयनको अधिकतम घनत्व मान चयन गर्नुहोस् ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:218
-#: imageplugins/adjustlevels/adjustlevels.cpp:241
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:211
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:234
 msgid "Maximal intensity input."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:234
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:227
 msgid "Gamma input value."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:235
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:228
 #, fuzzy
 #| msgid "<p>Set here the gamma adjustment of the image."
 msgid "<p>Select the gamma input value here."
 msgstr "<p>यहाँ छविको गामा समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:247
-#: imageplugins/adjustlevels/adjustlevels.cpp:272
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:240
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:265
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the minimal intensity value of the histogram selection."
 msgid "<p>Select the minimal intensity output value of the histogram here."
 msgstr "<p>यहाँ हिस्टोग्राम चयनको न्यूनतम घनत्व मान चयन गर्नुहोस् ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:249
-#: imageplugins/adjustlevels/adjustlevels.cpp:271
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:242
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:264
 msgid "Minimal intensity output."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:258
-#: imageplugins/adjustlevels/adjustlevels.cpp:280
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:251
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:273
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the maximal intensity value of the histogram selection."
 msgid "<p>Select the maximal intensity output value of the histogram here."
 msgstr "<p>यहाँ हिस्टोग्राम चयनको अधिकतम घनत्व मान चयन गर्नुहोस् ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:260
-#: imageplugins/adjustlevels/adjustlevels.cpp:279
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:253
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:272
 msgid "Maximal intensity output."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:294
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:287
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Shadow Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:303
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:296
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Middle Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:312
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:305
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Highlight Tone</b> levels input on Red, Green, Blue, and Luminosity "
 "channels."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:328
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:321
 msgid "Adjust all levels automatically."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:329
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:322
 msgid ""
 "<p>If you press this button, all channel levels will be adjusted "
 "automatically."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:334
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:327
 msgid "Reset current channel levels' values."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:335
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:328
 msgid ""
 "<p>If you press this button, all levels' values from the current selected "
 "channel will be reset to the default values."
 msgstr ""
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:654
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:647
 #, fuzzy
 #| msgid "Auto Levels"
 msgid "Adjust Level"
 msgstr "स्वत: तह"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:813
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:805
 #, fuzzy
 #| msgid "Black & White Settings File to Load"
 msgid "Select Gimp Levels File to Load"
 msgstr "लोड गर्ने श्यामश्वेत सेटिङ फाइल"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:819
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:812
 #, fuzzy
 #| msgid "Cannot load settings from the Black & White text file."
 msgid "Cannot load from the Gimp levels text file."
 msgstr "श्यामश्वेत पाठ फाइलबाट सेटिङ लोड गर्न सकिदैन ।"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:834
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:827
 #, fuzzy
 #| msgid "EXIF File to Save"
 msgid "Gimp Levels File to Save"
 msgstr "बचत गर्नका लागि EXIF फाइल"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:840
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:834
 #, fuzzy
 #| msgid "Cannot save settings to the Black & White text file."
 msgid "Cannot save to the Gimp levels text file."
 msgstr "श्यामश्वेत पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
 
-#: imageplugins/adjustlevels/imageplugin_adjustlevels.cpp:47
+#: imageplugins/adjustlevels/imageplugin_adjustlevels.cpp:49
 msgid "Levels Adjust..."
 msgstr ""
 
@@ -8651,45 +8601,21 @@ msgstr "<p>यहाँ छविको ह्यु समायोजन स�
 msgid "Emboss"
 msgstr ""
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:65
-#: imageplugins/restoration/imageeffect_restoration.cpp:74
+#: imageplugins/restoration/restorationtool.cpp:73
+#: imageplugins/restoration/restorationtool.cpp:301
 #, fuzzy
-#| msgid "Photograph Information"
-msgid "Photograph Restoration"
-msgstr "फोटोग्राफ सूचना"
+#| msgid "Saturation"
+msgid "Restoration"
+msgstr "स्याचुरेसन"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:76
-msgid "A digiKam image plugin to restore a photograph."
-msgstr ""
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:85
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
-msgid "David Tschumperle"
-msgstr ""
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:85
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
-msgid "CImg library"
-msgstr ""
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:88
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
-msgid "Gerhard Kulzer"
-msgstr ""
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:88
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
-msgid "Feedback and plugin polishing"
-msgstr ""
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:99
+#: imageplugins/restoration/restorationtool.cpp:91
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:164
 #, fuzzy
 #| msgid "Reset"
 msgid "Preset"
 msgstr "रिसेट गर्नुहोस्"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:105
+#: imageplugins/restoration/restorationtool.cpp:97
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:170
 #: utilities/imageeditor/tools/imageresize.cpp:227
 #, fuzzy
@@ -8697,24 +8623,24 @@ msgstr "रिसेट गर्नुहोस्"
 msgid "Visit CImg library website"
 msgstr "डिजिक्याम परियोजना वेबसाइट हेर्नुहोस्"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:107
+#: imageplugins/restoration/restorationtool.cpp:99
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:172
 msgid "Filtering type:"
 msgstr ""
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:111
+#: imageplugins/restoration/restorationtool.cpp:103
 msgid "Reduce Uniform Noise"
 msgstr ""
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:112
+#: imageplugins/restoration/restorationtool.cpp:104
 msgid "Reduce JPEG Artefacts"
 msgstr ""
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:113
+#: imageplugins/restoration/restorationtool.cpp:105
 msgid "Reduce Texturing"
 msgstr ""
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:114
+#: imageplugins/restoration/restorationtool.cpp:106
 msgid ""
 "<p>Select the filter preset to use for photograph restoration here:"
 "<p><b>None</b>: Most common values. Puts settings to default.<p><b>Reduce "
@@ -8724,43 +8650,37 @@ msgid ""
 "paper texture or Moire patterns of a scanned image.<p>"
 msgstr ""
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:302
-#, fuzzy
-#| msgid "Saturation"
-msgid "Restoration"
-msgstr "स्याचुरेसन"
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:310
+#: imageplugins/restoration/restorationtool.cpp:308
 #, fuzzy
 #| msgid "Color Management Settings File to Load"
 msgid "Photograph Restoration Settings File to Load"
 msgstr "लोड गर्ने रङ व्यवस्थापन सेटिङ फाइल"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:321
+#: imageplugins/restoration/restorationtool.cpp:319
 #, fuzzy, kde-format
 #| msgid "\"%1\" is not a Color Management settings text file."
 msgid "\"%1\" is not a Photograph Restoration settings text file."
 msgstr "\"%1\" रङ व्यवस्थापन सेटिङ पाठ फाइल होइन ।"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:330
+#: imageplugins/restoration/restorationtool.cpp:328
 #, fuzzy
 #| msgid "Cannot load settings from the Color Management text file."
 msgid "Cannot load settings from the Photograph Restoration text file."
 msgstr "रङ व्यवस्थापन पाठ फाइलबाट सेटिङ लोड गर्न सकिदैन ।"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:343
+#: imageplugins/restoration/restorationtool.cpp:341
 #, fuzzy
 #| msgid "Color Management Settings File to Save"
 msgid "Photograph Restoration Settings File to Save"
 msgstr "बचत गर्ने रङ व्यवस्थापन सेटिङ फाइल"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:352
+#: imageplugins/restoration/restorationtool.cpp:350
 #, fuzzy
 #| msgid "Cannot save settings to the Color Management text file."
 msgid "Cannot save settings to the Photograph Restoration text file."
 msgstr "रङ व्यवस्थापन पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
 
-#: imageplugins/restoration/imageplugin_restoration.cpp:48
+#: imageplugins/restoration/imageplugin_restoration.cpp:50
 #, fuzzy
 #| msgid "Settings..."
 msgid "Restoration..."
@@ -9237,10 +9157,10 @@ msgstr ""
 "हिस्टोग्राममा संगत रङ तह हेर्न छविमा रङ टिप्न सक्नुहुन्छ ।"
 
 #: imageplugins/coreplugin/hsl/hsltool.cpp:110
+#: imageplugins/coreplugin/rgbtool.cpp:110
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:130
 #: imageplugins/coreplugin/bcgtool.cpp:111
 #: imageplugins/coreplugin/bwsepiatool.cpp:216
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:98
 #: imageplugins/coreplugin/autocorrectiontool.cpp:112
 #, fuzzy
 #| msgid ""
@@ -9260,12 +9180,12 @@ msgstr ""
 "च्यानल मान प्रर्दशन गर्दछ ।<p>"
 
 #: imageplugins/coreplugin/hsl/hsltool.cpp:121
+#: imageplugins/coreplugin/rgbtool.cpp:119
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:141
 #: imageplugins/coreplugin/bcgtool.cpp:122
+#: imageplugins/coreplugin/redeyetool.cpp:123
 #: imageplugins/coreplugin/bwsepiatool.cpp:227
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:107
 #: imageplugins/coreplugin/autocorrectiontool.cpp:123
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the histogram scale.<p>If the image's maximal counts are "
@@ -9316,7 +9236,7 @@ msgstr "प्रकाश:"
 msgid "<p>Set here the lightness adjustment of the image."
 msgstr "<p>यहाँ छविको प्रकाश समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/coreplugin/hsl/hsltool.cpp:453
+#: imageplugins/coreplugin/hsl/hsltool.cpp:450
 msgid "HSL Adjustments"
 msgstr "HSL समायोजन"
 
@@ -9398,6 +9318,43 @@ msgid ""
 "You need to select a region including the eyes to use the red-eye correction "
 "tool"
 msgstr "तपाईँले रातो-आँखा सुधार उपकरण प्रयोग गर्न आँखा सहितको क्षेत्र चयन गर्नुपर्दछ"
+
+#: imageplugins/coreplugin/rgbtool.cpp:83
+#: imageplugins/coreplugin/rgbtool.cpp:460
+msgid "Color Balance"
+msgstr "रङ सन्तुलन"
+
+#: imageplugins/coreplugin/rgbtool.cpp:89
+msgid ""
+"<p>Here you can see the image color-balance adjustments preview. You can "
+"pick color on image to see the color level corresponding on histogram."
+msgstr ""
+"<p>यहाँ तपाईँले रङ सन्तुलन समायोजन पूर्वावलोकन हेर्न सक्नुहुन्छ । तपाईँले हिस्टोग्राममा संगत "
+"रङ तह हेर्न छविमा रङ टिप्न सक्नुहुन्छ ।"
+
+#: imageplugins/coreplugin/rgbtool.cpp:164
+msgid "Cyan"
+msgstr "क्यान"
+
+#: imageplugins/coreplugin/rgbtool.cpp:173
+msgid "<p>Set here the cyan/red color adjustment of the image."
+msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
+
+#: imageplugins/coreplugin/rgbtool.cpp:185
+msgid "Magenta"
+msgstr "म्याजेन्टा"
+
+#: imageplugins/coreplugin/rgbtool.cpp:194
+msgid "<p>Set here the magenta/green color adjustment of the image."
+msgstr "<p>यहाँ छविको म्याजेन्टा/हरियो रङ समायोजन सेट गर्नुहोस् ।"
+
+#: imageplugins/coreplugin/rgbtool.cpp:206
+msgid "Yellow"
+msgstr "पहेलो"
+
+#: imageplugins/coreplugin/rgbtool.cpp:215
+msgid "<p>Set here the yellow/blue color adjustment of the image."
+msgstr "<p>छविको पहेलो/निलो रङ समायोजन सेट गर्नुहोस् ।"
 
 #: imageplugins/coreplugin/sharpnesseditor/imageeffect_sharpen.cpp:71
 msgid "Sharpening Photograph"
@@ -10272,6 +10229,90 @@ msgstr ""
 msgid "Gaussian Blur"
 msgstr "गाउस्सियन अस्पष्ट"
 
+#: imageplugins/coreplugin/redeyetool.cpp:85
+#, fuzzy
+#| msgid "Red Eye Reduction..."
+msgid "Red Eye"
+msgstr "रातो आँखा न्यूनीकरण..."
+
+#: imageplugins/coreplugin/redeyetool.cpp:92
+#, fuzzy
+#| msgid ""
+#| "<p>Here you can see the image preview after applying a color profile</p>"
+msgid ""
+"<p>Here you can see the image selection preview with red eye reduction "
+"applied."
+msgstr "<p>यहाँ तपाईँले रङ प्रोफाइल लागू गरेपछि छविको पूर्वावलोकन हेर्न सक्नुहुन्छ</p>"
+
+#: imageplugins/coreplugin/redeyetool.cpp:112
+#, fuzzy
+#| msgid ""
+#| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
+#| "display the image's luminosity values.<p><b>Red</b>: display the red "
+#| "image-channel values.<p><b>Green</b>: display the green image-channel "
+#| "values.<p><b>Blue</b>: display the blue image-channel values.<p>"
+msgid ""
+"<p>Select the histogram channel to display:<p><b>Luminosity</b>: display the "
+"image's luminosity values.<p><b>Red</b>: display the red image channel "
+"values.<p><b>Green</b>: display the green image channel values.<p><b>Blue</"
+"b>: display the blue image channel values.<p>"
+msgstr ""
+"<p>प्रर्दशन गर्नका लागि हिस्टोग्राम च्यानल यहाँ चयन गर्नुहोस्:<p><b>ज्योति</b>: छविको "
+"ज्योति मान प्रर्दशन गर्दछ ।<p><b>रातो</b>: रातो छवि च्यानल मान प्रर्दशन गर्दछ "
+"।<p><b>हरियो</b>: हरियो छवि च्यानल मान प्रर्दशन गर्दछ ।<p><b>निलो</b>: निलो छवि "
+"च्यानल मान प्रर्दशन गर्दछ ।<p>"
+
+#: imageplugins/coreplugin/redeyetool.cpp:158
+#, fuzzy
+#| msgid ""
+#| "<p>Here you can see the target preview image histogram of the selected "
+#| "image channel. This one is updated after setting changes."
+msgid ""
+"<p>Here you can see the target preview image histogram of the selected image "
+"channel. It is updated upon setting changes."
+msgstr ""
+"<p>यहाँ तपाईँले चयन गरेको छवि च्यानलको लक्ष्य पूर्वावलोकन छवि हिस्टोग्राम हेर्न सक्नुहुन्छ । "
+"सेटिङ परिवर्तन गरेपछि यो एउटा अद्यावधिक गरिन्छ ।"
+
+#: imageplugins/coreplugin/redeyetool.cpp:173
+msgid ""
+"<p>Sets the red color pixels selection threshold. Low values will select "
+"more red color pixels (agressive correction), high values less (mild "
+"correction). Use low value if eye have been selected exactly. Use high value "
+"if other parts of the face are also selected."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:183
+msgid ""
+"<p>Sets the smoothness value when blurring the border of the changed pixels. "
+"This leads to a more naturally looking pupil."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:187
+#, fuzzy
+#| msgid "Color and width:"
+msgid "Coloring Tint:"
+msgstr "रङ र चौडाइ:"
+
+#: imageplugins/coreplugin/redeyetool.cpp:190
+msgid "<p>Sets a custom color when re-colorizing the eyes."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:200
+#, fuzzy
+#| msgid "Level:"
+msgid "Tint Level:"
+msgstr "तह:"
+
+#: imageplugins/coreplugin/redeyetool.cpp:205
+msgid ""
+"<p>Set the tint level to adjust the luminosity of the new color of the pupil."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:472
+msgid "Red Eyes Correction"
+msgstr "रातो आँखा सुधार"
+
 #: imageplugins/coreplugin/bwsepiatool.cpp:181
 #, fuzzy
 #| msgid "Black && White..."
@@ -10712,43 +10753,6 @@ msgstr "बचत गर्ने श्यामश्वेत सेटिङ
 msgid "Cannot save settings to the Black & White text file."
 msgstr "श्यामश्वेत पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
 
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:74
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:450
-msgid "Color Balance"
-msgstr "रङ सन्तुलन"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:80
-msgid ""
-"<p>Here you can see the image color-balance adjustments preview. You can "
-"pick color on image to see the color level corresponding on histogram."
-msgstr ""
-"<p>यहाँ तपाईँले रङ सन्तुलन समायोजन पूर्वावलोकन हेर्न सक्नुहुन्छ । तपाईँले हिस्टोग्राममा संगत "
-"रङ तह हेर्न छविमा रङ टिप्न सक्नुहुन्छ ।"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:152
-msgid "Cyan"
-msgstr "क्यान"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:161
-msgid "<p>Set here the cyan/red color adjustment of the image."
-msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:173
-msgid "Magenta"
-msgstr "म्याजेन्टा"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:182
-msgid "<p>Set here the magenta/green color adjustment of the image."
-msgstr "<p>यहाँ छविको म्याजेन्टा/हरियो रङ समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:194
-msgid "Yellow"
-msgstr "पहेलो"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:203
-msgid "<p>Set here the yellow/blue color adjustment of the image."
-msgstr "<p>छविको पहेलो/निलो रङ समायोजन सेट गर्नुहोस् ।"
-
 #: imageplugins/coreplugin/autocorrectiontool.cpp:80
 #, fuzzy
 #| msgid "Auto-Correction..."
@@ -10764,7 +10768,7 @@ msgstr ""
 "संगत रङ तह हेर्न छविबाट रङ लिन सक्नुहुन्छ ।"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:172
-#: imageplugins/coreplugin/autocorrectiontool.cpp:388
+#: imageplugins/coreplugin/autocorrectiontool.cpp:385
 msgid "Auto Levels"
 msgstr "स्वत: तह"
 
@@ -10780,7 +10784,7 @@ msgstr ""
 "हरियो र निलो च्यानललाई पूरा हिस्टोग्राम दायरामा समायोजन गर्दछ ।</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:181
-#: imageplugins/coreplugin/autocorrectiontool.cpp:392
+#: imageplugins/coreplugin/autocorrectiontool.cpp:389
 msgid "Normalize"
 msgstr "सामान्यीकरण"
 
@@ -10797,7 +10801,7 @@ msgstr ""
 "।</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:191
-#: imageplugins/coreplugin/autocorrectiontool.cpp:396
+#: imageplugins/coreplugin/autocorrectiontool.cpp:393
 msgid "Equalize"
 msgstr "तुल्यकारक"
 
@@ -10818,7 +10822,7 @@ msgstr ""
 "सञ्चालन हो जसले कहिले काहि धेरै राम्रो काम गर्दछ र कहिले काहि छविलाई खत्तम बनाउछ ।</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:204
-#: imageplugins/coreplugin/autocorrectiontool.cpp:400
+#: imageplugins/coreplugin/autocorrectiontool.cpp:397
 msgid "Stretch Contrast"
 msgstr "व्यतिरेक फैलाउनुहोस्"
 
@@ -10833,7 +10837,7 @@ msgstr ""
 "p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:213
-#: imageplugins/coreplugin/autocorrectiontool.cpp:404
+#: imageplugins/coreplugin/autocorrectiontool.cpp:401
 msgid "Auto Exposure"
 msgstr "स्वत: प्रर्दशन"
 
@@ -10845,90 +10849,6 @@ msgid ""
 msgstr ""
 "<b>स्वत: प्रर्दशन</b>:<p>यो विकल्पले छवि हिस्टोग्राम गुण प्रयोग गरेर अनुकूल प्रर्दशन र "
 "कालो तह गणना गर्न छविको RGB मानको व्यतिरेक र चम्किलोपन बढाउछ ।</p>"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:77
-#, fuzzy
-#| msgid "Red Eye Reduction..."
-msgid "Red Eye Reduction"
-msgstr "रातो आँखा न्यूनीकरण..."
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:83
-#, fuzzy
-#| msgid ""
-#| "<p>Here you can see the image preview after applying a color profile</p>"
-msgid ""
-"<p>Here you can see the image selection preview with red eye reduction "
-"applied."
-msgstr "<p>यहाँ तपाईँले रङ प्रोफाइल लागू गरेपछि छविको पूर्वावलोकन हेर्न सक्नुहुन्छ</p>"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:100
-#, fuzzy
-#| msgid ""
-#| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
-#| "display the image's luminosity values.<p><b>Red</b>: display the red "
-#| "image-channel values.<p><b>Green</b>: display the green image-channel "
-#| "values.<p><b>Blue</b>: display the blue image-channel values.<p>"
-msgid ""
-"<p>Select the histogram channel to display:<p><b>Luminosity</b>: display the "
-"image's luminosity values.<p><b>Red</b>: display the red image channel "
-"values.<p><b>Green</b>: display the green image channel values.<p><b>Blue</"
-"b>: display the blue image channel values.<p>"
-msgstr ""
-"<p>प्रर्दशन गर्नका लागि हिस्टोग्राम च्यानल यहाँ चयन गर्नुहोस्:<p><b>ज्योति</b>: छविको "
-"ज्योति मान प्रर्दशन गर्दछ ।<p><b>रातो</b>: रातो छवि च्यानल मान प्रर्दशन गर्दछ "
-"।<p><b>हरियो</b>: हरियो छवि च्यानल मान प्रर्दशन गर्दछ ।<p><b>निलो</b>: निलो छवि "
-"च्यानल मान प्रर्दशन गर्दछ ।<p>"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:146
-#, fuzzy
-#| msgid ""
-#| "<p>Here you can see the target preview image histogram of the selected "
-#| "image channel. This one is updated after setting changes."
-msgid ""
-"<p>Here you can see the target preview image histogram of the selected image "
-"channel. It is updated upon setting changes."
-msgstr ""
-"<p>यहाँ तपाईँले चयन गरेको छवि च्यानलको लक्ष्य पूर्वावलोकन छवि हिस्टोग्राम हेर्न सक्नुहुन्छ । "
-"सेटिङ परिवर्तन गरेपछि यो एउटा अद्यावधिक गरिन्छ ।"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:161
-msgid ""
-"<p>Sets the red color pixels selection threshold. Low values will select "
-"more red color pixels (agressive correction), high values less (mild "
-"correction). Use low value if eye have been selected exactly. Use high value "
-"if other parts of the face are also selected."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:171
-msgid ""
-"<p>Sets the smoothness value when blurring the border of the changed pixels. "
-"This leads to a more naturally looking pupil."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:175
-#, fuzzy
-#| msgid "Color and width:"
-msgid "Coloring Tint:"
-msgstr "रङ र चौडाइ:"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:178
-msgid "<p>Sets a custom color when re-colorizing the eyes."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:188
-#, fuzzy
-#| msgid "Level:"
-msgid "Tint Level:"
-msgstr "तह:"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:193
-msgid ""
-"<p>Set the tint level to adjust the luminosity of the new color of the pupil."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:461
-msgid "Red Eyes Correction"
-msgstr "रातो आँखा सुधार"
 
 #: imageplugins/sheartool/imageplugin_sheartool.cpp:47
 #, fuzzy
@@ -11042,6 +10962,22 @@ msgstr "फोटोग्राफ सूचना"
 
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:139
 msgid "A digiKam image plugin to inpaint a photograph."
+msgstr ""
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
+msgid "David Tschumperle"
+msgstr ""
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
+msgid "CImg library"
+msgstr ""
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
+msgid "Gerhard Kulzer"
+msgstr ""
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
+msgid "Feedback and plugin polishing"
 msgstr ""
 
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:176
@@ -13784,10 +13720,6 @@ msgstr ""
 msgid "Please wait while the image is being saved..."
 msgstr "कृपया छवि बचत हुँदै गर्दा प्रतिक्षा गर्नुहोस्..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1259
-msgid "Loading: "
-msgstr "लोड हुँदैछ: "
-
 #: utilities/imageeditor/editor/editorwindow.cpp:1277
 #, kde-format
 msgid "Failed to load image \"%1\""
@@ -16078,6 +16010,33 @@ msgid ""
 "to perform a\n"
 "Fuzzy search"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Color Managed View"
+#~ msgid "Color Channel Mixer"
+#~ msgstr "रङ सन्तुलित दृश्य"
+
+#, fuzzy
+#~| msgid "(c) 2004-2007, digiKam developers team"
+#~ msgid ""
+#~ "(c) 2005-2006, Unai Garro\n"
+#~ "(c) 2005-2008, Gilles Caulier"
+#~ msgstr "(प्रतिलिपि अधिकार) २००४-२००७, डिजिक्याम विकासकर्ता समूह"
+
+#, fuzzy
+#~| msgid "Auto Levels"
+#~ msgid "Adjust Color Levels"
+#~ msgstr "स्वत: तह"
+
+#, fuzzy
+#~| msgid "Photograph Information"
+#~ msgid "Photograph Restoration"
+#~ msgstr "फोटोग्राफ सूचना"
+
+#, fuzzy
+#~| msgid "Red Eye Reduction..."
+#~ msgid "Red Eye Reduction"
+#~ msgstr "रातो आँखा न्यूनीकरण..."
 
 #~ msgid "Auto Color Correction"
 #~ msgstr "स्वत: रङ सुधार"
