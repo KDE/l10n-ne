@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: webarchiver\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:12+0200\n"
+"POT-Creation-Date: 2008-10-12 09:46+0200\n"
 "PO-Revision-Date: 2007-08-19 15:59+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -16,17 +16,27 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#. i18n: file: archiveviewbase.ui:16
+#. i18n: file: archiveviewbase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, ArchiveViewBase)
-#: archivedialog.cpp:54 rc.cpp:3
+#: archivedialog.cpp:150 rc.cpp:3
 msgid "Web Archiver"
 msgstr "वेब सङ्ग्रहकर्ता"
 
-#: archivedialog.cpp:90
+#: archivedialog.cpp:157
+#, fuzzy
+#| msgid "State"
+msgid "Status"
+msgstr "स्थिति"
+
+#: archivedialog.cpp:158
+msgid "Url"
+msgstr ""
+
+#: archivedialog.cpp:231
 msgid "Unable to Open Web-Archive"
 msgstr "वेब सङ्ग्रह खोल्न असक्षम भयो"
 
-#: archivedialog.cpp:91
+#: archivedialog.cpp:232
 #, kde-format
 msgid ""
 "Unable to open \n"
@@ -37,43 +47,44 @@ msgstr ""
 " %1 \n"
 "खोल्न असक्षम भयो ।"
 
-#: archivedialog.cpp:146
-msgid "Archiving webpage completed."
-msgstr "वेबपृष्ठको सङ्ग्रह समाप्त भयो ।"
-
-#: archivedialog.cpp:437
+#: archivedialog.cpp:363
 msgid "Downloading"
 msgstr "डाउनलोड हुँदैछ"
 
-#: archivedialog.cpp:449
+#: archivedialog.cpp:384
 msgid "Error"
 msgstr "त्रुटि"
 
-#: archivedialog.cpp:452
+#: archivedialog.cpp:384
 msgid "Ok"
 msgstr "ठीक छ"
 
-#: plugin_webarchiver.cpp:57
+#: archivedialog.cpp:412
+#, kde-format
+msgid "I/O error occured while writing to web archive file %1"
+msgstr ""
+
+#: plugin_webarchiver.cpp:59
 msgid "Archive &Web Page..."
 msgstr "सङ्ग्रह वेब पृष्ठ..."
 
-#: plugin_webarchiver.cpp:76
+#: plugin_webarchiver.cpp:79
 msgid "Untitled"
 msgstr "असिमित"
 
-#: plugin_webarchiver.cpp:89
+#: plugin_webarchiver.cpp:98
 msgid "*.war *.tgz|Web Archives"
 msgstr "*.war *.tgz|वेब सङ्ग्रह"
 
-#: plugin_webarchiver.cpp:90
+#: plugin_webarchiver.cpp:99
 msgid "Save Page as Web-Archive"
 msgstr "वेब सङ्ग्रहको रूपमा पृष्ठ बचत गर्नुहोस्"
 
-#: plugin_webarchiver.cpp:95
+#: plugin_webarchiver.cpp:104
 msgid "Invalid URL"
 msgstr "अवैध यूआरएल"
 
-#: plugin_webarchiver.cpp:96
+#: plugin_webarchiver.cpp:105
 #, kde-format
 msgid ""
 "The URL\n"
@@ -84,11 +95,11 @@ msgstr ""
 "%1\n"
 "अवैध छ ।"
 
-#: plugin_webarchiver.cpp:103
+#: plugin_webarchiver.cpp:115
 msgid "File Exists"
 msgstr "फाइल अवस्थित छ"
 
-#: plugin_webarchiver.cpp:104
+#: plugin_webarchiver.cpp:116
 #, kde-format
 msgid ""
 "Do you really want to overwrite:\n"
@@ -97,45 +108,45 @@ msgstr ""
 "तपाईँ साँच्चिकै अधिलेखन गर्न चाहनुहुन्छ :\n"
 "%1?"
 
-#: plugin_webarchiver.cpp:105
+#: plugin_webarchiver.cpp:117
 msgid "Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#. i18n: file: archiveviewbase.ui:41
+#. i18n: file: archiveviewbase.ui:39
 #. i18n: ectx: property (text), widget (QLabel, targetLabel)
 #: rc.cpp:6
 msgid "Local File"
 msgstr "स्थानीय फाइल"
 
-#. i18n: file: archiveviewbase.ui:51
+#. i18n: file: archiveviewbase.ui:55
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: rc.cpp:9
 msgid "To:"
 msgstr "लाई:"
 
-#. i18n: file: archiveviewbase.ui:61
+#. i18n: file: archiveviewbase.ui:65
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: rc.cpp:12
 msgid "Archiving:"
 msgstr "सङ्ग्रह गर्दै:"
 
-#. i18n: file: archiveviewbase.ui:85
+#. i18n: file: archiveviewbase.ui:81
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
 #: rc.cpp:15
 msgid "Original URL"
 msgstr "मौलिक यूआरएल"
 
-#. i18n: file: archiveviewbase.ui:107
-#. i18n: ectx: property (text), widget (K3ListView, listView)
+#. i18n: file: archiveviewbase.ui:109
+#. i18n: ectx: property (text), widget (QTreeWidget, progressView)
 #: rc.cpp:18
-msgid "URL"
-msgstr "यूआरएल"
+msgid "1"
+msgstr ""
 
-#. i18n: file: archiveviewbase.ui:118
-#. i18n: ectx: property (text), widget (K3ListView, listView)
+#. i18n: file: archiveviewbase.ui:114
+#. i18n: ectx: property (text), widget (QTreeWidget, progressView)
 #: rc.cpp:21
-msgid "State"
-msgstr "स्थिति"
+msgid "2"
+msgstr ""
 
 #. i18n: file: plugin_webarchiver.rc:4
 #. i18n: ectx: Menu (tools)
@@ -148,3 +159,9 @@ msgstr "उपकरण"
 #: rc.cpp:27
 msgid "Extra Toolbar"
 msgstr "अतिरिक्त उपकरणपट्टी"
+
+#~ msgid "Archiving webpage completed."
+#~ msgstr "वेबपृष्ठको सङ्ग्रह समाप्त भयो ।"
+
+#~ msgid "URL"
+#~ msgstr "यूआरएल"
