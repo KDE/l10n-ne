@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-12 09:42+0200\n"
+"POT-Creation-Date: 2008-10-13 09:45+0200\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -396,10 +396,10 @@ msgstr "प्रेषक परिचय:"
 
 #: accountwizard.cpp:219
 msgid ""
-"An identity is your email address, name, organization and so on.<br/>Do not "
-"uncheck this if you do not know what you are doing<br/>as some servers "
-"refuses to send mail if the sending identity<br/>does not match the one "
-"belonging to that account."
+"<qt>An identity is your email address, name, organization and so on. Do not "
+"uncheck this if you do not know what you are doing, as some servers refuse "
+"to send mail if the sending identity does not match the one belonging to "
+"that account.</qt>"
 msgstr ""
 
 #: accountwizard.cpp:234
@@ -861,32 +861,32 @@ msgstr "फोल्डर %1 पढ्दा सर्भरमा त्रु
 msgid "Error while trying to rename folder %1"
 msgstr "फोल्डर %1 लाई पुन: नामकरण गर्ने प्रयास गर्दा त्रुटि"
 
-#: callback.cpp:74
+#: callback.cpp:75
 msgid "Answer: "
 msgstr "जाजवाफ: "
 
-#: callback.cpp:76
+#: callback.cpp:77
 #, fuzzy, kde-format
 #| msgid "Declined: %1"
 msgctxt "Not able to attend."
 msgid "Declined: %1"
 msgstr "घटाइएको: %1 "
 
-#: callback.cpp:78
+#: callback.cpp:79
 #, fuzzy, kde-format
 #| msgid "Tentative: %1"
 msgctxt "Unsure if it is possible to attend."
 msgid "Tentative: %1"
 msgstr "अस्थायी: %1"
 
-#: callback.cpp:80
+#: callback.cpp:81
 #, fuzzy, kde-format
 #| msgid "Accepted: %1"
 msgctxt "Accepted the invitation."
 msgid "Accepted: %1"
 msgstr "स्वीकृत: %1"
 
-#: callback.cpp:178
+#: callback.cpp:179
 #, fuzzy
 #| msgid ""
 #| "<qt>None of your identities match the receiver of this message,<br>please "
@@ -899,7 +899,7 @@ msgstr ""
 "<qt>यो सन्देशको प्रापकसँग तपाईँको कुनै पनि परिचय मिल्दैन,<br>यदि भएमा, कृपया तलका "
 "ठेगानामा तपाईँका ठेगाना रोज्नुहोस्:"
 
-#: callback.cpp:185
+#: callback.cpp:186
 #, fuzzy
 #| msgid ""
 #| "<qt>Several of your identities match the receiver of this message,"
@@ -911,7 +911,7 @@ msgstr ""
 "<qt>यो सन्देशको प्रापकसँग तपाईँका धेरै परिचय मिल्दछन्,<br>कृपया तलका ठेगानामा तपाईँको "
 "ठेगाना रोज्नुहोस्:"
 
-#: callback.cpp:192
+#: callback.cpp:197
 msgid "Select Address"
 msgstr "ठेगाना चयन गर्नुहोस्"
 
@@ -2961,7 +2961,7 @@ msgstr ""
 "फाइल %1 लेख्न सकेन:\n"
 "\"%2\" विस्तृत त्रुटि विवरण हो ।"
 
-#: filterlogdlg.cpp:270 kmcommands.cpp:2635 kmcommands.cpp:2660
+#: filterlogdlg.cpp:270 kmcommands.cpp:2639 kmcommands.cpp:2664
 #: kmmainwidget.cpp:1926 kmmainwidget.cpp:1937 urlhandlermanager.cpp:478
 msgid "KMail Error"
 msgstr "केडीई मेल त्रुटि"
@@ -4560,26 +4560,44 @@ msgstr[0] "maildir फोल्डर %2 बाट १ सन्देश ता
 msgstr[1] "maildir फोल्डर %2 बाट %1 सन्देश तानियो ।"
 
 #: kmailicalifaceimpl.cpp:91 kmfolderdialog.cpp:481 newfolderdialog.cpp:148
+#, fuzzy
+#| msgid "Mail"
+msgctxt "type of folder content"
 msgid "Mail"
 msgstr "मेल"
 
 #: kmailicalifaceimpl.cpp:92 kmfolderdialog.cpp:482 newfolderdialog.cpp:149
+#, fuzzy
+#| msgid "Calendar"
+msgctxt "type of folder content"
 msgid "Calendar"
 msgstr "क्यालेन्डर"
 
 #: kmailicalifaceimpl.cpp:93 kmfolderdialog.cpp:483 newfolderdialog.cpp:150
+#, fuzzy
+#| msgid "Contacts"
+msgctxt "type of folder content"
 msgid "Contacts"
 msgstr "सम्पर्क"
 
 #: kmailicalifaceimpl.cpp:94 kmfolderdialog.cpp:484 newfolderdialog.cpp:151
+#, fuzzy
+#| msgid "Notes"
+msgctxt "type of folder content"
 msgid "Notes"
 msgstr "टिपोट"
 
 #: kmailicalifaceimpl.cpp:95 kmfolderdialog.cpp:485 newfolderdialog.cpp:152
+#, fuzzy
+#| msgid "Tasks"
+msgctxt "type of folder content"
 msgid "Tasks"
 msgstr "कार्य"
 
 #: kmailicalifaceimpl.cpp:96 kmfolderdialog.cpp:486 newfolderdialog.cpp:153
+#, fuzzy
+#| msgid "Journal"
+msgctxt "type of folder content"
 msgid "Journal"
 msgstr "जर्नल"
 
@@ -4647,17 +4665,18 @@ msgstr "मानक ग्रुपवेयर फोल्डर"
 msgid "Default folder"
 msgstr "फोल्डर मेट्नुहोस्"
 
-#: kmailicalifaceimpl.cpp:1974
+#: kmailicalifaceimpl.cpp:1975
 #, kde-format
+msgctxt "%1 is one of the messages with context 'type of folder content'"
 msgid "There are multiple %1 default folders, please choose one:"
 msgstr ""
 
-#: kmailicalifaceimpl.cpp:2000
+#: kmailicalifaceimpl.cpp:2001
 #, kde-format
 msgid "You do not have read/write permission to your %1 folder."
 msgstr "तपाईँलाई %1 फोल्डरमा पढ्न/लेख्न अनुमति छैन ।"
 
-#: kmailicalifaceimpl.cpp:2058
+#: kmailicalifaceimpl.cpp:2059
 #, fuzzy
 #| msgid "You do not have read/write permission to your %1 folder."
 msgid "You do not have read/write permission to your folder."
@@ -4780,90 +4799,90 @@ msgstr "सन्देश सार्दैछ"
 msgid "Deleting messages"
 msgstr "सन्देश मेट्दैछ"
 
-#: kmcommands.cpp:2319
+#: kmcommands.cpp:2323
 msgid "Opening URL..."
 msgstr "यूआरएल खोल्दैछ..."
 
-#: kmcommands.cpp:2328
+#: kmcommands.cpp:2332
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
 msgctxt "@info"
 msgid "Do you really want to execute <filename>%1</filename>?"
 msgstr "<qt>के तपाईँ वास्तवमै <b>%1</b> कार्यान्वयन गर्न चाहनुहुन्छ?</qt>"
 
-#: kmcommands.cpp:2329
+#: kmcommands.cpp:2333
 msgid "Execute"
 msgstr "कार्यान्वयन गर्नुहोस्"
 
-#: kmcommands.cpp:2410
+#: kmcommands.cpp:2414
 msgid "Found no attachments to save."
 msgstr "बचत गर्न सङ्लग्नता फेला पारेन ।"
 
-#: kmcommands.cpp:2423
+#: kmcommands.cpp:2427
 msgid "Save Attachments To"
 msgstr "यसमा सङ्लग्नता बचत गर्नुहोस्"
 
-#: kmcommands.cpp:2443
+#: kmcommands.cpp:2447
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr "सङ्लग्नता.१"
 
-#: kmcommands.cpp:2472
+#: kmcommands.cpp:2476
 #, kde-format
 msgctxt "filename for the %1-th unnamed attachment"
 msgid "attachment.%1"
 msgstr "सङ्लग्नता.%1"
 
-#: kmcommands.cpp:2512 kmcommands.cpp:2521
+#: kmcommands.cpp:2516 kmcommands.cpp:2525
 #, kde-format
 msgid "A file named %1 already exists. Do you want to overwrite it?"
 msgstr "%1 नाम गरिएको फाइल पहिलानै अवस्थित छ । के तपाईँ यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: kmcommands.cpp:2514 kmcommands.cpp:2523
+#: kmcommands.cpp:2518 kmcommands.cpp:2527
 msgid "File Already Exists"
 msgstr "फाइल पहिलानै अवस्थित छ"
 
-#: kmcommands.cpp:2514 kmcommands.cpp:2523
+#: kmcommands.cpp:2518 kmcommands.cpp:2527
 msgid "&Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: kmcommands.cpp:2524
+#: kmcommands.cpp:2528
 #, fuzzy
 #| msgid "Overwrite File?"
 msgid "Overwrite &All"
 msgstr "फाइल अधिलेखन गर्नुभयो?"
 
-#: kmcommands.cpp:2549
+#: kmcommands.cpp:2553
 #, kde-format
 msgid ""
 "The part %1 of the message is encrypted. Do you want to keep the encryption "
 "when saving?"
 msgstr "सन्देशको %1 भाग गुप्तिकृत गरिएको छ । के तपाईँ बचत गर्दा गुप्तिकरण राख्न चाहनुहुन्छ?"
 
-#: kmcommands.cpp:2551 kmcommands.cpp:2560
+#: kmcommands.cpp:2555 kmcommands.cpp:2564
 msgid "KMail Question"
 msgstr "केडीई मेल प्रश्न"
 
-#: kmcommands.cpp:2551
+#: kmcommands.cpp:2555
 msgid "Keep Encryption"
 msgstr "गुप्तिकरण राख्नुहोस्"
 
-#: kmcommands.cpp:2551 kmcommands.cpp:2560
+#: kmcommands.cpp:2555 kmcommands.cpp:2564
 msgid "Do Not Keep"
 msgstr "नराख्नुहोस्"
 
-#: kmcommands.cpp:2558
+#: kmcommands.cpp:2562
 #, kde-format
 msgid ""
 "The part %1 of the message is signed. Do you want to keep the signature when "
 "saving?"
 msgstr "सन्देशको %1 भाग हस्ताक्षर गरिएको छ । के तपाईँ बचत गर्दा हस्ताक्षर राख्न चाहनुहुन्छ?"
 
-#: kmcommands.cpp:2560
+#: kmcommands.cpp:2564
 msgid "Keep Signature"
 msgstr "हस्ताक्षर राख्नुहोस्"
 
-#: kmcommands.cpp:2632
+#: kmcommands.cpp:2636
 #, kde-format
 msgctxt "%2 is detailed error description"
 msgid ""
@@ -4873,12 +4892,12 @@ msgstr ""
 "फाइल %1 लेख्न सकेन:\n"
 "%2"
 
-#: kmcommands.cpp:2658
+#: kmcommands.cpp:2662
 #, kde-format
 msgid "Could not write the file %1."
 msgstr "फाइल %1 लेख्न सकेन ।"
 
-#: kmcommands.cpp:3072 kmcomposewin.cpp:4174 objecttreeparser.cpp:1661
+#: kmcommands.cpp:3076 kmcomposewin.cpp:4174 objecttreeparser.cpp:1661
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -4886,15 +4905,15 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डले \"x प्राप्त गर्ने कुञ्जी\" प्रकार्य प्रस्ताव गर्दैन । कृपया यो बग "
 "प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3074 kmcommands.cpp:3079 kmcommands.cpp:3088
-#: kmcommands.cpp:3097 kmcommands.cpp:3115 kmcommands.cpp:3126
-#: kmcommands.cpp:3166 kmcomposewin.cpp:4176 kmcomposewin.cpp:4181
+#: kmcommands.cpp:3078 kmcommands.cpp:3083 kmcommands.cpp:3092
+#: kmcommands.cpp:3101 kmcommands.cpp:3119 kmcommands.cpp:3130
+#: kmcommands.cpp:3170 kmcomposewin.cpp:4176 kmcomposewin.cpp:4181
 #: kmcomposewin.cpp:4190 messagecomposer.cpp:592 messagecomposer.cpp:600
 #: messagecomposer.cpp:614 objecttreeparser.cpp:1667
 msgid "Chiasmus Backend Error"
 msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
 
-#: kmcommands.cpp:3085 kmcomposewin.cpp:4187 objecttreeparser.cpp:1673
+#: kmcommands.cpp:3089 kmcomposewin.cpp:4187 objecttreeparser.cpp:1673
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -4902,25 +4921,25 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x प्राप्ति कुञ्जी \" प्रकार्यले स्ट्रिङ सूची "
 "फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3094 kmcomposewin.cpp:4196 objecttreeparser.cpp:1681
+#: kmcommands.cpp:3098 kmcomposewin.cpp:4196 objecttreeparser.cpp:1681
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 "कुञ्जी फेला परेको छैन । कृपया व्यतिक्रम कन्फिगरेसनमा वैध कुञ्जी बाटो सेट भएको जाँच गर्नुहोस् ।"
 
-#: kmcommands.cpp:3101 objecttreeparser.cpp:1688
+#: kmcommands.cpp:3105 objecttreeparser.cpp:1688
 msgid "Chiasmus Decryption Key Selection"
 msgstr "गुप्तिकरण व्यतिक्रम कुञ्जी चयन"
 
-#: kmcommands.cpp:3113 objecttreeparser.cpp:1700
+#: kmcommands.cpp:3117 objecttreeparser.cpp:1700
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
 msgstr ""
 "व्यतिक्रम ब्याकइन्डले \"x-decrypt\" प्रकार्य प्रस्ताव गर्दैन । कृपया बग प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3124 objecttreeparser.cpp:1708
+#: kmcommands.cpp:3128 objecttreeparser.cpp:1708
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
@@ -4928,11 +4947,11 @@ msgstr ""
 "\"x-decrypt\" प्रकार्यले अपेक्षित परिमिति स्वीकार गर्दैन । कृपया यो बग प्रतिवेदन गर्नुहोस् "
 "।"
 
-#: kmcommands.cpp:3132 kmcommands.cpp:3158 objecttreeparser.cpp:1714
+#: kmcommands.cpp:3136 kmcommands.cpp:3162 objecttreeparser.cpp:1714
 msgid "Chiasmus Decryption Error"
 msgstr "ब्यतिक्रम गुप्तिकरण उल्टाउने त्रुटि"
 
-#: kmcommands.cpp:3163 objecttreeparser.cpp:1720
+#: kmcommands.cpp:3167 objecttreeparser.cpp:1720
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -4940,18 +4959,18 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x-decrypt\" प्रकार्यले बाइट एरे फर्काएको "
 "छैन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
 
-#: kmcommands.cpp:3318
+#: kmcommands.cpp:3322
 #, fuzzy
 #| msgid "Show attachments as suggested by sender."
 msgid "This attachment has been deleted."
 msgstr "प्रेषकद्वारा सुझाव गरिए अनुरुपका सङ्लग्नता देखाउनुहोस् ।"
 
-#: kmcommands.cpp:3320
+#: kmcommands.cpp:3324
 #, kde-format
 msgid "The attachment '%1' has been deleted."
 msgstr ""
 
-#: kmcommands.cpp:3440
+#: kmcommands.cpp:3444
 #, kde-format
 msgid ""
 "From: %1\n"
@@ -4959,7 +4978,7 @@ msgid ""
 "Subject: %3"
 msgstr ""
 
-#: kmcommands.cpp:3455
+#: kmcommands.cpp:3459
 #, fuzzy, kde-format
 #| msgid "X-Mailer: "
 msgid "Mail: %1"
@@ -12963,7 +12982,7 @@ msgstr "सन्देश पठाउनुहोस्"
 msgid "&Quote indicator:"
 msgstr "उद्धरण सूचक:"
 
-#. i18n: file: templatesconfiguration_base.ui:298
+#. i18n: file: templatesconfiguration_base.ui:300
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, lineEdit_quote)
 #: rc.cpp:1067
 #, no-c-format
@@ -12971,27 +12990,29 @@ msgid ""
 "\n"
 "             <qt>The following placeholders are supported in the quote "
 "indicator:\n"
-"             <li>%f: sender's initals</li>\n"
+"             <ul>\n"
+"             <li>%f: sender's initials</li>\n"
 "             <li>%%: percent sign</li>\n"
-"             <li>%_: space</li></qt>\n"
+"             <li>%_: space</li>\n"
+"             </ul></qt>\n"
 "           "
 msgstr ""
 
 #. i18n: file: warningconfiguration.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, mWarnUnsigned)
-#: rc.cpp:1075
+#: rc.cpp:1077
 msgid "Warn when trying to send &unsigned messages"
 msgstr "चिन्ह नलगाएका सन्देश पठाउने प्रयासमा चेतावनी दिनुहोस्"
 
 #. i18n: file: warningconfiguration.ui:25
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWarnUnsigned)
-#: rc.cpp:1078
+#: rc.cpp:1080
 msgid "Check to be warned when sending unsigned messages."
 msgstr "चिन्ह नलगाएका सन्देश पठाउदा चेतावनी दिन चेक गर्नुहोस्"
 
 #. i18n: file: warningconfiguration.ui:33
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWarnUnsigned)
-#: rc.cpp:1081
+#: rc.cpp:1083
 msgid ""
 "<qt>\n"
 "<h1>Warn When Trying To Send Unsigned Messages</h1>\n"
@@ -13011,19 +13032,19 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:40
 #. i18n: ectx: property (text), widget (QCheckBox, warnUnencryptedCB)
-#: rc.cpp:1089
+#: rc.cpp:1091
 msgid "&Warn when trying to send unencrypted messages"
 msgstr "गुप्तिकरण नगरिएका सन्देश पठाउने प्रयास गर्दा चेतावनी दिनुहोस्"
 
 #. i18n: file: warningconfiguration.ui:46
 #. i18n: ectx: property (toolTip), widget (QCheckBox, warnUnencryptedCB)
-#: rc.cpp:1092
+#: rc.cpp:1094
 msgid "Check to be warned when sending unencrypted messages."
 msgstr "गुप्तिकरण नगरिएका सन्देश पठाउदा चेतावनी दिनका लागि जाँच गर्नुहोस् ।"
 
 #. i18n: file: warningconfiguration.ui:54
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, warnUnencryptedCB)
-#: rc.cpp:1095
+#: rc.cpp:1097
 msgid ""
 "<qt>\n"
 "<h1>Warn When Trying To Send Unencrypted Messages</h1>\n"
@@ -13043,19 +13064,19 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:61
 #. i18n: ectx: property (text), widget (QCheckBox, warnReceiverNotInCertificateCB)
-#: rc.cpp:1103
+#: rc.cpp:1105
 msgid "Warn if &Receiver's Email Address is Not in Certificate"
 msgstr "प्रमाणपत्रमा प्रापकको इमेल ठेगाना नभएमा चेतावनी दिनुहोस्"
 
 #. i18n: file: warningconfiguration.ui:67
 #. i18n: ectx: property (toolTip), widget (QCheckBox, warnReceiverNotInCertificateCB)
-#: rc.cpp:1106
+#: rc.cpp:1108
 msgid "Check to be warned if the address is not in the certificate"
 msgstr "प्रापकको इमेल ठेगाना प्रमाणपत्रमा नभएमा चेतावनी दिनका लागि जाँच गर्नुहोस्"
 
 #. i18n: file: warningconfiguration.ui:75
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, warnReceiverNotInCertificateCB)
-#: rc.cpp:1109
+#: rc.cpp:1111
 msgid ""
 "<qt>\n"
 "<h1>Warn If Receiver's Email Address Is Not In Certificate</h1>\n"
@@ -13075,7 +13096,7 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:82
 #. i18n: ectx: property (title), widget (QGroupBox, warnGroupBox)
-#: rc.cpp:1117
+#: rc.cpp:1119
 msgid "Warn if certificates/keys expire soon (configure thresholds below)"
 msgstr ""
 "प्रमाणपत्र/कुञ्जीको चाडै म्याद समाप्त हुने भएमा चेतावनी दिनुहोस् (तलका थ्रेसहोल्ड कन्फिगर "
@@ -13083,19 +13104,19 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:91
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1120
+#: rc.cpp:1122
 msgid "For signing"
 msgstr "साइनिङका लागि"
 
 #. i18n: file: warningconfiguration.ui:104
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:1123
+#: rc.cpp:1125
 msgid "For encryption"
 msgstr "गुप्तिकरणका लागि"
 
 #. i18n: file: warningconfiguration.ui:117
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnSignKeyExpiresSB)
-#: rc.cpp:1126
+#: rc.cpp:1128
 #, fuzzy
 #| msgid " days"
 msgctxt ""
@@ -13116,13 +13137,13 @@ msgstr " दिन"
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mWarnSignRootCertExpiresSB)
 #. i18n: file: warningconfiguration.ui:264
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mWarnEncrRootCertExpiresSB)
-#: rc.cpp:1129 rc.cpp:1143 rc.cpp:1157 rc.cpp:1171 rc.cpp:1185 rc.cpp:1199
+#: rc.cpp:1131 rc.cpp:1145 rc.cpp:1159 rc.cpp:1173 rc.cpp:1187 rc.cpp:1201
 msgid "Select the number of days here"
 msgstr "यहाँ दिनका सङ्ख्या चयन गर्नुहोस्"
 
 #. i18n: file: warningconfiguration.ui:137
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mWarnSignKeyExpiresSB)
-#: rc.cpp:1132
+#: rc.cpp:1134
 msgid ""
 "<qt>\n"
 "<h1>Warn If Signature Certificate Expires</h1>\n"
@@ -13141,7 +13162,7 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:144
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnEncrKeyExpiresSB)
-#: rc.cpp:1140
+#: rc.cpp:1142
 #, fuzzy
 #| msgid " days"
 msgctxt ""
@@ -13152,7 +13173,7 @@ msgstr " दिन"
 
 #. i18n: file: warningconfiguration.ui:164
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mWarnEncrKeyExpiresSB)
-#: rc.cpp:1146
+#: rc.cpp:1148
 msgid ""
 "<qt>\n"
 "<h1>Warn If Encryption Certificate Expires</h1>\n"
@@ -13171,7 +13192,7 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:171
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnEncrChainCertExpiresSB)
-#: rc.cpp:1154
+#: rc.cpp:1156
 #, fuzzy
 #| msgid " days"
 msgctxt ""
@@ -13181,7 +13202,7 @@ msgstr " दिन"
 
 #. i18n: file: warningconfiguration.ui:191
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mWarnEncrChainCertExpiresSB)
-#: rc.cpp:1160
+#: rc.cpp:1162
 msgid ""
 "<qt>\n"
 "<h1>Warn If A Certificate In The Chain Expires</h1>\n"
@@ -13201,7 +13222,7 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:198
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnSignChainCertExpiresSB)
-#: rc.cpp:1168
+#: rc.cpp:1170
 #, fuzzy
 #| msgid " days"
 msgctxt "The minimum number of days the CA certificate should be valid"
@@ -13210,7 +13231,7 @@ msgstr " दिन"
 
 #. i18n: file: warningconfiguration.ui:218
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mWarnSignChainCertExpiresSB)
-#: rc.cpp:1174
+#: rc.cpp:1176
 msgid ""
 "<qt>\n"
 "<h1>Warn If CA Certificate Expires</h1>\n"
@@ -13229,7 +13250,7 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:225
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnSignRootCertExpiresSB)
-#: rc.cpp:1182
+#: rc.cpp:1184
 #, fuzzy
 #| msgid " days"
 msgctxt "The minimum number of days the root certificate should be valid"
@@ -13240,7 +13261,7 @@ msgstr " दिन"
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mWarnSignRootCertExpiresSB)
 #. i18n: file: warningconfiguration.ui:272
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mWarnEncrRootCertExpiresSB)
-#: rc.cpp:1188 rc.cpp:1202
+#: rc.cpp:1190 rc.cpp:1204
 msgid ""
 "<qt>\n"
 "<h1>Warn If Root Certificate Expires</h1>\n"
@@ -13259,7 +13280,7 @@ msgstr ""
 
 #. i18n: file: warningconfiguration.ui:252
 #. i18n: ectx: property (suffix), widget (QSpinBox, mWarnEncrRootCertExpiresSB)
-#: rc.cpp:1196
+#: rc.cpp:1198
 #, fuzzy
 #| msgid " days"
 msgctxt "the minimum number of days the root certificate should be valid"
@@ -13268,36 +13289,36 @@ msgstr " दिन"
 
 #. i18n: file: warningconfiguration.ui:279
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_2)
-#: rc.cpp:1210
+#: rc.cpp:1212
 msgid "For root certificates:"
 msgstr "मूल प्रमाणपत्रका लागि:"
 
 #. i18n: file: warningconfiguration.ui:292
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1213
+#: rc.cpp:1215
 msgid "For intermediate CA certificates:"
 msgstr "इन्टरमिडियट CA प्रमाणपत्रका लागि:"
 
 #. i18n: file: warningconfiguration.ui:305
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1216
+#: rc.cpp:1218
 msgid "For end-user certificates/keys:"
 msgstr "अन्तिम प्रयोगकर्ता प्रमाणपत्र/कुञ्जीका लागि:"
 
 #. i18n: file: warningconfiguration.ui:374
 #. i18n: ectx: property (text), widget (QPushButton, enableAllWarningsPB)
-#: rc.cpp:1219
+#: rc.cpp:1221
 #, fuzzy
 #| msgid "Re-enable All \"Don't Ask Again\" Warnings"
 msgid "Re-enable All \"Do not Ask Again\" Warnings"
 msgstr "सबै \"फेरि नसोध्नुहोस्\" चेतावनी पुन: सक्षम पार्नुहोस्"
 
-#: rc.cpp:1220
+#: rc.cpp:1222
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Nabin Gautam"
 
-#: rc.cpp:1221
+#: rc.cpp:1223
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nabin@mpp.org.np"
