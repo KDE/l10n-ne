@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-14 09:48+0200\n"
+"POT-Creation-Date: 2008-10-15 10:43+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -127,9 +127,14 @@ msgstr ""
 "नोक्सान हुँने सङ्कुचन छवि एल्गोरिदम प्रयोग गर्दछ ।</b>"
 
 #: libs/dimg/loaders/jpegsettings.cpp:93
+#, fuzzy
+#| msgid ""
+#| "<qt><font size=-1 color=\"red\"><i>Warning: <a href='http://en.wikipedia."
+#| "org/wiki/JPEG'>JPEG</a> is a<br>lossy compression<br>image format!</p></"
+#| "i></qt>"
 msgid ""
-"<qt><font size=-1 color=\"red\"><i>Warning: <a href='http://en.wikipedia.org/"
-"wiki/JPEG'>JPEG</a> is a<br>lossy compression<br>image format!</p></i></qt>"
+"<font size=-1 color=\"red\"><i>Warning: <a href='http://en.wikipedia.org/"
+"wiki/JPEG'>JPEG</a> is a<br>lossy compression<br>image format!</p></i>"
 msgstr ""
 "<qt><font size=-1 color=\"red\"><i>चेतावनी: <a href='http://en.wikipedia.org/"
 "wiki/JPEG'>जेपीईजी</a> नोक्सान हुँने<br>छवि ढाँचा<br> हो!</p></i></qt>"
@@ -1119,9 +1124,9 @@ msgstr "<qt>ति वस्तुहरू तपाईँको हार्�
 
 #: libs/dialogs/deletedialog.cpp:188
 #, fuzzy
-#| msgid "<qt>These items will be moved to the Trash Bin.</qt>"
-msgid "<qt>These items will be moved to Trash.</qt>"
-msgstr "<qt>ति वस्तुहरूलाई रद्दीटोकरीमा सारिनेछ ।</qt>"
+#| msgid "<qt>These albums will be moved to the Trash Bin.</qt>"
+msgid "These items will be moved to Trash."
+msgstr "<qt>ति एल्बमहरू रद्दीटोकरीमा सारिनेछ ।</qt>"
 
 #: libs/dialogs/deletedialog.cpp:192
 #, fuzzy, kde-format
@@ -3249,8 +3254,8 @@ msgstr "डिजिक्यामले तपाईँको गृह फो
 #| "<qt>The folder you selected does not exist: <p><b>%1</b></p>Would you "
 #| "like digiKam to make it for you now?</qt>"
 msgid ""
-"<qt>The folder to use as root album path does not exist: <p><b>%1</b></"
-"p>Would you like digiKam to create it?</qt>"
+"The folder to use as root album path does not exist: <p><b>%1</b></p>Would "
+"you like digiKam to create it?"
 msgstr ""
 "<qt>तपाईँले चयन गर्नुभएको फोल्डर अवस्थित छैन: <p><b>%1</b></p>डिजिक्यामले यसलाई "
 "तपाईँका लागि बनाउन चाहनुहुन्छ ?</qt>"
@@ -3267,8 +3272,8 @@ msgstr "फोल्डर सिर्जना गर्नुहुन्छ 
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"<qt>digiKam could not create the folder to use as root album path.\n"
-"Please select a different location.<p><b>%1</b></p></qt>"
+"digiKam could not create the folder to use as root album path.\n"
+"Please select a different location.<p><b>%1</b></p>"
 msgstr ""
 "<qt>तल देखाएको स्थानमा डिजिक्यामले फोल्डर सिर्जना गर्न सकेन । कृपया फरक स्थान चयन "
 "गर्नुहोस् ।<p><b>%1</b></p></qt>"
@@ -3305,8 +3310,8 @@ msgstr ""
 #| "<qt>The folder you selected does not exist: <p><b>%1</b></p>Would you "
 #| "like digiKam to make it for you now?</qt>"
 msgid ""
-"<qt>The folder to host database file does not exist: <p><b>%1</b></p>Would "
-"you like digiKam to create it?</qt>"
+"The folder to host database file does not exist: <p><b>%1</b></p>Would you "
+"like digiKam to create it?"
 msgstr ""
 "<qt>तपाईँले चयन गर्नुभएको फोल्डर अवस्थित छैन: <p><b>%1</b></p>डिजिक्यामले यसलाई "
 "तपाईँका लागि बनाउन चाहनुहुन्छ ?</qt>"
@@ -3323,8 +3328,8 @@ msgstr "फोल्डर सिर्जना गर्नुहुन्छ 
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"<qt>digiKam could not create the folder to host database file.\n"
-"Please select a different location.<p><b>%1</b></p></qt>"
+"digiKam could not create the folder to host database file.\n"
+"Please select a different location.<p><b>%1</b></p>"
 msgstr ""
 "<qt>तल देखाएको स्थानमा डिजिक्यामले फोल्डर सिर्जना गर्न सकेन । कृपया फरक स्थान चयन "
 "गर्नुहोस् ।<p><b>%1</b></p></qt>"
@@ -3455,13 +3460,15 @@ msgid "Edit Album"
 msgstr "एल्बम सम्पादन गर्नुहोस्"
 
 #: digikam/albumpropsedit.cpp:113
-#, kde-format
-msgid "<qt><b>Create new Album in \"<i>%1</i>\"</b></qt>"
+#, fuzzy, kde-format
+#| msgid "<qt><b>Create new Album in \"<i>%1</i>\"</b></qt>"
+msgid "<b>Create new Album in \"<i>%1</i>\"</b>"
 msgstr "<qt><b> \"<i>%1</i>\" मा नयाँ एल्बम सिर्जना गर्नुहोस्</b></qt>"
 
 #: digikam/albumpropsedit.cpp:117
-#, kde-format
-msgid "<qt><b>\"<i>%1</i>\" Album Properties</b></qt>"
+#, fuzzy, kde-format
+#| msgid "<qt><b>\"<i>%1</i>\" Album Properties</b></qt>"
+msgid "<b>\"<i>%1</i>\" Album Properties</b>"
 msgstr "<qt><b>\"<i>%1</i>\" एल्बम गुण</b></qt>"
 
 #: digikam/albumpropsedit.cpp:131 digikam/tageditdlg.cpp:128
@@ -3758,19 +3765,19 @@ msgstr ""
 
 #: digikam/albummanager.cpp:396
 msgid ""
-"<qt><p>Failed to open the database. </p><p>You cannot use digiKam without a "
+"<p>Failed to open the database. </p><p>You cannot use digiKam without a "
 "working database. digiKam will attempt to start now, but it will <b>not</b> "
 "be functional. Please check the database settings in the <b>configuration "
-"menu</b>.</p></qt>"
+"menu</b>.</p>"
 msgstr ""
 
 #: digikam/albummanager.cpp:404
 #, kde-format
 msgid ""
-"<qt><p>Failed to open the database.  Error message from database: %1 </"
-"p><p>You cannot use digiKam without a working database. digiKam will attempt "
-"to start now, but it will <b>not</b> be functional. Please check the "
-"database settings in the <b>configuration menu</b>.</p></qt>"
+"<p>Failed to open the database.  Error message from database: %1 </p><p>You "
+"cannot use digiKam without a working database. digiKam will attempt to start "
+"now, but it will <b>not</b> be functional. Please check the database "
+"settings in the <b>configuration menu</b>.</p>"
 msgstr ""
 
 #: digikam/albummanager.cpp:472
@@ -4306,9 +4313,9 @@ msgstr "डाटाबेस पढाइ"
 #| "it now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
 #| "Management\" feature will be disabled until you solve this issue</p></qt>"
 msgid ""
-"<qt><p>The ICC profiles path seems to be invalid.</p><p>If you want to set "
-"it now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
-"Management\" feature will be disabled until you solve this issue</p></qt>"
+"<p>The ICC profiles path seems to be invalid.</p><p>If you want to set it "
+"now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
+"Management\" feature will be disabled until you solve this issue</p>"
 msgstr ""
 "<qt><p>ICC प्रोफाइल अवैध जस्तो देखिन्छ ।</p><p>तपाईँले यसलाई अहिले सेट गर्न चाहनुहुन्छ "
 "भने, \"हो\" चयन गर्नुहोस्, अन्यथा \"होइन\" चयन गर्नुहोस् । यस्तो अवस्थामा, तपाईँले सो "
@@ -4649,10 +4656,8 @@ msgstr "थम्बनेल देखाउनुहोस्"
 #: utilities/imageeditor/editor/editorwindow.cpp:533
 #: utilities/lighttable/lighttablewindow.cpp:484
 #: utilities/cameragui/cameraui.cpp:436
-#, fuzzy
-#| msgid "Metadata support for RAW pictures"
-msgid "RAW camera supported"
-msgstr "कच्चा तस्विरका लागि मेटाडेटा समर्थन"
+msgid "supported RAW cameras"
+msgstr ""
 
 #: digikam/digikamapp.cpp:922
 #: utilities/imageeditor/editor/editorwindow.cpp:537
@@ -5031,12 +5036,12 @@ msgstr "नयाँ एल्बमको नाम यहाँ प्रव�
 
 #: digikam/tageditdlg.cpp:136
 msgid ""
-"<qt><p>To create new tags, you can use the following rules:</"
-"p><p><ul><li>'/' can be used to create a tags hierarchy.<br>Ex.: <i>"
-"\"Country/City/Paris\"</i></li><li>',' can be used to create more than one "
-"tags hierarchy at the same time.<br>Ex.: <i>\"City/Paris, Monument/Notre-Dame"
-"\"</i></li><li>If a tag hierarchy starts with '/', root tag album is used as "
-"parent.</li></ul></p></qt>"
+"<p>To create new tags, you can use the following rules:</p><p><ul><li>'/' "
+"can be used to create a tags hierarchy.<br>Ex.: <i>\"Country/City/Paris\"</"
+"i></li><li>',' can be used to create more than one tags hierarchy at the "
+"same time.<br>Ex.: <i>\"City/Paris, Monument/Notre-Dame\"</i></li><li>If a "
+"tag hierarchy starts with '/', root tag album is used as parent.</li></ul></"
+"p>"
 msgstr ""
 
 #: digikam/tageditdlg.cpp:160
@@ -5051,19 +5056,19 @@ msgstr "रिसेट गर्नुहोस्"
 #: digikam/tageditdlg.cpp:255
 #, fuzzy
 #| msgid "<qt><b>Create New Tag in <i>\"%1\"</i></b></qt>"
-msgid "<qt><b>Create New Tag</b></qt>"
+msgid "<b>Create New Tag</b>"
 msgstr "<qt><b> <i>\"%1\"</i>मा नयाँ ट्याग सिर्जना गर्नुहोस्</b></qt>"
 
 #: digikam/tageditdlg.cpp:259
 #, fuzzy, kde-format
 #| msgid "<qt><b>Create New Tag in <i>\"%1\"</i></b></qt>"
-msgid "<qt><b>Create New Tag in<br><i>\"%1\"</i></b></qt>"
+msgid "<b>Create New Tag in<br><i>\"%1\"</i></b>"
 msgstr "<qt><b> <i>\"%1\"</i>मा नयाँ ट्याग सिर्जना गर्नुहोस्</b></qt>"
 
 #: digikam/tageditdlg.cpp:265
 #, fuzzy, kde-format
 #| msgid "<qt><b>Create New Tag in <i>\"%1\"</i></b></qt>"
-msgid "<qt><b>Properties of Tag<br><i>\"%1\"</i></b></qt>"
+msgid "<b>Properties of Tag<br><i>\"%1\"</i></b>"
 msgstr "<qt><b> <i>\"%1\"</i>मा नयाँ ट्याग सिर्जना गर्नुहोस्</b></qt>"
 
 #: digikam/tageditdlg.cpp:394
@@ -5569,10 +5574,15 @@ msgid "Decrease Contrast"
 msgstr "व्यतिरेक घटाउनुहोस्"
 
 #: showfoto/showfoto.cpp:387
+#, fuzzy
+#| msgid ""
+#| "<qt><p>The ICC profile path seems to be invalid.</p><p>If you want to set "
+#| "it now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
+#| "Management\" feature will be disabled until you solve this issue</p></qt>"
 msgid ""
-"<qt><p>The ICC profile path seems to be invalid.</p><p>If you want to set it "
+"<p>The ICC profile path seems to be invalid.</p><p>If you want to set it "
 "now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
-"Management\" feature will be disabled until you solve this issue</p></qt>"
+"Management\" feature will be disabled until you solve this issue</p>"
 msgstr ""
 "<qt><p>ICC प्रोफाइल अवैध जस्तो देखिन्छ ।</p><p>तपाईँले यसलाई अहिले सेट गर्न चाहनुहुन्छ "
 "भने, \"हो\" चयन गर्नुहोस्, अन्यथा \"होइन\" चयन गर्नुहोस् । यस्तो अवस्थामा, तपाईँले सो "
@@ -6862,8 +6872,8 @@ msgstr ""
 
 #: imageplugins/whitebalance/whitebalancetool.cpp:121
 msgid ""
-"<qt><a href='http://en.wikipedia.org/wiki/Color_temperature'>Color "
-"Temperature</a> (K): </qt>"
+"<a href='http://en.wikipedia.org/wiki/Color_temperature'>Color Temperature</"
+"a> (K): "
 msgstr ""
 
 #: imageplugins/whitebalance/whitebalancetool.cpp:125
@@ -7010,8 +7020,8 @@ msgstr "<p>यहाँ छविको म्याजेन्टा/हरि
 
 #: imageplugins/whitebalance/whitebalancetool.cpp:218
 msgid ""
-"<qt><a href='http://en.wikipedia.org/wiki/Exposure_value'>Exposure "
-"Compensation</a> (E.V): </qt>"
+"<a href='http://en.wikipedia.org/wiki/Exposure_value'>Exposure Compensation</"
+"a> (E.V): "
 msgstr ""
 
 #: imageplugins/whitebalance/whitebalancetool.cpp:225
@@ -11401,11 +11411,11 @@ msgstr "<p>स्क्रिनको तल छवि सिर्जना �
 
 #: utilities/setup/setupmime.cpp:92
 msgid ""
-"<qt><p>Digikam supports the image formats that digital cameras produce, a "
-"few other important image formats, as well as common video and audio formats."
-"</p> <p>If you have special needs, you can adjust here the list of supported "
+"<p>Digikam supports the image formats that digital cameras produce, a few "
+"other important image formats, as well as common video and audio formats.</"
+"p> <p>If you have special needs, you can adjust here the list of supported "
 "formats. Add your file extensions to the lists of either image, audio or "
-"video files.</p></qt>"
+"video files.</p>"
 msgstr ""
 
 #: utilities/setup/setupmime.cpp:101
@@ -14376,12 +14386,19 @@ msgstr ""
 "<p>श्रृङ्खला नम्बरसँग तस्विर फाइलहरू पुन: नामकरण गर्न सुरुआत अनुक्रमणिका मान सेट गर्नुहोस् ।"
 
 #: utilities/cameragui/renamecustomizer.cpp:446
+#, fuzzy
+#| msgid ""
+#| "<qt><p>Enter the format for date and time.</p><p>Use <i>dd</i> for the "
+#| "day, <i>MM</i> for the month, <i>yyyy</i> for the year, <i>hh</i> for the "
+#| "hour, <i>mm</i> for the minute, <i>ss</i> for the second.</p><p>Examples: "
+#| "<i>yyyyMMddThhmmss</i> for 20060824T142418,<br><i>yyyy-MM-dd hh:mm:ss</i> "
+#| "for 2006-08-24 14:24:18.</p></qt>"
 msgid ""
-"<qt><p>Enter the format for date and time.</p><p>Use <i>dd</i> for the day, "
+"<p>Enter the format for date and time.</p><p>Use <i>dd</i> for the day, "
 "<i>MM</i> for the month, <i>yyyy</i> for the year, <i>hh</i> for the hour, "
 "<i>mm</i> for the minute, <i>ss</i> for the second.</p><p>Examples: "
 "<i>yyyyMMddThhmmss</i> for 20060824T142418,<br><i>yyyy-MM-dd hh:mm:ss</i> "
-"for 2006-08-24 14:24:18.</p></qt>"
+"for 2006-08-24 14:24:18.</p>"
 msgstr ""
 "<qt><p>मिति र समयको ढाँचा प्रविष्ट गर्नुहोस् ।</p><p>दिनका लागि <i>dd</i> , "
 "महिनाका लागि<i>MM</i> , बर्षका लागि <i>yyyy</i> , घन्टाका लागि <i>hh</i> , "
@@ -15393,6 +15410,16 @@ msgid ""
 "to perform a\n"
 "Fuzzy search"
 msgstr ""
+
+#, fuzzy
+#~| msgid "<qt>These items will be moved to the Trash Bin.</qt>"
+#~ msgid "<qt>These items will be moved to Trash.</qt>"
+#~ msgstr "<qt>ति वस्तुहरूलाई रद्दीटोकरीमा सारिनेछ ।</qt>"
+
+#, fuzzy
+#~| msgid "Metadata support for RAW pictures"
+#~ msgid "RAW camera supported"
+#~ msgstr "कच्चा तस्विरका लागि मेटाडेटा समर्थन"
 
 #, fuzzy
 #~| msgid ""
