@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-15 10:43+0200\n"
+"POT-Creation-Date: 2008-10-17 09:40+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2139,7 +2139,7 @@ msgid "No profile available..."
 msgstr "प्रोफाइल उपलब्ध छैन..."
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:126
-#: utilities/setup/setupcollections.cpp:225
+#: showfoto/setup/setupeditor.cpp:192 utilities/setup/setupcollections.cpp:225
 msgid "Name"
 msgstr "नाम"
 
@@ -3206,7 +3206,8 @@ msgid "First Run"
 msgstr "पहिलो"
 
 #: digikam/digikamfirstrun.cpp:72
-msgid "<b>Configure First Local Root Album and Database File Paths</b>"
+msgid ""
+"<b>First-run Wizard: Configure where images and meta-data are stored</b>"
 msgstr ""
 
 #: digikam/digikamfirstrun.cpp:93
@@ -3219,140 +3220,148 @@ msgstr "प्रकृति"
 
 #: digikam/digikamfirstrun.cpp:98
 msgid ""
-"<p>Please enter a folder where you want to store your pictures.</p> <p>If "
-"you already have a folder where you usually store your pictures, choose that "
-"one. You can as well pick a new location or use the suggested folder.<br/> "
-"You can add more locations later on from the <i>Settings</i> menu. Removable "
-"media and shared file systems are supported.</p>"
+"<p>Please enter a location where you want to store your images.</p> <p>You "
+"can choose any local folder, even one that already contains images.<br/> "
+"More folders can be added later under the <i>Settings</i> menu. </p> "
+"<p><i>Note:</i> Removable media (like USB drives) and shared file systems "
+"(both NFS or Samba) are supported.</p>"
 msgstr ""
 
 #: digikam/digikamfirstrun.cpp:111
 msgid ""
-"<p>Digikam stores information about your pictures in a database file. Please "
-"set the location of this file. It is fine to use the same directory as "
-"above. <br>Please note that you should have write access to the folder, and "
-"that you cannot use a remote file system here, such as NFS."
+"<p>Digikam stores information and meta-data about your images in a database "
+"file. Please set the location of this file or accept the default.</"
+"p><p><i>Note:</i> You need to have write access to the folder used here, and "
+"you cannot use a remote location on a networked server, using NFS or Samba.</"
+"p>"
 msgstr ""
 
-#: digikam/digikamfirstrun.cpp:165
+#: digikam/digikamfirstrun.cpp:164
 #, fuzzy
 #| msgid ""
 #| "You must select a folder for digiKam to use as the Album Library folder."
-msgid "You must select a folder for digiKam to use as the root album path."
+msgid ""
+"You must select a folder for digiKam to use as the root album. All of your "
+"images will go there."
 msgstr ""
 "तपाईँले एल्बम लाइब्रेरी फोल्डरको रूपमा प्रयोग गर्न डिजिक्यामका लागि फोल्डर चयन गर्नुपर्दछ ।"
 
-#: digikam/digikamfirstrun.cpp:179
+#: digikam/digikamfirstrun.cpp:178
 #, fuzzy
 #| msgid "digiKam cannot use your home folder as the Album Library folder."
-msgid "digiKam cannot use your home folder as root album path."
+msgid ""
+"digiKam will not use your home folder as the root album. Please select "
+"another location."
 msgstr "डिजिक्यामले तपाईँको गृह फोल्डर एल्बम लाइब्रेरी फोल्डरको रूपमा प्रयोग गर्न सक्दैन ।"
 
-#: digikam/digikamfirstrun.cpp:189
+#: digikam/digikamfirstrun.cpp:188
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The folder you selected does not exist: <p><b>%1</b></p>Would you "
 #| "like digiKam to make it for you now?</qt>"
 msgid ""
-"The folder to use as root album path does not exist: <p><b>%1</b></p>Would "
-"you like digiKam to create it?"
+"The folder to use as the root album path does not exist: <p><b>%1</b></"
+"p>Would you like digiKam to create it for you?"
 msgstr ""
 "<qt>तपाईँले चयन गर्नुभएको फोल्डर अवस्थित छैन: <p><b>%1</b></p>डिजिक्यामले यसलाई "
 "तपाईँका लागि बनाउन चाहनुहुन्छ ?</qt>"
 
-#: digikam/digikamfirstrun.cpp:193
+#: digikam/digikamfirstrun.cpp:192
 #, fuzzy
 #| msgid "Create Folder?"
 msgid "Create Root Album Folder?"
 msgstr "फोल्डर सिर्जना गर्नुहुन्छ ?"
 
-#: digikam/digikamfirstrun.cpp:203
+#: digikam/digikamfirstrun.cpp:202
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"digiKam could not create the folder to use as root album path.\n"
+"digiKam could not create the folder to use as the root album.\n"
 "Please select a different location.<p><b>%1</b></p>"
 msgstr ""
 "<qt>तल देखाएको स्थानमा डिजिक्यामले फोल्डर सिर्जना गर्न सकेन । कृपया फरक स्थान चयन "
 "गर्नुहोस् ।<p><b>%1</b></p></qt>"
 
-#: digikam/digikamfirstrun.cpp:206
+#: digikam/digikamfirstrun.cpp:205
 #, fuzzy
 #| msgid "Create Folder Failed"
 msgid "Create Root Album Folder Failed"
 msgstr "फोल्डर सिर्जना असफल"
 
-#: digikam/digikamfirstrun.cpp:215
+#: digikam/digikamfirstrun.cpp:214
 #, fuzzy
 #| msgid ""
 #| "No write access for this path.\n"
 #| "Warning: the comments and tag features will not work."
 msgid ""
-"No write access for root album path.\n"
-"Warning: the comment and tag features will not work."
+"You don't seem to have write access for the folder selected to be the root "
+"album.\n"
+"Warning: Without write access, the comment and tag features will not work."
 msgstr ""
 "यो मार्गमा लेख्ने अनुमति छैन ।\n"
 "चेतावनी: टिप्पणी र ट्याग सुविधाले काम गर्दैन ।"
 
-#: digikam/digikamfirstrun.cpp:229
+#: digikam/digikamfirstrun.cpp:228
 #, fuzzy
 #| msgid ""
 #| "You must select a folder for digiKam to use as the Album Library folder."
-msgid "You must select a folder for digiKam to store database file."
+msgid ""
+"You must select a folder for digiKam to store information and meta-data in a "
+"database file."
 msgstr ""
 "तपाईँले एल्बम लाइब्रेरी फोल्डरको रूपमा प्रयोग गर्न डिजिक्यामका लागि फोल्डर चयन गर्नुपर्दछ ।"
 
-#: digikam/digikamfirstrun.cpp:255
+#: digikam/digikamfirstrun.cpp:254
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The folder you selected does not exist: <p><b>%1</b></p>Would you "
 #| "like digiKam to make it for you now?</qt>"
 msgid ""
-"The folder to host database file does not exist: <p><b>%1</b></p>Would you "
-"like digiKam to create it?"
+"The folder to put your database in does not seem to exist: <p><b>%1</b></"
+"p>Would you like digiKam to create it for you?"
 msgstr ""
 "<qt>तपाईँले चयन गर्नुभएको फोल्डर अवस्थित छैन: <p><b>%1</b></p>डिजिक्यामले यसलाई "
 "तपाईँका लागि बनाउन चाहनुहुन्छ ?</qt>"
 
-#: digikam/digikamfirstrun.cpp:259
+#: digikam/digikamfirstrun.cpp:258
 #, fuzzy
 #| msgid "Create Folder?"
 msgid "Create Database Folder?"
 msgstr "फोल्डर सिर्जना गर्नुहुन्छ ?"
 
-#: digikam/digikamfirstrun.cpp:269
+#: digikam/digikamfirstrun.cpp:268
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"digiKam could not create the folder to host database file.\n"
+"digiKam could not create the folder to host your database file.\n"
 "Please select a different location.<p><b>%1</b></p>"
 msgstr ""
 "<qt>तल देखाएको स्थानमा डिजिक्यामले फोल्डर सिर्जना गर्न सकेन । कृपया फरक स्थान चयन "
 "गर्नुहोस् ।<p><b>%1</b></p></qt>"
 
-#: digikam/digikamfirstrun.cpp:272
+#: digikam/digikamfirstrun.cpp:271
 #, fuzzy
 #| msgid "Create Folder Failed"
 msgid "Create Database Folder Failed"
 msgstr "फोल्डर सिर्जना असफल"
 
-#: digikam/digikamfirstrun.cpp:281
+#: digikam/digikamfirstrun.cpp:280
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"<p>No write access for path used to host database file.<br/>Please select a "
-"different location.</p><p><b>%1</b></p>"
+"<p>You do not seem to have write access for the folder to host the database "
+"file.<br/>Please select a different location.</p><p><b>%1</b></p>"
 msgstr ""
 "<qt>तल देखाएको स्थानमा डिजिक्यामले फोल्डर सिर्जना गर्न सकेन । कृपया फरक स्थान चयन "
 "गर्नुहोस् ।<p><b>%1</b></p></qt>"
 
-#: digikam/digikamfirstrun.cpp:284
+#: digikam/digikamfirstrun.cpp:283
 msgid "No Database Write Access"
 msgstr ""
 
@@ -3551,19 +3560,11 @@ msgid "Miscellaneous"
 msgstr "विविध सेटिङ"
 
 #: digikam/welcomepageview.cpp:98
-msgid "Designed for KDE4"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:99
-msgid "Hardware handling using KDE4 Solid interface"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:100
-msgid "Multimedia files handling using KDE4 Phonon interface"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:101
-msgid "Geolocation performed using KDE4 Marble interface"
+msgid ""
+"Designed from the ground-up for KDE4, using KDE4 technology:<ul><li>Hardware "
+"handling with KDE4's Solid interface</li><li>More comprehensive multimedia "
+"file handling using KDE4's Phonon interface</li><li>Easy Geolocation with "
+"KDE4's Marble interface</li></ul>"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:102
@@ -3573,23 +3574,21 @@ msgid "XMP metadata support"
 msgstr "कच्चा तस्विरका लागि मेटाडेटा समर्थन"
 
 #: digikam/welcomepageview.cpp:103
-msgid "TIFF/EP RAW files metadata editing"
+msgid "TIFF/EP RAW metadata editing"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:104
 msgid ""
-"The database file can be stored on a customized place to support remote "
-"album library paths"
+"Customizable file storage for the Digikam database, supporting remote albums"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:105
-msgid "Support of multiple roots album paths"
+msgid ""
+"Support of multiple root album paths (no more importing into one giant album)"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:106
-msgid ""
-"Thumbnails-bar integration with preview mode and editor for easy navigation "
-"between images"
+msgid "Thumbnail-bar integration for easy navigation and editing"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:107
@@ -3597,39 +3596,25 @@ msgid "Supports the latest camera RAW files"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:108
-msgid "A new camera interface"
+msgid ""
+"New/revamped tools:<ul><li>Revamped camera import wizard</li><li>LensFun "
+"integration: auto-correction of lens distortion</li><li>Fuzzy searches based "
+"on hand-drawn sketches</li><li>Advanced searches using image meta-"
+"information, like keywords and dates</li><li>User-friendly map searching "
+"that gives you the power to search for global photo locations</"
+"li><li>Advanced searches for duplicate and similar images</li></ul>"
 msgstr ""
 
-#: digikam/welcomepageview.cpp:109
-msgid "A new tool to capture photographs from Camera"
+#: digikam/welcomepageview.cpp:115
+msgid "...and much more"
 msgstr ""
 
-#: digikam/welcomepageview.cpp:110
-msgid "A new tool based on LensFun library to fix lens defaults automatically"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:111
-msgid "A new tool to perform fuzzy searches based on sketch drawing template"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:112
-msgid "A new tool to perform advanced searches based on photo meta-information"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:113
-msgid "A new tool to perform searches over a map"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:114
-msgid "A new tool to find similar and duplicate images around collections"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:118
+#: digikam/welcomepageview.cpp:120
 #, kde-format
 msgid "<li>%1</li>\n"
 msgstr "<li>%1</li>\n"
 
-#: digikam/welcomepageview.cpp:131
+#: digikam/welcomepageview.cpp:133
 #, fuzzy, kde-format
 #| msgid ""
 #| "_: %1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior "
@@ -3659,16 +3644,16 @@ msgctxt ""
 "new features; %7: generated list of important changes; --- end of comment ---"
 msgid ""
 "<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2><p>digiKam is an open "
-"source photo management program. It is designed to import, organize, "
-"enhance, search and export your digital photographs on your computer.</"
-"p><p>You are currently in the Album view mode of digiKam. The Albums are the "
-"real containers where your files are stored, they are identical with the "
-"folders on disk.</p><ul><li>digiKam has many powerful features which are "
-"described in the <a href=\"%2\">documentation</a></li><li>The <a href=\"%3"
-"\">digiKam homepage</A> provides information about new versions of digiKam</"
-"li></ul><p>%7</p><p>Some of the new features in this release of digiKam "
-"include (compared to digiKam %4):</p><ul>%5</ul><p>%6</p><p>We hope that you "
-"will enjoy digiKam.</p><p>Thank you,</p><p style='margin-bottom: 0px; margin-"
+"source photo management program designed to import, organize, enhance, "
+"search and export your digital images to and from your computer.</"
+"p><p>Currently, you're in the Album view mode of digiKam. Albums are the "
+"places where your files are stored, and are identical to the folders on your "
+"hard disk.</p><ul><li>digiKam has many powerful features which are described "
+"in the <a href=\"%2\">documentation</a></li><li>The <a href=\"%3\">digiKam "
+"homepage</A> provides information about new versions of digiKam.</li></ul><p>"
+"%7</p><p>Some of the new features in this release of digiKam include "
+"(compared to digiKam %4):</p><ul>%5</ul><p>%6</p><p>We hope that you will "
+"enjoy digiKam.</p><p>Thank you,</p><p style='margin-bottom: 0px; margin-"
 "left:20px;'>The digiKam team</p>"
 msgstr ""
 "<h2 style='margin-top: 0px;'>डिजिक्याम %1 मा स्वागतम</h2><p>डिजिक्याम केडीईका "
@@ -3688,7 +3673,7 @@ msgstr ""
 "<p>धन्यवाद,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; डिजिक्याम समूह</p>"
 
-#: digikam/welcomepageview.cpp:256 digikam/main.cpp:69
+#: digikam/welcomepageview.cpp:258 digikam/main.cpp:69
 msgid "digiKam"
 msgstr "डिजिक्याम"
 
@@ -3993,7 +3978,8 @@ msgstr ""
 msgid "Select the file types (mime types) you want to show"
 msgstr ""
 
-#: digikam/albumiconview.cpp:591 utilities/searchwindow/searchfields.cpp:155
+#: digikam/albumiconview.cpp:591 showfoto/setup/setupeditor.cpp:191
+#: utilities/searchwindow/searchfields.cpp:155
 #, fuzzy
 #| msgid "Date:"
 msgid "Date"
@@ -4313,9 +4299,9 @@ msgstr "डाटाबेस पढाइ"
 #| "it now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
 #| "Management\" feature will be disabled until you solve this issue</p></qt>"
 msgid ""
-"<p>The ICC profiles path seems to be invalid.</p><p>If you want to set it "
-"now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
-"Management\" feature will be disabled until you solve this issue</p>"
+"<p>The ICC profiles folder seems to be invalid.</p><p>If you want to try "
+"setting it again, choose \"Yes\" here, otherwise choose \"No\", and the "
+"\"Color Management\" feature will be disabled until you solve this issue</p>"
 msgstr ""
 "<qt><p>ICC प्रोफाइल अवैध जस्तो देखिन्छ ।</p><p>तपाईँले यसलाई अहिले सेट गर्न चाहनुहुन्छ "
 "भने, \"हो\" चयन गर्नुहोस्, अन्यथा \"होइन\" चयन गर्नुहोस् । यस्तो अवस्थामा, तपाईँले सो "
@@ -4366,15 +4352,15 @@ msgstr "छवि बचत गर्नुहोस्"
 
 #: digikam/digikamapp.cpp:490
 #, fuzzy
-#| msgid "Album Collection"
-msgid "Copy Album Items Selection"
-msgstr "एल्बम सङ्कलन"
+#| msgid "About to delete selected albums"
+msgid "Copy selected album items"
+msgstr "चयन गरेको एल्बम मेट्ने बारेमा"
 
 #: digikam/digikamapp.cpp:495
 #, fuzzy
-#| msgid "Album Items Tool Tip Settings"
-msgid "Paste Album Items Selection"
-msgstr "एल्बम वस्तु उपकरण टिप सेटिङ"
+#| msgid "About to delete selected albums"
+msgid "Paste selected album items"
+msgstr "चयन गरेको एल्बम मेट्ने बारेमा"
 
 #: digikam/digikamapp.cpp:517
 #: utilities/imageeditor/editor/editorwindow.cpp:514
@@ -4417,9 +4403,10 @@ msgstr "ताजा पार्नुहोस्"
 
 #: digikam/digikamapp.cpp:590
 #, fuzzy
-#| msgid "This option refresh all album content."
-msgid "Refresh all album contents."
-msgstr "यो विकल्पले एल्बमको सबै सामग्री ताजा पार्दछ ।"
+#| msgid ""
+#| "This option allows you to rename the filename of the current selected item"
+msgid "Refresh the contents of the current album."
+msgstr "यो विकल्पले हालै चयन गरेको वस्तुको फाइलनाम पुन: नामकरण गर्न अनुमति दिन्छ ।"
 
 #: digikam/digikamapp.cpp:596
 msgid "Synchronize images with database"
@@ -4521,10 +4508,10 @@ msgid "Include Album Sub-Tree"
 msgstr ""
 
 #: digikam/digikamapp.cpp:725
-msgid ""
-"Activate this option to recursively show all sub-albums below the current "
-"album."
-msgstr ""
+#, fuzzy
+#| msgid "<p>Set this option to show file name below image thumbnail."
+msgid "Activate this option to show all sub-albums below the current album."
+msgstr "<p>छवि थम्बनेल तल फाइल नाम देखाउन यो विकल्प सेट गर्नुहोस् ।"
 
 #: digikam/digikamapp.cpp:730
 msgid "Include Tag Sub-Tree"
@@ -4532,8 +4519,8 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:731
 msgid ""
-"Activate this option to show all images marked by the given tag and its all "
-"its sub-tags."
+"Activate this option to show all images marked by the given tag and all its "
+"sub-tags."
 msgstr ""
 
 #: digikam/digikamapp.cpp:738
@@ -4615,11 +4602,9 @@ msgid "Select None"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
 #: digikam/digikamapp.cpp:861
-#: utilities/imageeditor/editor/editorwindow.cpp:388
-#: utilities/lighttable/lighttablewindow.cpp:440
 #, fuzzy
 #| msgid "Zoom Out"
-msgid "Zoom to 1:1"
+msgid "Zoom to 100%"
 msgstr "जुम घटाउनुहोस्"
 
 #: digikam/digikamapp.cpp:868
@@ -4630,12 +4615,10 @@ msgid "Fit to &Window"
 msgstr ""
 
 #: digikam/digikamapp.cpp:880
-#: utilities/imageeditor/editor/editorwindow.cpp:437
-#: utilities/lighttable/lighttablewindow.cpp:453
 #, fuzzy
-#| msgid "Solid white"
-msgid "Slide"
-msgstr "कडा सेतो"
+#| msgid "Slide Show"
+msgid "Slideshow"
+msgstr "स्लाइड प्रर्दशन"
 
 #: digikam/digikamapp.cpp:884
 msgid "All"
@@ -4660,11 +4643,10 @@ msgid "supported RAW cameras"
 msgstr ""
 
 #: digikam/digikamapp.cpp:922
-#: utilities/imageeditor/editor/editorwindow.cpp:537
-#: utilities/lighttable/lighttablewindow.cpp:488
-#: utilities/cameragui/cameraui.cpp:440
-msgid "Components info"
-msgstr ""
+#, fuzzy
+#| msgid "Comments:"
+msgid "Component info"
+msgstr "टिप्पणी:"
 
 #: digikam/digikamapp.cpp:928
 msgid "Kipi Plugins Handbook"
@@ -4744,7 +4726,7 @@ msgstr "सबै थम्बनेल पुन: निर्माण गर�
 #: digikam/digikamapp.cpp:1027
 #, fuzzy
 #| msgid "Rebuild all Thumbnails..."
-msgid "Rebuild all FingerPrints..."
+msgid "Rebuild all Fingerprints..."
 msgstr "सबै थम्बनेल पुन: निर्माण गर्नुहोस्..."
 
 #: digikam/digikamapp.cpp:1034
@@ -4772,10 +4754,8 @@ msgid "%1/%2 items selected"
 msgstr "%1 वस्तु चयन गरेको छ"
 
 #: digikam/digikamapp.cpp:1333
-#, fuzzy
-#| msgid "Cameras"
-msgid "Digital Cameras"
-msgstr "क्यामेरा"
+msgid "Cameras (Auto-detected)"
+msgstr ""
 
 #: digikam/digikamapp.cpp:1335
 msgid "USB Storage Devices"
@@ -4789,9 +4769,9 @@ msgstr "क्यामेरा फोल्डर"
 
 #: digikam/digikamapp.cpp:1339
 #, fuzzy
-#| msgid "Camera Manual"
-msgid "Cameras Added Manually"
-msgstr "क्यामेरा म्यानुअल"
+#| msgid "Cameras"
+msgid "Cameras (Add)"
+msgstr "क्यामेरा"
 
 #: digikam/digikamapp.cpp:1347
 msgid "Add Camera..."
@@ -4814,8 +4794,10 @@ msgid "Add Folders..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
 #: digikam/digikamapp.cpp:1364
-msgid "Adds new folders to Albums library."
-msgstr ""
+#, fuzzy
+#| msgid "This option adds new items to the current Album."
+msgid "Adds new folders to Album library."
+msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
 
 #: digikam/digikamapp.cpp:1431 digikam/digikamapp.cpp:1588
 #, kde-format
@@ -4843,8 +4825,10 @@ msgid "SD / MMC Card Reader"
 msgstr ""
 
 #: digikam/digikamapp.cpp:1729
-msgid "xD-Picture Card Reader"
-msgstr ""
+#, fuzzy
+#| msgid "Camera Folders"
+msgid "xD Card Reader"
+msgstr "क्यामेरा फोल्डर"
 
 #: digikam/digikamapp.cpp:2048
 #, fuzzy
@@ -4883,10 +4867,10 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:2251
 msgid ""
-"Image finger-prints computation can take a while.\n"
-"What do you want to do?\n"
-"- Scan for changed or non-recorded items in database\n"
-"- Rebuild all fingerprints (long)"
+"Image fingerprinting can take some time.\n"
+"Which would you prefer?\n"
+"- Scan for changed or non-cataloged items in the database (quick)\n"
+"- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
 #: digikam/digikamapp.cpp:2256 showfoto/showfoto.cpp:1085
@@ -4931,7 +4915,7 @@ msgstr "अपलोड गर्ने छवि चयन गर्नुह�
 #: digikam/digikamapp.cpp:2356
 #, fuzzy
 #| msgid "Select Image to Upload"
-msgid "Select folders to import"
+msgid "Select folders to import into album"
 msgstr "अपलोड गर्ने छवि चयन गर्नुहोस्"
 
 #: digikam/digikamapp.cpp:2368
@@ -4941,7 +4925,7 @@ msgstr "अपलोड गर्ने छवि चयन गर्नुह�
 #| "the camera pictures into.</p>"
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
-"folders.</p>"
+"folders into.</p>"
 msgstr ""
 "<p>क्यामेरा तस्विर आयात गर्न कृपया डिजिक्याम लाइब्रेरीबाट गन्तव्य एल्बम चयन गर्नुहोस् ।</p>"
 
@@ -5145,16 +5129,20 @@ msgstr "ट्याग हटाउनुहोस्"
 msgid "Interface Options"
 msgstr "इन्टरफेस विकल्प"
 
-#: showfoto/setup/setupeditor.cpp:108 utilities/setup/setupeditor.cpp:93
-msgid "&Use theme background color"
+#: showfoto/setup/setupeditor.cpp:108
+#, fuzzy
+#| msgid "&Use theme background color"
+msgid "&Use current theme background color"
 msgstr "विषयवस्तु पृष्ठभूमि रङ प्रयोग गर्नुहोस्"
 
-#: showfoto/setup/setupeditor.cpp:111 utilities/setup/setupeditor.cpp:96
+#: showfoto/setup/setupeditor.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>Enable this option to use the background theme color in the image "
 #| "editor area"
-msgid "Enable this option to use background theme color in image editor area"
+msgid ""
+"Enable this option to use the current background theme color in the image "
+"editor area"
 msgstr ""
 "<p>पृष्ठभूमि विषयवस्तु रङ छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि यो विकल्प सक्षम पार्नुहोस्"
 
@@ -5178,7 +5166,9 @@ msgid "Hide &thumbbar in fullscreen mode"
 msgstr "पूरा पर्दा मोडमा थम्बबार लुकाउनुहोस्"
 
 #: showfoto/setup/setupeditor.cpp:123
-msgid "Use &horizontal thumbbar (need to restart showFoto)"
+#, fuzzy
+#| msgid "Use &horizontal thumbbar (need to restart showFoto)"
+msgid "Use &horizontal thumbbar (will need to restart showFoto)"
 msgstr "तेर्सो थम्बबार प्रयोग गर्नुहोस् (शोफोटो पुन: सुरु गर्न आवश्यक)"
 
 #: showfoto/setup/setupeditor.cpp:124
@@ -5188,29 +5178,31 @@ msgstr "तेर्सो थम्बबार प्रयोग गर्न
 #| "horizontally behind image area. You need to restart showFoto for this "
 #| "option take effect.<p>"
 msgid ""
-"If this option is enabled, the thumbnails bar will be displayed horizontally "
-"behind the image area. You need to restart showFoto for this option take "
+"If this option is enabled, the thumbnail bar will be displayed horizontally "
+"behind the image area. You need to restart showFoto for this option to take "
 "effect."
 msgstr ""
 "<p>यो विकल्प सक्षम पारिएमा, थम्बनेल बार छवि क्षेत्रको पछाडि तेर्सो तरिकाले प्रर्दशीत हुन्छ "
 "। यो विकल्पले काम गर्नका लगि तपाईँले शोफोटो पुन: सुरु गर्नु पर्दछ ।<p>"
 
 #: showfoto/setup/setupeditor.cpp:127
-msgid "&Deleting items should move them to trash"
+#, fuzzy
+#| msgid "&Deleting items should move them to trash"
+msgid "&Deleted items should go to the trash"
 msgstr "वस्तुहरू मेट्दा तिनिहरू रद्दीटोकरीमा सार्दछ"
 
 #: showfoto/setup/setupeditor.cpp:128 utilities/setup/setupmisc.cpp:73
 msgid "&Show splash screen at startup"
 msgstr "सुरुआतमा स्प्लास स्क्रिन देखाउनुहोस्"
 
-#: showfoto/setup/setupeditor.cpp:130 utilities/setup/setupeditor.cpp:119
-msgid "Use Raw Import Tool to handle Raw image"
+#: showfoto/setup/setupeditor.cpp:130
+msgid "Use Raw Import Tool to handle Raw images"
 msgstr ""
 
-#: showfoto/setup/setupeditor.cpp:131 utilities/setup/setupeditor.cpp:120
+#: showfoto/setup/setupeditor.cpp:131
 msgid ""
 "Set this option to use Raw Import tool to load a RAW image. With this tool "
-"you are able to customize indeep decoding settings."
+"you are able to customize advanced settings."
 msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:147 utilities/setup/setupeditor.cpp:135
@@ -5221,12 +5213,14 @@ msgstr "प्रर्दशन सूचक"
 msgid "&Under-exposure color:"
 msgstr "न्यून प्रर्दशन रङ:"
 
-#: showfoto/setup/setupeditor.cpp:154 utilities/setup/setupeditor.cpp:142
+#: showfoto/setup/setupeditor.cpp:154
 #, fuzzy
 #| msgid ""
 #| "<p>Customize the color used in image editor to identify the under-exposed "
 #| "pixels."
-msgid "Customize color used in image editor to identify under-exposed pixels."
+msgid ""
+"Customize the color used in the image editor to identify under-exposed "
+"pixels."
 msgstr ""
 "<p>न्यून-प्रर्दशन पिक्सेल परिचित गर्न छवि सम्पादकमा प्रयोग गरिने रङ अनुकूलन गर्नुहोस् ।"
 
@@ -5234,12 +5228,13 @@ msgstr ""
 msgid "&Over-exposure color:"
 msgstr "अधिक-प्रर्दशन रङ:"
 
-#: showfoto/setup/setupeditor.cpp:161 utilities/setup/setupeditor.cpp:149
+#: showfoto/setup/setupeditor.cpp:161
 #, fuzzy
 #| msgid ""
 #| "<p>Customize the color used in image editor to identify the over-exposed "
 #| "pixels."
-msgid "Customize color used in image editor to identify over-exposed pixels."
+msgid ""
+"Customize the color used in the image editor to identify over-exposed pixels."
 msgstr ""
 "<p>अधिक-प्रर्दशन पिक्सेलमा परिचित गर्न छवि सम्पादकमा प्रयोग गरिने रङ अनुकूलन गर्नुहोस् ।"
 
@@ -5247,7 +5242,7 @@ msgstr ""
 msgid "EXIF Actions"
 msgstr "EXIF कार्य"
 
-#: showfoto/setup/setupeditor.cpp:174 utilities/setup/setupmetadata.cpp:101
+#: showfoto/setup/setupeditor.cpp:174
 msgid "Show images/thumbs &rotated according to orientation tag"
 msgstr "अभिमुखीकरण ट्याग अनुसार छवि/थम्ब परिक्रमण देखाउनुहोस्"
 
@@ -5267,29 +5262,17 @@ msgstr "छवि क्रमबद्ध गर्नुहोस्"
 msgid "Sort images by:"
 msgstr "छवि क्रमबद्ध गर्नुहोस्"
 
-#: showfoto/setup/setupeditor.cpp:191
-#, fuzzy
-#| msgid "Image Date"
-msgid "File Date"
-msgstr "छवि मिति"
-
-#: showfoto/setup/setupeditor.cpp:192
-#: utilities/searchwindow/searchfields.cpp:120
-#, fuzzy
-#| msgid "New Image File Name"
-msgid "File Name"
-msgstr "नयाँ छवि फाइलनाम"
-
 #: showfoto/setup/setupeditor.cpp:193
+#: utilities/searchwindow/searchfields.cpp:135
 #, fuzzy
 #| msgid "Show file size"
-msgid "File size"
+msgid "File Size"
 msgstr "फाइल साइज देखाउनुहोस्"
 
 #: showfoto/setup/setupeditor.cpp:194
 msgid ""
-"Here, select whether newly-loaded images are sorted by file-date, file-name, "
-"or file-size."
+"Here, select whether newly-loaded images are sorted by their date, name, or "
+"size on disk."
 msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:197
@@ -5433,7 +5416,8 @@ msgstr "छवि आयाम देखाउनुहोस्"
 msgid "Set this option to display the image dimensions in pixels."
 msgstr "<p>छवि आयामलाई पिक्सेलमा प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: showfoto/setup/setuptooltip.cpp:141 utilities/setup/setuptooltip.cpp:146
+#: showfoto/setup/setuptooltip.cpp:141 utilities/setup/setupslideshow.cpp:109
+#: utilities/setup/setuptooltip.cpp:146
 msgid "Show camera make and model"
 msgstr "क्यामेरा निर्माण र नमुना देखाउनुहोस्"
 
@@ -5457,7 +5441,8 @@ msgstr "क्यामेरा मिति देखाउनुहोस्"
 msgid "Set this option to display the date when the image was taken."
 msgstr "<p>तस्विर लिएको मिति प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: showfoto/setup/setuptooltip.cpp:148 utilities/setup/setuptooltip.cpp:153
+#: showfoto/setup/setuptooltip.cpp:148 utilities/setup/setupslideshow.cpp:103
+#: utilities/setup/setuptooltip.cpp:153
 #, fuzzy
 #| msgid "Show camera aperture and focal"
 msgid "Show camera aperture and focal length"
@@ -5475,7 +5460,8 @@ msgstr ""
 "<p>तस्विर लिदा प्रयोग गरिने क्यामेरा एपर्चर र फोकल सेटिङ प्रर्दशन गर्न यो विकल्प सेट "
 "गर्नुहोस् ।"
 
-#: showfoto/setup/setuptooltip.cpp:152 utilities/setup/setuptooltip.cpp:157
+#: showfoto/setup/setuptooltip.cpp:152 utilities/setup/setupslideshow.cpp:106
+#: utilities/setup/setuptooltip.cpp:157
 msgid "Show camera exposure and sensitivity"
 msgstr "क्यामेरा प्रर्दशन र संवेदनशीलता देखाउनुहोस्"
 
@@ -10413,6 +10399,21 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:19
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can use nested albums in digiKam.\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10421,7 +10422,7 @@ msgid ""
 "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"... that you can use nested albums in digiKam.\n"
+"... that you can use nested albums in digiKam?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10541,7 +10542,8 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that albums in digiKam are folders in your Album Library? So you can "
-"easily import your photos by simply copying them to your Album Library.\n"
+"easily import your photos by simply copying those folders to your Album "
+"Library.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10635,7 +10637,7 @@ msgid ""
 "<td>\n"
 "... that you can reach other users through the digiKam-users mailing list? "
 "Subscribe to it at <a href=\"https://mail.kde.org/mailman/listinfo/digikam-"
-"users\">this url</a>.\n"
+"users\">this site</a>.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10684,9 +10686,9 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that digiKam has multiple plugins with extra features like <b>HTML "
-"export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and that you are "
-"welcome to write your own plugins? You can find more information at <a href="
-"\"http://extragear.kde.org/apps/kipi\">this url</a>.\n"
+"export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and many more? You "
+"can even write your own! Find more information at <a href=\"http://extragear."
+"kde.org/apps/kipi\">this site</a>.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10765,6 +10767,21 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:161
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td><img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can use the <b>PNG</b> file format instead of <b>TIFF</b> "
+#| "for good compression without losing image quality?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10772,8 +10789,9 @@ msgid ""
 "<td><img src=\"hicolor/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"... that you can use the <b>PNG</b> file format instead of <b>TIFF</b> for "
-"good compression without losing image quality?\n"
+"... that you can save your images with the new <b>PNG</b> file format "
+"instead of the old <b>TIFF</b> format and get good compression without "
+"losing image quality?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10793,6 +10811,21 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:176
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\"></td>\n"
+#| "<td>\n"
+#| "... that most of the settings in a dialog box have <b>What's this?</b> "
+#| "information available, which can be reached via the right mouse button?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10800,8 +10833,9 @@ msgid ""
 "<td>\n"
 "<img src=\"hicolor/32x32/apps/digikam.png\"></td>\n"
 "<td>\n"
-"... that most of the settings in a dialog box have <b>What's this?</b> "
-"information available, which can be reached via the right mouse button?\n"
+"... that most of the settings in a dialog box have small explanation text, "
+"called \"<b>What's this?</b>\" information, available when you hover over an "
+"item and right click with your mouse?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10821,6 +10855,22 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:191
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that because the PNG file format uses a lossless compression "
+#| "algorithm, you can use the max compression level with this file format?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10830,7 +10880,8 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that because the PNG file format uses a lossless compression algorithm, "
-"you can use the max compression level with this file format?\n"
+"you can use the max compression level when you save your images and not lose "
+"any quality?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10880,6 +10931,22 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:223
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can edit the comments of the current image opened in the "
+#| "digiKam image editor using <b>Comments and Tags</b> sidebar tab?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10889,7 +10956,7 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that you can edit the comments of the current image opened in the "
-"digiKam image editor using <b>Comments and Tags</b> sidebar tab?\n"
+"digiKam image editor by using the <b>Comments and Tags</b> sidebar tab?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -11147,6 +11214,12 @@ msgid ""
 "use it only if you have a fast computer."
 msgstr ""
 
+#: utilities/setup/setupmetadata.cpp:101
+#, fuzzy
+#| msgid "Show images/thumbs &rotated according to orientation tag"
+msgid "Show images/thumbnails &rotated according to orientation tag"
+msgstr "अभिमुखीकरण ट्याग अनुसार छवि/थम्ब परिक्रमण देखाउनुहोस्"
+
 #: utilities/setup/setupmetadata.cpp:113
 msgid "Common Metadata Actions"
 msgstr "साझा मेटाडाटा कार्य"
@@ -11258,11 +11331,11 @@ msgstr "Exiv2 परियोजना वेबसाइट हेर्नु�
 #| "photography to store embedded information in pictures. You can learn more "
 #| "about IPTC at <a href='http://www.iptc.org/IIM'>www.iptc.org</a>.</p>"
 msgid ""
-"<p><b><a href='http://en.wikipedia.org/wiki/Exif'>EXIF</a></b> is a standard "
-"used by most digital cameras today to store technical information about "
-"photograph.</p><p><b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></"
-"b> is an old standard used in digital photography to store photographer "
-"information in pictures.</p>"
+"<p><b><a href='http://en.wikipedia.org/wiki/Exif'>EXIF</a></b> - a standard "
+"used by most digital cameras today to store technical information (like "
+"aperture and shutter speed) about an image.</p><p><b><a href='http://en."
+"wikipedia.org/wiki/IPTC'>IPTC</a></b> - an older standard used in digital "
+"photography to store photographer information in an image.</p>"
 msgstr ""
 "<p><b>EXIF</b> छवि फाइलमा मेटाडाटाको रूपमा फोटोका बारेमा प्राविधिक सूचना भण्डारण "
 "गर्न आजकाल धेरै डिजिटल क्यामेराद्वारा प्रयोग गरिने मानक हो । तपाईँले <a href='http://"
@@ -11274,7 +11347,7 @@ msgstr ""
 #: utilities/setup/setupmetadata.cpp:180
 msgid ""
 "<p><b><a href='http://en.wikipedia.org/wiki/"
-"Extensible_Metadata_Platform'>XMP</a></b> is a new standard used in digital "
+"Extensible_Metadata_Platform'>XMP</a></b> - a new standard used in digital "
 "photography dedicated to replace IPTC.</p>"
 msgstr ""
 
@@ -11324,8 +11397,10 @@ msgstr ""
 "हुन्छ ।"
 
 #: utilities/setup/setupslideshow.cpp:94
-msgid "Display in loop"
-msgstr "लुपमा प्रर्दशन"
+#, fuzzy
+#| msgid "<p>Run the slideshow in a loop."
+msgid "Slideshow runs in a loop"
+msgstr "<p>लुपमा स्लाइड प्रर्दशन चलाउनुहोस् ।"
 
 #: utilities/setup/setupslideshow.cpp:95
 #, fuzzy
@@ -11334,175 +11409,179 @@ msgid "Run the slideshow in a loop."
 msgstr "<p>लुपमा स्लाइड प्रर्दशन चलाउनुहोस् ।"
 
 #: utilities/setup/setupslideshow.cpp:97
-msgid "Print image file name"
-msgstr "छवि फाइल नाम मुद्रण गर्नुहोस्"
+#, fuzzy
+#| msgid "Show file name"
+msgid "Show image file name"
+msgstr "फाइल नाम देखाउनुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:98
 #, fuzzy
 #| msgid "<p>Print image file name on bottom of screen."
-msgid "Print the image file name at the bottom of the screen."
+msgid "Show the image file name at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल छवि फाइलनाम मुद्रण गर्नुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:100
-msgid "Print image creation date"
-msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+#, fuzzy
+#| msgid "Show file creation &date"
+msgid "Show image creation date"
+msgstr "फाइल सिर्जना मिति देखाउनुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:101
 #, fuzzy
 #| msgid "<p>Print image comment on bottom of screen."
-msgid "Print the image creation time/date at the bottom of the screen."
+msgid "Show the image creation time/date at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल छवि टिप्पणी मुद्रण गर्नुहोस्"
-
-#: utilities/setup/setupslideshow.cpp:103
-#, fuzzy
-#| msgid "Print camera aperture and focal"
-msgid "Print camera aperture and focal length"
-msgstr "क्यामेरा एपर्चर र फोकल मुद्रण गर्नुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:104
 #, fuzzy
 #| msgid "<p>Print camera aperture and focal on bottom of screen."
-msgid "Print the camera aperture and focal length at the bottom of the screen."
+msgid "Show the camera aperture and focal length at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल क्यामेरा एपर्चर र फोकल मुद्रण गर्नुहोस् ।"
-
-#: utilities/setup/setupslideshow.cpp:106
-msgid "Print camera exposure and sensitivity"
-msgstr "क्यामेरा प्रर्दशन र संवेदनशीलता मुद्रण गर्नुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:107
 #, fuzzy
 #| msgid "<p>Print camera exposure and sensitivity on bottom of screen."
-msgid "Print the camera exposure and sensitivity at the bottom of the screen."
+msgid "Show the camera exposure and sensitivity at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल क्यामेरा प्रर्दशन र संवेदनशीलता मुद्रण गर्नुहोस् ।"
-
-#: utilities/setup/setupslideshow.cpp:109
-msgid "Print camera make and model"
-msgstr "क्यामेरा निर्माण र नमुना मुद्रण गर्नुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:110
 #, fuzzy
 #| msgid "<p>Print camera make and model on bottom of screen."
-msgid "Print the camera make and model at the bottom of the screen."
+msgid "Show the camera make and model at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल क्यामेरा निर्माण र नमुना मुद्रण गर्नुहोस् ।"
 
-#: utilities/setup/setupslideshow.cpp:112
+#: utilities/setup/setupslideshow.cpp:112 utilities/setup/setuptooltip.cpp:191
 #, fuzzy
-#| msgid "Print image creation date"
-msgid "Print image caption"
-msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+#| msgid "Show picture rating"
+msgid "Show image caption"
+msgstr "तस्विर दर देखाउनुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:113
 #, fuzzy
 #| msgid "<p>Print image comment on bottom of screen."
-msgid "Print the image caption at the bottom of the screen."
+msgid "Show the image caption at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल छवि टिप्पणी मुद्रण गर्नुहोस्"
 
-#: utilities/setup/setupslideshow.cpp:115
+#: utilities/setup/setupslideshow.cpp:115 utilities/setup/setuptooltip.cpp:197
 #, fuzzy
-#| msgid "Print image creation date"
-msgid "Print image rating"
-msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+#| msgid "Show picture rating"
+msgid "Show image rating"
+msgstr "तस्विर दर देखाउनुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:116
 #, fuzzy
 #| msgid "<p>Print image creation on bottom of screen."
-msgid "Print the digiKam image rating at the bottom of the screen."
+msgid "Show the digiKam image rating at the bottom of the screen."
 msgstr "<p>स्क्रिनको तल छवि सिर्जना मुद्रण गर्नुहोस्"
 
 #: utilities/setup/setupmime.cpp:92
 msgid ""
-"<p>Digikam supports the image formats that digital cameras produce, a few "
-"other important image formats, as well as common video and audio formats.</"
-"p> <p>If you have special needs, you can adjust here the list of supported "
-"formats. Add your file extensions to the lists of either image, audio or "
-"video files.</p>"
+"<p>Digikam attempts to support all of the image formats that digital cameras "
+"produce, while being able to handle a few other important video and audio "
+"formats.</p> <p>You can add to the already-appreciable list of formats that "
+"Digikam handles by adding the extension of the type you want to add. "
+"Multiple extensions need to be separated by a space.</p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:101
+#: utilities/setup/setupmime.cpp:106
 msgid "Image Files"
 msgstr "छवि फाइल"
 
-#: utilities/setup/setupmime.cpp:108
-msgid "Customize &image file extensions (<a href=image>Current settings</a>):"
-msgstr ""
-
-#: utilities/setup/setupmime.cpp:112
+#: utilities/setup/setupmime.cpp:113
 msgid ""
-"<p>Here you can add extra extensions of image files (including RAW files) to "
-"be displayed in Albums. Just write \"xyz abc\" to support files with the *."
-"xyz and *.abc extensions. You can as well remove file formats that are "
-"supported by default by prepending a minus sign: \"-gif\" will remove all "
-"GIF files from the database.</p><p><b>Attention:</b> Removing files from the "
-"database means losing all their tags and ratings!<p>"
+"Customize &image file extensions (<a href='image'>Currently-supported types</"
+"a>):"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:125 utilities/setup/setupmime.cpp:160
-#: utilities/setup/setupmime.cpp:195
+#: utilities/setup/setupmime.cpp:117
+msgid ""
+"<p>Here you can add the extensions of image files (including RAW files) to "
+"be displayed in the Album view. Just put \"xyz abc\" to display files with "
+"the xyz and abc extensions in your Album view.</p><p>You can also remove "
+"file formats that are shown by default by putting a minus sign in front of "
+"the extension: \"-gif\", which would remove all GIF files from your Album "
+"view and any trace of them in your database. They would not be deleted, just "
+"not shown in Digikam.</p><p><b>Warning:</b> Removing files from the database "
+"means losing all of their tags and ratings!</p>"
+msgstr ""
+
+#: utilities/setup/setupmime.cpp:131 utilities/setup/setupmime.cpp:169
+#: utilities/setup/setupmime.cpp:207
 msgid "Revert to default settings"
 msgstr "पूर्वनिर्धारित सेटिङ उल्टाउनुहोस्"
 
-#: utilities/setup/setupmime.cpp:136
+#: utilities/setup/setupmime.cpp:142
 msgid "Movie Files"
 msgstr "चलचित्र फाइल"
 
-#: utilities/setup/setupmime.cpp:143
-msgid "Customize &movie file extensions (<a href=video>Current settings</a>):"
-msgstr ""
-
-#: utilities/setup/setupmime.cpp:147
+#: utilities/setup/setupmime.cpp:149
 msgid ""
-"<p>Here you can add extra extensions of video files to be displayed in "
-"Albums. Just write \"xyz abc\" to support files with the *.xyz and *.abc "
-"extensions. Clicking on these files will play them in an embedded KDE movie "
-"player. You can as well remove file formats that are supported by default by "
-"prepending a minus sign: \"-avi\" will remove all AVI files from the "
-"database.</p>"
+"Customize &movie file extensions (<a href='video'>Currently-supported types</"
+"a>):"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:171
+#: utilities/setup/setupmime.cpp:153
+msgid ""
+"<p>Here you can add extra extensions of video files to be displayed in your "
+"Album view. Just write \"xyz abc\" to support files with the *.xyz and *.abc "
+"extensions. Clicking on these files will play them in an embedded KDE movie "
+"player.</p><p>You can as well remove file formats that are supported by "
+"default by putting a minus sign in front of the extension: \"-avi\", which "
+"would remove all AVI files from your Album view and any trace of them in "
+"your database. They would not be deleted, just not shown in Digikam.</"
+"p><p><b>Warning:</b> Removing files from the database means losing all of "
+"their tags and ratings!</p>"
+msgstr ""
+
+#: utilities/setup/setupmime.cpp:180
 msgid "Audio Files"
 msgstr "अडियो फाइल"
 
-#: utilities/setup/setupmime.cpp:178
-msgid "Customize &audio file extensions (<a href=audio>Current settings</a>):"
-msgstr ""
-
-#: utilities/setup/setupmime.cpp:182
+#: utilities/setup/setupmime.cpp:187
 msgid ""
-"<p>Here you can add extra extensions of audio files to be displayed in "
-"Albums. Just write \"xyz abc\" to support files with the *.xyz and *.abc "
-"extensions. Clicking on these files will play them with an embedded KDE "
-"audio player. You can as well remove file formats that are supported by "
-"default by prepending a minus sign: \"-mp3\" will for example remove all MP3 "
-"files from the database.</p>"
+"Customize &audio file extensions (<a href='audio'>Currently-supported types</"
+"a>):"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:295
+#: utilities/setup/setupmime.cpp:191
+msgid ""
+"<p>Here you can add extra extensions of audio files to be displayed in your "
+"Album view. Just write \"mp7\" to support files with the *.mp7 extension. "
+"Clicking on these files will play them in an embedded KDE audio player.</"
+"p><p>You can also remove file formats that are supported by default by "
+"putting a minus sign in front of the extension: \"-ogg\", which would remove "
+"all OGG files from your Album view and any trace of them in your database. "
+"They would not be deleted, just not shown in Digikam.</p><p><b>Warning:</b> "
+"Removing files from the database means losing all of their tags and ratings!"
+"</p>"
+msgstr ""
+
+#: utilities/setup/setupmime.cpp:307
 #, kde-format
 msgid ""
-"You have chosen to remove the following image formats from the list of "
-"supported formats: %1.\n"
-"These are very common formats. If you have images in your collection with "
-"these formats, they will be removed from the database and you will lose all "
-"information about them, including rating and tags. Are you sure you want to "
-"apply your changes about the supported image formats?"
+"<p>You have chosen to remove the following image formats from the list of "
+"supported formats: <b>%1</b>.</p><p>These are very common formats. If you "
+"have images in your collection with these formats, they will be removed from "
+"the database and you will lose all information about them, including rating "
+"and tags.</p><p>Are you sure you want to apply your changes and lose the "
+"support for these formats?</p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:341
+#: utilities/setup/setupmime.cpp:353
 #, kde-format
 msgid ""
 "<p>Files with these extensions will be recognized as images and included "
 "into the database:<br/> <code>%1</code></p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:351
+#: utilities/setup/setupmime.cpp:363
 #, kde-format
 msgid ""
 "<p>Files with these extensions will be recognized as movie files and "
 "included into the database:<br/> <code>%1</code></p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:361
+#: utilities/setup/setupmime.cpp:373
 #, kde-format
 msgid ""
 "<p>Files with these extensions will be recognized as audio files and "
@@ -11646,21 +11725,26 @@ msgstr ""
 
 #: utilities/setup/setupalbumview.cpp:167
 msgid ""
-"Set this option to load the full image size with an embedded preview, "
-"instead of a reduced size. Because this option will take more time to load "
-"images, use it only if you have a fast computer."
+"Set this option to load the full image size for a preview, instead of with a "
+"reduced size. This loads more data and will be slow on older computers."
 msgstr ""
 
 #: utilities/setup/setupmisc.cpp:69
-msgid "Show confirmation dialog when moving items to the &trash"
+#, fuzzy
+#| msgid "Show confirmation dialog when moving items to the &trash"
+msgid "Confirm when moving items to the &trash"
 msgstr "वस्तुहरूलाई रद्दीटोकरीमा सार्दा यकिन संवाद देखाउनुहोस्"
 
 #: utilities/setup/setupmisc.cpp:71
-msgid "Apply changes in the &right sidebar without confirmation"
+#, fuzzy
+#| msgid "Apply changes in the &right sidebar without confirmation"
+msgid "Do not confirm when apply changes in the &right sidebar"
 msgstr "यकिन नगरिकन दायाँ छेउपट्टीमा परिवर्तनहरू लागू गर्नुहोस्"
 
 #: utilities/setup/setupmisc.cpp:75
-msgid "&Scan for new items on startup (slows down startup)"
+#, fuzzy
+#| msgid "&Scan for new items on startup (slows down startup)"
+msgid "&Scan for new items at startup (makes startup slower)"
 msgstr "सुरुआतमा नयाँ वस्तुका लागि स्क्यान गर्नुहोस् (सुरुआत हुँन ढिलो हुन्छ)"
 
 #: utilities/setup/setupidentity.cpp:76
@@ -11774,16 +11858,15 @@ msgstr ""
 
 #: utilities/setup/setupcollections.cpp:205
 #, fuzzy
-#| msgid "&Sort Albums"
-msgid "Root Album Paths"
-msgstr "एल्बम क्रमबद्ध गर्नुहोस्"
+#| msgid "Create Folder?"
+msgid "Root Album Folders"
+msgstr "फोल्डर सिर्जना गर्नुहुन्छ ?"
 
 #: utilities/setup/setupcollections.cpp:208
 msgid ""
-"Here you can set all root album paths used to host your images. Write access "
-"is necessary to be able to edit images.\n"
-"You can use removable media and remote file systems shared over NFS for "
-"example."
+"Below are the locations of your root albums used to store your images. Write "
+"access is necessary to be able to edit images in these albums.\n"
+"Note: Removable media and remote file systems (NFS and Samba), are supported."
 msgstr ""
 
 #: utilities/setup/setupcollections.cpp:222
@@ -11791,7 +11874,7 @@ msgstr ""
 #| msgid ""
 #| "<p>Here you can see the digital camera list used by digiKam via the "
 #| "Gphoto interface."
-msgid "This shows all root album paths used by digiKam as collections."
+msgid "This shows all root albums used by digiKam as collections."
 msgstr ""
 "<p>यहाँ तपाईँले जिफोटो इन्टरफेस हुँदै डिजिक्यामद्वारा प्रयोग गरिने डिजिटल क्यामेरा सूची हेर्न "
 "सक्नुहुन्छ ।"
@@ -11852,11 +11935,10 @@ msgstr ""
 #| "computer.<p>Write access is required for this path and do not use a "
 #| "remote path here, like an NFS mounted file system."
 msgid ""
-"Here you can set the location on your computer where the digiKam database "
-"file will be stored. There is only one common database file for all root "
-"albums.\n"
+"The location where the database file will be stored on your system. There is "
+"one common database file for all root albums.\n"
 "Write access is required to be able to edit image properties.\n"
-"Please note that you cannot use a remote file system here, such as NFS."
+"Note: A remote file system, such as NFS, cannot be used here."
 msgstr ""
 "<p>यहाँ तपाईँले आफ्नो कम्प्युटरमा डिजिक्याम एल्बम लाइब्रेरीको मुख्य मार्ग सेट गर्न सक्नुहुन्छ "
 "।<p>लेख्ने अधिकार यो मार्गका लागि आवश्यक पर्दछ र NFS माउन्ट फाइल प्रणाली जस्ता टाढाको "
@@ -11873,8 +11955,8 @@ msgstr ""
 #| "No write access for this path.\n"
 #| "Warning: the comments and tag features will not work."
 msgid ""
-"No write access for this path to store database.\n"
-"Warning: the caption and tag features will not work."
+"You don't seem to have write access to this database folder.\n"
+"Without this access, the caption and tag features will not work."
 msgstr ""
 "यो मार्गमा लेख्ने अनुमति छैन ।\n"
 "चेतावनी: टिप्पणी र ट्याग सुविधाले काम गर्दैन ।"
@@ -11882,7 +11964,7 @@ msgstr ""
 #: utilities/setup/setupcollections.cpp:538
 #, fuzzy
 #| msgid "Sorry; cannot use home directory as albums library."
-msgid "Sorry you can not use your home directory as root album path."
+msgid "Sorry you cannot use your home directory as the root album."
 msgstr "क्षमा गर्नुहोस्, एल्बम लाइब्रेरीलाई गृह डाइरेक्टरीको रूपमा प्रयोग गर्न सकिदैन ।"
 
 #: utilities/setup/setupcollections.cpp:546
@@ -11891,8 +11973,8 @@ msgstr "क्षमा गर्नुहोस्, एल्बम लाइ�
 #| "No write access for this path.\n"
 #| "Warning: the comments and tag features will not work."
 msgid ""
-"No write access for this root album path.\n"
-"Warning: image and metadata editing will not work with this path."
+"You don't seem to have write access to this root album.\n"
+"Without this access, image and metadata editing will not work."
 msgstr ""
 "यो मार्गमा लेख्ने अनुमति छैन ।\n"
 "चेतावनी: टिप्पणी र ट्याग सुविधाले काम गर्दैन ।"
@@ -11900,14 +11982,27 @@ msgstr ""
 #: utilities/setup/setupcollections.cpp:606
 #, fuzzy, kde-format
 #| msgid "File already exists"
-msgid "A root album named \"%1\" already exist."
+msgid "A root album named \"%1\" already exists."
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
 #: utilities/setup/setupcollections.cpp:612
 #, fuzzy, kde-format
 #| msgid "File already exists"
-msgid "A root album set with path \"%1\" already exist."
+msgid "A root album in folder \"%1\" already exists."
 msgstr "फाइल पहिल्यै अवस्थित छ"
+
+#: utilities/setup/setupeditor.cpp:93
+msgid "&Use theme background color"
+msgstr "विषयवस्तु पृष्ठभूमि रङ प्रयोग गर्नुहोस्"
+
+#: utilities/setup/setupeditor.cpp:96
+#, fuzzy
+#| msgid ""
+#| "<p>Enable this option to use the background theme color in the image "
+#| "editor area"
+msgid "Enable this option to use background theme color in image editor area"
+msgstr ""
+"<p>पृष्ठभूमि विषयवस्तु रङ छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि यो विकल्प सक्षम पार्नुहोस्"
 
 #: utilities/setup/setupeditor.cpp:105
 #, fuzzy
@@ -11934,6 +12029,34 @@ msgid ""
 msgstr ""
 "<p>यो विकल्प सक्षम पारिएमा, थम्बनेल बार छवि क्षेत्रको पछाडि तेर्सो तरिकाले प्रर्दशीत हुन्छ "
 "। यो विकल्पले काम गर्नका लगि तपाईँले शोफोटो पुन: सुरु गर्नु पर्दछ ।<p>"
+
+#: utilities/setup/setupeditor.cpp:119
+msgid "Use Raw Import Tool to handle Raw image"
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:120
+msgid ""
+"Set this option to use Raw Import tool to load a RAW image. With this tool "
+"you are able to customize indeep decoding settings."
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:142
+#, fuzzy
+#| msgid ""
+#| "<p>Customize the color used in image editor to identify the under-exposed "
+#| "pixels."
+msgid "Customize color used in image editor to identify under-exposed pixels."
+msgstr ""
+"<p>न्यून-प्रर्दशन पिक्सेल परिचित गर्न छवि सम्पादकमा प्रयोग गरिने रङ अनुकूलन गर्नुहोस् ।"
+
+#: utilities/setup/setupeditor.cpp:149
+#, fuzzy
+#| msgid ""
+#| "<p>Customize the color used in image editor to identify the over-exposed "
+#| "pixels."
+msgid "Customize color used in image editor to identify over-exposed pixels."
+msgstr ""
+"<p>अधिक-प्रर्दशन पिक्सेलमा परिचित गर्न छवि सम्पादकमा प्रयोग गरिने रङ अनुकूलन गर्नुहोस् ।"
 
 #: utilities/setup/setupcamera.cpp:94
 #, fuzzy
@@ -12060,7 +12183,9 @@ msgid "Mime Types"
 msgstr "माइम प्रकार"
 
 #: utilities/setup/setup.cpp:180
-msgid "File (MIME) Types Settings"
+#, fuzzy
+#| msgid "File (MIME) Types Settings"
+msgid "Supported File (MIME-Type) Settings"
 msgstr "फाइल (माइम) प्रकार सेटिङ"
 
 #: utilities/setup/setup.cpp:185
@@ -12492,12 +12617,6 @@ msgstr "एल्बम नाम देखाउनुहोस्"
 msgid "Set this option to display the album name."
 msgstr "<p>एल्बम नाम प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: utilities/setup/setuptooltip.cpp:191
-#, fuzzy
-#| msgid "Show picture rating"
-msgid "Show image caption"
-msgstr "तस्विर दर देखाउनुहोस्"
-
 #: utilities/setup/setuptooltip.cpp:192
 #, fuzzy
 #| msgid "<p>Set this option to display picture comments."
@@ -12515,12 +12634,6 @@ msgstr "छवि प्रकार देखाउनुहोस्"
 #| msgid "<p>Set this option to display image type."
 msgid "Set this option to display the image tags."
 msgstr "<p>छवि प्रकार प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
-
-#: utilities/setup/setuptooltip.cpp:197
-#, fuzzy
-#| msgid "Show picture rating"
-msgid "Show image rating"
-msgstr "तस्विर दर देखाउनुहोस्"
 
 #: utilities/setup/setuptooltip.cpp:198
 #, fuzzy
@@ -12720,13 +12833,13 @@ msgstr "<p>यहाँ काँटछाँटका लागि चयन �
 #: utilities/imageeditor/tools/imageresize.cpp:202
 #, fuzzy
 #| msgid "<p>Set here the height selection for cropping."
-msgid "Set here the new image height in pixels."
+msgid "New image height in pixels (px)."
 msgstr "<p>यहाँ काँटछाँटका लागि चयन उचाइ सेट गर्नुहोस् ।"
 
 #: utilities/imageeditor/tools/imageresize.cpp:209
 #, fuzzy
 #| msgid "<p>Set here the width selection for cropping."
-msgid "Set here the new image width in percent."
+msgid "New image width in percent (%)."
 msgstr "<p>यहाँ काँटछाँटका लागि चयन चौडाइ सेट गर्नुहोस् ।"
 
 #: utilities/imageeditor/tools/imageresize.cpp:211
@@ -12736,7 +12849,7 @@ msgstr "उचाइ (%):"
 #: utilities/imageeditor/tools/imageresize.cpp:216
 #, fuzzy
 #| msgid "<p>Set here the height selection for cropping."
-msgid "Set here the new image height in percent."
+msgid "New image height in percent (%)."
 msgstr "<p>यहाँ काँटछाँटका लागि चयन उचाइ सेट गर्नुहोस् ।"
 
 #: utilities/imageeditor/tools/imageresize.cpp:218
@@ -12755,54 +12868,54 @@ msgstr ""
 
 #: utilities/imageeditor/tools/imageresize.cpp:229
 msgid ""
-"Enable this option to restore photograph content. This way is useful to "
-"scale-up an image to an huge size. Warning: this process can take a while."
+"Enable this option to scale-up an image to a huge size. <b>Warning</b>: This "
+"process can take some time."
 msgstr ""
 
-#: utilities/imageeditor/tools/imageresize.cpp:233
+#: utilities/imageeditor/tools/imageresize.cpp:232
 msgid ""
-"<b>Note: use Restoration Mode to only scale-up an image to huge size. "
-"Warning, this process can take a while.</b>"
+"<b>Note:</b> use Restoration Mode to scale-up an image to a huge size. This "
+"process can take some time."
 msgstr ""
 
-#: utilities/imageeditor/tools/imageresize.cpp:240
+#: utilities/imageeditor/tools/imageresize.cpp:239
 #, fuzzy
 #| msgid "<p>This is the current percentage of the task completed."
 msgid "This shows the current progress when you use the Restoration mode."
 msgstr "<p>यो हालै सम्पन्न भएको कार्यको प्रतिशत हो ।"
 
-#: utilities/imageeditor/tools/imageresize.cpp:581
-#: utilities/imageeditor/tools/imageresize.cpp:606
+#: utilities/imageeditor/tools/imageresize.cpp:580
+#: utilities/imageeditor/tools/imageresize.cpp:605
 #, fuzzy
 #| msgid "&Resize..."
 msgid "Resize"
 msgstr "रिसाइज गर्नुहोस्..."
 
-#: utilities/imageeditor/tools/imageresize.cpp:633
+#: utilities/imageeditor/tools/imageresize.cpp:632
 #, fuzzy
 #| msgid "Color Management Settings File to Load"
 msgid "Photograph Resizing Settings File to Load"
 msgstr "लोड गर्ने रङ व्यवस्थापन सेटिङ फाइल"
 
-#: utilities/imageeditor/tools/imageresize.cpp:644
+#: utilities/imageeditor/tools/imageresize.cpp:643
 #, fuzzy, kde-format
 #| msgid "\"%1\" is not a Color Management settings text file."
 msgid "\"%1\" is not a Photograph Resizing settings text file."
 msgstr "\"%1\" रङ व्यवस्थापन सेटिङ पाठ फाइल होइन ।"
 
-#: utilities/imageeditor/tools/imageresize.cpp:651
+#: utilities/imageeditor/tools/imageresize.cpp:650
 #, fuzzy
 #| msgid "Cannot load settings from the Color Management text file."
 msgid "Cannot load settings from the Photograph Resizing text file."
 msgstr "रङ व्यवस्थापन पाठ फाइलबाट सेटिङ लोड गर्न सकिदैन ।"
 
-#: utilities/imageeditor/tools/imageresize.cpp:660
+#: utilities/imageeditor/tools/imageresize.cpp:659
 #, fuzzy
 #| msgid "Color Management Settings File to Save"
 msgid "Photograph Resizing Settings File to Save"
 msgstr "बचत गर्ने रङ व्यवस्थापन सेटिङ फाइल"
 
-#: utilities/imageeditor/tools/imageresize.cpp:669
+#: utilities/imageeditor/tools/imageresize.cpp:668
 #, fuzzy
 #| msgid "Cannot save settings to the Color Management text file."
 msgid "Cannot save settings to the Photograph Resizing text file."
@@ -12954,6 +13067,13 @@ msgstr "होइन"
 msgid "Redo"
 msgstr "रातो"
 
+#: utilities/imageeditor/editor/editorwindow.cpp:388
+#: utilities/lighttable/lighttablewindow.cpp:440
+#, fuzzy
+#| msgid "Zoom Out"
+msgid "Zoom to 1:1"
+msgstr "जुम घटाउनुहोस्"
+
 #: utilities/imageeditor/editor/editorwindow.cpp:398
 #, fuzzy
 #| msgid "Selection"
@@ -12976,6 +13096,13 @@ msgstr ""
 #| msgid "Zoom: "
 msgid "Zoom"
 msgstr "जुम गर्नुहोस्: "
+
+#: utilities/imageeditor/editor/editorwindow.cpp:437
+#: utilities/lighttable/lighttablewindow.cpp:453
+#, fuzzy
+#| msgid "Solid white"
+msgid "Slide"
+msgstr "कडा सेतो"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:443
 msgid "Under-Exposure Indicator"
@@ -13033,6 +13160,12 @@ msgstr "तल-दायाँ"
 #: utilities/lighttable/lighttablewindow.cpp:476
 msgid "Donate Money..."
 msgstr "पैसा अनुदान दिनुहोस्..."
+
+#: utilities/imageeditor/editor/editorwindow.cpp:537
+#: utilities/lighttable/lighttablewindow.cpp:488
+#: utilities/cameragui/cameraui.cpp:440
+msgid "Components info"
+msgstr ""
 
 #: utilities/imageeditor/editor/editorwindow.cpp:543
 #: utilities/lighttable/lighttablewindow.cpp:532
@@ -13566,6 +13699,12 @@ msgid "A tag of the picture contains"
 msgstr ""
 
 #: utilities/searchwindow/searchfields.cpp:120
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "File Name"
+msgstr "नयाँ छवि फाइलनाम"
+
+#: utilities/searchwindow/searchfields.cpp:120
 msgid "Return pictures whose file name contains"
 msgstr ""
 
@@ -13585,12 +13724,6 @@ msgstr ""
 msgctxt "'Return pictures modified between...and..."
 msgid "and"
 msgstr "रद्द गर्नुहोस्"
-
-#: utilities/searchwindow/searchfields.cpp:135
-#, fuzzy
-#| msgid "Show file size"
-msgid "File Size"
-msgstr "फाइल साइज देखाउनुहोस्"
 
 #: utilities/searchwindow/searchfields.cpp:135
 #, fuzzy
@@ -15412,6 +15545,81 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "Album Collection"
+#~ msgid "Copy Album Items Selection"
+#~ msgstr "एल्बम सङ्कलन"
+
+#, fuzzy
+#~| msgid "Album Items Tool Tip Settings"
+#~ msgid "Paste Album Items Selection"
+#~ msgstr "एल्बम वस्तु उपकरण टिप सेटिङ"
+
+#, fuzzy
+#~| msgid "This option refresh all album content."
+#~ msgid "Refresh all album contents."
+#~ msgstr "यो विकल्पले एल्बमको सबै सामग्री ताजा पार्दछ ।"
+
+#, fuzzy
+#~| msgid "Cameras"
+#~ msgid "Digital Cameras"
+#~ msgstr "क्यामेरा"
+
+#, fuzzy
+#~| msgid "Camera Manual"
+#~ msgid "Cameras Added Manually"
+#~ msgstr "क्यामेरा म्यानुअल"
+
+#, fuzzy
+#~| msgid "Image Date"
+#~ msgid "File Date"
+#~ msgstr "छवि मिति"
+
+#, fuzzy
+#~| msgid "Show file size"
+#~ msgid "File size"
+#~ msgstr "फाइल साइज देखाउनुहोस्"
+
+#~ msgid "Display in loop"
+#~ msgstr "लुपमा प्रर्दशन"
+
+#~ msgid "Print image file name"
+#~ msgstr "छवि फाइल नाम मुद्रण गर्नुहोस्"
+
+#~ msgid "Print image creation date"
+#~ msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Print camera aperture and focal"
+#~ msgid "Print camera aperture and focal length"
+#~ msgstr "क्यामेरा एपर्चर र फोकल मुद्रण गर्नुहोस्"
+
+#~ msgid "Print camera exposure and sensitivity"
+#~ msgstr "क्यामेरा प्रर्दशन र संवेदनशीलता मुद्रण गर्नुहोस्"
+
+#~ msgid "Print camera make and model"
+#~ msgstr "क्यामेरा निर्माण र नमुना मुद्रण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Print image creation date"
+#~ msgid "Print image caption"
+#~ msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Print image creation date"
+#~ msgid "Print image rating"
+#~ msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Sort Albums"
+#~ msgid "Root Album Paths"
+#~ msgstr "एल्बम क्रमबद्ध गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "File already exists"
+#~ msgid "A root album set with path \"%1\" already exist."
+#~ msgstr "फाइल पहिल्यै अवस्थित छ"
+
+#, fuzzy
 #~| msgid "<qt>These items will be moved to the Trash Bin.</qt>"
 #~ msgid "<qt>These items will be moved to Trash.</qt>"
 #~ msgstr "<qt>ति वस्तुहरूलाई रद्दीटोकरीमा सारिनेछ ।</qt>"
@@ -16348,13 +16556,6 @@ msgstr ""
 
 #~ msgid "Save search as:"
 #~ msgstr "यस रूपमा खोजी बचत गर्नुहोस्:"
-
-#, fuzzy
-#~| msgid ""
-#~| "This option allows you to rename the filename of the current selected "
-#~| "item"
-#~ msgid "Enter the name of the current search"
-#~ msgstr "यो विकल्पले हालै चयन गरेको वस्तुको फाइलनाम पुन: नामकरण गर्न अनुमति दिन्छ ।"
 
 #, fuzzy
 #~| msgid "Found Tags"
