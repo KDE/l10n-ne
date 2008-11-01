@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-27 10:23+0100\n"
+"POT-Creation-Date: 2008-11-01 10:44+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1452,26 +1452,28 @@ msgstr "डाटाबेसमा ट्याग थप्न असफल"
 #: libs/database/schemaupdater.cpp:245
 #, kde-format
 msgid ""
-"The schema updating process from version 4 to 5 failed, caused by an "
-"internal error. Please delete the database files (\"%1\" and \"%2\" in \"%3"
-"\") if you want to try to run digiKam with an empty database  - it might "
-"work then."
+"The schema updating process from version 4 to 5 failed, caused by an error "
+"that we did not expect. You can try to discard your old database and start "
+"with an empty one. (In this case, please move the database files  \"%1\" and "
+"\"%2\") from the directory \"%3\"). More probably you will want to report "
+"this error to the digikam-devel@kde.org mailing list. As well, please have a "
+"look at what digikam prints on the console. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:701
+#: libs/database/schemaupdater.cpp:702
 #, kde-format
 msgid ""
 "Failed to copy the old database file (\"%1\")to its new location (\"%2\")."
 "Please make sure that the file can be copied, or delete it."
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:714
+#: libs/database/schemaupdater.cpp:715
 #, fuzzy
 #| msgid "Reading database"
 msgid "Copied database file"
 msgstr "डाटाबेस पढाइ"
 
-#: libs/database/schemaupdater.cpp:718
+#: libs/database/schemaupdater.cpp:719
 #, kde-format
 msgid ""
 "The old database file (\"%1\") has been copied to the new location (\"%2\") "
@@ -1479,97 +1481,109 @@ msgid ""
 "with an empty database. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:733
+#: libs/database/schemaupdater.cpp:734
 #, fuzzy
 #| msgid "Reading database"
 msgid "Opened new database file"
 msgstr "डाटाबेस पढाइ"
 
-#: libs/database/schemaupdater.cpp:751
+#: libs/database/schemaupdater.cpp:752
 #, kde-format
 msgid ""
 "Could not update from the old SQLite2 file (\"%1\"). Please delete this file "
 "and try again, starting with an empty database. "
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:763
+#: libs/database/schemaupdater.cpp:764
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Updated from 0.7 database"
 msgstr "फाइलबाट डाटाबेसमा मेटाडेटा पढ्नुहोस्"
 
-#: libs/database/schemaupdater.cpp:823
+#: libs/database/schemaupdater.cpp:824
 msgid "Prepared table creation"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:832
+#: libs/database/schemaupdater.cpp:833
 #, fuzzy
 #| msgid "Create Folder Failed"
 msgid "Created tables"
 msgstr "फोल्डर सिर्जना असफल"
 
-#: libs/database/schemaupdater.cpp:843
+#: libs/database/schemaupdater.cpp:845
 msgid ""
 "No album library path has been found in the configuration file. Giving up "
 "the schema updating process. Please try with an empty database, or repair "
 "your configuration."
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:865
-msgid "Configured one album root"
+#: libs/database/schemaupdater.cpp:863
+#, kde-format
+msgid ""
+"There was an error associating your albumLibraryPath (\"%1\") with a storage "
+"volume of your system. This problem may indicate that there is a problem "
+"with your installation. If you are working on Linux, check that HAL is "
+"installed and running. In any case, you can seek advice from the digikam-"
+"devel@kde.org mailing list. The database updating process will now be "
+"aborted because we dont want to create a new database based on false "
+"assumptions from a broken installation."
 msgstr ""
 
 #: libs/database/schemaupdater.cpp:881
+msgid "Configured one album root"
+msgstr ""
+
+#: libs/database/schemaupdater.cpp:897
 #, fuzzy
 #| msgid "&Sort Albums"
 msgid "Imported albums"
 msgstr "एल्बम क्रमबद्ध गर्नुहोस्"
 
-#: libs/database/schemaupdater.cpp:900
+#: libs/database/schemaupdater.cpp:916
 #, fuzzy
 #| msgid "Image Information"
 msgid "Imported images information"
 msgstr "छवि सूचना"
 
-#: libs/database/schemaupdater.cpp:969
+#: libs/database/schemaupdater.cpp:985
 msgid "Initialized and imported file suffix filter"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:979
+#: libs/database/schemaupdater.cpp:995
 msgid "Did the initial full scan"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:994
+#: libs/database/schemaupdater.cpp:1010
 #, fuzzy
 #| msgid "Print image creation date"
 msgid "Imported creation dates"
 msgstr "छवि सिर्जना मिति मुद्रण गर्नुहोस्"
 
-#: libs/database/schemaupdater.cpp:1007
+#: libs/database/schemaupdater.cpp:1023
 #, fuzzy
 #| msgid "Print image comment"
 msgid "Imported comments"
 msgstr "छवि टिप्पणी मुद्रण गर्नुहोस्"
 
-#: libs/database/schemaupdater.cpp:1024
+#: libs/database/schemaupdater.cpp:1040
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Imported ratings"
 msgstr "स्याचुरेसन:"
 
-#: libs/database/schemaupdater.cpp:1033
+#: libs/database/schemaupdater.cpp:1049
 msgid "Dropped v3 tables"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:585
+#: libs/database/collectionmanager.cpp:596
 msgid "There is already an entry with the same path"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:599
+#: libs/database/collectionmanager.cpp:610
 msgid "The storage media can be uniquely identified."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:627
+#: libs/database/collectionmanager.cpp:638
 msgid ""
 "This is a CD/DVD, which is identified by the label that you can set in your "
 "CD burning application. There is already another entry with the same label. "
@@ -1579,7 +1593,7 @@ msgid ""
 "with digiKam."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:639
+#: libs/database/collectionmanager.cpp:650
 #, kde-format
 msgid ""
 "This is a CD/DVD. It will be identified by the label (\"%1\")that you have "
@@ -1587,14 +1601,14 @@ msgid ""
 "digikam in the future, please remember to give them a unique label as well."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:651
+#: libs/database/collectionmanager.cpp:662
 #, kde-format
 msgid ""
 "This is a removable storage media that will be identified by its label (\"%1"
 "\")"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:659
+#: libs/database/collectionmanager.cpp:670
 #, kde-format
 msgid ""
 "This entry will only be identified by the path where it is found on your "
@@ -1602,7 +1616,7 @@ msgid ""
 "available."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:668
+#: libs/database/collectionmanager.cpp:679
 msgid ""
 "There is a problem identifying the storage media of this path. It will be "
 "added using the file path as the only identifier"
@@ -1964,7 +1978,7 @@ msgstr ""
 #: libs/themeengine/themeengine.cpp:192 libs/themeengine/themeengine.cpp:206
 #: digikam/albumsettings.cpp:282 digikam/digikamapp.cpp:2181
 #: showfoto/showfoto.cpp:540
-#: utilities/imageeditor/editor/editorwindow.cpp:1829
+#: utilities/imageeditor/editor/editorwindow.cpp:1830
 #: utilities/lighttable/lighttablewindow.cpp:1611
 #: utilities/cameragui/cameraui.cpp:1976
 msgid "Default"
@@ -11952,12 +11966,12 @@ msgstr ""
 "।<p>लेख्ने अधिकार यो मार्गका लागि आवश्यक पर्दछ र NFS माउन्ट फाइल प्रणाली जस्ता टाढाको "
 "मार्ग यहाँ प्रयोग नगर्नुहोस् ।"
 
-#: utilities/setup/setupcollections.cpp:432
+#: utilities/setup/setupcollections.cpp:437
 #, kde-format
 msgid "Col. %1"
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:514
+#: utilities/setup/setupcollections.cpp:519
 #, fuzzy
 #| msgid ""
 #| "No write access for this path.\n"
@@ -11969,13 +11983,13 @@ msgstr ""
 "यो मार्गमा लेख्ने अनुमति छैन ।\n"
 "चेतावनी: टिप्पणी र ट्याग सुविधाले काम गर्दैन ।"
 
-#: utilities/setup/setupcollections.cpp:540
+#: utilities/setup/setupcollections.cpp:545
 #, fuzzy
 #| msgid "Sorry; cannot use home directory as albums library."
 msgid "Sorry you cannot use your home directory as the root album."
 msgstr "क्षमा गर्नुहोस्, एल्बम लाइब्रेरीलाई गृह डाइरेक्टरीको रूपमा प्रयोग गर्न सकिदैन ।"
 
-#: utilities/setup/setupcollections.cpp:548
+#: utilities/setup/setupcollections.cpp:553
 #, fuzzy
 #| msgid ""
 #| "No write access for this path.\n"
@@ -11987,13 +12001,13 @@ msgstr ""
 "यो मार्गमा लेख्ने अनुमति छैन ।\n"
 "चेतावनी: टिप्पणी र ट्याग सुविधाले काम गर्दैन ।"
 
-#: utilities/setup/setupcollections.cpp:608
+#: utilities/setup/setupcollections.cpp:613
 #, fuzzy, kde-format
 #| msgid "File already exists"
 msgid "A root album named \"%1\" already exists."
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
-#: utilities/setup/setupcollections.cpp:614
+#: utilities/setup/setupcollections.cpp:619
 #, fuzzy, kde-format
 #| msgid "File already exists"
 msgid "A root album in folder \"%1\" already exists."
@@ -13245,16 +13259,16 @@ msgstr ""
 "लाई\n"
 "\"%2\" मा बचत गर्न असफल ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1488
+#: utilities/imageeditor/editor/editorwindow.cpp:1489
 msgid "New Image File Name"
 msgstr "नयाँ छवि फाइलनाम"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1553
+#: utilities/imageeditor/editor/editorwindow.cpp:1554
 #, kde-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "लक्ष्य छवि फाइल ढाँचा \"%1\" समर्थन गर्दैन ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1562
+#: utilities/imageeditor/editor/editorwindow.cpp:1563
 #, kde-format
 msgid ""
 "Failed to save file\n"
@@ -13265,18 +13279,18 @@ msgstr ""
 "\"%1\" लाई\n"
 "\"%2\"मा बचत गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1592
+#: utilities/imageeditor/editor/editorwindow.cpp:1593
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "\"%1\" नामको फाइल पहिल्यै अवस्थित छ । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1596
-#: utilities/imageeditor/editor/editorwindow.cpp:1646
+#: utilities/imageeditor/editor/editorwindow.cpp:1597
+#: utilities/imageeditor/editor/editorwindow.cpp:1647
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1641
+#: utilities/imageeditor/editor/editorwindow.cpp:1642
 #, kde-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -13284,41 +13298,41 @@ msgid ""
 msgstr ""
 "\"%1\" नामको फाइलमा तपाईँलाई लेख्ने अनुमति छैन । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1683
+#: utilities/imageeditor/editor/editorwindow.cpp:1684
 msgid "Failed to overwrite original file"
 msgstr "मौलिक फाइल अधिलेखन गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1684
+#: utilities/imageeditor/editor/editorwindow.cpp:1685
 msgid "Error Saving File"
 msgstr "फाइल बचत गर्दा त्रुटि"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1730
+#: utilities/imageeditor/editor/editorwindow.cpp:1731
 msgid "Color Managed View is enabled"
 msgstr "रङ सन्तुलन दृश्य सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1732
+#: utilities/imageeditor/editor/editorwindow.cpp:1733
 msgid "Color Managed View is disabled"
 msgstr "रङ सन्तुलन दृश्य अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1736
+#: utilities/imageeditor/editor/editorwindow.cpp:1737
 msgid ""
 "Color Management is not configured, so the Color Managed View is not "
 "available"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1758
+#: utilities/imageeditor/editor/editorwindow.cpp:1759
 msgid "Under-Exposure indicator is enabled"
 msgstr "न्यून-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1759
+#: utilities/imageeditor/editor/editorwindow.cpp:1760
 msgid "Under-Exposure indicator is disabled"
 msgstr "न्यून-प्रर्दशन सूचक अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1779
+#: utilities/imageeditor/editor/editorwindow.cpp:1780
 msgid "Over-Exposure indicator is enabled"
 msgstr "अधिक-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1780
+#: utilities/imageeditor/editor/editorwindow.cpp:1781
 msgid "Over-Exposure indicator is disabled"
 msgstr "अधिक-प्रर्दशन सूचक अक्षम गरियो"
 
