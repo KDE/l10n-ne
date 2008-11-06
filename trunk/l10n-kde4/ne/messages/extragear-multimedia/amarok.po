@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-05 10:49+0100\n"
+"POT-Creation-Date: 2008-11-06 09:50+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -397,7 +397,7 @@ msgid "Page #%1"
 msgstr "प्ले गर्दै: %1"
 
 #: context/engines/current/CurrentEngine.cpp:110
-#: context/applets/currenttrack/CurrentTrack.cpp:120 widgets/Osd.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:120 widgets/Osd.cpp:556
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
@@ -859,26 +859,26 @@ msgctxt "Error message, tried to start an invalid service"
 msgid "Invalid (null) service, can not perform any operations."
 msgstr ""
 
+#. i18n: file: dialogs/tagdialogbase.ui:502
+#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
 #: context/applets/currenttrack/CurrentTrack.cpp:85
-#: context/applets/currenttrack/CurrentTrack.cpp:342
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
-#: playlist/PlaylistModel.cpp:524 widgets/TrackTooltip.cpp:167
-#: widgets/SmartPlaylistEditor.cpp:189
-msgid "Score"
-msgstr "प्राप्ताङ्क"
+#: context/applets/currenttrack/CurrentTrack.cpp:342 dialogs/TagDialog.cpp:766
+#: rc.cpp:861
+msgid "Score:"
+msgstr "प्राप्ताङ्क:"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:86
-#: context/applets/currenttrack/CurrentTrack.cpp:343
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:700
-#: playlist/PlaylistModel.cpp:526 widgets/TrackTooltip.cpp:192
-msgid "Play Count"
-msgstr "प्ले गणना"
+#: context/applets/currenttrack/CurrentTrack.cpp:343 dialogs/TagDialog.cpp:770
+msgid "Playcount:"
+msgstr "प्ले गणना:"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:87
+#: context/applets/currenttrack/CurrentTrack.cpp:344 dialogs/TagDialog.cpp:775
+msgctxt "a single item (singular)"
+msgid "Last Played:"
+msgstr "अन्तिममा प्लेगरीएको:"
+
 #: context/applets/currenttrack/CurrentTrack.cpp:245
-#: context/applets/currenttrack/CurrentTrack.cpp:344
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:263
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:707
 #: widgets/TrackTooltip.cpp:197
@@ -1696,21 +1696,11 @@ msgstr "साइज:"
 msgid "Format:"
 msgstr "ढाँचा:"
 
-#. i18n: file: dialogs/tagdialogbase.ui:502
-#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: dialogs/TagDialog.cpp:766 rc.cpp:861
-msgid "Score:"
-msgstr "प्राप्ताङ्क:"
-
 #. i18n: file: dialogs/tagdialogbase.ui:531
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
 #: dialogs/TagDialog.cpp:768 rc.cpp:864
 msgid "Rating:"
 msgstr "मूल्याङ्कन:"
-
-#: dialogs/TagDialog.cpp:770
-msgid "Playcount:"
-msgstr "प्ले गणना:"
 
 #: dialogs/TagDialog.cpp:773
 msgid "First Played:"
@@ -1722,11 +1712,6 @@ msgstr "पहिले प्ले गरिएको:"
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "कहिल्यै पनि"
-
-#: dialogs/TagDialog.cpp:775
-msgctxt "a single item (singular)"
-msgid "Last Played:"
-msgstr "अन्तिममा प्लेगरीएको:"
 
 #: dialogs/TagDialog.cpp:776
 #, fuzzy
@@ -2454,16 +2439,16 @@ msgstr "छरितो प्ले सूचीहरू"
 msgid "Already subscribed to %1."
 msgstr "%2 को रूपमा फिड %1 लाई सघाउनु पहिल्यै स्वीकार गरियो"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:228
+#: podcasts/sql/SqlPodcastProvider.cpp:244
 msgid "Downloading Podcast Media"
 msgstr "पोडकास्ट मिडिया डाउनलोड गर्दै"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:228
+#: podcasts/sql/SqlPodcastProvider.cpp:244
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr "पोडकास्ट \"%1\" डाउनलोड गर्दै"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:319
+#: podcasts/sql/SqlPodcastProvider.cpp:335
 #, fuzzy, kde-format
 #| msgid "Setting iPod model to %1 GB %2 (x%3)"
 msgid "Unable to save podcast episode file to %1"
@@ -2471,8 +2456,9 @@ msgstr "%1 GB %2 (x%3) मा आईपोड नमूना सेट गर�
 
 #: podcasts/sql/SqlPodcastProvider.h:45
 #: browsers/playlistbrowser/PodcastModel.cpp:365
-#: browsers/playlistbrowser/PodcastModel.cpp:440
-#: browsers/playlistbrowser/PodcastModel.cpp:478
+#: browsers/playlistbrowser/PodcastModel.cpp:450
+#: browsers/playlistbrowser/PodcastModel.cpp:477
+#: browsers/playlistbrowser/PodcastModel.cpp:515
 #: services/opmldirectory/OpmlDirectoryService.cpp:242
 #, fuzzy
 #| msgid "Podcasts"
@@ -3181,12 +3167,25 @@ msgstr "गुण सक्रिय"
 msgid "Match:"
 msgstr ""
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:700
+#: playlist/PlaylistModel.cpp:526 widgets/TrackTooltip.cpp:192
+msgid "Play Count"
+msgstr "प्ले गणना"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:257
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:701
 #: playlist/PlaylistModel.cpp:525 widgets/TrackTooltip.cpp:185
 #: widgets/SmartPlaylistEditor.cpp:189
 msgid "Rating"
 msgstr "मूल्याङ्कन"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
+#: playlist/PlaylistModel.cpp:524 widgets/TrackTooltip.cpp:167
+#: widgets/SmartPlaylistEditor.cpp:189
+msgid "Score"
+msgstr "प्राप्ताङ्क"
 
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:259
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:703
@@ -7759,11 +7758,11 @@ msgstr "मौन"
 msgid "OSD Preview - drag to reposition"
 msgstr "ओएसडी पूर्वावलोकन - पुन: स्थिति गर्न तान्नुहोस्"
 
-#: widgets/Osd.cpp:579
+#: widgets/Osd.cpp:577
 msgid "No information available for this track"
 msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
 
-#: widgets/Osd.cpp:666
+#: widgets/Osd.cpp:664
 msgid "Paused"
 msgstr "पज गरियो"
 
