@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-10 10:15+0100\n"
+"POT-Creation-Date: 2008-11-11 09:59+0100\n"
 "PO-Revision-Date: 2007-08-23 20:18+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -84,51 +84,119 @@ msgstr "सबै फाइल"
 msgid "Configure Slide Show"
 msgstr "कन्फिगर स्लाइड देखाउनुहोस्"
 
-#: part/KPrView.cpp:97
+#: part/KPrView.cpp:62
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "Show Master Slides"
+msgstr "स्लाइड टाँस्नुहोस्"
+
+#: part/KPrView.cpp:63
+msgid "Insert Slide"
+msgstr "स्लाइड घुसाउनुहोस्"
+
+#: part/KPrView.cpp:64 part/KPrView.cpp:65
+msgid "Insert a new slide after the current one"
+msgstr ""
+
+#: part/KPrView.cpp:66
+msgid "Copy Slide"
+msgstr "स्लाइड प्रतिलिपि गर्नुहोस्"
+
+#: part/KPrView.cpp:67 part/KPrView.cpp:68
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Copy the current slide"
+msgstr "हालको स्लाइड अगाडि"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:69 rc.cpp:170
+#, fuzzy
+#| msgid "Delete Slide"
+msgid "Delete Slide"
+msgstr "स्लाइड मेट्नुहोस्"
+
+#: part/KPrView.cpp:70 part/KPrView.cpp:71
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete the current slide"
+msgstr "हालको स्लाइड अगाडि"
+
+#: part/KPrView.cpp:72
+#, fuzzy
+#| msgid "Insert &Slide..."
+msgid "Master Slide..."
+msgstr "स्लाइड घुसाउनुहोस्..."
+
+#: part/KPrView.cpp:73
+#, fuzzy
+#| msgid "&Previous Slide"
+msgid "Previous Slide"
+msgstr "अघिल्लो स्लाइड"
+
+#: part/KPrView.cpp:74 part/KPrPresenterViewInterface.cpp:67
+#, fuzzy
+#| msgid "&Next Slide"
+msgid "Next Slide"
+msgstr "पछिल्लो स्लाइड"
+
+#: part/KPrView.cpp:75
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "First Slide"
+msgstr "स्लाइड टाँस्नुहोस्"
+
+#: part/KPrView.cpp:76
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "Last Slide"
+msgstr "स्लाइड टाँस्नुहोस्"
+
+#: part/KPrView.cpp:114
 msgid "Normal"
 msgstr "सामान्य"
 
-#: part/KPrView.cpp:103
+#: part/KPrView.cpp:120
 #, fuzzy
 #| msgid "Note"
 msgid "Notes"
 msgstr "टिपोट"
 
-#: part/KPrView.cpp:112
+#: part/KPrView.cpp:129
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgid "Create Appear Animation"
 msgstr "HTML प्रस्तुतिकरण सिर्जना गर्नुहोस्"
 
-#: part/KPrView.cpp:116
+#: part/KPrView.cpp:133
 #, fuzzy
 #| msgid "Custom Slide Show..."
 msgid "Edit Custom Slide Shows..."
 msgstr "अनुकूल स्लाईड प्रदर्शन..."
 
-#: part/KPrView.cpp:120
+#: part/KPrView.cpp:137
 msgid "Start Presentation"
 msgstr "प्रस्तुतिकरण सुरु गर्नुहोस्"
 
-#: part/KPrView.cpp:123
+#: part/KPrView.cpp:140
 #, fuzzy
 #| msgid "After Current Slide"
-msgid "From Current Page"
+msgid "From Current Slide"
 msgstr "हालको स्लाइड पछाडि"
 
-#: part/KPrView.cpp:126
+#: part/KPrView.cpp:144
 #, fuzzy
 #| msgid "Start From &First Slide"
-msgid "From First Page"
+msgid "From First Slide"
 msgstr "पहिलो स्लाइडबाट सुरु गर्नुहोस्"
 
-#: part/KPrView.cpp:130
+#: part/KPrView.cpp:148
 #, fuzzy
 #| msgid "&Configure Slide Show..."
 msgid "Configure Slide Show..."
 msgstr "स्लाइड प्रदर्शन कन्फिगर गर्नुहोस्..."
 
-#: part/KPrView.cpp:134
+#: part/KPrView.cpp:152
 #, fuzzy
 #| msgid "Configure KPresenter..."
 msgid "Configure Presenter View..."
@@ -185,9 +253,9 @@ msgstr "आकार"
 
 #: part/dockers/KPrPageLayoutDocker.cpp:45
 #, fuzzy
-#| msgid "Set Page Layout"
-msgid "Page Layouts"
-msgstr "पृष्ठ रुपरेख सेट गर्नुहोस्"
+#| msgid "Page &Layout..."
+msgid "Slide Layouts"
+msgstr "पृष्ठ सजावट..."
 
 #: part/KPrPlaceholderShapeFactory.cpp:30
 msgid "Placeholder shape"
@@ -374,12 +442,6 @@ msgstr ""
 #: part/KPrAboutData.h:55
 msgid "Timothée Lacroix "
 msgstr ""
-
-#: part/KPrPresenterViewInterface.cpp:67
-#, fuzzy
-#| msgid "&Next Slide"
-msgid "Next Slide"
-msgstr "पछिल्लो स्लाइड"
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -761,14 +823,6 @@ msgstr "HTML स्लाइड प्रदर्शन सिर्जना �
 msgid "Add Slide"
 msgstr "स्लाइड"
 
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: rc.cpp:170
-#, fuzzy
-#| msgid "Delete Slide"
-msgid "Delete Slide"
-msgstr "स्लाइड मेट्नुहोस्"
-
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:173
@@ -920,8 +974,10 @@ msgstr "प्रकार:"
 #. i18n: file: part/kpresenter.rc:55
 #. i18n: ectx: Menu (page)
 #: rc.cpp:251
-msgid "&Page"
-msgstr "पृष्ठ"
+#, fuzzy
+#| msgid "&Slides"
+msgid "&Slide"
+msgstr "स्लाइड"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:102
 #, fuzzy
@@ -2155,6 +2211,14 @@ msgid "Box"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Set Page Layout"
+#~ msgid "Page Layouts"
+#~ msgstr "पृष्ठ रुपरेख सेट गर्नुहोस्"
+
+#~ msgid "&Page"
+#~ msgstr "पृष्ठ"
+
+#, fuzzy
 #~| msgid "Image &effect:"
 #~ msgid "Page effects"
 #~ msgstr "छवि प्रभाव:"
@@ -2308,12 +2372,6 @@ msgstr ""
 #~| msgid "Cover Down"
 #~ msgid "Cover down effect"
 #~ msgstr "तल ढाक्नुहोस्"
-
-#~ msgid "Insert Slide"
-#~ msgstr "स्लाइड घुसाउनुहोस्"
-
-#~ msgid "Before Current Slide"
-#~ msgstr "हालको स्लाइड अगाडि"
 
 #~ msgid "Insert &new slide:"
 #~ msgstr "नयाँ स्लाइड घुसाउनुहोस्:"
@@ -3465,9 +3523,6 @@ msgstr ""
 #~ msgid "Move Slide"
 #~ msgstr "स्लाइड सार्नुहोस्"
 
-#~ msgid "Paste Slide"
-#~ msgstr "स्लाइड टाँस्नुहोस्"
-
 #~ msgid "Insert File"
 #~ msgstr "फाइल घुसाउनुहोस्"
 
@@ -4222,9 +4277,6 @@ msgstr ""
 #~ msgid "Change Outline Width"
 #~ msgstr "रुपरेखा चौडाइ परिवर्तन गर्नुहोस्"
 
-#~ msgid "Copy Slide"
-#~ msgstr "स्लाइड प्रतिलिपि गर्नुहोस्"
-
 #~ msgid "Show Sidebar"
 #~ msgstr "किनारापट्टी देखाउनुहोस्"
 
@@ -4268,9 +4320,6 @@ msgstr ""
 
 #~ msgid "&Slide..."
 #~ msgstr "स्लाइड..."
-
-#~ msgid "Insert &Slide..."
-#~ msgstr "स्लाइड घुसाउनुहोस्..."
 
 #~ msgid "P&icture..."
 #~ msgstr "तस्वीर..."
@@ -4487,9 +4536,6 @@ msgstr ""
 
 #~ msgid "&Go to Start"
 #~ msgstr "सुरुआतमा जानुहोस्"
-
-#~ msgid "&Previous Slide"
-#~ msgstr "अघिल्लो स्लाइड"
 
 #~ msgid "Go to &End"
 #~ msgstr "अन्तिममा जानुहोस्"
