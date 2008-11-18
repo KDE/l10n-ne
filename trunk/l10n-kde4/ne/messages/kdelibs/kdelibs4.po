@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:39+0100\n"
+"POT-Creation-Date: 2008-11-18 09:53+0100\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -859,7 +859,7 @@ msgstr "उपकरण"
 
 #. i18n: file: kdeui/xmlgui/ui_standards.rc:146
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:327
+#: rc.cpp:327 khtml/ecma/debugger/debugwindow.cpp:240
 msgid "&Settings"
 msgstr "सेटिङ"
 
@@ -1784,7 +1784,7 @@ msgstr "विच्छेद बिन्दुमा चलाउनुहो�
 
 #. i18n: file: kjsembed/examples/kjsconsole/jsconsole.ui:219
 #. i18n: ectx: property (text), widget (QStatusBar, statusBar)
-#: rc.cpp:791 khtml/ecma/kjs_debugwin.cpp:480
+#: rc.cpp:791
 msgid "Step"
 msgstr "चरण"
 
@@ -1800,8 +1800,7 @@ msgstr "पछिल्लो लाइनमा जानुहोस्..."
 #. i18n: ectx: property (text), widget (QPushButton, pbStop)
 #: rc.cpp:797 rc.cpp:945 kdeui/jobs/kstatusbarjobtracker.cpp:156
 #: kdeui/util/kstandardguiitem.cpp:265 kdeui/util/kkeyserver_x11.cpp:109
-#: kdeui/findreplace/kreplace.cpp:353 khtml/ecma/kjs_debugwin.cpp:482
-#: kross/ui/view.cpp:309
+#: kdeui/findreplace/kreplace.cpp:353 kross/ui/view.cpp:309
 msgid "Stop"
 msgstr "रोक्नुहोस्"
 
@@ -5640,6 +5639,7 @@ msgid "No provider selected."
 msgstr "कुनै प्रदायक चयन गरिएन ।"
 
 #: knewstuff/knewstuff2/core/providerhandler.cpp:156
+#: knewstuff/knewstuff2/core/providerhandler.cpp:176
 #, fuzzy
 #| msgid "Latest"
 msgctxt "describes the feed of the latest posted entries"
@@ -5653,10 +5653,6 @@ msgstr "उच्च दर"
 #: knewstuff/knewstuff2/core/providerhandler.cpp:168
 msgid "Most Downloads"
 msgstr "धेरै डाउनलोड"
-
-#: knewstuff/knewstuff2/core/providerhandler.cpp:174
-msgid "Unsorted"
-msgstr "क्रमबद्ध नगरिएका"
 
 #: knewstuff/knewstuff2/core/security.cpp:76
 msgid ""
@@ -6290,7 +6286,7 @@ msgstr "सर्टकट"
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:61
 #, fuzzy
 #| msgid "Curr&ent actions:"
-msgid "Current Scheme:"
+msgid "Current scheme:"
 msgstr "हालको कार्य:"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:71
@@ -6310,8 +6306,10 @@ msgid "More Actions"
 msgstr "कार्य"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:81
-msgid "Save As Scheme Defaults"
-msgstr ""
+#, fuzzy
+#| msgid "&Defaults"
+msgid "Save as Scheme Defaults"
+msgstr "पूर्वनिर्धारित"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:83
 msgid "Export Scheme..."
@@ -6322,8 +6320,10 @@ msgid "Name for New Scheme"
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:101
-msgid "Name for New Scheme:"
-msgstr ""
+#, fuzzy
+#| msgid "Curr&ent actions:"
+msgid "Name for new scheme:"
+msgstr "हालको कार्य:"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:101
 #, fuzzy
@@ -6334,7 +6334,7 @@ msgstr "हालको कार्य:"
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:107
 #, fuzzy
 #| msgid "The tag %1 already exists"
-msgid "The scheme with this name already exists"
+msgid "A scheme with this name already exists."
 msgstr "ट्याग %1 पहिले नै अवस्थित छ"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:135
@@ -6345,8 +6345,10 @@ msgid ""
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:164
-msgid "Export To Location"
-msgstr ""
+#, fuzzy
+#| msgid "Click to Edit Location"
+msgid "Export to Location"
+msgstr "सम्पादन स्थानमा क्लिक गर्नुहोस्"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:173
 msgid "Could not export shortcuts scheme because the location is invalid."
@@ -6603,7 +6605,7 @@ msgid "Reset Toolbars"
 msgstr "उपकरण फेरि सेट गर्नुहोस्"
 
 #: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2971
-#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2166
+#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2167
 msgid "Reset"
 msgstr "फेरि सेट गर्नुहोस्"
 
@@ -8641,21 +8643,21 @@ msgstr "अगाडि"
 msgid "Next Character"
 msgstr "क्यारेक्टरको सेट"
 
-#: kdeui/widgets/kcharselect.cpp:370
-msgid "Set font"
-msgstr "फन्ट सेट गर्नुहोस्"
-
-#: kdeui/widgets/kcharselect.cpp:377
-msgid "Set font size"
-msgstr "फन्ट साइज सेट गर्नुहोस्"
-
-#: kdeui/widgets/kcharselect.cpp:384
+#: kdeui/widgets/kcharselect.cpp:367
 msgid "Select a category"
 msgstr "कोटि चयन गर्नुहोस्"
 
-#: kdeui/widgets/kcharselect.cpp:387
+#: kdeui/widgets/kcharselect.cpp:370
 msgid "Select a block to be displayed"
 msgstr "प्रदर्शित हुने खण्ड चयन गर्नुहोस्"
+
+#: kdeui/widgets/kcharselect.cpp:383
+msgid "Set font"
+msgstr "फन्ट सेट गर्नुहोस्"
+
+#: kdeui/widgets/kcharselect.cpp:390
+msgid "Set font size"
+msgstr "फन्ट साइज सेट गर्नुहोस्"
 
 #: kdeui/widgets/kcharselect.cpp:629 kdeui/widgets/kcharselect.cpp:881
 #: kdeui/widgets/kcharselect-translation.cpp:43
@@ -10960,7 +10962,7 @@ msgstr ""
 ">तपाईँ फारम पेश गर्न चाहनुहुन्छ ?</qt>"
 
 #: khtml/khtml_part.cpp:4594 khtml/khtmlview.cpp:2957 khtml/khtmlview.cpp:2999
-#: khtml/html/html_formimpl.cpp:1580 khtml/html/html_formimpl.cpp:2174
+#: khtml/html/html_formimpl.cpp:1581 khtml/html/html_formimpl.cpp:2175
 msgid "Submit"
 msgstr "पेश गर्नुहोस्"
 
@@ -11055,8 +11057,8 @@ msgstr "कृपया वैध 'khtml/' निर्माण डाइरे
 msgid "Available Tests: %1 (ignored: %2)"
 msgstr "उपलब्ध परीक्षण: %1 (उपेक्षित: %2)"
 
-#: khtml/test_regression_gui_window.cpp:563 khtml/ecma/kjs_debugwin.cpp:481
-#: khtml/ecma/debugger/debugwindow.cpp:166
+#: khtml/test_regression_gui_window.cpp:563
+#: khtml/ecma/debugger/debugwindow.cpp:192
 msgid "Continue"
 msgstr "जारी राख्नुहोस्"
 
@@ -11138,81 +11140,6 @@ msgstr "XML पद वर्णन त्रुटि"
 #: khtml/xml/dom_docimpl.cpp:2237
 msgid "Basic Page Style"
 msgstr "आधारभूत पृष्ठ शैली"
-
-#: khtml/ecma/kjs_debugwin.cpp:298 khtml/ecma/debugger/errordlg.cpp:35
-msgid "JavaScript Error"
-msgstr "जाभास्क्रिप्ट त्रुटि"
-
-#: khtml/ecma/kjs_debugwin.cpp:315 khtml/ecma/debugger/errordlg.cpp:50
-msgid "&Do not show this message again"
-msgstr "यो सन्देश फेरि नदेखाउनुहोस्"
-
-#: khtml/ecma/kjs_debugwin.cpp:385 khtml/ecma/debugger/debugwindow.cpp:111
-msgid "JavaScript Debugger"
-msgstr "जाभास्क्रिप्ट त्रुटिमोचक"
-
-#: khtml/ecma/kjs_debugwin.cpp:400
-msgid "Call stack"
-msgstr "कल स्ट्याक"
-
-#: khtml/ecma/kjs_debugwin.cpp:435
-msgid "JavaScript console"
-msgstr "जाभास्क्रिप्ट कन्सोल"
-
-#: khtml/ecma/kjs_debugwin.cpp:465
-msgctxt "Next breakpoint"
-msgid "&Next"
-msgstr "पछिल्लो"
-
-#: khtml/ecma/kjs_debugwin.cpp:467
-msgid "&Step"
-msgstr "चरण"
-
-#: khtml/ecma/kjs_debugwin.cpp:472
-msgid "&Continue"
-msgstr "जारी राख्नुहोस्"
-
-#: khtml/ecma/kjs_debugwin.cpp:474
-msgid "St&op"
-msgstr "रोक्नुहोस्"
-
-#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:160
-msgid "&Break at Next Statement"
-msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
-
-#: khtml/ecma/kjs_debugwin.cpp:479
-msgctxt "Next breakpoint"
-msgid "Next"
-msgstr "पछिल्लो"
-
-#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:572
-#, kde-format
-msgid "Parse error at %1 line %2"
-msgstr "%2 को %1 रेखामा पद वर्णन त्रुटि"
-
-#: khtml/ecma/kjs_debugwin.cpp:859
-#, kde-format
-msgid ""
-"An error occurred while attempting to run a script on this page.\n"
-"\n"
-"%1"
-msgstr ""
-"यो पृष्ठमा स्क्रिप्ट चलाउने प्रयास गर्दा त्रुटि भयो ।\n"
-"\n"
-"%1"
-
-#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:609
-#, kde-format
-msgid ""
-"An error occurred while attempting to run a script on this page.\n"
-"\n"
-"%1 line %2:\n"
-"%3"
-msgstr ""
-"यो पृष्ठमा स्क्रिप्ट चलाउने प्रयास गर्दा त्रुटि भयो ।\n"
-"\n"
-"%1 रेखा %2:\n"
-"%3"
 
 #: khtml/ecma/kjs_binding.cpp:184
 msgid ""
@@ -11316,7 +11243,7 @@ msgstr ""
 "<qt>यो साइटले एउटा फारम पेश गरेकोछ जसले जाभास्क्रिप्ट मार्फत नयाँ ब्राउजर सञ्झ्यालमा <p>%"
 "1</p> खोल्नेछ ।<br /> तपाईँ पेश गरिने सो फारमलाई अनुमति दिन चाहनुहुन्छ ?</qt>"
 
-#: khtml/ecma/debugger/debugdocument.cpp:210
+#: khtml/ecma/debugger/debugdocument.cpp:187
 #, fuzzy
 #| msgid ""
 #| "A KDE text-editor component could not be found;\n"
@@ -11328,13 +11255,13 @@ msgstr ""
 "केडीई पाठ सम्पादक फेला पार्न सक्दैन;\n"
 "कृपया तपाईँको केडीई स्थापना जाँच गर्नुहोस् ।"
 
-#: khtml/ecma/debugger/debugdocument.cpp:327
+#: khtml/ecma/debugger/debugdocument.cpp:253
 #, fuzzy
 #| msgid "Run to breakpoint..."
 msgid "Breakpoint"
 msgstr "विच्छेद बिन्दुमा चलाउनुहोस्..."
 
-#: khtml/ecma/debugger/scriptsdock.cpp:39
+#: khtml/ecma/debugger/scriptsdock.cpp:40
 #, fuzzy
 #| msgid "Close Script"
 msgid "Loaded Scripts"
@@ -11350,58 +11277,102 @@ msgstr ""
 msgid "Reference"
 msgstr "सन्दर्भ त्रुटि"
 
-#: khtml/ecma/debugger/debugwindow.cpp:161
+#: khtml/ecma/debugger/debugwindow.cpp:111
+msgid "JavaScript Debugger"
+msgstr "जाभास्क्रिप्ट त्रुटिमोचक"
+
+#: khtml/ecma/debugger/debugwindow.cpp:186
+msgid "&Break at Next Statement"
+msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
+
+#: khtml/ecma/debugger/debugwindow.cpp:187
 #, fuzzy
 #| msgid "&Break at Next Statement"
 msgid "Break at Next"
 msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:173
+#: khtml/ecma/debugger/debugwindow.cpp:199
 msgid "Step Over"
 msgstr "माथिल्लो चरणमा जानुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:180
+#: khtml/ecma/debugger/debugwindow.cpp:206
 msgid "Step Into"
 msgstr "चरणमा जानुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:187
+#: khtml/ecma/debugger/debugwindow.cpp:213
 msgid "Step Out"
 msgstr "चरणबाट बाहिरनुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:196
+#: khtml/ecma/debugger/debugwindow.cpp:219
+msgid "Reindent Sources"
+msgstr ""
+
+#: khtml/ecma/debugger/debugwindow.cpp:224
+#, fuzzy
+#| msgid "Action"
+msgid "Report Exceptions"
+msgstr "कार्य"
+
+#: khtml/ecma/debugger/debugwindow.cpp:232
 msgid "&Debug"
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:225
+#: khtml/ecma/debugger/debugwindow.cpp:266
 #, fuzzy
 #| msgid "Close Document"
 msgid "Close source"
 msgstr "कागजात बन्द गर्नुहोस्"
 
-#: khtml/ecma/debugger/debugwindow.cpp:231
+#: khtml/ecma/debugger/debugwindow.cpp:272
 msgid "Ready"
 msgstr "तयार"
 
-#: khtml/ecma/debugger/debugwindow.cpp:789
+#: khtml/ecma/debugger/debugwindow.cpp:615
+#, kde-format
+msgid "Parse error at %1 line %2"
+msgstr "%2 को %1 रेखामा पद वर्णन त्रुटि"
+
+#: khtml/ecma/debugger/debugwindow.cpp:650
+#, kde-format
+msgid ""
+"An error occurred while attempting to run a script on this page.\n"
+"\n"
+"%1 line %2:\n"
+"%3"
+msgstr ""
+"यो पृष्ठमा स्क्रिप्ट चलाउने प्रयास गर्दा त्रुटि भयो ।\n"
+"\n"
+"%1 रेखा %2:\n"
+"%3"
+
+#: khtml/ecma/debugger/debugwindow.cpp:835
 msgid ""
 "Don't know where to evaluate the expression. Please pause a script or open a "
 "source file."
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:825
+#: khtml/ecma/debugger/debugwindow.cpp:871
 #, kde-format
 msgid "Evaluation threw an exception %1"
 msgstr ""
 
-#: khtml/ecma/debugger/consoledock.cpp:231
+#: khtml/ecma/debugger/consoledock.cpp:220
 #, fuzzy
 #| msgid "Close"
 msgid "Console"
 msgstr "बन्द गर्नुहोस्"
 
-#: khtml/ecma/debugger/consoledock.cpp:254
+#: khtml/ecma/debugger/consoledock.cpp:243
 msgid "Enter"
 msgstr ""
+
+#: khtml/ecma/debugger/errordlg.cpp:35
+msgid "JavaScript Error"
+msgstr "जाभास्क्रिप्ट त्रुटि"
+
+#: khtml/ecma/debugger/errordlg.cpp:50
+msgid "&Do not show this message again"
+msgstr "यो सन्देश फेरि नदेखाउनुहोस्"
 
 #: khtml/ecma/debugger/callstackdock.cpp:37
 #, fuzzy
@@ -11508,7 +11479,7 @@ msgstr ""
 "खोलिन्छ, तपाईँ पछिल्लो पटक %1 मा जादाँ स्वचालित रूपमा लगइन सूचना पूर्वावस्थामा ल्याउन "
 "सक्दछ । तपाईँ अहिले सूचना भण्डारण गर्न चाहनुहुन्छ ?"
 
-#: khtml/html/html_formimpl.cpp:2555
+#: khtml/html/html_formimpl.cpp:2557
 #, fuzzy
 #| msgid "General"
 msgid "Key Generator"
@@ -13238,6 +13209,41 @@ msgstr "आजको टिप"
 msgid "No such function \"%1\""
 msgstr "\"%1\" त्यस्तो अनुवादक होइन"
 
+#~ msgid "Unsorted"
+#~ msgstr "क्रमबद्ध नगरिएका"
+
+#~ msgid "Call stack"
+#~ msgstr "कल स्ट्याक"
+
+#~ msgid "JavaScript console"
+#~ msgstr "जाभास्क्रिप्ट कन्सोल"
+
+#~ msgctxt "Next breakpoint"
+#~ msgid "&Next"
+#~ msgstr "पछिल्लो"
+
+#~ msgid "&Step"
+#~ msgstr "चरण"
+
+#~ msgid "&Continue"
+#~ msgstr "जारी राख्नुहोस्"
+
+#~ msgid "St&op"
+#~ msgstr "रोक्नुहोस्"
+
+#~ msgctxt "Next breakpoint"
+#~ msgid "Next"
+#~ msgstr "पछिल्लो"
+
+#~ msgid ""
+#~ "An error occurred while attempting to run a script on this page.\n"
+#~ "\n"
+#~ "%1"
+#~ msgstr ""
+#~ "यो पृष्ठमा स्क्रिप्ट चलाउने प्रयास गर्दा त्रुटि भयो ।\n"
+#~ "\n"
+#~ "%1"
+
 #, fuzzy
 #~| msgid "From:"
 #~ msgid "Form"
@@ -13854,9 +13860,6 @@ msgstr "\"%1\" त्यस्तो अनुवादक होइन"
 
 #~ msgid "Click for Location Navigation"
 #~ msgstr "स्थान नेभिगेसनका लागि क्लिक गर्नुहोस्"
-
-#~ msgid "Click to Edit Location"
-#~ msgstr "सम्पादन स्थानमा क्लिक गर्नुहोस्"
 
 #~ msgid "Navigate"
 #~ msgstr "नेभिगेट"

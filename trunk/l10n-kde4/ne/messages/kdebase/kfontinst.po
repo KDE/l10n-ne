@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfontinst\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:40+0100\n"
+"POT-Creation-Date: 2008-11-18 09:54+0100\n"
 "PO-Revision-Date: 2007-11-06 12:23+0545\n"
 "Last-Translator: Shiva Pokharel <shiva@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -224,13 +224,13 @@ msgstr "गुण..."
 #: kcmfontinst/DuplicatesDialog.cpp:555
 #, fuzzy
 #| msgid "Unmark for deletion..."
-msgid "Unmark for Deletion..."
+msgid "Unmark for Deletion"
 msgstr "मेटाइका लागि चिन्ह हटाउनुहोस्..."
 
 #: kcmfontinst/DuplicatesDialog.cpp:557
 #, fuzzy
 #| msgid "Mark for deletion..."
-msgid "Mark for Deletion..."
+msgid "Mark for Deletion"
 msgstr "मेटाइका लागि चिन्ह लगाउनुहोस्..."
 
 #: kcmfontinst/DuplicatesDialog.cpp:634 kcmfontinst/FontList.cpp:2016
@@ -321,7 +321,7 @@ msgstr "...र %1 अझ बढी"
 msgid "%1 [%2]"
 msgstr "%1 [%2]"
 
-#: kcmfontinst/FontList.cpp:1613
+#: kcmfontinst/FontList.cpp:1613 kcmfontinst/KCmFontInst.cpp:368
 #, fuzzy
 #| msgid "Delete..."
 msgid "Delete"
@@ -336,12 +336,16 @@ msgid "Reload"
 msgstr "पुन: लोड गर्नुहोस्"
 
 #: kcmfontinst/FontList.cpp:1625 kcmfontinst/GroupList.cpp:773
-msgid "Enable..."
-msgstr "सक्षम पार्नुहोस्..."
+#: kcmfontinst/KCmFontInst.cpp:372 kcmfontinst/KCmFontInst.cpp:1399
+#: kcmfontinst/KCmFontInst.cpp:1423
+msgid "Enable"
+msgstr "सक्षम पार्नुहोस्"
 
 #: kcmfontinst/FontList.cpp:1627 kcmfontinst/GroupList.cpp:775
-msgid "Disable..."
-msgstr "अक्षम पार्नुहोस्..."
+#: kcmfontinst/KCmFontInst.cpp:376 kcmfontinst/KCmFontInst.cpp:1400
+#: kcmfontinst/KCmFontInst.cpp:1424
+msgid "Disable"
+msgstr "अक्षम पार्नुहोस्"
 
 #: kcmfontinst/GroupList.cpp:83
 msgid "All Fonts"
@@ -404,7 +408,7 @@ msgstr ""
 msgid "Remove Group"
 msgstr "समूह हटाउनुहोस्"
 
-#: kcmfontinst/GroupList.cpp:588
+#: kcmfontinst/GroupList.cpp:588 kcmfontinst/GroupList.cpp:771
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
@@ -461,10 +465,6 @@ msgstr ""
 #| msgid "<qt>A group named <b>'%1'</b> already exists!</qt>"
 msgid "<qt>A group named <b>'%1'</b> already exists.</qt>"
 msgstr "<qt> <b>'%1'</b> नामकरण गरिएको समूह पहिल्यै अवस्थित छ!</qt>"
-
-#: kcmfontinst/GroupList.cpp:771
-msgid "Remove..."
-msgstr "हटाउनुहोस्..."
 
 #: kcmfontinst/GroupList.cpp:778
 msgid "Rename..."
@@ -694,7 +694,9 @@ msgid "Change Preview Text..."
 msgstr "पूर्वावलोकन पाठ परिवर्तन गर्नुहोस्..."
 
 #: kcmfontinst/KCmFontInst.cpp:295
-msgid "Scan For Duplicate Fonts..."
+#, fuzzy
+#| msgid "Scan For Duplicate Fonts..."
+msgid "Scan for Duplicate Fonts..."
 msgstr "नक्कली फन्टहरूका लागि स्क्यान गर्नुहोस्..."
 
 #: kcmfontinst/KCmFontInst.cpp:299
@@ -729,27 +731,13 @@ msgstr "थप्नुहोस्..."
 msgid "Install fonts"
 msgstr "फन्ट स्थापना गर्नुहोस्"
 
-#: kcmfontinst/KCmFontInst.cpp:368
-msgid "Delete..."
-msgstr "मेट्नुहोस्..."
-
 #: kcmfontinst/KCmFontInst.cpp:369
 msgid "Delete all selected fonts"
 msgstr "चयन गरिएका सबै फन्ट मेट्नुहोस्"
 
-#: kcmfontinst/KCmFontInst.cpp:372 kcmfontinst/KCmFontInst.cpp:1399
-#: kcmfontinst/KCmFontInst.cpp:1423
-msgid "Enable"
-msgstr "सक्षम पार्नुहोस्"
-
 #: kcmfontinst/KCmFontInst.cpp:373
 msgid "Enable all selected fonts"
 msgstr "चयन गरेका सबै फन्टह सक्षम पार्नुहोस्"
-
-#: kcmfontinst/KCmFontInst.cpp:376 kcmfontinst/KCmFontInst.cpp:1400
-#: kcmfontinst/KCmFontInst.cpp:1424
-msgid "Disable"
-msgstr "अक्षम पार्नुहोस्"
 
 #: kcmfontinst/KCmFontInst.cpp:377
 msgid "Disable all selected fonts"
@@ -2440,6 +2428,18 @@ msgstr "फाग्स पा"
 #: viewpart/UnicodeScripts.h:79
 msgid "Yi"
 msgstr "Yi"
+
+#~ msgid "Enable..."
+#~ msgstr "सक्षम पार्नुहोस्..."
+
+#~ msgid "Disable..."
+#~ msgstr "अक्षम पार्नुहोस्..."
+
+#~ msgid "Remove..."
+#~ msgstr "हटाउनुहोस्..."
+
+#~ msgid "Delete..."
+#~ msgstr "मेट्नुहोस्..."
 
 #~ msgid "Enable font"
 #~ msgstr "फन्ट सक्षम गर्नुहोस्"
