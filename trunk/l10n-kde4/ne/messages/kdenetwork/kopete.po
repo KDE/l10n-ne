@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-19 10:57+0100\n"
+"POT-Creation-Date: 2008-11-21 10:06+0100\n"
 "PO-Revision-Date: 2007-09-17 18:03+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -63,6 +63,7 @@ msgstr "सम्पर्क"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: libkopete/ui/kopeteinfodialog.cpp:50 libkopete/ui/kopeteinfodialog.cpp:64
 #: rc.cpp:2824 rc.cpp:5320 rc.cpp:5350 rc.cpp:5842
+#: protocols/wlm/wlmchatsession.cpp:622
 #, fuzzy
 msgid "Information"
 msgstr "प्रयोगकर्ता सूचना"
@@ -249,6 +250,7 @@ msgstr "अफलाइन"
 #: protocols/oscar/icq/icqstatusmanager.cpp:37
 #: protocols/oscar/icq/icqprotocol.cpp:448
 #: protocols/oscar/icq/icqprotocol.cpp:530
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:38
 #: protocols/groupwise/gwprotocol.cpp:66
 msgid "Unknown"
 msgstr "अज्ञात"
@@ -322,6 +324,7 @@ msgstr ""
 
 #: libkopete/kopetetransfermanager.cpp:513
 #: libkopete/kopetetransfermanager.cpp:562
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:35
 msgid "File Transfer"
 msgstr "फाइल स्थानान्तरण"
 
@@ -1097,7 +1100,7 @@ msgctxt "@label:textbox formatted status title"
 msgid "<br /><b>Status&nbsp;Title:</b>&nbsp;%1"
 msgstr "<br><b>टाढा&nbsp;सन्देश:</b>&nbsp;%1"
 
-#: libkopete/kopetecontact.cpp:629 kopete/kopetewindow.cpp:1208
+#: libkopete/kopetecontact.cpp:629 kopete/kopetewindow.cpp:1209
 #, fuzzy, kde-format
 #| msgctxt "<br><b>Status Message:</b>&nbsp;FORMATTED STATUS MESSAGE"
 #| msgid "<br><b>Status&nbsp;Message:</b>&nbsp;%1"
@@ -1185,7 +1188,7 @@ msgstr "अन्तिम देखिएको"
 msgid "Status Title"
 msgstr "वस्तुस्थिति"
 
-#: libkopete/kopeteglobal.cpp:159 kopete/kopetewindow.cpp:1218
+#: libkopete/kopeteglobal.cpp:159 kopete/kopetewindow.cpp:1219
 msgid "Status Message"
 msgstr "वस्तुस्थिति सन्देश"
 
@@ -1456,7 +1459,7 @@ msgstr "सम्पर्क सूची देखाउनुहोस् व
 msgid "Set Away/Back"
 msgstr "टाढा/पछाडि सेट गर्नुहोस्"
 
-#: kopete/kopetewindow.cpp:782
+#: kopete/kopetewindow.cpp:783
 msgid ""
 "<qt>Closing the main window will keep Kopete running in the system tray. Use "
 "'Quit' from the 'File' menu to quit the application.</qt>"
@@ -1464,11 +1467,11 @@ msgstr ""
 "<qt>मुख्य सञ्झ्याल बन्द गर्दा पनि प्रणाली ट्रेमा कोपेट मेसेन्जर चलिरहेको हुन्छ। अनुप्रयोग पूर्ण "
 "रूपमा अन्त्य गर्न 'फाइल' मेनुबाट 'अन्त्य गर्नुहोस्' संवादमा क्लिक गर्नुहोस्।</qt>"
 
-#: kopete/kopetewindow.cpp:784
+#: kopete/kopetewindow.cpp:785
 msgid "Docking in System Tray"
 msgstr "प्रणाली ट्रेमा डक गर्दै"
 
-#: kopete/kopetewindow.cpp:990
+#: kopete/kopetewindow.cpp:991
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Account tooltip information: <nobr>ICON <b>PROTOCOL:</b> NAME (<i>STATUS</"
@@ -1485,7 +1488,7 @@ msgid ""
 msgstr ""
 "<nobr><img src=\"kopete-account-icon:%3:%4\"> <b>%1:</b> %2 (<i>%5</i>)<br/>"
 
-#: kopete/kopetewindow.cpp:1205
+#: kopete/kopetewindow.cpp:1206
 #, fuzzy, kde-format
 #| msgctxt "<br><b>Status Message:</b>&nbsp;FORMATTED STATUS MESSAGE"
 #| msgid "<br><b>Status&nbsp;Message:</b>&nbsp;%1"
@@ -1493,7 +1496,7 @@ msgctxt "@label:textbox formatted status title"
 msgid "<b>Status&nbsp;Title:</b>&nbsp;%1"
 msgstr "<br><b>टाढा&nbsp;सन्देश:</b>&nbsp;%1"
 
-#: kopete/kopetewindow.cpp:1253
+#: kopete/kopetewindow.cpp:1254
 #: kopete/contactlist/kopetecontactlistview.cpp:1791
 msgid "Add Contact"
 msgstr "सम्पर्क थप्नुहोस्"
@@ -3572,7 +3575,7 @@ msgstr "मोबाइल फोन:"
 
 #. i18n: file: kopete/config/avdevice/avdeviceconfig_videodevice.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, AVDeviceConfig_VideoDevice)
-#: rc.cpp:178
+#: rc.cpp:178 protocols/jabber/jingle/jinglecontentdialog.cpp:32
 msgid "Video"
 msgstr "भिडियो"
 
@@ -17688,11 +17691,11 @@ msgstr ""
 msgid "%1 has started a chat with you"
 msgstr " %1 ले तपाईँसँग कुराकानी सुरु गर्यो"
 
-#: protocols/msn/msnchatsession.cpp:674 protocols/wlm/wlmchatsession.cpp:299
+#: protocols/msn/msnchatsession.cpp:674 protocols/wlm/wlmchatsession.cpp:316
 msgid "has sent a nudge"
 msgstr "इशारा पठाएको छ"
 
-#: protocols/msn/msnchatsession.cpp:690 protocols/wlm/wlmchatsession.cpp:675
+#: protocols/msn/msnchatsession.cpp:690 protocols/wlm/wlmchatsession.cpp:692
 msgid "has sent you a nudge"
 msgstr "तपाईँलाई इशारा पठाएको छ"
 
@@ -17954,6 +17957,12 @@ msgstr "यसमा अहिले सुनिरहेको छ: "
 #: protocols/oscar/oscaraccount.cpp:797
 msgid "Buddies"
 msgstr "साथी"
+
+#: protocols/wlm/wlmchatsession.cpp:621
+#, fuzzy
+#| msgid "Send"
+msgid "Send OIM"
+msgstr "पठाउनुहोस्"
 
 #: protocols/gadu/gadusession.cpp:220 protocols/gadu/gadusession.cpp:233
 #: protocols/gadu/gadusession.cpp:245 protocols/gadu/gadusession.cpp:278
@@ -22576,6 +22585,20 @@ msgstr ""
 msgid "Jabber Account Unregistration"
 msgstr "ज्याबर खाता दर्ता"
 
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:29
+msgid "Audio"
+msgstr ""
+
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:74
+msgid "Check the contents you wanna accept : "
+msgstr ""
+
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:81
+#, fuzzy, kde-format
+#| msgid "Show Offline &Users"
+msgid "New Jingle session from %1"
+msgstr "अफलाइन प्रयोगकर्ता देखाउनुहोस्"
+
 #: protocols/jabber/jabberchatsession.cpp:73
 msgid "Show audio calls"
 msgstr ""
@@ -23398,11 +23421,6 @@ msgstr ""
 #~| msgid "Please enter name of the channel you want to join:"
 #~ msgid "Please enter name of the channel you want to join:"
 #~ msgstr "कृपया तपाईँले जडान गर्न चाहनुभएको च्यानलको नाम प्रविष्ट गर्नुहोस्:"
-
-#, fuzzy
-#~| msgid "Show Offline &Users"
-#~ msgid "Show Jingle sessions"
-#~ msgstr "अफलाइन प्रयोगकर्ता देखाउनुहोस्"
 
 #~ msgid "Voice session with:"
 #~ msgstr "यससँगको बाच्य सत्र:"
