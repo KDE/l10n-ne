@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-24 09:57+0100\n"
+"POT-Creation-Date: 2008-11-25 10:27+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -271,7 +271,7 @@ msgstr "स्थानीय सङ्कलन"
 #: browsers/collectionbrowser/CollectionTreeItem.cpp:154
 #: playlist/view/graphic/PlaylistGraphicsItem.cpp:352
 #: collectionscanner/CollectionScanner.cpp:645
-#: covermanager/CoverManager.cpp:358 covermanager/CoverManager.cpp:935
+#: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:914
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
@@ -319,7 +319,7 @@ msgstr "(मद्दत)"
 msgid "Transferring Tracks"
 msgstr ""
 
-#: collection/sqlcollection/ScanManager.cpp:438
+#: collection/sqlcollection/ScanManager.cpp:452
 msgid "Scanning music"
 msgstr ""
 
@@ -330,8 +330,8 @@ msgid "Stream"
 msgstr "प्रवाह"
 
 #: collection/sqlcollection/SqlMeta.cpp:287
-#: services/lastfm/meta/LastFmMeta.cpp:147 covermanager/CoverManager.cpp:357
-#: covermanager/CoverManager.cpp:935
+#: services/lastfm/meta/LastFmMeta.cpp:147 covermanager/CoverViewDialog.h:44
+#: covermanager/CoverManager.cpp:914
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
@@ -2070,7 +2070,7 @@ msgstr ""
 "'%1' नामको स्क्रिप्ट पहिल्यै स्थापना गरिएको छ । कृपया पहिले यसलाई स्थापनाबाट हटाउनुहोस् "
 "।"
 
-#: dialogs/ScriptManager.cpp:337
+#: dialogs/ScriptManager.cpp:337 dialogs/ScriptManager.cpp:391
 msgid ""
 "<p>Script successfully installed.</p><p>Please restart Amarok to start the "
 "script!</p>"
@@ -2089,20 +2089,26 @@ msgstr ""
 "<p>स्क्रिप्ट स्थापना असफल भयो ।</p><p>प्याकेजले एउटा कार्यान्वयनयोग्य फाइल समाविष्ट "
 "गर्दैन । कृपया यो त्रुटि बारे प्याकेज सम्भारकर्तालाई सूचित गर्नुहोस् ।</p>"
 
-#: dialogs/ScriptManager.cpp:403
+#: dialogs/ScriptManager.cpp:394 dialogs/ScriptManager.cpp:425
+msgid ""
+"<p>Script successfully uninstalled.</p><p>Please restart Amarok to totally "
+"remove the script!</p>"
+msgstr ""
+
+#: dialogs/ScriptManager.cpp:407
 #, kde-format
 msgid "Are you sure you want to uninstall the script '%1'?"
 msgstr "तपाईँ साँचिकै स्क्रिप्ट '%1' स्थापनाबाट हटाउन चाहनुहुन्छ ?"
 
-#: dialogs/ScriptManager.cpp:403
+#: dialogs/ScriptManager.cpp:407
 msgid "Uninstall Script"
 msgstr "स्क्रिप्ट स्थापनाबाट हटाउनुहोस्"
 
-#: dialogs/ScriptManager.cpp:403
+#: dialogs/ScriptManager.cpp:407
 msgid "Uninstall"
 msgstr "स्थापनाबाट हटाउनुहोस्"
 
-#: dialogs/ScriptManager.cpp:412
+#: dialogs/ScriptManager.cpp:416
 msgid ""
 "<p>Could not uninstall this script.</p><p>The ScriptManager can only "
 "uninstall scripts which have been installed as packages.</p>"
@@ -2110,13 +2116,7 @@ msgstr ""
 "<p>यो स्क्रिप्टलाई स्थापनाबाट हटाउन सकेन ।</p><p>स्क्रिप्ट प्रबन्धकले मात्र स्क्रिप्ट "
 "स्थापनाबाट हटाउन सक्छ जुन प्याकेजको रूपमा स्थापना गरिएको छ ।</p>"
 
-#: dialogs/ScriptManager.cpp:421
-msgid ""
-"<p>Script successfully uninstalled.</p><p>Please restart Amarok to totally "
-"remove the script!</p>"
-msgstr ""
-
-#: dialogs/ScriptManager.cpp:456
+#: dialogs/ScriptManager.cpp:460
 msgid "There are exceptions caught in the script. Please refer to the log!"
 msgstr ""
 
@@ -7950,7 +7950,7 @@ msgid ""
 "<div align=center><i>Drag tokens here to define a filename scheme.</i></div>"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:40
+#: covermanager/CoverFetchingActions.cpp:41
 #, fuzzy
 #| msgid "&Next Cover"
 msgid "Fetch Cover"
@@ -7958,24 +7958,24 @@ msgid_plural "Fetch Covers"
 msgstr[0] "पछिल्लो आवरण"
 msgstr[1] "पछिल्लो आवरण"
 
-#: covermanager/CoverFetchingActions.cpp:42
+#: covermanager/CoverFetchingActions.cpp:43
 #, kde-format
 msgid "Fetch the artwork for this album"
 msgid_plural "Fetch artwork for %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:62
+#: covermanager/CoverFetchingActions.cpp:63
 #, fuzzy
 #| msgid "Display &Text"
 msgid "Display Cover"
 msgstr "पाठ प्रदर्शन गर्नुहोस्"
 
-#: covermanager/CoverFetchingActions.cpp:64
+#: covermanager/CoverFetchingActions.cpp:65
 msgid "Display artwork for this album"
 msgstr ""
 
-#: covermanager/CoverFetchingActions.cpp:82
+#: covermanager/CoverFetchingActions.cpp:83
 #, fuzzy
 #| msgid "&Unset Cover"
 #| msgid_plural "&Unset Selected Covers"
@@ -7984,14 +7984,14 @@ msgid_plural "Unset Covers"
 msgstr[0] "चयनगरीएको आवरण अनसेट गर्नुहोस्"
 msgstr[1] "चयनगरीएको आवरण अनसेट गर्नुहोस्"
 
-#: covermanager/CoverFetchingActions.cpp:84
+#: covermanager/CoverFetchingActions.cpp:85
 #, kde-format
 msgid "Remove artwork for this album"
 msgid_plural "Remove artwork for %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:97
+#: covermanager/CoverFetchingActions.cpp:98
 #, kde-format
 msgid "Are you sure you want to remove this cover from the Collection?"
 msgid_plural ""
@@ -7999,21 +7999,21 @@ msgid_plural ""
 msgstr[0] "तपाईँ सङ्कलनबाट यो %1 आवरण मेटाउन निश्चिन्त चाहानु हुन्छ ?"
 msgstr[1] "तपाईँ सङ्कलनबाट यो %1 आवरण हटाउन मेटाउन निश्चित चाहानुहुन्छ ?"
 
-#: covermanager/CoverFetchingActions.cpp:120
+#: covermanager/CoverFetchingActions.cpp:121
 #, fuzzy
 #| msgid "Set &Custom Cover"
 #| msgid_plural "Set &Custom Cover for Selected Albums"
 msgid "Set Custom Cover"
 msgstr "चयनगरीएको एल्बमबाट अनुकूल आवरण सेट गर्नुहोस्"
 
-#: covermanager/CoverFetchingActions.cpp:122
+#: covermanager/CoverFetchingActions.cpp:123
 #, kde-format
 msgid "Set custom artwork for this album"
 msgid_plural "Set custom artwork for these %1 albums"
 msgstr[0] ""
 msgstr[1] ""
 
-#: covermanager/CoverFetchingActions.cpp:135
+#: covermanager/CoverFetchingActions.cpp:136
 msgid "Select Cover Image File"
 msgstr "आवरण छवि फाइल चयन गर्नुहोस्"
 
@@ -8107,7 +8107,7 @@ msgstr ""
 msgid "Albums By"
 msgstr "यसद्वारा एल्बम"
 
-#: covermanager/CoverManager.cpp:132 covermanager/CoverManager.cpp:396
+#: covermanager/CoverManager.cpp:132 covermanager/CoverManager.cpp:375
 #, fuzzy
 #| msgid "Album Artist"
 msgid "All Artists"
@@ -8151,64 +8151,64 @@ msgstr "अमाजोन लोकेल"
 msgid "Fetch Missing Covers"
 msgstr "हराइरहेको आवरण तान्नुहोस्"
 
-#: covermanager/CoverManager.cpp:476
+#: covermanager/CoverManager.cpp:455
 msgid "Loading Thumbnails..."
 msgstr "थम्बनेलहरू लोड हुँदैछ..."
 
-#: covermanager/CoverManager.cpp:759
+#: covermanager/CoverManager.cpp:738
 #, fuzzy
 #| msgid "Finished."
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "समाप्त भयो ।"
 
-#: covermanager/CoverManager.cpp:761
+#: covermanager/CoverManager.cpp:740
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] " <b>%1</b> आवरण फेला परेन"
 msgstr[1] " <b>%1</b> आवरण फेला परेन"
 
-#: covermanager/CoverManager.cpp:773
+#: covermanager/CoverManager.cpp:752
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "%1 का लागि आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:775
+#: covermanager/CoverManager.cpp:754
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "%1 - %2 का लागि आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:781
+#: covermanager/CoverManager.cpp:760
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "<b>%1</b> आवरण तान्दैछ..."
 msgstr[1] "<b>%1</b> आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:783
+#: covermanager/CoverManager.cpp:762
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "%1 तानियो"
 msgstr[1] "%1 तानियो"
 
-#: covermanager/CoverManager.cpp:785
+#: covermanager/CoverManager.cpp:764
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:786
+#: covermanager/CoverManager.cpp:765
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
 msgstr[0] "%1 फेला परेन"
 msgstr[1] "%1 फेला परेन"
 
-#: covermanager/CoverManager.cpp:789
+#: covermanager/CoverManager.cpp:768
 msgid "Connecting..."
 msgstr "जडान गरिँदैछ..."
 
-#: covermanager/CoverManager.cpp:815
+#: covermanager/CoverManager.cpp:794
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -8217,27 +8217,27 @@ msgid_plural "%1 results for \"%2\""
 msgstr[0] "\"%1\" को लागि १ परिणाम"
 msgstr[1] "\"%1\" को लागि १ परिणाम"
 
-#: covermanager/CoverManager.cpp:817
+#: covermanager/CoverManager.cpp:796
 #, fuzzy, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "१ एल्बम"
 msgstr[1] "१ एल्बम"
 
-#: covermanager/CoverManager.cpp:823
+#: covermanager/CoverManager.cpp:802
 msgid " by "
 msgstr "यसद्वारा "
 
-#: covermanager/CoverManager.cpp:828
+#: covermanager/CoverManager.cpp:807
 #, kde-format
 msgid " - ( <b>%1</b> without cover )"
 msgstr " - ( <b>%1</b> आवरण बिना )"
 
-#: covermanager/CoverManager.cpp:874
+#: covermanager/CoverManager.cpp:853
 msgid "Cover Image"
 msgstr "आवरण छवि"
 
-#: covermanager/CoverManager.cpp:956
+#: covermanager/CoverManager.cpp:935
 #, fuzzy
 #| msgid "Artist"
 msgid "No Artist"

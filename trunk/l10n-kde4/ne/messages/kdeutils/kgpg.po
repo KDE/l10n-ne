@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:41+0100\n"
+"POT-Creation-Date: 2008-11-25 10:22+0100\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -956,13 +956,13 @@ msgstr ""
 "3</b><br><br>तपाईँले सञ्चारमा अन्य व्यक्तिद्वारा अवरोध नहोस् भनेर निश्चित हुन कुञ्जी "
 "मालिकलाई फोन गरेर वा भेटेर कुञ्जी औठाछाप जाँच गर्नु पर्दछ ।</qt>"
 
-#: keysmanager.cpp:1840 keysmanager.cpp:1910
+#: keysmanager.cpp:1840 keysmanager.cpp:1910 kgpgfirstassistant.cpp:279
 #, kde-format
 msgctxt "Name: ID"
 msgid "%1: %2"
 msgstr ""
 
-#: keysmanager.cpp:1842 keysmanager.cpp:1913
+#: keysmanager.cpp:1842 keysmanager.cpp:1913 kgpgfirstassistant.cpp:281
 #, kde-format
 msgctxt "Name (Email): ID"
 msgid "%1 (%2): %3"
@@ -1112,10 +1112,10 @@ msgstr ""
 "<p> <b>गुप्त कुञ्जी</b> जोडी <b>%1</b> मेट्नुहुन्छ ?</p>यो कुञ्जी जोडी मेट्नुको अर्थ तपाईँले "
 "यो कुञ्जीसँग गुप्तिकरण गरिएको फाइललाई कहिल्यै पनि गुप्तिकरण उल्टाउन नसक्नु भन्ने हुन्छ ।"
 
-#: keysmanager.cpp:2290
+#: keysmanager.cpp:2290 keysmanager.cpp:2318
 msgid ""
-"Another key is currently deleted. Please wait until the operation is "
-"complete."
+"Another key delete operation is still in progress.\n"
+"Please wait a moment until this operation is complete."
 msgstr ""
 
 #: keysmanager.cpp:2305
@@ -1126,12 +1126,6 @@ msgstr ""
 #: keysmanager.cpp:2308
 #, kde-format
 msgid "Deleting key <b>%1</b> failed."
-msgstr ""
-
-#: keysmanager.cpp:2318
-msgid ""
-"Another key delete operation is still in progress.\n"
-"Please wait a moment until this operation is complete."
 msgstr ""
 
 #: keysmanager.cpp:2330
@@ -1403,6 +1397,10 @@ msgstr ""
 "सेटअप गर्नेछ । अनि, यसले तपाईँको फाइल र इमेल गुप्तिकरण गर्न सक्षम पार्दै, तपाईँको आफ्नै "
 "कुञ्जी जोडी सिर्जना गर्न अनुमति दिन्छ ।"
 
+#: kgpgfirstassistant.cpp:74
+msgid "Welcome to the KGpg assistant"
+msgstr ""
+
 #: kgpgfirstassistant.cpp:86
 #, fuzzy
 #| msgid "KGpg needs to know where your GnuPG configuration file is stored."
@@ -1414,6 +1412,15 @@ msgid ""
 "Unless you want to try some unusual settings, just click on the \"next\" "
 "button."
 msgstr "तपाईँले केही असमान्य सेटिङ चाहनु भएसम्म\"पछिल्लो\" बटनमा क्लिक गर्नुहोस् ।"
+
+#: kgpgfirstassistant.cpp:107
+#, fuzzy
+#| msgid "GnuPG Binary"
+msgctxt "search filter for gpg binary"
+msgid ""
+"gpg|GnuPG binary\n"
+"*|All files"
+msgstr "GnuPG बाइनरी"
 
 #: kgpgfirstassistant.cpp:115
 #, fuzzy
@@ -1489,25 +1496,25 @@ msgstr "सिर्जना नगर्नुहोस्"
 msgid "<qt><b>The GnuPG configuration file was not found</b>.</qt>"
 msgstr ""
 
-#: kgpgfirstassistant.cpp:289
+#: kgpgfirstassistant.cpp:293
 #, fuzzy, kde-format
 #| msgid "GnuPG Binary"
 msgid "Your GnuPG binary is: %1"
 msgstr "GnuPG बाइनरी"
 
-#: kgpgfirstassistant.cpp:305 kgpgfirstassistant.cpp:361
+#: kgpgfirstassistant.cpp:309 kgpgfirstassistant.cpp:365
 #, fuzzy, kde-format
 #| msgid "You have GnuPG version:"
 msgid "You have GnuPG version: %1"
 msgstr "तपाईँसँग GnuPG संस्करण छ:"
 
-#: kgpgfirstassistant.cpp:308
+#: kgpgfirstassistant.cpp:312
 #, fuzzy, kde-format
 #| msgid "Your default key:"
 msgid "Your default key is: %1"
 msgstr "तपाईँको पूर्वनिर्धारित कुञ्जी:"
 
-#: kgpgfirstassistant.cpp:359
+#: kgpgfirstassistant.cpp:363
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your GnuPG version seems to be older than 1.2.0. Photo Id's and Key "
@@ -3257,7 +3264,7 @@ msgstr "फन्ट"
 #. i18n: ectx: label, entry (KeyServers), group (Servers)
 #: rc.cpp:479
 msgid ""
-"Key servers used by kgpg. The first server in the list is the default server."
+"Key servers used by KGpg. The first server in the list is the default server."
 msgstr ""
 
 #. i18n: file: kgpg.kcfg:237
