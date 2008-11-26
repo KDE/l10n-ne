@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-25 10:27+0100\n"
+"POT-Creation-Date: 2008-11-26 10:52+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -402,19 +402,19 @@ msgstr ""
 msgid "Page #%1"
 msgstr "प्ले गर्दै: %1"
 
-#: context/engines/current/CurrentEngine.cpp:110
+#: context/engines/current/CurrentEngine.cpp:100
 #: context/applets/currenttrack/CurrentTrack.cpp:120 widgets/Osd.cpp:557
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
-#: context/engines/current/CurrentEngine.cpp:115
+#: context/engines/current/CurrentEngine.cpp:105
 #: context/applets/albums/Albums.cpp:64
 #, fuzzy
 #| msgid "Most Played Tracks"
 msgid "Recently added albums"
 msgstr "प्राय प्ले गरिएको ट्रयाक"
 
-#: context/engines/current/CurrentEngine.cpp:225
+#: context/engines/current/CurrentEngine.cpp:210
 #, fuzzy, kde-format
 #| msgid "Albums By %1"
 msgid "Albums by %1"
@@ -962,7 +962,7 @@ msgstr "डाइरेक्टरी थप्नुहोस्"
 msgid "Hide menu"
 msgstr "निषेधित"
 
-#: context/widgets/TrackWidget.cpp:90
+#: context/widgets/TrackWidget.cpp:88
 #, fuzzy, kde-format
 #| msgid "%1 GB %2 (x%3)"
 msgid "%1 - %2 ( %3 )"
@@ -1331,23 +1331,24 @@ msgstr ""
 "यदि चयन गरियो भने, सामग्रीहरू परिमार्जन हुँदा फोल्डरहरुले स्वचालित रूपमा पुन: स्क्यान "
 "गरिनेछ, उदाहरणको लागि, नयाँ फाइल थपिदा ।"
 
-#: dialogs/FilenameLayoutDialog.cpp:94 widgets/FilenameLayoutWidget.cpp:374
+#: dialogs/FilenameLayoutDialog.cpp:94 widgets/Token.cpp:104
+#: widgets/FilenameLayoutWidget.cpp:354
 #, fuzzy
 #| msgid "Collection"
 msgid "Collection root"
 msgstr "सङ्कलन"
 
 #: dialogs/FilenameLayoutDialog.cpp:122 dialogs/EditFilterDialog.cpp:135
-#: services/jamendo/JamendoInfoParser.cpp:112
-#: widgets/FilenameLayoutWidget.cpp:334
+#: services/jamendo/JamendoInfoParser.cpp:112 widgets/Token.cpp:64
+#: widgets/FilenameLayoutWidget.cpp:314
 msgid "Track"
 msgstr "ट्रयाक"
 
 #: dialogs/FilenameLayoutDialog.cpp:123 dialogs/EditFilterDialog.cpp:133
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
 #: browsers/playlistbrowser/PodcastModel.cpp:244
-#: playlist/PlaylistModel.cpp:534 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/FilenameLayoutWidget.cpp:338
+#: playlist/PlaylistModel.cpp:534 widgets/Token.cpp:68
+#: widgets/SmartPlaylistEditor.cpp:187 widgets/FilenameLayoutWidget.cpp:318
 msgid "Title"
 msgstr "शीर्षक"
 
@@ -1358,16 +1359,18 @@ msgstr "शीर्षक"
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:247
 #: services/magnatune/MagnatuneStore.cpp:167
 #: services/jamendo/JamendoInfoParser.cpp:54 playlist/PlaylistHeader.cpp:43
-#: playlist/PlaylistModel.cpp:535 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:201 widgets/FilenameLayoutWidget.cpp:342
+#: playlist/PlaylistModel.cpp:535 widgets/Token.cpp:72
+#: widgets/SmartPlaylistEditor.cpp:187 widgets/SmartPlaylistEditor.cpp:201
+#: widgets/FilenameLayoutWidget.cpp:322
 msgid "Artist"
 msgstr "कलाकार"
 
 #: dialogs/FilenameLayoutDialog.cpp:125 dialogs/EditFilterDialog.cpp:129
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:685
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:248
-#: playlist/PlaylistModel.cpp:537 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:201 widgets/FilenameLayoutWidget.cpp:346
+#: playlist/PlaylistModel.cpp:537 widgets/Token.cpp:76
+#: widgets/SmartPlaylistEditor.cpp:187 widgets/SmartPlaylistEditor.cpp:201
+#: widgets/FilenameLayoutWidget.cpp:326
 msgid "Composer"
 msgstr "कम्पोजर"
 
@@ -1375,9 +1378,9 @@ msgstr "कम्पोजर"
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:687
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:252
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:696
-#: playlist/PlaylistModel.cpp:538 widgets/SmartPlaylistEditor.cpp:188
-#: widgets/SmartPlaylistEditor.cpp:201 widgets/SmartPlaylistEditor.cpp:925
-#: widgets/FilenameLayoutWidget.cpp:350
+#: playlist/PlaylistModel.cpp:538 widgets/Token.cpp:80
+#: widgets/SmartPlaylistEditor.cpp:188 widgets/SmartPlaylistEditor.cpp:201
+#: widgets/SmartPlaylistEditor.cpp:925 widgets/FilenameLayoutWidget.cpp:330
 msgid "Year"
 msgstr "वर्ष"
 
@@ -1388,15 +1391,16 @@ msgstr "वर्ष"
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
 #: services/magnatune/MagnatuneStore.cpp:175
 #: services/jamendo/JamendoInfoParser.cpp:86 playlist/PlaylistHeader.cpp:43
-#: playlist/PlaylistModel.cpp:539 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:201 widgets/FilenameLayoutWidget.cpp:354
+#: playlist/PlaylistModel.cpp:539 widgets/Token.cpp:84
+#: widgets/SmartPlaylistEditor.cpp:187 widgets/SmartPlaylistEditor.cpp:201
+#: widgets/FilenameLayoutWidget.cpp:334
 msgid "Album"
 msgstr "एल्बम"
 
 #: dialogs/FilenameLayoutDialog.cpp:128
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:261
-#: playlist/PlaylistModel.cpp:544 widgets/SmartPlaylistEditor.cpp:188
-#: widgets/FilenameLayoutWidget.cpp:358
+#: playlist/PlaylistModel.cpp:544 widgets/Token.cpp:88
+#: widgets/SmartPlaylistEditor.cpp:188 widgets/FilenameLayoutWidget.cpp:338
 msgid "Comment"
 msgstr "टिप्पणी"
 
@@ -1404,8 +1408,9 @@ msgstr "टिप्पणी"
 #: dialogs/transferdialog.cpp:95
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:686
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
-#: playlist/PlaylistModel.cpp:543 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:201 widgets/FilenameLayoutWidget.cpp:362
+#: playlist/PlaylistModel.cpp:543 widgets/Token.cpp:92
+#: widgets/SmartPlaylistEditor.cpp:187 widgets/SmartPlaylistEditor.cpp:201
+#: widgets/FilenameLayoutWidget.cpp:342
 msgid "Genre"
 msgstr "विधा"
 
@@ -1421,7 +1426,8 @@ msgstr "-"
 msgid "."
 msgstr ""
 
-#: dialogs/FilenameLayoutDialog.cpp:136 widgets/FilenameLayoutWidget.cpp:370
+#: dialogs/FilenameLayoutDialog.cpp:136 widgets/Token.cpp:100
+#: widgets/FilenameLayoutWidget.cpp:350
 #, fuzzy
 #| msgid "Ig&nore \"The\""
 msgid "Ignore field"
@@ -1441,19 +1447,22 @@ msgstr ""
 msgid "/"
 msgstr ""
 
-#: dialogs/FilenameLayoutDialog.cpp:146 widgets/FilenameLayoutWidget.cpp:378
+#: dialogs/FilenameLayoutDialog.cpp:146 widgets/Token.cpp:108
+#: widgets/FilenameLayoutWidget.cpp:358
 #, fuzzy
 #| msgid "Artist's Initial"
 msgid "Artist initial"
 msgstr "कलाकारको प्रथमाक्षर"
 
-#: dialogs/FilenameLayoutDialog.cpp:147 widgets/FilenameLayoutWidget.cpp:366
+#: dialogs/FilenameLayoutDialog.cpp:147 widgets/Token.cpp:96
+#: widgets/FilenameLayoutWidget.cpp:346
 #, fuzzy
 #| msgid "Filetype"
 msgid "File type"
 msgstr "फाइल प्रकार"
 
-#: dialogs/FilenameLayoutDialog.cpp:148 widgets/FilenameLayoutWidget.cpp:382
+#: dialogs/FilenameLayoutDialog.cpp:148 widgets/Token.cpp:112
+#: widgets/FilenameLayoutWidget.cpp:362
 #, fuzzy
 #| msgid "Disc Number"
 msgid "Disc number"
@@ -2121,7 +2130,7 @@ msgid "There are exceptions caught in the script. Please refer to the log!"
 msgstr ""
 
 #: refreshimages.cpp:102 refreshimages.cpp:157
-#: covermanager/CoverFetcher.cpp:294
+#: covermanager/CoverFetcher.cpp:292
 msgid "There was an error communicating with Amazon."
 msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
 
@@ -7645,6 +7654,10 @@ msgstr "हालको गितमा समय व्यतित रकम"
 msgid "The amount of time remaining in current song"
 msgstr "हालको गितमा बाँकि समयसम्मको रकम"
 
+#: widgets/Token.cpp:116
+msgid "<space>"
+msgstr ""
+
 #: widgets/Osd.cpp:119
 msgid "Rating changed"
 msgstr "मूल्याङ्कन वजन गरियो"
@@ -8045,29 +8058,29 @@ msgstr "ध्वनि ट्रयाक"
 msgid "part"
 msgstr "भाग"
 
-#: covermanager/CoverFetcher.cpp:249 covermanager/CoverFetcher.cpp:506
+#: covermanager/CoverFetcher.cpp:249 covermanager/CoverFetcher.cpp:504
 msgid "No cover found"
 msgstr "आवरण फेला परेन"
 
-#: covermanager/CoverFetcher.cpp:284 covermanager/CoverFetcher.cpp:465
+#: covermanager/CoverFetcher.cpp:282 covermanager/CoverFetcher.cpp:463
 #, fuzzy
 #| msgid "&Next Cover"
 msgid "Fetching Cover"
 msgstr "पछिल्लो आवरण"
 
-#: covermanager/CoverFetcher.cpp:315
+#: covermanager/CoverFetcher.cpp:313
 msgid "The XML obtained from Amazon is invalid."
 msgstr "अमाजोनबाट प्राप्त भएको एकसएमएल अवैध छ ।"
 
-#: covermanager/CoverFetcher.cpp:427
+#: covermanager/CoverFetcher.cpp:425
 msgid "The cover could not be retrieved."
 msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
 
-#: covermanager/CoverFetcher.cpp:436
+#: covermanager/CoverFetcher.cpp:434
 msgid "The cover-data produced an invalid image."
 msgstr "आवरण-डेटाले एउटा अवैध छवि उत्पन्न गर्यो ।"
 
-#: covermanager/CoverFetcher.cpp:497
+#: covermanager/CoverFetcher.cpp:495
 msgid ""
 "You have seen all the covers Amazon returned using the query below. Perhaps "
 "you can refine it:"
@@ -8075,31 +8088,31 @@ msgstr ""
 "तपाईँले तल क्वेरी प्रयोग गरेर फर्काएको सबै आवरण अमाजोन देख्नुभयो । तपाईँ यसलाई निर्मल गर्न "
 "सक्नुहुन्छ:"
 
-#: covermanager/CoverFetcher.cpp:520
+#: covermanager/CoverFetcher.cpp:518
 msgid "Amazon Query Editor"
 msgstr "अमाजोन क्वेरी सम्पादक"
 
-#: covermanager/CoverFetcher.cpp:587
+#: covermanager/CoverFetcher.cpp:585
 msgid "Ask Amazon for covers using this query:"
 msgstr "यो क्वेरी प्रयोग गरिरहेको आवरणका लागि अमाजोनलाई सोध्नुहोस्:"
 
-#: covermanager/CoverFetcher.cpp:608 covermanager/CoverFetcher.cpp:685
+#: covermanager/CoverFetcher.cpp:606 covermanager/CoverFetcher.cpp:683
 msgid "Aborted."
 msgstr "परित्याग गरियो।"
 
-#: covermanager/CoverFetcher.cpp:628
+#: covermanager/CoverFetcher.cpp:626
 msgid "Ne&w Search..."
 msgstr "नयाँ खोजी..."
 
-#: covermanager/CoverFetcher.cpp:630
+#: covermanager/CoverFetcher.cpp:628
 msgid "&Next Cover"
 msgstr "पछिल्लो आवरण"
 
-#: covermanager/CoverFetcher.cpp:641
+#: covermanager/CoverFetcher.cpp:639
 msgid "Cover Found"
 msgstr "आवरण फेला पर्यो"
 
-#: covermanager/CoverFetcher.cpp:694
+#: covermanager/CoverFetcher.cpp:692
 msgid "Retrieved cover successfully"
 msgstr ""
 
