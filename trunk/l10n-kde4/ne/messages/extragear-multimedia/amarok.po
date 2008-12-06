@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-05 10:26+0100\n"
+"POT-Creation-Date: 2008-12-06 11:15+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -271,7 +271,7 @@ msgstr "स्थानीय सङ्कलन"
 #: browsers/collectionbrowser/CollectionTreeItem.cpp:154
 #: playlist/view/graphic/PlaylistGraphicsItem.cpp:352
 #: collectionscanner/CollectionScanner.cpp:645
-#: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:916
+#: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:887
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
@@ -325,7 +325,7 @@ msgstr "प्रवाह"
 
 #: collection/sqlcollection/SqlMeta.cpp:287
 #: services/lastfm/meta/LastFmMeta.cpp:147 covermanager/CoverViewDialog.h:44
-#: covermanager/CoverManager.cpp:916
+#: covermanager/CoverManager.cpp:887
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
@@ -390,7 +390,7 @@ msgstr ""
 msgid "Page #1"
 msgstr ""
 
-#: context/ContextView.cpp:537
+#: context/ContextView.cpp:555
 #, fuzzy, kde-format
 #| msgid "Playing: %1"
 msgid "Page #%1"
@@ -415,13 +415,19 @@ msgid "Albums by %1"
 msgstr "%1 को एल्बम"
 
 #: context/engines/wikipedia/WikipediaEngine.cpp:165
-#: context/engines/wikipedia/WikipediaEngine.cpp:387
+#: context/engines/wikipedia/WikipediaEngine.cpp:376
 #, fuzzy
 #| msgid "&Next Cover"
 msgid "Fetching content.."
 msgstr "पछिल्लो आवरण"
 
-#: context/engines/wikipedia/WikipediaEngine.cpp:302
+#: context/engines/wikipedia/WikipediaEngine.cpp:200
+#, fuzzy
+#| msgid "Device information for %1"
+msgid "No information found..."
+msgstr "%1 का लागि यन्त्र सूचना"
+
+#: context/engines/wikipedia/WikipediaEngine.cpp:291
 #, fuzzy
 #| msgid "Wikipedia Other Languages"
 msgid "Wikipedia Other Languages: <br/>"
@@ -591,6 +597,7 @@ msgid "Your machine does not support OpenGL widgets."
 msgstr ""
 
 #: context/plasma/containment.cpp:140
+#: context/containments/ColumnContainment.cpp:193
 #, fuzzy
 #| msgid "Add Directory"
 msgid "Add Widgets..."
@@ -621,11 +628,13 @@ msgid "Unlock Widgets"
 msgstr "सबै एल्बमहरू"
 
 #: context/plasma/containment.cpp:178
+#: context/containments/ColumnContainment.cpp:183
 #: context/widgets/ContainmentSelectionLayer.cpp:35
 msgid "Zoom In"
 msgstr ""
 
 #: context/plasma/containment.cpp:189
+#: context/containments/ColumnContainment.cpp:188
 msgid "Zoom Out"
 msgstr ""
 
@@ -950,6 +959,30 @@ msgstr ""
 msgid "Add Applet..."
 msgstr "डाइरेक्टरी थप्नुहोस्"
 
+#: context/containments/ColumnContainment.cpp:198
+#, fuzzy
+#| msgid "Add Directory"
+msgid "Remove Widgets..."
+msgstr "डाइरेक्टरी थप्नुहोस्"
+
+#: context/containments/ColumnContainment.cpp:206
+#, fuzzy
+#| msgid "Next Track"
+msgid "Next Group"
+msgstr "पछिल्लो ट्रयाक"
+
+#: context/containments/ColumnContainment.cpp:211
+#, fuzzy
+#| msgid "Previous Track"
+msgid "Previous Group"
+msgstr "अघिल्लो ट्रयाक"
+
+#: context/widgets/ToolBoxMenu.cpp:95
+#, fuzzy
+#| msgid "Closed"
+msgid "Close"
+msgstr "बन्द गरियो"
+
 #: context/widgets/ToolBoxMenu.cpp:102
 #, fuzzy
 #| msgid "Forbidden"
@@ -1104,11 +1137,11 @@ msgstr "फ्रेमवर्क संस्करण"
 msgid "Plugin Information"
 msgstr "प्लगइन सूचना"
 
-#: configdialog/dialogs/GeneralConfig.cpp:51 App.cpp:837
+#: configdialog/dialogs/GeneralConfig.cpp:51 App.cpp:831
 msgid "Default Browser"
 msgstr "पूर्वनिर्धारित ब्राउजर"
 
-#: configdialog/dialogs/GeneralConfig.cpp:54 App.cpp:840
+#: configdialog/dialogs/GeneralConfig.cpp:54 App.cpp:834
 msgid "Default KDE Browser"
 msgstr "पूर्वनिर्धारित केडीई ब्राउजर"
 
@@ -2124,20 +2157,15 @@ msgstr ""
 msgid "There are exceptions caught in the script. Please refer to the log!"
 msgstr ""
 
-#: refreshimages.cpp:102 refreshimages.cpp:157
-#: covermanager/CoverFetcher.cpp:292
-msgid "There was an error communicating with Amazon."
-msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
-
-#: App.cpp:91 browsers/playlistbrowser/PodcastModel.cpp:370
+#: App.cpp:88 browsers/playlistbrowser/PodcastModel.cpp:370
 msgid "Amarok"
 msgstr "अमारोक"
 
-#: App.cpp:92
+#: App.cpp:89
 msgid "The audio player for KDE"
 msgstr "केडीईका लागि अडियो प्लेयर"
 
-#: App.cpp:93
+#: App.cpp:90
 #, fuzzy
 #| msgid ""
 #| "(C) 2002-2003, Mark Kretschmann\n"
@@ -2149,7 +2177,7 @@ msgstr ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2007, अमारोक विकास स्क्वाड"
 
-#: App.cpp:94 afttagger/afttagger_main.cpp:65
+#: App.cpp:91 afttagger/afttagger_main.cpp:65
 #, fuzzy
 #| msgid ""
 #| "IRC:\n"
@@ -2175,164 +2203,164 @@ msgstr ""
 "amarok@kde.org \n"
 "(निर्माण मिती: "
 
-#: App.cpp:393
+#: App.cpp:391
 msgid "Files/URLs to open"
 msgstr "फाइल/यूआरएल खोल्नका लागि "
 
-#: App.cpp:395
+#: App.cpp:393
 msgid "Skip backwards in playlist"
 msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:397
+#: App.cpp:395
 msgid "Start playing current playlist"
 msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
 
-#: App.cpp:399
+#: App.cpp:397
 msgid "Play if stopped, pause if playing"
 msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
 
-#: App.cpp:400
+#: App.cpp:398
 msgid "Pause playback"
 msgstr "प्लेब्याक पज गर्नुहोस्"
 
-#: App.cpp:402
+#: App.cpp:400
 msgid "Stop playback"
 msgstr "प्लेब्याक रोक्नुहोस्"
 
-#: App.cpp:404
+#: App.cpp:402
 msgid "Skip forwards in playlist"
 msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:405
+#: App.cpp:403
 msgid "Additional options:"
 msgstr "अतिरिक्त विकल्प:"
 
-#: App.cpp:407
+#: App.cpp:405
 msgid "Append files/URLs to playlist"
 msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
 
-#: App.cpp:408
+#: App.cpp:406
 msgid "Queue URLs after the currently playing track"
 msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
 
-#: App.cpp:410
+#: App.cpp:408
 msgid "Load URLs, replacing current playlist"
 msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
 
-#: App.cpp:412
+#: App.cpp:410
 #, fuzzy
 #| msgid "Click to get the plugin information."
 msgid "Print verbose debugging information"
 msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
 
-#: App.cpp:414
+#: App.cpp:412
 msgid "Allow running multiple Amarok instances"
 msgstr ""
 
-#: App.cpp:415
+#: App.cpp:413
 msgid "Base for relative filenames/URLs"
 msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
 
-#: App.cpp:657
+#: App.cpp:651
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
-#: App.cpp:731
+#: App.cpp:725
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1: %2"
 
-#: App.cpp:738
+#: App.cpp:732
 #, fuzzy, kde-format
 msgid "One week ago"
 msgid_plural "%1 weeks ago"
 msgstr[0] "एक हप्ता अघि"
 msgstr[1] "एक हप्ता अघि"
 
-#: App.cpp:741 App.cpp:792
+#: App.cpp:735 App.cpp:786
 #, fuzzy
 #| msgid "Tomorrow"
 msgctxt "When this track was last played"
 msgid "Tomorrow"
 msgstr "भोली"
 
-#: App.cpp:747
+#: App.cpp:741
 msgid "Yesterday"
 msgstr "हिजो"
 
-#: App.cpp:748
+#: App.cpp:742
 #, fuzzy, kde-format
 msgid "One day ago"
 msgid_plural "%1 days ago"
 msgstr[0] "एक दिन अघि"
 msgstr[1] "एक दिन अघि"
 
-#: App.cpp:751
+#: App.cpp:745
 #, fuzzy, kde-format
 msgid "One hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "एक घण्टा अघि"
 msgstr[1] "एक घण्टा अघि"
 
-#: App.cpp:757
+#: App.cpp:751
 #, fuzzy, kde-format
 msgid "One minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "एक मिनेट अघि"
 msgstr[1] "एक मिनेट अघि"
 
-#: App.cpp:758
+#: App.cpp:752
 msgid "Within the last minute"
 msgstr "अन्तिम मिनेट भित्र"
 
-#: App.cpp:760
+#: App.cpp:754
 msgid "The future"
 msgstr "भविष्य"
 
-#: App.cpp:766
+#: App.cpp:760
 #, fuzzy
 #| msgid "Never"
 msgctxt "The amount of time since last played"
 msgid "Never"
 msgstr "कहिल्यै पनि"
 
-#: App.cpp:776
+#: App.cpp:770
 #, fuzzy
 #| msgid "10"
 msgctxt "The amount of time since last played"
 msgid "0"
 msgstr "१०"
 
-#: App.cpp:785
+#: App.cpp:779
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "number of months ago"
 msgid "%1M"
 msgstr "%1"
 
-#: App.cpp:789
+#: App.cpp:783
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "w for weeks"
 msgid "%1w"
 msgstr "%1"
 
-#: App.cpp:798
+#: App.cpp:792
 #, fuzzy, no-c-format, kde-format
 #| msgid "%1"
 msgctxt "d for days"
 msgid "%1d"
 msgstr "%1"
 
-#: App.cpp:801
+#: App.cpp:795
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "h for hours"
 msgid "%1h"
 msgstr "%1"
 
-#: App.cpp:810
+#: App.cpp:804
 #, fuzzy
 #| msgid "10"
 msgid "0"
@@ -5426,7 +5454,7 @@ msgstr "ट्रयाक सूचना"
 #: rc.cpp:746
 #, fuzzy
 #| msgid "Summary"
-msgid "S&&ummary"
+msgid "S&ummary"
 msgstr "सारांश"
 
 #. i18n: file: dialogs/TagDialogBase.ui:66
@@ -5442,7 +5470,7 @@ msgstr "एल्बममा कलाकारद्वारा ट्रय�
 #: rc.cpp:752
 #, fuzzy
 #| msgid "Tags"
-msgid "Ta&&gs"
+msgid "Ta&gs"
 msgstr "ट्याग"
 
 #. i18n: file: dialogs/TagDialogBase.ui:150
@@ -5510,7 +5538,7 @@ msgstr "फाइलनामबाट ट्यागहरू अनुमा�
 #: rc.cpp:785
 #, fuzzy
 #| msgid "Lyrics"
-msgid "L&&yrics"
+msgid "L&yrics"
 msgstr "रचना"
 
 #. i18n: file: dialogs/TagDialogBase.ui:455
@@ -5518,7 +5546,7 @@ msgstr "रचना"
 #: rc.cpp:788
 #, fuzzy
 #| msgid "Statistics"
-msgid "St&&atistics"
+msgid "St&atistics"
 msgstr "तथ्याङ्क"
 
 #. i18n: file: dialogs/TagDialogBase.ui:606
@@ -5526,7 +5554,7 @@ msgstr "तथ्याङ्क"
 #: rc.cpp:800
 #, fuzzy
 #| msgid "Labels"
-msgid "La&&bels"
+msgid "La&bels"
 msgstr "लेबुल"
 
 #. i18n: file: dialogs/TagDialogBase.ui:614
@@ -8069,6 +8097,10 @@ msgstr "आवरण फेला परेन"
 msgid "Fetching Cover"
 msgstr "पछिल्लो आवरण"
 
+#: covermanager/CoverFetcher.cpp:292
+msgid "There was an error communicating with Amazon."
+msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
+
 #: covermanager/CoverFetcher.cpp:314
 msgid "The XML obtained from Amazon is invalid."
 msgstr "अमाजोनबाट प्राप्त भएको एकसएमएल अवैध छ ।"
@@ -8165,64 +8197,64 @@ msgstr "अमाजोन लोकेल"
 msgid "Fetch Missing Covers"
 msgstr "हराइरहेको आवरण तान्नुहोस्"
 
-#: covermanager/CoverManager.cpp:456
+#: covermanager/CoverManager.cpp:452
 msgid "Loading Thumbnails..."
 msgstr "थम्बनेलहरू लोड हुँदैछ..."
 
-#: covermanager/CoverManager.cpp:740
+#: covermanager/CoverManager.cpp:731
 #, fuzzy
 #| msgid "Finished."
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "समाप्त भयो ।"
 
-#: covermanager/CoverManager.cpp:742
+#: covermanager/CoverManager.cpp:733
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] " <b>%1</b> आवरण फेला परेन"
 msgstr[1] " <b>%1</b> आवरण फेला परेन"
 
-#: covermanager/CoverManager.cpp:754
+#: covermanager/CoverManager.cpp:746
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "%1 का लागि आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:756
+#: covermanager/CoverManager.cpp:748
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "%1 - %2 का लागि आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:762
+#: covermanager/CoverManager.cpp:755
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "<b>%1</b> आवरण तान्दैछ..."
 msgstr[1] "<b>%1</b> आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:764
+#: covermanager/CoverManager.cpp:757
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "%1 तानियो"
 msgstr[1] "%1 तानियो"
 
-#: covermanager/CoverManager.cpp:766
+#: covermanager/CoverManager.cpp:761
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:767
+#: covermanager/CoverManager.cpp:762
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
 msgstr[0] "%1 फेला परेन"
 msgstr[1] "%1 फेला परेन"
 
-#: covermanager/CoverManager.cpp:770
+#: covermanager/CoverManager.cpp:765
 msgid "Connecting..."
 msgstr "जडान गरिँदैछ..."
 
-#: covermanager/CoverManager.cpp:796
+#: covermanager/CoverManager.cpp:790
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -8231,27 +8263,27 @@ msgid_plural "%1 results for \"%2\""
 msgstr[0] "\"%1\" को लागि १ परिणाम"
 msgstr[1] "\"%1\" को लागि १ परिणाम"
 
-#: covermanager/CoverManager.cpp:798
+#: covermanager/CoverManager.cpp:793
 #, fuzzy, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "१ एल्बम"
 msgstr[1] "१ एल्बम"
 
-#: covermanager/CoverManager.cpp:804
+#: covermanager/CoverManager.cpp:799
 msgid " by "
 msgstr "यसद्वारा "
 
-#: covermanager/CoverManager.cpp:809
+#: covermanager/CoverManager.cpp:804
 #, kde-format
 msgid " - ( <b>%1</b> without cover )"
 msgstr " - ( <b>%1</b> आवरण बिना )"
 
-#: covermanager/CoverManager.cpp:855
+#: covermanager/CoverManager.cpp:850
 msgid "Cover Image"
 msgstr "आवरण छवि"
 
-#: covermanager/CoverManager.cpp:937
+#: covermanager/CoverManager.cpp:908
 #, fuzzy
 #| msgid "Artist"
 msgid "No Artist"
@@ -8531,12 +8563,6 @@ msgstr "कलाकार"
 
 #~ msgid "Select Best Possible Match"
 #~ msgstr "उत्तम सम्भाव्य जोडा चयन गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Closed"
-#~ msgctxt "@action:button"
-#~ msgid "Close"
-#~ msgstr "बन्द गरियो"
 
 #~ msgid "Show details"
 #~ msgstr "विवरणहरू देखाउनुहोस्"
