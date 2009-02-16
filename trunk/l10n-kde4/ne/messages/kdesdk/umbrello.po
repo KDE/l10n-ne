@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-05 11:15+0100\n"
+"POT-Creation-Date: 2009-02-16 09:05+0100\n"
 "PO-Revision-Date: 2007-08-20 13:11+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -387,7 +387,7 @@ msgstr "क्रियाकलाप रेखाचित्र"
 #: dialogs/statedialog.cpp:37 dialogs/statedialog.cpp:125
 #: dialogs/umlviewdialog.cpp:35 dialogs/objectnodedialog.cpp:39
 #: dialogs/classpropdlg.cpp:109 dialogs/parmpropdlg.cpp:65
-#: dialogs/assocgenpage.cpp:60 refactoring/refactoringassistant.cpp:313
+#: dialogs/assocgenpage.cpp:60 refactoring/refactoringassistant.cpp:453
 #: listpopupmenu.cpp:556
 #, fuzzy
 msgid "Properties"
@@ -533,7 +533,8 @@ msgstr "क्रियाकलापहरू"
 msgid "New Activity..."
 msgstr "नयाँ क्रियाकलाप..."
 
-#: dialogs/activitypage.cpp:88 listpopupmenu.cpp:562
+#: dialogs/activitypage.cpp:88 refactoring/refactoringassistant.cpp:454
+#: listpopupmenu.cpp:562
 #, fuzzy
 msgid "Delete"
 msgstr "चयन गर्नुहोस्"
@@ -771,7 +772,7 @@ msgid "Color"
 msgstr "रङ"
 
 #: dialogs/classifierlistpage.cpp:92 dialogs/classpropdlg.cpp:265
-#: refactoring/refactoringassistant.cpp:488 listpopupmenu.cpp:815
+#: refactoring/refactoringassistant.cpp:658 listpopupmenu.cpp:815
 msgid "Attributes"
 msgstr "विशेषताहरू"
 
@@ -780,7 +781,7 @@ msgid "N&ew Attribute..."
 msgstr "नयाँ विशेषता..."
 
 #: dialogs/classifierlistpage.cpp:96 dialogs/classpropdlg.cpp:277
-#: refactoring/refactoringassistant.cpp:504 listpopupmenu.cpp:818
+#: refactoring/refactoringassistant.cpp:674 listpopupmenu.cpp:818
 msgid "Operations"
 msgstr "सञ्चालन"
 
@@ -1066,16 +1067,16 @@ msgid "You have entered an invalid operation name."
 msgstr "तपाईँले एउटा अवैध सञ्चालन नाम प्रविष्ट गर्नुभयो ।"
 
 #: dialogs/umloperationdialog.cpp:430 dialogs/umloperationdialog.cpp:442
-#: refactoring/refactoringassistant.cpp:658
+#: refactoring/refactoringassistant.cpp:808
 msgid "Operation Name Invalid"
 msgstr "सञ्चालन नाम अवैध छ"
 
-#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:655
+#: dialogs/umloperationdialog.cpp:439 refactoring/refactoringassistant.cpp:805
 #, kde-format
 msgid "An operation with that signature already exists in %1.\n"
 msgstr "त्यो हस्ताक्षर सहितको एउटा सञ्चालन %1 मा पहिल्यै अवस्थित छ ।\n"
 
-#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:657
+#: dialogs/umloperationdialog.cpp:441 refactoring/refactoringassistant.cpp:807
 msgid "Choose a different name or parameter list."
 msgstr "फरक नाम वा परिमिति सूची रोज्नुहोस् ।"
 
@@ -1288,7 +1289,7 @@ msgstr "सुरक्षित"
 msgid "You have entered an invalid attribute name."
 msgstr "तपाईँले एउटा अवैध विशेषता नाम प्रविष्ट गर्नुभयो ।"
 
-#: dialogs/umlattributedialog.cpp:161
+#: dialogs/umlattributedialog.cpp:161 refactoring/refactoringassistant.cpp:829
 msgid "Attribute Name Invalid"
 msgstr "विशेषता नाम अवैध छ"
 
@@ -4876,42 +4877,60 @@ msgstr ""
 "क्लिपबोर्डमा भएको कम्तिमा एउटा वस्तु टाँस्न सकिँदैन किनभने उही नामको एउटा वस्तु पहिल्यै "
 "अवस्थित छ । अन्य कुनै वस्तु टाँसिएको छ ।"
 
-#: refactoring/refactoringassistant.cpp:295
+#: refactoring/refactoringassistant.cpp:49
+#, fuzzy
+#| msgid "Name"
+msgid "Name"
+msgstr "नाम"
+
+#: refactoring/refactoringassistant.cpp:437
 msgid "Add Base Class"
 msgstr "आधार वर्ग थप्नुहोस्"
 
-#: refactoring/refactoringassistant.cpp:296
+#: refactoring/refactoringassistant.cpp:438
 msgid "Add Derived Class"
 msgstr "व्युत्पन्न वर्ग थप्नुहोस्"
 
-#: refactoring/refactoringassistant.cpp:298
-#: refactoring/refactoringassistant.cpp:305
-#: refactoring/refactoringassistant.cpp:319
+#: refactoring/refactoringassistant.cpp:440
+#: refactoring/refactoringassistant.cpp:446
+#: refactoring/refactoringassistant.cpp:458
 msgid "Add Operation"
 msgstr "सञ्चालन थप्नुहोस्"
 
-#: refactoring/refactoringassistant.cpp:299
-#: refactoring/refactoringassistant.cpp:323
+#: refactoring/refactoringassistant.cpp:441
+#: refactoring/refactoringassistant.cpp:461
 msgid "Add Attribute"
 msgstr "विशेषता थप्नुहोस्"
 
-#: refactoring/refactoringassistant.cpp:303
+#: refactoring/refactoringassistant.cpp:444
 msgid "Add Base Interface"
 msgstr "आधार इन्टरफेस थप्नुहोस्"
 
-#: refactoring/refactoringassistant.cpp:304
+#: refactoring/refactoringassistant.cpp:445
 msgid "Add Derived Interface"
 msgstr "व्युत्पन्न इन्टरफेस थप्नुहोस्"
 
-#: refactoring/refactoringassistant.cpp:361
-#: refactoring/refactoringassistant.cpp:515
+#: refactoring/refactoringassistant.cpp:504
+#: refactoring/refactoringassistant.cpp:684
 msgid "Base Classifiers"
 msgstr "आधार विभाजकहरू"
 
-#: refactoring/refactoringassistant.cpp:403
-#: refactoring/refactoringassistant.cpp:533
+#: refactoring/refactoringassistant.cpp:549
+#: refactoring/refactoringassistant.cpp:699
 msgid "Derived Classifiers"
 msgstr "व्युत्पन्न विभाजकहरू"
+
+#: refactoring/refactoringassistant.cpp:826
+#, fuzzy, kde-format
+#| msgid "An operation with that signature already exists in %1.\n"
+msgid "An attribute with that name already exists in %1.\n"
+msgstr "त्यो हस्ताक्षर सहितको एउटा सञ्चालन %1 मा पहिल्यै अवस्थित छ ।\n"
+
+#: refactoring/refactoringassistant.cpp:828
+#, fuzzy
+#| msgid "&Use a different name"
+msgid "Choose a different name."
+msgstr "फरक नाम प्रयोग गर्नुहोस्"
 
 #: widgets/objectnodewidget.cpp:198
 #, fuzzy
