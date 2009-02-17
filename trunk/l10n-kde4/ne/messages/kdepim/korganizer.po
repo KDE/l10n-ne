@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-16 09:08+0100\n"
+"POT-Creation-Date: 2009-02-17 09:10+0100\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -206,7 +206,7 @@ msgstr "मेटाइ यकीन गर्नुहोस्"
 
 #. i18n: file: template_management_dialog_base.ui:41
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonDelete)
-#: filtereditdialog.cpp:252 kojournaleditor.cpp:209 rc.cpp:1126 rc.cpp:1962
+#: filtereditdialog.cpp:252 rc.cpp:1126 rc.cpp:1962
 msgid "Delete"
 msgstr "मेट्नुहोस्"
 
@@ -1548,8 +1548,8 @@ msgctxt "@info"
 msgid "Do you really want to cancel?"
 msgstr ""
 
-#: koincidenceeditor.cpp:109 koeditorattachments.cpp:697 koeventeditor.cpp:410
-#: kotodoeditor.cpp:344
+#: koincidenceeditor.cpp:109 kojournaleditor.cpp:230
+#: koeditorattachments.cpp:697 koeventeditor.cpp:410 kotodoeditor.cpp:344
 #, fuzzy
 #| msgid "KOrganizer Confirmation"
 msgctxt "@title:window"
@@ -1938,7 +1938,7 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:35
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:167 views/journalview/journalview.cpp:185
-#: calendarview.cpp:843 actionmanager.cpp:330 actionmanager.cpp:527
+#: calendarview.cpp:848 actionmanager.cpp:330 actionmanager.cpp:527
 #: actionmanager.cpp:1601 actionmanager.cpp:1630 rc.cpp:6 rc.cpp:2784
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
@@ -3547,12 +3547,12 @@ msgstr ""
 "केडीई आयोजकको मुख्य दृश्यमा चयन गरिएका घटना, जर्नल प्रविष्टि वा गर्नुपर्ने कार्यको विस्तृत "
 "विवरण यहाँ हेर्नुहोस् ।"
 
-#: calendarview.cpp:427
+#: calendarview.cpp:432
 #, kde-format
 msgid "Could not load calendar '%1'."
 msgstr "क्यालेन्डर '%1' लोड गर्न सकेन ।"
 
-#: calendarview.cpp:634
+#: calendarview.cpp:639
 msgid ""
 "The time zone setting was changed. Do you want to keep the absolute time of "
 "the items in your calendar, which will show them to be at a different time "
@@ -3562,29 +3562,29 @@ msgstr ""
 "भन्दा फरक समयमा हुने देखाउने, वा तिनका पुराना समयमा हुनेलाई पनि नयाँ समय क्षेत्रमा सार्ने, "
 "वस्तुको निश्चित समय राख्न चाहनुहुन्छ ?"
 
-#: calendarview.cpp:641
+#: calendarview.cpp:646
 msgid "Keep Absolute Times?"
 msgstr "निश्चित समय राख्नुहुन्छ ?"
 
-#: calendarview.cpp:642
+#: calendarview.cpp:647
 msgid "Keep Times"
 msgstr "समय राख्नुहोस्"
 
-#: calendarview.cpp:643
+#: calendarview.cpp:648
 msgid "Move Times"
 msgstr "समय सार्नुहोस्"
 
-#: calendarview.cpp:712
+#: calendarview.cpp:717
 #, kde-format
 msgid "Todo completed: %1 (%2)"
 msgstr "गर्नुपर्ने कार्य समाप्त: %1 (%2)"
 
-#: calendarview.cpp:722
+#: calendarview.cpp:727
 #, kde-format
 msgid "Journal of %1"
 msgstr "%1 को जर्नल"
 
-#: calendarview.cpp:777
+#: calendarview.cpp:782
 #, kde-format
 msgid ""
 "The item \"%1\" is filtered by your current filter rules, so it will be "
@@ -3593,26 +3593,19 @@ msgstr ""
 "वस्तु \"%1\" तपाईँको हालको फिल्टर नियम अनुरुप फिल्टर गरिएको छ, त्यसैले यसलाई लुकाइन्छ र "
 "दृश्यमा देखिदैन ।"
 
-#: calendarview.cpp:780
+#: calendarview.cpp:785
 msgid "Filter Applied"
 msgstr "फिल्टर लागू गरियो"
 
-#: calendarview.cpp:841
+#: calendarview.cpp:846
 #, kde-format
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "वस्तु \"%1\" स्थायी रूपमा मेटिन्छ ।"
 
-#: calendarview.cpp:842 calendarview.cpp:2094 calendarview.cpp:2157
-#: calendarview.cpp:2168 kojournaleditor.cpp:208
+#: calendarview.cpp:847 calendarview.cpp:2094 calendarview.cpp:2157
+#: calendarview.cpp:2168
 msgid "KOrganizer Confirmation"
 msgstr "केडीई आयोजक यकीन"
-
-#: calendarview.cpp:1088
-#, fuzzy, kde-format
-#| msgid "Journal of %1"
-msgctxt "Journal for DATE"
-msgid "Journal for %1"
-msgstr "%1 को जर्नल"
 
 #: calendarview.cpp:1188
 msgid ""
@@ -4545,22 +4538,38 @@ msgstr "यसबाट प्रत्यायोजन"
 msgid "Not delegated"
 msgstr "वस्तु चयन गरिएको छैन ।"
 
-#: kojournaleditor.cpp:49
-msgid "Edit Journal Entry"
-msgstr "जर्नल प्रविष्टि सम्पादन गर्नुहोस्"
-
-#: kojournaleditor.cpp:77
+#: kojournaleditor.cpp:78
 #, fuzzy
 #| msgid "General"
 msgctxt "@title general journal settings"
 msgid "General"
 msgstr "साधारण"
 
-#: kojournaleditor.cpp:207
+#: kojournaleditor.cpp:106
+#, fuzzy, kde-format
+#| msgid "Edit Journal Entry"
+msgctxt "@title:window"
+msgid "Edit Journal: %1"
+msgstr "जर्नल प्रविष्टि सम्पादन गर्नुहोस्"
+
+#: kojournaleditor.cpp:116
+#, fuzzy
+#| msgid "New &Journal..."
+msgctxt "@title:window"
+msgid "New Journal"
+msgstr "नयाँ जर्नल..."
+
+#: kojournaleditor.cpp:229
+#, fuzzy
+#| msgid "This journal entry will be permanently deleted."
+msgctxt "@info"
 msgid "This journal entry will be permanently deleted."
 msgstr "यो जर्नल प्रविष्टि स्थायी रूपमा मेटिन्छ ।"
 
-#: kojournaleditor.cpp:223
+#: kojournaleditor.cpp:247
+#, fuzzy
+#| msgid "Template does not contain a valid journal."
+msgctxt "@info"
 msgid "Template does not contain a valid journal."
 msgstr "टेम्प्लेटले वैध जर्नल समावेश गर्दैन ।"
 
@@ -10520,40 +10529,47 @@ msgctxt "@info"
 msgid "The archive file name is not valid."
 msgstr "सङ्ग्रह फाइलनाम वैध छैन ।\n"
 
-#: koeditorgeneraljournal.cpp:69
+#: koeditorgeneraljournal.cpp:71
 msgid "Sets the title of this journal."
 msgstr "यस जर्नलको शीर्षक सेट गर्छ ।"
 
-#: koeditorgeneraljournal.cpp:70
+#: koeditorgeneraljournal.cpp:72
 #, fuzzy
 #| msgid "T&itle:"
 msgctxt "journal title"
 msgid "T&itle:"
 msgstr "शीर्षक:"
 
-#: koeditorgeneraljournal.cpp:88
+#: koeditorgeneraljournal.cpp:90
 msgid "&Date:"
 msgstr "मिति:"
 
-#: koeditorgeneraljournal.cpp:97
+#: koeditorgeneraljournal.cpp:99
 msgid "&Time: "
 msgstr "समय: "
 
-#: koeditorgeneraljournal.cpp:129
+#: koeditorgeneraljournal.cpp:131
 #, fuzzy
 #| msgid ""
 #| "Allows you to select the categories that this event or to-do belongs to."
 msgid "Allows you to select the categories that this journal belongs to."
 msgstr "तपाईँलाई यो घटना वा गर्नुपर्ने कार्यको स्वामित्वमा कोटि चयन गर्न अनुमति दिन्छ ।"
 
-#: koeditorgeneraljournal.cpp:132
+#: koeditorgeneraljournal.cpp:134
 msgid "Select Cate&gories..."
 msgstr "कोटि चयन गर्नुहोस्..."
 
-#: koeditorgeneraljournal.cpp:219
+#: koeditorgeneraljournal.cpp:222
 #, kde-format
 msgid "Please specify a valid date, for example '%1'."
 msgstr "कृपया वैध मिति निर्दिष्ट गर्नुहोस्, उदाहरणका लागि: '%1' ।"
+
+#: koeditorgeneraljournal.cpp:229
+#, fuzzy
+#| msgid "Please specify a valid due time."
+msgctxt "@info"
+msgid "Please specify a journal title."
+msgstr "कृपया वैध म्याद समाप्त समय निर्दिष्ट गर्नुहोस् ।"
 
 #: templatemanagementdialog.cpp:51
 msgid "Manage Templates"
@@ -11451,6 +11467,12 @@ msgstr "पछिल्लो के हो मुद्रण गर्नु�
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr "पछि आउने सबै घटना र गर्नुपर्ने कार्यको सूची मुद्रण गर्छ ।"
+
+#, fuzzy
+#~| msgid "Journal of %1"
+#~ msgctxt "Journal for DATE"
+#~ msgid "Journal for %1"
+#~ msgstr "%1 को जर्नल"
 
 #, fuzzy
 #~| msgctxt "delimiter for joining holiday names"
