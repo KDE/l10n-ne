@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-23 09:46+0100\n"
+"POT-Creation-Date: 2009-02-25 11:42+0100\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -301,7 +301,7 @@ msgid_plural "<qt><b>%1 keys imported:</b><br/></qt>"
 msgstr[0] "<qt><b>एउटा कुञ्जी आयात गरियो:</b><br></qt>"
 msgstr[1] "<qt><b>%1 कुञ्जी आयात गरियो:</b><br></qt>"
 
-#: keyservers.cpp:192 kgpginterface.cpp:1246
+#: keyservers.cpp:192 kgpginterface.cpp:1247
 msgid ""
 "No key imported... \n"
 "Check detailed log for more infos"
@@ -336,14 +336,16 @@ msgstr "%1 मिल्दो कुञ्जी फेला पर्यो"
 msgid "You must choose a key."
 msgstr "तपाईँले कुञ्जी छनोट गर्नैपर्दछ ।"
 
-#: keyservers.cpp:508
+#: keyservers.cpp:509
 #, kde-format
-msgid "ID %1, %2 bit %3 key, created %4 revoked"
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
+msgid "ID %1, %2-bit %3 key, created %4, revoked"
 msgstr ""
 
-#: keyservers.cpp:514
+#: keyservers.cpp:516
 #, kde-format
-msgid "ID %1, %2 bit %3 key, created %4"
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
+msgid "ID %1, %2-bit %3 key, created %4"
 msgstr ""
 
 #: keysmanager.cpp:107
@@ -810,7 +812,7 @@ msgstr "यस रूपमा व्यक्तिगत कुञ्जी �
 #| "Your PRIVATE key \"%1\" was successfully exported.\n"
 #| "DO NOT leave it in an insecure place."
 msgid ""
-"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2 .<br/"
+"<qt>Your <b>private</b> key \"%1\" was successfully exported to<br/>%2.<br/"
 "><b>Do not</b> leave it in an insecure place.</qt>"
 msgstr ""
 "तपाईँको \"%1\" व्यक्तिगत कुञ्जी सफलतापूर्वक निर्यात गरियो ।\n"
@@ -1183,11 +1185,11 @@ msgstr "<p>तपाईँको कुञ्जी रिङमा <b>%1</b> �
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:148 kgpgtextinterface.cpp:625 rc.cpp:292
+#: keytreeview.cpp:148 kgpgtextinterface.cpp:626 rc.cpp:292
 msgid "Import"
 msgstr "आयात गर्नुहोस्"
 
-#: keytreeview.cpp:149 kgpgtextinterface.cpp:625
+#: keytreeview.cpp:149 kgpgtextinterface.cpp:626
 msgid "Do Not Import"
 msgstr "आयात नगर्नुहोस्"
 
@@ -1543,15 +1545,17 @@ msgstr " वा "
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
-msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
-msgstr "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
+msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
+msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr[0] "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
+msgstr[1] "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
 
-#: kgpginterface.cpp:1011 kgpgtextinterface.cpp:118
+#: kgpginterface.cpp:1012 kgpgtextinterface.cpp:119
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्"
 
-#: kgpginterface.cpp:1052
+#: kgpginterface.cpp:1053
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Signing key <b>%1</b> with key <b>%2</b> failed.<br>Do you want to "
@@ -1563,7 +1567,7 @@ msgstr ""
 "<qt>कुञ्जीलाई<b>%1</b> कुञ्जीसँग <b>%2</b> साइनिङ गर्न असफल भयो ।<br>तपाईँ कन्सोल "
 "मोडमा कुञ्जी साइनिङका लागि प्रयास गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpginterface.cpp:1205
+#: kgpginterface.cpp:1206
 #, fuzzy, kde-format
 #| msgid "<qt>%1 key processed.<br></qt>"
 #| msgid_plural "<qt>%1 keys processed.<br></qt>"
@@ -1572,7 +1576,7 @@ msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "<qt>%1 कुञ्जी प्रक्रिया गरियो<br></qt>"
 msgstr[1] "<qt>%1 कुञ्जी प्रक्रिया गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1208
+#: kgpginterface.cpp:1209
 #, fuzzy, kde-format
 #| msgid "<qt>One key without ID.<br></qt>"
 #| msgid_plural "<qt>%1 keys without ID.<br></qt>"
@@ -1581,7 +1585,7 @@ msgid_plural "<qt>%1 keys without ID.</qt>"
 msgstr[0] "<qt>आईडी बिनाको एउटा कुञ्जी ।<br></qt>"
 msgstr[1] "<qt> आईडी बिनाको %1 कुञ्जी ।<br></qt>"
 
-#: kgpginterface.cpp:1210
+#: kgpginterface.cpp:1211
 #, fuzzy, kde-format
 #| msgid "<qt><b>One key imported:</b><br></qt>"
 #| msgid_plural "<qt><b>%1 keys imported:</b><br></qt>"
@@ -1590,7 +1594,7 @@ msgid_plural "<qt><b>%1 keys imported:</b></qt>"
 msgstr[0] "<qt><b>एउटा कुञ्जी आयात गरियो:</b><br></qt>"
 msgstr[1] "<qt><b>%1 कुञ्जी आयात गरियो:</b><br></qt>"
 
-#: kgpginterface.cpp:1212
+#: kgpginterface.cpp:1213
 #, fuzzy, kde-format
 #| msgid "<qt>One RSA key imported.<br></qt>"
 #| msgid_plural "<qt>%1 RSA keys imported.<br></qt>"
@@ -1599,7 +1603,7 @@ msgid_plural "<qt>%1 RSA keys imported.</qt>"
 msgstr[0] "<qt>एउटा RSA कुञ्जी आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 RSA कुञ्जी आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1214
+#: kgpginterface.cpp:1215
 #, fuzzy, kde-format
 #| msgid "<qt>One key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 keys unchanged.<br></qt>"
@@ -1608,7 +1612,7 @@ msgid_plural "<qt>%1 keys unchanged.</qt>"
 msgstr[0] "<qt>एउटा कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 msgstr[1] "<qt>%1 कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 
-#: kgpginterface.cpp:1216
+#: kgpginterface.cpp:1217
 #, fuzzy, kde-format
 #| msgid "<qt>One user ID imported.<br></qt>"
 #| msgid_plural "<qt>%1 user IDs imported.<br></qt>"
@@ -1617,7 +1621,7 @@ msgid_plural "<qt>%1 user IDs imported.</qt>"
 msgstr[0] "<qt>एउटा प्रयोगकर्ता आईडी आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 प्रयोगकर्ता आईडी आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1218
+#: kgpginterface.cpp:1219
 #, fuzzy, kde-format
 #| msgid "<qt>One subkey imported.<br></qt>"
 #| msgid_plural "<qt>%1 subkeys imported.<br></qt>"
@@ -1626,7 +1630,7 @@ msgid_plural "<qt>%1 subkeys imported.</qt>"
 msgstr[0] "<qt>एउटा सहायक कुञ्जी आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 सहायक कुञ्जी आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1220
+#: kgpginterface.cpp:1221
 #, fuzzy, kde-format
 #| msgid "<qt>One signature imported.<br></qt>"
 #| msgid_plural "<qt>%1 signatures imported.<br></qt>"
@@ -1635,7 +1639,7 @@ msgid_plural "<qt>%1 signatures imported.</qt>"
 msgstr[0] "<qt>एउटा हस्ताक्षर आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 हस्ताक्षर आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1223
+#: kgpginterface.cpp:1224
 #, fuzzy, kde-format
 #| msgid "<qt>One revocation certificate imported.<br></qt>"
 #| msgid_plural "<qt>%1 revocation certificates imported.<br></qt>"
@@ -1644,7 +1648,7 @@ msgid_plural "<qt>%1 revocation certificates imported.</qt>"
 msgstr[0] "<qt>एउटा खारेजी प्रमाणपत्र आयात गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 खारेजी प्रमाणपत्र आयात गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1229
+#: kgpginterface.cpp:1230
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key processed.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys processed.<br></qt>"
@@ -1653,7 +1657,7 @@ msgid_plural "<qt>%1 secret keys processed.</qt>"
 msgstr[0] "<qt>एउटा गुप्त कुञ्जी प्रक्रिया गरियो ।<br></qt>"
 msgstr[1] "<qt>%1 गुप्त कुञ्जी प्रक्रिया गरियो ।<br></qt>"
 
-#: kgpginterface.cpp:1233
+#: kgpginterface.cpp:1234
 #, fuzzy, kde-format
 #| msgid "<qt><b>One secret key imported.</b><br></qt>"
 #| msgid_plural "<qt><b>%1 secret keys imported.</b><br></qt>"
@@ -1662,7 +1666,7 @@ msgid_plural "<qt><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "<qt><b>एउटा गुप्त कुञ्जी आयात गरियो ।</b><br></qt>"
 msgstr[1] "<qt><b>%1 गुप्त कुञ्जी आयात गरियो ।</b><br></qt>"
 
-#: kgpginterface.cpp:1235
+#: kgpginterface.cpp:1236
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys unchanged.<br></qt>"
@@ -1671,7 +1675,7 @@ msgid_plural "<qt>%1 secret keys unchanged.</qt>"
 msgstr[0] "<qt>एउटा गुप्त कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 msgstr[1] "<qt>%1 गुप्त कुञ्जी परिवर्तन गरिएन ।<br></qt>"
 
-#: kgpginterface.cpp:1237
+#: kgpginterface.cpp:1238
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key not imported.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys not imported.<br></qt>"
@@ -1680,7 +1684,7 @@ msgid_plural "<qt>%1 secret keys not imported.</qt>"
 msgstr[0] "<qt>एउटा गुप्त कुञ्जी आयात गरिएन ।<br></qt>"
 msgstr[1] "<qt>%1 गुप्त कुञ्जी आयात गरिएन ।<br></qt>"
 
-#: kgpginterface.cpp:1240
+#: kgpginterface.cpp:1241
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -1698,11 +1702,11 @@ msgstr ""
 "लागि यो गुप्त कुञ्जी पूर्ण रूपमा प्रयोग गर्न, तपाईँले कुञ्जी सम्पादन गर्नु (यसमा दोहोरो क्लिक "
 "गर्नुहोस्) पर्दछ यसको  विश्वासलाई पूर्ण अन्तिममा सेट गर्नुपर्दछ ।</qt>"
 
-#: kgpginterface.cpp:1491
+#: kgpginterface.cpp:1492
 msgid "Creation of the revocation certificate failed..."
 msgstr "खारेजी प्रमाणपत्रको सिर्जना असफल..."
 
-#: kgpginterface.cpp:1522
+#: kgpginterface.cpp:1523
 #, kde-format
 msgid "<qt>Enter passphrase for <b>%1</b>:</qt>"
 msgstr "<qt><b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:</qt>"
@@ -1788,11 +1792,15 @@ msgstr ""
 msgid "&Algorithm:"
 msgstr "अल्गोरिदम:"
 
-#: kgpgkeygenerate.cpp:99
+#: kgpgkeygenerate.cpp:99 core/convert.cpp:39
+#, fuzzy
+#| msgid "Email"
+msgctxt "Encryption algorithm"
 msgid "DSA & ElGamal"
-msgstr ""
+msgstr "इमेल"
 
-#: kgpgkeygenerate.cpp:100
+#: kgpgkeygenerate.cpp:100 core/convert.cpp:36
+msgctxt "Encryption algorithm"
 msgid "RSA"
 msgstr ""
 
@@ -1987,28 +1995,28 @@ msgstr "[प्रयोगकर्ता आईडी फेला परे�
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<b>प्रयोगकर्ता आईडी फेला परेन</b> । सबै गुप्त कुञ्जी प्रयास गर्दैछ ।<br>"
 
-#: kgpgtextinterface.cpp:116
+#: kgpgtextinterface.cpp:117
 #, fuzzy
 #| msgid "Enter passphrase for <b>%1</b>"
 msgid "Enter passphrase"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्"
 
-#: kgpgtextinterface.cpp:308
+#: kgpgtextinterface.cpp:309
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "खराब MDC पत्ता लाग्यो । गुप्तिकरण गरिएको पाठ मिलाइएको छ ।"
 
-#: kgpgtextinterface.cpp:399 kgpgtextinterface.cpp:592
-#: kgpgtextinterface.cpp:619
+#: kgpgtextinterface.cpp:400 kgpgtextinterface.cpp:593
+#: kgpgtextinterface.cpp:620
 msgid "No signature found."
 msgstr "हस्ताक्षर फेला परेन ।"
 
-#: kgpgtextinterface.cpp:595
+#: kgpgtextinterface.cpp:596
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt>कुञ्जीआईडी बाट: <br><b>%1</b><br>राम्रो हस्ताक्षर:%2</qt>"
 
-#: kgpgtextinterface.cpp:600
+#: kgpgtextinterface.cpp:601
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>BAD signature</b> from:<br> %1<br>Key id: %2<br><br><b>The file is "
@@ -2020,20 +2028,20 @@ msgstr ""
 "<qt><b>खराब हस्ताक्षर</b> बाट:<br> %1<br>कुञ्जीआईडी: %2<br><br><b>फाइल अनुपयोगी "
 "छ</b></qt>"
 
-#: kgpgtextinterface.cpp:607
+#: kgpgtextinterface.cpp:608
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वासिलो छ"
 
-#: kgpgtextinterface.cpp:609
+#: kgpgtextinterface.cpp:610
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "हस्ताक्षर वैध छ र कुञ्जी अन्तिममा विश्वासिलो छ"
 
-#: kgpgtextinterface.cpp:624 editor/kgpgview.cpp:397
+#: kgpgtextinterface.cpp:625 editor/kgpgview.cpp:397
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3774,11 +3782,6 @@ msgid ""
 "work.</p>\n"
 msgstr ""
 
-#: core/convert.cpp:36
-msgctxt "Encryption algorithm"
-msgid "RSA"
-msgstr ""
-
 #: core/convert.cpp:37
 msgctxt "Encryption algorithm"
 msgid "DSA"
@@ -3790,11 +3793,6 @@ msgstr ""
 msgctxt "Encryption algorithm"
 msgid "ElGamal"
 msgstr "इमेल"
-
-#: core/convert.cpp:39
-msgctxt "Encryption algorithm"
-msgid "DSA - ElGamal"
-msgstr ""
 
 #: core/convert.cpp:41
 #, fuzzy
