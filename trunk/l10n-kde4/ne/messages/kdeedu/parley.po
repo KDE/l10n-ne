@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 11:45+0100\n"
+"POT-Creation-Date: 2009-03-02 10:01+0100\n"
 "PO-Revision-Date: 2007-12-31 19:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -888,7 +888,7 @@ msgstr ""
 #: src/practice/answervalidator.cpp:446
 #, fuzzy
 #| msgid "<font color=\"#8C1818\">You made a mistake.</font>"
-msgid "Correct answer, capitalized wrong."
+msgid "Correct answer, capitalized incorrectly."
 msgstr "<font color=\"#8C1818\">तपाईँले गल्ति गर्नुभयो ।</font>"
 
 #: src/practice/answervalidator.cpp:456
@@ -912,7 +912,7 @@ msgstr "<font color=\"#8C1818\">बाहिर हेर्नुहोस्! 
 #: src/practice/answervalidator.cpp:494
 msgid ""
 "Do you have any idea what you are talking about? (Wrong word, you spelled it "
-"correct I guess.)"
+"correctly I guess.)"
 msgstr ""
 
 #: src/practice/answervalidator.cpp:504
@@ -1950,7 +1950,7 @@ msgstr "पुन: नामकरण गर्नुहोस्"
 #: src/vocabulary/wordtypeview.cpp:46
 #, fuzzy
 #| msgid "Rename the selected lesson"
-msgid "Rename the selected WordType"
+msgid "Rename the selected word type"
 msgstr "चयन गरिएका पाठ पुन: नामकरण गर्नुहोस्"
 
 #: src/vocabulary/wordtypeview.cpp:52
@@ -1962,7 +1962,7 @@ msgstr "शब्द प्रकार"
 #: src/vocabulary/wordtypeview.cpp:54
 #, fuzzy
 #| msgid "Delete the selected rows"
-msgid "Delete the selected WordType."
+msgid "Delete the selected word type."
 msgstr "चयन गरिएका पङ्क्ति मेट्नुहोस्"
 
 #: src/vocabulary/wordtypeview.cpp:60
@@ -2035,7 +2035,7 @@ msgid "This word type folder contains no word type with special meaning."
 msgstr ""
 
 #: src/vocabulary/wordtypeview.cpp:232
-msgid "The root WordType cannot be deleted."
+msgid "The root word type cannot be deleted."
 msgstr ""
 
 #: src/vocabulary/wordtypeview.cpp:241
@@ -2556,12 +2556,10 @@ msgstr "रोक्दै"
 
 #. i18n: file: src/practiceold/entryfilter.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox, timesWrongCheckBox)
-#. i18n: file: src/practice/entryfilter.ui:92
-#. i18n: ectx: property (text), widget (QCheckBox, timesWrongCheckBox)
-#: rc.cpp:222 rc.cpp:536
+#: rc.cpp:222
 #, fuzzy
 #| msgid "Answered wrong"
-msgid "Ignore Times Answered Wrong"
+msgid "Ignore Times Answered Incorrectly"
 msgstr "गलत जवाफ दिइयो"
 
 #. i18n: file: src/practiceold/entryfilter.ui:112
@@ -2944,6 +2942,14 @@ msgstr "तालिका फन्ट:"
 msgid "Percent:"
 msgstr "प्रतिशत"
 
+#. i18n: file: src/practice/entryfilter.ui:92
+#. i18n: ectx: property (text), widget (QCheckBox, timesWrongCheckBox)
+#: rc.cpp:536
+#, fuzzy
+#| msgid "Answered wrong"
+msgid "Ignore Times Answered Wrong"
+msgstr "गलत जवाफ दिइयो"
+
 #. i18n: file: src/practice/parleypracticeui.rc:9
 #. i18n: ectx: Menu (Navigation)
 #: rc.cpp:559
@@ -3029,8 +3035,10 @@ msgstr "पटक अभ्यास गरियो"
 #. i18n: file: src/configure-practice/thresholdoptions.ui:79
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:598
-msgid "Answered wrong"
-msgstr "गलत जवाफ दिइयो"
+#, fuzzy
+#| msgid "Answered correctly (first attempt):"
+msgid "Answered incorrectly"
+msgstr "सही रूपमा जवाफ दिनुहोस् (पहिलो प्रयास):"
 
 #. i18n: file: src/configure-practice/thresholdoptions.ui:152
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WordTypesInPracticeEnabled)
@@ -3344,9 +3352,13 @@ msgstr "अनियमित रूपमा स्वाप दिशा"
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:100
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_TestOrderLesson)
 #: rc.cpp:761
+#, fuzzy
+#| msgid ""
+#| "When practicing new words will be chosen loosely in lesson order if this "
+#| "is selected, otherwise at total random."
 msgid ""
-"When practicing new words will be chosen loosely in lesson order if this is "
-"selected, otherwise at total random."
+"When practicing, new words will be chosen loosely in lesson order if this is "
+"selected.  Otherwise, they will be chosen completely at random."
 msgstr ""
 "यदि यो चयन भयो भने अभ्यास गर्दा पाठ क्रममा हराउने गरी नयाँ शब्दहरू हराउँनेछ, अन्यथा सबै "
 "अनियमित हुन्छ ।"
@@ -3370,8 +3382,12 @@ msgstr "ध्वनि सक्षम पार्नुहोस्"
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:134
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, kcfg_TestNumberOfEntries)
 #: rc.cpp:770 rc.cpp:776
+#, fuzzy
+#| msgid ""
+#| "The number of vocabulary that will show up repeatedly until it is "
+#| "answered correctly."
 msgid ""
-"The number of vocabulary that will show up repeatedly until it is answered "
+"The number of times vocabulary will show up repeatedly until it is answered "
 "correctly."
 msgstr "शब्दसूचीको सङ्ख्या जसले यसले सही उत्तर दिए सम्म दोहोरो रूपमा देखाउँनेछ ।"
 
@@ -3418,8 +3434,8 @@ msgstr "s"
 #| "If a time limit is set, an answer has to be given in the set time, when "
 #| "practicing."
 msgid ""
-"If a time limit is set, an answer has to be given in the set time, when "
-"practicing."
+"If a time limit is set, an answer has to have been given within the time set "
+"when practicing."
 msgstr ""
 "यदि समय सीमा सेट गरिएको छ भने, अभ्यास गर्दा, एउटा जवाफ सेट गरिएको समयमा दिइनेछ ।"
 
@@ -4217,8 +4233,8 @@ msgstr ""
 #. i18n: ectx: label, entry (PracticeTimeoutMode), group (PracticeOptions)
 #: rc.cpp:1331
 msgid ""
-"Show - show the solution after the given time, Continue goes to the next "
-"question after the timeout."
+"Show - show the solution after the given time; continue - go to the next "
+"question after the given time."
 msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:102
@@ -4437,16 +4453,16 @@ msgstr ""
 #. i18n: ectx: label, entry (PracticeMinimumWrongCount), group (Thresholds)
 #: rc.cpp:1427
 msgid ""
-"The entry must have been answered wrong at least this often to be included "
-"in the practice."
+"The entry must have been answered incorrectly at least this often to be "
+"included in the practice."
 msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:260
 #. i18n: ectx: label, entry (PracticeMaximumWrongCount), group (Thresholds)
 #: rc.cpp:1430
 msgid ""
-"The entry must have been answered wrong at most this often to be included in "
-"the practice."
+"The entry must have been answered incorrectly at most this often to be "
+"included in the practice."
 msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:265
@@ -5057,12 +5073,12 @@ msgid ""
 "<p>For some vocabulary multiple choice tests work best. You can add choices "
 "to a word that will always be displayed in Multiple Choice mode. Otherwise "
 "random choices are generated from the other entries in the document. (Use "
-"the Multiple Choice tool for that).</p>\n"
+"the Multiple Choice tool for that.)</p>\n"
 msgstr ""
 
 #: tips.cpp:63
 msgid ""
-"<p>Want to enter pronunciation symbols quickly? <em>Doubleclick</em> the "
+"<p>Want to enter pronunciation symbols quickly? <em>Double click</em> the "
 "symbol you need to directly add it.</p>\n"
 msgstr ""
 
@@ -5073,6 +5089,9 @@ msgid ""
 "<a href=\"http://edu.kde.org/contrib/kvtml2.php\">http://edu.kde.org/contrib/"
 "kvtml2.php</a>.</p>\n"
 msgstr ""
+
+#~ msgid "Answered wrong"
+#~ msgstr "गलत जवाफ दिइयो"
 
 #, fuzzy
 #~| msgid "Hints"
