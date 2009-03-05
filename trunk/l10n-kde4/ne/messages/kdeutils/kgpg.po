@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 11:42+0100\n"
+"POT-Creation-Date: 2009-03-05 10:36+0100\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1539,10 +1539,12 @@ msgstr ""
 "काम गर्ने छैन । कृपया GnuPG (http://gnupg.org) स्तरवृद्धि गर्ने विचार गर्नुहोस् ।"
 
 #: kgpginterface.cpp:458 kgpgtextinterface.cpp:108
+#: transactions/kgpgtransaction.cpp:149
 msgid " or "
 msgstr " वा "
 
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
+#: transactions/kgpgtransaction.cpp:175
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1551,6 +1553,7 @@ msgstr[0] "<b>खराब पासफ्रेज</b> । तपाईँस�
 msgstr[1] "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
 
 #: kgpginterface.cpp:1012 kgpgtextinterface.cpp:119
+#: transactions/kgpgchangeexpire.cpp:72 transactions/kgpgtransaction.cpp:177
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्"
@@ -1986,6 +1989,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "पासफ्रेज (सममित गुप्तिकरण) प्रविष्ट गर्नुहोस्"
 
 #: kgpgtextinterface.cpp:106 model/kgpgitemnode.cpp:836
+#: transactions/kgpgtransaction.cpp:170
 msgid "[No user id found]"
 msgstr "[प्रयोगकर्ता आईडी फेला परेन]"
 
@@ -4157,53 +4161,83 @@ msgid_plural "%1 keys"
 msgstr[0] "%1 सहायक कुञ्जी"
 msgstr[1] "%1 सहायक कुञ्जी"
 
+#: transactions/kgpgaddphoto.cpp:52
+msgid "This image is very large. Use it anyway?"
+msgstr "यो छवि धरै ठूलो छ । जसरी भए पनि यसको प्रयोग गर्नुहुन्छ ?"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Use Anyway"
+msgstr "जसरी भए पनि प्रयोग गर्नुहोस्"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Do Not Use"
+msgstr "प्रयोग नगर्नुहोस्"
+
+#: transactions/kgpgchangeexpire.cpp:71
+#, fuzzy, kde-format
+#| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
+msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
+
+#: transactions/kgpgchangeexpire.cpp:98
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
+#| "key expiration in console mode?</qt>"
+msgid ""
+"<qt><b>Changing expiration failed.</b><br />Do you want to try changing the "
+"key expiration in console mode?</qt>"
+msgstr ""
+"<qt><b>म्याद समाप्ति परिवर्तन गर्न असफल ।</b><br>तपाईँले कन्सोल मोडमा कुञ्जीको म्याद "
+"समाप्ति परिवर्तनका लागि प्रयास गर्न चाहनुहुन्छ ?</qt>"
+
+#: transactions/kgpgchangeexpire.cpp:101
+msgid "work in progress..."
+msgstr ""
+
+#: transactions/kgpgchangepass.cpp:64
+#, kde-format
+msgid "Enter old passphrase for <b>%1</b>"
+msgstr "<b>%1</b> का लागि पुरानो पासफ्रेज प्रविष्ट गर्नुहोस्"
+
+#: transactions/kgpgchangepass.cpp:67
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Enter new passphrase for <b>%1</b><br>If you forget this passphrase "
+#| "all your encrypted files and messages will be inaccessible<br></qt>"
+msgid ""
+"<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
+"all your encrypted files and messages will be inaccessible!</qt>"
+msgstr ""
+"<qt> <b>%1</b> का लागि नयाँ पासफ्रेज प्रविष्ट गर्नुहोस्<br>यदि तपाईँले यो पासफ्रेज "
+"बिर्सनुभएमा, तपाईँको सबै गुप्तिकरण गरिएको फाइल र सन्देशहरू पहुँचयोग्य हुने छैन<br></qt>"
+
+#: transactions/kgpggeneratekey.cpp:113
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1 &lt;%2&gt;</b>:<br />Passphrase should include "
+"non alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:<br>पासफ्रेजमा अक्षरांक विहिन क्यारेक्टर र "
+"अनियमित अनुक्रमहरू समाविष्ट हुनुपर्दछ ।"
+
+#: transactions/kgpggeneratekey.cpp:115
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
+"alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:<br>पासफ्रेजमा अक्षरांक विहिन क्यारेक्टर र "
+"अनियमित अनुक्रमहरू समाविष्ट हुनुपर्दछ ।"
+
 #~ msgid "Filter Search"
 #~ msgstr "खोजी फिल्टर गर्नुहोस्"
-
-#, fuzzy
-#~| msgid ""
-#~| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
-#~| "alphanumeric characters and random sequences"
-#~ msgid ""
-#~ "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
-#~ "alphanumeric characters and random sequences</p>"
-#~ msgstr ""
-#~ "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:<br>पासफ्रेजमा अक्षरांक विहिन क्यारेक्टर "
-#~ "र अनियमित अनुक्रमहरू समाविष्ट हुनुपर्दछ ।"
-
-#~ msgid "This image is very large. Use it anyway?"
-#~ msgstr "यो छवि धरै ठूलो छ । जसरी भए पनि यसको प्रयोग गर्नुहुन्छ ?"
-
-#~ msgid "Use Anyway"
-#~ msgstr "जसरी भए पनि प्रयोग गर्नुहोस्"
-
-#~ msgid "Do Not Use"
-#~ msgstr "प्रयोग नगर्नुहोस्"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing "
-#~| "the key expiration in console mode?</qt>"
-#~ msgid ""
-#~ "<qt><b>Changing expiration failed.</b><br />Do you want to try changing "
-#~ "the key expiration in console mode?</qt>"
-#~ msgstr ""
-#~ "<qt><b>म्याद समाप्ति परिवर्तन गर्न असफल ।</b><br>तपाईँले कन्सोल मोडमा कुञ्जीको "
-#~ "म्याद समाप्ति परिवर्तनका लागि प्रयास गर्न चाहनुहुन्छ ?</qt>"
-
-#~ msgid "Enter old passphrase for <b>%1</b>"
-#~ msgstr "<b>%1</b> का लागि पुरानो पासफ्रेज प्रविष्ट गर्नुहोस्"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Enter new passphrase for <b>%1</b><br>If you forget this passphrase "
-#~| "all your encrypted files and messages will be inaccessible<br></qt>"
-#~ msgid ""
-#~ "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
-#~ "all your encrypted files and messages will be inaccessible<br /></qt>"
-#~ msgstr ""
-#~ "<qt> <b>%1</b> का लागि नयाँ पासफ्रेज प्रविष्ट गर्नुहोस्<br>यदि तपाईँले यो पासफ्रेज "
-#~ "बिर्सनुभएमा, तपाईँको सबै गुप्तिकरण गरिएको फाइल र सन्देशहरू पहुँचयोग्य हुने छैन<br></qt>"
 
 #~ msgid "Start Wizard"
 #~ msgstr "विजार्ड सुरु गर्नुहोस्"
@@ -4382,11 +4416,6 @@ msgstr[1] "%1 सहायक कुञ्जी"
 
 #~ msgid "Bad passphrase, signature was not created."
 #~ msgstr "खराब पासफ्रेज, हस्ताक्षर सिर्जना गरिएको थिएन ।"
-
-#, fuzzy
-#~| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
-#~ msgid "<p><b>Bad passphrase</b>. you have %1 tries left.</p>"
-#~ msgstr "<b>खराब पासफ्रेज</b> । तपाईँसँग %1 प्रयास बाँकी छ ।<br>"
 
 #~ msgid "Shred Files"
 #~ msgstr "फाइल टुक्रा पार्नुहोस्"
