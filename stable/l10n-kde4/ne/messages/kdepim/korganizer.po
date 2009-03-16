@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-14 06:22+0100\n"
+"POT-Creation-Date: 2009-03-16 06:13+0100\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1514,7 +1514,7 @@ msgid "Do you really want to cancel?"
 msgstr ""
 
 #: koincidenceeditor.cpp:116 koeditorattachments.cpp:677 koeventeditor.cpp:420
-#: kotodoeditor.cpp:354
+#: kotodoeditor.cpp:356
 #, fuzzy
 #| msgid "KOrganizer Confirmation"
 msgctxt "@title:window"
@@ -1787,13 +1787,13 @@ msgstr "क्यालेन्डर सामाग्री \"%2\" मा �
 msgid "Attendee added"
 msgstr "सहभागी थपियो"
 
-#: views/agendaview/koagendaitem.cpp:911
-#: views/agendaview/koagendaitem.cpp:1014
+#: views/agendaview/koagendaitem.cpp:902
+#: views/agendaview/koagendaitem.cpp:1005
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/agendaview/koagendaitem.cpp:925
+#: views/agendaview/koagendaitem.cpp:916
 #, kde-format
 msgid "- %1"
 msgstr "- %1"
@@ -2185,13 +2185,13 @@ msgctxt "Date from - to"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/timespentview/kotimespentview.cpp:88
+#: views/timespentview/kotimespentview.cpp:134
 #, fuzzy
 #| msgid "Any category"
 msgid "No category"
 msgstr "कुनै पनि कोटि"
 
-#: views/timespentview/kotimespentview.cpp:128
+#: views/timespentview/kotimespentview.cpp:174
 #, fuzzy, kde-format
 #| msgid "1 hour"
 #| msgid_plural "%1 hours"
@@ -2201,7 +2201,7 @@ msgid_plural "%1 hours"
 msgstr[0] "1 घण्टा"
 msgstr[1] "%1 घण्टा"
 
-#: views/timespentview/kotimespentview.cpp:129
+#: views/timespentview/kotimespentview.cpp:175
 #, fuzzy, kde-format
 #| msgid "Redo (%1)"
 msgctxt "percent of hours spent"
@@ -2227,7 +2227,7 @@ msgstr "सन्देश पठाउनुहोस्"
 msgid "Do Not Send"
 msgstr "नपठाउनुहोस्"
 
-#: incidencechanger.cpp:371 kodialogmanager.cpp:126
+#: incidencechanger.cpp:372 kodialogmanager.cpp:126
 #, kde-format
 msgid "Unable to save %1 \"%2\"."
 msgstr "%1 \"%2\" बचत गर्न असमर्थ ।"
@@ -2333,14 +2333,19 @@ msgctxt "@title:tab"
 msgid "Regional"
 msgstr "व्यक्तिगत"
 
-#: koprefsdialog.cpp:226
+#: koprefsdialog.cpp:224
+msgctxt "@title:group"
+msgid "General Time and Date"
+msgstr ""
+
+#: koprefsdialog.cpp:232
 #, fuzzy
 #| msgid "Time zone:"
 msgctxt "@label"
 msgid "Time zone:"
 msgstr "समय क्षेत्र:"
 
-#: koprefsdialog.cpp:228
+#: koprefsdialog.cpp:234
 #, fuzzy
 #| msgid ""
 #| "Select your time zone from the list of locations on this drop down box. "
@@ -2356,42 +2361,49 @@ msgstr ""
 "सूचीकृत छैन भने, उही समय क्षेत्र साझा हुने एउटा शहर चयन गर्नुहोस् । केडीई आयोजकले डेलाइट "
 "बचतका लागि स्वत: समायोजन गर्नेछ ।"
 
-#: koprefsdialog.cpp:239
+#: koprefsdialog.cpp:245
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "@item:inlistbox unknown timezone"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: koprefsdialog.cpp:254
+#: koprefsdialog.cpp:260
 #, fuzzy
 #| msgid "[No selection]"
 msgctxt "@item:inlistbox no timezone selected"
 msgid "[No selection]"
 msgstr "[चयन गरिएको छैन]"
 
-#: koprefsdialog.cpp:273
+#: koprefsdialog.cpp:280
+#, fuzzy
+#| msgid "Holiday"
+msgctxt "@title:group"
+msgid "Holidays"
+msgstr "छुट्टि"
+
+#: koprefsdialog.cpp:290
 #, fuzzy
 #| msgid "Use holiday region:"
 msgctxt "@label"
 msgid "Use holiday region:"
 msgstr "बिदा क्षेत्र प्रयोग गर्नुहोस्:"
 
-#: koprefsdialog.cpp:308
+#: koprefsdialog.cpp:325
 #, fuzzy
 #| msgid "(None)"
 msgctxt "@item:inlistbox do not use holidays"
 msgid "(None)"
 msgstr "(कुनै पनि होइन)"
 
-#: koprefsdialog.cpp:325
+#: koprefsdialog.cpp:337
 #, fuzzy
 #| msgid "Working Hours"
 msgctxt "@title:group"
 msgid "Working Hours"
 msgstr "कार्य घण्टा"
 
-#: koprefsdialog.cpp:346
+#: koprefsdialog.cpp:358
 #, fuzzy
 #| msgid ""
 #| "Check this box to make KOrganizer mark the working hours for this day of "
@@ -2407,14 +2419,28 @@ msgstr ""
 "गर्नुहोस् । यदि यो तपाईँको कार्य दिन भएमा, यो बाकस जाँच गर्नुहोस्, वा कार्य घण्टा रङले "
 "चिन्ह लागाइने छैनन् ।"
 
-#: koprefsdialog.cpp:384
+#: koprefsdialog.cpp:396
 #, fuzzy
 #| msgid "Default Calendar"
 msgctxt "@title:tab"
 msgid "Default Values"
 msgstr "पूर्वनिर्धारित क्यालेन्डर"
 
-#: koprefsdialog.cpp:399
+#: koprefsdialog.cpp:401
+#, fuzzy
+#| msgid "Appointment"
+msgctxt "@title:group"
+msgid "Appointments"
+msgstr "नियुक्ति"
+
+#: koprefsdialog.cpp:417
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@title:group"
+msgid "Reminders"
+msgstr "स्मरणकर्ता"
+
+#: koprefsdialog.cpp:423
 #, fuzzy
 #| msgid "1 minute"
 #| msgid_plural "%1 minutes"
@@ -2422,70 +2448,70 @@ msgctxt "@item:inlistbox"
 msgid "1 minute"
 msgstr "1 मिनेट"
 
-#: koprefsdialog.cpp:400
+#: koprefsdialog.cpp:424
 #, fuzzy
 #| msgid "5 minutes"
 msgctxt "@item:inlistbox"
 msgid "5 minutes"
 msgstr "५ मिनेट"
 
-#: koprefsdialog.cpp:401
+#: koprefsdialog.cpp:425
 #, fuzzy
 #| msgid "10 minutes"
 msgctxt "@item:inlistbox"
 msgid "10 minutes"
 msgstr "१० मिनेट"
 
-#: koprefsdialog.cpp:402
+#: koprefsdialog.cpp:426
 #, fuzzy
 #| msgid "15 minutes"
 msgctxt "@item:inlistbox"
 msgid "15 minutes"
 msgstr "१५ मिनेट"
 
-#: koprefsdialog.cpp:403
+#: koprefsdialog.cpp:427
 #, fuzzy
 #| msgid "30 minutes"
 msgctxt "@item:inlistbox"
 msgid "30 minutes"
 msgstr "३० मिनेट"
 
-#: koprefsdialog.cpp:404
+#: koprefsdialog.cpp:428
 #, fuzzy
 #| msgid "Default reminder time:"
 msgctxt "@label"
 msgid "Default reminder time:"
 msgstr "पूर्वनिर्धारित स्मरणकर्ता समय:"
 
-#: koprefsdialog.cpp:512
+#: koprefsdialog.cpp:536
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general settings"
 msgid "General"
 msgstr "साधारण"
 
-#: koprefsdialog.cpp:529
+#: koprefsdialog.cpp:553
 #, fuzzy
 #| msgid "Date Navigator"
 msgctxt "@title:group"
 msgid "Date Navigator"
 msgstr "मिति नेभिगेटर"
 
-#: koprefsdialog.cpp:541
+#: koprefsdialog.cpp:565
 #, fuzzy
 #| msgid "Agenda View"
 msgctxt "@title:tab"
 msgid "Agenda View"
 msgstr "एजेन्डा दृश्य"
 
-#: koprefsdialog.cpp:546
+#: koprefsdialog.cpp:570
 #, fuzzy
 #| msgid "Display Options"
 msgctxt "@title:group"
 msgid "Display Options"
 msgstr "प्रदर्शन विकल्प"
 
-#: koprefsdialog.cpp:554
+#: koprefsdialog.cpp:578
 #, fuzzy
 #| msgctxt "suffix in the hour size spin box"
 #| msgid " pixel"
@@ -2493,7 +2519,7 @@ msgctxt "@label suffix in the hour size spin box"
 msgid " pixel"
 msgstr " पिक्सेल"
 
-#: koprefsdialog.cpp:566
+#: koprefsdialog.cpp:590
 #, fuzzy
 #| msgctxt "suffix in the N days spin box"
 #| msgid " days"
@@ -2501,33 +2527,33 @@ msgctxt "@label suffix in the N days spin box"
 msgid " days"
 msgstr " दिन"
 
-#: koprefsdialog.cpp:597
+#: koprefsdialog.cpp:621
 #, fuzzy
 #| msgid "Month View"
 msgctxt "@title:tab"
 msgid "Month View"
 msgstr "महिना दृश्य"
 
-#: koprefsdialog.cpp:616
+#: koprefsdialog.cpp:640
 #, fuzzy
 #| msgid "To-do View"
 msgctxt "@title:tab"
 msgid "Todo View"
 msgstr "गर्नुपर्ने कार्यको दृश्य"
 
-#: koprefsdialog.cpp:655
+#: koprefsdialog.cpp:679
 msgctxt "@title:tab"
 msgid "Colors"
 msgstr ""
 
-#: koprefsdialog.cpp:690
+#: koprefsdialog.cpp:714
 #, fuzzy
 #| msgid "Categories"
 msgctxt "@title:group"
 msgid "Categories"
 msgstr "कोटि"
 
-#: koprefsdialog.cpp:700
+#: koprefsdialog.cpp:724
 #, fuzzy
 #| msgid ""
 #| "Select here the event category you want to modify. You can change the "
@@ -2540,7 +2566,7 @@ msgstr ""
 "यहाँ तपाईँले परिमार्जन गर्न चाहेको घटना कोटि चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग गरेर "
 "चयन गरिएको कोटि रङ परिवर्तन गर्न सक्नुहुन्छ ।"
 
-#: koprefsdialog.cpp:709
+#: koprefsdialog.cpp:733
 #, fuzzy
 #| msgid ""
 #| "Choose here the color of the event category selected using the combo box "
@@ -2551,14 +2577,14 @@ msgid ""
 "above."
 msgstr "माथिको कम्बो बाकस प्रयोग गरेर यहाँ चयन गरिएको घटना कोटिको रङ रोज्नुहोस् ।"
 
-#: koprefsdialog.cpp:717
+#: koprefsdialog.cpp:741
 #, fuzzy
 #| msgid "Resources"
 msgctxt "@title:group"
 msgid "Resources"
 msgstr "स्रोत"
 
-#: koprefsdialog.cpp:726
+#: koprefsdialog.cpp:750
 #, fuzzy
 #| msgid ""
 #| "Select here resource you want to modify. You can change the selected "
@@ -2571,7 +2597,7 @@ msgstr ""
 "तपाईँले परिमार्जन गर्न चाहेको स्रोत यहाँ चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग गरेर चयन "
 "गरिएको स्रोत रङ परिवर्तन गर्न सक्नुहुन्छ ।"
 
-#: koprefsdialog.cpp:735
+#: koprefsdialog.cpp:759
 #, fuzzy
 #| msgid ""
 #| "Choose here the color of the resource selected using the combo box above."
@@ -2580,42 +2606,42 @@ msgid ""
 "Choose here the color of the resource selected using the combo box above."
 msgstr "यहाँ माथिको कम्बो बाकस प्रयोग गरेर चयन गरिएको स्रोतको रङ रोज्नुहोस् ।"
 
-#: koprefsdialog.cpp:746
+#: koprefsdialog.cpp:770
 #, fuzzy
 #| msgid "month(s)"
 msgctxt "@title:tab"
 msgid "Fonts"
 msgstr "महिना"
 
-#: koprefsdialog.cpp:761 koprefsdialog.cpp:769
+#: koprefsdialog.cpp:785 koprefsdialog.cpp:793
 #, fuzzy
 #| msgid "Event text"
 msgctxt "@label"
 msgid "Event text"
 msgstr "घटना पाठ"
 
-#: koprefsdialog.cpp:919
+#: koprefsdialog.cpp:943
 #, fuzzy
 #| msgid "Scheduler Mail Client"
 msgctxt "@title"
 msgid "Scheduler Mail Client"
 msgstr "अनुसूचक मेल क्लाइन्ट"
 
-#: koprefsdialog.cpp:921
+#: koprefsdialog.cpp:945
 #, fuzzy
 #| msgid "Mail client"
 msgctxt "@option:radio"
 msgid "Mail client"
 msgstr "मेल क्लाइन्ट"
 
-#: koprefsdialog.cpp:927
+#: koprefsdialog.cpp:951
 #, fuzzy
 #| msgid "Additional email addresses:"
 msgctxt "@label"
 msgid "Additional email addresses:"
 msgstr "थप इमेल ठेगाना:"
 
-#: koprefsdialog.cpp:929
+#: koprefsdialog.cpp:953
 #, fuzzy
 #| msgid ""
 #| "Add, edit or remove additional e-mails addresses here. These email "
@@ -2635,21 +2661,21 @@ msgstr ""
 "घटनाको सहभागी हुनुहुन्छ, तर त्यहाँ अन्य इमेल ठेगाना प्रयोग गर्नुहुन्छ भने, यहाँ तपाईँले यी "
 "ठेगाना सूचीकरण गर्नुपर्छ त्यसैले केडीई आयोजकले यसलाई तपाईँको रूपमा पहिचान गर्छ ।"
 
-#: koprefsdialog.cpp:941
+#: koprefsdialog.cpp:965
 #, fuzzy
 #| msgid "Email"
 msgctxt "@title:column email addresses"
 msgid "Email"
 msgstr "इमेल"
 
-#: koprefsdialog.cpp:944
+#: koprefsdialog.cpp:968
 #, fuzzy
 #| msgid "Additional email address:"
 msgctxt "@label"
 msgid "Additional email address:"
 msgstr "थप इमेल ठेगाना:"
 
-#: koprefsdialog.cpp:946
+#: koprefsdialog.cpp:970
 #, fuzzy
 #| msgid ""
 #| "Edit additional e-mails addresses here. To edit an address select it from "
@@ -2665,14 +2691,14 @@ msgstr ""
 "गर्नुहोस् वा तलको \"नयाँ\" बटन थिच्नुहोस् । यी इमेल ठेगाना तपाईँले एउटा सेटमा व्यक्तिगत "
 "प्राथमिकतामा थपेका अतिरिक्त ठेगाना मात्र हुन् ।"
 
-#: koprefsdialog.cpp:959
+#: koprefsdialog.cpp:983
 #, fuzzy
 #| msgid "New"
 msgctxt "@action:button add a new email address"
 msgid "New"
 msgstr "नयाँ"
 
-#: koprefsdialog.cpp:962
+#: koprefsdialog.cpp:986
 #, fuzzy
 #| msgid ""
 #| "Press this button to add a new entry to the additional e-mail addresses "
@@ -2685,35 +2711,35 @@ msgstr ""
 "थप इमेल ठेगाना सूचीमा नयाँ प्रविष्टि थप्नका लागि यो बटन थिच्नुहोस् । नयाँ प्रविष्ट सम्पादन "
 "गर्नका लागि माथिको सम्पादन बाकस प्रयोग गर्नुहोस् ।"
 
-#: koprefsdialog.cpp:967
+#: koprefsdialog.cpp:991
 #, fuzzy
 #| msgid "Remove"
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
-#: koprefsdialog.cpp:1010
+#: koprefsdialog.cpp:1034
 #, fuzzy
 #| msgid "(EmptyEmail)"
 msgctxt "@label"
 msgid "(EmptyEmail)"
 msgstr "(खाली इमेल)"
 
-#: koprefsdialog.cpp:1230
+#: koprefsdialog.cpp:1254
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column plugin name"
 msgid "Name"
 msgstr "नाम"
 
-#: koprefsdialog.cpp:1249
+#: koprefsdialog.cpp:1273
 #, fuzzy
 #| msgid "Configure &Plugin..."
 msgctxt "@action:button"
 msgid "Configure &Plugin..."
 msgstr "प्लगइन कन्फिगर गर्नुहोस्..."
 
-#: koprefsdialog.cpp:1252
+#: koprefsdialog.cpp:1276
 #, fuzzy
 #| msgid ""
 #| "This button allows you to configure the plugin that you have selected in "
@@ -2724,56 +2750,56 @@ msgid ""
 "list above"
 msgstr "यो बटनले तपाईँले माथको सूचीमा चयन गरेको प्लगइन कन्फिगर गर्न अनुमति दिन्छ"
 
-#: koprefsdialog.cpp:1259
+#: koprefsdialog.cpp:1283
 #, fuzzy
 #| msgid "Destination"
 msgctxt "@title:group"
 msgid "Position"
 msgstr "गन्तव्य"
 
-#: koprefsdialog.cpp:1261
+#: koprefsdialog.cpp:1285
 #, fuzzy
 #| msgid "Show in context"
 msgctxt "@option:check"
 msgid "Show in the month view"
 msgstr "सन्दर्भमा देखाउनुहोस्"
 
-#: koprefsdialog.cpp:1263
+#: koprefsdialog.cpp:1287
 #, fuzzy
 #| msgid "Show in context"
 msgctxt "@option:check"
 msgid "Show at the top of the agenda views"
 msgstr "सन्दर्भमा देखाउनुहोस्"
 
-#: koprefsdialog.cpp:1265
+#: koprefsdialog.cpp:1289
 #, fuzzy
 #| msgid "Show in context"
 msgctxt "@option:check"
 msgid "Show at the bottom of the agenda views"
 msgstr "सन्दर्भमा देखाउनुहोस्"
 
-#: koprefsdialog.cpp:1298
+#: koprefsdialog.cpp:1322
 #, fuzzy
 #| msgid "Calendar"
 msgctxt "@title:group"
 msgid "Calendar Decorations"
 msgstr "क्यालेन्डर"
 
-#: koprefsdialog.cpp:1301
+#: koprefsdialog.cpp:1325
 #, fuzzy
 #| msgid "Print list"
 msgctxt "@title:group"
 msgid "Print Plugins"
 msgstr "मुद्रण सूची"
 
-#: koprefsdialog.cpp:1304
+#: koprefsdialog.cpp:1328
 #, fuzzy
 #| msgid "Other Options"
 msgctxt "@title:group"
 msgid "Other Plugins"
 msgstr "अन्य विकल्प"
 
-#: koprefsdialog.cpp:1372
+#: koprefsdialog.cpp:1396
 #, fuzzy
 #| msgid "Unable to configure this plugin"
 msgctxt "@info"
@@ -3004,24 +3030,24 @@ msgctxt "advanced alarm settings"
 msgid "Advanced..."
 msgstr "उन्नत"
 
-#: koeditorgeneral.cpp:409
+#: koeditorgeneral.cpp:411
 #, kde-format
 msgid "1 reminder configured"
 msgid_plural "%1 reminders configured"
 msgstr[0] "1 स्मरणकर्ता कन्फिगर गरियो"
 msgstr[1] "%1 स्मरणकर्ता कन्फिगर गरियो"
 
-#: koeditorgeneral.cpp:436
+#: koeditorgeneral.cpp:438
 msgid "1 advanced reminder configured"
 msgstr "१ उन्नत स्मरणकर्ता कन्फिगर गरियो"
 
-#: koeditorgeneral.cpp:577
+#: koeditorgeneral.cpp:579
 #, fuzzy
 #| msgid "No Attendees"
 msgid "No attendees"
 msgstr "सहभागी छैन"
 
-#: koeditorgeneral.cpp:579
+#: koeditorgeneral.cpp:581
 #, fuzzy, kde-format
 #| msgid "1 Attendee:"
 #| msgid_plural "%1 Attendees:"
@@ -3030,7 +3056,7 @@ msgid_plural "%1 attendees"
 msgstr[0] "1 सहभागी:"
 msgstr[1] "%1 सहभागी:"
 
-#: koeditorgeneral.cpp:587
+#: koeditorgeneral.cpp:589
 #, fuzzy
 #| msgid "Please specify a valid start date."
 msgid "Please specify a summary."
@@ -3745,49 +3771,49 @@ msgstr "हाल मेट्नुहोस्"
 msgid "Delete &All"
 msgstr "सबै मेट्नुहोस्"
 
-#: calendarview.cpp:2248
+#: calendarview.cpp:2250
 msgid "Delete all completed to-dos?"
 msgstr "समाप्त भएका सबै गर्नुपर्ने कार्य मेट्नुहुन्छ ?"
 
-#: calendarview.cpp:2249
+#: calendarview.cpp:2251
 msgid "Purge To-dos"
 msgstr "गर्नुपर्ने कार्य शूद्धीकरण गर्नुहोस्"
 
-#: calendarview.cpp:2250
+#: calendarview.cpp:2252
 msgid "Purge"
 msgstr "शुद्धीकरण गर्नुहोस्"
 
-#: calendarview.cpp:2254
+#: calendarview.cpp:2256
 msgid "Purging completed to-dos"
 msgstr "समाप्त भएको गर्नुपर्ने कार्य शुद्धीकरण गर्दैछ"
 
-#: calendarview.cpp:2271
+#: calendarview.cpp:2273
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "सम्पन्न नभएका शाखामा गर्नुपर्ने कार्य शुद्धिकरण गर्न असमर्थ ।"
 
-#: calendarview.cpp:2272
+#: calendarview.cpp:2274
 msgid "Delete To-do"
 msgstr "गर्नुपर्ने कार्य मेट्नुहोस्"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2283
 msgid "Unable to edit item: it is locked by another process."
 msgstr "वस्तु सम्पादन गर्न असमर्थ: यो अन्य प्रक्रियाद्वारा ताल्चा लगाइएको छ ।"
 
-#: calendarview.cpp:2314
+#: calendarview.cpp:2316
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "%1 मा वस्तु प्रतिलिपि गर्न असमर्थ ।"
 
-#: calendarview.cpp:2315
+#: calendarview.cpp:2317
 msgid "Copying Failed"
 msgstr "प्रतिलिपि गर्न असफल"
 
-#: calendarview.cpp:2359
+#: calendarview.cpp:2361
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "  %1 मा वस्तु सार्न असमर्थ ।"
 
-#: calendarview.cpp:2360
+#: calendarview.cpp:2362
 msgid "Moving Failed"
 msgstr "सार्न असफल"
 
@@ -9215,7 +9241,7 @@ msgid ""
 "The General tab allows you to set the most common options for the event."
 msgstr "साधारण ट्याबले तपाईँलाई घटनाका लागि सबैभन्दा साझा विकल्प सेट गर्न अनुमति दिन्छ ।"
 
-#: koeventeditor.cpp:153 kotodoeditor.cpp:120
+#: koeventeditor.cpp:153 kotodoeditor.cpp:122
 #, fuzzy
 #| msgid "Details"
 msgctxt "@title:tab"
@@ -9229,7 +9255,7 @@ msgctxt "@title:tab general event settings"
 msgid "&General"
 msgstr "साधारण"
 
-#: koeventeditor.cpp:198 kotodoeditor.cpp:167
+#: koeventeditor.cpp:198 kotodoeditor.cpp:169
 #, fuzzy
 #| msgid "Rec&urrence"
 msgctxt "@title:tab"
@@ -9299,7 +9325,7 @@ msgstr "सहभागी छैन"
 msgid "My counter proposal for: %1"
 msgstr "स्तम्भ नम्बर %1"
 
-#: koeventeditor.cpp:419 kotodoeditor.cpp:353
+#: koeventeditor.cpp:419 kotodoeditor.cpp:355
 #, fuzzy
 #| msgid "This item will be permanently deleted."
 msgctxt "@info"
@@ -9320,35 +9346,35 @@ msgctxt "@info"
 msgid "Template does not contain a valid event."
 msgstr "टेम्प्लेटले वैध घटना समावेश गर्दैन ।"
 
-#: kotodoeditor.cpp:106
+#: kotodoeditor.cpp:108
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general to-do settings"
 msgid "General"
 msgstr "साधारण"
 
-#: kotodoeditor.cpp:136
+#: kotodoeditor.cpp:138
 #, fuzzy
 #| msgid "&General"
 msgctxt "@title:tab general to-do settings"
 msgid "&General"
 msgstr "साधारण"
 
-#: kotodoeditor.cpp:191
+#: kotodoeditor.cpp:193
 #, fuzzy, kde-format
 #| msgid "Edit To-do"
 msgctxt "@title:window"
 msgid "Edit To-do: %1"
 msgstr "गर्नुपर्ने कार्य सम्पादन गर्नुहोस्"
 
-#: kotodoeditor.cpp:199
+#: kotodoeditor.cpp:201
 #, fuzzy
 #| msgid "New To-do"
 msgctxt "@title:window"
 msgid "New To-do"
 msgstr "गर्नुपर्ने नयाँ कार्य"
 
-#: kotodoeditor.cpp:371
+#: kotodoeditor.cpp:373
 #, fuzzy
 #| msgid "Template does not contain a valid to-do."
 msgctxt "@info"
