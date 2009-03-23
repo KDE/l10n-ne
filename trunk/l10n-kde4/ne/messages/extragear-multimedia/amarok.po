@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-22 10:25+0100\n"
+"POT-Creation-Date: 2009-03-23 10:28+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:112
-#: context/applets/currenttrack/CurrentTrack.cpp:129 widgets/Osd.cpp:556
+#: context/applets/currenttrack/CurrentTrack.cpp:129 widgets/Osd.cpp:558
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
-#: mac/GrowlInterface.cpp:55 widgets/Osd.cpp:579
+#: mac/GrowlInterface.cpp:55 widgets/Osd.cpp:581
 msgid "No information available for this track"
 msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
 
@@ -543,7 +543,7 @@ msgid "Playcount:"
 msgstr "प्ले गणना:"
 
 #: context/applets/albums/AlbumsView.cpp:109 Systray.cpp:219
-#: browsers/collectionbrowser/CollectionTreeView.cpp:611
+#: browsers/collectionbrowser/CollectionTreeView.cpp:607
 #: browsers/filebrowser/MyDirOperator.cpp:273
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:382
 #: browsers/playlistbrowser/PodcastModel.cpp:692
@@ -555,7 +555,7 @@ msgid "&Append to Playlist"
 msgstr "प्ले सूचीमा थप्नुहोस् चयनगरीएको एल्बम थप्नुहोस्"
 
 #: context/applets/albums/AlbumsView.cpp:110
-#: browsers/collectionbrowser/CollectionTreeView.cpp:619
+#: browsers/collectionbrowser/CollectionTreeView.cpp:615
 #: browsers/filebrowser/MyDirOperator.cpp:274
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:388
 #: browsers/playlistbrowser/PodcastModel.cpp:705
@@ -567,7 +567,7 @@ msgid "&Load"
 msgstr "लोड गर्नुहोस्"
 
 #: context/applets/albums/AlbumsView.cpp:111
-#: browsers/collectionbrowser/CollectionTreeView.cpp:627
+#: browsers/collectionbrowser/CollectionTreeView.cpp:623
 #, fuzzy
 #| msgid "&Queue Track"
 msgid "&Queue"
@@ -2751,21 +2751,21 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Move to Collection"
 msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
 
-#: browsers/collectionbrowser/CollectionTreeView.cpp:397
+#: browsers/collectionbrowser/CollectionTreeView.cpp:393
 #: services/lastfm/LastFmTreeView.cpp:204
 #, fuzzy
 #| msgid "&Configure..."
 msgid "More..."
 msgstr "कन्फिगर गर्नुहोस्..."
 
-#: browsers/collectionbrowser/CollectionTreeView.cpp:645
+#: browsers/collectionbrowser/CollectionTreeView.cpp:641
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
 msgid "&Edit Track Details"
 msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
-#: browsers/collectionbrowser/CollectionTreeView.cpp:678
+#: browsers/collectionbrowser/CollectionTreeView.cpp:674
 #, fuzzy
 #| msgid "Organize Files"
 msgctxt "Organize Files"
@@ -2943,12 +2943,14 @@ msgctxt "The Name is not known"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: browsers/collectionbrowser/CollectionTreeItem.cpp:181
+#: browsers/collectionbrowser/CollectionTreeItem.cpp:182
 #, fuzzy, kde-format
-#| msgid "%1 track"
-#| msgid_plural "%1 tracks"
-msgid "%1 Tracks"
-msgstr "%1 ट्रयाक"
+#| msgid "1 Track"
+#| msgid_plural "Information for %1 Tracks"
+msgid "1 Track"
+msgid_plural "%1 Tracks"
+msgstr[0] "%1 ट्रयाकको लागि सूचना"
+msgstr[1] "%1 ट्रयाकको लागि सूचना"
 
 #: browsers/filebrowser/FileBrowser.cpp:88
 msgid "Bookmarks"
@@ -8521,38 +8523,27 @@ msgstr "मौन"
 msgid "Volume Control"
 msgstr "भोल्युम नियन्त्रण"
 
-#: widgets/Osd.cpp:118
+#: widgets/Osd.cpp:119
 msgid "Rating changed"
 msgstr "मूल्याङ्कन वजन गरियो"
 
-#: widgets/Osd.cpp:131
-#, kde-format
-msgid "Volume: %1%"
+#: widgets/Osd.cpp:134
+#, fuzzy, kde-format
+#| msgid "Volume: %1%"
+msgid "Volume: %1% %2"
 msgstr "भोल्युम: %1%"
 
-#: widgets/Osd.cpp:131
+#: widgets/Osd.cpp:191
 #, fuzzy
-#| msgid "Mute"
-msgctxt "State, as in, The playback is silent"
-msgid "Mute"
-msgstr "मौन"
-
-#: widgets/Osd.cpp:188 widgets/Osd.cpp:189
-msgid "Volume: 100%"
+#| msgid "Volume: 100%"
+msgid "Volume: 100% (muted)"
 msgstr "भोल्युम: १००%"
 
-#: widgets/Osd.cpp:188 widgets/Osd.cpp:189
-#, fuzzy
-#| msgid "Mute"
-msgctxt "State, as in, the playback is silent"
-msgid "Mute"
-msgstr "मौन"
-
-#: widgets/Osd.cpp:419
+#: widgets/Osd.cpp:421
 msgid "OSD Preview - drag to reposition"
 msgstr "ओएसडी पूर्वावलोकन - पुन: स्थिति गर्न तान्नुहोस्"
 
-#: widgets/Osd.cpp:646
+#: widgets/Osd.cpp:654
 msgid "Paused"
 msgstr "पज गरियो"
 
@@ -9198,6 +9189,24 @@ msgstr "आवरण छवि"
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "कलाकार"
+
+#, fuzzy
+#~| msgid "%1 track"
+#~| msgid_plural "%1 tracks"
+#~ msgid "%1 Tracks"
+#~ msgstr "%1 ट्रयाक"
+
+#, fuzzy
+#~| msgid "Mute"
+#~ msgctxt "State, as in, The playback is silent"
+#~ msgid "Mute"
+#~ msgstr "मौन"
+
+#, fuzzy
+#~| msgid "Mute"
+#~ msgctxt "State, as in, the playback is silent"
+#~ msgid "Mute"
+#~ msgstr "मौन"
 
 #~ msgid "Queue Manager"
 #~ msgstr "लाम प्रबन्धक"
