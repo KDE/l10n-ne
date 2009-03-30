@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-29 11:44+0200\n"
+"POT-Creation-Date: 2009-03-30 10:52+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:112
-#: context/applets/currenttrack/CurrentTrack.cpp:91 widgets/Osd.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:93 widgets/Osd.cpp:558
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
@@ -133,8 +133,13 @@ msgid "Stream (%1)"
 msgstr "प्रवाह"
 
 #: meta/capabilities/TimecodeWriteCapability.cpp:105
-#, kde-format
-msgid "%1 - Playback stopped at %2"
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgid "%1 - Stopped %2"
+msgstr "%1 - %2"
+
+#: meta/capabilities/TimecodeWriteCapability.cpp:110
+msgid "Playback Ended Markers"
 msgstr ""
 
 #: meta/DynamicPlaylist.cpp:38
@@ -471,25 +476,25 @@ msgid "Wikipedia Other Languages: <br/>"
 msgstr "विकिपेडिया अन्य भाषाहरू"
 
 #: context/toolbar/AppletItemOverlay.cpp:101
-#: context/toolbar/AppletToolbarAppletItem.cpp:46
+#: context/toolbar/AppletToolbarAppletItem.cpp:48
 #, fuzzy
 #| msgid "Remove selected"
 msgid "Remove Applet"
 msgstr "चयन गरिएको हटाउनुहोस्"
 
-#: context/toolbar/AppletToolbarConfigItem.cpp:30
+#: context/toolbar/AppletToolbarConfigItem.cpp:33
 #, fuzzy
 #| msgid "&Configure..."
 msgid "Configure Applets..."
 msgstr "कन्फिगर गर्नुहोस्..."
 
-#: context/toolbar/AppletToolbarAddItem.cpp:40
+#: context/toolbar/AppletToolbarAddItem.cpp:42
 #, fuzzy
 #| msgid "Add Directory"
 msgid "Add Applets..."
 msgstr "डाइरेक्टरी थप्नुहोस्"
 
-#: context/toolbar/AppletToolbarAddItem.cpp:64
+#: context/toolbar/AppletToolbarAddItem.cpp:66
 #: context/containments/oldcontainment/ColumnContainment.cpp:95
 #, fuzzy
 #| msgid "Add Directory"
@@ -502,27 +507,26 @@ msgstr "डाइरेक्टरी थप्नुहोस्"
 msgid "Lyrics data could not be parsed"
 msgstr "रियो कर्म खोल्न सकेन"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:70
+#: context/applets/currenttrack/CurrentTrack.cpp:72
 #, fuzzy
 #| msgid "Modify scheme"
 msgctxt "What artist is this track by"
 msgid "By"
 msgstr "योजना परिमार्जन गर्नुहोस्"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:71
+#: context/applets/currenttrack/CurrentTrack.cpp:73
 msgctxt "What album is this track on"
 msgid "On"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:98
+#: context/applets/currenttrack/CurrentTrack.cpp:100
 #: playlist/PlaylistDefines.h:88
 #, fuzzy
 #| msgid "Playcount"
 msgid "Play count"
 msgstr "प्ले गणना"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:99
-#: context/widgets/TrackWidget.cpp:38 Systray.cpp:147
+#: context/applets/currenttrack/CurrentTrack.cpp:101 Systray.cpp:147
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
 #: playlist/PlaylistDefines.h:91 playlist/PlaylistModel.cpp:702
@@ -530,20 +534,20 @@ msgstr "प्ले गणना"
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:100 Systray.cpp:177
+#: context/applets/currenttrack/CurrentTrack.cpp:102 Systray.cpp:177
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:106
+#: context/applets/currenttrack/CurrentTrack.cpp:108
 #: playlist/PlaylistDefines.h:85
 #, fuzzy
 #| msgid "Last Played"
 msgid "Last played"
 msgstr "अन्तिममा बजाएको"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:107
+#: context/applets/currenttrack/CurrentTrack.cpp:109
 #, fuzzy
 #| msgid "Favorite Tracks"
 msgid "Favorite tracks"
@@ -707,10 +711,17 @@ msgstr "निषेधित"
 msgid "Install Applets"
 msgstr "स्क्रिप्ट स्थापना गर्नुहोस्"
 
-#: context/widgets/TrackWidget.cpp:117
+#: context/widgets/TrackWidget.cpp:35
+#, fuzzy
+#| msgid "Score:"
+msgctxt "Score of a track"
+msgid "Score:"
+msgstr "प्राप्ताङ्क:"
+
+#: context/widgets/TrackWidget.cpp:120
 #, fuzzy, kde-format
 #| msgid "%1 GB %2 (x%3)"
-msgid "%1 - %2 ( %3 )"
+msgid "%1 - %2 (%3)"
 msgstr "%1 गिगाबाइट %2 (x%3)"
 
 #: ActionClasses.cpp:76
@@ -2766,10 +2777,10 @@ msgstr "कन्फिगर गर्नुहोस्..."
 
 #: browsers/CollectionTreeView.cpp:597
 #, fuzzy
-#| msgid "Overwrite Playlist?"
+#| msgid "Repeat Playlist"
 msgctxt "Replace the currently loaded tracks with these"
-msgid "&Overwrite Playlist"
-msgstr "बजाउने सूची अधिलेखन गर्नुहुन्छ ?"
+msgid "&Replace Playlist"
+msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
 #: browsers/CollectionTreeView.cpp:623
 #, fuzzy
@@ -8434,7 +8445,7 @@ msgstr "बहुविध पृष्ठभूमि-कार्यहरू 
 msgid "Abort all background operations"
 msgstr "सबै पृष्ठभूमि-सञ्चालनहरू परित्याग गर्नुहोस्"
 
-#: amarokurls/BookmarkModel.cpp:437
+#: amarokurls/BookmarkModel.cpp:438
 msgid "New Group"
 msgstr ""
 
@@ -9191,6 +9202,12 @@ msgstr "आवरण छवि"
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "कलाकार"
+
+#, fuzzy
+#~| msgid "Overwrite Playlist?"
+#~ msgctxt "Replace the currently loaded tracks with these"
+#~ msgid "&Overwrite Playlist"
+#~ msgstr "बजाउने सूची अधिलेखन गर्नुहुन्छ ?"
 
 #~ msgid "Playcount:"
 #~ msgstr "प्ले गणना:"
@@ -11992,11 +12009,6 @@ msgstr "कलाकार"
 
 #~ msgid "&Mode"
 #~ msgstr "मोड"
-
-#, fuzzy
-#~| msgid "%1 - %2"
-#~ msgid "%1  -  %2"
-#~ msgstr "%1 - %2"
 
 #~ msgid ""
 #~ "Sorry, the '%1' could not be loaded, instead we have loaded the '%2'."
