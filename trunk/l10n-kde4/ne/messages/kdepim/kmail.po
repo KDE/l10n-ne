@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-01 11:20+0200\n"
+"POT-Creation-Date: 2009-04-02 11:29+0200\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1295,7 +1295,7 @@ msgstr "नयाँ वा परिवर्तित: %1 (गोप्य क
 msgid "New or changed: %1"
 msgstr "नयाँ वा परिवर्तित: %1"
 
-#: objecttreeparser.cpp:1716 kmcommands.cpp:3071 kmcomposewin.cpp:4258
+#: objecttreeparser.cpp:1716 kmcommands.cpp:3071 kmcomposewin.cpp:4273
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -1306,12 +1306,12 @@ msgstr ""
 #: objecttreeparser.cpp:1722 messagecomposer.cpp:591 messagecomposer.cpp:599
 #: messagecomposer.cpp:613 kmcommands.cpp:3073 kmcommands.cpp:3078
 #: kmcommands.cpp:3087 kmcommands.cpp:3096 kmcommands.cpp:3114
-#: kmcommands.cpp:3125 kmcommands.cpp:3165 kmcomposewin.cpp:4260
-#: kmcomposewin.cpp:4265 kmcomposewin.cpp:4274
+#: kmcommands.cpp:3125 kmcommands.cpp:3165 kmcomposewin.cpp:4275
+#: kmcomposewin.cpp:4280 kmcomposewin.cpp:4289
 msgid "Chiasmus Backend Error"
 msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
 
-#: objecttreeparser.cpp:1728 kmcommands.cpp:3084 kmcomposewin.cpp:4271
+#: objecttreeparser.cpp:1728 kmcommands.cpp:3084 kmcomposewin.cpp:4286
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -1319,7 +1319,7 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x प्राप्ति कुञ्जी \" प्रकार्यले स्ट्रिङ सूची "
 "फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
 
-#: objecttreeparser.cpp:1736 kmcommands.cpp:3093 kmcomposewin.cpp:4280
+#: objecttreeparser.cpp:1736 kmcommands.cpp:3093 kmcomposewin.cpp:4295
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -9761,12 +9761,12 @@ msgid ""
 "all available addresses."
 msgstr "यो बटनले उपलब्ध सबै ठेगाना मध्येका प्रापाक चयन गर्ने सक्ने एउटा फरक संवाद खोल्छ ।"
 
-#: redirectdialog.cpp:85 kmcomposewin.cpp:3755
+#: redirectdialog.cpp:85 kmcomposewin.cpp:3770
 msgid "&Send Now"
 msgstr "अहिले पठाउनुहोस्"
 
 #: redirectdialog.cpp:86 kmcomposewin.cpp:1005 kmcomposewin.cpp:1014
-#: kmcomposewin.cpp:3756
+#: kmcomposewin.cpp:3771
 msgid "Send &Later"
 msgstr "पछि पठाउनुहोस्"
 
@@ -10633,8 +10633,10 @@ msgstr "खाता नाम:"
 #. i18n: file: ui/popsettings.ui:67
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:216 rc.cpp:517
-msgid "Ho&st:"
-msgstr "होस्ट:"
+#, fuzzy
+#| msgid "Incoming server:"
+msgid "Incoming mail &server:"
+msgstr "आगत सर्भर:"
 
 #. i18n: file: ui/imapsettings.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_7)
@@ -15406,12 +15408,12 @@ msgstr "केडीई मेल कन्फिगर गर्नुहोस
 msgid " Spellcheck: %1 "
 msgstr " हिज्जे परीक्षण:%1 "
 
-#: kmcomposewin.cpp:1343 kmcomposewin.cpp:4199
+#: kmcomposewin.cpp:1343 kmcomposewin.cpp:4214
 #, kde-format
 msgid " Column: %1 "
 msgstr " स्तम्भ: %1 "
 
-#: kmcomposewin.cpp:1345 kmcomposewin.cpp:4197
+#: kmcomposewin.cpp:1345 kmcomposewin.cpp:4212
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
@@ -15464,7 +15466,7 @@ msgstr ""
 msgid "File Attachment Reminder"
 msgstr "फाइल सङ्लग्नता सूचक"
 
-#: kmcomposewin.cpp:1959 kmcomposewin.cpp:3776
+#: kmcomposewin.cpp:1959 kmcomposewin.cpp:3791
 msgid "&Send as Is"
 msgstr "यसका रूपमा पठाइएको छ"
 
@@ -15705,42 +15707,46 @@ msgstr ""
 "पहिचान \"%1\" का लागि अनुकूल ड्राफ्ट वा टेम्प्लेट फोल्डर अवस्थित छैन; त्यसैले, पूर्वनिर्धारित "
 "ड्राफ्ट वा टेम्पलेट फोल्डर प्रयोग गरिने छ ।"
 
-#: kmcomposewin.cpp:3753
+#: kmcomposewin.cpp:3698 kmsender.cpp:131
+msgid "Please create an account for sending and try again."
+msgstr "कृपया पठाउनका लागि खाता सिर्जना गर्नुहोस् र फेरि प्रयास गर्नुहोस् ।"
+
+#: kmcomposewin.cpp:3768
 msgid "About to send email..."
 msgstr "इमेल पठाउने बारेमा..."
 
-#: kmcomposewin.cpp:3754
+#: kmcomposewin.cpp:3769
 msgid "Send Confirmation"
 msgstr "यकीन पठाउनुहोस्"
 
-#: kmcomposewin.cpp:3774
+#: kmcomposewin.cpp:3789
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3775
+#: kmcomposewin.cpp:3790
 #, fuzzy
 #| msgid "No recipients"
 msgid "Too many receipients"
 msgstr "कुनै पनि प्रापक छैनन्"
 
-#: kmcomposewin.cpp:3777
+#: kmcomposewin.cpp:3792
 #, fuzzy
 #| msgid "Additional Recipients"
 msgid "&Edit Recipients"
 msgstr "थप प्रापक"
 
-#: kmcomposewin.cpp:3907
+#: kmcomposewin.cpp:3922
 msgid "Spellcheck: on"
 msgstr "हिज्जे परीक्षण: खुला"
 
-#: kmcomposewin.cpp:3909
+#: kmcomposewin.cpp:3924
 msgid "Spellcheck: off"
 msgstr "हिज्जे परीक्षण: बन्द"
 
-#: kmcomposewin.cpp:4245
+#: kmcomposewin.cpp:4260
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
@@ -15749,7 +15755,7 @@ msgstr ""
 "पहिला व्यतिक्रम गुप्तिकरण प्रयोग गर्नका लागि कृपया गुप्त ब्याकइन्ड कन्फिगर गर्नुहोस् ।\n"
 "तपाईँले कन्फिगर संवाद सुरक्षा पृष्ठको गुप्त ब्याकइन्डमा यस्तो गर्न सक्नुहुन्छ ।"
 
-#: kmcomposewin.cpp:4249
+#: kmcomposewin.cpp:4264
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
@@ -15757,37 +15763,37 @@ msgstr ""
 "यो libkleopatra जस्तै देखिए पनि व्यतिक्रम समर्थन बिना कम्पाइल गरिएको थियो । तपाईँ "
 "libkleopatra --सक्षम-व्यतिक्रमसँग पुन: कम्पाइल गर्न चाहन सक्नुहुन्छ ।"
 
-#: kmcomposewin.cpp:4252
+#: kmcomposewin.cpp:4267
 msgid "No Chiasmus Backend Configured"
 msgstr "व्यतिक्रम ब्याकइन्ड कन्फिगर गरिएको छैन"
 
-#: kmcomposewin.cpp:4283
+#: kmcomposewin.cpp:4298
 msgid "No Chiasmus Keys Found"
 msgstr "व्यतिक्रम कुञ्जी फेला परेको छैन"
 
-#: kmcomposewin.cpp:4287
+#: kmcomposewin.cpp:4302
 msgid "Chiasmus Encryption Key Selection"
 msgstr "व्यतिक्रम गुप्तिकरण कुञ्जी चयन"
 
-#: kmcomposewin.cpp:4369
+#: kmcomposewin.cpp:4384
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
 
-#: kmcomposewin.cpp:4370
+#: kmcomposewin.cpp:4385
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "सन्देश सूची - मिति फिल्ड"
 
-#: kmcomposewin.cpp:4372
+#: kmcomposewin.cpp:4387
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will be encrypted"
 msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
 
-#: kmcomposewin.cpp:4373
+#: kmcomposewin.cpp:4388
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will not be encrypted"
@@ -16750,10 +16756,6 @@ msgctxt "Message->Forward->"
 msgid "&Redirect..."
 msgstr "पुन: निर्देशन गर्नुहोस्..."
 
-#: kmsender.cpp:131
-msgid "Please create an account for sending and try again."
-msgstr "कृपया पठाउनका लागि खाता सिर्जना गर्नुहोस् र फेरि प्रयास गर्नुहोस् ।"
-
 #: kmsender.cpp:193
 msgid "Cannot add message to outbox folder"
 msgstr "प्रेषण-मञ्जूषा फोल्डरमा सन्देश थप्न सकेन"
@@ -17643,6 +17645,9 @@ msgstr "फाइल अधिलेखन गर्नुभयो?"
 #: kmfawidgets.cpp:119
 msgid "Select Sound File"
 msgstr "ध्वनि फाइल चयन गर्नुहोस्"
+
+#~ msgid "Ho&st:"
+#~ msgstr "होस्ट:"
 
 #, fuzzy
 #~| msgid "&Inline..."
