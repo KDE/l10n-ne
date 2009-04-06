@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlirc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-05 11:17+0200\n"
+"POT-Creation-Date: 2009-04-06 11:17+0200\n"
 "PO-Revision-Date: 2007-08-27 13:33+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,7 +18,13 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: addaction.cpp:242
+#: addaction.cpp:57
+#, fuzzy
+#| msgid "Function"
+msgid "DBus functions"
+msgstr "प्रकार्य"
+
+#: addaction.cpp:179
 #, kde-format
 msgid ""
 "You did not select a mode of that remote control. Please use %1, or revert "
@@ -27,26 +33,22 @@ msgstr ""
 "तपाईँले टाढाको नियन्त्रणको मोड चयन गर्नुभएको छैन । कृपया %1 प्रयोग गर्नुहोस् वा फरक मोड "
 "चयन गर्न पछाडि फर्कनुहोस् ।"
 
-#: addaction.cpp:244
+#: addaction.cpp:181
 msgid "Incorrect Remote Control Detected"
 msgstr "गलत टाढाको नियन्त्रण पत्ता लाग्यो"
 
-#: addaction.cpp:388
-#, fuzzy
-#| msgid "anonymous"
-msgctxt "Unknown parameter name in function"
-msgid "&lt;anonymous&gt;"
-msgstr "बेनामी"
+#: dbusinterface.cpp:210
+msgctxt "The name of a parameter"
+msgid "unknown"
+msgstr ""
 
 #: editaction.cpp:70 editaction.cpp:221
 msgid "Name"
 msgstr "नाम"
 
-#. i18n: file: addactionbase.ui:171
-#. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
 #. i18n: file: kcmlircbase.ui:316
 #. i18n: ectx: property (text), widget (QTreeWidget, theInformation)
-#: editaction.cpp:71 editaction.cpp:221 rc.cpp:39 rc.cpp:237
+#: editaction.cpp:71 editaction.cpp:221 rc.cpp:222
 msgid "Value"
 msgstr "मान"
 
@@ -143,105 +145,105 @@ msgstr "थप गर्न प्रोफाइल चयन गर्नु�
 msgid "Auto-Populate"
 msgstr "स्वत: बस्ने..."
 
-#: kcmlirc.cpp:454
+#: kcmlirc.cpp:453
 #, kde-format
 msgid "Are you sure you want to remove %1 and all its actions?"
 msgstr "तपाईँ %1 र यसका सबै कार्यहरू हटाउन निश्चित हुनुहुन्छ ?"
 
-#: kcmlirc.cpp:456
+#: kcmlirc.cpp:455
 msgid "Erase Actions?"
 msgstr "कार्य मेट्नुहुन्छ ?"
 
-#: kcmlirc.cpp:485
+#: kcmlirc.cpp:484
 msgid ""
 "You may only drag the selected items onto a mode of the same remote control"
 msgstr "तपाईँले उस्तै टाढाको नियन्त्रणको मोड भित्र मात्र चयन गरिएको वस्तु तान्न सक्नुहुन्छ"
 
-#: kcmlirc.cpp:486
+#: kcmlirc.cpp:485
 msgid "You May Not Drag Here"
 msgstr "तपाईँले यहाँ तान्न सक्नु हुन्न"
 
-#: kcmlirc.cpp:517
+#: kcmlirc.cpp:516
 msgid "Actions <i>always</i> available"
 msgstr "कार्य <i>सँधै</i> उपलब्ध हुन्छ"
 
-#: kcmlirc.cpp:518
+#: kcmlirc.cpp:517
 #, kde-format
 msgid "Actions available only in mode <b>%1</b>"
 msgstr "<b>%1</b> मोडमा मात्र उपलब्ध हुने कार्य"
 
-#: kcmlirc.cpp:642 kcmlirc.cpp:683 kcmlirc.cpp:696
+#: kcmlirc.cpp:641 kcmlirc.cpp:682 kcmlirc.cpp:695
 msgid "Applications"
 msgstr "अनुप्रयोग"
 
-#: kcmlirc.cpp:654 kcmlirc.cpp:689 kcmlirc.cpp:715
+#: kcmlirc.cpp:653 kcmlirc.cpp:688 kcmlirc.cpp:714
 msgid "Remote Controls"
 msgstr "टाढाको नियन्त्रण"
 
-#: kcmlirc.cpp:680 kcmlirc.cpp:713 kcmlirc.cpp:733
+#: kcmlirc.cpp:679 kcmlirc.cpp:712 kcmlirc.cpp:732
 #, kde-format
 msgid "Information on <b>%1</b>:"
 msgstr "<b>%1</b> मा जानकारी:"
 
-#: kcmlirc.cpp:685
+#: kcmlirc.cpp:684
 msgid "Number of Applications"
 msgstr "अनुप्रयोगको सङ्ख्या"
 
-#: kcmlirc.cpp:691
+#: kcmlirc.cpp:690
 msgid "Number of Remote Controls"
 msgstr "टाढाको नियन्त्रणको सङ्ख्या"
 
-#: kcmlirc.cpp:700 kcmlirc.cpp:720
+#: kcmlirc.cpp:699 kcmlirc.cpp:719
 msgid "Extension Name"
 msgstr "विस्तार नाम"
 
-#: kcmlirc.cpp:703 kcmlirc.cpp:723
+#: kcmlirc.cpp:702 kcmlirc.cpp:722
 msgid "Extension Author"
 msgstr "विस्तार लेखक"
 
-#: kcmlirc.cpp:706
+#: kcmlirc.cpp:705
 msgid "Application Identifier"
 msgstr "अनुप्रयोग पहिचायक"
 
-#: kcmlirc.cpp:709
+#: kcmlirc.cpp:708
 msgid "Number of Actions"
 msgstr "कार्यको सङ्ख्या"
 
-#: kcmlirc.cpp:726
+#: kcmlirc.cpp:725
 msgid "Remote Control Identifier"
 msgstr "टाढाको नियन्त्रण पहिचायक"
 
-#: kcmlirc.cpp:729
+#: kcmlirc.cpp:728
 msgid "Number of Buttons"
 msgstr "बटनको सङ्ख्या"
 
-#. i18n: file: addactionbase.ui:136
+#. i18n: file: addactionbase.ui:140
 #. i18n: ectx: property (text), widget (QTreeWidget, theProfileFunctions)
 #. i18n: file: editactionbase.ui:24
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: file: kcmlircbase.ui:193
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
-#: model.cpp:224 rc.cpp:24 rc.cpp:96 rc.cpp:210
+#: model.cpp:217 rc.cpp:21 rc.cpp:81 rc.cpp:195
 msgid "Function"
 msgstr "प्रकार्य"
 
-#: model.cpp:226
+#: model.cpp:219
 msgid "Parameter"
 msgstr "परिमिति"
 
-#: model.cpp:228
+#: model.cpp:221
 msgid "Prototype"
 msgstr "प्रोटोटाइप"
 
-#: model.cpp:266 model.cpp:366
+#: model.cpp:264 model.cpp:373
 msgid "A comma-separated list of Strings"
 msgstr ""
 
-#: model.cpp:296
+#: model.cpp:294
 msgid "True"
 msgstr ""
 
-#: model.cpp:297
+#: model.cpp:295
 #, fuzzy
 #| msgid "Value"
 msgid "False"
@@ -281,95 +283,71 @@ msgstr ""
 "तपाईँले [टाढाको] (मोडमा [मोड]) मा बटनका लागि कार्य कन्फिगर गर्ने प्रयास गर्दै हुनुहुन्छ । "
 "यो टाढाको नियन्त्रणमा बटन थिच्नुहोस् वा सूचीबाट चयन गर्नुहोस् ।"
 
-#. i18n: file: addactionbase.ui:97
-#. i18n: ectx: property (text), widget (QTreeWidget, theObjects)
-#: rc.cpp:18
-msgid "Program"
-msgstr "कार्यक्रम"
-
-#. i18n: file: addactionbase.ui:119
+#. i18n: file: addactionbase.ui:123
 #. i18n: ectx: property (text), widget (QRadioButton, theNotJustStart)
-#: rc.cpp:21
+#: rc.cpp:18
 msgid "&Perform a function in the application:"
 msgstr "अनुप्रयोगमा प्रकार्य कार्यसम्पादन गर्नुहोस्:"
 
-#. i18n: file: addactionbase.ui:141
+#. i18n: file: addactionbase.ui:145
 #. i18n: ectx: property (text), widget (QTreeWidget, theProfileFunctions)
 #. i18n: file: editactionbase.ui:234
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: file: kcmlircbase.ui:203
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
-#: rc.cpp:27 rc.cpp:126 rc.cpp:216
+#: rc.cpp:24 rc.cpp:111 rc.cpp:201
 msgid "Options"
 msgstr "विकल्प"
 
-#. i18n: file: addactionbase.ui:146
+#. i18n: file: addactionbase.ui:150
 #. i18n: ectx: property (text), widget (QTreeWidget, theProfileFunctions)
-#: rc.cpp:30
+#: rc.cpp:27
 msgid "Description"
 msgstr "वर्णन"
 
-#. i18n: file: addactionbase.ui:154
+#. i18n: file: addactionbase.ui:158
 #. i18n: ectx: property (text), widget (QRadioButton, theJustStart)
-#: rc.cpp:33
+#: rc.cpp:30
 msgid "&Just start the application. Do not do anything else."
 msgstr "अनुप्रयोग सुरु मात्र गर्नुहोस् । अरू केही पनि नगर्नुहोस् ।"
 
-#. i18n: file: addactionbase.ui:166
-#. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
-#: rc.cpp:36
-msgid "Option Description"
-msgstr "विकल्प वर्णन"
+#. i18n: file: addactionbase.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:33
+msgid "Specify the arguments to be passed to the pplication"
+msgstr ""
 
-#. i18n: file: addactionbase.ui:176
-#. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
-#: rc.cpp:42
-msgid "Type"
-msgstr "प्रकार"
-
-#. i18n: file: addactionbase.ui:181
-#. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
-#: rc.cpp:45
-msgid "Place"
-msgstr "स्थान"
-
-#. i18n: file: addactionbase.ui:326
-#. i18n: ectx: property (text), widget (QLabel, theCurParameter)
-#: rc.cpp:48
-msgid "Parameter:"
-msgstr "परिमिति:"
-
-#. i18n: file: addactionbase.ui:355
+#. i18n: file: addactionbase.ui:189
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:51
+#: rc.cpp:36
 msgid "Miscellaneous Options"
 msgstr "विविध विकल्प"
 
-#. i18n: file: addactionbase.ui:375
+#. i18n: file: addactionbase.ui:209
 #. i18n: ectx: property (text), widget (QCheckBox, theRepeat)
-#: rc.cpp:54
+#: rc.cpp:39
 msgid "This action is &repeatable if the button is held down"
 msgstr "यदि बटन तल खसेमा यो कार्य दोहोर्याउन योग्य हुन्छ"
 
-#. i18n: file: addactionbase.ui:382
+#. i18n: file: addactionbase.ui:216
 #. i18n: ectx: property (text), widget (QCheckBox, theAutoStart)
-#: rc.cpp:57
+#: rc.cpp:42
 msgid "This action causes the application to &start if not already running"
 msgstr "यदि पहिल्यै चलिरहेको छैन भने यो कार्यले अनुप्रयोग सुरु गर्दछ"
 
-#. i18n: file: addactionbase.ui:417
+#. i18n: file: addactionbase.ui:251
 #. i18n: ectx: property (text), widget (QLabel, theIMTop)
 #. i18n: file: editactionbase.ui:358
 #. i18n: ectx: property (text), widget (QLabel, theIMTop)
-#: rc.cpp:60 rc.cpp:147
+#: rc.cpp:45 rc.cpp:132
 msgid "Multiple Instances"
 msgstr "बहुविध दृष्टान्त"
 
-#. i18n: file: addactionbase.ui:443
+#. i18n: file: addactionbase.ui:277
 #. i18n: ectx: property (text), widget (QLabel, theIMLabel)
 #. i18n: file: editactionbase.ui:384
 #. i18n: ectx: property (text), widget (QLabel, theIMLabel)
-#: rc.cpp:63 rc.cpp:150
+#: rc.cpp:48 rc.cpp:135
 msgid ""
 "This application may have multiple instances. In the case of having multiple "
 "instances at once when this action should be executed, choose a course of "
@@ -378,101 +356,101 @@ msgstr ""
 "यो अनुप्रयोगसँग बहुविध दृष्टान्त हुन सक्छ । एकै पटकमा बहुविध दृष्टान्त भएको अवस्थामा यो "
 "कार्य कार्यान्यन गर्नुपर्दछ, कार्य स्रोत छनोट गर्नुहोस्:"
 
-#. i18n: file: addactionbase.ui:459
+#. i18n: file: addactionbase.ui:293
 #. i18n: ectx: property (text), widget (QRadioButton, theDontSend)
 #. i18n: file: editactionbase.ui:400
 #. i18n: ectx: property (text), widget (QRadioButton, theDontSend)
-#: rc.cpp:66 rc.cpp:153
+#: rc.cpp:51 rc.cpp:138
 msgid "&Ignore the action"
 msgstr "कार्य उपेक्षा गर्नुहोस्"
 
-#. i18n: file: addactionbase.ui:472
+#. i18n: file: addactionbase.ui:306
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToTop)
-#: rc.cpp:69
+#: rc.cpp:54
 msgid "Send the action to the instance hi&ghest in the window stacking order"
 msgstr "सञ्झ्याल थाक क्रममा सब भन्दा उच्च दृष्टान्तमा कार्य पठाउनुहोस्"
 
-#. i18n: file: addactionbase.ui:482
+#. i18n: file: addactionbase.ui:316
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToBottom)
 #. i18n: file: editactionbase.ui:423
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToBottom)
-#: rc.cpp:72 rc.cpp:159
+#: rc.cpp:57 rc.cpp:144
 msgid "Send the action to the instance &lowest in window stacking order"
 msgstr "सञ्झ्याल थाक क्रममा सब भन्दा न्यून दृष्टान्तमा कार्य पठाउनुहोस्"
 
-#. i18n: file: addactionbase.ui:492
+#. i18n: file: addactionbase.ui:326
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToAll)
-#: rc.cpp:75
+#: rc.cpp:60
 msgid "Send the action to &all instances"
 msgstr "सबै दृष्टान्तमा कार्य पठाउनुहोस्"
 
-#. i18n: file: addactionbase.ui:516
+#. i18n: file: addactionbase.ui:350
 #. i18n: ectx: property (text), widget (QRadioButton, theSwitchMode)
-#: rc.cpp:78
+#: rc.cpp:63
 msgid "&Switch to mode:"
 msgstr "मोडमा स्विच गर्नुहोस्:"
 
-#. i18n: file: addactionbase.ui:533
+#. i18n: file: addactionbase.ui:367
 #. i18n: ectx: property (text), widget (QRadioButton, theExitMode)
-#: rc.cpp:81
+#: rc.cpp:66
 msgid "&Exit current mode"
 msgstr "हालको मोडबाट निस्कनुहोस्"
 
-#. i18n: file: addactionbase.ui:559
+#. i18n: file: addactionbase.ui:393
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:84
+#: rc.cpp:69
 msgid "<b>Options</b>"
 msgstr "<b>विकल्प</b>"
 
-#. i18n: file: addactionbase.ui:579
+#. i18n: file: addactionbase.ui:413
 #. i18n: ectx: property (text), widget (QCheckBox, theDoBefore)
 #. i18n: file: editactionbase.ui:313
 #. i18n: ectx: property (text), widget (QCheckBox, theDoBefore)
-#: rc.cpp:87 rc.cpp:141
+#: rc.cpp:72 rc.cpp:126
 msgid "E&xecute all other actions before mode change (in original mode)"
 msgstr "मोड (मौलिक मोडमा) परिवर्तन हुनु पूर्व सबै अन्य कार्य कार्यान्वयन गर्नुहोस्"
 
-#. i18n: file: addactionbase.ui:589
+#. i18n: file: addactionbase.ui:423
 #. i18n: ectx: property (text), widget (QCheckBox, theDoAfter)
 #. i18n: file: editactionbase.ui:326
 #. i18n: ectx: property (text), widget (QCheckBox, theDoAfter)
-#: rc.cpp:90 rc.cpp:144
+#: rc.cpp:75 rc.cpp:129
 msgid "Exec&ute all actions after mode change (in new mode)"
 msgstr "मोड (नयाँ मोडमा) परिवर्तन पछि सबै कार्य कार्यान्वयन गर्नुहोस्"
 
 #. i18n: file: editactionbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, EditActionBase)
-#: rc.cpp:93
+#: rc.cpp:78
 msgid "Edit Action"
 msgstr "कार्य सम्पादन गर्नुहोस्"
 
 #. i18n: file: editactionbase.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, theUseProfile)
-#: rc.cpp:99
+#: rc.cpp:84
 msgid "&Use application:"
 msgstr "अनुप्रयोग प्रयोग गर्नुहोस्:"
 
 #. i18n: file: editactionbase.ui:49
 #. i18n: ectx: property (text), widget (QLabel, theUseProfileAppLabel)
-#: rc.cpp:102
+#: rc.cpp:87
 msgid "&Application:"
 msgstr "अनुप्रयोग:"
 
 #. i18n: file: editactionbase.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, thePerformFunction)
-#: rc.cpp:105
+#: rc.cpp:90
 msgid "&Perform function:"
 msgstr "प्रकार्य कार्यसम्पादन गर्नुहोस्:"
 
 #. i18n: file: editactionbase.ui:98
 #. i18n: ectx: property (text), widget (QRadioButton, theJustStart)
-#: rc.cpp:108
+#: rc.cpp:93
 msgid "Just start application"
 msgstr "अनुप्रयोग सुरु गर्नुहोस्"
 
 #. i18n: file: editactionbase.ui:108
 #. i18n: ectx: property (text), widget (QRadioButton, theUseDBus)
-#: rc.cpp:111
+#: rc.cpp:96
 #, fuzzy
 #| msgid "Use &DCOP:"
 msgid "Use &D-Bus:"
@@ -480,31 +458,31 @@ msgstr "DCOP प्रयोग गर्नुहोस्:"
 
 #. i18n: file: editactionbase.ui:127
 #. i18n: ectx: property (text), widget (QLabel, theDBusApplicationsLabel)
-#: rc.cpp:114
+#: rc.cpp:99
 msgid "App&lication:"
 msgstr "अनुप्रयोग:"
 
 #. i18n: file: editactionbase.ui:156
 #. i18n: ectx: property (text), widget (QLabel, theDBusObjectsLabel)
-#: rc.cpp:117
+#: rc.cpp:102
 msgid "O&bject:"
 msgstr "वस्तु:"
 
 #. i18n: file: editactionbase.ui:179
 #. i18n: ectx: property (text), widget (QLabel, theDBusFunctionsLabel)
-#: rc.cpp:120
+#: rc.cpp:105
 msgid "Fu&nction:"
 msgstr "प्रकार्य:"
 
 #. i18n: file: editactionbase.ui:211
 #. i18n: ectx: property (text), widget (QRadioButton, theChangeMode)
-#: rc.cpp:123
+#: rc.cpp:108
 msgid "Change &mode to:"
 msgstr "यसमा मोड परिवर्तन गर्नुहोस्:"
 
 #. i18n: file: editactionbase.ui:240
 #. i18n: ectx: property (text), widget (QLabel, optionsDBusAppLabel)
-#: rc.cpp:129
+#: rc.cpp:114
 #, fuzzy
 #| msgid "<b>DCOP/Application Action Options</b>"
 msgid "<b>D-Bus/Application Action Options</b>"
@@ -512,67 +490,67 @@ msgstr "<b>DCOP/अनुप्रयोग कार्य विकल्प</
 
 #. i18n: file: editactionbase.ui:260
 #. i18n: ectx: property (text), widget (QCheckBox, theRepeat)
-#: rc.cpp:132
+#: rc.cpp:117
 msgid "&Action repeats if button is held down"
 msgstr "यदि बटन तल खस्यो भने कार्य दोहोरिन्छ"
 
 #. i18n: file: editactionbase.ui:267
 #. i18n: ectx: property (text), widget (QCheckBox, theAutoStart)
-#: rc.cpp:135
+#: rc.cpp:120
 msgid "&Start program/service if not already running"
 msgstr "यदि पहिल्यै चलिरहेको छैन भने कार्यक्रम/सेवा सुरु गर्नुहोस्"
 
 #. i18n: file: editactionbase.ui:290
 #. i18n: ectx: property (text), widget (QLabel, theMCOLabel)
-#: rc.cpp:138
+#: rc.cpp:123
 msgid "<b>Mode Change Options</b>"
 msgstr "<b>मोड परिवर्तन विकल्प</b>"
 
 #. i18n: file: editactionbase.ui:413
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToTop)
-#: rc.cpp:156
+#: rc.cpp:141
 msgid "Send the action to the instance hi&ghest in window stacking order"
 msgstr "सञ्झ्याल थाक क्रममा सब भन्दा उच्च दृष्टान्तमा कार्य पठाउनुहोस्"
 
 #. i18n: file: editactionbase.ui:433
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToAll)
-#: rc.cpp:162
+#: rc.cpp:147
 msgid "Send the action to all i&nstances"
 msgstr "सबै दृष्टान्तमा कार्य पठाउनुहोस्"
 
 #. i18n: file: editmodebase.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, EditModeBase)
-#: rc.cpp:165
+#: rc.cpp:150
 msgid "Edit Mode"
 msgstr "मोड सम्पादन गर्नुहोस्"
 
 #. i18n: file: editmodebase.ui:22
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:168
+#: rc.cpp:153
 msgid "<b>Description</b>"
 msgstr "<b>वर्णन</b>"
 
 #. i18n: file: editmodebase.ui:102
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:171
+#: rc.cpp:156
 msgid "&Mode name:"
 msgstr "मोड नाम:"
 
 #. i18n: file: editmodebase.ui:115
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:174
+#: rc.cpp:159
 msgid "&Icon for system tray:"
 msgstr "प्रणाली ट्रेका लागि प्रतिमा:"
 
 #. i18n: file: editmodebase.ui:140
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:177
+#: rc.cpp:162
 msgid "<b>Behavior</b>"
 msgstr "<b>व्यवहार</b>"
 
 #. i18n: file: editmodebase.ui:160
 #. i18n: ectx: property (text), widget (QCheckBox, theDefault)
-#: rc.cpp:180
+#: rc.cpp:165
 #, fuzzy
 #| msgid "Mo&de is the default for its remote control"
 msgid "Mo&de is the default for its remote "
@@ -580,19 +558,19 @@ msgstr "यसको टाढाको नियन्त्रणका ला
 
 #. i18n: file: kcmlircbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, KCMLircBase)
-#: rc.cpp:183
+#: rc.cpp:168
 msgid "Linux Infrared Remote Control"
 msgstr "लिनक्स अवरक्त टाढाको नियन्त्रण"
 
 #. i18n: file: kcmlircbase.ui:27
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:186
+#: rc.cpp:171
 msgid "Controller Functions"
 msgstr "नियन्त्रक प्रकार्य"
 
 #. i18n: file: kcmlircbase.ui:48
 #. i18n: ectx: property (text), widget (QLabel, theMainLabel)
-#: rc.cpp:189
+#: rc.cpp:174
 msgid ""
 "There are currently no remote controls available. You must first set up LIRC "
 "correctly; see www.lirc.org for more information."
@@ -602,37 +580,37 @@ msgstr ""
 
 #. i18n: file: kcmlircbase.ui:72
 #. i18n: ectx: property (text), widget (QLabel, theRemotesLabel)
-#: rc.cpp:192
+#: rc.cpp:177
 msgid "Remote controls and modes:"
 msgstr "टाढाको नियन्त्रण र मोड:"
 
 #. i18n: file: kcmlircbase.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, theAddMode)
-#: rc.cpp:195
+#: rc.cpp:180
 msgid "&Add..."
 msgstr "थप्नुहोस्..."
 
 #. i18n: file: kcmlircbase.ui:120
 #. i18n: ectx: property (text), widget (KPushButton, theEditMode)
-#: rc.cpp:198
+#: rc.cpp:183
 msgid "&Edit..."
 msgstr "सम्पादन..."
 
 #. i18n: file: kcmlircbase.ui:136
 #. i18n: ectx: property (text), widget (KPushButton, theRemoveMode)
-#: rc.cpp:201
+#: rc.cpp:186
 msgid "&Remove"
 msgstr "हटाउनुहोस्"
 
 #. i18n: file: kcmlircbase.ui:183
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
-#: rc.cpp:204
+#: rc.cpp:189
 msgid "Button"
 msgstr "बटन"
 
 #. i18n: file: kcmlircbase.ui:188
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
-#: rc.cpp:207
+#: rc.cpp:192
 #, fuzzy
 #| msgid "Applications"
 msgid "Application"
@@ -640,7 +618,7 @@ msgstr "अनुप्रयोग"
 
 #. i18n: file: kcmlircbase.ui:198
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
-#: rc.cpp:213
+#: rc.cpp:198
 #, fuzzy
 #| msgid "Parameter"
 msgid "Parameters"
@@ -648,31 +626,31 @@ msgstr "परिमिति"
 
 #. i18n: file: kcmlircbase.ui:218
 #. i18n: ectx: property (text), widget (KPushButton, theAddActions)
-#: rc.cpp:219
+#: rc.cpp:204
 msgid "Auto-Populate..."
 msgstr "स्वत: बस्ने..."
 
 #. i18n: file: kcmlircbase.ui:231
 #. i18n: ectx: property (text), widget (KPushButton, theAddAction)
-#: rc.cpp:222
+#: rc.cpp:207
 msgid "A&dd..."
 msgstr "थप्नुहोस्..."
 
 #. i18n: file: kcmlircbase.ui:241
 #. i18n: ectx: property (text), widget (QPushButton, theEditAction)
-#: rc.cpp:225
+#: rc.cpp:210
 msgid "Ed&it..."
 msgstr "सम्पादन..."
 
 #. i18n: file: kcmlircbase.ui:251
 #. i18n: ectx: property (text), widget (KPushButton, theRemoveAction)
-#: rc.cpp:228
+#: rc.cpp:213
 msgid "Re&move"
 msgstr "हटाउनुहोस्"
 
 #. i18n: file: kcmlircbase.ui:278
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:231
+#: rc.cpp:216
 #, fuzzy
 #| msgid "Extension Author"
 msgid "Extension overview"
@@ -680,13 +658,13 @@ msgstr "विस्तार लेखक"
 
 #. i18n: file: kcmlircbase.ui:311
 #. i18n: ectx: property (text), widget (QTreeWidget, theInformation)
-#: rc.cpp:234
+#: rc.cpp:219
 msgid "Information"
 msgstr "जानकारी"
 
 #. i18n: file: kcmlircbase.ui:329
 #. i18n: ectx: property (text), widget (QTreeWidget, theExtensions)
-#: rc.cpp:240
+#: rc.cpp:225
 #, fuzzy
 #| msgid "Loaded Extensions"
 msgid "Available extensions"
@@ -694,13 +672,13 @@ msgstr "लोड गरिएको विस्तार"
 
 #. i18n: file: newmode.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, NewMode)
-#: rc.cpp:243
+#: rc.cpp:228
 msgid "New Mode"
 msgstr "नयाँ मोड"
 
 #. i18n: file: newmode.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, theRemotes)
-#: rc.cpp:246
+#: rc.cpp:231
 #, fuzzy
 #| msgid "&Remove"
 msgid "Remotes"
@@ -708,7 +686,7 @@ msgstr "हटाउनुहोस्"
 
 #. i18n: file: newmode.ui:45
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:249
+#: rc.cpp:234
 #, fuzzy
 #| msgid "Name:"
 msgctxt "Name of the remote mode"
@@ -717,27 +695,48 @@ msgstr "नाम:"
 
 #. i18n: file: newmode.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, theDefault)
-#: rc.cpp:252
+#: rc.cpp:237
 msgid "Set mode as default"
 msgstr ""
 
 #. i18n: file: newmode.ui:101
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:255
+#: rc.cpp:240
 #, fuzzy
 #| msgid "Icon"
 msgid "&Icon "
 msgstr "प्रतिमा"
 
-#: rc.cpp:256
+#: rc.cpp:241
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Mahesh Subedi, श्यामकृष्ण बल, नारायण कुमार मगर"
 
-#: rc.cpp:257
+#: rc.cpp:242
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "submanesh@gmail.com, shyamkrishna_bal@yahoo.com, narayan@mpp.org.np"
+
+#, fuzzy
+#~| msgid "anonymous"
+#~ msgctxt "Unknown parameter name in function"
+#~ msgid "&lt;anonymous&gt;"
+#~ msgstr "बेनामी"
+
+#~ msgid "Program"
+#~ msgstr "कार्यक्रम"
+
+#~ msgid "Option Description"
+#~ msgstr "विकल्प वर्णन"
+
+#~ msgid "Type"
+#~ msgstr "प्रकार"
+
+#~ msgid "Place"
+#~ msgstr "स्थान"
+
+#~ msgid "Parameter:"
+#~ msgstr "परिमिति:"
 
 #, fuzzy
 #~| msgid "A&pplication/DCOP options:"
