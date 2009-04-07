@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-03 11:12+0200\n"
+"POT-Creation-Date: 2009-04-07 11:12+0200\n"
 "PO-Revision-Date: 2008-01-03 16:48+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -137,25 +137,25 @@ msgstr "उपग्रह ट्रयाक"
 msgid "No color named \"%1\" found in color scheme."
 msgstr "रङ योजनामा \"%1\" नामकरण गरिएको कुनै रङ फेला परेन ।"
 
-#: colorscheme.cpp:192 kstarsdata.cpp:1104 tools/scriptbuilder.cpp:925
+#: colorscheme.cpp:192 kstarsdata.cpp:1110 tools/scriptbuilder.cpp:925
 #: options/opscolors.cpp:58
 msgctxt "use default color scheme"
 msgid "Default Colors"
 msgstr "पूर्वानिर्धारित रङ"
 
-#: colorscheme.cpp:193 kstarsdata.cpp:1105 tools/scriptbuilder.cpp:926
+#: colorscheme.cpp:193 kstarsdata.cpp:1111 tools/scriptbuilder.cpp:926
 #: options/opscolors.cpp:59
 msgctxt "use 'star chart' color scheme"
 msgid "Star Chart"
 msgstr "तारा चित्रपट"
 
-#: colorscheme.cpp:194 kstarsdata.cpp:1106 tools/scriptbuilder.cpp:927
+#: colorscheme.cpp:194 kstarsdata.cpp:1112 tools/scriptbuilder.cpp:927
 #: options/opscolors.cpp:60
 msgctxt "use 'night vision' color scheme"
 msgid "Night Vision"
 msgstr "नाइट भिजन"
 
-#: colorscheme.cpp:209 kstarsdata.cpp:1123
+#: colorscheme.cpp:209 kstarsdata.cpp:1129
 #, kde-format
 msgid "Unable to load color scheme named %1. Also tried %2."
 msgstr " %1 नामकरण गरिएको रङ योजना लोड गर्न असक्षम भयो । %2 पनि प्रयास गरियो ।"
@@ -325,7 +325,7 @@ msgstr ""
 msgid "Solar system object"
 msgstr "सौर्यमण्डल वस्तुहरू देखाउनुहोस्"
 
-#: kspopupmenu.cpp:170 kstarsdata.cpp:84 kstarsinit.cpp:667
+#: kspopupmenu.cpp:170 kstarsdata.cpp:84 kstarsdata.cpp:85 kstarsinit.cpp:667
 #: tools/observinglist.cpp:298 tools/wutdialog.cpp:256
 #: skycomponents/starcomponent.cpp:496 dialogs/detaildialog.cpp:136
 #: skyobjects/starobject.cpp:659 skyobjects/starobject.cpp:678
@@ -22753,7 +22753,7 @@ msgstr "फाइल डाउनलोड गर्न सकेन ।"
 msgid "Download Error"
 msgstr "त्रुटि डाउनलोड गर्नुहोस्"
 
-#: kstarsactions.cpp:621 kstarsdata.cpp:997 tools/observinglist.cpp:569
+#: kstarsactions.cpp:621 kstarsdata.cpp:1003 tools/observinglist.cpp:569
 #, kde-format
 msgid "Could not open file %1"
 msgstr "%1 फाइल खोल्न सकेन"
@@ -22874,10 +22874,6 @@ msgstr "फाइल खोल्न सकेन: %1"
 msgid "Edit FOV Symbols..."
 msgstr "एफओभी सङ्केत सम्पादन गर्नुहोस्..."
 
-#: kstarsdata.cpp:85
-msgid "multiple star"
-msgstr "बहुविध तारा"
-
 #: kstarsdata.cpp:86
 msgid "planet"
 msgstr "ग्रह"
@@ -22918,11 +22914,50 @@ msgstr "ग्रहिका"
 msgid "constellation"
 msgstr "तारामण्डल"
 
-#: kstarsdata.cpp:142
+#. i18n: file: tools/modcalcdaylength.ui:453
+#. i18n: ectx: property (title), widget (QGroupBox, MoonBox)
+#. i18n: file: tools/modcalcplanets.ui:161
+#. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBox)
+#. i18n: file: tools/modcalcplanets.ui:512
+#. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBoxBatch)
+#: kstarsdata.cpp:96 rc.cpp:2459 rc.cpp:2862 rc.cpp:2946
+#: tools/modcalcplanets.cpp:346 skyobjects/ksmoon.cpp:33
+msgid "Moon"
+msgstr "चन्द्रमा"
+
+#: kstarsdata.cpp:97
+#, fuzzy
+#| msgid "asteroid"
+msgid "asterism"
+msgstr "ग्रहिका"
+
+#: kstarsdata.cpp:98
+#, fuzzy
+#| msgid "globular cluster"
+msgid "galaxy cluster"
+msgstr "गोलाकार क्लस्टर"
+
+#: kstarsdata.cpp:99
+#, fuzzy
+#| msgid "planetary nebula"
+msgid "dark nebula"
+msgstr "भ्रमणकारी नेबुला"
+
+#: kstarsdata.cpp:100
+#, fuzzy
+#| msgid "Square"
+msgid "quasar"
+msgstr "वर्ग"
+
+#: kstarsdata.cpp:101
+msgid "multiple star"
+msgstr "बहुविध तारा"
+
+#: kstarsdata.cpp:148
 msgid "no type"
 msgstr "प्रकार छैन"
 
-#: kstarsdata.cpp:159
+#: kstarsdata.cpp:165
 #, kde-format
 msgid ""
 "The file %1 could not be found. KStars cannot run properly without this "
@@ -22935,16 +22970,16 @@ msgstr ""
 "थिच्नुहोस्:\n"
 "\n"
 
-#: kstarsdata.cpp:165
+#: kstarsdata.cpp:171
 msgid "Otherwise, press Cancel to shutdown."
 msgstr "अन्यथा, बन्द गर्न 'रद्द गर्नुहोस्' थिच्नुहोस् ।"
 
-#: kstarsdata.cpp:166
+#: kstarsdata.cpp:172
 #, kde-format
 msgid "Critical File Not Found: %1"
 msgstr "विवेचनात्मक फाइल फेला पार्न सकेन: %1"
 
-#: kstarsdata.cpp:168
+#: kstarsdata.cpp:174
 #, kde-format
 msgid ""
 "The file %1 could not be found. KStars can still run without this file. "
@@ -22957,49 +22992,49 @@ msgstr ""
 "त्यसपछि पुन: प्रयास गर्नुहोस् थिच्नुहोस्:\n"
 "\n"
 
-#: kstarsdata.cpp:174
+#: kstarsdata.cpp:180
 msgid "Otherwise, press Cancel to continue loading without this file."
 msgstr "अन्यथा, यो फाइल बिना लोडिङ जारी राख्न 'रद्द गर्नुहोस्' थिच्नुहोस् ।"
 
-#: kstarsdata.cpp:175
+#: kstarsdata.cpp:181
 #, kde-format
 msgid "Non-Critical File Not Found: %1"
 msgstr "अविवेचनात्मक फाइल फेला परेन: %1"
 
-#: kstarsdata.cpp:178
+#: kstarsdata.cpp:184
 msgid "Retry"
 msgstr "पुन: प्रयास गर्नुहोस्"
 
-#: kstarsdata.cpp:197
+#: kstarsdata.cpp:203
 msgid "Reading time zone rules"
 msgstr "टाइमजोन नियम पढ्दै"
 
-#: kstarsdata.cpp:212
+#: kstarsdata.cpp:218
 msgid "Loading city data"
 msgstr "सिटी डेटा लोड गर्दै"
 
-#: kstarsdata.cpp:222
+#: kstarsdata.cpp:228
 msgid "Loading sky objects"
 msgstr "स्काइ वस्तुहरू लोड गर्दै"
 
-#: kstarsdata.cpp:228
+#: kstarsdata.cpp:234
 msgid "Loading Image URLs"
 msgstr "छवि यूआरएल लोड गर्दै"
 
-#: kstarsdata.cpp:237
+#: kstarsdata.cpp:243
 msgid "Loading Information URLs"
 msgstr "सूचना यूआरएल लोड गर्दै"
 
-#: kstarsdata.cpp:245
+#: kstarsdata.cpp:251
 msgid "Loading Variable Stars"
 msgstr "चल तारा लोड गर्दै"
 
-#: kstarsdata.cpp:489
+#: kstarsdata.cpp:495
 msgid "Cities.dat: Ran out of fields.  Line was:"
 msgstr "Cities.dat: फिल्ड बाहिर गयो । रेखा:"
 
-#: kstarsdata.cpp:507 kstarsdata.cpp:513 kstarsdata.cpp:519 kstarsdata.cpp:532
-#: kstarsdata.cpp:538 kstarsdata.cpp:544
+#: kstarsdata.cpp:513 kstarsdata.cpp:519 kstarsdata.cpp:525 kstarsdata.cpp:538
+#: kstarsdata.cpp:544 kstarsdata.cpp:550
 msgid ""
 "\n"
 "Cities.dat: Bad integer.  Line was:\n"
@@ -23007,7 +23042,7 @@ msgstr ""
 "\n"
 "Cities.dat: खराब इन्टेजर ।  रेखा:\n"
 
-#: kstarsdata.cpp:526
+#: kstarsdata.cpp:532
 msgid ""
 "\n"
 "Cities.dat: Invalid latitude sign.  Line was:\n"
@@ -23015,7 +23050,7 @@ msgstr ""
 "\n"
 "Cities.dat: अवैध अक्षांश सङ्केत । रेखा:\n"
 
-#: kstarsdata.cpp:551
+#: kstarsdata.cpp:557
 msgid ""
 "\n"
 "Cities.dat: Invalid longitude sign.  Line was:\n"
@@ -23023,7 +23058,7 @@ msgstr ""
 "\n"
 "Cities.dat: अवैध देशान्तर सङ्केत ।  रेखा:\n"
 
-#: kstarsdata.cpp:569
+#: kstarsdata.cpp:575
 msgid ""
 "\n"
 "Cities.dat: Bad time zone.  Line was:\n"
@@ -23031,11 +23066,11 @@ msgstr ""
 "\n"
 "Cities.dat: खराब टाइमजोन ।  रेखा:\n"
 
-#: kstarsdata.cpp:693
+#: kstarsdata.cpp:699
 msgid "No localized URL file; using default English file."
 msgstr "पूर्वानिर्धारित अङ्ग्रेजी फाइल प्रयोग गरेर; कुनै यूआरएल स्थानीयकरण गरिएको छैन ।"
 
-#: kstarsdata.cpp:708
+#: kstarsdata.cpp:714
 msgid ""
 "Failed to copy default URL file to locale folder, modifying default object "
 "links is not possible"
@@ -23043,17 +23078,17 @@ msgstr ""
 "स्थानीय फोल्डरमा पूर्वानिर्धारित यूआरएल फाइल प्रतिलिपि असफल भयो, पूर्वानिर्धारित वस्तु "
 "लिङ्क परिमार्जन गर्न सम्भव छैन"
 
-#: kstarsdata.cpp:743
+#: kstarsdata.cpp:749
 #, kde-format
 msgid "Object named %1 not found"
 msgstr " %1 नामकरण गरिएको कुनै वस्तु फेला परेन ।"
 
-#: kstarsdata.cpp:1163
+#: kstarsdata.cpp:1169
 #, kde-format
 msgid "Could not set time: %1 / %2 / %3 ; %4:%5:%6"
 msgstr "समय सेट गर्न सकेन: %1 / %2 / %3 ; %4:%5:%6"
 
-#: kstarsdata.cpp:1282
+#: kstarsdata.cpp:1288
 #, kde-format
 msgid "Could not set location named %1, %2, %3"
 msgstr " %1, %2, %3 नामकरण गरिएको स्थान सेट गर्न सकेन"
@@ -28851,17 +28886,6 @@ msgstr "मध्याह्न:"
 #: rc.cpp:2450
 msgid "Sunset azimuth:"
 msgstr "सूर्यास्त दिगंश:"
-
-#. i18n: file: tools/modcalcdaylength.ui:453
-#. i18n: ectx: property (title), widget (QGroupBox, MoonBox)
-#. i18n: file: tools/modcalcplanets.ui:161
-#. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBox)
-#. i18n: file: tools/modcalcplanets.ui:512
-#. i18n: ectx: property (text), item, widget (KComboBox, PlanetComboBoxBatch)
-#: rc.cpp:2459 rc.cpp:2862 rc.cpp:2946 tools/modcalcplanets.cpp:346
-#: skyobjects/ksmoon.cpp:33
-msgid "Moon"
-msgstr "चन्द्रमा"
 
 #. i18n: file: tools/modcalcdaylength.ui:541
 #. i18n: ectx: property (text), widget (QLabel, MoonTransitAltLabel)
@@ -37671,7 +37695,7 @@ msgstr "वर्गमूल मापन"
 msgid "Please hold while loading FITS file..."
 msgstr "FITS फाइल लोड भैरहेको बेला कृपया राख्नुहोस्..."
 
-#: fitsviewer/fitsimage.cpp:132 indi/indistd.cpp:890
+#: fitsviewer/fitsimage.cpp:132 indi/indistd.cpp:891
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
