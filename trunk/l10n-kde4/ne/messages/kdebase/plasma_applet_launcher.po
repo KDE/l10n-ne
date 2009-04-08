@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n-kde4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-07 11:07+0200\n"
+"POT-Creation-Date: 2009-04-08 11:57+0200\n"
 "PO-Revision-Date: 2007-10-23 05:40+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 
-#: ui/flipscrollview.cpp:138 simpleapplet/simpleapplet.cpp:543
+#: ui/flipscrollview.cpp:138 core/applicationmodel.cpp:377
 #, fuzzy
 #| msgid "Applications"
 msgid "All Applications"
@@ -52,11 +52,12 @@ msgstr ""
 msgid "Safely Remove"
 msgstr ""
 
-#: ui/launcher.cpp:161 simpleapplet/simpleapplet.cpp:189
+#: ui/launcher.cpp:161 core/leavemodel.cpp:106
+#: simpleapplet/simpleapplet.cpp:189
 msgid "Leave"
 msgstr "Leave"
 
-#: ui/launcher.cpp:172 core/favoritesmodel.cpp:44
+#: ui/launcher.cpp:172 core/favoritesmodel.cpp:44 core/favoritesmodel.cpp:265
 #: simpleapplet/simpleapplet.cpp:171
 msgid "Favorites"
 msgstr "Favorites"
@@ -74,7 +75,8 @@ msgstr ""
 msgid "Applications"
 msgstr "Applications"
 
-#: ui/launcher.cpp:213 simpleapplet/simpleapplet.cpp:175
+#: ui/launcher.cpp:213 core/recentlyusedmodel.cpp:176
+#: simpleapplet/simpleapplet.cpp:175
 msgid "Recently Used"
 msgstr "Recently Used"
 
@@ -86,7 +88,8 @@ msgstr "Clear Recent Applications"
 msgid "Clear Recent Documents"
 msgstr "Clear Recent Documents"
 
-#: ui/launcher.cpp:233 simpleapplet/simpleapplet.cpp:174
+#: ui/launcher.cpp:233 core/systemmodel.cpp:369
+#: simpleapplet/simpleapplet.cpp:174
 #, fuzzy
 #| msgid "My Computer"
 msgid "Computer"
@@ -184,17 +187,13 @@ msgstr ""
 msgid "Suspend to RAM"
 msgstr ""
 
-#: core/leavemodel.cpp:103
+#: core/leavemodel.cpp:118
 msgid "Session"
 msgstr "Session"
 
-#: core/leavemodel.cpp:125
+#: core/leavemodel.cpp:140
 msgid "System"
 msgstr "System"
-
-#: core/applicationmodel.cpp:377
-msgid "Known Applications"
-msgstr "Known Applications"
 
 #: core/models.cpp:117
 msgid "Home Folder"
@@ -207,6 +206,18 @@ msgstr "Network Folders"
 #: core/recentlyusedmodel.cpp:107 core/searchmodel.cpp:221
 msgid "Documents"
 msgstr "Documents"
+
+#: core/recentlyusedmodel.cpp:178 simpleapplet/simpleapplet.cpp:177
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Recently Used Documents"
+msgstr "Recently Used"
+
+#: core/recentlyusedmodel.cpp:180 simpleapplet/simpleapplet.cpp:176
+#, fuzzy
+#| msgid "Clear Recent Applications"
+msgid "Recently Used Applications"
+msgstr "Clear Recent Applications"
 
 #: core/systemmodel.cpp:89
 msgid "Places"
@@ -303,18 +314,6 @@ msgstr "Your emails"
 msgid "Bookmarks"
 msgstr ""
 
-#: simpleapplet/simpleapplet.cpp:176 simpleapplet/simpleapplet.cpp:559
-#, fuzzy
-#| msgid "Clear Recent Applications"
-msgid "Recently Used Applications"
-msgstr "Clear Recent Applications"
-
-#: simpleapplet/simpleapplet.cpp:177 simpleapplet/simpleapplet.cpp:566
-#, fuzzy
-#| msgid "Recently Used"
-msgid "Recently Used Documents"
-msgstr "Recently Used"
-
 #: simpleapplet/simpleapplet.cpp:178
 msgid "System Settings"
 msgstr ""
@@ -379,11 +378,14 @@ msgstr ""
 msgid "Options"
 msgstr "Applications"
 
-#: simpleapplet/simpleapplet.cpp:545
+#: simpleapplet/simpleapplet.cpp:546
 #, fuzzy
 #| msgid "Applications"
 msgid "Actions"
 msgstr "Applications"
+
+#~ msgid "Known Applications"
+#~ msgstr "Known Applications"
 
 #, fuzzy
 #~| msgid "Lock the screen"
