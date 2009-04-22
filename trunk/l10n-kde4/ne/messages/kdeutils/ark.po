@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-21 11:27+0200\n"
+"POT-Creation-Date: 2009-04-22 11:30+0200\n"
 "PO-Revision-Date: 2007-08-26 13:40+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -202,6 +202,12 @@ msgstr ""
 #| msgid "Open 'archive'"
 msgid "Open an archive"
 msgstr "'सङ्ग्रह' खोल्नुहोस्"
+
+#: kerfuffle/adddialog.cpp:54
+#, fuzzy
+#| msgid "Simple Compressed Archive"
+msgid "Compress to archive"
+msgstr "सामान्य सङ्कुचित सङ्ग्रह"
 
 #: kerfuffle/addtoarchive.cpp:91
 msgid "No input files were given."
@@ -707,27 +713,27 @@ msgid ""
 msgstr ""
 
 #: plugins/libarchive/libarchivehandler.cpp:439
-#: plugins/libarchive/libarchivehandler.cpp:626
+#: plugins/libarchive/libarchivehandler.cpp:629
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgid "The archive reader could not be initialized."
 msgstr "सङ्ग्रह %1 अवस्थित हुँदैन ।"
 
 #: plugins/libarchive/libarchivehandler.cpp:448
-#: plugins/libarchive/libarchivehandler.cpp:635
+#: plugins/libarchive/libarchivehandler.cpp:638
 msgid "The source file could not be read."
 msgstr ""
 
 #: plugins/libarchive/libarchivehandler.cpp:457
-#: plugins/libarchive/libarchivehandler.cpp:643
+#: plugins/libarchive/libarchivehandler.cpp:646
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgid "The archive writer could not be initialized."
 msgstr "सङ्ग्रह %1 अवस्थित हुँदैन ।"
 
 #: plugins/libarchive/libarchivehandler.cpp:477
-#: plugins/libarchive/libarchivehandler.cpp:499
-#: plugins/libarchive/libarchivehandler.cpp:662
+#: plugins/libarchive/libarchivehandler.cpp:502
+#: plugins/libarchive/libarchivehandler.cpp:668
 #, kde-format
 msgid "Setting compression failed with the error '%1'"
 msgstr ""
@@ -737,17 +743,29 @@ msgstr ""
 msgid "Setting format failed with the error '%1'"
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:495
-#: plugins/libarchive/libarchivehandler.cpp:658
+#: plugins/libarchive/libarchivehandler.cpp:498
+#: plugins/libarchive/libarchivehandler.cpp:664
 #, kde-format
 msgid "The compression type '%1' is not supported by Ark."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:506
-#: plugins/libarchive/libarchivehandler.cpp:668
+#: plugins/libarchive/libarchivehandler.cpp:509
+#: plugins/libarchive/libarchivehandler.cpp:674
 #, kde-format
 msgid "Opening the archive for writing failed with error message '%1'"
 msgstr ""
+
+#: plugins/libsinglefileplugin/singlefileplugin.cpp:69
+#, fuzzy, kde-format
+#| msgid "Folder to extract to"
+msgid "Ark could not extract %1."
+msgstr "उद्धरणका लागि फोल्डर"
+
+#: plugins/libsinglefileplugin/singlefileplugin.cpp:78
+#, fuzzy, kde-format
+#| msgid "Last folders used for extraction"
+msgid "Ark could not open %1 for extraction."
+msgstr "उद्धरणका लागि प्रयोग गरिएको अन्तिम फोल्डर"
 
 #: plugins/libzipplugin/zipplugin.cpp:75
 #, fuzzy, kde-format
@@ -1368,9 +1386,6 @@ msgstr "उद्धरण पछि गन्तव्य फोल्डर �
 #~ "यदि तपाईंले अरु फाइल थप्नु भयो भने तपाईंलाई यो वास्तविक सङ्ग्रहमा रूपान्तरण गर्न "
 #~ "प्रवर्द्धन गरिनेछ ।"
 
-#~ msgid "Simple Compressed Archive"
-#~ msgstr "सामान्य सङ्कुचित सङ्ग्रह"
-
 #~ msgid "Extract Files From %1"
 #~ msgstr "%1 बाट फाइल उद्धरण गर्नुहोस्"
 
@@ -1411,9 +1426,6 @@ msgstr "उद्धरण पछि गन्तव्य फोल्डर �
 #~ "'--मा-उद्धरण' सँग प्रयोग गरियो । जब निर्दिष्ट गर्दा, 'सङ्ग्रह'\n"
 #~ "'फोल्डर' को उपफोल्डरसँग उद्धरण गरिनेछ\n"
 #~ "जसको नाम फाइलनाम विस्तार बिनाको 'सङ्ग्रह' हुनेछ ।"
-
-#~ msgid "Folder to extract to"
-#~ msgstr "उद्धरणका लागि फोल्डर"
 
 #~ msgid "Files to be added"
 #~ msgstr "थप गरिनुपर्ने फाइल"
@@ -1462,9 +1474,6 @@ msgstr "उद्धरण पछि गन्तव्य फोल्डर �
 
 #~ msgid "&Recursively add subfolders (Zip, Rar)"
 #~ msgstr "उप फोल्डरहरू (जीप, रार) पुनरावृर्ती तरिकाले थप्नुहोस्"
-
-#~ msgid "Last folders used for extraction"
-#~ msgstr "उद्धरणका लागि प्रयोग गरिएको अन्तिम फोल्डर"
 
 #~ msgid "Replace old files only with newer files"
 #~ msgstr "पुरानो फाइलहरूलाई नयाँ फाइलहरूसँग मात्र बदल्नुहोस्"
