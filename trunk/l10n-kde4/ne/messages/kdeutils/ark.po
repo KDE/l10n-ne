@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-05 11:22+0200\n"
+"POT-Creation-Date: 2009-05-06 12:10+0200\n"
 "PO-Revision-Date: 2007-08-26 13:40+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,6 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: app/extractHereDndPlugin.cpp:47 kerfuffle/extractiondialog.cpp:121
+#, fuzzy
+#| msgid "Extract"
+msgid "Extract here"
+msgstr "उद्धरण गर्नुहोस्"
 
 #: app/main.cpp:38
 msgid "Ark"
@@ -206,7 +212,7 @@ msgstr "'सङ्ग्रह' खोल्नुहोस्"
 #: kerfuffle/adddialog.cpp:54
 #, fuzzy
 #| msgid "Simple Compressed Archive"
-msgid "Compress to archive"
+msgid "Compress to Archive"
 msgstr "सामान्य सङ्कुचित सङ्ग्रह"
 
 #: kerfuffle/addtoarchive.cpp:91
@@ -306,29 +312,29 @@ msgstr "सङ्ग्रह पहिले नै अवस्थित छ �
 msgid "Folder exists"
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ"
 
-#: kerfuffle/extractiondialog.cpp:121
-#, fuzzy
-#| msgid "Extract"
-msgid "Extract here"
-msgstr "उद्धरण गर्नुहोस्"
-
-#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321
+#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321 part/part.cpp:747
 msgid "Cancel"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:138
+#: kerfuffle/jobs.cpp:110
+#, fuzzy
+#| msgid "An error occurred while opening the archive %1."
+msgid "Sorry, an error occured while performing the operation."
+msgstr "सङ्ग्रह %1 खोल्दा एउटा त्रुटि देखापर्यो ।"
+
+#: kerfuffle/jobs.cpp:141
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Loading archive..."
 msgstr "सङ्ग्रह सिर्जना गरिँदैछ..."
 
-#: kerfuffle/jobs.cpp:186
+#: kerfuffle/jobs.cpp:189
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting all files"
 msgstr "सबै फाइल झिक्नुहोस्"
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:193
 #, fuzzy, kde-format
 #| msgid "Extract all files"
 msgid "Extracting one file"
@@ -336,7 +342,7 @@ msgid_plural "Extracting %1 files"
 msgstr[0] "सबै फाइल झिक्नुहोस्"
 msgstr[1] "सबै फाइल झिक्नुहोस्"
 
-#: kerfuffle/jobs.cpp:225
+#: kerfuffle/jobs.cpp:228
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Adding a file"
@@ -344,7 +350,7 @@ msgid_plural "Adding %1 files"
 msgstr[0] "फाइलहरू थपिँदैछ..."
 msgstr[1] "फाइलहरू थपिँदैछ..."
 
-#: kerfuffle/jobs.cpp:246
+#: kerfuffle/jobs.cpp:249
 #, fuzzy, kde-format
 #| msgid "Trouble writing to the archive..."
 msgid "Deleting a file from the archive"
@@ -524,8 +530,10 @@ msgid "Click to preview the selected file"
 msgstr ""
 
 #: part/part.cpp:198
-msgid "E&xtract..."
-msgstr "उद्धरण..."
+#, fuzzy
+#| msgid "Extract"
+msgid "E&xtract"
+msgstr "उद्धरण गर्नुहोस्"
 
 #: part/part.cpp:200
 msgid ""
@@ -570,7 +578,7 @@ msgstr ""
 #: part/part.cpp:248
 #, fuzzy
 #| msgid "E&xtract..."
-msgid "Quick extract to..."
+msgid "Quick Extract To..."
 msgstr "उद्धरण..."
 
 #: part/part.cpp:311
@@ -588,13 +596,13 @@ msgstr "सङ्ग्रह पहिले नै अवस्थित छ �
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Archive Already Exists"
-msgid "File exists"
+msgid "File Exists"
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ"
 
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Open with:"
-msgid "Open file"
+msgid "Open File"
 msgstr "यससँग खोल्नुहोस्:"
 
 #: part/part.cpp:330
@@ -605,11 +613,11 @@ msgstr ""
 #: part/part.cpp:330 part/part.cpp:374 part/part.cpp:415
 #, fuzzy
 #| msgid "Open 'archive'"
-msgid "Error opening archive"
+msgid "Error Opening Archive"
 msgstr "'सङ्ग्रह' खोल्नुहोस्"
 
 #: part/part.cpp:360
-msgid "Unable to determine archive type"
+msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:361
@@ -648,6 +656,16 @@ msgstr "सबै फाइल"
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
 msgstr "फोल्डर थप्नुहोस्..."
+
+#: part/part.cpp:747
+msgid "Deleting these files is not undoable. Are you sure you want to do this?"
+msgstr ""
+
+#: part/part.cpp:747
+#, fuzzy
+#| msgid "Selected files only"
+msgid "Delete files"
+msgstr "चयन गरिएको फाइलहरू मात्र"
 
 #: plugins/7zipplugin/7zipplugin.cpp:60
 msgid "Unable to find 7zr, 7za or 7z"
@@ -1048,6 +1066,9 @@ msgstr "सबै फाइल"
 msgid "Open destination folder after extraction"
 msgstr "उद्धरण पछि गन्तव्य फोल्डर खोल्नुहोस्"
 
+#~ msgid "E&xtract..."
+#~ msgstr "उद्धरण..."
+
 #, fuzzy
 #~| msgid "An error occurred while adding the files to the archive."
 #~ msgid "Couldn't open the file '%1', libarchive can't handle it."
@@ -1199,9 +1220,6 @@ msgstr "उद्धरण पछि गन्तव्य फोल्डर �
 
 #~ msgid "Saving..."
 #~ msgstr "बचत गरिँदैछ..."
-
-#~ msgid "An error occurred while opening the archive %1."
-#~ msgstr "सङ्ग्रह %1 खोल्दा एउटा त्रुटि देखापर्यो ।"
 
 #~ msgid ""
 #~ "None of the files in the archive have been\n"
