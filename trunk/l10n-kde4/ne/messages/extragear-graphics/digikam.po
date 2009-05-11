@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-10 11:16+0200\n"
+"POT-Creation-Date: 2009-05-11 12:57+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -672,6 +672,7 @@ msgstr "तस्विरमा परिवर्तहरू लागू ग
 
 #: libs/imageproperties/imagedescedittab.cpp:538
 #: libs/imageproperties/imagedescedittab.cpp:669
+#: digikam/metadatamanager.cpp:379
 msgid "Writing metadata to files. Please wait..."
 msgstr "फाइलमा मेटाडेटा लेख्दैछ । कृपया प्रतिक्षा गर्नुहोस्..."
 
@@ -940,8 +941,9 @@ msgstr "ट्याग थम्बनेलको रूपमा सेट �
 msgid "Assign Tag '%1' to Items"
 msgstr "वस्तुमा '%1' ट्याग मानाङ्कन गर्नुहोस्"
 
-#: libs/imageproperties/talbumlistview.cpp:406 digikam/tagfolderview.cpp:943
-#: digikam/albumiconview.cpp:1498 digikam/tagfilterview.cpp:663
+#: libs/imageproperties/talbumlistview.cpp:406 digikam/metadatamanager.cpp:250
+#: digikam/tagfolderview.cpp:943 digikam/albumiconview.cpp:1498
+#: digikam/tagfilterview.cpp:663
 #, fuzzy
 #| msgid "Assign tag to pictures. Please wait..."
 msgid "Assigning image tags. Please wait..."
@@ -2122,7 +2124,7 @@ msgstr "एल्बम"
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
 #: digikam/digikamapp.cpp:2374
-#: utilities/imageeditor/editor/editorwindow.cpp:1874
+#: utilities/imageeditor/editor/editorwindow.cpp:1880
 #: utilities/queuemanager/queuemgrwindow.cpp:693
 #: utilities/lighttable/lighttablewindow.cpp:1587
 #: utilities/cameragui/cameraui.cpp:2103
@@ -3236,6 +3238,30 @@ msgstr ""
 "क्यामेरा स्वत: पत्ता लगाउन असफल; कृपया यो राम्रोसँग जडान भएको र खुला छ भन्ने यकिन "
 "गर्नुहोस् । पुन: प्रयास गर्न चाहनुहुन्छ ?"
 
+#: digikam/metadatamanager.cpp:256 digikam/albumiconview.cpp:1501
+#, fuzzy
+#| msgid "Remove tag from pictures. Please wait..."
+msgid "Removing image tags. Please wait..."
+msgstr "तस्विरबाट ट्याग हटाउनुहोस् । कृपया प्रतिक्षा गर्नुहोस्..."
+
+#: digikam/metadatamanager.cpp:299 digikam/albumiconview.cpp:2181
+#, fuzzy
+#| msgid "Assign tag to pictures. Please wait..."
+msgid "Assigning image ratings. Please wait..."
+msgstr "तस्विरमा ट्याग मानाङ्कन गर्दैछ । कृपया प्रतिक्षा गर्नुहोस्..."
+
+#: digikam/metadatamanager.cpp:333
+#, fuzzy
+#| msgid "<b>Updating thumbnails database in progress. Please wait...</b>"
+msgid "Updating orientation in database. Please wait..."
+msgstr "<b>थम्बनेल अद्यावधिक हुँदैछ । कृपया प्रतिक्षा गर्नुहोस्...</b>"
+
+#: digikam/metadatamanager.cpp:345 digikam/albumiconview.cpp:1754
+#, fuzzy
+#| msgid "Fix Exif Orientation tag on pictures. Please wait..."
+msgid "Revising Exif Orientation tags. Please wait..."
+msgstr "तस्विरमा Exif अभिमुखीकरण ट्याग स्थिर । कृपया प्रतिक्षा गर्नुहोस्..."
+
 #: digikam/contextmenuhelper.cpp:173 digikam/albumfolderview.cpp:1071
 #: digikam/albumfolderview.cpp:1108 digikam/albumdragdrop.cpp:140
 #: digikam/albumdragdrop.cpp:177
@@ -4334,7 +4360,7 @@ msgstr ""
 msgid "Select the file types (mime types) that you want shown"
 msgstr ""
 
-#: digikam/albumiconview.cpp:572 digikam/digikamimageview.cpp:149
+#: digikam/albumiconview.cpp:572 digikam/digikamimageview.cpp:129
 #: utilities/cameragui/cameraui.cpp:353
 #, fuzzy
 #| msgid "View..."
@@ -4352,7 +4378,6 @@ msgid "Enter new name (without extension):"
 msgstr "नयाँ नाम (विस्तार बिना) प्रविष्ट गर्नुहोस्:"
 
 #: digikam/albumiconview.cpp:1025 digikam/imageviewutilities.cpp:316
-#: digikam/digikamimageview.cpp:128
 #: utilities/imageeditor/editor/imagewindow.cpp:1355
 #: utilities/imageeditor/editor/imagewindow.cpp:1382
 #: utilities/imageeditor/editor/imagewindow.cpp:1413
@@ -4397,18 +4422,6 @@ msgstr "सबै वस्तुमा ट्याग मानाङ्कन
 msgid "Assign Tags to &All Items"
 msgstr "सबै वस्तुमा ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/albumiconview.cpp:1501
-#, fuzzy
-#| msgid "Remove tag from pictures. Please wait..."
-msgid "Removing image tags. Please wait..."
-msgstr "तस्विरबाट ट्याग हटाउनुहोस् । कृपया प्रतिक्षा गर्नुहोस्..."
-
-#: digikam/albumiconview.cpp:1754
-#, fuzzy
-#| msgid "Fix Exif Orientation tag on pictures. Please wait..."
-msgid "Revising Exif Orientation tags. Please wait..."
-msgstr "तस्विरमा Exif अभिमुखीकरण ट्याग स्थिर । कृपया प्रतिक्षा गर्नुहोस्..."
-
 #: digikam/albumiconview.cpp:1783
 #, fuzzy, kde-format
 #| msgid "Failed to correct Exif orientation for file %1."
@@ -4420,12 +4433,6 @@ msgstr "%1 फाइलका लागि Exif अभिमुखीकरण �
 #| msgid "Failed to correct Exif orientation for file %1."
 msgid "Failed to revise Exif orientation these files:"
 msgstr "%1 फाइलका लागि Exif अभिमुखीकरण सुधार गर्न असफल"
-
-#: digikam/albumiconview.cpp:2181
-#, fuzzy
-#| msgid "Assign tag to pictures. Please wait..."
-msgid "Assigning image ratings. Please wait..."
-msgstr "तस्विरमा ट्याग मानाङ्कन गर्दैछ । कृपया प्रतिक्षा गर्नुहोस्..."
 
 #: digikam/albumiconview.cpp:2340 digikam/imageviewutilities.cpp:230
 #, fuzzy
@@ -14669,7 +14676,7 @@ msgstr "बचत हुँदैछ: "
 
 #: utilities/imageeditor/editor/editorwindow.cpp:1345
 #: utilities/imageeditor/editor/editorwindow.cpp:1386
-#: utilities/imageeditor/editor/editorwindow.cpp:1597
+#: utilities/imageeditor/editor/editorwindow.cpp:1600
 #, kde-format
 msgid ""
 "Failed to save file\n"
@@ -14683,32 +14690,32 @@ msgstr ""
 "\"%2\" मा बचत गर्न असफल ।"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:1464
-#: utilities/imageeditor/editor/editorwindow.cpp:1657
+#: utilities/imageeditor/editor/editorwindow.cpp:1660
 #, kde-format
 msgid "Could not open a temporary file in the folder \"%1\": %2 (%3)"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1521
+#: utilities/imageeditor/editor/editorwindow.cpp:1524
 msgid "New Image File Name"
 msgstr "नयाँ छवि फाइलनाम"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1588
+#: utilities/imageeditor/editor/editorwindow.cpp:1591
 #, kde-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "लक्ष्य छवि फाइल ढाँचा \"%1\" समर्थन गर्दैन ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1627
+#: utilities/imageeditor/editor/editorwindow.cpp:1630
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "\"%1\" नामको फाइल पहिल्यै अवस्थित छ । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1631
-#: utilities/imageeditor/editor/editorwindow.cpp:1691
+#: utilities/imageeditor/editor/editorwindow.cpp:1634
+#: utilities/imageeditor/editor/editorwindow.cpp:1697
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1686
+#: utilities/imageeditor/editor/editorwindow.cpp:1692
 #, kde-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -14716,45 +14723,45 @@ msgid ""
 msgstr ""
 "\"%1\" नामको फाइलमा तपाईँलाई लेख्ने अनुमति छैन । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1728
+#: utilities/imageeditor/editor/editorwindow.cpp:1734
 msgid "Failed to overwrite original file"
 msgstr "मौलिक फाइल अधिलेखन गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1729
+#: utilities/imageeditor/editor/editorwindow.cpp:1735
 msgid "Error Saving File"
 msgstr "फाइल बचत गर्दा त्रुटि"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1775
+#: utilities/imageeditor/editor/editorwindow.cpp:1781
 #, fuzzy
 #| msgid "Color Managed View is enabled"
 msgid "Color-Managed View is enabled."
 msgstr "रङ सन्तुलन दृश्य सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1777
+#: utilities/imageeditor/editor/editorwindow.cpp:1783
 #, fuzzy
 #| msgid "Color Managed View is disabled"
 msgid "Color-Managed View is disabled."
 msgstr "रङ सन्तुलन दृश्य अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1781
+#: utilities/imageeditor/editor/editorwindow.cpp:1787
 msgid ""
 "Color Management is not configured, so the Color-Managed View is not "
 "available."
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1803
+#: utilities/imageeditor/editor/editorwindow.cpp:1809
 msgid "Under-Exposure indicator is enabled"
 msgstr "न्यून-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1804
+#: utilities/imageeditor/editor/editorwindow.cpp:1810
 msgid "Under-Exposure indicator is disabled"
 msgstr "न्यून-प्रर्दशन सूचक अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1824
+#: utilities/imageeditor/editor/editorwindow.cpp:1830
 msgid "Over-Exposure indicator is enabled"
 msgstr "अधिक-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1825
+#: utilities/imageeditor/editor/editorwindow.cpp:1831
 msgid "Over-Exposure indicator is disabled"
 msgstr "अधिक-प्रर्दशन सूचक अक्षम गरियो"
 
