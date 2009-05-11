@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackage\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:08+0200\n"
+"POT-Creation-Date: 2009-05-11 07:07+0200\n"
 "PO-Revision-Date: 2007-08-24 13:11+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -75,6 +75,23 @@ msgstr "--केही फेला परेन--"
 msgid "Incorrect URL type"
 msgstr "गलत यूआरएल प्रकार"
 
+#: kpackage.cpp:118
+msgid "Management Mode"
+msgstr "प्रबन्ध मोड"
+
+#: kpackage.cpp:157
+msgid "Select Package"
+msgstr "प्याकेज चयन गर्नुहोस्"
+
+#: kpackage.cpp:253
+#, kde-format
+msgid "Malformed URL: %1"
+msgstr "विकृत यूआरएल: %1"
+
+#: kpackage.cpp:299
+msgid "Open location:"
+msgstr "खुला स्थान:"
+
 #: kpConfig.cpp:16
 #, fuzzy
 #| msgid "su command"
@@ -92,54 +109,6 @@ msgstr "बिशेषाधिकार पाएका आदेश प्र
 #| msgid "&Misc"
 msgid "Misc"
 msgstr "विविध"
-
-#: kpPty.cpp:157
-msgid ""
-"The action you requested uses ssh. Please enter the password or pass "
-"phrase.\n"
-msgstr ""
-"तपाईँले अनुरोध गरिएको कार्यले ssh. प्रयोग गर्छ । कृपया पासवर्ड वा पासफ्रेज प्रविष्ट "
-"गर्नुहोस् ।\n"
-
-#: kpPty.cpp:160
-msgid ""
-"The action you requested needs root privileges. Please enter root's "
-"password.\n"
-msgstr ""
-"तपाईँले अनुरोध गरिएको कार्यलाई मूल विशेषाधिकार आवश्यक पर्छ । कृपया रूटको पासवर्ड प्रविष्ट "
-"गर्नुहोस् ।\n"
-
-#: kpPty.cpp:163
-#, fuzzy
-#| msgid ""
-#| "The action you requested needs root privileges. Please enter your SUDO "
-#| "password.\n"
-msgid ""
-"The action you requested needs root privileges. Please enter your password.\n"
-msgstr ""
-"तपाईँले अनुरोध गरिएको कार्यलाई मूल विशेषाधिकार आवश्यक पर्छ । कृपया तपाईँको SUDO पासवर्ड "
-"प्रविष्ट गर्नुहोस् ।\n"
-
-#: kpPty.cpp:181
-msgid "Login Problem: Please login manually"
-msgstr "लगइन समस्या: कृपया म्यानुअली लगइन गर्नुहोस्"
-
-#: kpackage.cpp:118
-msgid "Management Mode"
-msgstr "प्रबन्ध मोड"
-
-#: kpackage.cpp:157
-msgid "Select Package"
-msgstr "प्याकेज चयन गर्नुहोस्"
-
-#: kpackage.cpp:253
-#, kde-format
-msgid "Malformed URL: %1"
-msgstr "विकृत यूआरएल: %1"
-
-#: kpackage.cpp:299
-msgid "Open location:"
-msgstr "खुला स्थान:"
 
 #: kpkg.cpp:105
 #, fuzzy
@@ -226,6 +195,37 @@ msgstr "संस्करण"
 #: kplview.cpp:68
 msgid "Old Version"
 msgstr "पुरानो संस्करण"
+
+#: kpPty.cpp:157
+msgid ""
+"The action you requested uses ssh. Please enter the password or pass "
+"phrase.\n"
+msgstr ""
+"तपाईँले अनुरोध गरिएको कार्यले ssh. प्रयोग गर्छ । कृपया पासवर्ड वा पासफ्रेज प्रविष्ट "
+"गर्नुहोस् ।\n"
+
+#: kpPty.cpp:160
+msgid ""
+"The action you requested needs root privileges. Please enter root's "
+"password.\n"
+msgstr ""
+"तपाईँले अनुरोध गरिएको कार्यलाई मूल विशेषाधिकार आवश्यक पर्छ । कृपया रूटको पासवर्ड प्रविष्ट "
+"गर्नुहोस् ।\n"
+
+#: kpPty.cpp:163
+#, fuzzy
+#| msgid ""
+#| "The action you requested needs root privileges. Please enter your SUDO "
+#| "password.\n"
+msgid ""
+"The action you requested needs root privileges. Please enter your password.\n"
+msgstr ""
+"तपाईँले अनुरोध गरिएको कार्यलाई मूल विशेषाधिकार आवश्यक पर्छ । कृपया तपाईँको SUDO पासवर्ड "
+"प्रविष्ट गर्नुहोस् ।\n"
+
+#: kpPty.cpp:181
+msgid "Login Problem: Please login manually"
+msgstr "लगइन समस्या: कृपया म्यानुअली लगइन गर्नुहोस्"
 
 #: main.cpp:50
 msgid "KDE Package installer"
@@ -643,17 +643,9 @@ msgstr ""
 msgid "ssh"
 msgstr ""
 
-#. i18n: file: Misc.ui:22
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Verify)
-#: rc.cpp:18
-#, fuzzy
-#| msgid "Verify file list"
-msgid "Verify List of Files"
-msgstr "फाइल सूची रूजु गर्नुहोस्"
-
 #. i18n: file: kpackageSettings.kcfg:8
 #. i18n: ectx: label, entry, group (kpackage)
-#: rc.cpp:21
+#: rc.cpp:18
 #, fuzzy
 #| msgid "Execute Privileged Commands Using"
 msgid "The way to execute priviliged commands."
@@ -661,7 +653,7 @@ msgstr "बिशेषाधिकार पाएका आदेश प्र
 
 #. i18n: file: kpackageSettings.kcfg:18
 #. i18n: ectx: label, entry, group (kpackage)
-#: rc.cpp:24
+#: rc.cpp:21
 #, fuzzy
 #| msgid "Verify file list"
 msgid "Verify file list."
@@ -669,27 +661,35 @@ msgstr "फाइल सूची रूजु गर्नुहोस्"
 
 #. i18n: file: kpackageui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:27
+#: rc.cpp:24
 msgid "&File"
 msgstr "फाइल"
 
 #. i18n: file: kpackageui.rc:17
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:30
+#: rc.cpp:27
 msgid "&Edit"
 msgstr ""
 
 #. i18n: file: kpackageui.rc:25
 #. i18n: ectx: Menu (packages)
-#: rc.cpp:33
+#: rc.cpp:30
 msgid "&Packages"
 msgstr "प्याकेज"
 
 #. i18n: file: kpackageui.rc:42
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:36
+#: rc.cpp:33
 msgid "&Settings"
 msgstr "सेटिङ"
+
+#. i18n: file: Misc.ui:22
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Verify)
+#: rc.cpp:36
+#, fuzzy
+#| msgid "Verify file list"
+msgid "Verify List of Files"
+msgstr "फाइल सूची रूजु गर्नुहोस्"
 
 #: rc.cpp:37
 msgctxt "NAME OF TRANSLATORS"
