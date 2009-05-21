@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-15 11:35+0200\n"
+"POT-Creation-Date: 2009-05-21 11:32+0200\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -169,31 +169,44 @@ msgstr "<qt>फाइल <b>%1</b> सुर्जना गर्दा त्�
 msgid "Failed to create folder"
 msgstr "फोल्डर सिर्जना गर्न असफल"
 
-#: keyresolver.cpp:264
+#: keyresolver.cpp:302
 msgid ""
 "One or more of your configured OpenPGP encryption keys or S/MIME "
 "certificates is not fully trusted for encryption."
 msgstr ""
 
-#: keyresolver.cpp:270
+#: keyresolver.cpp:305
+#, kde-format
+msgid ""
+"One or more of the OpenPGP encryption keys or S/MIME certificates for "
+"recipient \"%1\" is not fully trusted for encryption."
+msgstr ""
+
+#: keyresolver.cpp:311
 msgid ""
 "\n"
 "The following keys are only marginally trusted: \n"
 msgstr ""
 
-#: keyresolver.cpp:274
+#: keyresolver.cpp:315
 msgid ""
 "\n"
 "The following keys or certificates have unknown trust level: \n"
 msgstr ""
 
-#: keyresolver.cpp:278
+#: keyresolver.cpp:319
+msgid ""
+"\n"
+"The following keys or certificates are <b>revoked</b>: \n"
+msgstr ""
+
+#: keyresolver.cpp:323
 #, fuzzy
 #| msgid "Unusable Encryption Keys"
 msgid "Not Fully Trusted Encryption Keys"
 msgstr "अनुपयोगी गुप्तिकरण कुञ्जी"
 
-#: keyresolver.cpp:567
+#: keyresolver.cpp:612
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP signing key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -214,7 +227,7 @@ msgstr[1] ""
 "<p>तपाईँको OpenPGP साइनिङ कुञ्जी</p><p align=center><b>%2</b> (KeyID 0x%3)</"
 "p><p>को %1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:571
+#: keyresolver.cpp:616
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP encryption key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -235,7 +248,7 @@ msgstr[1] ""
 "<p>तपाईँको OpenPGP गुप्तिकरण कुञ्जी</p><p align=center><b>%2</b> (KeyID 0x%3)</"
 "p><p>को %1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:575
+#: keyresolver.cpp:620
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The OpenPGP key for</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -256,7 +269,7 @@ msgstr[1] ""
 "<p>OpenPGP कुञ्जी</p><p align=center><b>%2</b> (KeyID 0x%3)</p><p>को %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:586
+#: keyresolver.cpp:631
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The root certificate</p><p align=center><b>%4</b></p><p>for your S/"
@@ -283,7 +296,7 @@ msgstr[1] ""
 "प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:592
+#: keyresolver.cpp:637
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The root certificate</p><p align=center><b>%4</b></p><p>for your S/"
@@ -310,7 +323,7 @@ msgstr[1] ""
 "प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:598
+#: keyresolver.cpp:643
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The root certificate</p><p align=center><b>%4</b></p><p>for S/MIME "
@@ -337,7 +350,7 @@ msgstr[1] ""
 "p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा कम दिनमा म्ययाद "
 "समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:605
+#: keyresolver.cpp:650
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -364,7 +377,7 @@ msgstr[1] ""
 "साइनिङ प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 "
 "भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:611
+#: keyresolver.cpp:656
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -391,7 +404,7 @@ msgstr[1] ""
 "गुप्तिकरण प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %"
 "1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:617
+#: keyresolver.cpp:662
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -418,7 +431,7 @@ msgstr[1] ""
 "प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:629
+#: keyresolver.cpp:674
 #, fuzzy, kde-format
 msgid ""
 "<p>Your S/MIME signing certificate</p><p align=center><b>%2</b> (serial "
@@ -433,7 +446,7 @@ msgstr[1] ""
 "<p>तपाईँको S/MIME साइनिङ प्रमाणपत्र</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)"
 "</p><p>एक भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:633
+#: keyresolver.cpp:678
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your S/MIME encryption certificate</p><p align=center><b>%2</b> "
@@ -454,7 +467,7 @@ msgstr[1] ""
 "<p>तपाईँको S/MIME गुप्तिकरण प्रमाणपत्र</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)"
 "</p><p>%1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:637
+#: keyresolver.cpp:682
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The S/MIME certificate for</p><p align=center><b>%2</b> (serial number "
@@ -475,19 +488,19 @@ msgstr[1] ""
 "<p>S/MIME प्रमाणपत्रको</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p>%1 "
 "भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:648
+#: keyresolver.cpp:693
 #, fuzzy
 #| msgid "OpenPGP Key Expires Soon"
 msgid "OpenPGP Key Expired"
 msgstr "OpenPGP कुञ्जीको चाडै म्याद समाप्त हुन्छ"
 
-#: keyresolver.cpp:649
+#: keyresolver.cpp:694
 #, fuzzy
 #| msgid "S/MIME Certificate Expires Soon"
 msgid "S/MIME Certificate Expired"
 msgstr "S/MIME प्रमाणपत्रको चाडै म्याद समाप्त हुन्छ"
 
-#: keyresolver.cpp:672
+#: keyresolver.cpp:717
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP signing key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -508,7 +521,7 @@ msgstr[1] ""
 "<p>तपाईँको OpenPGP साइनिङ कुञ्जी</p><p align=center><b>%2</b> (KeyID 0x%3)</"
 "p><p>को %1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:676
+#: keyresolver.cpp:721
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your OpenPGP encryption key</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -529,7 +542,7 @@ msgstr[1] ""
 "<p>तपाईँको OpenPGP गुप्तिकरण कुञ्जी</p><p align=center><b>%2</b> (KeyID 0x%3)</"
 "p><p>को %1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:680
+#: keyresolver.cpp:725
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The OpenPGP key for</p><p align=center><b>%2</b> (KeyID 0x%3)</"
@@ -550,7 +563,7 @@ msgstr[1] ""
 "<p>OpenPGP कुञ्जी</p><p align=center><b>%2</b> (KeyID 0x%3)</p><p>को %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:691
+#: keyresolver.cpp:736
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The root certificate</p><p align=center><b>%4</b></p><p>for your S/"
@@ -577,7 +590,7 @@ msgstr[1] ""
 "प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:697
+#: keyresolver.cpp:742
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The root certificate</p><p align=center><b>%4</b></p><p>for your S/"
@@ -604,7 +617,7 @@ msgstr[1] ""
 "प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:703
+#: keyresolver.cpp:748
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The root certificate</p><p align=center><b>%4</b></p><p>for S/MIME "
@@ -631,7 +644,7 @@ msgstr[1] ""
 "p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा कम दिनमा म्ययाद "
 "समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:710
+#: keyresolver.cpp:755
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -658,7 +671,7 @@ msgstr[1] ""
 "साइनिङ प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 "
 "भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:716
+#: keyresolver.cpp:761
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -685,7 +698,7 @@ msgstr[1] ""
 "गुप्तिकरण प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %"
 "1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:722
+#: keyresolver.cpp:767
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The intermediate CA certificate</p><p align=center><b>%4</b></p><p>for "
@@ -712,7 +725,7 @@ msgstr[1] ""
 "प्रमाणपत्रका लागि</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p> %1 भन्दा "
 "कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:734
+#: keyresolver.cpp:779
 #, fuzzy, kde-format
 msgid ""
 "<p>Your S/MIME signing certificate</p><p align=\"center\"><b>%2</b> (serial "
@@ -727,7 +740,7 @@ msgstr[1] ""
 "<p>तपाईँको S/MIME साइनिङ प्रमाणपत्र</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)"
 "</p><p>एक भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:738
+#: keyresolver.cpp:783
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Your S/MIME encryption certificate</p><p align=center><b>%2</b> "
@@ -748,7 +761,7 @@ msgstr[1] ""
 "<p>तपाईँको S/MIME गुप्तिकरण प्रमाणपत्र</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)"
 "</p><p>%1 भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:742
+#: keyresolver.cpp:787
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The S/MIME certificate for</p><p align=center><b>%2</b> (serial number "
@@ -769,15 +782,15 @@ msgstr[1] ""
 "<p>S/MIME प्रमाणपत्रको</p><p align=center><b>%2</b> (क्रम सङ्ख्या %3)</p><p>%1 "
 "भन्दा कम दिनमा म्याद समाप्त हुन्छ ।</p>"
 
-#: keyresolver.cpp:753
+#: keyresolver.cpp:798
 msgid "OpenPGP Key Expires Soon"
 msgstr "OpenPGP कुञ्जीको चाडै म्याद समाप्त हुन्छ"
 
-#: keyresolver.cpp:754
+#: keyresolver.cpp:799
 msgid "S/MIME Certificate Expires Soon"
 msgstr "S/MIME प्रमाणपत्रको चाडै म्याद समाप्त हुन्छ"
 
-#: keyresolver.cpp:789
+#: keyresolver.cpp:834
 msgid ""
 "One or more of your configured OpenPGP encryption keys or S/MIME "
 "certificates is not usable for encryption. Please reconfigure your "
@@ -792,11 +805,11 @@ msgstr ""
 "तपाईँले जारी राख्नुहोस् रोजेमा, र कुञ्जी पछाडि आवश्यक भएमा, तपाईँलाई प्रयोग गरिने कुञ्जी "
 "निर्दिष्ट गर्न प्रोत्साहन गरिन्छ ।"
 
-#: keyresolver.cpp:797 keyresolver.cpp:1112 keyresolver.cpp:1139
+#: keyresolver.cpp:842 keyresolver.cpp:1157 keyresolver.cpp:1184
 msgid "Unusable Encryption Keys"
 msgstr "अनुपयोगी गुप्तिकरण कुञ्जी"
 
-#: keyresolver.cpp:833
+#: keyresolver.cpp:878
 msgid ""
 "One or more of your configured OpenPGP signing keys or S/MIME signing "
 "certificates is not usable for signing. Please reconfigure your signing keys "
@@ -810,11 +823,11 @@ msgstr ""
 "यदि तपाईँले जारी राख्न रोजेमा, कुञ्जी पछि चाहिएमा, तपाईँलाई कुञ्जी प्रयोग गर्नका लागि "
 "निर्दिष्ट गर्न प्रोत्साहित गरिने छ ।"
 
-#: keyresolver.cpp:841 keyresolver.cpp:1166 keyresolver.cpp:1183
+#: keyresolver.cpp:886 keyresolver.cpp:1211 keyresolver.cpp:1228
 msgid "Unusable Signing Keys"
 msgstr "अनुपयोगी साइनिङ कुञ्जी"
 
-#: keyresolver.cpp:1103
+#: keyresolver.cpp:1148
 msgid ""
 "Examination of recipient's encryption preferences yielded that the message "
 "should be encrypted using OpenPGP, at least for some recipients;\n"
@@ -830,7 +843,7 @@ msgstr ""
 "तपाईँले आफँलाई गुप्तिकरण नगरि निरन्तर गर्न सक्नुहुन्छ, तर सावधान हुनुहोस् तपाईँले त्यसो गरेमा "
 "आफ्नो सन्देश पढ्न समर्थ हुनुहुने छैन ।"
 
-#: keyresolver.cpp:1130
+#: keyresolver.cpp:1175
 msgid ""
 "Examination of recipient's encryption preferences yielded that the message "
 "should be encrypted using S/MIME, at least for some recipients;\n"
@@ -845,7 +858,7 @@ msgstr ""
 "तपाईँले आफँलाई गुप्तिकरण नगरि निरन्तर गर्न सक्नुहुन्छ, तर सावधान हुनुहोस् तपाईँले त्यसो गरेमा "
 "आफ्नो सन्देश पढ्न समर्थ हुनुहुने छैन ।"
 
-#: keyresolver.cpp:1160
+#: keyresolver.cpp:1205
 msgid ""
 "Examination of recipient's signing preferences yielded that the message "
 "should be signed using OpenPGP, at least for some recipients;\n"
@@ -856,11 +869,11 @@ msgstr ""
 "साइनिङ प्राथमिकता प्राप्त सन्देशको परीक्षण;\n"
 "तापनि, तपाईँले यो परिचयका लागि वैध OpenPGP साइनिङ प्रमाणपत्र कन्फिगर गर्नुभएको छैन ।"
 
-#: keyresolver.cpp:1167
+#: keyresolver.cpp:1212
 msgid "Do Not OpenPGP-Sign"
 msgstr "OpenPGP चिन्ह छैन"
 
-#: keyresolver.cpp:1177
+#: keyresolver.cpp:1222
 msgid ""
 "Examination of recipient's signing preferences yielded that the message "
 "should be signed using S/MIME, at least for some recipients;\n"
@@ -871,11 +884,11 @@ msgstr ""
 "प्राथमिकता प्राप्त सन्देशको परीक्षण;\n"
 "तापनि, तपाईँले यो परिचयका लागि वैध S/MIME साइनिङ प्रमाणपत्र कन्फिगर गर्नुभएको छैन ।"
 
-#: keyresolver.cpp:1184
+#: keyresolver.cpp:1229
 msgid "Do Not S/MIME-Sign"
 msgstr "S/MIME चिन्ह छैन"
 
-#: keyresolver.cpp:1241
+#: keyresolver.cpp:1286
 msgid ""
 "Examination of recipient's signing preferences showed no common type of "
 "signature matching your available signing keys.\n"
@@ -885,11 +898,11 @@ msgstr ""
 "साइनिङ प्राथमिकता परीक्षण ।\n"
 "सन्देश साइनिङ नगरि पठउनुहुन्छ?"
 
-#: keyresolver.cpp:1245
+#: keyresolver.cpp:1290
 msgid "No signing possible"
 msgstr "साइनिङ सम्भव छैन"
 
-#: keyresolver.cpp:1400
+#: keyresolver.cpp:1445
 msgid ""
 "You did not select an encryption key for yourself (encrypt to self). You "
 "will not be able to decrypt your own message if you encrypt it."
@@ -897,16 +910,16 @@ msgstr ""
 "तपाईँले आफ्नै लागि गुप्तिकरण कुञ्जी चयन गर्नुभएको थिएन (आफँलाई गुप्त राख्न) । तपाईँले आफ्नो "
 "सन्देश गुप्तिकरण गरेमा यसको गप्तलेखन हटाउन सक्नुहुने छैन ।"
 
-#: keyresolver.cpp:1404 keyresolver.cpp:1428 keyresolver.cpp:1442
+#: keyresolver.cpp:1449 keyresolver.cpp:1473 keyresolver.cpp:1487
 msgid "Missing Key Warning"
 msgstr "कुञ्जी चेतावनी छुटेको छ"
 
-#: keyresolver.cpp:1405 keyresolver.cpp:1443 messagecomposer.cpp:926
+#: keyresolver.cpp:1450 keyresolver.cpp:1488 messagecomposer.cpp:926
 #: messagecomposer.cpp:951 messagecomposer.cpp:998
 msgid "&Encrypt"
 msgstr "गुप्त"
 
-#: keyresolver.cpp:1421
+#: keyresolver.cpp:1466
 msgid ""
 "You did not select an encryption key for the recipient of this message; "
 "therefore, the message will not be encrypted."
@@ -914,7 +927,7 @@ msgstr ""
 "तपाईँले यो सन्देशको प्रापकका लागि एउटा गुप्तिकरण कुञ्जी चयन गर्नुभएको थिएन; त्यसैले, सन्देश "
 "गुप्तिकृत हुने छैन ।"
 
-#: keyresolver.cpp:1424
+#: keyresolver.cpp:1469
 msgid ""
 "You did not select an encryption key for any of the recipients of this "
 "message; therefore, the message will not be encrypted."
@@ -922,11 +935,11 @@ msgstr ""
 "तपाईँले यो सन्देशको कुनै पनि प्रापकका लागि एउटा गुप्तिकरण कुञ्जी चयन गर्नुभएको थिएन; "
 "त्यसैले, सन्देश गुप्तिकृत हुने छैन ।"
 
-#: keyresolver.cpp:1429 messagecomposer.cpp:974
+#: keyresolver.cpp:1474 messagecomposer.cpp:974
 msgid "Send &Unencrypted"
 msgstr "गुप्तिकृत नभएको पठाउनुहोस्"
 
-#: keyresolver.cpp:1434
+#: keyresolver.cpp:1479
 msgid ""
 "You did not select an encryption key for one of the recipients: this person "
 "will not be able to decrypt the message if you encrypt it."
@@ -934,7 +947,7 @@ msgstr ""
 "तपाईँले एउटा प्रापकका लागि पनि एउटा गुप्तिकरण कुञ्जी चयन गर्नुभएको थिएन: यदि तपाईँले "
 "सन्देश गुप्तिकरण गरेमा यो व्यक्तिले यसलाई गुप्तिकरणबाट हटाउन सक्ने छैन ।"
 
-#: keyresolver.cpp:1437
+#: keyresolver.cpp:1482
 msgid ""
 "You did not select encryption keys for some of the recipients: these persons "
 "will not be able to decrypt the message if you encrypt it."
@@ -942,11 +955,11 @@ msgstr ""
 "तपाईँले केही प्रापकका लागि गुप्तिकरण कुञ्जी चयन गर्नुभएको थिएन: यदि तपाईँले सन्देश गुप्तिकरण "
 "गरेमा यि व्यक्तिले यसलाई गुप्तिकरणबाट हटाउन सक्ने छैनन् ।"
 
-#: keyresolver.cpp:1495
+#: keyresolver.cpp:1540
 msgid "Encryption Key Selection"
 msgstr "गुप्तिकरण कुञ्जी चयन"
 
-#: keyresolver.cpp:1537
+#: keyresolver.cpp:1582
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "if in your language something like 'key(s)' isn't possible please use the "
@@ -967,7 +980,7 @@ msgstr ""
 "\n"
 "कृपया यो प्रापकका लागि प्रयोग गरिएका हुनुपर्ने कुञ्जी(हरू) पुन: चयन गर्नुहोस् ।"
 
-#: keyresolver.cpp:1580
+#: keyresolver.cpp:1625
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "if in your language something like 'key(s)' isn't possible please use the "
@@ -989,7 +1002,7 @@ msgstr ""
 "\n"
 "यो प्रापकका लागि प्रयोग गरिएका हुनुपर्ने कुञ्जी(हरू) चयन गर्नुहोस् ।"
 
-#: keyresolver.cpp:1590
+#: keyresolver.cpp:1635
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "if in your language something like 'key(s)' isn't possible please use the "
@@ -1010,11 +1023,11 @@ msgstr ""
 "\n"
 "यो प्रापकका लागि प्रयोग गरिएको हुनुपर्ने कुञ्जी(हरू) चयन गर्नुहोस् ।"
 
-#: keyresolver.cpp:1697
+#: keyresolver.cpp:1742
 msgid "Name Selection"
 msgstr "नाम चयन"
 
-#: keyresolver.cpp:1697
+#: keyresolver.cpp:1742
 #, fuzzy, kde-format
 #| msgid "Which name shall the contact '%1' have in your addressbook?"
 msgid "Which name shall the contact '%1' have in your address book?"
@@ -1296,7 +1309,7 @@ msgstr "नयाँ वा परिवर्तित: %1 (गोप्य क
 msgid "New or changed: %1"
 msgstr "नयाँ वा परिवर्तित: %1"
 
-#: objecttreeparser.cpp:1716 kmcommands.cpp:3083 kmcomposewin.cpp:4270
+#: objecttreeparser.cpp:1716 kmcommands.cpp:3083 kmcomposewin.cpp:4268
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -1307,12 +1320,12 @@ msgstr ""
 #: objecttreeparser.cpp:1722 messagecomposer.cpp:592 messagecomposer.cpp:600
 #: messagecomposer.cpp:614 kmcommands.cpp:3085 kmcommands.cpp:3090
 #: kmcommands.cpp:3099 kmcommands.cpp:3108 kmcommands.cpp:3126
-#: kmcommands.cpp:3137 kmcommands.cpp:3177 kmcomposewin.cpp:4272
-#: kmcomposewin.cpp:4277 kmcomposewin.cpp:4286
+#: kmcommands.cpp:3137 kmcommands.cpp:3177 kmcomposewin.cpp:4270
+#: kmcomposewin.cpp:4275 kmcomposewin.cpp:4284
 msgid "Chiasmus Backend Error"
 msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
 
-#: objecttreeparser.cpp:1728 kmcommands.cpp:3096 kmcomposewin.cpp:4283
+#: objecttreeparser.cpp:1728 kmcommands.cpp:3096 kmcomposewin.cpp:4281
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -1320,7 +1333,7 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x प्राप्ति कुञ्जी \" प्रकार्यले स्ट्रिङ सूची "
 "फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
 
-#: objecttreeparser.cpp:1736 kmcommands.cpp:3105 kmcomposewin.cpp:4292
+#: objecttreeparser.cpp:1736 kmcommands.cpp:3105 kmcomposewin.cpp:4290
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -2961,16 +2974,16 @@ msgstr "साइज"
 msgid "Save &As..."
 msgstr "यस रूपमा बचत गर्नुहोस्..."
 
-#: kmmimeparttree.cpp:173 kmreaderwin.cpp:2038 kmcomposewin.cpp:2669
+#: kmmimeparttree.cpp:173 kmreaderwin.cpp:2059 kmcomposewin.cpp:2669
 msgctxt "to open"
 msgid "Open"
 msgstr "खोल्नुहोस्"
 
-#: kmmimeparttree.cpp:175 kmreaderwin.cpp:2042
+#: kmmimeparttree.cpp:175 kmreaderwin.cpp:2063
 msgid "Open With..."
 msgstr "यससँग खोल्नुहोस्..."
 
-#: kmmimeparttree.cpp:176 kmreaderwin.cpp:2046
+#: kmmimeparttree.cpp:176 kmreaderwin.cpp:2067
 msgctxt "to view something"
 msgid "View"
 msgstr "दृश्य"
@@ -2979,24 +2992,24 @@ msgstr "दृश्य"
 msgid "Save All Attachments..."
 msgstr "सबै सङ्लग्नता बचत गर्नुहोस्..."
 
-#: kmmimeparttree.cpp:192 kmreaderwin.cpp:2054 kmfilterdlg.cpp:657
+#: kmmimeparttree.cpp:192 kmreaderwin.cpp:2075 kmfilterdlg.cpp:657
 #, fuzzy
 msgid "Copy"
 msgstr "यसमा प्रतिलिपि गर्नुहोस्"
 
-#: kmmimeparttree.cpp:195 kmreaderwin.cpp:2067 kmreaderwin.cpp:2718
+#: kmmimeparttree.cpp:195 kmreaderwin.cpp:2088 kmreaderwin.cpp:2739
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete Attachment"
 msgstr "सङ्लग्नता हटाउनुहोस्"
 
-#: kmmimeparttree.cpp:198 kmreaderwin.cpp:2061 kmreaderwin.cpp:2731
+#: kmmimeparttree.cpp:198 kmreaderwin.cpp:2082 kmreaderwin.cpp:2752
 #, fuzzy
 #| msgid "Attachment"
 msgid "Edit Attachment"
 msgstr "सङ्लग्नता"
 
-#: kmmimeparttree.cpp:203 kmreaderwin.cpp:2078 kmcomposewin.cpp:2679
+#: kmmimeparttree.cpp:203 kmreaderwin.cpp:2099 kmcomposewin.cpp:2679
 #, fuzzy
 msgid "Properties"
 msgstr "विशेषता"
@@ -5102,7 +5115,7 @@ msgstr "विश्वव्यापी HTML सेटिङ परिवर�
 #: configuredialog.cpp:3998 configuredialog.cpp:3999 configuredialog.cpp:4000
 #: configuredialog.cpp:4001 configuredialog.cpp:4002 configuredialog.cpp:4003
 #: vacationdialog.cpp:184 expirypropertiesdialog.cpp:206
-#: expirypropertiesdialog.cpp:207 accountdialog.cpp:889
+#: expirypropertiesdialog.cpp:207 accountdialog.cpp:899
 msgid " day"
 msgid_plural " days"
 msgstr[0] " दिन"
@@ -5550,33 +5563,33 @@ msgstr ""
 "परिचय \"%1\" का लागि अनुकूल टेम्प्लेट फोल्डर अवस्थित छैन; त्यसैले, पूर्वनिर्धारित टेम्प्लेट "
 "फोल्डर प्रयोग गरिन्छ ।"
 
-#: imapaccountbase.cpp:315 popaccount.cpp:148
+#: imapaccountbase.cpp:316 popaccount.cpp:148
 msgid "You need to supply a username and a password to access this mailbox."
 msgstr "यो पत्रमञ्जूषामा पहुँच प्राप्त गर्न तपाईँले प्रयोगकर्ता नाम र पासवर्ड दिनु पर्छ ।"
 
-#: imapaccountbase.cpp:324
+#: imapaccountbase.cpp:325
 msgid "Authorization Dialog"
 msgstr "आधिकीकरण संवाद"
 
-#: imapaccountbase.cpp:325 popaccount.cpp:149
+#: imapaccountbase.cpp:326 popaccount.cpp:149
 msgid "Account:"
 msgstr "खाता:"
 
-#: imapaccountbase.cpp:354
+#: imapaccountbase.cpp:355
 #, kde-format
 msgid "Could not start process for %1."
 msgstr "%1 का लागि प्रक्रिया सुरु गर्न सकेन ।"
 
-#: imapaccountbase.cpp:443
+#: imapaccountbase.cpp:444
 #, kde-format
 msgid "Error while trying to subscribe to %1:"
 msgstr "%1 मा सदस्यता लिने प्रयास गर्दा त्रुटि:"
 
-#: imapaccountbase.cpp:711
+#: imapaccountbase.cpp:712
 msgid "Retrieving Namespaces"
 msgstr "नेमस्पेस पुन: प्राप्ती गर्दैछ"
 
-#: imapaccountbase.cpp:804
+#: imapaccountbase.cpp:805
 #, kde-format
 msgid ""
 "KMail has detected a prefix entry in the configuration of the account \"%1\" "
@@ -5585,13 +5598,13 @@ msgstr ""
 "केडीई मेलले खाता \"%1\" को कन्फिगरेसनमा उपसर्ग प्रविष्टि पत्ता लगाएको छ जुन IMAP "
 "नेमस्पेसको समर्थनमा अप्रचलित छ ।"
 
-#: imapaccountbase.cpp:818 imapaccountbase.cpp:832
+#: imapaccountbase.cpp:819 imapaccountbase.cpp:833
 msgid ""
 "The configuration was automatically migrated but you should check your "
 "account configuration."
 msgstr "कन्फिगरेसन स्वचालित रूपमा सरेको थियो तर तपाईँले खाता कन्फिगरेसन जाँच गर्नुपर्छ ।"
 
-#: imapaccountbase.cpp:836
+#: imapaccountbase.cpp:837
 msgid ""
 "It was not possible to migrate your configuration automatically so please "
 "check your account configuration."
@@ -5599,25 +5612,25 @@ msgstr ""
 "तपाईँको कन्फिगरेसन स्वचालित रूपमा सार्न सम्भव थियन त्यसैले कृपया तपाईँको खाता कन्फिगरेसन "
 "जाँच गर्नुहोस् ।"
 
-#: imapaccountbase.cpp:950
+#: imapaccountbase.cpp:951
 #, fuzzy
 #| msgid "<Undefined RecipientType>"
 msgctxt "Unknown subject."
 msgid "<placeholder>unknown</placeholder>"
 msgstr "<Undefined RecipientType>"
 
-#: imapaccountbase.cpp:953
+#: imapaccountbase.cpp:954
 #, fuzzy
 #| msgid "<Undefined RecipientType>"
 msgctxt "Unknown sender."
 msgid "<placeholder>unknown</placeholder>"
 msgstr "<Undefined RecipientType>"
 
-#: imapaccountbase.cpp:955
+#: imapaccountbase.cpp:956
 msgid "Error while uploading message"
 msgstr "सन्देश अद्यावधिक गर्दा त्रुटि"
 
-#: imapaccountbase.cpp:957
+#: imapaccountbase.cpp:958
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not upload the message dated %1 from %2 with subject %3 on the "
@@ -5627,39 +5640,39 @@ msgid ""
 "to the server."
 msgstr "सर्भरमा %3 विषयवस्तु भएका %1 देखि %2 सम्म मिति भएका सन्देश अनलोड गर्न सकेन ।"
 
-#: imapaccountbase.cpp:961
+#: imapaccountbase.cpp:962
 #, fuzzy, kde-format
 #| msgid "Destination folder: %1"
 msgid "The destination folder was: <b>%1</b>."
 msgstr "गन्तव्य फोल्डर: %1"
 
-#: imapaccountbase.cpp:964
+#: imapaccountbase.cpp:965
 msgid "The server reported:"
 msgstr ""
 
-#: imapaccountbase.cpp:974
+#: imapaccountbase.cpp:975
 #, fuzzy
 #| msgid "No status information available."
 msgid "No detailed quota information available."
 msgstr "स्थिति सूचना उपलब्ध छैन ।"
 
-#: imapaccountbase.cpp:986
+#: imapaccountbase.cpp:987
 #, kde-format
 msgid "The folder is too close to its quota limit. (%1)"
 msgstr ""
 
-#: imapaccountbase.cpp:988
+#: imapaccountbase.cpp:989
 msgid ""
 "\n"
 "Since you do not have write privileges on this folder, please ask the owner "
 "of the folder to free up some space in it."
 msgstr ""
 
-#: imapaccountbase.cpp:1040
+#: imapaccountbase.cpp:1041
 msgid "Error"
 msgstr "त्रुटि"
 
-#: imapaccountbase.cpp:1044
+#: imapaccountbase.cpp:1045
 #, kde-format
 msgid ""
 "The connection to the server %1 was unexpectedly closed or timed out. It "
@@ -5668,21 +5681,21 @@ msgstr ""
 "सर्भर %1 को जडान अनपेक्षित रूपले बन्द भयो वा समय समाप्त भयो । सम्भव भएमा यो स्वचालित "
 "रूपले फेरि स्थापना हुनेछ ।"
 
-#: imapaccountbase.cpp:1050
+#: imapaccountbase.cpp:1051
 #, kde-format
 msgid "The connection to account %1 was broken."
 msgstr "खाता %1 मा जडान विच्छेद गरिएको थियो ।"
 
-#: imapaccountbase.cpp:1053
+#: imapaccountbase.cpp:1054
 #, kde-format
 msgid "The connection to account %1 timed out."
 msgstr "खाता %1 को जडानको म्याद समाप्त भयो ।"
 
-#: imapaccountbase.cpp:1347
+#: imapaccountbase.cpp:1348
 msgid "Error while uploading status of messages to server: "
 msgstr "सर्भरमा सन्देशको स्थिति अनलोड गर्दा त्रुटि: "
 
-#: imapaccountbase.cpp:1388 listjob.cpp:116
+#: imapaccountbase.cpp:1389 listjob.cpp:116
 msgid "retrieving folders"
 msgstr "फोल्डर पुन: प्राप्त गर्दैछ"
 
@@ -6926,7 +6939,7 @@ msgid "You do not have your own contact defined in the address book."
 msgstr "तपाईँले ठेगाना पुस्तकमा आफ्नो सम्पर्क परिभाषित गर्नु भएको छैन ।"
 
 #: kmstartup.cpp:141 mailinglistpropertiesdialog.cpp:110 aboutdata.cpp:216
-#: kmreaderwin.cpp:1388
+#: kmreaderwin.cpp:1409
 msgid "KMail"
 msgstr "केडीई मेल"
 
@@ -6985,8 +6998,8 @@ msgid "Exit"
 msgstr "बाहिरिनुहोस्"
 
 #: subscriptiondialog.cpp:183 kmfoldercachedimap.cpp:272
-#: kmfoldercachedimap.cpp:2242 kmkernel.cpp:1321 accountdialog.cpp:605
-#: accountdialog.cpp:612 kmfolderimap.cpp:207 kmfolderimap.cpp:925
+#: kmfoldercachedimap.cpp:2242 kmkernel.cpp:1321 accountdialog.cpp:607
+#: accountdialog.cpp:614 kmfolderimap.cpp:207 kmfolderimap.cpp:925
 msgid "inbox"
 msgstr "प्राप्तिमञ्जूषा"
 
@@ -10005,7 +10018,7 @@ msgctxt "Accepted the invitation."
 msgid "Accepted: %1"
 msgstr "स्वीकृत: %1"
 
-#: callback.cpp:179
+#: callback.cpp:180
 #, fuzzy
 #| msgid ""
 #| "<qt>None of your identities match the receiver of this message,<br>please "
@@ -10018,7 +10031,7 @@ msgstr ""
 "<qt>यो सन्देशको प्रापकसँग तपाईँको कुनै पनि परिचय मिल्दैन,<br>यदि भएमा, कृपया तलका "
 "ठेगानामा तपाईँका ठेगाना रोज्नुहोस्:"
 
-#: callback.cpp:186
+#: callback.cpp:187
 #, fuzzy
 #| msgid ""
 #| "<qt>Several of your identities match the receiver of this message,"
@@ -10030,7 +10043,7 @@ msgstr ""
 "<qt>यो सन्देशको प्रापकसँग तपाईँका धेरै परिचय मिल्दछन्,<br>कृपया तलका ठेगानामा तपाईँको "
 "ठेगाना रोज्नुहोस्:"
 
-#: callback.cpp:197
+#: callback.cpp:198
 msgid "Select Address"
 msgstr "ठेगाना चयन गर्नुहोस्"
 
@@ -15132,11 +15145,11 @@ msgstr ""
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: kmreaderwin.cpp:1390
+#: kmreaderwin.cpp:1411
 msgid "The email client for the K Desktop Environment."
 msgstr "केडीई डेस्कटप परिवेशका लागि इमेल क्लाइन्ट ।"
 
-#: kmreaderwin.cpp:1398
+#: kmreaderwin.cpp:1419
 msgid ""
 "<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
 "wait . . .</p>&nbsp;"
@@ -15144,7 +15157,7 @@ msgstr ""
 "<h2 style='margin-top: 0px;'>फोल्डर सामाग्री पुन: प्राप्ती गर्दैछ</h2><p>कृपया "
 "प्रतिक्षा गर्नुहोस् . . .</p>&nbsp;"
 
-#: kmreaderwin.cpp:1406
+#: kmreaderwin.cpp:1427
 msgid ""
 "<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
 "mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
@@ -15152,7 +15165,7 @@ msgstr ""
 "<h2 style='margin-top: 0px;'>अफलाइन</h2><p>केडीई मेल हाल अफलाइन मोडमा छ । "
 "अनलाइनमा जान <a href=\"kmail:goOnline\">यहाँ</a> क्लिक गर्नुहोस् . . .</p>&nbsp;"
 
-#: kmreaderwin.cpp:1422
+#: kmreaderwin.cpp:1443
 #, fuzzy, kde-format
 msgctxt ""
 "%1: KMail version; %2: help:// URL; %3: homepage URL; %4: generated list of "
@@ -15190,7 +15203,7 @@ msgstr ""
 "<p>धन्यवाद,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; केडीई मेल समूह</p>"
 
-#: kmreaderwin.cpp:1442
+#: kmreaderwin.cpp:1463
 #, fuzzy, kde-format
 msgid ""
 "<p>Some of the new features in this release of KMail include (compared to "
@@ -15199,7 +15212,7 @@ msgstr ""
 "<p> केही को नयाँ इन्च निस्काशन को केडीई मेल समावेश गर्नुहोस् लाई केडीई मेल हो भाग को "
 "केडीई</p> n"
 
-#: kmreaderwin.cpp:1455
+#: kmreaderwin.cpp:1476
 msgid ""
 "<p>Please take a moment to fill in the KMail configuration panel at Settings-"
 "&gt;Configure KMail.\n"
@@ -15211,7 +15224,7 @@ msgstr ""
 "तपाईँले कम्तिमा पूर्वनिर्धारित पहिचान र एउटा आगमन त्यस्तै निर्गमन मेल खाता सिर्जना गर्नु "
 "आवश्यक हुन्छ ।</p>\n"
 
-#: kmreaderwin.cpp:1467
+#: kmreaderwin.cpp:1488
 #, kde-format
 msgid ""
 "<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
@@ -15220,34 +15233,34 @@ msgstr ""
 "<p><span style='font-size:125%; font-weight:bold;'>महत्वपूर्ण परिवर्तन</span> "
 "(केडीई मेल %1 सँग दाज्नुहोस्):</p>\n"
 
-#: kmreaderwin.cpp:1472
+#: kmreaderwin.cpp:1493
 #, kde-format
 msgid "<li>%1</li>\n"
 msgstr "<li>%1</li>\n"
 
-#: kmreaderwin.cpp:1600
+#: kmreaderwin.cpp:1621
 msgid "( body part )"
 msgstr "( मुख्य भाग )"
 
-#: kmreaderwin.cpp:1913
+#: kmreaderwin.cpp:1934
 msgid "Could not send MDN."
 msgstr "MDN पठाउन सकेन ।"
 
-#: kmreaderwin.cpp:2050 kmcomposewin.cpp:2677
+#: kmreaderwin.cpp:2071 kmcomposewin.cpp:2677
 #, fuzzy
 msgid "Save As..."
 msgstr "यस रूपमा बचत गर्नुहोस्..."
 
-#: kmreaderwin.cpp:2074
+#: kmreaderwin.cpp:2095
 msgid "Decrypt With Chiasmus..."
 msgstr "व्यतिक्रमसँग गुप्तिकरण उल्टाउनुहोस्..."
 
-#: kmreaderwin.cpp:2242 kmreaderwin.cpp:2278 kmreaderwin.cpp:2298
+#: kmreaderwin.cpp:2263 kmreaderwin.cpp:2299 kmreaderwin.cpp:2319
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "दृश्य सङ्लग्नता: %1"
 
-#: kmreaderwin.cpp:2290
+#: kmreaderwin.cpp:2311
 #, fuzzy, kde-format
 msgid ""
 "[KMail: Attachment contains binary data. Trying to show first character.]"
@@ -15259,16 +15272,16 @@ msgstr[1] ""
 "[केडीई मेल: सङ्लग्नताले बाइनरी डेटा समाविष्ट गर्छ । पहिला %1 क्यारेक्टर देखाउने प्रयास "
 "गर्दैछ ।]"
 
-#: kmreaderwin.cpp:2391
+#: kmreaderwin.cpp:2412
 #, kde-format
 msgid "&Open with '%1'"
 msgstr "'%1' सँग खोल्नुहोस्"
 
-#: kmreaderwin.cpp:2393
+#: kmreaderwin.cpp:2414
 msgid "&Open With..."
 msgstr "यससँग खोल्नुहोस्..."
 
-#: kmreaderwin.cpp:2395
+#: kmreaderwin.cpp:2416
 #, kde-format
 msgid ""
 "Open attachment '%1'?\n"
@@ -15277,28 +15290,28 @@ msgstr ""
 "सङ्लग्नता '%1' खोल्नुहुन्छ?\n"
 "याद गर्नुहोस् सङ्लग्नता खोल्दा प्रणालीको सुरक्षा जोखिममा हुन सक्छ ।"
 
-#: kmreaderwin.cpp:2400
+#: kmreaderwin.cpp:2421
 msgid "Open Attachment?"
 msgstr "सङ्लग्नता खोल्नुहुन्छ?"
 
-#: kmreaderwin.cpp:2717
+#: kmreaderwin.cpp:2738
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: kmreaderwin.cpp:2730
+#: kmreaderwin.cpp:2751
 msgid ""
 "Modifying an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: kmreaderwin.cpp:2731 kmcomposewin.cpp:2673 vacation.cpp:662
+#: kmreaderwin.cpp:2752 kmcomposewin.cpp:2673 vacation.cpp:662
 #, fuzzy
 msgid "Edit"
 msgstr "बाहिरिनुहोस्"
 
-#: kmreaderwin.cpp:2782
+#: kmreaderwin.cpp:2803
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
@@ -15815,12 +15828,12 @@ msgstr "केडीई मेल कन्फिगर गर्नुहोस
 msgid " Spellcheck: %1 "
 msgstr " हिज्जे परीक्षण:%1 "
 
-#: kmcomposewin.cpp:1346 kmcomposewin.cpp:4211
+#: kmcomposewin.cpp:1346 kmcomposewin.cpp:4209
 #, kde-format
 msgid " Column: %1 "
 msgstr " स्तम्भ: %1 "
 
-#: kmcomposewin.cpp:1348 kmcomposewin.cpp:4209
+#: kmcomposewin.cpp:1348 kmcomposewin.cpp:4207
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
@@ -16141,15 +16154,15 @@ msgstr "कुनै पनि प्रापक छैनन्"
 msgid "&Edit Recipients"
 msgstr "थप प्रापक"
 
-#: kmcomposewin.cpp:3919
+#: kmcomposewin.cpp:3917
 msgid "Spellcheck: on"
 msgstr "हिज्जे परीक्षण: खुला"
 
-#: kmcomposewin.cpp:3921
+#: kmcomposewin.cpp:3919
 msgid "Spellcheck: off"
 msgstr "हिज्जे परीक्षण: बन्द"
 
-#: kmcomposewin.cpp:4257
+#: kmcomposewin.cpp:4255
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
@@ -16158,7 +16171,7 @@ msgstr ""
 "पहिला व्यतिक्रम गुप्तिकरण प्रयोग गर्नका लागि कृपया गुप्त ब्याकइन्ड कन्फिगर गर्नुहोस् ।\n"
 "तपाईँले कन्फिगर संवाद सुरक्षा पृष्ठको गुप्त ब्याकइन्डमा यस्तो गर्न सक्नुहुन्छ ।"
 
-#: kmcomposewin.cpp:4261
+#: kmcomposewin.cpp:4259
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
@@ -16166,37 +16179,37 @@ msgstr ""
 "यो libkleopatra जस्तै देखिए पनि व्यतिक्रम समर्थन बिना कम्पाइल गरिएको थियो । तपाईँ "
 "libkleopatra --सक्षम-व्यतिक्रमसँग पुन: कम्पाइल गर्न चाहन सक्नुहुन्छ ।"
 
-#: kmcomposewin.cpp:4264
+#: kmcomposewin.cpp:4262
 msgid "No Chiasmus Backend Configured"
 msgstr "व्यतिक्रम ब्याकइन्ड कन्फिगर गरिएको छैन"
 
-#: kmcomposewin.cpp:4295
+#: kmcomposewin.cpp:4293
 msgid "No Chiasmus Keys Found"
 msgstr "व्यतिक्रम कुञ्जी फेला परेको छैन"
 
-#: kmcomposewin.cpp:4299
+#: kmcomposewin.cpp:4297
 msgid "Chiasmus Encryption Key Selection"
 msgstr "व्यतिक्रम गुप्तिकरण कुञ्जी चयन"
 
-#: kmcomposewin.cpp:4381
+#: kmcomposewin.cpp:4379
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
 
-#: kmcomposewin.cpp:4382
+#: kmcomposewin.cpp:4380
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "सन्देश सूची - मिति फिल्ड"
 
-#: kmcomposewin.cpp:4384
+#: kmcomposewin.cpp:4382
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will be encrypted"
 msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
 
-#: kmcomposewin.cpp:4385
+#: kmcomposewin.cpp:4383
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will not be encrypted"
@@ -16575,20 +16588,20 @@ msgstr "खाता प्रकार: विच्छेद गरिएक�
 msgid "Account Type: IMAP Account"
 msgstr "खाता प्रकार: IMAP खाता"
 
-#: accountdialog.cpp:331
+#: accountdialog.cpp:333
 #, fuzzy
 #| msgid "&Filtering"
 msgid "Filtering"
 msgstr "फिल्टर"
 
-#: accountdialog.cpp:585
+#: accountdialog.cpp:587
 #, fuzzy
 #| msgid "<Undefined RecipientType>"
 msgctxt "Placeholder for the case that there is no folder."
 msgid "<placeholder>none</placeholder>"
 msgstr "<Undefined RecipientType>"
 
-#: accountdialog.cpp:640
+#: accountdialog.cpp:642
 msgid ""
 "The server does not seem to support unique message numbers, but this is a "
 "requirement for leaving messages on the server.\n"
@@ -16600,7 +16613,7 @@ msgstr ""
 "केही सर्भरले तिनका क्षमता ठीक तरिकाले घोषणा गर्दैनन् तपाईँसँग अझै सर्भरमा तानिएर छोडिएका "
 "सन्देशमा फर्किने सम्भावना छ ।"
 
-#: accountdialog.cpp:656
+#: accountdialog.cpp:658
 msgid ""
 "The server does not seem to support fetching message headers, but this is a "
 "requirement for filtering messages on the server.\n"
@@ -16612,7 +16625,7 @@ msgstr ""
 "केही सर्भरले तिनका क्षमता ठीक तरिकाले घोषणा गर्दैनन् तपाईँसँग अझै सर्भरका फिल्टरिङ सन्देशमा "
 "फर्किने सम्भावना छ ।"
 
-#: accountdialog.cpp:671
+#: accountdialog.cpp:673
 msgid ""
 "Please note that this feature can cause some POP3 servers that do not "
 "support pipelining to send corrupted mail;\n"
@@ -16632,11 +16645,11 @@ msgstr ""
 "तपाईँको सर्भरले यो घोषणा नगरेमा, तपाईँ बढी गति चाहनुहुन्छ, त्यसपछि तपाईँले पहिला आफुलाई "
 "मेलको समूहमा पठाएर र यसलाई डानलोड गरेर केही परीक्षण गर्नुपर्छ ।"
 
-#: accountdialog.cpp:723 accountdialog.cpp:753
+#: accountdialog.cpp:733 accountdialog.cpp:763
 msgid "Please specify a server and port on the General tab first."
 msgstr "कृपया पहिला साधारण ट्याबमा सर्भर र पोर्ट निर्दिष्ट गर्नुहोस् ।"
 
-#: accountdialog.cpp:822
+#: accountdialog.cpp:832
 msgid ""
 "The server does not seem to support pipelining; therefore, this option has "
 "been disabled.\n"
@@ -16654,7 +16667,7 @@ msgstr ""
 "प्रयोग गर्नु अगाडि तपाईँले यसलाई POP सर्भरबाट एकमा गई डाउनलोड गरेका सबै सन्देशको "
 "परीक्षणको ठूलो सङ्ख्यामा आफँलाई पठाएर पहिला परीक्षण गर्नुपर्छ ।"
 
-#: accountdialog.cpp:843
+#: accountdialog.cpp:853
 msgid ""
 "The server does not seem to support unique message numbers, but this is a "
 "requirement for leaving messages on the server; therefore, this option has "
@@ -16667,7 +16680,7 @@ msgstr ""
 "केही सर्भरले तिनका क्षमता ठीक तरिकाले घोषणा गर्दैनन् तपाईँसँग अझै सर्भरमा तानेर छोडिएका "
 "सन्देश खोल्ने सम्भावना छ ।"
 
-#: accountdialog.cpp:858
+#: accountdialog.cpp:868
 msgid ""
 "The server does not seem to support fetching message headers, but this is a "
 "requirement for filtering messages on the server; therefore, this option has "
@@ -16680,56 +16693,56 @@ msgstr ""
 "केही सर्भरले तिनका क्षमता ठीक तरिकाले घोषणा गर्दैनन् तपाईँसँग अझै सर्भरमा फिल्टर गरिएका "
 "सन्देश खोल्ने सम्भावना छ ।"
 
-#: accountdialog.cpp:895
+#: accountdialog.cpp:905
 msgid " message"
 msgid_plural " messages"
 msgstr[0] " सन्देश"
 msgstr[1] " सन्देश"
 
-#: accountdialog.cpp:901
+#: accountdialog.cpp:911
 msgid " byte"
 msgid_plural " bytes"
 msgstr[0] " बाइट"
 msgstr[1] " बाइट"
 
-#: accountdialog.cpp:1148 accountdialog.cpp:1175
+#: accountdialog.cpp:1158 accountdialog.cpp:1185
 msgid "Choose Location"
 msgstr "स्थान रोज्नुहोस्"
 
-#: accountdialog.cpp:1163
+#: accountdialog.cpp:1173
 msgid "Only local files are currently supported."
 msgstr "हाल स्थानीय फाइलमात्र समर्थन गरिएका छन् ।"
 
-#: accountdialog.cpp:1257
+#: accountdialog.cpp:1267
 msgid "Fetching Namespaces..."
 msgstr "नेमस्पेस तान्दैछ..."
 
-#: accountdialog.cpp:1318
+#: accountdialog.cpp:1328
 #, fuzzy
 #| msgid "Empty"
 msgctxt "Empty namespace string."
 msgid "Empty"
 msgstr "खाली"
 
-#: accountdialog.cpp:1432
+#: accountdialog.cpp:1442
 #, fuzzy
 #| msgid "Personal"
 msgctxt "Personal namespace"
 msgid "Personal"
 msgstr "व्यक्तिगत"
 
-#: accountdialog.cpp:1434
+#: accountdialog.cpp:1444
 #, fuzzy
 #| msgid "Other Users"
 msgctxt "Namespace accessible for others."
 msgid "Other Users"
 msgstr "अन्य प्रयोगकर्ता"
 
-#: accountdialog.cpp:1436
+#: accountdialog.cpp:1446
 msgid "Shared"
 msgstr "साझा"
 
-#: accountdialog.cpp:1438
+#: accountdialog.cpp:1448
 #, kde-format
 msgid "Edit Namespace '%1'"
 msgstr "नेमस्पेस '%1' सम्पादन गर्नुहोस्"
@@ -17008,7 +17021,7 @@ msgctxt "@info:status Number of emails retrieved."
 msgid " completed"
 msgstr " समाप्त"
 
-#: kmacctimap.cpp:621
+#: kmacctimap.cpp:617
 #, fuzzy
 #| msgid "Unable to process messages: "
 msgctxt "@info:status"
