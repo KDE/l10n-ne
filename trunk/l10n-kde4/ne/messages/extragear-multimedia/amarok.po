@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-19 11:38+0200\n"
+"POT-Creation-Date: 2009-06-20 12:23+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:129
-#: context/applets/currenttrack/CurrentTrack.cpp:100 widgets/Osd.cpp:571
+#: context/applets/currenttrack/CurrentTrack.cpp:103 widgets/Osd.cpp:571
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
@@ -282,12 +282,18 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Nepomuk Collection (slow, Redland)"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
-#: collection/sqlcollection/SqlCollection.cpp:70
+#: collection/sqlcollection/SqlCollection.cpp:72
+#, fuzzy, kde-format
+#| msgid "Collection Database"
+msgid "Local Collection (via database at %1)"
+msgstr "सङ्कलन डाटाबेस"
+
+#: collection/sqlcollection/SqlCollection.cpp:75
 #: collection/sqlcollection/SqlCollectionLocation.cpp:62
 msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
 
-#: collection/sqlcollection/SqlCollection.cpp:359
+#: collection/sqlcollection/SqlCollection.cpp:365
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
 msgctxt "@info"
@@ -296,7 +302,7 @@ msgid ""
 "as well as your collection."
 msgstr "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: collection/sqlcollection/SqlCollection.cpp:363
+#: collection/sqlcollection/SqlCollection.cpp:369
 #, fuzzy
 #| msgid "Delete failed"
 msgid "Delete Files"
@@ -392,20 +398,6 @@ msgstr "विभिन्न कलाकारहरू"
 #| msgid "Various Artists"
 msgid "Show under Various Artists"
 msgstr "विभिन्न कलाकारहरू"
-
-#: collection/sqlcollection/MySqlCollection.cpp:168
-#, fuzzy
-#| msgid "MySQL reported the following error:<br>"
-msgid "MySQL reported the following error:<br/>"
-msgstr "MySQL ले निम्न त्रुटि प्रतिवेदन गर्यो:<br>"
-
-#: collection/sqlcollection/MySqlCollection.cpp:169
-msgid ""
-"<p>You can configure MySQL in the Collection section under Settings-"
-">Configure Amarok</p>"
-msgstr ""
-"<p>तपाईँ Settings->Configure Amarok अन्तर्गत सङ्कलन सेक्सनमा MySQL कन्फिगर गर्न "
-"सक्नुहुन्छ</p>"
 
 #: collection/audiocd/AudioCdCollection.cpp:118
 msgid "&Eject"
@@ -806,47 +798,47 @@ msgstr "लाम ट्रयाक"
 msgid "Append and &Play"
 msgstr "थप्नुहोस् र प्ले गर्नुहोस्"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:77
+#: context/applets/currenttrack/CurrentTrack.cpp:78
 #, fuzzy
 #| msgid "Modify scheme"
 msgctxt "What artist is this track by"
 msgid "By"
 msgstr "योजना परिमार्जन गर्नुहोस्"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:78
+#: context/applets/currenttrack/CurrentTrack.cpp:79
 msgctxt "What album is this track on"
 msgid "On"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.cpp:106
-#: context/applets/currenttrack/CurrentTrack.cpp:496
+#: context/applets/currenttrack/CurrentTrack.cpp:109
+#: context/applets/currenttrack/CurrentTrack.cpp:499
 #, fuzzy
 #| msgid "Playcount"
 msgid "Play count"
 msgstr "प्ले गणना"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:107
-#: context/applets/currenttrack/CurrentTrack.cpp:497 Systray.cpp:171
+#: context/applets/currenttrack/CurrentTrack.cpp:110
+#: context/applets/currenttrack/CurrentTrack.cpp:500 Systray.cpp:171
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:696
 #: playlist/PlaylistModel.cpp:711 widgets/SmartPlaylistEditor.cpp:186
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:108
-#: context/applets/currenttrack/CurrentTrack.cpp:498 Systray.cpp:201
+#: context/applets/currenttrack/CurrentTrack.cpp:111
+#: context/applets/currenttrack/CurrentTrack.cpp:501 Systray.cpp:201
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:701
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:113
+#: context/applets/currenttrack/CurrentTrack.cpp:116
 #, fuzzy
 #| msgid "Last Played"
 msgid "Last played"
 msgstr "अन्तिममा बजाएको"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:114
+#: context/applets/currenttrack/CurrentTrack.cpp:117
 #, fuzzy
 #| msgid "Favorite Tracks"
 msgid "Favorite tracks"
@@ -2812,7 +2804,7 @@ msgstr ""
 #: dynamic/biases/EchoNest.cpp:49
 #, fuzzy
 #| msgid "Retrieve similar artists"
-msgid "EchoNest Similar Artists"
+msgid "Echo Nest Similar Artists"
 msgstr "एकैखालको कलाकार पुन: प्रयास गर्नुहोस्"
 
 #: dynamic/biases/EchoNest.cpp:109
@@ -2836,7 +2828,7 @@ msgstr "प्ले सूची"
 #: dynamic/biases/EchoNest.cpp:120
 #, fuzzy
 #| msgid "%1's Loved Radio"
-msgid "Recommendations by EchoNest."
+msgid "Recommendations by Echo Nest."
 msgstr "%1ले माया गरेको रेडियो"
 
 #: dynamic/BiasedPlaylist.cpp:133
@@ -3360,16 +3352,16 @@ msgid ""
 "audio players and cd's."
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:78 widgets/SearchWidget.cpp:63
+#: browsers/filebrowser/FileBrowser.cpp:79 widgets/SearchWidget.cpp:63
 #: covermanager/CoverManager.cpp:173
 msgid "Enter search terms here"
 msgstr "यहाँ खोजी सर्त प्रविष्ट गर्नुहोस्"
 
-#: browsers/filebrowser/FileBrowser.cpp:93
+#: browsers/filebrowser/FileBrowser.cpp:94
 msgid "Bookmarks"
 msgstr "पुस्तकचिनो"
 
-#: browsers/filebrowser/FileBrowser.cpp:109
+#: browsers/filebrowser/FileBrowser.cpp:110
 msgid ""
 "<p>Here you can enter a path for a folder to display.</p><p>To go to a "
 "folder previously entered, press the arrow on the right and choose one.</"
@@ -3377,32 +3369,32 @@ msgid ""
 "should behave.</p>"
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:113
+#: browsers/filebrowser/FileBrowser.cpp:114
 msgid ""
 "<p>Here you can enter a name filter to limit which files are displayed.</"
 "p><p>To clear the filter, toggle off the filter button to the left.</p><p>To "
 "reapply the last filter used, toggle on the filter button.</p>"
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:116
+#: browsers/filebrowser/FileBrowser.cpp:117
 msgid ""
 "<p>This button clears the name filter when toggled off, or reapplies the "
 "last filter used when toggled on.</p>"
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:126
+#: browsers/filebrowser/FileBrowser.cpp:127
 msgid ""
 "The file browser lets you browse files anywhere on your system, regardless "
 "of whether these files are part of your local collection. You can then add "
 "these files to the playlist as well as perform basic file operations."
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:219
+#: browsers/filebrowser/FileBrowser.cpp:224
 #, kde-format
 msgid "Apply last filter (\"%1\")"
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:227
+#: browsers/filebrowser/FileBrowser.cpp:232
 #, fuzzy
 #| msgid "Clear the filter"
 msgid "Clear filter"
@@ -3658,25 +3650,25 @@ msgstr "नयाँ प्रिसेट थप्नुहोस्"
 msgid "Delete the preset."
 msgstr ""
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:275
+#: browsers/playlistbrowser/DynamicCategory.cpp:274
 #, fuzzy
 #| msgid "Playlist name:"
 msgid "Playlist Name"
 msgstr "प्लेसूची नाम:"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:276
+#: browsers/playlistbrowser/DynamicCategory.cpp:275
 #, fuzzy
 #| msgid "&Enter a name for the playlist:"
 msgid "Enter a name for the playlist:"
 msgstr "प्ले सूचीका लागि नाम प्रविष्ट गर्नुहोस्:"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:286
+#: browsers/playlistbrowser/DynamicCategory.cpp:285
 #, fuzzy
 #| msgid "Warning"
 msgid "Warning"
 msgstr "चेतावनी"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:286
+#: browsers/playlistbrowser/DynamicCategory.cpp:285
 #, fuzzy
 #| msgid "Cannot write playlist (%1)."
 msgid "Cannot overwrite the random playlist."
@@ -9839,6 +9831,18 @@ msgid "No Artist"
 msgstr "कलाकार"
 
 #, fuzzy
+#~| msgid "MySQL reported the following error:<br>"
+#~ msgid "MySQL reported the following error:<br/>"
+#~ msgstr "MySQL ले निम्न त्रुटि प्रतिवेदन गर्यो:<br>"
+
+#~ msgid ""
+#~ "<p>You can configure MySQL in the Collection section under Settings-"
+#~ ">Configure Amarok</p>"
+#~ msgstr ""
+#~ "<p>तपाईँ Settings->Configure Amarok अन्तर्गत सङ्कलन सेक्सनमा MySQL कन्फिगर गर्न "
+#~ "सक्नुहुन्छ</p>"
+
+#, fuzzy
 #~| msgid "&Next Cover"
 #~ msgid "Fetching content.."
 #~ msgstr "पछिल्लो आवरण"
@@ -12055,9 +12059,6 @@ msgstr "कलाकार"
 
 #~ msgid "Stor&e mood data files with music"
 #~ msgstr "सङ्गीतसँग मूड डेटा फाइलहरू भण्डारण गर्नुहोस्"
-
-#~ msgid "Collection Database"
-#~ msgstr "सङ्कलन डाटाबेस"
 
 #~ msgid "Configure Portable Player Support"
 #~ msgstr "पोर्टेबल प्लेयर समर्थन कन्फिगर गर्नुहोस्"
