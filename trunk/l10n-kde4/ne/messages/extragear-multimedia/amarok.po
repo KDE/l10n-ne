@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-29 11:50+0200\n"
+"POT-Creation-Date: 2009-06-30 11:45+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -170,7 +170,6 @@ msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
 
 #: collection/CollectionLocation.cpp:282
-#: collection/sqlcollection/SqlCollection.cpp:339
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
 msgctxt "@info"
@@ -180,7 +179,6 @@ msgid ""
 msgstr "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
 #: collection/CollectionLocation.cpp:287
-#: collection/sqlcollection/SqlCollection.cpp:343
 #, fuzzy
 #| msgid "Delete failed"
 msgid "Delete Files"
@@ -324,19 +322,13 @@ msgstr ""
 "यदि तपाईँले पाठको सेक्सन घेर्नुभयो भने त्यसले जुँगे-कोष्ठकसँग टोकन समाविष्ट गर्दछ, यदि टोकन "
 "खाली भए त्यो सेक्सन लुकाइनेछ ।"
 
-#: collection/sqlcollection/SqlCollectionCapability.cpp:49
-#, fuzzy
-#| msgid "Selected Tracks"
-msgid "&Delete Tracks"
-msgstr "चयन गरिएको ट्रयाक"
-
-#: collection/sqlcollection/SqlCollectionLocation.cpp:335
+#: collection/sqlcollection/SqlCollectionLocation.cpp:342
 #, fuzzy, kde-format
 #| msgid "Cannot enter directory: '%1'"
 msgid "Could not create directory: %1"
 msgstr "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
 
-#: collection/sqlcollection/SqlCollectionLocation.cpp:360
+#: collection/sqlcollection/SqlCollectionLocation.cpp:367
 #, fuzzy, kde-format
 #| msgid "Transfer"
 msgid "Transferring: %1"
@@ -856,7 +848,7 @@ msgid "Favorite tracks"
 msgstr "मन पर्ने ट्रयाक"
 
 #: context/applets/albums/AlbumsView.cpp:111 Systray.cpp:242
-#: browsers/CollectionTreeView.cpp:813
+#: browsers/CollectionTreeView.cpp:799
 #: browsers/filebrowser/MyDirOperator.cpp:270
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:454
 #: browsers/playlistbrowser/PodcastModel.cpp:691
@@ -3155,19 +3147,13 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Move to Collection"
 msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
 
-#: browsers/CollectionTreeView.cpp:268
-#, fuzzy
-#| msgid "&Move Files to Collection..."
-msgid "Remove From Collection"
-msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:515 services/lastfm/LastFmTreeView.cpp:200
+#: browsers/CollectionTreeView.cpp:501 services/lastfm/LastFmTreeView.cpp:200
 #, fuzzy
 #| msgid "&Configure..."
 msgid "More..."
 msgstr "कन्फिगर गर्नुहोस्..."
 
-#: browsers/CollectionTreeView.cpp:821
+#: browsers/CollectionTreeView.cpp:807
 #: browsers/filebrowser/MyDirOperator.cpp:271
 #: services/lastfm/LastFmTreeView.cpp:120
 #, fuzzy
@@ -3176,19 +3162,25 @@ msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
-#: browsers/CollectionTreeView.cpp:839
+#: browsers/CollectionTreeView.cpp:825
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
 msgid "&Edit Track Details"
 msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
-#: browsers/CollectionTreeView.cpp:874
+#: browsers/CollectionTreeView.cpp:860
 #, fuzzy
 #| msgid "Organize Files"
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "फाइल सङ्गठित गर्नुहोस्"
+
+#: browsers/CollectionTreeView.cpp:1060
+#, fuzzy
+#| msgid "Selected Tracks"
+msgid "Delete Tracks"
+msgstr "चयन गरिएको ट्रयाक"
 
 #: browsers/CollectionTreeItemModelBase.cpp:524
 #, fuzzy
@@ -7215,15 +7207,15 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: services/ServiceBase.cpp:144
+#: services/ServiceBase.cpp:141
 msgid "Group By"
 msgstr ""
 
-#: services/ServiceBase.cpp:323
+#: services/ServiceBase.cpp:320
 msgid "This service does not accept any messages"
 msgstr ""
 
-#: services/ServiceBase.cpp:330
+#: services/ServiceBase.cpp:327
 msgid "ERROR: unknown message"
 msgstr ""
 
@@ -8609,13 +8601,13 @@ msgstr "कन्फिगर गर्नुहोस्..."
 msgid "Track Number - Title"
 msgstr "ट्रयाक नम्बर - शीर्षक"
 
-#: playlist/PlaylistWidget.cpp:87
+#: playlist/PlaylistWidget.cpp:86
 #, fuzzy
 #| msgid "Dynamic Mode"
 msgid "Dynamic Mode Enabled"
 msgstr "गतिशील मोड"
 
-#: playlist/PlaylistWidget.cpp:145
+#: playlist/PlaylistWidget.cpp:140
 msgid "Show active track"
 msgstr ""
 
@@ -9542,6 +9534,11 @@ msgstr "आवरण छवि"
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "कलाकार"
+
+#, fuzzy
+#~| msgid "&Move Files to Collection..."
+#~ msgid "Remove From Collection"
+#~ msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
 
 #~ msgid "Unknown title"
 #~ msgstr "अज्ञात शीर्षक"
