@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-02 11:52+0200\n"
+"POT-Creation-Date: 2009-07-03 11:31+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2507,25 +2507,37 @@ msgstr "स्याचुरेसन:"
 msgid "Dropped v3 tables"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:685
-#: libs/database/collectionmanager.cpp:808
+#: libs/database/collectionmanager.cpp:520
+#, kde-format
+msgctxt "\"relative path\" on harddisk partition with \"UUID\""
+msgid "Folder \"%1\" on the volume with the id \"%2\""
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:526
+#, kde-format
+msgctxt "\"relative path\" on harddisk partition with \"label\""
+msgid "Folder \"%1\" on the volume labeled \"%2\""
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:725
+#: libs/database/collectionmanager.cpp:848
 msgid "The selected folder does not exist or is not readable"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:694
+#: libs/database/collectionmanager.cpp:734
 #, kde-format
 msgid "There is already a collection containing the folder \"%1\""
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:710
+#: libs/database/collectionmanager.cpp:750
 msgid "The storage media can be uniquely identified."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:717
+#: libs/database/collectionmanager.cpp:757
 msgid "The collection is located on your harddisk"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:745
+#: libs/database/collectionmanager.cpp:785
 msgid ""
 "This is a CD/DVD, which is identified by the label that you can set in your "
 "CD burning application. There is already another entry with the same label. "
@@ -2535,7 +2547,7 @@ msgid ""
 "with digiKam."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:757
+#: libs/database/collectionmanager.cpp:797
 #, kde-format
 msgid ""
 "This is a CD/DVD. It will be identified by the label (\"%1\")that you have "
@@ -2543,14 +2555,14 @@ msgid ""
 "digikam in the future, please remember to give them a unique label as well."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:769
+#: libs/database/collectionmanager.cpp:809
 #, kde-format
 msgid ""
 "This is a removable storage medium that will be identified by its label (\"%1"
 "\")"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:779
+#: libs/database/collectionmanager.cpp:819
 #, kde-format
 msgid ""
 "This entry will only be identified by the path where it is found on your "
@@ -2558,18 +2570,18 @@ msgid ""
 "available."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:790
+#: libs/database/collectionmanager.cpp:830
 msgid ""
 "It is not possible on your system to identify the storage medium of this "
 "path. It will be added using the file path as the only identifier. This will "
 "work well for your local hard disk."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:817
+#: libs/database/collectionmanager.cpp:857
 msgid "There is already a collection for a network share with the same path."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:824
+#: libs/database/collectionmanager.cpp:864
 msgid ""
 "The network share will be identified by the path you selected. If the path "
 "is empty, the share will be considered unavailable."
@@ -3022,7 +3034,7 @@ msgstr ""
 #: libs/models/albummodel.cpp:49 digikam/albumfolderview.cpp:568
 #: digikam/albumfolderview.cpp:978 digikam/albumfolderview.cpp:1076
 #: digikam/albumfolderview.cpp:1111 digikam/albumfolderview.cpp:1171
-#: digikam/albumfolderview.cpp:1225 digikam/albummanager.cpp:737
+#: digikam/albumfolderview.cpp:1225 digikam/albummanager.cpp:842
 #: digikam/albumiconview.cpp:1460 digikam/album.cpp:354
 #: digikam/imagedragdrop.cpp:290 digikam/albumdragdrop.cpp:77
 #: digikam/albumdragdrop.cpp:137 digikam/albumdragdrop.cpp:172
@@ -3034,7 +3046,7 @@ msgstr "मेरो एल्बम"
 
 #: libs/models/albummodel.cpp:76 digikam/tagfolderview.cpp:554
 #: digikam/tagfolderview.cpp:819 digikam/tagfolderview.cpp:893
-#: digikam/tagfolderview.cpp:924 digikam/albummanager.cpp:740
+#: digikam/tagfolderview.cpp:924 digikam/albummanager.cpp:845
 #: digikam/album.cpp:413
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:145
 msgid "My Tags"
@@ -5120,40 +5132,40 @@ msgstr ""
 msgid "Create New Album"
 msgstr "नयाँ एल्बम सिर्जना गर्नुहोस्"
 
-#: digikam/albummanager.cpp:352
+#: digikam/albummanager.cpp:356
 #, kde-format
 msgid ""
 "Failed to backup the existing database file (\"%1\").Refusing to replace "
 "file without backup, using the existing file."
 msgstr ""
 
-#: digikam/albummanager.cpp:365
+#: digikam/albummanager.cpp:369
 #, kde-format
 msgid ""
 "Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
 "Starting with an empty database."
 msgstr ""
 
-#: digikam/albummanager.cpp:399 digikam/albummanager.cpp:436
-#: digikam/albummanager.cpp:454
+#: digikam/albummanager.cpp:403 digikam/albummanager.cpp:440
+#: digikam/albummanager.cpp:458
 #, fuzzy
 #| msgid "Reading database"
 msgid "Copy Current Database"
 msgstr "डाटाबेस पढाइ"
 
-#: digikam/albummanager.cpp:400 digikam/albummanager.cpp:437
+#: digikam/albummanager.cpp:404 digikam/albummanager.cpp:441
 #, fuzzy
 #| msgid "Create New Album"
 msgid "Create New Database"
 msgstr "नयाँ एल्बम सिर्जना गर्नुहोस्"
 
-#: digikam/albummanager.cpp:401
+#: digikam/albummanager.cpp:405
 #, fuzzy
 #| msgid "Create New Album"
 msgid "Upgrade Database"
 msgstr "नयाँ एल्बम सिर्जना गर्नुहोस्"
 
-#: digikam/albummanager.cpp:403
+#: digikam/albummanager.cpp:407
 #, kde-format
 msgid ""
 "<p>You have chosen the folder \"%1\" as the new place to store the database. "
@@ -5163,21 +5175,21 @@ msgid ""
 "it?</p> "
 msgstr ""
 
-#: digikam/albummanager.cpp:408 digikam/albummanager.cpp:443
-#: digikam/albummanager.cpp:462
+#: digikam/albummanager.cpp:412 digikam/albummanager.cpp:447
+#: digikam/albummanager.cpp:466
 #, fuzzy
 #| msgid "Reading database"
 msgid "New database folder"
 msgstr "डाटाबेस पढाइ"
 
-#: digikam/albummanager.cpp:427
+#: digikam/albummanager.cpp:431
 #, kde-format
 msgid ""
 "Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
 "Trying to upgrade old databases."
 msgstr ""
 
-#: digikam/albummanager.cpp:439
+#: digikam/albummanager.cpp:443
 #, kde-format
 msgid ""
 "<p>You have chosen the folder \"%1\" as the new place to store the database."
@@ -5185,13 +5197,13 @@ msgid ""
 "continue using it, or start with a new database?</p> "
 msgstr ""
 
-#: digikam/albummanager.cpp:455
+#: digikam/albummanager.cpp:459
 #, fuzzy
 #| msgid "Use builtin sRGB profile"
 msgid "Use Existing File"
 msgstr "builtin sRGB प्रोफाइल प्रयोग गर्नुहोस्"
 
-#: digikam/albummanager.cpp:457
+#: digikam/albummanager.cpp:461
 #, kde-format
 msgid ""
 "<p>You have chosen the folder \"%1\" as the new place to store the database. "
@@ -5200,7 +5212,7 @@ msgid ""
 "current database to this place?</p> "
 msgstr ""
 
-#: digikam/albummanager.cpp:572
+#: digikam/albummanager.cpp:576
 msgid ""
 "<p>Failed to open the database. </p><p>You cannot use digiKam without a "
 "working database. digiKam will attempt to start now, but it will <b>not</b> "
@@ -5208,7 +5220,7 @@ msgid ""
 "menu</b>.</p>"
 msgstr ""
 
-#: digikam/albummanager.cpp:580
+#: digikam/albummanager.cpp:584
 #, kde-format
 msgid ""
 "<p>Failed to open the database. Error message from database:</p><p><b>%1</"
@@ -5217,7 +5229,7 @@ msgid ""
 "database settings in the <b>configuration menu</b>.</p>"
 msgstr ""
 
-#: digikam/albummanager.cpp:648
+#: digikam/albummanager.cpp:652
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your locale has changed from the previous time this album was opened.\n"
@@ -5241,70 +5253,103 @@ msgstr ""
 "एल्बमसँग काम गर्न 'हो' मा क्लिक गर्नुहोस् । अन्यथा, 'होइन' मा क्लिक गर्नुहोस् र डिजिक्याम "
 "पुन सुरु गर्नुपूर्व तपाईँको लोक्याल सेटिङ सुधार गर्नुहोस् ।"
 
+#: digikam/albummanager.cpp:691
+#, kde-format
+msgid ""
+"<p>The collection </p><p><b>%1</b><br/>(%2)</p><p> is currently not found on "
+"your system.<br/> Please choose the most appropriate option to handle this "
+"situation:</p>"
+msgstr ""
+
+#: digikam/albummanager.cpp:709
+msgid ""
+"<p>The collection is still available, but the identifier changed.<br/>This "
+"can be caused by restoring a backup, changing the partition layout or the "
+"file system settings.<br/>The collection is now located at this place:</p>"
+msgstr ""
+
+#: digikam/albummanager.cpp:726
+msgid ""
+"The collection is located on a storage device which is not always attached. "
+"Mark the collection as a removable collection."
+msgstr ""
+
+#: digikam/albummanager.cpp:734
+msgid ""
+"Take no action now. I would like to solve the problem later using the setup "
+"dialog"
+msgstr ""
+
 #: digikam/albummanager.cpp:743
+#, fuzzy
+#| msgid "Collections"
+msgid "Collection not found"
+msgstr "सङ्कलन"
+
+#: digikam/albummanager.cpp:848
 #: utilities/searchwindow/searchfolderview.cpp:120
 #: utilities/searchwindow/searchfolderview.cpp:329
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:146
 msgid "My Searches"
 msgstr "मेरो खोजीहरू"
 
-#: digikam/albummanager.cpp:1534
+#: digikam/albummanager.cpp:1639
 msgid "The collection location supplied is invalid or currently not available."
 msgstr ""
 
-#: digikam/albummanager.cpp:1559
+#: digikam/albummanager.cpp:1664
 msgid "No parent found for album."
 msgstr "एल्बमका लागि प्रमूल फेला परेन ।"
 
-#: digikam/albummanager.cpp:1566
+#: digikam/albummanager.cpp:1671
 msgid "Album name cannot be empty."
 msgstr "एल्बमको नाम खाली हुनसक्दैन ।"
 
-#: digikam/albummanager.cpp:1572
+#: digikam/albummanager.cpp:1677
 msgid "Album name cannot contain '/'."
 msgstr "एल्बमको नाममा '/' हुनु हुँदैन ।"
 
-#: digikam/albummanager.cpp:1578
+#: digikam/albummanager.cpp:1683
 msgid "createPAlbum does not accept the root album as parent."
 msgstr ""
 
-#: digikam/albummanager.cpp:1591
+#: digikam/albummanager.cpp:1696
 #, fuzzy
 #| msgid "Another album with same name exists."
 msgid "An existing album has the same name."
 msgstr "सोहि नामको अर्को एल्बम अवस्थित छ ।"
 
-#: digikam/albummanager.cpp:1603
+#: digikam/albummanager.cpp:1708
 #, fuzzy
 #| msgid "Failed to rename Album"
 msgid "Failed to create directory,"
 msgstr "एल्बम पुन: नामकरण गर्न असफल"
 
-#: digikam/albummanager.cpp:1612
+#: digikam/albummanager.cpp:1717
 msgid "Failed to add album to database"
 msgstr "डाटाबेसमा एल्बम थप्न असफल"
 
-#: digikam/albummanager.cpp:1635 digikam/albummanager.cpp:1735
-#: digikam/albummanager.cpp:1837 digikam/albummanager.cpp:1871
-#: digikam/albummanager.cpp:1912
+#: digikam/albummanager.cpp:1740 digikam/albummanager.cpp:1840
+#: digikam/albummanager.cpp:1942 digikam/albummanager.cpp:1976
+#: digikam/albummanager.cpp:2017
 msgid "No such album"
 msgstr "त्यस्तो एल्बम छैन"
 
-#: digikam/albummanager.cpp:1641
+#: digikam/albummanager.cpp:1746
 msgid "Cannot rename root album"
 msgstr "रूट एल्बम पुन: नामकरण गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1647
+#: digikam/albummanager.cpp:1752
 #, fuzzy
 #| msgid "Cannot rename root album"
 msgid "Cannot rename album root album"
 msgstr "रूट एल्बम पुन: नामकरण गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1653
+#: digikam/albummanager.cpp:1758
 msgid "Album name cannot contain '/'"
 msgstr "एल्बम नाममा '/' हुनु हुँदैन"
 
-#: digikam/albummanager.cpp:1663
+#: digikam/albummanager.cpp:1768
 #, fuzzy
 #| msgid ""
 #| "Another Album with same name exists\n"
@@ -5316,45 +5361,45 @@ msgstr ""
 "सोहि नामको अर्को एल्बम अवस्थित छ \n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: digikam/albummanager.cpp:1686
+#: digikam/albummanager.cpp:1791
 msgid "Failed to rename Album"
 msgstr "एल्बम पुन: नामकरण गर्न असफल"
 
-#: digikam/albummanager.cpp:1741
+#: digikam/albummanager.cpp:1846
 msgid "Cannot edit root album"
 msgstr "रूट एल्बम सम्पादन गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1770
+#: digikam/albummanager.cpp:1875
 msgid "No parent found for tag"
 msgstr "ट्यागका लागि प्रमूल फेला परेन"
 
-#: digikam/albummanager.cpp:1777
+#: digikam/albummanager.cpp:1882
 msgid "Tag name cannot be empty"
 msgstr "ट्याग नाम खाली हुन सक्दैन"
 
-#: digikam/albummanager.cpp:1783 digikam/albummanager.cpp:1883
+#: digikam/albummanager.cpp:1888 digikam/albummanager.cpp:1988
 msgid "Tag name cannot contain '/'"
 msgstr "ट्याग नाममा '/' हुनु हुँदैन"
 
-#: digikam/albummanager.cpp:1793 digikam/tageditdlg.cpp:358
+#: digikam/albummanager.cpp:1898 digikam/tageditdlg.cpp:358
 #, fuzzy
 #| msgid "File already exists"
 msgid "Tag name already exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
-#: digikam/albummanager.cpp:1803
+#: digikam/albummanager.cpp:1908
 msgid "Failed to add tag to database"
 msgstr "डाटाबेसमा ट्याग थप्न असफल"
 
-#: digikam/albummanager.cpp:1843
+#: digikam/albummanager.cpp:1948
 msgid "Cannot delete Root Tag"
 msgstr "रूट ट्याग मेट्न सकिदैन"
 
-#: digikam/albummanager.cpp:1877 digikam/albummanager.cpp:1944
+#: digikam/albummanager.cpp:1982 digikam/albummanager.cpp:2049
 msgid "Cannot edit root tag"
 msgstr "रूट ट्याग सम्पादन गर्न सकिदैन"
 
-#: digikam/albummanager.cpp:1893
+#: digikam/albummanager.cpp:1998
 #, fuzzy
 #| msgid ""
 #| "Another tag with same name exists\n"
@@ -5366,11 +5411,11 @@ msgstr ""
 "सोहि नामको अर्को ट्याग अवस्थित छ\n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: digikam/albummanager.cpp:1918
+#: digikam/albummanager.cpp:2023
 msgid "Cannot move root tag"
 msgstr "रूट ट्याग सार्न सकिदैन"
 
-#: digikam/albummanager.cpp:1938
+#: digikam/albummanager.cpp:2043
 msgid "No such tag"
 msgstr "त्यस्तो ट्याग छैन"
 
@@ -19805,11 +19850,6 @@ msgstr ""
 
 #~ msgid "Slide Show Settings"
 #~ msgstr "स्लाइड प्रर्दशन सेटिङ"
-
-#, fuzzy
-#~| msgid "Collections"
-#~ msgid "Collections Settings"
-#~ msgstr "सङ्कलन"
 
 #, fuzzy
 #~| msgid "Album Settings"
