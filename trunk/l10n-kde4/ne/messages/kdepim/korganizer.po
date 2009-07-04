@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-28 11:41+0200\n"
+"POT-Creation-Date: 2009-07-04 12:18+0200\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: koeventpopupmenu.cpp:46 views/todoview/kotodoview.cpp:153
-#: actionmanager.cpp:538 actionmanager.cpp:1637 actionmanager.cpp:1670
+#: actionmanager.cpp:538 actionmanager.cpp:1640 actionmanager.cpp:1673
 msgid "&Show"
 msgstr "देखाउनुहोस्"
 
 #: koeventpopupmenu.cpp:47 views/todoview/kotodoview.cpp:156
-#: actionmanager.cpp:543 actionmanager.cpp:1640 actionmanager.cpp:1671
+#: actionmanager.cpp:543 actionmanager.cpp:1643 actionmanager.cpp:1674
 #: resourceview.cpp:686
 msgid "&Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
@@ -1929,7 +1929,6 @@ msgstr "  (म्याद समाप्त: %1)"
 
 #: views/timelineview/kotimelineview.cpp:51
 #: views/timelineview/kotimelineview.cpp:119 korganizer.cpp:291
-#: resourceview.cpp:281
 msgid "Calendar"
 msgstr "क्यालेन्डर"
 
@@ -1967,7 +1966,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:172 views/journalview/journalview.cpp:186
 #: calendarview.cpp:824 actionmanager.cpp:351 actionmanager.cpp:548
-#: actionmanager.cpp:1643 actionmanager.cpp:1672 rc.cpp:6 rc.cpp:3012
+#: actionmanager.cpp:1646 actionmanager.cpp:1675 rc.cpp:6 rc.cpp:3012
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
 
@@ -2295,8 +2294,14 @@ msgid "Do Not Send"
 msgstr "नपठाउनुहोस्"
 
 #: incidencechanger.cpp:293
-msgid "No resources found, item cannot be added."
+#, fuzzy
+#| msgid ""
+#| "You have no ical file in your home directory.\n"
+#| "Import cannot proceed.\n"
+msgid "You have no calendars. Item cannot be added."
 msgstr ""
+"तपाईँको गृह डाइरेक्टरीमा आईक्याल फाइल छैन ।\n"
+"आयात अगाडि बढाउन सकिँदैन ।\n"
 
 #: incidencechanger.cpp:319 kodialogmanager.cpp:120
 #, kde-format
@@ -2651,15 +2656,15 @@ msgstr "स्रोत"
 #: koprefsdialog.cpp:798
 #, fuzzy
 #| msgid ""
-#| "Select here resource you want to modify. You can change the selected "
-#| "resource color using the button below."
+#| "Select here the event category you want to modify. You can change the "
+#| "selected category color using the button below."
 msgctxt "@info:whatsthis"
 msgid ""
-"Select here resource you want to modify. You can change the selected "
-"resource color using the button below."
+"Select the calendar you want to modify. You can change the selected calendar "
+"color using the button below."
 msgstr ""
-"तपाईँले परिमार्जन गर्न चाहेको स्रोत यहाँ चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग गरेर चयन "
-"गरिएको स्रोत रङ परिवर्तन गर्न सक्नुहुन्छ ।"
+"यहाँ तपाईँले परिमार्जन गर्न चाहेको घटना कोटि चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग गरेर "
+"चयन गरिएको कोटि रङ परिवर्तन गर्न सक्नुहुन्छ ।"
 
 #: koprefsdialog.cpp:807
 #, fuzzy
@@ -2667,7 +2672,7 @@ msgstr ""
 #| "Choose here the color of the resource selected using the combo box above."
 msgctxt "@info:whatsthis"
 msgid ""
-"Choose here the color of the resource selected using the combo box above."
+"Choose here the color of the calendar selected using the combo box above."
 msgstr "यहाँ माथिको कम्बो बाकस प्रयोग गरेर चयन गरिएको स्रोतको रङ रोज्नुहोस् ।"
 
 #: koprefsdialog.cpp:818
@@ -3521,7 +3526,7 @@ msgstr "थप्नुहोस्"
 
 #. i18n: file: timescaleedit_base.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: kodaymatrix.cpp:703 calendarview.cpp:1302 rc.cpp:1255 rc.cpp:2925
+#: kodaymatrix.cpp:703 calendarview.cpp:1303 rc.cpp:1255 rc.cpp:2925
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -3543,7 +3548,7 @@ msgstr ""
 msgid "Delete Old Items"
 msgstr "पुरानो वस्तु मट्नुहोस्"
 
-#: eventarchiver.cpp:220 calendarview.cpp:1661 calendarview.cpp:1709
+#: eventarchiver.cpp:220 calendarview.cpp:1662 calendarview.cpp:1710
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
@@ -3748,116 +3753,122 @@ msgstr "फिल्टर लागू गरियो"
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "वस्तु \"%1\" स्थायी रूपमा मेटिन्छ ।"
 
-#: calendarview.cpp:823 calendarview.cpp:1300 calendarview.cpp:1312
-#: calendarview.cpp:2186 calendarview.cpp:2249 calendarview.cpp:2280
+#: calendarview.cpp:823 calendarview.cpp:1301 calendarview.cpp:1313
+#: calendarview.cpp:2187 calendarview.cpp:2250 calendarview.cpp:2281
 msgid "KOrganizer Confirmation"
 msgstr "केडीई आयोजक यकीन"
 
-#: calendarview.cpp:1167
+#: calendarview.cpp:893
+#, fuzzy
+#| msgid "Please specify a valid start date."
+msgid "Paste failed: unable to determine a valid target date."
+msgstr "कृपया वैध सुरु मिति निर्दिष्ट गर्नुहोस् ।"
+
+#: calendarview.cpp:1168
 msgid ""
 "Unable to turn sub-to-do into a top-level to-do, because it cannot be locked."
 msgstr ""
 "यसलाई ताल्चा लगाउन नसकिने कारणले, गर्नुपर्ने साहायक-कार्यलाई उच्च स्तरको गर्नुपर्ने कार्यमा "
 "फर्काउन असमर्थ ।"
 
-#: calendarview.cpp:1192
+#: calendarview.cpp:1193
 msgid "Make sub-to-dos independent"
 msgstr "गर्नुपर्ने साहायक-कार्यलाई स्वतन्त्र बनाउनुहोस्"
 
-#: calendarview.cpp:1296
+#: calendarview.cpp:1297
 #, fuzzy, kde-format
 #| msgid "Dissociate event from recurrence"
 msgid "Do you want to dissociate the occurrence at %1 from the recurrence?"
 msgstr "पुनरावृत्तिबाट घटना छुट्याउनुहोस्"
 
-#: calendarview.cpp:1301
+#: calendarview.cpp:1302
 #, fuzzy
 #| msgid "T&ime associated"
 msgid "&Dissociate"
 msgstr "समय सम्बद्ध"
 
-#: calendarview.cpp:1307
+#: calendarview.cpp:1308
 #, kde-format
 msgid ""
 "Do you want to dissociate the occurrence at %1 from the recurrence or also "
 "dissociate future ones?"
 msgstr ""
 
-#: calendarview.cpp:1313
+#: calendarview.cpp:1314
 #, fuzzy
 #| msgid "&Dissociate This Occurrence"
 msgid "&Only Dissociate This One"
 msgstr "यो घटना अलग गर्नुहोस्"
 
-#: calendarview.cpp:1314
+#: calendarview.cpp:1315
 #, fuzzy
 #| msgid "&Dissociate Future Occurrences"
 msgid "&Also Dissociate Future Ones"
 msgstr "भविष्यका घटना अलग गर्नुहोस्"
 
-#: calendarview.cpp:1332
+#: calendarview.cpp:1333
 msgid "Dissociate occurrence"
 msgstr "घटना छोड्नुहोस्"
 
-#: calendarview.cpp:1343
+#: calendarview.cpp:1344
 msgid "Dissociating the occurrence failed."
 msgstr "घटना छोड्दा असफल भयो ।"
 
-#: calendarview.cpp:1344 calendarview.cpp:1371
+#: calendarview.cpp:1345 calendarview.cpp:1372
 msgid "Dissociating Failed"
 msgstr "छोड्न असफल भयो"
 
-#: calendarview.cpp:1357
+#: calendarview.cpp:1358
 msgid "Dissociate future occurrences"
 msgstr "भविष्यका घटना छोड्नुहोस्"
 
-#: calendarview.cpp:1370
+#: calendarview.cpp:1371
 msgid "Dissociating the future occurrences failed."
 msgstr "भविष्यका घटना छोड्न असफल भयो ।"
 
-#: calendarview.cpp:1385 calendarview.cpp:1456 calendarview.cpp:1520
+#: calendarview.cpp:1386 calendarview.cpp:1457 calendarview.cpp:1521
 msgid "No item selected."
 msgstr "वस्तु चयन गरिएको छैन ।"
 
-#: calendarview.cpp:1405 calendarview.cpp:1472
+#: calendarview.cpp:1406 calendarview.cpp:1473
 msgid "The item information was successfully sent."
 msgstr "वस्तु सूचना सफलतापूर्वक पठाइएको थियो ।"
 
-#: calendarview.cpp:1406
+#: calendarview.cpp:1407
 msgid "Publishing"
 msgstr "प्रकाशन"
 
-#: calendarview.cpp:1408
+#: calendarview.cpp:1409
 #, kde-format
 msgid "Unable to publish the item '%1'"
 msgstr "वस्तु '%1' प्रकाशन गर्न असमर्थ"
 
-#: calendarview.cpp:1473
+#: calendarview.cpp:1474
 msgid "Forwarding"
 msgstr "फरवार्डिङ"
 
-#: calendarview.cpp:1475
+#: calendarview.cpp:1476
 #, kde-format
 msgid "Unable to forward the item '%1'"
 msgstr "वस्तु '%1' फरवार्ड गर्न असमर्थ"
 
-#: calendarview.cpp:1497
+#: calendarview.cpp:1498
 msgid "The free/busy information was successfully sent."
 msgstr "स्वतन्त्र/व्यस्त सूचना सफलतापूर्वक पठाइयो ।"
 
-#: calendarview.cpp:1498 calendarview.cpp:1541
+#: calendarview.cpp:1499 calendarview.cpp:1542
 msgid "Sending Free/Busy"
 msgstr "स्वतन्त्र/व्यस्त पठाउदैछ"
 
-#: calendarview.cpp:1501
+#: calendarview.cpp:1502
 msgid "Unable to publish the free/busy data."
 msgstr "स्वतन्त्र/व्यस्त डेटा प्रकाशन गर्न असमर्थ ।"
 
-#: calendarview.cpp:1525
+#: calendarview.cpp:1526
 msgid "The item has no attendees."
 msgstr "वस्तुमा सहभागी छैनन् ।"
 
-#: calendarview.cpp:1537
+#: calendarview.cpp:1538
 #, fuzzy, kde-format
 #| msgid ""
 #| "The groupware message for item '%1'was successfully sent.\n"
@@ -3869,7 +3880,7 @@ msgstr ""
 "वस्तु '%1' का लागि ग्रुपवेयर सन्देश सफलतापूर्वक पठाइएयो ।\n"
 "विधि: %2"
 
-#: calendarview.cpp:1547
+#: calendarview.cpp:1548
 #, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
@@ -3880,71 +3891,71 @@ msgstr ""
 "वस्तु '%1' पठाउन असमर्थ ।\n"
 "विधि: %2"
 
-#: calendarview.cpp:1639
+#: calendarview.cpp:1640
 #, fuzzy
 #| msgid "*.ics|ICalendars"
 msgid "*.ics|iCalendars"
 msgstr "*.ics|आई क्यालेन्डर"
 
-#: calendarview.cpp:1650 calendarview.cpp:1698
+#: calendarview.cpp:1651 calendarview.cpp:1699
 #, kde-format
 msgid "Do you want to overwrite %1?"
 msgstr ""
 
-#: calendarview.cpp:1665
+#: calendarview.cpp:1666
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgctxt "@info"
 msgid "Cannot write iCalendar file %1. %2"
 msgstr "सङ्ग्रह फाइल %1 लेख्न सकिँदैन ।"
 
-#: calendarview.cpp:1677
+#: calendarview.cpp:1678
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "जर्नल प्रविष्टि भी क्यालेन्डर फाइलमा निर्यात गर्न सकिँदैन ।"
 
-#: calendarview.cpp:1678
+#: calendarview.cpp:1679
 msgid "Data Loss Warning"
 msgstr "डेटा क्षति चेतावनी"
 
-#: calendarview.cpp:1679 actionmanager.cpp:1064
+#: calendarview.cpp:1680 actionmanager.cpp:1063
 msgid "Proceed"
 msgstr "बढाउनुहोस्"
 
-#: calendarview.cpp:1689
+#: calendarview.cpp:1690
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|भी क्यालेन्डर"
 
-#: calendarview.cpp:1713
+#: calendarview.cpp:1714
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgctxt "@info"
 msgid "Cannot write vCalendar file %1. %2"
 msgstr "सङ्ग्रह फाइल %1 लेख्न सकिँदैन ।"
 
-#: calendarview.cpp:1732
+#: calendarview.cpp:1733
 msgid "&Previous Day"
 msgstr "अघिल्लो दिन"
 
-#: calendarview.cpp:1733 actionmanager.cpp:387 actionmanager.cpp:1352
+#: calendarview.cpp:1734 actionmanager.cpp:387 actionmanager.cpp:1355
 #, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
 msgstr[0] "पछिल्लो दिन"
 msgstr[1] "पछिल्ला %1 दिन"
 
-#: calendarview.cpp:1735
+#: calendarview.cpp:1736
 msgid "&Previous Week"
 msgstr "अघिल्लो हप्ता"
 
-#: calendarview.cpp:1736
+#: calendarview.cpp:1737
 msgid "&Next Week"
 msgstr "पछिल्लो हप्ता"
 
-#: calendarview.cpp:1820 calendarview.cpp:1860
+#: calendarview.cpp:1821 calendarview.cpp:1861
 msgid "No filter"
 msgstr "फिल्टर छैन"
 
-#: calendarview.cpp:2181
+#: calendarview.cpp:2182
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -3955,32 +3966,35 @@ msgstr ""
 "साहायक-कार्य स्वतन्त्र बनाउन, वा गर्नुपर्ने कार्य यसका गर्नुपर्ने साहायक-कार्यबाट मेट्न "
 "चाहनुहुन्छ ?"
 
-#: calendarview.cpp:2187
+#: calendarview.cpp:2188
 msgid "Delete Only This"
 msgstr "यसलाई मात्र मेट्नुहोस्"
 
-#: calendarview.cpp:2188 calendarview.cpp:2250
+#: calendarview.cpp:2189 calendarview.cpp:2251
 msgid "Delete All"
 msgstr "सबै मेट्नुहोस्"
 
-#: calendarview.cpp:2190
+#: calendarview.cpp:2191
 msgid "Deleting sub-to-dos"
 msgstr "गर्नुपर्ने साहायक कार्य मेट्दैछ"
 
-#: calendarview.cpp:2214
-#, kde-format
+#: calendarview.cpp:2215
+#, fuzzy, kde-format
+#| msgid ""
+#| "The item \"%1\" is marked read-only and cannot be deleted; it probably "
+#| "belongs to a read-only calendar resource."
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
-"belongs to a read-only calendar resource."
+"belongs to a read-only calendar."
 msgstr ""
 "वस्तु \"%1\" पढ्नका लागि मात्र चिन्ह लगाइएकोछ र मेट्न सकिँदैन; यो सम्भवत पढ्ने मात्र "
 "क्यालेन्डर स्रोतको अधिनमा छ ।"
 
-#: calendarview.cpp:2218
+#: calendarview.cpp:2219
 msgid "Removing not possible"
 msgstr "हटाउन सम्भव छैन"
 
-#: calendarview.cpp:2246
+#: calendarview.cpp:2247
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
@@ -3989,13 +4003,13 @@ msgstr ""
 "क्यालेन्डर वस्तु \"%1\" वहूविध मितिमा दोहोरिन्छ; के तपाईँ यसलाई र यसका पुनरावृत्तिलाई "
 "मेट्न निश्चित हुनुहुन्छ ?"
 
-#: calendarview.cpp:2257
+#: calendarview.cpp:2258
 #, fuzzy
 #| msgid "Delete &Future"
 msgid "Also Delete &Future"
 msgstr "भविष्यमा मेट्नुहोस्"
 
-#: calendarview.cpp:2261
+#: calendarview.cpp:2262
 #, fuzzy, kde-format
 #| msgid ""
 #| "The calendar item \"%1\" recurs over multiple dates. Do you want to "
@@ -4008,7 +4022,7 @@ msgstr ""
 "क्यालेन्डर वस्तु \"%1\" वहूविध मितिमा दोहोरिन्छ । के तपाईँ यसलाई हालको एक %2 मा मात्र, "
 "भविष्यका घटनामा मात्र, वा सबै यसका पुनरावृत्तिमा मेट्न चाहनुहुन्छ ?"
 
-#: calendarview.cpp:2268
+#: calendarview.cpp:2269
 #, fuzzy, kde-format
 #| msgid ""
 #| "The calendar item \"%1\" recurs over multiple dates. Do you want to "
@@ -4021,57 +4035,57 @@ msgstr ""
 "क्यालेन्डर वस्तु \"%1\" वहूविध मितिमा दोहोरिन्छ । के तपाईँ यसलाई हालको एक %2 मा मात्र, "
 "भविष्यका घटनामा मात्र, वा सबै यसका पुनरावृत्तिमा मेट्न चाहनुहुन्छ ?"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2282
 msgid "Delete C&urrent"
 msgstr "हाल मेट्नुहोस्"
 
-#: calendarview.cpp:2283
+#: calendarview.cpp:2284
 msgid "Delete &All"
 msgstr "सबै मेट्नुहोस्"
 
-#: calendarview.cpp:2372
+#: calendarview.cpp:2373
 msgid "Delete all completed to-dos?"
 msgstr "समाप्त भएका सबै गर्नुपर्ने कार्य मेट्नुहुन्छ ?"
 
-#: calendarview.cpp:2373
+#: calendarview.cpp:2374
 msgid "Purge To-dos"
 msgstr "गर्नुपर्ने कार्य शूद्धीकरण गर्नुहोस्"
 
-#: calendarview.cpp:2374
+#: calendarview.cpp:2375
 msgid "Purge"
 msgstr "शुद्धीकरण गर्नुहोस्"
 
-#: calendarview.cpp:2378
+#: calendarview.cpp:2379
 msgid "Purging completed to-dos"
 msgstr "समाप्त भएको गर्नुपर्ने कार्य शुद्धीकरण गर्दैछ"
 
-#: calendarview.cpp:2395
+#: calendarview.cpp:2396
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "सम्पन्न नभएका शाखामा गर्नुपर्ने कार्य शुद्धिकरण गर्न असमर्थ ।"
 
-#: calendarview.cpp:2396
+#: calendarview.cpp:2397
 msgid "Delete To-do"
 msgstr "गर्नुपर्ने कार्य मेट्नुहोस्"
 
-#: calendarview.cpp:2405
+#: calendarview.cpp:2406
 msgid "Unable to edit item: it is locked by another process."
 msgstr "वस्तु सम्पादन गर्न असमर्थ: यो अन्य प्रक्रियाद्वारा ताल्चा लगाइएको छ ।"
 
-#: calendarview.cpp:2438
+#: calendarview.cpp:2439
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "%1 मा वस्तु प्रतिलिपि गर्न असमर्थ ।"
 
-#: calendarview.cpp:2439
+#: calendarview.cpp:2440
 msgid "Copying Failed"
 msgstr "प्रतिलिपि गर्न असफल"
 
-#: calendarview.cpp:2483
+#: calendarview.cpp:2484
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "  %1 मा वस्तु सार्न असमर्थ ।"
 
-#: calendarview.cpp:2484
+#: calendarview.cpp:2485
 msgid "Moving Failed"
 msgstr "सार्न असफल"
 
@@ -5107,8 +5121,10 @@ msgid "Show Item Viewer"
 msgstr "वस्तु दर्शक देखाउनुहोस्"
 
 #: actionmanager.cpp:658
-msgid "Show Resource View"
-msgstr "स्रोत दृश्य देखाउनुहोस्"
+#, fuzzy
+#| msgid "Export Calendar as Web Page"
+msgid "Show Calendar Manager"
+msgstr "वेब पृष्ठका रूपमा क्यालेन्डर निर्यात गर्नुहोस्"
 
 #: actionmanager.cpp:671
 msgid "Configure &Date && Time..."
@@ -5187,26 +5203,28 @@ msgid "Cannot download calendar from '%1'."
 msgstr "'%1' बाट क्यालेन्डर डाउनलोड गर्न सकिँदैन ।"
 
 #: actionmanager.cpp:1016
-#, kde-format
-msgid "Added calendar resource for URL '%1'."
+#, fuzzy, kde-format
+#| msgid "Added calendar resource for URL '%1'."
+msgid "Added calendar for URL '%1'."
 msgstr "URL '%1' का लागि क्यालेन्डर स्रोत थपियो ।"
 
 #: actionmanager.cpp:1024
-#, kde-format
-msgid "Unable to create calendar resource '%1'."
+#, fuzzy, kde-format
+#| msgid "Unable to create calendar resource '%1'."
+msgid "Unable to create calendar '%1'."
 msgstr "क्यालेन्डर स्रोत '%1' सिर्जना गर्न असमर्थ ।"
 
-#: actionmanager.cpp:1034
+#: actionmanager.cpp:1033
 #, kde-format
 msgid "Merged calendar '%1'."
 msgstr "क्यालेन्डर '%1' गाभियो ।"
 
-#: actionmanager.cpp:1037
+#: actionmanager.cpp:1036
 #, kde-format
 msgid "Opened calendar '%1'."
 msgstr "क्यालेन्डर '%1' खोलियो ।"
 
-#: actionmanager.cpp:1062
+#: actionmanager.cpp:1061
 msgid ""
 "Your calendar will be saved in iCalendar format. Use 'Export vCalendar' to "
 "save in vCalendar format."
@@ -5214,40 +5232,40 @@ msgstr ""
 "तपाईँको क्यालेन्डर आईक्यालेन्डर ढाँचामा बचत गरिन्छ । भी क्यालेन्डर ढाँचामा बचत गर्न 'भी "
 "क्यालेन्डर निर्यात गर्नुहोस्' प्रयोग गर्नुहोस् ।"
 
-#: actionmanager.cpp:1064
+#: actionmanager.cpp:1063
 msgid "Format Conversion"
 msgstr "ढाँचा रुपान्तरण"
 
-#: actionmanager.cpp:1092
+#: actionmanager.cpp:1091
 #, kde-format
 msgid "Cannot upload calendar to '%1'"
 msgstr "क्यालेन्डर '%1' मा अनलोड गर्न सकिँदैन"
 
-#: actionmanager.cpp:1105
+#: actionmanager.cpp:1104
 #, kde-format
 msgid "Saved calendar '%1'."
 msgstr "क्यालेन्डर %1 बचत गरियो ।"
 
-#: actionmanager.cpp:1138
+#: actionmanager.cpp:1139
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
 msgid "Do you want to overwrite file \"%1\""
 msgstr "<qt>तपाईँ वास्तवमै स्रोत <b>%1</b> मेट्न चाहनुहुन्छ ?</qt>"
 
-#: actionmanager.cpp:1174
+#: actionmanager.cpp:1177
 msgid "Could not upload file."
 msgstr "फाइल अनलोड गर्न सकेन ।"
 
-#: actionmanager.cpp:1218
+#: actionmanager.cpp:1221
 #, kde-format
 msgid "Unable to save calendar to the file %1."
 msgstr "फाइल %1 मा क्यालेन्डर बचत गर्न असमर्थ ।"
 
-#: actionmanager.cpp:1219
+#: actionmanager.cpp:1222
 msgid "Error"
 msgstr "त्रुटि"
 
-#: actionmanager.cpp:1245
+#: actionmanager.cpp:1248
 msgid ""
 "The calendar has been modified.\n"
 "Do you want to save it?"
@@ -5255,96 +5273,96 @@ msgstr ""
 "क्यालेन्डर परिमार्ज गरिएकोछ ।\n"
 "तपाईँ यसलाई बचत गर्न चाहनुहुन्छ ?"
 
-#: actionmanager.cpp:1272
+#: actionmanager.cpp:1275
 #, fuzzy
 #| msgid "*.vcs *.ics|Calendar Files"
 msgid "*.ics *.vcs|Calendar Files"
 msgstr "*.vcs *.ics|क्यालेन्डर फाइल"
 
-#: actionmanager.cpp:1394
+#: actionmanager.cpp:1397
 msgid "Could not start control module for date and time format."
 msgstr "मिति र समय ढाँचाका लागि नियन्त्रण मोड्युल सुरुआत गर्न सकेन ।"
 
-#: actionmanager.cpp:1529
+#: actionmanager.cpp:1532
 msgid "Could not load calendar."
 msgstr "क्यालेन्डर लोड गर्न सकेन ।"
 
-#: actionmanager.cpp:1544
+#: actionmanager.cpp:1547
 msgid "The downloaded events will be merged into your current calendar."
 msgstr "डाउनलोड गरिएका घटना तपाईँको हालको क्यालेन्डरमा गाभिन्छन् ।"
 
-#: actionmanager.cpp:1601
+#: actionmanager.cpp:1604
 msgid "&Show Event"
 msgstr "घटना देखाउनुहोस्"
 
-#: actionmanager.cpp:1604
+#: actionmanager.cpp:1607
 msgid "&Edit Event..."
 msgstr "घटना सम्पादन गर्नुहोस्..."
 
-#: actionmanager.cpp:1607
+#: actionmanager.cpp:1610
 msgid "&Delete Event"
 msgstr "घटना मेट्नुहोस्"
 
-#: actionmanager.cpp:1614
+#: actionmanager.cpp:1617
 msgid "&Show To-do"
 msgstr "गर्नुपर्ने कार्य देखाउनुहोस्"
 
-#: actionmanager.cpp:1617
+#: actionmanager.cpp:1620
 msgid "&Edit To-do..."
 msgstr "गर्नुपर्ने कार्य सम्पादन गर्नुहोस्..."
 
-#: actionmanager.cpp:1620
+#: actionmanager.cpp:1623
 msgid "&Delete To-do"
 msgstr "गर्नुपर्ने कार्य मेट्नुहोस्"
 
-#: actionmanager.cpp:1759 actionmanager.cpp:1864
+#: actionmanager.cpp:1762 actionmanager.cpp:1867
 msgid "Attach as &link"
 msgstr ""
 
-#: actionmanager.cpp:1760 actionmanager.cpp:1865
+#: actionmanager.cpp:1763 actionmanager.cpp:1868
 #, fuzzy
 #| msgid "Attach&ments"
 msgid "Attach &inline"
 msgstr "सङ्लग्नता"
 
-#: actionmanager.cpp:1761
+#: actionmanager.cpp:1764
 msgid "Attach inline &without attachments"
 msgstr ""
 
-#: actionmanager.cpp:1763 actionmanager.cpp:1867
+#: actionmanager.cpp:1766 actionmanager.cpp:1870
 msgid "C&ancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: actionmanager.cpp:1803
+#: actionmanager.cpp:1806
 msgid "Removing attachments from an email might invalidate its signature."
 msgstr ""
 
-#: actionmanager.cpp:1804
+#: actionmanager.cpp:1807
 #, fuzzy
 #| msgid "Attach&ments"
 msgid "Remove Attachments"
 msgstr "सङ्लग्नता"
 
-#: actionmanager.cpp:1953 actionmanager.cpp:1962
+#: actionmanager.cpp:1956 actionmanager.cpp:1965
 msgid "Undo"
 msgstr "पूर्वस्थितिमा फर्काउनुहोस्"
 
-#: actionmanager.cpp:1959
+#: actionmanager.cpp:1962
 #, fuzzy, kde-format
 #| msgid "Undo (%1)"
 msgid "Undo: %1"
 msgstr "पूर्वस्थितिमा फर्काउनुहोस् (%1)"
 
-#: actionmanager.cpp:1969 actionmanager.cpp:1973
+#: actionmanager.cpp:1972 actionmanager.cpp:1976
 msgid "Redo"
 msgstr "रिडू गर्नुहोस्"
 
-#: actionmanager.cpp:1975
+#: actionmanager.cpp:1978
 #, kde-format
 msgid "Redo (%1)"
 msgstr "रिडू गर्नुहोस् (%1)"
 
-#: actionmanager.cpp:1989
+#: actionmanager.cpp:1992
 msgid ""
 "The calendar contains unsaved changes. Do you want to save them before "
 "exiting?"
@@ -5352,41 +5370,41 @@ msgstr ""
 "क्यालेन्डरले बचत नगरिएका परिवर्तन समावेश गर्छ । तपाईँ निस्कनभन्दा पहिला तिनलाई बचत गर्न "
 "चाहनुहुन्छ ?"
 
-#: actionmanager.cpp:1997
+#: actionmanager.cpp:2000
 msgid "Unable to save the calendar. Do you still want to close this window?"
 msgstr "क्यालेन्डर बचत गर्न असमर्थ । तपाईँ अहिल्यै सञ्झ्याल बन्द गर्न चाहनुहुन्छ ?"
 
-#: actionmanager.cpp:2021
+#: actionmanager.cpp:2024
 msgid "Unable to exit. Saving still in progress."
 msgstr "बाहिर निस्कन असमर्थ । बचत अझैपनि प्रगतिमा छ ।"
 
-#: actionmanager.cpp:2065
+#: actionmanager.cpp:2068
 #, fuzzy, kde-format
 #| msgid ""
 #| "Saving of '%1' failed. Check that the resource is properly configured.\n"
 #| "Ignore problem and continue without saving or cancel save?"
 msgid ""
-"Saving of '%1' failed. Check that the resource is properly configured.\n"
+"Saving of '%1' failed. Check that the calendar is properly configured.\n"
 "Ignore problem and save remaining resources or cancel save?"
 msgstr ""
 "'%1' बचत गर्न असफल । स्रोत उचित तरिकाले कन्फिगर भएको जाँच गर्नुहोस् ।\n"
 "समस्या उपेक्षा गरेर र बचत नगरि निरन्तर गर्न वा बचत रद्द गर्न चाहनुहुन्छ ?"
 
-#: actionmanager.cpp:2068
+#: actionmanager.cpp:2071
 msgid "Save Error"
 msgstr "त्रुटि बचत गर्नुहोस्"
 
-#: actionmanager.cpp:2069
+#: actionmanager.cpp:2072
 msgid "Continue Save"
 msgstr ""
 
-#: actionmanager.cpp:2070
+#: actionmanager.cpp:2073
 #, fuzzy
 #| msgid "&Cancel"
 msgid "Cancel Save"
 msgstr "रद्द गर्नुहोस्"
 
-#: actionmanager.cpp:2083
+#: actionmanager.cpp:2086
 #, kde-format
 msgid "URL '%1' is invalid."
 msgstr "URL '%1' अवैध छ ।"
@@ -6271,15 +6289,21 @@ msgstr "नयाँ घटना, गर्नुपर्ने कार्�
 #. i18n: file: korganizer.kcfg:73
 #. i18n: ectx: label, entry (Destination), group (Save Settings)
 #: rc.cpp:367 rc.cpp:1515
-msgid "Be added to the standard resource"
+#, fuzzy
+#| msgid "Be added to the standard resource"
+msgid "Be added to the standard calendar"
 msgstr "मानक स्रोतमा थपिएको हुनुपर्ने"
 
 #. i18n: file: korganizer.kcfg:74
 #. i18n: ectx: whatsthis, entry (Destination), group (Save Settings)
 #: rc.cpp:370 rc.cpp:1518
+#, fuzzy
+#| msgid ""
+#| "Select this option to always record new events, to-dos and journal "
+#| "entries using the standard resource."
 msgid ""
 "Select this option to always record new events, to-dos and journal entries "
-"using the standard resource."
+"using the standard calendar."
 msgstr ""
 "नयाँ घटना, गर्नुपर्ने कार्यहरू र जर्नल प्रविष्टि प्रयोग गरेर मानक स्रोत सधैँँ रेकर्ड गर्न यो "
 "विकल्प चयन गर्नुहोस् ।"
@@ -6287,14 +6311,23 @@ msgstr ""
 #. i18n: file: korganizer.kcfg:77
 #. i18n: ectx: label, entry (Destination), group (Save Settings)
 #: rc.cpp:373 rc.cpp:1521
-msgid "Be asked which resource to use"
+#, fuzzy
+#| msgid "Be asked which resource to use"
+msgid "Be asked which calendar to use"
 msgstr "कुन स्रोत प्रयोग गर्ने सोधिन्छ"
 
 #. i18n: file: korganizer.kcfg:78
 #. i18n: ectx: whatsthis, entry (Destination), group (Save Settings)
 #: rc.cpp:376 rc.cpp:1524
+#, fuzzy
+#| msgid ""
+#| "Select this option to choose the resource to be used to record the item "
+#| "each time you create a new event, to-do or journal entry. This choice is "
+#| "recommended if you intend to use the shared folders functionality of the "
+#| "Kolab server or have to manage multiple accounts using Kontact as a KDE "
+#| "Kolab client. "
 msgid ""
-"Select this option to choose the resource to be used to record the item each "
+"Select this option to choose the calendar to be used to record the item each "
 "time you create a new event, to-do or journal entry. This choice is "
 "recommended if you intend to use the shared folders functionality of the "
 "Kolab server or have to manage multiple accounts using Kontact as a KDE "
@@ -6820,16 +6853,16 @@ msgstr ""
 msgid ""
 "Select the \"Category inside, calendar outside\" option if you would like to "
 "draw calendar items in their associated category color, with the item's "
-"border drawn in the color of its calendar resource.  Please use the Colors "
-"and Fonts configuration page for setting these colors."
+"border drawn in the color of its calendar.  Please use the Colors and Fonts "
+"configuration page for setting these colors."
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:256
 #. i18n: ectx: tooltip, entry, group (Agenda View)
 #: rc.cpp:553 rc.cpp:1701
 msgid ""
-"Draw agenda items in their category color inside and calendar resource color "
-"for their border"
+"Draw agenda items in their category color inside and calendar color for "
+"their border"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:259
@@ -6857,17 +6890,17 @@ msgstr "क्यालेन्डर"
 #: rc.cpp:559 rc.cpp:667 rc.cpp:1707 rc.cpp:1815
 msgid ""
 "Select the \"Calendar inside, category outside\" option if you would like to "
-"draw calendar items in their associated calendar resource color, with the "
-"item's border drawn in the color of its category.  Please use the Colors and "
-"Fonts configuration page for setting these colors."
+"draw calendar items in their associated calendar color, with the item's "
+"border drawn in the color of its category.  Please use the Colors and Fonts "
+"configuration page for setting these colors."
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:261
 #. i18n: ectx: tooltip, entry, group (Agenda View)
 #: rc.cpp:562 rc.cpp:1710
 msgid ""
-"Draw agenda items in their calendar resource color inside and category color "
-"for their border"
+"Draw agenda items in their calendar color inside and category color for "
+"their border"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:264
@@ -6930,16 +6963,14 @@ msgstr "क्यालेन्डर"
 #: rc.cpp:577 rc.cpp:685 rc.cpp:1725 rc.cpp:1833
 msgid ""
 "Select the \"Only calendar\" option if you would like to draw calendar items "
-"(both inside and border) in the color of their calendar resource.  Please "
-"use the Colors and Fonts configuration page for setting these colors."
+"(both inside and border) in the color of their calendar.  Please use the "
+"Colors and Fonts configuration page for setting these colors."
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:271
 #. i18n: ectx: tooltip, entry, group (Agenda View)
 #: rc.cpp:580 rc.cpp:1728
-msgid ""
-"Draw agenda items using their calendar resource color for the inside and "
-"border"
+msgid "Draw agenda items using their calendar color for the inside and border"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:278
@@ -6963,13 +6994,13 @@ msgstr "दिएको क्यालेन्डर नयाँ सञ्झ
 #: rc.cpp:589 rc.cpp:1737
 msgid ""
 "Select the \"Merge all calendars into one view\" option if you would like "
-"all your calendar resources to be shown together in one agenda view."
+"all your calendars to be shown together in one agenda view."
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:283
 #. i18n: ectx: tooltip, entry (AgendaViewCalendarDisplay), group (Agenda View)
 #: rc.cpp:592 rc.cpp:1740
-msgid "Show all calendar resources together"
+msgid "Show all calendars merged together"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:286
@@ -6983,7 +7014,7 @@ msgstr ""
 #: rc.cpp:598 rc.cpp:1746
 msgid ""
 "Select the \"Show calendars side by side\" option if you would like to see "
-"two calendar resources at once, in a side-by-side view."
+"two calendars at once, in a side-by-side view."
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:288
@@ -7003,7 +7034,7 @@ msgstr ""
 #: rc.cpp:607 rc.cpp:1755
 msgid ""
 "Select \"Switch between views with tabs\" if you would like to alternate "
-"between calendar resources using the tab key."
+"between calendars using the tab key."
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:293
@@ -7104,11 +7135,17 @@ msgstr "महिना दृश्यले पुरा सञ्झ्या
 #. i18n: file: korganizer.kcfg:331
 #. i18n: ectx: whatsthis, entry, group (Month View)
 #: rc.cpp:649 rc.cpp:1797
+#, fuzzy
+#| msgid ""
+#| "Check this box to use the full KOrganizer window when displaying the "
+#| "month view. If this box is checked, you will gain some space for the "
+#| "monthly view, but other widgets, such as the date navigator, the item "
+#| "details and the resources list, will not be displayed."
 msgid ""
 "Check this box to use the full KOrganizer window when displaying the month "
 "view. If this box is checked, you will gain some space for the monthly view, "
 "but other widgets, such as the date navigator, the item details and the "
-"resources list, will not be displayed."
+"calendars list, will not be displayed."
 msgstr ""
 "महिना दृश्य प्रदर्शन गर्दा पुरा केडीई आयोजक सञ्झ्याल प्रयोग गर्न यो बाकस जाँच गर्नुहोस् । "
 "यदि यो बाकस जाँच गरिएमा, तपाईँलाई महिना दृश्यका लागि केही खाली स्थान फाइदा हुनेछ, तर "
@@ -7118,16 +7155,16 @@ msgstr ""
 #. i18n: ectx: tooltip, entry, group (Month View)
 #: rc.cpp:661 rc.cpp:1809
 msgid ""
-"Draw month items in their category color inside and calendar resource color "
-"for their border"
+"Draw month items in their category color inside and calendar color for their "
+"border"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:346
 #. i18n: ectx: tooltip, entry, group (Month View)
 #: rc.cpp:670 rc.cpp:1818
 msgid ""
-"Draw month items in their calendar resource color inside and category color "
-"for their border"
+"Draw month items in their calendar color inside and category color for their "
+"border"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:351
@@ -7139,9 +7176,7 @@ msgstr ""
 #. i18n: file: korganizer.kcfg:356
 #. i18n: ectx: tooltip, entry, group (Month View)
 #: rc.cpp:688 rc.cpp:1836
-msgid ""
-"Draw month items using their calendar resource color for the inside and "
-"border"
+msgid "Draw month items using their calendar color for the inside and border"
 msgstr ""
 
 #. i18n: file: korganizer.kcfg:366
@@ -7167,11 +7202,17 @@ msgstr "गर्नुपर्ने कार्य सूची दृश्
 #. i18n: file: korganizer.kcfg:373
 #. i18n: ectx: whatsthis, entry, group (Todo View)
 #: rc.cpp:700 rc.cpp:1848
+#, fuzzy
+#| msgid ""
+#| "Check this box to use the full KOrganizer window when displaying the to-"
+#| "do list view. If this box is checked, you will gain some space for the to-"
+#| "do list view, but other widgets, such as the date navigator, the to-do "
+#| "details and the resources list, will not be displayed."
 msgid ""
 "Check this box to use the full KOrganizer window when displaying the to-do "
 "list view. If this box is checked, you will gain some space for the to-do "
 "list view, but other widgets, such as the date navigator, the to-do details "
-"and the resources list, will not be displayed."
+"and the calendars list, will not be displayed."
 msgstr ""
 "गर्नुपर्ने कार्य सूची दृश्य प्रदर्शन गर्दा पूरा केडीई आयोजक सञ्झ्याल प्रयोग गर्न यो बाकस जाँच "
 "गर्नुहोस् । यदि यो बाकस जाँच गरिएमा, तपाईँलाई गर्नुपर्ने कार्य सूची दृश्यका लागि केही खाली "
@@ -9766,7 +9807,7 @@ msgstr "थोमस ज्यान्डर"
 msgid "Fester Zigterman"
 msgstr "फेस्टर जिग्टरम्यान"
 
-#: resourceview.cpp:251
+#: resourceview.cpp:252
 #, fuzzy
 #| msgid ""
 #| "<qt><p>Select on this list the active KOrganizer resources. Check the "
@@ -9777,15 +9818,16 @@ msgstr "फेस्टर जिग्टरम्यान"
 #| "p><p>If you have more than one active resource, when creating incidents "
 #| "you will either automatically use the default resource or be prompted to "
 #| "select the resource to use.</p></qt>"
+msgctxt "@info:whatsthis"
 msgid ""
-"<qt><p>Select on this list the active KOrganizer resources. Check the "
-"resource box to make it active. Use the context menu to add, remove or edit "
-"resources in the list.</p><p>Events, journal entries and to-dos are "
-"retrieved and stored on resources. Available resources include groupware "
-"servers, local files, journal entries as blogs on a server, etc...</p><p>If "
-"you have more than one active resource, when creating incidents you will "
-"either automatically use the default resource or be prompted to select the "
-"resource to use.</p></qt>"
+"This list shows all the calendars currently known to KOrganizer. Use the "
+"associated checkboxes to make a calendar active or inactive. Use the context "
+"menu to add, remove or edit calendars in the list.<p>Events, journal entries "
+"and to-dos are retrieved and stored from their respective calendars. "
+"Calendars can be accesssed from groupware servers, local files, etc...</"
+"p><p>If you have more than one active calendar, you will be prompted for "
+"which calendar to store new items into, unless configured to always store to "
+"the default calendar.</p>"
 msgstr ""
 "<qt><p>यो सूचीमा केडीई आयोजक स्रोत चयन गर्नुहोस् । यसलाई सक्रिय पार्न स्रोत बाकस जाँच "
 "गर्नुहोस् । सूचीमा नयाँ स्रोत थप्न तलको \"थप्नुहोस्...\" बटन थिच्नुहोस् ।</p><p>घटना, "
@@ -9795,26 +9837,37 @@ msgstr ""
 "स्वत: पूर्वनिर्धारित स्रोत प्रयोग गर्नुहुन्छ वा तपाईँलाई प्रयोग गर्नका लागि स्रोत चयन गर्न "
 "प्रस्तुत गरिन्छ ।</p></qt>"
 
-#: resourceview.cpp:264
+#: resourceview.cpp:262 resourceview.cpp:279
 #, fuzzy
 #| msgid "Calendar"
 msgid "Calendars"
 msgstr "क्यालेन्डर"
 
-#: resourceview.cpp:288
+#: resourceview.cpp:286
 #, fuzzy
 #| msgid "Add as new calendar"
+msgctxt "@info:tooltip"
 msgid "Add calendar"
 msgstr "नयाँ क्यालेन्डरका रूपमा थप्नुहोस्"
 
-#: resourceview.cpp:290
+#: resourceview.cpp:289
+#, fuzzy
+#| msgid ""
+#| "<qt><p>Press this button to add a resource to KOrganizer.</p><p>Events, "
+#| "journal entries and to-dos are retrieved and stored on resources. "
+#| "Available resources include groupware servers, local files, journal "
+#| "entries as blogs on a server, etc... </p><p>If you have more than one "
+#| "active resource, when creating incidents you will either automatically "
+#| "use the default resource or be prompted to select the resource to use.</"
+#| "p></qt>"
+msgctxt "@info:whatsthis"
 msgid ""
-"<qt><p>Press this button to add a resource to KOrganizer.</p><p>Events, "
-"journal entries and to-dos are retrieved and stored on resources. Available "
-"resources include groupware servers, local files, journal entries as blogs "
-"on a server, etc... </p><p>If you have more than one active resource, when "
-"creating incidents you will either automatically use the default resource or "
-"be prompted to select the resource to use.</p></qt>"
+"Press this button to add a new calendar to KOrganizer. <p>Events, journal "
+"entries and to-dos are retrieved and stored from their respective calendars. "
+"Calendars can be accesssed from groupware servers, local files, etc...</"
+"p><p>If you have more than one active calendar, you will be prompted for "
+"which calendar to store new items into, unless configured to always store to "
+"the default calendar.</p>"
 msgstr ""
 "<qt><p>केडीई आयोजकमा स्रोत थप्न यो बटन थिच्नुहोस् ।</p><p>घटना, जर्नल प्रविष्टि र "
 "गर्नुपर्ने कार्य पुन: प्राप्त हुन्छन् र स्रोतमा भण्डारण गरिन्छन् । उपलब्ध स्रोतले ग्रुपवेयर सर्भर, "
@@ -9823,116 +9876,133 @@ msgstr ""
 "स्रोत प्रयोग गर्नुहुन्छ वा तपाईँलाई प्रयोग गर्नका लागि स्रोत चयन गर्न प्रस्तुत गरिन्छ ।</"
 "p></qt>"
 
-#: resourceview.cpp:303
+#: resourceview.cpp:299
 #, fuzzy
 #| msgid "Edit Calendar Filters"
+msgctxt "@info:tooltip"
 msgid "Edit calendar settings"
 msgstr "क्यालेन्डर फिल्टर सम्पादन गर्नुहोस्"
 
-#: resourceview.cpp:305
+#: resourceview.cpp:302
+#, fuzzy
+#| msgid ""
+#| "Press this button to edit the resource currently selected on the "
+#| "KOrganizer resources list above."
+msgctxt "@info:whatsthis"
 msgid ""
-"Press this button to edit the resource currently selected on the KOrganizer "
-"resources list above."
+"Press this button to edit the calendar currently selected in the list above."
 msgstr ""
 "माथिको केडीई आयोजक स्रोत सूचीमा हाल चयन गरिएको स्रोत सम्पादन गर्न यो बटन थिच्नुहोस् ।"
 
-#: resourceview.cpp:310
+#: resourceview.cpp:307
 #, fuzzy
 #| msgid "Merged calendar '%1'."
+msgctxt "@info:tooltip"
 msgid "Remove calendar"
 msgstr "क्यालेन्डर '%1' गाभियो ।"
 
-#: resourceview.cpp:312
+#: resourceview.cpp:310
+#, fuzzy
+#| msgid ""
+#| "Press this button to delete the resource currently selected on the "
+#| "KOrganizer resources list above."
+msgctxt "@info:whatsthis"
 msgid ""
-"Press this button to delete the resource currently selected on the "
-"KOrganizer resources list above."
+"Press this button to delete the calendar currently selected in the list "
+"above."
 msgstr "माथिको केडीई आयोजक स्रोत सूचीमा हाल चयन गरिएको स्रोत मेट्न यो बटन थिच्नुहोस् ।"
 
-#: resourceview.cpp:372
+#: resourceview.cpp:370
 #, fuzzy
-#| msgid "%1 resource"
-msgid "Add Subresource"
-msgstr "%1 स्रोत"
+#| msgid "Edit Calendar Filters"
+msgid "Add Calendar Folder"
+msgstr "क्यालेन्डर फिल्टर सम्पादन गर्नुहोस्"
 
-#: resourceview.cpp:373
+#: resourceview.cpp:371
 #, fuzzy
 #| msgid "Please enter a name for the new template:"
-msgid "Please enter a name for the new subresource"
+msgid "Please enter a name for the new calendar folder"
 msgstr "कृपया नयाँ टेम्प्लेटको लागि नाम प्रविष्ट गर्नुहोस्:"
 
-#: resourceview.cpp:382
+#: resourceview.cpp:381
 #, fuzzy, kde-format
 #| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
-msgid "<qt>Unable to create subresource <b>%1</b>.</qt>"
+msgid "<qt>Unable to create the calendar folder <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> प्रकारको स्रोत सिर्जना गर्न असमर्थ ।</qt>"
 
 #: resourceview.cpp:390
-msgid "Resource Configuration"
-msgstr "स्रोत कन्फिगरेसन"
+#, fuzzy
+#| msgid "Calendar"
+msgid "Calendar Configuration"
+msgstr "क्यालेन्डर"
 
 #: resourceview.cpp:391
-msgid "Please select type of the new resource:"
+#, fuzzy
+#| msgid "Please select type of the new resource:"
+msgid "Please select the type of the new calendar:"
 msgstr "कृपया नयाँ स्रोतको प्रकार चयन गर्नुहोस्:"
 
 #: resourceview.cpp:403
-#, kde-format
-msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+msgid "<qt>Unable to create a calendar of type <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> प्रकारको स्रोत सिर्जना गर्न असमर्थ ।</qt>"
 
 #: resourceview.cpp:407
-#, kde-format
-msgid "%1 resource"
-msgstr "%1 स्रोत"
+#, fuzzy, kde-format
+#| msgid "Add as new calendar"
+msgid "%1 calendar"
+msgstr "नयाँ क्यालेन्डरका रूपमा थप्नुहोस्"
 
 #: resourceview.cpp:431
 #, fuzzy
 #| msgid "Unable to create calendar resource '%1'."
-msgid "Unable to create the resource."
+msgid "Unable to create the calendar."
 msgstr "क्यालेन्डर स्रोत '%1' सिर्जना गर्न असमर्थ ।"
 
 #: resourceview.cpp:535
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
-msgid "<qt>Do you really want to remove the resource <b>%1</b>?</qt>"
+msgid "<qt>Do you really want to remove the calendar <b>%1</b>?</qt>"
 msgstr "<qt>तपाईँ वास्तवमै स्रोत <b>%1</b> मेट्न चाहनुहुन्छ ?</qt>"
 
 #: resourceview.cpp:544
 #, fuzzy
 #| msgid "You cannot delete your standard resource."
-msgid "You cannot remove your standard resource."
+msgid "You cannot remove your standard calendar."
 msgstr "तपाईँले आफ्नो मानक स्रोत मेट्न सक्नु हुदैन ।"
 
 #: resourceview.cpp:553
 #, kde-format
 msgid ""
-"<qt>Failed to remove the subresource <b>%1</b>. The reason could be that it "
-"is a built-in one which cannot be removed, or that the removal of the "
-"underlying storage folder failed.</qt>"
+"<qt>Failed to remove the calendar folder <b>%1</b>. Perhaps it is a built-in "
+"folder which cannot be removed, or maybe the removal of the underlying "
+"storage folder failed.</qt>"
 msgstr ""
 
 #: resourceview.cpp:580
 #, fuzzy
-#| msgid "%1 resource"
-msgid "Rename Subresource"
-msgstr "%1 स्रोत"
+#| msgid "Edit Calendar Filters"
+msgid "Rename Calendar Folder"
+msgstr "क्यालेन्डर फिल्टर सम्पादन गर्नुहोस्"
 
 #: resourceview.cpp:581
 #, fuzzy
 #| msgid "Please enter a name for the new template:"
-msgid "Please enter a new name for the subresource"
+msgid "Please enter a new name for the calendar folder"
 msgstr "कृपया नयाँ टेम्प्लेटको लागि नाम प्रविष्ट गर्नुहोस्:"
 
 #: resourceview.cpp:604
 #, fuzzy, kde-format
 #| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
-msgid "<qt>Cannot edit the subresource <b>%1</b>.</qt>"
+msgid "<qt>Cannot edit the calendar folder <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> प्रकारको स्रोत सिर्जना गर्न असमर्थ ।</qt>"
 
 #: resourceview.cpp:652 resourceview.cpp:699
 #, fuzzy
-#| msgid "%1 resource"
-msgid "&Add Resource..."
-msgstr "%1 स्रोत"
+#| msgid "&iCalendar..."
+msgid "&Add Calendar..."
+msgstr "आई क्यालेन्डर..."
 
 #: resourceview.cpp:667
 #, fuzzy
@@ -9953,8 +10023,10 @@ msgid "Show &Info"
 msgstr "सूचना देखाउनुहोस्"
 
 #: resourceview.cpp:679
-msgid "Resource Colors"
-msgstr "स्रोत रङ"
+#, fuzzy
+#| msgid "Calendar"
+msgid "Calendar Colors"
+msgstr "क्यालेन्डर"
 
 #: resourceview.cpp:680
 #, fuzzy
@@ -9972,9 +10044,9 @@ msgstr "पूर्वनिर्धारित क्यालेन्ड�
 
 #: resourceview.cpp:697
 #, fuzzy
-#| msgid "%1 resource"
-msgid "&Add Subresource..."
-msgstr "%1 स्रोत"
+#| msgid "Edit Calendar Filters"
+msgid "&Add Calendar Folder..."
+msgstr "क्यालेन्डर फिल्टर सम्पादन गर्नुहोस्"
 
 #: printing/calprinter.cpp:128
 msgid "Unable to print, no valid print style was returned."
@@ -10661,15 +10733,15 @@ msgctxt "@info"
 msgid "Template does not contain a valid to-do."
 msgstr "टेम्प्लेटले वैध गर्नुपर्ने कार्य समावेश गर्दैन ।"
 
-#: stdcalendar.cpp:76
+#: stdcalendar.cpp:73
 msgid "Active Calendar"
 msgstr "सक्रिय क्यालेन्डर"
 
-#: stdcalendar.cpp:86
+#: stdcalendar.cpp:83
 msgid "Default Calendar"
 msgstr "पूर्वनिर्धारित क्यालेन्डर"
 
-#: stdcalendar.cpp:101
+#: stdcalendar.cpp:98
 msgid "Birthdays"
 msgstr "जन्म दिन"
 
@@ -10681,20 +10753,27 @@ msgstr "तपाईँको स्थिति सेट गर्नुहो
 msgid "Set your status"
 msgstr "तपाईँको स्थिति सेट गर्नुहोस्"
 
-#: korganizer_options.h:37
-msgid "Import the given calendars as new resources into the default calendar"
-msgstr "दिएको क्यालेन्डरलाई पूर्वनिर्धारित क्यालेन्डरमा नयाँ स्रोतका रूपमा आयात गर्नुहोस्"
+#: korganizer_options.h:36
+#, fuzzy
+#| msgid "New attachment"
+msgid "Import the specified files as separate calendars"
+msgstr "नयाँ सङ्लग्नता"
 
-#: korganizer_options.h:40
-msgid ""
-"Merge the given calendars into the standard calendar (i.e. copy the events)"
+#: korganizer_options.h:39
+#, fuzzy
+#| msgid ""
+#| "Merge the given calendars into the standard calendar (i.e. copy the "
+#| "events)"
+msgid "Merge the specified files into the standard calendar "
 msgstr "मानक क्यालेन्डरमा दिएको क्यालेन्डर गाभ्नुहोस् (जस्तै घटना प्रतिलिपि गर्नुहोस्)"
 
-#: korganizer_options.h:44
-msgid "Open the given calendars in a new window"
+#: korganizer_options.h:42
+#, fuzzy
+#| msgid "Open the given calendars in a new window"
+msgid "Open the specified files as calendars in a new window"
 msgstr "दिएको क्यालेन्डर नयाँ सञ्झ्यालमा खोल्नुहोस्"
 
-#: korganizer_options.h:46
+#: korganizer_options.h:44
 msgid ""
 "Calendar files or urls. Unless -i, -o or -m is explicitly specified, the "
 "user will be asked whether to import, merge or open in a separate window."
@@ -11310,21 +11389,41 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:17
+#, fuzzy
+#| msgid ""
+#| "<p>...that you can import birthdays from your address book? There is a "
+#| "resource available which connects the birthdays to your calendar; it is "
+#| "even possible to set a reminder for each event.\n"
+#| "</p>\n"
 msgid ""
 "<p>...that your calendar can display birthdays from your address book? It is "
 "even possible to set up reminders for them. To activate this, add the "
-"corresponding 'birthdays' resource to your calendar.\n"
+"corresponding 'birthdays' calendar from the Calendar Manager.\n"
 "</p>\n"
 msgstr ""
+"<p>तपाईँले ठेगाना पुस्तकबाट जन्मदिन आयात गर्न सक्नुहुन्छ भन्ने थाहा छ ? त्यहाँ तपाईँको "
+"क्यालेन्डरमा जन्मदिन जोड्ने स्रोत उपलब्ध हुन्छ; अझ प्रत्येक घटनाका लागि स्मरणकर्ता सेट गर्न "
+"पनि सम्भव हुन्छ ।\n"
+"</p>\n"
 
 #: tips.cpp:23
+#, fuzzy
+#| msgid ""
+#| "<p>...that you can store your calendar on an FTP server? Use the standard "
+#| "file dialog to save the calendar to a URL like <b>ftp://"
+#| "username@ftpserver/filename</b>. You can make your calendar active and "
+#| "load and save it as if it were local, or add it permanently to your "
+#| "resources list, using the remote file resource. Just make sure that no "
+#| "two KOrganizer applications are working on the same file, at the same "
+#| "time.\n"
+#| "</p>\n"
 msgid ""
 "<p>...that you can store your calendar on an FTP server? Use the standard "
 "file dialog to save the calendar to a URL like <b>ftp://username@ftpserver/"
 "filename</b>. You can make your calendar active and load and save it as if "
-"it were local, or add it permanently to your resources list, using the "
-"remote file resource. Just make sure that no two KOrganizer applications are "
-"working on the same file, at the same time.\n"
+"it were local, or add it permanently to your calendar list, by adding a "
+"remote file from the Calendar Mnager. Just make sure that no two KOrganizer "
+"applications are working on the same file, at the same time.\n"
 "</p>\n"
 msgstr ""
 "<p>तपाईँको क्यालेन्डर FTP सर्भरमा भण्डारण गर्न सक्नुहुन्छ भन्ने थाहा छ ? क्यालेन्डरलाई "
@@ -12140,6 +12239,64 @@ msgid "Prints a list of all upcoming events and todos."
 msgstr "पछि आउने सबै घटना र गर्नुपर्ने कार्यको सूची मुद्रण गर्छ ।"
 
 #, fuzzy
+#~| msgid ""
+#~| "Select here resource you want to modify. You can change the selected "
+#~| "resource color using the button below."
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select here resource you want to modify. You can change the selected "
+#~ "resource color using the button below."
+#~ msgstr ""
+#~ "तपाईँले परिमार्जन गर्न चाहेको स्रोत यहाँ चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग गरेर "
+#~ "चयन गरिएको स्रोत रङ परिवर्तन गर्न सक्नुहुन्छ ।"
+
+#~ msgid "Show Resource View"
+#~ msgstr "स्रोत दृश्य देखाउनुहोस्"
+
+#, fuzzy
+#~| msgid "%1 resource"
+#~ msgid "Add Subresource"
+#~ msgstr "%1 स्रोत"
+
+#, fuzzy
+#~| msgid "Please enter a name for the new template:"
+#~ msgid "Please enter a name for the new subresource"
+#~ msgstr "कृपया नयाँ टेम्प्लेटको लागि नाम प्रविष्ट गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+#~ msgid "<qt>Unable to create subresource <b>%1</b>.</qt>"
+#~ msgstr "<qt><b>%1</b> प्रकारको स्रोत सिर्जना गर्न असमर्थ ।</qt>"
+
+#~ msgid "Resource Configuration"
+#~ msgstr "स्रोत कन्फिगरेसन"
+
+#~ msgid "%1 resource"
+#~ msgstr "%1 स्रोत"
+
+#, fuzzy
+#~| msgid "%1 resource"
+#~ msgid "Rename Subresource"
+#~ msgstr "%1 स्रोत"
+
+#, fuzzy
+#~| msgid "%1 resource"
+#~ msgid "&Add Resource..."
+#~ msgstr "%1 स्रोत"
+
+#~ msgid "Resource Colors"
+#~ msgstr "स्रोत रङ"
+
+#, fuzzy
+#~| msgid "%1 resource"
+#~ msgid "&Add Subresource..."
+#~ msgstr "%1 स्रोत"
+
+#~ msgid ""
+#~ "Import the given calendars as new resources into the default calendar"
+#~ msgstr "दिएको क्यालेन्डरलाई पूर्वनिर्धारित क्यालेन्डरमा नयाँ स्रोतका रूपमा आयात गर्नुहोस्"
+
+#, fuzzy
 #~| msgid "Show in context"
 #~ msgctxt "@option:check"
 #~ msgid "Show in the month view"
@@ -12675,17 +12832,6 @@ msgstr "पछि आउने सबै घटना र गर्नुपर�
 #~ msgid_plural "years"
 #~ msgstr[0] "वर्ष"
 #~ msgstr[1] "वर्ष"
-
-#~ msgid ""
-#~ "<p>...that you can import birthdays from your address book? There is a "
-#~ "resource available which connects the birthdays to your calendar; it is "
-#~ "even possible to set a reminder for each event.\n"
-#~ "</p>\n"
-#~ msgstr ""
-#~ "<p>तपाईँले ठेगाना पुस्तकबाट जन्मदिन आयात गर्न सक्नुहुन्छ भन्ने थाहा छ ? त्यहाँ तपाईँको "
-#~ "क्यालेन्डरमा जन्मदिन जोड्ने स्रोत उपलब्ध हुन्छ; अझ प्रत्येक घटनाका लागि स्मरणकर्ता सेट "
-#~ "गर्न पनि सम्भव हुन्छ ।\n"
-#~ "</p>\n"
 
 #~ msgid "2006-09-28"
 #~ msgstr "२००६-०९-२८"
