@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-20 12:15+0200\n"
+"POT-Creation-Date: 2009-07-05 11:43+0200\n"
 "PO-Revision-Date: 2007-08-20 12:34+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -35,20 +35,22 @@ msgstr "हालको मिक्सर"
 msgid "Select the channel representing the master volume:"
 msgstr "मास्टर भोल्युममा प्रतिनिधित्व गरिरहेको च्यानल चयन गर्नुहोस्:"
 
-#: dialogviewconfiguration.cpp:42 kmixprefdlg.cpp:41
+#: dialogviewconfiguration.cpp:152 kmixprefdlg.cpp:41
 msgid "Configure"
 msgstr ""
 
-#: dialogviewconfiguration.cpp:58
+#: dialogviewconfiguration.cpp:167
 msgid "Configuration of the channels."
 msgstr ""
 
-#: dialogviewconfiguration.cpp:73
-msgid "Show/Hide"
-msgstr ""
+#: dialogviewconfiguration.cpp:228
+#, fuzzy
+#| msgid "Available mixers:"
+msgid "Available channels"
+msgstr "उपलब्ध मिक्सर:"
 
-#: dialogviewconfiguration.cpp:75
-msgid "Split"
+#: dialogviewconfiguration.cpp:232
+msgid "Visible channels"
 msgstr ""
 
 #: kmixapplet.cpp:94
@@ -94,48 +96,52 @@ msgstr "उपलब्ध मिक्सर:"
 msgid "Invalid mixer entered."
 msgstr "अवैध मिक्सर प्रविष्ट गरियो ।"
 
-#: kmix.cpp:119
+#: kmix.cpp:120
 msgid "Hardware &Information"
 msgstr "हार्डवेयर जानकारी"
 
-#: kmix.cpp:122 kmixdockwidget.cpp:382
+#: kmix.cpp:123 kmixdockwidget.cpp:380
 msgid "Hide Mixer Window"
 msgstr "मिक्सर सञ्झ्याल लुकाउनुहोस्"
 
-#: kmix.cpp:126
+#: kmix.cpp:127
 #, fuzzy
 #| msgid "&Channels"
 msgid "Configure &Channels..."
 msgstr "च्यानल"
 
-#: kmix.cpp:130 mdwslider.cpp:111
+#: kmix.cpp:130 kmixdockwidget.cpp:103
+msgid "Select Master Channel..."
+msgstr "मास्टर च्यानल चयन गर्नुहोस्..."
+
+#: kmix.cpp:134 mdwslider.cpp:111
 #, fuzzy
 msgid "Increase Volume"
 msgstr "'%1' को भोल्युम बढाउनुहोस्"
 
-#: kmix.cpp:135 mdwslider.cpp:122
+#: kmix.cpp:139 mdwslider.cpp:122
 #, fuzzy
 msgid "Decrease Volume"
 msgstr "'%1' को भोल्युम घटाउनुहोस्"
 
-#: kmix.cpp:140 mdwslider.cpp:365
+#: kmix.cpp:144 mdwslider.cpp:365
 #, fuzzy
 #| msgid "M&ute"
 msgid "Mute"
 msgstr "मौन गर्नुहोस्"
 
-#: kmix.cpp:493
+#: kmix.cpp:503
 #, kde-format
 msgid ""
 "The soundcard containing the master device was unplugged. Changing to "
 "control %1 on card %2."
 msgstr ""
 
-#: kmix.cpp:502
+#: kmix.cpp:512
 msgid "The last soundcard was unplugged."
 msgstr ""
 
-#: kmix.cpp:777
+#: kmix.cpp:789
 msgid "Mixer Hardware Information"
 msgstr "मिक्सर हार्डवेयर सूचना"
 
@@ -167,24 +173,20 @@ msgstr "पूर्वानिर्धारित भोल्युम प�
 msgid "M&ute"
 msgstr "मौन गर्नुहोस्"
 
-#: kmixdockwidget.cpp:104
-msgid "Select Master Channel..."
-msgstr "मास्टर च्यानल चयन गर्नुहोस्..."
-
-#: kmixdockwidget.cpp:193
+#: kmixdockwidget.cpp:191
 msgid "Mixer cannot be found"
 msgstr "मिक्सर फेला पार्न सकिँदैन"
 
-#: kmixdockwidget.cpp:213
+#: kmixdockwidget.cpp:211
 #, kde-format
 msgid "Volume at %1%"
 msgstr "%1% मा भोल्युम"
 
-#: kmixdockwidget.cpp:215
+#: kmixdockwidget.cpp:213
 msgid " (Muted)"
 msgstr " (मौन गरिएको)"
 
-#: kmixdockwidget.cpp:386
+#: kmixdockwidget.cpp:384
 msgid "Show Mixer Window"
 msgstr "मिक्सर सञ्झ्याल देखाउनुहोस्"
 
@@ -458,6 +460,35 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr "केडीई मिक्स: अज्ञात त्रुटि । कृपया कसरी यो त्रुटि उत्पन्न भयो प्रतिवेदन गर्नुहोस् ।"
 
+#: mixer_oss4.cpp:349 mixer_oss.cpp:230
+msgid ""
+"kmix: You do not have permission to access the mixer device.\n"
+"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
+msgstr ""
+"केडीई मिक्स: तपाईँसँग मिक्सर यन्त्र पहुँच गर्न अनुमति छैन ।\n"
+"मूलको रूपमा लगइन गर्नुहोस् र पहुँच अनुमति दिन 'chmod a+rw /dev/mixer*' गर्नुहोस् ।"
+
+#: mixer_oss4.cpp:353
+#, fuzzy
+#| msgid ""
+#| "kmix: Mixer cannot be found.\n"
+#| "Please check that the soundcard is installed and the\n"
+#| "soundcard driver is loaded.\n"
+#| "On Linux you might need to use 'insmod' to load the driver.\n"
+#| "Use 'soundon' when using commercial OSS."
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+"केडीई मिक्स: मिक्सर फेला पार्न सकिँदैन ।\n"
+"कृपया ध्वनिकार्ड स्थापना भएको छ छैन\n"
+"र ध्वनिकार्ड ड्राइभर लोड गरिएको छ छैन जाँच गर्नुहोस् ।\n"
+"लिनक्समा तपाईँले ड्राइभर लोड गर्न 'insmod' प्रयोग गर्न आवश्यक छ ।\n"
+"व्यावसायिक ओएस एस प्रयोग गर्दा 'soundon' प्रयोग गर्नुहोस् ।"
+
 #: mixer_oss.cpp:58
 msgid "Volume"
 msgstr "भोल्युम"
@@ -570,14 +601,6 @@ msgstr "त्रि-आयमिक केन्द्र"
 msgid "unused"
 msgstr "प्रयोग नगरिएको"
 
-#: mixer_oss.cpp:230
-msgid ""
-"kmix: You do not have permission to access the mixer device.\n"
-"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
-msgstr ""
-"केडीई मिक्स: तपाईँसँग मिक्सर यन्त्र पहुँच गर्न अनुमति छैन ।\n"
-"मूलको रूपमा लगइन गर्नुहोस् र पहुँच अनुमति दिन 'chmod a+rw /dev/mixer*' गर्नुहोस् ।"
-
 #: mixer_oss.cpp:234
 msgid ""
 "kmix: Mixer cannot be found.\n"
@@ -624,11 +647,11 @@ msgstr ""
 "केडीई मिक्स: तपाईँसँग मिक्सर यन्त्र पहुँच गर्ने अनुमति छैन ।\n"
 "पहुँच अनुमति दिन /dev/audioctl फिक्स गर्न तपाईँको प्रणाली प्रशासकलाई सोध्नुहोस् ।"
 
-#: mixertoolbox.cpp:198
+#: mixertoolbox.cpp:199
 msgid "Sound drivers supported:"
 msgstr "समर्थित ध्वनि ड्राइभर:"
 
-#: mixertoolbox.cpp:199
+#: mixertoolbox.cpp:200
 msgid "Sound drivers used:"
 msgstr "प्रयोग गरिएको ध्वनि ड्राइभर:"
 
@@ -693,7 +716,7 @@ msgstr "मौन:"
 msgid "&File"
 msgstr "मौन:"
 
-#. i18n: file: kmixui.rc:19
+#. i18n: file: kmixui.rc:20
 #. i18n: ectx: Menu (help)
 #: rc.cpp:33
 #, fuzzy
@@ -714,11 +737,11 @@ msgstr "Shyam krishna bal<shyamkrishna_bal@yahoo.com>"
 msgid "&Channels"
 msgstr "च्यानल"
 
-#: viewbase.cpp:146
+#: viewbase.cpp:182
 msgid "Device Settings"
 msgstr "यन्त्र सेटिङ"
 
-#: viewdockareapopup.cpp:112
+#: viewdockareapopup.cpp:115
 msgid "Mixer"
 msgstr "मिक्सर"
 
