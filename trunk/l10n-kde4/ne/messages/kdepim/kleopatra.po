@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-16 11:37+0200\n"
+"POT-Creation-Date: 2009-07-31 06:20+0200\n"
 "PO-Revision-Date: 2007-09-09 17:32+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -22,7 +22,7 @@ msgctxt "Key filter without user-assigned name"
 msgid "<unnamed>"
 msgstr "<unnamed>"
 
-#: conf/appearanceconfigwidget.cpp:278
+#: conf/appearanceconfigwidget.cpp:277
 msgid "This parameter has been locked down by the system administrator."
 msgstr ""
 
@@ -1300,7 +1300,8 @@ msgstr ""
 msgid "Could not write to clipboard"
 msgstr "प्रमाणपत्र उत्पन्न गर्न सकेन: %1"
 
-#: utils/output.cpp:370 systrayicon.cpp:215
+#: utils/output.cpp:370 commands/importcertificatefromclipboardcommand.cpp:122
+#: systrayicon.cpp:198
 msgid "Clipboard"
 msgstr ""
 
@@ -2416,6 +2417,8 @@ msgstr ""
 
 #: commands/importcertificatefromfilecommand.cpp:139
 #: commands/importcertificatefromfilecommand.cpp:144
+#: commands/importcertificatefromclipboardcommand.cpp:116
+#: commands/importcertificatefromclipboardcommand.cpp:120
 #: commands/importcertificatescommand.cpp:337
 #: commands/importcertificatescommand.cpp:343
 #: commands/importcertificatescommand.cpp:406
@@ -2711,6 +2714,48 @@ msgstr ""
 msgid "CRL cache cleared successfully."
 msgstr "CRL क्यास सफलतापूर्वक खाली गरियो ।"
 
+#: commands/learncardkeyscommand.cpp:72
+msgid "Error Learning SmartCard"
+msgstr ""
+
+#: commands/learncardkeyscommand.cpp:76
+msgid "Finished Learning SmartCard"
+msgstr ""
+
+#: commands/learncardkeyscommand.cpp:81
+#, fuzzy, kde-format
+#| msgid ""
+#| "The DirMngr process that tried to clear the CRL cache ended prematurely "
+#| "because of an unexpected error."
+msgctxt "@info"
+msgid ""
+"<para>The GPG or GpgSM process that tried to learn the smart card ended "
+"prematurely because of an unexpected error.</para><para>Please check the "
+"output of <icode>%1</icode> for details.</para>"
+msgstr ""
+"अनपेक्षित त्रुटिका कारणले असामयिक रूपमा अन्त्य भएका CRL क्यास खाली गर्न प्रयास गर्ने "
+"DirMngr प्रक्रिया ।"
+
+#: commands/learncardkeyscommand.cpp:88
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred when trying to clear the CRL cache. The output from "
+#| "DirMngr was:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to learn the smart card's keys.</para> "
+"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+msgstr ""
+"CRL क्यास खाली गर्ने प्रयास गर्दा एउटा त्रुटि उत्पन्न भयो । DirMngr को निर्गत:\n"
+"%1 थियो"
+
+#: commands/learncardkeyscommand.cpp:94
+#, fuzzy
+#| msgid "Secret keys imported:"
+msgid "Smart card keys successfully learned."
+msgstr "आयात गरिएका गोप्य कुञ्जी:"
+
 #: commands/adduseridcommand.cpp:212
 #, fuzzy, kde-format
 #| msgid ""
@@ -2855,6 +2900,16 @@ msgstr "आयात गरिएका गोप्य कुञ्जी:"
 #: commands/encryptclipboardcommand.cpp:160
 msgid "Encrypt Clipboard Error"
 msgstr ""
+
+#: commands/importcertificatefromclipboardcommand.cpp:115
+msgid "Clipboard contents do not look like a certificate."
+msgstr ""
+
+#: commands/importcertificatefromclipboardcommand.cpp:120
+#, fuzzy
+#| msgid "Could not generate certificate: %1"
+msgid "Could not determine certificate type of clipboard contents."
+msgstr "प्रमाणपत्र उत्पन्न गर्न सकेन: %1"
 
 #: commands/importcertificatescommand.cpp:212
 #, fuzzy, kde-format
@@ -3868,11 +3923,11 @@ msgstr "दृश्य"
 
 #. i18n: file: kleopatra.rc:34
 #. i18n: ectx: Menu (certMenu)
-#. i18n: file: kleopatra.rc:98
+#. i18n: file: kleopatra.rc:97
 #. i18n: ectx: Menu (listview_popup)
 #. i18n: file: kleopatra.rc:34
 #. i18n: ectx: Menu (certMenu)
-#. i18n: file: kleopatra.rc:98
+#. i18n: file: kleopatra.rc:97
 #. i18n: ectx: Menu (listview_popup)
 #: rc.cpp:9 rc.cpp:30 rc.cpp:535 rc.cpp:556
 msgid "&Certificates"
@@ -3912,7 +3967,7 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "उपकरणपट्टी खोजी गर्नुहोस्"
 
-#. i18n: file: kleopatra.rc:93
+#. i18n: file: kleopatra.rc:92
 #. i18n: ectx: ToolBar (searchToolBar)
 #: rc.cpp:27 rc.cpp:553
 msgid "Search Toolbar"
@@ -5488,67 +5543,69 @@ msgstr "प्रमाणपत्र उपयोग"
 msgid "Create Encryption Certificate With Same Parameters"
 msgstr "प्रमाणपत्र उपयोग"
 
-#: systrayicon.cpp:86
-msgid "Learn Keys"
-msgstr ""
-
-#: systrayicon.cpp:211
+#: systrayicon.cpp:194
 #, fuzzy
 #| msgid "Certificate Manager Error"
 msgid "&Open Certificate Manager..."
 msgstr "प्रमाणपत्र प्रबन्धक त्रुटि"
 
-#: systrayicon.cpp:212
+#: systrayicon.cpp:195
 #, fuzzy, kde-format
 #| msgid "Configure"
 msgid "&Configure %1..."
 msgstr "कन्फिगर गर्नुहोस्"
 
-#: systrayicon.cpp:213
+#: systrayicon.cpp:196
 #, kde-format
 msgid "&About %1..."
 msgstr ""
 
-#: systrayicon.cpp:214
+#: systrayicon.cpp:197
 #, fuzzy
 #| msgid "Kleopatra"
 msgid "&Shutdown Kleopatra"
 msgstr "Kleopatra"
 
-#: systrayicon.cpp:216
+#: systrayicon.cpp:199
+#, fuzzy
+#| msgid "Certificate Import Failed"
+msgid "Certificate Import"
+msgstr "प्रमाणपत्र आयात गर्न असफल भयो"
+
+#: systrayicon.cpp:200
 #, fuzzy
 #| msgid "For &encrypting only"
 msgid "Encrypt..."
 msgstr "गुप्तिकरणका लागि मात्र"
 
-#: systrayicon.cpp:217
+#: systrayicon.cpp:201
 msgid "S/MIME-Sign..."
 msgstr ""
 
-#: systrayicon.cpp:218
+#: systrayicon.cpp:202
 msgid "OpenPGP-Sign..."
 msgstr ""
 
-#: systrayicon.cpp:219 mainwindow.cpp:632
+#: systrayicon.cpp:203 mainwindow.cpp:632
 #, fuzzy
 #| msgid "Deleting keys..."
 msgid "Decrypt/Verify..."
 msgstr "कुञ्जी मेट्दैछ..."
 
-#: systrayicon.cpp:220
+#: systrayicon.cpp:204
 msgid "SmartCard"
 msgstr ""
 
-#: systrayicon.cpp:221
+#: systrayicon.cpp:205
 #, fuzzy
 #| msgid "Set F&ont..."
 msgid "Set Initial PIN..."
 msgstr "फन्ट सेट गर्नुहोस्..."
 
-#: systrayicon.cpp:222
+#: systrayicon.cpp:206
 #, fuzzy
 #| msgid "Save Certificate"
-msgid "Learn Card Certificates..."
+msgid "Learn Card Certificates"
 msgstr "प्रमाणपत्र बचत गर्नुहोस्"
 
 #: selftest/gpgagentcheck.cpp:64
