@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-31 06:20+0200\n"
+"POT-Creation-Date: 2009-08-01 06:31+0200\n"
 "PO-Revision-Date: 2007-09-07 11:50+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -50,55 +50,6 @@ msgstr "पूर्वान्ह"
 msgctxt "@item:inlistbox Afternoon, as in 2pm"
 msgid "pm"
 msgstr "अपरान्ह"
-
-#: lib/localefuncs.cpp:51
-#, fuzzy
-#| msgid "Monday"
-msgctxt "@option Name of the weekday"
-msgid "Monday"
-msgstr "सोमबार"
-
-#: lib/localefuncs.cpp:52
-#, fuzzy
-#| msgid "Tuesday"
-msgctxt "@option Name of the weekday"
-msgid "Tuesday"
-msgstr "मङ्गलबार"
-
-#: lib/localefuncs.cpp:53
-#, fuzzy
-#| msgid "Wednesday"
-msgctxt "@option Name of the weekday"
-msgid "Wednesday"
-msgstr "बुधबार"
-
-#: lib/localefuncs.cpp:54
-#, fuzzy
-#| msgid "Thursday"
-msgctxt "@option Name of the weekday"
-msgid "Thursday"
-msgstr "बिहिबार"
-
-#: lib/localefuncs.cpp:55
-#, fuzzy
-#| msgid "Friday"
-msgctxt "@option Name of the weekday"
-msgid "Friday"
-msgstr "शुक्रबार"
-
-#: lib/localefuncs.cpp:56
-#, fuzzy
-#| msgid "Saturday"
-msgctxt "@option Name of the weekday"
-msgid "Saturday"
-msgstr "शनिबार"
-
-#: lib/localefuncs.cpp:57
-#, fuzzy
-#| msgid "Sunday"
-msgctxt "@option Name of the weekday"
-msgid "Sunday"
-msgstr "आइतबार"
 
 #: lib/shellprocess.cpp:158
 #, fuzzy
@@ -173,6 +124,55 @@ msgctxt "@item:inlistbox Time units"
 msgid "weeks"
 msgstr "हप्ता"
 
+#: lib/kalocale.cpp:51
+#, fuzzy
+#| msgid "Monday"
+msgctxt "@option Name of the weekday"
+msgid "Monday"
+msgstr "सोमबार"
+
+#: lib/kalocale.cpp:52
+#, fuzzy
+#| msgid "Tuesday"
+msgctxt "@option Name of the weekday"
+msgid "Tuesday"
+msgstr "मङ्गलबार"
+
+#: lib/kalocale.cpp:53
+#, fuzzy
+#| msgid "Wednesday"
+msgctxt "@option Name of the weekday"
+msgid "Wednesday"
+msgstr "बुधबार"
+
+#: lib/kalocale.cpp:54
+#, fuzzy
+#| msgid "Thursday"
+msgctxt "@option Name of the weekday"
+msgid "Thursday"
+msgstr "बिहिबार"
+
+#: lib/kalocale.cpp:55
+#, fuzzy
+#| msgid "Friday"
+msgctxt "@option Name of the weekday"
+msgid "Friday"
+msgstr "शुक्रबार"
+
+#: lib/kalocale.cpp:56
+#, fuzzy
+#| msgid "Saturday"
+msgctxt "@option Name of the weekday"
+msgid "Saturday"
+msgstr "शनिबार"
+
+#: lib/kalocale.cpp:57
+#, fuzzy
+#| msgid "Sunday"
+msgctxt "@option Name of the weekday"
+msgid "Sunday"
+msgstr "आइतबार"
+
 #: lib/filedialog.cpp:60
 #, fuzzy
 #| msgid "Failed to open file"
@@ -180,7 +180,7 @@ msgctxt "@option:check"
 msgid "Append to existing file"
 msgstr "फाइल खोल्न असफल"
 
-#: kalarmapp.cpp:314
+#: kalarmapp.cpp:312
 #, fuzzy, kde-format
 #| msgid "%1: Event %2 not found, or not editable"
 msgctxt "@info:shell"
@@ -188,7 +188,7 @@ msgid ""
 "<icode>%1</icode>: Event <resource>%2</resource> not found, or not editable"
 msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
 
-#: kalarmapp.cpp:517
+#: kalarmapp.cpp:515
 #, fuzzy
 #| msgid ""
 #| "Quitting will disable alarms\n"
@@ -200,21 +200,21 @@ msgstr ""
 "अन्त्य गर्दा संसूचक अक्षम हुन्छन्\n"
 "(एकपटक सबै संसूचक सन्देश सञ्झ्याल बन्द हुन्छन्) ।"
 
-#: kalarmapp.cpp:1670
+#: kalarmapp.cpp:1666
 #, fuzzy
 #| msgid "Error creating temporary script file"
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "अस्थायी स्क्रिप्ट फाइल सिर्जना गर्दा त्रुटि"
 
-#: kalarmapp.cpp:1756
+#: kalarmapp.cpp:1752
 #, fuzzy
 #| msgid "Pre-alarm action:"
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "संसूचक पुर्वको कार्य:"
 
-#: kalarmapp.cpp:1762
+#: kalarmapp.cpp:1758
 #, fuzzy
 #| msgid "Post-alarm action:"
 msgctxt "@info"
@@ -4220,20 +4220,14 @@ msgctxt "@info"
 msgid "Template name is already in use"
 msgstr "टेम्प्लेट नाम पहिले नै प्रयोगमा छ"
 
-#: editdlg.cpp:932
-#, kde-format
-msgctxt "@info The parameter is a date value"
-msgid ""
-"The start date does not match the alarm's recurrence pattern, so it will be "
-"adjusted to the date of the next recurrence (%1)."
+#: editdlg.cpp:931
+msgctxt "@info"
+msgid "The parameter is a date value"
 msgstr ""
 
-#: editdlg.cpp:936
-#, kde-format
-msgctxt "@info The parameter is a date/time value"
-msgid ""
-"The start date/time does not match the alarm's recurrence pattern, so it "
-"will be adjusted to the date/time of the next recurrence (%1)."
+#: editdlg.cpp:935
+msgctxt "@info"
+msgid "The parameter is a date/time value"
 msgstr ""
 
 #: editdlg.cpp:958
