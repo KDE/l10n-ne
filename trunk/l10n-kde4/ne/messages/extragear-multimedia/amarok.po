@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-19 07:34+0200\n"
+"POT-Creation-Date: 2009-08-20 06:40+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -590,7 +590,7 @@ msgstr ""
 #: collection/sqlcollection/ScanManager.cpp:676
 #: dialogs/OrganizeCollectionDialog.cpp:143
 #: browsers/CollectionTreeItem.cpp:163 covermanager/CoverViewDialog.h:45
-#: covermanager/CoverManager.cpp:854
+#: covermanager/CoverManager.cpp:784
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
@@ -602,7 +602,7 @@ msgstr "प्रवाह"
 
 #: collection/sqlcollection/SqlMeta.cpp:403
 #: services/lastfm/meta/LastFmMeta.cpp:137 covermanager/CoverViewDialog.h:44
-#: covermanager/CoverManager.cpp:854
+#: covermanager/CoverManager.cpp:784
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
@@ -5932,31 +5932,31 @@ msgstr "अन्तराष्ट्रिय"
 
 #. i18n: file: dialogs/EditCoverSearchDialog.ui:67
 #. i18n: ectx: property (text), item, widget (KComboBox, amazonLocale)
-#: rc.cpp:751 covermanager/CoverManager.cpp:211
+#: rc.cpp:751
 msgid "Canada"
 msgstr "क्यानडा"
 
 #. i18n: file: dialogs/EditCoverSearchDialog.ui:72
 #. i18n: ectx: property (text), item, widget (KComboBox, amazonLocale)
-#: rc.cpp:754 covermanager/CoverManager.cpp:215
+#: rc.cpp:754
 msgid "France"
 msgstr "फ्रान्स"
 
 #. i18n: file: dialogs/EditCoverSearchDialog.ui:77
 #. i18n: ectx: property (text), item, widget (KComboBox, amazonLocale)
-#: rc.cpp:757 covermanager/CoverManager.cpp:219
+#: rc.cpp:757
 msgid "Germany"
 msgstr "जर्मनी"
 
 #. i18n: file: dialogs/EditCoverSearchDialog.ui:82
 #. i18n: ectx: property (text), item, widget (KComboBox, amazonLocale)
-#: rc.cpp:760 covermanager/CoverManager.cpp:223
+#: rc.cpp:760
 msgid "Japan"
 msgstr "जापान"
 
 #. i18n: file: dialogs/EditCoverSearchDialog.ui:87
 #. i18n: ectx: property (text), item, widget (KComboBox, amazonLocale)
-#: rc.cpp:763 covermanager/CoverManager.cpp:227
+#: rc.cpp:763
 msgid "United Kingdom"
 msgstr "संयुक्त अधिराज्य"
 
@@ -9451,7 +9451,7 @@ msgstr[1] "%1 ट्रयाक"
 
 #: statusbar/ProgressBar.cpp:47 statusbar/CompoundProgressBar.cpp:67
 #: statusbar/CompoundProgressBar.cpp:139 statusbar/CompoundProgressBar.cpp:174
-#: covermanager/CoverManager.cpp:261
+#: covermanager/CoverManager.cpp:214
 msgid "Abort"
 msgstr "परित्याग गर्नुहोस्"
 
@@ -9947,93 +9947,37 @@ msgstr[1] ""
 msgid "Select Cover Image File"
 msgstr "आवरण छवि फाइल चयन गर्नुहोस्"
 
-#: covermanager/CoverFetcher.cpp:180
-msgid "disc"
-msgstr "डिस्क"
-
-#: covermanager/CoverFetcher.cpp:180
-msgid "disk"
-msgstr "डिस्क"
-
-#: covermanager/CoverFetcher.cpp:180
-msgid "remaster"
-msgstr "रिमास्टर"
-
-#: covermanager/CoverFetcher.cpp:180
-msgid "cd"
-msgstr "सीडी"
-
-#: covermanager/CoverFetcher.cpp:180
-msgid "single"
-msgstr "एकल"
-
-#: covermanager/CoverFetcher.cpp:180
-msgid "soundtrack"
-msgstr "ध्वनि ट्रयाक"
-
-#: covermanager/CoverFetcher.cpp:180
-msgid "part"
-msgstr "भाग"
-
-#: covermanager/CoverFetcher.cpp:246 covermanager/CoverFetcher.cpp:504
-msgid "No cover found"
-msgstr "आवरण फेला परेन"
-
-#: covermanager/CoverFetcher.cpp:279 covermanager/CoverFetcher.cpp:463
+#: covermanager/CoverFetcher.cpp:197
 #, fuzzy
 #| msgid "&Next Cover"
 msgid "Fetching Cover"
 msgstr "पछिल्लो आवरण"
 
-#: covermanager/CoverFetcher.cpp:289
-msgid "There was an error communicating with Amazon."
+#: covermanager/CoverFetcher.cpp:206
+#, fuzzy
+#| msgid "There was an error communicating with Amazon."
+msgid "There was an error communicating with last.fm."
 msgstr "एमाजोनसँग सञ्चार गर्दा एउटा त्रुटि थियो ।"
 
-#: covermanager/CoverFetcher.cpp:311
-msgid "The XML obtained from Amazon is invalid."
+#: covermanager/CoverFetcher.cpp:219
+#, fuzzy
+#| msgid "The XML obtained from Amazon is invalid."
+msgid "The XML obtained from Last.fm is invalid."
 msgstr "अमाजोनबाट प्राप्त भएको एकसएमएल अवैध छ ।"
 
-#: covermanager/CoverFetcher.cpp:424
+#: covermanager/CoverFetcher.cpp:264
 msgid "The cover could not be retrieved."
 msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
 
-#: covermanager/CoverFetcher.cpp:433
-msgid "The cover-data produced an invalid image."
-msgstr "आवरण-डेटाले एउटा अवैध छवि उत्पन्न गर्यो ।"
-
-#: covermanager/CoverFetcher.cpp:495
-msgid ""
-"You have seen all the covers Amazon returned using the query below. Perhaps "
-"you can refine it:"
-msgstr ""
-"तपाईँले तल क्वेरी प्रयोग गरेर फर्काएको सबै आवरण अमाजोन देख्नुभयो । तपाईँ यसलाई निर्मल गर्न "
-"सक्नुहुन्छ:"
-
-#: covermanager/CoverFetcher.cpp:518
-msgid "Amazon Query Editor"
-msgstr "अमाजोन क्वेरी सम्पादक"
-
-#: covermanager/CoverFetcher.cpp:585
-msgid "Ask Amazon for covers using this query:"
-msgstr "यो क्वेरी प्रयोग गरिरहेको आवरणका लागि अमाजोनलाई सोध्नुहोस्:"
-
-#: covermanager/CoverFetcher.cpp:606 covermanager/CoverFetcher.cpp:683
-msgid "Aborted."
-msgstr "परित्याग गरियो।"
-
-#: covermanager/CoverFetcher.cpp:626
-msgid "Ne&w Search..."
-msgstr "नयाँ खोजी..."
-
-#: covermanager/CoverFetcher.cpp:628
-msgid "&Next Cover"
-msgstr "पछिल्लो आवरण"
-
-#: covermanager/CoverFetcher.cpp:639
+#: covermanager/CoverFetcher.cpp:305
 msgid "Cover Found"
 msgstr "आवरण फेला पर्यो"
 
-#: covermanager/CoverFetcher.cpp:692
+#: covermanager/CoverFetcher.cpp:337
+msgid "Aborted."
+msgstr "परित्याग गरियो।"
+
+#: covermanager/CoverFetcher.cpp:346
 msgid "Retrieved cover successfully"
 msgstr ""
 
@@ -10041,7 +9985,7 @@ msgstr ""
 msgid "Albums By"
 msgstr "यसद्वारा एल्बम"
 
-#: covermanager/CoverManager.cpp:112 covermanager/CoverManager.cpp:358
+#: covermanager/CoverManager.cpp:112 covermanager/CoverManager.cpp:296
 #, fuzzy
 #| msgid "Album Artist"
 msgid "All Artists"
@@ -10063,86 +10007,68 @@ msgstr "आवरण सहितको एल्बम"
 msgid "Albums Without Cover"
 msgstr "आवरण बिनाको एल्बम"
 
-#: covermanager/CoverManager.cpp:207
-#, fuzzy
-#| msgid "International"
-msgctxt "The locale to use when fetching covers from amazon.com"
-msgid "International"
-msgstr "अन्तराष्ट्रिय"
-
-#: covermanager/CoverManager.cpp:234
-#, fuzzy
-#| msgid "View"
-msgctxt "@title buttontext for popup-menu"
-msgid "View"
-msgstr "दृश्य"
-
-#: covermanager/CoverManager.cpp:239
-msgid "Amazon Locale"
-msgstr "अमाजोन लोकेल"
-
-#: covermanager/CoverManager.cpp:245
+#: covermanager/CoverManager.cpp:198
 msgid "Fetch Missing Covers"
 msgstr "हराइरहेको आवरण तान्नुहोस्"
 
-#: covermanager/CoverManager.cpp:434
+#: covermanager/CoverManager.cpp:372
 msgid "Loading Thumbnails..."
 msgstr "थम्बनेलहरू लोड हुँदैछ..."
 
-#: covermanager/CoverManager.cpp:698
+#: covermanager/CoverManager.cpp:628
 #, fuzzy
 #| msgid "Finished."
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "समाप्त भयो ।"
 
-#: covermanager/CoverManager.cpp:700
+#: covermanager/CoverManager.cpp:630
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] " <b>%1</b> आवरण फेला परेन"
 msgstr[1] " <b>%1</b> आवरण फेला परेन"
 
-#: covermanager/CoverManager.cpp:713
+#: covermanager/CoverManager.cpp:643
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "%1 का लागि आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:715
+#: covermanager/CoverManager.cpp:645
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "%1 - %2 का लागि आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:722
+#: covermanager/CoverManager.cpp:652
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "<b>%1</b> आवरण तान्दैछ..."
 msgstr[1] "<b>%1</b> आवरण तान्दैछ..."
 
-#: covermanager/CoverManager.cpp:724
+#: covermanager/CoverManager.cpp:654
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "%1 तानियो"
 msgstr[1] "%1 तानियो"
 
-#: covermanager/CoverManager.cpp:728
+#: covermanager/CoverManager.cpp:658
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:729
+#: covermanager/CoverManager.cpp:659
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
 msgstr[0] "%1 फेला परेन"
 msgstr[1] "%1 फेला परेन"
 
-#: covermanager/CoverManager.cpp:732
+#: covermanager/CoverManager.cpp:662
 msgid "Connecting..."
 msgstr "जडान गरिँदैछ..."
 
-#: covermanager/CoverManager.cpp:757
+#: covermanager/CoverManager.cpp:687
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -10151,31 +10077,92 @@ msgid_plural "%1 results for \"%2\""
 msgstr[0] "\"%1\" को लागि १ परिणाम"
 msgstr[1] "\"%1\" को लागि १ परिणाम"
 
-#: covermanager/CoverManager.cpp:760
+#: covermanager/CoverManager.cpp:690
 #, fuzzy, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "१ एल्बम"
 msgstr[1] "१ एल्बम"
 
-#: covermanager/CoverManager.cpp:766
+#: covermanager/CoverManager.cpp:696
 msgid " by "
 msgstr "यसद्वारा "
 
-#: covermanager/CoverManager.cpp:771
+#: covermanager/CoverManager.cpp:701
 #, kde-format
 msgid " - ( <b>%1</b> without cover )"
 msgstr " - ( <b>%1</b> आवरण बिना )"
 
-#: covermanager/CoverManager.cpp:817
+#: covermanager/CoverManager.cpp:747
 msgid "Cover Image"
 msgstr "आवरण छवि"
 
-#: covermanager/CoverManager.cpp:875
+#: covermanager/CoverManager.cpp:805
 #, fuzzy
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "कलाकार"
+
+#~ msgid "disc"
+#~ msgstr "डिस्क"
+
+#~ msgid "disk"
+#~ msgstr "डिस्क"
+
+#~ msgid "remaster"
+#~ msgstr "रिमास्टर"
+
+#~ msgid "cd"
+#~ msgstr "सीडी"
+
+#~ msgid "single"
+#~ msgstr "एकल"
+
+#~ msgid "soundtrack"
+#~ msgstr "ध्वनि ट्रयाक"
+
+#~ msgid "part"
+#~ msgstr "भाग"
+
+#~ msgid "No cover found"
+#~ msgstr "आवरण फेला परेन"
+
+#~ msgid "The cover-data produced an invalid image."
+#~ msgstr "आवरण-डेटाले एउटा अवैध छवि उत्पन्न गर्यो ।"
+
+#~ msgid ""
+#~ "You have seen all the covers Amazon returned using the query below. "
+#~ "Perhaps you can refine it:"
+#~ msgstr ""
+#~ "तपाईँले तल क्वेरी प्रयोग गरेर फर्काएको सबै आवरण अमाजोन देख्नुभयो । तपाईँ यसलाई निर्मल "
+#~ "गर्न सक्नुहुन्छ:"
+
+#~ msgid "Amazon Query Editor"
+#~ msgstr "अमाजोन क्वेरी सम्पादक"
+
+#~ msgid "Ask Amazon for covers using this query:"
+#~ msgstr "यो क्वेरी प्रयोग गरिरहेको आवरणका लागि अमाजोनलाई सोध्नुहोस्:"
+
+#~ msgid "Ne&w Search..."
+#~ msgstr "नयाँ खोजी..."
+
+#~ msgid "&Next Cover"
+#~ msgstr "पछिल्लो आवरण"
+
+#, fuzzy
+#~| msgid "International"
+#~ msgctxt "The locale to use when fetching covers from amazon.com"
+#~ msgid "International"
+#~ msgstr "अन्तराष्ट्रिय"
+
+#, fuzzy
+#~| msgid "View"
+#~ msgctxt "@title buttontext for popup-menu"
+#~ msgid "View"
+#~ msgstr "दृश्य"
+
+#~ msgid "Amazon Locale"
+#~ msgstr "अमाजोन लोकेल"
 
 #, fuzzy
 #~| msgid "Select Playlists"
