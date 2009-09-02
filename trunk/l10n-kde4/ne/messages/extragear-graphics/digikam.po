@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-30 06:08+0200\n"
+"POT-Creation-Date: 2009-09-02 07:33+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -943,7 +943,7 @@ msgstr "'%1' ट्याग मेट्नुहुन्छ ?"
 #: utilities/gpssearch/gpssearchfolderview.cpp:284
 #: utilities/searchwindow/searchfolderview.cpp:215
 #: utilities/cameragui/cameraui.cpp:1872
-#: utilities/cameragui/cameraiconview.cpp:492
+#: utilities/cameragui/cameraiconview.cpp:497
 #: utilities/timeline/timelinefolderview.cpp:171
 #: utilities/timeline/timelinefolderview.cpp:263
 #: utilities/fuzzysearch/fuzzysearchfolderview.cpp:183
@@ -976,8 +976,7 @@ msgstr "फाइल गुण"
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:107
 #: libs/imageproperties/imagepropertiessidebar.cpp:85
 #: showfoto/setup/setup.cpp:107 utilities/setup/setup.cpp:178
-#: utilities/manualrename/parsers/metadataparser.cpp:38
-#: utilities/manualrename/parsers/metadataparser.cpp:40
+#: utilities/manualrename/parsers/metadataparser.cpp:63
 msgid "Metadata"
 msgstr "मेटाडेटा"
 
@@ -1034,7 +1033,7 @@ msgstr "यहाँ सार्नुहोस्"
 #: digikam/imagedragdrop.cpp:71 digikam/imagedragdrop.cpp:296
 #: digikam/albumdragdrop.cpp:80 digikam/albumdragdrop.cpp:142
 #: digikam/albumdragdrop.cpp:179 digikam/albumdragdrop.cpp:236
-#: digikam/albumdragdrop.cpp:277 utilities/cameragui/cameraiconview.cpp:684
+#: digikam/albumdragdrop.cpp:277 utilities/cameragui/cameraiconview.cpp:689
 msgid "C&ancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -4979,23 +4978,23 @@ msgstr "सबै चयन गर्नुहोस्"
 msgid "Clear"
 msgstr "मानक"
 
-#: libs/widgets/metadata/metadatapanel.cpp:218
+#: libs/widgets/metadata/metadatapanel.cpp:219
 msgid "EXIF viewer"
 msgstr ""
 
-#: libs/widgets/metadata/metadatapanel.cpp:222
+#: libs/widgets/metadata/metadatapanel.cpp:223
 #, fuzzy
 #| msgid "Makernote"
 msgid "Makernotes viewer"
 msgstr "मेकरनोट"
 
-#: libs/widgets/metadata/metadatapanel.cpp:226
+#: libs/widgets/metadata/metadatapanel.cpp:227
 #, fuzzy
 #| msgid "IPTC Records"
 msgid "IPTC viewer"
 msgstr "IPTC रेकर्ड"
 
-#: libs/widgets/metadata/metadatapanel.cpp:230
+#: libs/widgets/metadata/metadatapanel.cpp:231
 msgid "XMP viewer"
 msgstr ""
 
@@ -9794,7 +9793,7 @@ msgstr "छवि मिति"
 
 #. i18n: file: utilities/manualrename/parsers/dateparserdialogwidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:362 utilities/cameragui/renamecustomizer.cpp:213
+#: rc.cpp:362 utilities/cameragui/renamecustomizer.cpp:214
 #: utilities/cameragui/cameraui.cpp:219
 msgid "Date format:"
 msgstr "मिति ढाँचा:"
@@ -12030,6 +12029,7 @@ msgid "Manual Adjustment"
 msgstr "HSL समायोजन"
 
 #: imageplugins/freerotation/freerotationtool.cpp:273
+#: utilities/manualrename/parsers/metadataparser.cpp:105
 #: utilities/cameragui/cameraui.cpp:297
 msgid "Settings"
 msgstr "सेटिङ"
@@ -20044,13 +20044,34 @@ msgstr "छिटो खोजी"
 msgid "Enter custom rename string"
 msgstr ""
 
-#: utilities/manualrename/parsers/metadataparser.cpp:41
-msgid "add metadata (key = EXIF|IPTC|XMP:keyword)"
+#: utilities/manualrename/parsers/metadataparser.cpp:61
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata..."
+msgstr "मेटाडेटा"
+
+#: utilities/manualrename/parsers/metadataparser.cpp:64
+msgid "add metadata (use the quick access dialog for keycodes)"
+msgstr ""
+
+#: utilities/manualrename/parsers/metadataparser.cpp:74
+msgid "Keyword separator:"
+msgstr ""
+
+#: utilities/manualrename/parsers/metadataparser.cpp:114
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata Keywords"
+msgstr "मेटाडेटा"
+
+#: utilities/manualrename/parsers/metadataparser.cpp:136
+msgid "Add Metadata Keywords"
 msgstr ""
 
 #: utilities/manualrename/parsers/dateparser.cpp:100
-#: utilities/cameragui/renamecustomizer.cpp:208
-msgid "Add Date && Time"
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Add Date & Time"
 msgstr "मिति र समय थप्नुहोस्"
 
 #: utilities/manualrename/parsers/dateparser.cpp:112
@@ -20058,6 +20079,11 @@ msgid "Enter custom date format"
 msgstr ""
 
 #: utilities/manualrename/parsers/dateparser.cpp:171
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time..."
+msgstr "मिति र समय थप्नुहोस्"
+
 #: utilities/manualrename/parsers/dateparser.cpp:175
 #, fuzzy
 #| msgid "Add Date && Time"
@@ -20136,38 +20162,43 @@ msgstr "कुनै होइन"
 msgid "Custom Range"
 msgstr "अनुकूल"
 
-#: utilities/manualrename/parsers/sequencenumberparser.cpp:91
-#: utilities/manualrename/parsers/sequencenumberparser.cpp:95
+#: utilities/manualrename/parsers/sequencenumberparser.cpp:92
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "Sequence Number"
+msgid "Sequence Number..."
 msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
 
 #: utilities/manualrename/parsers/sequencenumberparser.cpp:96
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "sequence number"
+msgid "Sequence Number"
 msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
 
-#: utilities/manualrename/parsers/sequencenumberparser.cpp:98
+#: utilities/manualrename/parsers/sequencenumberparser.cpp:97
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "Sequence Number (start)"
+msgid "sequence number"
 msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
 
 #: utilities/manualrename/parsers/sequencenumberparser.cpp:99
 #, fuzzy
 #| msgid "Add Sequence Number"
+msgid "Sequence Number (start)"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/manualrename/parsers/sequencenumberparser.cpp:100
+#, fuzzy
+#| msgid "Add Sequence Number"
 msgid "sequence number (custom start)"
 msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
 
-#: utilities/manualrename/parsers/sequencenumberparser.cpp:101
+#: utilities/manualrename/parsers/sequencenumberparser.cpp:102
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "Sequence Number (start, step)"
 msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
 
-#: utilities/manualrename/parsers/sequencenumberparser.cpp:102
+#: utilities/manualrename/parsers/sequencenumberparser.cpp:103
 msgid "sequence number (custom start + step)"
 msgstr ""
 
@@ -20406,11 +20437,11 @@ msgid ""
 "<p>Please select the camera folder where you want to upload the images.</p>"
 msgstr "<p>कृपया तपाईँले तस्विर अपलोड गर्न चाहनुभएको क्यामेरा फोल्डर चयन गर्नुहोस् ।</p>"
 
-#: utilities/cameragui/renamecustomizer.cpp:159
+#: utilities/cameragui/renamecustomizer.cpp:160
 msgid "Camera filenames"
 msgstr "क्यामेरा फाइलनाम"
 
-#: utilities/cameragui/renamecustomizer.cpp:161
+#: utilities/cameragui/renamecustomizer.cpp:162
 #, fuzzy
 #| msgid ""
 #| "<p>Turn on this option to use camera provided image filenames without "
@@ -20422,115 +20453,119 @@ msgstr ""
 "<p>परिमार्जन बिना क्यामेराद्वारा प्रदान गरेको छवि फाइलनाम प्रयोग गर्न यो विकल्प "
 "खोल्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:167
+#: utilities/cameragui/renamecustomizer.cpp:168
 msgid "Change case to:"
 msgstr "केस परिवर्तन गर्नुहोस्:"
 
-#: utilities/cameragui/renamecustomizer.cpp:171
+#: utilities/cameragui/renamecustomizer.cpp:172
 #, fuzzy
 #| msgid "Leave as Is"
 msgctxt "Leave filename as it is"
 msgid "Leave as-is"
 msgstr "जस्ताको तस्तै छोड्नुहोस्"
 
-#: utilities/cameragui/renamecustomizer.cpp:172
+#: utilities/cameragui/renamecustomizer.cpp:173
 #, fuzzy
 #| msgid "Upper"
 msgctxt "Filename to uppercase"
 msgid "Upper"
 msgstr "अपर"
 
-#: utilities/cameragui/renamecustomizer.cpp:173
+#: utilities/cameragui/renamecustomizer.cpp:174
 #, fuzzy
 #| msgid "Lower"
 msgctxt "Filename to lowercase"
 msgid "Lower"
 msgstr "लोवर"
 
-#: utilities/cameragui/renamecustomizer.cpp:175
+#: utilities/cameragui/renamecustomizer.cpp:176
 #, fuzzy
 #| msgid "<p>Set the method to use to change the case of image filenames."
 msgid "Set the method to use to change the case of the image filenames."
 msgstr "<p>छवि फाइलनामको केस परिवर्तन गर्न प्रयोग गरिने विधि सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:186
+#: utilities/cameragui/renamecustomizer.cpp:187
 msgid "Customize"
 msgstr "अनुकूलन"
 
-#: utilities/cameragui/renamecustomizer.cpp:188
+#: utilities/cameragui/renamecustomizer.cpp:189
 #, fuzzy
 #| msgid "<p>Turn on this option to customize image filenames during download."
 msgid "Turn on this option to customize the image filenames during download."
 msgstr "<p>डाउनलोड गर्दा छवि फाइलनाम अनुकूलन गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:194
+#: utilities/cameragui/renamecustomizer.cpp:195
 msgid "Prefix:"
 msgstr "उपसर्ग:"
 
-#: utilities/cameragui/renamecustomizer.cpp:197
+#: utilities/cameragui/renamecustomizer.cpp:198
 #, fuzzy
 #| msgid "<p>Set the prefix which will be prepended to image filenames."
 msgid "Set the prefix which will be added to the image filenames."
 msgstr "<p>छवि फाइलनामको अगाडि राखिने उपसर्ग सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:200
+#: utilities/cameragui/renamecustomizer.cpp:201
 msgid "Suffix:"
 msgstr "प्रत्यय:"
 
-#: utilities/cameragui/renamecustomizer.cpp:202
+#: utilities/cameragui/renamecustomizer.cpp:203
 #, fuzzy
 #| msgid "<p>Set the suffix which will be postpended to image filenames."
 msgid "Set the suffix which will be added to the image filenames."
 msgstr "<p>छवि फाइलनाममा पछि राखिने उपसर्ग सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:205
+#: utilities/cameragui/renamecustomizer.cpp:206
 msgid "Add Original &Filename"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:206
+#: utilities/cameragui/renamecustomizer.cpp:207
 #, fuzzy
 #| msgid "<p>Set this option to add the camera name."
 msgid "Set this option to add the original filename."
 msgstr "<p>क्यामेरा नाम थप्न यो विकल्प सेट गर्नुहोस् ।"
 
 #: utilities/cameragui/renamecustomizer.cpp:209
+msgid "Add Date && Time"
+msgstr "मिति र समय थप्नुहोस्"
+
+#: utilities/cameragui/renamecustomizer.cpp:210
 #, fuzzy
 #| msgid "<p>Set this option to add the camera provided date and time."
 msgid "Set this option to add the camera-provided date and time."
 msgstr "<p>क्यामेराद्वारा प्रदान गरेको मिति र समय थप्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:217
+#: utilities/cameragui/renamecustomizer.cpp:218
 #, fuzzy
 #| msgid "Standard"
 msgctxt "Standard time format"
 msgid "Standard"
 msgstr "मानक"
 
-#: utilities/cameragui/renamecustomizer.cpp:219
+#: utilities/cameragui/renamecustomizer.cpp:220
 #, fuzzy
 #| msgid "ISO"
 msgctxt "ISO time format"
 msgid "ISO"
 msgstr "ISO"
 
-#: utilities/cameragui/renamecustomizer.cpp:221
+#: utilities/cameragui/renamecustomizer.cpp:222
 #: utilities/cameragui/cameraui.cpp:222
 msgid "Full Text"
 msgstr "पूरा पाठ"
 
-#: utilities/cameragui/renamecustomizer.cpp:223
+#: utilities/cameragui/renamecustomizer.cpp:224
 #: utilities/cameragui/cameraui.cpp:223
 msgid "Local Settings"
 msgstr "स्थानिय सेटिङ"
 
-#: utilities/cameragui/renamecustomizer.cpp:225
+#: utilities/cameragui/renamecustomizer.cpp:226
 #, fuzzy
 #| msgid "Advanced..."
 msgctxt "Advanced time format settings"
 msgid "Advanced..."
 msgstr "उन्नत..."
 
-#: utilities/cameragui/renamecustomizer.cpp:227
+#: utilities/cameragui/renamecustomizer.cpp:228
 #, fuzzy
 #| msgid ""
 #| "<p>Select your preferred date format used to create new albums. The "
@@ -20561,21 +20596,21 @@ msgstr ""
 "प्यानलको सेटिङमा आधारित ढाँचा ।</p><p><b>उन्नत:</b> अनुकूल मिति ढाँचा निर्दिष्ट गर्न "
 "अनुमति दिन्छ ।</p>"
 
-#: utilities/cameragui/renamecustomizer.cpp:249
+#: utilities/cameragui/renamecustomizer.cpp:250
 msgid "Add Camera Name"
 msgstr "क्यामेरा नाम थप्नुहोस्"
 
-#: utilities/cameragui/renamecustomizer.cpp:250
+#: utilities/cameragui/renamecustomizer.cpp:251
 #, fuzzy
 #| msgid "<p>Set this option to add the camera name."
 msgid "Set this option to add the camera name."
 msgstr "<p>क्यामेरा नाम थप्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:252
+#: utilities/cameragui/renamecustomizer.cpp:253
 msgid "Add Sequence Number"
 msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
 
-#: utilities/cameragui/renamecustomizer.cpp:253
+#: utilities/cameragui/renamecustomizer.cpp:254
 #, fuzzy
 #| msgid ""
 #| "<p>Set this option to add a sequence number starting with the index set "
@@ -20584,11 +20619,11 @@ msgid ""
 "Set this option to add a sequence number starting with the index set below."
 msgstr "<p>तल सेट गरेको अनुक्रमणिसँग सुरु हुँने श्रृङ्खला नम्बर थप्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:256
+#: utilities/cameragui/renamecustomizer.cpp:257
 msgid "Start Index:"
 msgstr "अनुक्रमणिका सुरु गर्नुहोस्:"
 
-#: utilities/cameragui/renamecustomizer.cpp:260
+#: utilities/cameragui/renamecustomizer.cpp:261
 #, fuzzy
 #| msgid ""
 #| "<p>Set the starting index value used to rename picture files with a "
@@ -20598,14 +20633,14 @@ msgid ""
 msgstr ""
 "<p>श्रृङ्खला नम्बरसँग तस्विर फाइलहरू पुन: नामकरण गर्न सुरुआत अनुक्रमणिका मान सेट गर्नुहोस् ।"
 
-#: utilities/cameragui/renamecustomizer.cpp:282
+#: utilities/cameragui/renamecustomizer.cpp:283
 #, fuzzy
 #| msgid "Manual"
 msgctxt "Manual Image Renaming"
 msgid "Manual"
 msgstr "म्यानुअल"
 
-#: utilities/cameragui/renamecustomizer.cpp:516
+#: utilities/cameragui/renamecustomizer.cpp:523
 #, fuzzy
 #| msgid ""
 #| "<qt><p>Enter the format for date and time.</p><p>Use <i>dd</i> for the "
@@ -20626,11 +20661,11 @@ msgstr ""
 "20060824T142418 का लागि <i>yyyyMMddThhmmss</i> ,<br> 2006-08-24 14:24:18 का "
 "लागि <i>yyyy-MM-dd hh:mm:ss</i> </p></qt>"
 
-#: utilities/cameragui/renamecustomizer.cpp:528
+#: utilities/cameragui/renamecustomizer.cpp:535
 msgid "Change Date and Time Format"
 msgstr "मिति र समय ढाँचा परिवर्तन गर्नुहोस्"
 
-#: utilities/cameragui/renamecustomizer.cpp:548
+#: utilities/cameragui/renamecustomizer.cpp:555
 msgid "photo"
 msgstr "फोटो"
 
@@ -21064,7 +21099,7 @@ msgid "Upload..."
 msgstr "अपलोड गर्नुहोस्..."
 
 #: utilities/cameragui/cameraui.cpp:405
-#: utilities/cameragui/cameraiconview.cpp:490
+#: utilities/cameragui/cameraiconview.cpp:495
 msgid "Toggle Lock"
 msgstr "लक टगल गर्नुहोस्"
 
@@ -21272,24 +21307,24 @@ msgstr ""
 "डाइरेक्टरी मेट्न समर्थन: %9\n"
 "\n"
 
-#: utilities/cameragui/cameraiconview.cpp:486
+#: utilities/cameragui/cameraiconview.cpp:491
 #, fuzzy
 #| msgid "View..."
 msgctxt "View the selected image"
 msgid "&View"
 msgstr "दृश्य..."
 
-#: utilities/cameragui/cameraiconview.cpp:488
+#: utilities/cameragui/cameraiconview.cpp:493
 msgid "Download"
 msgstr "डाउनलोड गर्नुहोस्"
 
-#: utilities/cameragui/cameraiconview.cpp:489
+#: utilities/cameragui/cameraiconview.cpp:494
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download && Delete"
 msgstr "चयन गरेको डाउनलोड गर्नुहोस्"
 
-#: utilities/cameragui/cameraiconview.cpp:682
+#: utilities/cameragui/cameraiconview.cpp:687
 #, fuzzy
 #| msgid "&Upload into camera"
 msgid "&Upload to camera"
