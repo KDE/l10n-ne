@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-05 06:50+0200\n"
+"POT-Creation-Date: 2009-09-06 06:20+0200\n"
 "PO-Revision-Date: 2007-09-07 10:35+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -15,6 +15,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: contactselectiondialog.cpp:29
+#, fuzzy
+#| msgid "&Selected contacts"
+msgid "Select Contacts"
+msgstr "चयन गरिएका सम्पर्क"
 
 #: modelcolumnmanager.cpp:74 xxport/ldap/ldapsearchdialog.cpp:83
 #: xxport/ldap/ldapsearchdialog.cpp:177
@@ -373,7 +379,13 @@ msgstr ""
 msgid "EMail (4)"
 msgstr ""
 
-#: xxportmanager.cpp:132
+#: xxportmanager.cpp:112
+#, fuzzy
+#| msgid "Which contacts do you want to export?"
+msgid "Which contact do you want to export?"
+msgstr "तपाईँ कुन सम्पर्क निर्यात गर्न चाहनुहुन्छ ?"
+
+#: xxportmanager.cpp:118
 msgid "You have not selected any contact to export!"
 msgstr ""
 
@@ -469,13 +481,13 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nabin@mpp.org.np"
 
-#. i18n: file: printing/rbs_appearance.ui:13
+#. i18n: file: printing/rbs_appearance.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RingBinderStyleAppearanceForm_Base)
 #: rc.cpp:26
 msgid "Appearance"
 msgstr "देखावट"
 
-#. i18n: file: printing/rbs_appearance.ui:25
+#. i18n: file: printing/rbs_appearance.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox3)
 #: rc.cpp:29
 #, fuzzy
@@ -484,28 +496,9 @@ msgctxt "@title:group Print settings"
 msgid "Miscellaneous"
 msgstr "विविध"
 
-#. i18n: file: printing/rbs_appearance.ui:53
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAlwaysAllPages)
-#: rc.cpp:32
-msgid ""
-"If this box is checked, at least one page will be printed for every letter "
-"group, regardless of whether entries exist for this letter group. This is "
-"normally only useful in conjunction with the option 'fill pages with empty "
-"address fields'."
-msgstr ""
-"यदि यो बाकस जाँच गरिएमा, यो चिठ्ठी समूहका लागि प्रविष्टि अवस्थित नभएता पनि, प्रत्येक "
-"चिठ्ठी समूहका लागि कम्तिमा एक पृष्ठ मुद्रण गरिन्छ । सामान्यतया यो 'खाली ठेगाना फिल्ड "
-"भएका पृष्ठ भर्नुहोस्' विकल्प भएका संयोजनमा उपयोगि हुन्छ ।"
-
-#. i18n: file: printing/rbs_appearance.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, cbAlwaysAllPages)
-#: rc.cpp:35
-msgid "Always print pages for all tabs"
-msgstr "सबै ट्याबका लागि सधैँ पृष्ठहरू मुद्रण गर्नुहोस्"
-
-#. i18n: file: printing/rbs_appearance.ui:66
+#. i18n: file: printing/rbs_appearance.ui:51
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, sbMinNumFill)
-#: rc.cpp:38
+#: rc.cpp:32
 msgid ""
 "This is the minimum number of empty fields that have to be printed in "
 "addition to real entries; if this number is not reached on the first page, "
@@ -514,9 +507,9 @@ msgstr ""
 "यो तपाईँले वास्तवीक प्रविष्टिमा थपेका मुद्रण हुने खाली फिल्डको न्यूनतम सङ्ख्या हो; यदि यो "
 "नम्बर पहिलो पृष्ठमा पुगेको छैन भने, खाली फिल्ड भएका अरू पृष्ठ मात्र थपिन्छन् ।"
 
-#. i18n: file: printing/rbs_appearance.ui:73
+#. i18n: file: printing/rbs_appearance.ui:58
 #. i18n: ectx: property (whatsThis), widget (QLabel, sblabel)
-#: rc.cpp:41
+#: rc.cpp:35
 #, fuzzy
 #| msgid ""
 #| "If you often add contacts to your printout manually before entering them "
@@ -536,15 +529,15 @@ msgstr ""
 "ठेगाना फिल्ड मुद्रण हुनुपर्दछ निर्धारण गर्दछ; यदि यो धेरै पृष्ठमा नमिलेमा, खाली फिल्ड भएको "
 "अर्को पृष्ठ मात्र मुद्रण हुन्छ ।"
 
-#. i18n: file: printing/rbs_appearance.ui:76
+#. i18n: file: printing/rbs_appearance.ui:61
 #. i18n: ectx: property (text), widget (QLabel, sblabel)
-#: rc.cpp:44
+#: rc.cpp:38
 msgid "Min. number of empty fields:"
 msgstr "खाली फिल्डको न्यूनतम सङ्ख्या:"
 
-#. i18n: file: printing/rbs_appearance.ui:83
+#. i18n: file: printing/rbs_appearance.ui:68
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbFillEmpty)
-#: rc.cpp:47
+#: rc.cpp:41
 msgid ""
 "If this option is turned on, behind the contacts on a page the remaining "
 "space will be filled with empty fields so you can add contacts manually later"
@@ -552,58 +545,58 @@ msgstr ""
 "यदि यो विकल्प खोलिएमा, पृषठमा सम्पर्क पछाडिका बाँकी स्थान खाली स्थानद्वारा भरिन्छ जसले "
 "गर्दा तपाईँले पछि सम्पर्क म्यानुअली थप्न सक्नुहुन्छ"
 
-#. i18n: file: printing/rbs_appearance.ui:86
+#. i18n: file: printing/rbs_appearance.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, cbFillEmpty)
-#: rc.cpp:50
+#: rc.cpp:44
 msgid "Fill pages with empty address fields"
 msgstr "खाली ठेगाना फिल्ड भएका पृष्ठ भर्नुहोस्"
 
-#. i18n: file: printing/rbs_appearance.ui:99
+#. i18n: file: printing/rbs_appearance.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox2)
-#: rc.cpp:53
+#: rc.cpp:47
 msgid "Print Contact's Information"
 msgstr "सम्पर्कको सूचना मुद्रण गर्नुहोस्"
 
-#. i18n: file: printing/rbs_appearance.ui:111
+#. i18n: file: printing/rbs_appearance.ui:96
 #. i18n: ectx: property (text), widget (QCheckBox, cbPhoneNumbers)
-#: rc.cpp:56
+#: rc.cpp:50
 msgid "Phone numbers"
 msgstr "फोन नम्बर"
 
-#. i18n: file: printing/rbs_appearance.ui:121
+#. i18n: file: printing/rbs_appearance.ui:106
 #. i18n: ectx: property (text), widget (QCheckBox, cbEmails)
-#: rc.cpp:59
+#: rc.cpp:53
 msgid "Email addresses"
 msgstr "इमेल ठेगाना"
 
-#. i18n: file: printing/rbs_appearance.ui:131
+#. i18n: file: printing/rbs_appearance.ui:116
 #. i18n: ectx: property (text), widget (QCheckBox, cbStreetAddresses)
-#: rc.cpp:62
+#: rc.cpp:56
 msgid "Street addresses"
 msgstr "गल्ली ठेगान"
 
-#. i18n: file: printing/rbs_appearance.ui:141
+#. i18n: file: printing/rbs_appearance.ui:126
 #. i18n: ectx: property (text), widget (QCheckBox, cbOrganization)
-#: rc.cpp:65 xxport/ldap/ldapsearchdialog.cpp:94
+#: rc.cpp:59 xxport/ldap/ldapsearchdialog.cpp:94
 #: xxport/ldap/ldapsearchdialog.cpp:184
 msgid "Organization"
 msgstr "सङ्गठन"
 
-#. i18n: file: printing/rbs_appearance.ui:148
+#. i18n: file: printing/rbs_appearance.ui:133
 #. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: rc.cpp:68
+#: rc.cpp:62
 msgid "Birthday"
 msgstr "जन्म मिति"
 
-#. i18n: file: printing/rbs_appearance.ui:182
+#. i18n: file: printing/rbs_appearance.ui:167
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: rc.cpp:71
+#: rc.cpp:65
 msgid "Letter Groups"
 msgstr "चिठ्ठी समूह"
 
-#. i18n: file: printing/rbs_appearance.ui:194
+#. i18n: file: printing/rbs_appearance.ui:179
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:74
+#: rc.cpp:68
 msgid ""
 "Here you can group letters together as they are grouped in your time "
 "planner. Press 'group letter' to combine the selected letter with the letter "
@@ -615,45 +608,45 @@ msgstr ""
 "थिच्नुहोस्, चयन गरिएको समूहबाट पछिल्लो चिठ्ठी हटाउन 'चिठ्ठी समूह छुट्याउनुहोस्' बटन "
 "थिच्नुहोस् ।"
 
-#. i18n: file: printing/rbs_appearance.ui:213
+#. i18n: file: printing/rbs_appearance.ui:198
 #. i18n: ectx: property (text), widget (QPushButton, groupButton)
-#: rc.cpp:77
+#: rc.cpp:71
 msgid "Group Letter"
 msgstr "चिठ्ठी एकीकृत गर्नुहोस्"
 
-#. i18n: file: printing/rbs_appearance.ui:220
+#. i18n: file: printing/rbs_appearance.ui:205
 #. i18n: ectx: property (text), widget (QPushButton, ungroupButton)
-#: rc.cpp:80
+#: rc.cpp:74
 msgid "Ungroup Letter"
 msgstr "चिठ्ठी समूह छुट्याउनुहोस्"
 
 #. i18n: file: printing/ds_appearance.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearancePage_Base)
-#: rc.cpp:83
+#: rc.cpp:77
 msgid "Appearance Page"
 msgstr "मोहडा पृष्ठ"
 
 #. i18n: file: printing/ds_appearance.ui:50
 #. i18n: ectx: property (text), widget (QLabel, labelHeader)
-#: rc.cpp:86 printing/detailledstyle.cpp:87
+#: rc.cpp:80 printing/detailledstyle.cpp:87
 msgid "Detailed Print Style - Appearance"
 msgstr "विस्तृत वर्णन गरिएको मुद्रण शैली - मोहडा"
 
 #. i18n: file: printing/ds_appearance.ui:71
 #. i18n: ectx: property (title), widget (QGroupBox, gbFont)
-#: rc.cpp:89
+#: rc.cpp:83
 msgid "Font Settings"
 msgstr "फन्ट सेटिङ"
 
 #. i18n: file: printing/ds_appearance.ui:83
 #. i18n: ectx: property (text), widget (QCheckBox, cbStandardFonts)
-#: rc.cpp:92
+#: rc.cpp:86
 msgid "Use standard KDE fonts"
 msgstr "मानक केडीई फन्ट प्रयोग गर्नुहोस्"
 
 #. i18n: file: printing/ds_appearance.ui:105
 #. i18n: ectx: property (text), widget (QLabel, labelDetailsFont)
-#: rc.cpp:95
+#: rc.cpp:89
 msgid "Details font:"
 msgstr "विवरण फन्ट:"
 
@@ -667,55 +660,55 @@ msgstr "विवरण फन्ट:"
 #. i18n: ectx: property (text), widget (QLabel, labelHeaderFontSize)
 #. i18n: file: printing/ds_appearance.ui:233
 #. i18n: ectx: property (text), widget (QLabel, labelHeaderFontSize_2)
-#: rc.cpp:98 rc.cpp:104 rc.cpp:110 rc.cpp:116 rc.cpp:119
+#: rc.cpp:92 rc.cpp:98 rc.cpp:104 rc.cpp:110 rc.cpp:113
 msgid "Size:"
 msgstr "साइज:"
 
 #. i18n: file: printing/ds_appearance.ui:125
 #. i18n: ectx: property (text), widget (QLabel, labelBodyFont)
-#: rc.cpp:101
+#: rc.cpp:95
 msgid "Body font:"
 msgstr "मुख्य फन्ट:"
 
 #. i18n: file: printing/ds_appearance.ui:145
 #. i18n: ectx: property (text), widget (QLabel, labelFixed)
-#: rc.cpp:107
+#: rc.cpp:101
 msgid "Fixed font:"
 msgstr "स्थिर फन्ट:"
 
 #. i18n: file: printing/ds_appearance.ui:198
 #. i18n: ectx: property (text), widget (QLabel, labelHeaderFont)
-#: rc.cpp:113
+#: rc.cpp:107
 msgid "Contact header font:"
 msgstr "हेडर फन्टमा सम्पर्क गर्नुहोस्:"
 
 #. i18n: file: printing/ds_appearance.ui:246
 #. i18n: ectx: property (text), widget (QLabel, labelHeadlines)
-#: rc.cpp:122
+#: rc.cpp:116
 msgid "Headlines:"
 msgstr "मुख्य लाइन:"
 
 #. i18n: file: printing/ds_appearance.ui:276
 #. i18n: ectx: property (title), widget (QGroupBox, gbHeadline)
-#: rc.cpp:125
+#: rc.cpp:119
 msgid "Contact Headers"
 msgstr "हेडरमा सम्पर्क गर्नुहोस्"
 
 #. i18n: file: printing/ds_appearance.ui:288
 #. i18n: ectx: property (text), widget (QCheckBox, cbBackgroundColor)
-#: rc.cpp:128
+#: rc.cpp:122
 msgid "Use colored contact headers"
 msgstr "रङ्गिएको सम्पर्क हेडर प्रयोग गर्नुहोस्"
 
 #. i18n: file: printing/ds_appearance.ui:324
 #. i18n: ectx: property (text), widget (QLabel, tlBackgroundColor)
-#: rc.cpp:131
+#: rc.cpp:125
 msgid "Headline background color:"
 msgstr "मूख्य पङ्क्ति पृष्ठभूमि रङ:"
 
 #. i18n: file: printing/ds_appearance.ui:334
 #. i18n: ectx: property (text), widget (QLabel, tlHeaderColor)
-#: rc.cpp:134
+#: rc.cpp:128
 msgid "Headline text color:"
 msgstr "मूख्य पङ्क्ति पाठ रङ:"
 
@@ -810,67 +803,6 @@ msgstr "मुद्रण: प्रगति"
 msgid "Progress"
 msgstr "प्रगति"
 
-#: printing/selectionpage.cpp:47
-msgid "Choose Which Contacts to Print"
-msgstr "कुन सम्पर्क मुद्रण गर्ने रोज्नुहोस्"
-
-#: printing/selectionpage.cpp:53
-msgid "Which contacts do you want to print?"
-msgstr "तपाईँ कुन सम्पर्क मुद्रण गर्न चाहनुहुन्छ ?"
-
-#: printing/selectionpage.cpp:65
-msgid "&All contacts"
-msgstr "सबै सम्पर्क"
-
-#: printing/selectionpage.cpp:67
-msgid "Print the entire address book"
-msgstr "पूरै ठेगाना पुस्तक मुद्रण गर्नुहोस्"
-
-#: printing/selectionpage.cpp:70
-msgid "&Selected contacts"
-msgstr "चयन गरिएका सम्पर्क"
-
-#: printing/selectionpage.cpp:71
-msgid ""
-"Only print contacts selected in KAddressBook.\n"
-"This option is disabled if no contacts are selected."
-msgstr ""
-"केडीई ठेगाना पुस्तकमा चयन गरिएका सम्पर्क मात्र मुद्रण गर्नुहोस् ।\n"
-"सम्पर्क चयन नगरिएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
-
-#: printing/selectionpage.cpp:75
-msgid "Contacts matching &filter"
-msgstr "सम्पर्क मिल्ने फिल्टर"
-
-#: printing/selectionpage.cpp:77
-msgid ""
-"Only print contacts matching the selected filter.\n"
-"This option is disabled if you have not defined any filters."
-msgstr ""
-"चयन गरिएका फिल्टरमा मिल्ने सम्पर्क मात्र मुद्रण गर्नुहोस् ।\n"
-"तपाईँले कुनै पनि फिल्टर परिभाषित गरेको नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
-
-#: printing/selectionpage.cpp:81
-msgid "Category &members"
-msgstr "सदस्यता कोटि"
-
-#: printing/selectionpage.cpp:83
-msgid ""
-"Only print contacts who are members of a category that is checked on the "
-"list to the left.\n"
-"This option is disabled if you have no categories."
-msgstr ""
-"सूचीको बायाँतिर जाँच गरिएका कोटिका सदस्य सम्पर्कको मात्र मुद्रण गर्नुहोस् ।\n"
-"तपाईँसँग कोटि नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
-
-#: printing/selectionpage.cpp:89
-msgid "Select a filter to decide which contacts to print."
-msgstr "कुन सम्पर्क मुद्रण गर्ने निर्णय गर्न फिल्टर चयन गर्नुहोस् ।"
-
-#: printing/selectionpage.cpp:95
-msgid "Check the categories whose members you want to print."
-msgstr "तपाईँले मुद्रण गर्न चाहेका सदस्यका कोटि चयन गर्नुहोस् ।"
-
 #: printing/ringbinderstyle.cpp:107
 msgid "Ring Binder Printing Style - Appearance"
 msgstr "रिङ बाइन्डर मुद्रण शैली - मोहडा"
@@ -893,19 +825,23 @@ msgstr "मुद्रण गर्दैछ"
 msgid "Done"
 msgstr "पूरा भयो"
 
-#: printing/ringbinderstyle.cpp:524
+#: printing/ringbinderstyle.cpp:523
 msgid "Printout for Ring Binders"
 msgstr "रिङ बाइन्डरका लागि मुद्रण गर्नुहोस्"
 
-#: printing/printingwizard.cpp:62
+#: printing/printingwizard.cpp:55
+msgid "Which contacts do you want to print?"
+msgstr "तपाईँ कुन सम्पर्क मुद्रण गर्न चाहनुहुन्छ ?"
+
+#: printing/printingwizard.cpp:59
 msgid "Choose Contacts to Print"
 msgstr "मुद्रण गरिने सम्पर्क रोज्नुहोस्"
 
-#: printing/printingwizard.cpp:69 printing/stylepage.cpp:111
+#: printing/printingwizard.cpp:65 printing/stylepage.cpp:121
 msgid "Choose Printing Style"
 msgstr "मुद्रण शैली रोज्नुहोस्"
 
-#: printing/printingwizard.cpp:139
+#: printing/printingwizard.cpp:130
 msgid "Print Progress"
 msgstr "मुद्रण प्रगति"
 
@@ -922,19 +858,19 @@ msgstr "केडीई ठेगाना पुस्तकद्वारा 
 msgid "Mike's Printing Style"
 msgstr "माइकको मुद्रण शैली"
 
-#: printing/stylepage.cpp:45
+#: printing/stylepage.cpp:51
 msgid "Ascending"
 msgstr "बढ्दोक्रम"
 
-#: printing/stylepage.cpp:46
+#: printing/stylepage.cpp:52
 msgid "Descending"
 msgstr "घट्दोक्रम"
 
-#: printing/stylepage.cpp:58
+#: printing/stylepage.cpp:64
 msgid "(No preview available.)"
 msgstr "(पूर्वावलोकन उपलब्ध छैन ।)"
 
-#: printing/stylepage.cpp:117
+#: printing/stylepage.cpp:127
 msgid ""
 "What should the print look like?\n"
 "KAddressBook has several printing styles, designed for different purposes.\n"
@@ -944,23 +880,23 @@ msgstr ""
 "केडीई ठेगाना पुस्तकमा, विभिन्न उद्देश्यका लागि डिजाइन गरिएका धेरै मुद्रण शैली छन् ।\n"
 "तपाईँको आवश्यकतासँग मिल्ने तलका शैली रोज्नुहोस् ।"
 
-#: printing/stylepage.cpp:122
+#: printing/stylepage.cpp:132
 msgid "Sorting"
 msgstr "क्रमबद्ध"
 
-#: printing/stylepage.cpp:129
+#: printing/stylepage.cpp:139
 msgid "Criterion:"
 msgstr "दायरा:"
 
-#: printing/stylepage.cpp:135
+#: printing/stylepage.cpp:145
 msgid "Order:"
 msgstr "क्रम:"
 
-#: printing/stylepage.cpp:143
+#: printing/stylepage.cpp:153
 msgid "Print Style"
 msgstr "मुद्रण शैली"
 
-#: printing/detailledstyle.cpp:296
+#: printing/detailledstyle.cpp:295
 msgid "Detailed Style"
 msgstr "विस्तृत विवरण शैली"
 
@@ -1567,6 +1503,24 @@ msgstr "अन्य फिल्ड"
 msgid "Encryption keys"
 msgstr "गुप्तिकरण कुञ्जी"
 
+#: contactselectionwidget.cpp:85
+#, fuzzy
+#| msgid "&All contacts"
+msgid "All contacts"
+msgstr "सबै सम्पर्क"
+
+#: contactselectionwidget.cpp:86
+#, fuzzy
+#| msgid "&Selected contacts"
+msgid "Selected contacts"
+msgstr "चयन गरिएका सम्पर्क"
+
+#: contactselectionwidget.cpp:87
+#, fuzzy
+#| msgid "&All contacts"
+msgid "All contacts from:"
+msgstr "सबै सम्पर्क"
+
 #: contactswitcher.cpp:35
 msgid "Previous"
 msgstr ""
@@ -1583,6 +1537,59 @@ msgstr "पाठ"
 #| msgid "%1 on %2"
 msgid "%1 out of %2"
 msgstr "%2 मा %1"
+
+#~ msgid ""
+#~ "If this box is checked, at least one page will be printed for every "
+#~ "letter group, regardless of whether entries exist for this letter group. "
+#~ "This is normally only useful in conjunction with the option 'fill pages "
+#~ "with empty address fields'."
+#~ msgstr ""
+#~ "यदि यो बाकस जाँच गरिएमा, यो चिठ्ठी समूहका लागि प्रविष्टि अवस्थित नभएता पनि, "
+#~ "प्रत्येक चिठ्ठी समूहका लागि कम्तिमा एक पृष्ठ मुद्रण गरिन्छ । सामान्यतया यो 'खाली "
+#~ "ठेगाना फिल्ड भएका पृष्ठ भर्नुहोस्' विकल्प भएका संयोजनमा उपयोगि हुन्छ ।"
+
+#~ msgid "Always print pages for all tabs"
+#~ msgstr "सबै ट्याबका लागि सधैँ पृष्ठहरू मुद्रण गर्नुहोस्"
+
+#~ msgid "Choose Which Contacts to Print"
+#~ msgstr "कुन सम्पर्क मुद्रण गर्ने रोज्नुहोस्"
+
+#~ msgid "Print the entire address book"
+#~ msgstr "पूरै ठेगाना पुस्तक मुद्रण गर्नुहोस्"
+
+#~ msgid ""
+#~ "Only print contacts selected in KAddressBook.\n"
+#~ "This option is disabled if no contacts are selected."
+#~ msgstr ""
+#~ "केडीई ठेगाना पुस्तकमा चयन गरिएका सम्पर्क मात्र मुद्रण गर्नुहोस् ।\n"
+#~ "सम्पर्क चयन नगरिएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid "Contacts matching &filter"
+#~ msgstr "सम्पर्क मिल्ने फिल्टर"
+
+#~ msgid ""
+#~ "Only print contacts matching the selected filter.\n"
+#~ "This option is disabled if you have not defined any filters."
+#~ msgstr ""
+#~ "चयन गरिएका फिल्टरमा मिल्ने सम्पर्क मात्र मुद्रण गर्नुहोस् ।\n"
+#~ "तपाईँले कुनै पनि फिल्टर परिभाषित गरेको नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid "Category &members"
+#~ msgstr "सदस्यता कोटि"
+
+#~ msgid ""
+#~ "Only print contacts who are members of a category that is checked on the "
+#~ "list to the left.\n"
+#~ "This option is disabled if you have no categories."
+#~ msgstr ""
+#~ "सूचीको बायाँतिर जाँच गरिएका कोटिका सदस्य सम्पर्कको मात्र मुद्रण गर्नुहोस् ।\n"
+#~ "तपाईँसँग कोटि नभएमा यो विकल्प अक्षम पारिएको हुन्छ ।"
+
+#~ msgid "Select a filter to decide which contacts to print."
+#~ msgstr "कुन सम्पर्क मुद्रण गर्ने निर्णय गर्न फिल्टर चयन गर्नुहोस् ।"
+
+#~ msgid "Check the categories whose members you want to print."
+#~ msgstr "तपाईँले मुद्रण गर्न चाहेका सदस्यका कोटि चयन गर्नुहोस् ।"
 
 #, fuzzy
 #~| msgid "&All contacts"
@@ -3007,9 +3014,6 @@ msgstr "%2 मा %1"
 #~ msgctxt "@item:inlistbox Sort order"
 #~ msgid "Descending"
 #~ msgstr "घट्दोक्रम"
-
-#~ msgid "Which contacts do you want to export?"
-#~ msgstr "तपाईँ कुन सम्पर्क निर्यात गर्न चाहनुहुन्छ ?"
 
 #, fuzzy
 #~| msgid "Selection"
