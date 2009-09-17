@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-16 07:09+0200\n"
+"POT-Creation-Date: 2009-09-17 06:25+0200\n"
 "PO-Revision-Date: 2007-09-13 13:45+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -99,7 +99,7 @@ msgstr "%1@%2 (साझेदार गरिएको डेस्कटप)"
 msgid "Address already in use"
 msgstr ""
 
-#: krfbserver.cpp:299
+#: krfbserver.cpp:302
 msgid ""
 "Your X11 Server does not support the required XTest extension version 2.2. "
 "Sharing your desktop is not possible."
@@ -107,7 +107,7 @@ msgstr ""
 "तपाईँको X11 सर्भरले आवश्यक X परीक्षण विस्तार संस्करण २.२ समर्थन गर्दैन । तपाईँको डेस्कटप "
 "साझेदारी सम्भव छैन ।"
 
-#: krfbserver.cpp:300
+#: krfbserver.cpp:303
 msgid "Desktop Sharing Error"
 msgstr "डेस्कटप साझेदारी त्रुटि"
 
@@ -115,7 +115,7 @@ msgstr "डेस्कटप साझेदारी त्रुटि"
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "केडीई डेस्कटप साझेदार गर्न भीएनसी-मिल्दोजुल्दो सर्भर"
 
-#: main.cpp:46 trayicon.cpp:77 trayicon.cpp:92
+#: main.cpp:46
 msgid "Desktop Sharing"
 msgstr "डेस्कटप साझेदारी"
 
@@ -373,25 +373,27 @@ msgstr ""
 "अनुमान गर्नकोलागि प्रयास गर्दछ, तर तेस्तो गर्न संधै असफल हुन्छ। यदि तपाइँको कम्प्यूटर "
 "फायरवाल पछाडि हुन्छ भने यो अन्य कम्प्यूटरहरूको लागि पहुँचयोग्य हुँदैन वा फरक ठेगाना हुन सक्छन्।"
 
-#. i18n: file: configsecurity.ui:16
+#. i18n: file: configsecurity.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
 #: rc.cpp:3
 msgid "Allow uninvited connections"
 msgstr "निमन्त्रणा नगरिएको जडान अनुमति दिनुहोस्"
 
-#. i18n: file: configsecurity.ui:23
+#. i18n: file: configsecurity.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
 #: rc.cpp:6
 msgid "Allow remote connections to control your desktop"
 msgstr "तपाइँको डेस्कटप नियन्त्रण गर्न टाढाको जडान अनुमति दिनुहोस्"
 
-#. i18n: file: configsecurity.ui:36
+#. i18n: file: configsecurity.ui:37
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
 #: rc.cpp:9
-msgid "Ask before accepting an uninvited connection"
+#, fuzzy
+#| msgid "Ask before accepting an uninvited connection"
+msgid "Ask before accepting connections"
 msgstr "स्वीकार गर्नु अघि निमन्त्रणा गरीएका जडान सोध्नुहोस्"
 
-#. i18n: file: configsecurity.ui:49
+#. i18n: file: configsecurity.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:12
 #, fuzzy
@@ -762,21 +764,23 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Shyam krishna bal<shyamkrishna_bal@yahoo.com>"
 
-#: trayicon.cpp:38 trayicon.cpp:90
+#: trayicon.cpp:39 trayicon.cpp:91
 msgid "Desktop Sharing - disconnected"
 msgstr "डेस्कटप साझेदारी - विच्छेदन गरियो"
 
-#: trayicon.cpp:47
+#: trayicon.cpp:48
 msgid "Enable Remote Control"
 msgstr "टाढाको नियन्त्रण सक्षम पार्नुहोस्"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:49
 msgid "Disable Remote Control"
 msgstr "टाढाको नियन्त्रण अक्षम पार्नुहोस्"
 
-#: trayicon.cpp:78
-msgid "The remote user has been authenticated and is now connected."
-msgstr "टाढाको प्रयोगकर्ता प्रमाणीकरण भयो र अहिले जडान गरियो ।"
+#: trayicon.cpp:79
+#, fuzzy, kde-format
+#| msgid "The remote user has closed the connection."
+msgid "The remote user %1 is now connected."
+msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
 
 #: trayicon.cpp:81
 #, kde-format
@@ -786,6 +790,9 @@ msgstr "डेस्कटप साझेदारी - %1 सँग जडा�
 #: trayicon.cpp:93
 msgid "The remote user has closed the connection."
 msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
+
+#~ msgid "The remote user has been authenticated and is now connected."
+#~ msgstr "टाढाको प्रयोगकर्ता प्रमाणीकरण भयो र अहिले जडान गरियो ।"
 
 #~ msgid "Attepted uninvited connection from %1: connection refused"
 #~ msgstr "%1 बाट निमन्त्रणा नगरिएको जडान स्वीकार गरियो:जडान अस्विकृत भयो"
