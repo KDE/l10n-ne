@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-17 06:47+0200\n"
+"POT-Creation-Date: 2009-09-19 06:10+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -975,8 +975,9 @@ msgstr "फाइल गुण"
 
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:107
 #: libs/imageproperties/imagepropertiessidebar.cpp:85
-#: showfoto/setup/setup.cpp:107 utilities/setup/setup.cpp:178
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:157
+#: showfoto/setup/setup.cpp:107
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:157
+#: utilities/setup/setup.cpp:178
 msgid "Metadata"
 msgstr "मेटाडेटा"
 
@@ -1001,7 +1002,7 @@ msgstr "विषयवस्तु"
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
 #: libs/widgets/metadata/metadataselector.cpp:233 digikam/digikamapp.cpp:2494
-#: utilities/imageeditor/editor/editorwindow.cpp:1949
+#: utilities/imageeditor/editor/editorwindow.cpp:1989
 #: utilities/queuemanager/queuemgrwindow.cpp:714
 #: utilities/lighttable/lighttablewindow.cpp:1621
 #: utilities/cameragui/cameraui.cpp:2264
@@ -4960,12 +4961,12 @@ msgstr "उपलब्ध छैन"
 
 #: libs/widgets/metadata/metadataselector.cpp:96
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:123
-#: utilities/setup/setupcollectionview.cpp:773
+#: utilities/setup/setupcollectionview.cpp:794
 msgid "Name"
 msgstr "नाम"
 
 #: libs/widgets/metadata/metadataselector.cpp:231 digikam/digikamapp.cpp:1016
-#: utilities/imageeditor/editor/editorwindow.cpp:374
+#: utilities/imageeditor/editor/editorwindow.cpp:381
 #: utilities/cameragui/cameraui.cpp:333
 #, fuzzy
 #| msgid "Select &All"
@@ -4998,12 +4999,87 @@ msgstr "IPTC रेकर्ड"
 msgid "XMP viewer"
 msgstr ""
 
-#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:77
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:79
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "<Profile Description> (<File Name>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:148
+#, fuzzy
+#| msgid ""
+#| "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to "
+#| "be compressed or expanded to fill the gamut of the destination device, so "
+#| "that gray balance is preserved but colorimetric accuracy may not be "
+#| "preserved.</p><p>In other words, if certain colors in an image fall "
+#| "outside of the range of colors that the output device can render, the "
+#| "picture intent will cause all the colors in the image to be adjusted so "
+#| "that the every color in the image falls within the range that can be "
+#| "rendered and so that the relationship between colors is preserved as much "
+#| "as possible.</p><p>This intent is most suitable for display of "
+#| "photographs and images, and is the default intent.</p></"
+#| "li><li><p><b>Absolute Colorimetric intent</b> causes any colors that fall "
+#| "outside the range that the output device can render are adjusted to the "
+#| "closest color that can be rendered, while all other colors are left "
+#| "unchanged.</p><p>This intent preserves the white point and is most "
+#| "suitable for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
+#| "li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
+#| "colors that fall outside the range that the output device can render are "
+#| "adjusted to the closest color that can be rendered, while all other "
+#| "colors are left unchanged. Proof intent does not preserve the white point."
+#| "</p></li><li><p><b>Saturation intent</b> preserves the saturation of "
+#| "colors in the image at the possible expense of hue and lightness.</"
+#| "p><p>Implementation of this intent remains somewhat problematic, and the "
+#| "ICC is still working on methods to achieve the desired effects.</"
+#| "p><p>This intent is most suitable for business graphics such as charts, "
+#| "where it is more important that the colors be vivid and contrast well "
+#| "with each other rather than a specific color.</p></li></ul>"
+msgid ""
+"<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to be "
+"compressed or expanded to fill the gamut of the destination device, so that "
+"gray balance is preserved but colorimetric accuracy may not be preserved.</"
+"p><p>In other words, if certain colors in an image fall outside of the range "
+"of colors that the output device can render, the image intent will cause all "
+"the colors in the image to be adjusted so that the every color in the image "
+"falls within the range that can be rendered and so that the relationship "
+"between colors is preserved as much as possible.</p><p>This intent is most "
+"suitable for display of photographs and images, and is the default intent.</"
+"p></li><li><p><b>Absolute Colorimetric intent</b> causes any colors that "
+"fall outside the range that the output device can render to be adjusted to "
+"the closest color that can be rendered, while all other colors are left "
+"unchanged.</p><p>This intent preserves the white point and is most suitable "
+"for spot colors (Pantone, TruMatch, logo colors, ....)</p></"
+"li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
+"colors that fall outside the range that the output device can render are "
+"adjusted to the closest color that can be rendered, while all other colors "
+"are left unchanged. Proof intent does not preserve the white point.</p></"
+"li><li><p><b>Saturation intent</b> preserves the saturation of colors in the "
+"image at the possible expense of hue and lightness.</p><p>Implementation of "
+"this intent remains somewhat problematic, and the ICC is still working on "
+"methods to achieve the desired effects.</p><p>This intent is most suitable "
+"for business graphics such as charts, where it is more important that the "
+"colors be vivid and contrast well with each other rather than a specific "
+"color.</p></li></ul>"
+msgstr ""
+"<ul><li><p><b>बोधात्मक इन्टेन्ट</b>बोधात्मक इन्टेन्टको कारणले गन्तव्य मिडियाको गामुट भर्न "
+"छविको पूरा गामुट सङ्कुचन वा विस्तारित हुन्छ, त्यसैले ग्रे सन्तुलन सुरक्षित हुन्छ तर कलरमेट्रिक "
+"शुद्धता सुरक्षित हुँदैन ।</p><p>अर्को शब्दमा, छविको केहि रङहरू निर्गत यन्त्रले रेन्डर गर्न सक्ने "
+"रङको दायराबाट बाहिर परेमा, तस्विर इन्टेन्टले गर्दा छविमा सबै रङ समायोजन हुने हुन्छ जसले "
+"गर्दा रङहरू बिचको सम्बन्ध सम्भव भएसम्म सुरक्षित गरिन्छ ।</p><p>यो इन्टेन्ट फोटो र छवि "
+"प्रर्दशन गर्नका लागि उपयुकत हुन्छ र यो पूर्वनिर्धारित इन्टेन्ट पनि हो ।<p></"
+"li><li><p><b> पूर्ण कलरमेट्रिक इन्टेन्ट</b>ले निर्गत यन्त्रले रेन्डर गर्न सक्ने दायरा भन्दा "
+"बाहिरको रङलाई त्यसले रेन्डर गर्ने सक्ने नजिकको रङमा समायोजन गर्दछ, जबकी अन्य रङहरू "
+"परिवर्तन गर्दैन ।</p><p>यो इन्टेन्टले सेतो बिन्दु सुरक्षित राख्दछ र स्पट रङ (प्यानटोन,"
+"ट्रुम्याच, लोगो रङ, ...) मा उपयुक्त हुन्छ ।</p></li><li><p><b>अपूर्ण कलरमेट्रिक इन्टेन्ट</"
+"b> निर्गत यन्त्रले रेन्डर गर्न सक्ने दायरा भन्दा बाहिरको रङलाई त्यसले रेन्डर गर्ने सक्ने "
+"नजिकको रङमा समायोजन गर्दछ, जबकी अन्य रङहरू परिवर्तन गर्दैन भनी परिभाषित गरिन्छ । "
+"प्रुफ इन्टेन्टले सेतो बिन्दु सुरक्षित गर्दैन ।</p></li><li><p><b>स्याचुरेसन इन्टेन्टले ह्यु र "
+"प्रकाशको संभव नोक्सानी गरेर छविमा रङको स्याचुरेसन संरक्षण गर्दछ ।</p><p>यो इन्टेन्ट "
+"कार्यान्वयन पनि केहि मात्रामा अनिश्चित हुन्छ र आवश्यक प्रभाव प्राप्त गर्नका लागि ICC अझै "
+"पनि सोही विधिमा काम गर्दैछ ।</p><p> यो इन्टेन्टले निर्दिष्ट रङ भन्दा पनि एक अर्को रङमा "
+"धमिलो र व्यतिरेक राम्रोसँग गर्ने हुँदा, चित्रपट जस्ता व्यापारिक ग्राफिक्सका लागि यो बढि "
+"उपयुक्त हुन्छ ।</p></li></ul>"
 
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:798
 #: libs/widgets/common/histogramwidget.cpp:519
@@ -5688,7 +5764,7 @@ msgstr "मौलिक"
 #: libs/widgets/imageplugins/imageregionwidget.cpp:223
 #: libs/widgets/imageplugins/imageregionwidget.cpp:258
 #: utilities/queuemanager/queuelist.cpp:244
-#: utilities/queuemanager/queuesettingsview.cpp:100
+#: utilities/queuemanager/queuesettingsview.cpp:101
 msgid "Target"
 msgstr "लक्ष्य"
 
@@ -6082,7 +6158,7 @@ msgid "Add to Existing Queue"
 msgstr ""
 
 #: digikam/contextmenuhelper.cpp:590 digikam/digikamapp.cpp:820
-#: showfoto/showfoto.cpp:572 utilities/imageeditor/editor/editorwindow.cpp:325
+#: showfoto/showfoto.cpp:572 utilities/imageeditor/editor/editorwindow.cpp:332
 #: utilities/lighttable/lighttablepreview.cpp:364
 #: utilities/lighttable/lighttablewindow.cpp:443
 #, fuzzy, kde-format
@@ -7654,7 +7730,7 @@ msgid "Next Image"
 msgstr "छवि बचत गर्नुहोस्"
 
 #: digikam/digikamapp.cpp:561 digikam/digikamapp.cpp:567
-#: utilities/imageeditor/editor/editorwindow.cpp:556
+#: utilities/imageeditor/editor/editorwindow.cpp:571
 #: utilities/lighttable/lighttablewindow.cpp:591
 #: utilities/cameragui/cameraui.cpp:499
 #, fuzzy
@@ -7687,7 +7763,7 @@ msgid "Paste Selected Album Items"
 msgstr "चयन गरेको एल्बम मेट्ने बारेमा"
 
 #: digikam/digikamapp.cpp:609
-#: utilities/imageeditor/editor/editorwindow.cpp:517
+#: utilities/imageeditor/editor/editorwindow.cpp:532
 #: utilities/queuemanager/queuemgrwindow.cpp:410
 #: utilities/lighttable/lighttablewindow.cpp:516
 #: utilities/cameragui/cameraui.cpp:456
@@ -8005,13 +8081,13 @@ msgid "Rotated Right / Vert. Flipped"
 msgstr "९० डिग्रिमा घुमाइएको / ठाडो तरिकाले घुमाइएको"
 
 #: digikam/digikamapp.cpp:1023
-#: utilities/imageeditor/editor/editorwindow.cpp:379
+#: utilities/imageeditor/editor/editorwindow.cpp:386
 #: utilities/cameragui/cameraui.cpp:340
 msgid "Select None"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
 #: digikam/digikamapp.cpp:1055
-#: utilities/imageeditor/editor/editorwindow.cpp:394
+#: utilities/imageeditor/editor/editorwindow.cpp:401
 #: utilities/lighttable/lighttablewindow.cpp:485
 #, fuzzy
 #| msgid "Zoom Out"
@@ -8019,14 +8095,14 @@ msgid "Zoom to 100%"
 msgstr "जुम घटाउनुहोस्"
 
 #: digikam/digikamapp.cpp:1062
-#: utilities/imageeditor/editor/editorwindow.cpp:399
+#: utilities/imageeditor/editor/editorwindow.cpp:406
 #: utilities/lighttable/lighttablepreview.cpp:361
 #: utilities/lighttable/lighttablewindow.cpp:490
 msgid "Fit to &Window"
 msgstr ""
 
 #: digikam/digikamapp.cpp:1074
-#: utilities/imageeditor/editor/editorwindow.cpp:443
+#: utilities/imageeditor/editor/editorwindow.cpp:450
 #: utilities/lighttable/lighttablepreview.cpp:362
 #: utilities/lighttable/lighttablewindow.cpp:501
 #: utilities/slideshow/slideshow.cpp:137
@@ -8046,7 +8122,7 @@ msgid "With All Sub-Albums"
 msgstr "मितिमा आधारित सहायक एल्बम"
 
 #: digikam/digikamapp.cpp:1110
-#: utilities/imageeditor/editor/editorwindow.cpp:536
+#: utilities/imageeditor/editor/editorwindow.cpp:551
 #: utilities/lighttable/lighttablewindow.cpp:534
 #: utilities/cameragui/cameraui.cpp:474
 #, fuzzy
@@ -8055,7 +8131,7 @@ msgid "Supported RAW Cameras"
 msgstr "माउन्ट गरिएको क्यामेरा"
 
 #: digikam/digikamapp.cpp:1116
-#: utilities/imageeditor/editor/editorwindow.cpp:540
+#: utilities/imageeditor/editor/editorwindow.cpp:555
 #: utilities/cameragui/cameraui.cpp:478
 #, fuzzy
 #| msgid "Comments:"
@@ -8073,7 +8149,7 @@ msgid "Donate..."
 msgstr "पैसा अनुदान दिनुहोस्..."
 
 #: digikam/digikamapp.cpp:1143
-#: utilities/imageeditor/editor/editorwindow.cpp:532
+#: utilities/imageeditor/editor/editorwindow.cpp:547
 #: utilities/queuemanager/queuemgrwindow.cpp:424
 #: utilities/lighttable/lighttablewindow.cpp:530
 #: utilities/cameragui/cameraui.cpp:470
@@ -8328,7 +8404,7 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:2534 digikam/digikamapp.cpp:2557
 #: showfoto/showfoto.cpp:1105
-#: utilities/imageeditor/editor/editorwindow.cpp:1162
+#: utilities/imageeditor/editor/editorwindow.cpp:1164
 #: utilities/cameragui/cameraui.cpp:1871
 #, fuzzy
 #| msgid "Rating"
@@ -8681,8 +8757,8 @@ msgstr ""
 "सिक्न सक्नुहुन्छ ।</p>"
 
 #: showfoto/setup/setupmetadata.cpp:158 utilities/setup/setupmetadata.cpp:244
-#: utilities/setup/setupicc.cpp:522
-#: utilities/queuemanager/queuesettingsview.cpp:134
+#: utilities/setup/setupicc.cpp:496
+#: utilities/queuemanager/queuesettingsview.cpp:135
 #, fuzzy
 #| msgid "Behaviour"
 msgid "Behavior"
@@ -9388,7 +9464,7 @@ msgstr "छवि"
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: utilities/cameragui/cameraui.rc:16
 #. i18n: ectx: Menu (Edit)
-#: rc.cpp:14 rc.cpp:41 rc.cpp:257 rc.cpp:386
+#: rc.cpp:14 rc.cpp:41 rc.cpp:281 rc.cpp:386
 #, fuzzy
 #| msgid "&Edit..."
 msgid "&Edit"
@@ -9406,7 +9482,7 @@ msgstr "सम्पादन..."
 #. i18n: ectx: Menu (View)
 #. i18n: file: utilities/cameragui/cameraui.rc:42
 #. i18n: ectx: Menu (View)
-#: rc.cpp:17 rc.cpp:44 rc.cpp:260 rc.cpp:332 rc.cpp:347 rc.cpp:392
+#: rc.cpp:17 rc.cpp:44 rc.cpp:284 rc.cpp:356 rc.cpp:371 rc.cpp:392
 #, fuzzy
 #| msgid "View..."
 msgid "&View"
@@ -9416,7 +9492,7 @@ msgstr "दृश्य..."
 #. i18n: ectx: Menu (Tools)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:20
 #. i18n: ectx: Menu (Tools)
-#: rc.cpp:20 rc.cpp:329
+#: rc.cpp:20 rc.cpp:353
 #, fuzzy
 #| msgid "&Colors"
 msgid "&Tools"
@@ -9440,7 +9516,7 @@ msgstr "निर्यात"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: showfoto/showfotoui.rc:87
 #. i18n: ectx: Menu (settings)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:84
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:87
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:41
 #. i18n: ectx: Menu (settings)
@@ -9448,7 +9524,7 @@ msgstr "निर्यात"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/cameragui/cameraui.rc:62
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:29 rc.cpp:65 rc.cpp:281 rc.cpp:338 rc.cpp:353 rc.cpp:398
+#: rc.cpp:29 rc.cpp:65 rc.cpp:305 rc.cpp:362 rc.cpp:377 rc.cpp:398
 #, fuzzy
 #| msgid "Settings"
 msgid "&Settings"
@@ -9458,7 +9534,7 @@ msgstr "सेटिङ"
 #. i18n: ectx: Menu (help)
 #. i18n: file: showfoto/showfotoui.rc:78
 #. i18n: ectx: Menu (help)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:74
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:77
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:31
 #. i18n: ectx: Menu (help)
@@ -9466,7 +9542,7 @@ msgstr "सेटिङ"
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/cameragui/cameraui.rc:52
 #. i18n: ectx: Menu (help)
-#: rc.cpp:32 rc.cpp:62 rc.cpp:278 rc.cpp:335 rc.cpp:350 rc.cpp:395
+#: rc.cpp:32 rc.cpp:62 rc.cpp:302 rc.cpp:359 rc.cpp:374 rc.cpp:395
 #, fuzzy
 #| msgid "&Del"
 msgid "&Help"
@@ -9532,7 +9608,7 @@ msgstr "मेट्नुहोस्"
 #. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: imageplugins/inpainting/digikamimageplugin_inpainting_ui.rc:13
 #. i18n: ectx: ToolBar (ToolBar)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:98
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:101
 #. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:55
 #. i18n: ectx: ToolBar (ToolBar)
@@ -9544,8 +9620,8 @@ msgstr "मेट्नुहोस्"
 #: rc.cpp:107 rc.cpp:113 rc.cpp:119 rc.cpp:125 rc.cpp:131 rc.cpp:137
 #: rc.cpp:143 rc.cpp:149 rc.cpp:155 rc.cpp:161 rc.cpp:167 rc.cpp:173
 #: rc.cpp:179 rc.cpp:185 rc.cpp:191 rc.cpp:197 rc.cpp:203 rc.cpp:209
-#: rc.cpp:215 rc.cpp:221 rc.cpp:239 rc.cpp:245 rc.cpp:251 rc.cpp:284
-#: rc.cpp:341 rc.cpp:356 rc.cpp:401
+#: rc.cpp:215 rc.cpp:221 rc.cpp:239 rc.cpp:245 rc.cpp:251 rc.cpp:308
+#: rc.cpp:365 rc.cpp:380 rc.cpp:401
 msgid "Main Toolbar"
 msgstr ""
 
@@ -9555,7 +9631,7 @@ msgstr ""
 #. i18n: ectx: Menu (File)
 #. i18n: file: utilities/lighttable/lighttablewindowui.rc:6
 #. i18n: ectx: Menu (File)
-#: rc.cpp:38 rc.cpp:254 rc.cpp:344
+#: rc.cpp:38 rc.cpp:278 rc.cpp:368
 #, fuzzy
 #| msgid "&Title:"
 msgid "&File"
@@ -9575,10 +9651,10 @@ msgstr "शीर्षक:"
 #. i18n: ectx: Menu (Color)
 #. i18n: file: imageplugins/coreplugin/digikamimageplugin_core_ui.rc:6
 #. i18n: ectx: Menu (Color)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:51
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:54
 #. i18n: ectx: Menu (Color)
 #: rc.cpp:47 rc.cpp:86 rc.cpp:92 rc.cpp:110 rc.cpp:122 rc.cpp:140 rc.cpp:224
-#: rc.cpp:263
+#: rc.cpp:287
 #, fuzzy
 #| msgid "&Colors"
 msgid "&Color"
@@ -9600,10 +9676,10 @@ msgstr "रङ"
 #. i18n: ectx: Menu (Enhance)
 #. i18n: file: imageplugins/inpainting/digikamimageplugin_inpainting_ui.rc:6
 #. i18n: ectx: Menu (Enhance)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:54
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:57
 #. i18n: ectx: Menu (Enhance)
 #: rc.cpp:50 rc.cpp:71 rc.cpp:80 rc.cpp:98 rc.cpp:170 rc.cpp:188 rc.cpp:230
-#: rc.cpp:248 rc.cpp:266
+#: rc.cpp:248 rc.cpp:290
 #, fuzzy
 #| msgid "C&ancel"
 msgid "Enh&ance"
@@ -9621,9 +9697,9 @@ msgstr "रद्द गर्नुहोस्"
 #. i18n: ectx: Menu (Transform)
 #. i18n: file: imageplugins/sheartool/digikamimageplugin_sheartool_ui.rc:6
 #. i18n: ectx: Menu (Transform)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:57
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:60
 #. i18n: ectx: Menu (Transform)
-#: rc.cpp:53 rc.cpp:176 rc.cpp:206 rc.cpp:212 rc.cpp:233 rc.cpp:242 rc.cpp:269
+#: rc.cpp:53 rc.cpp:176 rc.cpp:206 rc.cpp:212 rc.cpp:233 rc.cpp:242 rc.cpp:293
 #, fuzzy
 #| msgid "&Transform"
 msgid "Tra&nsform"
@@ -9639,9 +9715,9 @@ msgstr "रूपान्तरण"
 #. i18n: ectx: Menu (Decorate)
 #. i18n: file: imageplugins/superimpose/digikamimageplugin_superimpose_ui.rc:6
 #. i18n: ectx: Menu (Decorate)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:68
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:71
 #. i18n: ectx: Menu (Decorate)
-#: rc.cpp:56 rc.cpp:128 rc.cpp:134 rc.cpp:158 rc.cpp:218 rc.cpp:272
+#: rc.cpp:56 rc.cpp:128 rc.cpp:134 rc.cpp:158 rc.cpp:218 rc.cpp:296
 #, fuzzy
 #| msgid "&Rotate"
 msgid "&Decorate"
@@ -9667,10 +9743,10 @@ msgstr "घुमाउनुहोस्"
 #. i18n: ectx: Menu (Filters)
 #. i18n: file: imageplugins/coreplugin/digikamimageplugin_core_ui.rc:38
 #. i18n: ectx: Menu (Filters)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:71
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:74
 #. i18n: ectx: Menu (Filters)
 #: rc.cpp:59 rc.cpp:104 rc.cpp:116 rc.cpp:146 rc.cpp:152 rc.cpp:164 rc.cpp:182
-#: rc.cpp:194 rc.cpp:200 rc.cpp:236 rc.cpp:275
+#: rc.cpp:194 rc.cpp:200 rc.cpp:236 rc.cpp:299
 #, fuzzy
 #| msgid "Filters"
 msgid "F&ilters"
@@ -9690,15 +9766,71 @@ msgstr "आयाम:"
 msgid "&Depth"
 msgstr "गहिराइ"
 
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, DateParserDialogWidget)
+#: rc.cpp:254
+#, fuzzy
+#| msgid "Image Date"
+msgid "Form"
+msgstr "छवि मिति"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:257 utilities/cameragui/cameraui.cpp:219
+msgid "Date format:"
+msgstr "मिति ढाँचा:"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:60
+#. i18n: ectx: property (text), widget (QLabel, exampleLabel)
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:70
+#. i18n: ectx: property (text), widget (QLabel, dateFormatLink)
+#: rc.cpp:260 rc.cpp:263
+#, fuzzy
+#| msgid "Nature"
+msgid "TextLabel"
+msgstr "प्रकृति"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:82
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:266
+#, fuzzy
+#| msgid "Source:"
+msgid "Source"
+msgstr "स्रोत:"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:88
+#. i18n: ectx: property (text), widget (QRadioButton, fromImageBtn)
+#: rc.cpp:269
+#, fuzzy
+#| msgid "&Sort Images"
+msgid "From Image"
+msgstr "छवि क्रमबद्ध गर्नुहोस्"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, fixedDateBtn)
+#: rc.cpp:272
+#, fuzzy
+#| msgid "Image Date"
+msgid "Fixed Date"
+msgstr "छवि मिति"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:116
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:275
+#, fuzzy
+#| msgid "&Title:"
+msgid "Time:"
+msgstr "शीर्षक:"
+
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:287
+#: rc.cpp:311
 msgid "Image Settings"
 msgstr "छवि सेटिङ"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:290
+#: rc.cpp:314
 #, fuzzy
 #| msgid "Image position:"
 msgid "Image Position"
@@ -9706,7 +9838,7 @@ msgstr "छवि स्थान:"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintAutoRotate)
-#: rc.cpp:293
+#: rc.cpp:317
 #, fuzzy
 #| msgid "&Auto-rotate page"
 msgid "Auto rotate"
@@ -9714,7 +9846,7 @@ msgstr "स्वत: परिक्रमण पृष्ठ"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:74
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:296
+#: rc.cpp:320
 #, fuzzy
 #| msgid "Scaling"
 msgid "Scaling"
@@ -9722,7 +9854,7 @@ msgstr "मापन"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:299
+#: rc.cpp:323
 #, fuzzy
 #| msgid "No such tag"
 msgid "&No scaling"
@@ -9730,7 +9862,7 @@ msgstr "त्यस्तो ट्याग छैन"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:99
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:302
+#: rc.cpp:326
 #, fuzzy
 #| msgid "Print image creation date"
 msgid "&Fit image to page"
@@ -9738,108 +9870,52 @@ msgstr "छवि सिर्जना मिति मुद्रण गर�
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:305
+#: rc.cpp:329
 msgid "Enlarge smaller images"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:161
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:308
+#: rc.cpp:332
 msgid "&Scale to:"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:202
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:311
+#: rc.cpp:335
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:229
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:314
+#: rc.cpp:338
 msgid "Millimeters"
 msgstr "मिलिमिटर"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:234
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:317
+#: rc.cpp:341
 msgid "Centimeters"
 msgstr "सेन्टिमिटर"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:239
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:320
+#: rc.cpp:344
 msgid "Inches"
 msgstr "इन्च"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:250
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:323
+#: rc.cpp:347
 msgid "Keep ratio"
 msgstr "अनुपात राख्नुहोस्"
 
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:6
 #. i18n: ectx: Menu (Queues)
-#: rc.cpp:326
+#: rc.cpp:350
 msgid "&Queues"
 msgstr ""
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, DateParserDialogWidget)
-#: rc.cpp:359
-#, fuzzy
-#| msgid "Image Date"
-msgid "Form"
-msgstr "छवि मिति"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:362 utilities/cameragui/cameraui.cpp:219
-msgid "Date format:"
-msgstr "मिति ढाँचा:"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:60
-#. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:70
-#. i18n: ectx: property (text), widget (QLabel, dateFormatLink)
-#: rc.cpp:365 rc.cpp:368
-#, fuzzy
-#| msgid "Nature"
-msgid "TextLabel"
-msgstr "प्रकृति"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:371
-#, fuzzy
-#| msgid "Source:"
-msgid "Source"
-msgstr "स्रोत:"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:88
-#. i18n: ectx: property (text), widget (QRadioButton, fromImageBtn)
-#: rc.cpp:374
-#, fuzzy
-#| msgid "&Sort Images"
-msgid "From Image"
-msgstr "छवि क्रमबद्ध गर्नुहोस्"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:98
-#. i18n: ectx: property (text), widget (QRadioButton, fixedDateBtn)
-#: rc.cpp:377
-#, fuzzy
-#| msgid "Image Date"
-msgid "Fixed Date"
-msgstr "छवि मिति"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:116
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:380
-#, fuzzy
-#| msgid "&Title:"
-msgid "Time:"
-msgstr "शीर्षक:"
 
 #. i18n: file: utilities/cameragui/cameraui.rc:6
 #. i18n: ectx: Menu (Device)
@@ -10595,7 +10671,7 @@ msgid ""
 msgstr ""
 
 #: imageplugins/hotpixels/hotpixelstool.cpp:177
-#: utilities/imageeditor/editor/editorwindow.cpp:1326
+#: utilities/imageeditor/editor/editorwindow.cpp:1328
 msgid "Loading: "
 msgstr "लोड हुँदैछ: "
 
@@ -12030,7 +12106,7 @@ msgid "Manual Adjustment"
 msgstr "HSL समायोजन"
 
 #: imageplugins/freerotation/freerotationtool.cpp:273
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:111
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:111
 #: utilities/cameragui/cameraui.cpp:297
 msgid "Settings"
 msgstr "सेटिङ"
@@ -13971,7 +14047,7 @@ msgstr "क्षमा गर्नुहोस्, त्यहाँ चय�
 
 #: imageplugins/coreplugin/iccprooftool.cpp:1000
 #: imageplugins/coreplugin/iccprooftool.cpp:1013
-#: utilities/setup/setupicc.cpp:829
+#: utilities/setup/setupicc.cpp:783
 msgid "Profile Error"
 msgstr "प्रोफाइल त्रुटि"
 
@@ -15516,6 +15592,314 @@ msgstr ""
 "</table>\n"
 "</p>\n"
 
+#: utilities/advancedrename/advancedrenamewidget.cpp:194
+#, fuzzy
+#| msgid "Modified:"
+msgid "Modifiers"
+msgstr "परिमार्जन:"
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:199
+msgid "You can not apply modifiers to tokens marked with '(x)'."
+msgstr ""
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:338
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Renaming Options"
+msgstr "फाइल पुन: नामकरण विकल्प"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:41
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "Directory Name"
+msgstr "नयाँ छवि फाइलनाम"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:45
+#, fuzzy
+#| msgid "Count:"
+msgctxt "current directory name"
+msgid "Current"
+msgstr "गणना:"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:46
+msgid "current directory name"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:48
+msgctxt "directory name"
+msgid "Parent Directory Name"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:49
+msgid ""
+"directory name of the parent, additional '.' characters move up <br/>in the "
+"directory hierarchy"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:75
+msgid "Add Metadata Keywords"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:80
+msgid "Keyword separator:"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:120
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata Keywords"
+msgstr "मेटाडेटा"
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:155
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata..."
+msgstr "मेटाडेटा"
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:158
+msgid "add metadata (use the quick access dialog for keycodes)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:97
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Add Date & Time"
+msgstr "मिति र समय थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:109
+msgid "Enter custom date format"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:168
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time..."
+msgstr "मिति र समय थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:172
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time"
+msgstr "मिति र समय थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:173
+#, fuzzy
+#| msgid "No Tone Filter"
+msgid "date and time (standard format)"
+msgstr "टोन फिल्टर होइन"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:175
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time (key)"
+msgstr "मिति र समय थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:176
+msgid "date and time (key = ISO|Text|Locale)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:178
+msgid "Date && Time (custom format)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:179
+#, fuzzy
+#| msgid "No Tone Filter"
+msgid "date and time"
+msgstr "टोन फिल्टर होइन"
+
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:36
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:38
+#, fuzzy
+#| msgid "Add Camera Name"
+msgid "Camera Name"
+msgstr "क्यामेरा नाम थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:38
+#, fuzzy
+#| msgid "Camera filenames"
+msgid "camera name"
+msgstr "क्यामेरा फाइलनाम"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:63
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Add sequence number"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:69
+#, fuzzy
+#| msgid "Lightness"
+msgctxt "number of digits"
+msgid "Digits:"
+msgstr "प्रकाश"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:70
+#, fuzzy
+#| msgid "Statistics"
+msgctxt "start of sequence number range"
+msgid "Start:"
+msgstr "तथ्याङ्क"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:71
+#, fuzzy
+#| msgid "None"
+msgctxt "stepping used for sequence number range"
+msgid "Step:"
+msgstr "कुनै होइन"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:82
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom Range"
+msgstr "अनुकूल"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:123
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number..."
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:129
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "sequence number"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number (start)"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:132
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "sequence number (custom start)"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number (start, step)"
+msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:135
+msgid "sequence number (custom start + step)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:40
+#: utilities/queuemanager/queuelist.cpp:243
+#: utilities/searchwindow/searchfields.cpp:137
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "File Name"
+msgstr "नयाँ छवि फाइलनाम"
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:42
+#, fuzzy
+#| msgid "New Image File Name"
+msgctxt "image filename"
+msgid "Filename"
+msgstr "नयाँ छवि फाइलनाम"
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:43
+#, fuzzy
+#| msgid "Show file name"
+msgid "image filename"
+msgstr "फाइल नाम देखाउनुहोस्"
+
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
+#, fuzzy
+#| msgid "Range:"
+msgid "Range"
+msgstr "दायरा:"
+
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
+msgid "display only a specific range"
+msgstr ""
+
+#: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "&Title:"
+msgid "Trimmed"
+msgstr "शीर्षक:"
+
+#: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "German translations and beta tester"
+msgid "remove leading, trailing and extra whitespace"
+msgstr "जर्मन अनुवाद र बेटा परिक्षक"
+
+#: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:34
+#, fuzzy
+#| msgid "Lower"
+msgid "Lowercase"
+msgstr "लोवर"
+
+#: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:34
+#, fuzzy
+msgid "convert to lowercase"
+msgstr "रद्दीटोकरीमा सार्नुहोस्"
+
+#: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:34
+#, fuzzy
+#| msgid "Upper"
+msgid "Uppercase"
+msgstr "अपर"
+
+#: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:34
+#, fuzzy
+msgid "convert to uppercase"
+msgstr "रद्दीटोकरीमा सार्नुहोस्"
+
+#: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:34
+#, fuzzy
+#| msgid "Rename..."
+msgid "Replace"
+msgstr "पुन: नामकरण गर्नुहोस्..."
+
+#: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:34
+msgid "replace text"
+msgstr ""
+
+#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:34
+msgid "First Letter Of Each Word Uppercase"
+msgstr ""
+
+#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:35
+msgid "convert the first letter of each word to uppercase"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenameinput.cpp:83
+#, fuzzy
+#| msgid "Enter new name (without extension):"
+msgid "Enter renaming string (without extension)"
+msgstr "नयाँ नाम (विस्तार बिना) प्रविष्ट गर्नुहोस्:"
+
+#: utilities/advancedrename/advancedrenameinput.cpp:84
+msgid ""
+"<p>Hold CTRL and move the mouse over the line edit widget to highlight token "
+"words.<br/>To mark a token, press the left mouse button while it is "
+"highlighted.</p>"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenameinput.cpp:330
+msgid "Move selected token to the left"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenameinput.cpp:331
+#, fuzzy
+#| msgid "This option adds new items to the current Album."
+msgid "Move selected token to the right"
+msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
+
 #: utilities/gpssearch/gpssearchview.cpp:110
 msgid ""
 "To perform a search over map, use CTRL+left mouse button to draw a rectangle "
@@ -16056,100 +16440,101 @@ msgstr ""
 msgid "It was not possible to add a collection for the following paths:"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:498
+#: utilities/setup/setupcollectionview.cpp:515
+#: utilities/setup/setupcollectionview.cpp:518
 msgid "Choose the folder containing your collection"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:526
+#: utilities/setup/setupcollectionview.cpp:547
 #, kde-format
 msgid "You have previously added a collection that contains the path \"%1\"."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:546
+#: utilities/setup/setupcollectionview.cpp:567
 #, fuzzy
 #| msgid "Album Collection"
 msgid "Problem Adding Collection"
 msgstr "एल्बम सङ्कलन"
 
-#: utilities/setup/setupcollectionview.cpp:553
+#: utilities/setup/setupcollectionview.cpp:574
 #, fuzzy
 #| msgid "By Collection"
 msgid "Adding Collection"
 msgstr "सङ्कलनद्वारा"
 
-#: utilities/setup/setupcollectionview.cpp:560
+#: utilities/setup/setupcollectionview.cpp:581
 msgid "Your new collection will be created with this name:"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:628
+#: utilities/setup/setupcollectionview.cpp:649
 #, fuzzy
 #| msgid "By Collection"
 msgid "Remove Collection"
 msgstr "सङ्कलनद्वारा"
 
-#: utilities/setup/setupcollectionview.cpp:630
+#: utilities/setup/setupcollectionview.cpp:651
 #, kde-format
 msgid ""
 "Do you want to remove the collection \"%1\" from your list of collections?"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:631
+#: utilities/setup/setupcollectionview.cpp:652
 #, fuzzy
 #| msgid "By Collection"
 msgid "Remove Collection?"
 msgstr "सङ्कलनद्वारा"
 
-#: utilities/setup/setupcollectionview.cpp:660
+#: utilities/setup/setupcollectionview.cpp:681
 #, fuzzy
 #| msgid "Collections"
 msgid "Local Collections"
 msgstr "सङ्कलन"
 
-#: utilities/setup/setupcollectionview.cpp:661
+#: utilities/setup/setupcollectionview.cpp:682
 msgid "Collections on Removable Media"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:662
+#: utilities/setup/setupcollectionview.cpp:683
 #, fuzzy
 #| msgid "Collections"
 msgid "Collections on Network Shares"
 msgstr "सङ्कलन"
 
-#: utilities/setup/setupcollectionview.cpp:674
+#: utilities/setup/setupcollectionview.cpp:695
 #, fuzzy
 #| msgid "By Collection"
 msgid "Add Collection"
 msgstr "सङ्कलनद्वारा"
 
-#: utilities/setup/setupcollectionview.cpp:694
+#: utilities/setup/setupcollectionview.cpp:715
 #, kde-format
 msgid "Col. %1"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:741
+#: utilities/setup/setupcollectionview.cpp:762
 msgid "This collection is currently not available."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:743
+#: utilities/setup/setupcollectionview.cpp:764
 msgid "No problems found, enjoy this collection."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:745
+#: utilities/setup/setupcollectionview.cpp:766
 msgid "This collection is hidden."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:754
+#: utilities/setup/setupcollectionview.cpp:775
 #, fuzzy
 #| msgid "By Collection"
 msgid "Remove collection"
 msgstr "सङ्कलनद्वारा"
 
-#: utilities/setup/setupcollectionview.cpp:774
+#: utilities/setup/setupcollectionview.cpp:795
 #: utilities/setup/setupcamera.cpp:151
 msgid "Path"
 msgstr "मार्ग"
 
-#: utilities/setup/setupcollectionview.cpp:775
+#: utilities/setup/setupcollectionview.cpp:796
 #, fuzzy
 #| msgid "Statistics"
 msgid "Status"
@@ -16985,6 +17370,7 @@ msgid "Output device profile:"
 msgstr "निर्गत यन्त्र"
 
 #: utilities/setup/setupicc.cpp:421
+#: utilities/imageeditor/canvas/softproofdialog.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>You must select the profile for your output device (usually, your "
@@ -17046,106 +17432,31 @@ msgstr ""
 msgid "Rendering Intents:"
 msgstr "रेन्डरिङ इन्टेन्ट:"
 
-#: utilities/setup/setupicc.cpp:488
-#, fuzzy
-#| msgid ""
-#| "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to "
-#| "be compressed or expanded to fill the gamut of the destination device, so "
-#| "that gray balance is preserved but colorimetric accuracy may not be "
-#| "preserved.</p><p>In other words, if certain colors in an image fall "
-#| "outside of the range of colors that the output device can render, the "
-#| "picture intent will cause all the colors in the image to be adjusted so "
-#| "that the every color in the image falls within the range that can be "
-#| "rendered and so that the relationship between colors is preserved as much "
-#| "as possible.</p><p>This intent is most suitable for display of "
-#| "photographs and images, and is the default intent.</p></"
-#| "li><li><p><b>Absolute Colorimetric intent</b> causes any colors that fall "
-#| "outside the range that the output device can render are adjusted to the "
-#| "closest color that can be rendered, while all other colors are left "
-#| "unchanged.</p><p>This intent preserves the white point and is most "
-#| "suitable for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
-#| "li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
-#| "colors that fall outside the range that the output device can render are "
-#| "adjusted to the closest color that can be rendered, while all other "
-#| "colors are left unchanged. Proof intent does not preserve the white point."
-#| "</p></li><li><p><b>Saturation intent</b> preserves the saturation of "
-#| "colors in the image at the possible expense of hue and lightness.</"
-#| "p><p>Implementation of this intent remains somewhat problematic, and the "
-#| "ICC is still working on methods to achieve the desired effects.</"
-#| "p><p>This intent is most suitable for business graphics such as charts, "
-#| "where it is more important that the colors be vivid and contrast well "
-#| "with each other rather than a specific color.</p></li></ul>"
-msgid ""
-"<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to be "
-"compressed or expanded to fill the gamut of the destination device, so that "
-"gray balance is preserved but colorimetric accuracy may not be preserved.</"
-"p><p>In other words, if certain colors in an image fall outside of the range "
-"of colors that the output device can render, the image intent will cause all "
-"the colors in the image to be adjusted so that the every color in the image "
-"falls within the range that can be rendered and so that the relationship "
-"between colors is preserved as much as possible.</p><p>This intent is most "
-"suitable for display of photographs and images, and is the default intent.</"
-"p></li><li><p><b>Absolute Colorimetric intent</b> causes any colors that "
-"fall outside the range that the output device can render to be adjusted to "
-"the closest color that can be rendered, while all other colors are left "
-"unchanged.</p><p>This intent preserves the white point and is most suitable "
-"for spot colors (Pantone, TruMatch, logo colors, ....)</p></"
-"li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
-"colors that fall outside the range that the output device can render are "
-"adjusted to the closest color that can be rendered, while all other colors "
-"are left unchanged. Proof intent does not preserve the white point.</p></"
-"li><li><p><b>Saturation intent</b> preserves the saturation of colors in the "
-"image at the possible expense of hue and lightness.</p><p>Implementation of "
-"this intent remains somewhat problematic, and the ICC is still working on "
-"methods to achieve the desired effects.</p><p>This intent is most suitable "
-"for business graphics such as charts, where it is more important that the "
-"colors be vivid and contrast well with each other rather than a specific "
-"color.</p></li></ul>"
-msgstr ""
-"<ul><li><p><b>बोधात्मक इन्टेन्ट</b>बोधात्मक इन्टेन्टको कारणले गन्तव्य मिडियाको गामुट भर्न "
-"छविको पूरा गामुट सङ्कुचन वा विस्तारित हुन्छ, त्यसैले ग्रे सन्तुलन सुरक्षित हुन्छ तर कलरमेट्रिक "
-"शुद्धता सुरक्षित हुँदैन ।</p><p>अर्को शब्दमा, छविको केहि रङहरू निर्गत यन्त्रले रेन्डर गर्न सक्ने "
-"रङको दायराबाट बाहिर परेमा, तस्विर इन्टेन्टले गर्दा छविमा सबै रङ समायोजन हुने हुन्छ जसले "
-"गर्दा रङहरू बिचको सम्बन्ध सम्भव भएसम्म सुरक्षित गरिन्छ ।</p><p>यो इन्टेन्ट फोटो र छवि "
-"प्रर्दशन गर्नका लागि उपयुकत हुन्छ र यो पूर्वनिर्धारित इन्टेन्ट पनि हो ।<p></"
-"li><li><p><b> पूर्ण कलरमेट्रिक इन्टेन्ट</b>ले निर्गत यन्त्रले रेन्डर गर्न सक्ने दायरा भन्दा "
-"बाहिरको रङलाई त्यसले रेन्डर गर्ने सक्ने नजिकको रङमा समायोजन गर्दछ, जबकी अन्य रङहरू "
-"परिवर्तन गर्दैन ।</p><p>यो इन्टेन्टले सेतो बिन्दु सुरक्षित राख्दछ र स्पट रङ (प्यानटोन,"
-"ट्रुम्याच, लोगो रङ, ...) मा उपयुक्त हुन्छ ।</p></li><li><p><b>अपूर्ण कलरमेट्रिक इन्टेन्ट</"
-"b> निर्गत यन्त्रले रेन्डर गर्न सक्ने दायरा भन्दा बाहिरको रङलाई त्यसले रेन्डर गर्ने सक्ने "
-"नजिकको रङमा समायोजन गर्दछ, जबकी अन्य रङहरू परिवर्तन गर्दैन भनी परिभाषित गरिन्छ । "
-"प्रुफ इन्टेन्टले सेतो बिन्दु सुरक्षित गर्दैन ।</p></li><li><p><b>स्याचुरेसन इन्टेन्टले ह्यु र "
-"प्रकाशको संभव नोक्सानी गरेर छविमा रङको स्याचुरेसन संरक्षण गर्दछ ।</p><p>यो इन्टेन्ट "
-"कार्यान्वयन पनि केहि मात्रामा अनिश्चित हुन्छ र आवश्यक प्रभाव प्राप्त गर्नका लागि ICC अझै "
-"पनि सोही विधिमा काम गर्दैछ ।</p><p> यो इन्टेन्टले निर्दिष्ट रङ भन्दा पनि एक अर्को रङमा "
-"धमिलो र व्यतिरेक राम्रोसँग गर्ने हुँदा, चित्रपट जस्ता व्यापारिक ग्राफिक्सका लागि यो बढि "
-"उपयुक्त हुन्छ ।</p></li></ul>"
-
-#: utilities/setup/setupicc.cpp:523
+#: utilities/setup/setupicc.cpp:497
 #, fuzzy
 #| msgid "Profile ID"
 msgid "Profiles"
 msgstr "प्रोफाइल ID"
 
-#: utilities/setup/setupicc.cpp:524
+#: utilities/setup/setupicc.cpp:498
 #, fuzzy
 #| msgid "Advanced..."
 msgid "Advanced"
 msgstr "उन्नत..."
 
-#: utilities/setup/setupicc.cpp:705
+#: utilities/setup/setupicc.cpp:659
 #, fuzzy
 #| msgid "ICC Profiles Settings"
 msgid "Monitor Profile From System Settings"
 msgstr "ICC प्रोफाइल सेटिङ"
 
-#: utilities/setup/setupicc.cpp:728
+#: utilities/setup/setupicc.cpp:682
 #, fuzzy
 #| msgid "<p>Sorry, there is no ICC profiles files in "
 msgid "No ICC profiles files found."
 msgstr "<p>क्षमा गर्नुहोस्, त्यहाँ ICC प्रोफाइल फाइल छैन"
 
-#: utilities/setup/setupicc.cpp:742
+#: utilities/setup/setupicc.cpp:696
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:341
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:437
 #, fuzzy
@@ -17153,39 +17464,39 @@ msgstr "<p>क्षमा गर्नुहोस्, त्यहाँ ICC �
 msgid "No Profile Available"
 msgstr "प्रोफाइल उपलब्ध छैन..."
 
-#: utilities/setup/setupicc.cpp:743
+#: utilities/setup/setupicc.cpp:697
 #, fuzzy
 #| msgid "No profile available..."
 msgid "No Display Profile Available"
 msgstr "प्रोफाइल उपलब्ध छैन..."
 
-#: utilities/setup/setupicc.cpp:744
+#: utilities/setup/setupicc.cpp:698
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:476
 #, fuzzy
 #| msgid "No profile available..."
 msgid "No Input Profile Available"
 msgstr "प्रोफाइल उपलब्ध छैन..."
 
-#: utilities/setup/setupicc.cpp:745
+#: utilities/setup/setupicc.cpp:699
 #, fuzzy
 #| msgid "No profile available..."
 msgid "No Output Profile Available"
 msgstr "प्रोफाइल उपलब्ध छैन..."
 
-#: utilities/setup/setupicc.cpp:829
+#: utilities/setup/setupicc.cpp:783
 #, fuzzy
 #| msgid "No item selected"
 msgid "No profile is selected."
 msgstr "वस्तु चयन गरेको छैन"
 
-#: utilities/setup/setupicc.cpp:849
+#: utilities/setup/setupicc.cpp:803
 #, fuzzy
 #| msgid "None"
 msgctxt "none of the paths"
 msgid "none"
 msgstr "कुनै होइन"
 
-#: utilities/setup/setupicc.cpp:852
+#: utilities/setup/setupicc.cpp:806
 #, kde-format
 msgid ""
 "On Linux, the default search paths include <ul><li>/usr/share/color/icc</"
@@ -17541,6 +17852,68 @@ msgstr "<p>यहाँ अचल आकार अनुपात अभिम�
 msgid "A metadata template named '%1' already exist."
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
+#: utilities/imageeditor/canvas/softproofdialog.cpp:81
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing Options"
+msgstr "सफ्ट-प्रुफिङ"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:88
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing On"
+msgstr "सफ्ट-प्रुफिङ"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:89
+msgid "Enable soft-proofing color managed view"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:90
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing Off"
+msgstr "सफ्ट-प्रुफिङ"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:91
+msgid "Disable soft-proofing color managed view"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:99
+msgid "<b>Configure the Soft Proofing View</b>"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:108
+msgid "Profile of the output device to simulate:"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:117
+#, fuzzy
+#| msgid ""
+#| "<p>You can use this button to get more detailed information about the "
+#| "selected soft proof profile.</p>"
+msgid ""
+"Press this button to get detailed information about the selected proofing "
+"profile.</p>"
+msgstr ""
+"<p>तपाईँले चयन गरेको सफ्ट प्रुफ प्रोफाइलका बारेमा बढि विस्तारमा सूचना प्राप्त गर्नका लागि "
+"यो बटन प्रयोग गर्न सक्नुहुन्छ ।</p>"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:133
+#, fuzzy
+#| msgid "Rendering Intent:"
+msgid "Rendering intent:"
+msgstr "रेन्डरिङ इन्टेन्ट:"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:138
+msgid "Highlight out-of-gamut colors"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:140
+#, fuzzy
+#| msgid "Quality:"
+msgid "Highlighting color:"
+msgstr "गुणस्तर:"
+
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:125
 #, fuzzy
 #| msgid "Color Profiles Directory"
@@ -17767,39 +18140,39 @@ msgstr "\"%1\" छवि लोड गर्न असफल"
 msgid "Loading Image Plugins"
 msgstr "छवि प्लगइन"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:297
+#: utilities/imageeditor/editor/editorwindow.cpp:304
 #: utilities/lighttable/lighttablewindow.cpp:399
 msgid "&First"
 msgstr "पहिलो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:302
+#: utilities/imageeditor/editor/editorwindow.cpp:309
 #: utilities/lighttable/lighttablewindow.cpp:405
 msgid "&Last"
 msgstr "अन्तिम"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:320
+#: utilities/imageeditor/editor/editorwindow.cpp:327
 msgid "Print Image..."
 msgstr "छवि मुद्रण गर्नुहोस्..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:339
+#: utilities/imageeditor/editor/editorwindow.cpp:346
 #, fuzzy
 #| msgid "no"
 msgid "Undo"
 msgstr "होइन"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:358
+#: utilities/imageeditor/editor/editorwindow.cpp:365
 #, fuzzy
 #| msgid "Red"
 msgid "Redo"
 msgstr "रातो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:404
+#: utilities/imageeditor/editor/editorwindow.cpp:411
 #, fuzzy
 #| msgid "Selection"
 msgid "Fit to &Selection"
 msgstr "चयन"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:409
+#: utilities/imageeditor/editor/editorwindow.cpp:416
 #, fuzzy
 #| msgid ""
 #| "This option can be used to crop the image. Select a region of the image "
@@ -17810,31 +18183,41 @@ msgstr ""
 "यो विकल्प छवि काँटछाँट गर्न प्रयोग गरिन्छ । यो कार्यलाई सक्षम पार्न छविको क्षेत्र चयन "
 "गर्नुहोस् ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:437
+#: utilities/imageeditor/editor/editorwindow.cpp:444
 #, fuzzy
 #| msgid "Zoom: "
 msgid "Zoom"
 msgstr "जुम गर्नुहोस्: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:449
+#: utilities/imageeditor/editor/editorwindow.cpp:456
 msgid "Under-Exposure Indicator"
 msgstr "न्यून-प्रर्दशन सूचक"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:455
+#: utilities/imageeditor/editor/editorwindow.cpp:462
 msgid "Over-Exposure Indicator"
 msgstr "अधिक-प्रर्दशन सूचक"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:460
+#: utilities/imageeditor/editor/editorwindow.cpp:467
 #, fuzzy
 #| msgid "Color Managed View"
 msgid "Color-Managed View"
 msgstr "रङ सन्तुलित दृश्य"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:470
+#: utilities/imageeditor/editor/editorwindow.cpp:472
+msgid "Soft Proofing Options..."
+msgstr ""
+
+#: utilities/imageeditor/editor/editorwindow.cpp:476
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing View"
+msgstr "सफ्ट-प्रुफिङ"
+
+#: utilities/imageeditor/editor/editorwindow.cpp:485
 msgid "Crop"
 msgstr "काँटछाँट गर्नुहोस्"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:475
+#: utilities/imageeditor/editor/editorwindow.cpp:490
 msgid ""
 "This option can be used to crop the image. Select a region of the image to "
 "enable this action."
@@ -17842,72 +18225,72 @@ msgstr ""
 "यो विकल्प छवि काँटछाँट गर्न प्रयोग गरिन्छ । यो कार्यलाई सक्षम पार्न छविको क्षेत्र चयन "
 "गर्नुहोस् ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:480
+#: utilities/imageeditor/editor/editorwindow.cpp:495
 #, fuzzy
 #| msgid "Flip horizontally"
 msgid "Flip Horizontally"
 msgstr "तेर्सो तरिकाले घुमाउनुहोस्"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:486
+#: utilities/imageeditor/editor/editorwindow.cpp:501
 #, fuzzy
 #| msgid "Flip vertically"
 msgid "Flip Vertically"
 msgstr "ठाडो तरिकाले घुमाउनुहोस्"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:494
+#: utilities/imageeditor/editor/editorwindow.cpp:509
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotate Left"
 msgstr "घुमाउनुहोस्"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:500
+#: utilities/imageeditor/editor/editorwindow.cpp:515
 #, fuzzy
 #| msgid "Bottom-Right"
 msgid "Rotate Right"
 msgstr "तल-दायाँ"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:528
+#: utilities/imageeditor/editor/editorwindow.cpp:543
 #: utilities/queuemanager/queuemgrwindow.cpp:420
 #: utilities/lighttable/lighttablewindow.cpp:526
 msgid "Donate Money..."
 msgstr "पैसा अनुदान दिनुहोस्..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:551
+#: utilities/imageeditor/editor/editorwindow.cpp:566
 #, fuzzy
 #| msgid "&Colors"
 msgid "Close Tool"
 msgstr "रङ"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:572
-#: utilities/imageeditor/editor/editorwindow.cpp:1293
+#: utilities/imageeditor/editor/editorwindow.cpp:587
+#: utilities/imageeditor/editor/editorwindow.cpp:1295
 #, fuzzy
 #| msgid "Selection"
 msgid "No selection"
 msgstr "चयन"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:576
+#: utilities/imageeditor/editor/editorwindow.cpp:591
 msgid "Information about current selection area"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:582
+#: utilities/imageeditor/editor/editorwindow.cpp:597
 msgid "Information about image size"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:634
+#: utilities/imageeditor/editor/editorwindow.cpp:649
 #, fuzzy
 #| msgid "General"
 msgctxt "general editor shortcuts"
 msgid "General"
 msgstr "साधारण"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:635
+#: utilities/imageeditor/editor/editorwindow.cpp:650
 #, fuzzy
 #| msgid "Image Plugins"
 msgctxt "imageplugins shortcuts"
 msgid "Image Plugins"
 msgstr "छवि प्लगइन"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1159
+#: utilities/imageeditor/editor/editorwindow.cpp:1161
 #, fuzzy, kde-format
 #| msgid ""
 #| "About to delete file \"%1\"\n"
@@ -17919,13 +18302,13 @@ msgstr ""
 "\"%1\" फाइल मेट्ने बारेमा\n"
 "तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1163
+#: utilities/imageeditor/editor/editorwindow.cpp:1165
 #, fuzzy
 #| msgid "Overwrite File?"
 msgid "Overwrite"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1180
+#: utilities/imageeditor/editor/editorwindow.cpp:1182
 #, kde-format
 msgid ""
 "The image '%1' has been modified.\n"
@@ -17934,11 +18317,11 @@ msgstr ""
 "'%1' छवि परिमार्जन गरिएको छ ।\n"
 "तपाईँ यसलाई बचत गर्न चाहनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1251
+#: utilities/imageeditor/editor/editorwindow.cpp:1253
 msgid "Please wait while the image is being saved..."
 msgstr "कृपया छवि बचत हुँदै गर्दा प्रतिक्षा गर्नुहोस्..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1360
+#: utilities/imageeditor/editor/editorwindow.cpp:1362
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot find the ICC color-space profile file. ICC profiles path seems to "
@@ -17953,13 +18336,13 @@ msgstr ""
 "रङ रूपान्तरण लागू गरिदैन । कृपया ICC मार्ग रूजु गर्न डिजिक्यामको सेटअपमा रङ व्यवस्थापन "
 "कन्फिगरेसन चेक गर्नुहोस् ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1405
+#: utilities/imageeditor/editor/editorwindow.cpp:1407
 msgid "Saving: "
 msgstr "बचत हुँदैछ: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1419
-#: utilities/imageeditor/editor/editorwindow.cpp:1460
-#: utilities/imageeditor/editor/editorwindow.cpp:1671
+#: utilities/imageeditor/editor/editorwindow.cpp:1421
+#: utilities/imageeditor/editor/editorwindow.cpp:1462
+#: utilities/imageeditor/editor/editorwindow.cpp:1673
 #, kde-format
 msgid ""
 "Failed to save file\n"
@@ -17972,43 +18355,43 @@ msgstr ""
 "लाई\n"
 "\"%2\" मा बचत गर्न असफल ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1538
-#: utilities/imageeditor/editor/editorwindow.cpp:1731
+#: utilities/imageeditor/editor/editorwindow.cpp:1540
+#: utilities/imageeditor/editor/editorwindow.cpp:1733
 #, kde-format
 msgid "Could not open a temporary file in the folder \"%1\": %2 (%3)"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1567
+#: utilities/imageeditor/editor/editorwindow.cpp:1569
 #, fuzzy
 #| msgid "JPEG 2000 quality:"
 msgid "JPEG 2000 image"
 msgstr "जेपीईजी २००० गुणस्तर:"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1568
+#: utilities/imageeditor/editor/editorwindow.cpp:1570
 msgid "Progressive Graphics File"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1590
+#: utilities/imageeditor/editor/editorwindow.cpp:1592
 msgid "New Image File Name"
 msgstr "नयाँ छवि फाइलनाम"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1662
+#: utilities/imageeditor/editor/editorwindow.cpp:1664
 #, kde-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "लक्ष्य छवि फाइल ढाँचा \"%1\" समर्थन गर्दैन ।"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1701
+#: utilities/imageeditor/editor/editorwindow.cpp:1703
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "\"%1\" नामको फाइल पहिल्यै अवस्थित छ । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1705
-#: utilities/imageeditor/editor/editorwindow.cpp:1768
+#: utilities/imageeditor/editor/editorwindow.cpp:1707
+#: utilities/imageeditor/editor/editorwindow.cpp:1770
 msgid "Overwrite File?"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1763
+#: utilities/imageeditor/editor/editorwindow.cpp:1765
 #, kde-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -18016,45 +18399,45 @@ msgid ""
 msgstr ""
 "\"%1\" नामको फाइलमा तपाईँलाई लेख्ने अनुमति छैन । यसलाई अधिलेखन गर्न तपाईँ यकिन हुनुहुन्छ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1816
+#: utilities/imageeditor/editor/editorwindow.cpp:1818
 msgid "Failed to overwrite original file"
 msgstr "मौलिक फाइल अधिलेखन गर्न असफल"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1817
+#: utilities/imageeditor/editor/editorwindow.cpp:1819
 msgid "Error Saving File"
 msgstr "फाइल बचत गर्दा त्रुटि"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1858
+#: utilities/imageeditor/editor/editorwindow.cpp:1882
 #, fuzzy
 #| msgid "Color Managed View is enabled"
 msgid "Color-Managed View is enabled."
 msgstr "रङ सन्तुलन दृश्य सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1860
+#: utilities/imageeditor/editor/editorwindow.cpp:1884
 #, fuzzy
 #| msgid "Color Managed View is disabled"
 msgid "Color-Managed View is disabled."
 msgstr "रङ सन्तुलन दृश्य अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1864
+#: utilities/imageeditor/editor/editorwindow.cpp:1888
 msgid ""
 "Color Management is not configured, so the Color-Managed View is not "
 "available."
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1882
+#: utilities/imageeditor/editor/editorwindow.cpp:1922
 msgid "Under-Exposure indicator is enabled"
 msgstr "न्यून-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1883
+#: utilities/imageeditor/editor/editorwindow.cpp:1923
 msgid "Under-Exposure indicator is disabled"
 msgstr "न्यून-प्रर्दशन सूचक अक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1899
+#: utilities/imageeditor/editor/editorwindow.cpp:1939
 msgid "Over-Exposure indicator is enabled"
 msgstr "अधिक-प्रर्दशन सूचक सक्षम गरियो"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1900
+#: utilities/imageeditor/editor/editorwindow.cpp:1940
 msgid "Over-Exposure indicator is disabled"
 msgstr "अधिक-प्रर्दशन सूचक अक्षम गरियो"
 
@@ -18598,14 +18981,6 @@ msgstr "यो मेट्न लागेको वस्तुको सू�
 msgid "Thumbnail"
 msgstr "थम्बनेल देखाउनुहोस्"
 
-#: utilities/queuemanager/queuelist.cpp:243
-#: utilities/searchwindow/searchfields.cpp:137
-#: utilities/manualrename/parsers/subparsers/filenameparser.cpp:40
-#, fuzzy
-#| msgid "New Image File Name"
-msgid "File Name"
-msgstr "नयाँ छवि फाइलनाम"
-
 #: utilities/queuemanager/assignedlist.cpp:117
 #, fuzzy
 #| msgid "This is the list of items that are about to be deleted."
@@ -18908,29 +19283,29 @@ msgstr ""
 msgid "History"
 msgstr "हिस्टोग्राम"
 
-#: utilities/queuemanager/queuesettingsview.cpp:112
+#: utilities/queuemanager/queuesettingsview.cpp:113
 #, fuzzy
 #| msgid "Image Files"
 msgid "If Target File Exists:"
 msgstr "छवि फाइल"
 
-#: utilities/queuemanager/queuesettingsview.cpp:116
+#: utilities/queuemanager/queuesettingsview.cpp:117
 #, fuzzy
 #| msgid "Overwrite File?"
 msgid "Overwrite automatically"
 msgstr "फाइल अधिलेखन गर्नुहुन्छ ?"
 
-#: utilities/queuemanager/queuesettingsview.cpp:117
+#: utilities/queuemanager/queuesettingsview.cpp:118
 msgid "Open rename-file dialog"
 msgstr ""
 
-#: utilities/queuemanager/queuesettingsview.cpp:146
+#: utilities/queuemanager/queuesettingsview.cpp:147
 #, fuzzy
 #| msgid "Camera filenames"
 msgid "Use original filenames"
 msgstr "क्यामेरा फाइलनाम"
 
-#: utilities/queuemanager/queuesettingsview.cpp:147
+#: utilities/queuemanager/queuesettingsview.cpp:148
 #, fuzzy
 #| msgid ""
 #| "<p>Turn on this option to use camera provided image filenames without "
@@ -18940,13 +19315,13 @@ msgstr ""
 "<p>परिमार्जन बिना क्यामेराद्वारा प्रदान गरेको छवि फाइलनाम प्रयोग गर्न यो विकल्प "
 "खोल्नुहोस् ।"
 
-#: utilities/queuemanager/queuesettingsview.cpp:150
+#: utilities/queuemanager/queuesettingsview.cpp:151
 #, fuzzy
 #| msgid "Camera filenames"
 msgid "Customize filenames:"
 msgstr "क्यामेरा फाइलनाम"
 
-#: utilities/queuemanager/queuesettingsview.cpp:163
+#: utilities/queuemanager/queuesettingsview.cpp:164
 #, fuzzy
 #| msgid "File Renaming Options"
 msgid "File Renaming"
@@ -20038,309 +20413,6 @@ msgid "%1 item on Light Table"
 msgid_plural "%1 items on Light Table"
 msgstr[0] "प्रकाश"
 msgstr[1] "प्रकाश"
-
-#: utilities/manualrename/manualrenamewidget.cpp:176
-#, fuzzy
-#| msgid "Interface Options"
-msgctxt "Renaming Options"
-msgid "Options"
-msgstr "इन्टरफेस विकल्प"
-
-#: utilities/manualrename/manualrenamewidget.cpp:194
-#, fuzzy
-#| msgid "Modified:"
-msgid "Modifiers"
-msgstr "परिमार्जन:"
-
-#: utilities/manualrename/manualrenamewidget.cpp:336
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Renaming Options"
-msgstr "फाइल पुन: नामकरण विकल्प"
-
-#: utilities/manualrename/manualrenamedialog.cpp:153
-#, fuzzy
-#| msgid "Count:"
-msgid "Current Name"
-msgstr "गणना:"
-
-#: utilities/manualrename/manualrenamedialog.cpp:153
-#, fuzzy
-#| msgid "Name:"
-msgid "New Name"
-msgstr "नाम:"
-
-#: utilities/manualrename/manualrenamedialog.cpp:239
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "Rename"
-msgid_plural "Rename (%1 images)"
-msgstr[0] "पुन: नामकरण गर्नुहोस्..."
-msgstr[1] "पुन: नामकरण गर्नुहोस्..."
-
-#: utilities/manualrename/manualrenameinput.cpp:83
-#, fuzzy
-#| msgid "Enter new name (without extension):"
-msgid "Enter renaming string (without extension)"
-msgstr "नयाँ नाम (विस्तार बिना) प्रविष्ट गर्नुहोस्:"
-
-#: utilities/manualrename/manualrenameinput.cpp:84
-msgid ""
-"<p>Hold CTRL and move the mouse over the line edit widget to highlight token "
-"words.<br/>To mark a token, press the left mouse button while it is "
-"highlighted.</p>"
-msgstr ""
-
-#: utilities/manualrename/manualrenameinput.cpp:330
-msgid "Move selected token to the left"
-msgstr ""
-
-#: utilities/manualrename/manualrenameinput.cpp:331
-#, fuzzy
-#| msgid "This option adds new items to the current Album."
-msgid "Move selected token to the right"
-msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:41
-#, fuzzy
-#| msgid "New Image File Name"
-msgid "Directory Name"
-msgstr "नयाँ छवि फाइलनाम"
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:43
-#, fuzzy
-#| msgid "Count:"
-msgctxt "current directory name"
-msgid "Current"
-msgstr "गणना:"
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:44
-msgid "current directory name"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:46
-msgctxt "directory name"
-msgid "Parent Directory Name"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:47
-msgid ""
-"directory name of the parent, additional '.' characters move up <br/>in the "
-"directory hierarchy"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:75
-msgid "Add Metadata Keywords"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:80
-msgid "Keyword separator:"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:120
-#, fuzzy
-#| msgid "Metadata"
-msgid "Metadata Keywords"
-msgstr "मेटाडेटा"
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:155
-#, fuzzy
-#| msgid "Metadata"
-msgid "Metadata..."
-msgstr "मेटाडेटा"
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:158
-msgid "add metadata (use the quick access dialog for keycodes)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:97
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Add Date & Time"
-msgstr "मिति र समय थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:109
-msgid "Enter custom date format"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:168
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Date && Time..."
-msgstr "मिति र समय थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:172
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Date && Time"
-msgstr "मिति र समय थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:173
-#, fuzzy
-#| msgid "No Tone Filter"
-msgid "date and time (standard format)"
-msgstr "टोन फिल्टर होइन"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:175
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Date && Time (key)"
-msgstr "मिति र समय थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:176
-msgid "date and time (key = ISO|Text|Locale)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:178
-msgid "Date && Time (custom format)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:179
-#, fuzzy
-#| msgid "No Tone Filter"
-msgid "date and time"
-msgstr "टोन फिल्टर होइन"
-
-#: utilities/manualrename/parsers/subparsers/cameranameparser.cpp:36
-#: utilities/manualrename/parsers/subparsers/cameranameparser.cpp:38
-#, fuzzy
-#| msgid "Add Camera Name"
-msgid "Camera Name"
-msgstr "क्यामेरा नाम थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/cameranameparser.cpp:38
-#, fuzzy
-#| msgid "Camera filenames"
-msgid "camera name"
-msgstr "क्यामेरा फाइलनाम"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:63
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Add sequence number"
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:69
-#, fuzzy
-#| msgid "Lightness"
-msgctxt "number of digits"
-msgid "Digits:"
-msgstr "प्रकाश"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:70
-#, fuzzy
-#| msgid "Statistics"
-msgctxt "start of sequence number range"
-msgid "Start:"
-msgstr "तथ्याङ्क"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:71
-#, fuzzy
-#| msgid "None"
-msgctxt "stepping used for sequence number range"
-msgid "Step:"
-msgstr "कुनै होइन"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:82
-#, fuzzy
-#| msgid "Custom"
-msgid "Custom Range"
-msgstr "अनुकूल"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:123
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number..."
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:127
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number"
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:128
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "sequence number"
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:130
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number (start)"
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:131
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "sequence number (custom start)"
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:133
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number (start, step)"
-msgstr "श्रृङ्खला नम्बर थप्नुहोस्"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:134
-msgid "sequence number (custom start + step)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/filenameparser.cpp:42
-#, fuzzy
-#| msgid "New Image File Name"
-msgctxt "image filename"
-msgid "Filename"
-msgstr "नयाँ छवि फाइलनाम"
-
-#: utilities/manualrename/parsers/subparsers/filenameparser.cpp:43
-#, fuzzy
-#| msgid "Show file name"
-msgid "image filename"
-msgstr "फाइल नाम देखाउनुहोस्"
-
-#: utilities/manualrename/parsers/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "&Title:"
-msgid "Trimmed"
-msgstr "शीर्षक:"
-
-#: utilities/manualrename/parsers/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "German translations and beta tester"
-msgid "remove leading, trailing and extra whitespace"
-msgstr "जर्मन अनुवाद र बेटा परिक्षक"
-
-#: utilities/manualrename/parsers/modifiers/lowercasemodifier.cpp:34
-#, fuzzy
-#| msgid "Lower"
-msgid "Lowercase"
-msgstr "लोवर"
-
-#: utilities/manualrename/parsers/modifiers/lowercasemodifier.cpp:34
-#, fuzzy
-msgid "convert to lowercase"
-msgstr "रद्दीटोकरीमा सार्नुहोस्"
-
-#: utilities/manualrename/parsers/modifiers/uppercasemodifier.cpp:34
-#, fuzzy
-#| msgid "Upper"
-msgid "Uppercase"
-msgstr "अपर"
-
-#: utilities/manualrename/parsers/modifiers/uppercasemodifier.cpp:34
-#, fuzzy
-msgid "convert to uppercase"
-msgstr "रद्दीटोकरीमा सार्नुहोस्"
-
-#: utilities/manualrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:34
-msgid "First Letter Of Each Word Uppercase"
-msgstr ""
-
-#: utilities/manualrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:35
-msgid "convert the first letter of each word to uppercase"
-msgstr ""
 
 #: utilities/cameragui/camerainfodialog.cpp:45
 #, fuzzy
@@ -21688,6 +21760,29 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Interface Options"
+#~ msgctxt "Renaming Options"
+#~ msgid "Options"
+#~ msgstr "इन्टरफेस विकल्प"
+
+#, fuzzy
+#~| msgid "Count:"
+#~ msgid "Current Name"
+#~ msgstr "गणना:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "New Name"
+#~ msgstr "नाम:"
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "Rename"
+#~ msgid_plural "Rename (%1 images)"
+#~ msgstr[0] "पुन: नामकरण गर्नुहोस्..."
+#~ msgstr[1] "पुन: नामकरण गर्नुहोस्..."
 
 #, fuzzy
 #~| msgid "Tone"
