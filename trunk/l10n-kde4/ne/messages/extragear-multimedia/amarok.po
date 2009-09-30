@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-29 06:20+0200\n"
+"POT-Creation-Date: 2009-09-30 07:26+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: mac/GrowlInterface.cpp:37 context/engines/current/CurrentEngine.cpp:150
 #: context/applets/currenttrack/CurrentTrack.cpp:107
-#: context/applets/photos/PhotosApplet.cpp:129 widgets/Osd.cpp:576
+#: context/applets/photos/PhotosApplet.cpp:129 App.cpp:981 widgets/Osd.cpp:576
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
@@ -673,7 +673,7 @@ msgstr ""
 #: collection/audiocd/AudioCdCollection.cpp:413
 #: collection/audiocd/AudioCdCollection.cpp:414
 #: collection/audiocd/AudioCdCollection.cpp:415
-#: context/applets/albums/AlbumItem.cpp:72 MainWindow.cpp:1049
+#: context/applets/albums/AlbumItem.cpp:72 MainWindow.cpp:1063
 #: amarokurls/BookmarkTreeView.cpp:319 amarokurls/BookmarkTreeView.cpp:320
 #: amarokurls/BookmarkTreeView.cpp:321
 msgid "Unknown"
@@ -1168,7 +1168,7 @@ msgstr "प्ले गणना"
 #. i18n: file: dialogs/EditFilterDialog.ui:105
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: context/applets/currenttrack/CurrentTrack.cpp:114
-#: context/applets/currenttrack/CurrentTrack.cpp:541 Systray.cpp:169
+#: context/applets/currenttrack/CurrentTrack.cpp:541 Systray.cpp:156
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:694 rc.cpp:1157
 #: playlist/PlaylistModel.cpp:671 widgets/SmartPlaylistEditor.cpp:185
@@ -1176,7 +1176,7 @@ msgid "Score"
 msgstr "प्राप्ताङ्क"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:115
-#: context/applets/currenttrack/CurrentTrack.cpp:542 Systray.cpp:199
+#: context/applets/currenttrack/CurrentTrack.cpp:542 Systray.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:699
 msgid "Last Played"
@@ -1194,7 +1194,7 @@ msgstr "अन्तिममा बजाएको"
 msgid "Favorite tracks"
 msgstr "मन पर्ने ट्रयाक"
 
-#: context/applets/albums/AlbumsView.cpp:112 Systray.cpp:241
+#: context/applets/albums/AlbumsView.cpp:112 Systray.cpp:220
 #: browsers/CollectionTreeView.cpp:809
 #: browsers/filebrowser/MyDirOperator.cpp:270
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:539
@@ -1239,49 +1239,52 @@ msgid_plural "%1 tracks"
 msgstr[0] "%1 ट्रयाक"
 msgstr[1] "%1 ट्रयाक"
 
-#: context/applets/lyrics/LyricsApplet.cpp:45
-#: context/applets/lyrics/LyricsApplet.cpp:78
-#: context/applets/lyrics/LyricsApplet.cpp:215
-#: context/applets/lyrics/LyricsApplet.cpp:273 dialogs/TagDialog.cpp:584
+#: context/applets/lyrics/LyricsApplet.cpp:46
+#: context/applets/lyrics/LyricsApplet.cpp:79
+#: context/applets/lyrics/LyricsApplet.cpp:217
+#: context/applets/lyrics/LyricsApplet.cpp:225
+#: context/applets/lyrics/LyricsApplet.cpp:235
+#: context/applets/lyrics/LyricsApplet.cpp:277
+#: context/applets/lyrics/LyricsApplet.cpp:289 dialogs/TagDialog.cpp:584
 msgid "Lyrics"
 msgstr "रचना"
 
-#: context/applets/lyrics/LyricsApplet.cpp:85
+#: context/applets/lyrics/LyricsApplet.cpp:86
 #, fuzzy
 #| msgid "Lyrics"
 msgid "Edit Lyrics"
 msgstr "रचना"
 
-#: context/applets/lyrics/LyricsApplet.cpp:94
+#: context/applets/lyrics/LyricsApplet.cpp:95
 #: firstruntutorial/FirstRunTutorialPage.cpp:56
 #, fuzzy
 #| msgid "Closed"
 msgid "Close"
 msgstr "बन्द गरियो"
 
-#: context/applets/lyrics/LyricsApplet.cpp:103
+#: context/applets/lyrics/LyricsApplet.cpp:104
 #, fuzzy
 #| msgid "Lyrics"
 msgid "Save Lyrics"
 msgstr "रचना"
 
-#: context/applets/lyrics/LyricsApplet.cpp:112
+#: context/applets/lyrics/LyricsApplet.cpp:113
 #, fuzzy
 #| msgid "Cached Lyrics"
 msgid "Reload Lyrics"
 msgstr "क्यास गरिएको रचना"
 
-#: context/applets/lyrics/LyricsApplet.cpp:210
+#: context/applets/lyrics/LyricsApplet.cpp:212
 #, fuzzy
 #| msgid "Sorry, no lyrics script running."
 msgid "No lyrics script is running."
 msgstr "माफ गर्नुहोस्, कुनै रचना स्क्रिप्ट चलिरहेको छैन।"
 
-#: context/applets/lyrics/LyricsApplet.cpp:223
+#: context/applets/lyrics/LyricsApplet.cpp:226
 msgid "Lyrics are being fetched."
 msgstr ""
 
-#: context/applets/lyrics/LyricsApplet.cpp:232
+#: context/applets/lyrics/LyricsApplet.cpp:236
 #, kde-format
 msgid ""
 "Could not download lyrics.\n"
@@ -1290,11 +1293,24 @@ msgid ""
 "%1"
 msgstr ""
 
-#: context/applets/lyrics/LyricsApplet.cpp:285
+#: context/applets/lyrics/LyricsApplet.cpp:290
 #, fuzzy
 #| msgid "There are not enough neighbors for this radio."
 msgid "There were no lyrics found for this track"
 msgstr "यो रेडियोका लागि पर्याप्त छिमेकीहरू छैन।"
+
+#: context/applets/lyrics/LyricsApplet.cpp:371
+msgctxt "@info"
+msgid ""
+"Do you really want to refetch lyrics for this track ? All changes you may "
+"have made will be lost."
+msgstr ""
+
+#: context/applets/lyrics/LyricsApplet.cpp:372
+#, fuzzy
+#| msgid "Fetching Lyrics"
+msgid "Refetch lyrics"
+msgstr "रचना तान्दै"
 
 #: context/applets/photos/PhotosApplet.cpp:68
 #: context/applets/photos/PhotosApplet.cpp:129
@@ -1593,7 +1609,7 @@ msgstr "ट्रयाक"
 msgid "&Album"
 msgstr "एल्बम"
 
-#: ActionClasses.cpp:365 MainWindow.cpp:860
+#: ActionClasses.cpp:365 MainWindow.cpp:874
 msgid "&Playlist"
 msgstr "प्ले सूची"
 
@@ -2572,7 +2588,7 @@ msgstr "साधारण विकल्प"
 msgid "Convert spaces to underscores"
 msgstr "खाली स्थानहरूलाई अन्डरस्क्रोर रूपान्तरण गर्नुहोस्"
 
-#: dialogs/ScriptManager.cpp:90 MainWindow.cpp:687
+#: dialogs/ScriptManager.cpp:90 MainWindow.cpp:696
 msgid "Script Manager"
 msgstr "स्क्रिप्ट प्रबन्धक"
 
@@ -2651,15 +2667,15 @@ msgstr ""
 
 #. i18n: file: collection/audiocd/FormatSelectionDialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
-#: App.cpp:116 rc.cpp:536
+#: App.cpp:119 rc.cpp:536
 msgid "Amarok"
 msgstr "अमारोक"
 
-#: App.cpp:117
+#: App.cpp:120
 msgid "The audio player for KDE"
 msgstr "केडीईका लागि अडियो प्लेयर"
 
-#: App.cpp:118
+#: App.cpp:121
 #, fuzzy
 #| msgid ""
 #| "(C) 2002-2003, Mark Kretschmann\n"
@@ -2671,7 +2687,7 @@ msgstr ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2007, अमारोक विकास स्क्वाड"
 
-#: App.cpp:119
+#: App.cpp:122
 #, fuzzy, kde-format
 #| msgid ""
 #| "IRC:\n"
@@ -2697,174 +2713,174 @@ msgstr ""
 "amarok@kde.org \n"
 "(निर्माण मिती: "
 
-#: App.cpp:467
+#: App.cpp:470
 msgid "Files/URLs to open"
 msgstr "फाइल/यूआरएल खोल्नका लागि "
 
-#: App.cpp:469
+#: App.cpp:472
 msgid "Skip backwards in playlist"
 msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:471
+#: App.cpp:474
 msgid "Start playing current playlist"
 msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
 
-#: App.cpp:473
+#: App.cpp:476
 msgid "Play if stopped, pause if playing"
 msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
 
-#: App.cpp:474
+#: App.cpp:477
 msgid "Pause playback"
 msgstr "प्लेब्याक पज गर्नुहोस्"
 
-#: App.cpp:476
+#: App.cpp:479
 msgid "Stop playback"
 msgstr "प्लेब्याक रोक्नुहोस्"
 
-#: App.cpp:478
+#: App.cpp:481
 msgid "Skip forwards in playlist"
 msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:479
+#: App.cpp:482
 msgid "Additional options:"
 msgstr "अतिरिक्त विकल्प:"
 
-#: App.cpp:481
+#: App.cpp:484
 msgid "Append files/URLs to playlist"
 msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
 
-#: App.cpp:482
+#: App.cpp:485
 msgid "Queue URLs after the currently playing track"
 msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
 
-#: App.cpp:484
+#: App.cpp:487
 msgid "Load URLs, replacing current playlist"
 msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
 
-#: App.cpp:486
+#: App.cpp:489
 #, fuzzy
 #| msgid "Click to get the plugin information."
 msgid "Print verbose debugging information"
 msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
 
-#: App.cpp:488
+#: App.cpp:491
 msgid "Allow running multiple Amarok instances"
 msgstr ""
 
-#: App.cpp:489
+#: App.cpp:492
 msgid "Base for relative filenames/URLs"
 msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
 
-#: App.cpp:490
+#: App.cpp:493
 msgid "Run integrated unit tests, if your build supports it"
 msgstr ""
 
-#: App.cpp:492
+#: App.cpp:495
 #, fuzzy
 #| msgid "Subscribe to This Podcast"
 msgid "Subscribe to podcast feed"
 msgstr "यो पोडकास्टमा सदस्यता जाहेर गर्नुहोस्"
 
-#: App.cpp:764
+#: App.cpp:767
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
-#: App.cpp:846
+#: App.cpp:849
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "When this track was last played"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: App.cpp:851
+#: App.cpp:854
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1: %2"
 
-#: App.cpp:858
+#: App.cpp:861
 #, fuzzy, kde-format
 msgid "One week ago"
 msgid_plural "%1 weeks ago"
 msgstr[0] "एक हप्ता अघि"
 msgstr[1] "एक हप्ता अघि"
 
-#: App.cpp:864
+#: App.cpp:867
 msgid "Yesterday"
 msgstr "हिजो"
 
-#: App.cpp:865
+#: App.cpp:868
 #, fuzzy, kde-format
 msgid "One day ago"
 msgid_plural "%1 days ago"
 msgstr[0] "एक दिन अघि"
 msgstr[1] "एक दिन अघि"
 
-#: App.cpp:868
+#: App.cpp:871
 #, fuzzy, kde-format
 msgid "One hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "एक घण्टा अघि"
 msgstr[1] "एक घण्टा अघि"
 
-#: App.cpp:874
+#: App.cpp:877
 #, fuzzy, kde-format
 msgid "One minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "एक मिनेट अघि"
 msgstr[1] "एक मिनेट अघि"
 
-#: App.cpp:875
+#: App.cpp:878
 msgid "Within the last minute"
 msgstr "अन्तिम मिनेट भित्र"
 
-#: App.cpp:877
+#: App.cpp:880
 msgid "The future"
 msgstr "भविष्य"
 
-#: App.cpp:883
+#: App.cpp:886
 #, fuzzy
 #| msgid "Never"
 msgctxt "The amount of time since last played"
 msgid "Never"
 msgstr "कहिल्यै पनि"
 
-#: App.cpp:893
+#: App.cpp:896
 #, fuzzy
 #| msgid "10"
 msgctxt "The amount of time since last played"
 msgid "0"
 msgstr "१०"
 
-#: App.cpp:902
+#: App.cpp:905
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "number of months ago"
 msgid "%1M"
 msgstr "%1"
 
-#: App.cpp:906
+#: App.cpp:909
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "w for weeks"
 msgid "%1w"
 msgstr "%1"
 
-#: App.cpp:909
+#: App.cpp:912
 #, fuzzy
 #| msgid "Tomorrow"
 msgctxt "When this track was last played"
 msgid "Tomorrow"
 msgstr "भोली"
 
-#: App.cpp:915
+#: App.cpp:918
 #, fuzzy, no-c-format, kde-format
 #| msgid "%1"
 msgctxt "d for days"
 msgid "%1d"
 msgstr "%1"
 
-#: App.cpp:918
+#: App.cpp:921
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "h for hours"
@@ -2893,12 +2909,38 @@ msgstr "%1"
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:1335
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#: App.cpp:927 rc.cpp:680 rc.cpp:686 rc.cpp:692 rc.cpp:698 rc.cpp:704
+#: App.cpp:930 rc.cpp:680 rc.cpp:686 rc.cpp:692 rc.cpp:698 rc.cpp:704
 #: rc.cpp:710 rc.cpp:716 rc.cpp:722 rc.cpp:728 rc.cpp:734 rc.cpp:740
 #, fuzzy
 #| msgid "10"
 msgid "0"
 msgstr "१०"
+
+#: App.cpp:947
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
+
+#: App.cpp:950
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: App.cpp:954
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: App.cpp:959
+msgid "Unknown track"
+msgstr "अज्ञात ट्रयाक"
+
+#: App.cpp:966
+msgid "from"
+msgstr "बाट"
 
 #: aboutdialog/ExtendedAboutDialog.cpp:73
 msgid ""
@@ -3246,60 +3288,35 @@ msgstr ""
 msgid "%1 is not an RSS version 2.0 feed."
 msgstr ""
 
-#: Systray.cpp:133 KNotificationBackend.cpp:84
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgid " by <b>%1</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: Systray.cpp:138 KNotificationBackend.cpp:90
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgid " on <b>%1</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: Systray.cpp:159
+#: Systray.cpp:146
 #, fuzzy
 #| msgid "Mute"
 msgid "Muted"
 msgstr "मौन"
 
-#: Systray.cpp:163 widgets/SliderWidget.cpp:255
+#: Systray.cpp:150 widgets/SliderWidget.cpp:255
 msgid "Volume"
 msgstr "भोल्युम"
 
-#: Systray.cpp:187 browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
+#: Systray.cpp:174 browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:693
 #: playlist/PlaylistModel.cpp:672 widgets/SmartPlaylistEditor.cpp:185
 msgid "Rating"
 msgstr "मूल्याङ्कन"
 
-#: Systray.cpp:194 browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
+#: Systray.cpp:181 browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:692
 #: playlist/PlaylistModel.cpp:673
 msgid "Play Count"
 msgstr "प्ले गणना"
 
-#: Systray.cpp:204 browsers/playlistbrowser/DynamicBiasWidgets.cpp:252
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695
-#: playlist/PlaylistHeader.cpp:40 playlist/PlaylistModel.cpp:668
-#: widgets/SmartPlaylistEditor.cpp:183
-msgid "Length"
-msgstr "लम्बाइ"
-
-#: Systray.cpp:219
-#, fuzzy
-#| msgid "No track playing"
-msgid "Amarok - No track playing"
-msgstr "कुनै ट्रयाक प्ले भएको छैन"
-
-#: Systray.cpp:242
+#: Systray.cpp:221
 #, fuzzy
 #| msgid "Append && &Play"
 msgid "Add && &Play"
 msgstr "थप्नुहोस् र प्ले गर्नुहोस्"
 
-#: Systray.cpp:244
+#: Systray.cpp:223
 msgid "&Queue Track"
 msgstr "लाम ट्रयाक"
 
@@ -3307,7 +3324,7 @@ msgstr "लाम ट्रयाक"
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: Systray.cpp:247 rc.cpp:1088 rc.cpp:1545
+#: Systray.cpp:226 rc.cpp:1088 rc.cpp:1545
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -3526,7 +3543,7 @@ msgstr ""
 msgid "Current Track"
 msgstr "हालको ट्रयाक पछि"
 
-#: dynamic/biases/EchoNest.cpp:116 MainWindow.cpp:264
+#: dynamic/biases/EchoNest.cpp:116 MainWindow.cpp:265
 #, fuzzy
 #| msgid "&Playlist"
 msgid "Playlist"
@@ -4529,6 +4546,13 @@ msgstr "नयाँ योजना थप्नुहोस्"
 msgid "Remove this bias."
 msgstr "प्ले सूची हटाउनुहोस्"
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:252
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695
+#: playlist/PlaylistHeader.cpp:40 playlist/PlaylistModel.cpp:668
+#: widgets/SmartPlaylistEditor.cpp:183
+msgid "Length"
+msgstr "लम्बाइ"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:696
 #: widgets/SmartPlaylistEditor.cpp:184
@@ -4790,63 +4814,63 @@ msgid_plural "%1 tracks"
 msgstr[0] "१ ट्रयाक"
 msgstr[1] "१ ट्रयाक"
 
-#: MainWindow.cpp:253
+#: MainWindow.cpp:254
 #, fuzzy
 #| msgid "Browser Launch"
 msgid "Browsers"
 msgstr "ब्राउजर सुरुआत गर्नुहोस्"
 
-#: MainWindow.cpp:287
+#: MainWindow.cpp:288
 #, fuzzy
 #| msgid "&Connect"
 msgid "Context"
 msgstr "जडान गर्नुहोस्"
 
-#: MainWindow.cpp:312
+#: MainWindow.cpp:313
 #, fuzzy
 #| msgid "Locate your Music"
 msgid "Local Music"
 msgstr "तपाईँको सङ्गीत अवस्थित गर्नुहोस्"
 
-#: MainWindow.cpp:314
+#: MainWindow.cpp:315
 msgid "Local sources of content"
 msgstr ""
 
-#: MainWindow.cpp:322
+#: MainWindow.cpp:323
 msgid "Internet"
 msgstr "इन्टरनेट"
 
-#: MainWindow.cpp:324
+#: MainWindow.cpp:325
 msgid "Online sources of content"
 msgstr ""
 
-#: MainWindow.cpp:330
+#: MainWindow.cpp:331
 msgid "Playlists"
 msgstr "प्ले सूची"
 
-#: MainWindow.cpp:332
+#: MainWindow.cpp:333
 #, fuzzy
 #| msgid "Various Artists"
 msgid "Various types of playlists"
 msgstr "विभिन्न कलाकारहरू"
 
-#: MainWindow.cpp:339
+#: MainWindow.cpp:340
 msgid "Files"
 msgstr "फाइल"
 
-#: MainWindow.cpp:341
+#: MainWindow.cpp:342
 msgid "Browse local hard drive for content"
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/GeneralConfig.ui:56
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LockLayout)
-#: MainWindow.cpp:386 rc.cpp:770
+#: MainWindow.cpp:387 rc.cpp:770
 #, fuzzy
 #| msgid "Playcount"
 msgid "Lock layout"
 msgstr "प्ले गणना"
 
-#: MainWindow.cpp:480
+#: MainWindow.cpp:481
 #, fuzzy
 #| msgid ""
 #| "<qt>Closing the main-window will keep Amarok running in the System Tray. "
@@ -4861,172 +4885,176 @@ msgstr ""
 "<B>अन्त्य गर्नुहोस्</B> प्रयोग गर्नुहोस्, वा अनुप्रयोग अन्त्य गर्न अमारोक ट्रे प्रतिमा प्रयोग "
 "गर्नुहोस् ।</qt>"
 
-#: MainWindow.cpp:482
+#: MainWindow.cpp:483
 msgid "Docking in System Tray"
 msgstr "प्रणाली ट्रेमा डक गर्दै"
 
-#: MainWindow.cpp:507
+#: MainWindow.cpp:508
 msgid "Use relative path for &saving"
 msgstr ""
 
-#: MainWindow.cpp:518
+#: MainWindow.cpp:519
 #, fuzzy
 #| msgid "Stale"
 msgid "Save As"
 msgstr "स्टेल"
 
-#: MainWindow.cpp:555
+#: MainWindow.cpp:556
 msgid "Play Media (Files or URLs)"
 msgstr "प्ले मिडिया (फाइल वा यूआरएल)"
 
-#: MainWindow.cpp:555
+#: MainWindow.cpp:556
 msgid "Add Media (Files or URLs)"
 msgstr "मिडिया (फाइलहरू वा यूआरएलहरू) थप्नुहोस्"
 
-#: MainWindow.cpp:570
+#: MainWindow.cpp:571
 msgid "Add Stream"
 msgstr "प्रवाह थप्नुहोस्"
 
-#: MainWindow.cpp:570
+#: MainWindow.cpp:571
 #, fuzzy
 #| msgid "Enter Podcast URL:"
 msgid "Enter Stream URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
 
-#: MainWindow.cpp:650
+#: MainWindow.cpp:659
 msgid "&Add Media..."
 msgstr "मिडिया थप्नुहोस्..."
 
-#: MainWindow.cpp:655
+#: MainWindow.cpp:664
 #, fuzzy
 #| msgid "Smart Playlists"
 msgctxt "clear playlist"
 msgid "&Clear Playlist"
 msgstr "छरितो प्ले सूचीहरू"
 
-#: MainWindow.cpp:659
+#: MainWindow.cpp:668
 msgid "&Add Stream..."
 msgstr "प्रवाह थप्नुहोस्..."
 
-#: MainWindow.cpp:663
+#: MainWindow.cpp:672
 #, fuzzy
 #| msgid "Import Playlist..."
 msgid "&Export Playlist As..."
 msgstr "प्लेसूची आयात गर्नुहोस्..."
 
-#: MainWindow.cpp:667 MainWindow.cpp:675
+#: MainWindow.cpp:676 MainWindow.cpp:684
 #, fuzzy
 #| msgid "Bookmarks"
 msgid "Bookmark This Location"
 msgstr "पुस्तकचिनो"
 
-#: MainWindow.cpp:671 amarokurls/BookmarkManager.cpp:42
+#: MainWindow.cpp:680 amarokurls/BookmarkManager.cpp:42
 #, fuzzy
 #| msgid "Cover Manager"
 msgid "Bookmark Manager"
 msgstr "आवरण प्रबन्धक"
 
-#: MainWindow.cpp:679 covermanager/CoverManager.cpp:97
+#: MainWindow.cpp:688 covermanager/CoverManager.cpp:97
 msgid "Cover Manager"
 msgstr "आवरण प्रबन्धक"
 
-#: MainWindow.cpp:683
+#: MainWindow.cpp:692
 msgid "Play Media..."
 msgstr "मिडिया प्ले गर्नुहोस्..."
 
-#: MainWindow.cpp:691
+#: MainWindow.cpp:700
 msgid "&Seek Forward"
 msgstr "अगाडी खोजी गर्नुहोस्"
 
-#: MainWindow.cpp:697
+#: MainWindow.cpp:706
 msgid "&Seek Backward"
 msgstr "पछाडि खोजी गर्नुहोस्"
 
-#: MainWindow.cpp:704
+#: MainWindow.cpp:713
 msgid "Update Collection"
 msgstr "सङ्कलन अद्यावधिक गर्नुहोस्"
 
-#: MainWindow.cpp:711
+#: MainWindow.cpp:720
 msgid "Previous Track"
 msgstr "अघिल्लो ट्रयाक"
 
-#: MainWindow.cpp:719
+#: MainWindow.cpp:728
 msgid "Next Track"
 msgstr "पछिल्लो ट्रयाक"
 
-#: MainWindow.cpp:722
+#: MainWindow.cpp:731
 msgid "Increase Volume"
 msgstr "भोल्युम बढाउनुहोस्"
 
-#: MainWindow.cpp:728
+#: MainWindow.cpp:737
 msgid "Decrease Volume"
 msgstr "भोल्युम घटाउनुहोस्"
 
-#: MainWindow.cpp:734
+#: MainWindow.cpp:743
 #, fuzzy
 #| msgid "Toggle Playlist Window"
 msgid "Toggle Main Window"
 msgstr "प्लेसूची सञ्झ्याल टगल गर्नुहोस्"
 
-#: MainWindow.cpp:739
+#: MainWindow.cpp:748
+msgid "Jump to"
+msgstr ""
+
+#: MainWindow.cpp:753
 #, fuzzy
 #| msgid "Use On-Screen Display"
 msgid "Show On Screen Display"
 msgstr "पर्दा प्रदर्शन प्रयोग गर्नुहोस्"
 
-#: MainWindow.cpp:744
+#: MainWindow.cpp:758
 msgid "Mute Volume"
 msgstr "भोल्युम मौन गर्नुहोस्"
 
-#: MainWindow.cpp:749
+#: MainWindow.cpp:763
 #, fuzzy
 #| msgid "After Current Track"
 msgid "Love Current Track"
 msgstr "हालको ट्रयाक पछि"
 
-#: MainWindow.cpp:754
+#: MainWindow.cpp:768
 msgid "Rate Current Track: 1"
 msgstr "हालको ट्रयाक: १ अनुमान गर्नुहोस्"
 
-#: MainWindow.cpp:759
+#: MainWindow.cpp:773
 msgid "Rate Current Track: 2"
 msgstr "हालको ट्रयाक २ अनुमान गर्नुहोस्"
 
-#: MainWindow.cpp:764
+#: MainWindow.cpp:778
 msgid "Rate Current Track: 3"
 msgstr "हालको ट्रयाक: ३ अनुमान गर्नुहोस्"
 
-#: MainWindow.cpp:769
+#: MainWindow.cpp:783
 msgid "Rate Current Track: 4"
 msgstr "हालको ट्रयाक: ४ अनुमान गर्नुहोस्"
 
-#: MainWindow.cpp:774
+#: MainWindow.cpp:788
 msgid "Rate Current Track: 5"
 msgstr "हालको ट्रयाक: ५ अनुमान गर्नुहोस्"
 
-#: MainWindow.cpp:837
+#: MainWindow.cpp:851
 msgid "&Music"
 msgstr ""
 
-#: MainWindow.cpp:841
+#: MainWindow.cpp:855
 msgid "&Amarok"
 msgstr "अमारोक"
 
-#: MainWindow.cpp:884
+#: MainWindow.cpp:898
 msgid "&Tools"
 msgstr "उपकरण"
 
-#: MainWindow.cpp:897
+#: MainWindow.cpp:911
 msgid "&Settings"
 msgstr "सेटिङ"
 
-#: MainWindow.cpp:1025
+#: MainWindow.cpp:1039
 #, fuzzy, kde-format
 #| msgid "Paused"
 msgid "Paused  ::  %1"
 msgstr "पज गरियो"
 
-#: MainWindow.cpp:1049
+#: MainWindow.cpp:1063
 #, fuzzy, kde-format
 #| msgid "%1. %2 - %3"
 msgid "%1 - %2  ::  %3"
@@ -6443,9 +6471,9 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, opt_crossfade_2)
 #: rc.cpp:611
 #, fuzzy
-#| msgid "Duration of Fade-out at trackend"
-msgid "Fadeout on track end"
-msgstr "ट्रयाक समाप्तिमा फेड-आउटको अवधि"
+#| msgid "Fade out on e&xit"
+msgid "Fadeout on stop"
+msgstr "निस्किँदा फेड आउट गर्नुहोस्"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Fadeout)
@@ -8593,7 +8621,7 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: KNotificationBackend.cpp:93
+#: KNotificationBackend.cpp:82
 #, fuzzy
 #| msgid "No track playing"
 msgid "Now playing"
@@ -9997,12 +10025,12 @@ msgstr "प्लेसूची नाम:"
 msgid "Encountered an unknown element name while reading layout."
 msgstr ""
 
-#: playlist/layouts/LayoutManager.cpp:357
+#: playlist/layouts/LayoutManager.cpp:374
 #, kde-format
 msgid "The layout '%1' is one of the default layouts and cannot be deleted."
 msgstr ""
 
-#: playlist/layouts/LayoutManager.cpp:357
+#: playlist/layouts/LayoutManager.cpp:374
 msgid "Cannot Delete Default Layouts"
 msgstr ""
 
@@ -10286,23 +10314,23 @@ msgstr "यहाँ खोजी गर्नुहोस्..."
 msgid "Track Number - Title"
 msgstr "ट्रयाक नम्बर - शीर्षक"
 
-#: playlist/PlaylistWidget.cpp:59
+#: playlist/PlaylistWidget.cpp:58
 #, fuzzy
 #| msgid "Dynamic Mode"
 msgid "Dynamic Mode Enabled"
 msgstr "गतिशील मोड"
 
-#: playlist/PlaylistWidget.cpp:115
+#: playlist/PlaylistWidget.cpp:113
 msgid "Show active track"
 msgstr ""
 
-#: playlist/PlaylistWidget.cpp:124
+#: playlist/PlaylistWidget.cpp:122
 #, fuzzy
 #| msgid "Current Playlist"
 msgid "&Save Current Playlist"
 msgstr "हालको प्ले सूची"
 
-#: playlist/PlaylistWidget.cpp:179
+#: playlist/PlaylistWidget.cpp:176
 #, fuzzy, kde-format
 #| msgid "Save Playlist"
 msgid "&Save playlist to \"%1\""
@@ -10395,42 +10423,16 @@ msgstr "फाइल साइज"
 msgid "Add a sorting level to the playlist."
 msgstr "प्लेसूचीमा पूर्वावस्थामा फर्काएको तहहरूको सङ्ख्या ।"
 
-#: statusbar/StatusBar.cpp:216
+#: statusbar/StatusBar.cpp:214
 msgid "Amarok is paused"
 msgstr "अमारोक पज गरिएको छ"
 
-#: statusbar/StatusBar.cpp:260
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
-
-#: statusbar/StatusBar.cpp:263
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: statusbar/StatusBar.cpp:267
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: statusbar/StatusBar.cpp:272
-msgid "Unknown track"
-msgstr "अज्ञात ट्रयाक"
-
-#: statusbar/StatusBar.cpp:284
-msgid "from"
-msgstr "बाट"
-
-#: statusbar/StatusBar.cpp:303
+#: statusbar/StatusBar.cpp:266
 #, kde-format
 msgid "Playing: %1"
 msgstr "प्ले गर्दै: %1"
 
-#: statusbar/StatusBar.cpp:341
+#: statusbar/StatusBar.cpp:304
 #, fuzzy, kde-format
 #| msgid "1 track (%1)"
 #| msgid_plural "%1 tracks (%1)"
@@ -10440,13 +10442,13 @@ msgid_plural "%1 tracks (%2)"
 msgstr[0] "१ ट्रयाक (%1)"
 msgstr[1] "१ ट्रयाक(%1)"
 
-#: statusbar/StatusBar.cpp:343
+#: statusbar/StatusBar.cpp:306
 #, fuzzy, kde-format
 #| msgid "Not a playlist file: %1"
 msgid "Total playlist size: %1"
 msgstr "प्ले सूची फाइल होइन: %1"
 
-#: statusbar/StatusBar.cpp:348
+#: statusbar/StatusBar.cpp:311
 #, fuzzy, kde-format
 #| msgid "%1 track"
 #| msgid_plural "%1 tracks"
@@ -11093,6 +11095,26 @@ msgstr "आवरण छवि"
 #| msgid "Artist"
 msgid "No Artist"
 msgstr "कलाकार"
+
+#, fuzzy
+#~| msgid "<b>%1</b> by <b>%2</b>"
+#~ msgid " by <b>%1</b>"
+#~ msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#, fuzzy
+#~| msgid "<b>%1</b> by <b>%2</b>"
+#~ msgid " on <b>%1</b>"
+#~ msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#, fuzzy
+#~| msgid "No track playing"
+#~ msgid "Amarok - No track playing"
+#~ msgstr "कुनै ट्रयाक प्ले भएको छैन"
+
+#, fuzzy
+#~| msgid "Duration of Fade-out at trackend"
+#~ msgid "Fadeout on track end"
+#~ msgstr "ट्रयाक समाप्तिमा फेड-आउटको अवधि"
 
 #, fuzzy
 #~| msgid "Shoutcast Streams"
@@ -16932,9 +16954,6 @@ msgstr "कलाकार"
 
 #~ msgid "Run Script Manager..."
 #~ msgstr "स्क्रिप्ट प्रबन्धक चलाउनुहोस्..."
-
-#~ msgid "Fetching Lyrics"
-#~ msgstr "रचना तान्दै"
 
 #~| msgid "No Error"
 #~ msgid "Error"

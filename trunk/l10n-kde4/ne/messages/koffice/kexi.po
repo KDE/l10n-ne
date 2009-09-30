@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-22 06:14+0200\n"
+"POT-Creation-Date: 2009-09-30 06:57+0200\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2522,7 +2522,7 @@ msgstr ""
 "डाटाबेस आयात गर्ने विजार्डले केक्सी डाटाबेसमा अवस्थित डाटाबेस आयात गर्न तपाईँलाई अनुमति "
 "दिन्छ ।"
 
-#: migration/importwizard.cpp:181 migration/importtablewizard.cpp:119
+#: migration/importwizard.cpp:181 migration/importtablewizard.cpp:121
 msgid ""
 "Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
 msgstr ""
@@ -2533,7 +2533,7 @@ msgstr ""
 msgid "Welcome to the Database Importing Wizard"
 msgstr "डाटाबेस आयात गर्ने विजार्डमा तपाँइलाई स्वागत छ।"
 
-#: migration/importwizard.cpp:213 migration/importtablewizard.cpp:152
+#: migration/importwizard.cpp:213 migration/importtablewizard.cpp:154
 msgid "Select Location for Source Database"
 msgstr "स्रोत डाटाबेसका लागि स्थान चयन गर्नुहोस्।"
 
@@ -2581,11 +2581,11 @@ msgstr "बनावट मात्र"
 msgid "Select Type of Import"
 msgstr "आयातको प्रकार चयन गर्नुहोस्"
 
-#: migration/importwizard.cpp:372 migration/importtablewizard.cpp:198
+#: migration/importwizard.cpp:372 migration/importtablewizard.cpp:201
 msgid "Advanced Options"
 msgstr "उन्नत विकल्प"
 
-#: migration/importwizard.cpp:382 migration/importtablewizard.cpp:207
+#: migration/importwizard.cpp:382 migration/importtablewizard.cpp:210
 msgid "Importing"
 msgstr "आयात गर्दै"
 
@@ -2594,7 +2594,7 @@ msgid "Open imported project"
 msgstr "आयात गरिएको परियोजना खोल्नुहोस्"
 
 #: migration/importwizard.cpp:406 migration/importwizard.cpp:822
-#: migration/importtablewizard.cpp:224
+#: migration/importtablewizard.cpp:243
 msgid "Success"
 msgstr "सफलता"
 
@@ -2629,7 +2629,7 @@ msgstr ""
 "\n"
 "डाटाबेसको साइजको आधारमा केही समय लिन सक्दछ ।"
 
-#: migration/importwizard.cpp:701 migration/importtablewizard.cpp:340
+#: migration/importwizard.cpp:701 migration/importtablewizard.cpp:375
 msgid "No appropriate migration driver found."
 msgstr "उपयुक्त निर्गमन ड्राइभर फेला परेन ।"
 
@@ -2732,7 +2732,19 @@ msgstr "पाठ सङ्केतन:"
 msgid "Always use this encoding in similar situations"
 msgstr "उही अवस्थामा यो सङ्केतनको सधै प्रयोग गर्नुहोस्।"
 
-#: migration/importtablewizard.cpp:116
+#: migration/AlterSchemaWidget.cpp:37
+#, fuzzy
+#| msgid "Column %1"
+msgid "Column Type"
+msgstr "स्तम्भ %1"
+
+#: migration/AlterSchemaWidget.cpp:38
+#: plugins/tables/kexitabledesignerview.cpp:193
+#: plugins/tables/kexitabledesignerview.cpp:430
+msgid "Primary Key"
+msgstr "प्राथमिक कुञ्जी"
+
+#: migration/importtablewizard.cpp:118
 #, fuzzy
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
@@ -2744,19 +2756,23 @@ msgstr ""
 "डाटाबेस आयात गर्ने विजार्डले केक्सी डाटाबेसमा अवस्थित डाटाबेस आयात गर्न तपाईँलाई अनुमति "
 "दिन्छ ।"
 
-#: migration/importtablewizard.cpp:122
+#: migration/importtablewizard.cpp:124
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Table Importing Wizard"
 msgstr "डाटाबेस आयात गर्ने विजार्डमा तपाँइलाई स्वागत छ।"
 
-#: migration/importtablewizard.cpp:166
+#: migration/importtablewizard.cpp:168
 #, fuzzy
 #| msgid "Select Type of Import"
-msgid "Select the Tables to Import"
+msgid "Select the Table to Import"
 msgstr "आयातको प्रकार चयन गर्नुहोस्"
 
-#: migration/importtablewizard.cpp:286
+#: migration/importtablewizard.cpp:226
+msgid "Alter the Detected Design"
+msgstr ""
+
+#: migration/importtablewizard.cpp:323
 #, fuzzy
 #| msgid ""
 #| "All required information has now been gathered. Click \"Next\" button to "
@@ -2769,7 +2785,8 @@ msgid ""
 "\n"
 "Depending on size of the tables this may take some time.\n"
 "\n"
-"You have chosen to import the following tables:\n"
+"You have chosen to import the following table:\n"
+"\n"
 msgstr ""
 "सबै आवश्यक सूचना सङ्कलन गरी सकियो । आयात सुरु गर्न \"पछिल्लो\" बटनमा क्लिक गर्नुहोस् ।\n"
 "\n"
@@ -8839,11 +8856,6 @@ msgstr "टिप्पणीहरू"
 #: plugins/tables/kexitabledesignerview.cpp:164
 msgid "Describes additional comments for the field"
 msgstr "फिल्डका लागि थप टिप्पणीहरू वर्णन गर्दछ"
-
-#: plugins/tables/kexitabledesignerview.cpp:193
-#: plugins/tables/kexitabledesignerview.cpp:430
-msgid "Primary Key"
-msgstr "प्राथमिक कुञ्जी"
 
 #: plugins/tables/kexitabledesignerview.cpp:196
 #, fuzzy
