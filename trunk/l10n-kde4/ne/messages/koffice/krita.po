@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-09 06:06+0100\n"
+"POT-Creation-Date: 2009-11-10 06:16+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2361,7 +2361,7 @@ msgstr "मास्क प्रभाव सिर्जना गर्नु
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:581 rc.cpp:2650 rc.cpp:3392 rc.cpp:3545 ui/kis_view2.cpp:338
+#: rc.cpp:581 rc.cpp:2650 rc.cpp:3392 rc.cpp:3545 ui/kis_view2.cpp:337
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -8741,7 +8741,19 @@ msgstr "YCbCr (१६-बिट इन्टिगर/च्यानल)"
 msgid "YCbCr (8-bit integer/channel)"
 msgstr "YCbCr (८-बिट इन्टिगर/च्यानल)"
 
-#: ui/tool/kis_tool.cc:350
+#: ui/tool/kis_tool.cc:98
+#, fuzzy
+#| msgid "Foreground Color"
+msgid "Swap Foreground and Background Color"
+msgstr "अग्रभूमि रङ"
+
+#: ui/tool/kis_tool.cc:103
+#, fuzzy
+#| msgid "Foreground Color"
+msgid "Reset Foreground and Background Color"
+msgstr "अग्रभूमि रङ"
+
+#: ui/tool/kis_tool.cc:367
 #, fuzzy
 #| msgid "options"
 msgid "No options"
@@ -9325,6 +9337,21 @@ msgstr "वेबको रूपमा"
 msgid "As on &Monitor"
 msgstr "मोनिटरमा भएको रूपमा"
 
+#: ui/kis_node_model.cpp:295 image/kis_base_node.cpp:120
+msgid "Visible"
+msgstr "दृश्यात्मक"
+
+#: ui/kis_node_model.cpp:296 image/kis_base_node.cpp:121
+msgid "Locked"
+msgstr "ताल्चा लगाइएको"
+
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:144
+#: image/kis_paint_layer.cc:151
+#, fuzzy
+#| msgid "Locked"
+msgid "Alpha Locked"
+msgstr "ताल्चा लगाइएको"
+
 #: ui/kis_zoom_manager.cc:84
 msgid "Show Rulers"
 msgstr "रूलर देखाउनुहोस्"
@@ -9383,39 +9410,39 @@ msgstr ""
 msgid "Show Dockers"
 msgstr "ढुङ्गा"
 
-#: ui/kis_view2.cpp:227
+#: ui/kis_view2.cpp:226
 #, fuzzy
 #| msgid "&Tools"
 msgid "Tools"
 msgstr "उपकरण"
 
-#: ui/kis_view2.cpp:332
+#: ui/kis_view2.cpp:331
 #, fuzzy
 #| msgid "I&nsert Image as Layer..."
 msgid "Insert as New Layer"
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
 
-#: ui/kis_view2.cpp:333
+#: ui/kis_view2.cpp:332
 #, fuzzy
 #| msgid "I&nsert Image as Layer..."
 msgid "Insert as New Layers"
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
 
-#: ui/kis_view2.cpp:335
+#: ui/kis_view2.cpp:334
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:336
+#: ui/kis_view2.cpp:335
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:538
+#: ui/kis_view2.cpp:537
 #, fuzzy
 #| msgid "Add New Palette..."
 msgid "Edit Palette..."
 msgstr "नयाँ रङदानी थप्नुहोस्..."
 
-#: ui/kis_view2.cpp:678 ui/kis_view2.cpp:681
+#: ui/kis_view2.cpp:677 ui/kis_view2.cpp:680
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette"
@@ -9640,12 +9667,6 @@ msgid ""
 "information that are identical..."
 msgstr ""
 
-#: image/kis_paint_layer.cc:144 image/kis_paint_layer.cc:151
-#, fuzzy
-#| msgid "Locked"
-msgid "Alpha Locked"
-msgstr "ताल्चा लगाइएको"
-
 #: image/tests/kis_random_generator_demo.cpp:141
 msgid "kis_random_generator_demo"
 msgstr ""
@@ -9859,14 +9880,6 @@ msgstr "समतल छवि"
 #: image/kis_bookmarked_configuration_manager.cc:35
 msgid "Last used"
 msgstr "अन्तिम प्रयोग गरिएको"
-
-#: image/kis_base_node.cpp:120
-msgid "Visible"
-msgstr "दृश्यात्मक"
-
-#: image/kis_base_node.cpp:121
-msgid "Locked"
-msgstr "ताल्चा लगाइएको"
 
 #: image/recorder/kis_macro.cc:93
 msgid "Play macro"
@@ -11247,7 +11260,7 @@ msgstr "स्मियरी ब्रुस"
 msgid "Float"
 msgstr "फ्ल्यास गर्नुहोस्"
 
-#: plugins/colorspaces/ctlcs/ctl_cs_plugin.cpp:127
+#: plugins/colorspaces/ctlcs/ctl_cs_plugin.cpp:115
 #: plugins/colorspaces/lms_f32/lms_f32_plugin.cc:54
 msgid "Float32 Histogram"
 msgstr "उत्प्लावन ३२ हिस्टोग्राम"
