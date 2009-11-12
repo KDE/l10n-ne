@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-08 06:06+0100\n"
+"POT-Creation-Date: 2009-11-12 06:18+0100\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3695,24 +3695,22 @@ msgstr "सर्भरबाट सन्देश:"
 msgid "SQL statement:"
 msgstr "SQL कथन:"
 
-#: kexidb/utils.cpp:142
-msgid "Server result name:"
+#: kexidb/utils.cpp:148 kexidb/utils.cpp:155
+#, fuzzy
+#| msgid "Server result name:"
+msgid "Server result:"
 msgstr "सर्भर परिणाम नाम:"
 
-#: kexidb/utils.cpp:145
-msgid "Server result number:"
-msgstr "सर्भर परिणाम नम्बर:"
-
-#: kexidb/utils.cpp:380 kexidb/utils.cpp:436 kexidb/utils.cpp:441
+#: kexidb/utils.cpp:391 kexidb/utils.cpp:447 kexidb/utils.cpp:452
 msgid "Test Connection"
 msgstr "परीक्षण जडान"
 
-#: kexidb/utils.cpp:381
+#: kexidb/utils.cpp:392
 #, kde-format
 msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
 msgstr "<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान...</qt>"
 
-#: kexidb/utils.cpp:435
+#: kexidb/utils.cpp:446
 #, kde-format
 msgid ""
 "<qt>Test connection to <b>%1</b> database server failed. The server is not "
@@ -3721,7 +3719,7 @@ msgstr ""
 "<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान असफल । यो सर्भरले प्रतिक्रिया गरिरहेको "
 "छैन ।</qt>"
 
-#: kexidb/utils.cpp:439
+#: kexidb/utils.cpp:450
 #, kde-format
 msgid ""
 "<qt>Test connection to <b>%1</b> database server established successfully.</"
@@ -3729,11 +3727,11 @@ msgid ""
 msgstr ""
 "<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान सफलता पूर्वक स्थापना गरियो ।</qt>"
 
-#: kexidb/utils.cpp:1236
+#: kexidb/utils.cpp:1247
 msgid "Number"
 msgstr "नम्बर"
 
-#: kexidb/utils.cpp:1239 widget/utils/kexicontextmenuutils.cpp:290
+#: kexidb/utils.cpp:1250 widget/utils/kexicontextmenuutils.cpp:290
 #: plugins/forms/kexidbfactory.cpp:344
 #: plugins/reportspgz/koreport/wrtembed/reportdesigner.cpp:1511
 msgid "Image"
@@ -6908,9 +6906,10 @@ msgid "Define Query..."
 msgstr "क्वेरी परिभाषित गर्नुहोस्..."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:935
-#: plugins/queries/kexiquerydesignersqlhistory.cpp:354
-#, kde-format
-msgid "Error: %1"
+#, fuzzy, kde-format
+#| msgid "Error: %1"
+msgctxt "Question"
+msgid "Error: %1?"
 msgstr "त्रुटि: %1"
 
 #: widget/tableview/kexidataawareobjectiface.cpp:951
@@ -6935,31 +6934,31 @@ msgstr "तपाईँ चयन गरिएको पङ्क्ति म�
 msgid "&Delete Row"
 msgstr "पङ्क्ति मेट्नुहोस्"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1317
+#: widget/tableview/kexidataawareobjectiface.cpp:1318
 #, kde-format
 msgid "Do you want to clear the contents of table %1?"
 msgstr "के तपाई तालिका \"%1\" को सामग्रीहरू हटाउन चाहनुहुन्छ?"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1318
+#: widget/tableview/kexidataawareobjectiface.cpp:1319
 msgid "&Clear Contents"
 msgstr "सामग्रीहरू खाली गर्नुहोस्"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1737
+#: widget/tableview/kexidataawareobjectiface.cpp:1738
 #, fuzzy, kde-format
 #| msgid "Row: "
 msgid "Row: %1"
 msgstr "पङ्क्ति: "
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1856
+#: widget/tableview/kexidataawareobjectiface.cpp:1857
 msgctxt "Correct Changes"
 msgid "Correct"
 msgstr "सहि"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1858
+#: widget/tableview/kexidataawareobjectiface.cpp:1859
 msgid "Correct changes"
 msgstr "परिवर्तन सच्याउनुहोस्"
 
-#: widget/tableview/kexidataawareobjectiface.cpp:1859
+#: widget/tableview/kexidataawareobjectiface.cpp:1860
 msgid "Discard Changes"
 msgstr "परिवर्तन छोड्नुहोस्"
 
@@ -7000,12 +6999,6 @@ msgstr "रेकर्ड थप्नुहोस्"
 #: widget/tableview/kexitableview.cpp:244
 msgid "Remove Record"
 msgstr "रेकर्ड हटाउनुहोस्"
-
-#: widget/tableview/kexitableview.cpp:248
-#, fuzzy
-#| msgid "Row:"
-msgid "Row"
-msgstr "पङ्क्ति:"
 
 #: webforms/main.cpp:53
 msgid "Web Forms Daemon"
@@ -7800,6 +7793,11 @@ msgstr "के तपाई अवैध क्वेरी बचत गर्�
 #: plugins/queries/kexiquerydesignersqlhistory.cpp:50
 msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्डमा प्रतिलिपि गर्नुहोस्"
+
+#: plugins/queries/kexiquerydesignersqlhistory.cpp:354
+#, kde-format
+msgid "Error: %1"
+msgstr "त्रुटि: %1"
 
 #: plugins/queries/kexiquerypart.cpp:48
 msgctxt ""
@@ -9005,6 +9003,14 @@ msgstr "तालिका फिल्ड \"%1\""
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "रिक्त पङ्क्ति"
+
+#~ msgid "Server result number:"
+#~ msgstr "सर्भर परिणाम नम्बर:"
+
+#, fuzzy
+#~| msgid "Row:"
+#~ msgid "Row"
+#~ msgstr "पङ्क्ति:"
 
 #~ msgctxt "Unbound Auto Field"
 #~ msgid "(unbound)"
