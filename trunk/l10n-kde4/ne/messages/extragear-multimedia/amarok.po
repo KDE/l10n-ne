@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-09 08:06+0100\n"
+"POT-Creation-Date: 2009-12-10 06:47+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1239,14 +1239,14 @@ msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
 #: context/applets/albums/AlbumsView.cpp:115
 #: browsers/filebrowser/MyDirOperator.cpp:274
-#: playlist/view/PlaylistViewCommon.cpp:198
+#: playlist/view/PlaylistViewCommon.cpp:203
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
 msgid "Edit Track Details"
 msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
-#: context/applets/albums/Albums.cpp:178
+#: context/applets/albums/Albums.cpp:182
 #, fuzzy, kde-format
 #| msgid "disc"
 msgid "Disc %1"
@@ -1437,7 +1437,8 @@ msgstr "कलाकार"
 #: browsers/collectionbrowser/CollectionWidget.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250 rc.cpp:1225
 #: services/magnatune/MagnatuneStore.cpp:211
-#: services/jamendo/JamendoInfoParser.cpp:83 playlist/PlaylistHeader.cpp:40
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: playlist/view/PlaylistViewCommon.cpp:52 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:704 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Album"
@@ -5211,10 +5212,10 @@ msgstr "प्रवाह थप्नुहोस्..."
 msgid "&Export Playlist As..."
 msgstr "प्लेसूची आयात गर्नुहोस्..."
 
-#: MainWindow.cpp:747 MainWindow.cpp:755
+#: MainWindow.cpp:747 amarokurls/NavigationUrlGenerator.cpp:216
 #, fuzzy
 #| msgid "Bookmarks"
-msgid "Bookmark This Location"
+msgid "Bookmark Media Sources View"
 msgstr "पुस्तकचिनो"
 
 #: MainWindow.cpp:751 amarokurls/BookmarkManager.cpp:42
@@ -5222,6 +5223,12 @@ msgstr "पुस्तकचिनो"
 #| msgid "Cover Manager"
 msgid "Bookmark Manager"
 msgstr "आवरण प्रबन्धक"
+
+#: MainWindow.cpp:755 playlist/PlaylistViewUrlGenerator.cpp:101
+#, fuzzy
+#| msgid "Smart Playlists"
+msgid "Bookmark Playlist Setup"
+msgstr "छरितो प्ले सूचीहरू"
 
 #: MainWindow.cpp:759
 #, fuzzy
@@ -5315,7 +5322,7 @@ msgstr "हालको ट्रयाक पछि"
 msgid "Last.fm: Skip Current Track"
 msgstr "हालको ट्रयाक पछि"
 
-#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:106
+#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:111
 #, fuzzy
 #| msgid "&Queue Track"
 msgid "Queue Track"
@@ -10265,31 +10272,25 @@ msgstr "यो ट्रयाकका लागि कुनै सूचन�
 msgid "Ok"
 msgstr "ठीक छ"
 
-#: playlist/view/PlaylistViewCommon.cpp:48
-#, fuzzy
-#| msgid "Album"
-msgid " Album"
-msgstr "एल्बम"
-
-#: playlist/view/PlaylistViewCommon.cpp:99
+#: playlist/view/PlaylistViewCommon.cpp:104
 #, fuzzy
 #| msgid "&Stop Playing After Track"
 msgid "Stop Playing After This Track"
 msgstr "ट्रयाक पछि प्ले गर्न रोक्नुहोस्"
 
-#: playlist/view/PlaylistViewCommon.cpp:106
+#: playlist/view/PlaylistViewCommon.cpp:111
 #, fuzzy
 #| msgid "&Dequeue Track"
 msgid "Dequeue Track"
 msgstr "ट्रयाक लामबाट हटाउनुहोस्"
 
-#: playlist/view/PlaylistViewCommon.cpp:117
+#: playlist/view/PlaylistViewCommon.cpp:122
 #, fuzzy
 #| msgid "Re&move From Playlist"
 msgid "Remove From Playlist"
 msgstr "प्लेसूचीबाट हटाउनुहोस्"
 
-#: playlist/view/PlaylistViewCommon.cpp:181
+#: playlist/view/PlaylistViewCommon.cpp:186
 #, fuzzy
 #| msgid "Select Format:"
 msgid "Select Source"
@@ -10313,12 +10314,6 @@ msgstr "खोजी गर्नुहोस्"
 #| msgid_plural "%1 plays"
 msgid "%1 layout"
 msgstr "%1 प्ले"
-
-#: playlist/PlaylistViewUrlGenerator.cpp:101
-#, fuzzy
-#| msgid "Smart Playlists"
-msgid "Bookmark Playlist Setup"
-msgstr "छरितो प्ले सूचीहरू"
 
 #: playlist/PlaylistDefines.h:86
 msgctxt "Empty placeholder token used for spacing in playlist layouts"
@@ -11221,12 +11216,6 @@ msgstr ""
 msgid "Artist \"%1\""
 msgstr "कलाकार"
 
-#: amarokurls/NavigationUrlGenerator.cpp:216
-#, fuzzy
-#| msgid "Bookmarks"
-msgid "Bookmark Media Sources View"
-msgstr "पुस्तकचिनो"
-
 #: widgets/VolumeWidget.cpp:48
 #, fuzzy
 #| msgid "Mute"
@@ -11789,6 +11778,16 @@ msgstr "थप्नुहोस् र प्ले गर्नुहोस्
 #: TrayIcon.cpp:224
 msgid "&Queue Track"
 msgstr "लाम ट्रयाक"
+
+#, fuzzy
+#~| msgid "Bookmarks"
+#~ msgid "Bookmark This Location"
+#~ msgstr "पुस्तकचिनो"
+
+#, fuzzy
+#~| msgid "Album"
+#~ msgid " Album"
+#~ msgstr "एल्बम"
 
 #, fuzzy
 #~| msgid "No purchases found!"
