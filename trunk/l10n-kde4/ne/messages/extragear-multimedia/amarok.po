@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-21 06:18+0100\n"
+"POT-Creation-Date: 2010-01-22 06:50+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -582,13 +582,13 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Nepomuk Collection (slow, Redland)"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
-#: collection/sqlcollection/CapabilityDelegate.cpp:348
+#: collection/sqlcollection/CapabilityDelegate.cpp:386
 #, fuzzy
 #| msgid "Various Artists"
 msgid "Do not show under Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
-#: collection/sqlcollection/CapabilityDelegate.cpp:350
+#: collection/sqlcollection/CapabilityDelegate.cpp:388
 #, fuzzy
 #| msgid "Various Artists"
 msgid "Show under Various Artists"
@@ -660,7 +660,7 @@ msgstr ""
 
 #: collection/sqlcollection/ScanManager.cpp:742
 #: dialogs/OrganizeCollectionDialog.cpp:144
-#: browsers/CollectionTreeItem.cpp:201 covermanager/CoverFoundDialog.cpp:209
+#: browsers/CollectionTreeItem.cpp:198 covermanager/CoverFoundDialog.cpp:209
 #: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:853
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
@@ -1240,7 +1240,7 @@ msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
 #: context/applets/albums/AlbumsView.cpp:115
 #: browsers/filebrowser/MyDirOperator.cpp:317
-#: playlist/view/PlaylistViewCommon.cpp:203
+#: playlist/view/PlaylistViewCommon.cpp:242
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
@@ -1439,7 +1439,7 @@ msgstr "कलाकार"
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250 rc.cpp:1237
 #: services/magnatune/MagnatuneStore.cpp:211
 #: services/jamendo/JamendoInfoParser.cpp:83
-#: playlist/view/PlaylistViewCommon.cpp:52 playlist/PlaylistHeader.cpp:40
+#: playlist/view/PlaylistViewCommon.cpp:66 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:704 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197 covermanager/CoverFoundDialog.cpp:93
 msgid "Album"
@@ -4612,7 +4612,7 @@ msgstr "एक मिनेट अघि"
 msgid "Year - Album"
 msgstr "कलाकार - एल्बम"
 
-#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:143
+#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:144
 #, fuzzy, kde-format
 #| msgid "%1:%2 hours"
 msgid "%1% used"
@@ -5005,7 +5005,7 @@ msgid "By"
 msgstr "योजना परिमार्जन गर्नुहोस्"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:243
-#: browsers/playlistbrowser/DynamicCategory.cpp:70
+msgctxt "Podcast published on"
 msgid "On"
 msgstr ""
 
@@ -5047,6 +5047,11 @@ msgstr ""
 msgid ""
 "With a dynamic playlist, Amarok becomes your own personal dj, automatically "
 "selecting tracks for you, based on a number of parameters that you select."
+msgstr ""
+
+#: browsers/playlistbrowser/DynamicCategory.cpp:70
+msgctxt "Turn dynamic mode on"
+msgid "On"
 msgstr ""
 
 #: browsers/playlistbrowser/DynamicCategory.cpp:71
@@ -5134,20 +5139,20 @@ msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।
 msgid "Add Folder"
 msgstr "फोल्डर"
 
-#: browsers/CollectionTreeItem.cpp:183
+#: browsers/CollectionTreeItem.cpp:180
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "The Name is not known"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: browsers/CollectionTreeItem.cpp:212
+#: browsers/CollectionTreeItem.cpp:209
 #, fuzzy
 #| msgid "Connect"
 msgid "Counting"
 msgstr "जडान गर्नुहोस्"
 
-#: browsers/CollectionTreeItem.cpp:230
+#: browsers/CollectionTreeItem.cpp:227
 #: playlist/proxymodels/GroupingProxy.cpp:100
 #, fuzzy, kde-format
 #| msgid "1 track"
@@ -5403,7 +5408,7 @@ msgstr "हालको ट्रयाक पछि"
 msgid "Last.fm: Skip Current Track"
 msgstr "हालको ट्रयाक पछि"
 
-#: MainWindow.cpp:876 playlist/view/PlaylistViewCommon.cpp:111
+#: MainWindow.cpp:876 playlist/view/PlaylistViewCommon.cpp:128
 #, fuzzy
 #| msgid "&Queue Track"
 msgid "Queue Track"
@@ -8671,8 +8676,8 @@ msgstr "म्यागनाटुन सूचना"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, downloadButton)
-#: rc.cpp:1504 services/jamendo/JamendoMeta.cpp:137
-#: services/jamendo/JamendoMeta.cpp:377
+#: rc.cpp:1504 services/jamendo/JamendoMeta.cpp:135
+#: services/jamendo/JamendoMeta.cpp:371
 msgid "&Download"
 msgstr "डाउनलोड"
 
@@ -9754,11 +9759,6 @@ msgstr "%1को व्यक्तिगत रेडियो"
 msgid "last.fm"
 msgstr "last.fm"
 
-#: services/ShowInServiceAction.cpp:27
-#, kde-format
-msgid "Go to artist in %1 service"
-msgstr ""
-
 #: services/magnatune/MagnatuneInfoParser.cpp:31
 #, fuzzy
 #| msgid "Fetching artist info..."
@@ -9833,37 +9833,37 @@ msgid ""
 "buy using Amarok, you support the Amarok project with 10%."
 msgstr ""
 
-#: services/magnatune/MagnatuneMeta.cpp:219
-#: services/magnatune/MagnatuneMeta.cpp:441
+#: services/magnatune/MagnatuneMeta.cpp:217
+#: services/magnatune/MagnatuneMeta.cpp:430
 #, fuzzy
 #| msgid "Purchase Album"
 msgid "&Purchase Album"
 msgstr "एल्बम खरीद गर्नुहोस्"
 
-#: services/magnatune/MagnatuneMeta.cpp:221
-#: services/magnatune/MagnatuneMeta.cpp:443
+#: services/magnatune/MagnatuneMeta.cpp:219
+#: services/magnatune/MagnatuneMeta.cpp:432
 #, fuzzy
 #| msgid "Downloading album"
 msgid "&Download Album"
 msgstr "एल्बम डाउनलोड गर्दै"
 
-#: services/magnatune/MagnatuneMeta.cpp:244
+#: services/magnatune/MagnatuneMeta.cpp:242
 #, fuzzy
 #| msgid "Magnatune.com Album Download"
 msgid "Magnatune.com: &Purchase Album"
 msgstr "Magnatune.com एल्बम डाउनलोड"
 
-#: services/magnatune/MagnatuneMeta.cpp:246
+#: services/magnatune/MagnatuneMeta.cpp:244
 #, fuzzy
 #| msgid "Magnatune.com Album Download"
 msgid "Magnatune.com: &Download Album"
 msgstr "Magnatune.com एल्बम डाउनलोड"
 
-#: services/magnatune/MagnatuneMeta.cpp:277
+#: services/magnatune/MagnatuneMeta.cpp:266
 msgid "The non evil record label that is fair to artists and customers alike"
 msgstr ""
 
-#: services/magnatune/MagnatuneMeta.cpp:449
+#: services/magnatune/MagnatuneMeta.cpp:438
 #, fuzzy
 #| msgid "Downloading Magnatune.com Database"
 msgid "Add to Magnatune.com &favorites"
@@ -10296,13 +10296,13 @@ msgstr ""
 msgid "Uploading Track %1/%2"
 msgstr "आगामी ट्रयाकहरू:"
 
-#: services/jamendo/JamendoMeta.cpp:155
+#: services/jamendo/JamendoMeta.cpp:153
 #, fuzzy
 #| msgid "Media Download"
 msgid "Jamendo.com: &Download"
 msgstr "मिडिया डाउनलोड गर्नुहोस्"
 
-#: services/jamendo/JamendoMeta.cpp:178
+#: services/jamendo/JamendoMeta.cpp:172
 msgid "A site where artists can freely share their music"
 msgstr ""
 
@@ -10391,25 +10391,31 @@ msgstr "यो ट्रयाकका लागि कुनै सूचन�
 msgid "Ok"
 msgstr "ठीक छ"
 
-#: playlist/view/PlaylistViewCommon.cpp:104
+#: playlist/view/PlaylistViewCommon.cpp:120
 #, fuzzy
 #| msgid "&Stop Playing After Track"
 msgid "Stop Playing After This Track"
 msgstr "ट्रयाक पछि प्ले गर्न रोक्नुहोस्"
 
-#: playlist/view/PlaylistViewCommon.cpp:111
+#: playlist/view/PlaylistViewCommon.cpp:128
 #, fuzzy
 #| msgid "&Dequeue Track"
 msgid "Dequeue Track"
 msgstr "ट्रयाक लामबाट हटाउनुहोस्"
 
-#: playlist/view/PlaylistViewCommon.cpp:122
+#: playlist/view/PlaylistViewCommon.cpp:150
 #, fuzzy
 #| msgid "Re&move From Playlist"
 msgid "Remove From Playlist"
 msgstr "प्लेसूचीबाट हटाउनुहोस्"
 
-#: playlist/view/PlaylistViewCommon.cpp:186
+#: playlist/view/PlaylistViewCommon.cpp:182
+#, fuzzy
+#| msgid "File Extension of Source"
+msgid "Find in Source"
+msgstr "स्रोतको फाइल विस्तार"
+
+#: playlist/view/PlaylistViewCommon.cpp:225
 #, fuzzy
 #| msgid "Select Format:"
 msgid "Select Source"
