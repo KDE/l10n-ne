@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-27 06:14+0100\n"
+"POT-Creation-Date: 2010-01-26 06:20+0100\n"
 "PO-Revision-Date: 2007-02-11 16:52+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -51,14 +51,14 @@ msgstr "ट्रयाक"
 msgid "unknown"
 msgstr ""
 
-#: encodefileimp.cpp:415 tracksimp.cpp:479
+#: encodefileimp.cpp:415 tracksimp.cpp:521
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
 "section."
 msgstr "%1 काम सुरु भइसकेको छ । तपाईँ तिनीहरूको प्रगति काम सेक्सनमा हेर्न सक्नुहुन्छ ।"
 
-#: encodefileimp.cpp:417 tracksimp.cpp:481
+#: encodefileimp.cpp:417 tracksimp.cpp:523
 msgid "Jobs have started"
 msgstr "काम सुरु भयो"
 
@@ -68,11 +68,11 @@ msgstr "काम सुरु भयो"
 msgid "File"
 msgstr "शीर्षक"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Title"
 msgstr "शीर्षक"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Artist:"
 msgid "Artist"
@@ -85,7 +85,7 @@ msgctxt "@title:column"
 msgid "Album"
 msgstr "एल्बम"
 
-#: encodefilemodel.cpp:30 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:30 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -97,7 +97,7 @@ msgstr "टिप्पणी:"
 msgid "Genre"
 msgstr "विधा:"
 
-#: encodefilemodel.cpp:31 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:31 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Track"
 msgstr "ट्रयाक"
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "Running"
 msgstr ""
 
-#: jobdelegate.cpp:51 tracksimp.cpp:213
+#: jobdelegate.cpp:51
 msgid "Error"
 msgstr ""
 
@@ -1489,79 +1489,80 @@ msgstr "रिपिङ: %1 - %2"
 msgid "Track %1.wav"
 msgstr "ट्रयाक"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "रिप"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:592
 msgid "Length"
 msgstr "लम्बाइ"
 
-#: tracksimp.cpp:103
+#: tracksimp.cpp:116
 #, fuzzy
 #| msgid "No Encoder Selected"
 msgid "none detected"
 msgstr "कुनै सङ्केतक चयन गरिएको छैन"
 
-#: tracksimp.cpp:210
-#, kde-format
-msgid ""
-"CDROM read or access error (or no audio disk in drive).\n"
-"Please make sure you have access permissions to:\n"
-"%1"
-msgstr ""
-"सीडी रोम पढ्दा वा पहुँच गर्ने क्रममा त्रुटि ( वा ड्राइभमा कुनै अडियो चक्का छैन) ।\n"
-"कृपया तपाईँलाई निम्न दिइएकोमा पहुँच अनुमति छ छैन भन्ने कुरा जाँच गर्नुहोस्:\n"
-"%1"
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Artist"
+msgstr "अज्ञात कलाकार - अज्ञात एल्बम"
 
-#: tracksimp.cpp:223
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Album"
+msgstr "अज्ञात कलाकार - अज्ञात एल्बम"
+
+#: tracksimp.cpp:268
 msgid "Please insert a disk."
 msgstr "कृपया डिस्क घुसाउनुहोस् ।"
 
-#: tracksimp.cpp:224 tracksimp.cpp:250
+#: tracksimp.cpp:269 tracksimp.cpp:295
 msgid "CDDB Failed"
 msgstr "सीडीडीबी असफल भयो"
 
-#: tracksimp.cpp:250
+#: tracksimp.cpp:295
 msgid "Unable to retrieve CDDB information."
 msgstr "सीडीडीबी जानकारी पुन: प्राप्त गर्न अक्षम भयो ।"
 
-#: tracksimp.cpp:270
+#: tracksimp.cpp:316
 msgid "Select CDDB entry"
 msgstr "सीडीडीबी प्रविष्टि चयन गर्नुहोस्"
 
-#: tracksimp.cpp:271
+#: tracksimp.cpp:317
 msgid "Select a CDDB entry:"
 msgstr "सीडीडीबी प्रविष्टि चयन गर्नुहोस्:"
 
-#: tracksimp.cpp:361
+#: tracksimp.cpp:407
 msgid "CD Editor"
 msgstr "सीडी सम्पादक"
 
-#: tracksimp.cpp:424
+#: tracksimp.cpp:466
 msgid "No tracks have been selected.  Would you like to rip the entire CD?"
 msgstr "कुनै पनि ट्र्याक चयन गरिएको छैन ।  के तपाईँले पूरै सीडी रिप गर्न चाहनुहुन्छ?"
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:467
 msgid "No Tracks Selected"
 msgstr "ट्रयाक चयन गरिएको छैन"
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:467
 msgid "Rip CD"
 msgstr "सीडी रिप गर्नुहोस्"
 
-#: tracksimp.cpp:434
+#: tracksimp.cpp:476
 msgid "Could not find audiocd:/ protocol. Please install the audiocd ioslave"
 msgstr ""
 
-#: tracksimp.cpp:435
+#: tracksimp.cpp:477
 msgid "Protocol Not Found"
 msgstr ""
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 #, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1572,19 +1573,19 @@ msgstr ""
 " (एल्बम जानकारी परिवर्तन गर्न \"सूचना सम्पादन गर्नुहोस्\" बटनमा क्लिक गर्नुहोस् ।)\n"
 " तपाईँ जसरी पनि चयन गरिएको ट्रयाक रिप गर्न चाहनुहुन्छ ?"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 msgid "Album Information Incomplete"
 msgstr "अपूर्ण एल्बम जानकारी"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:492
 msgid "Rip"
 msgstr "रिप"
 
-#: tracksimp.cpp:605
+#: tracksimp.cpp:647
 msgid " - "
 msgstr " - "
 
-#: tracksimp.cpp:607
+#: tracksimp.cpp:649
 msgid "No disc"
 msgstr "डिस्क छैन"
 
@@ -1596,6 +1597,15 @@ msgstr "उदाहरण: %1"
 #: job.h:35
 msgid "Other"
 msgstr "अन्य"
+
+#~ msgid ""
+#~ "CDROM read or access error (or no audio disk in drive).\n"
+#~ "Please make sure you have access permissions to:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "सीडी रोम पढ्दा वा पहुँच गर्ने क्रममा त्रुटि ( वा ड्राइभमा कुनै अडियो चक्का छैन) ।\n"
+#~ "कृपया तपाईँलाई निम्न दिइएकोमा पहुँच अनुमति छ छैन भन्ने कुरा जाँच गर्नुहोस्:\n"
+#~ "%1"
 
 #~ msgid "Number of tracks to rip at a time"
 #~ msgstr "एक समयमा भित्र रिप गर्ने ट्रयाकको सङ्ख्या"
