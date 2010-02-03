@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-02 06:19+0100\n"
+"POT-Creation-Date: 2010-02-03 07:11+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: mac/GrowlInterface.cpp:37 context/engines/current/CurrentEngine.cpp:150
 #: context/applets/currenttrack/CurrentTrack.cpp:127
-#: context/applets/photos/PhotosApplet.cpp:132 App.cpp:1103
+#: context/applets/photos/PhotosApplet.cpp:132 Amarok.cpp:190
 #: widgets/Osd.cpp:578
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
@@ -153,25 +153,25 @@ msgstr "गतिशील प्लेसूची सिर्जना गर
 msgid "Cannot write playlist (%1)."
 msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
 
-#: meta/PlaylistFileSupport.cpp:91
+#: meta/PlaylistFileSupport.cpp:93
 #, fuzzy, kde-format
 #| msgid "Cannot write playlist (%1)."
 msgid "Cannot read playlist (%1)."
 msgstr "प्ले सूची (%1) लेख्न सकिँदैन ।"
 
-#: meta/PlaylistFileSupport.cpp:109
+#: meta/PlaylistFileSupport.cpp:111
 #, fuzzy
 #| msgid "Could not create new playlist on device."
 msgid "Could not create a temporary file to download playlist."
 msgstr "यन्त्रमा नयाँ प्ले सूची सिर्जना गर्न सकेन ।"
 
-#: meta/PlaylistFileSupport.cpp:124
+#: meta/PlaylistFileSupport.cpp:126
 #, fuzzy
 #| msgid "Loading Playlist"
 msgid "Downloading remote playlist"
 msgstr "प्ले सूची लोड गर्दै"
 
-#: meta/PlaylistFileSupport.cpp:207
+#: meta/PlaylistFileSupport.cpp:209
 #, fuzzy, kde-format
 #| msgid "&Playlist"
 msgid "Playlist_%1"
@@ -1232,7 +1232,7 @@ msgstr "हालको ट्रयाक पछि"
 #: browsers/filebrowser/MyDirOperator.cpp:315
 #: browsers/filebrowser/FileView.cpp:156
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:585
-#: browsers/playlistbrowser/PodcastModel.cpp:976
+#: browsers/playlistbrowser/PodcastModel.cpp:973
 #: services/lastfm/LastFmTreeView.cpp:112 TrayIcon.cpp:221
 #, fuzzy
 #| msgid "Add to Playlist"
@@ -1244,7 +1244,7 @@ msgstr "प्ले सूचीमा थप्नुहोस्"
 #: browsers/filebrowser/MyDirOperator.cpp:316
 #: browsers/filebrowser/FileView.cpp:165
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:592
-#: browsers/playlistbrowser/PodcastModel.cpp:988
+#: browsers/playlistbrowser/PodcastModel.cpp:985
 #: services/lastfm/LastFmTreeView.cpp:121
 #, fuzzy
 #| msgid "Repeat Playlist"
@@ -2023,7 +2023,7 @@ msgstr "सङ्कलन"
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:166 dialogs/FilenameLayoutDialog.cpp:483
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
-#: browsers/playlistbrowser/PodcastModel.cpp:451 rc.cpp:1153
+#: browsers/playlistbrowser/PodcastModel.cpp:448 rc.cpp:1153
 #: playlist/PlaylistModel.cpp:699 widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr "शीर्षक"
@@ -2298,7 +2298,7 @@ msgstr ""
 msgid "Filename Layout Chooser"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:679 browsers/playlistbrowser/PodcastModel.cpp:452
+#: dialogs/TagDialog.cpp:679 browsers/playlistbrowser/PodcastModel.cpp:449
 msgid "Summary"
 msgstr "सारांश"
 
@@ -2754,15 +2754,15 @@ msgstr ""
 
 #. i18n: file: collection/audiocd/FormatSelectionDialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
-#: App.cpp:119 rc.cpp:536
+#: App.cpp:116 rc.cpp:536
 msgid "Amarok"
 msgstr "अमारोक"
 
-#: App.cpp:120
+#: App.cpp:117
 msgid "The audio player for KDE"
 msgstr "केडीईका लागि अडियो प्लेयर"
 
-#: App.cpp:121
+#: App.cpp:118
 #, fuzzy
 #| msgid ""
 #| "(C) 2002-2003, Mark Kretschmann\n"
@@ -2774,7 +2774,7 @@ msgstr ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2007, अमारोक विकास स्क्वाड"
 
-#: App.cpp:122
+#: App.cpp:119
 #, fuzzy, kde-format
 #| msgid ""
 #| "IRC:\n"
@@ -2800,282 +2800,122 @@ msgstr ""
 "amarok@kde.org \n"
 "(निर्माण मिती: "
 
-#: App.cpp:490
+#: App.cpp:487
 msgid "Files/URLs to open"
 msgstr "फाइल/यूआरएल खोल्नका लागि "
 
-#: App.cpp:492
+#: App.cpp:489
 msgid "Skip backwards in playlist"
 msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:494
+#: App.cpp:491
 msgid "Start playing current playlist"
 msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
 
-#: App.cpp:496
+#: App.cpp:493
 msgid "Play if stopped, pause if playing"
 msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
 
-#: App.cpp:497
+#: App.cpp:494
 msgid "Pause playback"
 msgstr "प्लेब्याक पज गर्नुहोस्"
 
-#: App.cpp:499
+#: App.cpp:496
 msgid "Stop playback"
 msgstr "प्लेब्याक रोक्नुहोस्"
 
-#: App.cpp:501
+#: App.cpp:498
 msgid "Skip forwards in playlist"
 msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
 
-#: App.cpp:502
+#: App.cpp:499
 msgid "Additional options:"
 msgstr "अतिरिक्त विकल्प:"
 
-#: App.cpp:504
+#: App.cpp:501
 msgid "Append files/URLs to playlist"
 msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
 
-#: App.cpp:505
+#: App.cpp:502
 msgid "Queue URLs after the currently playing track"
 msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
 
-#: App.cpp:507
+#: App.cpp:504
 msgid "Load URLs, replacing current playlist"
 msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
 
-#: App.cpp:509
+#: App.cpp:506
 #, fuzzy
 #| msgid "Click to get the plugin information."
 msgid "Print verbose debugging information"
 msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
 
-#: App.cpp:511
+#: App.cpp:508
 msgid "Allow running multiple Amarok instances"
 msgstr ""
 
-#: App.cpp:512
+#: App.cpp:509
 msgid "Base for relative filenames/URLs"
 msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
 
-#: App.cpp:514
+#: App.cpp:511
 #, fuzzy
 #| msgid "Stream Done"
 msgid "Unit test options:"
 msgstr "प्रवाह पूरा भयो"
 
-#: App.cpp:515
+#: App.cpp:512
 msgid "Run integrated unit tests"
 msgstr ""
 
-#: App.cpp:516
+#: App.cpp:513
 msgid "Destination of test output: 'stdout', 'log'"
 msgstr ""
 
-#: App.cpp:517
+#: App.cpp:514
 msgid "Format of test output: 'xml', 'lightxml', 'plaintext'"
 msgstr ""
 
-#: App.cpp:518
+#: App.cpp:515
 msgid "Verbosity from 0-3 (highest)"
 msgstr ""
 
-#: App.cpp:774
+#: App.cpp:771
 msgid ""
 "The embedded database was not found; you must set up a database server "
 "connection.\n"
 "You must restart Amarok after doing this."
 msgstr ""
 
-#: App.cpp:775
+#: App.cpp:772
 msgid ""
 "The connection details for the database server were invalid.\n"
 "You must enter correct settings and restart Amarok after doing this."
 msgstr ""
 
-#: App.cpp:776
+#: App.cpp:773
 #, fuzzy
 #| msgid "Database:"
 msgid "Database Error"
 msgstr "डाटाबेस:"
 
-#: App.cpp:793
+#: App.cpp:790
 #, kde-format
 msgid ""
 "A music path, %1, is set in System Settings.\n"
 "Would you like to use that as a collection folder?"
 msgstr ""
 
-#: App.cpp:836
+#: App.cpp:833
 msgid ""
 "<p>The version of the 'amarokcollectionscanner' tool\n"
 "does not match your Amarok version.</p><p>Please note that Collection "
 "Scanning may not work correctly.</p>"
 msgstr ""
 
-#: App.cpp:877
+#: App.cpp:874
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
-
-#: App.cpp:975
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "When this track was last played"
-msgid "Unknown"
-msgstr "अज्ञात"
-
-#: App.cpp:980
-#, kde-format
-msgctxt "monthname year"
-msgid "%1 %2"
-msgstr "%1: %2"
-
-#: App.cpp:987
-#, fuzzy, kde-format
-msgid "One week ago"
-msgid_plural "%1 weeks ago"
-msgstr[0] "एक हप्ता अघि"
-msgstr[1] "एक हप्ता अघि"
-
-#: App.cpp:993
-msgid "Yesterday"
-msgstr "हिजो"
-
-#: App.cpp:994
-#, fuzzy, kde-format
-msgid "One day ago"
-msgid_plural "%1 days ago"
-msgstr[0] "एक दिन अघि"
-msgstr[1] "एक दिन अघि"
-
-#: App.cpp:997
-#, fuzzy, kde-format
-msgid "One hour ago"
-msgid_plural "%1 hours ago"
-msgstr[0] "एक घण्टा अघि"
-msgstr[1] "एक घण्टा अघि"
-
-#: App.cpp:1003
-#, fuzzy, kde-format
-msgid "One minute ago"
-msgid_plural "%1 minutes ago"
-msgstr[0] "एक मिनेट अघि"
-msgstr[1] "एक मिनेट अघि"
-
-#: App.cpp:1004
-msgid "Within the last minute"
-msgstr "अन्तिम मिनेट भित्र"
-
-#: App.cpp:1006
-msgid "The future"
-msgstr "भविष्य"
-
-#: App.cpp:1012
-#, fuzzy
-#| msgid "Never"
-msgctxt "The amount of time since last played"
-msgid "Never"
-msgstr "कहिल्यै पनि"
-
-#: App.cpp:1022
-#, fuzzy
-#| msgid "10"
-msgctxt "The amount of time since last played"
-msgid "0"
-msgstr "१०"
-
-#: App.cpp:1031
-#, fuzzy, kde-format
-#| msgid "%1"
-msgctxt "number of months ago"
-msgid "%1M"
-msgstr "%1"
-
-#: App.cpp:1035
-#, fuzzy, kde-format
-#| msgid "%1"
-msgctxt "w for weeks"
-msgid "%1w"
-msgstr "%1"
-
-#: App.cpp:1038
-#, fuzzy
-#| msgid "Tomorrow"
-msgctxt "When this track was last played"
-msgid "Tomorrow"
-msgstr "भोली"
-
-#: App.cpp:1044
-#, fuzzy, no-c-format, kde-format
-#| msgid "%1"
-msgctxt "d for days"
-msgid "%1d"
-msgstr "%1"
-
-#: App.cpp:1047
-#, fuzzy, kde-format
-#| msgid "%1"
-msgctxt "h for hours"
-msgid "%1h"
-msgstr "%1"
-
-#. i18n: file: dialogs/EqualizerDialog.ui:290
-#. i18n: ectx: property (text), widget (QLabel, eqPreampValue)
-#. i18n: file: dialogs/EqualizerDialog.ui:404
-#. i18n: ectx: property (text), widget (QLabel, eqBand0Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:499
-#. i18n: ectx: property (text), widget (QLabel, eqBand1Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:588
-#. i18n: ectx: property (text), widget (QLabel, eqBand2Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:680
-#. i18n: ectx: property (text), widget (QLabel, eqBand3Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:769
-#. i18n: ectx: property (text), widget (QLabel, eqBand4Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:858
-#. i18n: ectx: property (text), widget (QLabel, eqBand5Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:950
-#. i18n: ectx: property (text), widget (QLabel, eqBand6Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:1042
-#. i18n: ectx: property (text), widget (QLabel, eqBand7Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:1134
-#. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
-#. i18n: file: dialogs/EqualizerDialog.ui:1226
-#. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#: App.cpp:1056 rc.cpp:1276 rc.cpp:1282 rc.cpp:1288 rc.cpp:1294 rc.cpp:1300
-#: rc.cpp:1306 rc.cpp:1312 rc.cpp:1318 rc.cpp:1324 rc.cpp:1330 rc.cpp:1336
-#, fuzzy
-#| msgid "10"
-msgid "0"
-msgstr "१०"
-
-#: App.cpp:1073
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
-
-#: App.cpp:1076
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: App.cpp:1080
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: App.cpp:1085
-msgid "Unknown track"
-msgstr "अज्ञात ट्रयाक"
-
-#: App.cpp:1092
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgctxt "track from source"
-msgid "from <b>%1</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
 #: aboutdialog/ExtendedAboutDialog.cpp:73
 msgid ""
@@ -3479,7 +3319,7 @@ msgid "Unable to save podcast episode file to %1"
 msgstr "%1 GB %2 (x%3) मा आईपोड नमूना सेट गर्दै"
 
 #: podcasts/sql/SqlPodcastProvider.h:47
-#: browsers/playlistbrowser/PodcastModel.cpp:820
+#: browsers/playlistbrowser/PodcastModel.cpp:817
 #, fuzzy
 #| msgid "Podcasts"
 msgid "Local Podcasts"
@@ -4859,24 +4699,24 @@ msgstr ""
 msgid "Strictness:"
 msgstr "यन्त्र"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:450
+#: browsers/playlistbrowser/PodcastModel.cpp:447
 #: playlist/PlaylistModel.cpp:711 amarokurls/BookmarkModel.cpp:266
 msgid "Type"
 msgstr "प्रकार"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:603
+#: browsers/playlistbrowser/PodcastModel.cpp:600
 #, fuzzy
 #| msgid "Add Podcast"
 msgid "Add Podcast"
 msgstr "पोडकास्ट थप्नुहोस्"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:604
+#: browsers/playlistbrowser/PodcastModel.cpp:601
 #, fuzzy
 #| msgid "Enter Podcast URL:"
 msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:1008
+#: browsers/playlistbrowser/PodcastModel.cpp:1005
 #, fuzzy
 #| msgid "&Next"
 msgctxt "toggle the \"new\" status of this podcast episode"
@@ -8298,6 +8138,35 @@ msgstr ""
 msgid "- dB"
 msgstr ""
 
+#. i18n: file: dialogs/EqualizerDialog.ui:290
+#. i18n: ectx: property (text), widget (QLabel, eqPreampValue)
+#. i18n: file: dialogs/EqualizerDialog.ui:404
+#. i18n: ectx: property (text), widget (QLabel, eqBand0Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:499
+#. i18n: ectx: property (text), widget (QLabel, eqBand1Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:588
+#. i18n: ectx: property (text), widget (QLabel, eqBand2Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:680
+#. i18n: ectx: property (text), widget (QLabel, eqBand3Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:769
+#. i18n: ectx: property (text), widget (QLabel, eqBand4Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:858
+#. i18n: ectx: property (text), widget (QLabel, eqBand5Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:950
+#. i18n: ectx: property (text), widget (QLabel, eqBand6Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:1042
+#. i18n: ectx: property (text), widget (QLabel, eqBand7Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:1134
+#. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
+#. i18n: file: dialogs/EqualizerDialog.ui:1226
+#. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
+#: rc.cpp:1276 rc.cpp:1282 rc.cpp:1288 rc.cpp:1294 rc.cpp:1300 rc.cpp:1306
+#: rc.cpp:1312 rc.cpp:1318 rc.cpp:1324 rc.cpp:1330 rc.cpp:1336 Amarok.cpp:143
+#, fuzzy
+#| msgid "10"
+msgid "0"
+msgstr "१०"
+
 #. i18n: file: dialogs/EqualizerDialog.ui:349
 #. i18n: ectx: property (text), widget (QLabel, eqPreampLabel)
 #. i18n: file: dialogs/EqualizerDialog.ui:454
@@ -9216,6 +9085,137 @@ msgstr ""
 #: analyzers/boomanalyzer.cpp:51
 msgid "Peak acceleration: "
 msgstr ""
+
+#: Amarok.cpp:62
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "When this track was last played"
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: Amarok.cpp:67
+#, kde-format
+msgctxt "monthname year"
+msgid "%1 %2"
+msgstr "%1: %2"
+
+#: Amarok.cpp:74
+#, fuzzy, kde-format
+msgid "One week ago"
+msgid_plural "%1 weeks ago"
+msgstr[0] "एक हप्ता अघि"
+msgstr[1] "एक हप्ता अघि"
+
+#: Amarok.cpp:80
+msgid "Yesterday"
+msgstr "हिजो"
+
+#: Amarok.cpp:81
+#, fuzzy, kde-format
+msgid "One day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "एक दिन अघि"
+msgstr[1] "एक दिन अघि"
+
+#: Amarok.cpp:84
+#, fuzzy, kde-format
+msgid "One hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "एक घण्टा अघि"
+msgstr[1] "एक घण्टा अघि"
+
+#: Amarok.cpp:90
+#, fuzzy, kde-format
+msgid "One minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "एक मिनेट अघि"
+msgstr[1] "एक मिनेट अघि"
+
+#: Amarok.cpp:91
+msgid "Within the last minute"
+msgstr "अन्तिम मिनेट भित्र"
+
+#: Amarok.cpp:93
+msgid "The future"
+msgstr "भविष्य"
+
+#: Amarok.cpp:99
+#, fuzzy
+#| msgid "Never"
+msgctxt "The amount of time since last played"
+msgid "Never"
+msgstr "कहिल्यै पनि"
+
+#: Amarok.cpp:109
+#, fuzzy
+#| msgid "10"
+msgctxt "The amount of time since last played"
+msgid "0"
+msgstr "१०"
+
+#: Amarok.cpp:118
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "number of months ago"
+msgid "%1M"
+msgstr "%1"
+
+#: Amarok.cpp:122
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "w for weeks"
+msgid "%1w"
+msgstr "%1"
+
+#: Amarok.cpp:125
+#, fuzzy
+#| msgid "Tomorrow"
+msgctxt "When this track was last played"
+msgid "Tomorrow"
+msgstr "भोली"
+
+#: Amarok.cpp:131
+#, fuzzy, no-c-format, kde-format
+#| msgid "%1"
+msgctxt "d for days"
+msgid "%1d"
+msgstr "%1"
+
+#: Amarok.cpp:134
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "h for hours"
+msgid "%1h"
+msgstr "%1"
+
+#: Amarok.cpp:160
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
+
+#: Amarok.cpp:163
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: Amarok.cpp:167
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: Amarok.cpp:172
+msgid "Unknown track"
+msgstr "अज्ञात ट्रयाक"
+
+#: Amarok.cpp:179
+#, fuzzy, kde-format
+#| msgid "<b>%1</b> by <b>%2</b>"
+msgctxt "track from source"
+msgid "from <b>%1</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
 #: KNotificationBackend.cpp:112
 #, fuzzy
