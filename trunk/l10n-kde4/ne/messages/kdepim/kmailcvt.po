@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-26 06:17+0100\n"
+"POT-Creation-Date: 2010-02-05 02:40+0100\n"
 "PO-Revision-Date: 2007-09-11 13:32+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -114,43 +114,129 @@ msgid_plural "%1 duplicate messages not imported"
 msgstr[0] "1 नक्कली सन्देश आयात गरिएको छैन"
 msgstr[1] "%1 नक्कली सन्देश आयात गरिएका छैनन्"
 
-#: filters.cxx:146 filters.cxx:186 filters.cxx:219
+#: filters.cxx:174
 #, fuzzy, kde-format
-#| msgid ""
-#| "<b>Fatal:</b> Unable to start KMail for DBus communication: %1; %2Make "
-#| "sure <i>kmail</i> is installed."
-msgid ""
-"<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
-">Make sure <i>kmail</i> is installed."
-msgstr ""
-"<b>घातक:</b> DBus सञ्चारका लागि केडीई मेल सुरु गर्न असमर्थ: %1; %2 <i>केडीई मेल</i> "
-"स्थापना गरिएको निश्चित गर्नुहोस् ।"
-
-#: filters.cxx:154 filters.cxx:194
-#, kde-format
-msgid "Cannot make folder %1 in KMail"
-msgstr "केडीई मेलमा फोल्डर %1 सिर्जना गर्न सकिँदैन"
-
-#: filters.cxx:157 filters.cxx:197
-#, kde-format
-msgid "Cannot add message to folder %1 in KMail"
-msgstr "केडीई मेलको फोल्डर %1 मा सन्देश थप्न सकिँदैन"
-
-#: filters.cxx:163 filters.cxx:200
-#, kde-format
-msgid "Error while adding message to folder %1 in KMail"
+#| msgid "Error while adding message to folder %1 in KMail"
+msgid "<b>Error:<\b> Could not add message to folder %1. Reason: %2"
 msgstr "केडीई मेलको फोल्डर %1 मा सन्देश थप्दा त्रुटि"
 
-#: filter_kmail_archive.cxx:24
+#: filters.cxx:221
+#, kde-format
+msgid ""
+"<b>Warning:<\b> Could not check that the folder already exists. Reason: %1"
+msgstr ""
+
+#: filters.cxx:239
+#, kde-format
+msgid "<b>Error:<\b> Could not create folder. Reason: %1"
+msgstr ""
+
+#: filters.cxx:268
+#, kde-format
+msgid ""
+"<b>Warning:<\b> Could not fetch mail in folder %1. Reason: %2 You may have "
+"duplicate messages."
+msgstr ""
+
+#: filters.cxx:273
+#, kde-format
+msgid "<b>Warning:<\b> Got an invalid message in folder %1."
+msgstr ""
+
+#: filters.cxx:341
+#, kde-format
+msgid "Error: failed to read temporary file at %1"
+msgstr ""
+
+#: filters.cxx:369
+msgid "<b>Warning:<\b> Got a bad message folder, adding to root folder."
+msgstr ""
+
+#: filter_kmail_archive.cxx:33
 msgid "Import KMail Archive File"
 msgstr ""
 
-#: filter_kmail_archive.cxx:26
+#: filter_kmail_archive.cxx:35
 msgid ""
 "<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+
+#: filter_kmail_archive.cxx:75
+#, kde-format
+msgid "Unable to retrieve folder for folder path %1."
+msgstr ""
+
+#: filter_kmail_archive.cxx:99
+#, fuzzy, kde-format
+#| msgid "Import folder %1..."
+msgid "Importing folder '%1'..."
+msgstr "फोल्डर %1 आयात गर्नुहोस्..."
+
+#: filter_kmail_archive.cxx:125
+#, kde-format
+msgid "Unexpected subfolder %1 in folder %2."
+msgstr ""
+
+#: filter_kmail_archive.cxx:130
+#, kde-format
+msgid "No subfolder named 'cur' in folder %1."
+msgstr ""
+
+#: filter_kmail_archive.cxx:155
+#, kde-format
+msgid "Unexpected subdirectory named '%1'."
+msgstr ""
+
+#: filter_kmail_archive.cxx:189
+msgid "Select KMail Archive File to Import"
+msgstr ""
+
+#: filter_kmail_archive.cxx:191
+msgid "KMail Archive Files (*.tar, *.tar.gz, *.tar.bz2, *.zip)"
+msgstr ""
+
+#: filter_kmail_archive.cxx:193
+msgid "Please select an archive file that should be imported."
+msgstr ""
+
+#: filter_kmail_archive.cxx:207
+#, kde-format
+msgid "The file '%1' does not appear to be a valid archive."
+msgstr ""
+
+#: filter_kmail_archive.cxx:212
+#, fuzzy, kde-format
+#| msgid "Unable to open mailbox %1"
+msgid "Unable to open archive file '%1'"
+msgstr "पत्र-मञ्जूषा %1 खोल्न असमर्थ"
+
+#: filter_kmail_archive.cxx:217
+#, fuzzy
+#| msgid "Counting files..."
+msgid "Counting files in archive..."
+msgstr "फाइल गणना गर्दैछ..."
+
+#: filter_kmail_archive.cxx:223
+#, kde-format
+msgid "Importing the archive file '%1' into the folder '%2' succeeded."
+msgstr ""
+
+#: filter_kmail_archive.cxx:225
+#, fuzzy, kde-format
+#| msgid "1 duplicate message not imported"
+#| msgid_plural "%1 duplicate messages not imported"
+msgid "1 message was imported."
+msgid_plural "%1 messages were imported."
+msgstr[0] "1 नक्कली सन्देश आयात गरिएको छैन"
+msgstr[1] "%1 नक्कली सन्देश आयात गरिएका छैनन्"
+
+#: filter_kmail_archive.cxx:229
+#, fuzzy
+#| msgid "Importing new mail files..."
+msgid "Importing the archive failed."
+msgstr "नयाँ मेल फाइल आयात गर्दैछ..."
 
 #: filter_sylpheed.cxx:26
 msgid "Import Sylpheed Maildirs and Folder Structure"
@@ -189,18 +275,20 @@ msgstr "फोल्डर %1 आयात गर्नुहोस्..."
 msgid "Could not import %1"
 msgstr "%1 आयात गर्न सकेन"
 
-#: main.cpp:28
+#: main.cpp:28 kmailcvt.cpp:117
 msgid "KMailCVT"
 msgstr "KMailCVT"
 
 #: main.cpp:29
-msgid "KMail Import Filters"
-msgstr "केडीई मेल आयात फिल्टर"
+#, fuzzy
+#| msgid "KMailCVT Import Tool"
+msgid "Mail Import Tool"
+msgstr "KMailCVT आयात उपकरण"
 
 #: main.cpp:30
 #, fuzzy
 #| msgid "(c) 2000-2005, The KMailCVT developers"
-msgid "(c) 2000-2009, The KMailCVT developers"
+msgid "(c) 2000-2010, The KMailCVT developers"
 msgstr "(c) 2000-2005, KMailCVT विकासकर्ता"
 
 #: main.cpp:31
@@ -230,6 +318,14 @@ msgstr "नयाँ GUI र क्लिनअप"
 #: main.cpp:34
 msgid "Daniel Molkentin"
 msgstr "डानिएल मोल्केन्टिन"
+
+#: main.cpp:35
+msgid "Matthew James Leach"
+msgstr ""
+
+#: main.cpp:35
+msgid "Port to Akonadi"
+msgstr ""
 
 #: filter_evolution.cxx:30
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
@@ -274,25 +370,29 @@ msgstr "नयाँ मेल फाइल आयात गर्दैछ..."
 msgid "Counting files..."
 msgstr "फाइल गणना गर्दैछ..."
 
-#: kmailcvt.cpp:32
+#: kmailcvt.cpp:43
 msgid "KMailCVT Import Tool"
 msgstr "KMailCVT आयात उपकरण"
 
-#: kmailcvt.cpp:36
+#: kmailcvt.cpp:47
 msgid "Step 1: Select Filter"
 msgstr "चरण १: फिल्टर चयन गर्नुहोस्"
 
-#: kmailcvt.cpp:41
+#: kmailcvt.cpp:52
 msgid "Step 2: Importing..."
 msgstr "चरण २: आयात गर्दैछ..."
 
-#: kmailcvt.cpp:86
+#: kmailcvt.cpp:94
 msgid "Import in progress"
 msgstr "आयात प्रगतिमा"
 
-#: kmailcvt.cpp:89
+#: kmailcvt.cpp:98
 msgid "Import finished"
 msgstr "आयात समाप्त"
+
+#: kmailcvt.cpp:116
+msgid "Akonadi failed to start. Please check your configuration."
+msgstr ""
 
 #: filter_pmail.cxx:28
 msgid "Import Folders From Pegasus-Mail"
@@ -390,35 +490,45 @@ msgstr "कूल:"
 msgid "Click 'Back' to import more emails or contacts"
 msgstr "अरू इमेल र सम्पर्क आयात गर्न 'पछाडि' बटनमा क्लिक गर्नुहोस्"
 
-#. i18n: file: kselfilterpagedlg.ui:84
+#. i18n: file: kselfilterpagedlg.ui:82
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #: rc.cpp:30
 msgid ""
-"<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
-"<br><br>\n"
-"This program will help you import your email from your previous email "
-"program into KMail.<br><br><br><br>\n"
-" Please select the program you would like to import from, then click 'Next'."
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'DejaVu Sans'; font-size:8pt; font-weight:600;\">Welcome to KMailCVT "
+"- The Mail Import Tool</span><span style=\" font-family:'DejaVu Sans'; font-"
+"size:8pt;\"> <br /><br />This program will help you import your email from "
+"your previous email program into Akonadi.<br /><br /><br /><br />Please "
+"select the program you would like to import from. Next, select the folder "
+"you would like to import to, then click 'Next'.</span></p></body></html>"
 msgstr ""
-"<b>KMailCVT मा स्वागत छ - केडीई मेलले उपकरण आयात गर्छ</b>\n"
-"<br><br>\n"
-"यो कार्यक्रमले तपाईँको अघिल्लो इमेल कार्यक्रमबाट केडीई मेलमा इमेल आयात गर्न मद्दत गर्नेछ "
-"।<br><br><br><br>\n"
-" कृपया तपाईँले यसबाट आयात गर्ने चाहने कार्यक्रम चयन गर्नुहोस्, त्यसपछि 'पछिल्लो' बटनमा "
-"क्लिक गर्नुहोस् ।"
 
-#. i18n: file: kselfilterpagedlg.ui:119
+#. i18n: file: kselfilterpagedlg.ui:115
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:37
+msgid "Please select the folder to import to:"
+msgstr ""
+
+#. i18n: file: kselfilterpagedlg.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, remDupMsg)
-#: rc.cpp:36
+#: rc.cpp:40
 msgid "Remove &duplicate messages during import"
 msgstr "आयात गर्दा नक्कली सन्देश हटाउनुहोस्"
 
-#: rc.cpp:37
+#: rc.cpp:41
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Nabin Gautam, श्यामकृष्ण बल"
 
-#: rc.cpp:38
+#: rc.cpp:42
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nabin@mpp.org.np, shyamkrishna_bal@yahoo.com"
@@ -606,7 +716,7 @@ msgstr ""
 "आयात गर्दैन ।</p><p>फोल्डर संरचना पुन: सिर्जना गर्न सम्भव भए देखि, फोल्डर तपाईँको "
 "स्थानीय खाताको: \"ब्याट आयात गर्नुहोस्\" मा भण्डारण गरिन्छ ।</p>"
 
-#: kselfilterpage.cpp:80
+#: kselfilterpage.cpp:100
 #, kde-format
 msgid "<p><i>Written by %1.</i></p>"
 msgstr "<p><i>%1 द्वारा लेखिएको ।</i></p>"
@@ -662,3 +772,38 @@ msgstr ""
 "<p>तपाईँको प्रणालीमा इमेल समाविष्ट डाइरेक्टरी चयन गर्नुहोस् । इमेललाई डाइरेक्टरीमा भएको "
 "नाममा, PLAIN उपसर्ग राखिएका फोल्डरमा राखिन्छन् </p><p>यो फिल्टरले all .msg, .eml "
 "र .txt इमेल आयात गर्नेछ ।</p>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<b>Fatal:</b> Unable to start KMail for DBus communication: %1; %2Make "
+#~| "sure <i>kmail</i> is installed."
+#~ msgid ""
+#~ "<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
+#~ ">Make sure <i>kmail</i> is installed."
+#~ msgstr ""
+#~ "<b>घातक:</b> DBus सञ्चारका लागि केडीई मेल सुरु गर्न असमर्थ: %1; %2 <i>केडीई मेल</"
+#~ "i> स्थापना गरिएको निश्चित गर्नुहोस् ।"
+
+#~ msgid "Cannot make folder %1 in KMail"
+#~ msgstr "केडीई मेलमा फोल्डर %1 सिर्जना गर्न सकिँदैन"
+
+#~ msgid "Cannot add message to folder %1 in KMail"
+#~ msgstr "केडीई मेलको फोल्डर %1 मा सन्देश थप्न सकिँदैन"
+
+#~ msgid "KMail Import Filters"
+#~ msgstr "केडीई मेल आयात फिल्टर"
+
+#~ msgid ""
+#~ "<b>Welcome to KMailCVT - The KMail Import Tool</b>\n"
+#~ "<br><br>\n"
+#~ "This program will help you import your email from your previous email "
+#~ "program into KMail.<br><br><br><br>\n"
+#~ " Please select the program you would like to import from, then click "
+#~ "'Next'."
+#~ msgstr ""
+#~ "<b>KMailCVT मा स्वागत छ - केडीई मेलले उपकरण आयात गर्छ</b>\n"
+#~ "<br><br>\n"
+#~ "यो कार्यक्रमले तपाईँको अघिल्लो इमेल कार्यक्रमबाट केडीई मेलमा इमेल आयात गर्न मद्दत गर्नेछ "
+#~ "।<br><br><br><br>\n"
+#~ " कृपया तपाईँले यसबाट आयात गर्ने चाहने कार्यक्रम चयन गर्नुहोस्, त्यसपछि 'पछिल्लो' बटनमा "
+#~ "क्लिक गर्नुहोस् ।"

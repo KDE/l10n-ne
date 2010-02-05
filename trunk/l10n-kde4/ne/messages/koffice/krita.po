@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-04 06:49+0100\n"
+"POT-Creation-Date: 2010-02-05 02:50+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2504,7 +2504,7 @@ msgstr "मास्क प्रभाव सिर्जना गर्नु
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:349
+#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:346
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -3442,7 +3442,8 @@ msgstr "आकार:"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:66
+#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
 msgid "Ellipse"
 msgstr "दीर्घवृत्त"
 
@@ -6345,7 +6346,7 @@ msgstr "तह गुण"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:168
+#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:167
 msgid "Opacity: "
 msgstr "अस्पष्टता: "
 
@@ -8816,29 +8817,25 @@ msgstr "चयन"
 msgid "&Finish"
 msgstr "संयुक्त रेखा समाप्त गर्नुहोस्"
 
-#: ui/tool/kis_tool.cc:103
+#: ui/tool/kis_tool.cc:104
 #, fuzzy
 #| msgid "Foreground Color"
 msgid "Swap Foreground and Background Color"
 msgstr "अग्रभूमि रङ"
 
-#: ui/tool/kis_tool.cc:108
+#: ui/tool/kis_tool.cc:109
 #, fuzzy
 #| msgid "Foreground Color"
 msgid "Reset Foreground and Background Color"
 msgstr "अग्रभूमि रङ"
 
-#: ui/tool/kis_tool.cc:378
+#: ui/tool/kis_tool.cc:384
 #, fuzzy
 #| msgid "options"
 msgid "No options"
 msgstr "विकल्प"
 
-#: ui/tool/kis_tool_freehand.cc:416 ui/tool/kis_tool_freehand.cc:425
-msgid "Freehand tool"
-msgstr "फ्रिह्यान्ड उपकरण"
-
-#: ui/tool/kis_tool_paint.cc:176
+#: ui/tool/kis_tool_paint.cc:175
 msgid "Mode: "
 msgstr "मोड: "
 
@@ -9534,39 +9531,39 @@ msgstr ""
 msgid "Show Dockers"
 msgstr "ढुङ्गा"
 
-#: ui/kis_view2.cpp:238
+#: ui/kis_view2.cpp:240
 #, fuzzy
 #| msgid "&Tools"
 msgid "Tools"
 msgstr "उपकरण"
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:340
 #, fuzzy
 #| msgid "I&nsert Image as Layer..."
 msgid "Insert as New Layer"
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
 
-#: ui/kis_view2.cpp:344
+#: ui/kis_view2.cpp:341
 #, fuzzy
 #| msgid "I&nsert Image as Layer..."
 msgid "Insert as New Layers"
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
 
-#: ui/kis_view2.cpp:346
+#: ui/kis_view2.cpp:343
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:347
+#: ui/kis_view2.cpp:344
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:546
 #, fuzzy
 #| msgid "Add New Palette..."
 msgid "Edit Palette..."
 msgstr "नयाँ रङदानी थप्नुहोस्..."
 
-#: ui/kis_view2.cpp:686 ui/kis_view2.cpp:689
+#: ui/kis_view2.cpp:683 ui/kis_view2.cpp:686
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette"
@@ -10017,6 +10014,18 @@ msgstr "अन्तिम प्रयोग गरिएको"
 msgid "Play macro"
 msgstr ""
 
+#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
+#, fuzzy
+#| msgid "Polyline"
+msgid "Poly line"
+msgstr "संयुक्त रेखा"
+
+#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
+#, fuzzy
+#| msgid "Bezier Curve"
+msgid "Bezier curve"
+msgstr "बेजियर बक्र"
+
 #: image/kis_clone_layer.cpp:199
 msgid "Copy From"
 msgstr ""
@@ -10176,12 +10185,6 @@ msgstr "दुरि: "
 msgid "Angle: "
 msgstr "कोण: "
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:54
-#, fuzzy
-#| msgid "Ellipse"
-msgid "Ellipse tool"
-msgstr "दीर्घवृत्त"
-
 #: plugins/tools/defaulttools/kis_tool_colorpicker.h:89
 msgid "Select a color from the image or current layer"
 msgstr "छवि वा हालको तहबाट रङ चयन गर्नुहोस्"
@@ -10204,13 +10207,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "रेखा"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:176
-#, fuzzy
-#| msgid "Line"
-msgid "Line tool"
-msgstr "रेखा"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:269
+#: plugins/tools/defaulttools/kis_tool_line.cc:270
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -10406,13 +10403,6 @@ msgstr "दृश्य रूपान्तरण"
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:50
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "बहुभुज कोर्नुहोस् । शिफ्ट-माउस क्लिकले बहुभुज अन्त्य गर्दछ ।"
-
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:65
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:54
-#, fuzzy
-#| msgid "Polyline"
-msgid "Polyline tool"
-msgstr "संयुक्त रेखा"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
 msgid "Polyline"
@@ -12448,7 +12438,7 @@ msgstr ""
 msgid "Index out of bound"
 msgstr ""
 
-#: plugins/extensions/scripting/scriptingpart.cpp:137
+#: plugins/extensions/scripting/scriptingpart.cpp:138
 #, fuzzy, kde-format
 #| msgid "&Show"
 msgid "&Show %1"
@@ -12567,6 +12557,24 @@ msgstr "नियमित"
 #| msgid "Gaussian:"
 msgid "Ruler assistant editor tool"
 msgstr "गाउसियन:"
+
+#~ msgid "Freehand tool"
+#~ msgstr "फ्रिह्यान्ड उपकरण"
+
+#, fuzzy
+#~| msgid "Ellipse"
+#~ msgid "Ellipse tool"
+#~ msgstr "दीर्घवृत्त"
+
+#, fuzzy
+#~| msgid "Line"
+#~ msgid "Line tool"
+#~ msgstr "रेखा"
+
+#, fuzzy
+#~| msgid "Polyline"
+#~ msgid "Polyline tool"
+#~ msgstr "संयुक्त रेखा"
 
 #~ msgid "Form"
 #~ msgstr "फारमस"
