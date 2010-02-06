@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-30 06:14+0100\n"
+"POT-Creation-Date: 2010-02-06 01:52+0100\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,77 +17,582 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: attachmentdialog.cpp:33
+#: objecttreeparser.cpp:507
+msgid "Wrong Crypto Plug-In."
+msgstr "गलत क्राइप्टो प्लगइन ।"
+
+#: objecttreeparser.cpp:620 objecttreeparser.cpp:2180
+msgid "Different results for signatures"
+msgstr "हस्ताक्षरको फरक परिणाम"
+
+#: objecttreeparser.cpp:693
+msgid "The crypto engine returned no cleartext data."
+msgstr "क्राइप्टो इञ्जिनले क्लेयरटेक्स्ट नभएको डेटा फिर्ता गर्यो ।"
+
+#: objecttreeparser.cpp:696 objecttreeparser.cpp:2646
+#: objecttreeparser.cpp:2689
+msgid "Status: "
+msgstr "वस्तुस्थिति: "
+
+#: objecttreeparser.cpp:703
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(अज्ञात)"
+
+#: objecttreeparser.cpp:714 objecttreeparser.cpp:938
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "गुप्त प्लग-इन \"%1\" सुरुआत गरिएको छैन ।"
+
+#: objecttreeparser.cpp:718
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "गुप्त प्लग-इन \"%1\" ले हस्ताक्षर रुजु गर्न सकिँदैन ।"
+
+#: objecttreeparser.cpp:723 objecttreeparser.cpp:946
+msgid "No appropriate crypto plug-in was found."
+msgstr "उचित गुप्त प्लगइन फेला परेको छैन ।"
+
+#: objecttreeparser.cpp:726
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "%1 प्लग-इन फेला परेको छैन ।"
+
+#: objecttreeparser.cpp:730
 #, kde-format
 msgid ""
-"Open attachment '%1'?\n"
-"Note that opening an attachment may compromise your system's security."
-msgstr ""
-"सङ्लग्नता '%1' खोल्नुहुन्छ?\n"
-"याद गर्नुहोस् सङ्लग्नता खोल्दा प्रणालीको सुरक्षा जोखिममा हुन सक्छ ।"
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
+msgstr "सन्देशमा चिन्ह लगाइएको छ, तर हस्ताक्षरको वैधता रुजु गर्न सकिँदैन ।<br />कारण: %1"
 
-#: attachmentdialog.cpp:39
-msgid "Open Attachment?"
-msgstr "सङ्लग्नता खोल्नुहुन्छ?"
+#: objecttreeparser.cpp:765
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "This message is encrypted."
+msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
 
-#: attachmentdialog.cpp:46
+#: objecttreeparser.cpp:770
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
+
+#: objecttreeparser.cpp:795
+#, fuzzy
+#| msgid "Encrypted data not shown."
+msgid "Encrypted data not shown"
+msgstr "नदेखिएका डेटा गुप्तिकरण गर्नुहोस् ।"
+
+#: objecttreeparser.cpp:835
+#, fuzzy
+#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgid "Could not decrypt the data."
+msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
+
+#: objecttreeparser.cpp:925
 #, kde-format
-msgid "&Open with '%1'"
-msgstr "'%1' सँग खोल्नुहोस्"
+msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
 
-#: attachmentdialog.cpp:50
-msgid "&Open With..."
-msgstr "यससँग खोल्नुहोस्..."
+#: objecttreeparser.cpp:927
+#, kde-format
+msgid "Error: %1"
+msgstr "त्रुटि: %1"
 
-#: attachmentdialog.cpp:69
-msgid "Do not ask again"
+#: objecttreeparser.cpp:942
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot decrypt messages."
+msgstr "गुप्त प्लग-इन \"%1\" ले सन्देश गुप्तिकरणबाट उल्टउन सक्दैन ।"
+
+#: objecttreeparser.cpp:1050
+msgid ""
+"<b>Note:</b> This HTML message may contain external references to images "
+"etc. For security/privacy reasons external references are not loaded. If you "
+"trust the sender of this message then you can load the external references "
+"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
+msgstr ""
+"<b>द्रष्टब्य:</b> यो HTML सन्देशले छवि आदिमा बाह्य सन्दर्भ समावेश गर्न सक्छ । सुरक्षा/"
+"गोप्यताका कारणले बाह्य सन्दर्भ लोड गरिएका छैनन् । तपाईँलाई यो सन्देश प्रेषकमा विश्वास "
+"भएमा यो सन्देशका लागि बाह्य सन्दर्भ लोड गर्न <a href=\"kmail:loadExternal\">यहाँ "
+"क्लिक गरेर</a> लोड गर्न सक्नुहुन्छ ।"
+
+#: objecttreeparser.cpp:1060
+msgid ""
+"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
+"HTML code is shown. If you trust the sender of this message then you can "
+"activate formatted HTML display for this message <a href=\"kmail:showHTML"
+"\">by clicking here</a>."
+msgstr ""
+"<b>द्रष्टव्य:</b> यो HTML सन्देश हो । सुरक्षाका कारणले, केवल कच्चा HTML सङ्केत देखिएको छ "
+"। तपाईँलाई यो सन्देशको प्रेषकमा विश्वास भएमा यो सन्देशका लागि ढाँचावद्ध गरिएको HTML "
+"प्रदर्शन <a href=\"kmail:showHTML\">यहाँ क्लिक गरेर </a> सक्रिय पार्न सक्नुहुन्छ ।"
+
+#: objecttreeparser.cpp:1711
+#, fuzzy, kde-format
+#| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
+msgid "Sorry, certificate could not be imported.<br />Reason: %1"
+msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयात गर्न सकिने छैन ।<br>कारण: %1"
+
+#: objecttreeparser.cpp:1721
+msgid "Sorry, no certificates were found in this message."
+msgstr "माफ गर्नुहोस्, यो सन्देशमा प्रमाणपत्र फेला परेका छैनन् ।"
+
+#: objecttreeparser.cpp:1724
+msgid "Certificate import status:"
+msgstr "प्रमाणपत्र आयात स्थिति:"
+
+#: objecttreeparser.cpp:1726
+#, fuzzy, kde-format
+msgid "1 new certificate was imported."
+msgid_plural "%1 new certificates were imported."
+msgstr[0] "१ नयाँ प्रमाणपत्र आयात गरिएको थियो ।"
+msgstr[1] "%1 नयाँ प्रमाणपत्र आयात गरिएका थिए ।"
+
+#: objecttreeparser.cpp:1729
+#, fuzzy, kde-format
+msgid "1 certificate was unchanged."
+msgid_plural "%1 certificates were unchanged."
+msgstr[0] "१ प्रमाणपत्र अपरिवर्तित थिए ।"
+msgstr[1] "%1 प्रमाणपत्र अपरिवर्तित थिए ।"
+
+#: objecttreeparser.cpp:1732
+#, fuzzy, kde-format
+msgid "1 new secret key was imported."
+msgid_plural "%1 new secret keys were imported."
+msgstr[0] "१ नयाँ गोप्य कुञ्जी आयात गरिएको थियो ।"
+msgstr[1] "%1 नयाँ गोप्य कुञ्जी आयात गरिएका थिए ।"
+
+#: objecttreeparser.cpp:1735
+#, fuzzy, kde-format
+msgid "1 secret key was unchanged."
+msgid_plural "%1 secret keys were unchanged."
+msgstr[0] "१ गोप्य कुञ्जी अपरिवर्तित थियो ।"
+msgstr[1] "%1 गोप्य कुञ्जी अपरिवर्तित थिए ।"
+
+#: objecttreeparser.cpp:1745
+msgid "Sorry, no details on certificate import available."
+msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयातमा विस्तृत विवरण उपलब्ध छैन ।"
+
+#: objecttreeparser.cpp:1748
+msgid "Certificate import details:"
+msgstr "प्रमाणपत्र आयात विस्तृत विवरण:"
+
+#: objecttreeparser.cpp:1751
+#, fuzzy, kde-format
+#| msgid "Failed: %1 (%2)"
+msgctxt "Certificate import failed."
+msgid "Failed: %1 (%2)"
+msgstr "असफल: %1 (%2)"
+
+#: objecttreeparser.cpp:1755
+#, kde-format
+msgid "New or changed: %1 (secret key available)"
+msgstr "नयाँ वा परिवर्तित: %1 (गोप्य कुञ्जी उपलब्ध)"
+
+#: objecttreeparser.cpp:1757
+#, kde-format
+msgid "New or changed: %1"
+msgstr "नयाँ वा परिवर्तित: %1"
+
+#: objecttreeparser.cpp:1903 viewer_p.cpp:3074
+msgid ""
+"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
+"report this bug."
+msgstr ""
+"व्यतिक्रम ब्याकइन्डले \"x प्राप्त गर्ने कुञ्जी\" प्रकार्य प्रस्ताव गर्दैन । कृपया यो बग "
+"प्रतिवेदन गर्नुहोस् ।"
+
+#: objecttreeparser.cpp:1909 viewer_p.cpp:3076 viewer_p.cpp:3081
+#: viewer_p.cpp:3090 viewer_p.cpp:3099 viewer_p.cpp:3118 viewer_p.cpp:3130
+#: viewer_p.cpp:3170
+msgid "Chiasmus Backend Error"
+msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
+
+#: objecttreeparser.cpp:1915 viewer_p.cpp:3087
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
+"function did not return a string list. Please report this bug."
+msgstr ""
+"व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x प्राप्ति कुञ्जी \" प्रकार्यले स्ट्रिङ सूची "
+"फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
+
+#: objecttreeparser.cpp:1923 viewer_p.cpp:3096
+msgid ""
+"No keys have been found. Please check that a valid key path has been set in "
+"the Chiasmus configuration."
+msgstr ""
+"कुञ्जी फेला परेको छैन । कृपया व्यतिक्रम कन्फिगरेसनमा वैध कुञ्जी बाटो सेट भएको जाँच गर्नुहोस् ।"
+
+#: objecttreeparser.cpp:1930 viewer_p.cpp:3104
+msgid "Chiasmus Decryption Key Selection"
+msgstr "गुप्तिकरण व्यतिक्रम कुञ्जी चयन"
+
+#: objecttreeparser.cpp:1941 viewer_p.cpp:3116
+msgid ""
+"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
+"this bug."
+msgstr ""
+"व्यतिक्रम ब्याकइन्डले \"x-decrypt\" प्रकार्य प्रस्ताव गर्दैन । कृपया बग प्रतिवेदन गर्नुहोस् ।"
+
+#: objecttreeparser.cpp:1949 viewer_p.cpp:3128
+msgid ""
+"The \"x-decrypt\" function does not accept the expected parameters. Please "
+"report this bug."
+msgstr ""
+"\"x-decrypt\" प्रकार्यले अपेक्षित परिमिति स्वीकार गर्दैन । कृपया यो बग प्रतिवेदन गर्नुहोस् "
+"।"
+
+#: objecttreeparser.cpp:1955 viewer_p.cpp:3135 viewer_p.cpp:3162
+msgid "Chiasmus Decryption Error"
+msgstr "ब्यतिक्रम गुप्तिकरण उल्टाउने त्रुटि"
+
+#: objecttreeparser.cpp:1961 viewer_p.cpp:3167
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
+"did not return a byte array. Please report this bug."
+msgstr ""
+"व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x-decrypt\" प्रकार्यले बाइट एरे फर्काएको "
+"छैन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
+
+#: objecttreeparser.cpp:2099
+#, fuzzy
+#| msgctxt "Missing profile name placeholder"
+#| msgid "Unnamed"
+msgctxt "display name for an unnamed attachment"
+msgid "Unnamed"
+msgstr "बेनामी"
+
+#: objecttreeparser.cpp:2162
+msgid "Error: Signature not verified"
+msgstr "त्रुटि: हस्ताक्षर रुजु गरिएको छैन"
+
+#: objecttreeparser.cpp:2165
+msgid "Good signature"
+msgstr "ठीक हस्ताक्षर"
+
+#: objecttreeparser.cpp:2168
+msgid "<b>Bad</b> signature"
+msgstr "<b>गलत</b> हस्ताक्षर"
+
+#: objecttreeparser.cpp:2171
+msgid "No public key to verify the signature"
+msgstr "हस्ताक्षर रुजु गर्न सार्वजनिक कुञ्जी छैन"
+
+#: objecttreeparser.cpp:2174
+msgid "No signature found"
+msgstr "हस्ताक्षर फेला परेन"
+
+#: objecttreeparser.cpp:2177
+msgid "Error verifying the signature"
+msgstr "हस्ताक्षर रुजु गर्दा त्रुटि"
+
+#: objecttreeparser.cpp:2200
+msgid "No status information available."
+msgstr "स्थिति सूचना उपलब्ध छैन ।"
+
+#: objecttreeparser.cpp:2207 objecttreeparser.cpp:2291
+msgid "Good signature."
+msgstr "ठीक हस्ताक्षर ।"
+
+#: objecttreeparser.cpp:2228
+msgid "One key has expired."
+msgstr "एउटा कुञ्जीको म्याद समाप्त भएको छ ।"
+
+#: objecttreeparser.cpp:2232
+msgid "The signature has expired."
+msgstr "हस्ताक्षरको म्याद समाप्त भएको छ ।"
+
+#: objecttreeparser.cpp:2237
+msgid "Unable to verify: key missing."
+msgstr "रुजू गर्न असमर्थ: कुञ्जी हरायो ।"
+
+#: objecttreeparser.cpp:2244
+msgid "CRL not available."
+msgstr "CRL उपलब्ध छैन ।"
+
+#: objecttreeparser.cpp:2248
+msgid "Available CRL is too old."
+msgstr "उपलब्ध CRL धेरै पुनानो छ ।"
+
+#: objecttreeparser.cpp:2252
+msgid "A policy was not met."
+msgstr "नीति मिलेको छैन ।"
+
+#: objecttreeparser.cpp:2256
+msgid "A system error occurred."
+msgstr "एउट प्रणाली त्रुटि उत्पन्न भयो ।"
+
+#: objecttreeparser.cpp:2267
+msgid "One key has been revoked."
+msgstr "एउटा कुञ्जी खारेज गरिएको छ ।"
+
+#: objecttreeparser.cpp:2293
+msgid "<b>Bad</b> signature."
+msgstr "<b>गलत</b> हस्ताक्षर ।"
+
+#: objecttreeparser.cpp:2320
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
+
+#: objecttreeparser.cpp:2322
+#, fuzzy
+#| msgid "Not enough information to check signature. %1"
+msgid "Not enough information to check signature validity."
+msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
+
+#: objecttreeparser.cpp:2331
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "हस्ताक्षर"
+
+#: objecttreeparser.cpp:2333
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
 msgstr ""
 
-#: configurewidget.cpp:36 configurewidget.cpp:89 viewer_p.cpp:1887
-msgid "Auto"
-msgstr "स्वत:"
+#: objecttreeparser.cpp:2337
+msgid "Unknown signature state"
+msgstr ""
 
-#: editorwatcher.cpp:69
+#: objecttreeparser.cpp:2341
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show Details"
+msgstr "सधैँँ देखाउनुहोस्"
+
+#: objecttreeparser.cpp:2358
+#, fuzzy
+#| msgid "Not available"
+msgid "No Audit Log available"
+msgstr "उपलब्ध छैन"
+
+#: objecttreeparser.cpp:2360
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error retrieving quota information from server\n"
+#| "%1"
+msgid "Error Retrieving Audit Log: %1"
+msgstr ""
+"सर्भरबाट कोटा जानकारी पुन: प्राप्त गर्दा त्रुटि\n"
+"%1"
+
+#: objecttreeparser.cpp:2370
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr ""
+
+#: objecttreeparser.cpp:2381
+#, fuzzy
+#| msgid "Logging Details"
+msgid "Hide Details"
+msgstr "लगिङ विवरण"
+
+#: objecttreeparser.cpp:2407 objecttreeparser.cpp:2409
+msgid "Encapsulated message"
+msgstr "इनक्याप्सुलेट गरिएको सन्देश"
+
+#: objecttreeparser.cpp:2418
+#, fuzzy
+msgid "Please wait while the message is being decrypted..."
+msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
+
+#: objecttreeparser.cpp:2420
+msgid "Encrypted message"
+msgstr "गुप्तिकृत सन्देश"
+
+#: objecttreeparser.cpp:2422
+msgid "Encrypted message (decryption not possible)"
+msgstr "गुप्तिकृत सन्देश (गुप्तिकरण उल्टाउन सम्भव छैन)"
+
+#: objecttreeparser.cpp:2424
+#, kde-format
+msgid "Reason: %1"
+msgstr "कारण: %1"
+
+#: objecttreeparser.cpp:2434
+#, fuzzy
+msgid "Please wait while the signature is being verified..."
+msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
+
+#: objecttreeparser.cpp:2529 objecttreeparser.cpp:2531
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "प्रमाणपत्र"
+
+#: objecttreeparser.cpp:2537 objecttreeparser.cpp:2562
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "चेतावनी:"
+
+#: objecttreeparser.cpp:2539
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr "साइनिङका लागि प्रयोग गरिएको प्रेषकको मेल ठेगाना %1 मा भण्डारण गरिएको छैन ।"
+
+#: objecttreeparser.cpp:2542
+msgid "sender: "
+msgstr "प्रेषक: "
+
+#: objecttreeparser.cpp:2545
+msgid "stored: "
+msgstr "भण्डारण गरिएको: "
+
+#: objecttreeparser.cpp:2564
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"साइनिङका लागि प्रयोग गरिएको इमेल ठेगाना %1 मा भण्डारण गरिएको छैन, त्यसैले यसलाई "
+"हामीले प्रेषकको ठेगाना %2 सँग तुलना गर्न सक्दैनौ ।"
+
+#: objecttreeparser.cpp:2588
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
+
+#: objecttreeparser.cpp:2605 objecttreeparser.cpp:2683
+msgid "Message was signed with unknown key."
+msgstr "अज्ञात कुञ्जीद्वारा सन्देश चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2607 objecttreeparser.cpp:2721
+#: objecttreeparser.cpp:2765
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2614 objecttreeparser.cpp:2623
+#: objecttreeparser.cpp:2634
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "सन्देश कुञ्जी %1 ले चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2617
+#, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "%1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2626
+#, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "%3 द्वारा %1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो"
+
+#: objecttreeparser.cpp:2637
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "%2 द्वारा कुञ्जी %1 ले सन्देशमा चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2675
+#, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "%1 मा अज्ञात कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2679
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "अज्ञता कुञ्जी %1 ले सन्देश चिन्ह लगाइएको थियो ।"
+
+#: objecttreeparser.cpp:2685
+msgid "The validity of the signature cannot be verified."
+msgstr "हस्ताक्षरको वैधता रुजु गर्न सकिने छैन ।"
+
+#: objecttreeparser.cpp:2717 objecttreeparser.cpp:2761
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "सन्देश %2 द्वारा चिन्ह लगाइएको थियो(कुञ्जीआईडी: %1) ।"
+
+#: objecttreeparser.cpp:2727
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "हस्ताक्षर वैध छ, तर कुञ्जीको वैधता अज्ञाता छ ।"
+
+#: objecttreeparser.cpp:2731
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "हस्ताक्षर वैध छ र कुञ्जी आंशिक विश्वासिलो छ ।"
+
+#: objecttreeparser.cpp:2735
+msgid "The signature is valid and the key is fully trusted."
+msgstr "हस्ताक्षर वैध छ र कुञ्जी पूर्ण विश्वासिलो छ ।"
+
+#: objecttreeparser.cpp:2739
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "हस्ताक्षर वैध छ र कुञ्जी अतिनै विश्वासिलो छ ।"
+
+#: objecttreeparser.cpp:2743
+msgid "The signature is valid, but the key is untrusted."
+msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वाशिलो छ ।"
+
+#: objecttreeparser.cpp:2767
+msgid "Warning: The signature is bad."
+msgstr "चेतावनी: हस्ताक्षर गलत छ ।"
+
+#: objecttreeparser.cpp:2791
+msgid "End of signed message"
+msgstr "चिन्ह लगाएका सन्देशको अन्त्यमा"
+
+#: objecttreeparser.cpp:2797
+msgid "End of encrypted message"
+msgstr "गुप्तिकृत सन्देशको अन्त्यमा"
+
+#: objecttreeparser.cpp:2804
+msgid "End of encapsulated message"
+msgstr "इन्क्याप्सुलेटेड सन्देशको अन्त्यमा"
+
+#: objecttreeparser.cpp:2976
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "The message could not be decrypted."
+msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
+
+#: editorwatcher.cpp:70
 #, fuzzy
 #| msgid "Edit Identity"
 msgid "Edit with:"
 msgstr "परिचय सम्पादन गर्नुहोस्"
 
-#: editorwatcher.cpp:157
+#: editorwatcher.cpp:158
 msgid ""
 "KMail is unable to detect when the chosen editor is closed. To avoid data "
 "loss, editing the attachment will be aborted."
 msgstr ""
 
-#: editorwatcher.cpp:159
+#: editorwatcher.cpp:160
 #, fuzzy
 #| msgid "Name of the attachment:"
 msgid "Unable to edit attachment"
 msgstr "सङ्लग्नताको नाम:"
 
-#: headerstyle.cpp:125 headerstyle.cpp:225 headerstyle.cpp:464
-#: headerstyle.cpp:607 headerstyle.cpp:751
+#: headerstyle.cpp:125 headerstyle.cpp:225 headerstyle.cpp:465
+#: headerstyle.cpp:608 headerstyle.cpp:752
 msgid "No Subject"
 msgstr "कुनै विषयवस्तु छैन"
 
-#: headerstyle.cpp:155 headerstyle.cpp:270 headerstyle.cpp:631
-#: headerstyle.cpp:841
+#: headerstyle.cpp:155 headerstyle.cpp:270 headerstyle.cpp:632
+#: headerstyle.cpp:842
 msgid "[vCard]"
 msgstr "[vCard]"
 
-#: headerstyle.cpp:160 headerstyle.cpp:284 headerstyle.cpp:651
+#: headerstyle.cpp:160 headerstyle.cpp:284 headerstyle.cpp:652
 msgid "CC: "
 msgstr "बोधार्थ प्रतिलिपि: "
 
-#: headerstyle.cpp:163 headerstyle.cpp:288 headerstyle.cpp:658
+#: headerstyle.cpp:163 headerstyle.cpp:288 headerstyle.cpp:659
 msgid "BCC: "
 msgstr "गुप्त बोधार्थ प्रतिलिपि: "
 
-#: headerstyle.cpp:258 headerstyle.cpp:664
+#: headerstyle.cpp:258 headerstyle.cpp:665
 msgid "Date: "
 msgstr "मिति: "
 
-#: headerstyle.cpp:266 headerstyle.cpp:623 headerstyle.cpp:846
+#: headerstyle.cpp:266 headerstyle.cpp:624 headerstyle.cpp:847
 msgid "From: "
 msgstr "बाट: "
 
@@ -117,7 +622,7 @@ msgstr ""
 "सम्भाव्यता=%2\n"
 "निश्चितता=%4"
 
-#: headerstyle.cpp:397
+#: headerstyle.cpp:398
 #, fuzzy, kde-format
 #| msgid ""
 #| "%1% probability of being spam.\n"
@@ -135,31 +640,31 @@ msgstr ""
 "पूरा प्रतिवेदन:\n"
 "%2"
 
-#: headerstyle.cpp:408
+#: headerstyle.cpp:409
 msgid "No Spam agent"
 msgstr ""
 
-#: headerstyle.cpp:411
+#: headerstyle.cpp:412
 msgid "Spam filter score not a number"
 msgstr ""
 
-#: headerstyle.cpp:414
+#: headerstyle.cpp:415
 msgid "Threshold not a valid number"
 msgstr ""
 
-#: headerstyle.cpp:417
+#: headerstyle.cpp:418
 msgid "Spam filter score could not be extracted from header"
 msgstr ""
 
-#: headerstyle.cpp:420
+#: headerstyle.cpp:421
 msgid "Threshold could not be extracted from header"
 msgstr ""
 
-#: headerstyle.cpp:423
+#: headerstyle.cpp:424
 msgid "Error evaluating spam score"
 msgstr ""
 
-#: headerstyle.cpp:427
+#: headerstyle.cpp:428
 #, kde-format
 msgid ""
 "%1.\n"
@@ -168,53 +673,250 @@ msgid ""
 "%2"
 msgstr ""
 
-#: headerstyle.cpp:626
+#: headerstyle.cpp:627
 #, kde-format
 msgid "(resent from %1)"
 msgstr "(%1 बाट पुन: पठाइएको)"
 
-#: headerstyle.cpp:644
+#: headerstyle.cpp:645
 #, fuzzy
 #| msgid "To: "
 msgctxt "To-field of the mail header."
 msgid "To: "
 msgstr "लाई: "
 
-#: headerstyle.cpp:672
+#: headerstyle.cpp:673
 msgid "User-Agent: "
 msgstr "प्रयोगकर्ता एजेन्ट: "
 
-#: headerstyle.cpp:681
+#: headerstyle.cpp:682
 msgid "X-Mailer: "
 msgstr "X-प्रेषक: "
 
-#: headerstyle.cpp:692
+#: headerstyle.cpp:693
 msgid "Spam Status:"
 msgstr "स्पाम स्थिति:"
 
-#: headerstyle.cpp:854
+#: headerstyle.cpp:855
 #, fuzzy
 #| msgid "To: "
 msgctxt "To field of the mail header."
 msgid "To: "
 msgstr "लाई: "
 
-#: htmlstatusbar.cpp:90
+#: attachmentdialog.cpp:34
+#, kde-format
+msgid ""
+"Open attachment '%1'?\n"
+"Note that opening an attachment may compromise your system's security."
+msgstr ""
+"सङ्लग्नता '%1' खोल्नुहुन्छ?\n"
+"याद गर्नुहोस् सङ्लग्नता खोल्दा प्रणालीको सुरक्षा जोखिममा हुन सक्छ ।"
+
+#: attachmentdialog.cpp:40
+msgid "Open Attachment?"
+msgstr "सङ्लग्नता खोल्नुहुन्छ?"
+
+#: attachmentdialog.cpp:47
+#, kde-format
+msgid "&Open with '%1'"
+msgstr "'%1' सँग खोल्नुहोस्"
+
+#: attachmentdialog.cpp:51
+msgid "&Open With..."
+msgstr "यससँग खोल्नुहोस्..."
+
+#: attachmentdialog.cpp:70
+msgid "Do not ask again"
+msgstr ""
+
+#: mailsourceviewer.cpp:146
+#, fuzzy
+#| msgid "&View Source"
+msgctxt "Unchanged mail message"
+msgid "Raw Source"
+msgstr "स्रोत हेर्नुहोस्"
+
+#: mailsourceviewer.cpp:147
+msgid "Raw, unmodified mail as it is stored on the filesystem or on the server"
+msgstr ""
+
+#: mailsourceviewer.cpp:152
+#, fuzzy
+#| msgctxt "MDN type"
+#| msgid "Processed"
+msgctxt "Mail message after being processed, might be alterred from original"
+msgid "Processed Source"
+msgstr "प्रक्रिया गरिएको"
+
+#: mailsourceviewer.cpp:153
+msgid ""
+"Processed mail, for example after decrypting an encrypted part of the mail"
+msgstr ""
+
+#: mailsourceviewer.cpp:159
+#, fuzzy
+#| msgid "&View Source"
+msgctxt "Mail message as shown, in HTML format"
+msgid "HTML Source"
+msgstr "स्रोत हेर्नुहोस्"
+
+#: mailsourceviewer.cpp:160
+msgid "HTML code for displaying the message to the user"
+msgstr ""
+
+#: urlhandlermanager.cpp:404
+msgid "Turn on HTML rendering for this message."
+msgstr "यो सन्देशका लागि HTML रेन्डरिङ खोल्नुहोस् ।"
+
+#: urlhandlermanager.cpp:406
+msgid "Load external references from the Internet for this message."
+msgstr "यो सन्देशका लागि इन्टरनेटबाट बाह्य सन्दर्भ लोड गर्नुहोस् ।"
+
+#: urlhandlermanager.cpp:408
+#, fuzzy
+#| msgid "Work online"
+msgid "Work online."
+msgstr "अनलाइन कार्य गर्नुहोस्"
+
+#: urlhandlermanager.cpp:410
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt message."
+msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
+
+#: urlhandlermanager.cpp:412
+#, fuzzy
+#| msgid "No signature found"
+msgid "Show signature details."
+msgstr "हस्ताक्षर फेला परेन"
+
+#: urlhandlermanager.cpp:414
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Hide signature details."
+msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
+
+#: urlhandlermanager.cpp:416
+#, fuzzy
+#| msgid "Show attachment icon"
+msgid "Show attachment list."
+msgstr "सङ्लग्न प्रतिमा देखाउनुहोस्"
+
+#: urlhandlermanager.cpp:418
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Hide attachment list."
+msgstr "यस रूपमा सङ्लग्नता बचत गर्नुहोस्"
+
+#: urlhandlermanager.cpp:450
+msgid "Expand all quoted text."
+msgstr "सबै उद्धृत पाठ विस्तार गर्नुहोस् ।"
+
+#: urlhandlermanager.cpp:453
+msgid "Collapse quoted text."
+msgstr "उद्धृत पाठ संक्षिप्त गर्नुहोस् ।"
+
+#: urlhandlermanager.cpp:517
+msgid "Could not start certificate manager. Please check your installation."
+msgstr "प्रमाणपत्र प्रबन्धक सुरु गर्न सकेन । कृपया तपाईँको स्थापना जाँच गर्नुहोस् ।"
+
+#: urlhandlermanager.cpp:519
+msgid "KMail Error"
+msgstr "केडीई मेल त्रुटि"
+
+#: urlhandlermanager.cpp:529
+#, kde-format
+msgid "Show certificate 0x%1"
+msgstr "0x%1 प्रमाणपत्र देखाउनुहोस्"
+
+#: urlhandlermanager.cpp:611
+#, kde-format
+msgid "Attachment: %1"
+msgstr "सङ्लग्नता: %1"
+
+#: urlhandlermanager.cpp:612
+#, kde-format
+msgid "Attachment #%1 (unnamed)"
+msgstr "सङ्लग्न #%1 (बनामी)"
+
+#: urlhandlermanager.cpp:642
+msgid "Show GnuPG Audit Log for this operation"
+msgstr ""
+
+#: findbar/findbar.cpp:50
+#, fuzzy
+#| msgid "Color&s"
+msgid "Close"
+msgstr "रङ"
+
+#: findbar/findbar.cpp:54
+#, fuzzy
+#| msgid "Find:"
+msgctxt "Find text"
+msgid "F&ind:"
+msgstr "फेला पार्नुहोस्:"
+
+#: findbar/findbar.cpp:58
+msgid "Text to search for"
+msgstr ""
+
+#: findbar/findbar.cpp:63
+#, fuzzy
+msgctxt "Find and go to the next search match"
+msgid "Next"
+msgstr "पछिल्लो"
+
+#: findbar/findbar.cpp:64
+msgid "Jump to next match"
+msgstr ""
+
+#: findbar/findbar.cpp:68
+#, fuzzy
+msgctxt "Find and go to the previous search match"
+msgid "Previous"
+msgstr "अघिल्लो कार्ड"
+
+#: findbar/findbar.cpp:69
+#, fuzzy
+#| msgid "Go to the previous message"
+msgid "Jump to previous match"
+msgstr "अघिल्लो सन्देशमा जानुहोस्"
+
+#: findbar/findbar.cpp:74
+msgid "Options"
+msgstr "विकल्प"
+
+#: findbar/findbar.cpp:75
+msgid "Modify search behavior"
+msgstr ""
+
+#: findbar/findbar.cpp:77
+#, fuzzy
+#| msgid "Case &sensitive"
+msgid "Case sensitive"
+msgstr "केस सम्वेदनशीलता"
+
+#: findbar/findbar.cpp:79
+msgid "Highlight all matches"
+msgstr ""
+
+#: htmlstatusbar.cpp:110
 #, fuzzy
 #| msgid ""
 #| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
 #| "qt>"
-msgid ""
-"<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
-">a<br />g<br />e</b></qt>"
+msgctxt "'HTML Message' with html linebreaks between each letter."
+msgid "<br />M<br />e<br />s<br />s<br />a<br />g<br />e</b></qt>"
 msgstr ""
 "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></qt>"
 
-#: htmlstatusbar.cpp:93
+#: htmlstatusbar.cpp:113
 #, fuzzy
 #| msgid ""
 #| "<qt><br>N<br>o<br> <br>H<br>T<br>M<br>L<br> "
 #| "<br>M<br>e<br>s<br>s<br>a<br>g<br>e</qt>"
+msgctxt "'No HTML Message' with html linebreaks between each letter."
 msgid ""
 "<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
 ">e<br />s<br />s<br />a<br />g<br />e</qt>"
@@ -222,709 +924,45 @@ msgstr ""
 "<qt><br>N<br>o<br> <br>H<br>T<br>M<br>L<br> "
 "<br>M<br>e<br>s<br>s<br>a<br>g<br>e</qt>"
 
-#: kmmsgpartdlg.cpp:43
+#: htmlstatusbar.cpp:118
 #, fuzzy
-#| msgid "None (7-bit text)"
-msgctxt "message encoding type"
-msgid "None (7-bit text)"
-msgstr "कुनै पनि होइन (७-बिट पाठ)"
-
-#: kmmsgpartdlg.cpp:44
-#, fuzzy
-#| msgid "None (8-bit text)"
-msgctxt "message encoding type"
-msgid "None (8-bit text)"
-msgstr "कुनै पनि होइन(८-बिट पाठ)"
-
-#: kmmsgpartdlg.cpp:45
-#, fuzzy
-#| msgid "Quoted Printable"
-msgctxt "message encoding type"
-msgid "Quoted Printable"
-msgstr "मुद्रणयोग्य उद्धरण"
-
-#: kmmsgpartdlg.cpp:46
-#, fuzzy
-#| msgid "Base 64"
-msgctxt "message encoding type"
-msgid "Base 64"
-msgstr "आधार ६४"
-
-#: kmmsgpartdlg.cpp:59
-msgid "Message Part Properties"
-msgstr "सन्देश भाग विशेषता"
-
-#: kmmsgpartdlg.cpp:103
-#, kde-format
+#| msgid ""
+#| "<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></"
+#| "qt>"
+msgctxt "'Plain Message' with html linebreaks between each letter."
 msgid ""
-"<qt><p>The <em>MIME type</em> of the file:</p><p>normally, you do not need "
-"to touch this setting, since the type of the file is automatically checked; "
-"but, sometimes, %1 may not detect the type correctly -- here is where you "
-"can fix that.</p></qt>"
+"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
+">s<br />a<br />g<br />e<br /></qt>"
 msgstr ""
-"<qt><p> फाइलको<em>MIME प्रकार</em>:</p><p>सामान्यतया, फाइल प्रकार स्वचालित रूपमा "
-"जाँच भएसम्म; तपाईँलाई यो सेटिङ छुन आवश्यक हुदैन, तर, कहिलेकाही तपाईँले त्यसलाई निश्चित "
-"गर्ने ठाउमा %1 ले टाइप ठीक तरिकाले पत्ता नलगाउन सक्छ ।</p></qt>"
+"<qt><b><br>H<br>T<br>M<br>L<br> <br>M<br>e<br>s<br>s<br>a<br>g<br>e</b></qt>"
 
-#: kmmsgpartdlg.cpp:115
-#, kde-format
-msgid ""
-"<qt><p>The size of the part:</p><p>sometimes, %1 will only give an estimated "
-"size here, because calculating the exact size would take too much time; when "
-"this is the case, it will be made visible by adding \"(est.)\" to the size "
-"displayed.</p></qt>"
+#: htmlstatusbar.cpp:132
+msgid "Click to toggle between HTML and plain text."
 msgstr ""
-"<qt><p>खण्डको साइज:</p><p>कहिलेकाही, %1 ले यहाँ अनुमानित साइज मात्र दिन्छ, किनभने "
-"दुरुस्त साइज गणना गर्दा प्रशस्त समय लिनेछ; यो अवस्थामा, प्रदर्शित हुने साइजमा \"(est.)\" "
-"थपेर यसलाई दृश्यात्मक बनाइनेछ ।</p></qt>"
 
-#: kmmsgpartdlg.cpp:126
-#, fuzzy
-#| msgid "&Name:"
-msgctxt "file name of the attachment."
-msgid "&Name:"
-msgstr "नाम:"
-
-#: kmmsgpartdlg.cpp:131
-msgid ""
-"<qt><p>The file name of the part:</p><p>although this defaults to the name "
-"of the attached file, it does not specify the file to be attached; rather, "
-"it suggests a file name to be used by the recipient's mail agent when saving "
-"the part to disk.</p></qt>"
-msgstr ""
-"<qt><p>खण्डको फाइल नाम:</p><p>यसले सङ्लग्न फाइलको नाम पूर्वनिर्धारण गरे पनि, यसले "
-"सङ्लग्न हुने फाइलको निर्दिष्ट गर्दैन; यद्यपि, यसले खण्डलाई चक्कामा बचत गर्दा प्रापकको मेल "
-"अभिकर्ताद्वारा प्रयोग गरिने फाइल नाम सुझाव गर्छ ।</p></qt>"
-
-#: kmmsgpartdlg.cpp:142
-msgid "&Description:"
-msgstr "वर्णन:"
-
-#: kmmsgpartdlg.cpp:147
-msgid ""
-"<qt><p>A description of the part:</p><p>this is just an informational "
-"description of the part, much like the Subject is for the whole message; "
-"most mail agents will show this information in their message previews "
-"alongside the attachment's icon.</p></qt>"
-msgstr ""
-"<qt><p>खण्डको वर्णन:</p><p>यो खण्डको सूचनात्मक वर्णन मात्र हो, धेरै मिल्ने विषयवस्तु पुरा "
-"सन्देशका लागि हो; धेरै मेल अभिकर्ताले सङ्लग्नताको प्रतिमा साथै तिनका सन्देश पूर्वावलोकनमा "
-"यो सूचना देखाउनेछन् ।</p></qt>"
-
-#: kmmsgpartdlg.cpp:159
-msgid "&Encoding:"
-msgstr "सङ्केतन:"
-
-#: kmmsgpartdlg.cpp:164
-#, kde-format
-msgid ""
-"<qt><p>The transport encoding of this part:</p><p>normally, you do not need "
-"to change this, since %1 will use a decent default encoding, depending on "
-"the MIME type; yet, sometimes, you can significantly reduce the size of the "
-"resulting message, e.g. if a PostScript file does not contain binary data, "
-"but consists of pure text -- in this case, choosing \"quoted-printable\" "
-"over the default \"base64\" will save up to 25% in resulting message size.</"
-"p></qt>"
-msgstr ""
-"<qt><p>यो भागको पारवाहन सङ्केतन:</p><p>सामान्यतया, %1 ले एमआईएमई प्रकारमा निर्भर, "
-"उचित पूर्वनिर्धारित सङ्केतन प्रयोग नगरेसम्म, तपाईँले यसलाई परिवर्तन गर्नु आवश्यक हुदैन; तै "
-"पनि, कहिलेकाहि, तपाईँले परिणाम सन्देशको साइज सार्थक रूपमा घटाउन सक्नुहुन्छ, जस्तै; यदि "
-"पोस्टस्क्रिप्ट फाइलले बाइनरि डेटा समावेश गर्दैन, तर शुद्ध पाठको समावेश गर्छ भने -- यो "
-"अवस्थमा, परिणाम सन्देश साइजमा रोजिने \"उद्धरण गरिएको मुद्रणयोग्य\" मा पूर्वनिर्धारित "
-"\"base64\" २५% प्रतिशतमा बचत हुन्छ ।</p></qt>"
-
-#: kmmsgpartdlg.cpp:177
-msgid "Suggest &automatic display"
-msgstr "स्वचालित प्रदर्शन सुझाव गर्नुहोस्"
-
-#: kmmsgpartdlg.cpp:180
-msgid ""
-"<qt><p>Check this option if you want to suggest to the recipient the "
-"automatic (inline) display of this part in the message preview, instead of "
-"the default icon view;</p><p>technically, this is carried out by setting "
-"this part's <em>Content-Disposition</em> header field to \"inline\" instead "
-"of the default \"attachment\".</p></qt>"
-msgstr ""
-"<qt><p>प्रापकलाई तपाईँले पूर्वनिर्धारित प्रतिमा दृश्यको साटोमा, सन्देश पूर्वावलोकनमा यो "
-"भागको स्वचालित (इनलान) प्रदर्शन सुझाव गर्न चाहनुहुन्छ भने यो विकल्प जाँच गर्नुहोस्;</"
-"p><p>प्राबिधिक रूपमा, यसलाई यो भागको <em>सामाग्री सजावट</em> द्वारा हेडर फिल्डलाई "
-"पूर्वनिर्धारित \"सङ्लग्नता\" को साटोमा \"इनलाइन\" मा सेटिङ गरेर देखाइन्छ ।</p></qt>"
-
-#: kmmsgpartdlg.cpp:189
-msgid "&Sign this part"
-msgstr "यो खण्डमा चिन्ह लगाउनुहोस्"
-
-#: kmmsgpartdlg.cpp:192
-msgid ""
-"<qt><p>Check this option if you want this message part to be signed;</"
-"p><p>the signature will be made with the key that you associated with the "
-"currently-selected identity.</p></qt>"
-msgstr ""
-"<qt><p>तपाईँ यो सन्देश खण्ड हस्ताक्षरित रूपमा चाहनुहुन्छ भने यो विल्प चेक गर्नुहोस्;</"
-"p><p>हस्ताक्षर तपाईँले हालै चयन गरेका परिचयसँग सम्बन्धित कुञ्जीले बनेको हुनेछ ।</p></qt>"
-
-#: kmmsgpartdlg.cpp:199
-msgid "Encr&ypt this part"
-msgstr "यो अंश गुप्तिकरण गर्नुहोस्"
-
-#: kmmsgpartdlg.cpp:202
-msgid ""
-"<qt><p>Check this option if you want this message part to be encrypted;</"
-"p><p>the part will be encrypted for the recipients of this message</p></qt>"
-msgstr ""
-"<qt><p>तपाईँले यो सन्देश खण्ड गुप्तिकृत रूपमा चाहेमा यो विकल्प चिनो गर्नुहोस्;</p><p>यो "
-"सन्देशको प्रापकका लागि खण्ड गुप्तिकृत हुनेछ</p></qt>"
-
-#: kmmsgpartdlg.cpp:243
-#, kde-format
-msgctxt "%1: a filesize incl. unit (e.g. \"1.3 KB\")"
-msgid "%1 (est.)"
-msgstr "%1 (est.)"
-
-#: mimetreemodel.cpp:63
+#: mimetreemodel.cpp:65
 msgid "body part"
 msgstr "मुख्य भाग"
 
-#: mimetreemodel.cpp:199
+#: mimetreemodel.cpp:203
 msgid "Description"
 msgstr "वर्णन"
 
-#: mimetreemodel.cpp:201
+#: mimetreemodel.cpp:205
 msgid "Type"
 msgstr "प्रकार"
 
-#: mimetreemodel.cpp:203
+#: mimetreemodel.cpp:207
 msgid "Size"
 msgstr "साइज"
 
-#: objecttreeparser.cpp:515
-msgid "Wrong Crypto Plug-In."
-msgstr "गलत क्राइप्टो प्लगइन ।"
-
-#: objecttreeparser.cpp:626 objecttreeparser.cpp:2193
-msgid "Different results for signatures"
-msgstr "हस्ताक्षरको फरक परिणाम"
-
-#: objecttreeparser.cpp:699
-msgid "The crypto engine returned no cleartext data."
-msgstr "क्राइप्टो इञ्जिनले क्लेयरटेक्स्ट नभएको डेटा फिर्ता गर्यो ।"
-
-#: objecttreeparser.cpp:702 objecttreeparser.cpp:2659
-#: objecttreeparser.cpp:2702
-msgid "Status: "
-msgstr "वस्तुस्थिति: "
-
-#: objecttreeparser.cpp:709
-#, fuzzy
-#| msgid "(unknown)"
-msgctxt "Status of message unknown."
-msgid "(unknown)"
-msgstr "(अज्ञात)"
-
-#: objecttreeparser.cpp:720 objecttreeparser.cpp:943
-#, kde-format
-msgid "Crypto plug-in \"%1\" is not initialized."
-msgstr "गुप्त प्लग-इन \"%1\" सुरुआत गरिएको छैन ।"
-
-#: objecttreeparser.cpp:724
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot verify signatures."
-msgstr "गुप्त प्लग-इन \"%1\" ले हस्ताक्षर रुजु गर्न सकिँदैन ।"
-
-#: objecttreeparser.cpp:729 objecttreeparser.cpp:951
-msgid "No appropriate crypto plug-in was found."
-msgstr "उचित गुप्त प्लगइन फेला परेको छैन ।"
-
-#: objecttreeparser.cpp:732
-#, kde-format
-msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-msgid "No %1 plug-in was found."
-msgstr "%1 प्लग-इन फेला परेको छैन ।"
-
-#: objecttreeparser.cpp:736
-#, kde-format
-msgid ""
-"The message is signed, but the validity of the signature cannot be verified."
-"<br />Reason: %1"
-msgstr "सन्देशमा चिन्ह लगाइएको छ, तर हस्ताक्षरको वैधता रुजु गर्न सकिँदैन ।<br />कारण: %1"
-
-#: objecttreeparser.cpp:771
-#, fuzzy
-#| msgid "Store sent messages encry&pted"
-msgid "This message is encrypted."
-msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
-
-#: objecttreeparser.cpp:776
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt Message"
-msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
-
-#: objecttreeparser.cpp:801
-#, fuzzy
-#| msgid "Encrypted data not shown."
-msgid "Encrypted data not shown"
-msgstr "नदेखिएका डेटा गुप्तिकरण गर्नुहोस् ।"
-
-#: objecttreeparser.cpp:841
-#, fuzzy
-#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgid "Could not decrypt the data."
-msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
-
-#: objecttreeparser.cpp:930
-#, kde-format
-msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
-
-#: objecttreeparser.cpp:932
-#, kde-format
-msgid "Error: %1"
-msgstr "त्रुटि: %1"
-
-#: objecttreeparser.cpp:947
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot decrypt messages."
-msgstr "गुप्त प्लग-इन \"%1\" ले सन्देश गुप्तिकरणबाट उल्टउन सक्दैन ।"
-
-#: objecttreeparser.cpp:1080
-msgid ""
-"<b>Note:</b> This HTML message may contain external references to images "
-"etc. For security/privacy reasons external references are not loaded. If you "
-"trust the sender of this message then you can load the external references "
-"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
-msgstr ""
-"<b>द्रष्टब्य:</b> यो HTML सन्देशले छवि आदिमा बाह्य सन्दर्भ समावेश गर्न सक्छ । सुरक्षा/"
-"गोप्यताका कारणले बाह्य सन्दर्भ लोड गरिएका छैनन् । तपाईँलाई यो सन्देश प्रेषकमा विश्वास "
-"भएमा यो सन्देशका लागि बाह्य सन्दर्भ लोड गर्न <a href=\"kmail:loadExternal\">यहाँ "
-"क्लिक गरेर</a> लोड गर्न सक्नुहुन्छ ।"
-
-#: objecttreeparser.cpp:1090
-msgid ""
-"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
-"HTML code is shown. If you trust the sender of this message then you can "
-"activate formatted HTML display for this message <a href=\"kmail:showHTML"
-"\">by clicking here</a>."
-msgstr ""
-"<b>द्रष्टव्य:</b> यो HTML सन्देश हो । सुरक्षाका कारणले, केवल कच्चा HTML सङ्केत देखिएको छ "
-"। तपाईँलाई यो सन्देशको प्रेषकमा विश्वास भएमा यो सन्देशका लागि ढाँचावद्ध गरिएको HTML "
-"प्रदर्शन <a href=\"kmail:showHTML\">यहाँ क्लिक गरेर </a> सक्रिय पार्न सक्नुहुन्छ ।"
-
-#: objecttreeparser.cpp:1731
-#, fuzzy, kde-format
-#| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
-msgid "Sorry, certificate could not be imported.<br />Reason: %1"
-msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयात गर्न सकिने छैन ।<br>कारण: %1"
-
-#: objecttreeparser.cpp:1741
-msgid "Sorry, no certificates were found in this message."
-msgstr "माफ गर्नुहोस्, यो सन्देशमा प्रमाणपत्र फेला परेका छैनन् ।"
-
-#: objecttreeparser.cpp:1744
-msgid "Certificate import status:"
-msgstr "प्रमाणपत्र आयात स्थिति:"
-
-#: objecttreeparser.cpp:1746
-#, fuzzy, kde-format
-msgid "1 new certificate was imported."
-msgid_plural "%1 new certificates were imported."
-msgstr[0] "१ नयाँ प्रमाणपत्र आयात गरिएको थियो ।"
-msgstr[1] "%1 नयाँ प्रमाणपत्र आयात गरिएका थिए ।"
-
-#: objecttreeparser.cpp:1749
-#, fuzzy, kde-format
-msgid "1 certificate was unchanged."
-msgid_plural "%1 certificates were unchanged."
-msgstr[0] "१ प्रमाणपत्र अपरिवर्तित थिए ।"
-msgstr[1] "%1 प्रमाणपत्र अपरिवर्तित थिए ।"
-
-#: objecttreeparser.cpp:1752
-#, fuzzy, kde-format
-msgid "1 new secret key was imported."
-msgid_plural "%1 new secret keys were imported."
-msgstr[0] "१ नयाँ गोप्य कुञ्जी आयात गरिएको थियो ।"
-msgstr[1] "%1 नयाँ गोप्य कुञ्जी आयात गरिएका थिए ।"
-
-#: objecttreeparser.cpp:1755
-#, fuzzy, kde-format
-msgid "1 secret key was unchanged."
-msgid_plural "%1 secret keys were unchanged."
-msgstr[0] "१ गोप्य कुञ्जी अपरिवर्तित थियो ।"
-msgstr[1] "%1 गोप्य कुञ्जी अपरिवर्तित थिए ।"
-
-#: objecttreeparser.cpp:1765
-msgid "Sorry, no details on certificate import available."
-msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयातमा विस्तृत विवरण उपलब्ध छैन ।"
-
-#: objecttreeparser.cpp:1768
-msgid "Certificate import details:"
-msgstr "प्रमाणपत्र आयात विस्तृत विवरण:"
-
-#: objecttreeparser.cpp:1771
-#, fuzzy, kde-format
-#| msgid "Failed: %1 (%2)"
-msgctxt "Certificate import failed."
-msgid "Failed: %1 (%2)"
-msgstr "असफल: %1 (%2)"
-
-#: objecttreeparser.cpp:1775
-#, kde-format
-msgid "New or changed: %1 (secret key available)"
-msgstr "नयाँ वा परिवर्तित: %1 (गोप्य कुञ्जी उपलब्ध)"
-
-#: objecttreeparser.cpp:1777
-#, kde-format
-msgid "New or changed: %1"
-msgstr "नयाँ वा परिवर्तित: %1"
-
-#: objecttreeparser.cpp:1921
-msgid ""
-"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
-"report this bug."
-msgstr ""
-"व्यतिक्रम ब्याकइन्डले \"x प्राप्त गर्ने कुञ्जी\" प्रकार्य प्रस्ताव गर्दैन । कृपया यो बग "
-"प्रतिवेदन गर्नुहोस् ।"
-
-#: objecttreeparser.cpp:1927
-msgid "Chiasmus Backend Error"
-msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
-
-#: objecttreeparser.cpp:1933
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
-"function did not return a string list. Please report this bug."
-msgstr ""
-"व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x प्राप्ति कुञ्जी \" प्रकार्यले स्ट्रिङ सूची "
-"फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
-
-#: objecttreeparser.cpp:1941
-msgid ""
-"No keys have been found. Please check that a valid key path has been set in "
-"the Chiasmus configuration."
-msgstr ""
-"कुञ्जी फेला परेको छैन । कृपया व्यतिक्रम कन्फिगरेसनमा वैध कुञ्जी बाटो सेट भएको जाँच गर्नुहोस् ।"
-
-#: objecttreeparser.cpp:1961
-msgid ""
-"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
-"this bug."
-msgstr ""
-"व्यतिक्रम ब्याकइन्डले \"x-decrypt\" प्रकार्य प्रस्ताव गर्दैन । कृपया बग प्रतिवेदन गर्नुहोस् ।"
-
-#: objecttreeparser.cpp:1969
-msgid ""
-"The \"x-decrypt\" function does not accept the expected parameters. Please "
-"report this bug."
-msgstr ""
-"\"x-decrypt\" प्रकार्यले अपेक्षित परिमिति स्वीकार गर्दैन । कृपया यो बग प्रतिवेदन गर्नुहोस् "
-"।"
-
-#: objecttreeparser.cpp:1975
-msgid "Chiasmus Decryption Error"
-msgstr "ब्यतिक्रम गुप्तिकरण उल्टाउने त्रुटि"
-
-#: objecttreeparser.cpp:1981
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
-"did not return a byte array. Please report this bug."
-msgstr ""
-"व्यतिक्रम ब्याकइन्डबाट अनपेक्षित फिर्ता मान: \"x-decrypt\" प्रकार्यले बाइट एरे फर्काएको "
-"छैन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
-
-#: objecttreeparser.cpp:2112
-#, fuzzy
-#| msgctxt "Missing profile name placeholder"
-#| msgid "Unnamed"
-msgctxt "display name for an unnamed attachment"
-msgid "Unnamed"
-msgstr "बेनामी"
-
-#: objecttreeparser.cpp:2175
-msgid "Error: Signature not verified"
-msgstr "त्रुटि: हस्ताक्षर रुजु गरिएको छैन"
-
-#: objecttreeparser.cpp:2178
-msgid "Good signature"
-msgstr "ठीक हस्ताक्षर"
-
-#: objecttreeparser.cpp:2181
-msgid "<b>Bad</b> signature"
-msgstr "<b>गलत</b> हस्ताक्षर"
-
-#: objecttreeparser.cpp:2184
-msgid "No public key to verify the signature"
-msgstr "हस्ताक्षर रुजु गर्न सार्वजनिक कुञ्जी छैन"
-
-#: objecttreeparser.cpp:2187
-msgid "No signature found"
-msgstr "हस्ताक्षर फेला परेन"
-
-#: objecttreeparser.cpp:2190
-msgid "Error verifying the signature"
-msgstr "हस्ताक्षर रुजु गर्दा त्रुटि"
-
-#: objecttreeparser.cpp:2213
-msgid "No status information available."
-msgstr "स्थिति सूचना उपलब्ध छैन ।"
-
-#: objecttreeparser.cpp:2220 objecttreeparser.cpp:2304
-msgid "Good signature."
-msgstr "ठीक हस्ताक्षर ।"
-
-#: objecttreeparser.cpp:2241
-msgid "One key has expired."
-msgstr "एउटा कुञ्जीको म्याद समाप्त भएको छ ।"
-
-#: objecttreeparser.cpp:2245
-msgid "The signature has expired."
-msgstr "हस्ताक्षरको म्याद समाप्त भएको छ ।"
-
-#: objecttreeparser.cpp:2250
-msgid "Unable to verify: key missing."
-msgstr "रुजू गर्न असमर्थ: कुञ्जी हरायो ।"
-
-#: objecttreeparser.cpp:2257
-msgid "CRL not available."
-msgstr "CRL उपलब्ध छैन ।"
-
-#: objecttreeparser.cpp:2261
-msgid "Available CRL is too old."
-msgstr "उपलब्ध CRL धेरै पुनानो छ ।"
-
-#: objecttreeparser.cpp:2265
-msgid "A policy was not met."
-msgstr "नीति मिलेको छैन ।"
-
-#: objecttreeparser.cpp:2269
-msgid "A system error occurred."
-msgstr "एउट प्रणाली त्रुटि उत्पन्न भयो ।"
-
-#: objecttreeparser.cpp:2280
-msgid "One key has been revoked."
-msgstr "एउटा कुञ्जी खारेज गरिएको छ ।"
-
-#: objecttreeparser.cpp:2306
-msgid "<b>Bad</b> signature."
-msgstr "<b>गलत</b> हस्ताक्षर ।"
-
-#: objecttreeparser.cpp:2333
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Invalid signature."
-msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
-
-#: objecttreeparser.cpp:2335
-#, fuzzy
-#| msgid "Not enough information to check signature. %1"
-msgid "Not enough information to check signature validity."
-msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
-
-#: objecttreeparser.cpp:2344
-#, fuzzy
-#| msgid "Signatures"
-msgid "Signature is valid."
-msgstr "हस्ताक्षर"
-
-#: objecttreeparser.cpp:2346
-#, kde-format
-msgid "Signed by <a href=\"mailto:%1\">%2</a>."
-msgstr ""
-
-#: objecttreeparser.cpp:2350
-msgid "Unknown signature state"
-msgstr ""
-
-#: objecttreeparser.cpp:2354
-#, fuzzy
-#| msgid "Show alway&s"
-msgid "Show Details"
-msgstr "सधैँँ देखाउनुहोस्"
-
-#: objecttreeparser.cpp:2371
-#, fuzzy
-#| msgid "Not available"
-msgid "No Audit Log available"
-msgstr "उपलब्ध छैन"
-
-#: objecttreeparser.cpp:2373
-#, fuzzy, kde-format
-#| msgid ""
-#| "Error retrieving quota information from server\n"
-#| "%1"
-msgid "Error Retrieving Audit Log: %1"
-msgstr ""
-"सर्भरबाट कोटा जानकारी पुन: प्राप्त गर्दा त्रुटि\n"
-"%1"
-
-#: objecttreeparser.cpp:2383
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr ""
-
-#: objecttreeparser.cpp:2394
-#, fuzzy
-#| msgid "Logging Details"
-msgid "Hide Details"
-msgstr "लगिङ विवरण"
-
-#: objecttreeparser.cpp:2420 objecttreeparser.cpp:2422
-msgid "Encapsulated message"
-msgstr "इनक्याप्सुलेट गरिएको सन्देश"
-
-#: objecttreeparser.cpp:2431
-#, fuzzy
-msgid "Please wait while the message is being decrypted..."
-msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
-
-#: objecttreeparser.cpp:2433
-msgid "Encrypted message"
-msgstr "गुप्तिकृत सन्देश"
-
-#: objecttreeparser.cpp:2435
-msgid "Encrypted message (decryption not possible)"
-msgstr "गुप्तिकृत सन्देश (गुप्तिकरण उल्टाउन सम्भव छैन)"
-
-#: objecttreeparser.cpp:2437
-#, kde-format
-msgid "Reason: %1"
-msgstr "कारण: %1"
-
-#: objecttreeparser.cpp:2447
-#, fuzzy
-msgid "Please wait while the signature is being verified..."
-msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
-
-#: objecttreeparser.cpp:2542 objecttreeparser.cpp:2544
-#, fuzzy
-#| msgid "Certificates"
-msgid "certificate"
-msgstr "प्रमाणपत्र"
-
-#: objecttreeparser.cpp:2550 objecttreeparser.cpp:2575
-#, fuzzy
-#| msgid "Warning:"
-msgctxt "Start of warning message."
-msgid "Warning:"
-msgstr "चेतावनी:"
-
-#: objecttreeparser.cpp:2552
-#, kde-format
-msgid "Sender's mail address is not stored in the %1 used for signing."
-msgstr "साइनिङका लागि प्रयोग गरिएको प्रेषकको मेल ठेगाना %1 मा भण्डारण गरिएको छैन ।"
-
-#: objecttreeparser.cpp:2555
-msgid "sender: "
-msgstr "प्रेषक: "
-
-#: objecttreeparser.cpp:2558
-msgid "stored: "
-msgstr "भण्डारण गरिएको: "
-
-#: objecttreeparser.cpp:2577
-#, kde-format
-msgid ""
-"No mail address is stored in the %1 used for signing, so we cannot compare "
-"it to the sender's address %2."
-msgstr ""
-"साइनिङका लागि प्रयोग गरिएको इमेल ठेगाना %1 मा भण्डारण गरिएको छैन, त्यसैले यसलाई "
-"हामीले प्रेषकको ठेगाना %2 सँग तुलना गर्न सक्दैनौ ।"
-
-#: objecttreeparser.cpp:2601
-#, kde-format
-msgid "Not enough information to check signature. %1"
-msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
-
-#: objecttreeparser.cpp:2618 objecttreeparser.cpp:2696
-msgid "Message was signed with unknown key."
-msgstr "अज्ञात कुञ्जीद्वारा सन्देश चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2620 objecttreeparser.cpp:2734
-#: objecttreeparser.cpp:2778
-#, kde-format
-msgid "Message was signed by %1."
-msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2627 objecttreeparser.cpp:2636
-#: objecttreeparser.cpp:2647
-#, kde-format
-msgid "Message was signed with key %1."
-msgstr "सन्देश कुञ्जी %1 ले चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2630
-#, kde-format
-msgid "Message was signed on %1 with key %2."
-msgstr "%1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2639
-#, kde-format
-msgid "Message was signed by %3 on %1 with key %2"
-msgstr "%3 द्वारा %1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो"
-
-#: objecttreeparser.cpp:2650
-#, kde-format
-msgid "Message was signed by %2 with key %1."
-msgstr "%2 द्वारा कुञ्जी %1 ले सन्देशमा चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2688
-#, kde-format
-msgid "Message was signed on %1 with unknown key %2."
-msgstr "%1 मा अज्ञात कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2692
-#, kde-format
-msgid "Message was signed with unknown key %1."
-msgstr "अज्ञता कुञ्जी %1 ले सन्देश चिन्ह लगाइएको थियो ।"
-
-#: objecttreeparser.cpp:2698
-msgid "The validity of the signature cannot be verified."
-msgstr "हस्ताक्षरको वैधता रुजु गर्न सकिने छैन ।"
-
-#: objecttreeparser.cpp:2730 objecttreeparser.cpp:2774
-#, kde-format
-msgid "Message was signed by %2 (Key ID: %1)."
-msgstr "सन्देश %2 द्वारा चिन्ह लगाइएको थियो(कुञ्जीआईडी: %1) ।"
-
-#: objecttreeparser.cpp:2740
-msgid "The signature is valid, but the key's validity is unknown."
-msgstr "हस्ताक्षर वैध छ, तर कुञ्जीको वैधता अज्ञाता छ ।"
-
-#: objecttreeparser.cpp:2744
-msgid "The signature is valid and the key is marginally trusted."
-msgstr "हस्ताक्षर वैध छ र कुञ्जी आंशिक विश्वासिलो छ ।"
-
-#: objecttreeparser.cpp:2748
-msgid "The signature is valid and the key is fully trusted."
-msgstr "हस्ताक्षर वैध छ र कुञ्जी पूर्ण विश्वासिलो छ ।"
-
-#: objecttreeparser.cpp:2752
-msgid "The signature is valid and the key is ultimately trusted."
-msgstr "हस्ताक्षर वैध छ र कुञ्जी अतिनै विश्वासिलो छ ।"
-
-#: objecttreeparser.cpp:2756
-msgid "The signature is valid, but the key is untrusted."
-msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वाशिलो छ ।"
-
-#: objecttreeparser.cpp:2780
-msgid "Warning: The signature is bad."
-msgstr "चेतावनी: हस्ताक्षर गलत छ ।"
-
-#: objecttreeparser.cpp:2804
-msgid "End of signed message"
-msgstr "चिन्ह लगाएका सन्देशको अन्त्यमा"
-
-#: objecttreeparser.cpp:2810
-msgid "End of encrypted message"
-msgstr "गुप्तिकृत सन्देशको अन्त्यमा"
-
-#: objecttreeparser.cpp:2817
-msgid "End of encapsulated message"
-msgstr "इन्क्याप्सुलेटेड सन्देशको अन्त्यमा"
-
-#: objecttreeparser.cpp:2989
-#, fuzzy
-#| msgid "Store sent messages encry&pted"
-msgid "The message could not be decrypted."
-msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
+#: chiasmuskeyselector.cpp:29
+msgid "Please select the Chiasmus key file to use:"
+msgstr "कृपया प्रयोग गर्नका लागि व्यतिक्रम कुञ्जी फाइल चयन गर्नुहोस्:"
+
+#: chiasmuskeyselector.cpp:39
+msgid "Additional arguments for chiasmus:"
+msgstr "व्यक्तिक्रमका लागि अतिरिक्त तर्क:"
 
 #. i18n: file: messageviewer.kcfg:28
 #. i18n: ectx: whatsthis, entry (FallbackCharacterEncoding), group (Reader)
@@ -1165,178 +1203,124 @@ msgstr "क्यारेक्टर सङ्केतन पछि हटा
 msgid "&Override character encoding:"
 msgstr "क्यारेक्टर सङ्केतन अधिरोहण गर्नुहोस्:"
 
-#: urlhandlermanager.cpp:409
-msgid "Turn on HTML rendering for this message."
-msgstr "यो सन्देशका लागि HTML रेन्डरिङ खोल्नुहोस् ।"
-
-#: urlhandlermanager.cpp:411
-msgid "Load external references from the Internet for this message."
-msgstr "यो सन्देशका लागि इन्टरनेटबाट बाह्य सन्दर्भ लोड गर्नुहोस् ।"
-
-#: urlhandlermanager.cpp:413
-#, fuzzy
-#| msgid "Work online"
-msgid "Work online."
-msgstr "अनलाइन कार्य गर्नुहोस्"
-
-#: urlhandlermanager.cpp:415
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt message."
-msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
-
-#: urlhandlermanager.cpp:417
-#, fuzzy
-#| msgid "No signature found"
-msgid "Show signature details."
-msgstr "हस्ताक्षर फेला परेन"
-
-#: urlhandlermanager.cpp:419
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Hide signature details."
-msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
-
-#: urlhandlermanager.cpp:421
-#, fuzzy
-#| msgid "Show attachment icon"
-msgid "Show attachment list."
-msgstr "सङ्लग्न प्रतिमा देखाउनुहोस्"
-
-#: urlhandlermanager.cpp:423
-#, fuzzy
-#| msgid "Save Attachment As"
-msgid "Hide attachment list."
-msgstr "यस रूपमा सङ्लग्नता बचत गर्नुहोस्"
-
-#: urlhandlermanager.cpp:455
-msgid "Expand all quoted text."
-msgstr "सबै उद्धृत पाठ विस्तार गर्नुहोस् ।"
-
-#: urlhandlermanager.cpp:458
-msgid "Collapse quoted text."
-msgstr "उद्धृत पाठ संक्षिप्त गर्नुहोस् ।"
-
-#: urlhandlermanager.cpp:522
-msgid "Could not start certificate manager. Please check your installation."
-msgstr "प्रमाणपत्र प्रबन्धक सुरु गर्न सकेन । कृपया तपाईँको स्थापना जाँच गर्नुहोस् ।"
-
-#: urlhandlermanager.cpp:524
-msgid "KMail Error"
-msgstr "केडीई मेल त्रुटि"
-
-#: urlhandlermanager.cpp:534
-#, kde-format
-msgid "Show certificate 0x%1"
-msgstr "0x%1 प्रमाणपत्र देखाउनुहोस्"
-
-#: urlhandlermanager.cpp:616
-#, kde-format
-msgid "Attachment: %1"
-msgstr "सङ्लग्नता: %1"
-
-#: urlhandlermanager.cpp:617
-#, kde-format
-msgid "Attachment #%1 (unnamed)"
-msgstr "सङ्लग्न #%1 (बनामी)"
-
-#: urlhandlermanager.cpp:647
-msgid "Show GnuPG Audit Log for this operation"
-msgstr ""
-
-#: util.cpp:56
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-"\"%1\" नाम गरिएको फाइल पहिला नै अवस्थित छ । के तपाईँ यसमा अधिलेखन गर्न निश्चिन्त "
-"हुनुहुन्छ?"
-
-#: util.cpp:58
-msgid "Overwrite File?"
-msgstr "फाइल अधिलेखन गर्नुभयो?"
-
-#: vcardviewer.cpp:39
+#: vcardviewer.cpp:41
 msgid "VCard Viewer"
 msgstr "भि कार्ड दर्शक"
 
-#: vcardviewer.cpp:43
+#: vcardviewer.cpp:45
 msgid "&Import"
 msgstr "आयात"
 
-#: vcardviewer.cpp:44
+#: vcardviewer.cpp:46
 msgid "&Next Card"
 msgstr "पछिल्लो कार्ड"
 
-#: vcardviewer.cpp:45
+#: vcardviewer.cpp:47
 msgid "&Previous Card"
 msgstr "अघिल्लो कार्ड"
 
-#: vcardviewer.cpp:64
+#: vcardviewer.cpp:66
 msgid "Failed to parse vCard."
 msgstr "भिकार्ड पद वर्णन गर्न असफल ।"
 
-#: viewer_p.cpp:300
+#: viewer_p.cpp:322
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: viewer_p.cpp:301 viewer_p.cpp:2003
+#: viewer_p.cpp:323 viewer_p.cpp:421 viewer_p.cpp:1976
 #, fuzzy
 #| msgid "&Remove Attachment"
 msgid "Delete Attachment"
 msgstr "सङ्लग्नता हटाउनुहोस्"
 
-#: viewer_p.cpp:322
+#: viewer_p.cpp:344
 msgid ""
 "Modifying an attachment might invalidate any digital signature on this "
 "message."
 msgstr ""
 
-#: viewer_p.cpp:323 viewer_p.cpp:2006
+#: viewer_p.cpp:345 viewer_p.cpp:415 viewer_p.cpp:1979
 #, fuzzy
 #| msgid "Attachment"
 msgid "Edit Attachment"
 msgstr "सङ्लग्नता"
 
-#: viewer_p.cpp:323
+#: viewer_p.cpp:345
 #, fuzzy
 msgid "Edit"
 msgstr "बाहिरिनुहोस्"
 
-#: viewer_p.cpp:701
+#: viewer_p.cpp:384 viewer_p.cpp:1954
+msgctxt "to open"
+msgid "Open"
+msgstr "खोल्नुहोस्"
+
+#: viewer_p.cpp:388 viewer_p.cpp:1956
+msgid "Open With..."
+msgstr "यससँग खोल्नुहोस्..."
+
+#: viewer_p.cpp:392 viewer_p.cpp:1957
+msgctxt "to view something"
+msgid "View"
+msgstr "दृश्य"
+
+#: viewer_p.cpp:399
+msgid "Scroll To"
+msgstr ""
+
+#: viewer_p.cpp:404
+#, fuzzy
+msgid "Save As..."
+msgstr "यस रूपमा बचत गर्नुहोस्..."
+
+#: viewer_p.cpp:408 viewer_p.cpp:1973
+#, fuzzy
+msgid "Copy"
+msgstr "यसमा प्रतिलिपि गर्नुहोस्"
+
+#: viewer_p.cpp:428
+msgid "Decrypt With Chiasmus..."
+msgstr "व्यतिक्रमसँग गुप्तिकरण उल्टाउनुहोस्..."
+
+#: viewer_p.cpp:432 viewer_p.cpp:1984
+#, fuzzy
+msgid "Properties"
+msgstr "विशेषता"
+
+#: viewer_p.cpp:716
 #, kde-format
 msgid ""
 "The part %1 of the message is encrypted. Do you want to keep the encryption "
 "when saving?"
 msgstr "सन्देशको %1 भाग गुप्तिकृत गरिएको छ । के तपाईँ बचत गर्दा गुप्तिकरण राख्न चाहनुहुन्छ?"
 
-#: viewer_p.cpp:703 viewer_p.cpp:712
+#: viewer_p.cpp:718 viewer_p.cpp:727
 msgid "KMail Question"
 msgstr "केडीई मेल प्रश्न"
 
-#: viewer_p.cpp:703
+#: viewer_p.cpp:718
 msgid "Keep Encryption"
 msgstr "गुप्तिकरण राख्नुहोस्"
 
-#: viewer_p.cpp:703 viewer_p.cpp:712
+#: viewer_p.cpp:718 viewer_p.cpp:727
 msgid "Do Not Keep"
 msgstr "नराख्नुहोस्"
 
-#: viewer_p.cpp:710
+#: viewer_p.cpp:725
 #, kde-format
 msgid ""
 "The part %1 of the message is signed. Do you want to keep the signature when "
 "saving?"
 msgstr "सन्देशको %1 भाग हस्ताक्षर गरिएको छ । के तपाईँ बचत गर्दा हस्ताक्षर राख्न चाहनुहुन्छ?"
 
-#: viewer_p.cpp:712
+#: viewer_p.cpp:727
 msgid "Keep Signature"
 msgstr "हस्ताक्षर राख्नुहोस्"
 
-#: viewer_p.cpp:768 viewer_p.cpp:793 viewer_p.cpp:809 viewer_p.cpp:2871
-#: viewer_p.cpp:2899 viewer_p.cpp:2915
+#: viewer_p.cpp:783 viewer_p.cpp:806 viewer_p.cpp:822 viewer_p.cpp:2861
+#: viewer_p.cpp:2887 viewer_p.cpp:2903
 #, fuzzy, kde-format
 #| msgctxt "%2 is detailed error description"
 #| msgid ""
@@ -1348,35 +1332,35 @@ msgstr ""
 "फाइल %1 लेख्न सकेन:\n"
 "%2"
 
-#: viewer_p.cpp:771 viewer_p.cpp:796 viewer_p.cpp:812 viewer_p.cpp:2874
-#: viewer_p.cpp:2902 viewer_p.cpp:2918
+#: viewer_p.cpp:786 viewer_p.cpp:809 viewer_p.cpp:825 viewer_p.cpp:2864
+#: viewer_p.cpp:2890 viewer_p.cpp:2906
 #, fuzzy
 #| msgid "has an attachment"
 msgid "Error saving attachment"
 msgstr "एउटा सङ्लग्नता छ"
 
-#: viewer_p.cpp:827
+#: viewer_p.cpp:840
 msgid "Save Attachments To"
 msgstr "यसमा सङ्लग्नता बचत गर्नुहोस्"
 
-#: viewer_p.cpp:841
+#: viewer_p.cpp:854
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr "सङ्लग्नता.१"
 
-#: viewer_p.cpp:845
+#: viewer_p.cpp:858
 #, fuzzy
 #| msgid "Save Attachment As"
 msgid "Save Attachment"
 msgstr "यस रूपमा सङ्लग्नता बचत गर्नुहोस्"
 
-#: viewer_p.cpp:868
+#: viewer_p.cpp:881
 #, kde-format
 msgctxt "filename for the %1-th unnamed attachment"
 msgid "attachment.%1"
 msgstr "सङ्लग्नता.%1"
 
-#: viewer_p.cpp:908 viewer_p.cpp:917
+#: viewer_p.cpp:921 viewer_p.cpp:930
 #, fuzzy, kde-format
 #| msgid "A file named %1 already exists. Do you want to overwrite it?"
 msgid ""
@@ -1384,40 +1368,40 @@ msgid ""
 "want to overwrite it?"
 msgstr "%1 नाम गरिएको फाइल पहिलानै अवस्थित छ । के तपाईँ यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: viewer_p.cpp:910 viewer_p.cpp:919
+#: viewer_p.cpp:923 viewer_p.cpp:932
 msgid "File Already Exists"
 msgstr "फाइल पहिलानै अवस्थित छ"
 
-#: viewer_p.cpp:910 viewer_p.cpp:919
+#: viewer_p.cpp:923 viewer_p.cpp:932
 msgid "&Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: viewer_p.cpp:920
+#: viewer_p.cpp:933
 #, fuzzy
 #| msgid "Overwrite File?"
 msgid "Overwrite &All"
 msgstr "फाइल अधिलेखन गर्नुभयो?"
 
-#: viewer_p.cpp:1070
+#: viewer_p.cpp:1061
 #, fuzzy
 #| msgid "Mail"
 msgid "Mailreader"
 msgstr "मेल"
 
-#: viewer_p.cpp:1072
+#: viewer_p.cpp:1063
 msgid "The email client for the K Desktop Environment."
 msgstr "केडीई डेस्कटप परिवेशका लागि इमेल क्लाइन्ट ।"
 
-#: viewer_p.cpp:1131
+#: viewer_p.cpp:1129
 msgid "( body part )"
 msgstr "( मुख्य भाग )"
 
-#: viewer_p.cpp:1620 viewer_p.cpp:1655 viewer_p.cpp:1675
+#: viewer_p.cpp:1587 viewer_p.cpp:1622 viewer_p.cpp:1642
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "दृश्य सङ्लग्नता: %1"
 
-#: viewer_p.cpp:1667
+#: viewer_p.cpp:1634
 #, fuzzy, kde-format
 msgid ""
 "[KMail: Attachment contains binary data. Trying to show first character.]"
@@ -1429,16 +1413,16 @@ msgstr[1] ""
 "[केडीई मेल: सङ्लग्नताले बाइनरी डेटा समाविष्ट गर्छ । पहिला %1 क्यारेक्टर देखाउने प्रयास "
 "गर्दैछ ।]"
 
-#: viewer_p.cpp:1794
+#: viewer_p.cpp:1756
 msgctxt "View->"
 msgid "&Headers"
 msgstr "हेडर"
 
-#: viewer_p.cpp:1796
+#: viewer_p.cpp:1758
 msgid "Choose display style of message headers"
 msgstr "सन्देश हेडरको प्रदर्शन शैली रोज्नुहोस्"
 
-#: viewer_p.cpp:1802
+#: viewer_p.cpp:1764
 #, fuzzy
 #| msgctxt "View->headers->"
 #| msgid "&Brief Headers"
@@ -1446,205 +1430,350 @@ msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr "संक्षिप्त हेडर"
 
-#: viewer_p.cpp:1805
+#: viewer_p.cpp:1767
 #, fuzzy
 #| msgid "Show the list of headers in a fancy format"
 msgid "Show the list of headers in Enterprise style"
 msgstr "आकर्षक ढाँचामा हेडरको सूची देखाउनुहोस्"
 
-#: viewer_p.cpp:1809
+#: viewer_p.cpp:1771
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr "आकर्षक हेडर"
 
-#: viewer_p.cpp:1812
+#: viewer_p.cpp:1774
 msgid "Show the list of headers in a fancy format"
 msgstr "आकर्षक ढाँचामा हेडरको सूची देखाउनुहोस्"
 
-#: viewer_p.cpp:1816
+#: viewer_p.cpp:1778
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr "संक्षिप्त हेडर"
 
-#: viewer_p.cpp:1819
+#: viewer_p.cpp:1781
 msgid "Show brief list of message headers"
 msgstr "सन्देश हेडरको संक्षिप्त सूची देखाउनुहोस्"
 
-#: viewer_p.cpp:1823
+#: viewer_p.cpp:1785
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr "मानक हेडर"
 
-#: viewer_p.cpp:1826
+#: viewer_p.cpp:1788
 msgid "Show standard list of message headers"
 msgstr "सन्देश हेडरको मानक सूची देखाउनुहोस्"
 
-#: viewer_p.cpp:1830
+#: viewer_p.cpp:1792
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr "लामो हेडर"
 
-#: viewer_p.cpp:1833
+#: viewer_p.cpp:1795
 msgid "Show long list of message headers"
 msgstr "सन्देश हेडरको लामो सूची देखाउनुहोस्"
 
-#: viewer_p.cpp:1837
+#: viewer_p.cpp:1799
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr "सबै हेडर"
 
-#: viewer_p.cpp:1840
+#: viewer_p.cpp:1802
 msgid "Show all message headers"
 msgstr "सबै सन्देश हेडर देखाउनुहोस्"
 
-#: viewer_p.cpp:1845
+#: viewer_p.cpp:1807
 msgctxt "View->"
 msgid "&Attachments"
 msgstr "सङ्लग्नता"
 
-#: viewer_p.cpp:1847
+#: viewer_p.cpp:1809
 msgid "Choose display style of attachments"
 msgstr "सङ्लग्नताको प्रदर्शन शैली रोज्नुहोस्"
 
-#: viewer_p.cpp:1852
+#: viewer_p.cpp:1814
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr "प्रतिमा अनुरुप"
 
-#: viewer_p.cpp:1855
+#: viewer_p.cpp:1817
 msgid "Show all attachments as icons. Click to see them."
 msgstr "प्रतिमाका सबै सङ्लग्नता देखाउनुहोस् । तिनलाई हेर्न क्लिक गर्नुहोस् ।"
 
-#: viewer_p.cpp:1859
+#: viewer_p.cpp:1821
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr "छरितो"
 
-#: viewer_p.cpp:1862
+#: viewer_p.cpp:1824
 msgid "Show attachments as suggested by sender."
 msgstr "प्रेषकद्वारा सुझाव गरिए अनुरुपका सङ्लग्नता देखाउनुहोस् ।"
 
-#: viewer_p.cpp:1866
+#: viewer_p.cpp:1828
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr "इनलाइन"
 
-#: viewer_p.cpp:1869
+#: viewer_p.cpp:1831
 msgid "Show all attachments inline (if possible)"
 msgstr "सबै इनलाइन सङ्लग्नता देखाउनुहोस् (सम्भव भएमा)"
 
-#: viewer_p.cpp:1873
+#: viewer_p.cpp:1835
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr "लुकाउनुहोस्"
 
-#: viewer_p.cpp:1876
+#: viewer_p.cpp:1838
 msgid "Do not show attachments in the message viewer"
 msgstr "सन्देश दर्शकमा सङ्लग्नता नदेखाउनुहोस्"
 
-#: viewer_p.cpp:1881
+#: viewer_p.cpp:1843
 msgid "&Set Encoding"
 msgstr "सङ्केतन सेट गर्नुहोस्"
 
-#: viewer_p.cpp:1900
+#: viewer_p.cpp:1849 configurewidget.cpp:39 configurewidget.cpp:92
+msgid "Auto"
+msgstr "स्वत:"
+
+#: viewer_p.cpp:1862
 msgid "Select All Text"
 msgstr "सबै पाठ चयन गर्नुहोस्"
 
-#: viewer_p.cpp:1907
+#: viewer_p.cpp:1869
 msgid "Copy Link Address"
 msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
 
-#: viewer_p.cpp:1912
+#: viewer_p.cpp:1874
 msgid "Open URL"
 msgstr "ओपन URL"
 
-#: viewer_p.cpp:1917
+#: viewer_p.cpp:1879
 msgid "Use Fi&xed Font"
 msgstr "निश्चित फन्ट प्रयोग गर्नुहोस्"
 
-#: viewer_p.cpp:1923
+#: viewer_p.cpp:1885
 #, fuzzy
 #| msgid "Message Structure Viewer"
 msgid "Show Message Structure"
 msgstr "सन्देश संरचना दर्शक"
 
-#: viewer_p.cpp:1928
+#: viewer_p.cpp:1890
 msgid "&View Source"
 msgstr "स्रोत हेर्नुहोस्"
 
-#: viewer_p.cpp:1933
+#: viewer_p.cpp:1895
 #, fuzzy
 #| msgid " message"
 #| msgid_plural " messages"
 msgid "&Save message"
 msgstr " सन्देश"
 
-#: viewer_p.cpp:1941
+#: viewer_p.cpp:1903
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Scroll Message Up"
 msgstr "सबै सन्देश चयन गर्नुहोस्"
 
-#: viewer_p.cpp:1947
+#: viewer_p.cpp:1909
 #, fuzzy
 #| msgid "Select &All Messages"
 msgid "Scroll Message Down"
 msgstr "सबै सन्देश चयन गर्नुहोस्"
 
-#: viewer_p.cpp:1953
+#: viewer_p.cpp:1915
 msgid "Scroll Message Up (More)"
 msgstr ""
 
-#: viewer_p.cpp:1959
+#: viewer_p.cpp:1921
 msgid "Scroll Message Down (More)"
 msgstr ""
 
-#: viewer_p.cpp:1977
+#: viewer_p.cpp:1932
+msgid "Toggle HTML Display Mode"
+msgstr ""
+
+#: viewer_p.cpp:1936
+msgid "Toggle display mode between HTML and plain text"
+msgstr ""
+
+#: viewer_p.cpp:1950
 msgid "Save &As..."
 msgstr "यस रूपमा बचत गर्नुहोस्..."
 
-#: viewer_p.cpp:1981
-msgctxt "to open"
-msgid "Open"
-msgstr "खोल्नुहोस्"
-
-#: viewer_p.cpp:1983
-msgid "Open With..."
-msgstr "यससँग खोल्नुहोस्..."
-
-#: viewer_p.cpp:1984
-msgctxt "to view something"
-msgid "View"
-msgstr "दृश्य"
-
-#: viewer_p.cpp:1994
+#: viewer_p.cpp:1967
 msgid "Save All Attachments..."
 msgstr "सबै सङ्लग्नता बचत गर्नुहोस्..."
 
-#: viewer_p.cpp:2000
-#, fuzzy
-msgid "Copy"
-msgstr "यसमा प्रतिलिपि गर्नुहोस्"
-
-#: viewer_p.cpp:2011
-#, fuzzy
-msgid "Properties"
-msgstr "विशेषता"
-
-#: viewer_p.cpp:2292
+#: viewer_p.cpp:2272
 msgid "Message as Plain Text"
 msgstr "सादा पाठका रूपमा सन्देश"
 
-#: viewer_p.cpp:2556
+#: viewer_p.cpp:2552
 #, fuzzy
 #| msgctxt "Config->Composer->Attachments"
 #| msgid "A&ttachments"
 msgid "Attachments:"
 msgstr "सङ्लग्नता"
 
-#: viewer_p.cpp:2643
+#: viewer_p.cpp:2611 viewer_p.cpp:2641
 msgid "Found no attachments to save."
 msgstr "बचत गर्न सङ्लग्नता फेला पारेन ।"
+
+#: viewer_p.cpp:2828
+msgid "Address copied to clipboard."
+msgstr "क्लिपबोर्डमा ठेगाना प्रतिलिपि गरियो ।"
+
+#: viewer_p.cpp:2833
+msgid "URL copied to clipboard."
+msgstr "क्लिपबोर्डमा यूआरएल प्रतिलिपि गरियो ।"
+
+#: util.cpp:60
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr ""
+"\"%1\" नाम गरिएको फाइल पहिला नै अवस्थित छ । के तपाईँ यसमा अधिलेखन गर्न निश्चिन्त "
+"हुनुहुन्छ?"
+
+#: util.cpp:62
+msgid "Overwrite File?"
+msgstr "फाइल अधिलेखन गर्नुभयो?"
+
+#, fuzzy
+#~| msgid "None (7-bit text)"
+#~ msgctxt "message encoding type"
+#~ msgid "None (7-bit text)"
+#~ msgstr "कुनै पनि होइन (७-बिट पाठ)"
+
+#, fuzzy
+#~| msgid "None (8-bit text)"
+#~ msgctxt "message encoding type"
+#~ msgid "None (8-bit text)"
+#~ msgstr "कुनै पनि होइन(८-बिट पाठ)"
+
+#, fuzzy
+#~| msgid "Quoted Printable"
+#~ msgctxt "message encoding type"
+#~ msgid "Quoted Printable"
+#~ msgstr "मुद्रणयोग्य उद्धरण"
+
+#, fuzzy
+#~| msgid "Base 64"
+#~ msgctxt "message encoding type"
+#~ msgid "Base 64"
+#~ msgstr "आधार ६४"
+
+#~ msgid "Message Part Properties"
+#~ msgstr "सन्देश भाग विशेषता"
+
+#~ msgid ""
+#~ "<qt><p>The <em>MIME type</em> of the file:</p><p>normally, you do not "
+#~ "need to touch this setting, since the type of the file is automatically "
+#~ "checked; but, sometimes, %1 may not detect the type correctly -- here is "
+#~ "where you can fix that.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p> फाइलको<em>MIME प्रकार</em>:</p><p>सामान्यतया, फाइल प्रकार स्वचालित "
+#~ "रूपमा जाँच भएसम्म; तपाईँलाई यो सेटिङ छुन आवश्यक हुदैन, तर, कहिलेकाही तपाईँले त्यसलाई "
+#~ "निश्चित गर्ने ठाउमा %1 ले टाइप ठीक तरिकाले पत्ता नलगाउन सक्छ ।</p></qt>"
+
+#~ msgid ""
+#~ "<qt><p>The size of the part:</p><p>sometimes, %1 will only give an "
+#~ "estimated size here, because calculating the exact size would take too "
+#~ "much time; when this is the case, it will be made visible by adding "
+#~ "\"(est.)\" to the size displayed.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>खण्डको साइज:</p><p>कहिलेकाही, %1 ले यहाँ अनुमानित साइज मात्र दिन्छ, किनभने "
+#~ "दुरुस्त साइज गणना गर्दा प्रशस्त समय लिनेछ; यो अवस्थामा, प्रदर्शित हुने साइजमा \"(est.)"
+#~ "\" थपेर यसलाई दृश्यात्मक बनाइनेछ ।</p></qt>"
+
+#, fuzzy
+#~| msgid "&Name:"
+#~ msgctxt "file name of the attachment."
+#~ msgid "&Name:"
+#~ msgstr "नाम:"
+
+#~ msgid ""
+#~ "<qt><p>The file name of the part:</p><p>although this defaults to the "
+#~ "name of the attached file, it does not specify the file to be attached; "
+#~ "rather, it suggests a file name to be used by the recipient's mail agent "
+#~ "when saving the part to disk.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>खण्डको फाइल नाम:</p><p>यसले सङ्लग्न फाइलको नाम पूर्वनिर्धारण गरे पनि, यसले "
+#~ "सङ्लग्न हुने फाइलको निर्दिष्ट गर्दैन; यद्यपि, यसले खण्डलाई चक्कामा बचत गर्दा प्रापकको "
+#~ "मेल अभिकर्ताद्वारा प्रयोग गरिने फाइल नाम सुझाव गर्छ ।</p></qt>"
+
+#~ msgid "&Description:"
+#~ msgstr "वर्णन:"
+
+#~ msgid ""
+#~ "<qt><p>A description of the part:</p><p>this is just an informational "
+#~ "description of the part, much like the Subject is for the whole message; "
+#~ "most mail agents will show this information in their message previews "
+#~ "alongside the attachment's icon.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>खण्डको वर्णन:</p><p>यो खण्डको सूचनात्मक वर्णन मात्र हो, धेरै मिल्ने विषयवस्तु "
+#~ "पुरा सन्देशका लागि हो; धेरै मेल अभिकर्ताले सङ्लग्नताको प्रतिमा साथै तिनका सन्देश "
+#~ "पूर्वावलोकनमा यो सूचना देखाउनेछन् ।</p></qt>"
+
+#~ msgid "&Encoding:"
+#~ msgstr "सङ्केतन:"
+
+#~ msgid ""
+#~ "<qt><p>The transport encoding of this part:</p><p>normally, you do not "
+#~ "need to change this, since %1 will use a decent default encoding, "
+#~ "depending on the MIME type; yet, sometimes, you can significantly reduce "
+#~ "the size of the resulting message, e.g. if a PostScript file does not "
+#~ "contain binary data, but consists of pure text -- in this case, choosing "
+#~ "\"quoted-printable\" over the default \"base64\" will save up to 25% in "
+#~ "resulting message size.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>यो भागको पारवाहन सङ्केतन:</p><p>सामान्यतया, %1 ले एमआईएमई प्रकारमा "
+#~ "निर्भर, उचित पूर्वनिर्धारित सङ्केतन प्रयोग नगरेसम्म, तपाईँले यसलाई परिवर्तन गर्नु आवश्यक "
+#~ "हुदैन; तै पनि, कहिलेकाहि, तपाईँले परिणाम सन्देशको साइज सार्थक रूपमा घटाउन सक्नुहुन्छ, "
+#~ "जस्तै; यदि पोस्टस्क्रिप्ट फाइलले बाइनरि डेटा समावेश गर्दैन, तर शुद्ध पाठको समावेश गर्छ "
+#~ "भने -- यो अवस्थमा, परिणाम सन्देश साइजमा रोजिने \"उद्धरण गरिएको मुद्रणयोग्य\" मा "
+#~ "पूर्वनिर्धारित \"base64\" २५% प्रतिशतमा बचत हुन्छ ।</p></qt>"
+
+#~ msgid "Suggest &automatic display"
+#~ msgstr "स्वचालित प्रदर्शन सुझाव गर्नुहोस्"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want to suggest to the recipient the "
+#~ "automatic (inline) display of this part in the message preview, instead "
+#~ "of the default icon view;</p><p>technically, this is carried out by "
+#~ "setting this part's <em>Content-Disposition</em> header field to \"inline"
+#~ "\" instead of the default \"attachment\".</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>प्रापकलाई तपाईँले पूर्वनिर्धारित प्रतिमा दृश्यको साटोमा, सन्देश पूर्वावलोकनमा "
+#~ "यो भागको स्वचालित (इनलान) प्रदर्शन सुझाव गर्न चाहनुहुन्छ भने यो विकल्प जाँच गर्नुहोस्;</"
+#~ "p><p>प्राबिधिक रूपमा, यसलाई यो भागको <em>सामाग्री सजावट</em> द्वारा हेडर "
+#~ "फिल्डलाई पूर्वनिर्धारित \"सङ्लग्नता\" को साटोमा \"इनलाइन\" मा सेटिङ गरेर देखाइन्छ "
+#~ "।</p></qt>"
+
+#~ msgid "&Sign this part"
+#~ msgstr "यो खण्डमा चिन्ह लगाउनुहोस्"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want this message part to be signed;</"
+#~ "p><p>the signature will be made with the key that you associated with the "
+#~ "currently-selected identity.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>तपाईँ यो सन्देश खण्ड हस्ताक्षरित रूपमा चाहनुहुन्छ भने यो विल्प चेक गर्नुहोस्;</"
+#~ "p><p>हस्ताक्षर तपाईँले हालै चयन गरेका परिचयसँग सम्बन्धित कुञ्जीले बनेको हुनेछ ।</p></qt>"
+
+#~ msgid "Encr&ypt this part"
+#~ msgstr "यो अंश गुप्तिकरण गर्नुहोस्"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want this message part to be encrypted;</"
+#~ "p><p>the part will be encrypted for the recipients of this message</p></"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt><p>तपाईँले यो सन्देश खण्ड गुप्तिकृत रूपमा चाहेमा यो विकल्प चिनो गर्नुहोस्;</p><p>यो "
+#~ "सन्देशको प्रापकका लागि खण्ड गुप्तिकृत हुनेछ</p></qt>"
+
+#~ msgctxt "%1: a filesize incl. unit (e.g. \"1.3 KB\")"
+#~ msgid "%1 (est.)"
+#~ msgstr "%1 (est.)"
 
 #, fuzzy
 #~| msgid "Name"
@@ -2621,9 +2750,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~| msgid "Send Later"
 #~ msgid "Later"
 #~ msgstr "पछि पठाउनुहोस्"
-
-#~ msgid "Chiasmus Decryption Key Selection"
-#~ msgstr "गुप्तिकरण व्यतिक्रम कुञ्जी चयन"
 
 #~ msgid ""
 #~ "KWallet is not available. It is strongly recommended to use KWallet for "
@@ -4347,27 +4473,14 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~ msgid "Next &Unread Message"
 #~ msgstr "नपढिएको पछिल्लो सन्देश"
 
-#, fuzzy
-#~ msgctxt "@action:inmenu Goto next unread message"
-#~ msgid "Next"
-#~ msgstr "पछिल्लो"
-
 #~ msgid "Go to the next unread message"
 #~ msgstr "नपढिएको पछिल्लो सन्देशमा जानुहोस्"
 
 #~ msgid "&Previous Message"
 #~ msgstr "अघिल्लो सन्देश"
 
-#~ msgid "Go to the previous message"
-#~ msgstr "अघिल्लो सन्देशमा जानुहोस्"
-
 #~ msgid "Previous Unread &Message"
 #~ msgstr "अघिल्लो नपढिएको सन्देश"
-
-#, fuzzy
-#~ msgctxt "@action:inmenu Goto previous unread message."
-#~ msgid "Previous"
-#~ msgstr "अघिल्लो कार्ड"
 
 #~ msgid "Go to the previous unread message"
 #~ msgstr "अघिल्लो नपढिएको सन्देशमा जानुहोस्"
@@ -4574,11 +4687,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~| msgid "&Fonts"
 #~ msgid "Fonts"
 #~ msgstr "फन्ट"
-
-#, fuzzy
-#~| msgid "Color&s"
-#~ msgid "Colors"
-#~ msgstr "रङ"
 
 #, fuzzy
 #~| msgid "La&yout"
@@ -5678,10 +5786,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~ msgctxt "MDN type"
 #~ msgid "Dispatched"
 #~ msgstr "चलानी गरिएको"
-
-#~ msgctxt "MDN type"
-#~ msgid "Processed"
-#~ msgstr "प्रक्रिया गरिएको"
 
 #~ msgctxt "MDN type"
 #~ msgid "Denied"
@@ -7342,12 +7446,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 
 #~ msgid "(no custom templates)"
 #~ msgstr "(अनुकूल टेम्प्लेट छैन)"
-
-#~ msgid "Please select the Chiasmus key file to use:"
-#~ msgstr "कृपया प्रयोग गर्नका लागि व्यतिक्रम कुञ्जी फाइल चयन गर्नुहोस्:"
-
-#~ msgid "Additional arguments for chiasmus:"
-#~ msgstr "व्यक्तिक्रमका लागि अतिरिक्त तर्क:"
 
 #~ msgctxt "Message->"
 #~ msgid "Universal"
@@ -9119,9 +9217,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~ msgid "&Automatic invitation sending"
 #~ msgstr "स्वचालित रूपमा निमन्त्रणा पठाइदैछ"
 
-#~ msgid "Options"
-#~ msgstr "विकल्प"
-
 #, fuzzy
 #~| msgctxt "Corresponds to Folder->Move All Messages to Trash"
 #~| msgid "Ask for co&nfirmation before moving all messages to trash"
@@ -10648,13 +10743,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~ msgid "Could not send MDN."
 #~ msgstr "MDN पठाउन सकेन ।"
 
-#, fuzzy
-#~ msgid "Save As..."
-#~ msgstr "यस रूपमा बचत गर्नुहोस्..."
-
-#~ msgid "Decrypt With Chiasmus..."
-#~ msgstr "व्यतिक्रमसँग गुप्तिकरण उल्टाउनुहोस्..."
-
 #~ msgid "Please wait"
 #~ msgstr "कृपया प्रतिक्षा गर्नुहोस्"
 
@@ -10663,12 +10751,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 #~ msgid_plural "Please wait while the %1 messages are transferred"
 #~ msgstr[0] "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
 #~ msgstr[1] "कृपया %1 सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
-
-#~ msgid "Address copied to clipboard."
-#~ msgstr "क्लिपबोर्डमा ठेगाना प्रतिलिपि गरियो ।"
-
-#~ msgid "URL copied to clipboard."
-#~ msgstr "क्लिपबोर्डमा यूआरएल प्रतिलिपि गरियो ।"
 
 #, fuzzy
 #~| msgid "<qt>File <b>%1</b> exists.<br>Do you want to replace it?</qt>"
@@ -14913,12 +14995,6 @@ msgstr "बचत गर्न सङ्लग्नता फेला पा�
 
 #~ msgid "Replace"
 #~ msgstr "बदल्नुहोस्"
-
-#~ msgid "Find:"
-#~ msgstr "फेला पार्नुहोस्:"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "केस सम्वेदनशीलता"
 
 #~ msgid "Find &backwards"
 #~ msgstr "पछिल्तिर फेला पार्नुहोस्"

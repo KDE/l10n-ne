@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-05 03:17+0100\n"
+"POT-Creation-Date: 2010-02-06 02:08+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -582,18 +582,6 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Nepomuk Collection (slow, Redland)"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
-#: collection/sqlcollection/CapabilityDelegate.cpp:386
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Do not show under Various Artists"
-msgstr "विभिन्न कलाकारहरू"
-
-#: collection/sqlcollection/CapabilityDelegate.cpp:388
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Show under Various Artists"
-msgstr "विभिन्न कलाकारहरू"
-
 #: collection/sqlcollection/mysqlecollection/MySqlEmbeddedCollection.cpp:33
 #: collection/sqlcollection/mysqlservercollection/MySqlServerCollection.cpp:39
 #: collection/sqlcollection/SqlCollectionLocation.cpp:61
@@ -632,6 +620,18 @@ msgstr ""
 msgctxt "(Front) Cover of an album"
 msgid "folder"
 msgstr "%1 फोल्डर"
+
+#: collection/sqlcollection/CapabilityDelegateImpl.cpp:388
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Do not show under Various Artists"
+msgstr "विभिन्न कलाकारहरू"
+
+#: collection/sqlcollection/CapabilityDelegateImpl.cpp:390
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Show under Various Artists"
+msgstr "विभिन्न कलाकारहरू"
 
 #. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
@@ -1232,7 +1232,7 @@ msgstr "हालको ट्रयाक पछि"
 #: browsers/filebrowser/MyDirOperator.cpp:315
 #: browsers/filebrowser/FileView.cpp:156
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:585
-#: browsers/playlistbrowser/PodcastModel.cpp:1005
+#: browsers/playlistbrowser/PodcastModel.cpp:1029
 #: services/lastfm/LastFmTreeView.cpp:112 TrayIcon.cpp:221
 #, fuzzy
 #| msgid "Add to Playlist"
@@ -1244,7 +1244,7 @@ msgstr "प्ले सूचीमा थप्नुहोस्"
 #: browsers/filebrowser/MyDirOperator.cpp:316
 #: browsers/filebrowser/FileView.cpp:165
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:592
-#: browsers/playlistbrowser/PodcastModel.cpp:1017
+#: browsers/playlistbrowser/PodcastModel.cpp:1041
 #: services/lastfm/LastFmTreeView.cpp:121
 #, fuzzy
 #| msgid "Repeat Playlist"
@@ -2023,7 +2023,7 @@ msgstr "सङ्कलन"
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:166 dialogs/FilenameLayoutDialog.cpp:483
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
-#: browsers/playlistbrowser/PodcastModel.cpp:480 rc.cpp:1153
+#: browsers/playlistbrowser/PodcastModel.cpp:504 rc.cpp:1153
 #: playlist/PlaylistModel.cpp:699 widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr "शीर्षक"
@@ -2298,7 +2298,7 @@ msgstr ""
 msgid "Filename Layout Chooser"
 msgstr ""
 
-#: dialogs/TagDialog.cpp:679 browsers/playlistbrowser/PodcastModel.cpp:481
+#: dialogs/TagDialog.cpp:679 browsers/playlistbrowser/PodcastModel.cpp:505
 msgid "Summary"
 msgstr "सारांश"
 
@@ -3275,51 +3275,57 @@ msgstr "वर्णन"
 msgid "&Update Channel"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:596
+#: podcasts/sql/SqlPodcastProvider.cpp:559
+#, fuzzy
+#| msgid "Update"
+msgid "&Update All Channels"
+msgstr "अद्यावधिक गर्नुहोस्"
+
+#: podcasts/sql/SqlPodcastProvider.cpp:613
 msgid "Unsubscribe"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:600
+#: podcasts/sql/SqlPodcastProvider.cpp:617
 #, fuzzy
 #| msgid "Are you sure you want to overwrite this cover?"
 msgid "Do you really want to unsubscribe from "
 msgstr "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:607
+#: podcasts/sql/SqlPodcastProvider.cpp:624
 #, fuzzy
 #| msgid "De&lete Downloaded Podcast"
 msgid "Delete downloaded episodes"
 msgstr "डाउनलोड गरिएको पोडकास्ट मेट्नुहोस्"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:732
+#: podcasts/sql/SqlPodcastProvider.cpp:749
 msgid "Waiting for Podcast Downloads to Finish"
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:733
+#: podcasts/sql/SqlPodcastProvider.cpp:750
 #, kde-format
 msgid "There is still a podcast download in progress"
 msgid_plural "There are still %1 podcast downloads in progress"
 msgstr[0] ""
 msgstr[1] ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:913
+#: podcasts/sql/SqlPodcastProvider.cpp:930
 msgid "Downloading Podcast Media"
 msgstr "पोडकास्ट मिडिया डाउनलोड गर्दै"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:914
+#: podcasts/sql/SqlPodcastProvider.cpp:931
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr "पोडकास्ट \"%1\" डाउनलोड गर्दै"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:988
-#: podcasts/sql/SqlPodcastProvider.cpp:1134
+#: podcasts/sql/SqlPodcastProvider.cpp:1005
+#: podcasts/sql/SqlPodcastProvider.cpp:1151
 #, fuzzy, kde-format
 #| msgid "Setting iPod model to %1 GB %2 (x%3)"
 msgid "Unable to save podcast episode file to %1"
 msgstr "%1 GB %2 (x%3) मा आईपोड नमूना सेट गर्दै"
 
 #: podcasts/sql/SqlPodcastProvider.h:47
-#: browsers/playlistbrowser/PodcastModel.cpp:849
+#: browsers/playlistbrowser/PodcastModel.cpp:873
 #, fuzzy
 #| msgid "Podcasts"
 msgid "Local Podcasts"
@@ -4389,7 +4395,7 @@ msgstr "एक मिनेट अघि"
 msgid "Year - Album"
 msgstr "कलाकार - एल्बम"
 
-#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:156
+#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:157
 #, fuzzy, kde-format
 #| msgid "%1:%2 hours"
 msgid "%1% used"
@@ -4700,7 +4706,7 @@ msgstr ""
 msgid "Strictness:"
 msgstr "यन्त्र"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:309
+#: browsers/playlistbrowser/PodcastModel.cpp:312
 #, fuzzy, kde-format
 #| msgid "&4 Channels:"
 msgctxt "number of podcasts from one source"
@@ -4709,24 +4715,24 @@ msgid_plural "%1 channels"
 msgstr[0] "४ च्यानल:"
 msgstr[1] "४ च्यानल:"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:479
+#: browsers/playlistbrowser/PodcastModel.cpp:503
 #: playlist/PlaylistModel.cpp:711 amarokurls/BookmarkModel.cpp:266
 msgid "Type"
 msgstr "प्रकार"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:632
+#: browsers/playlistbrowser/PodcastModel.cpp:656
 #, fuzzy
 #| msgid "Add Podcast"
 msgid "Add Podcast"
 msgstr "पोडकास्ट थप्नुहोस्"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:633
+#: browsers/playlistbrowser/PodcastModel.cpp:657
 #, fuzzy
 #| msgid "Enter Podcast URL:"
 msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
 msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
 
-#: browsers/playlistbrowser/PodcastModel.cpp:1037
+#: browsers/playlistbrowser/PodcastModel.cpp:1061
 #, fuzzy
 #| msgid "&Next"
 msgctxt "toggle the \"new\" status of this podcast episode"
@@ -11037,17 +11043,17 @@ msgstr "भर्खरै प्ले गरिएको होइन"
 msgid "Dynamic Mode Enabled"
 msgstr "गतिशील मोड"
 
-#: playlist/PlaylistWidget.cpp:125
+#: playlist/PlaylistWidget.cpp:121
 #, fuzzy
 #| msgid "Current Playlist"
 msgid "&Save Current Playlist"
 msgstr "हालको प्ले सूची"
 
-#: playlist/PlaylistWidget.cpp:152
+#: playlist/PlaylistWidget.cpp:148
 msgid "Show active track"
 msgstr ""
 
-#: playlist/PlaylistWidget.cpp:201
+#: playlist/PlaylistWidget.cpp:197
 #, fuzzy, kde-format
 #| msgid "Save Playlist"
 msgid "&Save playlist to \"%1\""
@@ -11346,7 +11352,7 @@ msgstr "पज गरियो"
 msgid "Drag in and out items from above."
 msgstr ""
 
-#: widgets/VolumeDial.cpp:215 TrayIcon.cpp:149
+#: widgets/VolumeDial.cpp:218 TrayIcon.cpp:149
 #, fuzzy
 #| msgid "Mute"
 msgid "Muted"
