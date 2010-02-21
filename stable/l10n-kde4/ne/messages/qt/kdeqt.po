@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2010-02-18 01:34+0100\n"
+"POT-Creation-Date: 2010-02-21 01:34+0100\n"
 "PO-Revision-Date: 2007-08-24 20:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -111,7 +111,7 @@ msgstr "रिसेट गर्नुहोस्"
 
 #. i18n: file: gui/dialogs/qprintsettingsoutput.ui:242
 #. i18n: ectx: attribute (title), widget (QWidget, optionsTab)
-#: rc.cpp:36
+#: rc.cpp:36 gui/kernel/qsoftkeymanager.cpp:72
 #, fuzzy
 #| msgid "Options"
 msgid "Options"
@@ -844,6 +844,7 @@ msgid "Commit"
 msgstr "कमिट गर्नुहोस्"
 
 #: gui/dialogs/qwizard.cpp:659 gui/dialogs/qdialog.cpp:517
+#: gui/kernel/qsoftkeymanager.cpp:69
 msgid "Done"
 msgstr "काम भयो"
 
@@ -852,7 +853,7 @@ msgid "&Finish"
 msgstr "समाप्त"
 
 #: gui/dialogs/qwizard.cpp:661 gui/dialogs/qprogressdialog.cpp:196
-#: qt3support/dialogs/q3tabdialog.cpp:786
+#: gui/kernel/qsoftkeymanager.cpp:75 qt3support/dialogs/q3tabdialog.cpp:786
 #: qt3support/dialogs/q3progressdialog.cpp:224
 #: qt3support/dialogs/q3progressdialog.cpp:285
 msgid "Cancel"
@@ -1488,7 +1489,6 @@ msgid "Activates the program's main window"
 msgstr "कार्यक्रमको मुख्य सञ्झ्याल सक्रिय पार्दछ"
 
 #: gui/kernel/qsoftkeymanager.cpp:63
-msgctxt "QSoftKeyManager"
 msgid "Ok"
 msgstr ""
 
@@ -1496,30 +1496,8 @@ msgstr ""
 #, fuzzy
 #| msgctxt "QShortcut"
 #| msgid "Select"
-msgctxt "QSoftKeyManager"
 msgid "Select"
 msgstr "चयन गर्नुहोस्"
-
-#: gui/kernel/qsoftkeymanager.cpp:69
-#, fuzzy
-#| msgid "Done"
-msgctxt "QSoftKeyManager"
-msgid "Done"
-msgstr "काम भयो"
-
-#: gui/kernel/qsoftkeymanager.cpp:72
-#, fuzzy
-#| msgid "Options"
-msgctxt "QSoftKeyManager"
-msgid "Options"
-msgstr "विकल्प"
-
-#: gui/kernel/qsoftkeymanager.cpp:75
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "QSoftKeyManager"
-msgid "Cancel"
-msgstr "रद्द गर्नुहोस्"
 
 #: gui/kernel/qwidget.cpp:5753
 msgid "*"
@@ -2511,7 +2489,7 @@ msgstr "+"
 msgid "F%1"
 msgstr "F%1"
 
-#: gui/kernel/qsoftkeymanager_s60.cpp:311
+#: gui/kernel/qsoftkeymanager_s60.cpp:312
 msgid "Exit"
 msgstr "अन्त्य गर्नुहोस्"
 
@@ -2939,14 +2917,14 @@ msgstr "जडान गर्न असक्षम"
 #: sql/drivers/db2/qsql_db2.cpp:1551 sql/drivers/odbc/qsql_odbc.cpp:2061
 #: sql/drivers/mysql/qsql_mysql.cpp:1448
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:457
-#: sql/drivers/sqlite/qsql_sqlite.cpp:593
+#: sql/drivers/sqlite/qsql_sqlite.cpp:584
 msgid "Unable to commit transaction"
 msgstr "कारोबार कमिट गर्न असक्षम"
 
 #: sql/drivers/db2/qsql_db2.cpp:1568 sql/drivers/odbc/qsql_odbc.cpp:2078
 #: sql/drivers/mysql/qsql_mysql.cpp:1465
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:474
-#: sql/drivers/sqlite/qsql_sqlite.cpp:608
+#: sql/drivers/sqlite/qsql_sqlite.cpp:599
 msgid "Unable to rollback transaction"
 msgstr "कारोबार रोलब्याक गर्न असक्षम"
 
@@ -3346,7 +3324,7 @@ msgstr "डाटाबेस खोल्न असक्षम '"
 
 #: sql/drivers/mysql/qsql_mysql.cpp:1431
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:440
-#: sql/drivers/sqlite/qsql_sqlite.cpp:578
+#: sql/drivers/sqlite/qsql_sqlite.cpp:569
 msgid "Unable to begin transaction"
 msgstr "कारोबार सुरु गर्न असक्षम"
 
@@ -3361,7 +3339,7 @@ msgid "Unable to execute statement"
 msgstr "विवरण कार्यान्वयन गर्न असक्षम"
 
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:399
-#: sql/drivers/sqlite/qsql_sqlite.cpp:547
+#: sql/drivers/sqlite/qsql_sqlite.cpp:538
 msgid "Error opening database"
 msgstr "डाटाबेस खुल्दा त्रुटि"
 
@@ -3397,7 +3375,7 @@ msgctxt "QSQLiteResult"
 msgid "Parameter count mismatch"
 msgstr "परिमिति गणना मिलेन"
 
-#: sql/drivers/sqlite/qsql_sqlite.cpp:558
+#: sql/drivers/sqlite/qsql_sqlite.cpp:549
 msgid "Error closing database"
 msgstr "डाटाबेस बन्द गर्दा त्रुटि"
 
@@ -3777,22 +3755,22 @@ msgctxt "QRegExp"
 msgid "invalid category"
 msgstr "अवैध एक्सएमएल क्यारेक्टर ।"
 
-#: corelib/global/qglobal.cpp:2096
+#: corelib/global/qglobal.cpp:2094
 msgctxt "QIODevice"
 msgid "Permission denied"
 msgstr "अनुमति अस्वीकार गरियो"
 
-#: corelib/global/qglobal.cpp:2099
+#: corelib/global/qglobal.cpp:2097
 msgctxt "QIODevice"
 msgid "Too many open files"
 msgstr "अति धेरै खुला फाइलहरू"
 
-#: corelib/global/qglobal.cpp:2102
+#: corelib/global/qglobal.cpp:2100
 msgctxt "QIODevice"
 msgid "No such file or directory"
 msgstr "सो फाइल वा डाइरेक्टरी होइन"
 
-#: corelib/global/qglobal.cpp:2105
+#: corelib/global/qglobal.cpp:2103
 msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "यन्त्रमा खाली ठाउँ बाँकी छैन"
@@ -9019,6 +8997,24 @@ msgstr "बहुँविध आगत विधि स्विचर"
 msgid ""
 "Multiple input method switcher that uses the context menu of the text widgets"
 msgstr "बहुँविध आगत विधि स्विचर जसले पाठ विजेटको प्रसंग मेनु प्रयोग गर्दछ"
+
+#, fuzzy
+#~| msgid "Done"
+#~ msgctxt "QSoftKeyManager"
+#~ msgid "Done"
+#~ msgstr "काम भयो"
+
+#, fuzzy
+#~| msgid "Options"
+#~ msgctxt "QSoftKeyManager"
+#~ msgid "Options"
+#~ msgstr "विकल्प"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgctxt "QSoftKeyManager"
+#~ msgid "Cancel"
+#~ msgstr "रद्द गर्नुहोस्"
 
 #, fuzzy
 #~| msgctxt "QShortcut"
