@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-26 20:28+0100\n"
+"POT-Creation-Date: 2010-03-01 01:14+0100\n"
 "PO-Revision-Date: 2007-08-20 12:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -496,7 +496,14 @@ msgstr "स्टल गरिएको"
 msgid "Downloading...."
 msgstr "डाउनलोड पुन: निरन्तरता गरियो"
 
-#: core/transfer.cpp:244 core/transfer.cpp:269
+#: core/transfer.cpp:38
+#, fuzzy
+#| msgid "Delayed"
+msgctxt "transfer state: delayed"
+msgid "Delayed"
+msgstr "विलम्ब गरिएको"
+
+#: core/transfer.cpp:39 core/transfer.cpp:244 core/transfer.cpp:269
 #: transfer-plugins/contentfetch/contentfetch.cpp:69
 #: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:326
@@ -506,6 +513,25 @@ msgstr "डाउनलोड पुन: निरन्तरता गरि�
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "रोकियो"
+
+#: core/transfer.cpp:40
+msgctxt "transfer state: aborted"
+msgid "Aborted"
+msgstr ""
+
+#: core/transfer.cpp:41 transfer-plugins/bittorrent/bttransfer.cpp:240
+#: transfer-plugins/bittorrent/bttransfer.cpp:322
+#, fuzzy
+#| msgid "Finished"
+msgctxt "transfer state: finished"
+msgid "Finished"
+msgstr "समाप्त भयो"
+
+#: core/transfer.cpp:43 transfer-plugins/bittorrent/bttransfer.cpp:179
+#, fuzzy
+msgctxt "changing the destination of the file"
+msgid "Changing destination"
+msgstr "खुला गन्तव्य"
 
 #: core/transfertreemodel.cpp:544
 #, fuzzy
@@ -1185,26 +1211,12 @@ msgstr "फाइल खोल्नुहोस्"
 msgid "Downloading Torrent File...."
 msgstr "डाउनलोड पुन: निरन्तरता गरियो"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:179
-#, fuzzy
-msgctxt "changing the destination of the file"
-msgid "Changing destination"
-msgstr "खुला गन्तव्य"
-
 #: transfer-plugins/bittorrent/bttransfer.cpp:196
 #: transfer-plugins/bittorrent/bttransfer.cpp:301
 #, fuzzy
 msgctxt "transfer state: downloading"
 msgid "Downloading...."
 msgstr "डाउनलोड पुन: निरन्तरता गरियो"
-
-#: transfer-plugins/bittorrent/bttransfer.cpp:240
-#: transfer-plugins/bittorrent/bttransfer.cpp:322
-#, fuzzy
-#| msgid "Finished"
-msgctxt "transfer state: finished"
-msgid "Finished"
-msgstr "समाप्त भयो"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:274
 msgid "Cannot add a tracker to a private torrent."
@@ -4753,12 +4765,6 @@ msgstr ""
 #: rc.cpp:992
 msgid "List of whether the script is enabled"
 msgstr ""
-
-#, fuzzy
-#~| msgid "Delayed"
-#~ msgctxt "transfer state: delayed"
-#~ msgid "Delayed"
-#~ msgstr "विलम्ब गरिएको"
 
 #, fuzzy
 #~| msgid "Number of retries:"
