@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-17 05:16+0100\n"
+"POT-Creation-Date: 2010-03-18 04:36+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -90,8 +90,8 @@ msgstr "रङ:"
 msgid "End Color: "
 msgstr "रङ:"
 
-#: themedesigner/mainwindow.cpp:169 imageplugins/decorate/bordertool.cpp:140
-#: imageplugins/decorate/bordertool.cpp:609
+#: themedesigner/mainwindow.cpp:169 imageplugins/decorate/bordertool.cpp:78
+#: imageplugins/decorate/bordertool.cpp:181
 msgid "Add Border"
 msgstr ""
 
@@ -107,60 +107,6 @@ msgstr "मार्गदर्शन रङ:"
 msgid "Failed to open file for writing"
 msgstr "%1 मा फाइल सूचीकरण गर्न असफल"
 
-#: imageplugins/superimpose/superimposetool.cpp:106
-msgid "Template Superimpose"
-msgstr ""
-
-#: imageplugins/superimpose/superimposetool.cpp:116
-#, fuzzy
-#| msgid "<p>Set here the saturation adjustment of the image."
-msgid "This previews the template superimposed onto the image."
-msgstr "<p>यहाँ छविको स्याचुरेसन समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/superimpose/superimposetool.cpp:128
-#: libs/imageproperties/worldmapwidget.cpp:157
-#: utilities/lighttable/lighttablepreview.cpp:343
-#, fuzzy
-#| msgid "Zoom In"
-msgid "Zoom in"
-msgstr "जुम बढाउनुहोस्"
-
-#: imageplugins/superimpose/superimposetool.cpp:134
-#: libs/imageproperties/worldmapwidget.cpp:163
-#: utilities/lighttable/lighttablepreview.cpp:344
-#, fuzzy
-#| msgid "Zoom Out"
-msgid "Zoom out"
-msgstr "जुम घटाउनुहोस्"
-
-#: imageplugins/superimpose/superimposetool.cpp:141
-#, fuzzy
-#| msgid "More"
-msgid "Move"
-msgstr "बढि"
-
-#: imageplugins/superimpose/superimposetool.cpp:177
-msgid "Root Directory..."
-msgstr ""
-
-#: imageplugins/superimpose/superimposetool.cpp:178
-#, fuzzy
-#| msgid "<p>Set here the hue adjustment of the image."
-msgid "Set here the current templates' root directory."
-msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/superimpose/superimposetool.cpp:271
-msgid "Select Template Root Directory to Use"
-msgstr ""
-
-#: imageplugins/superimpose/superimposetool.cpp:299
-msgid "Super Impose"
-msgstr ""
-
-#: imageplugins/superimpose/imageplugin_superimpose.cpp:52
-msgid "Template Superimpose..."
-msgstr ""
-
 #: imageplugins/decorate/texturetool.cpp:92
 #: imageplugins/decorate/texturetool.cpp:236
 #, fuzzy
@@ -169,10 +115,10 @@ msgid "Texture"
 msgstr "प्रकृति"
 
 #: imageplugins/decorate/texturetool.cpp:102
-#: imageplugins/decorate/bordertool.cpp:153
 #: imageplugins/filters/blurfxtool.cpp:122
 #: imageplugins/filters/colorfxtool.cpp:157
 #: imageplugins/filters/distortionfxtool.cpp:128
+#: libs/dimg/filters/decorate/bordersettings.cpp:135
 #: libs/widgets/common/thumbbartooltip.cpp:199 digikam/tooltipfiller.cpp:95
 #: utilities/cameragui/cameraiconviewtooltip.cpp:155
 msgid "Type:"
@@ -270,18 +216,22 @@ msgstr ""
 msgid "Set here the relief gain used to merge texture and image."
 msgstr "<p>यहाँ छविको प्रकाश समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/decorate/imageplugin_decorate.cpp:51
+#: imageplugins/decorate/imageplugin_decorate.cpp:52
 msgid "Insert Text..."
 msgstr ""
 
-#: imageplugins/decorate/imageplugin_decorate.cpp:57
+#: imageplugins/decorate/imageplugin_decorate.cpp:58
 #, fuzzy
 #| msgid "Add Camera..."
 msgid "Add Border..."
 msgstr "क्यामेरा थप्नुहोस्..."
 
-#: imageplugins/decorate/imageplugin_decorate.cpp:62
+#: imageplugins/decorate/imageplugin_decorate.cpp:63
 msgid "Apply Texture..."
+msgstr ""
+
+#: imageplugins/decorate/imageplugin_decorate.cpp:68
+msgid "Template Superimpose..."
 msgstr ""
 
 #: imageplugins/decorate/inserttexttool.cpp:131
@@ -301,6 +251,7 @@ msgstr ""
 
 #: imageplugins/decorate/inserttexttool.cpp:161
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:115
+#: utilities/queuemanager/basetools/decorate/border.cpp:115
 #, fuzzy
 #| msgid "<p>Here you can set general parameters.</p>"
 msgid "Here you can choose the font to be used."
@@ -362,6 +313,7 @@ msgstr "रङ:"
 
 #: imageplugins/decorate/inserttexttool.cpp:216
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:120
+#: utilities/queuemanager/basetools/decorate/border.cpp:120
 #, fuzzy
 #| msgid "<p>Set here the color used to draw guides dashed-lines."
 msgid "Set here the font color to use."
@@ -389,200 +341,65 @@ msgstr ""
 msgid "Enter your text here."
 msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
 
-#: imageplugins/decorate/bordertool.cpp:155
+#: imageplugins/decorate/superimpose/superimposetool.cpp:103
+msgid "Template Superimpose"
+msgstr ""
+
+#: imageplugins/decorate/superimpose/superimposetool.cpp:113
 #, fuzzy
-#| msgid "Solid white"
-msgctxt "solid border type"
-msgid "Solid"
-msgstr "कडा सेतो"
+#| msgid "<p>Set here the saturation adjustment of the image."
+msgid "This previews the template superimposed onto the image."
+msgstr "<p>यहाँ छविको स्याचुरेसन समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/decorate/bordertool.cpp:158
+#: imageplugins/decorate/superimpose/superimposetool.cpp:125
+#: libs/imageproperties/worldmapwidget.cpp:157
+#: utilities/lighttable/lighttablepreview.cpp:343
 #, fuzzy
-#| msgid "Developer"
-msgctxt "beveled border type"
-msgid "Beveled"
-msgstr "विकासकर्ता"
+#| msgid "Zoom In"
+msgid "Zoom in"
+msgstr "जुम बढाउनुहोस्"
 
-#: imageplugins/decorate/bordertool.cpp:159
-msgid "Decorative Pine"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:160
-msgid "Decorative Wood"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:161
-msgid "Decorative Paper"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:162
-msgid "Decorative Parquet"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:163
-msgid "Decorative Ice"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:164
-msgid "Decorative Leaf"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:165
-msgid "Decorative Marble"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:166
-msgid "Decorative Rain"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:167
+#: imageplugins/decorate/superimpose/superimposetool.cpp:131
+#: libs/imageproperties/worldmapwidget.cpp:163
+#: utilities/lighttable/lighttablepreview.cpp:344
 #, fuzzy
-#| msgid "Decrease Contrast"
-msgid "Decorative Craters"
-msgstr "व्यतिरेक घटाउनुहोस्"
+#| msgid "Zoom Out"
+msgid "Zoom out"
+msgstr "जुम घटाउनुहोस्"
 
-#: imageplugins/decorate/bordertool.cpp:168
-msgid "Decorative Dried"
+#: imageplugins/decorate/superimpose/superimposetool.cpp:138
+#, fuzzy
+#| msgid "More"
+msgid "Move"
+msgstr "बढि"
+
+#: imageplugins/decorate/superimpose/superimposetool.cpp:174
+msgid "Root Directory..."
 msgstr ""
 
-#: imageplugins/decorate/bordertool.cpp:169
-msgid "Decorative Pink"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:170
-msgid "Decorative Stone"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:171
-msgid "Decorative Chalk"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:172
-msgid "Decorative Granite"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:173
-msgid "Decorative Rock"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:174
-msgid "Decorative Wall"
-msgstr ""
-
-#: imageplugins/decorate/bordertool.cpp:176
+#: imageplugins/decorate/superimpose/superimposetool.cpp:175
 #, fuzzy
 #| msgid "<p>Set here the hue adjustment of the image."
-msgid "Select the border type to add around the image here."
+msgid "Set here the current templates' root directory."
 msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
 
-#: imageplugins/decorate/bordertool.cpp:183
-#, fuzzy
-#| msgid "Aspect ratio:"
-msgid "Preserve Aspect Ratio"
-msgstr "आकार अनुपात:"
-
-#: imageplugins/decorate/bordertool.cpp:184
-msgid ""
-"Enable this option if you want to preserve the aspect ratio of image. If "
-"enabled, the border width will be a percentage of the image size, else the "
-"border width will be in pixels."
+#: imageplugins/decorate/superimpose/superimposetool.cpp:268
+msgid "Select Template Root Directory to Use"
 msgstr ""
 
-#: imageplugins/decorate/bordertool.cpp:189
-#: imageplugins/transform/contentawareresizetool.cpp:233
-#: imageplugins/transform/resizetool.cpp:260
-msgid "Width (%):"
-msgstr "चौडाइ (%):"
+#: imageplugins/decorate/superimpose/superimposetool.cpp:296
+msgid "Super Impose"
+msgstr ""
 
-#: imageplugins/decorate/bordertool.cpp:194
-#, fuzzy
-#| msgid "<p>Set here the hue adjustment of the image."
-msgid "Set here the border width as a percentage of the image size."
-msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:196
-#, fuzzy
-#| msgid "Width (%):"
-msgid "Width (pixels):"
-msgstr "चौडाइ (%):"
-
-#: imageplugins/decorate/bordertool.cpp:201
-#, fuzzy
-#| msgid "<p>Set here the width in pixels used to draw guides dashed-lines."
-msgid "Set here the border width in pixels to add around the image."
-msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने चौडाइ पिक्सेलमा यहाँ सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:436
-#, fuzzy
-#| msgid "&First"
-msgctxt "first color for border effect"
-msgid "First:"
-msgstr "पहिलो"
-
-#: imageplugins/decorate/bordertool.cpp:437
-#, fuzzy
-#| msgid "Selection"
-msgctxt "second color for border effect"
-msgid "Second:"
-msgstr "चयन"
-
-#: imageplugins/decorate/bordertool.cpp:438
-#, fuzzy
-#| msgid "<p>Set here the cyan/red color adjustment of the image."
-msgid "Set here the foreground color of the border."
-msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:439
-#, fuzzy
-#| msgid "<p>Set here the cyan/red color adjustment of the image."
-msgid "Set here the Background color of the border."
-msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:455
-#, fuzzy
-#| msgid "<p>Set here the contrast adjustment of the image."
-msgid "Set here the color of the main border."
-msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:456
-#, fuzzy
-#| msgid "<p>Set here the contrast adjustment of the image."
-msgid "Set here the color of the line."
-msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:462
-#, fuzzy
-#| msgid "<p>Set here the color used to draw guides dashed-lines."
-msgid "Set here the color of the upper left area."
-msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:463
-#, fuzzy
-#| msgid "<p>Set here the cyan/red color adjustment of the image."
-msgid "Set here the color of the lower right area."
-msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:484
-#, fuzzy
-#| msgid "<p>Set here the color used to draw guides dashed-lines."
-msgid "Set here the color of the first line."
-msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
-
-#: imageplugins/decorate/bordertool.cpp:485
-#, fuzzy
-#| msgid "<p>Set here the color used to draw guides dashed-lines."
-msgid "Set here the color of the second line."
-msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
-
-#: imageplugins/transform/freerotationtool.cpp:124
-#: imageplugins/transform/freerotationtool.cpp:456
+#: imageplugins/transform/freerotationtool.cpp:107
+#: imageplugins/transform/freerotationtool.cpp:351
 #: imageplugins/transform/imageplugin_transform.cpp:90
 #, fuzzy
 #| msgid "Orientation:"
 msgid "Free Rotation"
 msgstr "अभिमुखीकरण"
 
-#: imageplugins/transform/freerotationtool.cpp:128
+#: imageplugins/transform/freerotationtool.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>This is the the image filter effect preview. If you move the mouse "
@@ -599,7 +416,7 @@ msgstr ""
 "सार्नुभएमा, तपाईँलाई फिल्टर सेटिङ समायोजन कसरि गर्ने भनी मार्गदर्शन गर्नका लागि ठाडो र "
 "तेर्सो ड्यास रेखा कोरिन्छ । ड्यास रेखा स्थान फ्रिज गर्न बायाँ माउस बटन थिच्नुहोस् ।"
 
-#: imageplugins/transform/freerotationtool.cpp:147
+#: imageplugins/transform/freerotationtool.cpp:129
 #: imageplugins/transform/sheartool.cpp:136
 #: imageplugins/transform/perspectivetool.cpp:134
 #, fuzzy
@@ -607,10 +424,10 @@ msgstr ""
 msgid "New width:"
 msgstr "मार्गदर्शन चौडाइ:"
 
-#: imageplugins/transform/freerotationtool.cpp:148
-#: imageplugins/transform/freerotationtool.cpp:152
-#: imageplugins/transform/freerotationtool.cpp:448
-#: imageplugins/transform/freerotationtool.cpp:449
+#: imageplugins/transform/freerotationtool.cpp:130
+#: imageplugins/transform/freerotationtool.cpp:134
+#: imageplugins/transform/freerotationtool.cpp:343
+#: imageplugins/transform/freerotationtool.cpp:344
 #: imageplugins/transform/sheartool.cpp:137
 #: imageplugins/transform/sheartool.cpp:141
 #: imageplugins/transform/sheartool.cpp:345
@@ -622,7 +439,7 @@ msgstr "मार्गदर्शन चौडाइ:"
 msgid " px"
 msgstr ""
 
-#: imageplugins/transform/freerotationtool.cpp:151
+#: imageplugins/transform/freerotationtool.cpp:133
 #: imageplugins/transform/sheartool.cpp:140
 #: imageplugins/transform/perspectivetool.cpp:138
 #, fuzzy
@@ -630,111 +447,44 @@ msgstr ""
 msgid "New height:"
 msgstr "उचाइ:"
 
-#: imageplugins/transform/freerotationtool.cpp:155
-msgid "Main angle:"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:160
-#: utilities/queuemanager/basetools/transform/rotate.cpp:100
-msgid ""
-"An angle in degrees by which to rotate the image. A positive angle rotates "
-"the image clockwise; a negative angle rotates it counter-clockwise."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:164
-msgid "Fine angle:"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:168
-msgid ""
-"This value in degrees will be added to main angle value to set fine target "
-"angle."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:171
-#: imageplugins/transform/sheartool.cpp:171
-msgid "Anti-Aliasing"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:172
-msgid ""
-"Enable this option to apply the anti-aliasing filter to the rotated image. "
-"In order to smooth the target image, it will be blurred a little."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:176
-#, fuzzy
-#| msgid "Author:"
-msgid "Auto-crop:"
-msgstr "लेखक:"
-
-#: imageplugins/transform/freerotationtool.cpp:178
-#, fuzzy
-#| msgid "None"
-msgctxt "no autocrop"
-msgid "None"
-msgstr "कुनै होइन"
-
-#: imageplugins/transform/freerotationtool.cpp:179
-msgid "Widest Area"
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:180
-#, fuzzy
-#| msgid "Last Search"
-msgid "Largest Area"
-msgstr "अन्तिम खोजी"
-
-#: imageplugins/transform/freerotationtool.cpp:182
-msgid ""
-"Select the method to process image auto-cropping to remove black frames "
-"around a rotated image here."
-msgstr ""
-
-#: imageplugins/transform/freerotationtool.cpp:187
+#: imageplugins/transform/freerotationtool.cpp:139
 msgid ""
 "Select a point in the preview widget, then click this button to assign the "
 "point for auto-correction."
 msgstr ""
 
-#: imageplugins/transform/freerotationtool.cpp:234
+#: imageplugins/transform/freerotationtool.cpp:186
 #, fuzzy
 #| msgid "HSL Adjustments"
 msgctxt "Automatic Adjustment"
 msgid "Adjust"
 msgstr "HSL समायोजन"
 
-#: imageplugins/transform/freerotationtool.cpp:254
+#: imageplugins/transform/freerotationtool.cpp:195
 msgid ""
 "<p>Correct the rotation of your images automatically by assigning two points "
 "in the preview widget and clicking <i>Adjust</i>.<br/>You can either adjust "
 "horizontal or vertical lines.</p>"
 msgstr ""
 
-#: imageplugins/transform/freerotationtool.cpp:282
+#: imageplugins/transform/freerotationtool.cpp:215
 #, fuzzy
 #| msgid "HSL Adjustments"
 msgid "Automatic Adjustment"
 msgstr "HSL समायोजन"
 
-#: imageplugins/transform/freerotationtool.cpp:284
-#, fuzzy
-#| msgid "HSL Adjustments"
-msgid "Manual Adjustment"
-msgstr "HSL समायोजन"
-
-#: imageplugins/transform/freerotationtool.cpp:286
+#: imageplugins/transform/freerotationtool.cpp:217
 #: utilities/cameragui/cameraui.cpp:327
 msgid "Settings"
 msgstr "सेटिङ"
 
-#: imageplugins/transform/freerotationtool.cpp:467
+#: imageplugins/transform/freerotationtool.cpp:362
 #, fuzzy
 #| msgid "Click To Exit..."
 msgid "Click to set"
 msgstr "'अन्त्य गर्नुहोस्' मा क्लिक गर्नुहोस्..."
 
-#: imageplugins/transform/freerotationtool.cpp:468
+#: imageplugins/transform/freerotationtool.cpp:363
 msgctxt "point has been set and is valid"
 msgid "Okay"
 msgstr ""
@@ -805,6 +555,11 @@ msgstr "ठाडो तरिकाले घुमाउनुहोस्"
 msgid ""
 "This value in degrees will be added to main vertical angle value to set fine "
 "adjustments."
+msgstr ""
+
+#: imageplugins/transform/sheartool.cpp:171
+#: libs/dimg/filters/transform/freerotationsettings.cpp:109
+msgid "Anti-Aliasing"
 msgstr ""
 
 #: imageplugins/transform/sheartool.cpp:172
@@ -954,6 +709,12 @@ msgstr "उचाइ (%):"
 #| msgid "<p>Set here the width selection for cropping."
 msgid "Set here the new image height in pixels."
 msgstr "<p>यहाँ काँटछाँटका लागि चयन चौडाइ सेट गर्नुहोस् ।"
+
+#: imageplugins/transform/contentawareresizetool.cpp:233
+#: imageplugins/transform/resizetool.cpp:260
+#: libs/dimg/filters/decorate/bordersettings.cpp:171
+msgid "Width (%):"
+msgstr "चौडाइ (%):"
 
 #: imageplugins/transform/contentawareresizetool.cpp:238
 #, fuzzy
@@ -5488,6 +5249,240 @@ msgstr "बचत गर्ने रङ व्यवस्थापन से�
 #| msgid "Cannot save settings to the Color Management text file."
 msgid "Cannot save settings to the Photograph Refocus text file."
 msgstr "रङ व्यवस्थापन पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:93
+msgid "Main angle:"
+msgstr ""
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:98
+msgid ""
+"An angle in degrees by which to rotate the image. A positive angle rotates "
+"the image clockwise; a negative angle rotates it counter-clockwise."
+msgstr ""
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:102
+msgid "Fine angle:"
+msgstr ""
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:106
+msgid ""
+"This value in degrees will be added to main angle value to set fine target "
+"angle."
+msgstr ""
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:110
+msgid ""
+"Enable this option to apply the anti-aliasing filter to the rotated image. "
+"In order to smooth the target image, it will be blurred a little."
+msgstr ""
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:114
+#, fuzzy
+#| msgid "Author:"
+msgid "Auto-crop:"
+msgstr "लेखक:"
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:116
+#, fuzzy
+#| msgid "None"
+msgctxt "no autocrop"
+msgid "None"
+msgstr "कुनै होइन"
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:117
+msgid "Widest Area"
+msgstr ""
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:118
+#, fuzzy
+#| msgid "Last Search"
+msgid "Largest Area"
+msgstr "अन्तिम खोजी"
+
+#: libs/dimg/filters/transform/freerotationsettings.cpp:120
+msgid ""
+"Select the method to process image auto-cropping to remove black frames "
+"around a rotated image here."
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:137
+#, fuzzy
+#| msgid "Solid white"
+msgctxt "solid border type"
+msgid "Solid"
+msgstr "कडा सेतो"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:140
+#, fuzzy
+#| msgid "Developer"
+msgctxt "beveled border type"
+msgid "Beveled"
+msgstr "विकासकर्ता"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:141
+msgid "Decorative Pine"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:142
+msgid "Decorative Wood"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:143
+msgid "Decorative Paper"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:144
+msgid "Decorative Parquet"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:145
+msgid "Decorative Ice"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:146
+msgid "Decorative Leaf"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:147
+msgid "Decorative Marble"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:148
+msgid "Decorative Rain"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:149
+#, fuzzy
+#| msgid "Decrease Contrast"
+msgid "Decorative Craters"
+msgstr "व्यतिरेक घटाउनुहोस्"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:150
+msgid "Decorative Dried"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:151
+msgid "Decorative Pink"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:152
+msgid "Decorative Stone"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:153
+msgid "Decorative Chalk"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:154
+msgid "Decorative Granite"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:155
+msgid "Decorative Rock"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:156
+msgid "Decorative Wall"
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:158
+#, fuzzy
+#| msgid "<p>Set here the hue adjustment of the image."
+msgid "Select the border type to add around the image here."
+msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:165
+#, fuzzy
+#| msgid "Aspect ratio:"
+msgid "Preserve Aspect Ratio"
+msgstr "आकार अनुपात:"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:166
+msgid ""
+"Enable this option if you want to preserve the aspect ratio of image. If "
+"enabled, the border width will be a percentage of the image size, else the "
+"border width will be in pixels."
+msgstr ""
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:176
+#, fuzzy
+#| msgid "<p>Set here the hue adjustment of the image."
+msgid "Set here the border width as a percentage of the image size."
+msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:178
+#, fuzzy
+#| msgid "Width (%):"
+msgid "Width (pixels):"
+msgstr "चौडाइ (%):"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:183
+#, fuzzy
+#| msgid "<p>Set here the width in pixels used to draw guides dashed-lines."
+msgid "Set here the border width in pixels to add around the image."
+msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने चौडाइ पिक्सेलमा यहाँ सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:411
+#, fuzzy
+#| msgid "&First"
+msgctxt "first color for border effect"
+msgid "First:"
+msgstr "पहिलो"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:412
+#, fuzzy
+#| msgid "Selection"
+msgctxt "second color for border effect"
+msgid "Second:"
+msgstr "चयन"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:413
+#, fuzzy
+#| msgid "<p>Set here the cyan/red color adjustment of the image."
+msgid "Set here the foreground color of the border."
+msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:414
+#, fuzzy
+#| msgid "<p>Set here the cyan/red color adjustment of the image."
+msgid "Set here the Background color of the border."
+msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:430
+#, fuzzy
+#| msgid "<p>Set here the contrast adjustment of the image."
+msgid "Set here the color of the main border."
+msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:431
+#, fuzzy
+#| msgid "<p>Set here the contrast adjustment of the image."
+msgid "Set here the color of the line."
+msgstr "<p>यहाँ छविको व्यतिरेक समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:437
+#, fuzzy
+#| msgid "<p>Set here the color used to draw guides dashed-lines."
+msgid "Set here the color of the upper left area."
+msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:438
+#, fuzzy
+#| msgid "<p>Set here the cyan/red color adjustment of the image."
+msgid "Set here the color of the lower right area."
+msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:459
+#, fuzzy
+#| msgid "<p>Set here the color used to draw guides dashed-lines."
+msgid "Set here the color of the first line."
+msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
+
+#: libs/dimg/filters/decorate/bordersettings.cpp:460
+#, fuzzy
+#| msgid "<p>Set here the color used to draw guides dashed-lines."
+msgid "Set here the color of the second line."
+msgstr "<p>मार्गदर्शन ड्यास-रेखा कोर्न प्रयोग गरिने रङ यहाँ सेट गर्नुहोस् ।"
 
 #: libs/dimg/filters/lc/localcontrastsettings.cpp:180
 #, fuzzy
@@ -13726,6 +13721,7 @@ msgstr "<p>एल्बम वस्तु माथि माउस हुँ�
 
 #: showfoto/setup/setuptooltip.cpp:138
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:116
+#: utilities/queuemanager/basetools/decorate/border.cpp:116
 #, fuzzy
 #| msgid "Count:"
 msgid "Font:"
@@ -14075,118 +14071,130 @@ msgid "A tool to remove/add vignetting to photograph."
 msgstr ""
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:99
+#: utilities/queuemanager/basetools/decorate/border.cpp:99
 #, fuzzy
 #| msgid "Add Camera..."
 msgid "Add Watermark"
 msgstr "क्यामेरा थप्नुहोस्..."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:100
+#: utilities/queuemanager/basetools/decorate/border.cpp:100
 msgid "A tool to add a visible watermark"
 msgstr ""
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:110
+#: utilities/queuemanager/basetools/decorate/border.cpp:110
 #, fuzzy
 #| msgid "Enter new album name:"
 msgid "Enter your watermark string here."
 msgstr "नयाँ एल्बमको नाम यहाँ प्रविष्ट गर्नुहोस्:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:111
+#: utilities/queuemanager/basetools/decorate/border.cpp:111
 #, fuzzy
 #| msgid "Nature"
 msgid "Text:"
 msgstr "प्रकृति"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:121
+#: utilities/queuemanager/basetools/decorate/border.cpp:121
 #, fuzzy
 #| msgid "Colors:"
 msgid "Font Color:"
 msgstr "रङ:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:125
+#: utilities/queuemanager/basetools/decorate/border.cpp:125
 #, fuzzy
 #| msgid "Top-Left"
 msgid "Top left"
 msgstr "माथि-बायाँ"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:126
+#: utilities/queuemanager/basetools/decorate/border.cpp:126
 #, fuzzy
 #| msgid "Copyright:"
 msgid "Top right"
 msgstr "प्रतिलिपि अधिकार:"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:127
+#: utilities/queuemanager/basetools/decorate/border.cpp:127
 #, fuzzy
 #| msgid "Bottom-Left"
 msgid "Bottom left"
 msgstr "तल-बायाँ"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:128
+#: utilities/queuemanager/basetools/decorate/border.cpp:128
 #, fuzzy
 #| msgid "Bottom-Right"
 msgid "Bottom right"
 msgstr "तल-दायाँ"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:129
+#: utilities/queuemanager/basetools/decorate/border.cpp:129
 #, fuzzy
 #| msgid "Convert"
 msgid "Corner:"
 msgstr "रूपान्तरण गर्नुहोस्"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:136
+#: utilities/queuemanager/basetools/decorate/border.cpp:136
 #, fuzzy
 #| msgid "<p>Set here the hue adjustment of the image."
 msgid "Enter the string length as a percent of the image width here."
 msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:137
+#: utilities/queuemanager/basetools/decorate/border.cpp:137
 #, fuzzy
 #| msgid "Height (%):"
 msgid "length (%):"
 msgstr "उचाइ (%):"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:80
+#: utilities/queuemanager/basetools/transform/rotate.cpp:82
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotate"
 msgstr "घुमाउनुहोस्"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:81
+#: utilities/queuemanager/basetools/transform/rotate.cpp:83
 #, fuzzy
 #| msgid "Color Space"
 msgid "A tool to rotate images."
 msgstr "कलरस्पेस"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:85
+#: utilities/queuemanager/basetools/transform/rotate.cpp:87
 #, fuzzy
 #| msgid "Correct Exif Orientation Tag"
 msgid "Use Exif Orientation"
 msgstr "Exif अभिमुखीकरण ट्याग सुधार गर्नुहोस्"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:89
+#: utilities/queuemanager/basetools/transform/rotate.cpp:91
 #, fuzzy
 #| msgid "90 Degrees"
 msgid "90 degrees"
 msgstr "९० डिग्री"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:90
+#: utilities/queuemanager/basetools/transform/rotate.cpp:92
 #, fuzzy
 #| msgid "180 Degrees"
 msgid "180 degrees"
 msgstr "१८० डिग्री"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:91
+#: utilities/queuemanager/basetools/transform/rotate.cpp:93
 #, fuzzy
 #| msgid "270 Degrees"
 msgid "270 degrees"
 msgstr "२७० डिग्री"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:92
+#: utilities/queuemanager/basetools/transform/rotate.cpp:94
 #, fuzzy
 #| msgid "Custom"
 msgid "Custom"
 msgstr "अनुकूल"
 
-#: utilities/queuemanager/basetools/transform/rotate.cpp:94
+#: utilities/queuemanager/basetools/transform/rotate.cpp:96
 #, fuzzy
 #| msgid "Range:"
 msgid "Angle:"
@@ -15959,7 +15967,7 @@ msgid ""
 "\"%1\""
 msgstr "\"%1\" छवि लोड गर्न असफल"
 
-#: utilities/imageeditor/canvas/imagepluginloader.cpp:161
+#: utilities/imageeditor/canvas/imagepluginloader.cpp:162
 #, fuzzy
 #| msgid "Image Plugins"
 msgid "Loading Image Plugins"
@@ -20566,23 +20574,19 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#. i18n: file: imageplugins/superimpose/digikamimageplugin_superimpose_ui.rc:6
-#. i18n: ectx: Menu (Decorate)
 #. i18n: file: imageplugins/decorate/digikamimageplugin_decorate_ui.rc:6
 #. i18n: ectx: Menu (Decorate)
 #. i18n: file: showfoto/showfotoui.rc:72
 #. i18n: ectx: Menu (Decorate)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:71
 #. i18n: ectx: Menu (Decorate)
-#: rc.cpp:5 rc.cpp:11 rc.cpp:167 rc.cpp:278
+#: rc.cpp:5 rc.cpp:161 rc.cpp:272
 #, fuzzy
 #| msgid "&Rotate"
 msgid "&Decorate"
 msgstr "घुमाउनुहोस्"
 
-#. i18n: file: imageplugins/superimpose/digikamimageplugin_superimpose_ui.rc:13
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: imageplugins/decorate/digikamimageplugin_decorate_ui.rc:15
+#. i18n: file: imageplugins/decorate/digikamimageplugin_decorate_ui.rc:16
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: imageplugins/transform/digikamimageplugin_transform_ui.rc:18
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -20608,9 +20612,8 @@ msgstr "घुमाउनुहोस्"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: utilities/cameragui/cameraui.rc:78
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:8 rc.cpp:14 rc.cpp:20 rc.cpp:29 rc.cpp:38 rc.cpp:47 rc.cpp:80
-#: rc.cpp:113 rc.cpp:146 rc.cpp:179 rc.cpp:197 rc.cpp:218 rc.cpp:290
-#: rc.cpp:311
+#: rc.cpp:8 rc.cpp:14 rc.cpp:23 rc.cpp:32 rc.cpp:41 rc.cpp:74 rc.cpp:107
+#: rc.cpp:140 rc.cpp:173 rc.cpp:191 rc.cpp:212 rc.cpp:284 rc.cpp:305
 msgid "Main Toolbar"
 msgstr ""
 
@@ -20620,7 +20623,7 @@ msgstr ""
 #. i18n: ectx: Menu (Transform)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:60
 #. i18n: ectx: Menu (Transform)
-#: rc.cpp:17 rc.cpp:164 rc.cpp:275
+#: rc.cpp:11 rc.cpp:158 rc.cpp:269
 #, fuzzy
 #| msgid "&Transform"
 msgid "Tra&nsform"
@@ -20632,7 +20635,7 @@ msgstr "रूपान्तरण"
 #. i18n: ectx: Menu (Enhance)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:57
 #. i18n: ectx: Menu (Enhance)
-#: rc.cpp:23 rc.cpp:161 rc.cpp:272
+#: rc.cpp:17 rc.cpp:155 rc.cpp:266
 #, fuzzy
 #| msgid "C&ancel"
 msgid "Enh&ance"
@@ -20640,7 +20643,7 @@ msgstr "रद्द गर्नुहोस्"
 
 #. i18n: file: imageplugins/enhance/digikamimageplugin_enhance_ui.rc:17
 #. i18n: ectx: Menu (Lens)
-#: rc.cpp:26
+#: rc.cpp:20
 #, fuzzy
 #| msgid "Dimensions:"
 msgid "&Lens"
@@ -20654,7 +20657,7 @@ msgstr "आयाम:"
 #. i18n: ectx: Menu (Color)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:54
 #. i18n: ectx: Menu (Color)
-#: rc.cpp:32 rc.cpp:41 rc.cpp:158 rc.cpp:269
+#: rc.cpp:26 rc.cpp:35 rc.cpp:152 rc.cpp:263
 #, fuzzy
 #| msgid "&Colors"
 msgid "&Color"
@@ -20666,7 +20669,7 @@ msgstr "रङ"
 #. i18n: ectx: Menu (Filters)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:74
 #. i18n: ectx: Menu (Filters)
-#: rc.cpp:35 rc.cpp:170 rc.cpp:281
+#: rc.cpp:29 rc.cpp:164 rc.cpp:275
 #, fuzzy
 #| msgid "Filters"
 msgid "F&ilters"
@@ -20674,7 +20677,7 @@ msgstr "फिल्टर"
 
 #. i18n: file: imageplugins/color/digikamimageplugin_color_ui.rc:18
 #. i18n: ectx: Menu (Depth)
-#: rc.cpp:44
+#: rc.cpp:38
 msgid "&Depth"
 msgstr "गहिराइ"
 
@@ -20684,7 +20687,7 @@ msgstr "गहिराइ"
 #. i18n: ectx: Menu (Album)
 #. i18n: file: digikam/digikamui.rc:7
 #. i18n: ectx: Menu (Album)
-#: rc.cpp:50 rc.cpp:83 rc.cpp:116
+#: rc.cpp:44 rc.cpp:77 rc.cpp:110
 msgid "&Album"
 msgstr "एल्बम"
 
@@ -20694,7 +20697,7 @@ msgstr "एल्बम"
 #. i18n: ectx: Menu (Tag)
 #. i18n: file: digikam/digikamui.rc:27
 #. i18n: ectx: Menu (Tag)
-#: rc.cpp:53 rc.cpp:86 rc.cpp:119
+#: rc.cpp:47 rc.cpp:80 rc.cpp:113
 msgid "T&ag"
 msgstr "ट्याग"
 
@@ -20706,7 +20709,7 @@ msgstr "ट्याग"
 #. i18n: ectx: Menu (Image)
 #. i18n: file: utilities/cameragui/cameraui.rc:25
 #. i18n: ectx: Menu (Image)
-#: rc.cpp:56 rc.cpp:89 rc.cpp:122 rc.cpp:299
+#: rc.cpp:50 rc.cpp:83 rc.cpp:116 rc.cpp:293
 msgid "&Image"
 msgstr "छवि"
 
@@ -20722,7 +20725,7 @@ msgstr "छवि"
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: utilities/cameragui/cameraui.rc:16
 #. i18n: ectx: Menu (Edit)
-#: rc.cpp:59 rc.cpp:92 rc.cpp:125 rc.cpp:152 rc.cpp:263 rc.cpp:296
+#: rc.cpp:53 rc.cpp:86 rc.cpp:119 rc.cpp:146 rc.cpp:257 rc.cpp:290
 #, fuzzy
 #| msgid "&Edit..."
 msgid "&Edit"
@@ -20744,8 +20747,8 @@ msgstr "सम्पादन..."
 #. i18n: ectx: Menu (View)
 #. i18n: file: utilities/cameragui/cameraui.rc:43
 #. i18n: ectx: Menu (View)
-#: rc.cpp:62 rc.cpp:95 rc.cpp:128 rc.cpp:155 rc.cpp:188 rc.cpp:203 rc.cpp:266
-#: rc.cpp:302
+#: rc.cpp:56 rc.cpp:89 rc.cpp:122 rc.cpp:149 rc.cpp:182 rc.cpp:197 rc.cpp:260
+#: rc.cpp:296
 #, fuzzy
 #| msgid "View..."
 msgid "&View"
@@ -20759,7 +20762,7 @@ msgstr "दृश्य..."
 #. i18n: ectx: Menu (Tools)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:20
 #. i18n: ectx: Menu (Tools)
-#: rc.cpp:65 rc.cpp:98 rc.cpp:131 rc.cpp:185
+#: rc.cpp:59 rc.cpp:92 rc.cpp:125 rc.cpp:179
 #, fuzzy
 #| msgid "&Colors"
 msgid "&Tools"
@@ -20771,7 +20774,7 @@ msgstr "रङ"
 #. i18n: ectx: Menu (Import)
 #. i18n: file: digikam/digikamui.rc:104
 #. i18n: ectx: Menu (Import)
-#: rc.cpp:68 rc.cpp:101 rc.cpp:134
+#: rc.cpp:62 rc.cpp:95 rc.cpp:128
 #, fuzzy
 #| msgid "&Import"
 msgid "I&mport"
@@ -20783,7 +20786,7 @@ msgstr "आयात"
 #. i18n: ectx: Menu (Export)
 #. i18n: file: digikam/digikamui.rc:115
 #. i18n: ectx: Menu (Export)
-#: rc.cpp:71 rc.cpp:104 rc.cpp:137
+#: rc.cpp:65 rc.cpp:98 rc.cpp:131
 msgid "&Export"
 msgstr "निर्यात"
 
@@ -20803,8 +20806,8 @@ msgstr "निर्यात"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/cameragui/cameraui.rc:63
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:74 rc.cpp:107 rc.cpp:140 rc.cpp:176 rc.cpp:194 rc.cpp:215 rc.cpp:287
-#: rc.cpp:308
+#: rc.cpp:68 rc.cpp:101 rc.cpp:134 rc.cpp:170 rc.cpp:188 rc.cpp:209 rc.cpp:281
+#: rc.cpp:302
 #, fuzzy
 #| msgid "Settings"
 msgid "&Settings"
@@ -20826,8 +20829,8 @@ msgstr "सेटिङ"
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/cameragui/cameraui.rc:53
 #. i18n: ectx: Menu (help)
-#: rc.cpp:77 rc.cpp:110 rc.cpp:143 rc.cpp:173 rc.cpp:191 rc.cpp:212 rc.cpp:284
-#: rc.cpp:305
+#: rc.cpp:71 rc.cpp:104 rc.cpp:137 rc.cpp:167 rc.cpp:185 rc.cpp:206 rc.cpp:278
+#: rc.cpp:299
 #, fuzzy
 #| msgid "&Del"
 msgid "&Help"
@@ -20839,7 +20842,7 @@ msgstr "मेट्नुहोस्"
 #. i18n: ectx: Menu (File)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:6
 #. i18n: ectx: Menu (File)
-#: rc.cpp:149 rc.cpp:200 rc.cpp:260
+#: rc.cpp:143 rc.cpp:194 rc.cpp:254
 #, fuzzy
 #| msgid "&Title:"
 msgid "&File"
@@ -20847,19 +20850,19 @@ msgstr "शीर्षक:"
 
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:6
 #. i18n: ectx: Menu (Queues)
-#: rc.cpp:182
+#: rc.cpp:176
 msgid "&Queues"
 msgstr ""
 
 #. i18n: file: utilities/lighttable/lighttablewindowui.rc:31
 #. i18n: ectx: Menu (LeftPanel)
-#: rc.cpp:206
+#: rc.cpp:200
 msgid "&Left Panel"
 msgstr ""
 
 #. i18n: file: utilities/lighttable/lighttablewindowui.rc:37
 #. i18n: ectx: Menu (RightPanel)
-#: rc.cpp:209
+#: rc.cpp:203
 #, fuzzy
 #| msgid "Color Management"
 msgid "&Right Panel"
@@ -20867,13 +20870,13 @@ msgstr "रङ व्यवस्थापन"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:221
+#: rc.cpp:215
 msgid "Image Settings"
 msgstr "छवि सेटिङ"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:224
+#: rc.cpp:218
 #, fuzzy
 #| msgid "Image position:"
 msgid "Image Position"
@@ -20881,7 +20884,7 @@ msgstr "छवि स्थान:"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintAutoRotate)
-#: rc.cpp:227
+#: rc.cpp:221
 #, fuzzy
 #| msgid "&Auto-rotate page"
 msgid "Auto rotate"
@@ -20889,7 +20892,7 @@ msgstr "स्वत: परिक्रमण पृष्ठ"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:74
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:230
+#: rc.cpp:224
 #, fuzzy
 #| msgid "Scaling"
 msgid "Scaling"
@@ -20897,7 +20900,7 @@ msgstr "मापन"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:233
+#: rc.cpp:227
 #, fuzzy
 #| msgid "No such tag"
 msgid "&No scaling"
@@ -20905,7 +20908,7 @@ msgstr "त्यस्तो ट्याग छैन"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:99
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:236
+#: rc.cpp:230
 #, fuzzy
 #| msgid "Print image creation date"
 msgid "&Fit image to page"
@@ -20913,50 +20916,50 @@ msgstr "छवि सिर्जना मिति मुद्रण गर�
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:239
+#: rc.cpp:233
 msgid "Enlarge smaller images"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:161
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:242
+#: rc.cpp:236
 msgid "&Scale to:"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:202
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:245
+#: rc.cpp:239
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:229
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:248
+#: rc.cpp:242
 msgid "Millimeters"
 msgstr "मिलिमिटर"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:234
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:251
+#: rc.cpp:245
 msgid "Centimeters"
 msgstr "सेन्टिमिटर"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:239
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:254
+#: rc.cpp:248
 msgid "Inches"
 msgstr "इन्च"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:250
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:257
+#: rc.cpp:251
 msgid "Keep ratio"
 msgstr "अनुपात राख्नुहोस्"
 
 #. i18n: file: utilities/cameragui/cameraui.rc:6
 #. i18n: ectx: Menu (Device)
-#: rc.cpp:293
+#: rc.cpp:287
 #, fuzzy
 #| msgid "Device Class"
 msgid "&Device"
@@ -20964,7 +20967,7 @@ msgstr "यन्त्र वर्ग"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/replacemodifierdialogwidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:314
+#: rc.cpp:308
 #, fuzzy
 #| msgid "Rename..."
 msgctxt "Replace string"
@@ -20973,7 +20976,7 @@ msgstr "पुन: नामकरण गर्नुहोस्..."
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/replacemodifierdialogwidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:317
+#: rc.cpp:311
 #, fuzzy
 #| msgid "Width:"
 msgctxt "The string to replace the text with"
@@ -20982,7 +20985,7 @@ msgstr "चौडाइ:"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/replacemodifierdialogwidget.ui:49
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:320
+#: rc.cpp:314
 #, fuzzy
 #| msgid "Interface Options"
 msgid "Options"
@@ -20990,7 +20993,7 @@ msgstr "इन्टरफेस विकल्प"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/replacemodifierdialogwidget.ui:55
 #. i18n: ectx: property (text), widget (QCheckBox, caseSensitive)
-#: rc.cpp:323
+#: rc.cpp:317
 #, fuzzy
 #| msgid "<b>Sensitivity</b>:"
 msgid "Case Sensitive"
@@ -20998,13 +21001,13 @@ msgstr "<b>संवेदनशिलता</b>:"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/replacemodifierdialogwidget.ui:62
 #. i18n: ectx: property (text), widget (QCheckBox, isRegExp)
-#: rc.cpp:326
+#: rc.cpp:320
 msgid "Regular Expression"
 msgstr ""
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/fillmodifierdialogwidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:329
+#: rc.cpp:323
 #, fuzzy
 #| msgid "Local Settings"
 msgctxt "The length of the string"
@@ -21013,7 +21016,7 @@ msgstr "स्थानिय सेटिङ"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/fillmodifierdialogwidget.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:332
+#: rc.cpp:326
 #, fuzzy
 #| msgid "Show file size"
 msgctxt "Alignment of the text"
@@ -21022,7 +21025,7 @@ msgstr "फाइल साइज देखाउनुहोस्"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/fillmodifierdialogwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:335
+#: rc.cpp:329
 #, fuzzy
 #| msgid "Created:"
 msgctxt "The character the string should be filled with"
@@ -21031,7 +21034,7 @@ msgstr "सिर्जना:"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/rangemodifierdialogwidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:338
+#: rc.cpp:332
 #, fuzzy
 #| msgid "Image Date"
 msgctxt "start of the range"
@@ -21040,7 +21043,7 @@ msgstr "छवि मिति"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/rangemodifierdialogwidget.ui:33
 #. i18n: ectx: property (text), widget (QCheckBox, toTheEndCheckBox)
-#: rc.cpp:341
+#: rc.cpp:335
 #, fuzzy
 #| msgid "Loading themes"
 msgctxt "range goes to the end of the string"
@@ -21049,14 +21052,14 @@ msgstr "विषयवस्तु लोडिङ"
 
 #. i18n: file: utilities/advancedrename/parser/modifiers/rangemodifierdialogwidget.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:344
+#: rc.cpp:338
 msgctxt "end of the range"
 msgid "To:"
 msgstr ""
 
 #. i18n: file: utilities/advancedrename/parser/options/dateoptiondialogwidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:347
+#: rc.cpp:341
 #, fuzzy
 #| msgid "Source:"
 msgctxt "the source of the date (image, system etc...)"
@@ -21065,7 +21068,7 @@ msgstr "स्रोत:"
 
 #. i18n: file: utilities/advancedrename/parser/options/dateoptiondialogwidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:350
+#: rc.cpp:344
 #, fuzzy
 #| msgid "Image Date"
 msgctxt "the format of the date"
@@ -21074,7 +21077,7 @@ msgstr "छवि मिति"
 
 #. i18n: file: utilities/advancedrename/parser/options/dateoptiondialogwidget.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:355
+#: rc.cpp:349
 #, fuzzy
 #| msgid "&Title:"
 msgid "Time:"
@@ -21082,7 +21085,7 @@ msgstr "शीर्षक:"
 
 #. i18n: file: utilities/advancedrename/parser/options/sequencenumberoptiondialogwidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:358
+#: rc.cpp:352
 #, fuzzy
 #| msgid "Lightness"
 msgctxt "Number of digits "
@@ -21091,7 +21094,7 @@ msgstr "प्रकाश"
 
 #. i18n: file: utilities/advancedrename/parser/options/sequencenumberoptiondialogwidget.ui:41
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:361
+#: rc.cpp:355
 #, fuzzy
 #| msgid "Custom"
 msgid "Custom Range"
@@ -21099,7 +21102,7 @@ msgstr "अनुकूल"
 
 #. i18n: file: utilities/advancedrename/parser/options/sequencenumberoptiondialogwidget.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:364
+#: rc.cpp:358
 #, fuzzy
 #| msgid "Statistics"
 msgctxt "Start index for custom range"
@@ -21108,7 +21111,7 @@ msgstr "तथ्याङ्क"
 
 #. i18n: file: utilities/advancedrename/parser/options/sequencenumberoptiondialogwidget.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:367
+#: rc.cpp:361
 #, fuzzy
 #| msgid "None"
 msgctxt "stepping for custom range"
@@ -21963,6 +21966,11 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "HSL Adjustments"
+#~ msgid "Manual Adjustment"
+#~ msgstr "HSL समायोजन"
 
 #, fuzzy
 #~| msgid "Auto-Correction..."
