@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-08 04:36+0200\n"
+"POT-Creation-Date: 2010-04-09 05:07+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1758,14 +1758,14 @@ msgstr[1] "आइपोडबाट ट्र्याक मेट्नुह�
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:121
-#: playlistmanager/PlaylistManager.cpp:252
+#: playlistmanager/PlaylistManager.cpp:253
 #, fuzzy
 msgid "Change playlist"
 msgstr "एउटा प्ले सूची"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:122
-#: playlistmanager/PlaylistManager.cpp:253
+#: playlistmanager/PlaylistManager.cpp:254
 #, fuzzy
 #| msgid "&Enter a name for the playlist:"
 msgid "Enter new name for playlist:"
@@ -2096,7 +2096,7 @@ msgstr "मेटाइ असफल भयो"
 
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:251
 #: browsers/filebrowser/FileView.cpp:456
-#: playlistmanager/file/PlaylistFileProvider.cpp:271
+#: playlistmanager/file/PlaylistFileProvider.cpp:272
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:238
 #, fuzzy
 #| msgid "Configure Playback"
@@ -2953,7 +2953,7 @@ msgstr "एल्बम"
 #: dialogs/FilenameLayoutDialog.cpp:219 dialogs/FilenameLayoutDialog.cpp:556
 #: dialogs/transferdialog.cpp:88 playlist/PlaylistModel.cpp:696
 #: playlist/PlaylistHeader.cpp:40 services/jamendo/JamendoInfoParser.cpp:51
-#: services/lastfm/LastFmService.cpp:537
+#: services/lastfm/LastFmService.cpp:539
 #: services/magnatune/MagnatuneStore.cpp:215
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 #: rc.cpp:1263
@@ -3027,7 +3027,7 @@ msgid "Artist / Album"
 msgstr "कलाकार - एल्बम"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:109
-#: services/jamendo/JamendoService.cpp:150
+#: services/jamendo/JamendoService.cpp:152
 #: services/magnatune/MagnatuneStore.cpp:224
 #, fuzzy
 #| msgid "The Artist"
@@ -3035,7 +3035,7 @@ msgid "Genre / Artist"
 msgstr "कलाकार"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:113
-#: services/jamendo/JamendoService.cpp:153
+#: services/jamendo/JamendoService.cpp:155
 #: services/magnatune/MagnatuneStore.cpp:227
 #, fuzzy
 #| msgid "Artist - Album"
@@ -3080,7 +3080,7 @@ msgid "Show Cover Art"
 msgstr "विवरणहरू देखाउनुहोस्"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:319
-#: services/jamendo/JamendoService.cpp:156
+#: services/jamendo/JamendoService.cpp:158
 #: services/magnatune/MagnatuneStore.cpp:230
 #, fuzzy
 #| msgid "Options"
@@ -3173,7 +3173,7 @@ msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्�
 msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
 #: browsers/filebrowser/FileView.cpp:463
-#: playlistmanager/file/PlaylistFileProvider.cpp:278
+#: playlistmanager/file/PlaylistFileProvider.cpp:279
 #, fuzzy
 #| msgid "Delete from device"
 msgid "Yes, delete from disk."
@@ -4089,7 +4089,9 @@ msgstr "सेटिङ"
 msgid "Photos"
 msgstr "राम्रो"
 
-#: context/applets/photos/PhotosApplet.cpp:94
+#. i18n: file: context/applets/photos/photosSettings.ui:52
+#. i18n: ectx: property (text), item, widget (KComboBox, animationComboBox)
+#: context/applets/photos/PhotosApplet.cpp:94 rc.cpp:909
 #, fuzzy
 #| msgid "Autodetect"
 msgctxt "animation type"
@@ -4249,8 +4251,13 @@ msgstr "ट्रयाक"
 msgid "Reload"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
+#. i18n: file: context/applets/wikipedia/wikipediaSettings.ui:24
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:56
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: context/applets/wikipedia/WikipediaApplet.cpp:407
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:325
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:325 rc.cpp:935
+#: rc.cpp:971
 #, fuzzy
 #| msgid "Autodetect"
 msgctxt "automatic language selection"
@@ -6264,17 +6271,6 @@ msgstr "प्ले सूची सिर्जना गर्नुहोस
 msgid "No information available for this track"
 msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
 
-#: playlistgenerator/ConstraintSolver.cpp:228
-msgid "The playlist generator failed to load any tracks from the collection."
-msgstr ""
-
-#: playlistgenerator/ConstraintSolver.cpp:235
-msgid ""
-"There are no tracks that match all constraints.  The playlist generator will "
-"find the tracks that match best, but you may want to consider loosening the "
-"constraints to find more tracks."
-msgstr ""
-
 #: playlistgenerator/Preset.cpp:41 playlistgenerator/Preset.cpp:54
 #, fuzzy
 #| msgid "Playlist name:"
@@ -6588,6 +6584,17 @@ msgstr ""
 #| msgid "Expired"
 msgid "Export"
 msgstr "म्याद समाप्त भएको"
+
+#: playlistgenerator/ConstraintSolver.cpp:229
+msgid "The playlist generator failed to load any tracks from the collection."
+msgstr ""
+
+#: playlistgenerator/ConstraintSolver.cpp:236
+msgid ""
+"There are no tracks that match all constraints.  The playlist generator will "
+"find the tracks that match best, but you may want to consider loosening the "
+"constraints to find more tracks."
+msgstr ""
 
 #: playlist/PlaylistBreadcrumbItem.cpp:110
 #, fuzzy
@@ -7431,14 +7438,14 @@ msgstr "ट्रयाक हटाइयो"
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr ""
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:78
+#: playlistmanager/file/PlaylistFileProvider.cpp:79
 #, fuzzy
 #| msgid "Playlist Files"
 msgid "Playlist Files on Disk"
 msgstr "बजाउने सूची फाइल"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:130
-#: playlistmanager/file/PlaylistFileProvider.cpp:139
+#: playlistmanager/file/PlaylistFileProvider.cpp:131
+#: playlistmanager/file/PlaylistFileProvider.cpp:140
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:199
 #, fuzzy, kde-format
 #| msgid "Remove"
@@ -7450,11 +7457,11 @@ msgstr "हटाउनुहोस्"
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:98
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: playlistmanager/file/PlaylistFileProvider.cpp:156 rc.cpp:1196 rc.cpp:1928
+#: playlistmanager/file/PlaylistFileProvider.cpp:157 rc.cpp:1196 rc.cpp:1928
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:273
+#: playlistmanager/file/PlaylistFileProvider.cpp:274
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:240
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
@@ -7463,8 +7470,8 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:320
-#: playlistmanager/file/PlaylistFileProvider.cpp:346
+#: playlistmanager/file/PlaylistFileProvider.cpp:321
+#: playlistmanager/file/PlaylistFileProvider.cpp:347
 #, fuzzy, kde-format
 #| msgid "The cover could not be retrieved."
 msgid "The playlist file \"%1\" could not be loaded."
@@ -7516,7 +7523,7 @@ msgstr "मेट्नुहोस्"
 msgid "Yes, delete from database."
 msgstr "यन्त्रबाट मेट्नुहोस्"
 
-#: playlistmanager/PlaylistManager.cpp:176
+#: playlistmanager/PlaylistManager.cpp:177
 #, fuzzy
 #| msgid "Loading Playlist"
 msgid "Downloading Playlist"
@@ -7622,29 +7629,29 @@ msgstr "यो रेडियोका लागि पर्याप्त �
 msgid "Ampache Server %1"
 msgstr "उन्नत सर्भर"
 
-#: services/ampache/AmpacheService.cpp:125
+#: services/ampache/AmpacheService.cpp:126
 msgid "Amarok frontend for your Ampache server."
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:127
+#: services/ampache/AmpacheService.cpp:128
 msgid ""
 "Use Amarok as a seamless frontend to your Ampache server. This lets you "
 "browse and play all the Ampache contents from within Amarok."
 msgstr ""
 
-#: services/ampache/AmpacheService.cpp:212
+#: services/ampache/AmpacheService.cpp:213
 #, fuzzy
 #| msgid "Enter a login and a password"
 msgid "Enter the server name and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
 
-#: services/ampache/AmpacheService.cpp:271
+#: services/ampache/AmpacheService.cpp:272
 #, fuzzy
 #| msgid "Authenticating"
 msgid "Authenticating with Ampache"
 msgstr "प्रमाणीकरण असफलता"
 
-#: services/ampache/AmpacheService.cpp:299
+#: services/ampache/AmpacheService.cpp:300
 #, fuzzy
 #| msgid "Authentication Failure"
 msgid "Authentication Error"
@@ -7680,7 +7687,43 @@ msgstr "मिडिया डाउनलोड गर्नुहोस्"
 msgid "A site where artists can freely share their music"
 msgstr ""
 
-#: services/jamendo/JamendoXmlParser.cpp:152
+#: services/jamendo/JamendoService.cpp:79
+msgid "A site where artists can showcase their creations to the world"
+msgstr ""
+
+#: services/jamendo/JamendoService.cpp:82
+msgid ""
+"Jamendo.com puts artists and music lovers in touch with each other. The site "
+"allows artists to upload their own albums to share them with the world and "
+"users to download all of them for free. Listen to and download all Jamendo."
+"com contents from within Amarok."
+msgstr ""
+
+#: services/jamendo/JamendoService.cpp:118
+#: services/opmldirectory/OpmlDirectoryService.cpp:102
+#, fuzzy
+#| msgid "Update"
+msgctxt "Fetch new information from the website"
+msgid "Update"
+msgstr "अद्यावधिक गर्नुहोस्"
+
+#. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
+#. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
+#: services/jamendo/JamendoService.cpp:124 rc.cpp:2040
+msgid "Download"
+msgstr "डाउनलोड गर्नुहोस्"
+
+#: services/jamendo/JamendoService.cpp:188
+msgid "Downloading Jamendo.com Database"
+msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: services/jamendo/JamendoService.cpp:210
+#, fuzzy
+#| msgid "Updating database"
+msgid "Updating the local Jamendo database."
+msgstr "डाटाबेस अद्यावधिक गर्दै"
+
+#: services/jamendo/JamendoXmlParser.cpp:153
 #, fuzzy, kde-format
 #| msgid ""
 #| "Magnatune.com database update complete. Added %1 tracks on %2 albums from "
@@ -7697,7 +7740,7 @@ msgstr[1] ""
 "Magnatune.com डाटाबेसले पूरा अद्यावधिक गर्यो । %3 कलाकारबाट %2 एल्बममा %1 ट्रयाकहरू "
 "थपियो"
 
-#: services/jamendo/JamendoXmlParser.cpp:153
+#: services/jamendo/JamendoXmlParser.cpp:154
 #, fuzzy, kde-format
 msgctxt ""
 "Middle part of: Jamendo.com database update complete. Added 3 tracks on 4 "
@@ -7707,7 +7750,7 @@ msgid_plural "%1 albums from "
 msgstr[0] "१ एल्बम"
 msgstr[1] "१ एल्बम"
 
-#: services/jamendo/JamendoXmlParser.cpp:154
+#: services/jamendo/JamendoXmlParser.cpp:155
 #, fuzzy, kde-format
 #| msgid "Artist"
 msgctxt ""
@@ -7718,44 +7761,8 @@ msgid_plural "%1 artists."
 msgstr[0] "कलाकार"
 msgstr[1] "कलाकार"
 
-#: services/jamendo/JamendoService.cpp:77
-msgid "A site where artists can showcase their creations to the world"
-msgstr ""
-
-#: services/jamendo/JamendoService.cpp:80
-msgid ""
-"Jamendo.com puts artists and music lovers in touch with each other. The site "
-"allows artists to upload their own albums to share them with the world and "
-"users to download all of them for free. Listen to and download all Jamendo."
-"com contents from within Amarok."
-msgstr ""
-
-#: services/jamendo/JamendoService.cpp:116
-#: services/opmldirectory/OpmlDirectoryService.cpp:102
-#, fuzzy
-#| msgid "Update"
-msgctxt "Fetch new information from the website"
-msgid "Update"
-msgstr "अद्यावधिक गर्नुहोस्"
-
-#. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
-#. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: services/jamendo/JamendoService.cpp:122 rc.cpp:2040
-msgid "Download"
-msgstr "डाउनलोड गर्नुहोस्"
-
-#: services/jamendo/JamendoService.cpp:186
-msgid "Downloading Jamendo.com Database"
-msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
-
-#: services/jamendo/JamendoService.cpp:209
-#, fuzzy
-#| msgid "Updating database"
-msgid "Updating the local Jamendo database."
-msgstr "डाटाबेस अद्यावधिक गर्दै"
-
 #: services/lastfm/LoveTrackAction.cpp:25
-#: services/lastfm/LastFmService.cpp:298
+#: services/lastfm/LastFmService.cpp:299
 #, fuzzy
 #| msgid "Last.fm Radio"
 msgid "Last.fm: Love"
@@ -7960,98 +7967,6 @@ msgstr "लगइन"
 msgid "&Test Login"
 msgstr "लगइन"
 
-#: services/lastfm/ScrobblerAdapter.cpp:218
-#: services/lastfm/LastFmService.cpp:573
-#, fuzzy, kde-format
-#| msgid "Selected Tracks"
-msgctxt "As in, lastfm"
-msgid "Loved Track: %1"
-msgstr "चयन गरिएको ट्रयाक"
-
-#: services/lastfm/LastFmService.cpp:197
-msgid "Last.fm: The social music revolution"
-msgstr ""
-
-#: services/lastfm/LastFmService.cpp:199
-msgid ""
-"Last.fm is a popular online service that provides personal radio stations "
-"and music recommendations. A personal listening station is tailored based on "
-"your listening habits and provides you with recommendations for new music. "
-"It is also possible to play stations with music that is similar to a "
-"particular artist as well as listen to streams from people you have added as "
-"friends or that last.fm considers your musical \"neighbors\""
-msgstr ""
-
-#: services/lastfm/LastFmService.cpp:300
-msgid "Ctrl+L"
-msgstr ""
-
-#: services/lastfm/LastFmService.cpp:352
-msgctxt "Last.fm: errorMessage"
-msgid "Either the username was not recognized, or the password was incorrect."
-msgstr ""
-
-#: services/lastfm/LastFmService.cpp:356
-msgctxt "Last.fm: errorMessage"
-msgid ""
-"There was a problem communicating with the Last.fm services. Please try "
-"again later."
-msgstr ""
-
-#: services/lastfm/LastFmService.cpp:443
-#, fuzzy
-#| msgid "Enter preset name:"
-msgid "Enter an artist name"
-msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
-
-#: services/lastfm/LastFmService.cpp:446
-#, fuzzy
-#| msgid "Enter preset name:"
-msgid "Enter a tag"
-msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
-
-#: services/lastfm/LastFmService.cpp:449
-#, fuzzy
-#| msgid "Enter preset name:"
-msgid "Enter a last.fm user name"
-msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
-
-#: services/lastfm/LastFmService.cpp:462
-#, fuzzy
-#| msgid "Username:"
-msgid "Username: "
-msgstr "प्रयोगकर्ता नाम:"
-
-#: services/lastfm/LastFmService.cpp:467
-#, fuzzy, kde-format
-#| msgid "Play Count"
-msgid "Play Count: %1 play"
-msgid_plural "Play Count: %1 plays"
-msgstr[0] "प्ले गणना"
-msgstr[1] "प्ले गणना"
-
-#: services/lastfm/LastFmService.cpp:477
-#, fuzzy
-#| msgid "Device information for %1"
-msgid "Enter login information for Last.fm"
-msgstr "%1 का लागि यन्त्र सूचना"
-
-#: services/lastfm/LastFmService.cpp:534
-#, fuzzy
-#| msgid "Create Custom Station"
-msgid "Create a Custom Last.fm Station"
-msgstr "अनुकूल स्टेसन सिर्जना गर्नुहोस्"
-
-#: services/lastfm/LastFmService.cpp:537
-#, fuzzy
-#| msgid "Tags"
-msgid "Tag"
-msgstr "ट्याग"
-
-#: services/lastfm/LastFmService.cpp:537
-msgid "User"
-msgstr "प्रयोगकर्ता"
-
 #: services/lastfm/LastFmServiceCollection.cpp:42
 #, fuzzy, kde-format
 #| msgid "1 stream"
@@ -8160,6 +8075,98 @@ msgstr "छिमेकी रेडियो"
 #| msgid "Similar Artists to %1"
 msgid "Play Similar Artists from Last.fm"
 msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: services/lastfm/LastFmService.cpp:198
+msgid "Last.fm: The social music revolution"
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:200
+msgid ""
+"Last.fm is a popular online service that provides personal radio stations "
+"and music recommendations. A personal listening station is tailored based on "
+"your listening habits and provides you with recommendations for new music. "
+"It is also possible to play stations with music that is similar to a "
+"particular artist as well as listen to streams from people you have added as "
+"friends or that last.fm considers your musical \"neighbors\""
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:301
+msgid "Ctrl+L"
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:354
+msgctxt "Last.fm: errorMessage"
+msgid "Either the username was not recognized, or the password was incorrect."
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:358
+msgctxt "Last.fm: errorMessage"
+msgid ""
+"There was a problem communicating with the Last.fm services. Please try "
+"again later."
+msgstr ""
+
+#: services/lastfm/LastFmService.cpp:445
+#, fuzzy
+#| msgid "Enter preset name:"
+msgid "Enter an artist name"
+msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
+
+#: services/lastfm/LastFmService.cpp:448
+#, fuzzy
+#| msgid "Enter preset name:"
+msgid "Enter a tag"
+msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
+
+#: services/lastfm/LastFmService.cpp:451
+#, fuzzy
+#| msgid "Enter preset name:"
+msgid "Enter a last.fm user name"
+msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
+
+#: services/lastfm/LastFmService.cpp:464
+#, fuzzy
+#| msgid "Username:"
+msgid "Username: "
+msgstr "प्रयोगकर्ता नाम:"
+
+#: services/lastfm/LastFmService.cpp:469
+#, fuzzy, kde-format
+#| msgid "Play Count"
+msgid "Play Count: %1 play"
+msgid_plural "Play Count: %1 plays"
+msgstr[0] "प्ले गणना"
+msgstr[1] "प्ले गणना"
+
+#: services/lastfm/LastFmService.cpp:479
+#, fuzzy
+#| msgid "Device information for %1"
+msgid "Enter login information for Last.fm"
+msgstr "%1 का लागि यन्त्र सूचना"
+
+#: services/lastfm/LastFmService.cpp:536
+#, fuzzy
+#| msgid "Create Custom Station"
+msgid "Create a Custom Last.fm Station"
+msgstr "अनुकूल स्टेसन सिर्जना गर्नुहोस्"
+
+#: services/lastfm/LastFmService.cpp:539
+#, fuzzy
+#| msgid "Tags"
+msgid "Tag"
+msgstr "ट्याग"
+
+#: services/lastfm/LastFmService.cpp:539
+msgid "User"
+msgstr "प्रयोगकर्ता"
+
+#: services/lastfm/LastFmService.cpp:575
+#: services/lastfm/ScrobblerAdapter.cpp:219
+#, fuzzy, kde-format
+#| msgid "Selected Tracks"
+msgctxt "As in, lastfm"
+msgid "Loved Track: %1"
+msgstr "चयन गरिएको ट्रयाक"
 
 #: services/magnatune/MagnatuneInfoParser.cpp:31
 #, fuzzy
@@ -8354,7 +8361,7 @@ msgstr ""
 msgid "Getting list of previous Magnatune.com purchases"
 msgstr ""
 
-#: services/magnatune/MagnatuneXmlParser.cpp:62
+#: services/magnatune/MagnatuneXmlParser.cpp:57
 #, fuzzy, kde-format
 #| msgid ""
 #| "Magnatune.com database update complete. Added %1 tracks on %2 albums from "
@@ -8371,7 +8378,7 @@ msgstr[1] ""
 "Magnatune.com डाटाबेसले पूरा अद्यावधिक गर्यो । %3 कलाकारबाट %2 एल्बममा %1 ट्रयाकहरू "
 "थपियो"
 
-#: services/magnatune/MagnatuneXmlParser.cpp:63
+#: services/magnatune/MagnatuneXmlParser.cpp:58
 #, fuzzy, kde-format
 msgctxt ""
 "Middle part of: Magnatune.com database update complete. Added 3 tracks on 4 "
@@ -8381,7 +8388,7 @@ msgid_plural "%1 albums from "
 msgstr[0] "१ एल्बम"
 msgstr[1] "१ एल्बम"
 
-#: services/magnatune/MagnatuneXmlParser.cpp:64
+#: services/magnatune/MagnatuneXmlParser.cpp:59
 #, fuzzy, kde-format
 #| msgid "Artist"
 msgctxt ""
@@ -11495,18 +11502,6 @@ msgstr ""
 msgid "Animation"
 msgstr "MySQL कन्फिगरेसन"
 
-#. i18n: file: context/applets/photos/photosSettings.ui:52
-#. i18n: ectx: property (text), item, widget (KComboBox, animationComboBox)
-#. i18n: file: context/applets/wikipedia/wikipediaSettings.ui:24
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:56
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:909 rc.cpp:935 rc.cpp:971
-#, fuzzy
-#| msgid "Autodetect"
-msgid "Automatic"
-msgstr "स्वत: पत्ता लगाउनुहोस्"
-
 #. i18n: file: context/applets/photos/photosSettings.ui:70
 #. i18n: ectx: property (text), widget (QLabel, numberofphotosLabel)
 #: rc.cpp:918
@@ -13721,6 +13716,11 @@ msgstr "अडियो मोड"
 #: k3bexporter.cpp:245
 msgid "Data Mode"
 msgstr "डेटा मोड"
+
+#, fuzzy
+#~| msgid "Autodetect"
+#~ msgid "Automatic"
+#~ msgstr "स्वत: पत्ता लगाउनुहोस्"
 
 #, fuzzy
 #~| msgid "&Url:"
