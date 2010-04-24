@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-08 04:21+0100\n"
+"POT-Creation-Date: 2010-04-24 01:33+0200\n"
 "PO-Revision-Date: 2007-08-23 20:18+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -150,13 +150,13 @@ msgstr "तेर्सो रेखा"
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:64
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:69
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:71
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:116
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:72
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:89
 msgid "Unknown subtype"
@@ -1108,6 +1108,12 @@ msgstr "वृत"
 msgid "Circle Reverse"
 msgstr "ठाडो रेखा"
 
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
+#, fuzzy
+#| msgid "Sound effect"
+msgid "RoundRect"
+msgstr "ध्वनि प्रभाव"
+
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:31
 #, fuzzy
 #| msgid "Tiled"
@@ -1143,12 +1149,6 @@ msgstr "लम्बाइ:"
 #| msgid "Vertical Lines"
 msgid "Left Reverse"
 msgstr "ठाडो रेखा"
-
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
-#, fuzzy
-#| msgid "Sound effect"
-msgid "RoundRect"
-msgstr "ध्वनि प्रभाव"
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:30
 msgid "Iris"
@@ -1220,6 +1220,12 @@ msgstr "तेर्सो रेखा"
 msgid "Pentagon"
 msgstr "प्रस्तुतिकरण"
 
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
+#, fuzzy
+#| msgid "Image &effect:"
+msgid "ArrowHead"
+msgstr "छवि प्रभाव:"
+
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:30
 msgid "Misc"
 msgstr "विविध"
@@ -1245,12 +1251,6 @@ msgstr ""
 #| msgid "Vertical Lines"
 msgid "Keyhole Reverse"
 msgstr "ठाडो रेखा"
-
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
-#, fuzzy
-#| msgid "Image &effect:"
-msgid "ArrowHead"
-msgstr "छवि प्रभाव:"
 
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:32
 msgid "Eye"
@@ -1419,15 +1419,139 @@ msgstr "के तपाईँ हालको स्लाइड हटाउ�
 msgid "Confirm action"
 msgstr "कन्फिगरेसन बचत गर्नुहोस्..."
 
-#: part/KPrPlaceholderShapeFactory.cpp:31
-msgid "Placeholder shape"
+#: part/KPrView.cpp:65
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "Show Master Slides"
+msgstr "स्लाइड टाँस्नुहोस्"
+
+#: part/KPrView.cpp:66
+#, fuzzy
+#| msgid "Goto Slide..."
+msgid "Import Slideshow..."
+msgstr "स्लाइडमा जानुहोस्..."
+
+#: part/KPrView.cpp:67
+msgid "Insert Slide"
+msgstr "स्लाइड घुसाउनुहोस्"
+
+#: part/KPrView.cpp:68 part/KPrView.cpp:69
+msgid "Insert a new slide after the current one"
 msgstr ""
 
-#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:78
+#: part/KPrView.cpp:70
+msgid "Copy Slide"
+msgstr "स्लाइड प्रतिलिपि गर्नुहोस्"
+
+#: part/KPrView.cpp:71 part/KPrView.cpp:72
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Copy the current slide"
+msgstr "हालको स्लाइड अगाडि"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:73 rc.cpp:206
+#, fuzzy
+#| msgid "Delete Slide"
+msgid "Delete Slide"
+msgstr "स्लाइड मेट्नुहोस्"
+
+#: part/KPrView.cpp:74 part/KPrView.cpp:75
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete the current slide"
+msgstr "हालको स्लाइड अगाडि"
+
+#: part/KPrView.cpp:76
+#, fuzzy
+#| msgid "Insert &Slide..."
+msgid "Master Slide..."
+msgstr "स्लाइड घुसाउनुहोस्..."
+
+#: part/KPrView.cpp:77
+#, fuzzy
+#| msgid "&Previous Slide"
+msgid "Previous Slide"
+msgstr "अघिल्लो स्लाइड"
+
+#: part/KPrView.cpp:78 part/KPrPresenterViewInterface.cpp:67
 #, fuzzy
 #| msgid "&Next Slide"
 msgid "Next Slide"
 msgstr "पछिल्लो स्लाइड"
+
+#: part/KPrView.cpp:79
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "First Slide"
+msgstr "स्लाइड टाँस्नुहोस्"
+
+#: part/KPrView.cpp:80
+#, fuzzy
+#| msgid "Paste Slide"
+msgid "Last Slide"
+msgstr "स्लाइड टाँस्नुहोस्"
+
+#: part/KPrView.cpp:81
+#, fuzzy
+#| msgid "Configure KPresenter..."
+msgid "Configure KPresenter..."
+msgstr "केडीई प्रस्तुतकर्ता कन्फिगर गर्नुहोस्..."
+
+#: part/KPrView.cpp:142
+msgid "Normal"
+msgstr "सामान्य"
+
+#: part/KPrView.cpp:148
+#, fuzzy
+#| msgid "Note"
+msgid "Notes"
+msgstr "टिपोट"
+
+#: part/KPrView.cpp:157
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Create Appear Animation"
+msgstr "HTML प्रस्तुतिकरण सिर्जना गर्नुहोस्"
+
+#: part/KPrView.cpp:161
+#, fuzzy
+#| msgid "Custom Slide Show..."
+msgid "Edit Custom Slide Shows..."
+msgstr "अनुकूल स्लाईड प्रदर्शन..."
+
+#: part/KPrView.cpp:165
+msgid "Start Presentation"
+msgstr "प्रस्तुतिकरण सुरु गर्नुहोस्"
+
+#: part/KPrView.cpp:168
+#, fuzzy
+#| msgid "After Current Slide"
+msgid "From Current Slide"
+msgstr "हालको स्लाइड पछाडि"
+
+#: part/KPrView.cpp:173
+#, fuzzy
+#| msgid "Start From &First Slide"
+msgid "From First Slide"
+msgstr "पहिलो स्लाइडबाट सुरु गर्नुहोस्"
+
+#: part/KPrView.cpp:178
+#, fuzzy
+#| msgid "&Configure Slide Show..."
+msgid "Configure Slide Show..."
+msgstr "स्लाइड प्रदर्शन कन्फिगर गर्नुहोस्..."
+
+#: part/KPrView.cpp:182
+#, fuzzy
+#| msgid "Configure KPresenter..."
+msgid "Configure Presenter View..."
+msgstr "केडीई प्रस्तुतकर्ता कन्फिगर गर्नुहोस्..."
+
+#: part/KPrPlaceholderShapeFactory.cpp:31
+msgid "Placeholder shape"
+msgstr ""
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -1593,6 +1717,10 @@ msgstr ""
 msgid "File to open"
 msgstr "खोल्नका लागि फाइल"
 
+#: part/KPrEndOfSlideShowPage.cpp:68
+msgid "End of presentation. Click to exit."
+msgstr "प्रस्तुतिकरण समाप्त । निस्कन क्लिक गर्नहोस्।"
+
 #: part/KPrPresentationDrawWidget.cpp:102
 #, fuzzy
 #| msgid "Color"
@@ -1634,134 +1762,6 @@ msgstr "नीलो"
 #| msgid "Slow"
 msgid "Yellow"
 msgstr "ढिलो"
-
-#: part/KPrView.cpp:65
-#, fuzzy
-#| msgid "Paste Slide"
-msgid "Show Master Slides"
-msgstr "स्लाइड टाँस्नुहोस्"
-
-#: part/KPrView.cpp:66
-#, fuzzy
-#| msgid "Goto Slide..."
-msgid "Import Slideshow..."
-msgstr "स्लाइडमा जानुहोस्..."
-
-#: part/KPrView.cpp:67
-msgid "Insert Slide"
-msgstr "स्लाइड घुसाउनुहोस्"
-
-#: part/KPrView.cpp:68 part/KPrView.cpp:69
-msgid "Insert a new slide after the current one"
-msgstr ""
-
-#: part/KPrView.cpp:70
-msgid "Copy Slide"
-msgstr "स्लाइड प्रतिलिपि गर्नुहोस्"
-
-#: part/KPrView.cpp:71 part/KPrView.cpp:72
-#, fuzzy
-#| msgid "Before Current Slide"
-msgid "Copy the current slide"
-msgstr "हालको स्लाइड अगाडि"
-
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/KPrView.cpp:73 rc.cpp:206
-#, fuzzy
-#| msgid "Delete Slide"
-msgid "Delete Slide"
-msgstr "स्लाइड मेट्नुहोस्"
-
-#: part/KPrView.cpp:74 part/KPrView.cpp:75
-#, fuzzy
-#| msgid "Before Current Slide"
-msgid "Delete the current slide"
-msgstr "हालको स्लाइड अगाडि"
-
-#: part/KPrView.cpp:76
-#, fuzzy
-#| msgid "Insert &Slide..."
-msgid "Master Slide..."
-msgstr "स्लाइड घुसाउनुहोस्..."
-
-#: part/KPrView.cpp:77
-#, fuzzy
-#| msgid "&Previous Slide"
-msgid "Previous Slide"
-msgstr "अघिल्लो स्लाइड"
-
-#: part/KPrView.cpp:79
-#, fuzzy
-#| msgid "Paste Slide"
-msgid "First Slide"
-msgstr "स्लाइड टाँस्नुहोस्"
-
-#: part/KPrView.cpp:80
-#, fuzzy
-#| msgid "Paste Slide"
-msgid "Last Slide"
-msgstr "स्लाइड टाँस्नुहोस्"
-
-#: part/KPrView.cpp:81
-#, fuzzy
-#| msgid "Configure KPresenter..."
-msgid "Configure KPresenter..."
-msgstr "केडीई प्रस्तुतकर्ता कन्फिगर गर्नुहोस्..."
-
-#: part/KPrView.cpp:142
-msgid "Normal"
-msgstr "सामान्य"
-
-#: part/KPrView.cpp:148
-#, fuzzy
-#| msgid "Note"
-msgid "Notes"
-msgstr "टिपोट"
-
-#: part/KPrView.cpp:157
-#, fuzzy
-#| msgid "Create HTML Presentation"
-msgid "Create Appear Animation"
-msgstr "HTML प्रस्तुतिकरण सिर्जना गर्नुहोस्"
-
-#: part/KPrView.cpp:161
-#, fuzzy
-#| msgid "Custom Slide Show..."
-msgid "Edit Custom Slide Shows..."
-msgstr "अनुकूल स्लाईड प्रदर्शन..."
-
-#: part/KPrView.cpp:165
-msgid "Start Presentation"
-msgstr "प्रस्तुतिकरण सुरु गर्नुहोस्"
-
-#: part/KPrView.cpp:168
-#, fuzzy
-#| msgid "After Current Slide"
-msgid "From Current Slide"
-msgstr "हालको स्लाइड पछाडि"
-
-#: part/KPrView.cpp:173
-#, fuzzy
-#| msgid "Start From &First Slide"
-msgid "From First Slide"
-msgstr "पहिलो स्लाइडबाट सुरु गर्नुहोस्"
-
-#: part/KPrView.cpp:178
-#, fuzzy
-#| msgid "&Configure Slide Show..."
-msgid "Configure Slide Show..."
-msgstr "स्लाइड प्रदर्शन कन्फिगर गर्नुहोस्..."
-
-#: part/KPrView.cpp:182
-#, fuzzy
-#| msgid "Configure KPresenter..."
-msgid "Configure Presenter View..."
-msgstr "केडीई प्रस्तुतकर्ता कन्फिगर गर्नुहोस्..."
-
-#: part/KPrEndOfSlideShowPage.cpp:68
-msgid "End of presentation. Click to exit."
-msgstr "प्रस्तुतिकरण समाप्त । निस्कन क्लिक गर्नहोस्।"
 
 #. i18n: file: kpresenter.rc:3
 #. i18n: ectx: Menu (file)
