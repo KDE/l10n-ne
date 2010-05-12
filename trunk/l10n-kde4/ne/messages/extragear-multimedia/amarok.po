@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-11 06:00+0200\n"
+"POT-Creation-Date: 2010-05-12 05:01+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -6499,7 +6499,7 @@ msgstr ""
 
 #: core-impl/collections/sqlcollection/ScanManager.cpp:739
 #: browsers/CollectionTreeItem.cpp:193 covermanager/CoverViewDialog.h:45
-#: covermanager/CoverManager.cpp:841 dialogs/OrganizeCollectionDialog.cpp:147
+#: covermanager/CoverManager.cpp:859 dialogs/OrganizeCollectionDialog.cpp:147
 #: widgets/AlbumBreadcrumbWidget.cpp:60
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
@@ -6544,7 +6544,7 @@ msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
 
 #: core-impl/collections/sqlcollection/SqlMeta.cpp:244
-#: covermanager/CoverViewDialog.h:44 covermanager/CoverManager.cpp:842
+#: covermanager/CoverViewDialog.h:44 covermanager/CoverManager.cpp:860
 #: services/lastfm/meta/LastFmMeta.cpp:138
 #, kde-format
 msgid "%1 - %2"
@@ -9131,12 +9131,6 @@ msgstr "%1 गिगाबाइट %2 (x%3)"
 msgid "Lyrics data could not be parsed"
 msgstr "रियो कर्म खोल्न सकेन"
 
-#: covermanager/CoverViewDialog.h:66
-#, fuzzy
-#| msgid "Cover Image"
-msgid "Cover View"
-msgstr "आवरण छवि"
-
 #: covermanager/CoverFetchingActions.cpp:44
 #, fuzzy
 #| msgid "&Next Cover"
@@ -9205,139 +9199,11 @@ msgstr[1] ""
 msgid "Select Cover Image File"
 msgstr "आवरण छवि फाइल चयन गर्नुहोस्"
 
-#: covermanager/CoverManager.cpp:102 MainWindow.cpp:805
-msgid "Cover Manager"
-msgstr "आवरण प्रबन्धक"
-
-#: covermanager/CoverManager.cpp:108
-msgid "Albums By"
-msgstr "यसद्वारा एल्बम"
-
-#: covermanager/CoverManager.cpp:118
+#: covermanager/CoverViewDialog.h:66
 #, fuzzy
-#| msgid "Album Artist"
-msgid "All Artists"
-msgstr "एल्बम कलाकार"
-
-#: covermanager/CoverManager.cpp:166 widgets/SearchWidget.cpp:66
-msgid "Enter search terms here"
-msgstr "यहाँ खोजी सर्त प्रविष्ट गर्नुहोस्"
-
-#: covermanager/CoverManager.cpp:179
-msgid "All Albums"
-msgstr "सबै एल्बमहरू"
-
-#: covermanager/CoverManager.cpp:180
-msgid "Albums With Cover"
-msgstr "आवरण सहितको एल्बम"
-
-#: covermanager/CoverManager.cpp:181
-msgid "Albums Without Cover"
-msgstr "आवरण बिनाको एल्बम"
-
-#: covermanager/CoverManager.cpp:194
-msgid "Fetch Missing Covers"
-msgstr "हराइरहेको आवरण तान्नुहोस्"
-
-#: covermanager/CoverManager.cpp:318
-#, fuzzy
-#| msgid "Fetching Lyrics..."
-msgid "Fetching"
-msgstr "रचना तानिँदैछ..."
-
-#: covermanager/CoverManager.cpp:419
-#, fuzzy
-#| msgid "Loading %1"
-msgid "Loading"
-msgstr "%1 लोड गर्दैछ"
-
-#: covermanager/CoverManager.cpp:651
-#, fuzzy
-#| msgid "Finished."
-msgctxt "The fetching is done."
-msgid "Finished."
-msgstr "समाप्त भयो ।"
-
-#: covermanager/CoverManager.cpp:653
-#, kde-format
-msgid " Cover not found"
-msgid_plural " <b>%1</b> covers not found"
-msgstr[0] " <b>%1</b> आवरण फेला परेन"
-msgstr[1] " <b>%1</b> आवरण फेला परेन"
-
-#: covermanager/CoverManager.cpp:671
-#, kde-format
-msgid "Fetching cover for %1 - %2..."
-msgstr "%1 - %2 का लागि आवरण तान्दैछ..."
-
-#: covermanager/CoverManager.cpp:677
-#, kde-format
-msgid "Fetching cover for %1..."
-msgstr "%1 का लागि आवरण तान्दैछ..."
-
-#: covermanager/CoverManager.cpp:683
-#, kde-format
-msgid "Fetching 1 cover: "
-msgid_plural "Fetching <b>%1</b> covers... : "
-msgstr[0] "<b>%1</b> आवरण तान्दैछ..."
-msgstr[1] "<b>%1</b> आवरण तान्दैछ..."
-
-#: covermanager/CoverManager.cpp:685
-#, kde-format
-msgid "1 fetched"
-msgid_plural "%1 fetched"
-msgstr[0] "%1 तानियो"
-msgstr[1] "%1 तानियो"
-
-#: covermanager/CoverManager.cpp:689
-msgid " - "
-msgstr " - "
-
-#: covermanager/CoverManager.cpp:690
-#, kde-format
-msgid "1 not found"
-msgid_plural "%1 not found"
-msgstr[0] "%1 फेला परेन"
-msgstr[1] "%1 फेला परेन"
-
-#: covermanager/CoverManager.cpp:693
-msgid "Connecting..."
-msgstr "जडान गरिँदैछ..."
-
-#: covermanager/CoverManager.cpp:716
-#, fuzzy, kde-format
-#| msgid "1 result for \"%1\""
-#| msgid_plural "%1 results for \"%1\""
-msgid "1 result for \"%2\""
-msgid_plural "%1 results for \"%2\""
-msgstr[0] "\"%1\" को लागि १ परिणाम"
-msgstr[1] "\"%1\" को लागि १ परिणाम"
-
-#: covermanager/CoverManager.cpp:720
-#, fuzzy, kde-format
-msgid "1 album"
-msgid_plural "%1 albums"
-msgstr[0] "१ एल्बम"
-msgstr[1] "१ एल्बम"
-
-#: covermanager/CoverManager.cpp:732
-msgid " by "
-msgstr "यसद्वारा "
-
-#: covermanager/CoverManager.cpp:737
-#, kde-format
-msgid " - ( <b>%1</b> without cover )"
-msgstr " - ( <b>%1</b> आवरण बिना )"
-
-#: covermanager/CoverManager.cpp:788
-msgid "Cover Image"
+#| msgid "Cover Image"
+msgid "Cover View"
 msgstr "आवरण छवि"
-
-#: covermanager/CoverManager.cpp:860
-#, fuzzy
-#| msgid "Artist"
-msgid "No Artist"
-msgstr "कलाकार"
 
 #: covermanager/CoverFetcher.cpp:121
 #, fuzzy
@@ -9533,6 +9399,140 @@ msgstr "आवरण पुन: प्राप्त गर्न सकेन 
 #| msgid "The cover could not be retrieved."
 msgid "Sorry, the cover image could not be retrieved."
 msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
+
+#: covermanager/CoverManager.cpp:103 MainWindow.cpp:805
+msgid "Cover Manager"
+msgstr "आवरण प्रबन्धक"
+
+#: covermanager/CoverManager.cpp:109
+msgid "Albums By"
+msgstr "यसद्वारा एल्बम"
+
+#: covermanager/CoverManager.cpp:119
+#, fuzzy
+#| msgid "Album Artist"
+msgid "All Artists"
+msgstr "एल्बम कलाकार"
+
+#: covermanager/CoverManager.cpp:167 widgets/SearchWidget.cpp:66
+msgid "Enter search terms here"
+msgstr "यहाँ खोजी सर्त प्रविष्ट गर्नुहोस्"
+
+#: covermanager/CoverManager.cpp:180
+msgid "All Albums"
+msgstr "सबै एल्बमहरू"
+
+#: covermanager/CoverManager.cpp:181
+msgid "Albums With Cover"
+msgstr "आवरण सहितको एल्बम"
+
+#: covermanager/CoverManager.cpp:182
+msgid "Albums Without Cover"
+msgstr "आवरण बिनाको एल्बम"
+
+#: covermanager/CoverManager.cpp:195
+msgid "Fetch Missing Covers"
+msgstr "हराइरहेको आवरण तान्नुहोस्"
+
+#: covermanager/CoverManager.cpp:317
+#, fuzzy
+#| msgid "Fetching Lyrics..."
+msgid "Fetching"
+msgstr "रचना तानिँदैछ..."
+
+#: covermanager/CoverManager.cpp:418
+#, fuzzy
+#| msgid "Loading %1"
+msgid "Loading"
+msgstr "%1 लोड गर्दैछ"
+
+#: covermanager/CoverManager.cpp:650
+#, fuzzy
+#| msgid "Finished."
+msgctxt "The fetching is done."
+msgid "Finished."
+msgstr "समाप्त भयो ।"
+
+#: covermanager/CoverManager.cpp:652
+#, kde-format
+msgid " Cover not found"
+msgid_plural " <b>%1</b> covers not found"
+msgstr[0] " <b>%1</b> आवरण फेला परेन"
+msgstr[1] " <b>%1</b> आवरण फेला परेन"
+
+#: covermanager/CoverManager.cpp:670
+#, kde-format
+msgid "Fetching cover for %1 - %2..."
+msgstr "%1 - %2 का लागि आवरण तान्दैछ..."
+
+#: covermanager/CoverManager.cpp:676
+#, kde-format
+msgid "Fetching cover for %1..."
+msgstr "%1 का लागि आवरण तान्दैछ..."
+
+#: covermanager/CoverManager.cpp:682
+#, kde-format
+msgid "Fetching 1 cover: "
+msgid_plural "Fetching <b>%1</b> covers... : "
+msgstr[0] "<b>%1</b> आवरण तान्दैछ..."
+msgstr[1] "<b>%1</b> आवरण तान्दैछ..."
+
+#: covermanager/CoverManager.cpp:684
+#, kde-format
+msgid "1 fetched"
+msgid_plural "%1 fetched"
+msgstr[0] "%1 तानियो"
+msgstr[1] "%1 तानियो"
+
+#: covermanager/CoverManager.cpp:688
+msgid " - "
+msgstr " - "
+
+#: covermanager/CoverManager.cpp:689
+#, kde-format
+msgid "1 not found"
+msgid_plural "%1 not found"
+msgstr[0] "%1 फेला परेन"
+msgstr[1] "%1 फेला परेन"
+
+#: covermanager/CoverManager.cpp:692
+msgid "Connecting..."
+msgstr "जडान गरिँदैछ..."
+
+#: covermanager/CoverManager.cpp:715
+#, fuzzy, kde-format
+#| msgid "1 result for \"%1\""
+#| msgid_plural "%1 results for \"%1\""
+msgid "1 result for \"%2\""
+msgid_plural "%1 results for \"%2\""
+msgstr[0] "\"%1\" को लागि १ परिणाम"
+msgstr[1] "\"%1\" को लागि १ परिणाम"
+
+#: covermanager/CoverManager.cpp:719
+#, fuzzy, kde-format
+msgid "1 album"
+msgid_plural "%1 albums"
+msgstr[0] "१ एल्बम"
+msgstr[1] "१ एल्बम"
+
+#: covermanager/CoverManager.cpp:731
+msgid " by "
+msgstr "यसद्वारा "
+
+#: covermanager/CoverManager.cpp:736
+#, kde-format
+msgid " - ( <b>%1</b> without cover )"
+msgstr " - ( <b>%1</b> आवरण बिना )"
+
+#: covermanager/CoverManager.cpp:785
+msgid "Cover Image"
+msgstr "आवरण छवि"
+
+#: covermanager/CoverManager.cpp:878
+#, fuzzy
+#| msgid "Artist"
+msgid "No Artist"
+msgstr "कलाकार"
 
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:36
 #, fuzzy
