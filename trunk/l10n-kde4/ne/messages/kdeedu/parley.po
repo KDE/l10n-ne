@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-15 04:53+0200\n"
+"POT-Creation-Date: 2010-05-18 06:07+0200\n"
 "PO-Revision-Date: 2007-12-31 19:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -276,13 +276,17 @@ msgstr ""
 msgid "Script Dialog"
 msgstr ""
 
-#. i18n: file: src/editor/editorui.rc:12
-#. i18n: ectx: Menu (edit)
-#: src/welcomescreen/buttondelegate.cpp:42 rc.cpp:272
+#: src/welcomescreen/buttondelegate.cpp:42
 #, fuzzy
 #| msgid "Editing"
-msgid "&Edit"
+msgid "&Editor"
 msgstr "सम्पादन गर्दै"
+
+#: src/welcomescreen/buttondelegate.cpp:44
+#, fuzzy
+#| msgid "Save the active vocabulary document with a different name"
+msgid "Open this vocabulary collection in the editor"
+msgstr "विभिन्न नामसँग सक्रिय शब्द सूची कागजात बचत गर्नुहोस्"
 
 #. i18n: file: src/editor/editorui.rc:60
 #. i18n: ectx: Menu (learning)
@@ -290,7 +294,7 @@ msgstr "सम्पादन गर्दै"
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:11
 #. i18n: ectx: Menu (learning)
-#: src/welcomescreen/buttondelegate.cpp:45 rc.cpp:281 rc.cpp:1198 rc.cpp:1282
+#: src/welcomescreen/buttondelegate.cpp:46 rc.cpp:281 rc.cpp:1198 rc.cpp:1282
 msgid "&Practice"
 msgstr "अभ्यास"
 
@@ -1308,7 +1312,7 @@ msgctxt "caption for an overview of the grades for a document"
 msgid "Statistics for \"%1\""
 msgstr "तश्याङ्क..."
 
-#: src/statistics/statisticsmainwindow.cpp:92 src/parleyactions.cpp:140
+#: src/statistics/statisticsmainwindow.cpp:92 src/parleyactions.cpp:141
 msgid "Start Practice..."
 msgstr "अभ्यास सुरु गर्नुहोस्..."
 
@@ -1663,123 +1667,129 @@ msgstr "कागजात गुण सम्पादन गर्नुहो
 
 #: src/parleyactions.cpp:101
 #, fuzzy
-#| msgid "Select the correct translation:"
-msgid "Close the current collection"
-msgstr "सही अनुवाद चयन गर्नुहोस्:"
+#| msgid "Start Practice..."
+msgid "&Start Page"
+msgstr "अभ्यास सुरु गर्नुहोस्..."
 
-#: src/parleyactions.cpp:105
+#: src/parleyactions.cpp:102
+#, fuzzy
+#| msgid "Save the active vocabulary document with a different name"
+msgid "Close the current vocabulary collection and show the start page"
+msgstr "विभिन्न नामसँग सक्रिय शब्द सूची कागजात बचत गर्नुहोस्"
+
+#: src/parleyactions.cpp:106
 msgid "Quit Parley"
 msgstr "पार्ले अन्त्य गर्नुहोस्"
 
-#: src/parleyactions.cpp:109
+#: src/parleyactions.cpp:110
 msgid "Show the configuration dialog"
 msgstr "कन्फिगरेसन संवाद देखाउनुहोस्"
 
-#: src/parleyactions.cpp:113
+#: src/parleyactions.cpp:114
 msgid "&Languages..."
 msgstr "भाषा..."
 
-#: src/parleyactions.cpp:114
+#: src/parleyactions.cpp:115
 msgid ""
 "Edit which languages are in the collection and their grammar properties."
 msgstr ""
 
-#: src/parleyactions.cpp:118
+#: src/parleyactions.cpp:119
 #, fuzzy
 #| msgid "&Reset Grades"
 msgid "Remove Grades"
 msgstr "श्रेणी रिसेट गर्नुहोस्"
 
-#: src/parleyactions.cpp:119
+#: src/parleyactions.cpp:120
 #, fuzzy
 #| msgid "Remove all lessons from the test."
 msgid "Remove all grades from the current document"
 msgstr "परीक्षणबाट सबै पाठहरू हटाउनुहोस् ।"
 
-#: src/parleyactions.cpp:126
+#: src/parleyactions.cpp:127
 #, fuzzy
 #| msgid "No Entries in Selected Lessons"
 msgid "Show Entries from Child Lessons"
 msgstr "चयन गरिएका पाठहरूमा प्रविष्टिहरू छैन"
 
-#: src/parleyactions.cpp:127
+#: src/parleyactions.cpp:128
 msgid "Enable to also see the entries of child lessons in each lesson."
 msgstr ""
 
-#: src/parleyactions.cpp:133
+#: src/parleyactions.cpp:134
 msgid "Automatic Translation"
 msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:50
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
-#: src/parleyactions.cpp:134 rc.cpp:533
+#: src/parleyactions.cpp:135 rc.cpp:533
 msgid "Enable automatic translation of the lesson entries."
 msgstr ""
 
-#: src/parleyactions.cpp:141
+#: src/parleyactions.cpp:142
 #, fuzzy
 #| msgid "Start Practice..."
 msgid "Start practicing"
 msgstr "अभ्यास सुरु गर्नुहोस्..."
 
-#: src/parleyactions.cpp:145
+#: src/parleyactions.cpp:146
 msgid "Configure Practice..."
 msgstr "अभ्यास कन्फिगर गर्नुहोस्..."
 
-#: src/parleyactions.cpp:146
+#: src/parleyactions.cpp:147
 #, fuzzy
 #| msgctxt "Configure advanced settings for practicing vocabulary."
 #| msgid "Advanced Practice Settings"
 msgid "Change practice settings"
 msgstr "उन्नत अभ्यास सेटिङ"
 
-#: src/parleyactions.cpp:150
-#, fuzzy
-#| msgid "Editing"
-msgid "Edit..."
-msgstr "सम्पादन गर्दै"
-
 #: src/parleyactions.cpp:151
 #, fuzzy
-#| msgid "Example document"
-msgid "Edit the document"
-msgstr "उदाहरण कागजात"
+#| msgid "Editing"
+msgid "Editor"
+msgstr "सम्पादन गर्दै"
 
-#: src/parleyactions.cpp:155
+#: src/parleyactions.cpp:152
+#, fuzzy
+#| msgid "Save the active vocabulary document"
+msgid "Switch to vocabulary editor"
+msgstr "सक्रिय शब्द सूची कागजात बचत गर्नुहोस्"
+
+#: src/parleyactions.cpp:156
 msgid "Show Se&arch"
 msgstr "खोजी देखाउनुहोस्"
 
-#: src/parleyactions.cpp:156
+#: src/parleyactions.cpp:157
 msgid "Toggle display of the search bar"
 msgstr "खोजीपट्टीको प्रदर्शन टगल गर्नुहोस्"
 
-#: src/parleyactions.cpp:165
+#: src/parleyactions.cpp:166
 msgid "&Script Manager"
 msgstr ""
 
-#: src/parleyactions.cpp:166
+#: src/parleyactions.cpp:167
 msgid "Enable and disable scripts"
 msgstr ""
 
-#: src/parleyactions.cpp:182
+#: src/parleyactions.cpp:183
 #, fuzzy
 #| msgid "Downloads new vocabularies"
 msgid "Download New Vocabularies..."
 msgstr "नयाँ शब्द सूची डाउनलोड गर्दछ"
 
-#: src/parleyactions.cpp:184
+#: src/parleyactions.cpp:185
 #, fuzzy
 #| msgid "Downloads new vocabularies"
 msgid "Downloads new vocabulary collections"
 msgstr "नयाँ शब्द सूची डाउनलोड गर्दछ"
 
-#: src/parleyactions.cpp:190
+#: src/parleyactions.cpp:191
 #, fuzzy
 #| msgid "Open Vocabulary Document"
 msgid "&Upload Vocabulary Document..."
 msgstr "शब्द सूची कागजात खोल्नुहोस्"
 
-#: src/parleyactions.cpp:191
+#: src/parleyactions.cpp:192
 #, fuzzy
 #| msgid "Save the active vocabulary document with a different name"
 msgid "Share the current vocabulary collection with other users"
@@ -2292,9 +2302,19 @@ msgstr ""
 msgid "&File"
 msgstr "निश्चित गरिएको"
 
+#. i18n: file: src/editor/editorui.rc:12
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:272
+#, fuzzy
+#| msgid "Editing"
+msgid "&Edit"
+msgstr "सम्पादन गर्दै"
+
 #. i18n: file: src/editor/editorui.rc:23
 #. i18n: ectx: Menu (view)
-#: rc.cpp:275
+#. i18n: file: src/practice/practiceui.rc:12
+#. i18n: ectx: Menu (view)
+#: rc.cpp:275 rc.cpp:1291
 #, fuzzy
 #| msgid "View"
 msgid "&View"
@@ -3950,17 +3970,17 @@ msgstr ""
 msgid "Main Toolbar"
 msgstr "मुख्य उपकरणपट्टी"
 
-#. i18n: file: src/parleyui.rc:36
+#. i18n: file: src/parleyui.rc:35
 #. i18n: ectx: ToolBar (practiceToolBar)
-#. i18n: file: src/practice/practiceui.rc:13
+#. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1156 rc.cpp:1291
+#: rc.cpp:1156 rc.cpp:1294
 #, fuzzy
 #| msgid "Main Toolbar"
 msgid "Practice Toolbar"
 msgstr "मुख्य उपकरणपट्टी"
 
-#. i18n: file: src/parleyui.rc:40
+#. i18n: file: src/parleyui.rc:39
 #. i18n: ectx: ToolBar (statisticsToolBar)
 #. i18n: file: src/statistics/statisticsui.rc:18
 #. i18n: ectx: ToolBar (statisticsToolBar)
@@ -3970,7 +3990,7 @@ msgstr "मुख्य उपकरणपट्टी"
 msgid "Statistics Toolbar"
 msgstr "मुख्य उपकरणपट्टी"
 
-#. i18n: file: src/parleyui.rc:47
+#. i18n: file: src/parleyui.rc:46
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
 #. i18n: file: src/practice/practicesummaryui.rc:18
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
@@ -4147,7 +4167,7 @@ msgstr "समाधान देखाउनुहोस्"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1250 rc.cpp:1306
+#: rc.cpp:1250 rc.cpp:1309
 #, fuzzy
 #| msgid "Show &Solution"
 msgid "Solution"
@@ -4217,7 +4237,7 @@ msgstr ""
 
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1294
+#: rc.cpp:1297
 #, fuzzy
 #| msgid "Open Vocabulary Document"
 msgid "Vocabulary collection:"
@@ -4225,7 +4245,7 @@ msgstr "शब्द सूची कागजात खोल्नुहोस
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1297
+#: rc.cpp:1300
 #, fuzzy
 #| msgid "Language Elements"
 msgid "Language Selection"
@@ -4233,7 +4253,7 @@ msgstr "भाषा तत्व"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1300
+#: rc.cpp:1303
 #, fuzzy
 #| msgid "To"
 msgid "Top:"
@@ -4241,19 +4261,19 @@ msgstr "लाई"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1303
+#: rc.cpp:1306
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1309
+#: rc.cpp:1312
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1312
+#: rc.cpp:1315
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Always show the solution"
@@ -4261,13 +4281,13 @@ msgstr "समाधान देखाउनुहोस्"
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1315
+#: rc.cpp:1318
 msgid "Update interval:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1318
+#: rc.cpp:1321
 #, fuzzy
 #| msgid "Select All Lessons"
 msgid "Select Font..."
@@ -4402,6 +4422,21 @@ msgstr ""
 #| msgid "Enter the correct translation:"
 msgid "Fetches an image for the selected translation"
 msgstr "सही अनुवाद प्रविष्ट गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Select the correct translation:"
+#~ msgid "Close the current collection"
+#~ msgstr "सही अनुवाद चयन गर्नुहोस्:"
+
+#, fuzzy
+#~| msgid "Editing"
+#~ msgid "Edit..."
+#~ msgstr "सम्पादन गर्दै"
+
+#, fuzzy
+#~| msgid "Example document"
+#~ msgid "Edit the document"
+#~ msgstr "उदाहरण कागजात"
 
 #, fuzzy
 #~| msgid "From"
