@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-18 06:07+0200\n"
+"POT-Creation-Date: 2010-05-19 04:48+0200\n"
 "PO-Revision-Date: 2007-12-31 19:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -294,7 +294,7 @@ msgstr "विभिन्न नामसँग सक्रिय शब्द
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:11
 #. i18n: ectx: Menu (learning)
-#: src/welcomescreen/buttondelegate.cpp:46 rc.cpp:281 rc.cpp:1198 rc.cpp:1282
+#: src/welcomescreen/buttondelegate.cpp:46 rc.cpp:281 rc.cpp:1198 rc.cpp:1285
 msgid "&Practice"
 msgstr "अभ्यास"
 
@@ -1613,6 +1613,30 @@ msgstr "प्ले गर्नुहोस्"
 msgid "Stop"
 msgstr ""
 
+#: src/practice/statustoggle.cpp:84
+msgid ""
+"This word will be counted as correct.\n"
+"Words will only be counted as correct if they are answered correctly on the "
+"first attempt."
+msgstr ""
+
+#: src/practice/statustoggle.cpp:85
+msgid "Count this word as wrong"
+msgstr ""
+
+#: src/practice/statustoggle.cpp:88
+msgid ""
+"This word will be counted as wrong.\n"
+"Words will only be counted as correct if they are answered correctly on the "
+"first attempt."
+msgstr ""
+
+#: src/practice/statustoggle.cpp:89
+#, fuzzy
+#| msgid "Answered wrong"
+msgid "Count this word as correct"
+msgstr "गलत जवाफ दिइयो"
+
 #: src/parleyactions.cpp:69
 #, fuzzy
 #| msgid "Creates a new blank vocabulary document"
@@ -2296,7 +2320,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/practice/practiceui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:269 rc.cpp:1195 rc.cpp:1279 rc.cpp:1288
+#: rc.cpp:269 rc.cpp:1195 rc.cpp:1282 rc.cpp:1291
 #, fuzzy
 #| msgid "&Fixed"
 msgid "&File"
@@ -2314,7 +2338,7 @@ msgstr "सम्पादन गर्दै"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/practice/practiceui.rc:12
 #. i18n: ectx: Menu (view)
-#: rc.cpp:275 rc.cpp:1291
+#: rc.cpp:275 rc.cpp:1294
 #, fuzzy
 #| msgid "View"
 msgid "&View"
@@ -3974,7 +3998,7 @@ msgstr "मुख्य उपकरणपट्टी"
 #. i18n: ectx: ToolBar (practiceToolBar)
 #. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:1156 rc.cpp:1294
+#: rc.cpp:1156 rc.cpp:1297
 #, fuzzy
 #| msgid "Main Toolbar"
 msgid "Practice Toolbar"
@@ -3994,7 +4018,7 @@ msgstr "मुख्य उपकरणपट्टी"
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
 #. i18n: file: src/practice/practicesummaryui.rc:18
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: rc.cpp:1162 rc.cpp:1285
+#: rc.cpp:1162 rc.cpp:1288
 #, fuzzy
 #| msgid "Practice Summary"
 msgid "Practice Summary Toolbar"
@@ -4167,7 +4191,7 @@ msgstr "समाधान देखाउनुहोस्"
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #. i18n: file: plasmoid/config.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1250 rc.cpp:1309
+#: rc.cpp:1250 rc.cpp:1312
 #, fuzzy
 #| msgid "Show &Solution"
 msgid "Solution"
@@ -4189,55 +4213,61 @@ msgid "Wrong Attempts"
 msgstr ""
 
 #. i18n: file: src/practice/practice_mainwindow.ui:105
-#. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
+#. i18n: ectx: property (toolTip), widget (QPushButton, answerLaterButton)
 #: rc.cpp:1260
+msgid "Skip this word for now and ask again later"
+msgstr ""
+
+#. i18n: file: src/practice/practice_mainwindow.ui:108
+#. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
+#: rc.cpp:1263
 #, fuzzy
 #| msgid "Answered wrong"
 msgid "Answer Later"
 msgstr "गलत जवाफ दिइयो"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:115
+#. i18n: file: src/practice/practice_mainwindow.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, hintButton)
-#: rc.cpp:1263
+#: rc.cpp:1266
 #, fuzzy
 #| msgid "Hints"
 msgid "Hint"
 msgstr "सङ्केत"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:163
+#. i18n: file: src/practice/practice_mainwindow.ui:166
 #. i18n: ectx: property (text), widget (QPushButton, continueButton)
-#: rc.cpp:1266
+#: rc.cpp:1269
 #, fuzzy
 #| msgid "&Continue"
 msgid "Continue"
 msgstr "जारी राख्नुहोस्"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:180
+#. i18n: file: src/practice/practice_mainwindow.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, countAsWrongButton)
-#: rc.cpp:1269
+#: rc.cpp:1272
 #, fuzzy
 #| msgid "Skip (I &Know It)"
 msgid "I did not know it"
 msgstr "फड्काउनुहोस् (मलाई यो थाहा छ)"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:187
+#. i18n: file: src/practice/practice_mainwindow.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, countAsCorrectButton)
-#: rc.cpp:1272
+#: rc.cpp:1275
 #, fuzzy
 #| msgid "Skip (I &Know It)"
 msgid "I knew it"
 msgstr "फड्काउनुहोस् (मलाई यो थाहा छ)"
 
-#. i18n: file: src/practice/practice_mainwindow.ui:273
+#. i18n: file: src/practice/practice_mainwindow.ui:276
 #. i18n: ectx: property (format), widget (QProgressBar, totalProgress)
-#: rc.cpp:1276
+#: rc.cpp:1279
 #, no-c-format
 msgid "%v/%m"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:18
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1297
+#: rc.cpp:1300
 #, fuzzy
 #| msgid "Open Vocabulary Document"
 msgid "Vocabulary collection:"
@@ -4245,7 +4275,7 @@ msgstr "शब्द सूची कागजात खोल्नुहोस
 
 #. i18n: file: plasmoid/config.ui:30
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1300
+#: rc.cpp:1303
 #, fuzzy
 #| msgid "Language Elements"
 msgid "Language Selection"
@@ -4253,7 +4283,7 @@ msgstr "भाषा तत्व"
 
 #. i18n: file: plasmoid/config.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1303
+#: rc.cpp:1306
 #, fuzzy
 #| msgid "To"
 msgid "Top:"
@@ -4261,19 +4291,19 @@ msgstr "लाई"
 
 #. i18n: file: plasmoid/config.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1306
+#: rc.cpp:1309
 msgid "Bottom:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, solutionOnHover)
-#: rc.cpp:1312
+#: rc.cpp:1315
 msgid "Reveal solution when mouse cursor is over the widget"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, solutionAlways)
-#: rc.cpp:1315
+#: rc.cpp:1318
 #, fuzzy
 #| msgid "&Show solution"
 msgid "Always show the solution"
@@ -4281,13 +4311,13 @@ msgstr "समाधान देखाउनुहोस्"
 
 #. i18n: file: plasmoid/config.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1318
+#: rc.cpp:1321
 msgid "Update interval:"
 msgstr ""
 
 #. i18n: file: plasmoid/config.ui:153
 #. i18n: ectx: property (text), widget (KPushButton, fontSelectButton)
-#: rc.cpp:1321
+#: rc.cpp:1324
 #, fuzzy
 #| msgid "Select All Lessons"
 msgid "Select Font..."
