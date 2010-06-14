@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-05 04:56+0200\n"
+"POT-Creation-Date: 2010-06-14 05:26+0200\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -232,19 +232,34 @@ msgstr ""
 msgid "Key Server"
 msgstr "कुञ्जी सर्भर"
 
-#: keyservers.cpp:107 keyservers.cpp:178
+#: keyservers.cpp:107 keyservers.cpp:197
 msgid "You must enter a search string."
 msgstr "तपाईँले खोजी स्ट्रिङ प्रविष्ट गर्नैपर्दछ ।"
 
-#: keyservers.cpp:166
+#: keyservers.cpp:119
+msgid "You need to configure keyservers before trying to download keys."
+msgstr ""
+
+#: keyservers.cpp:120
+msgid "No keyservers defined"
+msgstr ""
+
+#: keyservers.cpp:157
+#, fuzzy
+#| msgid "Key Import"
+msgctxt "Caption of message box"
+msgid "Key Import Finished"
+msgstr "कुञ्जी आयात"
+
+#: keyservers.cpp:185
 msgid "Upload to keyserver finished without errors"
 msgstr ""
 
-#: keyservers.cpp:168
+#: keyservers.cpp:187
 msgid "Upload to keyserver failed"
 msgstr ""
 
-#: keyservers.cpp:193 keysmanager.cpp:1378
+#: keyservers.cpp:212 keysmanager.cpp:1378
 #, fuzzy
 #| msgid "Import Key From Keyserver"
 msgid "Import Key From Keyserver"
@@ -254,15 +269,15 @@ msgstr[1] "कुञ्जी सर्भरबाट कुञ्जी आय
 
 #. i18n: file: keyserver.ui:144
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:198 rc.cpp:357 editor/kgpgtextedit.cpp:304
+#: keyservers.cpp:217 rc.cpp:357 editor/kgpgtextedit.cpp:304
 msgid "&Import"
 msgstr "आयात गर्नुहोस्"
 
-#: keyservers.cpp:203
+#: keyservers.cpp:222
 msgid "Connecting to the server..."
 msgstr "सर्भरमा जडान गर्दैछ..."
 
-#: keyservers.cpp:255
+#: keyservers.cpp:274
 #, fuzzy, kde-format
 #| msgid "Found %1 matching keys"
 msgid "Found 1 matching key"
@@ -270,13 +285,13 @@ msgid_plural "Found %1 matching keys"
 msgstr[0] "%1 मिल्दो कुञ्जी फेला पर्यो"
 msgstr[1] "%1 मिल्दो कुञ्जी फेला पर्यो"
 
-#: keyservers.cpp:259
+#: keyservers.cpp:278
 #, fuzzy
 #| msgid "Found %1 matching keys"
 msgid "No matching keys found"
 msgstr "%1 मिल्दो कुञ्जी फेला पर्यो"
 
-#: keyservers.cpp:307
+#: keyservers.cpp:326
 msgid "You must choose a key."
 msgstr "तपाईँले कुञ्जी छनोट गर्नैपर्दछ ।"
 
@@ -528,7 +543,7 @@ msgstr "नयाँ कुञ्जी जोडी उत्पन्न ग�
 msgid "Can not start \"konsole\" application for expert mode."
 msgstr ""
 
-#: keysmanager.cpp:576 keysmanager.cpp:2623
+#: keysmanager.cpp:576 keysmanager.cpp:2628
 #, fuzzy
 #| msgid "Ready"
 msgctxt "Application ready for user input"
@@ -844,7 +859,7 @@ msgstr "उत्पन्न नगर्नुहोस्"
 msgid "<qt>Are you sure you want to delete group <b>%1</b> ?</qt>"
 msgstr "<qt>तपाईँ समूह मेट्न<b>%1</b>निश्चित हुनुहुन्छ ?</qt>"
 
-#: keysmanager.cpp:1783 keysmanager.cpp:2417
+#: keysmanager.cpp:1783 keysmanager.cpp:2422
 msgid "Delete"
 msgstr "मेट्नुहोस्"
 
@@ -1042,11 +1057,11 @@ msgid_plural "All signatures for this keys are already in your keyring"
 msgstr[0] "यो कुञ्जीका लागि सबै हस्ताक्षरहरू किरिङमा पहिल्यै छन्"
 msgstr[1] "यो कुञ्जीका लागि सबै हस्ताक्षरहरू किरिङमा पहिल्यै छन्"
 
-#: keysmanager.cpp:2284
+#: keysmanager.cpp:2289
 msgid "Edit key manually to delete a self-signature."
 msgstr "आफ्नो हस्ताक्षर मेट्न कुञ्जी म्यानुअल तरिकाले सम्पादन गर्नुहोस् ।"
 
-#: keysmanager.cpp:2288
+#: keysmanager.cpp:2293
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Are you sure you want to delete signature<br><b>%1</b> from key:"
@@ -1057,11 +1072,11 @@ msgid ""
 msgstr ""
 "<qt>तपाईँले<br><b>%1</b> कुञ्जीबाट:<br><b>%2</b> हस्ताक्षर मेट्न निश्चित हुनुहुन्छ ?</qt>"
 
-#: keysmanager.cpp:2309
+#: keysmanager.cpp:2314
 msgid "Requested operation was unsuccessful, please edit the key manually."
 msgstr "अनुरोध गरिएको सञ्चालन असफल भयो, कृपया कुञ्जी म्यानुअल तरिकाले सम्पादन गर्नुहोस् ।"
 
-#: keysmanager.cpp:2370
+#: keysmanager.cpp:2375
 msgid ""
 "<qt>The key you are deleting is a member of the following key group. Do you "
 "want to remove it from this group?</qt>"
@@ -1071,15 +1086,15 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: keysmanager.cpp:2374 keysmanager.cpp:2424 keysmanager.cpp:2439
-#: keysmanager.cpp:2442 keysmanager.cpp:2452 keysmanager.cpp:2466
-#: keysmanager.cpp:2476
+#: keysmanager.cpp:2379 keysmanager.cpp:2429 keysmanager.cpp:2444
+#: keysmanager.cpp:2447 keysmanager.cpp:2457 keysmanager.cpp:2471
+#: keysmanager.cpp:2481
 #, fuzzy
 #| msgid "&Delete Keys"
 msgid "Delete key"
 msgstr "कुञ्जी मेट्नुहोस्"
 
-#: keysmanager.cpp:2415
+#: keysmanager.cpp:2420
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Delete <b>SECRET KEY</b> pair <b>%1</b>?</p>Deleting this key pair "
@@ -1092,34 +1107,34 @@ msgstr ""
 "<p> <b>गुप्त कुञ्जी</b> जोडी <b>%1</b> मेट्नुहुन्छ ?</p>यो कुञ्जी जोडी मेट्नुको अर्थ तपाईँले "
 "यो कुञ्जीसँग गुप्तिकरण गरिएको फाइललाई कहिल्यै पनि गुप्तिकरण उल्टाउन नसक्नु भन्ने हुन्छ ।"
 
-#: keysmanager.cpp:2424 keysmanager.cpp:2452
+#: keysmanager.cpp:2429 keysmanager.cpp:2457
 msgid ""
 "Another key delete operation is still in progress.\n"
 "Please wait a moment until this operation is complete."
 msgstr ""
 
-#: keysmanager.cpp:2439
+#: keysmanager.cpp:2444
 #, kde-format
 msgid "Key <b>%1</b> deleted."
 msgstr ""
 
-#: keysmanager.cpp:2442
+#: keysmanager.cpp:2447
 #, kde-format
 msgid "Deleting key <b>%1</b> failed."
 msgstr ""
 
-#: keysmanager.cpp:2466
+#: keysmanager.cpp:2471
 #, kde-format
 msgid "Can not delete key <b>%1</b> while it is edited in terminal."
 msgstr ""
 
-#: keysmanager.cpp:2476
+#: keysmanager.cpp:2481
 msgid ""
 "You have selected items that are not keys. They can not be deleted with this "
 "menu entry."
 msgstr ""
 
-#: keysmanager.cpp:2498
+#: keysmanager.cpp:2503
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The following are secret key pairs:<br><b>%1</b>They will not be "
@@ -1129,38 +1144,38 @@ msgid ""
 "deleted.</qt>"
 msgstr "<qt>निम्न गुप्त कुञ्जी जोडी हुन:<br><b>%1</b>तिनीहरू मेटिने छैन ।<br></qt>"
 
-#: keysmanager.cpp:2510
+#: keysmanager.cpp:2515
 #, kde-format
 msgid "<qt><b>Delete the following public key?</b></qt>"
 msgid_plural "<qt><b>Delete the following %1 public keys?</b></qt>"
 msgstr[0] "<qt><b>निम्न सार्वजनिक कुञ्जी मेट्नुहुन्छ ?</b></qt>"
 msgstr[1] "<qt><b>निम्न %1 सार्वजनिक कुज्जी मेट्नुहुन्छ ?</b></qt>"
 
-#: keysmanager.cpp:2541 keysmanager.cpp:2611 keysmanager.cpp:2620
+#: keysmanager.cpp:2546 keysmanager.cpp:2616 keysmanager.cpp:2625
 msgid "Key Import"
 msgstr "कुञ्जी आयात"
 
-#: keysmanager.cpp:2548
+#: keysmanager.cpp:2553
 msgid "Open File"
 msgstr "फाइल खोल्नुहोस्"
 
-#: keysmanager.cpp:2577
+#: keysmanager.cpp:2582
 msgid ""
 "<qt>The text in the clipboard does not look like a key, but like encrypted "
 "text.<br />Do you want to decrypt it first and then try importing it?</qt>"
 msgstr ""
 
-#: keysmanager.cpp:2578
+#: keysmanager.cpp:2583
 #, fuzzy
 #| msgid "&Encrypt Clipboard"
 msgid "Import from Clipboard"
 msgstr "क्लिपबोर्ड गुप्तिकरण गर्नुहोस्"
 
-#: keysmanager.cpp:2598
+#: keysmanager.cpp:2603
 msgid "Importing..."
 msgstr "आयात गर्दैछ..."
 
-#: keysmanager.cpp:2610
+#: keysmanager.cpp:2615
 #, fuzzy
 #| msgid ""
 #| "No key imported... \n"
@@ -1170,33 +1185,33 @@ msgstr ""
 "कुञ्जी आयात गरिएको छैन... \n"
 "बढी जानकारीका लागि विस्तृत लग जाँच गर्नुहोस्"
 
-#: keysmanager.cpp:2670
+#: keysmanager.cpp:2675
 msgid "KGpg - encryption tool"
 msgstr "KGpg - गुप्तिकरण उपकरण"
 
-#: keysmanager.cpp:2691
+#: keysmanager.cpp:2696
 #, fuzzy
 #| msgid "Key Manager"
 msgid "Ke&y Manager"
 msgstr "कुञ्जी प्रबन्धक"
 
-#: keysmanager.cpp:2695
+#: keysmanager.cpp:2700
 msgid "&Encrypt Clipboard"
 msgstr "क्लिपबोर्ड गुप्तिकरण गर्नुहोस्"
 
-#: keysmanager.cpp:2698
+#: keysmanager.cpp:2703
 msgid "&Decrypt Clipboard"
 msgstr "क्लिपबोर्ड गुप्तिकरण उल्टाउनुहोस्"
 
-#: keysmanager.cpp:2701
+#: keysmanager.cpp:2706
 msgid "&Sign/Verify Clipboard"
 msgstr "क्लिपबोर्ड साइन/रुजु गर्नुहोस्"
 
-#: keysmanager.cpp:2733 keysmanager.cpp:2792 keysmanager.cpp:2810
+#: keysmanager.cpp:2738 keysmanager.cpp:2797 keysmanager.cpp:2815
 msgid "Clipboard is empty."
 msgstr "क्लिपबोर्ड खाली छ ।"
 
-#: keysmanager.cpp:2782
+#: keysmanager.cpp:2787
 #, fuzzy
 #| msgid "The signature file %1 was successfully created."
 msgid "Text successfully encrypted."
@@ -1209,11 +1224,11 @@ msgstr "<p>तपाईँको कुञ्जी रिङमा <b>%1</b> �
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:167 kgpgtextinterface.cpp:652 rc.cpp:331
+#: keytreeview.cpp:167 kgpgtextinterface.cpp:653 rc.cpp:331
 msgid "Import"
 msgstr "आयात गर्नुहोस्"
 
-#: keytreeview.cpp:168 kgpgtextinterface.cpp:652
+#: keytreeview.cpp:168 kgpgtextinterface.cpp:653
 msgid "Do Not Import"
 msgstr "आयात नगर्नुहोस्"
 
@@ -1848,7 +1863,12 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "हस्ताक्षर वैध छ र कुञ्जी अन्तिममा विश्वासिलो छ"
 
-#: kgpgtextinterface.cpp:651 editor/kgpgtextedit.cpp:311
+#: kgpgtextinterface.cpp:649 editor/kgpgtextedit.cpp:296
+msgctxt "Caption of message box"
+msgid "Verification Finished"
+msgstr ""
+
+#: kgpgtextinterface.cpp:652 editor/kgpgtextedit.cpp:311
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3874,7 +3894,7 @@ msgid "Photo id"
 msgstr "फोटो आईडी"
 
 #: editor/kgpgeditor.cpp:90 editor/kgpgeditor.cpp:247
-#: editor/kgpgeditor.cpp:752 editor/kgpgeditor.cpp:781
+#: editor/kgpgeditor.cpp:739 editor/kgpgeditor.cpp:768
 msgid "Untitled"
 msgstr "शीर्षक नभएको"
 
@@ -3951,8 +3971,8 @@ msgid "Overwrite existing file %1?"
 msgstr "अवस्थित %1 फाइल अधिलेखन गर्नुहुन्छ ?"
 
 #: editor/kgpgeditor.cpp:472 editor/kgpgeditor.cpp:480
-#: editor/kgpgeditor.cpp:624 editor/kgpgeditor.cpp:665
-#: editor/kgpgeditor.cpp:699
+#: editor/kgpgeditor.cpp:622 editor/kgpgeditor.cpp:663
+#: editor/kgpgeditor.cpp:697
 msgid "*|All Files"
 msgstr "*|सबै फाइल"
 
@@ -3968,21 +3988,13 @@ msgstr "डिकोड गर्न फाइल खोल्नुहोस्
 msgid "Decrypt File To"
 msgstr "यसमा फाइल गुप्तिकरण उल्टाउनुहोस्"
 
-#: editor/kgpgeditor.cpp:624
+#: editor/kgpgeditor.cpp:622
 msgid "Open File to Sign"
 msgstr "साइन गर्न फाइल खोल्नुहोस्"
 
-#: editor/kgpgeditor.cpp:665 editor/kgpgeditor.cpp:699
+#: editor/kgpgeditor.cpp:663 editor/kgpgeditor.cpp:697
 msgid "Open File to Verify"
 msgstr "रूजु गर्न फाइल खोल्नुहोस्"
-
-#: editor/kgpgeditor.cpp:711
-msgid "You need to configure keyservers before trying to download keys."
-msgstr ""
-
-#: editor/kgpgeditor.cpp:712
-msgid "No keyservers defined"
-msgstr ""
 
 #: editor/kgpgmd5widget.cpp:28
 msgid "MD5 Checksum"
