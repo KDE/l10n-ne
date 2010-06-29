@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-21 04:59+0200\n"
+"POT-Creation-Date: 2010-06-29 08:17+0200\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1223,7 +1223,7 @@ msgid "<p>Do you want to import file <b>%1</b> into your key ring?</p>"
 msgstr "<p>तपाईँको कुञ्जी रिङमा <b>%1</b> फाइल आयात गर्न चाहनुहुन्छ ?</p>"
 
 #. i18n: file: keyserver.ui:32
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_import)
 #: keytreeview.cpp:167 kgpgtextinterface.cpp:653 rc.cpp:331
 msgid "Import"
 msgstr "आयात गर्नुहोस्"
@@ -1770,7 +1770,7 @@ msgstr "कुनै पनि होइन"
 msgid "Decrypt File"
 msgstr "फाइल गुप्तिकरण उल्टाउनुहोस्"
 
-#: kgpgoptions.cpp:537
+#: kgpgoptions.cpp:537 main.cpp:46
 msgid "Sign File"
 msgstr "फाइल साइन गर्नुहोस्"
 
@@ -1946,10 +1946,6 @@ msgstr "सम्पादक खोल्नुहोस्"
 #: main.cpp:45
 msgid "Show encrypted file"
 msgstr "गुप्तिकरण गरिएको फाइल देखाउनुहोस्"
-
-#: main.cpp:46
-msgid "Sign file"
-msgstr "फाइल साइन गर्नुहोस्"
 
 #: main.cpp:47
 msgid "Verify signature"
@@ -2648,43 +2644,43 @@ msgid "Key Colors"
 msgstr "कुञ्जी रङ"
 
 #. i18n: file: conf_ui2.ui:42
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_5)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustUltimate)
 #: rc.cpp:259
 msgid "Ultimately trusted keys:"
 msgstr "अन्तिममा विश्वास गरिएको कुञ्जी:"
 
 #. i18n: file: conf_ui2.ui:52
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustTrusted)
 #: rc.cpp:262
 msgid "Trusted keys:"
 msgstr "विश्वासिलो कुञ्जी:"
 
 #. i18n: file: conf_ui2.ui:62
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_5)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustMarginally)
 #: rc.cpp:265
 msgid "Marginally trusted keys:"
 msgstr "सिमान्तमा विश्वास गरिएको कुञ्जी"
 
 #. i18n: file: conf_ui2.ui:72
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustExpired)
 #: rc.cpp:268
 msgid "Expired keys:"
 msgstr "म्याद सकिएको कुञ्जी:"
 
 #. i18n: file: conf_ui2.ui:82
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustRevoked)
 #: rc.cpp:271
 msgid "Revoked keys:"
 msgstr "खारेज गरिएको कुञ्जी:"
 
 #. i18n: file: conf_ui2.ui:92
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_3_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustUnknown)
 #: rc.cpp:274
 msgid "Unknown keys:"
 msgstr "अज्ञात कुञ्जी:"
 
 #. i18n: file: conf_ui2.ui:102
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustDisabled)
 #: rc.cpp:277
 msgid "Disabled keys:"
 msgstr "अक्षम पारिएको कुञ्जी:"
@@ -2882,7 +2878,7 @@ msgid "&Search"
 msgstr "खोजी गर्नुहोस्"
 
 #. i18n: file: keyserver.ui:170
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget, tab_export)
 #: rc.cpp:360
 msgid "Export"
 msgstr "निर्यात गर्नुहोस्"
@@ -4489,6 +4485,9 @@ msgstr ""
 msgctxt "State of operation as in status"
 msgid "State"
 msgstr "अन्तिम"
+
+#~ msgid "Sign file"
+#~ msgstr "फाइल साइन गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "Sorry"
