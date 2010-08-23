@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmplot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:44+0200\n"
+"POT-Creation-Date: 2010-08-23 05:30+0200\n"
 "PO-Revision-Date: 2007-09-12 13:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1924,7 +1924,13 @@ msgstr "रेखाचित्र"
 
 #. i18n: file: settingspagediagram.ui:20
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_GridStyle)
-#: rc.cpp:813
+#. i18n: file: kmplot.kcfg:37
+#. i18n: ectx: label, entry (GridStyle), group (Coordinate System)
+#. i18n: file: settingspagediagram.ui:20
+#. i18n: ectx: property (title), widget (KButtonGroup, kcfg_GridStyle)
+#. i18n: file: kmplot.kcfg:37
+#. i18n: ectx: label, entry (GridStyle), group (Coordinate System)
+#: rc.cpp:813 rc.cpp:1007
 msgid "Grid Style"
 msgstr "ग्रिड शैली"
 
@@ -2235,6 +2241,546 @@ msgstr "स्लाइडर"
 msgid "<0>"
 msgstr "<0>"
 
+#. i18n: file: kmplot.kcfg:12
+#. i18n: ectx: label, entry (AxesLineWidth), group (Coordinate System)
+#: rc.cpp:977
+msgid "Axis-line width"
+msgstr "अक्ष-रेखा चौडाइ"
+
+#. i18n: file: kmplot.kcfg:13
+#. i18n: ectx: whatsthis, entry (AxesLineWidth), group (Coordinate System)
+#: rc.cpp:980
+msgid "Enter the width of the axis lines."
+msgstr "अक्ष रेखाको चौडाइ प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:17
+#. i18n: ectx: label, entry (ShowLabel), group (Coordinate System)
+#: rc.cpp:983
+msgid "Checked if labels are visible"
+msgstr "यदि लेबुल दृश्यात्मक छ भने जाँच गरिन्छ"
+
+#. i18n: file: kmplot.kcfg:18
+#. i18n: ectx: whatsthis, entry (ShowLabel), group (Coordinate System)
+#: rc.cpp:986
+msgid "Check this box if the labels at the tics should be shown."
+msgstr "टिकमा लेबुल देखाउन परेमा यो बाकस जाँच गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:22
+#. i18n: ectx: label, entry (ShowAxes), group (Coordinate System)
+#: rc.cpp:989
+msgid "Checked if axes are visible"
+msgstr "यदि अक्ष दृश्यात्मक छ भने यो जाँच गरिन्छ"
+
+#. i18n: file: kmplot.kcfg:23
+#. i18n: ectx: whatsthis, entry (ShowAxes), group (Coordinate System)
+#: rc.cpp:992
+msgid "Check this box if axes should be shown."
+msgstr "यदि अक्ष देखाउन परेमा यो बाकस जाँच गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:27
+#. i18n: ectx: label, entry (ShowArrows), group (Coordinate System)
+#: rc.cpp:995
+msgid "Checked if arrows are visible"
+msgstr "यदि बाँण दृश्यात्मक छ भने जाँच गरिन्छ"
+
+#. i18n: file: kmplot.kcfg:28
+#. i18n: ectx: whatsthis, entry (ShowArrows), group (Coordinate System)
+#: rc.cpp:998
+msgid "Check this box if axes should have arrows."
+msgstr "यदि अक्षमा बाँण चाहिएमा यो बाकस जाँच गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:32
+#. i18n: ectx: label, entry (GridLineWidth), group (Coordinate System)
+#: rc.cpp:1001
+msgid "Grid Line Width"
+msgstr "ग्रिड रेखा चौडाइ"
+
+#. i18n: file: kmplot.kcfg:33
+#. i18n: ectx: whatsthis, entry (GridLineWidth), group (Coordinate System)
+#: rc.cpp:1004
+msgid "Enter the width of the grid lines."
+msgstr "ग्रिड रेखाको चौडाइ प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:38
+#. i18n: ectx: whatsthis, entry (GridStyle), group (Coordinate System)
+#: rc.cpp:1010
+msgid "Choose a suitable grid style."
+msgstr "उपयुक्त ग्रिड शैली छनोट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:42
+#. i18n: ectx: label, entry (TicLength), group (Coordinate System)
+#: rc.cpp:1013
+msgid "Tic length"
+msgstr "टिक लम्बाइ"
+
+#. i18n: file: kmplot.kcfg:43
+#. i18n: ectx: whatsthis, entry (TicLength), group (Coordinate System)
+#: rc.cpp:1016
+msgid "Enter the length of the tic lines"
+msgstr "टिक रेखाको लम्बाइ प्रविष्ट गर्नुहोस्"
+
+#. i18n: file: kmplot.kcfg:47
+#. i18n: ectx: label, entry (TicWidth), group (Coordinate System)
+#: rc.cpp:1019
+msgid "Tic width"
+msgstr "टिक चौडाइ"
+
+#. i18n: file: kmplot.kcfg:48
+#. i18n: ectx: whatsthis, entry (TicWidth), group (Coordinate System)
+#: rc.cpp:1022
+msgid "Enter the width of the tic lines."
+msgstr "टिक रेखाको चौडाइ प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:52
+#. i18n: ectx: label, entry (XMin), group (Coordinate System)
+#: rc.cpp:1025
+msgid "Left boundary"
+msgstr "बायाँ सीमा"
+
+#. i18n: file: kmplot.kcfg:53
+#. i18n: ectx: whatsthis, entry (XMin), group (Coordinate System)
+#: rc.cpp:1028
+msgid "Enter the left boundary of the plotting area."
+msgstr "प्लोटिङ क्षेत्रको बायाँ सीमा प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:57
+#. i18n: ectx: label, entry (XMax), group (Coordinate System)
+#: rc.cpp:1031
+msgid "Right boundary"
+msgstr "दायाँ सीमा"
+
+#. i18n: file: kmplot.kcfg:58
+#. i18n: ectx: whatsthis, entry (XMax), group (Coordinate System)
+#: rc.cpp:1034
+msgid "Enter the right boundary of the plotting area."
+msgstr "प्लोटिङ क्षेत्रको दायाँ सीमा प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:62
+#. i18n: ectx: label, entry (YMin), group (Coordinate System)
+#: rc.cpp:1037
+msgid "Lower boundary"
+msgstr "तल्लो सीमा"
+
+#. i18n: file: kmplot.kcfg:63
+#. i18n: ectx: whatsthis, entry (YMin), group (Coordinate System)
+#: rc.cpp:1040
+msgid "Enter the lower boundary of the plotting area."
+msgstr "प्लोटिङ क्षेत्रको तल्लो सीमा प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:67
+#. i18n: ectx: label, entry (YMax), group (Coordinate System)
+#: rc.cpp:1043
+msgid "Upper boundary"
+msgstr "माथिल्लो सीमा"
+
+#. i18n: file: kmplot.kcfg:68
+#. i18n: ectx: whatsthis, entry (YMax), group (Coordinate System)
+#: rc.cpp:1046
+msgid "Enter the upper boundary of the plotting area."
+msgstr "प्लोटिङ क्षेत्रको माथिल्लो सीमा प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:72
+#. i18n: ectx: label, entry (LabelHorizontalAxis), group (Coordinate System)
+#: rc.cpp:1049
+#, fuzzy
+#| msgid "X-axis Range"
+msgid "Label to Horizontal Axis"
+msgstr "एक्स-अक्ष दायरा"
+
+#. i18n: file: kmplot.kcfg:73
+#. i18n: ectx: whatsthis, entry (LabelHorizontalAxis), group (Coordinate System)
+#: rc.cpp:1052
+#, fuzzy
+#| msgid "X-axis Range"
+msgid "Label to Horizontal Axis."
+msgstr "एक्स-अक्ष दायरा"
+
+#. i18n: file: kmplot.kcfg:77
+#. i18n: ectx: label, entry (LabelVerticalAxis), group (Coordinate System)
+#: rc.cpp:1055
+#, fuzzy
+#| msgid "X-axis Range"
+msgid "Label to Vertical Axis"
+msgstr "एक्स-अक्ष दायरा"
+
+#. i18n: file: kmplot.kcfg:78
+#. i18n: ectx: whatsthis, entry (LabelVerticalAxis), group (Coordinate System)
+#: rc.cpp:1058
+#, fuzzy
+#| msgid "X-axis Range"
+msgid "Label to Vertical Axis."
+msgstr "एक्स-अक्ष दायरा"
+
+#. i18n: file: kmplot.kcfg:85
+#. i18n: ectx: label, entry (XScalingMode), group (Scaling)
+#. i18n: file: kmplot.kcfg:90
+#. i18n: ectx: label, entry (YScalingMode), group (Scaling)
+#. i18n: file: kmplot.kcfg:85
+#. i18n: ectx: label, entry (XScalingMode), group (Scaling)
+#. i18n: file: kmplot.kcfg:90
+#. i18n: ectx: label, entry (YScalingMode), group (Scaling)
+#: rc.cpp:1061 rc.cpp:1067
+msgid "Whether to use automatic or custom scaling."
+msgstr "स्वचालित वा अनुकूल मापन प्रयोग गर्ने ।"
+
+#. i18n: file: kmplot.kcfg:86
+#. i18n: ectx: whatsthis, entry (XScalingMode), group (Scaling)
+#. i18n: file: kmplot.kcfg:91
+#. i18n: ectx: whatsthis, entry (YScalingMode), group (Scaling)
+#. i18n: file: kmplot.kcfg:86
+#. i18n: ectx: whatsthis, entry (XScalingMode), group (Scaling)
+#. i18n: file: kmplot.kcfg:91
+#. i18n: ectx: whatsthis, entry (YScalingMode), group (Scaling)
+#: rc.cpp:1064 rc.cpp:1070
+msgid "Select whether to use automatic or custom scaling."
+msgstr "स्वचालित वा अनुकूल मापन प्रयोग गर्ने चयन गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:95
+#. i18n: ectx: label, entry (XScaling), group (Scaling)
+#: rc.cpp:1073
+msgid "Width of a unit from tic to tic"
+msgstr "टिक देखि टिक सम्म एकाइको चौडाइ"
+
+#. i18n: file: kmplot.kcfg:96
+#. i18n: ectx: whatsthis, entry (XScaling), group (Scaling)
+#: rc.cpp:1076
+msgid "Enter the width of a unit from tic to tic."
+msgstr "टिक देखि टिक एकाइको चौडाइ प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:100
+#. i18n: ectx: label, entry (YScaling), group (Scaling)
+#: rc.cpp:1079
+msgid "Height of a unit from tic to tic"
+msgstr "टिक देखि टिक एकाइको उचाइ"
+
+#. i18n: file: kmplot.kcfg:101
+#. i18n: ectx: whatsthis, entry (YScaling), group (Scaling)
+#: rc.cpp:1082
+msgid "Enter the height of a unit from tic to tic."
+msgstr "टिक देखि टिक एकाइको उचाइ प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:108
+#. i18n: ectx: label, entry (AxesFont), group (Fonts)
+#: rc.cpp:1085
+msgid "Font of the axis labels"
+msgstr "अक्ष लेबुलको फन्ट"
+
+#. i18n: file: kmplot.kcfg:109
+#. i18n: ectx: whatsthis, entry (AxesFont), group (Fonts)
+#: rc.cpp:1088
+msgid "Choose a font for the axis labels."
+msgstr "अक्ष लेबुलका लागि फन्ट छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:113
+#. i18n: ectx: label, entry (HeaderTableFont), group (Fonts)
+#: rc.cpp:1091
+msgid "Font of the printed header table"
+msgstr "मुद्रण गरेको हेडर तालिकाको फन्ट"
+
+#. i18n: file: kmplot.kcfg:114
+#. i18n: ectx: whatsthis, entry (HeaderTableFont), group (Fonts)
+#: rc.cpp:1094
+msgid "Choose a font for the table printed at the top of the page."
+msgstr "पृष्ठको माथि मुद्रण गरेको तालिकाका लागि फन्ट छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:118
+#. i18n: ectx: label, entry (LabelFont), group (Fonts)
+#: rc.cpp:1097
+msgid "Font of diagram labels"
+msgstr "रेखाचित्र लेबुलको फन्ट"
+
+#. i18n: file: kmplot.kcfg:119
+#. i18n: ectx: whatsthis, entry (LabelFont), group (Fonts)
+#: rc.cpp:1100
+msgid "Choose a font for diagram labels."
+msgstr "रेखाचित्र लेबुलका लागि फन्ट छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:126
+#. i18n: ectx: label, entry (AxesColor), group (Colors)
+#: rc.cpp:1103
+msgid "Axis-line color"
+msgstr "अक्ष-रेखा रङ"
+
+#. i18n: file: kmplot.kcfg:127
+#. i18n: ectx: whatsthis, entry (AxesColor), group (Colors)
+#: rc.cpp:1106
+msgid "Enter the color of the axis lines."
+msgstr "अक्ष रेखाको रङ प्रविष्ट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:131
+#. i18n: ectx: label, entry (GridColor), group (Colors)
+#: rc.cpp:1109
+msgid "Grid Color"
+msgstr "ग्रिड रङ"
+
+#. i18n: file: kmplot.kcfg:132
+#. i18n: ectx: whatsthis, entry (GridColor), group (Colors)
+#: rc.cpp:1112
+msgid "Choose a color for the grid lines."
+msgstr "ग्रिड रेखाका लागि रङ छनोट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:136
+#. i18n: ectx: label, entry (Color0), group (Colors)
+#: rc.cpp:1115
+msgid "Color of function 1"
+msgstr "प्रकार्य १ को रङ"
+
+#. i18n: file: kmplot.kcfg:137
+#. i18n: ectx: whatsthis, entry (Color0), group (Colors)
+#: rc.cpp:1118
+msgid "Choose a color for function 1."
+msgstr "प्रकार्य १ का लागि रङ छनोट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:141
+#. i18n: ectx: label, entry (Color1), group (Colors)
+#: rc.cpp:1121
+msgid "Color of function 2"
+msgstr "प्रकार्य २ को रङ"
+
+#. i18n: file: kmplot.kcfg:142
+#. i18n: ectx: whatsthis, entry (Color1), group (Colors)
+#: rc.cpp:1124
+msgid "Choose a color for function 2."
+msgstr "प्रकार्य २ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:146
+#. i18n: ectx: label, entry (Color2), group (Colors)
+#: rc.cpp:1127
+msgid "Color of function 3"
+msgstr "प्रकार्य ३ को रङ"
+
+#. i18n: file: kmplot.kcfg:147
+#. i18n: ectx: whatsthis, entry (Color2), group (Colors)
+#: rc.cpp:1130
+msgid "Choose a color for function 3."
+msgstr "प्रकार्य ३ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:151
+#. i18n: ectx: label, entry (Color3), group (Colors)
+#: rc.cpp:1133
+msgid "Color of function 4"
+msgstr "प्रकार्य ४ को रङ"
+
+#. i18n: file: kmplot.kcfg:152
+#. i18n: ectx: whatsthis, entry (Color3), group (Colors)
+#: rc.cpp:1136
+msgid "Choose a color for function 4."
+msgstr "प्रकार्य ४ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:156
+#. i18n: ectx: label, entry (Color4), group (Colors)
+#: rc.cpp:1139
+msgid "Color of function 5"
+msgstr "प्रकार्य ५ को रङ"
+
+#. i18n: file: kmplot.kcfg:157
+#. i18n: ectx: whatsthis, entry (Color4), group (Colors)
+#: rc.cpp:1142
+msgid "Choose a color for function 5."
+msgstr "प्रकार्य ५ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:161
+#. i18n: ectx: label, entry (Color5), group (Colors)
+#: rc.cpp:1145
+msgid "Color of function 6"
+msgstr "प्रकार्य ६ को रङ"
+
+#. i18n: file: kmplot.kcfg:162
+#. i18n: ectx: whatsthis, entry (Color5), group (Colors)
+#: rc.cpp:1148
+msgid "Choose a color for function 6."
+msgstr "प्रकार्य ६ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:166
+#. i18n: ectx: label, entry (Color6), group (Colors)
+#: rc.cpp:1151
+msgid "Color of function 7"
+msgstr "प्रकार्य ७ को रङ"
+
+#. i18n: file: kmplot.kcfg:167
+#. i18n: ectx: whatsthis, entry (Color6), group (Colors)
+#: rc.cpp:1154
+msgid "Choose a color for function 7."
+msgstr "प्रकार्य ७ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:171
+#. i18n: ectx: label, entry (Color7), group (Colors)
+#: rc.cpp:1157
+msgid "Color of function 8"
+msgstr "प्रकार्य ८ को रङ"
+
+#. i18n: file: kmplot.kcfg:172
+#. i18n: ectx: whatsthis, entry (Color7), group (Colors)
+#: rc.cpp:1160
+msgid "Choose a color for function 8."
+msgstr "प्रकार्य ८ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:176
+#. i18n: ectx: label, entry (Color8), group (Colors)
+#: rc.cpp:1163
+msgid "Color of function 9"
+msgstr "प्रकार्य ९ को रङ"
+
+#. i18n: file: kmplot.kcfg:177
+#. i18n: ectx: whatsthis, entry (Color8), group (Colors)
+#: rc.cpp:1166
+msgid "Choose a color for function 9."
+msgstr "प्रकार्य ९ का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:181
+#. i18n: ectx: label, entry (Color9), group (Colors)
+#: rc.cpp:1169
+msgid "Color of function 10"
+msgstr "प्रकार्य १० को रङ"
+
+#. i18n: file: kmplot.kcfg:182
+#. i18n: ectx: whatsthis, entry (Color9), group (Colors)
+#: rc.cpp:1172
+msgid "Choose a color for function 10."
+msgstr "प्रकार्य १० का लागि रङ छनौट गर्नुहोस् ।"
+
+#. i18n: file: kmplot.kcfg:189
+#. i18n: ectx: label, entry (anglemode), group (General)
+#: rc.cpp:1175
+msgid "Radians instead of degrees"
+msgstr "डिग्रीको सट्टामा रेडियन"
+
+#. i18n: file: kmplot.kcfg:190
+#. i18n: ectx: whatsthis, entry (anglemode), group (General)
+#: rc.cpp:1178
+msgid "Check the box if you want to use radians"
+msgstr "तपाईँले रेडियन प्रयोग गर्न चाहनुभएमा बाकस जाँच गर्नुहोस्"
+
+#. i18n: file: kmplot.kcfg:194
+#. i18n: ectx: label, entry (backgroundcolor), group (General)
+#: rc.cpp:1181
+msgid "Background color"
+msgstr "पृष्ठभूमि रङ"
+
+#. i18n: file: kmplot.kcfg:195
+#. i18n: ectx: whatsthis, entry (backgroundcolor), group (General)
+#: rc.cpp:1184
+msgid "The background color for the graph"
+msgstr "ग्राफका लागि पृष्ठभूमि रङ"
+
+#. i18n: file: kmplot.kcfg:199
+#. i18n: ectx: label, entry (zoomInStep), group (General)
+#: rc.cpp:1187
+msgid "Zoom-in step"
+msgstr "जुम बढाउने चरण"
+
+#. i18n: file: kmplot.kcfg:200
+#. i18n: ectx: whatsthis, entry (zoomInStep), group (General)
+#: rc.cpp:1190
+msgid "The value the zoom-in tool should use"
+msgstr "जुम बढाउने उपकरणले प्रयोग गर्ने मान"
+
+#. i18n: file: kmplot.kcfg:204
+#. i18n: ectx: label, entry (zoomOutStep), group (General)
+#: rc.cpp:1193
+msgid "Zoom-out step"
+msgstr "जुम घटाउने चरण"
+
+#. i18n: file: kmplot.kcfg:205
+#. i18n: ectx: whatsthis, entry (zoomOutStep), group (General)
+#: rc.cpp:1196
+msgid "The value the zoom-out tool should use"
+msgstr "जुम घटाउने उपकरण प्रयोग गर्ने मान"
+
+#. i18n: file: kmplot.kcfg:209
+#. i18n: ectx: label, entry (DetailedTracing), group (General)
+#: rc.cpp:1199
+msgid "Extra detail when tracing"
+msgstr "खोज्दा अतिरिक्त विवरण"
+
+#. i18n: file: kmplot.kcfg:210
+#. i18n: ectx: whatsthis, entry (DetailedTracing), group (General)
+#: rc.cpp:1202
+msgid ""
+"Whether to show extra detail such as the tangent and normal when tracing a "
+"plot."
+msgstr "प्लोट खोज्दा ट्यान्जेन्ट वा सामान्य रूपमा अतिरिक्त विवरण देखाउने या नदेखाउने ।"
+
+#. i18n: file: kmplot_part.rc:13
+#. i18n: ectx: Menu (edit)
+#. i18n: file: kmplot_part_readonly.rc:9
+#. i18n: ectx: Menu (edit)
+#. i18n: file: kmplot_part.rc:13
+#. i18n: ectx: Menu (edit)
+#. i18n: file: kmplot_part_readonly.rc:9
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:1205 rc.cpp:1220 maindlg.cpp:374
+msgid "&Edit"
+msgstr "सम्पादन"
+
+#. i18n: file: kmplot_part.rc:19
+#. i18n: ectx: Menu (view)
+#. i18n: file: kmplot_part_readonly.rc:15
+#. i18n: ectx: Menu (view)
+#. i18n: file: kmplot_part.rc:19
+#. i18n: ectx: Menu (view)
+#. i18n: file: kmplot_part_readonly.rc:15
+#. i18n: ectx: Menu (view)
+#: rc.cpp:1208 rc.cpp:1223
+msgid "&View"
+msgstr "दृश्य"
+
+#. i18n: file: kmplot_part.rc:29
+#. i18n: ectx: Menu (tools)
+#. i18n: file: kmplot_part_readonly.rc:26
+#. i18n: ectx: Menu (tools)
+#. i18n: file: kmplot_part.rc:29
+#. i18n: ectx: Menu (tools)
+#. i18n: file: kmplot_part_readonly.rc:26
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:1211 rc.cpp:1226
+msgid "&Tools"
+msgstr "उपकरण"
+
+#. i18n: file: kmplot_part.rc:35
+#. i18n: ectx: Menu (settings)
+#. i18n: file: kmplot_part_readonly.rc:32
+#. i18n: ectx: Menu (settings)
+#. i18n: file: kmplot_shell.rc:13
+#. i18n: ectx: Menu (settings)
+#. i18n: file: kmplot_part.rc:35
+#. i18n: ectx: Menu (settings)
+#. i18n: file: kmplot_part_readonly.rc:32
+#. i18n: ectx: Menu (settings)
+#. i18n: file: kmplot_shell.rc:13
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:1214 rc.cpp:1229 rc.cpp:1238
+msgid "&Settings"
+msgstr "सेटिङ"
+
+#. i18n: file: kmplot_part.rc:41
+#. i18n: ectx: Menu (help)
+#. i18n: file: kmplot_part_readonly.rc:35
+#. i18n: ectx: Menu (help)
+#. i18n: file: kmplot_shell.rc:26
+#. i18n: ectx: Menu (help)
+#. i18n: file: kmplot_part.rc:41
+#. i18n: ectx: Menu (help)
+#. i18n: file: kmplot_part_readonly.rc:35
+#. i18n: ectx: Menu (help)
+#. i18n: file: kmplot_shell.rc:26
+#. i18n: ectx: Menu (help)
+#: rc.cpp:1217 rc.cpp:1232 rc.cpp:1241
+msgid "&Help"
+msgstr "मद्दत"
+
+#. i18n: file: kmplot_shell.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:1235
+msgid "&File"
+msgstr "फाइल"
+
+#. i18n: file: kmplot_shell.rc:30
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:1244
+msgid "Main Toolbar"
+msgstr "मुख्य उपकरणपट्टी"
+
 #: xparser.cpp:143
 msgid "Error in extension."
 msgstr "विस्तारमा त्रुटि ।"
@@ -2350,10 +2896,6 @@ msgstr "भिन्न प्लोट"
 #: maindlg.cpp:368
 msgid "Show Sliders"
 msgstr "स्लाइडर देखाउनुहोस्"
-
-#: maindlg.cpp:374
-msgid "&Edit"
-msgstr "सम्पादन"
 
 #: maindlg.cpp:381
 msgid "&Hide"
@@ -2686,233 +3228,6 @@ msgstr "प्लट गर्न थालनी प्रकार्य"
 #: main.cpp:72
 msgid "File to open"
 msgstr "खोल्नका लागि फाइल"
-
-#~ msgid "Axis-line width"
-#~ msgstr "अक्ष-रेखा चौडाइ"
-
-#~ msgid "Enter the width of the axis lines."
-#~ msgstr "अक्ष रेखाको चौडाइ प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Checked if labels are visible"
-#~ msgstr "यदि लेबुल दृश्यात्मक छ भने जाँच गरिन्छ"
-
-#~ msgid "Check this box if the labels at the tics should be shown."
-#~ msgstr "टिकमा लेबुल देखाउन परेमा यो बाकस जाँच गर्नुहोस् ।"
-
-#~ msgid "Checked if axes are visible"
-#~ msgstr "यदि अक्ष दृश्यात्मक छ भने यो जाँच गरिन्छ"
-
-#~ msgid "Check this box if axes should be shown."
-#~ msgstr "यदि अक्ष देखाउन परेमा यो बाकस जाँच गर्नुहोस् ।"
-
-#~ msgid "Checked if arrows are visible"
-#~ msgstr "यदि बाँण दृश्यात्मक छ भने जाँच गरिन्छ"
-
-#~ msgid "Check this box if axes should have arrows."
-#~ msgstr "यदि अक्षमा बाँण चाहिएमा यो बाकस जाँच गर्नुहोस् ।"
-
-#~ msgid "Grid Line Width"
-#~ msgstr "ग्रिड रेखा चौडाइ"
-
-#~ msgid "Enter the width of the grid lines."
-#~ msgstr "ग्रिड रेखाको चौडाइ प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Choose a suitable grid style."
-#~ msgstr "उपयुक्त ग्रिड शैली छनोट गर्नुहोस् ।"
-
-#~ msgid "Tic length"
-#~ msgstr "टिक लम्बाइ"
-
-#~ msgid "Enter the length of the tic lines"
-#~ msgstr "टिक रेखाको लम्बाइ प्रविष्ट गर्नुहोस्"
-
-#~ msgid "Tic width"
-#~ msgstr "टिक चौडाइ"
-
-#~ msgid "Enter the width of the tic lines."
-#~ msgstr "टिक रेखाको चौडाइ प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Left boundary"
-#~ msgstr "बायाँ सीमा"
-
-#~ msgid "Enter the left boundary of the plotting area."
-#~ msgstr "प्लोटिङ क्षेत्रको बायाँ सीमा प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Right boundary"
-#~ msgstr "दायाँ सीमा"
-
-#~ msgid "Enter the right boundary of the plotting area."
-#~ msgstr "प्लोटिङ क्षेत्रको दायाँ सीमा प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Lower boundary"
-#~ msgstr "तल्लो सीमा"
-
-#~ msgid "Enter the lower boundary of the plotting area."
-#~ msgstr "प्लोटिङ क्षेत्रको तल्लो सीमा प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Upper boundary"
-#~ msgstr "माथिल्लो सीमा"
-
-#~ msgid "Enter the upper boundary of the plotting area."
-#~ msgstr "प्लोटिङ क्षेत्रको माथिल्लो सीमा प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Whether to use automatic or custom scaling."
-#~ msgstr "स्वचालित वा अनुकूल मापन प्रयोग गर्ने ।"
-
-#~ msgid "Select whether to use automatic or custom scaling."
-#~ msgstr "स्वचालित वा अनुकूल मापन प्रयोग गर्ने चयन गर्नुहोस् ।"
-
-#~ msgid "Width of a unit from tic to tic"
-#~ msgstr "टिक देखि टिक सम्म एकाइको चौडाइ"
-
-#~ msgid "Enter the width of a unit from tic to tic."
-#~ msgstr "टिक देखि टिक एकाइको चौडाइ प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Height of a unit from tic to tic"
-#~ msgstr "टिक देखि टिक एकाइको उचाइ"
-
-#~ msgid "Enter the height of a unit from tic to tic."
-#~ msgstr "टिक देखि टिक एकाइको उचाइ प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Font of the axis labels"
-#~ msgstr "अक्ष लेबुलको फन्ट"
-
-#~ msgid "Choose a font for the axis labels."
-#~ msgstr "अक्ष लेबुलका लागि फन्ट छनौट गर्नुहोस् ।"
-
-#~ msgid "Font of the printed header table"
-#~ msgstr "मुद्रण गरेको हेडर तालिकाको फन्ट"
-
-#~ msgid "Choose a font for the table printed at the top of the page."
-#~ msgstr "पृष्ठको माथि मुद्रण गरेको तालिकाका लागि फन्ट छनौट गर्नुहोस् ।"
-
-#~ msgid "Font of diagram labels"
-#~ msgstr "रेखाचित्र लेबुलको फन्ट"
-
-#~ msgid "Choose a font for diagram labels."
-#~ msgstr "रेखाचित्र लेबुलका लागि फन्ट छनौट गर्नुहोस् ।"
-
-#~ msgid "Axis-line color"
-#~ msgstr "अक्ष-रेखा रङ"
-
-#~ msgid "Enter the color of the axis lines."
-#~ msgstr "अक्ष रेखाको रङ प्रविष्ट गर्नुहोस् ।"
-
-#~ msgid "Grid Color"
-#~ msgstr "ग्रिड रङ"
-
-#~ msgid "Choose a color for the grid lines."
-#~ msgstr "ग्रिड रेखाका लागि रङ छनोट गर्नुहोस् ।"
-
-#~ msgid "Color of function 1"
-#~ msgstr "प्रकार्य १ को रङ"
-
-#~ msgid "Choose a color for function 1."
-#~ msgstr "प्रकार्य १ का लागि रङ छनोट गर्नुहोस् ।"
-
-#~ msgid "Color of function 2"
-#~ msgstr "प्रकार्य २ को रङ"
-
-#~ msgid "Choose a color for function 2."
-#~ msgstr "प्रकार्य २ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 3"
-#~ msgstr "प्रकार्य ३ को रङ"
-
-#~ msgid "Choose a color for function 3."
-#~ msgstr "प्रकार्य ३ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 4"
-#~ msgstr "प्रकार्य ४ को रङ"
-
-#~ msgid "Choose a color for function 4."
-#~ msgstr "प्रकार्य ४ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 5"
-#~ msgstr "प्रकार्य ५ को रङ"
-
-#~ msgid "Choose a color for function 5."
-#~ msgstr "प्रकार्य ५ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 6"
-#~ msgstr "प्रकार्य ६ को रङ"
-
-#~ msgid "Choose a color for function 6."
-#~ msgstr "प्रकार्य ६ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 7"
-#~ msgstr "प्रकार्य ७ को रङ"
-
-#~ msgid "Choose a color for function 7."
-#~ msgstr "प्रकार्य ७ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 8"
-#~ msgstr "प्रकार्य ८ को रङ"
-
-#~ msgid "Choose a color for function 8."
-#~ msgstr "प्रकार्य ८ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 9"
-#~ msgstr "प्रकार्य ९ को रङ"
-
-#~ msgid "Choose a color for function 9."
-#~ msgstr "प्रकार्य ९ का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Color of function 10"
-#~ msgstr "प्रकार्य १० को रङ"
-
-#~ msgid "Choose a color for function 10."
-#~ msgstr "प्रकार्य १० का लागि रङ छनौट गर्नुहोस् ।"
-
-#~ msgid "Radians instead of degrees"
-#~ msgstr "डिग्रीको सट्टामा रेडियन"
-
-#~ msgid "Check the box if you want to use radians"
-#~ msgstr "तपाईँले रेडियन प्रयोग गर्न चाहनुभएमा बाकस जाँच गर्नुहोस्"
-
-#~ msgid "Background color"
-#~ msgstr "पृष्ठभूमि रङ"
-
-#~ msgid "The background color for the graph"
-#~ msgstr "ग्राफका लागि पृष्ठभूमि रङ"
-
-#~ msgid "Zoom-in step"
-#~ msgstr "जुम बढाउने चरण"
-
-#~ msgid "The value the zoom-in tool should use"
-#~ msgstr "जुम बढाउने उपकरणले प्रयोग गर्ने मान"
-
-#~ msgid "Zoom-out step"
-#~ msgstr "जुम घटाउने चरण"
-
-#~ msgid "The value the zoom-out tool should use"
-#~ msgstr "जुम घटाउने उपकरण प्रयोग गर्ने मान"
-
-#~ msgid "Extra detail when tracing"
-#~ msgstr "खोज्दा अतिरिक्त विवरण"
-
-#~ msgid ""
-#~ "Whether to show extra detail such as the tangent and normal when tracing "
-#~ "a plot."
-#~ msgstr "प्लोट खोज्दा ट्यान्जेन्ट वा सामान्य रूपमा अतिरिक्त विवरण देखाउने या नदेखाउने ।"
-
-#~ msgid "&View"
-#~ msgstr "दृश्य"
-
-#~ msgid "&Tools"
-#~ msgstr "उपकरण"
-
-#~ msgid "&Settings"
-#~ msgstr "सेटिङ"
-
-#~ msgid "&Help"
-#~ msgstr "मद्दत"
-
-#~ msgid "&File"
-#~ msgstr "फाइल"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "मुख्य उपकरणपट्टी"
 
 #~ msgid "Y-axis Range"
 #~ msgstr "वाइ-अक्ष दायरा"

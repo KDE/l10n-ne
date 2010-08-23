@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:49+0200\n"
+"POT-Creation-Date: 2010-08-23 05:34+0200\n"
 "PO-Revision-Date: 2007-08-24 15:27+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2792,9 +2792,13 @@ msgstr "हटाउनुहोस्"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: dialogs/SpecialPasteWidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, formatButton)
+#. i18n: file: kspread.rc:227
+#. i18n: ectx: ToolBar (fontPropertyToolBar)
+#. i18n: file: kspread.rc:231
+#. i18n: ectx: ToolBar (formatToolBar)
 #. i18n: file: functions/conversion.xml:251
-#: rc.cpp:53 rc.cpp:398 xml_doc.cpp:198 dialogs/LayoutDialog.cpp:886
-#: ui/CellToolBase.cpp:183
+#: rc.cpp:53 rc.cpp:398 rc.cpp:812 rc.cpp:815 xml_doc.cpp:198
+#: dialogs/LayoutDialog.cpp:886 ui/CellToolBase.cpp:183
 msgid "Format"
 msgstr "ढाँचा"
 
@@ -3302,7 +3306,9 @@ msgstr ""
 
 #. i18n: file: dialogs/PositionWidget.ui:179
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: rc.cpp:249 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
+#. i18n: file: kspread.rc:102
+#. i18n: ectx: Menu (MergeCellMenu)
+#: rc.cpp:249 rc.cpp:773 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
 #: ui/CellToolBase.cpp:439
 msgid "Merge Cells"
 msgstr "कक्ष गाभ्नुहोस्"
@@ -4504,6 +4510,169 @@ msgstr "चयन खाली गर्नुहोस्"
 #: rc.cpp:733
 msgid "Move selected sheet to the bottom"
 msgstr "चयन गरिएका पाना तलतिर सार्नुहोस्"
+
+#. i18n: file: kspread.kcfg:12
+#. i18n: ectx: label, entry, group (Editor)
+#: rc.cpp:736
+msgid "Navigate in the text by left/right arrow keys in the cell editor."
+msgstr "कक्ष सम्पादनमा वायाँ/दायाँ बाँण द्वारा पाठमा नेभिगेट गर्नुहोस् ।"
+
+#. i18n: file: kspread.kcfg:14
+#. i18n: ectx: whatsthis, entry, group (Editor)
+#: rc.cpp:739
+msgid ""
+"If true, you can navigate by left/right arrows in the cell editor.\n"
+"              Otherwise, the editing mode will be left."
+msgstr ""
+"यदि सत्य भएमा, तपाईँले कक्ष सम्पादनमा वायाँ/दायाँ बाँणद्वारा नेभिगेट गर्न सक्नुहुन्छ । \n"
+"                अन्यथा, सम्पादन मोड वायाँ हुनेछ ।"
+
+#. i18n: file: kspread.rc:5
+#. i18n: ectx: Menu (file)
+#: rc.cpp:743
+msgid "&File"
+msgstr "फाइल"
+
+#. i18n: file: kspread.rc:10
+#. i18n: ectx: Menu (Edit)
+#. i18n: file: kspread_readonly.rc:3
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:746 rc.cpp:821
+msgid "&Edit"
+msgstr "सम्पादन गर्नुहोस्"
+
+#. i18n: file: kspread.rc:19
+#. i18n: ectx: Menu (Fill)
+#: rc.cpp:749
+msgid "Fi&ll"
+msgstr "भर्नुहोस्"
+
+#. i18n: file: kspread.rc:32
+#. i18n: ectx: Menu (Clear)
+#: rc.cpp:752
+msgid "Clear"
+msgstr "खाली गर्नुहोस्"
+
+#. i18n: file: kspread.rc:41
+#. i18n: ectx: Menu (Delete)
+#: rc.cpp:755 commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292
+#: part/View.cpp:504
+msgid "Delete"
+msgstr "मेट्नुहोस्"
+
+#. i18n: file: kspread.rc:51
+#. i18n: ectx: Menu (View)
+#. i18n: file: kspread_readonly.rc:8
+#. i18n: ectx: Menu (view)
+#: rc.cpp:758 rc.cpp:824
+msgid "&View"
+msgstr "दृष्य"
+
+#. i18n: file: kspread.rc:63
+#. i18n: ectx: Menu (go)
+#: rc.cpp:761
+msgid "&Go"
+msgstr ""
+
+#. i18n: file: kspread.rc:74
+#. i18n: ectx: Menu (Insert)
+#: rc.cpp:764 ui/CharSelectDia.cpp:56 ui/CharSelectDia.cpp:73
+msgid "&Insert"
+msgstr "घुसाउनुहोस्"
+
+#. i18n: file: kspread.rc:87
+#. i18n: ectx: Menu (ExternalData)
+#: rc.cpp:767
+msgid "&External Data"
+msgstr "बाह्य डेटा"
+
+#. i18n: file: kspread.rc:94
+#. i18n: ectx: Menu (Format)
+#: rc.cpp:770
+msgid "F&ormat"
+msgstr "ढाँचा"
+
+#. i18n: file: kspread.rc:110
+#. i18n: ectx: Menu (Row)
+#: rc.cpp:776
+msgid "&Row"
+msgstr "पङ्क्ति"
+
+#. i18n: file: kspread.rc:116
+#. i18n: ectx: Menu (Column)
+#: rc.cpp:779
+msgid "&Column"
+msgstr "स्तम्भ"
+
+#. i18n: file: kspread.rc:122
+#. i18n: ectx: Menu (Sheet)
+#: rc.cpp:782
+msgid "&Sheet"
+msgstr "पाना"
+
+#. i18n: file: kspread.rc:130
+#. i18n: ectx: Menu (PrintRange)
+#: rc.cpp:785
+msgid "&Print Range"
+msgstr "मुद्रण दायरा"
+
+#. i18n: file: kspread.rc:135
+#. i18n: ectx: Menu
+#: rc.cpp:788
+#, fuzzy
+#| msgid "Page Borders"
+msgid "Manual Page Breaks"
+msgstr "पृष्ठ किनारा"
+
+#. i18n: file: kspread.rc:145
+#. i18n: ectx: Menu (Data)
+#: rc.cpp:791
+msgid "&Data"
+msgstr "डेटा"
+
+#. i18n: file: kspread.rc:147
+#. i18n: ectx: Menu (Filter)
+#: rc.cpp:794
+msgid "Filter"
+msgstr "फिल्टर"
+
+#. i18n: file: kspread.rc:162
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:797
+msgid "&Tools"
+msgstr "उपकरण"
+
+#. i18n: file: kspread.rc:175
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:800
+msgid "&Settings"
+msgstr "सेटिङ"
+
+#. i18n: file: kspread.rc:205
+#. i18n: ectx: ToolBar (editToolBar)
+#: rc.cpp:803
+msgid "Edit"
+msgstr "सम्पादन गर्नुहोस्"
+
+#. i18n: file: kspread.rc:215
+#. i18n: ectx: ToolBar (navigationToolBar)
+#: rc.cpp:806
+msgid "Navigation"
+msgstr "नेभिगेसन"
+
+#. i18n: file: kspread.rc:221
+#. i18n: ectx: Menu
+#: rc.cpp:809
+#, fuzzy
+#| msgid "Hide Sheet"
+msgid "Activate"
+msgstr "पाना लुकाउनुहोस्"
+
+#. i18n: file: kspread.rc:255
+#. i18n: ectx: ToolBar (colorAndBorderToolBar)
+#: rc.cpp:818
+msgid "Color/Border"
+msgstr "रङ/किनारा"
 
 #: Sheet.cpp:933
 msgid "Dependency"
@@ -16370,10 +16539,6 @@ msgstr "कक्ष घुसाउनुहोस्"
 msgid "Remove Cells"
 msgstr "कक्ष हटाउनुहोस्"
 
-#: commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292 part/View.cpp:504
-msgid "Delete"
-msgstr "मेट्नुहोस्"
-
 #: commands/IndentationCommand.cpp:38 commands/IndentationCommand.cpp:64
 msgid "Increase Indentation"
 msgstr "इन्डेन्ट बढाउनुहोस्"
@@ -20019,10 +20184,6 @@ msgstr ""
 msgid "Select Character"
 msgstr "विशेष क्यारेक्टर..."
 
-#: ui/CharSelectDia.cpp:56 ui/CharSelectDia.cpp:73
-msgid "&Insert"
-msgstr "घुसाउनुहोस्"
-
 #: ui/CharSelectDia.cpp:57 ui/CharSelectDia.cpp:74
 #, fuzzy
 #| msgid "Unmerge the selected region"
@@ -20063,80 +20224,6 @@ msgstr "एकल कक्ष चयन गर्नुहोस्"
 #: ui/RegionSelector.cpp:161
 msgid "Select Multiple Cells"
 msgstr "बहुविध कक्ष चयन गर्नुहोस्"
-
-#~ msgid "Navigate in the text by left/right arrow keys in the cell editor."
-#~ msgstr "कक्ष सम्पादनमा वायाँ/दायाँ बाँण द्वारा पाठमा नेभिगेट गर्नुहोस् ।"
-
-#~ msgid ""
-#~ "If true, you can navigate by left/right arrows in the cell editor.\n"
-#~ "              Otherwise, the editing mode will be left."
-#~ msgstr ""
-#~ "यदि सत्य भएमा, तपाईँले कक्ष सम्पादनमा वायाँ/दायाँ बाँणद्वारा नेभिगेट गर्न सक्नुहुन्छ । \n"
-#~ "                अन्यथा, सम्पादन मोड वायाँ हुनेछ ।"
-
-#~ msgid "&File"
-#~ msgstr "फाइल"
-
-#~ msgid "&Edit"
-#~ msgstr "सम्पादन गर्नुहोस्"
-
-#~ msgid "Fi&ll"
-#~ msgstr "भर्नुहोस्"
-
-#~ msgid "Clear"
-#~ msgstr "खाली गर्नुहोस्"
-
-#~ msgid "&View"
-#~ msgstr "दृष्य"
-
-#~ msgid "&External Data"
-#~ msgstr "बाह्य डेटा"
-
-#~ msgid "F&ormat"
-#~ msgstr "ढाँचा"
-
-#~ msgid "&Row"
-#~ msgstr "पङ्क्ति"
-
-#~ msgid "&Column"
-#~ msgstr "स्तम्भ"
-
-#~ msgid "&Sheet"
-#~ msgstr "पाना"
-
-#~ msgid "&Print Range"
-#~ msgstr "मुद्रण दायरा"
-
-#, fuzzy
-#~| msgid "Page Borders"
-#~ msgid "Manual Page Breaks"
-#~ msgstr "पृष्ठ किनारा"
-
-#~ msgid "&Data"
-#~ msgstr "डेटा"
-
-#~ msgid "Filter"
-#~ msgstr "फिल्टर"
-
-#~ msgid "&Tools"
-#~ msgstr "उपकरण"
-
-#~ msgid "&Settings"
-#~ msgstr "सेटिङ"
-
-#~ msgid "Edit"
-#~ msgstr "सम्पादन गर्नुहोस्"
-
-#~ msgid "Navigation"
-#~ msgstr "नेभिगेसन"
-
-#, fuzzy
-#~| msgid "Hide Sheet"
-#~ msgid "Activate"
-#~ msgstr "पाना लुकाउनुहोस्"
-
-#~ msgid "Color/Border"
-#~ msgstr "रङ/किनारा"
 
 #~ msgid "Subtotal"
 #~ msgstr "उप जोड"
