@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-16 05:07+0200\n"
+"POT-Creation-Date: 2010-08-24 06:08+0200\n"
 "PO-Revision-Date: 2007-09-13 12:58+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -170,21 +170,29 @@ msgctxt "@info:whatsthis"
 msgid "A very simple LGPL C++ header file"
 msgstr ""
 
+#. i18n: file: plugins/filetree/ui.rc:4
+#. i18n: ectx: ToolBar (katefiletreeplugin)
+#: rc.cpp:59
+#, fuzzy
+#| msgid "Manage File Templates"
+msgid "Kate File Tree"
+msgstr "फाइल टेम्प्लेट व्यावस्थापन गर्नुहोस्"
+
 #. i18n: file: data/kateui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:59
+#: rc.cpp:62
 msgid "&File"
 msgstr "फाइल"
 
 #. i18n: file: data/kateui.rc:35
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:62
+#: rc.cpp:65
 msgid "&Edit"
 msgstr "सम्पादन गर्नुहोस्"
 
 #. i18n: file: data/kateui.rc:46
 #. i18n: ectx: Menu (go)
-#: rc.cpp:65
+#: rc.cpp:68
 #, fuzzy
 #| msgid "&Group:"
 msgid "&Go"
@@ -192,13 +200,13 @@ msgstr "समूह:"
 
 #. i18n: file: data/kateui.rc:55
 #. i18n: ectx: Menu (view)
-#: rc.cpp:68
+#: rc.cpp:71
 msgid "&View"
 msgstr "दृश्य"
 
 #. i18n: file: data/kateui.rc:58
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:71
+#: rc.cpp:74
 #, fuzzy
 #| msgid "Split Ve&rtical"
 msgid "Split View"
@@ -206,31 +214,31 @@ msgstr "ठाडो विभाजन गर्नुहोस्"
 
 #. i18n: file: data/kateui.rc:71
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:74
+#: rc.cpp:77
 msgid "&Tools"
 msgstr "उपकरण"
 
 #. i18n: file: data/kateui.rc:79
 #. i18n: ectx: Menu (sessions)
-#: rc.cpp:77
+#: rc.cpp:80
 msgid "Sess&ions"
 msgstr "सत्र"
 
 #. i18n: file: data/kateui.rc:91
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:80
+#: rc.cpp:83
 msgid "&Settings"
 msgstr "सेटिङ"
 
 #. i18n: file: data/kateui.rc:95
 #. i18n: ectx: Menu (help)
-#: rc.cpp:83
+#: rc.cpp:86
 msgid "&Help"
 msgstr "मद्दत"
 
 #. i18n: file: data/kateui.rc:100
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:86
+#: rc.cpp:89
 msgid "Main Toolbar"
 msgstr "मुख्य उपकरणपट्टी"
 
@@ -1153,13 +1161,14 @@ msgstr ""
 "तपाईँले यहाँ सबै उपलब्ध क्येट प्लगइन हेर्न सक्नुहुन्छ । तीनिहरू जाँच चिन्हसँग लोड गरिएका छन् र "
 "क्येट पछिल्लो समयमा सुरु हुँदा पुन: लोड हुन्छन् ।"
 
-#: app/katefilelist.cpp:55
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:46
 #, fuzzy
 #| msgid "Clos&e All"
 msgid "Close"
 msgstr "सबै बन्द गर्नुहोस्"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
+#: plugins/filetree/katefiletree.cpp:48
 msgid "Close the current document."
 msgstr "हालको कागजात बन्द गर्नुहोस् ।"
 
@@ -1749,6 +1758,23 @@ msgstr " INS "
 #| msgid " BLK "
 msgid " BLOCK "
 msgstr " BLK "
+
+#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:92
+#, fuzzy
+#| msgid "Document Name"
+msgid "Document Tree"
+msgstr "कागजात नाम"
+
+#: plugins/filetree/katefiletreeplugin.cpp:43
+msgid "Show open documents in a tree"
+msgstr ""
+
+#: plugins/filetree/katefiletreeplugin.cpp:130
+#, fuzzy
+#| msgid "Show Functions"
+msgid "&Show Active"
+msgstr "प्रकार्य देखाउनुहोस्"
 
 #, fuzzy
 #~| msgid "Template Plugin"
@@ -2419,9 +2445,6 @@ msgstr " BLK "
 #~ msgid "Show Modules"
 #~ msgstr "मोड्युल देखाउनुहोस्"
 
-#~ msgid "Show Functions"
-#~ msgstr "प्रकार्य देखाउनुहोस्"
-
 #~ msgid "Subroutines"
 #~ msgstr "सहायक कार्यसूची"
 
@@ -2509,9 +2532,6 @@ msgstr " BLK "
 
 #~ msgid "%1"
 #~ msgstr "%1"
-
-#~ msgid "Manage File Templates"
-#~ msgstr "फाइल टेम्प्लेट व्यावस्थापन गर्नुहोस्"
 
 #~ msgid "&Template:"
 #~ msgstr "टेम्प्लेट:"
