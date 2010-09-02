@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:49+0200\n"
+"POT-Creation-Date: 2010-09-02 07:05+0200\n"
 "PO-Revision-Date: 2007-08-23 20:18+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1415,7 +1415,7 @@ msgstr "केडीई प्रस्तुतकर्ता कन्फि�
 #: part/ui/KPrCustomSlideShowsDialog.cpp:82
 #: part/ui/KPrCustomSlideShowsDialog.cpp:239
 #: part/ui/KPrCustomSlideShowsDialog.cpp:257
-#: part/ui/KPrHtmlExportDialog.cpp:119
+#: part/ui/KPrHtmlExportDialog.cpp:119 part/KPrViewModeSlidesSorter.cpp:257
 #, kde-format
 msgid "Slide %1"
 msgstr "स्लाइड %1"
@@ -1794,77 +1794,83 @@ msgstr "स्लाइड टाँस्नुहोस्"
 msgid "Configure KPresenter..."
 msgstr "केडीई प्रस्तुतकर्ता कन्फिगर गर्नुहोस्..."
 
-#: part/KPrView.cpp:179
+#: part/KPrView.cpp:185
 msgid "Export as HTML..."
 msgstr ""
 
-#: part/KPrView.cpp:183
+#: part/KPrView.cpp:189
 msgid "Normal"
 msgstr "सामान्य"
 
-#: part/KPrView.cpp:189
+#: part/KPrView.cpp:195
 #, fuzzy
 #| msgid "Note"
 msgid "Notes"
 msgstr "टिपोट"
 
-#: part/KPrView.cpp:194
+#: part/KPrView.cpp:200
+#, fuzzy
+#| msgid "Slide Master"
+msgid "Slides Sorter"
+msgstr "स्लाइड मास्टर"
+
+#: part/KPrView.cpp:205
 #, fuzzy
 #| msgid "Insert Picture"
 msgid "Insert Pictures..."
 msgstr "तस्वीर घुसाउनुहोस्"
 
-#: part/KPrView.cpp:202
+#: part/KPrView.cpp:214
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgid "Create Appear Animation"
 msgstr "HTML प्रस्तुतिकरण सिर्जना गर्नुहोस्"
 
-#: part/KPrView.cpp:206
+#: part/KPrView.cpp:218
 #, fuzzy
 #| msgid "Custom Slide Show..."
 msgid "Edit Custom Slide Shows..."
 msgstr "अनुकूल स्लाईड प्रदर्शन..."
 
-#: part/KPrView.cpp:210
+#: part/KPrView.cpp:222
 msgid "Start Presentation"
 msgstr "प्रस्तुतिकरण सुरु गर्नुहोस्"
 
-#: part/KPrView.cpp:213
+#: part/KPrView.cpp:225
 #, fuzzy
 #| msgid "After Current Slide"
 msgid "From Current Slide"
 msgstr "हालको स्लाइड पछाडि"
 
-#: part/KPrView.cpp:218
+#: part/KPrView.cpp:230
 #, fuzzy
 #| msgid "Start From &First Slide"
 msgid "From First Slide"
 msgstr "पहिलो स्लाइडबाट सुरु गर्नुहोस्"
 
-#: part/KPrView.cpp:223
+#: part/KPrView.cpp:235
 #, fuzzy
 #| msgid "&Configure Slide Show..."
 msgid "Configure Slide Show..."
 msgstr "स्लाइड प्रदर्शन कन्फिगर गर्नुहोस्..."
 
-#: part/KPrView.cpp:227
+#: part/KPrView.cpp:239
 #, fuzzy
 #| msgid "Configure KPresenter..."
 msgid "Configure Presenter View..."
 msgstr "केडीई प्रस्तुतकर्ता कन्फिगर गर्नुहोस्..."
 
-#: part/KPrView.cpp:231
+#: part/KPrView.cpp:243
 #, fuzzy
 #| msgid "Overwrite Presentation"
 msgid "Draw on the presentation..."
 msgstr "प्रस्तुतिकरण अधिलेखन गर्नुहोस्"
 
-#: part/KPrView.cpp:238
+#: part/KPrView.cpp:250
 msgid "Highlight the presentation..."
 msgstr ""
 
-#: part/KPrView.cpp:245
+#: part/KPrView.cpp:257
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
@@ -2196,7 +2202,7 @@ msgstr "सम्पादन"
 msgid "&View"
 msgstr "दृश्य"
 
-#. i18n: file: part/kpresenter.rc:49
+#. i18n: file: part/kpresenter.rc:50
 #. i18n: ectx: Menu (insert)
 #. i18n: file: kpresenter.rc:53
 #. i18n: ectx: Menu (Insert)
@@ -2204,7 +2210,7 @@ msgstr "दृश्य"
 msgid "&Insert"
 msgstr " घुसाउनुहोस्"
 
-#. i18n: file: part/kpresenter.rc:54
+#. i18n: file: part/kpresenter.rc:55
 #. i18n: ectx: Menu (format)
 #. i18n: file: kpresenter.rc:90
 #. i18n: ectx: Menu (Format)
@@ -2212,7 +2218,7 @@ msgstr " घुसाउनुहोस्"
 msgid "F&ormat"
 msgstr "ढाँचा"
 
-#. i18n: file: part/kpresenter.rc:63
+#. i18n: file: part/kpresenter.rc:64
 #. i18n: ectx: Menu (page)
 #: rc.cpp:146
 #, fuzzy
@@ -2220,7 +2226,7 @@ msgstr "ढाँचा"
 msgid "&Slide"
 msgstr "स्लाइड"
 
-#. i18n: file: part/kpresenter.rc:74
+#. i18n: file: part/kpresenter.rc:75
 #. i18n: ectx: Menu (slideshow)
 #. i18n: file: kpresenter_readonly.rc:12
 #. i18n: ectx: Menu (Slide Show)
@@ -2230,7 +2236,7 @@ msgstr "स्लाइड"
 msgid "Sli&de Show"
 msgstr "स्लाइड देखाउनुहोस्"
 
-#. i18n: file: part/kpresenter.rc:81
+#. i18n: file: part/kpresenter.rc:82
 #. i18n: ectx: Menu (settings)
 #. i18n: file: kpresenter.rc:179
 #. i18n: ectx: Menu (settings)
@@ -4037,9 +4043,6 @@ msgstr "हिज्जे परीक्षण परिणाम"
 
 #~ msgid "Change Pixmap"
 #~ msgstr "पिक्सम्याप परिवर्तन गर्नुहोस्"
-
-#~ msgid "Slide Master"
-#~ msgstr "स्लाइड मास्टर"
 
 #~ msgid "Move Objects"
 #~ msgstr "वस्तु सार्नुहोस्"
