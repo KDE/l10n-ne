@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-18 06:05+0200\n"
+"POT-Creation-Date: 2010-09-19 06:07+0200\n"
 "PO-Revision-Date: 2007-09-13 12:58+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -527,11 +527,11 @@ msgstr "कागजात बन्द गर्नुहोस्"
 msgid "Save As"
 msgstr "यस रुपमा बचत गर्नुहोस्"
 
-#: app/katedocmanager.cpp:504 app/katemainwindow.cpp:482
+#: app/katedocmanager.cpp:504 app/katemainwindow.cpp:435
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr "क्येट बन्द गर्ने प्रयास गर्दा नयाँ फाइल खुल्यो, बन्द परित्याग गरियो ।"
 
-#: app/katedocmanager.cpp:505 app/katemainwindow.cpp:483
+#: app/katedocmanager.cpp:505 app/katemainwindow.cpp:436
 msgid "Closing Aborted"
 msgstr "बन्द परित्याग गरियो"
 
@@ -547,19 +547,19 @@ msgstr "अन्तिम सत्रबाट फाइलहरू पुन
 msgid "Errors/Warnings while opening documents"
 msgstr "कागजात खोल्दा त्रुटि/चेतावनी"
 
-#: app/kateappcommands.cpp:76
+#: app/kateappcommands.cpp:78
 #, fuzzy
 #| msgid "Documents Modified on Disk"
 msgid "All documents written to disk"
 msgstr "डिस्कमा कागजात परिमार्जन गरियो"
 
-#: app/kateappcommands.cpp:79
+#: app/kateappcommands.cpp:81
 #, fuzzy
 #| msgid "Documents Modified on Disk"
 msgid "Document written to disk"
 msgstr "डिस्कमा कागजात परिमार्जन गरियो"
 
-#: app/kateappcommands.cpp:144
+#: app/kateappcommands.cpp:150
 msgid ""
 "<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
 "b></tt></p><p>Writes the current document(s) to disk. It can be called in "
@@ -568,7 +568,7 @@ msgid ""
 "associated with the document, a file dialog will be shown.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:155
+#: app/kateappcommands.cpp:161
 msgid ""
 "<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
 "b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
@@ -582,7 +582,7 @@ msgid ""
 "disk, a file dialog will be shown.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:170
+#: app/kateappcommands.cpp:176
 msgid ""
 "<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
 "p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
@@ -594,7 +594,7 @@ msgid ""
 "command only writes the document if it is modified.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:184
+#: app/kateappcommands.cpp:190
 msgid ""
 "<p><b>bp/bn &mdash; switch to previous/next document</b></p><p>Usage: "
 "<tt><b>bp/bn</b></tt></p><p>Goes to <b>p</b>revious or <b>n</b>ext document "
@@ -605,7 +605,7 @@ msgid ""
 "end up at the first and vice versa.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:197
+#: app/kateappcommands.cpp:203
 msgid ""
 "<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
 "<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
@@ -615,7 +615,7 @@ msgid ""
 "document.<br /></p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:207
+#: app/kateappcommands.cpp:213
 msgid ""
 "<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
 "b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
@@ -1013,15 +1013,15 @@ msgstr ""
 msgid "Document to open"
 msgstr "खोल्नका लागि कागजात"
 
-#: app/kateconfigdialog.cpp:59
+#: app/kateconfigdialog.cpp:58
 msgid "Configure"
 msgstr "कन्फिगर गर्नुहोस्"
 
-#: app/kateconfigdialog.cpp:70
+#: app/kateconfigdialog.cpp:69
 msgid "Application"
 msgstr "अनुप्रयोग"
 
-#: app/kateconfigdialog.cpp:72
+#: app/kateconfigdialog.cpp:71
 msgid "Application Options"
 msgstr "अनुप्रयोग विकल्प"
 
@@ -1118,31 +1118,23 @@ msgstr "अन्तिम-प्रयोग भएको सत्र लो�
 msgid "&Manually choose a session"
 msgstr "सत्र म्यानुअल रुपमा रोज्नुहोस्"
 
-#: app/kateconfigdialog.cpp:199
-msgid "Document List"
-msgstr "कागजात सूची"
-
-#: app/kateconfigdialog.cpp:200
-msgid "Document List Settings"
-msgstr "कागजाता सूची सेटिङ"
-
-#: app/kateconfigdialog.cpp:211
+#: app/kateconfigdialog.cpp:203
 msgid "Plugins"
 msgstr "प्लगइन"
 
-#: app/kateconfigdialog.cpp:212
+#: app/kateconfigdialog.cpp:204
 msgid "Plugin Manager"
 msgstr "प्लगइन प्रबन्धक"
 
-#: app/kateconfigdialog.cpp:225
+#: app/kateconfigdialog.cpp:217
 msgid "Editor Component"
 msgstr "सम्पादक अवयव"
 
-#: app/kateconfigdialog.cpp:227
+#: app/kateconfigdialog.cpp:219
 msgid "Editor Component Options"
 msgstr "सम्पादक अवयव विकल्प"
 
-#: app/kateconfigdialog.cpp:412
+#: app/kateconfigdialog.cpp:399
 #, fuzzy
 #| msgid " day(s)"
 msgctxt "The suffix of 'Delete unused meta-information after'"
@@ -1151,127 +1143,21 @@ msgid_plural " days"
 msgstr[0] " दिन"
 msgstr[1] " दिन"
 
-#: app/kateconfigplugindialogpage.cpp:69
+#: app/kateconfigplugindialogpage.cpp:71
 msgid "Name"
 msgstr "नाम"
 
-#: app/kateconfigplugindialogpage.cpp:69
+#: app/kateconfigplugindialogpage.cpp:71
 msgid "Comment"
 msgstr "टिप्पणी"
 
-#: app/kateconfigplugindialogpage.cpp:71
+#: app/kateconfigplugindialogpage.cpp:73
 msgid ""
 "Here you can see all available Kate plugins. Those with a check mark are "
 "loaded, and will be loaded again the next time Kate is started."
 msgstr ""
 "तपाईँले यहाँ सबै उपलब्ध क्येट प्लगइन हेर्न सक्नुहुन्छ । तीनिहरू जाँच चिन्हसँग लोड गरिएका छन् र "
 "क्येट पछिल्लो समयमा सुरु हुँदा पुन: लोड हुन्छन् ।"
-
-#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:51
-#, fuzzy
-#| msgid "Clos&e All"
-msgid "Close"
-msgstr "सबै बन्द गर्नुहोस्"
-
-#: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
-#: plugins/filetree/katefiletree.cpp:53
-msgid "Close the current document."
-msgstr "हालको कागजात बन्द गर्नुहोस् ।"
-
-#: app/katefilelist.cpp:61 app/katemainwindow.cpp:330
-msgid "Close Other"
-msgstr "अन्य बन्द गर्नुहोस्"
-
-#: app/katefilelist.cpp:63 app/katemainwindow.cpp:332
-msgid "Close other open documents."
-msgstr "अन्य खुला कागजात बन्द गर्नुहोस् ।"
-
-#: app/katefilelist.cpp:66
-#, fuzzy
-#| msgid "&Save Selected"
-msgid "Close Selected"
-msgstr "चयन गरिएको बचत गर्नुहोस्"
-
-#: app/katefilelist.cpp:68
-#, fuzzy
-#| msgid "Close other open documents."
-msgid "Close selected open documents."
-msgstr "अन्य खुला कागजात बन्द गर्नुहोस् ।"
-
-#: app/katefilelist.cpp:71
-#, fuzzy
-#| msgid "&Save Selected"
-msgid "Save Selected"
-msgstr "चयन गरिएको बचत गर्नुहोस्"
-
-#: app/katefilelist.cpp:73
-#, fuzzy
-#| msgid "Close other open documents."
-msgid "Save selected open documents."
-msgstr "अन्य खुला कागजात बन्द गर्नुहोस् ।"
-
-#: app/katefilelist.cpp:75
-msgid "Sort &By"
-msgstr "यसद्वारा क्रमबद्ध गर्नुहोस्"
-
-#: app/katefilelist.cpp:78 app/katefilelist.cpp:307
-#: plugins/filetree/katefiletree.cpp:76
-#: plugins/filetree/katefiletreeconfigpage.cpp:74
-msgid "Opening Order"
-msgstr "खोल्ने आदेश"
-
-#: app/katefilelist.cpp:78 app/katefilelist.cpp:308
-#: plugins/filetree/katefiletree.cpp:67
-#: plugins/filetree/katefiletreeconfigpage.cpp:75
-msgid "Document Name"
-msgstr "कागजात नाम"
-
-#: app/katefilelist.cpp:78
-msgid "URL"
-msgstr "यू आर एल"
-
-#: app/katefilelist.cpp:78 app/katefilelist.cpp:310
-msgid "Custom"
-msgstr "अनुकुल"
-
-#: app/katefilelist.cpp:281 plugins/filetree/katefiletreeconfigpage.cpp:48
-msgid "Background Shading"
-msgstr ""
-
-#: app/katefilelist.cpp:288 plugins/filetree/katefiletreeconfigpage.cpp:55
-msgid "&Viewed documents' shade:"
-msgstr ""
-
-#: app/katefilelist.cpp:294 plugins/filetree/katefiletreeconfigpage.cpp:61
-msgid "&Modified documents' shade:"
-msgstr ""
-
-#: app/katefilelist.cpp:302 plugins/filetree/katefiletreeconfigpage.cpp:69
-#, fuzzy
-#| msgid "Sort By"
-msgid "&Sort by:"
-msgstr "यसद्वारा क्रमबद्ध गर्नुहोस्"
-
-#: app/katefilelist.cpp:309 plugins/filetree/katefiletreeconfigpage.cpp:76
-msgid "Url"
-msgstr ""
-
-#: app/katefilelist.cpp:315 plugins/filetree/katefiletreeconfigpage.cpp:93
-msgid ""
-"When background shading is enabled, documents that have been viewed or "
-"edited within the current session will have a shaded background. The most "
-"recent documents have the strongest shade."
-msgstr ""
-
-#: app/katefilelist.cpp:319 plugins/filetree/katefiletreeconfigpage.cpp:97
-msgid "Set the color for shading viewed documents."
-msgstr ""
-
-#: app/katefilelist.cpp:321 plugins/filetree/katefiletreeconfigpage.cpp:99
-msgid ""
-"Set the color for modified documents. This color is blended into the color "
-"for viewed files. The most recently edited documents get most of this color."
-msgstr ""
 
 #: app/katemwmodonhddialog.cpp:65
 msgid "Documents Modified on Disk"
@@ -1387,94 +1273,102 @@ msgstr "सेतो खालीस्थान परिवर्तन बा
 msgid "Diff Output"
 msgstr "भिन्न निर्गत"
 
-#: app/katemainwindow.cpp:239
+#: app/katemainwindow.cpp:229
 msgid "Use this command to show or hide the view's statusbar"
 msgstr "दृश्यको स्थितिपट्टी लुकाउन वा देखाउनका लागि यो आदेश प्रयोग गर्नुहोस्"
 
-#: app/katemainwindow.cpp:241
+#: app/katemainwindow.cpp:231
 msgid "Sho&w Path"
 msgstr "मार्ग देखाउनुहोस्"
 
-#: app/katemainwindow.cpp:244
+#: app/katemainwindow.cpp:234
 msgid "Show the complete document path in the window caption"
 msgstr "सञ्झ्याल क्याप्सनमा सम्पूर्ण कागजात मार्ग देखाउनुहोस्"
 
-#: app/katemainwindow.cpp:259 app/katesavemodifieddialog.cpp:202
-msgid "Documents"
-msgstr "कागजात"
-
-#: app/katemainwindow.cpp:301
+#: app/katemainwindow.cpp:254
 msgid "Create a new document"
 msgstr "नयाँ कागजात सिर्जना गर्नुहोस्"
 
-#: app/katemainwindow.cpp:303
+#: app/katemainwindow.cpp:256
 msgid "Open an existing document for editing"
 msgstr "सम्पादनका लागि अवस्थित कागजात खोल्नुहोस्"
 
-#: app/katemainwindow.cpp:307
+#: app/katemainwindow.cpp:260
 msgid ""
 "This lists files which you have opened recently, and allows you to easily "
 "open them again."
 msgstr ""
 "तपाईँले हालै खोल्नुभएको फाइल यसले सूचीकृत गर्छ र तीनिहरूलाई फेरि सजिलै खोल्न अनुमति दिन्छ ।"
 
-#: app/katemainwindow.cpp:311
+#: app/katemainwindow.cpp:264
 msgid "Save A&ll"
 msgstr "सबै बचत गर्नुहोस्"
 
-#: app/katemainwindow.cpp:314
+#: app/katemainwindow.cpp:267
 msgid "Save all open, modified documents to disk."
 msgstr "सबै खुला, परिमार्जित कागजातहरू डिस्कमा बचत गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:317
+#: app/katemainwindow.cpp:270
 #, fuzzy
 #| msgid "&Reload"
 msgid "&Reload All"
 msgstr "पुन: लोड गर्नुहोस्"
 
-#: app/katemainwindow.cpp:319
+#: app/katemainwindow.cpp:272
 #, fuzzy
 #| msgid "Close all open documents."
 msgid "Reload all open documents."
 msgstr "सबै खुला कागजात बन्द गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:322
+#: app/katemainwindow.cpp:275
 #, fuzzy
 #| msgid "Close Other"
 msgid "Close Orphaned"
 msgstr "अन्य बन्द गर्नुहोस्"
 
-#: app/katemainwindow.cpp:324
+#: app/katemainwindow.cpp:277
 msgid ""
 "Close all documents in the file list that could not be reopened, because "
 "they are not accessible anymore."
 msgstr ""
 
-#: app/katemainwindow.cpp:335
+#: app/katemainwindow.cpp:280 plugins/filetree/katefiletree.cpp:53
+msgid "Close the current document."
+msgstr "हालको कागजात बन्द गर्नुहोस् ।"
+
+#: app/katemainwindow.cpp:283
+msgid "Close Other"
+msgstr "अन्य बन्द गर्नुहोस्"
+
+#: app/katemainwindow.cpp:285
+msgid "Close other open documents."
+msgstr "अन्य खुला कागजात बन्द गर्नुहोस् ।"
+
+#: app/katemainwindow.cpp:288
 msgid "Clos&e All"
 msgstr "सबै बन्द गर्नुहोस्"
 
-#: app/katemainwindow.cpp:337
+#: app/katemainwindow.cpp:290
 msgid "Close all open documents."
 msgstr "सबै खुला कागजात बन्द गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:342
+#: app/katemainwindow.cpp:295
 msgid "Close this window"
 msgstr "यो सञ्झ्याल बन्द गर्नुहोस्"
 
-#: app/katemainwindow.cpp:346
+#: app/katemainwindow.cpp:299
 msgid "&New Window"
 msgstr "नयाँ सञ्झ्याल"
 
-#: app/katemainwindow.cpp:348
+#: app/katemainwindow.cpp:301
 msgid "Create a new Kate view (a new window with the same document list)."
 msgstr "नयाँ क्येट दृश्य (समान कागजात सूचीसँग एक नयाँ सञ्झ्याल) सिर्जना गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:354
+#: app/katemainwindow.cpp:307
 msgid "Open W&ith"
 msgstr "यससँग खोल्नुहोस्"
 
-#: app/katemainwindow.cpp:356
+#: app/katemainwindow.cpp:309
 msgid ""
 "Open the current document using another application registered for its file "
 "type, or an application of your choice."
@@ -1482,103 +1376,103 @@ msgstr ""
 "यसको फाइल प्रकारका लागि दर्ता गरिएको अन्य अनुप्रयोग वा तपाईँको रोजाइको एउटा "
 "अनुप्रयोग प्रयोग गर्दै हालको कागजात खोल्नुहोस् ।"
 
-#: app/katemainwindow.cpp:361
+#: app/katemainwindow.cpp:314
 msgid "Configure the application's keyboard shortcut assignments."
 msgstr "अनुप्रयोगको कुञ्जीपाटी सर्टकट कार्य कन्फिगर गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:364
+#: app/katemainwindow.cpp:317
 msgid "Configure which items should appear in the toolbar(s)."
 msgstr "उपकरणपट्टी मा देखिनु पर्ने वस्तुहरू कन्फिगर गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:367
+#: app/katemainwindow.cpp:320
 msgid ""
 "Configure various aspects of this application and the editing component."
 msgstr "यो अनुप्रयोगको विभिन्न पक्ष र सम्पादन अवयव कन्फिगर गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:371
+#: app/katemainwindow.cpp:324
 msgid "This shows useful tips on the use of this application."
 msgstr "यो अनुप्रयोगको प्रयोगमा उपयोगी हुने टिपहरू यसले देखाउँदछ ।"
 
-#: app/katemainwindow.cpp:376
+#: app/katemainwindow.cpp:329
 msgid "&Plugins Handbook"
 msgstr "प्लगइन हातेपुस्तक"
 
-#: app/katemainwindow.cpp:378
+#: app/katemainwindow.cpp:331
 msgid "This shows help files for various available plugins."
 msgstr "यसले विभिन्न उपलब्ध प्लगइनका लागि मद्दत फाइलहरू देखाउँछ ।"
 
-#: app/katemainwindow.cpp:382
+#: app/katemainwindow.cpp:335
 msgid "&About Editor Component"
 msgstr "सम्पादक अवयवको बारेमा"
 
-#: app/katemainwindow.cpp:397
+#: app/katemainwindow.cpp:350
 msgctxt "Menu entry Session->New"
 msgid "&New"
 msgstr "नयाँ"
 
-#: app/katemainwindow.cpp:402
+#: app/katemainwindow.cpp:355
 #, fuzzy
 #| msgid "Open Session"
 msgid "&Open Session"
 msgstr "खुला सत्र"
 
-#: app/katemainwindow.cpp:407
+#: app/katemainwindow.cpp:360
 #, fuzzy
 #| msgid "&Save session"
 msgid "&Save Session"
 msgstr "सत्र बचत गर्नुहोस्"
 
-#: app/katemainwindow.cpp:411
+#: app/katemainwindow.cpp:364
 #, fuzzy
 #| msgid "Save Session?"
 msgid "Save Session &As..."
 msgstr "सत्र बचत गर्नुहुन्छ ?"
 
-#: app/katemainwindow.cpp:415
+#: app/katemainwindow.cpp:368
 #, fuzzy
 #| msgid "Save As &Default..."
 msgid "Save Session as &Default..."
 msgstr "पूर्वनिर्धारित रुपमा बचत गर्नुहोस्..."
 
-#: app/katemainwindow.cpp:419
+#: app/katemainwindow.cpp:372
 #, fuzzy
 #| msgid "Manage Sessions"
 msgid "&Manage Sessions..."
 msgstr "सत्र व्यवस्थापन गर्नुहोस्"
 
-#: app/katemainwindow.cpp:424
+#: app/katemainwindow.cpp:377
 #, fuzzy
 #| msgid "Open Session"
 msgid "&Quick Open Session"
 msgstr "खुला सत्र"
 
-#: app/katemainwindow.cpp:431
+#: app/katemainwindow.cpp:384
 msgid "This will close all open documents. Are you sure you want to continue?"
 msgstr ""
 
-#: app/katemainwindow.cpp:432
+#: app/katemainwindow.cpp:385
 #, fuzzy
 #| msgid "Close all open documents."
 msgid "Close all documents"
 msgstr "सबै खुला कागजात बन्द गर्नुहोस् ।"
 
-#: app/katemainwindow.cpp:662
+#: app/katemainwindow.cpp:608
 #, kde-format
 msgctxt "'document name [*]', [*] means modified"
 msgid "%1 [*]"
 msgstr "%1 [*]"
 
-#: app/katemainwindow.cpp:828
+#: app/katemainwindow.cpp:777
 msgid "&Other..."
 msgstr "अन्य..."
 
-#: app/katemainwindow.cpp:854
+#: app/katemainwindow.cpp:803
 #, fuzzy, kde-format
 #| msgid "Application '%1' not found!"
 msgid "Application '%1' not found."
 msgstr "अनुप्रयोग '%1' फेला परेन !"
 
-#: app/katemainwindow.cpp:854
+#: app/katemainwindow.cpp:803
 #, fuzzy
 #| msgid "Application not found!"
 msgid "Application not found"
@@ -1622,6 +1516,11 @@ msgstr "स्थान"
 #: app/katesavemodifieddialog.cpp:196
 msgid "Projects"
 msgstr "परियोजना"
+
+#: app/katesavemodifieddialog.cpp:202
+#: plugins/filetree/katefiletreeplugin.cpp:159
+msgid "Documents"
+msgstr "कागजात"
 
 #: app/katesavemodifieddialog.cpp:218
 msgid "Se&lect All"
@@ -1770,7 +1669,6 @@ msgid " BLOCK "
 msgstr " BLK "
 
 #: plugins/filetree/katefiletreeplugin.cpp:48
-#: plugins/filetree/katefiletreeplugin.cpp:159
 #, fuzzy
 #| msgid "Document Name"
 msgid "Document Tree"
@@ -1785,6 +1683,12 @@ msgstr ""
 #| msgid "Show Functions"
 msgid "&Show Active"
 msgstr "प्रकार्य देखाउनुहोस्"
+
+#: plugins/filetree/katefiletree.cpp:51
+#, fuzzy
+#| msgid "Clos&e All"
+msgid "Close"
+msgstr "सबै बन्द गर्नुहोस्"
 
 #: plugins/filetree/katefiletree.cpp:57
 #, fuzzy
@@ -1806,6 +1710,11 @@ msgstr "सूची/ट्री मोड"
 msgid "Set view style to List Mode"
 msgstr ""
 
+#: plugins/filetree/katefiletree.cpp:67
+#: plugins/filetree/katefiletreeconfigpage.cpp:75
+msgid "Document Name"
+msgstr "कागजात नाम"
+
 #: plugins/filetree/katefiletree.cpp:68
 #, fuzzy
 #| msgid "Document Name"
@@ -1823,6 +1732,11 @@ msgstr "कागजात सूची"
 #| msgid "&Show All Documents >>"
 msgid "Sort by Document Path"
 msgstr "सबै कागजात देखाउनुहोस् >>"
+
+#: plugins/filetree/katefiletree.cpp:76
+#: plugins/filetree/katefiletreeconfigpage.cpp:74
+msgid "Opening Order"
+msgstr "खोल्ने आदेश"
 
 #: plugins/filetree/katefiletree.cpp:77
 #, fuzzy
@@ -1842,6 +1756,28 @@ msgstr "सूची/ट्री मोड"
 msgid "Sort By"
 msgstr "यसद्वारा क्रमबद्ध गर्नुहोस्"
 
+#: plugins/filetree/katefiletreeconfigpage.cpp:48
+msgid "Background Shading"
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:55
+msgid "&Viewed documents' shade:"
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:61
+msgid "&Modified documents' shade:"
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:69
+#, fuzzy
+#| msgid "Sort By"
+msgid "&Sort by:"
+msgstr "यसद्वारा क्रमबद्ध गर्नुहोस्"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:76
+msgid "Url"
+msgstr ""
+
 #: plugins/filetree/katefiletreeconfigpage.cpp:82
 #, fuzzy
 #| msgid "&View"
@@ -1859,6 +1795,23 @@ msgstr "पूर्वावोलोकन"
 #| msgid "Split Ve&rtical"
 msgid "List View"
 msgstr "ठाडो विभाजन गर्नुहोस्"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:93
+msgid ""
+"When background shading is enabled, documents that have been viewed or "
+"edited within the current session will have a shaded background. The most "
+"recent documents have the strongest shade."
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:97
+msgid "Set the color for shading viewed documents."
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:99
+msgid ""
+"Set the color for modified documents. This color is blended into the color "
+"for viewed files. The most recently edited documents get most of this color."
+msgstr ""
 
 #: plugins/gdbplugin/plugin_kategdb.cpp:55
 #, fuzzy
@@ -2007,6 +1960,41 @@ msgstr ""
 #: plugins/gdbplugin/configview.cpp:85
 msgid "Keep the focus on the command line"
 msgstr ""
+
+#~ msgid "Document List"
+#~ msgstr "कागजात सूची"
+
+#~ msgid "Document List Settings"
+#~ msgstr "कागजाता सूची सेटिङ"
+
+#, fuzzy
+#~| msgid "&Save Selected"
+#~ msgid "Close Selected"
+#~ msgstr "चयन गरिएको बचत गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Close other open documents."
+#~ msgid "Close selected open documents."
+#~ msgstr "अन्य खुला कागजात बन्द गर्नुहोस् ।"
+
+#, fuzzy
+#~| msgid "&Save Selected"
+#~ msgid "Save Selected"
+#~ msgstr "चयन गरिएको बचत गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Close other open documents."
+#~ msgid "Save selected open documents."
+#~ msgstr "अन्य खुला कागजात बन्द गर्नुहोस् ।"
+
+#~ msgid "Sort &By"
+#~ msgstr "यसद्वारा क्रमबद्ध गर्नुहोस्"
+
+#~ msgid "URL"
+#~ msgstr "यू आर एल"
+
+#~ msgid "Custom"
+#~ msgstr "अनुकुल"
 
 #, fuzzy
 #~| msgid "Template Plugin"
