@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-21 07:21+0200\n"
+"POT-Creation-Date: 2010-09-22 06:12+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -66,9 +66,9 @@ msgstr "अन्तिममा बजाएको"
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
 
-#: TrayIconLegacy.cpp:218 browsers/filebrowser/FileView.cpp:347
+#: TrayIconLegacy.cpp:218 browsers/filebrowser/FileView.cpp:350
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
-#: browsers/CollectionTreeView.cpp:804
+#: browsers/CollectionTreeView.cpp:813
 #: context/applets/albums/AlbumsView.cpp:117
 #: services/lastfm/LastFmTreeView.cpp:112
 #, fuzzy
@@ -390,7 +390,7 @@ msgctxt "Load the view represented by this bookmark"
 msgid "&Load"
 msgstr "लोड गर्नुहोस्"
 
-#: amarokurls/BookmarkTreeView.cpp:118 browsers/filebrowser/FileView.cpp:382
+#: amarokurls/BookmarkTreeView.cpp:118 browsers/filebrowser/FileView.cpp:385
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
 
@@ -587,8 +587,8 @@ msgstr "कलाकार"
 #: browsers/collectionbrowser/CollectionWidget.cpp:202
 #: browsers/collectionbrowser/CollectionWidget.cpp:236
 #: browsers/collectionbrowser/CollectionWidget.cpp:273
-#: browsers/CollectionTreeView.cpp:226
 #: browsers/CollectionTreeItemModelBase.cpp:1147
+#: browsers/CollectionTreeView.cpp:228
 #: context/applets/albums/AlbumsView.cpp:132
 #: context/applets/wikipedia/WikipediaApplet.cpp:130
 #: dialogs/transferdialog.cpp:89 dialogs/FilenameLayoutDialog.cpp:232
@@ -712,21 +712,21 @@ msgstr ""
 msgid "Places"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: browsers/filebrowser/FileView.cpp:119 browsers/CollectionTreeView.cpp:265
+#: browsers/filebrowser/FileView.cpp:122 browsers/CollectionTreeView.cpp:267
 #, fuzzy
 #| msgid "&Move Files to Collection..."
 msgid "Move to Collection"
 msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
 
-#: browsers/filebrowser/FileView.cpp:128 browsers/CollectionTreeView.cpp:257
+#: browsers/filebrowser/FileView.cpp:131 browsers/CollectionTreeView.cpp:259
 #, fuzzy
 #| msgid "&Copy Files to Collection..."
 msgid "Copy to Collection"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
-#: browsers/filebrowser/FileView.cpp:356
+#: browsers/filebrowser/FileView.cpp:359
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
-#: browsers/CollectionTreeView.cpp:813
+#: browsers/CollectionTreeView.cpp:822
 #: context/applets/albums/AlbumsView.cpp:118
 #: services/lastfm/LastFmTreeView.cpp:121
 #, fuzzy
@@ -735,23 +735,21 @@ msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
-#: browsers/filebrowser/FileView.cpp:365 browsers/CollectionTreeView.cpp:832
+#: browsers/filebrowser/FileView.cpp:368 browsers/CollectionTreeView.cpp:841
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
 msgid "&Edit Track Details"
 msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
-#: browsers/filebrowser/FileView.cpp:515
-#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:251
-#: playlistmanager/file/PlaylistFileProvider.cpp:328
-#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:240
+#: browsers/filebrowser/FileView.cpp:523
 #, fuzzy
 #| msgid "Configure Playback"
+msgctxt "@title:window"
 msgid "Confirm Delete"
 msgstr "प्लेब्याक कन्फिगर गर्नुहोस्"
 
-#: browsers/filebrowser/FileView.cpp:517
+#: browsers/filebrowser/FileView.cpp:524
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
 msgid "Are you sure you want to delete this item?"
@@ -759,12 +757,28 @@ msgid_plural "Are you sure you want to delete these %1 items?"
 msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: browsers/filebrowser/FileView.cpp:522
-#: playlistmanager/file/PlaylistFileProvider.cpp:335
+#: browsers/filebrowser/FileView.cpp:530
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:70
 #, fuzzy
-#| msgid "Delete from device"
-msgid "Yes, delete from disk."
-msgstr "यन्त्रबाट मेट्नुहोस्"
+#| msgid "Moving files to trash"
+msgctxt "@title:window"
+msgid "Confirm Move to Trash"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
+
+#: browsers/filebrowser/FileView.cpp:531
+#, fuzzy, kde-format
+#| msgid "Are you sure you want to overwrite this cover?"
+msgid "Are you sure you want to move this item to trash?"
+msgid_plural "Are you sure you want to move these %1 items to trash?"
+msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+
+#: browsers/filebrowser/FileView.cpp:558
+#, fuzzy, kde-format
+#| msgid "Moving files to trash"
+msgctxt "@info:status"
+msgid "Moving to trash: %1 files"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
 #: browsers/playlistbrowser/DynamicCategory.cpp:53
 msgid "Dynamic Playlists"
@@ -1286,29 +1300,6 @@ msgid_plural "%1 tracks"
 msgstr[0] "१ ट्रयाक"
 msgstr[1] "१ ट्रयाक"
 
-#: browsers/CollectionTreeView.cpp:240 configdialog/ConfigDialog.cpp:55
-msgid "Collection"
-msgstr "सङ्कलन"
-
-#: browsers/CollectionTreeView.cpp:517 services/lastfm/LastFmTreeView.cpp:202
-#, fuzzy
-#| msgid "&Configure..."
-msgid "More..."
-msgstr "कन्फिगर गर्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:867
-#, fuzzy
-#| msgid "Organize Files"
-msgctxt "Organize Files"
-msgid "Organize Files"
-msgstr "फाइल सङ्गठित गर्नुहोस्"
-
-#: browsers/CollectionTreeView.cpp:1050
-#, fuzzy
-#| msgid "Selected Tracks"
-msgid "Delete Tracks"
-msgstr "चयन गरिएको ट्रयाक"
-
 #: browsers/CollectionTreeItemModelBase.cpp:653
 #: widgets/MetaQueryWidget.cpp:818
 #, fuzzy
@@ -1506,6 +1497,29 @@ msgstr ""
 #, fuzzy
 msgid "three months ago"
 msgstr "एक मिनेट अघि"
+
+#: browsers/CollectionTreeView.cpp:242 configdialog/ConfigDialog.cpp:55
+msgid "Collection"
+msgstr "सङ्कलन"
+
+#: browsers/CollectionTreeView.cpp:519 services/lastfm/LastFmTreeView.cpp:202
+#, fuzzy
+#| msgid "&Configure..."
+msgid "More..."
+msgstr "कन्फिगर गर्नुहोस्..."
+
+#: browsers/CollectionTreeView.cpp:876
+#, fuzzy
+#| msgid "Organize Files"
+msgctxt "Organize Files"
+msgid "Organize Files"
+msgstr "फाइल सङ्गठित गर्नुहोस्"
+
+#: browsers/CollectionTreeView.cpp:1059
+#, fuzzy
+#| msgid "Selected Tracks"
+msgid "Delete Tracks"
+msgstr "चयन गरिएको ट्रयाक"
 
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 #, fuzzy
@@ -2283,7 +2297,7 @@ msgstr "पछिल्लो ट्रयाक"
 msgid "Previous Group"
 msgstr "अघिल्लो ट्रयाक"
 
-#: context/containments/verticallayout/VerticalToolbarContainment.cpp:187
+#: context/containments/verticallayout/VerticalToolbarContainment.cpp:189
 msgid ""
 "Please add some applets from the toolbar at the bottom of the context view."
 msgstr ""
@@ -3060,52 +3074,17 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 msgid "Proxy Collection"
 msgstr "सङ्कलन"
 
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:71
-#: core-impl/collections/sqlcollection/mysqlecollection/MySqlEmbeddedCollection.cpp:35
-#: core-impl/collections/sqlcollection/mysqlservercollection/MySqlServerCollection.cpp:41
-msgid "Local Collection"
-msgstr "स्थानीय सङ्कलन"
-
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:380
-msgid "Organizing tracks"
-msgstr ""
-
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:382
-#, fuzzy
-#| msgid "Moving files to trash"
-msgid "Moving tracks"
-msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
-
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:384
-#, fuzzy
-#| msgid "Deleting track(s) failed."
-msgid "Copying tracks"
-msgstr "ट्रयाकहरूको मेटाइ असफल भयो ।"
-
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:597
-#, fuzzy, kde-format
-#| msgid "Cannot enter directory: '%1'"
-msgid "Could not create directory: %1"
-msgstr "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
-
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:629
-#, fuzzy, kde-format
-#| msgid "Transfer"
-msgid "Transferring: %1"
-msgstr "स्थानान्तर गर्नुहोस्"
-
-#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:670
-#: core-impl/collections/support/FileCollectionLocation.cpp:117
-#, fuzzy, kde-format
-#| msgid "Remove Playlist"
-msgid "Removing: %1"
-msgstr "प्ले सूची हटाउनुहोस्"
-
 #: core-impl/collections/sqlcollection/SqlImportedPlaylistProvider.h:29
 #, fuzzy
 #| msgid "Import Playlists"
 msgid "Imported Playlist Files"
 msgstr "प्ले सूचीहरू आयात गर्नुहोस्"
+
+#: core-impl/collections/sqlcollection/mysqlecollection/MySqlEmbeddedCollection.cpp:35
+#: core-impl/collections/sqlcollection/mysqlservercollection/MySqlServerCollection.cpp:41
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:71
+msgid "Local Collection"
+msgstr "स्थानीय सङ्कलन"
 
 #. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:21
 #. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
@@ -3172,76 +3151,40 @@ msgctxt "(Front) Cover of an album"
 msgid "cover"
 msgstr "सधैका लागि"
 
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:40
-#, fuzzy, kde-format
-#| msgid "Are you sure you want to overwrite this cover?"
-msgctxt "@info"
-msgid ""
-"Do you really want to delete this track? It will be removed from disk as "
-"well as your collection."
-msgid_plural ""
-"Do you really want to delete these %1 tracks? They will be removed from disk "
-"as well as your collection."
-msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
-msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:45
-#, fuzzy
-#| msgid "Delete failed"
-msgid "Delete Files"
-msgstr "मेटाइ असफल भयो"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:58
-#, fuzzy, kde-format
-#| msgid "Are you sure you want to overwrite this cover?"
-msgctxt "@info"
-msgid ""
-"Do you really want to move this track? It will be renamed and the original "
-"deleted."
-msgid_plural ""
-"Do you really want to move these %1 tracks? They will be renamed and the "
-"originals deleted."
-msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
-msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:63
-#, fuzzy
-#| msgid "Manage &Files"
-msgid "Move Files"
-msgstr "फाइल प्रबन्ध गर्नुहोस्"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:74
-#, kde-format
-msgctxt "@info"
-msgid ""
-"There was a problem and this track could not be removed. Make sure the "
-"directory is writeable."
-msgid_plural ""
-"There was a problem and %1 tracks could not be removed. Make sure the "
-"directory is writeable."
-msgstr[0] ""
-msgstr[1] ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:79
-#, fuzzy
-#| msgid "Enable crossfading between tracks."
-msgid "Unable to be removed tracks"
-msgstr "ट्रयाकहरू बीच क्रसफेडिङ सक्षम पार्नुहोस् ।"
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:85
-msgid ""
-"The collection does not have enough free space available or is not writeable."
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:383
+msgid "Organizing tracks"
 msgstr ""
 
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:90
-msgid "Do you want to remove empty folders?"
-msgstr ""
-
-#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:91
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:385
 #, fuzzy
-#| msgid "&Remove Computer"
-msgid "Remove empty folders?"
-msgstr "कम्प्युटर हटाउनुहोस्"
+#| msgid "Moving files to trash"
+msgid "Moving tracks"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
+
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:387
+#, fuzzy
+#| msgid "Deleting track(s) failed."
+msgid "Copying tracks"
+msgstr "ट्रयाकहरूको मेटाइ असफल भयो ।"
+
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:600
+#, fuzzy, kde-format
+#| msgid "Cannot enter directory: '%1'"
+msgid "Could not create directory: %1"
+msgstr "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
+
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:632
+#, fuzzy, kde-format
+#| msgid "Transfer"
+msgid "Transferring: %1"
+msgstr "स्थानान्तर गर्नुहोस्"
+
+#: core-impl/collections/sqlcollection/SqlCollectionLocation.cpp:676
+#: core-impl/collections/support/FileCollectionLocation.cpp:117
+#, fuzzy, kde-format
+#| msgid "Remove Playlist"
+msgid "Removing: %1"
+msgstr "प्ले सूची हटाउनुहोस्"
 
 #: core-impl/collections/support/CollectionManager.cpp:161
 #, fuzzy
@@ -3272,6 +3215,102 @@ msgstr ""
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
 
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:40
+#, fuzzy, kde-format
+#| msgid "Are you sure you want to overwrite this cover?"
+msgctxt "@info"
+msgid ""
+"Do you really want to delete this track? It will be removed from disk as "
+"well as your collection."
+msgid_plural ""
+"Do you really want to delete these %1 tracks? They will be removed from disk "
+"as well as your collection."
+msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:45
+#, fuzzy
+#| msgid "Delete failed"
+msgid "Delete Files"
+msgstr "मेटाइ असफल भयो"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:61
+#, fuzzy, kde-format
+#| msgid "Are you sure you want to overwrite this cover?"
+msgctxt "@info"
+msgid ""
+"Do you really want to move this track to the trash? It will be removed from "
+"disk as well as your collection."
+msgid_plural ""
+"Do you really want to move these %1 tracks to the trash? They will be "
+"removed from disk as well as your collection."
+msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:82
+#, fuzzy, kde-format
+#| msgid "Are you sure you want to overwrite this cover?"
+msgctxt "@info"
+msgid ""
+"Do you really want to move this track? It will be renamed and the original "
+"deleted."
+msgid_plural ""
+"Do you really want to move these %1 tracks? They will be renamed and the "
+"originals deleted."
+msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:87
+#, fuzzy
+#| msgid "Manage &Files"
+msgid "Move Files"
+msgstr "फाइल प्रबन्ध गर्नुहोस्"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid ""
+"There was a problem and this track could not be removed. Make sure the "
+"directory is writeable."
+msgid_plural ""
+"There was a problem and %1 tracks could not be removed. Make sure the "
+"directory is writeable."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:103
+#, fuzzy
+#| msgid "Enable crossfading between tracks."
+msgid "Unable to be removed tracks"
+msgstr "ट्रयाकहरू बीच क्रसफेडिङ सक्षम पार्नुहोस् ।"
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:109
+msgid ""
+"The collection does not have enough free space available or is not writeable."
+msgstr ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:114
+msgid "Do you want to remove empty folders?"
+msgstr ""
+
+#: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:115
+#, fuzzy
+#| msgid "&Remove Computer"
+msgid "Remove empty folders?"
+msgstr "कम्प्युटर हटाउनुहोस्"
+
+#: core-impl/collections/support/TrashCollectionLocation.cpp:46
+#, fuzzy
+#| msgid "&Tracks"
+msgid "Trash"
+msgstr "ट्रयाक"
+
+#: core-impl/collections/support/TrashCollectionLocation.cpp:97
+#, fuzzy, kde-format
+#| msgid "Moving files to trash"
+msgid "Moving to trash: %1"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
+
 #: core-impl/collections/umscollection/handler/UmsHandler.cpp:476
 #, fuzzy
 #| msgid "Update Collection"
@@ -3296,6 +3335,14 @@ msgstr "मिडिया यन्त्र कन्फिगर गर्न
 #| msgid "Delete failed"
 msgid "&Delete Episode"
 msgstr "मेटाइ असफल भयो"
+
+#: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:251
+#: playlistmanager/file/PlaylistFileProvider.cpp:328
+#: playlistmanager/sql/SqlUserPlaylistProvider.cpp:240
+#, fuzzy
+#| msgid "Configure Playback"
+msgid "Confirm Delete"
+msgstr "प्लेब्याक कन्फिगर गर्नुहोस्"
 
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:253
 #, fuzzy, kde-format
@@ -3398,69 +3445,74 @@ msgid_plural " Items"
 msgstr[0] "वस्तु"
 msgstr[1] "वस्तु"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.h:50
+#: core-impl/podcasts/sql/SqlPodcastMeta.cpp:380
+#: core/podcasts/PodcastMeta.h:412
 #, fuzzy
 #| msgid "Podcasts"
-msgid "Local Podcasts"
+msgid "Podcast"
 msgstr "पोडकास्ट"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:269
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:271
 #, fuzzy
 #| msgid "Update"
 msgid "&Update All Channels"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:277
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:279
 #, fuzzy
 #| msgid "Configure General Options"
 msgid "&Configure General Settings"
 msgstr "साधारण विकल्प कन्फिगर गर्नुहोस्"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:301
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:787
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:287
+msgid "&Export to subscriptions to OPML file"
+msgstr ""
+
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:311
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:843
 msgid "&Configure"
 msgstr "कन्फिगर गर्नुहोस्..."
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:319
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:805
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:329
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:861
 #, fuzzy
 #| msgid "Description"
 msgid "&Remove Subscription"
 msgstr "वर्णन"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:340
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:826
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:350
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:882
 #, fuzzy
 #| msgid "Update"
 msgid "&Update Channel"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:379
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:707
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:389
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:763
 #, fuzzy
 #| msgid "De&lete Downloaded Podcast"
 msgid "&Delete Downloaded Episode"
 msgstr "डाउनलोड गरिएको पोडकास्ट मेट्नुहोस्"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:390
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:720
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:400
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:776
 msgid "&Write Feed Information to File"
 msgstr ""
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:414
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:757
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:424
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:813
 #, fuzzy
 #| msgid "De&lete Downloaded Podcast"
 msgid "&Download Episode"
 msgstr "डाउनलोड गरिएको पोडकास्ट मेट्नुहोस्"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:457
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:467
 #, fuzzy, kde-format
 #| msgid "Already subscribed to feed %1 as %2"
 msgid "Already subscribed to %1."
 msgstr "%2 को रूपमा फिड %1 लाई सघाउनु पहिल्यै स्वीकार गरियो"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:578
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:588
 #, fuzzy
 #| msgid "Never"
 msgctxt "prefix to 'x minutes'"
@@ -3469,7 +3521,7 @@ msgid_plural "every "
 msgstr[0] "कहिल्यै पनि"
 msgstr[1] "कहिल्यै पनि"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:579
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:589
 #, fuzzy
 #| msgid "Minutes"
 msgid " minute"
@@ -3477,64 +3529,69 @@ msgid_plural " minutes"
 msgstr[0] "मिनेट"
 msgstr[1] "मिनेट"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:588
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:598
 #, fuzzy
 #| msgid "&Configure Podcasts..."
 msgid "Configure Local Podcasts"
 msgstr "पोडकास्ट कन्फिगर गर्नुहोस्..."
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:878
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:650
+#, fuzzy
+#| msgid "Select Local File for %1"
+msgid "Select file for OPML export"
+msgstr "%1 का लागि स्थानीय फाइल चयन गर्नुहोस्"
+
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:934
 msgid "Unsubscribe"
 msgstr ""
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:882
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:938
 #, fuzzy
 #| msgid "Are you sure you want to overwrite this cover?"
 msgid "Do you really want to unsubscribe from "
 msgstr "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:889
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:945
 #, fuzzy
 #| msgid "De&lete Downloaded Podcast"
 msgid "Delete downloaded episodes"
 msgstr "डाउनलोड गरिएको पोडकास्ट मेट्नुहोस्"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1018
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1074
 msgid "Waiting for Podcast Downloads to Finish"
 msgstr ""
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1019
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1075
 #, kde-format
 msgid "There is still a podcast download in progress"
 msgid_plural "There are still %1 podcast downloads in progress"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1023
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1079
 msgid "Cancel Download and Quit."
 msgstr ""
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1186
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1242
 msgid "Downloading Podcast Media"
 msgstr "पोडकास्ट मिडिया डाउनलोड गर्दै"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1187
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1243
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr "पोडकास्ट \"%1\" डाउनलोड गर्दै"
 
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1261
-#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1411
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1317
+#: core-impl/podcasts/sql/SqlPodcastProvider.cpp:1467
 #, fuzzy, kde-format
 #| msgid "Setting iPod model to %1 GB %2 (x%3)"
 msgid "Unable to save podcast episode file to %1"
 msgstr "%1 GB %2 (x%3) मा आईपोड नमूना सेट गर्दै"
 
-#: core-impl/podcasts/sql/SqlPodcastMeta.cpp:380
-#: core/podcasts/PodcastMeta.h:412
+#: core-impl/podcasts/sql/SqlPodcastProvider.h:50
 #, fuzzy
 #| msgid "Podcasts"
-msgid "Podcast"
+msgid "Local Podcasts"
 msgstr "पोडकास्ट"
 
 #: core/meta/support/MetaUtility.cpp:355
@@ -7708,6 +7765,12 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
+#: playlistmanager/file/PlaylistFileProvider.cpp:335
+#, fuzzy
+#| msgid "Delete from device"
+msgid "Yes, delete from disk."
+msgstr "यन्त्रबाट मेट्नुहोस्"
+
 #: playlistmanager/file/PlaylistFileProvider.cpp:373
 #: playlistmanager/file/PlaylistFileProvider.cpp:401
 #, fuzzy, kde-format
@@ -9444,6 +9507,175 @@ msgstr ""
 #| msgid "Last Played:"
 msgid "played"
 msgstr "अन्तिममा प्लेगरीएको:"
+
+#. i18n: file: core-impl/collections/audiocd/FormatSelectionDialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
+#: App.cpp:113 rc.cpp:1010
+msgid "Amarok"
+msgstr "अमारोक"
+
+#: App.cpp:114
+msgid "The audio player for KDE"
+msgstr "केडीईका लागि अडियो प्लेयर"
+
+#: App.cpp:115
+#, fuzzy
+#| msgid ""
+#| "(C) 2002-2003, Mark Kretschmann\n"
+#| "(C) 2003-2007, The Amarok Development Squad"
+msgid ""
+"(C) 2002-2003, Mark Kretschmann\n"
+"(C) 2003-2010, The Amarok Development Squad"
+msgstr ""
+"(C) 2002-2003, Mark Kretschmann\n"
+"(C) 2003-2007, अमारोक विकास स्क्वाड"
+
+#: App.cpp:116
+#, fuzzy, kde-format
+#| msgid ""
+#| "IRC:\n"
+#| "irc.freenode.net - #amarok, #amarok.de, #amarok.es\n"
+#| "\n"
+#| "Feedback:\n"
+#| "amarok@kde.org\n"
+#| "\n"
+#| "(Build Date: "
+msgid ""
+"IRC:\n"
+"irc.freenode.net - #amarok, #amarok.de, #amarok.es, #amarok.fr\n"
+"\n"
+"Feedback:\n"
+"amarok@kde.org\n"
+"\n"
+"(Build Date: %1)"
+msgstr ""
+"आईआरसी:\n"
+"सर्भर: irc.freenode.net / channels: #amarok #amarok.de #amarok.es\n"
+"\n"
+"पृष्ठपोषण:\n"
+"amarok@kde.org \n"
+"(निर्माण मिती: "
+
+#: App.cpp:453
+msgid "Files/URLs to open"
+msgstr "फाइल/यूआरएल खोल्नका लागि "
+
+#: App.cpp:454
+msgid "Immediately start playing an audio cd"
+msgstr ""
+
+#: App.cpp:456
+msgid "Skip backwards in playlist"
+msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
+
+#: App.cpp:458
+msgid "Start playing current playlist"
+msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
+
+#: App.cpp:460
+msgid "Play if stopped, pause if playing"
+msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
+
+#: App.cpp:461
+msgid "Pause playback"
+msgstr "प्लेब्याक पज गर्नुहोस्"
+
+#: App.cpp:463
+msgid "Stop playback"
+msgstr "प्लेब्याक रोक्नुहोस्"
+
+#: App.cpp:465
+msgid "Skip forwards in playlist"
+msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
+
+#: App.cpp:466
+msgid "Additional options:"
+msgstr "अतिरिक्त विकल्प:"
+
+#: App.cpp:468
+msgid "Append files/URLs to playlist"
+msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
+
+#: App.cpp:469
+msgid "Queue URLs after the currently playing track"
+msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
+
+#: App.cpp:471
+msgid "Load URLs, replacing current playlist"
+msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
+
+#: App.cpp:473
+#, fuzzy
+#| msgid "Click to get the plugin information."
+msgid "Print verbose debugging information"
+msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
+
+#: App.cpp:475
+msgid "Allow running multiple Amarok instances"
+msgstr ""
+
+#: App.cpp:476
+msgid "Base for relative filenames/URLs"
+msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
+
+#: App.cpp:478
+#, fuzzy
+#| msgid "Stream Done"
+msgid "Unit test options:"
+msgstr "प्रवाह पूरा भयो"
+
+#: App.cpp:479
+msgid "Run integrated unit tests"
+msgstr ""
+
+#: App.cpp:480
+msgid "Destination of test output: 'stdout', 'log'"
+msgstr ""
+
+#: App.cpp:481
+msgid "Format of test output: 'xml', 'lightxml', 'plaintext'"
+msgstr ""
+
+#: App.cpp:482
+msgid "Verbosity from 0-3 (highest)"
+msgstr ""
+
+#: App.cpp:732
+msgid ""
+"The embedded database was not found; you must set up a database server "
+"connection.\n"
+"You must restart Amarok after doing this."
+msgstr ""
+
+#: App.cpp:733
+msgid ""
+"The connection details for the database server were invalid.\n"
+"You must enter correct settings and restart Amarok after doing this."
+msgstr ""
+
+#: App.cpp:734
+#, fuzzy
+#| msgid "Database:"
+msgid "Database Error"
+msgstr "डाटाबेस:"
+
+#: App.cpp:751
+#, kde-format
+msgid ""
+"A music path, %1, is set in System Settings.\n"
+"Would you like to use that as a collection folder?"
+msgstr ""
+
+#: App.cpp:818
+msgid ""
+"<p>The version of the 'amarokcollectionscanner' tool\n"
+"does not match your Amarok version.</p><p>Please note that Collection "
+"Scanning may not work correctly.</p>"
+msgstr ""
+
+#: App.cpp:859
+msgid "Moving files to trash"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
 #: rc.cpp:1
 #, fuzzy
@@ -11506,12 +11738,6 @@ msgstr "प्ले सूची"
 #| msgid "You can use the following tokens:"
 msgid "Do not show the following labels:"
 msgstr "तपाईँ निम्न टोकनहरू प्रयोग गर्न सक्नुहुन्छ:"
-
-#. i18n: file: core-impl/collections/audiocd/FormatSelectionDialog.ui:14
-#. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
-#: rc.cpp:1010 App.cpp:113
-msgid "Amarok"
-msgstr "अमारोक"
 
 #. i18n: file: core-impl/collections/audiocd/FormatSelectionDialog.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -14050,169 +14276,6 @@ msgstr "हालको ट्रयाक पछि प्ले गर्न �
 #| msgid "Stop Playing After Current Track"
 msgid "Stop after current track: Off"
 msgstr "हालको ट्रयाक पछि प्ले गर्न रोक्नुहोस्"
-
-#: App.cpp:114
-msgid "The audio player for KDE"
-msgstr "केडीईका लागि अडियो प्लेयर"
-
-#: App.cpp:115
-#, fuzzy
-#| msgid ""
-#| "(C) 2002-2003, Mark Kretschmann\n"
-#| "(C) 2003-2007, The Amarok Development Squad"
-msgid ""
-"(C) 2002-2003, Mark Kretschmann\n"
-"(C) 2003-2010, The Amarok Development Squad"
-msgstr ""
-"(C) 2002-2003, Mark Kretschmann\n"
-"(C) 2003-2007, अमारोक विकास स्क्वाड"
-
-#: App.cpp:116
-#, fuzzy, kde-format
-#| msgid ""
-#| "IRC:\n"
-#| "irc.freenode.net - #amarok, #amarok.de, #amarok.es\n"
-#| "\n"
-#| "Feedback:\n"
-#| "amarok@kde.org\n"
-#| "\n"
-#| "(Build Date: "
-msgid ""
-"IRC:\n"
-"irc.freenode.net - #amarok, #amarok.de, #amarok.es, #amarok.fr\n"
-"\n"
-"Feedback:\n"
-"amarok@kde.org\n"
-"\n"
-"(Build Date: %1)"
-msgstr ""
-"आईआरसी:\n"
-"सर्भर: irc.freenode.net / channels: #amarok #amarok.de #amarok.es\n"
-"\n"
-"पृष्ठपोषण:\n"
-"amarok@kde.org \n"
-"(निर्माण मिती: "
-
-#: App.cpp:453
-msgid "Files/URLs to open"
-msgstr "फाइल/यूआरएल खोल्नका लागि "
-
-#: App.cpp:454
-msgid "Immediately start playing an audio cd"
-msgstr ""
-
-#: App.cpp:456
-msgid "Skip backwards in playlist"
-msgstr "प्लेसूचीमा पछिल्तिर फड्काउनुहोस्"
-
-#: App.cpp:458
-msgid "Start playing current playlist"
-msgstr "हालको प्लेसूची प्ले गर्न सुरु गर्नुहोस्"
-
-#: App.cpp:460
-msgid "Play if stopped, pause if playing"
-msgstr "रोकियो भने प्ले गर्नुहोस्, प्ले गर्दैछ भने पज गर्नुहोस्"
-
-#: App.cpp:461
-msgid "Pause playback"
-msgstr "प्लेब्याक पज गर्नुहोस्"
-
-#: App.cpp:463
-msgid "Stop playback"
-msgstr "प्लेब्याक रोक्नुहोस्"
-
-#: App.cpp:465
-msgid "Skip forwards in playlist"
-msgstr "प्लेसूचीमा अघिल्तिर फड्काउनुहोस्"
-
-#: App.cpp:466
-msgid "Additional options:"
-msgstr "अतिरिक्त विकल्प:"
-
-#: App.cpp:468
-msgid "Append files/URLs to playlist"
-msgstr "प्लेसूचीमा फाइलहरू/यूआरएलहरू थप्नुहोस्"
-
-#: App.cpp:469
-msgid "Queue URLs after the currently playing track"
-msgstr "हालै प्ले गरिएको ट्रयाक पछि यूआरएलहरू लाम लगाउनुहोस्"
-
-#: App.cpp:471
-msgid "Load URLs, replacing current playlist"
-msgstr "हालैको प्लेसूची प्रतिस्थापन गरिरहेको, यूआरएलहरू लोड गर्नुहोस्"
-
-#: App.cpp:473
-#, fuzzy
-#| msgid "Click to get the plugin information."
-msgid "Print verbose debugging information"
-msgstr "प्लगइन सूचना प्राप्त गर्न क्लिक गर्नुहोस् ।"
-
-#: App.cpp:475
-msgid "Allow running multiple Amarok instances"
-msgstr ""
-
-#: App.cpp:476
-msgid "Base for relative filenames/URLs"
-msgstr "सापेक्षित फाइलनाम/यूआरएलका लागि आधार"
-
-#: App.cpp:478
-#, fuzzy
-#| msgid "Stream Done"
-msgid "Unit test options:"
-msgstr "प्रवाह पूरा भयो"
-
-#: App.cpp:479
-msgid "Run integrated unit tests"
-msgstr ""
-
-#: App.cpp:480
-msgid "Destination of test output: 'stdout', 'log'"
-msgstr ""
-
-#: App.cpp:481
-msgid "Format of test output: 'xml', 'lightxml', 'plaintext'"
-msgstr ""
-
-#: App.cpp:482
-msgid "Verbosity from 0-3 (highest)"
-msgstr ""
-
-#: App.cpp:732
-msgid ""
-"The embedded database was not found; you must set up a database server "
-"connection.\n"
-"You must restart Amarok after doing this."
-msgstr ""
-
-#: App.cpp:733
-msgid ""
-"The connection details for the database server were invalid.\n"
-"You must enter correct settings and restart Amarok after doing this."
-msgstr ""
-
-#: App.cpp:734
-#, fuzzy
-#| msgid "Database:"
-msgid "Database Error"
-msgstr "डाटाबेस:"
-
-#: App.cpp:751
-#, kde-format
-msgid ""
-"A music path, %1, is set in System Settings.\n"
-"Would you like to use that as a collection folder?"
-msgstr ""
-
-#: App.cpp:818
-msgid ""
-"<p>The version of the 'amarokcollectionscanner' tool\n"
-"does not match your Amarok version.</p><p>Please note that Collection "
-"Scanning may not work correctly.</p>"
-msgstr ""
-
-#: App.cpp:859
-msgid "Moving files to trash"
-msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
 #: MainWindow.cpp:279
 #, fuzzy
