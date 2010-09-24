@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-16 06:21+0200\n"
+"POT-Creation-Date: 2010-09-24 06:05+0200\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -62,7 +62,7 @@ msgid "(unbound)"
 msgstr "(नबाँधिएको)"
 
 #: plugins/forms/kexidbfactory.cpp:81 plugins/forms/kexiformpart.cpp:90
-#: formeditor/factories/stdwidgetfactory.cpp:186 formeditor/form.cpp:726
+#: formeditor/factories/stdwidgetfactory.cpp:186 formeditor/form.cpp:729
 msgid "Form"
 msgstr "फारम"
 
@@ -78,12 +78,12 @@ msgid "A data-aware form widget"
 msgstr "डेटा-सचेत फारम विजेट"
 
 #: plugins/forms/kexidbfactory.cpp:95
-#: formeditor/factories/containerfactory.cpp:682
+#: formeditor/factories/containerfactory.cpp:602
 msgid "Sub Form"
 msgstr "उप फारम"
 
 #: plugins/forms/kexidbfactory.cpp:98
-#: formeditor/factories/containerfactory.cpp:684
+#: formeditor/factories/containerfactory.cpp:604
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -91,7 +91,7 @@ msgid "subForm"
 msgstr "उप फारम"
 
 #: plugins/forms/kexidbfactory.cpp:99
-#: formeditor/factories/containerfactory.cpp:685
+#: formeditor/factories/containerfactory.cpp:605
 msgid "A form widget included in another Form"
 msgstr "अर्को फारममा समावेश भएको फारम विजेट"
 
@@ -128,12 +128,12 @@ msgid "A multiline text editor"
 msgstr "बहुरेखीय पाठ सम्पादक"
 
 #: plugins/forms/kexidbfactory.cpp:151
-#: formeditor/factories/containerfactory.cpp:602 formeditor/form.cpp:439
+#: formeditor/factories/containerfactory.cpp:522 formeditor/form.cpp:442
 msgid "Frame"
 msgstr "फ्रेम"
 
 #: plugins/forms/kexidbfactory.cpp:154
-#: formeditor/factories/containerfactory.cpp:604
+#: formeditor/factories/containerfactory.cpp:524
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -838,8 +838,8 @@ msgstr "तालिका फिल्ड"
 
 #. i18n: file: main/startup/KexiConnSelector.ui:78
 #. i18n: ectx: property (text), widget (Q3ListView, list)
-#: plugins/tables/kexitabledesignerview.cpp:351 formeditor/form.cpp:414
-#: formeditor/form.cpp:415 rc.cpp:107
+#: plugins/tables/kexitabledesignerview.cpp:351 formeditor/form.cpp:417
+#: formeditor/form.cpp:418 rc.cpp:107
 msgid "Name"
 msgstr "नाम"
 
@@ -863,7 +863,7 @@ msgid "Image"
 msgstr "छवि"
 
 #: plugins/tables/kexitabledesignerview.cpp:390
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1689 formeditor/form.cpp:416
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1689 formeditor/form.cpp:419
 #: formeditor/editlistviewdialog.cpp:120
 msgid "Caption"
 msgstr "क्याप्सन"
@@ -2484,8 +2484,8 @@ msgstr "सीमान्त:"
 msgid "Could not load data from table or query."
 msgstr "तालिका वा क्वेरीबाट डेटा लोड गर्न सकेन ।"
 
-#: main/printing/kexisimpleprintingengine.cpp:326
-#: formeditor/factories/containerfactory.cpp:281
+#: main/printing/kexisimpleprintingengine.cpp:326 formeditor/commands.cpp:2218
+#: formeditor/WidgetTreeWidget.cpp:96
 #, kde-format
 msgid "Page %1"
 msgstr "%1 पृष्ठ"
@@ -5854,7 +5854,7 @@ msgstr "एकल सूक्ष्म नम्बर"
 msgid "Double Precision Number"
 msgstr "दोहोरो सूक्ष्म नम्बर"
 
-#: kexidb/field.cpp:716 kexidb/field.cpp:737 formeditor/form.cpp:418
+#: kexidb/field.cpp:716 kexidb/field.cpp:737 formeditor/form.cpp:421
 msgid "Text"
 msgstr "पाठ"
 
@@ -6509,7 +6509,7 @@ msgid "Default"
 msgstr "पूर्वनिर्धारित"
 
 #: formeditor/factories/stdwidgetfactory.cpp:421
-#: formeditor/factories/containerfactory.cpp:692
+#: formeditor/factories/containerfactory.cpp:612
 #, fuzzy
 #| msgid "Format"
 msgid "Flat"
@@ -6751,78 +6751,72 @@ msgctxt "default indent value"
 msgid "default"
 msgstr "पूर्वनिर्धारित"
 
-#: formeditor/factories/containerfactory.cpp:258
-#, fuzzy
-#| msgid "Add Parameter"
-msgid "Add Page"
-msgstr "परिमिति थप्नुहोस्"
-
-#: formeditor/factories/containerfactory.cpp:372
+#: formeditor/factories/containerfactory.cpp:297
 #, fuzzy
 #| msgid "Add Parameter"
 msgctxt "Add page to tab widget"
 msgid "Add Page"
 msgstr "परिमिति थप्नुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:396
+#: formeditor/factories/containerfactory.cpp:321
 #, fuzzy
 #| msgid "Remove Item"
 msgctxt "Remove tab widget's page"
 msgid "Remove Page"
 msgstr "वस्तु हटाउनुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:422
+#: formeditor/factories/containerfactory.cpp:342
 #, fuzzy
 #| msgid "Rename Item"
 msgctxt "Rename tab widget's page"
 msgid "Rename Page..."
 msgstr "वस्तु पुन: नामकरण गर्नुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:436
-#: formeditor/factories/containerfactory.cpp:1065
+#: formeditor/factories/containerfactory.cpp:356
+#: formeditor/factories/containerfactory.cpp:985
 #, fuzzy
 #| msgid "Page title:"
 msgid "New Page Title"
 msgstr "पृष्ठ शीर्षक:"
 
-#: formeditor/factories/containerfactory.cpp:437
-#: formeditor/factories/containerfactory.cpp:1066
+#: formeditor/factories/containerfactory.cpp:357
+#: formeditor/factories/containerfactory.cpp:986
 msgid "Enter a new title for the current page:"
 msgstr "हालको पृष्ठका लागि नयाँ शीर्षक प्रविष्ट गर्नुहोस्:"
 
-#: formeditor/factories/containerfactory.cpp:445
+#: formeditor/factories/containerfactory.cpp:365
 #, fuzzy
 #| msgid "&Add..."
 msgctxt "Add page to a stacked widget"
 msgid "Add Page..."
 msgstr "थप्नुहोस्..."
 
-#: formeditor/factories/containerfactory.cpp:472
+#: formeditor/factories/containerfactory.cpp:392
 #, fuzzy
 #| msgid "Remove Item"
 msgctxt "Remove page from a stacked widget"
 msgid "Remove Page"
 msgstr "वस्तु हटाउनुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:519
+#: formeditor/factories/containerfactory.cpp:439
 #, fuzzy
 #| msgid "Previous Page"
 msgctxt "Go to Previous Page of a Stacked Widget"
 msgid "Go to Previous Page"
 msgstr "अघिल्लो पृष्ठ"
 
-#: formeditor/factories/containerfactory.cpp:520
+#: formeditor/factories/containerfactory.cpp:440
 #, fuzzy
 #| msgid "Next Page"
 msgctxt "Go to Next Page of a Stacked Widget"
 msgid "Go to Next Page"
 msgstr "पछिल्लो पृष्ठ"
 
-#: formeditor/factories/containerfactory.cpp:558
+#: formeditor/factories/containerfactory.cpp:478
 msgid "Button Group"
 msgstr "बटन समूह"
 
-#: formeditor/factories/containerfactory.cpp:560
+#: formeditor/factories/containerfactory.cpp:480
 #, fuzzy
 #| msgctxt ""
 #| "Widget name. This string will be used to name widgets of this class. It "
@@ -6834,17 +6828,17 @@ msgctxt ""
 msgid "buttonGroup"
 msgstr "बटन"
 
-#: formeditor/factories/containerfactory.cpp:561
+#: formeditor/factories/containerfactory.cpp:481
 msgid "A simple container to group buttons"
 msgstr "बटन समूह छुट्याउन साधारण कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:573
+#: formeditor/factories/containerfactory.cpp:493
 #, fuzzy
 #| msgid "To Widest"
 msgid "Tab Widget"
 msgstr "सबैभन्दा चौडा"
 
-#: formeditor/factories/containerfactory.cpp:575
+#: formeditor/factories/containerfactory.cpp:495
 #, fuzzy
 #| msgid "Widgets"
 msgctxt ""
@@ -6853,17 +6847,17 @@ msgctxt ""
 msgid "tabWidget"
 msgstr "विजेट"
 
-#: formeditor/factories/containerfactory.cpp:576
+#: formeditor/factories/containerfactory.cpp:496
 #, fuzzy
 #| msgid "A widget for displaying images"
 msgid "A widget to display multiple pages using tabs"
 msgstr "छविहरू प्रदर्शन गर्नका लागि विजेट"
 
-#: formeditor/factories/containerfactory.cpp:583
+#: formeditor/factories/containerfactory.cpp:503
 msgid "Basic container"
 msgstr "आधारभूत कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:585
+#: formeditor/factories/containerfactory.cpp:505
 #, fuzzy
 #| msgid "Print"
 msgctxt ""
@@ -6872,40 +6866,40 @@ msgctxt ""
 msgid "container"
 msgstr "मुद्रण गर्नुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:586
+#: formeditor/factories/containerfactory.cpp:506
 msgid "An empty container with no frame"
 msgstr "फ्रेम बिनाको एउटा खाली कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:593
+#: formeditor/factories/containerfactory.cpp:513
 #, fuzzy
 #| msgid "Group by"
 msgid "Group Box"
 msgstr "समूह द्वारा"
 
-#: formeditor/factories/containerfactory.cpp:595
+#: formeditor/factories/containerfactory.cpp:515
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "groupBox"
 msgstr "समूह बाकस"
 
-#: formeditor/factories/containerfactory.cpp:596
+#: formeditor/factories/containerfactory.cpp:516
 msgid "A container to group some widgets"
 msgstr "केही विजेट समूह गर्न कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:605
+#: formeditor/factories/containerfactory.cpp:525
 #, fuzzy
 #| msgid "A simple frame widget"
 msgid "A simple frame container"
 msgstr "साधारण फ्रेम विजेट"
 
-#: formeditor/factories/containerfactory.cpp:612
+#: formeditor/factories/containerfactory.cpp:532
 #, fuzzy
 #| msgid "Send Widget to Back"
 msgid "Widget Stack"
 msgstr "विजेटलाई पछाडि पठाउनुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:614
+#: formeditor/factories/containerfactory.cpp:534
 #, fuzzy
 #| msgid "Send Widget to Back"
 msgctxt ""
@@ -6914,17 +6908,17 @@ msgctxt ""
 msgid "widgetStack"
 msgstr "विजेटलाई पछाडि पठाउनुहोस्"
 
-#: formeditor/factories/containerfactory.cpp:615
+#: formeditor/factories/containerfactory.cpp:535
 msgid "A container with multiple pages"
 msgstr "बहु पृष्ठहरू सहितको कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:621
+#: formeditor/factories/containerfactory.cpp:541
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Horizontal Box"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/factories/containerfactory.cpp:623
+#: formeditor/factories/containerfactory.cpp:543
 #, fuzzy
 #| msgid "&Horizontally"
 msgctxt ""
@@ -6933,17 +6927,17 @@ msgctxt ""
 msgid "horizontalBox"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/factories/containerfactory.cpp:624
+#: formeditor/factories/containerfactory.cpp:544
 msgid "A simple container to group widgets horizontally"
 msgstr "विजेटहरू तेस्रो रूपमा समूह गर्न साधारण कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:630
+#: formeditor/factories/containerfactory.cpp:550
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Vertical Box"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/factories/containerfactory.cpp:632
+#: formeditor/factories/containerfactory.cpp:552
 #, fuzzy
 #| msgid "&Vertically"
 msgctxt ""
@@ -6952,49 +6946,49 @@ msgctxt ""
 msgid "verticalBox"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/factories/containerfactory.cpp:633
+#: formeditor/factories/containerfactory.cpp:553
 msgid "A simple container to group widgets vertically"
 msgstr "विजेट ठाडो रूपमा समूह गर्न साधारण कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:639
+#: formeditor/factories/containerfactory.cpp:559
 msgid "Grid Box"
 msgstr "ग्रीड बाकस"
 
-#: formeditor/factories/containerfactory.cpp:641
+#: formeditor/factories/containerfactory.cpp:561
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "gridBox"
 msgstr "ग्रीड बाकस"
 
-#: formeditor/factories/containerfactory.cpp:642
+#: formeditor/factories/containerfactory.cpp:562
 msgid "A simple container to group widgets in a grid"
 msgstr "ग्रीडमा विजेट समूह गर्न साधारण कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:650
+#: formeditor/factories/containerfactory.cpp:570
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Splitter"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/factories/containerfactory.cpp:652
+#: formeditor/factories/containerfactory.cpp:572
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "splitter"
 msgstr "स्प्लिटर"
 
-#: formeditor/factories/containerfactory.cpp:653
+#: formeditor/factories/containerfactory.cpp:573
 msgid "A container that enables user to resize its children"
 msgstr "प्रयोगकर्तालाई यसको शाखा रिसाइज गर्न सक्षम पार्ने कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:661
+#: formeditor/factories/containerfactory.cpp:581
 #, fuzzy
 #| msgid "&Break Layout"
 msgid "Row Layout"
 msgstr "विच्छेदित सजावट"
 
-#: formeditor/factories/containerfactory.cpp:663
+#: formeditor/factories/containerfactory.cpp:583
 #, fuzzy
 #| msgid "&Break Layout"
 msgctxt ""
@@ -7003,55 +6997,55 @@ msgctxt ""
 msgid "rowLayout"
 msgstr "विच्छेदित सजावट"
 
-#: formeditor/factories/containerfactory.cpp:664
+#: formeditor/factories/containerfactory.cpp:584
 msgid "A simple container to group widgets by rows"
 msgstr "पङ्क्तिद्वारा विजेट समूह गर्न साधारण कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:671
+#: formeditor/factories/containerfactory.cpp:591
 #, fuzzy
 #| msgid "Column name"
 msgid "Column Layout"
 msgstr "स्तम्भ नाम"
 
-#: formeditor/factories/containerfactory.cpp:673
+#: formeditor/factories/containerfactory.cpp:593
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "columnLayout"
 msgstr "स्तम्भ सजावट"
 
-#: formeditor/factories/containerfactory.cpp:674
+#: formeditor/factories/containerfactory.cpp:594
 msgid "A simple container to group widgets by columns"
 msgstr "स्तम्भद्वारा विजेट समूह गर्न साधारण कन्टेनर"
 
-#: formeditor/factories/containerfactory.cpp:691
+#: formeditor/factories/containerfactory.cpp:611
 #, fuzzy
 #| msgid "File"
 msgid "Title"
 msgstr "फाइल"
 
-#: formeditor/factories/containerfactory.cpp:695
-#: formeditor/factories/containerfactory.cpp:701
-#: formeditor/factories/containerfactory.cpp:702
+#: formeditor/factories/containerfactory.cpp:615
+#: formeditor/factories/containerfactory.cpp:621
+#: formeditor/factories/containerfactory.cpp:622
 #, fuzzy
 #| msgid "Label Position"
 msgid "Tab Position"
 msgstr "लेबुल स्थिति"
 
-#: formeditor/factories/containerfactory.cpp:696
+#: formeditor/factories/containerfactory.cpp:616
 #, fuzzy
 #| msgctxt "Current form's actions"
 #| msgid "Current"
 msgid "Current Page"
 msgstr "मुद्रा"
 
-#: formeditor/factories/containerfactory.cpp:697
+#: formeditor/factories/containerfactory.cpp:617
 #, fuzzy
 #| msgid "&Save"
 msgid "Tab Shape"
 msgstr "बचत गर्नुहोस्।"
 
-#: formeditor/factories/containerfactory.cpp:698
+#: formeditor/factories/containerfactory.cpp:618
 #, fuzzy
 #| msgctxt "Echo mode for Line Edit widget eg. Normal, NoEcho, Password"
 #| msgid "Echo Mode"
@@ -7059,17 +7053,17 @@ msgctxt "Tab Widget's Elide Mode"
 msgid "Elide Mode"
 msgstr "प्रतिध्वनि मोड"
 
-#: formeditor/factories/containerfactory.cpp:699
+#: formeditor/factories/containerfactory.cpp:619
 msgctxt "Tab Widget uses scroll buttons"
 msgid "Scroll Buttons"
 msgstr ""
 
-#: formeditor/factories/containerfactory.cpp:704
+#: formeditor/factories/containerfactory.cpp:624
 msgctxt "for Tab Shape"
 msgid "Rounded"
 msgstr "घुमाउरो"
 
-#: formeditor/factories/containerfactory.cpp:705
+#: formeditor/factories/containerfactory.cpp:625
 #, fuzzy
 #| msgid "Tabulator"
 msgctxt "for Tab Shape"
@@ -7111,7 +7105,7 @@ msgstr "वस्तु सम्पादन गर्नुहोस्।"
 msgid "Contents of %1"
 msgstr "।%1 का सामग्री"
 
-#: formeditor/container.cpp:1485 formeditor/commands.cpp:327
+#: formeditor/container.cpp:1485 formeditor/commands.cpp:328
 msgid "Move multiple widgets"
 msgstr "बहु विजेटहरू सार्नुहोस्।"
 
@@ -7119,228 +7113,240 @@ msgstr "बहु विजेटहरू सार्नुहोस्।"
 msgid "*.ui|Qt Designer UI Files"
 msgstr "*.ui|Qt डिजाइनर यूआई फाइल"
 
-#: formeditor/commands.cpp:155
+#: formeditor/commands.cpp:156
 #, fuzzy, kde-format
 #| msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
 msgid "Change \"%1\" property for multiple widgets"
 msgstr "\"%2\" देखि \"%3\" बाट तालिका फिल्डका लागि \"%1\" विशेषता परिवर्तन गर्नुहोस्"
 
-#: formeditor/commands.cpp:158
+#: formeditor/commands.cpp:159
 #, fuzzy, kde-format
 #| msgid "Set \"%1\" property for field \"%2\""
 msgid "Change \"%1\" property for widget \"%2\""
 msgstr " \"%2\" फिल्डका लागि \"%1\" विशेषता सेट गर्नुहोस्"
 
-#: formeditor/commands.cpp:421
+#: formeditor/commands.cpp:422
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgid "Align Widgets to Grid"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:424
+#: formeditor/commands.cpp:425
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgid "Align Widgets to Left"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:427
+#: formeditor/commands.cpp:428
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgid "Align Widgets to Right"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:430
+#: formeditor/commands.cpp:431
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgid "Align Widgets to Top"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:433
+#: formeditor/commands.cpp:434
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgid "Align Widgets to Bottom"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:584
+#: formeditor/commands.cpp:585
 #, fuzzy
 #| msgid "Bring Widget to Front"
 msgid "Resize Widgets to Grid"
 msgstr "विजेटलाई अगाडि ल्याउनुहोस्"
 
-#: formeditor/commands.cpp:587
+#: formeditor/commands.cpp:588
 #, fuzzy
 #| msgid "Clear Widget Contents"
 msgid "Resize Widgets to Fit Contents"
 msgstr "विजेट सामग्री खाली गर्नुहोस्"
 
-#: formeditor/commands.cpp:590
+#: formeditor/commands.cpp:591
 #, fuzzy
 #| msgid "Bring Widget to Front"
 msgid "Resize Widgets to Narrowest"
 msgstr "विजेटलाई अगाडि ल्याउनुहोस्"
 
-#: formeditor/commands.cpp:593
+#: formeditor/commands.cpp:594
 msgid "Resize Widgets to Widest"
 msgstr "फराकिलोमा विजेट रिसाइज गर्नुहोस्।"
 
-#: formeditor/commands.cpp:596
+#: formeditor/commands.cpp:597
 msgid "Resize Widgets to Shortest"
 msgstr "नजिकका लागि विजेटहरू रिसाइज गर्नुहोस्।"
 
-#: formeditor/commands.cpp:599
+#: formeditor/commands.cpp:600
 msgid "Resize Widgets to Tallest"
 msgstr "अग्लोका लागि विजेट रिसाइज गर्नुहोस्।"
 
-#: formeditor/commands.cpp:814
+#: formeditor/commands.cpp:815
 #, kde-format
 msgid "Change layout of widget \"%1\""
 msgstr "विजेट \"%1\" का लागि सजावट परिवर्तन गर्नुहोस्"
 
-#: formeditor/commands.cpp:920
+#: formeditor/commands.cpp:921
 #, fuzzy, kde-format
 #| msgid "Insert table field \"%1\""
 msgid "Insert widget \"%1\""
 msgstr "तालिका फिल्ड \"%1\" घुसाउनुहोस्"
 
-#: formeditor/commands.cpp:923
+#: formeditor/commands.cpp:924
 #, fuzzy
 #| msgid "Insert AutoField widget"
 msgid "Insert widget"
 msgstr "स्वत: फिल्ड विजेट घुसाउनुहोस्"
 
-#: formeditor/commands.cpp:964
+#: formeditor/commands.cpp:965
 #, kde-format
 msgid ""
 "Could not insert widget of type \"%1\". A problem with widget's creation "
 "encountered."
 msgstr "\"%1\" प्रकारको विजेट घुसाउन सकिँदैन । विजेटका सिर्जनामा एउटा समस्या भेटियो ।"
 
-#: formeditor/commands.cpp:1152
+#: formeditor/commands.cpp:1153
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Group Widgets Horizontally"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/commands.cpp:1155
+#: formeditor/commands.cpp:1156
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Group Widgets Vertically"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/commands.cpp:1158
+#: formeditor/commands.cpp:1159
 msgid "Group Widgets in a Grid"
 msgstr "ग्रीडमा विजेट समूह गर्नुहोस्"
 
-#: formeditor/commands.cpp:1161
+#: formeditor/commands.cpp:1162
 #, fuzzy
 #| msgid "Horizontally in &Splitter"
 msgid "Group Widgets Horizontally in a Splitter"
 msgstr "स्प्लिटरमा तेर्सो रूपमा"
 
-#: formeditor/commands.cpp:1164
+#: formeditor/commands.cpp:1165
 #, fuzzy
 #| msgid "Verti&cally in Splitter"
 msgid "Group Widgets Vertically in a Splitter"
 msgstr "स्प्लिटरमा ठाडो रूपमा"
 
-#: formeditor/commands.cpp:1167
+#: formeditor/commands.cpp:1168
 msgid "Group Widgets By Rows"
 msgstr "पङ्क्तिद्वारा विजेट समूह गर्नुहोस्।"
 
-#: formeditor/commands.cpp:1170
+#: formeditor/commands.cpp:1171
 msgid "Group Widgets Vertically By Columns"
 msgstr "स्तम्भद्वारा ठाडो रूपमा विजेट समूह गर्नुहोस्।"
 
-#: formeditor/commands.cpp:1173
+#: formeditor/commands.cpp:1174
 #, fuzzy
 #| msgid "No action"
 msgid "Group widgets"
 msgstr "कार्य छैन"
 
-#: formeditor/commands.cpp:1303
+#: formeditor/commands.cpp:1304
 #, fuzzy, kde-format
 #| msgid "&Break Layout"
 msgid "Break Layout: \"%1\""
 msgstr "विच्छेदित सजावट"
 
-#: formeditor/commands.cpp:1385
+#: formeditor/commands.cpp:1386
 #, fuzzy
 #| msgid "Date"
 msgid "Paste"
 msgstr "मिति"
 
-#: formeditor/commands.cpp:1712
+#: formeditor/commands.cpp:1713
 #, fuzzy
 #| msgid "Delete Row"
 msgid "Delete widget"
 msgstr "पङ्क्ति मेट्नुहोस्।"
 
-#: formeditor/commands.cpp:1843
+#: formeditor/commands.cpp:1844
 #, fuzzy
 #| msgid "Delete widget"
 msgid "Duplicate widget"
 msgstr "विजेट मेट्नुहोस्"
 
-#: formeditor/commands.cpp:1892
+#: formeditor/commands.cpp:1893
 msgid "Cut"
 msgstr "काट्नुहोस्"
 
-#: formeditor/form.cpp:417
+#: formeditor/commands.cpp:2180
+#, fuzzy
+#| msgid "Add Parameter"
+msgid "Add Page"
+msgstr "परिमिति थप्नुहोस्"
+
+#: formeditor/commands.cpp:2304
+#, fuzzy
+#| msgid "Remove Item"
+msgid "Remove Page"
+msgstr "वस्तु हटाउनुहोस्"
+
+#: formeditor/form.cpp:420
 #, fuzzy
 #| msgid "&Window"
 msgid "Window title"
 msgstr "सञ्झ्याल"
 
-#: formeditor/form.cpp:419
+#: formeditor/form.cpp:422
 msgid "Background Pixmap"
 msgstr "पृष्ठभूमि पिक्सम्याप"
 
-#: formeditor/form.cpp:420
+#: formeditor/form.cpp:423
 #, fuzzy
 #| msgid "Table"
 msgid "Enabled"
 msgstr "तालिका"
 
-#: formeditor/form.cpp:421
+#: formeditor/form.cpp:424
 msgid "Geometry"
 msgstr "ज्यामिती"
 
-#: formeditor/form.cpp:422
+#: formeditor/form.cpp:425
 msgid "Size Policy"
 msgstr "साइज नीति"
 
-#: formeditor/form.cpp:423
+#: formeditor/form.cpp:426
 #, fuzzy
 #| msgid "Medium"
 msgid "Minimum Size"
 msgstr "मध्यम"
 
-#: formeditor/form.cpp:424
+#: formeditor/form.cpp:427
 #, fuzzy
 #| msgid "Medium"
 msgid "Maximum Size"
 msgstr "मध्यम"
 
-#: formeditor/form.cpp:425
+#: formeditor/form.cpp:428
 #, fuzzy
 #| msgid "&Font..."
 msgid "Font"
 msgstr "फन्ट..."
 
-#: formeditor/form.cpp:426
+#: formeditor/form.cpp:429
 #, fuzzy
 #| msgctxt "Current form's actions"
 #| msgid "Current"
 msgid "Cursor"
 msgstr "मुद्रा"
 
-#: formeditor/form.cpp:427
+#: formeditor/form.cpp:430
 #, fuzzy
 #| msgid "Frame Color"
 msgid "Foreground Color"
 msgstr "फ्रेम रङ"
 
-#: formeditor/form.cpp:428
+#: formeditor/form.cpp:431
 #, fuzzy
 #| msgctxt "(a property name, keep the text narrow!)"
 #| msgid ""
@@ -7351,97 +7357,97 @@ msgstr ""
 "लेबुल पृष्ठभूमि\n"
 "रङ"
 
-#: formeditor/form.cpp:429
+#: formeditor/form.cpp:432
 msgid "Focus Policy"
 msgstr "फोकस नीति"
 
-#: formeditor/form.cpp:430
+#: formeditor/form.cpp:433
 #, fuzzy
 #| msgid "margins:"
 msgid "Margin"
 msgstr "सीमान्त:"
 
-#: formeditor/form.cpp:431
+#: formeditor/form.cpp:434
 #, fuzzy
 #| msgid "Read only"
 msgid "Read Only"
 msgstr "पढ्ने मात्र"
 
-#: formeditor/form.cpp:432
+#: formeditor/form.cpp:435
 #, fuzzy
 #| msgid "Subtype"
 msgid "Style Sheet"
 msgstr "उप प्रकार"
 
-#: formeditor/form.cpp:433
+#: formeditor/form.cpp:436
 #, fuzzy
 #| msgid "&Tools"
 msgctxt "Widget's Tooltip"
 msgid "Tooltip"
 msgstr "उपकरणहरु"
 
-#: formeditor/form.cpp:434
+#: formeditor/form.cpp:437
 msgctxt "Widget's Whats This"
 msgid "What's This"
 msgstr ""
 
-#: formeditor/form.cpp:435
+#: formeditor/form.cpp:438
 #, fuzzy
 #| msgid "Layout Widgets"
 msgid "Layout direction"
 msgstr "सजावट विजेट"
 
-#: formeditor/form.cpp:436
+#: formeditor/form.cpp:439
 #, fuzzy
 #| msgid "Size"
 msgid "Icon Size"
 msgstr "साइज"
 
-#: formeditor/form.cpp:440
+#: formeditor/form.cpp:443
 #, fuzzy
 #| msgid "Widgets"
 msgid "Frame Width"
 msgstr "विजेट"
 
-#: formeditor/form.cpp:441
+#: formeditor/form.cpp:444
 msgid "Mid Frame Width"
 msgstr "मिड फ्रेम चौडाइ"
 
-#: formeditor/form.cpp:442
+#: formeditor/form.cpp:445
 #, fuzzy
 #| msgid "Frame"
 msgid "Frame Shape"
 msgstr "फ्रेम"
 
-#: formeditor/form.cpp:443
+#: formeditor/form.cpp:446
 #, fuzzy
 #| msgid "Frame Color"
 msgid "Frame Shadow"
 msgstr "फ्रेम रङ"
 
-#: formeditor/form.cpp:445
+#: formeditor/form.cpp:448
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Vertical Scrollbar"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/form.cpp:446
+#: formeditor/form.cpp:449
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Horizontal Scrollbar"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/form.cpp:448
+#: formeditor/form.cpp:451
 #, fuzzy
 #| msgid "No action"
 msgid "No Background"
 msgstr "कार्य छैन"
 
-#: formeditor/form.cpp:449
+#: formeditor/form.cpp:452
 msgid "Palette Foreground"
 msgstr "रङदानी अग्रभूमि"
 
-#: formeditor/form.cpp:450
+#: formeditor/form.cpp:453
 #, fuzzy
 #| msgctxt "AutoField editor's type"
 #| msgid "Auto"
@@ -7449,7 +7455,7 @@ msgctxt "Auto (HINT: for AutoText)"
 msgid "Auto"
 msgstr "स्वत:"
 
-#: formeditor/form.cpp:452
+#: formeditor/form.cpp:455
 #, fuzzy
 #| msgctxt "AutoField editor's type"
 #| msgid "Auto"
@@ -7457,7 +7463,7 @@ msgctxt "Auto (HINT: for Align)"
 msgid "Auto"
 msgstr "स्वत:"
 
-#: formeditor/form.cpp:453
+#: formeditor/form.cpp:456
 #, fuzzy
 #| msgctxt "Label Position"
 #| msgid "Left"
@@ -7465,26 +7471,26 @@ msgctxt "Left (HINT: for Align)"
 msgid "Left"
 msgstr "बायाँ"
 
-#: formeditor/form.cpp:454
+#: formeditor/form.cpp:457
 #, fuzzy
 #| msgid "To Right"
 msgctxt "Right (HINT: for Align)"
 msgid "Right"
 msgstr "दायाँका लागि"
 
-#: formeditor/form.cpp:455 formeditor/form.cpp:457
+#: formeditor/form.cpp:458 formeditor/form.cpp:460
 #, fuzzy
 #| msgid "Create"
 msgctxt "Center (HINT: for Align)"
 msgid "Center"
 msgstr "सिर्जना गर्नुहोस्"
 
-#: formeditor/form.cpp:456
+#: formeditor/form.cpp:459
 msgctxt "Justify (HINT: for Align)"
 msgid "Justify"
 msgstr "समरेखन"
 
-#: formeditor/form.cpp:458
+#: formeditor/form.cpp:461
 #, fuzzy
 #| msgctxt "Label Position"
 #| msgid "Top"
@@ -7492,197 +7498,197 @@ msgctxt "Top (HINT: for Align)"
 msgid "Top"
 msgstr "माथि"
 
-#: formeditor/form.cpp:459
+#: formeditor/form.cpp:462
 #, fuzzy
 #| msgid "To Bottom"
 msgctxt "Bottom (HINT: for Align)"
 msgid "Bottom"
 msgstr "बटनका लागि"
 
-#: formeditor/form.cpp:461
+#: formeditor/form.cpp:464
 #, fuzzy
 #| msgid "Frame"
 msgctxt "No Frame (HINT: for Frame Shape)"
 msgid "No Frame"
 msgstr "फ्रेम"
 
-#: formeditor/form.cpp:462
+#: formeditor/form.cpp:465
 msgctxt "Box (HINT: for Frame Shape)"
 msgid "Box"
 msgstr "बाकस"
 
-#: formeditor/form.cpp:463
+#: formeditor/form.cpp:466
 #, fuzzy
 #| msgid "Page:"
 msgctxt "Panel (HINT: for Frame Shape)"
 msgid "Panel"
 msgstr "पृष्ठ:"
 
-#: formeditor/form.cpp:464
+#: formeditor/form.cpp:467
 #, fuzzy
 #| msgid "&Window"
 msgctxt "Windows Panel (HINT: for Frame Shape)"
 msgid "Windows Panel"
 msgstr "सञ्झ्याल"
 
-#: formeditor/form.cpp:465
+#: formeditor/form.cpp:468
 #, fuzzy
 #| msgid "&Horizontally"
 msgctxt "Horiz. Line (HINT: for Frame Shape)"
 msgid "Horiz. Line"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/form.cpp:466
+#: formeditor/form.cpp:469
 #, fuzzy
 #| msgid "&Vertically"
 msgctxt "Vertical Line (HINT: for Frame Shape)"
 msgid "Vertical Line"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/form.cpp:467
+#: formeditor/form.cpp:470
 #, fuzzy
 #| msgid "Subtype"
 msgctxt "Styled (HINT: for Frame Shape)"
 msgid "Styled"
 msgstr "उप प्रकार"
 
-#: formeditor/form.cpp:468
+#: formeditor/form.cpp:471
 msgctxt "Popup (HINT: for Frame Shape)"
 msgid "Popup"
 msgstr "पपअप"
 
-#: formeditor/form.cpp:469
+#: formeditor/form.cpp:472
 msgctxt "Menu Bar (HINT: for Frame Shape)"
 msgid "Menu Bar"
 msgstr "मेनुपट्टी"
 
-#: formeditor/form.cpp:470
+#: formeditor/form.cpp:473
 #, fuzzy
 #| msgid "Main Toolbar"
 msgctxt "Toolbar (HINT: for Frame Shape)"
 msgid "Toolbar"
 msgstr "मुख्य उपकरणपट्टि"
 
-#: formeditor/form.cpp:471
+#: formeditor/form.cpp:474
 #, fuzzy
 #| msgid "Text Box"
 msgctxt "Text Box (HINT: for Frame Shape)"
 msgid "Text Box"
 msgstr "पाठ बाकस"
 
-#: formeditor/form.cpp:472
+#: formeditor/form.cpp:475
 #, fuzzy
 #| msgid "To Widest"
 msgctxt "Tab Widget (HINT: for Frame Shape)"
 msgid "Tab Widget"
 msgstr "सबैभन्दा चौडा"
 
-#: formeditor/form.cpp:473
+#: formeditor/form.cpp:476
 #, fuzzy
 #| msgid "Group by"
 msgctxt "Group Box (HINT: for Frame Shape)"
 msgid "Group Box"
 msgstr "समूह द्वारा"
 
-#: formeditor/form.cpp:475
+#: formeditor/form.cpp:478
 #, fuzzy
 #| msgid "Print"
 msgctxt "Plain (HINT: for Frame Shadow)"
 msgid "Plain"
 msgstr "मुद्रण गर्नुहोस्"
 
-#: formeditor/form.cpp:476
+#: formeditor/form.cpp:479
 msgctxt "Raised (HINT: for Frame Shadow)"
 msgid "Raised"
 msgstr "उठाइएको"
 
-#: formeditor/form.cpp:477
+#: formeditor/form.cpp:480
 msgctxt "Sunken (HINT: for Frame Shadow)"
 msgid "Sunken"
 msgstr "सन्केन"
 
-#: formeditor/form.cpp:478
+#: formeditor/form.cpp:481
 #, fuzzy
 #| msgid "Create"
 msgctxt "for Frame Shadow"
 msgid "Internal"
 msgstr "सिर्जना गर्नुहोस्"
 
-#: formeditor/form.cpp:480
+#: formeditor/form.cpp:483
 msgctxt "No Focus (HINT: for Focus)"
 msgid "No Focus"
 msgstr "फोकस छैन"
 
-#: formeditor/form.cpp:481
+#: formeditor/form.cpp:484
 #, fuzzy
 #| msgid "Table"
 msgctxt "Tab (HINT: for Focus)"
 msgid "Tab"
 msgstr "तालिका"
 
-#: formeditor/form.cpp:482
+#: formeditor/form.cpp:485
 #, fuzzy
 #| msgid "On Click"
 msgctxt "Click (HINT: for Focus)"
 msgid "Click"
 msgstr "क्लिकमा"
 
-#: formeditor/form.cpp:483
+#: formeditor/form.cpp:486
 msgctxt "Tab/Click (HINT: for Focus)"
 msgid "Tab/Click"
 msgstr "ट्याब/क्लिक"
 
-#: formeditor/form.cpp:484
+#: formeditor/form.cpp:487
 msgctxt "Tab/Click/MouseWheel (HINT: for Focus)"
 msgid "Tab/Click/MouseWheel"
 msgstr "ट्याब/क्लिक/माउस ह्विल"
 
-#: formeditor/form.cpp:486
+#: formeditor/form.cpp:489
 #, fuzzy
 #| msgctxt "AutoField editor's type"
 #| msgid "Auto"
 msgid "Auto"
 msgstr "स्वत:"
 
-#: formeditor/form.cpp:487
+#: formeditor/form.cpp:490
 msgid "Always Off"
 msgstr "सधै बन्द"
 
-#: formeditor/form.cpp:488
+#: formeditor/form.cpp:491
 msgid "Always On"
 msgstr "सधै खुला"
 
-#: formeditor/form.cpp:491
+#: formeditor/form.cpp:494
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Horizontal"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/form.cpp:492
+#: formeditor/form.cpp:495
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Vertical"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/form.cpp:495
+#: formeditor/form.cpp:498
 #, fuzzy
 #| msgid "To Right"
 msgid "Left to Right"
 msgstr "दायाँका लागि"
 
-#: formeditor/form.cpp:496
+#: formeditor/form.cpp:499
 #, fuzzy
 #| msgid "To Left"
 msgid "Right to Left"
 msgstr "बायाँका लागि"
 
-#: formeditor/form.cpp:1289
+#: formeditor/form.cpp:1298
 #, fuzzy, kde-format
 #| msgid "Renaming object \"%1\" failed."
 msgid "Renaming widget \"%1\" to \"%2\" failed."
 msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
 
-#: formeditor/form.cpp:1921
+#: formeditor/form.cpp:1942
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
@@ -7693,7 +7699,7 @@ msgstr ""
 "\"%1\" तालिकालाई \"%2\" मा पुन: नामकरण गर्न सकेन । \"%3\" तालिका पहिल्यै अवस्थित छ "
 "।"
 
-#: formeditor/form.cpp:1932
+#: formeditor/form.cpp:1953
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
@@ -7704,28 +7710,28 @@ msgstr ""
 "\"%1\" तालिकालाई \"%2\" मा पुन: नामकरण गर्न सकेन । \"%3\" तालिका पहिल्यै अवस्थित छ "
 "।"
 
-#: formeditor/form.cpp:2030 formeditor/form.cpp:2354
+#: formeditor/form.cpp:2079 formeditor/form.cpp:2403
 #, fuzzy, kde-format
 #| msgid "Multiple Widgets"
 msgid "Multiple Widgets (%1)"
 msgstr "बहु विजेट"
 
-#: formeditor/form.cpp:2196 formeditor/form.cpp:2450
+#: formeditor/form.cpp:2245 formeditor/form.cpp:2499
 msgid "Events"
 msgstr "घटना"
 
-#: formeditor/form.cpp:2344
+#: formeditor/form.cpp:2393
 #, fuzzy, kde-format
 #| msgctxt "Object name : Object type"
 #| msgid "%1 : %2"
 msgid "%1 : Form"
 msgstr "%1 : %2"
 
-#: formeditor/form.cpp:2406
+#: formeditor/form.cpp:2455
 msgid "No Buddy"
 msgstr "साथी छैन"
 
-#: formeditor/form.cpp:2933
+#: formeditor/form.cpp:2982
 msgid ""
 "<b>Cannot create the layout.</b>\n"
 "All selected widgets must have the same parent."
@@ -7733,41 +7739,41 @@ msgstr ""
 "<b>सजावट सिर्जना गर्न सकिँदैन।</b>\n"
 "सबै चयन गरिएका विजेटहरूसँग समान प्यारेन्ट हुनुपर्दछ।"
 
-#: formeditor/form.cpp:3001
+#: formeditor/form.cpp:3050
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Hor. Alignment"
 msgstr "तेर्सो पङ्क्तिबद्वता"
 
-#: formeditor/form.cpp:3002
+#: formeditor/form.cpp:3051
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Horizontal Alignment"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/form.cpp:3024
+#: formeditor/form.cpp:3073
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Ver. Alignment"
 msgstr "ठाडो पङ्क्तिबद्वता"
 
-#: formeditor/form.cpp:3025
+#: formeditor/form.cpp:3074
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Vertical Alignment"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/form.cpp:3040
+#: formeditor/form.cpp:3089
 msgid "Word Break"
 msgstr "शब्द बिच्छेद"
 
-#: formeditor/form.cpp:3109
+#: formeditor/form.cpp:3158
 msgid "Container's Layout"
 msgstr "कन्टेनरको सजावट"
 
-#: formeditor/form.cpp:3116
+#: formeditor/form.cpp:3165
 msgid "Layout Margin"
 msgstr "सजावट सीमान्त"
 
-#: formeditor/form.cpp:3123
+#: formeditor/form.cpp:3172
 #, fuzzy
 #| msgid "Layout Widgets"
 msgid "Layout Spacing"
@@ -8006,26 +8012,20 @@ msgstr "कार्यान्वयन गर्ने कार्य:"
 msgid "&Select action to be executed after clicking \"%1\" button:"
 msgstr "\"%1\" बटन क्लिक गरेपछि कार्यान्वयन हुने कार्य चयन गर्नुहोस् ।"
 
-#: formeditor/WidgetTreeWidget.cpp:79
-#, fuzzy, kde-format
-#| msgid "Table"
-msgid "Tab %1"
-msgstr "तालिका"
-
-#: formeditor/WidgetTreeWidget.cpp:84
+#: formeditor/WidgetTreeWidget.cpp:104
 #, fuzzy
 #| msgid "Last Page"
 msgctxt "Tab widget's page"
 msgid "Tab Page"
 msgstr "अन्तिम पृष्ठ"
 
-#: formeditor/WidgetTreeWidget.cpp:249
+#: formeditor/WidgetTreeWidget.cpp:269
 #, fuzzy
 #| msgid "Widgets"
 msgid "Widget name"
 msgstr "विजेट"
 
-#: formeditor/WidgetTreeWidget.cpp:249
+#: formeditor/WidgetTreeWidget.cpp:269
 #, fuzzy
 #| msgid "Type"
 msgctxt "Widget's type"
@@ -8523,6 +8523,11 @@ msgstr "पूरा शब्द मात्र"
 #: rc.cpp:213
 msgid "Prompt on replace"
 msgstr "प्रवर्धन को लागि बदल्नुहोस्।"
+
+#, fuzzy
+#~| msgid "Table"
+#~ msgid "Tab %1"
+#~ msgstr "तालिका"
 
 #, fuzzy
 #~| msgid "Table"
