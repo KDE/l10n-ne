@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-27 06:11+0200\n"
+"POT-Creation-Date: 2010-09-28 07:11+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -37,7 +37,7 @@ msgstr "भोल्युम"
 
 #: TrayIcon.cpp:119 TrayIconLegacy.cpp:154
 #: context/applets/currenttrack/CurrentTrack.cpp:129
-#: context/applets/currenttrack/CurrentTrack.cpp:574
+#: context/applets/currenttrack/CurrentTrack.cpp:586
 #: playlist/PlaylistModel.cpp:665 widgets/SmartPlaylistEditor.cpp:185
 #: widgets/MetaQueryWidget.cpp:229
 msgid "Score"
@@ -61,7 +61,7 @@ msgid "Last played"
 msgstr "अन्तिममा बजाएको"
 
 #: TrayIconLegacy.cpp:184 context/applets/currenttrack/CurrentTrack.cpp:130
-#: context/applets/currenttrack/CurrentTrack.cpp:575
+#: context/applets/currenttrack/CurrentTrack.cpp:587
 #: widgets/MetaQueryWidget.cpp:232
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
@@ -90,7 +90,7 @@ msgstr "लाम ट्रयाक"
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: TrayIconLegacy.cpp:224 rc.cpp:1613 rc.cpp:2236
+#: TrayIconLegacy.cpp:224 rc.cpp:1613 rc.cpp:2239
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -1699,7 +1699,7 @@ msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:128
-#: context/applets/currenttrack/CurrentTrack.cpp:573
+#: context/applets/currenttrack/CurrentTrack.cpp:585
 #, fuzzy
 #| msgid "Playcount"
 msgid "Play count"
@@ -1713,17 +1713,27 @@ msgstr "मन पर्ने ट्रयाक"
 
 #. i18n: file: context/applets/currenttrack/currentTrackSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, currentTrackSettings)
-#: context/applets/currenttrack/CurrentTrack.cpp:714 rc.cpp:891
+#: context/applets/currenttrack/CurrentTrack.cpp:726 rc.cpp:891
 #, fuzzy
 #| msgid "After Current Track"
 msgid "Current Track Settings"
 msgstr "हालको ट्रयाक पछि"
 
+#: context/applets/currenttrack/CurrentTrack.h:48
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
+msgid "Unknown Artist"
+msgstr "अज्ञात कलाकार"
+
+#: context/applets/currenttrack/CurrentTrack.h:49
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:427
+msgid "Unknown Album"
+msgstr "अज्ञात एल्बम"
+
 #: context/applets/lyrics/LyricsApplet.cpp:49
 #: context/applets/lyrics/LyricsApplet.cpp:90
 #: context/applets/lyrics/LyricsApplet.cpp:236
-#: context/applets/lyrics/LyricsApplet.cpp:292
-#: context/applets/lyrics/LyricsApplet.cpp:303 dialogs/ScriptManager.cpp:695
+#: context/applets/lyrics/LyricsApplet.cpp:290
+#: context/applets/lyrics/LyricsApplet.cpp:301 dialogs/ScriptManager.cpp:695
 #: dialogs/TagDialog.cpp:698
 msgid "Lyrics"
 msgstr "रचना"
@@ -1737,7 +1747,7 @@ msgstr "रचना"
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, closeButton)
 #: context/applets/lyrics/LyricsApplet.cpp:105
-#: firstruntutorial/FirstRunTutorialPage.cpp:56 rc.cpp:2261
+#: firstruntutorial/FirstRunTutorialPage.cpp:56 rc.cpp:2264
 #, fuzzy
 #| msgid "Closed"
 msgid "Close"
@@ -1773,17 +1783,17 @@ msgstr "सेटिङ"
 msgid "No lyrics script is running."
 msgstr "माफ गर्नुहोस्, कुनै रचना स्क्रिप्ट चलिरहेको छैन।"
 
-#: context/applets/lyrics/LyricsApplet.cpp:257
+#: context/applets/lyrics/LyricsApplet.cpp:255
 #, fuzzy
 #| msgid "Fetching Lyrics..."
 msgid "Lyrics : Fetching ..."
 msgstr "रचना तानिँदैछ..."
 
-#: context/applets/lyrics/LyricsApplet.cpp:258
+#: context/applets/lyrics/LyricsApplet.cpp:256
 msgid "Lyrics are being fetched."
 msgstr ""
 
-#: context/applets/lyrics/LyricsApplet.cpp:264
+#: context/applets/lyrics/LyricsApplet.cpp:262
 #, kde-format
 msgid ""
 "Could not download lyrics.\n"
@@ -1792,13 +1802,13 @@ msgid ""
 "%1"
 msgstr ""
 
-#: context/applets/lyrics/LyricsApplet.cpp:314
+#: context/applets/lyrics/LyricsApplet.cpp:312
 #, fuzzy
 #| msgid "There are not enough neighbors for this radio."
 msgid "There were no lyrics found for this track"
 msgstr "यो रेडियोका लागि पर्याप्त छिमेकीहरू छैन।"
 
-#: context/applets/lyrics/LyricsApplet.cpp:399
+#: context/applets/lyrics/LyricsApplet.cpp:397
 #, fuzzy
 #| msgid "Are you sure you want to overwrite this cover?"
 msgctxt "@info"
@@ -1807,7 +1817,7 @@ msgid ""
 "have made will be lost."
 msgstr "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: context/applets/lyrics/LyricsApplet.cpp:400
+#: context/applets/lyrics/LyricsApplet.cpp:398
 #, fuzzy
 #| msgid "Fetching Lyrics"
 msgid "Refetch lyrics"
@@ -1815,7 +1825,7 @@ msgstr "रचना तान्दै"
 
 #. i18n: file: context/applets/lyrics/lyricsSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, lyricsSettings)
-#: context/applets/lyrics/LyricsApplet.cpp:430 rc.cpp:894
+#: context/applets/lyrics/LyricsApplet.cpp:428 rc.cpp:894
 #, fuzzy
 #| msgid "&Settings"
 msgid "Lyrics Settings"
@@ -1825,8 +1835,8 @@ msgstr "सेटिङ"
 #: context/applets/photos/PhotosApplet.cpp:136
 #: context/applets/photos/PhotosApplet.cpp:195
 #: context/applets/photos/PhotosApplet.cpp:208
-#: context/applets/photos/PhotosApplet.cpp:229
-#: context/applets/photos/PhotosApplet.cpp:244
+#: context/applets/photos/PhotosApplet.cpp:228
+#: context/applets/photos/PhotosApplet.cpp:243
 #, fuzzy
 #| msgid "Good"
 msgid "Photos"
@@ -1864,7 +1874,7 @@ msgstr "मूल्याङ्कन"
 msgid "Fetching ..."
 msgstr "रचना तानिँदैछ..."
 
-#: context/applets/photos/PhotosApplet.cpp:267
+#: context/applets/photos/PhotosApplet.cpp:266
 #, fuzzy
 #| msgid "&Settings"
 msgid "Photos Settings"
@@ -1957,7 +1967,7 @@ msgstr "%1 मा मिल्ने कलाकारहरू"
 #. i18n: file: context/applets/wikipedia/wikipediaSettings.ui:21
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:330
-#: context/applets/wikipedia/WikipediaApplet.cpp:413 rc.cpp:929 rc.cpp:965
+#: context/applets/wikipedia/WikipediaApplet.cpp:412 rc.cpp:929 rc.cpp:965
 #, fuzzy
 #| msgid "Autodetect"
 msgctxt "automatic language selection"
@@ -1969,7 +1979,7 @@ msgstr "स्वत: पत्ता लगाउनुहोस्"
 #. i18n: file: context/applets/wikipedia/wikipediaSettings.ui:26
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:333
-#: context/applets/wikipedia/WikipediaApplet.cpp:416 rc.cpp:932 rc.cpp:968
+#: context/applets/wikipedia/WikipediaApplet.cpp:415 rc.cpp:932 rc.cpp:968
 #, fuzzy
 #| msgid "Engine"
 msgid "English"
@@ -1980,7 +1990,7 @@ msgstr "इन्जिन"
 #. i18n: file: context/applets/wikipedia/wikipediaSettings.ui:31
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:336
-#: context/applets/wikipedia/WikipediaApplet.cpp:419 rc.cpp:935 rc.cpp:971
+#: context/applets/wikipedia/WikipediaApplet.cpp:418 rc.cpp:935 rc.cpp:971
 #, fuzzy
 #| msgid "France"
 msgid "French"
@@ -1991,7 +2001,7 @@ msgstr "फ्रान्स"
 #. i18n: file: context/applets/wikipedia/wikipediaSettings.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:339
-#: context/applets/wikipedia/WikipediaApplet.cpp:422 rc.cpp:938 rc.cpp:974
+#: context/applets/wikipedia/WikipediaApplet.cpp:421 rc.cpp:938 rc.cpp:974
 #, fuzzy
 #| msgid "Germany"
 msgid "German"
@@ -2221,7 +2231,7 @@ msgstr "ट्रयाक"
 msgid "Reload"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:449
+#: context/applets/wikipedia/WikipediaApplet.cpp:448
 #, fuzzy
 #| msgid "Wikipedia"
 msgid "Wikipedia Settings"
@@ -2249,11 +2259,11 @@ msgstr "प्ले सूचीमा थप्नुहोस्"
 #: context/applets/labels/LabelsApplet.cpp:149
 #: context/applets/labels/LabelsApplet.cpp:156
 #: context/applets/labels/LabelsApplet.cpp:409
-#: context/applets/labels/LabelsApplet.cpp:418 dialogs/TagDialog.cpp:700
+#: context/applets/labels/LabelsApplet.cpp:417 dialogs/TagDialog.cpp:700
 msgid "Labels"
 msgstr "लेबुल"
 
-#: context/applets/labels/LabelsApplet.cpp:467
+#: context/applets/labels/LabelsApplet.cpp:466
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -2262,7 +2272,7 @@ msgstr "\"%1\" को लागि १ परिणाम"
 
 #. i18n: file: context/applets/labels/labelsSettings.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, labelsSettings)
-#: context/applets/labels/LabelsApplet.cpp:593 rc.cpp:977
+#: context/applets/labels/LabelsApplet.cpp:592 rc.cpp:977
 #, fuzzy
 #| msgid "&Settings"
 msgid "Labels Settings"
@@ -2484,7 +2494,7 @@ msgid "print() takes one argument"
 msgstr ""
 
 #: context/toolbar/AppletItemOverlay.cpp:104
-#: context/toolbar/AppletToolbarAppletItem.cpp:62
+#: context/toolbar/AppletToolbarAppletItem.cpp:64
 #, fuzzy
 #| msgid "Remove selected"
 msgid "Remove Applet"
@@ -2496,17 +2506,17 @@ msgstr "चयन गरिएको हटाउनुहोस्"
 msgid "Add Applets..."
 msgstr "डाइरेक्टरी थप्नुहोस्"
 
-#: context/toolbar/AppletToolbarAppletItem.cpp:57
-#, fuzzy
-#| msgid "Enter preset name:"
-msgid "no applet name"
-msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
-
 #: context/toolbar/AppletToolbarConfigItem.cpp:36
 #, fuzzy
 #| msgid "&Configure..."
 msgid "Configure Applets..."
 msgstr "कन्फिगर गर्नुहोस्..."
+
+#: context/toolbar/AppletToolbarAppletItem.cpp:59
+#, fuzzy
+#| msgid "Enter preset name:"
+msgid "no applet name"
+msgstr "प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
 
 #: context/tools/amarokpkg.cpp:40
 #, fuzzy
@@ -2616,13 +2626,6 @@ msgctxt ""
 msgid "One of install, remove, upgrade or list is required."
 msgstr ""
 
-#: context/widgets/ToolBoxMenu.cpp:107
-#: context/widgets/appletexplorer/AppletExplorer.cpp:90
-#, fuzzy
-#| msgid "Forbidden"
-msgid "Hide menu"
-msgstr "निषेधित"
-
 #: context/widgets/TrackWidget.cpp:39
 #, fuzzy
 #| msgid "Score:"
@@ -2635,6 +2638,13 @@ msgstr "प्राप्ताङ्क:"
 #| msgid "%1 GB %2 (x%3)"
 msgid "%1 - %2 (%3)"
 msgstr "%1 गिगाबाइट %2 (x%3)"
+
+#: context/widgets/appletexplorer/AppletExplorer.cpp:90
+#: context/widgets/ToolBoxMenu.cpp:109
+#, fuzzy
+#| msgid "Forbidden"
+msgid "Hide menu"
+msgstr "निषेधित"
 
 #: context/widgets/appletexplorer/AppletItemModel.cpp:93
 #, fuzzy
@@ -2893,23 +2903,23 @@ msgid ""
 "your device. Please enter your sudo password"
 msgstr ""
 
-#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2195
+#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2197
 #, fuzzy
 #| msgid "Selected Tracks"
 msgid "Select Stale Tracks To Delete"
 msgstr "चयन गरिएको ट्रयाक"
 
-#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2195
+#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2197
 #, fuzzy
 #| msgid "Selected Tracks"
 msgid "Stale Tracks"
 msgstr "चयन गरिएको ट्रयाक"
 
-#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2248
+#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2250
 msgid "Adding Orphaned Tracks to iPod Database"
 msgstr ""
 
-#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2286
+#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2288
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "One orphaned track added to the database."
@@ -2917,7 +2927,7 @@ msgid_plural "%1 tracks added to the database."
 msgstr[0] "एउटा नक्कली ट्रयाक डाटाबेसमा थपिएको छैन"
 msgstr[1] "एउटा नक्कली ट्रयाक डाटाबेसमा थपिएको छैन"
 
-#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2291
+#: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:2293
 #, fuzzy
 #| msgid "Tracks Added"
 msgid "Orphaned Tracks Added"
@@ -2939,42 +2949,42 @@ msgstr ""
 msgid "Unsupported format: %1"
 msgstr "असमर्थित भिडियो"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:390
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:391
 #, fuzzy
 #| msgid "1 track found on device"
 #| msgid_plural "%n tracks found on device "
 msgid "Already on device"
 msgstr "यन्त्रमा %n ट्र्याक फेला पर्यो "
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:406
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:407
 msgid "Tracks not copied: the device already has these tracks"
 msgstr ""
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:427
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:428
 #, fuzzy
 #| msgid "Encode Insufficient Disk Space"
 msgid "Tracks not copied: the device has insufficient space"
 msgstr "अपर्याप्त डिस्क खाली स्थान सङ्केतन गर्नुहोस्"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:436
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:437
 #, fuzzy
 #| msgid "Transferring files to media device"
 msgid "Transferring Tracks to Device"
 msgstr "मिडिया यन्त्रमा फाइलहरू स्थानान्तरण गर्दै"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:557
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:482
 #, fuzzy, kde-format
 msgid "%1 track failed to copy to the device"
 msgid_plural "%1 tracks failed to copy to the device"
 msgstr[0] "एउटा ट्रयाक मिडिया यन्त्रमा पहिल्यै छ"
 msgstr[1] "एउटा ट्रयाक मिडिया यन्त्रमा पहिल्यै छ"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:582
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:584
 #, fuzzy
 msgid "The track failed to copy to the device"
 msgstr "एउटा ट्रयाक मिडिया यन्त्रमा पहिल्यै छ"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:592
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:594
 #, fuzzy
 #| msgid "Tracks Removed"
 msgid "Track not deleted:"
@@ -2982,7 +2992,7 @@ msgid_plural "Tracks not deleted:"
 msgstr[0] "ट्रयाक हटाइयो"
 msgstr[1] "ट्रयाक हटाइयो"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:593
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:595
 #, fuzzy
 #| msgid "Deleting track(s) failed."
 msgid "Deleting Track Failed"
@@ -2990,18 +3000,24 @@ msgid_plural "Deleting Tracks Failed"
 msgstr[0] "ट्रयाकहरूको मेटाइ असफल भयो ।"
 msgstr[1] "ट्रयाकहरूको मेटाइ असफल भयो ।"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:597
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:599
 #, fuzzy, kde-format
 #| msgid "Track already exists on device"
 msgid "%1 tracks are already being deleted from the device."
 msgstr "ट्रयाक यन्त्रमा पहिल्यै छ"
 
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:614
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:616
 #, fuzzy
 msgid "Removing Track from Device"
 msgid_plural "Removing Tracks from Device"
 msgstr[0] "आइपोडबाट ट्र्याक मेट्नुहोस्"
 msgstr[1] "आइपोडबाट ट्र्याक मेट्नुहोस्"
+
+#: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.h:42
+#, fuzzy
+#| msgid "Make Media Device Playlist"
+msgid "Media Device playlists"
+msgstr "मिडिया यन्त्र प्ले सूची बनाउनुहोस्"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
 #: playlistmanager/file/PlaylistFileProvider.cpp:442
@@ -3019,12 +3035,6 @@ msgstr "एउटा प्ले सूची"
 #| msgid "&Enter a name for the playlist:"
 msgid "Enter new name for playlist:"
 msgstr "प्ले सूचीका लागि नाम प्रविष्ट गर्नुहोस्:"
-
-#: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.h:42
-#, fuzzy
-#| msgid "Make Media Device Playlist"
-msgid "Media Device playlists"
-msgstr "मिडिया यन्त्र प्ले सूची बनाउनुहोस्"
 
 #: core-impl/collections/mediadevicecollection/podcast/MediaDevicePodcastProvider.cpp:58
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:155
@@ -3047,14 +3057,6 @@ msgstr "एमटीपी यन्त्रमा जडान गर्न �
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:374
 msgid "Could not copy track from device."
 msgstr "यन्त्रबाट ट्रयाक प्रतिलिपि गर्न सकेन ।"
-
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
-msgid "Unknown Artist"
-msgstr "अज्ञात कलाकार"
-
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:427
-msgid "Unknown Album"
-msgstr "अज्ञात एल्बम"
 
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:433
 msgid "Unknown Genre"
@@ -3125,7 +3127,7 @@ msgstr "विभिन्न कलाकारहरू"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:90
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: core-impl/collections/sqlcollection/SqlMeta.cpp:233 rc.cpp:2172
+#: core-impl/collections/sqlcollection/SqlMeta.cpp:233 rc.cpp:2175
 msgid "Stream"
 msgstr "प्रवाह"
 
@@ -4388,7 +4390,7 @@ msgstr "डाटाबेस इन्जिन"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:63
 #. i18n: ectx: property (text), widget (QTableWidget, serverList)
-#. i18n: file: services/ampache/NewServerWidget.ui:40
+#. i18n: file: services/ampache/NewServerWidget.ui:53
 #. i18n: ectx: property (text), widget (QLabel, labelUsername)
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:52 rc.cpp:2106
 #: rc.cpp:2121
@@ -4401,7 +4403,7 @@ msgstr "प्रयोगकर्ता नाम"
 #. i18n: ectx: label, entry, group (Scrobbler)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:68
 #. i18n: ectx: property (text), widget (QTableWidget, serverList)
-#. i18n: file: services/ampache/NewServerWidget.ui:50
+#. i18n: file: services/ampache/NewServerWidget.ui:63
 #. i18n: ectx: property (text), widget (QLabel, labelPassword)
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:56 rc.cpp:428
 #: rc.cpp:2109 rc.cpp:2124
@@ -6954,7 +6956,7 @@ msgstr "प्लेसूची नाम:"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:36
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:524 rc.cpp:2298
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:524 rc.cpp:2301
 #, fuzzy
 #| msgid "Groupings"
 msgid "No Grouping"
@@ -7901,27 +7903,45 @@ msgstr "यो रेडियोका लागि पर्याप्त �
 msgid "Ampache Server %1"
 msgstr "उन्नत सर्भर"
 
-#: services/ampache/AmpacheService.cpp:126
-msgid "Amarok frontend for your Ampache server."
-msgstr ""
+#: services/ampache/AddServerDialog.cpp:33
+#, fuzzy
+#| msgid "Add new preset"
+msgid "Add new Ampache server"
+msgstr "नयाँ प्रिसेट थप्नुहोस्"
 
-#: services/ampache/AmpacheService.cpp:128
-msgid ""
-"Use Amarok as a seamless frontend to your Ampache server. This lets you "
-"browse and play all the Ampache contents from within Amarok."
-msgstr ""
+#: services/ampache/AddServerDialog.cpp:73
+#, fuzzy
+#| msgid "Device successfully connected"
+msgid "Successfully connected"
+msgstr "यन्त्र सफलतापूर्वक जडान गरियो"
 
-#: services/ampache/AmpacheService.cpp:214
+#: services/ampache/AddServerDialog.cpp:78
+#, fuzzy
+#| msgid "Connect"
+msgid "Connection failure"
+msgstr "जडान गर्नुहोस्"
+
+#: services/ampache/AmpacheAccountLogin.cpp:134
 #, fuzzy
 #| msgid "Enter a login and a password"
 msgid "Enter the server name and a password"
 msgstr "लगइन र पासवर्ड प्रविष्ट गर्नुहोस्"
 
-#: services/ampache/AmpacheService.cpp:305
+#: services/ampache/AmpacheAccountLogin.cpp:224
 #, fuzzy
 #| msgid "Authentication Failure"
 msgid "Authentication Error"
 msgstr "प्रमाणीकरण असफलता"
+
+#: services/ampache/AmpacheService.cpp:98
+msgid "Amarok frontend for your Ampache server."
+msgstr ""
+
+#: services/ampache/AmpacheService.cpp:100
+msgid ""
+"Use Amarok as a seamless frontend to your Ampache server. This lets you "
+"browse and play all the Ampache contents from within Amarok."
+msgstr ""
 
 #: services/jamendo/JamendoInfoParser.cpp:46
 #: services/jamendo/JamendoInfoParser.cpp:77
@@ -7939,7 +7959,7 @@ msgstr ""
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, downloadButton)
 #: services/jamendo/JamendoMeta.cpp:135 services/jamendo/JamendoMeta.cpp:371
-#: rc.cpp:2224
+#: rc.cpp:2227
 msgid "&Download"
 msgstr "डाउनलोड"
 
@@ -8013,7 +8033,7 @@ msgstr "अद्यावधिक गर्नुहोस्"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: services/jamendo/JamendoService.cpp:124 rc.cpp:2175
+#: services/jamendo/JamendoService.cpp:124 rc.cpp:2178
 msgid "Download"
 msgstr "डाउनलोड गर्नुहोस्"
 
@@ -8416,7 +8436,7 @@ msgstr "लगइन"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, testLogin)
-#: services/lastfm/LastFmServiceSettings.cpp:196 rc.cpp:2139
+#: services/lastfm/LastFmServiceSettings.cpp:196 rc.cpp:2142
 #, fuzzy
 #| msgid "Login"
 msgid "&Test Login"
@@ -11529,7 +11549,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_User)
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:44
 #. i18n: ectx: property (text), widget (QLabel, labelUsername)
-#: rc.cpp:794 rc.cpp:2130
+#: rc.cpp:794 rc.cpp:2133
 msgid "&Username:"
 msgstr "प्रयोगकर्ता नाम:"
 
@@ -11543,7 +11563,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_Password)
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:57
 #. i18n: ectx: property (text), widget (QLabel, labelPassword)
-#: rc.cpp:801 rc.cpp:2133
+#: rc.cpp:801 rc.cpp:2136
 msgid "&Password:"
 msgstr "पासवर्ड:"
 
@@ -11701,7 +11721,7 @@ msgstr "ओएसडी प्रदर्शन पाठ अनुकूलन
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:3
-#: rc.cpp:879 rc.cpp:2295
+#: rc.cpp:879 rc.cpp:2298
 #, fuzzy
 #| msgid "Playlist name:"
 msgid "Default"
@@ -13865,9 +13885,17 @@ msgstr "सर्भर सतर्कता"
 msgid "Form"
 msgstr "फर्म"
 
+#. i18n: file: services/ampache/NewServerWidget.ui:77
+#. i18n: ectx: property (text), widget (KPushButton, verifyButton)
+#: rc.cpp:2127
+#, fuzzy
+#| msgid "Connect"
+msgid "Check Connection"
+msgstr "जडान गर्नुहोस्"
+
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:38
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: rc.cpp:2127
+#: rc.cpp:2130
 #, fuzzy
 #| msgid "last.fm Profile"
 msgid "Last.fm Profile"
@@ -13875,7 +13903,7 @@ msgstr "last.fm प्रोफाइल"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:86
 #. i18n: ectx: property (text), widget (QLabel, kActiveLabel1)
-#: rc.cpp:2136
+#: rc.cpp:2139
 #, fuzzy
 #| msgid ""
 #| "<P>To use last.fm with Amarok, you need a <A href='http://www.last.fm:80/"
@@ -13887,7 +13915,7 @@ msgstr ""
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:106
 #. i18n: ectx: property (text), widget (QLabel, kActiveLabel2)
-#: rc.cpp:2142
+#: rc.cpp:2145
 #, fuzzy
 #| msgid ""
 #| "Why not join the <A href='http://www.last.fm:80/group/Amarok"
@@ -13902,7 +13930,7 @@ msgstr ""
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:116
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:2145
+#: rc.cpp:2148
 #, fuzzy
 #| msgid "last.fm Services"
 msgid "Last.fm Services"
@@ -13910,7 +13938,7 @@ msgstr "last.fm सेवाहरू"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SubmitPlayedSongs)
-#: rc.cpp:2148
+#: rc.cpp:2151
 #, fuzzy
 #| msgid "tracks"
 msgid "&Submit tracks"
@@ -13918,13 +13946,13 @@ msgstr "ट्रयाक"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RetrieveSimilarArtists)
-#: rc.cpp:2151
+#: rc.cpp:2154
 msgid "&Retrieve similar artists"
 msgstr "एउटै कलाकार पुन: प्राप्त गर्नुहोस्"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:2154
+#: rc.cpp:2157
 #, fuzzy
 #| msgid "Re&download"
 msgid "Redownloads"
@@ -13932,7 +13960,7 @@ msgstr "पुन: डाउनलोड गर्नुहोस्"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:2157
+#: rc.cpp:2160
 msgid ""
 "Enter your e-mail here to be able to redownload any previous purchase from "
 "Magnatune directly from within Amarok."
@@ -13940,7 +13968,7 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:2160
+#: rc.cpp:2163
 #, fuzzy
 #| msgid "Email:"
 msgctxt "Username for logins to Magnatune"
@@ -13949,7 +13977,7 @@ msgstr "इमेल:"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:53
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:2163
+#: rc.cpp:2166
 #, fuzzy
 #| msgid "General Options"
 msgid "Membership Options"
@@ -13957,13 +13985,13 @@ msgstr "साधारण विकल्प"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, isMemberCheckbox)
-#: rc.cpp:2166
+#: rc.cpp:2169
 msgid "I am a member"
 msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:79
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2169
+#: rc.cpp:2172
 #, fuzzy
 #| msgid "Mime Type:"
 msgid "Membership type:"
@@ -13971,7 +13999,7 @@ msgstr "माइम प्रकार:"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:103
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:2178
+#: rc.cpp:2181
 #, fuzzy
 #| msgid "Username:"
 msgctxt "Username for logins to Magnatune"
@@ -13980,13 +14008,13 @@ msgstr "प्रयोगकर्ता नाम:"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:117
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:2181
+#: rc.cpp:2184
 msgid "Password:"
 msgstr "पासवर्ड:"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:135
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2184
+#: rc.cpp:2187
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -14006,7 +14034,7 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:157
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:2191
+#: rc.cpp:2194
 #, fuzzy
 #| msgid "Stream Done"
 msgid "Stream Options"
@@ -14014,55 +14042,55 @@ msgstr "प्रवाह पूरा भयो"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:2194
+#: rc.cpp:2197
 msgid "Preview stream type:"
 msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:171
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:2197
+#: rc.cpp:2200
 msgid "Ogg"
 msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:2200
+#: rc.cpp:2203
 msgid "High Quality Mp3"
 msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:181
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:2203
+#: rc.cpp:2206
 msgid "Low Quality Mp3"
 msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatuneDownloadDialogBase)
-#: rc.cpp:2206
+#: rc.cpp:2209
 msgid "Magnatune.com Album Download"
 msgstr "Magnatune.com एल्बम डाउनलोड"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:2209
+#: rc.cpp:2212
 msgid "Download options"
 msgstr "विकल्प डाउनलोड गर्नुहोस्"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:2212
+#: rc.cpp:2215
 msgid "Select Format:"
 msgstr "ढाँचा चयन गर्नुहोस्:"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:38
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:2215
+#: rc.cpp:2218
 msgid "Download to:"
 msgstr "यसमा डाउनलोड गर्नुहोस्:"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:2218
+#: rc.cpp:2221
 msgid ""
 "If you download to a location that is already being monitored by Amarok, the "
 "album will automatically be added to your collection."
@@ -14072,37 +14100,37 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:67
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:2221
+#: rc.cpp:2224
 msgid "Magnatune info"
 msgstr "म्यागनाटुन सूचना"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatuneReDownloadDialogBase)
-#: rc.cpp:2227
+#: rc.cpp:2230
 msgid "Redownload manager"
 msgstr "प्रबन्धक पुन: डाउनलोड गर्नुहोस्"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:2230
+#: rc.cpp:2233
 msgid "These are the albums that you have previously downloaded:"
 msgstr "यी तपाईँले पहिल्यै डाउनलोड गर्नुभएका एल्बमहरू हुन्:"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:29
 #. i18n: ectx: property (text), widget (QPushButton, redownloadButton)
-#: rc.cpp:2233
+#: rc.cpp:2236
 msgid "Re&download"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:60
 #. i18n: ectx: property (text), widget (QTreeWidget, redownloadListView)
-#: rc.cpp:2239
+#: rc.cpp:2242
 msgid "Artist - Album"
 msgstr "कलाकार - एल्बम"
 
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, SignupDialog)
-#: rc.cpp:2242
+#: rc.cpp:2245
 #, fuzzy
 #| msgid "Magnatune.com Album Download"
 msgid "Magnatune.com member signup"
@@ -14110,7 +14138,7 @@ msgstr "Magnatune.com एल्बम डाउनलोड"
 
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2246
+#: rc.cpp:2249
 #, no-c-format
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -14158,7 +14186,7 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:2264
+#: rc.cpp:2267
 #, fuzzy
 #| msgid "Login"
 msgid "MP3tunes Login"
@@ -14166,7 +14194,7 @@ msgstr "लगइन"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2267
+#: rc.cpp:2270
 #, fuzzy
 #| msgid "Email:"
 msgctxt "The e-mail address for Mp3Tunes logins"
@@ -14175,7 +14203,7 @@ msgstr "इमेल:"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:2270
+#: rc.cpp:2273
 #, fuzzy
 #| msgid "Password:"
 msgctxt "The MP3Tunes password"
@@ -14186,7 +14214,7 @@ msgstr "पासवर्ड:"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableHarmony)
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:49
 #. i18n: ectx: property (toolTip), widget (QLabel, label_3)
-#: rc.cpp:2273 rc.cpp:2276
+#: rc.cpp:2276 rc.cpp:2279
 msgid ""
 "AutoSync is a feature from MP3tunes which allows you to automatically move "
 "your music between computers and devices."
@@ -14194,7 +14222,7 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:52
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_3)
-#: rc.cpp:2279
+#: rc.cpp:2282
 msgid ""
 "AutoSync is a feature from MP3tunes which allows you to automatically move "
 "your music between computers and devices. You can upload music from one "
@@ -14203,7 +14231,7 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:2282
+#: rc.cpp:2285
 #, fuzzy
 #| msgid "Enable a custom device"
 msgctxt "Enable harmony"
@@ -14212,7 +14240,7 @@ msgstr "अनुकूल यन्त्र सक्षम पार्नु
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:62
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2285
+#: rc.cpp:2288
 #, fuzzy
 #| msgid "No Codec"
 msgid "PIN Code:"
@@ -14220,7 +14248,7 @@ msgstr "कोडेक छैन"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:2288
+#: rc.cpp:2291
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -14238,7 +14266,7 @@ msgstr ""
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:60
-#: rc.cpp:2301
+#: rc.cpp:2304
 #, fuzzy
 #| msgid "Groupings"
 msgid "No Grouping (Single Line)"
@@ -14246,7 +14274,7 @@ msgstr "समूहहरू"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:77
-#: rc.cpp:2304
+#: rc.cpp:2307
 msgid "Verbose"
 msgstr ""
 
@@ -15944,9 +15972,6 @@ msgstr "%1. %2 - %3"
 #~ msgid_plural "Purged %1 podcasts already played"
 #~ msgstr[0] "शुद्धगरीएको १ पोडकास्ट पहिल्यै प्ले गरिएको छ"
 #~ msgstr[1] "शुद्धगरीएको १ पोडकास्ट पहिल्यै प्ले गरिएको छ"
-
-#~ msgid "Device successfully connected"
-#~ msgstr "यन्त्र सफलतापूर्वक जडान गरियो"
 
 #~ msgid ""
 #~ "Post-disconnect command failed, before removing device, please make sure "
