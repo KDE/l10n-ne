@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-30 06:12+0200\n"
+"POT-Creation-Date: 2010-10-01 06:18+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1492,20 +1492,21 @@ msgstr ""
 msgid "Refocus"
 msgstr "पुनरावृत्ती"
 
-#: imageplugins/enhance/lensautofixtool.cpp:95
-#: imageplugins/enhance/lensautofixtool.cpp:248
+#: imageplugins/enhance/lensautofixtool.cpp:96
+#: imageplugins/enhance/lensautofixtool.cpp:250
+#: utilities/queuemanager/basetools/enhance/lensautofix.cpp:66
 #, fuzzy
 #| msgid "Red Eyes Correction"
 msgid "Lens Auto-Correction"
 msgstr "रातो आँखा सुधार"
 
-#: imageplugins/enhance/lensautofixtool.cpp:107
+#: imageplugins/enhance/lensautofixtool.cpp:108
 #, fuzzy
 #| msgid "Show picture rating"
 msgid "Show grid"
 msgstr "तस्विर दर देखाउनुहोस्"
 
-#: imageplugins/enhance/lensautofixtool.cpp:108
+#: imageplugins/enhance/lensautofixtool.cpp:109
 #, fuzzy
 #| msgid "<p>Set this option to add the camera provided date and time."
 msgid "Set this option to visualize the correction grid to be applied."
@@ -2577,7 +2578,7 @@ msgid "Color Management is disabled..."
 msgstr "रङ सन्तुलन दृश्य अक्षम गरियो"
 
 #: imageplugins/color/imageplugin_color.cpp:345
-#: digikam/contextmenuhelper.cpp:255
+#: digikam/contextmenuhelper.cpp:256
 #, fuzzy
 #| msgid "Sharpen..."
 msgid "Other..."
@@ -5999,34 +6000,54 @@ msgid ""
 "a> for more information.</b>"
 msgstr ""
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:92
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:113
 #, fuzzy
 #| msgid "Metadata"
 msgid "Use Metadata"
 msgstr "मेटाडेटा"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:95
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:119
 #, fuzzy
 #| msgid "Make:"
 msgctxt "camera make"
 msgid "Make:"
 msgstr "निर्माण:"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:99
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:124
+msgid ""
+"This is the camera maker description string found in image meta-data. This "
+"one is used to query and found relevant camera device information from "
+"Lensfun database."
+msgstr ""
+
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:131
 #, fuzzy
 #| msgid "Model:"
 msgctxt "camera model"
 msgid "Model:"
 msgstr "नमुना:"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:103
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:136
+msgid ""
+"This is the camera model description string found in image meta-data. This "
+"one is used to query and found relevant camera device information from "
+"Lensfun database."
+msgstr ""
+
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:143
 #, fuzzy
 #| msgid "Dimensions:"
 msgctxt "camera lens"
 msgid "Lens:"
 msgstr "आयाम:"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:109
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:147
+msgid ""
+"This is the lens description string found in image meta-data. This one is "
+"used to query and found relevant lens information from Lensfun database."
+msgstr ""
+
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:156
 #, fuzzy
 #| msgid ""
 #| "<p>Set this option to display camera flash settings used to take the "
@@ -6037,37 +6058,41 @@ msgid ""
 msgstr ""
 "<p>तस्विर लिन प्रयोग गरिने क्यामेरा फ्ल्यास सेटिङ प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:112
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:159
 #, fuzzy
 #| msgid "Local Settings"
 msgid "Focal Length:"
 msgstr "स्थानिय सेटिङ"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:113
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:160
 #, fuzzy
 #| msgid "Aperture/Focal:"
 msgid "Aperture:"
 msgstr "प्वाल/फोकल:"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:114
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:161
 #, fuzzy
 #| msgid "White Balance:"
 msgid "Subject Distance:"
 msgstr "सेतो सन्तुलन:"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:261
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:339
 #, fuzzy
 #| msgid "No Media Devices Found"
-msgid "No match found"
+msgid "(no match found)"
 msgstr "मिडिया यन्त्र फेला परेन"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:265
-msgid "Partial match found"
-msgstr ""
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:343
+#, fuzzy
+#| msgid "No Media Devices Found"
+msgid "(partial match found)"
+msgstr "मिडिया यन्त्र फेला परेन"
 
-#: libs/dimg/filters/lens/lensfuncameraselector.cpp:269
-msgid "Exact match found"
-msgstr ""
+#: libs/dimg/filters/lens/lensfuncameraselector.cpp:347
+#, fuzzy
+#| msgid "No Media Devices Found"
+msgid "(exact match found)"
+msgstr "मिडिया यन्त्र फेला परेन"
 
 #: libs/dimg/filters/lens/antivignettingsettings.cpp:110
 #, fuzzy
@@ -6625,7 +6650,7 @@ msgstr ""
 msgid "Failed to initialize thumbnail database"
 msgstr "डाटाबेसमा ट्याग थप्न असफल"
 
-#: libs/models/abstractalbummodel.cpp:337 digikam/contextmenuhelper.cpp:578
+#: libs/models/abstractalbummodel.cpp:337 digikam/contextmenuhelper.cpp:585
 #: utilities/searchwindow/searchfields.cpp:84
 #: utilities/searchwindow/searchfields.cpp:91
 #: utilities/searchwindow/searchfields.cpp:98
@@ -7116,101 +7141,101 @@ msgid ""
 " Details: %1"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:1415
+#: libs/dmetadata/dmetadata.cpp:1416
 msgid "Unspecified"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:1417
+#: libs/dmetadata/dmetadata.cpp:1418
 #, fuzzy
 #| msgid "Normal"
 msgctxt "Rotation of an unrotated image"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: libs/dmetadata/dmetadata.cpp:1419 digikam/digikamapp.cpp:2772
+#: libs/dmetadata/dmetadata.cpp:1420 digikam/digikamapp.cpp:2772
 msgid "Flipped Horizontally"
 msgstr "तेर्सो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:1421
+#: libs/dmetadata/dmetadata.cpp:1422
 #, fuzzy
 #| msgid "Rotate 180 Degrees"
 msgid "Rotated by 180 Degrees"
 msgstr "१८० डिग्रीमा घुमाउनुहोस्"
 
-#: libs/dmetadata/dmetadata.cpp:1423 digikam/digikamapp.cpp:2774
+#: libs/dmetadata/dmetadata.cpp:1424 digikam/digikamapp.cpp:2774
 msgid "Flipped Vertically"
 msgstr "ठाडो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:1425
+#: libs/dmetadata/dmetadata.cpp:1426
 #, fuzzy
 #| msgid "Flipped Horizontally"
 msgid "Flipped Horizontally and Rotated Left"
 msgstr "तेर्सो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:1427 digikam/digikamapp.cpp:2778
+#: libs/dmetadata/dmetadata.cpp:1428 digikam/digikamapp.cpp:2778
 #, fuzzy
 #| msgid "&Rotate"
 msgid "Rotated Left"
 msgstr "घुमाउनुहोस्"
 
-#: libs/dmetadata/dmetadata.cpp:1429
+#: libs/dmetadata/dmetadata.cpp:1430
 #, fuzzy
 #| msgid "Flipped Vertically"
 msgid "Flipped Vertically and Rotated Left"
 msgstr "ठाडो तरिकाले घुमाइएको"
 
-#: libs/dmetadata/dmetadata.cpp:1431 digikam/digikamapp.cpp:2776
+#: libs/dmetadata/dmetadata.cpp:1432 digikam/digikamapp.cpp:2776
 #, fuzzy
 #| msgid "Bottom-Right"
 msgid "Rotated Right"
 msgstr "तल-दायाँ"
 
-#: libs/dmetadata/dmetadata.cpp:1466
+#: libs/dmetadata/dmetadata.cpp:1467
 #, fuzzy, kde-format
 #| msgid "%1 bpp"
 msgctxt "Temperature in Kelvin"
 msgid "%1 K"
 msgstr "%1 bpp"
 
-#: libs/dmetadata/dmetadata.cpp:1476 libs/dmetadata/dmetadata.cpp:1488
+#: libs/dmetadata/dmetadata.cpp:1477 libs/dmetadata/dmetadata.cpp:1489
 #, fuzzy
 #| msgid "Reset"
 msgctxt "For use in longitude coordinate"
 msgid "West"
 msgstr "रिसेट गर्नुहोस्"
 
-#: libs/dmetadata/dmetadata.cpp:1476 libs/dmetadata/dmetadata.cpp:1488
+#: libs/dmetadata/dmetadata.cpp:1477 libs/dmetadata/dmetadata.cpp:1489
 #, fuzzy
 #| msgid "&Last"
 msgctxt "For use in longitude coordinate"
 msgid "East"
 msgstr "अन्तिम"
 
-#: libs/dmetadata/dmetadata.cpp:1501 libs/dmetadata/dmetadata.cpp:1513
+#: libs/dmetadata/dmetadata.cpp:1502 libs/dmetadata/dmetadata.cpp:1514
 #, fuzzy
 #| msgid "Both"
 msgctxt "For use in latitude coordinate"
 msgid "North"
 msgstr "दुबै"
 
-#: libs/dmetadata/dmetadata.cpp:1501
+#: libs/dmetadata/dmetadata.cpp:1502
 #, fuzzy
 #| msgid "Both"
 msgctxt "For use in latitude coordinate"
 msgid "South"
 msgstr "दुबै"
 
-#: libs/dmetadata/dmetadata.cpp:1522
+#: libs/dmetadata/dmetadata.cpp:1523
 #, no-c-format
 msgctxt "Height in meters"
 msgid "%L1m"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:1645
+#: libs/dmetadata/dmetadata.cpp:1646
 msgid "Flash has been fired"
 msgstr ""
 
-#: libs/dmetadata/dmetadata.cpp:1646
+#: libs/dmetadata/dmetadata.cpp:1647
 msgid "Flash with red-eye reduction mode"
 msgstr ""
 
@@ -8864,7 +8889,7 @@ msgstr "यहाँ सार्नुहोस्"
 msgid "C&ancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: digikam/tagdragdrop.cpp:147 digikam/contextmenuhelper.cpp:183
+#: digikam/tagdragdrop.cpp:147 digikam/contextmenuhelper.cpp:184
 msgid "Set as Tag Thumbnail"
 msgstr "ट्याग थम्बनेलको रूपमा सेट गर्नुहोस्"
 
@@ -9631,7 +9656,7 @@ msgstr[1] ""
 msgid "Delete '%1' tag?"
 msgstr "'%1' ट्याग मेट्नुहुन्छ ?"
 
-#: digikam/tagmodificationhelper.cpp:226 digikam/contextmenuhelper.cpp:375
+#: digikam/tagmodificationhelper.cpp:226 digikam/contextmenuhelper.cpp:376
 msgid "Delete Tag"
 msgstr "ट्याग मेट्नुहोस्"
 
@@ -9731,127 +9756,127 @@ msgid ""
 " %1"
 msgstr ""
 
-#: digikam/contextmenuhelper.cpp:181 digikam/albumdragdrop.cpp:143
+#: digikam/contextmenuhelper.cpp:182 digikam/albumdragdrop.cpp:143
 #: digikam/albumdragdrop.cpp:180
 msgid "Set as Album Thumbnail"
 msgstr "एल्बम थम्बनेलको रूपमा सेट गर्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:243
+#: digikam/contextmenuhelper.cpp:244
 msgid "Open With"
 msgstr "यससँग खोल्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:264
+#: digikam/contextmenuhelper.cpp:265
 #, fuzzy
 #| msgid "Open With"
 msgid "Open With..."
 msgstr "यससँग खोल्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:367
+#: digikam/contextmenuhelper.cpp:368
 msgid "New Tag..."
 msgstr "नयाँ ट्याग..."
 
-#: digikam/contextmenuhelper.cpp:383
+#: digikam/contextmenuhelper.cpp:384
 #, fuzzy
 #| msgid "File Properties"
 msgctxt "Edit Tag Properties"
 msgid "Properties..."
 msgstr "फाइल गुण"
 
-#: digikam/contextmenuhelper.cpp:394
+#: digikam/contextmenuhelper.cpp:395
 #: utilities/imageeditor/editor/imagewindow.cpp:711
 msgid "Assign Tag"
 msgstr "ट्याग मानाङ्कन गर्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:407
+#: digikam/contextmenuhelper.cpp:408
 #: utilities/imageeditor/editor/imagewindow.cpp:712
 msgid "Remove Tag"
 msgstr "ट्याग हटाउनुहोस्"
 
-#: digikam/contextmenuhelper.cpp:424
+#: digikam/contextmenuhelper.cpp:425
 #: utilities/imageeditor/editor/imagewindow.cpp:733
 msgid "Assign Rating"
 msgstr "दर मानाङ्कन गर्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:444
+#: digikam/contextmenuhelper.cpp:445
 #, fuzzy
 #| msgid "Create Tag From AddressBook"
 msgid "Create Tag From Address Book"
 msgstr "ठेगानापुस्तकबाट ट्याग सिर्जना गर्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:475
+#: digikam/contextmenuhelper.cpp:476
 #, fuzzy
 #| msgid "No AddressBook Entries Found"
 msgid "No address book entries found"
 msgstr "ठेगानापुस्तक प्रविष्टि फेला परेन"
 
-#: digikam/contextmenuhelper.cpp:489 digikam/tagcheckview.cpp:90
+#: digikam/contextmenuhelper.cpp:498 digikam/tagcheckview.cpp:90
 #, fuzzy
 #| msgid "Select"
 msgctxt "select tags menu"
 msgid "Select"
 msgstr "चयन गर्नुहोस्"
 
-#: digikam/contextmenuhelper.cpp:493 digikam/tagcheckview.cpp:91
+#: digikam/contextmenuhelper.cpp:502 digikam/tagcheckview.cpp:91
 #: digikam/tagcheckview.cpp:97
 msgid "All Tags"
 msgstr "सबै ट्याग"
 
-#: digikam/contextmenuhelper.cpp:497 digikam/tagcheckview.cpp:93
+#: digikam/contextmenuhelper.cpp:506 digikam/tagcheckview.cpp:93
 #: digikam/tagcheckview.cpp:99
 #, fuzzy
 #| msgid "Childs"
 msgid "Children"
 msgstr "शाखा"
 
-#: digikam/contextmenuhelper.cpp:498 digikam/tagcheckview.cpp:94
+#: digikam/contextmenuhelper.cpp:507 digikam/tagcheckview.cpp:94
 #: digikam/tagcheckview.cpp:100
 msgid "Parents"
 msgstr "मूल"
 
-#: digikam/contextmenuhelper.cpp:506
+#: digikam/contextmenuhelper.cpp:515
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:334
 #, fuzzy
 #| msgid "&Import"
 msgid "Import"
 msgstr "आयात"
 
-#: digikam/contextmenuhelper.cpp:517
+#: digikam/contextmenuhelper.cpp:526
 #, fuzzy
 #| msgid "&Export"
 msgid "Export"
 msgstr "निर्यात"
 
-#: digikam/contextmenuhelper.cpp:539
+#: digikam/contextmenuhelper.cpp:546
 #, fuzzy
 #| msgid "Batch Processes"
 msgid "Batch Process"
 msgstr "ब्याच प्रक्रिया"
 
-#: digikam/contextmenuhelper.cpp:579
+#: digikam/contextmenuhelper.cpp:586
 #: utilities/searchwindow/searchfields.cpp:173
 #, fuzzy
 #| msgid "Date:"
 msgid "Date"
 msgstr "मिति:"
 
-#: digikam/contextmenuhelper.cpp:588
+#: digikam/contextmenuhelper.cpp:595
 msgid "Tag"
 msgstr "ट्याग"
 
-#: digikam/contextmenuhelper.cpp:610
+#: digikam/contextmenuhelper.cpp:617
 msgid "Go To"
 msgstr ""
 
-#: digikam/contextmenuhelper.cpp:620 digikam/digikamapp.cpp:1177
+#: digikam/contextmenuhelper.cpp:627 digikam/digikamapp.cpp:1177
 #: utilities/queuemanager/queuemgrwindow.cpp:139
 msgid "Batch Queue Manager"
 msgstr ""
 
-#: digikam/contextmenuhelper.cpp:634
+#: digikam/contextmenuhelper.cpp:641
 msgid "Add to Existing Queue"
 msgstr ""
 
-#: digikam/contextmenuhelper.cpp:683
+#: digikam/contextmenuhelper.cpp:690
 #, fuzzy, kde-format
 msgctxt "@action:inmenu Pluralized"
 msgid "Move to Trash"
@@ -12705,12 +12730,6 @@ msgstr "सेटिङ..."
 #: utilities/queuemanager/basetools/enhance/antivignetting.cpp:52
 msgid "A tool to remove/add vignetting to photograph."
 msgstr ""
-
-#: utilities/queuemanager/basetools/enhance/lensautofix.cpp:66
-#, fuzzy
-#| msgid "Save Images"
-msgid "Lens Auto-fix"
-msgstr "छवि बचत गर्नुहोस्"
 
 #: utilities/queuemanager/basetools/enhance/lensautofix.cpp:67
 #, fuzzy
@@ -21015,6 +21034,11 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Save Images"
+#~ msgid "Lens Auto-fix"
+#~ msgstr "छवि बचत गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "Auto Color Correction"
