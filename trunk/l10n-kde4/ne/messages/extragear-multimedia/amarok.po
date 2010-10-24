@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-23 06:51+0200\n"
+"POT-Creation-Date: 2010-10-24 06:26+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1731,7 +1731,7 @@ msgstr ""
 #: context/applets/photos/PhotosApplet.cpp:136
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:267
 #: context/engines/current/CurrentEngine.cpp:140 mac/GrowlInterface.cpp:39
-#: widgets/Osd.cpp:582 EngineController.cpp:1341
+#: widgets/Osd.cpp:582 EngineController.cpp:1333
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
@@ -6911,10 +6911,6 @@ msgstr "यो ट्रयाकका लागि कुनै सूचन�
 msgid "Ok"
 msgstr "ठीक छ"
 
-#: playlist/PlaylistActions.cpp:407
-msgid "Too many errors encountered in playlist. Playback stopped."
-msgstr ""
-
 #: playlist/PlaylistBreadcrumbItem.cpp:111
 #, fuzzy
 #| msgid "The number of undo levels in the playlist."
@@ -7295,6 +7291,10 @@ msgstr "मुड"
 #: playlist/PlaylistModel.cpp:835 widgets/MetaQueryWidget.cpp:227
 msgid "File Size"
 msgstr "फाइल साइज"
+
+#: playlist/PlaylistActions.cpp:394
+msgid "Too many errors encountered in playlist. Playback stopped."
+msgstr ""
 
 #: playlistgenerator/ConstraintGroup.cpp:87
 #, fuzzy
@@ -9645,77 +9645,6 @@ msgstr "मौन"
 msgid "Volume: <i>Muted</i>"
 msgstr "भोल्युम: १००%"
 
-#: EngineController.cpp:257
-#, fuzzy
-#| msgid ""
-#| "<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to "
-#| "choose a different engine from the <i>Configure Dialog</i>, or examine "
-#| "the installation of the multimedia-framework that the current engine "
-#| "uses. <p>You may find useful information in the <i>FAQ</i> section of the "
-#| "<i>Amarok HandBook</i>."
-msgid ""
-"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
-"the installation of the backend that phonon uses.</p><p>You may find useful "
-"information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
-msgstr ""
-"<p>%1 ले यसले <b>MP3 फाइल</b> बज्न सक्दैन भन्ने दावी गर्दछ ।<p>तपाईँ <i>संवाद कन्फिगर "
-"गर्नुहोस्</i>बाट विभिन्न इन्जिन छनौट गर्न सक्नुहुन्छ, वा मल्टिमिडिया-फ्रेमवर्कको स्थापना "
-"जाँच गर्न सक्नुहुन्छ जुन हालको इन्जिनले प्रयोग गर्दछ । <p>तपाईँ <i>अमारोक हातेपुस्तिका</"
-"i>को <i>FAQ</i> सेक्सनमा उपयोगी सूचना फेला पार्न सक्नुहुन्छ</p> ।."
-
-#: EngineController.cpp:278
-#, fuzzy
-#| msgid "No MP3 Support"
-msgid "Install MP3 Support"
-msgstr "MP3 समर्थन छैन"
-
-#: EngineController.cpp:280
-#, fuzzy
-#| msgid "Amarok currently cannot play MP3 files."
-msgid ""
-"Amarok currently cannot play MP3 files. Do you want to install support for "
-"MP3?"
-msgstr "अमारोकले हालै MP3 फाइलहरू प्ले गर्न सक्दैन ।"
-
-#: EngineController.cpp:281
-msgid "No MP3 Support"
-msgstr "MP3 समर्थन छैन"
-
-#: EngineController.cpp:837
-#, fuzzy
-#| msgid "Pre-amp"
-msgid "Preamp"
-msgstr "Pre-amp"
-
-#: EngineController.cpp:1309
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
-
-#: EngineController.cpp:1312
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: EngineController.cpp:1316
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: EngineController.cpp:1321
-msgid "Unknown track"
-msgstr "अज्ञात ट्रयाक"
-
-#: EngineController.cpp:1328
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgctxt "track from source"
-msgid "from <b>%1</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
 #: MainWindow.cpp:282
 #, fuzzy
 #| msgid "Locate your Music"
@@ -10184,6 +10113,77 @@ msgstr "रद्दीटोकरीमा फाइलहरू सार्�
 #| msgid "Last Played"
 msgid "Last played"
 msgstr "अन्तिममा बजाएको"
+
+#: EngineController.cpp:257
+#, fuzzy
+#| msgid ""
+#| "<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to "
+#| "choose a different engine from the <i>Configure Dialog</i>, or examine "
+#| "the installation of the multimedia-framework that the current engine "
+#| "uses. <p>You may find useful information in the <i>FAQ</i> section of the "
+#| "<i>Amarok HandBook</i>."
+msgid ""
+"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
+"the installation of the backend that phonon uses.</p><p>You may find useful "
+"information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
+msgstr ""
+"<p>%1 ले यसले <b>MP3 फाइल</b> बज्न सक्दैन भन्ने दावी गर्दछ ।<p>तपाईँ <i>संवाद कन्फिगर "
+"गर्नुहोस्</i>बाट विभिन्न इन्जिन छनौट गर्न सक्नुहुन्छ, वा मल्टिमिडिया-फ्रेमवर्कको स्थापना "
+"जाँच गर्न सक्नुहुन्छ जुन हालको इन्जिनले प्रयोग गर्दछ । <p>तपाईँ <i>अमारोक हातेपुस्तिका</"
+"i>को <i>FAQ</i> सेक्सनमा उपयोगी सूचना फेला पार्न सक्नुहुन्छ</p> ।."
+
+#: EngineController.cpp:278
+#, fuzzy
+#| msgid "No MP3 Support"
+msgid "Install MP3 Support"
+msgstr "MP3 समर्थन छैन"
+
+#: EngineController.cpp:280
+#, fuzzy
+#| msgid "Amarok currently cannot play MP3 files."
+msgid ""
+"Amarok currently cannot play MP3 files. Do you want to install support for "
+"MP3?"
+msgstr "अमारोकले हालै MP3 फाइलहरू प्ले गर्न सक्दैन ।"
+
+#: EngineController.cpp:281
+msgid "No MP3 Support"
+msgstr "MP3 समर्थन छैन"
+
+#: EngineController.cpp:829
+#, fuzzy
+#| msgid "Pre-amp"
+msgid "Preamp"
+msgstr "Pre-amp"
+
+#: EngineController.cpp:1301
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1304
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1308
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1313
+msgid "Unknown track"
+msgstr "अज्ञात ट्रयाक"
+
+#: EngineController.cpp:1320
+#, fuzzy, kde-format
+#| msgid "<b>%1</b> by <b>%2</b>"
+msgctxt "track from source"
+msgid "from <b>%1</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
 #: rc.cpp:1
 #, fuzzy
