@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-27 06:24+0200\n"
+"POT-Creation-Date: 2010-10-28 06:16+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -693,7 +693,7 @@ msgstr "सूचना"
 
 #. i18n: file: context/applets/currenttrack/currentTrackSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, currentTrackSettings)
-#: rc.cpp:283 context/applets/currenttrack/CurrentTrack.cpp:705
+#: rc.cpp:283 context/applets/currenttrack/CurrentTrack.cpp:683
 #, fuzzy
 #| msgid "After Current Track"
 msgid "Current Track Settings"
@@ -881,7 +881,7 @@ msgstr "मूल्याङ्कन"
 
 #. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:48
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:367 context/applets/similarartists/SimilarArtistsApplet.cpp:199
+#: rc.cpp:367
 #, fuzzy
 #| msgid "Autodetect"
 msgctxt "automatic language selection"
@@ -890,7 +890,7 @@ msgstr "स्वत: पत्ता लगाउनुहोस्"
 
 #. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:53
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:370 context/applets/similarartists/SimilarArtistsApplet.cpp:202
+#: rc.cpp:370 context/applets/similarartists/SimilarArtistsApplet.cpp:190
 #, fuzzy
 #| msgid "Engine"
 msgid "English"
@@ -898,7 +898,7 @@ msgstr "इन्जिन"
 
 #. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:58
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:373 context/applets/similarartists/SimilarArtistsApplet.cpp:205
+#: rc.cpp:373 context/applets/similarartists/SimilarArtistsApplet.cpp:192
 #, fuzzy
 #| msgid "France"
 msgid "French"
@@ -906,7 +906,7 @@ msgstr "फ्रान्स"
 
 #. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:63
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:376 context/applets/similarartists/SimilarArtistsApplet.cpp:208
+#: rc.cpp:376 context/applets/similarartists/SimilarArtistsApplet.cpp:194
 #, fuzzy
 #| msgid "Germany"
 msgid "German"
@@ -914,7 +914,7 @@ msgstr "जर्मनी"
 
 #. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:68
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:379 context/applets/similarartists/SimilarArtistsApplet.cpp:211
+#: rc.cpp:379 context/applets/similarartists/SimilarArtistsApplet.cpp:196
 #, fuzzy
 #| msgid "&Initialize"
 msgid "Italian"
@@ -922,7 +922,7 @@ msgstr "सुरु गर्नुहोस्"
 
 #. i18n: file: context/applets/similarartists/similarArtistsSettings.ui:73
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
-#: rc.cpp:382 context/applets/similarartists/SimilarArtistsApplet.cpp:214
+#: rc.cpp:382 context/applets/similarartists/SimilarArtistsApplet.cpp:198
 msgid "Spanish"
 msgstr ""
 
@@ -6807,7 +6807,7 @@ msgstr "प्राय प्ले गरिएको ट्रयाक"
 #: context/applets/labels/LabelsApplet.cpp:104
 #: context/applets/lyrics/LyricsApplet.cpp:415
 #: context/applets/photos/PhotosApplet.cpp:80
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:86
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:84
 #: context/applets/upcomingevents/UpcomingEventsApplet.cpp:80
 #: context/applets/videoclip/VideoclipApplet.cpp:110
 #: context/applets/wikipedia/WikipediaApplet.cpp:558
@@ -6836,16 +6836,6 @@ msgstr ""
 msgid "Albums Applet Settings"
 msgstr ""
 
-#: context/applets/currenttrack/CurrentTrack.h:47
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
-msgid "Unknown Artist"
-msgstr "अज्ञात कलाकार"
-
-#: context/applets/currenttrack/CurrentTrack.h:48
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:427
-msgid "Unknown Album"
-msgstr "अज्ञात एल्बम"
-
 #: context/applets/currenttrack/CurrentTrack.cpp:86
 #, fuzzy
 #| msgid "Modify scheme"
@@ -6867,24 +6857,34 @@ msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:127
-#: context/applets/currenttrack/CurrentTrack.cpp:564
+#: context/applets/currenttrack/CurrentTrack.cpp:543
 #, fuzzy
 #| msgid "Playcount"
 msgid "Play count"
 msgstr "प्ले गणना"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:128
-#: context/applets/currenttrack/CurrentTrack.cpp:565
+#: context/applets/currenttrack/CurrentTrack.cpp:544
 #: playlist/PlaylistModel.cpp:830 widgets/SmartPlaylistEditor.cpp:185
 #: widgets/MetaQueryWidget.cpp:231 TrayIcon.cpp:120
 msgid "Score"
 msgstr "प्राप्ताङ्क"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:129
-#: context/applets/currenttrack/CurrentTrack.cpp:566
+#: context/applets/currenttrack/CurrentTrack.cpp:545
 #: widgets/MetaQueryWidget.cpp:234
 msgid "Last Played"
 msgstr "अन्तिममा बजाएको"
+
+#: context/applets/currenttrack/CurrentTrack.h:47
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
+msgid "Unknown Artist"
+msgstr "अज्ञात कलाकार"
+
+#: context/applets/currenttrack/CurrentTrack.h:48
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:427
+msgid "Unknown Album"
+msgstr "अज्ञात एल्बम"
 
 #: context/applets/labels/LabelGraphicsItem.cpp:43
 #, fuzzy
@@ -7063,38 +7063,6 @@ msgstr "last.fm समर्थन कन्फिगर गर्नुहो�
 msgid "Width"
 msgstr "सँग"
 
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:77
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:130
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:166
-#, fuzzy
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:148
-#, fuzzy
-#| msgid "No track playing"
-msgid "Similar Artist: No track playing"
-msgstr "कुनै ट्रयाक प्ले भएको छैन"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:244
-#, fuzzy
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists Settings"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:265
-#, fuzzy, kde-format
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists of %1"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:271
-#, fuzzy
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists: Not Found"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
 #: context/applets/similarartists/ArtistWidget.cpp:122
 #, fuzzy
 #| msgid "The number of undo levels in the playlist."
@@ -7147,6 +7115,38 @@ msgstr "ट्रयाकका लागि रचना फेला पर�
 #| msgid "tracks"
 msgid "Top track: %1"
 msgstr "ट्रयाक"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:77
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:128
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:157
+#, fuzzy
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:140
+#, fuzzy
+#| msgid "No track playing"
+msgid "Similar Artist: No track playing"
+msgstr "कुनै ट्रयाक प्ले भएको छैन"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:230
+#, fuzzy
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists Settings"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:251
+#, fuzzy, kde-format
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists of %1"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:256
+#, fuzzy
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists: Not Found"
+msgstr "%1 मा मिल्ने कलाकारहरू"
 
 #: context/applets/songkick/SongkickApplet.cpp:41
 #, fuzzy
@@ -7826,13 +7826,13 @@ msgid "Track rating: %1"
 msgstr "स्थानान्तर गर्नुहोस्"
 
 #: context/widgets/ToolBoxMenu.cpp:109
-#: context/widgets/appletexplorer/AppletExplorer.cpp:90
+#: context/widgets/appletexplorer/AppletExplorer.cpp:96
 #, fuzzy
 #| msgid "Forbidden"
 msgid "Hide menu"
 msgstr "निषेधित"
 
-#: context/widgets/appletexplorer/AppletItemModel.cpp:93
+#: context/widgets/appletexplorer/AppletExplorer.cpp:161
 #, fuzzy
 #| msgid "&Connect"
 msgid "Containments"
@@ -12271,16 +12271,6 @@ msgstr "यन्त्र सफलतापूर्वक जडान गर
 msgid "Connection failure"
 msgstr "जडान गर्नुहोस्"
 
-#: services/ampache/AmpacheService.cpp:98
-msgid "Amarok frontend for your Ampache server."
-msgstr ""
-
-#: services/ampache/AmpacheService.cpp:100
-msgid ""
-"Use Amarok as a seamless frontend to your Ampache server. This lets you "
-"browse and play all the Ampache contents from within Amarok."
-msgstr ""
-
 #: services/ampache/AmpacheServiceCollection.cpp:56
 #, fuzzy, kde-format
 #| msgid "Advanced Server"
@@ -12316,6 +12306,16 @@ msgstr "यो रेडियोका लागि पर्याप्त �
 #| msgid "There are not enough neighbors for this radio."
 msgid "<p>No information found for this artist.</p>"
 msgstr "यो रेडियोका लागि पर्याप्त छिमेकीहरू छैन।"
+
+#: services/ampache/AmpacheService.cpp:100
+msgid "Amarok frontend for your Ampache server."
+msgstr ""
+
+#: services/ampache/AmpacheService.cpp:102
+msgid ""
+"Use Amarok as a seamless frontend to your Ampache server. This lets you "
+"browse and play all the Ampache contents from within Amarok."
+msgstr ""
 
 #: services/jamendo/JamendoInfoParser.cpp:46
 #: services/jamendo/JamendoInfoParser.cpp:77
@@ -12762,7 +12762,7 @@ msgid "User"
 msgstr "प्रयोगकर्ता"
 
 #: services/lastfm/LastFmService.cpp:571
-#: services/lastfm/ScrobblerAdapter.cpp:228
+#: services/lastfm/ScrobblerAdapter.cpp:221
 #, fuzzy, kde-format
 #| msgid "Selected Tracks"
 msgctxt "As in, lastfm"
@@ -14826,6 +14826,12 @@ msgstr "पज गरियो"
 msgid "%1 - %2  ::  %3"
 msgstr "%1. %2 - %3"
 
+#: TrayIcon.cpp:148
+#, fuzzy
+#| msgid "Last Played"
+msgid "Last played"
+msgstr "अन्तिममा बजाएको"
+
 #: App.cpp:112
 msgid "The audio player for KDE"
 msgstr "केडीईका लागि अडियो प्लेयर"
@@ -14988,12 +14994,6 @@ msgstr ""
 #: App.cpp:847
 msgid "Moving files to trash"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
-
-#: TrayIcon.cpp:148
-#, fuzzy
-#| msgid "Last Played"
-msgid "Last played"
-msgstr "अन्तिममा बजाएको"
 
 #: EngineController.cpp:267
 #, fuzzy
