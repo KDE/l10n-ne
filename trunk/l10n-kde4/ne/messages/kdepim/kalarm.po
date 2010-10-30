@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-29 06:10+0200\n"
+"POT-Creation-Date: 2010-10-30 06:16+0200\n"
 "PO-Revision-Date: 2007-09-07 11:50+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -358,19 +358,19 @@ msgctxt "@option Name of the weekday"
 msgid "Sunday"
 msgstr "आइतबार"
 
-#: resources/resourcelocaldir.cpp:484 akonadimodel.cpp:957
+#: resources/resourcelocaldir.cpp:484 akonadimodel.cpp:941
 msgctxt "@info/plain Directory in filesystem"
 msgid "Directory"
 msgstr ""
 
-#: resources/resourcelocal.cpp:268 akonadimodel.cpp:958
+#: resources/resourcelocal.cpp:268 akonadimodel.cpp:942
 #, fuzzy
 #| msgid "&File"
 msgctxt "@info/plain"
 msgid "File"
 msgstr "फाइल"
 
-#: resources/resourceremote.cpp:365 akonadimodel.cpp:956
+#: resources/resourceremote.cpp:365 akonadimodel.cpp:940
 msgctxt "@info/plain"
 msgid "URL"
 msgstr ""
@@ -397,7 +397,7 @@ msgid "Alarm templates"
 msgstr "संसूचक टेम्प्लेट"
 
 #: resources/alarmresource.cpp:358 resourcemodelview.cpp:114
-#: resourceselector.cpp:713 akonadimodel.cpp:225
+#: resourceselector.cpp:713 akonadimodel.cpp:222
 #, fuzzy
 #| msgid "Read-only"
 msgctxt "@info/plain"
@@ -425,7 +425,7 @@ msgid "Disabled (wrong alarm type)"
 msgstr "अक्षम पारिएको संसूचक रङ"
 
 #: resources/alarmresource.cpp:359 resourcemodelview.cpp:113
-#: resourceselector.cpp:718 akonadimodel.cpp:224
+#: resourceselector.cpp:718 akonadimodel.cpp:221
 #, fuzzy
 #| msgid "Disabled"
 msgctxt "@info/plain"
@@ -574,17 +574,17 @@ msgstr ""
 msgid "Event with uid '%1' contains no usable alarms."
 msgstr ""
 
-#: akonadi/kalarmresource.cpp:181 akonadi/kalarmresource.cpp:207
+#: akonadi/kalarmresource.cpp:182 akonadi/kalarmresource.cpp:208
 msgctxt "@info"
 msgid "Calendar is not in current KAlarm format."
 msgstr ""
 
-#: akonadi/kalarmresource.cpp:214
+#: akonadi/kalarmresource.cpp:215
 #, kde-format
 msgid "Item ID %1 differs from payload ID %2."
 msgstr ""
 
-#: akonadi/kalarmresource.cpp:223
+#: akonadi/kalarmresource.cpp:224
 #, kde-format
 msgctxt "@info"
 msgid "Event with uid '%1' is read only"
@@ -1461,13 +1461,13 @@ msgctxt "@info/plain"
 msgid "Reactivate multiple alarms"
 msgstr "बहुविध संसूचक पुन: सक्रिय पार्नुहोस्"
 
-#: resourcemodelview.cpp:117 akonadimodel.cpp:229
+#: resourcemodelview.cpp:117 akonadimodel.cpp:226
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
 msgstr ""
 
-#: resourcemodelview.cpp:123 akonadimodel.cpp:235
+#: resourcemodelview.cpp:123 akonadimodel.cpp:232
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error attaching file:\n"
@@ -1478,7 +1478,7 @@ msgstr ""
 "फाइल सङ्लग्न गर्दा त्रुटि:\n"
 "%1"
 
-#: resourcemodelview.cpp:129 akonadimodel.cpp:240
+#: resourcemodelview.cpp:129 akonadimodel.cpp:237
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error attaching file:\n"
@@ -1686,6 +1686,317 @@ msgstr "ध्वनि फाइल"
 msgctxt "@title:window"
 msgid "Choose Sound File"
 msgstr "ध्वनि फाइल रोज्नुहोस्"
+
+#: alarmcalendar.cpp:309 alarmcalendar.cpp:801
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot download calendar:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Cannot download calendar: <filename>%1</filename>"
+msgstr ""
+"क्यालेन्डर डाउनलोड गर्न सकिँदैन:\n"
+"%1"
+
+#: alarmcalendar.cpp:330
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error loading calendar:\n"
+#| "%1\n"
+#| "\n"
+#| "Please fix or delete the file."
+msgctxt "@info"
+msgid ""
+"<para>Error loading calendar:</para><para><filename>%1</filename></"
+"para><para>Please fix or delete the file.</para>"
+msgstr ""
+"क्यालेन्डर लोड गर्दा त्रुटि:\n"
+"%1\n"
+"\n"
+"कृपया फाइल किटान गर्नुहोस् वा मेट्नुहोस् ।"
+
+#: alarmcalendar.cpp:424
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to save calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid "Failed to save calendar to <filename>%1</filename>"
+msgstr ""
+"'%1' मा\n"
+"क्यालेन्डर बचत गर्न असफल"
+
+#: alarmcalendar.cpp:433
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot upload calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid "Cannot upload calendar to <filename>%1</filename>"
+msgstr ""
+"'%1'\n"
+"मा क्यालेन्डर अनलोड गर्न सकिँदैन"
+
+#: alarmcalendar.cpp:792 alarmcalendar.cpp:819
+#, fuzzy, kde-format
+#| msgid "Could not load calendar '%1'."
+msgctxt "@info"
+msgid "Could not load calendar <filename>%1</filename>."
+msgstr "क्यालेन्डर '%1' लोड गर्न सकेन ।"
+
+#: alarmcalendar.cpp:972
+msgctxt "@title:window"
+msgid "Choose Export Calendar"
+msgstr ""
+
+#: alarmcalendar.cpp:1000
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot upload calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
+msgstr ""
+"'%1'\n"
+"मा क्यालेन्डर अनलोड गर्न सकिँदैन"
+
+#: alarmcalendar.cpp:1049
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to save calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
+msgstr ""
+"'%1' मा\n"
+"क्यालेन्डर बचत गर्न असफल"
+
+#: alarmcalendar.cpp:1055
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot upload calendar to\n"
+#| "'%1'"
+msgctxt "@info"
+msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
+msgstr ""
+"'%1'\n"
+"मा क्यालेन्डर अनलोड गर्न सकिँदैन"
+
+#: fontcolourbutton.cpp:43
+#, fuzzy
+#| msgid "Font && Co&lor..."
+msgctxt "@action:button"
+msgid "Font && Color..."
+msgstr "फन्ट र रङ..."
+
+#: fontcolourbutton.cpp:47
+#, fuzzy
+#| msgid ""
+#| "Choose the font, and foreground and background color, for the alarm "
+#| "message."
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose the font, and foreground and background color, for the alarm message."
+msgstr "संसूचक सन्देशका लागि फन्ट, अग्रभूमि र पृष्ठभूमि रङ रोज्नुहोस् ।"
+
+#: fontcolourbutton.cpp:71
+#, fuzzy
+#| msgid "Choose Alarm Font & Color"
+msgctxt "@title:window"
+msgid "Choose Alarm Font & Color"
+msgstr "संसूचक फन्ट र रङ रोज्नुहोस्"
+
+#: commandoptions.cpp:184
+#, fuzzy, kde-format
+#| msgid "%1: invalid email address"
+msgctxt "@info:shell"
+msgid "<icode>%1</icode>: invalid email address"
+msgstr "%1: अवैध इमेल ठेगाना"
+
+#: commandoptions.cpp:295 commandoptions.cpp:311 commandoptions.cpp:384
+#, fuzzy, kde-format
+#| msgid "Invalid %1 parameter for date-only alarm"
+msgctxt "@info:shell"
+msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
+msgstr "दिन मात्र संसूचकका लागि अवैध परिमिति %1"
+
+#: commandoptions.cpp:299
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
+msgstr ""
+
+#: commandoptions.cpp:320
+#, fuzzy, kde-format
+#| msgid "Invalid %1 and %2 parameters: repetition is longer than %3 interval"
+msgctxt "@info:shell"
+msgid ""
+"Invalid <icode>%1</icode> and <icode>%2</icode> parameters: repetition is "
+"longer than <icode>%3</icode> interval"
+msgstr "अवैध %1 र %2 परिमिति: पुनरावृत्ति %3 अन्तराल भन्दा लामो छ"
+
+#: commandoptions.cpp:370
+#, fuzzy, kde-format
+#| msgid "%1 requires speech synthesis to be configured using KTTSD"
+msgctxt "@info:shell"
+msgid ""
+"<icode>%1</icode> requires speech synthesis to be configured using Jovie"
+msgstr "%1 लाई KTTSD प्रयोग गरेर कन्फिगर हुने वाचन संश्लेषण आवश्यक हुन्छ"
+
+#: commandoptions.cpp:467
+#, fuzzy
+#| msgid ": option(s) only valid with a message/%1/%2"
+msgctxt "@info:shell"
+msgid ": option(s) only valid with an appropriate action option or message"
+msgstr ": सन्देश /%1/%2 मा मात्र विकल्प(हरू) वैध छन्"
+
+#: commandoptions.cpp:487
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "Use --help to get a list of available command line options.\n"
+msgctxt "@info:shell"
+msgid ""
+"\n"
+"Use --help to get a list of available command line options.\n"
+msgstr ""
+"\n"
+"उपलब्ध आदेश लाइन विकल्पका सूची प्राप्त गर्न --मद्दत प्रयोग गर्नुहोस् ।\n"
+
+#: commandoptions.cpp:516
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> requires <icode>%2</icode>"
+msgstr ""
+
+#: commandoptions.cpp:518
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
+msgstr ""
+
+#: commandoptions.cpp:523
+#, fuzzy, kde-format
+#| msgid "Invalid %1 parameter"
+msgctxt "@info:shell"
+msgid "Invalid <icode>%1</icode> parameter"
+msgstr "अवैध %1 परिमिति"
+
+#: commandoptions.cpp:534
+#, fuzzy, kde-format
+#| msgid "%1 incompatible with %2"
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
+msgstr "%1 सँग %2 मिल्दैन"
+
+#: templatedlg.cpp:69
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@title:window"
+msgid "Alarm Templates"
+msgstr "संसूचक टेम्प्लेट"
+
+#: templatedlg.cpp:95 templatelistview.cpp:44
+#, fuzzy
+#| msgid "The list of alarm templates"
+msgctxt "@info:whatsthis"
+msgid "The list of alarm templates"
+msgstr "संसूचक टेम्प्लेटको सूची"
+
+#: templatedlg.cpp:103
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action:button"
+msgid "New"
+msgstr "नयाँ..."
+
+#: templatedlg.cpp:104
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "New"
+msgstr "नयाँ..."
+
+#: templatedlg.cpp:107
+#, fuzzy
+#| msgid "Create a new alarm template"
+msgctxt "@info:whatsthis"
+msgid "Create a new alarm template"
+msgstr "नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
+
+#: templatedlg.cpp:110 resourceselector.cpp:133
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
+
+#: templatedlg.cpp:112
+#, fuzzy
+#| msgid "Edit the currently highlighted alarm template"
+msgctxt "@info:whatsthis"
+msgid "Edit the currently highlighted alarm template"
+msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
+
+#: templatedlg.cpp:115
+#, fuzzy
+#| msgid "Co&py"
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "प्रतिलिपि बनाउनुहोस्"
+
+#: templatedlg.cpp:117
+#, fuzzy
+#| msgid ""
+#| "Create a new alarm template based on a copy of the currently highlighted "
+#| "template"
+msgctxt "@info:whatsthis"
+msgid ""
+"Create a new alarm template based on a copy of the currently highlighted "
+"template"
+msgstr ""
+"हालै हाइलाइट गरिएको टेम्प्लेटको प्रतिलिपिमा आधारित नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
+
+#: templatedlg.cpp:120 recurrenceedit.cpp:364
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "मेट्नुहोस्"
+
+#: templatedlg.cpp:122
+#, fuzzy
+#| msgid "Delete the currently highlighted alarm template"
+msgctxt "@info:whatsthis"
+msgid "Delete the currently highlighted alarm template"
+msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट मट्नुहोस्"
+
+#: templatedlg.cpp:211
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete the selected alarm template?"
+#| msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm template?"
+msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgstr[0] "तपाईँ वास्तवमै चयन गरिएको संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ वास्तवमै चयन गरिएका %1 संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
+
+#: templatedlg.cpp:213
+#, fuzzy
+#| msgid "Delete Alarm Template"
+#| msgid_plural "Delete Alarm Templates"
+msgctxt "@title:window"
+msgid "Delete Alarm Template"
+msgid_plural "Delete Alarm Templates"
+msgstr[0] "संसूचक टेम्प्लेट मेट्नुहोस्"
+msgstr[1] "संसूचक टेम्प्लेट मेट्नुहोस्"
+
+#: templatedlg.cpp:214 mainwindow.cpp:804
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "@action:button"
+msgid "&Delete"
+msgstr "मेट्नुहोस्"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2971,317 +3282,6 @@ msgstr "कार्य"
 msgid "&Settings"
 msgstr "सेटिङ"
 
-#: alarmcalendar.cpp:309 alarmcalendar.cpp:801
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot download calendar:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Cannot download calendar: <filename>%1</filename>"
-msgstr ""
-"क्यालेन्डर डाउनलोड गर्न सकिँदैन:\n"
-"%1"
-
-#: alarmcalendar.cpp:330
-#, fuzzy, kde-format
-#| msgid ""
-#| "Error loading calendar:\n"
-#| "%1\n"
-#| "\n"
-#| "Please fix or delete the file."
-msgctxt "@info"
-msgid ""
-"<para>Error loading calendar:</para><para><filename>%1</filename></"
-"para><para>Please fix or delete the file.</para>"
-msgstr ""
-"क्यालेन्डर लोड गर्दा त्रुटि:\n"
-"%1\n"
-"\n"
-"कृपया फाइल किटान गर्नुहोस् वा मेट्नुहोस् ।"
-
-#: alarmcalendar.cpp:424
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to save calendar to\n"
-#| "'%1'"
-msgctxt "@info"
-msgid "Failed to save calendar to <filename>%1</filename>"
-msgstr ""
-"'%1' मा\n"
-"क्यालेन्डर बचत गर्न असफल"
-
-#: alarmcalendar.cpp:433
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot upload calendar to\n"
-#| "'%1'"
-msgctxt "@info"
-msgid "Cannot upload calendar to <filename>%1</filename>"
-msgstr ""
-"'%1'\n"
-"मा क्यालेन्डर अनलोड गर्न सकिँदैन"
-
-#: alarmcalendar.cpp:792 alarmcalendar.cpp:819
-#, fuzzy, kde-format
-#| msgid "Could not load calendar '%1'."
-msgctxt "@info"
-msgid "Could not load calendar <filename>%1</filename>."
-msgstr "क्यालेन्डर '%1' लोड गर्न सकेन ।"
-
-#: alarmcalendar.cpp:972
-msgctxt "@title:window"
-msgid "Choose Export Calendar"
-msgstr ""
-
-#: alarmcalendar.cpp:1000
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot upload calendar to\n"
-#| "'%1'"
-msgctxt "@info"
-msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
-msgstr ""
-"'%1'\n"
-"मा क्यालेन्डर अनलोड गर्न सकिँदैन"
-
-#: alarmcalendar.cpp:1049
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failed to save calendar to\n"
-#| "'%1'"
-msgctxt "@info"
-msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
-msgstr ""
-"'%1' मा\n"
-"क्यालेन्डर बचत गर्न असफल"
-
-#: alarmcalendar.cpp:1055
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot upload calendar to\n"
-#| "'%1'"
-msgctxt "@info"
-msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
-msgstr ""
-"'%1'\n"
-"मा क्यालेन्डर अनलोड गर्न सकिँदैन"
-
-#: fontcolourbutton.cpp:43
-#, fuzzy
-#| msgid "Font && Co&lor..."
-msgctxt "@action:button"
-msgid "Font && Color..."
-msgstr "फन्ट र रङ..."
-
-#: fontcolourbutton.cpp:47
-#, fuzzy
-#| msgid ""
-#| "Choose the font, and foreground and background color, for the alarm "
-#| "message."
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose the font, and foreground and background color, for the alarm message."
-msgstr "संसूचक सन्देशका लागि फन्ट, अग्रभूमि र पृष्ठभूमि रङ रोज्नुहोस् ।"
-
-#: fontcolourbutton.cpp:71
-#, fuzzy
-#| msgid "Choose Alarm Font & Color"
-msgctxt "@title:window"
-msgid "Choose Alarm Font & Color"
-msgstr "संसूचक फन्ट र रङ रोज्नुहोस्"
-
-#: commandoptions.cpp:184
-#, fuzzy, kde-format
-#| msgid "%1: invalid email address"
-msgctxt "@info:shell"
-msgid "<icode>%1</icode>: invalid email address"
-msgstr "%1: अवैध इमेल ठेगाना"
-
-#: commandoptions.cpp:295 commandoptions.cpp:311 commandoptions.cpp:384
-#, fuzzy, kde-format
-#| msgid "Invalid %1 parameter for date-only alarm"
-msgctxt "@info:shell"
-msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
-msgstr "दिन मात्र संसूचकका लागि अवैध परिमिति %1"
-
-#: commandoptions.cpp:299
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
-msgstr ""
-
-#: commandoptions.cpp:320
-#, fuzzy, kde-format
-#| msgid "Invalid %1 and %2 parameters: repetition is longer than %3 interval"
-msgctxt "@info:shell"
-msgid ""
-"Invalid <icode>%1</icode> and <icode>%2</icode> parameters: repetition is "
-"longer than <icode>%3</icode> interval"
-msgstr "अवैध %1 र %2 परिमिति: पुनरावृत्ति %3 अन्तराल भन्दा लामो छ"
-
-#: commandoptions.cpp:370
-#, fuzzy, kde-format
-#| msgid "%1 requires speech synthesis to be configured using KTTSD"
-msgctxt "@info:shell"
-msgid ""
-"<icode>%1</icode> requires speech synthesis to be configured using Jovie"
-msgstr "%1 लाई KTTSD प्रयोग गरेर कन्फिगर हुने वाचन संश्लेषण आवश्यक हुन्छ"
-
-#: commandoptions.cpp:467
-#, fuzzy
-#| msgid ": option(s) only valid with a message/%1/%2"
-msgctxt "@info:shell"
-msgid ": option(s) only valid with an appropriate action option or message"
-msgstr ": सन्देश /%1/%2 मा मात्र विकल्प(हरू) वैध छन्"
-
-#: commandoptions.cpp:487
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Use --help to get a list of available command line options.\n"
-msgctxt "@info:shell"
-msgid ""
-"\n"
-"Use --help to get a list of available command line options.\n"
-msgstr ""
-"\n"
-"उपलब्ध आदेश लाइन विकल्पका सूची प्राप्त गर्न --मद्दत प्रयोग गर्नुहोस् ।\n"
-
-#: commandoptions.cpp:516
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> requires <icode>%2</icode>"
-msgstr ""
-
-#: commandoptions.cpp:518
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
-msgstr ""
-
-#: commandoptions.cpp:523
-#, fuzzy, kde-format
-#| msgid "Invalid %1 parameter"
-msgctxt "@info:shell"
-msgid "Invalid <icode>%1</icode> parameter"
-msgstr "अवैध %1 परिमिति"
-
-#: commandoptions.cpp:534
-#, fuzzy, kde-format
-#| msgid "%1 incompatible with %2"
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
-msgstr "%1 सँग %2 मिल्दैन"
-
-#: templatedlg.cpp:69
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@title:window"
-msgid "Alarm Templates"
-msgstr "संसूचक टेम्प्लेट"
-
-#: templatedlg.cpp:95 templatelistview.cpp:44
-#, fuzzy
-#| msgid "The list of alarm templates"
-msgctxt "@info:whatsthis"
-msgid "The list of alarm templates"
-msgstr "संसूचक टेम्प्लेटको सूची"
-
-#: templatedlg.cpp:103
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action:button"
-msgid "New"
-msgstr "नयाँ..."
-
-#: templatedlg.cpp:104
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "New"
-msgstr "नयाँ..."
-
-#: templatedlg.cpp:107
-#, fuzzy
-#| msgid "Create a new alarm template"
-msgctxt "@info:whatsthis"
-msgid "Create a new alarm template"
-msgstr "नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
-
-#: templatedlg.cpp:110 resourceselector.cpp:133
-#, fuzzy
-#| msgid "Edit..."
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#: templatedlg.cpp:112
-#, fuzzy
-#| msgid "Edit the currently highlighted alarm template"
-msgctxt "@info:whatsthis"
-msgid "Edit the currently highlighted alarm template"
-msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: templatedlg.cpp:115
-#, fuzzy
-#| msgid "Co&py"
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "प्रतिलिपि बनाउनुहोस्"
-
-#: templatedlg.cpp:117
-#, fuzzy
-#| msgid ""
-#| "Create a new alarm template based on a copy of the currently highlighted "
-#| "template"
-msgctxt "@info:whatsthis"
-msgid ""
-"Create a new alarm template based on a copy of the currently highlighted "
-"template"
-msgstr ""
-"हालै हाइलाइट गरिएको टेम्प्लेटको प्रतिलिपिमा आधारित नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
-
-#: templatedlg.cpp:120 recurrenceedit.cpp:364
-#, fuzzy
-#| msgid "Delete"
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "मेट्नुहोस्"
-
-#: templatedlg.cpp:122
-#, fuzzy
-#| msgid "Delete the currently highlighted alarm template"
-msgctxt "@info:whatsthis"
-msgid "Delete the currently highlighted alarm template"
-msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट मट्नुहोस्"
-
-#: templatedlg.cpp:211
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete the selected alarm template?"
-#| msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm template?"
-msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgstr[0] "तपाईँ वास्तवमै चयन गरिएको संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
-msgstr[1] "तपाईँ वास्तवमै चयन गरिएका %1 संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
-
-#: templatedlg.cpp:213
-#, fuzzy
-#| msgid "Delete Alarm Template"
-#| msgid_plural "Delete Alarm Templates"
-msgctxt "@title:window"
-msgid "Delete Alarm Template"
-msgid_plural "Delete Alarm Templates"
-msgstr[0] "संसूचक टेम्प्लेट मेट्नुहोस्"
-msgstr[1] "संसूचक टेम्प्लेट मेट्नुहोस्"
-
-#: templatedlg.cpp:214 mainwindow.cpp:804
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "@action:button"
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
-
 #: resourceselector.cpp:97
 #, fuzzy
 #| msgid "Calendar Files"
@@ -4019,76 +4019,76 @@ msgid ""
 "cancellation period"
 msgstr "पछिल्लो रद्द अवधिको म्याद समाप्तपछि स्वचालित रूपमा संसूचक सञ्झ्याल बन्द हुन्छ"
 
-#: eventlistmodel.cpp:312 akonadimodel.cpp:467
+#: eventlistmodel.cpp:312 akonadimodel.cpp:464
 #, fuzzy
 #| msgid "Command execution error:"
 msgctxt "@info:tooltip"
 msgid "Command execution failed"
 msgstr "आदेश कार्यान्वयन त्रुटि:"
 
-#: eventlistmodel.cpp:314 akonadimodel.cpp:469
+#: eventlistmodel.cpp:314 akonadimodel.cpp:466
 #, fuzzy
 #| msgid "Pre-alarm action"
 msgctxt "@info:tooltip"
 msgid "Pre-alarm action execution failed"
 msgstr "संसूचक पुर्वको कार्य"
 
-#: eventlistmodel.cpp:316 akonadimodel.cpp:471
+#: eventlistmodel.cpp:316 akonadimodel.cpp:468
 #, fuzzy
 #| msgid "Post-alarm action"
 msgctxt "@info:tooltip"
 msgid "Post-alarm action execution failed"
 msgstr "संसूचक पश्चातको कार्य"
 
-#: eventlistmodel.cpp:318 akonadimodel.cpp:473
+#: eventlistmodel.cpp:318 akonadimodel.cpp:470
 msgctxt "@info:tooltip"
 msgid "Pre- and post-alarm action execution failed"
 msgstr ""
 
-#: eventlistmodel.cpp:362 akonadimodel.cpp:661
+#: eventlistmodel.cpp:362 akonadimodel.cpp:645
 #, fuzzy
 #| msgid "Time"
 msgctxt "@title:column"
 msgid "Time"
 msgstr "समय"
 
-#: eventlistmodel.cpp:364 akonadimodel.cpp:663
+#: eventlistmodel.cpp:364 akonadimodel.cpp:647
 #, fuzzy
 #| msgid "Time To"
 msgctxt "@title:column"
 msgid "Time To"
 msgstr "यससमय सम्म"
 
-#: eventlistmodel.cpp:366 akonadimodel.cpp:665
+#: eventlistmodel.cpp:366 akonadimodel.cpp:649
 #, fuzzy
 #| msgid "Repeat"
 msgctxt "@title:column"
 msgid "Repeat"
 msgstr "दोहोर्याउनुहोस्"
 
-#: eventlistmodel.cpp:372 akonadimodel.cpp:671
+#: eventlistmodel.cpp:372 akonadimodel.cpp:655
 #, fuzzy
 #| msgid "Message, File or Command"
 msgctxt "@title:column"
 msgid "Message, File or Command"
 msgstr "सन्देश, फाइल वा आदेश"
 
-#: eventlistmodel.cpp:374 akonadimodel.cpp:673
+#: eventlistmodel.cpp:374 akonadimodel.cpp:657
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column Template name"
 msgid "Name"
 msgstr "नाम"
 
-#: eventlistmodel.cpp:831 eventlistmodel.cpp:869 akonadimodel.cpp:693
-#: akonadimodel.cpp:731
+#: eventlistmodel.cpp:831 eventlistmodel.cpp:869 akonadimodel.cpp:677
+#: akonadimodel.cpp:715
 #, fuzzy
 #| msgid "Never"
 msgctxt "@info/plain Alarm never occurs"
 msgid "Never"
 msgstr "कहिले पनि होइन"
 
-#: eventlistmodel.cpp:875 akonadimodel.cpp:737
+#: eventlistmodel.cpp:875 akonadimodel.cpp:721
 #, fuzzy, no-c-format, kde-format
 #| msgctxt "n days"
 #| msgid " %1d "
@@ -4096,7 +4096,7 @@ msgctxt "@info/plain n days"
 msgid "%1d"
 msgstr " %1d "
 
-#: eventlistmodel.cpp:884 akonadimodel.cpp:746
+#: eventlistmodel.cpp:884 akonadimodel.cpp:730
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -4104,7 +4104,7 @@ msgctxt "@info/plain hours:minutes"
 msgid "%1:%2"
 msgstr "%1: %2"
 
-#: eventlistmodel.cpp:887 akonadimodel.cpp:749
+#: eventlistmodel.cpp:887 akonadimodel.cpp:733
 #, fuzzy, kde-format
 #| msgctxt "days hours:minutes"
 #| msgid " %1d %2:%3 "
@@ -4112,42 +4112,42 @@ msgctxt "@info/plain days hours:minutes"
 msgid "%1d %2:%3"
 msgstr " %1d %2:%3 "
 
-#: eventlistmodel.cpp:971 akonadimodel.cpp:1042
+#: eventlistmodel.cpp:971 akonadimodel.cpp:1026
 #, fuzzy
 #| msgid "Next scheduled date and time of the alarm"
 msgctxt "@info:whatsthis"
 msgid "Next scheduled date and time of the alarm"
 msgstr "पछिल्लो संसूचकको तालिकावद्ध मिति र समय"
 
-#: eventlistmodel.cpp:973 akonadimodel.cpp:1044
+#: eventlistmodel.cpp:973 akonadimodel.cpp:1028
 #, fuzzy
 #| msgid "How long until the next scheduled trigger of the alarm"
 msgctxt "@info:whatsthis"
 msgid "How long until the next scheduled trigger of the alarm"
 msgstr "पछिल्लो तालिकावद्ध संसूचकले कति लामो ट्रिगर गर्दछ"
 
-#: eventlistmodel.cpp:975 akonadimodel.cpp:1046
+#: eventlistmodel.cpp:975 akonadimodel.cpp:1030
 #, fuzzy
 #| msgid "How often the alarm recurs"
 msgctxt "@info:whatsthis"
 msgid "How often the alarm recurs"
 msgstr "संसूचक कतिबेला पुन: बज्दछ"
 
-#: eventlistmodel.cpp:977 akonadimodel.cpp:1048
+#: eventlistmodel.cpp:977 akonadimodel.cpp:1032
 #, fuzzy
 #| msgid "Background color of alarm message"
 msgctxt "@info:whatsthis"
 msgid "Background color of alarm message"
 msgstr "संसूचको सन्देशको पृष्ठभूमि रङ"
 
-#: eventlistmodel.cpp:979 akonadimodel.cpp:1050
+#: eventlistmodel.cpp:979 akonadimodel.cpp:1034
 #, fuzzy
 #| msgid "Alarm type (message, file, command or email)"
 msgctxt "@info:whatsthis"
 msgid "Alarm type (message, file, command or email)"
 msgstr "संसूचक प्रकार (सन्देश, फाइल, आदेश वा इमेल)"
 
-#: eventlistmodel.cpp:981 akonadimodel.cpp:1052
+#: eventlistmodel.cpp:981 akonadimodel.cpp:1036
 #, fuzzy
 #| msgid ""
 #| "Alarm message text, URL of text file to display, command to execute, or "
@@ -4160,7 +4160,7 @@ msgstr ""
 "पाठ, प्रदर्शन गर्नका लागि पाठ फाइलको यूआरएल, कार्यान्वयनका लागि आदेश, वा इमेल विषय "
 "वस्तु लाइन संसूचक सन्देश"
 
-#: eventlistmodel.cpp:983 akonadimodel.cpp:1054
+#: eventlistmodel.cpp:983 akonadimodel.cpp:1038
 #, fuzzy
 #| msgid "Name of the alarm template"
 msgctxt "@info:whatsthis"
@@ -8482,22 +8482,22 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "अतिरिक्त संसूचक पुनरावृत्ति सेट अप गर्नुहोस्"
 
-#: akonadimodel.cpp:650
+#: akonadimodel.cpp:634
 #, fuzzy
 #| msgid "Calendar Files"
 msgctxt "@title:column"
 msgid "Calendars"
 msgstr "क्यालेन्डर फाइल"
 
-#: akonadimodel.cpp:1097
+#: akonadimodel.cpp:1081
 #, fuzzy
 #| msgid "Failed to send email"
 msgctxt "@info/plain"
 msgid "Failed to create new calendar resource"
 msgstr "इमेल पठाउन असफल"
 
-#: akonadimodel.cpp:1097 akonadimodel.cpp:1143 akonadimodel.cpp:1161
-#: akonadimodel.cpp:1473
+#: akonadimodel.cpp:1081 akonadimodel.cpp:1121 akonadimodel.cpp:1139
+#: akonadimodel.cpp:1448
 #, fuzzy, kde-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
@@ -8505,35 +8505,35 @@ msgctxt "@info"
 msgid "%1<nl/>(%2)"
 msgstr "%1: %2"
 
-#: akonadimodel.cpp:1141
+#: akonadimodel.cpp:1119
 #, fuzzy, kde-format
 #| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgctxt "@info"
 msgid "Failed to remove calendar <resource>%1</resource>."
 msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
 
-#: akonadimodel.cpp:1159
+#: akonadimodel.cpp:1137
 #, fuzzy, kde-format
 #| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
 msgctxt "@info"
 msgid "Failed to update calendar <resource>%1</resource>."
 msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
 
-#: akonadimodel.cpp:1464
+#: akonadimodel.cpp:1439
 #, fuzzy
 #| msgid "Failed to send email"
 msgctxt "@info/plain"
 msgid "Failed to create alarm."
 msgstr "इमेल पठाउन असफल"
 
-#: akonadimodel.cpp:1466
+#: akonadimodel.cpp:1441
 #, fuzzy
 #| msgid "Failed to open file"
 msgctxt "@info/plain"
 msgid "Failed to update alarm."
 msgstr "फाइल खोल्न असफल"
 
-#: akonadimodel.cpp:1468
+#: akonadimodel.cpp:1443
 #, fuzzy
 #| msgid "Failed to execute command:"
 msgctxt "@info/plain"
