@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-28 06:11+0200\n"
+"POT-Creation-Date: 2010-11-11 06:16+0100\n"
 "PO-Revision-Date: 2007-09-13 13:45+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,35 +18,64 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: abstractrfbserver.cpp:227
-msgid "Address already in use"
-msgstr ""
-
-#: abstractrfbserver.cpp:319
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"तपाईँको X11 सर्भरले आवश्यक X परीक्षण विस्तार संस्करण २.२ समर्थन गर्दैन । तपाईँको डेस्कटप "
-"साझेदारी सम्भव छैन ।"
-
-#: abstractrfbserver.cpp:320
-msgid "Desktop Sharing Error"
-msgstr "डेस्कटप साझेदारी त्रुटि"
-
-#: connectiondialog.cpp:32
+#: connectiondialog.cpp:35
 msgid "New Connection"
 msgstr "नयाँ जडान"
 
-#: connectiondialog.cpp:45
+#: connectiondialog.cpp:48
 msgid "Accept Connection"
 msgstr "जडान स्वीकार गर्नुहोस्"
 
-#: connectiondialog.cpp:49
+#: connectiondialog.cpp:52
 msgid "Refuse Connection"
 msgstr "जडान अस्वीकार गर्नुहोस्"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
+#: connectiondialog.cpp:79
+#, fuzzy, kde-format
+#| msgid ""
+#| "Somebody is requesting a connection to your computer. Granting this will "
+#| "allow the remote user to watch your desktop. "
+msgid ""
+"You have requested to share your desktop with %1. If you proceed, you will "
+"allow the remote user to watch your desktop."
+msgstr ""
+"कोही मानिस तपाईँको कम्प्युटरमा जडान गर्न अनुरोध गरिरहेको छ । यसलाई स्वीकार गर्नाले "
+"तपाईँको डेस्कटपमा टाढाको प्रयोगकर्तालाई अनुमति दिनेछ ।"
+
+#: invitationsrfbclient.cpp:60 invitationsrfbclient.cpp:63
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "%1 बाट लगइन प्रयास असफल भयो: गलत पासवर्ड"
+
+#: invitationsrfbclient.cpp:80
+#, fuzzy, kde-format
+#| msgid "Accepted uninvited connection from %1"
+msgid "Refused uninvited connection attempt from %1"
+msgstr "%1 बाट निमन्त्रणा नगरिएको जडान स्वीकार गरियो"
+
+#: invitationsrfbclient.cpp:84 pendingrfbclient.cpp:57 tubesrfbclient.cpp:57
+#, fuzzy, kde-format
+#| msgid "Accepted uninvited connection from %1"
+msgid "Accepted connection from %1"
+msgstr "%1 बाट निमन्त्रणा नगरिएको जडान स्वीकार गरियो"
+
+#: invitationsrfbclient.cpp:88 pendingrfbclient.cpp:61 tubesrfbclient.cpp:61
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "%1 बाट जडान प्राप्त भयो, होल्डमा (यकीनका लागि प्रतिक्षा गर्दैछ)"
+
+#: invitationsrfbserver.cpp:52
+msgid ""
+"Failed to start the krfb server. Invitation-based sharing will not work. Try "
+"setting another port in the settings and restart krfb."
+msgstr ""
+
+#: invitationsrfbserver.cpp:58
+#, kde-format
+msgid "%1@%2 (shared desktop)"
+msgstr "%1@%2 (साझेदार गरिएको डेस्कटप)"
+
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:53
 msgid "Invitation"
 msgstr "निमन्त्रणा"
 
@@ -85,41 +114,27 @@ msgstr ""
 "यदि तपाइँ डेस्कटप साझेदारीको लागि एउटा स्थायी पासवर्ड सिर्जना गर्न चाहानुहुन्छ भने,"
 "कन्फिगरेसनमा'निमन्त्रणा नगरीएको जडान' लाईअनुमति दिनुहोस्।"
 
-#: krfbconnectioncontroller.cpp:99
-#, fuzzy, kde-format
-#| msgid "Accepted uninvited connection from %1"
-msgid "Refused uninvited connection attempt from %1"
-msgstr "%1 बाट निमन्त्रणा नगरिएको जडान स्वीकार गरियो"
-
-#: krfbconnectioncontroller.cpp:110
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "%1 बाट निमन्त्रणा नगरिएको जडान स्वीकार गरियो"
-
-#: krfbconnectioncontroller.cpp:118
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "%1 बाट जडान प्राप्त भयो, होल्डमा (यकीनका लागि प्रतिक्षा गर्दैछ)"
-
-#: krfbconnectioncontroller.cpp:162 krfbconnectioncontroller.cpp:166
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "%1 बाट लगइन प्रयास असफल भयो: गलत पासवर्ड"
-
-#: krfbserver.cpp:60 krfbserver.cpp:65
-#, kde-format
-msgid "%1@%2 (shared desktop)"
-msgstr "%1@%2 (साझेदार गरिएको डेस्कटप)"
-
-#: main.cpp:40
+#: main.cpp:43
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "केडीई डेस्कटप साझेदार गर्न भीएनसी-मिल्दोजुल्दो सर्भर"
 
-#: main.cpp:46
+#: main.cpp:54
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"तपाईँको X11 सर्भरले आवश्यक X परीक्षण विस्तार संस्करण २.२ समर्थन गर्दैन । तपाईँको डेस्कटप "
+"साझेदारी सम्भव छैन ।"
+
+#: main.cpp:56
+msgid "Desktop Sharing Error"
+msgstr "डेस्कटप साझेदारी त्रुटि"
+
+#: main.cpp:65
 msgid "Desktop Sharing"
 msgstr "डेस्कटप साझेदारी"
 
-#: main.cpp:48
+#: main.cpp:67
 #, fuzzy
 #| msgid ""
 #| "(c) 2007, Alessandro Praduroux\n"
@@ -130,10 +145,10 @@ msgstr "डेस्कटप साझेदारी"
 #| "(c) 2000, Tridia Corporation\n"
 #| "(c) 1999, AT&T Laboratories Cambridge\n"
 msgid ""
+"(c) 2009-2010, Collabora Ltd.\n"
 "(c) 2007, Alessandro Praduroux\n"
 "(c) 2001-2003, Tim Jansen\n"
 "(c) 2001, Johannes E. Schindelin\n"
-"(c) 2000, heXoNet Support GmbH, D-66424 Homburg\n"
 "(c) 2000-2001, Const Kaplinsky\n"
 "(c) 2000, Tridia Corporation\n"
 "(c) 1999, AT&T Laboratories Boston\n"
@@ -146,89 +161,73 @@ msgstr ""
 "(c) २०००, ट्रिडिया कर्पोरेसन\n"
 "(c) १९९९, एटिटि ल्याबरोटोरिज क्याम्ब्रिज\n"
 
-#: main.cpp:55
+#: main.cpp:74
+msgid "George Goldberg"
+msgstr ""
+
+#: main.cpp:75
+msgid "Telepathy tubes support"
+msgstr ""
+
+#: main.cpp:77
+msgid "George Kiagiadakis"
+msgstr ""
+
+#: main.cpp:80
 msgid "Alessandro Praduroux"
 msgstr "एलेसन्डरो प्राडुरक्स"
 
-#: main.cpp:55
+#: main.cpp:80
 msgid "KDE4 porting"
 msgstr "केडीई ४ पोर्ट"
 
-#: main.cpp:56
+#: main.cpp:81
 msgid "Tim Jansen"
 msgstr "टिम जन्सेन"
 
-#: main.cpp:57
-msgid "Ian Reinhart Geiser"
-msgstr "इअन रिन्हार्ट गिजर"
+#: main.cpp:81
+msgid "Original author"
+msgstr ""
 
-#: main.cpp:57
-msgid "DCOP interface"
-msgstr "डिसिओपि इन्टरफेस"
-
-#: main.cpp:58
+#: main.cpp:82
 msgid "Johannes E. Schindelin"
 msgstr "जोहानेस इ.स्किनड्लिन"
 
-#: main.cpp:59
+#: main.cpp:83
 msgid "libvncserver"
 msgstr "libvncserver"
 
-#: main.cpp:60
+#: main.cpp:84
 msgid "Const Kaplinsky"
 msgstr "कन्स्ट कप्लिन्स्काइ"
 
-#: main.cpp:61
+#: main.cpp:85
 msgid "TightVNC encoder"
 msgstr "कसिलो भीएनसी सङ्केतक"
 
-#: main.cpp:62
+#: main.cpp:86
 msgid "Tridia Corporation"
 msgstr "ट्रिडिया कर्पोरेसन"
 
-#: main.cpp:63
+#: main.cpp:87
 msgid "ZLib encoder"
 msgstr "ZLib सङ्केतक"
 
-#: main.cpp:64
+#: main.cpp:88
 #, fuzzy
 #| msgid "AT&T Laboratories Cambridge"
 msgid "AT&T Laboratories Boston"
 msgstr "एटीटी ल्याबरोटोरिज क्याम्ब्रिज"
 
-#: main.cpp:65
+#: main.cpp:89
 msgid "original VNC encoders and protocol design"
 msgstr "मौलिक भीएनसी सङ्केतक र प्रोटोकल डिजाइन"
 
-#: main.cpp:67
-msgid "Jens Wagner (heXoNet Support GmbH)"
-msgstr "जेन्स वागनर (heXoNet समर्थन GmbH)"
-
-#: main.cpp:68
-msgid "X11 update scanner, original code base"
-msgstr "X11 अद्यावधिक स्क्यानर, मौलिक कोड आधार"
-
-#: main.cpp:70
-msgid "Jason Spisak"
-msgstr "जसोन स्पीसक"
-
-#: main.cpp:71
-msgid "Connection side image"
-msgstr "जडान साइड छवि"
-
-#: main.cpp:73
-msgid "Karl Vogel"
-msgstr "कार्ल भोगेल"
-
-#: main.cpp:74
-msgid "KDesktop background deactivation"
-msgstr "केडीई डेस्कटप पृष्ठभूमि निस्क्रियता"
-
-#: main.cpp:78
+#: main.cpp:94
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:93
+#: manageinvitationsdialog.cpp:91
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -256,7 +255,7 @@ msgstr ""
 "यदि तपाइँ डेस्कटप साझेदारीको लागि एउटा स्थायी पासवर्ड सिर्जना गर्न चाहानुहुन्छ भने,"
 "कन्फिगरेसनमा'निमन्त्रणा नगरीएको जडान' लाईअनुमति दिनुहोस्।"
 
-#: manageinvitationsdialog.cpp:115
+#: manageinvitationsdialog.cpp:113
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
 "email will be able to connect to your computer for one hour, or until the "
@@ -269,15 +268,15 @@ msgstr ""
 "तपाईँले कम्तिमा इमेल गुप्तिकरण गर्न वा यसलाई सुरक्षित सञ्जालमा राख्नुपर्दछ तर इन्टरनेटमा "
 "होइन ।"
 
-#: manageinvitationsdialog.cpp:120
+#: manageinvitationsdialog.cpp:118
 msgid "Send Invitation via Email"
 msgstr "इमेल मार्फत निमन्त्रणा पठाउनुहोस्"
 
-#: manageinvitationsdialog.cpp:147
+#: manageinvitationsdialog.cpp:145
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "डेस्कटप साझेदारी (VNC) निमन्त्रणा"
 
-#: manageinvitationsdialog.cpp:148
+#: manageinvitationsdialog.cpp:146
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have been invited to a VNC session. If you have the KDE Remote "
@@ -316,23 +315,23 @@ msgstr ""
 "\n"
 "सुरक्षित कारणका लागि यो निमन्त्रणा %7 मा समाप्त हुनेछ ।"
 
-#: manageinvitationsdialog.cpp:187
+#: manageinvitationsdialog.cpp:185
 msgid "Network"
 msgstr "नेटवर्क"
 
-#: manageinvitationsdialog.cpp:188
+#: manageinvitationsdialog.cpp:186
 msgid "Security"
 msgstr "सुरक्षा"
 
-#: manageinvitationsdialog.cpp:197
+#: manageinvitationsdialog.cpp:194
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr "<qt>निश्चित तपाइँ सम्पूर्ण निमन्त्रणाहरू मेटाउन चाहानुहुन्छ?</qt>"
 
-#: manageinvitationsdialog.cpp:198 manageinvitationsdialog.cpp:213
+#: manageinvitationsdialog.cpp:195 manageinvitationsdialog.cpp:210
 msgid "Confirm delete Invitations"
 msgstr "सबै निमन्त्रणा मेटाउन यकिन गर्नुहोस्"
 
-#: manageinvitationsdialog.cpp:212
+#: manageinvitationsdialog.cpp:209
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr "<qt>निश्चित तपाइँ यो निमन्त्रणा मेटाउन चाहानुहुन्छ?</qt>"
 
@@ -383,25 +382,25 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Shyam krishna bal<shyamkrishna_bal@yahoo.com>"
 
-#. i18n: file: ui/configsecurity.ui:17
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#. i18n: file: ui/configsecurity.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
 #: rc.cpp:5
-msgid "Allow uninvited connections"
-msgstr "निमन्त्रणा नगरिएको जडान अनुमति दिनुहोस्"
+#, fuzzy
+#| msgid "Ask before accepting an uninvited connection"
+msgid "Ask before accepting connections"
+msgstr "स्वीकार गर्नु अघि निमन्त्रणा गरीएका जडान सोध्नुहोस्"
 
-#. i18n: file: ui/configsecurity.ui:24
+#. i18n: file: ui/configsecurity.ui:30
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
 #: rc.cpp:8
 msgid "Allow remote connections to control your desktop"
 msgstr "तपाइँको डेस्कटप नियन्त्रण गर्न टाढाको जडान अनुमति दिनुहोस्"
 
-#. i18n: file: ui/configsecurity.ui:37
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#. i18n: file: ui/configsecurity.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
 #: rc.cpp:11
-#, fuzzy
-#| msgid "Ask before accepting an uninvited connection"
-msgid "Ask before accepting connections"
-msgstr "स्वीकार गर्नु अघि निमन्त्रणा गरीएका जडान सोध्नुहोस्"
+msgid "Allow uninvited connections"
+msgstr "निमन्त्रणा नगरिएको जडान अनुमति दिनुहोस्"
 
 #. i18n: file: ui/configsecurity.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -415,7 +414,7 @@ msgstr "निमन्त्रणा नगरिएको जडानहर�
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
 #. i18n: file: krfb.kcfg:16
 #. i18n: ectx: label, entry (publishService), group (TCP)
-#: rc.cpp:17 rc.cpp:148
+#: rc.cpp:17 rc.cpp:157
 msgid "Announce the service on the local network"
 msgstr "स्थानिय नेटवर्कमा सेवा घोषणा गर्नुहोस्"
 
@@ -463,7 +462,9 @@ msgstr "१२३.२३४.१२३.२३४"
 
 #. i18n: file: ui/connectionwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:38
+#. i18n: file: ui/tubesconnectionwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: rc.cpp:38 rc.cpp:145
 msgid ""
 "If you turn this option on, the remote user can enter keystrokes and use "
 "your mouse pointer. This gives them full control over your computer, so be "
@@ -477,7 +478,9 @@ msgstr ""
 
 #. i18n: file: ui/connectionwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:41
+#. i18n: file: ui/tubesconnectionwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: rc.cpp:41 rc.cpp:148
 msgid "Allow remote user to &control keyboard and mouse"
 msgstr "टाढाको प्रयोगकर्तालाई कुञ्जीपाटी र माउस नियन्त्रण गर्न अनुमति दिनुहोस्"
 
@@ -726,15 +729,23 @@ msgstr "<b>पासवर्ड:</b>"
 msgid "<b>Expiration time:</b>"
 msgstr "<b>समाप्ति समय:</b>"
 
+#. i18n: file: ui/tubesconnectionwidget.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:142
+#, fuzzy
+#| msgid "Invitation"
+msgid "Confirmation"
+msgstr "निमन्त्रणा"
+
 #. i18n: file: krfb.kcfg:8
 #. i18n: ectx: label, entry (useDefaultPort), group (TCP)
-#: rc.cpp:142
+#: rc.cpp:151
 msgid "Use the default port for VNC (5900)"
 msgstr "भीएनसी (५९००)को लागि पूर्वनिर्धारित पोर्ट प्रयोग गर्नुहोस्"
 
 #. i18n: file: krfb.kcfg:12
 #. i18n: ectx: label, entry (port), group (TCP)
-#: rc.cpp:145
+#: rc.cpp:154
 #, fuzzy
 #| msgid "This is the port on wich krfb will listen."
 msgid "This is the port on which krfb will listen."
@@ -742,60 +753,121 @@ msgstr "यो पोर्ट केआरएफबिमा सुनिने
 
 #. i18n: file: krfb.kcfg:22
 #. i18n: ectx: label, entry (allowDesktopControl), group (Security)
-#: rc.cpp:151
+#: rc.cpp:160
 msgid "Allow remote connections to manage the desktop."
 msgstr "डेस्कटप व्यवस्था गर्नको लागि टाढाको जडानलाई अनुमति दिनुहोस्।"
 
 #. i18n: file: krfb.kcfg:26
 #. i18n: ectx: label, entry (askOnConnect), group (Security)
-#: rc.cpp:154
+#: rc.cpp:163
 msgid "Ask before allowing a remote connection."
 msgstr "टाढाको जडानलाई अनुमति दिनुअघि सोध्नुहोस्।"
 
 #. i18n: file: krfb.kcfg:30
 #. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
-#: rc.cpp:157
+#: rc.cpp:166
 msgid "Allow connections without an invitation."
 msgstr "निमन्त्रणा बिना नै जडानलाई अनुमति दिनुहोस्।"
 
 #. i18n: file: krfb.kcfg:34
 #. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
-#: rc.cpp:160
+#: rc.cpp:169
 msgid "Password for uninvited connections."
 msgstr "निमन्त्रणा नगरिएको जडानको लागि पासवर्ड।"
 
 #. i18n: file: krfb.kcfg:39
 #. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
-#: rc.cpp:163
+#: rc.cpp:172
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:38 trayicon.cpp:91
-msgid "Desktop Sharing - disconnected"
-msgstr "डेस्कटप साझेदारी - विच्छेदन गरियो"
-
-#: trayicon.cpp:47
-msgid "Enable Remote Control"
-msgstr "टाढाको नियन्त्रण सक्षम पार्नुहोस्"
-
-#: trayicon.cpp:48
-msgid "Disable Remote Control"
-msgstr "टाढाको नियन्त्रण अक्षम पार्नुहोस्"
-
-#: trayicon.cpp:78
+#: rfbservermanager.cpp:214
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
 
-#: trayicon.cpp:80
+#: rfbservermanager.cpp:228
+#, fuzzy, kde-format
+#| msgid "The remote user has closed the connection."
+msgid "The remote user %1 disconnected."
+msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
+
+#: trayicon.cpp:55
+msgid "Disconnect"
+msgstr ""
+
+#: trayicon.cpp:61
+msgid "Enable Remote Control"
+msgstr "टाढाको नियन्त्रण सक्षम पार्नुहोस्"
+
+#: trayicon.cpp:102 trayicon.cpp:138
+msgid "Desktop Sharing - disconnected"
+msgstr "डेस्कटप साझेदारी - विच्छेदन गरियो"
+
+#: trayicon.cpp:120 trayicon.cpp:142
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "डेस्कटप साझेदारी - %1 सँग जडान गरियो"
 
-#: trayicon.cpp:93
-msgid "The remote user has closed the connection."
-msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
+#: trayicon.cpp:123
+#, fuzzy
+#| msgid "Desktop Sharing - disconnected"
+msgid "Desktop Sharing - connected"
+msgstr "डेस्कटप साझेदारी - विच्छेदन गरियो"
+
+#: tubesrfbserver.cpp:138
+msgid "An error occurred sharing your desktop."
+msgstr ""
+
+#: tubesrfbserver.cpp:139 tubesrfbserver.cpp:152 tubesrfbserver.cpp:173
+#: tubesrfbserver.cpp:190 tubesrfbserver.cpp:248 tubesrfbserver.cpp:252
+msgid "Error"
+msgstr ""
+
+#: tubesrfbserver.cpp:151 tubesrfbserver.cpp:172 tubesrfbserver.cpp:251
+msgid "An unknown error occurred sharing your desktop."
+msgstr ""
+
+#: tubesrfbserver.cpp:189
+msgid "Failed to activate the rfb server."
+msgstr ""
+
+#: tubesrfbserver.cpp:245
+msgid ""
+"An error occurred sharing your desktop. The person you are trying to share "
+"your desktop with does not have the required software installed to access it."
+msgstr ""
+
+#~ msgid "Ian Reinhart Geiser"
+#~ msgstr "इअन रिन्हार्ट गिजर"
+
+#~ msgid "DCOP interface"
+#~ msgstr "डिसिओपि इन्टरफेस"
+
+#~ msgid "Jens Wagner (heXoNet Support GmbH)"
+#~ msgstr "जेन्स वागनर (heXoNet समर्थन GmbH)"
+
+#~ msgid "X11 update scanner, original code base"
+#~ msgstr "X11 अद्यावधिक स्क्यानर, मौलिक कोड आधार"
+
+#~ msgid "Jason Spisak"
+#~ msgstr "जसोन स्पीसक"
+
+#~ msgid "Connection side image"
+#~ msgstr "जडान साइड छवि"
+
+#~ msgid "Karl Vogel"
+#~ msgstr "कार्ल भोगेल"
+
+#~ msgid "KDesktop background deactivation"
+#~ msgstr "केडीई डेस्कटप पृष्ठभूमि निस्क्रियता"
+
+#~ msgid "Disable Remote Control"
+#~ msgstr "टाढाको नियन्त्रण अक्षम पार्नुहोस्"
+
+#~ msgid "The remote user has closed the connection."
+#~ msgstr "टाढाको प्रयोगकर्ताले जडान बन्द गर्यो ।"
 
 #~ msgid "The remote user has been authenticated and is now connected."
 #~ msgstr "टाढाको प्रयोगकर्ता प्रमाणीकरण भयो र अहिले जडान गरियो ।"
