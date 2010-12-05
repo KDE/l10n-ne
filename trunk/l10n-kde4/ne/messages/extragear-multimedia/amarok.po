@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-04 02:27+0100\n"
+"POT-Creation-Date: 2010-12-05 02:25+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -691,7 +691,7 @@ msgstr "फन्ट"
 
 #. i18n: file: context/applets/labels/labelsSettings.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, labelsSettings)
-#: rc.cpp:301 context/applets/labels/LabelsApplet.cpp:669
+#: rc.cpp:301 context/applets/labels/LabelsApplet.cpp:675
 #, fuzzy
 #| msgid "&Settings"
 msgid "Labels Settings"
@@ -1108,7 +1108,7 @@ msgstr ""
 #: browsers/collectionbrowser/CollectionWidget.cpp:286
 #: browsers/CollectionTreeItemModelBase.cpp:1160
 #: context/applets/lyrics/LyricsApplet.cpp:194
-#: context/applets/wikipedia/WikipediaApplet.cpp:591
+#: context/applets/wikipedia/WikipediaApplet.cpp:598
 #: dialogs/transferdialog.cpp:88 dialogs/FilenameLayoutDialog.cpp:221
 #: dialogs/FilenameLayoutDialog.cpp:575 musicbrainz/MusicBrainzTags.cpp:352
 #: playlist/PlaylistModel.cpp:877 services/jamendo/JamendoInfoParser.cpp:51
@@ -1130,7 +1130,7 @@ msgstr "शीर्षक"
 
 #. i18n: file: core-impl/collections/audiocd/FormatSelectionDialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
-#: rc.cpp:493 App.cpp:111
+#: rc.cpp:493 MainWindow.cpp:108 App.cpp:111
 msgid "Amarok"
 msgstr "अमारोक"
 
@@ -5422,96 +5422,6 @@ msgstr "%1. %2 - %3"
 msgid "Unable to parse avatar image data."
 msgstr "विकिपेडिया जानकारी"
 
-#: aboutdialog/OcsPersonItem.cpp:94
-msgid "Email contributor"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:102 aboutdialog/OcsPersonItem.cpp:272
-msgid "Visit contributor's homepage"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:197
-#, fuzzy
-#| msgid "&4 Channels:"
-msgid "IRC channels: "
-msgstr "४ च्यानल:"
-
-#: aboutdialog/OcsPersonItem.cpp:210
-#, fuzzy
-#| msgid "Favorite"
-msgid "Favorite music: "
-msgstr "मन पर्ने"
-
-#: aboutdialog/OcsPersonItem.cpp:215
-#, kde-format
-msgid "Visit %1's openDesktop.org profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:217
-#, kde-format
-msgid "Visit %1's profile on openDesktop.org"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:251
-msgid "Visit contributor's blog"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:256
-msgid "Visit contributor's del.icio.us profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:261
-msgid "Visit contributor's Digg profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:266
-msgid "Visit contributor's Facebook profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:282
-msgid "Visit contributor's Last.fm profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:290
-msgid "Visit contributor's LinkedIn profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:295
-msgid "Visit contributor's MySpace homepage"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:300
-msgid "Visit contributor's Reddit profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:305
-msgid "Visit contributor's YouTube profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:310
-msgid "Visit contributor's Twitter feed"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:315
-msgid "Visit contributor's Wikipedia profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:320
-msgid "Visit contributor's Xing profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:325
-msgid "Visit contributor's identi.ca feed"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:330
-msgid "Visit contributor's libre.fm profile"
-msgstr ""
-
-#: aboutdialog/OcsPersonItem.cpp:335
-msgid "Visit contributor's StackOverflow profile"
-msgstr ""
-
 #: aboutdialog/ExtendedAboutDialog.cpp:73
 msgid ""
 "<qt>No information available.<br />The supplied KAboutData object does not "
@@ -5613,6 +5523,104 @@ msgstr ""
 #| msgid "No Error"
 msgid "Network error"
 msgstr "कुनै त्रुटि छैन"
+
+#: aboutdialog/OcsPersonItem.cpp:95
+msgid "Email contributor"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:103 aboutdialog/OcsPersonItem.cpp:274
+msgid "Visit contributor's homepage"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:179
+#, fuzzy, kde-format
+#| msgctxt "monthname year"
+#| msgid "%1 %2"
+msgctxt "A person's location: City, Country"
+msgid "%1, %2"
+msgstr "%1: %2"
+
+#: aboutdialog/OcsPersonItem.cpp:199
+#, fuzzy
+#| msgid "&4 Channels:"
+msgid "IRC channels: "
+msgstr "४ च्यानल:"
+
+#: aboutdialog/OcsPersonItem.cpp:212
+#, fuzzy
+#| msgid "Favorite"
+msgid "Favorite music: "
+msgstr "मन पर्ने"
+
+#: aboutdialog/OcsPersonItem.cpp:217
+#, kde-format
+msgid "Visit %1's openDesktop.org profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:219
+#, kde-format
+msgid "Visit %1's profile on openDesktop.org"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:253
+msgid "Visit contributor's blog"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:258
+msgid "Visit contributor's del.icio.us profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:263
+msgid "Visit contributor's Digg profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:268
+msgid "Visit contributor's Facebook profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:284
+msgid "Visit contributor's Last.fm profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:292
+msgid "Visit contributor's LinkedIn profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:297
+msgid "Visit contributor's MySpace homepage"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:302
+msgid "Visit contributor's Reddit profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:307
+msgid "Visit contributor's YouTube profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:312
+msgid "Visit contributor's Twitter feed"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:317
+msgid "Visit contributor's Wikipedia profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:322
+msgid "Visit contributor's Xing profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:327
+msgid "Visit contributor's identi.ca feed"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:332
+msgid "Visit contributor's libre.fm profile"
+msgstr ""
+
+#: aboutdialog/OcsPersonItem.cpp:337
+msgid "Visit contributor's StackOverflow profile"
+msgstr ""
 
 #: amarokurls/BookmarkManagerWidget.cpp:44
 #: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:79
@@ -5865,7 +5873,7 @@ msgstr "पहिलो प्ले"
 #: browsers/CollectionTreeItemModelBase.cpp:1159
 #: browsers/CollectionTreeView.cpp:228
 #: context/applets/albums/AlbumsView.cpp:242
-#: context/applets/wikipedia/WikipediaApplet.cpp:597
+#: context/applets/wikipedia/WikipediaApplet.cpp:604
 #: dialogs/transferdialog.cpp:89 dialogs/FilenameLayoutDialog.cpp:233
 #: dialogs/FilenameLayoutDialog.cpp:603 musicbrainz/MusicBrainzTags.cpp:353
 #: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:881
@@ -6740,8 +6748,8 @@ msgstr "प्राय प्ले गरिएको ट्रयाक"
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:83
 #: context/applets/upcomingevents/UpcomingEventsApplet.cpp:82
 #: context/applets/videoclip/VideoclipApplet.cpp:104
-#: context/applets/wikipedia/WikipediaApplet.cpp:609
-#: context/applets/tabs/TabsApplet.cpp:115
+#: context/applets/wikipedia/WikipediaApplet.cpp:616
+#: context/applets/tabs/TabsApplet.cpp:113
 #, fuzzy
 #| msgid "&Settings"
 msgid "Settings"
@@ -6900,13 +6908,13 @@ msgstr "प्ले सूचीमा थप्नुहोस्"
 #: context/applets/labels/LabelsApplet.cpp:91
 #: context/applets/labels/LabelsApplet.cpp:174
 #: context/applets/labels/LabelsApplet.cpp:181
-#: context/applets/labels/LabelsApplet.cpp:485
-#: context/applets/labels/LabelsApplet.cpp:495 dialogs/TagDialog.cpp:721
+#: context/applets/labels/LabelsApplet.cpp:491
+#: context/applets/labels/LabelsApplet.cpp:501 dialogs/TagDialog.cpp:721
 msgid "Labels"
 msgstr "लेबुल"
 
 #: context/applets/labels/LabelsApplet.cpp:101
-#: context/applets/wikipedia/WikipediaApplet.cpp:615
+#: context/applets/wikipedia/WikipediaApplet.cpp:622
 #, fuzzy
 #| msgid "Re&download"
 msgid "Reload"
@@ -6918,14 +6926,14 @@ msgstr "पुन: डाउनलोड गर्नुहोस्"
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
-#: context/applets/labels/LabelsApplet.cpp:485
+#: context/applets/labels/LabelsApplet.cpp:491
 #, fuzzy
 #| msgid "Fetching Lyrics..."
 msgid "Fetching ..."
 msgstr "रचना तानिँदैछ..."
 
-#: context/applets/labels/LabelsApplet.cpp:543
-#: context/applets/labels/LabelsApplet.cpp:633
+#: context/applets/labels/LabelsApplet.cpp:549
+#: context/applets/labels/LabelsApplet.cpp:639
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -7039,13 +7047,13 @@ msgstr "राम्रो"
 
 #: context/applets/photos/PhotosApplet.cpp:172
 #: context/applets/photos/PhotosApplet.cpp:189
-#: context/applets/photos/PhotosApplet.cpp:205
+#: context/applets/photos/PhotosApplet.cpp:203
 #, fuzzy, kde-format
 #| msgid "Good"
 msgid "Photos: %1"
 msgstr "राम्रो"
 
-#: context/applets/photos/PhotosApplet.cpp:231
+#: context/applets/photos/PhotosApplet.cpp:238
 #, fuzzy
 #| msgid "&Settings"
 msgid "Photos Settings"
@@ -7062,6 +7070,59 @@ msgstr "last.fm समर्थन कन्फिगर गर्नुहो�
 #| msgid "with"
 msgid "Width"
 msgstr "सँग"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:76
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:153
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:179
+#, fuzzy
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:89
+#: context/applets/wikipedia/WikipediaApplet.cpp:585
+#, fuzzy
+#| msgid "Track"
+msgid "Back"
+msgstr "ट्रयाक"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:96
+#: context/applets/wikipedia/WikipediaApplet.cpp:592
+#, fuzzy
+#| msgid "&Seek Forward"
+msgid "Forward"
+msgstr "अगाडी खोजी गर्नुहोस्"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:103
+#, fuzzy
+#| msgid "No track playing"
+msgid "Show Similar Artists for Currently Playing Track"
+msgstr "कुनै ट्रयाक प्ले भएको छैन"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:202
+#, fuzzy
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists Settings"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:226
+#, fuzzy, kde-format
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists of %1"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:233
+#, fuzzy
+#| msgid "Similar Artists to %1"
+msgid "Similar Artists: Not Found"
+msgstr "%1 मा मिल्ने कलाकारहरू"
+
+#: context/applets/similarartists/SimilarArtistsApplet.cpp:268
+#, fuzzy, kde-format
+#| msgid "Paused"
+msgctxt "@item:intext Artist biography published date"
+msgid "Published: %1"
+msgstr "पज गरियो"
 
 #: context/applets/similarartists/ArtistWidget.cpp:136
 #, fuzzy
@@ -7126,59 +7187,6 @@ msgstr "ट्रयाकका लागि रचना फेला पर�
 #| msgid "tracks"
 msgid "Top track: %1"
 msgstr "ट्रयाक"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:76
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:153
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:179
-#, fuzzy
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:89
-#: context/applets/wikipedia/WikipediaApplet.cpp:578
-#, fuzzy
-#| msgid "Track"
-msgid "Back"
-msgstr "ट्रयाक"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:96
-#: context/applets/wikipedia/WikipediaApplet.cpp:585
-#, fuzzy
-#| msgid "&Seek Forward"
-msgid "Forward"
-msgstr "अगाडी खोजी गर्नुहोस्"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:103
-#, fuzzy
-#| msgid "No track playing"
-msgid "Show Similar Artists for Currently Playing Track"
-msgstr "कुनै ट्रयाक प्ले भएको छैन"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:202
-#, fuzzy
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists Settings"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:226
-#, fuzzy, kde-format
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists of %1"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:233
-#, fuzzy
-#| msgid "Similar Artists to %1"
-msgid "Similar Artists: Not Found"
-msgstr "%1 मा मिल्ने कलाकारहरू"
-
-#: context/applets/similarartists/SimilarArtistsApplet.cpp:268
-#, fuzzy, kde-format
-#| msgid "Paused"
-msgctxt "@item:intext Artist biography published date"
-msgid "Published: %1"
-msgstr "पज गरियो"
 
 #: context/applets/songkick/SongkickApplet.cpp:41
 #, fuzzy
@@ -7463,79 +7471,72 @@ msgstr "%1 का लागि यन्त्र सूचना"
 msgid "Video Clip Settings"
 msgstr "विकिपेडिया"
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:344
-#: context/applets/wikipedia/WikipediaApplet.cpp:420
+#: context/applets/wikipedia/WikipediaApplet.cpp:351
+#: context/applets/wikipedia/WikipediaApplet.cpp:427
 msgid "Update Supported Languages"
 msgstr ""
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:345
-#: context/applets/wikipedia/WikipediaApplet.cpp:421
+#: context/applets/wikipedia/WikipediaApplet.cpp:352
+#: context/applets/wikipedia/WikipediaApplet.cpp:428
 msgid "Get Supported Languages"
 msgstr ""
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:566
-#: context/applets/wikipedia/WikipediaApplet.cpp:745
+#: context/applets/wikipedia/WikipediaApplet.cpp:573
+#: context/applets/wikipedia/WikipediaApplet.cpp:751
 msgid "Wikipedia"
 msgstr "विकिपेडिया"
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:603
+#: context/applets/wikipedia/WikipediaApplet.cpp:610
 #: dialogs/FilenameLayoutDialog.cpp:213 dialogs/FilenameLayoutDialog.cpp:568
 #: services/jamendo/JamendoInfoParser.cpp:109
 msgid "Track"
 msgstr "ट्रयाक"
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:718
+#: context/applets/wikipedia/WikipediaApplet.cpp:725
 #, fuzzy, kde-format
 #| msgid "Wikipedia"
 msgid "Wikipedia: %1"
 msgstr "विकिपेडिया"
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:778
+#: context/applets/wikipedia/WikipediaApplet.cpp:784
 #, fuzzy
 #| msgid "Wikipedia"
 msgid "Wikipedia General Settings"
 msgstr "विकिपेडिया"
 
-#: context/applets/wikipedia/WikipediaApplet.cpp:779
+#: context/applets/wikipedia/WikipediaApplet.cpp:785
 #, fuzzy
 #| msgid "Wikipedia"
 msgid "Wikipedia Language Settings"
 msgstr "विकिपेडिया"
 
-#: context/applets/tabs/TabsApplet.cpp:88
-#: context/applets/tabs/TabsApplet.cpp:189
-#: context/applets/tabs/TabsApplet.cpp:223
+#: context/applets/tabs/TabsView.cpp:174
+msgid "tab provided from: "
+msgstr ""
+
+#: context/applets/tabs/TabsApplet.cpp:85
+#: context/applets/tabs/TabsApplet.cpp:165
+#: context/applets/tabs/TabsApplet.cpp:182
 #, fuzzy
 #| msgid "Tags"
 msgctxt "Guitar tablature"
 msgid "Tabs"
 msgstr "ट्याग"
 
-#: context/applets/tabs/TabsApplet.cpp:106
+#: context/applets/tabs/TabsApplet.cpp:104
 #, fuzzy
 #| msgid "Re&download"
 msgctxt "Guitar tablature"
 msgid "Reload tabs"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
-#: context/applets/tabs/TabsApplet.cpp:172
-#, fuzzy
-#| msgid "No track playing"
-msgctxt "Guitar tablature"
-msgid "Tabs: No track playing"
-msgstr "कुनै ट्रयाक प्ले भएको छैन"
-
-#: context/applets/tabs/TabsApplet.cpp:202
+#: context/applets/tabs/TabsApplet.cpp:194
 #, fuzzy
 #| msgid "Fetching Lyrics..."
 msgid "Tabs: Fetching ..."
 msgstr "रचना तानिँदैछ..."
 
-#: context/applets/tabs/TabsApplet.cpp:203
-msgid "Tabs are being fetched"
-msgstr ""
-
-#: context/applets/tabs/TabsApplet.cpp:215
+#: context/applets/tabs/TabsApplet.cpp:206
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -7543,13 +7544,14 @@ msgctxt "Guitar tablature"
 msgid "No tabs for %1 by %2"
 msgstr "\"%1\" को लागि १ परिणाम"
 
-#: context/applets/tabs/TabsApplet.cpp:216
+#: context/applets/tabs/TabsApplet.cpp:212
 #, fuzzy
-#| msgid "There are not enough neighbors for this radio."
-msgid "There were no tabs found for this track"
-msgstr "यो रेडियोका लागि पर्याप्त छिमेकीहरू छैन।"
+#| msgid "Fetching Lyrics..."
+msgctxt "Guitar tablature"
+msgid "Tabs: Fetch Error"
+msgstr "रचना तानिँदैछ..."
 
-#: context/applets/tabs/TabsApplet.cpp:249
+#: context/applets/tabs/TabsApplet.cpp:237
 #, fuzzy, kde-format
 #| msgid "1 result for \"%1\""
 #| msgid_plural "%1 results for \"%1\""
@@ -7557,22 +7559,18 @@ msgctxt "Guitar tablature"
 msgid "Tabs : %1 - %2"
 msgstr "\"%1\" को लागि १ परिणाम"
 
-#: context/applets/tabs/TabsApplet.cpp:326
+#: context/applets/tabs/TabsApplet.cpp:302
 #, fuzzy
 #| msgid "&Settings"
 msgctxt "Guitar tablature settings"
 msgid "Tabs Settings"
 msgstr "सेटिङ"
 
-#: context/applets/tabs/TabsApplet.cpp:356
+#: context/applets/tabs/TabsApplet.cpp:332
 #, fuzzy
 #| msgid "Re&download"
 msgid "Reload Tabs"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
-
-#: context/applets/tabs/TabsView.cpp:174
-msgid "tab provided from: "
-msgstr ""
 
 #: context/containments/oldcontainment/ColumnContainment.cpp:98
 #: context/toolbar/AppletToolbarAddItem.cpp:71
@@ -7718,10 +7716,6 @@ msgstr "%1 का लागि यन्त्र सूचना"
 #| msgid "Rating"
 msgid "Choose Language"
 msgstr "मूल्याङ्कन"
-
-#: context/engines/tabs/TabsEngine.cpp:195
-msgid "No valid artist or titlename found for the current track."
-msgstr ""
 
 #: context/scriptengine/javascript/qtgui/linearlayout.cpp:70
 msgid "LinearLayout requires a parent"
@@ -12131,24 +12125,6 @@ msgstr "प्ले काउन्टर"
 msgid "Search Preferences"
 msgstr "यहाँ खोजी गर्नुहोस्..."
 
-#: playlist/PlaylistDock.cpp:96
-#, fuzzy
-#| msgid "Dynamic Mode"
-msgid "Dynamic Mode Enabled"
-msgstr "गतिशील मोड"
-
-#: playlist/PlaylistDock.cpp:160
-#, fuzzy
-#| msgid "Current Playlist"
-msgid "&Save Current Playlist"
-msgstr "हालको प्ले सूची"
-
-#: playlist/PlaylistDock.cpp:236
-#, fuzzy, kde-format
-#| msgid "Save Playlist"
-msgid "&Save playlist to \"%1\""
-msgstr "प्लेसूची बचत गर्नुहोस्"
-
 #: playlist/PlaylistModel.cpp:237
 #, fuzzy
 #| msgid "No information available for this track"
@@ -12247,6 +12223,24 @@ msgstr "मुड"
 #: playlist/PlaylistModel.cpp:897
 msgid "File Size"
 msgstr "फाइल साइज"
+
+#: playlist/PlaylistDock.cpp:96
+#, fuzzy
+#| msgid "Dynamic Mode"
+msgid "Dynamic Mode Enabled"
+msgstr "गतिशील मोड"
+
+#: playlist/PlaylistDock.cpp:160
+#, fuzzy
+#| msgid "Current Playlist"
+msgid "&Save Current Playlist"
+msgstr "हालको प्ले सूची"
+
+#: playlist/PlaylistDock.cpp:236
+#, fuzzy, kde-format
+#| msgid "Save Playlist"
+msgid "&Save playlist to \"%1\""
+msgstr "प्लेसूची बचत गर्नुहोस्"
 
 #: playlistgenerator/ConstraintGroup.cpp:87
 #, fuzzy
@@ -15324,6 +15318,71 @@ msgstr "स्टेफेन बोग्नर"
 msgid "Loads of stuff"
 msgstr ""
 
+#: main.cpp:211
+msgid "Benoît AlK Zugmeyer"
+msgstr ""
+
+#: main.cpp:212
+msgid "Dr. Tilmann Bubeck"
+msgstr ""
+
+#: main.cpp:213
+msgid "Edward Karavakis"
+msgstr ""
+
+#: main.cpp:214
+#, fuzzy
+#| msgid "Zero"
+msgid "Hekkro"
+msgstr "शून्य"
+
+#: main.cpp:215
+msgid "Maik Keller"
+msgstr ""
+
+#: main.cpp:216
+msgid "Nathan Caza"
+msgstr ""
+
+#: main.cpp:217
+#, fuzzy
+#| msgid "Engine"
+msgid "Paul Erntges"
+msgstr "इन्जिन"
+
+#: main.cpp:218
+msgid "Robert Štětka"
+msgstr ""
+
+#: main.cpp:219
+msgid "Robert Tell"
+msgstr ""
+
+#: main.cpp:220
+#, fuzzy
+#| msgid "Random Mix"
+msgid "Ryan Rix"
+msgstr "अनियमित मिश्रण"
+
+#: main.cpp:221
+msgid "Thomas Kahle"
+msgstr ""
+
+#: main.cpp:222
+msgid "Valorie Zimmerman"
+msgstr ""
+
+#, fuzzy
+#~| msgid "No track playing"
+#~ msgctxt "Guitar tablature"
+#~ msgid "Tabs: No track playing"
+#~ msgstr "कुनै ट्रयाक प्ले भएको छैन"
+
+#, fuzzy
+#~| msgid "There are not enough neighbors for this radio."
+#~ msgid "There were no tabs found for this track"
+#~ msgstr "यो रेडियोका लागि पर्याप्त छिमेकीहरू छैन।"
+
 #, fuzzy
 #~| msgid "Repeat Track"
 #~ msgid "Remove Track"
@@ -16321,9 +16380,6 @@ msgstr ""
 
 #~ msgid "Manual"
 #~ msgstr "म्यानुअल"
-
-#~ msgid "Zero"
-#~ msgstr "शून्य"
 
 #~ msgid "Add Equalizer Preset"
 #~ msgstr "तुल्यकारक प्रिसेट थप्नुहोस्"
@@ -17377,11 +17433,6 @@ msgstr ""
 #~| msgid "Configure General Options"
 #~ msgid "Configuration Definitions"
 #~ msgstr "साधारण विकल्प कन्फिगर गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Engine"
-#~ msgid "Null Engine"
-#~ msgstr "इन्जिन"
 
 #, fuzzy
 #~| msgid "Unknown title"
@@ -21439,9 +21490,6 @@ msgstr ""
 
 #~ msgid "Podcast..."
 #~ msgstr "पोडकास्ट..."
-
-#~ msgid "Random Mix"
-#~ msgstr "अनियमित मिश्रण"
 
 #~ msgid "Radio Streams"
 #~ msgstr "रेडियो प्रवाहहरू"
