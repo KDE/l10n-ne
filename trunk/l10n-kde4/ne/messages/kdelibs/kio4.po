@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-09 02:17+0100\n"
+"POT-Creation-Date: 2010-12-26 02:59+0100\n"
 "PO-Revision-Date: 2007-08-22 16:04+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -21,10 +21,9 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "io-slave सिर्जना गर्न अक्षम: %1"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "सबै तस्वीर"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -33,6 +32,26 @@ msgstr "प्राप्त छवि"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "ओसीआर छवि"
+
+#: kio/kfileitemdelegate.cpp:236
+#, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "1 वस्तु"
+msgstr[1] "%1 वस्तुहरू"
+
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "io-slave सिर्जना गर्न अक्षम: %1"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -978,8 +997,8 @@ msgstr "फाइल वा फोल्डर अवस्थित छैन"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "निर्दिष्ट गरिएको फाइल वा फोल्डर <strong>%1</strong> अवस्थित छैन ।"
 
-#: kio/global.cpp:666 kio/job.cpp:2110 kio/paste.cpp:64 kio/copyjob.cpp:1337
-#: kio/copyjob.cpp:1908
+#: kio/global.cpp:666 kio/job.cpp:2110 kio/copyjob.cpp:1337
+#: kio/copyjob.cpp:1908 kio/paste.cpp:64
 msgid "File Already Exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
@@ -1858,136 +1877,95 @@ msgstr "गन्तब्य फाइलका लागि फरक फा�
 msgid "Undocumented Error"
 msgstr "कागजात नगरिएको त्रुटि"
 
-#: kio/renamedialog.cpp:124
-msgid "Appl&y to All"
-msgstr ""
-
-#: kio/renamedialog.cpp:125
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:126
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-
-#: kio/renamedialog.cpp:131
-msgid "&Rename"
-msgstr "पुन: नामकरण गर्नुहोस्"
-
-#: kio/renamedialog.cpp:133
-msgid "Suggest New &Name"
-msgstr "नयाँ नाम सुझाव गर्नुहोस्"
-
-#: kio/renamedialog.cpp:139
-msgid "&Skip"
-msgstr "फड्काउनुहोस्"
-
-#: kio/renamedialog.cpp:140
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:141
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:146
+#: kio/fileundomanager.cpp:116
 #, fuzzy
-#| msgid "Write"
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "लेख्नुहोस्"
+#| msgid "Creating directory"
+msgid "Creating directory"
+msgstr "फोल्डर सिर्जना गर्दै"
 
-#: kio/renamedialog.cpp:146
-msgid "&Overwrite"
-msgstr "अधिलेखन गर्नुहोस्"
+#: kio/fileundomanager.cpp:117 kio/job.cpp:171
+msgid "Directory"
+msgstr "डाइरेक्टरी"
 
-#: kio/renamedialog.cpp:148
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:153
-msgid "&Resume"
-msgstr "पुन: निरन्तरता दिनुहोस्"
-
-#: kio/renamedialog.cpp:162
-#, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"'%1' सँग आफैमा यो कार्य अधिलेखन हुनेछ । \n"
-"कृपया नयाँ फाइल नाम प्रविष्ट गर्नुहोस्:"
-
-#: kio/renamedialog.cpp:166
-msgid "C&ontinue"
-msgstr "जारी राख्नुहोस्"
-
-#: kio/renamedialog.cpp:238
+#: kio/fileundomanager.cpp:119
 #, fuzzy
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite the destination."
-msgstr ""
-"'%1' सँग आफैमा यो कार्य अधिलेखन हुनेछ । \n"
-"कृपया नयाँ फाइल नाम प्रविष्ट गर्नुहोस्:"
+#| msgid "Moving"
+msgid "Moving"
+msgstr "सार्दै"
 
-#: kio/renamedialog.cpp:240
+#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
 #, fuzzy
 #| msgid "Source"
+msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "स्रोत:"
 
-#: kio/renamedialog.cpp:241
+#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
 #, fuzzy
 #| msgid "Destination"
+msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "गन्तव्य"
 
-#: kio/renamedialog.cpp:247
-msgid "Warning, the destination is newer."
+#: kio/fileundomanager.cpp:123
+#, fuzzy
+#| msgid "Deleting"
+msgid "Deleting"
+msgstr "मेट्दै"
+
+#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
+msgid "File"
+msgstr "फाइल"
+
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
 msgstr ""
 
-#: kio/renamedialog.cpp:278
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "'%1' नाम भएको एउटा पुरानो वस्तु पहिले नै अवस्थित छ ।"
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr ""
 
-#: kio/renamedialog.cpp:280
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "'%1' नाम भएको एउटा दुरुस्त फाइल पहिले नै अवस्थित छ ।"
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr ""
 
-#: kio/renamedialog.cpp:282
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "'%1' नाम भएको एउटा नयाँ वस्तु पहिले नै अवस्थित छ ।"
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr ""
 
-#: kio/renamedialog.cpp:293
+#: kio/fileundomanager.cpp:294
 #, fuzzy
 #| msgid "&Rename"
-msgid "Rename:"
+msgid "Und&o: Rename"
 msgstr "पुन: नामकरण गर्नुहोस्"
 
-#: kio/renamedialog.cpp:422 kio/paste.cpp:242 kio/krun.cpp:1125
-#: kio/kdirlister.cpp:331
+#: kio/fileundomanager.cpp:296
+#, fuzzy
+#| msgctxt "to trash"
+#| msgid "&Trash"
+msgid "Und&o: Trash"
+msgstr "रद्दी टोकरीमा सार्नुहोस्"
+
+#: kio/fileundomanager.cpp:298
+#, fuzzy
+#| msgid "Could Not Create Folder"
+msgid "Und&o: Create Folder"
+msgstr "फोल्डर सिर्जना गर्न सकेन"
+
+#: kio/fileundomanager.cpp:764
 #, kde-format
 msgid ""
-"Malformed URL\n"
-"%1"
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
 msgstr ""
-"विकृत URL\n"
-"%1"
+
+#: kio/fileundomanager.cpp:767
+#, fuzzy
+#| msgid "Updating System Configuration"
+msgid "Undo File Copy Confirmation"
+msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दैछ"
 
 #: kio/kdesktopfileactions.cpp:65
 #, kde-format
@@ -2039,6 +2017,68 @@ msgstr "निकाल्नुहोस्"
 #: kio/kdesktopfileactions.cpp:221
 msgid "Unmount"
 msgstr "अनमाउन्ट गर्नुहोस्"
+
+#: kio/job.cpp:156
+#, fuzzy
+#| msgid "Moving"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "सार्दै"
+
+#: kio/job.cpp:163
+#, fuzzy
+#| msgid "Copying"
+msgctxt "@title job"
+msgid "Copying"
+msgstr "प्रतिलिपि गर्दै"
+
+#: kio/job.cpp:170
+#, fuzzy
+#| msgid "Creating directory"
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "फोल्डर सिर्जना गर्दै"
+
+#: kio/job.cpp:176
+#, fuzzy
+#| msgid "Deleting"
+msgctxt "@title job"
+msgid "Deleting"
+msgstr "मेट्दै"
+
+#: kio/job.cpp:182
+msgctxt "@title job"
+msgid "Examining"
+msgstr ""
+
+#: kio/job.cpp:188
+#, fuzzy
+#| msgid "Transferring"
+msgctxt "@title job"
+msgid "Transferring"
+msgstr "स्थानान्तरण गर्दै"
+
+#: kio/job.cpp:194
+#, fuzzy
+#| msgid "Mounting"
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "माउन्ट गर्दै"
+
+#: kio/job.cpp:195
+msgid "Device"
+msgstr "यन्त्र"
+
+#: kio/job.cpp:196 kio/job.cpp:202
+msgid "Mountpoint"
+msgstr "माउन्ट बिन्दु"
+
+#: kio/job.cpp:201
+#, fuzzy
+#| msgid "Unmounting"
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "अनमाउन्ट गर्दै"
 
 #: kio/slave.cpp:442
 #, kde-format
@@ -2183,180 +2223,38 @@ msgstr ""
 "अनुरोध गरिएको जस्तै SSL प्रमाणपत्र अस्वीकृत भइरहेको छ । तपाईँ यो KDE नियन्त्रण केन्द्रमा "
 "अक्षम हुन सक्नुहुन्छ ।"
 
-#: kio/kfileitemdelegate.cpp:236
-#, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "1 वस्तु"
-msgstr[1] "%1 वस्तुहरू"
+#: kio/slavebase.h:266 kio/slavebase.h:286
+msgid "&Yes"
+msgstr ""
 
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "अज्ञात"
+#: kio/slavebase.h:267 kio/slavebase.h:287
+msgid "&No"
+msgstr ""
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "प्रमाणीकरण संवाद"
 
-#: kio/job.cpp:156
-#, fuzzy
-#| msgid "Moving"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "सार्दै"
-
-#: kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189 kio/fileundomanager.cpp:120
-#, fuzzy
-#| msgid "Source"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "स्रोत:"
-
-#: kio/job.cpp:158 kio/job.cpp:165 kio/fileundomanager.cpp:121
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "गन्तव्य"
-
-#: kio/job.cpp:163
-#, fuzzy
-#| msgid "Copying"
-msgctxt "@title job"
-msgid "Copying"
-msgstr "प्रतिलिपि गर्दै"
-
-#: kio/job.cpp:170
-#, fuzzy
-#| msgid "Creating directory"
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "फोल्डर सिर्जना गर्दै"
-
-#: kio/job.cpp:171 kio/fileundomanager.cpp:117
-msgid "Directory"
-msgstr "डाइरेक्टरी"
-
-#: kio/job.cpp:176
-#, fuzzy
-#| msgid "Deleting"
-msgctxt "@title job"
-msgid "Deleting"
-msgstr "मेट्दै"
-
-#: kio/job.cpp:177 kio/job.cpp:183 kio/fileundomanager.cpp:124
-msgid "File"
-msgstr "फाइल"
-
-#: kio/job.cpp:182
-msgctxt "@title job"
-msgid "Examining"
-msgstr ""
-
-#: kio/job.cpp:188
-#, fuzzy
-#| msgid "Transferring"
-msgctxt "@title job"
-msgid "Transferring"
-msgstr "स्थानान्तरण गर्दै"
-
-#: kio/job.cpp:194
-#, fuzzy
-#| msgid "Mounting"
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "माउन्ट गर्दै"
-
-#: kio/job.cpp:195
-msgid "Device"
-msgstr "यन्त्र"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-msgid "Mountpoint"
-msgstr "माउन्ट बिन्दु"
-
-#: kio/job.cpp:201
-#, fuzzy
-#| msgid "Unmounting"
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "अनमाउन्ट गर्दै"
-
-#: kio/fileundomanager.cpp:116
-#, fuzzy
-#| msgid "Creating directory"
-msgid "Creating directory"
-msgstr "फोल्डर सिर्जना गर्दै"
-
-#: kio/fileundomanager.cpp:119
-#, fuzzy
-#| msgid "Moving"
-msgid "Moving"
-msgstr "सार्दै"
-
-#: kio/fileundomanager.cpp:123
-#, fuzzy
-#| msgid "Deleting"
-msgid "Deleting"
-msgstr "मेट्दै"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr ""
-
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr ""
-
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr ""
-
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr ""
-
-#: kio/fileundomanager.cpp:294
-#, fuzzy
-#| msgid "&Rename"
-msgid "Und&o: Rename"
-msgstr "पुन: नामकरण गर्नुहोस्"
-
-#: kio/fileundomanager.cpp:296
-#, fuzzy
-#| msgctxt "to trash"
-#| msgid "&Trash"
-msgid "Und&o: Trash"
-msgstr "रद्दी टोकरीमा सार्नुहोस्"
-
-#: kio/fileundomanager.cpp:298
-#, fuzzy
-#| msgid "Could Not Create Folder"
-msgid "Und&o: Create Folder"
-msgstr "फोल्डर सिर्जना गर्न सकेन"
-
-#: kio/fileundomanager.cpp:764
-#, kde-format
-msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
-msgstr ""
-
-#: kio/fileundomanager.cpp:767
-#, fuzzy
-#| msgid "Updating System Configuration"
-msgid "Undo File Copy Confirmation"
-msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दैछ"
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+msgid "Default"
+msgstr "पूर्वनिर्धारित"
 
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "डेटा ढाँचा:"
+
+#: kio/skipdialog.cpp:40
+msgid "Information"
+msgstr "जानकारी"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "फड्काउनुहोस्"
+
+#: kio/skipdialog.cpp:50
+msgid "AutoSkip"
+msgstr "स्वत: फड्काउनुहोस्"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
 #, kde-format
@@ -2449,83 +2347,6 @@ msgstr "मालिक:"
 msgid "Permissions:"
 msgstr "अनुमति:"
 
-#: kio/paste.cpp:48 kio/paste.cpp:131
-msgid "Filename for clipboard content:"
-msgstr "क्लिपबोर्ड सामाग्रीका लागि फाइल नाम:"
-
-#: kio/paste.cpp:124
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:140
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-"तपाईँले 'टाँस्नुहोस्' प्रयोग गरे देखि क्लिपबोर्डमा परिवर्तन भएको छ: छनोट गरिएको डेटा ढाँचा "
-"लामो समय सम्म प्रयोग योग्य हुने छैन । कृपया तपाईँले टास्न चाहनु भएको पुन: प्रतिलिपि "
-"गर्नुहोस् ।"
-
-#: kio/paste.cpp:218 kio/paste.cpp:291
-msgid "The clipboard is empty"
-msgstr "क्लिपबोर्ड खाली छ"
-
-#: kio/paste.cpp:339
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "फाइल टाँस्नुहोस्"
-msgstr[1] "%1 फाइलहरू टाँस्नुहोस्"
-
-#: kio/paste.cpp:341
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] "URL टाँस्नुहोस् "
-msgstr[1] "%1 URLs टाँस्नुहोस्"
-
-#: kio/paste.cpp:343
-msgid "&Paste Clipboard Contents"
-msgstr "क्लिपबोर्ड सामाग्रीहरू टाँस्नुहोस्"
-
-#: kio/slavebase.h:266 kio/slavebase.h:286
-msgid "&Yes"
-msgstr ""
-
-#: kio/slavebase.h:267 kio/slavebase.h:287
-msgid "&No"
-msgstr ""
-
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दैछ"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दै ।"
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr "डेस्कटप अफलाइन छ"
-
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-msgid "Default"
-msgstr "पूर्वनिर्धारित"
-
-#: kio/skipdialog.cpp:40
-msgid "Information"
-msgstr "जानकारी"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "फड्काउनुहोस्"
-
-#: kio/skipdialog.cpp:50
-msgid "AutoSkip"
-msgstr "स्वत: फड्काउनुहोस्"
-
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2594,6 +2415,16 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
+#: kio/krun.cpp:1125 kio/renamedialog.cpp:422 kio/paste.cpp:242
+#: kio/kdirlister.cpp:331
+#, kde-format
+msgid ""
+"Malformed URL\n"
+"%1"
+msgstr ""
+"विकृत URL\n"
+"%1"
+
 #: kio/krun.cpp:1158
 #, kde-format
 msgid ""
@@ -2608,14 +2439,182 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "'%1' कार्यक्रम फेला पार्न सकेन"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "सबै तस्वीर"
+#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
+msgid "Already Exists as Folder"
+msgstr "फोल्डरको रूपमा पहिल्यै अवस्थित छ"
 
-#: kio/kdbusservicestarter.cpp:76
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दैछ"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "प्रणाली कन्फिगरेसन अद्यावधिक गर्दै ।"
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr "डेस्कटप अफलाइन छ"
+
+#: kio/renamedialog.cpp:124
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:125
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:126
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:131
+msgid "&Rename"
+msgstr "पुन: नामकरण गर्नुहोस्"
+
+#: kio/renamedialog.cpp:133
+msgid "Suggest New &Name"
+msgstr "नयाँ नाम सुझाव गर्नुहोस्"
+
+#: kio/renamedialog.cpp:139
+msgid "&Skip"
+msgstr "फड्काउनुहोस्"
+
+#: kio/renamedialog.cpp:140
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:141
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:146
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "लेख्नुहोस्"
+
+#: kio/renamedialog.cpp:146
+msgid "&Overwrite"
+msgstr "अधिलेखन गर्नुहोस्"
+
+#: kio/renamedialog.cpp:148
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:153
+msgid "&Resume"
+msgstr "पुन: निरन्तरता दिनुहोस्"
+
+#: kio/renamedialog.cpp:162
 #, kde-format
-msgid "No service implementing %1"
-msgstr "%1 सेवा कार्यान्वयन छैन"
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"'%1' सँग आफैमा यो कार्य अधिलेखन हुनेछ । \n"
+"कृपया नयाँ फाइल नाम प्रविष्ट गर्नुहोस्:"
+
+#: kio/renamedialog.cpp:166
+msgid "C&ontinue"
+msgstr "जारी राख्नुहोस्"
+
+#: kio/renamedialog.cpp:238
+#, fuzzy
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite the destination."
+msgstr ""
+"'%1' सँग आफैमा यो कार्य अधिलेखन हुनेछ । \n"
+"कृपया नयाँ फाइल नाम प्रविष्ट गर्नुहोस्:"
+
+#: kio/renamedialog.cpp:240
+#, fuzzy
+#| msgid "Source"
+msgid "Source"
+msgstr "स्रोत:"
+
+#: kio/renamedialog.cpp:241
+#, fuzzy
+#| msgid "Destination"
+msgid "Destination"
+msgstr "गन्तव्य"
+
+#: kio/renamedialog.cpp:247
+msgid "Warning, the destination is newer."
+msgstr ""
+
+#: kio/renamedialog.cpp:278
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "'%1' नाम भएको एउटा पुरानो वस्तु पहिले नै अवस्थित छ ।"
+
+#: kio/renamedialog.cpp:280
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "'%1' नाम भएको एउटा दुरुस्त फाइल पहिले नै अवस्थित छ ।"
+
+#: kio/renamedialog.cpp:282
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "'%1' नाम भएको एउटा नयाँ वस्तु पहिले नै अवस्थित छ ।"
+
+#: kio/renamedialog.cpp:293
+#, fuzzy
+#| msgid "&Rename"
+msgid "Rename:"
+msgstr "पुन: नामकरण गर्नुहोस्"
+
+#: kio/paste.cpp:48 kio/paste.cpp:131
+msgid "Filename for clipboard content:"
+msgstr "क्लिपबोर्ड सामाग्रीका लागि फाइल नाम:"
+
+#: kio/paste.cpp:124
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:140
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+"तपाईँले 'टाँस्नुहोस्' प्रयोग गरे देखि क्लिपबोर्डमा परिवर्तन भएको छ: छनोट गरिएको डेटा ढाँचा "
+"लामो समय सम्म प्रयोग योग्य हुने छैन । कृपया तपाईँले टास्न चाहनु भएको पुन: प्रतिलिपि "
+"गर्नुहोस् ।"
+
+#: kio/paste.cpp:218 kio/paste.cpp:291
+msgid "The clipboard is empty"
+msgstr "क्लिपबोर्ड खाली छ"
+
+#: kio/paste.cpp:339
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "फाइल टाँस्नुहोस्"
+msgstr[1] "%1 फाइलहरू टाँस्नुहोस्"
+
+#: kio/paste.cpp:341
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] "URL टाँस्नुहोस् "
+msgstr[1] "%1 URLs टाँस्नुहोस्"
+
+#: kio/paste.cpp:343
+msgid "&Paste Clipboard Contents"
+msgstr "क्लिपबोर्ड सामाग्रीहरू टाँस्नुहोस्"
 
 #: kio/kdirlister.cpp:341
 #, kde-format
@@ -2626,9 +2625,10 @@ msgstr ""
 "यूआरएल सूचीबद्ध हुन सक्दैन\n"
 "%1"
 
-#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
-msgid "Already Exists as Folder"
-msgstr "फोल्डरको रूपमा पहिल्यै अवस्थित छ"
+#: kio/kdbusservicestarter.cpp:76
+#, kde-format
+msgid "No service implementing %1"
+msgstr "%1 सेवा कार्यान्वयन छैन"
 
 #: kio/chmodjob.cpp:214
 #, kde-format
@@ -3034,6 +3034,104 @@ msgstr "नयाँ ट्याबमा खोल्नुहोस्"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|अपेरा पुस्तकचिनो फाइलहरू (*.adr)"
 
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "ज्ञात अनुप्रयोग"
+
+#: kfile/kopenwithdialog.cpp:482
+msgid "Open With"
+msgstr "यससँग खोल्नुहोस्"
+
+#: kfile/kopenwithdialog.cpp:487
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>कार्यक्रम चयन गर्नुहोस् जुन <b>%1</b> खोल्न प्रयोग हुन सक्छ । यदि कार्यक्रम सूचित "
+"नगरेमा, नाम प्रविष्ट गर्नुहोस् वा ब्राउज बटन क्लिक गर्नुहोस् ।</qt>"
+
+#: kfile/kopenwithdialog.cpp:493
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "चयन गरिएका फाइलहरू खोल्नका लागि कार्यक्रमको नाम रोज्नुहोस् ।"
+
+#: kfile/kopenwithdialog.cpp:520
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "%1 का लागि अनुप्रयोग रोज्नुहोस्"
+
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>फाइल प्रकार: <b>%1</b> का लागि कार्यक्रम रोज्नुहोस् । यदि कार्यक्रम सूचिकृत गरेको "
+"छैन भने, नाम प्रविष्ट गर्नुहोस् वा ब्राउज बटन क्लिक गर्नुहोस् ।</qt>"
+
+#: kfile/kopenwithdialog.cpp:536
+msgid "Choose Application"
+msgstr "अनुप्रयोग रोज्नुहोस्"
+
+#: kfile/kopenwithdialog.cpp:537
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+"<qt>कार्यक्रम रोज्नुहोस् । यदि कार्यक्रम सूचीकृत गरिएको छैन भने नाम प्रविष्ट गर्नुहोस् वा "
+"ब्राउज बटन क्लिक गर्नुहोस् ।</qt>"
+
+#: kfile/kopenwithdialog.cpp:600
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"आदेशहरू पालना गर्दा, तपाईसँग वास्तविक कार्यक्रम चलेको बेलामा वास्तविक मानहरूमा "
+"प्रतिस्थापन भएका धेरै स्थान होल्डरहरू हुन सक्छन्:\n"
+"%f - एकल फाइल नाम\n"
+"%F - फाइलहरूको सूची; एक समयमा धेरै स्थानीय फाइलहरू खोल्न सक्ने अनुप्रयोहरू प्रयोग गर्नुहोस्\n"
+"%u - एकल यूआरएल\n"
+"%U - यूआरएल हरूको एक सूची\n"
+"%d - खोल्नका लागि फाइलका डाइरेक्टरी\n"
+"%D - डाइरेक्टरीहरूको एक सूची\n"
+"%i - प्रतिमा\n"
+"%m - सानो-प्रतिमा\n"
+"%c -टिप्पणी"
+
+#: kfile/kopenwithdialog.cpp:634
+msgid "Run in &terminal"
+msgstr "टर्मिनलमा चलाउनुहोस्"
+
+#: kfile/kopenwithdialog.cpp:651
+msgid "&Do not close when command exits"
+msgstr "आदेशहरू अवस्थित हुँदा बन्द नगर्नुहोस्"
+
+#: kfile/kopenwithdialog.cpp:668
+msgid "&Remember application association for this type of file"
+msgstr "यो प्रकारको फाइलका लागि सम्बन्धित अनुप्रयोग स्मरण गर्नुहोस्"
+
+#: kfile/kopenwithdialog.cpp:806
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:852
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr ""
+
 #: kfile/kfiledialog.cpp:129
 #, fuzzy
 #| msgid "*|All Files"
@@ -3060,9 +3158,39 @@ msgstr "खोल्नुहोस्"
 msgid "Save As"
 msgstr "यस रूपमा बचत गर्नुहोस्"
 
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Error>"
+
 #: kfile/kurlrequester.cpp:246
 msgid "Open file dialog"
 msgstr "संवाद फाइल खोल्नुहोस्"
+
+#: kfile/kmetaprops.cpp:57
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "कन्फिगर गर्नुहोस्"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "कन्फिगर गर्नुहोस्"
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+#| msgid "Information"
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "जानकारी"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3165,39 +3293,9 @@ msgstr "x"
 msgid "Effective"
 msgstr "प्रभावकारी"
 
-#: kfile/kmetaprops.cpp:57
-#, fuzzy
-#| msgid "Configure"
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "कन्फिगर गर्नुहोस्"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-#| msgid "Configure"
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "कन्फिगर गर्नुहोस्"
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-#| msgid "Information"
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "जानकारी"
-
 #: kfile/kdevicelistmodel.cpp:116
 msgid "Device name"
 msgstr "यन्त्र नाम"
-
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
-msgid "Location:"
-msgstr "स्थान:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3272,333 +3370,41 @@ msgstr ""
 "'%1' फोल्डर बाँडफाँड गर्ने प्रयास गर्दा त्रुटि देखा परेको छ । पर्ल स्क्रिप्ट 'फाइल बाँडफाँड "
 "सेट' सुइड रुट सेट भएको निश्चित गर्नुहोस् ।"
 
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
+msgid "Location:"
+msgstr "स्थान:"
+
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr "पूर्वावलोकन"
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
+#: kfile/kcommentwidget.cpp:65
+#, fuzzy
+#| msgid "Add Entry..."
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "प्रविष्ट थप्नुहोस्..."
+
+#: kfile/kcommentwidget.cpp:71
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "गणना गर्दै..."
+
+#: kfile/kcommentwidget.cpp:124
 #, fuzzy
 #| msgid "Comment"
-msgctxt "@label"
-msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
 msgstr "टिप्पणी"
 
-#: kfile/knfotranslator.cpp:41
+#: kfile/kcommentwidget.cpp:125
 #, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "सिर्जना गरिएको:"
-
-#: kfile/knfotranslator.cpp:42
-#, fuzzy
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "साइज"
-
-#: kfile/knfotranslator.cpp:43
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:44
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label Software used to generate content"
-msgid "Generator"
-msgstr "सामान्य"
-
-#: kfile/knfotranslator.cpp:45
-msgctxt ""
-"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
-"nie#hasLogicalPart"
-msgid "Has Logical Part"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:46
-#, fuzzy
-#| msgid "Parent Folder"
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "प्रमूल फोल्डर"
-
-#: kfile/knfotranslator.cpp:47
-msgctxt "@label"
-msgid "Keyword"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-#| msgid "Modified"
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "परिमार्जित"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "माइम प्रकार"
-
-#: kfile/knfotranslator.cpp:50
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "सामाग्रीहरू:"
-
-#: kfile/knfotranslator.cpp:51
-#, fuzzy
-#| msgid "Subject line"
-msgctxt "@label"
-msgid "Subject"
-msgstr "विषय रेखा"
-
-#: kfile/knfotranslator.cpp:52
-#, fuzzy
-#| msgid "File"
-msgctxt "@label music title"
-msgid "Title"
-msgstr "फाइल"
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "स्थान:"
-
-#: kfile/knfotranslator.cpp:54
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "सिर्जना गरिएको:"
-
-#: kfile/knfotranslator.cpp:55
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-#, fuzzy
-#| msgid "Categories"
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "कोटि"
-
-#: kfile/knfotranslator.cpp:58
-#, fuzzy
-#| msgid "C&onnect"
-msgctxt "@label"
-msgid "Codec"
-msgstr "जडान गर्नुहोस्"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-#, fuzzy
-#| msgid "Destination"
-msgctxt "@label"
-msgid "Duration"
-msgstr "गन्तव्य"
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-#| msgid "Device name"
-msgctxt "@label"
-msgid "Filename"
-msgstr "यन्त्र नाम"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "लिङ्क गर्नुहोस्"
-
-#: kfile/knfotranslator.cpp:65
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:66
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:67
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "लेख्नुहोस्"
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:71
-#, fuzzy
-#| msgid "Exposure:"
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "प्रदर्शन:"
-
-#: kfile/knfotranslator.cpp:72
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "वर्ग"
-
-#: kfile/knfotranslator.cpp:73
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:76
-#, fuzzy
-#| msgid "Mask"
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr "मास्क"
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:78
-#, fuzzy
-#| msgid "Modified"
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr "परिमार्जित"
-
-#: kfile/knfotranslator.cpp:79
-#, fuzzy
-#| msgid "Organization:"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "सङ्गठन:"
-
-#: kfile/knfotranslator.cpp:80
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:81
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "सामान्य"
-
-#: kfile/knfotranslator.cpp:82
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:83
-msgctxt "@label"
-msgid "Performer"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:84
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:85
-#, fuzzy
-#| msgid "Type"
-msgctxt "@label file type"
-msgid "Type"
-msgstr "प्रकार"
-
-#: kfile/knfotranslator.cpp:86
-msgctxt "@label Number of fuzzy translations"
-msgid "Fuzzy Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:87
-msgctxt "@label Name of last translator"
-msgid "Last Translator"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:88
-msgctxt "@label Number of obsolete translations"
-msgid "Obsolete Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:89
-msgctxt "@label"
-msgid "Translation Source Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:90
-msgctxt "@label Number of total translations"
-msgid "Total Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:91
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label Number of translated strings"
-msgid "Translated"
-msgstr "सिर्जना गरिएको:"
-
-#: kfile/knfotranslator.cpp:92
-msgctxt "@label"
-msgid "Translation Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:93
-msgctxt "@label Number of untranslated strings"
-msgid "Untranslated"
-msgstr ""
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "टिप्पणी"
 
 #: kfile/kencodingfiledialog.cpp:50
 msgid "Encoding:"
@@ -4156,6 +3962,330 @@ msgstr "स्थानीय फाइल प्रणालीमा कार
 msgid "Advanced Options for %1"
 msgstr "%1 का लागि उन्नत विकल्प"
 
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@label"
+msgid "Comment"
+msgstr "टिप्पणी"
+
+#: kfile/knfotranslator.cpp:41
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "सिर्जना गरिएको:"
+
+#: kfile/knfotranslator.cpp:42
+#, fuzzy
+#| msgid "Size"
+msgctxt "@label file content size"
+msgid "Size"
+msgstr "साइज"
+
+#: kfile/knfotranslator.cpp:43
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:44
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label Software used to generate content"
+msgid "Generator"
+msgstr "सामान्य"
+
+#: kfile/knfotranslator.cpp:45
+msgctxt ""
+"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
+"nie#hasLogicalPart"
+msgid "Has Logical Part"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:46
+#, fuzzy
+#| msgid "Parent Folder"
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "प्रमूल फोल्डर"
+
+#: kfile/knfotranslator.cpp:47
+msgctxt "@label"
+msgid "Keyword"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:48
+#, fuzzy
+#| msgid "Modified"
+msgctxt "@label modified date of file"
+msgid "Modified"
+msgstr "परिमार्जित"
+
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Mime Type"
+msgctxt "@label"
+msgid "MIME Type"
+msgstr "माइम प्रकार"
+
+#: kfile/knfotranslator.cpp:50
+#, fuzzy
+#| msgid "Contents:"
+msgctxt "@label"
+msgid "Content"
+msgstr "सामाग्रीहरू:"
+
+#: kfile/knfotranslator.cpp:51
+#, fuzzy
+#| msgid "Subject line"
+msgctxt "@label"
+msgid "Subject"
+msgstr "विषय रेखा"
+
+#: kfile/knfotranslator.cpp:52
+#, fuzzy
+#| msgid "File"
+msgctxt "@label music title"
+msgid "Title"
+msgstr "फाइल"
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "स्थान:"
+
+#: kfile/knfotranslator.cpp:54
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "सिर्जना गरिएको:"
+
+#: kfile/knfotranslator.cpp:55
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:57
+#, fuzzy
+#| msgid "Categories"
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "कोटि"
+
+#: kfile/knfotranslator.cpp:58
+#, fuzzy
+#| msgid "C&onnect"
+msgctxt "@label"
+msgid "Codec"
+msgstr "जडान गर्नुहोस्"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+#, fuzzy
+#| msgid "Destination"
+msgctxt "@label"
+msgid "Duration"
+msgstr "गन्तव्य"
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+#| msgid "Device name"
+msgctxt "@label"
+msgid "Filename"
+msgstr "यन्त्र नाम"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label"
+msgid "Height"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "लिङ्क गर्नुहोस्"
+
+#: kfile/knfotranslator.cpp:65
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:66
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:67
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "लेख्नुहोस्"
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:71
+#, fuzzy
+#| msgid "Exposure:"
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "प्रदर्शन:"
+
+#: kfile/knfotranslator.cpp:72
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "वर्ग"
+
+#: kfile/knfotranslator.cpp:73
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:76
+#, fuzzy
+#| msgid "Mask"
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr "मास्क"
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:78
+#, fuzzy
+#| msgid "Modified"
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr "परिमार्जित"
+
+#: kfile/knfotranslator.cpp:79
+#, fuzzy
+#| msgid "Organization:"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "सङ्गठन:"
+
+#: kfile/knfotranslator.cpp:80
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:81
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "सामान्य"
+
+#: kfile/knfotranslator.cpp:82
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:83
+msgctxt "@label"
+msgid "Performer"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:84
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:85
+#, fuzzy
+#| msgid "Type"
+msgctxt "@label file type"
+msgid "Type"
+msgstr "प्रकार"
+
+#: kfile/knfotranslator.cpp:86
+msgctxt "@label Number of fuzzy translations"
+msgid "Fuzzy Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:87
+msgctxt "@label Name of last translator"
+msgid "Last Translator"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:88
+msgctxt "@label Number of obsolete translations"
+msgid "Obsolete Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:89
+msgctxt "@label"
+msgid "Translation Source Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:90
+msgctxt "@label Number of total translations"
+msgid "Total Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:91
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label Number of translated strings"
+msgid "Translated"
+msgstr "सिर्जना गरिएको:"
+
+#: kfile/knfotranslator.cpp:92
+msgctxt "@label"
+msgid "Translation Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:93
+msgctxt "@label Number of untranslated strings"
+msgid "Untranslated"
+msgstr ""
+
 #: kfile/kfilemetadataprovider.cpp:414
 #, fuzzy
 #| msgid "Modified"
@@ -4211,136 +4341,6 @@ msgstr "साइज:"
 msgctxt "@label"
 msgid "Type"
 msgstr "प्रकार"
-
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Error>"
-
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "ज्ञात अनुप्रयोग"
-
-#: kfile/kopenwithdialog.cpp:482
-msgid "Open With"
-msgstr "यससँग खोल्नुहोस्"
-
-#: kfile/kopenwithdialog.cpp:487
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>कार्यक्रम चयन गर्नुहोस् जुन <b>%1</b> खोल्न प्रयोग हुन सक्छ । यदि कार्यक्रम सूचित "
-"नगरेमा, नाम प्रविष्ट गर्नुहोस् वा ब्राउज बटन क्लिक गर्नुहोस् ।</qt>"
-
-#: kfile/kopenwithdialog.cpp:493
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "चयन गरिएका फाइलहरू खोल्नका लागि कार्यक्रमको नाम रोज्नुहोस् ।"
-
-#: kfile/kopenwithdialog.cpp:520
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "%1 का लागि अनुप्रयोग रोज्नुहोस्"
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>फाइल प्रकार: <b>%1</b> का लागि कार्यक्रम रोज्नुहोस् । यदि कार्यक्रम सूचिकृत गरेको "
-"छैन भने, नाम प्रविष्ट गर्नुहोस् वा ब्राउज बटन क्लिक गर्नुहोस् ।</qt>"
-
-#: kfile/kopenwithdialog.cpp:536
-msgid "Choose Application"
-msgstr "अनुप्रयोग रोज्नुहोस्"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-"<qt>कार्यक्रम रोज्नुहोस् । यदि कार्यक्रम सूचीकृत गरिएको छैन भने नाम प्रविष्ट गर्नुहोस् वा "
-"ब्राउज बटन क्लिक गर्नुहोस् ।</qt>"
-
-#: kfile/kopenwithdialog.cpp:600
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"आदेशहरू पालना गर्दा, तपाईसँग वास्तविक कार्यक्रम चलेको बेलामा वास्तविक मानहरूमा "
-"प्रतिस्थापन भएका धेरै स्थान होल्डरहरू हुन सक्छन्:\n"
-"%f - एकल फाइल नाम\n"
-"%F - फाइलहरूको सूची; एक समयमा धेरै स्थानीय फाइलहरू खोल्न सक्ने अनुप्रयोहरू प्रयोग गर्नुहोस्\n"
-"%u - एकल यूआरएल\n"
-"%U - यूआरएल हरूको एक सूची\n"
-"%d - खोल्नका लागि फाइलका डाइरेक्टरी\n"
-"%D - डाइरेक्टरीहरूको एक सूची\n"
-"%i - प्रतिमा\n"
-"%m - सानो-प्रतिमा\n"
-"%c -टिप्पणी"
-
-#: kfile/kopenwithdialog.cpp:634
-msgid "Run in &terminal"
-msgstr "टर्मिनलमा चलाउनुहोस्"
-
-#: kfile/kopenwithdialog.cpp:651
-msgid "&Do not close when command exits"
-msgstr "आदेशहरू अवस्थित हुँदा बन्द नगर्नुहोस्"
-
-#: kfile/kopenwithdialog.cpp:668
-msgid "&Remember application association for this type of file"
-msgstr "यो प्रकारको फाइलका लागि सम्बन्धित अनुप्रयोग स्मरण गर्नुहोस्"
-
-#: kfile/kopenwithdialog.cpp:806
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:852
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr ""
-
-#: kfile/kcommentwidget.cpp:65
-#, fuzzy
-#| msgid "Add Entry..."
-msgctxt "@label"
-msgid "Add Comment..."
-msgstr "प्रविष्ट थप्नुहोस्..."
-
-#: kfile/kcommentwidget.cpp:71
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@label"
-msgid "Change..."
-msgstr "गणना गर्दै..."
-
-#: kfile/kcommentwidget.cpp:124
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "टिप्पणी"
-
-#: kfile/kcommentwidget.cpp:125
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "टिप्पणी"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -4446,6 +4446,51 @@ msgstr "टेल्नेट प्रोटोकल ह्यान्डल�
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr "तपाईँलाई %1 प्रोटोकलमा पहुँच अनुमति नहुन सक्छ ।"
+
+#: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:225
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+msgid "%1 to %2"
+msgstr "%1 (%2)"
+
+#: kssl/kcm/cacertificatespage.cpp:131
+#, fuzzy
+#| msgid "Send certificate"
+msgid "System certificates"
+msgstr "प्रमाणपत्र पठाउनुहोस्"
+
+#: kssl/kcm/cacertificatespage.cpp:138
+#, fuzzy
+#| msgid "Send certificate"
+msgid "User-added certificates"
+msgstr "प्रमाणपत्र पठाउनुहोस्"
+
+#: kssl/kcm/cacertificatespage.cpp:295
+#, fuzzy
+#| msgid "Certificate"
+msgid "Pick Certificates"
+msgstr "प्रमाणपत्र"
+
+#: kssl/kcm/kcmssl.cpp:40
+#, fuzzy
+#| msgid "Reload configuration file"
+msgid "SSL Configuration Module"
+msgstr "कन्फिगरेसन फाइल पुन: लोड गर्नुहोस्"
+
+#: kssl/kcm/kcmssl.cpp:42
+msgid "Copyright 2010 Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:43
+msgid "Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:55
+#, fuzzy
+#| msgid "Link"
+msgid "SSL Signers"
+msgstr "लिङ्क गर्नुहोस्"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -4832,13 +4877,6 @@ msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr ""
 
-#: kssl/ksslinfodialog.cpp:225 kssl/kcm/displaycertdialog.cpp:54
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
-msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
-msgid "%1 to %2"
-msgstr "%1 (%2)"
-
 #: kssl/ksslcertdialog.cpp:61
 msgid "Certificate"
 msgstr "प्रमाणपत्र"
@@ -4932,44 +4970,6 @@ msgstr ""
 #: kssl/ksslutils.cpp:78
 msgid "GMT"
 msgstr "GMT"
-
-#: kssl/kcm/cacertificatespage.cpp:131
-#, fuzzy
-#| msgid "Send certificate"
-msgid "System certificates"
-msgstr "प्रमाणपत्र पठाउनुहोस्"
-
-#: kssl/kcm/cacertificatespage.cpp:138
-#, fuzzy
-#| msgid "Send certificate"
-msgid "User-added certificates"
-msgstr "प्रमाणपत्र पठाउनुहोस्"
-
-#: kssl/kcm/cacertificatespage.cpp:295
-#, fuzzy
-#| msgid "Certificate"
-msgid "Pick Certificates"
-msgstr "प्रमाणपत्र"
-
-#: kssl/kcm/kcmssl.cpp:40
-#, fuzzy
-#| msgid "Reload configuration file"
-msgid "SSL Configuration Module"
-msgstr "कन्फिगरेसन फाइल पुन: लोड गर्नुहोस्"
-
-#: kssl/kcm/kcmssl.cpp:42
-msgid "Copyright 2010 Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:43
-msgid "Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:55
-#, fuzzy
-#| msgid "Link"
-msgid "SSL Signers"
-msgstr "लिङ्क गर्नुहोस्"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5337,7 +5337,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:327
+#: rc.cpp:168 rc.cpp:234
 msgid "Add..."
 msgstr "थप्नुहोस्..."
 
@@ -5355,7 +5355,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:324
+#: rc.cpp:174 rc.cpp:231
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
@@ -5379,215 +5379,9 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "उन्नत विकल्प"
 
-#. i18n: file: kssl/sslinfo.ui:16
-#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
-#: rc.cpp:183
-msgid "[padlock]"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:30
-#. i18n: ectx: property (text), widget (QLabel, addressTag)
-#: rc.cpp:187
-#, fuzzy
-#| msgid "IP address:"
-msgctxt "Web page address"
-msgid "Address:"
-msgstr "आईपी ठेगाना:"
-
-#. i18n: file: kssl/sslinfo.ui:47
-#. i18n: ectx: property (text), widget (QLabel, ipTag)
-#: rc.cpp:191
-#, fuzzy
-#| msgid "IP address:"
-msgid "IP address:"
-msgstr "आईपी ठेगाना:"
-
-#. i18n: file: kssl/sslinfo.ui:64
-#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
-#: rc.cpp:195
-#, fuzzy
-#| msgid "&Description:"
-msgid "Encryption:"
-msgstr "वर्णन:"
-
-#. i18n: file: kssl/sslinfo.ui:81
-#. i18n: ectx: property (text), widget (QLabel, detailsTag)
-#: rc.cpp:199
-msgid "Details:"
-msgstr "विवरण:"
-
-#. i18n: file: kssl/sslinfo.ui:98
-#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
-#: rc.cpp:203
-#, fuzzy
-#| msgid "SSL version:"
-msgid "SSL version:"
-msgstr "एसएसएल संस्करण:"
-
-#. i18n: file: kssl/sslinfo.ui:115
-#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
-#: rc.cpp:207
-#, fuzzy
-#| msgid "Certificate"
-msgid "Certificate chain:"
-msgstr "प्रमाणपत्र"
-
-#. i18n: file: kssl/sslinfo.ui:144
-#. i18n: ectx: property (text), widget (QLabel, trustedTag)
-#: rc.cpp:210
-#, fuzzy
-#| msgid "Created:"
-msgid "Trusted:"
-msgstr "सिर्जना गरिएको:"
-
-#. i18n: file: kssl/sslinfo.ui:161
-#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
-#: rc.cpp:214
-#, fuzzy
-#| msgid "Valid from:"
-msgid "Validity period:"
-msgstr "वैद्यता सुरु मिति:"
-
-#. i18n: file: kssl/sslinfo.ui:178
-#. i18n: ectx: property (text), widget (QLabel, serialTag)
-#: rc.cpp:218
-#, fuzzy
-#| msgid "Serial number:"
-msgid "Serial number:"
-msgstr "क्रम सङ्ख्या:"
-
-#. i18n: file: kssl/sslinfo.ui:195
-#. i18n: ectx: property (text), widget (QLabel, digestTag)
-#: rc.cpp:222
-#, fuzzy
-#| msgid "MD5 digest:"
-msgid "MD5 digest:"
-msgstr "MD5 सङ्ग्रह:"
-
-#. i18n: file: kssl/sslinfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
-#: rc.cpp:225
-#, fuzzy
-#| msgid "MD5 digest:"
-msgid "SHA1 digest:"
-msgstr "MD5 सङ्ग्रह:"
-
-#. i18n: file: kssl/keygenwizard2.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:228
-msgid ""
-"You must now provide a password for the certificate request. Please choose a "
-"very secure password as this will be used to encrypt your private key."
-msgstr ""
-"तपाईँले प्रमाणपत्र अनुरोधका लागि अहिले पासवर्ड उपलब्ध गराउनु पर्छ । कृपया अत्यन्तै सुरक्षित "
-"पासवर्ड रोज्नुहोस् यो तपाईँको निजी कुञ्जीमा गुप्त रूपमा प्रयोग हुनेछ ।"
-
-#. i18n: file: kssl/keygenwizard2.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:231
-msgid "&Repeat password:"
-msgstr "पासवर्ड दोहोर्याउनुहोस्:"
-
-#. i18n: file: kssl/keygenwizard2.ui:58
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:234
-msgid "&Choose password:"
-msgstr "पासवर्ड रोज्नुहोस्:"
-
-#. i18n: file: kssl/keygenwizard.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:237
-msgid ""
-"You have indicated that you wish to obtain or purchase a secure certificate. "
-"This wizard is intended to guide you through the procedure. You may cancel "
-"at any time, and this will abort the transaction."
-msgstr ""
-"तपाईँले सुरक्षित प्रमाणपत्र खरीद गर्न वा प्राप्त गर्न सूचित गर्नुभयो । तपाईँलाई कार्य "
-"विधिबाट मार्गदर्शन गर्न यो विजार्ड चाहिन्छ । तपाईँले कुनै पनि बेलामा रद्द गर्न सक्नुहुन्छ, र "
-"यसले प्रकार्य परित्याग गर्नेछ ।"
-
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:240
-msgid "Common name:"
-msgstr "साझा नाम:"
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:243
-msgid "Acme Co."
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:246
-msgid "Organization:"
-msgstr "सङ्गठन:"
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:249
-msgid "Acme Sundry Products Company"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:252
-msgid "Organizational unit:"
-msgstr "सङ्गठनात्मक एकाइ:"
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:255
-msgid "Fraud Department"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:258
-msgid "Country:"
-msgstr "देश:"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:261
-#, fuzzy
-#| msgid "Can Read"
-msgid "Canada"
-msgstr "पढ्न सक्नुहुन्छ"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:264
-#, fuzzy
-#| msgctxt "Federal State"
-#| msgid "State:"
-msgid "State:"
-msgstr "राज्य:"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
-#: rc.cpp:267
-msgid "Quebec"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:270
-#, fuzzy
-#| msgid "Country:"
-msgid "City:"
-msgstr "देश:"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:273
-msgid "Lakeridge Meadows"
-msgstr ""
-
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:276
+#: rc.cpp:183
 #, fuzzy
 #| msgid "Security Information"
 msgid "<b>Subject Information</b>"
@@ -5595,7 +5389,7 @@ msgstr "सुरक्षा सूचना"
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:279
+#: rc.cpp:186
 #, fuzzy
 #| msgid " <b>[Cross Domain]</b>"
 msgid "<b>Issuer Information</b>"
@@ -5603,7 +5397,7 @@ msgstr " <b>[क्रस डोमेन]</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:282
+#: rc.cpp:189
 #, fuzzy
 #| msgid "<b>%1</b>"
 msgid "<b>Other</b>"
@@ -5611,7 +5405,7 @@ msgstr "<b>%1</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:285
+#: rc.cpp:192
 #, fuzzy
 #| msgid "Valid from:"
 msgid "Validity period"
@@ -5625,7 +5419,7 @@ msgstr "वैद्यता सुरु मिति:"
 #. i18n: ectx: property (text), widget (QLabel, md5Digest)
 #. i18n: file: kssl/kcm/displaycert.ui:113
 #. i18n: ectx: property (text), widget (QLabel, sha1Digest)
-#: rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:306
+#: rc.cpp:195 rc.cpp:201 rc.cpp:207 rc.cpp:213
 #, fuzzy
 #| msgid "&Name:"
 msgid "TextLabel"
@@ -5633,7 +5427,7 @@ msgstr "नाम:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:291
+#: rc.cpp:198
 #, fuzzy
 #| msgid "Serial number:"
 msgid "Serial number"
@@ -5641,7 +5435,7 @@ msgstr "क्रम सङ्ख्या:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:297
+#: rc.cpp:204
 #, fuzzy
 #| msgid "MD5 digest:"
 msgid "MD5 digest"
@@ -5649,7 +5443,7 @@ msgstr "MD5 सङ्ग्रह:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:303
+#: rc.cpp:210
 #, fuzzy
 #| msgid "MD5 digest:"
 msgid "SHA1 digest"
@@ -5657,7 +5451,7 @@ msgstr "MD5 सङ्ग्रह:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:309
+#: rc.cpp:216
 #, fuzzy
 #| msgid "Organization:"
 msgid "Organization / Common Name"
@@ -5665,7 +5459,7 @@ msgstr "सङ्गठन:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:312
+#: rc.cpp:219
 #, fuzzy
 #| msgid "Organizational unit:"
 msgid "Organizational Unit"
@@ -5673,23 +5467,229 @@ msgstr "सङ्गठनात्मक एकाइ:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:315
+#: rc.cpp:222
 msgid "Display..."
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:318
+#: rc.cpp:225
 msgid "Disable"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:321
+#: rc.cpp:228
 #, fuzzy
 #| msgid "Emblems"
 msgid "Enable"
 msgstr "चिन्ह लगाउँछ"
+
+#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
+#: rc.cpp:237
+msgid "[padlock]"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: ectx: property (text), widget (QLabel, addressTag)
+#: rc.cpp:241
+#, fuzzy
+#| msgid "IP address:"
+msgctxt "Web page address"
+msgid "Address:"
+msgstr "आईपी ठेगाना:"
+
+#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: ectx: property (text), widget (QLabel, ipTag)
+#: rc.cpp:245
+#, fuzzy
+#| msgid "IP address:"
+msgid "IP address:"
+msgstr "आईपी ठेगाना:"
+
+#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
+#: rc.cpp:249
+#, fuzzy
+#| msgid "&Description:"
+msgid "Encryption:"
+msgstr "वर्णन:"
+
+#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, detailsTag)
+#: rc.cpp:253
+msgid "Details:"
+msgstr "विवरण:"
+
+#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
+#: rc.cpp:257
+#, fuzzy
+#| msgid "SSL version:"
+msgid "SSL version:"
+msgstr "एसएसएल संस्करण:"
+
+#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
+#: rc.cpp:261
+#, fuzzy
+#| msgid "Certificate"
+msgid "Certificate chain:"
+msgstr "प्रमाणपत्र"
+
+#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: ectx: property (text), widget (QLabel, trustedTag)
+#: rc.cpp:264
+#, fuzzy
+#| msgid "Created:"
+msgid "Trusted:"
+msgstr "सिर्जना गरिएको:"
+
+#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
+#: rc.cpp:268
+#, fuzzy
+#| msgid "Valid from:"
+msgid "Validity period:"
+msgstr "वैद्यता सुरु मिति:"
+
+#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: ectx: property (text), widget (QLabel, serialTag)
+#: rc.cpp:272
+#, fuzzy
+#| msgid "Serial number:"
+msgid "Serial number:"
+msgstr "क्रम सङ्ख्या:"
+
+#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: ectx: property (text), widget (QLabel, digestTag)
+#: rc.cpp:276
+#, fuzzy
+#| msgid "MD5 digest:"
+msgid "MD5 digest:"
+msgstr "MD5 सङ्ग्रह:"
+
+#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
+#: rc.cpp:279
+#, fuzzy
+#| msgid "MD5 digest:"
+msgid "SHA1 digest:"
+msgstr "MD5 सङ्ग्रह:"
+
+#. i18n: file: kssl/keygenwizard2.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:282
+msgid ""
+"You must now provide a password for the certificate request. Please choose a "
+"very secure password as this will be used to encrypt your private key."
+msgstr ""
+"तपाईँले प्रमाणपत्र अनुरोधका लागि अहिले पासवर्ड उपलब्ध गराउनु पर्छ । कृपया अत्यन्तै सुरक्षित "
+"पासवर्ड रोज्नुहोस् यो तपाईँको निजी कुञ्जीमा गुप्त रूपमा प्रयोग हुनेछ ।"
+
+#. i18n: file: kssl/keygenwizard2.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:285
+msgid "&Repeat password:"
+msgstr "पासवर्ड दोहोर्याउनुहोस्:"
+
+#. i18n: file: kssl/keygenwizard2.ui:58
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:288
+msgid "&Choose password:"
+msgstr "पासवर्ड रोज्नुहोस्:"
+
+#. i18n: file: kssl/keygenwizard.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: rc.cpp:291
+msgid ""
+"You have indicated that you wish to obtain or purchase a secure certificate. "
+"This wizard is intended to guide you through the procedure. You may cancel "
+"at any time, and this will abort the transaction."
+msgstr ""
+"तपाईँले सुरक्षित प्रमाणपत्र खरीद गर्न वा प्राप्त गर्न सूचित गर्नुभयो । तपाईँलाई कार्य "
+"विधिबाट मार्गदर्शन गर्न यो विजार्ड चाहिन्छ । तपाईँले कुनै पनि बेलामा रद्द गर्न सक्नुहुन्छ, र "
+"यसले प्रकार्य परित्याग गर्नेछ ।"
+
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:294
+msgid "Common name:"
+msgstr "साझा नाम:"
+
+#. i18n: file: kssl/certificateparty.ui:37
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:297
+msgid "Acme Co."
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:300
+msgid "Organization:"
+msgstr "सङ्गठन:"
+
+#. i18n: file: kssl/certificateparty.ui:54
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:303
+msgid "Acme Sundry Products Company"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:306
+msgid "Organizational unit:"
+msgstr "सङ्गठनात्मक एकाइ:"
+
+#. i18n: file: kssl/certificateparty.ui:71
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:309
+msgid "Fraud Department"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:312
+msgid "Country:"
+msgstr "देश:"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:315
+#, fuzzy
+#| msgid "Can Read"
+msgid "Canada"
+msgstr "पढ्न सक्नुहुन्छ"
+
+#. i18n: file: kssl/certificateparty.ui:95
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:318
+#, fuzzy
+#| msgctxt "Federal State"
+#| msgid "State:"
+msgid "State:"
+msgstr "राज्य:"
+
+#. i18n: file: kssl/certificateparty.ui:105
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:321
+msgid "Quebec"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:112
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:324
+#, fuzzy
+#| msgid "Country:"
+msgid "City:"
+msgstr "देश:"
+
+#. i18n: file: kssl/certificateparty.ui:122
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:327
+msgid "Lakeridge Meadows"
+msgstr ""
 
 #: ../kioslave/file/file.cpp:209
 #, kde-format
@@ -6144,19 +6144,19 @@ msgstr "%2 मा प्रयास गर्दा अनपेक्षित
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 जडान भयो । जवाफका लागि प्रतिक्षा गर्दै..."
 
-#: ../kioslave/http/http.cpp:2908
+#: ../kioslave/http/http.cpp:2913
 msgid "Server processing request, please wait..."
 msgstr "अनुरोध सर्भरमा प्रक्रिया हुदैछ, कृपया प्रतिक्षा गर्नुहोस्..."
 
-#: ../kioslave/http/http.cpp:3256 ../kioslave/ftp/ftp.cpp:477
+#: ../kioslave/http/http.cpp:3261 ../kioslave/ftp/ftp.cpp:477
 msgid "You need to supply a username and a password to access this site."
 msgstr "तपाईँले यो साइट पहुँच गर्न प्रयोगकर्ता नाम र पासवर्ड प्रविष्टि गर्न आवश्यक हुन्छ ।"
 
-#: ../kioslave/http/http.cpp:3258 ../kioslave/ftp/ftp.cpp:479
+#: ../kioslave/http/http.cpp:3263 ../kioslave/ftp/ftp.cpp:479
 msgid "Site:"
 msgstr "साइट:"
 
-#: ../kioslave/http/http.cpp:3268 ../kioslave/http/http.cpp:5027
+#: ../kioslave/http/http.cpp:3273 ../kioslave/http/http.cpp:5041
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -6164,50 +6164,50 @@ msgstr ""
 "तपाईँलाई कुनै पनि साइटहरूमा पहुँच अनुमति हुनका लागि तल सूचित गरिएका प्रोक्सी सर्भरका "
 "अगाडि प्रयोगकर्ता नाम र पासवर्ड वितरण गर्नु आवश्यक हुन्छ ।"
 
-#: ../kioslave/http/http.cpp:3271 ../kioslave/http/http.cpp:5031
+#: ../kioslave/http/http.cpp:3276 ../kioslave/http/http.cpp:5045
 msgid "Proxy:"
 msgstr "प्रोक्सी:"
 
-#: ../kioslave/http/http.cpp:3332
+#: ../kioslave/http/http.cpp:3337
 msgid "Authentication Failed."
 msgstr "प्रमाणीकरण असफल भयो ।"
 
-#: ../kioslave/http/http.cpp:3335 ../kioslave/http/http.cpp:5033
+#: ../kioslave/http/http.cpp:3340 ../kioslave/http/http.cpp:5047
 msgid "Proxy Authentication Failed."
 msgstr "प्रोक्सी प्रमाणीकरण असफल भयो ।"
 
-#: ../kioslave/http/http.cpp:3345 ../kioslave/http/http.cpp:5032
+#: ../kioslave/http/http.cpp:3350 ../kioslave/http/http.cpp:5046
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> मा <b>%2</b>"
 
-#: ../kioslave/http/http.cpp:3377
+#: ../kioslave/http/http.cpp:3382
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Authorization failed."
 msgstr "प्रमाणीकरण संवाद"
 
-#: ../kioslave/http/http.cpp:3394
+#: ../kioslave/http/http.cpp:3399
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Unknown Authorization method."
 msgstr "प्रमाणीकरण संवाद"
 
-#: ../kioslave/http/http.cpp:3777
+#: ../kioslave/http/http.cpp:3791
 msgid "Requesting data to send"
 msgstr "पठाउँनका लागि अनुरोध गरिएको डेटा"
 
-#: ../kioslave/http/http.cpp:3809
+#: ../kioslave/http/http.cpp:3823
 #, kde-format
 msgid "Sending data to %1"
 msgstr "%1 मा डेटा पठाउँदै"
 
-#: ../kioslave/http/http.cpp:4227
+#: ../kioslave/http/http.cpp:4241
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "%2 बाट %1 पुन: प्राप्त गरिँदैछ..."
 
-#: ../kioslave/http/http.cpp:4233
+#: ../kioslave/http/http.cpp:4247
 #, kde-format
 msgid "Retrieving from %1..."
 msgstr "%1 बाट पुन: प्राप्त गरिँदैछ..."
@@ -6610,14 +6610,6 @@ msgstr ""
 "पुस्तकचिनोहरू संवाद फाइलका लागि निर्दिष्ट छन् तर अन्यथा अन्य कतै KDE मा पुस्तकचिनोहरूको "
 "रूपमा सञ्चालन हुन्छ ।</qt>"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr "स्थान नेभिगेसनका लागि क्लिक गर्नुहोस्"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr "स्थान सम्पादन गर्न क्लिक गर्नुहोस्"
-
 #: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6801,27 +6793,6 @@ msgstr "संवाद फाइल खोल्नुहोस्"
 msgid "&View"
 msgstr "दृश्य"
 
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "यन्त्र"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-#, fuzzy
-#| msgid "SSL version:"
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "एसएसएल संस्करण:"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "अन्य"
-
 #: ../kfile/kdirselectdialog.cpp:128
 #, fuzzy
 #| msgid "New Folder"
@@ -6883,6 +6854,14 @@ msgstr "लुकेका फोल्डरहरू देखाउनुह�
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "गुण"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:90
+msgid "Click for Location Navigation"
+msgstr "स्थान नेभिगेसनका लागि क्लिक गर्नुहोस्"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:92
+msgid "Click to Edit Location"
+msgstr "स्थान सम्पादन गर्न क्लिक गर्नुहोस्"
 
 #: ../kfile/kfileplacesview.cpp:575
 #, fuzzy
@@ -7220,6 +7199,27 @@ msgstr "'%1' पहुँच गर्दा एउटा त्रुटि द
 #| msgid "Show Hidden Folders"
 msgid "Show Hidden Folders"
 msgstr "लुकेका फोल्डरहरू देखाउनुहोस्"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "यन्त्र"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+#, fuzzy
+#| msgid "SSL version:"
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "एसएसएल संस्करण:"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "अन्य"
 
 #, fuzzy
 #~| msgid "Size:"
