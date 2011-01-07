@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-06 02:59+0100\n"
+"POT-Creation-Date: 2011-01-07 03:02+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -8030,6 +8030,7 @@ msgstr "%"
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:3282 image/kis_adjustment_layer.cc:126
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
+#: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 msgid "Filter"
 msgstr "फिल्टर"
 
@@ -10284,10 +10285,6 @@ msgstr ""
 msgid "Invalid value."
 msgstr "छवि साइज"
 
-#: image/recorder/kis_macro.cc:96
-msgid "Play macro"
-msgstr ""
-
 #: image/recorder/kis_recorded_fill_paint_action.cpp:42
 #: plugins/tools/defaulttools/kis_tool_fill.cc:127
 msgid "Fill"
@@ -10299,6 +10296,10 @@ msgstr "भराइ"
 #| msgid "Paint"
 msgid "Path"
 msgstr "पेन्ट"
+
+#: image/recorder/kis_macro_player.cc:71
+msgid "Play macro"
+msgstr ""
 
 #: main.cc:41
 msgid "File(s) or URL(s) to open"
@@ -10456,16 +10457,6 @@ msgstr "हालको चयनमा थप्नुहोस्"
 msgid "Reset to default"
 msgstr "पुर्वनिर्धारित"
 
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:89
-msgid "No action is selected."
-msgstr ""
-
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:92
-#, fuzzy
-#| msgid "&Add to current selection"
-msgid "No editor for current action."
-msgstr "हालको चयनमा थप्नुहोस्"
-
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor_dialog.cpp:30
 #, fuzzy
 #| msgid "Scale Layer"
@@ -10478,29 +10469,45 @@ msgstr "तह मापन गर्नुहोस्"
 msgid "Discard changes"
 msgstr "अल्फा च्यानल छोड्नुहोस्"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:82
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:105
+#, fuzzy
+#| msgid "Create new layer"
+msgid "Failed to create an action."
+msgstr "नयाँ तह सिर्जना गर्नुहोस्"
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:137
+msgid "No action is selected."
+msgstr ""
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:140
+#, fuzzy
+#| msgid "&Add to current selection"
+msgid "No editor for current action."
+msgstr "हालको चयनमा थप्नुहोस्"
+
+#: plugins/extensions/bigbrother/bigbrother.cc:87
 #, fuzzy
 #| msgid "&OpenGL Shader Filter..."
 msgid "Open and play..."
 msgstr "ओपन जीयल छाँयाकर्ता फिल्टर..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:86
+#: plugins/extensions/bigbrother/bigbrother.cc:91
 #, fuzzy
 #| msgid "&OpenGL Shader Filter..."
 msgid "Open and edit..."
 msgstr "ओपन जीयल छाँयाकर्ता फिल्टर..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:90
+#: plugins/extensions/bigbrother/bigbrother.cc:95
 #, fuzzy
 #| msgid "Scale Selection"
 msgid "Save all actions"
 msgstr "चयन मापन गर्नुहोस्"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:94
+#: plugins/extensions/bigbrother/bigbrother.cc:99
 msgid "Start recording macro"
 msgstr ""
 
-#: plugins/extensions/bigbrother/bigbrother.cc:98
+#: plugins/extensions/bigbrother/bigbrother.cc:103
 msgid "Stop recording actions"
 msgstr ""
 
@@ -11231,10 +11238,6 @@ msgstr "च्यानल अधिकतम पार्नुहोस्"
 msgid "Minimize Channel"
 msgstr "च्यानल न्यून पार्नुहोस्"
 
-#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
-msgid "&Brightness/Contrast curve..."
-msgstr "चम्किलोपन/व्यतिरेक बक्र..."
-
 #: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:87
 msgid "Brightness / Contrast"
 msgstr "चम्किलोपन / व्यतिरेक"
@@ -11268,6 +11271,10 @@ msgstr "स्वत: व्यतिरेक"
 #: plugins/filters/colorsfilters/colorsfilters.h:66
 msgid "Desaturate"
 msgstr "अतितृप्त हटाउनुहोस्"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
+msgid "&Brightness/Contrast curve..."
+msgstr "चम्किलोपन/व्यतिरेक बक्र..."
 
 #: plugins/filters/convolutionfilters/convolutionfilters.cpp:69
 msgid "&Sharpen"
