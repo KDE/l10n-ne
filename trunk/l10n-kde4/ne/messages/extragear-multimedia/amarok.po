@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-22 02:56+0100\n"
+"POT-Creation-Date: 2011-01-23 02:54+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1447,25 +1447,6 @@ msgstr "रोकियो"
 msgid "Accuracy"
 msgstr ""
 
-#: browsers/playlistbrowser/DynamicModel.cpp:99
-#: browsers/playlistbrowser/DynamicModel.cpp:179
-#: browsers/playlistbrowser/DynamicModel.cpp:563
-#: widgets/SmartPlaylistEditor.cpp:238
-msgid "Random"
-msgstr "अनियमित"
-
-#: browsers/playlistbrowser/DynamicModel.cpp:229
-#, fuzzy, kde-format
-#| msgid "Not Modified"
-msgid "%1 (modified) "
-msgstr "अपरिमार्जित"
-
-#: browsers/playlistbrowser/DynamicModel.cpp:564
-#, fuzzy
-#| msgid "Not Modified"
-msgid "Random (modified)"
-msgstr "अपरिमार्जित"
-
 #: browsers/playlistbrowser/PodcastModel.cpp:73
 #, fuzzy
 #| msgid "&Next"
@@ -1633,6 +1614,25 @@ msgstr "पुन: नामकरण गर्नुहोस्"
 msgctxt "Enter a new name for a folder that already exists"
 msgid "Enter new folder name:"
 msgstr "नयाँ प्रिसेट नाम प्रविष्ट गर्नुहोस्:"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:95
+#: browsers/playlistbrowser/DynamicModel.cpp:175
+#: browsers/playlistbrowser/DynamicModel.cpp:559
+#: widgets/SmartPlaylistEditor.cpp:238
+msgid "Random"
+msgstr "अनियमित"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:225
+#, fuzzy, kde-format
+#| msgid "Not Modified"
+msgid "%1 (modified) "
+msgstr "अपरिमार्जित"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:560
+#, fuzzy
+#| msgid "Not Modified"
+msgid "Random (modified)"
+msgstr "अपरिमार्जित"
 
 #: browsers/servicebrowser/ServiceBrowser.cpp:44
 msgid ""
@@ -1891,7 +1891,7 @@ msgid "Edit Track Details"
 msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
 #: context/applets/albums/Albums.cpp:63
-#: context/engines/current/CurrentEngine.cpp:134
+#: context/engines/current/CurrentEngine.cpp:133
 #, fuzzy
 #| msgid "Most Played Tracks"
 msgid "Recently added albums"
@@ -2100,7 +2100,7 @@ msgid "Reload"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
 
 #: context/applets/labels/LabelsApplet.cpp:176
-#: context/engines/current/CurrentEngine.cpp:126 mac/GrowlInterface.cpp:43
+#: context/engines/current/CurrentEngine.cpp:125 mac/GrowlInterface.cpp:43
 #: widgets/Osd.cpp:623 EngineController.cpp:1409
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
@@ -2829,7 +2829,14 @@ msgid ""
 "Please add some applets from the toolbar at the bottom of the context view."
 msgstr ""
 
-#: context/engines/current/CurrentEngine.cpp:208
+#: context/engines/current/CurrentEngine.cpp:205
+#, fuzzy
+#| msgid "&Albums"
+msgctxt "Header text for current album applet"
+msgid "Albums"
+msgstr "एल्बमहरू"
+
+#: context/engines/current/CurrentEngine.cpp:216
 #, fuzzy, kde-format
 #| msgid "Albums By %1"
 msgid "Albums by %1"
@@ -3959,20 +3966,20 @@ msgstr ""
 "<p> माफ गर्नुहोस्, अति धेरै समस्याहरू हुँदाहुँदै पनि सङ्कलन स्क्यान परित्याग गरियो ।</p>"
 
 #: core-impl/meta/default/DefaultMetaTypes.h:39
-#: core-impl/meta/default/DefaultMetaTypes.h:77
-#: core-impl/meta/default/DefaultMetaTypes.h:94
-#: services/scriptable/ScriptableServiceMeta_p.h:108
-#: services/scriptable/ScriptableServiceMeta_p.h:166
-#: services/scriptable/ScriptableServiceMeta_p.h:215
-#: services/scriptable/ScriptableServiceMeta_p.h:258
-#: services/scriptable/ScriptableServiceMeta_p.h:300
+#: core-impl/meta/default/DefaultMetaTypes.h:75
+#: core-impl/meta/default/DefaultMetaTypes.h:92
+#: services/scriptable/ScriptableServiceMeta_p.h:103
+#: services/scriptable/ScriptableServiceMeta_p.h:161
+#: services/scriptable/ScriptableServiceMeta_p.h:210
+#: services/scriptable/ScriptableServiceMeta_p.h:253
+#: services/scriptable/ScriptableServiceMeta_p.h:295
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "The value is not known"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: core-impl/meta/default/DefaultMetaTypes.h:60
+#: core-impl/meta/default/DefaultMetaTypes.h:58
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "The Value is not known"
@@ -6069,111 +6076,107 @@ msgstr "अज्ञात"
 msgid "Tracks by this Artist"
 msgstr "यो कलाकारद्वारा सबै ट्रयाक बर्न गर्नुहोस्"
 
-#: dialogs/TagDialog.cpp:938
-msgid "Albums by this Artist"
-msgstr "यो कलाकारद्वारा एल्बम"
-
-#: dialogs/TagDialog.cpp:995
+#: dialogs/TagDialog.cpp:1000
 #, fuzzy, kde-format
 #| msgid "Track Information: %1 by %2"
 msgid "Track Details: %1 by %2"
 msgstr "%2 द्वारा ट्रयाक जानकारी: %1"
 
-#: dialogs/TagDialog.cpp:1019 dialogs/TagDialog.cpp:1029
+#: dialogs/TagDialog.cpp:1024 dialogs/TagDialog.cpp:1034
 #, kde-format
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: dialogs/TagDialog.cpp:1027
+#: dialogs/TagDialog.cpp:1032
 #, kde-format
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
 
-#: dialogs/TagDialog.cpp:1031
+#: dialogs/TagDialog.cpp:1036
 #, fuzzy, kde-format
 #| msgid "<b>%1</b> by <b>%2</b>"
 msgid "<b>%1</b>"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: dialogs/TagDialog.cpp:1078
+#: dialogs/TagDialog.cpp:1083
 msgid "Length:"
 msgstr "लम्बाइ:"
 
-#: dialogs/TagDialog.cpp:1079
+#: dialogs/TagDialog.cpp:1084
 #, fuzzy
 #| msgid "Bitrate:"
 msgid "Bit rate:"
 msgstr "बिट्रेट"
 
-#: dialogs/TagDialog.cpp:1080
+#: dialogs/TagDialog.cpp:1085
 #, fuzzy
 #| msgid "Samplerate:"
 msgid "Sample rate:"
 msgstr "नमूना दर"
 
-#: dialogs/TagDialog.cpp:1081
+#: dialogs/TagDialog.cpp:1086
 msgid "Size:"
 msgstr "साइज:"
 
-#: dialogs/TagDialog.cpp:1082
+#: dialogs/TagDialog.cpp:1087
 msgid "Format:"
 msgstr "ढाँचा:"
 
 #. i18n: file: dialogs/TagDialogBase.ui:654
 #. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: dialogs/TagDialog.cpp:1085 rc.cpp:1118
+#: dialogs/TagDialog.cpp:1090 rc.cpp:1118
 msgid "Score:"
 msgstr "प्राप्ताङ्क:"
 
 #. i18n: file: dialogs/TagDialogBase.ui:686
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
-#: dialogs/TagDialog.cpp:1087 rc.cpp:1121
+#: dialogs/TagDialog.cpp:1092 rc.cpp:1121
 msgid "Rating:"
 msgstr "मूल्याङ्कन:"
 
-#: dialogs/TagDialog.cpp:1089
+#: dialogs/TagDialog.cpp:1094
 #, fuzzy
 #| msgid "Play Count"
 msgid "Play Count:"
 msgstr "प्ले गणना"
 
-#: dialogs/TagDialog.cpp:1092
+#: dialogs/TagDialog.cpp:1097
 msgid "First Played:"
 msgstr "पहिले प्ले गरिएको:"
 
-#: dialogs/TagDialog.cpp:1093
+#: dialogs/TagDialog.cpp:1098
 #, fuzzy
 #| msgid "Never"
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "कहिल्यै पनि"
 
-#: dialogs/TagDialog.cpp:1094
+#: dialogs/TagDialog.cpp:1099
 msgctxt "a single item (singular)"
 msgid "Last Played:"
 msgstr "अन्तिममा प्लेगरीएको:"
 
-#: dialogs/TagDialog.cpp:1095
+#: dialogs/TagDialog.cpp:1100
 #, fuzzy
 #| msgid "Never"
 msgctxt "When this track was last played"
 msgid "Never"
 msgstr "कहिल्यै पनि"
 
-#: dialogs/TagDialog.cpp:1099
+#: dialogs/TagDialog.cpp:1104
 #, fuzzy
 #| msgid "Collection"
 msgid "Collection:"
 msgstr "सङ्कलन"
 
-#: dialogs/TagDialog.cpp:1101
+#: dialogs/TagDialog.cpp:1106
 #, fuzzy
 #| msgid "None"
 msgctxt "The collection this track is part of"
 msgid "None"
 msgstr "कुनै पनि होइन"
 
-#: dialogs/TagDialog.cpp:1190
+#: dialogs/TagDialog.cpp:1195
 #, fuzzy, kde-format
 #| msgid "1 Track"
 #| msgid_plural "Information for %1 Tracks"
@@ -6183,37 +6186,37 @@ msgid_plural "Information for %1 Tracks"
 msgstr[0] "%1 ट्रयाकको लागि सूचना"
 msgstr[1] "%1 ट्रयाकको लागि सूचना"
 
-#: dialogs/TagDialog.cpp:1330
+#: dialogs/TagDialog.cpp:1335
 #, kde-format
 msgid "Editing 1 file"
 msgid_plural "Editing %1 files"
 msgstr[0] "%1 फाइल सम्पादन गर्दै "
 msgstr[1] "%1फाइल सम्पादन गर्दै"
 
-#: dialogs/TagDialog.cpp:1335
+#: dialogs/TagDialog.cpp:1340
 msgid "Rated Songs:"
 msgstr "दर कायम गरिएको गीत"
 
-#: dialogs/TagDialog.cpp:1337
+#: dialogs/TagDialog.cpp:1342
 msgid "Average Rating:"
 msgstr "औसत मूल्याङ्कन:"
 
-#: dialogs/TagDialog.cpp:1339
+#: dialogs/TagDialog.cpp:1344
 msgid "Scored Songs:"
 msgstr "प्राप्ताङ्क प्राप्त गरिएको गीत:"
 
-#: dialogs/TagDialog.cpp:1341
+#: dialogs/TagDialog.cpp:1346
 msgid "Average Score:"
 msgstr "औसत प्राप्ताङ्क:"
 
-#: dialogs/TagDialog.cpp:1731
+#: dialogs/TagDialog.cpp:1736
 msgid ""
 "Writing to file failed. Please check permissions and available disc space."
 msgstr ""
 
 #. i18n: file: dialogs/MusicBrainzTagger.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, MusicBrainzTagger)
-#: dialogs/TagDialog.cpp:1919 rc.cpp:919
+#: dialogs/TagDialog.cpp:1924 rc.cpp:919
 #, fuzzy
 #| msgid "MusicBrainz Lookup"
 msgid "MusicBrainz Tagger"
@@ -8246,31 +8249,6 @@ msgid ""
 "constraints to find more tracks."
 msgstr ""
 
-#: playlistgenerator/Preset.cpp:41 playlistgenerator/Preset.cpp:54
-#, fuzzy
-#| msgid "Playlist name:"
-msgid "New playlist preset"
-msgstr "प्लेसूची नाम:"
-
-#: playlistgenerator/Preset.cpp:44 playlistgenerator/Preset.cpp:66
-#, fuzzy
-#| msgid "Save Playlist"
-msgid "Unnamed playlist preset"
-msgstr "प्लेसूची बचत गर्नुहोस्"
-
-#: playlistgenerator/Preset.cpp:128
-#, fuzzy
-#| msgid "Create Playlist..."
-msgid "Generating a new playlist"
-msgstr "प्ले सूची सिर्जना गर्नुहोस्..."
-
-#: playlistgenerator/Preset.cpp:148
-msgid ""
-"The playlist generator created a playlist which does not meet all of your "
-"constraints.  If you are not satisfied with the results, try loosening or "
-"removing some constraints and then generating a new playlist."
-msgstr ""
-
 #: playlistgenerator/PresetModel.cpp:157 playlistgenerator/PresetModel.cpp:286
 msgid "Preset files (*.xml)"
 msgstr ""
@@ -8326,6 +8304,31 @@ msgstr ""
 #: playlistgenerator/PresetModel.cpp:295
 #, kde-format
 msgid "Export `%1' preset"
+msgstr ""
+
+#: playlistgenerator/Preset.cpp:40 playlistgenerator/Preset.cpp:53
+#, fuzzy
+#| msgid "Playlist name:"
+msgid "New playlist preset"
+msgstr "प्लेसूची नाम:"
+
+#: playlistgenerator/Preset.cpp:43 playlistgenerator/Preset.cpp:65
+#, fuzzy
+#| msgid "Save Playlist"
+msgid "Unnamed playlist preset"
+msgstr "प्लेसूची बचत गर्नुहोस्"
+
+#: playlistgenerator/Preset.cpp:127
+#, fuzzy
+#| msgid "Create Playlist..."
+msgid "Generating a new playlist"
+msgstr "प्ले सूची सिर्जना गर्नुहोस्..."
+
+#: playlistgenerator/Preset.cpp:147
+msgid ""
+"The playlist generator created a playlist which does not meet all of your "
+"constraints.  If you are not satisfied with the results, try loosening or "
+"removing some constraints and then generating a new playlist."
 msgstr ""
 
 #: playlistmanager/SyncedPlaylist.cpp:40 playlistmanager/SyncedPlaylist.cpp:48
@@ -15806,6 +15809,9 @@ msgstr "समूहहरू"
 #: rc.cpp:2415
 msgid "Verbose"
 msgstr ""
+
+#~ msgid "Albums by this Artist"
+#~ msgstr "यो कलाकारद्वारा एल्बम"
 
 #, fuzzy
 #~| msgid "Bitrate"
