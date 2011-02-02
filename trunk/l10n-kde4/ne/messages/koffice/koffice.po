@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-26 03:29+0100\n"
+"POT-Creation-Date: 2011-02-02 03:38+0100\n"
 "PO-Revision-Date: 2007-08-08 15:46+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -60,10 +60,6 @@ msgstr "साधारण मार्ग आकार"
 msgid "A simple path shape"
 msgstr "साधारण मार्ग आकार"
 
-#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
-msgid "Tool Options"
-msgstr "उपकरण्ति विकल्प"
-
 #: flake/KoShapeController.cpp:64 kotext/InsertTextReferenceAction.cpp:63
 #: kotext/InsertVariableAction.cpp:51
 #: main/rdf/InsertSemanticObjectCreateAction.cpp:59
@@ -72,16 +68,32 @@ msgstr "उपकरण्ति विकल्प"
 msgid "%1 Options"
 msgstr "%1 विकल्प"
 
-#: flake/KoToolManager.cpp:350
-#, kde-format
-msgid "Active tool: %1"
-msgstr " उपकरण सक्रिय बनाउनुहोस्: %1"
-
 #: flake/KoShapePaste.cpp:100
 #, fuzzy
 #| msgid "Create Shapes"
 msgid "Paste Shapes"
 msgstr "आकारप्लेट सिर्जन गर्।नुहोस्"
+
+#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
+msgid "Tool Options"
+msgstr "उपकरण्ति विकल्प"
+
+#: flake/KoToolManager.cpp:350
+#, kde-format
+msgid "Active tool: %1"
+msgstr " उपकरण सक्रिय बनाउनुहोस्: %1"
+
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Change Connection"
+msgstr "इन्डेन्ट परिवर्तन गर्नुहोस्"
+
+#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#, fuzzy
+#| msgid "Change parameter"
+msgid "Change Parameter"
+msgstr " परिमितिर परिवर्तन गर्नुहोस्"
 
 #: flake/commands/KoParameterToPathCommand.cpp:43
 #: flake/commands/KoParameterToPathCommand.cpp:52
@@ -294,17 +306,31 @@ msgstr "सहायक मार्ग जोड्नुहोस्।"
 msgid "Remove Subpath"
 msgstr "सहायकमार्ग  हटाउनुहोस्।"
 
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
+msgid "Snapping"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:379
 #, fuzzy
 #| msgid "Change Indent"
-msgid "Change Connection"
+msgid "Angle Constraints"
 msgstr "इन्डेन्ट परिवर्तन गर्नुहोस्"
 
-#: flake/commands/KoParameterHandleMoveCommand.cpp:34
-#, fuzzy
-#| msgid "Change parameter"
-msgid "Change Parameter"
-msgstr " परिमितिर परिवर्तन गर्नुहोस्"
+#: flake/tools/KoCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "मार्ग सिर्जना गर्नुहोस्।"
+
+#: flake/tools/KoCreateShapesToolFactory.cpp:33
+msgid "Create object"
+msgstr "वस्तुात सृजना गर्नुहोस ।"
+
+#: flake/tools/KoPanToolFactory.cpp:29
+msgid "Pan"
+msgstr "प्यानन"
 
 #: flake/tools/KoPathSegmentChangeStrategy.cpp:145
 #, fuzzy
@@ -387,10 +413,6 @@ msgstr "गोलभेडा रङ"
 msgid "Line/Curve"
 msgstr "मुद्रा"
 
-#: flake/tools/KoPathTool.cpp:181 flake/tools/KoCreatePathTool.cpp:369
-msgid "Snapping"
-msgstr ""
-
 #: flake/tools/KoPathTool.cpp:515
 msgid "Drag to move handle."
 msgstr ""
@@ -418,28 +440,6 @@ msgstr ""
 #: flake/tools/KoPathToolFactory.cpp:29
 msgid "Path editing tool"
 msgstr "मार्ग  सम्पदन ाउपकर:"
-
-#: flake/tools/KoCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:379
-#, fuzzy
-#| msgid "Change Indent"
-msgid "Angle Constraints"
-msgstr "इन्डेन्ट परिवर्तन गर्नुहोस्"
-
-#: flake/tools/KoCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "मार्ग सिर्जना गर्नुहोस्।"
-
-#: flake/tools/KoCreateShapesToolFactory.cpp:33
-msgid "Create object"
-msgstr "वस्तुात सृजना गर्नुहोस ।"
-
-#: flake/tools/KoPanToolFactory.cpp:29
-msgid "Pan"
-msgstr "प्यानन"
 
 #: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
@@ -1081,6 +1081,27 @@ msgstr[1] "%1 जोडा फेला पर्यो"
 msgid "Found no match"
 msgstr "जोडा  फेला परेन"
 
+#: kotext/KoReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+
+#: kotext/KoReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kotext/KoReplaceStrategy.cpp:74
+#, fuzzy, kde-format
+#| msgctxt "We add the 1/2 char at the %1"
+#| msgid "Re&place 1/2... with %1..."
+msgid "Replace %1 with %2?"
+msgstr "%1...सँग १/२...प्रतिस्थापन गर्नुहोस्"
+
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -1230,27 +1251,6 @@ msgstr "किनारा परिवर्तन गर्नुहोस्"
 #: kotext/KoTextEditor_p.h:83 kotext/KoTextEditor_p.h:120 rc.cpp:348
 msgid "Format"
 msgstr "ढाँचा"
-
-#: kotext/KoReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-
-#: kotext/KoReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kotext/KoReplaceStrategy.cpp:74
-#, fuzzy, kde-format
-#| msgctxt "We add the 1/2 char at the %1"
-#| msgid "Re&place 1/2... with %1..."
-msgid "Replace %1 with %2?"
-msgstr "%1...सँग १/२...प्रतिस्थापन गर्नुहोस्"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2235,6 +2235,20 @@ msgstr "तपाईँले सन्दर्भका लागि चाह
 msgid "Reference"
 msgstr "पाठ सन्दर्भ"
 
+#: main/rdf/KoDocumentRdfEditWidget.cpp:270
+#, kde-format
+msgctxt "statement is an Rdf related term"
+msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+msgid_plural ""
+"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:273
+msgctxt "statement is an Rdf related term"
+msgid "Discard invalid statements?"
+msgstr ""
+
 #: main/rdf/KoRdfCalendarEvent.cpp:201
 #, fuzzy
 #| msgctxt "color"
@@ -2423,20 +2437,6 @@ msgstr "मिति"
 
 #: main/rdf/KoSopranoTableModel.cpp:140
 msgid "Stored In"
-msgstr ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:270
-#, kde-format
-msgctxt "statement is an Rdf related term"
-msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
-msgid_plural ""
-"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:273
-msgctxt "statement is an Rdf related term"
-msgid "Discard invalid statements?"
 msgstr ""
 
 #: main/config/KoConfigDocumentPage.cpp:75

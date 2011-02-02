@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-28 02:52+0100\n"
+"POT-Creation-Date: 2011-02-02 03:13+0100\n"
 "PO-Revision-Date: 2007-09-09 17:32+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1318,6 +1318,10 @@ msgstr ""
 msgid "DN-Attribute Order"
 msgstr ""
 
+#: conf/configuredialog.cpp:73
+msgid "Configure"
+msgstr "कन्फिगर गर्नुहोस्"
+
 #: conf/dirservconfigpage.cpp:171
 msgid "LDAP &timeout (minutes:seconds):"
 msgstr "LDAP म्याद समाप्त (मिनेट:सकेन्ड):"
@@ -1339,10 +1343,6 @@ msgstr "ब्याकइन्ड त्रुटि: %1/%2/%3 का ला�
 #, kde-format
 msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr "ब्याकइन्ड त्रुटि: %1/%2/%3: %4 %5 का लागि gpgconf सँग गलत प्रकार छ"
-
-#: conf/configuredialog.cpp:73
-msgid "Configure"
-msgstr "कन्फिगर गर्नुहोस्"
 
 #: conf/smimevalidationconfigurationwidget.cpp:132
 msgid "This option requires dirmngr >= 0.9.0"
@@ -2794,7 +2794,7 @@ msgstr ""
 msgid "Issuer Certificate Not Found (%1)"
 msgstr "वितरक प्रमाणपत्र फेला परेन ( %1)"
 
-#: dialogs/certificatedetailsdialog.cpp:417
+#: dialogs/certificatedetailsdialog.cpp:418
 #, fuzzy
 #| msgid "New subkeys:"
 msgctxt "@title"
@@ -3071,13 +3071,13 @@ msgstr "आयातित:"
 msgid "(unknown certificate)"
 msgstr "CA प्रमाणपत्र मेट्दैछ"
 
-#: dialogs/ownertrustdialog.cpp:102
+#: dialogs/ownertrustdialog.cpp:105
 #, kde-format
 msgctxt "@title"
 msgid "Change Trust Level of %1"
 msgstr ""
 
-#: dialogs/ownertrustdialog.cpp:103
+#: dialogs/ownertrustdialog.cpp:106
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3578,6 +3578,61 @@ msgstr "प्रमाणपत्र उत्पन्न गर्न सक
 #| msgid "GnuPG Log Viewer..."
 msgid "KWatchGnuPG Log Viewer"
 msgstr "GnuPG कार्य दर्शक..."
+
+#: main.cpp:146
+msgid "Performing Self-Check..."
+msgstr ""
+
+#: main.cpp:163
+#, fuzzy
+#| msgid "Select CRL File"
+msgctxt "did not pass"
+msgid "Self-Check Failed"
+msgstr "CRL फाइल चयन गर्नुहोस्"
+
+#: main.cpp:168
+msgid "Self-Check Passed"
+msgstr ""
+
+#: main.cpp:185
+#, fuzzy
+#| msgid "Exporting certificate..."
+msgid "Loading certificate cache..."
+msgstr "प्रमाणपत्र निर्यात गर्दैछ..."
+
+#: main.cpp:192
+#, fuzzy
+#| msgid "Certificate Download Failed"
+msgid "Certificate cache loaded."
+msgstr "प्रमाणपत्र डाउनलोड गर्न असफल भयो"
+
+#: main.cpp:231
+msgctxt "@info"
+msgid ""
+"<para>The version of the <application>GpgME</application> library you are "
+"running against is older than the one that the <application>GpgME++</"
+"application> library was built against.</para><para><application>Kleopatra</"
+"application> will not function in this setting.</para><para>Please ask your "
+"administrator for help in resolving this issue.</para>"
+msgstr ""
+
+#: main.cpp:235
+msgctxt "@title"
+msgid "GpgME Too Old"
+msgstr ""
+
+#: main.cpp:328
+msgid "GPG UI Server Error"
+msgstr ""
+
+#: main.cpp:329
+#, kde-format
+msgid ""
+"<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
+"error given was: <b>%1</b><br/>You can use Kleopatra as a certificate "
+"manager, but cryptographic plugins that rely on a GPG UI Server being "
+"present might not work correctly, or at all.</qt>"
+msgstr ""
 
 #: mainwindow_desktop.cpp:121 mainwindow_mobile.cpp:151
 #, kde-format
@@ -5421,7 +5476,7 @@ msgstr "खोजी गर्नुहोस्:"
 msgid "Search interactively for icon names (e.g. folder)."
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:34
+#. i18n: file: dialogs/certificatedetailsdialog.ui:27
 #. i18n: ectx: property (title), widget (QGroupBox, overviewActionsGB)
 #: utils/kleo_kicondialog.cpp:367 rc.cpp:223 qml/kleopatra-mobile.qml:84
 #, fuzzy
@@ -5647,8 +5702,8 @@ msgstr ""
 msgid "Stop Operation"
 msgstr "सञ्चालन रोक्नुहोस्"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, CertificateDetailsDialog)
+#. i18n: file: dialogs/certificatedetailsdialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsDialog)
 #: view/keylistcontroller.cpp:361 rc.cpp:217
 #, fuzzy
 #| msgid "Certificate Details..."
@@ -5665,7 +5720,7 @@ msgstr "मेट्नुहोस्"
 msgid "Certify Certificate..."
 msgstr "प्रमाणपत्र बचत गर्नुहोस्"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:60
+#. i18n: file: dialogs/certificatedetailsdialog.ui:53
 #. i18n: ectx: property (text), widget (QPushButton, changeExpiryDatePB)
 #: view/keylistcontroller.cpp:368 rc.cpp:232
 msgid "Change Expiry Date..."
@@ -5687,7 +5742,7 @@ msgstr "प्रमाणपत्र आयात गर्नुहोस्.
 msgid "Distrust Root Certificate"
 msgstr "प्रमाणपत्र आयात गर्नुहोस्..."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:40
+#. i18n: file: dialogs/certificatedetailsdialog.ui:33
 #. i18n: ectx: property (text), widget (QPushButton, changePassphrasePB)
 #: view/keylistcontroller.cpp:376 rc.cpp:226
 msgid "Change Passphrase..."
@@ -5811,7 +5866,7 @@ msgstr ""
 msgid "Hierarchical Certificate List"
 msgstr "सोपानक्रमिक कुञ्जी सूची"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:244
+#. i18n: file: dialogs/certificatedetailsdialog.ui:229
 #. i18n: ectx: property (text), widget (QPushButton, expandAllCertificationsPB)
 #: view/tabwidget.cpp:408 rc.cpp:269
 msgid "Expand All"
@@ -5821,7 +5876,7 @@ msgstr "सबै विस्तार गर्नुहोस्"
 msgid "CTRL+."
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:254
+#. i18n: file: dialogs/certificatedetailsdialog.ui:239
 #. i18n: ectx: property (text), widget (QPushButton, collapseAllCertificationsPB)
 #: view/tabwidget.cpp:410 rc.cpp:272
 msgid "Collapse All"
@@ -5837,61 +5892,6 @@ msgstr ""
 
 #: view/tabwidget.cpp:536
 msgid "New tab title:"
-msgstr ""
-
-#: main.cpp:150
-msgid "Performing Self-Check..."
-msgstr ""
-
-#: main.cpp:167
-#, fuzzy
-#| msgid "Select CRL File"
-msgctxt "did not pass"
-msgid "Self-Check Failed"
-msgstr "CRL फाइल चयन गर्नुहोस्"
-
-#: main.cpp:172
-msgid "Self-Check Passed"
-msgstr ""
-
-#: main.cpp:189
-#, fuzzy
-#| msgid "Exporting certificate..."
-msgid "Loading certificate cache..."
-msgstr "प्रमाणपत्र निर्यात गर्दैछ..."
-
-#: main.cpp:196
-#, fuzzy
-#| msgid "Certificate Download Failed"
-msgid "Certificate cache loaded."
-msgstr "प्रमाणपत्र डाउनलोड गर्न असफल भयो"
-
-#: main.cpp:238
-msgctxt "@info"
-msgid ""
-"<para>The version of the <application>GpgME</application> library you are "
-"running against is older than the one that the <application>GpgME++</"
-"application> library was built against.</para><para><application>Kleopatra</"
-"application> will not function in this setting.</para><para>Please ask your "
-"administrator for help in resolving this issue.</para>"
-msgstr ""
-
-#: main.cpp:242
-msgctxt "@title"
-msgid "GpgME Too Old"
-msgstr ""
-
-#: main.cpp:335
-msgid "GPG UI Server Error"
-msgstr ""
-
-#: main.cpp:336
-#, kde-format
-msgid ""
-"<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
-"error given was: <b>%1</b><br/>You can use Kleopatra as a certificate "
-"manager, but cryptographic plugins that rely on a GPG UI Server being "
-"present might not work correctly, or at all.</qt>"
 msgstr ""
 
 #: rc.cpp:1
@@ -6394,13 +6394,13 @@ msgstr "नयाँ प्रयोगकर्ता आईडी:"
 msgid "This is how the new User-ID will be stored in the certificate:"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:28
+#. i18n: file: dialogs/certificatedetailsdialog.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, overviewTab)
 #: rc.cpp:220
 msgid "Overview"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:50
+#. i18n: file: dialogs/certificatedetailsdialog.ui:43
 #. i18n: ectx: property (text), widget (QPushButton, changeTrustLevelPB)
 #: rc.cpp:229
 #, fuzzy
@@ -6408,7 +6408,7 @@ msgstr ""
 msgid "Trust Certifications Made by This Certificate..."
 msgstr "प्रमाणपत्र बचत गर्नुहोस्"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:70
+#. i18n: file: dialogs/certificatedetailsdialog.ui:63
 #. i18n: ectx: property (text), widget (QPushButton, revokeCertificatePB)
 #: rc.cpp:235
 #, fuzzy
@@ -6416,13 +6416,13 @@ msgstr "प्रमाणपत्र बचत गर्नुहोस्"
 msgid "Revoke This Certificate..."
 msgstr "प्रमाणपत्र बचत गर्नुहोस्"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:118
+#. i18n: file: dialogs/certificatedetailsdialog.ui:111
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:238
 msgid "Photo"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:128
+#. i18n: file: dialogs/certificatedetailsdialog.ui:121
 #. i18n: ectx: property (text), widget (QLabel, photoLB)
 #: rc.cpp:241
 msgid ""
@@ -6435,7 +6435,7 @@ msgid ""
 "</ul>"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:153
+#. i18n: file: dialogs/certificatedetailsdialog.ui:138
 #. i18n: ectx: attribute (title), widget (QWidget, certificationsTab)
 #: rc.cpp:248
 #, fuzzy
@@ -6443,13 +6443,13 @@ msgstr ""
 msgid "User-IDs && Certifications"
 msgstr "प्रमाणपत्र"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:173
+#. i18n: file: dialogs/certificatedetailsdialog.ui:158
 #. i18n: ectx: property (title), widget (QGroupBox, userIDsActionsGB)
 #: rc.cpp:251
 msgid "User-IDs"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:179
+#. i18n: file: dialogs/certificatedetailsdialog.ui:164
 #. i18n: ectx: property (text), widget (QPushButton, addUserIDPB)
 #: rc.cpp:254
 #, fuzzy
@@ -6457,9 +6457,9 @@ msgstr ""
 msgid "Add..."
 msgstr "A.k.a."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:189
+#. i18n: file: dialogs/certificatedetailsdialog.ui:174
 #. i18n: ectx: property (text), widget (QPushButton, revokeUserIDPB)
-#. i18n: file: dialogs/certificatedetailsdialog.ui:218
+#. i18n: file: dialogs/certificatedetailsdialog.ui:203
 #. i18n: ectx: property (text), widget (QPushButton, revokeCertificationPB)
 #: rc.cpp:257 rc.cpp:266
 #, fuzzy
@@ -6467,7 +6467,7 @@ msgstr "A.k.a."
 msgid "Revoke..."
 msgstr "खारेज गर्नुहोस्"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:199
+#. i18n: file: dialogs/certificatedetailsdialog.ui:184
 #. i18n: ectx: property (text), widget (QPushButton, certifyUserIDPB)
 #: rc.cpp:260
 #, fuzzy
@@ -6475,7 +6475,7 @@ msgstr "खारेज गर्नुहोस्"
 msgid "Certify..."
 msgstr "कुञ्जी मेट्दैछ..."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:212
+#. i18n: file: dialogs/certificatedetailsdialog.ui:197
 #. i18n: ectx: property (title), widget (QGroupBox, certificationsActionGB)
 #: rc.cpp:263
 #, fuzzy
@@ -6483,7 +6483,7 @@ msgstr "कुञ्जी मेट्दैछ..."
 msgid "Certifications"
 msgstr "प्रमाणपत्र"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:287
+#. i18n: file: dialogs/certificatedetailsdialog.ui:264
 #. i18n: ectx: attribute (title), widget (QWidget, detailsTab)
 #. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:20
 #. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
@@ -6493,7 +6493,7 @@ msgstr "प्रमाणपत्र"
 msgid "Technical Details"
 msgstr "प्रमाणपत्रको विस्तृत विवरण..."
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:328
+#. i18n: file: dialogs/certificatedetailsdialog.ui:297
 #. i18n: ectx: attribute (title), widget (QWidget, chainTab)
 #: rc.cpp:278
 #, fuzzy
@@ -6501,13 +6501,13 @@ msgstr "प्रमाणपत्रको विस्तृत विवर�
 msgid "Chain"
 msgstr "श्रृङ्खला"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:341
+#. i18n: file: dialogs/certificatedetailsdialog.ui:310
 #. i18n: ectx: property (text), widget (QTreeWidget, chainTW)
 #: rc.cpp:281
 msgid "1"
 msgstr ""
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:358
+#. i18n: file: dialogs/certificatedetailsdialog.ui:319
 #. i18n: ectx: attribute (title), widget (QWidget, dumpTab)
 #: rc.cpp:284
 #, fuzzy
@@ -6515,7 +6515,7 @@ msgstr ""
 msgid "Dump"
 msgstr "डम्प गर्नुहोस्"
 
-#. i18n: file: dialogs/certificatedetailsdialog.ui:364
+#. i18n: file: dialogs/certificatedetailsdialog.ui:325
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:287
 msgid ""
@@ -6552,15 +6552,15 @@ msgstr ""
 msgid "Send certified certificate to server afterwards"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, Kleo::Dialogs::ExpiryDialog)
+#. i18n: file: dialogs/expirydialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
 #: rc.cpp:309
 #, fuzzy
 #| msgid "Fetching Certificate Chain"
 msgid "Change Certificate Date of Expiry"
 msgstr "प्रमाणपत्र श्रृङ्खला तान्दैछ"
 
-#. i18n: file: dialogs/expirydialog.ui:19
+#. i18n: file: dialogs/expirydialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:312
 #, fuzzy
@@ -6569,37 +6569,37 @@ msgstr "प्रमाणपत्र श्रृङ्खला तान्�
 msgid "Please select when to expire this certificate:"
 msgstr "तपाईँ यो प्रमाणपत्र वास्तवमै मेट्न चाहनुहुन्छ ?"
 
-#. i18n: file: dialogs/expirydialog.ui:26
+#. i18n: file: dialogs/expirydialog.ui:27
 #. i18n: ectx: property (text), widget (QRadioButton, neverRB)
 #: rc.cpp:315
 msgid "Never"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:38
+#. i18n: file: dialogs/expirydialog.ui:39
 #. i18n: ectx: property (text), widget (QRadioButton, inRB)
 #: rc.cpp:318
 msgid "In"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:62
+#. i18n: file: dialogs/expirydialog.ui:63
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:321
 msgid "Days"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:67
+#. i18n: file: dialogs/expirydialog.ui:68
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:324
 msgid "Weeks"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:72
+#. i18n: file: dialogs/expirydialog.ui:73
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:327
 msgid "Months"
 msgstr ""
 
-#. i18n: file: dialogs/expirydialog.ui:77
+#. i18n: file: dialogs/expirydialog.ui:78
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
 #: rc.cpp:330
 #, fuzzy
@@ -6607,7 +6607,7 @@ msgstr ""
 msgid "Years"
 msgstr "हो"
 
-#. i18n: file: dialogs/expirydialog.ui:100
+#. i18n: file: dialogs/expirydialog.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, onRB)
 #: rc.cpp:333
 msgid "On this day:"
@@ -6687,19 +6687,19 @@ msgstr "CRL फाइल चयन गर्नुहोस्"
 msgid "Find:"
 msgstr "फेला पार्नुहोस्"
 
-#. i18n: file: dialogs/ownertrustdialog.ui:28
+#. i18n: file: dialogs/ownertrustdialog.ui:29
 #. i18n: ectx: property (text), widget (QRadioButton, unknownRB)
 #: rc.cpp:369
 msgid "I do not know"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:41
+#. i18n: file: dialogs/ownertrustdialog.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:372
 msgid "<i>(unknown trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:74
+#. i18n: file: dialogs/ownertrustdialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:375
 msgid ""
@@ -6708,19 +6708,19 @@ msgid ""
 "level are ignored when checking the validity of OpenPGP certificates.</font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:88
+#. i18n: file: dialogs/ownertrustdialog.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, neverRB)
 #: rc.cpp:378
 msgid "I do NOT trust them"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:98
+#. i18n: file: dialogs/ownertrustdialog.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: rc.cpp:381
 msgid "<i>(never trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:131
+#. i18n: file: dialogs/ownertrustdialog.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:384
 msgid ""
@@ -6731,19 +6731,19 @@ msgid ""
 "certificates.</font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:145
+#. i18n: file: dialogs/ownertrustdialog.ui:146
 #. i18n: ectx: property (text), widget (QRadioButton, marginalRB)
 #: rc.cpp:387
 msgid "I believe checks are casual"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:155
+#. i18n: file: dialogs/ownertrustdialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: rc.cpp:390
 msgid "<i>(marginal trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:188
+#. i18n: file: dialogs/ownertrustdialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:393
 msgid ""
@@ -6753,19 +6753,19 @@ msgid ""
 "This is usually a good choice.</font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:202
+#. i18n: file: dialogs/ownertrustdialog.ui:203
 #. i18n: ectx: property (text), widget (QRadioButton, fullRB)
 #: rc.cpp:396
 msgid "I believe checks are very accurate"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:212
+#. i18n: file: dialogs/ownertrustdialog.ui:213
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:399
 msgid "<i>(full trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:245
+#. i18n: file: dialogs/ownertrustdialog.ui:246
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: rc.cpp:402
 msgid ""
@@ -6775,7 +6775,7 @@ msgid ""
 "font>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:262
+#. i18n: file: dialogs/ownertrustdialog.ui:263
 #. i18n: ectx: property (text), widget (QRadioButton, ultimateRB)
 #: rc.cpp:405
 #, fuzzy
@@ -6783,13 +6783,13 @@ msgstr ""
 msgid "This is my certificate"
 msgstr "प्रमाणपत्र श्रृङ्खला तान्दैछ"
 
-#. i18n: file: dialogs/ownertrustdialog.ui:272
+#. i18n: file: dialogs/ownertrustdialog.ui:273
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #: rc.cpp:408
 msgid "<i>(ultimate trust)</i>"
 msgstr ""
 
-#. i18n: file: dialogs/ownertrustdialog.ui:305
+#. i18n: file: dialogs/ownertrustdialog.ui:306
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:411
 msgid ""
@@ -7472,12 +7472,6 @@ msgstr "प्रमाणपत्र उपयोग"
 msgid "Create Encryption Certificate With Same Parameters"
 msgstr "प्रमाणपत्र उपयोग"
 
-#: qml/kleopatra-mobile.qml:73
-#, fuzzy
-#| msgid "Certificate Deletion Failed"
-msgid "No certificates loaded yet."
-msgstr "प्रमाणपत्र मेट्न असफल भयो"
-
 #: qml/KleopatraActions.qml:48
 msgid "File"
 msgstr "फाइल"
@@ -7489,6 +7483,12 @@ msgstr "दृश्य"
 #: qml/KleopatraActions.qml:95
 msgid "Settings"
 msgstr ""
+
+#: qml/kleopatra-mobile.qml:73
+#, fuzzy
+#| msgid "Certificate Deletion Failed"
+msgid "No certificates loaded yet."
+msgstr "प्रमाणपत्र मेट्न असफल भयो"
 
 #, fuzzy
 #~| msgid "&Tools"
