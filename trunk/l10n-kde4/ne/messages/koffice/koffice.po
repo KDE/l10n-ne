@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:38+0100\n"
+"POT-Creation-Date: 2011-02-04 02:57+0100\n"
 "PO-Revision-Date: 2007-08-08 15:46+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -100,12 +100,6 @@ msgstr " परिमितिर परिवर्तन गर्नुहो
 msgid "Convert to Path"
 msgstr "मार्गमा रूपान्तरण गर्नुहोस्।"
 
-#: flake/commands/KoPathBreakAtPointCommand.cpp:38
-#, fuzzy
-#| msgid "Break subpath at points"
-msgid "Break Subpath at Points"
-msgstr "सहायक मार्गलाई विन्दुमा विच्छेद गर्नुहोस्"
-
 #: flake/commands/KoPathCombineCommand.cpp:58
 msgid "Combine paths"
 msgstr "मार्ग संयोजन गर्नुहोस्।"
@@ -119,6 +113,18 @@ msgstr "नियन्त्रण बिन्दुलाई सार्न�
 #: flake/commands/KoPathFillRuleCommand.cpp:44
 msgid "Set Fill Rule"
 msgstr ""
+
+#: flake/commands/KoShapeGroupCommand.cpp:93
+#, fuzzy
+#| msgid "Group shapes"
+msgid "Group Shapes"
+msgstr "आकारलाई समुह बनाउनुहोस्"
+
+#: flake/commands/KoShapeGroupCommand.cpp:95
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "समूह थप्नुहोस्"
 
 #: flake/commands/KoPathPointMergeCommand.cpp:152
 #, fuzzy
@@ -220,18 +226,6 @@ msgstr "आकार मेट्नुहोस्।"
 msgid "Distribute Shapes"
 msgstr "आकारलाई वितरण गर्नुहोस्"
 
-#: flake/commands/KoShapeGroupCommand.cpp:93
-#, fuzzy
-#| msgid "Group shapes"
-msgid "Group Shapes"
-msgstr "आकारलाई समुह बनाउनुहोस्"
-
-#: flake/commands/KoShapeGroupCommand.cpp:95
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "समूह थप्नुहोस्"
-
 #: flake/commands/KoShapeKeepAspectRatioCommand.cpp:40
 msgid "Keep Aspect Ratio"
 msgstr "आकार अनुपात राख्नुहोस्।"
@@ -306,6 +300,12 @@ msgstr "सहायक मार्ग जोड्नुहोस्।"
 msgid "Remove Subpath"
 msgstr "सहायकमार्ग  हटाउनुहोस्।"
 
+#: flake/commands/KoPathBreakAtPointCommand.cpp:38
+#, fuzzy
+#| msgid "Break subpath at points"
+msgid "Break Subpath at Points"
+msgstr "सहायक मार्गलाई विन्दुमा विच्छेद गर्नुहोस्"
+
 #: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -331,12 +331,6 @@ msgstr "वस्तुात सृजना गर्नुहोस ।"
 #: flake/tools/KoPanToolFactory.cpp:29
 msgid "Pan"
 msgstr "प्यानन"
-
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-#| msgid "Change Alignment"
-msgid "Change Segment"
-msgstr "पङ्क्तिबद्धता परिवर्तन गर्नुहोस्"
 
 #: flake/tools/KoPathTool.cpp:87
 msgid "Corner point"
@@ -445,6 +439,12 @@ msgstr "मार्ग  सम्पदन ाउपकर:"
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr "जुम"
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+#| msgid "Change Alignment"
+msgid "Change Segment"
+msgstr "पङ्क्तिबद्धता परिवर्तन गर्नुहोस्"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -739,12 +739,6 @@ msgstr "कम्पनी"
 #| msgid "Date"
 msgid "Paste"
 msgstr "मिति"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-#| msgid "Fit Page"
-msgid "Page %1"
-msgstr "पृष्ठ ठीक गर्नुहोस्"
 
 #: kopageapp/KoPAPastePage.cpp:132
 #, fuzzy
@@ -1049,6 +1043,12 @@ msgstr "मार्ग  सम्पदन ाउपकर:"
 msgid "Change background image"
 msgstr "पृष्टभुमि सेट गर्नुहोस्"
 
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, fuzzy, kde-format
+#| msgid "Fit Page"
+msgid "Page %1"
+msgstr "पृष्ठ ठीक गर्नुहोस्"
+
 #: kotext/InsertTextLocator.cpp:29
 #, fuzzy
 #| msgid "Text Reference"
@@ -1101,21 +1101,6 @@ msgstr[1] ""
 #| msgid "Re&place 1/2... with %1..."
 msgid "Replace %1 with %2?"
 msgstr "%1...सँग १/२...प्रतिस्थापन गर्नुहोस्"
-
-#: kotext/KoText.cpp:29
-msgctxt "Underline Style"
-msgid "None"
-msgstr "कुनै पनि होइन"
-
-#: kotext/KoText.cpp:30
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "एकल"
-
-#: kotext/KoText.cpp:31
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "दोहोरो"
 
 #: kotext/KoTextEditor.cpp:105 kotext/KoTextEditor.cpp:161
 #: kotext/KoTextEditor.cpp:319 widgets/KoCsvImportDialog.cpp:216
@@ -1251,6 +1236,21 @@ msgstr "किनारा परिवर्तन गर्नुहोस्"
 #: kotext/KoTextEditor_p.h:83 kotext/KoTextEditor_p.h:120 rc.cpp:348
 msgid "Format"
 msgstr "ढाँचा"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: kotext/KoText.cpp:48
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "एकल"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "दोहोरो"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -1591,7 +1591,7 @@ msgstr "चित्रपट"
 msgid "a drawing"
 msgstr "रेखाचित्र"
 
-#: main/KoDocument.cpp:2504
+#: main/KoDocument.cpp:2499
 msgid "Embedding Object"
 msgstr "सम्मिलित गरिएको वस्तु"
 
@@ -2877,12 +2877,6 @@ msgstr "ए*"
 msgid "b*"
 msgstr "बी*"
 
-#: pigment/KoBasicHistogramProducers.h:231
-#, fuzzy
-#| msgid "Generic RGB Histogram"
-msgid "Generic L*a*b* Histogram"
-msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
-
 #: pigment/KoColorModelStandardIds.cpp:25
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:261
 #: pigment/colorspaces/KoLabColorSpace.cpp:44
@@ -3047,12 +3041,6 @@ msgstr ""
 msgid "Simple Color Conversion Engine"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
-#, fuzzy
-#| msgid "Alpha mask"
-msgid "Alpha darken"
-msgstr "अल्फा मास्क"
-
 #: pigment/compositeops/KoCompositeOpBurn.h:36
 #, fuzzy
 #| msgctxt "color"
@@ -3108,9 +3096,21 @@ msgstr "पर्दा"
 msgid "Soft light"
 msgstr "स्ट्रिङ:"
 
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
+#, fuzzy
+#| msgid "Alpha mask"
+msgid "Alpha darken"
+msgstr "अल्फा मास्क"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
 msgstr ""
+
+#: pigment/KoBasicHistogramProducers.h:231
+#, fuzzy
+#| msgid "Generic RGB Histogram"
+msgid "Generic L*a*b* Histogram"
+msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
 
 #: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418
 msgid "Opacity"
