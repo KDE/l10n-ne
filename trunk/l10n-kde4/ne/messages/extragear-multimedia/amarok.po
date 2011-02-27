@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-26 03:20+0100\n"
+"POT-Creation-Date: 2011-02-27 03:22+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1050,8 +1050,8 @@ msgid "Unknown"
 msgstr "अज्ञात"
 
 #: browsers/CollectionTreeItemModelBase.cpp:316
-#: core-impl/collections/db/ScanResultProcessor.cpp:258
 #: core-impl/collections/db/sql/SqlMeta.cpp:420
+#: core-impl/collections/db/ScanResultProcessor.cpp:270
 #: covermanager/CoverManager.cpp:845 dialogs/TrackOrganizer.cpp:47
 #: playlist/PlaylistModel.cpp:866 widgets/AlbumBreadcrumbWidget.cpp:60
 msgid "Various Artists"
@@ -2080,7 +2080,7 @@ msgstr "ट्रयाक सूचना सम्पादन गर्नु
 #: context/applets/currenttrack/CurrentTrack.cpp:104
 #: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
 #: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:71
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:72
 msgid "Local Collection"
 msgstr "स्थानीय सङ्कलन"
 
@@ -3395,70 +3395,6 @@ msgstr ""
 msgid "Music share at %1"
 msgstr ""
 
-#: core-impl/collections/db/ScanManager.cpp:132
-msgid "Database import requested"
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:239
-msgid "Scanning music"
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:273
-msgid ""
-"<p>The version of the 'amarokcollectionscanner' tool\n"
-"does not match your Amarok version.</p><p>Please note that Collection "
-"Scanning may not work correctly.</p>"
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:433
-#, kde-format
-msgid "Failed to write scanner batch file \"%1\""
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:441
-#, fuzzy
-#| msgid "Amarok is paused"
-msgid "Unable to start Amarok collection scanner."
-msgstr "अमारोक पज गरिएको छ"
-
-#: core-impl/collections/db/ScanManager.cpp:490
-#, fuzzy, kde-format
-#| msgid "Cannot enter directory: '%1'"
-msgid "Found one directory"
-msgid_plural "Found %1 directories"
-msgstr[0] "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
-msgstr[1] "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
-
-#: core-impl/collections/db/ScanManager.cpp:502
-#, kde-format
-msgid "Got directory \"%1\" from scanner."
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:543
-#, kde-format
-msgid "Aborting scanner with error: %1"
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:561
-msgid "Scanner aborted."
-msgstr ""
-
-#: core-impl/collections/db/ScanManager.cpp:658
-#, fuzzy
-#| msgid ""
-#| "<p>Sorry, the Collection Scan was aborted, since too many problems were "
-#| "encountered.</p>"
-msgid ""
-"The collection scan had to be aborted. Too many errors were encountered "
-"during the scan."
-msgstr ""
-"<p> माफ गर्नुहोस्, अति धेरै समस्याहरू हुँदाहुँदै पनि सङ्कलन स्क्यान परित्याग गरियो ।</p>"
-
-#: core-impl/collections/db/ScanResultProcessor.cpp:249
-msgctxt "The genre name for classical music"
-msgid "Classical"
-msgstr ""
-
 #: core-impl/collections/db/sql/CapabilityDelegateImpl.cpp:59
 #, fuzzy
 #| msgid "Various Artists"
@@ -3471,64 +3407,146 @@ msgstr "विभिन्न कलाकारहरू"
 msgid "Show under Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
-#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:21
-#. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
-#: core-impl/collections/db/sql/SqlCollection.cpp:82 rc.cpp:1611
-msgid "Organize Files"
-msgstr "फाइल सङ्गठित गर्नुहोस्"
+#: core-impl/collections/db/sql/SqlMeta.cpp:272
+#: covermanager/CoverManager.cpp:846 services/lastfm/meta/LastFmMeta.cpp:133
+#, kde-format
+msgid "%1 - %2"
+msgstr "%1 - %2"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:472
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:483
 msgid "Organizing tracks"
 msgstr ""
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:474
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:485
 #, fuzzy
 #| msgid "Moving files to trash"
 msgid "Moving tracks"
 msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:478
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:489
 #, fuzzy
 #| msgid "Deleting track(s) failed."
 msgid "Copying tracks"
 msgstr "ट्रयाकहरूको मेटाइ असफल भयो ।"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:480
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:491
 #, fuzzy
 #| msgid "Transcoding"
 msgid "Transcoding tracks"
 msgstr "ट्रान्सकोडिङ"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:537
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:548
 #, fuzzy, kde-format
 #| msgid "Cannot enter directory: '%1'"
 msgid "Could not create directory: %1"
 msgstr "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:614
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:625
 #, fuzzy, kde-format
 #| msgid "Transfer"
 msgid "Transferring: %1"
 msgstr "स्थानान्तर गर्नुहोस्"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:616
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:627
 #, fuzzy, kde-format
 #| msgid "Transcoding"
 msgid "Transcoding: %1"
 msgstr "ट्रान्सकोडिङ"
 
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:660
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:671
 #: core-impl/collections/support/FileCollectionLocation.cpp:99
 #, fuzzy, kde-format
 #| msgid "Remove Playlist"
 msgid "Removing: %1"
 msgstr "प्ले सूची हटाउनुहोस्"
 
-#: core-impl/collections/db/sql/SqlMeta.cpp:272
-#: covermanager/CoverManager.cpp:846 services/lastfm/meta/LastFmMeta.cpp:133
+#. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:21
+#. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
+#: core-impl/collections/db/sql/SqlCollection.cpp:81 rc.cpp:1611
+msgid "Organize Files"
+msgstr "फाइल सङ्गठित गर्नुहोस्"
+
+#: core-impl/collections/db/sql/SqlCollection.cpp:172
 #, kde-format
-msgid "%1 - %2"
-msgstr "%1 - %2"
+msgid ""
+"The amarok database reported the following errors:\n"
+"%1\n"
+"In most cases you will need to resolve these errors before Amarok will run "
+"properly."
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:134
+msgid "Database import requested"
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:240
+msgid "Scanning music"
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:276
+msgid ""
+"<p>The version of the 'amarokcollectionscanner' tool\n"
+"does not match your Amarok version.</p><p>Please note that Collection "
+"Scanning may not work correctly.</p>"
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:341
+#, kde-format
+msgid ""
+"The collection scanner reported the following errors:\n"
+"%1\n"
+"In most cases this means that not all of your tracks were imported.\n"
+"Further errors will only be reported on the console."
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:486
+#, kde-format
+msgid "Failed to write scanner batch file \"%1\""
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:494
+#, fuzzy
+#| msgid "Amarok is paused"
+msgid "Unable to start Amarok collection scanner."
+msgstr "अमारोक पज गरिएको छ"
+
+#: core-impl/collections/db/ScanManager.cpp:543
+#, fuzzy, kde-format
+#| msgid "Cannot enter directory: '%1'"
+msgid "Found one directory"
+msgid_plural "Found %1 directories"
+msgstr[0] "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
+msgstr[1] "डाइरेक्टरी प्रविष्ट गर्न सकिँदैन: '%1'"
+
+#: core-impl/collections/db/ScanManager.cpp:555
+#, kde-format
+msgid "Got directory \"%1\" from scanner."
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:596
+#, kde-format
+msgid "Aborting scanner with error: %1"
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:615
+msgid "Scanner aborted."
+msgstr ""
+
+#: core-impl/collections/db/ScanManager.cpp:712
+#, fuzzy
+#| msgid ""
+#| "<p>Sorry, the Collection Scan was aborted, since too many problems were "
+#| "encountered.</p>"
+msgid ""
+"The collection scan had to be aborted. Too many errors were encountered "
+"during the scan."
+msgstr ""
+"<p> माफ गर्नुहोस्, अति धेरै समस्याहरू हुँदाहुँदै पनि सङ्कलन स्क्यान परित्याग गरियो ।</p>"
+
+#: core-impl/collections/db/ScanResultProcessor.cpp:261
+msgctxt "The genre name for classical music"
+msgid "Classical"
+msgstr ""
 
 #: core-impl/collections/ipodcollection/handler/IpodHandler.cpp:290
 #, fuzzy
@@ -3985,7 +4003,19 @@ msgstr ""
 msgid "Remove empty folders?"
 msgstr "कम्प्युटर हटाउनुहोस्"
 
-#: core-impl/collections/support/CollectionManager.cpp:162
+#: core-impl/collections/support/TrashCollectionLocation.cpp:46
+#, fuzzy
+#| msgid "&Tracks"
+msgid "Trash"
+msgstr "ट्रयाक"
+
+#: core-impl/collections/support/TrashCollectionLocation.cpp:100
+#, fuzzy, kde-format
+#| msgid "Moving files to trash"
+msgid "Moving to trash: %1"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
+
+#: core-impl/collections/support/CollectionManager.cpp:169
 #, fuzzy
 #| msgid ""
 #| "<p>Amarok could not find any sound-engine plugins. Amarok is now updating "
@@ -4013,18 +4043,6 @@ msgstr ""
 "kbuildsycoca<br>$ amarok </pre>प्रयोग गरेर तपाईँको स्थापना निश्चित गर्नुहोस् । धेरै "
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
-
-#: core-impl/collections/support/TrashCollectionLocation.cpp:46
-#, fuzzy
-#| msgid "&Tracks"
-msgid "Trash"
-msgstr "ट्रयाक"
-
-#: core-impl/collections/support/TrashCollectionLocation.cpp:100
-#, fuzzy, kde-format
-#| msgid "Moving files to trash"
-msgid "Moving to trash: %1"
-msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
 
 #: core-impl/collections/umscollection/handler/UmsHandler.cpp:474
 #, fuzzy
@@ -8710,54 +8728,6 @@ msgstr ""
 msgid "Export `%1' preset"
 msgstr ""
 
-#: playlistgenerator/constraints/Checkpoint.cpp:61
-msgid "Checkpoint"
-msgstr ""
-
-#: playlistgenerator/constraints/Checkpoint.cpp:62
-#, fuzzy
-#| msgid "The position of the playlist window when Amarok is started."
-msgid "Fixes a track, album, or artist to a certain position in the playlist"
-msgstr "अमारोक सुरु हुँदा प्लेसूची सञ्झ्यालको स्थिति ।"
-
-#: playlistgenerator/constraints/Checkpoint.cpp:175
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgid "Checkpoint: %1"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: playlistgenerator/constraints/Checkpoint.cpp:183
-#: playlistgenerator/constraints/Checkpoint.cpp:191
-#: playlistgenerator/constraints/Checkpoint.cpp:203
-msgid "unassigned"
-msgstr ""
-
-#: playlistgenerator/constraints/Checkpoint.cpp:185
-#, fuzzy, kde-format
-#| msgid "1 track (%1)"
-#| msgid_plural "%1 tracks (%1)"
-msgid "\"%1\" (track) by %2"
-msgstr "१ ट्रयाक (%1)"
-
-#: playlistgenerator/constraints/Checkpoint.cpp:194
-#, fuzzy, kde-format
-#| msgid "%1 by %2"
-msgid "\"%1\" (album) by %2"
-msgstr "%2 द्वारा %1"
-
-#: playlistgenerator/constraints/Checkpoint.cpp:196
-#, fuzzy, kde-format
-#| msgid "%1 album"
-#| msgid_plural "%1 albums"
-msgid "\"%1\" (album)"
-msgstr "%1 एल्बम"
-
-#: playlistgenerator/constraints/Checkpoint.cpp:205
-#, fuzzy, kde-format
-#| msgid "Artist"
-msgid "\"%1\" (artist)"
-msgstr "कलाकार"
-
 #: playlistgenerator/constraints/PlaylistDuration.cpp:58
 #, fuzzy
 #| msgid "Playlist-Window Options"
@@ -9181,6 +9151,54 @@ msgstr "प्ले गणना"
 #| msgid "Label"
 msgid "label"
 msgstr "लेबुल"
+
+#: playlistgenerator/constraints/Checkpoint.cpp:61
+msgid "Checkpoint"
+msgstr ""
+
+#: playlistgenerator/constraints/Checkpoint.cpp:62
+#, fuzzy
+#| msgid "The position of the playlist window when Amarok is started."
+msgid "Fixes a track, album, or artist to a certain position in the playlist"
+msgstr "अमारोक सुरु हुँदा प्लेसूची सञ्झ्यालको स्थिति ।"
+
+#: playlistgenerator/constraints/Checkpoint.cpp:178
+#, fuzzy, kde-format
+#| msgid "<b>%1</b> by <b>%2</b>"
+msgid "Checkpoint: %1"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: playlistgenerator/constraints/Checkpoint.cpp:186
+#: playlistgenerator/constraints/Checkpoint.cpp:194
+#: playlistgenerator/constraints/Checkpoint.cpp:206
+msgid "unassigned"
+msgstr ""
+
+#: playlistgenerator/constraints/Checkpoint.cpp:188
+#, fuzzy, kde-format
+#| msgid "1 track (%1)"
+#| msgid_plural "%1 tracks (%1)"
+msgid "\"%1\" (track) by %2"
+msgstr "१ ट्रयाक (%1)"
+
+#: playlistgenerator/constraints/Checkpoint.cpp:197
+#, fuzzy, kde-format
+#| msgid "%1 by %2"
+msgid "\"%1\" (album) by %2"
+msgstr "%2 द्वारा %1"
+
+#: playlistgenerator/constraints/Checkpoint.cpp:199
+#, fuzzy, kde-format
+#| msgid "%1 album"
+#| msgid_plural "%1 albums"
+msgid "\"%1\" (album)"
+msgstr "%1 एल्बम"
+
+#: playlistgenerator/constraints/Checkpoint.cpp:208
+#, fuzzy, kde-format
+#| msgid "Artist"
+msgid "\"%1\" (artist)"
+msgstr "कलाकार"
 
 #: playlistmanager/PlaylistManager.cpp:278
 #, fuzzy

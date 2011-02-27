@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-26 03:41+0100\n"
+"POT-Creation-Date: 2011-02-27 03:40+0100\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2722,7 +2722,7 @@ msgid ""
 msgstr ""
 "केडीई मेल अहिले अफलाईन मोडमा छ, तपाईँ अनलाईनमा नगएसम्म सन्देश प्रेषण-मञ्जूषामा राखिनेछ ।"
 
-#: kmcomposewin.cpp:2385 kmkernel.cpp:964
+#: kmcomposewin.cpp:2385 kmkernel.cpp:988
 msgid "Online/Offline"
 msgstr "अनलाइन/अफलाइन"
 
@@ -3226,40 +3226,78 @@ msgstr ""
 "\"%1\" लाई पुन: नामकरण गर्नुहोस्:\n"
 "(स्वत: नामकरणका लागि फिल्ड खाली छोड्नुहोस्)"
 
-#: kmkernel.cpp:892
+#: kmkernel.cpp:256
+msgid ""
+"<b>Thanks for using KMail2!</b><br/><p>KMail2 uses a new storage technology "
+"that requires migration of your current KMail data and configuration.\n"
+"<p>The conversion process can take a lot of time (depending on the amount of "
+"email you have) and it <emph>must not be interrupted</emph>.</p>\n"
+"<p>You can:</p><ul><li>Migrate now (be prepared to wait)</li><li>Skip the "
+"migration and start with fresh data and configuration</li><li>Cancel and "
+"exit KMail2.</li></ul><p><a href=\"http://userbase.kde.org/Akonadi\">More "
+"Information...</a></p>"
+msgstr ""
+
+#: kmkernel.cpp:265
+#, fuzzy
+#| msgid "KMail Question"
+msgid "KMail Migration"
+msgstr "केडीई मेल प्रश्न"
+
+#: kmkernel.cpp:265
+msgid "Migrate Now"
+msgstr ""
+
+#: kmkernel.cpp:265
+msgid "Skip Migration"
+msgstr ""
+
+#: kmkernel.cpp:298
+msgid ""
+"Migration to KMail 2 failed. In case you want to try again, run 'kmail-"
+"migrator --interactive' manually."
+msgstr ""
+
+#: kmkernel.cpp:299
+#, fuzzy
+#| msgid "Migrate Mail Files?"
+msgid "Migration Failed"
+msgstr "मेल फाइल सार्नुहोस्?"
+
+#: kmkernel.cpp:916
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr "केडीई मेल अफलाइनाम सेट हुनेछ; सबै सञ्जाल कार्य निलम्बन हुन्छन्"
 
-#: kmkernel.cpp:911
+#: kmkernel.cpp:935
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr "केडीई मेल अनलाइनमा सेट हुनेछ; सबै सञ्जाल कार्य पुन: निरन्तर हुनेछन्"
 
-#: kmkernel.cpp:962
+#: kmkernel.cpp:986
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr "के मेल हाल अफलाइन मोडमा छ । कसरी तपाईँ अगाडि बढ्न चाहनुहुन्छ?"
 
-#: kmkernel.cpp:965 kmmainwidget.cpp:2408
+#: kmkernel.cpp:989 kmmainwidget.cpp:2408
 msgid "Work Online"
 msgstr "अनलाइनमा कार्य कार्य गर्नुहोस्"
 
-#: kmkernel.cpp:966 kmmainwidget.cpp:2404
+#: kmkernel.cpp:990 kmmainwidget.cpp:2404
 msgid "Work Offline"
 msgstr "अफलाइनमा कार्य गर्नुहोस्"
 
-#: kmkernel.cpp:1064
+#: kmkernel.cpp:1088
 #, kde-format
 msgid ""
 "Failed to open autosave file at %1.\n"
 "Reason: %2"
 msgstr ""
 
-#: kmkernel.cpp:1066
+#: kmkernel.cpp:1090
 #, fuzzy
 #| msgid "Autosaving Failed"
 msgid "Opening Autosave File Failed"
 msgstr "स्वत: बचत असफल"
 
-#: kmkernel.cpp:1562
+#: kmkernel.cpp:1586
 #, fuzzy, kde-format
 msgid "This identity has been changed to use the default transport:"
 msgid_plural ""
@@ -3267,7 +3305,7 @@ msgid_plural ""
 msgstr[0] "पूर्वनिर्धारित पारवाहन प्रयोग गर्न यो पहिचान परिवर्तन गरिएको छ:"
 msgstr[1] "पूर्वनिर्धारित पारवाहन प्रयोग गर्नि %1पहिचान परिवर्तन गरिएको छ:"
 
-#: kmkernel.cpp:1585
+#: kmkernel.cpp:1609
 #, fuzzy, kde-format
 msgid "This identity has been changed to use the modified transport:"
 msgid_plural ""
@@ -3275,11 +3313,11 @@ msgid_plural ""
 msgstr[0] "यो पहिचानलाई परिमार्जित पारवाहन प्रयोग गर्न परिवर्तन गरिएको छ:"
 msgstr[1] "ति %1 पहिचानहरूलाई परिमार्जित पारवाहन प्रयोग गर्न परिवर्तन गरिएको छ:"
 
-#: kmkernel.cpp:1599
+#: kmkernel.cpp:1623
 msgid "Sending messages"
 msgstr "सन्देश पठाउदैछ"
 
-#: kmkernel.cpp:1600
+#: kmkernel.cpp:1624
 #, fuzzy
 #| msgid "Initiating sender process..."
 msgid "Initiating sending process..."
@@ -4171,7 +4209,7 @@ msgstr "फोल्डर %1 का गुण"
 msgid "New &Window"
 msgstr "नयाँ सञ्झ्याल"
 
-#: kmmainwin.cpp:192
+#: kmmainwin.cpp:187
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Starting..."
@@ -9533,9 +9571,6 @@ msgstr ""
 #~ msgstr ""
 #~ "सन्देशको %1 भाग गुप्तिकृत गरिएको छ । के तपाईँ बचत गर्दा गुप्तिकरण राख्न चाहनुहुन्छ?"
 
-#~ msgid "KMail Question"
-#~ msgstr "केडीई मेल प्रश्न"
-
 #~ msgid "Keep Encryption"
 #~ msgstr "गुप्तिकरण राख्नुहोस्"
 
@@ -14257,9 +14292,6 @@ msgstr ""
 #~ "<qt>फोल्डर <i>%4</i> अवस्थित छ । %1 ले अहिले यसका सन्देशका लागि <i>%5</i> फोल्डर "
 #~ "प्रयोग गर्छ । %2 ले तपाईँका लागि <i>%6</i> का सामाग्री यो फोल्डरमा सार्न सक्छ "
 #~ "।<p><strong>के तपाईँ %3 लाई मेल फाइलमा अहिले सार्न चाहनुहुन्छ?</strong></qt>"
-
-#~ msgid "Migrate Mail Files?"
-#~ msgstr "मेल फाइल सार्नुहोस्?"
 
 #~ msgctxt "View->"
 #~ msgid "&Headers"
