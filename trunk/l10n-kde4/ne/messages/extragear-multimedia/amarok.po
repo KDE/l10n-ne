@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-28 03:30+0200\n"
+"POT-Creation-Date: 2011-04-01 03:35+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -22,6 +22,88 @@ msgstr ""
 #, fuzzy
 #| msgid "No track playing"
 msgid "Now playing"
+msgstr "कुनै ट्रयाक प्ले भएको छैन"
+
+#: EngineController.cpp:267
+#, fuzzy
+#| msgid ""
+#| "<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to "
+#| "choose a different engine from the <i>Configure Dialog</i>, or examine "
+#| "the installation of the multimedia-framework that the current engine "
+#| "uses. <p>You may find useful information in the <i>FAQ</i> section of the "
+#| "<i>Amarok HandBook</i>."
+msgid ""
+"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
+"the installation of the backend that phonon uses.</p><p>You may find useful "
+"information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
+msgstr ""
+"<p>%1 ले यसले <b>MP3 फाइल</b> बज्न सक्दैन भन्ने दावी गर्दछ ।<p>तपाईँ <i>संवाद कन्फिगर "
+"गर्नुहोस्</i>बाट विभिन्न इन्जिन छनौट गर्न सक्नुहुन्छ, वा मल्टिमिडिया-फ्रेमवर्कको स्थापना "
+"जाँच गर्न सक्नुहुन्छ जुन हालको इन्जिनले प्रयोग गर्दछ । <p>तपाईँ <i>अमारोक हातेपुस्तिका</"
+"i>को <i>FAQ</i> सेक्सनमा उपयोगी सूचना फेला पार्न सक्नुहुन्छ</p> ।."
+
+#: EngineController.cpp:288
+#, fuzzy
+#| msgid "No MP3 Support"
+msgid "Install MP3 Support"
+msgstr "MP3 समर्थन छैन"
+
+#: EngineController.cpp:290
+#, fuzzy
+#| msgid "Amarok currently cannot play MP3 files."
+msgid ""
+"Amarok currently cannot play MP3 files. Do you want to install support for "
+"MP3?"
+msgstr "अमारोकले हालै MP3 फाइलहरू प्ले गर्न सक्दैन ।"
+
+#: EngineController.cpp:291
+msgid "No MP3 Support"
+msgstr "MP3 समर्थन छैन"
+
+#: EngineController.cpp:857
+#, fuzzy
+#| msgid "Pre-amp"
+msgid "Preamp"
+msgstr "Pre-amp"
+
+#: EngineController.cpp:1155
+msgid "Too many errors encountered in playlist. Playback stopped."
+msgstr ""
+
+#: EngineController.cpp:1373
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1376
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1380
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1385
+#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:152
+msgid "Unknown track"
+msgstr "अज्ञात ट्रयाक"
+
+#: EngineController.cpp:1392
+#, fuzzy, kde-format
+#| msgid "<b>%1</b> by <b>%2</b>"
+msgctxt "track from source"
+msgid "from <b>%1</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: EngineController.cpp:1403 context/applets/labels/LabelsApplet.cpp:194
+#: context/engines/current/CurrentEngine.cpp:136 mac/GrowlInterface.cpp:43
+#: widgets/Osd.cpp:623
+msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
 #: rc.cpp:1
@@ -5942,67 +6024,6 @@ msgstr ""
 msgid "three months ago"
 msgstr "एक मिनेट अघि"
 
-#: browsers/CollectionTreeView.cpp:250 configdialog/ConfigDialog.cpp:59
-msgid "Collection"
-msgstr "सङ्कलन"
-
-#: browsers/CollectionTreeView.cpp:273 browsers/filebrowser/FileView.cpp:134
-#, fuzzy
-#| msgid "&Copy Files to Collection..."
-msgid "Copy to Collection"
-msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:281 browsers/filebrowser/FileView.cpp:125
-#, fuzzy
-#| msgid "&Move Files to Collection..."
-msgid "Move to Collection"
-msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:542 services/lastfm/LastFmTreeView.cpp:201
-#, fuzzy
-#| msgid "&Configure..."
-msgid "More..."
-msgstr "कन्फिगर गर्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:846 browsers/filebrowser/FileView.cpp:396
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
-#: context/applets/albums/AlbumsView.cpp:240
-#: services/lastfm/LastFmTreeView.cpp:111
-#, fuzzy
-#| msgid "Add to Playlist"
-msgid "&Add to Playlist"
-msgstr "प्ले सूचीमा थप्नुहोस्"
-
-#: browsers/CollectionTreeView.cpp:855 browsers/filebrowser/FileView.cpp:405
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
-#: context/applets/albums/AlbumsView.cpp:241
-#: services/lastfm/LastFmTreeView.cpp:120
-#, fuzzy
-#| msgid "Repeat Playlist"
-msgctxt "Replace the currently loaded tracks with these"
-msgid "&Replace Playlist"
-msgstr "प्ले सूची दोहोर्याउनुहोस्"
-
-#: browsers/CollectionTreeView.cpp:874 browsers/filebrowser/FileView.cpp:414
-#, fuzzy
-#| msgid "Edit Track &Information..."
-#| msgid_plural "Edit &Information for %1 Tracks..."
-msgid "&Edit Track Details"
-msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:909
-#, fuzzy
-#| msgid "Organize Files"
-msgctxt "Organize Files"
-msgid "Organize Files"
-msgstr "फाइल सङ्गठित गर्नुहोस्"
-
-#: browsers/CollectionTreeView.cpp:1079
-#, fuzzy
-#| msgid "Selected Tracks"
-msgid "Delete Tracks"
-msgstr "चयन गरिएको ट्रयाक"
-
 #: browsers/InfoProxy.cpp:164 browsers/filebrowser/FileBrowser.cpp:395
 #, fuzzy
 #| msgid "Hostname:"
@@ -6162,6 +6183,46 @@ msgstr ""
 #| msgid "Update"
 msgid "Places"
 msgstr "अद्यावधिक गर्नुहोस्"
+
+#: browsers/filebrowser/FileView.cpp:125 browsers/CollectionTreeView.cpp:281
+#, fuzzy
+#| msgid "&Move Files to Collection..."
+msgid "Move to Collection"
+msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
+
+#: browsers/filebrowser/FileView.cpp:134 browsers/CollectionTreeView.cpp:273
+#, fuzzy
+#| msgid "&Copy Files to Collection..."
+msgid "Copy to Collection"
+msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
+
+#: browsers/filebrowser/FileView.cpp:396
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
+#: browsers/CollectionTreeView.cpp:846
+#: context/applets/albums/AlbumsView.cpp:240
+#: services/lastfm/LastFmTreeView.cpp:111
+#, fuzzy
+#| msgid "Add to Playlist"
+msgid "&Add to Playlist"
+msgstr "प्ले सूचीमा थप्नुहोस्"
+
+#: browsers/filebrowser/FileView.cpp:405
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
+#: browsers/CollectionTreeView.cpp:855
+#: context/applets/albums/AlbumsView.cpp:241
+#: services/lastfm/LastFmTreeView.cpp:120
+#, fuzzy
+#| msgid "Repeat Playlist"
+msgctxt "Replace the currently loaded tracks with these"
+msgid "&Replace Playlist"
+msgstr "प्ले सूची दोहोर्याउनुहोस्"
+
+#: browsers/filebrowser/FileView.cpp:414 browsers/CollectionTreeView.cpp:874
+#, fuzzy
+#| msgid "Edit Track &Information..."
+#| msgid_plural "Edit &Information for %1 Tracks..."
+msgid "&Edit Track Details"
+msgstr "ट्रयाक सूचना सम्पादन गर्नुहोस्..."
 
 #: browsers/filebrowser/FileView.cpp:569
 #, fuzzy
@@ -6677,6 +6738,29 @@ msgid_plural "%1 tracks"
 msgstr[0] "१ ट्रयाक"
 msgstr[1] "१ ट्रयाक"
 
+#: browsers/CollectionTreeView.cpp:250 configdialog/ConfigDialog.cpp:59
+msgid "Collection"
+msgstr "सङ्कलन"
+
+#: browsers/CollectionTreeView.cpp:542 services/lastfm/LastFmTreeView.cpp:201
+#, fuzzy
+#| msgid "&Configure..."
+msgid "More..."
+msgstr "कन्फिगर गर्नुहोस्..."
+
+#: browsers/CollectionTreeView.cpp:909
+#, fuzzy
+#| msgid "Organize Files"
+msgctxt "Organize Files"
+msgid "Organize Files"
+msgstr "फाइल सङ्गठित गर्नुहोस्"
+
+#: browsers/CollectionTreeView.cpp:1079
+#, fuzzy
+#| msgid "Selected Tracks"
+msgid "Delete Tracks"
+msgstr "चयन गरिएको ट्रयाक"
+
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 #, fuzzy
 #| msgid "Password:"
@@ -7042,12 +7126,6 @@ msgstr "लेबुल"
 #| msgid "Re&download"
 msgid "Reload"
 msgstr "पुन: डाउनलोड गर्नुहोस्"
-
-#: context/applets/labels/LabelsApplet.cpp:194
-#: context/engines/current/CurrentEngine.cpp:136 mac/GrowlInterface.cpp:43
-#: widgets/Osd.cpp:623 EngineController.cpp:1404
-msgid "No track playing"
-msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
 #: context/applets/labels/LabelsApplet.cpp:514
 #, fuzzy
@@ -8612,11 +8690,6 @@ msgstr "मिडिया यन्त्र प्ले सूची बन�
 msgctxt "Podcasts on a media device"
 msgid "Podcasts on %1"
 msgstr "पोडकास्ट"
-
-#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:152
-#: EngineController.cpp:1386
-msgid "Unknown track"
-msgstr "अज्ञात ट्रयाक"
 
 #: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:263
 #, fuzzy
@@ -13165,14 +13238,6 @@ msgstr "छिमेकी रेडियो"
 msgid "Last.fm: Love"
 msgstr "Last.fm रेडियो"
 
-#: services/lastfm/ScrobblerAdapter.cpp:226
-#: services/lastfm/LastFmService.cpp:570
-#, fuzzy, kde-format
-#| msgid "Selected Tracks"
-msgctxt "As in, lastfm"
-msgid "Loved Track: %1"
-msgstr "चयन गरिएको ट्रयाक"
-
 #: services/lastfm/SimilarArtistsAction.cpp:26
 #, fuzzy
 #| msgid "Similar Artists to %1"
@@ -13450,6 +13515,14 @@ msgstr "ट्याग"
 #: services/lastfm/LastFmService.cpp:534
 msgid "User"
 msgstr "प्रयोगकर्ता"
+
+#: services/lastfm/LastFmService.cpp:570
+#: services/lastfm/ScrobblerAdapter.cpp:226
+#, fuzzy, kde-format
+#| msgid "Selected Tracks"
+msgctxt "As in, lastfm"
+msgid "Loved Track: %1"
+msgstr "चयन गरिएको ट्रयाक"
 
 #: services/magnatune/MagnatuneAlbumDownloader.cpp:68
 #, fuzzy, kde-format
@@ -15506,77 +15579,6 @@ msgid ""
 "A music path, %1, is set in System Settings.\n"
 "Would you like to use that as a collection folder?"
 msgstr ""
-
-#: EngineController.cpp:267
-#, fuzzy
-#| msgid ""
-#| "<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to "
-#| "choose a different engine from the <i>Configure Dialog</i>, or examine "
-#| "the installation of the multimedia-framework that the current engine "
-#| "uses. <p>You may find useful information in the <i>FAQ</i> section of the "
-#| "<i>Amarok HandBook</i>."
-msgid ""
-"<p>Phonon claims it <b>cannot</b> play MP3 files. You may want to examine "
-"the installation of the backend that phonon uses.</p><p>You may find useful "
-"information in the <i>FAQ</i> section of the <i>Amarok Handbook</i>.</p>"
-msgstr ""
-"<p>%1 ले यसले <b>MP3 फाइल</b> बज्न सक्दैन भन्ने दावी गर्दछ ।<p>तपाईँ <i>संवाद कन्फिगर "
-"गर्नुहोस्</i>बाट विभिन्न इन्जिन छनौट गर्न सक्नुहुन्छ, वा मल्टिमिडिया-फ्रेमवर्कको स्थापना "
-"जाँच गर्न सक्नुहुन्छ जुन हालको इन्जिनले प्रयोग गर्दछ । <p>तपाईँ <i>अमारोक हातेपुस्तिका</"
-"i>को <i>FAQ</i> सेक्सनमा उपयोगी सूचना फेला पार्न सक्नुहुन्छ</p> ।."
-
-#: EngineController.cpp:288
-#, fuzzy
-#| msgid "No MP3 Support"
-msgid "Install MP3 Support"
-msgstr "MP3 समर्थन छैन"
-
-#: EngineController.cpp:290
-#, fuzzy
-#| msgid "Amarok currently cannot play MP3 files."
-msgid ""
-"Amarok currently cannot play MP3 files. Do you want to install support for "
-"MP3?"
-msgstr "अमारोकले हालै MP3 फाइलहरू प्ले गर्न सक्दैन ।"
-
-#: EngineController.cpp:291
-msgid "No MP3 Support"
-msgstr "MP3 समर्थन छैन"
-
-#: EngineController.cpp:858
-#, fuzzy
-#| msgid "Pre-amp"
-msgid "Preamp"
-msgstr "Pre-amp"
-
-#: EngineController.cpp:1156
-msgid "Too many errors encountered in playlist. Playback stopped."
-msgstr ""
-
-#: EngineController.cpp:1374
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
-
-#: EngineController.cpp:1377
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: EngineController.cpp:1381
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: EngineController.cpp:1393
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgctxt "track from source"
-msgid "from <b>%1</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
 #: MainWindow.cpp:271
 #, fuzzy
