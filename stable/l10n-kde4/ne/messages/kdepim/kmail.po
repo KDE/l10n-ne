@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-20 04:02+0200\n"
+"POT-Creation-Date: 2011-04-27 15:24+0200\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1428,7 +1428,7 @@ msgstr "थप्नुहोस्..."
 
 #. i18n: file: ui/identitypage.ui:66
 #. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
-#: configuredialog.cpp:2529 configuredialog.cpp:2585 rc.cpp:459
+#: configuredialog.cpp:2529 configuredialog.cpp:2585 rc.cpp:512
 msgid "Remo&ve"
 msgstr "हटाउनुहोस्"
 
@@ -1453,7 +1453,7 @@ msgstr ""
 #. i18n: file: ui/identitypage.ui:40
 #. i18n: ectx: property (text), widget (QPushButton, mModifyButton)
 #: configuredialog.cpp:2586 simplestringlisteditor.cpp:100 rc.cpp:417
-#: rc.cpp:447
+#: rc.cpp:500
 msgid "&Modify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
@@ -1593,7 +1593,7 @@ msgstr "यो विकल्पलाई dirmngr >= 0.9.0 आवश्यक �
 
 #. i18n: file: ui/smimeconfiguration.ui:182
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: configuredialog.cpp:3526 rc.cpp:684
+#: configuredialog.cpp:3526 rc.cpp:737
 msgid "no proxy"
 msgstr "प्रोक्सी होइन"
 
@@ -4675,13 +4675,137 @@ msgstr "अवस्थित परिचय नक्कल गर्नुह
 msgid "&Existing identities:"
 msgstr "अवस्थित परिचय:"
 
+#: searchwindow.cpp:91
+msgid "Find Messages"
+msgstr "सन्देश फेला पार्नुहोस्"
+
+#: searchwindow.cpp:94
+#, fuzzy
+#| msgid "&Search"
+msgctxt "@action:button Search for messages"
+msgid "&Search"
+msgstr "खोज्नुहोस्"
+
+#: searchwindow.cpp:110
+msgid "Search in &all local folders"
+msgstr "सबै स्थानीय फोल्डरमा खोजी गर्नुहोस्"
+
+#: searchwindow.cpp:114
+msgid "Search &only in:"
+msgstr "यसमा मात्र खोजी गर्नुहोस्:"
+
+#: searchwindow.cpp:123
+msgid "I&nclude sub-folders"
+msgstr "सब-फोल्डर समावेश गर्नुहोस्"
+
+#: searchwindow.cpp:221
+msgid "Search folder &name:"
+msgstr "फोल्डर नाम खोजी गर्नुहोस्:"
+
+#: searchwindow.cpp:235 searchwindow.cpp:451
+msgid "Last Search"
+msgstr "अन्तिम खोजी"
+
+#: searchwindow.cpp:245
+#, fuzzy
+#| msgid "Delete Search"
+msgid "Op&en Search Folder"
+msgstr "मेट्नलाई खोजी गर्नुहोस्"
+
+#: searchwindow.cpp:254
+#, fuzzy
+#| msgid "Open Message"
+msgid "Open &Message"
+msgstr "सन्देश खोल्नुहोस्"
+
+#: searchwindow.cpp:265
+msgid "AMiddleLengthText..."
+msgstr "AMiddleLengthText..."
+
+#: searchwindow.cpp:266
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status finished searching."
+msgid "Ready."
+msgstr "तयार ।"
+
+#: searchwindow.cpp:321
+#, fuzzy
+#| msgid "&Inline..."
+msgctxt "@action:inmenu Forward message inline."
+msgid "&Inline..."
+msgstr "इनलाइन..."
+
+#: searchwindow.cpp:326
+msgctxt "Message->Forward->"
+msgid "As &Attachment..."
+msgstr "सङ्लग्नताका रूपमा..."
+
+#: searchwindow.cpp:340
+msgid "Save Attachments..."
+msgstr "सङ्लग्नता बचत गर्नुहोस्..."
+
+#: searchwindow.cpp:346
+msgid "Clear Selection"
+msgstr "चयन खाली गर्नुहोस्"
+
+#: searchwindow.cpp:404
+#, fuzzy
+msgctxt "Search finished."
+msgid "Done"
+msgstr "पूरा भयो"
+
+#: searchwindow.cpp:405 searchwindow.cpp:412
+#, kde-format
+msgid "%1 match"
+msgid_plural "%1 matches"
+msgstr[0] "%1 मिल्दो"
+msgstr[1] "%1 मिल्छ"
+
+#: searchwindow.cpp:407
+#, fuzzy
+msgid "Search canceled"
+msgstr "खोजी रद्द गरियो"
+
+#: searchwindow.cpp:408
+#, fuzzy, kde-format
+msgid "%1 match so far"
+msgid_plural "%1 matches so far"
+msgstr[0] "%2 मा %1 मिल्यो"
+msgstr[1] "%2 मा %1 मिल्यो"
+
+#: searchwindow.cpp:413
+#, fuzzy, kde-format
+msgid "Searching in %1"
+msgstr "%1 मा खोजी गर्दैछ । %2 खोजीयो"
+
+#: searchwindow.cpp:647
+msgid ""
+"There was a problem renaming your search folder. A common reason for this is "
+"that another search folder with the same name already exists."
+msgstr ""
+
+#: searchwindow.cpp:753
+#, fuzzy, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "पठाउनु पर्ने सन्देश"
+msgstr[1] "पठाउनु पर्ने सन्देश"
+
+#: searchwindow.cpp:756
+#, fuzzy, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "सन्देश मेट्नुहोस्"
+msgstr[1] "सन्देश मेट्नुहोस्"
+
 #: simplestringlisteditor.cpp:58
 msgid "New entry:"
 msgstr "नयाँ प्रविष्टि:"
 
 #. i18n: file: ui/identitypage.ui:27
 #. i18n: ectx: property (text), widget (QPushButton, mButtonAdd)
-#: simplestringlisteditor.cpp:77 rc.cpp:441
+#: simplestringlisteditor.cpp:77 rc.cpp:494
 msgid "&Add..."
 msgstr "थप्नुहोस्..."
 
@@ -4825,130 +4949,6 @@ msgstr "तस्वीर छैन"
 #: xfaceconfigurator.cpp:278 xfaceconfigurator.cpp:287
 msgid "No picture set for your address book entry."
 msgstr "तपाईँको ठेगाना पुस्तक प्रविष्टिका लागि तस्वीर सेट गरिएको छैन ।"
-
-#: searchwindow.cpp:91
-msgid "Find Messages"
-msgstr "सन्देश फेला पार्नुहोस्"
-
-#: searchwindow.cpp:94
-#, fuzzy
-#| msgid "&Search"
-msgctxt "@action:button Search for messages"
-msgid "&Search"
-msgstr "खोज्नुहोस्"
-
-#: searchwindow.cpp:110
-msgid "Search in &all local folders"
-msgstr "सबै स्थानीय फोल्डरमा खोजी गर्नुहोस्"
-
-#: searchwindow.cpp:114
-msgid "Search &only in:"
-msgstr "यसमा मात्र खोजी गर्नुहोस्:"
-
-#: searchwindow.cpp:123
-msgid "I&nclude sub-folders"
-msgstr "सब-फोल्डर समावेश गर्नुहोस्"
-
-#: searchwindow.cpp:221
-msgid "Search folder &name:"
-msgstr "फोल्डर नाम खोजी गर्नुहोस्:"
-
-#: searchwindow.cpp:235 searchwindow.cpp:451
-msgid "Last Search"
-msgstr "अन्तिम खोजी"
-
-#: searchwindow.cpp:245
-#, fuzzy
-#| msgid "Delete Search"
-msgid "Op&en Search Folder"
-msgstr "मेट्नलाई खोजी गर्नुहोस्"
-
-#: searchwindow.cpp:254
-#, fuzzy
-#| msgid "Open Message"
-msgid "Open &Message"
-msgstr "सन्देश खोल्नुहोस्"
-
-#: searchwindow.cpp:265
-msgid "AMiddleLengthText..."
-msgstr "AMiddleLengthText..."
-
-#: searchwindow.cpp:266
-#, fuzzy
-#| msgid "Ready."
-msgctxt "@info:status finished searching."
-msgid "Ready."
-msgstr "तयार ।"
-
-#: searchwindow.cpp:321
-#, fuzzy
-#| msgid "&Inline..."
-msgctxt "@action:inmenu Forward message inline."
-msgid "&Inline..."
-msgstr "इनलाइन..."
-
-#: searchwindow.cpp:326
-msgctxt "Message->Forward->"
-msgid "As &Attachment..."
-msgstr "सङ्लग्नताका रूपमा..."
-
-#: searchwindow.cpp:340
-msgid "Save Attachments..."
-msgstr "सङ्लग्नता बचत गर्नुहोस्..."
-
-#: searchwindow.cpp:346
-msgid "Clear Selection"
-msgstr "चयन खाली गर्नुहोस्"
-
-#: searchwindow.cpp:404
-#, fuzzy
-msgctxt "Search finished."
-msgid "Done"
-msgstr "पूरा भयो"
-
-#: searchwindow.cpp:405 searchwindow.cpp:412
-#, kde-format
-msgid "%1 match"
-msgid_plural "%1 matches"
-msgstr[0] "%1 मिल्दो"
-msgstr[1] "%1 मिल्छ"
-
-#: searchwindow.cpp:407
-#, fuzzy
-msgid "Search canceled"
-msgstr "खोजी रद्द गरियो"
-
-#: searchwindow.cpp:408
-#, fuzzy, kde-format
-msgid "%1 match so far"
-msgid_plural "%1 matches so far"
-msgstr[0] "%2 मा %1 मिल्यो"
-msgstr[1] "%2 मा %1 मिल्यो"
-
-#: searchwindow.cpp:413
-#, fuzzy, kde-format
-msgid "Searching in %1"
-msgstr "%1 मा खोजी गर्दैछ । %2 खोजीयो"
-
-#: searchwindow.cpp:647
-msgid ""
-"There was a problem renaming your search folder. A common reason for this is "
-"that another search folder with the same name already exists."
-msgstr ""
-
-#: searchwindow.cpp:753
-#, fuzzy, kde-format
-msgid "Copy Message"
-msgid_plural "Copy %1 Messages"
-msgstr[0] "पठाउनु पर्ने सन्देश"
-msgstr[1] "पठाउनु पर्ने सन्देश"
-
-#: searchwindow.cpp:756
-#, fuzzy, kde-format
-msgid "Cut Message"
-msgid_plural "Cut %1 Messages"
-msgstr[0] "सन्देश मेट्नुहोस्"
-msgstr[1] "सन्देश मेट्नुहोस्"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5744,9 +5744,166 @@ msgstr "विस्तृत नयाँ मेल सूचना"
 msgid "Other Actio&ns..."
 msgstr "अन्य कार्य"
 
+#. i18n: file: ui/composercryptoconfiguration.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, optionsGroup_2)
+#: rc.cpp:438
+msgid "Signing"
+msgstr "साइनिङ"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:22
+#. i18n: ectx: property (text), widget (QCheckBox, mAutoSignature)
+#: rc.cpp:441
+msgid "&Automatically sign messages"
+msgstr "स्वत: सन्देशमा चिन्ह लगाउनुहोस्"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:25
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mAutoSignature)
+#: rc.cpp:444
+msgid ""
+"When this option is enabled, all messages you send will be signed by "
+"default; of course, it is still possible to disable signing for each message "
+"individually."
+msgstr ""
+"यो विकल्प सक्षम पारिएमा, तपाईँले पठाएका सन्देश पूर्वनिर्धारित रूपमा चिन्ह लगाइने छन्; "
+"वास्तवमै, प्रत्येक सन्देशको साइनिङ एकल रूपमा अक्षम पार्न यो अझै पनि सम्भव छ ।"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:35
+#. i18n: ectx: property (title), widget (QGroupBox, optionsGroup)
+#: rc.cpp:447
+msgid "Encrypting"
+msgstr "गुप्तिकरण गर्दैछ"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:41
+#. i18n: ectx: property (text), widget (QCheckBox, mEncToSelf)
+#: rc.cpp:450
+msgid ""
+"When encrypting emails, always also encr&ypt to the certificate of my own "
+"identity"
+msgstr ""
+
+#. i18n: file: ui/composercryptoconfiguration.ui:44
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mEncToSelf)
+#: rc.cpp:453
+msgid ""
+"When this option is enabled, the message/file will not only be encrypted "
+"with the receiver's public key, but also with your key. This will enable you "
+"to decrypt the message/file at a later time. This is generally a good idea."
+msgstr ""
+"यो विकल्प सक्षम पारिएमा, सन्देश/फाइल प्रापकको सार्वजनिक कुञ्जीमा मात्रै गुप्तिकरण नगरि "
+"तपाईँको कुञ्जीमा पनि गुप्तिकरण गरिने छ । पछिका समयमा सन्देश/फाइल गुप्तिकरणबाट उल्टाउन "
+"तपाईँले यसलाई सक्षम पार्नुहुनेछ । साधारणतया यो ठीक तरिका हो ।"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:51
+#. i18n: ectx: property (text), widget (QCheckBox, mShowEncryptionResult)
+#: rc.cpp:456
+msgid "Show s&igned/encrypted text after composing"
+msgstr "कम्पोज गरेपछि चिन्ह लगाइएका/गुप्तिकृत पाठ देखाउनुहोस्"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:54
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowEncryptionResult)
+#: rc.cpp:459
+msgid ""
+"When this option is enabled, the signed/encrypted text will be shown in a "
+"separate window, enabling you to know how it will look before it is sent. "
+"This is a good idea when you are verifying that your encryption system works."
+msgstr ""
+"यो विकल्प सक्षम पारिएमा, चिन्ह लगाइएको/गुप्तिकृत पाठ पृथक सञ्झ्यालमा देखिने छ, यसलाई "
+"पठाउनु भन्दा पहिले कसरी हेर्ने जान्न तपाईँलाई सक्षम पार्छ । तपाईँले गुप्तिकरण प्रणालीको "
+"कार्य गर्ने तरिका रुजु गर्दा यो ठीक तरिका हो ।"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, mStoreEncrypted)
+#: rc.cpp:462
+msgid "Store sent messages encry&pted"
+msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:67
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mStoreEncrypted)
+#: rc.cpp:465
+msgid "Check to store messages encrypted "
+msgstr "गुप्तिकृत सन्देश भण्डारण गर्न चेक गर्नुहोस्"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:75
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mStoreEncrypted)
+#: rc.cpp:468
+#, fuzzy
+#| msgid ""
+#| "<qt>\n"
+#| "<h1>Store Messages Encrypted</h1>\n"
+#| "When this box is checked, sent messages are stored encrypted like they "
+#| "were sent. This is not recommended, as you will not be able to read the "
+#| "messages any longer if a necessary certificate expires.\n"
+#| "<p>\n"
+#| "However, there may be local rules that require you to turn this option "
+#| "on. When in doubt, check with your local administrator.\n"
+#| "</qt>"
+msgid ""
+"<qt>\n"
+"<h1>Store Messages Encrypted</h1>\n"
+"When this box is checked, sent messages are stored encrypted like they were "
+"sent. This is not recommended, as you will not be able to read the messages "
+"any longer if a necessary certificate expires.\n"
+"<p>\n"
+"However, there may be local rules that require you to turn this option on. "
+"When in doubt, check with your local administrator.\n"
+"</p></qt>"
+msgstr ""
+"<qt>\n"
+"<h1>गुप्तिकृत सन्देश भण्डारण गर्नुहोस्</h1>\n"
+"यो बाकस चिनो गरिएमा, सन्देशलाई पठाइएका रूपमा गुप्तिकृत गरि भण्डारण गरिएका छन् । यो "
+"सिफारिस गरिएको छैन, त्यस्तै तपाईँले आवश्यक प्रमाणपत्र खारेज हुने हुनाले सन्देश लामो समयसम्म "
+"पढ्न सक्नुहुने छैन ।\n"
+"<p>\n"
+"तापनि, तपाईँलाई त्यहाँ यो विकल्प सुरु गर्न स्थानीय नियम हुन सक्छन् । दुविधा भएमा, तपाईँको "
+"स्थानीय प्रशाषकमा जाँच गर्नुहोस् ।\n"
+"</qt>"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:82
+#. i18n: ectx: property (text), widget (QCheckBox, mShowKeyApprovalDlg)
+#: rc.cpp:476
+msgid "Always show the encryption keys &for approval"
+msgstr "प्रमाणीकरणका लागि गुप्तिकरण कुञ्जी सधैँ देखाउनुहोस्"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:85
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowKeyApprovalDlg)
+#: rc.cpp:479
+msgid ""
+"When this option is enabled, the application will always show you a list of "
+"public keys from which you can choose the one it will use for encryption. If "
+"it is off, the application will only show the dialog if it cannot find the "
+"right key or if there are several which could be used."
+msgstr ""
+"यो विकल्प सक्षम पार्दा, अनुप्रयोगले तपाईँलाई सधैँ सार्वजनिक कुञ्जीको सूची देखाउने छ जसबाट "
+"तपाईँले गुप्तिकरणका लागि प्रयोग हुने एउटा कुञ्जी रोज्न सक्नुहुन्छ । यो बन्द छ भने, अनुप्रयोगले "
+"दायाँ कुञ्जी फेला नपरेमा वा त्यहाँ प्रयोग हुनसक्ने धेरै कुञ्जी भएमा, संवाद मात्र देखाउछ ।"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:92
+#. i18n: ectx: property (text), widget (QCheckBox, mAutoEncrypt)
+#: rc.cpp:482
+msgid "Automatically encrypt &messages whenever possible"
+msgstr "सम्भव भएसम्म सन्देश स्वचालित रूपमा गुप्तिकरण गर्नुहोस्"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:95
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mAutoEncrypt)
+#: rc.cpp:485
+msgid ""
+"When this option is enabled, every message you send will be encrypted "
+"whenever encryption is possible and desired; of course, it is still possible "
+"to disable the automatic encryption for each message individually."
+msgstr ""
+"यो विकल्प सक्षम पारिएको छ भने, तपाईँले पठाएका सबै सन्देश गुप्तिकृत हुनेछन् तापनि गुप्तिकरण "
+"सम्भव र चाहाना गरिएको छ; वास्तवमा, अझै पनि प्रत्येक सन्देशलाई एकल रूपमा स्वचालित "
+"गुप्तिकरण अक्षम पार्न सम्भव छ ।"
+
+#. i18n: file: ui/composercryptoconfiguration.ui:102
+#. i18n: ectx: property (text), widget (QCheckBox, mNeverEncryptWhenSavingInDrafts)
+#: rc.cpp:488
+msgid "Never sign/encrypt when sa&ving as draft"
+msgstr "ड्राफ्टका रूपमा बचत गर्दा कहिल्यै पनि सङ्केत/गुप्तिकरण नगर्नुहोस्"
+
 #. i18n: file: ui/identitypage.ui:24
 #. i18n: ectx: property (toolTip), widget (QPushButton, mButtonAdd)
-#: rc.cpp:438
+#: rc.cpp:491
 #, fuzzy
 #| msgid "&Sender identity:"
 msgid "Add a new identity"
@@ -5754,14 +5911,14 @@ msgstr "प्रेषक परिचय:"
 
 #. i18n: file: ui/identitypage.ui:37
 #. i18n: ectx: property (toolTip), widget (QPushButton, mModifyButton)
-#: rc.cpp:444
+#: rc.cpp:497
 #, fuzzy
 msgid "Modify the selected identity"
 msgstr "सार्दै चयन गरिएको हो होइन"
 
 #. i18n: file: ui/identitypage.ui:50
 #. i18n: ectx: property (toolTip), widget (QPushButton, mRenameButton)
-#: rc.cpp:450
+#: rc.cpp:503
 #, fuzzy
 #| msgid "Remove Duplicate Messages"
 msgid "Rename the selected identity"
@@ -5769,13 +5926,13 @@ msgstr "नक्कल सन्देश हटाउनुहोस्"
 
 #. i18n: file: ui/identitypage.ui:53
 #. i18n: ectx: property (text), widget (QPushButton, mRenameButton)
-#: rc.cpp:453
+#: rc.cpp:506
 msgid "&Rename"
 msgstr "पुन: नामकरण गर्नुहोस्"
 
 #. i18n: file: ui/identitypage.ui:63
 #. i18n: ectx: property (toolTip), widget (QPushButton, mRemoveButton)
-#: rc.cpp:456
+#: rc.cpp:509
 #, fuzzy
 #| msgid "Remove Duplicate Messages"
 msgid "Remove the selected identity"
@@ -5783,19 +5940,19 @@ msgstr "नक्कल सन्देश हटाउनुहोस्"
 
 #. i18n: file: ui/identitypage.ui:76
 #. i18n: ectx: property (toolTip), widget (QPushButton, mSetAsDefaultButton)
-#: rc.cpp:462
+#: rc.cpp:515
 msgid "Use the selected identity by default"
 msgstr ""
 
 #. i18n: file: ui/identitypage.ui:79
 #. i18n: ectx: property (text), widget (QPushButton, mSetAsDefaultButton)
-#: rc.cpp:465
+#: rc.cpp:518
 msgid "Set as &Default"
 msgstr "पूर्वनिर्धारितका रूपमा सेट गर्नुहोस्"
 
 #. i18n: file: ui/miscpagemaintab.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, mEmptyFolderConfirmCheck)
-#: rc.cpp:468
+#: rc.cpp:521
 #, fuzzy
 #| msgctxt "Corresponds to Folder->Move All Messages to Trash"
 #| msgid "Ask for co&nfirmation before moving all messages to trash"
@@ -5805,13 +5962,13 @@ msgstr "सबै सन्देशलाई रद्दीटोकरीम�
 
 #. i18n: file: ui/miscpagemaintab.ui:26
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeImportantFromExpiry)
-#: rc.cpp:471
+#: rc.cpp:524
 msgid "E&xclude important messages from expiry"
 msgstr "म्याद समाप्त हुनबाट महत्वपूर्ण सन्देश हटाउनुहोस्"
 
 #. i18n: file: ui/miscpagemaintab.ui:39
 #. i18n: ectx: property (text), widget (QLabel, mLoopLabel)
-#: rc.cpp:474
+#: rc.cpp:527
 #, fuzzy
 #| msgctxt ""
 #| "to be continued with \"do not loop\", \"loop in current folder\", and "
@@ -5825,7 +5982,7 @@ msgstr "नपढिएका सन्देश फेला पार्ने
 
 #. i18n: file: ui/miscpagemaintab.ui:64
 #. i18n: ectx: property (whatsThis), widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:477
+#: rc.cpp:530
 msgctxt "what's this help"
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -5867,7 +6024,7 @@ msgstr ""
 
 #. i18n: file: ui/miscpagemaintab.ui:68
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:489
+#: rc.cpp:542
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Do not Loop"
@@ -5876,7 +6033,7 @@ msgstr "लुप नगर्नुहोस्"
 
 #. i18n: file: ui/miscpagemaintab.ui:73
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:492
+#: rc.cpp:545
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Loop in Current Folder"
@@ -5885,7 +6042,7 @@ msgstr "हालको फोल्डरमा लुप गर्नुहो
 
 #. i18n: file: ui/miscpagemaintab.ui:78
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:495
+#: rc.cpp:548
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Loop in All Folders"
@@ -5894,7 +6051,7 @@ msgstr "सबै फोल्डरमा लुप गर्नुहोस्
 
 #. i18n: file: ui/miscpagemaintab.ui:83
 #. i18n: ectx: property (text), item, widget (KComboBox, mLoopOnGotoUnread)
-#: rc.cpp:498
+#: rc.cpp:551
 #, fuzzy
 #| msgctxt "continuation of \"When trying to find unread messages:\""
 #| msgid "Loop in All Folders"
@@ -5903,7 +6060,7 @@ msgstr "सबै फोल्डरमा लुप गर्नुहोस्
 
 #. i18n: file: ui/miscpagemaintab.ui:97
 #. i18n: ectx: property (text), widget (QLabel, mEnterFolderLabel)
-#: rc.cpp:501
+#: rc.cpp:554
 #, fuzzy
 #| msgctxt ""
 #| "to be continued with \"jump to first new message\", \"jump to first "
@@ -5917,7 +6074,7 @@ msgstr "फोल्डरमा प्रविष्ट गर्दा:"
 
 #. i18n: file: ui/miscpagemaintab.ui:108
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:504
+#: rc.cpp:557
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to First Unread or New Message"
@@ -5926,7 +6083,7 @@ msgstr "पहिलो नपढिएको वा नयाँ सन्द�
 
 #. i18n: file: ui/miscpagemaintab.ui:113
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:507
+#: rc.cpp:560
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to Last Selected Message"
@@ -5935,7 +6092,7 @@ msgstr "अन्त्यमा चयन गरिएको सन्देश
 
 #. i18n: file: ui/miscpagemaintab.ui:118
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:510
+#: rc.cpp:563
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to First New Message"
@@ -5944,7 +6101,7 @@ msgstr "पहिलो नयाँ सन्देशमा जम्प ग�
 
 #. i18n: file: ui/miscpagemaintab.ui:123
 #. i18n: ectx: property (text), item, widget (KComboBox, mActionEnterFolder)
-#: rc.cpp:513
+#: rc.cpp:566
 #, fuzzy
 #| msgctxt "continuation of \"When entering a folder:\""
 #| msgid "Jump to First New Message"
@@ -5953,19 +6110,19 @@ msgstr "पहिलो नयाँ सन्देशमा जम्प ग�
 
 #. i18n: file: ui/miscpagemaintab.ui:137
 #. i18n: ectx: property (text), widget (QCheckBox, mDelayedMarkAsRead)
-#: rc.cpp:516
+#: rc.cpp:569
 msgid "Mar&k selected message as read after"
 msgstr "पढेपछि चयन गरिएका सन्देशमा चिन्ह लगाउनुहोस्"
 
 #. i18n: file: ui/miscpagemaintab.ui:147
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, mDelayedMarkTime)
-#: rc.cpp:519
+#: rc.cpp:572
 msgid " sec"
 msgstr " सेकेन्ड"
 
 #. i18n: file: ui/miscpagemaintab.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, mShowPopupAfterDnD)
-#: rc.cpp:522
+#: rc.cpp:575
 #, fuzzy
 #| msgid "Ask for action after &dragging messages to another folder"
 msgid "&Ask for action after dragging messages to another folder"
@@ -5973,7 +6130,7 @@ msgstr "अन्य फोल्डरमा सन्देश तानेप
 
 #. i18n: file: ui/miscpagemaintab.ui:170
 #. i18n: ectx: property (text), widget (QLabel, mStartUpFolderLabel)
-#: rc.cpp:525
+#: rc.cpp:578
 #, fuzzy
 #| msgid "Open this folder on startup:"
 msgid "Open this folder on &startup:"
@@ -5981,19 +6138,19 @@ msgstr "सुरुआतमा यो फोल्डर खोल्नुह
 
 #. i18n: file: ui/miscpagemaintab.ui:177
 #. i18n: ectx: property (text), widget (QCheckBox, mEmptyTrashCheck)
-#: rc.cpp:528
+#: rc.cpp:581
 msgid "Empty local &trash folder on program exit"
 msgstr "कार्यक्रमबाट निस्कासन स्थानीय रद्दीटोकरी फोल्डर खाली गर्नुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:531
+#: rc.cpp:584
 msgid "HTML Messages"
 msgstr "HTML सन्देश"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:23
 #. i18n: ectx: property (text), widget (QLabel, labelWarnHTML)
-#: rc.cpp:534
+#: rc.cpp:587
 msgid ""
 "<b>WARNING:</b> Allowing HTML in email may increase the risk that your "
 "system will be compromised by present and anticipated security exploits. <a "
@@ -6006,7 +6163,7 @@ msgstr ""
 
 #. i18n: file: ui/securitypagegeneraltab.ui:36
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mHtmlMailCheck)
-#: rc.cpp:537
+#: rc.cpp:590
 msgid ""
 "<qt><p>Messages sometimes come in both formats. This option controls whether "
 "you want the HTML part or the plain text part to be displayed.</"
@@ -6033,13 +6190,13 @@ msgstr ""
 
 #. i18n: file: ui/securitypagegeneraltab.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, mHtmlMailCheck)
-#: rc.cpp:540
+#: rc.cpp:593
 msgid "Prefer HTML to plain text"
 msgstr "सादा पाठलाई HTML छान्नुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:46
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mExternalReferences)
-#: rc.cpp:543
+#: rc.cpp:596
 #, fuzzy
 #| msgid ""
 #| "<qt><p>Some mail advertisements are in HTML and contain references to, "
@@ -6073,13 +6230,13 @@ msgstr ""
 
 #. i18n: file: ui/securitypagegeneraltab.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, mExternalReferences)
-#: rc.cpp:546
+#: rc.cpp:599
 msgid "Allow messages to load external references from the Internet"
 msgstr "इन्टरनेटबाट बाह्य सन्दर्भ लोड गर्न अनुमति सन्देश दिनुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:59
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:549
+#: rc.cpp:602
 #, fuzzy
 #| msgid "Encrypted message"
 msgid "Encrypted Messages"
@@ -6087,7 +6244,7 @@ msgstr "गुप्तिकृत सन्देश"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, mAlwaysDecrypt)
-#: rc.cpp:552
+#: rc.cpp:605
 #, fuzzy
 #| msgid "Automatically encrypt &messages whenever possible"
 msgid "Attempt decryption of encrypted messages when viewing"
@@ -6095,13 +6252,13 @@ msgstr "सम्भव भएसम्म सन्देश स्वचाल
 
 #. i18n: file: ui/securitypagegeneraltab.ui:75
 #. i18n: ectx: property (title), widget (QGroupBox, groupMessageDisp)
-#: rc.cpp:555
+#: rc.cpp:608
 msgid "Message Disposition Notifications"
 msgstr "सन्देश विर्सजन सूचना"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:81
 #. i18n: ectx: property (text), widget (QLabel, labelSend)
-#: rc.cpp:558
+#: rc.cpp:611
 msgid "Send policy:"
 msgstr "नीति पठाउनुहोस्:"
 
@@ -6119,8 +6276,8 @@ msgstr "नीति पठाउनुहोस्:"
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, radioFull)
 #. i18n: file: ui/securitypagegeneraltab.ui:155
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, radioHeaders)
-#: rc.cpp:561 rc.cpp:567 rc.cpp:573 rc.cpp:579 rc.cpp:588 rc.cpp:594
-#: rc.cpp:600
+#: rc.cpp:614 rc.cpp:620 rc.cpp:626 rc.cpp:632 rc.cpp:641 rc.cpp:647
+#: rc.cpp:653
 msgid ""
 "<qt><h3>Message Disposition Notification Policy</h3><p>MDNs are a "
 "generalization of what is commonly called <b>read receipt</b>. The message "
@@ -6164,61 +6321,61 @@ msgstr ""
 
 #. i18n: file: ui/securitypagegeneraltab.ui:91
 #. i18n: ectx: property (text), widget (QRadioButton, radioIgnore)
-#: rc.cpp:564
+#: rc.cpp:617
 msgid "Ignore"
 msgstr "उपेक्षा गर्नुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, radioAsk)
-#: rc.cpp:570
+#: rc.cpp:623
 msgid "Ask"
 msgstr "सोध्नुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, radioDeny)
-#: rc.cpp:576
+#: rc.cpp:629
 msgid "Deny"
 msgstr "अस्वीकार गर्नुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:121
 #. i18n: ectx: property (text), widget (QRadioButton, radioAlways)
-#: rc.cpp:582
+#: rc.cpp:635
 msgid "Always send"
 msgstr "सधैँ पठाउनुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:128
 #. i18n: ectx: property (text), widget (QLabel, labelQuote)
-#: rc.cpp:585
+#: rc.cpp:638
 msgid "Quote original message:"
 msgstr "मौलिक सन्देश उद्धरण गर्नुहोस्:"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:138
 #. i18n: ectx: property (text), widget (QRadioButton, radioNothing)
-#: rc.cpp:591
+#: rc.cpp:644
 msgid "Nothing"
 msgstr "केही पनि होइन"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:148
 #. i18n: ectx: property (text), widget (QRadioButton, radioFull)
-#: rc.cpp:597
+#: rc.cpp:650
 msgid "Full message"
 msgstr "पूरा सन्देश"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:158
 #. i18n: ectx: property (text), widget (QRadioButton, radioHeaders)
-#: rc.cpp:603
+#: rc.cpp:656
 msgid "Only headers"
 msgstr "हेडर मात्र"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:165
 #. i18n: ectx: property (text), widget (QCheckBox, mNoMDNsWhenEncryptedCheck)
-#: rc.cpp:606
+#: rc.cpp:659
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr "गुप्तिकृत सन्देशको प्रतिक्रियामा MDN हरू नपठाउनुहोस्"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:172
 #. i18n: ectx: property (text), widget (QLabel, labelWarning)
-#: rc.cpp:609
+#: rc.cpp:662
 msgid ""
 "<b>WARNING:</b> Unconditionally returning confirmations undermines your "
 "privacy. <a href=\"whatsthis3\">More about MDNs...</a>"
@@ -6228,13 +6385,13 @@ msgstr ""
 
 #. i18n: file: ui/securitypagegeneraltab.ui:188
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: rc.cpp:612
+#: rc.cpp:665
 msgid "Certificate && Key Bundle Attachments"
 msgstr "प्रमाणपत्र कुञ्जी समूह सङ्लग्नता"
 
 #. i18n: file: ui/securitypagegeneraltab.ui:194
 #. i18n: ectx: property (text), widget (QCheckBox, mAutomaticallyImportAttachedKeysCheck)
-#: rc.cpp:615
+#: rc.cpp:668
 #, fuzzy
 #| msgid "Automatically import keys and certificates"
 msgid "Automatically import keys and certificate"
@@ -6242,7 +6399,7 @@ msgstr "स्वचालित रूपमा कुञ्जी र प्�
 
 #. i18n: file: ui/smimeconfiguration.ui:16
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, CRLRB)
-#: rc.cpp:618
+#: rc.cpp:671
 msgid ""
 "If this option is selected, S/MIME certificates are validated using "
 "Certificate Revocation Lists (CRLs)."
@@ -6252,13 +6409,13 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:19
 #. i18n: ectx: property (text), widget (QRadioButton, CRLRB)
-#: rc.cpp:621
+#: rc.cpp:674
 msgid "Validate certificates using CRLs"
 msgstr "CRLs प्रयोग गरेर प्रमाणपत्रलाई प्रमाणित गर्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:29
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, OCSPRB)
-#: rc.cpp:624
+#: rc.cpp:677
 msgid ""
 "If this option is selected, S/MIME certificates are validated online using "
 "the Online Certificates Status Protocol (OCSP). Fill in the URL of the OCSP "
@@ -6269,31 +6426,31 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, OCSPRB)
-#: rc.cpp:627
+#: rc.cpp:680
 msgid "Validate certificates online (OCSP)"
 msgstr "(OCSP) अनलाइन प्रमाणपत्र प्रमाणीत गर्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:39
 #. i18n: ectx: property (title), widget (QGroupBox, OCSPGroupBox)
-#: rc.cpp:630
+#: rc.cpp:683
 msgid "Online Certificate Validation"
 msgstr "अनलाइन प्रमाणपत्र प्रमाणिकरण"
 
 #. i18n: file: ui/smimeconfiguration.ui:49
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:633
+#: rc.cpp:686
 msgid "OCSP responder URL:"
 msgstr "ओसीएसपी जवाफदेही URL:"
 
 #. i18n: file: ui/smimeconfiguration.ui:59
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:636
+#: rc.cpp:689
 msgid "OCSP responder signature:"
 msgstr "OCSP जवाफदेहीको हस्ताक्षर:"
 
 #. i18n: file: ui/smimeconfiguration.ui:73
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, OCSPResponderURL)
-#: rc.cpp:639
+#: rc.cpp:692
 msgid ""
 "Enter here the address of the server for online validation of certificates "
 "(OCSP responder). The URL is usually starting with http://."
@@ -6303,13 +6460,13 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreServiceURLCB)
-#: rc.cpp:642
+#: rc.cpp:695
 msgid "Ignore service URL of certificates"
 msgstr "प्रमाणपत्रहरूका URL सेवा उपेक्षा गर्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, doNotCheckCertPolicyCB)
-#: rc.cpp:645
+#: rc.cpp:698
 msgid ""
 "By default GnuPG uses the file ~/.gnupg/policies.txt to check if a "
 "certificate policy is allowed. If this option is selected, policies are not "
@@ -6321,13 +6478,13 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, doNotCheckCertPolicyCB)
-#: rc.cpp:648
+#: rc.cpp:701
 msgid "Do not check certificate policies"
 msgstr "प्रमाणपत्र नीति चेक नगर्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:107
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, neverConsultCB)
-#: rc.cpp:651
+#: rc.cpp:704
 msgid ""
 "If this option is checked, Certificate Revocation Lists are never used to "
 "validate S/MIME certificates."
@@ -6337,13 +6494,13 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:110
 #. i18n: ectx: property (text), widget (QCheckBox, neverConsultCB)
-#: rc.cpp:654
+#: rc.cpp:707
 msgid "Never consult a CRL"
 msgstr "कहल्यै पनि CRL सँग परामर्श नलिनुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:117
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, fetchMissingCB)
-#: rc.cpp:657
+#: rc.cpp:710
 msgid ""
 "If this option is checked, missing issuer certificates are fetched when "
 "necessary (this applies to both validation methods, CRLs and OCSP)"
@@ -6353,13 +6510,13 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:120
 #. i18n: ectx: property (text), widget (QCheckBox, fetchMissingCB)
-#: rc.cpp:660
+#: rc.cpp:713
 msgid "Fetch missing issuer certificates"
 msgstr "छुटेका वितरक प्रमाणपत्र तान्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:131
 #. i18n: ectx: attribute (title), widget (QWidget, tabHTTP)
-#: rc.cpp:663
+#: rc.cpp:716
 #, fuzzy
 #| msgid "HTTP Requests"
 msgid "HTTP Requests"
@@ -6367,13 +6524,13 @@ msgstr "HTTP अनुरोध"
 
 #. i18n: file: ui/smimeconfiguration.ui:137
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, disableHTTPCB)
-#: rc.cpp:666
+#: rc.cpp:719
 msgid "Entirely disables the use of HTTP for S/MIME."
 msgstr "S/MIME का लागि HTTP को प्रयोग पूर्ण रूपमा अक्षम पार्छ ।"
 
 #. i18n: file: ui/smimeconfiguration.ui:140
 #. i18n: ectx: property (text), widget (QCheckBox, disableHTTPCB)
-#: rc.cpp:669
+#: rc.cpp:722
 #, fuzzy
 #| msgid "Do not perform any HTTP requests"
 msgid "Do not perform any HTTP requests"
@@ -6381,7 +6538,7 @@ msgstr "कुनै पनि HTTP अनुरोध सम्पादन न
 
 #. i18n: file: ui/smimeconfiguration.ui:147
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreHTTPDPCB)
-#: rc.cpp:672
+#: rc.cpp:725
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
 "contains what are known as \"CRL Distribution Point\" (DP) entries, which "
@@ -6396,13 +6553,13 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:150
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreHTTPDPCB)
-#: rc.cpp:675
+#: rc.cpp:728
 msgid "Ignore HTTP CRL distribution point of certificates"
 msgstr "प्रमाणपत्रको HTTP CRL वितरण बिन्दु उपेक्षा गर्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:172
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, honorHTTPProxyRB)
-#: rc.cpp:678
+#: rc.cpp:731
 msgid ""
 "If this option is selected, the value of the HTTP proxy shown on the right "
 "(which comes from the environment variable http_proxy) will be used for any "
@@ -6413,19 +6570,19 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:175
 #. i18n: ectx: property (text), widget (QRadioButton, honorHTTPProxyRB)
-#: rc.cpp:681
+#: rc.cpp:734
 msgid "Use system HTTP proxy:"
 msgstr "प्रणाली HTTP प्रोक्सी प्रयोग गर्नुहोस्:"
 
 #. i18n: file: ui/smimeconfiguration.ui:192
 #. i18n: ectx: property (text), widget (QRadioButton, useCustomHTTPProxyRB)
-#: rc.cpp:687
+#: rc.cpp:740
 msgid "Use this proxy for HTTP requests: "
 msgstr "HTTP अनुरोधका लागि यो प्रोक्सी प्रयोग गर्नुहोस्: "
 
 #. i18n: file: ui/smimeconfiguration.ui:199
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, customHTTPProxy)
-#: rc.cpp:690
+#: rc.cpp:743
 msgid ""
 "Enter here the location of your HTTP Proxy, which will be used for all HTTP "
 "requests relating to S/MIME. The syntax is host:port, for instance myproxy."
@@ -6437,7 +6594,7 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:209
 #. i18n: ectx: attribute (title), widget (QWidget, tabLDAP)
-#: rc.cpp:693
+#: rc.cpp:746
 #, fuzzy
 #| msgid "LDAP Requests"
 msgid "LDAP Requests"
@@ -6445,13 +6602,13 @@ msgstr "LDAP अनुरोध"
 
 #. i18n: file: ui/smimeconfiguration.ui:217
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, disableLDAPCB)
-#: rc.cpp:696
+#: rc.cpp:749
 msgid "Entirely disables the use of LDAP for S/MIME."
 msgstr "S/MIME का लागि LDAP को प्रयोग पूर्ण रूपमा अक्षम पार्छ ।"
 
 #. i18n: file: ui/smimeconfiguration.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, disableLDAPCB)
-#: rc.cpp:699
+#: rc.cpp:752
 #, fuzzy
 #| msgid "Do not perform any LDAP requests"
 msgid "Do not perform any LDAP requests"
@@ -6459,7 +6616,7 @@ msgstr "कुनै पनि LDAP अनुरोध सम्पादन न
 
 #. i18n: file: ui/smimeconfiguration.ui:227
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreLDAPDPCB)
-#: rc.cpp:702
+#: rc.cpp:755
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
 "contains what are known as \"CRL Distribution Point\" (DP) entries, which "
@@ -6474,19 +6631,19 @@ msgstr ""
 
 #. i18n: file: ui/smimeconfiguration.ui:230
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreLDAPDPCB)
-#: rc.cpp:705
+#: rc.cpp:758
 msgid "Ignore LDAP CRL distribution point of certificates"
 msgstr "प्रमाणपत्रका लागि LDAP CRL वितरण बिन्दु उपेक्षा गर्नुहोस्"
 
 #. i18n: file: ui/smimeconfiguration.ui:239
 #. i18n: ectx: property (text), widget (QLabel, customLDAPLabel)
-#: rc.cpp:708
+#: rc.cpp:761
 msgid "Primary host for LDAP requests:"
 msgstr "LDAP अनुरोधका लागि प्राथमिक होस्ट:"
 
 #. i18n: file: ui/smimeconfiguration.ui:250
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, customLDAPProxy)
-#: rc.cpp:711
+#: rc.cpp:764
 msgid ""
 "Entering a LDAP server here will make all LDAP requests go to that server "
 "first. More precisely, this setting overrides any specified host and port "
@@ -6502,163 +6659,6 @@ msgstr ""
 "\"प्रोक्सी सर्भरमा\" जडान गर्न असफल भएमा मात्र प्रयोग गरिने छ ।\n"
 "वाक्य संरचना \"HOST\" वा \"HOST:PORT\" हो । यदि PORT छुटेको छ भने, पोर्ट ३८९ (मानक "
 "LDAP पोर्ट) प्रयोग गरिएको हुन्छ ।"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, optionsGroup_2)
-#: rc.cpp:715
-msgid "Signing"
-msgstr "साइनिङ"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:22
-#. i18n: ectx: property (text), widget (QCheckBox, mAutoSignature)
-#: rc.cpp:718
-msgid "&Automatically sign messages"
-msgstr "स्वत: सन्देशमा चिन्ह लगाउनुहोस्"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:25
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mAutoSignature)
-#: rc.cpp:721
-msgid ""
-"When this option is enabled, all messages you send will be signed by "
-"default; of course, it is still possible to disable signing for each message "
-"individually."
-msgstr ""
-"यो विकल्प सक्षम पारिएमा, तपाईँले पठाएका सन्देश पूर्वनिर्धारित रूपमा चिन्ह लगाइने छन्; "
-"वास्तवमै, प्रत्येक सन्देशको साइनिङ एकल रूपमा अक्षम पार्न यो अझै पनि सम्भव छ ।"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:35
-#. i18n: ectx: property (title), widget (QGroupBox, optionsGroup)
-#: rc.cpp:724
-msgid "Encrypting"
-msgstr "गुप्तिकरण गर्दैछ"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:41
-#. i18n: ectx: property (text), widget (QCheckBox, mEncToSelf)
-#: rc.cpp:727
-msgid ""
-"When encrypting emails, always also encr&ypt to the certificate of my own "
-"identity"
-msgstr ""
-
-#. i18n: file: ui/composercryptoconfiguration.ui:44
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mEncToSelf)
-#: rc.cpp:730
-msgid ""
-"When this option is enabled, the message/file will not only be encrypted "
-"with the receiver's public key, but also with your key. This will enable you "
-"to decrypt the message/file at a later time. This is generally a good idea."
-msgstr ""
-"यो विकल्प सक्षम पारिएमा, सन्देश/फाइल प्रापकको सार्वजनिक कुञ्जीमा मात्रै गुप्तिकरण नगरि "
-"तपाईँको कुञ्जीमा पनि गुप्तिकरण गरिने छ । पछिका समयमा सन्देश/फाइल गुप्तिकरणबाट उल्टाउन "
-"तपाईँले यसलाई सक्षम पार्नुहुनेछ । साधारणतया यो ठीक तरिका हो ।"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:51
-#. i18n: ectx: property (text), widget (QCheckBox, mShowEncryptionResult)
-#: rc.cpp:733
-msgid "Show s&igned/encrypted text after composing"
-msgstr "कम्पोज गरेपछि चिन्ह लगाइएका/गुप्तिकृत पाठ देखाउनुहोस्"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:54
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowEncryptionResult)
-#: rc.cpp:736
-msgid ""
-"When this option is enabled, the signed/encrypted text will be shown in a "
-"separate window, enabling you to know how it will look before it is sent. "
-"This is a good idea when you are verifying that your encryption system works."
-msgstr ""
-"यो विकल्प सक्षम पारिएमा, चिन्ह लगाइएको/गुप्तिकृत पाठ पृथक सञ्झ्यालमा देखिने छ, यसलाई "
-"पठाउनु भन्दा पहिले कसरी हेर्ने जान्न तपाईँलाई सक्षम पार्छ । तपाईँले गुप्तिकरण प्रणालीको "
-"कार्य गर्ने तरिका रुजु गर्दा यो ठीक तरिका हो ।"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, mStoreEncrypted)
-#: rc.cpp:739
-msgid "Store sent messages encry&pted"
-msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:67
-#. i18n: ectx: property (toolTip), widget (QCheckBox, mStoreEncrypted)
-#: rc.cpp:742
-msgid "Check to store messages encrypted "
-msgstr "गुप्तिकृत सन्देश भण्डारण गर्न चेक गर्नुहोस्"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:75
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mStoreEncrypted)
-#: rc.cpp:745
-#, fuzzy
-#| msgid ""
-#| "<qt>\n"
-#| "<h1>Store Messages Encrypted</h1>\n"
-#| "When this box is checked, sent messages are stored encrypted like they "
-#| "were sent. This is not recommended, as you will not be able to read the "
-#| "messages any longer if a necessary certificate expires.\n"
-#| "<p>\n"
-#| "However, there may be local rules that require you to turn this option "
-#| "on. When in doubt, check with your local administrator.\n"
-#| "</qt>"
-msgid ""
-"<qt>\n"
-"<h1>Store Messages Encrypted</h1>\n"
-"When this box is checked, sent messages are stored encrypted like they were "
-"sent. This is not recommended, as you will not be able to read the messages "
-"any longer if a necessary certificate expires.\n"
-"<p>\n"
-"However, there may be local rules that require you to turn this option on. "
-"When in doubt, check with your local administrator.\n"
-"</p></qt>"
-msgstr ""
-"<qt>\n"
-"<h1>गुप्तिकृत सन्देश भण्डारण गर्नुहोस्</h1>\n"
-"यो बाकस चिनो गरिएमा, सन्देशलाई पठाइएका रूपमा गुप्तिकृत गरि भण्डारण गरिएका छन् । यो "
-"सिफारिस गरिएको छैन, त्यस्तै तपाईँले आवश्यक प्रमाणपत्र खारेज हुने हुनाले सन्देश लामो समयसम्म "
-"पढ्न सक्नुहुने छैन ।\n"
-"<p>\n"
-"तापनि, तपाईँलाई त्यहाँ यो विकल्प सुरु गर्न स्थानीय नियम हुन सक्छन् । दुविधा भएमा, तपाईँको "
-"स्थानीय प्रशाषकमा जाँच गर्नुहोस् ।\n"
-"</qt>"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:82
-#. i18n: ectx: property (text), widget (QCheckBox, mShowKeyApprovalDlg)
-#: rc.cpp:753
-msgid "Always show the encryption keys &for approval"
-msgstr "प्रमाणीकरणका लागि गुप्तिकरण कुञ्जी सधैँ देखाउनुहोस्"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:85
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowKeyApprovalDlg)
-#: rc.cpp:756
-msgid ""
-"When this option is enabled, the application will always show you a list of "
-"public keys from which you can choose the one it will use for encryption. If "
-"it is off, the application will only show the dialog if it cannot find the "
-"right key or if there are several which could be used."
-msgstr ""
-"यो विकल्प सक्षम पार्दा, अनुप्रयोगले तपाईँलाई सधैँ सार्वजनिक कुञ्जीको सूची देखाउने छ जसबाट "
-"तपाईँले गुप्तिकरणका लागि प्रयोग हुने एउटा कुञ्जी रोज्न सक्नुहुन्छ । यो बन्द छ भने, अनुप्रयोगले "
-"दायाँ कुञ्जी फेला नपरेमा वा त्यहाँ प्रयोग हुनसक्ने धेरै कुञ्जी भएमा, संवाद मात्र देखाउछ ।"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:92
-#. i18n: ectx: property (text), widget (QCheckBox, mAutoEncrypt)
-#: rc.cpp:759
-msgid "Automatically encrypt &messages whenever possible"
-msgstr "सम्भव भएसम्म सन्देश स्वचालित रूपमा गुप्तिकरण गर्नुहोस्"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:95
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mAutoEncrypt)
-#: rc.cpp:762
-msgid ""
-"When this option is enabled, every message you send will be encrypted "
-"whenever encryption is possible and desired; of course, it is still possible "
-"to disable the automatic encryption for each message individually."
-msgstr ""
-"यो विकल्प सक्षम पारिएको छ भने, तपाईँले पठाएका सबै सन्देश गुप्तिकृत हुनेछन् तापनि गुप्तिकरण "
-"सम्भव र चाहाना गरिएको छ; वास्तवमा, अझै पनि प्रत्येक सन्देशलाई एकल रूपमा स्वचालित "
-"गुप्तिकरण अक्षम पार्न सम्भव छ ।"
-
-#. i18n: file: ui/composercryptoconfiguration.ui:102
-#. i18n: ectx: property (text), widget (QCheckBox, mNeverEncryptWhenSavingInDrafts)
-#: rc.cpp:765
-msgid "Never sign/encrypt when sa&ving as draft"
-msgstr "ड्राफ्टका रूपमा बचत गर्दा कहिल्यै पनि सङ्केत/गुप्तिकरण नगर्नुहोस्"
 
 #. i18n: file: ui/warningconfiguration.ui:17
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWarnUnsigned)
