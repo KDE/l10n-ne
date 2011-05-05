@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-04 04:04+0200\n"
+"POT-Creation-Date: 2011-05-05 04:04+0200\n"
 "PO-Revision-Date: 2007-08-22 16:04+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3436,7 +3436,7 @@ msgstr ""
 msgid "The server was too busy responding to other requests to respond."
 msgstr "अन्य अनुरोधहरू जवाफ दिने क्रममा जवाफ दिन सर्भर ज्यादै व्यस्त थियो ।"
 
-#: kio/global.cpp:1094 kio/slavebase.cpp:1300
+#: kio/global.cpp:1094 kio/slavebase.cpp:1302
 msgid "Unknown Error"
 msgstr "अज्ञात त्रुटि"
 
@@ -4766,9 +4766,75 @@ msgstr "यो प्रमाणपत्र सान्दर्भिक छ
 msgid "The certificate is invalid."
 msgstr "यो प्रमाणपत्र अवैद्य छ ।"
 
-#: kssl/ksslinfodialog.cpp:73 kssl/ksslkeygen.cpp:125
+#: kssl/ksslkeygen.cpp:83
+msgid "KDE Certificate Request"
+msgstr "केडीई प्रमाणपत्र अनुरोध"
+
+#: kssl/ksslkeygen.cpp:90
+msgid "KDE Certificate Request - Password"
+msgstr "केडीई प्रमाणपत्र अनुरोध - पासवर्ड"
+
+#: kssl/ksslkeygen.cpp:125
+msgid "Unsupported key size."
+msgstr "असमर्थित कुञ्जी साइज ।"
+
+#: kssl/ksslkeygen.cpp:125 kssl/ksslinfodialog.cpp:73
 msgid "KDE SSL Information"
 msgstr "केडीई एसएसएल सूचना"
+
+#: kssl/ksslkeygen.cpp:131
+msgid "KDE"
+msgstr "केडीई"
+
+#: kssl/ksslkeygen.cpp:132
+msgid "Please wait while the encryption keys are generated..."
+msgstr "कृपया गुप्तिकरण कुञ्जी उत्पन्न हुँदा प्रतिक्षा गर्नुहोस्..."
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Do you wish to store the passphrase in your wallet file?"
+msgstr "के तपाईँ वालेट फाइलमा पासफ्रेज भण्डारण गर्न चाहनुहुन्छ?"
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Store"
+msgstr "भण्डारण गर्नुहोस्"
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Do Not Store"
+msgstr "भण्डारण नगर्नुहोस्"
+
+#: kssl/ksslkeygen.cpp:261
+msgid "2048 (High Grade)"
+msgstr "२०४८ (उच्च स्तर)"
+
+#: kssl/ksslkeygen.cpp:262
+msgid "1024 (Medium Grade)"
+msgstr "१०२४ (मध्यम स्तर)"
+
+#: kssl/ksslkeygen.cpp:263
+msgid "768  (Low Grade)"
+msgstr "७६८  (न्यून स्तर)"
+
+#: kssl/ksslkeygen.cpp:264
+msgid "512  (Low Grade)"
+msgstr "५१२  (न्यून स्तर)"
+
+#: kssl/ksslkeygen.cpp:266
+msgid "No SSL support."
+msgstr "एसएसएल समर्थन छैन ।"
+
+#: kssl/ksslpemcallback.cpp:37
+msgid "Certificate password"
+msgstr "प्रमाणपत्र पासवर्ड"
+
+#: kssl/ksslutils.cpp:78
+msgid "GMT"
+msgstr "GMT"
+
+#: kssl/sslui.cpp:52
+msgid ""
+"The remote host did not send any SSL certificates.\n"
+"Aborting because the identity of the host cannot be established."
+msgstr ""
 
 #: kssl/ksslinfodialog.cpp:81
 #, fuzzy
@@ -4840,72 +4906,6 @@ msgstr ""
 #: kssl/ksslinfodialog.cpp:221
 msgctxt "The certificate is trusted"
 msgid "Yes"
-msgstr ""
-
-#: kssl/ksslkeygen.cpp:83
-msgid "KDE Certificate Request"
-msgstr "केडीई प्रमाणपत्र अनुरोध"
-
-#: kssl/ksslkeygen.cpp:90
-msgid "KDE Certificate Request - Password"
-msgstr "केडीई प्रमाणपत्र अनुरोध - पासवर्ड"
-
-#: kssl/ksslkeygen.cpp:125
-msgid "Unsupported key size."
-msgstr "असमर्थित कुञ्जी साइज ।"
-
-#: kssl/ksslkeygen.cpp:131
-msgid "KDE"
-msgstr "केडीई"
-
-#: kssl/ksslkeygen.cpp:132
-msgid "Please wait while the encryption keys are generated..."
-msgstr "कृपया गुप्तिकरण कुञ्जी उत्पन्न हुँदा प्रतिक्षा गर्नुहोस्..."
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Do you wish to store the passphrase in your wallet file?"
-msgstr "के तपाईँ वालेट फाइलमा पासफ्रेज भण्डारण गर्न चाहनुहुन्छ?"
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Store"
-msgstr "भण्डारण गर्नुहोस्"
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Do Not Store"
-msgstr "भण्डारण नगर्नुहोस्"
-
-#: kssl/ksslkeygen.cpp:261
-msgid "2048 (High Grade)"
-msgstr "२०४८ (उच्च स्तर)"
-
-#: kssl/ksslkeygen.cpp:262
-msgid "1024 (Medium Grade)"
-msgstr "१०२४ (मध्यम स्तर)"
-
-#: kssl/ksslkeygen.cpp:263
-msgid "768  (Low Grade)"
-msgstr "७६८  (न्यून स्तर)"
-
-#: kssl/ksslkeygen.cpp:264
-msgid "512  (Low Grade)"
-msgstr "५१२  (न्यून स्तर)"
-
-#: kssl/ksslkeygen.cpp:266
-msgid "No SSL support."
-msgstr "एसएसएल समर्थन छैन ।"
-
-#: kssl/ksslpemcallback.cpp:37
-msgid "Certificate password"
-msgstr "प्रमाणपत्र पासवर्ड"
-
-#: kssl/ksslutils.cpp:78
-msgid "GMT"
-msgstr "GMT"
-
-#: kssl/sslui.cpp:52
-msgid ""
-"The remote host did not send any SSL certificates.\n"
-"Aborting because the identity of the host cannot be established."
 msgstr ""
 
 #: misc/kmailservice.cpp:30
