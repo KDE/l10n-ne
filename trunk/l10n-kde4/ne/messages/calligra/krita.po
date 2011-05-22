@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-21 03:33+0200\n"
+"POT-Creation-Date: 2011-05-22 03:34+0200\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1419,7 +1419,7 @@ msgstr "तह गुण"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:207 ui/tool/kis_tool_paint.cc:247
+#: rc.cpp:207 ui/kis_paintop_box.cc:154
 msgid "Opacity: "
 msgstr "अस्पष्टता: "
 
@@ -4367,7 +4367,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:1418 rc.cpp:3094
 #: plugins/filters/roundcorners/kis_round_corners_filter.cpp:136
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:965
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:954
 msgid "Radius"
 msgstr "अर्धव्यास"
 
@@ -7788,7 +7788,7 @@ msgstr "हालको तहसम्म सीमित"
 #. i18n: file: plugins/tools/tool_crop/wdg_tool_crop.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
 #: rc.cpp:3127 image/kis_crop_visitor.h:121
-#: plugins/tools/tool_crop/kis_tool_crop.cc:442
+#: plugins/tools/tool_crop/kis_tool_crop.cc:451
 msgid "Crop"
 msgstr "काँटछाँट गर्नुहोस्"
 
@@ -8086,8 +8086,8 @@ msgstr "आंशिक:"
 
 #. i18n: file: plugins/tools/tool_transform2/wdg_tool_transform.ui:1062
 #. i18n: ectx: property (text), widget (QPushButton, lockUnlockPointsButton)
-#: rc.cpp:3303 plugins/tools/tool_transform2/kis_tool_transform.cc:2502
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2893
+#: rc.cpp:3303 plugins/tools/tool_transform2/kis_tool_transform.cc:2509
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2900
 msgid "Lock Points"
 msgstr ""
 
@@ -9997,21 +9997,21 @@ msgstr "प्रवाह भराइ"
 msgid "Gradient Fill"
 msgstr "ग्रेडियन्ट"
 
-#: image/brushengine/kis_paintop_factory.cpp:45
+#: image/brushengine/kis_paintop_factory.cpp:61
 #, fuzzy
 #| msgid "Radius"
 msgctxt "Category of brush engines"
 msgid "Experimental"
 msgstr "अर्धव्यास"
 
-#: image/brushengine/kis_paintop_factory.cpp:50
+#: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
 #| msgid "&Scale"
 msgctxt "Category of brush engines"
 msgid "Stable"
 msgstr "मापन गर्नुहोस्"
 
-#: image/brushengine/kis_paintop_registry.cc:113
+#: image/brushengine/kis_paintop_registry.cc:117
 #, fuzzy
 #| msgid "Default"
 msgid "default"
@@ -10647,29 +10647,17 @@ msgstr "तह घुमाउनुहोस्..."
 msgid "Compose Layer"
 msgstr "क्लोन तह"
 
-#: plugins/extensions/dockers/channeldocker/channeldocker_dock.cpp:33
-#, fuzzy
-#| msgid "Channel"
-msgid "Channels"
-msgstr "माध्यम"
-
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:61
 #, fuzzy
 #| msgid "Enable"
 msgid "Enabled"
 msgstr "सक्षम पार्नुहोस्"
 
-#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:44
-#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:102
-#: plugins/extensions/histogram/dlg_histogram.cc:47
-#: plugins/extensions/histogram/dlg_histogram.cc:54
-msgid "Histogram"
-msgstr "हिस्टोग्राम"
-
-#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:115
-#, kde-format
-msgid "Histograms are not supported for images in the %1 colorspace."
-msgstr ""
+#: plugins/extensions/dockers/channeldocker/channeldocker_dock.cpp:33
+#, fuzzy
+#| msgid "Channel"
+msgid "Channels"
+msgstr "माध्यम"
 
 #: plugins/extensions/dockers/defaultdockers/kis_birdeye_box.cc:62
 msgid "Select the exposure (stops) for HDR images"
@@ -10678,6 +10666,18 @@ msgstr ""
 #: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:32
 msgid "Palettes"
 msgstr "रङदानी"
+
+#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:44
+#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:106
+#: plugins/extensions/histogram/dlg_histogram.cc:47
+#: plugins/extensions/histogram/dlg_histogram.cc:54
+msgid "Histogram"
+msgstr "हिस्टोग्राम"
+
+#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:119
+#, kde-format
+msgid "Histograms are not supported for images in the %1 colorspace."
+msgstr ""
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:76
 msgid "Layers"
@@ -10780,7 +10780,7 @@ msgstr "मास्क नक्कल गर्नुहोस्"
 msgid "&Effect Mask..."
 msgstr "चयन इरेजर"
 
-#: plugins/extensions/dockers/digitalmixer/digitalmixer_dock.cc:42
+#: plugins/extensions/dockers/digitalmixer/digitalmixer_dock.cc:43
 #, fuzzy
 #| msgid "Painterly overlays"
 msgid "Digital Colors Mixer"
@@ -10805,12 +10805,6 @@ msgstr "उस्तै चयन"
 msgid "Small Color Selector"
 msgstr "उस्तै चयन"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:30
-#, fuzzy
-#| msgid "Similar Selection"
-msgid "Specific Color Selector"
-msgstr "उस्तै चयन"
-
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, fuzzy, kde-format
 #| msgid "1:1"
@@ -10823,7 +10817,13 @@ msgstr "१:१"
 msgid "Color name:"
 msgstr "रङ खालीस्थान:"
 
-#: plugins/extensions/dockers/trianglecolorselector/kis_triangle_color_selector_dock.cc:28
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+#, fuzzy
+#| msgid "Similar Selection"
+msgid "Specific Color Selector"
+msgstr "उस्तै चयन"
+
+#: plugins/extensions/dockers/trianglecolorselector/kis_triangle_color_selector_dock.cc:29
 msgid "Triangle Color Selector"
 msgstr ""
 
@@ -11061,12 +11061,6 @@ msgstr "चयन"
 msgid "KS%1 Engine"
 msgstr ""
 
-#: plugins/extensions/painterlyframework/kis_painterlymixerdocker.cpp:36
-#, fuzzy
-#| msgid "Painterly overlays"
-msgid "Painterly Color Mixer"
-msgstr "कलाकारको ओभरले"
-
 #: plugins/extensions/painterlyframework/kis_ks_colorspace.h:77
 #, fuzzy, kde-format
 #| msgid "Painterly overlays"
@@ -11092,6 +11086,12 @@ msgstr "विकल्प"
 #| msgid "Pattern"
 msgid "Scattering"
 msgstr "बाँन्की"
+
+#: plugins/extensions/painterlyframework/kis_painterlymixerdocker.cpp:36
+#, fuzzy
+#| msgid "Painterly overlays"
+msgid "Painterly Color Mixer"
+msgstr "कलाकारको ओभरले"
 
 #: plugins/extensions/rotateimage/rotateimage.cc:67
 msgid "&Rotate Image..."
@@ -11689,7 +11689,7 @@ msgid ""
 "present) animation effects."
 msgstr ""
 
-#: plugins/formats/gif/gif_export.cpp:64 ui/dialogs/kis_dlg_preferences.cc:657
+#: plugins/formats/gif/gif_export.cpp:64 ui/dialogs/kis_dlg_preferences.cc:654
 #: ui/kis_aboutdata.h:31 ui/kis_clipboard.cc:154
 msgid "Krita"
 msgstr "क्रिता"
@@ -12051,7 +12051,7 @@ msgid "Darken"
 msgstr "गाढा"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:925
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:914
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -12070,14 +12070,14 @@ msgid "Mirrored"
 msgstr "छवि काँटछाँट गर्नुहोस्"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:35
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:945
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:934
 #, fuzzy
 #| msgid "Horizontal:"
 msgid "Horizontally"
 msgstr "तेर्सो;"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:947
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:936
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Vertically"
@@ -12851,7 +12851,7 @@ msgid "Color Rate"
 msgstr "रङ दायरा"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:137
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:889
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:878
 #, fuzzy
 #| msgid "Smoothness:"
 msgctxt "smooth out the curves while drawing"
@@ -12859,19 +12859,19 @@ msgid "Smoothness:"
 msgstr "महीनता:"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:152
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:904
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:893
 #, fuzzy
 #| msgid "Gaussian:"
 msgid "Assistant:"
 msgstr "गाउसियन:"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:153
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:905
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:894
 msgid "You need to add Ruler Assistants before this tool will work."
 msgstr ""
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:156
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:908
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:897
 #, fuzzy
 #| msgid "Magentas"
 msgid "Assistant Magnetism"
@@ -13119,23 +13119,23 @@ msgstr "चाइनिज ब्रुस"
 msgid "Decrease Brush Size"
 msgstr "ब्रुस साइज"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:917
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:906
 #, fuzzy
 #| msgid "Axes"
 msgid "Axis point"
 msgstr "अक्ष"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:924
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:913
 msgid "Symmetry"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:926
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:915
 #, fuzzy
 #| msgid "Triangle"
 msgid "Translate"
 msgstr "त्रिकोण"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:930
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:919
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush count"
@@ -13255,7 +13255,7 @@ msgstr "अस्पष्टता: "
 msgid "Similar Selection"
 msgstr "उस्तै चयन"
 
-#: plugins/tools/tool_crop/kis_tool_crop.h:147
+#: plugins/tools/tool_crop/kis_tool_crop.h:148
 msgid "Crop the image to an area"
 msgstr "एउटा क्षेत्रमा छवि काँटछाँट गर्नुहोस्"
 
@@ -13441,38 +13441,38 @@ msgstr "कन्फिगरेसन"
 msgid "Transform"
 msgstr "रूपान्तरण गर्नुहोस्"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2099
+#: plugins/tools/tool_transform2/kis_tool_transform.h:435
+msgid "Transform a layer or a selection"
+msgstr "तह वा चयन रूपान्तरण गर्नुहोस्"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2106
 #, fuzzy
 #| msgid "Configuration"
 msgid "Apply Transformation"
 msgstr "कन्फिगरेसन"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2356
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2363
 #, fuzzy
 #| msgid "Vine"
 msgid "Affine"
 msgstr "लहरा"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2357
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2364
 #, fuzzy
 #| msgid "Amplitude:"
 msgid "Similitude"
 msgstr "आयाम:"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2358
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2365
 #, fuzzy
 #| msgid "Right:"
 msgid "Rigid"
 msgstr "दायाँ:"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2504
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2889
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2511
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2896
 msgid "Unlock Points"
 msgstr ""
-
-#: plugins/tools/tool_transform2/kis_tool_transform.h:435
-msgid "Transform a layer or a selection"
-msgstr "तह वा चयन रूपान्तरण गर्नुहोस्"
 
 #: ui/kis_filter_handler.cc:110
 #, kde-format
@@ -13567,6 +13567,12 @@ msgstr "छवि गुण"
 msgid "Layer Properties"
 msgstr "तह गुण"
 
+#: ui/dialogs/kis_dlg_transformation_effect.cpp:38
+#, fuzzy
+#| msgid "Transformation Mask..."
+msgid "New Transformation Mask"
+msgstr "रूपान्तरण मास्क..."
+
 #: ui/dialogs/kis_dlg_preferences.cc:190
 msgid "Monitor profile: "
 msgstr "मोनिटर प्रोफाइल: "
@@ -13597,7 +13603,7 @@ msgstr "रङ सेटिङ"
 msgid "Tablet"
 msgstr "ट्याबलेट"
 
-#: ui/dialogs/kis_dlg_preferences.cc:654
+#: ui/dialogs/kis_dlg_preferences.cc:651
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -13606,12 +13612,6 @@ msgid ""
 "\n"
 "Are you sure you want to enable OpenGL?\n"
 msgstr ""
-
-#: ui/dialogs/kis_dlg_transformation_effect.cpp:38
-#, fuzzy
-#| msgid "Transformation Mask..."
-msgid "New Transformation Mask"
-msgstr "रूपान्तरण मास्क..."
 
 #: ui/flake/kis_shape_controller.cpp:229
 #, kde-format
@@ -13846,51 +13846,51 @@ msgstr "एन्ड्रियस् लन्डिन"
 msgid "New configuration %1"
 msgstr "कन्फिगरेसन"
 
-#: ui/kis_paintop_box.cc:98
+#: ui/kis_paintop_box.cc:99
 msgid "Painter's Toolchest"
 msgstr "पेन्टरको टुलचेस्ट"
 
-#: ui/kis_paintop_box.cc:102
+#: ui/kis_paintop_box.cc:103
 #, fuzzy
 #| msgid "edit presets"
 msgid "Edit brush settings"
 msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
 
-#: ui/kis_paintop_box.cc:108
+#: ui/kis_paintop_box.cc:109
 #, fuzzy
 #| msgid "edit presets"
 msgid "Choose brush preset"
 msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
 
-#: ui/kis_paintop_box.cc:115
+#: ui/kis_paintop_box.cc:116
 #, fuzzy
 #| msgid "Metering mode:"
 msgid "Set eraser mode"
 msgstr "मिटरिङ मोड:"
 
-#: ui/kis_paintop_box.cc:125
+#: ui/kis_paintop_box.cc:126
 #, fuzzy
 #| msgid "Horizontal Wave"
 msgid "Set horizontal mirror mode"
 msgstr "तेर्सो तरङ"
 
-#: ui/kis_paintop_box.cc:135
+#: ui/kis_paintop_box.cc:136
 #, fuzzy
 #| msgid "Metering mode:"
 msgid "Set vertical mirror mode"
 msgstr "मिटरिङ मोड:"
 
-#: ui/kis_paintop_box.cc:146
+#: ui/kis_paintop_box.cc:147
 msgid "Mode: "
 msgstr "मोड: "
 
-#: ui/kis_paintop_box.cc:157
+#: ui/kis_paintop_box.cc:166
 #, fuzzy
 #| msgid "edit presets"
 msgid "Save to Palette"
 msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
 
-#: ui/kis_paintop_box.cc:165
+#: ui/kis_paintop_box.cc:174
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
@@ -14511,18 +14511,6 @@ msgstr ""
 msgid "x%1"
 msgstr "%1%"
 
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:46
-#, fuzzy
-#| msgid "Thumbnail View"
-msgid "Thumbnails"
-msgstr "थम्वनेल दृश्य"
-
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:51
-#, fuzzy
-#| msgid "Detailed View"
-msgid "Details"
-msgstr "विस्तृत दृश्य"
-
 #: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
 #, fuzzy
 #| msgid "No configuration option."
@@ -14572,6 +14560,18 @@ msgstr ""
 #: ui/widgets/kis_paintop_presets_popup.cpp:233
 msgid "Detach from Toolbar"
 msgstr ""
+
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:47
+#, fuzzy
+#| msgid "Thumbnail View"
+msgid "Thumbnails"
+msgstr "थम्वनेल दृश्य"
+
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:52
+#, fuzzy
+#| msgid "Detailed View"
+msgid "Details"
+msgstr "विस्तृत दृश्य"
 
 #, fuzzy
 #~| msgid "Image Size"
