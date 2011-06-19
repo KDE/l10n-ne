@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:35+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2007-08-08 15:46+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,10 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#: flake/KoToolBase.cpp:173 flake/KoToolManager.cpp:352
-msgid "Tool Options"
-msgstr "उपकरण्ति विकल्प"
 
 #: flake/KPathShapeFactory.cpp:32
 #, fuzzy
@@ -32,16 +28,20 @@ msgstr "साधारण मार्ग आकार"
 msgid "A simple path shape"
 msgstr "साधारण मार्ग आकार"
 
+#: flake/KToolBase.cpp:173 flake/KToolManager.cpp:352
+msgid "Tool Options"
+msgstr "उपकरण्ति विकल्प"
+
+#: flake/KToolManager.cpp:351
+#, kde-format
+msgid "Active tool: %1"
+msgstr " उपकरण सक्रिय बनाउनुहोस्: %1"
+
 #: flake/KShapePaste.cpp:100
 #, fuzzy
 #| msgid "Create Shapes"
 msgid "Paste Shapes"
 msgstr "आकारप्लेट सिर्जन गर्।नुहोस्"
-
-#: flake/KoToolManager.cpp:351
-#, kde-format
-msgid "Active tool: %1"
-msgstr " उपकरण सक्रिय बनाउनुहोस्: %1"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -125,6 +125,12 @@ msgstr "आकारलाई पून:आदेश गर्नुहोस्
 msgid "Resize Shapes"
 msgstr "आकारलाई रिसाइज गर्नुहोस्।"
 
+#: flake/commands/KSubpathRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Remove subpath"
+msgid "Remove Subpath"
+msgstr "सहायकमार्ग  हटाउनुहोस्।"
+
 #: flake/commands/KParameterHandleMoveCommand.cpp:34
 #, fuzzy
 #| msgid "Change parameter"
@@ -166,13 +172,6 @@ msgstr "बिन्दुहरु गाभ्नुहोस्"
 #: flake/commands/KPathPointMoveCommand.cpp:58
 msgid "Move points"
 msgstr "बिन्दुलाई सार्नुहोस्।"
-
-#: flake/commands/KPathPointRemoveCommand.cpp:104
-#: flake/commands/KPathPointRemoveCommand.cpp:133
-#, fuzzy
-#| msgid "Remove points"
-msgid "Remove Points"
-msgstr " बिन्दु हटाउनुहोस्"
 
 #: flake/commands/KPathPointTypeCommand.cpp:46
 #, fuzzy
@@ -222,61 +221,44 @@ msgstr "आकारलाई ताल्चा लगाउनुहोस्�
 msgid "Set Shadow"
 msgstr "पाठ छायाँ"
 
-#: flake/commands/KoShapeTransparencyCommand.cpp:49
-#: flake/commands/KoShapeTransparencyCommand.cpp:60
-#: flake/commands/KoShapeTransparencyCommand.cpp:73
+#: flake/commands/KPathPointRemoveCommand.cpp:104
+#: flake/commands/KPathPointRemoveCommand.cpp:133
+#, fuzzy
+#| msgid "Remove points"
+msgid "Remove Points"
+msgstr " बिन्दु हटाउनुहोस्"
+
+#: flake/commands/KShapeTransparencyCommand.cpp:49
+#: flake/commands/KShapeTransparencyCommand.cpp:60
+#: flake/commands/KShapeTransparencyCommand.cpp:73
 #, fuzzy
 #| msgid "Opacity"
 msgid "Set Opacity"
 msgstr "अस्पष्टता"
 
-#: flake/commands/KoShapeUngroupCommand.cpp:57
+#: flake/commands/KShapeUngroupCommand.cpp:57
 #, fuzzy
 #| msgid "Ungroup shapes"
 msgid "Ungroup Shapes"
 msgstr "आकारलाई छुट्याउनुहोस्"
 
-#: flake/commands/KoSubpathJoinCommand.cpp:51
+#: flake/commands/KSubpathJoinCommand.cpp:51
 #, fuzzy
 #| msgid "Close subpath"
 msgid "Close Subpath"
 msgstr "सहायक मार्ग बन्द गर्नुहोस्।"
 
-#: flake/commands/KoSubpathJoinCommand.cpp:53
+#: flake/commands/KSubpathJoinCommand.cpp:53
 #, fuzzy
 #| msgid "Join subpaths"
 msgid "Join Subpaths"
 msgstr "सहायक मार्ग जोड्नुहोस्।"
-
-#: flake/commands/KoSubpathRemoveCommand.cpp:30
-#, fuzzy
-#| msgid "Remove subpath"
-msgid "Remove Subpath"
-msgstr "सहायकमार्ग  हटाउनुहोस्।"
 
 #: flake/commands/KShapeShearCommand.cpp:51
 #, fuzzy
 #| msgid "Shear shapes"
 msgid "Shear Shapes"
 msgstr "आकारलाई काट्नुहोस्"
-
-#: flake/tools/KCreatePathTool.cpp:369 flake/tools/KPathTool.cpp:180
-msgid "Snapping"
-msgstr ""
-
-#: flake/tools/KCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KCreatePathTool.cpp:379
-#, fuzzy
-#| msgid "Change Indent"
-msgid "Angle Constraints"
-msgstr "इन्डेन्ट परिवर्तन गर्नुहोस्"
-
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "मार्ग सिर्जना गर्नुहोस्।"
 
 #: flake/tools/KCreateShapesToolFactory.cpp:33
 msgid "Create object"
@@ -285,12 +267,6 @@ msgstr "वस्तुात सृजना गर्नुहोस ।"
 #: flake/tools/KPanToolFactory.cpp:29
 msgid "Pan"
 msgstr "प्यानन"
-
-#: flake/tools/KPathSegmentChangeStrategy.cpp:140
-#, fuzzy
-#| msgid "Change Alignment"
-msgid "Change Segment"
-msgstr "पङ्क्तिबद्धता परिवर्तन गर्नुहोस्"
 
 #: flake/tools/KPathTool.cpp:87
 msgid "Corner point"
@@ -367,6 +343,10 @@ msgstr "गोलभेडा रङ"
 msgid "Line/Curve"
 msgstr "मुद्रा"
 
+#: flake/tools/KPathTool.cpp:180 flake/tools/KCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr ""
+
 #: flake/tools/KPathTool.cpp:514
 msgid "Drag to move handle."
 msgstr ""
@@ -391,14 +371,34 @@ msgstr "सहायक मार्गलाई विन्दुमा वि
 msgid "Press B to break path at selected segments."
 msgstr ""
 
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
+#: flake/tools/KPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "मार्ग  सम्पदन ाउपकर:"
+
+#: flake/tools/KZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr "जुम"
 
-#: flake/tools/KPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "मार्ग  सम्पदन ाउपकर:"
+#: flake/tools/KCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KCreatePathTool.cpp:379
+#, fuzzy
+#| msgid "Change Indent"
+msgid "Angle Constraints"
+msgstr "इन्डेन्ट परिवर्तन गर्नुहोस्"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "मार्ग सिर्जना गर्नुहोस्।"
+
+#: flake/tools/KPathSegmentChangeStrategy.cpp:140
+#, fuzzy
+#| msgid "Change Alignment"
+msgid "Change Segment"
+msgstr "पङ्क्तिबद्धता परिवर्तन गर्नुहोस्"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -847,6 +847,12 @@ msgstr ""
 msgid "Master Page"
 msgstr "पाठ टाँस्नुहोस्"
 
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+#, fuzzy
+#| msgid "Set background"
+msgid "Change background image"
+msgstr "पृष्टभुमि सेट गर्नुहोस्"
+
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 #, fuzzy
 #| msgid "Background color:"
@@ -862,12 +868,6 @@ msgstr ""
 #| msgid "Path editing tool"
 msgid "Background editing tool"
 msgstr "मार्ग  सम्पदन ाउपकर:"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-#, fuzzy
-#| msgid "Set background"
-msgid "Change background image"
-msgstr "पृष्टभुमि सेट गर्नुहोस्"
 
 #: kopageapp/KoPAPastePage.cpp:132
 #, fuzzy
@@ -1020,49 +1020,6 @@ msgstr[1] "%1 जोडा फेला पर्यो"
 msgid "Found no match"
 msgstr "जोडा  फेला परेन"
 
-#: kotext/InsertTextLocator.cpp:29
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Index Reference"
-msgstr "पाठ सन्दर्भ"
-
-#: kotext/InsertTextReferenceAction.cpp:35
-#: kotext/InsertTextReferenceAction.cpp:63
-msgid "Text Reference"
-msgstr "पाठ सन्दर्भ"
-
-#: kotext/InsertTextReferenceAction.cpp:44
-#, fuzzy
-#| msgid "Select the index you want to reference"
-msgid "Please create an index to reference first."
-msgstr "तपाईँले सन्दर्भका लागि चाहानुभएको अनुक्रमाणिका चयन गर्नुहोस् "
-
-#: kotext/InsertTextReferenceAction.cpp:53
-msgid "Select the index you want to reference"
-msgstr "तपाईँले सन्दर्भका लागि चाहानुभएको अनुक्रमाणिका चयन गर्नुहोस् "
-
-#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
-#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
-#, kde-format
-msgid "%1 Options"
-msgstr "%1 विकल्प"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "None"
-msgstr "कुनै पनि होइन"
-
-#: kotext/KoText.cpp:48
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "एकल"
-
-#: kotext/KoText.cpp:49
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "दोहोरो"
-
 #: kotext/commands/DeleteTableColumnCommand.cpp:40
 #: kotext/KoTextEditor.cpp:1058
 #, fuzzy
@@ -1102,6 +1059,70 @@ msgstr "विच्छेदन घुसाउनुहोस्"
 #| msgid "Insert page"
 msgid "Insert Row Above"
 msgstr "पृष्ठ घुसाउनुहोस्"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: kotext/KoText.cpp:48
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "एकल"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "दोहोरो"
+
+#: kotext/KReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+
+#: kotext/KReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kotext/KReplaceStrategy.cpp:74
+#, fuzzy, kde-format
+#| msgctxt "We add the 1/2 char at the %1"
+#| msgid "Re&place 1/2... with %1..."
+msgid "Replace %1 with %2?"
+msgstr "%1...सँग १/२...प्रतिस्थापन गर्नुहोस्"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
+msgid "Format"
+msgstr "ढाँचा"
+
+#: kotext/InsertTextReferenceAction.cpp:35
+#: kotext/InsertTextReferenceAction.cpp:63
+msgid "Text Reference"
+msgstr "पाठ सन्दर्भ"
+
+#: kotext/InsertTextReferenceAction.cpp:44
+#, fuzzy
+#| msgid "Select the index you want to reference"
+msgid "Please create an index to reference first."
+msgstr "तपाईँले सन्दर्भका लागि चाहानुभएको अनुक्रमाणिका चयन गर्नुहोस् "
+
+#: kotext/InsertTextReferenceAction.cpp:53
+msgid "Select the index you want to reference"
+msgstr "तपाईँले सन्दर्भका लागि चाहानुभएको अनुक्रमाणिका चयन गर्नुहोस् "
+
+#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
+#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
+#, kde-format
+msgid "%1 Options"
+msgstr "%1 विकल्प"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -1246,32 +1267,11 @@ msgstr "ठाडो"
 msgid "Line Break"
 msgstr "किनारा परिवर्तन गर्नुहोस्"
 
-#: kotext/KReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-
-#: kotext/KReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] ""
-msgstr[1] ""
-
-#: kotext/KReplaceStrategy.cpp:74
-#, fuzzy, kde-format
-#| msgctxt "We add the 1/2 char at the %1"
-#| msgid "Re&place 1/2... with %1..."
-msgid "Replace %1 with %2?"
-msgstr "%1...सँग १/२...प्रतिस्थापन गर्नुहोस्"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
-msgid "Format"
-msgstr "ढाँचा"
+#: kotext/InsertTextLocator.cpp:29
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Index Reference"
+msgstr "पाठ सन्दर्भ"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2392,6 +2392,12 @@ msgstr ""
 msgid "Locations"
 msgstr "अपवाद"
 
+#: main/rdf/KoDocumentRdf.cpp:851
+#, fuzzy
+#| msgid "Text Reference"
+msgid "Reference"
+msgstr "पाठ सन्दर्भ"
+
 #: main/rdf/KoSopranoTableModel.cpp:80
 msgid "Empty"
 msgstr ""
@@ -2455,12 +2461,6 @@ msgstr ""
 #| msgid "Select the index you want to reference"
 msgid "Select the object you want to reference"
 msgstr "तपाईँले सन्दर्भका लागि चाहानुभएको अनुक्रमाणिका चयन गर्नुहोस् "
-
-#: main/rdf/KoDocumentRdf.cpp:851
-#, fuzzy
-#| msgid "Text Reference"
-msgid "Reference"
-msgstr "पाठ सन्दर्भ"
 
 #: main/config/KoConfigDocumentPage.cpp:75
 #, fuzzy
@@ -3453,7 +3453,7 @@ msgstr ""
 msgid "Guide lines"
 msgstr "मार्गदर्शन रेखा"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: file: flake/tools/KZoomToolWidget.ui:20
 #. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
 #: rc.cpp:27
 #, fuzzy
@@ -3461,7 +3461,7 @@ msgstr "मार्गदर्शन रेखा"
 msgid "Zoom In"
 msgstr "जुम"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: file: flake/tools/KZoomToolWidget.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
 #: rc.cpp:30
 #, fuzzy
