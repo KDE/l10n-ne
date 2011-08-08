@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-04 02:21+0200\n"
+"POT-Creation-Date: 2011-08-08 02:19+0200\n"
 "PO-Revision-Date: 2007-08-08 15:46+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -75,10 +75,6 @@ msgstr "%1 विकल्प"
 msgctxt "(qtundo-format)"
 msgid "Paste Shapes"
 msgstr "आकारप्लेट सिर्जन गर्।नुहोस्"
-
-#: flake/KoToolBase.cpp:198 main/KoToolDocker.cpp:198
-msgid "Tool Options"
-msgstr "उपकरण्ति विकल्प"
 
 #: flake/KoToolManager.cpp:366
 #, kde-format
@@ -391,6 +387,22 @@ msgstr "वस्तुात सृजना गर्नुहोस ।"
 msgid "Pan"
 msgstr "प्यानन"
 
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+#| msgid "Change Alignment"
+msgctxt "(qtundo-format)"
+msgid "Change Segment"
+msgstr "पङ्क्तिबद्धता परिवर्तन गर्नुहोस्"
+
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "मार्ग  सम्पदन ाउपकर:"
+
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr "जुम"
+
 #: flake/tools/KoPathTool.cpp:90
 msgid "Corner point"
 msgstr "कुनो बिन्दुनुहोस्।"
@@ -466,49 +478,33 @@ msgstr "गोलभेडा रङ"
 msgid "Line/Curve"
 msgstr "मुद्रा"
 
-#: flake/tools/KoPathTool.cpp:184 flake/tools/KoCreatePathTool.cpp:369
+#: flake/tools/KoPathTool.cpp:185 flake/tools/KoCreatePathTool.cpp:369
 msgid "Snapping"
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:519
+#: flake/tools/KoPathTool.cpp:520
 msgid "Drag to move handle."
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:583
+#: flake/tools/KoPathTool.cpp:584
 msgid "Drag to move point. Shift click to change point type."
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:585
+#: flake/tools/KoPathTool.cpp:586
 #, fuzzy
 #| msgid "Move control point"
 msgid "Drag to move control point."
 msgstr "नियन्त्रण बिन्दुलाई सार्नुहोस्।"
 
-#: flake/tools/KoPathTool.cpp:610
+#: flake/tools/KoPathTool.cpp:611
 #, fuzzy
 #| msgid "Break subpath at points"
 msgid "Press B to break path at selected point."
 msgstr "सहायक मार्गलाई विन्दुमा विच्छेद गर्नुहोस्"
 
-#: flake/tools/KoPathTool.cpp:612
+#: flake/tools/KoPathTool.cpp:613
 msgid "Press B to break path at selected segments."
 msgstr ""
-
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-#| msgid "Change Alignment"
-msgctxt "(qtundo-format)"
-msgid "Change Segment"
-msgstr "पङ्क्तिबद्धता परिवर्तन गर्नुहोस्"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "मार्ग  सम्पदन ाउपकर:"
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
-msgstr "जुम"
 
 #: flake/tools/KoCreatePathTool.cpp:375
 msgid "Angle snapping delta"
@@ -2889,6 +2885,10 @@ msgstr "कुनै तस्वीर उपलब्ध छैन।"
 msgid "Use This Template"
 msgstr "यो टेम्प्लेट प्रयोग गर्नुहोस्"
 
+#: main/KoToolDocker.cpp:198
+msgid "Tool Options"
+msgstr "उपकरण्ति विकल्प"
+
 #: main/KoToolDocker.cpp:237
 msgid "Toggles showing a title bar"
 msgstr ""
@@ -4860,22 +4860,6 @@ msgstr ""
 msgid "Guide lines"
 msgstr "मार्गदर्शन रेखा"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
-#. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
-#: rc.cpp:35
-#, fuzzy
-#| msgid "Zoom"
-msgid "Zoom In"
-msgstr "जुम"
-
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
-#. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
-#: rc.cpp:38
-#, fuzzy
-#| msgid "Zoom"
-msgid "Zoom Out"
-msgstr "जुम"
-
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:39
 #. i18n: ectx: property (text), widget (QToolButton, corner)
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:46
@@ -4910,19 +4894,35 @@ msgstr "जुम"
 #. i18n: ectx: property (text), widget (QToolButton, open)
 #. i18n: file: widgets/KoEditColorSet.ui:78
 #. i18n: ectx: property (text), widget (QToolButton, save)
-#: rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:50 rc.cpp:53 rc.cpp:56 rc.cpp:59
-#: rc.cpp:62 rc.cpp:65 rc.cpp:68 rc.cpp:71 rc.cpp:74 rc.cpp:77 rc.cpp:535
+#: rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:50 rc.cpp:53
+#: rc.cpp:56 rc.cpp:59 rc.cpp:62 rc.cpp:65 rc.cpp:68 rc.cpp:71 rc.cpp:535
 #: rc.cpp:541 rc.cpp:547 rc.cpp:553
 msgid "..."
 msgstr "स्..."
 
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, convertToPath)
-#: rc.cpp:80
+#: rc.cpp:74
 #, fuzzy
 #| msgid "Convert to Path"
 msgid "Convert To Path"
 msgstr "मार्गमा रूपान्तरण गर्नुहोस्।"
+
+#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
+#: rc.cpp:77
+#, fuzzy
+#| msgid "Zoom"
+msgid "Zoom In"
+msgstr "जुम"
+
+#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
+#: rc.cpp:80
+#, fuzzy
+#| msgid "Zoom"
+msgid "Zoom Out"
+msgstr "जुम"
 
 #. i18n: file: kopageapp/tools/backgroundTool/BackgroundToolWidget.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, backgroundImage)
