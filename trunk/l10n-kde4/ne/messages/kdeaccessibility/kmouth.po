@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmouth\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:11+0200\n"
+"POT-Creation-Date: 2011-08-22 03:40+0200\n"
 "PO-Revision-Date: 2007-08-19 15:01+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,40 +17,281 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: phrasebook/phrasetree.cpp:471
-#, kde-format
+#: configwizard.cpp:38
+msgid "Initial Configuration - KMouth"
+msgstr "सुरुआत कन्फिगरेसन - केडीई माउथ"
+
+#: configwizard.cpp:57
+msgid "Text-to-Speech Configuration"
+msgstr "पाठ वाचक कन्फिगरेसन"
+
+#: configwizard.cpp:71
+msgid "Initial Phrase Book"
+msgstr "सुरुको वाक्यांश पुस्तक"
+
+#: configwizard.cpp:103 optionsdialog.cpp:145 optionsdialog.cpp:146
+msgid "Word Completion"
+msgstr "शब्द समाप्ति"
+
+#: kmouth.cpp:113
+msgid "&Open as History..."
+msgstr "इतिहासको रूपमा खोल्नुहोस्..."
+
+#: kmouth.cpp:116 kmouth.cpp:117
+msgid "Opens an existing file as history"
+msgstr "इतिहासको रूपमा अवस्थित फाइल खोल्छ"
+
+#: kmouth.cpp:121
+msgid "Save &History As..."
+msgstr "यस रूपमा इतिहास बचत गर्नुहोस्..."
+
+#: kmouth.cpp:124 kmouth.cpp:125
+msgid "Saves the actual history as..."
+msgstr "यस रूपमा वास्तविक इतिहास बचत गर्छ..."
+
+#: kmouth.cpp:129
+msgid "&Print History..."
+msgstr "मुद्रण इतिहास..."
+
+#: kmouth.cpp:132 kmouth.cpp:133
+msgid "Prints out the actual history"
+msgstr "वास्तविक इतिहास मुद्रण गर्छ"
+
+#: kmouth.cpp:136 kmouth.cpp:137
+msgid "Quits the application"
+msgstr "अनुप्रयोग नष्ट गर्छ"
+
+#: kmouth.cpp:141
+msgid "Cuts the selected section and puts it to the clipboard"
+msgstr "चयन गरिएको खण्ड काट्छ र यसलाई क्लिपबोर्डमा राख्छ"
+
+#: kmouth.cpp:142
 msgid ""
-"The '%1' key combination has already been allocated to %2.\n"
-"Please choose a unique key combination."
+"Cuts the selected section and puts it to the clipboard. If there is some "
+"text selected in the edit field it is placed it on the clipboard. Otherwise "
+"the selected sentences in the history (if any) are placed on the clipboard."
 msgstr ""
-"'%1'कुञ्जी संयोजन पहिले नै %2 मा बाँडफाँड गरिएको छ ।\n"
-"कृपया अद्वितिय कुञ्जी संयोजन रोज्नुहोस् ।"
+"चयन गरिएको खण्ड काट्छ र यसलाई क्लिपबोर्डमा राख्दछ । यदि सम्पादन फिल्डमा केही पाठ चयन "
+"गरिएको छ भने यसलाई क्लिपबोर्ड माथि राखिन्छ । अन्यथा इतिहासमा चयन गरिएका (यदि "
+"भएमा) वाक्य क्लिपबोर्डमा राखिन्छ ।"
 
-#: phrasebook/phrasetree.cpp:493
-#, kde-format
-msgid "the standard \"%1\" action"
-msgstr "मानक \"%1\" कार्य"
+#: kmouth.cpp:145
+msgid "Copies the selected section to the clipboard"
+msgstr "चयन गरिएको खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ"
 
-#: phrasebook/phrasetree.cpp:494
-msgid "Conflict with Standard Application Shortcut"
-msgstr "मानक अनुप्रयोग सर्टकटमा द्वन्द्व"
+#: kmouth.cpp:146
+msgid ""
+"Copies the selected section to the clipboard. If there is some text selected "
+"in the edit field it is copied to the clipboard. Otherwise the selected "
+"sentences in the history (if any) are copied to the clipboard."
+msgstr ""
+"चयन गरिएका खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ । यदि सम्पादन फिल्डमा केही पाठ चयन "
+"गरिएको भएमा यसलाई क्लिपबोर्डमा प्रतिलिपि गर्नेछ । अन्यथा इतिहासमा (यदि भएमा) चयन "
+"गरिएका वाक्य क्लिपबोर्डमा प्रतिलिपि हुन्छन् ।"
 
-#: phrasebook/phrasetree.cpp:511
-#, kde-format
-msgid "the global \"%1\" action"
-msgstr "विश्वव्यापी \"%1\" कार्य"
+#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:413
+#, fuzzy
+#| msgid "Pastes the clipboard contents to actual position"
+msgid "Pastes the clipboard contents to current position"
+msgstr "क्लिपबोर्ड सामाग्री वास्तविक स्थितिमा टाँस्दछ"
 
-#: phrasebook/phrasetree.cpp:512
-msgid "Conflict with Global Shortcuts"
-msgstr "विश्वव्यापी सर्टकटमा द्वन्द्व"
+#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:414
+msgid ""
+"Pastes the clipboard contents at the current cursor position into the edit "
+"field."
+msgstr "क्लिपबोर्ड सामाग्री सम्पादन फिल्डको हालको कर्सर स्थितिमा टाँस्दछ ।"
 
-#: phrasebook/phrasetree.cpp:527
-msgid "an other phrase"
-msgstr "अन्य वाक्यांश"
+#: kmouth.cpp:154
+#, fuzzy
+#| msgid "&Speak"
+msgctxt "Start speaking"
+msgid "&Speak"
+msgstr "बोल्नुहोस्"
 
-#: phrasebook/phrasetree.cpp:528
-msgid "Key Conflict"
-msgstr "कुञ्जी द्वन्द्व"
+#: kmouth.cpp:156
+msgid "Speaks the currently active sentence(s)"
+msgstr "हालै सक्रिय पारिएको वाक्य(हरू) बोल्दछ"
+
+#: kmouth.cpp:157 phraselist.cpp:86
+msgid ""
+"Speaks the currently active sentence(s). If there is some text in the edit "
+"field it is spoken. Otherwise the selected sentences in the history (if any) "
+"are spoken."
+msgstr ""
+"हालै सक्रिय पारिएका वाक्य(हरू) बोल्दछ । यदि सम्पादन फिल्डमा केही पाठ भएमा यो बोलिने छ "
+"। अन्यथा इतिहासमा चयन गरिएका वाक्य (यदि भएमा) बोलिने छ ।"
+
+#: kmouth.cpp:161
+msgid "&Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
+
+#: kmouth.cpp:172
+msgid "Show P&hrasebook Bar"
+msgstr "वाक्यांश पुस्तकपट्टी देखाउनुहोस्"
+
+#: kmouth.cpp:174 kmouth.cpp:175
+msgid "Enables/disables the phrasebook bar"
+msgstr "वाक्यांश पुस्तकपट्टी सक्षम/अक्षम पार्छ"
+
+#: kmouth.cpp:178 kmouth.cpp:179
+msgid "Enables/disables the statusbar"
+msgstr "स्थितिपट्टी सक्षम/अक्षम पार्छ"
+
+#: kmouth.cpp:183
+msgid "&Configure KMouth..."
+msgstr "केडीई माउथ कन्फिगर गर्नुहोस्..."
+
+#: kmouth.cpp:185 kmouth.cpp:186
+msgid "Opens the configuration dialog"
+msgstr "कन्फिगरेसन संवाद खोल्छ"
+
+#: kmouth.cpp:194 phraselist.cpp:83
+msgid "&Speak"
+msgstr "बोल्नुहोस्"
+
+#: kmouth.cpp:195 kmouth.cpp:197
+msgid "Speaks the currently selected phrases in the history"
+msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश बोल्दछ"
+
+#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:418
+msgid "&Delete"
+msgstr ""
+
+#: kmouth.cpp:203 kmouth.cpp:204
+msgid "Deletes the currently selected phrases from the history"
+msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश मेट्दछ"
+
+#: kmouth.cpp:208
+msgid "Cu&t"
+msgstr "काट्नुहोस्"
+
+#: kmouth.cpp:210 kmouth.cpp:211
+msgid ""
+"Cuts the currently selected phrases from the history and puts them to the "
+"clipboard"
+msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश काट्छ र तीनलाई क्लिपबोर्डमा राख्छ"
+
+#: kmouth.cpp:215
+msgid "&Copy"
+msgstr ""
+
+#: kmouth.cpp:217 kmouth.cpp:218
+msgid "Copies the currently selected phrases from the history to the clipboard"
+msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश क्लिपबोर्डमा प्रतिलिपि गर्छ"
+
+#: kmouth.cpp:221
+msgid "Select &All Entries"
+msgstr "सबै प्रविष्टि चयन गर्नुहोस्"
+
+#: kmouth.cpp:223 kmouth.cpp:224
+msgid "Selects all phrases in the history"
+msgstr "इतिहासका सबै वाक्यांश चयन गर्छ"
+
+#: kmouth.cpp:227
+msgid "D&eselect All Entries"
+msgstr "सबै प्रविष्टि चयनबाट हटाउनुहोस्"
+
+#: kmouth.cpp:229 kmouth.cpp:230
+msgid "Deselects all phrases in the history"
+msgstr "इतिहासका सबै वाक्यांश चयनबाट हटाउछ"
+
+#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
+#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
+#, fuzzy
+#| msgid "Ready."
+msgctxt "The job is done"
+msgid "Ready."
+msgstr "तयार"
+
+#: kmouth.cpp:259 kmouth.cpp:366
+msgid "Opening file..."
+msgstr "फाइल खुल्दैछ..."
+
+#: kmouth.cpp:374
+msgid "Saving history with a new filename..."
+msgstr "इतिहास नयाँ फाइल नाममा बचत गर्दैछ..."
+
+#: kmouth.cpp:383
+msgid "Printing..."
+msgstr "मुद्रण गर्दैछ..."
+
+#: kmouth.cpp:401
+#, fuzzy
+#| msgid "Exiting..."
+msgctxt "Shutting down the application"
+msgid "Exiting..."
+msgstr "बाहिर निस्कदैछ..."
+
+#: kmouth.cpp:439
+msgid "Toggling menubar..."
+msgstr "मेनुपट्टी टगल गर्दैछ..."
+
+#: kmouth.cpp:451
+msgid "Toggling toolbar..."
+msgstr "उपकरणपट्टी टगल गर्दैछ..."
+
+#: kmouth.cpp:468
+msgid "Toggling phrasebook bar..."
+msgstr "वाक्यांश पुस्तकपट्टी टगल गर्दैछ..."
+
+#: kmouth.cpp:485
+msgid "Toggle the statusbar..."
+msgstr "स्थितिपट्टी टगल गर्दैछ..."
+
+#: main.cpp:28
+msgid "A type-and-say front end for speech synthesizers"
+msgstr "संवाद सिन्थेसाइजरका लागि टाइप-एन्ड-से फ्रन्टइन्ड"
+
+#: main.cpp:35
+msgid "KMouth"
+msgstr "केडीई माउथ"
+
+#: main.cpp:37
+msgid "(c) 2002/2003, Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:38
+msgid "Gunnar Schmi Dt"
+msgstr ""
+
+#: main.cpp:42
+msgid "History file to open"
+msgstr "खोल्नका लागि इतिहास फाइल"
+
+#: main.cpp:45
+msgid "Olaf Schmidt"
+msgstr ""
+
+#: main.cpp:45
+msgid "Tips, extended phrase books"
+msgstr "टिप, विस्तारित वाक्यांश पुस्तक"
+
+#: optionsdialog.cpp:120
+#, fuzzy
+msgid "Configuration"
+msgstr "पाठ वाचक कन्फिगरेसन"
+
+#: optionsdialog.cpp:133
+msgid "&Preferences"
+msgstr "प्राथमिकता"
+
+#: optionsdialog.cpp:137
+msgid "&Text-to-Speech"
+msgstr "पाठ वाचक"
+
+#: optionsdialog.cpp:139 optionsdialog.cpp:140
+msgid "General Options"
+msgstr "साधारण विकल्प"
+
+#: optionsdialog.cpp:152
+#, fuzzy
+#| msgid "KTTSD Speech Service"
+msgid "Jovie Speech Service"
+msgstr "KTTSD संवाद सेवा"
+
+#: optionsdialog.cpp:154
+msgid "KDE Text-to-Speech Daemon Configuration"
+msgstr "केडीई पाठ वाचक डेइमन कन्फिगरेसन"
 
 #: phrasebook/phrasebook.cpp:263 phrasebook/phrasebookdialog.cpp:790
 msgid ""
@@ -230,22 +471,6 @@ msgid ""
 "Copies the currently selected entry from the phrase book to the clipboard"
 msgstr "हालै चयन गरिएका प्रविष्टि वाक्यांश पुस्तकबाट क्लिपबोर्डमा प्रतिलिपि गर्छ"
 
-#: phrasebook/phrasebookdialog.cpp:413 kmouth.cpp:149
-#, fuzzy
-#| msgid "Pastes the clipboard contents to actual position"
-msgid "Pastes the clipboard contents to current position"
-msgstr "क्लिपबोर्ड सामाग्री वास्तविक स्थितिमा टाँस्दछ"
-
-#: phrasebook/phrasebookdialog.cpp:414 kmouth.cpp:150
-msgid ""
-"Pastes the clipboard contents at the current cursor position into the edit "
-"field."
-msgstr "क्लिपबोर्ड सामाग्री सम्पादन फिल्डको हालको कर्सर स्थितिमा टाँस्दछ ।"
-
-#: phrasebook/phrasebookdialog.cpp:418 kmouth.cpp:201
-msgid "&Delete"
-msgstr ""
-
 #: phrasebook/phrasebookdialog.cpp:420 phrasebook/phrasebookdialog.cpp:421
 msgid "Deletes the selected entries from the phrase book"
 msgstr "वाक्यांश पुस्तकमा चयन गरिएका प्रविष्टि मेट्छ"
@@ -324,375 +549,40 @@ msgstr ""
 "फाइल बचत गर्दा त्रुटि थियो\n"
 "%1"
 
-#: wordcompletion/wordlist.cpp:114
-msgid "Creating Word List"
-msgstr "शब्द सूची सिर्जना गर्दैछ"
-
-#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
-msgid "Parsing the KDE documentation..."
-msgstr "केडीई मिसिलीकरण पद वर्णन गर्दैछ..."
-
-#: wordcompletion/wordlist.cpp:243
-msgid "Merging dictionaries..."
-msgstr "शब्दकोश गाभ्दैछ..."
-
-#: wordcompletion/wordlist.cpp:314
-msgid "Parsing file..."
-msgstr "फाइल पद वर्णन गर्दैछ..."
-
-#: wordcompletion/wordlist.cpp:325
-msgid "Parsing directory..."
-msgstr "शब्दकोश पद वर्णन गर्दैछ..."
-
-#: wordcompletion/wordlist.cpp:517
-msgid "Performing spell check..."
-msgstr "हिज्जे परीक्षण सम्पादन गर्दैछ..."
-
-#: wordcompletion/wordcompletionwidget.cpp:75
-#: wordcompletion/wordcompletionwidget.cpp:144
-#: wordcompletion/wordcompletionwidget.cpp:208
-msgid "without name"
-msgstr "नाम बिना"
-
-#: wordcompletion/wordcompletionwidget.cpp:254
-msgid "Export Dictionary"
-msgstr "शब्दकोश निर्यात गर्नुहोस्"
-
-#: wordcompletion/dictionarycreationwizard.cpp:49
-msgid "Source of New Dictionary (1)"
-msgstr "नयाँ शब्दकोशको स्रोत (१)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:54
-#: wordcompletion/dictionarycreationwizard.cpp:58
-#: wordcompletion/dictionarycreationwizard.cpp:66
-#: wordcompletion/dictionarycreationwizard.cpp:71
-#: wordcompletion/dictionarycreationwizard.cpp:116
-#: wordcompletion/dictionarycreationwizard.cpp:132
-#: wordcompletion/dictionarycreationwizard.cpp:141
-#: wordcompletion/dictionarycreationwizard.cpp:150
-msgid "Source of New Dictionary (2)"
-msgstr "नयाँ शब्दकोशको स्रोत (२)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:59
-#, fuzzy
-#| msgid "&Directory:"
-msgctxt "In which directory is the file located?"
-msgid "&Directory:"
-msgstr "शब्दकोश:"
-
-#: wordcompletion/dictionarycreationwizard.cpp:60
-#: wordcompletion/dictionarycreationwizard.cpp:62
+#: phrasebook/phrasetree.cpp:471
+#, kde-format
 msgid ""
-"With this input field you specify which directory you want to load for "
-"creating the new dictionary."
+"The '%1' key combination has already been allocated to %2.\n"
+"Please choose a unique key combination."
 msgstr ""
-"यो आगत फिल्डमा तपाईँले नयाँ शब्दकोश सिर्जना गर्दा लोड गर्न चाहनुभएको डाइरेक्टरी निर्दिष्ट "
-"गर्नुहुन्छ ।"
-
-#: wordcompletion/dictionarycreationwizard.cpp:100
-#: texttospeechconfigurationwidget.cpp:48
-#, fuzzy
-#| msgid "Local"
-msgctxt "Local characterset"
-msgid "Local"
-msgstr "स्थानीय"
-
-#: wordcompletion/dictionarycreationwizard.cpp:103
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin characterset"
-msgid "Latin1"
-msgstr "ल्याटिन 1"
-
-#: wordcompletion/dictionarycreationwizard.cpp:104
-#: texttospeechconfigurationwidget.cpp:52
-msgid "Unicode"
-msgstr "यूनिकोड"
-
-#: wordcompletion/dictionarycreationwizard.cpp:237
-msgid "Merge result"
-msgstr "गाभेको नतिजा"
-
-#: wordcompletion/dictionarycreationwizard.cpp:240
-msgctxt "In the sense of a blank word list"
-msgid "Empty list"
-msgstr "खाली सूची"
-
-#: wordcompletion/dictionarycreationwizard.cpp:249
-msgid "KDE Documentation"
-msgstr "केडीई मिसिलीकरण"
-
-#: wordcompletion/dictionarycreationwizard.cpp:371
-msgctxt "Default dictionary"
-msgid "Default"
-msgstr ""
-
-#: kmouth.cpp:113
-msgid "&Open as History..."
-msgstr "इतिहासको रूपमा खोल्नुहोस्..."
-
-#: kmouth.cpp:116 kmouth.cpp:117
-msgid "Opens an existing file as history"
-msgstr "इतिहासको रूपमा अवस्थित फाइल खोल्छ"
-
-#: kmouth.cpp:121
-msgid "Save &History As..."
-msgstr "यस रूपमा इतिहास बचत गर्नुहोस्..."
-
-#: kmouth.cpp:124 kmouth.cpp:125
-msgid "Saves the actual history as..."
-msgstr "यस रूपमा वास्तविक इतिहास बचत गर्छ..."
-
-#: kmouth.cpp:129
-msgid "&Print History..."
-msgstr "मुद्रण इतिहास..."
-
-#: kmouth.cpp:132 kmouth.cpp:133
-msgid "Prints out the actual history"
-msgstr "वास्तविक इतिहास मुद्रण गर्छ"
-
-#: kmouth.cpp:136 kmouth.cpp:137
-msgid "Quits the application"
-msgstr "अनुप्रयोग नष्ट गर्छ"
-
-#: kmouth.cpp:141
-msgid "Cuts the selected section and puts it to the clipboard"
-msgstr "चयन गरिएको खण्ड काट्छ र यसलाई क्लिपबोर्डमा राख्छ"
-
-#: kmouth.cpp:142
-msgid ""
-"Cuts the selected section and puts it to the clipboard. If there is some "
-"text selected in the edit field it is placed it on the clipboard. Otherwise "
-"the selected sentences in the history (if any) are placed on the clipboard."
-msgstr ""
-"चयन गरिएको खण्ड काट्छ र यसलाई क्लिपबोर्डमा राख्दछ । यदि सम्पादन फिल्डमा केही पाठ चयन "
-"गरिएको छ भने यसलाई क्लिपबोर्ड माथि राखिन्छ । अन्यथा इतिहासमा चयन गरिएका (यदि "
-"भएमा) वाक्य क्लिपबोर्डमा राखिन्छ ।"
-
-#: kmouth.cpp:145
-msgid "Copies the selected section to the clipboard"
-msgstr "चयन गरिएको खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ"
-
-#: kmouth.cpp:146
-msgid ""
-"Copies the selected section to the clipboard. If there is some text selected "
-"in the edit field it is copied to the clipboard. Otherwise the selected "
-"sentences in the history (if any) are copied to the clipboard."
-msgstr ""
-"चयन गरिएका खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ । यदि सम्पादन फिल्डमा केही पाठ चयन "
-"गरिएको भएमा यसलाई क्लिपबोर्डमा प्रतिलिपि गर्नेछ । अन्यथा इतिहासमा (यदि भएमा) चयन "
-"गरिएका वाक्य क्लिपबोर्डमा प्रतिलिपि हुन्छन् ।"
-
-#: kmouth.cpp:154
-#, fuzzy
-#| msgid "&Speak"
-msgctxt "Start speaking"
-msgid "&Speak"
-msgstr "बोल्नुहोस्"
-
-#: kmouth.cpp:156
-msgid "Speaks the currently active sentence(s)"
-msgstr "हालै सक्रिय पारिएको वाक्य(हरू) बोल्दछ"
-
-#: kmouth.cpp:157 phraselist.cpp:86
-msgid ""
-"Speaks the currently active sentence(s). If there is some text in the edit "
-"field it is spoken. Otherwise the selected sentences in the history (if any) "
-"are spoken."
-msgstr ""
-"हालै सक्रिय पारिएका वाक्य(हरू) बोल्दछ । यदि सम्पादन फिल्डमा केही पाठ भएमा यो बोलिने छ "
-"। अन्यथा इतिहासमा चयन गरिएका वाक्य (यदि भएमा) बोलिने छ ।"
-
-#: kmouth.cpp:161
-msgid "&Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#: kmouth.cpp:172
-msgid "Show P&hrasebook Bar"
-msgstr "वाक्यांश पुस्तकपट्टी देखाउनुहोस्"
-
-#: kmouth.cpp:174 kmouth.cpp:175
-msgid "Enables/disables the phrasebook bar"
-msgstr "वाक्यांश पुस्तकपट्टी सक्षम/अक्षम पार्छ"
-
-#: kmouth.cpp:178 kmouth.cpp:179
-msgid "Enables/disables the statusbar"
-msgstr "स्थितिपट्टी सक्षम/अक्षम पार्छ"
-
-#: kmouth.cpp:183
-msgid "&Configure KMouth..."
-msgstr "केडीई माउथ कन्फिगर गर्नुहोस्..."
-
-#: kmouth.cpp:185 kmouth.cpp:186
-msgid "Opens the configuration dialog"
-msgstr "कन्फिगरेसन संवाद खोल्छ"
-
-#: kmouth.cpp:194 phraselist.cpp:83
-msgid "&Speak"
-msgstr "बोल्नुहोस्"
-
-#: kmouth.cpp:195 kmouth.cpp:197
-msgid "Speaks the currently selected phrases in the history"
-msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश बोल्दछ"
-
-#: kmouth.cpp:203 kmouth.cpp:204
-msgid "Deletes the currently selected phrases from the history"
-msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश मेट्दछ"
-
-#: kmouth.cpp:208
-msgid "Cu&t"
-msgstr "काट्नुहोस्"
-
-#: kmouth.cpp:210 kmouth.cpp:211
-msgid ""
-"Cuts the currently selected phrases from the history and puts them to the "
-"clipboard"
-msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश काट्छ र तीनलाई क्लिपबोर्डमा राख्छ"
-
-#: kmouth.cpp:215
-msgid "&Copy"
-msgstr ""
-
-#: kmouth.cpp:217 kmouth.cpp:218
-msgid "Copies the currently selected phrases from the history to the clipboard"
-msgstr "इतिहासमा हालै चयन गरिएका वाक्यांश क्लिपबोर्डमा प्रतिलिपि गर्छ"
-
-#: kmouth.cpp:221
-msgid "Select &All Entries"
-msgstr "सबै प्रविष्टि चयन गर्नुहोस्"
-
-#: kmouth.cpp:223 kmouth.cpp:224
-msgid "Selects all phrases in the history"
-msgstr "इतिहासका सबै वाक्यांश चयन गर्छ"
-
-#: kmouth.cpp:227
-msgid "D&eselect All Entries"
-msgstr "सबै प्रविष्टि चयनबाट हटाउनुहोस्"
-
-#: kmouth.cpp:229 kmouth.cpp:230
-msgid "Deselects all phrases in the history"
-msgstr "इतिहासका सबै वाक्यांश चयनबाट हटाउछ"
-
-#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
-#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
-#, fuzzy
-#| msgid "Ready."
-msgctxt "The job is done"
-msgid "Ready."
-msgstr "तयार"
-
-#: kmouth.cpp:259 kmouth.cpp:366
-msgid "Opening file..."
-msgstr "फाइल खुल्दैछ..."
-
-#: kmouth.cpp:374
-msgid "Saving history with a new filename..."
-msgstr "इतिहास नयाँ फाइल नाममा बचत गर्दैछ..."
-
-#: kmouth.cpp:383
-msgid "Printing..."
-msgstr "मुद्रण गर्दैछ..."
-
-#: kmouth.cpp:401
-#, fuzzy
-#| msgid "Exiting..."
-msgctxt "Shutting down the application"
-msgid "Exiting..."
-msgstr "बाहिर निस्कदैछ..."
-
-#: kmouth.cpp:439
-msgid "Toggling menubar..."
-msgstr "मेनुपट्टी टगल गर्दैछ..."
-
-#: kmouth.cpp:451
-msgid "Toggling toolbar..."
-msgstr "उपकरणपट्टी टगल गर्दैछ..."
-
-#: kmouth.cpp:468
-msgid "Toggling phrasebook bar..."
-msgstr "वाक्यांश पुस्तकपट्टी टगल गर्दैछ..."
-
-#: kmouth.cpp:485
-msgid "Toggle the statusbar..."
-msgstr "स्थितिपट्टी टगल गर्दैछ..."
-
-#: texttospeechconfigurationwidget.cpp:51
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin1 characterset"
-msgid "Latin1"
-msgstr "ल्याटिन 1"
-
-#: optionsdialog.cpp:120
-#, fuzzy
-msgid "Configuration"
-msgstr "पाठ वाचक कन्फिगरेसन"
-
-#: optionsdialog.cpp:133
-msgid "&Preferences"
-msgstr "प्राथमिकता"
-
-#: optionsdialog.cpp:137
-msgid "&Text-to-Speech"
-msgstr "पाठ वाचक"
-
-#: optionsdialog.cpp:139 optionsdialog.cpp:140
-msgid "General Options"
-msgstr "साधारण विकल्प"
-
-#: optionsdialog.cpp:145 optionsdialog.cpp:146 configwizard.cpp:103
-msgid "Word Completion"
-msgstr "शब्द समाप्ति"
-
-#: optionsdialog.cpp:152
-#, fuzzy
-#| msgid "KTTSD Speech Service"
-msgid "Jovie Speech Service"
-msgstr "KTTSD संवाद सेवा"
-
-#: optionsdialog.cpp:154
-msgid "KDE Text-to-Speech Daemon Configuration"
-msgstr "केडीई पाठ वाचक डेइमन कन्फिगरेसन"
-
-#: main.cpp:28
-msgid "A type-and-say front end for speech synthesizers"
-msgstr "संवाद सिन्थेसाइजरका लागि टाइप-एन्ड-से फ्रन्टइन्ड"
-
-#: main.cpp:35
-msgid "KMouth"
-msgstr "केडीई माउथ"
-
-#: main.cpp:37
-msgid "(c) 2002/2003, Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:38
-msgid "Gunnar Schmi Dt"
-msgstr ""
-
-#: main.cpp:42
-msgid "History file to open"
-msgstr "खोल्नका लागि इतिहास फाइल"
-
-#: main.cpp:45
-msgid "Olaf Schmidt"
-msgstr ""
-
-#: main.cpp:45
-msgid "Tips, extended phrase books"
-msgstr "टिप, विस्तारित वाक्यांश पुस्तक"
-
-#: configwizard.cpp:38
-msgid "Initial Configuration - KMouth"
-msgstr "सुरुआत कन्फिगरेसन - केडीई माउथ"
-
-#: configwizard.cpp:57
-msgid "Text-to-Speech Configuration"
-msgstr "पाठ वाचक कन्फिगरेसन"
-
-#: configwizard.cpp:71
-msgid "Initial Phrase Book"
-msgstr "सुरुको वाक्यांश पुस्तक"
+"'%1'कुञ्जी संयोजन पहिले नै %2 मा बाँडफाँड गरिएको छ ।\n"
+"कृपया अद्वितिय कुञ्जी संयोजन रोज्नुहोस् ।"
+
+#: phrasebook/phrasetree.cpp:493
+#, kde-format
+msgid "the standard \"%1\" action"
+msgstr "मानक \"%1\" कार्य"
+
+#: phrasebook/phrasetree.cpp:494
+msgid "Conflict with Standard Application Shortcut"
+msgstr "मानक अनुप्रयोग सर्टकटमा द्वन्द्व"
+
+#: phrasebook/phrasetree.cpp:511
+#, kde-format
+msgid "the global \"%1\" action"
+msgstr "विश्वव्यापी \"%1\" कार्य"
+
+#: phrasebook/phrasetree.cpp:512
+msgid "Conflict with Global Shortcuts"
+msgstr "विश्वव्यापी सर्टकटमा द्वन्द्व"
+
+#: phrasebook/phrasetree.cpp:527
+msgid "an other phrase"
+msgstr "अन्य वाक्यांश"
+
+#: phrasebook/phrasetree.cpp:528
+msgid "Key Conflict"
+msgstr "कुञ्जी द्वन्द्व"
 
 #: phraselist.cpp:60
 msgid ""
@@ -727,6 +617,116 @@ msgstr ""
 #: phraselist.cpp:459
 msgid "Open File as History"
 msgstr "इतिहासको रुपमा फाइल खोल्नुहोस्"
+
+#: texttospeechconfigurationwidget.cpp:48
+#: wordcompletion/dictionarycreationwizard.cpp:100
+#, fuzzy
+#| msgid "Local"
+msgctxt "Local characterset"
+msgid "Local"
+msgstr "स्थानीय"
+
+#: texttospeechconfigurationwidget.cpp:51
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin1 characterset"
+msgid "Latin1"
+msgstr "ल्याटिन 1"
+
+#: texttospeechconfigurationwidget.cpp:52
+#: wordcompletion/dictionarycreationwizard.cpp:104
+msgid "Unicode"
+msgstr "यूनिकोड"
+
+#: wordcompletion/dictionarycreationwizard.cpp:49
+msgid "Source of New Dictionary (1)"
+msgstr "नयाँ शब्दकोशको स्रोत (१)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:54
+#: wordcompletion/dictionarycreationwizard.cpp:58
+#: wordcompletion/dictionarycreationwizard.cpp:66
+#: wordcompletion/dictionarycreationwizard.cpp:71
+#: wordcompletion/dictionarycreationwizard.cpp:116
+#: wordcompletion/dictionarycreationwizard.cpp:132
+#: wordcompletion/dictionarycreationwizard.cpp:141
+#: wordcompletion/dictionarycreationwizard.cpp:150
+msgid "Source of New Dictionary (2)"
+msgstr "नयाँ शब्दकोशको स्रोत (२)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:59
+#, fuzzy
+#| msgid "&Directory:"
+msgctxt "In which directory is the file located?"
+msgid "&Directory:"
+msgstr "शब्दकोश:"
+
+#: wordcompletion/dictionarycreationwizard.cpp:60
+#: wordcompletion/dictionarycreationwizard.cpp:62
+msgid ""
+"With this input field you specify which directory you want to load for "
+"creating the new dictionary."
+msgstr ""
+"यो आगत फिल्डमा तपाईँले नयाँ शब्दकोश सिर्जना गर्दा लोड गर्न चाहनुभएको डाइरेक्टरी निर्दिष्ट "
+"गर्नुहुन्छ ।"
+
+#: wordcompletion/dictionarycreationwizard.cpp:103
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin characterset"
+msgid "Latin1"
+msgstr "ल्याटिन 1"
+
+#: wordcompletion/dictionarycreationwizard.cpp:237
+msgid "Merge result"
+msgstr "गाभेको नतिजा"
+
+#: wordcompletion/dictionarycreationwizard.cpp:240
+msgctxt "In the sense of a blank word list"
+msgid "Empty list"
+msgstr "खाली सूची"
+
+#: wordcompletion/dictionarycreationwizard.cpp:249
+msgid "KDE Documentation"
+msgstr "केडीई मिसिलीकरण"
+
+#: wordcompletion/dictionarycreationwizard.cpp:371
+msgctxt "Default dictionary"
+msgid "Default"
+msgstr ""
+
+#: wordcompletion/wordcompletionwidget.cpp:75
+#: wordcompletion/wordcompletionwidget.cpp:144
+#: wordcompletion/wordcompletionwidget.cpp:208
+msgid "without name"
+msgstr "नाम बिना"
+
+#: wordcompletion/wordcompletionwidget.cpp:254
+msgid "Export Dictionary"
+msgstr "शब्दकोश निर्यात गर्नुहोस्"
+
+#: wordcompletion/wordlist.cpp:114
+msgid "Creating Word List"
+msgstr "शब्द सूची सिर्जना गर्दैछ"
+
+#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
+msgid "Parsing the KDE documentation..."
+msgstr "केडीई मिसिलीकरण पद वर्णन गर्दैछ..."
+
+#: wordcompletion/wordlist.cpp:243
+msgid "Merging dictionaries..."
+msgstr "शब्दकोश गाभ्दैछ..."
+
+#: wordcompletion/wordlist.cpp:314
+msgid "Parsing file..."
+msgstr "फाइल पद वर्णन गर्दैछ..."
+
+#: wordcompletion/wordlist.cpp:325
+msgid "Parsing directory..."
+msgstr "शब्दकोश पद वर्णन गर्दैछ..."
+
+#: wordcompletion/wordlist.cpp:517
+msgid "Performing spell check..."
+msgstr "हिज्जे परीक्षण सम्पादन गर्दैछ..."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
