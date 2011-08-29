@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2007-08-08 15:46+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -43,6 +43,18 @@ msgstr " उपकरण सक्रिय बनाउनुहोस्: %1"
 #| msgid "Create Shapes"
 msgid "Paste Shapes"
 msgstr "आकारप्लेट सिर्जन गर्।नुहोस्"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+#| msgid "Group shapes"
+msgid "Group Shapes"
+msgstr "आकारलाई समुह बनाउनुहोस्"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "समूह थप्नुहोस्"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -87,18 +99,6 @@ msgstr "किनारा सेट गर्नुहोस्।"
 #| msgid "Distribute shapes"
 msgid "Distribute Shapes"
 msgstr "आकारलाई वितरण गर्नुहोस्"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-#| msgid "Group shapes"
-msgid "Group Shapes"
-msgstr "आकारलाई समुह बनाउनुहोस्"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "समूह थप्नुहोस्"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -278,10 +278,6 @@ msgstr "मार्ग  सम्पदन ाउपकर:"
 msgid "Zoom"
 msgstr "जुम"
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "मार्ग सिर्जना गर्नुहोस्।"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -295,6 +291,10 @@ msgstr ""
 #| msgid "Change Indent"
 msgid "Angle Constraints"
 msgstr "इन्डेन्ट परिवर्तन गर्नुहोस्"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "मार्ग सिर्जना गर्नुहोस्।"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 #, fuzzy
@@ -528,17 +528,6 @@ msgstr "स्क्रिप्ट"
 msgid "Collection"
 msgstr "सङ्कलन"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, kde-format
-msgid "Slide %1"
-msgstr ""
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-#| msgid "Fit Page"
-msgid "Page %1"
-msgstr "पृष्ठ ठीक गर्नुहोस्"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "कागजात"
@@ -665,41 +654,16 @@ msgstr "कम्पनी"
 msgid "Paste"
 msgstr "मिति"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
+#, kde-format
+msgid "Slide %1"
+msgstr ""
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
 #, fuzzy, kde-format
 #| msgid "Fit Page"
-msgid "Page  %1"
+msgid "Page %1"
 msgstr "पृष्ठ ठीक गर्नुहोस्"
-
-#: kopageapp/KoPADocumentModel.cpp:167
-#, fuzzy
-#| msgid "Group:"
-msgid "Group"
-msgstr "समूह:"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-#, fuzzy
-#| msgid "Save"
-msgid "Shape"
-msgstr "बचत"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-#, fuzzy
-#| msgid "Variable"
-msgid "Visible"
-msgstr "चल"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-#, fuzzy
-#| msgid "Dockers"
-msgid "Locked"
-msgstr "डकर्स"
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-#, fuzzy
-#| msgid "Reorder shapes"
-msgid "Reparent shapes"
-msgstr "आकारलाई पून:आदेश गर्नुहोस्।"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -1010,6 +974,42 @@ msgid_plural "Paste Pages"
 msgstr[0] "पाठ टाँस्नुहोस्"
 msgstr[1] "पाठ टाँस्नुहोस्"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, fuzzy, kde-format
+#| msgid "Fit Page"
+msgid "Page  %1"
+msgstr "पृष्ठ ठीक गर्नुहोस्"
+
+#: kopageapp/KoPADocumentModel.cpp:167
+#, fuzzy
+#| msgid "Group:"
+msgid "Group"
+msgstr "समूह:"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+#, fuzzy
+#| msgid "Save"
+msgid "Shape"
+msgstr "बचत"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+#, fuzzy
+#| msgid "Variable"
+msgid "Visible"
+msgstr "चल"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+#, fuzzy
+#| msgid "Dockers"
+msgid "Locked"
+msgstr "डकर्स"
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+#, fuzzy
+#| msgid "Reorder shapes"
+msgid "Reparent shapes"
+msgstr "आकारलाई पून:आदेश गर्नुहोस्।"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -1061,21 +1061,6 @@ msgstr "विच्छेदन घुसाउनुहोस्"
 msgid "Insert Row Above"
 msgstr "पृष्ठ घुसाउनुहोस्"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr "कुनै पनि होइन"
-
-#: kotext/KoText.cpp:46
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "एकल"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "दोहोरो"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -1097,11 +1082,20 @@ msgstr[1] ""
 msgid "Replace %1 with %2?"
 msgstr "%1...सँग १/२...प्रतिस्थापन गर्नुहोस्"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
-msgid "Format"
-msgstr "ढाँचा"
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: kotext/KOdfText.cpp:46
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "एकल"
+
+#: kotext/KOdfText.cpp:47
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "दोहोरो"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -1124,6 +1118,12 @@ msgstr "तपाईँले सन्दर्भका लागि चाह
 #, kde-format
 msgid "%1 Options"
 msgstr "%1 विकल्प"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+msgid "Format"
+msgstr "ढाँचा"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -3237,6 +3237,56 @@ msgstr "फिकाहरियो"
 msgid "Add/Remove Colors"
 msgstr "शब्द हटाउनुहोस्"
 
+#: widgets/KoPageLayoutWidget.cpp:178
+#, fuzzy
+#| msgid "Left:"
+msgid "Left Edge:"
+msgstr "बायाँ:"
+
+#: widgets/KoPageLayoutWidget.cpp:179
+#, fuzzy
+#| msgid "Right:"
+msgid "Right Edge:"
+msgstr "दायाँ:"
+
+#: widgets/KoPageLayoutWidget.cpp:182
+#, fuzzy
+#| msgid "Last Printing"
+msgid "Binding Edge:"
+msgstr "अन्तिम मुद्रण"
+
+#: widgets/KoPageLayoutWidget.cpp:183
+#, fuzzy
+#| msgid "Page Size"
+msgid "Page Edge:"
+msgstr "पृष्ठ साइज"
+
+#: widgets/KoPageLayoutWidget.cpp:279
+#, fuzzy
+#| msgid "Fit Page"
+msgid "Facing Pages:"
+msgstr "पृष्ठ ठीक गर्नुहोस्"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
+#, fuzzy
+#| msgid "Fit Page"
+msgid "Facing pages"
+msgstr "पृष्ठ ठीक गर्नुहोस्"
+
+#: widgets/KoPageLayoutWidget.cpp:282
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Page Layout:"
+msgstr "पृष्ठ सजावट"
+
+#: widgets/KoPageLayoutWidget.cpp:283
+#, fuzzy
+#| msgid "a spreadsheet"
+msgid "Page spread"
+msgstr "स्प्रेडसिट"
+
 #: widgets/KoPageLayoutDialog.cpp:47
 msgid "Page Layout"
 msgstr "पृष्ठ सजावट"
@@ -3289,56 +3339,6 @@ msgstr ""
 #| msgid "Zoom Tool"
 msgid "Zoom to All"
 msgstr "जुम उपकरण"
-
-#: widgets/KoPageLayoutWidget.cpp:178
-#, fuzzy
-#| msgid "Left:"
-msgid "Left Edge:"
-msgstr "बायाँ:"
-
-#: widgets/KoPageLayoutWidget.cpp:179
-#, fuzzy
-#| msgid "Right:"
-msgid "Right Edge:"
-msgstr "दायाँ:"
-
-#: widgets/KoPageLayoutWidget.cpp:182
-#, fuzzy
-#| msgid "Last Printing"
-msgid "Binding Edge:"
-msgstr "अन्तिम मुद्रण"
-
-#: widgets/KoPageLayoutWidget.cpp:183
-#, fuzzy
-#| msgid "Page Size"
-msgid "Page Edge:"
-msgstr "पृष्ठ साइज"
-
-#: widgets/KoPageLayoutWidget.cpp:279
-#, fuzzy
-#| msgid "Fit Page"
-msgid "Facing Pages:"
-msgstr "पृष्ठ ठीक गर्नुहोस्"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
-#, fuzzy
-#| msgid "Fit Page"
-msgid "Facing pages"
-msgstr "पृष्ठ ठीक गर्नुहोस्"
-
-#: widgets/KoPageLayoutWidget.cpp:282
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Page Layout:"
-msgstr "पृष्ठ सजावट"
-
-#: widgets/KoPageLayoutWidget.cpp:283
-#, fuzzy
-#| msgid "a spreadsheet"
-msgid "Page spread"
-msgstr "स्प्रेडसिट"
 
 #: widgets/KoZoomMode.cpp:26
 msgid "Fit Page Width"
