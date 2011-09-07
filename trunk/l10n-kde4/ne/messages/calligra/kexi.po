@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-06 02:29+0200\n"
+"POT-Creation-Date: 2011-09-07 02:17+0200\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2476,7 +2476,7 @@ msgstr "फोकस नीति"
 msgid "Margin"
 msgstr "सीमान्त:"
 
-#: formeditor/form.cpp:455
+#: formeditor/form.cpp:455 plugins/forms/kexidbfactorybase.cpp:66
 #, fuzzy
 #| msgid "Read only"
 msgid "Read Only"
@@ -3727,7 +3727,7 @@ msgstr ""
 msgid "Number"
 msgstr "नम्बर"
 
-#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:346
+#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:345
 #: widget/utils/kexicontextmenuutils.cpp:293
 msgid "Image"
 msgstr "छवि"
@@ -6536,34 +6536,60 @@ msgctxt "Unbound Image Box"
 msgid "(unbound)"
 msgstr "(नबाँधिएको)"
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:41
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:40
 msgid "Map Browser"
 msgstr ""
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:42
 msgctxt ""
 "This string will be used to name widgets of this class. It must _not_ "
 "contain white spaces and non latin1 characters."
 msgid "mapBrowser"
 msgstr ""
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:44
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
 msgid "Displays an interactive map."
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:39
 msgid "Web Browser"
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:43
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
 msgctxt ""
 "This string will be used to name widgets of this class. It must _not_ "
 "contain white spaces and non latin1 characters."
 msgid "webBrowser"
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:44
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:42
 msgid "Web widget with browsing features."
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:46
+#, fuzzy
+#| msgid "Zoom Out"
+msgid "Zoom Factor"
+msgstr "जुम घटाउनुहोस्"
+
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:47
+msgid "Url"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:43
+msgid "Back"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:44
+msgid "Forward"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:45
+msgid "Reload"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:46
+msgid "Stop"
 msgstr ""
 
 #: plugins/forms/kexiformpart.cpp:85
@@ -6699,7 +6725,7 @@ msgstr "फारम \"%1\" को डिजाइन परिमार्ज�
 msgid "Form \"%1\" already exists."
 msgstr "फारम \"%1\" पहिले नै अवस्थित छ ।"
 
-#: plugins/forms/kexiformpart.cpp:489 plugins/forms/kexidbfactory.cpp:312
+#: plugins/forms/kexiformpart.cpp:489 plugins/forms/kexidbfactorybase.cpp:61
 msgid "Data Source"
 msgstr "डेटा स्रोत"
 
@@ -6707,12 +6733,75 @@ msgstr "डेटा स्रोत"
 msgid "Widgets"
 msgstr "विजेट"
 
-#: plugins/forms/kexidbfactory.cpp:84 plugins/forms/kexiformview.cpp:252
+#: plugins/forms/kexiformview.cpp:252 plugins/forms/kexidbfactory.cpp:84
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "form"
 msgstr "फारम"
+
+#: plugins/forms/kexiformview.cpp:1250
+msgid "Insert AutoField widget"
+msgstr "स्वत: फिल्ड विजेट घुसाउनुहोस्"
+
+#: plugins/forms/kexiformview.cpp:1250
+#, kde-format
+msgid "Insert %1 AutoField widgets"
+msgstr "%1 स्वत: फिल्ड विजेटहरू घुसाउनुहोस्"
+
+#: plugins/forms/kexiformmanager.cpp:164
+msgid "Connect Signals/Slots"
+msgstr "सङ्केत/खाँचाहरू जडान गर्नुहोस्"
+
+#: plugins/forms/kexiformmanager.cpp:174
+#, fuzzy
+#| msgid "Print"
+msgid "Pointer"
+msgstr "मुद्रण गर्नुहोस्"
+
+#: plugins/forms/kexiformmanager.cpp:182
+#, fuzzy
+#| msgid "To Grid"
+msgid "Snap to Grid"
+msgstr "ग्रीडका लागि"
+
+#: plugins/forms/kexiformmanager.cpp:190
+#, fuzzy
+#| msgid "Subtype"
+msgid "Style"
+msgstr "उप प्रकार"
+
+#: plugins/forms/kexiformmanager.cpp:210
+#, fuzzy
+#| msgid "Closes the current project."
+msgid "Set the current view style."
+msgstr "हालको परियोजना बन्द गर्दछ ।"
+
+#: plugins/forms/kexiformmanager.cpp:219
+msgid "Show Form UI Code"
+msgstr "फारम UI कोड देखाउनुहोस्"
+
+#: plugins/forms/kexiformmanager.cpp:404
+#, kde-format
+msgid "Set Form's Data Source to \"%1\""
+msgstr "फारमको डेटा संसाधन \"%1\" मा सेट गर्नुहोस्"
+
+#: plugins/forms/kexiformmanager.cpp:484
+#, fuzzy
+#| msgid "Show Form UI Code"
+msgid "Form's UI Code"
+msgstr "फारम UI कोड देखाउनुहोस्"
+
+#: plugins/forms/kexiformmanager.cpp:488
+#, fuzzy
+#| msgctxt "Current form's actions"
+#| msgid "Current"
+msgid "Current"
+msgstr "मुद्रा"
+
+#: plugins/forms/kexiformmanager.cpp:495
+msgid "Original"
+msgstr "मौलिक"
 
 #: plugins/forms/kexidbfactory.cpp:85
 msgid "A data-aware form widget"
@@ -6803,64 +6892,64 @@ msgstr "बटन"
 msgid "A button for executing actions"
 msgstr "कार्यहरू कार्यान्वयन गर्नका लागि आदेश बटन"
 
-#: plugins/forms/kexidbfactory.cpp:313
+#: plugins/forms/kexidbfactory.cpp:312
 msgid "Form Name"
 msgstr "फारम नाम"
 
-#: plugins/forms/kexidbfactory.cpp:314
+#: plugins/forms/kexidbfactory.cpp:313
 msgid "On Click"
 msgstr "क्लिकमा"
 
-#: plugins/forms/kexidbfactory.cpp:315
+#: plugins/forms/kexidbfactory.cpp:314
 msgid "On Click Option"
 msgstr "क्लिक विकल्पमा"
 
-#: plugins/forms/kexidbfactory.cpp:316
+#: plugins/forms/kexidbfactory.cpp:315
 msgid "Auto Tab Order"
 msgstr "स्वत: ट्याब क्रम"
 
-#: plugins/forms/kexidbfactory.cpp:317
+#: plugins/forms/kexidbfactory.cpp:316
 msgid "Shadow Enabled"
 msgstr "छायाँ सक्षम पारियो"
 
-#: plugins/forms/kexidbfactory.cpp:318
+#: plugins/forms/kexidbfactory.cpp:317
 msgctxt "On: button"
 msgid "On"
 msgstr "खुला"
 
-#: plugins/forms/kexidbfactory.cpp:320
+#: plugins/forms/kexidbfactory.cpp:319
 msgid "Editor Type"
 msgstr "सम्पादक प्रकार"
 
-#: plugins/forms/kexidbfactory.cpp:322
+#: plugins/forms/kexidbfactory.cpp:321
 msgctxt "AutoField editor's type"
 msgid "Auto"
 msgstr "स्वत:"
 
-#: plugins/forms/kexidbfactory.cpp:330
+#: plugins/forms/kexidbfactory.cpp:329
 msgctxt "AutoField editor's type"
 msgid "Multiline Text"
 msgstr "बहुरेखीय पाठ"
 
-#: plugins/forms/kexidbfactory.cpp:331
+#: plugins/forms/kexidbfactory.cpp:330
 msgctxt "AutoField editor's type"
 msgid "Drop-Down List"
 msgstr "ड्रप डाउन सूची"
 
-#: plugins/forms/kexidbfactory.cpp:332
+#: plugins/forms/kexidbfactory.cpp:331
 msgctxt "AutoField editor's type"
 msgid "Image"
 msgstr "छवि"
 
-#: plugins/forms/kexidbfactory.cpp:335
+#: plugins/forms/kexidbfactory.cpp:334
 msgid "Auto Label"
 msgstr "स्वत: लेबुल"
 
-#: plugins/forms/kexidbfactory.cpp:336
+#: plugins/forms/kexidbfactory.cpp:335
 msgid "Label Text Color"
 msgstr "लेबुल पाठ रङ"
 
-#: plugins/forms/kexidbfactory.cpp:338
+#: plugins/forms/kexidbfactory.cpp:337
 msgctxt "(a property name, keep the text narrow!)"
 msgid ""
 "Label Background\n"
@@ -6869,50 +6958,46 @@ msgstr ""
 "लेबुल पृष्ठभूमि\n"
 "रङ"
 
-#: plugins/forms/kexidbfactory.cpp:340
+#: plugins/forms/kexidbfactory.cpp:339
 msgid "Label Position"
 msgstr "लेबुल स्थिति"
 
-#: plugins/forms/kexidbfactory.cpp:341
+#: plugins/forms/kexidbfactory.cpp:340
 msgctxt "Label Position"
 msgid "Left"
 msgstr "बायाँ"
 
-#: plugins/forms/kexidbfactory.cpp:342
+#: plugins/forms/kexidbfactory.cpp:341
 msgctxt "Label Position"
 msgid "Top"
 msgstr "माथि"
 
-#: plugins/forms/kexidbfactory.cpp:343
+#: plugins/forms/kexidbfactory.cpp:342
 msgctxt "Label Position"
 msgid "No Label"
 msgstr "लेबुल छैन"
 
-#: plugins/forms/kexidbfactory.cpp:345
+#: plugins/forms/kexidbfactory.cpp:344
 msgid "Size"
 msgstr "साइज"
 
-#: plugins/forms/kexidbfactory.cpp:347
+#: plugins/forms/kexidbfactory.cpp:346
 msgid "Scaled Contents"
 msgstr "मापन गरिएका सामग्री"
 
-#: plugins/forms/kexidbfactory.cpp:348
+#: plugins/forms/kexidbfactory.cpp:347
 #, fuzzy
 #| msgid "Sorting"
 msgctxt "Smoothing when contents are scaled"
 msgid "Smoothing"
 msgstr "क्रमबद्ध गर्दै"
 
-#: plugins/forms/kexidbfactory.cpp:349
+#: plugins/forms/kexidbfactory.cpp:348
 msgctxt "Keep Aspect Ratio (short)"
 msgid "Keep Ratio"
 msgstr "अनुपात राख्नुहोस्"
 
-#: plugins/forms/kexidbfactory.cpp:356
-msgid "Frame Color"
-msgstr "फ्रेम रङ"
-
-#: plugins/forms/kexidbfactory.cpp:359
+#: plugins/forms/kexidbfactory.cpp:357
 msgctxt ""
 "Drop-Down Button for Image Box Visible (a property name, keep the text "
 "narrow!)"
@@ -6923,96 +7008,37 @@ msgstr ""
 "दृश्यात्मक बटन\n"
 "तल-झार्नुहोस्"
 
-#: plugins/forms/kexidbfactory.cpp:362
+#: plugins/forms/kexidbfactory.cpp:360
 msgctxt "Tristate checkbox, default"
 msgid "Default"
 msgstr "पूर्वनिर्धारित"
 
-#: plugins/forms/kexidbfactory.cpp:363
+#: plugins/forms/kexidbfactory.cpp:361
 msgctxt "Tristate checkbox, yes"
 msgid "Yes"
 msgstr "हो"
 
-#: plugins/forms/kexidbfactory.cpp:364
+#: plugins/forms/kexidbfactory.cpp:362
 msgctxt "Tristate checkbox, no"
 msgid "No"
 msgstr "होइन"
 
-#: plugins/forms/kexidbfactory.cpp:367
+#: plugins/forms/kexidbfactory.cpp:365
 msgctxt "Editable combobox"
 msgid "Editable"
 msgstr "सम्पादनयोग्य"
 
-#: plugins/forms/kexidbfactory.cpp:452
+#: plugins/forms/kexidbfactory.cpp:450
 msgid "&Image"
 msgstr "छवि"
 
-#: plugins/forms/kexidbfactory.cpp:474
+#: plugins/forms/kexidbfactory.cpp:472
 msgid "&Assign Action..."
 msgstr "कार्य मानाङ्कन गर्नुहोस्..."
 
-#: plugins/forms/kexiformview.cpp:1250
-msgid "Insert AutoField widget"
-msgstr "स्वत: फिल्ड विजेट घुसाउनुहोस्"
-
-#: plugins/forms/kexiformview.cpp:1250
-#, kde-format
-msgid "Insert %1 AutoField widgets"
-msgstr "%1 स्वत: फिल्ड विजेटहरू घुसाउनुहोस्"
-
-#: plugins/forms/kexiformmanager.cpp:164
-msgid "Connect Signals/Slots"
-msgstr "सङ्केत/खाँचाहरू जडान गर्नुहोस्"
-
-#: plugins/forms/kexiformmanager.cpp:174
-#, fuzzy
-#| msgid "Print"
-msgid "Pointer"
-msgstr "मुद्रण गर्नुहोस्"
-
-#: plugins/forms/kexiformmanager.cpp:182
-#, fuzzy
-#| msgid "To Grid"
-msgid "Snap to Grid"
-msgstr "ग्रीडका लागि"
-
-#: plugins/forms/kexiformmanager.cpp:190
-#, fuzzy
-#| msgid "Subtype"
-msgid "Style"
-msgstr "उप प्रकार"
-
-#: plugins/forms/kexiformmanager.cpp:210
-#, fuzzy
-#| msgid "Closes the current project."
-msgid "Set the current view style."
-msgstr "हालको परियोजना बन्द गर्दछ ।"
-
-#: plugins/forms/kexiformmanager.cpp:219
-msgid "Show Form UI Code"
-msgstr "फारम UI कोड देखाउनुहोस्"
-
-#: plugins/forms/kexiformmanager.cpp:404
-#, kde-format
-msgid "Set Form's Data Source to \"%1\""
-msgstr "फारमको डेटा संसाधन \"%1\" मा सेट गर्नुहोस्"
-
-#: plugins/forms/kexiformmanager.cpp:484
-#, fuzzy
-#| msgid "Show Form UI Code"
-msgid "Form's UI Code"
-msgstr "फारम UI कोड देखाउनुहोस्"
-
-#: plugins/forms/kexiformmanager.cpp:488
-#, fuzzy
-#| msgctxt "Current form's actions"
-#| msgid "Current"
-msgid "Current"
-msgstr "मुद्रा"
-
-#: plugins/forms/kexiformmanager.cpp:495
-msgid "Original"
-msgstr "मौलिक"
+#: plugins/forms/kexidbfactorybase.cpp:64
+msgid "Frame Color"
+msgstr "फ्रेम रङ"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:65
 msgid "Copy"
