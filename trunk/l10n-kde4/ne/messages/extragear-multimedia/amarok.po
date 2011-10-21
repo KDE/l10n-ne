@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-20 03:01+0200\n"
+"POT-Creation-Date: 2011-10-21 03:16+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2203,6 +2203,7 @@ msgstr ""
 #: amarokurls/BookmarkModel.cpp:265
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:450
 #: playlistgenerator/TreeModel.cpp:64
+#: services/amazon/AmazonItemTreeModel.cpp:52
 msgid "Name"
 msgstr "नाम"
 
@@ -2496,7 +2497,7 @@ msgstr "ओएसडी प्रदर्शन पाठ अनुकूलन
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:3
-#: rc.cpp:728 rc.cpp:2579
+#: rc.cpp:728 rc.cpp:2603
 #, fuzzy
 #| msgid "Playlist name:"
 msgid "Default"
@@ -3180,7 +3181,7 @@ msgstr ""
 
 #. i18n: file: context/applets/tabs/ReloadEditDialog.ui:73
 #. i18n: ectx: property (text), widget (QLabel, artistLabel)
-#: rc.cpp:1037 browsers/CollectionTreeItemModelBase.cpp:982
+#: rc.cpp:1037 browsers/CollectionTreeItemModelBase.cpp:983
 #: context/applets/wikipedia/WikipediaApplet.cpp:612
 #: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
 #: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
@@ -3354,7 +3355,9 @@ msgstr "सँग"
 
 #. i18n: file: context/applets/upcomingevents/upcomingEventsVenueSettings.ui:257
 #. i18n: ectx: property (text), widget (QLabel, countryLabel)
-#: rc.cpp:1100
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:53
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:1100 rc.cpp:2564
 #, fuzzy
 #| msgid "Connect"
 msgid "Country:"
@@ -4414,7 +4417,7 @@ msgstr ""
 
 #. i18n: file: dialogs/FilenameLayoutDialog.ui:1041
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:1629 browsers/CollectionTreeItemModelBase.cpp:983
+#: rc.cpp:1629 browsers/CollectionTreeItemModelBase.cpp:984
 #: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
 #: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:932
 msgid "Album Artist"
@@ -6256,9 +6259,58 @@ msgid ""
 "#0057ae;\">Sign up to gpodder.net</span></a></p></body></html>"
 msgstr ""
 
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, AmazonConfigWidget)
+#: rc.cpp:2558
+#, fuzzy
+#| msgid "Select Format:"
+msgid "Select Your Country"
+msgstr "ढाँचा चयन गर्नुहोस्:"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:2561
+msgid ""
+"The Amazon MP3 Store offers different items depending on your location. "
+"Please select the country you are located in. Please note that changing the "
+"country also invalidates your shopping cart."
+msgstr ""
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:61
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2567
+#, fuzzy
+#| msgid "France"
+msgid "France"
+msgstr "फ्रान्स"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:66
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2570
+msgid "Germany"
+msgstr "जर्मनी"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:71
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2573
+msgid "Japan"
+msgstr "जापान"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:76
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2576
+msgid "United Kingdom"
+msgstr "संयुक्त अधिराज्य"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:81
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2579
+msgid "United States"
+msgstr ""
+
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:105
 #. i18n: ectx: property (text), widget (QCommandLinkButton, justCopyButton)
-#: rc.cpp:2558
+#: rc.cpp:2582
 #, fuzzy
 #| msgid "&Stop"
 msgid "&Copy"
@@ -6266,14 +6318,14 @@ msgstr "रोक्नुहोस्"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:114
 #. i18n: ectx: property (description), widget (QCommandLinkButton, justCopyButton)
-#: rc.cpp:2561
+#: rc.cpp:2585
 #, fuzzy
 msgid "Just copy the tracks without transcoding them."
 msgstr ", एउटा ट्रयाक ट्रान्सकोड भएन"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:127
 #. i18n: ectx: property (text), widget (QCommandLinkButton, transcodeWithDefaultsButton)
-#: rc.cpp:2564
+#: rc.cpp:2588
 #, fuzzy
 #| msgid "Transcoding"
 msgid "&Transcode"
@@ -6281,7 +6333,7 @@ msgstr "ट्रान्सकोडिङ"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:149
 #. i18n: ectx: property (text), widget (QCommandLinkButton, transcodeWithOptionsButton)
-#: rc.cpp:2567
+#: rc.cpp:2591
 #, fuzzy
 #| msgid "Use custom sink parameters"
 msgid "Transcode With Custom &Parameters"
@@ -6289,13 +6341,13 @@ msgstr "अनुकूल सिङ्क परिमिति प्रयो
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:158
 #. i18n: ectx: property (description), widget (QCommandLinkButton, transcodeWithOptionsButton)
-#: rc.cpp:2570
+#: rc.cpp:2594
 msgid "Configure your own encoding parameters for this transcoding operation."
 msgstr ""
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:205
 #. i18n: ectx: property (text), widget (QCommandLinkButton, backButton)
-#: rc.cpp:2573 context/applets/similarartists/SimilarArtistsApplet.cpp:76
+#: rc.cpp:2597 context/applets/similarartists/SimilarArtistsApplet.cpp:76
 #: context/applets/wikipedia/WikipediaApplet.cpp:593
 #, fuzzy
 #| msgid "Track"
@@ -6304,7 +6356,7 @@ msgstr "ट्रयाक"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:340
 #. i18n: ectx: property (text), widget (QLabel, formatNameLabel)
-#: rc.cpp:2576
+#: rc.cpp:2600
 #, fuzzy
 #| msgid "Format:"
 msgid "Format Name"
@@ -6312,7 +6364,7 @@ msgstr "ढाँचा:"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:36
-#: rc.cpp:2582 playlist/layouts/PlaylistLayoutEditDialog.cpp:525
+#: rc.cpp:2606 playlist/layouts/PlaylistLayoutEditDialog.cpp:525
 #, fuzzy
 #| msgid "Groupings"
 msgid "No Grouping"
@@ -6320,7 +6372,7 @@ msgstr "समूहहरू"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:60
-#: rc.cpp:2585
+#: rc.cpp:2609
 #, fuzzy
 #| msgid "Groupings"
 msgid "No Grouping (Single Line)"
@@ -6328,7 +6380,7 @@ msgstr "समूहहरू"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:77
-#: rc.cpp:2588
+#: rc.cpp:2612
 msgid "Verbose"
 msgstr ""
 
@@ -8167,6 +8219,70 @@ msgid ""
 "sources, but many more can be added using scripts."
 msgstr ""
 
+#: browsers/CollectionTreeItemModelBase.cpp:238
+#: browsers/CollectionTreeItemModelBase.cpp:291
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "The Name is not known"
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: browsers/CollectionTreeItemModelBase.cpp:316
+#: core-impl/collections/db/sql/SqlMeta.cpp:420
+#: core-impl/collections/db/ScanResultProcessor.cpp:270
+#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
+#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
+msgid "Various Artists"
+msgstr "विभिन्न कलाकारहरू"
+
+#: browsers/CollectionTreeItemModelBase.cpp:982
+#, fuzzy
+#| msgid "Artist - Album"
+msgid "Year - Album"
+msgstr "कलाकार - एल्बम"
+
+#: browsers/CollectionTreeItemModelBase.cpp:982
+#: browsers/CollectionTreeView.cpp:226
+#: context/applets/albums/AlbumsView.cpp:255
+#: context/applets/wikipedia/WikipediaApplet.cpp:618
+#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
+#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: services/magnatune/MagnatuneStore.cpp:224
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Album"
+msgstr "एल्बम"
+
+#: browsers/CollectionTreeItemModelBase.cpp:985
+#: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
+#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Composer"
+msgstr "कम्पोजर"
+
+#: browsers/CollectionTreeItemModelBase.cpp:986
+#: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
+#: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
+#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Genre"
+msgstr "विधा"
+
+#: browsers/CollectionTreeItemModelBase.cpp:987
+#: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
+#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
+#: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
+#: widgets/SmartPlaylistEditor.cpp:921
+msgid "Year"
+msgstr "वर्ष"
+
+#: browsers/CollectionTreeItemModelBase.cpp:988
+#: core/meta/support/MetaConstants.cpp:135 widgets/SmartPlaylistEditor.cpp:187
+#: widgets/SmartPlaylistEditor.cpp:197
+msgid "Label"
+msgstr "लेबुल"
+
 #: browsers/BrowserBreadcrumbItem.cpp:68
 #, fuzzy
 #| msgid "File Extension of Source"
@@ -8217,70 +8333,6 @@ msgstr[1] "१ ट्रयाक"
 #| msgid "File Extension of Source"
 msgid "Filter Music Sources"
 msgstr "स्रोतको फाइल विस्तार"
-
-#: browsers/CollectionTreeItemModelBase.cpp:238
-#: browsers/CollectionTreeItemModelBase.cpp:291
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "The Name is not known"
-msgid "Unknown"
-msgstr "अज्ञात"
-
-#: browsers/CollectionTreeItemModelBase.cpp:316
-#: core-impl/collections/db/sql/SqlMeta.cpp:420
-#: core-impl/collections/db/ScanResultProcessor.cpp:270
-#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
-#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
-msgid "Various Artists"
-msgstr "विभिन्न कलाकारहरू"
-
-#: browsers/CollectionTreeItemModelBase.cpp:981
-#, fuzzy
-#| msgid "Artist - Album"
-msgid "Year - Album"
-msgstr "कलाकार - एल्बम"
-
-#: browsers/CollectionTreeItemModelBase.cpp:981
-#: browsers/CollectionTreeView.cpp:226
-#: context/applets/albums/AlbumsView.cpp:255
-#: context/applets/wikipedia/WikipediaApplet.cpp:618
-#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
-#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
-#: services/jamendo/JamendoInfoParser.cpp:83
-#: services/magnatune/MagnatuneStore.cpp:224
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Album"
-msgstr "एल्बम"
-
-#: browsers/CollectionTreeItemModelBase.cpp:984
-#: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
-#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Composer"
-msgstr "कम्पोजर"
-
-#: browsers/CollectionTreeItemModelBase.cpp:985
-#: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
-#: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
-#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Genre"
-msgstr "विधा"
-
-#: browsers/CollectionTreeItemModelBase.cpp:986
-#: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
-#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
-#: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
-#: widgets/SmartPlaylistEditor.cpp:921
-msgid "Year"
-msgstr "वर्ष"
-
-#: browsers/CollectionTreeItemModelBase.cpp:987
-#: core/meta/support/MetaConstants.cpp:135 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:197
-msgid "Label"
-msgstr "लेबुल"
 
 #: browsers/CollectionTreeView.cpp:246 configdialog/ConfigDialog.cpp:59
 msgid "Collection"
@@ -16170,6 +16222,100 @@ msgstr ""
 msgid "ERROR: unknown message"
 msgstr ""
 
+#: services/amazon/AmazonItemTreeModel.cpp:55
+msgid "Price"
+msgstr ""
+
+#: services/amazon/AmazonMeta.cpp:92
+msgid "Amazon: &Add item to cart"
+msgstr ""
+
+#: services/amazon/AmazonMeta.cpp:182
+msgid "Snippet taken from the Amazon MP3 store"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:87
+msgid "Access the Amazon MP3 Store directly from Amarok"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:91
+msgid ""
+"This plugin allows searching and purchasing songs and albums from the Amazon "
+"MP3 store. Amarok gets a share of the profits made by this service."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:151
+msgid "Select results page to show"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:174
+#, fuzzy
+#| msgid "Add"
+msgctxt "Add selected item to your shopping cart"
+msgid "Add"
+msgstr "थप्नुहोस्"
+
+#: services/amazon/AmazonStore.cpp:175
+msgid "Add selected item to your shopping cart"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:191
+#, fuzzy
+#| msgid "View"
+msgctxt "View your shopping cart contents"
+msgid "View Cart"
+msgstr "दृश्य"
+
+#: services/amazon/AmazonStore.cpp:192
+msgid "View your shopping cart contents"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:199
+#, fuzzy
+#| msgid "<b>%1</b> by <b>%2</b>"
+msgctxt "Checkout your shopping cart"
+msgid "Checkout"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: services/amazon/AmazonStore.cpp:200
+msgid "Checkout your shopping cart"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:254
+#, kde-format
+msgid ""
+"<b>MP3 Music Store</b><br/><br/>The item <em>%1</em> has been added to your "
+"shopping cart."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:274 services/amazon/AmazonStore.cpp:315
+msgid "Error: Unable to write temporary file."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:294
+msgid ""
+"<b>MP3 Music Store</b><br/><br/>You have to select your country  before you "
+"can search for items in your local Amazon store."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:298
+msgid "Select your Amazon locale - Amarok"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:360
+msgid "Error: Querying MP3 Music Store database failed. :-("
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:399
+msgid "Error: Unable to open temporary file."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:419
+#, fuzzy
+#| msgid "Wikipedia Information"
+msgid "Error: Unable to parse temporary file."
+msgstr "विकिपेडिया जानकारी"
+
 #: statusbar/CompoundProgressBar.cpp:63 statusbar/CompoundProgressBar.cpp:186
 #: statusbar/ProgressBar.cpp:48
 msgid "Abort"
@@ -18211,15 +18357,6 @@ msgstr "अन्तिममा बजाएको"
 
 #~ msgid "Canada"
 #~ msgstr "क्यानडा"
-
-#~ msgid "Germany"
-#~ msgstr "जर्मनी"
-
-#~ msgid "Japan"
-#~ msgstr "जापान"
-
-#~ msgid "United Kingdom"
-#~ msgstr "संयुक्त अधिराज्य"
 
 #, fuzzy
 #~| msgid "&Previous"
