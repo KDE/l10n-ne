@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-31 03:49+0100\n"
+"POT-Creation-Date: 2011-11-01 04:12+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1501,7 +1501,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: rc.cpp:581 rc.cpp:1931 rc.cpp:1937 rc.cpp:2326 rc.cpp:2338
 #: amarokurls/BookmarkModel.cpp:265
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:450
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:414
 #: playlistgenerator/TreeModel.cpp:64
 #: services/amazon/AmazonItemTreeModel.cpp:59
 msgid "Name"
@@ -2474,7 +2474,7 @@ msgstr ""
 #: context/applets/wikipedia/WikipediaApplet.cpp:614
 #: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
 #: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
-#: playlist/PlaylistModel.cpp:931 services/jamendo/JamendoInfoParser.cpp:51
+#: playlist/PlaylistModel.cpp:863 services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:507
 #: services/magnatune/MagnatuneStore.cpp:218
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -2486,7 +2486,7 @@ msgstr "कलाकार"
 #: rc.cpp:1037 browsers/playlistbrowser/PodcastModel.cpp:334
 #: core/meta/support/MetaConstants.cpp:106 dialogs/FilenameLayoutDialog.cpp:58
 #: dialogs/FilenameLayoutDialog.cpp:421 musicbrainz/MusicBrainzTags.cpp:358
-#: playlist/PlaylistModel.cpp:930 widgets/SmartPlaylistEditor.cpp:183
+#: playlist/PlaylistModel.cpp:862 widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr "शीर्षक"
 
@@ -3714,7 +3714,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:1626 browsers/CollectionTreeItemModelBase.cpp:984
 #: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
-#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:932
+#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:864
 msgid "Album Artist"
 msgstr "एल्बम कलाकार"
 
@@ -4287,7 +4287,7 @@ msgstr "प्रोक्सी प्रतिक्रिया"
 #. i18n: file: network/NetworkRequests.ui:56
 #. i18n: ectx: property (text), widget (QTreeWidget, requestList)
 #: rc.cpp:1916 core/meta/support/MetaConstants.cpp:116
-#: playlist/PlaylistModel.cpp:943 widgets/SmartPlaylistEditor.cpp:183
+#: playlist/PlaylistModel.cpp:875 widgets/SmartPlaylistEditor.cpp:183
 msgid "Length"
 msgstr "लम्बाइ"
 
@@ -7419,7 +7419,7 @@ msgid "Add Position Marker"
 msgstr ""
 
 #: amarokurls/BookmarkModel.cpp:86
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:451
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:415
 #, fuzzy
 #| msgid "Groupings"
 msgid "Group"
@@ -7427,7 +7427,7 @@ msgstr "समूहहरू"
 
 #: amarokurls/BookmarkModel.cpp:266
 #: browsers/playlistbrowser/PodcastModel.cpp:333
-#: playlist/PlaylistModel.cpp:942
+#: playlist/PlaylistModel.cpp:874
 msgid "Type"
 msgstr "प्रकार"
 
@@ -7694,7 +7694,7 @@ msgid "Copy to Collection"
 msgstr "सङ्कलनमा फाइलहरू प्रतिलिपि गर्नुहोस्..."
 
 #: browsers/filebrowser/FileView.cpp:398
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:49
 #: browsers/CollectionTreeView.cpp:838
 #: context/applets/albums/AlbumsView.cpp:240
 #: services/lastfm/LastFmTreeView.cpp:111
@@ -7704,7 +7704,7 @@ msgid "&Add to Playlist"
 msgstr "प्ले सूचीमा थप्नुहोस्"
 
 #: browsers/filebrowser/FileView.cpp:410
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:56
 #: browsers/CollectionTreeView.cpp:847
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:120
@@ -7851,6 +7851,84 @@ msgstr "रोकियो"
 msgid "Accuracy"
 msgstr ""
 
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:75
+#: services/opmldirectory/OpmlDirectoryModel.cpp:44
+#, fuzzy
+#| msgid "Folder"
+msgid "Add Folder"
+msgstr "फोल्डर"
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:80
+#, fuzzy
+#| msgid "File Extension of Source"
+msgid "Visible Sources"
+msgstr "स्रोतको फाइल विस्तार"
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:184
+msgid "Folders are only shown in <b>merged view</b>."
+msgstr ""
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:271
+#, fuzzy
+#| msgid "Folder %1"
+msgctxt "default name for new folder"
+msgid "New Folder"
+msgstr "फोल्डर %1"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:44
+#, fuzzy
+#| msgid "Create Smart Playlist"
+msgid "Create empty playlist"
+msgstr "छरितो प्लेसूची सिर्जना गर्नुहोस्"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:138
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:187
+#, fuzzy, kde-format
+#| msgid "New Playlist"
+msgctxt "number of playlists from one source"
+msgid "One Playlist"
+msgid_plural "%1 playlists"
+msgstr[0] "नयाँ प्ले सूची"
+msgstr[1] "नयाँ प्ले सूची"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:416
+#, fuzzy
+#| msgid "Score"
+msgid "Source"
+msgstr "प्राप्ताङ्क"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:72
+#, fuzzy
+#| msgid "&Next"
+msgctxt "toggle the \"new\" status of this podcast episode"
+msgid "&New"
+msgstr "पछिल्लो"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:260
+#, fuzzy, kde-format
+#| msgid "&4 Channels:"
+msgctxt "number of podcasts from one source"
+msgid "One Channel"
+msgid_plural "%1 channels"
+msgstr[0] "४ च्यानल:"
+msgstr[1] "४ च्यानल:"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:335 dialogs/TagDialog.cpp:509
+msgid "Summary"
+msgstr "सारांश"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:355
+#, fuzzy
+#| msgid "Add Podcast"
+msgid "Add Podcast"
+msgstr "पोडकास्ट थप्नुहोस्"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:356
+#, fuzzy
+#| msgid "Enter Podcast URL:"
+msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
+msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:43
 #, fuzzy
 #| msgid "Lyrics"
@@ -7878,30 +7956,6 @@ msgstr ""
 #| msgid "This file does not exist:"
 msgid "This bias has no settings."
 msgstr "यो फाइल अवस्थित छैन:"
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:75
-#: services/opmldirectory/OpmlDirectoryModel.cpp:44
-#, fuzzy
-#| msgid "Folder"
-msgid "Add Folder"
-msgstr "फोल्डर"
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:80
-#, fuzzy
-#| msgid "File Extension of Source"
-msgid "Visible Sources"
-msgstr "स्रोतको फाइल विस्तार"
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:183
-msgid "Folders are only shown in <b>merged view</b>."
-msgstr ""
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:278
-#, fuzzy
-#| msgid "Folder %1"
-msgctxt "default name for new folder"
-msgid "New Folder"
-msgstr "फोल्डर %1"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:81
 msgid "List of podcast subscriptions and episodes"
@@ -8141,7 +8195,7 @@ msgstr "नयाँ प्रिसेट नाम प्रविष्ट �
 
 #: browsers/playlistbrowser/PlaylistsInFoldersProxy.cpp:333
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:254
-#: playlistmanager/file/PlaylistFileProvider.cpp:457
+#: playlistmanager/file/PlaylistFileProvider.cpp:458
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:117
 #, fuzzy
 #| msgid "Configure Playback"
@@ -8177,54 +8231,6 @@ msgid ""
 "save are also shown here."
 msgstr ""
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:175
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:224
-#, fuzzy, kde-format
-#| msgid "New Playlist"
-msgctxt "number of playlists from one source"
-msgid "One Playlist"
-msgid_plural "%1 playlists"
-msgstr[0] "नयाँ प्ले सूची"
-msgstr[1] "नयाँ प्ले सूची"
-
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:452
-#, fuzzy
-#| msgid "Score"
-msgid "Source"
-msgstr "प्राप्ताङ्क"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:72
-#, fuzzy
-#| msgid "&Next"
-msgctxt "toggle the \"new\" status of this podcast episode"
-msgid "&New"
-msgstr "पछिल्लो"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:260
-#, fuzzy, kde-format
-#| msgid "&4 Channels:"
-msgctxt "number of podcasts from one source"
-msgid "One Channel"
-msgid_plural "%1 channels"
-msgstr[0] "४ च्यानल:"
-msgstr[1] "४ च्यानल:"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:335 dialogs/TagDialog.cpp:509
-msgid "Summary"
-msgstr "सारांश"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:355
-#, fuzzy
-#| msgid "Add Podcast"
-msgid "Add Podcast"
-msgstr "पोडकास्ट थप्नुहोस्"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:356
-#, fuzzy
-#| msgid "Enter Podcast URL:"
-msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
-msgstr "पोडकास्ट यूआरएल प्रविष्ट गर्नुहोस्:"
-
 #: browsers/servicebrowser/ServiceBrowser.cpp:40
 msgid ""
 "The Internet browser lets you browse online sources of content that "
@@ -8243,8 +8249,8 @@ msgstr "अज्ञात"
 #: browsers/CollectionTreeItemModelBase.cpp:316
 #: core-impl/collections/db/sql/SqlMeta.cpp:420
 #: core-impl/collections/db/ScanResultProcessor.cpp:270
-#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
-#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
+#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:841
+#: dialogs/TrackOrganizer.cpp:48 widgets/AlbumBreadcrumbWidget.cpp:60
 msgid "Various Artists"
 msgstr "विभिन्न कलाकारहरू"
 
@@ -8260,7 +8266,7 @@ msgstr "कलाकार - एल्बम"
 #: context/applets/wikipedia/WikipediaApplet.cpp:620
 #: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
 #: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:867
 #: services/jamendo/JamendoInfoParser.cpp:83
 #: services/magnatune/MagnatuneStore.cpp:224
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -8269,7 +8275,7 @@ msgstr "एल्बम"
 
 #: browsers/CollectionTreeItemModelBase.cpp:985
 #: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
-#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
+#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:865
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Composer"
 msgstr "कम्पोजर"
@@ -8277,14 +8283,14 @@ msgstr "कम्पोजर"
 #: browsers/CollectionTreeItemModelBase.cpp:986
 #: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
 #: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
-#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
+#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:871
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Genre"
 msgstr "विधा"
 
 #: browsers/CollectionTreeItemModelBase.cpp:987
 #: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
-#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
+#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:866
 #: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
 #: widgets/SmartPlaylistEditor.cpp:921
 msgid "Year"
@@ -8637,12 +8643,12 @@ msgid "Tracks"
 msgstr "ट्रयाक"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:447
-#: playlist/PlaylistModel.cpp:948
+#: playlist/PlaylistModel.cpp:880
 msgid "Play Count"
 msgstr "प्ले गणना"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:448
-#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:946
+#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:878
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Score"
 msgstr "प्राप्ताङ्क"
@@ -10338,7 +10344,7 @@ msgstr[0] "आइपोडबाट ट्र्याक मेट्नुह�
 msgstr[1] "आइपोडबाट ट्र्याक मेट्नुहोस्"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
-#: playlistmanager/file/PlaylistFileProvider.cpp:485
+#: playlistmanager/file/PlaylistFileProvider.cpp:486
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:148
 #: playlistmanager/PlaylistManager.cpp:384
 #, fuzzy
@@ -10346,7 +10352,7 @@ msgid "Change playlist"
 msgstr "एउटा प्ले सूची"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
-#: playlistmanager/file/PlaylistFileProvider.cpp:486
+#: playlistmanager/file/PlaylistFileProvider.cpp:487
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:149
 #: playlistmanager/PlaylistManager.cpp:385
 #, fuzzy
@@ -10897,7 +10903,7 @@ msgid "Album Name"
 msgstr "एल्बम"
 
 #: core/meta/support/MetaConstants.cpp:112 dialogs/FilenameLayoutDialog.cpp:82
-#: dialogs/FilenameLayoutDialog.cpp:470 playlist/PlaylistModel.cpp:940
+#: dialogs/FilenameLayoutDialog.cpp:470 playlist/PlaylistModel.cpp:872
 #: widgets/SmartPlaylistEditor.cpp:184
 msgid "Comment"
 msgstr "टिप्पणी"
@@ -10907,7 +10913,7 @@ msgstr "टिप्पणी"
 msgid "Track Number"
 msgstr "ट्रयाक नम्बर"
 
-#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:936
+#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:868
 msgid "Disc Number"
 msgstr "डिस्क सङ्ख्या"
 
@@ -10921,11 +10927,11 @@ msgstr ""
 msgid "Bit Rate"
 msgstr "बिट्रेट"
 
-#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:945
+#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:877
 msgid "Sample Rate"
 msgstr "नमूना दर"
 
-#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:951
+#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:883
 msgid "File Size"
 msgstr "फाइल साइज"
 
@@ -10942,7 +10948,7 @@ msgid "Added to Collection"
 msgstr "सङ्कलनमा डाउनलोड गर्नुहोस्"
 
 #: core/meta/support/MetaConstants.cpp:123
-#: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:947
+#: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:879
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Rating"
 msgstr "मूल्याङ्कन"
@@ -11463,6 +11469,49 @@ msgstr "%1"
 msgctxt "h for hours"
 msgid "%1h"
 msgstr "%1"
+
+#: core/support/Amarok.cpp:170
+#, fuzzy, kde-format
+#| msgid "&Playlist"
+msgctxt ""
+"A saved playlist with the current time (KLocale::Shortdate) added "
+"between                           the parentheses"
+msgid "Empty Playlist (%1)"
+msgstr "प्ले सूची"
+
+#: core/support/Amarok.cpp:198
+#, fuzzy, kde-format
+#| msgid "Previous Track"
+msgctxt ""
+"A saved playlist with the current time (KLocale::Shortdate) added "
+"between                           the parentheses"
+msgid "Various Tracks (%1)"
+msgstr "अघिल्लो ट्रयाक"
+
+#: core/support/Amarok.cpp:205
+#, fuzzy
+#| msgid "Unknown Artist"
+msgid "Unknown Artist(s)"
+msgstr "अज्ञात कलाकार"
+
+#: core/support/Amarok.cpp:221
+#, fuzzy
+#| msgid "Unknown Album"
+msgid "Unknown Album(s)"
+msgstr "अज्ञात एल्बम"
+
+#: core/support/Amarok.cpp:225
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Various Albums"
+msgstr "विभिन्न कलाकारहरू"
+
+#: core/support/Amarok.cpp:228
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "A saved playlist titled <artist> - <album>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
 
 #: core/transcoding/formats/TranscodingAacFormat.cpp:31
 msgid ""
@@ -14402,99 +14451,6 @@ msgstr[1] "%1 ट्रयाक"
 msgid "No tracks"
 msgstr "ट्रयाक"
 
-#: playlist/PlaylistModel.cpp:271
-#, fuzzy
-#| msgid "..."
-msgid "(...)"
-msgstr "..."
-
-#: playlist/PlaylistModel.cpp:286
-#, fuzzy
-#| msgid "No information available for this track"
-msgid "No extra information available"
-msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
-
-#: playlist/PlaylistModel.cpp:867
-#, fuzzy, kde-format
-#| msgid "&Playlist"
-msgctxt ""
-"A saved playlist with the current time (KLocale::Shortdate) added "
-"between                       the parentheses"
-msgid "Empty Playlist (%1)"
-msgstr "प्ले सूची"
-
-#: playlist/PlaylistModel.cpp:895
-#, fuzzy, kde-format
-#| msgid "Previous Track"
-msgctxt ""
-"A saved playlist with the current time (KLocale::Shortdate) added "
-"between                       the parentheses"
-msgid "Various Tracks (%1)"
-msgstr "अघिल्लो ट्रयाक"
-
-#: playlist/PlaylistModel.cpp:902
-#, fuzzy
-#| msgid "Unknown Artist"
-msgid "Unknown Artist(s)"
-msgstr "अज्ञात कलाकार"
-
-#: playlist/PlaylistModel.cpp:914
-#, fuzzy
-#| msgid "Unknown Album"
-msgid "Unknown Album(s)"
-msgstr "अज्ञात एल्बम"
-
-#: playlist/PlaylistModel.cpp:917
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Various Albums"
-msgstr "विभिन्न कलाकारहरू"
-
-#: playlist/PlaylistModel.cpp:919
-#, fuzzy, kde-format
-#| msgid "%1 - %2"
-msgctxt "A saved playlist titled <artist> - <album>"
-msgid "%1 - %2"
-msgstr "%1 - %2"
-
-#: playlist/PlaylistModel.cpp:929
-#, fuzzy
-#| msgid "Filename"
-msgctxt "The name of the file this track is stored in"
-msgid "Filename"
-msgstr "फाइलनाम"
-
-#: playlist/PlaylistModel.cpp:937
-#, fuzzy
-#| msgid "Track"
-msgctxt "The Track number for this item"
-msgid "Track"
-msgstr "ट्रयाक"
-
-#: playlist/PlaylistModel.cpp:938 widgets/SmartPlaylistEditor.cpp:187
-msgid "BPM"
-msgstr "बीपीएम"
-
-#: playlist/PlaylistModel.cpp:941
-#, fuzzy
-#| msgid "Directory"
-msgctxt "The location on disc of this track"
-msgid "Directory"
-msgstr "डाइरेक्टरी"
-
-#: playlist/PlaylistModel.cpp:944 widgets/SmartPlaylistEditor.cpp:187
-msgid "Bitrate"
-msgstr "बिट्रेट"
-
-#: playlist/PlaylistModel.cpp:949
-msgctxt "Column name"
-msgid "Last Played"
-msgstr "अन्तिममा प्ले गरीएको"
-
-#: playlist/PlaylistModel.cpp:950
-msgid "Mood"
-msgstr "मुड"
-
 #: playlist/PlaylistDock.cpp:105
 #, fuzzy
 #| msgid "Dynamic Mode"
@@ -14512,6 +14468,56 @@ msgstr "हालको प्ले सूची"
 #| msgid "Save Playlist"
 msgid "&Save playlist to \"%1\""
 msgstr "प्लेसूची बचत गर्नुहोस्"
+
+#: playlist/PlaylistModel.cpp:271
+#, fuzzy
+#| msgid "..."
+msgid "(...)"
+msgstr "..."
+
+#: playlist/PlaylistModel.cpp:286
+#, fuzzy
+#| msgid "No information available for this track"
+msgid "No extra information available"
+msgstr "यो ट्रयाकका लागि कुनै सूचना उपलब्ध छैन"
+
+#: playlist/PlaylistModel.cpp:861
+#, fuzzy
+#| msgid "Filename"
+msgctxt "The name of the file this track is stored in"
+msgid "Filename"
+msgstr "फाइलनाम"
+
+#: playlist/PlaylistModel.cpp:869
+#, fuzzy
+#| msgid "Track"
+msgctxt "The Track number for this item"
+msgid "Track"
+msgstr "ट्रयाक"
+
+#: playlist/PlaylistModel.cpp:870 widgets/SmartPlaylistEditor.cpp:187
+msgid "BPM"
+msgstr "बीपीएम"
+
+#: playlist/PlaylistModel.cpp:873
+#, fuzzy
+#| msgid "Directory"
+msgctxt "The location on disc of this track"
+msgid "Directory"
+msgstr "डाइरेक्टरी"
+
+#: playlist/PlaylistModel.cpp:876 widgets/SmartPlaylistEditor.cpp:187
+msgid "Bitrate"
+msgstr "बिट्रेट"
+
+#: playlist/PlaylistModel.cpp:881
+msgctxt "Column name"
+msgid "Last Played"
+msgstr "अन्तिममा प्ले गरीएको"
+
+#: playlist/PlaylistModel.cpp:882
+msgid "Mood"
+msgstr "मुड"
 
 #: playlistgenerator/PresetEditDialog.cpp:61
 #, fuzzy
@@ -15067,14 +15073,14 @@ msgctxt "Remove a track from a saved playlist"
 msgid "Remove From \"%1\""
 msgstr "हटाउनुहोस्"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:367
-#: playlistmanager/file/PlaylistFileProvider.cpp:396
+#: playlistmanager/file/PlaylistFileProvider.cpp:368
+#: playlistmanager/file/PlaylistFileProvider.cpp:397
 #, fuzzy, kde-format
 #| msgid "The cover could not be retrieved."
 msgid "The playlist file \"%1\" could not be loaded."
 msgstr "आवरण पुन: प्राप्त गर्न सकेन ।"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:459
+#: playlistmanager/file/PlaylistFileProvider.cpp:460
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:119
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
@@ -15083,7 +15089,7 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:465
+#: playlistmanager/file/PlaylistFileProvider.cpp:466
 #, fuzzy
 #| msgid "Delete from device"
 msgid "Yes, delete from disk."
