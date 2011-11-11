@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-09 02:59+0100\n"
+"POT-Creation-Date: 2011-11-11 03:13+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3919,7 +3919,7 @@ msgid ""
 msgstr ""
 
 #: imageplugins/color/adjustlevelstool.cpp:319
-#: libs/dimg/filters/bw/mixersettings.cpp:155
+#: libs/dimg/filters/bw/mixersettings.cpp:167
 #: libs/dimg/filters/curves/curvesbox.cpp:215
 #, fuzzy
 #| msgid "Reset"
@@ -4051,14 +4051,6 @@ msgstr "यो मेट्न लागेको वस्तुको सू�
 #| msgid "Color Managed View is disabled"
 msgid "Color Management is disabled..."
 msgstr "रङ सन्तुलन दृश्य अक्षम गरियो"
-
-#: imageplugins/color/channelmixertool.cpp:108
-#: imageplugins/color/channelmixertool.cpp:225
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:50
-#, fuzzy
-#| msgid "Channel: "
-msgid "Channel Mixer"
-msgstr "च्यानल: "
 
 #: imageplugins/color/autocorrectiontool.cpp:91
 #, fuzzy
@@ -4221,6 +4213,14 @@ msgstr "कलरस्पेस"
 #| msgid "White Balance:"
 msgid "White Balance"
 msgstr "सेतो सन्तुलन:"
+
+#: imageplugins/color/channelmixertool.cpp:108
+#: imageplugins/color/channelmixertool.cpp:212
+#: utilities/queuemanager/basetools/color/channelmixer.cpp:49
+#, fuzzy
+#| msgid "Channel: "
+msgid "Channel Mixer"
+msgstr "च्यानल: "
 
 #: imageplugins/decorate/superimpose/superimposetool.cpp:103
 msgid "Template Superimpose"
@@ -8439,64 +8439,91 @@ msgstr "बचत गर्ने श्यामश्वेत सेटिङ
 msgid "Cannot save settings to the Black & White text file."
 msgstr "श्यामश्वेत पाठ फाइलमा सेटिङ बचत गर्न सकिदैन ।"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:129
+#: libs/dimg/filters/bw/mixersettings.cpp:135
+#, fuzzy
+#| msgid "Channel:"
+msgid "Output Channel:"
+msgstr "च्यानल:"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:137
+#: libs/dimg/filters/cb/cbsettings.cpp:97
+#: libs/widgets/common/colorlabelwidget.cpp:409
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:71
+msgid "Red"
+msgstr "रातो"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:138
+#: libs/dimg/filters/cb/cbsettings.cpp:111
+#: libs/widgets/common/colorlabelwidget.cpp:418
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:72
+msgid "Green"
+msgstr "हरियो"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:139
+#: libs/dimg/filters/cb/cbsettings.cpp:119
+#: libs/widgets/common/colorlabelwidget.cpp:421
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:73
+msgid "Blue"
+msgstr "निलो"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:141
 #, fuzzy
 #| msgid "Size:"
 msgid "Red (%):"
 msgstr "साइज:"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:134
+#: libs/dimg/filters/bw/mixersettings.cpp:146
 #, fuzzy
 #| msgid "<p>Set here the cyan/red color adjustment of the image."
 msgid "Select the red color gain, as a percentage, for the current channel."
 msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:137
+#: libs/dimg/filters/bw/mixersettings.cpp:149
 #, fuzzy
 #| msgid "Green"
 msgid "Green (%):"
 msgstr "हरियो"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:142
+#: libs/dimg/filters/bw/mixersettings.cpp:154
 #, fuzzy
 #| msgid "<p>Set here the magenta/green color adjustment of the image."
 msgid "Select the green color gain, as a percentage, for the current channel."
 msgstr "<p>यहाँ छविको म्याजेन्टा/हरियो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:145
+#: libs/dimg/filters/bw/mixersettings.cpp:157
 #, fuzzy
 #| msgid "Blue"
 msgid "Blue (%):"
 msgstr "निलो"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:150
+#: libs/dimg/filters/bw/mixersettings.cpp:162
 #, fuzzy
 #| msgid "<p>Set here the yellow/blue color adjustment of the image."
 msgid "Select the blue color gain, as a percentage, for the current channel."
 msgstr "<p>छविको पहेलो/निलो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:157
+#: libs/dimg/filters/bw/mixersettings.cpp:169
 msgid ""
 "Reset color channels' gains settings from the currently selected channel."
 msgstr ""
 
-#: libs/dimg/filters/bw/mixersettings.cpp:165
+#: libs/dimg/filters/bw/mixersettings.cpp:177
 #, fuzzy
 #| msgid "Luminosity"
 msgid "Preserve luminosity"
 msgstr "ज्योति"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:166
+#: libs/dimg/filters/bw/mixersettings.cpp:178
 #, fuzzy
 #| msgid "<p>If you enable this option, you will see the target image."
 msgid "Enable this option is you want preserve the image luminosity."
 msgstr "<p>तपाईँले यो विकल्प सक्षम पार्नुभएमा, तपाईँले लक्ष्य छवि देख्नुहुनेछ ।"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:171
+#: libs/dimg/filters/bw/mixersettings.cpp:183
 msgid "Monochrome"
 msgstr ""
 
-#: libs/dimg/filters/bw/mixersettings.cpp:172
+#: libs/dimg/filters/bw/mixersettings.cpp:184
 msgid ""
 "<p>Use <b>Monochrome</b> mode to convert color picture to Black and White:</"
 "p><p>The <qt><font color=\"red\">red channel</font></qt> modifies <a "
@@ -8508,27 +8535,27 @@ msgid ""
 "this mode, the histogram will display only luminosity values.</p>"
 msgstr ""
 
-#: libs/dimg/filters/bw/mixersettings.cpp:335
+#: libs/dimg/filters/bw/mixersettings.cpp:354
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgid "Total: %1 (%)"
 msgstr "%1 (%2)"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:524
+#: libs/dimg/filters/bw/mixersettings.cpp:550
 msgid "Select Gimp Gains Mixer File to Load"
 msgstr ""
 
-#: libs/dimg/filters/bw/mixersettings.cpp:620
+#: libs/dimg/filters/bw/mixersettings.cpp:646
 #, fuzzy
 #| msgid "Cannot load settings from the Black & White text file."
 msgid "Cannot load settings from the Gains Mixer text file."
 msgstr "श्यामश्वेत पाठ फाइलबाट सेटिङ लोड गर्न सकिदैन ।"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:632
+#: libs/dimg/filters/bw/mixersettings.cpp:658
 msgid "Gimp Gains Mixer File to Save"
 msgstr ""
 
-#: libs/dimg/filters/bw/mixersettings.cpp:698
+#: libs/dimg/filters/bw/mixersettings.cpp:724
 #, fuzzy
 #| msgid "Cannot save settings to the Black & White text file."
 msgid "Cannot save settings to the Gains Mixer text file."
@@ -8550,13 +8577,6 @@ msgstr "क्यान"
 msgid "Set here the cyan/red color adjustment of the image."
 msgstr "<p>यहाँ छविको क्यान/रातो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: libs/dimg/filters/cb/cbsettings.cpp:97
-#: libs/widgets/common/colorlabelwidget.cpp:409
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:71
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:59
-msgid "Red"
-msgstr "रातो"
-
 #: libs/dimg/filters/cb/cbsettings.cpp:102
 #: libs/widgets/common/colorlabelwidget.cpp:424
 msgid "Magenta"
@@ -8568,24 +8588,10 @@ msgstr "म्याजेन्टा"
 msgid "Set here the magenta/green color adjustment of the image."
 msgstr "<p>यहाँ छविको म्याजेन्टा/हरियो रङ समायोजन सेट गर्नुहोस् ।"
 
-#: libs/dimg/filters/cb/cbsettings.cpp:111
-#: libs/widgets/common/colorlabelwidget.cpp:418
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:72
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:60
-msgid "Green"
-msgstr "हरियो"
-
 #: libs/dimg/filters/cb/cbsettings.cpp:116
 #: libs/widgets/common/colorlabelwidget.cpp:415
 msgid "Yellow"
 msgstr "पहेलो"
-
-#: libs/dimg/filters/cb/cbsettings.cpp:119
-#: libs/widgets/common/colorlabelwidget.cpp:421
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:73
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:61
-msgid "Blue"
-msgstr "निलो"
 
 #: libs/dimg/filters/cb/cbsettings.cpp:126
 #, fuzzy
@@ -9835,7 +9841,6 @@ msgstr "रातो आँखा सुधार"
 
 #: libs/dimg/filters/levels/histogrambox.cpp:89
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:57
 msgid "Channel:"
 msgstr "च्यानल:"
 
@@ -17918,7 +17923,7 @@ msgstr "स्वत: प्रर्दशन"
 msgid "Alpha"
 msgstr "अल्फा"
 
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:51
+#: utilities/queuemanager/basetools/color/channelmixer.cpp:50
 #, fuzzy
 #| msgid "Color Space"
 msgid "Mix color channel."
