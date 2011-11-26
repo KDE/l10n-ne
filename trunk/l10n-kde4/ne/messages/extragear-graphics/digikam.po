@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-25 03:14+0100\n"
+"POT-Creation-Date: 2011-11-26 02:57+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -769,7 +769,7 @@ msgstr "फोल्डर सिर्जना गर्नुहुन्छ 
 #: libs/imageproperties/cameraitempropertiestab.cpp:323
 #: libs/imageproperties/cameraitempropertiestab.cpp:338
 #: libs/imageproperties/cameraitempropertiestab.cpp:411
-#: libs/imageproperties/imagepropertiescolorstab.cpp:598
+#: libs/imageproperties/imagepropertiescolorstab.cpp:697
 #, fuzzy
 #| msgid "yes"
 msgid "Yes"
@@ -783,7 +783,7 @@ msgstr "हो"
 #: libs/imageproperties/cameraitempropertiestab.cpp:319
 #: libs/imageproperties/cameraitempropertiestab.cpp:334
 #: libs/imageproperties/cameraitempropertiestab.cpp:415
-#: libs/imageproperties/imagepropertiescolorstab.cpp:598
+#: libs/imageproperties/imagepropertiescolorstab.cpp:697
 #, fuzzy
 #| msgid "None"
 msgid "No"
@@ -3986,12 +3986,12 @@ msgid "Invert"
 msgstr "उल्टाउनुहोस्"
 
 #: imageplugins/color/imageplugin_color.cpp:140
-#: libs/imageproperties/imagepropertiescolorstab.cpp:597
+#: libs/imageproperties/imagepropertiescolorstab.cpp:696
 msgid "8 bits"
 msgstr "८ बिट"
 
 #: imageplugins/color/imageplugin_color.cpp:145
-#: libs/imageproperties/imagepropertiescolorstab.cpp:597
+#: libs/imageproperties/imagepropertiescolorstab.cpp:696
 msgid "16 bits"
 msgstr "१६ बिट"
 
@@ -8621,13 +8621,13 @@ msgid "Set here the yellow/blue color adjustment of the image."
 msgstr "<p>छविको पहेलो/निलो रङ समायोजन सेट गर्नुहोस् ।"
 
 #: libs/dimg/filters/curves/curveswidget.cpp:185
-#: libs/dimg/filters/levels/histogramwidget.cpp:523
+#: libs/dimg/filters/levels/histogramwidget.cpp:526
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:845
 msgid "Loading image..."
 msgstr "छवि लोड हुँदैछ..."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:190
-#: libs/dimg/filters/levels/histogramwidget.cpp:528
+#: libs/dimg/filters/levels/histogramwidget.cpp:531
 #, fuzzy
 #| msgid ""
 #| "Histogram\n"
@@ -8640,7 +8640,7 @@ msgstr ""
 "सफल भयो ।"
 
 #: libs/dimg/filters/curves/curveswidget.cpp:204
-#: libs/dimg/filters/levels/histogramwidget.cpp:543
+#: libs/dimg/filters/levels/histogramwidget.cpp:546
 msgid ""
 "Histogram\n"
 "calculation\n"
@@ -9860,6 +9860,17 @@ msgstr "स्वत: रङ सुधार"
 msgid "Lens Auto-Correction Tool"
 msgstr "रातो आँखा सुधार"
 
+#: libs/dimg/filters/levels/levelsfilter.h:87
+#, fuzzy
+#| msgid "HSL Adjustments"
+msgid "Levels Adjust Tool"
+msgstr "HSL समायोजन"
+
+#: libs/dimg/filters/levels/histogrampainter.cpp:473
+#, kde-format
+msgid "x:%1"
+msgstr "x:%1"
+
 #: libs/dimg/filters/levels/histogrambox.cpp:89
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
 msgid "Channel:"
@@ -9908,111 +9919,100 @@ msgstr ""
 "<p>यहाँ तपाईँले चयन गरेको छवि च्यानलको लक्ष्य पूर्वावलोकन छवि हिस्टोग्राम रेखाचित्र हेर्न "
 "सक्नुहुन्छ । यो एउटालाई कुनै पनि सेटिङ परिवर्तनमा पुन: गणना गरिन्छ ।"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:270
+#: libs/dimg/filters/levels/histogrambox.cpp:269
 msgid "<p>Select the histogram channel to display:</p>"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:275
+#: libs/dimg/filters/levels/histogrambox.cpp:274
 #, fuzzy
 #| msgid "Luminosity"
 msgctxt "The luminosity channel"
 msgid "Luminosity"
 msgstr "ज्योति"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:276
+#: libs/dimg/filters/levels/histogrambox.cpp:275
 msgid "<b>Luminosity</b>: display the image's luminosity values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:278
+#: libs/dimg/filters/levels/histogrambox.cpp:277
 #, fuzzy
 #| msgid "Red"
 msgctxt "The red channel"
 msgid "Red"
 msgstr "रातो"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:279
+#: libs/dimg/filters/levels/histogrambox.cpp:278
 msgid "<b>Red</b>: display the red image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:281
+#: libs/dimg/filters/levels/histogrambox.cpp:280
 #, fuzzy
 #| msgid "Green"
 msgctxt "The green channel"
 msgid "Green"
 msgstr "हरियो"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:282
+#: libs/dimg/filters/levels/histogrambox.cpp:281
 msgid "<b>Green</b>: display the green image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:284
+#: libs/dimg/filters/levels/histogrambox.cpp:283
 #, fuzzy
 #| msgid "Blue"
 msgctxt "The blue channel"
 msgid "Blue"
 msgstr "निलो"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:285
+#: libs/dimg/filters/levels/histogrambox.cpp:284
 msgid "<b>Blue</b>: display the blue image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:287
+#: libs/dimg/filters/levels/histogrambox.cpp:286
 #, fuzzy
 #| msgid "Colors"
 msgctxt "The colors channel"
 msgid "Colors"
 msgstr "रङ"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:288
+#: libs/dimg/filters/levels/histogrambox.cpp:287
 msgid "<b>Colors</b>: Display all color channel values at the same time."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:290
+#: libs/dimg/filters/levels/histogrambox.cpp:289
 #, fuzzy
 #| msgid "Alpha"
 msgctxt "The alpha channel"
 msgid "Alpha"
 msgstr "अल्फा"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:291
+#: libs/dimg/filters/levels/histogrambox.cpp:290
 msgid ""
 "<b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image "
 "formats, such as PNG or TIF."
 msgstr ""
 
-#: libs/dimg/filters/levels/levelsfilter.h:87
-#, fuzzy
-#| msgid "HSL Adjustments"
-msgid "Levels Adjust Tool"
-msgstr "HSL समायोजन"
-
-#: libs/dimg/filters/levels/histogrampainter.cpp:473
-#, kde-format
-msgid "x:%1"
-msgstr "x:%1"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:600
+#: libs/dimg/filters/levels/histogramwidget.cpp:602
 msgid "Mean:"
 msgstr "मिन:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:604
+#: libs/dimg/filters/levels/histogramwidget.cpp:606
 msgid "Pixels:"
 msgstr "पिक्सेल:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:608
+#: libs/dimg/filters/levels/histogramwidget.cpp:610
 msgid "Std dev.:"
 msgstr "स्ट्यान्डर्ड डेभिएसन:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:612
+#: libs/dimg/filters/levels/histogramwidget.cpp:614
 msgid "Count:"
 msgstr "गणना:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:616
+#: libs/dimg/filters/levels/histogramwidget.cpp:618
 msgid "Median:"
 msgstr "मेडियन:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:620
+#: libs/dimg/filters/levels/histogramwidget.cpp:622
 msgid "Percent:"
 msgstr "प्रतिशत:"
 
@@ -11557,29 +11557,29 @@ msgstr "प्रत्येक फाइलमा मेटाडेटा ल
 msgid "Read metadata from each file to database"
 msgstr "डाटाबेसमा प्रत्येक फाइलबाट मेटाडेटा पढ्नुहोस्"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:161
+#: libs/imageproperties/imagepropertiescolorstab.cpp:165
 msgid "Range:"
 msgstr "दायरा:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:168
+#: libs/imageproperties/imagepropertiescolorstab.cpp:172
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the minimal intensity value of the histogram selection."
 msgid "Select the minimal intensity value of the histogram selection here."
 msgstr "<p>यहाँ हिस्टोग्राम चयनको न्यूनतम घनत्व मान चयन गर्नुहोस् ।"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:174
+#: libs/imageproperties/imagepropertiescolorstab.cpp:178
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the maximal intensity value of the histogram selection."
 msgid "Select the maximal intensity value of the histogram selection here."
 msgstr "<p>यहाँ हिस्टोग्राम चयनको अधिकतम घनत्व मान चयन गर्नुहोस् ।"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:182
+#: libs/imageproperties/imagepropertiescolorstab.cpp:186
 msgid "Statistics"
 msgstr "तथ्याङ्क"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:183
+#: libs/imageproperties/imagepropertiescolorstab.cpp:187
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the statistical results calculated from the selected "
@@ -11591,75 +11591,75 @@ msgstr ""
 "<p>यहाँ तपाईँले चयन गरेको हिस्टोग्राम भागबाट गणना गरिएको तथ्याङ्किय परिणाम हेर्न "
 "सक्नुहुन्छ । ति मानहरू सबै च्यानलका लागि उपलब्ध हुन्छन् ।"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:188
+#: libs/imageproperties/imagepropertiescolorstab.cpp:192
 #, fuzzy
 #| msgid "Pixels:"
 msgid "Pixels: "
 msgstr "पिक्सेल:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:191
+#: libs/imageproperties/imagepropertiescolorstab.cpp:195
 #, fuzzy
 #| msgid "Count:"
 msgid "Count: "
 msgstr "गणना:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:194
+#: libs/imageproperties/imagepropertiescolorstab.cpp:198
 #, fuzzy
 #| msgid "Mean:"
 msgid "Mean: "
 msgstr "मिन:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:197
+#: libs/imageproperties/imagepropertiescolorstab.cpp:201
 #, fuzzy
 #| msgid "Standard deviation:"
 msgid "Std. deviation: "
 msgstr "स्ट्यान्डर्ड डेभिएसन:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:200
+#: libs/imageproperties/imagepropertiescolorstab.cpp:204
 #, fuzzy
 #| msgid "Median:"
 msgid "Median: "
 msgstr "मेडियन:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:203
+#: libs/imageproperties/imagepropertiescolorstab.cpp:207
 #, fuzzy
 #| msgid "Percentile:"
 msgid "Percentile: "
 msgstr "प्रतिशत टायल:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:206
+#: libs/imageproperties/imagepropertiescolorstab.cpp:210
 #, fuzzy
 #| msgid "Color depth:"
 msgid "Color depth: "
 msgstr "रङ गहिराइ:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:209
+#: libs/imageproperties/imagepropertiescolorstab.cpp:213
 #, fuzzy
 #| msgid "Alpha Channel:"
 msgid "Alpha Channel: "
 msgstr "अल्फा च्यानल:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:212
+#: libs/imageproperties/imagepropertiescolorstab.cpp:216
 #, fuzzy
 #| msgid "Source:"
 msgid "Source: "
 msgstr "स्रोत:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:246
+#: libs/imageproperties/imagepropertiescolorstab.cpp:266
 msgid "Histogram"
 msgstr "हिस्टोग्राम"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:256
+#: libs/imageproperties/imagepropertiescolorstab.cpp:276
 msgid "ICC profile"
 msgstr "ICC प्रोफाइल"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#: libs/imageproperties/imagepropertiescolorstab.cpp:738
 #, fuzzy
 #| msgid "<p>Full Image"
 msgid "Full Image"
 msgstr "<p>पूरा छवि"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#: libs/imageproperties/imagepropertiescolorstab.cpp:738
 #, fuzzy
 #| msgid "Show image dimensions"
 msgid "Image Region"
