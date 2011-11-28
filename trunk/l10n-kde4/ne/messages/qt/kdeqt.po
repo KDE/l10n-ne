@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2011-11-24 04:38+0100\n"
+"POT-Creation-Date: 2011-11-28 04:04+0100\n"
 "PO-Revision-Date: 2007-08-24 20:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1828,8 +1828,8 @@ msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "यन्त्रमा खाली ठाउँ बाँकी छैन"
 
-#: corelib/io/qiodevice.cpp:1629 corelib/plugin/qlibrary.cpp:1233
-#: corelib/plugin/qpluginloader.cpp:367
+#: corelib/io/qiodevice.cpp:1629 corelib/plugin/qpluginloader.cpp:367
+#: corelib/plugin/qlibrary.cpp:1233
 #: corelib/statemachine/qstatemachine.cpp:1046
 #: network/kernel/qhostinfo_unix.cpp:300 network/kernel/qhostinfo_win.cpp:209
 #: network/kernel/qhostinfo_win.cpp:236
@@ -2138,15 +2138,35 @@ msgstr ""
 msgid "'%1' is an invalid ELF object (%2)"
 msgstr "%1 एउटा अवैध सङ्केतन नाम हो ।"
 
+#: corelib/plugin/qlibrary_unix.cpp:244 corelib/plugin/qlibrary_win.cpp:87
+#, qt-format
+msgid "Cannot load library %1: %2"
+msgstr ""
+
+#: corelib/plugin/qlibrary_unix.cpp:261 corelib/plugin/qlibrary_win.cpp:109
+#, qt-format
+msgid "Cannot unload library %1: %2"
+msgstr ""
+
+#: corelib/plugin/qlibrary_unix.cpp:295 corelib/plugin/qlibrary_win.cpp:124
+#, fuzzy, qt-format
+#| msgid "QLibrary::resolve_sys: Symbol \"%1\" undefined in %2 (%3)"
+msgid "Cannot resolve symbol \"%1\" in %2: %3"
+msgstr "QLibrary::resolve_sys: %2 (%3) मा अपरिभाषित प्रतीक \"%1\""
+
+#: corelib/plugin/qpluginloader.cpp:254
+msgid "The plugin was not loaded."
+msgstr "प्लगइन लोड गरिएको छैन ।"
+
+#: corelib/plugin/qpluginloader.cpp:343 corelib/plugin/qlibrary.cpp:679
+#: corelib/plugin/qlibrary.cpp:825
+msgid "The shared library was not found."
+msgstr "साझेदार गरिएको लाइब्रेरी फेला परेन ।"
+
 #: corelib/plugin/qlibrary.cpp:402
 #, qt-format
 msgid "Plugin verification data mismatch in '%1'"
 msgstr "प्लगइन प्रमाणीकरण डेटा '%1' मा मिलेन"
-
-#: corelib/plugin/qlibrary.cpp:679 corelib/plugin/qlibrary.cpp:825
-#: corelib/plugin/qpluginloader.cpp:343
-msgid "The shared library was not found."
-msgstr "साझेदार गरिएको लाइब्रेरी फेला परेन ।"
 
 #: corelib/plugin/qlibrary.cpp:827
 #, qt-format
@@ -2175,26 +2195,6 @@ msgid ""
 msgstr ""
 "प्लगइन '%1' ले अमिल्दो Qt लाइब्रेरी प्रयोग गर्दछ । (त्रुटिमोचन मिश्रण गर्न लाइब्रेरी "
 "प्रकाशन गर्न सकिँदैन ।)"
-
-#: corelib/plugin/qlibrary_unix.cpp:244 corelib/plugin/qlibrary_win.cpp:87
-#, qt-format
-msgid "Cannot load library %1: %2"
-msgstr ""
-
-#: corelib/plugin/qlibrary_unix.cpp:261 corelib/plugin/qlibrary_win.cpp:109
-#, qt-format
-msgid "Cannot unload library %1: %2"
-msgstr ""
-
-#: corelib/plugin/qlibrary_unix.cpp:295 corelib/plugin/qlibrary_win.cpp:124
-#, fuzzy, qt-format
-#| msgid "QLibrary::resolve_sys: Symbol \"%1\" undefined in %2 (%3)"
-msgid "Cannot resolve symbol \"%1\" in %2: %3"
-msgstr "QLibrary::resolve_sys: %2 (%3) मा अपरिभाषित प्रतीक \"%1\""
-
-#: corelib/plugin/qpluginloader.cpp:254
-msgid "The plugin was not loaded."
-msgstr "प्लगइन लोड गरिएको छैन ।"
 
 #: corelib/statemachine/qstatemachine.cpp:1028
 #, qt-format
@@ -7068,10 +7068,6 @@ msgstr ""
 msgid "Could not reset to read data"
 msgstr "एरे डेटा प्राप्त गर्न सकेन"
 
-#: plugins/inputmethods/imsw-multi/qmultiinputcontext.cpp:88
-msgid "Select IM"
-msgstr "आईएम चयन गर्नुहोस्"
-
 #: plugins/inputmethods/imsw-multi/qmultiinputcontextplugin.cpp:95
 msgid "Multiple input method switcher"
 msgstr "बहुँविध आगत विधि स्विचर"
@@ -7080,6 +7076,10 @@ msgstr "बहुँविध आगत विधि स्विचर"
 msgid ""
 "Multiple input method switcher that uses the context menu of the text widgets"
 msgstr "बहुँविध आगत विधि स्विचर जसले पाठ विजेटको प्रसंग मेनु प्रयोग गर्दछ"
+
+#: plugins/inputmethods/imsw-multi/qmultiinputcontext.cpp:88
+msgid "Select IM"
+msgstr "आईएम चयन गर्नुहोस्"
 
 #: plugins/qmltooling/qmldbg_inspector/editor/liveselectiontool.cpp:143
 msgid "Items"
