@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-26 03:27+0100\n"
+"POT-Creation-Date: 2011-11-29 04:55+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -8659,7 +8659,7 @@ msgstr "डेटा मोड"
 msgid "Spectrum Analyzer Settings"
 msgstr "साधारण विकल्प"
 
-#: context/containments/verticallayout/VerticalToolbarContainment.cpp:180
+#: context/containments/verticallayout/VerticalToolbarContainment.cpp:191
 msgid ""
 "Please add some applets from the toolbar at the bottom of the context view."
 msgstr ""
@@ -14851,14 +14851,6 @@ msgstr "%1को व्यक्तिगत रेडियो"
 msgid "Play Similar Artists from Last.fm"
 msgstr "%1 मा मिल्ने कलाकारहरू"
 
-#: services/lastfm/ScrobblerAdapter.cpp:236
-#: services/lastfm/LastFmService.cpp:543
-#, fuzzy, kde-format
-#| msgid "Selected Tracks"
-msgctxt "As in, lastfm"
-msgid "Loved Track: %1"
-msgstr "चयन गरिएको ट्रयाक"
-
 #: services/lastfm/LastFmService.cpp:195
 msgid "Last.fm: The social music revolution"
 msgstr ""
@@ -14936,6 +14928,14 @@ msgstr "ट्याग"
 #: services/lastfm/LastFmService.cpp:507
 msgid "User"
 msgstr "प्रयोगकर्ता"
+
+#: services/lastfm/LastFmService.cpp:543
+#: services/lastfm/ScrobblerAdapter.cpp:219
+#, fuzzy, kde-format
+#| msgid "Selected Tracks"
+msgctxt "As in, lastfm"
+msgid "Loved Track: %1"
+msgstr "चयन गरिएको ट्रयाक"
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:42
 #, fuzzy
@@ -15522,83 +15522,107 @@ msgid ""
 "MP3 store. Amarok gets a share of the profits made by this service."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:190
+#: services/amazon/AmazonStore.cpp:191
 #, kde-format
 msgid "<em>%1</em> has been added to your shopping cart."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:213 services/amazon/AmazonStore.cpp:317
+#: services/amazon/AmazonStore.cpp:214 services/amazon/AmazonStore.cpp:319
 #, fuzzy
 #| msgid "Wikipedia Information"
 msgid "Error: Unable to write temporary file. :-("
 msgstr "विकिपेडिया जानकारी"
 
-#: services/amazon/AmazonStore.cpp:275
+#: services/amazon/AmazonStore.cpp:277
 msgid "Select your Amazon locale - Amarok"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:287
+#: services/amazon/AmazonStore.cpp:289
 msgid ""
 "<b>MP3 Music Store</b><br/><br/>Please select a valid country in the "
 "settings to make the store work."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:402
+#: services/amazon/AmazonStore.cpp:403
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:425
+#: services/amazon/AmazonStore.cpp:426
 #, fuzzy
 #| msgid "Add to Playlist"
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "प्ले सूचीमा थप्नुहोस्"
 
-#: services/amazon/AmazonStore.cpp:426
+#: services/amazon/AmazonStore.cpp:427
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:433
+#: services/amazon/AmazonStore.cpp:434
 #, fuzzy
 #| msgid "View"
 msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr "दृश्य"
 
-#: services/amazon/AmazonStore.cpp:434
+#: services/amazon/AmazonStore.cpp:435
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:441
+#: services/amazon/AmazonStore.cpp:442
 #, fuzzy
 #| msgid "<b>%1</b> by <b>%2</b>"
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: services/amazon/AmazonStore.cpp:442
+#: services/amazon/AmazonStore.cpp:443
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:462
+#: services/amazon/AmazonStore.cpp:463
 msgid "Error: Querying MP3 Music Store database failed. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:497
+#: services/amazon/AmazonStore.cpp:498
 msgid "Error: Received an invalid reply. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:517
+#: services/amazon/AmazonStore.cpp:518
 #, fuzzy
 #| msgid "Wikipedia Information"
 msgid "Error: Unable to open temporary file. :-("
 msgstr "विकिपेडिया जानकारी"
 
-#: services/amazon/AmazonStore.cpp:537
+#: services/amazon/AmazonStore.cpp:538
 #, fuzzy
 #| msgid "Wikipedia Information"
 msgid "Error: Unable to parse temporary file. :-("
 msgstr "विकिपेडिया जानकारी"
+
+#: services/amazon/AmazonItemTreeView.cpp:271
+#, fuzzy
+#| msgid "Add to Playlist"
+msgid "Add to Cart"
+msgstr "प्ले सूचीमा थप्नुहोस्"
+
+#: services/amazon/AmazonItemTreeView.cpp:280
+#, fuzzy
+#| msgid "Add to Playlist"
+msgid "Add Preview to Playlist"
+msgstr "प्ले सूचीमा थप्नुहोस्"
+
+#: services/amazon/AmazonItemTreeView.cpp:290
+#, fuzzy
+#| msgid "Loading Thumbnails..."
+msgid "Load Details..."
+msgstr "थम्बनेलहरू लोड हुँदैछ..."
+
+#: services/amazon/AmazonItemTreeView.cpp:299
+#, fuzzy
+#| msgid "&Search"
+msgid "Search for Album..."
+msgstr "खोजी गर्नुहोस्"
 
 #: services/amazon/AmazonItemTreeModel.cpp:108
 #: services/amazon/AmazonItemTreeModel.cpp:129
@@ -15630,30 +15654,6 @@ msgstr "ट्रयाक:"
 #: services/amazon/AmazonItemTreeModel.cpp:171
 msgid "Price"
 msgstr ""
-
-#: services/amazon/AmazonItemTreeView.cpp:271
-#, fuzzy
-#| msgid "Add to Playlist"
-msgid "Add to Cart"
-msgstr "प्ले सूचीमा थप्नुहोस्"
-
-#: services/amazon/AmazonItemTreeView.cpp:280
-#, fuzzy
-#| msgid "Add to Playlist"
-msgid "Add Preview to Playlist"
-msgstr "प्ले सूचीमा थप्नुहोस्"
-
-#: services/amazon/AmazonItemTreeView.cpp:290
-#, fuzzy
-#| msgid "Loading Thumbnails..."
-msgid "Load Details..."
-msgstr "थम्बनेलहरू लोड हुँदैछ..."
-
-#: services/amazon/AmazonItemTreeView.cpp:299
-#, fuzzy
-#| msgid "&Search"
-msgid "Search for Album..."
-msgstr "खोजी गर्नुहोस्"
 
 #: statusbar/CompoundProgressBar.cpp:63 statusbar/CompoundProgressBar.cpp:186
 #: statusbar/ProgressBar.cpp:48
@@ -15754,6 +15754,18 @@ msgstr "धेरै विश्लेषकहरूका लागि क्
 msgid "&Visualizations"
 msgstr "दृष्टिकरण"
 
+#: widgets/SearchWidget.cpp:51
+#, fuzzy
+#| msgid "Enter space-separated terms to search in the albums"
+msgid "Enter space-separated terms to search."
+msgstr "एल्बममा खोजी गर्न खाली स्थान-विभाजित सर्त प्रविष्ट गर्नुहोस्"
+
+#: widgets/SearchWidget.cpp:71 widgets/SearchWidget.cpp:174
+#, fuzzy
+#| msgid "Edit Filter"
+msgid "Edit filter"
+msgstr "फिल्टर सम्पादन गर्नुहोस्"
+
 #: widgets/PlayPauseButton.cpp:31 widgets/PlayPauseButton.cpp:81
 msgid "Play"
 msgstr "प्ले गर्नुहोस्"
@@ -15793,18 +15805,6 @@ msgstr "कलाकार"
 #| msgid "Retry"
 msgid "empty"
 msgstr "पुन: प्रयास गर्नुहोस्"
-
-#: widgets/SearchWidget.cpp:51
-#, fuzzy
-#| msgid "Enter space-separated terms to search in the albums"
-msgid "Enter space-separated terms to search."
-msgstr "एल्बममा खोजी गर्न खाली स्थान-विभाजित सर्त प्रविष्ट गर्नुहोस्"
-
-#: widgets/SearchWidget.cpp:71 widgets/SearchWidget.cpp:174
-#, fuzzy
-#| msgid "Edit Filter"
-msgid "Edit filter"
-msgstr "फिल्टर सम्पादन गर्नुहोस्"
 
 #: widgets/SmartPlaylistEditor.cpp:79
 msgid "Create Smart Playlist"
