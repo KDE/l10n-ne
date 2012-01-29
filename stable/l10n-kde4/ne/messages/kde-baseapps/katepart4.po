@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-21 04:22+0100\n"
+"POT-Creation-Date: 2012-01-29 13:27+0100\n"
 "PO-Revision-Date: 2007-08-19 14:23+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -245,7 +245,7 @@ msgstr[1] " क्यारेक्टर"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:676 dialogs/katedialogs.cpp:753
-#: dialogs/katedialogs.cpp:916 rc.cpp:137 rc.cpp:715
+#: dialogs/katedialogs.cpp:916 rc.cpp:137 rc.cpp:544
 msgid "General"
 msgstr "साधारण"
 
@@ -303,7 +303,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:917 rc.cpp:694
+#: dialogs/katedialogs.cpp:917 rc.cpp:523
 msgid "Advanced"
 msgstr ""
 
@@ -697,7 +697,7 @@ msgstr "%1 को गुण"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:284 rc.cpp:353
+#: mode/katemodeconfigpage.cpp:284 rc.cpp:659
 msgid "Properties"
 msgstr "गुण"
 
@@ -887,6 +887,15 @@ msgstr "त्रुटि: %1"
 msgid "Error loading script %1"
 msgstr ""
 
+#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
+#, kde-format
+msgid "Command not found: %1"
+msgstr "आदेश फेला परेन: %1"
+
+#: script/katescriptmanager.cpp:349
+msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
+msgstr ""
+
 #: script/katescriptconsole.cpp:61
 msgid "Error: can't open utils.js"
 msgstr ""
@@ -907,15 +916,6 @@ msgstr "कार्यान्वयन"
 
 #: script/katescriptconsole.cpp:147
 msgid "There's no code to execute"
-msgstr ""
-
-#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
-#, kde-format
-msgid "Command not found: %1"
-msgstr "आदेश फेला परेन: %1"
-
-#: script/katescriptmanager.cpp:349
-msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
 msgstr ""
 
 #: search/katesearchbar.cpp:76
@@ -1146,70 +1146,6 @@ msgstr "खण्ड:"
 msgid "The files are identical."
 msgstr ""
 
-#: syntax/katehighlight.cpp:82
-#, fuzzy
-#| msgid "None"
-msgctxt "Syntax highlighting"
-msgid "None"
-msgstr "कुनै पनि होइन"
-
-#: syntax/katehighlight.cpp:734
-msgid "Normal Text"
-msgstr "सामान्य पाठ"
-
-#: syntax/katehighlight.cpp:896
-#, fuzzy, kde-format
-#| msgid ""
-#| "<B>%1</B>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-#| "name<BR>"
-msgid ""
-"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-"name<br />"
-msgstr ""
-"<B>%1</B>: निषेधीत वाक्य संरचना । (%2) विशेषता साङ्केतिक नामद्वारा सम्बोधन गरिएको "
-"छैन<BR>"
-
-#: syntax/katehighlight.cpp:1419
-#, fuzzy, kde-format
-#| msgid "<B>%1</B>: Deprecated syntax. Context %2 has no symbolic name<BR>"
-msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
-msgstr "<B>%1</B>: निषेधीत वाक्य संरचना । %2 प्रसङ्गको कुनै साङ्केतिक नाम छैन<BR>"
-
-#: syntax/katehighlight.cpp:1505
-#, kde-format
-msgid ""
-"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
-msgstr ""
-"<B>%1</B>: निषेधीत वाक्य संरचना । साङ्केतिक नामद्वारा %2 प्रसङ्ग सम्बोधन गरिएको छैन"
-
-#: syntax/katehighlight.cpp:1649
-msgid ""
-"There were warning(s) and/or error(s) while parsing the syntax highlighting "
-"configuration."
-msgstr ""
-"वाक्य संरचना हाइलाइटिङ कन्फिगरेसन पद वर्णन गर्दा त्यहाँ चेतावनी(हरू) र/वा त्रुटि थियो ।"
-
-#: syntax/katehighlight.cpp:1651
-msgid "Kate Syntax Highlighting Parser"
-msgstr "केट वाक्य संरचना हाइलाइटिङ पद वर्णनकर्ता"
-
-#: syntax/katehighlight.cpp:1813
-msgid ""
-"Since there has been an error parsing the highlighting description, this "
-"highlighting will be disabled"
-msgstr ""
-"हाइलाइटिङ विवरण पद वर्णन गर्दा त्यहाँ एउटा त्रुटि भएमा, यो हाइलाइटिङ अक्षम गरिनेछ"
-
-#: syntax/katehighlight.cpp:2039
-#, fuzzy, kde-format
-#| msgid ""
-#| "<B>%1</B>: Specified multiline comment region (%2) could not be "
-#| "resolved<BR>"
-msgid ""
-"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
-">"
-msgstr "<B>%1</B>: निर्दिष्ट गरिएको बहुपङ्क्ति टिप्पणी क्षेत्र (%2) स्पष्ट गर्न सकेन<BR>"
-
 #: syntax/katesyntaxdocument.cpp:84
 #, fuzzy, kde-format
 #| msgid ""
@@ -1329,6 +1265,173 @@ msgstr "क्षेत्र मार्कर"
 msgctxt "@item:intable Text context"
 msgid "Error"
 msgstr "त्रुटि"
+
+#: syntax/katehighlight.cpp:82
+#, fuzzy
+#| msgid "None"
+msgctxt "Syntax highlighting"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: syntax/katehighlight.cpp:734
+msgid "Normal Text"
+msgstr "सामान्य पाठ"
+
+#: syntax/katehighlight.cpp:896
+#, fuzzy, kde-format
+#| msgid ""
+#| "<B>%1</B>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+#| "name<BR>"
+msgid ""
+"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+"name<br />"
+msgstr ""
+"<B>%1</B>: निषेधीत वाक्य संरचना । (%2) विशेषता साङ्केतिक नामद्वारा सम्बोधन गरिएको "
+"छैन<BR>"
+
+#: syntax/katehighlight.cpp:1419
+#, fuzzy, kde-format
+#| msgid "<B>%1</B>: Deprecated syntax. Context %2 has no symbolic name<BR>"
+msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
+msgstr "<B>%1</B>: निषेधीत वाक्य संरचना । %2 प्रसङ्गको कुनै साङ्केतिक नाम छैन<BR>"
+
+#: syntax/katehighlight.cpp:1505
+#, kde-format
+msgid ""
+"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
+msgstr ""
+"<B>%1</B>: निषेधीत वाक्य संरचना । साङ्केतिक नामद्वारा %2 प्रसङ्ग सम्बोधन गरिएको छैन"
+
+#: syntax/katehighlight.cpp:1649
+msgid ""
+"There were warning(s) and/or error(s) while parsing the syntax highlighting "
+"configuration."
+msgstr ""
+"वाक्य संरचना हाइलाइटिङ कन्फिगरेसन पद वर्णन गर्दा त्यहाँ चेतावनी(हरू) र/वा त्रुटि थियो ।"
+
+#: syntax/katehighlight.cpp:1651
+msgid "Kate Syntax Highlighting Parser"
+msgstr "केट वाक्य संरचना हाइलाइटिङ पद वर्णनकर्ता"
+
+#: syntax/katehighlight.cpp:1813
+msgid ""
+"Since there has been an error parsing the highlighting description, this "
+"highlighting will be disabled"
+msgstr ""
+"हाइलाइटिङ विवरण पद वर्णन गर्दा त्यहाँ एउटा त्रुटि भएमा, यो हाइलाइटिङ अक्षम गरिनेछ"
+
+#: syntax/katehighlight.cpp:2039
+#, fuzzy, kde-format
+#| msgid ""
+#| "<B>%1</B>: Specified multiline comment region (%2) could not be "
+#| "resolved<BR>"
+msgid ""
+"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
+">"
+msgstr "<B>%1</B>: निर्दिष्ट गरिएको बहुपङ्क्ति टिप्पणी क्षेत्र (%2) स्पष्ट गर्न सकेन<BR>"
+
+#: utils/katestyletreewidget.cpp:132
+#, fuzzy
+#| msgid "Context"
+msgctxt "@title:column Meaning of text in editor"
+msgid "Context"
+msgstr "सन्दर्भ"
+
+#: utils/katestyletreewidget.cpp:132
+#, fuzzy
+#| msgid "Normal"
+msgctxt "@title:column Text style"
+msgid "Normal"
+msgstr "सामान्य"
+
+#: utils/katestyletreewidget.cpp:132
+#, fuzzy
+#| msgid "Selected"
+msgctxt "@title:column Text style"
+msgid "Selected"
+msgstr "चयन"
+
+#: utils/katestyletreewidget.cpp:132
+#, fuzzy
+#| msgid "Background"
+msgctxt "@title:column Text style"
+msgid "Background"
+msgstr "पृष्ठभूमि"
+
+#: utils/katestyletreewidget.cpp:132
+#, fuzzy
+#| msgid "Background Selected"
+msgctxt "@title:column Text style"
+msgid "Background Selected"
+msgstr "पृष्ठभूमि चयन गरियो"
+
+#: utils/katestyletreewidget.cpp:134
+msgid "Use Default Style"
+msgstr "पूर्वनिर्धारित शैली प्रयोग गर्नुहोस्"
+
+#: utils/katestyletreewidget.cpp:222
+msgid "&Bold"
+msgstr "बाक्लो"
+
+#: utils/katestyletreewidget.cpp:227
+msgid "&Italic"
+msgstr "छड्के"
+
+#: utils/katestyletreewidget.cpp:232
+msgid "&Underline"
+msgstr "अधोरेखा"
+
+#: utils/katestyletreewidget.cpp:237
+msgid "S&trikeout"
+msgstr "स्ट्राइक आउट"
+
+#: utils/katestyletreewidget.cpp:244
+msgid "Normal &Color..."
+msgstr "सामान्य रङ..."
+
+#: utils/katestyletreewidget.cpp:247
+msgid "&Selected Color..."
+msgstr "चयन गरिएको रङ..."
+
+#: utils/katestyletreewidget.cpp:250
+msgid "&Background Color..."
+msgstr "पृष्ठभूमि रङ..."
+
+#: utils/katestyletreewidget.cpp:253
+msgid "S&elected Background Color..."
+msgstr "चयन गरिएको पृष्ठभूमि रङ..."
+
+#: utils/katestyletreewidget.cpp:265
+msgid "Unset Background Color"
+msgstr "पृष्ठभूमि रङ अनसेट गर्नुहोस्"
+
+#: utils/katestyletreewidget.cpp:269
+msgid "Unset Selected Background Color"
+msgstr "चयन गरिएको पृष्ठभूमि रङ अनसेट गर्नुहोस्"
+
+#: utils/katestyletreewidget.cpp:276
+msgid "Use &Default Style"
+msgstr "पूर्वनिर्धारित शैली प्रयोग गर्नुहोस्"
+
+#: utils/katestyletreewidget.cpp:388
+#, fuzzy
+#| msgctxt "No text or background colour set"
+#| msgid "None set"
+msgctxt "No text or background color set"
+msgid "None set"
+msgstr "कुनै पनि होइन सेट गर्नुहोस्"
+
+#: utils/katestyletreewidget.cpp:606
+msgid ""
+"\"Use Default Style\" will be automatically unset when you change any style "
+"properties."
+msgstr ""
+"तपाईँले कुनै पनि शैली गुण परिवर्तन गर्दा \"पूर्वनिर्धारित शैली प्रयोग गर्नुहोस्\" स्वचालित "
+"तरिकाले अनसेट हुनेछ ।"
+
+#: utils/katestyletreewidget.cpp:607
+msgid "Kate Styles"
+msgstr "केट शैली"
 
 #: utils/kateautoindent.cpp:75
 #, fuzzy
@@ -1483,6 +1586,353 @@ msgid "1 replacement done on %2"
 msgid_plural "%1 replacements done on %2"
 msgstr[0] "1 प्रतिस्थापन पूरा भयो"
 msgstr[1] "%1 प्रतिस्थापन पूरा भयो"
+
+#: utils/kateglobal.cpp:64
+msgid "Kate Part"
+msgstr "केट भाग"
+
+#: utils/kateglobal.cpp:65
+msgid "Embeddable editor component"
+msgstr "सम्मिलनयोग्य सम्पादक अवयव"
+
+#: utils/kateglobal.cpp:66
+#, fuzzy
+#| msgid "(c) 2000-2005 The Kate Authors"
+msgid "(c) 2000-2009 The Kate Authors"
+msgstr "(c) 2000-2004 केट लेखक"
+
+#: utils/kateglobal.cpp:79
+msgid "Christoph Cullmann"
+msgstr "क्रिस्टोफ कुलम्यान"
+
+#: utils/kateglobal.cpp:79
+msgid "Maintainer"
+msgstr "सम्भारकर्ता"
+
+#: utils/kateglobal.cpp:80
+msgid "Dominik Haumann"
+msgstr "डोमिनक हाउम्यान"
+
+#: utils/kateglobal.cpp:80 utils/kateglobal.cpp:81 utils/kateglobal.cpp:84
+#: utils/kateglobal.cpp:87 utils/kateglobal.cpp:92
+msgid "Core Developer"
+msgstr "मुख्य विकासकर्ता"
+
+#: utils/kateglobal.cpp:81
+msgid "Joseph Wenninger"
+msgstr "जोसेफ वेनिन्जर"
+
+#: utils/kateglobal.cpp:82
+msgid "Erlend Hamberg"
+msgstr ""
+
+#: utils/kateglobal.cpp:83
+msgid "Bernhard Beschow"
+msgstr ""
+
+#: utils/kateglobal.cpp:83 utils/kateglobal.cpp:99
+msgid "Developer"
+msgstr "विकासकर्ता"
+
+#: utils/kateglobal.cpp:84
+msgid "Anders Lund"
+msgstr "एन्डेर्स लुन्द"
+
+#: utils/kateglobal.cpp:85
+msgid "Michel Ludwig"
+msgstr ""
+
+#: utils/kateglobal.cpp:85
+#, fuzzy
+#| msgid "Spellcheck"
+msgid "On-the-fly spell checking"
+msgstr "हिज्जे परीक्षण"
+
+#: utils/kateglobal.cpp:86
+msgid "Pascal Létourneau"
+msgstr ""
+
+#: utils/kateglobal.cpp:86
+msgid "Large scale bug fixing"
+msgstr ""
+
+#: utils/kateglobal.cpp:87
+msgid "Hamish Rodda"
+msgstr "ह्यामिस रोडा"
+
+#: utils/kateglobal.cpp:88
+msgid "Waldo Bastian"
+msgstr "वाल्डो वास्टियन"
+
+#: utils/kateglobal.cpp:88
+msgid "The cool buffersystem"
+msgstr "कुल बफर प्रणाली"
+
+#: utils/kateglobal.cpp:89
+msgid "Charles Samuels"
+msgstr "चार्ल्स स्यामुअल"
+
+#: utils/kateglobal.cpp:89
+msgid "The Editing Commands"
+msgstr "सम्पादन आदेश"
+
+#: utils/kateglobal.cpp:90
+msgid "Matt Newell"
+msgstr "म्याट नेवेल"
+
+#: utils/kateglobal.cpp:90
+msgid "Testing, ..."
+msgstr "परीक्षण, ..."
+
+#: utils/kateglobal.cpp:91
+msgid "Michael Bartl"
+msgstr "माइकल वार्ट्ल"
+
+#: utils/kateglobal.cpp:91
+msgid "Former Core Developer"
+msgstr "अघिल्लो मुख्य विकासकर्ता"
+
+#: utils/kateglobal.cpp:92
+msgid "Michael McCallum"
+msgstr "माइकल म्याकालुम"
+
+#: utils/kateglobal.cpp:93
+msgid "Michael Koch"
+msgstr "माइकल कोच"
+
+#: utils/kateglobal.cpp:93
+msgid "KWrite port to KParts"
+msgstr "केडीई राइट पोर्टदेखि केडीई पार्टसम्म"
+
+#: utils/kateglobal.cpp:94
+msgid "Christian Gebauer"
+msgstr "क्रिस्टियन गेबाउर"
+
+#: utils/kateglobal.cpp:95
+msgid "Simon Hausmann"
+msgstr "सिमोन हसम्यान"
+
+#: utils/kateglobal.cpp:96
+msgid "Glen Parker"
+msgstr "ग्लेन पार्कर"
+
+#: utils/kateglobal.cpp:96
+msgid "KWrite Undo History, Kspell integration"
+msgstr "केडीई राइट पूर्वस्थितिमा फर्काएको इतिहास, केडीई स्पेल इन्टिग्रेसन"
+
+#: utils/kateglobal.cpp:97
+msgid "Scott Manson"
+msgstr "स्कट मानसन"
+
+#: utils/kateglobal.cpp:97
+msgid "KWrite XML Syntax highlighting support"
+msgstr "केडीई राइट XML वाक्य संरचना हाइलाइटिङ समर्थन"
+
+#: utils/kateglobal.cpp:98
+msgid "John Firebaugh"
+msgstr "जोन फायरबघ"
+
+#: utils/kateglobal.cpp:98
+msgid "Patches and more"
+msgstr "प्याचे र अरू धेरै"
+
+#: utils/kateglobal.cpp:99
+msgid "Andreas Kling"
+msgstr "एन्ड्रेज क्लिङ"
+
+#: utils/kateglobal.cpp:100
+msgid "Mirko Stocker"
+msgstr ""
+
+#: utils/kateglobal.cpp:100
+msgid "Various bugfixes"
+msgstr ""
+
+#: utils/kateglobal.cpp:101
+#, fuzzy
+#| msgid "Matt Newell"
+msgid "Matthew Woehlke"
+msgstr "म्याट नेवेल"
+
+#: utils/kateglobal.cpp:101
+msgid "Selection, KColorScheme integration"
+msgstr ""
+
+#: utils/kateglobal.cpp:102
+msgid "Sebastian Pipping"
+msgstr ""
+
+#: utils/kateglobal.cpp:102
+msgid "Search bar back- and front-end"
+msgstr ""
+
+#: utils/kateglobal.cpp:103
+#, fuzzy
+#| msgid "Jochen Wilhemly"
+msgid "Jochen Wilhelmy"
+msgstr "जोचेन विल्हेम्ली"
+
+#: utils/kateglobal.cpp:103
+#, fuzzy
+#| msgid "KWrite Author"
+msgid "Original KWrite Author"
+msgstr "केडीई राइट लेखक"
+
+#: utils/kateglobal.cpp:105
+msgid "Matteo Merli"
+msgstr "माटेओ मेर्लि"
+
+#: utils/kateglobal.cpp:105
+msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
+msgstr "RPM Spec फाइल, पर्ल, डिफ र अरुका लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:106
+msgid "Rocky Scaletta"
+msgstr "रक्की स्कालेटा"
+
+#: utils/kateglobal.cpp:106
+msgid "Highlighting for VHDL"
+msgstr "VHDL का लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:107
+msgid "Yury Lebedev"
+msgstr "युरी लेबेडेभ"
+
+#: utils/kateglobal.cpp:107
+msgid "Highlighting for SQL"
+msgstr "SQL का लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:108
+msgid "Chris Ross"
+msgstr "क्रिस रोस"
+
+#: utils/kateglobal.cpp:108
+msgid "Highlighting for Ferite"
+msgstr "Ferite का लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:109
+msgid "Nick Roux"
+msgstr "निक रुक्स"
+
+#: utils/kateglobal.cpp:109
+msgid "Highlighting for ILERPG"
+msgstr "ILERPG का लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:110
+msgid "Carsten Niehaus"
+msgstr "कार्सटेन निहाउस"
+
+#: utils/kateglobal.cpp:110
+msgid "Highlighting for LaTeX"
+msgstr "LaTeX का लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:111
+msgid "Per Wigren"
+msgstr "पर विग्रेन"
+
+#: utils/kateglobal.cpp:111
+msgid "Highlighting for Makefiles, Python"
+msgstr "मेकफाइल, पाइथोनका लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:112
+msgid "Jan Fritz"
+msgstr "जन फ्रिट्ज"
+
+#: utils/kateglobal.cpp:112
+msgid "Highlighting for Python"
+msgstr "पाइथोनका लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:113
+msgid "Daniel Naber"
+msgstr "डानिअल न्याबर"
+
+#: utils/kateglobal.cpp:114
+msgid "Roland Pabel"
+msgstr "रोलान्ड पाबेल"
+
+#: utils/kateglobal.cpp:114
+msgid "Highlighting for Scheme"
+msgstr "योजनाका लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:115
+msgid "Cristi Dumitrescu"
+msgstr "क्रिस्टि डुमिट्रेस्कु"
+
+#: utils/kateglobal.cpp:115
+msgid "PHP Keyword/Datatype list"
+msgstr "PHP शब्दकुञ्जी/डेटाटाइप सूची"
+
+#: utils/kateglobal.cpp:116
+msgid "Carsten Pfeiffer"
+msgstr "कार्सटेन फेइफर"
+
+#: utils/kateglobal.cpp:116
+msgid "Very nice help"
+msgstr "धेरै राम्रो मद्दत"
+
+#: utils/kateglobal.cpp:117
+msgid "Bruno Massa"
+msgstr ""
+
+#: utils/kateglobal.cpp:117
+#, fuzzy
+#| msgid "Highlighting for LaTeX"
+msgid "Highlighting for Lua"
+msgstr "LaTeX का लागि हाइलाइटिङ"
+
+#: utils/kateglobal.cpp:119
+msgid "All people who have contributed and I have forgotten to mention"
+msgstr "मैले उल्लेख गर्न भुलेका र योगदान गरेका सबै मानिस"
+
+#: utils/kateglobal.cpp:121 rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nabin Gautam, श्यामकृष्ण बल"
+
+#: utils/kateglobal.cpp:121 rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "nabingautam2001@yahoo.com shyamkrishna_bal@yahoo.com"
+
+#: utils/kateglobal.cpp:284
+msgid "Configure"
+msgstr "कन्फिगर"
+
+#: utils/kateglobal.cpp:366 utils/kateglobal.cpp:392
+msgid "Appearance"
+msgstr "देखावट"
+
+#: utils/kateglobal.cpp:369
+msgid "Fonts & Colors"
+msgstr "फन्ट र रङ"
+
+#: utils/kateglobal.cpp:372
+msgid "Editing"
+msgstr "सम्पादन"
+
+#: utils/kateglobal.cpp:375
+msgid "Open/Save"
+msgstr "खोल्नुहोस्/ बचत गर्नुहोस्"
+
+#: utils/kateglobal.cpp:378
+msgid "Extensions"
+msgstr "विस्तार"
+
+#: utils/kateglobal.cpp:395
+msgid "Font & Color Schemas"
+msgstr "फन्ट र रङ स्कीमा"
+
+#: utils/kateglobal.cpp:398
+msgid "Editing Options"
+msgstr "सम्पादन विकल्प"
+
+#: utils/kateglobal.cpp:401
+msgid "File Opening & Saving"
+msgstr "फाइल खोल्दै र बचत गर्दै"
+
+#: utils/kateglobal.cpp:404
+msgid "Extensions Manager"
+msgstr "विस्तार प्रबन्धक"
 
 #: utils/kateprinter.cpp:246
 msgid "(Selection of) "
@@ -1899,7 +2349,7 @@ msgstr "नयाँ..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: utils/kateschema.cpp:873 rc.cpp:350
+#: utils/kateschema.cpp:873 rc.cpp:656
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
 
@@ -1987,708 +2437,6 @@ msgstr "नाम:"
 #: utils/kateschema.cpp:1133
 msgid "New Schema"
 msgstr "नयाँ स्कीमा"
-
-#: utils/katestyletreewidget.cpp:132
-#, fuzzy
-#| msgid "Context"
-msgctxt "@title:column Meaning of text in editor"
-msgid "Context"
-msgstr "सन्दर्भ"
-
-#: utils/katestyletreewidget.cpp:132
-#, fuzzy
-#| msgid "Normal"
-msgctxt "@title:column Text style"
-msgid "Normal"
-msgstr "सामान्य"
-
-#: utils/katestyletreewidget.cpp:132
-#, fuzzy
-#| msgid "Selected"
-msgctxt "@title:column Text style"
-msgid "Selected"
-msgstr "चयन"
-
-#: utils/katestyletreewidget.cpp:132
-#, fuzzy
-#| msgid "Background"
-msgctxt "@title:column Text style"
-msgid "Background"
-msgstr "पृष्ठभूमि"
-
-#: utils/katestyletreewidget.cpp:132
-#, fuzzy
-#| msgid "Background Selected"
-msgctxt "@title:column Text style"
-msgid "Background Selected"
-msgstr "पृष्ठभूमि चयन गरियो"
-
-#: utils/katestyletreewidget.cpp:134
-msgid "Use Default Style"
-msgstr "पूर्वनिर्धारित शैली प्रयोग गर्नुहोस्"
-
-#: utils/katestyletreewidget.cpp:222
-msgid "&Bold"
-msgstr "बाक्लो"
-
-#: utils/katestyletreewidget.cpp:227
-msgid "&Italic"
-msgstr "छड्के"
-
-#: utils/katestyletreewidget.cpp:232
-msgid "&Underline"
-msgstr "अधोरेखा"
-
-#: utils/katestyletreewidget.cpp:237
-msgid "S&trikeout"
-msgstr "स्ट्राइक आउट"
-
-#: utils/katestyletreewidget.cpp:244
-msgid "Normal &Color..."
-msgstr "सामान्य रङ..."
-
-#: utils/katestyletreewidget.cpp:247
-msgid "&Selected Color..."
-msgstr "चयन गरिएको रङ..."
-
-#: utils/katestyletreewidget.cpp:250
-msgid "&Background Color..."
-msgstr "पृष्ठभूमि रङ..."
-
-#: utils/katestyletreewidget.cpp:253
-msgid "S&elected Background Color..."
-msgstr "चयन गरिएको पृष्ठभूमि रङ..."
-
-#: utils/katestyletreewidget.cpp:265
-msgid "Unset Background Color"
-msgstr "पृष्ठभूमि रङ अनसेट गर्नुहोस्"
-
-#: utils/katestyletreewidget.cpp:269
-msgid "Unset Selected Background Color"
-msgstr "चयन गरिएको पृष्ठभूमि रङ अनसेट गर्नुहोस्"
-
-#: utils/katestyletreewidget.cpp:276
-msgid "Use &Default Style"
-msgstr "पूर्वनिर्धारित शैली प्रयोग गर्नुहोस्"
-
-#: utils/katestyletreewidget.cpp:388
-#, fuzzy
-#| msgctxt "No text or background colour set"
-#| msgid "None set"
-msgctxt "No text or background color set"
-msgid "None set"
-msgstr "कुनै पनि होइन सेट गर्नुहोस्"
-
-#: utils/katestyletreewidget.cpp:606
-msgid ""
-"\"Use Default Style\" will be automatically unset when you change any style "
-"properties."
-msgstr ""
-"तपाईँले कुनै पनि शैली गुण परिवर्तन गर्दा \"पूर्वनिर्धारित शैली प्रयोग गर्नुहोस्\" स्वचालित "
-"तरिकाले अनसेट हुनेछ ।"
-
-#: utils/katestyletreewidget.cpp:607
-msgid "Kate Styles"
-msgstr "केट शैली"
-
-#: utils/kateglobal.cpp:64
-msgid "Kate Part"
-msgstr "केट भाग"
-
-#: utils/kateglobal.cpp:65
-msgid "Embeddable editor component"
-msgstr "सम्मिलनयोग्य सम्पादक अवयव"
-
-#: utils/kateglobal.cpp:66
-#, fuzzy
-#| msgid "(c) 2000-2005 The Kate Authors"
-msgid "(c) 2000-2009 The Kate Authors"
-msgstr "(c) 2000-2004 केट लेखक"
-
-#: utils/kateglobal.cpp:79
-msgid "Christoph Cullmann"
-msgstr "क्रिस्टोफ कुलम्यान"
-
-#: utils/kateglobal.cpp:79
-msgid "Maintainer"
-msgstr "सम्भारकर्ता"
-
-#: utils/kateglobal.cpp:80
-msgid "Dominik Haumann"
-msgstr "डोमिनक हाउम्यान"
-
-#: utils/kateglobal.cpp:80 utils/kateglobal.cpp:81 utils/kateglobal.cpp:84
-#: utils/kateglobal.cpp:87 utils/kateglobal.cpp:92
-msgid "Core Developer"
-msgstr "मुख्य विकासकर्ता"
-
-#: utils/kateglobal.cpp:81
-msgid "Joseph Wenninger"
-msgstr "जोसेफ वेनिन्जर"
-
-#: utils/kateglobal.cpp:82
-msgid "Erlend Hamberg"
-msgstr ""
-
-#: utils/kateglobal.cpp:83
-msgid "Bernhard Beschow"
-msgstr ""
-
-#: utils/kateglobal.cpp:83 utils/kateglobal.cpp:99
-msgid "Developer"
-msgstr "विकासकर्ता"
-
-#: utils/kateglobal.cpp:84
-msgid "Anders Lund"
-msgstr "एन्डेर्स लुन्द"
-
-#: utils/kateglobal.cpp:85
-msgid "Michel Ludwig"
-msgstr ""
-
-#: utils/kateglobal.cpp:85
-#, fuzzy
-#| msgid "Spellcheck"
-msgid "On-the-fly spell checking"
-msgstr "हिज्जे परीक्षण"
-
-#: utils/kateglobal.cpp:86
-msgid "Pascal Létourneau"
-msgstr ""
-
-#: utils/kateglobal.cpp:86
-msgid "Large scale bug fixing"
-msgstr ""
-
-#: utils/kateglobal.cpp:87
-msgid "Hamish Rodda"
-msgstr "ह्यामिस रोडा"
-
-#: utils/kateglobal.cpp:88
-msgid "Waldo Bastian"
-msgstr "वाल्डो वास्टियन"
-
-#: utils/kateglobal.cpp:88
-msgid "The cool buffersystem"
-msgstr "कुल बफर प्रणाली"
-
-#: utils/kateglobal.cpp:89
-msgid "Charles Samuels"
-msgstr "चार्ल्स स्यामुअल"
-
-#: utils/kateglobal.cpp:89
-msgid "The Editing Commands"
-msgstr "सम्पादन आदेश"
-
-#: utils/kateglobal.cpp:90
-msgid "Matt Newell"
-msgstr "म्याट नेवेल"
-
-#: utils/kateglobal.cpp:90
-msgid "Testing, ..."
-msgstr "परीक्षण, ..."
-
-#: utils/kateglobal.cpp:91
-msgid "Michael Bartl"
-msgstr "माइकल वार्ट्ल"
-
-#: utils/kateglobal.cpp:91
-msgid "Former Core Developer"
-msgstr "अघिल्लो मुख्य विकासकर्ता"
-
-#: utils/kateglobal.cpp:92
-msgid "Michael McCallum"
-msgstr "माइकल म्याकालुम"
-
-#: utils/kateglobal.cpp:93
-msgid "Michael Koch"
-msgstr "माइकल कोच"
-
-#: utils/kateglobal.cpp:93
-msgid "KWrite port to KParts"
-msgstr "केडीई राइट पोर्टदेखि केडीई पार्टसम्म"
-
-#: utils/kateglobal.cpp:94
-msgid "Christian Gebauer"
-msgstr "क्रिस्टियन गेबाउर"
-
-#: utils/kateglobal.cpp:95
-msgid "Simon Hausmann"
-msgstr "सिमोन हसम्यान"
-
-#: utils/kateglobal.cpp:96
-msgid "Glen Parker"
-msgstr "ग्लेन पार्कर"
-
-#: utils/kateglobal.cpp:96
-msgid "KWrite Undo History, Kspell integration"
-msgstr "केडीई राइट पूर्वस्थितिमा फर्काएको इतिहास, केडीई स्पेल इन्टिग्रेसन"
-
-#: utils/kateglobal.cpp:97
-msgid "Scott Manson"
-msgstr "स्कट मानसन"
-
-#: utils/kateglobal.cpp:97
-msgid "KWrite XML Syntax highlighting support"
-msgstr "केडीई राइट XML वाक्य संरचना हाइलाइटिङ समर्थन"
-
-#: utils/kateglobal.cpp:98
-msgid "John Firebaugh"
-msgstr "जोन फायरबघ"
-
-#: utils/kateglobal.cpp:98
-msgid "Patches and more"
-msgstr "प्याचे र अरू धेरै"
-
-#: utils/kateglobal.cpp:99
-msgid "Andreas Kling"
-msgstr "एन्ड्रेज क्लिङ"
-
-#: utils/kateglobal.cpp:100
-msgid "Mirko Stocker"
-msgstr ""
-
-#: utils/kateglobal.cpp:100
-msgid "Various bugfixes"
-msgstr ""
-
-#: utils/kateglobal.cpp:101
-#, fuzzy
-#| msgid "Matt Newell"
-msgid "Matthew Woehlke"
-msgstr "म्याट नेवेल"
-
-#: utils/kateglobal.cpp:101
-msgid "Selection, KColorScheme integration"
-msgstr ""
-
-#: utils/kateglobal.cpp:102
-msgid "Sebastian Pipping"
-msgstr ""
-
-#: utils/kateglobal.cpp:102
-msgid "Search bar back- and front-end"
-msgstr ""
-
-#: utils/kateglobal.cpp:103
-#, fuzzy
-#| msgid "Jochen Wilhemly"
-msgid "Jochen Wilhelmy"
-msgstr "जोचेन विल्हेम्ली"
-
-#: utils/kateglobal.cpp:103
-#, fuzzy
-#| msgid "KWrite Author"
-msgid "Original KWrite Author"
-msgstr "केडीई राइट लेखक"
-
-#: utils/kateglobal.cpp:105
-msgid "Matteo Merli"
-msgstr "माटेओ मेर्लि"
-
-#: utils/kateglobal.cpp:105
-msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
-msgstr "RPM Spec फाइल, पर्ल, डिफ र अरुका लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:106
-msgid "Rocky Scaletta"
-msgstr "रक्की स्कालेटा"
-
-#: utils/kateglobal.cpp:106
-msgid "Highlighting for VHDL"
-msgstr "VHDL का लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:107
-msgid "Yury Lebedev"
-msgstr "युरी लेबेडेभ"
-
-#: utils/kateglobal.cpp:107
-msgid "Highlighting for SQL"
-msgstr "SQL का लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:108
-msgid "Chris Ross"
-msgstr "क्रिस रोस"
-
-#: utils/kateglobal.cpp:108
-msgid "Highlighting for Ferite"
-msgstr "Ferite का लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:109
-msgid "Nick Roux"
-msgstr "निक रुक्स"
-
-#: utils/kateglobal.cpp:109
-msgid "Highlighting for ILERPG"
-msgstr "ILERPG का लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:110
-msgid "Carsten Niehaus"
-msgstr "कार्सटेन निहाउस"
-
-#: utils/kateglobal.cpp:110
-msgid "Highlighting for LaTeX"
-msgstr "LaTeX का लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:111
-msgid "Per Wigren"
-msgstr "पर विग्रेन"
-
-#: utils/kateglobal.cpp:111
-msgid "Highlighting for Makefiles, Python"
-msgstr "मेकफाइल, पाइथोनका लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:112
-msgid "Jan Fritz"
-msgstr "जन फ्रिट्ज"
-
-#: utils/kateglobal.cpp:112
-msgid "Highlighting for Python"
-msgstr "पाइथोनका लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:113
-msgid "Daniel Naber"
-msgstr "डानिअल न्याबर"
-
-#: utils/kateglobal.cpp:114
-msgid "Roland Pabel"
-msgstr "रोलान्ड पाबेल"
-
-#: utils/kateglobal.cpp:114
-msgid "Highlighting for Scheme"
-msgstr "योजनाका लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:115
-msgid "Cristi Dumitrescu"
-msgstr "क्रिस्टि डुमिट्रेस्कु"
-
-#: utils/kateglobal.cpp:115
-msgid "PHP Keyword/Datatype list"
-msgstr "PHP शब्दकुञ्जी/डेटाटाइप सूची"
-
-#: utils/kateglobal.cpp:116
-msgid "Carsten Pfeiffer"
-msgstr "कार्सटेन फेइफर"
-
-#: utils/kateglobal.cpp:116
-msgid "Very nice help"
-msgstr "धेरै राम्रो मद्दत"
-
-#: utils/kateglobal.cpp:117
-msgid "Bruno Massa"
-msgstr ""
-
-#: utils/kateglobal.cpp:117
-#, fuzzy
-#| msgid "Highlighting for LaTeX"
-msgid "Highlighting for Lua"
-msgstr "LaTeX का लागि हाइलाइटिङ"
-
-#: utils/kateglobal.cpp:119
-msgid "All people who have contributed and I have forgotten to mention"
-msgstr "मैले उल्लेख गर्न भुलेका र योगदान गरेका सबै मानिस"
-
-#: utils/kateglobal.cpp:121 rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Nabin Gautam, श्यामकृष्ण बल"
-
-#: utils/kateglobal.cpp:121 rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "nabingautam2001@yahoo.com shyamkrishna_bal@yahoo.com"
-
-#: utils/kateglobal.cpp:284
-msgid "Configure"
-msgstr "कन्फिगर"
-
-#: utils/kateglobal.cpp:366 utils/kateglobal.cpp:392
-msgid "Appearance"
-msgstr "देखावट"
-
-#: utils/kateglobal.cpp:369
-msgid "Fonts & Colors"
-msgstr "फन्ट र रङ"
-
-#: utils/kateglobal.cpp:372
-msgid "Editing"
-msgstr "सम्पादन"
-
-#: utils/kateglobal.cpp:375
-msgid "Open/Save"
-msgstr "खोल्नुहोस्/ बचत गर्नुहोस्"
-
-#: utils/kateglobal.cpp:378
-msgid "Extensions"
-msgstr "विस्तार"
-
-#: utils/kateglobal.cpp:395
-msgid "Font & Color Schemas"
-msgstr "फन्ट र रङ स्कीमा"
-
-#: utils/kateglobal.cpp:398
-msgid "Editing Options"
-msgstr "सम्पादन विकल्प"
-
-#: utils/kateglobal.cpp:401
-msgid "File Opening & Saving"
-msgstr "फाइल खोल्दै र बचत गर्दै"
-
-#: utils/kateglobal.cpp:404
-msgid "Extensions Manager"
-msgstr "विस्तार प्रबन्धक"
-
-#: variableeditor/katehelpbutton.cpp:32
-msgid "Kate Handbook."
-msgstr ""
-
-#: variableeditor/variableeditor.cpp:194
-#, fuzzy
-#| msgid "Struct"
-msgid "true"
-msgstr "स्ट्रक्ट"
-
-#: variableeditor/variableeditor.cpp:195
-msgid "false"
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:59
-msgid "Show list of valid variables."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:140
-msgctxt "short translation please"
-msgid "Set auto insertion of brackets on or off."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:146
-msgctxt "short translation please"
-msgid "Set the number of autocenter lines."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:151
-msgctxt "short translation please"
-msgid "Auto insert asterisk in doxygen comments."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:156
-#, fuzzy
-#| msgid "S&elected Background Color..."
-msgctxt "short translation please"
-msgid "Set the document background color."
-msgstr "चयन गरिएको पृष्ठभूमि रङ..."
-
-#: variableeditor/variablelineedit.cpp:161
-#, fuzzy
-#| msgid "Backspace key in leading blank space unindents"
-msgctxt "short translation please"
-msgid "Pressing backspace in leading whitespace unindents."
-msgstr "अगाडिको खाली स्थानको Backspace कुञ्जीले इन्डेन्ट हटाउँदछ"
-
-#: variableeditor/variablelineedit.cpp:167
-#, fuzzy
-#| msgid "Bl&ock Selection Mode"
-msgctxt "short translation please"
-msgid "Enable block selection mode."
-msgstr "खण्ड चयन मोड"
-
-#: variableeditor/variablelineedit.cpp:172
-msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:177
-msgctxt "short translation please"
-msgid "Set the color for the bracket highlight."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:182
-#, fuzzy
-#| msgid "<p>Sets the background color of the editing area.</p>"
-msgctxt "short translation please"
-msgid "Set the background color for the current line."
-msgstr "<p>सम्पादन क्षेत्रको पृष्ठभूमि रङ सेट गर्दछ ।</p>"
-
-#: variableeditor/variablelineedit.cpp:188
-msgctxt "short translation please"
-msgid "Set the default dictionary used for spell checking."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:193
-#, fuzzy
-#| msgid "Enable static &word wrap"
-msgctxt "short translation please"
-msgid "Enable dynamic word wrap of long lines."
-msgstr "स्थिर शब्द बेराइ सक्षम पार्नुहोस्"
-
-#: variableeditor/variablelineedit.cpp:198
-#, fuzzy
-#| msgid "Select to End of Line"
-msgctxt "short translation please"
-msgid "Sets the end of line mode."
-msgstr "रेखाको अन्त्यमा चयन गर्नुहोस्"
-
-#: variableeditor/variablelineedit.cpp:203
-msgctxt "short translation please"
-msgid "Enable folding markers in the editor border."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:209
-#, fuzzy
-#| msgid "Select the entire text of the current document."
-msgctxt "short translation please"
-msgid "Set the point size of the document font."
-msgstr "हालको कागजातको सम्पूर्ण पाठलाई चयन गर्नुहोस् ।"
-
-#: variableeditor/variablelineedit.cpp:214
-#, fuzzy
-#| msgid "Select the entire text of the current document."
-msgctxt "short translation please"
-msgid "Set the font of the document."
-msgstr "हालको कागजातको सम्पूर्ण पाठलाई चयन गर्नुहोस् ।"
-
-#: variableeditor/variablelineedit.cpp:226
-#, fuzzy
-#| msgid "Kate Syntax Highlighting Parser"
-msgctxt "short translation please"
-msgid "Set the syntax highlighting."
-msgstr "केट वाक्य संरचना हाइलाइटिङ पद वर्णनकर्ता"
-
-#: variableeditor/variablelineedit.cpp:231
-msgctxt "short translation please"
-msgid "Set the icon bar color."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:236
-msgctxt "short translation please"
-msgid "Enable the icon border in the editor view."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:241
-#, fuzzy
-#| msgid "Show i&ndentation lines"
-msgctxt "short translation please"
-msgid "Set the auto indentation style."
-msgstr "इन्डेन्टेसन रेखा देखाउनुहोस्"
-
-#: variableeditor/variablelineedit.cpp:247
-msgctxt "short translation please"
-msgid "Set the indentation depth for each indent level."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:252
-msgctxt "short translation please"
-msgid "Allow odd indentation level (no multiple of indent width)."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:257
-#, fuzzy
-#| msgid "Show &line numbers"
-msgctxt "short translation please"
-msgid "Show line numbers."
-msgstr "रेखा नम्बर देखाउनुहोस्"
-
-#: variableeditor/variablelineedit.cpp:262
-msgctxt "short translation please"
-msgid "Enable overwrite mode in the document."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:267
-msgctxt "short translation please"
-msgid "Enable persistent text selection."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:272
-#, fuzzy
-#| msgid "Remove &trailing spaces while editing"
-msgctxt "short translation please"
-msgid "Remove trailing spaces when editing a line."
-msgstr "सम्पादन गर्दा ट्रेलिङ खाली स्थान हटाउनुहोस्"
-
-#: variableeditor/variablelineedit.cpp:277
-msgctxt "short translation please"
-msgid "Replace tabs with spaces when saving the document."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:282
-msgctxt "short translation please"
-msgid "Replace tabs with spaces."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:287
-#, fuzzy
-#| msgid "Remove &trailing spaces while editing"
-msgctxt "short translation please"
-msgid "Remove trailing spaces when saving the document."
-msgstr "सम्पादन गर्दा ट्रेलिङ खाली स्थान हटाउनुहोस्"
-
-#: variableeditor/variablelineedit.cpp:293
-#, fuzzy
-#| msgid "Font & Color Schemas"
-msgctxt "short translation please"
-msgid "Set the color scheme."
-msgstr "फन्ट र रङ स्कीमा"
-
-#: variableeditor/variablelineedit.cpp:298
-msgctxt "short translation please"
-msgid "Set the text selection color."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:303
-#, fuzzy
-#| msgid "Highlight trailing &spaces"
-msgctxt "short translation please"
-msgid "Visualize tabs and trailing spaces."
-msgstr "ट्रेलिङ खाली स्थान हाइलाइट गर्नुहोस्"
-
-#: variableeditor/variablelineedit.cpp:308
-#, fuzzy
-#| msgid "Word Completion"
-msgctxt "short translation please"
-msgid "Enable smart home navigation."
-msgstr "शब्द समाप्ति"
-
-#: variableeditor/variablelineedit.cpp:313
-msgctxt "short translation please"
-msgid "Pressing TAB key indents."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:319
-msgctxt "short translation please"
-msgid "Set the tab display width."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:325
-#, fuzzy
-#| msgid ""
-#| "Sets the number of undo/redo steps to record. More steps uses more memory."
-msgctxt "short translation please"
-msgid "Set the number of undo steps to remember (0 equals infinity)."
-msgstr ""
-"पूर्वस्थितिमा फर्काउनुहोस्/रिडू गर्नुहोस् चरणको रेकर्ड गर्न सङ्ख्या सेट गर्छ । धेरै चरणले धेरै "
-"स्मृति प्रयोग गर्दछ ।"
-
-#: variableeditor/variablelineedit.cpp:331
-msgctxt "short translation please"
-msgid "Set the word wrap column."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:336
-#, fuzzy
-#| msgid "S&elected Background Color..."
-msgctxt "short translation please"
-msgid "Set the word wrap marker color."
-msgstr "चयन गरिएको पृष्ठभूमि रङ..."
-
-#: variableeditor/variablelineedit.cpp:341
-msgctxt "short translation please"
-msgid "Enable word wrap while typing text."
-msgstr ""
-
-#: variableeditor/variablelineedit.cpp:346
-msgctxt "short translation please"
-msgid "Wrap the text cursor at the end of a line."
-msgstr ""
 
 #: view/kateviewaccessible.h:66
 msgid "Move To..."
@@ -3016,13 +2764,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:508 rc.cpp:659
+#: view/kateview.cpp:508 rc.cpp:488
 msgid "&Dynamic Word Wrap"
 msgstr "गतिशील शब्द बेराइ"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:511 rc.cpp:656
+#: view/kateview.cpp:511 rc.cpp:485
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -3553,12 +3301,6 @@ msgstr "पूर्वानिर्धारित चिनो प्रक�
 msgid "Disable Annotation Bar"
 msgstr ""
 
-#: vimode/kateviinsertmode.cpp:195 vimode/katevimodebase.cpp:860
-#: vimode/katevinormalmode.cpp:1112
-#, kde-format
-msgid "Nothing in register %1"
-msgstr ""
-
 #: vimode/katevimodebar.cpp:125
 msgid "VI: INSERT MODE"
 msgstr ""
@@ -3583,6 +3325,12 @@ msgstr ""
 msgid "VI: REPLACE"
 msgstr ""
 
+#: vimode/kateviinsertmode.cpp:195 vimode/katevimodebase.cpp:860
+#: vimode/katevinormalmode.cpp:1112
+#, kde-format
+msgid "Nothing in register %1"
+msgstr ""
+
 #: vimode/katevinormalmode.cpp:1429
 #, kde-format
 msgid "'%1' %2,  Hex %3,  Octal %4"
@@ -3593,6 +3341,258 @@ msgstr ""
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"
 msgstr "चिनो प्रकार %1"
+
+#: variableeditor/katehelpbutton.cpp:32
+msgid "Kate Handbook."
+msgstr ""
+
+#: variableeditor/variableeditor.cpp:194
+#, fuzzy
+#| msgid "Struct"
+msgid "true"
+msgstr "स्ट्रक्ट"
+
+#: variableeditor/variableeditor.cpp:195
+msgid "false"
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:59
+msgid "Show list of valid variables."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:140
+msgctxt "short translation please"
+msgid "Set auto insertion of brackets on or off."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:146
+msgctxt "short translation please"
+msgid "Set the number of autocenter lines."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:151
+msgctxt "short translation please"
+msgid "Auto insert asterisk in doxygen comments."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:156
+#, fuzzy
+#| msgid "S&elected Background Color..."
+msgctxt "short translation please"
+msgid "Set the document background color."
+msgstr "चयन गरिएको पृष्ठभूमि रङ..."
+
+#: variableeditor/variablelineedit.cpp:161
+#, fuzzy
+#| msgid "Backspace key in leading blank space unindents"
+msgctxt "short translation please"
+msgid "Pressing backspace in leading whitespace unindents."
+msgstr "अगाडिको खाली स्थानको Backspace कुञ्जीले इन्डेन्ट हटाउँदछ"
+
+#: variableeditor/variablelineedit.cpp:167
+#, fuzzy
+#| msgid "Bl&ock Selection Mode"
+msgctxt "short translation please"
+msgid "Enable block selection mode."
+msgstr "खण्ड चयन मोड"
+
+#: variableeditor/variablelineedit.cpp:172
+msgctxt "short translation please"
+msgid "Enable the byte order marker when saving unicode files."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:177
+msgctxt "short translation please"
+msgid "Set the color for the bracket highlight."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:182
+#, fuzzy
+#| msgid "<p>Sets the background color of the editing area.</p>"
+msgctxt "short translation please"
+msgid "Set the background color for the current line."
+msgstr "<p>सम्पादन क्षेत्रको पृष्ठभूमि रङ सेट गर्दछ ।</p>"
+
+#: variableeditor/variablelineedit.cpp:188
+msgctxt "short translation please"
+msgid "Set the default dictionary used for spell checking."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:193
+#, fuzzy
+#| msgid "Enable static &word wrap"
+msgctxt "short translation please"
+msgid "Enable dynamic word wrap of long lines."
+msgstr "स्थिर शब्द बेराइ सक्षम पार्नुहोस्"
+
+#: variableeditor/variablelineedit.cpp:198
+#, fuzzy
+#| msgid "Select to End of Line"
+msgctxt "short translation please"
+msgid "Sets the end of line mode."
+msgstr "रेखाको अन्त्यमा चयन गर्नुहोस्"
+
+#: variableeditor/variablelineedit.cpp:203
+msgctxt "short translation please"
+msgid "Enable folding markers in the editor border."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:209
+#, fuzzy
+#| msgid "Select the entire text of the current document."
+msgctxt "short translation please"
+msgid "Set the point size of the document font."
+msgstr "हालको कागजातको सम्पूर्ण पाठलाई चयन गर्नुहोस् ।"
+
+#: variableeditor/variablelineedit.cpp:214
+#, fuzzy
+#| msgid "Select the entire text of the current document."
+msgctxt "short translation please"
+msgid "Set the font of the document."
+msgstr "हालको कागजातको सम्पूर्ण पाठलाई चयन गर्नुहोस् ।"
+
+#: variableeditor/variablelineedit.cpp:226
+#, fuzzy
+#| msgid "Kate Syntax Highlighting Parser"
+msgctxt "short translation please"
+msgid "Set the syntax highlighting."
+msgstr "केट वाक्य संरचना हाइलाइटिङ पद वर्णनकर्ता"
+
+#: variableeditor/variablelineedit.cpp:231
+msgctxt "short translation please"
+msgid "Set the icon bar color."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:236
+msgctxt "short translation please"
+msgid "Enable the icon border in the editor view."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:241
+#, fuzzy
+#| msgid "Show i&ndentation lines"
+msgctxt "short translation please"
+msgid "Set the auto indentation style."
+msgstr "इन्डेन्टेसन रेखा देखाउनुहोस्"
+
+#: variableeditor/variablelineedit.cpp:247
+msgctxt "short translation please"
+msgid "Set the indentation depth for each indent level."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:252
+msgctxt "short translation please"
+msgid "Allow odd indentation level (no multiple of indent width)."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:257
+#, fuzzy
+#| msgid "Show &line numbers"
+msgctxt "short translation please"
+msgid "Show line numbers."
+msgstr "रेखा नम्बर देखाउनुहोस्"
+
+#: variableeditor/variablelineedit.cpp:262
+msgctxt "short translation please"
+msgid "Enable overwrite mode in the document."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:267
+msgctxt "short translation please"
+msgid "Enable persistent text selection."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:272
+#, fuzzy
+#| msgid "Remove &trailing spaces while editing"
+msgctxt "short translation please"
+msgid "Remove trailing spaces when editing a line."
+msgstr "सम्पादन गर्दा ट्रेलिङ खाली स्थान हटाउनुहोस्"
+
+#: variableeditor/variablelineedit.cpp:277
+msgctxt "short translation please"
+msgid "Replace tabs with spaces when saving the document."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:282
+msgctxt "short translation please"
+msgid "Replace tabs with spaces."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:287
+#, fuzzy
+#| msgid "Remove &trailing spaces while editing"
+msgctxt "short translation please"
+msgid "Remove trailing spaces when saving the document."
+msgstr "सम्पादन गर्दा ट्रेलिङ खाली स्थान हटाउनुहोस्"
+
+#: variableeditor/variablelineedit.cpp:293
+#, fuzzy
+#| msgid "Font & Color Schemas"
+msgctxt "short translation please"
+msgid "Set the color scheme."
+msgstr "फन्ट र रङ स्कीमा"
+
+#: variableeditor/variablelineedit.cpp:298
+msgctxt "short translation please"
+msgid "Set the text selection color."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:303
+#, fuzzy
+#| msgid "Highlight trailing &spaces"
+msgctxt "short translation please"
+msgid "Visualize tabs and trailing spaces."
+msgstr "ट्रेलिङ खाली स्थान हाइलाइट गर्नुहोस्"
+
+#: variableeditor/variablelineedit.cpp:308
+#, fuzzy
+#| msgid "Word Completion"
+msgctxt "short translation please"
+msgid "Enable smart home navigation."
+msgstr "शब्द समाप्ति"
+
+#: variableeditor/variablelineedit.cpp:313
+msgctxt "short translation please"
+msgid "Pressing TAB key indents."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:319
+msgctxt "short translation please"
+msgid "Set the tab display width."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:325
+#, fuzzy
+#| msgid ""
+#| "Sets the number of undo/redo steps to record. More steps uses more memory."
+msgctxt "short translation please"
+msgid "Set the number of undo steps to remember (0 equals infinity)."
+msgstr ""
+"पूर्वस्थितिमा फर्काउनुहोस्/रिडू गर्नुहोस् चरणको रेकर्ड गर्न सङ्ख्या सेट गर्छ । धेरै चरणले धेरै "
+"स्मृति प्रयोग गर्दछ ।"
+
+#: variableeditor/variablelineedit.cpp:331
+msgctxt "short translation please"
+msgid "Set the word wrap column."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:336
+#, fuzzy
+#| msgid "S&elected Background Color..."
+msgctxt "short translation please"
+msgid "Set the word wrap marker color."
+msgstr "चयन गरिएको पृष्ठभूमि रङ..."
+
+#: variableeditor/variablelineedit.cpp:341
+msgctxt "short translation please"
+msgid "Enable word wrap while typing text."
+msgstr ""
+
+#: variableeditor/variablelineedit.cpp:346
+msgctxt "short translation please"
+msgid "Wrap the text cursor at the end of a line."
+msgstr ""
 
 #. i18n: file: data/katepartsimpleui.rc:4
 #. i18n: ectx: Menu (file)
@@ -3780,7 +3780,7 @@ msgstr "स्थिति अनुरूप"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:95 rc.cpp:752
+#: rc.cpp:95 rc.cpp:581
 msgid "Command"
 msgstr "आदेश"
 
@@ -3848,7 +3848,7 @@ msgstr "सहयोगी आदेश:"
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/filetypeconfigwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:122 rc.cpp:356
+#: rc.cpp:122 rc.cpp:662
 msgid "&Name:"
 msgstr "नाम:"
 
@@ -4164,7 +4164,7 @@ msgstr "सम्भव हुँदा कर्सर तल र माथि 
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:275 rc.cpp:675
+#: rc.cpp:275 rc.cpp:504
 msgid "Disabled"
 msgstr "अक्षम पारिएको"
 
@@ -4200,291 +4200,15 @@ msgstr "कर्सरको चाल र टाइपिङ पछि पन�
 msgid "P&ersistent"
 msgstr "स्थायी"
 
-#. i18n: file: dialogs/editconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:293
-msgid "Static Word Wrap"
-msgstr "स्थिर शब्द बेराइ"
-
-#. i18n: file: dialogs/editconfigwidget.ui:26
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:296
-#, fuzzy
-#| msgid ""
-#| "<p>Automatically start a new line of text when the current line exceeds "
-#| "the length specified by the <b>Wrap words at:</b> option.</p><p>This "
-#| "option does not wrap existing lines of text - use the <b>Apply Static "
-#| "Word Wrap</b> option in the <b>Tools</b> menu for that purpose.</p><p>If "
-#| "you want lines to be <i>visually wrapped</i> instead, according to the "
-#| "width of the view, enable <b>Dynamic Word Wrap</b> in the <b>View "
-#| "Defaults</b> config page.</p>"
-msgid ""
-"<p>Automatically start a new line of text when the current line exceeds the "
-"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
-"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
-"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
-"be <i>visually wrapped</i> instead, according to the width of the view, "
-"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
-msgstr ""
-"<p>हालको लाइनले <b>यसमा शब्द बेर्नुहोस्:</b> विकल्पद्वारा निर्दिष्ट गरिएको लाइन पार "
-"गरेको बेलामा स्वचालित रूपले नयाँ लाइन सुरूआत गर्दछ ।</p><p>यो विकल्पले पाठका अवस्थित "
-"लाइन बेर्दैन - सो उद्देश्यका लागि <b>उपकरण</b> मेनुमा <b>स्थिर शब्द बेराइ लागू गर्नुहोस्</"
-"b> विकल्प प्रयोग गर्नुहोस् ।</p><p>यदि तपाईँ साटोमा, <i>दृश्यात्मकता बेरिएका</i> लाइन "
-"चाहनुहुन्छ भने, दृश्यको चौडाइ अनुसारको, <b>दृश्य पूर्वनिर्धारित</b> कन्फिगरेसन पृष्ठमा "
-"<b>गतिशील शब्द बेराइ</b> सक्षम पार्नुहोस् ।"
-
-#. i18n: file: dialogs/editconfigwidget.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:299
-msgid "Enable static &word wrap"
-msgstr "स्थिर शब्द बेराइ सक्षम पार्नुहोस्"
-
-#. i18n: file: dialogs/editconfigwidget.ui:36
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:302
-msgid ""
-"<p>If this option is checked, a vertical line will be drawn at the word wrap "
-"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
-"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
-msgstr ""
-"<p>यदि यो विकल्प जाँच गरिएमा, <strong>सम्पादन </strong> गुणमा परिभाषित गरिए "
-"अनुरुपका शब्द बेर्ने स्तम्भमा एउटा तेर्सो रेखा कोरिनेछ ।<p><p>याद गर्नुहोस् यदि तपाईँले स्थिर "
-"पिच फन्ट प्रयोग गरेमा शब्द बेर्ने मार्कर मात्र कोरिने छ ।<p>"
-
-#. i18n: file: dialogs/editconfigwidget.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:305
-msgid "Show static word wra&p marker (if applicable)"
-msgstr "(अनुकूल भएमा) स्थिर शब्द बेराइ मार्कर देखाउनुहोस्"
-
-#. i18n: file: dialogs/editconfigwidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:308
-msgid "W&rap words at:"
-msgstr "यसमा शब्द बेर्नुहोस्:"
-
-#. i18n: file: dialogs/editconfigwidget.ui:61
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:311
-msgid ""
-"If the Word Wrap option is selected this entry determines the length (in "
-"characters) at which the editor will automatically start a new line."
-msgstr ""
-"यदि शब्द बेर्ने विकल्प चयन गरिएको छ भने यो प्रविष्टिले (क्यारेक्टरहरूको) लम्बाइ निर्धारण "
-"गर्छ जसमा सम्पादकले स्वत: नयाँ रेखा सुरु गर्नेछ ।"
-
-#. i18n: file: dialogs/editconfigwidget.ui:95
-#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:314
-msgid "Misc"
-msgstr "विविध"
-
-#. i18n: file: dialogs/editconfigwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:317
-#, fuzzy
-#| msgid ""
-#| "If this is enabled, the editor will remove any trailing whitespace on "
-#| "lines when they are left by the insertion cursor."
-msgid ""
-"If this is enabled, the editor will remove any trailing whitespace on lines "
-"that are changed through editing."
-msgstr ""
-"यदि यो सक्षम पारिएको छ भने, सम्पादकले रेखामा घुसाउने कर्सरद्वारा ट्रेलिङ कुनै पनि सेतो "
-"खाली स्थान छोडेका बेलामा तिनीहरूलाई हटाउँछ ।"
-
-#. i18n: file: dialogs/editconfigwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:320
-msgid "Remove &trailing spaces while editing"
-msgstr "सम्पादन गर्दा ट्रेलिङ खाली स्थान हटाउनुहोस्"
-
-#. i18n: file: dialogs/editconfigwidget.ui:111
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:323
-msgid ""
-"When the user types a left bracket ([,(, or {) KateView automatically enters "
-"the right bracket (}, ), or ]) to the right of the cursor."
-msgstr ""
-"जब प्रयोगकर्ताले बायाँ कोष्टक टाइप गर्छ ([,(, वा {) केट दृश्यले कर्सरको दायाँ स्वचालित "
-"रूपले दायाँ कोष्टक (}, ), वा ]) प्रविष्टि गर्छ ।"
-
-#. i18n: file: dialogs/editconfigwidget.ui:114
-#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:326
-msgid "Auto &brackets"
-msgstr "स्वत: कोष्ठक राख्दछ"
-
-#. i18n: file: dialogs/editconfigwidget.ui:121
-#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:329
-msgid "Copy/Cut the current line if no selection"
-msgstr ""
-
-#. i18n: file: dialogs/editconfigwidget.ui:128
-#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:332
-msgid "Allow scrolling past the end of the document"
-msgstr ""
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:14
-#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:335
-msgid "&Filetype:"
-msgstr "फाइल प्रकार:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:24
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:338
-#, fuzzy
-#| msgid "Select the tiletype you want to change."
-msgid "Select the filetype you want to change."
-msgstr "तपाईँले परिवर्तन गर्न चाहेको टायल प्रकार चयन गर्नुहोस् ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:31
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:341
-msgid "Create a new file type."
-msgstr "नयाँ फाइल प्रकार सिर्जना गर्नुहोस् ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:34
-#. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:344
-msgid "&New"
-msgstr "नयाँ"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:347
-msgid "Delete the current file type."
-msgstr "हालको फाइल प्रकार मेट्नुहोस् ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:82
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:359
-msgid ""
-"The name of the filetype will be the text of the corresponding menu item."
-msgstr "फाइल प्रकारको नाम सम्बन्धित मेनु वस्तुको पाठ हुनेछ ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:362
-msgid "&Section:"
-msgstr "खण्ड:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:365
-msgid "The section name is used to organize the file types in menus."
-msgstr "मेनुमा फाइल प्रकार सङ्गठीत गर्न खण्ड नाम प्रयोग गरिन्छ ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:106
-#. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:368
-msgid "&Variables:"
-msgstr "चल:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:116
-#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
-#: rc.cpp:371
-msgid ""
-"<p>This string allows to configure Kate's settings for the files selected by "
-"this mimetype using Kate variables. Almost any configuration option can be "
-"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
-"known variables, see the manual.</p>"
-msgstr ""
-"<p>यो स्ट्रिङले केट चल प्रयोग गरेर यो माइम प्रकारद्वारा चयन गरिएका फाइलका लागि केटको "
-"सेटिङ कन्फिगर गर्न अनुमति दिन्छ । लगभग कुनै पनि कन्फिगरेसन विकल्प सेट गर्न सकिन्छ, जस्तै "
-"हाइलाइट, इन्डेन्ट-मोड, सङ्केतन, आदि ।</p><p>परिचित चलको पूरा सूचीका लागि, म्यानुअल "
-"हेर्नुहोस् ।</p>"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:123
-#. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:374
-msgid "&Highlighting:"
-msgstr "हाइलाइटिङ:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:136
-#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:377
-#, fuzzy
-#| msgid "&Indentation"
-msgid "&Indentation Mode:"
-msgstr "इन्डेन्टेसन"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:380
-msgid "File e&xtensions:"
-msgstr "फाइल विस्तार:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:159
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:383
-msgid ""
-"The wildcards mask allows to select files by filename. A typical mask uses "
-"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
-"The string is a semicolon-separated list of masks."
-msgstr ""
-"वाइल्डकार्ड मास्कले फाइलनामद्वारा फाइल चयन गर्न अनुमति दिन्छ । विशिष्ट मास्कले एस्ट्रिक र "
-"फाइल विस्तार प्रयोग गर्दछ । उदाहरणका लागि <code>*.txt; *.text</code>. स्ट्रिङ "
-"मास्कको अर्धविरामद्वारा विभाजित सूची हो ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:166
-#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:386
-msgid "MIME &types:"
-msgstr "माइम प्रकार:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:181
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:389
-msgid ""
-"The mime type mask allows to select files by mimetype. The string is a "
-"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
-"english</code>."
-msgstr ""
-"माइम प्रकार मास्कले माइम प्रकार प्रयोग गरेर फाइल चयन गर्न अनुमति दिन्छ । स्ट्रिङ "
-"अर्धविरामद्वारा विभाजित माइम प्रकारको सूची हो, उदाहरणका लागि <code>text/plain; "
-"text/english</code>."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:188
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:392
-msgid "Displays a wizard that helps you easily select mimetypes."
-msgstr "विजार्ड प्रदर्शन गर्दछ जसले तपाईँलाई माइमप्रकार सजिलै चयन गर्न मद्दत गर्दछ ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:197
-#. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:395
-msgid "P&riority:"
-msgstr "प्राथमिकता:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:207
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:398
-msgid ""
-"Sets priority for this file type. If more than one file type selects the "
-"same file, the one with the highest priority will be used."
-msgstr ""
-"यो फाइल प्रकारका लागि प्राथमिकता सेट गर्दछ । यदि एक भन्दा बढी फाइल प्रकारले उस्तै "
-"फाइल चयन गरेमा, उच्च प्राथमिकता भएको एउटा प्रयोग गरिन्छ ।"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:232
-#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:401
-msgid "Download Highlighting Files..."
-msgstr "हाइलाइट फाइल डाउनलोड गर्नुहोस्..."
-
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:404
+#: rc.cpp:293
 msgid "Default indentation mode:"
 msgstr "पूर्वनिर्धारित इन्डेन्टेसन मोड:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:407
+#: rc.cpp:296
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -4497,7 +4221,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:410
+#: rc.cpp:299
 #, fuzzy
 #| msgid "Indentation"
 msgid "Indent using"
@@ -4505,7 +4229,7 @@ msgstr "इन्डेन्टेसन"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:413
+#: rc.cpp:302
 #, fuzzy
 #| msgid "Tabulators"
 msgid "&Tabulators"
@@ -4513,7 +4237,7 @@ msgstr "टेबुलेटर"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:416
+#: rc.cpp:305
 #, fuzzy
 #| msgid "Template"
 msgid "&Spaces"
@@ -4521,7 +4245,7 @@ msgstr "टेम्प्लेट"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:419
+#: rc.cpp:308
 #, fuzzy
 #| msgid "Indentation width:"
 msgid "&Indentation width:"
@@ -4529,7 +4253,7 @@ msgstr "इन्डेन्टेसन चौडाइ:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:422
+#: rc.cpp:311
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -4542,7 +4266,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:425
+#: rc.cpp:314
 #, fuzzy
 #| msgid "Tabulators"
 msgid "Tabulators &and Spaces"
@@ -4550,19 +4274,19 @@ msgstr "टेबुलेटर"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:428
+#: rc.cpp:317
 msgid "Tab wi&dth:"
 msgstr "ट्याब चौडाइ:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:431
+#: rc.cpp:320
 msgid "Indentation Properties"
 msgstr "इन्डेन्टेसन गुण"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:434
+#: rc.cpp:323
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -4572,7 +4296,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:437
+#: rc.cpp:326
 #, fuzzy
 #| msgid "Keep extra spaces"
 msgid "&Keep extra spaces"
@@ -4580,7 +4304,7 @@ msgstr "थप खाली स्थान राख्नुहोस्"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:440
+#: rc.cpp:329
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -4590,7 +4314,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:443
+#: rc.cpp:332
 #, fuzzy
 #| msgid "Adjust indentation of code pasted from the clipboard"
 msgid "Adjust indentation of code &pasted from the clipboard"
@@ -4598,13 +4322,13 @@ msgstr "क्लिपबोर्डबाट टाँसिएको सङ�
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:446
+#: rc.cpp:335
 msgid "Indentation Actions"
 msgstr "इन्डेन्टेसन कार्य"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:449
+#: rc.cpp:338
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -4615,7 +4339,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:452
+#: rc.cpp:341
 #, fuzzy
 #| msgid "Backspace key in leading blank space unindents"
 msgid "&Backspace key in leading blank space unindents"
@@ -4623,7 +4347,7 @@ msgstr "अगाडिको खाली स्थानको Backspace क�
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:455
+#: rc.cpp:344
 #, fuzzy
 #| msgid ""
 #| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
@@ -4662,7 +4386,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:461
+#: rc.cpp:350
 #, fuzzy
 #| msgid ""
 #| "If this option is selected, the <b>Tab</b> key always inserts white space "
@@ -4682,7 +4406,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:464
+#: rc.cpp:353
 #, fuzzy
 #| msgid "Always advance to the next tab position"
 msgid "Always advance to the &next tab position"
@@ -4690,7 +4414,7 @@ msgstr "सधैँ पछिल्लो ट्याब स्थितिम
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:467
+#: rc.cpp:356
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -4701,7 +4425,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:470
+#: rc.cpp:359
 #, fuzzy
 #| msgid "Always increase indentation level"
 msgid "Always increase indentation &level"
@@ -4709,7 +4433,7 @@ msgstr "सधैँ इन्डेन्टेसन स्तर बढाउ
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:473
+#: rc.cpp:362
 #, fuzzy
 #| msgid ""
 #| "If this option is selected, the <b>Tab</b> key either indents the current "
@@ -4745,7 +4469,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:476
+#: rc.cpp:365
 #, fuzzy
 #| msgid "Increase indentation level if in leading blank space"
 msgid "Increase indentation level if in l&eading blank space"
@@ -4753,13 +4477,13 @@ msgstr "यदि अगाडिको खाली स्थान भित�
 
 #. i18n: file: dialogs/modonhdwidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:479
+#: rc.cpp:368
 msgid "Ignore white space changes"
 msgstr "सेतो खाली स्थान परिवर्तन उपेक्षा गर्नुहोस्"
 
 #. i18n: file: dialogs/modonhdwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:482
+#: rc.cpp:371
 msgid ""
 "Calculates the difference between the editor contents and the disk file "
 "using diff(1)."
@@ -4767,25 +4491,25 @@ msgstr "diff(1) प्रयोग गरेर सम्पादक साम�
 
 #. i18n: file: dialogs/modonhdwidget.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:485
+#: rc.cpp:374
 msgid "&View Difference"
 msgstr "भिन्नता हेर्नुहोस्"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:488
+#: rc.cpp:377
 msgid "Folder Config File"
 msgstr "फोल्डर कन्फिग फाइल"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:491
+#: rc.cpp:380
 msgid "Search &depth for config file:"
 msgstr "कन्फिग फाइलका लागि गहन खोजी गर्नुहोस्:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:494
+#: rc.cpp:383
 msgid ""
 "The editor will search the given number of folder levels upwards for a ."
 "kateconfig file and load the settings line from it."
@@ -4795,13 +4519,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:497
+#: rc.cpp:386
 msgid "Do not use config file"
 msgstr "कन्फिग फाइल प्रयोग नगर्नुहोस्"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:500
+#: rc.cpp:389
 msgid ""
 "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
 "prefix&gt;&lt;filename&gt;&lt;suffix&gt;' before saving changes.<p>The "
@@ -4813,13 +4537,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:503
+#: rc.cpp:392
 msgid "Backup on Save"
 msgstr "बचतमा जगेडा"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:506
+#: rc.cpp:395
 msgid ""
 "If this option is enabled, backups for local files will be created when "
 "saving."
@@ -4829,13 +4553,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:509
+#: rc.cpp:398
 msgid "&Local files"
 msgstr "स्थानीय फाइल"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:512
+#: rc.cpp:401
 msgid ""
 "If this option is enabled, backups for remote files will be created when "
 "saving."
@@ -4844,216 +4568,67 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:515
+#: rc.cpp:404
 msgid "&Remote files"
 msgstr "टाढाको फाइल"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:518
+#: rc.cpp:407
 msgid "&Prefix:"
 msgstr "उपसर्ग:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:521
+#: rc.cpp:410
 msgid "Enter the prefix to prepend to the backup file names."
 msgstr "जगेडा फाइल नाममा प्रिपेन्ड गर्न उपसर्गलाई प्रविष्ट गर्नुहोस् ।"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:524
+#: rc.cpp:413
 msgid "&Suffix:"
 msgstr "प्रत्यय:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:527
+#: rc.cpp:416
 msgid "Enter the suffix to append to the backup file names."
 msgstr "जगेडा फाइल नाममा थप्न प्रत्ययलाई प्रविष्ट गर्नुहोस् ।"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:530
+#: rc.cpp:419
 msgid "Disable swap files syncing"
 msgstr ""
 
-#. i18n: file: dialogs/opensaveconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
-#: rc.cpp:533
-msgid "File Format"
-msgstr "फाइल ढाँचा"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:31
-#. i18n: ectx: property (text), widget (QLabel, lblEncoding)
-#: rc.cpp:536
-msgid "&Encoding:"
-msgstr "सङ्केतन:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
-#: rc.cpp:539
-msgid ""
-"This defines the standard encoding to use to open/save files, if not changed "
-"in the open/save dialog or by using a command line option."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:48
-#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:542
-#, fuzzy
-#| msgid "Encoding Auto&detection:"
-msgid "&Encoding Detection:"
-msgstr "स्वचालित पत्ता लगाउने सङ्केतन:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:58
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
-#: rc.cpp:545
-msgid ""
-"if neither the encoding chosen as standard above, nor the encoding specified "
-"in the open/save dialog, nor the encoding specified on command line match "
-"the content of the file, this detection will be run."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection2)
-#: rc.cpp:548
-#, fuzzy
-#| msgid "&Encoding:"
-msgid "&Fallback Encoding:"
-msgstr "सङ्केतन:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:75
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
-#: rc.cpp:551
-msgid ""
-"This defines the fallback encoding to try for opening files if neither the "
-"encoding chosen as standard above, nor the encoding specified in the open/"
-"save dialog, nor the encoding specified on command line match the content of "
-"the file.  Before this is used, an attempt will be made to determine the "
-"encoding to use by looking for a byte order marker at start of file: if one "
-"is found, the right unicode encoding will be chosen; otherwise encoding "
-"detection will run, if both fail fallback encoding will be tried."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:82
-#. i18n: ectx: property (text), widget (QLabel, lblEOL)
-#: rc.cpp:554
-msgid "E&nd of line:"
-msgstr "रेखाको अन्त्य:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:93
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:557
-msgid "UNIX"
-msgstr "युनिक्स"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:98
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:560
-msgid "DOS/Windows"
-msgstr "डस/विण्डोज"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:103
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:563
-msgid "Macintosh"
-msgstr "म्याकिन्टोस"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:113
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:566
-msgid ""
-"If this option is enabled the editor will autodetect the end of line type. "
-"The first found end of line type will be used for the whole file."
-msgstr ""
-"यदि यो विकल्प सक्षम पारिएमा सम्पादकले लाइन प्रकारको अन्त्य स्वचालित रूपले पत्ता लगाउनेछ "
-"। पहिले फेला परेको रेखा प्रकारको अन्त्य सम्पूर्ण फाइलका लागि प्रयोग हुनेछ ।"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:116
-#. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:569
-msgid "A&utomatic end of line detection"
-msgstr "रेखा खोजको स्वाचालित अन्त्य"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:123
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:572
-msgid ""
-"The byte order mark is a special sequence at the beginning of unicode "
-"encoded documents. It helps editors to open text documents with the correct "
-"unicode encoding. The byte order mark is not visible in the displayed "
-"document."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:575
-msgid "Enable byte order marker"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:133
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:578
-msgid "Line Length Limit:"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:143
-#. i18n: ectx: property (specialValueText), widget (QSpinBox, lineLengthLimit)
-#: rc.cpp:581
-msgid "Unlimited"
-msgstr "असीमित"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:159
-#. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
-#: rc.cpp:584
-msgid "Automatic Cleanups on Load/Save"
-msgstr "लोड गर्नुहोस्/बचत गर्नुहोसमा स्वचालित क्लिनअप"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:165
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:587
-msgid ""
-"The editor will automatically eliminate extra spaces at the ends of lines of "
-"text while loading/saving the file. This change is only visible after a save "
-"if you reload the file."
-msgstr ""
-"सम्पादकले फाइल लोड/बचत गर्दा पाठको अन्तिम लाइनमा थप  खाली स्थान स्वचालित रूपले "
-"हटाउनेछ । तपाईँले बचत पश्चात फाइल फेरि लोड गरेमा मात्र यो परिवर्तन देखिन्छ ।"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:168
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:590
-msgid "Re&move trailing spaces"
-msgstr "ट्रेलिङ खाली स्थान हटाउनुहोस्"
-
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:593
+#: rc.cpp:422
 msgid "Text Area Background"
 msgstr "पाठ क्षेत्र पृष्ठभूमि"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:596
+#: rc.cpp:425
 msgid "Normal text:"
 msgstr "सामान्य पाठ:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: rc.cpp:599
+#: rc.cpp:428
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>सम्पादन क्षेत्रको पृष्ठभूमि रङ सेट गर्दछ ।</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:602
+#: rc.cpp:431
 msgid "Selected text:"
 msgstr "चयन गरिएको पाठ:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:605
+#: rc.cpp:434
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -5063,13 +4638,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:608
+#: rc.cpp:437
 msgid "Current line:"
 msgstr "हालको रेखा:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: rc.cpp:611
+#: rc.cpp:440
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -5078,13 +4653,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:614
+#: rc.cpp:443
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>तपाईँले परिवर्तन गर्न चाहेको मार्कर प्रकार चयन गर्नुहोस् ।</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:617
+#: rc.cpp:446
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -5094,25 +4669,25 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:620
+#: rc.cpp:449
 msgid "Additional Elements"
 msgstr "अतिरिक्त तत्व"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:623
+#: rc.cpp:452
 msgid "Left border background:"
 msgstr "बायाँ किनारा पृष्ठभूमि:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:626
+#: rc.cpp:455
 msgid "Line numbers:"
 msgstr "रेखा सङ्ख्या:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: rc.cpp:629
+#: rc.cpp:458
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -5122,13 +4697,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:632
+#: rc.cpp:461
 msgid "Bracket highlight:"
 msgstr "कोष्ठक हाइलाइट:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: rc.cpp:635
+#: rc.cpp:464
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -5138,13 +4713,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:638
+#: rc.cpp:467
 msgid "Word wrap markers:"
 msgstr "शब्द बेर्ने चिन्ह:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: rc.cpp:641
+#: rc.cpp:470
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -5157,25 +4732,25 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:644
+#: rc.cpp:473
 msgid "Tab and space markers:"
 msgstr "ट्याब र खाली स्थान चिन्हक:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: rc.cpp:647
+#: rc.cpp:476
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr "<p>टेबुलेटर चिन्हको रङ सेट गर्दछ ।</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:650
+#: rc.cpp:479
 msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: rc.cpp:653
+#: rc.cpp:482
 #, fuzzy
 #| msgid "<p>Sets the color of the tabulator marks.</p>"
 msgid ""
@@ -5184,25 +4759,25 @@ msgstr "<p>टेबुलेटर चिन्हको रङ सेट ग�
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:662
+#: rc.cpp:491
 msgid "Dynamic &word wrap indicators (if applicable):"
 msgstr "(यदि अनुकूल भएमा) गतिशील शब्द बेराई:"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:665
+#: rc.cpp:494
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
 msgstr "गतिशील शब्द बेराई सूचक कतिबेला प्रर्दशन गर्ने हो रोज्नुहोस् ।"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:668
+#: rc.cpp:497
 msgid "Align dynamically wrapped lines to indentation depth:"
 msgstr "इन्डेन्टेसन गहिराइमा गतिशील रूपमा बेरिएका रेखा पङ्क्तिबद्ध गर्नुहोस्:"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:672
+#: rc.cpp:501
 #, no-c-format
 msgid ""
 "<p>Enables the start of dynamically wrapped lines to be aligned vertically "
@@ -5222,14 +4797,14 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:679
+#: rc.cpp:508
 #, no-c-format
 msgid "% of View Width"
 msgstr "% दृश्य चौडाइ"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:682
+#: rc.cpp:511
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Whitespace Highlighting"
@@ -5237,7 +4812,7 @@ msgstr "हाइलाइटिङ"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:685
+#: rc.cpp:514
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -5245,19 +4820,19 @@ msgstr "सम्पादकले पाठमा ट्याबको उप
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:688
+#: rc.cpp:517
 msgid "&Highlight tabulators"
 msgstr "टेबिलेटर हाइलाइट गर्नुहोस्"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:691
+#: rc.cpp:520
 msgid "Highlight trailing &spaces"
 msgstr "ट्रेलिङ खाली स्थान हाइलाइट गर्नुहोस्"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:697
+#: rc.cpp:526
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -5265,13 +4840,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:700
+#: rc.cpp:529
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:703
+#: rc.cpp:532
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
 "indent lines."
@@ -5281,13 +4856,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:706
+#: rc.cpp:535
 msgid "Show i&ndentation lines"
 msgstr "इन्डेन्टेसन रेखा देखाउनुहोस्"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:709
+#: rc.cpp:538
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -5295,13 +4870,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:712
+#: rc.cpp:541
 msgid "Highlight range between selected brackets"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:718
+#: rc.cpp:547
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -5310,13 +4885,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:721
+#: rc.cpp:550
 msgid "Use Vi input mode"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:724
+#: rc.cpp:553
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -5325,13 +4900,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:727
+#: rc.cpp:556
 msgid "Let Vi commands override Kate shortcuts"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:730
+#: rc.cpp:559
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -5342,13 +4917,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:735
+#: rc.cpp:564
 msgid "Hide the Vi mode status bar"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:738
+#: rc.cpp:567
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -5362,13 +4937,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:746
+#: rc.cpp:575
 msgid "Key Mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:749
+#: rc.cpp:578
 #, fuzzy
 #| msgid "Normal Text"
 msgid "Normal mode"
@@ -5376,7 +4951,7 @@ msgstr "सामान्य पाठ"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:755
+#: rc.cpp:584
 #, fuzzy
 #| msgid "Template"
 msgid "Replacement"
@@ -5384,7 +4959,7 @@ msgstr "टेम्प्लेट"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:758
+#: rc.cpp:587
 #, fuzzy
 #| msgid "Selected"
 msgid "Remove selected"
@@ -5392,13 +4967,13 @@ msgstr "चयन"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:761
+#: rc.cpp:590
 msgid "Add new mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:119
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnImportNormal)
-#: rc.cpp:764
+#: rc.cpp:593
 msgid ""
 "Read a vimrc file and attempt to import mappings specified with the \"[n]"
 "noremap\" command."
@@ -5406,9 +4981,434 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, btnImportNormal)
-#: rc.cpp:767
+#: rc.cpp:596
 msgid "Import from vimrc file"
 msgstr ""
+
+#. i18n: file: dialogs/editconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
+#: rc.cpp:599
+msgid "Static Word Wrap"
+msgstr "स्थिर शब्द बेराइ"
+
+#. i18n: file: dialogs/editconfigwidget.ui:26
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:602
+#, fuzzy
+#| msgid ""
+#| "<p>Automatically start a new line of text when the current line exceeds "
+#| "the length specified by the <b>Wrap words at:</b> option.</p><p>This "
+#| "option does not wrap existing lines of text - use the <b>Apply Static "
+#| "Word Wrap</b> option in the <b>Tools</b> menu for that purpose.</p><p>If "
+#| "you want lines to be <i>visually wrapped</i> instead, according to the "
+#| "width of the view, enable <b>Dynamic Word Wrap</b> in the <b>View "
+#| "Defaults</b> config page.</p>"
+msgid ""
+"<p>Automatically start a new line of text when the current line exceeds the "
+"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
+"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
+"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
+"be <i>visually wrapped</i> instead, according to the width of the view, "
+"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
+msgstr ""
+"<p>हालको लाइनले <b>यसमा शब्द बेर्नुहोस्:</b> विकल्पद्वारा निर्दिष्ट गरिएको लाइन पार "
+"गरेको बेलामा स्वचालित रूपले नयाँ लाइन सुरूआत गर्दछ ।</p><p>यो विकल्पले पाठका अवस्थित "
+"लाइन बेर्दैन - सो उद्देश्यका लागि <b>उपकरण</b> मेनुमा <b>स्थिर शब्द बेराइ लागू गर्नुहोस्</"
+"b> विकल्प प्रयोग गर्नुहोस् ।</p><p>यदि तपाईँ साटोमा, <i>दृश्यात्मकता बेरिएका</i> लाइन "
+"चाहनुहुन्छ भने, दृश्यको चौडाइ अनुसारको, <b>दृश्य पूर्वनिर्धारित</b> कन्फिगरेसन पृष्ठमा "
+"<b>गतिशील शब्द बेराइ</b> सक्षम पार्नुहोस् ।"
+
+#. i18n: file: dialogs/editconfigwidget.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:605
+msgid "Enable static &word wrap"
+msgstr "स्थिर शब्द बेराइ सक्षम पार्नुहोस्"
+
+#. i18n: file: dialogs/editconfigwidget.ui:36
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:608
+msgid ""
+"<p>If this option is checked, a vertical line will be drawn at the word wrap "
+"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
+"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
+msgstr ""
+"<p>यदि यो विकल्प जाँच गरिएमा, <strong>सम्पादन </strong> गुणमा परिभाषित गरिए "
+"अनुरुपका शब्द बेर्ने स्तम्भमा एउटा तेर्सो रेखा कोरिनेछ ।<p><p>याद गर्नुहोस् यदि तपाईँले स्थिर "
+"पिच फन्ट प्रयोग गरेमा शब्द बेर्ने मार्कर मात्र कोरिने छ ।<p>"
+
+#. i18n: file: dialogs/editconfigwidget.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:611
+msgid "Show static word wra&p marker (if applicable)"
+msgstr "(अनुकूल भएमा) स्थिर शब्द बेराइ मार्कर देखाउनुहोस्"
+
+#. i18n: file: dialogs/editconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
+#: rc.cpp:614
+msgid "W&rap words at:"
+msgstr "यसमा शब्द बेर्नुहोस्:"
+
+#. i18n: file: dialogs/editconfigwidget.ui:61
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
+#: rc.cpp:617
+msgid ""
+"If the Word Wrap option is selected this entry determines the length (in "
+"characters) at which the editor will automatically start a new line."
+msgstr ""
+"यदि शब्द बेर्ने विकल्प चयन गरिएको छ भने यो प्रविष्टिले (क्यारेक्टरहरूको) लम्बाइ निर्धारण "
+"गर्छ जसमा सम्पादकले स्वत: नयाँ रेखा सुरु गर्नेछ ।"
+
+#. i18n: file: dialogs/editconfigwidget.ui:95
+#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
+#: rc.cpp:620
+msgid "Misc"
+msgstr "विविध"
+
+#. i18n: file: dialogs/editconfigwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:623
+#, fuzzy
+#| msgid ""
+#| "If this is enabled, the editor will remove any trailing whitespace on "
+#| "lines when they are left by the insertion cursor."
+msgid ""
+"If this is enabled, the editor will remove any trailing whitespace on lines "
+"that are changed through editing."
+msgstr ""
+"यदि यो सक्षम पारिएको छ भने, सम्पादकले रेखामा घुसाउने कर्सरद्वारा ट्रेलिङ कुनै पनि सेतो "
+"खाली स्थान छोडेका बेलामा तिनीहरूलाई हटाउँछ ।"
+
+#. i18n: file: dialogs/editconfigwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:626
+msgid "Remove &trailing spaces while editing"
+msgstr "सम्पादन गर्दा ट्रेलिङ खाली स्थान हटाउनुहोस्"
+
+#. i18n: file: dialogs/editconfigwidget.ui:111
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:629
+msgid ""
+"When the user types a left bracket ([,(, or {) KateView automatically enters "
+"the right bracket (}, ), or ]) to the right of the cursor."
+msgstr ""
+"जब प्रयोगकर्ताले बायाँ कोष्टक टाइप गर्छ ([,(, वा {) केट दृश्यले कर्सरको दायाँ स्वचालित "
+"रूपले दायाँ कोष्टक (}, ), वा ]) प्रविष्टि गर्छ ।"
+
+#. i18n: file: dialogs/editconfigwidget.ui:114
+#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:632
+msgid "Auto &brackets"
+msgstr "स्वत: कोष्ठक राख्दछ"
+
+#. i18n: file: dialogs/editconfigwidget.ui:121
+#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
+#: rc.cpp:635
+msgid "Copy/Cut the current line if no selection"
+msgstr ""
+
+#. i18n: file: dialogs/editconfigwidget.ui:128
+#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
+#: rc.cpp:638
+msgid "Allow scrolling past the end of the document"
+msgstr ""
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:14
+#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
+#: rc.cpp:641
+msgid "&Filetype:"
+msgstr "फाइल प्रकार:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:24
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
+#: rc.cpp:644
+#, fuzzy
+#| msgid "Select the tiletype you want to change."
+msgid "Select the filetype you want to change."
+msgstr "तपाईँले परिवर्तन गर्न चाहेको टायल प्रकार चयन गर्नुहोस् ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:31
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
+#: rc.cpp:647
+msgid "Create a new file type."
+msgstr "नयाँ फाइल प्रकार सिर्जना गर्नुहोस् ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:34
+#. i18n: ectx: property (text), widget (QPushButton, btnNew)
+#: rc.cpp:650
+msgid "&New"
+msgstr "नयाँ"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
+#: rc.cpp:653
+msgid "Delete the current file type."
+msgstr "हालको फाइल प्रकार मेट्नुहोस् ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:82
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
+#: rc.cpp:665
+msgid ""
+"The name of the filetype will be the text of the corresponding menu item."
+msgstr "फाइल प्रकारको नाम सम्बन्धित मेनु वस्तुको पाठ हुनेछ ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:89
+#. i18n: ectx: property (text), widget (QLabel, lblSection)
+#: rc.cpp:668
+msgid "&Section:"
+msgstr "खण्ड:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
+#: rc.cpp:671
+msgid "The section name is used to organize the file types in menus."
+msgstr "मेनुमा फाइल प्रकार सङ्गठीत गर्न खण्ड नाम प्रयोग गरिन्छ ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, lblVariables)
+#: rc.cpp:674
+msgid "&Variables:"
+msgstr "चल:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:116
+#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
+#: rc.cpp:677
+msgid ""
+"<p>This string allows to configure Kate's settings for the files selected by "
+"this mimetype using Kate variables. Almost any configuration option can be "
+"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
+"known variables, see the manual.</p>"
+msgstr ""
+"<p>यो स्ट्रिङले केट चल प्रयोग गरेर यो माइम प्रकारद्वारा चयन गरिएका फाइलका लागि केटको "
+"सेटिङ कन्फिगर गर्न अनुमति दिन्छ । लगभग कुनै पनि कन्फिगरेसन विकल्प सेट गर्न सकिन्छ, जस्तै "
+"हाइलाइट, इन्डेन्ट-मोड, सङ्केतन, आदि ।</p><p>परिचित चलको पूरा सूचीका लागि, म्यानुअल "
+"हेर्नुहोस् ।</p>"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:123
+#. i18n: ectx: property (text), widget (QLabel, lblHl)
+#: rc.cpp:680
+msgid "&Highlighting:"
+msgstr "हाइलाइटिङ:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:136
+#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
+#: rc.cpp:683
+#, fuzzy
+#| msgid "&Indentation"
+msgid "&Indentation Mode:"
+msgstr "इन्डेन्टेसन"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
+#: rc.cpp:686
+msgid "File e&xtensions:"
+msgstr "फाइल विस्तार:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:159
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
+#: rc.cpp:689
+msgid ""
+"The wildcards mask allows to select files by filename. A typical mask uses "
+"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
+"The string is a semicolon-separated list of masks."
+msgstr ""
+"वाइल्डकार्ड मास्कले फाइलनामद्वारा फाइल चयन गर्न अनुमति दिन्छ । विशिष्ट मास्कले एस्ट्रिक र "
+"फाइल विस्तार प्रयोग गर्दछ । उदाहरणका लागि <code>*.txt; *.text</code>. स्ट्रिङ "
+"मास्कको अर्धविरामद्वारा विभाजित सूची हो ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:166
+#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
+#: rc.cpp:692
+msgid "MIME &types:"
+msgstr "माइम प्रकार:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:181
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
+#: rc.cpp:695
+msgid ""
+"The mime type mask allows to select files by mimetype. The string is a "
+"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
+"english</code>."
+msgstr ""
+"माइम प्रकार मास्कले माइम प्रकार प्रयोग गरेर फाइल चयन गर्न अनुमति दिन्छ । स्ट्रिङ "
+"अर्धविरामद्वारा विभाजित माइम प्रकारको सूची हो, उदाहरणका लागि <code>text/plain; "
+"text/english</code>."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:188
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
+#: rc.cpp:698
+msgid "Displays a wizard that helps you easily select mimetypes."
+msgstr "विजार्ड प्रदर्शन गर्दछ जसले तपाईँलाई माइमप्रकार सजिलै चयन गर्न मद्दत गर्दछ ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:197
+#. i18n: ectx: property (text), widget (QLabel, lblPriority)
+#: rc.cpp:701
+msgid "P&riority:"
+msgstr "प्राथमिकता:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:207
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
+#: rc.cpp:704
+msgid ""
+"Sets priority for this file type. If more than one file type selects the "
+"same file, the one with the highest priority will be used."
+msgstr ""
+"यो फाइल प्रकारका लागि प्राथमिकता सेट गर्दछ । यदि एक भन्दा बढी फाइल प्रकारले उस्तै "
+"फाइल चयन गरेमा, उच्च प्राथमिकता भएको एउटा प्रयोग गरिन्छ ।"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
+#: rc.cpp:707
+msgid "Download Highlighting Files..."
+msgstr "हाइलाइट फाइल डाउनलोड गर्नुहोस्..."
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
+#: rc.cpp:710
+msgid "File Format"
+msgstr "फाइल ढाँचा"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:31
+#. i18n: ectx: property (text), widget (QLabel, lblEncoding)
+#: rc.cpp:713
+msgid "&Encoding:"
+msgstr "सङ्केतन:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
+#: rc.cpp:716
+msgid ""
+"This defines the standard encoding to use to open/save files, if not changed "
+"in the open/save dialog or by using a command line option."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:48
+#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
+#: rc.cpp:719
+#, fuzzy
+#| msgid "Encoding Auto&detection:"
+msgid "&Encoding Detection:"
+msgstr "स्वचालित पत्ता लगाउने सङ्केतन:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:58
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
+#: rc.cpp:722
+msgid ""
+"if neither the encoding chosen as standard above, nor the encoding specified "
+"in the open/save dialog, nor the encoding specified on command line match "
+"the content of the file, this detection will be run."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection2)
+#: rc.cpp:725
+#, fuzzy
+#| msgid "&Encoding:"
+msgid "&Fallback Encoding:"
+msgstr "सङ्केतन:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:75
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
+#: rc.cpp:728
+msgid ""
+"This defines the fallback encoding to try for opening files if neither the "
+"encoding chosen as standard above, nor the encoding specified in the open/"
+"save dialog, nor the encoding specified on command line match the content of "
+"the file.  Before this is used, an attempt will be made to determine the "
+"encoding to use by looking for a byte order marker at start of file: if one "
+"is found, the right unicode encoding will be chosen; otherwise encoding "
+"detection will run, if both fail fallback encoding will be tried."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:82
+#. i18n: ectx: property (text), widget (QLabel, lblEOL)
+#: rc.cpp:731
+msgid "E&nd of line:"
+msgstr "रेखाको अन्त्य:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:93
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:734
+msgid "UNIX"
+msgstr "युनिक्स"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:98
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:737
+msgid "DOS/Windows"
+msgstr "डस/विण्डोज"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:103
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:740
+msgid "Macintosh"
+msgstr "म्याकिन्टोस"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:113
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
+#: rc.cpp:743
+msgid ""
+"If this option is enabled the editor will autodetect the end of line type. "
+"The first found end of line type will be used for the whole file."
+msgstr ""
+"यदि यो विकल्प सक्षम पारिएमा सम्पादकले लाइन प्रकारको अन्त्य स्वचालित रूपले पत्ता लगाउनेछ "
+"। पहिले फेला परेको रेखा प्रकारको अन्त्य सम्पूर्ण फाइलका लागि प्रयोग हुनेछ ।"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:116
+#. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
+#: rc.cpp:746
+msgid "A&utomatic end of line detection"
+msgstr "रेखा खोजको स्वाचालित अन्त्य"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:123
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
+#: rc.cpp:749
+msgid ""
+"The byte order mark is a special sequence at the beginning of unicode "
+"encoded documents. It helps editors to open text documents with the correct "
+"unicode encoding. The byte order mark is not visible in the displayed "
+"document."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:126
+#. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
+#: rc.cpp:752
+msgid "Enable byte order marker"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:133
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:755
+msgid "Line Length Limit:"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:143
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, lineLengthLimit)
+#: rc.cpp:758
+msgid "Unlimited"
+msgstr "असीमित"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:159
+#. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
+#: rc.cpp:761
+msgid "Automatic Cleanups on Load/Save"
+msgstr "लोड गर्नुहोस्/बचत गर्नुहोसमा स्वचालित क्लिनअप"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:165
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:764
+msgid ""
+"The editor will automatically eliminate extra spaces at the ends of lines of "
+"text while loading/saving the file. This change is only visible after a save "
+"if you reload the file."
+msgstr ""
+"सम्पादकले फाइल लोड/बचत गर्दा पाठको अन्तिम लाइनमा थप  खाली स्थान स्वचालित रूपले "
+"हटाउनेछ । तपाईँले बचत पश्चात फाइल फेरि लोड गरेमा मात्र यो परिवर्तन देखिन्छ ।"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:168
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:767
+msgid "Re&move trailing spaces"
+msgstr "ट्रेलिङ खाली स्थान हटाउनुहोस्"
 
 #. i18n: file: search/searchbarincremental.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label)
