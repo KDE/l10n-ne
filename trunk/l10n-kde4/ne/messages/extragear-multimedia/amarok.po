@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-05 03:47+0100\n"
+"POT-Creation-Date: 2012-02-06 03:31+0100\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -8271,7 +8271,7 @@ msgid_plural "%1 tracks"
 msgstr[0] "१ ट्रयाक"
 msgstr[1] "१ ट्रयाक"
 
-#: browsers/CollectionTreeView.cpp:246 configdialog/ConfigDialog.cpp:59
+#: browsers/CollectionTreeView.cpp:246
 msgid "Collection"
 msgstr "सङ्कलन"
 
@@ -8341,22 +8341,6 @@ msgstr "यन्त्र थप्नुहोस्..."
 msgid "Sound System - Amarok"
 msgstr "ध्वनि प्रणाली"
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
-#, fuzzy
-#| msgid "Collection"
-msgid "Collections"
-msgstr "सङ्कलन"
-
-#: configdialog/dialogs/PluginsConfig.cpp:48
-#, fuzzy
-#| msgid "Configure Media Device"
-msgid "Internet Services"
-msgstr "मिडिया यन्त्र कन्फिगर गर्नुहोस्"
-
-#: configdialog/dialogs/PluginsConfig.cpp:52
-msgid "Devices"
-msgstr "यन्त्र"
-
 #: configdialog/dialogs/ScriptSelector.cpp:31 dialogs/ScriptSelector.cpp:30
 #, fuzzy
 #| msgid "Scripts"
@@ -8393,6 +8377,24 @@ msgid ""
 "remove the script.</p>"
 msgstr ""
 
+#: configdialog/dialogs/PluginsConfig.cpp:44
+#, fuzzy
+#| msgid "Collection"
+msgid "Collections"
+msgstr "सङ्कलन"
+
+#: configdialog/dialogs/PluginsConfig.cpp:48
+#, fuzzy
+#| msgid "Configure Media Device"
+msgid "Internet Services"
+msgstr "मिडिया यन्त्र कन्फिगर गर्नुहोस्"
+
+#: configdialog/dialogs/PluginsConfig.cpp:52
+#, fuzzy
+#| msgid "Local Collection"
+msgid "Local Collection Backends"
+msgstr "स्थानीय सङ्कलन"
+
 #: configdialog/ConfigDialog.cpp:58
 #, fuzzy
 #| msgid "General"
@@ -8405,7 +8407,17 @@ msgid "Configure General Options"
 msgstr "साधारण विकल्प कन्फिगर गर्नुहोस्"
 
 #: configdialog/ConfigDialog.cpp:59
-msgid "Configure Collection"
+#: context/applets/currenttrack/CurrentTrack.cpp:104
+#: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
+#: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:72
+msgid "Local Collection"
+msgstr "स्थानीय सङ्कलन"
+
+#: configdialog/ConfigDialog.cpp:59
+#, fuzzy
+#| msgid "Configure Collection"
+msgid "Configure Local Collection"
 msgstr "सङ्कलन कन्फिगर गर्नुहोस्"
 
 #: configdialog/ConfigDialog.cpp:60
@@ -8545,13 +8557,6 @@ msgstr "अज्ञात कलाकार"
 #: core/meta/Meta.cpp:444
 msgid "Unknown Album"
 msgstr "अज्ञात एल्बम"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:104
-#: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
-#: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:72
-msgid "Local Collection"
-msgstr "स्थानीय सङ्कलन"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:113
 #, fuzzy
@@ -9300,24 +9305,24 @@ msgid "Append and &Play"
 msgstr "थप्नुहोस् र प्ले गर्नुहोस्"
 
 #: context/applets/videoclip/VideoclipApplet.cpp:102
-#: context/applets/videoclip/VideoclipApplet.cpp:279
-#: context/applets/videoclip/VideoclipApplet.cpp:333
+#: context/applets/videoclip/VideoclipApplet.cpp:281
+#: context/applets/videoclip/VideoclipApplet.cpp:335
 msgid "Video Clip"
 msgstr ""
 
-#: context/applets/videoclip/VideoclipApplet.cpp:314
+#: context/applets/videoclip/VideoclipApplet.cpp:316
 #, fuzzy
 #| msgid "Wikipedia"
 msgid "Video Clip: Fetching"
 msgstr "विकिपेडिया"
 
-#: context/applets/videoclip/VideoclipApplet.cpp:323
+#: context/applets/videoclip/VideoclipApplet.cpp:325
 #, fuzzy
 #| msgid "Device information for %1"
 msgid "Video Clip: No Information Found"
 msgstr "%1 का लागि यन्त्र सूचना"
 
-#: context/applets/videoclip/VideoclipApplet.cpp:522
+#: context/applets/videoclip/VideoclipApplet.cpp:524
 #, fuzzy
 #| msgid "Wikipedia"
 msgid "Video Clip Settings"
@@ -10300,7 +10305,6 @@ msgid "Podcasts on %1"
 msgstr "पोडकास्ट"
 
 #: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:249
-#: core-impl/collections/umscollection/UmsCollection.cpp:180
 #, fuzzy
 #| msgid "Disconnect"
 msgid "&Disconnect Device"
@@ -10517,25 +10521,6 @@ msgstr "यन्त्रबाट मेट्नुहोस्"
 msgid "&Delete Channel and Episodes"
 msgstr "डाउनलोड गरिएको पोडकास्ट मेट्नुहोस्"
 
-#: core-impl/collections/umscollection/UmsCollection.cpp:171
-#, fuzzy, kde-format
-#| msgctxt "change options"
-#| msgid "Configure %1"
-msgid "&Configure %1"
-msgstr " %1कन्फिगर गर्नुहोस्..."
-
-#: core-impl/collections/umscollection/UmsCollection.cpp:176
-#, fuzzy
-#| msgid "Update Collection"
-msgid "&Use as Collection"
-msgstr "सङ्कलन अद्यावधिक गर्नुहोस्"
-
-#: core-impl/collections/umscollection/UmsCollection.cpp:586
-#, fuzzy
-#| msgid "Configure Media Device"
-msgid "Configure USB Mass Storage Device"
-msgstr "मिडिया यन्त्र कन्फिगर गर्नुहोस्"
-
 #: core-impl/collections/umscollection/UmsCollectionLocation.cpp:116
 #, fuzzy, kde-format
 #| msgid "Deleting track(s) failed."
@@ -10558,6 +10543,38 @@ msgid "Removing one track from %2"
 msgid_plural "Removing %1 tracks from %2"
 msgstr[0] "आइपोडबाट ट्र्याक मेट्नुहोस्"
 msgstr[1] "आइपोडबाट ट्र्याक मेट्नुहोस्"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:235
+#, fuzzy
+#| msgid "Configure Media Device"
+msgid "&Configure Device"
+msgstr "मिडिया यन्त्र कन्फिगर गर्नुहोस्"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:239
+#, fuzzy
+#| msgid "Update Collection"
+msgid "&Activate This Collection"
+msgstr "सङ्कलन अद्यावधिक गर्नुहोस्"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:243
+#, fuzzy
+#| msgid "Media Device"
+msgid "&Eject Device"
+msgstr "मिडिया यन्त्र"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:423
+#, kde-format
+msgctxt ""
+"Name of the USB Mass Storage collection that has not yet been activated. See "
+"also the 'Activate This Collection' action; %1 is actual collection name"
+msgid "%1 (not activated)"
+msgstr ""
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:644
+#, fuzzy
+#| msgid "Configure Media Device"
+msgid "Configure USB Mass Storage Device"
+msgstr "मिडिया यन्त्र कन्फिगर गर्नुहोस्"
 
 #: core-impl/collections/upnpcollection/UpnpBrowseCollection.cpp:118
 #, fuzzy, kde-format
@@ -17153,6 +17170,15 @@ msgid ""
 "Would you like to use that as a collection folder?"
 msgstr ""
 
+#~ msgid "Devices"
+#~ msgstr "यन्त्र"
+
+#, fuzzy
+#~| msgctxt "change options"
+#~| msgid "Configure %1"
+#~ msgid "&Configure %1"
+#~ msgstr " %1कन्फिगर गर्नुहोस्..."
+
 #, fuzzy
 #~| msgid "%1:%2 hours"
 #~ msgid "%1% used"
@@ -18612,11 +18638,6 @@ msgstr ""
 #~| msgid "Smart Playlists"
 #~ msgid "Smart Playlist"
 #~ msgstr "छरितो प्ले सूचीहरू"
-
-#, fuzzy
-#~| msgid "Media Device"
-#~ msgid "&Read Device"
-#~ msgstr "मिडिया यन्त्र"
 
 #~ msgid "Bookmarks"
 #~ msgstr "पुस्तकचिनो"
