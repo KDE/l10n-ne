@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-23 04:42+0100\n"
+"POT-Creation-Date: 2012-02-24 04:14+0100\n"
 "PO-Revision-Date: 2007-11-05 13:38+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1468,6 +1468,19 @@ msgctxt "@info"
 msgid "Details view mode"
 msgstr "Split view mode"
 
+#: views/draganddrophelper.cpp:34
+#, fuzzy, kde-format
+#| msgctxt "@label:textbox"
+#| msgid "Rename the item <filename>%1</filename> to:"
+msgctxt "@info:status"
+msgid "Access denied. Could not write to <filename>%1</filename>"
+msgstr "Rename the item <filename>%1</filename> to:"
+
+#: views/draganddrophelper.cpp:49
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr ""
+
 #: views/renamedialog.cpp:57
 msgctxt "@title:window"
 msgid "Rename Item"
@@ -1513,20 +1526,7 @@ msgctxt "@info"
 msgid "# will be replaced by ascending numbers starting with:"
 msgstr "(# will be replaced by ascending numbers)"
 
-#: views/draganddrophelper.cpp:34
-#, fuzzy, kde-format
-#| msgctxt "@label:textbox"
-#| msgid "Rename the item <filename>%1</filename> to:"
-msgctxt "@info:status"
-msgid "Access denied. Could not write to <filename>%1</filename>"
-msgstr "Rename the item <filename>%1</filename> to:"
-
-#: views/draganddrophelper.cpp:49
-msgctxt "@info:status"
-msgid "A folder cannot be dropped into itself"
-msgstr ""
-
-#: views/dolphinview.cpp:517
+#: views/dolphinview.cpp:519
 #, fuzzy, kde-format
 #| msgctxt "@label:textbox"
 #| msgid "Rename the item <filename>%1</filename> to:"
@@ -1534,7 +1534,7 @@ msgctxt "@info:status"
 msgid "<filename>%1</filename> selected"
 msgstr "Rename the item <filename>%1</filename> to:"
 
-#: views/dolphinview.cpp:520
+#: views/dolphinview.cpp:522
 #, kde-format
 msgctxt "@info:status"
 msgid "1 Folder selected"
@@ -1542,7 +1542,7 @@ msgid_plural "%1 Folders selected"
 msgstr[0] "1 Folder selected"
 msgstr[1] "%1 Folders selected"
 
-#: views/dolphinview.cpp:521
+#: views/dolphinview.cpp:523
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "1 Folder selected"
@@ -1553,7 +1553,7 @@ msgid_plural "%1 Files selected"
 msgstr[0] "1 Folder selected"
 msgstr[1] "%1 Folders selected"
 
-#: views/dolphinview.cpp:525
+#: views/dolphinview.cpp:527
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "Folder"
@@ -1563,7 +1563,7 @@ msgid_plural "%1 Folders"
 msgstr[0] "Folder"
 msgstr[1] "Folder"
 
-#: views/dolphinview.cpp:526
+#: views/dolphinview.cpp:528
 #, kde-format
 msgctxt "@info:status"
 msgid "1 File"
@@ -1571,13 +1571,13 @@ msgid_plural "%1 Files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: views/dolphinview.cpp:530
+#: views/dolphinview.cpp:532
 #, kde-format
 msgctxt "@info:status folders, files (size)"
 msgid "%1, %2 (%3)"
 msgstr ""
 
-#: views/dolphinview.cpp:533
+#: views/dolphinview.cpp:535
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "1 File selected (%2)"
@@ -1586,17 +1586,17 @@ msgctxt "@info:status files (size)"
 msgid "%1 (%2)"
 msgstr "1 File selected (%2)"
 
-#: views/dolphinview.cpp:1077
+#: views/dolphinview.cpp:1095
 msgctxt "@info:status"
 msgid "Delete operation completed."
 msgstr "Delete operation completed."
 
-#: views/dolphinview.cpp:1152
+#: views/dolphinview.cpp:1170
 msgctxt "@info:status"
 msgid "The location is empty."
 msgstr "The location is empty."
 
-#: views/dolphinview.cpp:1154
+#: views/dolphinview.cpp:1172
 #, kde-format
 msgctxt "@info:status"
 msgid "The location '%1' is invalid."
@@ -1781,6 +1781,143 @@ msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Document to open"
 
+#: dolphinpart.cpp:145
+msgctxt "@action:inmenu Edit"
+msgid "&Edit File Type..."
+msgstr ""
+
+#: dolphinpart.cpp:149
+#, fuzzy
+#| msgctxt "@action:inmenu Edit"
+#| msgid "Select All"
+msgctxt "@action:inmenu Edit"
+msgid "Select Items Matching..."
+msgstr "Select All"
+
+#: dolphinpart.cpp:154
+msgctxt "@action:inmenu Edit"
+msgid "Unselect Items Matching..."
+msgstr ""
+
+#: dolphinpart.cpp:160
+#, fuzzy
+#| msgctxt "@action:inmenu Edit"
+#| msgid "Select All"
+msgctxt "@action:inmenu Edit"
+msgid "Unselect All"
+msgstr "Select All"
+
+#: dolphinpart.cpp:164 dolphinmainwindow.cpp:1645
+msgctxt "@action:inmenu Edit"
+msgid "Invert Selection"
+msgstr "Invert Selection"
+
+#: dolphinpart.cpp:177
+msgctxt "@action:inmenu Go"
+msgid "App&lications"
+msgstr ""
+
+#: dolphinpart.cpp:180
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Folders"
+msgctxt "@action:inmenu Go"
+msgid "&Network Folders"
+msgstr "Folders"
+
+#: dolphinpart.cpp:183
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Startup Settings"
+msgctxt "@action:inmenu Go"
+msgid "Sett&ings"
+msgstr "Startup Settings"
+
+#: dolphinpart.cpp:186
+#, fuzzy
+#| msgctxt "@action:inmenu Sort By"
+#| msgid "Tags"
+msgctxt "@action:inmenu Go"
+msgid "Trash"
+msgstr "Tags"
+
+#: dolphinpart.cpp:189
+msgctxt "@action:inmenu Go"
+msgid "Autostart"
+msgstr ""
+
+#: dolphinpart.cpp:194
+#, fuzzy
+#| msgctxt "@action:inmenu Tools"
+#| msgid "Find File..."
+msgctxt "@action:inmenu Tools"
+msgid "Find File..."
+msgstr "Find File..."
+
+#: dolphinpart.cpp:202
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Terminal"
+msgctxt "@action:inmenu Tools"
+msgid "Open &Terminal"
+msgstr "Terminal"
+
+#: dolphinpart.cpp:271
+msgctxt "@title"
+msgid "Dolphin Part"
+msgstr "Dolphin Part"
+
+#: dolphinpart.cpp:461
+#, fuzzy
+#| msgctxt "@action:inmenu Edit"
+#| msgid "Select All"
+msgctxt "@title:window"
+msgid "Select"
+msgstr "Select All"
+
+#: dolphinpart.cpp:462
+msgid "Select all items matching this pattern:"
+msgstr ""
+
+#: dolphinpart.cpp:468
+msgctxt "@title:window"
+msgid "Unselect"
+msgstr ""
+
+#: dolphinpart.cpp:469
+msgid "Unselect all items matching this pattern:"
+msgstr ""
+
+#: dolphinviewcontainer.cpp:338
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Loading folder..."
+
+#: dolphinviewcontainer.cpp:349
+msgctxt "@info"
+msgid "Searching..."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:369
+msgctxt "@info:status"
+msgid "No items found."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:512
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr ""
+
+#: dolphinviewcontainer.cpp:524
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr ""
+
+#: dolphinviewcontainer.cpp:531
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr ""
+
 #: dolphinmainwindow.cpp:347
 msgctxt "@info:status"
 msgid "Successfully copied."
@@ -1921,11 +2058,6 @@ msgstr "Paste"
 msgctxt "@action:inmenu Edit"
 msgid "Select All"
 msgstr "Select All"
-
-#: dolphinmainwindow.cpp:1645 dolphinpart.cpp:164
-msgctxt "@action:inmenu Edit"
-msgid "Invert Selection"
-msgstr "Invert Selection"
 
 #: dolphinmainwindow.cpp:1658
 msgctxt "@action:inmenu View"
@@ -2105,138 +2237,6 @@ msgstr "Split"
 msgctxt "@info"
 msgid "Split view"
 msgstr "Split view mode"
-
-#: dolphinpart.cpp:145
-msgctxt "@action:inmenu Edit"
-msgid "&Edit File Type..."
-msgstr ""
-
-#: dolphinpart.cpp:149
-#, fuzzy
-#| msgctxt "@action:inmenu Edit"
-#| msgid "Select All"
-msgctxt "@action:inmenu Edit"
-msgid "Select Items Matching..."
-msgstr "Select All"
-
-#: dolphinpart.cpp:154
-msgctxt "@action:inmenu Edit"
-msgid "Unselect Items Matching..."
-msgstr ""
-
-#: dolphinpart.cpp:160
-#, fuzzy
-#| msgctxt "@action:inmenu Edit"
-#| msgid "Select All"
-msgctxt "@action:inmenu Edit"
-msgid "Unselect All"
-msgstr "Select All"
-
-#: dolphinpart.cpp:177
-msgctxt "@action:inmenu Go"
-msgid "App&lications"
-msgstr ""
-
-#: dolphinpart.cpp:180
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Folders"
-msgctxt "@action:inmenu Go"
-msgid "&Network Folders"
-msgstr "Folders"
-
-#: dolphinpart.cpp:183
-#, fuzzy
-#| msgctxt "@title:group"
-#| msgid "Startup Settings"
-msgctxt "@action:inmenu Go"
-msgid "Sett&ings"
-msgstr "Startup Settings"
-
-#: dolphinpart.cpp:186
-#, fuzzy
-#| msgctxt "@action:inmenu Sort By"
-#| msgid "Tags"
-msgctxt "@action:inmenu Go"
-msgid "Trash"
-msgstr "Tags"
-
-#: dolphinpart.cpp:189
-msgctxt "@action:inmenu Go"
-msgid "Autostart"
-msgstr ""
-
-#: dolphinpart.cpp:194
-#, fuzzy
-#| msgctxt "@action:inmenu Tools"
-#| msgid "Find File..."
-msgctxt "@action:inmenu Tools"
-msgid "Find File..."
-msgstr "Find File..."
-
-#: dolphinpart.cpp:202
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Terminal"
-msgctxt "@action:inmenu Tools"
-msgid "Open &Terminal"
-msgstr "Terminal"
-
-#: dolphinpart.cpp:271
-msgctxt "@title"
-msgid "Dolphin Part"
-msgstr "Dolphin Part"
-
-#: dolphinpart.cpp:461
-#, fuzzy
-#| msgctxt "@action:inmenu Edit"
-#| msgid "Select All"
-msgctxt "@title:window"
-msgid "Select"
-msgstr "Select All"
-
-#: dolphinpart.cpp:462
-msgid "Select all items matching this pattern:"
-msgstr ""
-
-#: dolphinpart.cpp:468
-msgctxt "@title:window"
-msgid "Unselect"
-msgstr ""
-
-#: dolphinpart.cpp:469
-msgid "Unselect all items matching this pattern:"
-msgstr ""
-
-#: dolphinviewcontainer.cpp:338
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Loading folder..."
-
-#: dolphinviewcontainer.cpp:349
-msgctxt "@info"
-msgid "Searching..."
-msgstr ""
-
-#: dolphinviewcontainer.cpp:369
-msgctxt "@info:status"
-msgid "No items found."
-msgstr ""
-
-#: dolphinviewcontainer.cpp:512
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr ""
-
-#: dolphinviewcontainer.cpp:524
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr ""
-
-#: dolphinviewcontainer.cpp:531
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
