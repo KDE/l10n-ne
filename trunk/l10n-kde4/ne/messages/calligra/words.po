@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-12 02:43+0100\n"
+"POT-Creation-Date: 2012-02-27 02:59+0100\n"
 "PO-Revision-Date: 2007-08-19 13:06+0545\n"
 "Last-Translator: Narayan kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -754,6 +754,21 @@ msgstr "डाटावेस वस्तु सिर्जना गर्न
 msgid "Unable to locate note-text"
 msgstr "डाटावेस वस्तु सिर्जना गर्न अक्षम"
 
+#: part/KWOdfLoader.cpp:90
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:102
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+
+#: part/KWOdfLoader.cpp:104
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
 msgstr ""
@@ -967,6 +982,59 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
+#: part/dialogs/KWAnchoringProperties.cpp:432
+msgid "Baseline"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:433
+#: part/dialogs/KWAnchoringProperties.cpp:444
+msgid "Character"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:436
+msgid "Row"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:437
+#: part/dialogs/KWAnchoringProperties.cpp:445
+msgid "Page (entire) area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:438
+#: part/dialogs/KWAnchoringProperties.cpp:446
+msgid "Page text area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:439
+#: part/dialogs/KWAnchoringProperties.cpp:453
+msgid "Paragraph area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:440
+#: part/dialogs/KWAnchoringProperties.cpp:454
+msgid "Paragraph text area"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:447
+#, fuzzy
+#| msgid "Page number:"
+msgid "Left page border"
+msgstr "पृष्ठ सङ्ख्या:"
+
+#: part/dialogs/KWAnchoringProperties.cpp:448
+#, fuzzy
+#| msgid "Page number:"
+msgid "Right page border"
+msgstr "पृष्ठ सङ्ख्या:"
+
+#: part/dialogs/KWAnchoringProperties.cpp:455
+msgid "Right paragraph border"
+msgstr ""
+
+#: part/dialogs/KWAnchoringProperties.cpp:456
+msgid "Left paragraph border"
+msgstr ""
+
 #: part/dialogs/KWFrameDialog.cpp:41
 msgid "General"
 msgstr ""
@@ -977,65 +1045,12 @@ msgstr ""
 msgid "Smart Positioning"
 msgstr "अवस्था"
 
-#: part/dialogs/KWFrameDialog.cpp:79
+#: part/dialogs/KWFrameDialog.cpp:83
 #, fuzzy
 #| msgid "Page number:"
 msgctxt "(qtundo-format)"
 msgid "Change Shape Properties"
 msgstr "पृष्ठ सङ्ख्या:"
-
-#: part/dialogs/KWAnchoringProperties.cpp:431
-msgid "Baseline"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:432
-#: part/dialogs/KWAnchoringProperties.cpp:443
-msgid "Character"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:435
-msgid "Row"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:436
-#: part/dialogs/KWAnchoringProperties.cpp:444
-msgid "Page (entire) area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:437
-#: part/dialogs/KWAnchoringProperties.cpp:445
-msgid "Page text area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:438
-#: part/dialogs/KWAnchoringProperties.cpp:452
-msgid "Paragraph area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:439
-#: part/dialogs/KWAnchoringProperties.cpp:453
-msgid "Paragraph text area"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:446
-#, fuzzy
-#| msgid "Page number:"
-msgid "Left page border"
-msgstr "पृष्ठ सङ्ख्या:"
-
-#: part/dialogs/KWAnchoringProperties.cpp:447
-#, fuzzy
-#| msgid "Page number:"
-msgid "Right page border"
-msgstr "पृष्ठ सङ्ख्या:"
-
-#: part/dialogs/KWAnchoringProperties.cpp:454
-msgid "Right paragraph border"
-msgstr ""
-
-#: part/dialogs/KWAnchoringProperties.cpp:455
-msgid "Left paragraph border"
-msgstr ""
 
 #: part/dockers/KWRdfDocker.cpp:53
 msgid "RDF"
@@ -1288,19 +1303,32 @@ msgstr ""
 msgid "File to open"
 msgstr "यसमा फिल्टर:"
 
-#: part/KWOdfLoader.cpp:90
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+#: part/KWDocument.cpp:518
+msgid "Copy"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:102
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+#: part/KWDocument.cpp:563
+msgid "Head 1"
 msgstr ""
 
-#: part/KWOdfLoader.cpp:104
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+#: part/KWDocument.cpp:569
+msgid "Head 2"
+msgstr ""
+
+#: part/KWDocument.cpp:575
+msgid "Head 3"
+msgstr ""
+
+#: part/KWDocument.cpp:581
+msgid "Bullet List"
+msgstr ""
+
+#: part/KWDocument.cpp:806
+msgid "Can not find needed text component, Words will quit now"
+msgstr ""
+
+#: part/KWDocument.cpp:807
+msgid "Installation Error"
 msgstr ""
 
 #: part/KWGui.cpp:74
@@ -1703,34 +1731,6 @@ msgstr "पृष्ठ सङ्ख्या:"
 
 #: part/pagetool/KWPageTool.cpp:105
 msgid "Header & Footer"
-msgstr ""
-
-#: part/KWDocument.cpp:515
-msgid "Copy"
-msgstr ""
-
-#: part/KWDocument.cpp:560
-msgid "Head 1"
-msgstr ""
-
-#: part/KWDocument.cpp:566
-msgid "Head 2"
-msgstr ""
-
-#: part/KWDocument.cpp:572
-msgid "Head 3"
-msgstr ""
-
-#: part/KWDocument.cpp:578
-msgid "Bullet List"
-msgstr ""
-
-#: part/KWDocument.cpp:803
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-
-#: part/KWDocument.cpp:804
-msgid "Installation Error"
 msgstr ""
 
 #, fuzzy
