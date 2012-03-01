@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-27 02:57+0100\n"
+"POT-Creation-Date: 2012-03-01 02:40+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1357,7 +1357,7 @@ msgstr "HDR तह सिर्जना गर्नुहोस्"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:499
+#: rc.cpp:80 ui/kis_view2.cpp:500
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -10915,7 +10915,7 @@ msgstr "छवि प्रकार रूपान्तरण गर्नु
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:873 ui/kis_layer_manager.cc:698
+#: image/kis_image.cc:873 ui/kis_layer_manager.cc:721
 msgid "Flatten Image"
 msgstr "समतल छवि"
 
@@ -11506,7 +11506,7 @@ msgid "&Duplicate Layer or Mask"
 msgstr "मास्क नक्कल गर्नुहोस्"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:391
-#: ui/kis_layer_manager.cc:140
+#: ui/kis_layer_manager.cc:141
 msgid "&Merge with Layer Below"
 msgstr "तलतिर तहसँग गाभ्नुहोस्"
 
@@ -11902,7 +11902,7 @@ msgid "Rotate Layer 90° to the Left"
 msgstr "तह घुमाउनुहोस्"
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:654
+#: ui/kis_layer_manager.cc:677
 msgid "Rotate Layer"
 msgstr "तह घुमाउनुहोस्"
 
@@ -11962,7 +11962,7 @@ msgid "Separate Image"
 msgstr "छवि विभाजन गर्नुहोस्"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:793
+#: ui/kis_layer_manager.cc:816
 msgid "Export Layer"
 msgstr "तह निर्यात गर्नुहोस्"
 
@@ -12432,7 +12432,6 @@ msgstr "ज्यामिति विकल्प"
 #: plugins/formats/jp2/jp2_converter.cc:342
 #: plugins/formats/jp2/jp2_converter.cc:353
 #: plugins/formats/jpeg/kis_jpeg_converter.cc:96
-#: plugins/formats/ppm/kis_ppm_export.cpp:193
 #: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:65
 #: ui/kis_png_converter.cpp:80
 #, kde-format
@@ -12478,7 +12477,7 @@ msgstr "%1 तह"
 msgid "PNG Export Options"
 msgstr "ज्यामिति विकल्प"
 
-#: plugins/formats/ppm/kis_ppm_export.cpp:152
+#: plugins/formats/ppm/kis_ppm_export.cpp:154
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "PPM Export Options"
@@ -14274,6 +14273,10 @@ msgstr "यो फिल्टरका लागि कुनै कन्फ�
 msgid "Image Properties"
 msgstr "छवि गुण"
 
+#: ui/dialogs/kis_dlg_layer_properties.cc:78
+msgid "Layer Properties"
+msgstr "तह गुण"
+
 #: ui/dialogs/kis_dlg_preferences.cc:91
 #, fuzzy
 #| msgid "Small Tiles"
@@ -14310,19 +14313,7 @@ msgstr "रङ सेटिङ"
 msgid "Tablet"
 msgstr "ट्याबलेट"
 
-#: ui/dialogs/kis_dlg_preferences.cc:612
-#, fuzzy
-#| msgid "Color Settings"
-msgid "Canvas-only settings"
-msgstr "रङ सेटिङ"
-
-#: ui/dialogs/kis_dlg_preferences.cc:613
-#, fuzzy
-#| msgid "Canvas color:"
-msgid "Canvas-only"
-msgstr "क्यानभास रङ:"
-
-#: ui/dialogs/kis_dlg_preferences.cc:704
+#: ui/dialogs/kis_dlg_preferences.cc:705
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -14332,14 +14323,10 @@ msgid ""
 "Are you sure you want to enable OpenGL?\n"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_preferences.cc:707 ui/kis_aboutdata.h:31
+#: ui/dialogs/kis_dlg_preferences.cc:708 ui/kis_aboutdata.h:31
 #: ui/kis_clipboard.cc:155
 msgid "Krita"
 msgstr "क्रिता"
-
-#: ui/dialogs/kis_dlg_layer_properties.cc:78
-msgid "Layer Properties"
-msgstr "तह गुण"
 
 #: ui/flake/kis_shape_controller.cpp:169
 #, fuzzy, kde-format
@@ -14733,80 +14720,92 @@ msgstr "गुणहरू..."
 msgid "Import Image"
 msgstr "छवि आयात गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:135
+#: ui/kis_layer_manager.cc:136
 msgid "&Flatten image"
 msgstr "समतल छवि"
 
-#: ui/kis_layer_manager.cc:145
+#: ui/kis_layer_manager.cc:146
 #, fuzzy
 #| msgid "&Filters Gallery"
 msgid "&Flatten Layer"
 msgstr "फिल्टर ग्यालेरी"
 
-#: ui/kis_layer_manager.cc:149 ui/kis_layer_manager.cc:765
+#: ui/kis_layer_manager.cc:150 ui/kis_layer_manager.cc:788
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
 msgstr "तह घुमाउनुहोस्"
 
-#: ui/kis_layer_manager.cc:153
+#: ui/kis_layer_manager.cc:154
 msgid "Save Layer as Image..."
 msgstr "छविको रुपमा तह बचत गर्नुहोस्..."
 
-#: ui/kis_layer_manager.cc:157
+#: ui/kis_layer_manager.cc:158
 #, fuzzy
 #| msgid "Resize Image to Size of Current Layer"
 msgid "Size Canvas to Size of Current Layer"
 msgstr "हालको तहको साइजमा छवि रिसाइज गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:223
+#: ui/kis_layer_manager.cc:224
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:252
+#: ui/kis_layer_manager.cc:253
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:303 ui/kis_layer_manager.cc:317
-#: ui/kis_layer_manager.cc:358 ui/kis_layer_manager.cc:389
-#: ui/kis_layer_manager.cc:512
+#: ui/kis_layer_manager.cc:304 ui/kis_layer_manager.cc:318
+#: ui/kis_layer_manager.cc:359 ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:513
 msgid "Could not add layer to image."
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: ui/kis_layer_manager.cc:303 ui/kis_layer_manager.cc:317
-#: ui/kis_layer_manager.cc:358 ui/kis_layer_manager.cc:389
-#: ui/kis_layer_manager.cc:512
+#: ui/kis_layer_manager.cc:304 ui/kis_layer_manager.cc:318
+#: ui/kis_layer_manager.cc:359 ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:513
 msgid "Layer Error"
 msgstr "तह त्रुटि"
 
-#: ui/kis_layer_manager.cc:413
+#: ui/kis_layer_manager.cc:414
 #, fuzzy
 #| msgid "Filter Mask..."
 msgid "New Filter Layer"
 msgstr "फिल्टर मास्क..."
 
-#: ui/kis_layer_manager.cc:574 ui/kis_layer_manager.cc:584
+#: ui/kis_layer_manager.cc:573 ui/kis_layer_manager.cc:583
 msgid "Mirror Layer X"
 msgstr "दर्पण तह X"
 
-#: ui/kis_layer_manager.cc:601 ui/kis_layer_manager.cc:611
+#: ui/kis_layer_manager.cc:595 ui/kis_mask_manager.cc:287
+#, fuzzy
+#| msgid "Mirror Layer X"
+msgid "Mirror Mask X"
+msgstr "दर्पण तह X"
+
+#: ui/kis_layer_manager.cc:611 ui/kis_layer_manager.cc:621
 #: ui/kis_mask_manager.cc:309
 msgid "Mirror Layer Y"
 msgstr "दर्पण तह Y"
 
 #: ui/kis_layer_manager.cc:633
+#, fuzzy
+#| msgid "Mirror Layer X"
+msgid "Mirror Mask Y"
+msgstr "दर्पण तह X"
+
+#: ui/kis_layer_manager.cc:656
 msgid "Scale Layer"
 msgstr "तह मापन गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:697
+#: ui/kis_layer_manager.cc:720
 msgid "The image contains hidden layers that will be lost."
 msgstr "छविले हराउने लुकाइएको तहहरू समावेश गर्दछ ।"
 
-#: ui/kis_layer_manager.cc:699
+#: ui/kis_layer_manager.cc:722
 msgid "&Flatten Image"
 msgstr "समतल छवि"
 
@@ -14859,12 +14858,6 @@ msgstr "मास्कबाट तह सिर्जना गर्नुह
 #| msgid "Duplicate of '%1'"
 msgid "Duplication of "
 msgstr "'%1' को नक्कल"
-
-#: ui/kis_mask_manager.cc:287
-#, fuzzy
-#| msgid "Mirror Layer X"
-msgid "Mirror Mask X"
-msgstr "दर्पण तह X"
 
 #: ui/kis_mask_manager.cc:334
 #, fuzzy
@@ -15074,15 +15067,15 @@ msgstr "नयाँ तहमा चयन प्रतिलिपि बन�
 msgid "Cut Selection to New Layer"
 msgstr "नयाँ तहमा चयन काट्नुहोस्"
 
-#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:584
+#: ui/kis_selection_manager.cc:176 ui/kis_selection_manager.cc:588
 msgid "Fill with Foreground Color"
 msgstr "अग्रभूमि रङसँग भर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:589
+#: ui/kis_selection_manager.cc:181 ui/kis_selection_manager.cc:593
 msgid "Fill with Background Color"
 msgstr "पृष्ठभूमि रङसँग भर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:594
+#: ui/kis_selection_manager.cc:186 ui/kis_selection_manager.cc:598
 msgid "Fill with Pattern"
 msgstr "बान्कीसँग भर्नुहोस्"
 
@@ -15100,21 +15093,21 @@ msgstr "महीन..."
 msgid "Size Canvas to Size of Selection"
 msgstr "हालको तहको साइजमा छवि रिसाइज गर्नुहोस्"
 
-#: ui/kis_selection_manager.cc:363
+#: ui/kis_selection_manager.cc:367
 msgid "Cut"
 msgstr "काट्नुहोस्"
 
-#: ui/kis_selection_manager.cc:437
+#: ui/kis_selection_manager.cc:441
 msgid "(pasted)"
 msgstr "(टाँसियो)"
 
-#: ui/kis_selection_manager.cc:472
+#: ui/kis_selection_manager.cc:476
 #, fuzzy
 #| msgid "Pastels"
 msgid "Pasted"
 msgstr "रङ्गिन"
 
-#: ui/kis_selection_manager.cc:496
+#: ui/kis_selection_manager.cc:500
 msgid "Select All"
 msgstr "सबै चयन गर्नुहोस्"
 
@@ -15217,51 +15210,39 @@ msgstr ""
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:323
-msgid "Show Canvas Only"
-msgstr ""
-
-#: ui/kis_view2.cpp:324
-msgid "Return to Window"
-msgstr ""
-
-#: ui/kis_view2.cpp:325
-msgid "Shows just the canvas or the whole window"
-msgstr ""
-
-#: ui/kis_view2.cpp:452
+#: ui/kis_view2.cpp:453
 #, fuzzy
 #| msgid "&Paint Layer"
 msgid "Pasted Layer"
 msgstr "तह रङ्याउनुहोस्"
 
-#: ui/kis_view2.cpp:490
+#: ui/kis_view2.cpp:491
 #, fuzzy
 #| msgid "I&nsert Image as Layer..."
 msgid "Insert as New Layer"
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:492
 #, fuzzy
 #| msgid "I&nsert Image as Layer..."
 msgid "Insert as New Layers"
 msgstr "तहको रूपमा छवि घुसाउनुहोस्..."
 
-#: ui/kis_view2.cpp:493
+#: ui/kis_view2.cpp:494
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:494
+#: ui/kis_view2.cpp:495
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:710
+#: ui/kis_view2.cpp:711
 #, fuzzy
 #| msgid "Add New Palette..."
 msgid "Edit Palette..."
 msgstr "नयाँ रङदानी थप्नुहोस्..."
 
-#: ui/kis_view2.cpp:838 ui/kis_view2.cpp:841
+#: ui/kis_view2.cpp:839 ui/kis_view2.cpp:842
 #, fuzzy
 #| msgid "Palette"
 msgid "Edit Palette"
@@ -15467,6 +15448,16 @@ msgstr "रङस्थान"
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "खोल्नका लागि फाइल वा URL"
+
+#, fuzzy
+#~| msgid "Color Settings"
+#~ msgid "Canvas-only settings"
+#~ msgstr "रङ सेटिङ"
+
+#, fuzzy
+#~| msgid "Canvas color:"
+#~ msgid "Canvas-only"
+#~ msgstr "क्यानभास रङ:"
 
 #, fuzzy
 #~| msgid "Apply Profile"
