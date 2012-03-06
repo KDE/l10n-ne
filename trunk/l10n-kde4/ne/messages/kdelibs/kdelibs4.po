@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-23 04:49+0100\n"
+"POT-Creation-Date: 2012-03-06 06:36+0100\n"
 "PO-Revision-Date: 2007-11-05 15:41+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -8448,12 +8448,6 @@ msgstr ""
 msgid "Conflict With Registered Global Shortcut"
 msgstr "विश्वव्यापी सर्टकटसँग द्वन्द्व"
 
-#: kdeui/sonnet/configdialog.cpp:51
-#, fuzzy
-#| msgid "Send Confirmation"
-msgid "Spell Checking Configuration"
-msgstr "स्वीकृति पठाउनुहोस्"
-
 #: kdeui/sonnet/dialog.cpp:103 kdeui/sonnet/dialog.cpp:224
 #: kdeui/sonnet/dialog.cpp:445
 msgctxt "@title:window"
@@ -8489,6 +8483,12 @@ msgstr "हिज्जे परीक्षक"
 #| msgid "Spell Checker"
 msgid "Spell check complete."
 msgstr "हिज्जे परीक्षक"
+
+#: kdeui/sonnet/configdialog.cpp:51
+#, fuzzy
+#| msgid "Send Confirmation"
+msgid "Spell Checking Configuration"
+msgstr "स्वीकृति पठाउनुहोस्"
 
 #: kdeui/util/kcompletion.cpp:693
 msgid ""
@@ -10024,56 +10024,112 @@ msgstr "विभाजक, अनुच्छेद"
 msgid "Separator, Space"
 msgstr "विभाजक, खालीस्थान"
 
-#. i18n: Placeholder text in text edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter message").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#. i18n: Placeholder text in line edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter search pattern").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#: kdeui/widgets/ktextedit.cpp:79 kdeui/widgets/klineedit.cpp:87
+#: kdeui/widgets/ktoolbar.cpp:292
 #, fuzzy
-#| msgid "1"
-msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
-msgid "1"
-msgstr "1"
+#| msgid "Show help"
+msgctxt "@title:menu"
+msgid "Show Text"
+msgstr "मद्दत देखाउनुहोस्"
 
-#: kdeui/widgets/ktextedit.cpp:527
+#: kdeui/widgets/ktoolbar.cpp:295
 #, fuzzy
-#| msgid "&Break at Next Statement"
-msgid "Speak Text"
-msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
+#| msgid "Toolbar Menu"
+msgctxt "@title:menu"
+msgid "Toolbar Settings"
+msgstr "उपकरणपट्टी मेनु"
 
-#: kdeui/widgets/ktextedit.cpp:542
-msgid "Starting Jovie Text-to-Speech Service Failed"
-msgstr ""
+#: kdeui/widgets/ktoolbar.cpp:297
+msgid "Orientation"
+msgstr "अभिमुखिकरण"
 
-#: kdeui/widgets/ktextedit.cpp:631
-#, fuzzy, kde-format
-#| msgid "Suggestion List"
-msgid "No suggestions for %1"
-msgstr "सुझाव सूची"
+#: kdeui/widgets/ktoolbar.cpp:299
+msgctxt "toolbar position string"
+msgid "Top"
+msgstr "माथि"
 
-#: kdeui/widgets/ktextedit.cpp:642
+#: kdeui/widgets/ktoolbar.cpp:301
+msgctxt "toolbar position string"
+msgid "Left"
+msgstr "बायाँ"
+
+#: kdeui/widgets/ktoolbar.cpp:302
+msgctxt "toolbar position string"
+msgid "Right"
+msgstr "दायाँ"
+
+#: kdeui/widgets/ktoolbar.cpp:303
+msgctxt "toolbar position string"
+msgid "Bottom"
+msgstr "तल"
+
+#: kdeui/widgets/ktoolbar.cpp:311
+msgid "Text Position"
+msgstr "पाठ स्थिति"
+
+#: kdeui/widgets/ktoolbar.cpp:313
+msgid "Icons Only"
+msgstr "प्रतिमा मात्र"
+
+#: kdeui/widgets/ktoolbar.cpp:314
+msgid "Text Only"
+msgstr "पाठ मात्र"
+
+#: kdeui/widgets/ktoolbar.cpp:315
+msgid "Text Alongside Icons"
+msgstr "प्रतिमासँग पाठ"
+
+#: kdeui/widgets/ktoolbar.cpp:316
+msgid "Text Under Icons"
+msgstr "प्रतिमा तलको पाठ"
+
+#: kdeui/widgets/ktoolbar.cpp:324
+msgid "Icon Size"
+msgstr "प्रतिमा साइज"
+
+#: kdeui/widgets/ktoolbar.cpp:326
 #, fuzzy
-#| msgid "&Ignore"
-msgid "Ignore"
-msgstr "उपेक्षा गर्नुहोस्"
+#| msgid "Default"
+msgctxt "@item:inmenu Icon size"
+msgid "Default"
+msgstr "पूर्वनिर्धारित"
 
-#: kdeui/widgets/ktextedit.cpp:643
-#, fuzzy
-#| msgid "<< Add to Dictionary"
-msgid "Add to Dictionary"
-msgstr "<< शब्दकोशमा थप्नुहोस्"
+#: kdeui/widgets/ktoolbar.cpp:343 kdeui/widgets/ktoolbar.cpp:363
+#, kde-format
+msgid "Small (%1x%2)"
+msgstr "सानो (%1x%2)"
 
-#: kdeui/widgets/ktextedit.cpp:788
+#: kdeui/widgets/ktoolbar.cpp:345 kdeui/widgets/ktoolbar.cpp:365
+#, kde-format
+msgid "Medium (%1x%2)"
+msgstr "मध्यम (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:347 kdeui/widgets/ktoolbar.cpp:367
+#, kde-format
+msgid "Large (%1x%2)"
+msgstr "ठूलो (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:349 kdeui/widgets/ktoolbar.cpp:369
+#, kde-format
+msgid "Huge (%1x%2)"
+msgstr "धेरै ठूलो (%1x%2)"
+
+#: kdeui/widgets/ktoolbar.cpp:389
 #, fuzzy
-#| msgid "Nothing to Delete"
-msgid "Nothing to spell check."
-msgstr "मेट्नुपर्ने केही छैन"
+#| msgid "Lock Toolbars"
+msgid "Lock Toolbar Positions"
+msgstr "उपकरणपट्टी ताल्चा लगाउनुहोस्"
+
+#: kdeui/widgets/ktoolbar.cpp:1321
+#, kde-format
+msgctxt "@action:intoolbar Text label of toolbar button"
+msgid "%1"
+msgstr "%1"
+
+#: kdeui/widgets/ktoolbar.cpp:1322
+#, kde-format
+msgctxt "@info:tooltip Tooltip of toolbar button"
+msgid "%1"
+msgstr "%1"
 
 #: kdeui/widgets/kdatepicker.cpp:174
 #, kde-format
@@ -10278,6 +10334,23 @@ msgstr ""
 msgid "You are not allowed to save the configuration"
 msgstr "तपाईँ केडीई कन्फिगरेसन फेरि लोड गर्न चाहनुहुन्छ ?"
 
+#. i18n: Placeholder text in line edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter search pattern").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#. i18n: Placeholder text in text edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter message").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
+#, fuzzy
+#| msgid "1"
+msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
+msgid "1"
+msgstr "1"
+
 #: kdeui/widgets/klineedit.cpp:296
 #, fuzzy
 #| msgid "Clear text"
@@ -10352,6 +10425,40 @@ msgstr "घडिको दिशामा घुमाउनुहोस्"
 #: kdeui/widgets/kpixmapregionselectorwidget.cpp:205
 msgid "Rotate &Counterclockwise"
 msgstr "घडिको विपरित दिशामा घुमाउनुहोस्"
+
+#: kdeui/widgets/ktextedit.cpp:527
+#, fuzzy
+#| msgid "&Break at Next Statement"
+msgid "Speak Text"
+msgstr "पछिल्लो कथनमा विच्छेद गर्नुहोस्"
+
+#: kdeui/widgets/ktextedit.cpp:542
+msgid "Starting Jovie Text-to-Speech Service Failed"
+msgstr ""
+
+#: kdeui/widgets/ktextedit.cpp:631
+#, fuzzy, kde-format
+#| msgid "Suggestion List"
+msgid "No suggestions for %1"
+msgstr "सुझाव सूची"
+
+#: kdeui/widgets/ktextedit.cpp:642
+#, fuzzy
+#| msgid "&Ignore"
+msgid "Ignore"
+msgstr "उपेक्षा गर्नुहोस्"
+
+#: kdeui/widgets/ktextedit.cpp:643
+#, fuzzy
+#| msgid "<< Add to Dictionary"
+msgid "Add to Dictionary"
+msgstr "<< शब्दकोशमा थप्नुहोस्"
+
+#: kdeui/widgets/ktextedit.cpp:788
+#, fuzzy
+#| msgid "Nothing to Delete"
+msgid "Nothing to spell check."
+msgstr "मेट्नुपर्ने केही छैन"
 
 #: kdeui/widgets/krichtextwidget.cpp:232
 #, fuzzy
@@ -10590,113 +10697,6 @@ msgstr "स्क्रिप्ट खोल्नुहोस्"
 #| msgid "&Copy Text"
 msgid "&Copy Full Text"
 msgstr "पाठको प्रतिलिपि बनाउनुहोस्"
-
-#: kdeui/widgets/ktoolbar.cpp:292
-#, fuzzy
-#| msgid "Show help"
-msgctxt "@title:menu"
-msgid "Show Text"
-msgstr "मद्दत देखाउनुहोस्"
-
-#: kdeui/widgets/ktoolbar.cpp:295
-#, fuzzy
-#| msgid "Toolbar Menu"
-msgctxt "@title:menu"
-msgid "Toolbar Settings"
-msgstr "उपकरणपट्टी मेनु"
-
-#: kdeui/widgets/ktoolbar.cpp:297
-msgid "Orientation"
-msgstr "अभिमुखिकरण"
-
-#: kdeui/widgets/ktoolbar.cpp:299
-msgctxt "toolbar position string"
-msgid "Top"
-msgstr "माथि"
-
-#: kdeui/widgets/ktoolbar.cpp:301
-msgctxt "toolbar position string"
-msgid "Left"
-msgstr "बायाँ"
-
-#: kdeui/widgets/ktoolbar.cpp:302
-msgctxt "toolbar position string"
-msgid "Right"
-msgstr "दायाँ"
-
-#: kdeui/widgets/ktoolbar.cpp:303
-msgctxt "toolbar position string"
-msgid "Bottom"
-msgstr "तल"
-
-#: kdeui/widgets/ktoolbar.cpp:311
-msgid "Text Position"
-msgstr "पाठ स्थिति"
-
-#: kdeui/widgets/ktoolbar.cpp:313
-msgid "Icons Only"
-msgstr "प्रतिमा मात्र"
-
-#: kdeui/widgets/ktoolbar.cpp:314
-msgid "Text Only"
-msgstr "पाठ मात्र"
-
-#: kdeui/widgets/ktoolbar.cpp:315
-msgid "Text Alongside Icons"
-msgstr "प्रतिमासँग पाठ"
-
-#: kdeui/widgets/ktoolbar.cpp:316
-msgid "Text Under Icons"
-msgstr "प्रतिमा तलको पाठ"
-
-#: kdeui/widgets/ktoolbar.cpp:324
-msgid "Icon Size"
-msgstr "प्रतिमा साइज"
-
-#: kdeui/widgets/ktoolbar.cpp:326
-#, fuzzy
-#| msgid "Default"
-msgctxt "@item:inmenu Icon size"
-msgid "Default"
-msgstr "पूर्वनिर्धारित"
-
-#: kdeui/widgets/ktoolbar.cpp:343 kdeui/widgets/ktoolbar.cpp:363
-#, kde-format
-msgid "Small (%1x%2)"
-msgstr "सानो (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:345 kdeui/widgets/ktoolbar.cpp:365
-#, kde-format
-msgid "Medium (%1x%2)"
-msgstr "मध्यम (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:347 kdeui/widgets/ktoolbar.cpp:367
-#, kde-format
-msgid "Large (%1x%2)"
-msgstr "ठूलो (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:349 kdeui/widgets/ktoolbar.cpp:369
-#, kde-format
-msgid "Huge (%1x%2)"
-msgstr "धेरै ठूलो (%1x%2)"
-
-#: kdeui/widgets/ktoolbar.cpp:389
-#, fuzzy
-#| msgid "Lock Toolbars"
-msgid "Lock Toolbar Positions"
-msgstr "उपकरणपट्टी ताल्चा लगाउनुहोस्"
-
-#: kdeui/widgets/ktoolbar.cpp:1319
-#, kde-format
-msgctxt "@action:intoolbar Text label of toolbar button"
-msgid "%1"
-msgstr "%1"
-
-#: kdeui/widgets/ktoolbar.cpp:1320
-#, kde-format
-msgctxt "@info:tooltip Tooltip of toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: kdeui/widgets/ktimezonewidget.cpp:66
 #, fuzzy
@@ -12400,9 +12400,18 @@ msgstr ""
 "'%1' मा 'kdemain' फेला पार्न सकेन ।\n"
 "%2"
 
+#: kinit/klauncher_main.cpp:62
+msgid ""
+"klauncher: This program is not supposed to be started manually.\n"
+"klauncher: It is started automatically by kdeinit4.\n"
+msgstr ""
+"klauncher: यो कार्यक्रम म्यानुअलि सुरु नहुने मानिन्छ ।\n"
+"klauncher: यसलाई kdeinit4 द्वारा स्वचालित रूपमा सुरु गरिन्छ ।\n"
+
 #: kinit/klauncher.cpp:564
-#, kde-format
-msgid "KDEInit could not launch '%1'."
+#, fuzzy, kde-format
+#| msgid "KDEInit could not launch '%1'."
+msgid "KDEInit could not launch '%1'"
 msgstr "KDEInit ले '%1' सुरुआत गर्न सकेन ।"
 
 #: kinit/klauncher.cpp:745 kinit/klauncher.cpp:774 kinit/klauncher.cpp:789
@@ -12434,14 +12443,6 @@ msgstr "अज्ञात प्रोटोकल '%1' ।\n"
 #, kde-format
 msgid "Error loading '%1'.\n"
 msgstr "'%1' लोड गर्दा त्रुटि ।\n"
-
-#: kinit/klauncher_main.cpp:62
-msgid ""
-"klauncher: This program is not supposed to be started manually.\n"
-"klauncher: It is started automatically by kdeinit4.\n"
-msgstr ""
-"klauncher: यो कार्यक्रम म्यानुअलि सुरु नहुने मानिन्छ ।\n"
-"klauncher: यसलाई kdeinit4 द्वारा स्वचालित रूपमा सुरु गरिन्छ ।\n"
 
 #: kjs/object.cpp:554
 msgid "Evaluation error"
