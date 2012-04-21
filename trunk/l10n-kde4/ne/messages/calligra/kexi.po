@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-17 02:41+0200\n"
+"POT-Creation-Date: 2012-04-21 02:51+0200\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3412,20 +3412,6 @@ msgstr "अज्ञात त्रुटि ।"
 msgid "Could not compact database \"%1\"."
 msgstr "\"%1\" डाटाबेस सङ्कुचित पार्न सकेन ।"
 
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
-msgid "Compacting database"
-msgstr "डाटाबेस सङ्कुचन गर्दैछ।"
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
-#, kde-format
-msgid "Compacting database \"%1\"..."
-msgstr "\"%1\" डाटाबेस सङ्कुचन गरिँदैछ..."
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
-#, kde-format
-msgid "The database has been compacted. Current size decreased by %1% to %2."
-msgstr "डाटाबेस सङ्कुचन गरिएको छ । हालको साइज %1% द्वारा %2 मा घटेको छ ।"
-
 #: kexidb/drivers/sqlite/sqliteconnection.cpp:242
 #, kde-format
 msgid "Do you want to open file \"%1\" as read-only?"
@@ -3460,6 +3446,20 @@ msgid ""
 msgstr ""
 "फाइलको अनुमति र यसलाई पहिल्यै अन्य अनुप्रयोगद्वारा लक गरिएको वा खोलिएको छ कि जाँच "
 "गर्नुहोस् ।"
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
+msgid "Compacting database"
+msgstr "डाटाबेस सङ्कुचन गर्दैछ।"
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
+#, kde-format
+msgid "Compacting database \"%1\"..."
+msgstr "\"%1\" डाटाबेस सङ्कुचन गरिँदैछ..."
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
+#, kde-format
+msgid "The database has been compacted. Current size decreased by %1% to %2."
+msgstr "डाटाबेस सङ्कुचन गरिएको छ । हालको साइज %1% द्वारा %2 मा घटेको छ ।"
 
 #: kexidb/drivers/xbase/xbaseexport.cpp:263
 msgid "Data not set for migration"
@@ -3575,6 +3575,22 @@ msgstr "एक वा बढी \"%1\" तालिका वा उपनाम
 msgid "Unspecified error encountered"
 msgstr "निर्दिष्ट नगरिएको त्रुटि भेटियो"
 
+#: sqlscanner.l:98
+msgid "Invalid integer number"
+msgstr "अवैध इन्टिजर नम्बर"
+
+#: sqlscanner.l:98
+msgid "This integer number may be too large."
+msgstr "यो इन्टिजर नम्बर धेरै ठूलो हुन सक्दछ ।"
+
+#: sqlscanner.l:286
+msgid "Invalid identifier"
+msgstr "अवैध पहिचायक"
+
+#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
+msgid "Identifiers should start with a letter or '_' character"
+msgstr "पहिचायक अक्षर वा '_' क्यारक्टरसँग सुरु हुनु पर्दछ ।"
+
 #: kexidb/parser/parser_p.cpp:137
 msgid "identifier was expected"
 msgstr "पहिचायक अपेक्षित थियो"
@@ -3631,22 +3647,6 @@ msgstr "भण्डारण परिभाषित गर्न सकेन
 msgid "Could not define sorting - column name or alias \"%1\" does not exist"
 msgstr "भण्डारण परिभाषित गर्न सकेन - स्तम्भ नाम वा उपनाम \"%1\" अवस्थित छैन"
 
-#: sqlscanner.l:98
-msgid "Invalid integer number"
-msgstr "अवैध इन्टिजर नम्बर"
-
-#: sqlscanner.l:98
-msgid "This integer number may be too large."
-msgstr "यो इन्टिजर नम्बर धेरै ठूलो हुन सक्दछ ।"
-
-#: sqlscanner.l:286
-msgid "Invalid identifier"
-msgstr "अवैध पहिचायक"
-
-#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
-msgid "Identifiers should start with a letter or '_' character"
-msgstr "पहिचायक अक्षर वा '_' क्यारक्टरसँग सुरु हुनु पर्दछ ।"
-
 #: kexidb/simplecommandlineapp.cpp:81
 msgid "Database driver name"
 msgstr "डाटाबेस ड्राइभर नाम"
@@ -3675,6 +3675,154 @@ msgstr "स्रोतको स्थानीय सकेट फाइलन
 #, kde-format
 msgid "Enter password for %1: "
 msgstr " %1 का लागि पासवर्ड प्रविष्ट गर्नुहोस्: "
+
+#: kexidb/connectiondata.cpp:97
+msgid "file"
+msgstr "फाइल"
+
+#: kexidb/drivermanager.cpp:171
+msgid "Could not find any database drivers."
+msgstr "कुनै डाटाबेस ड्राइभर फेला पार्न सकेन ।"
+
+#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
+#, kde-format
+msgid "Could not find database driver \"%1\"."
+msgstr "\"%1\" डाटाबेस ड्राइभर फेला पार्न सकेन ।"
+
+#: kexidb/drivermanager.cpp:231
+#, kde-format
+msgid "Could not load database driver \"%1\"."
+msgstr "\"%1\" डाटाबेस ड्राइभर लोड गर्न सकेन ।"
+
+#: kexidb/drivermanager.cpp:374
+#, kde-format
+msgid "No such driver service: \"%1\"."
+msgstr "यस्तो ड्राइभर सेवा छैन: \"%1\"।"
+
+#: kexidb/utils.cpp:131
+msgid "Message from server:"
+msgstr "सर्भरबाट सन्देश:"
+
+#: kexidb/utils.cpp:133
+msgid "SQL statement:"
+msgstr "SQL कथन:"
+
+#: kexidb/utils.cpp:150 kexidb/utils.cpp:157
+#, fuzzy
+#| msgid "Server result name:"
+msgid "Server result:"
+msgstr "सर्भर परिणाम नाम:"
+
+#: kexidb/utils.cpp:394 kexidb/utils.cpp:457 kexidb/utils.cpp:462
+msgid "Test Connection"
+msgstr "परीक्षण जडान"
+
+#: kexidb/utils.cpp:395
+#, kde-format
+msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+msgstr "<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान...</qt>"
+
+#: kexidb/utils.cpp:456
+#, kde-format
+msgid ""
+"<qt>Test connection to <b>%1</b> database server failed. The server is not "
+"responding.</qt>"
+msgstr ""
+"<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान असफल । यो सर्भरले प्रतिक्रिया गरिरहेको "
+"छैन ।</qt>"
+
+#: kexidb/utils.cpp:460
+#, kde-format
+msgid ""
+"<qt>Test connection to <b>%1</b> database server established successfully.</"
+"qt>"
+msgstr ""
+"<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान सफलता पूर्वक स्थापना गरियो ।</qt>"
+
+#: kexidb/utils.cpp:1248
+msgid "Number"
+msgstr "नम्बर"
+
+#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:344
+#: widget/utils/kexicontextmenuutils.cpp:293
+msgid "Image"
+msgstr "छवि"
+
+#: kexidb/field.cpp:708
+msgid "Invalid Type"
+msgstr "अवैध प्रकार"
+
+#: kexidb/field.cpp:709
+msgid "Byte"
+msgstr "बाइट"
+
+#: kexidb/field.cpp:710
+msgid "Short Integer Number"
+msgstr "छोटो इन्टिजर नम्बर"
+
+#: kexidb/field.cpp:711 kexidb/field.cpp:741
+msgid "Integer Number"
+msgstr "इन्टिजर नम्बर"
+
+#: kexidb/field.cpp:712
+msgid "Big Integer Number"
+msgstr "ठूलो इन्टिजर नम्बर"
+
+#: kexidb/field.cpp:713
+msgid "Yes/No Value"
+msgstr "हो/होइन मान"
+
+#: kexidb/field.cpp:714
+msgid "Date"
+msgstr "मिति"
+
+#: kexidb/field.cpp:715
+msgid "Date and Time"
+msgstr "मिति र समय"
+
+#: kexidb/field.cpp:716
+msgid "Time"
+msgstr "समय"
+
+#: kexidb/field.cpp:717
+msgid "Single Precision Number"
+msgstr "एकल सूक्ष्म नम्बर"
+
+#: kexidb/field.cpp:718
+msgid "Double Precision Number"
+msgstr "दोहोरो सूक्ष्म नम्बर"
+
+#: kexidb/field.cpp:720
+msgid "Long Text"
+msgstr "लामो पाठ"
+
+#: kexidb/field.cpp:721 kexidb/field.cpp:745
+msgid "Object"
+msgstr "वस्तु"
+
+#: kexidb/field.cpp:739
+msgid "Invalid Group"
+msgstr "अवैध समूह"
+
+#: kexidb/field.cpp:742
+msgid "Floating Point Number"
+msgstr "उत्प्लवान बिन्दु नम्बर"
+
+#: kexidb/field.cpp:743
+msgid "Yes/No"
+msgstr "हो/होइन"
+
+#: kexidb/field.cpp:744
+msgid "Date/Time"
+msgstr "मिति/समय"
+
+#: kexidb/queryschema.cpp:266
+#, fuzzy
+#| msgctxt "short for 'expression' word (only latin letters, please)"
+#| msgid "expr"
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr "expr"
 
 #: kexidb/connection.cpp:114
 msgid "Invalid database contents. "
@@ -4034,154 +4182,6 @@ msgstr "यसले सम्पूर्ण मास्टर तालिक
 #| msgid "Row deletion on the server failed."
 msgid "Record deletion on the server failed."
 msgstr "सर्भरमा पङ्क्ति मेट्न असफल ।"
-
-#: kexidb/connectiondata.cpp:97
-msgid "file"
-msgstr "फाइल"
-
-#: kexidb/drivermanager.cpp:171
-msgid "Could not find any database drivers."
-msgstr "कुनै डाटाबेस ड्राइभर फेला पार्न सकेन ।"
-
-#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
-#, kde-format
-msgid "Could not find database driver \"%1\"."
-msgstr "\"%1\" डाटाबेस ड्राइभर फेला पार्न सकेन ।"
-
-#: kexidb/drivermanager.cpp:231
-#, kde-format
-msgid "Could not load database driver \"%1\"."
-msgstr "\"%1\" डाटाबेस ड्राइभर लोड गर्न सकेन ।"
-
-#: kexidb/drivermanager.cpp:374
-#, kde-format
-msgid "No such driver service: \"%1\"."
-msgstr "यस्तो ड्राइभर सेवा छैन: \"%1\"।"
-
-#: kexidb/utils.cpp:131
-msgid "Message from server:"
-msgstr "सर्भरबाट सन्देश:"
-
-#: kexidb/utils.cpp:133
-msgid "SQL statement:"
-msgstr "SQL कथन:"
-
-#: kexidb/utils.cpp:150 kexidb/utils.cpp:157
-#, fuzzy
-#| msgid "Server result name:"
-msgid "Server result:"
-msgstr "सर्भर परिणाम नाम:"
-
-#: kexidb/utils.cpp:394 kexidb/utils.cpp:457 kexidb/utils.cpp:462
-msgid "Test Connection"
-msgstr "परीक्षण जडान"
-
-#: kexidb/utils.cpp:395
-#, kde-format
-msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
-msgstr "<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान...</qt>"
-
-#: kexidb/utils.cpp:456
-#, kde-format
-msgid ""
-"<qt>Test connection to <b>%1</b> database server failed. The server is not "
-"responding.</qt>"
-msgstr ""
-"<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान असफल । यो सर्भरले प्रतिक्रिया गरिरहेको "
-"छैन ।</qt>"
-
-#: kexidb/utils.cpp:460
-#, kde-format
-msgid ""
-"<qt>Test connection to <b>%1</b> database server established successfully.</"
-"qt>"
-msgstr ""
-"<qt>डाटाबेस सर्भर <b>%1</b> मा परीक्षण जडान सफलता पूर्वक स्थापना गरियो ।</qt>"
-
-#: kexidb/utils.cpp:1248
-msgid "Number"
-msgstr "नम्बर"
-
-#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:344
-#: widget/utils/kexicontextmenuutils.cpp:293
-msgid "Image"
-msgstr "छवि"
-
-#: kexidb/field.cpp:708
-msgid "Invalid Type"
-msgstr "अवैध प्रकार"
-
-#: kexidb/field.cpp:709
-msgid "Byte"
-msgstr "बाइट"
-
-#: kexidb/field.cpp:710
-msgid "Short Integer Number"
-msgstr "छोटो इन्टिजर नम्बर"
-
-#: kexidb/field.cpp:711 kexidb/field.cpp:741
-msgid "Integer Number"
-msgstr "इन्टिजर नम्बर"
-
-#: kexidb/field.cpp:712
-msgid "Big Integer Number"
-msgstr "ठूलो इन्टिजर नम्बर"
-
-#: kexidb/field.cpp:713
-msgid "Yes/No Value"
-msgstr "हो/होइन मान"
-
-#: kexidb/field.cpp:714
-msgid "Date"
-msgstr "मिति"
-
-#: kexidb/field.cpp:715
-msgid "Date and Time"
-msgstr "मिति र समय"
-
-#: kexidb/field.cpp:716
-msgid "Time"
-msgstr "समय"
-
-#: kexidb/field.cpp:717
-msgid "Single Precision Number"
-msgstr "एकल सूक्ष्म नम्बर"
-
-#: kexidb/field.cpp:718
-msgid "Double Precision Number"
-msgstr "दोहोरो सूक्ष्म नम्बर"
-
-#: kexidb/field.cpp:720
-msgid "Long Text"
-msgstr "लामो पाठ"
-
-#: kexidb/field.cpp:721 kexidb/field.cpp:745
-msgid "Object"
-msgstr "वस्तु"
-
-#: kexidb/field.cpp:739
-msgid "Invalid Group"
-msgstr "अवैध समूह"
-
-#: kexidb/field.cpp:742
-msgid "Floating Point Number"
-msgstr "उत्प्लवान बिन्दु नम्बर"
-
-#: kexidb/field.cpp:743
-msgid "Yes/No"
-msgstr "हो/होइन"
-
-#: kexidb/field.cpp:744
-msgid "Date/Time"
-msgstr "मिति/समय"
-
-#: kexidb/queryschema.cpp:266
-#, fuzzy
-#| msgctxt "short for 'expression' word (only latin letters, please)"
-#| msgid "expr"
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
-msgstr "expr"
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
