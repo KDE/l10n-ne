@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-10 03:30+0200\n"
+"POT-Creation-Date: 2012-05-12 03:48+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1365,13 +1365,6 @@ msgstr "पुस्तकचिनो"
 msgid "Start typing to progressively filter the bookmarks"
 msgstr ""
 
-#: amarokurls/NavigationUrlRunner.cpp:132
-#, fuzzy
-#| msgid "Favorite"
-msgctxt "A type of command that affects the view in the browser category"
-msgid "Navigate"
-msgstr "मन पर्ने"
-
 #: amarokurls/BookmarkModel.cpp:86
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:415
 #, fuzzy
@@ -1448,6 +1441,42 @@ msgstr "जडान गर्नुहोस्"
 msgid "Bookmark Context View Applets"
 msgstr "यो कलाकारद्वारा ट्रयाक"
 
+#: amarokurls/PlayUrlGenerator.cpp:102
+#, fuzzy
+#| msgid "Bookmarks"
+msgid "Bookmark Track Position"
+msgstr "पुस्तकचिनो"
+
+#: amarokurls/BookmarkTreeView.cpp:112
+#, fuzzy
+#| msgid "&Load"
+msgctxt "Load the view represented by this bookmark"
+msgid "&Load"
+msgstr "लोड गर्नुहोस्"
+
+#: amarokurls/BookmarkTreeView.cpp:118 browsers/filebrowser/FileView.cpp:403
+msgid "&Delete"
+msgstr "मेट्नुहोस्"
+
+#: amarokurls/BookmarkTreeView.cpp:125
+msgid "&Create timecode track"
+msgstr ""
+
+#: amarokurls/BookmarkTreeView.cpp:376
+#, fuzzy
+#| msgid "Newest Tracks"
+msgid "New Timecode Track"
+msgstr "सबभन्दा नयाँ ट्रयाक"
+
+#: amarokurls/BookmarkTreeView.cpp:377 amarokurls/BookmarkTreeView.cpp:378
+#: amarokurls/BookmarkTreeView.cpp:379 context/applets/albums/AlbumItem.cpp:97
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:447
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:448
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:449
+#: core-impl/collections/audiocd/AudioCdCollection.cpp:450 MainWindow.cpp:1179
+msgid "Unknown"
+msgstr "अज्ञात"
+
 #: amarokurls/NavigationUrlGenerator.cpp:135 MainWindow.cpp:288
 msgid "Files"
 msgstr "फाइल"
@@ -1486,41 +1515,12 @@ msgstr "कलाकार"
 msgid "Bookmark Media Sources View"
 msgstr "पुस्तकचिनो"
 
-#: amarokurls/PlayUrlGenerator.cpp:102
+#: amarokurls/NavigationUrlRunner.cpp:132
 #, fuzzy
-#| msgid "Bookmarks"
-msgid "Bookmark Track Position"
-msgstr "पुस्तकचिनो"
-
-#: amarokurls/BookmarkTreeView.cpp:112
-#, fuzzy
-#| msgid "&Load"
-msgctxt "Load the view represented by this bookmark"
-msgid "&Load"
-msgstr "लोड गर्नुहोस्"
-
-#: amarokurls/BookmarkTreeView.cpp:118 browsers/filebrowser/FileView.cpp:403
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
-
-#: amarokurls/BookmarkTreeView.cpp:125
-msgid "&Create timecode track"
-msgstr ""
-
-#: amarokurls/BookmarkTreeView.cpp:376
-#, fuzzy
-#| msgid "Newest Tracks"
-msgid "New Timecode Track"
-msgstr "सबभन्दा नयाँ ट्रयाक"
-
-#: amarokurls/BookmarkTreeView.cpp:377 amarokurls/BookmarkTreeView.cpp:378
-#: amarokurls/BookmarkTreeView.cpp:379 context/applets/albums/AlbumItem.cpp:97
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:447
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:448
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:449
-#: core-impl/collections/audiocd/AudioCdCollection.cpp:450 MainWindow.cpp:1179
-msgid "Unknown"
-msgstr "अज्ञात"
+#| msgid "Favorite"
+msgctxt "A type of command that affects the view in the browser category"
+msgid "Navigate"
+msgstr "मन पर्ने"
 
 #: browsers/BrowserDock.cpp:36
 #, fuzzy
@@ -1534,11 +1534,107 @@ msgstr "स्रोतको फाइल विस्तार"
 msgid "Previous Browser"
 msgstr "अघिल्लो ट्रयाक"
 
+#: browsers/CollectionTreeItemModelBase.cpp:238
+#: browsers/CollectionTreeItemModelBase.cpp:291
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "The Name is not known"
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: browsers/CollectionTreeItemModelBase.cpp:316
+#: core-impl/collections/db/sql/SqlMeta.cpp:422
+#: core-impl/collections/ipodcollection/IpodMeta.cpp:96
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:155
+#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:703
+#: core-impl/collections/support/ArtistHelper.cpp:40
+#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:841
+#: dialogs/TrackOrganizer.cpp:48 widgets/AlbumBreadcrumbWidget.cpp:60
+msgid "Various Artists"
+msgstr "विभिन्न कलाकारहरू"
+
+#: browsers/CollectionTreeItemModelBase.cpp:978
+#, fuzzy
+#| msgid "Artist - Album"
+msgid "Year - Album"
+msgstr "कलाकार - एल्बम"
+
+#: browsers/CollectionTreeItemModelBase.cpp:978
+#: browsers/CollectionTreeView.cpp:224
+#: context/applets/albums/AlbumsView.cpp:255
+#: context/applets/wikipedia/WikipediaApplet.cpp:618
+#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
+#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:896
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: services/magnatune/MagnatuneStore.cpp:224
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Album"
+msgstr "एल्बम"
+
+#. i18n: file: context/applets/tabs/ReloadEditDialog.ui:73
+#. i18n: ectx: property (text), widget (QLabel, artistLabel)
+#: browsers/CollectionTreeItemModelBase.cpp:979
+#: context/applets/wikipedia/WikipediaApplet.cpp:612
+#: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
+#: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
+#: playlist/PlaylistModel.cpp:892 services/jamendo/JamendoInfoParser.cpp:51
+#: services/lastfm/LastFmService.cpp:507
+#: services/magnatune/MagnatuneStore.cpp:218
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+#: rc.cpp:1058
+msgid "Artist"
+msgstr "कलाकार"
+
+#. i18n: file: dialogs/FilenameLayoutDialog.ui:1049
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: browsers/CollectionTreeItemModelBase.cpp:980
+#: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
+#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:893
+#: rc.cpp:1899
+msgid "Album Artist"
+msgstr "एल्बम कलाकार"
+
+#: browsers/CollectionTreeItemModelBase.cpp:981
+#: core/meta/support/MetaConstants.cpp:176 dialogs/FilenameLayoutDialog.cpp:66
+#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:894
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Composer"
+msgstr "कम्पोजर"
+
+#: browsers/CollectionTreeItemModelBase.cpp:982
+#: core/meta/support/MetaConstants.cpp:175 dialogs/FilenameLayoutDialog.cpp:86
+#: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
+#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:900
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Genre"
+msgstr "विधा"
+
+#: browsers/CollectionTreeItemModelBase.cpp:983
+#: core/meta/support/MetaConstants.cpp:177 dialogs/FilenameLayoutDialog.cpp:70
+#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:895
+#: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
+#: widgets/SmartPlaylistEditor.cpp:921
+msgid "Year"
+msgstr "वर्ष"
+
+#: browsers/CollectionTreeItemModelBase.cpp:984
+#: core/meta/support/MetaConstants.cpp:201 widgets/SmartPlaylistEditor.cpp:187
+#: widgets/SmartPlaylistEditor.cpp:197
+msgid "Label"
+msgstr "लेबुल"
+
 #: browsers/InfoProxy.cpp:164 browsers/filebrowser/FileBrowser.cpp:379
 #, fuzzy
 #| msgid "Hostname:"
 msgid "Home"
 msgstr "होस्टनाम:"
+
+#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:167
+#, kde-format
+msgctxt "Example: 3.5 GB free (unit is part of %1)"
+msgid "%1 free"
+msgstr ""
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:146
 msgid ""
@@ -1546,53 +1642,53 @@ msgid ""
 "audio players and CDs."
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:176 MainWindow.cpp:862
+#: browsers/collectionbrowser/CollectionWidget.cpp:179 MainWindow.cpp:862
 #, fuzzy
 #| msgid "Local collection"
 msgid "Search collection"
 msgstr "स्थानीय सङ्कलन"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:181
+#: browsers/collectionbrowser/CollectionWidget.cpp:184
 #, fuzzy
 #| msgid "Play Count"
 msgctxt "@item:inlistbox Collection widget filter preset"
 msgid "Added This Hour"
 msgstr "प्ले गणना"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:183
+#: browsers/collectionbrowser/CollectionWidget.cpp:186
 #, fuzzy
 #| msgid "Add Podcast"
 msgctxt "@item:inlistbox Collection widget filter preset"
 msgid "Added Today"
 msgstr "पोडकास्ट थप्नुहोस्"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:185
+#: browsers/collectionbrowser/CollectionWidget.cpp:188
 #, fuzzy
 msgctxt "@item:inlistbox Collection widget filter preset"
 msgid "Added This Week"
 msgstr "१ हप्ता"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:187
+#: browsers/collectionbrowser/CollectionWidget.cpp:190
 #, fuzzy
 #| msgid "Play Count"
 msgctxt "@item:inlistbox Collection widget filter preset"
 msgid "Added This Month"
 msgstr "प्ले गणना"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:193
+#: browsers/collectionbrowser/CollectionWidget.cpp:196
 #: services/magnatune/MagnatuneStore.cpp:221
 #, fuzzy
 #| msgid "Artist - Album"
 msgid "Artist / Album"
 msgstr "कलाकार - एल्बम"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:197
+#: browsers/collectionbrowser/CollectionWidget.cpp:200
 #, fuzzy
 #| msgid "Album Artist"
 msgid "Album / Artist"
 msgstr "एल्बम कलाकार"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:201
+#: browsers/collectionbrowser/CollectionWidget.cpp:204
 #: services/jamendo/JamendoService.cpp:153
 #: services/magnatune/MagnatuneStore.cpp:227
 #, fuzzy
@@ -1600,7 +1696,7 @@ msgstr "एल्बम कलाकार"
 msgid "Genre / Artist"
 msgstr "कलाकार"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:205
+#: browsers/collectionbrowser/CollectionWidget.cpp:208
 #: services/jamendo/JamendoService.cpp:156
 #: services/magnatune/MagnatuneStore.cpp:230
 #, fuzzy
@@ -1608,65 +1704,59 @@ msgstr "कलाकार"
 msgid "Genre / Artist / Album"
 msgstr "कलाकार - एल्बम"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:212
+#: browsers/collectionbrowser/CollectionWidget.cpp:215
 #, fuzzy
 #| msgid "First Play"
 msgid "First Level"
 msgstr "पहिलो प्ले"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:213
+#: browsers/collectionbrowser/CollectionWidget.cpp:216
 #, fuzzy
 #| msgid "Seconds"
 msgid "Second Level"
 msgstr "सेकेन्ड"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:214
+#: browsers/collectionbrowser/CollectionWidget.cpp:217
 msgid "Third Level"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:223
+#: browsers/collectionbrowser/CollectionWidget.cpp:226
 #: dialogs/transferdialog.cpp:87
 #: playlist/navigators/NavigatorConfigAction.cpp:80
 msgid "None"
 msgstr "कुनै पनि होइन"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:266
+#: browsers/collectionbrowser/CollectionWidget.cpp:269
 #, fuzzy
 #| msgid "Show details"
 msgid "Show Years"
 msgstr "विवरणहरू देखाउनुहोस्"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:271
+#: browsers/collectionbrowser/CollectionWidget.cpp:274
 #, fuzzy
 #| msgid "Track Number"
 msgctxt "@action:inmenu"
 msgid "Show Track Numbers"
 msgstr "ट्रयाक नम्बर"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:276
+#: browsers/collectionbrowser/CollectionWidget.cpp:279
 #, fuzzy
 #| msgid "Show details"
 msgid "Show Cover Art"
 msgstr "विवरणहरू देखाउनुहोस्"
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:284
+#: browsers/collectionbrowser/CollectionWidget.cpp:287
 #: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:87
 msgid "Merged View"
 msgstr ""
 
-#: browsers/collectionbrowser/CollectionWidget.cpp:291
+#: browsers/collectionbrowser/CollectionWidget.cpp:294
 #: services/jamendo/JamendoService.cpp:159
 #: services/magnatune/MagnatuneStore.cpp:233
 #, fuzzy
 #| msgid "Options"
 msgid "Sort Options"
 msgstr "साधारण विकल्प"
-
-#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:167
-#, kde-format
-msgctxt "Example: 3.5 GB free (unit is part of %1)"
-msgid "%1 free"
-msgstr ""
 
 #: browsers/filebrowser/FileBrowser.cpp:66
 #, fuzzy
@@ -1694,13 +1784,13 @@ msgstr ""
 msgid "Places"
 msgstr "अद्यावधिक गर्नुहोस्"
 
-#: browsers/filebrowser/FileView.cpp:122 browsers/CollectionTreeView.cpp:276
+#: browsers/filebrowser/FileView.cpp:122 browsers/CollectionTreeView.cpp:275
 #, fuzzy
 #| msgid "&Move Files to Collection..."
 msgid "Move to Collection"
 msgstr "फाइलहरू सङ्कलनमा सार्नुहोस्..."
 
-#: browsers/filebrowser/FileView.cpp:131 browsers/CollectionTreeView.cpp:268
+#: browsers/filebrowser/FileView.cpp:131 browsers/CollectionTreeView.cpp:267
 #, fuzzy
 #| msgid "&Copy Files to Collection..."
 msgid "Copy to Collection"
@@ -1708,7 +1798,7 @@ msgstr "सङ्कलनमा फाइलहरू प्रतिलिप�
 
 #: browsers/filebrowser/FileView.cpp:362
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:49
-#: browsers/CollectionTreeView.cpp:881
+#: browsers/CollectionTreeView.cpp:880
 #: context/applets/albums/AlbumsView.cpp:240
 #: services/lastfm/LastFmTreeView.cpp:111
 #, fuzzy
@@ -1718,7 +1808,7 @@ msgstr "प्ले सूचीमा थप्नुहोस्"
 
 #: browsers/filebrowser/FileView.cpp:374
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:60
-#: browsers/CollectionTreeView.cpp:892
+#: browsers/CollectionTreeView.cpp:891
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:120
 #, fuzzy
@@ -1727,7 +1817,7 @@ msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "प्ले सूची दोहोर्याउनुहोस्"
 
-#: browsers/filebrowser/FileView.cpp:386 browsers/CollectionTreeView.cpp:970
+#: browsers/filebrowser/FileView.cpp:386 browsers/CollectionTreeView.cpp:969
 #, fuzzy
 #| msgid "Edit Track &Information..."
 #| msgid_plural "Edit &Information for %1 Tracks..."
@@ -2257,6 +2347,41 @@ msgid ""
 "sources, but many more can be added using scripts."
 msgstr ""
 
+#: browsers/CollectionTreeView.cpp:244
+msgid "Collection"
+msgstr "सङ्कलन"
+
+#: browsers/CollectionTreeView.cpp:587 services/lastfm/LastFmTreeView.cpp:201
+#, fuzzy
+#| msgid "&Configure..."
+msgid "More..."
+msgstr "कन्फिगर गर्नुहोस्..."
+
+#: browsers/CollectionTreeView.cpp:938
+#, fuzzy
+#| msgid "Organize Files"
+msgctxt "Organize Files"
+msgid "Organize Files"
+msgstr "फाइल सङ्गठित गर्नुहोस्"
+
+#: browsers/CollectionTreeView.cpp:1116
+#, fuzzy
+#| msgid "Moving files to trash"
+msgid "Move Tracks to Trash"
+msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
+
+#: browsers/CollectionTreeView.cpp:1124
+#, fuzzy
+#| msgid "Selected Tracks"
+msgid "Delete Tracks"
+msgstr "चयन गरिएको ट्रयाक"
+
+#: browsers/BrowserCategoryList.cpp:52
+#, fuzzy
+#| msgid "File Extension of Source"
+msgid "Filter Music Sources"
+msgstr "स्रोतको फाइल विस्तार"
+
 #: browsers/CollectionTreeItem.cpp:140
 #, fuzzy
 #| msgid "Labels"
@@ -2279,131 +2404,6 @@ msgid "1 track"
 msgid_plural "%1 tracks"
 msgstr[0] "१ ट्रयाक"
 msgstr[1] "१ ट्रयाक"
-
-#: browsers/CollectionTreeView.cpp:225
-#: browsers/CollectionTreeItemModelBase.cpp:981
-#: context/applets/albums/AlbumsView.cpp:255
-#: context/applets/wikipedia/WikipediaApplet.cpp:618
-#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
-#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:896
-#: services/jamendo/JamendoInfoParser.cpp:83
-#: services/magnatune/MagnatuneStore.cpp:224
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Album"
-msgstr "एल्बम"
-
-#: browsers/CollectionTreeView.cpp:245
-msgid "Collection"
-msgstr "सङ्कलन"
-
-#: browsers/CollectionTreeView.cpp:588 services/lastfm/LastFmTreeView.cpp:201
-#, fuzzy
-#| msgid "&Configure..."
-msgid "More..."
-msgstr "कन्फिगर गर्नुहोस्..."
-
-#: browsers/CollectionTreeView.cpp:939
-#, fuzzy
-#| msgid "Organize Files"
-msgctxt "Organize Files"
-msgid "Organize Files"
-msgstr "फाइल सङ्गठित गर्नुहोस्"
-
-#: browsers/CollectionTreeView.cpp:1117
-#, fuzzy
-#| msgid "Moving files to trash"
-msgid "Move Tracks to Trash"
-msgstr "रद्दीटोकरीमा फाइलहरू सार्दै"
-
-#: browsers/CollectionTreeView.cpp:1125
-#, fuzzy
-#| msgid "Selected Tracks"
-msgid "Delete Tracks"
-msgstr "चयन गरिएको ट्रयाक"
-
-#: browsers/BrowserCategoryList.cpp:52
-#, fuzzy
-#| msgid "File Extension of Source"
-msgid "Filter Music Sources"
-msgstr "स्रोतको फाइल विस्तार"
-
-#: browsers/CollectionTreeItemModelBase.cpp:238
-#: browsers/CollectionTreeItemModelBase.cpp:291
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "The Name is not known"
-msgid "Unknown"
-msgstr "अज्ञात"
-
-#: browsers/CollectionTreeItemModelBase.cpp:316
-#: core-impl/collections/db/sql/SqlMeta.cpp:422
-#: core-impl/collections/ipodcollection/IpodMeta.cpp:96
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:155
-#: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:703
-#: core-impl/collections/support/ArtistHelper.cpp:40
-#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:841
-#: dialogs/TrackOrganizer.cpp:48 widgets/AlbumBreadcrumbWidget.cpp:60
-msgid "Various Artists"
-msgstr "विभिन्न कलाकारहरू"
-
-#: browsers/CollectionTreeItemModelBase.cpp:981
-#, fuzzy
-#| msgid "Artist - Album"
-msgid "Year - Album"
-msgstr "कलाकार - एल्बम"
-
-#. i18n: file: context/applets/tabs/ReloadEditDialog.ui:73
-#. i18n: ectx: property (text), widget (QLabel, artistLabel)
-#: browsers/CollectionTreeItemModelBase.cpp:982
-#: context/applets/wikipedia/WikipediaApplet.cpp:612
-#: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
-#: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
-#: playlist/PlaylistModel.cpp:892 services/jamendo/JamendoInfoParser.cpp:51
-#: services/lastfm/LastFmService.cpp:507
-#: services/magnatune/MagnatuneStore.cpp:218
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-#: rc.cpp:1058
-msgid "Artist"
-msgstr "कलाकार"
-
-#. i18n: file: dialogs/FilenameLayoutDialog.ui:1049
-#. i18n: ectx: property (text), widget (QLabel, label_13)
-#: browsers/CollectionTreeItemModelBase.cpp:983
-#: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
-#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:893
-#: rc.cpp:1899
-msgid "Album Artist"
-msgstr "एल्बम कलाकार"
-
-#: browsers/CollectionTreeItemModelBase.cpp:984
-#: core/meta/support/MetaConstants.cpp:176 dialogs/FilenameLayoutDialog.cpp:66
-#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:894
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Composer"
-msgstr "कम्पोजर"
-
-#: browsers/CollectionTreeItemModelBase.cpp:985
-#: core/meta/support/MetaConstants.cpp:175 dialogs/FilenameLayoutDialog.cpp:86
-#: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
-#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:900
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Genre"
-msgstr "विधा"
-
-#: browsers/CollectionTreeItemModelBase.cpp:986
-#: core/meta/support/MetaConstants.cpp:177 dialogs/FilenameLayoutDialog.cpp:70
-#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:895
-#: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
-#: widgets/SmartPlaylistEditor.cpp:921
-msgid "Year"
-msgstr "वर्ष"
-
-#: browsers/CollectionTreeItemModelBase.cpp:987
-#: core/meta/support/MetaConstants.cpp:201 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:197
-msgid "Label"
-msgstr "लेबुल"
 
 #: browsers/BrowserBreadcrumbItem.cpp:68
 #, fuzzy
@@ -9904,6 +9904,12 @@ msgstr "लगइन र पासवर्ड प्रविष्ट गर�
 msgid "Authentication Error"
 msgstr "प्रमाणीकरण असफलता"
 
+#: services/ampache/AmpacheServiceCollection.cpp:59
+#, fuzzy, kde-format
+#| msgid "Advanced Server"
+msgid "Ampache Server %1"
+msgstr "उन्नत सर्भर"
+
 #: services/ampache/AmpacheService.cpp:100
 #, fuzzy
 #| msgid "Add new preset"
@@ -9915,12 +9921,6 @@ msgid ""
 "Use Amarok as a seamless frontend to your Ampache server. This lets you "
 "browse and play all the Ampache contents from within Amarok."
 msgstr ""
-
-#: services/ampache/AmpacheServiceCollection.cpp:59
-#, fuzzy, kde-format
-#| msgid "Advanced Server"
-msgid "Ampache Server %1"
-msgstr "उन्नत सर्भर"
 
 #: services/jamendo/JamendoInfoParser.cpp:46
 #: services/jamendo/JamendoInfoParser.cpp:77
@@ -9951,43 +9951,6 @@ msgstr "मिडिया डाउनलोड गर्नुहोस्"
 #: services/jamendo/JamendoMeta.cpp:172
 msgid "A site where artists can freely share their music"
 msgstr ""
-
-#: services/jamendo/JamendoService.cpp:80
-msgid "A archive of free, Creative Commons licensed music"
-msgstr ""
-
-#: services/jamendo/JamendoService.cpp:83
-msgid ""
-"Jamendo.com puts artists and music lovers in touch with each other. The site "
-"allows artists to upload their own albums to share them with the world and "
-"users to download all of them for free. Listen to and download all Jamendo."
-"com contents from within Amarok."
-msgstr ""
-
-#: services/jamendo/JamendoService.cpp:119
-#, fuzzy
-#| msgid "Update"
-msgctxt "Fetch new information from the website"
-msgid "Update"
-msgstr "अद्यावधिक गर्नुहोस्"
-
-#. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
-#. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: services/jamendo/JamendoService.cpp:125 rc.cpp:2461
-msgid "Download"
-msgstr "डाउनलोड गर्नुहोस्"
-
-#: services/jamendo/JamendoService.cpp:189
-#, fuzzy
-#| msgid "Downloading Jamendo.com Database"
-msgid "Downloading Jamendo.com database..."
-msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
-
-#: services/jamendo/JamendoService.cpp:211
-#, fuzzy
-#| msgid "Updating database"
-msgid "Updating the local Jamendo database."
-msgstr "डाटाबेस अद्यावधिक गर्दै"
 
 #: services/jamendo/JamendoXmlParser.cpp:153
 #, fuzzy, kde-format
@@ -10026,6 +9989,43 @@ msgid "1 artist."
 msgid_plural "%1 artists."
 msgstr[0] "कलाकार"
 msgstr[1] "कलाकार"
+
+#: services/jamendo/JamendoService.cpp:80
+msgid "A archive of free, Creative Commons licensed music"
+msgstr ""
+
+#: services/jamendo/JamendoService.cpp:83
+msgid ""
+"Jamendo.com puts artists and music lovers in touch with each other. The site "
+"allows artists to upload their own albums to share them with the world and "
+"users to download all of them for free. Listen to and download all Jamendo."
+"com contents from within Amarok."
+msgstr ""
+
+#: services/jamendo/JamendoService.cpp:119
+#, fuzzy
+#| msgid "Update"
+msgctxt "Fetch new information from the website"
+msgid "Update"
+msgstr "अद्यावधिक गर्नुहोस्"
+
+#. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
+#. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
+#: services/jamendo/JamendoService.cpp:125 rc.cpp:2461
+msgid "Download"
+msgstr "डाउनलोड गर्नुहोस्"
+
+#: services/jamendo/JamendoService.cpp:189
+#, fuzzy
+#| msgid "Downloading Jamendo.com Database"
+msgid "Downloading Jamendo.com database..."
+msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: services/jamendo/JamendoService.cpp:211
+#, fuzzy
+#| msgid "Updating database"
+msgid "Updating the local Jamendo database."
+msgstr "डाटाबेस अद्यावधिक गर्दै"
 
 #: services/lastfm/LoveTrackAction.cpp:25
 #: services/lastfm/LastFmService.cpp:284
@@ -10606,6 +10606,81 @@ msgstr ""
 msgid "Could not process download"
 msgstr "एल्बम पुन-डाउनलोड गर्न सकेन"
 
+#: services/magnatune/MagnatuneInfoParser.cpp:32
+#, fuzzy
+#| msgid "Fetching artist info..."
+msgid "Loading artist info..."
+msgstr "कलाकार सूचना तान्दै..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:44
+#, fuzzy, kde-format
+#| msgid "Fetching Artist Info"
+msgid "Fetching %1 Artist Info"
+msgstr "कलाकार सूचना तान्दै"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:53
+#, fuzzy
+#| msgid "Loading Thumbnails..."
+msgid "Loading album info..."
+msgstr "थम्बनेलहरू लोड हुँदैछ..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:75
+#, kde-format
+msgid "Release Year: %1"
+msgstr ""
+
+#: services/magnatune/MagnatuneInfoParser.cpp:80
+#, fuzzy
+#| msgid "Description"
+msgid "Description:"
+msgstr "वर्णन"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:84
+#, fuzzy
+#| msgid "Purchase Album from Magnatune.com"
+msgid "From Magnatune.com"
+msgstr "magnatune.com बाट एल्बम खरीद गर्नुहोस्"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:166
+#, fuzzy
+#| msgid "Downloading Magnatune.com Database"
+msgid "Loading Magnatune.com frontpage..."
+msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:169
+#, fuzzy
+#| msgid "Downloading Magnatune.com Database"
+msgid "Fetching Magnatune.com front page"
+msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:182
+#: services/magnatune/MagnatuneInfoParser.cpp:198
+#, fuzzy
+#| msgid "Downloading Magnatune.com Database"
+msgid "Loading your Magnatune.com favorites page..."
+msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:211
+#: services/magnatune/MagnatuneInfoParser.cpp:227
+#, fuzzy
+#| msgid "Downloading Magnatune.com Database"
+msgid "Loading your personal Magnatune.com recommendations page..."
+msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
+
+#: services/magnatune/MagnatuneCollectionLocation.cpp:39
+#, fuzzy
+#| msgid "Previous Track"
+msgid "Preview Tracks"
+msgstr "अघिल्लो ट्रयाक"
+
+#: services/magnatune/MagnatuneCollectionLocation.cpp:42
+msgid ""
+"The tracks you are about to copy are Magnatune.com preview streams. For "
+"better quality and advert free streams, consider buying an album download. "
+"Remember that when buying from Magnatune the artist gets 50%. Also if you "
+"buy using Amarok, you support the Amarok project with 10%."
+msgstr ""
+
 #: services/magnatune/MagnatuneStore.cpp:106
 msgid "\"Fair trade\" online music store"
 msgstr ""
@@ -10692,81 +10767,6 @@ msgstr ""
 msgid "ERROR: Unknown argument."
 msgstr ""
 
-#: services/magnatune/MagnatuneInfoParser.cpp:32
-#, fuzzy
-#| msgid "Fetching artist info..."
-msgid "Loading artist info..."
-msgstr "कलाकार सूचना तान्दै..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:44
-#, fuzzy, kde-format
-#| msgid "Fetching Artist Info"
-msgid "Fetching %1 Artist Info"
-msgstr "कलाकार सूचना तान्दै"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:53
-#, fuzzy
-#| msgid "Loading Thumbnails..."
-msgid "Loading album info..."
-msgstr "थम्बनेलहरू लोड हुँदैछ..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:75
-#, kde-format
-msgid "Release Year: %1"
-msgstr ""
-
-#: services/magnatune/MagnatuneInfoParser.cpp:80
-#, fuzzy
-#| msgid "Description"
-msgid "Description:"
-msgstr "वर्णन"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:84
-#, fuzzy
-#| msgid "Purchase Album from Magnatune.com"
-msgid "From Magnatune.com"
-msgstr "magnatune.com बाट एल्बम खरीद गर्नुहोस्"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:166
-#, fuzzy
-#| msgid "Downloading Magnatune.com Database"
-msgid "Loading Magnatune.com frontpage..."
-msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:169
-#, fuzzy
-#| msgid "Downloading Magnatune.com Database"
-msgid "Fetching Magnatune.com front page"
-msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:182
-#: services/magnatune/MagnatuneInfoParser.cpp:198
-#, fuzzy
-#| msgid "Downloading Magnatune.com Database"
-msgid "Loading your Magnatune.com favorites page..."
-msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:211
-#: services/magnatune/MagnatuneInfoParser.cpp:227
-#, fuzzy
-#| msgid "Downloading Magnatune.com Database"
-msgid "Loading your personal Magnatune.com recommendations page..."
-msgstr "Magnatune.com डाटाबेस डाउनलोड गर्दै"
-
-#: services/magnatune/MagnatuneCollectionLocation.cpp:39
-#, fuzzy
-#| msgid "Previous Track"
-msgid "Preview Tracks"
-msgstr "अघिल्लो ट्रयाक"
-
-#: services/magnatune/MagnatuneCollectionLocation.cpp:42
-msgid ""
-"The tracks you are about to copy are Magnatune.com preview streams. For "
-"better quality and advert free streams, consider buying an album download. "
-"Remember that when buying from Magnatune the artist gets 50%. Also if you "
-"buy using Amarok, you support the Amarok project with 10%."
-msgstr ""
-
 #: services/mp3tunes/Mp3tunesMeta.cpp:45
 msgid ""
 "Online music locker where you can safely store and access your music: http://"
@@ -10827,6 +10827,27 @@ msgstr ""
 msgid "The pin to be used for authentication."
 msgstr "मिडिया यन्त्र जडानका लागि प्रयोग गरिएको माउन्ट बिन्दु ।"
 
+#: services/mp3tunes/Mp3tunesWorkers.cpp:240
+msgid "Upload to MP3tunes Initiated"
+msgstr ""
+
+#: services/mp3tunes/Mp3tunesWorkers.cpp:264
+#, fuzzy, kde-format
+#| msgid "Upcoming tracks:"
+msgid "Uploading Track %1/%2"
+msgstr "आगामी ट्रयाकहरू:"
+
+#: services/mp3tunes/Mp3tunesServiceCollection.cpp:53
+#: services/mp3tunes/Mp3tunesServiceCollectionLocation.cpp:43
+msgid "MP3tunes Locker"
+msgstr ""
+
+#: services/mp3tunes/Mp3tunesServiceCollectionLocation.cpp:77
+msgid ""
+"Only the following types of tracks can be uploaded to MP3tunes: mp3, mp4, "
+"m4a, m4p, aac, wma, and ogg. "
+msgstr ""
+
 #: services/mp3tunes/Mp3tunesService.cpp:113
 msgid "The MP3tunes Locker: Your Music Everywhere!"
 msgstr ""
@@ -10879,27 +10900,6 @@ msgid ""
 "MP3tunes Harmony Error\n"
 "%1"
 msgstr "प्रोक्सी उत्पत्ति जडान विच्छेद गरियो"
-
-#: services/mp3tunes/Mp3tunesWorkers.cpp:240
-msgid "Upload to MP3tunes Initiated"
-msgstr ""
-
-#: services/mp3tunes/Mp3tunesWorkers.cpp:264
-#, fuzzy, kde-format
-#| msgid "Upcoming tracks:"
-msgid "Uploading Track %1/%2"
-msgstr "आगामी ट्रयाकहरू:"
-
-#: services/mp3tunes/Mp3tunesServiceCollection.cpp:53
-#: services/mp3tunes/Mp3tunesServiceCollectionLocation.cpp:43
-msgid "MP3tunes Locker"
-msgstr ""
-
-#: services/mp3tunes/Mp3tunesServiceCollectionLocation.cpp:77
-msgid ""
-"Only the following types of tracks can be uploaded to MP3tunes: mp3, mp4, "
-"m4a, m4p, aac, wma, and ogg. "
-msgstr ""
 
 #: services/opmldirectory/OpmlDirectoryService.cpp:53
 #, fuzzy
@@ -11020,24 +11020,6 @@ msgstr ""
 msgid "No service named %1 is currently loaded"
 msgstr ""
 
-#. i18n: file: playlist/layouts/PlaylistLayoutEditDialog.ui:312
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: services/ServiceBase.cpp:147 rc.cpp:2030
-msgid "Group By"
-msgstr ""
-
-#: services/ServiceBase.cpp:311
-msgid "This service does not accept any messages"
-msgstr ""
-
-#: services/ServiceBase.cpp:318
-msgid "ERROR: unknown message"
-msgstr ""
-
-#: services/amazon/AmazonMeta.cpp:139
-msgid "Snippet taken from the Amazon MP3 store"
-msgstr ""
-
 #: services/amazon/AmazonUrlRunner.cpp:41
 #, fuzzy
 #| msgid "Amazing"
@@ -11053,41 +11035,39 @@ msgstr "आश्चर्यजनक"
 msgid "Remove from Cart"
 msgstr "प्ले सूचीबाट हटाउनुहोस्"
 
-#: services/amazon/AmazonShoppingCartDialog.cpp:34
-#: services/amazon/AmazonShoppingCartDialog.cpp:59
-#, kde-format
-msgid "Shopping cart value: %1"
-msgstr ""
-
-#: services/amazon/AmazonItemTreeView.cpp:278
+#: services/amazon/AmazonItemTreeView.cpp:277
 #, fuzzy
 #| msgid "Add to Playlist"
 msgid "Add to Cart"
 msgstr "प्ले सूचीमा थप्नुहोस्"
 
-#: services/amazon/AmazonItemTreeView.cpp:287
+#: services/amazon/AmazonItemTreeView.cpp:286
 #, fuzzy
 #| msgid "Add to Playlist"
 msgid "Add Preview to Playlist"
 msgstr "प्ले सूचीमा थप्नुहोस्"
 
-#: services/amazon/AmazonItemTreeView.cpp:296
+#: services/amazon/AmazonItemTreeView.cpp:295
 #, fuzzy
 #| msgid "Loading Thumbnails..."
 msgid "Load Details..."
 msgstr "थम्बनेलहरू लोड हुँदैछ..."
 
-#: services/amazon/AmazonItemTreeView.cpp:305
+#: services/amazon/AmazonItemTreeView.cpp:304
 #, fuzzy
 #| msgid "<b>%1</b> by <b>%2</b>"
 msgid "Direct Checkout"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: services/amazon/AmazonItemTreeView.cpp:314
+#: services/amazon/AmazonItemTreeView.cpp:313
 #, fuzzy
 #| msgid "&Search"
 msgid "Search for Album..."
 msgstr "खोजी गर्नुहोस्"
+
+#: services/amazon/AmazonMeta.cpp:137
+msgid "Snippet taken from the Amazon MP3 store"
+msgstr ""
 
 #: services/amazon/AmazonStore.cpp:101
 msgid "Access the Amazon MP3 Store directly from Amarok"
@@ -11177,6 +11157,12 @@ msgstr "विकिपेडिया जानकारी"
 msgid "Error: Unable to parse temporary file. :-("
 msgstr "विकिपेडिया जानकारी"
 
+#: services/amazon/AmazonShoppingCartDialog.cpp:34
+#: services/amazon/AmazonShoppingCartDialog.cpp:59
+#, kde-format
+msgid "Shopping cart value: %1"
+msgstr ""
+
 #: services/amazon/AmazonItemTreeModel.cpp:108
 #: services/amazon/AmazonItemTreeModel.cpp:129
 #, fuzzy
@@ -11206,6 +11192,20 @@ msgstr "ट्रयाक:"
 
 #: services/amazon/AmazonItemTreeModel.cpp:171
 msgid "Price"
+msgstr ""
+
+#. i18n: file: playlist/layouts/PlaylistLayoutEditDialog.ui:312
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: services/ServiceBase.cpp:147 rc.cpp:2030
+msgid "Group By"
+msgstr ""
+
+#: services/ServiceBase.cpp:311
+msgid "This service does not accept any messages"
+msgstr ""
+
+#: services/ServiceBase.cpp:318
+msgid "ERROR: unknown message"
 msgstr ""
 
 #: statusbar/CompoundProgressBar.cpp:63 statusbar/CompoundProgressBar.cpp:186
@@ -11380,36 +11380,6 @@ msgstr "प्ले गर्नुहोस्"
 #| msgid "Paused"
 msgid "Pause"
 msgstr "पज गरियो"
-
-#: widgets/TrackSelectWidget.cpp:67
-#, fuzzy, kde-format
-#| msgid "<b>%1</b> by <b>%2</b>"
-msgid "Checkpoint: <b>%1</b>"
-msgstr "<b>%2</b> द्वारा <b>%1</b>"
-
-#: widgets/TrackSelectWidget.cpp:87
-#, fuzzy, kde-format
-#| msgid "Track %1"
-msgid "Track: %1"
-msgstr "ट्रयाक %1"
-
-#: widgets/TrackSelectWidget.cpp:89
-#, fuzzy, kde-format
-#| msgid "Albums By %1"
-msgid "Album: %1"
-msgstr "%1 को एल्बम"
-
-#: widgets/TrackSelectWidget.cpp:91
-#, fuzzy, kde-format
-#| msgid "Artist"
-msgid "Artist: %1"
-msgstr "कलाकार"
-
-#: widgets/TrackSelectWidget.cpp:95
-#, fuzzy
-#| msgid "Retry"
-msgid "empty"
-msgstr "पुन: प्रयास गर्नुहोस्"
 
 #: widgets/SliderWidget.cpp:244
 msgid "Volume"
@@ -11854,6 +11824,36 @@ msgstr "रोक्नुहोस्"
 #: widgets/Osd.cpp:750
 msgid "Paused"
 msgstr "पज गरियो"
+
+#: widgets/TrackSelectWidget.cpp:70
+#, fuzzy, kde-format
+#| msgid "<b>%1</b> by <b>%2</b>"
+msgid "Checkpoint: <b>%1</b>"
+msgstr "<b>%2</b> द्वारा <b>%1</b>"
+
+#: widgets/TrackSelectWidget.cpp:90
+#, fuzzy, kde-format
+#| msgid "Track %1"
+msgid "Track: %1"
+msgstr "ट्रयाक %1"
+
+#: widgets/TrackSelectWidget.cpp:92
+#, fuzzy, kde-format
+#| msgid "Albums By %1"
+msgid "Album: %1"
+msgstr "%1 को एल्बम"
+
+#: widgets/TrackSelectWidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "Artist"
+msgid "Artist: %1"
+msgstr "कलाकार"
+
+#: widgets/TrackSelectWidget.cpp:98
+#, fuzzy
+#| msgid "Retry"
+msgid "empty"
+msgstr "पुन: प्रयास गर्नुहोस्"
 
 #: PluginManager.cpp:256
 #, fuzzy
