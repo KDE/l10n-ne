@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-11 04:20+0200\n"
+"POT-Creation-Date: 2012-07-12 03:48+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1917,7 +1917,7 @@ msgstr "नयाँ प्रिसेट नाम प्रविष्ट �
 
 #: browsers/playlistbrowser/PlaylistsInFoldersProxy.cpp:333
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:254
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:140
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:156
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:98
 #, fuzzy
 #| msgid "Configure Playback"
@@ -3494,7 +3494,7 @@ msgid ""
 msgstr ""
 
 #: context/engines/current/CurrentEngine.cpp:136 mac/GrowlInterface.cpp:43
-#: widgets/Osd.cpp:651 EngineController.cpp:1462
+#: widgets/Osd.cpp:651 EngineController.cpp:1466
 msgid "No track playing"
 msgstr "कुनै ट्रयाक प्ले भएको छैन"
 
@@ -4170,10 +4170,6 @@ msgid ""
 "the Saved Playlists tab."
 msgstr ""
 
-#: core-impl/collections/ipodcollection/support/IphoneMountPoint.cpp:56
-msgid "Connecting to iPhone, iPad or iPod touch failed."
-msgstr ""
-
 #: core-impl/collections/ipodcollection/support/IpodDeviceHelper.cpp:45
 msgid "Cannot parse iTunes database due to an unreported error."
 msgstr ""
@@ -4315,6 +4311,10 @@ msgstr ""
 msgid "Cannot initialize iPod due to an unreported error."
 msgstr ""
 
+#: core-impl/collections/ipodcollection/support/IphoneMountPoint.cpp:56
+msgid "Connecting to iPhone, iPad or iPod touch failed."
+msgstr ""
+
 #: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:322
 #, kde-format
 msgid ""
@@ -4391,7 +4391,7 @@ msgstr "सङ्कलन"
 
 #: core-impl/collections/ipodcollection/IpodMeta.cpp:203
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:95
-#: EngineController.cpp:1441
+#: EngineController.cpp:1445
 msgid "Unknown track"
 msgstr "अज्ञात ट्रयाक"
 
@@ -4799,19 +4799,19 @@ msgstr "अज्ञात"
 msgid "Stream (%1)"
 msgstr "प्रवाह"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:34
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:41
 #, fuzzy
 #| msgid "&Delete"
 msgid "&Delete..."
 msgstr "मेट्नुहोस्"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:42
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:49
 #, fuzzy
 #| msgid "&Rename"
 msgid "&Rename..."
 msgstr "पुन: नामकरण गर्नुहोस्"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:114
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:130
 #, fuzzy, kde-format
 #| msgid "Re&move From Playlist"
 msgctxt "Number of playlists is >= 2"
@@ -4820,7 +4820,7 @@ msgid_plural "Remove %1 tracks from %2 playlists"
 msgstr[0] "प्लेसूचीबाट हटाउनुहोस्"
 msgstr[1] "प्लेसूचीबाट हटाउनुहोस्"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:120
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:136
 #, fuzzy, kde-format
 msgctxt "%2 is saved playlist name"
 msgid "Remove a track from %2"
@@ -4828,7 +4828,7 @@ msgid_plural "Remove %1 tracks from %2"
 msgstr[0] "आइपोडबाट ट्र्याक मेट्नुहोस्"
 msgstr[1] "आइपोडबाट ट्र्याक मेट्नुहोस्"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:142
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:158
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:100
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to overwrite this cover?"
@@ -4837,7 +4837,7 @@ msgid_plural "Are you sure you want to delete these %1 playlists?"
 msgstr[0] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 msgstr[1] "तपाईँ यो आवरण अधिलेखन गर्न निश्चित चाहनुहुन्छ ?"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:149
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:165
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:107
 #, fuzzy, kde-format
 #| msgid "Delete from device"
@@ -5146,6 +5146,80 @@ msgid "Transcoding and copying one track to %2"
 msgid_plural "Transcoding and copying %1 tracks to %2"
 msgstr[0] "ट्रान्सकोडिङ"
 msgstr[1] "ट्रान्सकोडिङ"
+
+#: core/meta/support/MetaUtility.cpp:409
+msgctxt ""
+"the time format for a time length when the time is below 1 hour see QTime "
+"documentation."
+msgid "m:ss"
+msgstr ""
+
+#: core/meta/support/MetaUtility.cpp:416
+#, fuzzy, kde-format
+msgctxt "number of days with spacing for the pretty time"
+msgid "%1 day, "
+msgid_plural "%1 days, "
+msgstr[0] "१ दिन"
+msgstr[1] "१ दिन"
+
+#: core/meta/support/MetaUtility.cpp:417
+msgctxt ""
+"the time format for a time length when the time is 1 hour or above see QTime "
+"documentation."
+msgid "h:mm:ss"
+msgstr ""
+
+#: core/meta/support/MetaUtility.cpp:431
+#, fuzzy, kde-format
+#| msgid "Year"
+msgctxt "number of years for the pretty time"
+msgid "%1 year"
+msgid_plural "%1 years"
+msgstr[0] "वर्ष"
+msgstr[1] "वर्ष"
+
+#: core/meta/support/MetaUtility.cpp:433
+#, fuzzy, kde-format
+#| msgid "Months"
+msgctxt "number of months for the pretty time"
+msgid "%1 month"
+msgid_plural "%1 months"
+msgstr[0] "महिना"
+msgstr[1] "महिना"
+
+#: core/meta/support/MetaUtility.cpp:435
+#, fuzzy, kde-format
+msgctxt "number of days for the pretty time"
+msgid "%1 day"
+msgid_plural "%1 days"
+msgstr[0] "१ दिन"
+msgstr[1] "१ दिन"
+
+#: core/meta/support/MetaUtility.cpp:437
+#, fuzzy, kde-format
+msgctxt "number of hours for the pretty time"
+msgid "%1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "१ घण्टा"
+msgstr[1] "१ घण्टा"
+
+#: core/meta/support/MetaUtility.cpp:439
+#, fuzzy, kde-format
+#| msgid "Minutes"
+msgctxt "number of minutes for the pretty time"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "मिनेट"
+msgstr[1] "मिनेट"
+
+#: core/meta/support/MetaUtility.cpp:441
+#, fuzzy, kde-format
+#| msgid "Seconds"
+msgctxt "number of seconds for the pretty time"
+msgid "%1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "सेकेन्ड"
+msgstr[1] "सेकेन्ड"
 
 #: core/meta/support/MetaConstants.cpp:170
 #, fuzzy
@@ -5502,80 +5576,6 @@ msgstr "लेबुल"
 msgctxt "One word translation used in the collection filter"
 msgid "modified"
 msgstr "अपरिमार्जित"
-
-#: core/meta/support/MetaUtility.cpp:409
-msgctxt ""
-"the time format for a time length when the time is below 1 hour see QTime "
-"documentation."
-msgid "m:ss"
-msgstr ""
-
-#: core/meta/support/MetaUtility.cpp:416
-#, fuzzy, kde-format
-msgctxt "number of days with spacing for the pretty time"
-msgid "%1 day, "
-msgid_plural "%1 days, "
-msgstr[0] "१ दिन"
-msgstr[1] "१ दिन"
-
-#: core/meta/support/MetaUtility.cpp:417
-msgctxt ""
-"the time format for a time length when the time is 1 hour or above see QTime "
-"documentation."
-msgid "h:mm:ss"
-msgstr ""
-
-#: core/meta/support/MetaUtility.cpp:431
-#, fuzzy, kde-format
-#| msgid "Year"
-msgctxt "number of years for the pretty time"
-msgid "%1 year"
-msgid_plural "%1 years"
-msgstr[0] "वर्ष"
-msgstr[1] "वर्ष"
-
-#: core/meta/support/MetaUtility.cpp:433
-#, fuzzy, kde-format
-#| msgid "Months"
-msgctxt "number of months for the pretty time"
-msgid "%1 month"
-msgid_plural "%1 months"
-msgstr[0] "महिना"
-msgstr[1] "महिना"
-
-#: core/meta/support/MetaUtility.cpp:435
-#, fuzzy, kde-format
-msgctxt "number of days for the pretty time"
-msgid "%1 day"
-msgid_plural "%1 days"
-msgstr[0] "१ दिन"
-msgstr[1] "१ दिन"
-
-#: core/meta/support/MetaUtility.cpp:437
-#, fuzzy, kde-format
-msgctxt "number of hours for the pretty time"
-msgid "%1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "१ घण्टा"
-msgstr[1] "१ घण्टा"
-
-#: core/meta/support/MetaUtility.cpp:439
-#, fuzzy, kde-format
-#| msgid "Minutes"
-msgctxt "number of minutes for the pretty time"
-msgid "%1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] "मिनेट"
-msgstr[1] "मिनेट"
-
-#: core/meta/support/MetaUtility.cpp:441
-#, fuzzy, kde-format
-#| msgid "Seconds"
-msgctxt "number of seconds for the pretty time"
-msgid "%1 second"
-msgid_plural "%1 seconds"
-msgstr[0] "सेकेन्ड"
-msgstr[1] "सेकेन्ड"
 
 #: core/podcasts/PodcastReader.cpp:455
 #, kde-format
@@ -9726,7 +9726,7 @@ msgstr ""
 msgid "Playlist Files on Disk"
 msgstr "बजाउने सूची फाइल"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:276
+#: playlistmanager/file/PlaylistFileProvider.cpp:275
 #, fuzzy, kde-format
 #| msgid "The cover could not be retrieved."
 msgid "The playlist file \"%1\" could not be loaded."
@@ -11785,7 +11785,7 @@ msgstr ""
 "सूचनाहरू README फाइलमा फेला पार्न सकिन्छ । अगाडि सहयोगका लागि हामीसँग irc.freenode."
 "net भित्र #amarok मा जडान हुनुहोस् ।</p>"
 
-#: EngineController.cpp:297
+#: EngineController.cpp:299
 #, fuzzy
 #| msgid ""
 #| "<p>The %1 claims it <b>cannot</b> play MP3 files.<p>You may want to "
@@ -11803,13 +11803,13 @@ msgstr ""
 "जाँच गर्न सक्नुहुन्छ जुन हालको इन्जिनले प्रयोग गर्दछ । <p>तपाईँ <i>अमारोक हातेपुस्तिका</"
 "i>को <i>FAQ</i> सेक्सनमा उपयोगी सूचना फेला पार्न सक्नुहुन्छ</p> ।."
 
-#: EngineController.cpp:320
+#: EngineController.cpp:322
 #, fuzzy
 #| msgid "No MP3 Support"
 msgid "Install MP3 Support"
 msgstr "MP3 समर्थन छैन"
 
-#: EngineController.cpp:322
+#: EngineController.cpp:324
 #, fuzzy
 #| msgid "Amarok currently cannot play MP3 files."
 msgid ""
@@ -11817,23 +11817,23 @@ msgid ""
 "MP3?"
 msgstr "अमारोकले हालै MP3 फाइलहरू प्ले गर्न सक्दैन ।"
 
-#: EngineController.cpp:323
+#: EngineController.cpp:325
 msgid "No MP3 Support"
 msgstr "MP3 समर्थन छैन"
 
-#: EngineController.cpp:901
+#: EngineController.cpp:903
 #, fuzzy
 #| msgid "Pre-amp"
 msgid "Preamp"
 msgstr "Pre-amp"
 
-#: EngineController.cpp:907
+#: EngineController.cpp:909
 msgid ""
 "%0\n"
 "Hz"
 msgstr ""
 
-#: EngineController.cpp:911
+#: EngineController.cpp:913
 #, fuzzy
 #| msgctxt "SampleRate"
 #| msgid "%1 kHz"
@@ -11842,29 +11842,29 @@ msgid ""
 "kHz"
 msgstr "%1 kHz"
 
-#: EngineController.cpp:1208
+#: EngineController.cpp:1212
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr ""
 
-#: EngineController.cpp:1429
+#: EngineController.cpp:1433
 #, kde-format
 msgctxt "track by artist on album"
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%3</b> मा <b>%2</b> द्वारा <b>%1</b>"
 
-#: EngineController.cpp:1432
+#: EngineController.cpp:1436
 #, kde-format
 msgctxt "track by artist"
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: EngineController.cpp:1436
+#: EngineController.cpp:1440
 #, kde-format
 msgctxt "track on album"
 msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: EngineController.cpp:1448
+#: EngineController.cpp:1452
 #, fuzzy, kde-format
 #| msgid "<b>%1</b> by <b>%2</b>"
 msgctxt "track from source"
