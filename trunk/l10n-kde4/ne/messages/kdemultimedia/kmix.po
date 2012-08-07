@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-05 04:26+0200\n"
+"POT-Creation-Date: 2012-08-07 08:23+0200\n"
 "PO-Revision-Date: 2007-08-20 12:34+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -41,17 +41,6 @@ msgstr "पूर्वानिर्धारित रूपमा हाल�
 #: apps/kmixctrl.cpp:53
 msgid "Restore default volumes"
 msgstr "पूर्वानिर्धारित भोल्युम पूर्वावस्थामा ल्याउनुहोस्"
-
-#: apps/kmixd.cpp:303 apps/kmix.cpp:899
-#, kde-format
-msgid ""
-"The soundcard containing the master device was unplugged. Changing to "
-"control %1 on card %2."
-msgstr ""
-
-#: apps/kmixd.cpp:313 apps/kmix.cpp:909
-msgid "The last soundcard was unplugged."
-msgstr ""
 
 #: apps/main.cpp:33
 msgid "KMix - KDE's full featured mini mixer"
@@ -226,27 +215,38 @@ msgstr "'%1' को भोल्युम घटाउनुहोस्"
 msgid "Mute"
 msgstr "मौन गर्नुहोस्"
 
-#: apps/kmix.cpp:758
+#: apps/kmix.cpp:761
 msgid "Cannot add view - GUIProfile is invalid."
 msgstr ""
 
-#: apps/kmix.cpp:764
+#: apps/kmix.cpp:767
 msgid "View already exists. Cannot add View."
 msgstr ""
 
-#: apps/kmix.cpp:1199
+#: apps/kmix.cpp:902 apps/kmixd.cpp:301
+#, kde-format
+msgid ""
+"The soundcard containing the master device was unplugged. Changing to "
+"control %1 on card %2."
+msgstr ""
+
+#: apps/kmix.cpp:912 apps/kmixd.cpp:311
+msgid "The last soundcard was unplugged."
+msgstr ""
+
+#: apps/kmix.cpp:1204
 msgid "Mixer Hardware Information"
 msgstr "मिक्सर हार्डवेयर सूचना"
 
-#: apps/kmix.cpp:1213
+#: apps/kmix.cpp:1218
 msgid "The helper application is either not installed or not working."
 msgstr ""
 
-#: apps/kmix.cpp:1228
+#: apps/kmix.cpp:1233
 msgid "Error"
 msgstr ""
 
-#: apps/kmix.cpp:1256 gui/dialogaddview.cpp:128 gui/dialogselectmaster.cpp:112
+#: apps/kmix.cpp:1261 gui/dialogaddview.cpp:128 gui/dialogselectmaster.cpp:112
 msgid "No sound card is installed or currently plugged in."
 msgstr ""
 
@@ -600,32 +600,6 @@ msgstr "हालको मिक्सर"
 msgid "Select the channel representing the master volume:"
 msgstr "मास्टर भोल्युममा प्रतिनिधित्व गरिरहेको च्यानल चयन गर्नुहोस्:"
 
-#: gui/dialogviewconfiguration.cpp:153 gui/kmixprefdlg.cpp:40
-msgid "Configure"
-msgstr ""
-
-#: gui/dialogviewconfiguration.cpp:168
-#, fuzzy
-#| msgid "&Channels"
-msgid "Configuration of the channels."
-msgstr "च्यानल"
-
-#: gui/dialogviewconfiguration.cpp:229
-#, fuzzy
-#| msgid "Available mixers:"
-msgid "Available channels"
-msgstr "उपलब्ध मिक्सर:"
-
-#: gui/dialogviewconfiguration.cpp:233
-#, fuzzy
-#| msgid "Available mixers:"
-msgid "Visible channels"
-msgstr "उपलब्ध मिक्सर:"
-
-#: gui/kmixerwidget.cpp:75
-msgid "Invalid mixer"
-msgstr "अवैध मिक्सर"
-
 #: gui/mdwenum.cpp:60 gui/mdwslider.cpp:114
 msgid "&Hide"
 msgstr "लुकाउनुहोस्"
@@ -713,6 +687,55 @@ msgstr ""
 msgid "No playback devices."
 msgstr ""
 
+#: gui/kmixdockwidget.cpp:68
+#, fuzzy
+#| msgid "Volume"
+msgid "Volume Control"
+msgstr "भोल्युम"
+
+#: gui/kmixdockwidget.cpp:137
+msgid "M&ute"
+msgstr "मौन गर्नुहोस्"
+
+#: gui/kmixdockwidget.cpp:225
+msgid "Mixer cannot be found"
+msgstr "मिक्सर फेला पार्न सकिँदैन"
+
+#: gui/kmixdockwidget.cpp:239
+#, kde-format
+msgid "Volume at %1%"
+msgstr "%1% मा भोल्युम"
+
+#: gui/kmixdockwidget.cpp:241
+msgid " (Muted)"
+msgstr " (मौन गरिएको)"
+
+#: gui/dialogviewconfiguration.cpp:153 gui/kmixprefdlg.cpp:40
+msgid "Configure"
+msgstr ""
+
+#: gui/dialogviewconfiguration.cpp:168
+#, fuzzy
+#| msgid "&Channels"
+msgid "Configuration of the channels. Drag icon to update."
+msgstr "च्यानल"
+
+#: gui/dialogviewconfiguration.cpp:229
+#, fuzzy
+#| msgid "Available mixers:"
+msgid "Available channels"
+msgstr "उपलब्ध मिक्सर:"
+
+#: gui/dialogviewconfiguration.cpp:233
+#, fuzzy
+#| msgid "Available mixers:"
+msgid "Visible channels"
+msgstr "उपलब्ध मिक्सर:"
+
+#: gui/kmixerwidget.cpp:75
+msgid "Invalid mixer"
+msgstr "अवैध मिक्सर"
+
 #: gui/kmixprefdlg.cpp:55
 msgid "Behavior"
 msgstr ""
@@ -737,70 +760,73 @@ msgid "Allows to control the volume from the system tray"
 msgstr "केडीई प्यानलमा मिक्सर डक गर्दछ"
 
 #: gui/kmixprefdlg.cpp:77
-msgid "Restore volumes on login"
-msgstr "लगइनमा भोल्युम पूर्वावस्थामा ल्याउनुहोस्"
-
-#: gui/kmixprefdlg.cpp:83
 #, fuzzy
 #| msgid "Volume"
 msgid "Volume Feedback"
 msgstr "भोल्युम"
 
-#: gui/kmixprefdlg.cpp:90
+#: gui/kmixprefdlg.cpp:83
+msgid "Volume feedback is only available for Pulseaudio."
+msgstr ""
+
+#: gui/kmixprefdlg.cpp:88
+msgid "Startup"
+msgstr ""
+
+#: gui/kmixprefdlg.cpp:94
+msgid "Restore volumes on login"
+msgstr "लगइनमा भोल्युम पूर्वावस्थामा ल्याउनुहोस्"
+
+#: gui/kmixprefdlg.cpp:95
+#, fuzzy
+#| msgid "Restore volumes on login"
+msgid "Restore all volume levels and switches."
+msgstr "लगइनमा भोल्युम पूर्वावस्थामा ल्याउनुहोस्"
+
+#: gui/kmixprefdlg.cpp:102
+msgid "Dynamic controls from Pulseaudio and MPRIS2 will not be restored."
+msgstr ""
+
+#: gui/kmixprefdlg.cpp:114
+msgid "Supress KMix Autostart"
+msgstr ""
+
+#: gui/kmixprefdlg.cpp:115
+msgid "Disables the KMix autostart service (kmix_autostart.desktop)"
+msgstr ""
+
+#: gui/kmixprefdlg.cpp:121
 msgid "Visual"
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:96
+#: gui/kmixprefdlg.cpp:127
 msgid "Show &tickmarks"
 msgstr "टिकमार्क देखाउनुहोस्"
 
-#: gui/kmixprefdlg.cpp:98
+#: gui/kmixprefdlg.cpp:129
 msgid "Enable/disable tickmark scales on the sliders"
 msgstr "स्लाइडरमा टिकमार्क मापन सक्षम/अक्षम पार्नुहोस्"
 
-#: gui/kmixprefdlg.cpp:103
+#: gui/kmixprefdlg.cpp:134
 msgid "Show &labels"
 msgstr "लेबुल देखाउनुहोस्"
 
-#: gui/kmixprefdlg.cpp:105
+#: gui/kmixprefdlg.cpp:136
 msgid "Enables/disables description labels above the sliders"
 msgstr "स्लाइडर माथि वर्णन लेबुल सक्षम पार्दछ/अक्षम पार्दछ"
 
-#: gui/kmixprefdlg.cpp:112
+#: gui/kmixprefdlg.cpp:143
 #, fuzzy
 msgid "Slider orientation: "
 msgstr "स्लाइडर परिचय: "
 
-#: gui/kmixprefdlg.cpp:113
+#: gui/kmixprefdlg.cpp:144
 msgid "&Horizontal"
 msgstr "तेर्सो"
 
-#: gui/kmixprefdlg.cpp:114
+#: gui/kmixprefdlg.cpp:145
 msgid "&Vertical"
 msgstr "ठाडो"
-
-#: gui/kmixdockwidget.cpp:68
-#, fuzzy
-#| msgid "Volume"
-msgid "Volume Control"
-msgstr "भोल्युम"
-
-#: gui/kmixdockwidget.cpp:137
-msgid "M&ute"
-msgstr "मौन गर्नुहोस्"
-
-#: gui/kmixdockwidget.cpp:225
-msgid "Mixer cannot be found"
-msgstr "मिक्सर फेला पार्न सकिँदैन"
-
-#: gui/kmixdockwidget.cpp:239
-#, kde-format
-msgid "Volume at %1%"
-msgstr "%1% मा भोल्युम"
-
-#: gui/kmixdockwidget.cpp:241
-msgid " (Muted)"
-msgstr " (मौन गरिएको)"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
