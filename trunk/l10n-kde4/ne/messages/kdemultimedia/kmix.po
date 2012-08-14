@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-10 05:04+0200\n"
+"POT-Creation-Date: 2012-08-14 07:25+0200\n"
 "PO-Revision-Date: 2007-08-20 12:34+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -145,6 +145,17 @@ msgid ""
 "Inhibits the unhiding of the KMix main window, if KMix is already running."
 msgstr ""
 
+#: apps/kmixd.cpp:301 apps/kmix.cpp:902
+#, kde-format
+msgid ""
+"The soundcard containing the master device was unplugged. Changing to "
+"control %1 on card %2."
+msgstr ""
+
+#: apps/kmixd.cpp:311 apps/kmix.cpp:912
+msgid "The last soundcard was unplugged."
+msgstr ""
+
 #: apps/kmix.cpp:150
 msgid "Audio Setup"
 msgstr ""
@@ -223,17 +234,6 @@ msgstr ""
 msgid "View already exists. Cannot add View."
 msgstr ""
 
-#: apps/kmix.cpp:902 apps/kmixd.cpp:301
-#, kde-format
-msgid ""
-"The soundcard containing the master device was unplugged. Changing to "
-"control %1 on card %2."
-msgstr ""
-
-#: apps/kmix.cpp:912 apps/kmixd.cpp:311
-msgid "The last soundcard was unplugged."
-msgstr ""
-
 #: apps/kmix.cpp:1204
 msgid "Mixer Hardware Information"
 msgstr "मिक्सर हार्डवेयर सूचना"
@@ -249,6 +249,12 @@ msgstr ""
 #: apps/kmix.cpp:1261 gui/dialogaddview.cpp:128 gui/dialogselectmaster.cpp:112
 msgid "No sound card is installed or currently plugged in."
 msgstr ""
+
+#: apps/kmix.cpp:1272
+#, fuzzy
+#| msgid "Mixer"
+msgid "KDE Mixer"
+msgstr "मिक्सर"
 
 #: backends/mixer_alsa9.cpp:891
 msgid ""
@@ -710,7 +716,7 @@ msgstr "%1% मा भोल्युम"
 msgid " (Muted)"
 msgstr " (मौन गरिएको)"
 
-#: gui/dialogviewconfiguration.cpp:153 gui/kmixprefdlg.cpp:40
+#: gui/dialogviewconfiguration.cpp:153 gui/kmixprefdlg.cpp:43
 msgid "Configure"
 msgstr ""
 
@@ -736,95 +742,101 @@ msgstr "उपलब्ध मिक्सर:"
 msgid "Invalid mixer"
 msgstr "अवैध मिक्सर"
 
-#: gui/kmixprefdlg.cpp:55
+#: gui/kmixprefdlg.cpp:58
 msgid "Behavior"
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:62
+#: gui/kmixprefdlg.cpp:65
 #, fuzzy
 msgid "&Dock in system tray"
 msgstr "प्यानलमा डक गर्नुहोस्"
 
-#: gui/kmixprefdlg.cpp:64
+#: gui/kmixprefdlg.cpp:67
 #, fuzzy
 msgid "Docks the mixer into the KDE system tray"
 msgstr "केडीई प्यानलमा मिक्सर डक गर्दछ"
 
-#: gui/kmixprefdlg.cpp:69
+#: gui/kmixprefdlg.cpp:72
 msgid "Enable system tray &volume control"
 msgstr "प्रणाली ट्रे भोल्युम नियन्त्रण सक्षम पार्नुहोस्"
 
-#: gui/kmixprefdlg.cpp:71
+#: gui/kmixprefdlg.cpp:74
 #, fuzzy
 msgid "Allows to control the volume from the system tray"
 msgstr "केडीई प्यानलमा मिक्सर डक गर्दछ"
 
-#: gui/kmixprefdlg.cpp:77
+#: gui/kmixprefdlg.cpp:80
 #, fuzzy
 #| msgid "Volume"
 msgid "Volume Feedback"
 msgstr "भोल्युम"
 
-#: gui/kmixprefdlg.cpp:83
+#: gui/kmixprefdlg.cpp:86
 msgid "Volume feedback is only available for Pulseaudio."
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:88
+#: gui/kmixprefdlg.cpp:91
 msgid "Startup"
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:94
+#: gui/kmixprefdlg.cpp:97
 msgid "Restore volumes on login"
 msgstr "लगइनमा भोल्युम पूर्वावस्थामा ल्याउनुहोस्"
 
-#: gui/kmixprefdlg.cpp:95
+#: gui/kmixprefdlg.cpp:98
 #, fuzzy
 #| msgid "Restore volumes on login"
 msgid "Restore all volume levels and switches."
 msgstr "लगइनमा भोल्युम पूर्वावस्थामा ल्याउनुहोस्"
 
-#: gui/kmixprefdlg.cpp:102
+#: gui/kmixprefdlg.cpp:105
 msgid "Dynamic controls from Pulseaudio and MPRIS2 will not be restored."
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:114
-msgid "Suppress KMix Autostart"
+#: gui/kmixprefdlg.cpp:117
+msgid "Autostart"
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:115
-msgid "Disables the KMix autostart service (kmix_autostart.desktop)"
+#: gui/kmixprefdlg.cpp:118
+msgid "Enables the KMix autostart service (kmix_autostart.desktop)"
 msgstr ""
 
-#: gui/kmixprefdlg.cpp:121
-msgid "Visual"
+#: gui/kmixprefdlg.cpp:124
+msgid ""
+"Autostart can not be enabled, as the autostart file kmix_autostart.desktop "
+"is not installed."
 msgstr ""
 
 #: gui/kmixprefdlg.cpp:127
+msgid "Visual"
+msgstr ""
+
+#: gui/kmixprefdlg.cpp:133
 msgid "Show &tickmarks"
 msgstr "टिकमार्क देखाउनुहोस्"
 
-#: gui/kmixprefdlg.cpp:129
+#: gui/kmixprefdlg.cpp:135
 msgid "Enable/disable tickmark scales on the sliders"
 msgstr "स्लाइडरमा टिकमार्क मापन सक्षम/अक्षम पार्नुहोस्"
 
-#: gui/kmixprefdlg.cpp:134
+#: gui/kmixprefdlg.cpp:140
 msgid "Show &labels"
 msgstr "लेबुल देखाउनुहोस्"
 
-#: gui/kmixprefdlg.cpp:136
+#: gui/kmixprefdlg.cpp:142
 msgid "Enables/disables description labels above the sliders"
 msgstr "स्लाइडर माथि वर्णन लेबुल सक्षम पार्दछ/अक्षम पार्दछ"
 
-#: gui/kmixprefdlg.cpp:143
+#: gui/kmixprefdlg.cpp:149
 #, fuzzy
 msgid "Slider orientation: "
 msgstr "स्लाइडर परिचय: "
 
-#: gui/kmixprefdlg.cpp:144
+#: gui/kmixprefdlg.cpp:150
 msgid "&Horizontal"
 msgstr "तेर्सो"
 
-#: gui/kmixprefdlg.cpp:145
+#: gui/kmixprefdlg.cpp:151
 msgid "&Vertical"
 msgstr "ठाडो"
 
