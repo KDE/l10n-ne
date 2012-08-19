@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:21+0200\n"
+"POT-Creation-Date: 2012-08-19 05:40+0200\n"
 "PO-Revision-Date: 2007-09-07 11:50+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -16,6 +16,66 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: deferdlg.cpp:44
+#, fuzzy
+#| msgid "Defer Alarm"
+msgctxt "@title:window"
+msgid "Defer Alarm"
+msgstr "संसूचक पछि सार्नुहोस्"
+
+#: deferdlg.cpp:46
+#, fuzzy
+#| msgid "Cancel &Deferral"
+msgctxt "@action:button"
+msgid "Cancel Deferral"
+msgstr "सारिएको समय रद्द गर्नुहोस्"
+
+#: deferdlg.cpp:65
+#, fuzzy
+#| msgid "Defer the alarm until the specified time."
+msgctxt "@info:whatsthis"
+msgid "Defer the alarm until the specified time."
+msgstr "निर्दिष्ट गरिएको समयसम्म संसूचक सार्नुहोस् ।"
+
+#: deferdlg.cpp:66
+#, fuzzy
+#| msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgctxt "@info:whatsthis"
+msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgstr "सारिएको संसूचक रद्द गर्नुहोस् । यसले भविश्यका पुनरावृत्तिलाई प्रभाव पार्दैन ।"
+
+#: deferdlg.cpp:98
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "This refers to simple repetitions set up using the Simple Repetition "
+#| "dialog"
+#| msgid "Cannot defer past the alarm's next repetition (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
+msgstr "पहिलाको संसूचकको पछिल्लो पुनरावृत्ति सार्न सकिँदैन(हालैको %1)"
+
+#: deferdlg.cpp:102
+#, fuzzy, kde-format
+#| msgctxt "This refers to recurrences set up using the Recurrence tab"
+#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgstr "पहिलाको संसुचकको पछिल्लो पुनरावृत्तिलाई सार्न सकिँदैन (हालैको %1)"
+
+#: deferdlg.cpp:106
+#, fuzzy, kde-format
+#| msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgstr "पहिलाको संसूचकको पछिल्लो सचेतक सार्न सकिँदैन (हालैको %1)"
+
+#: deferdlg.cpp:110
+#, fuzzy, kde-format
+#| msgid "Cannot defer reminder past the main alarm time (%1)"
+msgctxt "@info"
+msgid "Cannot defer reminder past the main alarm time (%1)"
+msgstr "पहिलाको मुख्य संसूचक समय (%1) को सचेतक सार्न सकिँदैन"
 
 #: akonadimodel.cpp:450 eventlistmodel.cpp:313
 #, fuzzy
@@ -255,13 +315,6 @@ msgctxt "@info/plain"
 msgid "Failed to delete alarm."
 msgstr "आदेश कार्यान्वयन गर्न असफल:"
 
-#: akonadiresourcecreator.cpp:109
-#, fuzzy
-#| msgid "Failed to send email"
-msgctxt "@info/plain"
-msgid "Failed to create new calendar resource"
-msgstr "इमेल पठाउन असफल"
-
 #: alarmcalendar.cpp:344 alarmcalendar.cpp:901
 #, fuzzy, kde-format
 #| msgid ""
@@ -365,37 +418,6 @@ msgstr ""
 "'%1'\n"
 "मा क्यालेन्डर अनलोड गर्न सकिँदैन"
 
-#: alarmtime.cpp:42 alarmtime.cpp:80
-#, fuzzy
-#| msgid "Never"
-msgctxt "@info/plain Alarm never occurs"
-msgid "Never"
-msgstr "कहिले पनि होइन"
-
-#: alarmtime.cpp:86
-#, fuzzy, no-c-format, kde-format
-#| msgctxt "n days"
-#| msgid " %1d "
-msgctxt "@info/plain n days"
-msgid "%1d"
-msgstr " %1d "
-
-#: alarmtime.cpp:95
-#, fuzzy, kde-format
-#| msgctxt "Undo-action: message"
-#| msgid "%1: %2"
-msgctxt "@info/plain hours:minutes"
-msgid "%1:%2"
-msgstr "%1: %2"
-
-#: alarmtime.cpp:98
-#, fuzzy, kde-format
-#| msgctxt "days hours:minutes"
-#| msgid " %1d %2:%3 "
-msgctxt "@info/plain days hours:minutes"
-msgid "%1d %2:%3"
-msgstr " %1d %2:%3 "
-
 #: alarmtimewidget.cpp:52
 #, fuzzy
 #| msgid ""
@@ -434,14 +456,14 @@ msgstr ""
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "At date/time:"
+msgid "Defer to date/time:"
 msgstr "मिति/समय पछि सार्नुहोस्:"
 
 #: alarmtimewidget.cpp:108
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "Defer to date/time:"
+msgid "At date/time:"
 msgstr "मिति/समय पछि सार्नुहोस्:"
 
 #: alarmtimewidget.cpp:110
@@ -790,99 +812,6 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "अतिरिक्त संसूचक पुनरावृत्ति सेट अप गर्नुहोस्"
 
-#: calendarmigrator.cpp:278 collectionmodel.cpp:939
-#: resources/alarmresources.cpp:135
-#, fuzzy
-#| msgid "Active Alarms"
-msgctxt "@info/plain"
-msgid "Active Alarms"
-msgstr "संसूचक सक्रिय पार्नुहोस्"
-
-#: calendarmigrator.cpp:286 collectionmodel.cpp:941
-#: resources/alarmresources.cpp:145
-#, fuzzy
-#| msgid "Archived Alarms"
-msgctxt "@info/plain"
-msgid "Archived Alarms"
-msgstr "सङ्ग्रहित संसूचक"
-
-#: calendarmigrator.cpp:294 collectionmodel.cpp:943
-#: resources/alarmresources.cpp:140
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@info/plain"
-msgid "Alarm Templates"
-msgstr "संसूचक टेम्प्लेट"
-
-#: calendarmigrator.cpp:329
-#, fuzzy, kde-format
-#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
-msgctxt "@info/plain"
-msgid "Failed to create default calendar <resource>%1</resource>"
-msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
-
-#: calendarmigrator.cpp:331
-#, fuzzy, kde-format
-#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
-msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
-msgid ""
-"Failed to convert old configuration for calendar <resource>%1</resource>. "
-"Please use Import Alarms to load its alarms into a new or existing calendar."
-msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
-
-#: calendarmigrator.cpp:333
-#, fuzzy, kde-format
-#| msgid "Action"
-msgctxt "@info/plain File path or URL"
-msgid "Location: %1"
-msgstr "कार्य"
-
-#: calendarmigrator.cpp:335
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1\n"
-#| "Are you sure you want to save your changes?"
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
-msgstr ""
-"%1\n"
-"तपाईँ परिवर्तन बचत गर्ने चाहानामा निश्चित हुनुहुन्छ ?"
-
-#: calendarmigrator.cpp:337
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1\n"
-#| "Are you sure you want to save your changes?"
-msgctxt "@info"
-msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
-msgstr ""
-"%1\n"
-"तपाईँ परिवर्तन बचत गर्ने चाहानामा निश्चित हुनुहुन्छ ?"
-
-#: calendarmigrator.cpp:443
-#, fuzzy
-#| msgid "Invalid time"
-msgctxt "@info/plain"
-msgid "Invalid collection"
-msgstr "अवैध समय"
-
-#: calendarmigrator.cpp:457
-#, fuzzy, kde-format
-#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
-msgctxt "@info/plain"
-msgid "Failed to update format of calendar <resource>%1</resource>"
-msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
-
-#: calendarmigrator.cpp:735
-msgctxt "@info/plain"
-msgid "New configuration timed out"
-msgstr ""
-
-#: calendarmigrator.cpp:748
-msgctxt "@info/plain"
-msgid "New configuration was corrupt"
-msgstr ""
-
 #: collectionmodel.cpp:362 resourcemodelview.cpp:422
 #, fuzzy
 #| msgid "You cannot disable your default active alarm resource."
@@ -954,6 +883,30 @@ msgid "<para>%1</para><para>Please select a new default calendar.</para>"
 msgstr ""
 "%1\n"
 "कृपया यसलाई प्राथमिकता संवादमा सेट गर्नुहोस् ।"
+
+#: collectionmodel.cpp:939 resources/alarmresources.cpp:135
+#: calendarmigrator.cpp:278
+#, fuzzy
+#| msgid "Active Alarms"
+msgctxt "@info/plain"
+msgid "Active Alarms"
+msgstr "संसूचक सक्रिय पार्नुहोस्"
+
+#: collectionmodel.cpp:941 resources/alarmresources.cpp:145
+#: calendarmigrator.cpp:286
+#, fuzzy
+#| msgid "Archived Alarms"
+msgctxt "@info/plain"
+msgid "Archived Alarms"
+msgstr "सङ्ग्रहित संसूचक"
+
+#: collectionmodel.cpp:943 resources/alarmresources.cpp:140
+#: calendarmigrator.cpp:294
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@info/plain"
+msgid "Alarm Templates"
+msgstr "संसूचक टेम्प्लेट"
 
 #: collectionmodel.cpp:1202
 #, fuzzy
@@ -1044,66 +997,6 @@ msgstr "अवैध %1 परिमिति"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "%1 सँग %2 मिल्दैन"
-
-#: deferdlg.cpp:44
-#, fuzzy
-#| msgid "Defer Alarm"
-msgctxt "@title:window"
-msgid "Defer Alarm"
-msgstr "संसूचक पछि सार्नुहोस्"
-
-#: deferdlg.cpp:46
-#, fuzzy
-#| msgid "Cancel &Deferral"
-msgctxt "@action:button"
-msgid "Cancel Deferral"
-msgstr "सारिएको समय रद्द गर्नुहोस्"
-
-#: deferdlg.cpp:65
-#, fuzzy
-#| msgid "Defer the alarm until the specified time."
-msgctxt "@info:whatsthis"
-msgid "Defer the alarm until the specified time."
-msgstr "निर्दिष्ट गरिएको समयसम्म संसूचक सार्नुहोस् ।"
-
-#: deferdlg.cpp:66
-#, fuzzy
-#| msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgctxt "@info:whatsthis"
-msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgstr "सारिएको संसूचक रद्द गर्नुहोस् । यसले भविश्यका पुनरावृत्तिलाई प्रभाव पार्दैन ।"
-
-#: deferdlg.cpp:98
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "This refers to simple repetitions set up using the Simple Repetition "
-#| "dialog"
-#| msgid "Cannot defer past the alarm's next repetition (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
-msgstr "पहिलाको संसूचकको पछिल्लो पुनरावृत्ति सार्न सकिँदैन(हालैको %1)"
-
-#: deferdlg.cpp:102
-#, fuzzy, kde-format
-#| msgctxt "This refers to recurrences set up using the Recurrence tab"
-#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgstr "पहिलाको संसुचकको पछिल्लो पुनरावृत्तिलाई सार्न सकिँदैन (हालैको %1)"
-
-#: deferdlg.cpp:106
-#, fuzzy, kde-format
-#| msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgstr "पहिलाको संसूचकको पछिल्लो सचेतक सार्न सकिँदैन (हालैको %1)"
-
-#: deferdlg.cpp:110
-#, fuzzy, kde-format
-#| msgid "Cannot defer reminder past the main alarm time (%1)"
-msgctxt "@info"
-msgid "Cannot defer reminder past the main alarm time (%1)"
-msgstr "पहिलाको मुख्य संसूचक समय (%1) को सचेतक सार्न सकिँदैन"
 
 #: editdlg.cpp:98
 #, fuzzy, kde-format
@@ -1409,30 +1302,30 @@ msgstr "धन्यवाद स्वीकार गर्नुहोस्"
 
 #: editdlgtypes.cpp:144
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Display Alarm Template"
-msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: editdlgtypes.cpp:144
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Display Alarm Template"
 msgstr "नयाँ संसूचक टेम्प्लेट"
 
-#: editdlgtypes.cpp:145
+#: editdlgtypes.cpp:144
 #, fuzzy
-#| msgid "Display Alarms"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Display Alarm"
-msgstr "संसूचक प्रदर्शन गर्नुहोस्"
+msgid "Edit Display Alarm Template"
+msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
 
 #: editdlgtypes.cpp:145
 #, fuzzy
 #| msgid "Display Alarms"
 msgctxt "@title:window"
 msgid "New Display Alarm"
+msgstr "संसूचक प्रदर्शन गर्नुहोस्"
+
+#: editdlgtypes.cpp:145
+#, fuzzy
+#| msgid "Display Alarms"
+msgctxt "@title:window"
+msgid "Edit Display Alarm"
 msgstr "संसूचक प्रदर्शन गर्नुहोस्"
 
 #: editdlgtypes.cpp:157
@@ -1597,30 +1490,30 @@ msgstr "टर्मिनल सञ्झ्यालमा कार्या�
 
 #: editdlgtypes.cpp:756
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Command Alarm Template"
-msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: editdlgtypes.cpp:756
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Command Alarm Template"
 msgstr "नयाँ संसूचक टेम्प्लेट"
 
-#: editdlgtypes.cpp:757
+#: editdlgtypes.cpp:756
 #, fuzzy
-#| msgid "Command Alarms"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Command Alarm"
-msgstr "आदेश संसूचक"
+msgid "Edit Command Alarm Template"
+msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
 
 #: editdlgtypes.cpp:757
 #, fuzzy
 #| msgid "Command Alarms"
 msgctxt "@title:window"
 msgid "New Command Alarm"
+msgstr "आदेश संसूचक"
+
+#: editdlgtypes.cpp:757
+#, fuzzy
+#| msgid "Command Alarms"
+msgctxt "@title:window"
+msgid "Edit Command Alarm"
 msgstr "आदेश संसूचक"
 
 #: editdlgtypes.cpp:765
@@ -1721,30 +1614,30 @@ msgstr "इमेल आफ्नो स्थानमा प्रतिलि
 
 #: editdlgtypes.cpp:1059
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Email Alarm Template"
-msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: editdlgtypes.cpp:1059
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Email Alarm Template"
 msgstr "नयाँ संसूचक टेम्प्लेट"
 
-#: editdlgtypes.cpp:1060
+#: editdlgtypes.cpp:1059
 #, fuzzy
-#| msgid "Email Alarms"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Email Alarm"
-msgstr "इमेल संसूचक"
+msgid "Edit Email Alarm Template"
+msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
 
 #: editdlgtypes.cpp:1060
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Email Alarm"
+msgstr "इमेल संसूचक"
+
+#: editdlgtypes.cpp:1060
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@title:window"
+msgid "Edit Email Alarm"
 msgstr "इमेल संसूचक"
 
 #: editdlgtypes.cpp:1068
@@ -1958,24 +1851,17 @@ msgstr "सङ्लग्न गरिने फाइल रोज्नुह
 
 #: editdlgtypes.cpp:1512
 #, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@title:window"
-msgid "Edit Audio Alarm Template"
-msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: editdlgtypes.cpp:1512
-#, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Audio Alarm Template"
 msgstr "नयाँ संसूचक टेम्प्लेट"
 
-#: editdlgtypes.cpp:1513
+#: editdlgtypes.cpp:1512
 #, fuzzy
-#| msgid "Edit Alarm"
+#| msgid "Edit Alarm Template"
 msgctxt "@title:window"
-msgid "Edit Audio Alarm"
-msgstr "संसूचक सम्पादन गर्नुहोस्"
+msgid "Edit Audio Alarm Template"
+msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
 
 #: editdlgtypes.cpp:1513
 #, fuzzy
@@ -1983,6 +1869,13 @@ msgstr "संसूचक सम्पादन गर्नुहोस्"
 msgctxt "@title:window"
 msgid "New Audio Alarm"
 msgstr "इमेल संसूचक"
+
+#: editdlgtypes.cpp:1513
+#, fuzzy
+#| msgid "Edit Alarm"
+msgctxt "@title:window"
+msgid "Edit Audio Alarm"
+msgstr "संसूचक सम्पादन गर्नुहोस्"
 
 #: editdlgtypes.cpp:1730
 #, fuzzy
@@ -2019,220 +1912,6 @@ msgstr "कार्यान्वयनका लागि स्क्रि�
 msgctxt "@info:whatsthis"
 msgid "List of scheduled alarms"
 msgstr "तालिकवद्ध संसूचकको सूची"
-
-#: find.cpp:137
-#, fuzzy
-#| msgid "Alarm Type"
-msgctxt "@title:group"
-msgid "Alarm Type"
-msgstr "संसूचक प्रकार"
-
-#: find.cpp:145
-#, fuzzy
-#| msgid "Acti&ve"
-msgctxt "@option:check Alarm type"
-msgid "Active"
-msgstr "सक्रिय"
-
-#: find.cpp:147
-#, fuzzy
-#| msgid "Check to include active alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include active alarms in the search."
-msgstr "खोजीमा सक्रिय संसूचक समावेश गर्न जाँच गर्नुहोस् ।"
-
-#: find.cpp:150
-#, fuzzy
-#| msgid "A&rchived"
-msgctxt "@option:check Alarm type"
-msgid "Archived"
-msgstr "सङ्ग्रहित"
-
-#: find.cpp:152
-#, fuzzy
-#| msgid ""
-#| "Check to include archived alarms in the search. This option is only "
-#| "available if archived alarms are currently being displayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to include archived alarms in the search. This option is only "
-"available if archived alarms are currently being displayed."
-msgstr ""
-"खोजीमा सङ्ग्रहित संसूचक सम्मिलित गर्न जाँच गर्नुहोस् । यो विकल्प सङ्ग्रहित संसूचक हालै "
-"प्रदर्शन भइरहेको अवस्थामा मात्र उपलब्ध हुन्छ ।"
-
-#: find.cpp:160
-#, fuzzy
-#| msgid "Text"
-msgctxt "@option:check Alarm action = text display"
-msgid "Text"
-msgstr "पाठ"
-
-#: find.cpp:162
-#, fuzzy
-#| msgid "Check to include text message alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include text message alarms in the search."
-msgstr "खोजीमा पाठ सन्देश संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
-
-#: find.cpp:165
-#, fuzzy
-#| msgid "&File"
-msgctxt "@option:check Alarm action = file display"
-msgid "File"
-msgstr "फाइल"
-
-#: find.cpp:167
-#, fuzzy
-#| msgid "Check to include file alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include file alarms in the search."
-msgstr "खोजीमा फाइल संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
-
-#: find.cpp:170
-#, fuzzy
-#| msgid "Co&mmand"
-msgctxt "@option:check Alarm action"
-msgid "Command"
-msgstr "आदेश"
-
-#: find.cpp:172
-#, fuzzy
-#| msgid "Check to include command alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include command alarms in the search."
-msgstr "खोजीमा आदेश संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
-
-#: find.cpp:175
-#, fuzzy
-#| msgid "Email"
-msgctxt "@option:check Alarm action"
-msgid "Email"
-msgstr "इमेल"
-
-#: find.cpp:177
-#, fuzzy
-#| msgid "Check to include email alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include email alarms in the search."
-msgstr "खोजीमा इमेल संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
-
-#: find.cpp:180
-msgctxt "@option:check Alarm action"
-msgid "Audio"
-msgstr ""
-
-#: find.cpp:182
-#, fuzzy
-#| msgid "Check to include email alarms in the search."
-msgctxt "@info:whatsthis"
-msgid "Check to include audio alarms in the search."
-msgstr "खोजीमा इमेल संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
-
-#: find.cpp:283
-#, fuzzy
-#| msgid "No alarm types are selected to search"
-msgctxt "@info"
-msgid "No alarm types are selected to search"
-msgstr "खोजी गर्न संसूचक प्रकार चयन गरिएको छैन"
-
-#: find.cpp:439
-#, fuzzy
-#| msgid ""
-#| "End of alarm list reached.\n"
-#| "Continue from the beginning?"
-msgctxt "@info"
-msgid ""
-"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
-"para>"
-msgstr ""
-"संसूचक सूचीको अन्त्यमा पुगियो ।\n"
-"सुरुबाट निरन्तरता दिनुहुन्छ ?"
-
-#: find.cpp:440
-#, fuzzy
-#| msgid ""
-#| "Beginning of alarm list reached.\n"
-#| "Continue from the end?"
-msgctxt "@info"
-msgid ""
-"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
-"para>"
-msgstr ""
-"संसूचक सूचीको प्रारम्भमा आइपुग्यो ।\n"
-"अन्तिमबाट निरन्तरता दिनुहुन्छ ?"
-
-#: fontcolour.cpp:71
-#, fuzzy
-#| msgid "&Foreground color:"
-msgctxt "@label:listbox"
-msgid "Foreground color:"
-msgstr "अग्रभूमि रङ:"
-
-#: fontcolour.cpp:76
-#, fuzzy
-#| msgid "Select the alarm message foreground color"
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message foreground color"
-msgstr "संसूचक सन्देशको अग्रभूमि रङ चयन गर्नुहोस्"
-
-#: fontcolour.cpp:84
-#, fuzzy
-#| msgid "&Background color:"
-msgctxt "@label:listbox"
-msgid "Background color:"
-msgstr "पृष्ठभूमि रङ:"
-
-#: fontcolour.cpp:89
-#, fuzzy
-#| msgid "Select the alarm message background color"
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message background color"
-msgstr "संसूचक सन्देशको पृष्ठभूमि रङ चयन गर्नुहोस्"
-
-#: fontcolour.cpp:97
-#, fuzzy
-#| msgid "Use &default font"
-msgctxt "@option:check"
-msgid "Use default font"
-msgstr "पूर्वनिर्धारित फन्ट प्रयोग गर्नुहोस्"
-
-#: fontcolour.cpp:100
-#, fuzzy
-#| msgid ""
-#| "Check to use the default font current at the time the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to use the default font current at the time the alarm is displayed."
-msgstr "संसूचक प्रदर्शित भएको समयमा हालैको पूर्वनिर्धारित फन्ट प्रयोग गर्न जाँच गर्नुहोस् ।"
-
-#: fontcolour.h:39
-msgid "Requested font"
-msgstr "अनुरोध गरिएका फन्ट"
-
-#: fontcolourbutton.cpp:43
-#, fuzzy
-#| msgid "Font && Co&lor..."
-msgctxt "@action:button"
-msgid "Font && Color..."
-msgstr "फन्ट र रङ..."
-
-#: fontcolourbutton.cpp:47
-#, fuzzy
-#| msgid ""
-#| "Choose the font, and foreground and background color, for the alarm "
-#| "message."
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose the font, and foreground and background color, for the alarm message."
-msgstr "संसूचक सन्देशका लागि फन्ट, अग्रभूमि र पृष्ठभूमि रङ रोज्नुहोस् ।"
-
-#: fontcolourbutton.cpp:71
-#, fuzzy
-#| msgid "Choose Alarm Font & Color"
-msgctxt "@title:window"
-msgid "Choose Alarm Font & Color"
-msgstr "संसूचक फन्ट र रङ रोज्नुहोस्"
 
 #: functions.cpp:181
 #, fuzzy
@@ -2520,79 +2199,77 @@ msgstr ""
 "बाँडिएको भएमा अद्यावधिक नगर्नुहोस् । यदि तपाईँले त्यस्तो गरेमा, तिनीहरू यसलाई प्रयोग गर्न "
 "असक्षम हुन्छन् ।<br><br>तपाईँ स्रोत अद्यावधिक गर्न चाहनुहुन्छ ?</qt>"
 
-#: kalarmapp.cpp:346
-#, fuzzy, kde-format
-#| msgid "%1: Event %2 not found, or not editable"
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not unique"
-msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
+#: fontcolour.cpp:71
+#, fuzzy
+#| msgid "&Foreground color:"
+msgctxt "@label:listbox"
+msgid "Foreground color:"
+msgstr "अग्रभूमि रङ:"
 
-#: kalarmapp.cpp:348
-#, fuzzy, kde-format
-#| msgid "%1: Event %2 not found, or not editable"
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found"
-msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
+#: fontcolour.cpp:76
+#, fuzzy
+#| msgid "Select the alarm message foreground color"
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message foreground color"
+msgstr "संसूचक सन्देशको अग्रभूमि रङ चयन गर्नुहोस्"
 
-#: kalarmapp.cpp:376 kalarmapp.cpp:378
-#, fuzzy, kde-format
-#| msgid "%1: Event %2 not found, or not editable"
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not editable"
-msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
+#: fontcolour.cpp:84
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "@label:listbox"
+msgid "Background color:"
+msgstr "पृष्ठभूमि रङ:"
 
-#: kalarmapp.cpp:557
-msgctxt "@info"
-msgid ""
-"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
-"><nl/>(The KDE time zone service is not available:<nl/>check that "
-"<application>ktimezoned</application> is installed.)"
-msgstr ""
+#: fontcolour.cpp:89
+#, fuzzy
+#| msgid "Select the alarm message background color"
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message background color"
+msgstr "संसूचक सन्देशको पृष्ठभूमि रङ चयन गर्नुहोस्"
 
-#: kalarmapp.cpp:634
+#: fontcolour.cpp:97
+#, fuzzy
+#| msgid "Use &default font"
+msgctxt "@option:check"
+msgid "Use default font"
+msgstr "पूर्वनिर्धारित फन्ट प्रयोग गर्नुहोस्"
+
+#: fontcolour.cpp:100
 #, fuzzy
 #| msgid ""
-#| "Quitting will disable alarms\n"
-#| "(once any alarm message windows are closed)."
-msgctxt "@info"
+#| "Check to use the default font current at the time the alarm is displayed."
+msgctxt "@info:whatsthis"
 msgid ""
-"Quitting will disable alarms (once any alarm message windows are closed)."
-msgstr ""
-"अन्त्य गर्दा संसूचक अक्षम हुन्छन्\n"
-"(एकपटक सबै संसूचक सन्देश सञ्झ्याल बन्द हुन्छन्) ।"
+"Check to use the default font current at the time the alarm is displayed."
+msgstr "संसूचक प्रदर्शित भएको समयमा हालैको पूर्वनिर्धारित फन्ट प्रयोग गर्न जाँच गर्नुहोस् ।"
 
-#: kalarmapp.cpp:642
-msgctxt "@info"
-msgid "Quitting will cancel the scheduled Wake from Suspend."
-msgstr ""
+#: fontcolour.h:39
+msgid "Requested font"
+msgstr "अनुरोध गरिएका फन्ट"
 
-#: kalarmapp.cpp:654
-msgctxt "@info"
+#: fontcolourbutton.cpp:43
+#, fuzzy
+#| msgid "Font && Co&lor..."
+msgctxt "@action:button"
+msgid "Font && Color..."
+msgstr "फन्ट र रङ..."
+
+#: fontcolourbutton.cpp:47
+#, fuzzy
+#| msgid ""
+#| "Choose the font, and foreground and background color, for the alarm "
+#| "message."
+msgctxt "@info:whatsthis"
 msgid ""
-"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
-"if KAlarm is not started.)"
-msgstr ""
+"Choose the font, and foreground and background color, for the alarm message."
+msgstr "संसूचक सन्देशका लागि फन्ट, अग्रभूमि र पृष्ठभूमि रङ रोज्नुहोस् ।"
 
-#: kalarmapp.cpp:2126
+#: fontcolourbutton.cpp:71
 #, fuzzy
-#| msgid "Error creating temporary script file"
-msgctxt "@info"
-msgid "Error creating temporary script file"
-msgstr "अस्थायी स्क्रिप्ट फाइल सिर्जना गर्दा त्रुटि"
-
-#: kalarmapp.cpp:2214
-#, fuzzy
-#| msgid "Pre-alarm action:"
-msgctxt "@info"
-msgid "Pre-alarm action:"
-msgstr "संसूचक पुर्वको कार्य:"
-
-#: kalarmapp.cpp:2220
-#, fuzzy
-#| msgid "Post-alarm action:"
-msgctxt "@info"
-msgid "Post-alarm action:"
-msgstr "संसूचक पछिको कार्य:"
+#| msgid "Choose Alarm Font & Color"
+msgctxt "@title:window"
+msgid "Choose Alarm Font & Color"
+msgstr "संसूचक फन्ट र रङ रोज्नुहोस्"
 
 #: kamail.cpp:91
 #, fuzzy
@@ -2742,1086 +2419,6 @@ msgstr "इमेल पठाउन असफल"
 msgctxt "@info"
 msgid "Error sending email"
 msgstr "संसूचक बचत गर्दा त्रुटि"
-
-#: latecancel.cpp:44
-#, fuzzy
-#| msgid "Cancel if late"
-msgctxt "@option:check"
-msgid "Cancel if late"
-msgstr "ढीला भएमा रद्द गर्नुहोस्"
-
-#: latecancel.cpp:45
-#, fuzzy
-#| msgid "Auto-close window after this time"
-msgctxt "@option:check"
-msgid "Auto-close window after this time"
-msgstr "यो समय पछि सञ्झ्याल स्वत: बन्द हुन्छ"
-
-#: latecancel.cpp:46
-#, fuzzy
-#| msgid "Auto-close window after late-cancellation time"
-msgctxt "@option:check"
-msgid "Auto-close window after late-cancellation time"
-msgstr "पछिल्लो रद्द समयपछि सञ्झ्याल स्वत: बन्द हुन्छ"
-
-#: latecancel.cpp:56
-#, fuzzy
-#| msgid ""
-#| "If checked, the alarm will be canceled if it cannot be triggered within "
-#| "the specified period after its scheduled time. Possible reasons for not "
-#| "triggering include your being logged off, X not running, or the alarm "
-#| "daemon not running.\n"
-#| "\n"
-#| "If unchecked, the alarm will be triggered at the first opportunity after "
-#| "its scheduled time, regardless of how late it is."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If checked, the alarm will be canceled if it cannot be triggered "
-"within the specified period after its scheduled time. Possible reasons for "
-"not triggering include your being logged off, X not running, or "
-"<application>KAlarm</application> not running.</para><para>If unchecked, the "
-"alarm will be triggered at the first opportunity after its scheduled time, "
-"regardless of how late it is.</para>"
-msgstr ""
-"चेक गरिएमा, संसूचक तालिकिकरण गरिएको समय भन्दा पछाडि निर्दिष्ट गरिएको समयमा ट्रिगर "
-"गर्न नसकिएमा यो रद्द गरिएको हुन्छ । ट्रिगरिङ नहुने सम्भावित कारण लगअफ समावेश गरिएको, "
-"X नचलेको, वा संसूचक डेइमन नचलेको हुनुपर्छ ।\n"
-"\n"
-"चिनो हटाइएमा, जति ढीला भए पनि, संसूचक तालिकिकरण गिरएको पछाडिको पहिलो अवसरमा "
-"ट्रिगर हुन्छ ।"
-
-#: latecancel.cpp:82
-#, fuzzy
-#| msgctxt "Cancel if late by 10 minutes"
-#| msgid "Ca&ncel if late by"
-msgctxt "@option:check Cancel if late by 10 minutes"
-msgid "Cancel if late by"
-msgstr "ढीला भएमा रद्द गर्नुहोस्"
-
-#: latecancel.cpp:83
-#, fuzzy
-#| msgid "Enter how late will cause the alarm to be canceled"
-msgctxt "@info:whatsthis"
-msgid "Enter how late will cause the alarm to be canceled"
-msgstr "कति समयको पछि संसूचक रद्द हुने प्रविष्ट गर्नुहोस्"
-
-#: latecancel.cpp:99
-#, fuzzy
-#| msgid ""
-#| "Automatically close the alarm window after the expiry of the late-"
-#| "cancellation period"
-msgctxt "@info:whatsthis"
-msgid ""
-"Automatically close the alarm window after the expiry of the late-"
-"cancellation period"
-msgstr "पछिल्लो रद्द अवधिको म्याद समाप्तपछि स्वचालित रूपमा संसूचक सञ्झ्याल बन्द हुन्छ"
-
-#: lib/filedialog.cpp:60
-#, fuzzy
-#| msgid "Failed to open file"
-msgctxt "@option:check"
-msgid "Append to existing file"
-msgstr "फाइल खोल्न असफल"
-
-#: lib/kalocale.cpp:51
-#, fuzzy
-#| msgid "Monday"
-msgctxt "@option Name of the weekday"
-msgid "Monday"
-msgstr "सोमबार"
-
-#: lib/kalocale.cpp:52
-#, fuzzy
-#| msgid "Tuesday"
-msgctxt "@option Name of the weekday"
-msgid "Tuesday"
-msgstr "मङ्गलबार"
-
-#: lib/kalocale.cpp:53
-#, fuzzy
-#| msgid "Wednesday"
-msgctxt "@option Name of the weekday"
-msgid "Wednesday"
-msgstr "बुधबार"
-
-#: lib/kalocale.cpp:54
-#, fuzzy
-#| msgid "Thursday"
-msgctxt "@option Name of the weekday"
-msgid "Thursday"
-msgstr "बिहिबार"
-
-#: lib/kalocale.cpp:55
-#, fuzzy
-#| msgid "Friday"
-msgctxt "@option Name of the weekday"
-msgid "Friday"
-msgstr "शुक्रबार"
-
-#: lib/kalocale.cpp:56
-#, fuzzy
-#| msgid "Saturday"
-msgctxt "@option Name of the weekday"
-msgid "Saturday"
-msgstr "शनिबार"
-
-#: lib/kalocale.cpp:57
-#, fuzzy
-#| msgid "Sunday"
-msgctxt "@option Name of the weekday"
-msgid "Sunday"
-msgstr "आइतबार"
-
-#: lib/shellprocess.cpp:158
-#, fuzzy
-#| msgid "Failed to execute command (shell access not authorized):"
-msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized)"
-msgstr "आदेश कार्यान्वयन गर्न असफल (शेल पहुँच आधिकारिक छैन):"
-
-#: lib/shellprocess.cpp:161
-#, fuzzy
-#| msgid "Failed to execute command:"
-msgctxt "@info"
-msgid "Failed to execute command"
-msgstr "आदेश कार्यान्वयन गर्न असफल:"
-
-#: lib/shellprocess.cpp:163
-#, fuzzy
-#| msgid "Command execution error:"
-msgctxt "@info"
-msgid "Command execution error"
-msgstr "आदेश कार्यान्वयन त्रुटि:"
-
-#: lib/shellprocess.cpp:166
-#, fuzzy, kde-format
-#| msgid ""
-#| "Command executed:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Command exit code: %1"
-msgstr ""
-"आदेश कार्यान्वयन गरियो:\n"
-"%1"
-
-#: lib/timeedit.cpp:177
-#, fuzzy
-#| msgid "am"
-msgctxt "@item:inlistbox Morning, as in 2am"
-msgid "am"
-msgstr "पूर्वान्ह"
-
-#: lib/timeedit.cpp:196
-#, fuzzy
-#| msgid "pm"
-msgctxt "@item:inlistbox Afternoon, as in 2pm"
-msgid "pm"
-msgstr "अपरान्ह"
-
-#: lib/timeperiod.cpp:41
-#, fuzzy
-#| msgid "hours/minutes"
-msgctxt "@item:inlistbox Time units"
-msgid "minutes"
-msgstr "घण्टा/मिनेट"
-
-#: lib/timeperiod.cpp:42
-#, fuzzy
-#| msgid "hours/minutes"
-msgctxt "@item:inlistbox Time units"
-msgid "hours/minutes"
-msgstr "घण्टा/मिनेट"
-
-#: lib/timeperiod.cpp:43
-#, fuzzy
-#| msgid "days"
-msgctxt "@item:inlistbox Time units"
-msgid "days"
-msgstr "दिन"
-
-#: lib/timeperiod.cpp:44
-#, fuzzy
-#| msgid "weeks"
-msgctxt "@item:inlistbox Time units"
-msgid "weeks"
-msgstr "हप्ता"
-
-#: lib/timespinbox.cpp:77
-#, fuzzy
-#| msgid ""
-#| "Press the Shift key while clicking the spin buttons to adjust the time by "
-#| "a larger step (6 hours / 5 minutes)."
-msgctxt "@info:whatsthis"
-msgid ""
-"Press the Shift key while clicking the spin buttons to adjust the time by a "
-"larger step (6 hours / 5 minutes)."
-msgstr ""
-"बृहत चरण अनुरूप समय समायोजन गर्न स्पिन बटन क्लिक गरेको बेलामा Shift key थिच्नुहोस् (६ "
-"घण्टा/ ५ मिनेट) ।"
-
-#: main.cpp:39
-msgid "KAlarm"
-msgstr "केडीई संसूचक"
-
-#: main.cpp:40
-msgid "Personal alarm message, command and email scheduler for KDE"
-msgstr "केडीई का लागि व्यक्तिगत संसूचक सन्देश, आदेश र इमेल अनुसूचक"
-
-#: main.cpp:42
-#, fuzzy
-#| msgid "Copyright 2001-2007, David Jarvie"
-msgid "Copyright 2001-2012, David Jarvie"
-msgstr "प्रतिलिपि अधिकार २००१-२००७, डेभिड जार्भे"
-
-#: main.cpp:50
-msgid "Prompt for confirmation when alarm is acknowledged"
-msgstr "संसूचक स्वीकृत भएमा तुरुन्त यकीन गर्नुहोस्"
-
-#: main.cpp:52
-msgid "Attach file to email (repeat as needed)"
-msgstr "इमेलमा फाइल सङ्लग्न गर्नुहोस् (आवश्यक भएमा दोहोर्याउनुहोस्)"
-
-#: main.cpp:53
-msgid "Auto-close alarm window after --late-cancel period"
-msgstr "पछिल्लो रद्द अवधि पछि संसूचक सञ्झ्याल स्वत: बन्द गर्नुहोस्"
-
-#: main.cpp:54
-msgid "Blind copy email to self"
-msgstr "आफ्नै स्थानमा गुप्त प्रतिलिपि गर्नुहोस्"
-
-#: main.cpp:56
-msgid "Beep when message is displayed"
-msgstr "सन्देश प्रदर्शित हुदा बिप गर्नुहोस्"
-
-#: main.cpp:59
-msgid "Message background color (name or hex 0xRRGGBB)"
-msgstr "सन्देश पृष्ठभूमि रङ (नाम वा hex 0xRRGGBB)"
-
-#: main.cpp:62
-msgid "Message foreground color (name or hex 0xRRGGBB)"
-msgstr "सन्देश अग्रभूमि रङ (नाम वा hex 0xRRGGBB)"
-
-#: main.cpp:63
-msgid "Cancel alarm with the specified event ID"
-msgstr "निर्दिष्ट गरिएको घटना आईडी मा संसूचक रद्द गर्नुहोस्"
-
-#: main.cpp:65
-msgid "Disable the alarm"
-msgstr "संसूचक अक्षम पार्नुहोस्"
-
-#: main.cpp:66
-#, fuzzy
-#| msgid "Disable the alarm"
-msgid "Disable monitoring of all alarms"
-msgstr "संसूचक अक्षम पार्नुहोस्"
-
-#: main.cpp:68
-msgid "Execute a shell command line"
-msgstr "शेल आदेश लाइन कार्यान्वयन गर्नुहोस्"
-
-#: main.cpp:70
-msgid "Command line to generate alarm message text"
-msgstr ""
-
-#: main.cpp:71
-msgid "Display the alarm edit dialog to edit the specified alarm"
-msgstr "निर्दिष्ट गरिएको संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रर्दशन गर्नुहोस्"
-
-#: main.cpp:72
-#, fuzzy
-#| msgid "Display the alarm edit dialog to edit a new alarm"
-msgid "Display the alarm edit dialog to edit a new display alarm"
-msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:73
-#, fuzzy
-#| msgid "Display the alarm edit dialog to edit a new alarm"
-msgid "Display the alarm edit dialog to edit a new command alarm"
-msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:74
-#, fuzzy
-#| msgid "Display the alarm edit dialog to edit a new alarm"
-msgid "Display the alarm edit dialog to edit a new email alarm"
-msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:75
-#, fuzzy
-#| msgid "Display the alarm edit dialog to edit a new alarm"
-msgid "Display the alarm edit dialog to edit a new audio alarm"
-msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:76
-msgid "Display the alarm edit dialog, preset with a template"
-msgstr "टेम्प्लेटसँग प्रिसेट संसूचक सम्पादन संवाद प्रर्दशन गर्नुहोस्"
-
-#: main.cpp:78
-msgid "File to display"
-msgstr "प्रदर्शन गरिने फाइल"
-
-#: main.cpp:80
-msgid "KMail identity to use as sender of email"
-msgstr "इमेलको प्रेषकका रूपमा प्रयोग गरिने केडीई मेल परिचय"
-
-#: main.cpp:82
-msgid "Interval between alarm repetitions"
-msgstr "संसूचक दोहोर्याई बीचमा अन्तराल"
-
-#: main.cpp:84
-msgid "Show alarm as an event in KOrganizer"
-msgstr "केडीई आयोजकमा घटनाको रूपमा संसूचक देखाउनुहोस्"
-
-#: main.cpp:86
-msgid "Cancel alarm if more than 'period' late when triggered"
-msgstr "ट्रिगर गर्दा 'अवधि' भन्दा धेरै ढीला भएमा संसूचक रद्द गर्नुहोस्"
-
-#: main.cpp:87
-#, fuzzy
-#| msgid "List of scheduled alarms"
-msgid "Output list of scheduled alarms to stdout"
-msgstr "तालिकवद्ध संसूचकको सूची"
-
-#: main.cpp:89
-msgid "Repeat alarm at every login"
-msgstr "प्रत्येक लगइनमा संसूचक दोहोर्याउनुहोस्"
-
-#: main.cpp:91
-msgid "Send an email to the given address (repeat as needed)"
-msgstr "दिएको ठेगानामा इमेल पठाउनुहोस् (आवश्यकता अनुसार दोहोर्याउनुहोस्)"
-
-#: main.cpp:93
-msgid "Audio file to play once"
-msgstr "एक पटक प्ले गरिने अडियो फाइल"
-
-#: main.cpp:95
-msgid "Audio file to play repeatedly"
-msgstr "दोहोर्याएर प्ले गरिने अडियो फाइल"
-
-#: main.cpp:96
-msgid "Specify alarm recurrence using iCalendar syntax"
-msgstr "आई क्यालेन्डर वाक्य संरचना प्रयोग गरेर संसूचक पुनरावृत्ति निर्दिष्ट गर्नुहोस्"
-
-#: main.cpp:98
-#, fuzzy
-#| msgid "Display reminder in advance of alarm"
-msgid "Display reminder before or after alarm"
-msgstr "संसूचकको अगाडि सचेतक प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:99
-#, fuzzy
-#| msgid "Display reminder once, before first alarm recurrence"
-msgid "Display reminder once, before or after first alarm recurrence"
-msgstr "पहिलो संसूचक पुनरावृत्ति अगाडि, सचेतक एक पटक प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:101
-msgid "Number of times to repeat alarm (including initial occasion)"
-msgstr "संसूचक दोहोरिने समय (सुरुआत घटना समावेश गरेर)"
-
-#: main.cpp:103
-msgid "Speak the message when it is displayed"
-msgstr "सन्देश प्रदर्शित हुदा वाचन गर्नुहोस्"
-
-#: main.cpp:105
-msgid "Email subject line"
-msgstr "इमेल वस्तु लाइन"
-
-#: main.cpp:107
-#, fuzzy
-#| msgid ""
-#| "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
-msgstr ""
-"समय [[[yyyy-]mm-]dd-]hh:mm [TZ], वा मिति yyyy-mm-dd [TZ] सम्म दोहोर्याउनुहोस्"
-
-#: main.cpp:110
-msgid ""
-"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"संसूचक [[[yyyy-]mm-]dd-]hh:mm [TZ], वा मिति yyyy-mm-dd [TZ] समयमा ट्रिगर गर्नुहोस्"
-
-#: main.cpp:111
-msgid "Display system tray icon"
-msgstr "प्रणाली ट्रे प्रतिमा प्रदर्शन गर्नुहोस्"
-
-#: main.cpp:112
-msgid "Trigger alarm with the specified event ID"
-msgstr "निर्दिष्ट गरिएको घटना आईडी मा संसूचक ट्रिगर गर्नुहोस्"
-
-#: main.cpp:114
-msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"समय [[[yyyy-]mm-]dd-]hh:mm [TZ], वा मिति yyyy-mm-dd [TZ] सम्म दोहोर्याउनुहोस्"
-
-#: main.cpp:116
-msgid "Volume to play audio file"
-msgstr "अडियो फाइल प्ले गर्न भोल्युम"
-
-#: main.cpp:117
-msgid "Message text to display"
-msgstr "प्रदर्शन गरिने सन्देश पाठ"
-
-#: mainwindow.cpp:126
-#, fuzzy
-#| msgid "Show &Alarm Times"
-msgctxt "@action"
-msgid "Show &Alarm Times"
-msgstr "संसूचक समय देखाउनुहोस्"
-
-#: mainwindow.cpp:127
-#, fuzzy
-#| msgid "Show alarm time"
-msgctxt "@option:check"
-msgid "Show alarm time"
-msgstr "संसूचक समय देखाउनुहोस्"
-
-#: mainwindow.cpp:128
-#, fuzzy
-#| msgid "Show Time t&o Alarms"
-msgctxt "@action"
-msgid "Show Time t&o Alarms"
-msgstr "संसूचकमा समय देखाउनुहोस्"
-
-#: mainwindow.cpp:129
-#, fuzzy
-#| msgid "Show time u&ntil alarm"
-msgctxt "@option:check"
-msgid "Show time until alarm"
-msgstr "संसूचन हुने बेलासम्म समय देखाउनुहोस्"
-
-#: mainwindow.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Failure to create menus\n"
-#| "(perhaps %1 missing or corrupted)"
-msgctxt "@info"
-msgid ""
-"Failure to create menus (perhaps <filename>%1</filename> missing or "
-"corrupted)"
-msgstr ""
-"मेनु सिर्जना गर्न असफल\n"
-"(सम्भवत %1 छुटेको वा बिग्रिएको हुनुपर्छ)"
-
-#: mainwindow.cpp:458
-#, fuzzy
-#| msgid "&Templates..."
-msgctxt "@action"
-msgid "&Templates..."
-msgstr "टेम्प्लेट..."
-
-#: mainwindow.cpp:462
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "&New"
-msgstr "नयाँ..."
-
-#: mainwindow.cpp:489
-#, fuzzy
-#| msgid "Create Tem&plate..."
-msgctxt "@action"
-msgid "Create Tem&plate..."
-msgstr "टेम्प्लेट सिर्जना गर्नुहोस्..."
-
-#: mainwindow.cpp:493
-#, fuzzy
-#| msgid "&Copy..."
-msgctxt "@action"
-msgid "&Copy..."
-msgstr "प्रतिलिपि बनाउनुहोस्..."
-
-#: mainwindow.cpp:498 resourceselector.cpp:518
-#, fuzzy
-#| msgid "&Edit..."
-msgctxt "@action"
-msgid "&Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#: mainwindow.cpp:503
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "@action"
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
-
-#: mainwindow.cpp:509
-#, fuzzy
-#| msgid "Resource Configuration"
-msgctxt "@action"
-msgid "Delete Without Confirmation"
-msgstr "संसाधन कन्फिगरेसन"
-
-#: mainwindow.cpp:514
-#, fuzzy
-#| msgid "Reac&tivate"
-msgctxt "@action"
-msgid "Reac&tivate"
-msgstr "पुन: सक्रिय पार्नुहोस्"
-
-#: mainwindow.cpp:524
-msgctxt "@action"
-msgid "Wake From Suspend..."
-msgstr ""
-
-#: mainwindow.cpp:541
-#, fuzzy
-#| msgid "Show Archived Alarms"
-msgctxt "@action"
-msgid "Show Archi&ved Alarms"
-msgstr "सङ्ग्रहित संसूचक देखाउनुहोस्"
-
-#: mainwindow.cpp:546
-#, fuzzy
-#| msgid "Show in System &Tray"
-msgctxt "@action"
-msgid "Show in System &Tray"
-msgstr "प्रणाली ट्रेमा देखाउनुहोस्"
-
-#: mainwindow.cpp:550
-#, fuzzy
-#| msgid "Calendar Files"
-msgctxt "@action"
-msgid "Show &Calendars"
-msgstr "क्यालेन्डर फाइल"
-
-#: mainwindow.cpp:558
-#, fuzzy
-#| msgid "Import &Alarms..."
-msgctxt "@action"
-msgid "Import &Alarms..."
-msgstr "संसूचक आयात गर्नुहोस्..."
-
-#: mainwindow.cpp:562
-#, fuzzy
-#| msgid "Import &Birthdays..."
-msgctxt "@action"
-msgid "Import &Birthdays..."
-msgstr "जन्मदिन आयात गर्नुहोस्..."
-
-#: mainwindow.cpp:566
-#, fuzzy
-#| msgid "Import &Alarms..."
-msgctxt "@action"
-msgid "E&xport Selected Alarms..."
-msgstr "संसूचक आयात गर्नुहोस्..."
-
-#: mainwindow.cpp:570 resourceselector.cpp:538
-#, fuzzy
-#| msgid "Im&port..."
-msgctxt "@action"
-msgid "E&xport..."
-msgstr "आयात गर्नुहोस्..."
-
-#: mainwindow.cpp:574
-#, fuzzy
-#| msgid "&Refresh Alarms"
-msgctxt "@action"
-msgid "&Refresh Alarms"
-msgstr "संसूचक ताजा पार्नुहोस्"
-
-#: mainwindow.cpp:829
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete the selected alarm?"
-#| msgid_plural "Do you really want to delete the %1 selected alarms?"
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm?"
-msgid_plural "Do you really want to delete the %1 selected alarms?"
-msgstr[0] "तपाईँ वास्तवमै चयन गरिएको संसूचक मेट्न चाहनुहुन्छ ?"
-msgstr[1] "तपाईँ वास्तवमै चयन गरिएका संसूचक %1 मेट्न चाहनुहुन्छ ?"
-
-#: mainwindow.cpp:831
-#, fuzzy
-#| msgid "Delete Alarm"
-#| msgid_plural "Delete Alarms"
-msgctxt "@title:window"
-msgid "Delete Alarm"
-msgid_plural "Delete Alarms"
-msgstr[0] "संसूचक मेट्नुहोस्"
-msgstr[1] "संसूचक मेट्नुहोस्"
-
-#: mainwindow.cpp:832 templatedlg.cpp:214
-#, fuzzy
-#| msgid "&Delete"
-msgctxt "@action:button"
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
-
-#: mainwindow.cpp:976
-#, fuzzy
-#| msgid "Hide Archived Alarms"
-msgctxt "@info:tooltip"
-msgid "Hide Archived Alarms"
-msgstr "सङ्ग्रहित संसूचक लुकाउनुहोस्"
-
-#: mainwindow.cpp:977
-#, fuzzy
-#| msgid "Show Archived Alarms"
-msgctxt "@info:tooltip"
-msgid "Show Archived Alarms"
-msgstr "सङ्ग्रहित संसूचक देखाउनुहोस्"
-
-#: mainwindow.cpp:1064
-#, fuzzy
-#| msgid "Import birthdays"
-msgctxt "@info"
-msgid "Import birthdays"
-msgstr "जन्मदिन आयात गर्नुहोस्"
-
-#: mainwindow.cpp:1234
-#, fuzzy, kde-format
-#| msgctxt "Undo-action: message"
-#| msgid "%1: %2"
-msgctxt "@action Undo/Redo [action]"
-msgid "%1 %2"
-msgstr "%1: %2"
-
-#: mainwindow.cpp:1235
-#, fuzzy, kde-format
-#| msgctxt "Undo [action]: message"
-#| msgid "%1 %2: %3"
-msgctxt "@action Undo [action]: message"
-msgid "%1 %2: %3"
-msgstr "%1 %2: %3"
-
-#: mainwindow.cpp:1521
-#, fuzzy
-#| msgid "Display Alarms"
-msgctxt "@item:inlistbox"
-msgid "Display Alarm"
-msgstr "संसूचक प्रदर्शन गर्नुहोस्"
-
-#: mainwindow.cpp:1523
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@item:inlistbox"
-msgid "Email Alarm"
-msgstr "इमेल संसूचक"
-
-#: mainwindow.cpp:1525
-#, fuzzy
-#| msgid "Command Alarms"
-msgctxt "@item:inlistbox"
-msgid "Command Alarm"
-msgstr "आदेश संसूचक"
-
-#: mainwindow.cpp:1527
-#, fuzzy
-#| msgid "Alarm Type"
-msgctxt "@title:window"
-msgid "Alarm Type"
-msgstr "संसूचक प्रकार"
-
-#: mainwindow.cpp:1528
-#, fuzzy
-#| msgid "Choose Alarm Template"
-msgctxt "@info"
-msgid "Choose alarm type to create:"
-msgstr "संसूचक टेम्प्लेट रोज्नुहोस्"
-
-#: mainwindow.cpp:1681
-#, fuzzy
-#| msgid "Disa&ble"
-msgctxt "@action"
-msgid "Disa&ble"
-msgstr "अक्षम पार्नुहोस्"
-
-#: mainwindow.cpp:1681
-#, fuzzy
-#| msgid "Ena&ble"
-msgctxt "@action"
-msgid "Ena&ble"
-msgstr "सक्षम पार्नुहोस्"
-
-#: messagewin.cpp:438 messagewin.cpp:861
-#, fuzzy
-#| msgid "Message"
-msgctxt "@title:window"
-msgid "Message"
-msgstr "सन्देश"
-
-#: messagewin.cpp:438
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@title:window"
-msgid "Reminder"
-msgstr "सचेतक"
-
-#: messagewin.cpp:456
-#, fuzzy
-#| msgid ""
-#| "The scheduled date/time for the message (as opposed to the actual time of "
-#| "display)."
-msgctxt "@info:whatsthis"
-msgid ""
-"The scheduled date/time for the message (as opposed to the actual time of "
-"display)."
-msgstr "सन्देशका लागि तालिकावद्ध मिति/समय (प्रदर्शनको वास्तविक समयको विपरित रूपमा) ।"
-
-#: messagewin.cpp:463
-#, fuzzy
-#| msgid "Reminder"
-msgctxt "@info"
-msgid "Reminder"
-msgstr "सचेतक"
-
-#: messagewin.cpp:487
-#, fuzzy
-#| msgid "The file whose contents are displayed below"
-msgctxt "@info:whatsthis"
-msgid "The file whose contents are displayed below"
-msgstr "तल सामाग्री प्रदर्शित हुने फाइल"
-
-#: messagewin.cpp:543
-#, fuzzy
-#| msgid "The contents of the file to be displayed"
-msgctxt "@info:whatsthis"
-msgid "The contents of the file to be displayed"
-msgstr "प्रदर्शित हुने फाइलका सामग्री"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "Failed to open file"
-msgctxt "@info"
-msgid "Failed to open file"
-msgstr "फाइल खोल्न असफल"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "File is a folder"
-msgctxt "@info"
-msgid "File is a folder"
-msgstr "फाइल एउटा फोल्डर हो"
-
-#: messagewin.cpp:551
-#, fuzzy
-#| msgid "File not found"
-msgctxt "@info"
-msgid "File not found"
-msgstr "फाइल फेला परेन"
-
-#: messagewin.cpp:571
-#, fuzzy
-#| msgid "The alarm message"
-msgctxt "@info:whatsthis"
-msgid "The alarm message"
-msgstr "संसूचक सन्देश"
-
-#: messagewin.cpp:598
-msgctxt "@info:whatsthis"
-msgid "The output of the alarm's command"
-msgstr ""
-
-#: messagewin.cpp:640
-#, fuzzy
-#| msgid "The email to send"
-msgctxt "@info:whatsthis"
-msgid "The email to send"
-msgstr "पठाइने इमेल"
-
-#: messagewin.cpp:646
-#, fuzzy
-#| msgctxt "Email addressee"
-#| msgid "To:"
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "लाई:"
-
-#: messagewin.cpp:653
-#, fuzzy
-#| msgctxt "Email subject"
-#| msgid "Subject:"
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "विषयवस्तु:"
-
-#: messagewin.cpp:679
-#, fuzzy
-#| msgid "Error"
-msgctxt "@title:window"
-msgid "Error"
-msgstr "त्रुटि"
-
-#: messagewin.cpp:699
-msgctxt "@option:check"
-msgid "Do not display this error message again for this alarm"
-msgstr ""
-
-#: messagewin.cpp:718
-#, fuzzy
-#| msgid "Acknowledge the alarm"
-msgctxt "@info:whatsthis"
-msgid "Acknowledge the alarm"
-msgstr "संसूचक स्वीकार गर्नुहोस्"
-
-#: messagewin.cpp:723
-#, fuzzy
-#| msgid "&Edit..."
-msgctxt "@action:button"
-msgid "&Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#: messagewin.cpp:728
-#, fuzzy
-#| msgid "Edit the alarm."
-msgctxt "@info:whatsthis"
-msgid "Edit the alarm."
-msgstr "संसूचक सम्पादन गर्नुहोस् ।"
-
-#: messagewin.cpp:732
-#, fuzzy
-#| msgid "&Defer..."
-msgctxt "@action:button"
-msgid "&Defer..."
-msgstr "पछि सार्नुहोस्..."
-
-#: messagewin.cpp:737
-#, fuzzy
-#| msgid ""
-#| "Defer the alarm until later.\n"
-#| "You will be prompted to specify when the alarm should be redisplayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Defer the alarm until later.</para><para>You will be prompted to "
-"specify when the alarm should be redisplayed.</para>"
-msgstr ""
-"संसूचक पछिसम्म सार्नुहोस् ।\n"
-"तपाईँलाई संसूचक पुन: प्रदर्शित हुने समयमा निर्दिष्ट गर्न प्रोत्साहित गरिनेछ ।"
-
-#: messagewin.cpp:752 sounddlg.cpp:442
-#, fuzzy
-#| msgid "Stop sound"
-msgctxt "@info:tooltip"
-msgid "Stop sound"
-msgstr "ध्वनि बन्द गर्नुहोस्"
-
-#: messagewin.cpp:753 sounddlg.cpp:443
-#, fuzzy
-#| msgid "Stop playing the sound"
-msgctxt "@info:whatsthis"
-msgid "Stop playing the sound"
-msgstr "ध्वनि बजाउन बन्द गर्नुहोस्"
-
-#: messagewin.cpp:767
-msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail</application>"
-msgstr ""
-
-#: messagewin.cpp:768
-#, fuzzy
-#| msgid "Locate and highlight this email in KMail"
-msgctxt "@info:whatsthis"
-msgid "Locate and highlight this email in <application>KMail</application>"
-msgstr "यो इमेललाई केडीई मेलमा स्थापना गर्नुहोस् र हाइलाइट गर्नुहोस्"
-
-#: messagewin.cpp:777
-msgctxt "@info:tooltip"
-msgid "Activate <application>KAlarm</application>"
-msgstr ""
-
-#: messagewin.cpp:778
-msgctxt "@info:whatsthis"
-msgid "Activate <application>KAlarm</application>"
-msgstr ""
-
-#: messagewin.cpp:938
-#, fuzzy
-#| msgid "Today"
-msgctxt "@info"
-msgid "Today"
-msgstr "आज"
-
-#: messagewin.cpp:940
-#, fuzzy, kde-format
-#| msgid "Tomorrow"
-#| msgid_plural "in %1 days' time"
-msgctxt "@info"
-msgid "Tomorrow"
-msgid_plural "in %1 days' time"
-msgstr[0] "भोली"
-msgstr[1] "%1 दिनको अवधिमा"
-
-#: messagewin.cpp:942
-#, fuzzy, kde-format
-#| msgid "in 1 week's time"
-#| msgid_plural "in %1 weeks' time"
-msgctxt "@info"
-msgid "in 1 week's time"
-msgid_plural "in %1 weeks' time"
-msgstr[0] "१ हप्ताको अवधिमा"
-msgstr[1] "%1 हप्ताको अवधिमा"
-
-#: messagewin.cpp:956
-#, fuzzy, kde-format
-#| msgid "in 1 minute's time"
-#| msgid_plural "in %1 minutes' time"
-msgctxt "@info"
-msgid "in 1 minute's time"
-msgid_plural "in %1 minutes' time"
-msgstr[0] "१ मिनेटको अवधिमा"
-msgstr[1] "%1 मिनेटको अवधिमा"
-
-#: messagewin.cpp:958
-#, fuzzy, kde-format
-#| msgid "in 1 hour's time"
-#| msgid_plural "in %1 hours' time"
-msgctxt "@info"
-msgid "in 1 hour's time"
-msgid_plural "in %1 hours' time"
-msgstr[0] "१ घण्टाको अवधिमा"
-msgstr[1] "%1 घण्टाको अवधिमा"
-
-#: messagewin.cpp:961
-#, fuzzy, kde-format
-#| msgid "1 Hour"
-#| msgid_plural "%1 Hours"
-msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "१ घण्टा"
-msgstr[1] "%1 घण्टा"
-
-#: messagewin.cpp:962
-#, fuzzy, kde-format
-#| msgid "in 1 minute's time"
-#| msgid_plural "in %1 minutes' time"
-msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
-msgid "in %2 1 minute's time"
-msgid_plural "in %2 %1 minutes' time"
-msgstr[0] "१ मिनेटको अवधिमा"
-msgstr[1] "%1 मिनेटको अवधिमा"
-
-#: messagewin.cpp:1464 messagewin.cpp:1474
-#, fuzzy
-#| msgid "Unable to speak message"
-msgctxt "@info"
-msgid "Unable to speak message"
-msgstr "सन्देश वाचन गर्न असमर्थ"
-
-#: messagewin.cpp:1474
-#, fuzzy
-#| msgid "DBus call sayMessage failed"
-msgctxt "@info"
-msgid "D-Bus call say() failed"
-msgstr "DBus कल sayMessage असफल भयो"
-
-#: messagewin.cpp:1617
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot open audio file:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Cannot open audio file: <filename>%1</filename>"
-msgstr ""
-"अडियो फाइल खुलाउन सकिँदैन:\n"
-"%1"
-
-#: messagewin.cpp:1715
-#, fuzzy, kde-format
-#| msgid ""
-#| "Error attaching file:\n"
-#| "%1"
-msgctxt "@info"
-msgid ""
-"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
-msgstr ""
-"फाइल सङ्लग्न गर्दा त्रुटि:\n"
-"%1"
-
-#: messagewin.cpp:2044
-#, fuzzy
-#| msgid "Do you really want to acknowledge this alarm?"
-msgctxt "@info"
-msgid "Do you really want to acknowledge this alarm?"
-msgstr "तपाईँ वास्तवमै यो संसूचकलाई स्वीकार गर्न चाहनुहुन्छ ?"
-
-#: messagewin.cpp:2045
-#, fuzzy
-#| msgid "&Acknowledge"
-msgctxt "@action:button"
-msgid "Acknowledge"
-msgstr "स्वीकृत"
-
-#: messagewin.cpp:2045
-#, fuzzy
-#| msgid "Acknowledge Alarm"
-msgctxt "@action:button"
-msgid "Acknowledge Alarm"
-msgstr "स्वीकृत संसूचक"
-
-#: messagewin.cpp:2096
-#, fuzzy
-#| msgid "Unable to locate this email in KMail"
-msgctxt "@info"
-msgid "Unable to locate this email in <application>KMail</application>"
-msgstr "केडीई मेलमा यो इमेल स्थापना गर्न असमर्थ"
-
-#: messagewin.cpp:2266
-msgctxt "@info"
-msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
-msgstr ""
-
-#: newalarmaction.cpp:59
-#, fuzzy
-#| msgid "Delete Alarm Template"
-#| msgid_plural "Delete Alarm Templates"
-msgctxt "@item:inmenu"
-msgid "&Display Alarm Template"
-msgstr "संसूचक टेम्प्लेट मेट्नुहोस्"
-
-#: newalarmaction.cpp:59
-#, fuzzy
-#| msgid "Display Alarms"
-msgctxt "@action"
-msgid "New Display Alarm"
-msgstr "संसूचक प्रदर्शन गर्नुहोस्"
-
-#: newalarmaction.cpp:62
-#, fuzzy
-#| msgid "Choose Alarm Template"
-msgctxt "@item:inmenu"
-msgid "&Command Alarm Template"
-msgstr "संसूचक टेम्प्लेट रोज्नुहोस्"
-
-#: newalarmaction.cpp:62
-#, fuzzy
-#| msgid "Command Alarms"
-msgctxt "@action"
-msgid "New Command Alarm"
-msgstr "आदेश संसूचक"
-
-#: newalarmaction.cpp:65
-#, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@item:inmenu"
-msgid "&Email Alarm Template"
-msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: newalarmaction.cpp:65
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@action"
-msgid "New Email Alarm"
-msgstr "इमेल संसूचक"
-
-#: newalarmaction.cpp:68
-#, fuzzy
-#| msgid "Edit Alarm Template"
-msgctxt "@item:inmenu"
-msgid "&Audio Alarm Template"
-msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: newalarmaction.cpp:68
-#, fuzzy
-#| msgid "Email Alarms"
-msgctxt "@action"
-msgid "New Audio Alarm"
-msgstr "इमेल संसूचक"
-
-#: newalarmaction.cpp:79
-#, fuzzy
-#| msgid "New Alarm From &Template"
-msgctxt "@action"
-msgid "New Alarm From &Template"
-msgstr "टेम्प्लेटको नयाँ संसूचक"
 
 #: prefdlg.cpp:157
 #, fuzzy
@@ -5089,6 +3686,3399 @@ msgstr ""
 "बेलामा कुञ्जीपाटी आगत लिन्छ ।\n"
 "- जाँचबाट हटाइएमा, सञ्झ्याल प्रदर्शित गरिएको बेलामा तपाईँको टाइपलाई यसले हस्तक्षेप "
 "गर्दैन, तर यसको शीर्षकपट्टी हुदैन र सार्न र रिसाइज गर्न सकिँदैन ।"
+
+#: sounddlg.cpp:54
+#, fuzzy
+#| msgid "Repeat"
+msgctxt "@option:check"
+msgid "Repeat"
+msgstr "दोहोर्याउनुहोस्"
+
+#: sounddlg.cpp:158
+#, fuzzy
+#| msgid "Sound &file:"
+msgctxt "@label"
+msgid "Sound file:"
+msgstr "ध्वनि फाइल:"
+
+#: sounddlg.cpp:172 sounddlg.cpp:455
+#, fuzzy
+#| msgid "Test the sound"
+msgctxt "@info:tooltip"
+msgid "Test the sound"
+msgstr "ध्वनि परीक्षण गर्नुहोस्"
+
+#: sounddlg.cpp:173 sounddlg.cpp:456
+#, fuzzy
+#| msgid "Play the selected sound file."
+msgctxt "@info:whatsthis"
+msgid "Play the selected sound file."
+msgstr "चयन गरिएका ध्वनि फाइल प्ले गर्नुहोस् ।"
+
+#: sounddlg.cpp:179
+#, fuzzy
+#| msgid "Enter the name or URL of a sound file to play."
+msgctxt "@info:whatsthis"
+msgid "Enter the name or URL of a sound file to play."
+msgstr "प्ले गर्न ध्वनि फाइलको नाम वा यूआरएल प्रविष्ट गर्नुहोस् ।"
+
+#: sounddlg.cpp:191
+#, fuzzy
+#| msgid "Select a sound file to play."
+msgctxt "@info:whatsthis"
+msgid "Select a sound file to play."
+msgstr "प्ले गर्न ध्वनि फाइल चयन गर्नुहोस् ।"
+
+#: sounddlg.cpp:205
+#, fuzzy
+#| msgid ""
+#| "If checked, the sound file will be played repeatedly for as long as the "
+#| "message is displayed."
+msgctxt "@info:whatsthis"
+msgid ""
+"If checked, the sound file will be played repeatedly for as long as the "
+"message is displayed."
+msgstr "जाँच गरिएमा, सन्देश प्रदर्शित भएसम्म ध्वनि फाइल दोहोरिएर प्ले हुनेछ ।"
+
+#: sounddlg.cpp:215
+#, fuzzy
+#| msgid "Interval between alarm repetitions"
+msgctxt "@label:spinbox Length of time to pause between repetitions"
+msgid "Pause between repetitions:"
+msgstr "संसूचक दोहोर्याई बीचमा अन्तराल"
+
+#: sounddlg.cpp:222 sounddlg.cpp:276
+#, fuzzy
+#| msgid "seconds"
+msgctxt "@label"
+msgid "seconds"
+msgstr "सेकेन्ड"
+
+#: sounddlg.cpp:224
+#, fuzzy
+#| msgid ""
+#| "Enter how many seconds to fade the sound before reaching the set volume."
+msgctxt "@info:whatsthis"
+msgid "Enter how many seconds to pause between repetitions."
+msgstr "भोल्युम सेटमा पुग्नुभन्दा पहिले कति सेकेन्ड ध्वनि फेड गर्ने प्रविष्ट गर्नुहोस् ।"
+
+#: sounddlg.cpp:228
+#, fuzzy
+#| msgid "Volume"
+msgctxt "@title:group Sound volume"
+msgid "Volume"
+msgstr "भोल्युम"
+
+#: sounddlg.cpp:243
+#, fuzzy
+#| msgid "Set volume"
+msgctxt "@option:check"
+msgid "Set volume"
+msgstr "भोल्युम सेट गर्नुहोस्"
+
+#: sounddlg.cpp:246
+#, fuzzy
+#| msgid "Select to choose the volume for playing the sound file."
+msgctxt "@info:whatsthis"
+msgid "Select to choose the volume for playing the sound file."
+msgstr "ध्वनि फाइल प्ले गर्नका लागि भोल्युम रोज्न चयन गर्नुहोस् ।"
+
+#: sounddlg.cpp:253
+#, fuzzy
+#| msgid "Choose the volume for playing the sound file."
+msgctxt "@info:whatsthis"
+msgid "Choose the volume for playing the sound file."
+msgstr "ध्वनि फाइल प्ले गर्नका लागि भोल्युम रोज्नुहोस् ।"
+
+#: sounddlg.cpp:258
+#, fuzzy
+#| msgid "Fade"
+msgctxt "@option:check"
+msgid "Fade"
+msgstr "फेड"
+
+#: sounddlg.cpp:261
+#, fuzzy
+#| msgid "Select to fade the volume when the sound file first starts to play."
+msgctxt "@info:whatsthis"
+msgid "Select to fade the volume when the sound file first starts to play."
+msgstr "ध्वनि फाइल पहिलो पटक प्ले गर्न सुरु हुँदा भोल्युम फेड गर्न चयन गर्नुहोस् ।"
+
+#: sounddlg.cpp:269
+#, fuzzy
+#| msgctxt "Time period over which to fade the sound"
+#| msgid "Fade time:"
+msgctxt "@label:spinbox Time period over which to fade the sound"
+msgid "Fade time:"
+msgstr "फेड समय:"
+
+#: sounddlg.cpp:278
+#, fuzzy
+#| msgid ""
+#| "Enter how many seconds to fade the sound before reaching the set volume."
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter how many seconds to fade the sound before reaching the set volume."
+msgstr "भोल्युम सेटमा पुग्नुभन्दा पहिले कति सेकेन्ड ध्वनि फेड गर्ने प्रविष्ट गर्नुहोस् ।"
+
+#: sounddlg.cpp:285
+#, fuzzy
+#| msgid "Initial volume:"
+msgctxt "@label:slider"
+msgid "Initial volume:"
+msgstr "सुरुआत भोल्युम:"
+
+#: sounddlg.cpp:293
+#, fuzzy
+#| msgid "Choose the initial volume for playing the sound file."
+msgctxt "@info:whatsthis"
+msgid "Choose the initial volume for playing the sound file."
+msgstr "ध्वनि फाइल प्ले गर्नका लागि सुरुआत भोल्युम रोज्नुहोस् ।"
+
+#: sounddlg.cpp:442 messagewin.cpp:752
+#, fuzzy
+#| msgid "Stop sound"
+msgctxt "@info:tooltip"
+msgid "Stop sound"
+msgstr "ध्वनि बन्द गर्नुहोस्"
+
+#: sounddlg.cpp:443 messagewin.cpp:753
+#, fuzzy
+#| msgid "Stop playing the sound"
+msgctxt "@info:whatsthis"
+msgid "Stop playing the sound"
+msgstr "ध्वनि बजाउन बन्द गर्नुहोस्"
+
+#: find.cpp:137
+#, fuzzy
+#| msgid "Alarm Type"
+msgctxt "@title:group"
+msgid "Alarm Type"
+msgstr "संसूचक प्रकार"
+
+#: find.cpp:145
+#, fuzzy
+#| msgid "Acti&ve"
+msgctxt "@option:check Alarm type"
+msgid "Active"
+msgstr "सक्रिय"
+
+#: find.cpp:147
+#, fuzzy
+#| msgid "Check to include active alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include active alarms in the search."
+msgstr "खोजीमा सक्रिय संसूचक समावेश गर्न जाँच गर्नुहोस् ।"
+
+#: find.cpp:150
+#, fuzzy
+#| msgid "A&rchived"
+msgctxt "@option:check Alarm type"
+msgid "Archived"
+msgstr "सङ्ग्रहित"
+
+#: find.cpp:152
+#, fuzzy
+#| msgid ""
+#| "Check to include archived alarms in the search. This option is only "
+#| "available if archived alarms are currently being displayed."
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to include archived alarms in the search. This option is only "
+"available if archived alarms are currently being displayed."
+msgstr ""
+"खोजीमा सङ्ग्रहित संसूचक सम्मिलित गर्न जाँच गर्नुहोस् । यो विकल्प सङ्ग्रहित संसूचक हालै "
+"प्रदर्शन भइरहेको अवस्थामा मात्र उपलब्ध हुन्छ ।"
+
+#: find.cpp:160
+#, fuzzy
+#| msgid "Text"
+msgctxt "@option:check Alarm action = text display"
+msgid "Text"
+msgstr "पाठ"
+
+#: find.cpp:162
+#, fuzzy
+#| msgid "Check to include text message alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include text message alarms in the search."
+msgstr "खोजीमा पाठ सन्देश संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
+
+#: find.cpp:165
+#, fuzzy
+#| msgid "&File"
+msgctxt "@option:check Alarm action = file display"
+msgid "File"
+msgstr "फाइल"
+
+#: find.cpp:167
+#, fuzzy
+#| msgid "Check to include file alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include file alarms in the search."
+msgstr "खोजीमा फाइल संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
+
+#: find.cpp:170
+#, fuzzy
+#| msgid "Co&mmand"
+msgctxt "@option:check Alarm action"
+msgid "Command"
+msgstr "आदेश"
+
+#: find.cpp:172
+#, fuzzy
+#| msgid "Check to include command alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include command alarms in the search."
+msgstr "खोजीमा आदेश संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
+
+#: find.cpp:175
+#, fuzzy
+#| msgid "Email"
+msgctxt "@option:check Alarm action"
+msgid "Email"
+msgstr "इमेल"
+
+#: find.cpp:177
+#, fuzzy
+#| msgid "Check to include email alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include email alarms in the search."
+msgstr "खोजीमा इमेल संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
+
+#: find.cpp:180
+msgctxt "@option:check Alarm action"
+msgid "Audio"
+msgstr ""
+
+#: find.cpp:182
+#, fuzzy
+#| msgid "Check to include email alarms in the search."
+msgctxt "@info:whatsthis"
+msgid "Check to include audio alarms in the search."
+msgstr "खोजीमा इमेल संसूचक सम्मिलित गर्न जाँच गर्नुहोस् ।"
+
+#: find.cpp:283
+#, fuzzy
+#| msgid "No alarm types are selected to search"
+msgctxt "@info"
+msgid "No alarm types are selected to search"
+msgstr "खोजी गर्न संसूचक प्रकार चयन गरिएको छैन"
+
+#: find.cpp:439
+#, fuzzy
+#| msgid ""
+#| "End of alarm list reached.\n"
+#| "Continue from the beginning?"
+msgctxt "@info"
+msgid ""
+"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
+"para>"
+msgstr ""
+"संसूचक सूचीको अन्त्यमा पुगियो ।\n"
+"सुरुबाट निरन्तरता दिनुहुन्छ ?"
+
+#: find.cpp:440
+#, fuzzy
+#| msgid ""
+#| "Beginning of alarm list reached.\n"
+#| "Continue from the end?"
+msgctxt "@info"
+msgid ""
+"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
+"para>"
+msgstr ""
+"संसूचक सूचीको प्रारम्भमा आइपुग्यो ।\n"
+"अन्तिमबाट निरन्तरता दिनुहुन्छ ?"
+
+#: latecancel.cpp:44
+#, fuzzy
+#| msgid "Cancel if late"
+msgctxt "@option:check"
+msgid "Cancel if late"
+msgstr "ढीला भएमा रद्द गर्नुहोस्"
+
+#: latecancel.cpp:45
+#, fuzzy
+#| msgid "Auto-close window after this time"
+msgctxt "@option:check"
+msgid "Auto-close window after this time"
+msgstr "यो समय पछि सञ्झ्याल स्वत: बन्द हुन्छ"
+
+#: latecancel.cpp:46
+#, fuzzy
+#| msgid "Auto-close window after late-cancellation time"
+msgctxt "@option:check"
+msgid "Auto-close window after late-cancellation time"
+msgstr "पछिल्लो रद्द समयपछि सञ्झ्याल स्वत: बन्द हुन्छ"
+
+#: latecancel.cpp:56
+#, fuzzy
+#| msgid ""
+#| "If checked, the alarm will be canceled if it cannot be triggered within "
+#| "the specified period after its scheduled time. Possible reasons for not "
+#| "triggering include your being logged off, X not running, or the alarm "
+#| "daemon not running.\n"
+#| "\n"
+#| "If unchecked, the alarm will be triggered at the first opportunity after "
+#| "its scheduled time, regardless of how late it is."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If checked, the alarm will be canceled if it cannot be triggered "
+"within the specified period after its scheduled time. Possible reasons for "
+"not triggering include your being logged off, X not running, or "
+"<application>KAlarm</application> not running.</para><para>If unchecked, the "
+"alarm will be triggered at the first opportunity after its scheduled time, "
+"regardless of how late it is.</para>"
+msgstr ""
+"चेक गरिएमा, संसूचक तालिकिकरण गरिएको समय भन्दा पछाडि निर्दिष्ट गरिएको समयमा ट्रिगर "
+"गर्न नसकिएमा यो रद्द गरिएको हुन्छ । ट्रिगरिङ नहुने सम्भावित कारण लगअफ समावेश गरिएको, "
+"X नचलेको, वा संसूचक डेइमन नचलेको हुनुपर्छ ।\n"
+"\n"
+"चिनो हटाइएमा, जति ढीला भए पनि, संसूचक तालिकिकरण गिरएको पछाडिको पहिलो अवसरमा "
+"ट्रिगर हुन्छ ।"
+
+#: latecancel.cpp:82
+#, fuzzy
+#| msgctxt "Cancel if late by 10 minutes"
+#| msgid "Ca&ncel if late by"
+msgctxt "@option:check Cancel if late by 10 minutes"
+msgid "Cancel if late by"
+msgstr "ढीला भएमा रद्द गर्नुहोस्"
+
+#: latecancel.cpp:83
+#, fuzzy
+#| msgid "Enter how late will cause the alarm to be canceled"
+msgctxt "@info:whatsthis"
+msgid "Enter how late will cause the alarm to be canceled"
+msgstr "कति समयको पछि संसूचक रद्द हुने प्रविष्ट गर्नुहोस्"
+
+#: latecancel.cpp:99
+#, fuzzy
+#| msgid ""
+#| "Automatically close the alarm window after the expiry of the late-"
+#| "cancellation period"
+msgctxt "@info:whatsthis"
+msgid ""
+"Automatically close the alarm window after the expiry of the late-"
+"cancellation period"
+msgstr "पछिल्लो रद्द अवधिको म्याद समाप्तपछि स्वचालित रूपमा संसूचक सञ्झ्याल बन्द हुन्छ"
+
+#: lib/filedialog.cpp:60
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@option:check"
+msgid "Append to existing file"
+msgstr "फाइल खोल्न असफल"
+
+#: lib/kalocale.cpp:51
+#, fuzzy
+#| msgid "Monday"
+msgctxt "@option Name of the weekday"
+msgid "Monday"
+msgstr "सोमबार"
+
+#: lib/kalocale.cpp:52
+#, fuzzy
+#| msgid "Tuesday"
+msgctxt "@option Name of the weekday"
+msgid "Tuesday"
+msgstr "मङ्गलबार"
+
+#: lib/kalocale.cpp:53
+#, fuzzy
+#| msgid "Wednesday"
+msgctxt "@option Name of the weekday"
+msgid "Wednesday"
+msgstr "बुधबार"
+
+#: lib/kalocale.cpp:54
+#, fuzzy
+#| msgid "Thursday"
+msgctxt "@option Name of the weekday"
+msgid "Thursday"
+msgstr "बिहिबार"
+
+#: lib/kalocale.cpp:55
+#, fuzzy
+#| msgid "Friday"
+msgctxt "@option Name of the weekday"
+msgid "Friday"
+msgstr "शुक्रबार"
+
+#: lib/kalocale.cpp:56
+#, fuzzy
+#| msgid "Saturday"
+msgctxt "@option Name of the weekday"
+msgid "Saturday"
+msgstr "शनिबार"
+
+#: lib/kalocale.cpp:57
+#, fuzzy
+#| msgid "Sunday"
+msgctxt "@option Name of the weekday"
+msgid "Sunday"
+msgstr "आइतबार"
+
+#: lib/timeedit.cpp:177
+#, fuzzy
+#| msgid "am"
+msgctxt "@item:inlistbox Morning, as in 2am"
+msgid "am"
+msgstr "पूर्वान्ह"
+
+#: lib/timeedit.cpp:196
+#, fuzzy
+#| msgid "pm"
+msgctxt "@item:inlistbox Afternoon, as in 2pm"
+msgid "pm"
+msgstr "अपरान्ह"
+
+#: lib/timeperiod.cpp:41
+#, fuzzy
+#| msgid "hours/minutes"
+msgctxt "@item:inlistbox Time units"
+msgid "minutes"
+msgstr "घण्टा/मिनेट"
+
+#: lib/timeperiod.cpp:42
+#, fuzzy
+#| msgid "hours/minutes"
+msgctxt "@item:inlistbox Time units"
+msgid "hours/minutes"
+msgstr "घण्टा/मिनेट"
+
+#: lib/timeperiod.cpp:43
+#, fuzzy
+#| msgid "days"
+msgctxt "@item:inlistbox Time units"
+msgid "days"
+msgstr "दिन"
+
+#: lib/timeperiod.cpp:44
+#, fuzzy
+#| msgid "weeks"
+msgctxt "@item:inlistbox Time units"
+msgid "weeks"
+msgstr "हप्ता"
+
+#: lib/timespinbox.cpp:77
+#, fuzzy
+#| msgid ""
+#| "Press the Shift key while clicking the spin buttons to adjust the time by "
+#| "a larger step (6 hours / 5 minutes)."
+msgctxt "@info:whatsthis"
+msgid ""
+"Press the Shift key while clicking the spin buttons to adjust the time by a "
+"larger step (6 hours / 5 minutes)."
+msgstr ""
+"बृहत चरण अनुरूप समय समायोजन गर्न स्पिन बटन क्लिक गरेको बेलामा Shift key थिच्नुहोस् (६ "
+"घण्टा/ ५ मिनेट) ।"
+
+#: lib/shellprocess.cpp:158
+#, fuzzy
+#| msgid "Failed to execute command (shell access not authorized):"
+msgctxt "@info"
+msgid "Failed to execute command (shell access not authorized)"
+msgstr "आदेश कार्यान्वयन गर्न असफल (शेल पहुँच आधिकारिक छैन):"
+
+#: lib/shellprocess.cpp:161
+#, fuzzy
+#| msgid "Failed to execute command:"
+msgctxt "@info"
+msgid "Failed to execute command"
+msgstr "आदेश कार्यान्वयन गर्न असफल:"
+
+#: lib/shellprocess.cpp:163
+#, fuzzy
+#| msgid "Command execution error:"
+msgctxt "@info"
+msgid "Command execution error"
+msgstr "आदेश कार्यान्वयन त्रुटि:"
+
+#: lib/shellprocess.cpp:166
+#, fuzzy, kde-format
+#| msgid ""
+#| "Command executed:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr ""
+"आदेश कार्यान्वयन गरियो:\n"
+"%1"
+
+#: main.cpp:39
+msgid "KAlarm"
+msgstr "केडीई संसूचक"
+
+#: main.cpp:40
+msgid "Personal alarm message, command and email scheduler for KDE"
+msgstr "केडीई का लागि व्यक्तिगत संसूचक सन्देश, आदेश र इमेल अनुसूचक"
+
+#: main.cpp:42
+#, fuzzy
+#| msgid "Copyright 2001-2007, David Jarvie"
+msgid "Copyright 2001-2012, David Jarvie"
+msgstr "प्रतिलिपि अधिकार २००१-२००७, डेभिड जार्भे"
+
+#: main.cpp:50
+msgid "Prompt for confirmation when alarm is acknowledged"
+msgstr "संसूचक स्वीकृत भएमा तुरुन्त यकीन गर्नुहोस्"
+
+#: main.cpp:52
+msgid "Attach file to email (repeat as needed)"
+msgstr "इमेलमा फाइल सङ्लग्न गर्नुहोस् (आवश्यक भएमा दोहोर्याउनुहोस्)"
+
+#: main.cpp:53
+msgid "Auto-close alarm window after --late-cancel period"
+msgstr "पछिल्लो रद्द अवधि पछि संसूचक सञ्झ्याल स्वत: बन्द गर्नुहोस्"
+
+#: main.cpp:54
+msgid "Blind copy email to self"
+msgstr "आफ्नै स्थानमा गुप्त प्रतिलिपि गर्नुहोस्"
+
+#: main.cpp:56
+msgid "Beep when message is displayed"
+msgstr "सन्देश प्रदर्शित हुदा बिप गर्नुहोस्"
+
+#: main.cpp:59
+msgid "Message background color (name or hex 0xRRGGBB)"
+msgstr "सन्देश पृष्ठभूमि रङ (नाम वा hex 0xRRGGBB)"
+
+#: main.cpp:62
+msgid "Message foreground color (name or hex 0xRRGGBB)"
+msgstr "सन्देश अग्रभूमि रङ (नाम वा hex 0xRRGGBB)"
+
+#: main.cpp:63
+msgid "Cancel alarm with the specified event ID"
+msgstr "निर्दिष्ट गरिएको घटना आईडी मा संसूचक रद्द गर्नुहोस्"
+
+#: main.cpp:65
+msgid "Disable the alarm"
+msgstr "संसूचक अक्षम पार्नुहोस्"
+
+#: main.cpp:66
+#, fuzzy
+#| msgid "Disable the alarm"
+msgid "Disable monitoring of all alarms"
+msgstr "संसूचक अक्षम पार्नुहोस्"
+
+#: main.cpp:68
+msgid "Execute a shell command line"
+msgstr "शेल आदेश लाइन कार्यान्वयन गर्नुहोस्"
+
+#: main.cpp:70
+msgid "Command line to generate alarm message text"
+msgstr ""
+
+#: main.cpp:71
+msgid "Display the alarm edit dialog to edit the specified alarm"
+msgstr "निर्दिष्ट गरिएको संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रर्दशन गर्नुहोस्"
+
+#: main.cpp:72
+#, fuzzy
+#| msgid "Display the alarm edit dialog to edit a new alarm"
+msgid "Display the alarm edit dialog to edit a new display alarm"
+msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:73
+#, fuzzy
+#| msgid "Display the alarm edit dialog to edit a new alarm"
+msgid "Display the alarm edit dialog to edit a new command alarm"
+msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:74
+#, fuzzy
+#| msgid "Display the alarm edit dialog to edit a new alarm"
+msgid "Display the alarm edit dialog to edit a new email alarm"
+msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:75
+#, fuzzy
+#| msgid "Display the alarm edit dialog to edit a new alarm"
+msgid "Display the alarm edit dialog to edit a new audio alarm"
+msgstr "नयाँ संसूचक सम्पादन गर्न संसूचक सम्पादन संवाद प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:76
+msgid "Display the alarm edit dialog, preset with a template"
+msgstr "टेम्प्लेटसँग प्रिसेट संसूचक सम्पादन संवाद प्रर्दशन गर्नुहोस्"
+
+#: main.cpp:78
+msgid "File to display"
+msgstr "प्रदर्शन गरिने फाइल"
+
+#: main.cpp:80
+msgid "KMail identity to use as sender of email"
+msgstr "इमेलको प्रेषकका रूपमा प्रयोग गरिने केडीई मेल परिचय"
+
+#: main.cpp:82
+msgid "Interval between alarm repetitions"
+msgstr "संसूचक दोहोर्याई बीचमा अन्तराल"
+
+#: main.cpp:84
+msgid "Show alarm as an event in KOrganizer"
+msgstr "केडीई आयोजकमा घटनाको रूपमा संसूचक देखाउनुहोस्"
+
+#: main.cpp:86
+msgid "Cancel alarm if more than 'period' late when triggered"
+msgstr "ट्रिगर गर्दा 'अवधि' भन्दा धेरै ढीला भएमा संसूचक रद्द गर्नुहोस्"
+
+#: main.cpp:87
+#, fuzzy
+#| msgid "List of scheduled alarms"
+msgid "Output list of scheduled alarms to stdout"
+msgstr "तालिकवद्ध संसूचकको सूची"
+
+#: main.cpp:89
+msgid "Repeat alarm at every login"
+msgstr "प्रत्येक लगइनमा संसूचक दोहोर्याउनुहोस्"
+
+#: main.cpp:91
+msgid "Send an email to the given address (repeat as needed)"
+msgstr "दिएको ठेगानामा इमेल पठाउनुहोस् (आवश्यकता अनुसार दोहोर्याउनुहोस्)"
+
+#: main.cpp:93
+msgid "Audio file to play once"
+msgstr "एक पटक प्ले गरिने अडियो फाइल"
+
+#: main.cpp:95
+msgid "Audio file to play repeatedly"
+msgstr "दोहोर्याएर प्ले गरिने अडियो फाइल"
+
+#: main.cpp:96
+msgid "Specify alarm recurrence using iCalendar syntax"
+msgstr "आई क्यालेन्डर वाक्य संरचना प्रयोग गरेर संसूचक पुनरावृत्ति निर्दिष्ट गर्नुहोस्"
+
+#: main.cpp:98
+#, fuzzy
+#| msgid "Display reminder in advance of alarm"
+msgid "Display reminder before or after alarm"
+msgstr "संसूचकको अगाडि सचेतक प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:99
+#, fuzzy
+#| msgid "Display reminder once, before first alarm recurrence"
+msgid "Display reminder once, before or after first alarm recurrence"
+msgstr "पहिलो संसूचक पुनरावृत्ति अगाडि, सचेतक एक पटक प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:101
+msgid "Number of times to repeat alarm (including initial occasion)"
+msgstr "संसूचक दोहोरिने समय (सुरुआत घटना समावेश गरेर)"
+
+#: main.cpp:103
+msgid "Speak the message when it is displayed"
+msgstr "सन्देश प्रदर्शित हुदा वाचन गर्नुहोस्"
+
+#: main.cpp:105
+msgid "Email subject line"
+msgstr "इमेल वस्तु लाइन"
+
+#: main.cpp:107
+#, fuzzy
+#| msgid ""
+#| "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
+msgstr ""
+"समय [[[yyyy-]mm-]dd-]hh:mm [TZ], वा मिति yyyy-mm-dd [TZ] सम्म दोहोर्याउनुहोस्"
+
+#: main.cpp:110
+msgid ""
+"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"संसूचक [[[yyyy-]mm-]dd-]hh:mm [TZ], वा मिति yyyy-mm-dd [TZ] समयमा ट्रिगर गर्नुहोस्"
+
+#: main.cpp:111
+msgid "Display system tray icon"
+msgstr "प्रणाली ट्रे प्रतिमा प्रदर्शन गर्नुहोस्"
+
+#: main.cpp:112
+msgid "Trigger alarm with the specified event ID"
+msgstr "निर्दिष्ट गरिएको घटना आईडी मा संसूचक ट्रिगर गर्नुहोस्"
+
+#: main.cpp:114
+msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"समय [[[yyyy-]mm-]dd-]hh:mm [TZ], वा मिति yyyy-mm-dd [TZ] सम्म दोहोर्याउनुहोस्"
+
+#: main.cpp:116
+msgid "Volume to play audio file"
+msgstr "अडियो फाइल प्ले गर्न भोल्युम"
+
+#: main.cpp:117
+msgid "Message text to display"
+msgstr "प्रदर्शन गरिने सन्देश पाठ"
+
+#: mainwindow.cpp:126
+#, fuzzy
+#| msgid "Show &Alarm Times"
+msgctxt "@action"
+msgid "Show &Alarm Times"
+msgstr "संसूचक समय देखाउनुहोस्"
+
+#: mainwindow.cpp:127
+#, fuzzy
+#| msgid "Show alarm time"
+msgctxt "@option:check"
+msgid "Show alarm time"
+msgstr "संसूचक समय देखाउनुहोस्"
+
+#: mainwindow.cpp:128
+#, fuzzy
+#| msgid "Show Time t&o Alarms"
+msgctxt "@action"
+msgid "Show Time t&o Alarms"
+msgstr "संसूचकमा समय देखाउनुहोस्"
+
+#: mainwindow.cpp:129
+#, fuzzy
+#| msgid "Show time u&ntil alarm"
+msgctxt "@option:check"
+msgid "Show time until alarm"
+msgstr "संसूचन हुने बेलासम्म समय देखाउनुहोस्"
+
+#: mainwindow.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failure to create menus\n"
+#| "(perhaps %1 missing or corrupted)"
+msgctxt "@info"
+msgid ""
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
+msgstr ""
+"मेनु सिर्जना गर्न असफल\n"
+"(सम्भवत %1 छुटेको वा बिग्रिएको हुनुपर्छ)"
+
+#: mainwindow.cpp:458
+#, fuzzy
+#| msgid "&Templates..."
+msgctxt "@action"
+msgid "&Templates..."
+msgstr "टेम्प्लेट..."
+
+#: mainwindow.cpp:462
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "&New"
+msgstr "नयाँ..."
+
+#: mainwindow.cpp:489
+#, fuzzy
+#| msgid "Create Tem&plate..."
+msgctxt "@action"
+msgid "Create Tem&plate..."
+msgstr "टेम्प्लेट सिर्जना गर्नुहोस्..."
+
+#: mainwindow.cpp:493
+#, fuzzy
+#| msgid "&Copy..."
+msgctxt "@action"
+msgid "&Copy..."
+msgstr "प्रतिलिपि बनाउनुहोस्..."
+
+#: mainwindow.cpp:498 resourceselector.cpp:518
+#, fuzzy
+#| msgid "&Edit..."
+msgctxt "@action"
+msgid "&Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
+
+#: mainwindow.cpp:503
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "@action"
+msgid "&Delete"
+msgstr "मेट्नुहोस्"
+
+#: mainwindow.cpp:509
+#, fuzzy
+#| msgid "Resource Configuration"
+msgctxt "@action"
+msgid "Delete Without Confirmation"
+msgstr "संसाधन कन्फिगरेसन"
+
+#: mainwindow.cpp:514
+#, fuzzy
+#| msgid "Reac&tivate"
+msgctxt "@action"
+msgid "Reac&tivate"
+msgstr "पुन: सक्रिय पार्नुहोस्"
+
+#: mainwindow.cpp:524
+msgctxt "@action"
+msgid "Wake From Suspend..."
+msgstr ""
+
+#: mainwindow.cpp:541
+#, fuzzy
+#| msgid "Show Archived Alarms"
+msgctxt "@action"
+msgid "Show Archi&ved Alarms"
+msgstr "सङ्ग्रहित संसूचक देखाउनुहोस्"
+
+#: mainwindow.cpp:546
+#, fuzzy
+#| msgid "Show in System &Tray"
+msgctxt "@action"
+msgid "Show in System &Tray"
+msgstr "प्रणाली ट्रेमा देखाउनुहोस्"
+
+#: mainwindow.cpp:550
+#, fuzzy
+#| msgid "Calendar Files"
+msgctxt "@action"
+msgid "Show &Calendars"
+msgstr "क्यालेन्डर फाइल"
+
+#: mainwindow.cpp:558
+#, fuzzy
+#| msgid "Import &Alarms..."
+msgctxt "@action"
+msgid "Import &Alarms..."
+msgstr "संसूचक आयात गर्नुहोस्..."
+
+#: mainwindow.cpp:562
+#, fuzzy
+#| msgid "Import &Birthdays..."
+msgctxt "@action"
+msgid "Import &Birthdays..."
+msgstr "जन्मदिन आयात गर्नुहोस्..."
+
+#: mainwindow.cpp:566
+#, fuzzy
+#| msgid "Import &Alarms..."
+msgctxt "@action"
+msgid "E&xport Selected Alarms..."
+msgstr "संसूचक आयात गर्नुहोस्..."
+
+#: mainwindow.cpp:570 resourceselector.cpp:538
+#, fuzzy
+#| msgid "Im&port..."
+msgctxt "@action"
+msgid "E&xport..."
+msgstr "आयात गर्नुहोस्..."
+
+#: mainwindow.cpp:574
+#, fuzzy
+#| msgid "&Refresh Alarms"
+msgctxt "@action"
+msgid "&Refresh Alarms"
+msgstr "संसूचक ताजा पार्नुहोस्"
+
+#: mainwindow.cpp:829
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete the selected alarm?"
+#| msgid_plural "Do you really want to delete the %1 selected alarms?"
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm?"
+msgid_plural "Do you really want to delete the %1 selected alarms?"
+msgstr[0] "तपाईँ वास्तवमै चयन गरिएको संसूचक मेट्न चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ वास्तवमै चयन गरिएका संसूचक %1 मेट्न चाहनुहुन्छ ?"
+
+#: mainwindow.cpp:831
+#, fuzzy
+#| msgid "Delete Alarm"
+#| msgid_plural "Delete Alarms"
+msgctxt "@title:window"
+msgid "Delete Alarm"
+msgid_plural "Delete Alarms"
+msgstr[0] "संसूचक मेट्नुहोस्"
+msgstr[1] "संसूचक मेट्नुहोस्"
+
+#: mainwindow.cpp:832 templatedlg.cpp:214
+#, fuzzy
+#| msgid "&Delete"
+msgctxt "@action:button"
+msgid "&Delete"
+msgstr "मेट्नुहोस्"
+
+#: mainwindow.cpp:976
+#, fuzzy
+#| msgid "Hide Archived Alarms"
+msgctxt "@info:tooltip"
+msgid "Hide Archived Alarms"
+msgstr "सङ्ग्रहित संसूचक लुकाउनुहोस्"
+
+#: mainwindow.cpp:977
+#, fuzzy
+#| msgid "Show Archived Alarms"
+msgctxt "@info:tooltip"
+msgid "Show Archived Alarms"
+msgstr "सङ्ग्रहित संसूचक देखाउनुहोस्"
+
+#: mainwindow.cpp:1064
+#, fuzzy
+#| msgid "Import birthdays"
+msgctxt "@info"
+msgid "Import birthdays"
+msgstr "जन्मदिन आयात गर्नुहोस्"
+
+#: mainwindow.cpp:1234
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@action Undo/Redo [action]"
+msgid "%1 %2"
+msgstr "%1: %2"
+
+#: mainwindow.cpp:1235
+#, fuzzy, kde-format
+#| msgctxt "Undo [action]: message"
+#| msgid "%1 %2: %3"
+msgctxt "@action Undo [action]: message"
+msgid "%1 %2: %3"
+msgstr "%1 %2: %3"
+
+#: mainwindow.cpp:1521
+#, fuzzy
+#| msgid "Display Alarms"
+msgctxt "@item:inlistbox"
+msgid "Display Alarm"
+msgstr "संसूचक प्रदर्शन गर्नुहोस्"
+
+#: mainwindow.cpp:1523
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@item:inlistbox"
+msgid "Email Alarm"
+msgstr "इमेल संसूचक"
+
+#: mainwindow.cpp:1525
+#, fuzzy
+#| msgid "Command Alarms"
+msgctxt "@item:inlistbox"
+msgid "Command Alarm"
+msgstr "आदेश संसूचक"
+
+#: mainwindow.cpp:1527
+#, fuzzy
+#| msgid "Alarm Type"
+msgctxt "@title:window"
+msgid "Alarm Type"
+msgstr "संसूचक प्रकार"
+
+#: mainwindow.cpp:1528
+#, fuzzy
+#| msgid "Choose Alarm Template"
+msgctxt "@info"
+msgid "Choose alarm type to create:"
+msgstr "संसूचक टेम्प्लेट रोज्नुहोस्"
+
+#: mainwindow.cpp:1681
+#, fuzzy
+#| msgid "Ena&ble"
+msgctxt "@action"
+msgid "Ena&ble"
+msgstr "सक्षम पार्नुहोस्"
+
+#: mainwindow.cpp:1681
+#, fuzzy
+#| msgid "Disa&ble"
+msgctxt "@action"
+msgid "Disa&ble"
+msgstr "अक्षम पार्नुहोस्"
+
+#: messagewin.cpp:438
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@title:window"
+msgid "Reminder"
+msgstr "सचेतक"
+
+#: messagewin.cpp:438 messagewin.cpp:861
+#, fuzzy
+#| msgid "Message"
+msgctxt "@title:window"
+msgid "Message"
+msgstr "सन्देश"
+
+#: messagewin.cpp:456
+#, fuzzy
+#| msgid ""
+#| "The scheduled date/time for the message (as opposed to the actual time of "
+#| "display)."
+msgctxt "@info:whatsthis"
+msgid ""
+"The scheduled date/time for the message (as opposed to the actual time of "
+"display)."
+msgstr "सन्देशका लागि तालिकावद्ध मिति/समय (प्रदर्शनको वास्तविक समयको विपरित रूपमा) ।"
+
+#: messagewin.cpp:463
+#, fuzzy
+#| msgid "Reminder"
+msgctxt "@info"
+msgid "Reminder"
+msgstr "सचेतक"
+
+#: messagewin.cpp:487
+#, fuzzy
+#| msgid "The file whose contents are displayed below"
+msgctxt "@info:whatsthis"
+msgid "The file whose contents are displayed below"
+msgstr "तल सामाग्री प्रदर्शित हुने फाइल"
+
+#: messagewin.cpp:543
+#, fuzzy
+#| msgid "The contents of the file to be displayed"
+msgctxt "@info:whatsthis"
+msgid "The contents of the file to be displayed"
+msgstr "प्रदर्शित हुने फाइलका सामग्री"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "File is a folder"
+msgctxt "@info"
+msgid "File is a folder"
+msgstr "फाइल एउटा फोल्डर हो"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "Failed to open file"
+msgctxt "@info"
+msgid "Failed to open file"
+msgstr "फाइल खोल्न असफल"
+
+#: messagewin.cpp:551
+#, fuzzy
+#| msgid "File not found"
+msgctxt "@info"
+msgid "File not found"
+msgstr "फाइल फेला परेन"
+
+#: messagewin.cpp:571
+#, fuzzy
+#| msgid "The alarm message"
+msgctxt "@info:whatsthis"
+msgid "The alarm message"
+msgstr "संसूचक सन्देश"
+
+#: messagewin.cpp:598
+msgctxt "@info:whatsthis"
+msgid "The output of the alarm's command"
+msgstr ""
+
+#: messagewin.cpp:640
+#, fuzzy
+#| msgid "The email to send"
+msgctxt "@info:whatsthis"
+msgid "The email to send"
+msgstr "पठाइने इमेल"
+
+#: messagewin.cpp:646
+#, fuzzy
+#| msgctxt "Email addressee"
+#| msgid "To:"
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "लाई:"
+
+#: messagewin.cpp:653
+#, fuzzy
+#| msgctxt "Email subject"
+#| msgid "Subject:"
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "विषयवस्तु:"
+
+#: messagewin.cpp:679
+#, fuzzy
+#| msgid "Error"
+msgctxt "@title:window"
+msgid "Error"
+msgstr "त्रुटि"
+
+#: messagewin.cpp:699
+msgctxt "@option:check"
+msgid "Do not display this error message again for this alarm"
+msgstr ""
+
+#: messagewin.cpp:718
+#, fuzzy
+#| msgid "Acknowledge the alarm"
+msgctxt "@info:whatsthis"
+msgid "Acknowledge the alarm"
+msgstr "संसूचक स्वीकार गर्नुहोस्"
+
+#: messagewin.cpp:723
+#, fuzzy
+#| msgid "&Edit..."
+msgctxt "@action:button"
+msgid "&Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
+
+#: messagewin.cpp:728
+#, fuzzy
+#| msgid "Edit the alarm."
+msgctxt "@info:whatsthis"
+msgid "Edit the alarm."
+msgstr "संसूचक सम्पादन गर्नुहोस् ।"
+
+#: messagewin.cpp:732
+#, fuzzy
+#| msgid "&Defer..."
+msgctxt "@action:button"
+msgid "&Defer..."
+msgstr "पछि सार्नुहोस्..."
+
+#: messagewin.cpp:737
+#, fuzzy
+#| msgid ""
+#| "Defer the alarm until later.\n"
+#| "You will be prompted to specify when the alarm should be redisplayed."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Defer the alarm until later.</para><para>You will be prompted to "
+"specify when the alarm should be redisplayed.</para>"
+msgstr ""
+"संसूचक पछिसम्म सार्नुहोस् ।\n"
+"तपाईँलाई संसूचक पुन: प्रदर्शित हुने समयमा निर्दिष्ट गर्न प्रोत्साहित गरिनेछ ।"
+
+#: messagewin.cpp:767
+msgctxt "@info:tooltip Locate this email in KMail"
+msgid "Locate in <application>KMail</application>"
+msgstr ""
+
+#: messagewin.cpp:768
+#, fuzzy
+#| msgid "Locate and highlight this email in KMail"
+msgctxt "@info:whatsthis"
+msgid "Locate and highlight this email in <application>KMail</application>"
+msgstr "यो इमेललाई केडीई मेलमा स्थापना गर्नुहोस् र हाइलाइट गर्नुहोस्"
+
+#: messagewin.cpp:777
+msgctxt "@info:tooltip"
+msgid "Activate <application>KAlarm</application>"
+msgstr ""
+
+#: messagewin.cpp:778
+msgctxt "@info:whatsthis"
+msgid "Activate <application>KAlarm</application>"
+msgstr ""
+
+#: messagewin.cpp:938
+#, fuzzy
+#| msgid "Today"
+msgctxt "@info"
+msgid "Today"
+msgstr "आज"
+
+#: messagewin.cpp:940
+#, fuzzy, kde-format
+#| msgid "Tomorrow"
+#| msgid_plural "in %1 days' time"
+msgctxt "@info"
+msgid "Tomorrow"
+msgid_plural "in %1 days' time"
+msgstr[0] "भोली"
+msgstr[1] "%1 दिनको अवधिमा"
+
+#: messagewin.cpp:942
+#, fuzzy, kde-format
+#| msgid "in 1 week's time"
+#| msgid_plural "in %1 weeks' time"
+msgctxt "@info"
+msgid "in 1 week's time"
+msgid_plural "in %1 weeks' time"
+msgstr[0] "१ हप्ताको अवधिमा"
+msgstr[1] "%1 हप्ताको अवधिमा"
+
+#: messagewin.cpp:956
+#, fuzzy, kde-format
+#| msgid "in 1 minute's time"
+#| msgid_plural "in %1 minutes' time"
+msgctxt "@info"
+msgid "in 1 minute's time"
+msgid_plural "in %1 minutes' time"
+msgstr[0] "१ मिनेटको अवधिमा"
+msgstr[1] "%1 मिनेटको अवधिमा"
+
+#: messagewin.cpp:958
+#, fuzzy, kde-format
+#| msgid "in 1 hour's time"
+#| msgid_plural "in %1 hours' time"
+msgctxt "@info"
+msgid "in 1 hour's time"
+msgid_plural "in %1 hours' time"
+msgstr[0] "१ घण्टाको अवधिमा"
+msgstr[1] "%1 घण्टाको अवधिमा"
+
+#: messagewin.cpp:961
+#, fuzzy, kde-format
+#| msgid "1 Hour"
+#| msgid_plural "%1 Hours"
+msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "१ घण्टा"
+msgstr[1] "%1 घण्टा"
+
+#: messagewin.cpp:962
+#, fuzzy, kde-format
+#| msgid "in 1 minute's time"
+#| msgid_plural "in %1 minutes' time"
+msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
+msgid "in %2 1 minute's time"
+msgid_plural "in %2 %1 minutes' time"
+msgstr[0] "१ मिनेटको अवधिमा"
+msgstr[1] "%1 मिनेटको अवधिमा"
+
+#: messagewin.cpp:1464 messagewin.cpp:1474
+#, fuzzy
+#| msgid "Unable to speak message"
+msgctxt "@info"
+msgid "Unable to speak message"
+msgstr "सन्देश वाचन गर्न असमर्थ"
+
+#: messagewin.cpp:1474
+#, fuzzy
+#| msgid "DBus call sayMessage failed"
+msgctxt "@info"
+msgid "D-Bus call say() failed"
+msgstr "DBus कल sayMessage असफल भयो"
+
+#: messagewin.cpp:1617
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr ""
+"अडियो फाइल खुलाउन सकिँदैन:\n"
+"%1"
+
+#: messagewin.cpp:1715
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error attaching file:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr ""
+"फाइल सङ्लग्न गर्दा त्रुटि:\n"
+"%1"
+
+#: messagewin.cpp:2044
+#, fuzzy
+#| msgid "Do you really want to acknowledge this alarm?"
+msgctxt "@info"
+msgid "Do you really want to acknowledge this alarm?"
+msgstr "तपाईँ वास्तवमै यो संसूचकलाई स्वीकार गर्न चाहनुहुन्छ ?"
+
+#: messagewin.cpp:2045
+#, fuzzy
+#| msgid "Acknowledge Alarm"
+msgctxt "@action:button"
+msgid "Acknowledge Alarm"
+msgstr "स्वीकृत संसूचक"
+
+#: messagewin.cpp:2045
+#, fuzzy
+#| msgid "&Acknowledge"
+msgctxt "@action:button"
+msgid "Acknowledge"
+msgstr "स्वीकृत"
+
+#: messagewin.cpp:2096
+#, fuzzy
+#| msgid "Unable to locate this email in KMail"
+msgctxt "@info"
+msgid "Unable to locate this email in <application>KMail</application>"
+msgstr "केडीई मेलमा यो इमेल स्थापना गर्न असमर्थ"
+
+#: messagewin.cpp:2266
+msgctxt "@info"
+msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
+msgstr ""
+
+#: kalarmapp.cpp:346
+#, fuzzy, kde-format
+#| msgid "%1: Event %2 not found, or not editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not unique"
+msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
+
+#: kalarmapp.cpp:348
+#, fuzzy, kde-format
+#| msgid "%1: Event %2 not found, or not editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found"
+msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
+
+#: kalarmapp.cpp:376 kalarmapp.cpp:378
+#, fuzzy, kde-format
+#| msgid "%1: Event %2 not found, or not editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not editable"
+msgstr "%1: घटना %2 फेला परेन, वा सम्पादनयोग्य छैन"
+
+#: kalarmapp.cpp:557
+msgctxt "@info"
+msgid ""
+"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
+"><nl/>(The KDE time zone service is not available:<nl/>check that "
+"<application>ktimezoned</application> is installed.)"
+msgstr ""
+
+#: kalarmapp.cpp:634
+#, fuzzy
+#| msgid ""
+#| "Quitting will disable alarms\n"
+#| "(once any alarm message windows are closed)."
+msgctxt "@info"
+msgid ""
+"Quitting will disable alarms (once any alarm message windows are closed)."
+msgstr ""
+"अन्त्य गर्दा संसूचक अक्षम हुन्छन्\n"
+"(एकपटक सबै संसूचक सन्देश सञ्झ्याल बन्द हुन्छन्) ।"
+
+#: kalarmapp.cpp:642
+msgctxt "@info"
+msgid "Quitting will cancel the scheduled Wake from Suspend."
+msgstr ""
+
+#: kalarmapp.cpp:654
+msgctxt "@info"
+msgid ""
+"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
+"if KAlarm is not started.)"
+msgstr ""
+
+#: kalarmapp.cpp:2126
+#, fuzzy
+#| msgid "Error creating temporary script file"
+msgctxt "@info"
+msgid "Error creating temporary script file"
+msgstr "अस्थायी स्क्रिप्ट फाइल सिर्जना गर्दा त्रुटि"
+
+#: kalarmapp.cpp:2214
+#, fuzzy
+#| msgid "Pre-alarm action:"
+msgctxt "@info"
+msgid "Pre-alarm action:"
+msgstr "संसूचक पुर्वको कार्य:"
+
+#: kalarmapp.cpp:2220
+#, fuzzy
+#| msgid "Post-alarm action:"
+msgctxt "@info"
+msgid "Post-alarm action:"
+msgstr "संसूचक पछिको कार्य:"
+
+#: newalarmaction.cpp:59
+#, fuzzy
+#| msgid "Delete Alarm Template"
+#| msgid_plural "Delete Alarm Templates"
+msgctxt "@item:inmenu"
+msgid "&Display Alarm Template"
+msgstr "संसूचक टेम्प्लेट मेट्नुहोस्"
+
+#: newalarmaction.cpp:59
+#, fuzzy
+#| msgid "Display Alarms"
+msgctxt "@action"
+msgid "New Display Alarm"
+msgstr "संसूचक प्रदर्शन गर्नुहोस्"
+
+#: newalarmaction.cpp:62
+#, fuzzy
+#| msgid "Choose Alarm Template"
+msgctxt "@item:inmenu"
+msgid "&Command Alarm Template"
+msgstr "संसूचक टेम्प्लेट रोज्नुहोस्"
+
+#: newalarmaction.cpp:62
+#, fuzzy
+#| msgid "Command Alarms"
+msgctxt "@action"
+msgid "New Command Alarm"
+msgstr "आदेश संसूचक"
+
+#: newalarmaction.cpp:65
+#, fuzzy
+#| msgid "Edit Alarm Template"
+msgctxt "@item:inmenu"
+msgid "&Email Alarm Template"
+msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
+
+#: newalarmaction.cpp:65
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@action"
+msgid "New Email Alarm"
+msgstr "इमेल संसूचक"
+
+#: newalarmaction.cpp:68
+#, fuzzy
+#| msgid "Edit Alarm Template"
+msgctxt "@item:inmenu"
+msgid "&Audio Alarm Template"
+msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
+
+#: newalarmaction.cpp:68
+#, fuzzy
+#| msgid "Email Alarms"
+msgctxt "@action"
+msgid "New Audio Alarm"
+msgstr "इमेल संसूचक"
+
+#: newalarmaction.cpp:79
+#, fuzzy
+#| msgid "New Alarm From &Template"
+msgctxt "@action"
+msgid "New Alarm From &Template"
+msgstr "टेम्प्लेटको नयाँ संसूचक"
+
+#: reminder.cpp:49
+#, fuzzy
+#| msgid "Reminder for first recurrence only"
+msgctxt "@option:check"
+msgid "Reminder for first recurrence only"
+msgstr "पहिलो पुनरावृत्तिका लागि मात्र सचेतक"
+
+#: reminder.cpp:51
+#, fuzzy
+#| msgid "in advance"
+msgctxt "@item:inlistbox"
+msgid "in advance"
+msgstr "अगाडि"
+
+#: reminder.cpp:65
+#, fuzzy
+#| msgid "Rem&inder:"
+msgctxt "@option:check"
+msgid "Reminder:"
+msgstr "सचेतक:"
+
+#: reminder.cpp:69
+msgctxt "@item:inlistbox"
+msgid "afterwards"
+msgstr ""
+
+#: reminder.cpp:91
+#, fuzzy
+#| msgid ""
+#| "Display the reminder only before the first time the alarm is scheduled"
+msgctxt "@info:whatsthis"
+msgid "Display the reminder only for the first time the alarm is scheduled"
+msgstr "पहिलो पटक संसुचक तालिकिकरण गर्नुभन्दा अगाडि मात्र सचेतक प्रदर्शन गर्नुहोस्"
+
+#: recurrenceedit.cpp:81
+#, fuzzy
+#| msgid "No Recurrence"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "No Recurrence"
+msgstr "पुनरावृत्ति होइन"
+
+#: recurrenceedit.cpp:82
+#, fuzzy
+#| msgid "At Login"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "At Login"
+msgstr "लगइनमा"
+
+#: recurrenceedit.cpp:83
+#, fuzzy
+#| msgid "Hourly/Minutely"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Hourly/Minutely"
+msgstr "घण्टामा/मिनेटमा"
+
+#: recurrenceedit.cpp:84
+#, fuzzy
+#| msgid "Daily"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Daily"
+msgstr "दैनिक"
+
+#: recurrenceedit.cpp:85
+#, fuzzy
+#| msgid "Weekly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Weekly"
+msgstr "साप्ताहिक"
+
+#: recurrenceedit.cpp:86
+#, fuzzy
+#| msgid "Monthly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Monthly"
+msgstr "मासिक"
+
+#: recurrenceedit.cpp:87
+#, fuzzy
+#| msgid "Yearly"
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Yearly"
+msgstr "वार्षिक"
+
+#: recurrenceedit.cpp:113
+#, fuzzy
+#| msgid "Recurrence Rule"
+msgctxt "@title:group"
+msgid "Recurrence Rule"
+msgstr "पुनरावृत्ति नियम"
+
+#: recurrenceedit.cpp:131
+#, fuzzy
+#| msgid "Do not repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Do not repeat the alarm"
+msgstr "संसूचक नदोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:139
+#, fuzzy
+#| msgid ""
+#| "Trigger the alarm at the specified date/time and at every login until "
+#| "then.\n"
+#| "Note that it will also be triggered any time the alarm daemon is "
+#| "restarted."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Trigger the alarm at the specified date/time and at every login until "
+"then.</para><para>Note that it will also be triggered any time "
+"<application>KAlarm</application> is restarted.</para>"
+msgstr ""
+"निर्दिष्ट गरिएको मिति/समय र त्यसपछि प्रत्येक लगइनसम्म संसूचक ट्रिगर गर्नुहोस् ।\n"
+"याद गर्नुहोस् संसूचक डेइमन पुन: सुरु हुदा कुनै समयमा यो पनि ट्रिगर भएको हुनेछ ।"
+
+#: recurrenceedit.cpp:147
+#, fuzzy
+#| msgid "Repeat the alarm at hourly/minutely intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at hourly/minutely intervals"
+msgstr "घण्टा/मिनेट अन्तरालमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:154
+#, fuzzy
+#| msgid "Repeat the alarm at daily intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at daily intervals"
+msgstr "दैनिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:161
+#, fuzzy
+#| msgid "Repeat the alarm at weekly intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at weekly intervals"
+msgstr "साप्ताहिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:168
+#, fuzzy
+#| msgid "Repeat the alarm at monthly intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at monthly intervals"
+msgstr "मासिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:175
+#, fuzzy
+#| msgid "Repeat the alarm at annual intervals"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at annual intervals"
+msgstr "वार्षिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:185
+msgctxt "@info:whatsthis"
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple "
+"times each time the recurrence is due."
+msgstr ""
+
+#: recurrenceedit.cpp:233
+#, fuzzy
+#| msgid "Recurrence End"
+msgctxt "@title:group"
+msgid "Recurrence End"
+msgstr "पुनरावृत्ति समाप्त"
+
+#: recurrenceedit.cpp:242
+#, fuzzy
+#| msgid "No &end"
+msgctxt "@option:radio"
+msgid "No end"
+msgstr "समाप्त भएको छैन"
+
+#: recurrenceedit.cpp:245
+#, fuzzy
+#| msgid "Repeat the alarm indefinitely"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm indefinitely"
+msgstr "अनिश्चित रूपमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:253
+#, fuzzy
+#| msgid "End a&fter:"
+msgctxt "@option:radio"
+msgid "End after:"
+msgstr "अन्त्य पछि:"
+
+#: recurrenceedit.cpp:255
+#, fuzzy
+#| msgid "Repeat the alarm for the number of times specified"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm for the number of times specified"
+msgstr "निर्दिष्ट गरिएका समय नम्बरका लागि संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:262
+#, fuzzy
+#| msgid "Enter the total number of times to trigger the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the total number of times to trigger the alarm"
+msgstr "संसूचक ट्रिगर गरिने कूल नम्बर प्रविष्ट गर्नुहोस्"
+
+#: recurrenceedit.cpp:266
+#, fuzzy
+#| msgid "occurrence(s)"
+msgctxt "@label"
+msgid "occurrence(s)"
+msgstr "घटना(हरू)"
+
+#: recurrenceedit.cpp:278
+#, fuzzy
+#| msgid "End &by:"
+msgctxt "@option:radio"
+msgid "End by:"
+msgstr "अन्त्य:"
+
+#: recurrenceedit.cpp:281
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
+"applies to the main recurrence only. It does not limit any sub-repetition "
+"which will occur regardless after the last main recurrence.</note></para>"
+msgstr ""
+
+#: recurrenceedit.cpp:286
+#, fuzzy
+#| msgid "This uses the same time zone as the start time."
+msgctxt "@info/plain"
+msgid "This uses the same time zone as the start time."
+msgstr "यसले सुरुको समयको जस्तै समय क्षेत्र प्रयोग गर्दछ ।"
+
+#: recurrenceedit.cpp:288
+#, fuzzy, kde-format
+#| msgid "Enter the last date to repeat the alarm."
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgstr "संसूचक दोहोर्याउने अन्तिम मिति प्रविष्ट गर्नुहोस् ।"
+
+#: recurrenceedit.cpp:295
+#, fuzzy, kde-format
+#| msgid "Enter the last time to repeat the alarm."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
+"%2</para>"
+msgstr "संसूचक दोहोर्याउने अन्तिम समय प्रविष्ट गर्नुहोस् ।"
+
+#: recurrenceedit.cpp:300
+#, fuzzy
+#| msgid ""
+#| "Stop repeating the alarm after your first login on or after the specified "
+#| "end date"
+msgctxt "@info:whatsthis"
+msgid ""
+"Stop repeating the alarm after your first login on or after the specified "
+"end date"
+msgstr ""
+"तपाईँको पहिलो लगइनको सुरुआत पछि वा निर्दिष्ट गरिएको अन्त्य समय पछि संसूचक दोहोर्याउन "
+"रोक्नुहोस्"
+
+#: recurrenceedit.cpp:318
+#, fuzzy
+#| msgid "E&xceptions"
+msgctxt "@title:group"
+msgid "Exceptions"
+msgstr "अपवाद"
+
+#: recurrenceedit.cpp:329
+#, fuzzy
+#| msgid ""
+#| "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgctxt "@info:whatsthis"
+msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgstr "अपवादका सूची, जस्तै: मिति/समय पुनरावृत्तिबाट बाहिरिन्छन्"
+
+#: recurrenceedit.cpp:348
+#, fuzzy
+#| msgid ""
+#| "Enter a date to insert in the exceptions list. Use in conjunction with "
+#| "the Add or Change button below."
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter a date to insert in the exceptions list. Use in conjunction with the "
+"Add or Change button below."
+msgstr ""
+"अपवाद सूचीमा घुसाउन मिति प्रविष्ट गर्नुहोस् । तलका थप्ने वा परिवर्तन गर्ने बटनमा संयोजन "
+"प्रयोग गर्नुहोस् ।"
+
+#: recurrenceedit.cpp:355
+#, fuzzy
+#| msgid "Add"
+msgctxt "@action:button"
+msgid "Add"
+msgstr "थप्नुहोस्"
+
+#: recurrenceedit.cpp:356
+#, fuzzy
+#| msgid "Add the date entered above to the exceptions list"
+msgctxt "@info:whatsthis"
+msgid "Add the date entered above to the exceptions list"
+msgstr "माथि प्रविष्ट गरिएको मिति अपवाद सूचीमा थप्नुहोस्"
+
+#: recurrenceedit.cpp:360
+#, fuzzy
+#| msgid "Change"
+msgctxt "@action:button"
+msgid "Change"
+msgstr "परिवर्तन गर्नुहोस्"
+
+#: recurrenceedit.cpp:362
+#, fuzzy
+#| msgid ""
+#| "Replace the currently highlighted item in the exceptions list with the "
+#| "date entered above"
+msgctxt "@info:whatsthis"
+msgid ""
+"Replace the currently highlighted item in the exceptions list with the date "
+"entered above"
+msgstr "माथि प्रविष्ट गरिएका मितिका अपवाद सूचीमा हाल हाइलाइट गरिएका वस्तु बदल्नुहोस्"
+
+#: recurrenceedit.cpp:366 templatedlg.cpp:120
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "मेट्नुहोस्"
+
+#: recurrenceedit.cpp:367
+#, fuzzy
+#| msgid "Remove the currently highlighted item from the exceptions list"
+msgctxt "@info:whatsthis"
+msgid "Remove the currently highlighted item from the exceptions list"
+msgstr "अपवाद सूचीबाट हाल हाइलाइट गरिएका वस्तु हटाउनुहोस्"
+
+#: recurrenceedit.cpp:374
+msgctxt "@option:check"
+msgid "Exclude holidays"
+msgstr ""
+
+#: recurrenceedit.cpp:377
+#, fuzzy
+#| msgid ""
+#| "Only execute the alarm during working hours.\n"
+#| "You can specify working hours in the Preferences dialog."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
+"holiday region in the Configuration dialog.</para>"
+msgstr ""
+"कार्य घण्टाको अवधिमा मात्र संसूचक कार्यान्वयन गर्नुहोस् ।\n"
+"तपाईँले प्राथमिकता संवादमा कार्य घण्टा निर्दिष्ट गर्न सक्नुहुन्छ ।"
+
+#: recurrenceedit.cpp:382
+#, fuzzy
+#| msgid "Only during working hours"
+msgctxt "@option:check"
+msgid "Only during working time"
+msgstr "कार्य घण्टाको अवधिमा मात्र"
+
+#: recurrenceedit.cpp:385
+#, fuzzy
+#| msgid ""
+#| "Only execute the alarm during working hours.\n"
+#| "You can specify working hours in the Preferences dialog."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Only execute the alarm during working hours, on working days.</"
+"para><para>You can specify working days and hours in the Configuration "
+"dialog.</para>"
+msgstr ""
+"कार्य घण्टाको अवधिमा मात्र संसूचक कार्यान्वयन गर्नुहोस् ।\n"
+"तपाईँले प्राथमिकता संवादमा कार्य घण्टा निर्दिष्ट गर्न सक्नुहुन्छ ।"
+
+#: recurrenceedit.cpp:428
+#, fuzzy
+#| msgid "End date is earlier than start date"
+msgctxt "@info"
+msgid "End date is earlier than start date"
+msgstr "अन्तिम मिति सुरु मिति भन्दा पहिला छ"
+
+#: recurrenceedit.cpp:429
+#, fuzzy
+#| msgid "End date/time is earlier than start date/time"
+msgctxt "@info"
+msgid "End date/time is earlier than start date/time"
+msgstr "अन्तिम मिति/समय सुरु मिति/समय भन्दा पहिला छ"
+
+#: recurrenceedit.cpp:699
+#, fuzzy
+#| msgid "Date cannot be earlier than %1"
+msgctxt "@info"
+msgid "Date cannot be earlier than start date"
+msgstr "मिति %1 भन्दा अगाडि हुन सक्दैन"
+
+#: recurrenceedit.cpp:1114
+#, fuzzy
+#| msgid "Recur e&very"
+msgctxt "@label:spinbox"
+msgid "Recur e&very"
+msgstr "प्रत्येक पुनरावृत्ति"
+
+#: recurrenceedit.cpp:1183
+#, fuzzy
+#| msgid "hours:minutes"
+msgctxt "@label Time units for user-entered numbers"
+msgid "hours:minutes"
+msgstr "घण्टा:मिनेट"
+
+#: recurrenceedit.cpp:1184
+#, fuzzy
+#| msgid ""
+#| "Enter the number of hours and minutes between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of hours and minutes between repetitions of the alarm"
+msgstr "संसूचकको पुनरागमन बीचमा घण्टा र मिनेटको सङ्ख्या प्रविष्ट गर्नुहोस्"
+
+#: recurrenceedit.cpp:1204
+#, fuzzy
+#| msgctxt "On: Tuesday"
+#| msgid "O&n:"
+msgctxt "@label On: Tuesday"
+msgid "O&n:"
+msgstr "यसमा:"
+
+#: recurrenceedit.cpp:1285
+#, fuzzy
+#| msgid "No day selected"
+msgctxt "@info"
+msgid "No day selected"
+msgstr "दिन चयन गरिएको छैन"
+
+#: recurrenceedit.cpp:1314
+#, fuzzy
+#| msgid "day(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "day(s)"
+msgstr "दिन(हरू)"
+
+#: recurrenceedit.cpp:1315
+#, fuzzy
+#| msgid "Enter the number of days between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of days between repetitions of the alarm"
+msgstr "संसूचकको पुनरावृत्ति बीचमा दिनका सङ्ख्या प्रविष्ट गर्नुहोस्"
+
+#: recurrenceedit.cpp:1316
+#, fuzzy
+#| msgid "Select the days of the week on which the alarm is allowed to occur"
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which the alarm is allowed to occur"
+msgstr "संसूचक देखिने अनुमति भएका हप्ताका दिन चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1327
+#, fuzzy
+#| msgid "week(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "week(s)"
+msgstr "हप्ता(हरू)"
+
+#: recurrenceedit.cpp:1328
+#, fuzzy
+#| msgid "Enter the number of weeks between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of weeks between repetitions of the alarm"
+msgstr "संसूचकको दोहोर्याई बीचमा हप्ताका सङ्ख्या प्रविष्ट गर्नुहोस्"
+
+#: recurrenceedit.cpp:1329
+#, fuzzy
+#| msgid "Select the days of the week on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which to repeat the alarm"
+msgstr "संसूचक दोहोरिने हप्ताका दिन चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1352
+#, fuzzy
+#| msgctxt "On day number in the month"
+#| msgid "O&n day"
+msgctxt "@option:radio On day number in the month"
+msgid "O&n day"
+msgstr "यस दिनमा"
+
+#: recurrenceedit.cpp:1356
+#, fuzzy
+#| msgid "Repeat the alarm on the selected day of the month"
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm on the selected day of the month"
+msgstr "चयन गरिएको महिनाको दिनमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:1363
+#, fuzzy
+#| msgctxt "Last day of month"
+#| msgid "Last"
+msgctxt "@item:inlistbox Last day of month"
+msgid "Last"
+msgstr "अन्तिम"
+
+#: recurrenceedit.cpp:1366
+#, fuzzy
+#| msgid "Select the day of the month on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the day of the month on which to repeat the alarm"
+msgstr "संसूचक दोहोर्याइने महिनाको दिन चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1380
+#, fuzzy
+#| msgctxt "On the 1st Tuesday"
+#| msgid "On t&he"
+msgctxt "@option:radio On the 1st Tuesday"
+msgid "On t&he"
+msgstr "यसमा"
+
+#: recurrenceedit.cpp:1384
+#, fuzzy
+#| msgid ""
+#| "Repeat the alarm on one day of the week, in the selected week of the month"
+msgctxt "@info:whatsthis"
+msgid ""
+"Repeat the alarm on one day of the week, in the selected week of the month"
+msgstr "महिनाको चयन गरिएको हप्तामा, हप्ताको एक दिनमा संसूचक दोहोर्याउनुहोस्"
+
+#: recurrenceedit.cpp:1388
+#, fuzzy
+#| msgid "1st"
+msgctxt "@item:inlistbox"
+msgid "1st"
+msgstr "पहिलो"
+
+#: recurrenceedit.cpp:1389
+#, fuzzy
+#| msgid "2nd"
+msgctxt "@item:inlistbox"
+msgid "2nd"
+msgstr "दोस्रो"
+
+#: recurrenceedit.cpp:1390
+#, fuzzy
+#| msgid "3rd"
+msgctxt "@item:inlistbox"
+msgid "3rd"
+msgstr "तेस्रो"
+
+#: recurrenceedit.cpp:1391
+#, fuzzy
+#| msgid "4th"
+msgctxt "@item:inlistbox"
+msgid "4th"
+msgstr "चौथो"
+
+#: recurrenceedit.cpp:1392
+#, fuzzy
+#| msgid "5th"
+msgctxt "@item:inlistbox"
+msgid "5th"
+msgstr "पाँचौँ"
+
+#: recurrenceedit.cpp:1393
+#, fuzzy
+#| msgctxt "Last day of month"
+#| msgid "Last"
+msgctxt "@item:inlistbox Last Monday in March"
+msgid "Last"
+msgstr "अन्तिम"
+
+#: recurrenceedit.cpp:1394
+#, fuzzy
+#| msgid "2nd Last"
+msgctxt "@item:inlistbox"
+msgid "2nd Last"
+msgstr "दोस्रो अन्तिम"
+
+#: recurrenceedit.cpp:1395
+#, fuzzy
+#| msgid "3rd Last"
+msgctxt "@item:inlistbox"
+msgid "3rd Last"
+msgstr "तेस्रो अन्तिम"
+
+#: recurrenceedit.cpp:1396
+#, fuzzy
+#| msgid "4th Last"
+msgctxt "@item:inlistbox"
+msgid "4th Last"
+msgstr "चौथो अन्तिम"
+
+#: recurrenceedit.cpp:1397
+#, fuzzy
+#| msgid "5th Last"
+msgctxt "@item:inlistbox"
+msgid "5th Last"
+msgstr "पाँचौँ अन्तिम"
+
+#: recurrenceedit.cpp:1400
+#, fuzzy
+#| msgctxt "Every (Monday...) in month"
+#| msgid "Every"
+msgctxt "@item:inlistbox Every (Monday...) in month"
+msgid "Every"
+msgstr "प्रत्येक दिन"
+
+#: recurrenceedit.cpp:1403
+#, fuzzy
+#| msgid "Select the week of the month in which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the week of the month in which to repeat the alarm"
+msgstr "संसूचक दोहोर्याइने महिनाको हप्ता चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1418
+#, fuzzy
+#| msgid "Select the day of the week on which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the day of the week on which to repeat the alarm"
+msgstr "संसूचक दोहोर्याइने हप्ताको दिन चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1541
+#, fuzzy
+#| msgid "month(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "month(s)"
+msgstr "महिना(हरू)"
+
+#: recurrenceedit.cpp:1542
+#, fuzzy
+#| msgid "Enter the number of months between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of months between repetitions of the alarm"
+msgstr "संसूचकको दोहोर्याइका बीचमा महिनाका सङ्ख्या प्रविष्ट गर्नुहोस्"
+
+#: recurrenceedit.cpp:1553
+#, fuzzy
+#| msgid "year(s)"
+msgctxt "@label Time unit for user-entered number"
+msgid "year(s)"
+msgstr "वर्ष(हरू)"
+
+#: recurrenceedit.cpp:1554
+#, fuzzy
+#| msgid "Enter the number of years between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the number of years between repetitions of the alarm"
+msgstr "संसूचकको दोहोर्याई बीचमा वर्षका सङ्ख्या प्रविष्ट गर्नुहोस्"
+
+#: recurrenceedit.cpp:1561
+#, fuzzy
+#| msgid "Monthly"
+msgctxt "@label List of months to select"
+msgid "Months:"
+msgstr "मासिक"
+
+#: recurrenceedit.cpp:1583
+#, fuzzy
+#| msgid "Select the months of the year in which to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Select the months of the year in which to repeat the alarm"
+msgstr "संसूचक दोहोर्याइने वर्षको महिना चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1592
+#, fuzzy
+#| msgid "February 2&9th alarm in non-leap years:"
+msgctxt "@label:listbox"
+msgid "February 2&9th alarm in non-leap years:"
+msgstr "सामान्य वर्षको फेब्रुअरी २९ को संसूचक:"
+
+#: recurrenceedit.cpp:1596
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox No date"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: recurrenceedit.cpp:1597
+#, fuzzy
+#| msgctxt "1st March (short form)"
+#| msgid "1 Mar"
+msgctxt "@item:inlistbox 1st March (short form)"
+msgid "1 Mar"
+msgstr "१ मार्च"
+
+#: recurrenceedit.cpp:1598
+#, fuzzy
+#| msgctxt "28th February (short form)"
+#| msgid "28 Feb"
+msgctxt "@item:inlistbox 28th February (short form)"
+msgid "28 Feb"
+msgstr "२८ फेब्रुअरी"
+
+#: recurrenceedit.cpp:1604
+#, fuzzy
+#| msgid ""
+#| "Select which date, if any, the February 29th alarm should trigger in non-"
+#| "leap years"
+msgctxt "@info:whatsthis"
+msgid ""
+"Select which date, if any, the February 29th alarm should trigger in non-"
+"leap years"
+msgstr ""
+"सामान्य वर्षमा फेब्रुअरी २९ मा संसूचक ट्रिगर हुनुपर्ने, कुनै पनि दिन भएमा, चयन गर्नुहोस्"
+
+#: recurrenceedit.cpp:1688
+#, fuzzy
+#| msgid "No month selected"
+msgctxt "@info"
+msgid "No month selected"
+msgstr "महिना चयन गरिएको छैन"
+
+#: repetitionbutton.cpp:87
+#, fuzzy
+#| msgid "Alarm Repetition"
+msgctxt "@title:window"
+msgid "Alarm Sub-Repetition"
+msgstr "संसूचक पुनरावृत्ति"
+
+#: repetitionbutton.cpp:165
+#, fuzzy
+#| msgctxt "Repeat every 10 minutes"
+#| msgid "Repeat every"
+msgctxt "@option:check Repeat every 10 minutes"
+msgid "Repeat every"
+msgstr "प्रत्येकलाई दोहोर्याउनुहोस्"
+
+#: repetitionbutton.cpp:166
+#, fuzzy
+#| msgid ""
+#| "Check to repeat the alarm each time it recurs. Instead of the alarm "
+#| "triggering once at each recurrence, this option makes the alarm trigger "
+#| "multiple times at each recurrence."
+msgctxt "@info:whatsthis"
+msgid ""
+"Instead of the alarm triggering just once at each recurrence, checking this "
+"option makes the alarm trigger multiple times at each recurrence."
+msgstr ""
+"प्रत्येक पुनरावृत्तिमा संसूचक दोहोर्याउन जाँच गर्नुहोस् । प्रत्येक पुनरावृत्तिमा एकपटक संसूचक "
+"ट्रिगर गर्नुको साटोमा, यो विकल्पले प्रत्येक पुनरावृत्तिमा धेरै पटक संसूचक ट्रिगर गर्ने बनाउछ ।"
+
+#: repetitionbutton.cpp:168
+#, fuzzy
+#| msgid "Enter the time between repetitions of the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the time between repetitions of the alarm"
+msgstr "संसूचकको पुनरावृत्ति बीचमा समय प्रविष्ट गर्नुहोस्"
+
+#: repetitionbutton.cpp:186
+#, fuzzy
+#| msgid "Number of repetitions:"
+msgctxt "@option:radio"
+msgid "Number of repetitions:"
+msgstr "पुनरावृत्तिको सङ्ख्या:"
+
+#: repetitionbutton.cpp:188
+#, fuzzy
+#| msgid ""
+#| "Check to specify the number of times the alarm should repeat after each "
+#| "recurrence"
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to specify the number of times the alarm should repeat after each "
+"recurrence"
+msgstr "प्रत्येक पुनरावृत्ति पछाडि संसूचक दोहोरिने सङ्ख्या निर्दिष्ट गर्न जाँच गर्नुहोस्"
+
+#: repetitionbutton.cpp:196
+#, fuzzy
+#| msgid ""
+#| "Enter the number of times to trigger the alarm after its initial "
+#| "occurrence"
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter the number of times to trigger the alarm after its initial occurrence"
+msgstr "संसूचकको सुरुआत घटना पछि यसको ट्रिगर गरिने सङ्ख्या प्रविष्ट गर्नुहोस्"
+
+#: repetitionbutton.cpp:204
+#, fuzzy
+#| msgid "Duration:"
+msgctxt "@option:radio"
+msgid "Duration:"
+msgstr "अवधि:"
+
+#: repetitionbutton.cpp:206
+#, fuzzy
+#| msgid "Check to specify how long the alarm is to be repeated"
+msgctxt "@info:whatsthis"
+msgid "Check to specify how long the alarm is to be repeated"
+msgstr "संसूचक कति पटक दोहोरिने निर्दिष्ट गर्न जाँच गर्नुहोस्"
+
+#: repetitionbutton.cpp:212
+#, fuzzy
+#| msgid "Enter the length of time to repeat the alarm"
+msgctxt "@info:whatsthis"
+msgid "Enter the length of time to repeat the alarm"
+msgstr "संसूचक दोहोरिने अवधि प्रविष्ट गर्नुहोस्"
+
+#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
+#, fuzzy
+#| msgid "Alarm Configuration"
+msgctxt "@title:window"
+msgid "Calendar Configuration"
+msgstr "संसूचक कन्फिगरेसन"
+
+#: resourceconfigdialog.cpp:61
+#, fuzzy
+#| msgid "General Settings"
+msgctxt "@title:group"
+msgid "General Settings"
+msgstr "साधारण सेटिङ"
+
+#: resourceconfigdialog.cpp:63
+#, fuzzy
+#| msgid "Name:"
+msgctxt "@label:textbox Calendar name"
+msgid "Name:"
+msgstr "नाम:"
+
+#: resourceconfigdialog.cpp:68
+#, fuzzy
+#| msgid "Read-only"
+msgctxt "@option:check"
+msgid "Read-only"
+msgstr "पढ्ने मात्र"
+
+#: resourceconfigdialog.cpp:81
+#, fuzzy, kde-format
+#| msgid "%1 Resource Settings"
+msgctxt "@title:group"
+msgid "<resource>%1</resource> Calendar Settings"
+msgstr "%1 संसाधन सेटिङ"
+
+#: resourceconfigdialog.cpp:123
+#, fuzzy
+#| msgid "Please enter a resource name."
+msgctxt "@info"
+msgid "Please enter a calendar name."
+msgstr "कृपया संसाधन नाम प्रविष्ट गर्नुहोस् ।"
+
+#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
+#, fuzzy
+#| msgid "Disabled alarm color"
+msgctxt "@info/plain"
+msgid "Disabled (wrong alarm type)"
+msgstr "अक्षम पारिएको संसूचक रङ"
+
+#: resources/resourcelocaldirwidget.cpp:40
+#: resources/resourcelocalwidget.cpp:42
+#, fuzzy
+#| msgid "Action"
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr "कार्य"
+
+#: resources/resourcelocaldirwidget.cpp:72
+#: resources/resourcelocalwidget.cpp:77
+msgctxt "@info"
+msgid "No location specified.  The calendar will be invalid."
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:42
+msgctxt "@label:textbox"
+msgid "Download from:"
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:48
+msgctxt "@label:textbox"
+msgid "Upload to:"
+msgstr ""
+
+#: resources/resourceremotewidget.cpp:94
+msgctxt "@info"
+msgid "You have specified no upload URL: the alarm calendar will be read-only."
+msgstr ""
+
+#: resources/resourcewidget.cpp:54
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Calendar <resource>%1</resource> cannot be made writable since it either was "
+"not created by <application>KAlarm</application>, or was created by a newer "
+"version of <application>KAlarm</application>"
+msgstr ""
+
+#: resources/alarmresource.cpp:354 resourceselector.cpp:856
+#, fuzzy
+#| msgid "Active Alarms"
+msgctxt "@info/plain"
+msgid "Active alarms"
+msgstr "संसूचक सक्रिय पार्नुहोस्"
+
+#: resources/alarmresource.cpp:355 resourceselector.cpp:858
+#, fuzzy
+#| msgid "Archived Alarms"
+msgctxt "@info/plain"
+msgid "Archived alarms"
+msgstr "सङ्ग्रहित संसूचक"
+
+#: resources/alarmresource.cpp:356 resourceselector.cpp:860
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@info/plain"
+msgid "Alarm templates"
+msgstr "संसूचक टेम्प्लेट"
+
+#: resources/alarmresource.cpp:359 resourceselector.cpp:865
+msgctxt "@info/plain"
+msgid "Read-write"
+msgstr ""
+
+#: resources/alarmresource.cpp:360 resourceselector.cpp:867
+#, fuzzy
+#| msgid "Enable"
+msgctxt "@info/plain"
+msgid "Enabled"
+msgstr "सक्षम पार्नुहोस्"
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:870
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "Yes"
+msgstr ""
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:871
+#, fuzzy
+#| msgid "None"
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "No"
+msgstr "कुनै पनि होइन"
+
+#: resources/alarmresource.cpp:363
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
+"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
+"para>"
+msgstr ""
+
+#: resources/alarmresources.cpp:159
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid email attachment:\n"
+#| "%1"
+msgctxt "@info"
+msgid "%1: invalid calendar file name: <filename>%2</filename>"
+msgstr ""
+"अवैध इमेल सङ्लग्नता:\n"
+"%1"
+
+#: resources/alarmresources.cpp:167
+#, fuzzy, kde-format
+#| msgid ""
+#| "Attachment not found:\n"
+#| "%1"
+msgctxt "@info"
+msgid "%1: file name not permitted: <filename>%2</filename>"
+msgstr ""
+"सङ्लग्नता फेला परेन:\n"
+"%1"
+
+#: resourceselector.cpp:100
+#, fuzzy
+#| msgid "Calendar Files"
+msgctxt "@title:group"
+msgid "Calendars"
+msgstr "क्यालेन्डर फाइल"
+
+#: resourceselector.cpp:104
+#, fuzzy
+#| msgid "Active Alarms"
+msgctxt "@item:inlistbox"
+msgid "Active Alarms"
+msgstr "संसूचक सक्रिय पार्नुहोस्"
+
+#: resourceselector.cpp:105
+#, fuzzy
+#| msgid "Archived Alarms"
+msgctxt "@item:inlistbox"
+msgid "Archived Alarms"
+msgstr "सङ्ग्रहित संसूचक"
+
+#: resourceselector.cpp:106
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@item:inlistbox"
+msgid "Alarm Templates"
+msgstr "संसूचक टेम्प्लेट"
+
+#: resourceselector.cpp:108
+#, fuzzy
+#| msgid "Choose which type of data to show alarm resources for"
+msgctxt "@info:whatsthis"
+msgid "Choose which type of data to show alarm calendars for"
+msgstr "संसूचक संसाधनका लागि कुन प्रकारको डेटा देखाउने रोज्नुहोस्"
+
+#: resourceselector.cpp:125
+#, fuzzy
+#| msgid ""
+#| "List of available resources of the selected type. The checked state shows "
+#| "whether a resource is enabled (checked) or disabled (unchecked). The "
+#| "default resource is shown in bold."
+msgctxt "@info:whatsthis"
+msgid ""
+"List of available calendars of the selected type. The checked state shows "
+"whether a calendar is enabled (checked) or disabled (unchecked). The default "
+"calendar is shown in bold."
+msgstr ""
+"चयन गरिएका प्रकारका उपलब्ध संसाधनको सूची । जाँच स्थितिले संसाधन सक्षम पारिएको (जाँच "
+"गरिएको) वा अक्षम पारिएको (जाँचबाट हटाइएको) देखाउछ । पूर्वनिर्धारित संसाधन बाक्लोमा "
+"देखाइन्छ ।"
+
+#: resourceselector.cpp:136 templatedlg.cpp:110
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
+
+#: resourceselector.cpp:141
+#, fuzzy
+#| msgid "Edit the highlighted resource"
+msgctxt "@info:whatsthis"
+msgid "Edit the highlighted calendar"
+msgstr "हाइलाइट गरिएका संसाधन सम्पादन गर्नुहोस्"
+
+#: resourceselector.cpp:142
+#, fuzzy
+#| msgid ""
+#| "Remove the highlighted resource from the list.\n"
+#| "The resource itself is left intact, and may subsequently be reinstated in "
+#| "the list if desired."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
+msgstr ""
+"सूचीबाट हाइलाइट गरिएका संसाधन हटाउनुहोस् ।\n"
+"संसाधन आफैँमा पूर्ण हुन्छ, र त्यस्तै गरि चाहेमा सूचीमा पुन: स्थापना गर्ना सकिन्छ ।"
+
+#: resourceselector.cpp:175
+#, fuzzy
+#| msgid "Add a new active alarm resource"
+msgctxt "@info:tooltip"
+msgid "Add a new active alarm calendar"
+msgstr "नयाँ सक्रिय संसूचक संसाधन थप्नुहोस्"
+
+#: resourceselector.cpp:179
+#, fuzzy
+#| msgid "Add a new archived alarm resource"
+msgctxt "@info:tooltip"
+msgid "Add a new archived alarm calendar"
+msgstr "नयाँ सङ्ग्रहित संसूचक संसाधन थप्नुहोस्"
+
+#: resourceselector.cpp:183
+#, fuzzy
+#| msgid "Add a new alarm template resource"
+msgctxt "@info:tooltip"
+msgid "Add a new alarm template calendar"
+msgstr "नयाँ संसूचक टेम्प्लेट संसाधन थप्नुहोस्"
+
+#: resourceselector.cpp:239
+#, fuzzy
+#| msgid "Select storage type of new resource:"
+msgctxt "@info"
+msgid "Select storage type of new calendar:"
+msgstr "नयाँ संसाधनको भण्डारण प्रकार चयन गर्नुहोस्:"
+
+#: resourceselector.cpp:246
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+msgctxt "@info"
+msgid "Unable to create calendar of type <resource>%1</resource>."
+msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
+
+#: resourceselector.cpp:249
+#, kde-format
+msgctxt "@info/plain"
+msgid "%1 calendar"
+msgstr ""
+
+#: resourceselector.cpp:363
+#, fuzzy
+#| msgid "You cannot make your default active alarm resource read-only."
+msgctxt "@info"
+msgid "You cannot make your default active alarm calendar read-only."
+msgstr "तपाईँले आफ्नो पूर्वनिर्धारित सक्रिय संसूचक संसाधन पढ्ने मात्र बनाउन सक्नु हुदैँन ।"
+
+#: resourceselector.cpp:370
+#, fuzzy
+#| msgid ""
+#| "You cannot make your default archived alarm resource read-only while "
+#| "expired alarms are configured to be kept."
+msgctxt "@info"
+msgid ""
+"You cannot make your default archived alarm calendar read-only while expired "
+"alarms are configured to be kept."
+msgstr ""
+"राख्नका लागि म्याद समाप्त भएका संसूचक कन्फिगर गर्दा तपाईँले आफ्ना पूर्वनिर्धारित सङ्ग्रहित "
+"संसूचक संसाधन पढ्ने मात्र बनाउन सक्नु हुदैँन ।"
+
+#: resourceselector.cpp:374
+#, fuzzy
+#| msgid "Do you really want to make your default resource read-only?"
+msgctxt "@info"
+msgid "Do you really want to make your default calendar read-only?"
+msgstr "तपाईँ वास्तवमै आफ्नो पूर्वनिर्धारित संसाधन पढ्ने मात्र बनाउन चाहनुहुन्छ ?"
+
+#: resourceselector.cpp:427
+#, fuzzy
+#| msgid "You cannot remove your default active alarm resource."
+msgctxt "@info"
+msgid "You cannot remove your default active alarm calendar."
+msgstr "तपाईँले पूर्वनिर्धारित सक्रिय संसूचक संसाधन हटाउन सक्नु हुदैँन ।"
+
+#: resourceselector.cpp:434
+#, fuzzy
+#| msgid ""
+#| "You cannot remove your default archived alarm resource while expired "
+#| "alarms are configured to be kept."
+msgctxt "@info"
+msgid ""
+"You cannot remove your default archived alarm calendar while expired alarms "
+"are configured to be kept."
+msgstr ""
+"तपाईँले राख्नका लागि म्याद समाप्त भएका संसूचक कन्फिगर गर्दा पूर्वनिर्धारित सङ्ग्रहित संसूचक "
+"संसाधन हटाउन सक्नु हुँदैन ।"
+
+#: resourceselector.cpp:450
+#, kde-format
+msgctxt "@info"
+msgid "<para>It also contains:%1</para>"
+msgstr ""
+
+#: resourceselector.cpp:451
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> is the default calendar for:%2</para>"
+"%3<para>Do you really want to remove it from all calendar lists?</para>"
+msgstr ""
+
+#: resourceselector.cpp:455 resourceselector.cpp:463
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Do you really want to remove your default resource (<b>%1</b>) from "
+#| "the list?</qt>"
+msgctxt "@info"
+msgid ""
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
+"from the list?"
+msgstr ""
+"<qt>तपाईँले सूचीबाट वास्तवमै पूर्वनिर्धारित संसाधन (<b>%1</b>) मेट्न चाहनुहुन्छ ?</qt>"
+
+#: resourceselector.cpp:458
+#, fuzzy, kde-format
+#| msgid ""
+#| "Alarms are currently disabled.\n"
+#| "Do you want to enable alarms now?"
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
+"remove it from all calendar lists?</para>"
+msgstr ""
+"संसूचक हालै अक्षम पारिएका छन् ।\n"
+"तपाईँ संसूचक अहिले सक्षम पार्न चाहनुहुन्छ ?"
+
+#: resourceselector.cpp:461 resourceselector.cpp:464
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Do you really want to remove the resource <b>%1</b> from the list?</"
+#| "qt>"
+msgctxt "@info"
+msgid ""
+"Do you really want to remove the calendar <resource>%1</resource> from the "
+"list?"
+msgstr "<qt>तपाईँले वास्तवमै सूचीबाट संसाधन <b>%1</b> लाई हटाउन चाहनुहुन्छ ?</qt>"
+
+#: resourceselector.cpp:501
+#, fuzzy
+#| msgid "Re&load"
+msgctxt "@action Reload calendar"
+msgid "Re&load"
+msgstr "रिलोड गर्नुहोस्"
+
+#: resourceselector.cpp:505
+#, fuzzy
+#| msgid "&Save"
+msgctxt "@action"
+msgid "&Save"
+msgstr "बचत गर्नुहोस्"
+
+#: resourceselector.cpp:509
+#, fuzzy
+#| msgid "Show &Details"
+msgctxt "@action"
+msgid "Show &Details"
+msgstr "विस्तृत विवरण देखाउनुहोस्"
+
+#: resourceselector.cpp:512
+#, fuzzy
+#| msgid "Font & Color"
+msgctxt "@action"
+msgid "Set &Color..."
+msgstr "फन्ट र रङ"
+
+#: resourceselector.cpp:515
+msgctxt "@action"
+msgid "Clear C&olor"
+msgstr ""
+
+#: resourceselector.cpp:522
+msgctxt "@action"
+msgid "&Update Calendar Format"
+msgstr ""
+
+#: resourceselector.cpp:526
+#, fuzzy
+#| msgid "&Remove"
+msgctxt "@action"
+msgid "&Remove"
+msgstr "हटाउनुहोस्"
+
+#: resourceselector.cpp:532
+#, fuzzy
+#| msgid "&Add..."
+msgctxt "@action"
+msgid "&Add..."
+msgstr "थप्नुहोस्..."
+
+#: resourceselector.cpp:535
+#, fuzzy
+#| msgid "Im&port..."
+msgctxt "@action"
+msgid "Im&port..."
+msgstr "आयात गर्नुहोस्..."
+
+#: resourceselector.cpp:621
+#, fuzzy
+#| msgid "Use as &Default for Active Alarms"
+msgctxt "@action"
+msgid "Use as &Default for Active Alarms"
+msgstr "सक्रिय संसूचकका लागि पूर्वनिर्धारितका रूपमा प्रयोग गर्नुहोस्"
+
+#: resourceselector.cpp:622
+#, fuzzy
+#| msgid "Use as &Default for Archived Alarms"
+msgctxt "@action"
+msgid "Use as &Default for Archived Alarms"
+msgstr "सङ्ग्रहित संसुचकका लागि पूर्वनिर्धारितका रूपमा प्रयोग गर्नुहोस्"
+
+#: resourceselector.cpp:623
+#, fuzzy
+#| msgid "Use as &Default for Alarm Templates"
+msgctxt "@action"
+msgid "Use as &Default for Alarm Templates"
+msgstr "संसूचक टेम्प्लेटका लागि पूर्वनिर्धारितका रूपमा प्रयोग गर्नुहोस्"
+
+#: resourceselector.cpp:740
+#, fuzzy
+#| msgid "Add a new active alarm resource"
+msgctxt "@info/plain"
+msgid "It is not an active alarm calendar."
+msgstr "नयाँ सक्रिय संसूचक संसाधन थप्नुहोस्"
+
+#: resourceselector.cpp:743
+#, fuzzy
+#| msgid "Add a new archived alarm resource"
+msgctxt "@info/plain"
+msgid "It is not an archived alarm calendar."
+msgstr "नयाँ सङ्ग्रहित संसूचक संसाधन थप्नुहोस्"
+
+#: resourceselector.cpp:746
+#, fuzzy
+#| msgid "Add a new alarm template resource"
+msgctxt "@info/plain"
+msgid "It is not an alarm template calendar."
+msgstr "नयाँ संसूचक टेम्प्लेट संसाधन थप्नुहोस्"
+
+#: resourceselector.cpp:751
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
+"para>"
+msgstr ""
+
+#: resourceselector.cpp:861
+msgctxt "@info/plain List separator"
+msgid ", "
+msgstr ""
+
+#: resourceselector.cpp:873
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
+"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
+"calendar: %9</para>"
+msgstr ""
+
+#: soundpicker.cpp:50
+#, fuzzy
+#| msgctxt "An audio sound"
+#| msgid "&Sound:"
+msgctxt "@label:listbox Listbox providing audio options"
+msgid "Sound:"
+msgstr "ध्वनि:"
+
+#: soundpicker.cpp:51
+#, fuzzy
+#| msgid "None"
+msgctxt "@item:inlistbox No sound"
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: soundpicker.cpp:52
+#, fuzzy
+#| msgid "Beep"
+msgctxt "@item:inlistbox"
+msgid "Beep"
+msgstr "बीप"
+
+#: soundpicker.cpp:53
+#, fuzzy
+#| msgid "Speak"
+msgctxt "@item:inlistbox"
+msgid "Speak"
+msgstr "वाचन गर्नुहोस्"
+
+#: soundpicker.cpp:54
+#, fuzzy
+#| msgid "Sound file"
+msgctxt "@item:inlistbox"
+msgid "Sound file"
+msgstr "ध्वनि फाइल"
+
+#: soundpicker.cpp:98
+#, fuzzy
+#| msgid "Configure sound file"
+msgctxt "@info:tooltip"
+msgid "Configure sound file"
+msgstr "ध्वनि फाइल कन्फिगर गर्नुहोस्"
+
+#: soundpicker.cpp:99
+#, fuzzy
+#| msgid "Configure a sound file to play when the alarm is displayed."
+msgctxt "@info:whatsthis"
+msgid "Configure a sound file to play when the alarm is displayed."
+msgstr "संसूचक प्रदर्शित भएको बेलामा प्ले गर्न ध्वनि फाइल कन्फिगर गर्नुहोस् ।"
+
+#: soundpicker.cpp:132
+#, fuzzy, kde-format
+#| msgid "<b>%1</b>: the message is displayed silently."
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message is displayed silently."
+msgstr "<b>%1</b>: सन्देश ध्वनि बिना प्रदर्शित हुन्छ ।"
+
+#: soundpicker.cpp:133
+#, fuzzy, kde-format
+#| msgid "<b>%1</b>: a simple beep is sounded."
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: a simple beep is sounded."
+msgstr "<b>%1</b>: एउटा सामान्य बिप बज्यो ।"
+
+#: soundpicker.cpp:134
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>%1</b>: an audio file is played. You will be prompted to choose the "
+#| "file and set play options."
+msgctxt "@info:whatsthis"
+msgid ""
+"<interface>%1</interface>: an audio file is played. You will be prompted to "
+"choose the file and set play options."
+msgstr ""
+"<b>%1</b>: एउटा अडियो फाइल बजाइयो । तपाईँलाई फाइल छनोट गर्न र प्ले विकल्प सेट गर्न "
+"प्रोम्ट गरिन्छ ।"
+
+#: soundpicker.cpp:138
+#, fuzzy, kde-format
+#| msgid "<b>%1</b>: the message text is spoken."
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message text is spoken."
+msgstr "<b>%1</b>: सन्देश पाठ बजेकोछ ।"
+
+#: soundpicker.cpp:140
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:148
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item></list></para>"
+msgstr ""
+
+#: soundpicker.cpp:268
+#, fuzzy
+#| msgid "Sound File"
+msgctxt "@title:window"
+msgid "Sound File"
+msgstr "ध्वनि फाइल"
+
+#: soundpicker.cpp:330
+#, fuzzy
+#| msgid "Choose Sound File"
+msgctxt "@title:window"
+msgid "Choose Sound File"
+msgstr "ध्वनि फाइल रोज्नुहोस्"
+
+#: specialactions.cpp:48
+#, fuzzy
+#| msgid "Special Actions..."
+msgctxt "@action:button"
+msgid "Special Actions..."
+msgstr "विशेष कार्य..."
+
+#: specialactions.cpp:56
+#, fuzzy
+#| msgid "Specify actions to execute before and after the alarm is displayed."
+msgctxt "@info:whatsthis"
+msgid "Specify actions to execute before and after the alarm is displayed."
+msgstr "संसूचक प्रदर्शित हुनुभन्दा पहिले र पछाडि कार्यान्वयन गर्न कार्य निर्दिष्ट गर्नुहोस् ।"
+
+#: specialactions.cpp:107
+#, fuzzy
+#| msgid "Special Alarm Actions"
+msgctxt "@title:window"
+msgid "Special Alarm Actions"
+msgstr "विशेष संसूचक कार्य"
+
+#: specialactions.cpp:165
+#, fuzzy
+#| msgid "Pre-alarm action"
+msgctxt "@title:group"
+msgid "Pre-Alarm Action"
+msgstr "संसूचक पुर्वको कार्य"
+
+#: specialactions.cpp:175 specialactions.cpp:210
+#, fuzzy
+#| msgid "Co&mmand"
+msgctxt "@label:textbox"
+msgid "Command:"
+msgstr "आदेश"
+
+#: specialactions.cpp:180
+#, fuzzy
+#| msgid ""
+#| "Enter a shell command to execute before the alarm is displayed.\n"
+#| "Note that it is executed only when the alarm proper is displayed, not "
+#| "when a reminder or deferred alarm is displayed.\n"
+#| "N.B. KAlarm will wait for the command to complete before displaying the "
+#| "alarm."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute before the alarm is displayed.</"
+"para><para>Note that it is executed only when the alarm proper is displayed, "
+"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
+"will wait for the command to complete before displaying the alarm.</note></"
+"para>"
+msgstr ""
+"संसूचक प्रदर्शित हुनुभन्दा पहिला कार्यान्वयन गर्न शेल आदेश प्रविष्ट गर्नुहोस् ।\n"
+"याद गर्नुहोस् यो उचित संसूचक प्रदर्शित हुँदा मात्र कार्यान्यवन हुन्छ, सचेतक वा पछि सारिएको "
+"संसूचक प्रदर्शित हुँदा हुँदैन ।\n"
+"N.B. केडीई संसूचकले संसूचक प्रदर्शन हुनुभन्दा पहिला पूरा गर्न आदेशको प्रतिक्षा गर्दछ ।"
+
+#: specialactions.cpp:186
+msgctxt "@option:check"
+msgid "Execute for deferred alarms"
+msgstr ""
+
+#: specialactions.cpp:187
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If unchecked, the command is only executed before the alarm proper is "
+"displayed.</para><para>If checked, the pre-alarm command is also executed "
+"before a deferred alarm is displayed.</para>"
+msgstr ""
+
+#: specialactions.cpp:191
+msgctxt "@option:check"
+msgid "Cancel alarm on error"
+msgstr ""
+
+#: specialactions.cpp:192
+msgctxt "@info:whatsthis"
+msgid ""
+"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
+"alarm or execute any post-alarm action command."
+msgstr ""
+
+#: specialactions.cpp:195
+msgctxt "@option:check"
+msgid "Do not notify errors"
+msgstr ""
+
+#: specialactions.cpp:196
+#, fuzzy
+#| msgid ""
+#| "The default setting for the recurrence rule in the alarm edit dialog."
+msgctxt "@info:whatsthis"
+msgid ""
+"Do not show error status or error message if the pre-alarm command fails."
+msgstr "संसूचक सम्पादन संवादमा पुनरावृत्ति नियमका लागि पूर्वनिर्धारित सटिङ ।"
+
+#: specialactions.cpp:200
+#, fuzzy
+#| msgid "Post-alarm action"
+msgctxt "@title:group"
+msgid "Post-Alarm Action"
+msgstr "संसूचक पश्चातको कार्य"
+
+#: specialactions.cpp:214
+#, fuzzy
+#| msgid ""
+#| "Enter a shell command to execute after the alarm window is closed.\n"
+#| "Note that it is not executed after closing a reminder window. If you "
+#| "defer the alarm, it is not executed until the alarm is finally "
+#| "acknowledged or closed."
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute after the alarm window is closed.</"
+"para><para>Note that it is not executed after closing a reminder window. If "
+"you defer the alarm, it is not executed until the alarm is finally "
+"acknowledged or closed.</para>"
+msgstr ""
+"संसूचक सञ्झ्याल बन्द भएपछि कार्यान्वयन गर्न शेल आदेश प्रविष्ट गर्नुहोस् ।\n"
+"याद गर्नुहोस् सचेतक सञ्झ्याल बन्द गरेपछि यो कार्यान्वयन हुदैँन । तपाईँले संसूचक पछि सारेमा, "
+"संसूचक अन्त्यसम्म स्वीकार वा बन्द नभएसम्म कार्यान्वयन हुदैँन ।"
+
+#: templatedlg.cpp:69
+#, fuzzy
+#| msgid "Alarm Templates"
+msgctxt "@title:window"
+msgid "Alarm Templates"
+msgstr "संसूचक टेम्प्लेट"
+
+#: templatedlg.cpp:95 templatelistview.cpp:44
+#, fuzzy
+#| msgid "The list of alarm templates"
+msgctxt "@info:whatsthis"
+msgid "The list of alarm templates"
+msgstr "संसूचक टेम्प्लेटको सूची"
+
+#: templatedlg.cpp:103
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action:button"
+msgid "New"
+msgstr "नयाँ..."
+
+#: templatedlg.cpp:104
+#, fuzzy
+#| msgid "&New..."
+msgctxt "@action"
+msgid "New"
+msgstr "नयाँ..."
+
+#: templatedlg.cpp:107
+#, fuzzy
+#| msgid "Create a new alarm template"
+msgctxt "@info:whatsthis"
+msgid "Create a new alarm template"
+msgstr "नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
+
+#: templatedlg.cpp:112
+#, fuzzy
+#| msgid "Edit the currently highlighted alarm template"
+msgctxt "@info:whatsthis"
+msgid "Edit the currently highlighted alarm template"
+msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
+
+#: templatedlg.cpp:115
+#, fuzzy
+#| msgid "Co&py"
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "प्रतिलिपि बनाउनुहोस्"
+
+#: templatedlg.cpp:117
+#, fuzzy
+#| msgid ""
+#| "Create a new alarm template based on a copy of the currently highlighted "
+#| "template"
+msgctxt "@info:whatsthis"
+msgid ""
+"Create a new alarm template based on a copy of the currently highlighted "
+"template"
+msgstr ""
+"हालै हाइलाइट गरिएको टेम्प्लेटको प्रतिलिपिमा आधारित नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
+
+#: templatedlg.cpp:122
+#, fuzzy
+#| msgid "Delete the currently highlighted alarm template"
+msgctxt "@info:whatsthis"
+msgid "Delete the currently highlighted alarm template"
+msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट मट्नुहोस्"
+
+#: templatedlg.cpp:211
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete the selected alarm template?"
+#| msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm template?"
+msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgstr[0] "तपाईँ वास्तवमै चयन गरिएको संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
+msgstr[1] "तपाईँ वास्तवमै चयन गरिएका %1 संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
+
+#: templatedlg.cpp:213
+#, fuzzy
+#| msgid "Delete Alarm Template"
+#| msgid_plural "Delete Alarm Templates"
+msgctxt "@title:window"
+msgid "Delete Alarm Template"
+msgid_plural "Delete Alarm Templates"
+msgstr[0] "संसूचक टेम्प्लेट मेट्नुहोस्"
+msgstr[1] "संसूचक टेम्प्लेट मेट्नुहोस्"
+
+#: templatepickdlg.cpp:46
+#, fuzzy
+#| msgid "Choose Alarm Template"
+msgctxt "@title:window"
+msgid "Choose Alarm Template"
+msgstr "संसूचक टेम्प्लेट रोज्नुहोस्"
+
+#: templatepickdlg.cpp:77
+#, fuzzy
+#| msgid "Select a template to base the new alarm on."
+msgctxt "@info:whatsthis"
+msgid "Select a template to base the new alarm on."
+msgstr "नयाँ संसूचकमा आधारलाई टेम्प्लेट चयन गर्नुहोस् ।"
+
+#: traywindow.cpp:100
+#, fuzzy
+#| msgid "New Alarm"
+msgctxt "@action"
+msgid "&New Alarm"
+msgstr "नयाँ संसूचक"
+
+#: traywindow.cpp:333
+#, fuzzy
+#| msgid "Disabled"
+msgid "Disabled"
+msgstr "अक्षम"
+
+#: traywindow.cpp:338
+msgctxt "@info:tooltip Brief: some alarms are disabled"
+msgid "(Some alarms disabled)"
+msgstr ""
+
+#: traywindow.cpp:408
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "(%1%2:%3)"
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "(%1%2:%3)"
+msgstr "(%1%2:%3)"
+
+#: traywindow.cpp:410
+#, fuzzy, kde-format
+#| msgctxt "prefix + hours:minutes"
+#| msgid "%1%2:%3"
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "%1%2:%3"
+msgstr "%1%2:%3"
+
+#: rtcwakeaction.cpp:89
+#, kde-format
+msgctxt "@text/plain"
+msgid "Could not run <command>%1</command> to set wake from suspend"
+msgstr ""
+
+#: rtcwakeaction.cpp:92
+#, kde-format
+msgctxt "@text/plain"
+msgid ""
+"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
+">Error code: %2."
+msgstr ""
+
+#: akonadiresourcecreator.cpp:109
+#, fuzzy
+#| msgid "Failed to send email"
+msgctxt "@info/plain"
+msgid "Failed to create new calendar resource"
+msgstr "इमेल पठाउन असफल"
+
+#: calendarmigrator.cpp:329
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+msgctxt "@info/plain"
+msgid "Failed to create default calendar <resource>%1</resource>"
+msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
+
+#: calendarmigrator.cpp:331
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
+msgid ""
+"Failed to convert old configuration for calendar <resource>%1</resource>. "
+"Please use Import Alarms to load its alarms into a new or existing calendar."
+msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
+
+#: calendarmigrator.cpp:333
+#, fuzzy, kde-format
+#| msgid "Action"
+msgctxt "@info/plain File path or URL"
+msgid "Location: %1"
+msgstr "कार्य"
+
+#: calendarmigrator.cpp:335
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2</para>"
+msgstr ""
+"%1\n"
+"तपाईँ परिवर्तन बचत गर्ने चाहानामा निश्चित हुनुहुन्छ ?"
+
+#: calendarmigrator.cpp:337
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1\n"
+#| "Are you sure you want to save your changes?"
+msgctxt "@info"
+msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
+msgstr ""
+"%1\n"
+"तपाईँ परिवर्तन बचत गर्ने चाहानामा निश्चित हुनुहुन्छ ?"
+
+#: calendarmigrator.cpp:443
+#, fuzzy
+#| msgid "Invalid time"
+msgctxt "@info/plain"
+msgid "Invalid collection"
+msgstr "अवैध समय"
+
+#: calendarmigrator.cpp:457
+#, fuzzy, kde-format
+#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
+msgctxt "@info/plain"
+msgid "Failed to update format of calendar <resource>%1</resource>"
+msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
+
+#: calendarmigrator.cpp:735
+msgctxt "@info/plain"
+msgid "New configuration timed out"
+msgstr ""
+
+#: calendarmigrator.cpp:748
+msgctxt "@info/plain"
+msgid "New configuration was corrupt"
+msgstr ""
+
+#: undo.cpp:440
+#, fuzzy
+#| msgid "Alarm not found"
+msgctxt "@info/plain"
+msgid "Alarm not found"
+msgstr "संसूचक फेला परेन"
+
+#: undo.cpp:441
+#, fuzzy
+#| msgid "Error recreating alarm"
+msgctxt "@info/plain"
+msgid "Error recreating alarm"
+msgstr "संसूचक पुन: सिर्जना गर्दा त्रुटि"
+
+#: undo.cpp:442
+#, fuzzy
+#| msgid "Error recreating alarm template"
+msgctxt "@info/plain"
+msgid "Error recreating alarm template"
+msgstr "संसूचक टेम्प्लेट पुन: सिर्जना गर्दा त्रुटि"
+
+#: undo.cpp:443
+#, fuzzy
+#| msgid "Cannot reactivate archived alarm"
+msgctxt "@info/plain"
+msgid "Cannot reactivate archived alarm"
+msgstr "सङ्ग्रहित संसूचक पुन: सक्रिय पार्न सकिँदैन"
+
+#: undo.cpp:444
+#, fuzzy
+#| msgid "Program error"
+msgctxt "@info/plain"
+msgid "Program error"
+msgstr "कार्यक्रम त्रुटि"
+
+#: undo.cpp:445
+#, fuzzy
+#| msgid "Unknown error"
+msgctxt "@info/plain"
+msgid "Unknown error"
+msgstr "अज्ञात त्रुटि"
+
+#: undo.cpp:447
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@info Undo-action: message"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: undo.cpp:684
+#, fuzzy
+#| msgctxt "Action to create a new alarm"
+#| msgid "New alarm"
+msgctxt "@info/plain Action to create a new alarm"
+msgid "New alarm"
+msgstr "नयाँ संसूचक"
+
+#: undo.cpp:686
+#, fuzzy
+#| msgctxt "Action to delete an alarm"
+#| msgid "Delete alarm"
+msgctxt "@info/plain Action to delete an alarm"
+msgid "Delete alarm"
+msgstr "संसूचक मेट्नुहोस्"
+
+#: undo.cpp:689
+#, fuzzy
+#| msgctxt "Action to create a new alarm template"
+#| msgid "New template"
+msgctxt "@info/plain Action to create a new alarm template"
+msgid "New template"
+msgstr "नयाँ टेम्प्लेट"
+
+#: undo.cpp:691
+#, fuzzy
+#| msgctxt "Action to delete an alarm template"
+#| msgid "Delete template"
+msgctxt "@info/plain Action to delete an alarm template"
+msgid "Delete template"
+msgstr "टेम्प्लेट मेट्नुहोस्"
+
+#: undo.cpp:693
+#, fuzzy
+#| msgid "Delete archived alarm"
+msgctxt "@info/plain"
+msgid "Delete archived alarm"
+msgstr "सङ्ग्रहित संसूचक मेट्नुहोस्"
+
+#: undo.cpp:916
+#, fuzzy
+#| msgid "Create multiple alarms"
+msgctxt "@info/plain"
+msgid "Create multiple alarms"
+msgstr "बहुविध संसूचक सिर्जना गर्नुहोस्"
+
+#: undo.cpp:1022
+#, fuzzy
+#| msgctxt "Action to edit an alarm"
+#| msgid "Edit alarm"
+msgctxt "@info/plain Action to edit an alarm"
+msgid "Edit alarm"
+msgstr "संसूचक सम्पादन गर्नुहोस्"
+
+#: undo.cpp:1024
+#, fuzzy
+#| msgctxt "Action to edit an alarm template"
+#| msgid "Edit template"
+msgctxt "@info/plain Action to edit an alarm template"
+msgid "Edit template"
+msgstr "टेम्प्लेट सम्पादन गर्नुहोस्"
+
+#: undo.cpp:1207
+#, fuzzy
+#| msgid "Delete multiple alarms"
+msgctxt "@info/plain"
+msgid "Delete multiple alarms"
+msgstr "बहुविध संसूचक मेट्नुहोस्"
+
+#: undo.cpp:1209
+#, fuzzy
+#| msgid "Delete multiple templates"
+msgctxt "@info/plain"
+msgid "Delete multiple templates"
+msgstr "बहुविध टेम्प्लेट मेट्नुहोस्"
+
+#: undo.cpp:1216
+#, fuzzy
+#| msgid "Delete multiple archived alarms"
+msgctxt "@info/plain"
+msgid "Delete multiple archived alarms"
+msgstr "बहुविध सङ्ग्रहित संसूचक मेट्नुहोस्"
+
+#: undo.cpp:1259 undo.cpp:1303
+#, fuzzy
+#| msgid "Reactivate alarm"
+msgctxt "@info/plain"
+msgid "Reactivate alarm"
+msgstr "संसूचक पुन: सक्रिय पार्नुहोस्"
+
+#: undo.cpp:1326
+#, fuzzy
+#| msgid "Reactivate multiple alarms"
+msgctxt "@info/plain"
+msgid "Reactivate multiple alarms"
+msgstr "बहुविध संसूचक पुन: सक्रिय पार्नुहोस्"
+
+#: wakedlg.cpp:56
+msgctxt "@title:window"
+msgid "Wake From Suspend"
+msgstr ""
+
+#: wakedlg.cpp:181
+#, fuzzy
+#| msgid "Next scheduled date and time of the alarm"
+msgctxt "@info"
+msgid "Cannot schedule wakeup time for a date-only alarm"
+msgstr "पछिल्लो संसूचकको तालिकावद्ध मिति र समय"
+
+#: wakedlg.cpp:185
+msgctxt "@info"
+msgid ""
+"<para>This wakeup will cancel any existing wakeup which has been set by "
+"KAlarm or any other application, because your computer can only schedule a "
+"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
+"supported at all on some computers, especially older ones, and some "
+"computers only support setting a wakeup time up to 24 hours ahead. You may "
+"wish to set up a test alarm to check your system's capability.</para>"
+msgstr ""
+
+#: alarmtime.cpp:42 alarmtime.cpp:80
+#, fuzzy
+#| msgid "Never"
+msgctxt "@info/plain Alarm never occurs"
+msgid "Never"
+msgstr "कहिले पनि होइन"
+
+#: alarmtime.cpp:86
+#, fuzzy, no-c-format, kde-format
+#| msgctxt "n days"
+#| msgid " %1d "
+msgctxt "@info/plain n days"
+msgid "%1d"
+msgstr " %1d "
+
+#: alarmtime.cpp:95
+#, fuzzy, kde-format
+#| msgctxt "Undo-action: message"
+#| msgid "%1: %2"
+msgctxt "@info/plain hours:minutes"
+msgid "%1:%2"
+msgstr "%1: %2"
+
+#: alarmtime.cpp:98
+#, fuzzy, kde-format
+#| msgctxt "days hours:minutes"
+#| msgid " %1d %2:%3 "
+msgctxt "@info/plain days hours:minutes"
+msgid "%1d %2:%3"
+msgstr " %1d %2:%3 "
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -6405,1996 +8395,6 @@ msgstr "कृपया संसाधन नाम प्रविष्ट �
 #. i18n: ectx: label, entry (MonitorFile), group (General)
 #: rc.cpp:483
 msgid "Monitor file for changes."
-msgstr ""
-
-#: recurrenceedit.cpp:81
-#, fuzzy
-#| msgid "No Recurrence"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "No Recurrence"
-msgstr "पुनरावृत्ति होइन"
-
-#: recurrenceedit.cpp:82
-#, fuzzy
-#| msgid "At Login"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "At Login"
-msgstr "लगइनमा"
-
-#: recurrenceedit.cpp:83
-#, fuzzy
-#| msgid "Hourly/Minutely"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Hourly/Minutely"
-msgstr "घण्टामा/मिनेटमा"
-
-#: recurrenceedit.cpp:84
-#, fuzzy
-#| msgid "Daily"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Daily"
-msgstr "दैनिक"
-
-#: recurrenceedit.cpp:85
-#, fuzzy
-#| msgid "Weekly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Weekly"
-msgstr "साप्ताहिक"
-
-#: recurrenceedit.cpp:86
-#, fuzzy
-#| msgid "Monthly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Monthly"
-msgstr "मासिक"
-
-#: recurrenceedit.cpp:87
-#, fuzzy
-#| msgid "Yearly"
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Yearly"
-msgstr "वार्षिक"
-
-#: recurrenceedit.cpp:113
-#, fuzzy
-#| msgid "Recurrence Rule"
-msgctxt "@title:group"
-msgid "Recurrence Rule"
-msgstr "पुनरावृत्ति नियम"
-
-#: recurrenceedit.cpp:131
-#, fuzzy
-#| msgid "Do not repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Do not repeat the alarm"
-msgstr "संसूचक नदोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:139
-#, fuzzy
-#| msgid ""
-#| "Trigger the alarm at the specified date/time and at every login until "
-#| "then.\n"
-#| "Note that it will also be triggered any time the alarm daemon is "
-#| "restarted."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Trigger the alarm at the specified date/time and at every login until "
-"then.</para><para>Note that it will also be triggered any time "
-"<application>KAlarm</application> is restarted.</para>"
-msgstr ""
-"निर्दिष्ट गरिएको मिति/समय र त्यसपछि प्रत्येक लगइनसम्म संसूचक ट्रिगर गर्नुहोस् ।\n"
-"याद गर्नुहोस् संसूचक डेइमन पुन: सुरु हुदा कुनै समयमा यो पनि ट्रिगर भएको हुनेछ ।"
-
-#: recurrenceedit.cpp:147
-#, fuzzy
-#| msgid "Repeat the alarm at hourly/minutely intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at hourly/minutely intervals"
-msgstr "घण्टा/मिनेट अन्तरालमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:154
-#, fuzzy
-#| msgid "Repeat the alarm at daily intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at daily intervals"
-msgstr "दैनिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:161
-#, fuzzy
-#| msgid "Repeat the alarm at weekly intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at weekly intervals"
-msgstr "साप्ताहिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:168
-#, fuzzy
-#| msgid "Repeat the alarm at monthly intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at monthly intervals"
-msgstr "मासिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:175
-#, fuzzy
-#| msgid "Repeat the alarm at annual intervals"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at annual intervals"
-msgstr "वार्षिक अन्तरालमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:185
-msgctxt "@info:whatsthis"
-msgid ""
-"Set up a repetition within the recurrence, to trigger the alarm multiple "
-"times each time the recurrence is due."
-msgstr ""
-
-#: recurrenceedit.cpp:233
-#, fuzzy
-#| msgid "Recurrence End"
-msgctxt "@title:group"
-msgid "Recurrence End"
-msgstr "पुनरावृत्ति समाप्त"
-
-#: recurrenceedit.cpp:242
-#, fuzzy
-#| msgid "No &end"
-msgctxt "@option:radio"
-msgid "No end"
-msgstr "समाप्त भएको छैन"
-
-#: recurrenceedit.cpp:245
-#, fuzzy
-#| msgid "Repeat the alarm indefinitely"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm indefinitely"
-msgstr "अनिश्चित रूपमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:253
-#, fuzzy
-#| msgid "End a&fter:"
-msgctxt "@option:radio"
-msgid "End after:"
-msgstr "अन्त्य पछि:"
-
-#: recurrenceedit.cpp:255
-#, fuzzy
-#| msgid "Repeat the alarm for the number of times specified"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm for the number of times specified"
-msgstr "निर्दिष्ट गरिएका समय नम्बरका लागि संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:262
-#, fuzzy
-#| msgid "Enter the total number of times to trigger the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the total number of times to trigger the alarm"
-msgstr "संसूचक ट्रिगर गरिने कूल नम्बर प्रविष्ट गर्नुहोस्"
-
-#: recurrenceedit.cpp:266
-#, fuzzy
-#| msgid "occurrence(s)"
-msgctxt "@label"
-msgid "occurrence(s)"
-msgstr "घटना(हरू)"
-
-#: recurrenceedit.cpp:278
-#, fuzzy
-#| msgid "End &by:"
-msgctxt "@option:radio"
-msgid "End by:"
-msgstr "अन्त्य:"
-
-#: recurrenceedit.cpp:281
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
-"applies to the main recurrence only. It does not limit any sub-repetition "
-"which will occur regardless after the last main recurrence.</note></para>"
-msgstr ""
-
-#: recurrenceedit.cpp:286
-#, fuzzy
-#| msgid "This uses the same time zone as the start time."
-msgctxt "@info/plain"
-msgid "This uses the same time zone as the start time."
-msgstr "यसले सुरुको समयको जस्तै समय क्षेत्र प्रयोग गर्दछ ।"
-
-#: recurrenceedit.cpp:288
-#, fuzzy, kde-format
-#| msgid "Enter the last date to repeat the alarm."
-msgctxt "@info:whatsthis"
-msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-msgstr "संसूचक दोहोर्याउने अन्तिम मिति प्रविष्ट गर्नुहोस् ।"
-
-#: recurrenceedit.cpp:295
-#, fuzzy, kde-format
-#| msgid "Enter the last time to repeat the alarm."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
-"%2</para>"
-msgstr "संसूचक दोहोर्याउने अन्तिम समय प्रविष्ट गर्नुहोस् ।"
-
-#: recurrenceedit.cpp:300
-#, fuzzy
-#| msgid ""
-#| "Stop repeating the alarm after your first login on or after the specified "
-#| "end date"
-msgctxt "@info:whatsthis"
-msgid ""
-"Stop repeating the alarm after your first login on or after the specified "
-"end date"
-msgstr ""
-"तपाईँको पहिलो लगइनको सुरुआत पछि वा निर्दिष्ट गरिएको अन्त्य समय पछि संसूचक दोहोर्याउन "
-"रोक्नुहोस्"
-
-#: recurrenceedit.cpp:318
-#, fuzzy
-#| msgid "E&xceptions"
-msgctxt "@title:group"
-msgid "Exceptions"
-msgstr "अपवाद"
-
-#: recurrenceedit.cpp:329
-#, fuzzy
-#| msgid ""
-#| "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgctxt "@info:whatsthis"
-msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgstr "अपवादका सूची, जस्तै: मिति/समय पुनरावृत्तिबाट बाहिरिन्छन्"
-
-#: recurrenceedit.cpp:348
-#, fuzzy
-#| msgid ""
-#| "Enter a date to insert in the exceptions list. Use in conjunction with "
-#| "the Add or Change button below."
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter a date to insert in the exceptions list. Use in conjunction with the "
-"Add or Change button below."
-msgstr ""
-"अपवाद सूचीमा घुसाउन मिति प्रविष्ट गर्नुहोस् । तलका थप्ने वा परिवर्तन गर्ने बटनमा संयोजन "
-"प्रयोग गर्नुहोस् ।"
-
-#: recurrenceedit.cpp:355
-#, fuzzy
-#| msgid "Add"
-msgctxt "@action:button"
-msgid "Add"
-msgstr "थप्नुहोस्"
-
-#: recurrenceedit.cpp:356
-#, fuzzy
-#| msgid "Add the date entered above to the exceptions list"
-msgctxt "@info:whatsthis"
-msgid "Add the date entered above to the exceptions list"
-msgstr "माथि प्रविष्ट गरिएको मिति अपवाद सूचीमा थप्नुहोस्"
-
-#: recurrenceedit.cpp:360
-#, fuzzy
-#| msgid "Change"
-msgctxt "@action:button"
-msgid "Change"
-msgstr "परिवर्तन गर्नुहोस्"
-
-#: recurrenceedit.cpp:362
-#, fuzzy
-#| msgid ""
-#| "Replace the currently highlighted item in the exceptions list with the "
-#| "date entered above"
-msgctxt "@info:whatsthis"
-msgid ""
-"Replace the currently highlighted item in the exceptions list with the date "
-"entered above"
-msgstr "माथि प्रविष्ट गरिएका मितिका अपवाद सूचीमा हाल हाइलाइट गरिएका वस्तु बदल्नुहोस्"
-
-#: recurrenceedit.cpp:366 templatedlg.cpp:120
-#, fuzzy
-#| msgid "Delete"
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "मेट्नुहोस्"
-
-#: recurrenceedit.cpp:367
-#, fuzzy
-#| msgid "Remove the currently highlighted item from the exceptions list"
-msgctxt "@info:whatsthis"
-msgid "Remove the currently highlighted item from the exceptions list"
-msgstr "अपवाद सूचीबाट हाल हाइलाइट गरिएका वस्तु हटाउनुहोस्"
-
-#: recurrenceedit.cpp:374
-msgctxt "@option:check"
-msgid "Exclude holidays"
-msgstr ""
-
-#: recurrenceedit.cpp:377
-#, fuzzy
-#| msgid ""
-#| "Only execute the alarm during working hours.\n"
-#| "You can specify working hours in the Preferences dialog."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
-"holiday region in the Configuration dialog.</para>"
-msgstr ""
-"कार्य घण्टाको अवधिमा मात्र संसूचक कार्यान्वयन गर्नुहोस् ।\n"
-"तपाईँले प्राथमिकता संवादमा कार्य घण्टा निर्दिष्ट गर्न सक्नुहुन्छ ।"
-
-#: recurrenceedit.cpp:382
-#, fuzzy
-#| msgid "Only during working hours"
-msgctxt "@option:check"
-msgid "Only during working time"
-msgstr "कार्य घण्टाको अवधिमा मात्र"
-
-#: recurrenceedit.cpp:385
-#, fuzzy
-#| msgid ""
-#| "Only execute the alarm during working hours.\n"
-#| "You can specify working hours in the Preferences dialog."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Only execute the alarm during working hours, on working days.</"
-"para><para>You can specify working days and hours in the Configuration "
-"dialog.</para>"
-msgstr ""
-"कार्य घण्टाको अवधिमा मात्र संसूचक कार्यान्वयन गर्नुहोस् ।\n"
-"तपाईँले प्राथमिकता संवादमा कार्य घण्टा निर्दिष्ट गर्न सक्नुहुन्छ ।"
-
-#: recurrenceedit.cpp:428
-#, fuzzy
-#| msgid "End date is earlier than start date"
-msgctxt "@info"
-msgid "End date is earlier than start date"
-msgstr "अन्तिम मिति सुरु मिति भन्दा पहिला छ"
-
-#: recurrenceedit.cpp:429
-#, fuzzy
-#| msgid "End date/time is earlier than start date/time"
-msgctxt "@info"
-msgid "End date/time is earlier than start date/time"
-msgstr "अन्तिम मिति/समय सुरु मिति/समय भन्दा पहिला छ"
-
-#: recurrenceedit.cpp:699
-#, fuzzy
-#| msgid "Date cannot be earlier than %1"
-msgctxt "@info"
-msgid "Date cannot be earlier than start date"
-msgstr "मिति %1 भन्दा अगाडि हुन सक्दैन"
-
-#: recurrenceedit.cpp:1114
-#, fuzzy
-#| msgid "Recur e&very"
-msgctxt "@label:spinbox"
-msgid "Recur e&very"
-msgstr "प्रत्येक पुनरावृत्ति"
-
-#: recurrenceedit.cpp:1183
-#, fuzzy
-#| msgid "hours:minutes"
-msgctxt "@label Time units for user-entered numbers"
-msgid "hours:minutes"
-msgstr "घण्टा:मिनेट"
-
-#: recurrenceedit.cpp:1184
-#, fuzzy
-#| msgid ""
-#| "Enter the number of hours and minutes between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of hours and minutes between repetitions of the alarm"
-msgstr "संसूचकको पुनरागमन बीचमा घण्टा र मिनेटको सङ्ख्या प्रविष्ट गर्नुहोस्"
-
-#: recurrenceedit.cpp:1204
-#, fuzzy
-#| msgctxt "On: Tuesday"
-#| msgid "O&n:"
-msgctxt "@label On: Tuesday"
-msgid "O&n:"
-msgstr "यसमा:"
-
-#: recurrenceedit.cpp:1285
-#, fuzzy
-#| msgid "No day selected"
-msgctxt "@info"
-msgid "No day selected"
-msgstr "दिन चयन गरिएको छैन"
-
-#: recurrenceedit.cpp:1314
-#, fuzzy
-#| msgid "day(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "day(s)"
-msgstr "दिन(हरू)"
-
-#: recurrenceedit.cpp:1315
-#, fuzzy
-#| msgid "Enter the number of days between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of days between repetitions of the alarm"
-msgstr "संसूचकको पुनरावृत्ति बीचमा दिनका सङ्ख्या प्रविष्ट गर्नुहोस्"
-
-#: recurrenceedit.cpp:1316
-#, fuzzy
-#| msgid "Select the days of the week on which the alarm is allowed to occur"
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which the alarm is allowed to occur"
-msgstr "संसूचक देखिने अनुमति भएका हप्ताका दिन चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1327
-#, fuzzy
-#| msgid "week(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "week(s)"
-msgstr "हप्ता(हरू)"
-
-#: recurrenceedit.cpp:1328
-#, fuzzy
-#| msgid "Enter the number of weeks between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of weeks between repetitions of the alarm"
-msgstr "संसूचकको दोहोर्याई बीचमा हप्ताका सङ्ख्या प्रविष्ट गर्नुहोस्"
-
-#: recurrenceedit.cpp:1329
-#, fuzzy
-#| msgid "Select the days of the week on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which to repeat the alarm"
-msgstr "संसूचक दोहोरिने हप्ताका दिन चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1352
-#, fuzzy
-#| msgctxt "On day number in the month"
-#| msgid "O&n day"
-msgctxt "@option:radio On day number in the month"
-msgid "O&n day"
-msgstr "यस दिनमा"
-
-#: recurrenceedit.cpp:1356
-#, fuzzy
-#| msgid "Repeat the alarm on the selected day of the month"
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm on the selected day of the month"
-msgstr "चयन गरिएको महिनाको दिनमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:1363
-#, fuzzy
-#| msgctxt "Last day of month"
-#| msgid "Last"
-msgctxt "@item:inlistbox Last day of month"
-msgid "Last"
-msgstr "अन्तिम"
-
-#: recurrenceedit.cpp:1366
-#, fuzzy
-#| msgid "Select the day of the month on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the day of the month on which to repeat the alarm"
-msgstr "संसूचक दोहोर्याइने महिनाको दिन चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1380
-#, fuzzy
-#| msgctxt "On the 1st Tuesday"
-#| msgid "On t&he"
-msgctxt "@option:radio On the 1st Tuesday"
-msgid "On t&he"
-msgstr "यसमा"
-
-#: recurrenceedit.cpp:1384
-#, fuzzy
-#| msgid ""
-#| "Repeat the alarm on one day of the week, in the selected week of the month"
-msgctxt "@info:whatsthis"
-msgid ""
-"Repeat the alarm on one day of the week, in the selected week of the month"
-msgstr "महिनाको चयन गरिएको हप्तामा, हप्ताको एक दिनमा संसूचक दोहोर्याउनुहोस्"
-
-#: recurrenceedit.cpp:1388
-#, fuzzy
-#| msgid "1st"
-msgctxt "@item:inlistbox"
-msgid "1st"
-msgstr "पहिलो"
-
-#: recurrenceedit.cpp:1389
-#, fuzzy
-#| msgid "2nd"
-msgctxt "@item:inlistbox"
-msgid "2nd"
-msgstr "दोस्रो"
-
-#: recurrenceedit.cpp:1390
-#, fuzzy
-#| msgid "3rd"
-msgctxt "@item:inlistbox"
-msgid "3rd"
-msgstr "तेस्रो"
-
-#: recurrenceedit.cpp:1391
-#, fuzzy
-#| msgid "4th"
-msgctxt "@item:inlistbox"
-msgid "4th"
-msgstr "चौथो"
-
-#: recurrenceedit.cpp:1392
-#, fuzzy
-#| msgid "5th"
-msgctxt "@item:inlistbox"
-msgid "5th"
-msgstr "पाँचौँ"
-
-#: recurrenceedit.cpp:1393
-#, fuzzy
-#| msgctxt "Last day of month"
-#| msgid "Last"
-msgctxt "@item:inlistbox Last Monday in March"
-msgid "Last"
-msgstr "अन्तिम"
-
-#: recurrenceedit.cpp:1394
-#, fuzzy
-#| msgid "2nd Last"
-msgctxt "@item:inlistbox"
-msgid "2nd Last"
-msgstr "दोस्रो अन्तिम"
-
-#: recurrenceedit.cpp:1395
-#, fuzzy
-#| msgid "3rd Last"
-msgctxt "@item:inlistbox"
-msgid "3rd Last"
-msgstr "तेस्रो अन्तिम"
-
-#: recurrenceedit.cpp:1396
-#, fuzzy
-#| msgid "4th Last"
-msgctxt "@item:inlistbox"
-msgid "4th Last"
-msgstr "चौथो अन्तिम"
-
-#: recurrenceedit.cpp:1397
-#, fuzzy
-#| msgid "5th Last"
-msgctxt "@item:inlistbox"
-msgid "5th Last"
-msgstr "पाँचौँ अन्तिम"
-
-#: recurrenceedit.cpp:1400
-#, fuzzy
-#| msgctxt "Every (Monday...) in month"
-#| msgid "Every"
-msgctxt "@item:inlistbox Every (Monday...) in month"
-msgid "Every"
-msgstr "प्रत्येक दिन"
-
-#: recurrenceedit.cpp:1403
-#, fuzzy
-#| msgid "Select the week of the month in which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the week of the month in which to repeat the alarm"
-msgstr "संसूचक दोहोर्याइने महिनाको हप्ता चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1418
-#, fuzzy
-#| msgid "Select the day of the week on which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the day of the week on which to repeat the alarm"
-msgstr "संसूचक दोहोर्याइने हप्ताको दिन चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1541
-#, fuzzy
-#| msgid "month(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "month(s)"
-msgstr "महिना(हरू)"
-
-#: recurrenceedit.cpp:1542
-#, fuzzy
-#| msgid "Enter the number of months between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of months between repetitions of the alarm"
-msgstr "संसूचकको दोहोर्याइका बीचमा महिनाका सङ्ख्या प्रविष्ट गर्नुहोस्"
-
-#: recurrenceedit.cpp:1553
-#, fuzzy
-#| msgid "year(s)"
-msgctxt "@label Time unit for user-entered number"
-msgid "year(s)"
-msgstr "वर्ष(हरू)"
-
-#: recurrenceedit.cpp:1554
-#, fuzzy
-#| msgid "Enter the number of years between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the number of years between repetitions of the alarm"
-msgstr "संसूचकको दोहोर्याई बीचमा वर्षका सङ्ख्या प्रविष्ट गर्नुहोस्"
-
-#: recurrenceedit.cpp:1561
-#, fuzzy
-#| msgid "Monthly"
-msgctxt "@label List of months to select"
-msgid "Months:"
-msgstr "मासिक"
-
-#: recurrenceedit.cpp:1583
-#, fuzzy
-#| msgid "Select the months of the year in which to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Select the months of the year in which to repeat the alarm"
-msgstr "संसूचक दोहोर्याइने वर्षको महिना चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1592
-#, fuzzy
-#| msgid "February 2&9th alarm in non-leap years:"
-msgctxt "@label:listbox"
-msgid "February 2&9th alarm in non-leap years:"
-msgstr "सामान्य वर्षको फेब्रुअरी २९ को संसूचक:"
-
-#: recurrenceedit.cpp:1596
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox No date"
-msgid "None"
-msgstr "कुनै पनि होइन"
-
-#: recurrenceedit.cpp:1597
-#, fuzzy
-#| msgctxt "1st March (short form)"
-#| msgid "1 Mar"
-msgctxt "@item:inlistbox 1st March (short form)"
-msgid "1 Mar"
-msgstr "१ मार्च"
-
-#: recurrenceedit.cpp:1598
-#, fuzzy
-#| msgctxt "28th February (short form)"
-#| msgid "28 Feb"
-msgctxt "@item:inlistbox 28th February (short form)"
-msgid "28 Feb"
-msgstr "२८ फेब्रुअरी"
-
-#: recurrenceedit.cpp:1604
-#, fuzzy
-#| msgid ""
-#| "Select which date, if any, the February 29th alarm should trigger in non-"
-#| "leap years"
-msgctxt "@info:whatsthis"
-msgid ""
-"Select which date, if any, the February 29th alarm should trigger in non-"
-"leap years"
-msgstr ""
-"सामान्य वर्षमा फेब्रुअरी २९ मा संसूचक ट्रिगर हुनुपर्ने, कुनै पनि दिन भएमा, चयन गर्नुहोस्"
-
-#: recurrenceedit.cpp:1688
-#, fuzzy
-#| msgid "No month selected"
-msgctxt "@info"
-msgid "No month selected"
-msgstr "महिना चयन गरिएको छैन"
-
-#: reminder.cpp:49
-#, fuzzy
-#| msgid "Reminder for first recurrence only"
-msgctxt "@option:check"
-msgid "Reminder for first recurrence only"
-msgstr "पहिलो पुनरावृत्तिका लागि मात्र सचेतक"
-
-#: reminder.cpp:51
-#, fuzzy
-#| msgid "in advance"
-msgctxt "@item:inlistbox"
-msgid "in advance"
-msgstr "अगाडि"
-
-#: reminder.cpp:65
-#, fuzzy
-#| msgid "Rem&inder:"
-msgctxt "@option:check"
-msgid "Reminder:"
-msgstr "सचेतक:"
-
-#: reminder.cpp:69
-msgctxt "@item:inlistbox"
-msgid "afterwards"
-msgstr ""
-
-#: reminder.cpp:91
-#, fuzzy
-#| msgid ""
-#| "Display the reminder only before the first time the alarm is scheduled"
-msgctxt "@info:whatsthis"
-msgid "Display the reminder only for the first time the alarm is scheduled"
-msgstr "पहिलो पटक संसुचक तालिकिकरण गर्नुभन्दा अगाडि मात्र सचेतक प्रदर्शन गर्नुहोस्"
-
-#: repetitionbutton.cpp:87
-#, fuzzy
-#| msgid "Alarm Repetition"
-msgctxt "@title:window"
-msgid "Alarm Sub-Repetition"
-msgstr "संसूचक पुनरावृत्ति"
-
-#: repetitionbutton.cpp:165
-#, fuzzy
-#| msgctxt "Repeat every 10 minutes"
-#| msgid "Repeat every"
-msgctxt "@option:check Repeat every 10 minutes"
-msgid "Repeat every"
-msgstr "प्रत्येकलाई दोहोर्याउनुहोस्"
-
-#: repetitionbutton.cpp:166
-#, fuzzy
-#| msgid ""
-#| "Check to repeat the alarm each time it recurs. Instead of the alarm "
-#| "triggering once at each recurrence, this option makes the alarm trigger "
-#| "multiple times at each recurrence."
-msgctxt "@info:whatsthis"
-msgid ""
-"Instead of the alarm triggering just once at each recurrence, checking this "
-"option makes the alarm trigger multiple times at each recurrence."
-msgstr ""
-"प्रत्येक पुनरावृत्तिमा संसूचक दोहोर्याउन जाँच गर्नुहोस् । प्रत्येक पुनरावृत्तिमा एकपटक संसूचक "
-"ट्रिगर गर्नुको साटोमा, यो विकल्पले प्रत्येक पुनरावृत्तिमा धेरै पटक संसूचक ट्रिगर गर्ने बनाउछ ।"
-
-#: repetitionbutton.cpp:168
-#, fuzzy
-#| msgid "Enter the time between repetitions of the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the time between repetitions of the alarm"
-msgstr "संसूचकको पुनरावृत्ति बीचमा समय प्रविष्ट गर्नुहोस्"
-
-#: repetitionbutton.cpp:186
-#, fuzzy
-#| msgid "Number of repetitions:"
-msgctxt "@option:radio"
-msgid "Number of repetitions:"
-msgstr "पुनरावृत्तिको सङ्ख्या:"
-
-#: repetitionbutton.cpp:188
-#, fuzzy
-#| msgid ""
-#| "Check to specify the number of times the alarm should repeat after each "
-#| "recurrence"
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to specify the number of times the alarm should repeat after each "
-"recurrence"
-msgstr "प्रत्येक पुनरावृत्ति पछाडि संसूचक दोहोरिने सङ्ख्या निर्दिष्ट गर्न जाँच गर्नुहोस्"
-
-#: repetitionbutton.cpp:196
-#, fuzzy
-#| msgid ""
-#| "Enter the number of times to trigger the alarm after its initial "
-#| "occurrence"
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter the number of times to trigger the alarm after its initial occurrence"
-msgstr "संसूचकको सुरुआत घटना पछि यसको ट्रिगर गरिने सङ्ख्या प्रविष्ट गर्नुहोस्"
-
-#: repetitionbutton.cpp:204
-#, fuzzy
-#| msgid "Duration:"
-msgctxt "@option:radio"
-msgid "Duration:"
-msgstr "अवधि:"
-
-#: repetitionbutton.cpp:206
-#, fuzzy
-#| msgid "Check to specify how long the alarm is to be repeated"
-msgctxt "@info:whatsthis"
-msgid "Check to specify how long the alarm is to be repeated"
-msgstr "संसूचक कति पटक दोहोरिने निर्दिष्ट गर्न जाँच गर्नुहोस्"
-
-#: repetitionbutton.cpp:212
-#, fuzzy
-#| msgid "Enter the length of time to repeat the alarm"
-msgctxt "@info:whatsthis"
-msgid "Enter the length of time to repeat the alarm"
-msgstr "संसूचक दोहोरिने अवधि प्रविष्ट गर्नुहोस्"
-
-#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
-#, fuzzy
-#| msgid "Alarm Configuration"
-msgctxt "@title:window"
-msgid "Calendar Configuration"
-msgstr "संसूचक कन्फिगरेसन"
-
-#: resourceconfigdialog.cpp:61
-#, fuzzy
-#| msgid "General Settings"
-msgctxt "@title:group"
-msgid "General Settings"
-msgstr "साधारण सेटिङ"
-
-#: resourceconfigdialog.cpp:63
-#, fuzzy
-#| msgid "Name:"
-msgctxt "@label:textbox Calendar name"
-msgid "Name:"
-msgstr "नाम:"
-
-#: resourceconfigdialog.cpp:68
-#, fuzzy
-#| msgid "Read-only"
-msgctxt "@option:check"
-msgid "Read-only"
-msgstr "पढ्ने मात्र"
-
-#: resourceconfigdialog.cpp:81
-#, fuzzy, kde-format
-#| msgid "%1 Resource Settings"
-msgctxt "@title:group"
-msgid "<resource>%1</resource> Calendar Settings"
-msgstr "%1 संसाधन सेटिङ"
-
-#: resourceconfigdialog.cpp:123
-#, fuzzy
-#| msgid "Please enter a resource name."
-msgctxt "@info"
-msgid "Please enter a calendar name."
-msgstr "कृपया संसाधन नाम प्रविष्ट गर्नुहोस् ।"
-
-#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
-#, fuzzy
-#| msgid "Disabled alarm color"
-msgctxt "@info/plain"
-msgid "Disabled (wrong alarm type)"
-msgstr "अक्षम पारिएको संसूचक रङ"
-
-#: resources/alarmresource.cpp:354 resourceselector.cpp:856
-#, fuzzy
-#| msgid "Active Alarms"
-msgctxt "@info/plain"
-msgid "Active alarms"
-msgstr "संसूचक सक्रिय पार्नुहोस्"
-
-#: resources/alarmresource.cpp:355 resourceselector.cpp:858
-#, fuzzy
-#| msgid "Archived Alarms"
-msgctxt "@info/plain"
-msgid "Archived alarms"
-msgstr "सङ्ग्रहित संसूचक"
-
-#: resources/alarmresource.cpp:356 resourceselector.cpp:860
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@info/plain"
-msgid "Alarm templates"
-msgstr "संसूचक टेम्प्लेट"
-
-#: resources/alarmresource.cpp:359 resourceselector.cpp:865
-msgctxt "@info/plain"
-msgid "Read-write"
-msgstr ""
-
-#: resources/alarmresource.cpp:360 resourceselector.cpp:867
-#, fuzzy
-#| msgid "Enable"
-msgctxt "@info/plain"
-msgid "Enabled"
-msgstr "सक्षम पार्नुहोस्"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:871
-#, fuzzy
-#| msgid "None"
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "No"
-msgstr "कुनै पनि होइन"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:870
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "Yes"
-msgstr ""
-
-#: resources/alarmresource.cpp:363
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
-"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
-"para>"
-msgstr ""
-
-#: resources/alarmresources.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid email attachment:\n"
-#| "%1"
-msgctxt "@info"
-msgid "%1: invalid calendar file name: <filename>%2</filename>"
-msgstr ""
-"अवैध इमेल सङ्लग्नता:\n"
-"%1"
-
-#: resources/alarmresources.cpp:167
-#, fuzzy, kde-format
-#| msgid ""
-#| "Attachment not found:\n"
-#| "%1"
-msgctxt "@info"
-msgid "%1: file name not permitted: <filename>%2</filename>"
-msgstr ""
-"सङ्लग्नता फेला परेन:\n"
-"%1"
-
-#: resources/resourcelocaldirwidget.cpp:40
-#: resources/resourcelocalwidget.cpp:42
-#, fuzzy
-#| msgid "Action"
-msgctxt "@label:textbox"
-msgid "Location:"
-msgstr "कार्य"
-
-#: resources/resourcelocaldirwidget.cpp:72
-#: resources/resourcelocalwidget.cpp:77
-msgctxt "@info"
-msgid "No location specified.  The calendar will be invalid."
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:42
-msgctxt "@label:textbox"
-msgid "Download from:"
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:48
-msgctxt "@label:textbox"
-msgid "Upload to:"
-msgstr ""
-
-#: resources/resourceremotewidget.cpp:94
-msgctxt "@info"
-msgid "You have specified no upload URL: the alarm calendar will be read-only."
-msgstr ""
-
-#: resources/resourcewidget.cpp:54
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Calendar <resource>%1</resource> cannot be made writable since it either was "
-"not created by <application>KAlarm</application>, or was created by a newer "
-"version of <application>KAlarm</application>"
-msgstr ""
-
-#: resourceselector.cpp:100
-#, fuzzy
-#| msgid "Calendar Files"
-msgctxt "@title:group"
-msgid "Calendars"
-msgstr "क्यालेन्डर फाइल"
-
-#: resourceselector.cpp:104
-#, fuzzy
-#| msgid "Active Alarms"
-msgctxt "@item:inlistbox"
-msgid "Active Alarms"
-msgstr "संसूचक सक्रिय पार्नुहोस्"
-
-#: resourceselector.cpp:105
-#, fuzzy
-#| msgid "Archived Alarms"
-msgctxt "@item:inlistbox"
-msgid "Archived Alarms"
-msgstr "सङ्ग्रहित संसूचक"
-
-#: resourceselector.cpp:106
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@item:inlistbox"
-msgid "Alarm Templates"
-msgstr "संसूचक टेम्प्लेट"
-
-#: resourceselector.cpp:108
-#, fuzzy
-#| msgid "Choose which type of data to show alarm resources for"
-msgctxt "@info:whatsthis"
-msgid "Choose which type of data to show alarm calendars for"
-msgstr "संसूचक संसाधनका लागि कुन प्रकारको डेटा देखाउने रोज्नुहोस्"
-
-#: resourceselector.cpp:125
-#, fuzzy
-#| msgid ""
-#| "List of available resources of the selected type. The checked state shows "
-#| "whether a resource is enabled (checked) or disabled (unchecked). The "
-#| "default resource is shown in bold."
-msgctxt "@info:whatsthis"
-msgid ""
-"List of available calendars of the selected type. The checked state shows "
-"whether a calendar is enabled (checked) or disabled (unchecked). The default "
-"calendar is shown in bold."
-msgstr ""
-"चयन गरिएका प्रकारका उपलब्ध संसाधनको सूची । जाँच स्थितिले संसाधन सक्षम पारिएको (जाँच "
-"गरिएको) वा अक्षम पारिएको (जाँचबाट हटाइएको) देखाउछ । पूर्वनिर्धारित संसाधन बाक्लोमा "
-"देखाइन्छ ।"
-
-#: resourceselector.cpp:136 templatedlg.cpp:110
-#, fuzzy
-#| msgid "Edit..."
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#: resourceselector.cpp:141
-#, fuzzy
-#| msgid "Edit the highlighted resource"
-msgctxt "@info:whatsthis"
-msgid "Edit the highlighted calendar"
-msgstr "हाइलाइट गरिएका संसाधन सम्पादन गर्नुहोस्"
-
-#: resourceselector.cpp:142
-#, fuzzy
-#| msgid ""
-#| "Remove the highlighted resource from the list.\n"
-#| "The resource itself is left intact, and may subsequently be reinstated in "
-#| "the list if desired."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Remove the highlighted calendar from the list.</para><para>The "
-"calendar itself is left intact, and may subsequently be reinstated in the "
-"list if desired.</para>"
-msgstr ""
-"सूचीबाट हाइलाइट गरिएका संसाधन हटाउनुहोस् ।\n"
-"संसाधन आफैँमा पूर्ण हुन्छ, र त्यस्तै गरि चाहेमा सूचीमा पुन: स्थापना गर्ना सकिन्छ ।"
-
-#: resourceselector.cpp:175
-#, fuzzy
-#| msgid "Add a new active alarm resource"
-msgctxt "@info:tooltip"
-msgid "Add a new active alarm calendar"
-msgstr "नयाँ सक्रिय संसूचक संसाधन थप्नुहोस्"
-
-#: resourceselector.cpp:179
-#, fuzzy
-#| msgid "Add a new archived alarm resource"
-msgctxt "@info:tooltip"
-msgid "Add a new archived alarm calendar"
-msgstr "नयाँ सङ्ग्रहित संसूचक संसाधन थप्नुहोस्"
-
-#: resourceselector.cpp:183
-#, fuzzy
-#| msgid "Add a new alarm template resource"
-msgctxt "@info:tooltip"
-msgid "Add a new alarm template calendar"
-msgstr "नयाँ संसूचक टेम्प्लेट संसाधन थप्नुहोस्"
-
-#: resourceselector.cpp:239
-#, fuzzy
-#| msgid "Select storage type of new resource:"
-msgctxt "@info"
-msgid "Select storage type of new calendar:"
-msgstr "नयाँ संसाधनको भण्डारण प्रकार चयन गर्नुहोस्:"
-
-#: resourceselector.cpp:246
-#, fuzzy, kde-format
-#| msgid "<qt>Unable to create resource of type <b>%1</b>.</qt>"
-msgctxt "@info"
-msgid "Unable to create calendar of type <resource>%1</resource>."
-msgstr "<qt><b>%1</b> प्रकारको संसाधन सिर्जना गर्न असमर्थ ।</qt>"
-
-#: resourceselector.cpp:249
-#, kde-format
-msgctxt "@info/plain"
-msgid "%1 calendar"
-msgstr ""
-
-#: resourceselector.cpp:363
-#, fuzzy
-#| msgid "You cannot make your default active alarm resource read-only."
-msgctxt "@info"
-msgid "You cannot make your default active alarm calendar read-only."
-msgstr "तपाईँले आफ्नो पूर्वनिर्धारित सक्रिय संसूचक संसाधन पढ्ने मात्र बनाउन सक्नु हुदैँन ।"
-
-#: resourceselector.cpp:370
-#, fuzzy
-#| msgid ""
-#| "You cannot make your default archived alarm resource read-only while "
-#| "expired alarms are configured to be kept."
-msgctxt "@info"
-msgid ""
-"You cannot make your default archived alarm calendar read-only while expired "
-"alarms are configured to be kept."
-msgstr ""
-"राख्नका लागि म्याद समाप्त भएका संसूचक कन्फिगर गर्दा तपाईँले आफ्ना पूर्वनिर्धारित सङ्ग्रहित "
-"संसूचक संसाधन पढ्ने मात्र बनाउन सक्नु हुदैँन ।"
-
-#: resourceselector.cpp:374
-#, fuzzy
-#| msgid "Do you really want to make your default resource read-only?"
-msgctxt "@info"
-msgid "Do you really want to make your default calendar read-only?"
-msgstr "तपाईँ वास्तवमै आफ्नो पूर्वनिर्धारित संसाधन पढ्ने मात्र बनाउन चाहनुहुन्छ ?"
-
-#: resourceselector.cpp:427
-#, fuzzy
-#| msgid "You cannot remove your default active alarm resource."
-msgctxt "@info"
-msgid "You cannot remove your default active alarm calendar."
-msgstr "तपाईँले पूर्वनिर्धारित सक्रिय संसूचक संसाधन हटाउन सक्नु हुदैँन ।"
-
-#: resourceselector.cpp:434
-#, fuzzy
-#| msgid ""
-#| "You cannot remove your default archived alarm resource while expired "
-#| "alarms are configured to be kept."
-msgctxt "@info"
-msgid ""
-"You cannot remove your default archived alarm calendar while expired alarms "
-"are configured to be kept."
-msgstr ""
-"तपाईँले राख्नका लागि म्याद समाप्त भएका संसूचक कन्फिगर गर्दा पूर्वनिर्धारित सङ्ग्रहित संसूचक "
-"संसाधन हटाउन सक्नु हुँदैन ।"
-
-#: resourceselector.cpp:450
-#, kde-format
-msgctxt "@info"
-msgid "<para>It also contains:%1</para>"
-msgstr ""
-
-#: resourceselector.cpp:451
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> is the default calendar for:%2</para>"
-"%3<para>Do you really want to remove it from all calendar lists?</para>"
-msgstr ""
-
-#: resourceselector.cpp:455 resourceselector.cpp:463
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Do you really want to remove your default resource (<b>%1</b>) from "
-#| "the list?</qt>"
-msgctxt "@info"
-msgid ""
-"Do you really want to remove your default calendar (<resource>%1</resource>) "
-"from the list?"
-msgstr ""
-"<qt>तपाईँले सूचीबाट वास्तवमै पूर्वनिर्धारित संसाधन (<b>%1</b>) मेट्न चाहनुहुन्छ ?</qt>"
-
-#: resourceselector.cpp:458
-#, fuzzy, kde-format
-#| msgid ""
-#| "Alarms are currently disabled.\n"
-#| "Do you want to enable alarms now?"
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
-"remove it from all calendar lists?</para>"
-msgstr ""
-"संसूचक हालै अक्षम पारिएका छन् ।\n"
-"तपाईँ संसूचक अहिले सक्षम पार्न चाहनुहुन्छ ?"
-
-#: resourceselector.cpp:461 resourceselector.cpp:464
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Do you really want to remove the resource <b>%1</b> from the list?</"
-#| "qt>"
-msgctxt "@info"
-msgid ""
-"Do you really want to remove the calendar <resource>%1</resource> from the "
-"list?"
-msgstr "<qt>तपाईँले वास्तवमै सूचीबाट संसाधन <b>%1</b> लाई हटाउन चाहनुहुन्छ ?</qt>"
-
-#: resourceselector.cpp:501
-#, fuzzy
-#| msgid "Re&load"
-msgctxt "@action Reload calendar"
-msgid "Re&load"
-msgstr "रिलोड गर्नुहोस्"
-
-#: resourceselector.cpp:505
-#, fuzzy
-#| msgid "&Save"
-msgctxt "@action"
-msgid "&Save"
-msgstr "बचत गर्नुहोस्"
-
-#: resourceselector.cpp:509
-#, fuzzy
-#| msgid "Show &Details"
-msgctxt "@action"
-msgid "Show &Details"
-msgstr "विस्तृत विवरण देखाउनुहोस्"
-
-#: resourceselector.cpp:512
-#, fuzzy
-#| msgid "Font & Color"
-msgctxt "@action"
-msgid "Set &Color..."
-msgstr "फन्ट र रङ"
-
-#: resourceselector.cpp:515
-msgctxt "@action"
-msgid "Clear C&olor"
-msgstr ""
-
-#: resourceselector.cpp:522
-msgctxt "@action"
-msgid "&Update Calendar Format"
-msgstr ""
-
-#: resourceselector.cpp:526
-#, fuzzy
-#| msgid "&Remove"
-msgctxt "@action"
-msgid "&Remove"
-msgstr "हटाउनुहोस्"
-
-#: resourceselector.cpp:532
-#, fuzzy
-#| msgid "&Add..."
-msgctxt "@action"
-msgid "&Add..."
-msgstr "थप्नुहोस्..."
-
-#: resourceselector.cpp:535
-#, fuzzy
-#| msgid "Im&port..."
-msgctxt "@action"
-msgid "Im&port..."
-msgstr "आयात गर्नुहोस्..."
-
-#: resourceselector.cpp:621
-#, fuzzy
-#| msgid "Use as &Default for Active Alarms"
-msgctxt "@action"
-msgid "Use as &Default for Active Alarms"
-msgstr "सक्रिय संसूचकका लागि पूर्वनिर्धारितका रूपमा प्रयोग गर्नुहोस्"
-
-#: resourceselector.cpp:622
-#, fuzzy
-#| msgid "Use as &Default for Archived Alarms"
-msgctxt "@action"
-msgid "Use as &Default for Archived Alarms"
-msgstr "सङ्ग्रहित संसुचकका लागि पूर्वनिर्धारितका रूपमा प्रयोग गर्नुहोस्"
-
-#: resourceselector.cpp:623
-#, fuzzy
-#| msgid "Use as &Default for Alarm Templates"
-msgctxt "@action"
-msgid "Use as &Default for Alarm Templates"
-msgstr "संसूचक टेम्प्लेटका लागि पूर्वनिर्धारितका रूपमा प्रयोग गर्नुहोस्"
-
-#: resourceselector.cpp:740
-#, fuzzy
-#| msgid "Add a new active alarm resource"
-msgctxt "@info/plain"
-msgid "It is not an active alarm calendar."
-msgstr "नयाँ सक्रिय संसूचक संसाधन थप्नुहोस्"
-
-#: resourceselector.cpp:743
-#, fuzzy
-#| msgid "Add a new archived alarm resource"
-msgctxt "@info/plain"
-msgid "It is not an archived alarm calendar."
-msgstr "नयाँ सङ्ग्रहित संसूचक संसाधन थप्नुहोस्"
-
-#: resourceselector.cpp:746
-#, fuzzy
-#| msgid "Add a new alarm template resource"
-msgctxt "@info/plain"
-msgid "It is not an alarm template calendar."
-msgstr "नयाँ संसूचक टेम्प्लेट संसाधन थप्नुहोस्"
-
-#: resourceselector.cpp:751
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
-"para>"
-msgstr ""
-
-#: resourceselector.cpp:861
-msgctxt "@info/plain List separator"
-msgid ", "
-msgstr ""
-
-#: resourceselector.cpp:873
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
-"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
-"calendar: %9</para>"
-msgstr ""
-
-#: rtcwakeaction.cpp:89
-#, kde-format
-msgctxt "@text/plain"
-msgid "Could not run <command>%1</command> to set wake from suspend"
-msgstr ""
-
-#: rtcwakeaction.cpp:92
-#, kde-format
-msgctxt "@text/plain"
-msgid ""
-"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
-">Error code: %2."
-msgstr ""
-
-#: sounddlg.cpp:54
-#, fuzzy
-#| msgid "Repeat"
-msgctxt "@option:check"
-msgid "Repeat"
-msgstr "दोहोर्याउनुहोस्"
-
-#: sounddlg.cpp:158
-#, fuzzy
-#| msgid "Sound &file:"
-msgctxt "@label"
-msgid "Sound file:"
-msgstr "ध्वनि फाइल:"
-
-#: sounddlg.cpp:172 sounddlg.cpp:455
-#, fuzzy
-#| msgid "Test the sound"
-msgctxt "@info:tooltip"
-msgid "Test the sound"
-msgstr "ध्वनि परीक्षण गर्नुहोस्"
-
-#: sounddlg.cpp:173 sounddlg.cpp:456
-#, fuzzy
-#| msgid "Play the selected sound file."
-msgctxt "@info:whatsthis"
-msgid "Play the selected sound file."
-msgstr "चयन गरिएका ध्वनि फाइल प्ले गर्नुहोस् ।"
-
-#: sounddlg.cpp:179
-#, fuzzy
-#| msgid "Enter the name or URL of a sound file to play."
-msgctxt "@info:whatsthis"
-msgid "Enter the name or URL of a sound file to play."
-msgstr "प्ले गर्न ध्वनि फाइलको नाम वा यूआरएल प्रविष्ट गर्नुहोस् ।"
-
-#: sounddlg.cpp:191
-#, fuzzy
-#| msgid "Select a sound file to play."
-msgctxt "@info:whatsthis"
-msgid "Select a sound file to play."
-msgstr "प्ले गर्न ध्वनि फाइल चयन गर्नुहोस् ।"
-
-#: sounddlg.cpp:205
-#, fuzzy
-#| msgid ""
-#| "If checked, the sound file will be played repeatedly for as long as the "
-#| "message is displayed."
-msgctxt "@info:whatsthis"
-msgid ""
-"If checked, the sound file will be played repeatedly for as long as the "
-"message is displayed."
-msgstr "जाँच गरिएमा, सन्देश प्रदर्शित भएसम्म ध्वनि फाइल दोहोरिएर प्ले हुनेछ ।"
-
-#: sounddlg.cpp:215
-#, fuzzy
-#| msgid "Interval between alarm repetitions"
-msgctxt "@label:spinbox Length of time to pause between repetitions"
-msgid "Pause between repetitions:"
-msgstr "संसूचक दोहोर्याई बीचमा अन्तराल"
-
-#: sounddlg.cpp:222 sounddlg.cpp:276
-#, fuzzy
-#| msgid "seconds"
-msgctxt "@label"
-msgid "seconds"
-msgstr "सेकेन्ड"
-
-#: sounddlg.cpp:224
-#, fuzzy
-#| msgid ""
-#| "Enter how many seconds to fade the sound before reaching the set volume."
-msgctxt "@info:whatsthis"
-msgid "Enter how many seconds to pause between repetitions."
-msgstr "भोल्युम सेटमा पुग्नुभन्दा पहिले कति सेकेन्ड ध्वनि फेड गर्ने प्रविष्ट गर्नुहोस् ।"
-
-#: sounddlg.cpp:228
-#, fuzzy
-#| msgid "Volume"
-msgctxt "@title:group Sound volume"
-msgid "Volume"
-msgstr "भोल्युम"
-
-#: sounddlg.cpp:243
-#, fuzzy
-#| msgid "Set volume"
-msgctxt "@option:check"
-msgid "Set volume"
-msgstr "भोल्युम सेट गर्नुहोस्"
-
-#: sounddlg.cpp:246
-#, fuzzy
-#| msgid "Select to choose the volume for playing the sound file."
-msgctxt "@info:whatsthis"
-msgid "Select to choose the volume for playing the sound file."
-msgstr "ध्वनि फाइल प्ले गर्नका लागि भोल्युम रोज्न चयन गर्नुहोस् ।"
-
-#: sounddlg.cpp:253
-#, fuzzy
-#| msgid "Choose the volume for playing the sound file."
-msgctxt "@info:whatsthis"
-msgid "Choose the volume for playing the sound file."
-msgstr "ध्वनि फाइल प्ले गर्नका लागि भोल्युम रोज्नुहोस् ।"
-
-#: sounddlg.cpp:258
-#, fuzzy
-#| msgid "Fade"
-msgctxt "@option:check"
-msgid "Fade"
-msgstr "फेड"
-
-#: sounddlg.cpp:261
-#, fuzzy
-#| msgid "Select to fade the volume when the sound file first starts to play."
-msgctxt "@info:whatsthis"
-msgid "Select to fade the volume when the sound file first starts to play."
-msgstr "ध्वनि फाइल पहिलो पटक प्ले गर्न सुरु हुँदा भोल्युम फेड गर्न चयन गर्नुहोस् ।"
-
-#: sounddlg.cpp:269
-#, fuzzy
-#| msgctxt "Time period over which to fade the sound"
-#| msgid "Fade time:"
-msgctxt "@label:spinbox Time period over which to fade the sound"
-msgid "Fade time:"
-msgstr "फेड समय:"
-
-#: sounddlg.cpp:278
-#, fuzzy
-#| msgid ""
-#| "Enter how many seconds to fade the sound before reaching the set volume."
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter how many seconds to fade the sound before reaching the set volume."
-msgstr "भोल्युम सेटमा पुग्नुभन्दा पहिले कति सेकेन्ड ध्वनि फेड गर्ने प्रविष्ट गर्नुहोस् ।"
-
-#: sounddlg.cpp:285
-#, fuzzy
-#| msgid "Initial volume:"
-msgctxt "@label:slider"
-msgid "Initial volume:"
-msgstr "सुरुआत भोल्युम:"
-
-#: sounddlg.cpp:293
-#, fuzzy
-#| msgid "Choose the initial volume for playing the sound file."
-msgctxt "@info:whatsthis"
-msgid "Choose the initial volume for playing the sound file."
-msgstr "ध्वनि फाइल प्ले गर्नका लागि सुरुआत भोल्युम रोज्नुहोस् ।"
-
-#: soundpicker.cpp:50
-#, fuzzy
-#| msgctxt "An audio sound"
-#| msgid "&Sound:"
-msgctxt "@label:listbox Listbox providing audio options"
-msgid "Sound:"
-msgstr "ध्वनि:"
-
-#: soundpicker.cpp:51
-#, fuzzy
-#| msgid "None"
-msgctxt "@item:inlistbox No sound"
-msgid "None"
-msgstr "कुनै पनि होइन"
-
-#: soundpicker.cpp:52
-#, fuzzy
-#| msgid "Beep"
-msgctxt "@item:inlistbox"
-msgid "Beep"
-msgstr "बीप"
-
-#: soundpicker.cpp:53
-#, fuzzy
-#| msgid "Speak"
-msgctxt "@item:inlistbox"
-msgid "Speak"
-msgstr "वाचन गर्नुहोस्"
-
-#: soundpicker.cpp:54
-#, fuzzy
-#| msgid "Sound file"
-msgctxt "@item:inlistbox"
-msgid "Sound file"
-msgstr "ध्वनि फाइल"
-
-#: soundpicker.cpp:98
-#, fuzzy
-#| msgid "Configure sound file"
-msgctxt "@info:tooltip"
-msgid "Configure sound file"
-msgstr "ध्वनि फाइल कन्फिगर गर्नुहोस्"
-
-#: soundpicker.cpp:99
-#, fuzzy
-#| msgid "Configure a sound file to play when the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid "Configure a sound file to play when the alarm is displayed."
-msgstr "संसूचक प्रदर्शित भएको बेलामा प्ले गर्न ध्वनि फाइल कन्फिगर गर्नुहोस् ।"
-
-#: soundpicker.cpp:132
-#, fuzzy, kde-format
-#| msgid "<b>%1</b>: the message is displayed silently."
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message is displayed silently."
-msgstr "<b>%1</b>: सन्देश ध्वनि बिना प्रदर्शित हुन्छ ।"
-
-#: soundpicker.cpp:133
-#, fuzzy, kde-format
-#| msgid "<b>%1</b>: a simple beep is sounded."
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: a simple beep is sounded."
-msgstr "<b>%1</b>: एउटा सामान्य बिप बज्यो ।"
-
-#: soundpicker.cpp:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "<b>%1</b>: an audio file is played. You will be prompted to choose the "
-#| "file and set play options."
-msgctxt "@info:whatsthis"
-msgid ""
-"<interface>%1</interface>: an audio file is played. You will be prompted to "
-"choose the file and set play options."
-msgstr ""
-"<b>%1</b>: एउटा अडियो फाइल बजाइयो । तपाईँलाई फाइल छनोट गर्न र प्ले विकल्प सेट गर्न "
-"प्रोम्ट गरिन्छ ।"
-
-#: soundpicker.cpp:138
-#, fuzzy, kde-format
-#| msgid "<b>%1</b>: the message text is spoken."
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message text is spoken."
-msgstr "<b>%1</b>: सन्देश पाठ बजेकोछ ।"
-
-#: soundpicker.cpp:140
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
-msgstr ""
-
-#: soundpicker.cpp:148
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item></list></para>"
-msgstr ""
-
-#: soundpicker.cpp:268
-#, fuzzy
-#| msgid "Sound File"
-msgctxt "@title:window"
-msgid "Sound File"
-msgstr "ध्वनि फाइल"
-
-#: soundpicker.cpp:330
-#, fuzzy
-#| msgid "Choose Sound File"
-msgctxt "@title:window"
-msgid "Choose Sound File"
-msgstr "ध्वनि फाइल रोज्नुहोस्"
-
-#: specialactions.cpp:48
-#, fuzzy
-#| msgid "Special Actions..."
-msgctxt "@action:button"
-msgid "Special Actions..."
-msgstr "विशेष कार्य..."
-
-#: specialactions.cpp:56
-#, fuzzy
-#| msgid "Specify actions to execute before and after the alarm is displayed."
-msgctxt "@info:whatsthis"
-msgid "Specify actions to execute before and after the alarm is displayed."
-msgstr "संसूचक प्रदर्शित हुनुभन्दा पहिले र पछाडि कार्यान्वयन गर्न कार्य निर्दिष्ट गर्नुहोस् ।"
-
-#: specialactions.cpp:107
-#, fuzzy
-#| msgid "Special Alarm Actions"
-msgctxt "@title:window"
-msgid "Special Alarm Actions"
-msgstr "विशेष संसूचक कार्य"
-
-#: specialactions.cpp:165
-#, fuzzy
-#| msgid "Pre-alarm action"
-msgctxt "@title:group"
-msgid "Pre-Alarm Action"
-msgstr "संसूचक पुर्वको कार्य"
-
-#: specialactions.cpp:175 specialactions.cpp:210
-#, fuzzy
-#| msgid "Co&mmand"
-msgctxt "@label:textbox"
-msgid "Command:"
-msgstr "आदेश"
-
-#: specialactions.cpp:180
-#, fuzzy
-#| msgid ""
-#| "Enter a shell command to execute before the alarm is displayed.\n"
-#| "Note that it is executed only when the alarm proper is displayed, not "
-#| "when a reminder or deferred alarm is displayed.\n"
-#| "N.B. KAlarm will wait for the command to complete before displaying the "
-#| "alarm."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute before the alarm is displayed.</"
-"para><para>Note that it is executed only when the alarm proper is displayed, "
-"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
-"will wait for the command to complete before displaying the alarm.</note></"
-"para>"
-msgstr ""
-"संसूचक प्रदर्शित हुनुभन्दा पहिला कार्यान्वयन गर्न शेल आदेश प्रविष्ट गर्नुहोस् ।\n"
-"याद गर्नुहोस् यो उचित संसूचक प्रदर्शित हुँदा मात्र कार्यान्यवन हुन्छ, सचेतक वा पछि सारिएको "
-"संसूचक प्रदर्शित हुँदा हुँदैन ।\n"
-"N.B. केडीई संसूचकले संसूचक प्रदर्शन हुनुभन्दा पहिला पूरा गर्न आदेशको प्रतिक्षा गर्दछ ।"
-
-#: specialactions.cpp:186
-msgctxt "@option:check"
-msgid "Execute for deferred alarms"
-msgstr ""
-
-#: specialactions.cpp:187
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If unchecked, the command is only executed before the alarm proper is "
-"displayed.</para><para>If checked, the pre-alarm command is also executed "
-"before a deferred alarm is displayed.</para>"
-msgstr ""
-
-#: specialactions.cpp:191
-msgctxt "@option:check"
-msgid "Cancel alarm on error"
-msgstr ""
-
-#: specialactions.cpp:192
-msgctxt "@info:whatsthis"
-msgid ""
-"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
-"alarm or execute any post-alarm action command."
-msgstr ""
-
-#: specialactions.cpp:195
-msgctxt "@option:check"
-msgid "Do not notify errors"
-msgstr ""
-
-#: specialactions.cpp:196
-#, fuzzy
-#| msgid ""
-#| "The default setting for the recurrence rule in the alarm edit dialog."
-msgctxt "@info:whatsthis"
-msgid ""
-"Do not show error status or error message if the pre-alarm command fails."
-msgstr "संसूचक सम्पादन संवादमा पुनरावृत्ति नियमका लागि पूर्वनिर्धारित सटिङ ।"
-
-#: specialactions.cpp:200
-#, fuzzy
-#| msgid "Post-alarm action"
-msgctxt "@title:group"
-msgid "Post-Alarm Action"
-msgstr "संसूचक पश्चातको कार्य"
-
-#: specialactions.cpp:214
-#, fuzzy
-#| msgid ""
-#| "Enter a shell command to execute after the alarm window is closed.\n"
-#| "Note that it is not executed after closing a reminder window. If you "
-#| "defer the alarm, it is not executed until the alarm is finally "
-#| "acknowledged or closed."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute after the alarm window is closed.</"
-"para><para>Note that it is not executed after closing a reminder window. If "
-"you defer the alarm, it is not executed until the alarm is finally "
-"acknowledged or closed.</para>"
-msgstr ""
-"संसूचक सञ्झ्याल बन्द भएपछि कार्यान्वयन गर्न शेल आदेश प्रविष्ट गर्नुहोस् ।\n"
-"याद गर्नुहोस् सचेतक सञ्झ्याल बन्द गरेपछि यो कार्यान्वयन हुदैँन । तपाईँले संसूचक पछि सारेमा, "
-"संसूचक अन्त्यसम्म स्वीकार वा बन्द नभएसम्म कार्यान्वयन हुदैँन ।"
-
-#: templatedlg.cpp:69
-#, fuzzy
-#| msgid "Alarm Templates"
-msgctxt "@title:window"
-msgid "Alarm Templates"
-msgstr "संसूचक टेम्प्लेट"
-
-#: templatedlg.cpp:95 templatelistview.cpp:44
-#, fuzzy
-#| msgid "The list of alarm templates"
-msgctxt "@info:whatsthis"
-msgid "The list of alarm templates"
-msgstr "संसूचक टेम्प्लेटको सूची"
-
-#: templatedlg.cpp:103
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action:button"
-msgid "New"
-msgstr "नयाँ..."
-
-#: templatedlg.cpp:104
-#, fuzzy
-#| msgid "&New..."
-msgctxt "@action"
-msgid "New"
-msgstr "नयाँ..."
-
-#: templatedlg.cpp:107
-#, fuzzy
-#| msgid "Create a new alarm template"
-msgctxt "@info:whatsthis"
-msgid "Create a new alarm template"
-msgstr "नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
-
-#: templatedlg.cpp:112
-#, fuzzy
-#| msgid "Edit the currently highlighted alarm template"
-msgctxt "@info:whatsthis"
-msgid "Edit the currently highlighted alarm template"
-msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: templatedlg.cpp:115
-#, fuzzy
-#| msgid "Co&py"
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "प्रतिलिपि बनाउनुहोस्"
-
-#: templatedlg.cpp:117
-#, fuzzy
-#| msgid ""
-#| "Create a new alarm template based on a copy of the currently highlighted "
-#| "template"
-msgctxt "@info:whatsthis"
-msgid ""
-"Create a new alarm template based on a copy of the currently highlighted "
-"template"
-msgstr ""
-"हालै हाइलाइट गरिएको टेम्प्लेटको प्रतिलिपिमा आधारित नयाँ संसूचक टेम्प्लेट सिर्जना गर्नुहोस्"
-
-#: templatedlg.cpp:122
-#, fuzzy
-#| msgid "Delete the currently highlighted alarm template"
-msgctxt "@info:whatsthis"
-msgid "Delete the currently highlighted alarm template"
-msgstr "हालै चयन गरिएको संसूचक टेम्प्लेट मट्नुहोस्"
-
-#: templatedlg.cpp:211
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete the selected alarm template?"
-#| msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm template?"
-msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgstr[0] "तपाईँ वास्तवमै चयन गरिएको संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
-msgstr[1] "तपाईँ वास्तवमै चयन गरिएका %1 संसूचक टेम्प्लेट मेट्न चाहनुहुन्छ ?"
-
-#: templatedlg.cpp:213
-#, fuzzy
-#| msgid "Delete Alarm Template"
-#| msgid_plural "Delete Alarm Templates"
-msgctxt "@title:window"
-msgid "Delete Alarm Template"
-msgid_plural "Delete Alarm Templates"
-msgstr[0] "संसूचक टेम्प्लेट मेट्नुहोस्"
-msgstr[1] "संसूचक टेम्प्लेट मेट्नुहोस्"
-
-#: templatepickdlg.cpp:46
-#, fuzzy
-#| msgid "Choose Alarm Template"
-msgctxt "@title:window"
-msgid "Choose Alarm Template"
-msgstr "संसूचक टेम्प्लेट रोज्नुहोस्"
-
-#: templatepickdlg.cpp:77
-#, fuzzy
-#| msgid "Select a template to base the new alarm on."
-msgctxt "@info:whatsthis"
-msgid "Select a template to base the new alarm on."
-msgstr "नयाँ संसूचकमा आधारलाई टेम्प्लेट चयन गर्नुहोस् ।"
-
-#: traywindow.cpp:100
-#, fuzzy
-#| msgid "New Alarm"
-msgctxt "@action"
-msgid "&New Alarm"
-msgstr "नयाँ संसूचक"
-
-#: traywindow.cpp:333
-#, fuzzy
-#| msgid "Disabled"
-msgid "Disabled"
-msgstr "अक्षम"
-
-#: traywindow.cpp:338
-msgctxt "@info:tooltip Brief: some alarms are disabled"
-msgid "(Some alarms disabled)"
-msgstr ""
-
-#: traywindow.cpp:408
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "(%1%2:%3)"
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "(%1%2:%3)"
-msgstr "(%1%2:%3)"
-
-#: traywindow.cpp:410
-#, fuzzy, kde-format
-#| msgctxt "prefix + hours:minutes"
-#| msgid "%1%2:%3"
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "%1%2:%3"
-msgstr "%1%2:%3"
-
-#: undo.cpp:440
-#, fuzzy
-#| msgid "Alarm not found"
-msgctxt "@info/plain"
-msgid "Alarm not found"
-msgstr "संसूचक फेला परेन"
-
-#: undo.cpp:441
-#, fuzzy
-#| msgid "Error recreating alarm"
-msgctxt "@info/plain"
-msgid "Error recreating alarm"
-msgstr "संसूचक पुन: सिर्जना गर्दा त्रुटि"
-
-#: undo.cpp:442
-#, fuzzy
-#| msgid "Error recreating alarm template"
-msgctxt "@info/plain"
-msgid "Error recreating alarm template"
-msgstr "संसूचक टेम्प्लेट पुन: सिर्जना गर्दा त्रुटि"
-
-#: undo.cpp:443
-#, fuzzy
-#| msgid "Cannot reactivate archived alarm"
-msgctxt "@info/plain"
-msgid "Cannot reactivate archived alarm"
-msgstr "सङ्ग्रहित संसूचक पुन: सक्रिय पार्न सकिँदैन"
-
-#: undo.cpp:444
-#, fuzzy
-#| msgid "Program error"
-msgctxt "@info/plain"
-msgid "Program error"
-msgstr "कार्यक्रम त्रुटि"
-
-#: undo.cpp:445
-#, fuzzy
-#| msgid "Unknown error"
-msgctxt "@info/plain"
-msgid "Unknown error"
-msgstr "अज्ञात त्रुटि"
-
-#: undo.cpp:447
-#, fuzzy, kde-format
-#| msgctxt "Undo-action: message"
-#| msgid "%1: %2"
-msgctxt "@info Undo-action: message"
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: undo.cpp:684
-#, fuzzy
-#| msgctxt "Action to create a new alarm"
-#| msgid "New alarm"
-msgctxt "@info/plain Action to create a new alarm"
-msgid "New alarm"
-msgstr "नयाँ संसूचक"
-
-#: undo.cpp:686
-#, fuzzy
-#| msgctxt "Action to delete an alarm"
-#| msgid "Delete alarm"
-msgctxt "@info/plain Action to delete an alarm"
-msgid "Delete alarm"
-msgstr "संसूचक मेट्नुहोस्"
-
-#: undo.cpp:689
-#, fuzzy
-#| msgctxt "Action to create a new alarm template"
-#| msgid "New template"
-msgctxt "@info/plain Action to create a new alarm template"
-msgid "New template"
-msgstr "नयाँ टेम्प्लेट"
-
-#: undo.cpp:691
-#, fuzzy
-#| msgctxt "Action to delete an alarm template"
-#| msgid "Delete template"
-msgctxt "@info/plain Action to delete an alarm template"
-msgid "Delete template"
-msgstr "टेम्प्लेट मेट्नुहोस्"
-
-#: undo.cpp:693
-#, fuzzy
-#| msgid "Delete archived alarm"
-msgctxt "@info/plain"
-msgid "Delete archived alarm"
-msgstr "सङ्ग्रहित संसूचक मेट्नुहोस्"
-
-#: undo.cpp:916
-#, fuzzy
-#| msgid "Create multiple alarms"
-msgctxt "@info/plain"
-msgid "Create multiple alarms"
-msgstr "बहुविध संसूचक सिर्जना गर्नुहोस्"
-
-#: undo.cpp:1022
-#, fuzzy
-#| msgctxt "Action to edit an alarm"
-#| msgid "Edit alarm"
-msgctxt "@info/plain Action to edit an alarm"
-msgid "Edit alarm"
-msgstr "संसूचक सम्पादन गर्नुहोस्"
-
-#: undo.cpp:1024
-#, fuzzy
-#| msgctxt "Action to edit an alarm template"
-#| msgid "Edit template"
-msgctxt "@info/plain Action to edit an alarm template"
-msgid "Edit template"
-msgstr "टेम्प्लेट सम्पादन गर्नुहोस्"
-
-#: undo.cpp:1207
-#, fuzzy
-#| msgid "Delete multiple alarms"
-msgctxt "@info/plain"
-msgid "Delete multiple alarms"
-msgstr "बहुविध संसूचक मेट्नुहोस्"
-
-#: undo.cpp:1209
-#, fuzzy
-#| msgid "Delete multiple templates"
-msgctxt "@info/plain"
-msgid "Delete multiple templates"
-msgstr "बहुविध टेम्प्लेट मेट्नुहोस्"
-
-#: undo.cpp:1216
-#, fuzzy
-#| msgid "Delete multiple archived alarms"
-msgctxt "@info/plain"
-msgid "Delete multiple archived alarms"
-msgstr "बहुविध सङ्ग्रहित संसूचक मेट्नुहोस्"
-
-#: undo.cpp:1259 undo.cpp:1303
-#, fuzzy
-#| msgid "Reactivate alarm"
-msgctxt "@info/plain"
-msgid "Reactivate alarm"
-msgstr "संसूचक पुन: सक्रिय पार्नुहोस्"
-
-#: undo.cpp:1326
-#, fuzzy
-#| msgid "Reactivate multiple alarms"
-msgctxt "@info/plain"
-msgid "Reactivate multiple alarms"
-msgstr "बहुविध संसूचक पुन: सक्रिय पार्नुहोस्"
-
-#: wakedlg.cpp:56
-msgctxt "@title:window"
-msgid "Wake From Suspend"
-msgstr ""
-
-#: wakedlg.cpp:181
-#, fuzzy
-#| msgid "Next scheduled date and time of the alarm"
-msgctxt "@info"
-msgid "Cannot schedule wakeup time for a date-only alarm"
-msgstr "पछिल्लो संसूचकको तालिकावद्ध मिति र समय"
-
-#: wakedlg.cpp:185
-msgctxt "@info"
-msgid ""
-"<para>This wakeup will cancel any existing wakeup which has been set by "
-"KAlarm or any other application, because your computer can only schedule a "
-"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
-"supported at all on some computers, especially older ones, and some "
-"computers only support setting a wakeup time up to 24 hours ahead. You may "
-"wish to set up a test alarm to check your system's capability.</para>"
 msgstr ""
 
 #, fuzzy

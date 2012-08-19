@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:21+0200\n"
+"POT-Creation-Date: 2012-08-19 05:41+0200\n"
 "PO-Revision-Date: 2007-09-07 12:56+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -16,6 +16,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: csvexportdialog.h:37
+#, fuzzy
+#| msgid "&Export"
+msgctxt "@action:button"
+msgid "&Export"
+msgstr "निर्यात गर्नुहोस्"
+
+#: csvexportdialog.h:38
+#, fuzzy
+#| msgid "&Export to Clipboard"
+msgctxt "@action:button"
+msgid "E&xport to Clipboard"
+msgstr "क्लिपबोर्डमा निर्यात गर्नुहोस्"
 
 #. i18n: file: csvexportdialog_base.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
@@ -38,25 +52,9 @@ msgstr "सत्र समय"
 msgid "All Tasks"
 msgstr "सबै कार्य"
 
-#: csvexportdialog.h:37
-#, fuzzy
-#| msgid "&Export"
-msgctxt "@action:button"
-msgid "&Export"
-msgstr "निर्यात गर्नुहोस्"
-
-#: csvexportdialog.h:38
-#, fuzzy
-#| msgid "&Export to Clipboard"
-msgctxt "@action:button"
-msgid "E&xport to Clipboard"
-msgstr "क्लिपबोर्डमा निर्यात गर्नुहोस्"
-
-#: historydialog.cpp:81
-#, fuzzy
-#| msgid "Time"
-msgid "EndTime"
-msgstr "समय"
+#: historydialog.cpp:81 timekard.cpp:65
+msgid "Task"
+msgstr "कार्य"
 
 #: historydialog.cpp:81
 #, fuzzy
@@ -64,9 +62,11 @@ msgstr "समय"
 msgid "StartTime"
 msgstr "सुरु गर्नुहोस्"
 
-#: historydialog.cpp:81 timekard.cpp:65
-msgid "Task"
-msgstr "कार्य"
+#: historydialog.cpp:81
+#, fuzzy
+#| msgid "Time"
+msgid "EndTime"
+msgstr "समय"
 
 #: historydialog.cpp:82
 #, fuzzy
@@ -145,10 +145,6 @@ msgstr ""
 "।\n"
 
 #: karm.cpp:55
-msgid "KArm is now ktimetracker"
-msgstr "केडीई आर्म अहिले ktimetrcker हो"
-
-#: karm.cpp:55
 #, fuzzy
 #| msgid ""
 #| "Someone, probably you, has called karm. KArm has been renamed to "
@@ -165,17 +161,21 @@ msgstr ""
 "पुन: नामकरण गरिएको छ । यसले पहिचान गर्न सजिलो बनाउछ । कृपया यस सचेतकबाट "
 "ktimetracker कल गर्न सिक्नुहोस् किनकी भविश्यमा यसलाई हटाउन सकिन्छ ।"
 
+#: karm.cpp:55
+msgid "KArm is now ktimetracker"
+msgstr "केडीई आर्म अहिले ktimetrcker हो"
+
 #: ktimetrackerpart.cpp:74
 #, fuzzy
 #| msgid "KTimeTracker"
 msgid "ktimetracker"
 msgstr "केडीई समय ट्र्याकर"
 
-#: ktimetrackerpart.cpp:87 mainwindow.cpp:172
+#: ktimetrackerpart.cpp:87 mainwindow.cpp:173
 msgid "Configure key bindings"
 msgstr "कुञ्जी बाइन्डिङ कन्फिगर गर्नुहोस्"
 
-#: ktimetrackerpart.cpp:88 mainwindow.cpp:173
+#: ktimetrackerpart.cpp:88 mainwindow.cpp:174
 #, fuzzy
 #| msgid "This will let you configure keybindings which is specific to karm"
 msgid ""
@@ -199,22 +199,22 @@ msgid "Copyright © 1997-2012 KDE PIM authors"
 msgstr ""
 
 #: main.cpp:90
-msgid "Current Maintainer"
-msgstr "हालको मर्मतकर्ता"
-
-#: main.cpp:90
 #, fuzzy
 #| msgid "Thorsten Staerk"
 msgid "Thorsten Stärk"
 msgstr "थोर्स्टेन स्टेर्क"
 
-#: main.cpp:92
-msgid "Original Author"
-msgstr "मौलिक लेखक"
+#: main.cpp:90
+msgid "Current Maintainer"
+msgstr "हालको मर्मतकर्ता"
 
 #: main.cpp:92
 msgid "Sirtaj Singh Kang"
 msgstr "सिर्टाज सिङ काङ"
+
+#: main.cpp:92
+msgid "Original Author"
+msgstr "मौलिक लेखक"
 
 #: main.cpp:94
 msgid "Allen Winter"
@@ -282,21 +282,21 @@ msgstr ""
 msgid "Outputs the version"
 msgstr ""
 
-#: mainwindow.cpp:89
+#: mainwindow.cpp:90
 msgid "Could not create the KTimeTracker part."
 msgstr ""
 
-#: mainwindow.cpp:98
+#: mainwindow.cpp:99
 msgid "Could not find the KTimeTracker part."
 msgstr ""
 
-#: mainwindow.cpp:130
+#: mainwindow.cpp:131
 #, fuzzy
 #| msgid "Configure KArm..."
 msgid "Configure KTimeTracker..."
 msgstr "केडीई आर्म कन्फिगर गर्नुहोस्..."
 
-#: mainwindow.cpp:212
+#: mainwindow.cpp:213
 msgid "task_popup"
 msgstr "कार्य पपअप"
 
@@ -797,12 +797,12 @@ msgid "Tasks"
 msgstr "कार्य"
 
 #: taskview.cpp:181
-msgid "Session Time"
-msgstr "सत्र समय"
-
-#: taskview.cpp:181
 msgid "Task Name"
 msgstr "कार्य नाम"
+
+#: taskview.cpp:181
+msgid "Session Time"
+msgstr "सत्र समय"
 
 #: taskview.cpp:181 timekard.cpp:64
 msgid "Time"
@@ -1009,13 +1009,13 @@ msgid "Edit History..."
 msgstr "इतिहास सम्पादन गर्नुहोस्"
 
 #: timetrackerwidget.cpp:214
-msgid ""
-"A window will be opened where you can change start and stop times of tasks "
-"or add a comment to them."
+msgid "Edits history of all tasks of the current document"
 msgstr ""
 
 #: timetrackerwidget.cpp:214
-msgid "Edits history of all tasks of the current document"
+msgid ""
+"A window will be opened where you can change start and stop times of tasks "
+"or add a comment to them."
 msgstr ""
 
 #: timetrackerwidget.cpp:218
@@ -1289,12 +1289,12 @@ msgid "Columns"
 msgstr "स्तम्भ"
 
 #: treeviewheadercontextmenu.cpp:141
-msgid "Hide"
-msgstr "लुकाउनुहोस्"
-
-#: treeviewheadercontextmenu.cpp:141
 msgid "Show"
 msgstr "देखाउनुहोस्"
+
+#: treeviewheadercontextmenu.cpp:141
+msgid "Hide"
+msgstr "लुकाउनुहोस्"
 
 #, fuzzy
 #~| msgid "Decimal"

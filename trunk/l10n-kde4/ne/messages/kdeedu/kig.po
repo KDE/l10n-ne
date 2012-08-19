@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:14+0200\n"
+"POT-Creation-Date: 2012-08-19 04:53+0200\n"
 "PO-Revision-Date: 2007-12-31 14:47+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -19,6 +19,954 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#. i18n: file: tips:2
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:3
+msgid ""
+"<p>You can control a kig construction by means of a \"pykig\" \n"
+"python script, that can be executed with the command \n"
+"<code>pykig.py</code>.  Here is a nice example \n"
+"(<code>hexagons.kpy</code>) you can try:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
+msgstr ""
+"<p>तपाईँ \"pykig\" \n"
+"पाइथोन स्क्रिप्ट मार्फत किग निर्माण नियन्त्रण गर्न सक्नुहुन्छ, जुन आदेश \n"
+"<code>pykig.py</code> द्वारा कार्यान्वयन गर्न सकिन्छ ।  यहाँ राम्रो उदाहरण छ \n"
+"(<code>hexagons.kpy</code>) तपाईँ प्रयास गर्न सक्नुहुन्छ:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
+
+#. i18n: file: tips:28
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:28
+#, fuzzy
+#| msgid ""
+#| "<p>You can repeat the latest construction simply by pressing the key\n"
+#| "'Z'; this cames very handy if you need to construct a sequence\n"
+#| "of objects with the same construction, especially if there is\n"
+#| "no shortcut for that construction.</p>\n"
+msgid ""
+"<p>You can repeat the latest construction simply by pressing the key\n"
+"'Z'; this comes in very handy if you need to construct a sequence\n"
+"of objects with the same construction, especially if there is\n"
+"no shortcut for that construction.</p>\n"
+msgstr ""
+"<p>तपाईँ सामान्य रूपमा 'Z' कुञ्जी थिचेर पछिल्लो निर्माण दोहोर्याउन सक्नुहुन्छ;\n"
+"यदि तपाईँलाई एउटै निर्माणसँग वस्तुहरूको क्रम निर्माण गर्न आवश्यक भयो भने\n"
+"खास गरेर त्यहाँ त्यो निर्माणका लागि कुनै सर्टकट नभएमा,\n"
+"यो धेरै कुशल भएर आउँछ ।</p>\n"
+
+#. i18n: file: tips:37
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:36
+msgid ""
+"<p>One of the most powerful tools in Kig are the menus that you can\n"
+"enter by right-clicking on an object, or on some empty space in the\n"
+"document.  You can use them to give objects names, change their colors\n"
+"and line styles, and lots of other interesting things.</p>\n"
+msgstr ""
+"<p>किगको सबै भन्दा महत्वपूर्ण उपकरण मध्येको मेनुलाई \n"
+"तपाईँले वस्तुमा बायाँ क्लिक गरेर वा कागजातको खाली स्थानमा क्लिक गरेर\n"
+"प्रविष्ट गर्न सक्नुहुन्छ ।  तपाईँले तिनीहरूलाई वस्तुको नाम, तिनीहरूको रङ र लाइन शैली "
+"परिवर्तन गर्न\n"
+"र अन्य धेरै आकर्षक कुराहरू गर्न प्रयोग गर्न सक्नुहुन्छ ।</p>\n"
+
+#. i18n: file: tips:46
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:44
+msgid ""
+"<p>You can construct new points without using the menu or the toolbar, "
+"simply\n"
+"clicking somewhere on the Kig document with the <em>middle mouse\n"
+"button</em>.</p>\n"
+msgstr ""
+"<p>तपाईँले मेनु वा उपकरणपट्टीको प्रयोग बिना नै नयाँ बिन्दुहरू रचना गर्न सक्नुहुन्छ, "
+"सजिलोसँग \n"
+"किग कागजातको कतै <em>मध्य माउस\n"
+"बटनले क्लिक गरेर पनि रचना गर्न सक्नुहुन्छ</em>।</p>\n"
+
+#. i18n: file: tips:54
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:51
+msgid ""
+"<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
+"<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
+"and <em>Cabri&#8482;</em> files.</p>\n"
+msgstr ""
+"<p>किगले धेरै फाइल ढाँचाहरू खोल्न सक्दछ: यसको फाइलहरू (<code>.kig</code> फाइल),\n"
+"<em>KGeo</em> फाइल, <em>KSeg</em> फाइल र आंशिक रूपमा, <em>Dr. Geo</em>\n"
+"र <em>Cabri&#8482;</em> फाइल</p>\n"
+
+#. i18n: file: tips:62
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:58
+msgid ""
+"<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
+"constructions you can use in your documents: open the <em>Objects</em> \n"
+"menu to see them all.</p>\n"
+msgstr ""
+"<p>किगसँग ८० भन्दा बढी निर्माणसँग २० वस्तुहरू र १० स्थानान्तरणहरू छन्\n"
+"जुन तपाईँ आफ्नो कागजातमा प्रयोग गर्न सक्नुहुन्छ: तिनीहरू सबैलाई हेर्न <em>वस्तु</em> \n"
+"मेनु खोल्नुहोस् ।</p>\n"
+
+#. i18n: file: tips:70
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:65
+msgid ""
+"<p>You can use the selected objects to start the construction of an object\n"
+"which requires the selected objects as arguments. For example, if you have "
+"two\n"
+"points selected, you can choose <em>Start->Circle by Three Points</em> from "
+"the\n"
+"popup menu to start constructing a circle by three points.</p>\n"
+msgstr ""
+"<p>तपाईँले वस्तु रचना सुरु गर्न चयन गरेको वस्तु प्रयोग गर्न सक्नुहुन्छ\n"
+"जसलाई चयन गरेको वस्तु तर्कको रूपमा हुन आवश्यक हुन्छ । उदाहरणका लागि, यदि तपाईँसँग दुई "
+"बिन्दु चयन छ भने\n"
+", तपाईँले तीन बिन्दु वृत्त रचना सुरु गर्न \n"
+"पपअप मेनुबाट<em>सुरु गर्नुहोस्->तीन बिन्दु वृत्त</em> छनोट गर्न सक्नुहुन्छ ।</p>\n"
+
+#. i18n: file: tips:79
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:73
+#, fuzzy
+#| msgid ""
+#| "<p>Kig can extends its object set using external macros. You can find "
+#| "some\n"
+#| "interesting macro on Kig website:\n"
+#| "<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
+msgid ""
+"<p>Kig can extends its object set using external macros. You can find some\n"
+"interesting macros on the Kig website:\n"
+"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
+msgstr ""
+"<p>किगले बाह्य म्याक्रोहरू प्रयोग गरेर यसको वस्तु सेट विस्तार गर्न सक्दछ । तपाईँले\n"
+"केही रमाइला म्याक्रोहरू किगको:\n"
+"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>वेबसाइटमा फेला "
+"पार्न सक्नुहुन्छ ।</p>\n"
+
+#. i18n: file: tips:87
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:80
+msgid ""
+"<p>If you have more than one object under the mouse, and you want to select "
+"any\n"
+"of them, you can click with the <em>left mouse button</em>, while holding "
+"the\n"
+"<em>Shift</em> key, to get a list of the objects under the mouse cursor "
+"which\n"
+"you can then select from.</p>\n"
+msgstr ""
+"<p>यदि तपाईँसँग माउस तल एक भन्दा धेरै वस्तु छ र तपाईँले तिनीहरू मध्ये \n"
+"कुनै चयन गर्न चाहनुहुन्छ भने, माउस कर्सर मुनिको वस्तुको सूची प्राप्त गर्न तपाईँले\n"
+"<em>सिफ्ट</em> कुञ्जी थिचेर,  <em>बायाँ माउस बटन</em> सँग क्लिक गर्न सक्नुहुन्छ, जसलाई \n"
+"तपाईँले यसबाट चयन गर्न सक्नुहुन्छ ।</p>\n"
+
+#. i18n: file: tips:96
+#. i18n: ectx: @info:tipoftheday
+#: tips.cpp:88
+msgid ""
+"<p>When you construct a locus, you can click on it with the <em>right</em> "
+"mouse\n"
+"button and select <em>cartesian equation</em> to see its cartesian "
+"equation, \n"
+"whenever it is an algebraic curve of low degree.</p>\n"
+msgstr ""
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Mahesh Subedi, श्यामकृष्ण बल"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "submanesh@gmail.com, shyamkrishna_bal@yahoo.com"
+
+#. i18n: file: kig/kigpartui.rc:5
+#. i18n: ectx: Menu (file)
+#. i18n: file: kig/kigui.rc:4
+#. i18n: ectx: Menu (file)
+#: rc.cpp:5 rc.cpp:101
+msgid "&File"
+msgstr "फाइल"
+
+#. i18n: file: kig/kigpartui.rc:16
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:8
+msgid "&Edit"
+msgstr "सम्पादन"
+
+#. i18n: file: kig/kigpartui.rc:27
+#. i18n: ectx: Menu (view)
+#: rc.cpp:11
+msgid "&View"
+msgstr "दृश्य"
+
+#. i18n: file: kig/kigpartui.rc:35
+#. i18n: ectx: Menu (objects)
+#: rc.cpp:14
+msgid "&Objects"
+msgstr "वस्तु"
+
+#. i18n: file: kig/kigpartui.rc:37
+#. i18n: ectx: Menu (new_point)
+#: rc.cpp:17
+msgid "&Points"
+msgstr "बिन्दु"
+
+#. i18n: file: kig/kigpartui.rc:49
+#. i18n: ectx: Menu (new_line)
+#: rc.cpp:20
+msgid "&Lines"
+msgstr "रेखा"
+
+#. i18n: file: kig/kigpartui.rc:59
+#. i18n: ectx: Menu (new_circle)
+#: rc.cpp:23
+msgid "&Circles && Arcs"
+msgstr "वृत्त र चाप"
+
+#. i18n: file: kig/kigpartui.rc:70
+#. i18n: ectx: Menu (new_poligon)
+#: rc.cpp:26
+msgid "Poly&gons"
+msgstr "बहुभुज"
+
+#. i18n: file: kig/kigpartui.rc:82
+#. i18n: ectx: Menu (new_vector)
+#: rc.cpp:29
+msgid "&Vectors && Segments"
+msgstr "भेक्टर र खण्ड"
+
+#. i18n: file: kig/kigpartui.rc:91
+#. i18n: ectx: Menu (new_conic)
+#: rc.cpp:32
+msgid "Co&nics && Cubics"
+msgstr "कोनिक र क्युब"
+
+#. i18n: file: kig/kigpartui.rc:98
+#. i18n: ectx: Menu (new_moreconics)
+#: rc.cpp:35
+msgid "More Conics"
+msgstr "बढी कोनिक"
+
+#. i18n: file: kig/kigpartui.rc:113
+#. i18n: ectx: Menu (new_cubic)
+#: rc.cpp:38
+msgid "Cu&bics"
+msgstr "क्युब"
+
+#. i18n: file: kig/kigpartui.rc:121
+#. i18n: ectx: Menu (new_bezier)
+#: rc.cpp:41
+msgid "&Bézier curves"
+msgstr ""
+
+#. i18n: file: kig/kigpartui.rc:131
+#. i18n: ectx: Menu (new_angle)
+#: rc.cpp:44
+msgid "&Angles"
+msgstr "कोण"
+
+#. i18n: file: kig/kigpartui.rc:136
+#. i18n: ectx: Menu (new_transformation)
+#: rc.cpp:47
+msgid "&Transformations"
+msgstr "रूपानान्तरण"
+
+#. i18n: file: kig/kigpartui.rc:154
+#. i18n: ectx: Menu (new_differentialgeometry)
+#: rc.cpp:50
+msgid "&Differential geometry"
+msgstr "ज्यामितिय विभेद"
+
+#. i18n: file: kig/kigpartui.rc:161
+#. i18n: ectx: Menu (new_test)
+#: rc.cpp:53
+msgid "T&ests"
+msgstr "परीक्षण"
+
+#. i18n: file: kig/kigpartui.rc:172
+#. i18n: ectx: Menu (new_other)
+#: rc.cpp:56
+msgid "&Other"
+msgstr "अन्य"
+
+#. i18n: file: kig/kigpartui.rc:186
+#. i18n: ectx: Menu (types)
+#: rc.cpp:59
+msgid "&Types"
+msgstr "प्रकार"
+
+#. i18n: file: kig/kigpartui.rc:191
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:62
+msgid "&Tools"
+msgstr "उपकरण"
+
+#. i18n: file: kig/kigpartui.rc:204
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: kig/kigui.rc:23
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:65 rc.cpp:107
+msgid "Main Toolbar"
+msgstr "मुख्य उपकरणपट्टी"
+
+#. i18n: file: kig/kigpartui.rc:218
+#. i18n: ectx: ToolBar (points_toolbar)
+#: rc.cpp:68
+msgid "Points"
+msgstr "बिन्दु"
+
+#. i18n: file: kig/kigpartui.rc:229
+#. i18n: ectx: ToolBar (line_toolbar)
+#: rc.cpp:71
+msgid "Lines"
+msgstr "रेखा"
+
+#. i18n: file: kig/kigpartui.rc:239
+#. i18n: ectx: ToolBar (vectseg_toolbar)
+#: rc.cpp:74
+msgid "Vectors && Segments"
+msgstr "भेक्टर र खण्ड"
+
+#. i18n: file: kig/kigpartui.rc:247
+#. i18n: ectx: ToolBar (circle_toolbar)
+#: rc.cpp:77
+msgid "Circles && Arcs"
+msgstr "वृत्त र चाप"
+
+#. i18n: file: kig/kigpartui.rc:255
+#. i18n: ectx: ToolBar (conic_toolbar)
+#: rc.cpp:80
+msgid "Conics"
+msgstr "कोनिक"
+
+#. i18n: file: kig/kigpartui.rc:264
+#. i18n: ectx: ToolBar (bezier_toolbar)
+#: rc.cpp:83
+#, fuzzy
+#| msgid "Hide a Curve"
+msgid "Bézier Curves"
+msgstr "वक्र लुकाउनुहोस्"
+
+#. i18n: file: kig/kigpartui.rc:274
+#. i18n: ectx: ToolBar (angles_toolbar)
+#: rc.cpp:86
+msgid "Angles"
+msgstr "कोण"
+
+#. i18n: file: kig/kigpartui.rc:279
+#. i18n: ectx: ToolBar (transformation_toolbar)
+#: rc.cpp:89
+msgid "Transformations"
+msgstr "रूपानान्तरण"
+
+#. i18n: file: kig/kigpartui.rc:293
+#. i18n: ectx: ToolBar (tests_toolbar)
+#: rc.cpp:92
+msgid "Tests"
+msgstr "परीक्षण"
+
+#. i18n: file: kig/kigpartui.rc:305
+#. i18n: ectx: ToolBar (rest_toolbar)
+#: rc.cpp:95
+msgid "Other Objects"
+msgstr "अन्य वस्तु"
+
+#. i18n: file: kig/kigpartui.rc:313
+#. i18n: ectx: ToolBar (view_toolbar)
+#: rc.cpp:98
+msgid "View"
+msgstr "दृश्य"
+
+#. i18n: file: kig/kigui.rc:13
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:104
+msgid "&Settings"
+msgstr "सेटिङ"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: filters/imageexporteroptionswidget.ui:120
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: filters/latexexporteroptionswidget.ui:82
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: filters/svgexporteroptionswidget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:110 rc.cpp:134 rc.cpp:164 rc.cpp:176 misc/kigfiledialog.cc:34
+msgid "Options"
+msgstr "विकल्प"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:42
+#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
+#. i18n: file: filters/latexexporteroptionswidget.ui:95
+#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
+#: rc.cpp:113 rc.cpp:170
+msgid "Show Extra Frame"
+msgstr "अतिरिक्त फ्रेम देखाउनुहोस्"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:49
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#. i18n: file: filters/imageexporteroptionswidget.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#. i18n: file: filters/latexexporteroptionswidget.ui:102
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#. i18n: file: filters/svgexporteroptionswidget.ui:42
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#: rc.cpp:116 rc.cpp:137 rc.cpp:173 rc.cpp:179
+msgid "Show Axes"
+msgstr "अक्ष देखाउनुहोस्"
+
+#. i18n: file: filters/asyexporteroptionswidget.ui:56
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#. i18n: file: filters/imageexporteroptionswidget.ui:147
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#. i18n: file: filters/latexexporteroptionswidget.ui:88
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#. i18n: file: filters/svgexporteroptionswidget.ui:49
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#: rc.cpp:119 rc.cpp:140 rc.cpp:167 rc.cpp:182
+msgid "Show Grid"
+msgstr "ग्रिड देखाउनुहोस्"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:122
+msgid "Resolution"
+msgstr "रिजोल्युसन"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:37
+#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
+#: rc.cpp:125
+msgid "&Keep Aspect Ratio"
+msgstr "आकार अनुपात राख्नुहोस्"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:128
+msgid "Height:"
+msgstr "उचाइ:"
+
+#. i18n: file: filters/imageexporteroptionswidget.ui:110
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:131
+msgid "Width:"
+msgstr "चौडाइ:"
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:23
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:143
+msgid "Output format"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:29
+#. i18n: ectx: property (text), widget (QRadioButton, psTricksRadioButton)
+#: rc.cpp:146
+msgid "PSTricks"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:36
+#. i18n: ectx: property (text), widget (QRadioButton, tikzRadioButton)
+#: rc.cpp:149
+msgid "Tikz/PGF"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:46
+#. i18n: ectx: property (text), widget (QRadioButton, asyRadioButton)
+#: rc.cpp:152
+msgid "Asymptote"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:56
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:155
+#, fuzzy
+#| msgid "Document to open"
+msgid "Document options"
+msgstr "खोल्ने कागजात"
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:62
+#. i18n: ectx: property (text), widget (QRadioButton, pictureRadioButton)
+#: rc.cpp:158
+msgid "Picture only"
+msgstr ""
+
+#. i18n: file: filters/latexexporteroptionswidget.ui:72
+#. i18n: ectx: property (text), widget (QRadioButton, documentRadioButton)
+#: rc.cpp:161
+#, fuzzy
+#| msgid "Zoom in on the document"
+msgid "Standalone document"
+msgstr "कागजातको जुम बढाउनुहोस्"
+
+#. i18n: file: misc/kigcoordinateprecisiondialog.ui:9
+#. i18n: ectx: property (text), widget (QCheckBox, m_defaultCheckBox)
+#: rc.cpp:185
+msgid "&Use default coordinate precision"
+msgstr ""
+
+#. i18n: file: misc/kigcoordinateprecisiondialog.ui:16
+#. i18n: ectx: property (text), widget (QLabel, m_precisionLabel)
+#: rc.cpp:188
+msgid "&Specify coordinate precision:"
+msgstr ""
+
+#. i18n: file: modes/edittypewidget.ui:36
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:191
+msgid ""
+"Here you can modify the name, the description and the icon of this macro "
+"type."
+msgstr "यहाँ तपाईँले नाम, वर्णन र म्याक्रो प्रकारको प्रतिमा परिमार्जन गर्न सक्नुहुन्छ ।"
+
+#. i18n: file: modes/edittypewidget.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: rc.cpp:194
+msgid "Name:"
+msgstr "नाम:"
+
+#. i18n: file: modes/edittypewidget.ui:93
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: rc.cpp:197
+msgid "Description:"
+msgstr "वर्णन:"
+
+#. i18n: file: modes/historywidget.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:200
+msgid "Description of the current step:"
+msgstr "हालको चरणको वर्णन:"
+
+#. i18n: file: modes/historywidget.ui:53
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonFirst)
+#: rc.cpp:203
+msgid "First step"
+msgstr "पहिलो चरण"
+
+#. i18n: file: modes/historywidget.ui:66
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonBack)
+#: rc.cpp:206
+msgid "One step back"
+msgstr "एक चरण पछाडि"
+
+#. i18n: file: modes/historywidget.ui:82
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:209
+msgid "/"
+msgstr "/"
+
+#. i18n: file: modes/historywidget.ui:96
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonNext)
+#: rc.cpp:212
+msgid "One step forward"
+msgstr "एक चरण अगाडि"
+
+#. i18n: file: modes/historywidget.ui:109
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonLast)
+#: rc.cpp:215
+msgid "Last step"
+msgstr "अन्तिम चरण"
+
+#. i18n: file: modes/typeswidget.ui:37
+#. i18n: ectx: property (toolTip), widget (QTreeView, typeList)
+#: rc.cpp:218
+msgid "Select types here..."
+msgstr "यहाँ प्रकार चयन गर्नुहोस्..."
+
+#. i18n: file: modes/typeswidget.ui:40
+#. i18n: ectx: property (whatsThis), widget (QTreeView, typeList)
+#: rc.cpp:221
+msgid ""
+"This is a list of the current macro types... You can select, edit, delete, "
+"export and import them..."
+msgstr ""
+"यो हालको म्याक्रो प्रकारको सूची हो... तपाईँले तिनीहरूलाई चयन, सम्पादन, मेट्न, निर्यात र "
+"आयात गर्न सक्नुहुन्छ..."
+
+#. i18n: file: modes/typeswidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
+#: rc.cpp:224
+msgid "Edit the selected type."
+msgstr "चयन गरेको प्रकार सम्पादन गर्नुहोस् ।"
+
+#. i18n: file: modes/typeswidget.ui:102
+#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
+#: rc.cpp:227 modes/typesdialog.cpp:368
+msgid "&Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
+
+#. i18n: file: modes/typeswidget.ui:109
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonRemove)
+#: rc.cpp:230
+msgid "Delete all the selected types in the list."
+msgstr "सूचीमा सबै चयन गरेको प्रकार मेट्नुहोस् ।"
+
+#. i18n: file: modes/typeswidget.ui:112
+#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
+#: rc.cpp:233 modes/popup.cc:390 modes/typesdialog.cpp:369
+msgid "&Delete"
+msgstr "मेट्नुहोस्"
+
+#. i18n: file: modes/typeswidget.ui:151
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonExport)
+#: rc.cpp:236
+msgid "Export all the selected types to a file."
+msgstr "फाइलमा सबै चयन गरेको प्रकार निर्यात गर्नुहोस् ।"
+
+#. i18n: file: modes/typeswidget.ui:154
+#. i18n: ectx: property (text), widget (KPushButton, buttonExport)
+#: rc.cpp:239 modes/typesdialog.cpp:371
+msgid "E&xport..."
+msgstr "निर्यात गर्नुहोस्..."
+
+#. i18n: file: modes/typeswidget.ui:161
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonImport)
+#: rc.cpp:242
+msgid "Import macros that are contained in one or more files."
+msgstr "एउटा वा बढी फाइलमा रहेको म्याक्रो आयात गर्नुहोस् ।"
+
+#. i18n: file: modes/typeswidget.ui:164
+#. i18n: ectx: property (text), widget (KPushButton, buttonImport)
+#: rc.cpp:245
+msgid "&Import..."
+msgstr "आयात गर्नुहोस्..."
+
+#: rc.cpp:246
+msgid "Circle by Center && Line"
+msgstr "केन्द्र र रेखाद्वारा वृत्त"
+
+#: rc.cpp:247
+msgid "A circle constructed by its center and tangent to a given line"
+msgstr "यसको केन्द्र र दिएको रेखामा ट्यान्जेन्ट भएको वृत्त रचना गरियो"
+
+#: rc.cpp:248
+msgid "Construct a circle tangent to this line"
+msgstr "यो रेखामा ट्यान्जेन्ट वृत्त रचना गर्नुहोस्"
+
+#: rc.cpp:249 rc.cpp:254 objects/circle_type.cc:34
+msgid "Construct a circle with this center"
+msgstr "यो केन्द्रसँग वृत्त रचना गर्नुहोस्"
+
+#: rc.cpp:250
+msgid "Select the line that the new circle should be tangent to..."
+msgstr "नयाँ वृत्तमा ट्यान्जेन्ट हुँने रेखा चयन गर्नुहोस्..."
+
+#: rc.cpp:251 rc.cpp:256 objects/circle_type.cc:39 objects/circle_type.cc:194
+msgid "Select the center of the new circle..."
+msgstr "नयाँ वृत्तको केन्द्र चयन गर्नुहोस्..."
+
+#: rc.cpp:252
+msgid "Circle by Point && Segment (as the Diameter)"
+msgstr "बिन्दु र खण्डद्वारा वृत्त (व्यास जस्तै)"
+
+#: rc.cpp:253
+msgid ""
+"A circle defined by its center and the length of a segment as the diameter"
+msgstr "व्यास जस्तै खण्डको लम्बाइ र त्यसको केन्द्रद्वारा परिभाषित वृत्त"
+
+#: rc.cpp:255
+msgid ""
+"Construct a circle with the diameter given by the length of this segment"
+msgstr "यो खण्डको लम्बाइद्वारा दिएको व्याससँग वृत्त रचना गर्नुहोस्"
+
+#: rc.cpp:257
+msgid "Select the segment whose length gives the diameter of the new circle..."
+msgstr "नयाँ वृत्तको व्यास दिने लम्बाइको खण्ड चयन गर्नुहोस्..."
+
+#: rc.cpp:258
+msgid "Equilateral Triangle"
+msgstr "समभुजीय त्रिभुज"
+
+#: rc.cpp:259
+msgid "Equilateral triangle with given two vertices"
+msgstr "दिएको दुई भेक्टरसँग समभुजीय त्रिभुज"
+
+#: rc.cpp:260
+msgid "Evolute"
+msgstr "इभोलुट"
+
+#: rc.cpp:261
+msgid "Evolute of a curve"
+msgstr "वक्रको इभोलुट"
+
+#: rc.cpp:262
+msgid "Evolute of this curve"
+msgstr "यो वक्रको इभोलुट"
+
+#: rc.cpp:263 rc.cpp:268 objects/centerofcurvature_type.cc:35
+#: objects/tangent_type.cc:36
+msgid "Select the curve..."
+msgstr "वक्र चयन गर्नुहोस्..."
+
+#: rc.cpp:264
+msgid "Osculating Circle"
+msgstr "ओस्कुलेटिङ वृत्त"
+
+#: rc.cpp:265
+msgid "Osculating circle of a curve at a point"
+msgstr "बिन्दुमा वक्रको ओस्कुलेटिङ वृत्त"
+
+#: rc.cpp:266
+msgid "Osculating circle of this curve"
+msgstr "यो वक्रको ओस्कुलेटिङ वृत्त"
+
+#: rc.cpp:267
+msgid "Osculating circle at this point"
+msgstr "यो बिन्दुमा ओस्कुलेटिङ बिन्दु"
+
+#: rc.cpp:269
+msgid "Select the point..."
+msgstr "बिन्दु चयन गर्नुहोस्..."
+
+#: rc.cpp:270
+msgid "Segment Axis"
+msgstr "खण्ड अक्ष"
+
+#: rc.cpp:271
+msgid "The perpendicular line through a given segment's mid point."
+msgstr "दिएको खण्डको मध्य बिन्दुबाट समानान्तर रेखा ।"
+
+#: rc.cpp:272
+msgid "Construct the axis of this segment"
+msgstr "यो खण्डको अक्ष रचना गर्नुहोस्"
+
+#: rc.cpp:273
+msgid "Select the segment of which you want to draw the axis..."
+msgstr "तपाईँले अक्ष कोर्न चाहनुभएको खण्ड चयन गर्नुहोस्..."
+
+#: rc.cpp:274
+msgid "Square"
+msgstr "वर्ग"
+
+#: rc.cpp:275
+msgid "Square with two given adjacent vertices"
+msgstr "दिएको दुई निकटवर्ती कोणीय बिन्दु भएको वर्ग"
+
+#: rc.cpp:276
+msgid "Vector Difference"
+msgstr "भेक्टर फरक"
+
+#: rc.cpp:277
+msgid "Construct the vector difference of two vectors."
+msgstr "दुई भेक्टरहरूको भेक्टर फरक रचना गर्नुहोस्"
+
+#: rc.cpp:278
+msgid "Construct the vector difference of this vector and another one."
+msgstr "यो भेक्टर र अन्यको भेक्टर फरक रचना गर्नुहोस् ।"
+
+#: rc.cpp:279
+msgid "Construct the vector difference of the other vector and this one."
+msgstr "अन्य भेक्टर र यसको भेक्टर फरक रचना गर्नुहोस् ।"
+
+#: rc.cpp:280
+msgid "Construct the vector difference starting at this point."
+msgstr "यो बिन्दुमा सुरु भेक्टर फरक रचना गर्नुहोस् ।"
+
+#: rc.cpp:281
+msgid ""
+"Select the first of the two vectors of which you want to construct the "
+"difference..."
+msgstr "तपाईँले फरक रचना गर्न चाहनुभएको दुई भेक्टरको पहिलो चयन गर्नुहोस्..."
+
+#: rc.cpp:282
+msgid ""
+"Select the other of the two vectors of which you want to construct the "
+"difference..."
+msgstr "तपाईँले रचना गर्न चाहनुभएको दुई भेक्टरबाट अन्य चयन गर्नुहोस्..."
+
+#: rc.cpp:283
+msgid "Select the point to construct the difference vector in..."
+msgstr "फरक भेक्टरमा रचना गर्न बिन्दु चयन गर्नुहोस्..."
+
+#: filters/filter.h:55 filters/cabri-utils.cc:33 misc/object_hierarchy.cc:486
+#: objects/object_imp_factory.cc:294
+#, kde-format
+msgid "An error was encountered at line %1 in file %2."
+msgstr "%2 फाइलमा %1 रेखा भित्र एउटा त्रुटि फेला परेको थियो ।"
+
+#: kig/aboutdata.h:29
+msgid "KDE Interactive Geometry"
+msgstr "केडीई अन्तर्क्रियात्मक ज्यामिति"
+
+#: kig/aboutdata.h:33
+msgid "(C) 2002-2005, The Kig developers"
+msgstr "(C) 2002-2005, किग विकासकर्ता"
+
+#: kig/aboutdata.h:35
+msgid "Dominique Devriese"
+msgstr "डोमिनिक्यु डेभ्रियस"
+
+#: kig/aboutdata.h:36
+msgid "Original author, long time maintainer, design and lots of code."
+msgstr "मौलिक लेखक, लामो समयका सम्भारकर्ता, डिजाइन र धेरै सङ्केत ।"
+
+#: kig/aboutdata.h:39
+msgid "Maurizio Paolini"
+msgstr "माउरिजियो पाओलिनि"
+
+#: kig/aboutdata.h:40
+msgid ""
+"Did a lot of important work all around Kig, including, but not limited to "
+"conics, cubics, transformations and property tests support."
+msgstr ""
+"किगको कोनिक, क्युबिक, रूपान्तरण र विशेषता परीक्षण समर्थन बाहेकको र धेरै महत्वपूर्ण काम "
+"भयो ।"
+
+#: kig/aboutdata.h:45
+msgid "Pino Toscano"
+msgstr "पिनो टोस्कानो"
+
+#: kig/aboutdata.h:46
+msgid ""
+"Actual maintainer, Dr. Geo import filter, point and line styles, Italian "
+"translation, miscellaneous stuff here and there."
+msgstr ""
+"वास्तविक सम्भारकर्ता, डा. जिव फिल्टर, बिन्दु र रेखा शैलीहरू, इटालियन अनुवाद, विविध स्टफ "
+"।"
+
+#: kig/aboutdata.h:51
+msgid "Franco Pasquarelli"
+msgstr "फ्रान्को पासक्वारेली"
+
+#: kig/aboutdata.h:52
+msgid ""
+"Helped a lot with the implementation of the Locus object, there's quite some "
+"math involved in doing it right, and Franco wrote the most difficult parts."
+msgstr ""
+"त्यहा यो गर्दा केही गणित, अक्ष वस्तु कार्यान्वयमा धेरै मद्दत गरियो र फ्राक्कोले धेरै कठिन "
+"भागहरू लेख्नुभयो ।"
+
+#: kig/aboutdata.h:57
+msgid "Francesca Gatti"
+msgstr ""
+
+#: kig/aboutdata.h:58
+#, fuzzy
+#| msgid "Responsible for the nice application SVG Icon."
+msgid "Responsible for the computation of the algebraic equation of a locus."
+msgstr "राम्रो अनुप्रयोग SVG प्रतिमाका लागि उत्तरदायी ।"
+
+#: kig/aboutdata.h:62
+msgid "Petr Gajdos"
+msgstr ""
+
+#: kig/aboutdata.h:63
+#, fuzzy
+#| msgid "Construct a circle with this center"
+msgid "Contributed the Bézier curves and related icons."
+msgstr "यो केन्द्रसँग वृत्त रचना गर्नुहोस्"
+
+#: kig/aboutdata.h:66
+msgid "Raoul Bourquin"
+msgstr ""
+
+#: kig/aboutdata.h:67
+#, fuzzy
+#| msgid "Construct the asymptotes of this conic"
+msgid "Contributed the 'asymptote' export filter."
+msgstr "यो कोनिकको एसयम्टोस रचना गर्नुहोस्"
+
+#: kig/aboutdata.h:70
+msgid "Eric Depagne"
+msgstr "इरिक डेपाग्ने"
+
+#: kig/aboutdata.h:71
+msgid ""
+"The French translator, who also sent me some useful feedback, like feature "
+"requests and bug reports."
+msgstr "फ्रान्सेली अनुवादक, उहाँले मलाई बग प्रतिवेदन जस्ता केही महत्वपूर्ण पृष्ठपोषण गर्नुभयो ।"
+
+#: kig/aboutdata.h:75
+msgid "Marc Bartsch"
+msgstr "मार्क बार्टस्च"
+
+#: kig/aboutdata.h:76
+msgid ""
+"Author of KGeo, where I got inspiration, some source, and most of the "
+"artwork from."
+msgstr "केडीई भूगोलको लेखक, जसबाट मैले प्रेरणा, केही स्रोत र धेरैजसो कलाकार्य ढाँचामा पाए ।"
+
+#: kig/aboutdata.h:80
+msgid "Christophe Devriese"
+msgstr "क्रिस्टोफे डेभरियस"
+
+#: kig/aboutdata.h:81
+msgid ""
+"Domi's brother, who he got to write the algorithm for calculating the center "
+"of the circle with three points given."
+msgstr ""
+"डोमिको भाइ जसलाई तीन बिन्दु दिइएको वृत्तको केन्द्र गणनाका लागि एल्गोरिदम लेख्न लगाइएको "
+"थियो"
+
+#: kig/aboutdata.h:86
+msgid "Christophe Prud'homme"
+msgstr "क्रिस्टोफे प्रुडहोम"
+
+#: kig/aboutdata.h:87
+msgid "Sent me a patch for some bugs."
+msgstr "केही बगका लागि मलाई प्याच पठाउनुहोस् ।"
+
+#: kig/aboutdata.h:90
+msgid "Robert Gogolok"
+msgstr "रोबर्ट गोगोलक"
+
+#: kig/aboutdata.h:91
+msgid ""
+"Gave me some good feedback on Kig, some feature requests, cleanups and style "
+"fixes, and someone to chat with on irc :)"
+msgstr ""
+"मलाई किगमा केही महत्वपूर्ण पृष्ठपोषण, केही सुविधा अनुरोध, सफाइ र शैली समाधान र "
+"आइआरसीमा कुराकानी गर्न केही कुरा दिनुहोस् :)"
+
+#: kig/aboutdata.h:96
+msgid "David Vignoni"
+msgstr "डेभिड भिग्नोनी"
+
+#: kig/aboutdata.h:97
+msgid "Responsible for the nice application SVG Icon."
+msgstr "राम्रो अनुप्रयोग SVG प्रतिमाका लागि उत्तरदायी ।"
+
+#: kig/aboutdata.h:100
+msgid "Danny Allen"
+msgstr "ड्यानी एलेन"
+
+#: kig/aboutdata.h:101
+msgid "Responsible for the new object action icons."
+msgstr "नयाँ वस्तु क्रिया प्रतिमाका लागि उत्तरदायी ।"
 
 #: filters/asyexporter.cc:40
 #, fuzzy
@@ -78,12 +1026,6 @@ msgid ""
 "This Cabri file contains a \"%1\" object, which Kig does not currently "
 "support."
 msgstr "काब्री फाइलले \"%1\" वस्तु समावेश गर्दछ, जसलाई किगले हाल समर्थन गर्दैन ।"
-
-#: filters/cabri-utils.cc:33 filters/filter.h:55 misc/object_hierarchy.cc:486
-#: objects/object_imp_factory.cc:294
-#, kde-format
-msgid "An error was encountered at line %1 in file %2."
-msgstr "%2 फाइलमा %1 रेखा भित्र एउटा त्रुटि फेला परेको थियो ।"
 
 #: filters/drgeo-filter.cc:109
 #, kde-format
@@ -315,491 +1257,6 @@ msgstr "*.fig|एक्स फिग कागजात (*.fig)"
 #: filters/xfigexporter.cc:581
 msgid "Export as XFig File"
 msgstr "एक्स फिगको रूपमा निर्यात गर्नुहोस्"
-
-#: kig/aboutdata.h:29
-msgid "KDE Interactive Geometry"
-msgstr "केडीई अन्तर्क्रियात्मक ज्यामिति"
-
-#: kig/aboutdata.h:33
-msgid "(C) 2002-2005, The Kig developers"
-msgstr "(C) 2002-2005, किग विकासकर्ता"
-
-#: kig/aboutdata.h:35
-msgid "Dominique Devriese"
-msgstr "डोमिनिक्यु डेभ्रियस"
-
-#: kig/aboutdata.h:36
-msgid "Original author, long time maintainer, design and lots of code."
-msgstr "मौलिक लेखक, लामो समयका सम्भारकर्ता, डिजाइन र धेरै सङ्केत ।"
-
-#: kig/aboutdata.h:39
-msgid "Maurizio Paolini"
-msgstr "माउरिजियो पाओलिनि"
-
-#: kig/aboutdata.h:40
-msgid ""
-"Did a lot of important work all around Kig, including, but not limited to "
-"conics, cubics, transformations and property tests support."
-msgstr ""
-"किगको कोनिक, क्युबिक, रूपान्तरण र विशेषता परीक्षण समर्थन बाहेकको र धेरै महत्वपूर्ण काम "
-"भयो ।"
-
-#: kig/aboutdata.h:45
-msgid "Pino Toscano"
-msgstr "पिनो टोस्कानो"
-
-#: kig/aboutdata.h:46
-msgid ""
-"Actual maintainer, Dr. Geo import filter, point and line styles, Italian "
-"translation, miscellaneous stuff here and there."
-msgstr ""
-"वास्तविक सम्भारकर्ता, डा. जिव फिल्टर, बिन्दु र रेखा शैलीहरू, इटालियन अनुवाद, विविध स्टफ "
-"।"
-
-#: kig/aboutdata.h:51
-msgid "Franco Pasquarelli"
-msgstr "फ्रान्को पासक्वारेली"
-
-#: kig/aboutdata.h:52
-msgid ""
-"Helped a lot with the implementation of the Locus object, there's quite some "
-"math involved in doing it right, and Franco wrote the most difficult parts."
-msgstr ""
-"त्यहा यो गर्दा केही गणित, अक्ष वस्तु कार्यान्वयमा धेरै मद्दत गरियो र फ्राक्कोले धेरै कठिन "
-"भागहरू लेख्नुभयो ।"
-
-#: kig/aboutdata.h:57
-msgid "Francesca Gatti"
-msgstr ""
-
-#: kig/aboutdata.h:58
-#, fuzzy
-#| msgid "Responsible for the nice application SVG Icon."
-msgid "Responsible for the computation of the algebraic equation of a locus."
-msgstr "राम्रो अनुप्रयोग SVG प्रतिमाका लागि उत्तरदायी ।"
-
-#: kig/aboutdata.h:62
-msgid "Petr Gajdos"
-msgstr ""
-
-#: kig/aboutdata.h:63
-#, fuzzy
-#| msgid "Construct a circle with this center"
-msgid "Contributed the Bézier curves and related icons."
-msgstr "यो केन्द्रसँग वृत्त रचना गर्नुहोस्"
-
-#: kig/aboutdata.h:66
-msgid "Raoul Bourquin"
-msgstr ""
-
-#: kig/aboutdata.h:67
-#, fuzzy
-#| msgid "Construct the asymptotes of this conic"
-msgid "Contributed the 'asymptote' export filter."
-msgstr "यो कोनिकको एसयम्टोस रचना गर्नुहोस्"
-
-#: kig/aboutdata.h:70
-msgid "Eric Depagne"
-msgstr "इरिक डेपाग्ने"
-
-#: kig/aboutdata.h:71
-msgid ""
-"The French translator, who also sent me some useful feedback, like feature "
-"requests and bug reports."
-msgstr "फ्रान्सेली अनुवादक, उहाँले मलाई बग प्रतिवेदन जस्ता केही महत्वपूर्ण पृष्ठपोषण गर्नुभयो ।"
-
-#: kig/aboutdata.h:75
-msgid "Marc Bartsch"
-msgstr "मार्क बार्टस्च"
-
-#: kig/aboutdata.h:76
-msgid ""
-"Author of KGeo, where I got inspiration, some source, and most of the "
-"artwork from."
-msgstr "केडीई भूगोलको लेखक, जसबाट मैले प्रेरणा, केही स्रोत र धेरैजसो कलाकार्य ढाँचामा पाए ।"
-
-#: kig/aboutdata.h:80
-msgid "Christophe Devriese"
-msgstr "क्रिस्टोफे डेभरियस"
-
-#: kig/aboutdata.h:81
-msgid ""
-"Domi's brother, who he got to write the algorithm for calculating the center "
-"of the circle with three points given."
-msgstr ""
-"डोमिको भाइ जसलाई तीन बिन्दु दिइएको वृत्तको केन्द्र गणनाका लागि एल्गोरिदम लेख्न लगाइएको "
-"थियो"
-
-#: kig/aboutdata.h:86
-msgid "Christophe Prud'homme"
-msgstr "क्रिस्टोफे प्रुडहोम"
-
-#: kig/aboutdata.h:87
-msgid "Sent me a patch for some bugs."
-msgstr "केही बगका लागि मलाई प्याच पठाउनुहोस् ।"
-
-#: kig/aboutdata.h:90
-msgid "Robert Gogolok"
-msgstr "रोबर्ट गोगोलक"
-
-#: kig/aboutdata.h:91
-msgid ""
-"Gave me some good feedback on Kig, some feature requests, cleanups and style "
-"fixes, and someone to chat with on irc :)"
-msgstr ""
-"मलाई किगमा केही महत्वपूर्ण पृष्ठपोषण, केही सुविधा अनुरोध, सफाइ र शैली समाधान र "
-"आइआरसीमा कुराकानी गर्न केही कुरा दिनुहोस् :)"
-
-#: kig/aboutdata.h:96
-msgid "David Vignoni"
-msgstr "डेभिड भिग्नोनी"
-
-#: kig/aboutdata.h:97
-msgid "Responsible for the nice application SVG Icon."
-msgstr "राम्रो अनुप्रयोग SVG प्रतिमाका लागि उत्तरदायी ।"
-
-#: kig/aboutdata.h:100
-msgid "Danny Allen"
-msgstr "ड्यानी एलेन"
-
-#: kig/aboutdata.h:101
-msgid "Responsible for the new object action icons."
-msgstr "नयाँ वस्तु क्रिया प्रतिमाका लागि उत्तरदायी ।"
-
-#: kig/kig.cpp:90
-msgid "Could not find the necessary Kig library, check your installation."
-msgstr "आवश्यक किग लाइब्रेरी फेला पार्न सकेन, तपाईँको स्थापना जाँच गर्नुहोस् ।"
-
-#: kig/kig.cpp:203
-#, kde-format
-msgid "Save changes to document %1?"
-msgstr "परिवर्तनहरू %1 कागजातमा बचत गर्न चाहनुहुन्छ ?"
-
-#: kig/kig.cpp:204
-msgid "Save Changes?"
-msgstr "परिवर्तनहरू बचत गर्नुहुन्छ ?"
-
-#: kig/kig.cpp:239
-msgid ""
-"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
-"seg *.fgeo *.fig)\n"
-"*.kig|Kig Documents (*.kig)\n"
-"*.kigz|Compressed Kig Documents (*.kigz)\n"
-"*.kgeo|KGeo Documents (*.kgeo)\n"
-"*.seg|KSeg Documents (*.seg)\n"
-"*.fgeo|Dr. Geo Documents (*.fgeo)\n"
-"*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
-msgstr ""
-"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|सबै समर्थित फाइलहरू (*.kig *.kigz *.seg *."
-"fgeo *.fig)\n"
-"*.kig|किग कागजातहरू (*.kig)\n"
-"*.kigz|सङ्कुचित किग कागजातहरू (*.kigz)\n"
-"*.kgeo|केडीई भौगोलिक कागजातहरू (*.kgeo)\n"
-"*.seg|केडीई सेग कागजातहरू (*.seg)\n"
-"*.fgeo|Dr. जियो कागजातहरू (*.fgeo)\n"
-"*.fig *.FIG|काब्री कागजातहरू (*.fig *.FIG)"
-
-#: kig/kig_commands.cpp:100
-#, fuzzy, kde-format
-#| msgid "Remove %1 Objects"
-msgid "Remove %1 Object"
-msgid_plural "Remove %1 Objects"
-msgstr[0] "%1 वस्तु हटाउनुहोस्"
-msgstr[1] "%1 वस्तु हटाउनुहोस्"
-
-#: kig/kig_commands.cpp:112
-#, fuzzy, kde-format
-#| msgid "Add %1 Objects"
-msgid "Add %1 Object"
-msgid_plural "Add %1 Objects"
-msgstr[0] "%1 वस्तु थप्नुहोस्"
-msgstr[1] "%1 वस्तु थप्नुहोस्"
-
-#: kig/kig_part.cpp:86
-msgid "KigPart"
-msgstr "किग भाग"
-
-#: kig/kig_part.cpp:90
-msgid "&Set Coordinate System"
-msgstr "समकक्ष प्रणाली सेट गर्नुहोस्"
-
-#: kig/kig_part.cpp:131
-msgid "Kig Options"
-msgstr "किग विकल्प"
-
-#: kig/kig_part.cpp:135
-msgid "Show grid"
-msgstr "ग्रिड देखाउनुहोस्"
-
-#: kig/kig_part.cpp:138
-msgid "Show axes"
-msgstr "अक्ष देखाउनुहोस्"
-
-#: kig/kig_part.cpp:227
-msgid "Invert Selection"
-msgstr "चयन उल्टाउनुहोस्"
-
-#: kig/kig_part.cpp:234
-msgid "&Delete Objects"
-msgstr "वस्तु मेट्नुहोस्"
-
-#: kig/kig_part.cpp:238
-msgid "Delete the selected objects"
-msgstr "चयन गरेको वस्तु मेट्नुहोस्"
-
-#: kig/kig_part.cpp:240
-msgid "Cancel Construction"
-msgstr "रचना रद्द गर्नुहोस्"
-
-#: kig/kig_part.cpp:245
-msgid "Cancel the construction of the object being constructed"
-msgstr "रचना गरिरहेको वस्तुको रचना रद्द गर्नुहोस्"
-
-#: kig/kig_part.cpp:248
-msgid "Repeat Construction"
-msgstr "रचना दोहोर्याउनुहोस्"
-
-#: kig/kig_part.cpp:253
-msgid "Repeat the last construction (with new data)"
-msgstr "(नयाँ डेटासँगै) अन्तिम रचना दोहोर्याउनुहोस्"
-
-#: kig/kig_part.cpp:256 modes/popup.cc:936
-msgid "U&nhide All"
-msgstr "सबै लुकाएको हटाउनुहोस्"
-
-#: kig/kig_part.cpp:259
-msgid "Show all hidden objects"
-msgstr "सबै लुकाइएको वस्तु देखाउनुहोस्"
-
-#: kig/kig_part.cpp:262
-msgid "&New Macro..."
-msgstr "नयाँ म्याक्रो..."
-
-#: kig/kig_part.cpp:265
-msgid "Define a new macro"
-msgstr "नयाँ म्याक्रो परिभाषित गर्नुहोस्"
-
-#: kig/kig_part.cpp:267
-msgid "Manage &Types..."
-msgstr "प्रकार व्यवस्थापन गर्नुहोस्..."
-
-#: kig/kig_part.cpp:270
-msgid "Manage macro types."
-msgstr "म्याक्रो प्रकार व्यवस्थापन गर्नुहोस् ।"
-
-#: kig/kig_part.cpp:272
-msgid "&Browse History..."
-msgstr "इतिहास ब्राउज गर्नुहोस्..."
-
-#: kig/kig_part.cpp:275
-msgid "Browse the history of the current construction."
-msgstr "हालको संरचनाको इतिहास ब्राउज गर्नुहोस् ।"
-
-#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
-msgid "Zoom in on the document"
-msgstr "कागजातको जुम बढाउनुहोस्"
-
-#: kig/kig_part.cpp:287 kig/kig_part.cpp:288
-msgid "Zoom out of the document"
-msgstr "कागजातको जुम घटाउनुहोस्"
-
-#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
-msgid "Recenter the screen on the document"
-msgstr "कागजातमा स्क्रिन पुन: केन्द्रित गर्नुहोस्"
-
-#: kig/kig_part.cpp:298 kig/kig_part.cpp:299
-msgid "View this document full-screen."
-msgstr "यो कागजात पुरा पर्दामा हेर्नुहोस्"
-
-#: kig/kig_part.cpp:302
-msgid "&Select Shown Area"
-msgstr "देखिएको क्षेत्र चयन गर्नुहोस्"
-
-#: kig/kig_part.cpp:305 kig/kig_part.cpp:306
-msgid "Select the area that you want to be shown in the window."
-msgstr "सञ्झ्यालमा देखिने बनाउन चाहनुभएको क्षेत्र चयन गर्नुहोस्"
-
-#: kig/kig_part.cpp:308
-msgid "S&elect Zoom Area"
-msgstr "जुम क्षेत्र चयन गर्नुहोस्"
-
-#: kig/kig_part.cpp:314
-#, fuzzy
-#| msgid "Set &Coordinate..."
-msgid "Set Coordinate &Precision..."
-msgstr "समकक्ष सेट गर्नुहोस्..."
-
-#: kig/kig_part.cpp:316
-msgid "Set the floating point precision of coordinates in the document. "
-msgstr ""
-
-#: kig/kig_part.cpp:319
-msgid "Show &Grid"
-msgstr "ग्रिड देखाउनुहोस्"
-
-#: kig/kig_part.cpp:321
-msgid "Show or hide the grid."
-msgstr "ग्रिड देखाउनुहोस् वा लुकाउनुहोस् ।"
-
-#: kig/kig_part.cpp:325
-msgid "Show &Axes"
-msgstr "अक्ष देखाउनुहोस्"
-
-#: kig/kig_part.cpp:327
-msgid "Show or hide the axes."
-msgstr "अक्ष देखाउनुहोस् वा लुकाउनुहोस् ।"
-
-#: kig/kig_part.cpp:331
-msgid "Wear Infrared Glasses"
-msgstr "अवरक्त ग्लास लगाउनुहोस्"
-
-#: kig/kig_part.cpp:333
-#, fuzzy
-#| msgid "Enable/disable hidden objects visibility."
-msgid "Enable/disable hidden objects' visibility."
-msgstr "लुकाइएको वस्तुको दृश्यात्मकता सक्षम पार्नुहोस्/अक्षम पार्नुहोस् ।"
-
-#: kig/kig_part.cpp:365
-#, kde-format
-msgid "Repeat Construction (%1)"
-msgstr "रचना (%1) दोहोर्याउनुहोस्"
-
-#: kig/kig_part.cpp:367
-#, kde-format
-msgid "Repeat %1 (with new data)"
-msgstr "(नयाँ डेटासँगै) %1 दोहोर्याउनुहोस्"
-
-#: kig/kig_part.cpp:396
-#, kde-format
-msgid ""
-"The file \"%1\" you tried to open does not exist. Please verify that you "
-"entered the correct path."
-msgstr ""
-"तपाईँले खोल्न प्रयास गर्नुभएको \"%1\" फाइल अवस्थित छैन । कृपया सही मार्ग प्रविष्ट गरेकोमा "
-"जाँच गर्नुहोस् ।"
-
-#: kig/kig_part.cpp:398
-msgid "File Not Found"
-msgstr "फाइल फेला परेन"
-
-#: kig/kig_part.cpp:416
-#, kde-format
-msgid ""
-"You tried to open a document of type \"%1\"; unfortunately, Kig does not "
-"support this format. If you think the format in question would be worth "
-"implementing support for, you can always ask us nicely on mailto:pino@kde."
-"org or do the work yourself and send me a patch."
-msgstr ""
-"तपाईँले \"%1\" प्रकारको कागजात खोल्न प्रयास गर्नुभयो; दुर्भाग्यवश, किगले यस्तो ढाँचालाई "
-"समर्थन गर्दैन । यदि तपाईँलाई प्रश्नमा ढाँचा समर्थन कार्यान्वयनमा महत्वपूर्ण छ जस्तो लागेमा, "
-"तपाईँले हामिहरूलाई mailto:pino@kde.org मा सोध्न सक्नुहुन्छ वा तपाईँले आफैले गरेर मलाई "
-"प्याच पठाउन सक्नुहुन्छ ।"
-
-#: kig/kig_part.cpp:422 kig/kig_part.cpp:465
-msgid "Format Not Supported"
-msgstr "ढाँचा समर्थन गरेन"
-
-#: kig/kig_part.cpp:463
-msgid ""
-"Kig does not support saving to any other file format than its own. Save to "
-"Kig's format instead?"
-msgstr ""
-"किगले उसको ढाँचा बाहेकको अन्य कुनै ढाँचामा बचत गर्न समर्थन गर्दैन । यसको सट्टामा किगको "
-"ढाँचामा बचत गर्नुहुन्छ ?"
-
-#: kig/kig_part.cpp:465
-msgid "Save Kig Format"
-msgstr "किगको ढाँचामा बचत गर्नुहोस्"
-
-#: kig/kig_part.cpp:700
-msgid ""
-"*.kig|Kig Documents (*.kig)\n"
-"*.kigz|Compressed Kig Documents (*.kigz)"
-msgstr ""
-"*.kig|किग कागजात (*.kig)\n"
-"*.kigz|सङ्कुचित किग कागजात (*.kigz)"
-
-#: kig/kig_part.cpp:711 misc/kigfiledialog.cc:54 modes/typesdialog.cpp:456
-#, kde-format
-msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
-msgstr "\"%1\" फाइल पहिल्यै अवस्थित छ । तपाईँले यसलाई अधिलेखन गर्न चाहनुहुन्छ ?"
-
-#: kig/kig_part.cpp:712 misc/kigfiledialog.cc:55 modes/typesdialog.cpp:458
-msgid "Overwrite File?"
-msgstr "फाइल अधिलेखन गर्नुहोस् ?"
-
-#: kig/kig_part.cpp:869
-msgid "Print Geometry"
-msgstr "ज्यामिति मुद्रण गर्नुहोस्"
-
-#: kig/kig_part.cpp:936
-#, kde-format
-msgid "Hide %1 Object"
-msgid_plural "Hide %1 Objects"
-msgstr[0] "%1 वस्तु लुकाउनुहोस्"
-msgstr[1] "%1 वस्तुहरू लुकाउनुहोस्"
-
-#: kig/kig_part.cpp:955
-#, kde-format
-msgid "Show %1 Object"
-msgid_plural "Show %1 Objects"
-msgstr[0] "%1 वस्तु देखाउनुहोस्"
-msgstr[1] "%1 वस्तुहरू देखाउनुहोस्"
-
-#: kig/kig_view.cpp:220
-msgid "Zoom In"
-msgstr "जुम बढाउनुहोस्"
-
-#: kig/kig_view.cpp:240
-msgid "Zoom Out"
-msgstr "जुम घटाउनुहोस्"
-
-#: kig/kig_view.cpp:520
-msgid "Recenter View"
-msgstr "पुन: केन्द्र दृश्य"
-
-#: kig/kig_view.cpp:542
-msgid "Select the rectangle that should be shown."
-msgstr "देखाउने त्रिभुज चयन गर्नुहोस्"
-
-#: kig/kig_view.cpp:550 kig/kig_view.cpp:598
-msgid "Change Shown Part of Screen"
-msgstr "पर्दाको देखिने भाग परिवर्तन गर्नुहोस्"
-
-#: kig/kig_view.cpp:587
-msgid "Select Zoom Area"
-msgstr "जुम क्षेत्र चयन गर्नुहोस्"
-
-#: kig/kig_view.cpp:588
-msgid ""
-"Select the zoom area by entering the coordinates<br />of the upper left "
-"corner and the lower right corner."
-msgstr ""
-"माथिल्लो बायाँ कुना र तल्लो दायाँ कुनाको समन्वय प्रविष्ट गरेर जुम क्षेत्र चयन गर्नुहोस् ।"
-
-#: kig/main.cpp:98
-msgid "Kig"
-msgstr "किग"
-
-#: kig/main.cpp:104
-msgid ""
-"Do not show a GUI. Convert the specified file to the native Kig format. "
-"Output goes to stdout unless --outfile is specified."
-msgstr ""
-"GUI नदेखाउनुहोस् । निर्दिष्ट गरेको फाइललाई किग ढाँचामा रूपान्तरण गर्नुहोस् । आउट फाइल "
-"निर्दिष्ट नगरेमा निर्गत stdout मा जान्छ ।"
-
-#: kig/main.cpp:106
-msgid ""
-"File to output the created native file to. '-' means output to stdout. "
-"Default is stdout as well."
-msgstr ""
-"मौलिक फाइललाई निर्गत फाइल '-' को अर्थ stdout मा निर्गत हो । पूर्वनिर्धारित पनि "
-"stdout हो ।"
-
-#: kig/main.cpp:107
-msgid "Document to open"
-msgstr "खोल्ने कागजात"
 
 #: misc/builtin_stuff.cc:60
 msgid "Point by Numeric Labels"
@@ -1347,54 +1804,6 @@ msgstr "पाइथोन स्क्रिप्ट"
 msgid "Construct a new Python script."
 msgstr "नयाँ पाइथोन स्क्रिप्ट रचना गर्नुहोस् ।"
 
-#: misc/coordinate_system.cpp:325
-msgid ""
-"Enter coordinates in the following format: \"x;y\",\n"
-"where x is the x coordinate, and y is the y coordinate."
-msgstr ""
-"समकक्षलाई निम्न ढाँचा: \"x;y\" मा प्रविष्ट गर्नुहोस्,\n"
-"जहाँ x एक्स समकक्ष र y वाइ समकक्ष हो ।"
-
-#: misc/coordinate_system.cpp:331
-msgid ""
-"Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
-"the x coordinate, and y is the y coordinate."
-msgstr ""
-"समकक्षहरूलाई निम्न ढाँचामा प्रविष्ट गर्नुहोस्: <b>\"x;y\"</b>,<br />जहाँ x, x समकक्ष हो "
-"र y, य समकक्ष हो ।"
-
-#: misc/coordinate_system.cpp:371
-msgid ""
-"Enter coordinates in the following format: \"r; θ°\",\n"
-"where r and θ are the polar coordinates."
-msgstr ""
-"समकक्षहरू : \"r; θ°\" ढाँचामा प्रविष्ट गर्नुहोस्,\n"
-"जहाँ r र θ पोलार समकक्ष हुन् ।"
-
-#: misc/coordinate_system.cpp:378
-msgid ""
-"Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
-"and θ are the polar coordinates."
-msgstr ""
-"समकक्षहरू निम्न ढाँचामा प्रविष्ट गर्नुहोस्: <b>\"r; θ°\"</b>,<br />जहाँ r र θ पोलार "
-"समकक्षहरू हुन् ।"
-
-#: misc/coordinate_system.cpp:530
-msgid "&Euclidean"
-msgstr "युक्लिडेयन"
-
-#: misc/coordinate_system.cpp:531
-msgid "&Polar"
-msgstr "पोलार"
-
-#: misc/coordinate_system.cpp:581
-msgid "Set Euclidean Coordinate System"
-msgstr "युक्लिडेयन समकक्ष प्रणाली सेट गर्नुहोस्"
-
-#: misc/coordinate_system.cpp:583
-msgid "Set Polar Coordinate System"
-msgstr "पोलार समकक्ष प्रणाली सेट गर्नुहोस्"
-
 #: misc/goniometry.cc:122
 msgctxt "Translators: Degrees"
 msgid "Deg"
@@ -1452,17 +1861,14 @@ msgstr "सङ्ख्यात्मक मान रचना गर्नु
 msgid "Numeric Value"
 msgstr "सङ्ख्यात्मक मान"
 
-#. i18n: file: filters/asyexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:120
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: filters/latexexporteroptionswidget.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: misc/kigfiledialog.cc:34 rc.cpp:110 rc.cpp:134 rc.cpp:164 rc.cpp:176
-msgid "Options"
-msgstr "विकल्प"
+#: misc/kigfiledialog.cc:54 kig/kig_part.cpp:711 modes/typesdialog.cpp:456
+#, kde-format
+msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
+msgstr "\"%1\" फाइल पहिल्यै अवस्थित छ । तपाईँले यसलाई अधिलेखन गर्न चाहनुहुन्छ ?"
+
+#: misc/kigfiledialog.cc:55 kig/kig_part.cpp:712 modes/typesdialog.cpp:458
+msgid "Overwrite File?"
+msgstr "फाइल अधिलेखन गर्नुहोस् ?"
 
 #: misc/kiginputdialog.cc:130
 msgid "Set Angle Size"
@@ -1558,11 +1964,11 @@ msgid ""
 msgstr "यस मार्फत कोरिने लोकस स्थानको निम्न बिन्दु चयन गर्नुहोस्..."
 
 #: misc/special_constructors.cc:391
-msgid "A locus"
+msgid "Locus"
 msgstr "लोकस"
 
 #: misc/special_constructors.cc:391
-msgid "Locus"
+msgid "A locus"
 msgstr "लोकस"
 
 #: misc/special_constructors.cc:481
@@ -2152,13 +2558,13 @@ msgstr "तर्क %1 चयन गर्दैछ"
 msgid "Change Label"
 msgstr "लेबुल परिवर्तन गर्नुहोस्"
 
-#: modes/label.cc:645
-msgid "Enter value:"
-msgstr "मान प्रविष्ट गर्नुहोस्:"
-
 #: modes/label.cc:645 objects/text_type.cc:325
 msgid "Set Value"
 msgstr "मान सेट गर्नुहोस्"
+
+#: modes/label.cc:645
+msgid "Enter value:"
+msgstr "मान प्रविष्ट गर्नुहोस्:"
 
 #: modes/label.cc:676
 msgid "Select the position for the new numeric value..."
@@ -2320,12 +2726,6 @@ msgstr "देखाउनुहोस्"
 msgid "&Move"
 msgstr "सार्नुहोस्"
 
-#. i18n: file: modes/typeswidget.ui:112
-#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
-#: modes/popup.cc:390 modes/typesdialog.cpp:369 rc.cpp:233
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
-
 #: modes/popup.cc:400
 msgid "&Custom Color"
 msgstr "अनुकूल रङ"
@@ -2338,13 +2738,13 @@ msgstr "नाम सेट गर्नुहोस्..."
 msgid "&Name"
 msgstr "नाम"
 
-#: modes/popup.cc:529
-msgid "Set Name of this Object:"
-msgstr "यो वस्तुको नाम सेट गर्नुहोस्:"
-
 #: modes/popup.cc:529 modes/popup.cc:546
 msgid "Set Object Name"
 msgstr "वस्तु नाम सेट गर्नुहोस्"
+
+#: modes/popup.cc:529
+msgid "Set Name of this Object:"
+msgstr "यो वस्तुको नाम सेट गर्नुहोस्:"
 
 #: modes/popup.cc:644
 msgid "Change Object Color"
@@ -2366,6 +2766,10 @@ msgstr "वस्तु शैली परिवर्तन गर्नुह
 msgctxt "More menu items"
 msgid "More..."
 msgstr ""
+
+#: modes/popup.cc:936 kig/kig_part.cpp:256
+msgid "U&nhide All"
+msgstr "सबै लुकाएको हटाउनुहोस्"
 
 #: modes/textlabelwizard.cc:50
 msgid "Enter Label Text"
@@ -2402,73 +2806,6 @@ msgstr ""
 #: modes/textlabelwizard.cc:123
 msgid "Construct Label"
 msgstr "लेबुल रचना गर्नुहोस्"
-
-#: modes/typesdialog.cpp:130
-msgid "Macro"
-msgstr "म्याक्रो"
-
-#: modes/typesdialog.cpp:313
-msgid "Type"
-msgstr "प्रकार"
-
-#: modes/typesdialog.cpp:315
-msgid "Description"
-msgstr "वर्णन"
-
-#: modes/typesdialog.cpp:339
-msgid "Manage Types"
-msgstr "प्रकार व्यवस्थापन गर्नुहोस्"
-
-#. i18n: file: modes/typeswidget.ui:102
-#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
-#: modes/typesdialog.cpp:368 rc.cpp:227
-msgid "&Edit..."
-msgstr "सम्पादन गर्नुहोस्..."
-
-#. i18n: file: modes/typeswidget.ui:154
-#. i18n: ectx: property (text), widget (KPushButton, buttonExport)
-#: modes/typesdialog.cpp:371 rc.cpp:239
-msgid "E&xport..."
-msgstr "निर्यात गर्नुहोस्..."
-
-#: modes/typesdialog.cpp:426
-#, kde-format
-msgid "Are you sure you want to delete this type?"
-msgid_plural "Are you sure you want to delete these %1 types?"
-msgstr[0] "तपाईँ यस प्रकारको मेट्न निश्चित हुनुहुन्छ ?"
-msgstr[1] "तपाईँ %1 प्रकार मेट्न निश्चित हुनुहुन्छ ?"
-
-#: modes/typesdialog.cpp:428
-msgid "Are You Sure?"
-msgstr "तपाईँ निश्चित हुनुहुन्छ ?"
-
-#: modes/typesdialog.cpp:451 modes/typesdialog.cpp:466
-msgid ""
-"*.kigt|Kig Types Files\n"
-"*|All Files"
-msgstr ""
-"*.kigt|किग प्रकार फाइल\n"
-"*|सबै फाइल"
-
-#: modes/typesdialog.cpp:451
-msgid "Export Types"
-msgstr "निर्यात प्रकार"
-
-#: modes/typesdialog.cpp:466
-msgid "Import Types"
-msgstr "आयात प्रकार"
-
-#: modes/typesdialog.cpp:494
-msgid ""
-"There is more than one type selected. You can only edit one type at a time. "
-"Please select only the type you want to edit and try again."
-msgstr ""
-"त्यहाँ एक भन्दा बढी प्रकार चयन गरिएको छ । तपाईँले एक समयमा केबल एउटा मात्र सम्पादन "
-"गर्न सक्नुहुन्छ । तपाईँले चाहनुभएको प्रकार मात्र चयन गर्नुहोस् र फेरि प्रयास गर्नुहोस् ।"
-
-#: modes/typesdialog.cpp:497
-msgid "More Than One Type Selected"
-msgstr "एक भन्दा बढी प्रकार चयन गरियो"
 
 #: objects/angle_type.cc:40
 msgid "Construct an angle through this point"
@@ -2955,11 +3292,6 @@ msgstr "यो केन्द्रसँग वृत्त रचना ग�
 msgid "Test Result"
 msgstr "परीक्षण परिणाम"
 
-#: objects/centerofcurvature_type.cc:35 objects/tangent_type.cc:36 rc.cpp:263
-#: rc.cpp:268
-msgid "Select the curve..."
-msgstr "वक्र चयन गर्नुहोस्..."
-
 #: objects/centerofcurvature_type.cc:36
 msgid "Select a point on the curve..."
 msgstr "वक्रमा बिन्दु चयन गर्नुहोस्..."
@@ -3034,14 +3366,6 @@ msgstr "वृत्त लुकाउनुहोस्"
 #: objects/circle_type.cc:32
 msgid "Construct a circle through this point"
 msgstr "यो बिन्दु हुँदै वृत्त रचना गर्नुहोस्"
-
-#: objects/circle_type.cc:34 rc.cpp:249 rc.cpp:254
-msgid "Construct a circle with this center"
-msgstr "यो केन्द्रसँग वृत्त रचना गर्नुहोस्"
-
-#: objects/circle_type.cc:39 objects/circle_type.cc:194 rc.cpp:251 rc.cpp:256
-msgid "Select the center of the new circle..."
-msgstr "नयाँ वृत्तको केन्द्र चयन गर्नुहोस्..."
 
 #: objects/circle_type.cc:41 objects/circle_type.cc:75
 #: objects/circle_type.cc:77 objects/circle_type.cc:79
@@ -3725,12 +4049,12 @@ msgid "Set &Length..."
 msgstr "लम्बाइ सेट गर्नुहोस्..."
 
 #: objects/line_type.cc:243
-msgid "Choose the new length: "
-msgstr "नयाँ लम्बाइ छनोट गर्नुहोस्: "
-
-#: objects/line_type.cc:243
 msgid "Set Segment Length"
 msgstr "खण्ड लम्बाइ सेट गर्नुहोस्"
+
+#: objects/line_type.cc:243
+msgid "Choose the new length: "
+msgstr "नयाँ लम्बाइ छनोट गर्नुहोस्: "
 
 #: objects/line_type.cc:251
 msgid "Resize Segment"
@@ -4067,12 +4391,12 @@ msgid "Enter the new coordinate."
 msgstr "नयाँ समकक्ष प्रविष्ट गर्नुहोस् ।"
 
 #: objects/point_type.cc:443
-msgid "Choose the new parameter: "
-msgstr "नयाँ परिमिति छनोट गर्नुहोस्:"
-
-#: objects/point_type.cc:443
 msgid "Set Point Parameter"
 msgstr "बिन्दु परिमिति सेट गर्नुहोस्"
+
+#: objects/point_type.cc:443
+msgid "Choose the new parameter: "
+msgstr "नयाँ परिमिति छनोट गर्नुहोस्:"
 
 #: objects/point_type.cc:449
 msgid "Change Parameter of Constrained Point"
@@ -5265,570 +5589,6 @@ msgstr "यो बिन्दुमा सुरु भेक्टर यो�
 msgid "Select the point to construct the sum vector in..."
 msgstr "यसमा भेक्टर योग रचना गर्ने बिन्दु चयन गर्नुहोस्..."
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Mahesh Subedi, श्यामकृष्ण बल"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "submanesh@gmail.com, shyamkrishna_bal@yahoo.com"
-
-#. i18n: file: kig/kigpartui.rc:5
-#. i18n: ectx: Menu (file)
-#. i18n: file: kig/kigui.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5 rc.cpp:101
-msgid "&File"
-msgstr "फाइल"
-
-#. i18n: file: kig/kigpartui.rc:16
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:8
-msgid "&Edit"
-msgstr "सम्पादन"
-
-#. i18n: file: kig/kigpartui.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:11
-msgid "&View"
-msgstr "दृश्य"
-
-#. i18n: file: kig/kigpartui.rc:35
-#. i18n: ectx: Menu (objects)
-#: rc.cpp:14
-msgid "&Objects"
-msgstr "वस्तु"
-
-#. i18n: file: kig/kigpartui.rc:37
-#. i18n: ectx: Menu (new_point)
-#: rc.cpp:17
-msgid "&Points"
-msgstr "बिन्दु"
-
-#. i18n: file: kig/kigpartui.rc:49
-#. i18n: ectx: Menu (new_line)
-#: rc.cpp:20
-msgid "&Lines"
-msgstr "रेखा"
-
-#. i18n: file: kig/kigpartui.rc:59
-#. i18n: ectx: Menu (new_circle)
-#: rc.cpp:23
-msgid "&Circles && Arcs"
-msgstr "वृत्त र चाप"
-
-#. i18n: file: kig/kigpartui.rc:70
-#. i18n: ectx: Menu (new_poligon)
-#: rc.cpp:26
-msgid "Poly&gons"
-msgstr "बहुभुज"
-
-#. i18n: file: kig/kigpartui.rc:82
-#. i18n: ectx: Menu (new_vector)
-#: rc.cpp:29
-msgid "&Vectors && Segments"
-msgstr "भेक्टर र खण्ड"
-
-#. i18n: file: kig/kigpartui.rc:91
-#. i18n: ectx: Menu (new_conic)
-#: rc.cpp:32
-msgid "Co&nics && Cubics"
-msgstr "कोनिक र क्युब"
-
-#. i18n: file: kig/kigpartui.rc:98
-#. i18n: ectx: Menu (new_moreconics)
-#: rc.cpp:35
-msgid "More Conics"
-msgstr "बढी कोनिक"
-
-#. i18n: file: kig/kigpartui.rc:113
-#. i18n: ectx: Menu (new_cubic)
-#: rc.cpp:38
-msgid "Cu&bics"
-msgstr "क्युब"
-
-#. i18n: file: kig/kigpartui.rc:121
-#. i18n: ectx: Menu (new_bezier)
-#: rc.cpp:41
-msgid "&Bézier curves"
-msgstr ""
-
-#. i18n: file: kig/kigpartui.rc:131
-#. i18n: ectx: Menu (new_angle)
-#: rc.cpp:44
-msgid "&Angles"
-msgstr "कोण"
-
-#. i18n: file: kig/kigpartui.rc:136
-#. i18n: ectx: Menu (new_transformation)
-#: rc.cpp:47
-msgid "&Transformations"
-msgstr "रूपानान्तरण"
-
-#. i18n: file: kig/kigpartui.rc:154
-#. i18n: ectx: Menu (new_differentialgeometry)
-#: rc.cpp:50
-msgid "&Differential geometry"
-msgstr "ज्यामितिय विभेद"
-
-#. i18n: file: kig/kigpartui.rc:161
-#. i18n: ectx: Menu (new_test)
-#: rc.cpp:53
-msgid "T&ests"
-msgstr "परीक्षण"
-
-#. i18n: file: kig/kigpartui.rc:172
-#. i18n: ectx: Menu (new_other)
-#: rc.cpp:56
-msgid "&Other"
-msgstr "अन्य"
-
-#. i18n: file: kig/kigpartui.rc:186
-#. i18n: ectx: Menu (types)
-#: rc.cpp:59
-msgid "&Types"
-msgstr "प्रकार"
-
-#. i18n: file: kig/kigpartui.rc:191
-#. i18n: ectx: Menu (tools)
-#: rc.cpp:62
-msgid "&Tools"
-msgstr "उपकरण"
-
-#. i18n: file: kig/kigpartui.rc:204
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kig/kigui.rc:23
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:65 rc.cpp:107
-msgid "Main Toolbar"
-msgstr "मुख्य उपकरणपट्टी"
-
-#. i18n: file: kig/kigpartui.rc:218
-#. i18n: ectx: ToolBar (points_toolbar)
-#: rc.cpp:68
-msgid "Points"
-msgstr "बिन्दु"
-
-#. i18n: file: kig/kigpartui.rc:229
-#. i18n: ectx: ToolBar (line_toolbar)
-#: rc.cpp:71
-msgid "Lines"
-msgstr "रेखा"
-
-#. i18n: file: kig/kigpartui.rc:239
-#. i18n: ectx: ToolBar (vectseg_toolbar)
-#: rc.cpp:74
-msgid "Vectors && Segments"
-msgstr "भेक्टर र खण्ड"
-
-#. i18n: file: kig/kigpartui.rc:247
-#. i18n: ectx: ToolBar (circle_toolbar)
-#: rc.cpp:77
-msgid "Circles && Arcs"
-msgstr "वृत्त र चाप"
-
-#. i18n: file: kig/kigpartui.rc:255
-#. i18n: ectx: ToolBar (conic_toolbar)
-#: rc.cpp:80
-msgid "Conics"
-msgstr "कोनिक"
-
-#. i18n: file: kig/kigpartui.rc:264
-#. i18n: ectx: ToolBar (bezier_toolbar)
-#: rc.cpp:83
-#, fuzzy
-#| msgid "Hide a Curve"
-msgid "Bézier Curves"
-msgstr "वक्र लुकाउनुहोस्"
-
-#. i18n: file: kig/kigpartui.rc:274
-#. i18n: ectx: ToolBar (angles_toolbar)
-#: rc.cpp:86
-msgid "Angles"
-msgstr "कोण"
-
-#. i18n: file: kig/kigpartui.rc:279
-#. i18n: ectx: ToolBar (transformation_toolbar)
-#: rc.cpp:89
-msgid "Transformations"
-msgstr "रूपानान्तरण"
-
-#. i18n: file: kig/kigpartui.rc:293
-#. i18n: ectx: ToolBar (tests_toolbar)
-#: rc.cpp:92
-msgid "Tests"
-msgstr "परीक्षण"
-
-#. i18n: file: kig/kigpartui.rc:305
-#. i18n: ectx: ToolBar (rest_toolbar)
-#: rc.cpp:95
-msgid "Other Objects"
-msgstr "अन्य वस्तु"
-
-#. i18n: file: kig/kigpartui.rc:313
-#. i18n: ectx: ToolBar (view_toolbar)
-#: rc.cpp:98
-msgid "View"
-msgstr "दृश्य"
-
-#. i18n: file: kig/kigui.rc:13
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:104
-msgid "&Settings"
-msgstr "सेटिङ"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:42
-#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:95
-#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
-#: rc.cpp:113 rc.cpp:170
-msgid "Show Extra Frame"
-msgstr "अतिरिक्त फ्रेम देखाउनुहोस्"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:49
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:102
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:42
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#: rc.cpp:116 rc.cpp:137 rc.cpp:173 rc.cpp:179
-msgid "Show Axes"
-msgstr "अक्ष देखाउनुहोस्"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:147
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:88
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:49
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#: rc.cpp:119 rc.cpp:140 rc.cpp:167 rc.cpp:182
-msgid "Show Grid"
-msgstr "ग्रिड देखाउनुहोस्"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122
-msgid "Resolution"
-msgstr "रिजोल्युसन"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:37
-#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
-#: rc.cpp:125
-msgid "&Keep Aspect Ratio"
-msgstr "आकार अनुपात राख्नुहोस्"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:54
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:128
-msgid "Height:"
-msgstr "उचाइ:"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:110
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:131
-msgid "Width:"
-msgstr "चौडाइ:"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:143
-msgid "Output format"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:29
-#. i18n: ectx: property (text), widget (QRadioButton, psTricksRadioButton)
-#: rc.cpp:146
-msgid "PSTricks"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:36
-#. i18n: ectx: property (text), widget (QRadioButton, tikzRadioButton)
-#: rc.cpp:149
-msgid "Tikz/PGF"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:46
-#. i18n: ectx: property (text), widget (QRadioButton, asyRadioButton)
-#: rc.cpp:152
-msgid "Asymptote"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:56
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:155
-#, fuzzy
-#| msgid "Document to open"
-msgid "Document options"
-msgstr "खोल्ने कागजात"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:62
-#. i18n: ectx: property (text), widget (QRadioButton, pictureRadioButton)
-#: rc.cpp:158
-msgid "Picture only"
-msgstr ""
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:72
-#. i18n: ectx: property (text), widget (QRadioButton, documentRadioButton)
-#: rc.cpp:161
-#, fuzzy
-#| msgid "Zoom in on the document"
-msgid "Standalone document"
-msgstr "कागजातको जुम बढाउनुहोस्"
-
-#. i18n: file: misc/kigcoordinateprecisiondialog.ui:9
-#. i18n: ectx: property (text), widget (QCheckBox, m_defaultCheckBox)
-#: rc.cpp:185
-msgid "&Use default coordinate precision"
-msgstr ""
-
-#. i18n: file: misc/kigcoordinateprecisiondialog.ui:16
-#. i18n: ectx: property (text), widget (QLabel, m_precisionLabel)
-#: rc.cpp:188
-msgid "&Specify coordinate precision:"
-msgstr ""
-
-#. i18n: file: modes/edittypewidget.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:191
-msgid ""
-"Here you can modify the name, the description and the icon of this macro "
-"type."
-msgstr "यहाँ तपाईँले नाम, वर्णन र म्याक्रो प्रकारको प्रतिमा परिमार्जन गर्न सक्नुहुन्छ ।"
-
-#. i18n: file: modes/edittypewidget.ui:73
-#. i18n: ectx: property (text), widget (QLabel, label_2_3)
-#: rc.cpp:194
-msgid "Name:"
-msgstr "नाम:"
-
-#. i18n: file: modes/edittypewidget.ui:93
-#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
-#: rc.cpp:197
-msgid "Description:"
-msgstr "वर्णन:"
-
-#. i18n: file: modes/historywidget.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:200
-msgid "Description of the current step:"
-msgstr "हालको चरणको वर्णन:"
-
-#. i18n: file: modes/historywidget.ui:53
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonFirst)
-#: rc.cpp:203
-msgid "First step"
-msgstr "पहिलो चरण"
-
-#. i18n: file: modes/historywidget.ui:66
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonBack)
-#: rc.cpp:206
-msgid "One step back"
-msgstr "एक चरण पछाडि"
-
-#. i18n: file: modes/historywidget.ui:82
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:209
-msgid "/"
-msgstr "/"
-
-#. i18n: file: modes/historywidget.ui:96
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonNext)
-#: rc.cpp:212
-msgid "One step forward"
-msgstr "एक चरण अगाडि"
-
-#. i18n: file: modes/historywidget.ui:109
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonLast)
-#: rc.cpp:215
-msgid "Last step"
-msgstr "अन्तिम चरण"
-
-#. i18n: file: modes/typeswidget.ui:37
-#. i18n: ectx: property (toolTip), widget (QTreeView, typeList)
-#: rc.cpp:218
-msgid "Select types here..."
-msgstr "यहाँ प्रकार चयन गर्नुहोस्..."
-
-#. i18n: file: modes/typeswidget.ui:40
-#. i18n: ectx: property (whatsThis), widget (QTreeView, typeList)
-#: rc.cpp:221
-msgid ""
-"This is a list of the current macro types... You can select, edit, delete, "
-"export and import them..."
-msgstr ""
-"यो हालको म्याक्रो प्रकारको सूची हो... तपाईँले तिनीहरूलाई चयन, सम्पादन, मेट्न, निर्यात र "
-"आयात गर्न सक्नुहुन्छ..."
-
-#. i18n: file: modes/typeswidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
-#: rc.cpp:224
-msgid "Edit the selected type."
-msgstr "चयन गरेको प्रकार सम्पादन गर्नुहोस् ।"
-
-#. i18n: file: modes/typeswidget.ui:109
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonRemove)
-#: rc.cpp:230
-msgid "Delete all the selected types in the list."
-msgstr "सूचीमा सबै चयन गरेको प्रकार मेट्नुहोस् ।"
-
-#. i18n: file: modes/typeswidget.ui:151
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonExport)
-#: rc.cpp:236
-msgid "Export all the selected types to a file."
-msgstr "फाइलमा सबै चयन गरेको प्रकार निर्यात गर्नुहोस् ।"
-
-#. i18n: file: modes/typeswidget.ui:161
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonImport)
-#: rc.cpp:242
-msgid "Import macros that are contained in one or more files."
-msgstr "एउटा वा बढी फाइलमा रहेको म्याक्रो आयात गर्नुहोस् ।"
-
-#. i18n: file: modes/typeswidget.ui:164
-#. i18n: ectx: property (text), widget (KPushButton, buttonImport)
-#: rc.cpp:245
-msgid "&Import..."
-msgstr "आयात गर्नुहोस्..."
-
-#: rc.cpp:246
-msgid "Circle by Center && Line"
-msgstr "केन्द्र र रेखाद्वारा वृत्त"
-
-#: rc.cpp:247
-msgid "A circle constructed by its center and tangent to a given line"
-msgstr "यसको केन्द्र र दिएको रेखामा ट्यान्जेन्ट भएको वृत्त रचना गरियो"
-
-#: rc.cpp:248
-msgid "Construct a circle tangent to this line"
-msgstr "यो रेखामा ट्यान्जेन्ट वृत्त रचना गर्नुहोस्"
-
-#: rc.cpp:250
-msgid "Select the line that the new circle should be tangent to..."
-msgstr "नयाँ वृत्तमा ट्यान्जेन्ट हुँने रेखा चयन गर्नुहोस्..."
-
-#: rc.cpp:252
-msgid "Circle by Point && Segment (as the Diameter)"
-msgstr "बिन्दु र खण्डद्वारा वृत्त (व्यास जस्तै)"
-
-#: rc.cpp:253
-msgid ""
-"A circle defined by its center and the length of a segment as the diameter"
-msgstr "व्यास जस्तै खण्डको लम्बाइ र त्यसको केन्द्रद्वारा परिभाषित वृत्त"
-
-#: rc.cpp:255
-msgid ""
-"Construct a circle with the diameter given by the length of this segment"
-msgstr "यो खण्डको लम्बाइद्वारा दिएको व्याससँग वृत्त रचना गर्नुहोस्"
-
-#: rc.cpp:257
-msgid "Select the segment whose length gives the diameter of the new circle..."
-msgstr "नयाँ वृत्तको व्यास दिने लम्बाइको खण्ड चयन गर्नुहोस्..."
-
-#: rc.cpp:258
-msgid "Equilateral Triangle"
-msgstr "समभुजीय त्रिभुज"
-
-#: rc.cpp:259
-msgid "Equilateral triangle with given two vertices"
-msgstr "दिएको दुई भेक्टरसँग समभुजीय त्रिभुज"
-
-#: rc.cpp:260
-msgid "Evolute"
-msgstr "इभोलुट"
-
-#: rc.cpp:261
-msgid "Evolute of a curve"
-msgstr "वक्रको इभोलुट"
-
-#: rc.cpp:262
-msgid "Evolute of this curve"
-msgstr "यो वक्रको इभोलुट"
-
-#: rc.cpp:264
-msgid "Osculating Circle"
-msgstr "ओस्कुलेटिङ वृत्त"
-
-#: rc.cpp:265
-msgid "Osculating circle of a curve at a point"
-msgstr "बिन्दुमा वक्रको ओस्कुलेटिङ वृत्त"
-
-#: rc.cpp:266
-msgid "Osculating circle of this curve"
-msgstr "यो वक्रको ओस्कुलेटिङ वृत्त"
-
-#: rc.cpp:267
-msgid "Osculating circle at this point"
-msgstr "यो बिन्दुमा ओस्कुलेटिङ बिन्दु"
-
-#: rc.cpp:269
-msgid "Select the point..."
-msgstr "बिन्दु चयन गर्नुहोस्..."
-
-#: rc.cpp:270
-msgid "Segment Axis"
-msgstr "खण्ड अक्ष"
-
-#: rc.cpp:271
-msgid "The perpendicular line through a given segment's mid point."
-msgstr "दिएको खण्डको मध्य बिन्दुबाट समानान्तर रेखा ।"
-
-#: rc.cpp:272
-msgid "Construct the axis of this segment"
-msgstr "यो खण्डको अक्ष रचना गर्नुहोस्"
-
-#: rc.cpp:273
-msgid "Select the segment of which you want to draw the axis..."
-msgstr "तपाईँले अक्ष कोर्न चाहनुभएको खण्ड चयन गर्नुहोस्..."
-
-#: rc.cpp:274
-msgid "Square"
-msgstr "वर्ग"
-
-#: rc.cpp:275
-msgid "Square with two given adjacent vertices"
-msgstr "दिएको दुई निकटवर्ती कोणीय बिन्दु भएको वर्ग"
-
-#: rc.cpp:276
-msgid "Vector Difference"
-msgstr "भेक्टर फरक"
-
-#: rc.cpp:277
-msgid "Construct the vector difference of two vectors."
-msgstr "दुई भेक्टरहरूको भेक्टर फरक रचना गर्नुहोस्"
-
-#: rc.cpp:278
-msgid "Construct the vector difference of this vector and another one."
-msgstr "यो भेक्टर र अन्यको भेक्टर फरक रचना गर्नुहोस् ।"
-
-#: rc.cpp:279
-msgid "Construct the vector difference of the other vector and this one."
-msgstr "अन्य भेक्टर र यसको भेक्टर फरक रचना गर्नुहोस् ।"
-
-#: rc.cpp:280
-msgid "Construct the vector difference starting at this point."
-msgstr "यो बिन्दुमा सुरु भेक्टर फरक रचना गर्नुहोस् ।"
-
-#: rc.cpp:281
-msgid ""
-"Select the first of the two vectors of which you want to construct the "
-"difference..."
-msgstr "तपाईँले फरक रचना गर्न चाहनुभएको दुई भेक्टरको पहिलो चयन गर्नुहोस्..."
-
-#: rc.cpp:282
-msgid ""
-"Select the other of the two vectors of which you want to construct the "
-"difference..."
-msgstr "तपाईँले रचना गर्न चाहनुभएको दुई भेक्टरबाट अन्य चयन गर्नुहोस्..."
-
-#: rc.cpp:283
-msgid "Select the point to construct the difference vector in..."
-msgstr "फरक भेक्टरमा रचना गर्न बिन्दु चयन गर्नुहोस्..."
-
 #: scripting/newscriptwizard.cc:63
 msgid "New Script"
 msgstr "नयाँ स्क्रिप्ट"
@@ -5916,190 +5676,430 @@ msgstr ""
 "वैध वस्तु उत्पन्न गर्दैन । कृपया स्क्रिप्ट समाधान गर्नुहोस् र समाप्त बटनलाई फेरि क्लिक गर्नुहोस् "
 "।"
 
-#. i18n: file: tips:2
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:3
-msgid ""
-"<p>You can control a kig construction by means of a \"pykig\" \n"
-"python script, that can be executed with the command \n"
-"<code>pykig.py</code>.  Here is a nice example \n"
-"(<code>hexagons.kpy</code>) you can try:\n"
-"<code><pre>\n"
-"kigdocument.hideobjects()\n"
-"def hexagons (c, v, n):\n"
-"  hexagon = PolygonBCV (c, v, 6)\n"
-"  if n &lt;= 0:\n"
-"    hexagon.show()\n"
-"    for i in range(6): \n"
-"      PolygonSide (hexagon, i, True)\n"
-"    return\n"
-"  cnew = MidPoints (c, v)\n"
-"  hexagons (cnew, v, n-1)\n"
-"  for k in [2,4]:\n"
-"    v1 = PolygonVertex (hexagon, k)\n"
-"    cnew = MidPoints (c, v1)\n"
-"    hexagons (cnew, v1, n-1)\n"
-"hexagons (Point(0,0), Point(1,0), 5)\n"
-"</pre></code>\n"
-msgstr ""
-"<p>तपाईँ \"pykig\" \n"
-"पाइथोन स्क्रिप्ट मार्फत किग निर्माण नियन्त्रण गर्न सक्नुहुन्छ, जुन आदेश \n"
-"<code>pykig.py</code> द्वारा कार्यान्वयन गर्न सकिन्छ ।  यहाँ राम्रो उदाहरण छ \n"
-"(<code>hexagons.kpy</code>) तपाईँ प्रयास गर्न सक्नुहुन्छ:\n"
-"<code><pre>\n"
-"kigdocument.hideobjects()\n"
-"def hexagons (c, v, n):\n"
-"  hexagon = PolygonBCV (c, v, 6)\n"
-"  if n &lt;= 0:\n"
-"    hexagon.show()\n"
-"    for i in range(6): \n"
-"      PolygonSide (hexagon, i, True)\n"
-"    return\n"
-"  cnew = MidPoints (c, v)\n"
-"  hexagons (cnew, v, n-1)\n"
-"  for k in [2,4]:\n"
-"    v1 = PolygonVertex (hexagon, k)\n"
-"    cnew = MidPoints (c, v1)\n"
-"    hexagons (cnew, v1, n-1)\n"
-"hexagons (Point(0,0), Point(1,0), 5)\n"
-"</pre></code>\n"
+#: kig/kig_commands.cpp:100
+#, fuzzy, kde-format
+#| msgid "Remove %1 Objects"
+msgid "Remove %1 Object"
+msgid_plural "Remove %1 Objects"
+msgstr[0] "%1 वस्तु हटाउनुहोस्"
+msgstr[1] "%1 वस्तु हटाउनुहोस्"
 
-#. i18n: file: tips:28
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:28
+#: kig/kig_commands.cpp:112
+#, fuzzy, kde-format
+#| msgid "Add %1 Objects"
+msgid "Add %1 Object"
+msgid_plural "Add %1 Objects"
+msgstr[0] "%1 वस्तु थप्नुहोस्"
+msgstr[1] "%1 वस्तु थप्नुहोस्"
+
+#: kig/kig.cpp:90
+msgid "Could not find the necessary Kig library, check your installation."
+msgstr "आवश्यक किग लाइब्रेरी फेला पार्न सकेन, तपाईँको स्थापना जाँच गर्नुहोस् ।"
+
+#: kig/kig.cpp:203
+#, kde-format
+msgid "Save changes to document %1?"
+msgstr "परिवर्तनहरू %1 कागजातमा बचत गर्न चाहनुहुन्छ ?"
+
+#: kig/kig.cpp:204
+msgid "Save Changes?"
+msgstr "परिवर्तनहरू बचत गर्नुहुन्छ ?"
+
+#: kig/kig.cpp:239
+msgid ""
+"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
+"seg *.fgeo *.fig)\n"
+"*.kig|Kig Documents (*.kig)\n"
+"*.kigz|Compressed Kig Documents (*.kigz)\n"
+"*.kgeo|KGeo Documents (*.kgeo)\n"
+"*.seg|KSeg Documents (*.seg)\n"
+"*.fgeo|Dr. Geo Documents (*.fgeo)\n"
+"*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
+msgstr ""
+"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|सबै समर्थित फाइलहरू (*.kig *.kigz *.seg *."
+"fgeo *.fig)\n"
+"*.kig|किग कागजातहरू (*.kig)\n"
+"*.kigz|सङ्कुचित किग कागजातहरू (*.kigz)\n"
+"*.kgeo|केडीई भौगोलिक कागजातहरू (*.kgeo)\n"
+"*.seg|केडीई सेग कागजातहरू (*.seg)\n"
+"*.fgeo|Dr. जियो कागजातहरू (*.fgeo)\n"
+"*.fig *.FIG|काब्री कागजातहरू (*.fig *.FIG)"
+
+#: kig/kig_part.cpp:86
+msgid "KigPart"
+msgstr "किग भाग"
+
+#: kig/kig_part.cpp:90
+msgid "&Set Coordinate System"
+msgstr "समकक्ष प्रणाली सेट गर्नुहोस्"
+
+#: kig/kig_part.cpp:131
+msgid "Kig Options"
+msgstr "किग विकल्प"
+
+#: kig/kig_part.cpp:135
+msgid "Show grid"
+msgstr "ग्रिड देखाउनुहोस्"
+
+#: kig/kig_part.cpp:138
+msgid "Show axes"
+msgstr "अक्ष देखाउनुहोस्"
+
+#: kig/kig_part.cpp:227
+msgid "Invert Selection"
+msgstr "चयन उल्टाउनुहोस्"
+
+#: kig/kig_part.cpp:234
+msgid "&Delete Objects"
+msgstr "वस्तु मेट्नुहोस्"
+
+#: kig/kig_part.cpp:238
+msgid "Delete the selected objects"
+msgstr "चयन गरेको वस्तु मेट्नुहोस्"
+
+#: kig/kig_part.cpp:240
+msgid "Cancel Construction"
+msgstr "रचना रद्द गर्नुहोस्"
+
+#: kig/kig_part.cpp:245
+msgid "Cancel the construction of the object being constructed"
+msgstr "रचना गरिरहेको वस्तुको रचना रद्द गर्नुहोस्"
+
+#: kig/kig_part.cpp:248
+msgid "Repeat Construction"
+msgstr "रचना दोहोर्याउनुहोस्"
+
+#: kig/kig_part.cpp:253
+msgid "Repeat the last construction (with new data)"
+msgstr "(नयाँ डेटासँगै) अन्तिम रचना दोहोर्याउनुहोस्"
+
+#: kig/kig_part.cpp:259
+msgid "Show all hidden objects"
+msgstr "सबै लुकाइएको वस्तु देखाउनुहोस्"
+
+#: kig/kig_part.cpp:262
+msgid "&New Macro..."
+msgstr "नयाँ म्याक्रो..."
+
+#: kig/kig_part.cpp:265
+msgid "Define a new macro"
+msgstr "नयाँ म्याक्रो परिभाषित गर्नुहोस्"
+
+#: kig/kig_part.cpp:267
+msgid "Manage &Types..."
+msgstr "प्रकार व्यवस्थापन गर्नुहोस्..."
+
+#: kig/kig_part.cpp:270
+msgid "Manage macro types."
+msgstr "म्याक्रो प्रकार व्यवस्थापन गर्नुहोस् ।"
+
+#: kig/kig_part.cpp:272
+msgid "&Browse History..."
+msgstr "इतिहास ब्राउज गर्नुहोस्..."
+
+#: kig/kig_part.cpp:275
+msgid "Browse the history of the current construction."
+msgstr "हालको संरचनाको इतिहास ब्राउज गर्नुहोस् ।"
+
+#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
+msgid "Zoom in on the document"
+msgstr "कागजातको जुम बढाउनुहोस्"
+
+#: kig/kig_part.cpp:287 kig/kig_part.cpp:288
+msgid "Zoom out of the document"
+msgstr "कागजातको जुम घटाउनुहोस्"
+
+#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
+msgid "Recenter the screen on the document"
+msgstr "कागजातमा स्क्रिन पुन: केन्द्रित गर्नुहोस्"
+
+#: kig/kig_part.cpp:298 kig/kig_part.cpp:299
+msgid "View this document full-screen."
+msgstr "यो कागजात पुरा पर्दामा हेर्नुहोस्"
+
+#: kig/kig_part.cpp:302
+msgid "&Select Shown Area"
+msgstr "देखिएको क्षेत्र चयन गर्नुहोस्"
+
+#: kig/kig_part.cpp:305 kig/kig_part.cpp:306
+msgid "Select the area that you want to be shown in the window."
+msgstr "सञ्झ्यालमा देखिने बनाउन चाहनुभएको क्षेत्र चयन गर्नुहोस्"
+
+#: kig/kig_part.cpp:308
+msgid "S&elect Zoom Area"
+msgstr "जुम क्षेत्र चयन गर्नुहोस्"
+
+#: kig/kig_part.cpp:314
 #, fuzzy
-#| msgid ""
-#| "<p>You can repeat the latest construction simply by pressing the key\n"
-#| "'Z'; this cames very handy if you need to construct a sequence\n"
-#| "of objects with the same construction, especially if there is\n"
-#| "no shortcut for that construction.</p>\n"
-msgid ""
-"<p>You can repeat the latest construction simply by pressing the key\n"
-"'Z'; this comes in very handy if you need to construct a sequence\n"
-"of objects with the same construction, especially if there is\n"
-"no shortcut for that construction.</p>\n"
-msgstr ""
-"<p>तपाईँ सामान्य रूपमा 'Z' कुञ्जी थिचेर पछिल्लो निर्माण दोहोर्याउन सक्नुहुन्छ;\n"
-"यदि तपाईँलाई एउटै निर्माणसँग वस्तुहरूको क्रम निर्माण गर्न आवश्यक भयो भने\n"
-"खास गरेर त्यहाँ त्यो निर्माणका लागि कुनै सर्टकट नभएमा,\n"
-"यो धेरै कुशल भएर आउँछ ।</p>\n"
+#| msgid "Set &Coordinate..."
+msgid "Set Coordinate &Precision..."
+msgstr "समकक्ष सेट गर्नुहोस्..."
 
-#. i18n: file: tips:37
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:36
-msgid ""
-"<p>One of the most powerful tools in Kig are the menus that you can\n"
-"enter by right-clicking on an object, or on some empty space in the\n"
-"document.  You can use them to give objects names, change their colors\n"
-"and line styles, and lots of other interesting things.</p>\n"
+#: kig/kig_part.cpp:316
+msgid "Set the floating point precision of coordinates in the document. "
 msgstr ""
-"<p>किगको सबै भन्दा महत्वपूर्ण उपकरण मध्येको मेनुलाई \n"
-"तपाईँले वस्तुमा बायाँ क्लिक गरेर वा कागजातको खाली स्थानमा क्लिक गरेर\n"
-"प्रविष्ट गर्न सक्नुहुन्छ ।  तपाईँले तिनीहरूलाई वस्तुको नाम, तिनीहरूको रङ र लाइन शैली "
-"परिवर्तन गर्न\n"
-"र अन्य धेरै आकर्षक कुराहरू गर्न प्रयोग गर्न सक्नुहुन्छ ।</p>\n"
 
-#. i18n: file: tips:46
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:44
-msgid ""
-"<p>You can construct new points without using the menu or the toolbar, "
-"simply\n"
-"clicking somewhere on the Kig document with the <em>middle mouse\n"
-"button</em>.</p>\n"
-msgstr ""
-"<p>तपाईँले मेनु वा उपकरणपट्टीको प्रयोग बिना नै नयाँ बिन्दुहरू रचना गर्न सक्नुहुन्छ, "
-"सजिलोसँग \n"
-"किग कागजातको कतै <em>मध्य माउस\n"
-"बटनले क्लिक गरेर पनि रचना गर्न सक्नुहुन्छ</em>।</p>\n"
+#: kig/kig_part.cpp:319
+msgid "Show &Grid"
+msgstr "ग्रिड देखाउनुहोस्"
 
-#. i18n: file: tips:54
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:51
-msgid ""
-"<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
-"<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
-"and <em>Cabri&#8482;</em> files.</p>\n"
-msgstr ""
-"<p>किगले धेरै फाइल ढाँचाहरू खोल्न सक्दछ: यसको फाइलहरू (<code>.kig</code> फाइल),\n"
-"<em>KGeo</em> फाइल, <em>KSeg</em> फाइल र आंशिक रूपमा, <em>Dr. Geo</em>\n"
-"र <em>Cabri&#8482;</em> फाइल</p>\n"
+#: kig/kig_part.cpp:321
+msgid "Show or hide the grid."
+msgstr "ग्रिड देखाउनुहोस् वा लुकाउनुहोस् ।"
 
-#. i18n: file: tips:62
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:58
-msgid ""
-"<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
-"constructions you can use in your documents: open the <em>Objects</em> \n"
-"menu to see them all.</p>\n"
-msgstr ""
-"<p>किगसँग ८० भन्दा बढी निर्माणसँग २० वस्तुहरू र १० स्थानान्तरणहरू छन्\n"
-"जुन तपाईँ आफ्नो कागजातमा प्रयोग गर्न सक्नुहुन्छ: तिनीहरू सबैलाई हेर्न <em>वस्तु</em> \n"
-"मेनु खोल्नुहोस् ।</p>\n"
+#: kig/kig_part.cpp:325
+msgid "Show &Axes"
+msgstr "अक्ष देखाउनुहोस्"
 
-#. i18n: file: tips:70
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:65
-msgid ""
-"<p>You can use the selected objects to start the construction of an object\n"
-"which requires the selected objects as arguments. For example, if you have "
-"two\n"
-"points selected, you can choose <em>Start->Circle by Three Points</em> from "
-"the\n"
-"popup menu to start constructing a circle by three points.</p>\n"
-msgstr ""
-"<p>तपाईँले वस्तु रचना सुरु गर्न चयन गरेको वस्तु प्रयोग गर्न सक्नुहुन्छ\n"
-"जसलाई चयन गरेको वस्तु तर्कको रूपमा हुन आवश्यक हुन्छ । उदाहरणका लागि, यदि तपाईँसँग दुई "
-"बिन्दु चयन छ भने\n"
-", तपाईँले तीन बिन्दु वृत्त रचना सुरु गर्न \n"
-"पपअप मेनुबाट<em>सुरु गर्नुहोस्->तीन बिन्दु वृत्त</em> छनोट गर्न सक्नुहुन्छ ।</p>\n"
+#: kig/kig_part.cpp:327
+msgid "Show or hide the axes."
+msgstr "अक्ष देखाउनुहोस् वा लुकाउनुहोस् ।"
 
-#. i18n: file: tips:79
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:73
+#: kig/kig_part.cpp:331
+msgid "Wear Infrared Glasses"
+msgstr "अवरक्त ग्लास लगाउनुहोस्"
+
+#: kig/kig_part.cpp:333
 #, fuzzy
-#| msgid ""
-#| "<p>Kig can extends its object set using external macros. You can find "
-#| "some\n"
-#| "interesting macro on Kig website:\n"
-#| "<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
-msgid ""
-"<p>Kig can extends its object set using external macros. You can find some\n"
-"interesting macros on the Kig website:\n"
-"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
-msgstr ""
-"<p>किगले बाह्य म्याक्रोहरू प्रयोग गरेर यसको वस्तु सेट विस्तार गर्न सक्दछ । तपाईँले\n"
-"केही रमाइला म्याक्रोहरू किगको:\n"
-"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>वेबसाइटमा फेला "
-"पार्न सक्नुहुन्छ ।</p>\n"
+#| msgid "Enable/disable hidden objects visibility."
+msgid "Enable/disable hidden objects' visibility."
+msgstr "लुकाइएको वस्तुको दृश्यात्मकता सक्षम पार्नुहोस्/अक्षम पार्नुहोस् ।"
 
-#. i18n: file: tips:87
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:80
-msgid ""
-"<p>If you have more than one object under the mouse, and you want to select "
-"any\n"
-"of them, you can click with the <em>left mouse button</em>, while holding "
-"the\n"
-"<em>Shift</em> key, to get a list of the objects under the mouse cursor "
-"which\n"
-"you can then select from.</p>\n"
-msgstr ""
-"<p>यदि तपाईँसँग माउस तल एक भन्दा धेरै वस्तु छ र तपाईँले तिनीहरू मध्ये \n"
-"कुनै चयन गर्न चाहनुहुन्छ भने, माउस कर्सर मुनिको वस्तुको सूची प्राप्त गर्न तपाईँले\n"
-"<em>सिफ्ट</em> कुञ्जी थिचेर,  <em>बायाँ माउस बटन</em> सँग क्लिक गर्न सक्नुहुन्छ, जसलाई \n"
-"तपाईँले यसबाट चयन गर्न सक्नुहुन्छ ।</p>\n"
+#: kig/kig_part.cpp:365
+#, kde-format
+msgid "Repeat Construction (%1)"
+msgstr "रचना (%1) दोहोर्याउनुहोस्"
 
-#. i18n: file: tips:96
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:88
+#: kig/kig_part.cpp:367
+#, kde-format
+msgid "Repeat %1 (with new data)"
+msgstr "(नयाँ डेटासँगै) %1 दोहोर्याउनुहोस्"
+
+#: kig/kig_part.cpp:396
+#, kde-format
 msgid ""
-"<p>When you construct a locus, you can click on it with the <em>right</em> "
-"mouse\n"
-"button and select <em>cartesian equation</em> to see its cartesian "
-"equation, \n"
-"whenever it is an algebraic curve of low degree.</p>\n"
+"The file \"%1\" you tried to open does not exist. Please verify that you "
+"entered the correct path."
 msgstr ""
+"तपाईँले खोल्न प्रयास गर्नुभएको \"%1\" फाइल अवस्थित छैन । कृपया सही मार्ग प्रविष्ट गरेकोमा "
+"जाँच गर्नुहोस् ।"
+
+#: kig/kig_part.cpp:398
+msgid "File Not Found"
+msgstr "फाइल फेला परेन"
+
+#: kig/kig_part.cpp:416
+#, kde-format
+msgid ""
+"You tried to open a document of type \"%1\"; unfortunately, Kig does not "
+"support this format. If you think the format in question would be worth "
+"implementing support for, you can always ask us nicely on mailto:pino@kde."
+"org or do the work yourself and send me a patch."
+msgstr ""
+"तपाईँले \"%1\" प्रकारको कागजात खोल्न प्रयास गर्नुभयो; दुर्भाग्यवश, किगले यस्तो ढाँचालाई "
+"समर्थन गर्दैन । यदि तपाईँलाई प्रश्नमा ढाँचा समर्थन कार्यान्वयनमा महत्वपूर्ण छ जस्तो लागेमा, "
+"तपाईँले हामिहरूलाई mailto:pino@kde.org मा सोध्न सक्नुहुन्छ वा तपाईँले आफैले गरेर मलाई "
+"प्याच पठाउन सक्नुहुन्छ ।"
+
+#: kig/kig_part.cpp:422 kig/kig_part.cpp:465
+msgid "Format Not Supported"
+msgstr "ढाँचा समर्थन गरेन"
+
+#: kig/kig_part.cpp:463
+msgid ""
+"Kig does not support saving to any other file format than its own. Save to "
+"Kig's format instead?"
+msgstr ""
+"किगले उसको ढाँचा बाहेकको अन्य कुनै ढाँचामा बचत गर्न समर्थन गर्दैन । यसको सट्टामा किगको "
+"ढाँचामा बचत गर्नुहुन्छ ?"
+
+#: kig/kig_part.cpp:465
+msgid "Save Kig Format"
+msgstr "किगको ढाँचामा बचत गर्नुहोस्"
+
+#: kig/kig_part.cpp:700
+msgid ""
+"*.kig|Kig Documents (*.kig)\n"
+"*.kigz|Compressed Kig Documents (*.kigz)"
+msgstr ""
+"*.kig|किग कागजात (*.kig)\n"
+"*.kigz|सङ्कुचित किग कागजात (*.kigz)"
+
+#: kig/kig_part.cpp:869
+msgid "Print Geometry"
+msgstr "ज्यामिति मुद्रण गर्नुहोस्"
+
+#: kig/kig_part.cpp:936
+#, kde-format
+msgid "Hide %1 Object"
+msgid_plural "Hide %1 Objects"
+msgstr[0] "%1 वस्तु लुकाउनुहोस्"
+msgstr[1] "%1 वस्तुहरू लुकाउनुहोस्"
+
+#: kig/kig_part.cpp:955
+#, kde-format
+msgid "Show %1 Object"
+msgid_plural "Show %1 Objects"
+msgstr[0] "%1 वस्तु देखाउनुहोस्"
+msgstr[1] "%1 वस्तुहरू देखाउनुहोस्"
+
+#: kig/kig_view.cpp:220
+msgid "Zoom In"
+msgstr "जुम बढाउनुहोस्"
+
+#: kig/kig_view.cpp:240
+msgid "Zoom Out"
+msgstr "जुम घटाउनुहोस्"
+
+#: kig/kig_view.cpp:520
+msgid "Recenter View"
+msgstr "पुन: केन्द्र दृश्य"
+
+#: kig/kig_view.cpp:542
+msgid "Select the rectangle that should be shown."
+msgstr "देखाउने त्रिभुज चयन गर्नुहोस्"
+
+#: kig/kig_view.cpp:550 kig/kig_view.cpp:598
+msgid "Change Shown Part of Screen"
+msgstr "पर्दाको देखिने भाग परिवर्तन गर्नुहोस्"
+
+#: kig/kig_view.cpp:587
+msgid "Select Zoom Area"
+msgstr "जुम क्षेत्र चयन गर्नुहोस्"
+
+#: kig/kig_view.cpp:588
+msgid ""
+"Select the zoom area by entering the coordinates<br />of the upper left "
+"corner and the lower right corner."
+msgstr ""
+"माथिल्लो बायाँ कुना र तल्लो दायाँ कुनाको समन्वय प्रविष्ट गरेर जुम क्षेत्र चयन गर्नुहोस् ।"
+
+#: kig/main.cpp:98
+msgid "Kig"
+msgstr "किग"
+
+#: kig/main.cpp:104
+msgid ""
+"Do not show a GUI. Convert the specified file to the native Kig format. "
+"Output goes to stdout unless --outfile is specified."
+msgstr ""
+"GUI नदेखाउनुहोस् । निर्दिष्ट गरेको फाइललाई किग ढाँचामा रूपान्तरण गर्नुहोस् । आउट फाइल "
+"निर्दिष्ट नगरेमा निर्गत stdout मा जान्छ ।"
+
+#: kig/main.cpp:106
+msgid ""
+"File to output the created native file to. '-' means output to stdout. "
+"Default is stdout as well."
+msgstr ""
+"मौलिक फाइललाई निर्गत फाइल '-' को अर्थ stdout मा निर्गत हो । पूर्वनिर्धारित पनि "
+"stdout हो ।"
+
+#: kig/main.cpp:107
+msgid "Document to open"
+msgstr "खोल्ने कागजात"
+
+#: misc/coordinate_system.cpp:325
+msgid ""
+"Enter coordinates in the following format: \"x;y\",\n"
+"where x is the x coordinate, and y is the y coordinate."
+msgstr ""
+"समकक्षलाई निम्न ढाँचा: \"x;y\" मा प्रविष्ट गर्नुहोस्,\n"
+"जहाँ x एक्स समकक्ष र y वाइ समकक्ष हो ।"
+
+#: misc/coordinate_system.cpp:331
+msgid ""
+"Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
+"the x coordinate, and y is the y coordinate."
+msgstr ""
+"समकक्षहरूलाई निम्न ढाँचामा प्रविष्ट गर्नुहोस्: <b>\"x;y\"</b>,<br />जहाँ x, x समकक्ष हो "
+"र y, य समकक्ष हो ।"
+
+#: misc/coordinate_system.cpp:371
+msgid ""
+"Enter coordinates in the following format: \"r; θ°\",\n"
+"where r and θ are the polar coordinates."
+msgstr ""
+"समकक्षहरू : \"r; θ°\" ढाँचामा प्रविष्ट गर्नुहोस्,\n"
+"जहाँ r र θ पोलार समकक्ष हुन् ।"
+
+#: misc/coordinate_system.cpp:378
+msgid ""
+"Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
+"and θ are the polar coordinates."
+msgstr ""
+"समकक्षहरू निम्न ढाँचामा प्रविष्ट गर्नुहोस्: <b>\"r; θ°\"</b>,<br />जहाँ r र θ पोलार "
+"समकक्षहरू हुन् ।"
+
+#: misc/coordinate_system.cpp:530
+msgid "&Euclidean"
+msgstr "युक्लिडेयन"
+
+#: misc/coordinate_system.cpp:531
+msgid "&Polar"
+msgstr "पोलार"
+
+#: misc/coordinate_system.cpp:581
+msgid "Set Euclidean Coordinate System"
+msgstr "युक्लिडेयन समकक्ष प्रणाली सेट गर्नुहोस्"
+
+#: misc/coordinate_system.cpp:583
+msgid "Set Polar Coordinate System"
+msgstr "पोलार समकक्ष प्रणाली सेट गर्नुहोस्"
+
+#: modes/typesdialog.cpp:130
+msgid "Macro"
+msgstr "म्याक्रो"
+
+#: modes/typesdialog.cpp:313
+msgid "Type"
+msgstr "प्रकार"
+
+#: modes/typesdialog.cpp:315
+msgid "Description"
+msgstr "वर्णन"
+
+#: modes/typesdialog.cpp:339
+msgid "Manage Types"
+msgstr "प्रकार व्यवस्थापन गर्नुहोस्"
+
+#: modes/typesdialog.cpp:426
+#, kde-format
+msgid "Are you sure you want to delete this type?"
+msgid_plural "Are you sure you want to delete these %1 types?"
+msgstr[0] "तपाईँ यस प्रकारको मेट्न निश्चित हुनुहुन्छ ?"
+msgstr[1] "तपाईँ %1 प्रकार मेट्न निश्चित हुनुहुन्छ ?"
+
+#: modes/typesdialog.cpp:428
+msgid "Are You Sure?"
+msgstr "तपाईँ निश्चित हुनुहुन्छ ?"
+
+#: modes/typesdialog.cpp:451 modes/typesdialog.cpp:466
+msgid ""
+"*.kigt|Kig Types Files\n"
+"*|All Files"
+msgstr ""
+"*.kigt|किग प्रकार फाइल\n"
+"*|सबै फाइल"
+
+#: modes/typesdialog.cpp:451
+msgid "Export Types"
+msgstr "निर्यात प्रकार"
+
+#: modes/typesdialog.cpp:466
+msgid "Import Types"
+msgstr "आयात प्रकार"
+
+#: modes/typesdialog.cpp:494
+msgid ""
+"There is more than one type selected. You can only edit one type at a time. "
+"Please select only the type you want to edit and try again."
+msgstr ""
+"त्यहाँ एक भन्दा बढी प्रकार चयन गरिएको छ । तपाईँले एक समयमा केबल एउटा मात्र सम्पादन "
+"गर्न सक्नुहुन्छ । तपाईँले चाहनुभएको प्रकार मात्र चयन गर्नुहोस् र फेरि प्रयास गर्नुहोस् ।"
+
+#: modes/typesdialog.cpp:497
+msgid "More Than One Type Selected"
+msgstr "एक भन्दा बढी प्रकार चयन गरियो"
 
 #, fuzzy
 #~| msgid "Construct a circle with this center"

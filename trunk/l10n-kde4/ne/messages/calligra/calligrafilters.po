@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 03:01+0200\n"
+"POT-Creation-Date: 2012-08-19 02:35+0200\n"
 "PO-Revision-Date: 2007-07-29 13:39+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,6 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "X-Generator: KBabel 1.11.4\n"
 
+#: flow/imageexport/flow_imageexportdialog.cpp:35
+msgid "Export to Image"
+msgstr "छविमा निर्यात"
+
+#: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
+msgid "Failed to read data."
+msgstr "डेटा पढ्न असफल भयो ।"
+
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
 #: kchart/genericimageexport/genericimageexport.cpp:68
@@ -25,19 +34,10 @@ msgstr ""
 msgid "Export Error"
 msgstr "निर्यात त्रुटि"
 
-#: flow/imageexport/flow_imageexport.cpp:91
-#: kchart/genericimageexport/genericimageexport.cpp:67
-msgid "Failed to read data."
-msgstr "डेटा पढ्न असफल भयो ।"
-
 #: flow/imageexport/flow_imageexport.cpp:102
 #: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "विकृत एक्सएमएल डेटा ।"
-
-#: flow/imageexport/flow_imageexportdialog.cpp:35
-msgid "Export to Image"
-msgstr "छविमा निर्यात"
 
 #: karbon/eps/EpsExportDlg.cpp:37
 msgid "EPS Export"
@@ -108,16 +108,9 @@ msgstr "पीएनजी निर्यात त्रुटि"
 
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
-#: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
-#: sheets/xlsx/XlsxXmlDocumentReader.cpp:134
-#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:113
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:457
-#: sheets/xlsx/XlsxXmlTableReader.cpp:78
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
-#: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: stage/pptx/PptxXmlSlideReader.cpp:333
+#: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: words/docx/DocxXmlCommentsReader.cpp:89
-#: words/docx/DocxXmlDocumentReader.cpp:201
 #: words/docx/DocxXmlEndnoteReader.cpp:90
 #: words/docx/DocxXmlFontTableReader.cpp:89
 #: words/docx/DocxXmlFooterReader.cpp:95
@@ -125,6 +118,13 @@ msgstr "पीएनजी निर्यात त्रुटि"
 #: words/docx/DocxXmlHeaderReader.cpp:95
 #: words/docx/DocxXmlNumberingReader.cpp:87
 #: words/docx/DocxXmlSettingsReader.cpp:87
+#: words/docx/DocxXmlDocumentReader.cpp:201
+#: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
+#: sheets/xlsx/XlsxXmlDocumentReader.cpp:134
+#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:113
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:457
+#: sheets/xlsx/XlsxXmlTableReader.cpp:78
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -220,6 +220,10 @@ msgstr "फाइलबाट पढ्न सकिएन ।"
 msgid "Could not find target for relationship \"%1\" in file \"%2\""
 msgstr "फाइलबाट पढ्न सकिएन ।"
 
+#: libmsooxml/MsooXmlUtils.cpp:180
+msgid "QXml"
+msgstr "क्युएक्सएमएल"
+
 #: libmsooxml/MsooXmlUtils.cpp:179
 #, fuzzy, kde-format
 #| msgid ""
@@ -233,10 +237,6 @@ msgstr ""
 "केडीई शब्द फाइल पद वर्णन गर्दा एउटा त्रुटि देखापर्यो ।\n"
 "रेखामा: %1, स्तम्भ %2\n"
 "त्रुटि सन्देश: %3"
-
-#: libmsooxml/MsooXmlUtils.cpp:180
-msgid "QXml"
-msgstr "क्युएक्सएमएल"
 
 #: libmsooxml/MsooXmlUtils.cpp:229
 #, kde-format
@@ -260,6 +260,251 @@ msgstr ""
 #| msgid "Could not read from file."
 msgid "Could not write block"
 msgstr "फाइलबाट पढ्न सकिएन ।"
+
+#: stage/pptx/PptxImport.cpp:1097 words/docx/DocxImport.cpp:168
+#: sheets/xlsx/XlsxImport.cpp:571
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Unable to find part for type %1"
+msgstr "फाइलबाट पढ्न सकिएन ।"
+
+#: stage/pptx/PptxXmlSlideReader.cpp:629
+#, fuzzy, kde-format
+#| msgid "Slide Title"
+msgid "Slide %1"
+msgstr "स्लाइड शीर्षक"
+
+#: stage/pptx/PptxXmlDocumentReader.cpp:289
+#, fuzzy, kde-format
+#| msgid "Endnote %1"
+msgid "Slide layout \"%1\" not found"
+msgstr "अन्त्यटिप्पणी %1"
+
+#: words/ascii/ImportDialog.cc:45
+#, fuzzy
+#| msgid "KWord's Plain Text Import Filter"
+msgid "Words's Plain Text Import Filter"
+msgstr "केडीई शब्दको खाली पाठ आयात फिल्टर"
+
+#: words/ascii/ImportDialog.cc:49 sheets/csv/csvdialog.cpp:65
+#: sheets/csv/csvexportdialog.cpp:46
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr "सिफारिस गरिएको ( %1 )"
+
+#: words/ascii/ImportDialog.cc:50 sheets/csv/csvdialog.cpp:66
+#: sheets/csv/csvexportdialog.cpp:47
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr "लोकेल (%1)"
+
+#: words/ascii/ImportDialog.cc:53 sheets/csv/csvdialog.cpp:69
+#: sheets/csv/csvexportdialog.cpp:50
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr "अन्य ( %1 )"
+
+#: words/ascii/ImportDialog.cc:107 sheets/csv/csvdialog.cpp:522
+#: sheets/csv/csvexportdialog.cpp:286
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr "सङ्केतन: %1 फेला पार्न सकिएन"
+
+#: words/html-odf/exportdialog.cpp:36 sheets/html/exportdialog.cc:37
+msgid "Export Sheet to HTML"
+msgstr "एचटीएमएलमा पाना निर्यात गर्नुहोस्।"
+
+#: words/html-odf/exportdialog.cpp:43 sheets/html/exportdialog.cc:48
+msgid "Recommended: UTF-8"
+msgstr "सिफारिस गरिएको: युटीएफ-८"
+
+#: words/html-odf/exportdialog.cpp:44 sheets/html/exportdialog.cc:49
+#, kde-format
+msgid "Locale (%1)"
+msgstr "लोकेल (%1)"
+
+#: words/msword-odf/conversion.cpp:830
+msgid "Even Pages Header"
+msgstr "जोर पृष्ठ हेडर"
+
+#: words/msword-odf/conversion.cpp:832
+msgid "Odd Pages Header"
+msgstr "बिजोर पृष्ठ हेडर"
+
+#: words/msword-odf/conversion.cpp:834
+msgid "Even Pages Footer"
+msgstr "जोर पृष्ठ फुटर"
+
+#: words/msword-odf/conversion.cpp:836
+msgid "Odd Pages Footer"
+msgstr "बिजोर पृष्ठ फुटर"
+
+#: words/msword-odf/conversion.cpp:838
+msgid "First Page Header"
+msgstr "पहिलो पृष्ठ हेडर"
+
+#: words/msword-odf/conversion.cpp:840
+msgid "First Page Footer"
+msgstr "पहिलो पृष्ठ फुटर"
+
+#: words/msword-odf/texthandler.cpp:624
+#, kde-format
+msgid "Table %1"
+msgstr "तालिका %1"
+
+#: words/rtf/import/rtfimport.cpp:56
+msgid "The file cannot be loaded, as it seems not to be an RTF document."
+msgstr "फाइल आरटीएफ कागजात नभएकाले लोड हुन सकेन ।"
+
+#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
+#: words/rtf/import/rtfimport.cpp:81
+#, fuzzy
+#| msgid "KWord's RTF Import Filter"
+msgid "Words's RTF Import Filter"
+msgstr "केडीई शब्दको आरटीएफ आयात फिल्टर"
+
+#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
+#, fuzzy
+#| msgid "The file cannot be loaded, as it cannot be opened."
+msgid "The file cannot be loaded."
+msgstr "फाइल खुल्न नसकेको जस्तै, लोड हुन सकेन ।"
+
+#: sheets/csv/csvdialog.cpp:61
+msgid "Import"
+msgstr "फ आयात"
+
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+msgid "Text"
+msgstr "पाठ"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "सङ्ख्या"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "मुद्रा"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "मिति"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr "दशमलब अल्पविराम सङ्ख्या"
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr "दशमलब बिन्दु सङ्ख्या"
+
+#. i18n: file: sheets/csv/dialogui.ui:275
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/csvdialog.cpp:454 rc.cpp:144
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"कृपया तपाईँले निर्दिष्ट गर्नुभएको दायराहरू जाँच गर्नुहोस् । सुरुको मान अन्तिमको मान भन्दा "
+"सानो हुनुपर्छ ।"
+
+#: sheets/csv/csvexport.cc:282
+msgid "<SHEETNAME>"
+msgstr "<SHEETNAME>"
+
+#: sheets/csv/csvimport.cc:92
+msgid "CSV filter cannot open input file - please report."
+msgstr "सीएसभी फिल्टरले आगत फाइल खोल्न सकेन - कृपया प्रतिवेदन गर्नुहोस् ।"
+
+#: sheets/dbase/dbaseimport.cc:56
+msgid "File format is not supported."
+msgstr "फाइल ढाँचा समर्थन गरिएको छैन ।"
+
+#: sheets/dbase/dbaseimport.cc:61
+msgid "Could not read from file."
+msgstr "फाइलबाट पढ्न सकिएन ।"
+
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
+msgid "Top"
+msgstr "माथि"
+
+#: sheets/opencalc/opencalcimport.cc:1236
+msgid "The file seems to be corrupt. Skipping a table."
+msgstr "फाइल अनुपोगी जस्तो देखिन्छ । तालिका फड्काइदैछ ।"
+
+#: sheets/opencalc/opencalcimport.cc:1247
+msgid "Skipping a table."
+msgstr "तालिका फड्काइदैछ ।"
+
+#: sheets/opencalc/opencalcimport.cc:1947
+#, kde-format
+msgid ""
+"This document was created with OpenOffice.org version '%1'. This filter was "
+"written for version 1.0. Reading this file could cause strange behavior, "
+"crashes or incorrect display of the data. Do you want to continue converting "
+"the document?"
+msgstr ""
+"यो कागजात ओपनअफिस.ओर्ग संस्करण '%1' सँग सिर्जना गरिएको थियो । यो फाइल पढ्नाले अनौठो "
+"व्यवहार देखाउनु सक्छ, जस्तै डेटाको विन्याश वा गलत प्रदर्शन । तपाईँ कागजात रूपान्तरण जारी "
+"राख्न चाहनुहुन्छ ?"
+
+#: sheets/opencalc/opencalcimport.cc:1948
+msgid "Unsupported document version"
+msgstr "समर्थन नगरिएको कागजात संस्करण"
+
+#: sheets/opencalc/opencalcexport.cc:914
+msgid "Page "
+msgstr "पृष्ठ"
+
+#: sheets/qpro/qproimport.cc:128
+msgid "QPRO filter cannot open input file - please report."
+msgstr "QPRO फिल्टरले आगत फाइल खोल्न सक्दैन - कृपया प्रतिवेदन गर्नुहोस् ।"
+
+#: sheets/qpro/qproimport.cc:239
+msgid ""
+"Unable to open password protected files.\n"
+"The password algorithm has not been published"
+msgstr ""
+"पासवर्ड सुरक्षित फाइलहरू खोल्न अक्षम भयो ।\n"
+"पासवर्ड एलगोरिदम प्रकाशन गरिएको छैन"
+
+#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:181
+#, kde-format
+msgid "Declared number of shared strings too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:571
+#, kde-format
+msgid "Declared number of font styles too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:924
+#, kde-format
+msgid "Declared number of cell formats too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:1047
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:1393
+#, kde-format
+msgid "Declared number of fill styles too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:350
+msgid ""
+"The data could not be loaded completely because the maximum size of sheet "
+"was exceeded."
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:1429
+msgid "Expected integer or floating point number"
+msgstr ""
 
 #. i18n: file: flow/imageexport/flow_imageexportwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel)
@@ -574,12 +819,6 @@ msgstr "\""
 #: rc.cpp:141 rc.cpp:231
 msgid "'"
 msgstr "'"
-
-#. i18n: file: sheets/csv/dialogui.ui:275
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:144 sheets/csv/csvdialog.cpp:454
-msgid "None"
-msgstr "कुनै पनि होइन"
 
 #. i18n: file: sheets/csv/dialogui.ui:316
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
@@ -997,245 +1236,6 @@ msgstr "ठिक छ।"
 #: rc.cpp:405
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्नत"
-
-#: sheets/csv/csvdialog.cpp:61
-msgid "Import"
-msgstr "फ आयात"
-
-#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
-#: words/ascii/ImportDialog.cc:49
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr "सिफारिस गरिएको ( %1 )"
-
-#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
-#: words/ascii/ImportDialog.cc:50
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr "लोकेल (%1)"
-
-#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
-#: words/ascii/ImportDialog.cc:53
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr "अन्य ( %1 )"
-
-#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
-#: sheets/csv/csvdialog.cpp:334
-msgid "Text"
-msgstr "पाठ"
-
-#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
-msgid "Number"
-msgstr "सङ्ख्या"
-
-#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
-msgid "Currency"
-msgstr "मुद्रा"
-
-#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
-msgid "Date"
-msgstr "मिति"
-
-#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
-msgid "Decimal Comma Number"
-msgstr "दशमलब अल्पविराम सङ्ख्या"
-
-#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
-msgid "Decimal Point Number"
-msgstr "दशमलब बिन्दु सङ्ख्या"
-
-#: sheets/csv/csvdialog.cpp:480
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-"कृपया तपाईँले निर्दिष्ट गर्नुभएको दायराहरू जाँच गर्नुहोस् । सुरुको मान अन्तिमको मान भन्दा "
-"सानो हुनुपर्छ ।"
-
-#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:286
-#: words/ascii/ImportDialog.cc:107
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr "सङ्केतन: %1 फेला पार्न सकिएन"
-
-#: sheets/csv/csvexport.cc:282
-msgid "<SHEETNAME>"
-msgstr "<SHEETNAME>"
-
-#: sheets/csv/csvimport.cc:92
-msgid "CSV filter cannot open input file - please report."
-msgstr "सीएसभी फिल्टरले आगत फाइल खोल्न सकेन - कृपया प्रतिवेदन गर्नुहोस् ।"
-
-#: sheets/dbase/dbaseimport.cc:56
-msgid "File format is not supported."
-msgstr "फाइल ढाँचा समर्थन गरिएको छैन ।"
-
-#: sheets/dbase/dbaseimport.cc:61
-msgid "Could not read from file."
-msgstr "फाइलबाट पढ्न सकिएन ।"
-
-#: sheets/html/exportdialog.cc:37 words/html-odf/exportdialog.cpp:36
-msgid "Export Sheet to HTML"
-msgstr "एचटीएमएलमा पाना निर्यात गर्नुहोस्।"
-
-#: sheets/html/exportdialog.cc:48 words/html-odf/exportdialog.cpp:43
-msgid "Recommended: UTF-8"
-msgstr "सिफारिस गरिएको: युटीएफ-८"
-
-#: sheets/html/exportdialog.cc:49 words/html-odf/exportdialog.cpp:44
-#, kde-format
-msgid "Locale (%1)"
-msgstr "लोकेल (%1)"
-
-#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
-msgid "Top"
-msgstr "माथि"
-
-#: sheets/opencalc/opencalcexport.cc:914
-msgid "Page "
-msgstr "पृष्ठ"
-
-#: sheets/opencalc/opencalcimport.cc:1236
-msgid "The file seems to be corrupt. Skipping a table."
-msgstr "फाइल अनुपोगी जस्तो देखिन्छ । तालिका फड्काइदैछ ।"
-
-#: sheets/opencalc/opencalcimport.cc:1247
-msgid "Skipping a table."
-msgstr "तालिका फड्काइदैछ ।"
-
-#: sheets/opencalc/opencalcimport.cc:1947
-#, kde-format
-msgid ""
-"This document was created with OpenOffice.org version '%1'. This filter was "
-"written for version 1.0. Reading this file could cause strange behavior, "
-"crashes or incorrect display of the data. Do you want to continue converting "
-"the document?"
-msgstr ""
-"यो कागजात ओपनअफिस.ओर्ग संस्करण '%1' सँग सिर्जना गरिएको थियो । यो फाइल पढ्नाले अनौठो "
-"व्यवहार देखाउनु सक्छ, जस्तै डेटाको विन्याश वा गलत प्रदर्शन । तपाईँ कागजात रूपान्तरण जारी "
-"राख्न चाहनुहुन्छ ?"
-
-#: sheets/opencalc/opencalcimport.cc:1948
-msgid "Unsupported document version"
-msgstr "समर्थन नगरिएको कागजात संस्करण"
-
-#: sheets/qpro/qproimport.cc:128
-msgid "QPRO filter cannot open input file - please report."
-msgstr "QPRO फिल्टरले आगत फाइल खोल्न सक्दैन - कृपया प्रतिवेदन गर्नुहोस् ।"
-
-#: sheets/qpro/qproimport.cc:239
-msgid ""
-"Unable to open password protected files.\n"
-"The password algorithm has not been published"
-msgstr ""
-"पासवर्ड सुरक्षित फाइलहरू खोल्न अक्षम भयो ।\n"
-"पासवर्ड एलगोरिदम प्रकाशन गरिएको छैन"
-
-#: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
-#: words/docx/DocxImport.cpp:168
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Unable to find part for type %1"
-msgstr "फाइलबाट पढ्न सकिएन ।"
-
-#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:181
-#, kde-format
-msgid "Declared number of shared strings too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:571
-#, kde-format
-msgid "Declared number of font styles too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:924
-#, kde-format
-msgid "Declared number of cell formats too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:1047
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:1393
-#, kde-format
-msgid "Declared number of fill styles too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:350
-msgid ""
-"The data could not be loaded completely because the maximum size of sheet "
-"was exceeded."
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:1429
-msgid "Expected integer or floating point number"
-msgstr ""
-
-#: stage/pptx/PptxXmlDocumentReader.cpp:289
-#, fuzzy, kde-format
-#| msgid "Endnote %1"
-msgid "Slide layout \"%1\" not found"
-msgstr "अन्त्यटिप्पणी %1"
-
-#: stage/pptx/PptxXmlSlideReader.cpp:629
-#, fuzzy, kde-format
-#| msgid "Slide Title"
-msgid "Slide %1"
-msgstr "स्लाइड शीर्षक"
-
-#: words/ascii/ImportDialog.cc:45
-#, fuzzy
-#| msgid "KWord's Plain Text Import Filter"
-msgid "Words's Plain Text Import Filter"
-msgstr "केडीई शब्दको खाली पाठ आयात फिल्टर"
-
-#: words/msword-odf/conversion.cpp:830
-msgid "Even Pages Header"
-msgstr "जोर पृष्ठ हेडर"
-
-#: words/msword-odf/conversion.cpp:832
-msgid "Odd Pages Header"
-msgstr "बिजोर पृष्ठ हेडर"
-
-#: words/msword-odf/conversion.cpp:834
-msgid "Even Pages Footer"
-msgstr "जोर पृष्ठ फुटर"
-
-#: words/msword-odf/conversion.cpp:836
-msgid "Odd Pages Footer"
-msgstr "बिजोर पृष्ठ फुटर"
-
-#: words/msword-odf/conversion.cpp:838
-msgid "First Page Header"
-msgstr "पहिलो पृष्ठ हेडर"
-
-#: words/msword-odf/conversion.cpp:840
-msgid "First Page Footer"
-msgstr "पहिलो पृष्ठ फुटर"
-
-#: words/msword-odf/texthandler.cpp:624
-#, kde-format
-msgid "Table %1"
-msgstr "तालिका %1"
-
-#: words/rtf/import/rtfimport.cpp:56
-msgid "The file cannot be loaded, as it seems not to be an RTF document."
-msgstr "फाइल आरटीएफ कागजात नभएकाले लोड हुन सकेन ।"
-
-#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
-#: words/rtf/import/rtfimport.cpp:81
-#, fuzzy
-#| msgid "KWord's RTF Import Filter"
-msgid "Words's RTF Import Filter"
-msgstr "केडीई शब्दको आरटीएफ आयात फिल्टर"
-
-#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
-#, fuzzy
-#| msgid "The file cannot be loaded, as it cannot be opened."
-msgid "The file cannot be loaded."
-msgstr "फाइल खुल्न नसकेको जस्तै, लोड हुन सकेन ।"
 
 #, fuzzy
 #~| msgid ""

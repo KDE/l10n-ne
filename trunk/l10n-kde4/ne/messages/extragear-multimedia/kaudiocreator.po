@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 03:45+0200\n"
+"POT-Creation-Date: 2012-08-19 03:34+0200\n"
 "PO-Revision-Date: 2007-02-11 16:52+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -63,13 +63,6 @@ msgstr "%1 काम सुरु भइसकेको छ । तपाईँ 
 msgid "Jobs have started"
 msgstr "काम सुरु भयो"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
-#: tracksimp.cpp:624
-#, fuzzy
-#| msgid "Artist:"
-msgid "Artist"
-msgstr "कलाकार:"
-
 #: encodefilemodel.cpp:29
 #, fuzzy
 #| msgid "Title"
@@ -80,6 +73,13 @@ msgstr "शीर्षक"
 #: tracksimp.cpp:624
 msgid "Title"
 msgstr "शीर्षक"
+
+#: encodefilemodel.cpp:29 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
+#: tracksimp.cpp:624
+#, fuzzy
+#| msgid "Artist:"
+msgid "Artist"
+msgstr "कलाकार:"
 
 #: encodefilemodel.cpp:30
 #, fuzzy
@@ -101,13 +101,6 @@ msgstr "टिप्पणी:"
 msgid "Genre"
 msgstr "विधा:"
 
-#: encodefilemodel.cpp:31
-#, fuzzy
-#| msgid "Encoder"
-msgctxt "@title:column"
-msgid "Encoder"
-msgstr "सङ्केतक"
-
 #: encodefilemodel.cpp:31 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
 #: tracksimp.cpp:624
 msgid "Track"
@@ -119,10 +112,67 @@ msgstr "ट्रयाक"
 msgid "Year"
 msgstr "वर्ष:"
 
-#: encoder.cpp:76 encoderconfigimp.cpp:150 encoderconfigimp.cpp:189
-#: encoderconfigimp.cpp:230
+#: encodefilemodel.cpp:31
+#, fuzzy
+#| msgid "Encoder"
+msgctxt "@title:column"
+msgid "Encoder"
+msgstr "सङ्केतक"
+
+#: encoderconfigimp.cpp:101
+msgid "The default encoder has to accept wav as input."
+msgstr ""
+
+#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr ""
+
+#: encoderconfigimp.cpp:128
+#, fuzzy
+#| msgid "Encoder"
+msgid "Add Encoder"
+msgstr "सङ्केतक"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+msgid "Please select an encoder."
+msgstr "कृपया एउटा सङ्केतक चयन गर्नुहोस् ।"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+#: encoder.cpp:76
 msgid "No Encoder Selected"
 msgstr "कुनै सङ्केतक चयन गरिएको छैन"
+
+#: encoderconfigimp.cpp:173
+#, fuzzy
+#| msgid "Encoder"
+msgid "Copy Encoder"
+msgstr "सङ्केतक"
+
+#: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr ""
+
+#: encoderconfigimp.cpp:198
+msgid "Delete encoder?"
+msgstr "सङ्केतक मेट्नुहुन्छ ?"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete Encoder"
+msgstr "सङ्केतक मेट्नुहोस्"
+
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+
+#: encoderconfigimp.cpp:250
+msgid "Configure Encoder"
+msgstr "सङ्केतक कन्फिगर गर्नुहोस्"
+
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
+msgid "Encoder Configuration"
+msgstr "सङ्केतक कन्फिगरेसन"
 
 #: encoder.cpp:76
 msgid ""
@@ -158,14 +208,6 @@ msgstr ""
 "चयन गरिएको सङ्केतक फेला परेन ।\n"
 "वाभ फाइल हटाइएको छ । आदेश निम्न थियो: %1"
 
-#: encoder.cpp:327 encoder.cpp:344
-msgid "Show Output"
-msgstr "निर्गत देखाउनुहोस्"
-
-#: encoder.cpp:327 encoder.cpp:344
-msgid "Skip Output"
-msgstr "निर्गत फड्काउनुहोस्"
-
 #: encoder.cpp:327
 msgid ""
 "The encoder exited with a error.  Please check that the file was created.\n"
@@ -173,6 +215,14 @@ msgid ""
 msgstr ""
 "सङ्केतक त्रुटिसँगै अन्त्य भयो । कृपया त्यो फाइल सिर्जना गरिएको छ छैन जाँच्नुहोस् ।\n"
 "तपाईँ पूरा सङ्केतक निर्गत हेर्न चाहनुहुन्छ ?"
+
+#: encoder.cpp:327 encoder.cpp:344
+msgid "Show Output"
+msgstr "निर्गत देखाउनुहोस्"
+
+#: encoder.cpp:327 encoder.cpp:344
+msgid "Skip Output"
+msgstr "निर्गत फड्काउनुहोस्"
 
 #: encoder.cpp:344
 msgid ""
@@ -186,66 +236,12 @@ msgstr ""
 "वाभ फाइल हटाइएको छ ।\n"
 "तपाईँ पूरा सङ्केतक निर्गत हेर्न चाहनुहुन्छ ?"
 
-#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
-msgid "Not Allowed"
-msgstr ""
-
-#: encoderconfigimp.cpp:101
-msgid "The default encoder has to accept wav as input."
-msgstr ""
-
-#: encoderconfigimp.cpp:128
-#, fuzzy
-#| msgid "Encoder"
-msgid "Add Encoder"
-msgstr "सङ्केतक"
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-msgid "Please select an encoder."
-msgstr "कृपया एउटा सङ्केतक चयन गर्नुहोस् ।"
-
-#: encoderconfigimp.cpp:173
-#, fuzzy
-#| msgid "Encoder"
-msgid "Copy Encoder"
-msgstr "सङ्केतक"
-
-#: encoderconfigimp.cpp:194
-msgid "WAV is not allowed to be removed."
-msgstr ""
-
-#: encoderconfigimp.cpp:198
-msgid "Delete Encoder"
-msgstr "सङ्केतक मेट्नुहोस्"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete encoder?"
-msgstr "सङ्केतक मेट्नुहुन्छ ?"
-
-#: encoderconfigimp.cpp:235
-msgid ""
-"WAV is not allowed to be changed.\n"
-"You can copy it to adjust it to your needs."
-msgstr ""
-
-#: encoderconfigimp.cpp:250
-msgid "Configure Encoder"
-msgstr "सङ्केतक कन्फिगर गर्नुहोस्"
-
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
-msgid "Encoder Configuration"
-msgstr "सङ्केतक कन्फिगरेसन"
-
 #: general.cpp:61
 #, kde-format
 msgid ""
 "The replacement string still contains incompatible characters (%1).\n"
 "Copying to FAT32 might not work as expected."
 msgstr ""
-
-#: job.h:35
-msgid "Other"
-msgstr "अन्य"
 
 #: jobdelegate.cpp:47
 msgid "Queued"
@@ -264,16 +260,16 @@ msgid "Done"
 msgstr ""
 
 #: jobqueimp.cpp:51
-msgid "Description"
-msgstr "वर्णन"
-
-#: jobqueimp.cpp:51
 msgid "Job"
 msgstr "काम"
 
 #: jobqueimp.cpp:51
 msgid "Progress"
 msgstr "प्रगति"
+
+#: jobqueimp.cpp:51
+msgid "Description"
+msgstr "वर्णन"
 
 #: jobqueimp.cpp:84 jobqueimp.cpp:162 jobqueimp.cpp:223
 #, kde-format
@@ -286,12 +282,12 @@ msgid "KAudioCreator has not finished %1. Remove anyway?"
 msgstr "अडियो सर्जक समाप्त भएको छैन %1 । जसरी पनि हटाउनुहुन्छ ?"
 
 #: jobqueimp.cpp:145 jobqueimp.cpp:197
-msgid "Keep"
-msgstr "राख्नुहोस्"
-
-#: jobqueimp.cpp:145 jobqueimp.cpp:197
 msgid "Unfinished Job in Queue"
 msgstr "लाममा समाप्त नभएको काम"
+
+#: jobqueimp.cpp:145 jobqueimp.cpp:197
+msgid "Keep"
+msgstr "राख्नुहोस्"
 
 #. i18n: file: jobque.ui:17
 #. i18n: ectx: property (text), widget (QLabel, queLabel)
@@ -1542,15 +1538,15 @@ msgid "Track %1"
 msgstr "ट्रयाक"
 
 #: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
-msgid "Length"
-msgstr "लम्बाइ"
-
-#: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "रिप"
+
+#: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
+msgid "Length"
+msgstr "लम्बाइ"
 
 #: tracksimp.cpp:116 tracksimp.cpp:273 tracksimp.cpp:288
 #, fuzzy
@@ -1561,13 +1557,13 @@ msgstr "कुनै सङ्केतक चयन गरिएको छै�
 #: tracksimp.cpp:167 tracksimp.cpp:179
 #, fuzzy
 #| msgid "Unknown Artist - Unknown Album"
-msgid "Unknown Album"
+msgid "Unknown Artist"
 msgstr "अज्ञात कलाकार - अज्ञात एल्बम"
 
 #: tracksimp.cpp:167 tracksimp.cpp:179
 #, fuzzy
 #| msgid "Unknown Artist - Unknown Album"
-msgid "Unknown Artist"
+msgid "Unknown Album"
 msgstr "अज्ञात कलाकार - अज्ञात एल्बम"
 
 #: tracksimp.cpp:299
@@ -1615,10 +1611,6 @@ msgid "Protocol Not Found"
 msgstr ""
 
 #: tracksimp.cpp:523
-msgid "Album Information Incomplete"
-msgstr "अपूर्ण एल्बम जानकारी"
-
-#: tracksimp.cpp:523
 #, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1628,6 +1620,10 @@ msgstr ""
 "एल्बमको भाग सेट गरिएको छैन: %1 ।\n"
 " (एल्बम जानकारी परिवर्तन गर्न \"सूचना सम्पादन गर्नुहोस्\" बटनमा क्लिक गर्नुहोस् ।)\n"
 " तपाईँ जसरी पनि चयन गरिएको ट्रयाक रिप गर्न चाहनुहुन्छ ?"
+
+#: tracksimp.cpp:523
+msgid "Album Information Incomplete"
+msgstr "अपूर्ण एल्बम जानकारी"
 
 #: tracksimp.cpp:523
 msgid "Rip"
@@ -1641,6 +1637,10 @@ msgstr " - "
 #, kde-format
 msgid "Example: %1"
 msgstr "उदाहरण: %1"
+
+#: job.h:35
+msgid "Other"
+msgstr "अन्य"
 
 #, fuzzy
 #~| msgid "Specify temporary directory"
