@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 08:20+0200\n"
+"POT-Creation-Date: 2012-08-31 07:33+0200\n"
 "PO-Revision-Date: 2007-09-07 10:35+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -64,7 +64,7 @@ msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "अपरिभाषित"
 
-#: contactfields.cpp:56
+#: contactfields.cpp:56 grantleecontactformatter.cpp:210
 msgid "Anniversary"
 msgstr "वार्षिकोत्सव"
 
@@ -96,17 +96,17 @@ msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "इमेल"
 
-#: contactfields.cpp:155
+#: contactfields.cpp:155 grantleecontactformatter.cpp:253
 #, fuzzy
 #| msgid "Blog feed:"
 msgid "Blog Feed"
 msgstr "ब्लग फिड:"
 
-#: contactfields.cpp:158
+#: contactfields.cpp:158 grantleecontactformatter.cpp:296
 msgid "Profession"
 msgstr "पेशा"
 
-#: contactfields.cpp:161
+#: contactfields.cpp:161 grantleecontactformatter.cpp:300
 msgid "Office"
 msgstr "कार्यालय"
 
@@ -262,21 +262,64 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr "%2 मा %1"
 
-#: grantleecontactformatter.cpp:214
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: grantleecontactformatter.cpp:199 printing/rbs_appearance.ui:99
+msgid "Birthday"
+msgstr "जन्म मिति"
+
+#: grantleecontactformatter.cpp:222
 #, fuzzy
 #| msgid "Email"
-msgctxt "a contact's email address"
-msgid "Email"
+msgid "Emails"
 msgstr "इमेल"
 
-#: grantleecontactformatter.cpp:351
+#: grantleecontactformatter.cpp:245
+msgid "Website"
+msgstr ""
+
+#: grantleecontactformatter.cpp:261 mainwidget.cpp:564
+msgid "Address Book"
+msgstr "ठेगाना पुस्तिका"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: grantleecontactformatter.cpp:275 printing/rbs_appearance.ui:112
+#, fuzzy
+#| msgid "Note:"
+msgid "Note"
+msgstr "द्रष्टव्य:"
+
+#: grantleecontactformatter.cpp:289
+msgid "Department"
+msgstr "विभाग"
+
+#: grantleecontactformatter.cpp:305
+msgid "Manager's Name"
+msgstr "प्रबन्धकको नाम"
+
+#: grantleecontactformatter.cpp:310
+#, fuzzy
+#| msgid "Assistant's name:"
+msgid "Assistant's Name"
+msgstr "सहायकको नाम:"
+
+#: grantleecontactformatter.cpp:315
+#, fuzzy
+#| msgid "Partner's Name"
+msgid "Partner's Name"
+msgstr "साझेदारको नाम"
+
+#: grantleecontactformatter.cpp:320
+msgid "IM Address"
+msgstr "IM ठेगाना"
+
+#: grantleecontactformatter.cpp:367
 #, fuzzy
 #| msgid "Types"
 msgctxt "Boolean value"
 msgid "yes"
 msgstr "प्रकार"
 
-#: grantleecontactformatter.cpp:353
+#: grantleecontactformatter.cpp:369
 msgctxt "Boolean value"
 msgid "no"
 msgstr ""
@@ -490,10 +533,6 @@ msgstr "GMX ठेगाना पुस्तक निर्यात गर�
 #| msgid "%1 is not a GMX address book file."
 msgid "Export contacts to a GMX address book file."
 msgstr "%1 GMX ठेगाना पुस्तिका फाइल होइन ।"
-
-#: mainwidget.cpp:564
-msgid "Address Book"
-msgstr "ठेगाना पुस्तिका"
 
 #: mainwidget.cpp:570 printing/printingwizard.cpp:56
 #, fuzzy
@@ -926,11 +965,6 @@ msgstr "सम्पर्क सम्पादन गर्नुहोस्"
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: printing/rbs_appearance.ui:99
-msgid "Birthday"
-msgstr "जन्म मिति"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: printing/rbs_appearance.ui:106
 #, fuzzy
@@ -942,13 +976,6 @@ msgstr "सम्पर्क सम्पादन गर्नुहोस्"
 #: printing/rbs_appearance.ui:109
 msgid "Check this box if you want contact notes to be printed."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
-#: printing/rbs_appearance.ui:112
-#, fuzzy
-#| msgid "Note:"
-msgid "Note"
-msgstr "द्रष्टव्य:"
 
 #: printing/ringbinderstyle.cpp:150
 msgid "Ring Binder Printing Style - Appearance"
@@ -2078,9 +2105,6 @@ msgstr ""
 #~ msgid "City"
 #~ msgstr "शहर"
 
-#~ msgid "Department"
-#~ msgstr "विभाग"
-
 #~ msgid "Zip Code"
 #~ msgstr "जीप कोड"
 
@@ -2763,9 +2787,6 @@ msgstr ""
 #~ msgid "Manager's name:"
 #~ msgstr "प्रबन्धकको नाम:"
 
-#~ msgid "Assistant's name:"
-#~ msgstr "सहायकको नाम:"
-
 #, fuzzy
 #~| msgid "Date"
 #~ msgid "Dates"
@@ -3103,18 +3124,6 @@ msgstr ""
 
 #~ msgid "All Fields"
 #~ msgstr "सबै फिल्ड"
-
-#~ msgid "Manager's Name"
-#~ msgstr "प्रबन्धकको नाम"
-
-#, fuzzy
-#~| msgid "Partner's Name"
-#~ msgctxt "Wife/Husband/..."
-#~ msgid "Partner's Name"
-#~ msgstr "साझेदारको नाम"
-
-#~ msgid "IM Address"
-#~ msgstr "IM ठेगाना"
 
 #~ msgid "Don Sanders"
 #~ msgstr "डन स्यान्डर्स"
