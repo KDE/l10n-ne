@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-04 06:16+0200\n"
+"POT-Creation-Date: 2012-09-10 04:32+0200\n"
 "PO-Revision-Date: 2008-01-03 16:48+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1237,7 +1237,7 @@ msgstr "फाइल अपलोड गर्न सकेन"
 msgid "KStars Exported Sky Image"
 msgstr "आकाशे छवि बचत गर्नुहोस्..."
 
-#: dialogs/exportimagedialog.cpp:177 main.cpp:95
+#: dialogs/exportimagedialog.cpp:177 main.cpp:96
 #: printing/foveditordialog.cpp:154
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
@@ -2715,55 +2715,51 @@ msgstr "न्यून."
 msgid "&Apply"
 msgstr "लागू गर्नुहोस्"
 
-#: fitsviewer/fitsimage.cpp:137
+#: fitsviewer/fitsimage.cpp:165
 msgid "Please hold while loading FITS file..."
 msgstr "FITS फाइल लोड भैरहेको बेला कृपया राख्नुहोस्..."
 
-#: fitsviewer/fitsimage.cpp:137 oal/oal.h:39
-msgid "Cancel"
-msgstr "रद्द गर्नुहोस्"
-
-#: fitsviewer/fitsimage.cpp:138
+#: fitsviewer/fitsimage.cpp:166
 msgid "Loading FITS"
 msgstr "FITS लोड गर्दै"
 
-#: fitsviewer/fitsimage.cpp:147
+#: fitsviewer/fitsimage.cpp:177
 #, fuzzy, kde-format
 #| msgid "Could not open the file %1 for writing."
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "लेख्नका लागि फाइल %1 खोल्न सकेन ।"
 
-#: fitsviewer/fitsimage.cpp:147 fitsviewer/fitsimage.cpp:162
-#: fitsviewer/fitsimage.cpp:168 fitsviewer/fitsimage.cpp:177
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:177 fitsviewer/fitsimage.cpp:194
+#: fitsviewer/fitsimage.cpp:200 fitsviewer/fitsimage.cpp:209
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS Open"
 msgstr "FITS खुल्छ"
 
-#: fitsviewer/fitsimage.cpp:162
+#: fitsviewer/fitsimage.cpp:194
 #, fuzzy, kde-format
 #| msgid "FITS file open error: %1"
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "FITS फाइलले त्रुटि खोल्दछ: %1"
 
-#: fitsviewer/fitsimage.cpp:168
+#: fitsviewer/fitsimage.cpp:200
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:177
+#: fitsviewer/fitsimage.cpp:209
 #, fuzzy, kde-format
 #| msgid "FITS file open error: %1"
 msgid "FITS file open error (fits_get_img_type): %1"
 msgstr "FITS फाइलले त्रुटि खोल्दछ: %1"
 
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS image is saturated and cannot be displayed."
 msgstr "FITS छविलाई अभिवादन गरेको छ र प्रदर्शन गर्न सकिँदैन ।"
 
-#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:339
+#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:345
 msgid "Save Changes to FITS?"
 msgstr "फिट्समा परिवर्तन बचत गर्नुहुन्छ ?"
 
-#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:340
+#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:346
 msgid ""
 "The current FITS file has unsaved changes.  Would you like to save before "
 "closing it?"
@@ -2808,7 +2804,7 @@ msgstr "केडीई स्टार फिट्स दर्शकलाई
 msgid "Statistics"
 msgstr "तथ्याङ्क"
 
-#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:457
+#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:463
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Merkers"
@@ -2821,18 +2817,24 @@ msgstr "मर्कर्स"
 msgid "KStars FITS Viewer"
 msgstr "केडीई स्टार फिट्स दर्शकलाई स्वागत छ"
 
-#: fitsviewer/fitsviewer.cpp:194
+#: fitsviewer/fitsviewer.cpp:196
 msgid "Focus"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:240 fitsviewer/fitsviewer.cpp:464
+#: fitsviewer/fitsviewer.cpp:200
+#, fuzzy
+#| msgid "Guides"
+msgid "Guide"
+msgstr "मार्गदर्शक"
+
+#: fitsviewer/fitsviewer.cpp:246 fitsviewer/fitsviewer.cpp:470
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 msgstr[1] ""
 
-#: fitsviewer/fitsviewer.cpp:462
+#: fitsviewer/fitsviewer.cpp:468
 msgid "Unmark Stars"
 msgstr ""
 
@@ -3155,6 +3157,17 @@ msgstr ""
 "हाल कुनै INDI यन्त्र चलिरहेको छैन । यन्त्र चलाउन, कृपया यन्त्र मेनुमा यन्त्र प्रबन्धकबाट यन्त्र "
 "चयन गर्नुहोस् ।"
 
+#: indi/indiccd.cpp:286 indi/servermanager.cpp:74
+#, fuzzy
+#| msgid "Enter import data filename"
+msgid "Error making temporary filename."
+msgstr "आयात डेटा फाइलनाम प्रविष्ट गर्नुहोस्"
+
+#: indi/indiccd.cpp:325
+#, kde-format
+msgid "FITS file saved to %1"
+msgstr "%1 मा FITS फाइल बचत गरियो"
+
 #: indi/indielement.cpp:322
 msgid "INDI DATA STREAM"
 msgstr "इन्डी डेटा प्रवाह"
@@ -3224,17 +3237,6 @@ msgstr "%1 अनलाइन छ ।"
 #, kde-format
 msgid "%1 is online and ready."
 msgstr "%1 अनलाइन छ र तयार छ ।"
-
-#: indi/indistd.cpp:966 indi/servermanager.cpp:74
-#, fuzzy
-#| msgid "Enter import data filename"
-msgid "Error making temporary filename."
-msgstr "आयात डेटा फाइलनाम प्रविष्ट गर्नुहोस्"
-
-#: indi/indistd.cpp:1005
-#, kde-format
-msgid "FITS file saved to %1"
-msgstr "%1 मा FITS फाइल बचत गरियो"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, fitsLabel)
 #: indi/opsindi.ui:22
@@ -42682,7 +42684,7 @@ msgstr "केडीई तारा"
 #: main.cpp:47
 #, fuzzy
 #| msgid "(c) 2001-2003, The KStars Team"
-msgid "(c) 2001-2009, The KStars Team"
+msgid "(c) 2001-2012, The KStars Team"
 msgstr "(c) 2001-2003, केडीई तारा समूह"
 
 #: main.cpp:48
@@ -42770,64 +42772,75 @@ msgid "Technical documentation on Astronomy and KStars"
 msgstr ""
 
 #: main.cpp:67
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Alexander City"
+msgid "Alexander Stepanenko"
+msgstr "अलेक्जेन्डर सिटी"
+
+#: main.cpp:67
+msgid "Guiding code based on lin_guider"
+msgstr ""
+
+#: main.cpp:68
 msgid "Nuno Pinheiro"
 msgstr ""
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Artwork"
 msgstr ""
 
-#: main.cpp:71
+#: main.cpp:72
 msgid "Dump sky image to file"
 msgstr "आकाशे छवि फाइलमा फाल्नुहोस्"
 
-#: main.cpp:72
+#: main.cpp:73
 msgid "Script to execute"
 msgstr "कार्यान्वयन गर्न स्क्रिप्ट गर्नुहोस्"
 
-#: main.cpp:73
+#: main.cpp:74
 msgid "Width of sky image"
 msgstr "आकाशे छविको चौडा"
 
-#: main.cpp:74
+#: main.cpp:75
 msgid "Height of sky image"
 msgstr "आकाशे छविको उचाइ"
 
-#: main.cpp:75
+#: main.cpp:76
 msgid "Filename for sky image"
 msgstr "आकाशे छविको फाइलनाम"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, InputComboBatch)
-#: main.cpp:76 tools/modcalcjd.ui:120
+#: main.cpp:77 tools/modcalcjd.ui:120
 msgid "Date and time"
 msgstr "मिति र समय"
 
-#: main.cpp:77
+#: main.cpp:78
 msgid "Start with clock paused"
 msgstr "घडी पज गरिएकोसँगै सुरु गर्नुहोस्"
 
-#: main.cpp:84
+#: main.cpp:85
 msgid "Dumping sky image"
 msgstr "आकाशे छवि फालिदै"
 
-#: main.cpp:136 main.cpp:192
+#: main.cpp:137 main.cpp:193
 msgid "Using CPU date/time instead."
 msgstr "सट्टामा सीपीयू मिति/समय प्रयोग गर्दै ।"
 
-#: main.cpp:165
+#: main.cpp:166
 msgid "Script executed."
 msgstr "स्क्रिप्ट कार्यान्वयन गरियो ।"
 
-#: main.cpp:167
+#: main.cpp:168
 msgid "Could not execute script."
 msgstr "स्क्रिप्ट कार्यान्वयन गर्न सकेन ।"
 
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgid "Unable to save image: %1 "
 msgstr "छवि बचत गर्न असक्षम भयो: %1 "
 
-#: main.cpp:177
+#: main.cpp:178
 #, kde-format
 msgid "Saved to file: %1"
 msgstr "फाइलमा बचत गरियो: %1"
@@ -43347,6 +43360,10 @@ msgstr "पछिल्लो"
 #| msgid "&Overwrite"
 msgid "Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
+
+#: oal/oal.h:39
+msgid "Cancel"
+msgstr "रद्द गर्नुहोस्"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ObserverAdd)
 #. i18n: ectx: property (text), widget (QPushButton, AddObserver)
