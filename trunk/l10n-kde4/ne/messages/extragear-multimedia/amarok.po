@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-11 05:05+0200\n"
+"POT-Creation-Date: 2012-09-12 11:36+0200\n"
 "PO-Revision-Date: 2007-09-09 15:34+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2063,7 +2063,8 @@ msgstr "एल्बम"
 #: context/applets/wikipedia/WikipediaApplet.cpp:619
 #: dialogs/FilenameLayoutDialog.cpp:61 dialogs/FilenameLayoutDialog.cpp:434
 #: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
-#: playlist/PlaylistModel.cpp:893 services/jamendo/JamendoInfoParser.cpp:51
+#: playlist/PlaylistModel.cpp:893 services/amazon/AmazonInfoParser.cpp:157
+#: services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:490
 #: services/magnatune/MagnatuneStore.cpp:220
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -4881,6 +4882,7 @@ msgstr "विकिपेडिया"
 
 #: context/applets/wikipedia/WikipediaApplet.cpp:637
 #: dialogs/FilenameLayoutDialog.cpp:53 dialogs/FilenameLayoutDialog.cpp:427
+#: services/amazon/AmazonInfoParser.cpp:158
 #: services/jamendo/JamendoInfoParser.cpp:109
 msgid "Track"
 msgstr "ट्रयाक"
@@ -14418,6 +14420,38 @@ msgstr ""
 msgid "none of the above (store won't work)"
 msgstr ""
 
+#: services/amazon/AmazonInfoParser.cpp:40
+#: services/magnatune/MagnatuneInfoParser.cpp:53
+#, fuzzy
+#| msgid "Loading Thumbnails..."
+msgid "Loading album info..."
+msgstr "थम्बनेलहरू लोड हुँदैछ..."
+
+#: services/amazon/AmazonInfoParser.cpp:61 services/amazon/AmazonStore.cpp:335
+#, fuzzy
+#| msgid "Wikipedia Information"
+msgid ""
+"<b>MP3 Music Store</b><br/><br/>Error: Unable to write temporary file. :-("
+msgstr "विकिपेडिया जानकारी"
+
+#: services/amazon/AmazonInfoParser.cpp:91 services/amazon/AmazonStore.cpp:525
+msgid ""
+"<b>MP3 Music Store</b><br/><br/>Error: Querying MP3 Music Store database "
+"failed. :-("
+msgstr ""
+
+#: services/amazon/AmazonInfoParser.cpp:155
+#, fuzzy
+#| msgid "Add to Playlist"
+msgid "Add album to cart"
+msgstr "प्ले सूचीमा थप्नुहोस्"
+
+#: services/amazon/AmazonInfoParser.cpp:172
+#, fuzzy
+#| msgid "Add to Playlist"
+msgid "Add to cart"
+msgstr "प्ले सूचीमा थप्नुहोस्"
+
 #: services/amazon/AmazonItemTreeModel.cpp:108
 #: services/amazon/AmazonItemTreeModel.cpp:129
 #, fuzzy
@@ -14483,6 +14517,13 @@ msgstr "खोजी गर्नुहोस्"
 msgid "Snippet taken from the Amazon MP3 store"
 msgstr ""
 
+#: services/amazon/AmazonShoppingCart.cpp:62
+#, kde-format
+msgid ""
+"<b>MP3 Music Store</b><br/><br/><em>%1</em> has been added to your shopping "
+"cart."
+msgstr ""
+
 #: services/amazon/AmazonShoppingCartDialog.cpp:34
 #: services/amazon/AmazonShoppingCartDialog.cpp:59
 #, kde-format
@@ -14522,70 +14563,50 @@ msgid ""
 "MP3 store. Amarok gets a share of the profits made by this service."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:195
-#, kde-format
-msgid ""
-"<b>MP3 Music Store</b><br/><br/><em>%1</em> has been added to your shopping "
-"cart."
-msgstr ""
-
-#: services/amazon/AmazonStore.cpp:295
+#: services/amazon/AmazonStore.cpp:304
 msgid ""
 "<b>MP3 Music Store</b><br/><br/>Please select a valid country in the "
 "settings to make the store work."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:326
-#, fuzzy
-#| msgid "Wikipedia Information"
-msgid ""
-"<b>MP3 Music Store</b><br/><br/>Error: Unable to write temporary file. :-("
-msgstr "विकिपेडिया जानकारी"
-
-#: services/amazon/AmazonStore.cpp:425
+#: services/amazon/AmazonStore.cpp:434
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:461
+#: services/amazon/AmazonStore.cpp:470
 #, fuzzy
 #| msgid "Add to Playlist"
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "प्ले सूचीमा थप्नुहोस्"
 
-#: services/amazon/AmazonStore.cpp:462
+#: services/amazon/AmazonStore.cpp:471
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:469
+#: services/amazon/AmazonStore.cpp:478
 #, fuzzy
 #| msgid "View"
 msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr "दृश्य"
 
-#: services/amazon/AmazonStore.cpp:470
+#: services/amazon/AmazonStore.cpp:479
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:477
+#: services/amazon/AmazonStore.cpp:486
 #, fuzzy
 #| msgid "<b>%1</b> by <b>%2</b>"
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr "<b>%2</b> द्वारा <b>%1</b>"
 
-#: services/amazon/AmazonStore.cpp:478
+#: services/amazon/AmazonStore.cpp:487
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:516
-msgid ""
-"<b>MP3 Music Store</b><br/><br/>Error: Querying MP3 Music Store database "
-"failed. :-("
-msgstr ""
-
-#: services/amazon/AmazonStore.cpp:551
+#: services/amazon/AmazonStore.cpp:560
 msgid "<b>MP3 Music Store</b><br/><br/>Error: Received an invalid reply. :-("
 msgstr ""
 
@@ -15658,12 +15679,6 @@ msgstr "कलाकार सूचना तान्दै..."
 #| msgid "Fetching Artist Info"
 msgid "Fetching %1 Artist Info"
 msgstr "कलाकार सूचना तान्दै"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:53
-#, fuzzy
-#| msgid "Loading Thumbnails..."
-msgid "Loading album info..."
-msgstr "थम्बनेलहरू लोड हुँदैछ..."
 
 #: services/magnatune/MagnatuneInfoParser.cpp:75
 #, kde-format
