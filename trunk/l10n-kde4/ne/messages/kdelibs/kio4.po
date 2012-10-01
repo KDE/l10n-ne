@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-27 04:53+0200\n"
+"POT-Creation-Date: 2012-10-01 04:30+0200\n"
 "PO-Revision-Date: 2007-08-22 16:04+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1456,52 +1456,77 @@ msgstr "SSL सूचना प्रदर्शन गर्नुहोस्
 msgid "Cookie Alert"
 msgstr "कुकी सावधानी"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:97
-#, kde-format
-msgid "You received a cookie from"
-msgid_plural "You received %1 cookies from"
-msgstr[0] "तपाईँले यसबाट कुकी प्राप्त गर्नुभयो"
-msgstr[1] "तपाईँले यसबाट %1 कुकी प्राप्त गर्नुभयो"
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:96
+msgid "<html><body style=\"p {line-height: 150%}; text-align: center;\"><p>"
+msgstr ""
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:115
-msgid " <b>[Cross Domain]</b>"
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:99
+#, fuzzy, kde-format
+#| msgid "You received a cookie from"
+#| msgid_plural "You received %1 cookies from"
+msgctxt "@label: multiple cookies"
+msgid "You received %1 cookies from"
+msgstr "तपाईँले यसबाट कुकी प्राप्त गर्नुभयो"
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:101
+#, fuzzy
+#| msgid "You received a cookie from"
+#| msgid_plural "You received %1 cookies from"
+msgctxt "@label: single cookie"
+msgid "You received a cookie from"
+msgstr "तपाईँले यसबाट कुकी प्राप्त गर्नुभयो"
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:107
+#, fuzzy
+#| msgid " <b>[Cross Domain]</b>"
+msgctxt "@label: cross domain cookie"
+msgid " [Cross Domain]"
 msgstr " <b>[क्रस डोमेन]</b>"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:118
-msgid "Do you want to accept or reject?"
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:111
+msgctxt "@label: multiple cookies"
+msgid ""
+"</b></p><p>Do you want to accept or reject these cookies?</p></body></html>"
+msgstr ""
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:113
+#, fuzzy
+#| msgid "Do you want to accept or reject?"
+msgctxt "@label: single cookie"
+msgid ""
+"</b></p><p>Do you want to accept or reject this cookie?</p></body></html>"
 msgstr "तपाईँ स्वीकार वा अस्वीकार के गर्न चाहनुहुन्छ?"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:126
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:135
 msgid "Apply Choice To"
 msgstr "यसमा छनौट लागू गर्नुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:128
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:137
 msgid "&Only this cookie"
 msgstr "यो कुकी मात्र"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:128
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:137
 msgid "&Only these cookies"
 msgstr "यी कुकी मात्र"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:132
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:141
 #, fuzzy
 #| msgid ""
 #| "Select this option to accept/reject only this cookie. You will be "
 #| "prompted if another cookie is received. <em>(see WebBrowsing/Cookies in "
 #| "the Control Center)</em>."
 msgid ""
-"Select this option to accept/reject only this cookie. You will be prompted "
-"if another cookie is received. <em>(see WebBrowsing/Cookies in the System "
-"Settings)</em>."
+"Select this option to only accept or reject this cookie. You will be "
+"prompted again if you receive another cookie."
 msgstr ""
 "यो कुकी मात्र स्वीकार/अस्वीकार गर्न यो विकल्प चयन गर्नुहोस् । यदि अर्को कुकी प्राप्त भएमा "
 "तपाईँ प्रोत्साहित हुनुहनेछ ।<em>(नियन्त्रण केन्द्रमा वेभ ब्राउज गर्ने/कुकीहरू हेर्नुहोस्)</em> ।"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:136
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:144
 msgid "All cookies from this do&main"
 msgstr "यो डोमेनबाट सबै कुकीहरू"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:139
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:147
 #, fuzzy
 #| msgid ""
 #| "Select this option to accept/reject all cookies from this site. Choosing "
@@ -1509,21 +1534,21 @@ msgstr "यो डोमेनबाट सबै कुकीहरू"
 #| "from. This policy will be permanent until you manually change it from the "
 #| "Control Center <em>(see WebBrowsing/Cookies in the Control Center)</em>."
 msgid ""
-"Select this option to accept/reject all cookies from this site. Choosing "
+"Select this option to accept or reject all cookies from this site. Choosing "
 "this option will add a new policy for the site this cookie originated from. "
 "This policy will be permanent until you manually change it from the System "
-"Settings <em>(see WebBrowsing/Cookies in the System Settings)</em>."
+"Settings."
 msgstr ""
 "यो साइटबाट सबै कुकीहरू स्वीकार/अस्वीकार गर्न यो विकल्प चयन गर्नुहोस् । यसबाट उत्पन्न "
 "भएको यो कुकी साइटका लागि यो विकल्प रोज्दा नयाँ नीति थपिने छ । तपाईँले नीति नियन्त्रण "
 "केन्द्रबाट हातैले परिवर्तन नगरेसम्म यो स्थायी हुनेछ । <em>(वेभ ब्राउज गर्ने/कुकीहरू नियन्त्रण "
 "केन्द्रमा हेर्नुहोस्)</em>"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:145
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:152
 msgid "All &cookies"
 msgstr "सबै कुकीहरू"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:148
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:155
 #, fuzzy
 #| msgid ""
 #| "Select this option to accept/reject all cookies from anywhere. Choosing "
@@ -1532,83 +1557,91 @@ msgstr "सबै कुकीहरू"
 #| "</em>."
 msgid ""
 "Select this option to accept/reject all cookies from anywhere. Choosing this "
-"option will change the global cookie policy set in the System Settings for "
-"all cookies <em>(see WebBrowsing/Cookies in the System Settings)</em>."
+"option will change the global cookie policy for all cookies until you "
+"manually change it from the System Settings."
 msgstr ""
 "जुनसुकै ठाउँबाट सबै कुकीहरू स्वीकार/अस्वीकार गर्न यो विकल्प चयन गर्नुहोस् । यो विकल्प रोज्दा "
 "सबै कुकीहरूका लागि नियन्त्रण केन्द्रमा सेट गरिएका विश्वव्यापी कुकी नीतिमा परिवर्तन हुनेछ "
 "<em>(वेभ ब्राउज गर्ने/कुकीहरू नियन्त्रण केन्द्रमा हेर्नुहोस्)</em> ।"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:162
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:177
 msgid "&Accept"
 msgstr "स्वीकार गर्नुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:163
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:178
+msgid "Accept for this &session"
+msgstr ""
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:180
+msgid "Accept cookie(s) until the end of the current session"
+msgstr ""
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:181
 msgid "&Reject"
 msgstr "अस्वीकार गर्नुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:165
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:183
 msgid "See or modify the cookie information"
 msgstr "कुकी सूचना परिमार्जन गर्नुहोस् वा हेर्नुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:200
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:230
 msgid "Cookie Details"
 msgstr "कुकी विवरणहरू"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:205 kio/kfileitem.cpp:1129
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:235 kio/kfileitem.cpp:1129
 msgid "Name:"
 msgstr "नाम:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:213
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:243
 msgid "Value:"
 msgstr "मान:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:220
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:250
 msgid "Expires:"
 msgstr "म्याद समाप्त हुन्छ:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:227
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:257
 msgid "Path:"
 msgstr "मार्ग:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:234
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:264
 msgid "Domain:"
 msgstr "डोमेन:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:241
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:271
 msgid "Exposure:"
 msgstr "प्रदर्शन:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:250
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:280
 msgctxt "Next cookie"
 msgid "&Next >>"
 msgstr "पछिल्लो >>"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:255
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:285
 msgid "Show details of the next cookie"
 msgstr "पछिल्लो कुकीका विवरण देखाउनुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:282
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:312
 msgid "Not specified"
 msgstr "निर्दिष्ट गरिएको छैन"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:291
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:321
 msgid "End of Session"
 msgstr "सत्रको अन्त्य"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:296
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:326
 msgid "Secure servers only"
 msgstr "सर्भरहरू मात्र प्राप्त गर्नुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:298
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:328
 msgid "Secure servers, page scripts"
 msgstr "सुरक्षित सर्भरहरू, पृष्ठ स्क्रिप्टहरू प्राप्त गर्नुहोस्"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:303
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:333
 msgid "Servers"
 msgstr "सर्भरहरू"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:305
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:335
 msgid "Servers, page scripts"
 msgstr "सर्भरहरू, पृष्ठ स्क्रिप्टहरू"
 

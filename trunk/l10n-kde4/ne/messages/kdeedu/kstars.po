@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-30 04:22+0200\n"
+"POT-Creation-Date: 2012-10-01 04:23+0200\n"
 "PO-Revision-Date: 2008-01-03 16:48+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -217,7 +217,7 @@ msgstr ""
 
 #: colorscheme.cpp:233 colorscheme.cpp:248 dialogs/locationdialog.cpp:265
 #: indi/drivermanager.cpp:1308 indi/indidriver.cpp:936 kstarsactions.cpp:652
-#: oal/execute.cpp:278 options/opscolors.cpp:199 skymap.cpp:1106
+#: oal/execute.cpp:278 options/opscolors.cpp:199 skymap.cpp:1093
 #: tools/modcalcaltaz.cpp:238 tools/modcalcangdist.cpp:128
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:246
 #: tools/modcalceclipticcoords.cpp:203 tools/modcalcgalcoord.cpp:193
@@ -586,7 +586,7 @@ msgid "Check URL"
 msgstr "यूआरएल जाँच गर्नुहोस्"
 
 #. i18n: ectx: property (text), widget (KPushButton, DetailButton)
-#: dialogs/detaildialog.cpp:84 skymap.cpp:756 tools/wutdialog.ui:480
+#: dialogs/detaildialog.cpp:84 skymap.cpp:743 tools/wutdialog.ui:480
 msgid "Object Details"
 msgstr "वस्तुको विवरण"
 
@@ -3095,11 +3095,35 @@ msgstr ""
 msgid "Cannot start INDI server: port error."
 msgstr "INDI सर्भर सुरु गर्न सकिँदैन: पोर्ट त्रुटि ।"
 
+#: indi/drivermanager.cpp:392
+#, fuzzy, kde-format
+#| msgid "Connection to INDI host at localhost on port %1 failed."
+msgid "Connection to INDI server locally on port %1 failed."
+msgstr "पोर्ट %1 भित्र स्थानीय होस्टमा INDI होस्टलाई जडान असफल भयो ।"
+
 #: indi/drivermanager.cpp:547 indi/indidriver.cpp:308
 #, fuzzy, kde-format
 #| msgid "Invalid file: %1"
 msgid "Invalid port entry: %1"
 msgstr "अवैध फाइल: %1"
+
+#: indi/drivermanager.cpp:573
+#, fuzzy, kde-format
+#| msgid "Connection to INDI host at %1 on port %2 failed."
+msgid "Connection to INDI host at %1 on port %2 lost. Server disconnected."
+msgstr "पोर्ट %2 भित्र %1 मा INDI होस्टलाई जडान असफल भयो ।"
+
+#: indi/drivermanager.cpp:608
+#, fuzzy, kde-format
+#| msgid "Connection to INDI host at %1 on port %2 failed."
+msgid "Connection to INDI host at %1 on port %2 encountered an error: %3."
+msgstr "पोर्ट %2 भित्र %1 मा INDI होस्टलाई जडान असफल भयो ।"
+
+#: indi/drivermanager.cpp:683
+#, fuzzy, kde-format
+#| msgid "Connection to INDI host at %1 on port %2 failed."
+msgid "Connection to INDI server at host %1 with port %2 failed."
+msgstr "पोर्ट %2 भित्र %1 मा INDI होस्टलाई जडान असफल भयो ।"
 
 #: indi/drivermanager.cpp:873 indi/indidriver.cpp:498
 #, kde-format
@@ -3956,13 +3980,13 @@ msgstr "तेर्सो समकक्ष"
 msgid "Switch to star globe view (Equatorial &Coordinates)"
 msgstr "भूमध्यवर्ती समकक्ष"
 
-#: kstars.cpp:170 kstarsinit.cpp:238 skymap.cpp:1185
+#: kstars.cpp:170 kstarsinit.cpp:238 skymap.cpp:1172
 msgid "Switch to QPainter backend"
 msgstr ""
 
 #. i18n: ectx: label, entry (UseGL), group (View)
-#: kstars.cpp:170 kstars.kcfg:712 kstarsinit.cpp:238 skymap.cpp:1163
-#: skymap.cpp:1171 skymap.cpp:1179
+#: kstars.cpp:170 kstars.kcfg:712 kstarsinit.cpp:238 skymap.cpp:1150
+#: skymap.cpp:1158 skymap.cpp:1166
 msgid "Switch to OpenGL backend"
 msgstr ""
 
@@ -5551,7 +5575,7 @@ msgid "The maximum solar distance for drawing comets."
 msgstr "पुच्छ्रेताराहरू कोर्नका लागि अधिक्तम सौर्य दूरी ।"
 
 #. i18n: ectx: whatsthis, entry (UseGL), group (View)
-#: kstars.kcfg:713 skymap.cpp:1167
+#: kstars.kcfg:713 skymap.cpp:1154
 msgid ""
 "This version of KStars comes with new experimental OpenGL support. Our "
 "experience is that OpenGL works much faster on machines with hardware "
@@ -41818,6 +41842,12 @@ msgstr "ग्रह"
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr "KStars::slotFind() - संवादका लागि पर्याप्त स्मृति छैन"
 
+#: kstarsactions.cpp:586 kstarsactions.cpp:603 kstarsactions.cpp:610
+#: tools/scriptbuilder.cpp:974 tools/scriptbuilder.cpp:1029
+msgctxt "Filter by file type: KStars Scripts."
+msgid "KStars Scripts (*.kstars)"
+msgstr ""
+
 #: kstarsactions.cpp:593
 msgid ""
 "Warning:  You are about to execute a remote shell script on your machine. "
@@ -42647,14 +42677,14 @@ msgstr "दृश्य उपकरणपट्टी"
 msgid "&Toolbars"
 msgstr "उपकरणपट्टी"
 
-#: ksutils.cpp:140 ksutils.cpp:156
+#: ksutils.cpp:138 ksutils.cpp:154
 #, fuzzy
 #| msgid "Now"
 msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "N"
 msgstr "अहिले"
 
-#: ksutils.cpp:141
+#: ksutils.cpp:139
 #, fuzzy
 #| msgctxt "Constellation name (optional)"
 #| msgid "LEO"
@@ -42662,7 +42692,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "NNE"
 msgstr "लियो"
 
-#: ksutils.cpp:142
+#: ksutils.cpp:140
 #, fuzzy
 #| msgctxt "Constellation name (optional)"
 #| msgid "LEO"
@@ -42670,7 +42700,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "NE"
 msgstr "लियो"
 
-#: ksutils.cpp:143
+#: ksutils.cpp:141
 #, fuzzy
 #| msgctxt "Constellation name (optional)"
 #| msgid "LEO"
@@ -42678,7 +42708,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "ENE"
 msgstr "लियो"
 
-#: ksutils.cpp:144
+#: ksutils.cpp:142
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42686,7 +42716,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "E"
 msgstr "S"
 
-#: ksutils.cpp:145
+#: ksutils.cpp:143
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42694,7 +42724,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "ESE"
 msgstr "S"
 
-#: ksutils.cpp:146
+#: ksutils.cpp:144
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42702,7 +42732,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "SE"
 msgstr "S"
 
-#: ksutils.cpp:147
+#: ksutils.cpp:145
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42710,7 +42740,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "SSE"
 msgstr "S"
 
-#: ksutils.cpp:148
+#: ksutils.cpp:146
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42718,7 +42748,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "S"
 msgstr "S"
 
-#: ksutils.cpp:149
+#: ksutils.cpp:147
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42726,7 +42756,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "SSW"
 msgstr "S"
 
-#: ksutils.cpp:150
+#: ksutils.cpp:148
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42734,7 +42764,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "SW"
 msgstr "S"
 
-#: ksutils.cpp:151
+#: ksutils.cpp:149
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42742,7 +42772,7 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "WSW"
 msgstr "S"
 
-#: ksutils.cpp:152
+#: ksutils.cpp:150
 #, fuzzy
 #| msgctxt "First letter in 'Scope'"
 #| msgid "S"
@@ -42750,17 +42780,17 @@ msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "W"
 msgstr "S"
 
-#: ksutils.cpp:153
+#: ksutils.cpp:151
 msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "WNW"
 msgstr ""
 
-#: ksutils.cpp:154
+#: ksutils.cpp:152
 msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "NW"
 msgstr ""
 
-#: ksutils.cpp:155
+#: ksutils.cpp:153
 msgctxt "Abbreviated cardinal / intercardinal etc. direction"
 msgid "NNW"
 msgstr ""
@@ -46292,7 +46322,7 @@ msgstr "जसरी पनि जानुहोस्"
 msgid "Keep Position"
 msgstr "स्थिति राख्नुहोस्"
 
-#: skymap.cpp:460
+#: skymap.cpp:454
 #, fuzzy
 msgid ""
 "Digitized Sky Survey image provided by the Space Telescope Science Institute "
@@ -46300,42 +46330,42 @@ msgid ""
 msgstr ""
 "स्पेस टेलिस्कोप विज्ञान संस्थाद्वारा उपलब्ध गराएको अंकीकरण गरिएको आकाशे निरीक्षण छवि ।"
 
-#: skymap.cpp:503
+#: skymap.cpp:490
 msgid ""
 "Sloan Digital Sky Survey image provided by the Astrophysical Research "
 "Consortium [free for non-commercial use]."
 msgstr ""
 
-#: skymap.cpp:559
+#: skymap.cpp:546
 #, fuzzy, kde-format
 msgid "Angular distance: %1"
 msgstr "कोणिय दूरी: "
 
-#: skymap.cpp:589
+#: skymap.cpp:576
 #, fuzzy
 #| msgid "Select a shape for the field-of-view symbol"
 msgid "Star Hopper: Choose a field-of-view"
 msgstr "दृश्य फिल्ड सङ्केतका लागि आकार चयन गर्नुहोस्"
 
-#: skymap.cpp:589
+#: skymap.cpp:576
 msgid "FOV to use for star hopping:"
 msgstr ""
 
-#: skymap.cpp:593
+#: skymap.cpp:580
 #, fuzzy
 #| msgid "Select a shape for the field-of-view symbol"
 msgid "Star Hopper: Enter field-of-view to use"
 msgstr "दृश्य फिल्ड सङ्केतका लागि आकार चयन गर्नुहोस्"
 
-#: skymap.cpp:593
+#: skymap.cpp:580
 msgid "FOV to use for star hopping (in arcminutes):"
 msgstr ""
 
-#: skymap.cpp:756
+#: skymap.cpp:743
 msgid "No object selected."
 msgstr "कुनै वस्तु चयन गरिएको छैन ।"
 
-#: skymap.cpp:1105
+#: skymap.cpp:1092
 msgid ""
 "Custom image-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
@@ -46343,7 +46373,7 @@ msgstr ""
 "अनुकूल छवि-लिङ्क खुल्न सकेन ।\n"
 "लिङ्क भावी सत्रका लागि रेकर्ड गर्न सकिँदैन ।"
 
-#: skymap.cpp:1124
+#: skymap.cpp:1111
 msgid ""
 "Custom information-links file could not be opened.\n"
 "Link cannot be recorded for future sessions."
@@ -46351,21 +46381,21 @@ msgstr ""
 "अनुकूल सूचना लिङ्क फाइल खुल्न सकेन ।\n"
 "लिङ्क भावी सत्रका लागि रेकर्ड गरिएको छैन ।"
 
-#: skymap.cpp:1125
+#: skymap.cpp:1112
 msgid "Could not Open File"
 msgstr "फाइल खोल्न सकेन"
 
-#: skymap.cpp:1178
+#: skymap.cpp:1165
 msgid ""
 "Infoboxes will be disabled as they do not work correctly when using OpenGL "
 "backends as of this version"
 msgstr ""
 
-#: skymap.cpp:1200
+#: skymap.cpp:1187
 msgid "Xplanet binary path is empty in config panel."
 msgstr ""
 
-#: skymap.cpp:1305
+#: skymap.cpp:1292
 #, fuzzy, kde-format
 #| msgid "Sunset: %1"
 msgid "Run : %1"
@@ -55734,9 +55764,3 @@ msgstr "आकाश पृष्ठभूमिको लागि रङ ।"
 
 #~ msgid "Cannot read server file descriptor"
 #~ msgstr "सर्भर फाइल वर्णनकर्ता पढ्न सकिँदैन"
-
-#~ msgid "Connection to INDI host at localhost on port %1 failed."
-#~ msgstr "पोर्ट %1 भित्र स्थानीय होस्टमा INDI होस्टलाई जडान असफल भयो ।"
-
-#~ msgid "Connection to INDI host at %1 on port %2 failed."
-#~ msgstr "पोर्ट %2 भित्र %1 मा INDI होस्टलाई जडान असफल भयो ।"
