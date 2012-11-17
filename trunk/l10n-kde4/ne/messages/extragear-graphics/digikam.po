@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-16 02:10+0100\n"
+"POT-Creation-Date: 2012-11-17 02:15+0100\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3381,9 +3381,9 @@ msgstr "%1 (%2)"
 #: digikam/utils/tooltipfiller.cpp:101
 #: imageplugins/decorate/texturetool.cpp:126
 #: imageplugins/filters/blurfxtool.cpp:124
-#: imageplugins/filters/colorfxtool.cpp:146
 #: imageplugins/filters/distortionfxtool.cpp:130
 #: libs/dimg/filters/decorate/bordersettings.cpp:132
+#: libs/dimg/filters/fx/colorfxsettings.cpp:82
 #: libs/widgets/q3support/thumbbar.cpp:1402
 #: utilities/importui/items/importtooltipfiller.cpp:92
 msgid "Type:"
@@ -5599,83 +5599,44 @@ msgid ""
 "This value controls the smoothing effect of the pencil under the canvas."
 msgstr ""
 
-#: imageplugins/filters/colorfxtool.cpp:128
+#: imageplugins/filters/colorfxtool.cpp:106
+#: utilities/queuemanager/basetools/filters/colorfx.cpp:43
 #, fuzzy
 #| msgid "Color depth:"
 msgid "Color Effects"
 msgstr "रङ गहिराइ:"
 
-#: imageplugins/filters/colorfxtool.cpp:134
+#: imageplugins/filters/colorfxtool.cpp:112
 #, fuzzy
 #| msgid "<p>This is the image filter effect preview."
 msgid "This is the color effects preview"
 msgstr "<p>यो छवि फिल्टर प्रभावको पूर्वावलोकन हो ।"
 
-#: imageplugins/filters/colorfxtool.cpp:148
-#: imageplugins/filters/colorfxtool.cpp:375
+#: imageplugins/filters/colorfxtool.cpp:224
+#: libs/dimg/filters/fx/colorfxsettings.cpp:84
 #, fuzzy
 #| msgid "Size:"
 msgid "Solarize"
 msgstr "साइज:"
 
-#: imageplugins/filters/colorfxtool.cpp:149
-#: imageplugins/filters/colorfxtool.cpp:379
+#: imageplugins/filters/colorfxtool.cpp:228
+#: libs/dimg/filters/fx/colorfxsettings.cpp:85
 msgid "Vivid"
 msgstr ""
 
-#: imageplugins/filters/colorfxtool.cpp:150
-#: imageplugins/filters/colorfxtool.cpp:383
+#: imageplugins/filters/colorfxtool.cpp:232
+#: libs/dimg/filters/fx/colorfxsettings.cpp:86
 #, fuzzy
 #| msgid "None"
 msgid "Neon"
 msgstr "कुनै होइन"
 
-#: imageplugins/filters/colorfxtool.cpp:151
-#: imageplugins/filters/colorfxtool.cpp:387
+#: imageplugins/filters/colorfxtool.cpp:236
+#: libs/dimg/filters/fx/colorfxsettings.cpp:87
 #, fuzzy
 #| msgid "Found Tags"
 msgid "Find Edges"
 msgstr "ट्याग फेला पर्यो"
-
-#: imageplugins/filters/colorfxtool.cpp:153
-msgid ""
-"<p>Select the effect type to apply to the image here.</p><p><b>Solarize</b>: "
-"simulates solarization of photograph.</p><p><b>Vivid</b>: simulates the "
-"Velvia(tm) slide film colors.</p><p><b>Neon</b>: coloring the edges in a "
-"photograph to reproduce a fluorescent light effect.</p><p><b>Find Edges</b>: "
-"detects the edges in a photograph and their strength.</p>"
-msgstr ""
-
-#: imageplugins/filters/colorfxtool.cpp:161
-#: imageplugins/filters/distortionfxtool.cpp:174
-#, fuzzy
-#| msgid "Level:"
-msgctxt "level of the effect"
-msgid "Level:"
-msgstr "तह:"
-
-#: imageplugins/filters/colorfxtool.cpp:166
-#: imageplugins/filters/distortionfxtool.cpp:179
-#, fuzzy
-#| msgid "<p>Set here the hue adjustment of the image."
-msgid "Set here the level of the effect."
-msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
-
-#: imageplugins/filters/colorfxtool.cpp:168
-#: imageplugins/filters/distortionfxtool.cpp:181
-#, fuzzy
-#| msgid "Saturation:"
-msgid "Iteration:"
-msgstr "स्याचुरेसन:"
-
-#: imageplugins/filters/colorfxtool.cpp:173
-#, fuzzy
-#| msgid ""
-#| "This option allows you to open the editor with the current selected item."
-msgid ""
-"This value controls the number of iterations to use with the Neon and Find "
-"Edges effects."
-msgstr "यो विकल्पले हालै चयन गरेको वस्तुसँग सम्पादक खोल्न तपाईँलाई अनुमति दिन्छ ।"
 
 #. i18n: ectx: Menu (Filters)
 #: imageplugins/filters/digikamimageplugin_fxfilters_ui.rc:6
@@ -5791,6 +5752,28 @@ msgid ""
 "splits the photograph into square blocks and moves them randomly inside the "
 "image.</p>"
 msgstr ""
+
+#: imageplugins/filters/distortionfxtool.cpp:174
+#: libs/dimg/filters/fx/colorfxsettings.cpp:97
+#, fuzzy
+#| msgid "Level:"
+msgctxt "level of the effect"
+msgid "Level:"
+msgstr "तह:"
+
+#: imageplugins/filters/distortionfxtool.cpp:179
+#: libs/dimg/filters/fx/colorfxsettings.cpp:102
+#, fuzzy
+#| msgid "<p>Set here the hue adjustment of the image."
+msgid "Set here the level of the effect."
+msgstr "<p>यहाँ छविको ह्यु समायोजन सेट गर्नुहोस् ।"
+
+#: imageplugins/filters/distortionfxtool.cpp:181
+#: libs/dimg/filters/fx/colorfxsettings.cpp:104
+#, fuzzy
+#| msgid "Saturation:"
+msgid "Iteration:"
+msgstr "स्याचुरेसन:"
 
 #: imageplugins/filters/distortionfxtool.cpp:186
 #, fuzzy
@@ -9577,11 +9560,29 @@ msgstr "रातो फिल्टर"
 msgid "Charcoal Effect"
 msgstr "रङ गहिराइ:"
 
-#: libs/dimg/filters/fx/colorfxfilter.h:60
+#: libs/dimg/filters/fx/colorfxfilter.h:97
 #, fuzzy
 #| msgid "Red Filter"
 msgid "Color FX Filter"
 msgstr "रातो फिल्टर"
+
+#: libs/dimg/filters/fx/colorfxsettings.cpp:89
+msgid ""
+"<p>Select the effect type to apply to the image here.</p><p><b>Solarize</b>: "
+"simulates solarization of photograph.</p><p><b>Vivid</b>: simulates the "
+"Velvia(tm) slide film colors.</p><p><b>Neon</b>: coloring the edges in a "
+"photograph to reproduce a fluorescent light effect.</p><p><b>Find Edges</b>: "
+"detects the edges in a photograph and their strength.</p>"
+msgstr ""
+
+#: libs/dimg/filters/fx/colorfxsettings.cpp:109
+#, fuzzy
+#| msgid ""
+#| "This option allows you to open the editor with the current selected item."
+msgid ""
+"This value controls the number of iterations to use with the Neon and Find "
+"Edges effects."
+msgstr "यो विकल्पले हालै चयन गरेको वस्तुसँग सम्पादक खोल्न तपाईँलाई अनुमति दिन्छ ।"
 
 #: libs/dimg/filters/fx/distortionfxfilter.h:63
 #, fuzzy
@@ -20312,6 +20313,12 @@ msgstr "छवि बचत गर्नुहोस्"
 #| msgid "Save Images"
 msgid "Sharpen images"
 msgstr "छवि बचत गर्नुहोस्"
+
+#: utilities/queuemanager/basetools/filters/colorfx.cpp:44
+#, fuzzy
+#| msgid "Color depth:"
+msgid "Apply color effects"
+msgstr "रङ गहिराइ:"
 
 #: utilities/queuemanager/basetools/filters/filmgrain.cpp:51
 #, fuzzy
