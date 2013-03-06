@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-02 03:40+0100\n"
+"POT-Creation-Date: 2013-03-06 04:14+0100\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -55,6 +55,29 @@ msgstr "व्यक्तिक्रमका लागि अतिरिक�
 #: configurewidget.cpp:41 configurewidget.cpp:123 viewer_p.cpp:1618
 msgid "Auto"
 msgstr "स्वत:"
+
+#: customheadersettingwidget.cpp:37 customheadersettingwidget.cpp:45
+#, fuzzy
+msgid "Header to show:"
+msgstr "हेडर"
+
+#: customheadersettingwidget.cpp:44 customheadersettingwidget.cpp:51
+msgid "A&dd..."
+msgstr "थप्नुहोस्..."
+
+#: customheadersettingwidget.cpp:44 customheadersettingwidget.cpp:51
+msgid "Remo&ve"
+msgstr "हटाउनुहोस्"
+
+#: customheadersettingwidget.cpp:45 customheadersettingwidget.cpp:52
+msgid "&Modify..."
+msgstr "परिमार्जन गर्नुहोस्..."
+
+#: customheadersettingwidget.cpp:48 customheadersettingwidget.cpp:52
+#, fuzzy
+#| msgid "H&eaders"
+msgid "Header to hide:"
+msgstr "हेडर"
 
 #: editorwatcher.cpp:71
 #, fuzzy
@@ -1400,75 +1423,68 @@ msgstr "उपलब्ध छैन"
 msgid "Viewer settings"
 msgstr "प्रेषण"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: settings.ui:37
-#, fuzzy
-#| msgid "General"
-msgid "General"
-msgstr "साधारण"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: settings.ui:43
-#, fuzzy
-#| msgid "Automatic collapse level:"
-msgid "Au&tomatic collapse level:"
-msgstr "स्वचालित संक्षिप्त स्तर:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowExpandQuotesMark)
-#: settings.ui:53
-#, fuzzy
-#| msgid "Show expand/collapse quote marks"
-msgid "Show &expand/collapse quote marks"
-msgstr "विस्तार/संक्षिप्त उद्धरण चिन्ह देखाउनुहोस्"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowEmoticons)
-#: settings.ui:60
-#, fuzzy
-#| msgid "Replace smileys by emoticons"
-msgid "Replace smileys &by emoticons"
-msgstr "इमोटिकनद्वारा स्माइली बदल्नुहोस्"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShrinkQuotes)
-#: settings.ui:83
-#, fuzzy
-#| msgid "Reduce font size for quoted text"
-msgid "Reduce font size for &quoted text"
-msgstr "उद्धरण गरिएका पाठका लागि फन्ट साइज घटाउछ"
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AccessKeyEnabled)
+#: settings.ui:40
+msgid "Enable Access Key"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_showColorBar)
-#: settings.ui:90
+#: settings.ui:47
 #, fuzzy
 #| msgid "Show HTML stat&us bar"
 msgid "Show &HTML status bar"
 msgstr "HTML स्थिति पट्टी देखाउनुहोस्"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSpamStatus)
-#: settings.ui:97
+#: settings.ui:54
 #, fuzzy
 #| msgid "Show s&pam status in fancy headers"
 msgid "Show spam status &in fancy headers"
 msgstr "काल्पनिक हेडरमा स्पाम स्थिति देखाउनुहोस्"
 
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowEmoticons)
+#: settings.ui:61
+#, fuzzy
+#| msgid "Replace smileys by emoticons"
+msgid "Replace smileys &by emoticons"
+msgstr "इमोटिकनद्वारा स्माइली बदल्नुहोस्"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShrinkQuotes)
+#: settings.ui:68
+#, fuzzy
+#| msgid "Reduce font size for quoted text"
+msgid "Reduce font size for &quoted text"
+msgstr "उद्धरण गरिएका पाठका लागि फन्ट साइज घटाउछ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowExpandQuotesMark)
+#: settings.ui:75
+#, fuzzy
+#| msgid "Show expand/collapse quote marks"
+msgid "Show &expand/collapse quote marks"
+msgstr "विस्तार/संक्षिप्त उद्धरण चिन्ह देखाउनुहोस्"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: settings.ui:98
+#, fuzzy
+#| msgid "Automatic collapse level:"
+msgid "Au&tomatic collapse level:"
+msgstr "स्वचालित संक्षिप्त स्तर:"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: settings.ui:112
+#: settings.ui:142
 #, fuzzy
 #| msgid "Fallback ch&aracter encoding:"
 msgid "Fallback character e&ncoding:"
 msgstr "क्यारेक्टर सङ्केतन पछि हटाउनुहोस्:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: settings.ui:138
+#: settings.ui:168
 msgid "&Override character encoding:"
 msgstr "क्यारेक्टर सङ्केतन अधिरोहण गर्नुहोस्:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: settings.ui:188
+#: settings.ui:192
 msgid "Minimum font size:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AccessKeyEnabled)
-#: settings.ui:207
-msgid "Enable Access Key"
 msgstr ""
 
 #: urlhandlermanager.cpp:520
@@ -2202,6 +2218,11 @@ msgstr ""
 #: viewer_p.cpp:3174
 msgid "Activate Caret Browsing"
 msgstr ""
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "General"
+#~ msgstr "साधारण"
 
 #~ msgid "File Already Exists"
 #~ msgstr "फाइल पहिलानै अवस्थित छ"
@@ -5822,9 +5843,6 @@ msgstr ""
 #~ "निम्न उपसर्गका कुनै पनि क्रम पहिचान गर्नुहोस्\n"
 #~ "(प्रविष्टि केस सम्वेदनशील नियमित अभिव्यक्ति हुन्):"
 
-#~ msgid "A&dd..."
-#~ msgstr "थप्नुहोस्..."
-
 #~ msgid "Re&move"
 #~ msgstr "हटाउनुहोस्"
 
@@ -5837,9 +5855,6 @@ msgstr ""
 #~ msgid "For&ward Subject Prefixes"
 #~ msgstr "विषयवस्तु उपसर्ग पठाउनुहोस्"
 
-#~ msgid "Remo&ve"
-#~ msgstr "हटाउनुहोस्"
-
 #~ msgid "Enter new forward prefix:"
 #~ msgstr "नयाँ अगाडि उपसर्ग प्रविष्ट गर्नुहोस्:"
 
@@ -5849,9 +5864,6 @@ msgstr ""
 #~ msgstr ""
 #~ "यो सूची सबै आवश्यक क्यारेक्टर समावेश गर्ने चारसेटका लागि माथि देखि तलसम्मको प्रत्येक "
 #~ "बाह्यगमन सन्देशका लागि चेक गरिन्छ ।"
-
-#~ msgid "&Modify..."
-#~ msgstr "परिमार्जन गर्नुहोस्..."
 
 #~ msgid "Enter charset:"
 #~ msgstr "चारसेट प्रविष्ट गर्नुहोस्:"
@@ -10413,10 +10425,6 @@ msgstr ""
 #~ msgstr "उद्धरण हेडर"
 
 #, fuzzy
-#~ msgid "Headers as Is"
-#~ msgstr "हेडर"
-
-#, fuzzy
 #~ msgid "Header Content"
 #~ msgstr "हेडर सामाग्री"
 
@@ -14110,11 +14118,6 @@ msgstr ""
 #~ msgctxt "@title:tab Advanced theme settings"
 #~ msgid "Advanced"
 #~ msgstr "उन्नत"
-
-#, fuzzy
-#~| msgid "H&eaders"
-#~ msgid "Header:"
-#~ msgstr "हेडर"
 
 #, fuzzy
 #~| msgid "Size"
