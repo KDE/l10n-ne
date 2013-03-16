@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-14 03:09+0100\n"
+"POT-Creation-Date: 2013-03-16 02:24+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1472,6 +1472,7 @@ msgstr "ग्रिड खाली स्थान"
 #. i18n: ectx: Menu (Image)
 #: krita.rc:75
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:5
 #: plugins/extensions/rotateimage/rotateimage.rc:4
 #: plugins/extensions/shearimage/shearimage.rc:4
 #: sdk/templates/view/APPNAMELC.rc:4
@@ -1852,6 +1853,7 @@ msgstr "तह प्रकार रूपान्तरण गर्नुह
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:7
 #: plugins/extensions/dropshadow/dropshadow.rc:4
 #: plugins/extensions/metadataeditor/metadataeditor.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:10
 #: plugins/extensions/rotateimage/rotateimage.rc:17
 #: plugins/extensions/shearimage/shearimage.rc:7
 msgid "La&yer"
@@ -3580,7 +3582,10 @@ msgid "Height"
 msgstr "उचाइ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
 #: plugins/extensions/imagesize/wdg_canvassize.ui:138
+#: plugins/extensions/offsetimage/kis_offset_processing_visitor.cpp:109
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:20
 msgid "Offset"
 msgstr "अफसेट"
 
@@ -4601,12 +4606,54 @@ msgstr "यसद्वारा चयन खुम्च्याउनुह�
 msgid "Shrink from image border"
 msgstr "छवि किनाराबाट खुम्च्याउनुहोस्"
 
+#: plugins/extensions/offsetimage/dlg_offsetimage.cpp:28
+#: plugins/extensions/offsetimage/offsetimage.cpp:72
+#, fuzzy
+#| msgid "Offset X:"
+msgid "Offset Image"
+msgstr "अफसेट X:"
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:47
+#, fuzzy
+#| msgid "&Shear Image..."
+msgid "&Offset Image..."
+msgstr "छवि काट्नुहोस्..."
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:51
+#, fuzzy
+#| msgid "&Adjustment Layer..."
+msgid "&Offset Layer..."
+msgstr "समायोजन तह..."
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:96
+#, fuzzy
+#| msgid "Offset X:"
+msgid "Offset Layer"
+msgstr "अफसेट X:"
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgOffsetImage)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:14
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 #: plugins/extensions/rotateimage/rotateimage.cc:108
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 msgid "Rotate Image"
 msgstr "छवि परिक्रमण"
+
+#. i18n: ectx: property (text), widget (QLabel, xLabel)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:31
+msgid "X:"
+msgstr "X:"
+
+#. i18n: ectx: property (text), widget (QLabel, yLabel)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:52
+msgid "Y:"
+msgstr "Y:"
+
+#. i18n: ectx: property (text), widget (QPushButton, middleOffsetBtn)
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:80
+msgid "Offset by x/2, y/2"
+msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:46
 msgid "&Rotate Image..."
@@ -13039,14 +13086,8 @@ msgstr "रङस्थान"
 #~ msgid "Overview"
 #~ msgstr "समिक्षा"
 
-#~ msgid "X:"
-#~ msgstr "X:"
-
 #~ msgid "00000"
 #~ msgstr "00000"
-
-#~ msgid "Y:"
-#~ msgstr "Y:"
 
 #~ msgid "1:1"
 #~ msgstr "१:१"
@@ -15890,9 +15931,6 @@ msgstr "रङस्थान"
 
 #~ msgid "&New"
 #~ msgstr "नयाँ"
-
-#~ msgid "&Adjustment Layer..."
-#~ msgstr "समायोजन तह..."
 
 #~ msgid "DublinCore"
 #~ msgstr "डब्लिन कोर"
