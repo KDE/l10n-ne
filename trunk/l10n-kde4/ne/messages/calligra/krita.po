@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-24 02:27+0100\n"
+"POT-Creation-Date: 2013-03-25 02:20+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1211,7 +1211,7 @@ msgstr "छवि प्रकार रूपान्तरण गर्नु
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:772
+#: image/kis_image.cc:920 ui/kis_layer_manager.cc:770
 msgid "Flatten Image"
 msgstr "समतल छवि"
 
@@ -2049,7 +2049,7 @@ msgstr "तह गुण"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/extensions/compose/wdg_compose.ui:22
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:84
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:82
 msgid "Layer name:"
 msgstr "तह नाम:"
 
@@ -3361,7 +3361,7 @@ msgstr "अस्पष्ट अर्धव्यास:"
 #. i18n: ectx: property (text), widget (QLabel, lblCanvasBorderColor)
 #. i18n: ectx: property (text), widget (QLabel, lblColor)
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:38
-#: plugins/filters/colors/wdgcolortoalphabase.ui:17
+#: plugins/filters/colors/wdgcolortoalphabase.ui:20
 #: ui/forms/wdgdisplaysettings.ui:38 ui/forms/wdgdisplaysettings.ui:131
 msgid "Color:"
 msgstr "रङ:"
@@ -4523,7 +4523,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:120
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:119
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:185
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:35
@@ -4779,7 +4779,7 @@ msgid "Separate Image"
 msgstr "छवि विभाजन गर्नुहोस्"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:236
-#: ui/kis_layer_manager.cc:869
+#: ui/kis_layer_manager.cc:867
 msgid "Export Layer"
 msgstr "तह निर्यात गर्नुहोस्"
 
@@ -5118,7 +5118,7 @@ msgstr "च्यानल न्यून पार्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/filters/colors/wdgcolortoalphabase.ui:30
+#: plugins/filters/colors/wdgcolortoalphabase.ui:61
 #: plugins/filters/unsharp/wdgunsharp.ui:68
 msgid "Threshold:"
 msgstr "थ्रेसहोल्ड:"
@@ -5153,7 +5153,7 @@ msgstr "चम्किलोपन / व्यतिरेक"
 msgid "&HSV Adjustment..."
 msgstr "रङ समायोजन"
 
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:124
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:123
 msgid "Lightness"
 msgstr "हलुकापन"
 
@@ -5346,7 +5346,7 @@ msgstr "अस्पष्ट"
 msgid "&Emboss with Variable Depth..."
 msgstr "चल गहिराइसँग अलंकृत गर्नुहोस्..."
 
-#: plugins/filters/embossfilter/kis_emboss_filter.cpp:163
+#: plugins/filters/embossfilter/kis_emboss_filter.cpp:162
 msgid "Depth"
 msgstr "गहिराइ"
 
@@ -5388,7 +5388,7 @@ msgstr "गउसियन होहल्ला घटाउने"
 
 #. i18n: ectx: property (text), widget (QCheckBox, thresholdCBox)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:54
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:52
 #: plugins/paintops/hairy/wdgbristleoptions.ui:116
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
@@ -5398,7 +5398,7 @@ msgstr "गउसियन होहल्ला घटाउने"
 msgid "Threshold"
 msgstr "थ्रेसहोल्ड:"
 
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
 #, fuzzy
 #| msgid "Tile size"
 msgid "Window size"
@@ -6176,11 +6176,19 @@ msgctxt "vertical resolution"
 msgid "Vertical:"
 msgstr "ठाडो:"
 
-#: plugins/formats/png/kis_png_export.cc:89
+#: plugins/formats/png/kis_png_export.cc:91
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "PNG Export Options"
 msgstr "ज्यामिति विकल्प"
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Cannot export images in this colorspace or channel depth to PNG"
+msgstr ""
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Krita PNG Export"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisWdgOptionsPNG)
 #: plugins/formats/png/kis_wdg_options_png.ui:14
@@ -9173,26 +9181,26 @@ msgstr "म्याजेन्टा"
 msgid "Paint with brushes"
 msgstr "बक्रसँग रङ्गाउनुहोस्"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:180
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:251
 msgid "Cannot pick a color as no layer is active."
 msgstr "तह सक्रिय नभएको रूपमा रङ लिन सक्दैन"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:184
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:255
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr "सक्रिय तह दृश्यात्मक नभएको रूपमा रङ लिन सक्दैन"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr "%1 रङदानी फाइलमा लेख्न सकिदैन । यो पढ्ने-मात्र हुन सक्दछ ।"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 msgid "Palette"
 msgstr "रङदानी"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.h:96
+#: plugins/tools/defaulttools/kis_tool_colorpicker.h:115
 #, fuzzy
 #| msgid "Select a color from the image or current layer"
 msgid "Select a color from the image or current layer"
@@ -10149,7 +10157,7 @@ msgstr "दृश्य ग्रिड"
 msgid "Clear Perspective Grid"
 msgstr "दृश्य ग्रिड"
 
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:104
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:103
 msgid "No configuration options are available for this filter"
 msgstr "यो फिल्टरका लागि कुनै कन्फिगरेसन विकल्प उपलब्ध छैन"
 
@@ -12083,7 +12091,7 @@ msgstr "समतल छवि"
 msgid "&Flatten Layer"
 msgstr "फिल्टर ग्यालेरी"
 
-#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:841
+#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:839
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -12111,53 +12119,53 @@ msgstr "हालको तहको साइजमा छवि रिसा�
 msgid "Add new paint layer"
 msgstr "तह रङ्याउनुहोस्"
 
-#: ui/kis_layer_manager.cc:372
+#: ui/kis_layer_manager.cc:370
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:417
+#: ui/kis_layer_manager.cc:415
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Could not add layer to image."
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Layer Error"
 msgstr "तह त्रुटि"
 
-#: ui/kis_layer_manager.cc:585
+#: ui/kis_layer_manager.cc:583
 #, fuzzy
 #| msgid "Filter Mask..."
 msgid "New Filter Layer"
 msgstr "फिल्टर मास्क..."
 
-#: ui/kis_layer_manager.cc:729
+#: ui/kis_layer_manager.cc:727
 msgid "Scale Layer"
 msgstr "तह मापन गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:771
+#: ui/kis_layer_manager.cc:769
 msgid "The image contains hidden layers that will be lost."
 msgstr "छविले हराउने लुकाइएको तहहरू समावेश गर्दछ ।"
 
-#: ui/kis_layer_manager.cc:773
+#: ui/kis_layer_manager.cc:771
 msgid "&Flatten Image"
 msgstr "समतल छवि"
 
-#: ui/kis_layer_manager.cc:929
+#: ui/kis_layer_manager.cc:927
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:932
+#: ui/kis_layer_manager.cc:930
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -12171,46 +12179,46 @@ msgstr "चयनमा मास्क"
 msgid "Create Layer from Mask"
 msgstr "मास्कबाट तह सिर्जना गर्नुहोस्..."
 
-#: ui/kis_mask_manager.cc:139
+#: ui/kis_mask_manager.cc:138
 #, kde-format
 msgid "Selection <numid>%1</numid>"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:155
+#: ui/kis_mask_manager.cc:152
 msgid "Transparency Mask"
 msgstr "पारदर्शीता मास्क"
 
-#: ui/kis_mask_manager.cc:168
+#: ui/kis_mask_manager.cc:163
 #, fuzzy
 #| msgid "Filter Mask..."
 msgid "New filter mask"
 msgstr "फिल्टर मास्क..."
 
-#: ui/kis_mask_manager.cc:180
+#: ui/kis_mask_manager.cc:175
 #, fuzzy
 #| msgid "Filter Mask..."
 msgid "New Filter Mask"
 msgstr "फिल्टर मास्क..."
 
-#: ui/kis_mask_manager.cc:202
+#: ui/kis_mask_manager.cc:196
 #, fuzzy
 #| msgid "Mask To Selection"
 msgid "Mask to Selection"
 msgstr "चयनमा मास्क"
 
-#: ui/kis_mask_manager.cc:245
+#: ui/kis_mask_manager.cc:237
 #, fuzzy
 #| msgid "Create Layer from Mask..."
 msgid "Layer from Mask"
 msgstr "मास्कबाट तह सिर्जना गर्नुहोस्..."
 
-#: ui/kis_mask_manager.cc:260
+#: ui/kis_mask_manager.cc:250
 #, fuzzy
 #| msgid "Duplicate of '%1'"
 msgid "Duplication of "
 msgstr "'%1' को नक्कल"
 
-#: ui/kis_mask_manager.cc:294
+#: ui/kis_mask_manager.cc:280
 #, fuzzy
 #| msgid "Mask Properties"
 msgid "Effect Mask Properties"
@@ -12847,7 +12855,7 @@ msgstr ""
 msgid "Detach from Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
+#: ui/widgets/kis_wdg_generator.cpp:138 ui/widgets/kis_wdg_generator.cpp:151
 #, fuzzy
 #| msgid "No configuration option."
 msgid "No configuration options."
