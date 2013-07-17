@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-10 07:42+0000\n"
+"POT-Creation-Date: 2013-07-17 01:42+0000\n"
 "PO-Revision-Date: 2007-09-17 18:03+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3688,7 +3688,8 @@ msgstr "शीर्षक"
 #. i18n: ectx: property (text), widget (QPushButton, m_btnEdit)
 #. i18n: ectx: property (text), widget (QPushButton, m_edit)
 #: kopete/kopeteui.rc:17 plugins/autoreplace/autoreplaceprefs.ui:137
-#: plugins/contactnotes/contactnotesui.rc:5 plugins/history/historyui.rc:5
+#: plugins/contactnotes/contactnotesui.rc:5
+#: plugins/cryptography/cryptographyui.rc:5 plugins/history/historyui.rc:5
 #: plugins/history2/history2ui.rc:5 plugins/otr/otrui.rc:5
 #: plugins/statistics/statisticsui.rc:5 plugins/translator/translatorui.rc:5
 #: protocols/groupwise/ui/gwcustomstatus.ui:44 protocols/skype/skypeui.rc:5
@@ -6851,6 +6852,300 @@ msgstr " %1 बारे द्रष्टब्य:"
 msgid "&Notes"
 msgstr "टिपोट"
 
+#. i18n: ectx: Menu (tools)
+#: plugins/cryptography/cryptographychatui.rc:5
+#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
+#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
+#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
+#: protocols/skype/skypechatui.rc:5
+#, fuzzy
+msgid "&Tools"
+msgstr "रङ"
+
+#. i18n: ectx: ToolBar (cryptographyToolBar)
+#: plugins/cryptography/cryptographychatui.rc:12
+#, fuzzy
+#| msgid "Cryptography"
+msgid "Cryptography Toolbar"
+msgstr "गुप्तलेखन"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:56
+msgid "Cryptography"
+msgstr "गुप्तलेखन"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:81
+#, fuzzy
+#| msgid "Encrypt Messages"
+msgctxt "@action toggle action"
+msgid "Encrypt Messages"
+msgstr "सन्देश गुप्तिकृत गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:83
+#, fuzzy
+#| msgid "&Send Message"
+msgctxt "@action toggle action"
+msgid "Sign Messages"
+msgstr "सन्देश पठाउनुहोस्"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:85
+#, fuzzy
+#| msgid "Export contact's details to the KDE Address Book"
+msgctxt "@action toggle action"
+msgid "Export Contacts' Keys to Address Book"
+msgstr "केडीई ठेगाना पुस्तिकामा सम्पर्कको विवरण निर्यात गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:109
+msgctxt "@info"
+msgid ""
+"You have not selected a private key for yourself, so signing is not "
+"possible. Please select a private key in the Cryptography preferences dialog."
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:110
+#, fuzzy
+#| msgid "Private Key List"
+msgid "No Private Key"
+msgstr "निजी कुञ्जी सूची"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:164
+msgctxt "@info"
+msgid ""
+"This protocol may not work with messages that are encrypted. This is because "
+"encrypted messages are very long, and the server or peer may reject them due "
+"to their length. To avoid being signed off or your account being warned or "
+"temporarily suspended, turn off encryption."
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:165
+#, fuzzy
+#| msgid "Unsupported protocol version."
+msgid "Cryptography Unsupported Protocol"
+msgstr "समर्थन नगरिएको प्रोटोकल संस्करण"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:172
+#, fuzzy, kde-format
+#| msgid "General permission to read messages in the chatroom"
+msgctxt "@info"
+msgid ""
+"You need to select a public key for %2 to send encrypted messages to that "
+"contact."
+msgid_plural ""
+"You need to select a public key for the following meta-contacts to send "
+"encrypted messages to them:\n"
+"%2"
+msgstr[0] "कुराकानीरुममा सन्देश पढ्नलाई साधारण अनुमति"
+msgstr[1] "कुराकानीरुममा सन्देश पढ्नलाई साधारण अनुमति"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:174
+msgid "Missing public key"
+msgid_plural "Missing public keys"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:92
+#, fuzzy
+#| msgid "Select Public Key"
+msgctxt "@action"
+msgid "&Select Public Key..."
+msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyplugin.cpp:98
+#, fuzzy
+#| msgid "Export to Address Book"
+msgctxt "@action"
+msgid "&Export Public Keys To Address Book..."
+msgstr "ठेगाना पुस्तिकामा निर्यात गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyplugin.cpp:382
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This protocol %1 may not work with messages that are encrypted. This is "
+"because encrypted messages are very long, and the server or peer may reject "
+"them due to their length. To avoid being signed off or your account being "
+"warned or temporarily suspended, turn off encryption."
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:383
+#, fuzzy, kde-format
+#| msgid "Unsupported protocol version."
+msgid "Cryptography Unsupported Protocol %1"
+msgstr "समर्थन नगरिएको प्रोटोकल संस्करण"
+
+#: plugins/cryptography/cryptographyplugin.cpp:419
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Cryptography plugin has found an encryption key for %1 (%2) in your KDE "
+"address book. Do you want to use key %3 as this contact's public key? "
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:420
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Public Key Found"
+msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyplugin.cpp:431
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Public Keys Found"
+msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyplugin.cpp:434
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Cryptography plugin has found multiple encryption keys for %1 (%2) in your "
+"KDE address book. To use one of these keys, select it and choose OK."
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:43
+#, fuzzy
+#| msgid "Private Key List"
+msgid "Private Key: "
+msgstr "निजी कुञ्जी सूची"
+
+#: plugins/cryptography/cryptographypreferences.cpp:46
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgctxt "@label:chooser"
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr "तत्काल सन्देश मार्फत तपाईँले सञ्चार गर्न चाहनुभएको सम्पर्क चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographypreferences.cpp:47
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr "तत्काल सन्देश मार्फत तपाईँले सञ्चार गर्न चाहनुभएको सम्पर्क चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographypreferences.cpp:48
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgctxt "@info:tooltip"
+msgid "The private key used for decryption and signing"
+msgstr "तत्काल सन्देश मार्फत तपाईँले सञ्चार गर्न चाहनुभएको सम्पर्क चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographypreferences.cpp:49
+msgctxt "@info:whatsthis"
+msgid ""
+"View and change the private key used for signing and encrypting messages "
+"using the Cryptography plugin"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:51
+msgctxt "@info"
+msgid ""
+"<para>Before you can sign messages or receive encrypted ones, you must "
+"select a private key for yourself.</para><para>Before you can send encrypted "
+"messages to someone, you must select their public key by right-clicking on "
+"their name in your contact list and choosing \"Select Public Key\".</para>"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:54
+msgid "Sign messages in clearsign mode"
+msgstr ""
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:40
+msgid "Select Contact's Public Key"
+msgstr "सम्पर्कको सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:49
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgctxt "@label:chooser"
+msgid "Select the key you want to use encrypt messages to the recipient"
+msgstr "तत्काल सन्देश मार्फत तपाईँले सञ्चार गर्न चाहनुभएको सम्पर्क चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:50
+#, fuzzy
+#| msgid "Select public key for %1"
+msgid "Select public key"
+msgstr " %1 का लागि सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:53
+#, fuzzy, kde-format
+#| msgid "Select public key for %1"
+msgctxt "@label:chooser"
+msgid "Select public key for %1"
+msgstr " %1 का लागि सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#. i18n: ectx: label, entry, group (Cryptography Plugin)
+#: plugins/cryptography/cryptographysettings.kcfg:12
+msgid "User's private key fingerprint."
+msgstr ""
+
+#. i18n: ectx: label, entry, group (Cryptography Plugin)
+#: plugins/cryptography/cryptographysettings.kcfg:16
+msgid "Sign messages in clearsign mode."
+msgstr ""
+
+#: plugins/cryptography/exportkeys.cpp:40
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Export Public Keys"
+msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
+
+#: plugins/cryptography/exportkeys.cpp:42
+#, fuzzy
+msgctxt "@action:button"
+msgid "Export"
+msgstr "पोर्ट:"
+
+#: plugins/cryptography/exportkeys.cpp:42
+#, fuzzy
+#| msgid "Export to Address Book"
+msgctxt "@info:tooltip"
+msgid "Export checked keys to address book"
+msgstr "ठेगाना पुस्तिकामा निर्यात गर्नुहोस्"
+
+#: plugins/cryptography/exportkeys.cpp:75
+#, fuzzy
+#| msgid "No Contacts with Photo Support"
+msgctxt "@item:inlistbox"
+msgid "&lt;No metacontacts with keys to export&gt;"
+msgstr "फोटो समर्थनसँग कुनै सम्पर्क छैन"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/cryptography/exportkeysbase.ui:17
+msgid ""
+"Cryptography plugin will export keys for the chosen metacontacts. If no "
+"address book entry has been linked to each metacontact, one will be created."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KListWidget, keyList)
+#: plugins/cryptography/exportkeysbase.ui:27
+#, fuzzy
+#| msgid "Select Resource"
+msgid "Select Keys to Export"
+msgstr "संसाधान चयन गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, keyList)
+#: plugins/cryptography/exportkeysbase.ui:30
+msgid ""
+"Check the box next to the name and key of each user that you want to export "
+"to the address book."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KListWidget, keyList)
+#: plugins/cryptography/kabckeyselectorbase.ui:27
+#, fuzzy
+#| msgid "Select Resource"
+msgid "Select Keys to Use"
+msgstr "संसाधान चयन गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, keyList)
+#: plugins/cryptography/kabckeyselectorbase.ui:30
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgid "Select the key you want to use for to encrypt to the metacontact"
+msgstr "तत्काल सन्देश मार्फत तपाईँले सञ्चार गर्न चाहनुभएको सम्पर्क चयन गर्नुहोस्"
+
 #: plugins/highlight/highlightconfig.cpp:71
 msgid "-New filter-"
 msgstr "-नयाँ फिल्टर-"
@@ -6984,15 +7279,6 @@ msgid ""
 msgstr ""
 " %1 मा पुरानो इतिहास पद वर्णन गर्दैछ:\n"
 "%2"
-
-#. i18n: ectx: Menu (tools)
-#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
-#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
-#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
-#: protocols/skype/skypechatui.rc:5
-#, fuzzy
-msgid "&Tools"
-msgstr "रङ"
 
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History Plugin)
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History2 Plugin)
@@ -23215,11 +23501,6 @@ msgstr "खाता रुजु - याहू"
 #~ msgstr "हस्ताक्षर अवैध छ ।"
 
 #, fuzzy
-#~| msgid "General permission to read messages in the chatroom"
-#~ msgid "You do not have permission to send a message to this contact."
-#~ msgstr "कुराकानीरुममा सन्देश पढ्नलाई साधारण अनुमति"
-
-#, fuzzy
 #~ msgid "Message is too long."
 #~ msgstr "सन्देश अति लामो छ ।"
 
@@ -24856,11 +25137,6 @@ msgstr "खाता रुजु - याहू"
 #~ msgid "Export Contacts"
 #~ msgstr "सम्पर्क निर्यात गर्दछ"
 
-#, fuzzy
-#~| msgid "Cryptography"
-#~ msgid "Cryptography Toolbar"
-#~ msgstr "गुप्तलेखन"
-
 #~ msgid "Cache Passphrase"
 #~ msgstr "क्यास पासफ्रेज"
 
@@ -24877,18 +25153,6 @@ msgstr "खाता रुजु - याहू"
 #~ msgid "Until Kopete closes (Dangerous)"
 #~ msgstr "कोपेट बन्द नभएसम्म"
 
-#~ msgid "Select Contact's Public Key"
-#~ msgstr "सम्पर्कको सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#~ msgid "Select public key for %1"
-#~ msgstr " %1 का लागि सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#, fuzzy
-#~| msgid ""
-#~| "Select the contact you want to communicate with via Instant Messaging"
-#~ msgid "Select the key you want to use to decrypt and sign messages"
-#~ msgstr "तत्काल सन्देश मार्फत तपाईँले सञ्चार गर्न चाहनुभएको सम्पर्क चयन गर्नुहोस्"
-
 #, fuzzy
 #~ msgid "Ask for passphrase on Kopete startup (Recommended)"
 #~ msgstr "पासफ्रेजका लागि नसोध्नुहोस्"
@@ -24898,59 +25162,11 @@ msgstr "खाता रुजु - याहू"
 #~ msgstr "पासफ्रेजका लागि नसोध्नुहोस्"
 
 #, fuzzy
-#~| msgid "Select Public Key"
-#~ msgid "Export Public Keys"
-#~ msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Export to Address Book"
-#~ msgid "Export checked keys to address book"
-#~ msgstr "ठेगाना पुस्तिकामा निर्यात गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "No Contacts with Photo Support"
-#~ msgid "<No meta-contacts with keys to export>"
-#~ msgstr "फोटो समर्थनसँग कुनै सम्पर्क छैन"
-
-#, fuzzy
-#~| msgid "Select Public Key"
-#~ msgid "&Select Public Key..."
-#~ msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Export to Address Book"
-#~ msgid "&Export Public Keys To Address Book..."
-#~ msgstr "ठेगाना पुस्तिकामा निर्यात गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Unsupported protocol version."
-#~ msgid "Cryptography Unsupported Protocol"
-#~ msgstr "समर्थन नगरिएको प्रोटोकल संस्करण"
-
-#, fuzzy
-#~| msgid "Select Public Key"
-#~ msgid "Public Key Found"
-#~ msgstr "सार्वजनिक कुञ्जी चयन गर्नुहोस्"
-
-#, fuzzy
 #~| msgid "Enter passphrase for <b>%1</b>:"
 #~ msgid ""
 #~ "Enter passphrase for secret key %1:\n"
 #~ "You have %2 tries left."
 #~ msgstr "<b>%1</b> का लागि पासफ्रेज प्रविष्ट गर्नुहोस्:"
-
-#~ msgid "Cryptography"
-#~ msgstr "गुप्तलेखन"
-
-#, fuzzy
-#~| msgid "&Send Message"
-#~ msgid "Sign Messages"
-#~ msgstr "सन्देश पठाउनुहोस्"
-
-#, fuzzy
-#~| msgid "Export contact's details to the KDE Address Book"
-#~ msgid "Export Contacts' Keys to Address Book"
-#~ msgstr "केडीई ठेगाना पुस्तिकामा सम्पर्कको विवरण निर्यात गर्नुहोस्"
 
 #~ msgid "Edit Global Identity Widget"
 #~ msgstr "विश्वव्यापी परिचित विजेट सम्पादन गर्नुहोस्"
