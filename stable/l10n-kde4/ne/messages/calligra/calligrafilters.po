@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:41+0000\n"
+"POT-Creation-Date: 2013-08-10 05:22+0000\n"
 "PO-Revision-Date: 2007-07-29 13:39+0545\n"
 "Last-Translator: Manisha Sharma <manisha@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -19,15 +19,19 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
 msgid "Failed to read data."
 msgstr "डेटा पढ्न असफल भयो ।"
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:68
+#: kchart/genericimageexport/genericimageexport.cpp:81
 msgid "Export Error"
 msgstr "निर्यात त्रुटि"
 
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "विकृत एक्सएमएल डेटा ।"
 
@@ -62,11 +66,13 @@ msgstr "शैली साइज(पिक्सेलमा):"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:108
+#: libdialogfilter/exportsizedia.cpp:87
 msgid "Height:"
 msgstr "उचाइ:"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:119
+#: libdialogfilter/exportsizedia.cpp:82
 msgid "Width:"
 msgstr "चौडाइ:"
 
@@ -75,7 +81,27 @@ msgstr "चौडाइ:"
 msgid "Margin:"
 msgstr "सीमान्त: "
 
-#: karbon/image/ImageExport.cpp:97
+#: karbon/eps/EpsExportDlg.cpp:37
+msgid "EPS Export"
+msgstr "ईपीएस निर्यात"
+
+#: karbon/eps/EpsExportDlg.cpp:42
+msgid "Options"
+msgstr "फ विकल्प"
+
+#: karbon/eps/EpsExportDlg.cpp:45
+msgid "PostScript level 1"
+msgstr "पोस्टस्क्रिप्ट तह १"
+
+#: karbon/eps/EpsExportDlg.cpp:46
+msgid "PostScript level 2"
+msgstr "पोस्टस्क्रिप्ट तह २"
+
+#: karbon/eps/EpsExportDlg.cpp:47
+msgid "PostScript level 3"
+msgstr "पोस्टस्क्रिप्ट तह ३"
+
+#: karbon/image/ImageExport.cpp:99
 msgid "PNG Export Options"
 msgstr "पीएनजी निर्यात विकल्प"
 
@@ -134,6 +160,37 @@ msgstr "रङ खाली स्थान"
 msgid "Opacity"
 msgstr ""
 
+#: kchart/genericimageexport/genericimageexport.cpp:122
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "Failed to write file."
+msgstr "फाइल लेख्न असफल भयो ।"
+
+#: kchart/genericimageexport/genericimageexport.cpp:123
+#, fuzzy, kde-format
+#| msgid "%1 Export Error"
+msgid "%1 Export Error"
+msgstr "निर्यात "
+
+#: libdialogfilter/exportsizedia.cpp:42
+msgid "Export Filter Parameters"
+msgstr "फिल्टर परिमिति निर्यात गर्नुहोस्"
+
+#: libdialogfilter/exportsizedia.cpp:76
+msgid "Keep ratio"
+msgstr "अनुपात राख्नुहोस्।"
+
+#: libdialogfilter/exportsizedia.cpp:98
+msgid "Width (%):"
+msgstr "चौडा (%):"
+
+#: libdialogfilter/exportsizedia.cpp:103
+msgid "Height (%):"
+msgstr "उचाइ (%):"
+
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "PNG Export Error"
+msgstr "पीएनजी निर्यात त्रुटि"
+
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
 #: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
@@ -144,15 +201,15 @@ msgstr ""
 #: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: stage/pptx/PptxXmlSlideReader.cpp:333
-#: words/docx/import/DocxXmlCommentsReader.cpp:89
-#: words/docx/import/DocxXmlDocumentReader.cpp:201
-#: words/docx/import/DocxXmlEndnoteReader.cpp:90
-#: words/docx/import/DocxXmlFontTableReader.cpp:89
-#: words/docx/import/DocxXmlFooterReader.cpp:95
-#: words/docx/import/DocxXmlFootnoteReader.cpp:90
-#: words/docx/import/DocxXmlHeaderReader.cpp:95
-#: words/docx/import/DocxXmlNumberingReader.cpp:87
-#: words/docx/import/DocxXmlSettingsReader.cpp:87
+#: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:201
+#: words/docx/DocxXmlEndnoteReader.cpp:90
+#: words/docx/DocxXmlFontTableReader.cpp:89
+#: words/docx/DocxXmlFooterReader.cpp:95
+#: words/docx/DocxXmlFootnoteReader.cpp:90
+#: words/docx/DocxXmlHeaderReader.cpp:95
+#: words/docx/DocxXmlNumberingReader.cpp:87
+#: words/docx/DocxXmlSettingsReader.cpp:87
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -289,48 +346,184 @@ msgstr ""
 msgid "Could not write block"
 msgstr "फाइलबाट पढ्न सकिएन ।"
 
-#: sheets/csv/csvexport.cc:282
-msgid "<SHEETNAME>"
-msgstr "<SHEETNAME>"
+#: sheets/csv/csvdialog.cpp:61
+msgid "Import"
+msgstr "फ आयात"
 
-#: sheets/csv/csvexportdialog.cpp:46 words/ascii/ImportDialog.cc:50
+#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
+#: words/ascii/ImportDialog.cc:49
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Recommended ( %1 )"
 msgstr "सिफारिस गरिएको ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:47 words/ascii/ImportDialog.cc:51
+#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
+#: words/ascii/ImportDialog.cc:50
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Locale ( %1 )"
 msgstr "लोकेल (%1)"
 
-#: sheets/csv/csvexportdialog.cpp:50 words/ascii/ImportDialog.cc:54
+#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
+#: words/ascii/ImportDialog.cc:53
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Other ( %1 )"
 msgstr "अन्य ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:284 words/ascii/ImportDialog.cc:108
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+msgid "Text"
+msgstr "पाठ"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "सङ्ख्या"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "मुद्रा"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "मिति"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr "दशमलब अल्पविराम सङ्ख्या"
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr "दशमलब बिन्दु सङ्ख्या"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/csvdialog.cpp:454 sheets/csv/dialogui.ui:275
+msgid "None"
+msgstr "कुनै पनि होइन"
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"कृपया तपाईँले निर्दिष्ट गर्नुभएको दायराहरू जाँच गर्नुहोस् । सुरुको मान अन्तिमको मान भन्दा "
+"सानो हुनुपर्छ ।"
+
+#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:284
+#: words/ascii/ImportDialog.cc:107
 #, kde-format
 msgid "Cannot find encoding: %1"
 msgstr "सङ्केतन: %1 फेला पार्न सकिएन"
 
-#: sheets/csv/csvimport.cc:93
+#: sheets/csv/csvexport.cc:283
+msgid "<SHEETNAME>"
+msgstr "<SHEETNAME>"
+
+#: sheets/csv/csvimport.cc:92
 msgid "CSV filter cannot open input file - please report."
 msgstr "सीएसभी फिल्टरले आगत फाइल खोल्न सकेन - कृपया प्रतिवेदन गर्नुहोस् ।"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
 #. i18n: ectx: attribute (title), widget (QWidget, encodingPage)
-#: sheets/csv/exportdialogui.ui:27
-#: sheets/latex/export/latexexportwidget.ui:219
+#: sheets/csv/dialogui.ui:52 sheets/csv/exportdialogui.ui:27
+#: sheets/latex/export/latexexportdia.ui:344
 msgid "Encoding"
 msgstr "सङ्केतन"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: sheets/csv/exportdialogui.ui:35 words/ascii/ImportDialogUI.ui:24
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: sheets/csv/dialogui.ui:66 sheets/csv/exportdialogui.ui:35
+#: words/ascii/ImportDialogUI.ui:30
 msgid "E&ncoding:"
 msgstr "सङ्केतन:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:124
+msgid "Common"
+msgstr "साझा"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, m_delimiterBox)
+#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
+#: sheets/csv/dialogui.ui:141 sheets/csv/exportdialogui.ui:222
+msgid "Delimiter"
+msgstr "डेलिमिटर"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
+#: sheets/csv/dialogui.ui:153 sheets/csv/exportdialogui.ui:228
+msgid "Comma"
+msgstr "अल्पविराम"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
+#: sheets/csv/dialogui.ui:163 sheets/csv/exportdialogui.ui:238
+msgid "Semicolon"
+msgstr "अर्धविराम"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
+#: sheets/csv/dialogui.ui:170 sheets/csv/exportdialogui.ui:245
+msgid "Tabulator"
+msgstr "ट्याबुलेटर"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
+#: sheets/csv/dialogui.ui:177 sheets/csv/exportdialogui.ui:252
+msgid "Space"
+msgstr "खाली स्थान"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
+#: sheets/csv/dialogui.ui:184
+msgid "Other"
+msgstr "अन्य"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
+#: sheets/csv/dialogui.ui:212
+msgid "Ignore duplicate delimiters"
+msgstr "नक्कली डेलिमिटर उपेक्षा गर्नुहोस्"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: sheets/csv/dialogui.ui:227
+msgid "Text&quote:"
+msgstr "पाठ उद्धरण:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: sheets/csv/dialogui.ui:240
+msgid "&Format:"
+msgstr "ढाँचा:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:265 sheets/csv/exportdialogui.ui:329
+msgid "\""
+msgstr "\""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:270 sheets/csv/exportdialogui.ui:334
+msgid "'"
+msgstr "'"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:316
+msgid "Ranges"
+msgstr "दायरा"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: sheets/csv/dialogui.ui:337 sheets/csv/dialogui.ui:390
+msgid "to"
+msgstr "लाई"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3)
+#: sheets/csv/dialogui.ui:370
+msgid "Import lines:"
+msgstr "रेखाहरू आयात गर्नुहोस्:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
+#: sheets/csv/dialogui.ui:430
+msgid "Import columns:"
+msgstr "स्तम्भहरू आयात गर्नुहोस्:"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
+#: sheets/csv/dialogui.ui:504
+msgid "Update"
+msgstr "अद्यावधिक गर्नुहोस्"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupEndOfLine)
 #: sheets/csv/exportdialogui.ui:76
@@ -388,31 +581,6 @@ msgstr "हरेक पाना माथि डेलिमिटर रे�
 msgid "Cells"
 msgstr "कक्षहरु"
 
-#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
-#: sheets/csv/exportdialogui.ui:222
-msgid "Delimiter"
-msgstr "डेलिमिटर"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: sheets/csv/exportdialogui.ui:228
-msgid "Comma"
-msgstr "अल्पविराम"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: sheets/csv/exportdialogui.ui:238
-msgid "Semicolon"
-msgstr "अर्धविराम"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: sheets/csv/exportdialogui.ui:245
-msgid "Tabulator"
-msgstr "ट्याबुलेटर"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: sheets/csv/exportdialogui.ui:252
-msgid "Space"
-msgstr "खाली स्थान"
-
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
 #: sheets/csv/exportdialogui.ui:259
 msgid "Other:"
@@ -422,16 +590,6 @@ msgstr "अन्य:"
 #: sheets/csv/exportdialogui.ui:309
 msgid "Quotes:"
 msgstr "उद्वरण:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:329
-msgid "\""
-msgstr "\""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:334
-msgid "'"
-msgstr "'"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_selectionOnly)
 #: sheets/csv/exportdialogui.ui:365
@@ -578,48 +736,54 @@ msgstr ""
 msgid "Pi&xels between cells:"
 msgstr "कक्षहरू बीच पिक्सेल:"
 
-#: sheets/html/htmlexport.cc:208 sheets/html/htmlexport.cc:384
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
 msgid "Top"
 msgstr "माथि"
 
-#: sheets/latex/export/latexexportdialog.cc:156
+#. i18n: ectx: property (caption), widget (QDialog)
+#: sheets/latex/export/latexexportdia.ui:18
 msgid "Latex Export Filter Configuration"
 msgstr "ल्याटेक्स निर्यात फिल्टर कन्फिगरेसन"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget2)
-#: sheets/latex/export/latexexportwidget.ui:24
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:45
 msgid "Document"
 msgstr "कागजात"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: sheets/latex/export/latexexportwidget.ui:32
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:82
 msgid "Document Style"
 msgstr "कागजात शैली"
 
-#. i18n: ectx: property (text), widget (QRadioButton, latexStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:38
-msgid "Latex style"
-msgstr "ल्याटेक्स शैली"
-
-#. i18n: ectx: property (text), widget (QRadioButton, wordsStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:45
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:97
 #, fuzzy
 #| msgid "KWord style"
 msgid "Words style"
 msgstr "केडीई शब्द शैली"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: sheets/latex/export/latexexportwidget.ui:58
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:116
+msgid "Latex style"
+msgstr "ल्याटेक्स शैली"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:133
 msgid "Document Type"
 msgstr "कागजात प्रकार"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:64
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:148
+msgid "Independent document"
+msgstr "स्वतन्त्र कागजात"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:154
 msgid "The document will be able to be compiled alone"
 msgstr "कागजात एक्लै संकलन गर्न सक्षम हुनेछ ।"
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:67
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:157
 msgid ""
 "The document will be generated as a full latex document since all the "
 "include will be generated before the \\begin[document} and \\end{document} "
@@ -628,18 +792,18 @@ msgstr ""
 "सबै समाविष्ट कागजात \\begin[document} र \\end{document} आदेश अघि सिर्जना हुने भएता "
 "पनि कागजात पूरा ल्याटेक्स कागजातको रूपमा सिर्जना हुनेछ ।"
 
-#. i18n: ectx: property (text), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:70
-msgid "Independent document"
-msgstr "स्वतन्त्र कागजात"
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:173
+msgid "Document to include"
+msgstr "समावेश गर्नुपर्ने कागजात"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:80
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:176
 msgid "Do not generate either the latex header or the document environment"
 msgstr "ल्याटेक्स हेडर वा कागजात परिवेश कुनै पनि सिर्जना नगर्नुहोस् ।"
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:83
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:179
 msgid ""
 "The document will be generated as a latex document which will have to be "
 "included in a main latex document. It will allow you to generate several "
@@ -649,122 +813,137 @@ msgstr ""
 "गर्नुपर्नेछ । यसले तपाईँलाई तपाईँको कागजातका लागि हरेक अध्यायमा विभिन्न साना फाइलहरू "
 "सिर्जना गर्न अनुमति दिन्छ ।"
 
-#. i18n: ectx: property (text), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:86
-msgid "Document to include"
-msgstr "समावेश गर्नुपर्ने कागजात"
-
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: sheets/latex/export/latexexportwidget.ui:98
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:196
 msgid "Document class:"
 msgstr "कागजात वर्ग:"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: sheets/latex/export/latexexportwidget.ui:111
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:212
 msgid "Quality:"
 msgstr "गुणस्तर:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:122
-msgid "Final"
-msgstr "अन्तिम"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:127
-msgid "Draft"
-msgstr "ड्राफ्ट"
-
-#. i18n: ectx: property (text), widget (QLabel, defaultFontSizeTextZone)
-#: sheets/latex/export/latexexportwidget.ui:135
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:228
 msgid "Default font size:"
 msgstr "पूर्वानिर्धारित फन्ट साइज:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget3)
-#: sheets/latex/export/latexexportwidget.ui:176
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:247
+msgid "Final"
+msgstr "अन्तिम"
+
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:252
+msgid "Draft"
+msgstr "ड्राफ्ट"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:273
 msgid "Pictures"
 msgstr "तस्वीर"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: sheets/latex/export/latexexportwidget.ui:182
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:301
 #, fuzzy
 #| msgid "Convert the pictures"
-msgid "Convert the pictures:"
+msgid "Convert the pictures"
 msgstr "तस्वीर रूपान्तरण गर्नुहोस्"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: sheets/latex/export/latexexportwidget.ui:199
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:320
 msgid "Pictures directory:"
 msgstr "तस्वीर डाइरेक्टरी:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: sheets/latex/export/latexexportwidget.ui:213
-#: sheets/latex/export/latexexportwidget.ui:244
+#. i18n: ectx: attribute (title), widget (QWidget)
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: sheets/latex/export/latexexportdia.ui:329
+#: sheets/latex/export/latexexportdia.ui:376
 msgid "Language"
 msgstr "भाषा"
 
-#. i18n: ectx: property (text), widget (QPushButton, addLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:261
-msgid "Add"
-msgstr "हटाउनुहोस्"
-
-#. i18n: ectx: property (text), widget (QPushButton, rmLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:268
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:391
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: sheets/latex/export/latexexportwidget.ui:293
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:407
+msgid "Add"
+msgstr "हटाउनुहोस्"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:443
 msgid "Contents"
 msgstr "सामाग्रीहरु"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: sheets/latex/export/latexexportwidget.ui:301
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:461
 #, fuzzy
 #| msgid "Export informations about author"
-msgid "Export information about author:"
+msgid "Export information about author"
 msgstr "लेखकको बारेमा जानकारी निर्यात गर्नुहोस्।"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: sheets/latex/export/latexexportwidget.ui:321
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:483
 #, fuzzy
 #| msgid "Add a table of content"
-msgid "Add a table of content:"
+msgid "Add a table of content"
 msgstr "सामाग्रीहरुको तालिका  थप्नुहोस्सथप्नुहोस्"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: sheets/latex/export/latexexportwidget.ui:340
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:502
 msgid "Notes"
 msgstr "द्रष्टब्य"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton7)
-#: sheets/latex/export/latexexportwidget.ui:346
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:517
 msgid "Don't export"
 msgstr "निर्यात नगर्नुहोस्"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton5)
-#: sheets/latex/export/latexexportwidget.ui:353
-msgid "Export notes in margin notes"
-msgstr "सीमा द्रष्टब्यमा द्रष्टब्य निर्यात"
-
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton6)
-#: sheets/latex/export/latexexportwidget.ui:360
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:533
 msgid "Export notes in comments"
 msgstr "टिप्पणीहरूमा द्रष्टब्य निर्यात गर्नुहोस्"
 
-#: sheets/opencalc/opencalcexport.cc:914
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:549
+msgid "Export notes in margin notes"
+msgstr "सीमा द्रष्टब्यमा द्रष्टब्य निर्यात"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:574
+msgid "&Help"
+msgstr "सहयोग"
+
+#. i18n: ectx: property (accel), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:577
+msgid "F1"
+msgstr "एफ१"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:605
+msgid "&OK"
+msgstr "ठिक छ।"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:619
+msgid "&Cancel"
+msgstr "रद्द गर्नुहोस्नत"
+
+#: sheets/opencalc/opencalcexport.cc:918
 msgid "Page "
 msgstr "पृष्ठ"
 
-#: sheets/opencalc/opencalcimport.cc:1235
+#: sheets/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "फाइल अनुपोगी जस्तो देखिन्छ । तालिका फड्काइदैछ ।"
 
-#: sheets/opencalc/opencalcimport.cc:1246
+#: sheets/opencalc/opencalcimport.cc:1247
 msgid "Skipping a table."
 msgstr "तालिका फड्काइदैछ ।"
 
-#: sheets/opencalc/opencalcimport.cc:1946
+#: sheets/opencalc/opencalcimport.cc:1947
 #, kde-format
 msgid ""
 "This document was created with OpenOffice.org version '%1'. This filter was "
@@ -776,15 +955,15 @@ msgstr ""
 "व्यवहार देखाउनु सक्छ, जस्तै डेटाको विन्याश वा गलत प्रदर्शन । तपाईँ कागजात रूपान्तरण जारी "
 "राख्न चाहनुहुन्छ ?"
 
-#: sheets/opencalc/opencalcimport.cc:1947
+#: sheets/opencalc/opencalcimport.cc:1948
 msgid "Unsupported document version"
 msgstr "समर्थन नगरिएको कागजात संस्करण"
 
-#: sheets/qpro/qproimport.cc:127
+#: sheets/qpro/qproimport.cc:128
 msgid "QPRO filter cannot open input file - please report."
 msgstr "QPRO फिल्टरले आगत फाइल खोल्न सक्दैन - कृपया प्रतिवेदन गर्नुहोस् ।"
 
-#: sheets/qpro/qproimport.cc:238
+#: sheets/qpro/qproimport.cc:239
 msgid ""
 "Unable to open password protected files.\n"
 "The password algorithm has not been published"
@@ -793,7 +972,7 @@ msgstr ""
 "पासवर्ड एलगोरिदम प्रकाशन गरिएको छैन"
 
 #: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
-#: words/docx/import/DocxImport.cpp:168
+#: words/docx/DocxImport.cpp:168
 #, fuzzy, kde-format
 #| msgid "Could not read from file."
 msgid "Unable to find part for type %1"
@@ -842,7 +1021,7 @@ msgstr "अन्त्यटिप्पणी %1"
 msgid "Slide %1"
 msgstr "स्लाइड शीर्षक"
 
-#: words/ascii/ImportDialog.cc:46
+#: words/ascii/ImportDialog.cc:45
 #, fuzzy
 #| msgid "KWord's Plain Text Import Filter"
 msgid "Words's Plain Text Import Filter"
@@ -854,26 +1033,26 @@ msgid "Plain Text Import Dialog"
 msgstr "खाली पाठ आयात संवाद"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupParagraph)
-#: words/ascii/ImportDialogUI.ui:65
+#: words/ascii/ImportDialogUI.ui:71
 msgid "End of Paragraph"
 msgstr "अनुच्छेदको समाप्ति"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphAsIs)
-#: words/ascii/ImportDialogUI.ui:71
+#: words/ascii/ImportDialogUI.ui:83
 msgid "&As is: At the end of line"
 msgstr "यसप्रकारमा: रेखाको समाप्तिमा"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphSentence)
-#: words/ascii/ImportDialogUI.ui:81
+#: words/ascii/ImportDialogUI.ui:93
 msgid "&Sentence: If the end of line is the end of a sentence"
 msgstr "वाक्य: यदि रेखाको समाप्ति वाक्यको समाप्ति भएमा"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphEmptyLine)
-#: words/ascii/ImportDialogUI.ui:88
+#: words/ascii/ImportDialogUI.ui:100
 msgid "&Empty Line: If the line is empty"
 msgstr ""
 
-#: words/epub/OdtHtmlConverter.cpp:304 words/mobi/OdtMobiHtmlConverter.cpp:325
+#: words/epub/OdtHtmlConverter.cpp:299 words/mobi/OdtMobiHtmlConverter.cpp:325
 #, fuzzy
 #| msgid "End of Line"
 msgid "End notes"
@@ -924,117 +1103,6 @@ msgstr "केडीई शब्दको आरटीएफ आयात फ�
 #| msgid "The file cannot be loaded, as it cannot be opened."
 msgid "The file cannot be loaded."
 msgstr "फाइल खुल्न नसकेको जस्तै, लोड हुन सकेन ।"
-
-#~ msgid "Failed to write file."
-#~ msgstr "फाइल लेख्न असफल भयो ।"
-
-#, fuzzy
-#~| msgid "%1 Export Error"
-#~ msgid "%1 Export Error"
-#~ msgstr "निर्यात "
-
-#~ msgid "Export Filter Parameters"
-#~ msgstr "फिल्टर परिमिति निर्यात गर्नुहोस्"
-
-#~ msgid "Keep ratio"
-#~ msgstr "अनुपात राख्नुहोस्।"
-
-#~ msgid "Width (%):"
-#~ msgstr "चौडा (%):"
-
-#~ msgid "Height (%):"
-#~ msgstr "उचाइ (%):"
-
-#~ msgid "PNG Export Error"
-#~ msgstr "पीएनजी निर्यात त्रुटि"
-
-#~ msgid "EPS Export"
-#~ msgstr "ईपीएस निर्यात"
-
-#~ msgid "Options"
-#~ msgstr "फ विकल्प"
-
-#~ msgid "PostScript level 1"
-#~ msgstr "पोस्टस्क्रिप्ट तह १"
-
-#~ msgid "PostScript level 2"
-#~ msgstr "पोस्टस्क्रिप्ट तह २"
-
-#~ msgid "PostScript level 3"
-#~ msgstr "पोस्टस्क्रिप्ट तह ३"
-
-#~ msgid "Import"
-#~ msgstr "फ आयात"
-
-#~ msgid "Text"
-#~ msgstr "पाठ"
-
-#~ msgid "Number"
-#~ msgstr "सङ्ख्या"
-
-#~ msgid "Currency"
-#~ msgstr "मुद्रा"
-
-#~ msgid "Date"
-#~ msgstr "मिति"
-
-#~ msgid "Decimal Comma Number"
-#~ msgstr "दशमलब अल्पविराम सङ्ख्या"
-
-#~ msgid "Decimal Point Number"
-#~ msgstr "दशमलब बिन्दु सङ्ख्या"
-
-#~ msgid "None"
-#~ msgstr "कुनै पनि होइन"
-
-#~ msgid ""
-#~ "Please check the ranges you specified. The start value must be lower than "
-#~ "the end value."
-#~ msgstr ""
-#~ "कृपया तपाईँले निर्दिष्ट गर्नुभएको दायराहरू जाँच गर्नुहोस् । सुरुको मान अन्तिमको मान भन्दा "
-#~ "सानो हुनुपर्छ ।"
-
-#~ msgid "Common"
-#~ msgstr "साझा"
-
-#~ msgid "Other"
-#~ msgstr "अन्य"
-
-#~ msgid "Ignore duplicate delimiters"
-#~ msgstr "नक्कली डेलिमिटर उपेक्षा गर्नुहोस्"
-
-#~ msgid "Text&quote:"
-#~ msgstr "पाठ उद्धरण:"
-
-#~ msgid "&Format:"
-#~ msgstr "ढाँचा:"
-
-#~ msgid "Ranges"
-#~ msgstr "दायरा"
-
-#~ msgid "to"
-#~ msgstr "लाई"
-
-#~ msgid "Import lines:"
-#~ msgstr "रेखाहरू आयात गर्नुहोस्:"
-
-#~ msgid "Import columns:"
-#~ msgstr "स्तम्भहरू आयात गर्नुहोस्:"
-
-#~ msgid "Update"
-#~ msgstr "अद्यावधिक गर्नुहोस्"
-
-#~ msgid "&Help"
-#~ msgstr "सहयोग"
-
-#~ msgid "F1"
-#~ msgstr "एफ१"
-
-#~ msgid "&OK"
-#~ msgstr "ठिक छ।"
-
-#~ msgid "&Cancel"
-#~ msgstr "रद्द गर्नुहोस्नत"
 
 #, fuzzy
 #~| msgid ""
