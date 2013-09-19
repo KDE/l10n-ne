@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-18 01:46+0000\n"
+"POT-Creation-Date: 2013-09-19 01:39+0000\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3046,11 +3046,36 @@ msgstr ""
 msgid "Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
 
-#: identity/identityeditvcarddialog.cpp:31
+#: identity/identityeditvcarddialog.cpp:32
 #, fuzzy
 #| msgid "Modify Account"
 msgid "Edit own vCard"
 msgstr "खाता परिमार्जन गर्नुहोस्"
+
+#: identity/identityeditvcarddialog.cpp:34
+#, fuzzy
+#| msgid "Collapse the current thread"
+msgid "Delete current vcard"
+msgstr "हालको थ्रेड संक्षिप्त गर्नुहोस्"
+
+#: identity/identityeditvcarddialog.cpp:54
+#, fuzzy
+#| msgid "Are you sure you want to empty the trash folder?"
+msgid "Are you sure to want to delete this vcard?"
+msgstr "के तपाईँ रद्दीटोकरी खाली गर्ने चाहानामा निश्चित हुनुहुन्छ?"
+
+#: identity/identityeditvcarddialog.cpp:54
+#: identity/identityeditvcarddialog.cpp:66
+#, fuzzy
+#| msgid "Deleted"
+msgid "Delete vcard"
+msgstr "मेटिएको"
+
+#: identity/identityeditvcarddialog.cpp:66
+#, fuzzy
+#| msgid "Could not sync maildir folder."
+msgid "We can not delete vcard file."
+msgstr "maildir फोल्डर समक्रमण गर्न सकेन ।"
 
 #: identity/identitylistview.cpp:98
 #, kde-format
@@ -3987,7 +4012,7 @@ msgstr "सन्देश सार्न रद्द गरियो ।"
 msgid "Jump to Folder"
 msgstr "फोल्डरमा जानुहोस्"
 
-#: kmmainwidget.cpp:2396
+#: kmmainwidget.cpp:2396 vacationmanager.cpp:59
 msgid ""
 "KMail's Out of Office Reply functionality relies on server-side filtering. "
 "You have not yet configured an IMAP server for this.\n"
@@ -3997,7 +4022,7 @@ msgstr ""
 "तपाईँले हालसम्म यसका लागि एउटा IMAP सर्भर कन्फिगर गर्नु भएको छैन ।\n"
 "तपाईँले यो IMAP खाता कन्फिगरेसनको \"फिल्टरिङ\" ट्याबमा गर्न सक्नुहुन्छ ।"
 
-#: kmmainwidget.cpp:2401
+#: kmmainwidget.cpp:2401 vacationmanager.cpp:64
 msgid "No Server-Side Filtering Configured"
 msgstr "सर्भर साइड फिल्टरिङ कन्फिगर गरिएको छैन"
 
@@ -4579,9 +4604,9 @@ msgid "Filter %1"
 msgstr "फिल्टर %1"
 
 #: kmmainwidget.cpp:4484
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Edit \"Out of Office\" Replies..."
-msgid "Out of office reply active"
+msgid "Out of office reply active on server \"%1\""
 msgstr "\"अफिस बाहिरको\" जवाफ सम्पादन गर्नुहोस्..."
 
 #: kmmainwidget.cpp:4589
@@ -4935,7 +4960,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "जवाफ दिनुहोस्"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:236
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:240
 msgid "&Reply..."
 msgstr "जवाफ दिनुहोस्..."
 
@@ -4943,11 +4968,11 @@ msgstr "जवाफ दिनुहोस्..."
 msgid "Reply to A&uthor..."
 msgstr "लेखकलाई जवाफ दिनुहोस्..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:240
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:244
 msgid "Reply to &All..."
 msgstr "सबैलाई जवाफ दिनुहोस्..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:244
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:248
 msgid "Reply to Mailing-&List..."
 msgstr "पत्राचार सूचीलाई जवाफ दिनुहोस्..."
 
@@ -4992,7 +5017,7 @@ msgstr "सन्देश सम्पादन गर्नुहोस्"
 msgid "Add Note..."
 msgstr "थप्नुहोस्..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:248
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:252
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "पठाउनुहोस्"
@@ -5233,82 +5258,82 @@ msgstr ""
 msgid "Find Messages"
 msgstr "सन्देश फेला पार्नुहोस्"
 
-#: searchdialog/searchwindow.cpp:107
+#: searchdialog/searchwindow.cpp:111
 #, fuzzy
 #| msgid "&Search"
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "खोज्नुहोस्"
 
-#: searchdialog/searchwindow.cpp:112
+#: searchdialog/searchwindow.cpp:116
 msgid "Debug query"
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:198 searchdialog/searchwindow.cpp:391
+#: searchdialog/searchwindow.cpp:202 searchdialog/searchwindow.cpp:395
 msgid "Last Search"
 msgstr "अन्तिम खोजी"
 
-#: searchdialog/searchwindow.cpp:253
+#: searchdialog/searchwindow.cpp:257
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "इनलाइन..."
 
-#: searchdialog/searchwindow.cpp:258
+#: searchdialog/searchwindow.cpp:262
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "सङ्लग्नताका रूपमा..."
 
-#: searchdialog/searchwindow.cpp:272
+#: searchdialog/searchwindow.cpp:276
 msgid "Save Attachments..."
 msgstr "सङ्लग्नता बचत गर्नुहोस्..."
 
-#: searchdialog/searchwindow.cpp:278
+#: searchdialog/searchwindow.cpp:282
 msgid "Clear Selection"
 msgstr "चयन खाली गर्नुहोस्"
 
-#: searchdialog/searchwindow.cpp:362
+#: searchdialog/searchwindow.cpp:366
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 मिल्दो"
 msgstr[1] "%1 मिल्छ"
 
-#: searchdialog/searchwindow.cpp:415
+#: searchdialog/searchwindow.cpp:419
 #, fuzzy
 #| msgid "Could not sync maildir folder."
 msgid "You did not selected a valid folder."
 msgstr "maildir फोल्डर समक्रमण गर्न सकेन ।"
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:447
 msgid "You forgot to define condition."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:448
+#: searchdialog/searchwindow.cpp:452
 msgid "All folders selected are empty or were not indexed."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:454
+#: searchdialog/searchwindow.cpp:458
 #, fuzzy
 #| msgid " message"
 #| msgid_plural " messages"
 msgid "No message found."
 msgstr " सन्देश"
 
-#: searchdialog/searchwindow.cpp:478
+#: searchdialog/searchwindow.cpp:482
 #, fuzzy
 #| msgid "Subscription..."
 msgid "Searching..."
 msgstr "सदस्यता..."
 
-#: searchdialog/searchwindow.cpp:486
+#: searchdialog/searchwindow.cpp:490
 #, fuzzy, kde-format
 #| msgid "Move Messages to Folder"
 msgid "Cannot get search result. %1"
 msgstr "सन्देश फोल्डरमा सार्नुहोस्"
 
-#: searchdialog/searchwindow.cpp:600
+#: searchdialog/searchwindow.cpp:604
 #, kde-format
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
@@ -5316,14 +5341,14 @@ msgid ""
 "\"%1\"."
 msgstr ""
 
-#: searchdialog/searchwindow.cpp:706
+#: searchdialog/searchwindow.cpp:710
 #, fuzzy, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "पठाउनु पर्ने सन्देश"
 msgstr[1] "पठाउनु पर्ने सन्देश"
 
-#: searchdialog/searchwindow.cpp:709
+#: searchdialog/searchwindow.cpp:713
 #, fuzzy, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -8760,12 +8785,6 @@ msgstr "बाह्य सम्पादक"
 #~ msgctxt "message status"
 #~ msgid "Read"
 #~ msgstr "पढिएको"
-
-#, fuzzy
-#~| msgid "Deleted"
-#~ msgctxt "message status"
-#~ msgid "Deleted"
-#~ msgstr "मेटिएको"
 
 #, fuzzy
 #~| msgid "Replied"
@@ -13662,12 +13681,6 @@ msgstr "बाह्य सम्पादक"
 #~| msgid "C&ollapse All Threads"
 #~ msgid "Collapse All Groups"
 #~ msgstr "सबै थ्रेड संक्षिप्त गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Collapse the current thread"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Close the current tab"
-#~ msgstr "हालको थ्रेड संक्षिप्त गर्नुहोस्"
 
 #~ msgid "Show Quick Search"
 #~ msgstr "छिटो खोजी देखाउनुहोस्"
