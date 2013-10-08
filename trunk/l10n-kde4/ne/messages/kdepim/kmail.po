@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-05 01:44+0000\n"
+"POT-Creation-Date: 2013-10-08 01:41+0000\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1349,48 +1349,98 @@ msgstr ""
 msgid "External Editor"
 msgstr "बाह्य सम्पादक"
 
+#: configuredialog/configuredialog.cpp:2227
+#, fuzzy
+#| msgid "Signature"
+msgctxt "@title:group"
+msgid "Signature"
+msgstr "हस्ताक्षर"
+
+#: configuredialog/configuredialog.cpp:2235
+msgid ""
+"Automatically insert the configured signature\n"
+"when starting to compose a message"
+msgstr ""
+
 #: configuredialog/configuredialog.cpp:2249
+#, fuzzy
+#| msgid "Use smaller font for quoted text"
+msgid "Insert the signature above any quoted text"
+msgstr "उद्धरण गरिएका पाठका लागि सानो फन्ट प्रयोग गर्नुहोस्"
+
+#: configuredialog/configuredialog.cpp:2264
+msgid ""
+"Insert the RFC-compilant signature separator\n"
+"(two dashes and a space on a line) before the signature"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2279
+msgid "When replying, do not quote any existing signature"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2291
+#, fuzzy
+#| msgid "&Normal:"
+msgctxt "@title:group"
+msgid "Format"
+msgstr "सामान्य:"
+
+#: configuredialog/configuredialog.cpp:2298
+msgid ""
+"When replying, only quote the selected text\n"
+"(instead of the complete message), if\n"
+"there is text selected in the message window."
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2312
 msgid ""
 "When replying, add quote signs in front of all lines of the quoted text,\n"
-"even when the line was created by adding an additional linebreak while\n"
+"even when the line was created by adding an additional line break while\n"
 "word-wrapping the text."
 msgstr ""
 
-#: configuredialog/configuredialog.cpp:2258
+#: configuredialog/configuredialog.cpp:2327
+msgid "Enable automatic word wrapping at the specified width"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2335
+msgid "Set the text width for automatic word wrapping"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2357
 msgid ""
-"When replying or forwarding, only quote the message in the original format "
-"it was received or else, if unchecked, it will reply as plain text by default"
+"When replying or forwarding, quote the message\n"
+"in the original format it was received.\n"
+"If unchecked, the reply will be as plain text by default."
 msgstr ""
 
-#: configuredialog/configuredialog.cpp:2273
+#: configuredialog/configuredialog.cpp:2372
 msgid ""
-"When replying, only quote the selected text instead of the complete message "
-"when there is text selected in the message window."
+"Format the plain text part of a message from the HTML markup.\n"
+"Bold, italic and underlined text, lists, and external references\n"
+"are supported."
 msgstr ""
 
-#: configuredialog/configuredialog.cpp:2346
-msgid "Warn if too many recipients are specified"
-msgstr ""
-
-#: configuredialog/configuredialog.cpp:2358
-msgid "Warn if more than this many recipients are specified"
-msgstr ""
-
-#: configuredialog/configuredialog.cpp:2376
+#: configuredialog/configuredialog.cpp:2390
 msgid "No autosave"
 msgstr "स्वत: बचत छैन"
 
-#: configuredialog/configuredialog.cpp:2377
-msgid " min"
-msgstr " मिनेट"
-
-#: configuredialog/configuredialog.cpp:2386
+#: configuredialog/configuredialog.cpp:2391
 #, fuzzy
-#| msgid "Defaul&t domain:"
-msgid "Default Forwarding Type:"
-msgstr "पूर्वनिर्धारित डोमेन:"
+#| msgid " min"
+msgctxt "Interval suffix"
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] " मिनेट"
+msgstr[1] " मिनेट"
 
-#: configuredialog/configuredialog.cpp:2390
+#: configuredialog/configuredialog.cpp:2393
+#, fuzzy
+#| msgid "Automatically request &message disposition notifications"
+msgid "Automatically save the message at this specified interval"
+msgstr "सन्देश सजावट सूचना स्वत: अनुरोध गर्नुहोस्"
+
+#: configuredialog/configuredialog.cpp:2411
 #, fuzzy
 #| msgctxt "View->attachments->"
 #| msgid "&Inline"
@@ -1398,45 +1448,114 @@ msgctxt "@item:inlistbox Inline mail forwarding"
 msgid "Inline"
 msgstr "इनलाइन"
 
-#: configuredialog/configuredialog.cpp:2391
+#: configuredialog/configuredialog.cpp:2412
 #, fuzzy
 #| msgid "Has Attachment"
 msgid "As Attachment"
 msgstr "सङ्लग्नता छ"
 
-#: configuredialog/configuredialog.cpp:2403
-msgid "Configure Completion Order..."
-msgstr "समापन क्रम कन्फिगर गर्नुहोस्..."
+#: configuredialog/configuredialog.cpp:2414
+msgid "Set the default forwarded message format"
+msgstr ""
 
-#: configuredialog/configuredialog.cpp:2417
+#: configuredialog/configuredialog.cpp:2418
+#, fuzzy
+#| msgid "Defaul&t domain:"
+msgid "Default forwarding type:"
+msgstr "पूर्वनिर्धारित डोमेन:"
+
+#: configuredialog/configuredialog.cpp:2433
+#, fuzzy
+#| msgid "Additional Recipients"
+msgctxt "@title:group"
+msgid "Recipients"
+msgstr "थप प्रापक"
+
+#: configuredialog/configuredialog.cpp:2441
+msgid ""
+"By default, request a MDN whan starting to compose a message.\n"
+"You can select this on a per-message basis using \"Options - Request "
+"Disposition Notification\""
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2462
+msgid "Warn if too many recipients are specified"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2470
+#, fuzzy
+#| msgid "Maximum number of recipient editor lines."
+msgid "Set the maximum number of recipients for the warning"
+msgstr "प्रापक सम्पादक लाइनका सम्पादकको लागि अधिकतम सङ्ख्या ।"
+
+#: configuredialog/configuredialog.cpp:2488
+msgid ""
+"Only allow this many recipients to be specified for the message.\n"
+"This applies to doing a \"Reply to All\", entering recipients manually\n"
+"or using the \"Select...\" picker.  Setting this limit helps you to\n"
+"avoid accidentally sending a message to too many people.  Note,\n"
+"however, that it does not take account of distribution lists or\n"
+"mailing lists."
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2516
+msgid ""
+"Remember recent addresses entered,\n"
+"and offer them for recipient completion"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2531
 #, fuzzy
 #| msgid "No autosave"
+msgctxt "No addresses are retained"
 msgid "No save"
 msgstr "स्वत: बचत छैन"
 
-#: configuredialog/configuredialog.cpp:2421
+#: configuredialog/configuredialog.cpp:2534
 #, fuzzy
 #| msgid "Recent Addresses"
-msgid "Maximum recent address:"
+msgid "Maximum recent addresses retained:"
 msgstr "हालको ठेगाना"
 
-#: configuredialog/configuredialog.cpp:2425
+#: configuredialog/configuredialog.cpp:2538
+msgid ""
+"The maximum number of recently entered addresses that will\n"
+"be remembered for completion"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2555
 msgid "Edit Recent Addresses..."
 msgstr "हालैका ठेगाना सम्पादन गर्नुहोस्..."
 
-#: configuredialog/configuredialog.cpp:2584
+#: configuredialog/configuredialog.cpp:2556
+#, fuzzy
+#| msgid "Edit Recent Addresses..."
+msgid "Edit, add or remove recent addresses"
+msgstr "हालैका ठेगाना सम्पादन गर्नुहोस्..."
+
+#: configuredialog/configuredialog.cpp:2570
+msgid "Configure Completion Order..."
+msgstr "समापन क्रम कन्फिगर गर्नुहोस्..."
+
+#: configuredialog/configuredialog.cpp:2571
+msgid ""
+"Configure the order in which address books\n"
+"will be used when doing address completion"
+msgstr ""
+
+#: configuredialog/configuredialog.cpp:2744
 msgid ""
 "<b>%f</b> will be replaced with the filename to edit.<br /><b>%w</b> will be "
 "replaced with the window id.<br /><b>%l</b> will be replaced with the line "
 "number."
 msgstr ""
 
-#: configuredialog/configuredialog.cpp:2692
+#: configuredialog/configuredialog.cpp:2852
 msgid "Repl&y Subject Prefixes"
 msgstr "जवाफ विषयवस्तु उपसर्ग"
 
-#: configuredialog/configuredialog.cpp:2697
-#: configuredialog/configuredialog.cpp:2731
+#: configuredialog/configuredialog.cpp:2857
+#: configuredialog/configuredialog.cpp:2891
 msgid ""
 "Recognize any sequence of the following prefixes\n"
 "(entries are case-insensitive regular expressions):"
@@ -1445,50 +1564,50 @@ msgstr ""
 "(प्रविष्टि केस सम्वेदनशील नियमित अभिव्यक्ति हुन्):"
 
 #. i18n: ectx: property (text), widget (QPushButton, mAddAccountButton)
-#: configuredialog/configuredialog.cpp:2707
-#: configuredialog/configuredialog.cpp:2815
-#: configuredialog/configuredialog.cpp:3234 ui/accountspagereceivingtab.ui:36
+#: configuredialog/configuredialog.cpp:2867
+#: configuredialog/configuredialog.cpp:2975
+#: configuredialog/configuredialog.cpp:3394 ui/accountspagereceivingtab.ui:36
 msgid "A&dd..."
 msgstr "थप्नुहोस्..."
 
-#: configuredialog/configuredialog.cpp:2707
-#: configuredialog/configuredialog.cpp:2975
-#: configuredialog/configuredialog.cpp:3234
+#: configuredialog/configuredialog.cpp:2867
+#: configuredialog/configuredialog.cpp:3135
+#: configuredialog/configuredialog.cpp:3394
 msgid "Re&move"
 msgstr "हटाउनुहोस्"
 
-#: configuredialog/configuredialog.cpp:2708
-#: configuredialog/configuredialog.cpp:3235
+#: configuredialog/configuredialog.cpp:2868
+#: configuredialog/configuredialog.cpp:3395
 msgid "Mod&ify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
-#: configuredialog/configuredialog.cpp:2709
+#: configuredialog/configuredialog.cpp:2869
 msgid "Enter new reply prefix:"
 msgstr "नयाँ जवाफ उपसर्ग प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configuredialog.cpp:2726
+#: configuredialog/configuredialog.cpp:2886
 msgid "For&ward Subject Prefixes"
 msgstr "विषयवस्तु उपसर्ग पठाउनुहोस्"
 
-#: configuredialog/configuredialog.cpp:2739 identity/identitypage.cpp:284
+#: configuredialog/configuredialog.cpp:2899 identity/identitypage.cpp:284
 msgid "Add..."
 msgstr "थप्नुहोस्..."
 
 #. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
-#: configuredialog/configuredialog.cpp:2740
-#: configuredialog/configuredialog.cpp:2815 ui/identitypage.ui:66
+#: configuredialog/configuredialog.cpp:2900
+#: configuredialog/configuredialog.cpp:2975 ui/identitypage.ui:66
 msgid "Remo&ve"
 msgstr "हटाउनुहोस्"
 
-#: configuredialog/configuredialog.cpp:2741 identity/identitypage.cpp:286
+#: configuredialog/configuredialog.cpp:2901 identity/identitypage.cpp:286
 msgid "Modify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
-#: configuredialog/configuredialog.cpp:2742
+#: configuredialog/configuredialog.cpp:2902
 msgid "Enter new forward prefix:"
 msgstr "नयाँ अगाडि उपसर्ग प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configuredialog.cpp:2807
+#: configuredialog/configuredialog.cpp:2967
 msgid ""
 "This list is checked for every outgoing message from the top to the bottom "
 "for a charset that contains all required characters."
@@ -1498,72 +1617,72 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, mModifyAccountButton)
 #. i18n: ectx: property (text), widget (QPushButton, mModifyButton)
-#: configuredialog/configuredialog.cpp:2816 ui/accountspagereceivingtab.ui:46
+#: configuredialog/configuredialog.cpp:2976 ui/accountspagereceivingtab.ui:46
 #: ui/identitypage.ui:40
 msgid "&Modify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
-#: configuredialog/configuredialog.cpp:2816
+#: configuredialog/configuredialog.cpp:2976
 msgid "Enter charset:"
 msgstr "चारसेट प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configuredialog.cpp:2823
+#: configuredialog/configuredialog.cpp:2983
 msgid "&Keep original charset when replying or forwarding (if possible)"
 msgstr "जवाफ दिन वा पठाउनका लागि मौलिक चारसेट राख्नुहोस् (सम्भव भएमा)"
 
-#: configuredialog/configuredialog.cpp:2858
+#: configuredialog/configuredialog.cpp:3018
 msgid "This charset is not supported."
 msgstr "यो चारसेट समर्थित छैन ।"
 
-#: configuredialog/configuredialog.cpp:2924
+#: configuredialog/configuredialog.cpp:3084
 msgid "&Use custom message-id suffix"
 msgstr "अनुकूल सन्देश आईडी प्रत्यय प्रयोग गर्नुहोस्"
 
-#: configuredialog/configuredialog.cpp:2938
+#: configuredialog/configuredialog.cpp:3098
 msgid "Custom message-&id suffix:"
 msgstr "अनुकूल सन्देश आईडी प्रत्यय:"
 
-#: configuredialog/configuredialog.cpp:2953
+#: configuredialog/configuredialog.cpp:3113
 msgid "Define custom mime header fields:"
 msgstr "अनुकूल माइम हेडर फिल्ड परिभाषित गर्नुहोस्:"
 
-#: configuredialog/configuredialog.cpp:2961
+#: configuredialog/configuredialog.cpp:3121
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column Name of the mime header."
 msgid "Name"
 msgstr "नाम"
 
-#: configuredialog/configuredialog.cpp:2962
+#: configuredialog/configuredialog.cpp:3122
 #, fuzzy
 #| msgid "Value"
 msgctxt "@title:column Value of the mimeheader."
 msgid "Value"
 msgstr "मान"
 
-#: configuredialog/configuredialog.cpp:2971
+#: configuredialog/configuredialog.cpp:3131
 #, fuzzy
 #| msgid "Ne&w"
 msgctxt "@action:button Add new mime header field."
 msgid "Ne&w"
 msgstr "नयाँ"
 
-#: configuredialog/configuredialog.cpp:2985
+#: configuredialog/configuredialog.cpp:3145
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "@label:textbox Name of the mime header."
 msgid "&Name:"
 msgstr "नाम:"
 
-#: configuredialog/configuredialog.cpp:2996
+#: configuredialog/configuredialog.cpp:3156
 msgid "&Value:"
 msgstr "मान:"
 
-#: configuredialog/configuredialog.cpp:3185
+#: configuredialog/configuredialog.cpp:3345
 msgid "Outlook-compatible attachment naming"
 msgstr "आउटलुक मिल्दो सङ्लग्नता नामकरण"
 
-#: configuredialog/configuredialog.cpp:3188
+#: configuredialog/configuredialog.cpp:3348
 msgid ""
 "Turn this option on to make Outlook(tm) understand attachment names "
 "containing non-English characters"
@@ -1571,38 +1690,38 @@ msgstr ""
 "अङ्ग्रेजी बाहेकका क्यारेक्टर समावेश गर्ने सङ्लग्नता नाम आउटलुक(tm) बुझ्ने बनाउन यो विकल्प "
 "खोल्नुहोस् ।"
 
-#: configuredialog/configuredialog.cpp:3199
+#: configuredialog/configuredialog.cpp:3359
 msgid "E&nable detection of missing attachments"
 msgstr "छुटेका सङ्लग्नता पत्ता लगाउन सक्षम पार्नुहोस्"
 
-#: configuredialog/configuredialog.cpp:3207
+#: configuredialog/configuredialog.cpp:3367
 #, fuzzy
 #| msgid "Warn if root certificate expires in &less than:"
 msgid "Warn when inserting attachments larger than:"
 msgstr "यो भन्दा कम समयमा मूल प्रमाणपत्र म्याद समाप्त भएमा चेतावनी दिनुहोस्:"
 
-#: configuredialog/configuredialog.cpp:3214
+#: configuredialog/configuredialog.cpp:3374
 #, fuzzy
 #| msgid " MB"
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " मेगा बाइट"
 
-#: configuredialog/configuredialog.cpp:3217
+#: configuredialog/configuredialog.cpp:3377
 #, fuzzy
 #| msgid "Log size limit:"
 msgid "No limit"
 msgstr "लग साइज सीमा:"
 
-#: configuredialog/configuredialog.cpp:3223
+#: configuredialog/configuredialog.cpp:3383
 msgid "Recognize any of the following key words as intention to attach a file:"
 msgstr "फाइल सङ्लग्न गर्न इच्छा अनुसार तलका कुनै पनि शब्दकुञ्जी पहिचान गर्नुहोस्:"
 
-#: configuredialog/configuredialog.cpp:3236
+#: configuredialog/configuredialog.cpp:3396
 msgid "Enter new key word:"
 msgstr "नयाँ शब्दकुञ्जी प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configuredialog.cpp:3278
+#: configuredialog/configuredialog.cpp:3438
 msgid ""
 "You have chosen to encode attachment names containing non-English characters "
 "in a way that is understood by Outlook(tm) and other mail clients that do "
@@ -1619,89 +1738,89 @@ msgstr ""
 "मानक मिल्दो मेल क्लाइन्टले नबुझ्ने सम्भावना हुन्छ; त्यसैले, तपाईँसँग अन्य विकल्प नभएसम्म, यो "
 "विकल्प सक्षम पार्नु हुदैन ।"
 
-#: configuredialog/configuredialog.cpp:3376
+#: configuredialog/configuredialog.cpp:3536
 #, fuzzy
 #| msgid "&Reading"
 msgid "Reading"
 msgstr "पढाइ"
 
-#: configuredialog/configuredialog.cpp:3378
+#: configuredialog/configuredialog.cpp:3538
 msgid "Message Disposition Notifications"
 msgstr "सन्देश विर्सजन सूचना"
 
-#: configuredialog/configuredialog.cpp:3384
+#: configuredialog/configuredialog.cpp:3544
 msgid "Composing"
 msgstr "रचना"
 
-#: configuredialog/configuredialog.cpp:3390
+#: configuredialog/configuredialog.cpp:3550
 #, fuzzy
 msgid "Miscellaneous"
 msgstr "गलत हिज्जे गरिएका शब्द"
 
-#: configuredialog/configuredialog.cpp:3396
+#: configuredialog/configuredialog.cpp:3556
 #, fuzzy
 #| msgid "S/MIME &Validation"
 msgid "S/MIME Validation"
 msgstr "S/MIME वैधता"
 
-#: configuredialog/configuredialog.cpp:3399
+#: configuredialog/configuredialog.cpp:3559
 msgid "Ad block"
 msgstr ""
 
-#: configuredialog/configuredialog.cpp:3457
+#: configuredialog/configuredialog.cpp:3617
 msgid ""
 "Changing the global HTML setting will override all folder specific values."
 msgstr "विश्वव्यापी HTML सेटिङ परिवर्तन गर्दा सबै फोल्डर निर्दिष्ट मान अधिरोहण हुन्छन् ।"
 
-#: configuredialog/configuredialog.cpp:3713
-#: configuredialog/configuredialog.cpp:3716
-#: configuredialog/configuredialog.cpp:3719
-#: configuredialog/configuredialog.cpp:3723
-#: configuredialog/configuredialog.cpp:3726
-#: configuredialog/configuredialog.cpp:3729
+#: configuredialog/configuredialog.cpp:3873
+#: configuredialog/configuredialog.cpp:3876
+#: configuredialog/configuredialog.cpp:3879
+#: configuredialog/configuredialog.cpp:3883
+#: configuredialog/configuredialog.cpp:3886
+#: configuredialog/configuredialog.cpp:3889
 msgid " day"
 msgid_plural " days"
 msgstr[0] " दिन"
 msgstr[1] " दिन"
 
-#: configuredialog/configuredialog.cpp:3873
+#: configuredialog/configuredialog.cpp:4033
 msgid "This option requires dirmngr >= 0.9.0"
 msgstr "यो विकल्पलाई dirmngr >= 0.9.0 आवश्यक हुन्छ"
 
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: configuredialog/configuredialog.cpp:3984 ui/smimeconfiguration.ui:183
+#: configuredialog/configuredialog.cpp:4144 ui/smimeconfiguration.ui:183
 msgid "no proxy"
 msgstr "प्रोक्सी होइन"
 
-#: configuredialog/configuredialog.cpp:3985
+#: configuredialog/configuredialog.cpp:4145
 #, kde-format
 msgid "(Current system setting: %1)"
 msgstr "(हालको प्रणाली सेटिङ: %1)"
 
-#: configuredialog/configuredialog.cpp:4113
+#: configuredialog/configuredialog.cpp:4273
 #, fuzzy
 #| msgid "&Folders"
 msgid "Folders"
 msgstr "फोल्डर"
 
-#: configuredialog/configuredialog.cpp:4116
+#: configuredialog/configuredialog.cpp:4276
 #, fuzzy
 #| msgid "Advanced Options"
 msgid "Invitations"
 msgstr "उन्नत विकल्प"
 
-#: configuredialog/configuredialog.cpp:4119
+#: configuredialog/configuredialog.cpp:4279
 #, fuzzy
 #| msgid "no proxy"
 msgid "Proxy"
 msgstr "प्रोक्सी होइन"
 
-#: configuredialog/configuredialog.cpp:4122
+#: configuredialog/configuredialog.cpp:4282
 #, fuzzy
 msgid "Agent Settings"
 msgstr "प्रेषण"
 
-#: configuredialog/configuredialog.cpp:4125
+#: configuredialog/configuredialog.cpp:4285
 #, fuzzy
 #| msgid "Printing Output"
 msgid "Printing"
@@ -5571,7 +5690,7 @@ msgstr ""
 #: settings/kmail.kcfg.cmake:198
 #, fuzzy
 #| msgid "Warn if root certificate expires in &less than:"
-msgid "Warn if the number of recipients is larger than"
+msgid "Warn if the number of recipients is more than:"
 msgstr "यो भन्दा कम समयमा मूल प्रमाणपत्र म्याद समाप्त भएमा चेतावनी दिनुहोस्:"
 
 #. i18n: ectx: whatsthis, entry (TooManyRecipients), group (Composer)
@@ -8684,11 +8803,6 @@ msgstr "बाह्य सम्पादक"
 #~ msgstr "हेडर पुन: लेख्नुहोस्"
 
 #, fuzzy
-#~| msgid "Additional Recipients"
-#~ msgid "All Recipients"
-#~ msgstr "थप प्रापक"
-
-#, fuzzy
 #~| msgid "<size in bytes>"
 #~ msgid "Size in Bytes"
 #~ msgstr "<size in bytes>"
@@ -10713,9 +10827,6 @@ msgstr "बाह्य सम्पादक"
 #~ "तपाईँले कम्पोजरको ठेगाना फिल्डको स्वत: समाप्ति सूचीमा हालै प्रयोग गरिएका ठेगाना "
 #~ "देखाउन चाहनुहुन्न भने यो विकल्प अक्षम पार्नुहोस् ।"
 
-#~ msgid "Maximum number of recipient editor lines."
-#~ msgstr "प्रापक सम्पादक लाइनका सम्पादकको लागि अधिकतम सङ्ख्या ।"
-
 #, fuzzy
 #~| msgid "Save Distribution List"
 #~ msgctxt "@title:window"
@@ -10859,11 +10970,6 @@ msgstr "बाह्य सम्पादक"
 #~| msgid "A&utomatically append signature"
 #~ msgid "A&utomatically insert signature"
 #~ msgstr "स्वत: हस्ताक्षर थप्नुहोस्"
-
-#, fuzzy
-#~| msgid "Use smaller font for quoted text"
-#~ msgid "Insert signature above quoted text"
-#~ msgstr "उद्धरण गरिएका पाठका लागि सानो फन्ट प्रयोग गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "OCSP responder signature:"
