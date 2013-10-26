@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kreversi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-20 03:44+0200\n"
+"POT-Creation-Date: 2013-10-26 01:28+0000\n"
 "PO-Revision-Date: 2007-08-20 12:18+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -33,7 +33,7 @@ msgstr "ज्यादै सजिलो"
 msgid "Easy"
 msgstr "सजिलो"
 
-#: highscores.cpp:48 mainwindow.cpp:138
+#: highscores.cpp:48 mainwindow.cpp:135
 msgid "Normal"
 msgstr "सामान्य"
 
@@ -68,16 +68,6 @@ msgstr "अचानक रुपबाट व्यतिरेकमा प्
 msgid "Whether to use colored chips instead of black and white ones."
 msgstr "कालो वा सेतो कुनै एक चिप्सको साटोमा रङ लगाइएको चिप्स प्रयोग गर्ने वा नगर्ने ।"
 
-#: kreversiscene.cpp:508
-#, fuzzy
-#| msgid "Computer can not make move. Your turn."
-msgid "Computer can not move. It is your turn again."
-msgstr "कम्प्युटरले चाल चल्न सक्दैन । तपाईँको पालो ।"
-
-#: kreversiscene.cpp:516
-msgid "You can not perform any move. Computer takes next turn now."
-msgstr ""
-
 #. i18n: ectx: Menu (view)
 #: kreversiui.rc:13
 msgid "&View"
@@ -92,6 +82,16 @@ msgstr "सेटिङ"
 #: kreversiui.rc:25
 msgid "Main Toolbar"
 msgstr "मुख्य उपकरणपट्टी"
+
+#: kreversiview.cpp:256
+#, fuzzy
+#| msgid "Computer can not make move. Your turn."
+msgid "Computer can not move. It is your turn again."
+msgstr "कम्प्युटरले चाल चल्न सक्दैन । तपाईँको पालो ।"
+
+#: kreversiview.cpp:264
+msgid "You can not perform any move. Computer takes next turn now."
+msgstr ""
 
 #: main.cpp:34
 msgid "KDE Reversi Board Game"
@@ -171,7 +171,15 @@ msgstr ""
 msgid "Port rendering code to KGameRenderer"
 msgstr ""
 
-#: main.cpp:54
+#: main.cpp:50
+msgid "Denis Kuplyakov"
+msgstr ""
+
+#: main.cpp:50
+msgid "Port rendering code to QML"
+msgstr ""
+
+#: main.cpp:55
 msgid "Start with demo game playing"
 msgstr "प्रदर्शन खेल खेलेर सुरु गर्नुहोस्"
 
@@ -191,73 +199,73 @@ msgstr "कालो"
 msgid "White"
 msgstr "सेतो"
 
-#: mainwindow.cpp:79 mainwindow.cpp:277 mainwindow.cpp:342
+#: mainwindow.cpp:79 mainwindow.cpp:266 mainwindow.cpp:325
 msgid "Your turn."
 msgstr "तपाईँको पालो ।"
 
-#: mainwindow.cpp:80 mainwindow.cpp:387
+#: mainwindow.cpp:80 mainwindow.cpp:366
 #, kde-format
 msgid "You: %1"
 msgstr "तपाईँ: %1"
 
-#: mainwindow.cpp:81 mainwindow.cpp:388
+#: mainwindow.cpp:81 mainwindow.cpp:367
 #, kde-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: mainwindow.cpp:98
+#: mainwindow.cpp:95
 #, fuzzy
 #| msgid "Move history"
 msgid "Move History"
 msgstr "चाल इतिहास"
 
-#: mainwindow.cpp:126
+#: mainwindow.cpp:123
 msgid "Show Last Move"
 msgstr "अन्तिम चाल देखाउनुहोस्"
 
-#: mainwindow.cpp:130
+#: mainwindow.cpp:127
 msgid "Show Legal Moves"
 msgstr "वैध चाल देखाउनुहोस्"
 
-#: mainwindow.cpp:134
+#: mainwindow.cpp:131
 msgid "Animation Speed"
 msgstr "एनिमेसन गति"
 
-#: mainwindow.cpp:138
+#: mainwindow.cpp:135
 msgid "Slow"
 msgstr "ढिलो"
 
-#: mainwindow.cpp:138
+#: mainwindow.cpp:135
 msgid "Fast"
 msgstr "छिटो"
 
-#: mainwindow.cpp:142
+#: mainwindow.cpp:139
 msgid "Use Colored Chips"
 msgstr "रङ लगाइएका चिप्स प्रयोग गर्नुहोस्"
 
-#: mainwindow.cpp:147
+#: mainwindow.cpp:144
 msgid "Show Move History"
 msgstr "चाल इतिहास देखाउनुहोस्"
 
-#: mainwindow.cpp:295
+#: mainwindow.cpp:283
 #, fuzzy
 #| msgid "GAME OVER."
 msgid "GAME OVER"
 msgstr "खेल समाप्त"
 
-#: mainwindow.cpp:307
+#: mainwindow.cpp:294
 msgid "Game is drawn!"
 msgstr "खेल बराबर भएको छ!"
 
-#: mainwindow.cpp:312
+#: mainwindow.cpp:297
 msgid "You win!"
 msgstr "तपाईँले जित्नुभयो!"
 
-#: mainwindow.cpp:317
+#: mainwindow.cpp:300
 msgid "You have lost!"
 msgstr "तपाईँ खेल हार्नु भयो!"
 
-#: mainwindow.cpp:321
+#: mainwindow.cpp:304
 #, kde-format
 msgid ""
 "\n"
@@ -266,7 +274,7 @@ msgstr ""
 "\n"
 "तपाइँ: %1"
 
-#: mainwindow.cpp:322
+#: mainwindow.cpp:305
 #, kde-format
 msgid ""
 "\n"
@@ -275,11 +283,11 @@ msgstr ""
 "\n"
 "%1: %2"
 
-#: mainwindow.cpp:324
+#: mainwindow.cpp:307
 msgid "Game over"
 msgstr "खेल समाप्त ।"
 
-#: mainwindow.cpp:393
+#: mainwindow.cpp:372
 msgid "Computer"
 msgstr "कम्प्युटर"
 
