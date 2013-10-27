@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-25 01:33+0000\n"
+"POT-Creation-Date: 2013-10-27 01:36+0000\n"
 "PO-Revision-Date: 2007-09-06 15:42+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1079,8 +1079,8 @@ msgstr "यसमा फाइल गुप्तिकरण उल्टाउ
 msgid "Save File"
 msgstr "फाइल बचत गर्नुहोस्"
 
-#: editor/kgpgeditor.cpp:523 kgpgexternalactions.cpp:213
-#: kgpgexternalactions.cpp:366 transactions/kgpgtransaction.cpp:189
+#: editor/kgpgeditor.cpp:523 kgpgexternalactions.cpp:208
+#: kgpgexternalactions.cpp:371 transactions/kgpgtransaction.cpp:189
 msgid "File Already Exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
@@ -1118,7 +1118,7 @@ msgid "No signature found."
 msgstr "हस्ताक्षर फेला परेन ।"
 
 #: editor/kgpgeditor.cpp:735 editor/kgpgtextedit.cpp:320
-#: kgpgexternalactions.cpp:292
+#: kgpgexternalactions.cpp:288
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr ""
@@ -1209,7 +1209,7 @@ msgstr ""
 msgid "Key file dropped on Editor"
 msgstr "गुप्तिकरण उल्टाउनुहोस् र सम्पादकमा खोल्नुहोस्"
 
-#: editor/kgpgtextedit.cpp:257 kgpgexternalactions.cpp:402
+#: editor/kgpgtextedit.cpp:257 kgpgexternalactions.cpp:408
 msgid "Decryption failed."
 msgstr "गुप्तिकरण उल्टाउन असफल ।"
 
@@ -2643,19 +2643,19 @@ msgstr ""
 "ल्याउन सक्नेछ ।<br>कृपया KGpg सेटिङबाट GnuPG अभिकर्ता अक्षम पार्नुहोस् वा अभिकर्ता स्थिर "
 "पार्नुहोस् ।</qt>"
 
-#: kgpg.cpp:132
+#: kgpg.cpp:129
 msgid "Cannot decrypt and show folder."
 msgstr "गुप्तिकरण उल्टाउन र फोल्डर देखाउन सकिदैन ।"
 
-#: kgpg.cpp:137
+#: kgpg.cpp:134
 msgid "Cannot sign folder."
 msgstr "फोल्डर साइन गर्न सक्दैन ।"
 
-#: kgpg.cpp:142
+#: kgpg.cpp:139
 msgid "Cannot verify folder."
 msgstr "फोल्डर रूजु गर्न सक्दैन ।"
 
-#: kgpg.cpp:145
+#: kgpg.cpp:142
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
@@ -2663,6 +2663,10 @@ msgid ""
 msgstr ""
 "अनुरोध गरिएको सञ्चालन कार्यसम्पादन गर्न अक्षम ।\n"
 "कृपया एउटा मात्र फोल्डर वा धेरै फाइल चयन गर्नुहोस् तर फाइल र फोल्डर मिश्रण नगर्नुहोस् ।"
+
+#: kgpg.cpp:175
+msgid "No files given."
+msgstr ""
 
 #: kgpg.h:32
 msgid ""
@@ -2932,15 +2936,15 @@ msgid ""
 "This is the text of the email sent by the \"Sign and Mail User ID\" action."
 msgstr ""
 
-#: kgpgexternalactions.cpp:133
+#: kgpgexternalactions.cpp:134
 msgid "Cannot create temporary file for folder compression."
 msgstr ""
 
-#: kgpgexternalactions.cpp:133 kgpgexternalactions.cpp:140
+#: kgpgexternalactions.cpp:134 kgpgexternalactions.cpp:141
 msgid "Temporary File Creation"
 msgstr "अस्थायी फाइल सिर्जना"
 
-#: kgpgexternalactions.cpp:138
+#: kgpgexternalactions.cpp:139
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>KGpg will now create a temporary archive file:<br><b>%1</b> to "
@@ -2954,11 +2958,11 @@ msgstr ""
 "<qt>KGpg ले अहिले अस्थायी सङ्ग्रह फाइल सिर्जना गर्नेछ:<br><b>%1</b> गुप्तिकरण प्रक्रिया "
 "गर्न । गुप्तिकरण समाप्त भएपछि यो फाइल मेटिनेछ ।</qt>"
 
-#: kgpgexternalactions.cpp:152
+#: kgpgexternalactions.cpp:153
 msgid "Compression method for archive:"
 msgstr "सङ्ग्रहका लागि सङ्कुचन विधि:"
 
-#: kgpgexternalactions.cpp:400
+#: kgpgexternalactions.cpp:406
 #, fuzzy
 #| msgid "Decryption failed."
 msgid "Decryption of this file failed:"
@@ -2966,7 +2970,7 @@ msgid_plural "Decryption of these files failed:"
 msgstr[0] "गुप्तिकरण उल्टाउन असफल ।"
 msgstr[1] "गुप्तिकरण उल्टाउन असफल ।"
 
-#: kgpgexternalactions.cpp:426
+#: kgpgexternalactions.cpp:434
 #, fuzzy
 #| msgid ""
 #| "<qt>You have not set a path to your GnuPG config file.<br>This may cause "
@@ -2981,11 +2985,11 @@ msgstr ""
 "कार्यान्वयनमा केही अचम्मको नतिजा ल्याउन सक्दछ ।<br>तपाईँले यो समस्या स्थिर गर्न KGpg को "
 "विजार्ड सुरु गर्न चाहनुहुन्छ ?</qt>"
 
-#: kgpgexternalactions.cpp:428
+#: kgpgexternalactions.cpp:436
 msgid "Start Assistant"
 msgstr ""
 
-#: kgpgexternalactions.cpp:428
+#: kgpgexternalactions.cpp:436
 msgid "Do Not Start"
 msgstr "सुरु नगर्नुहोस्"
 
