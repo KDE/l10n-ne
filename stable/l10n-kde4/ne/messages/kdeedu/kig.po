@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-12 03:37+0200\n"
+"POT-Creation-Date: 2013-10-28 05:14+0000\n"
 "PO-Revision-Date: 2007-12-31 14:47+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -763,7 +763,7 @@ msgstr "रचना दोहोर्याउनुहोस्"
 msgid "Repeat the last construction (with new data)"
 msgstr "(नयाँ डेटासँगै) अन्तिम रचना दोहोर्याउनुहोस्"
 
-#: kig/kig_part.cpp:256
+#: kig/kig_part.cpp:256 modes/popup/builtindocumentactionsprovider.cc:37
 msgid "U&nhide All"
 msgstr "सबै लुकाएको हटाउनुहोस्"
 
@@ -1716,7 +1716,7 @@ msgstr ""
 msgid "Project a point on a line"
 msgstr "वृत्तमा यो बिन्दु प्रक्षेपण गर्नुहोस्"
 
-#: misc/builtin_stuff.cc:699
+#: misc/builtin_stuff.cc:699 modes/popup/scriptactionsprovider.cc:64
 msgid "Python Script"
 msgstr "पाइथोन स्क्रिप्ट"
 
@@ -2547,7 +2547,8 @@ msgstr "अन्तिम चरण"
 msgid "Name"
 msgstr "नाम"
 
-#: modes/label.cc:196
+#: modes/label.cc:196 modes/popup/nameobjectactionsprovider.cc:94
+#: modes/popup/nameobjectactionsprovider.cc:126
 msgid "<unnamed object>"
 msgstr "<unnamed object>"
 
@@ -2655,6 +2656,141 @@ msgstr[1] "%1 वस्तु सार्नुहोस्"
 msgid "Redefine Point"
 msgstr "बिन्दु पुन: परिभाषित गर्नुहोस्"
 
+#: modes/popup/builtinobjectactionsprovider.cc:49 modes/popup/popup.cc:250
+msgid "Black"
+msgstr "कालो"
+
+#: modes/popup/builtinobjectactionsprovider.cc:50 modes/popup/popup.cc:251
+msgid "Gray"
+msgstr "खैरो"
+
+#: modes/popup/builtinobjectactionsprovider.cc:51 modes/popup/popup.cc:252
+msgid "Red"
+msgstr "रातो"
+
+#: modes/popup/builtinobjectactionsprovider.cc:52 modes/popup/popup.cc:253
+msgid "Green"
+msgstr "हरियो"
+
+#: modes/popup/builtinobjectactionsprovider.cc:53 modes/popup/popup.cc:254
+msgid "Cyan"
+msgstr "सायन"
+
+#: modes/popup/builtinobjectactionsprovider.cc:54 modes/popup/popup.cc:255
+msgid "Yellow"
+msgstr "पहेँलो"
+
+#: modes/popup/builtinobjectactionsprovider.cc:55 modes/popup/popup.cc:256
+msgid "Dark Red"
+msgstr "गाढा रातो"
+
+#: modes/popup/builtinobjectactionsprovider.cc:79
+msgid "&Hide"
+msgstr "लुकाउनुहोस्"
+
+#: modes/popup/builtinobjectactionsprovider.cc:83
+msgid "&Show"
+msgstr "देखाउनुहोस्"
+
+#: modes/popup/builtinobjectactionsprovider.cc:86
+msgid "&Move"
+msgstr "सार्नुहोस्"
+
+#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
+#: modes/popup/builtinobjectactionsprovider.cc:87 modes/typesdialog.cpp:369
+#: modes/typeswidget.ui:112
+msgid "&Delete"
+msgstr "मेट्नुहोस्"
+
+#: modes/popup/builtinobjectactionsprovider.cc:97
+msgid "&Custom Color"
+msgstr "अनुकूल रङ"
+
+#: modes/popup/builtinobjectactionsprovider.cc:241
+msgid "Change Object Color"
+msgstr "वस्तु रङ परिवर्तन गर्नुहोस्"
+
+#: modes/popup/builtinobjectactionsprovider.cc:256
+msgid "Change Object Width"
+msgstr "वस्तु चौडाइ परिवर्तन गर्नुहोस्"
+
+#: modes/popup/builtinobjectactionsprovider.cc:283
+msgid "Change Point Style"
+msgstr "बिन्दु शैली परिवर्तन गर्नुहोस्"
+
+#: modes/popup/builtinobjectactionsprovider.cc:295
+msgid "Change Object Style"
+msgstr "वस्तु शैली परिवर्तन गर्नुहोस्"
+
+#: modes/popup/nameobjectactionsprovider.cc:60
+msgid "Set &Name..."
+msgstr "नाम सेट गर्नुहोस्..."
+
+#: modes/popup/nameobjectactionsprovider.cc:64
+msgid "&Name"
+msgstr "नाम"
+
+#: modes/popup/nameobjectactionsprovider.cc:85
+#: modes/popup/nameobjectactionsprovider.cc:102
+msgid "Set Object Name"
+msgstr "वस्तु नाम सेट गर्नुहोस्"
+
+#: modes/popup/nameobjectactionsprovider.cc:85
+msgid "Set Name of this Object:"
+msgstr "यो वस्तुको नाम सेट गर्नुहोस्:"
+
+#: modes/popup/objectchooserpopup.cc:90 modes/popup/popup.cc:107
+#, kde-format
+msgid "%1 Object"
+msgid_plural "%1 Objects"
+msgstr[0] "%1 वस्तु"
+msgstr[1] "%1 वस्तु"
+
+#: modes/popup/popup.cc:98
+msgid "Kig Document"
+msgstr "किग कागजात"
+
+#: modes/popup/popup.cc:149
+msgid "&Transform"
+msgstr "रूपान्तरण"
+
+#: modes/popup/popup.cc:150
+msgid "T&est"
+msgstr "परीक्षण"
+
+#: modes/popup/popup.cc:151
+msgid "Const&ruct"
+msgstr "रचना गर्नुहोस्"
+
+#: modes/popup/popup.cc:152
+msgid "&Start"
+msgstr "सुरु गर्नुहोस्"
+
+#: modes/popup/popup.cc:153
+msgid "Add Te&xt Label"
+msgstr "पाठ लेबुल थप्नुहोस्"
+
+#: modes/popup/popup.cc:154
+msgid "Set Co&lor"
+msgstr "रङ सेट गर्नुहोस्"
+
+#: modes/popup/popup.cc:155
+msgid "Set &Pen Width"
+msgstr "कलम चौडाइ सेट गर्नुहोस्"
+
+#: modes/popup/popup.cc:156
+msgid "Set St&yle"
+msgstr "शैली सेट गर्नुहोस्"
+
+#: modes/popup/popup.cc:158
+msgid "Set Coordinate S&ystem"
+msgstr "समन्वय प्रणाली सेट गर्नुहोस्"
+
+#: modes/popup/popup.cc:270 modes/popup/popup.cc:279 modes/popup/popup.cc:288
+msgctxt "More menu items"
+msgid "More..."
+msgstr ""
+
 #: modes/textlabelwizard.cc:50
 msgid "Enter Label Text"
 msgstr "लेबुल पाठ प्रविष्ट गर्नुहोस्"
@@ -2711,11 +2847,6 @@ msgstr "प्रकार व्यवस्थापन गर्नुहो�
 #: modes/typesdialog.cpp:368 modes/typeswidget.ui:102
 msgid "&Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
-
-#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
-#: modes/typesdialog.cpp:369 modes/typeswidget.ui:112
-msgid "&Delete"
-msgstr "मेट्नुहोस्"
 
 #. i18n: ectx: property (text), widget (KPushButton, buttonExport)
 #: modes/typesdialog.cpp:371 modes/typeswidget.ui:154
@@ -5869,98 +6000,6 @@ msgid ""
 "equation, \n"
 "whenever it is an algebraic curve of low degree.</p>\n"
 msgstr ""
-
-#~ msgid "Kig Document"
-#~ msgstr "किग कागजात"
-
-#~ msgid "%1 Object"
-#~ msgid_plural "%1 Objects"
-#~ msgstr[0] "%1 वस्तु"
-#~ msgstr[1] "%1 वस्तु"
-
-#~ msgid "&Transform"
-#~ msgstr "रूपान्तरण"
-
-#~ msgid "T&est"
-#~ msgstr "परीक्षण"
-
-#~ msgid "Const&ruct"
-#~ msgstr "रचना गर्नुहोस्"
-
-#~ msgid "&Start"
-#~ msgstr "सुरु गर्नुहोस्"
-
-#~ msgid "Add Te&xt Label"
-#~ msgstr "पाठ लेबुल थप्नुहोस्"
-
-#~ msgid "Set Co&lor"
-#~ msgstr "रङ सेट गर्नुहोस्"
-
-#~ msgid "Set &Pen Width"
-#~ msgstr "कलम चौडाइ सेट गर्नुहोस्"
-
-#~ msgid "Set St&yle"
-#~ msgstr "शैली सेट गर्नुहोस्"
-
-#~ msgid "Set Coordinate S&ystem"
-#~ msgstr "समन्वय प्रणाली सेट गर्नुहोस्"
-
-#~ msgid "Black"
-#~ msgstr "कालो"
-
-#~ msgid "Gray"
-#~ msgstr "खैरो"
-
-#~ msgid "Red"
-#~ msgstr "रातो"
-
-#~ msgid "Green"
-#~ msgstr "हरियो"
-
-#~ msgid "Cyan"
-#~ msgstr "सायन"
-
-#~ msgid "Yellow"
-#~ msgstr "पहेँलो"
-
-#~ msgid "Dark Red"
-#~ msgstr "गाढा रातो"
-
-#~ msgid "&Hide"
-#~ msgstr "लुकाउनुहोस्"
-
-#~ msgid "&Show"
-#~ msgstr "देखाउनुहोस्"
-
-#~ msgid "&Move"
-#~ msgstr "सार्नुहोस्"
-
-#~ msgid "&Custom Color"
-#~ msgstr "अनुकूल रङ"
-
-#~ msgid "Set &Name..."
-#~ msgstr "नाम सेट गर्नुहोस्..."
-
-#~ msgid "&Name"
-#~ msgstr "नाम"
-
-#~ msgid "Set Object Name"
-#~ msgstr "वस्तु नाम सेट गर्नुहोस्"
-
-#~ msgid "Set Name of this Object:"
-#~ msgstr "यो वस्तुको नाम सेट गर्नुहोस्:"
-
-#~ msgid "Change Object Color"
-#~ msgstr "वस्तु रङ परिवर्तन गर्नुहोस्"
-
-#~ msgid "Change Object Width"
-#~ msgstr "वस्तु चौडाइ परिवर्तन गर्नुहोस्"
-
-#~ msgid "Change Point Style"
-#~ msgstr "बिन्दु शैली परिवर्तन गर्नुहोस्"
-
-#~ msgid "Change Object Style"
-#~ msgstr "वस्तु शैली परिवर्तन गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "Construct a circle with this center"
