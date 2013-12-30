@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-29 01:24+0000\n"
+"POT-Creation-Date: 2013-12-30 01:24+0000\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1277,7 +1277,7 @@ msgstr "छवि प्रकार रूपान्तरण गर्नु
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:707
+#: image/kis_image.cc:920 ui/kis_layer_manager.cc:710
 msgid "Flatten Image"
 msgstr "समतल छवि"
 
@@ -1697,7 +1697,7 @@ msgstr "रङ समायोजन"
 msgid "ColorBalanceMidtones Adjustment"
 msgstr "रङ समायोजन"
 
-#: plugins/colorspaces/extensions/kis_desaturate_adjustment.cpp:135
+#: plugins/colorspaces/extensions/kis_desaturate_adjustment.cpp:152
 #, fuzzy
 #| msgid "Color Adjustment"
 msgid "Desaturate Adjustment"
@@ -5299,26 +5299,39 @@ msgstr ""
 msgid "Desaturation method:"
 msgstr "संतृप्ति"
 
+#. i18n: ectx: property (text), widget (QRadioButton, radioMin)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:23
+msgid "&Min"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioMax)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:30
+msgid "&Max"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QRadioButton, radioAverage)
-#: plugins/filters/colorsfilters/wdg_desaturate.ui:36
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:50
 #, fuzzy
 #| msgid "Average"
 msgid "&Average"
 msgstr "औशत"
 
-#. i18n: ectx: property (text), widget (QRadioButton, radioLuminosity)
-#: plugins/filters/colorsfilters/wdg_desaturate.ui:43
-#, fuzzy
-#| msgid "Viscosity"
-msgid "Lu&minosity"
-msgstr "भिस्कोसिटी"
-
 #. i18n: ectx: property (text), widget (QRadioButton, radioLightness)
-#: plugins/filters/colorsfilters/wdg_desaturate.ui:53
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:57
 #, fuzzy
 #| msgid "Lightness"
 msgid "&Lightness"
 msgstr "हलुकापन"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioLuminosityBT709)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:67
+msgid "Luminosity (ITU-R BT.&709)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioLuminosityBT601)
+#: plugins/filters/colorsfilters/wdg_desaturate.ui:74
+msgid "Luminosity (ITU-R BT.&601)"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:23
@@ -12724,7 +12737,7 @@ msgstr "समतल छवि"
 msgid "&Flatten Layer"
 msgstr "फिल्टर ग्यालेरी"
 
-#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:776
+#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:779
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -12754,47 +12767,47 @@ msgstr "तह गुण"
 msgid "Generator Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:482
+#: ui/kis_layer_manager.cc:485
 #, fuzzy
 #| msgid "Convert Current Layer From"
 msgid "Convert to a Paint Layer"
 msgstr "यसबाट हालको तह रूपान्तरण गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:561
+#: ui/kis_layer_manager.cc:564
 #, fuzzy
 #| msgid "Filter Mask..."
 msgid "New Filter Layer"
 msgstr "फिल्टर मास्क..."
 
-#: ui/kis_layer_manager.cc:620
+#: ui/kis_layer_manager.cc:623
 msgid "Could not add layer to image."
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: ui/kis_layer_manager.cc:620
+#: ui/kis_layer_manager.cc:623
 msgid "Layer Error"
 msgstr "तह त्रुटि"
 
-#: ui/kis_layer_manager.cc:706
+#: ui/kis_layer_manager.cc:709
 msgid "The image contains hidden layers that will be lost."
 msgstr "छविले हराउने लुकाइएको तहहरू समावेश गर्दछ ।"
 
-#: ui/kis_layer_manager.cc:708
+#: ui/kis_layer_manager.cc:711
 msgid "&Flatten Image"
 msgstr "समतल छवि"
 
-#: ui/kis_layer_manager.cc:812
+#: ui/kis_layer_manager.cc:815
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:818
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:873
+#: ui/kis_layer_manager.cc:876
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:873
+#: ui/kis_layer_manager.cc:876
 msgid "No file specified"
 msgstr ""
 
@@ -13655,6 +13668,11 @@ msgstr "रङस्थान"
 #| msgid "Colorspace"
 msgid "Workspace %1"
 msgstr "रङस्थान"
+
+#, fuzzy
+#~| msgid "Viscosity"
+#~ msgid "Lu&minosity"
+#~ msgstr "भिस्कोसिटी"
 
 #, fuzzy
 #~| msgid "&Resources"
