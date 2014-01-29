@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-28 01:26+0000\n"
+"POT-Creation-Date: 2014-01-29 01:25+0000\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -982,6 +982,7 @@ msgstr "यहाँ सार्नुहोस्"
 #: digikam/dragdrop/importdragdrop.cpp:65
 #: digikam/dragdrop/importdragdrop.cpp:162 digikam/dragdrop/tagdragdrop.cpp:80
 #: digikam/dragdrop/tagdragdrop.cpp:168 digikam/dragdrop/tagdragdrop.cpp:217
+#: showfoto/thumbbar/showfotodragdrophandler.cpp:61
 msgid "C&ancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -1014,6 +1015,7 @@ msgstr "चयन गरेको डाउनलोड गर्नुहोस
 
 #: digikam/dragdrop/imagedragdrop.cpp:69
 #: digikam/dragdrop/importdragdrop.cpp:60
+#: showfoto/thumbbar/showfotodragdrophandler.cpp:56
 #, fuzzy
 #| msgid "No Tone Filter"
 msgctxt "@action:inmenu Group images with this image"
@@ -2109,7 +2111,7 @@ msgstr "पुन: नामकरण गर्नुहोस्..."
 msgid "Change the filename of the currently selected item."
 msgstr "यो विकल्पले हालै चयन गरेको वस्तुको फाइलनाम पुन: नामकरण गर्न अनुमति दिन्छ ।"
 
-#: digikam/main/digikamapp.cpp:992 showfoto/main/showfoto.cpp:520
+#: digikam/main/digikamapp.cpp:992 showfoto/main/showfoto.cpp:514
 #: utilities/imageeditor/editor/editorwindow.cpp:416
 #: utilities/lighttable/lighttablewindow.cpp:507
 #, fuzzy
@@ -2548,7 +2550,7 @@ msgstr "किपि प्लगइन"
 msgid "Loading themes..."
 msgstr "विषयवस्तु लोडिङ"
 
-#: digikam/main/digikamapp.cpp:2472 showfoto/main/showfoto.cpp:435
+#: digikam/main/digikamapp.cpp:2472 showfoto/main/showfoto.cpp:429
 msgid "&Themes"
 msgstr "विषयवस्तु"
 
@@ -13511,25 +13513,6 @@ msgstr "ट्याग:"
 msgid "Sublocation:"
 msgstr "चयन"
 
-#: libs/thememanager/thememanager.cpp:75
-#, fuzzy
-#| msgid "Use default profile"
-msgctxt "default theme name"
-msgid "Default"
-msgstr "पूर्वनिर्धारित प्रोफाइल प्रयोग गर्नुहोस्"
-
-#: libs/thememanager/thememanager.cpp:221
-#, fuzzy
-#| msgid "Camera Configuration"
-msgid "Configuration..."
-msgstr "क्यामेरा कन्फिगरेसन"
-
-#: libs/thememanager/thememanager.cpp:235
-msgid ""
-"Cannot start Colors Settings panel from KDE Control Center. Please check "
-"your system..."
-msgstr ""
-
 #: libs/threadimageio/thumbnailcreator.cpp:217
 msgid "No or invalid size specified"
 msgstr "साइज निर्दिष्ट छैन वा अवैध छ"
@@ -14160,7 +14143,7 @@ msgid "modified: %1"
 msgstr "परिमार्जन : %1"
 
 #: libs/widgets/itemview/itemviewimagedelegate.cpp:369
-#: showfoto/main/showfoto.cpp:628
+#: showfoto/main/showfoto.cpp:638
 #: showfoto/thumbbar/itemviewshowfotodelegate.cpp:308
 #: utilities/importui/items/itemviewimportdelegate.cpp:364
 #, fuzzy, kde-format
@@ -14635,6 +14618,25 @@ msgstr "टिप्पणी:"
 msgid "Size: %1"
 msgstr "साइज:"
 
+#: libs/widgets/mainview/thememanager.cpp:75
+#, fuzzy
+#| msgid "Use default profile"
+msgctxt "default theme name"
+msgid "Default"
+msgstr "पूर्वनिर्धारित प्रोफाइल प्रयोग गर्नुहोस्"
+
+#: libs/widgets/mainview/thememanager.cpp:221
+#, fuzzy
+#| msgid "Camera Configuration"
+msgid "Configuration..."
+msgstr "क्यामेरा कन्फिगरेसन"
+
+#: libs/widgets/mainview/thememanager.cpp:235
+msgid ""
+"Cannot start Colors Settings panel from KDE Control Center. Please check "
+"your system..."
+msgstr ""
+
 #: libs/widgets/mainview/thumbbardock.cpp:53
 #, fuzzy
 #| msgid "Image position:"
@@ -14941,7 +14943,7 @@ msgstr "शोफोटो"
 msgid "File(s) or folder(s) to open"
 msgstr "खोल्ने फाइल"
 
-#: showfoto/main/showfoto.cpp:305
+#: showfoto/main/showfoto.cpp:294
 #, fuzzy
 #| msgid ""
 #| "<qt><p>The ICC profile path seems to be invalid.</p><p>If you want to set "
@@ -14956,22 +14958,22 @@ msgstr ""
 "भने, \"हो\" चयन गर्नुहोस्, अन्यथा \"होइन\" चयन गर्नुहोस् । यस्तो अवस्थामा, तपाईँले सो "
 "विषय समाधान नगरेसम्म \"रङ व्यवस्थापन\" सुविधा अक्षम गरिन्छ</p></qt>"
 
-#: showfoto/main/showfoto.cpp:443
+#: showfoto/main/showfoto.cpp:437
 msgid "Open folder"
 msgstr "फोल्डर खोल्नुहोस्"
 
-#: showfoto/main/showfoto.cpp:525
+#: showfoto/main/showfoto.cpp:519
 msgid "Delete File"
 msgstr "फाइल मेट्नुहोस्"
 
-#: showfoto/main/showfoto.cpp:627
+#: showfoto/main/showfoto.cpp:637
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "unknown image dimensions"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: showfoto/main/showfoto.cpp:708
+#: showfoto/main/showfoto.cpp:718
 #: utilities/imageeditor/main/imagewindow.cpp:890
 #, fuzzy, kde-format
 #| msgid " (%2 of %3)"
@@ -14979,11 +14981,11 @@ msgctxt "<Image file name> (<Image number> of <Images in album>)"
 msgid "%1 (%2 of %3)"
 msgstr " (%3 को %2)"
 
-#: showfoto/main/showfoto.cpp:745
+#: showfoto/main/showfoto.cpp:755
 msgid "Open Images From Folder"
 msgstr "फोल्डरबाट छवि खोल्नुहोस्"
 
-#: showfoto/main/showfoto.cpp:892
+#: showfoto/main/showfoto.cpp:902
 #: utilities/imageeditor/main/imagewindow.cpp:970
 #: utilities/imageeditor/main/imagewindow.cpp:1068
 #, fuzzy
@@ -14991,7 +14993,7 @@ msgstr "फोल्डरबाट छवि खोल्नुहोस्"
 msgid "Image saved successfully"
 msgstr "%1 फाइल डाउनलोड गर्दैछ..."
 
-#: showfoto/main/showfoto.cpp:970
+#: showfoto/main/showfoto.cpp:980
 #, kde-format
 msgid ""
 "About to delete file \"%1\"\n"
@@ -15000,7 +15002,7 @@ msgstr ""
 "\"%1\" फाइल मेट्ने बारेमा\n"
 "तपाईँ यकिन हुनुहुन्छ ?"
 
-#: showfoto/main/showfoto.cpp:975
+#: showfoto/main/showfoto.cpp:985
 #: utilities/imageeditor/editor/editorwindow.cpp:1213
 #: utilities/importui/dialogs/cameramessagebox.cpp:252
 #, fuzzy
@@ -15008,7 +15010,7 @@ msgstr ""
 msgid "Warning"
 msgstr "दर"
 
-#: showfoto/main/showfoto.cpp:1048
+#: showfoto/main/showfoto.cpp:1058
 #: utilities/imageeditor/main/imagewindow.cpp:1359
 #: utilities/lighttable/lighttablewindow.cpp:1399
 #, fuzzy
