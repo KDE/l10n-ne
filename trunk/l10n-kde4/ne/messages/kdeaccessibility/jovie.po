@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kttsd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-30 01:33+0000\n"
+"POT-Creation-Date: 2014-04-02 01:42+0000\n"
 "PO-Revision-Date: 2007-08-19 15:02+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -40,11 +40,11 @@ msgstr "केडीई टीटीएसडी फिल्टर प्लग
 msgid "Copyright 2005, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
 msgstr ""
 
-#: filters/main.cpp:39 jovie/main.cpp:45 kcmkttsmgr/kcmkttsmgr.cpp:678
+#: filters/main.cpp:39 jovie/main.cpp:45 kcmkttsmgr/kcmkttsmgr.cpp:675
 msgid "Gary Cramblitt"
 msgstr ""
 
-#: filters/main.cpp:39 kcmkttsmgr/kcmkttsmgr.cpp:678
+#: filters/main.cpp:39 kcmkttsmgr/kcmkttsmgr.cpp:675
 msgid "Maintainer"
 msgstr "मर्मतकर्ता"
 
@@ -121,6 +121,20 @@ msgstr "..."
 #: filters/stringreplacer/editreplacementwidget.ui:133
 msgid "Match &case"
 msgstr "केस मिलाउनुहोस्"
+
+#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
+#: filters/stringreplacer/selectlanguagedlg.cpp:56
+#: kcmkttsmgr/talkerwidget.ui:68 libkttsd/talkerlistmodel.cpp:135
+msgid "Language"
+msgstr "भाषा"
+
+#: filters/stringreplacer/selectlanguagedlg.cpp:57
+msgid "Code"
+msgstr "सङ्केत"
+
+#: filters/stringreplacer/selectlanguagedlg.h:66
+msgid "Select Language"
+msgstr "भाषा चयन गर्नुहोस्"
 
 #: filters/stringreplacer/stringreplacerconf.cpp:128
 msgid "Unable to open file."
@@ -444,15 +458,44 @@ msgstr "मिलाउनुहोस्"
 msgid "Replace With"
 msgstr "यससँग प्रतिस्थापन गर्नुहोस्"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
+#: filters/talkerchooser/selecttalkerdlg.h:59
+#: filters/talkerchooser/selecttalkerwidget.ui:21
+#: filters/talkerchooser/talkerchooserconf.cpp:196 jovie/jovietrayicon.cpp:106
+msgid "Select Talker"
+msgstr "वक्ता चयन गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:58
+msgid ""
+"When checked, will use the default Talker, which is the topmost Talker "
+"listed in the Talkers tab."
+msgstr ""
+"चिनो गरिएमा, पूर्वनिर्धारित वक्ता प्रयोग गरिने छ, जुन वक्ता ट्याबमा सूचीकृत गरिएको "
+"माथिल्लो वक्ता हो ।"
+
+#. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:61
+msgid "&Use default Talker"
+msgstr "पूर्वनिर्धारित वक्ता प्रयोग गर्नुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:68
+msgid ""
+"When checked, will use the specific Talker (if it is still configured), "
+"otherwise the Talker most closely matching."
+msgstr ""
+"चिनो गरिएमा, निर्दिष्ट वक्ता प्रयोग गरिनेछ (यो अझैसम्म पनि कन्फिगर गरिएको भएमा), "
+"अन्यथा सबैभन्दा नजिकको मिल्ने वक्ता प्रयोग गरिनेछ ।"
+
+#. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:71
+msgid "Use specific &Talker"
+msgstr "निर्दिष्ट वक्ता प्रयोग गर्नुहोस्"
+
 #: filters/talkerchooser/talkerchooserconf.cpp:135
 msgid "Talker Chooser"
 msgstr "वक्ता चयनकर्ता"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
-#: filters/talkerchooser/talkerchooserconf.cpp:196 jovie/jovietrayicon.cpp:103
-#: libkttsd/selecttalkerdlg.h:59 libkttsd/selecttalkerwidget.ui:21
-msgid "Select Talker"
-msgstr "वक्ता चयन गर्नुहोस्"
 
 #: filters/talkerchooser/talkerchooserconf.cpp:212
 #: filters/talkerchooser/talkerchooserconf.cpp:226
@@ -692,32 +735,32 @@ msgstr "र अनुप्रयोग आईडी समावेश गर�
 msgid "KDE Text-to-Speech"
 msgstr "केडीई पाठ वाचक"
 
-#: jovie/jovietrayicon.cpp:64
+#: jovie/jovietrayicon.cpp:67
 #, fuzzy
 #| msgid "Text-to-Speech Manager"
 msgid "KDE Text-to-Speech Manager"
 msgstr "पाठ वाचक प्रबन्धक"
 
-#: jovie/jovietrayicon.cpp:72
+#: jovie/jovietrayicon.cpp:75
 msgid "&Stop/Delete"
 msgstr ""
 
-#: jovie/jovietrayicon.cpp:78
+#: jovie/jovietrayicon.cpp:81
 #, fuzzy
 msgid "&Pause"
 msgstr "पज गरिएको"
 
-#: jovie/jovietrayicon.cpp:84
+#: jovie/jovietrayicon.cpp:87
 #, fuzzy
 msgid "&Resume"
 msgstr "पुन: निरन्तरता दिनुहोस्"
 
-#: jovie/jovietrayicon.cpp:90
+#: jovie/jovietrayicon.cpp:93
 #, fuzzy
 msgid "R&epeat"
 msgstr "फेरि सुरु गर्नुहोस्"
 
-#: jovie/jovietrayicon.cpp:99
+#: jovie/jovietrayicon.cpp:102
 #, fuzzy
 msgid "Spea&k Clipboard Contents"
 msgstr "क्लिपबोर्ड सामाग्री वाचन गर्नुहोस्"
@@ -748,7 +791,7 @@ msgstr ""
 msgid "Current Maintainer"
 msgstr "मर्मतकर्ता"
 
-#: jovie/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:677
+#: jovie/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:674
 #, fuzzy
 msgid "José Pablo Ezequiel Fernández"
 msgstr "(c) २००२, जोड पाब्लो इजिक्वेइल फर्नान्डिज"
@@ -768,15 +811,15 @@ msgid "Gunnar Schmi Dt"
 msgstr ""
 
 #: jovie/main.cpp:46 jovie/main.cpp:47 jovie/main.cpp:48 jovie/main.cpp:49
-#: kcmkttsmgr/kcmkttsmgr.cpp:679 kcmkttsmgr/kcmkttsmgr.cpp:680
+#: kcmkttsmgr/kcmkttsmgr.cpp:676 kcmkttsmgr/kcmkttsmgr.cpp:677
 msgid "Contributor"
 msgstr "सहयोगी"
 
-#: jovie/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:679
+#: jovie/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:676
 msgid "Olaf Schmidt"
 msgstr ""
 
-#: jovie/main.cpp:48 kcmkttsmgr/kcmkttsmgr.cpp:680
+#: jovie/main.cpp:48 kcmkttsmgr/kcmkttsmgr.cpp:677
 msgid "Paul Giannaros"
 msgstr ""
 
@@ -800,11 +843,11 @@ msgstr ""
 msgid "Add Talker"
 msgstr "वक्ता थप्नुहोस्"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:184 kcmkttsmgr/kcmkttsmgr.cpp:804
+#: kcmkttsmgr/kcmkttsmgr.cpp:181 kcmkttsmgr/kcmkttsmgr.cpp:801
 msgid "Filter"
 msgstr "फिल्टर"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:623
+#: kcmkttsmgr/kcmkttsmgr.cpp:620
 msgid ""
 "You have made changes to the configuration but have not saved them yet.  "
 "Click Apply to save the changes or Cancel to abandon the changes."
@@ -812,7 +855,7 @@ msgstr ""
 "तपाईँले कन्फिगरेसनमा परिवर्तन गर्नुभयो तर अहिलेसम्म बचत गर्नुभएको छैन ।  परिवर्तन बचत गर्न "
 "'लागू गर्नुहोस्' क्लिक गर्नुहोस् वा परिवर्तन छोड्न 'रद्द गर्नुहोस्' क्लिक गर्नुहोस् ।"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:664
+#: kcmkttsmgr/kcmkttsmgr.cpp:661
 #, fuzzy
 #| msgid ""
 #| "<h1>Text-to-Speech</h1><p>This is the configuration for the text-to-"
@@ -830,46 +873,46 @@ msgstr ""
 "संसाधनमा अन्य अनुप्रयोगलाई अनुमति दिन्छ</p><p>तपाईँले प्रयोग गरिरहनु भएको पूर्वनिर्धारित "
 "भाषा धेरैजसो अनुप्रयोगद्वारा प्रयोग गरिने भाषा हुनेमा निश्चित हुनुहोस् ।</p>"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:673
+#: kcmkttsmgr/kcmkttsmgr.cpp:670
 #, fuzzy
 msgid "jovie"
 msgstr "वाच्य"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:673
+#: kcmkttsmgr/kcmkttsmgr.cpp:670
 msgid "KCMKttsMgr"
 msgstr "केसीएम केडीई पाठ वाचक प्रबन्धक"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:675
+#: kcmkttsmgr/kcmkttsmgr.cpp:672
 msgid "(c) 2010, Jeremy Whiting"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:677
+#: kcmkttsmgr/kcmkttsmgr.cpp:674
 msgid "Author"
 msgstr "लेखक"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:803
+#: kcmkttsmgr/kcmkttsmgr.cpp:800
 msgid "Select Filter"
 msgstr "फिल्टर चयन गर्नुहोस्"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, kttsjobmgr)
-#: kcmkttsmgr/kcmkttsmgr.cpp:1098 kcmkttsmgr/kttsjobmgr.ui:14
+#: kcmkttsmgr/kcmkttsmgr.cpp:1095 kcmkttsmgr/kttsjobmgr.ui:14
 #, fuzzy
 #| msgid "&Jobs"
 msgid "Jobs"
 msgstr "कार्य"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1120
+#: kcmkttsmgr/kcmkttsmgr.cpp:1117
 #, kde-format
 msgid "Jovie Version: %1"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, kttsdVersion)
-#: kcmkttsmgr/kcmkttsmgr.cpp:1160 kcmkttsmgr/kcmkttsmgrwidget.ui:40
+#: kcmkttsmgr/kcmkttsmgr.cpp:1157 kcmkttsmgr/kcmkttsmgrwidget.ui:40
 #, fuzzy
 msgid "Jovie not running"
 msgstr "केडीई टीटीएस कन्फिगर गरिएको छैन"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1269
+#: kcmkttsmgr/kcmkttsmgr.cpp:1266
 msgid "Filter Configuration"
 msgstr "फिल्टर कन्फिगरेसन"
 
@@ -1081,13 +1124,7 @@ msgid "&Name"
 msgstr "नाम:"
 
 #. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
-#: kcmkttsmgr/talkerwidget.ui:68 libkttsd/selectlanguagedlg.cpp:56
-#: libkttsd/talkerlistmodel.cpp:132
-msgid "Language"
-msgstr "भाषा"
-
-#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
-#: kcmkttsmgr/talkerwidget.ui:73 libkttsd/talkerlistmodel.cpp:133
+#: kcmkttsmgr/talkerwidget.ui:73 libkttsd/talkerlistmodel.cpp:136
 #, fuzzy
 msgid "Synthesizer"
 msgstr "सिन्थेसाइजर:"
@@ -1112,14 +1149,14 @@ msgid "Male 1"
 msgstr "पुरुष"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:102 libkttsd/talkercode.cpp:252
+#: kcmkttsmgr/talkerwidget.ui:102 libkttsd/talkercode.cpp:278
 #, fuzzy
 #| msgid "Male"
 msgid "Male 2"
 msgstr "पुरुष"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:107 libkttsd/talkercode.cpp:253
+#: kcmkttsmgr/talkerwidget.ui:107 libkttsd/talkercode.cpp:279
 #, fuzzy
 #| msgid "Male"
 msgid "Male 3"
@@ -1133,14 +1170,14 @@ msgid "Female 1"
 msgstr "महिला"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:117 libkttsd/talkercode.cpp:255
+#: kcmkttsmgr/talkerwidget.ui:117 libkttsd/talkercode.cpp:281
 #, fuzzy
 #| msgid "Female"
 msgid "Female 2"
 msgstr "महिला"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:122 libkttsd/talkercode.cpp:256
+#: kcmkttsmgr/talkerwidget.ui:122 libkttsd/talkercode.cpp:282
 #, fuzzy
 #| msgid "Female"
 msgid "Female 3"
@@ -1179,132 +1216,96 @@ msgstr "पिच:"
 msgid "&Volume"
 msgstr "भोल्युम:"
 
-#: libkttsd/selectlanguagedlg.cpp:57
-msgid "Code"
-msgstr "सङ्केत"
-
-#: libkttsd/selectlanguagedlg.h:66
-msgid "Select Language"
-msgstr "भाषा चयन गर्नुहोस्"
-
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
-#: libkttsd/selecttalkerwidget.ui:58
-msgid ""
-"When checked, will use the default Talker, which is the topmost Talker "
-"listed in the Talkers tab."
-msgstr ""
-"चिनो गरिएमा, पूर्वनिर्धारित वक्ता प्रयोग गरिने छ, जुन वक्ता ट्याबमा सूचीकृत गरिएको "
-"माथिल्लो वक्ता हो ।"
-
-#. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
-#: libkttsd/selecttalkerwidget.ui:61
-msgid "&Use default Talker"
-msgstr "पूर्वनिर्धारित वक्ता प्रयोग गर्नुहोस्"
-
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: libkttsd/selecttalkerwidget.ui:68
-msgid ""
-"When checked, will use the specific Talker (if it is still configured), "
-"otherwise the Talker most closely matching."
-msgstr ""
-"चिनो गरिएमा, निर्दिष्ट वक्ता प्रयोग गरिनेछ (यो अझैसम्म पनि कन्फिगर गरिएको भएमा), "
-"अन्यथा सबैभन्दा नजिकको मिल्ने वक्ता प्रयोग गरिनेछ ।"
-
-#. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: libkttsd/selecttalkerwidget.ui:71
-msgid "Use specific &Talker"
-msgstr "निर्दिष्ट वक्ता प्रयोग गर्नुहोस्"
-
-#: libkttsd/talkercode.cpp:243
+#: libkttsd/talkercode.cpp:269
 #, fuzzy
 #| msgid "default"
 msgctxt "Default language code"
 msgid "default"
 msgstr "पूर्वनिर्धारित"
 
-#: libkttsd/talkercode.cpp:251
+#: libkttsd/talkercode.cpp:277
 #, fuzzy
 #| msgid "Male"
 msgctxt "The name of the first Male voice"
 msgid "Male 1"
 msgstr "पुरुष"
 
-#: libkttsd/talkercode.cpp:254
+#: libkttsd/talkercode.cpp:280
 #, fuzzy
 #| msgid "Female"
 msgctxt "The name of the first Female voice"
 msgid "Female 1"
 msgstr "महिला"
 
-#: libkttsd/talkercode.cpp:257
+#: libkttsd/talkercode.cpp:283
 msgctxt "The name of the male child voice"
 msgid "Boy"
 msgstr ""
 
-#: libkttsd/talkercode.cpp:258
+#: libkttsd/talkercode.cpp:284
 msgctxt "The name of the female child voice"
 msgid "Girl"
 msgstr ""
 
-#: libkttsd/talkercode.cpp:260
+#: libkttsd/talkercode.cpp:286
 msgctxt ""
 "Somehow user has gotten a voice type that is not valid, i.e. not Male1, "
 "Male2, etc."
 msgid "Invalid voice type"
 msgstr ""
 
-#: libkttsd/talkercode.cpp:288
+#: libkttsd/talkercode.cpp:314
 #, fuzzy
 #| msgid "Other"
 msgctxt "Other language"
 msgid "Other"
 msgstr "अन्य"
 
-#: libkttsd/talkercode.cpp:298
+#: libkttsd/talkercode.cpp:324
 msgctxt "full country name"
 msgid "United States of America"
 msgstr "संयुक्त राज्य अमेरिका"
 
-#: libkttsd/talkercode.cpp:299
+#: libkttsd/talkercode.cpp:325
 msgctxt "abbreviated country name"
 msgid "USA"
 msgstr "यू एस ए"
 
-#: libkttsd/talkercode.cpp:300
+#: libkttsd/talkercode.cpp:326
 msgctxt "full country name"
 msgid "United Kingdom"
 msgstr "संयुक्त अधिराज्य"
 
-#: libkttsd/talkercode.cpp:301
+#: libkttsd/talkercode.cpp:327
 msgctxt "abbreviated country name"
 msgid "UK"
 msgstr "यू के"
 
-#: libkttsd/talkerlistmodel.cpp:131
+#: libkttsd/talkerlistmodel.cpp:134
 #, fuzzy
 #| msgid "&Name:"
 msgid "Name"
 msgstr "नाम:"
 
-#: libkttsd/talkerlistmodel.cpp:134
+#: libkttsd/talkerlistmodel.cpp:137
 #, fuzzy
 msgid "Voice Type"
 msgstr "वाच्य"
 
-#: libkttsd/talkerlistmodel.cpp:135
+#: libkttsd/talkerlistmodel.cpp:138
 #, fuzzy
 #| msgid "Volume"
 msgctxt "Volume of noise"
 msgid "Volume"
 msgstr "भोल्युम"
 
-#: libkttsd/talkerlistmodel.cpp:136
+#: libkttsd/talkerlistmodel.cpp:139
 #, fuzzy
 #| msgid "&Speed:"
 msgid "Speed"
 msgstr "गति:"
 
-#: libkttsd/talkerlistmodel.cpp:137
+#: libkttsd/talkerlistmodel.cpp:140
 #, fuzzy
 #| msgid "&Pitch:"
 msgid "Pitch"
