@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-12 01:45+0000\n"
+"POT-Creation-Date: 2014-04-21 01:48+0000\n"
 "PO-Revision-Date: 2007-12-31 19:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -607,7 +607,7 @@ msgstr "सबै पाठहरू चयन गर्नुहोस्"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: ectx: property (text), widget (QRadioButton, multipleChoice)
 #: src/configure-practice/specificpracticeoptions.ui:17
-#: src/editor/editor.cpp:232 src/statistics/statisticsmainwindow.ui:115
+#: src/editor/editor.cpp:232 src/statistics/statisticsmainwindow.ui:93
 msgid "Multiple Choice"
 msgstr "बहुँविध छनौट"
 
@@ -1333,7 +1333,7 @@ msgid "Could not write to file \"%1\""
 msgstr "अभ्यास सुरु गर्नुहोस्..."
 
 #: src/export/exportdialog.cpp:110 src/parleydocument.cpp:238
-#: src/parleymainwindow.cpp:139
+#: src/parleymainwindow.cpp:138
 msgid "Untitled"
 msgstr "शीर्षकविहिन"
 
@@ -1800,7 +1800,19 @@ msgstr "पाठ %1"
 msgid "Could not open vocabulary collection \"%1\""
 msgstr "एउटा उदाहरण शब्दसूची कागजात खोल्नुहोस्"
 
-#: src/parleymainwindow.cpp:202
+#: src/parleymainwindow.cpp:176
+msgid ""
+"You cannot start to practice when the known language is the same as the "
+"language to learn."
+msgstr ""
+
+#: src/parleymainwindow.cpp:177
+#, fuzzy
+#| msgid "A Second Language"
+msgid "Select languages"
+msgstr "दोस्रो भाषा"
+
+#: src/parleymainwindow.cpp:208
 msgid ""
 "Vocabulary is modified.\n"
 "\n"
@@ -1847,13 +1859,13 @@ msgstr "अभ्यास सारांश"
 msgid "Stop"
 msgstr ""
 
-#: src/practice/comparisonbackendmode.cpp:69
+#: src/practice/comparisonbackendmode.cpp:70
 #, fuzzy
 #| msgid "A neutral conjugation form exists"
 msgid "All comparison forms were right."
 msgstr "एउटा तटस्थ संयोजन फाराम अवस्थित छ"
 
-#: src/practice/comparisonbackendmode.cpp:74
+#: src/practice/comparisonbackendmode.cpp:75
 #, kde-format
 msgctxt ""
 "the user entered the wrong absolute form when practicing comparison forms of "
@@ -1861,14 +1873,14 @@ msgctxt ""
 msgid "\"%1\" is the wrong word."
 msgstr ""
 
-#: src/practice/comparisonbackendmode.cpp:78
+#: src/practice/comparisonbackendmode.cpp:79
 msgctxt ""
 "the user entered the wrong comparison forms when practicing comparison forms "
 "of adjectives (good, better, best)"
 msgid "Both comparison forms (comparative and superlative) are wrong."
 msgstr ""
 
-#: src/practice/comparisonbackendmode.cpp:81
+#: src/practice/comparisonbackendmode.cpp:82
 #, fuzzy
 #| msgid "The answer was wrong."
 msgctxt ""
@@ -1877,7 +1889,7 @@ msgctxt ""
 msgid "The comparative is wrong."
 msgstr "तपाईँको जवाफ गलत छ ।"
 
-#: src/practice/comparisonbackendmode.cpp:84
+#: src/practice/comparisonbackendmode.cpp:85
 #, fuzzy
 #| msgid "The answer was wrong."
 msgctxt ""
@@ -1913,13 +1925,13 @@ msgstr[1] "एउटा तटस्थ संयोजन फाराम अ�
 msgid "Enter all conjugation forms."
 msgstr "सही संयोजन फाराम प्रविष्ट गर्नुहोस् ।"
 
-#: src/practice/entryfilter.cpp:82
+#: src/practice/entryfilter.cpp:92
 msgid ""
 "The vocabulary document contains no entries that can be used for the chosen "
 "type of practice."
 msgstr ""
 
-#: src/practice/entryfilter.cpp:117
+#: src/practice/entryfilter.cpp:108
 #, fuzzy
 #| msgid "Start Practice..."
 msgid "Start Practice"
@@ -2004,26 +2016,26 @@ msgstr "चयन गरिएका पाठहरूमा प्रविष
 msgid "Resulting number of words to practice:"
 msgstr "सही अनुवाद चयन गर्नुहोस्:"
 
-#: src/practice/genderbackendmode.cpp:62
+#: src/practice/genderbackendmode.cpp:61
 #, kde-format
 msgid "Choose the right article for \"%1\""
 msgstr ""
 
-#: src/practice/genderbackendmode.cpp:84
+#: src/practice/genderbackendmode.cpp:83
 #, fuzzy, kde-format
 #| msgid "&male"
 msgctxt "@label the gender of the word: masculine"
 msgid "%1 is masculine"
 msgstr "पुरुष"
 
-#: src/practice/genderbackendmode.cpp:89
+#: src/practice/genderbackendmode.cpp:88
 #, fuzzy, kde-format
 #| msgid "&female"
 msgctxt "@label the gender of the word: feminine"
 msgid "%1 is feminine"
 msgstr "महिला"
 
-#: src/practice/genderbackendmode.cpp:94
+#: src/practice/genderbackendmode.cpp:93
 #, fuzzy, kde-format
 #| msgid "&neutral"
 msgctxt "@label the gender of the word: neuter"
@@ -2056,7 +2068,7 @@ msgstr ""
 msgid "LaTeX error."
 msgstr ""
 
-#: src/practice/multiplechoicebackendmode.cpp:107
+#: src/practice/multiplechoicebackendmode.cpp:106
 #: src/practice/writtenbackendmode.cpp:147
 msgid "You revealed the answer by using too many hints."
 msgstr ""
@@ -2132,23 +2144,23 @@ msgstr "तुलनात्मक"
 msgid "superlative"
 msgstr "सर्वोत्कृष्ट"
 
-#: src/practice/practicemainwindow.cpp:75
+#: src/practice/practicemainwindow.cpp:73
 #, fuzzy
 #| msgid "&Stop Practice"
 msgid "Stop Practice"
 msgstr "अभ्यास रोक्नुहोस्"
 
-#: src/practice/practicemainwindow.cpp:77
+#: src/practice/practicemainwindow.cpp:75
 #, fuzzy
 #| msgid "&Stop Practice"
 msgid "Stop practicing"
 msgstr "अभ्यास रोक्नुहोस्"
 
-#: src/practice/practicemainwindow.cpp:87
+#: src/practice/practicemainwindow.cpp:85
 msgid "Change answer to right/wrong"
 msgstr ""
 
-#: src/practice/practicemainwindow.cpp:88
+#: src/practice/practicemainwindow.cpp:86
 msgid ""
 "When you answered, Parley will display that the answer was right or wrong.\n"
 "This shortcut changes how the answer is counted."
@@ -2274,13 +2286,13 @@ msgstr "समाधान देखाउनुहोस्"
 msgid "Your Answer"
 msgstr "श्यामकृष्ण बल"
 
-#: src/practice/sessionmanagerbase.cpp:66
+#: src/practice/sessionmanagerbase.cpp:67
 #, fuzzy
 #| msgid "Save the active vocabulary document with a different name"
 msgid "The vocabulary collection contains fewer than two languages."
 msgstr "विभिन्न नामसँग सक्रिय शब्द सूची कागजात बचत गर्नुहोस्"
 
-#: src/practice/sessionmanagerbase.cpp:67
+#: src/practice/sessionmanagerbase.cpp:68
 #, fuzzy
 #| msgid "Start Practice..."
 msgid "Could not start practice"
@@ -3432,55 +3444,62 @@ msgstr "सही अनुवाद चयन गर्नुहोस्:"
 msgid "Selected sub word types for practices."
 msgstr "सही अनुवाद चयन गर्नुहोस्:"
 
-#. i18n: ectx: label, entry (QuestionLanguage), group (PracticeManager)
-#: src/settings/parley.kcfg:292
-msgid "The language that is displayed in a test."
+#. i18n: ectx: label, entry (LearningLanguage), group (PracticeManager)
+#: src/settings/parley.kcfg:293
+msgid "The language that you are learning."
 msgstr ""
 
-#. i18n: ectx: label, entry (SolutionLanguage), group (PracticeManager)
-#: src/settings/parley.kcfg:296
-msgid "The language in which the user has to answer."
-msgstr ""
+#. i18n: ectx: label, entry (KnownLanguage), group (PracticeManager)
+#: src/settings/parley.kcfg:297
+#, fuzzy
+#| msgid "The language of the second column of vocabulary."
+msgid "The language which that you know already."
+msgstr "शब्दसूचीको दोस्रो स्तम्भको भाषा ।"
 
 #. i18n: ectx: label, entry (ShowSolutionAfterAnswer), group (PracticeManager)
-#: src/settings/parley.kcfg:301
+#: src/settings/parley.kcfg:302
 #, fuzzy
 #| msgid "&Show solution after answering:"
 msgid "Show the solution after an answer was given."
 msgstr "जवाफ दिएपछि समाधान देखाउँनुहोस्:"
 
 #. i18n: ectx: label, entry (ShowSolutionAfterAnswerTime), group (PracticeManager)
-#: src/settings/parley.kcfg:305
+#: src/settings/parley.kcfg:306
 msgid "The time the solution is shown (seconds). 0 is unlimited."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeMode), group (PracticeManager)
-#: src/settings/parley.kcfg:320
+#: src/settings/parley.kcfg:321
+msgid "The practice method that is currently selected."
+msgstr ""
+
+#. i18n: ectx: label, entry (PracticeDirection), group (PracticeManager)
+#: src/settings/parley.kcfg:332
 msgid "The practice mode that is currently selected."
 msgstr ""
 
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
-#: src/settings/parley.kcfg:326
+#: src/settings/parley.kcfg:338
 msgid "Amount of time different grades should be blocked"
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
-#: src/settings/parley.kcfg:337
+#: src/settings/parley.kcfg:349
 msgid "Amount of time after which different grades should expire"
 msgstr ""
 
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
-#: src/settings/parley.kcfg:349
+#: src/settings/parley.kcfg:361
 msgid "The Providers path for Parley"
 msgstr ""
 
 #. i18n: ectx: label, entry (InstallationCommand), group (KNewStuff)
-#: src/settings/parley.kcfg:353
+#: src/settings/parley.kcfg:365
 msgid "The command used to start a downloaded vocabulary"
 msgstr ""
 
 #. i18n: ectx: label, entry (InstallPath), group (KNewStuff)
-#: src/settings/parley.kcfg:357
+#: src/settings/parley.kcfg:369
 msgid "The folder where downloaded vocabularies are saved by default"
 msgstr ""
 
@@ -3583,29 +3602,36 @@ msgstr "परीक्षणबाट सबै पाठहरू हटाउ
 msgid "Remove grades from this lesson and all sub-lessons"
 msgstr "परीक्षणबाट सबै पाठहरू हटाउनुहोस् ।"
 
-#: src/statistics/statisticsmainwindow.cpp:56
-#, fuzzy, kde-format
-#| msgid "&Statistics..."
-msgctxt "caption for an overview of the grades for a document"
-msgid "Statistics for \"%1\""
-msgstr "तश्याङ्क..."
-
-#: src/statistics/statisticsmainwindow.cpp:166
-#: src/statistics/statisticsmainwindow.cpp:177
-#, kde-format
-msgctxt "pair of two languages that the user chooses to practice"
-msgid "%1 to %2"
+#: src/statistics/statisticsmainwindow.cpp:196
+msgid "Known to Learning"
 msgstr ""
+
+#: src/statistics/statisticsmainwindow.cpp:197
+msgid "Learning to Known"
+msgstr ""
+
+#: src/statistics/statisticsmainwindow.cpp:198
+#, fuzzy
+#| msgid "Mixed Letters"
+msgid "Mixed Directions"
+msgstr "मिश्रित गरिएको अक्षर"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: src/statistics/statisticsmainwindow.ui:23
 #, fuzzy
+#| msgid "Language Elements"
+msgid "Language to Learn"
+msgstr "भाषा तत्व"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/statistics/statisticsmainwindow.ui:43
+#, fuzzy
 #| msgid "Languages"
-msgid "Languages:"
+msgid "Known Language"
 msgstr "भाषा"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: src/statistics/statisticsmainwindow.ui:91
+#: src/statistics/statisticsmainwindow.ui:69
 #, fuzzy
 #| msgctxt "@title:group"
 #| msgid "Practice"
@@ -3613,45 +3639,52 @@ msgid "Practice Mode:"
 msgstr "अभ्यास"
 
 #. i18n: ectx: property (text), widget (QRadioButton, flashCard)
-#: src/statistics/statisticsmainwindow.ui:98
+#: src/statistics/statisticsmainwindow.ui:76
 msgid "Flash Cards"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mixedLetters)
-#: src/statistics/statisticsmainwindow.ui:108
+#: src/statistics/statisticsmainwindow.ui:86
 msgid "Mixed Letters"
 msgstr "मिश्रित गरिएको अक्षर"
 
 #. i18n: ectx: property (text), widget (QRadioButton, written)
-#: src/statistics/statisticsmainwindow.ui:122
+#: src/statistics/statisticsmainwindow.ui:100
 msgid "Written"
 msgstr "लिखित"
 
 #. i18n: ectx: property (text), widget (QRadioButton, exampleSentence)
-#: src/statistics/statisticsmainwindow.ui:132
+#: src/statistics/statisticsmainwindow.ui:110
 msgid "Example Sentences"
 msgstr "उदाहरण वाक्य"
 
 #. i18n: ectx: property (text), widget (QRadioButton, gender)
-#: src/statistics/statisticsmainwindow.ui:142
+#: src/statistics/statisticsmainwindow.ui:120
 #, fuzzy
 #| msgid "&Neutral:"
 msgid "Gender of Nouns"
 msgstr "तटस्थ:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, comparisonForms)
-#: src/statistics/statisticsmainwindow.ui:152
+#: src/statistics/statisticsmainwindow.ui:130
 #, fuzzy
 #| msgid "Comparison"
 msgid "Comparison Forms"
 msgstr "तुलना"
 
 #. i18n: ectx: property (text), widget (QRadioButton, conjugations)
-#: src/statistics/statisticsmainwindow.ui:162
+#: src/statistics/statisticsmainwindow.ui:140
 #, fuzzy
 #| msgid "Conjugation"
 msgid "Conjugations"
 msgstr "संयोजन"
+
+#. i18n: ectx: property (text), widget (QLabel, label3)
+#: src/statistics/statisticsmainwindow.ui:183
+#, fuzzy
+#| msgid "Practice options"
+msgid "Practice Direction"
+msgstr "अभ्यास विकल्प"
 
 #: src/statistics/statisticsmodel.cpp:31
 #, fuzzy, kde-format
@@ -4198,6 +4231,17 @@ msgid ""
 "kvtml2.php</a>.</p>\n"
 msgstr ""
 
+#, fuzzy
+#~| msgid "&Statistics..."
+#~ msgctxt "caption for an overview of the grades for a document"
+#~ msgid "Statistics for \"%1\""
+#~ msgstr "तश्याङ्क..."
+
+#, fuzzy
+#~| msgid "Languages"
+#~ msgid "Languages:"
+#~ msgstr "भाषा"
+
 #~ msgctxt ""
 #~ "@title:group Configure advanced settings for practicing vocabulary, short "
 #~ "title in config dialog."
@@ -4492,9 +4536,6 @@ msgstr ""
 #~ msgctxt "@title:group"
 #~ msgid "Practice"
 #~ msgstr "अभ्यास"
-
-#~ msgid "Practice options"
-#~ msgstr "अभ्यास विकल्प"
 
 #, fuzzy
 #~| msgid "Start Practice..."
@@ -5319,9 +5360,6 @@ msgstr ""
 
 #~ msgid "Please select a second language (can be the same as before):"
 #~ msgstr "कृपया दोस्रो भाषा चयन गर्नुहोस् (पहिलो जस्तो पनि हुन सक्छ):"
-
-#~ msgid "The language of the second column of vocabulary."
-#~ msgstr "शब्दसूचीको दोस्रो स्तम्भको भाषा ।"
 
 #~ msgid "Second title:"
 #~ msgstr "दोस्रो शीर्षक:"
