@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-20 01:47+0000\n"
+"POT-Creation-Date: 2014-05-21 01:58+0000\n"
 "PO-Revision-Date: 2007-08-20 13:11+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -186,10 +186,11 @@ msgstr ""
 msgid "That is an invalid name."
 msgstr "त्यो एउटा अवैध नाम हो ।"
 
-#: classifier.cpp:407 classifier.cpp:784 dialogs/diagrampropertiespage.cpp:76
-#: entity.cpp:125 entity.cpp:178 entity.cpp:228 entity.cpp:277 enum.cpp:107
-#: object_factory.cpp:212 package.cpp:175 umldoc.cpp:1289 umldoc.cpp:1360
-#: umldoc.cpp:1390 umldoc.cpp:1424
+#: classifier.cpp:407 classifier.cpp:784
+#: dialogs/pages/diagrampropertiespage.cpp:76 entity.cpp:125 entity.cpp:178
+#: entity.cpp:228 entity.cpp:277 enum.cpp:107 object_factory.cpp:212
+#: package.cpp:175 umldoc.cpp:1289 umldoc.cpp:1360 umldoc.cpp:1390
+#: umldoc.cpp:1424
 msgid "Invalid Name"
 msgstr "अवैध नाम"
 
@@ -694,13 +695,17 @@ msgstr "सिर्जना गरिएको कोडमा वर्गह
 #: codegenerators/d/dcodegenerationformbase.ui:261
 #: codegenerators/java/javacodegenerationformbase.ui:261
 #: codegenerators/ruby/rubycodegenerationformbase.ui:52
-#: dialogs/activitydialog.cpp:200 dialogs/assocgenpage.cpp:78
-#: dialogs/assocrolepage.cpp:93 dialogs/assocrolepage.cpp:94
-#: dialogs/classgenpage.cpp:250 dialogs/classgenpage.cpp:342
-#: dialogs/classgenpage.cpp:406 dialogs/classifierlistpage.cpp:218
-#: dialogs/diagrampropertiespage.ui:257 dialogs/objectnodedialog.cpp:195
-#: dialogs/parmpropdlg.cpp:115 dialogs/statedialog.cpp:167
-#: dialogs/umlrolepropertiesbase.ui:140
+#: dialogs/activitydialog.cpp:200 dialogs/objectnodedialog.cpp:195
+#: dialogs/pages/associationgeneralpage.cpp:78
+#: dialogs/pages/associationrolepage.cpp:93
+#: dialogs/pages/associationrolepage.cpp:94
+#: dialogs/pages/classgeneralpage.cpp:250
+#: dialogs/pages/classgeneralpage.cpp:342
+#: dialogs/pages/classgeneralpage.cpp:406
+#: dialogs/pages/classifierlistpage.cpp:218
+#: dialogs/pages/diagrampropertiespage.ui:257
+#: dialogs/pages/umlrolepropertiesbase.ui:140 dialogs/parmpropdialog.cpp:115
+#: dialogs/statedialog.cpp:167
 msgid "Documentation"
 msgstr "मिसिलीकरण"
 
@@ -786,8 +791,9 @@ msgstr "पूर्वनिर्धारित विशेषता पह�
 #: codegenerators/java/javacodegenerationformbase.ui:221
 #: codegenerators/ruby/rubycodegenerationformbase.ui:147
 #: codegenerators/ruby/rubycodegenerationformbase.ui:188
-#: dialogs/classoptionspage.cpp:269 dialogs/classoptionspage.cpp:277
-#: dialogs/umlrolepropertiesbase.ui:73
+#: dialogs/pages/classoptionspage.cpp:269
+#: dialogs/pages/classoptionspage.cpp:277
+#: dialogs/pages/umlrolepropertiesbase.ui:73
 msgid "Public"
 msgstr "सार्वजनिक"
 
@@ -800,8 +806,9 @@ msgstr "सार्वजनिक"
 #: codegenerators/java/javacodegenerationformbase.ui:226
 #: codegenerators/ruby/rubycodegenerationformbase.ui:152
 #: codegenerators/ruby/rubycodegenerationformbase.ui:193
-#: dialogs/classoptionspage.cpp:270 dialogs/classoptionspage.cpp:278
-#: dialogs/umlrolepropertiesbase.ui:83
+#: dialogs/pages/classoptionspage.cpp:270
+#: dialogs/pages/classoptionspage.cpp:278
+#: dialogs/pages/umlrolepropertiesbase.ui:83
 msgid "Private"
 msgstr "व्यक्तिगत"
 
@@ -814,8 +821,9 @@ msgstr "व्यक्तिगत"
 #: codegenerators/java/javacodegenerationformbase.ui:231
 #: codegenerators/ruby/rubycodegenerationformbase.ui:157
 #: codegenerators/ruby/rubycodegenerationformbase.ui:198
-#: dialogs/classoptionspage.cpp:271 dialogs/classoptionspage.cpp:279
-#: dialogs/umlrolepropertiesbase.ui:90
+#: dialogs/pages/classoptionspage.cpp:271
+#: dialogs/pages/classoptionspage.cpp:279
+#: dialogs/pages/umlrolepropertiesbase.ui:90
 msgid "Protected"
 msgstr "सुरक्षित"
 
@@ -1516,8 +1524,8 @@ msgid "Class Name"
 msgstr "वर्ग नाम"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/assocgenpage.cpp:77 dialogs/classpropdlg.cpp:128
-#: dialogs/objectnodedialog.cpp:45 dialogs/parmpropdlg.cpp:71
+#: dialogs/classpropdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/pages/associationgeneralpage.cpp:77 dialogs/parmpropdialog.cpp:71
 #: dialogs/statedialog.cpp:44 dialogs/statedialog.cpp:119
 #: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:633
 #: refactoring/refactoringassistant.cpp:460
@@ -1598,720 +1606,165 @@ msgstr ""
 msgid "&Parameter activity node"
 msgstr "परिमिति नाम अद्धितिय छैन"
 
-#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:190
-#: dialogs/statedialog.cpp:191
-msgid "Activities"
-msgstr "क्रियाकलापहरू"
-
-#: dialogs/activitypage.cpp:80 dialogs/classifierlistpage.cpp:174
-#, fuzzy
-#| msgid "Copies the selected section to the clipboard"
-msgid "Move selected item to the top"
-msgstr "चयन गरिएको खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ"
-
-#: dialogs/activitypage.cpp:86 dialogs/classifierlistpage.cpp:180
-#, fuzzy
-#| msgid "Delete Selected Items"
-msgid "Move selected item up"
-msgstr "चयन गरिएको वस्तु मेट्नुहोस्"
-
-#: dialogs/activitypage.cpp:92 dialogs/classifierlistpage.cpp:186
-msgid "Move selected item down"
-msgstr ""
-
-#: dialogs/activitypage.cpp:98 dialogs/classifierlistpage.cpp:192
-#, fuzzy
-#| msgid "Copies the selected section to the clipboard"
-msgid "Move selected item to the bottom"
-msgstr "चयन गरिएको खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ"
-
-#: dialogs/activitypage.cpp:102
-msgid "New Activity..."
-msgstr "नयाँ क्रियाकलाप..."
-
-#: dialogs/activitypage.cpp:104 listpopupmenu.cpp:642
-#: refactoring/refactoringassistant.cpp:461
-#, fuzzy
-msgid "Delete"
-msgstr "चयन गर्नुहोस्"
-
-#: dialogs/activitypage.cpp:106 widgets/floatingtextwidget.cpp:405
-msgid "Rename"
-msgstr "पुन: नामकरण गर्नुहोस्"
-
-#: dialogs/activitypage.cpp:175
-msgid "New Activity"
-msgstr "नयाँ क्रियाकलाप"
-
-#: dialogs/activitypage.cpp:176 toolbarstateother.cpp:251 umlscene.cpp:3096
-#: widgets/activitywidget.cpp:364 widgets/statewidget.cpp:497
-msgid "Enter the name of the new activity:"
-msgstr "नयाँ क्रियाकलापको नाम प्रविष्ट गर्नुहोस्:"
-
-#: dialogs/activitypage.cpp:176 toolbarstateother.cpp:251 umlscene.cpp:3097
-#: widgets/statewidget.cpp:498
-msgid "new activity"
-msgstr "नयाँ क्रियाकलाप"
-
-#: dialogs/activitypage.cpp:198
-msgid "Rename Activity"
-msgstr "क्रियाकलाप पुन: नामकरण गर्नुहोस्"
-
-#: dialogs/activitypage.cpp:198
-msgid "Enter the new name of the activity:"
-msgstr "क्रियाकलापको नयाँ नाम प्रविष्ट गर्नुहोस्:"
-
-#: dialogs/assocgenpage.cpp:89
-#, fuzzy
-#| msgid "Name:"
-msgctxt "name of association widget"
-msgid "Name:"
-msgstr "नाम:"
-
-#: dialogs/assocgenpage.cpp:102
-msgid "Type:"
-msgstr "प्रकार:"
-
-#: dialogs/assocpage.cpp:44 dialogs/classpropdlg.cpp:367
-msgid "Associations"
-msgstr "संघ"
-
-#: dialogs/assocpropdlg.cpp:54
+#: dialogs/assocpropdialog.cpp:54
 msgid "Association Properties"
 msgstr "संघको गुण"
 
-#: dialogs/assocpropdlg.cpp:98 dialogs/classpropdlg.cpp:245
-#: dialogs/classpropdlg.cpp:379 dialogs/settingsdlg.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
-msgid "General Settings"
-msgstr "सामान्य सेटिङ"
-
-#: dialogs/assocpropdlg.cpp:98
+#: dialogs/assocpropdialog.cpp:98
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/assocpropdlg.cpp:104
+#: dialogs/assocpropdialog.cpp:98 dialogs/classpropdialog.cpp:245
+#: dialogs/classpropdialog.cpp:379 dialogs/settingsdialog.cpp:179
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
+msgid "General Settings"
+msgstr "सामान्य सेटिङ"
+
+#: dialogs/assocpropdialog.cpp:104
 #, fuzzy
 #| msgid "Roles"
 msgctxt "role page name"
 msgid "Roles"
 msgstr "भूमिका"
 
-#: dialogs/assocpropdlg.cpp:104
+#: dialogs/assocpropdialog.cpp:104
 msgid "Role Settings"
 msgstr "भूमिका सेटिङ"
 
-#: dialogs/assocpropdlg.cpp:110
+#: dialogs/assocpropdialog.cpp:110
 #, fuzzy
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "शैली:"
 
-#: dialogs/assocpropdlg.cpp:110
+#: dialogs/assocpropdialog.cpp:110
 #, fuzzy
 #| msgid "Component"
 msgid "Role Style"
 msgstr "अवयव"
 
-#: dialogs/assocpropdlg.cpp:116 dialogs/classpropdlg.cpp:398
-#: dialogs/dialogbase.cpp:90 dialogs/settingsdlg.cpp:234
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "फन्ट सेटिङ"
-
-#: dialogs/assocpropdlg.cpp:116
+#: dialogs/assocpropdialog.cpp:116
 #, fuzzy
 msgctxt "font page name"
 msgid "Font"
 msgstr "फन्ट:"
 
-#: dialogs/assocrolepage.cpp:67
-msgid "Role A Properties"
-msgstr "भूमिका ए को गुण"
-
-#: dialogs/assocrolepage.cpp:68
-msgid "Role B Properties"
-msgstr "भूमिका बी को गुण"
-
-#: dialogs/assocrolepage.cpp:85
-msgid "Role A Visibility"
-msgstr "भूमिका ए को दृश्यात्मकता"
-
-#: dialogs/assocrolepage.cpp:86
-msgid "Role B Visibility"
-msgstr "भूमिका बी को दृश्यात्मकता"
-
-#: dialogs/assocrolepage.cpp:87
-msgid "Role A Changeability"
-msgstr "भूमिका ए को परिवर्तनशीलता"
-
-#: dialogs/assocrolepage.cpp:88
-msgid "Role B Changeability"
-msgstr "भूमिका बी को परिवर्तनशीलता"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
-#: dialogs/assocrolepage.cpp:113 dialogs/assocrolepage.cpp:190
-#: dialogs/umlrolepropertiesbase.ui:36
-msgid "Rolename:"
-msgstr "भूमिका नाम:"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
-#: dialogs/assocrolepage.cpp:118 dialogs/assocrolepage.cpp:195
-#: dialogs/umlrolepropertiesbase.ui:49
-msgid "Multiplicity:"
-msgstr "गुणकत्व:"
-
-#: dialogs/assocrolepage.cpp:135
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for A is public"
-msgid "Public"
-msgstr "सार्वजनिक"
-
-#: dialogs/assocrolepage.cpp:138
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for A is private"
-msgid "Private"
-msgstr "व्यक्तिगत"
-
-#: dialogs/assocrolepage.cpp:141
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for A is protected"
-msgid "Protected"
-msgstr "सुरक्षित"
-
-#: dialogs/assocrolepage.cpp:144
-#, fuzzy
-#| msgid "Implementation"
-msgctxt "scope for A is implementation"
-msgid "Implementation"
-msgstr "कार्यान्वयन"
-
-#: dialogs/assocrolepage.cpp:166
-#, fuzzy
-#| msgid "Changeable"
-msgctxt "changeability for A is changeable"
-msgid "Changeable"
-msgstr "परिवर्तनयोग्य"
-
-#: dialogs/assocrolepage.cpp:169
-#, fuzzy
-#| msgid "Frozen"
-msgctxt "changeability for A is frozen"
-msgid "Frozen"
-msgstr "फ्रोजेन"
-
-#: dialogs/assocrolepage.cpp:172
-#, fuzzy
-#| msgid "Add only"
-msgctxt "changeability for A is add only"
-msgid "Add only"
-msgstr "थप्ने मात्र"
-
-#: dialogs/assocrolepage.cpp:212
-#, fuzzy
-#| msgid "Public"
-msgctxt "scope for B is public"
-msgid "Public"
-msgstr "सार्वजनिक"
-
-#: dialogs/assocrolepage.cpp:215
-#, fuzzy
-#| msgid "Private"
-msgctxt "scope for B is private"
-msgid "Private"
-msgstr "व्यक्तिगत"
-
-#: dialogs/assocrolepage.cpp:218
-#, fuzzy
-#| msgid "Protected"
-msgctxt "scope for B is protected"
-msgid "Protected"
-msgstr "सुरक्षित"
-
-#: dialogs/assocrolepage.cpp:221
-#, fuzzy
-#| msgid "Implementation"
-msgctxt "scope for B is implementation"
-msgid "Implementation"
-msgstr "कार्यान्वयन"
-
-#: dialogs/assocrolepage.cpp:243
-#, fuzzy
-#| msgid "Changeable"
-msgctxt "changeability for B is changeable"
-msgid "Changeable"
-msgstr "परिवर्तनयोग्य"
-
-#: dialogs/assocrolepage.cpp:246
-#, fuzzy
-#| msgid "Frozen"
-msgctxt "changeability for B is frozen"
-msgid "Frozen"
-msgstr "फ्रोजेन"
-
-#: dialogs/assocrolepage.cpp:249
-#, fuzzy
-#| msgid "Add only"
-msgctxt "changeability for B is add only"
-msgid "Add only"
-msgstr "थप्ने मात्र"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/autolayoutoptionpage.ui:17
-#, fuzzy
-#| msgid "Not Generated"
-msgid "Layout Generator"
-msgstr "सिर्जना गरिएको छैन"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
-#: dialogs/autolayoutoptionpage.ui:24
-msgid ""
-"<p>The auto layout feature depends on layout generators provided by the "
-"GraphViz package, which is normally installed aside Umbrello by a package "
-"manager.</p>\n"
-"<p>Umbrello has build in support for detecting the install location of  "
-"these layout generators. For cases where this dependency is not available or "
-"do not fit, a different installation path could be provided.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
-#: dialogs/autolayoutoptionpage.ui:27
-msgid "Auto detect layout generator"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/autolayoutoptionpage.ui:37
-msgid "Generator executable path:"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, Other)
-#: dialogs/autolayoutoptionpage.ui:82
-msgid "Miscellaneous"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
-#: dialogs/autolayoutoptionpage.ui:88
-msgid ""
-"<p>Dot file export is performed by using the export layout.</p><p>With this "
-"option checked, the export layout is added to the list of available diagram "
-"layouts and enables a quick dot export preview.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
-#: dialogs/autolayoutoptionpage.ui:91
-msgid "Show export layout in diagram context menu"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:68
-msgid "Class &name:"
-msgstr "वर्ग नाम:"
-
-#: dialogs/classgenpage.cpp:71
-msgid "Actor &name:"
-msgstr "कलाकार नाम:"
-
-#: dialogs/classgenpage.cpp:74
-msgid "Package &name:"
-msgstr "प्याकेज नाम:"
-
-#: dialogs/classgenpage.cpp:77
-msgid "Use case &name:"
-msgstr "केस नाम प्रयोग गर्नुहोस्:"
-
-#: dialogs/classgenpage.cpp:80
-msgid "Interface &name:"
-msgstr "इन्टरफेस नाम:"
-
-#: dialogs/classgenpage.cpp:83
-msgid "Component &name:"
-msgstr "अवयव नाम:"
-
-#: dialogs/classgenpage.cpp:86
-#, fuzzy
-#| msgid "Node name:"
-msgid "Node &name:"
-msgstr "नोड नाम:"
-
-#: dialogs/classgenpage.cpp:89
-msgid "Artifact &name:"
-msgstr "शिल्पकृति नाम:"
-
-#: dialogs/classgenpage.cpp:92
-msgid "Enum &name:"
-msgstr "इनम नाम:"
-
-#: dialogs/classgenpage.cpp:95
-msgid "Datatype &name:"
-msgstr "डेटा प्रकार नाम:"
-
-#: dialogs/classgenpage.cpp:98
-msgid "Entity &name:"
-msgstr "अस्तित्व नाम:"
-
-#: dialogs/classgenpage.cpp:122 dialogs/umltemplatedialog.cpp:81
-msgid "&Stereotype name:"
-msgstr "स्टेरियो प्रकार नाम:"
-
-#: dialogs/classgenpage.cpp:138
-msgid "Reference:"
-msgstr ""
-
-#: dialogs/classgenpage.cpp:146
-#, fuzzy
-#| msgid "Package &name:"
-msgid "Package path:"
-msgstr "प्याकेज नाम:"
-
-#: dialogs/classgenpage.cpp:178
-msgid "A&bstract class"
-msgstr "संक्षेप वर्ग"
-
-#: dialogs/classgenpage.cpp:180
-msgid "A&bstract use case"
-msgstr "संक्षेप प्रयोग केस"
-
-#: dialogs/classgenpage.cpp:189
-#, fuzzy
-#| msgid "&Executable"
-msgctxt "component is executable"
-msgid "&Executable"
-msgstr "कार्यान्वयनयोग्य"
-
-#: dialogs/classgenpage.cpp:197
-msgid "Draw As"
-msgstr "यस रूपमा रेखाङ्कन गर्नुहोस्"
-
-#: dialogs/classgenpage.cpp:201
-#, fuzzy
-#| msgid "&Default"
-msgctxt "draw as default"
-msgid "&Default"
-msgstr "पूर्वानिर्धारण"
-
-#. i18n: ectx: Menu (file)
-#: dialogs/classgenpage.cpp:204 umbrelloui.rc:4
-#, fuzzy
-msgid "&File"
-msgstr "फिल्टर"
-
-#: dialogs/classgenpage.cpp:207
-msgid "&Library"
-msgstr "लाइब्रेरी"
-
-#: dialogs/classgenpage.cpp:210
-msgid "&Table"
-msgstr "तालिका"
-
-#: dialogs/classgenpage.cpp:228 dialogs/umlattributedialog.cpp:98
-#: dialogs/umloperationdialog.cpp:123 listpopupmenu.cpp:1084
-#: listpopupmenu.cpp:1129
-msgid "Visibility"
-msgstr "दृश्यात्मकता"
-
-#: dialogs/classgenpage.cpp:232 dialogs/umloperationdialog.cpp:128
-#, fuzzy
-#| msgid "P&ublic"
-msgctxt "public visibility"
-msgid "P&ublic"
-msgstr "सार्वजनिक"
-
-#: dialogs/classgenpage.cpp:235 dialogs/umloperationdialog.cpp:131
-#, fuzzy
-#| msgid "P&rivate"
-msgctxt "private visibility"
-msgid "P&rivate"
-msgstr "व्यक्तिगत"
-
-#: dialogs/classgenpage.cpp:238
-#, fuzzy
-#| msgid "Pro&tected"
-msgctxt "protected visibility"
-msgid "Pro&tected"
-msgstr "सुरक्षित"
-
-#: dialogs/classgenpage.cpp:242
-msgid "Imple&mentation"
-msgstr "कार्यान्वयन"
-
-#: dialogs/classgenpage.cpp:306
-msgid "Class name:"
-msgstr "वर्ग नाम:"
-
-#: dialogs/classgenpage.cpp:314 dialogs/classgenpage.cpp:394
-msgid "Instance name:"
-msgstr "दृष्टान्त नाम:"
-
-#: dialogs/classgenpage.cpp:322
-msgid "Draw as actor"
-msgstr "कलाकारको रूपमा रेखाङ्कन गर्नुहोस्"
-
-#: dialogs/classgenpage.cpp:327
-msgid "Multiple instance"
-msgstr "बहुविध दृष्टान्त"
-
-#: dialogs/classgenpage.cpp:333
-msgid "Show destruction"
-msgstr "विनाश देखाउनुहोस्"
-
-#: dialogs/classgenpage.cpp:372
-msgid "Component name:"
-msgstr "अवयव नाम:"
-
-#: dialogs/classgenpage.cpp:374
-msgid "Node name:"
-msgstr "नोड नाम:"
-
-#: dialogs/classgenpage.cpp:384 dialogs/parmpropdlg.cpp:93
-#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
-#: dialogs/umloperationdialog.cpp:108
-msgid "Stereotype name:"
-msgstr "स्टेरियो प्रकार नाम:"
-
-#: dialogs/classgenpage.cpp:481 dialogs/classgenpage.cpp:530
-#: dialogs/classgenpage.cpp:543
-msgid ""
-"The name you have chosen\n"
-"is already being used.\n"
-"The name has been reset."
-msgstr ""
-"तपाईँले रोज्नुभएको नाम\n"
-"पहिल्यै प्रयोग गरिएको छ ।\n"
-"नाम रिसेट गरिएको छ ।"
-
-#: dialogs/classgenpage.cpp:482 dialogs/classgenpage.cpp:531
-#: dialogs/classgenpage.cpp:544
-msgid "Name is Not Unique"
-msgstr "नाम अद्धितिय छैन"
-
-#: dialogs/classifierlistpage.cpp:115 dialogs/classpropdlg.cpp:283
-#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
-#: refactoring/refactoringassistant.cpp:666
-msgid "Attributes"
-msgstr "विशेषताहरू"
-
-#: dialogs/classifierlistpage.cpp:116
-msgid "N&ew Attribute..."
-msgstr "नयाँ विशेषता..."
-
-#: dialogs/classifierlistpage.cpp:119 dialogs/classpropdlg.cpp:295
-#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
-#: refactoring/refactoringassistant.cpp:682
-msgid "Operations"
-msgstr "सञ्चालन"
-
-#: dialogs/classifierlistpage.cpp:120
-msgid "N&ew Operation..."
-msgstr "नयाँ सञ्चालन..."
-
-#: dialogs/classifierlistpage.cpp:123 dialogs/classpropdlg.cpp:307
-msgid "Templates"
-msgstr "टेम्प्लेट"
-
-#: dialogs/classifierlistpage.cpp:124
-msgid "N&ew Template..."
-msgstr "नयाँ टेम्प्लेट..."
-
-#: dialogs/classifierlistpage.cpp:127 dialogs/classpropdlg.cpp:319
-msgid "Enum Literals"
-msgstr "इनम आक्षरहरू"
-
-#: dialogs/classifierlistpage.cpp:128
-msgid "N&ew Enum Literal..."
-msgstr "नयाँ इनम आक्षर..."
-
-#: dialogs/classifierlistpage.cpp:131 dialogs/classpropdlg.cpp:331
-msgid "Entity Attributes"
-msgstr "अस्तित्व विशेषताहरू"
-
-#: dialogs/classifierlistpage.cpp:132
-msgid "N&ew Entity Attribute..."
-msgstr "नयाँ अस्तित्व विशेषता..."
-
-#: dialogs/classifierlistpage.cpp:135
-#, fuzzy
-msgid "Constraints"
-msgstr "रोकथाम"
-
-#: dialogs/classifierlistpage.cpp:136
-#, fuzzy
-msgid "N&ew Constraint..."
-msgstr "नयाँ विशेषता..."
-
-#: dialogs/classifierlistpage.cpp:206
-#: dialogs/umlforeignkeyconstraintdialog.cpp:321
-#: dialogs/umloperationdialog.cpp:166
-#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
-#, fuzzy
-msgid "&Delete"
-msgstr "पूर्वानिर्धारण"
-
-#: dialogs/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
-#: uml.cpp:499
-msgid "&Properties"
-msgstr "गुण"
-
-#: dialogs/classifierlistpage.cpp:226
-#, fuzzy
-#| msgid "Component"
-msgid "Comment"
-msgstr "अवयव"
-
-#: dialogs/classifierlistpage.cpp:227
-#, fuzzy
-#| msgid "View Code"
-msgid "Source Code"
-msgstr "कोड हेर्नुहोस्"
-
-#: dialogs/classoptionspage.cpp:124 dialogs/classoptionspage.cpp:191
-#: dialogs/classoptionspage.cpp:213 dialogs/codeeditor.cpp:791
-#: listpopupmenu.cpp:639 listpopupmenu.cpp:1073 listpopupmenu.cpp:1110
-#: listpopupmenu.cpp:1115 listpopupmenu.cpp:1123 listpopupmenu.cpp:1130
-#: listpopupmenu.cpp:1137 listpopupmenu.cpp:1143
-msgid "Show"
-msgstr "देखाउनुहोस्"
-
-#: dialogs/classoptionspage.cpp:131 dialogs/classoptionspage.cpp:219
-msgid "Operatio&ns"
-msgstr "सञ्चालन"
-
-#: dialogs/classoptionspage.cpp:135 dialogs/classoptionspage.cpp:236
-msgid "&Visibility"
-msgstr "दृश्यता"
-
-#: dialogs/classoptionspage.cpp:144 dialogs/classoptionspage.cpp:198
-#: dialogs/classoptionspage.cpp:223
-msgid "O&peration signature"
-msgstr "सञ्चालन हस्ताक्षर"
-
-#: dialogs/classoptionspage.cpp:148 dialogs/classoptionspage.cpp:240
-msgid "Pac&kage"
-msgstr "प्याकेज"
-
-#: dialogs/classoptionspage.cpp:155 dialogs/classoptionspage.cpp:228
-msgid "Att&ributes"
-msgstr "विशेषताहरू"
-
-#: dialogs/classoptionspage.cpp:159 dialogs/classoptionspage.cpp:244
-msgid "Stereot&ype"
-msgstr "स्टेरियो प्रकार"
-
-#: dialogs/classoptionspage.cpp:163 dialogs/classoptionspage.cpp:232
-msgid "Attr&ibute signature"
-msgstr "विशेषता हस्ताक्षर"
-
-#: dialogs/classoptionspage.cpp:172 dialogs/classoptionspage.cpp:252
-#, fuzzy
-#| msgid "Public Only"
-msgid "&Public Only"
-msgstr "सार्वजनिक मात्र"
-
-#: dialogs/classoptionspage.cpp:178
-msgid "Draw as circle"
-msgstr "वृतको रूपमा रेखाङ्कन गर्नुहोस्"
-
-#: dialogs/classoptionspage.cpp:248
-#, fuzzy
-#| msgid "Attribute accessor methods"
-msgid "&Attribute associations"
-msgstr "विशेषता पहुँचकर्ता विधि"
-
-#: dialogs/classoptionspage.cpp:257
-msgid "Starting Scope"
-msgstr "सुरु भइरहेको कार्यक्षेत्र"
-
-#: dialogs/classoptionspage.cpp:262
-msgid "Default attribute scope:"
-msgstr "पूर्वनिर्धारित विशेषता क्षेत्र:"
-
-#: dialogs/classoptionspage.cpp:265
-msgid "Default operation scope:"
-msgstr "पूर्वनिर्धारित सञ्चालन क्षेत्र:"
-
-#: dialogs/classpropdlg.cpp:245
+#: dialogs/assocpropdialog.cpp:116 dialogs/classpropdialog.cpp:398
+#: dialogs/dialogbase.cpp:90 dialogs/settingsdialog.cpp:234
+#: dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "फन्ट सेटिङ"
+
+#: dialogs/classpropdialog.cpp:245
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/classpropdlg.cpp:258
+#: dialogs/classpropdialog.cpp:258
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "शैली:"
 
-#: dialogs/classpropdlg.cpp:258 dialogs/dialogbase.cpp:113
+#: dialogs/classpropdialog.cpp:258 dialogs/dialogbase.cpp:113
 #, fuzzy
 #| msgid "Widget Color"
 msgid "Widget Style"
 msgstr "विजेट रङ"
 
-#: dialogs/classpropdlg.cpp:270
+#: dialogs/classpropdialog.cpp:270
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "प्रदर्शन गर्नुहोस्"
 
-#: dialogs/classpropdlg.cpp:270
+#: dialogs/classpropdialog.cpp:270
 msgid "Display Options"
 msgstr "विकल्प प्रदर्शन गर्नुहोस्"
 
-#: dialogs/classpropdlg.cpp:283
+#: dialogs/classpropdialog.cpp:283 dialogs/pages/classifierlistpage.cpp:115
+#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
+#: refactoring/refactoringassistant.cpp:666
+msgid "Attributes"
+msgstr "विशेषताहरू"
+
+#: dialogs/classpropdialog.cpp:283
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Attribute Settings"
 msgstr "अस्तित्व विशेषताहरूको सेटिङ"
 
-#: dialogs/classpropdlg.cpp:295
+#: dialogs/classpropdialog.cpp:295 dialogs/pages/classifierlistpage.cpp:119
+#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
+#: refactoring/refactoringassistant.cpp:682
+msgid "Operations"
+msgstr "सञ्चालन"
+
+#: dialogs/classpropdialog.cpp:295
 msgid "Operation Settings"
 msgstr "सञ्चालन सेटिङ"
 
-#: dialogs/classpropdlg.cpp:307
+#: dialogs/classpropdialog.cpp:307 dialogs/pages/classifierlistpage.cpp:123
+msgid "Templates"
+msgstr "टेम्प्लेट"
+
+#: dialogs/classpropdialog.cpp:307
 msgid "Templates Settings"
 msgstr "टेम्प्लेट सेटिङ"
 
-#: dialogs/classpropdlg.cpp:319
+#: dialogs/classpropdialog.cpp:319 dialogs/pages/classifierlistpage.cpp:127
+msgid "Enum Literals"
+msgstr "इनम आक्षरहरू"
+
+#: dialogs/classpropdialog.cpp:319
 msgid "Enum Literals Settings"
 msgstr "इनम आक्षरहरूको सेटिङ"
 
-#: dialogs/classpropdlg.cpp:331
+#: dialogs/classpropdialog.cpp:331 dialogs/pages/classifierlistpage.cpp:131
+msgid "Entity Attributes"
+msgstr "अस्तित्व विशेषताहरू"
+
+#: dialogs/classpropdialog.cpp:331
 msgid "Entity Attributes Settings"
 msgstr "अस्तित्व विशेषताहरूको सेटिङ"
 
-#: dialogs/classpropdlg.cpp:343
+#: dialogs/classpropdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints"
 msgstr "अस्तित्व विशेषताहरू"
 
-#: dialogs/classpropdlg.cpp:343
+#: dialogs/classpropdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints Settings"
 msgstr "अस्तित्व विशेषताहरूको सेटिङ"
 
-#: dialogs/classpropdlg.cpp:355
+#: dialogs/classpropdialog.cpp:355
 #, fuzzy
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "रोकथाम"
 
-#: dialogs/classpropdlg.cpp:355
+#: dialogs/classpropdialog.cpp:355
 msgid "Contents Settings"
 msgstr "सामग्रीहरूको सेटिङ"
 
-#: dialogs/classpropdlg.cpp:367
+#: dialogs/classpropdialog.cpp:367 dialogs/pages/classassociationspage.cpp:44
+msgid "Associations"
+msgstr "संघ"
+
+#: dialogs/classpropdialog.cpp:367
 msgid "Class Associations"
 msgstr "वर्ग संघ"
 
-#: dialogs/classpropdlg.cpp:379
+#: dialogs/classpropdialog.cpp:379
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
@@ -2320,9 +1773,9 @@ msgstr "सामान्य"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropdlg.cpp:397 dialogs/dialogbase.cpp:90
-#: dialogs/settingsdlg.cpp:233 dialogs/umlviewdialog.cpp:153 umbrello.kcfg:160
-#: umbrello.kcfg:270
+#: dialogs/classpropdialog.cpp:397 dialogs/dialogbase.cpp:90
+#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:153
+#: umbrello.kcfg:160 umbrello.kcfg:270
 #, fuzzy
 msgid "Font"
 msgstr "फन्ट:"
@@ -2366,6 +1819,15 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
+#: dialogs/codeeditor.cpp:791 dialogs/pages/classoptionspage.cpp:124
+#: dialogs/pages/classoptionspage.cpp:191
+#: dialogs/pages/classoptionspage.cpp:213 listpopupmenu.cpp:639
+#: listpopupmenu.cpp:1073 listpopupmenu.cpp:1110 listpopupmenu.cpp:1115
+#: listpopupmenu.cpp:1123 listpopupmenu.cpp:1130 listpopupmenu.cpp:1137
+#: listpopupmenu.cpp:1143
+msgid "Show"
+msgstr "देखाउनुहोस्"
+
 #: dialogs/codeeditor.cpp:800
 msgid "Hide Comment"
 msgstr ""
@@ -2394,25 +1856,6 @@ msgstr "व्यक्तिगत"
 #: dialogs/codeeditor.cpp:836 listpopupmenu.cpp:645
 msgid "Cut"
 msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/codeimportoptionspage.ui:17
-#, fuzzy
-#| msgid "Not Generated"
-msgid "C++- Import"
-msgstr "सिर्जना गरिएको छैन"
-
-#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
-#: dialogs/codeimportoptionspage.ui:29
-msgid "For each imported file create an artifact in the component view"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, resolveDependenciesCheckBox)
-#: dialogs/codeimportoptionspage.ui:42
-#, fuzzy
-#| msgid "Resolving object references..."
-msgid "Resolve dependencies (reduces import speed)"
-msgstr "वस्तु सन्दर्भहरू विभाजित गर्दैछ... "
 
 #: dialogs/codeviewerdialog.cpp:107
 #, fuzzy, kde-format
@@ -2474,145 +1917,6 @@ msgstr "<p align=\"right\">सम्पादन अयोग्य पाठ:</
 #: dialogs/codevieweroptionsbase.ui:278
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\"> सम्पादनयोग्य पाठ:</p>"
-
-#: dialogs/constraintlistpage.cpp:72 listpopupmenu.cpp:1417
-msgid "Unique Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:76 listpopupmenu.cpp:1416
-msgid "Primary Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:80 listpopupmenu.cpp:1418
-msgid "Foreign Key Constraint..."
-msgstr ""
-
-#: dialogs/constraintlistpage.cpp:84 listpopupmenu.cpp:1419
-#, fuzzy
-msgid "Check Constraint..."
-msgstr "फन्ट परिवर्तन गर्नुहोस्..."
-
-#: dialogs/defaultcodegenpolicypage.cpp:28
-msgid "<p align=\"center\">No Options Available.</p>"
-msgstr "<p align=\"center\">विकल्प उपलब्ध छैन ।</p>"
-
-#: dialogs/diagramprintpage.cpp:44
-msgid "&Diagrams"
-msgstr "रेखाचित्र"
-
-#: dialogs/diagramprintpage.cpp:49
-msgid "Filter"
-msgstr "फिल्टर"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_CurrentDiagram)
-#: dialogs/diagramprintpage.cpp:56 dialogs/finddialog.ui:43
-msgid "&Current diagram"
-msgstr "हालको रेखाचित्र"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_Diagrams)
-#: dialogs/diagramprintpage.cpp:60 dialogs/finddialog.ui:53
-msgid "&All diagrams"
-msgstr "सबै रेखाचित्र"
-
-#: dialogs/diagramprintpage.cpp:63
-msgid "&Select diagrams"
-msgstr "रेखाचित्र चयन गर्नुहोस्"
-
-#: dialogs/diagramprintpage.cpp:66
-msgid "&Type of diagram"
-msgstr "रेखाचित्रको प्रकार"
-
-#: dialogs/diagramprintpage.cpp:69
-#, fuzzy
-#| msgid "Selection"
-msgctxt "diagram selection for printing"
-msgid "Selection"
-msgstr "चयन"
-
-#: dialogs/diagramprintpage.cpp:160
-msgid "No diagrams selected."
-msgstr "रेखाचित्र चयन गरिएको छैन ।"
-
-#: dialogs/diagrampropertiespage.cpp:75
-msgid "The name you have entered is invalid."
-msgstr "तपाईँले प्रविष्ट गर्नुभएको नाम अवैध छ ।"
-
-#: dialogs/diagrampropertiespage.cpp:85
-msgid "The name you have entered is not unique."
-msgstr "तपाईँले प्रविष्ट गर्नुभएको नाम अद्वितिय छ ।"
-
-#: dialogs/diagrampropertiespage.cpp:86 umldoc.cpp:1430
-msgid "Name Not Unique"
-msgstr "नाम अद्धितिय छैन"
-
-#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
-#: dialogs/diagrampropertiespage.ui:17
-msgid "Diagram Properties"
-msgstr "रेखाचित्र गुण"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
-#: dialogs/diagrampropertiespage.ui:31
-msgid "Name:"
-msgstr "नाम:"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
-#: dialogs/diagrampropertiespage.ui:56
-msgid "Zoom:"
-msgstr "जुम:"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
-#: dialogs/diagrampropertiespage.ui:82
-#, no-c-format
-msgid "%"
-msgstr "%"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: dialogs/diagrampropertiespage.ui:124
-msgid "Show &grid"
-msgstr "ग्रिड देखाउनुहोस्"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: dialogs/diagrampropertiespage.ui:131
-msgid "Snap &to grid"
-msgstr "ग्रिडमा सटाउनुहोस्"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:139
-msgid ""
-"Snap the size of the components to be a multiple of the grid spacing.\n"
-"If 'Snap to Grid' is enabled a component will always be aligned with the "
-"grid on all 4 sides."
-msgstr ""
-"ग्रिड खाली स्थानको गुणा हुनका लागि अवयवहरूको साइज सटाउनुहोस् ।\n"
-"यदि 'ग्रिडमा सटाउनुहोस्' सक्षम पारिएको छ भने अवयव सबै ४ किनारामा ग्रिडसँग सधै "
-"पङ्क्तिबद्ध गरिनेछ ।"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:142
-msgid "Snap component size"
-msgstr "अवयव साइज सटाउनुहोस्"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: dialogs/diagrampropertiespage.ui:159
-msgid "Grid spacing:  "
-msgstr "ग्रिड खाली स्थान:  "
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: dialogs/diagrampropertiespage.ui:182
-msgid "X"
-msgstr "X"
-
-#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: dialogs/diagrampropertiespage.ui:218
-msgid "Y"
-msgstr "Y"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
-#: dialogs/diagrampropertiespage.ui:247
-#, fuzzy
-#| msgid "&Auto increment"
-msgid "Autoincrement Sequence "
-msgstr "स्वचालित बढोत्तरी:"
 
 #: dialogs/dialogbase.cpp:113
 #, fuzzy
@@ -2708,93 +2012,20 @@ msgstr "फिल्टर"
 msgid "Tree View"
 msgstr "ट्री दृश्य"
 
+#. i18n: ectx: property (text), widget (QRadioButton, ui_CurrentDiagram)
+#: dialogs/finddialog.ui:43 dialogs/pages/diagramprintpage.cpp:56
+msgid "&Current diagram"
+msgstr "हालको रेखाचित्र"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_Diagrams)
+#: dialogs/finddialog.ui:53 dialogs/pages/diagramprintpage.cpp:60
+msgid "&All diagrams"
+msgstr "सबै रेखाचित्र"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: dialogs/finddialog.ui:69
 msgid "Search Term:"
 msgstr ""
-
-#: dialogs/generaloptionpage.cpp:43
-msgctxt "miscellaneous group box"
-msgid "Miscellaneous"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:49
-msgid "Enable undo"
-msgstr "पूर्वावस्थामा फर्काउन सक्षम पार्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:53
-msgid "Use tabbed diagrams"
-msgstr "ट्याब गरिएको रेखाचित्र प्रयोग गर्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:57
-msgid "Use new C++/Java/Ruby generators"
-msgstr "नयाँ C++/Java/Ruby सर्जकहरू प्रयोग गर्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:61
-msgid "Use angular association lines"
-msgstr "कोणिक संगत पङ्क्तिहरू प्रयोग गर्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:65
-msgid "Turn on footer and page numbers when printing"
-msgstr ""
-
-#: dialogs/generaloptionpage.cpp:70
-msgid "Autosave"
-msgstr "स्वत: बचत गर्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:76
-msgid "E&nable autosave"
-msgstr "स्वत: बचत सक्षम पार्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:80
-msgid "Select auto-save time interval (mins):"
-msgstr "(मिनेटमा) स्वत-बचत गर्ने अन्तराल चयन गर्नुहोस्:"
-
-#: dialogs/generaloptionpage.cpp:89
-msgid "Set autosave suffix:"
-msgstr "स्वत: बचत गर्ने प्रत्यय सेट गर्नुहोस्:"
-
-#: dialogs/generaloptionpage.cpp:91
-#, fuzzy
-#| msgid ""
-#| "<qt><p>The autosave file will be saved to ~/autosave.xmi if the "
-#| "autosaving occurs before you have manually saved the file.</p><p>If "
-#| "you've already saved it, the autosave file will be saved in the same "
-#| "folder as the file and will be named like the file's name, followed by "
-#| "the suffix specified.</p><p>If the suffix is equal to the suffix of the "
-#| "file you've saved, the autosave will overwrite your file automatically.</"
-#| "p></qt>"
-msgid ""
-"<qt><p>The autosave file will be saved to ~/autosave.xmi if the autosaving "
-"occurs before you have manually saved the file.</p><p>If you have already "
-"saved it, the autosave file will be saved in the same folder as the file and "
-"will be named like the file's name, followed by the suffix specified.</"
-"p><p>If the suffix is equal to the suffix of the file you have saved, the "
-"autosave will overwrite your file automatically.</p></qt>"
-msgstr ""
-"<qt><p>यदि स्वत: बचत गर्ने तपाईँले फाइल म्यानुअल तरिकाले बचत गर्नु भन्दा अघि देखापर्यो भने "
-"स्वत: बचत गर्ने फाइल ~/autosave.xmi मा बचत गरिनेछ ।</p><p>यदि तपाईँले यो पहिल्यै बचत "
-"गर्नुभएको छ भने, स्वत: बचत गर्ने फाइल फाइल जस्ते उस्तै फोल्डरमा बचत गरिनेछ र फाइलको नाम "
-"जस्तै नामकरण गरिनेछ, जुन निर्दिष्ट गरिएको प्रत्ययद्वारा अनुशरन गरिएको छ ।</p><p>यदि "
-"प्रत्यय तपाईँले बचत गर्नुभएको फाइलको प्रत्ययसँग बराबर छ भने, स्वत: बचत गर्नेले तपाईँको फाइल "
-"स्वचालित रूपमा अधिलेखन गर्नेछ ।</p></qt>"
-
-#: dialogs/generaloptionpage.cpp:101
-msgid "Startup"
-msgstr "सुरुआत"
-
-#: dialogs/generaloptionpage.cpp:107
-msgid "&Load last project"
-msgstr "अन्तिम परियोजना लोड गर्नुहोस्"
-
-#: dialogs/generaloptionpage.cpp:111
-msgid "Start new project with:"
-msgstr "यससँग नयाँ परियोजना सुरु गर्नुहोस्:"
-
-#: dialogs/generaloptionpage.cpp:129
-#, fuzzy
-msgid "Default Language :"
-msgstr "पूर्वनिर्धारित मान:"
 
 #: dialogs/objectnodedialog.cpp:134
 msgid "Central Buffer"
@@ -2846,11 +2077,11 @@ msgstr "डेटा प्रकार"
 msgid "&Object Flow"
 msgstr "वस्तु"
 
-#: dialogs/overwritedialogue.cpp:32
+#: dialogs/overwritedialog.cpp:32
 msgid "Destination File Already Exists"
 msgstr "गन्तब्य फाइल पहिल्यै अवस्थित छ"
 
-#: dialogs/overwritedialogue.cpp:45
+#: dialogs/overwritedialog.cpp:45
 #, kde-format
 msgid ""
 "The file %1 already exists in %2.\n"
@@ -2863,48 +2094,972 @@ msgstr ""
 "अम्ब्रेलोले फाइल अधिलेखन गर्न सक्छ, उही फाइलनाम सिर्जना गर्न सक्छ\n"
 "वा यो फाइल सिर्जना गर्न सक्छ ।"
 
-#: dialogs/overwritedialogue.cpp:48
+#: dialogs/overwritedialog.cpp:48
 msgid "&Apply to all remaining files"
 msgstr "सबै बाँकी फाइलहरूमा लागू गर्नुहोस्"
 
-#: dialogs/overwritedialogue.cpp:52 umlviewimageexporter.cpp:106
+#: dialogs/overwritedialog.cpp:52 umlviewimageexporter.cpp:106
 msgid "&Overwrite"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: dialogs/overwritedialogue.cpp:53
+#: dialogs/overwritedialog.cpp:53
 msgid "&Generate Similar File Name"
 msgstr "उही फाइलनाम सिर्जना गर्नहोस्"
 
-#: dialogs/overwritedialogue.cpp:54
+#: dialogs/overwritedialog.cpp:54
 msgid "&Do Not Generate File"
 msgstr "फाइल सिर्जना नगर्नुहोस्"
 
-#: dialogs/parmpropdlg.cpp:47
+#: dialogs/pages/activitypage.cpp:58 dialogs/statedialog.cpp:190
+#: dialogs/statedialog.cpp:191
+msgid "Activities"
+msgstr "क्रियाकलापहरू"
+
+#: dialogs/pages/activitypage.cpp:80 dialogs/pages/classifierlistpage.cpp:174
+#, fuzzy
+#| msgid "Copies the selected section to the clipboard"
+msgid "Move selected item to the top"
+msgstr "चयन गरिएको खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ"
+
+#: dialogs/pages/activitypage.cpp:86 dialogs/pages/classifierlistpage.cpp:180
+#, fuzzy
+#| msgid "Delete Selected Items"
+msgid "Move selected item up"
+msgstr "चयन गरिएको वस्तु मेट्नुहोस्"
+
+#: dialogs/pages/activitypage.cpp:92 dialogs/pages/classifierlistpage.cpp:186
+msgid "Move selected item down"
+msgstr ""
+
+#: dialogs/pages/activitypage.cpp:98 dialogs/pages/classifierlistpage.cpp:192
+#, fuzzy
+#| msgid "Copies the selected section to the clipboard"
+msgid "Move selected item to the bottom"
+msgstr "चयन गरिएको खण्ड क्लिपबोर्डमा प्रतिलिपि गर्छ"
+
+#: dialogs/pages/activitypage.cpp:102
+msgid "New Activity..."
+msgstr "नयाँ क्रियाकलाप..."
+
+#: dialogs/pages/activitypage.cpp:104 listpopupmenu.cpp:642
+#: refactoring/refactoringassistant.cpp:461
+#, fuzzy
+msgid "Delete"
+msgstr "चयन गर्नुहोस्"
+
+#: dialogs/pages/activitypage.cpp:106 widgets/floatingtextwidget.cpp:405
+msgid "Rename"
+msgstr "पुन: नामकरण गर्नुहोस्"
+
+#: dialogs/pages/activitypage.cpp:175
+msgid "New Activity"
+msgstr "नयाँ क्रियाकलाप"
+
+#: dialogs/pages/activitypage.cpp:176 toolbarstateother.cpp:251
+#: umlscene.cpp:3096 widgets/activitywidget.cpp:364
+#: widgets/statewidget.cpp:497
+msgid "Enter the name of the new activity:"
+msgstr "नयाँ क्रियाकलापको नाम प्रविष्ट गर्नुहोस्:"
+
+#: dialogs/pages/activitypage.cpp:176 toolbarstateother.cpp:251
+#: umlscene.cpp:3097 widgets/statewidget.cpp:498
+msgid "new activity"
+msgstr "नयाँ क्रियाकलाप"
+
+#: dialogs/pages/activitypage.cpp:198
+msgid "Rename Activity"
+msgstr "क्रियाकलाप पुन: नामकरण गर्नुहोस्"
+
+#: dialogs/pages/activitypage.cpp:198
+msgid "Enter the new name of the activity:"
+msgstr "क्रियाकलापको नयाँ नाम प्रविष्ट गर्नुहोस्:"
+
+#: dialogs/pages/associationgeneralpage.cpp:89
+#, fuzzy
+#| msgid "Name:"
+msgctxt "name of association widget"
+msgid "Name:"
+msgstr "नाम:"
+
+#: dialogs/pages/associationgeneralpage.cpp:102
+msgid "Type:"
+msgstr "प्रकार:"
+
+#: dialogs/pages/associationrolepage.cpp:67
+msgid "Role A Properties"
+msgstr "भूमिका ए को गुण"
+
+#: dialogs/pages/associationrolepage.cpp:68
+msgid "Role B Properties"
+msgstr "भूमिका बी को गुण"
+
+#: dialogs/pages/associationrolepage.cpp:85
+msgid "Role A Visibility"
+msgstr "भूमिका ए को दृश्यात्मकता"
+
+#: dialogs/pages/associationrolepage.cpp:86
+msgid "Role B Visibility"
+msgstr "भूमिका बी को दृश्यात्मकता"
+
+#: dialogs/pages/associationrolepage.cpp:87
+msgid "Role A Changeability"
+msgstr "भूमिका ए को परिवर्तनशीलता"
+
+#: dialogs/pages/associationrolepage.cpp:88
+msgid "Role B Changeability"
+msgstr "भूमिका बी को परिवर्तनशीलता"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelRoleName)
+#: dialogs/pages/associationrolepage.cpp:113
+#: dialogs/pages/associationrolepage.cpp:190
+#: dialogs/pages/umlrolepropertiesbase.ui:36
+msgid "Rolename:"
+msgstr "भूमिका नाम:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelMultiplicity)
+#: dialogs/pages/associationrolepage.cpp:118
+#: dialogs/pages/associationrolepage.cpp:195
+#: dialogs/pages/umlrolepropertiesbase.ui:49
+msgid "Multiplicity:"
+msgstr "गुणकत्व:"
+
+#: dialogs/pages/associationrolepage.cpp:135
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for A is public"
+msgid "Public"
+msgstr "सार्वजनिक"
+
+#: dialogs/pages/associationrolepage.cpp:138
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for A is private"
+msgid "Private"
+msgstr "व्यक्तिगत"
+
+#: dialogs/pages/associationrolepage.cpp:141
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for A is protected"
+msgid "Protected"
+msgstr "सुरक्षित"
+
+#: dialogs/pages/associationrolepage.cpp:144
+#, fuzzy
+#| msgid "Implementation"
+msgctxt "scope for A is implementation"
+msgid "Implementation"
+msgstr "कार्यान्वयन"
+
+#: dialogs/pages/associationrolepage.cpp:166
+#, fuzzy
+#| msgid "Changeable"
+msgctxt "changeability for A is changeable"
+msgid "Changeable"
+msgstr "परिवर्तनयोग्य"
+
+#: dialogs/pages/associationrolepage.cpp:169
+#, fuzzy
+#| msgid "Frozen"
+msgctxt "changeability for A is frozen"
+msgid "Frozen"
+msgstr "फ्रोजेन"
+
+#: dialogs/pages/associationrolepage.cpp:172
+#, fuzzy
+#| msgid "Add only"
+msgctxt "changeability for A is add only"
+msgid "Add only"
+msgstr "थप्ने मात्र"
+
+#: dialogs/pages/associationrolepage.cpp:212
+#, fuzzy
+#| msgid "Public"
+msgctxt "scope for B is public"
+msgid "Public"
+msgstr "सार्वजनिक"
+
+#: dialogs/pages/associationrolepage.cpp:215
+#, fuzzy
+#| msgid "Private"
+msgctxt "scope for B is private"
+msgid "Private"
+msgstr "व्यक्तिगत"
+
+#: dialogs/pages/associationrolepage.cpp:218
+#, fuzzy
+#| msgid "Protected"
+msgctxt "scope for B is protected"
+msgid "Protected"
+msgstr "सुरक्षित"
+
+#: dialogs/pages/associationrolepage.cpp:221
+#, fuzzy
+#| msgid "Implementation"
+msgctxt "scope for B is implementation"
+msgid "Implementation"
+msgstr "कार्यान्वयन"
+
+#: dialogs/pages/associationrolepage.cpp:243
+#, fuzzy
+#| msgid "Changeable"
+msgctxt "changeability for B is changeable"
+msgid "Changeable"
+msgstr "परिवर्तनयोग्य"
+
+#: dialogs/pages/associationrolepage.cpp:246
+#, fuzzy
+#| msgid "Frozen"
+msgctxt "changeability for B is frozen"
+msgid "Frozen"
+msgstr "फ्रोजेन"
+
+#: dialogs/pages/associationrolepage.cpp:249
+#, fuzzy
+#| msgid "Add only"
+msgctxt "changeability for B is add only"
+msgid "Add only"
+msgstr "थप्ने मात्र"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/pages/autolayoutoptionpage.ui:17
+#, fuzzy
+#| msgid "Not Generated"
+msgid "Layout Generator"
+msgstr "सिर्जना गरिएको छैन"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoDotPath)
+#: dialogs/pages/autolayoutoptionpage.ui:24
+msgid ""
+"<p>The auto layout feature depends on layout generators provided by the "
+"GraphViz package, which is normally installed aside Umbrello by a package "
+"manager.</p>\n"
+"<p>Umbrello has build in support for detecting the install location of  "
+"these layout generators. For cases where this dependency is not available or "
+"do not fit, a different installation path could be provided.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoDotPath)
+#: dialogs/pages/autolayoutoptionpage.ui:27
+msgid "Auto detect layout generator"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/pages/autolayoutoptionpage.ui:37
+msgid "Generator executable path:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, Other)
+#: dialogs/pages/autolayoutoptionpage.ui:82
+msgid "Miscellaneous"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_showExportLayout)
+#: dialogs/pages/autolayoutoptionpage.ui:88
+msgid ""
+"<p>Dot file export is performed by using the export layout.</p><p>With this "
+"option checked, the export layout is added to the list of available diagram "
+"layouts and enables a quick dot export preview.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_showExportLayout)
+#: dialogs/pages/autolayoutoptionpage.ui:91
+msgid "Show export layout in diagram context menu"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:68
+msgid "Class &name:"
+msgstr "वर्ग नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:71
+msgid "Actor &name:"
+msgstr "कलाकार नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:74
+msgid "Package &name:"
+msgstr "प्याकेज नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:77
+msgid "Use case &name:"
+msgstr "केस नाम प्रयोग गर्नुहोस्:"
+
+#: dialogs/pages/classgeneralpage.cpp:80
+msgid "Interface &name:"
+msgstr "इन्टरफेस नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:83
+msgid "Component &name:"
+msgstr "अवयव नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:86
+#, fuzzy
+#| msgid "Node name:"
+msgid "Node &name:"
+msgstr "नोड नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:89
+msgid "Artifact &name:"
+msgstr "शिल्पकृति नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:92
+msgid "Enum &name:"
+msgstr "इनम नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:95
+msgid "Datatype &name:"
+msgstr "डेटा प्रकार नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:98
+msgid "Entity &name:"
+msgstr "अस्तित्व नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:122 dialogs/umltemplatedialog.cpp:81
+msgid "&Stereotype name:"
+msgstr "स्टेरियो प्रकार नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:138
+msgid "Reference:"
+msgstr ""
+
+#: dialogs/pages/classgeneralpage.cpp:146
+#, fuzzy
+#| msgid "Package &name:"
+msgid "Package path:"
+msgstr "प्याकेज नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:178
+msgid "A&bstract class"
+msgstr "संक्षेप वर्ग"
+
+#: dialogs/pages/classgeneralpage.cpp:180
+msgid "A&bstract use case"
+msgstr "संक्षेप प्रयोग केस"
+
+#: dialogs/pages/classgeneralpage.cpp:189
+#, fuzzy
+#| msgid "&Executable"
+msgctxt "component is executable"
+msgid "&Executable"
+msgstr "कार्यान्वयनयोग्य"
+
+#: dialogs/pages/classgeneralpage.cpp:197
+msgid "Draw As"
+msgstr "यस रूपमा रेखाङ्कन गर्नुहोस्"
+
+#: dialogs/pages/classgeneralpage.cpp:201
+#, fuzzy
+#| msgid "&Default"
+msgctxt "draw as default"
+msgid "&Default"
+msgstr "पूर्वानिर्धारण"
+
+#. i18n: ectx: Menu (file)
+#: dialogs/pages/classgeneralpage.cpp:204 umbrelloui.rc:4
+#, fuzzy
+msgid "&File"
+msgstr "फिल्टर"
+
+#: dialogs/pages/classgeneralpage.cpp:207
+msgid "&Library"
+msgstr "लाइब्रेरी"
+
+#: dialogs/pages/classgeneralpage.cpp:210
+msgid "&Table"
+msgstr "तालिका"
+
+#: dialogs/pages/classgeneralpage.cpp:228 dialogs/umlattributedialog.cpp:98
+#: dialogs/umloperationdialog.cpp:123 listpopupmenu.cpp:1084
+#: listpopupmenu.cpp:1129
+msgid "Visibility"
+msgstr "दृश्यात्मकता"
+
+#: dialogs/pages/classgeneralpage.cpp:232 dialogs/umloperationdialog.cpp:128
+#, fuzzy
+#| msgid "P&ublic"
+msgctxt "public visibility"
+msgid "P&ublic"
+msgstr "सार्वजनिक"
+
+#: dialogs/pages/classgeneralpage.cpp:235 dialogs/umloperationdialog.cpp:131
+#, fuzzy
+#| msgid "P&rivate"
+msgctxt "private visibility"
+msgid "P&rivate"
+msgstr "व्यक्तिगत"
+
+#: dialogs/pages/classgeneralpage.cpp:238
+#, fuzzy
+#| msgid "Pro&tected"
+msgctxt "protected visibility"
+msgid "Pro&tected"
+msgstr "सुरक्षित"
+
+#: dialogs/pages/classgeneralpage.cpp:242
+msgid "Imple&mentation"
+msgstr "कार्यान्वयन"
+
+#: dialogs/pages/classgeneralpage.cpp:306
+msgid "Class name:"
+msgstr "वर्ग नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:314
+#: dialogs/pages/classgeneralpage.cpp:394
+msgid "Instance name:"
+msgstr "दृष्टान्त नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:322
+msgid "Draw as actor"
+msgstr "कलाकारको रूपमा रेखाङ्कन गर्नुहोस्"
+
+#: dialogs/pages/classgeneralpage.cpp:327
+msgid "Multiple instance"
+msgstr "बहुविध दृष्टान्त"
+
+#: dialogs/pages/classgeneralpage.cpp:333
+msgid "Show destruction"
+msgstr "विनाश देखाउनुहोस्"
+
+#: dialogs/pages/classgeneralpage.cpp:372
+msgid "Component name:"
+msgstr "अवयव नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:374
+msgid "Node name:"
+msgstr "नोड नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:384 dialogs/parmpropdialog.cpp:93
+#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
+#: dialogs/umloperationdialog.cpp:108
+msgid "Stereotype name:"
+msgstr "स्टेरियो प्रकार नाम:"
+
+#: dialogs/pages/classgeneralpage.cpp:481
+#: dialogs/pages/classgeneralpage.cpp:530
+#: dialogs/pages/classgeneralpage.cpp:543
+msgid ""
+"The name you have chosen\n"
+"is already being used.\n"
+"The name has been reset."
+msgstr ""
+"तपाईँले रोज्नुभएको नाम\n"
+"पहिल्यै प्रयोग गरिएको छ ।\n"
+"नाम रिसेट गरिएको छ ।"
+
+#: dialogs/pages/classgeneralpage.cpp:482
+#: dialogs/pages/classgeneralpage.cpp:531
+#: dialogs/pages/classgeneralpage.cpp:544
+msgid "Name is Not Unique"
+msgstr "नाम अद्धितिय छैन"
+
+#: dialogs/pages/classifierlistpage.cpp:116
+msgid "N&ew Attribute..."
+msgstr "नयाँ विशेषता..."
+
+#: dialogs/pages/classifierlistpage.cpp:120
+msgid "N&ew Operation..."
+msgstr "नयाँ सञ्चालन..."
+
+#: dialogs/pages/classifierlistpage.cpp:124
+msgid "N&ew Template..."
+msgstr "नयाँ टेम्प्लेट..."
+
+#: dialogs/pages/classifierlistpage.cpp:128
+msgid "N&ew Enum Literal..."
+msgstr "नयाँ इनम आक्षर..."
+
+#: dialogs/pages/classifierlistpage.cpp:132
+msgid "N&ew Entity Attribute..."
+msgstr "नयाँ अस्तित्व विशेषता..."
+
+#: dialogs/pages/classifierlistpage.cpp:135
+#, fuzzy
+msgid "Constraints"
+msgstr "रोकथाम"
+
+#: dialogs/pages/classifierlistpage.cpp:136
+#, fuzzy
+msgid "N&ew Constraint..."
+msgstr "नयाँ विशेषता..."
+
+#: dialogs/pages/classifierlistpage.cpp:206
+#: dialogs/umlforeignkeyconstraintdialog.cpp:321
+#: dialogs/umloperationdialog.cpp:166
+#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
+#, fuzzy
+msgid "&Delete"
+msgstr "पूर्वानिर्धारण"
+
+#: dialogs/pages/classifierlistpage.cpp:208 dialogs/umloperationdialog.cpp:168
+#: uml.cpp:499
+msgid "&Properties"
+msgstr "गुण"
+
+#: dialogs/pages/classifierlistpage.cpp:226
+#, fuzzy
+#| msgid "Component"
+msgid "Comment"
+msgstr "अवयव"
+
+#: dialogs/pages/classifierlistpage.cpp:227
+#, fuzzy
+#| msgid "View Code"
+msgid "Source Code"
+msgstr "कोड हेर्नुहोस्"
+
+#: dialogs/pages/classoptionspage.cpp:131
+#: dialogs/pages/classoptionspage.cpp:219
+msgid "Operatio&ns"
+msgstr "सञ्चालन"
+
+#: dialogs/pages/classoptionspage.cpp:135
+#: dialogs/pages/classoptionspage.cpp:236
+msgid "&Visibility"
+msgstr "दृश्यता"
+
+#: dialogs/pages/classoptionspage.cpp:144
+#: dialogs/pages/classoptionspage.cpp:198
+#: dialogs/pages/classoptionspage.cpp:223
+msgid "O&peration signature"
+msgstr "सञ्चालन हस्ताक्षर"
+
+#: dialogs/pages/classoptionspage.cpp:148
+#: dialogs/pages/classoptionspage.cpp:240
+msgid "Pac&kage"
+msgstr "प्याकेज"
+
+#: dialogs/pages/classoptionspage.cpp:155
+#: dialogs/pages/classoptionspage.cpp:228
+msgid "Att&ributes"
+msgstr "विशेषताहरू"
+
+#: dialogs/pages/classoptionspage.cpp:159
+#: dialogs/pages/classoptionspage.cpp:244
+msgid "Stereot&ype"
+msgstr "स्टेरियो प्रकार"
+
+#: dialogs/pages/classoptionspage.cpp:163
+#: dialogs/pages/classoptionspage.cpp:232
+msgid "Attr&ibute signature"
+msgstr "विशेषता हस्ताक्षर"
+
+#: dialogs/pages/classoptionspage.cpp:172
+#: dialogs/pages/classoptionspage.cpp:252
+#, fuzzy
+#| msgid "Public Only"
+msgid "&Public Only"
+msgstr "सार्वजनिक मात्र"
+
+#: dialogs/pages/classoptionspage.cpp:178
+msgid "Draw as circle"
+msgstr "वृतको रूपमा रेखाङ्कन गर्नुहोस्"
+
+#: dialogs/pages/classoptionspage.cpp:248
+#, fuzzy
+#| msgid "Attribute accessor methods"
+msgid "&Attribute associations"
+msgstr "विशेषता पहुँचकर्ता विधि"
+
+#: dialogs/pages/classoptionspage.cpp:257
+msgid "Starting Scope"
+msgstr "सुरु भइरहेको कार्यक्षेत्र"
+
+#: dialogs/pages/classoptionspage.cpp:262
+msgid "Default attribute scope:"
+msgstr "पूर्वनिर्धारित विशेषता क्षेत्र:"
+
+#: dialogs/pages/classoptionspage.cpp:265
+msgid "Default operation scope:"
+msgstr "पूर्वनिर्धारित सञ्चालन क्षेत्र:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/pages/codeimportoptionspage.ui:17
+#, fuzzy
+#| msgid "Not Generated"
+msgid "C++- Import"
+msgstr "सिर्जना गरिएको छैन"
+
+#. i18n: ectx: property (text), widget (QCheckBox, createArtifactCheckBox)
+#: dialogs/pages/codeimportoptionspage.ui:29
+msgid "For each imported file create an artifact in the component view"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, resolveDependenciesCheckBox)
+#: dialogs/pages/codeimportoptionspage.ui:42
+#, fuzzy
+#| msgid "Resolving object references..."
+msgid "Resolve dependencies (reduces import speed)"
+msgstr "वस्तु सन्दर्भहरू विभाजित गर्दैछ... "
+
+#: dialogs/pages/constraintlistpage.cpp:72 listpopupmenu.cpp:1417
+msgid "Unique Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:76 listpopupmenu.cpp:1416
+msgid "Primary Key Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:80 listpopupmenu.cpp:1418
+msgid "Foreign Key Constraint..."
+msgstr ""
+
+#: dialogs/pages/constraintlistpage.cpp:84 listpopupmenu.cpp:1419
+#, fuzzy
+msgid "Check Constraint..."
+msgstr "फन्ट परिवर्तन गर्नुहोस्..."
+
+#: dialogs/pages/defaultcodegenpolicypage.cpp:28
+msgid "<p align=\"center\">No Options Available.</p>"
+msgstr "<p align=\"center\">विकल्प उपलब्ध छैन ।</p>"
+
+#: dialogs/pages/diagramprintpage.cpp:44
+msgid "&Diagrams"
+msgstr "रेखाचित्र"
+
+#: dialogs/pages/diagramprintpage.cpp:49
+msgid "Filter"
+msgstr "फिल्टर"
+
+#: dialogs/pages/diagramprintpage.cpp:63
+msgid "&Select diagrams"
+msgstr "रेखाचित्र चयन गर्नुहोस्"
+
+#: dialogs/pages/diagramprintpage.cpp:66
+msgid "&Type of diagram"
+msgstr "रेखाचित्रको प्रकार"
+
+#: dialogs/pages/diagramprintpage.cpp:69
+#, fuzzy
+#| msgid "Selection"
+msgctxt "diagram selection for printing"
+msgid "Selection"
+msgstr "चयन"
+
+#: dialogs/pages/diagramprintpage.cpp:160
+msgid "No diagrams selected."
+msgstr "रेखाचित्र चयन गरिएको छैन ।"
+
+#: dialogs/pages/diagrampropertiespage.cpp:75
+msgid "The name you have entered is invalid."
+msgstr "तपाईँले प्रविष्ट गर्नुभएको नाम अवैध छ ।"
+
+#: dialogs/pages/diagrampropertiespage.cpp:85
+msgid "The name you have entered is not unique."
+msgstr "तपाईँले प्रविष्ट गर्नुभएको नाम अद्वितिय छ ।"
+
+#: dialogs/pages/diagrampropertiespage.cpp:86 umldoc.cpp:1430
+msgid "Name Not Unique"
+msgstr "नाम अद्धितिय छैन"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
+#: dialogs/pages/diagrampropertiespage.ui:17
+msgid "Diagram Properties"
+msgstr "रेखाचित्र गुण"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelDiagramName)
+#: dialogs/pages/diagrampropertiespage.ui:31
+msgid "Name:"
+msgstr "नाम:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoom)
+#: dialogs/pages/diagrampropertiespage.ui:56
+msgid "Zoom:"
+msgstr "जुम:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelZoomUnit)
+#: dialogs/pages/diagrampropertiespage.ui:82
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
+#: dialogs/pages/diagrampropertiespage.ui:124
+msgid "Show &grid"
+msgstr "ग्रिड देखाउनुहोस्"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:131
+msgid "Snap &to grid"
+msgstr "ग्रिडमा सटाउनुहोस्"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:139
+msgid ""
+"Snap the size of the components to be a multiple of the grid spacing.\n"
+"If 'Snap to Grid' is enabled a component will always be aligned with the "
+"grid on all 4 sides."
+msgstr ""
+"ग्रिड खाली स्थानको गुणा हुनका लागि अवयवहरूको साइज सटाउनुहोस् ।\n"
+"यदि 'ग्रिडमा सटाउनुहोस्' सक्षम पारिएको छ भने अवयव सबै ४ किनारामा ग्रिडसँग सधै "
+"पङ्क्तिबद्ध गरिनेछ ।"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
+#: dialogs/pages/diagrampropertiespage.ui:142
+msgid "Snap component size"
+msgstr "अवयव साइज सटाउनुहोस्"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
+#: dialogs/pages/diagrampropertiespage.ui:159
+msgid "Grid spacing:  "
+msgstr "ग्रिड खाली स्थान:  "
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelX)
+#: dialogs/pages/diagrampropertiespage.ui:182
+msgid "X"
+msgstr "X"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_labelY)
+#: dialogs/pages/diagrampropertiespage.ui:218
+msgid "Y"
+msgstr "Y"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
+#: dialogs/pages/diagrampropertiespage.ui:247
+#, fuzzy
+#| msgid "&Auto increment"
+msgid "Autoincrement Sequence "
+msgstr "स्वचालित बढोत्तरी:"
+
+#: dialogs/pages/generaloptionpage.cpp:43
+msgctxt "miscellaneous group box"
+msgid "Miscellaneous"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:49
+msgid "Enable undo"
+msgstr "पूर्वावस्थामा फर्काउन सक्षम पार्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:53
+msgid "Use tabbed diagrams"
+msgstr "ट्याब गरिएको रेखाचित्र प्रयोग गर्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:57
+msgid "Use new C++/Java/Ruby generators"
+msgstr "नयाँ C++/Java/Ruby सर्जकहरू प्रयोग गर्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:61
+msgid "Use angular association lines"
+msgstr "कोणिक संगत पङ्क्तिहरू प्रयोग गर्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:65
+msgid "Turn on footer and page numbers when printing"
+msgstr ""
+
+#: dialogs/pages/generaloptionpage.cpp:70
+msgid "Autosave"
+msgstr "स्वत: बचत गर्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:76
+msgid "E&nable autosave"
+msgstr "स्वत: बचत सक्षम पार्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:80
+msgid "Select auto-save time interval (mins):"
+msgstr "(मिनेटमा) स्वत-बचत गर्ने अन्तराल चयन गर्नुहोस्:"
+
+#: dialogs/pages/generaloptionpage.cpp:89
+msgid "Set autosave suffix:"
+msgstr "स्वत: बचत गर्ने प्रत्यय सेट गर्नुहोस्:"
+
+#: dialogs/pages/generaloptionpage.cpp:91
+#, fuzzy
+#| msgid ""
+#| "<qt><p>The autosave file will be saved to ~/autosave.xmi if the "
+#| "autosaving occurs before you have manually saved the file.</p><p>If "
+#| "you've already saved it, the autosave file will be saved in the same "
+#| "folder as the file and will be named like the file's name, followed by "
+#| "the suffix specified.</p><p>If the suffix is equal to the suffix of the "
+#| "file you've saved, the autosave will overwrite your file automatically.</"
+#| "p></qt>"
+msgid ""
+"<qt><p>The autosave file will be saved to ~/autosave.xmi if the autosaving "
+"occurs before you have manually saved the file.</p><p>If you have already "
+"saved it, the autosave file will be saved in the same folder as the file and "
+"will be named like the file's name, followed by the suffix specified.</"
+"p><p>If the suffix is equal to the suffix of the file you have saved, the "
+"autosave will overwrite your file automatically.</p></qt>"
+msgstr ""
+"<qt><p>यदि स्वत: बचत गर्ने तपाईँले फाइल म्यानुअल तरिकाले बचत गर्नु भन्दा अघि देखापर्यो भने "
+"स्वत: बचत गर्ने फाइल ~/autosave.xmi मा बचत गरिनेछ ।</p><p>यदि तपाईँले यो पहिल्यै बचत "
+"गर्नुभएको छ भने, स्वत: बचत गर्ने फाइल फाइल जस्ते उस्तै फोल्डरमा बचत गरिनेछ र फाइलको नाम "
+"जस्तै नामकरण गरिनेछ, जुन निर्दिष्ट गरिएको प्रत्ययद्वारा अनुशरन गरिएको छ ।</p><p>यदि "
+"प्रत्यय तपाईँले बचत गर्नुभएको फाइलको प्रत्ययसँग बराबर छ भने, स्वत: बचत गर्नेले तपाईँको फाइल "
+"स्वचालित रूपमा अधिलेखन गर्नेछ ।</p></qt>"
+
+#: dialogs/pages/generaloptionpage.cpp:101
+msgid "Startup"
+msgstr "सुरुआत"
+
+#: dialogs/pages/generaloptionpage.cpp:107
+msgid "&Load last project"
+msgstr "अन्तिम परियोजना लोड गर्नुहोस्"
+
+#: dialogs/pages/generaloptionpage.cpp:111
+msgid "Start new project with:"
+msgstr "यससँग नयाँ परियोजना सुरु गर्नुहोस्:"
+
+#: dialogs/pages/generaloptionpage.cpp:129
+#, fuzzy
+msgid "Default Language :"
+msgstr "पूर्वनिर्धारित मान:"
+
+#: dialogs/pages/pkgcontentspage.cpp:43
+msgid "Contained Items"
+msgstr "समाविष्ट वस्तु"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
+#: dialogs/pages/umlrolepropertiesbase.ui:16 dialogs/umlroledialog.cpp:24
+msgid "Role Properties"
+msgstr "भूमिका गुण"
+
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
+#: dialogs/pages/umlrolepropertiesbase.ui:67
+msgid "Role Visibility"
+msgstr "भूमिका दृश्यात्मकता"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:97
+msgid "Implementation"
+msgstr "कार्यान्वयन"
+
+#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
+#: dialogs/pages/umlrolepropertiesbase.ui:107
+msgid "Role Changeability"
+msgstr "भूमिका परिवर्तनशीलता"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:113
+msgid "Changeable"
+msgstr "परिवर्तनयोग्य"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:123
+msgid "Frozen"
+msgstr "फ्रोजेन"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
+#: dialogs/pages/umlrolepropertiesbase.ui:130
+msgid "Add only"
+msgstr "थप्ने मात्र"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:86
+#, fuzzy
+#| msgid "Color"
+msgctxt "title of color group"
+msgid "Color"
+msgstr "रङ"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:91
+msgctxt "text color"
+msgid "&Text:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:98
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default text color button"
+msgid "Defaul&t"
+msgstr "पूर्वानिर्धारण"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:101
+#, fuzzy
+#| msgid "&Line:"
+msgctxt "line color"
+msgid "&Line:"
+msgstr "रेखा:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:108
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default line color button"
+msgid "&Default"
+msgstr "पूर्वानिर्धारण"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:111
+msgid "&Fill:"
+msgstr "भर्नुहोस्:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:118
+#, fuzzy
+#| msgid "D&efault"
+msgctxt "default fill color button"
+msgid "D&efault"
+msgstr "पूर्वनिर्धारित"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:121
+msgid "&Use fill"
+msgstr "भर्ने प्रयोग गर्नुहोस्"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:131
+msgctxt "background color"
+msgid "&Background:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:138
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default background color button"
+msgid "De&fault"
+msgstr "पूर्वानिर्धारण"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:141
+msgctxt "grid dot color"
+msgid "&Grid dot:"
+msgstr ""
+
+#: dialogs/pages/umlwidgetstylepage.cpp:148
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default grid dot color button"
+msgid "Def&ault"
+msgstr "पूर्वानिर्धारण"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:156
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "title of width group"
+msgid "Width"
+msgstr "रेखाको चौडाइ:"
+
+#: dialogs/pages/umlwidgetstylepage.cpp:161
+#, fuzzy
+#| msgid "Line width:  "
+msgctxt "line width"
+msgid "Line &width:"
+msgstr "रेखा चौडाइ:  "
+
+#: dialogs/pages/umlwidgetstylepage.cpp:167
+#, fuzzy
+#| msgid "&Default"
+msgctxt "default line width button"
+msgid "Defa&ult"
+msgstr "पूर्वानिर्धारण"
+
+#: dialogs/parmpropdialog.cpp:47
 msgid "Parameter Properties"
 msgstr "परिमिति गुण"
 
-#: dialogs/parmpropdlg.cpp:78 dialogs/umlattributedialog.cpp:73
+#: dialogs/parmpropdialog.cpp:78 dialogs/umlattributedialog.cpp:73
 #: dialogs/umlentityattributedialog.cpp:75 dialogs/umloperationdialog.cpp:101
 #: dialogs/umltemplatedialog.cpp:69
 msgid "&Type:"
 msgstr "प्रकार:"
 
-#: dialogs/parmpropdlg.cpp:86
+#: dialogs/parmpropdialog.cpp:86
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "property name"
 msgid "&Name:"
 msgstr "नाम:"
 
-#: dialogs/parmpropdlg.cpp:90 dialogs/umlattributedialog.cpp:85
+#: dialogs/parmpropdialog.cpp:90 dialogs/umlattributedialog.cpp:85
 msgid "&Initial value:"
 msgstr "सुरूको मान:"
 
-#: dialogs/parmpropdlg.cpp:98
+#: dialogs/parmpropdialog.cpp:98
 msgid "Passing Direction"
 msgstr "दिशा पास गर्दै"
 
-#: dialogs/parmpropdlg.cpp:99
+#: dialogs/parmpropdialog.cpp:99
 msgid ""
 "\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
 "\" is a parameter for reading and writing."
@@ -2912,156 +3067,152 @@ msgstr ""
 "\"in\" पढ्ने मात्र परिमिति हो, \"out\" लेख्ने मात्र परिमिति हो र \"inout\" पढ्न र "
 "लेख्नका लागि परिमिति हो ।"
 
-#: dialogs/parmpropdlg.cpp:264
+#: dialogs/parmpropdialog.cpp:264
 msgid "You have entered an invalid parameter name."
 msgstr "तपाईँ एउटा अवैध परामिति नाम प्रविष्ट गर्नुभएको छ ।"
 
-#: dialogs/parmpropdlg.cpp:265
+#: dialogs/parmpropdialog.cpp:265
 msgid "Parameter Name Invalid"
 msgstr "परिमिति नाम अवैध छ"
 
-#: dialogs/pkgcontentspage.cpp:43
-msgid "Contained Items"
-msgstr "समाविष्ट वस्तु"
-
-#: dialogs/selectopdlg.cpp:53 dialogs/selectopdlg.cpp:64
+#: dialogs/selectopdialog.cpp:53 dialogs/selectopdialog.cpp:64
 msgid "Select Operation"
 msgstr "सञ्चालन चयन गर्नुहोस्"
 
-#: dialogs/selectopdlg.cpp:72
+#: dialogs/selectopdialog.cpp:72
 msgid "Sequence number:"
 msgstr "अनुक्रम सङ्ख्या:"
 
-#: dialogs/selectopdlg.cpp:75
+#: dialogs/selectopdialog.cpp:75
 #, fuzzy
 #| msgid "&Auto increment"
 msgid "Auto increment:"
 msgstr "स्वचालित बढोत्तरी:"
 
-#: dialogs/selectopdlg.cpp:80
+#: dialogs/selectopdialog.cpp:80
 msgid "Class operation:"
 msgstr "वर्ग सञ्चालन:"
 
-#: dialogs/selectopdlg.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
+#: dialogs/selectopdialog.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
 msgid "New Operation..."
 msgstr "नयाँ सञ्चालन..."
 
-#: dialogs/selectopdlg.cpp:93
+#: dialogs/selectopdialog.cpp:93
 msgid "Custom operation:"
 msgstr "अनुकूल सञ्चालन:"
 
-#: dialogs/settingsdlg.cpp:39
+#: dialogs/settingsdialog.cpp:39
 msgid "Umbrello Setup"
 msgstr "अमब्रेलो सेटअप"
 
-#: dialogs/settingsdlg.cpp:72
+#: dialogs/settingsdialog.cpp:72
 msgid "User Interface"
 msgstr "प्रयोगकर्ता इन्टरफेस"
 
-#: dialogs/settingsdlg.cpp:73
+#: dialogs/settingsdialog.cpp:73
 msgid "User Interface Settings"
 msgstr "प्रयोगकर्ता इन्टरफेस सेटिङ"
 
-#: dialogs/settingsdlg.cpp:77
+#: dialogs/settingsdialog.cpp:77
 #, fuzzy
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "रङ"
 
-#: dialogs/settingsdlg.cpp:85
+#: dialogs/settingsdialog.cpp:85
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom text color:"
 msgstr "रेखा रङ:"
 
-#: dialogs/settingsdlg.cpp:92
+#: dialogs/settingsdialog.cpp:92
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom line color:"
 msgstr "रेखा रङ:"
 
-#: dialogs/settingsdlg.cpp:102
+#: dialogs/settingsdialog.cpp:102
 #, fuzzy
 #| msgid "&Use fill color"
 msgid "Custom fill color:"
 msgstr "भर्ने रङ प्रयोग गर्नुहोस्"
 
-#: dialogs/settingsdlg.cpp:108
+#: dialogs/settingsdialog.cpp:108
 #, fuzzy
 #| msgid "Custom operation:"
 msgid "Custom grid color:"
 msgstr "अनुकूल सञ्चालन:"
 
-#: dialogs/settingsdlg.cpp:114
+#: dialogs/settingsdialog.cpp:114
 #, fuzzy
 #| msgid "Color"
 msgid "Custom background color:"
 msgstr "रङ"
 
-#: dialogs/settingsdlg.cpp:120
+#: dialogs/settingsdialog.cpp:120
 #, fuzzy
 #| msgid "Line width:"
 msgid "Custom line width:"
 msgstr "रेखाको चौडाइ:"
 
-#: dialogs/settingsdlg.cpp:126
+#: dialogs/settingsdialog.cpp:126
 msgid "&Use fill color"
 msgstr "भर्ने रङ प्रयोग गर्नुहोस्"
 
-#: dialogs/settingsdlg.cpp:178 dialogs/umlviewdialog.cpp:92
+#: dialogs/settingsdialog.cpp:178 dialogs/umlviewdialog.cpp:92
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/settingsdlg.cpp:189
+#: dialogs/settingsdialog.cpp:189
 #, fuzzy
 #| msgid "Class"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "वर्ग"
 
-#: dialogs/settingsdlg.cpp:190
+#: dialogs/settingsdialog.cpp:190
 msgid "Class Settings"
 msgstr "वर्ग सेटिङ"
 
-#: dialogs/settingsdlg.cpp:200
+#: dialogs/settingsdialog.cpp:200
 #, fuzzy
 #| msgid "Not Generated"
 msgid "Code Importer"
 msgstr "सिर्जना गरिएको छैन"
 
-#: dialogs/settingsdlg.cpp:201
+#: dialogs/settingsdialog.cpp:201
 #, fuzzy
 #| msgid "Code Viewer Settings"
 msgid "Code Import Settings"
 msgstr "सङ्केत द्रष्टा सेटिङ"
 
-#: dialogs/settingsdlg.cpp:211
+#: dialogs/settingsdialog.cpp:211
 msgid "Code Generation"
 msgstr "सङ्केत सिर्जना"
 
-#: dialogs/settingsdlg.cpp:212
+#: dialogs/settingsdialog.cpp:212
 msgid "Code Generation Settings"
 msgstr "सङ्केत सिर्जना सेटिङ"
 
-#: dialogs/settingsdlg.cpp:223
+#: dialogs/settingsdialog.cpp:223
 msgid "Code Viewer"
 msgstr "सङ्केत द्रष्टा"
 
-#: dialogs/settingsdlg.cpp:224
+#: dialogs/settingsdialog.cpp:224
 msgid "Code Viewer Settings"
 msgstr "सङ्केत द्रष्टा सेटिङ"
 
-#: dialogs/settingsdlg.cpp:244
+#: dialogs/settingsdialog.cpp:244
 #, fuzzy
 #| msgid "Autosave"
 msgid "Auto Layout"
 msgstr "स्वत: बचत गर्नुहोस्"
 
-#: dialogs/settingsdlg.cpp:245
+#: dialogs/settingsdialog.cpp:245
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Auto Layout Settings"
@@ -3462,41 +3613,6 @@ msgstr "त्यो हस्ताक्षर सहितको एउटा
 msgid "Choose a different name or parameter list."
 msgstr "फरक नाम वा परिमिति सूची रोज्नुहोस् ।"
 
-#. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
-#: dialogs/umlroledialog.cpp:24 dialogs/umlrolepropertiesbase.ui:16
-msgid "Role Properties"
-msgstr "भूमिका गुण"
-
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_visibilityButtonGroup)
-#: dialogs/umlrolepropertiesbase.ui:67
-msgid "Role Visibility"
-msgstr "भूमिका दृश्यात्मकता"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pImplementationRB)
-#: dialogs/umlrolepropertiesbase.ui:97
-msgid "Implementation"
-msgstr "कार्यान्वयन"
-
-#. i18n: ectx: property (title), widget (KButtonGroup, ui_changeabilityButtonGroup)
-#: dialogs/umlrolepropertiesbase.ui:107
-msgid "Role Changeability"
-msgstr "भूमिका परिवर्तनशीलता"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pChangeableRB)
-#: dialogs/umlrolepropertiesbase.ui:113
-msgid "Changeable"
-msgstr "परिवर्तनयोग्य"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pFrozenRB)
-#: dialogs/umlrolepropertiesbase.ui:123
-msgid "Frozen"
-msgstr "फ्रोजेन"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_pAddOnlyRB)
-#: dialogs/umlrolepropertiesbase.ui:130
-msgid "Add only"
-msgstr "थप्ने मात्र"
-
 #: dialogs/umltemplatedialog.cpp:39
 msgid "Template Properties"
 msgstr "टेम्प्लेट गुण"
@@ -3568,99 +3684,6 @@ msgstr "शैली:"
 #, fuzzy
 msgid "Diagram Style"
 msgstr "रेखाचित्र नाम प्रविष्ट गर्नुहोस्"
-
-#: dialogs/umlwidgetstylepage.cpp:86
-#, fuzzy
-#| msgid "Color"
-msgctxt "title of color group"
-msgid "Color"
-msgstr "रङ"
-
-#: dialogs/umlwidgetstylepage.cpp:91
-msgctxt "text color"
-msgid "&Text:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:98
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default text color button"
-msgid "Defaul&t"
-msgstr "पूर्वानिर्धारण"
-
-#: dialogs/umlwidgetstylepage.cpp:101
-#, fuzzy
-#| msgid "&Line:"
-msgctxt "line color"
-msgid "&Line:"
-msgstr "रेखा:"
-
-#: dialogs/umlwidgetstylepage.cpp:108
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default line color button"
-msgid "&Default"
-msgstr "पूर्वानिर्धारण"
-
-#: dialogs/umlwidgetstylepage.cpp:111
-msgid "&Fill:"
-msgstr "भर्नुहोस्:"
-
-#: dialogs/umlwidgetstylepage.cpp:118
-#, fuzzy
-#| msgid "D&efault"
-msgctxt "default fill color button"
-msgid "D&efault"
-msgstr "पूर्वनिर्धारित"
-
-#: dialogs/umlwidgetstylepage.cpp:121
-msgid "&Use fill"
-msgstr "भर्ने प्रयोग गर्नुहोस्"
-
-#: dialogs/umlwidgetstylepage.cpp:131
-msgctxt "background color"
-msgid "&Background:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:138
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default background color button"
-msgid "De&fault"
-msgstr "पूर्वानिर्धारण"
-
-#: dialogs/umlwidgetstylepage.cpp:141
-msgctxt "grid dot color"
-msgid "&Grid dot:"
-msgstr ""
-
-#: dialogs/umlwidgetstylepage.cpp:148
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default grid dot color button"
-msgid "Def&ault"
-msgstr "पूर्वानिर्धारण"
-
-#: dialogs/umlwidgetstylepage.cpp:156
-#, fuzzy
-#| msgid "Line width:"
-msgctxt "title of width group"
-msgid "Width"
-msgstr "रेखाको चौडाइ:"
-
-#: dialogs/umlwidgetstylepage.cpp:161
-#, fuzzy
-#| msgid "Line width:  "
-msgctxt "line width"
-msgid "Line &width:"
-msgstr "रेखा चौडाइ:  "
-
-#: dialogs/umlwidgetstylepage.cpp:167
-#, fuzzy
-#| msgid "&Default"
-msgctxt "default line width button"
-msgid "Defa&ult"
-msgstr "पूर्वानिर्धारण"
 
 #: docgenerators/docbook2xhtmlgeneratorjob.cpp:56
 #, fuzzy
