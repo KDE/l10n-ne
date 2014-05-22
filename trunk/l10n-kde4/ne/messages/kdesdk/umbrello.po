@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-21 01:58+0000\n"
+"POT-Creation-Date: 2014-05-22 01:55+0000\n"
 "PO-Revision-Date: 2007-08-20 13:11+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -704,8 +704,8 @@ msgstr "सिर्जना गरिएको कोडमा वर्गह
 #: dialogs/pages/classgeneralpage.cpp:406
 #: dialogs/pages/classifierlistpage.cpp:218
 #: dialogs/pages/diagrampropertiespage.ui:257
-#: dialogs/pages/umlrolepropertiesbase.ui:140 dialogs/parmpropdialog.cpp:115
-#: dialogs/statedialog.cpp:167
+#: dialogs/pages/umlrolepropertiesbase.ui:140
+#: dialogs/parameterpropertiesdialog.cpp:115 dialogs/statedialog.cpp:167
 msgid "Documentation"
 msgstr "मिसिलीकरण"
 
@@ -1524,11 +1524,11 @@ msgid "Class Name"
 msgstr "वर्ग नाम"
 
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:146
-#: dialogs/classpropdialog.cpp:128 dialogs/objectnodedialog.cpp:45
-#: dialogs/pages/associationgeneralpage.cpp:77 dialogs/parmpropdialog.cpp:71
-#: dialogs/statedialog.cpp:44 dialogs/statedialog.cpp:119
-#: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:633
-#: refactoring/refactoringassistant.cpp:460
+#: dialogs/classpropertiesdialog.cpp:128 dialogs/objectnodedialog.cpp:45
+#: dialogs/pages/associationgeneralpage.cpp:77
+#: dialogs/parameterpropertiesdialog.cpp:71 dialogs/statedialog.cpp:44
+#: dialogs/statedialog.cpp:119 dialogs/umlviewdialog.cpp:41
+#: listpopupmenu.cpp:633 refactoring/refactoringassistant.cpp:460
 #, fuzzy
 msgid "Properties"
 msgstr "गुण"
@@ -1606,165 +1606,170 @@ msgstr ""
 msgid "&Parameter activity node"
 msgstr "परिमिति नाम अद्धितिय छैन"
 
-#: dialogs/assocpropdialog.cpp:54
+#: dialogs/associationpropertiesdialog.cpp:54
 msgid "Association Properties"
 msgstr "संघको गुण"
 
-#: dialogs/assocpropdialog.cpp:98
+#: dialogs/associationpropertiesdialog.cpp:98
+#: dialogs/classpropertiesdialog.cpp:245 dialogs/classpropertiesdialog.cpp:379
+#: dialogs/settingsdialog.cpp:173
+#: dialogs/umlforeignkeyconstraintdialog.cpp:202 dialogs/umlviewdialog.cpp:93
+msgid "General Settings"
+msgstr "सामान्य सेटिङ"
+
+#: dialogs/associationpropertiesdialog.cpp:98
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/assocpropdialog.cpp:98 dialogs/classpropdialog.cpp:245
-#: dialogs/classpropdialog.cpp:379 dialogs/settingsdialog.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
-msgid "General Settings"
-msgstr "सामान्य सेटिङ"
-
-#: dialogs/assocpropdialog.cpp:104
+#: dialogs/associationpropertiesdialog.cpp:104
 #, fuzzy
 #| msgid "Roles"
 msgctxt "role page name"
 msgid "Roles"
 msgstr "भूमिका"
 
-#: dialogs/assocpropdialog.cpp:104
+#: dialogs/associationpropertiesdialog.cpp:104
 msgid "Role Settings"
 msgstr "भूमिका सेटिङ"
 
-#: dialogs/assocpropdialog.cpp:110
+#: dialogs/associationpropertiesdialog.cpp:110
 #, fuzzy
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "शैली:"
 
-#: dialogs/assocpropdialog.cpp:110
+#: dialogs/associationpropertiesdialog.cpp:110
 #, fuzzy
 #| msgid "Component"
 msgid "Role Style"
 msgstr "अवयव"
 
-#: dialogs/assocpropdialog.cpp:116
+#: dialogs/associationpropertiesdialog.cpp:116
+#: dialogs/classpropertiesdialog.cpp:398 dialogs/dialogbase.cpp:91
+#: dialogs/settingsdialog.cpp:228 dialogs/umlviewdialog.cpp:154
+msgid "Font Settings"
+msgstr "फन्ट सेटिङ"
+
+#: dialogs/associationpropertiesdialog.cpp:116
 #, fuzzy
 msgctxt "font page name"
 msgid "Font"
 msgstr "फन्ट:"
 
-#: dialogs/assocpropdialog.cpp:116 dialogs/classpropdialog.cpp:398
-#: dialogs/dialogbase.cpp:90 dialogs/settingsdialog.cpp:234
-#: dialogs/umlviewdialog.cpp:154
-msgid "Font Settings"
-msgstr "फन्ट सेटिङ"
-
-#: dialogs/classpropdialog.cpp:245
+#: dialogs/classpropertiesdialog.cpp:245
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page name"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/classpropdialog.cpp:258
+#: dialogs/classpropertiesdialog.cpp:258 dialogs/dialogbase.cpp:114
+#, fuzzy
+#| msgid "Widget Color"
+msgid "Widget Style"
+msgstr "विजेट रङ"
+
+#: dialogs/classpropertiesdialog.cpp:258
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page name"
 msgid "Style"
 msgstr "शैली:"
 
-#: dialogs/classpropdialog.cpp:258 dialogs/dialogbase.cpp:113
-#, fuzzy
-#| msgid "Widget Color"
-msgid "Widget Style"
-msgstr "विजेट रङ"
-
-#: dialogs/classpropdialog.cpp:270
+#: dialogs/classpropertiesdialog.cpp:270
 #, fuzzy
 #| msgid "Display"
 msgctxt "display option page name"
 msgid "Display"
 msgstr "प्रदर्शन गर्नुहोस्"
 
-#: dialogs/classpropdialog.cpp:270
+#: dialogs/classpropertiesdialog.cpp:270
 msgid "Display Options"
 msgstr "विकल्प प्रदर्शन गर्नुहोस्"
 
-#: dialogs/classpropdialog.cpp:283 dialogs/pages/classifierlistpage.cpp:115
-#: listpopupmenu.cpp:1077 listpopupmenu.cpp:1113
-#: refactoring/refactoringassistant.cpp:666
+#: dialogs/classpropertiesdialog.cpp:283
+#: dialogs/pages/classifierlistpage.cpp:115 listpopupmenu.cpp:1077
+#: listpopupmenu.cpp:1113 refactoring/refactoringassistant.cpp:666
 msgid "Attributes"
 msgstr "विशेषताहरू"
 
-#: dialogs/classpropdialog.cpp:283
+#: dialogs/classpropertiesdialog.cpp:283
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Attribute Settings"
 msgstr "अस्तित्व विशेषताहरूको सेटिङ"
 
-#: dialogs/classpropdialog.cpp:295 dialogs/pages/classifierlistpage.cpp:119
-#: listpopupmenu.cpp:1080 listpopupmenu.cpp:1122
-#: refactoring/refactoringassistant.cpp:682
+#: dialogs/classpropertiesdialog.cpp:295
+#: dialogs/pages/classifierlistpage.cpp:119 listpopupmenu.cpp:1080
+#: listpopupmenu.cpp:1122 refactoring/refactoringassistant.cpp:682
 msgid "Operations"
 msgstr "सञ्चालन"
 
-#: dialogs/classpropdialog.cpp:295
+#: dialogs/classpropertiesdialog.cpp:295
 msgid "Operation Settings"
 msgstr "सञ्चालन सेटिङ"
 
-#: dialogs/classpropdialog.cpp:307 dialogs/pages/classifierlistpage.cpp:123
+#: dialogs/classpropertiesdialog.cpp:307
+#: dialogs/pages/classifierlistpage.cpp:123
 msgid "Templates"
 msgstr "टेम्प्लेट"
 
-#: dialogs/classpropdialog.cpp:307
+#: dialogs/classpropertiesdialog.cpp:307
 msgid "Templates Settings"
 msgstr "टेम्प्लेट सेटिङ"
 
-#: dialogs/classpropdialog.cpp:319 dialogs/pages/classifierlistpage.cpp:127
+#: dialogs/classpropertiesdialog.cpp:319
+#: dialogs/pages/classifierlistpage.cpp:127
 msgid "Enum Literals"
 msgstr "इनम आक्षरहरू"
 
-#: dialogs/classpropdialog.cpp:319
+#: dialogs/classpropertiesdialog.cpp:319
 msgid "Enum Literals Settings"
 msgstr "इनम आक्षरहरूको सेटिङ"
 
-#: dialogs/classpropdialog.cpp:331 dialogs/pages/classifierlistpage.cpp:131
+#: dialogs/classpropertiesdialog.cpp:331
+#: dialogs/pages/classifierlistpage.cpp:131
 msgid "Entity Attributes"
 msgstr "अस्तित्व विशेषताहरू"
 
-#: dialogs/classpropdialog.cpp:331
+#: dialogs/classpropertiesdialog.cpp:331
 msgid "Entity Attributes Settings"
 msgstr "अस्तित्व विशेषताहरूको सेटिङ"
 
-#: dialogs/classpropdialog.cpp:343
+#: dialogs/classpropertiesdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints"
 msgstr "अस्तित्व विशेषताहरू"
 
-#: dialogs/classpropdialog.cpp:343
+#: dialogs/classpropertiesdialog.cpp:343
 #, fuzzy
 msgid "Entity Constraints Settings"
 msgstr "अस्तित्व विशेषताहरूको सेटिङ"
 
-#: dialogs/classpropdialog.cpp:355
+#: dialogs/classpropertiesdialog.cpp:355
 #, fuzzy
 msgctxt "contents settings page name"
 msgid "Contents"
 msgstr "रोकथाम"
 
-#: dialogs/classpropdialog.cpp:355
+#: dialogs/classpropertiesdialog.cpp:355
 msgid "Contents Settings"
 msgstr "सामग्रीहरूको सेटिङ"
 
-#: dialogs/classpropdialog.cpp:367 dialogs/pages/classassociationspage.cpp:44
+#: dialogs/classpropertiesdialog.cpp:367
+#: dialogs/pages/classassociationspage.cpp:44
 msgid "Associations"
 msgstr "संघ"
 
-#: dialogs/classpropdialog.cpp:367
+#: dialogs/classpropertiesdialog.cpp:367
 msgid "Class Associations"
 msgstr "वर्ग संघ"
 
-#: dialogs/classpropdialog.cpp:379
+#: dialogs/classpropertiesdialog.cpp:379
 #, fuzzy
 #| msgid "General"
 msgctxt "instance general settings page name"
@@ -1773,8 +1778,8 @@ msgstr "सामान्य"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/classpropdialog.cpp:397 dialogs/dialogbase.cpp:90
-#: dialogs/settingsdialog.cpp:233 dialogs/umlviewdialog.cpp:153
+#: dialogs/classpropertiesdialog.cpp:397 dialogs/dialogbase.cpp:91
+#: dialogs/settingsdialog.cpp:227 dialogs/umlviewdialog.cpp:153
 #: umbrello.kcfg:160 umbrello.kcfg:270
 #, fuzzy
 msgid "Font"
@@ -1918,7 +1923,7 @@ msgstr "<p align=\"right\">सम्पादन अयोग्य पाठ:</
 msgid "<p align=\"right\">Editable text:</p>"
 msgstr "<p align=\"right\"> सम्पादनयोग्य पाठ:</p>"
 
-#: dialogs/dialogbase.cpp:113
+#: dialogs/dialogbase.cpp:114
 #, fuzzy
 #| msgid "Style:"
 msgctxt "widget style page"
@@ -2527,9 +2532,9 @@ msgstr "अवयव नाम:"
 msgid "Node name:"
 msgstr "नोड नाम:"
 
-#: dialogs/pages/classgeneralpage.cpp:384 dialogs/parmpropdialog.cpp:93
-#: dialogs/umlattributedialog.cpp:89 dialogs/umlentityattributedialog.cpp:91
-#: dialogs/umloperationdialog.cpp:108
+#: dialogs/pages/classgeneralpage.cpp:384
+#: dialogs/parameterpropertiesdialog.cpp:93 dialogs/umlattributedialog.cpp:89
+#: dialogs/umlentityattributedialog.cpp:91 dialogs/umloperationdialog.cpp:108
 msgid "Stereotype name:"
 msgstr "स्टेरियो प्रकार नाम:"
 
@@ -2582,7 +2587,7 @@ msgid "N&ew Constraint..."
 msgstr "नयाँ विशेषता..."
 
 #: dialogs/pages/classifierlistpage.cpp:206
-#: dialogs/umlforeignkeyconstraintdialog.cpp:321
+#: dialogs/umlforeignkeyconstraintdialog.cpp:315
 #: dialogs/umloperationdialog.cpp:166
 #: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1486 umlscene.cpp:3311
 #, fuzzy
@@ -2902,7 +2907,7 @@ msgstr "यससँग नयाँ परियोजना सुरु ग�
 msgid "Default Language :"
 msgstr "पूर्वनिर्धारित मान:"
 
-#: dialogs/pages/pkgcontentspage.cpp:43
+#: dialogs/pages/packagecontentspage.cpp:43
 msgid "Contained Items"
 msgstr "समाविष्ट वस्तु"
 
@@ -3034,32 +3039,32 @@ msgctxt "default line width button"
 msgid "Defa&ult"
 msgstr "पूर्वानिर्धारण"
 
-#: dialogs/parmpropdialog.cpp:47
+#: dialogs/parameterpropertiesdialog.cpp:47
 msgid "Parameter Properties"
 msgstr "परिमिति गुण"
 
-#: dialogs/parmpropdialog.cpp:78 dialogs/umlattributedialog.cpp:73
+#: dialogs/parameterpropertiesdialog.cpp:78 dialogs/umlattributedialog.cpp:73
 #: dialogs/umlentityattributedialog.cpp:75 dialogs/umloperationdialog.cpp:101
 #: dialogs/umltemplatedialog.cpp:69
 msgid "&Type:"
 msgstr "प्रकार:"
 
-#: dialogs/parmpropdialog.cpp:86
+#: dialogs/parameterpropertiesdialog.cpp:86
 #, fuzzy
 #| msgid "&Name:"
 msgctxt "property name"
 msgid "&Name:"
 msgstr "नाम:"
 
-#: dialogs/parmpropdialog.cpp:90 dialogs/umlattributedialog.cpp:85
+#: dialogs/parameterpropertiesdialog.cpp:90 dialogs/umlattributedialog.cpp:85
 msgid "&Initial value:"
 msgstr "सुरूको मान:"
 
-#: dialogs/parmpropdialog.cpp:98
+#: dialogs/parameterpropertiesdialog.cpp:98
 msgid "Passing Direction"
 msgstr "दिशा पास गर्दै"
 
-#: dialogs/parmpropdialog.cpp:99
+#: dialogs/parameterpropertiesdialog.cpp:99
 msgid ""
 "\"in\" is a readonly parameter, \"out\" is a writeonly parameter and \"inout"
 "\" is a parameter for reading and writing."
@@ -3067,37 +3072,38 @@ msgstr ""
 "\"in\" पढ्ने मात्र परिमिति हो, \"out\" लेख्ने मात्र परिमिति हो र \"inout\" पढ्न र "
 "लेख्नका लागि परिमिति हो ।"
 
-#: dialogs/parmpropdialog.cpp:264
+#: dialogs/parameterpropertiesdialog.cpp:264
 msgid "You have entered an invalid parameter name."
 msgstr "तपाईँ एउटा अवैध परामिति नाम प्रविष्ट गर्नुभएको छ ।"
 
-#: dialogs/parmpropdialog.cpp:265
+#: dialogs/parameterpropertiesdialog.cpp:265
 msgid "Parameter Name Invalid"
 msgstr "परिमिति नाम अवैध छ"
 
-#: dialogs/selectopdialog.cpp:53 dialogs/selectopdialog.cpp:64
+#: dialogs/selectoperationdialog.cpp:53 dialogs/selectoperationdialog.cpp:64
 msgid "Select Operation"
 msgstr "सञ्चालन चयन गर्नुहोस्"
 
-#: dialogs/selectopdialog.cpp:72
+#: dialogs/selectoperationdialog.cpp:72
 msgid "Sequence number:"
 msgstr "अनुक्रम सङ्ख्या:"
 
-#: dialogs/selectopdialog.cpp:75
+#: dialogs/selectoperationdialog.cpp:75
 #, fuzzy
 #| msgid "&Auto increment"
 msgid "Auto increment:"
 msgstr "स्वचालित बढोत्तरी:"
 
-#: dialogs/selectopdialog.cpp:80
+#: dialogs/selectoperationdialog.cpp:80
 msgid "Class operation:"
 msgstr "वर्ग सञ्चालन:"
 
-#: dialogs/selectopdialog.cpp:89 listpopupmenu.cpp:571 listpopupmenu.cpp:687
+#: dialogs/selectoperationdialog.cpp:89 listpopupmenu.cpp:571
+#: listpopupmenu.cpp:687
 msgid "New Operation..."
 msgstr "नयाँ सञ्चालन..."
 
-#: dialogs/selectopdialog.cpp:93
+#: dialogs/selectoperationdialog.cpp:93
 msgid "Custom operation:"
 msgstr "अनुकूल सञ्चालन:"
 
@@ -3105,114 +3111,114 @@ msgstr "अनुकूल सञ्चालन:"
 msgid "Umbrello Setup"
 msgstr "अमब्रेलो सेटअप"
 
-#: dialogs/settingsdialog.cpp:72
+#: dialogs/settingsdialog.cpp:66
 msgid "User Interface"
 msgstr "प्रयोगकर्ता इन्टरफेस"
 
-#: dialogs/settingsdialog.cpp:73
+#: dialogs/settingsdialog.cpp:67
 msgid "User Interface Settings"
 msgstr "प्रयोगकर्ता इन्टरफेस सेटिङ"
 
-#: dialogs/settingsdialog.cpp:77
+#: dialogs/settingsdialog.cpp:71
 #, fuzzy
 #| msgid "Color"
 msgctxt "color group box"
 msgid "Color"
 msgstr "रङ"
 
-#: dialogs/settingsdialog.cpp:85
+#: dialogs/settingsdialog.cpp:79
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom text color:"
 msgstr "रेखा रङ:"
 
-#: dialogs/settingsdialog.cpp:92
+#: dialogs/settingsdialog.cpp:86
 #, fuzzy
 #| msgid "Line color:"
 msgid "Custom line color:"
 msgstr "रेखा रङ:"
 
-#: dialogs/settingsdialog.cpp:102
+#: dialogs/settingsdialog.cpp:96
 #, fuzzy
 #| msgid "&Use fill color"
 msgid "Custom fill color:"
 msgstr "भर्ने रङ प्रयोग गर्नुहोस्"
 
-#: dialogs/settingsdialog.cpp:108
+#: dialogs/settingsdialog.cpp:102
 #, fuzzy
 #| msgid "Custom operation:"
 msgid "Custom grid color:"
 msgstr "अनुकूल सञ्चालन:"
 
-#: dialogs/settingsdialog.cpp:114
+#: dialogs/settingsdialog.cpp:108
 #, fuzzy
 #| msgid "Color"
 msgid "Custom background color:"
 msgstr "रङ"
 
-#: dialogs/settingsdialog.cpp:120
+#: dialogs/settingsdialog.cpp:114
 #, fuzzy
 #| msgid "Line width:"
 msgid "Custom line width:"
 msgstr "रेखाको चौडाइ:"
 
-#: dialogs/settingsdialog.cpp:126
+#: dialogs/settingsdialog.cpp:120
 msgid "&Use fill color"
 msgstr "भर्ने रङ प्रयोग गर्नुहोस्"
 
-#: dialogs/settingsdialog.cpp:178 dialogs/umlviewdialog.cpp:92
+#: dialogs/settingsdialog.cpp:172 dialogs/umlviewdialog.cpp:92
 #, fuzzy
 #| msgid "General"
 msgctxt "general settings page"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/settingsdialog.cpp:189
+#: dialogs/settingsdialog.cpp:183
 #, fuzzy
 #| msgid "Class"
 msgctxt "class settings page"
 msgid "Class"
 msgstr "वर्ग"
 
-#: dialogs/settingsdialog.cpp:190
+#: dialogs/settingsdialog.cpp:184
 msgid "Class Settings"
 msgstr "वर्ग सेटिङ"
 
-#: dialogs/settingsdialog.cpp:200
+#: dialogs/settingsdialog.cpp:194
 #, fuzzy
 #| msgid "Not Generated"
 msgid "Code Importer"
 msgstr "सिर्जना गरिएको छैन"
 
-#: dialogs/settingsdialog.cpp:201
+#: dialogs/settingsdialog.cpp:195
 #, fuzzy
 #| msgid "Code Viewer Settings"
 msgid "Code Import Settings"
 msgstr "सङ्केत द्रष्टा सेटिङ"
 
-#: dialogs/settingsdialog.cpp:211
+#: dialogs/settingsdialog.cpp:205
 msgid "Code Generation"
 msgstr "सङ्केत सिर्जना"
 
-#: dialogs/settingsdialog.cpp:212
+#: dialogs/settingsdialog.cpp:206
 msgid "Code Generation Settings"
 msgstr "सङ्केत सिर्जना सेटिङ"
 
-#: dialogs/settingsdialog.cpp:223
+#: dialogs/settingsdialog.cpp:217
 msgid "Code Viewer"
 msgstr "सङ्केत द्रष्टा"
 
-#: dialogs/settingsdialog.cpp:224
+#: dialogs/settingsdialog.cpp:218
 msgid "Code Viewer Settings"
 msgstr "सङ्केत द्रष्टा सेटिङ"
 
-#: dialogs/settingsdialog.cpp:244
+#: dialogs/settingsdialog.cpp:238
 #, fuzzy
 #| msgid "Autosave"
 msgid "Auto Layout"
 msgstr "स्वत: बचत गर्नुहोस्"
 
-#: dialogs/settingsdialog.cpp:245
+#: dialogs/settingsdialog.cpp:239
 #, fuzzy
 #| msgid "Entity Attributes Settings"
 msgid "Auto Layout Settings"
@@ -3444,100 +3450,100 @@ msgstr "सबै फाइल"
 msgid "Foreign Key Setup"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:207
+#: dialogs/umlforeignkeyconstraintdialog.cpp:201
 #, fuzzy
 #| msgid "General"
 msgctxt "general page title"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:212
+#: dialogs/umlforeignkeyconstraintdialog.cpp:206
 #, fuzzy
 #| msgid "General"
 msgctxt "general group title"
 msgid "General"
 msgstr "सामान्य"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:219
+#: dialogs/umlforeignkeyconstraintdialog.cpp:213
 #, fuzzy
 #| msgid "Name"
 msgctxt "label for entering name"
 msgid "Name"
 msgstr "नाम"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:222
+#: dialogs/umlforeignkeyconstraintdialog.cpp:216
 msgid "Referenced Entity"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:229
+#: dialogs/umlforeignkeyconstraintdialog.cpp:223
 #, fuzzy
 msgid "Actions"
 msgstr "संघ"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:235
+#: dialogs/umlforeignkeyconstraintdialog.cpp:229
 msgid "On Update"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:241
+#: dialogs/umlforeignkeyconstraintdialog.cpp:235
 #, fuzzy
 msgid "On Delete"
 msgstr "चयन गर्नुहोस्"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 #, fuzzy
 msgid "No Action"
 msgstr "इन्डेन्टेसन छैन"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 msgid "Restrict"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 msgid "Cascade"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:273
+#: dialogs/umlforeignkeyconstraintdialog.cpp:267
 #, fuzzy
 msgid "Set Null"
 msgstr "पूर्वानिर्धारण"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:274
+#: dialogs/umlforeignkeyconstraintdialog.cpp:268
 #, fuzzy
 msgid "Set Default"
 msgstr "पूर्वानिर्धारण"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:292
-#: dialogs/umlforeignkeyconstraintdialog.cpp:293
+#: dialogs/umlforeignkeyconstraintdialog.cpp:286
+#: dialogs/umlforeignkeyconstraintdialog.cpp:287
 #, fuzzy
 msgid "Columns"
 msgstr "रङ"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:300
+#: dialogs/umlforeignkeyconstraintdialog.cpp:294
 #, fuzzy
 msgctxt "column header local"
 msgid "Local"
 msgstr "लेबुल"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:300
+#: dialogs/umlforeignkeyconstraintdialog.cpp:294
 msgctxt "column header referenced"
 msgid "Referenced"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:306
+#: dialogs/umlforeignkeyconstraintdialog.cpp:300
 #, fuzzy
 msgid "Local Column"
 msgstr "रङ"
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:312
+#: dialogs/umlforeignkeyconstraintdialog.cpp:306
 msgid "Referenced Column"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:319
+#: dialogs/umlforeignkeyconstraintdialog.cpp:313
 #: dialogs/umluniqueconstraintdialog.cpp:120
 msgid "&Add"
 msgstr ""
 
-#: dialogs/umlforeignkeyconstraintdialog.cpp:394
+#: dialogs/umlforeignkeyconstraintdialog.cpp:388
 msgid ""
 "You are attempting to change the Referenced Entity of this ForeignKey "
 "Constraint. Any unapplied changes to the mappings between local and "
