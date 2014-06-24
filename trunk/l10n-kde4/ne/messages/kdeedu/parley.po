@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-19 01:39+0000\n"
+"POT-Creation-Date: 2014-06-24 01:41+0000\n"
 "PO-Revision-Date: 2007-12-31 19:25+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -734,7 +734,7 @@ msgstr "सर्वोत्कृष्ट"
 
 #. i18n: ectx: property (text), widget (QPushButton, makeAdjectiveButton)
 #: src/editor/comparisonwidget.ui:116 src/editor/inflectionwidget.cpp:46
-#: src/parleydocument.cpp:330 src/vocabulary/wordtypeview.cpp:106
+#: src/parleydocument.cpp:500 src/vocabulary/wordtypeview.cpp:106
 #, fuzzy
 #| msgctxt "state of a row"
 #| msgid "Active"
@@ -742,7 +742,7 @@ msgid "Adjective"
 msgstr "सक्रिय पार्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QPushButton, makeAdverbButton)
-#: src/editor/comparisonwidget.ui:123 src/parleydocument.cpp:334
+#: src/editor/comparisonwidget.ui:123 src/parleydocument.cpp:504
 #: src/vocabulary/wordtypeview.cpp:114
 msgid "Adverb"
 msgstr ""
@@ -847,7 +847,7 @@ msgstr "बहुवचन"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: src/editor/declensionwidget.cpp:167 src/editor/declensionwidget.ui:185
-#: src/editor/inflectionwidget.cpp:121 src/parleydocument.cpp:316
+#: src/editor/inflectionwidget.cpp:121 src/parleydocument.cpp:486
 #, fuzzy
 #| msgid "&Male:"
 msgid "Masculine"
@@ -855,7 +855,7 @@ msgstr "पुरुष:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/editor/declensionwidget.cpp:168 src/editor/declensionwidget.ui:271
-#: src/editor/inflectionwidget.cpp:123 src/parleydocument.cpp:319
+#: src/editor/inflectionwidget.cpp:123 src/parleydocument.cpp:489
 #, fuzzy
 #| msgid "Definite"
 msgid "Feminine"
@@ -863,7 +863,7 @@ msgstr "निश्चित"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/editor/declensionwidget.cpp:169 src/editor/declensionwidget.ui:357
-#: src/editor/inflectionwidget.cpp:122 src/parleydocument.cpp:322
+#: src/editor/inflectionwidget.cpp:122 src/parleydocument.cpp:492
 #, fuzzy
 #| msgid "Neu&ter:"
 msgid "Neuter"
@@ -1148,14 +1148,14 @@ msgstr "dd.MM.yyyy"
 msgid "&Reset Confidence Levels"
 msgstr ""
 
-#: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:326
+#: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:496
 #: src/vocabulary/wordtypeview.cpp:123
 #, fuzzy
 #| msgid "Verb:"
 msgid "Verb"
 msgstr "क्रिया:"
 
-#: src/editor/inflectionwidget.cpp:41 src/parleydocument.cpp:312
+#: src/editor/inflectionwidget.cpp:41 src/parleydocument.cpp:482
 #: src/vocabulary/wordtypeview.cpp:74
 #, fuzzy
 #| msgctxt ""
@@ -1338,8 +1338,8 @@ msgstr "उदाहरण कागजात"
 msgid "Could not write to file \"%1\""
 msgstr "अभ्यास सुरु गर्नुहोस्..."
 
-#: src/export/exportdialog.cpp:110 src/parleydocument.cpp:238
-#: src/parleymainwindow.cpp:138
+#: src/export/exportdialog.cpp:110 src/parleydocument.cpp:106
+#: src/parleydocument.cpp:323 src/parleymainwindow.cpp:138
 msgid "Untitled"
 msgstr "शीर्षकविहिन"
 
@@ -1704,59 +1704,92 @@ msgstr "शब्द सूची कागजात खोल्नुहोस
 msgid "Share the current vocabulary collection with other users"
 msgstr "विभिन्न नामसँग सक्रिय शब्द सूची कागजात बचत गर्नुहोस्"
 
-#: src/parleydocument.cpp:126 src/parleydocument.cpp:415
+#: src/parleydocument.cpp:140 src/parleydocument.cpp:585
 #, kde-format
 msgctxt "@title:window document properties"
 msgid "Properties for %1"
 msgstr "%1 का लागि गुण"
 
-#: src/parleydocument.cpp:160
+#: src/parleydocument.cpp:174
 #, fuzzy
 #| msgid "&Last Practiced"
 msgid "Open in practice &mode"
 msgstr "अन्तिम अभ्यास गरियो"
 
-#: src/parleydocument.cpp:163
+#: src/parleydocument.cpp:177
 #, fuzzy
 #| msgid "Open Vocabulary Document"
 msgid "Open Vocabulary Collection"
 msgstr "शब्द सूची कागजात खोल्नुहोस्"
 
-#: src/parleydocument.cpp:195
-#, kde-format
-msgid "Could not read collection from \"%1\""
+#: src/parleydocument.cpp:218
+msgid ""
+"The vocabulary collection is locked by another process.  You can open the "
+"file if you take over the lock, but you will lose any changes from the other "
+"process.\n"
+"\n"
+"Do you want to take over the lock?\n"
 msgstr ""
 
-#: src/parleydocument.cpp:195
+#: src/parleydocument.cpp:218
+msgid "Take Over Lock"
+msgstr ""
+
+#: src/parleydocument.cpp:248
+#, fuzzy, kde-format
+#| msgid "Writing file \"%1\" resulted in an error: %2"
+msgid "Opening collection \"%1\" resulted in an error: %2"
+msgstr "लेखिएको फाइल \"%1\" को नतिजामा एउटा त्रुटि देखायो: %2"
+
+#: src/parleydocument.cpp:249
 #, fuzzy
 #| msgid "Open Vocabulary Document"
 msgctxt "@title:window"
 msgid "Open Collection"
 msgstr "शब्द सूची कागजात खोल्नुहोस्"
 
-#: src/parleydocument.cpp:229
+#: src/parleydocument.cpp:281
+msgid ""
+"Vocabulary is modified.\n"
+"\n"
+"Save file before exit?\n"
+msgstr ""
+"शब्द सूची परिमार्जन गरिएको छ ।\n"
+"\n"
+"अन्त्य गर्नु अघि फाइल बचत गर्नुहुन्छ ?\n"
+
+#: src/parleydocument.cpp:314
 #, fuzzy
 #| msgid "Downloads new vocabularies"
 msgid "Open Downloaded Vocabulary Collection"
 msgstr "नयाँ शब्द सूची डाउनलोड गर्दछ"
 
-#: src/parleydocument.cpp:254 src/parleydocument.cpp:304
+#: src/parleydocument.cpp:353 src/parleydocument.cpp:436
+#, kde-format
+msgid ""
+"File \"%1\" is locked by another process.  You can save to the file if you "
+"take over the lock, but you will lose any changes from the other process.\n"
+"\n"
+"Do you want to take over the lock?\n"
+msgstr ""
+
+#: src/parleydocument.cpp:382 src/parleydocument.cpp:471
 #, kde-format
 msgid "Writing file \"%1\" resulted in an error: %2"
 msgstr "लेखिएको फाइल \"%1\" को नतिजामा एउटा त्रुटि देखायो: %2"
 
-#: src/parleydocument.cpp:255 src/parleydocument.cpp:305
+#: src/parleydocument.cpp:383 src/parleydocument.cpp:472
 #, fuzzy
 #| msgid "Save File"
 msgctxt "@title:window"
 msgid "Save File"
 msgstr "फाइल बचत गर्नुहोस्"
 
-#: src/parleydocument.cpp:273
+#: src/parleydocument.cpp:401
 msgid "Save Vocabulary As"
 msgstr "यस रूपमा शब्द सूची बचत गर्नुहोस्"
 
-#: src/parleydocument.cpp:282
+#: src/parleydocument.cpp:410
 #, kde-format
 msgid ""
 "<qt>The file<p><b>%1</b></p>already exists. Do you want to overwrite it?</qt>"
@@ -1764,44 +1797,50 @@ msgstr ""
 "<qt>फाइल<br /><b>%1</b><br />पहिल्यै अवस्थित छ । तपाईँ यसलाई अधिलेखन गर्न चाहनुहुन्छ?"
 "</qt>"
 
-#: src/parleydocument.cpp:288
+#: src/parleydocument.cpp:416
 #, kde-format
 msgctxt "@info:status saving a file"
 msgid "Saving %1"
 msgstr "%1 बचत गर्दै"
 
-#: src/parleydocument.cpp:338 src/vocabulary/wordtypeview.cpp:131
+#: src/parleydocument.cpp:508 src/vocabulary/wordtypeview.cpp:131
 #, fuzzy
 #| msgid "Conjugation"
 msgid "Conjunction"
 msgstr "संयोजन"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, licenseComboBox)
-#: src/parleydocument.cpp:351 src/settings/documentproperties.ui:221
+#: src/parleydocument.cpp:521 src/settings/documentproperties.ui:221
 msgid "Public Domain"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
 #. i18n: ectx: property (title), widget (QGroupBox, languageGroupBox)
-#: src/parleydocument.cpp:352 src/settings/documentproperties.ui:167
+#: src/parleydocument.cpp:522 src/settings/documentproperties.ui:167
 #: src/settings/documentproperties.ui:237
 msgid "Languages"
 msgstr "भाषा"
 
-#: src/parleydocument.cpp:360
+#: src/parleydocument.cpp:530
 msgid "A Second Language"
 msgstr "दोस्रो भाषा"
 
-#: src/parleydocument.cpp:363
+#: src/parleydocument.cpp:533
 #, fuzzy
 #| msgid "Lesson %1"
 msgid "Lesson 1"
 msgstr "पाठ %1"
 
-#: src/parleydocument.cpp:402
+#: src/parleydocument.cpp:572 src/parleydocument.cpp:612
 #, fuzzy, kde-format
 #| msgid "Open an example vocabulary document"
 msgid "Could not open vocabulary collection \"%1\""
+msgstr "एउटा उदाहरण शब्दसूची कागजात खोल्नुहोस्"
+
+#: src/parleydocument.cpp:606 src/parleydocument.cpp:619
+#, fuzzy, kde-format
+#| msgid "Open an example vocabulary document"
+msgid "Could not save vocabulary collection \"%1\""
 msgstr "एउटा उदाहरण शब्दसूची कागजात खोल्नुहोस्"
 
 #: src/parleymainwindow.cpp:176
@@ -1815,16 +1854,6 @@ msgstr ""
 #| msgid "A Second Language"
 msgid "Select languages"
 msgstr "दोस्रो भाषा"
-
-#: src/parleymainwindow.cpp:199
-msgid ""
-"Vocabulary is modified.\n"
-"\n"
-"Save file before exit?\n"
-msgstr ""
-"शब्द सूची परिमार्जन गरिएको छ ।\n"
-"\n"
-"अन्त्य गर्नु अघि फाइल बचत गर्नुहुन्छ ?\n"
 
 #. i18n: ectx: Menu (help)
 #: src/parleyui.rc:19
@@ -3602,32 +3631,32 @@ msgstr ""
 msgid "Alt+0"
 msgstr "Alt+7"
 
-#: src/statistics/lessonstatistics.cpp:141
+#: src/statistics/lessonstatistics.cpp:159
 msgctxt "adjective, The word has been properly and fully learned by the user"
 msgid "Fully learned"
 msgstr ""
 
-#: src/statistics/lessonstatistics.cpp:142
+#: src/statistics/lessonstatistics.cpp:160
 #, fuzzy
 #| msgid "Not &practiced:"
 msgctxt "adjective, The word has not even been practiced once by the user"
 msgid "Not practiced"
 msgstr "अभ्यास गरिएको छैन:"
 
-#: src/statistics/lessonstatistics.cpp:182
-#: src/statistics/lessonstatistics.cpp:184
+#: src/statistics/lessonstatistics.cpp:200
+#: src/statistics/lessonstatistics.cpp:202
 #, fuzzy
 #| msgid "Remove all lessons from the test."
 msgid "Remove confidence levels from this unit"
 msgstr "परीक्षणबाट सबै पाठहरू हटाउनुहोस् ।"
 
-#: src/statistics/lessonstatistics.cpp:192
+#: src/statistics/lessonstatistics.cpp:210
 #, fuzzy
 #| msgid "Remove all lessons from the test."
 msgid "Remove confidence levels from this unit and all sub-units"
 msgstr "परीक्षणबाट सबै पाठहरू हटाउनुहोस् ।"
 
-#: src/statistics/lessonstatistics.cpp:194
+#: src/statistics/lessonstatistics.cpp:212
 #, fuzzy
 #| msgid "Remove all lessons from the test."
 msgid "Remove confidence level from this unit and all sub-units"
