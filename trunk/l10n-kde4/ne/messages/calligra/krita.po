@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 01:42+0000\n"
+"POT-Creation-Date: 2014-07-02 01:43+0000\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -127,7 +127,7 @@ msgstr "रङ"
 msgid "&Restart Krita"
 msgstr ""
 
-#: gemini/desktopviewproxy.cpp:124 gemini/MainWindow.cpp:534
+#: gemini/desktopviewproxy.cpp:124 gemini/MainWindow.cpp:545
 msgid "Open Document"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr "सेटिङ"
 msgid "Brushes and Stuff"
 msgstr "ब्रुस र स्टफ"
 
-#: gemini/main.cpp:70 gemini/MainWindow.cpp:245 gemini/MainWindow.cpp:287
+#: gemini/main.cpp:70 gemini/MainWindow.cpp:251 gemini/MainWindow.cpp:293
 #, fuzzy
 #| msgid "Krita"
 msgid "Krita Gemini"
@@ -251,14 +251,18 @@ msgstr ""
 msgid "Use full-screen display"
 msgstr "दवाब प्रभाव:"
 
-#: gemini/MainWindow.cpp:286 gemini/MainWindow.cpp:625
+#: gemini/main.cpp:85
+msgid "Start with the Sketch interface"
+msgstr ""
+
+#: gemini/MainWindow.cpp:292 gemini/MainWindow.cpp:636
 #: sketch/MainWindow.cpp:150
 #, fuzzy
 #| msgid "untitled-1"
 msgid "Untitled"
 msgstr "शीर्षक विहिन-१"
 
-#: gemini/MainWindow.cpp:628
+#: gemini/MainWindow.cpp:639
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -8219,7 +8223,6 @@ msgstr "अनियमित होहल्ला..."
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
-#: plugins/tools/defaulttools/kis_tool_line.cc:72
 msgid "Rotation"
 msgstr "परिक्रमण"
 
@@ -8925,7 +8928,6 @@ msgstr "बढोत्तरित"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
-#: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "दबाब"
 
@@ -11088,32 +11090,20 @@ msgstr "एन्टि-एलाइज थ्रेसहोल्ड:"
 msgid "Draw a gradient."
 msgstr "ग्रेडियन्ट कोर्नुहोस्"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:71
-#, fuzzy
-#| msgid "X-Tilt"
-msgid "Tilt"
-msgstr "X टिल्ट"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:73
-#, fuzzy
-#| msgid "Pressure"
-msgid "Tangential Pressure"
-msgstr "दबाब"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:74
-#, fuzzy
-#| msgid "options"
-msgid "Varying End-Points"
-msgstr "विकल्प"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:186
+#: plugins/tools/defaulttools/kis_tool_line.cc:54
 #, fuzzy
 #| msgid "Dashed Lines"
 msgctxt "(qtundo-format)"
 msgid "Draw Line"
 msgstr "ड्यास दिइएको रेखा"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:259
+#: plugins/tools/defaulttools/kis_tool_line.cc:79
+#, fuzzy
+#| msgid "Color"
+msgid "Use sensors"
+msgstr "रङ"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:240
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -11121,7 +11111,7 @@ msgstr ""
 "Alt+तान्नुहोस् ले रेखा वरिपरि हाल देखिएको मौलिकलाई सार्दछ, Shift+तान्नुहोस् ले तपाईँलाई "
 "सीधा रेखा कोर्न बल गर्दछ ।"
 
-#: plugins/tools/defaulttools/kis_tool_line.h:85
+#: plugins/tools/defaulttools/kis_tool_line.h:93
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgid "Line Tool"
@@ -13790,7 +13780,7 @@ msgid "Edit Mouse Wheel Input"
 msgstr ""
 
 #: ui/input/kis_abstract_input_action.cpp:44
-#: ui/input/kis_tool_invocation_action.cpp:49
+#: ui/input/kis_tool_invocation_action.cpp:50
 #, fuzzy
 #| msgid "Active Layer"
 msgid "Activate"
@@ -14150,27 +14140,33 @@ msgstr "रङदानी"
 msgid "The <i>Show Popup Palette</i> displays the popup palette."
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:45
+#: ui/input/kis_tool_invocation_action.cpp:46
 #, fuzzy
 #| msgid "Configuration"
 msgid "Tool Invocation"
 msgstr "कन्फिगरेसन"
 
-#: ui/input/kis_tool_invocation_action.cpp:46
+#: ui/input/kis_tool_invocation_action.cpp:47
 msgid ""
 "The <i>Tool Invocation</i> action invokes the current tool, for example, "
 "using the brush tool, it will start painting."
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:50
+#: ui/input/kis_tool_invocation_action.cpp:51
 #, fuzzy
 #| msgid "Confetti"
 msgid "Confirm"
 msgstr "कन्फेटी"
 
-#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:570
+#: ui/input/kis_tool_invocation_action.cpp:52 ui/kis_view2.cpp:570
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
+
+#: ui/input/kis_tool_invocation_action.cpp:53
+#, fuzzy
+#| msgid "Active Layer"
+msgid "Activate Line Tool"
+msgstr "सक्रिय तह"
 
 #: ui/input/kis_zoom_action.cpp:112
 #, fuzzy
@@ -15966,6 +15962,21 @@ msgstr ""
 #| msgid "Colors"
 msgid "&Close"
 msgstr "रङ"
+
+#, fuzzy
+#~| msgid "X-Tilt"
+#~ msgid "Tilt"
+#~ msgstr "X टिल्ट"
+
+#, fuzzy
+#~| msgid "Pressure"
+#~ msgid "Tangential Pressure"
+#~ msgstr "दबाब"
+
+#, fuzzy
+#~| msgid "options"
+#~ msgid "Varying End-Points"
+#~ msgstr "विकल्प"
 
 #, fuzzy
 #~| msgid "Gradient"
