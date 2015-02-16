@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-15 09:05+0000\n"
+"POT-Creation-Date: 2015-02-16 09:01+0000\n"
 "PO-Revision-Date: 2007-09-07 10:35+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -615,6 +615,7 @@ msgstr "चयन गरिएका सम्पर्क"
 
 #: merge/manualmerge/mergecontactsdialog.cpp:54
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:74
+#: merge/widgets/noenoughcontactselectedwidget.cpp:27
 #, fuzzy
 #| msgid "You have to assign at least one column."
 msgid "You must select at least two elements."
@@ -625,13 +626,13 @@ msgstr "तपाईँले कम्तिमा एउटा स्तम्
 msgid "You selected %1 and some item has not the same name"
 msgstr ""
 
-#: merge/manualmerge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:101
 #, fuzzy
 #| msgid "Importing contacts"
 msgid "Error while merging contacts."
 msgstr "सम्पर्क आयात गर्दैछ"
 
-#: merge/manualmerge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:101
 #, fuzzy
 #| msgid "&Merge Contacts"
 msgid "Merge contact"
@@ -665,17 +666,18 @@ msgstr ""
 msgid "Merged Contact"
 msgstr "सम्पर्क गाभ्नुहोस्"
 
-#: merge/searchduplicate/resultduplicatetreewidget.cpp:28
-#, fuzzy
-#| msgid "Contains"
-msgid "Contacts"
-msgstr "समावेश गर्दछ"
-
+#: merge/searchduplicate/mergecontactselectinformationtabwidget.cpp:62
 #: merge/searchduplicate/resultduplicatetreewidget.cpp:52
 #, fuzzy, kde-format
 #| msgid "&Selected contacts"
 msgid "Duplicate contact %1"
 msgstr "चयन गरिएका सम्पर्क"
+
+#: merge/searchduplicate/resultduplicatetreewidget.cpp:28
+#, fuzzy
+#| msgid "Contains"
+msgid "Contacts"
+msgstr "समावेश गर्दछ"
 
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:56
 #, fuzzy
@@ -696,10 +698,27 @@ msgid "Select AddressBook:"
 msgstr "ठेगाना पुस्तिका"
 
 #: merge/searchduplicate/searchduplicateresultwidget.cpp:80
+#: merge/widgets/mergecontactselectinformationscrollarea.cpp:52
 #, fuzzy
 #| msgid "Merge"
 msgid "Merge"
 msgstr "गाभ्नुहोस्"
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:31
+msgid ""
+"Some information can be lost. Do you want to continue or customize what do "
+"you want to merge ?"
+msgstr ""
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:33
+#, fuzzy
+#| msgid "Customer"
+msgid "Customize"
+msgstr "ग्राहक"
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:38
+msgid "Automatic Merging"
+msgstr ""
 
 #: modelcolumnmanager.cpp:78
 msgid "Full Name"
@@ -4014,12 +4033,6 @@ msgstr ""
 #~ msgctxt "@item Contact category"
 #~ msgid "School"
 #~ msgstr "विद्यालय"
-
-#, fuzzy
-#~| msgid "Customer"
-#~ msgctxt "@item Contact category"
-#~ msgid "Customer"
-#~ msgstr "ग्राहक"
 
 #, fuzzy
 #~| msgid "Friend"
