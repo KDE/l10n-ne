@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-12 08:28+0000\n"
+"POT-Creation-Date: 2015-10-13 10:20+0000\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -873,7 +873,7 @@ msgid "Edit Attachment"
 msgstr "सङ्लग्नता"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:92
-#: viewer/objecttreeparser.cpp:1924
+#: viewer/objecttreeparser.cpp:1589
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -888,12 +888,12 @@ msgstr ""
 #: job/attachmentencryptwithchiasmusjob.cpp:140
 #: job/attachmentencryptwithchiasmusjob.cpp:153
 #: job/attachmentencryptwithchiasmusjob.cpp:196
-#: viewer/objecttreeparser.cpp:1930
+#: viewer/objecttreeparser.cpp:1595
 msgid "Chiasmus Backend Error"
 msgstr "व्यतिक्रम ब्याकइन्ड त्रुटि"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:107
-#: viewer/objecttreeparser.cpp:1936
+#: viewer/objecttreeparser.cpp:1601
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -902,7 +902,7 @@ msgstr ""
 "फर्काएन । कृपया यो बग प्रतिवेदन गर्नुहोस् ।"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:117
-#: viewer/objecttreeparser.cpp:1944
+#: viewer/objecttreeparser.cpp:1609
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -910,12 +910,12 @@ msgstr ""
 "कुञ्जी फेला परेको छैन । कृपया व्यतिक्रम कन्फिगरेसनमा वैध कुञ्जी बाटो सेट भएको जाँच गर्नुहोस् ।"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:125
-#: viewer/objecttreeparser.cpp:1950
+#: viewer/objecttreeparser.cpp:1615
 msgid "Chiasmus Decryption Key Selection"
 msgstr "गुप्तिकरण व्यतिक्रम कुञ्जी चयन"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:138
-#: viewer/objecttreeparser.cpp:1963
+#: viewer/objecttreeparser.cpp:1628
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
@@ -923,7 +923,7 @@ msgstr ""
 "व्यतिक्रम ब्याकइन्डले \"x-decrypt\" प्रकार्य प्रस्ताव गर्दैन । कृपया बग प्रतिवेदन गर्नुहोस् ।"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:151
-#: viewer/objecttreeparser.cpp:1971
+#: viewer/objecttreeparser.cpp:1636
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
@@ -933,12 +933,12 @@ msgstr ""
 
 #: job/attachmentencryptwithchiasmusjob.cpp:159
 #: job/attachmentencryptwithchiasmusjob.cpp:187
-#: viewer/objecttreeparser.cpp:1977
+#: viewer/objecttreeparser.cpp:1642
 msgid "Chiasmus Decryption Error"
 msgstr "ब्यतिक्रम गुप्तिकरण उल्टाउने त्रुटि"
 
 #: job/attachmentencryptwithchiasmusjob.cpp:193
-#: viewer/objecttreeparser.cpp:1983
+#: viewer/objecttreeparser.cpp:1648
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -1771,6 +1771,38 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "सङ्लग्नताको नाम:"
 
+#: viewer/messagepart.cpp:133 viewer/objecttreeparser.cpp:2479
+msgid "Wrong Crypto Plug-In."
+msgstr "गलत क्राइप्टो प्लगइन ।"
+
+#: viewer/messagepart.cpp:288
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "This message is encrypted."
+msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
+
+#: viewer/messagepart.cpp:293
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
+
+#: viewer/messagepart.cpp:329
+msgid "The crypto engine returned no cleartext data."
+msgstr "क्राइप्टो इञ्जिनले क्लेयरटेक्स्ट नभएको डेटा फिर्ता गर्यो ।"
+
+#: viewer/messagepart.cpp:332 viewer/objecttreeparser.cpp:2278
+#: viewer/objecttreeparser.cpp:2320
+msgid "Status: "
+msgstr "वस्तुस्थिति: "
+
+#: viewer/messagepart.cpp:338
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(अज्ञात)"
+
 #: viewer/mimeparttree/mimetreemodel.cpp:59
 msgid "body part"
 msgstr "मुख्य भाग"
@@ -1783,154 +1815,104 @@ msgstr "वर्णन"
 msgid "Size"
 msgstr "साइज"
 
-#: viewer/objecttreeparser.cpp:642 viewer/objecttreeparser.cpp:2812
-msgid "Wrong Crypto Plug-In."
-msgstr "गलत क्राइप्टो प्लगइन ।"
-
-#: viewer/objecttreeparser.cpp:684
-msgid "The crypto engine returned no cleartext data."
-msgstr "क्राइप्टो इञ्जिनले क्लेयरटेक्स्ट नभएको डेटा फिर्ता गर्यो ।"
-
-#: viewer/objecttreeparser.cpp:687 viewer/objecttreeparser.cpp:2613
-#: viewer/objecttreeparser.cpp:2655
-msgid "Status: "
-msgstr "वस्तुस्थिति: "
-
-#: viewer/objecttreeparser.cpp:693
-#, fuzzy
-#| msgid "(unknown)"
-msgctxt "Status of message unknown."
-msgid "(unknown)"
-msgstr "(अज्ञात)"
-
-#: viewer/objecttreeparser.cpp:705 viewer/objecttreeparser.cpp:986
-#, kde-format
-msgid "Crypto plug-in \"%1\" is not initialized."
-msgstr "गुप्त प्लग-इन \"%1\" सुरुआत गरिएको छैन ।"
-
-#: viewer/objecttreeparser.cpp:709
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot verify signatures."
-msgstr "गुप्त प्लग-इन \"%1\" ले हस्ताक्षर रुजु गर्न सकिँदैन ।"
-
-#: viewer/objecttreeparser.cpp:714 viewer/objecttreeparser.cpp:994
-msgid "No appropriate crypto plug-in was found."
-msgstr "उचित गुप्त प्लगइन फेला परेको छैन ।"
-
-#: viewer/objecttreeparser.cpp:717
-#, kde-format
-msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-msgid "No %1 plug-in was found."
-msgstr "%1 प्लग-इन फेला परेको छैन ।"
-
-#: viewer/objecttreeparser.cpp:721
-#, kde-format
-msgid ""
-"The message is signed, but the validity of the signature cannot be verified."
-"<br />Reason: %1"
-msgstr "सन्देशमा चिन्ह लगाइएको छ, तर हस्ताक्षरको वैधता रुजु गर्न सकिँदैन ।<br />कारण: %1"
-
-#: viewer/objecttreeparser.cpp:755
-#, fuzzy
-#| msgid "Store sent messages encry&pted"
-msgid "This message is encrypted."
-msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
-
-#: viewer/objecttreeparser.cpp:760
-#, fuzzy
-#| msgid "&Encrypt Message"
-msgid "Decrypt Message"
-msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
-
-#: viewer/objecttreeparser.cpp:799
+#: viewer/objecttreeparser.cpp:630
 #, fuzzy, kde-format
 #| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
 msgid "Sorry, certificate could not be imported.<br />Reason: %1"
 msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयात गर्न सकिने छैन ।<br>कारण: %1"
 
-#: viewer/objecttreeparser.cpp:809
+#: viewer/objecttreeparser.cpp:640
 msgid "Sorry, no certificates were found in this message."
 msgstr "माफ गर्नुहोस्, यो सन्देशमा प्रमाणपत्र फेला परेका छैनन् ।"
 
-#: viewer/objecttreeparser.cpp:812
+#: viewer/objecttreeparser.cpp:643
 msgid "Certificate import status:"
 msgstr "प्रमाणपत्र आयात स्थिति:"
 
-#: viewer/objecttreeparser.cpp:814
+#: viewer/objecttreeparser.cpp:645
 #, fuzzy, kde-format
 msgid "1 new certificate was imported."
 msgid_plural "%1 new certificates were imported."
 msgstr[0] "१ नयाँ प्रमाणपत्र आयात गरिएको थियो ।"
 msgstr[1] "%1 नयाँ प्रमाणपत्र आयात गरिएका थिए ।"
 
-#: viewer/objecttreeparser.cpp:817
+#: viewer/objecttreeparser.cpp:648
 #, fuzzy, kde-format
 msgid "1 certificate was unchanged."
 msgid_plural "%1 certificates were unchanged."
 msgstr[0] "१ प्रमाणपत्र अपरिवर्तित थिए ।"
 msgstr[1] "%1 प्रमाणपत्र अपरिवर्तित थिए ।"
 
-#: viewer/objecttreeparser.cpp:820
+#: viewer/objecttreeparser.cpp:651
 #, fuzzy, kde-format
 msgid "1 new secret key was imported."
 msgid_plural "%1 new secret keys were imported."
 msgstr[0] "१ नयाँ गोप्य कुञ्जी आयात गरिएको थियो ।"
 msgstr[1] "%1 नयाँ गोप्य कुञ्जी आयात गरिएका थिए ।"
 
-#: viewer/objecttreeparser.cpp:823
+#: viewer/objecttreeparser.cpp:654
 #, fuzzy, kde-format
 msgid "1 secret key was unchanged."
 msgid_plural "%1 secret keys were unchanged."
 msgstr[0] "१ गोप्य कुञ्जी अपरिवर्तित थियो ।"
 msgstr[1] "%1 गोप्य कुञ्जी अपरिवर्तित थिए ।"
 
-#: viewer/objecttreeparser.cpp:833
+#: viewer/objecttreeparser.cpp:664
 msgid "Sorry, no details on certificate import available."
 msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयातमा विस्तृत विवरण उपलब्ध छैन ।"
 
-#: viewer/objecttreeparser.cpp:836
+#: viewer/objecttreeparser.cpp:667
 msgid "Certificate import details:"
 msgstr "प्रमाणपत्र आयात विस्तृत विवरण:"
 
-#: viewer/objecttreeparser.cpp:840
+#: viewer/objecttreeparser.cpp:671
 #, fuzzy, kde-format
 #| msgid "Failed: %1 (%2)"
 msgctxt "Certificate import failed."
 msgid "Failed: %1 (%2)"
 msgstr "असफल: %1 (%2)"
 
-#: viewer/objecttreeparser.cpp:844
+#: viewer/objecttreeparser.cpp:675
 #, kde-format
 msgid "New or changed: %1 (secret key available)"
 msgstr "नयाँ वा परिवर्तित: %1 (गोप्य कुञ्जी उपलब्ध)"
 
-#: viewer/objecttreeparser.cpp:846
+#: viewer/objecttreeparser.cpp:677
 #, kde-format
 msgid "New or changed: %1"
 msgstr "नयाँ वा परिवर्तित: %1"
 
-#: viewer/objecttreeparser.cpp:883
+#: viewer/objecttreeparser.cpp:714
 #, fuzzy
 #| msgid "Crypto plug-in \"%1\" could not decrypt the data."
 msgid "Could not decrypt the data."
 msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
 
-#: viewer/objecttreeparser.cpp:973
+#: viewer/objecttreeparser.cpp:804
 #, kde-format
 msgid "Crypto plug-in \"%1\" could not decrypt the data."
 msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
 
-#: viewer/objecttreeparser.cpp:975
+#: viewer/objecttreeparser.cpp:806
 #, kde-format
 msgid "Error: %1"
 msgstr "त्रुटि: %1"
 
-#: viewer/objecttreeparser.cpp:990
+#: viewer/objecttreeparser.cpp:817 viewer/objecttreeparser.cpp:2550
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "गुप्त प्लग-इन \"%1\" सुरुआत गरिएको छैन ।"
+
+#: viewer/objecttreeparser.cpp:821
 #, kde-format
 msgid "Crypto plug-in \"%1\" cannot decrypt messages."
 msgstr "गुप्त प्लग-इन \"%1\" ले सन्देश गुप्तिकरणबाट उल्टउन सक्दैन ।"
 
-#: viewer/objecttreeparser.cpp:1088
+#: viewer/objecttreeparser.cpp:825 viewer/objecttreeparser.cpp:2559
+msgid "No appropriate crypto plug-in was found."
+msgstr "उचित गुप्त प्लगइन फेला परेको छैन ।"
+
+#: viewer/objecttreeparser.cpp:919
 msgid ""
 "<b>Note:</b> This HTML message may contain external references to images "
 "etc. For security/privacy reasons external references are not loaded. If you "
@@ -1942,7 +1924,7 @@ msgstr ""
 "भएमा यो सन्देशका लागि बाह्य सन्दर्भ लोड गर्न <a href=\"kmail:loadExternal\">यहाँ "
 "क्लिक गरेर</a> लोड गर्न सक्नुहुन्छ ।"
 
-#: viewer/objecttreeparser.cpp:1102
+#: viewer/objecttreeparser.cpp:933
 msgid ""
 "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
 "HTML code is shown. If you trust the sender of this message then you can "
@@ -1953,7 +1935,7 @@ msgstr ""
 "। तपाईँलाई यो सन्देशको प्रेषकमा विश्वास भएमा यो सन्देशका लागि ढाँचावद्ध गरिएको HTML "
 "प्रदर्शन <a href=\"kmail:showHTML\">यहाँ क्लिक गरेर </a> सक्रिय पार्न सक्नुहुन्छ ।"
 
-#: viewer/objecttreeparser.cpp:2054
+#: viewer/objecttreeparser.cpp:1719
 #, fuzzy
 #| msgctxt "Missing profile name placeholder"
 #| msgid "Unnamed"
@@ -1961,118 +1943,118 @@ msgctxt "display name for an unnamed attachment"
 msgid "Unnamed"
 msgstr "बेनामी"
 
-#: viewer/objecttreeparser.cpp:2110
+#: viewer/objecttreeparser.cpp:1775
 msgid "Error: Signature not verified"
 msgstr "त्रुटि: हस्ताक्षर रुजु गरिएको छैन"
 
-#: viewer/objecttreeparser.cpp:2113
+#: viewer/objecttreeparser.cpp:1778
 msgid "Good signature"
 msgstr "ठीक हस्ताक्षर"
 
-#: viewer/objecttreeparser.cpp:2116
+#: viewer/objecttreeparser.cpp:1781
 msgid "<b>Bad</b> signature"
 msgstr "<b>गलत</b> हस्ताक्षर"
 
-#: viewer/objecttreeparser.cpp:2119
+#: viewer/objecttreeparser.cpp:1784
 msgid "No public key to verify the signature"
 msgstr "हस्ताक्षर रुजु गर्न सार्वजनिक कुञ्जी छैन"
 
-#: viewer/objecttreeparser.cpp:2122
+#: viewer/objecttreeparser.cpp:1787
 msgid "No signature found"
 msgstr "हस्ताक्षर फेला परेन"
 
-#: viewer/objecttreeparser.cpp:2125
+#: viewer/objecttreeparser.cpp:1790
 msgid "Error verifying the signature"
 msgstr "हस्ताक्षर रुजु गर्दा त्रुटि"
 
-#: viewer/objecttreeparser.cpp:2128
+#: viewer/objecttreeparser.cpp:1793
 msgid "Different results for signatures"
 msgstr "हस्ताक्षरको फरक परिणाम"
 
-#: viewer/objecttreeparser.cpp:2147
+#: viewer/objecttreeparser.cpp:1812
 msgid "No status information available."
 msgstr "स्थिति सूचना उपलब्ध छैन ।"
 
-#: viewer/objecttreeparser.cpp:2154 viewer/objecttreeparser.cpp:2240
+#: viewer/objecttreeparser.cpp:1819 viewer/objecttreeparser.cpp:1905
 msgid "Good signature."
 msgstr "ठीक हस्ताक्षर ।"
 
-#: viewer/objecttreeparser.cpp:2175
+#: viewer/objecttreeparser.cpp:1840
 msgid "One key has expired."
 msgstr "एउटा कुञ्जीको म्याद समाप्त भएको छ ।"
 
-#: viewer/objecttreeparser.cpp:2179
+#: viewer/objecttreeparser.cpp:1844
 msgid "The signature has expired."
 msgstr "हस्ताक्षरको म्याद समाप्त भएको छ ।"
 
-#: viewer/objecttreeparser.cpp:2184
+#: viewer/objecttreeparser.cpp:1849
 msgid "Unable to verify: key missing."
 msgstr "रुजू गर्न असमर्थ: कुञ्जी हरायो ।"
 
-#: viewer/objecttreeparser.cpp:2191
+#: viewer/objecttreeparser.cpp:1856
 msgid "CRL not available."
 msgstr "CRL उपलब्ध छैन ।"
 
-#: viewer/objecttreeparser.cpp:2195
+#: viewer/objecttreeparser.cpp:1860
 msgid "Available CRL is too old."
 msgstr "उपलब्ध CRL धेरै पुनानो छ ।"
 
-#: viewer/objecttreeparser.cpp:2199
+#: viewer/objecttreeparser.cpp:1864
 msgid "A policy was not met."
 msgstr "नीति मिलेको छैन ।"
 
-#: viewer/objecttreeparser.cpp:2203
+#: viewer/objecttreeparser.cpp:1868
 msgid "A system error occurred."
 msgstr "एउट प्रणाली त्रुटि उत्पन्न भयो ।"
 
-#: viewer/objecttreeparser.cpp:2214
+#: viewer/objecttreeparser.cpp:1879
 msgid "One key has been revoked."
 msgstr "एउटा कुञ्जी खारेज गरिएको छ ।"
 
-#: viewer/objecttreeparser.cpp:2242
+#: viewer/objecttreeparser.cpp:1907
 msgid "<b>Bad</b> signature."
 msgstr "<b>गलत</b> हस्ताक्षर ।"
 
-#: viewer/objecttreeparser.cpp:2270
+#: viewer/objecttreeparser.cpp:1935
 #, fuzzy
 #| msgid "&Enable signature"
 msgid "Invalid signature."
 msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
 
-#: viewer/objecttreeparser.cpp:2273
+#: viewer/objecttreeparser.cpp:1938
 #, fuzzy
 #| msgid "Not enough information to check signature. %1"
 msgid "Not enough information to check signature validity."
 msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
 
-#: viewer/objecttreeparser.cpp:2287
+#: viewer/objecttreeparser.cpp:1952
 #, fuzzy
 #| msgid "Signatures"
 msgid "Signature is valid."
 msgstr "हस्ताक्षर"
 
-#: viewer/objecttreeparser.cpp:2289
+#: viewer/objecttreeparser.cpp:1954
 #, kde-format
 msgid "Signed by <a href=\"mailto:%1\">%2</a>."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2294
+#: viewer/objecttreeparser.cpp:1959
 msgid "Unknown signature state"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2300
+#: viewer/objecttreeparser.cpp:1965
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show Details"
 msgstr "सधैँँ देखाउनुहोस्"
 
-#: viewer/objecttreeparser.cpp:2323
+#: viewer/objecttreeparser.cpp:1988
 #, fuzzy
 #| msgid "Not available"
 msgid "No Audit Log available"
 msgstr "उपलब्ध छैन"
 
-#: viewer/objecttreeparser.cpp:2325
+#: viewer/objecttreeparser.cpp:1990
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error retrieving quota information from server\n"
@@ -2082,71 +2064,71 @@ msgstr ""
 "सर्भरबाट कोटा जानकारी पुन: प्राप्त गर्दा त्रुटि\n"
 "%1"
 
-#: viewer/objecttreeparser.cpp:2336
+#: viewer/objecttreeparser.cpp:2001
 msgctxt "The Audit Log is a detailed error log from the gnupg backend"
 msgid "Show Audit Log"
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2347
+#: viewer/objecttreeparser.cpp:2012
 #, fuzzy
 #| msgid "Logging Details"
 msgid "Hide Details"
 msgstr "लगिङ विवरण"
 
-#: viewer/objecttreeparser.cpp:2372 viewer/objecttreeparser.cpp:2374
+#: viewer/objecttreeparser.cpp:2037 viewer/objecttreeparser.cpp:2039
 msgid "Encapsulated message"
 msgstr "इनक्याप्सुलेट गरिएको सन्देश"
 
-#: viewer/objecttreeparser.cpp:2383
+#: viewer/objecttreeparser.cpp:2048
 #, fuzzy
 msgid "Please wait while the message is being decrypted..."
 msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
 
-#: viewer/objecttreeparser.cpp:2385
+#: viewer/objecttreeparser.cpp:2050
 msgid "Encrypted message"
 msgstr "गुप्तिकृत सन्देश"
 
-#: viewer/objecttreeparser.cpp:2387
+#: viewer/objecttreeparser.cpp:2052
 msgid "Encrypted message (decryption not possible)"
 msgstr "गुप्तिकृत सन्देश (गुप्तिकरण उल्टाउन सम्भव छैन)"
 
-#: viewer/objecttreeparser.cpp:2389
+#: viewer/objecttreeparser.cpp:2054
 #, kde-format
 msgid "Reason: %1"
 msgstr "कारण: %1"
 
-#: viewer/objecttreeparser.cpp:2399
+#: viewer/objecttreeparser.cpp:2064
 #, fuzzy
 msgid "Please wait while the signature is being verified..."
 msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
 
-#: viewer/objecttreeparser.cpp:2496 viewer/objecttreeparser.cpp:2498
+#: viewer/objecttreeparser.cpp:2161 viewer/objecttreeparser.cpp:2163
 #, fuzzy
 #| msgid "Certificates"
 msgid "certificate"
 msgstr "प्रमाणपत्र"
 
-#: viewer/objecttreeparser.cpp:2505 viewer/objecttreeparser.cpp:2531
+#: viewer/objecttreeparser.cpp:2170 viewer/objecttreeparser.cpp:2196
 #, fuzzy
 #| msgid "Warning:"
 msgctxt "Start of warning message."
 msgid "Warning:"
 msgstr "चेतावनी:"
 
-#: viewer/objecttreeparser.cpp:2507
+#: viewer/objecttreeparser.cpp:2172
 #, kde-format
 msgid "Sender's mail address is not stored in the %1 used for signing."
 msgstr "साइनिङका लागि प्रयोग गरिएको प्रेषकको मेल ठेगाना %1 मा भण्डारण गरिएको छैन ।"
 
-#: viewer/objecttreeparser.cpp:2510
+#: viewer/objecttreeparser.cpp:2175
 msgid "sender: "
 msgstr "प्रेषक: "
 
-#: viewer/objecttreeparser.cpp:2513
+#: viewer/objecttreeparser.cpp:2178
 msgid "stored: "
 msgstr "भण्डारण गरिएको: "
 
-#: viewer/objecttreeparser.cpp:2533
+#: viewer/objecttreeparser.cpp:2198
 #, kde-format
 msgid ""
 "No mail address is stored in the %1 used for signing, so we cannot compare "
@@ -2155,96 +2137,114 @@ msgstr ""
 "साइनिङका लागि प्रयोग गरिएको इमेल ठेगाना %1 मा भण्डारण गरिएको छैन, त्यसैले यसलाई "
 "हामीले प्रेषकको ठेगाना %2 सँग तुलना गर्न सक्दैनौ ।"
 
-#: viewer/objecttreeparser.cpp:2557
+#: viewer/objecttreeparser.cpp:2222
 #, kde-format
 msgid "Not enough information to check signature. %1"
 msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
 
-#: viewer/objecttreeparser.cpp:2574 viewer/objecttreeparser.cpp:2648
+#: viewer/objecttreeparser.cpp:2239 viewer/objecttreeparser.cpp:2313
 msgid "Message was signed with unknown key."
 msgstr "अज्ञात कुञ्जीद्वारा सन्देश चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2576 viewer/objecttreeparser.cpp:2686
-#: viewer/objecttreeparser.cpp:2728
+#: viewer/objecttreeparser.cpp:2241 viewer/objecttreeparser.cpp:2351
+#: viewer/objecttreeparser.cpp:2393
 #, kde-format
 msgid "Message was signed by %1."
 msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2583 viewer/objecttreeparser.cpp:2591
-#: viewer/objecttreeparser.cpp:2601
+#: viewer/objecttreeparser.cpp:2248 viewer/objecttreeparser.cpp:2256
+#: viewer/objecttreeparser.cpp:2266
 #, kde-format
 msgid "Message was signed with key %1."
 msgstr "सन्देश कुञ्जी %1 ले चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2586
+#: viewer/objecttreeparser.cpp:2251
 #, kde-format
 msgid "Message was signed on %1 with key %2."
 msgstr "%1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2594
+#: viewer/objecttreeparser.cpp:2259
 #, kde-format
 msgid "Message was signed by %3 on %1 with key %2"
 msgstr "%3 द्वारा %1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो"
 
-#: viewer/objecttreeparser.cpp:2604
+#: viewer/objecttreeparser.cpp:2269
 #, kde-format
 msgid "Message was signed by %2 with key %1."
 msgstr "%2 द्वारा कुञ्जी %1 ले सन्देशमा चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2641
+#: viewer/objecttreeparser.cpp:2306
 #, kde-format
 msgid "Message was signed on %1 with unknown key %2."
 msgstr "%1 मा अज्ञात कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2645
+#: viewer/objecttreeparser.cpp:2310
 #, kde-format
 msgid "Message was signed with unknown key %1."
 msgstr "अज्ञता कुञ्जी %1 ले सन्देश चिन्ह लगाइएको थियो ।"
 
-#: viewer/objecttreeparser.cpp:2651
+#: viewer/objecttreeparser.cpp:2316
 msgid "The validity of the signature cannot be verified."
 msgstr "हस्ताक्षरको वैधता रुजु गर्न सकिने छैन ।"
 
-#: viewer/objecttreeparser.cpp:2682 viewer/objecttreeparser.cpp:2724
+#: viewer/objecttreeparser.cpp:2347 viewer/objecttreeparser.cpp:2389
 #, kde-format
 msgid "Message was signed by %2 (Key ID: %1)."
 msgstr "सन्देश %2 द्वारा चिन्ह लगाइएको थियो(कुञ्जीआईडी: %1) ।"
 
-#: viewer/objecttreeparser.cpp:2692
+#: viewer/objecttreeparser.cpp:2357
 msgid "The signature is valid, but the key's validity is unknown."
 msgstr "हस्ताक्षर वैध छ, तर कुञ्जीको वैधता अज्ञाता छ ।"
 
-#: viewer/objecttreeparser.cpp:2696
+#: viewer/objecttreeparser.cpp:2361
 msgid "The signature is valid and the key is marginally trusted."
 msgstr "हस्ताक्षर वैध छ र कुञ्जी आंशिक विश्वासिलो छ ।"
 
-#: viewer/objecttreeparser.cpp:2700
+#: viewer/objecttreeparser.cpp:2365
 msgid "The signature is valid and the key is fully trusted."
 msgstr "हस्ताक्षर वैध छ र कुञ्जी पूर्ण विश्वासिलो छ ।"
 
-#: viewer/objecttreeparser.cpp:2704
+#: viewer/objecttreeparser.cpp:2369
 msgid "The signature is valid and the key is ultimately trusted."
 msgstr "हस्ताक्षर वैध छ र कुञ्जी अतिनै विश्वासिलो छ ।"
 
-#: viewer/objecttreeparser.cpp:2708
+#: viewer/objecttreeparser.cpp:2373
 msgid "The signature is valid, but the key is untrusted."
 msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वाशिलो छ ।"
 
-#: viewer/objecttreeparser.cpp:2731
+#: viewer/objecttreeparser.cpp:2396
 msgid "Warning: The signature is bad."
 msgstr "चेतावनी: हस्ताक्षर गलत छ ।"
 
-#: viewer/objecttreeparser.cpp:2756
+#: viewer/objecttreeparser.cpp:2421
 msgid "End of signed message"
 msgstr "चिन्ह लगाएका सन्देशको अन्त्यमा"
 
-#: viewer/objecttreeparser.cpp:2762
+#: viewer/objecttreeparser.cpp:2427
 msgid "End of encrypted message"
 msgstr "गुप्तिकृत सन्देशको अन्त्यमा"
 
-#: viewer/objecttreeparser.cpp:2768
+#: viewer/objecttreeparser.cpp:2433
 msgid "End of encapsulated message"
 msgstr "इन्क्याप्सुलेटेड सन्देशको अन्त्यमा"
+
+#: viewer/objecttreeparser.cpp:2554
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "गुप्त प्लग-इन \"%1\" ले हस्ताक्षर रुजु गर्न सकिँदैन ।"
+
+#: viewer/objecttreeparser.cpp:2562
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "%1 प्लग-इन फेला परेको छैन ।"
+
+#: viewer/objecttreeparser.cpp:2567
+#, kde-format
+msgid ""
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
+msgstr "सन्देशमा चिन्ह लगाइएको छ, तर हस्ताक्षरको वैधता रुजु गर्न सकिँदैन ।<br />कारण: %1"
 
 #: viewer/pluginloaderbase.cpp:90
 #, fuzzy
