@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-10 09:33+0000\n"
+"POT-Creation-Date: 2015-10-15 09:16+0000\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -127,8 +127,8 @@ msgid "Multiple encryption keys per address"
 msgstr "प्रत्येक ठेगानाको बहुविध गुप्तिकरण कुञ्जी"
 
 #: aboutdata.cpp:364 collectionpage/collectionmailinglistpage.cpp:104
-#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmsystemtray.cpp:73
-#: kmsystemtray.cpp:114
+#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmreaderwin.cpp:315
+#: kmsystemtray.cpp:73 kmsystemtray.cpp:114
 msgid "KMail"
 msgstr "केडीई मेल"
 
@@ -3416,12 +3416,12 @@ msgstr "ठेगाना पुस्तकमा थप्नुहोस्"
 msgid "Contact created successfully"
 msgstr "सन्देश सफलतापूर्वक मेटियो ।"
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, kde-format
 msgid "Contact cannot be stored: %1"
 msgstr ""
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, fuzzy
 #| msgid "Name of the attachment:"
 msgid "Failed to store contact"
@@ -4919,108 +4919,57 @@ msgstr "रद्दीटोकरी फोल्डर:"
 msgid "Less GUI freezes, mail checks happen in the background"
 msgstr ""
 
-#: kmreaderwin.cpp:316
-msgid ""
-"<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
-"wait . . .</p>&nbsp;"
-msgstr ""
-"<h2 style='margin-top: 0px;'>फोल्डर सामाग्री पुन: प्राप्ती गर्दैछ</h2><p>कृपया "
-"प्रतिक्षा गर्नुहोस् . . .</p>&nbsp;"
+#: kmreaderwin.cpp:318
+#, fuzzy
+#| msgid "KDE Email Client"
+msgid "The KDE Mail Client"
+msgstr "केडीई इमेल क्लाइन्ट"
 
-#: kmreaderwin.cpp:324
-msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
-"mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
-msgstr ""
-"<h2 style='margin-top: 0px;'>अफलाइन</h2><p>केडीई मेल हाल अफलाइन मोडमा छ । "
-"अनलाइनमा जान <a href=\"kmail:goOnline\">यहाँ</a> क्लिक गर्नुहोस् . . .</p>&nbsp;"
+#: kmreaderwin.cpp:327
+#, fuzzy
+#| msgid "Retrieving folderlist"
+msgid "Retrieving Folder Contents"
+msgstr "फोल्डर सूची पुन: प्राप्ती गर्दैछ"
 
-#: kmreaderwin.cpp:333
+#: kmreaderwin.cpp:328
+#, fuzzy
+#| msgid "Please wait"
+msgid "Please wait . . ."
+msgstr "कृपया प्रतिक्षा गर्नुहोस्"
+
+#: kmreaderwin.cpp:334 kmreaderwin.cpp:343
+#, fuzzy
+#| msgid "Work Offline"
+msgid "Offline"
+msgstr "अफलाइनमा कार्य गर्नुहोस्"
+
+#: kmreaderwin.cpp:335
 #, fuzzy
 #| msgid ""
 #| "<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
 #| "mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</"
 #| "p>&nbsp;"
 msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>Account is currently in offline "
-"mode. Click <a href=\"kmail:goResourceOnline\">here</a> to go online . . .</"
-"p>&nbsp;"
+"KMail is currently in offline mode. Click <a href=\"kmail:goOnline\">here</"
+"a> to go online . . .</p>"
 msgstr ""
 "<h2 style='margin-top: 0px;'>अफलाइन</h2><p>केडीई मेल हाल अफलाइन मोडमा छ । "
 "अनलाइनमा जान <a href=\"kmail:goOnline\">यहाँ</a> क्लिक गर्नुहोस् . . .</p>&nbsp;"
 
-#: kmreaderwin.cpp:347
-#, fuzzy, kde-format
-msgctxt ""
-"%1: KMail version; %2: help:// URL; %3: generated list of new features; %4: "
-"First-time user text (only shown on first start); %5: generated list of "
-"important changes; --- end of comment ---"
+#: kmreaderwin.cpp:344
+#, fuzzy
+#| msgid ""
+#| "<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
+#| "mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</"
+#| "p>&nbsp;"
 msgid ""
-"<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the email "
-"client by KDE. It is designed to be fully compatible with Internet mailing "
-"standards including MIME, SMTP, POP3, and IMAP.</p>\n"
-"<ul><li>KMail has many powerful features which are described in the <a href="
-"\"%2\">documentation</a></li>\n"
-"%5\n"
-"%3\n"
-"%4\n"
-"<p>We hope that you will enjoy KMail.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
+"Account is currently in offline mode. Click <a href=\"kmail:goResourceOnline"
+"\">here</a> to go online . . .</p>"
 msgstr ""
-"<h2 style='margin-top: 0px;'>केडीई मेल %1 मा स्वागत छ</h2><p>केडीई मेल केडीई डेस्कटप "
-"परिवेशका लागि इमेल ग्राहक हो । यो MIME, SMPT, POP3 र IMAP समाविष्ट इन्टरनेट "
-"पत्राचार मानकसँग पुरै मिल्ने गरि डिजाइन गरिनेछ ।</p>\n"
-"<ul><li>केडीई मेलमा धेरै सामर्थ्य भएका <a href=\"%2\">मिशिलिकरण</a>मा ब्याख्या "
-"गरिएका विशेषता छन् </li>\n"
-"<li> <a href=\"%3\">केडीई मेल गृहपृष्ठ</A> ले केडीई मेलको नयाँ संस्करणका बारेमा सूचना "
-"प्रस्तुत गर्छ</li></ul>\n"
-"%8\n"
-"<p>केडीई मेलको यो निस्कासनको केही नयाँ विशेषता (केडीईको %5 भागको, केडीई मेल %4 सँग "
-"तुलना गर्नुहोस्) समावेश छन्:</p>\n"
-"<ul>\n"
-"%6</ul>\n"
-"%7\n"
-"<p>हामी आशा गर्छौ तपाईँले केडीई मेलको उपयोग गर्नुहुनेछ ।</p>\n"
-"<p>धन्यवाद,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; केडीई मेल समूह</p>"
+"<h2 style='margin-top: 0px;'>अफलाइन</h2><p>केडीई मेल हाल अफलाइन मोडमा छ । "
+"अनलाइनमा जान <a href=\"kmail:goOnline\">यहाँ</a> क्लिक गर्नुहोस् . . .</p>&nbsp;"
 
-#: kmreaderwin.cpp:364
-#, fuzzy, kde-format
-msgid ""
-"<p>Some of the new features in this release of KMail include (compared to "
-"KMail %1, which is part of KDE Software Compilation %2):</p>\n"
-msgstr ""
-"<p> केही को नयाँ इन्च निस्काशन को केडीई मेल समावेश गर्नुहोस् लाई केडीई मेल हो भाग को "
-"केडीई</p> n"
-
-#: kmreaderwin.cpp:378
-msgid ""
-"<p>Please take a moment to fill in the KMail configuration panel at Settings-"
-"&gt;Configure KMail.\n"
-"You need to create at least a default identity and an incoming as well as "
-"outgoing mail account.</p>\n"
-msgstr ""
-"<p>कृपया सटिङ-gt मा केडीई मेल कन्फिगरेसन प्यानल भर्न केही समय लिनुहोस्; केडीई मेल कन्फिगर "
-"गर्नुहोस् ।\n"
-"तपाईँले कम्तिमा पूर्वनिर्धारित पहिचान र एउटा आगमन त्यस्तै निर्गमन मेल खाता सिर्जना गर्नु "
-"आवश्यक हुन्छ ।</p>\n"
-
-#: kmreaderwin.cpp:390
-#, kde-format
-msgid ""
-"<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
-"(compared to KMail %1):</p>\n"
-msgstr ""
-"<p><span style='font-size:125%; font-weight:bold;'>महत्वपूर्ण परिवर्तन</span> "
-"(केडीई मेल %1 सँग दाज्नुहोस्):</p>\n"
-
-#: kmreaderwin.cpp:395
-#, kde-format
-msgid "<li>%1</li>\n"
-msgstr "<li>%1</li>\n"
-
-#: kmreaderwin.cpp:836
+#: kmreaderwin.cpp:802
 #, fuzzy
 #| msgid "Messages moved successfully"
 msgid "Contact modified successfully"
@@ -7284,6 +7233,77 @@ msgid_plural "Out of office reply active on servers"
 msgstr[0] "\"अफिस बाहिरको\" जवाफ सम्पादन गर्नुहोस्..."
 msgstr[1] "\"अफिस बाहिरको\" जवाफ सम्पादन गर्नुहोस्..."
 
+#~ msgid ""
+#~ "<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
+#~ "wait . . .</p>&nbsp;"
+#~ msgstr ""
+#~ "<h2 style='margin-top: 0px;'>फोल्डर सामाग्री पुन: प्राप्ती गर्दैछ</h2><p>कृपया "
+#~ "प्रतिक्षा गर्नुहोस् . . .</p>&nbsp;"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "%1: KMail version; %2: help:// URL; %3: generated list of new features; "
+#~ "%4: First-time user text (only shown on first start); %5: generated list "
+#~ "of important changes; --- end of comment ---"
+#~ msgid ""
+#~ "<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the "
+#~ "email client by KDE. It is designed to be fully compatible with Internet "
+#~ "mailing standards including MIME, SMTP, POP3, and IMAP.</p>\n"
+#~ "<ul><li>KMail has many powerful features which are described in the <a "
+#~ "href=\"%2\">documentation</a></li>\n"
+#~ "%5\n"
+#~ "%3\n"
+#~ "%4\n"
+#~ "<p>We hope that you will enjoy KMail.</p>\n"
+#~ "<p>Thank you,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
+#~ msgstr ""
+#~ "<h2 style='margin-top: 0px;'>केडीई मेल %1 मा स्वागत छ</h2><p>केडीई मेल केडीई "
+#~ "डेस्कटप परिवेशका लागि इमेल ग्राहक हो । यो MIME, SMPT, POP3 र IMAP समाविष्ट "
+#~ "इन्टरनेट पत्राचार मानकसँग पुरै मिल्ने गरि डिजाइन गरिनेछ ।</p>\n"
+#~ "<ul><li>केडीई मेलमा धेरै सामर्थ्य भएका <a href=\"%2\">मिशिलिकरण</a>मा ब्याख्या "
+#~ "गरिएका विशेषता छन् </li>\n"
+#~ "<li> <a href=\"%3\">केडीई मेल गृहपृष्ठ</A> ले केडीई मेलको नयाँ संस्करणका बारेमा सूचना "
+#~ "प्रस्तुत गर्छ</li></ul>\n"
+#~ "%8\n"
+#~ "<p>केडीई मेलको यो निस्कासनको केही नयाँ विशेषता (केडीईको %5 भागको, केडीई मेल %4 सँग "
+#~ "तुलना गर्नुहोस्) समावेश छन्:</p>\n"
+#~ "<ul>\n"
+#~ "%6</ul>\n"
+#~ "%7\n"
+#~ "<p>हामी आशा गर्छौ तपाईँले केडीई मेलको उपयोग गर्नुहुनेछ ।</p>\n"
+#~ "<p>धन्यवाद,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; केडीई मेल समूह</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Some of the new features in this release of KMail include (compared to "
+#~ "KMail %1, which is part of KDE Software Compilation %2):</p>\n"
+#~ msgstr ""
+#~ "<p> केही को नयाँ इन्च निस्काशन को केडीई मेल समावेश गर्नुहोस् लाई केडीई मेल हो भाग को "
+#~ "केडीई</p> n"
+
+#~ msgid ""
+#~ "<p>Please take a moment to fill in the KMail configuration panel at "
+#~ "Settings-&gt;Configure KMail.\n"
+#~ "You need to create at least a default identity and an incoming as well as "
+#~ "outgoing mail account.</p>\n"
+#~ msgstr ""
+#~ "<p>कृपया सटिङ-gt मा केडीई मेल कन्फिगरेसन प्यानल भर्न केही समय लिनुहोस्; केडीई मेल "
+#~ "कन्फिगर गर्नुहोस् ।\n"
+#~ "तपाईँले कम्तिमा पूर्वनिर्धारित पहिचान र एउटा आगमन त्यस्तै निर्गमन मेल खाता सिर्जना "
+#~ "गर्नु आवश्यक हुन्छ ।</p>\n"
+
+#~ msgid ""
+#~ "<p><span style='font-size:125%; font-weight:bold;'>Important changes</"
+#~ "span> (compared to KMail %1):</p>\n"
+#~ msgstr ""
+#~ "<p><span style='font-size:125%; font-weight:bold;'>महत्वपूर्ण परिवर्तन</span> "
+#~ "(केडीई मेल %1 सँग दाज्नुहोस्):</p>\n"
+
+#~ msgid "<li>%1</li>\n"
+#~ msgstr "<li>%1</li>\n"
+
 #~ msgid "OpenPGP Message - Encrypted"
 #~ msgstr "OpenPGP सन्देश - गुप्तिकृत"
 
@@ -7641,11 +7661,6 @@ msgstr[1] "\"अफिस बाहिरको\" जवाफ सम्पा�
 #~| msgid "&Inline"
 #~ msgid "online"
 #~ msgstr "इनलाइन"
-
-#, fuzzy
-#~| msgid "Work Offline"
-#~ msgid "offline"
-#~ msgstr "अफलाइनमा कार्य गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "Account Name"
