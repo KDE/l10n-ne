@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-01 08:17+0000\n"
+"POT-Creation-Date: 2015-11-02 07:46+0000\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -953,7 +953,28 @@ msgstr "\"%1\" वस्तुलाई पुन: नामकरण गर्�
 msgid "Could not open project \"%1\"."
 msgstr "\"%1\" परियोजना खोल्न सकेन ।"
 
-#: core/kexiproject.cpp:336
+#: core/kexiproject.cpp:304
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not remove project.\n"
+#| "The file \"%1\" does not exist."
+msgctxt "@info"
+msgid ""
+"Could not open project file. The file <filename>%1</filename> does not exist."
+msgstr ""
+"परियोजना हटाउन सकेन ।\n"
+"फाइल \"%1\" अवस्थित छैन ।"
+
+#: core/kexiproject.cpp:307 core/kexiproject.cpp:1462
+#: main/startup/KexiStartup.cpp:811 main/startup/KexiStartup.cpp:820
+#: main/startup/KexiStartup.cpp:831
+#, fuzzy
+#| msgid "Could not open \"%1\" project file."
+msgctxt "@title:window"
+msgid "Could Not Open File"
+msgstr "\"%1\" परियोजना फाइल खोल्न सकेन ।"
+
+#: core/kexiproject.cpp:343
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Database project %1 does not appear to have been created using Kexi."
@@ -966,28 +987,28 @@ msgstr ""
 "<qt>%1 डाटाबेस परियोजना केक्सी प्रयोग गरेर सिर्जना भएको जस्तो देखिदैन ।<br><br>के "
 "तपाईँले नयाँ केक्सी परियोजनाको रूपमा यसलाई आयात गर्न चाहनुहुन्छ ?</qt>"
 
-#: core/kexiproject.cpp:361
+#: core/kexiproject.cpp:368
 #, kde-format
 msgid "Could not create project \"%1\"."
 msgstr "\"%1\" परियोजना सिर्जना गर्न सकेन ।"
 
-#: core/kexiproject.cpp:404 core/kexiproject.cpp:473
+#: core/kexiproject.cpp:411 core/kexiproject.cpp:480
 msgid "Project major version"
 msgstr "परियोजना ठूलो संस्करण"
 
-#: core/kexiproject.cpp:406 core/kexiproject.cpp:475
+#: core/kexiproject.cpp:413 core/kexiproject.cpp:482
 msgid "Project minor version"
 msgstr "परियोजना सानो संस्करण"
 
-#: core/kexiproject.cpp:408
+#: core/kexiproject.cpp:415
 msgid "Project caption"
 msgstr "परियोजना क्याप्सन"
 
-#: core/kexiproject.cpp:410
+#: core/kexiproject.cpp:417
 msgid "Project description"
 msgstr "परियोजना वर्णन"
 
-#: core/kexiproject.cpp:945
+#: core/kexiproject.cpp:952
 #, fuzzy, kde-format
 #| msgid "Opening object \"%1\" failed."
 msgid ""
@@ -995,21 +1016,21 @@ msgid ""
 "%2%3"
 msgstr "\"%1\" वस्तु खोल्न असफल ।"
 
-#: core/kexiproject.cpp:964
+#: core/kexiproject.cpp:971
 msgid "This project is opened as read only."
 msgstr "यो परियोजना पढ्नको लागि मात्र खोलियो ।"
 
-#: core/kexiproject.cpp:996
+#: core/kexiproject.cpp:1003
 #, fuzzy
 #| msgid "Could not remove object's data."
 msgid "Could not remove object's user data."
 msgstr "वस्तुको डेटा हटाउन सकेन ।"
 
-#: core/kexiproject.cpp:1124
+#: core/kexiproject.cpp:1131
 msgid "Warning: entire project's data will be removed."
 msgstr "चेतावनी: सम्पूर्ण परियोजनाको डेटा हटाइनेछ ।"
 
-#: core/kexiproject.cpp:1140
+#: core/kexiproject.cpp:1147
 #, fuzzy, kde-format
 #| msgid ""
 #| "The project %1 already exists.\n"
@@ -1022,14 +1043,14 @@ msgstr ""
 "परियोजना %1 पहिलेनै अवस्थित छ ।\n"
 "के तपाईं यसलाई नयाँ, एउटा खालीसँग बदल्न चाहनुहुन्छ?"
 
-#: core/kexiproject.cpp:1144
+#: core/kexiproject.cpp:1151
 #, fuzzy
 #| msgid "Replace"
 msgctxt "@action:button"
 msgid "Replace"
 msgstr "बदल्नुहोस्"
 
-#: core/kexiproject.cpp:1168
+#: core/kexiproject.cpp:1175
 #, fuzzy, kde-format
 #| msgid "Do you want to drop the project \"%1\"?"
 msgid ""
@@ -1037,14 +1058,14 @@ msgid ""
 "%1"
 msgstr "के तपाईँ \"%1\" परियोजना छोड्न चाहनुहुन्छ?"
 
-#: core/kexiproject.cpp:1170
+#: core/kexiproject.cpp:1177
 #, fuzzy
 #| msgid "Delete object"
 msgctxt "@action:button"
 msgid "Delete Project"
 msgstr "वस्तु मेट्नुहोस्"
 
-#: core/kexiproject.cpp:1184
+#: core/kexiproject.cpp:1191
 #, fuzzy
 #| msgid ""
 #| "Could not drop this project. Database connection for this project has "
@@ -1056,27 +1077,19 @@ msgstr ""
 "यो परियोजना छोड्न सकेन । यो परियोजनाका लागि डाटाबेस जडान पढ्नका लागि मात्र "
 "खोलिएको हो ।"
 
-#: core/kexiproject.cpp:1449
+#: core/kexiproject.cpp:1456
 #, fuzzy
 #| msgid "Open As Read-Only"
 msgid "Open As Read Only"
 msgstr "पढ्ने मात्रको रूपमा खोल्नुहोस्"
 
-#: core/kexiproject.cpp:1452
+#: core/kexiproject.cpp:1459
 #, kde-format
 msgctxt "@info"
 msgid ""
 "<para>Could not open file <filename>%1</filename> for reading and writing.</"
 "para><para>Do you want to open the file as read only?</para>"
 msgstr ""
-
-#: core/kexiproject.cpp:1455 main/startup/KexiStartup.cpp:811
-#: main/startup/KexiStartup.cpp:820 main/startup/KexiStartup.cpp:831
-#, fuzzy
-#| msgid "Could not open \"%1\" project file."
-msgctxt "@title:window"
-msgid "Could Not Open File"
-msgstr "\"%1\" परियोजना फाइल खोल्न सकेन ।"
 
 #: core/kexiprojectdata.cpp:197
 #, fuzzy, kde-format
