@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-15 07:32+0000\n"
+"POT-Creation-Date: 2016-01-16 07:44+0000\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1665,7 +1665,7 @@ msgstr "उल्टाउनुहोस्"
 #. i18n: ectx: Menu (LayerSelect)
 #: gemini/kritagemini.rc:126 krita.rc:170 krita.rc:222
 #: plugins/extensions/colorrange/wdg_colorrange.ui:131
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:538
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:502
 #: plugins/extensions/imagesize/imagesize.rc:12
 #: plugins/extensions/modify_selection/modify_selection.rc:4
 #: sketch/kritasketch.rc:126
@@ -1775,15 +1775,15 @@ msgstr "शीर्षक विहिन-१"
 #: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:338
 #: ui/dialogs/kis_dlg_preferences.cc:234 ui/input/kis_tablet_debugger.cpp:100
 #: ui/kis_filter_manager.cc:214 ui/kis_filter_manager.cc:223
-#: ui/kis_layer_manager.cc:857 ui/KisApplication.cpp:550
-#: ui/KisApplication.cpp:553 ui/KisApplication.cpp:578
-#: ui/KisApplication.cpp:604 ui/KisApplication.cpp:625 ui/KisDocument.cpp:623
+#: ui/kis_layer_manager.cc:854 ui/KisApplication.cpp:579
+#: ui/KisApplication.cpp:582 ui/KisApplication.cpp:607
+#: ui/KisApplication.cpp:633 ui/KisApplication.cpp:654 ui/KisDocument.cpp:623
 #: ui/KisDocument.cpp:625 ui/KisDocument.cpp:1098 ui/KisDocument.cpp:1144
 #: ui/KisDocument.cpp:1285 ui/KisDocument.cpp:1940 ui/KisDocument.cpp:1943
 #: ui/KisImportExportManager.cpp:243 ui/KisImportExportManager.cpp:254
-#: ui/KisImportExportManager.cpp:552 ui/KisMainWindow.cpp:707
-#: ui/KisMainWindow.cpp:787 ui/KisMainWindow.cpp:801 ui/KisMainWindow.cpp:1482
-#: ui/KisMainWindow.cpp:1641 ui/KisMainWindow.cpp:1653
+#: ui/KisImportExportManager.cpp:552 ui/KisMainWindow.cpp:731
+#: ui/KisMainWindow.cpp:811 ui/KisMainWindow.cpp:825 ui/KisMainWindow.cpp:1546
+#: ui/KisMainWindow.cpp:1707 ui/KisMainWindow.cpp:1719
 #: ui/KisTemplateCreateDia.cpp:303 ui/KisView.cpp:782
 #: ui/opengl/kis_opengl_canvas2.cpp:631
 #: ui/opengl/kis_opengl_image_textures.cpp:575
@@ -3366,7 +3366,7 @@ msgstr "%1%"
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
 #: image/kis_layer.cc:216
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:222
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:165
 #: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:36
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:50
 #: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:35
@@ -3459,7 +3459,7 @@ msgstr "प्रक्रिया पछि"
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
 #: image/kis_psd_layer_style.cpp:99 ui/forms/wdgcustompalette.ui:18
-#: ui/KisDocument.cpp:2359 ui/KisMainWindow.cpp:923 ui/KisPart.cpp:585
+#: ui/KisDocument.cpp:2359 ui/KisMainWindow.cpp:947 ui/KisPart.cpp:585
 #: ui/KisPart.cpp:606 ui/kra/kis_kra_saver.cpp:76
 msgid "Unnamed"
 msgstr "बेनामी"
@@ -7192,7 +7192,7 @@ msgstr "छवि आयात गर्नुहोस्"
 
 #. i18n: ectx: Menu (LayerConvert)
 #: krita.rc:162
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:557
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:521
 #, fuzzy
 #| msgid "&Invert"
 msgid "&Convert"
@@ -7200,7 +7200,7 @@ msgstr "उल्टो पार्नुहोस्नुहोस्"
 
 #. i18n: ectx: Menu (LayerSplitAlpha)
 #: krita.rc:183
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:563
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:527
 #, fuzzy
 #| msgid "Color to Alpha"
 msgid "S&plit Alpha"
@@ -10861,59 +10861,39 @@ msgstr "नाम:"
 msgid "Composition"
 msgstr "मिश्रित मोड:"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:122
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:100
 msgid "Layers"
 msgstr "तह"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:150
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:128
 msgid "Minimal View"
 msgstr "न्युनतम दृश्य"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:152
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:130
 msgid "Detailed View"
 msgstr "विस्तृत दृश्य"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:154
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:132
 msgid "Thumbnail View"
 msgstr "थम्वनेल दृश्य"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:166
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:144
 msgid "View mode"
 msgstr "दृश्य मोड"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:186
-msgid "&Remove Layer"
-msgstr "तह हटाउनुहोस्"
-
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:195
-#, fuzzy
-#| msgid "Move layer up"
-msgid "Move Layer or Mask Up"
-msgstr "तहलाई माथि सार्नुहोस्"
-
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:204
-#, fuzzy
-#| msgid "Move layer down"
-msgid "Move Layer or Mask Down"
-msgstr "तहलाई तल सार्नुहोस्"
-
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:213
-msgid "&Properties..."
-msgstr "गुण..."
-
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:232
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:175
 #, fuzzy
 #| msgid "Selection mode:"
 msgid "&Select Opaque"
 msgstr "चयन मोड:"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:257
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:200
 #, fuzzy
 #| msgid "Selection Eraser"
 msgid "&Show Global Selection Mask"
 msgstr "चयन इरेजर"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:259
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:202
 msgctxt "@info:tooltip"
 msgid ""
 "Shows global selection as a usual selection mask in <interface>Layers</"
@@ -12882,7 +12862,7 @@ msgid "Workspaces"
 msgstr "रङस्थान"
 
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
-#: ui/KisColorsetChooser.cpp:97 ui/KisMainWindow.cpp:672
+#: ui/KisColorsetChooser.cpp:97 ui/KisMainWindow.cpp:696
 #: ui/widgets/kis_workspace_chooser.cpp:93
 #, fuzzy
 #| msgid "Wave"
@@ -20813,14 +20793,21 @@ msgstr "छवि गुण"
 msgid "Change the background color of the image"
 msgstr "पृष्ठभूमि रङ"
 
-#: ui/dialogs/kis_dlg_layer_properties.cc:86
+#: ui/dialogs/kis_dlg_layer_properties.cc:88
 msgid "Layer Properties"
 msgstr "तह गुण"
 
-#: ui/dialogs/kis_dlg_layer_properties.cc:155
-#: ui/dialogs/kis_dlg_layer_properties.cc:156
+#: ui/dialogs/kis_dlg_layer_properties.cc:157
+#: ui/dialogs/kis_dlg_layer_properties.cc:158
 msgid "*varies*"
 msgstr ""
+
+#: ui/dialogs/kis_dlg_layer_properties.cc:199
+#, fuzzy
+#| msgid "Layer Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Layer Properties"
+msgstr "तह गुण"
 
 #: ui/dialogs/kis_dlg_layer_style.cpp:67
 #, fuzzy
@@ -23621,46 +23608,46 @@ msgstr "फिल्टर फेरि लागू गर्नुहोस्
 msgid "Import Image"
 msgstr "छवि आयात गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:355
+#: ui/kis_layer_manager.cc:352
 #, fuzzy
 #| msgid "Layer Size"
 msgctxt "floating message in layer manager"
 msgid "Layer is empty "
 msgstr "तह साइज"
 
-#: ui/kis_layer_manager.cc:382
+#: ui/kis_layer_manager.cc:379
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:427
+#: ui/kis_layer_manager.cc:424
 #, fuzzy
 #| msgid "Layer Properties"
 msgid "Fill Layer Properties"
 msgstr "तह गुण"
 
-#: ui/kis_layer_manager.cc:510
+#: ui/kis_layer_manager.cc:507
 #, fuzzy
 #| msgid "Convert Current Layer From"
 msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "यसबाट हालको तह रूपान्तरण गर्नुहोस्"
 
-#: ui/kis_layer_manager.cc:598
+#: ui/kis_layer_manager.cc:595
 #, fuzzy
 #| msgid "Filter Mask..."
 msgid "New Filter Layer"
 msgstr "फिल्टर मास्क..."
 
-#: ui/kis_layer_manager.cc:671
+#: ui/kis_layer_manager.cc:668
 #, fuzzy
 #| msgid "Flatten Image"
 msgctxt "@title:window"
 msgid "Flatten Image"
 msgstr "समतल छवि"
 
-#: ui/kis_layer_manager.cc:672
+#: ui/kis_layer_manager.cc:669
 #, fuzzy
 #| msgid "The image contains hidden layers that will be lost."
 msgid ""
@@ -23668,22 +23655,22 @@ msgid ""
 "the image?"
 msgstr "छविले हराउने लुकाइएको तहहरू समावेश गर्दछ ।"
 
-#: ui/kis_layer_manager.cc:767
+#: ui/kis_layer_manager.cc:764
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "(qtundo-format)"
 msgid "Rasterize Layer"
 msgstr "तह घुमाउनुहोस्"
 
-#: ui/kis_layer_manager.cc:803
+#: ui/kis_layer_manager.cc:800
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:806
+#: ui/kis_layer_manager.cc:803
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:857
+#: ui/kis_layer_manager.cc:854
 msgid "No file name specified"
 msgstr ""
 
@@ -24091,40 +24078,40 @@ msgctxt "floating message about zoom"
 msgid "Zoom: %1 %"
 msgstr "जुम बढाउनुहोस्"
 
-#: ui/KisApplication.cpp:205 ui/opengl/kis_opengl_canvas2.cpp:264
+#: ui/KisApplication.cpp:264 ui/opengl/kis_opengl_canvas2.cpp:264
 #, fuzzy
 #| msgid "Warning!"
 msgctxt "@title:window"
 msgid "Krita: Warning"
 msgstr "चेतावनी !"
 
-#: ui/KisApplication.cpp:206
+#: ui/KisApplication.cpp:265
 msgid ""
 "You are running a 32 bits build on a 64 bits Windows.\n"
 "This is not recommended.\n"
 "Please download and install the x64 build instead."
 msgstr ""
 
-#: ui/KisApplication.cpp:358
+#: ui/KisApplication.cpp:387
 msgid "Mimetype not found, try using the -mimetype option"
 msgstr ""
 
-#: ui/KisApplication.cpp:551
+#: ui/KisApplication.cpp:580
 #, kde-format
 msgid "No template found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:554
+#: ui/KisApplication.cpp:583
 #, kde-format
 msgid "Too many templates found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:579
+#: ui/KisApplication.cpp:608
 #, kde-format
 msgid "Template %1 failed to load."
 msgstr ""
 
-#: ui/KisApplication.cpp:605
+#: ui/KisApplication.cpp:634
 #, kde-format
 msgid ""
 "Failed to clear %1\n"
@@ -24132,7 +24119,7 @@ msgid ""
 "Please make sure no other program is using the file and try again."
 msgstr ""
 
-#: ui/KisApplication.cpp:626
+#: ui/KisApplication.cpp:655
 msgid "Do you want to clear the settings file?"
 msgstr ""
 
@@ -24377,7 +24364,7 @@ msgid ""
 "Error message: %4"
 msgstr ""
 
-#: ui/KisDocument.cpp:1425 ui/KisMainWindow.cpp:707
+#: ui/KisDocument.cpp:1425 ui/KisMainWindow.cpp:731
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -24504,135 +24491,135 @@ msgstr "छविमा तह थप्न सकेन ।"
 msgid "Choose Filter"
 msgstr "फिल्टर परिवर्तन गर्नुहोस्"
 
-#: ui/KisMainWindow.cpp:180
+#: ui/KisMainWindow.cpp:182
 #, fuzzy
 #| msgid "Rocks"
 msgctxt "@action:inmenu"
 msgid "&Dockers"
 msgstr "ढुङ्गा"
 
-#: ui/KisMainWindow.cpp:181
+#: ui/KisMainWindow.cpp:183
 #, fuzzy
 #| msgid "&Paint Layer"
 msgctxt "@action:inmenu"
 msgid "&Window"
 msgstr "तह रङ्याउनुहोस्"
 
-#: ui/KisMainWindow.cpp:182
+#: ui/KisMainWindow.cpp:184
 #, fuzzy
 #| msgid "Image Size"
 msgctxt "@action:inmenu"
 msgid "New &View"
 msgstr "छवि साइज"
 
-#: ui/KisMainWindow.cpp:445
+#: ui/KisMainWindow.cpp:460
 #, fuzzy, kde-format
 #| msgid "Show original layer"
 msgid "Show %1 Toolbar"
 msgstr "मौलिक तह देखाउनुहोस्नुहोस्"
 
-#: ui/KisMainWindow.cpp:447
+#: ui/KisMainWindow.cpp:462
 #, fuzzy, kde-format
 #| msgid "&Tools"
 msgid "Hide %1 Toolbar"
 msgstr "उपकरण"
 
-#: ui/KisMainWindow.cpp:662
+#: ui/KisMainWindow.cpp:686
 msgid "(write protected)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:670
+#: ui/KisMainWindow.cpp:694
 #, fuzzy, kde-format
 #| msgid "Scale Layer"
 msgid "Save as %1"
 msgstr "तह मापन गर्नुहोस्"
 
-#: ui/KisMainWindow.cpp:761
+#: ui/KisMainWindow.cpp:785
 #, fuzzy
 #| msgid "Small Tiles"
 msgid "All files (*.*)"
 msgstr "सानो टायल"
 
-#: ui/KisMainWindow.cpp:764
+#: ui/KisMainWindow.cpp:788
 #, fuzzy
 #| msgid "Import Image"
 msgid "Import Images"
 msgstr "छवि आयात गर्नुहोस्"
 
-#: ui/KisMainWindow.cpp:764
+#: ui/KisMainWindow.cpp:788
 #, fuzzy
 #| msgid "Image"
 msgid "Open Images"
 msgstr "छवि"
 
-#: ui/KisMainWindow.cpp:903
+#: ui/KisMainWindow.cpp:927
 #, fuzzy
 #| msgid "untitled-1"
 msgid "untitled"
 msgstr "शीर्षक विहिन-१"
 
-#: ui/KisMainWindow.cpp:1440
+#: ui/KisMainWindow.cpp:1504
 #, fuzzy
 #| msgid "Export Layer"
 msgid "Export as PDF"
 msgstr "तह निर्यात गर्नुहोस्"
 
-#: ui/KisMainWindow.cpp:1482
+#: ui/KisMainWindow.cpp:1546
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1642
+#: ui/KisMainWindow.cpp:1708
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1653
+#: ui/KisMainWindow.cpp:1719
 #, fuzzy
 #| msgid "Could not add layer to image."
 msgid "Error: Could not reload this document"
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: ui/KisMainWindow.cpp:1910
+#: ui/KisMainWindow.cpp:1976
 #, kde-format
 msgid "&%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1913
+#: ui/KisMainWindow.cpp:1979
 #, kde-format
 msgid "%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1997
+#: ui/KisMainWindow.cpp:2063
 msgid ""
 "The Calligra LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2005
+#: ui/KisMainWindow.cpp:2071
 #, fuzzy
 #| msgid "HDR colorspace RGBAF32 not found, please check your installation."
 msgid "Krita cannot find any brush presets! Krita will quit now."
 msgstr "HDR रङ खालीस्थान RGBAF32 पत्ता लागेन, कृपया तपाईँको स्थापना जाँच गर्नुहोस् ।"
 
-#: ui/KisMainWindow.cpp:2014
+#: ui/KisMainWindow.cpp:2080
 #, fuzzy
 #| msgid "Layer Creation Error"
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "तह सिर्जना त्रुटि"
 
-#: ui/KisMainWindow.cpp:2073
+#: ui/KisMainWindow.cpp:2139
 #, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2143
+#: ui/KisMainWindow.cpp:2209
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:2183
+#: ui/KisMainWindow.cpp:2249
 msgid "Expanding Spacer"
 msgstr ""
 
@@ -26891,6 +26878,22 @@ msgstr "रङस्थान"
 msgid "Workspace %1"
 msgstr "रङस्थान"
 
+#~ msgid "&Remove Layer"
+#~ msgstr "तह हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Move layer up"
+#~ msgid "Move Layer or Mask Up"
+#~ msgstr "तहलाई माथि सार्नुहोस्"
+
+#, fuzzy
+#~| msgid "Move layer down"
+#~ msgid "Move Layer or Mask Down"
+#~ msgstr "तहलाई तल सार्नुहोस्"
+
+#~ msgid "&Properties..."
+#~ msgstr "गुण..."
+
 #, fuzzy
 #~| msgid ""
 #~| "Select the set of active channels. Only active channels will be visible, "
@@ -29130,11 +29133,6 @@ msgstr "रङस्थान"
 #~| msgid "&Clone Layer"
 #~ msgid "Compose Layer"
 #~ msgstr "क्लोन तह"
-
-#, fuzzy
-#~| msgid "Layer Properties"
-#~ msgid "New Layer Properties"
-#~ msgstr "तह गुण"
 
 #, fuzzy
 #~| msgid "&Target color space:"
