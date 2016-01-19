@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-18 09:20+0000\n"
+"POT-Creation-Date: 2016-01-19 08:58+0000\n"
 "PO-Revision-Date: 2008-01-03 16:48+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -354,7 +354,7 @@ msgstr "फाइल अपलोड गर्न सकेन"
 msgid "KStars image viewer: %1"
 msgstr "केडीई स्टार्स छवि दर्शक"
 
-#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:87
+#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:92
 msgid "Invert colors"
 msgstr ""
 
@@ -3526,7 +3526,7 @@ msgid "Display received FITS images unto solver FOV rectangle in the sky map"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverOverlay)
-#: ekos/align.ui:286 tools/eyepiecefield.cpp:86
+#: ekos/align.ui:286 tools/eyepiecefield.cpp:91
 msgid "Overlay"
 msgstr ""
 
@@ -8954,8 +8954,9 @@ msgstr "फाइल खोल्न सकेन: %1"
 #. i18n: ectx: property (text), item, widget (QComboBox, driverComboBox)
 #. i18n: ectx: property (text), widget (QPushButton, NoneButton)
 #: indi/drivermanager.cpp:1230 indi/indidriver.cpp:751
-#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/eyepiecefield.cpp:111
-#: tools/obslistwizard.ui:147 tools/whatsinteresting/wiequipsettings.ui:344
+#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/exporteyepieceview.cpp:67
+#: tools/eyepiecefield.cpp:116 tools/obslistwizard.ui:147
+#: tools/whatsinteresting/wiequipsettings.ui:344
 msgid "None"
 msgstr "कुनै पनि होइन"
 
@@ -53526,7 +53527,7 @@ msgstr "मोड"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, Type)
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:114
+#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:119
 #: tools/whatsinteresting/wiequipsettings.ui:328
 #, fuzzy
 #| msgid "Mercury"
@@ -59031,66 +59032,117 @@ msgstr "शरद विषुव:"
 msgid "Winter solstice:"
 msgstr "शीतकालीन क्रान्ति:"
 
-#: tools/eyepiecefield.cpp:48
+#: tools/exporteyepieceview.cpp:50
+#, fuzzy
+#| msgid "Eyepiece FOV:"
+msgid "Export eyepiece view"
+msgstr "आइपिस एभओभी:"
+
+#: tools/exporteyepieceview.cpp:65
+msgid "Overlay orientation vs. time ticks: "
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:68
+msgid "Towards Zenith"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:69
+#, fuzzy
+#| msgctxt "Country name (optional, but should be translated)"
+#| msgid "Estonia"
+msgid "Dobsonian View"
+msgstr "एसटोनिया"
+
+#: tools/exporteyepieceview.cpp:105
+msgid ""
+"Note: This overlay makes sense only if the view was generated in alt/az mode "
+"with a preset such as Refractor or Vanilla"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:107
+msgid ""
+"Note: This overlay  makes sense only if the view was generated in alt/az "
+"mode with a preset such as Dobsonian"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:178
+#, fuzzy
+#| msgid "&Save Sky Image..."
+msgid "Save image as"
+msgstr "आकाशे छवि बचत गर्नुहोस्..."
+
+#: tools/exporteyepieceview.cpp:178
+msgid "Image files (*.png *.jpg *.xpm *.bmp *.gif)"
+msgstr ""
+
+#: tools/eyepiecefield.cpp:50
 #, fuzzy
 #| msgid "Eyepiece FOV:"
 msgid "Eyepiece Field View"
 msgstr "आइपिस एभओभी:"
 
-#: tools/eyepiecefield.cpp:84
+#: tools/eyepiecefield.cpp:65
+#, fuzzy
+#| msgctxt "City name (optional, probably does not need a translation)"
+#| msgid "Eastport"
+msgctxt "Export image"
+msgid "Export"
+msgstr "इस्टपोर्ट"
+
+#: tools/eyepiecefield.cpp:89
 #, fuzzy
 #| msgid "Overview"
 msgid "Invert view"
 msgstr "सिंहावलोकन"
 
-#: tools/eyepiecefield.cpp:85
+#: tools/eyepiecefield.cpp:90
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Fairview"
 msgid "Flip view"
 msgstr "फियरभ्यु"
 
-#: tools/eyepiecefield.cpp:88
+#: tools/eyepiecefield.cpp:93
 #, fuzzy
 #| msgid "Show SEDS Image"
 msgid "Fetch DSS image"
 msgstr "SEDS छवि देखाउनुहोस्"
 
-#: tools/eyepiecefield.cpp:108
+#: tools/eyepiecefield.cpp:113
 #, fuzzy
 #| msgid "Location:"
 msgid "Rotation: "
 msgstr "स्थान:"
 
-#: tools/eyepiecefield.cpp:112
+#: tools/eyepiecefield.cpp:117
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Manila"
 msgid "Vanilla"
 msgstr "मनिला"
 
-#: tools/eyepiecefield.cpp:113
+#: tools/eyepiecefield.cpp:118
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Fairview"
 msgid "Flipped"
 msgstr "फियरभ्यु"
 
-#: tools/eyepiecefield.cpp:115
+#: tools/eyepiecefield.cpp:120
 #, fuzzy
 #| msgctxt "Country name (optional, but should be translated)"
 #| msgid "Estonia"
 msgid "Dobsonian"
 msgstr "एसटोनिया"
 
-#: tools/eyepiecefield.cpp:117
+#: tools/eyepiecefield.cpp:122
 #, fuzzy
 #| msgctxt "City name (optional, probably does not need a translation)"
 #| msgid "Arese"
 msgid "Preset: "
 msgstr "अरेस"
 
-#: tools/eyepiecefield.cpp:539 tools/observinglist.cpp:1128
+#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1128
 #, fuzzy
 msgid "Failed to download DSS/SDSS image!"
 msgstr "छवि लोड गर्न असफल भयो"

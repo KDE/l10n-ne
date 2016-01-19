@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-18 09:25+0000\n"
+"POT-Creation-Date: 2016-01-19 09:02+0000\n"
 "PO-Revision-Date: 2007-09-07 10:35+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -743,7 +743,7 @@ msgstr ""
 msgid "Metakit"
 msgstr ""
 
-#: src/aboutdata.cpp:35 src/articleviewer-ng/articleviewerng.cpp:122
+#: src/aboutdata.cpp:35 src/articleviewer-ng/articleviewerng.cpp:152
 #: src/trayicon.cpp:58 src/trayicon.cpp:59 src/trayicon.cpp:70
 msgid "Akregator"
 msgstr "एक्रिगेटर"
@@ -1115,28 +1115,36 @@ msgstr "ट्याब बन्द गर्नुहोस्"
 msgid "Activate Tab %1"
 msgstr ""
 
-#: src/actions/actionmanagerimpl.cpp:610
+#: src/actions/actionmanagerimpl.cpp:598
+msgid "&Save Link As..."
+msgstr "लिङ्क यस रूपमा बचत गर्नुहोस्..."
+
+#: src/actions/actionmanagerimpl.cpp:603
+msgid "Copy &Link Address"
+msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
+
+#: src/actions/actionmanagerimpl.cpp:618
 #, fuzzy
 #| msgid "Forward"
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr "अगाडि"
 
-#: src/actions/actionmanagerimpl.cpp:617
+#: src/actions/actionmanagerimpl.cpp:625
 #, fuzzy
 #| msgid "Back"
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr "पछाडि"
 
-#: src/actions/actionmanagerimpl.cpp:626
+#: src/actions/actionmanagerimpl.cpp:634
 #, fuzzy
 #| msgid "Reload"
 msgctxt "Reload current page"
 msgid "Reload"
 msgstr "रिलोड गर्नुहोस्"
 
-#: src/actions/actionmanagerimpl.cpp:631
+#: src/actions/actionmanagerimpl.cpp:639
 msgid "Stop"
 msgstr "रोक्नुहोस्"
 
@@ -1399,39 +1407,31 @@ msgctxt "Articlelist's column header"
 msgid "Content"
 msgstr "टिप्पणी"
 
-#: src/articleviewer-ng/articleviewerng.cpp:123
+#: src/articleviewer-ng/articleviewerng.cpp:153
 #, fuzzy
 #| msgid "A KDE Feed Aggregator"
 msgid "Akregator is a KDE news feed reader."
 msgstr "एउटा केडीई फिड एक्रिगेटर"
 
-#: src/articleviewer-ng/articleviewerng.cpp:246
+#: src/articleviewer-ng/articleviewerng.cpp:284
 msgid "Disable"
 msgstr ""
 
-#: src/articleviewer-ng/articleviewerng.cpp:248
+#: src/articleviewer-ng/articleviewerng.cpp:286
 msgid "Keep Enabled"
 msgstr ""
 
-#: src/articleviewer-ng/articleviewerng.cpp:249
+#: src/articleviewer-ng/articleviewerng.cpp:287
 #, fuzzy
 #| msgid "<qt>Are you sure you want to delete this feed?</qt>"
 msgid "Are you sure you want to disable this introduction page?"
 msgstr "<qt>तपाईँ यो फिड मेट्ने चाहानामा निश्चिन्त हुनुहुन्छ ?</qt>"
 
-#: src/articleviewer-ng/articleviewerng.cpp:250
+#: src/articleviewer-ng/articleviewerng.cpp:288
 #, fuzzy
 #| msgid "Disable Archiving"
 msgid "Disable Introduction Page"
 msgstr "सङ्ग्रह अक्षम पार्नुहोस्"
-
-#: src/articleviewerwidget.cpp:95
-msgid "Copy &Link Address"
-msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
-
-#: src/articleviewerwidget.cpp:99
-msgid "&Save Link As..."
-msgstr "लिङ्क यस रूपमा बचत गर्नुहोस्..."
 
 #: src/command/createfoldercommand.cpp:66
 msgid "Add Folder"
@@ -1699,7 +1699,7 @@ msgstr[1] " (नपढिएका लेख %1)"
 #: src/formatter/grantleeviewformatter.cpp:85
 #, fuzzy, kde-format
 #| msgid "<b>Description:</b> %1<br><br>"
-msgid "<b>Description:</b> %1<br /><br />"
+msgid "<b>Description:</b> %1<br />"
 msgstr "<b>वर्णन:</b> %1<br><br>"
 
 #: src/formatter/grantleeviewformatter.cpp:94
@@ -1780,28 +1780,28 @@ msgstr "तपाईँले विभिन्न खुला ट्याब
 msgid "Articles list."
 msgstr "लेख सूची ।"
 
-#: src/mainwidget.cpp:245 src/mainwidget.cpp:625
+#: src/mainwidget.cpp:240 src/mainwidget.cpp:624
 msgid "Articles"
 msgstr "लेख"
 
-#: src/mainwidget.cpp:271
+#: src/mainwidget.cpp:268
 msgid "About"
 msgstr "बारेमा"
 
-#: src/mainwidget.cpp:798 src/mainwidget.cpp:807 src/mainwidget.cpp:1201
+#: src/mainwidget.cpp:797 src/mainwidget.cpp:806 src/mainwidget.cpp:1200
 msgid "Networking is not available."
 msgstr ""
 
-#: src/mainwidget.cpp:815
+#: src/mainwidget.cpp:814
 msgid "Fetching Feeds..."
 msgstr "फिड तान्दैछ..."
 
-#: src/mainwidget.cpp:1012
+#: src/mainwidget.cpp:1011
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>तपाईँ लेख <b>%1</b> मेट्न निश्चित हुनुहुन्छ ?</qt>"
 
-#: src/mainwidget.cpp:1015
+#: src/mainwidget.cpp:1014
 #, fuzzy, kde-format
 #| msgid "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgid "<qt>Are you sure you want to delete the selected article?</qt>"
@@ -1810,11 +1810,11 @@ msgid_plural ""
 msgstr[0] "<qt>तपाईँ चयन गरिएका %1 लेख मेट्न निश्चित हुनुहुन्छ ?</qt>"
 msgstr[1] "<qt>तपाईँ चयन गरिएका %1 लेख मेट्न निश्चित हुनुहुन्छ ?</qt>"
 
-#: src/mainwidget.cpp:1019 src/urlhandler/urlhandler.cpp:86
+#: src/mainwidget.cpp:1018 src/urlhandler/urlhandler.cpp:117
 msgid "Delete Article"
 msgstr "लेख मेट्नुहोस्"
 
-#: src/mainwidget.cpp:1198
+#: src/mainwidget.cpp:1197
 msgid "Networking is available now."
 msgstr ""
 
@@ -2156,43 +2156,55 @@ msgstr "लेख पढ्दा पूरै वेब साइट लोड 
 msgid "Mar&k articles as read when they arrive"
 msgstr "लेख आइपुगेपछि पढेका रूपमा तीनलाई चिन्ह लगाउनुहोस्"
 
-#: src/urlhandler/urlhandler.cpp:48
+#: src/urlhandler/urlhandler.cpp:52
 #, fuzzy
 #| msgid "Disable Archiving"
 msgid "Disable Introduction"
 msgstr "सङ्ग्रह अक्षम पार्नुहोस्"
 
-#: src/urlhandler/urlhandler.cpp:88
+#: src/urlhandler/urlhandler.cpp:76
+#, fuzzy
+#| msgid "Copy Link Address"
+msgid "&Open in Address Book"
+msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
+
+#: src/urlhandler/urlhandler.cpp:77
+#, fuzzy
+#| msgid "Copy Link Address"
+msgid "&Copy Email Address"
+msgstr "लिङ्क ठेगाना प्रतिलिपि गर्नुहोस्"
+
+#: src/urlhandler/urlhandler.cpp:119
 #, fuzzy
 #| msgid "Ma&rk All Feeds as Read"
 msgid "Mark Article as Read"
 msgstr "पढिएका रूपमा सबै फिडमा चिन्ह लगाउनुहोस्"
 
-#: src/urlhandler/urlhandler.cpp:90
+#: src/urlhandler/urlhandler.cpp:121
 #, fuzzy
 #| msgid "Mark selected article as unread"
 msgid "Mark Article as Unread"
 msgstr "चयन गरिएका लेखलाई नपढिएका रूपमा चिन्ह लगाउनुहोस्"
 
-#: src/urlhandler/urlhandler.cpp:92
+#: src/urlhandler/urlhandler.cpp:123
 #, fuzzy
 #| msgid "&Mark as Important"
 msgid "Mark Article as Important"
 msgstr "महत्वपूर्णका रूपमा चिन्ह लगाउनुहोस्"
 
-#: src/urlhandler/urlhandler.cpp:94
+#: src/urlhandler/urlhandler.cpp:125
 #, fuzzy
 #| msgid "Article"
 msgid "Send Url Article"
 msgstr "लेख"
 
-#: src/urlhandler/urlhandler.cpp:96
+#: src/urlhandler/urlhandler.cpp:127
 #, fuzzy
 #| msgid "Open in External Browser"
 msgid "Open In External Browser"
 msgstr "बाह्य ब्राउजरमा खोल्नुहोस्"
 
-#: src/urlhandler/urlhandler.cpp:98
+#: src/urlhandler/urlhandler.cpp:129
 msgid "Share"
 msgstr ""
 
