@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-20 01:54+0000\n"
+"POT-Creation-Date: 2016-01-23 02:12+0000\n"
 "PO-Revision-Date: 2007-08-20 13:11+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1509,8 +1509,8 @@ msgstr "सामान्य"
 
 #: dialogs/activitydialog.cpp:143 dialogs/objectnodedialog.cpp:135
 #: dialogs/statedialog.cpp:116 dialogs/umlattributedialog.cpp:67
-#: dialogs/umlentityattributedialog.cpp:65 dialogs/umloperationdialog.cpp:86
-#: dialogs/umltemplatedialog.cpp:60
+#: dialogs/umlentityattributedialog.cpp:65 dialogs/umlenumliteraldialog.cpp:53
+#: dialogs/umloperationdialog.cpp:86 dialogs/umltemplatedialog.cpp:60
 msgid "General Properties"
 msgstr "सामान्य गुण"
 
@@ -3117,20 +3117,21 @@ msgstr "नाम:"
 msgid "Classifier &scope (\"static\")"
 msgstr "विभाजक क्षेत्र (\"static\")"
 
-#: dialogs/umlattributedialog.cpp:126
+#: dialogs/umlattributedialog.cpp:126 dialogs/umlenumliteraldialog.cpp:86
 msgid "You have entered an invalid attribute name."
 msgstr "तपाईँले एउटा अवैध विशेषता नाम प्रविष्ट गर्नुभयो ।"
 
-#: dialogs/umlattributedialog.cpp:127 refactoring/refactoringassistant.cpp:850
+#: dialogs/umlattributedialog.cpp:127 dialogs/umlenumliteraldialog.cpp:87
+#: refactoring/refactoringassistant.cpp:850
 msgid "Attribute Name Invalid"
 msgstr "विशेषता नाम अवैध छ"
 
-#: dialogs/umlattributedialog.cpp:134
+#: dialogs/umlattributedialog.cpp:134 dialogs/umlenumliteraldialog.cpp:94
 msgid ""
 "The attribute name you have chosen is already being used in this operation."
 msgstr "तपाईँले रोज्नुभएको विशेषता नाम पहिल्यै यो सञ्चालनमा प्रयोग गरिएको छ ।"
 
-#: dialogs/umlattributedialog.cpp:135
+#: dialogs/umlattributedialog.cpp:135 dialogs/umlenumliteraldialog.cpp:95
 msgid "Attribute Name Not Unique"
 msgstr "विशेषता नाम अद्धितिय छैन"
 
@@ -3214,6 +3215,23 @@ msgstr "तपाईँले रोज्नुभएको अस्तित�
 #: dialogs/umlentityattributedialog.cpp:188
 msgid "Entity Attribute Name Not Unique"
 msgstr "अस्तित्व विशेषता नाम अद्धितिय छैन"
+
+#: dialogs/umlenumliteraldialog.cpp:33
+#, fuzzy
+#| msgid "General Properties"
+msgid "EnumLiteral Properties"
+msgstr "सामान्य गुण"
+
+#: dialogs/umlenumliteraldialog.cpp:59
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "literal name"
+msgid "&Name:"
+msgstr "नाम:"
+
+#: dialogs/umlenumliteraldialog.cpp:63
+msgid "&Value:"
+msgstr ""
 
 #: dialogs/umlfiledialog.cpp:139
 #, fuzzy
@@ -4578,9 +4596,8 @@ msgstr "नाम"
 
 #: object_factory.cpp:245 object_factory.cpp:249 umldoc.cpp:1528
 #: umldoc.cpp:1532 umldoc.cpp:1607 umldoc.cpp:1611 umldoc.cpp:1644
-#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#: umlmodel/stereotype.cpp:120 umlmodel/stereotype.cpp:124
+#: umldoc.cpp:1648 umldoc.cpp:1685 umldoc.cpp:1689 umlmodel/stereotype.cpp:120
+#: umlmodel/stereotype.cpp:124
 msgid "Enter name:"
 msgstr "नाम प्रविष्ट गर्नुहोस्:"
 
@@ -6596,13 +6613,6 @@ msgstr ""
 "एउटा नाम र हस्ताक्षर भएको एउटा सञ्चालन पहिल्यै अवस्थित छ । तपाईँ यसलाई फेरि थप्न "
 "सक्नुहुन्न ।"
 
-#: umlmodel/enumliteral.cpp:114 umlmodel/enumliteral.cpp:118
-#, fuzzy
-#| msgid "Name"
-msgctxt "enum name"
-msgid "Name"
-msgstr "नाम"
-
 #: umlmodel/folder.cpp:419
 #, kde-format
 msgid "The folderfile %1 does not exist."
@@ -6875,7 +6885,7 @@ msgstr "भूमिका नाम"
 msgid "Enter role name:"
 msgstr "भूमिका नाम प्रविष्ट गर्नुहोस्:"
 
-#: umlwidgets/associationwidget.cpp:3779
+#: umlwidgets/associationwidget.cpp:3795
 msgid "Press Ctrl with left mouse click to delete a point"
 msgstr ""
 
@@ -7339,6 +7349,12 @@ msgstr "वस्तु"
 #: worktoolbar.cpp:374
 msgid "Pre/Post condition"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgctxt "enum name"
+#~ msgid "Name"
+#~ msgstr "नाम"
 
 #~ msgid "&Export"
 #~ msgstr "निर्यात गर्नुहोस्"
