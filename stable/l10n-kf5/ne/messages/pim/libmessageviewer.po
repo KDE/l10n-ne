@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-24 08:12+0000\n"
+"POT-Creation-Date: 2016-03-25 11:29+0000\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -666,7 +666,7 @@ msgstr ""
 msgid "Move to Trash"
 msgstr "रद्दीटोकरीमा सार्नुहोस्"
 
-#: header/headerstyle_util.cpp:415 viewer/urlhandlermanager.cpp:132
+#: header/headerstyle_util.cpp:415 viewer/urlhandlermanager.cpp:131
 msgid "Reply"
 msgstr "जवाफ दिनुहोस्"
 
@@ -677,14 +677,14 @@ msgstr "जवाफ दिनुहोस्"
 msgid "Reply to All"
 msgstr "सबैलाई जवाफ दिनुहोस्"
 
-#: header/headerstyle_util.cpp:425 viewer/urlhandlermanager.cpp:136
+#: header/headerstyle_util.cpp:425 viewer/urlhandlermanager.cpp:135
 #, fuzzy
 #| msgctxt "Message->"
 #| msgid "Forward"
 msgid "Forward"
 msgstr "पठाउनुहोस्"
 
-#: header/headerstyle_util.cpp:430 viewer/urlhandlermanager.cpp:138
+#: header/headerstyle_util.cpp:430 viewer/urlhandlermanager.cpp:137
 msgid "New Message"
 msgstr "नयाँ सन्देश"
 
@@ -1552,6 +1552,350 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "सङ्लग्नताको नाम:"
 
+#: viewer/messagepart.cpp:179 viewer/messagepart.cpp:181
+msgid "Encapsulated message"
+msgstr "इनक्याप्सुलेट गरिएको सन्देश"
+
+#: viewer/messagepart.cpp:200
+msgid "End of encapsulated message"
+msgstr "इन्क्याप्सुलेटेड सन्देशको अन्त्यमा"
+
+#: viewer/messagepart.cpp:222
+#, fuzzy
+msgid "Please wait while the message is being decrypted..."
+msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
+
+#: viewer/messagepart.cpp:224
+msgid "Encrypted message"
+msgstr "गुप्तिकृत सन्देश"
+
+#: viewer/messagepart.cpp:226
+msgid "Encrypted message (decryption not possible)"
+msgstr "गुप्तिकृत सन्देश (गुप्तिकरण उल्टाउन सम्भव छैन)"
+
+#: viewer/messagepart.cpp:228
+#, kde-format
+msgid "Reason: %1"
+msgstr "कारण: %1"
+
+#: viewer/messagepart.cpp:245
+msgid "End of encrypted message"
+msgstr "गुप्तिकृत सन्देशको अन्त्यमा"
+
+#: viewer/messagepart.cpp:290
+msgid "Error: Signature not verified"
+msgstr "त्रुटि: हस्ताक्षर रुजु गरिएको छैन"
+
+#: viewer/messagepart.cpp:293
+msgid "Good signature"
+msgstr "ठीक हस्ताक्षर"
+
+#: viewer/messagepart.cpp:296
+msgid "<b>Bad</b> signature"
+msgstr "<b>गलत</b> हस्ताक्षर"
+
+#: viewer/messagepart.cpp:299
+msgid "No public key to verify the signature"
+msgstr "हस्ताक्षर रुजु गर्न सार्वजनिक कुञ्जी छैन"
+
+#: viewer/messagepart.cpp:302
+msgid "No signature found"
+msgstr "हस्ताक्षर फेला परेन"
+
+#: viewer/messagepart.cpp:305
+msgid "Error verifying the signature"
+msgstr "हस्ताक्षर रुजु गर्दा त्रुटि"
+
+#: viewer/messagepart.cpp:308
+msgid "Different results for signatures"
+msgstr "हस्ताक्षरको फरक परिणाम"
+
+#: viewer/messagepart.cpp:327
+msgid "No status information available."
+msgstr "स्थिति सूचना उपलब्ध छैन ।"
+
+#: viewer/messagepart.cpp:334 viewer/messagepart.cpp:420
+msgid "Good signature."
+msgstr "ठीक हस्ताक्षर ।"
+
+#: viewer/messagepart.cpp:355
+msgid "One key has expired."
+msgstr "एउटा कुञ्जीको म्याद समाप्त भएको छ ।"
+
+#: viewer/messagepart.cpp:359
+msgid "The signature has expired."
+msgstr "हस्ताक्षरको म्याद समाप्त भएको छ ।"
+
+#: viewer/messagepart.cpp:364
+msgid "Unable to verify: key missing."
+msgstr "रुजू गर्न असमर्थ: कुञ्जी हरायो ।"
+
+#: viewer/messagepart.cpp:371
+msgid "CRL not available."
+msgstr "CRL उपलब्ध छैन ।"
+
+#: viewer/messagepart.cpp:375
+msgid "Available CRL is too old."
+msgstr "उपलब्ध CRL धेरै पुनानो छ ।"
+
+#: viewer/messagepart.cpp:379
+msgid "A policy was not met."
+msgstr "नीति मिलेको छैन ।"
+
+#: viewer/messagepart.cpp:383
+msgid "A system error occurred."
+msgstr "एउट प्रणाली त्रुटि उत्पन्न भयो ।"
+
+#: viewer/messagepart.cpp:394
+msgid "One key has been revoked."
+msgstr "एउटा कुञ्जी खारेज गरिएको छ ।"
+
+#: viewer/messagepart.cpp:422
+msgid "<b>Bad</b> signature."
+msgstr "<b>गलत</b> हस्ताक्षर ।"
+
+#: viewer/messagepart.cpp:448
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
+
+#: viewer/messagepart.cpp:451
+#, fuzzy
+#| msgid "Not enough information to check signature. %1"
+msgid "Not enough information to check signature validity."
+msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
+
+#: viewer/messagepart.cpp:465
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "हस्ताक्षर"
+
+#: viewer/messagepart.cpp:467
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr ""
+
+#: viewer/messagepart.cpp:472
+#, fuzzy
+#| msgid "No signature found"
+msgid "Unknown signature state"
+msgstr "हस्ताक्षर फेला परेन"
+
+#: viewer/messagepart.cpp:480
+#, fuzzy
+#| msgid "Show alway&s"
+msgid "Show Details"
+msgstr "सधैँँ देखाउनुहोस्"
+
+#: viewer/messagepart.cpp:503
+#, fuzzy
+#| msgid "Not available"
+msgid "No Audit Log available"
+msgstr "उपलब्ध छैन"
+
+#: viewer/messagepart.cpp:505
+#, fuzzy, kde-format
+#| msgid ""
+#| "Error retrieving quota information from server\n"
+#| "%1"
+msgid "Error Retrieving Audit Log: %1"
+msgstr ""
+"सर्भरबाट कोटा जानकारी पुन: प्राप्त गर्दा त्रुटि\n"
+"%1"
+
+#: viewer/messagepart.cpp:516
+#, fuzzy
+#| msgid "Not available"
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr "उपलब्ध छैन"
+
+#: viewer/messagepart.cpp:527
+#, fuzzy
+#| msgid "Logging Details"
+msgid "Hide Details"
+msgstr "लगिङ विवरण"
+
+#: viewer/messagepart.cpp:548
+#, fuzzy
+msgid "Please wait while the signature is being verified..."
+msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
+
+#: viewer/messagepart.cpp:639 viewer/messagepart.cpp:641
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "प्रमाणपत्र"
+
+#: viewer/messagepart.cpp:647 viewer/messagepart.cpp:673
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "चेतावनी:"
+
+#: viewer/messagepart.cpp:649
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr "साइनिङका लागि प्रयोग गरिएको प्रेषकको मेल ठेगाना %1 मा भण्डारण गरिएको छैन ।"
+
+#: viewer/messagepart.cpp:652
+msgid "sender: "
+msgstr "प्रेषक: "
+
+#: viewer/messagepart.cpp:655
+msgid "stored: "
+msgstr "भण्डारण गरिएको: "
+
+#: viewer/messagepart.cpp:675
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"साइनिङका लागि प्रयोग गरिएको इमेल ठेगाना %1 मा भण्डारण गरिएको छैन, त्यसैले यसलाई "
+"हामीले प्रेषकको ठेगाना %2 सँग तुलना गर्न सक्दैनौ ।"
+
+#: viewer/messagepart.cpp:698
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
+
+#: viewer/messagepart.cpp:714 viewer/messagepart.cpp:781
+msgid "Message was signed with unknown key."
+msgstr "अज्ञात कुञ्जीद्वारा सन्देश चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:716 viewer/messagepart.cpp:811
+#: viewer/messagepart.cpp:844
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:723 viewer/messagepart.cpp:730
+#: viewer/messagepart.cpp:739
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "सन्देश कुञ्जी %1 ले चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:725
+#, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "%1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:732
+#, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "%3 द्वारा %1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो"
+
+#: viewer/messagepart.cpp:741
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "%2 द्वारा कुञ्जी %1 ले सन्देशमा चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:750 viewer/messagepart.cpp:788
+#: viewer/messagepart.cpp:1854
+msgid "Status: "
+msgstr "वस्तुस्थिति: "
+
+#: viewer/messagepart.cpp:774
+#, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "%1 मा अज्ञात कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:778
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "अज्ञता कुञ्जी %1 ले सन्देश चिन्ह लगाइएको थियो ।"
+
+#: viewer/messagepart.cpp:784
+msgid "The validity of the signature cannot be verified."
+msgstr "हस्ताक्षरको वैधता रुजु गर्न सकिने छैन ।"
+
+#: viewer/messagepart.cpp:807 viewer/messagepart.cpp:840
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "सन्देश %2 द्वारा चिन्ह लगाइएको थियो(कुञ्जीआईडी: %1) ।"
+
+#: viewer/messagepart.cpp:817
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "हस्ताक्षर वैध छ, तर कुञ्जीको वैधता अज्ञाता छ ।"
+
+#: viewer/messagepart.cpp:821
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "हस्ताक्षर वैध छ र कुञ्जी आंशिक विश्वासिलो छ ।"
+
+#: viewer/messagepart.cpp:825
+msgid "The signature is valid and the key is fully trusted."
+msgstr "हस्ताक्षर वैध छ र कुञ्जी पूर्ण विश्वासिलो छ ।"
+
+#: viewer/messagepart.cpp:829
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "हस्ताक्षर वैध छ र कुञ्जी अतिनै विश्वासिलो छ ।"
+
+#: viewer/messagepart.cpp:833
+msgid "The signature is valid, but the key is untrusted."
+msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वाशिलो छ ।"
+
+#: viewer/messagepart.cpp:847
+msgid "Warning: The signature is bad."
+msgstr "चेतावनी: हस्ताक्षर गलत छ ।"
+
+#: viewer/messagepart.cpp:879
+msgid "End of signed message"
+msgstr "चिन्ह लगाएका सन्देशको अन्त्यमा"
+
+#: viewer/messagepart.cpp:1440
+msgid ""
+"<b>Note:</b> This HTML message may contain external references to images "
+"etc. For security/privacy reasons external references are not loaded. If you "
+"trust the sender of this message then you can load the external references "
+"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
+msgstr ""
+"<b>द्रष्टब्य:</b> यो HTML सन्देशले छवि आदिमा बाह्य सन्दर्भ समावेश गर्न सक्छ । सुरक्षा/"
+"गोप्यताका कारणले बाह्य सन्दर्भ लोड गरिएका छैनन् । तपाईँलाई यो सन्देश प्रेषकमा विश्वास "
+"भएमा यो सन्देशका लागि बाह्य सन्दर्भ लोड गर्न <a href=\"kmail:loadExternal\">यहाँ "
+"क्लिक गरेर</a> लोड गर्न सक्नुहुन्छ ।"
+
+#: viewer/messagepart.cpp:1453
+msgid ""
+"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
+"HTML code is shown. If you trust the sender of this message then you can "
+"activate formatted HTML display for this message <a href=\"kmail:showHTML"
+"\">by clicking here</a>."
+msgstr ""
+"<b>द्रष्टव्य:</b> यो HTML सन्देश हो । सुरक्षाका कारणले, केवल कच्चा HTML सङ्केत देखिएको छ "
+"। तपाईँलाई यो सन्देशको प्रेषकमा विश्वास भएमा यो सन्देशका लागि ढाँचावद्ध गरिएको HTML "
+"प्रदर्शन <a href=\"kmail:showHTML\">यहाँ क्लिक गरेर </a> सक्रिय पार्न सक्नुहुन्छ ।"
+
+#: viewer/messagepart.cpp:1658 viewer/objecttreeparser.cpp:1342
+msgid "Wrong Crypto Plug-In."
+msgstr "गलत क्राइप्टो प्लगइन ।"
+
+#: viewer/messagepart.cpp:1818
+#, fuzzy
+#| msgid "Store sent messages encry&pted"
+msgid "This message is encrypted."
+msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
+
+#: viewer/messagepart.cpp:1823
+#, fuzzy
+#| msgid "&Encrypt Message"
+msgid "Decrypt Message"
+msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
+
+#: viewer/messagepart.cpp:1851
+msgid "The crypto engine returned no cleartext data."
+msgstr "क्राइप्टो इञ्जिनले क्लेयरटेक्स्ट नभएको डेटा फिर्ता गर्यो ।"
+
+#: viewer/messagepart.cpp:1860
+#, fuzzy
+#| msgid "(unknown)"
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "(अज्ञात)"
+
 #: viewer/mimeparttree/mimetreemodel.cpp:59
 msgid "body part"
 msgstr "मुख्य भाग"
@@ -1563,6 +1907,129 @@ msgstr "वर्णन"
 #: viewer/mimeparttree/mimetreemodel.cpp:259
 msgid "Size"
 msgstr "साइज"
+
+#: viewer/objecttreeparser.cpp:555
+#, fuzzy, kde-format
+#| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
+msgid "Sorry, certificate could not be imported.<br />Reason: %1"
+msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयात गर्न सकिने छैन ।<br>कारण: %1"
+
+#: viewer/objecttreeparser.cpp:565
+msgid "Sorry, no certificates were found in this message."
+msgstr "माफ गर्नुहोस्, यो सन्देशमा प्रमाणपत्र फेला परेका छैनन् ।"
+
+#: viewer/objecttreeparser.cpp:568
+msgid "Certificate import status:"
+msgstr "प्रमाणपत्र आयात स्थिति:"
+
+#: viewer/objecttreeparser.cpp:570
+#, fuzzy, kde-format
+msgid "1 new certificate was imported."
+msgid_plural "%1 new certificates were imported."
+msgstr[0] "१ नयाँ प्रमाणपत्र आयात गरिएको थियो ।"
+msgstr[1] "%1 नयाँ प्रमाणपत्र आयात गरिएका थिए ।"
+
+#: viewer/objecttreeparser.cpp:573
+#, fuzzy, kde-format
+msgid "1 certificate was unchanged."
+msgid_plural "%1 certificates were unchanged."
+msgstr[0] "१ प्रमाणपत्र अपरिवर्तित थिए ।"
+msgstr[1] "%1 प्रमाणपत्र अपरिवर्तित थिए ।"
+
+#: viewer/objecttreeparser.cpp:576
+#, fuzzy, kde-format
+msgid "1 new secret key was imported."
+msgid_plural "%1 new secret keys were imported."
+msgstr[0] "१ नयाँ गोप्य कुञ्जी आयात गरिएको थियो ।"
+msgstr[1] "%1 नयाँ गोप्य कुञ्जी आयात गरिएका थिए ।"
+
+#: viewer/objecttreeparser.cpp:579
+#, fuzzy, kde-format
+msgid "1 secret key was unchanged."
+msgid_plural "%1 secret keys were unchanged."
+msgstr[0] "१ गोप्य कुञ्जी अपरिवर्तित थियो ।"
+msgstr[1] "%1 गोप्य कुञ्जी अपरिवर्तित थिए ।"
+
+#: viewer/objecttreeparser.cpp:589
+msgid "Sorry, no details on certificate import available."
+msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयातमा विस्तृत विवरण उपलब्ध छैन ।"
+
+#: viewer/objecttreeparser.cpp:592
+msgid "Certificate import details:"
+msgstr "प्रमाणपत्र आयात विस्तृत विवरण:"
+
+#: viewer/objecttreeparser.cpp:596
+#, fuzzy, kde-format
+#| msgid "Failed: %1 (%2)"
+msgctxt "Certificate import failed."
+msgid "Failed: %1 (%2)"
+msgstr "असफल: %1 (%2)"
+
+#: viewer/objecttreeparser.cpp:600
+#, kde-format
+msgid "New or changed: %1 (secret key available)"
+msgstr "नयाँ वा परिवर्तित: %1 (गोप्य कुञ्जी उपलब्ध)"
+
+#: viewer/objecttreeparser.cpp:602
+#, kde-format
+msgid "New or changed: %1"
+msgstr "नयाँ वा परिवर्तित: %1"
+
+#: viewer/objecttreeparser.cpp:639
+#, fuzzy
+#| msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgid "Could not decrypt the data."
+msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
+
+#: viewer/objecttreeparser.cpp:734
+#, kde-format
+msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
+
+#: viewer/objecttreeparser.cpp:736
+#, kde-format
+msgid "Error: %1"
+msgstr "त्रुटि: %1"
+
+#: viewer/objecttreeparser.cpp:749 viewer/objecttreeparser.cpp:1411
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "गुप्त प्लग-इन \"%1\" सुरुआत गरिएको छैन ।"
+
+#: viewer/objecttreeparser.cpp:753
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot decrypt messages."
+msgstr "गुप्त प्लग-इन \"%1\" ले सन्देश गुप्तिकरणबाट उल्टउन सक्दैन ।"
+
+#: viewer/objecttreeparser.cpp:757 viewer/objecttreeparser.cpp:1420
+msgid "No appropriate crypto plug-in was found."
+msgstr "उचित गुप्त प्लगइन फेला परेको छैन ।"
+
+#: viewer/objecttreeparser.cpp:1288
+#, fuzzy
+#| msgctxt "Missing profile name placeholder"
+#| msgid "Unnamed"
+msgctxt "display name for an unnamed attachment"
+msgid "Unnamed"
+msgstr "बेनामी"
+
+#: viewer/objecttreeparser.cpp:1415
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "गुप्त प्लग-इन \"%1\" ले हस्ताक्षर रुजु गर्न सकिँदैन ।"
+
+#: viewer/objecttreeparser.cpp:1423
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "%1 प्लग-इन फेला परेको छैन ।"
+
+#: viewer/objecttreeparser.cpp:1428
+#, kde-format
+msgid ""
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
+msgstr "सन्देशमा चिन्ह लगाइएको छ, तर हस्ताक्षरको वैधता रुजु गर्न सकिँदैन ।<br />कारण: %1"
 
 #: viewer/pluginloaderbase.cpp:89
 #, fuzzy
@@ -1576,192 +2043,192 @@ msgstr "स्तम्भ नपढ्नुहोस्"
 msgid "No description available"
 msgstr "उपलब्ध छैन"
 
-#: viewer/urlhandlermanager.cpp:130
+#: viewer/urlhandlermanager.cpp:129
 #, fuzzy
 #| msgid "Move to Trash"
 msgid "Move To Trash"
 msgstr "रद्दीटोकरीमा सार्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:134
+#: viewer/urlhandlermanager.cpp:133
 #, fuzzy
 #| msgctxt "Message->"
 #| msgid "Reply to All"
 msgid "Reply To All"
 msgstr "सबैलाई जवाफ दिनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:140
+#: viewer/urlhandlermanager.cpp:139
 #, fuzzy
 msgid "Print Message"
 msgstr "हालको सन्देश"
 
-#: viewer/urlhandlermanager.cpp:142
+#: viewer/urlhandlermanager.cpp:141
 #, fuzzy
 #| msgid "&Previous Message"
 msgid "Print Preview Message"
 msgstr "अघिल्लो सन्देश"
 
-#: viewer/urlhandlermanager.cpp:641
+#: viewer/urlhandlermanager.cpp:640
 msgid "Turn on HTML rendering for this message."
 msgstr "यो सन्देशका लागि HTML रेन्डरिङ खोल्नुहोस् ।"
 
-#: viewer/urlhandlermanager.cpp:643 viewer/viewer_p.cpp:1683
+#: viewer/urlhandlermanager.cpp:642 viewer/viewer_p.cpp:1683
 msgid "Load external references from the Internet for this message."
 msgstr "यो सन्देशका लागि इन्टरनेटबाट बाह्य सन्दर्भ लोड गर्नुहोस् ।"
 
-#: viewer/urlhandlermanager.cpp:645
+#: viewer/urlhandlermanager.cpp:644
 #, fuzzy
 #| msgid "Work online"
 msgid "Work online."
 msgstr "अनलाइन कार्य गर्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:647
+#: viewer/urlhandlermanager.cpp:646
 #, fuzzy
 #| msgid "from checked accounts only"
 msgid "Make account online."
 msgstr "चेक गरिएका खाताबाट मात्र"
 
-#: viewer/urlhandlermanager.cpp:649
+#: viewer/urlhandlermanager.cpp:648
 #, fuzzy
 #| msgid "&Encrypt Message"
 msgid "Decrypt message."
 msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:651
+#: viewer/urlhandlermanager.cpp:650
 #, fuzzy
 #| msgid "No signature found"
 msgid "Show signature details."
 msgstr "हस्ताक्षर फेला परेन"
 
-#: viewer/urlhandlermanager.cpp:653
+#: viewer/urlhandlermanager.cpp:652
 #, fuzzy
 #| msgid "&Enable signature"
 msgid "Hide signature details."
 msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:655
+#: viewer/urlhandlermanager.cpp:654
 #, fuzzy
 #| msgid "Show attachment icon"
 msgid "Show attachment list."
 msgstr "सङ्लग्न प्रतिमा देखाउनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:657
+#: viewer/urlhandlermanager.cpp:656
 #, fuzzy
 #| msgid "Save Attachment As"
 msgid "Hide attachment list."
 msgstr "यस रूपमा सङ्लग्नता बचत गर्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:659
+#: viewer/urlhandlermanager.cpp:658
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show full \"To\" list"
 msgstr "सधैँँ देखाउनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:661
+#: viewer/urlhandlermanager.cpp:660
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Hide full \"To\" list"
 msgstr "सधैँँ देखाउनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:663
+#: viewer/urlhandlermanager.cpp:662
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Show full \"Cc\" list"
 msgstr "सधैँँ देखाउनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:665
+#: viewer/urlhandlermanager.cpp:664
 #, fuzzy
 #| msgid "Show alway&s"
 msgid "Hide full \"Cc\" list"
 msgstr "सधैँँ देखाउनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:670
+#: viewer/urlhandlermanager.cpp:669
 #, fuzzy
 #| msgid "Documentation"
 msgid "Open Documentation"
 msgstr "मिसिलीकरण"
 
-#: viewer/urlhandlermanager.cpp:700
+#: viewer/urlhandlermanager.cpp:699
 msgid "Expand all quoted text."
 msgstr "सबै उद्धृत पाठ विस्तार गर्नुहोस् ।"
 
-#: viewer/urlhandlermanager.cpp:702
+#: viewer/urlhandlermanager.cpp:701
 msgid "Collapse quoted text."
 msgstr "उद्धृत पाठ संक्षिप्त गर्नुहोस् ।"
 
-#: viewer/urlhandlermanager.cpp:769
+#: viewer/urlhandlermanager.cpp:768
 msgid "Could not start certificate manager. Please check your installation."
 msgstr "प्रमाणपत्र प्रबन्धक सुरु गर्न सकेन । कृपया तपाईँको स्थापना जाँच गर्नुहोस् ।"
 
-#: viewer/urlhandlermanager.cpp:771
+#: viewer/urlhandlermanager.cpp:770
 msgid "KMail Error"
 msgstr "केडीई मेल त्रुटि"
 
-#: viewer/urlhandlermanager.cpp:783
+#: viewer/urlhandlermanager.cpp:782
 #, kde-format
 msgid "Show certificate 0x%1"
 msgstr "0x%1 प्रमाणपत्र देखाउनुहोस्"
 
-#: viewer/urlhandlermanager.cpp:853
+#: viewer/urlhandlermanager.cpp:852
 #, fuzzy
 #| msgid "Open in Address Book"
 msgid "&Open in Address Book"
 msgstr "ठेगाना पुस्तक भित्र खोल्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:856
+#: viewer/urlhandlermanager.cpp:855
 #, fuzzy
 #| msgid "Email Address"
 msgid "&Copy Email Address"
 msgstr "इमेल ठेगाना"
 
-#: viewer/urlhandlermanager.cpp:869 viewer/viewer_p.cpp:2607
+#: viewer/urlhandlermanager.cpp:868 viewer/viewer_p.cpp:2607
 msgid "Address copied to clipboard."
 msgstr "क्लिपबोर्डमा ठेगाना प्रतिलिपि गरियो ।"
 
-#: viewer/urlhandlermanager.cpp:881
+#: viewer/urlhandlermanager.cpp:880
 #, fuzzy
 #| msgid "Open in Address Book"
 msgid "Lookup the contact in KAddressbook"
 msgstr "ठेगाना पुस्तक भित्र खोल्नुहोस्"
 
-#: viewer/urlhandlermanager.cpp:1008
+#: viewer/urlhandlermanager.cpp:1007
 #, kde-format
 msgid "Attachment: %1"
 msgstr "सङ्लग्नता: %1"
 
-#: viewer/urlhandlermanager.cpp:1011
+#: viewer/urlhandlermanager.cpp:1010
 #, fuzzy, kde-format
 #| msgid "Encapsulated message"
 msgid "Encapsulated Message (Subject: %1)"
 msgstr "इनक्याप्सुलेट गरिएको सन्देश"
 
-#: viewer/urlhandlermanager.cpp:1014
+#: viewer/urlhandlermanager.cpp:1013
 #, fuzzy
 #| msgid "Encapsulated message"
 msgid "Encapsulated Message"
 msgstr "इनक्याप्सुलेट गरिएको सन्देश"
 
-#: viewer/urlhandlermanager.cpp:1017
+#: viewer/urlhandlermanager.cpp:1016
 #, fuzzy
 #| msgid "Name of the attachment:"
 msgid "Unnamed attachment"
 msgstr "सङ्लग्नताको नाम:"
 
-#: viewer/urlhandlermanager.cpp:1056
+#: viewer/urlhandlermanager.cpp:1055
 msgid "Show GnuPG Audit Log for this operation"
 msgstr ""
 
-#: viewer/urlhandlermanager.cpp:1096
+#: viewer/urlhandlermanager.cpp:1095
 msgid "Opening URL..."
 msgstr "यूआरएल खोल्दैछ..."
 
-#: viewer/urlhandlermanager.cpp:1105
+#: viewer/urlhandlermanager.cpp:1104
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to execute <b>%1</b>?</qt>"
 msgctxt "@info"
 msgid "Do you really want to execute <filename>%1</filename>?"
 msgstr "<qt>के तपाईँ वास्तवमै <b>%1</b> कार्यान्वयन गर्न चाहनुहुन्छ?</qt>"
 
-#: viewer/urlhandlermanager.cpp:1106
+#: viewer/urlhandlermanager.cpp:1105
 msgid "Execute"
 msgstr "कार्यान्वयन गर्नुहोस्"
 
@@ -2238,347 +2705,6 @@ msgstr "फोल्डर चयन गर्नुहोस्"
 #: widgets/zoomactionmenu.cpp:184
 msgid "Zoom"
 msgstr ""
-
-#~ msgid "Encapsulated message"
-#~ msgstr "इनक्याप्सुलेट गरिएको सन्देश"
-
-#~ msgid "End of encapsulated message"
-#~ msgstr "इन्क्याप्सुलेटेड सन्देशको अन्त्यमा"
-
-#, fuzzy
-#~ msgid "Please wait while the message is being decrypted..."
-#~ msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
-
-#~ msgid "Encrypted message"
-#~ msgstr "गुप्तिकृत सन्देश"
-
-#~ msgid "Encrypted message (decryption not possible)"
-#~ msgstr "गुप्तिकृत सन्देश (गुप्तिकरण उल्टाउन सम्भव छैन)"
-
-#~ msgid "Reason: %1"
-#~ msgstr "कारण: %1"
-
-#~ msgid "End of encrypted message"
-#~ msgstr "गुप्तिकृत सन्देशको अन्त्यमा"
-
-#~ msgid "Error: Signature not verified"
-#~ msgstr "त्रुटि: हस्ताक्षर रुजु गरिएको छैन"
-
-#~ msgid "Good signature"
-#~ msgstr "ठीक हस्ताक्षर"
-
-#~ msgid "<b>Bad</b> signature"
-#~ msgstr "<b>गलत</b> हस्ताक्षर"
-
-#~ msgid "No public key to verify the signature"
-#~ msgstr "हस्ताक्षर रुजु गर्न सार्वजनिक कुञ्जी छैन"
-
-#~ msgid "No signature found"
-#~ msgstr "हस्ताक्षर फेला परेन"
-
-#~ msgid "Error verifying the signature"
-#~ msgstr "हस्ताक्षर रुजु गर्दा त्रुटि"
-
-#~ msgid "Different results for signatures"
-#~ msgstr "हस्ताक्षरको फरक परिणाम"
-
-#~ msgid "No status information available."
-#~ msgstr "स्थिति सूचना उपलब्ध छैन ।"
-
-#~ msgid "Good signature."
-#~ msgstr "ठीक हस्ताक्षर ।"
-
-#~ msgid "One key has expired."
-#~ msgstr "एउटा कुञ्जीको म्याद समाप्त भएको छ ।"
-
-#~ msgid "The signature has expired."
-#~ msgstr "हस्ताक्षरको म्याद समाप्त भएको छ ।"
-
-#~ msgid "Unable to verify: key missing."
-#~ msgstr "रुजू गर्न असमर्थ: कुञ्जी हरायो ।"
-
-#~ msgid "CRL not available."
-#~ msgstr "CRL उपलब्ध छैन ।"
-
-#~ msgid "Available CRL is too old."
-#~ msgstr "उपलब्ध CRL धेरै पुनानो छ ।"
-
-#~ msgid "A policy was not met."
-#~ msgstr "नीति मिलेको छैन ।"
-
-#~ msgid "A system error occurred."
-#~ msgstr "एउट प्रणाली त्रुटि उत्पन्न भयो ।"
-
-#~ msgid "One key has been revoked."
-#~ msgstr "एउटा कुञ्जी खारेज गरिएको छ ।"
-
-#~ msgid "<b>Bad</b> signature."
-#~ msgstr "<b>गलत</b> हस्ताक्षर ।"
-
-#, fuzzy
-#~| msgid "&Enable signature"
-#~ msgid "Invalid signature."
-#~ msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
-
-#, fuzzy
-#~| msgid "Not enough information to check signature. %1"
-#~ msgid "Not enough information to check signature validity."
-#~ msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
-
-#, fuzzy
-#~| msgid "Signatures"
-#~ msgid "Signature is valid."
-#~ msgstr "हस्ताक्षर"
-
-#, fuzzy
-#~| msgid "Show alway&s"
-#~ msgid "Show Details"
-#~ msgstr "सधैँँ देखाउनुहोस्"
-
-#, fuzzy
-#~| msgid "Not available"
-#~ msgid "No Audit Log available"
-#~ msgstr "उपलब्ध छैन"
-
-#, fuzzy
-#~| msgid ""
-#~| "Error retrieving quota information from server\n"
-#~| "%1"
-#~ msgid "Error Retrieving Audit Log: %1"
-#~ msgstr ""
-#~ "सर्भरबाट कोटा जानकारी पुन: प्राप्त गर्दा त्रुटि\n"
-#~ "%1"
-
-#, fuzzy
-#~| msgid "Logging Details"
-#~ msgid "Hide Details"
-#~ msgstr "लगिङ विवरण"
-
-#, fuzzy
-#~ msgid "Please wait while the signature is being verified..."
-#~ msgstr "कृपया सन्देश स्थानान्तरण हुदा प्रतिक्षा गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Certificates"
-#~ msgid "certificate"
-#~ msgstr "प्रमाणपत्र"
-
-#, fuzzy
-#~| msgid "Warning:"
-#~ msgctxt "Start of warning message."
-#~ msgid "Warning:"
-#~ msgstr "चेतावनी:"
-
-#~ msgid "Sender's mail address is not stored in the %1 used for signing."
-#~ msgstr "साइनिङका लागि प्रयोग गरिएको प्रेषकको मेल ठेगाना %1 मा भण्डारण गरिएको छैन ।"
-
-#~ msgid "sender: "
-#~ msgstr "प्रेषक: "
-
-#~ msgid "stored: "
-#~ msgstr "भण्डारण गरिएको: "
-
-#~ msgid ""
-#~ "No mail address is stored in the %1 used for signing, so we cannot "
-#~ "compare it to the sender's address %2."
-#~ msgstr ""
-#~ "साइनिङका लागि प्रयोग गरिएको इमेल ठेगाना %1 मा भण्डारण गरिएको छैन, त्यसैले यसलाई "
-#~ "हामीले प्रेषकको ठेगाना %2 सँग तुलना गर्न सक्दैनौ ।"
-
-#~ msgid "Not enough information to check signature. %1"
-#~ msgstr "हस्ताक्षर जाँच गर्न पर्याप्त सूचना छैन । %1"
-
-#~ msgid "Message was signed with unknown key."
-#~ msgstr "अज्ञात कुञ्जीद्वारा सन्देश चिन्ह लगाइएको थियो ।"
-
-#~ msgid "Message was signed by %1."
-#~ msgstr "सन्देश %1 द्वारा चिन्ह लगाइएको थियो ।"
-
-#~ msgid "Message was signed with key %1."
-#~ msgstr "सन्देश कुञ्जी %1 ले चिन्ह लगाइएको थियो ।"
-
-#~ msgid "Message was signed on %1 with key %2."
-#~ msgstr "%1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
-
-#~ msgid "Message was signed by %3 on %1 with key %2"
-#~ msgstr "%3 द्वारा %1 मा कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो"
-
-#~ msgid "Message was signed by %2 with key %1."
-#~ msgstr "%2 द्वारा कुञ्जी %1 ले सन्देशमा चिन्ह लगाइएको थियो ।"
-
-#~ msgid "Status: "
-#~ msgstr "वस्तुस्थिति: "
-
-#~ msgid "Message was signed on %1 with unknown key %2."
-#~ msgstr "%1 मा अज्ञात कुञ्जी %2 ले सन्देश चिन्ह लगाइएको थियो ।"
-
-#~ msgid "Message was signed with unknown key %1."
-#~ msgstr "अज्ञता कुञ्जी %1 ले सन्देश चिन्ह लगाइएको थियो ।"
-
-#~ msgid "The validity of the signature cannot be verified."
-#~ msgstr "हस्ताक्षरको वैधता रुजु गर्न सकिने छैन ।"
-
-#~ msgid "Message was signed by %2 (Key ID: %1)."
-#~ msgstr "सन्देश %2 द्वारा चिन्ह लगाइएको थियो(कुञ्जीआईडी: %1) ।"
-
-#~ msgid "The signature is valid, but the key's validity is unknown."
-#~ msgstr "हस्ताक्षर वैध छ, तर कुञ्जीको वैधता अज्ञाता छ ।"
-
-#~ msgid "The signature is valid and the key is marginally trusted."
-#~ msgstr "हस्ताक्षर वैध छ र कुञ्जी आंशिक विश्वासिलो छ ।"
-
-#~ msgid "The signature is valid and the key is fully trusted."
-#~ msgstr "हस्ताक्षर वैध छ र कुञ्जी पूर्ण विश्वासिलो छ ।"
-
-#~ msgid "The signature is valid and the key is ultimately trusted."
-#~ msgstr "हस्ताक्षर वैध छ र कुञ्जी अतिनै विश्वासिलो छ ।"
-
-#~ msgid "The signature is valid, but the key is untrusted."
-#~ msgstr "हस्ताक्षर वैध छ, तर कुञ्जी अविश्वाशिलो छ ।"
-
-#~ msgid "Warning: The signature is bad."
-#~ msgstr "चेतावनी: हस्ताक्षर गलत छ ।"
-
-#~ msgid "End of signed message"
-#~ msgstr "चिन्ह लगाएका सन्देशको अन्त्यमा"
-
-#~ msgid ""
-#~ "<b>Note:</b> This HTML message may contain external references to images "
-#~ "etc. For security/privacy reasons external references are not loaded. If "
-#~ "you trust the sender of this message then you can load the external "
-#~ "references for this message <a href=\"kmail:loadExternal\">by clicking "
-#~ "here</a>."
-#~ msgstr ""
-#~ "<b>द्रष्टब्य:</b> यो HTML सन्देशले छवि आदिमा बाह्य सन्दर्भ समावेश गर्न सक्छ । सुरक्षा/"
-#~ "गोप्यताका कारणले बाह्य सन्दर्भ लोड गरिएका छैनन् । तपाईँलाई यो सन्देश प्रेषकमा विश्वास "
-#~ "भएमा यो सन्देशका लागि बाह्य सन्दर्भ लोड गर्न <a href=\"kmail:loadExternal\">यहाँ "
-#~ "क्लिक गरेर</a> लोड गर्न सक्नुहुन्छ ।"
-
-#~ msgid ""
-#~ "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
-#~ "HTML code is shown. If you trust the sender of this message then you can "
-#~ "activate formatted HTML display for this message <a href=\"kmail:showHTML"
-#~ "\">by clicking here</a>."
-#~ msgstr ""
-#~ "<b>द्रष्टव्य:</b> यो HTML सन्देश हो । सुरक्षाका कारणले, केवल कच्चा HTML सङ्केत देखिएको "
-#~ "छ । तपाईँलाई यो सन्देशको प्रेषकमा विश्वास भएमा यो सन्देशका लागि ढाँचावद्ध गरिएको "
-#~ "HTML प्रदर्शन <a href=\"kmail:showHTML\">यहाँ क्लिक गरेर </a> सक्रिय पार्न "
-#~ "सक्नुहुन्छ ।"
-
-#~ msgid "Wrong Crypto Plug-In."
-#~ msgstr "गलत क्राइप्टो प्लगइन ।"
-
-#, fuzzy
-#~| msgid "Store sent messages encry&pted"
-#~ msgid "This message is encrypted."
-#~ msgstr "पठइएका गुप्तिकृत सन्देश भण्डारण गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "&Encrypt Message"
-#~ msgid "Decrypt Message"
-#~ msgstr "सन्देश गुप्तिकरण गर्नुहोस्"
-
-#~ msgid "The crypto engine returned no cleartext data."
-#~ msgstr "क्राइप्टो इञ्जिनले क्लेयरटेक्स्ट नभएको डेटा फिर्ता गर्यो ।"
-
-#, fuzzy
-#~| msgid "(unknown)"
-#~ msgctxt "Status of message unknown."
-#~ msgid "(unknown)"
-#~ msgstr "(अज्ञात)"
-
-#, fuzzy
-#~| msgid "Sorry, certificate could not be imported.<br>Reason: %1"
-#~ msgid "Sorry, certificate could not be imported.<br />Reason: %1"
-#~ msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयात गर्न सकिने छैन ।<br>कारण: %1"
-
-#~ msgid "Sorry, no certificates were found in this message."
-#~ msgstr "माफ गर्नुहोस्, यो सन्देशमा प्रमाणपत्र फेला परेका छैनन् ।"
-
-#~ msgid "Certificate import status:"
-#~ msgstr "प्रमाणपत्र आयात स्थिति:"
-
-#, fuzzy
-#~ msgid "1 new certificate was imported."
-#~ msgid_plural "%1 new certificates were imported."
-#~ msgstr[0] "१ नयाँ प्रमाणपत्र आयात गरिएको थियो ।"
-#~ msgstr[1] "%1 नयाँ प्रमाणपत्र आयात गरिएका थिए ।"
-
-#, fuzzy
-#~ msgid "1 certificate was unchanged."
-#~ msgid_plural "%1 certificates were unchanged."
-#~ msgstr[0] "१ प्रमाणपत्र अपरिवर्तित थिए ।"
-#~ msgstr[1] "%1 प्रमाणपत्र अपरिवर्तित थिए ।"
-
-#, fuzzy
-#~ msgid "1 new secret key was imported."
-#~ msgid_plural "%1 new secret keys were imported."
-#~ msgstr[0] "१ नयाँ गोप्य कुञ्जी आयात गरिएको थियो ।"
-#~ msgstr[1] "%1 नयाँ गोप्य कुञ्जी आयात गरिएका थिए ।"
-
-#, fuzzy
-#~ msgid "1 secret key was unchanged."
-#~ msgid_plural "%1 secret keys were unchanged."
-#~ msgstr[0] "१ गोप्य कुञ्जी अपरिवर्तित थियो ।"
-#~ msgstr[1] "%1 गोप्य कुञ्जी अपरिवर्तित थिए ।"
-
-#~ msgid "Sorry, no details on certificate import available."
-#~ msgstr "माफ गर्नुहोस्, प्रमाणपत्र आयातमा विस्तृत विवरण उपलब्ध छैन ।"
-
-#~ msgid "Certificate import details:"
-#~ msgstr "प्रमाणपत्र आयात विस्तृत विवरण:"
-
-#, fuzzy
-#~| msgid "Failed: %1 (%2)"
-#~ msgctxt "Certificate import failed."
-#~ msgid "Failed: %1 (%2)"
-#~ msgstr "असफल: %1 (%2)"
-
-#~ msgid "New or changed: %1 (secret key available)"
-#~ msgstr "नयाँ वा परिवर्तित: %1 (गोप्य कुञ्जी उपलब्ध)"
-
-#~ msgid "New or changed: %1"
-#~ msgstr "नयाँ वा परिवर्तित: %1"
-
-#, fuzzy
-#~| msgid "Crypto plug-in \"%1\" could not decrypt the data."
-#~ msgid "Could not decrypt the data."
-#~ msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
-
-#~ msgid "Crypto plug-in \"%1\" could not decrypt the data."
-#~ msgstr "गुप्त प्लग-इन \"%1\" ले डेटाको गुप्तिकरण उल्टाउन सकेन ।"
-
-#~ msgid "Error: %1"
-#~ msgstr "त्रुटि: %1"
-
-#~ msgid "Crypto plug-in \"%1\" is not initialized."
-#~ msgstr "गुप्त प्लग-इन \"%1\" सुरुआत गरिएको छैन ।"
-
-#~ msgid "Crypto plug-in \"%1\" cannot decrypt messages."
-#~ msgstr "गुप्त प्लग-इन \"%1\" ले सन्देश गुप्तिकरणबाट उल्टउन सक्दैन ।"
-
-#~ msgid "No appropriate crypto plug-in was found."
-#~ msgstr "उचित गुप्त प्लगइन फेला परेको छैन ।"
-
-#, fuzzy
-#~| msgctxt "Missing profile name placeholder"
-#~| msgid "Unnamed"
-#~ msgctxt "display name for an unnamed attachment"
-#~ msgid "Unnamed"
-#~ msgstr "बेनामी"
-
-#~ msgid "Crypto plug-in \"%1\" cannot verify signatures."
-#~ msgstr "गुप्त प्लग-इन \"%1\" ले हस्ताक्षर रुजु गर्न सकिँदैन ।"
-
-#~ msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-#~ msgid "No %1 plug-in was found."
-#~ msgstr "%1 प्लग-इन फेला परेको छैन ।"
-
-#~ msgid ""
-#~ "The message is signed, but the validity of the signature cannot be "
-#~ "verified.<br />Reason: %1"
-#~ msgstr ""
-#~ "सन्देशमा चिन्ह लगाइएको छ, तर हस्ताक्षरको वैधता रुजु गर्न सकिँदैन ।<br />कारण: %1"
 
 #, fuzzy
 #~| msgid "Key Export Failed"
