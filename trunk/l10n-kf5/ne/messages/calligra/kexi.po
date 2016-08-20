@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-08-19 06:58+0000\n"
+"POT-Creation-Date: 2016-08-20 07:11+0000\n"
 "PO-Revision-Date: 2007-08-23 19:47+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -50,8 +50,12 @@ msgid "This function is not available for version %1 of %2 application."
 msgstr "यो प्रकार्य संस्करण %2 को %1 अनुप्रयोगका लागि उपलब्ध हुँदैन ।"
 
 #: core/kexi.cpp:344
-#, kde-format
-msgid "\"%1\" function is not available for version %2 of %3 application."
+#, fuzzy, kde-format
+#| msgid "\"%1\" function is not available for version %2 of %3 application."
+msgctxt "@info"
+msgid ""
+"<resource>%1</resource> function is not available for version %2 of %3 "
+"application."
 msgstr "\"%1\" प्रकार्य संस्करण %3 को %2 अनुप्रयोगका लागि उपलब्ध हुँदैन ।"
 
 #: core/kexi.cpp:397
@@ -724,7 +728,7 @@ msgctxt "'user' command line option"
 msgid ""
 "Database server's user name when connecting to a project. Ignored if the "
 "project is opened using a shortcut file. Default user name is the same as "
-"the current login (\"%1\")."
+"the current login (<resource>%1</resource>)."
 msgstr ""
 "डाटाबेस परियोजनामा जडानका लागि प्रयोग गरिने\n"
 "सर्भर (होस्ट) ।\n"
@@ -854,20 +858,22 @@ msgstr "अज्ञात त्रुटि"
 msgid "Details:"
 msgstr "विवरणहरु:"
 
-#: core/kexipart.cpp:68
-#, kde-format
-msgid "Object \"%1\" could not be opened in Design View."
+#: core/kexipart.cpp:69
+#, fuzzy, kde-format
+#| msgid "Object \"%1\" could not be opened in Design View."
+msgctxt "@info"
+msgid "Object <resource>%1</resource> could not be opened in Design View."
 msgstr "वस्तु \"%1\" डिजाइन दृश्यमा खोल्न सकेन ।"
 
-#: core/kexipart.cpp:69
+#: core/kexipart.cpp:70
 msgid "Object could not be opened in Data View."
 msgstr "डेटा दृश्यमा वस्तु खुल्न सकेन ।"
 
-#: core/kexipart.cpp:70
+#: core/kexipart.cpp:71
 msgid "Do you want to open it in Text View?"
 msgstr "के तपाईं यसलाई पाठ दृश्यमा खोल्न चाहनुहुन्छ?"
 
-#: core/kexipart.cpp:109
+#: core/kexipart.cpp:110
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
 "0..9). Use '_' character instead of spaces. First character should be a..z "
@@ -876,113 +882,127 @@ msgctxt ""
 msgid "object"
 msgstr "वस्तु"
 
-#: core/kexipart.cpp:246
+#: core/kexipart.cpp:247
 #, fuzzy
 #| msgid "Could not remove object's data."
 msgid "Could not create object's window."
 msgstr "वस्तुको डेटा हटाउन सकेन ।"
 
-#: core/kexipart.cpp:246
+#: core/kexipart.cpp:247
 #, fuzzy
 #| msgid "Object design may be corrupted."
 msgid "The plugin or object definition may be corrupted."
 msgstr "वस्तु डिजाइन अनुपयोगी  हुनसक्छ।"
 
-#: core/kexipart.cpp:268
+#: core/kexipart.cpp:269
 msgid "Could not load object's definition."
 msgstr "वस्तुको परिभाषा लोड गर्न सकेन ।"
 
-#: core/kexipart.cpp:268
+#: core/kexipart.cpp:269
 msgid "Object design may be corrupted."
 msgstr "वस्तु डिजाइन अनुपयोगी  हुनसक्छ।"
 
-#: core/kexipart.cpp:270
-#, kde-format
-msgid "You can delete \"%1\" object and create it again."
+#: core/kexipart.cpp:272
+#, fuzzy, kde-format
+#| msgid "You can delete \"%1\" object and create it again."
+msgctxt "@info"
+msgid "You can delete <resource>%1</resource> object and create it again."
 msgstr "तपाईं \"%1\" वस्तु मेटेर यसलाई फेरि सिर्जना गर्न सक्नुहुन्छ ।"
 
-#: core/kexipart.cpp:353
+#: core/kexipart.cpp:355
 msgid "Could not load object's data."
 msgstr "वस्तुको डेटालाई लोड गर्न सकेन ।"
 
-#: core/kexipart.cpp:354
-#, kde-format
-msgid "Data identifier: \"%1\"."
-msgstr "डेटा पहिचायक: \"%1\""
+#: core/kexipart.cpp:357
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Data identifier: <resource>%1</resource>."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexipartinfo.cpp:108
+#: core/kexipartinfo.cpp:109
 #, fuzzy, kde-format
 #| msgid "cannot create object of type \"%1\""
-msgid "Create new object of type \"%1\""
+msgctxt "@info"
+msgid "Create new object of type <resource>%1</resource>"
 msgstr "\"%1\" प्रकारको वस्तु सिर्जना गर्न सकिँदैन"
 
-#: core/kexipartinfo.cpp:110
+#: core/kexipartinfo.cpp:112
 #, fuzzy, kde-format
 #| msgid "cannot create object of type \"%1\""
-msgid "Creates new object of type \"%1\""
+msgctxt "@info"
+msgid "Creates new object of type <resource>%1</resource>"
 msgstr "\"%1\" प्रकारको वस्तु सिर्जना गर्न सकिँदैन"
 
 #: core/kexipartmanager.cpp:113
 #, fuzzy, kde-format
-#| msgid "Could not load \"%1\" plugin."
+#| msgid "Could not remove file \"%1\"."
 msgctxt "@info"
-msgid "Could not load Kexi plugin file \"%1\"."
-msgstr "\"%1\" प्लगइन लोड गर्न सकेन ।"
+msgid "Could not load Kexi plugin file <filename>%1</filename>."
+msgstr "\"%1\" फाइल हटाउन सकेन ।"
 
-#: core/kexipartmanager.cpp:125
+#: core/kexipartmanager.cpp:126
 #, fuzzy, kde-format
-#| msgid "Could not open project \"%1\"."
-msgid "Could not open Kexi plugin \"%1\"."
-msgstr "\"%1\" परियोजना खोल्न सकेन ।"
+#| msgid "Could not remove file \"%1\"."
+msgctxt "@info"
+msgid "Could not open Kexi plugin <filename>%1</filename>."
+msgstr "\"%1\" फाइल हटाउन सकेन ।"
 
-#: core/kexipartmanager.cpp:273
+#: core/kexipartmanager.cpp:274
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "No plugin for ID <resource>%1</resource>"
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiproject.cpp:132 main/KexiMainWindow.cpp:3477
+#: core/kexiproject.cpp:132 main/KexiMainWindow.cpp:3481
 msgid "Could not set empty name for this object."
 msgstr "यो वस्तुका लागि खाली नाम सेट गर्न सकेन ।"
 
-#: core/kexiproject.cpp:137
-#, kde-format
-msgid "Could not use this name. Object with name \"%1\" already exists."
+#: core/kexiproject.cpp:138
+#, fuzzy, kde-format
+#| msgid "Could not use this name. Object with name \"%1\" already exists."
+msgctxt "@info"
+msgid "Could not use this name. Object <resource>%1</resource> already exists."
 msgstr "यो नाम प्रयोग गर्न सकेन । \"%1\" सँगको नाम पहिले नै अवस्थित छ ।"
 
-#: core/kexiproject.cpp:148
-#, kde-format
-msgid "Could not rename object \"%1\"."
-msgstr "\"%1\" वस्तुलाई पुन: नामकरण गर्न सकेन ।"
+#: core/kexiproject.cpp:150
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Could not rename object <resource>%1</resource>."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiproject.cpp:299
-#, kde-format
-msgid "Could not open project \"%1\"."
-msgstr "\"%1\" परियोजना खोल्न सकेन ।"
+#: core/kexiproject.cpp:302
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Could not open project <resource>%1</resource>."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiproject.cpp:304
+#: core/kexiproject.cpp:308
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not remove project.\n"
 #| "The file \"%1\" does not exist."
 msgctxt "@info"
 msgid ""
-"Could not open project file. The file <filename>%1</filename> does not exist."
+"Could not open project. The project file <filename>%1</filename> does not "
+"exist."
 msgstr ""
 "परियोजना हटाउन सकेन ।\n"
 "फाइल \"%1\" अवस्थित छैन ।"
 
-#: core/kexiproject.cpp:307 core/kexiproject.cpp:1462
-#: main/startup/KexiStartup.cpp:812 main/startup/KexiStartup.cpp:821
-#: main/startup/KexiStartup.cpp:832
+#: core/kexiproject.cpp:311 core/kexiproject.cpp:1474
+#: main/startup/KexiStartup.cpp:817 main/startup/KexiStartup.cpp:826
+#: main/startup/KexiStartup.cpp:837
 #, fuzzy
 #| msgid "Could not open \"%1\" project file."
 msgctxt "@title:window"
 msgid "Could Not Open File"
 msgstr "\"%1\" परियोजना फाइल खोल्न सकेन ।"
 
-#: core/kexiproject.cpp:343
+#: core/kexiproject.cpp:347
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Database project %1 does not appear to have been created using Kexi."
@@ -995,85 +1015,91 @@ msgstr ""
 "<qt>%1 डाटाबेस परियोजना केक्सी प्रयोग गरेर सिर्जना भएको जस्तो देखिदैन ।<br><br>के "
 "तपाईँले नयाँ केक्सी परियोजनाको रूपमा यसलाई आयात गर्न चाहनुहुन्छ ?</qt>"
 
-#: core/kexiproject.cpp:368
-#, kde-format
-msgid "Could not create project \"%1\"."
-msgstr "\"%1\" परियोजना सिर्जना गर्न सकेन ।"
+#: core/kexiproject.cpp:374
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Could not create project <resource>%1</resource>."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiproject.cpp:411 core/kexiproject.cpp:480
+#: core/kexiproject.cpp:418 core/kexiproject.cpp:487
 msgid "Project major version"
 msgstr "परियोजना ठूलो संस्करण"
 
-#: core/kexiproject.cpp:413 core/kexiproject.cpp:482
+#: core/kexiproject.cpp:420 core/kexiproject.cpp:489
 msgid "Project minor version"
 msgstr "परियोजना सानो संस्करण"
 
-#: core/kexiproject.cpp:415
+#: core/kexiproject.cpp:422
 msgid "Project caption"
 msgstr "परियोजना क्याप्सन"
 
-#: core/kexiproject.cpp:417
+#: core/kexiproject.cpp:424
 msgid "Project description"
 msgstr "परियोजना वर्णन"
 
-#: core/kexiproject.cpp:952
+#: core/kexiproject.cpp:960
 #, fuzzy, kde-format
-#| msgid "Opening object \"%1\" failed."
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
 msgid ""
-"Opening object \"%1\" failed.\n"
+"Opening object <resource>%1</resource> failed.\n"
 "%2%3"
-msgstr "\"%1\" वस्तु खोल्न असफल ।"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiproject.cpp:971
+#: core/kexiproject.cpp:979
 msgid "This project is opened as read only."
 msgstr "यो परियोजना पढ्नको लागि मात्र खोलियो ।"
 
-#: core/kexiproject.cpp:1003
+#: core/kexiproject.cpp:1011
 #, fuzzy
 #| msgid "Could not remove object's data."
 msgid "Could not remove object's user data."
 msgstr "वस्तुको डेटा हटाउन सकेन ।"
 
-#: core/kexiproject.cpp:1131
-msgid "Warning: entire project's data will be removed."
+#: core/kexiproject.cpp:1139
+#, fuzzy
+#| msgid "Warning: entire project's data will be removed."
+msgctxt "warning"
+msgid "Entire project's data and design will be removed."
 msgstr "चेतावनी: सम्पूर्ण परियोजनाको डेटा हटाइनेछ ।"
 
-#: core/kexiproject.cpp:1147
+#: core/kexiproject.cpp:1155
 #, fuzzy, kde-format
 #| msgid ""
 #| "The project %1 already exists.\n"
 #| "Do you want to replace it with a new, blank one?"
 msgctxt "@info (don't add tags around %1, it's done already)"
 msgid ""
-"The project %1 already exists.<nl/>Do you want to replace it with a new, "
-"blank one?<nl/>%2"
+"<para>The project %1 already exists.</para><para>Do you want to replace it "
+"with a new, blank one?</para><para><warning>%2</warning></para>"
 msgstr ""
 "परियोजना %1 पहिलेनै अवस्थित छ ।\n"
 "के तपाईं यसलाई नयाँ, एउटा खालीसँग बदल्न चाहनुहुन्छ?"
 
-#: core/kexiproject.cpp:1151
+#: core/kexiproject.cpp:1160
 #, fuzzy
 #| msgid "Replace"
 msgctxt "@action:button"
 msgid "Replace"
 msgstr "बदल्नुहोस्"
 
-#: core/kexiproject.cpp:1175
-#, fuzzy, kde-format
-#| msgid "Do you want to drop the project \"%1\"?"
+#: core/kexiproject.cpp:1185
+#, kde-format
+msgctxt "@info"
 msgid ""
-"Do you want to delete the project \"%1\"?\n"
-"%1"
-msgstr "के तपाईँ \"%1\" परियोजना छोड्न चाहनुहुन्छ?"
+"<para>Do you want to delete the project <resource>%1</resource>?</"
+"para><para><warning>%2</warning></para>"
+msgstr ""
 
-#: core/kexiproject.cpp:1177
+#: core/kexiproject.cpp:1189
 #, fuzzy
 #| msgid "Delete object"
 msgctxt "@action:button"
 msgid "Delete Project"
 msgstr "वस्तु मेट्नुहोस्"
 
-#: core/kexiproject.cpp:1191
+#: core/kexiproject.cpp:1203
 #, fuzzy
 #| msgid ""
 #| "Could not drop this project. Database connection for this project has "
@@ -1085,13 +1111,13 @@ msgstr ""
 "यो परियोजना छोड्न सकेन । यो परियोजनाका लागि डाटाबेस जडान पढ्नका लागि मात्र "
 "खोलिएको हो ।"
 
-#: core/kexiproject.cpp:1456
+#: core/kexiproject.cpp:1468
 #, fuzzy
 #| msgid "Open As Read-Only"
 msgid "Open As Read Only"
 msgstr "पढ्ने मात्रको रूपमा खोल्नुहोस्"
 
-#: core/kexiproject.cpp:1459
+#: core/kexiproject.cpp:1471
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1099,21 +1125,21 @@ msgid ""
 "para><para>Do you want to open the file as read only?</para>"
 msgstr ""
 
-#: core/kexiprojectdata.cpp:200
+#: core/kexiprojectdata.cpp:199
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info database connection"
 msgid "<resource>%1</resource> (connection <resource>%2</resource>)"
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiprojectdata.cpp:205
+#: core/kexiprojectdata.cpp:204
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info database name"
 msgid "<resource>%1</resource>"
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: core/kexiprojectdata.cpp:240
+#: core/kexiprojectdata.cpp:239
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not remove project.\n"
@@ -1123,20 +1149,20 @@ msgstr ""
 "परियोजना हटाउन सकेन ।\n"
 "फाइल \"%1\" अवस्थित छैन ।"
 
-#: core/kexiprojectdata.cpp:248
+#: core/kexiprojectdata.cpp:247
 #, kde-format
 msgid ""
 "File <filename>%1</filename> does not contain group <resource>%2</resource>."
 msgstr ""
 
-#: core/kexiprojectdata.cpp:264
+#: core/kexiprojectdata.cpp:263
 #, kde-format
 msgid ""
 "Invalid value <resource>%1</resource> type specified in group <resource>%2</"
 "resource> of file <filename>%3</filename>."
 msgstr ""
 
-#: core/kexiprojectdata.cpp:272
+#: core/kexiprojectdata.cpp:271
 #, kde-format
 msgid ""
 "No valid \"engine\" field specified in group <resource>%1</resource> of file "
@@ -1306,7 +1332,7 @@ msgstr ""
 "डिजाइन परिवर्तन गरिएको छ । तपाईंले यसलाई अर्को दृश्यमा स्विच गर्नु भन्दा पहिले बचत "
 "गर्नुपर्दछ ।"
 
-#: core/KexiWindow.cpp:555 main/KexiMainWindow.cpp:2694
+#: core/KexiWindow.cpp:555 main/KexiMainWindow.cpp:2696
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "अर्को दृश्यमा स्विच गर्न असफल (%1) भयो ।"
@@ -1329,162 +1355,167 @@ msgstr "वस्तुको परिभाषा बचत गर्दा �
 #, fuzzy, kde-format
 #| msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" property for multiple widgets"
+msgid "Change <resource>%1</resource> property for multiple widgets"
 msgstr "\"%2\" देखि \"%3\" बाट तालिका फिल्डका लागि \"%1\" विशेषता परिवर्तन गर्नुहोस्"
 
-#: formeditor/commands.cpp:160
+#: formeditor/commands.cpp:161
 #, fuzzy, kde-format
-#| msgid "Set \"%1\" property for field \"%2\""
+#| msgid "Saving \"%1\" object failed."
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" property for widget \"%2\""
-msgstr " \"%2\" फिल्डका लागि \"%1\" विशेषता सेट गर्नुहोस्"
+msgid ""
+"Change <resource>%1</resource> property for widget <resource>%2</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: formeditor/commands.cpp:333
+#: formeditor/commands.cpp:334
 #, fuzzy
 #| msgid "Move multiple widgets"
 msgctxt "(qtundo-format)"
 msgid "Move multiple widgets"
 msgstr "बहु विजेटहरू सार्नुहोस्।"
 
-#: formeditor/commands.cpp:436
+#: formeditor/commands.cpp:437
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Grid"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:439
+#: formeditor/commands.cpp:440
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Left"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:442
+#: formeditor/commands.cpp:443
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Right"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:445
+#: formeditor/commands.cpp:446
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Top"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:448
+#: formeditor/commands.cpp:449
 #, fuzzy
 #| msgid "Align Widgets Position"
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Bottom"
 msgstr "विजेटको स्थान पङ्क्तिबद्व गर्नुहोस्"
 
-#: formeditor/commands.cpp:611
+#: formeditor/commands.cpp:612
 #, fuzzy
 #| msgid "Bring Widget to Front"
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Grid"
 msgstr "विजेटलाई अगाडि ल्याउनुहोस्"
 
-#: formeditor/commands.cpp:614
+#: formeditor/commands.cpp:615
 #, fuzzy
 #| msgid "Clear Widget Contents"
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Fit Contents"
 msgstr "विजेट सामग्री खाली गर्नुहोस्"
 
-#: formeditor/commands.cpp:617
+#: formeditor/commands.cpp:618
 #, fuzzy
 #| msgid "Bring Widget to Front"
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Narrowest"
 msgstr "विजेटलाई अगाडि ल्याउनुहोस्"
 
-#: formeditor/commands.cpp:620
+#: formeditor/commands.cpp:621
 #, fuzzy
 #| msgid "Resize Widgets to Widest"
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Widest"
 msgstr "फराकिलोमा विजेट रिसाइज गर्नुहोस्।"
 
-#: formeditor/commands.cpp:623
+#: formeditor/commands.cpp:624
 #, fuzzy
 #| msgid "Resize Widgets to Shortest"
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Shortest"
 msgstr "नजिकका लागि विजेटहरू रिसाइज गर्नुहोस्।"
 
-#: formeditor/commands.cpp:626
+#: formeditor/commands.cpp:627
 #, fuzzy
 #| msgid "Resize Widgets to Tallest"
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Tallest"
 msgstr "अग्लोका लागि विजेट रिसाइज गर्नुहोस्।"
 
-#: formeditor/commands.cpp:902
+#: formeditor/commands.cpp:903
 #, fuzzy, kde-format
-#| msgid "Insert table field \"%1\""
+#| msgid "Saving \"%1\" object failed."
 msgctxt "(qtundo-format)"
-msgid "Insert widget \"%1\""
-msgstr "तालिका फिल्ड \"%1\" घुसाउनुहोस्"
+msgid "Insert widget <resource>%1</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: formeditor/commands.cpp:905
+#: formeditor/commands.cpp:906
 #, fuzzy
 #| msgid "Insert AutoField widget"
 msgctxt "(qtundo-format)"
 msgid "Insert widget"
 msgstr "स्वत: फिल्ड विजेट घुसाउनुहोस्"
 
-#: formeditor/commands.cpp:946
-#, kde-format
+#: formeditor/commands.cpp:948
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not insert widget of type \"%1\". A problem with widget's creation "
+#| "encountered."
+msgctxt "@info"
 msgid ""
-"Could not insert widget of type \"%1\". A problem with widget's creation "
-"encountered."
+"Could not insert widget of type <resource>%1</resource>. A problem with "
+"widget's creation encountered."
 msgstr "\"%1\" प्रकारको विजेट घुसाउन सकिँदैन । विजेटका सिर्जनामा एउटा समस्या भेटियो ।"
 
-#: formeditor/commands.cpp:1115
+#: formeditor/commands.cpp:1117
 #, fuzzy
 #| msgid "Date"
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "मिति"
 
-#: formeditor/commands.cpp:1401
+#: formeditor/commands.cpp:1403
 #, fuzzy
 #| msgid "Delete Row"
 msgctxt "(qtundo-format)"
 msgid "Delete widget"
 msgstr "पङ्क्ति मेट्नुहोस्।"
 
-#: formeditor/commands.cpp:1509
+#: formeditor/commands.cpp:1511
 #, fuzzy
 #| msgid "Delete widget"
 msgctxt "(qtundo-format)"
 msgid "Duplicate widget"
 msgstr "विजेट मेट्नुहोस्"
 
-#: formeditor/commands.cpp:1568
+#: formeditor/commands.cpp:1570
 #, fuzzy
 #| msgid "Cut"
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "काट्नुहोस्"
 
-#: formeditor/commands.cpp:1801
+#: formeditor/commands.cpp:1803
 #, fuzzy
 #| msgid "Add Parameter"
 msgctxt "(qtundo-format)"
 msgid "Add Page"
 msgstr "परिमिति थप्नुहोस्"
 
-#: formeditor/commands.cpp:1848 formeditor/WidgetTreeWidget.cpp:117
+#: formeditor/commands.cpp:1850 formeditor/WidgetTreeWidget.cpp:117
 #, kde-format
 msgid "Page %1"
 msgstr "%1 पृष्ठ"
 
-#: formeditor/commands.cpp:1941
+#: formeditor/commands.cpp:1943
 #, fuzzy
 #| msgid "Remove Item"
 msgctxt "(qtundo-format)"
@@ -1623,7 +1654,7 @@ msgid "Contents"
 msgstr "टिप्पणीहरू"
 
 #: formeditor/editlistviewdialog.cpp:116 formeditor/form_p.cpp:254
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1817
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1820
 #: plugins/tables/kexitabledesignerview.cpp:366
 msgid "Caption"
 msgstr "क्याप्सन"
@@ -2204,74 +2235,79 @@ msgctxt "default indent value"
 msgid "default"
 msgstr "पूर्वनिर्धारित"
 
-#: formeditor/form.cpp:761
+#: formeditor/form.cpp:762
 #, fuzzy, kde-format
-#| msgid "Renaming object \"%1\" failed."
-msgid "Renaming widget \"%1\" to \"%2\" failed."
-msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid ""
+"Renaming widget <resource>%1</resource> to <resource>%2</resource> failed."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: formeditor/form.cpp:1318
+#: formeditor/form.cpp:1320
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+msgctxt "@info"
 msgid ""
-"Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid name "
-"(identifier) for a widget."
+"Could not rename widget <resource>%1</resource> to <resource>%2</resource> "
+"because <resource>%3</resource> is not a valid name (identifier) for a "
+"widget."
 msgstr ""
 "\"%1\" तालिकालाई \"%2\" मा पुन: नामकरण गर्न सकेन । \"%3\" तालिका पहिल्यै अवस्थित छ "
 "।"
 
-#: formeditor/form.cpp:1329
+#: formeditor/form.cpp:1333
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+msgctxt "@info"
 msgid ""
-"Could not rename widget \"%1\" to \"%2\" because a widget with the name "
-"\"%3\" already exists."
+"Could not rename widget <resource>%1</resource> to <resource>%2</resource> "
+"because a widget with the name <resource>%3</resource> already exists."
 msgstr ""
 "\"%1\" तालिकालाई \"%2\" मा पुन: नामकरण गर्न सकेन । \"%3\" तालिका पहिल्यै अवस्थित छ "
 "।"
 
-#: formeditor/form.cpp:1439 formeditor/form.cpp:1706
+#: formeditor/form.cpp:1443 formeditor/form.cpp:1710
 #, fuzzy, kde-format
 #| msgid "Multiple Widgets"
 msgid "Multiple Widgets (%1)"
 msgstr "बहु विजेट"
 
-#: formeditor/form.cpp:1696
+#: formeditor/form.cpp:1700
 #, fuzzy, kde-format
 #| msgctxt "Object name : Object type"
 #| msgid "%1 : %2"
 msgid "%1 : Form"
 msgstr "%1 : %2"
 
-#: formeditor/form.cpp:1755
+#: formeditor/form.cpp:1759
 msgid "No Buddy"
 msgstr "साथी छैन"
 
-#: formeditor/form.cpp:2164
+#: formeditor/form.cpp:2168
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Hor. Alignment"
 msgstr "तेर्सो पङ्क्तिबद्वता"
 
-#: formeditor/form.cpp:2165
+#: formeditor/form.cpp:2169
 #, fuzzy
 #| msgid "&Horizontally"
 msgid "Horizontal Alignment"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/form.cpp:2187
+#: formeditor/form.cpp:2191
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Ver. Alignment"
 msgstr "ठाडो पङ्क्तिबद्वता"
 
-#: formeditor/form.cpp:2188
+#: formeditor/form.cpp:2192
 #, fuzzy
 #| msgid "&Vertically"
 msgid "Vertical Alignment"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/form.cpp:2200
+#: formeditor/form.cpp:2204
 msgid "Word Break"
 msgstr "शब्द बिच्छेद"
 
@@ -2908,38 +2944,39 @@ msgstr "निर्यातका लागि डेटा खोल्न �
 #| "Could not open shortcut file\n"
 #| "\"%1\"."
 msgctxt "@info"
-msgid "Could not load Kexi Form Widgets plugin file \"%1\"."
+msgid "Could not load Kexi Form Widgets plugin file <filename>%1</filename>."
 msgstr ""
 "सर्टकट फाइल \"%1\" खोल्न\n"
 "सकिएन ।"
 
-#: formeditor/widgetlibrary.cpp:245
+#: formeditor/widgetlibrary.cpp:246
 #, fuzzy, kde-format
 #| msgid "Could not open project \"%1\"."
-msgid "Could not open Kexi Form Widgets plugin \"%1\"."
+msgctxt "@info"
+msgid "Could not open Kexi Form Widgets plugin <filename>%1</filename>."
 msgstr "\"%1\" परियोजना खोल्न सकेन ।"
 
-#: formeditor/widgetlibrary.cpp:724
+#: formeditor/widgetlibrary.cpp:725
 #, fuzzy
 #| msgid "&Horizontally"
 msgctxt "Insert Horizontal Widget"
 msgid "Insert Horizontal"
 msgstr "तेर्सो रूपमा"
 
-#: formeditor/widgetlibrary.cpp:730
+#: formeditor/widgetlibrary.cpp:731
 #, fuzzy
 #| msgid "&Vertically"
 msgctxt "Insert Vertical Widget"
 msgid "Insert Vertical"
 msgstr "ठाडो रूपमा"
 
-#: formeditor/widgetlibrary.cpp:734
+#: formeditor/widgetlibrary.cpp:735
 #, fuzzy, kde-format
 #| msgid "Insert AutoField widget"
 msgid "Insert Widget: %1"
 msgstr "स्वत: फिल्ड विजेट घुसाउनुहोस्"
 
-#: formeditor/widgetlibrary.cpp:738
+#: formeditor/widgetlibrary.cpp:739
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्ानल"
 
@@ -3873,85 +3910,94 @@ msgstr "फाइलबाट..."
 msgid "From Server..."
 msgstr "सर्भरबाट..."
 
-#: main/KexiMainWindow.cpp:2682
-#, kde-format
-msgid "Selected view is not supported for \"%1\" object."
+#: main/KexiMainWindow.cpp:2683
+#, fuzzy, kde-format
+#| msgid "Selected view is not supported for \"%1\" object."
+msgctxt "@info"
+msgid "Selected view is not supported for <resource>%1</resource> object."
 msgstr "चयन गरिएको दृश्य \"%1\" वस्तुका लागि समर्थित छैन ।"
 
-#: main/KexiMainWindow.cpp:2684
-#, kde-format
+#: main/KexiMainWindow.cpp:2686
+#, fuzzy, kde-format
+#| msgid "Selected view (%1) is not supported by this object type (%2)."
+msgctxt "@info"
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "चयन गरिएको दृश्य (%1) यस वस्तु प्रकार (%2) द्वारा समर्थन गर्दैन ।"
 
-#: main/KexiMainWindow.cpp:2756
+#: main/KexiMainWindow.cpp:2758
 #, fuzzy
 #| msgid "Could not access the table directly using its name"
 msgctxt "Could not save object under the original name."
 msgid "Could not save under the original name."
 msgstr "यसको नाम प्रयोग गरेर प्रत्यक्ष रूपमा तालिकामा पहुँच गर्न सकेन"
 
-#: main/KexiMainWindow.cpp:2777
+#: main/KexiMainWindow.cpp:2779
 #, fuzzy
 #| msgid "&Save"
 msgctxt "@action:button Save object"
 msgid "Save"
 msgstr "बचत गर्नुहोस्।"
 
-#: main/KexiMainWindow.cpp:2783
+#: main/KexiMainWindow.cpp:2785
 #, fuzzy
 #| msgid "Save Object As"
 msgctxt "@title:window"
 msgid "Save Object As"
 msgstr "यस रूपमा वस्तु बचत गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:2833
+#: main/KexiMainWindow.cpp:2835
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info Saving object failed"
 msgid "Saving <resource>%1</resource> object failed."
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: main/KexiMainWindow.cpp:2951
+#: main/KexiMainWindow.cpp:2953
 msgid "Save changes"
 msgstr "परिवर्तनहरू बचत गर्नुहोस्।"
 
-#: main/KexiMainWindow.cpp:2953
+#: main/KexiMainWindow.cpp:2955
 #, fuzzy, kde-format
 #| msgid ""
 #| "Pressing this button will save all recent changes made in \"%1\" object."
-msgid "Saves all recent changes made in \"%1\" object."
+msgctxt "@info"
+msgid "Saves all recent changes made in <resource>%1</resource> object."
 msgstr "यो बटन थिच्दा \"%1\" वस्तुमा बनाइएको भर्खरका सबै परिवर्तनहरू बचत गर्नेछ ।"
 
-#: main/KexiMainWindow.cpp:2957
+#: main/KexiMainWindow.cpp:2959
 #, fuzzy, kde-format
 #| msgid ""
 #| "Pressing this button will discard all recent changes made in \"%1\" "
 #| "object."
-msgid "Discards all recent changes made in \"%1\" object."
+msgctxt "@info"
+msgid "Discards all recent changes made in <resource>%1</resource> object."
 msgstr "यो बटन थिच्दा \"%1\" वस्तुमा बनाइएको भर्खरका सबै परिवर्तनहरू अस्वीकार गर्नेछ ।"
 
-#: main/KexiMainWindow.cpp:2979
+#: main/KexiMainWindow.cpp:2981
 msgid "Do you want to save changes?"
 msgstr "के तपाईं परिवर्तनहरूलाई बचत गर्न चाहनुहुन्छ?"
 
-#: main/KexiMainWindow.cpp:3173
+#: main/KexiMainWindow.cpp:3175
 #, kde-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr " \"%1\" मोडमा खोल्न अनुमति छैन ।"
 
-#: main/KexiMainWindow.cpp:3227
-#, kde-format
-msgid "Tab for \"%1\" (%2)."
-msgstr ""
-
-#: main/KexiMainWindow.cpp:3231
+#: main/KexiMainWindow.cpp:3230
 #, fuzzy, kde-format
-#| msgid "Table field \"%1\""
-msgid "Tab for \"%1\"."
-msgstr "तालिका फिल्ड \"%1\""
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Tab for <resource>%1</resource> (%2)."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: main/KexiMainWindow.cpp:3403
+#: main/KexiMainWindow.cpp:3235
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Tab for <resource>%1</resource>."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
+
+#: main/KexiMainWindow.cpp:3407
 #, fuzzy, kde-format
 #| msgid ""
 #| "Do you want to permanently delete:\n"
@@ -3967,25 +4013,25 @@ msgstr ""
 "%1\n"
 "यदि तपाईंले हो क्लिक गर्नुभयो भने, तपाईंले मेट्न भएकोलाई पूर्वास्थितिमा फर्काउन सक्नुहुने छैन ।"
 
-#: main/KexiMainWindow.cpp:3409
+#: main/KexiMainWindow.cpp:3413
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@title:window Delete Object %1."
 msgid "Delete <resource>%1</resource>?"
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: main/KexiMainWindow.cpp:3410
+#: main/KexiMainWindow.cpp:3414
 #, fuzzy
 #| msgid "Delete"
 msgctxt "@action:button Delete object"
 msgid "Delete"
 msgstr "मेट्नुहोस्स्।"
 
-#: main/KexiMainWindow.cpp:3462
+#: main/KexiMainWindow.cpp:3466
 msgid "Could not remove object."
 msgstr "वस्तुलाई हटाउन सकेन ।"
 
-#: main/KexiMainWindow.cpp:3485
+#: main/KexiMainWindow.cpp:3489
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3993,36 +4039,39 @@ msgid ""
 "para><para>Do you want to close it?</para>"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3489
+#: main/KexiMainWindow.cpp:3493
 #, fuzzy
 #| msgid "Close windows"
 msgctxt "@action:button"
 msgid "Close Window"
 msgstr "सञ्झ्याल बन्द गर्नुहोस्"
 
-#: main/KexiMainWindow.cpp:3500
-#, kde-format
-msgid "Renaming object \"%1\" failed."
-msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
+#: main/KexiMainWindow.cpp:3504
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Renaming object <resource>%1</resource> failed."
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: main/KexiMainWindow.cpp:3518
+#: main/KexiMainWindow.cpp:3524
 #, fuzzy, kde-format
 #| msgid "Renaming object \"%1\" failed."
-msgid "Setting caption for object \"%1\" failed."
+msgctxt "@info"
+msgid "Setting caption for object <resource>%1</resource> failed."
 msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
 
-#: main/KexiMainWindow.cpp:3685
+#: main/KexiMainWindow.cpp:3692
 #, fuzzy, kde-format
 #| msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgid "Compacting database file <filename>%1</filename> is not supported."
 msgstr "सङ्कुचित गरिएको डाटाबेस फाइल <nobr>\"%1\"</nobr> समर्थित छैन ।"
 
-#: main/KexiMainWindow.cpp:3697
+#: main/KexiMainWindow.cpp:3704
 msgctxt "@action:button Compact database"
 msgid "Compact"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3699
+#: main/KexiMainWindow.cpp:3706
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -4034,7 +4083,7 @@ msgstr ""
 "\n"
 "के तपाईँले निरन्तरता दिन चाहनुहुन्छ ?"
 
-#: main/KexiMainWindow.cpp:3834
+#: main/KexiMainWindow.cpp:3841
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -4043,12 +4092,12 @@ msgid ""
 "query for exporting or from its original (saved) version?"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3839
+#: main/KexiMainWindow.cpp:3846
 msgctxt "@action:button Export query data"
 msgid "Use the Changed Query"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3840
+#: main/KexiMainWindow.cpp:3847
 msgctxt "@action:button Export query data"
 msgid "Use the Original Query"
 msgstr ""
@@ -4072,10 +4121,10 @@ msgstr "मुख्य अनुप्रयोग अन्त्य गर्
 msgid "Activates a \"What's This?\" tool."
 msgstr ""
 
-#: main/KexiMainWindow_p.cpp:662 migration/importwizard.cpp:1095
-#: migration/importwizard.cpp:1098 migration/importwizard.cpp:1100
-#: migration/importwizard.cpp:1102 migration/importwizard.cpp:1104
-#: migration/importwizard.cpp:1106
+#: main/KexiMainWindow_p.cpp:662 migration/importwizard.cpp:1106
+#: migration/importwizard.cpp:1109 migration/importwizard.cpp:1111
+#: migration/importwizard.cpp:1113 migration/importwizard.cpp:1115
+#: migration/importwizard.cpp:1117
 msgid "Help"
 msgstr "मद्दत"
 
@@ -4122,13 +4171,17 @@ msgid "Report Design"
 msgstr "डिजाइन"
 
 #: main/KexiMainWindow_p.cpp:1333
-#, kde-format
-msgid "Could not start %1 application."
+#, fuzzy, kde-format
+#| msgid "Could not start %1 application."
+msgctxt "@info"
+msgid "Could not start <application>%1</application> application."
 msgstr "%1 अनुप्रयोग सुरु गर्न सकेन ।"
 
-#: main/KexiMainWindow_p.cpp:1334
-#, kde-format
-msgid "Command \"%1\" failed."
+#: main/KexiMainWindow_p.cpp:1336
+#, fuzzy, kde-format
+#| msgid "Command \"%1\" failed."
+msgctxt "@info"
+msgid "Command <command>%1</command> failed."
 msgstr "आदेश \"%1\" असफल भयो ।"
 
 #: main/KexiMenuWidget.cpp:2173
@@ -4534,16 +4587,17 @@ msgstr "स्थानीय सर्भर"
 
 #: main/startup/KexiRecentProjectsModel.cpp:118
 #, fuzzy, kde-format
-#| msgid "Local server"
-msgid "on \"%1\" server"
-msgstr "स्थानीय सर्भर"
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "on <resource>%1</resource> server"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
 #: main/startup/KexiRecentProjectsModel.cpp:126
 #, fuzzy, kde-format
-#| msgid "New database"
-msgctxt "File database <file>"
-msgid "File database %1"
-msgstr "नयाँ डेटाबेस"
+#| msgid "Could not remove file \"%1\"."
+msgctxt "@info File database <file>"
+msgid "File database <filename>%1</filename>"
+msgstr "\"%1\" फाइल हटाउन सकेन ।"
 
 #: main/startup/KexiRecentProjectsModel.cpp:133
 #, fuzzy
@@ -4682,34 +4736,33 @@ msgid ""
 "options."
 msgstr "तपाईंले दुवै \"user-mode\" र \"design-mode\" सुरुआत विकल्प प्रयोग गर्नुभयो ।"
 
-#: main/startup/KexiStartup.cpp:484
-#, kde-format
+#: main/startup/KexiStartup.cpp:485
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not remove project.\n"
+#| "The file \"%1\" does not exist."
+msgctxt "@info"
 msgid ""
-"Could not remove project.\n"
-"The file \"%1\" does not exist."
+"Could not remove project. The file <filename>%1</filename> does not exist."
 msgstr ""
 "परियोजना हटाउन सकेन ।\n"
 "फाइल \"%1\" अवस्थित छैन ।"
 
-#: main/startup/KexiStartup.cpp:533
-#, kde-format
-msgid ""
-"Could not open shortcut file\n"
-"\"%1\"."
-msgstr ""
-"सर्टकट फाइल \"%1\" खोल्न\n"
-"सकिएन ।"
+#: main/startup/KexiStartup.cpp:536
+#, fuzzy, kde-format
+#| msgid "Cannot open input file <nobr>\"%1\"</nobr>."
+msgctxt "@info"
+msgid "Could not open shortcut file <filename>%1</filename>."
+msgstr "आगत फाइल <nobr>\"%1\"</nobr> खोल्न सकिँदैन ।"
 
-#: main/startup/KexiStartup.cpp:564
-#, kde-format
-msgid ""
-"Could not open connection data file\n"
-"\"%1\"."
-msgstr ""
-"जडान डेटा फाइल \"%1\" खोल्न\n"
-"सकिएन ।"
+#: main/startup/KexiStartup.cpp:568
+#, fuzzy, kde-format
+#| msgid "Could not remove file \"%1\"."
+msgctxt "@info"
+msgid "Could not open connection data file <filename>%1</filename>."
+msgstr "\"%1\" फाइल हटाउन सकेन ।"
 
-#: main/startup/KexiStartup.cpp:663
+#: main/startup/KexiStartup.cpp:667
 #, fuzzy
 #| msgid ""
 #| "You have specified a few database objects to be opened automatically, "
@@ -4726,24 +4779,28 @@ msgstr ""
 "भएको छ ।\n"
 "ति विकल्प परियोजना सिर्जना गर्दा वा छोड्दा उपलब्ध नभएकाले उपेक्षा गरिनेछ ।"
 
-#: main/startup/KexiStartup.cpp:680
-#, kde-format
-msgid "Project \"%1\" created successfully."
+#: main/startup/KexiStartup.cpp:685
+#, fuzzy, kde-format
+#| msgid "Project \"%1\" created successfully."
+msgctxt "@info"
+msgid "Project <resource>%1</resource> created successfully."
 msgstr "परियोजना \"%1\" सफलतापूर्वक सिर्जना गरियो ।"
 
-#: main/startup/KexiStartup.cpp:689
-#, kde-format
-msgid "Project \"%1\" dropped successfully."
+#: main/startup/KexiStartup.cpp:694
+#, fuzzy, kde-format
+#| msgid "Project \"%1\" dropped successfully."
+msgctxt "@info"
+msgid "Project <resource>%1</resource>dropped successfully."
 msgstr "परियोजना \"%1\" सफलता पूर्वक छोडियो ।"
 
-#: main/startup/KexiStartup.cpp:811
+#: main/startup/KexiStartup.cpp:816
 #, fuzzy
 #| msgid "Could not remove file \"%1\"."
 msgctxt "@info"
 msgid "Could not open file. Missing filename."
 msgstr "\"%1\" फाइल हटाउन सकेन ।"
 
-#: main/startup/KexiStartup.cpp:818
+#: main/startup/KexiStartup.cpp:823
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not remove project.\n"
@@ -4754,7 +4811,7 @@ msgstr ""
 "परियोजना हटाउन सकेन ।\n"
 "फाइल \"%1\" अवस्थित छैन ।"
 
-#: main/startup/KexiStartup.cpp:828
+#: main/startup/KexiStartup.cpp:833
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check the file's permissions and whether it is already opened and locked "
@@ -4768,7 +4825,7 @@ msgstr ""
 "फाइलको अनुमति र यसलाई पहिल्यै अन्य अनुप्रयोगद्वारा लक गरिएको वा खोलिएको छ कि जाँच "
 "गर्नुहोस् ।"
 
-#: main/startup/KexiStartup.cpp:871
+#: main/startup/KexiStartup.cpp:876
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check the file's permissions and whether it is already opened and locked "
@@ -4782,7 +4839,7 @@ msgstr ""
 "फाइलको अनुमति र यसलाई पहिल्यै अन्य अनुप्रयोगद्वारा लक गरिएको वा खोलिएको छ कि जाँच "
 "गर्नुहोस् ।"
 
-#: main/startup/KexiStartup.cpp:895
+#: main/startup/KexiStartup.cpp:900
 #, fuzzy, kde-format
 #| msgid ""
 #| "\"%1\" is an external file of type:\n"
@@ -4798,53 +4855,63 @@ msgstr ""
 "\"%2\" ।\n"
 "के तपाईं केक्सी परियोजनाको रूपमा फाइल आयात गर्न चाहनुहुन्छ?"
 
-#: main/startup/KexiStartup.cpp:898
+#: main/startup/KexiStartup.cpp:903
 msgid "Open External File"
 msgstr "बाह्य फाइल खोल्नुहोस्।"
 
-#: main/startup/KexiStartup.cpp:899
+#: main/startup/KexiStartup.cpp:904
 #, fuzzy
 #| msgid "Import..."
 msgctxt "@action:button Import File"
 msgid "Import..."
 msgstr "आयात गर्नुहोस्..."
 
-#: main/startup/KexiStartup.cpp:932
-#, kde-format
+#: main/startup/KexiStartup.cpp:937
+#, fuzzy, kde-format
+#| msgid ""
+#| "The project file \"%1\" is recognized as compatible with \"%2\" database "
+#| "driver, while you have asked for \"%3\" database driver to be used.\n"
+#| "Do you want to use \"%4\" database driver?"
+msgctxt "@info"
 msgid ""
-"The project file \"%1\" is recognized as compatible with \"%2\" database "
-"driver, while you have asked for \"%3\" database driver to be used.\n"
-"Do you want to use \"%4\" database driver?"
+"The project file <filename>%1</filename> is recognized as compatible with "
+"<resource>%2</resource> database driver, while you have asked for <resource>"
+"%3</resource> database driver to be used.\n"
+"Do you want to use <resource>%4</resource> database driver?"
 msgstr ""
 "तपाईँलाई \"%3\" डाटाबेस ड्राइभर प्रयोगका लागि सोधिएको बेलामा, \"%1\" परियोजना "
 "फाइललाई \"%2\" डाटाबेस ड्राइभरसँग अनुकूल भएको पहिचान गरिन्छ । \n"
 "के तपाईँले \"%4\" डाटाबेस ड्राइभर प्रयोग गर्न चाहनुहुन्छ ?"
 
-#: main/startup/KexiStartup.cpp:952
-msgid "Possible problems:"
+#: main/startup/KexiStartup.cpp:958
+#, fuzzy, kde-format
+#| msgid "Possible problems:"
+msgid "Possible problems: %1"
 msgstr "सम्भावित समस्याहरु:"
 
-#: main/startup/KexiStartup.cpp:957
+#: main/startup/KexiStartup.cpp:963
 #, fuzzy, kde-format
 #| msgid "The file \"%1\" is not recognized as being supported by Kexi."
+msgctxt "@info"
 msgid ""
 "The file <filename>%1</filename> is not recognized as being supported by "
 "Kexi."
 msgstr "फाइल \"%1\" केक्सीद्वारा समर्थितको रूपमा पहिचान गर्दैन ।"
 
-#: main/startup/KexiStartup.cpp:959
+#: main/startup/KexiStartup.cpp:966
 #, fuzzy, kde-format
 #| msgid ""
 #| "Database driver for this file type not found.\n"
 #| "Detected MIME type: %1"
+msgctxt "@info"
 msgid ""
-"<para>Database driver for this file type not found.\n"
-"Detected MIME type is %1%2.</para>%3"
+"<para>Could not find plugin supporting for this file type.</"
+"para><para>Detected MIME type is <resource>%1</resource>%2.</para>%3"
 msgstr ""
 "यो फाइल प्रकारका लागि डाटाबेस ड्राइभर फेला परेन ।\n"
 "पत्ता लगाइएको MIME प्रकार: %1"
 
-#: main/startup/KexiStartup.cpp:994
+#: main/startup/KexiStartup.cpp:1002
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not load list of available projects for <b>%1</b> database server."
@@ -4853,7 +4920,7 @@ msgid ""
 "database server."
 msgstr "<b>%1</b> डाटाबेस सर्भरका लागि उपलब्ध परियोजनाको सूचीको लोड गर्न सकिँदैन ।"
 
-#: main/startup/KexiStartup.cpp:1035
+#: main/startup/KexiStartup.cpp:1043
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed saving connection data to\n"
@@ -5083,11 +5150,11 @@ msgstr ""
 msgid "Welcome to the Table Importing Assistant"
 msgstr "डाटाबेस आयात गर्ने विजार्डमा तपाँइलाई स्वागत छ।"
 
-#: migration/importtablewizard.cpp:194 migration/importwizard.cpp:298
+#: migration/importtablewizard.cpp:194 migration/importwizard.cpp:300
 msgid "Select Location for Source Database"
 msgstr "स्रोत डाटाबेसका लागि स्थान चयन गर्नुहोस्।"
 
-#: migration/importtablewizard.cpp:204 migration/importwizard.cpp:309
+#: migration/importtablewizard.cpp:204 migration/importwizard.cpp:311
 msgid "Select Source Database"
 msgstr "स्रोत डाटाबेस चयन गर्नुहोस्"
 
@@ -5097,11 +5164,11 @@ msgstr "स्रोत डाटाबेस चयन गर्नुहोस
 msgid "Select the Table to Import"
 msgstr "आयातको प्रकार चयन गर्नुहोस्"
 
-#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:467
+#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:469
 msgid "Advanced Options"
 msgstr "उन्नत विकल्प"
 
-#: migration/importtablewizard.cpp:256 migration/importwizard.cpp:479
+#: migration/importtablewizard.cpp:256 migration/importwizard.cpp:481
 msgid "Importing"
 msgstr "आयात गर्दै"
 
@@ -5121,12 +5188,12 @@ msgstr "प्रतिवेदन"
 msgid "Open imported table"
 msgstr "आयात गरिएको परियोजना खोल्नुहोस्"
 
-#: migration/importtablewizard.cpp:319 migration/importwizard.cpp:504
-#: migration/importwizard.cpp:895
+#: migration/importtablewizard.cpp:319 migration/importwizard.cpp:506
+#: migration/importwizard.cpp:905
 msgid "Success"
 msgstr "सफलता"
 
-#: migration/importtablewizard.cpp:374 migration/importwizard.cpp:564
+#: migration/importtablewizard.cpp:374 migration/importwizard.cpp:569
 msgid "Select source database you wish to import:"
 msgstr "तपाईँले आयात गर्न चाहनु भएको स्रोत डाटाबेस चयन गर्नुहोस्:"
 
@@ -5186,7 +5253,7 @@ msgstr "तालिका \"%1\" को डिजाइन परिमार�
 msgid "An error occured."
 msgstr ""
 
-#: migration/importtablewizard.cpp:579 migration/importwizard.cpp:773
+#: migration/importtablewizard.cpp:579 migration/importwizard.cpp:783
 msgid "No appropriate migration driver found."
 msgstr "उपयुक्त निर्गमन ड्राइभर फेला परेन ।"
 
@@ -5219,6 +5286,7 @@ msgstr "डाटाबेस आयात गर्नुहोस्"
 #| msgid ""
 #| "<qt>Database Importing wizard is about to import \"%1\" database <nobr>"
 #| "(connection %2)</nobr> into a Kexi database.</qt>"
+msgctxt "@info"
 msgid ""
 "Database Importing Assistant is about to import <resource>%1</resource> "
 "database (connection <resource>%2</resource>) into a Kexi project."
@@ -5231,6 +5299,7 @@ msgstr ""
 #| msgid ""
 #| "<qt>Database Importing wizard is about to import <nobr>\"%1\"</nobr> file "
 #| "of type \"%2\" into a Kexi database.</qt>"
+msgctxt "@info"
 msgid ""
 "Database Importing Assistant is about to import <filename>%1</filename> file "
 "of type <resource>%2</resource> into a Kexi project."
@@ -5238,11 +5307,12 @@ msgstr ""
 "<qt>डाटाबेस आयात गर्ने विजार्डले केक्सी डाटाबेसमा \"%2\" प्रकारको  <nobr>\"%1\"</"
 "nobr> फाइल आयात गर्न लागेको छ ।</qt>"
 
-#: migration/importwizard.cpp:260
+#: migration/importwizard.cpp:261
 #, fuzzy
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
 #| "a Kexi database."
+msgctxt "@info"
 msgid ""
 "Database Importing Assistant allows you to import an existing database into "
 "a Kexi project."
@@ -5250,7 +5320,7 @@ msgstr ""
 "डाटाबेस आयात गर्ने विजार्डले केक्सी डाटाबेसमा अवस्थित डाटाबेस आयात गर्न तपाईँलाई अनुमति "
 "दिन्छ ।"
 
-#: migration/importwizard.cpp:264
+#: migration/importwizard.cpp:266
 #, fuzzy, kde-format
 #| msgid ""
 #| "Click \"Next\" button to continue or \"Cancel\" button to exit this "
@@ -5263,91 +5333,91 @@ msgstr ""
 "यो विजार्ड जारी राख्न\"पछिल्लो\" बटन क्लिक गर्नुहोस् वा निस्कनका लागि \"रद्द गर्नुहोस्\" "
 "बटन क्लिक गर्नुहोस्   ।"
 
-#: migration/importwizard.cpp:271
+#: migration/importwizard.cpp:273
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Database Importing Assistant"
 msgstr "डाटाबेस आयात गर्ने विजार्डमा तपाँइलाई स्वागत छ।"
 
-#: migration/importwizard.cpp:324
+#: migration/importwizard.cpp:326
 msgid "Destination database type:"
 msgstr "गन्तव्य डाटाबेस प्रकार:"
 
-#: migration/importwizard.cpp:331
+#: migration/importwizard.cpp:333
 msgid "Database project stored in a file"
 msgstr "फाइलमा भण्डारण गरिएको डाटाबेस परियोजना"
 
-#: migration/importwizard.cpp:332
+#: migration/importwizard.cpp:334
 msgid "Database project stored on a server"
 msgstr "सर्भरमा भण्डारण गरिएको डाटाबेस परियोजना"
 
-#: migration/importwizard.cpp:336
+#: migration/importwizard.cpp:338
 msgid "Select Destination Database Type"
 msgstr "गन्तव्य डाटाबेस प्रकार चयन गर्नुहोस्"
 
-#: migration/importwizard.cpp:344
+#: migration/importwizard.cpp:346
 #, fuzzy
 #| msgid "Destination project's caption:"
 msgid "Destination project's caption:"
 msgstr "गन्तव्य परियोजनाको क्याप्सन:"
 
-#: migration/importwizard.cpp:356
+#: migration/importwizard.cpp:358
 #, fuzzy
 #| msgid "Destination project's caption:"
 msgid "Destination project's name:"
 msgstr "गन्तव्य परियोजनाको क्याप्सन:"
 
-#: migration/importwizard.cpp:365
+#: migration/importwizard.cpp:367
 #, fuzzy
 #| msgid "Select Destination Database Project's Caption"
 msgid "Enter Destination Database Project's Caption"
 msgstr "गन्तव्य डाटाबेस परियोजनाको क्याप्सन चयन गर्नुहोस्।"
 
-#: migration/importwizard.cpp:401
+#: migration/importwizard.cpp:403
 #, fuzzy
 #| msgid "Select Location for Destination Database"
 msgid "Select Location for Destination Database Project"
 msgstr "गन्तव्य डाटाबेसका लागि स्थान चयन गर्नुहोस्"
 
-#: migration/importwizard.cpp:419
+#: migration/importwizard.cpp:421
 #, fuzzy
 #| msgid "Structure and data"
 msgctxt "Scope of import"
 msgid "Structure and data"
 msgstr "बनावट र डेटा"
 
-#: migration/importwizard.cpp:424
+#: migration/importwizard.cpp:426
 #, fuzzy
 #| msgid "Structure only"
 msgctxt "Scope of import"
 msgid "Structure only"
 msgstr "बनावट मात्र"
 
-#: migration/importwizard.cpp:430
+#: migration/importwizard.cpp:432
 #, fuzzy
 #| msgid "Select Type of Import"
 msgid "Select Scope of Import"
 msgstr "आयातको प्रकार चयन गर्नुहोस्"
 
-#: migration/importwizard.cpp:497
+#: migration/importwizard.cpp:499
 msgid "Open imported project"
 msgstr "आयात गरिएको परियोजना खोल्नुहोस्"
 
-#: migration/importwizard.cpp:515
+#: migration/importwizard.cpp:517
 #, fuzzy
 #| msgid "No new database name was entered."
 msgctxt "@info"
 msgid "<para>No new database name was entered.</para>"
 msgstr "कुनै नयाँ डाटाबेस नाम प्रविष्ट गरिएन ।"
 
-#: migration/importwizard.cpp:521
+#: migration/importwizard.cpp:524
 #, fuzzy, kde-format
 #| msgid "Source database is the same as destination."
 msgctxt "@info"
 msgid "%1<para>Source database is the same as destination.</para>"
 msgstr "गन्तव्य जस्तै स्रोत डाटाबेस ।"
 
-#: migration/importwizard.cpp:526
+#: migration/importwizard.cpp:531
 #, fuzzy, kde-format
 #| msgid "Please click 'Back' button and correct these errors."
 msgctxt "@info"
@@ -5357,7 +5427,7 @@ msgid ""
 "issues.</para>"
 msgstr "कृपया 'पछाडि' बटन क्लिक गर्नुहोस् र ती त्रुटिहरू सुधार गर्नुहोस् ।"
 
-#: migration/importwizard.cpp:624
+#: migration/importwizard.cpp:629
 #, fuzzy
 #| msgid ""
 #| "All required information has now been gathered. Click \"Next\" button to "
@@ -5374,29 +5444,29 @@ msgstr ""
 "\n"
 "डाटाबेसको साइजको आधारमा केही समय लिन सक्दछ ।"
 
-#: migration/importwizard.cpp:867
+#: migration/importwizard.cpp:877
 #, fuzzy, kde-format
 #| msgid ""
 #| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
 msgctxt "@info (don't add tags around %1, it's done already)"
 msgid ""
-"<para>Database <resource>%1</resource> already exists.</para><para>Do you "
-"want to replace it with a new one?</para>"
+"<para>Database %1 already exists.</para><para>Do you want to replace it with "
+"a new one?</para>"
 msgstr ""
 "फाइल \"%1\" पहिले नै अवस्थित छ ।<p> तपाईँ यसलाई नयाँबाट प्रतिस्थापन गर्न चाहनुहुन्छ?"
 
-#: migration/importwizard.cpp:870
+#: migration/importwizard.cpp:880
 #, fuzzy
 #| msgid "&Replace"
 msgctxt "@action:button Replace Database"
 msgid "&Replace"
 msgstr "बदल्नुहोस्"
 
-#: migration/importwizard.cpp:909
+#: migration/importwizard.cpp:919
 msgid "Failure"
 msgstr "असफलता"
 
-#: migration/importwizard.cpp:912
+#: migration/importwizard.cpp:923
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Import failed.</p>%1<p>%2</p><p>You can click \"Back\" button and try "
@@ -5409,19 +5479,19 @@ msgstr ""
 "<p>आयात असफल ।</p>%1<p>%2</p><p>तपाईँले \"पछाडि\" बटन क्लिक गरेर पुन: प्रयास गर्न "
 "सक्नुहुन्छ ।</p>"
 
-#: migration/importwizard.cpp:935
+#: migration/importwizard.cpp:946
 msgid "Select source database filename."
 msgstr "स्रोत डाटाबेस फाइलनाम चयन गर्नुहोस् ।"
 
-#: migration/importwizard.cpp:941
+#: migration/importwizard.cpp:952
 msgid "Select source database."
 msgstr "स्रोत डाटाबेस चयन गर्नुहोस् ।"
 
-#: migration/importwizard.cpp:955
+#: migration/importwizard.cpp:966
 msgid "Could not import database. This type is not supported."
 msgstr " डाटाबेस आयात गर्न सकेन । यो प्रकारलाई समर्थन गर्दैन ।"
 
-#: migration/importwizard.cpp:957
+#: migration/importwizard.cpp:968
 #, fuzzy, kde-format
 #| msgid "Could not import database \"%1\". This type is not supported."
 msgctxt "@info"
@@ -5430,34 +5500,34 @@ msgid ""
 "supported."
 msgstr "%1 डाटाबेस आयात गर्न सकेन ।यो प्रकारलाई समर्थन गर्दैन ।"
 
-#: migration/importwizard.cpp:1016
+#: migration/importwizard.cpp:1027
 msgid "Importing in progress..."
 msgstr "आयात प्रगतिमा छ..."
 
-#: migration/importwizard.cpp:1021
+#: migration/importwizard.cpp:1032
 #, fuzzy, kde-format
 #| msgid "Database has been imported into Kexi database project \"%1\"."
 msgctxt "@info"
 msgid "Database has been imported into Kexi project <resource>%1</resource>."
 msgstr "डाटाबेसलाई \"%1\" केक्सी डाटाबेस परियोजनामा आयात गरिएको छ ।"
 
-#: migration/importwizard.cpp:1095 migration/importwizard.cpp:1106
+#: migration/importwizard.cpp:1106 migration/importwizard.cpp:1117
 msgid "No help is available for this page."
 msgstr "यो पृष्ठका लागि मद्दत उपलब्ध छैन ।"
 
-#: migration/importwizard.cpp:1098
+#: migration/importwizard.cpp:1109
 msgid "Here you can choose the location to import data from."
 msgstr "तपाईँले यसबाट डेटा आयात गर्न स्थान छनोट गर्न सक्नुहुन्छ ।"
 
-#: migration/importwizard.cpp:1100
+#: migration/importwizard.cpp:1111
 msgid "Here you can choose the actual database to import data from."
 msgstr "तपाईँले यसबाट डेटा आयात गर्न वास्तविक डाटाबेस छनोट गर्न सक्नुहुन्छ ।"
 
-#: migration/importwizard.cpp:1102
+#: migration/importwizard.cpp:1113
 msgid "Here you can choose the location to save the data."
 msgstr "तपाईँले यसबाट डेटा बचत गर्न स्थानको  छनोट गर्न सक्नुहुन्छ ।"
 
-#: migration/importwizard.cpp:1104
+#: migration/importwizard.cpp:1115
 msgid ""
 "Here you can choose the location to save the data in and the new database "
 "name."
@@ -6856,7 +6926,7 @@ msgstr ""
 #: plugins/importexport/csv/kexicsvwidgets.cpp:189
 #: plugins/importexport/csv/kexicsvwidgets.cpp:239
 #: plugins/importexport/csv/kexicsvwidgets.cpp:251
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1834
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1837
 #: plugins/tables/kexitabledesignerview.cpp:403
 msgid "None"
 msgstr "कुनै पनि होइन"
@@ -6888,7 +6958,7 @@ msgstr ""
 "आधारित) ।"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1864
-#: plugins/tables/kexitabledesignerview.cpp:1205
+#: plugins/tables/kexitabledesignerview.cpp:1206
 #, fuzzy
 #| msgid "&Add Primary Key"
 msgctxt "@action:button Add Database Primary Key to a Table"
@@ -6896,7 +6966,7 @@ msgid "&Add Primary Key"
 msgstr "प्राथमिक कुञ्जी थप गर्नुहोस्"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1865
-#: plugins/tables/kexitabledesignerview.cpp:1206
+#: plugins/tables/kexitabledesignerview.cpp:1207
 #, fuzzy
 #| msgctxt "Do Not Add Database Primary Key to a Table"
 #| msgid "Do Not Add"
@@ -6939,39 +7009,41 @@ msgstr ""
 msgid "Error occurred during import."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2065
-#, kde-format
-msgid "Data has been successfully imported to table \"%1\"."
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2066
+#, fuzzy, kde-format
+#| msgid "Data has been successfully imported to table \"%1\"."
+msgctxt "@info"
+msgid "Data has been successfully imported to table <resource>%1</resource>."
 msgstr "डेटा सफलतापूर्वक तालिका \"%1\" मा आयात गरियो ।"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2092
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2093
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "पाठ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2094
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2095
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "नम्बर"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2096
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2097
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "मुद्रा"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2176
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2177
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(पङ्क्ति: %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2180
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2181
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(पङ्क्ति: %1 भन्दा बढी)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2181
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2182
 msgid "Not all rows are visible on this preview"
 msgstr "यो पूर्वावलोकनमा सबै पङ्क्तिहरू दृश्यात्मक हुँदैनन्"
 
@@ -7091,7 +7163,7 @@ msgid "Describes visibility for a given field or expression."
 msgstr "दिइएको फिल्ड वा अभिव्यक्तिका लागि दृश्यात्मक वर्णन गर्दछ ।"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:280
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1836
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1839
 msgid "Sorting"
 msgstr "क्रमबद्ध गर्दै"
 
@@ -7100,12 +7172,12 @@ msgid "Describes a way of sorting for a given field."
 msgstr "दिएको फिल्डका लागि क्रमबद्धताको तरिका वर्णन गर्दछ ।"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:284
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1834
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1837
 msgid "Ascending"
 msgstr "बढ्दो क्रम"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:285
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1834
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1837
 msgid "Descending"
 msgstr "घट्दो क्रम"
 
@@ -7126,30 +7198,36 @@ msgstr ""
 "पहिले, कृपया तपाईँको डिजाइन सिर्जना गर्नुहोस् ।"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:428
-#, kde-format
-msgid "Select column for table \"%1\""
-msgstr "तालिका \"%1\" का लागि स्तम्भ चयन गर्नुहोस्"
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Select column for table <resource>%1</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:450
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1727
-#, kde-format
-msgid "Invalid criteria \"%1\""
+#: plugins/queries/kexiquerydesignerguieditor.cpp:451
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1730
+#, fuzzy, kde-format
+#| msgid "Invalid criteria \"%1\""
+msgctxt "@info"
+msgid "Invalid criteria <icode>%1</icode>"
 msgstr "अवैध मापदण्ड \"%1\""
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:470
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1523
-#, kde-format
-msgid "Invalid expression \"%1\""
+#: plugins/queries/kexiquerydesignerguieditor.cpp:472
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1526
+#, fuzzy, kde-format
+#| msgid "Invalid expression \"%1\""
+msgctxt "@info"
+msgid "Invalid expression <icode>%1</icode>"
 msgstr "अवैध अभिव्यक्ति \"%1\""
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:669
-#: plugins/queries/kexiquerydesignerguieditor.cpp:683
-#: plugins/queries/kexiquerydesignerguieditor.cpp:705
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1105
+#: plugins/queries/kexiquerydesignerguieditor.cpp:671
+#: plugins/queries/kexiquerydesignerguieditor.cpp:685
+#: plugins/queries/kexiquerydesignerguieditor.cpp:707
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1107
 msgid "Query definition loading failed."
 msgstr "क्वेरी परिभाषा लोड गर्न असफल ।"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:670
+#: plugins/queries/kexiquerydesignerguieditor.cpp:672
 msgid ""
 "Query design may be corrupted so it could not be opened even in text view.\n"
 "You can delete the query and create it again."
@@ -7157,44 +7235,48 @@ msgstr ""
 "क्वेरी डिजाइन बिग्रिन पनि सक्छ त्यसैले यो पाठ दृश्यमा पनि खोल्न सकिएन ।\n"
 "तपाईँ क्वेरी मेट्न सक्नुहुन्छ र यसलाई फेरि सिर्जना गर्न सक्नुहुन्छ ।"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1297
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1299
 msgctxt "short for 'expression' word (only latin letters, please)"
 msgid "expr"
 msgstr "expr"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1504
-#, kde-format
-msgid "Entered column alias \"%1\" is not a valid identifier."
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1506
+#, fuzzy, kde-format
+#| msgid "Entered column alias \"%1\" is not a valid identifier."
+msgctxt "@info"
+msgid "Entered column alias <resource>%1</resource> is not a valid identifier."
 msgstr "प्रविष्ट गरिएको उपनाम \"%1\" वैध पहिचायक होइन ।"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1505
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1508
 msgid "Identifiers should start with a letter or '_' character"
 msgstr "पहिचायक अक्षर वा '_' क्यारक्टरसँग सुरु हुनु पर्दछ ।"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1675
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1678
 #, kde-format
 msgid "Could not set sorting for multiple columns (%1)"
 msgstr "बहुविध स्तम्भ (%1) का लागि क्रमबद्धता सेट गर्न सकेन"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1700
-#, kde-format
-msgid "Could not set criteria for \"%1\""
-msgstr "\"%1\" का लागि मापदण्ड सेट गर्न सकेन"
-
 #: plugins/queries/kexiquerydesignerguieditor.cpp:1703
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Could not set criteria for <resource>%1</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1706
 #, fuzzy
 #| msgid "Could not set criteria for empty row"
 msgid "Could not set criteria for empty record"
 msgstr "खाली पङ्क्तिका लागि मापदण्ड सेट गर्न सकेन"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1797
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1800
 #, fuzzy
 #| msgid "Column"
 msgctxt "Query column"
 msgid "Column"
 msgstr "स्तम्भ"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1822
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1825
 msgid "Alias"
 msgstr "उपनाम"
 
@@ -7764,12 +7846,14 @@ msgstr ""
 msgid "The used scripting interpreter."
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:376
-#, kde-format
-msgid "Execution of the script \"%1\" started."
-msgstr ""
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:377
+#, fuzzy, kde-format
+#| msgid "Design of report \"%1\" has been modified."
+msgctxt "@info"
+msgid "Execution of the script <resource>%1<resource> started."
+msgstr "प्रतिवेदन \"%1\" को डिजाइन परिमार्जित गरियो ।"
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:392
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:394
 #, no-c-format, kde-format
 msgid "Successfully executed. Time elapsed: %1ms"
 msgstr ""
@@ -7845,25 +7929,27 @@ msgstr "फिल्ड चयन गरिएको छैन"
 
 #: plugins/tables/kexitabledesignercommands.cpp:93
 #, fuzzy, kde-format
-#| msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+#| msgid "Saving \"%1\" object failed."
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
-msgstr "\"%2\" देखि \"%3\" बाट तालिका फिल्डका लागि \"%1\" विशेषता परिवर्तन गर्नुहोस्"
+msgid ""
+"Change <resource>%1</resource> property for table field from <resource>%2</"
+"resource> to <resource>%3</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: plugins/tables/kexitabledesignercommands.cpp:158
+#: plugins/tables/kexitabledesignercommands.cpp:159
 #, fuzzy, kde-format
-#| msgid "Remove table field \"%1\""
+#| msgid "Remove autonumber from field \"%1\""
 msgctxt "(qtundo-format)"
-msgid "Remove table field \"%1\""
-msgstr "तालिका फिल्ड \"%1\" हटाउनुहोस्"
+msgid "Remove table field <resource>%1</resource>"
+msgstr "फिल्ड \"%1\" बाट स्वत नम्बर हटाउनुहोस्"
 
-#: plugins/tables/kexitabledesignercommands.cpp:160
+#: plugins/tables/kexitabledesignercommands.cpp:161
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Remove empty row at position %1"
 msgstr ""
 
-#: plugins/tables/kexitabledesignercommands.cpp:211
+#: plugins/tables/kexitabledesignercommands.cpp:212
 #, fuzzy, kde-format
 #| msgid "Insert table field \"%1\""
 msgctxt "(qtundo-format)"
@@ -8043,22 +8129,22 @@ msgid "Discard Design"
 msgstr "परिवर्तन छोड्नुहोस्"
 
 #: plugins/tables/kexitabledesignerview.cpp:651
-#, fuzzy, kde-format
-#| msgid ""
-#| "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+#, kde-format
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+msgid ""
+"Change <resource>%1</resource> field name to <resource>%2</resource> and "
+"caption from <resource>%3</resource> to <resource>4</resource>"
 msgstr ""
-"\"%1\" फिल्डको नाम \"%2\" मा र क्याप्सन \"%3\" बाट \"%4\" मा परिवर्तन गर्नुहोस्"
 
-#: plugins/tables/kexitabledesignerview.cpp:729
+#: plugins/tables/kexitabledesignerview.cpp:730
 #, fuzzy, kde-format
-#| msgid "Change data type for field \"%1\" to \"%2\""
+#| msgid "Saving \"%1\" object failed."
 msgctxt "(qtundo-format)"
-msgid "Change data type for field \"%1\" to \"%2\""
-msgstr "\"%1\" देखि \"%2\" फिल्डका लागि डेटा प्रकार परिवर्तन गर्नुहोस्"
+msgid ""
+"Change data type for field <resource>%1</resource> to <resource>%2</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:903
+#: plugins/tables/kexitabledesignerview.cpp:904
 #, fuzzy
 #| msgid "Setting autonumber requires primary key to be set for current field."
 msgid ""
@@ -8066,13 +8152,13 @@ msgid ""
 "para>"
 msgstr "सेटिङ स्वत नम्बरलाई हालको फिल्डका लगि सेट हुन प्राथमिक कुञ्जी आवश्यक पर्दछ ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:905
+#: plugins/tables/kexitabledesignerview.cpp:906
 #, fuzzy
 #| msgid "Previous primary key will be removed."
 msgid "<para>Previous primary key will be removed.</para>"
 msgstr "अघिल्लो प्राथमिक कुञ्जी हट्नेछ ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:906
+#: plugins/tables/kexitabledesignerview.cpp:907
 #, fuzzy
 #| msgid ""
 #| "Do you want to create primary key for current field? Click \"Cancel\" to "
@@ -8084,63 +8170,63 @@ msgstr ""
 "के तपाईँले हालको फिल्डका लागि प्राथमिक कुञ्जी सिर्जना गर्न चाहनुहुन्छ ? सेटिङ स्वत नम्बर "
 "रद्द गर्न \"रद्द गर्नुहोस्\" क्लिक गर्नुहोस् ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:910
+#: plugins/tables/kexitabledesignerview.cpp:911
 msgid "Setting Autonumber Field"
 msgstr "सेटिङ स्वत: नम्बर फिल्ड"
 
-#: plugins/tables/kexitabledesignerview.cpp:911
+#: plugins/tables/kexitabledesignerview.cpp:912
 #, fuzzy
 #| msgid "Create &Primary Key"
 msgctxt "@action:button"
 msgid "Create &Primary Key"
 msgstr "प्राथमिक कुञ्जी सिर्जना गर्नुहोस्"
 
-#: plugins/tables/kexitabledesignerview.cpp:918
+#: plugins/tables/kexitabledesignerview.cpp:919
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "(qtundo-format)"
 msgid "Set autonumber for field <resource>%1</resource>"
 msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:923
+#: plugins/tables/kexitabledesignerview.cpp:924
 #, fuzzy, kde-format
 #| msgid "Remove autonumber from field \"%1\""
 msgctxt "(qtundo-format)"
 msgid "Remove autonumber from field <resource>%1</resource>"
 msgstr "फिल्ड \"%1\" बाट स्वत नम्बर हटाउनुहोस्"
 
-#: plugins/tables/kexitabledesignerview.cpp:941
+#: plugins/tables/kexitabledesignerview.cpp:942
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set <resource>%1</resource> property for field <resource>%2</resource>"
 msgstr ""
 
-#: plugins/tables/kexitabledesignerview.cpp:982
+#: plugins/tables/kexitabledesignerview.cpp:983
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid ""
 "Change type for field <resource>%1</resource> to <resource>%2</resource>"
 msgstr ""
 
-#: plugins/tables/kexitabledesignerview.cpp:1022
+#: plugins/tables/kexitabledesignerview.cpp:1023
 #, fuzzy, kde-format
 #| msgid "Set primary key for field \"%1\""
 msgctxt "(qtundo-format)"
 msgid "Set primary key for field <resource>%1</resource>"
 msgstr "फिल्ड \"%1\" का लागि प्राथमिक कुञ्जी सेट गर्नुहोस्"
 
-#: plugins/tables/kexitabledesignerview.cpp:1046
+#: plugins/tables/kexitabledesignerview.cpp:1047
 #, fuzzy, kde-format
 #| msgid "Unset primary key for field \"%1\""
 msgctxt "(qtundo-format)"
 msgid "Unset primary key for field <resource>%1</resource>"
 msgstr "फिल्ड \"%1\" का लागि प्राथमिक कुञ्जी अनसेट गर्नुहोस्"
 
-#: plugins/tables/kexitabledesignerview.cpp:1151
+#: plugins/tables/kexitabledesignerview.cpp:1152
 msgid "You should enter field caption."
 msgstr "तपाईँले फिल्ड क्याप्सन प्रविष्ट गर्नुपर्नेछ ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:1168
+#: plugins/tables/kexitabledesignerview.cpp:1169
 msgid ""
 "You have added no fields.\n"
 "Every table should have at least one field."
@@ -8148,16 +8234,20 @@ msgstr ""
 "तपाईँले कुनै फिल्डहरू थप गर्नु भएको छैन ।\n"
 "प्रत्येक तालिकासँग कम्तिमा एउटा फिल्ड हुनुपर्दछ ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:1184
-#, kde-format
+#: plugins/tables/kexitabledesignerview.cpp:1185
+#, fuzzy, kde-format
+#| msgid ""
+#| "You have added \"%1\" field name twice.\n"
+#| "Field names cannot be repeated. Correct name of the field."
+msgctxt "@info"
 msgid ""
-"You have added \"%1\" field name twice.\n"
-"Field names cannot be repeated. Correct name of the field."
+"<para>You have added <resource>%1</resource> field name twice.</"
+"para><para>Field names cannot be repeated. Correct name of the field.</para>"
 msgstr ""
 "तपाईँले \"%1\" फिल्ड नाम दुई पटक थप्नु भएको छ ।\n"
 "फिल्ड नामलाई दोहर्याउन सकिदैन । फिल्डको नाम सुधार गर्नुहोस् ।"
 
-#: plugins/tables/kexitabledesignerview.cpp:1198
+#: plugins/tables/kexitabledesignerview.cpp:1199
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Table \"%1\" has no <b>primary key</b> defined.</p><p>Although a "
@@ -8180,27 +8270,32 @@ msgstr ""
 "तपाईँले हातले प्राथमिक कुञ्जी थप्न चाहनुहुन्छ भने, तालिका डिजाइन बचत रद्द गर्न \"रद्द "
 "गर्नुहोस्\" क्लिक गर्नुहोस् ।</p>"
 
-#: plugins/tables/kexitabledesignerview.cpp:1217
+#: plugins/tables/kexitabledesignerview.cpp:1218
 #, kde-format
 msgctxt "Identifier%1"
 msgid "Id%1"
 msgstr "Id%1"
 
-#: plugins/tables/kexitabledesignerview.cpp:1430
-#, kde-format
+#: plugins/tables/kexitabledesignerview.cpp:1432
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are about to remove table \"%1\" but following objects using this "
+#| "table are opened:"
+msgctxt "@info"
 msgid ""
-"You are about to change the design of table \"%1\" but following objects "
-"using this table are opened:"
+"You are about to change the design of table <resource>%1</resource> but "
+"following objects using this table are opened:"
 msgstr ""
-"तपाईँले \"%1\" तालिकाको डिजाइन परिवर्तन गर्न लाग्नु भएको छ तर यो तालिकाको प्रयोग "
-"गर्ने निम्न वस्तुहरू खुला छन्:"
-
-#: plugins/tables/kexitabledesignerview.cpp:1618
-#, kde-format
-msgid "Table field \"%1\""
-msgstr "तालिका फिल्ड \"%1\""
+"तपाईँ तालिका \"%1\" हटाउन लाग्दै हुनुहुन्छ तर तलका वस्तुहरू यो तालिका प्रयोग गरेर खोल्दछ:"
 
 #: plugins/tables/kexitabledesignerview.cpp:1620
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Table field <resource>%1</resource>"
+msgstr "\"%1\" वस्तु बचत गर्दा असफल ।"
+
+#: plugins/tables/kexitabledesignerview.cpp:1622
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "रिक्त पङ्क्ति"
@@ -8507,10 +8602,14 @@ msgid "Edit Database Connection"
 msgstr "डाटाबेस जडान सम्पादन गर्नुहोस्।"
 
 #: widget/KexiConnectionSelectorWidget.cpp:451
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Do you want to remove database connection \"%1\" from the list of "
+#| "available connections?"
+msgctxt "@info"
 msgid ""
-"Do you want to remove database connection \"%1\" from the list of available "
-"connections?"
+"Do you want to remove database connection <resource>%1</resource> from the "
+"list of available connections?"
 msgstr "तपाईँले उपलब्ध जडानको सूचीबाट \"%1\" डाटाबेस जडान हटाउन चाहनुहुन्छ ?"
 
 #: widget/KexiDataSourceComboBox.cpp:125
@@ -8777,31 +8876,51 @@ msgstr "सबै समर्थित फाइल (%1)"
 msgid "All Supported Files (%1)"
 msgstr "सबै समर्थित फाइल (%1)"
 
-#: widget/KexiFileWidget.cpp:320 widget/KexiFileWidget.cpp:362
-#: widget/KexiStartupFileHandler.cpp:354 widget/KexiStartupFileHandler.cpp:405
+#: widget/KexiFileWidget.cpp:320 widget/KexiStartupFileHandler.cpp:354
 msgid "Enter a filename."
 msgstr "फाइलनाम प्रविष्ट गर्नुहोस् ।"
 
-#: widget/KexiFileWidget.cpp:357 widget/KexiStartupFileHandler.cpp:399
-#, kde-format
-msgid "The file \"%1\" does not exist."
-msgstr "फाइल \"%1\" अवस्थित छैन ।"
-
-#: widget/KexiFileWidget.cpp:365 widget/KexiStartupFileHandler.cpp:409
-#, kde-format
-msgid "The file \"%1\" is not readable."
-msgstr "फाइल \"%1\" पढ्नयोग्य छैन ।"
-
-#: widget/KexiFileWidget.cpp:383
-#, kde-format
-msgid ""
-"The file \"%1\" already exists.\n"
-"Do you want to overwrite it?"
+#: widget/KexiFileWidget.cpp:358 widget/KexiStartupFileHandler.cpp:399
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not remove project.\n"
+#| "The file \"%1\" does not exist."
+msgctxt "@info"
+msgid "The file <filename>%1</filename> does not exist."
 msgstr ""
-"फाइल \"%1\" पहिलेनै अवस्थित छ ।\n"
-"के तपाईं यसलाई अधिलेखन गर्न चाहनुहुन्छ?"
+"परियोजना हटाउन सकेन ।\n"
+"फाइल \"%1\" अवस्थित छैन ।"
+
+#: widget/KexiFileWidget.cpp:363 widget/KexiStartupFileHandler.cpp:405
+#, fuzzy
+#| msgid "Enter a filename."
+msgctxt "@info"
+msgid "Enter a filename."
+msgstr "फाइलनाम प्रविष्ट गर्नुहोस् ।"
+
+#: widget/KexiFileWidget.cpp:367
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not remove project.\n"
+#| "The file \"%1\" does not exist."
+msgctxt "@info"
+msgid "The file <filename>%1</filename> is not readable."
+msgstr ""
+"परियोजना हटाउन सकेन ।\n"
+"फाइल \"%1\" अवस्थित छैन ।"
 
 #: widget/KexiFileWidget.cpp:385
+#, fuzzy, kde-format
+#| msgid ""
+#| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
+msgctxt "@info"
+msgid ""
+"<para>The file <filename>%1<filename> already exists.</para><para>Do you "
+"want to overwrite it?</para>"
+msgstr ""
+"फाइल \"%1\" पहिले नै अवस्थित छ ।<p> तपाईँ यसलाई नयाँबाट प्रतिस्थापन गर्न चाहनुहुन्छ?"
+
+#: widget/KexiFileWidget.cpp:389
 #, fuzzy
 #| msgid "Overwrite"
 msgctxt "@action:button Overwrite File"
@@ -8962,6 +9081,17 @@ msgid ""
 "filename>. Please note that your package names could vary slightly depending "
 "on the operating system you use.</para>"
 msgstr ""
+
+#: widget/KexiStartupFileHandler.cpp:409
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not remove project.\n"
+#| "The file \"%1\" does not exist."
+msgctxt "@info"
+msgid "The file <filename>%1<filename> is not readable."
+msgstr ""
+"परियोजना हटाउन सकेन ।\n"
+"फाइल \"%1\" अवस्थित छैन ।"
 
 #: widget/KexiStartupFileHandler.cpp:454
 #, fuzzy
@@ -9433,6 +9563,157 @@ msgstr "अन्तिम पङ्क्तिमा जानुहोस्"
 #| msgid "Go to next row"
 msgid "Moves cursor to new record and allows inserting."
 msgstr "पछिल्लो पङ्क्तिमा जानुहोस्"
+
+#~ msgid "Data identifier: \"%1\"."
+#~ msgstr "डेटा पहिचायक: \"%1\""
+
+#, fuzzy
+#~| msgid "Could not load \"%1\" plugin."
+#~ msgctxt "@info"
+#~ msgid "Could not load Kexi plugin file \"%1\"."
+#~ msgstr "\"%1\" प्लगइन लोड गर्न सकेन ।"
+
+#, fuzzy
+#~| msgid "Could not open project \"%1\"."
+#~ msgid "Could not open Kexi plugin \"%1\"."
+#~ msgstr "\"%1\" परियोजना खोल्न सकेन ।"
+
+#~ msgid "Could not rename object \"%1\"."
+#~ msgstr "\"%1\" वस्तुलाई पुन: नामकरण गर्न सकेन ।"
+
+#~ msgid "Could not open project \"%1\"."
+#~ msgstr "\"%1\" परियोजना खोल्न सकेन ।"
+
+#~ msgid "Could not create project \"%1\"."
+#~ msgstr "\"%1\" परियोजना सिर्जना गर्न सकेन ।"
+
+#, fuzzy
+#~| msgid "Opening object \"%1\" failed."
+#~ msgid ""
+#~ "Opening object \"%1\" failed.\n"
+#~ "%2%3"
+#~ msgstr "\"%1\" वस्तु खोल्न असफल ।"
+
+#, fuzzy
+#~| msgid "Do you want to drop the project \"%1\"?"
+#~ msgid ""
+#~ "Do you want to delete the project \"%1\"?\n"
+#~ "%1"
+#~ msgstr "के तपाईँ \"%1\" परियोजना छोड्न चाहनुहुन्छ?"
+
+#, fuzzy
+#~| msgid "Set \"%1\" property for field \"%2\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change \"%1\" property for widget \"%2\""
+#~ msgstr " \"%2\" फिल्डका लागि \"%1\" विशेषता सेट गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Insert table field \"%1\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert widget \"%1\""
+#~ msgstr "तालिका फिल्ड \"%1\" घुसाउनुहोस्"
+
+#, fuzzy
+#~| msgid "Renaming object \"%1\" failed."
+#~ msgid "Renaming widget \"%1\" to \"%2\" failed."
+#~ msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
+
+#, fuzzy
+#~| msgid "Table field \"%1\""
+#~ msgid "Tab for \"%1\"."
+#~ msgstr "तालिका फिल्ड \"%1\""
+
+#~ msgid "Renaming object \"%1\" failed."
+#~ msgstr "वस्तु \"%1\" पुन: नामकरण गर्न असफल ।"
+
+#, fuzzy
+#~| msgid "Local server"
+#~ msgid "on \"%1\" server"
+#~ msgstr "स्थानीय सर्भर"
+
+#, fuzzy
+#~| msgid "New database"
+#~ msgctxt "File database <file>"
+#~ msgid "File database %1"
+#~ msgstr "नयाँ डेटाबेस"
+
+#~ msgid ""
+#~ "Could not remove project.\n"
+#~ "The file \"%1\" does not exist."
+#~ msgstr ""
+#~ "परियोजना हटाउन सकेन ।\n"
+#~ "फाइल \"%1\" अवस्थित छैन ।"
+
+#~ msgid ""
+#~ "Could not open shortcut file\n"
+#~ "\"%1\"."
+#~ msgstr ""
+#~ "सर्टकट फाइल \"%1\" खोल्न\n"
+#~ "सकिएन ।"
+
+#~ msgid ""
+#~ "Could not open connection data file\n"
+#~ "\"%1\"."
+#~ msgstr ""
+#~ "जडान डेटा फाइल \"%1\" खोल्न\n"
+#~ "सकिएन ।"
+
+#~ msgid "Select column for table \"%1\""
+#~ msgstr "तालिका \"%1\" का लागि स्तम्भ चयन गर्नुहोस्"
+
+#~ msgid "Could not set criteria for \"%1\""
+#~ msgstr "\"%1\" का लागि मापदण्ड सेट गर्न सकेन"
+
+#, fuzzy
+#~| msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+#~ msgstr ""
+#~ "\"%2\" देखि \"%3\" बाट तालिका फिल्डका लागि \"%1\" विशेषता परिवर्तन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Remove table field \"%1\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove table field \"%1\""
+#~ msgstr "तालिका फिल्ड \"%1\" हटाउनुहोस्"
+
+#, fuzzy
+#~| msgid ""
+#~| "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid ""
+#~ "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+#~ msgstr ""
+#~ "\"%1\" फिल्डको नाम \"%2\" मा र क्याप्सन \"%3\" बाट \"%4\" मा परिवर्तन गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "Change data type for field \"%1\" to \"%2\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change data type for field \"%1\" to \"%2\""
+#~ msgstr "\"%1\" देखि \"%2\" फिल्डका लागि डेटा प्रकार परिवर्तन गर्नुहोस्"
+
+#~ msgid ""
+#~ "You are about to change the design of table \"%1\" but following objects "
+#~ "using this table are opened:"
+#~ msgstr ""
+#~ "तपाईँले \"%1\" तालिकाको डिजाइन परिवर्तन गर्न लाग्नु भएको छ तर यो तालिकाको प्रयोग "
+#~ "गर्ने निम्न वस्तुहरू खुला छन्:"
+
+#~ msgid "Table field \"%1\""
+#~ msgstr "तालिका फिल्ड \"%1\""
+
+#~ msgid "The file \"%1\" does not exist."
+#~ msgstr "फाइल \"%1\" अवस्थित छैन ।"
+
+#~ msgid "The file \"%1\" is not readable."
+#~ msgstr "फाइल \"%1\" पढ्नयोग्य छैन ।"
+
+#~ msgid ""
+#~ "The file \"%1\" already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "फाइल \"%1\" पहिलेनै अवस्थित छ ।\n"
+#~ "के तपाईं यसलाई अधिलेखन गर्न चाहनुहुन्छ?"
 
 #, fuzzy
 #~| msgid "Following problems were found with the data you entered:"
