@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-02 07:16+0000\n"
+"POT-Creation-Date: 2016-10-03 07:18+0000\n"
 "PO-Revision-Date: 2007-08-26 13:40+0545\n"
 "Last-Translator: Narayan Kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -34,25 +34,25 @@ msgstr "lipak21@gmail.com, shyamkrishna_bal@yahoo.com, narayan@mpp.org.np"
 msgid "&Archive"
 msgstr "'सङ्ग्रह' खोल्नुहोस्"
 
-#: app/batchextract.cpp:146 app/batchextract.cpp:201
+#: app/batchextract.cpp:118 app/batchextract.cpp:172
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting Files"
 msgstr "सबै फाइल झिक्नुहोस्"
 
-#: app/batchextract.cpp:147 app/batchextract.cpp:202
+#: app/batchextract.cpp:119 app/batchextract.cpp:173
 #, fuzzy
 #| msgid "Save Archive?"
 msgid "Source archive"
 msgstr "सङ्ग्रह बचत गर्नुहुन्छ?"
 
-#: app/batchextract.cpp:148 app/batchextract.cpp:203
+#: app/batchextract.cpp:120 app/batchextract.cpp:174
 #, fuzzy
 #| msgid "Destination folder: "
 msgid "Destination"
 msgstr "गन्तव्य फोल्डर: "
 
-#: app/batchextract.cpp:161
+#: app/batchextract.cpp:133
 #, fuzzy
 #| msgid ""
 #| "The following files will not be extracted\n"
@@ -62,7 +62,7 @@ msgstr ""
 "निम्न फाइल उद्धरण गरिँदैन\n"
 "किनभने त्यो पहिले नै अवस्थित भइसक्यो:"
 
-#: app/batchextract.cpp:179
+#: app/batchextract.cpp:151
 msgid "There was an error during extraction."
 msgstr ""
 
@@ -346,7 +346,7 @@ msgstr "थप्नुहोस्"
 msgid "Files/Folders to Compress"
 msgstr ""
 
-#: kerfuffle/addtoarchive.cpp:95
+#: kerfuffle/addtoarchive.cpp:97
 #, fuzzy
 #| msgid "Simple Compressed Archive"
 msgid "Compress to Archive"
@@ -356,22 +356,10 @@ msgstr "सामान्य सङ्कुचित सङ्ग्रह"
 msgid "No input files were given."
 msgstr ""
 
-#: kerfuffle/addtoarchive.cpp:151
+#: kerfuffle/addtoarchive.cpp:147
 msgid ""
 "You need to either supply a filename for the archive or a suffix (such as "
 "rar, tar.gz) with the <command>--autofilename</command> argument."
-msgstr ""
-
-#: kerfuffle/addtoarchive.cpp:182
-msgid "Failed to create the new archive. No suitable plugin found."
-msgstr ""
-
-#: kerfuffle/addtoarchive.cpp:187
-msgid "Failed to create the new archive. Could not load a suitable plugin."
-msgstr ""
-
-#: kerfuffle/addtoarchive.cpp:192
-msgid "It is not possible to create archives of this type."
 msgstr ""
 
 #. i18n: ectx: label, entry (closeAfterExtraction), group (Extraction)
@@ -766,19 +754,33 @@ msgstr ""
 msgid "Extract to a subfolder if the archive has more than one top-level entry"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:120
+#, fuzzy
+#| msgid "An error occurred while adding the files to the archive."
+msgid "No suitable plugin found. Ark does not seem to support this file type."
+msgstr "सङ्ग्रहमा फाइल थप्दा त्रुटि देखापर्यो ।"
+
+#: kerfuffle/jobs.cpp:124
+#, fuzzy
+#| msgid "An error occurred while adding the files to the archive."
+msgid ""
+"Failed to load a suitable plugin. Make sure any executables needed to handle "
+"the archive type are installed."
+msgstr "सङ्ग्रहमा फाइल थप्दा त्रुटि देखापर्यो ।"
+
+#: kerfuffle/jobs.cpp:251
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Loading archive..."
 msgstr "सङ्ग्रह सिर्जना गरिँदैछ..."
 
-#: kerfuffle/jobs.cpp:269
+#: kerfuffle/jobs.cpp:445
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting all files"
 msgstr "सबै फाइल झिक्नुहोस्"
 
-#: kerfuffle/jobs.cpp:271 kerfuffle/jobs.cpp:359
+#: kerfuffle/jobs.cpp:447 kerfuffle/jobs.cpp:535
 #, fuzzy, kde-format
 #| msgid "Extract all files"
 msgid "Extracting one file"
@@ -786,14 +788,14 @@ msgid_plural "Extracting %1 files"
 msgstr[0] "सबै फाइल झिक्नुहोस्"
 msgstr[1] "सबै फाइल झिक्नुहोस्"
 
-#: kerfuffle/jobs.cpp:277
+#: kerfuffle/jobs.cpp:453
 #, kde-format
 msgid ""
 "Could not write to destination <filename>%1</filename>.<nl/>Check whether "
 "you have sufficient permissions."
 msgstr ""
 
-#: kerfuffle/jobs.cpp:434
+#: kerfuffle/jobs.cpp:610
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Adding a file"
@@ -801,7 +803,7 @@ msgid_plural "Adding %1 files"
 msgstr[0] "फाइलहरू थपिँदैछ..."
 msgstr[1] "फाइलहरू थपिँदैछ..."
 
-#: kerfuffle/jobs.cpp:486
+#: kerfuffle/jobs.cpp:662
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Moving a file"
@@ -809,7 +811,7 @@ msgid_plural "Moving %1 files"
 msgstr[0] "फाइलहरू थपिँदैछ..."
 msgstr[1] "फाइलहरू थपिँदैछ..."
 
-#: kerfuffle/jobs.cpp:523
+#: kerfuffle/jobs.cpp:699
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Copying a file"
@@ -817,7 +819,7 @@ msgid_plural "Copying %1 files"
 msgstr[0] "फाइलहरू थपिँदैछ..."
 msgstr[1] "फाइलहरू थपिँदैछ..."
 
-#: kerfuffle/jobs.cpp:554
+#: kerfuffle/jobs.cpp:730
 #, fuzzy, kde-format
 #| msgid "Trouble writing to the archive..."
 msgid "Deleting a file from the archive"
@@ -825,13 +827,13 @@ msgid_plural "Deleting %1 files"
 msgstr[0] "सङ्ग्रहमा लेख्दा समस्या..."
 msgstr[1] "सङ्ग्रहमा लेख्दा समस्या..."
 
-#: kerfuffle/jobs.cpp:577
+#: kerfuffle/jobs.cpp:753
 #, fuzzy
 #| msgid "Adding folder..."
 msgid "Adding comment"
 msgstr "फोल्डर थपिँदैछ..."
 
-#: kerfuffle/jobs.cpp:602
+#: kerfuffle/jobs.cpp:778
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Testing archive"
@@ -1055,50 +1057,50 @@ msgstr ""
 msgid "Don't ask again."
 msgstr ""
 
-#: part/archivemodel.cpp:265
+#: part/archivemodel.cpp:263
 msgctxt "Name of a file inside an archive"
 msgid "Name"
 msgstr ""
 
-#: part/archivemodel.cpp:267
+#: part/archivemodel.cpp:265
 #, fuzzy
 #| msgid " Size "
 msgctxt "Uncompressed size of a file inside an archive"
 msgid "Size"
 msgstr " साइज "
 
-#: part/archivemodel.cpp:269
+#: part/archivemodel.cpp:267
 #, fuzzy
 #| msgid "Compressed File"
 msgctxt "Compressed size of a file inside an archive"
 msgid "Compressed"
 msgstr "सङ्कुचित फाइल"
 
-#: part/archivemodel.cpp:271
+#: part/archivemodel.cpp:269
 msgctxt "Compression rate of file"
 msgid "Rate"
 msgstr ""
 
-#: part/archivemodel.cpp:273
+#: part/archivemodel.cpp:271
 #, fuzzy
 #| msgid " Owner "
 msgctxt "File's owner username"
 msgid "Owner"
 msgstr " मालिक "
 
-#: part/archivemodel.cpp:275
+#: part/archivemodel.cpp:273
 #, fuzzy
 #| msgid " Group "
 msgctxt "File's group"
 msgid "Group"
 msgstr " समूह "
 
-#: part/archivemodel.cpp:277
+#: part/archivemodel.cpp:275
 msgctxt "File permissions"
 msgid "Mode"
 msgstr ""
 
-#: part/archivemodel.cpp:279
+#: part/archivemodel.cpp:277
 #, fuzzy
 #| msgctxt "Cyclic Redundancy Check"
 #| msgid " CRC "
@@ -1106,36 +1108,31 @@ msgctxt "CRC hash code"
 msgid "CRC"
 msgstr " CRC "
 
-#: part/archivemodel.cpp:281
+#: part/archivemodel.cpp:279
 #, fuzzy
 #| msgid " Method "
 msgctxt "Compression method"
 msgid "Method"
 msgstr "विधि"
 
-#: part/archivemodel.cpp:284
+#: part/archivemodel.cpp:282
 #, fuzzy
 #| msgid " Version "
 msgctxt "File version"
 msgid "Version"
 msgstr " संस्करण"
 
-#: part/archivemodel.cpp:286
+#: part/archivemodel.cpp:284
 msgctxt "Timestamp"
 msgid "Date"
 msgstr ""
 
-#: part/archivemodel.cpp:288
-msgctxt "File comment"
-msgid "Comment"
-msgstr ""
-
-#: part/archivemodel.cpp:290
+#: part/archivemodel.cpp:286
 msgctxt "Unnamed column"
 msgid "??"
 msgstr ""
 
-#: part/archivemodel.cpp:467
+#: part/archivemodel.cpp:462
 msgid "Adding files is not supported for this archive."
 msgstr ""
 
@@ -1511,61 +1508,42 @@ msgctxt "@action:inmenu mutually exclusive with Edit &Comment"
 msgid "Add &Comment"
 msgstr "फोल्डर थपिँदैछ..."
 
-#: part/part.cpp:583
+#: part/part.cpp:616
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgid "The archive passed the integrity test."
 msgstr "सङ्ग्रह %1 अवस्थित हुँदैन ।"
 
-#: part/part.cpp:583 part/part.cpp:585
+#: part/part.cpp:616 part/part.cpp:618
 msgid "Test Results"
 msgstr ""
 
-#: part/part.cpp:585
+#: part/part.cpp:618
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgid "The archive failed the integrity test."
 msgstr "सङ्ग्रह %1 अवस्थित हुँदैन ।"
 
-#: part/part.cpp:606
+#: part/part.cpp:639
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Extract To..."
 msgstr "उद्धरण..."
 
-#: part/part.cpp:620
+#: part/part.cpp:653
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Quick Extract To..."
 msgstr "उद्धरण..."
 
-#: part/part.cpp:695
-#, fuzzy, kde-format
-#| msgid "An error occurred while adding the files to the archive."
-msgctxt "@info"
-msgid ""
-"Ark was not able to open <filename>%1</filename>. No suitable plugin found."
-"<nl/>Ark does not seem to support this file type."
-msgstr "सङ्ग्रहमा फाइल थप्दा त्रुटि देखापर्यो ।"
-
-#: part/part.cpp:702
-#, fuzzy, kde-format
-#| msgid "An error occurred while adding the files to the archive."
-msgctxt "@info"
-msgid ""
-"Ark was not able to open <filename>%1</filename>. Failed to load a suitable "
-"plugin.<nl/>Make sure any executables needed to handle the archive type are "
-"installed."
-msgstr "सङ्ग्रहमा फाइल थप्दा त्रुटि देखापर्यो ।"
-
-#: part/part.cpp:753
+#: part/part.cpp:752
 #, fuzzy
 #| msgid "Extract all files"
 msgctxt "@title:tab"
 msgid "Extraction Settings"
 msgstr "सबै फाइल झिक्नुहोस्"
 
-#: part/part.cpp:754
+#: part/part.cpp:753
 #, fuzzy
 #| msgctxt "to view something"
 #| msgid "&View"
@@ -1573,13 +1551,13 @@ msgctxt "@title:tab"
 msgid "Preview Settings"
 msgstr "दृश्य"
 
-#: part/part.cpp:767
+#: part/part.cpp:766
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr ""
 
-#: part/part.cpp:776
+#: part/part.cpp:775
 #, fuzzy, kde-format
 #| msgid "Could not create the folder %1"
 msgctxt "@info"
@@ -1588,7 +1566,7 @@ msgid ""
 "permission."
 msgstr "फोल्डर %1 सिर्जना गर्न सकेन"
 
-#: part/part.cpp:782
+#: part/part.cpp:781
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1597,13 +1575,13 @@ msgid ""
 "file."
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ । तपाईं यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: part/part.cpp:785
+#: part/part.cpp:784
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr ""
 
-#: part/part.cpp:790
+#: part/part.cpp:789
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1612,7 +1590,7 @@ msgid ""
 "possible to read from it."
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ । तपाईं यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: part/part.cpp:803
+#: part/part.cpp:802
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1621,21 +1599,21 @@ msgid ""
 "it?"
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ । तपाईं यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: part/part.cpp:805
+#: part/part.cpp:804
 #, fuzzy
 #| msgid "Archive Already Exists"
 msgctxt "@title:window"
 msgid "File Exists"
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ"
 
-#: part/part.cpp:806
+#: part/part.cpp:805
 #, fuzzy
 #| msgid "Do Not Overwrite"
 msgctxt "@action:button"
 msgid "Overwrite"
 msgstr "अधिलेखन नगर्नुहोस्"
 
-#: part/part.cpp:829
+#: part/part.cpp:828
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1643,23 +1621,23 @@ msgid ""
 "<nl/><message>%2</message>"
 msgstr ""
 
-#: part/part.cpp:873
+#: part/part.cpp:871
 #, fuzzy
 #| msgid "The archive %1 does not exist."
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr "सङ्ग्रह %1 अवस्थित हुँदैन ।"
 
-#: part/part.cpp:878
+#: part/part.cpp:876
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:937
+#: part/part.cpp:935
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:1042
+#: part/part.cpp:1040
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgid ""
@@ -1667,52 +1645,52 @@ msgid ""
 "archive?"
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ । तपाईं यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: part/part.cpp:1044
+#: part/part.cpp:1042
 #, fuzzy
 #| msgid "Files to be added"
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr "थप गरिनुपर्ने फाइल"
 
-#: part/part.cpp:1348
+#: part/part.cpp:1346
 #, fuzzy
 #| msgid "All Files"
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "सबै फाइल"
 
-#: part/part.cpp:1353
+#: part/part.cpp:1351
 #, fuzzy, kde-format
 #| msgid "All Files"
 msgctxt "@title:window"
 msgid "Add Files to %1"
 msgstr "सबै फाइल"
 
-#: part/part.cpp:1428
+#: part/part.cpp:1426
 msgid "Invalid filename"
 msgstr ""
 
-#: part/part.cpp:1429
+#: part/part.cpp:1427
 msgid "Filename can't contain slashes and can't be equal to \".\" or \"..\""
 msgstr ""
 
-#: part/part.cpp:1469
+#: part/part.cpp:1467
 msgid "Moving a folder into itself"
 msgstr ""
 
-#: part/part.cpp:1470
+#: part/part.cpp:1468
 msgid "Folders can't be moved into themselves."
 msgstr ""
 
-#: part/part.cpp:1502
+#: part/part.cpp:1500
 msgid "Pasting entries with the same name"
 msgstr ""
 
-#: part/part.cpp:1503
+#: part/part.cpp:1501
 msgid "Entries with the same names can't be pasted to the same destination."
 msgstr ""
 
-#: part/part.cpp:1603
+#: part/part.cpp:1601
 msgctxt "@info"
 msgid "Deleting this file is not undoable. Are you sure you want to do this?"
 msgid_plural ""
@@ -1720,7 +1698,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: part/part.cpp:1606
+#: part/part.cpp:1604
 #, fuzzy
 #| msgid "Selected files only"
 msgctxt "@title:window"
@@ -1729,14 +1707,14 @@ msgid_plural "Delete Files"
 msgstr[0] "चयन गरिएको फाइलहरू मात्र"
 msgstr[1] "चयन गरिएको फाइलहरू मात्र"
 
-#: part/part.cpp:1649
+#: part/part.cpp:1647
 #, fuzzy
 #| msgid "Save Archive As"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "यस रूपमा सङ्ग्रह बचत गर्नुहोस्"
 
-#: part/part.cpp:1656
+#: part/part.cpp:1654
 #, fuzzy, kde-format
 #| msgid "Archive already exists. Do you wish to overwrite it?"
 msgctxt "@info"
@@ -1745,7 +1723,7 @@ msgid ""
 "want to overwrite it?"
 msgstr "सङ्ग्रह पहिले नै अवस्थित छ । तपाईं यसमा अधिलेखन गर्न चाहनुहुन्छ?"
 
-#: part/part.cpp:1670
+#: part/part.cpp:1668
 #, fuzzy, kde-format
 #| msgid "You must enter a password to extract the file:"
 msgctxt "@info"
@@ -1754,7 +1732,7 @@ msgid ""
 "location. The archive does not exist anymore."
 msgstr "तपाईंले फाइल उद्धरण गर्न पासवर्ड प्रविष्ट गर्नुपर्छ:"
 
-#: part/part.cpp:1684
+#: part/part.cpp:1682
 #, fuzzy, kde-format
 #| msgid "Last folders used for extraction"
 msgctxt "@info"
