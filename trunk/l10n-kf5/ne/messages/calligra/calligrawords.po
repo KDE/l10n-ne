@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2007-08-19 13:06+0545\n"
 "Last-Translator: Narayan kumar Magar <narayan@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -93,6 +93,32 @@ msgstr "मान"
 #: part/calligrawords_readonly.rc:29
 #, kde-format
 msgid "&Tools"
+msgstr ""
+
+#: part/commands/KWChangePageStyleCommand.cpp:24
+#, fuzzy
+#| msgid "Page number:"
+msgctxt "(qtundo-format)"
+msgid "Set Page Style"
+msgstr "पृष्ठ सङ्ख्या:"
+
+#: part/commands/KWNewPageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Page number:"
+msgctxt "(qtundo-format)"
+msgid "Insert Page Style"
+msgstr "पृष्ठ सङ्ख्या:"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:29
+#, fuzzy
+#| msgid "Page number:"
+msgctxt "(qtundo-format)"
+msgid "Page Properties"
+msgstr "पृष्ठ सङ्ख्या:"
+
+#: part/commands/KWShapeCreateCommand.cpp:55
+msgctxt "(qtundo-format)"
+msgid "Create shape"
 msgstr ""
 
 #: part/dialogs/KWAnchoringProperties.cpp:434
@@ -371,6 +397,13 @@ msgstr ""
 msgid "Connect Text Frames"
 msgstr ""
 
+#: part/dialogs/KWFrameDialog.cpp:79
+#, fuzzy
+#| msgid "Page number:"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "पृष्ठ सङ्ख्या:"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
 #: part/dialogs/KWInsertImage.ui:17
 #, kde-format
@@ -526,16 +559,23 @@ msgstr "अन्त्य"
 msgid "Delete"
 msgstr ""
 
-#: part/dialogs/KWPageSettingsDialog.cpp:224
-#, fuzzy, kde-format
+#: part/dialogs/KWPageSettingsDialog.cpp:150
+#, fuzzy
 #| msgid "Page number:"
-msgid "Clone Page Style"
+msgctxt "(qtundo-format)"
+msgid "Change Page Style"
 msgstr "पृष्ठ सङ्ख्या:"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:224
 #, kde-format
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWPageSettingsDialog.cpp:224
+#, fuzzy, kde-format
+#| msgid "Page number:"
+msgid "Clone Page Style"
+msgstr "पृष्ठ सङ्ख्या:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: part/dialogs/KWRunAroundProperties.ui:17
@@ -657,15 +697,15 @@ msgstr "अभिवादन"
 
 #: part/dockers/KWNavigationWidget.cpp:108
 #, fuzzy, kde-format
-#| msgid "Instructions"
-msgid "Section"
-msgstr "प्रशिक्षण"
-
-#: part/dockers/KWNavigationWidget.cpp:108
-#, fuzzy, kde-format
 #| msgid "Remove entry"
 msgid "Page #"
 msgstr "प्रविष्टि हटाउनुहोस्"
+
+#: part/dockers/KWNavigationWidget.cpp:108
+#, fuzzy, kde-format
+#| msgid "Instructions"
+msgid "Section"
+msgstr "प्रशिक्षण"
 
 #: part/dockers/KWRdfDocker.cpp:52
 #, kde-format
@@ -1071,14 +1111,14 @@ msgstr ""
 msgid "Copyright 1998-%1, The Words Team"
 msgstr ""
 
-#: part/KWAboutData.h:45
-#, kde-format
-msgid "Pierre Ducroquet"
-msgstr ""
-
 #: part/KWAboutData.h:45 part/KWAboutData.h:46
 #, kde-format
 msgid "Co maintainer"
+msgstr ""
+
+#: part/KWAboutData.h:45
+#, kde-format
+msgid "Pierre Ducroquet"
 msgstr ""
 
 #: part/KWAboutData.h:46
@@ -1086,15 +1126,15 @@ msgstr ""
 msgid "C. Boemann"
 msgstr ""
 
-#: part/KWAboutData.h:47
-#, kde-format
-msgid "Sebastian Sauer"
-msgstr ""
-
 #: part/KWAboutData.h:47 part/KWAboutData.h:48 part/KWAboutData.h:49
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Everything"
+msgstr ""
+
+#: part/KWAboutData.h:47
+#, kde-format
+msgid "Sebastian Sauer"
 msgstr ""
 
 #: part/KWAboutData.h:48
@@ -1109,22 +1149,17 @@ msgstr ""
 
 #: part/KWAboutData.h:50
 #, kde-format
-msgid "Inge Wallin"
+msgid "Formatting stuff"
 msgstr ""
 
 #: part/KWAboutData.h:50
 #, kde-format
-msgid "Formatting stuff"
+msgid "Inge Wallin"
 msgstr ""
 
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Thorsten Zachmann"
-msgstr ""
-
-#: part/KWAboutData.h:52
-#, kde-format
-msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:52 part/KWAboutData.h:58 part/KWAboutData.h:59
@@ -1137,14 +1172,19 @@ msgstr ""
 msgid "Filter"
 msgstr "यसमा फिल्टर:"
 
-#: part/KWAboutData.h:53
+#: part/KWAboutData.h:52
 #, kde-format
-msgid "Pavol Korinek"
+msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:53
 #, kde-format
 msgid "Layout and Painting"
+msgstr ""
+
+#: part/KWAboutData.h:53
+#, kde-format
+msgid "Pavol Korinek"
 msgstr ""
 
 #: part/KWAboutData.h:54
@@ -1169,12 +1209,12 @@ msgstr ""
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Smit Patel"
+msgid "Bibliography"
 msgstr ""
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Bibliography"
+msgid "Smit Patel"
 msgstr ""
 
 #: part/KWAboutData.h:57
@@ -1259,12 +1299,12 @@ msgstr ""
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "Ulrich Kuettler"
+msgid "KFormula"
 msgstr ""
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "KFormula"
+msgid "Ulrich Kuettler"
 msgstr ""
 
 #: part/KWAboutData.h:72
@@ -1921,24 +1961,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "Page number:"
 #~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Style"
-#~ msgstr "पृष्ठ सङ्ख्या:"
-
-#, fuzzy
-#~| msgid "Page number:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Page Style"
-#~ msgstr "पृष्ठ सङ्ख्या:"
-
-#, fuzzy
-#~| msgid "Page number:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Page Properties"
-#~ msgstr "पृष्ठ सङ्ख्या:"
-
-#, fuzzy
-#~| msgid "Page number:"
-#~ msgctxt "(qtundo-format)"
 #~ msgid "Left page border"
 #~ msgstr "पृष्ठ सङ्ख्या:"
 
@@ -1981,12 +2003,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "Page number:"
 #~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape Properties"
-#~ msgstr "पृष्ठ सङ्ख्या:"
-
-#, fuzzy
-#~| msgid "Page number:"
-#~ msgctxt "(qtundo-format)"
 #~ msgid "Style"
 #~ msgstr "पृष्ठ सङ्ख्या:"
 
@@ -2001,12 +2017,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Delete"
 #~ msgstr "चयन गरिएका ठेगानाहरू"
-
-#, fuzzy
-#~| msgid "Page number:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Page Style"
-#~ msgstr "पृष्ठ सङ्ख्या:"
 
 #, fuzzy
 #~| msgid "Page number:"
