@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-01-13 03:38+0100\n"
+"POT-Creation-Date: 2017-01-15 03:59+0100\n"
 "PO-Revision-Date: 2007-11-01 17:45+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1952,59 +1952,74 @@ msgstr ""
 "त्यहाँ कन्फिगरेसन त्रुटि देखिन्छ । तपाईँले कन्क्वेररलाई %1 सँग सम्बन्धित गर्नु भएकोछ, तर यसले "
 "यो फाइल प्रकार ह्यान्डल गर्न सक्दैन ।"
 
-#. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: src/konqnewsessiondlg_base.ui:33
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/konqnewsessiondlg_base.ui:28
 #, kde-format
-msgid "Save open tabs and windows for easy retrieval"
+msgid "Save open &tabs and windows for easy retrieval"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_pAllWindows)
+#: src/konqnewsessiondlg_base.ui:34
+#, fuzzy, kde-format
+#| msgid "Open new windows:"
+msgid "A&ll open windows"
+msgstr "नयाँ सञ्झ्याल खोल्नुहोस्:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_pCurrentWindow)
+#: src/konqnewsessiondlg_base.ui:44
+#, fuzzy, kde-format
+#| msgid "Open the document in current window"
+msgid "Onl&y current window"
+msgstr "हालको सञ्झ्यालमा कागजात खोल्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSessionName)
-#: src/konqnewsessiondlg_base.ui:48
-#, kde-format
-msgid "&Session name:"
-msgstr ""
+#: src/konqnewsessiondlg_base.ui:56
+#, fuzzy, kde-format
+#| msgid "Extensions"
+msgid "Session n&ame:"
+msgstr "विस्तार"
 
-#: src/konqsessiondlg.cpp:76
+#: src/konqsessiondlg.cpp:77
 #, fuzzy, kde-format
 #| msgid "&Management"
 msgctxt "@title:window"
 msgid "Manage Sessions"
 msgstr "व्यवस्थापन"
 
-#: src/konqsessiondlg.cpp:80
+#: src/konqsessiondlg.cpp:81
 #, fuzzy, kde-format
 #| msgid "&Open Link"
 msgid "&Open"
 msgstr "लिङ्क खोल्नुहोस्"
 
-#: src/konqsessiondlg.cpp:178
+#: src/konqsessiondlg.cpp:180
 #, fuzzy, kde-format
 #| msgid "End of session"
 msgctxt "@title:window"
 msgid "Rename Session"
 msgstr "सत्रको अन्त्य"
 
-#: src/konqsessiondlg.cpp:225
+#: src/konqsessiondlg.cpp:230
 #, fuzzy, kde-format
 #| msgid "End of session"
 msgctxt "@title:window"
 msgid "Save Session"
 msgstr "सत्रको अन्त्य"
 
-#: src/konqsessiondlg.cpp:251
+#: src/konqsessiondlg.cpp:258
 #, kde-format
 msgid ""
 "A session with the name '%1' already exists, do you want to overwrite it?"
 msgstr ""
 
-#: src/konqsessiondlg.cpp:252
+#: src/konqsessiondlg.cpp:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Session exists. Overwrite?"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pNewButton)
-#: src/konqsessiondlg_base.ui:25
+#: src/konqsessiondlg_base.ui:26
 #, fuzzy, kde-format
 #| msgid "&New..."
 msgctxt "@action:button New session"
@@ -2012,15 +2027,15 @@ msgid "New..."
 msgstr "नयाँ..."
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pSaveCurrentButton)
-#: src/konqsessiondlg_base.ui:32
+#: src/konqsessiondlg_base.ui:33
 #, fuzzy, kde-format
 #| msgid "Close Current Tab"
 msgctxt "@action:button Save current session"
-msgid "Save Current"
+msgid "Save Current..."
 msgstr "हालको ट्याब बन्द गर्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pRenameButton)
-#: src/konqsessiondlg_base.ui:39
+#: src/konqsessiondlg_base.ui:40
 #, fuzzy, kde-format
 #| msgid "Rename"
 msgctxt "@action:button Rename session"
@@ -2028,7 +2043,7 @@ msgid "Rename..."
 msgstr "पुन: नामकरण गर्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pDeleteButton)
-#: src/konqsessiondlg_base.ui:46
+#: src/konqsessiondlg_base.ui:47
 #, fuzzy, kde-format
 #| msgid "D&elete"
 msgctxt "@action:button Delete session"
@@ -2037,7 +2052,7 @@ msgstr "मेट्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_pOpenTabsInsideCurrentWindow)
 #. i18n: ectx: label, entry, group (Trash)
-#: src/konqsessiondlg_base.ui:72 src/konqueror.kcfg:517
+#: src/konqsessiondlg_base.ui:73 src/konqueror.kcfg:517
 #, fuzzy, kde-format
 #| msgid "Open the document in current window"
 msgid "Open tabs inside current window"
@@ -4571,9 +4586,6 @@ msgstr "पुन: पठाउनुहोस्"
 
 #~ msgid "Tabbed Browsing"
 #~ msgstr "ट्याब गरिएको ब्राउजिङ"
-
-#~ msgid "Open new windows:"
-#~ msgstr "नयाँ सञ्झ्याल खोल्नुहोस्:"
 
 #~ msgid "Use global"
 #~ msgstr "विश्वव्यापी प्रयोग गर्नुहोस्"
