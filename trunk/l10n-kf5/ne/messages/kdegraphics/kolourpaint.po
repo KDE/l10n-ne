@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-05 02:48+0100\n"
+"POT-Creation-Date: 2017-01-27 03:56+0100\n"
 "PO-Revision-Date: 2007-08-20 12:26+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -567,6 +567,7 @@ msgid "R&esize Text Box"
 msgstr "पाठ बाकस रिसाइज गर्नुहोस्"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:723
+#: mainWindow/kpMainWindow_Tools.cpp:640
 #, kde-format
 msgid ""
 "<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
@@ -755,11 +756,17 @@ msgid "degrees"
 msgstr "डिग्री"
 
 #: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:267
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>Rotating the selection to %1x%2 may take a substantial amount of "
+#| "memory. This can reduce system responsiveness and cause other application "
+#| "resource problems.</p><p>Are you sure want to rotate the selection?</p></"
+#| "qt>"
 msgid ""
 "<qt><p>Rotating the selection to %1x%2 may take a substantial amount of "
 "memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure want to rotate the selection?</p></qt>"
+"resource problems.</p><p>Are you sure you want to rotate the selection?</p></"
+"qt>"
 msgstr ""
 "<qt><p>%1x%2 मा चयन घुमाउनाले स्मृतिको धेरैजसो मात्रा लिन सक्छ । यसले प्रणाली "
 "उत्तरदायित्व घटाउन सक्छ र यसले गर्दा अन्य अनुप्रयोग संसाधानमा समस्या हुन्छ ।</p><p>के "
@@ -778,11 +785,15 @@ msgid "Rotat&e Selection"
 msgstr "चयन घुमाउनुहोस्"
 
 #: dialogs/imagelib/transforms/kpTransformRotateDialog.cpp:282
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>Rotating the image to %1x%2 may take a substantial amount of "
+#| "memory. This can reduce system responsiveness and cause other application "
+#| "resource problems.</p><p>Are you sure want to rotate the image?</p></qt>"
 msgid ""
 "<qt><p>Rotating the image to %1x%2 may take a substantial amount of memory. "
 "This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to rotate the image?</p></qt>"
+"problems.</p><p>Are you sure you want to rotate the image?</p></qt>"
 msgstr ""
 "<qt><p>%1x%2 मा छवि घुमाउनले स्मृतिको धेरैजसो मात्र लिन सक्छ । यसले प्रणाली उत्तरदायित्व "
 "घटाउन सक्छ र यसले गर्दा अन्य अनुप्रयोग संसाधानमा समस्या हुन्छ ।</p><p>तपाईँ छवि घुमाउने "
@@ -831,11 +842,16 @@ msgid "&Vertical:"
 msgstr "ठाडो:"
 
 #: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:250
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>Skewing the selection to %1x%2 may take a substantial amount of "
+#| "memory. This can reduce system responsiveness and cause other application "
+#| "resource problems.</p><p>Are you sure want to skew the selection?</p></qt>"
 msgid ""
 "<qt><p>Skewing the selection to %1x%2 may take a substantial amount of "
 "memory. This can reduce system responsiveness and cause other application "
-"resource problems.</p><p>Are you sure want to skew the selection?</p></qt>"
+"resource problems.</p><p>Are you sure you want to skew the selection?</p></"
+"qt>"
 msgstr ""
 "<qt><p>%1x%2 मा चयन बाङ्गो पार्नाले स्मृतिको धेरैजसो मात्रा लिन सक्छ । यसले प्रणाली "
 "उत्तरदायित्व घटाउन सक्छ र यसले गर्दा अन्य अनुप्रयोग संसाधानमा समस्या हुन्छ ।</p><p>के "
@@ -854,11 +870,15 @@ msgid "Sk&ew Selection"
 msgstr "चयन बाङ्गो गर्नुहोस्"
 
 #: dialogs/imagelib/transforms/kpTransformSkewDialog.cpp:265
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>Skewing the image to %1x%2 may take a substantial amount of "
+#| "memory. This can reduce system responsiveness and cause other application "
+#| "resource problems.</p><p>Are you sure want to skew the image?</p></qt>"
 msgid ""
 "<qt><p>Skewing the image to %1x%2 may take a substantial amount of memory. "
 "This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to skew the image?</p></qt>"
+"problems.</p><p>Are you sure you want to skew the image?</p></qt>"
 msgstr ""
 "<qt><p>%1x%2 मा छवि बाङ्गो गर्नाले स्मृतिको धेरैजसो मात्रा लिन सक्छ । यसले प्रणाली "
 "उत्तरदायित्व घटाउन सक्छ र यसले गर्दा अन्य अनुप्रयोग संसाधानमा समस्या हुन्छ ।</p><p>के "
@@ -1878,17 +1898,6 @@ msgstr "रङ समानता"
 msgid "Tool Box"
 msgstr "उपकरण बाकस"
 
-#: mainWindow/kpMainWindow_Tools.cpp:640
-#, kde-format
-msgid ""
-"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to resize the image?</p></qt>"
-msgstr ""
-"<qt><p>%1x%2 मा छवि रिसाइज गर्नाले स्मृतिको धेरैजसो परिमाण लिन सक्छ । यसले प्रणाली "
-"जिम्मेवारी घटाउन सक्छ र यसका कारणले अन्य अनुप्रयोग संसाधान समस्या हुन सक्छ ।</p><p>तपाईँ "
-"यो छवि रिसाइज गर्ने चाहानामा निश्चित हुनुहुन्छ?</p></qt>"
-
 #: mainWindow/kpMainWindow_View.cpp:72
 #, kde-format
 msgid "Show &Grid"
@@ -2752,6 +2761,15 @@ msgstr "अग्रभूमि रङसँग भर्नुहोस्"
 #, kde-format
 msgid "Opaque"
 msgstr "अपारदर्शी"
+
+#~ msgid ""
+#~ "<qt><p>Resizing the image to %1x%2 may take a substantial amount of "
+#~ "memory. This can reduce system responsiveness and cause other application "
+#~ "resource problems.</p><p>Are you sure want to resize the image?</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>%1x%2 मा छवि रिसाइज गर्नाले स्मृतिको धेरैजसो परिमाण लिन सक्छ । यसले प्रणाली "
+#~ "जिम्मेवारी घटाउन सक्छ र यसका कारणले अन्य अनुप्रयोग संसाधान समस्या हुन सक्छ ।</"
+#~ "p><p>तपाईँ यो छवि रिसाइज गर्ने चाहानामा निश्चित हुनुहुन्छ?</p></qt>"
 
 #~ msgid "Overwrite"
 #~ msgstr "अधिलेखन गर्नुहोस्"
