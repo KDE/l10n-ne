@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-04 04:05+0100\n"
+"POT-Creation-Date: 2017-03-25 02:58+0100\n"
 "PO-Revision-Date: 2007-09-09 17:32+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -742,6 +742,7 @@ msgid ""
 msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:91
+#: src/commands/importpaperkeycommand.cpp:174
 #, kde-format
 msgctxt "@title"
 msgid "Failed to find PaperKey executable."
@@ -1231,6 +1232,80 @@ msgstr "CRL फाइल सफलतापूर्वक आयात गर�
 #| msgid "Import CRLs..."
 msgid "Import CRL Finished"
 msgstr "CRLs आयात गर्नुहोस्..."
+
+#: src/commands/importpaperkeycommand.cpp:108
+#: src/crypto/autodecryptverifyfilescontroller.cpp:225
+#, fuzzy, kde-kuit-format
+#| msgid "Could not generate certificate: %1"
+msgid "Cannot open <filename>%1</filename> for reading."
+msgstr "प्रमाणपत्र उत्पन्न गर्न सकेन: %1"
+
+#: src/commands/importpaperkeycommand.cpp:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to execute gpgsm:\n"
+#| "%1"
+msgid "Failed to restore any secret keys."
+msgstr ""
+"gpgsm कार्यान्वयन गर्न असफल:\n"
+"%1"
+
+#: src/commands/importpaperkeycommand.cpp:170
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para><application>Kleopatra</application> uses <application>PaperKey</"
+"application> to import your text backup.</para><para>Please make sure it is "
+"installed.</para>"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:179
+#, fuzzy, kde-format
+#| msgid "Select CRL File"
+msgid "Select input file"
+msgstr "CRL फाइल चयन गर्नुहोस्"
+
+#: src/commands/importpaperkeycommand.cpp:198
+#, fuzzy, kde-format
+#| msgid "Exporting secret key..."
+msgctxt "@title:window"
+msgid "Error importing secret key"
+msgstr "गोप्य कुञ्जी निर्यात गर्दैछ..."
+
+#: src/commands/importpaperkeycommand.cpp:204
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "The DirMngr process that tried to clear the CRL cache ended prematurely "
+#| "because of an unexpected error."
+msgctxt "@info"
+msgid ""
+"<para>The GPG process that tried to restore the secret key ended prematurely "
+"because of an unexpected error.</para><para>Please check the output of "
+"<icode>%1</icode> for details.</para>"
+msgstr ""
+"अनपेक्षित त्रुटिका कारणले असामयिक रूपमा अन्त्य भएका CRL क्यास खाली गर्न प्रयास गर्ने "
+"DirMngr प्रक्रिया ।"
+
+#: src/commands/importpaperkeycommand.cpp:213
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "An error occurred when trying to clear the CRL cache. The output from "
+#| "DirMngr was:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to restore the secret key.</para> "
+"<para>The output from <command>%1</command> was:</para><para><message>%2</"
+"message></para>"
+msgstr ""
+"CRL क्यास खाली गर्ने प्रयास गर्दा एउटा त्रुटि उत्पन्न भयो । DirMngr को निर्गत:\n"
+"%1 थियो"
+
+#: src/commands/importpaperkeycommand.cpp:221
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Successfully restored the secret key parts from <filename>%1</filename>"
+msgstr ""
 
 #: src/commands/keytocardcommand.cpp:103
 #, fuzzy, kde-format
@@ -2191,12 +2266,6 @@ msgstr ""
 #, kde-kuit-format
 msgid "Failed to move <filename>%1</filename> to <filename>%2</filename>."
 msgstr ""
-
-#: src/crypto/autodecryptverifyfilescontroller.cpp:225
-#, fuzzy, kde-kuit-format
-#| msgid "Could not generate certificate: %1"
-msgid "Cannot open <filename>%1</filename> for reading."
-msgstr "प्रमाणपत्र उत्पन्न गर्न सकेन: %1"
 
 #: src/crypto/autodecryptverifyfilescontroller.cpp:230
 #, kde-kuit-format
@@ -4815,24 +4884,29 @@ msgstr ""
 msgid "Set Initial PIN (SigG)"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:86
+#: src/dialogs/subkeyswidget.cpp:76
+#, kde-format
+msgid "Restore printed backup"
+msgstr ""
+
+#: src/dialogs/subkeyswidget.cpp:95
 #, kde-format
 msgid "Transfer to smartcard"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:128
+#: src/dialogs/subkeyswidget.cpp:144
 #, kde-format
 msgctxt "stored..."
 msgid "on SmartCard with serial no. %1"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:130
+#: src/dialogs/subkeyswidget.cpp:146
 #, kde-format
 msgctxt "stored..."
 msgid "on this computer"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:145
+#: src/dialogs/subkeyswidget.cpp:161
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
 msgid "Subkeys details"
