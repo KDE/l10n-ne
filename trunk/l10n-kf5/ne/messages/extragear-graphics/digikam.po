@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-12 02:54+0200\n"
+"POT-Creation-Date: 2017-05-13 03:10+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -368,13 +368,6 @@ msgstr "ट्याग हटाउनुहोस्"
 #, kde-format
 msgid "Must Not Have This Tag"
 msgstr ""
-
-#: app/items/digikamimageview.cpp:342 app/main/digikamapp.cpp:898
-#: app/views/tableview/tableview.cpp:252
-#, fuzzy, kde-format
-msgctxt "View the selected image"
-msgid "Preview"
-msgstr "पूर्वावलोकन अन्त्य गर्नुहोस्"
 
 #: app/items/imagecategorydrawer.cpp:250 app/items/imagecategorydrawer.cpp:332
 #: app/items/imagecategorydrawer.cpp:349
@@ -751,6 +744,12 @@ msgctxt "@action Go to thumbnails (icon) view"
 msgid "Thumbnails"
 msgstr "थम्बनेल देखाउनुहोस्"
 
+#: app/main/digikamapp.cpp:898 app/views/digikamview.cpp:2590
+#, fuzzy, kde-format
+msgctxt "View the selected image"
+msgid "Preview"
+msgstr "पूर्वावलोकन अन्त्य गर्नुहोस्"
+
 #: app/main/digikamapp.cpp:907 utilities/importui/main/importui.cpp:471
 #, kde-format
 msgctxt "@action Switch to map view"
@@ -796,7 +795,8 @@ msgstr "छवि सम्पादक"
 msgid "Open the image editor."
 msgstr "कन्क्वेररमा खोल्नुहोस्"
 
-#: app/main/digikamapp.cpp:942 utilities/lighttable/lighttablewindow.cpp:125
+#: app/main/digikamapp.cpp:942 libs/settings/applicationsettings_miscs.cpp:375
+#: utilities/lighttable/lighttablewindow.cpp:125
 #: utilities/lighttable/lighttablewindow.cpp:1402 utilities/setup/setup.cpp:211
 #, fuzzy, kde-format
 msgid "Light Table"
@@ -823,6 +823,7 @@ msgid "Add selected items to the light table thumbbar."
 msgstr "यो विकल्पले हालको एल्बममा नयाँ वस्तु थप्दछ ।"
 
 #: app/main/digikamapp.cpp:961 app/utils/contextmenuhelper.cpp:735
+#: libs/settings/applicationsettings_miscs.cpp:377
 #: utilities/queuemanager/main/queuemgrwindow.cpp:113
 #: utilities/queuemanager/main/queuemgrwindow.cpp:247
 #: utilities/queuemanager/views/workflowlist.cpp:123
@@ -1097,7 +1098,7 @@ msgstr "जुम घटाउनुहोस्"
 msgid "Fit to &Window"
 msgstr ""
 
-#: app/main/digikamapp.cpp:1264
+#: app/main/digikamapp.cpp:1264 libs/settings/applicationsettings_miscs.cpp:379
 #: utilities/imageeditor/editor/editorwindow.cpp:858
 #: utilities/lighttable/lighttablewindow.cpp:565
 #: utilities/slideshow/slideshow.cpp:111
@@ -1661,6 +1662,7 @@ msgstr "होइन"
 #: libs/imageproperties/cameraitempropertiestab.cpp:433
 #: libs/imageproperties/cameraitempropertiestab.cpp:511
 #: libs/imageproperties/imagepropertiescolorstab.cpp:680
+#: utilities/setup/setupmisc.cpp:283
 #, fuzzy, kde-format
 msgid "Yes"
 msgstr "हो"
@@ -1763,6 +1765,7 @@ msgstr "फोल्डर सिर्जना गर्नुहुन्छ 
 #: libs/imageproperties/cameraitempropertiestab.cpp:429
 #: libs/imageproperties/cameraitempropertiestab.cpp:515
 #: libs/imageproperties/imagepropertiescolorstab.cpp:680
+#: utilities/setup/setupmisc.cpp:282
 #, fuzzy, kde-format
 msgid "No"
 msgstr "कुनै होइन"
@@ -2479,51 +2482,51 @@ msgstr ""
 msgid "<i>Binary Data</i>"
 msgstr "<i>उपलब्ध छैन</i>"
 
-#: app/views/digikamview.cpp:207
+#: app/views/digikamview.cpp:210
 #, fuzzy, kde-format
 msgid "Fuzzy Sketch Search"
 msgstr "खोजी मेट्नुहोस्"
 
-#: app/views/digikamview.cpp:211
+#: app/views/digikamview.cpp:214
 #, fuzzy, kde-format
 msgid "Fuzzy Image Search"
 msgstr "खोजी मेट्नुहोस्"
 
-#: app/views/digikamview.cpp:215
+#: app/views/digikamview.cpp:218
 #, fuzzy, kde-format
 msgid "Map Search"
 msgstr "मेरो खोजीहरू"
 
-#: app/views/digikamview.cpp:220
+#: app/views/digikamview.cpp:223
 #: libs/database/coredb/coredbschemaupdater.cpp:1003
 #, kde-format
 msgid "Last Search"
 msgstr "अन्तिम खोजी"
 
-#: app/views/digikamview.cpp:224 app/views/leftsidebarwidgets.cpp:913
+#: app/views/digikamview.cpp:227 app/views/leftsidebarwidgets.cpp:913
 #, fuzzy, kde-format
 msgid "Timeline"
 msgstr "शीर्षक"
 
-#: app/views/digikamview.cpp:379
+#: app/views/digikamview.cpp:384
 #: utilities/queuemanager/views/toolslistview.cpp:79
 #, fuzzy, kde-format
 msgid "Filters"
 msgstr "फिल्टर"
 
-#: app/views/digikamview.cpp:1310
+#: app/views/digikamview.cpp:1311
 #, kde-format
 msgid "Cannot open the root album. It is not a physical location."
 msgstr ""
 
-#: app/views/digikamview.cpp:1719
+#: app/views/digikamview.cpp:1720
 #, kde-format
 msgctxt "@info"
 msgid ""
 "<i>The storage location of this image<br/>is currently not available</i>"
 msgstr ""
 
-#: app/views/digikamview.cpp:2461 libs/widgets/metadata/metadatawidget.cpp:152
+#: app/views/digikamview.cpp:2540 libs/widgets/metadata/metadatawidget.cpp:152
 #: utilities/imageeditor/editor/editortooliface.cpp:98
 #: utilities/imageeditor/editor/editortooliface.cpp:207
 #: utilities/queuemanager/views/workflowlist.cpp:99
@@ -2570,7 +2573,7 @@ msgstr "पूरा पर्दा मोडमा उपकरणपट्ट
 #: libs/album/albumselectors.cpp:131 libs/album/albumselecttabs.cpp:186
 #: libs/database/utils/dbstatdlg.cpp:70 libs/models/albummodel.cpp:50
 #: utilities/assistants/htmlgallery/wizard/htmlintropage.cpp:96
-#: utilities/kdesupport/kipi/kipiimagecollection.cpp:302
+#: utilities/kdesupport/kipi/kipiimagecollection.cpp:208
 #, kde-format
 msgid "Albums"
 msgstr "एल्बम"
@@ -2766,17 +2769,17 @@ msgstr ""
 msgid "An error has occurred with the media player...."
 msgstr ""
 
-#: app/views/tableview/tableview.cpp:501
+#: app/views/tableview/tableview.cpp:302
 #, fuzzy, kde-format
 msgid "Hide grouped items"
 msgstr "छवि क्रमबद्ध गर्नुहोस्"
 
-#: app/views/tableview/tableview.cpp:511
+#: app/views/tableview/tableview.cpp:312
 #, fuzzy, kde-format
 msgid "Ignore grouping"
 msgstr "ट्याग मानाङ्कन गर्नुहोस्"
 
-#: app/views/tableview/tableview.cpp:521
+#: app/views/tableview/tableview.cpp:322
 #, fuzzy, kde-format
 msgid "Show grouping in tree"
 msgstr "फाइल मिति देखाउनुहोस्"
@@ -9271,7 +9274,7 @@ msgstr ""
 msgid "All Files"
 msgstr "कच्चा फाइल"
 
-#: libs/filters/mimefilter.cpp:37 utilities/setup/album/setupmime.cpp:104
+#: libs/filters/mimefilter.cpp:37 utilities/setup/album/setupmime.cpp:105
 #, kde-format
 msgid "Image Files"
 msgstr "छवि फाइल"
@@ -9306,12 +9309,12 @@ msgstr "कच्चा फाइल"
 msgid "RAW Files"
 msgstr "कच्चा फाइल"
 
-#: libs/filters/mimefilter.cpp:44 utilities/setup/album/setupmime.cpp:136
+#: libs/filters/mimefilter.cpp:44 utilities/setup/album/setupmime.cpp:137
 #, kde-format
 msgid "Movie Files"
 msgstr "चलचित्र फाइल"
 
-#: libs/filters/mimefilter.cpp:45 utilities/setup/album/setupmime.cpp:171
+#: libs/filters/mimefilter.cpp:45 utilities/setup/album/setupmime.cpp:172
 #, kde-format
 msgid "Audio Files"
 msgstr "अडियो फाइल"
@@ -10104,6 +10107,7 @@ msgstr ""
 
 #: libs/imageproperties/imagepropertiessidebar.cpp:85
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:96
+#: libs/settings/applicationsettings_miscs.cpp:373
 #: showfoto/setup/showfotosetup.cpp:117
 #: utilities/queuemanager/views/toolslistview.cpp:89
 #: utilities/setup/setup.cpp:187
@@ -10374,42 +10378,106 @@ msgstr ""
 msgid "Show detailed progress window"
 msgstr ""
 
-#: libs/settings/applicationsettings_p.cpp:244
+#: libs/settings/applicationsettings_miscs.cpp:346
+#, kde-format
+msgid "Do you want to do this operation on all group items?"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:348
+#, fuzzy, kde-format
+msgid "Remember choice for this operation"
+msgstr "क्यामेरा सूचना"
+
+#: libs/settings/applicationsettings_miscs.cpp:381
+#, fuzzy, kde-format
+msgid "Renaming"
+msgstr "फाइल पुन: नामकरण विकल्प"
+
+#: libs/settings/applicationsettings_miscs.cpp:383
+#, kde-format
+msgid "Import/Export) plugins"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:385
+#, kde-format
+msgid "Tools (editor, panorama, stack blending, calendar, external program)"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:397
+#, kde-format
+msgid ""
+"Operations related to metadata, labels, ratings, tags, geolocation and "
+"rotation"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:399
+#, fuzzy, kde-format
+msgid "Adding items to the Light Table"
+msgstr "प्रकाश"
+
+#: libs/settings/applicationsettings_miscs.cpp:401
+#, kde-format
+msgid "Adding items to the Batch Queue Manager"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:403
+#, kde-format
+msgid "Opening items in the Slideshow"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:405
+#, fuzzy, kde-format
+msgid "Renaming items"
+msgstr "फाइल पुन: नामकरण विकल्प"
+
+#: libs/settings/applicationsettings_miscs.cpp:407
+#, kde-format
+msgid "Passing items to import/export plugins"
+msgstr ""
+
+#: libs/settings/applicationsettings_miscs.cpp:409
+#, kde-format
+msgid ""
+"Several tools including the editor, panorama, stack blending, calendar, html "
+"gallery and opening with external programs"
+msgstr ""
+
+#: libs/settings/applicationsettings_p.cpp:267
 #, kde-format
 msgid "Category"
 msgstr ""
 
-#: libs/settings/applicationsettings_p.cpp:245
+#: libs/settings/applicationsettings_p.cpp:268
 #, kde-format
 msgid "Travel"
 msgstr "यात्रा"
 
-#: libs/settings/applicationsettings_p.cpp:246
+#: libs/settings/applicationsettings_p.cpp:269
 #, kde-format
 msgid "Holidays"
 msgstr "बिदा"
 
-#: libs/settings/applicationsettings_p.cpp:247
+#: libs/settings/applicationsettings_p.cpp:270
 #, kde-format
 msgid "Friends"
 msgstr "साथि"
 
-#: libs/settings/applicationsettings_p.cpp:248
+#: libs/settings/applicationsettings_p.cpp:271
 #, kde-format
 msgid "Nature"
 msgstr "प्रकृति"
 
-#: libs/settings/applicationsettings_p.cpp:249
+#: libs/settings/applicationsettings_p.cpp:272
 #, kde-format
 msgid "Party"
 msgstr "सभा"
 
-#: libs/settings/applicationsettings_p.cpp:250
+#: libs/settings/applicationsettings_p.cpp:273
 #, kde-format
 msgid "Todo"
 msgstr "गर्नु पर्ने"
 
-#: libs/settings/applicationsettings_p.cpp:251
+#: libs/settings/applicationsettings_p.cpp:274
 #: showfoto/setup/showfotosetup.cpp:153 utilities/setup/setup.cpp:253
 #, fuzzy, kde-format
 msgid "Miscellaneous"
@@ -16392,32 +16460,32 @@ msgid ""
 msgstr ""
 
 #: showfoto/setup/showfotosetupmetadata.cpp:94
-#: utilities/setup/metadata/setupmetadata.cpp:426
+#: utilities/setup/metadata/setupmetadata.cpp:407
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Rotate actions"
 msgstr "दर:"
 
 #: showfoto/setup/showfotosetupmetadata.cpp:99
-#: utilities/setup/metadata/setupmetadata.cpp:431
+#: utilities/setup/metadata/setupmetadata.cpp:412
 #, fuzzy, kde-format
 msgid "Show images/thumbnails &rotated according to orientation tag."
 msgstr "अभिमुखीकरण ट्याग अनुसार छवि/थम्ब परिक्रमण देखाउनुहोस्"
 
 #: showfoto/setup/showfotosetupmetadata.cpp:101
-#: utilities/setup/metadata/setupmetadata.cpp:433
+#: utilities/setup/metadata/setupmetadata.cpp:414
 #, fuzzy, kde-format
 msgid "Set orientation tag to normal after rotate/flip."
 msgstr "परिक्रमण/घुमाएपछि अभिमुखीकरण ट्यागलाई साधारणमा सेट गर्नुहोस्"
 
 #: showfoto/setup/showfotosetupmetadata.cpp:119
-#: utilities/setup/metadata/setupmetadata.cpp:310
+#: utilities/setup/metadata/setupmetadata.cpp:291
 #, kde-format
 msgid "Visit Exiv2 project website"
 msgstr "Exiv2 परियोजना वेबसाइट हेर्नुहोस्"
 
 #: showfoto/setup/showfotosetupmetadata.cpp:126
-#: utilities/setup/metadata/setupmetadata.cpp:317
+#: utilities/setup/metadata/setupmetadata.cpp:298
 #, fuzzy, kde-format
 msgid ""
 "<p><a href='http://en.wikipedia.org/wiki/Exif'>EXIF</a> - a standard used by "
@@ -16432,7 +16500,7 @@ msgstr ""
 "सिक्न सक्नुहुन्छ ।</p>"
 
 #: showfoto/setup/showfotosetupmetadata.cpp:130
-#: utilities/setup/metadata/setupmetadata.cpp:321
+#: utilities/setup/metadata/setupmetadata.cpp:302
 #, fuzzy, kde-format
 msgid ""
 "<p><a href='http://en.wikipedia.org/wiki/"
@@ -16447,7 +16515,7 @@ msgstr ""
 "सिक्न सक्नुहुन्छ ।</p>"
 
 #: showfoto/setup/showfotosetupmetadata.cpp:136
-#: utilities/setup/metadata/setupmetadata.cpp:326
+#: utilities/setup/metadata/setupmetadata.cpp:307
 #, fuzzy, kde-format
 msgid ""
 "<p><a href='http://en.wikipedia.org/wiki/Extensible_Metadata_Platform'>XMP</"
@@ -16544,33 +16612,33 @@ msgstr "हरियो फिल्टर"
 msgid "Set this option to indicate if image has geolocation information."
 msgstr "<p>तस्विर टिप्पणी प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: showfoto/setup/showfotosetupmisc.cpp:146 utilities/setup/setupmisc.cpp:150
+#: showfoto/setup/showfotosetupmisc.cpp:146 utilities/setup/setupmisc.cpp:165
 #, fuzzy, kde-format
 #| msgid "IIM Application 2"
 msgid "Application Behavior"
 msgstr "IIM अनुप्रयोग २"
 
-#: showfoto/setup/showfotosetupmisc.cpp:149 utilities/setup/setupmisc.cpp:153
+#: showfoto/setup/showfotosetupmisc.cpp:149 utilities/setup/setupmisc.cpp:168
 #, kde-format
 msgid "Scroll current item to center of thumbbar"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:150 utilities/setup/setupmisc.cpp:155
+#: showfoto/setup/showfotosetupmisc.cpp:150 utilities/setup/setupmisc.cpp:170
 #, kde-format
 msgid "&Show splash screen at startup"
 msgstr "सुरुआतमा स्प्लास स्क्रिन देखाउनुहोस्"
 
-#: showfoto/setup/showfotosetupmisc.cpp:153 utilities/setup/setupmisc.cpp:172
+#: showfoto/setup/showfotosetupmisc.cpp:153 utilities/setup/setupmisc.cpp:187
 #, kde-format
 msgid "Sidebar tab title:"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:155 utilities/setup/setupmisc.cpp:174
+#: showfoto/setup/showfotosetupmisc.cpp:155 utilities/setup/setupmisc.cpp:189
 #, kde-format
 msgid "Only For Active Tab"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:156 utilities/setup/setupmisc.cpp:175
+#: showfoto/setup/showfotosetupmisc.cpp:156 utilities/setup/setupmisc.cpp:190
 #, fuzzy, kde-format
 msgid "For All Tabs"
 msgstr "सबै ट्याग"
@@ -16580,37 +16648,37 @@ msgstr "सबै ट्याग"
 msgid "Set this option to configure how sidebars tab title are visible."
 msgstr "<p>छवि फाइल साइज प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: showfoto/setup/showfotosetupmisc.cpp:160 utilities/setup/setupmisc.cpp:180
+#: showfoto/setup/showfotosetupmisc.cpp:160 utilities/setup/setupmisc.cpp:195
 #, kde-format
 msgid "Widget style:"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:162 utilities/setup/setupmisc.cpp:182
+#: showfoto/setup/showfotosetupmisc.cpp:162 utilities/setup/setupmisc.cpp:197
 #, fuzzy, kde-format
 msgid "Set this option to choose the default window decoration and looks."
 msgstr "<p>एल्बम नाम प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: showfoto/setup/showfotosetupmisc.cpp:177 utilities/setup/setupmisc.cpp:197
+#: showfoto/setup/showfotosetupmisc.cpp:177 utilities/setup/setupmisc.cpp:212
 #, kde-format
 msgid "Icon theme (changes after restart):"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:179 utilities/setup/setupmisc.cpp:199
+#: showfoto/setup/showfotosetupmisc.cpp:179 utilities/setup/setupmisc.cpp:214
 #, fuzzy, kde-format
 msgid "Set this option to choose the default icon theme."
 msgstr "<p>एल्बम नाम प्रर्दशन गर्न यो विकल्प सेट गर्नुहोस् ।"
 
-#: showfoto/setup/showfotosetupmisc.cpp:181 utilities/setup/setupmisc.cpp:201
+#: showfoto/setup/showfotosetupmisc.cpp:181 utilities/setup/setupmisc.cpp:216
 #, kde-format
 msgid "Use Icon Theme From System"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:194 utilities/setup/setupmisc.cpp:214
+#: showfoto/setup/showfotosetupmisc.cpp:194 utilities/setup/setupmisc.cpp:229
 #, kde-format
 msgid "Breeze"
 msgstr ""
 
-#: showfoto/setup/showfotosetupmisc.cpp:200 utilities/setup/setupmisc.cpp:220
+#: showfoto/setup/showfotosetupmisc.cpp:200 utilities/setup/setupmisc.cpp:235
 #, kde-format
 msgid "Breeze Dark"
 msgstr ""
@@ -19983,7 +20051,7 @@ msgid ""
 msgstr ""
 
 #: utilities/facemanagement/facescandialog.cpp:356
-#: utilities/setup/metadata/setupmetadata.cpp:538
+#: utilities/setup/metadata/setupmetadata.cpp:519
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Advanced"
@@ -26417,8 +26485,8 @@ msgstr "ठेगानापुस्तक प्रविष्टि फे�
 msgid "BalooTags/"
 msgstr ""
 
-#: utilities/kdesupport/kipi/kipiimagecollection.cpp:99
-#: utilities/kdesupport/kipi/kipiimagecollection.cpp:121
+#: utilities/kdesupport/kipi/kipiimagecollection.cpp:92
+#: utilities/kdesupport/kipi/kipiimagecollection.cpp:114
 #, kde-format
 msgid "Tag: %1"
 msgstr "ट्याग: %1"
@@ -26785,7 +26853,7 @@ msgstr "चयन"
 msgid "shrinking databases"
 msgstr "डाटाबेस पढाइ"
 
-#: utilities/maintenance/dbcleaner.cpp:390
+#: utilities/maintenance/dbcleaner.cpp:393
 #, kde-format
 msgid ""
 "<p>Database shrinking in progress.</p><p>Currently, your databases are being "
@@ -26795,17 +26863,17 @@ msgid ""
 "Status:"
 msgstr ""
 
-#: utilities/maintenance/dbcleaner.cpp:403
+#: utilities/maintenance/dbcleaner.cpp:406
 #, fuzzy, kde-format
 msgid "Core DB"
 msgstr "छवि नाम"
 
-#: utilities/maintenance/dbcleaner.cpp:404
+#: utilities/maintenance/dbcleaner.cpp:407
 #, fuzzy, kde-format
 msgid "Thumbnails DB"
 msgstr "थम्बनेल देखाउनुहोस्"
 
-#: utilities/maintenance/dbcleaner.cpp:405
+#: utilities/maintenance/dbcleaner.cpp:408
 #, fuzzy, kde-format
 msgid "Face Recognition DB"
 msgstr "चयन"
@@ -33680,7 +33748,7 @@ msgstr "थप्नुहोस्..."
 msgid "&Remove"
 msgstr "ट्याग हटाउनुहोस्"
 
-#: utilities/setup/album/setupmime.cpp:92
+#: utilities/setup/album/setupmime.cpp:93
 #, kde-format
 msgid ""
 "<p>Add new file types to show as album items. <p>digiKam attempts to support "
@@ -33692,14 +33760,14 @@ msgid ""
 "this view will perform a database rescan in the background.</b></p>"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:110
+#: utilities/setup/album/setupmime.cpp:111
 #, kde-format
 msgid ""
 "Additional &image file extensions (<a href='image'>Currently-supported "
 "types</a>):"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:114
+#: utilities/setup/album/setupmime.cpp:115
 #, kde-format
 msgid ""
 "<p>Here you can add the extensions of image files (including RAW files) to "
@@ -33712,19 +33780,19 @@ msgid ""
 "means losing all of their tags and ratings.</p>"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:124
+#: utilities/setup/album/setupmime.cpp:125
 #, fuzzy, kde-format
 msgid "Enter additional image file extensions."
 msgstr "<p>यहाँ अचल आकार अनुपात अभिमुखीकरण चयन गर्नुहोस् ।"
 
-#: utilities/setup/album/setupmime.cpp:143
+#: utilities/setup/album/setupmime.cpp:144
 #, kde-format
 msgid ""
 "Additional &movie file extensions (<a href='video'>Currently-supported "
 "types</a>):"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:147
+#: utilities/setup/album/setupmime.cpp:148
 #, kde-format
 msgid ""
 "<p>Here you can add extra extensions of video files to be displayed in your "
@@ -33738,20 +33806,20 @@ msgid ""
 "their tags and ratings.</p>"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:159
+#: utilities/setup/album/setupmime.cpp:160
 #, fuzzy, kde-format
 #| msgid "Show only &movie files with extensions:"
 msgid "Enter additional movie file extensions."
 msgstr "विस्तार भएको चलचित्र फाइल मात्र देखाउनुहोस्:"
 
-#: utilities/setup/album/setupmime.cpp:178
+#: utilities/setup/album/setupmime.cpp:179
 #, kde-format
 msgid ""
 "Additional &audio file extensions (<a href='audio'>Currently-supported "
 "types</a>):"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:182
+#: utilities/setup/album/setupmime.cpp:183
 #, kde-format
 msgid ""
 "<p>Here you can add extra extensions of audio files to be displayed in your "
@@ -33765,13 +33833,13 @@ msgid ""
 "their tags and ratings.</p>"
 msgstr ""
 
-#: utilities/setup/album/setupmime.cpp:194
+#: utilities/setup/album/setupmime.cpp:195
 #, fuzzy, kde-format
 #| msgid "Show only &audio files with extensions:"
 msgid "Enter additional audio file extensions."
 msgstr "विस्तार भएको अडियो फाइल मात्र देखाउनुहोस्:"
 
-#: utilities/setup/album/setupmime.cpp:257
+#: utilities/setup/album/setupmime.cpp:258
 #, kde-format
 msgid ""
 "<p>You have chosen to remove the following image formats from the list of "
@@ -34908,7 +34976,7 @@ msgstr ""
 msgid "Only one character is now supported as tag path separator"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:165
+#: utilities/setup/metadata/setupmetadata.cpp:171
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -34919,31 +34987,31 @@ msgid ""
 "information when moving or sending the files to different systems.</para>"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:175
+#: utilities/setup/metadata/setupmetadata.cpp:181
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Write This Information to the Metadata"
 msgstr "%1 फाइलका लागि Exif अभिमुखीकरण सुधार गर्न असफल"
 
-#: utilities/setup/metadata/setupmetadata.cpp:178
+#: utilities/setup/metadata/setupmetadata.cpp:184
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Image tags"
 msgstr "छवि सेटिङ"
 
-#: utilities/setup/metadata/setupmetadata.cpp:179
+#: utilities/setup/metadata/setupmetadata.cpp:185
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Turn on this option to store the image tags in the XMP and IPTC tags."
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:183
+#: utilities/setup/metadata/setupmetadata.cpp:189
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Captions and title"
 msgstr "टोन फिल्टर होइन"
 
-#: utilities/setup/metadata/setupmetadata.cpp:184
+#: utilities/setup/metadata/setupmetadata.cpp:190
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -34952,13 +35020,13 @@ msgid ""
 msgstr ""
 "<p>JFIF खण्ड, EXIF ट्याग र IPTC ट्यागमा छवि टिप्पणी भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:189
+#: utilities/setup/metadata/setupmetadata.cpp:195
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Rating"
 msgstr "दर"
 
-#: utilities/setup/metadata/setupmetadata.cpp:190
+#: utilities/setup/metadata/setupmetadata.cpp:196
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -34966,37 +35034,37 @@ msgid ""
 "tags."
 msgstr "<p>IPTC <i>अत्यावश्यक</i> ट्यागमा छवि दर भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:194
+#: utilities/setup/metadata/setupmetadata.cpp:200
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Pick label"
 msgstr "पिक्सेल:"
 
-#: utilities/setup/metadata/setupmetadata.cpp:195
+#: utilities/setup/metadata/setupmetadata.cpp:201
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Turn on this option to store the image pick label in the XMP tags."
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:199
+#: utilities/setup/metadata/setupmetadata.cpp:205
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Color label"
 msgstr "रङ गहिराइ:"
 
-#: utilities/setup/metadata/setupmetadata.cpp:200
+#: utilities/setup/metadata/setupmetadata.cpp:206
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid "Turn on this option to store the image color label in the XMP tags."
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:204
+#: utilities/setup/metadata/setupmetadata.cpp:210
 #, kde-format
 msgctxt "@option:check"
 msgid "Timestamps"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:205
+#: utilities/setup/metadata/setupmetadata.cpp:211
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35004,13 +35072,13 @@ msgid ""
 "IPTC tags."
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:209
+#: utilities/setup/metadata/setupmetadata.cpp:215
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Metadata templates (Copyright etc.)"
 msgstr "%1 फाइलमा मेटाडाटा ट्याग सेट गर्दैछ..."
 
-#: utilities/setup/metadata/setupmetadata.cpp:210
+#: utilities/setup/metadata/setupmetadata.cpp:216
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35020,32 +35088,32 @@ msgstr ""
 "<p>IPTC ट्यागमा पूर्वनिर्धारित फोटोग्राफर परिचय भण्डारण गर्न यो विकल्प खोल्नुहोस् । "
 "तपाईँले यो मानलाई परिचय सेटअप पृष्ठमा सेट गर्न सक्नुहुन्छ ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:214
+#: utilities/setup/metadata/setupmetadata.cpp:220
 #, kde-format
 msgctxt "@option:check"
 msgid "Face Tags (including face areas)"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:215
+#: utilities/setup/metadata/setupmetadata.cpp:221
 #, fuzzy, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Turn on this option to store face tags with face rectangles in the XMP tags."
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:239
+#: utilities/setup/metadata/setupmetadata.cpp:245
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Reading and Writing Metadata"
 msgstr "टोन फिल्टर होइन"
 
-#: utilities/setup/metadata/setupmetadata.cpp:242
+#: utilities/setup/metadata/setupmetadata.cpp:248
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Use lazy synchronization"
 msgstr "कालो बिन्दु क्षतिपूर्ति प्रयोग गर्नुहोस्"
 
-#: utilities/setup/metadata/setupmetadata.cpp:244
+#: utilities/setup/metadata/setupmetadata.cpp:250
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35054,61 +35122,13 @@ msgid ""
 "digikam exit"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:247
-#, fuzzy, kde-format
-msgctxt "@option:check"
-msgid "Read from sidecar files"
-msgstr "डाटाबेसमा प्रत्येक फाइलबाट मेटाडेटा पढ्नुहोस्"
-
-#: utilities/setup/metadata/setupmetadata.cpp:249
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"Turn on this option to read metadata from XMP sidecar files when reading "
-"metadata."
-msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
-
 #: utilities/setup/metadata/setupmetadata.cpp:253
-#, fuzzy, kde-format
-msgctxt "@option:check"
-msgid "Write to sidecar files"
-msgstr "प्रत्येक फाइलमा मेटाडेटा लेख्नुहोस्"
-
-#: utilities/setup/metadata/setupmetadata.cpp:255
-#, fuzzy, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"Turn on this option to save, as specified, metadata to XMP sidecar files."
-msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
-
-#: utilities/setup/metadata/setupmetadata.cpp:259
-#, kde-format
-msgid "Write to XMP sidecar for read-only image only"
-msgstr ""
-
-#: utilities/setup/metadata/setupmetadata.cpp:260
-#, kde-format
-msgid "Write to XMP sidecar only"
-msgstr ""
-
-#: utilities/setup/metadata/setupmetadata.cpp:261
-#, kde-format
-msgid "Write to image and XMP Sidecar"
-msgstr ""
-
-#: utilities/setup/metadata/setupmetadata.cpp:262
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Specify the exact mode of XMP sidecar writing"
-msgstr ""
-
-#: utilities/setup/metadata/setupmetadata.cpp:269
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "If possible write Metadata to RAW files (experimental)"
 msgstr "प्रत्येक फाइलमा मेटाडेटा लेख्नुहोस्"
 
-#: utilities/setup/metadata/setupmetadata.cpp:270
+#: utilities/setup/metadata/setupmetadata.cpp:254
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35117,13 +35137,13 @@ msgid ""
 "experimental, and is disabled by default."
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:276
+#: utilities/setup/metadata/setupmetadata.cpp:260
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "&Update file timestamp when files are modified"
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:278
+#: utilities/setup/metadata/setupmetadata.cpp:262
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35133,13 +35153,13 @@ msgid ""
 "properties to detect file modifications automatically."
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:283
+#: utilities/setup/metadata/setupmetadata.cpp:267
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "&Rescan file when files are modified"
 msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:285
+#: utilities/setup/metadata/setupmetadata.cpp:269
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35149,49 +35169,49 @@ msgid ""
 "when digiKam starts."
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:345
+#: utilities/setup/metadata/setupmetadata.cpp:326
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Behavior"
 msgstr "व्यवहार"
 
-#: utilities/setup/metadata/setupmetadata.cpp:355
+#: utilities/setup/metadata/setupmetadata.cpp:336
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "When rotating a file"
 msgstr "%1 फाइल EXIT परिक्रमण गर्दैछ..."
 
-#: utilities/setup/metadata/setupmetadata.cpp:359
+#: utilities/setup/metadata/setupmetadata.cpp:340
 #, kde-format
 msgctxt "@option:radio"
 msgid "Rotate by only setting a flag"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:360
+#: utilities/setup/metadata/setupmetadata.cpp:341
 #, kde-format
 msgctxt "@option:radio"
 msgid "Rotate by changing the content if possible"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:361
+#: utilities/setup/metadata/setupmetadata.cpp:342
 #, kde-format
 msgctxt "@option:check"
 msgid "Even allow lossy rotation if necessary"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:362
+#: utilities/setup/metadata/setupmetadata.cpp:343
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Write flag to metadata if possible"
 msgstr "प्रत्येक फाइलमा मेटाडेटा लेख्नुहोस्"
 
-#: utilities/setup/metadata/setupmetadata.cpp:374
+#: utilities/setup/metadata/setupmetadata.cpp:355
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Rotate files only by changing a flag, not touching the pixel data"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:376
+#: utilities/setup/metadata/setupmetadata.cpp:357
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35204,13 +35224,13 @@ msgid ""
 "outside digiKam.</para>"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:385
+#: utilities/setup/metadata/setupmetadata.cpp:366
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "If possible rotate files by changing the pixel data"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:387
+#: utilities/setup/metadata/setupmetadata.cpp:368
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35223,7 +35243,7 @@ msgid ""
 "and other read-only formats, which will be rotated by flag only.</para>"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:397
+#: utilities/setup/metadata/setupmetadata.cpp:378
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -35231,7 +35251,7 @@ msgid ""
 "quality loss"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:399
+#: utilities/setup/metadata/setupmetadata.cpp:380
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35240,7 +35260,7 @@ msgid ""
 "not enabled, these files will be rotated by flag."
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:405
+#: utilities/setup/metadata/setupmetadata.cpp:386
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -35248,7 +35268,7 @@ msgid ""
 "metadata"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:407
+#: utilities/setup/metadata/setupmetadata.cpp:388
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -35256,47 +35276,47 @@ msgid ""
 "shown rotated. Enable this option to allow editing this field. "
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:449
+#: utilities/setup/metadata/setupmetadata.cpp:430
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Rotation"
 msgstr "दर:"
 
-#: utilities/setup/metadata/setupmetadata.cpp:456
+#: utilities/setup/metadata/setupmetadata.cpp:437
 #, kde-format
 msgctxt "@info:label"
 msgid "Select Metadata Fields to Be Displayed"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:470
+#: utilities/setup/metadata/setupmetadata.cpp:451
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Views"
 msgstr "दृश्य..."
 
-#: utilities/setup/metadata/setupmetadata.cpp:479
+#: utilities/setup/metadata/setupmetadata.cpp:460
 #, fuzzy, kde-format
 msgid "Baloo Desktop Search"
 msgstr "अन्तिम खोजी"
 
-#: utilities/setup/metadata/setupmetadata.cpp:483
+#: utilities/setup/metadata/setupmetadata.cpp:464
 #, fuzzy, kde-format
 msgid "Store metadata from digiKam in Baloo"
 msgstr "मेटाडेटालाई बाइनरी फाइलमा बचत गर्नुहोस्"
 
-#: utilities/setup/metadata/setupmetadata.cpp:484
+#: utilities/setup/metadata/setupmetadata.cpp:465
 #, fuzzy, kde-format
 msgid ""
 "Turn on this option to push rating, comments and tags from digiKam into the "
 "Baloo storage"
 msgstr "<p>IPTC <i>अत्यावश्यक</i> ट्यागमा छवि दर भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
 
-#: utilities/setup/metadata/setupmetadata.cpp:488
+#: utilities/setup/metadata/setupmetadata.cpp:469
 #, fuzzy, kde-format
 msgid "Read metadata from Baloo"
 msgstr "फाइलबाट डाटाबेसमा मेटाडेटा पढ्नुहोस्"
 
-#: utilities/setup/metadata/setupmetadata.cpp:489
+#: utilities/setup/metadata/setupmetadata.cpp:470
 #, kde-format
 msgid ""
 "Turn on this option if you want to apply changes to rating, comments and "
@@ -35304,13 +35324,13 @@ msgid ""
 "metadata will not be edited automatically."
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:496
+#: utilities/setup/metadata/setupmetadata.cpp:477
 #, kde-format
 msgctxt "@title:tab"
 msgid "Baloo"
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:512
+#: utilities/setup/metadata/setupmetadata.cpp:493
 #, kde-format
 msgid ""
 "<p><a href='http://community.kde.org/Baloo'>Baloo</a> provides the basis to "
@@ -35320,7 +35340,99 @@ msgid ""
 "stored by digiKam desktop-wide with the Baloo Desktop Search.</p> "
 msgstr ""
 
-#: utilities/setup/metadata/setupmetadata.cpp:725
+#: utilities/setup/metadata/setupmetadata.cpp:531
+#, fuzzy, kde-format
+msgctxt "@label"
+msgid "Reading and Writing to Sidecars"
+msgstr "टोन फिल्टर होइन"
+
+#: utilities/setup/metadata/setupmetadata.cpp:534
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Read from sidecar files"
+msgstr "डाटाबेसमा प्रत्येक फाइलबाट मेटाडेटा पढ्नुहोस्"
+
+#: utilities/setup/metadata/setupmetadata.cpp:536
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Turn on this option to read metadata from XMP sidecar files when reading "
+"metadata."
+msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
+
+#: utilities/setup/metadata/setupmetadata.cpp:540
+#, fuzzy, kde-format
+msgctxt "@option:check"
+msgid "Write to sidecar files"
+msgstr "प्रत्येक फाइलमा मेटाडेटा लेख्नुहोस्"
+
+#: utilities/setup/metadata/setupmetadata.cpp:542
+#, fuzzy, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Turn on this option to save, as specified, metadata to XMP sidecar files."
+msgstr "<p>EXIF र IPTC ट्यागमा छवि मिति र समय भण्डारण गर्न यो विकल्प खोल्नुहोस् ।"
+
+#: utilities/setup/metadata/setupmetadata.cpp:546
+#, kde-format
+msgid "Write to XMP sidecar for read-only image only"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:547
+#, kde-format
+msgid "Write to XMP sidecar only"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:548
+#, kde-format
+msgid "Write to image and XMP Sidecar"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:549
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Specify the exact mode of XMP sidecar writing"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:568
+#, kde-format
+msgid ""
+"<p>Add file types to be recognised as sidecars.</p><p>digiKam (optionally) "
+"writes metadata to *.xmp sidecar files. Other programs might use different "
+"types, which can be specified below. digiKam will neither display these nor "
+"read from or write to them. But whenever a matching album item (e.g. \"image."
+"dng\" for \"image.dng.pp3\") is renamed, moved, copied or deleted, the same "
+"operation will be doneon these sidecar files.</p><p>Multiple extensions must "
+"be separated by a semicolon or a space.</p>"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:584
+#, kde-format
+msgid ""
+"<p>Here you can add extra extensions of sidecars files to be processed "
+"alongside regular items. These files won't be visible, but regarded as an "
+"extension of the main file.Just write \"xyz abc\" to support files with the "
+"*.xyz and *.abc extensions. The internally used sidecars type *.xmp is "
+"always included.</p>"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:592
+#, fuzzy, kde-format
+msgid "Enter additional sidecars file extensions."
+msgstr "<p>यहाँ अचल आकार अनुपात अभिमुखीकरण चयन गर्नुहोस् ।"
+
+#: utilities/setup/metadata/setupmetadata.cpp:595
+#, fuzzy, kde-format
+msgid "Additional &sidecar file extensions"
+msgstr "<p>यहाँ अचल आकार अनुपात अभिमुखीकरण चयन गर्नुहोस् ।"
+
+#: utilities/setup/metadata/setupmetadata.cpp:610
+#, kde-format
+msgctxt "@title:tab"
+msgid "Sidecars"
+msgstr ""
+
+#: utilities/setup/metadata/setupmetadata.cpp:801
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -35445,13 +35557,13 @@ msgstr ""
 "द्रष्टव्य: थम्बनेल प्रक्रियाले केहि समय लिन सक्दछ ! तपाईँले पछि \"उपकरण\" मेनु प्रयोग गरेर "
 "यो काम सुरु गर्न सक्नुहुन्छ ।"
 
-#: utilities/setup/setupdatabase.cpp:113
+#: utilities/setup/setupdatabase.cpp:114
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Database Settings"
 msgstr "तथ्याङ्क"
 
-#: utilities/setup/setupdatabase.cpp:121
+#: utilities/setup/setupdatabase.cpp:122
 #, kde-format
 msgid ""
 "<p>Set the names of directories that you want to ignore from your photo "
@@ -35464,26 +35576,26 @@ msgid ""
 "default prefix it with a minus, e.g. -@eaDir.</p>"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:139
+#: utilities/setup/setupdatabase.cpp:140
 #, kde-format
 msgid ""
 "Additional directories to ignore (<a href='image'>Currently ignored "
 "directories</a>):"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:144
+#: utilities/setup/setupdatabase.cpp:145
 #, kde-format
 msgid ""
 "Enter directories that you want to ignore from adding to your collections."
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:165
+#: utilities/setup/setupdatabase.cpp:166
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Ignored Directories"
 msgstr "ट्याग मानाङ्कन गर्नुहोस्"
 
-#: utilities/setup/setupdatabase.cpp:260
+#: utilities/setup/setupdatabase.cpp:262
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -35493,19 +35605,19 @@ msgid ""
 "version prior to 2.0.</i></p> <p>Do you want to begin the update?</p>"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:275
+#: utilities/setup/setupdatabase.cpp:277
 #, fuzzy, kde-format
 msgctxt "@title:group"
 msgid "Updates"
 msgstr "मिति:"
 
-#: utilities/setup/setupdatabase.cpp:278
+#: utilities/setup/setupdatabase.cpp:280
 #, kde-format
 msgctxt "@action:button"
 msgid "Update File Hashes"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:280
+#: utilities/setup/setupdatabase.cpp:282
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -35516,13 +35628,13 @@ msgid ""
 "your database with a digiKam version prior to 2.0.</qt>"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:289
+#: utilities/setup/setupdatabase.cpp:291
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Get information about <interface>Update File Hashes</interface>"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:313
+#: utilities/setup/setupdatabase.cpp:315
 #, kde-format
 msgid ""
 "<p>Directories starting with a dot are ignored by default.<br/> <code>%1</"
@@ -36052,24 +36164,24 @@ msgid ""
 "or unset it to preserve the images currently on the light table."
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:115
+#: utilities/setup/setupmisc.cpp:130
 #, kde-format
 msgid "String comparison type:"
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:117
+#: utilities/setup/setupmisc.cpp:132
 #, fuzzy, kde-format
 msgctxt "method to compare strings"
 msgid "Natural"
 msgstr "प्रकृति"
 
-#: utilities/setup/setupmisc.cpp:118
+#: utilities/setup/setupmisc.cpp:133
 #, fuzzy, kde-format
 msgctxt "method to compare strings"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: utilities/setup/setupmisc.cpp:119
+#: utilities/setup/setupmisc.cpp:134
 #, kde-format
 msgid ""
 "<qt>Sets the way in which strings are compared inside digiKam. This eg. "
@@ -36081,28 +36193,28 @@ msgid ""
 "albums should be sorted according to these dates.</qt>"
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:129
+#: utilities/setup/setupmisc.cpp:144
 #, fuzzy, kde-format
 msgid "Confirm when moving items to the &trash"
 msgstr "वस्तुहरूलाई रद्दीटोकरीमा सार्दा यकिन संवाद देखाउनुहोस्"
 
-#: utilities/setup/setupmisc.cpp:130
+#: utilities/setup/setupmisc.cpp:145
 #, fuzzy, kde-format
 msgid "Confirm when permanently deleting items"
 msgstr "वस्तुहरूलाई रद्दीटोकरीमा सार्दा यकिन संवाद देखाउनुहोस्"
 
-#: utilities/setup/setupmisc.cpp:131
+#: utilities/setup/setupmisc.cpp:146
 #, fuzzy, kde-format
 msgid "Do not confirm when applying changes in the &right sidebar"
 msgstr "यकिन नगरिकन दायाँ छेउपट्टीमा परिवर्तनहरू लागू गर्नुहोस्"
 
-#: utilities/setup/setupmisc.cpp:132
+#: utilities/setup/setupmisc.cpp:147
 #, fuzzy, kde-format
 #| msgid "&Scan for new items on startup (slows down startup)"
 msgid "&Scan for new items at startup (makes startup slower)"
 msgstr "सुरुआतमा नयाँ वस्तुका लागि स्क्यान गर्नुहोस् (सुरुआत हुँन ढिलो हुन्छ)"
 
-#: utilities/setup/setupmisc.cpp:133
+#: utilities/setup/setupmisc.cpp:148
 #, kde-format
 msgid ""
 "Set this option to force digiKam to scan all collections for new items to\n"
@@ -36119,12 +36231,12 @@ msgid ""
 "a manual scan through the maintenance tool at the right moment."
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:142
+#: utilities/setup/setupmisc.cpp:157
 #, kde-format
 msgid "Remove obsolete core database objects (makes startup slower)"
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:143
+#: utilities/setup/setupmisc.cpp:158
 #, kde-format
 msgid ""
 "Set this option to force digiKam to clean up the core database from obsolete "
@@ -36137,17 +36249,17 @@ msgid ""
 "For clean up routines for other databases, please use the maintenance."
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:154
+#: utilities/setup/setupmisc.cpp:169
 #, kde-format
 msgid "Show only face tags for assigning names in people sidebar"
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:158
+#: utilities/setup/setupmisc.cpp:173
 #, kde-format
 msgid "Lower bound for minimum similarity:"
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:164
+#: utilities/setup/setupmisc.cpp:179
 #, kde-format
 msgid ""
 "Select here the lower bound of the minimum similarity threshold for fuzzy "
@@ -36155,13 +36267,44 @@ msgid ""
 "than 40 can make the search <b>really</b> slow."
 msgstr ""
 
-#: utilities/setup/setupmisc.cpp:176
+#: utilities/setup/setupmisc.cpp:191
 #, kde-format
 msgid ""
 "Set this option to configure how sidebar tab titles are visible. Use \"Only "
 "For Active Tab\" option if you use a small screen resolution as with a "
 "laptop computer."
 msgstr ""
+
+#: utilities/setup/setupmisc.cpp:264
+#, fuzzy, kde-format
+msgctxt "@title:tab"
+msgid "Behaviour"
+msgstr "व्यवहार"
+
+#: utilities/setup/setupmisc.cpp:275
+#, kde-format
+msgid "Perform the following oparations on all group members:"
+msgstr ""
+
+#: utilities/setup/setupmisc.cpp:276
+#, kde-format
+msgid ""
+"When images are grouped the following operations<br/>are performed only on "
+"the displayed item (No)<br/>or on all the hidden items in the group as well "
+"(Yes).<br/>If Ask is selected, there will be a prompt every<br/>time this "
+"operation is executed."
+msgstr ""
+
+#: utilities/setup/setupmisc.cpp:284
+#, kde-format
+msgid "Ask"
+msgstr ""
+
+#: utilities/setup/setupmisc.cpp:329
+#, fuzzy, kde-format
+msgctxt "@title:tab"
+msgid "Grouping"
+msgstr "समूहबद्ध गर्नुहोस्"
 
 #: utilities/setup/setupslideshow.cpp:106
 #, fuzzy, kde-format
