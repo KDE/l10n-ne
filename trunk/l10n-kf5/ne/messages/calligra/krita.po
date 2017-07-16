@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-15 03:03+0200\n"
+"POT-Creation-Date: 2017-07-16 03:09+0200\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -11204,6 +11204,7 @@ msgstr "मार्ग संयोजन गर्नुहोस्।"
 #: libs/ui/dialogs/kis_dlg_preferences.cc:911 libs/ui/forms/wdgnewimage.ui:375
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:150
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:188
+#: libs/ui/kis_palette_view.cpp:101 libs/ui/kis_palette_view.cpp:272
 #: libs/ui/layerstyles/WdgColorOverlay.ui:23
 #: libs/ui/layerstyles/WdgStroke.ui:134
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpColor.h:38
@@ -11670,7 +11671,7 @@ msgstr "मार्ग संयोजन गर्नुहोस्।"
 msgid "Untitled"
 msgstr "शीर्षक विहिन-१"
 
-#: libs/pigment/resources/KoStopGradient.cpp:441
+#: libs/pigment/resources/KoStopGradient.cpp:442
 #, kde-format
 msgid "SVG Gradient"
 msgstr ""
@@ -16162,6 +16163,97 @@ msgstr "नरम बनाइएको बनावट"
 msgctxt "option category"
 msgid "Filter"
 msgstr "फिल्टर"
+
+#: libs/ui/kis_palette_view.cpp:86
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Add a new Colorset Entry"
+msgstr "प्रोफाइल लागू गर्नुहोस्"
+
+#: libs/ui/kis_palette_view.cpp:90
+#, fuzzy, kde-format
+#| msgid "Default"
+msgctxt "Name for default group"
+msgid "Default"
+msgstr "पुर्वनिर्धारित"
+
+#: libs/ui/kis_palette_view.cpp:97 libs/ui/kis_palette_view.cpp:269
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"A spot color is a color that the printer is able to print without mixing the "
+"paints it has available to it. The opposite is called a process color."
+msgstr ""
+
+#: libs/ui/kis_palette_view.cpp:98
+#, fuzzy, kde-format
+#| msgid "Group:"
+msgid "Group"
+msgstr "समूह:"
+
+#: libs/ui/kis_palette_view.cpp:99 libs/ui/kis_palette_view.cpp:270
+#, kde-format
+msgid "ID"
+msgstr ""
+
+#: libs/ui/kis_palette_view.cpp:100 libs/ui/kis_palette_view.cpp:271
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgid "Name"
+msgstr "नाम:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
+#: libs/ui/kis_palette_view.cpp:102 libs/ui/kis_palette_view.cpp:273
+#: plugins/extensions/metadataeditor/editors/exif.ui:422
+#, kde-format
+msgid "Spot"
+msgstr "स्थान"
+
+#: libs/ui/kis_palette_view.cpp:104
+#, fuzzy, kde-format
+#| msgid "Color"
+msgctxt "Part of a default name for a color"
+msgid "Color"
+msgstr "रङ"
+
+#: libs/ui/kis_palette_view.cpp:130
+#, fuzzy, kde-format
+#| msgid "Add Group"
+msgctxt "@title:window"
+msgid "Add a new group"
+msgstr "समूह थप्नुहोस्"
+
+#: libs/ui/kis_palette_view.cpp:134
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgctxt "Name for a group"
+msgid "Name"
+msgstr "नाम:"
+
+#: libs/ui/kis_palette_view.cpp:135
+#, fuzzy, kde-format
+msgctxt "Part of default name for a new group"
+msgid "Color Group"
+msgstr "रङ:"
+
+#: libs/ui/kis_palette_view.cpp:150
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Removing Group"
+msgstr "तह हटाउनुहोस्"
+
+#: libs/ui/kis_palette_view.cpp:154
+#, fuzzy, kde-format
+msgctxt "Shows up when deleting a group"
+msgid "Keep the Colors"
+msgstr "मेट्नुहोस्"
+
+#: libs/ui/kis_palette_view.cpp:258
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgctxt "Name for a colorgroup"
+msgid "Name"
+msgstr "नाम:"
 
 #: libs/ui/kis_popup_palette.cpp:214
 #, fuzzy, kde-format
@@ -24869,12 +24961,6 @@ msgid "Center weighted average"
 msgstr "भारयुक्त औषत केन्द्रित गर्नुहोस्"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
-#: plugins/extensions/metadataeditor/editors/exif.ui:422
-#, kde-format
-msgid "Spot"
-msgstr "स्थान"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
 #: plugins/extensions/metadataeditor/editors/exif.ui:427
 #, kde-format
 msgid "Multi spot"
@@ -27047,7 +27133,7 @@ msgstr "रङ स्थानान्तरण"
 msgid "Reference image:"
 msgstr "सन्दर्भ छवि:"
 
-#: plugins/filters/gradientmap/krita_filter_gradient_map.cpp:38
+#: plugins/filters/gradientmap/krita_filter_gradient_map.cpp:39
 #, fuzzy, kde-format
 msgid "&Gradient Map..."
 msgstr "ग्रेडियन्ट"
@@ -31864,15 +31950,51 @@ msgctxt "The file will save fast but will not be compressed a lot"
 msgid "Large file size"
 msgstr "टायल साइज"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
 #: plugins/impex/png/kis_wdg_options_png.ui:110
+#, kde-format
+msgid "Use interlacing when publishing on the Internet."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:114
+#, kde-format
+msgid ""
+"<p>Interlacing is useful if you intend to publish your image on the Internet."
+"<br>\n"
+"Enabling interlacing will cause the image to be displayed by the browser "
+"even while downloading.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:117
+#, fuzzy, kde-format
+msgid "Interlacing"
+msgstr "रिजोल्युसन:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:124
+#, kde-format
+msgid ""
+"Indexed PNG images are smaller. If you enabled this option, your image will "
+"be analyzed to see whether it is possible to save as an indexed PNG."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:127
+#, kde-format
+msgid "Save as indexed PNG, if possible"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#: plugins/impex/png/kis_wdg_options_png.ui:137
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:149
 #, kde-format
 msgid "Disable to get smaller files if your image has no transparency"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:114
+#: plugins/impex/png/kis_wdg_options_png.ui:141
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:153
 #, kde-format
 msgid ""
@@ -31884,45 +32006,9 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:117
-#, kde-format
-msgid "Store alpha channel (transparency)"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:127
-#, kde-format
-msgid "Use interlacing when publishing on the Internet."
-msgstr ""
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:131
-#, kde-format
-msgid ""
-"<p>Interlacing is useful if you intend to publish your image on the Internet."
-"<br>\n"
-"Enabling interlacing will cause the image to be displayed by the browser "
-"even while downloading.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:134
-#, fuzzy, kde-format
-msgid "Interlacing"
-msgstr "रिजोल्युसन:"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:141
-#, kde-format
-msgid ""
-"Indexed PNG images are smaller. If you enabled this option, your image will "
-"be analyzed to see whether it is possible to save as an indexed PNG."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
 #: plugins/impex/png/kis_wdg_options_png.ui:144
 #, kde-format
-msgid "Save as indexed PNG, if possible"
+msgid "Store alpha channel (transparency)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -45307,12 +45393,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format) action"
 #~ msgid "Vertically Center"
 #~ msgstr "ठाडो:"
-
-#, fuzzy
-#~| msgid "Group:"
-#~ msgctxt "(qtundo-format) action"
-#~ msgid "Group"
-#~ msgstr "समूह:"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format) action"
