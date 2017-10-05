@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-10-04 05:55+0200\n"
+"POT-Creation-Date: 2017-10-05 03:20+0200\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -9591,6 +9591,7 @@ msgid "Colors"
 msgstr "रङ"
 
 #: libs/image/filter/kis_filter.cc:55
+#: plugins/filters/edgedetection/kis_edge_detection_filter.h:43
 #, kde-format
 msgid "Edge Detection"
 msgstr "किनारा खोजी"
@@ -12159,7 +12160,7 @@ msgstr "रङ"
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: libs/ui/dialogs/kis_delayed_save_dialog.cpp:62
 #: libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.cpp:126
-#: libs/ui/forms/KisOpenPaneBase.ui:67 libs/ui/forms/wdgpaintopsettings.ui:509
+#: libs/ui/forms/KisOpenPaneBase.ui:67 libs/ui/forms/wdgpaintopsettings.ui:734
 #: libs/ui/forms/wdgsavebrushpreset.ui:201
 #: libs/ui/input/kis_tool_invocation_action.cpp:58 libs/ui/kis_clipboard.cc:274
 #: libs/ui/KisView.cpp:534
@@ -13694,8 +13695,8 @@ msgstr "बाँन्की"
 #. i18n: ectx: property (text), widget (KisHighlightedToolButton, showPresetsButton)
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemovePresets)
 #: libs/ui/forms/wdgdlgblacklistcleanup.ui:93
-#: libs/ui/forms/wdgpaintopsettings.ui:548
-#: libs/ui/widgets/kis_paintop_presets_popup.cpp:190
+#: libs/ui/forms/wdgpaintopsettings.ui:369
+#: libs/ui/widgets/kis_paintop_presets_popup.cpp:188
 #, fuzzy, kde-format
 msgid "Presets"
 msgstr "प्रिसेट:"
@@ -14655,91 +14656,22 @@ msgstr "लेन्स सुधार"
 msgid "Brush Editor"
 msgstr "ब्रुस साइज"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushSizeCheckBox)
-#: libs/ui/forms/wdgpaintopsettings.ui:110
-#, kde-format
-msgid "Erase mode will use a separate brush size"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, eraserBrushSizeCheckBox)
-#: libs/ui/forms/wdgpaintopsettings.ui:113
-#, kde-format
-msgid "Eraser switch size"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
-#: libs/ui/forms/wdgpaintopsettings.ui:129
-#, kde-format
-msgid "Temporarily Save Tweaks To Presets"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushOpacityCheckBox)
-#: libs/ui/forms/wdgpaintopsettings.ui:145
-#, kde-format
-msgid "Erase mode will use a separate brush opacity"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, eraserBrushOpacityCheckBox)
-#: libs/ui/forms/wdgpaintopsettings.ui:148
-#, fuzzy, kde-format
-msgid "Eraser switch opacity"
-msgstr "पूर्वावलोकन अस्पष्टता:"
-
-#. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
-#: libs/ui/forms/wdgpaintopsettings.ui:206
-#, kde-format
-msgid "Load Engine Defaults"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, saveBrushPresetButton)
-#: libs/ui/forms/wdgpaintopsettings.ui:226
-#, fuzzy, kde-format
-msgid "Overwrite Brush"
-msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
-
-#. i18n: ectx: property (text), widget (QPushButton, saveNewBrushPresetButton)
-#: libs/ui/forms/wdgpaintopsettings.ui:233
-#, fuzzy, kde-format
-msgid "Save New Brush Preset..."
-msgstr "प्रिसेट:"
-
-#. i18n: ectx: property (toolTip), widget (QPushButton, fillGradient)
-#: libs/ui/forms/wdgpaintopsettings.ui:331
-#, fuzzy, kde-format
-msgid "Fill area with gradient"
-msgstr "बान्कीसँग भर्नुहोस्"
-
-#. i18n: ectx: property (toolTip), widget (QPushButton, fillSolid)
-#: libs/ui/forms/wdgpaintopsettings.ui:341
-#, fuzzy, kde-format
-msgid "Fill area with background color"
-msgstr "पृष्ठभूमि रङसँग भर्नुहोस्"
-
-#. i18n: ectx: property (toolTip), widget (QPushButton, eraseScratchPad)
-#: libs/ui/forms/wdgpaintopsettings.ui:351
-#, kde-format
-msgid "Reset area to white"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, currentBrushNameLabel)
-#: libs/ui/forms/wdgpaintopsettings.ui:425
+#: libs/ui/forms/wdgpaintopsettings.ui:223
 #, fuzzy, kde-format
 #| msgid "Smeary Brush"
 msgid "Current Brush Name"
 msgstr "स्मियरी ब्रुस"
 
-#. i18n: ectx: property (text), widget (QPushButton, updateBrushNameButton)
-#. i18n: ectx: property (text), widget (QPushButton, savePresetButton)
-#: libs/ui/forms/wdgpaintopsettings.ui:502
-#: libs/ui/forms/wdgsavebrushpreset.ui:208 libs/ui/KisColorsetChooser.cpp:100
-#: libs/ui/KisMainWindow.cpp:753 libs/ui/widgets/kis_workspace_chooser.cpp:93
-#: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
+#. i18n: ectx: property (text), widget (QLabel, currentBrushEngineLabel)
+#: libs/ui/forms/wdgpaintopsettings.ui:254
 #, fuzzy, kde-format
-msgid "Save"
-msgstr "तरङ्ग"
+#| msgid "Smeary Brush"
+msgid "Current Brush Engine"
+msgstr "स्मियरी ब्रुस"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: libs/ui/forms/wdgpaintopsettings.ui:529
+#: libs/ui/forms/wdgpaintopsettings.ui:342
 #, fuzzy, kde-format
 #| msgid "&Show"
 msgid "Show:"
@@ -14747,23 +14679,107 @@ msgstr "देखाउनुहोस्"
 
 #. i18n: ectx: property (text), widget (KisHighlightedToolButton, showEditorButton)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: libs/ui/forms/wdgpaintopsettings.ui:567
+#: libs/ui/forms/wdgpaintopsettings.ui:394
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
 #, kde-format
 msgid "Settings"
 msgstr "सेटिङ"
 
 #. i18n: ectx: property (text), widget (KisHighlightedToolButton, showScratchpadButton)
-#: libs/ui/forms/wdgpaintopsettings.ui:586
+#: libs/ui/forms/wdgpaintopsettings.ui:419
 #, fuzzy, kde-format
 msgid "Scratchpad"
 msgstr "मौलिक तह देखाउनुहोस्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: libs/ui/forms/wdgpaintopsettings.ui:627
+#: libs/ui/forms/wdgpaintopsettings.ui:462
 #, fuzzy, kde-format
 msgid "Engine:"
 msgstr "रङ दायरा"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushSizeCheckBox)
+#: libs/ui/forms/wdgpaintopsettings.ui:591
+#, kde-format
+msgid "Erase mode will use a separate brush size"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, eraserBrushSizeCheckBox)
+#: libs/ui/forms/wdgpaintopsettings.ui:594
+#, kde-format
+msgid "Eraser switch size"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
+#: libs/ui/forms/wdgpaintopsettings.ui:610
+#, kde-format
+msgid "Temporarily Save Tweaks To Presets"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushOpacityCheckBox)
+#: libs/ui/forms/wdgpaintopsettings.ui:626
+#, kde-format
+msgid "Erase mode will use a separate brush opacity"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, eraserBrushOpacityCheckBox)
+#: libs/ui/forms/wdgpaintopsettings.ui:629
+#, fuzzy, kde-format
+msgid "Eraser switch opacity"
+msgstr "पूर्वावलोकन अस्पष्टता:"
+
+#. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
+#: libs/ui/forms/wdgpaintopsettings.ui:691
+#, kde-format
+msgid "Load Engine Defaults"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, renameButton)
+#. i18n: ectx: property (text), widget (QPushButton, renameBrushPresetButton)
+#: libs/ui/forms/wdgpaintopsettings.ui:704
+#: libs/ui/input/config/kis_edit_profiles_dialog.ui:47
+#, fuzzy, kde-format
+msgid "Rename"
+msgstr "फाइल नाम"
+
+#. i18n: ectx: property (text), widget (QPushButton, updateBrushNameButton)
+#. i18n: ectx: property (text), widget (QPushButton, savePresetButton)
+#: libs/ui/forms/wdgpaintopsettings.ui:727
+#: libs/ui/forms/wdgsavebrushpreset.ui:208 libs/ui/KisColorsetChooser.cpp:100
+#: libs/ui/KisMainWindow.cpp:753 libs/ui/widgets/kis_workspace_chooser.cpp:93
+#: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
+#, fuzzy, kde-format
+msgid "Save"
+msgstr "तरङ्ग"
+
+#. i18n: ectx: property (text), widget (QPushButton, saveBrushPresetButton)
+#: libs/ui/forms/wdgpaintopsettings.ui:754
+#, fuzzy, kde-format
+msgid "Overwrite Brush"
+msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
+
+#. i18n: ectx: property (text), widget (QPushButton, saveNewBrushPresetButton)
+#: libs/ui/forms/wdgpaintopsettings.ui:761
+#, fuzzy, kde-format
+msgid "Save New Brush Preset..."
+msgstr "प्रिसेट:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillGradient)
+#: libs/ui/forms/wdgpaintopsettings.ui:859
+#, fuzzy, kde-format
+msgid "Fill area with gradient"
+msgstr "बान्कीसँग भर्नुहोस्"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillSolid)
+#: libs/ui/forms/wdgpaintopsettings.ui:869
+#, fuzzy, kde-format
+msgid "Fill area with background color"
+msgstr "पृष्ठभूमि रङसँग भर्नुहोस्"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, eraseScratchPad)
+#: libs/ui/forms/wdgpaintopsettings.ui:879
+#, kde-format
+msgid "Reset area to white"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: libs/ui/forms/wdgperformancesettings.ui:17
@@ -15394,12 +15410,6 @@ msgstr "नक्कल गर्नुहोस्"
 #, fuzzy, kde-format
 msgid "Reset All"
 msgstr "सबै चयन गर्नुहोस्"
-
-#. i18n: ectx: property (text), widget (QPushButton, renameButton)
-#: libs/ui/input/config/kis_edit_profiles_dialog.ui:47
-#, fuzzy, kde-format
-msgid "Rename"
-msgstr "फाइल नाम"
 
 #: libs/ui/input/config/kis_input_button.cpp:53
 #, fuzzy, kde-format
@@ -19706,7 +19716,7 @@ msgstr "पूर्वसेट सम्पादन गर्नुहोस�
 msgid "Rename the brush preset"
 msgstr "पूर्वसेट सम्पादन गर्नुहोस्"
 
-#: libs/ui/widgets/kis_paintop_presets_popup.cpp:612
+#: libs/ui/widgets/kis_paintop_presets_popup.cpp:600
 #, fuzzy, kde-format
 msgid "All"
 msgstr "Alt+A"
@@ -19715,6 +19725,11 @@ msgstr "Alt+A"
 #, fuzzy, kde-format
 msgid "Save New Brush Preset"
 msgstr "प्रिसेट:"
+
+#: libs/ui/widgets/kis_preset_live_preview_view.cpp:176
+#, kde-format
+msgid "No Preview for this engine"
+msgstr ""
 
 #: libs/ui/widgets/kis_tone_curve_widget.cpp:341
 #, fuzzy, kde-format
@@ -24270,20 +24285,20 @@ msgid "Fi&le format:"
 msgstr "ढाँचा:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/extensions/animationrenderer/wdg_animationrenderer.ui:331
+#: plugins/extensions/animationrenderer/wdg_animationrenderer.ui:334
 #, fuzzy, kde-format
 #| msgid "&Image Selection"
 msgid "Image location:"
 msgstr "छवि चयन"
 
 #. i18n: ectx: property (text), widget (QLineEdit, txtBasename)
-#: plugins/extensions/animationrenderer/wdg_animationrenderer.ui:341
+#: plugins/extensions/animationrenderer/wdg_animationrenderer.ui:344
 #, fuzzy, kde-format
 msgid "frame"
 msgstr "तह हटाउनुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: plugins/extensions/animationrenderer/wdg_animationrenderer.ui:348
+#: plugins/extensions/animationrenderer/wdg_animationrenderer.ui:351
 #, fuzzy, kde-format
 #| msgid "Total editing time:"
 msgid "Start numbering at:"
@@ -26917,6 +26932,7 @@ msgstr "मिथ नीलो"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:68
 #: plugins/filters/blur/wdgblur.ui:65
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:49
 #, fuzzy, kde-format
 msgid "Vertical Radius:"
 msgstr "ठाडो:"
@@ -26925,6 +26941,7 @@ msgstr "ठाडो:"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:78
 #: plugins/filters/blur/wdgblur.ui:29
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:45
 #, fuzzy, kde-format
 msgid "Horizontal Radius:"
 msgstr "तेर्सो;"
@@ -27362,8 +27379,10 @@ msgstr "माध्यम:"
 msgid "Logarithmic"
 msgstr "लघुगणकीय"
 
+#. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, labelOut)
 #: plugins/filters/colorsfilters/wdg_perchannel.ui:289
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:73
 #, fuzzy, kde-format
 msgid "Output:"
 msgstr "निर्गत"
@@ -27468,6 +27487,100 @@ msgstr "मोड"
 #, fuzzy, kde-format
 msgid "Dodge"
 msgstr "मोड"
+
+#: plugins/filters/edgedetection/kis_edge_detection_filter.cpp:50
+#, fuzzy, kde-format
+#| msgid "Edge Detection"
+msgid "&Edge Detection..."
+msgstr "किनारा खोजी"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
+#, kde-format
+msgid "Prewitt"
+msgstr ""
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
+#, fuzzy, kde-format
+#| msgid "Example"
+msgid "Simple"
+msgstr "उदाहरण"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
+#, kde-format
+msgid "Sobol"
+msgstr ""
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:33
+#, fuzzy, kde-format
+#| msgid "Small Tiles"
+msgid "All sides"
+msgstr "सानो टायल"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:34
+#, fuzzy, kde-format
+msgid "Top Edge"
+msgstr "किनारा नजिक:"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:35
+#, fuzzy, kde-format
+msgid "Bottom Edge"
+msgstr "तह घुमाउनुहोस्"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:36
+#, fuzzy, kde-format
+msgid "Right Edge"
+msgstr "दायाँ:"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:37
+#, fuzzy, kde-format
+msgid "Left Edge"
+msgstr "बायाँ:"
+
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:38
+#, fuzzy, kde-format
+msgid "Direction in Radians"
+msgstr "संतृप्ति"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WidgetEdgeDetection)
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:14
+#, fuzzy, kde-format
+msgid "Form"
+msgstr "फारमस"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, cmbOutput)
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:20
+#, kde-format
+msgid "Output decides what type of information you want from the lines."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, cmbType)
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:27
+#, kde-format
+msgid ""
+"The formula decides how the kernel is created, so different formulas choose "
+"different values in the kernel, and thus give subtly different results."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkTransparent)
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:53
+#, kde-format
+msgid ""
+"This will take a desaturated result and use it to determine what is "
+"transparent. This is useful for creating edge and fringe effects."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkTransparent)
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:56
+#, fuzzy, kde-format
+#| msgid "Discard alpha channel"
+msgid "Apply result to alpha channel"
+msgstr "अल्फा च्यानल छोड्नुहोस्"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:63
+#, fuzzy, kde-format
+msgid "Formula:"
+msgstr "ढाँचा:"
 
 #: plugins/filters/embossfilter/kis_emboss_filter.cpp:53
 #, kde-format
@@ -38569,10 +38682,6 @@ msgstr ""
 #~ msgstr "बचत गर्नका लागि फाइल सिर्जना गर्न सकिएन"
 
 #, fuzzy
-#~ msgid "Form"
-#~ msgstr "फारमस"
-
-#, fuzzy
 #~ msgid "New layer(s)"
 #~ msgstr "नयाँ तह"
 
@@ -41033,11 +41142,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format) @item:inlistbox Layer Style: Source"
 #~ msgid "Center"
 #~ msgstr "केन्द्र:"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format) @item:inlistbox Layer Style: Source"
-#~ msgid "Edge"
-#~ msgstr "किनारा नजिक:"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
@@ -61007,11 +61111,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
-#~ msgid "Bottom Left"
-#~ msgstr "तह घुमाउनुहोस्"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
 #~ msgid "Bottom"
 #~ msgstr "तल पङ्क्तिबद्व गर्नुहोस्"
 
@@ -62266,11 +62365,6 @@ msgstr ""
 #~| msgid "Use as Brush"
 #~ msgid "Use as Tip"
 #~ msgstr "ब्रुसको रूपमा प्रयोग गर्नुहोस्"
-
-#, fuzzy
-#~| msgid "Small Tiles"
-#~ msgid "All Files"
-#~ msgstr "सानो टायल"
 
 #, fuzzy
 #~| msgid "Brush size"
@@ -63752,11 +63846,6 @@ msgstr ""
 
 #~ msgid "Resize current size to size of the imported image"
 #~ msgstr "आयातित छविको साइजमा हालको साइज मिलाउनुहोस्"
-
-#, fuzzy
-#~| msgid "Example"
-#~ msgid "simple"
-#~ msgstr "उदाहरण"
 
 #, fuzzy
 #~| msgid "Anti-alias threshold:"
