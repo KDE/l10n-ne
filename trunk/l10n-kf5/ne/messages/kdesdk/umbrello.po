@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umbrello\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-28 03:25+0100\n"
+"POT-Creation-Date: 2018-03-06 03:25+0100\n"
 "PO-Revision-Date: 2007-08-20 13:11+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1725,9 +1725,9 @@ msgid "General"
 msgstr "सामान्य"
 
 #: dialogs/classpropertiesdialog.cpp:242 dialogs/classpropertiesdialog.cpp:354
-#: dialogs/multipagedialogbase.cpp:353 dialogs/multipagedialogbase.cpp:376
-#: dialogs/settingsdialog.cpp:231 dialogs/umlforeignkeyconstraintdialog.cpp:205
-#: dialogs/umlviewdialog.cpp:91
+#: dialogs/multipagedialogbase.cpp:372 dialogs/multipagedialogbase.cpp:386
+#: dialogs/multipagedialogbase.cpp:396 dialogs/settingsdialog.cpp:231
+#: dialogs/umlforeignkeyconstraintdialog.cpp:205 dialogs/umlviewdialog.cpp:91
 #, kde-format
 msgid "General Settings"
 msgstr "सामान्य सेटिङ"
@@ -2148,13 +2148,14 @@ msgstr "विशेषता"
 msgid "Search Term:"
 msgstr ""
 
-#: dialogs/multipagedialogbase.cpp:71
+#: dialogs/multipagedialogbase.cpp:75
 #, fuzzy, kde-format
 #| msgid "&Default"
 msgid "Default"
 msgstr "पूर्वानिर्धारण"
 
-#: dialogs/multipagedialogbase.cpp:353 dialogs/multipagedialogbase.cpp:376
+#: dialogs/multipagedialogbase.cpp:372 dialogs/multipagedialogbase.cpp:386
+#: dialogs/multipagedialogbase.cpp:396
 #, fuzzy, kde-format
 #| msgid "General"
 msgctxt "general settings"
@@ -2163,51 +2164,51 @@ msgstr "सामान्य"
 
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
-#: dialogs/multipagedialogbase.cpp:391 umbrello.kcfg:164 umbrello.kcfg:274
+#: dialogs/multipagedialogbase.cpp:411 umbrello.kcfg:164 umbrello.kcfg:274
 #: umllistview.cpp:1438
 #, fuzzy, kde-format
 msgid "Font"
 msgstr "फन्ट:"
 
-#: dialogs/multipagedialogbase.cpp:391
+#: dialogs/multipagedialogbase.cpp:411
 #, kde-format
 msgid "Font Settings"
 msgstr "फन्ट सेटिङ"
 
-#: dialogs/multipagedialogbase.cpp:466
+#: dialogs/multipagedialogbase.cpp:486
 #, fuzzy, kde-format
 #| msgid "Style:"
 msgctxt "widget style page"
 msgid "Style"
 msgstr "शैली:"
 
-#: dialogs/multipagedialogbase.cpp:466
+#: dialogs/multipagedialogbase.cpp:486
 #, fuzzy, kde-format
 #| msgid "Widget Color"
 msgid "Widget Style"
 msgstr "विजेट रङ"
 
-#: dialogs/multipagedialogbase.cpp:477
+#: dialogs/multipagedialogbase.cpp:497
 #, fuzzy, kde-format
 #| msgid "Style:"
 msgctxt "style page name"
 msgid "Style"
 msgstr "शैली:"
 
-#: dialogs/multipagedialogbase.cpp:477
+#: dialogs/multipagedialogbase.cpp:497
 #, fuzzy, kde-format
 #| msgid "Component"
 msgid "Role Style"
 msgstr "अवयव"
 
-#: dialogs/multipagedialogbase.cpp:497
+#: dialogs/multipagedialogbase.cpp:517
 #, fuzzy, kde-format
 #| msgid "Roles"
 msgctxt "role page name"
 msgid "Roles"
 msgstr "भूमिका"
 
-#: dialogs/multipagedialogbase.cpp:497
+#: dialogs/multipagedialogbase.cpp:517
 #, kde-format
 msgid "Role Settings"
 msgstr "भूमिका सेटिङ"
@@ -3044,6 +3045,44 @@ msgstr "पूर्वनिर्धारित मान:"
 msgid "Contained Items"
 msgstr "समाविष्ट वस्तु"
 
+#: dialogs/pages/selectoperationpage.cpp:61
+#: dialogs/selectoperationdialog.cpp:59 dialogs/selectoperationdialog.cpp:66
+#, kde-format
+msgid "Select Operation"
+msgstr "सञ्चालन चयन गर्नुहोस्"
+
+#: dialogs/pages/selectoperationpage.cpp:67
+#: dialogs/selectoperationdialog.cpp:71
+#, kde-format
+msgid "Sequence number:"
+msgstr "अनुक्रम सङ्ख्या:"
+
+#: dialogs/pages/selectoperationpage.cpp:70
+#: dialogs/selectoperationdialog.cpp:74
+#, fuzzy, kde-format
+#| msgid "&Auto increment"
+msgid "Auto increment:"
+msgstr "स्वचालित बढोत्तरी:"
+
+#: dialogs/pages/selectoperationpage.cpp:75
+#: dialogs/selectoperationdialog.cpp:79
+#, kde-format
+msgid "Class operation:"
+msgstr "वर्ग सञ्चालन:"
+
+#: dialogs/pages/selectoperationpage.cpp:86
+#: dialogs/selectoperationdialog.cpp:90 listpopupmenu.cpp:692
+#: listpopupmenu.cpp:818
+#, kde-format
+msgid "New Operation..."
+msgstr "नयाँ सञ्चालन..."
+
+#: dialogs/pages/selectoperationpage.cpp:90
+#: dialogs/selectoperationdialog.cpp:94
+#, kde-format
+msgid "Custom operation:"
+msgstr "अनुकूल सञ्चालन:"
+
 #. i18n: ectx: property (title), widget (QGroupBox, ui_propsGroupBox)
 #: dialogs/pages/umlrolepropertiesbase.ui:16 dialogs/umlroledialog.cpp:24
 #, kde-format
@@ -3224,38 +3263,6 @@ msgstr "तपाईँ एउटा अवैध परामिति ना�
 #, kde-format
 msgid "Parameter Name Invalid"
 msgstr "परिमिति नाम अवैध छ"
-
-#: dialogs/selectoperationdialog.cpp:59 dialogs/selectoperationdialog.cpp:66
-#, kde-format
-msgid "Select Operation"
-msgstr "सञ्चालन चयन गर्नुहोस्"
-
-#: dialogs/selectoperationdialog.cpp:76
-#, kde-format
-msgid "Sequence number:"
-msgstr "अनुक्रम सङ्ख्या:"
-
-#: dialogs/selectoperationdialog.cpp:79
-#, fuzzy, kde-format
-#| msgid "&Auto increment"
-msgid "Auto increment:"
-msgstr "स्वचालित बढोत्तरी:"
-
-#: dialogs/selectoperationdialog.cpp:84
-#, kde-format
-msgid "Class operation:"
-msgstr "वर्ग सञ्चालन:"
-
-#: dialogs/selectoperationdialog.cpp:95 listpopupmenu.cpp:692
-#: listpopupmenu.cpp:818
-#, kde-format
-msgid "New Operation..."
-msgstr "नयाँ सञ्चालन..."
-
-#: dialogs/selectoperationdialog.cpp:99
-#, kde-format
-msgid "Custom operation:"
-msgstr "अनुकूल सञ्चालन:"
 
 #: dialogs/settingsdialog.cpp:53
 #, kde-format
@@ -8104,17 +8111,17 @@ msgstr ""
 msgid "Move widgets"
 msgstr "फोल्डर सिर्जना गर्नुहोस्"
 
-#: umlwidgets/umlwidget.cpp:812
+#: umlwidgets/umlwidget.cpp:805
 #, kde-format
 msgid "Rename Object"
 msgstr "वस्तु पुन: नामकरण गर्नुहोस्"
 
-#: umlwidgets/umlwidget.cpp:813
+#: umlwidgets/umlwidget.cpp:806
 #, kde-format
 msgid "Enter object name:"
 msgstr "वस्तु नाम प्रविष्ट गर्नुहोस्:"
 
-#: umlwidgets/umlwidget.cpp:1330
+#: umlwidgets/umlwidget.cpp:1323
 #, kde-format
 msgid ""
 "Hold shift or ctrl to move in X axis. Hold shift and control to move in Y "
