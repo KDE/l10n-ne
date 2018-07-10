@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krdc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-06-01 03:37+0200\n"
+"POT-Creation-Date: 2018-07-10 03:40+0200\n"
 "PO-Revision-Date: 2007-09-14 13:45+0545\n"
 "Last-Translator: Ishwor Sharma <sharmabeeshwar@gmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1272,7 +1272,7 @@ msgstr "विशेष कुञ्जी प्रविष्ट गर्न
 msgid "Please enter the username you would like to use for login."
 msgstr ""
 
-#: nx/nxview.cpp:140 rdp/rdpview.cpp:140 vnc/vncview.cpp:291
+#: nx/nxview.cpp:140 rdp/rdpview.cpp:140 vnc/vncview.cpp:340
 #, kde-format
 msgid "Access to the system requires a password."
 msgstr "प्रणालीमा पहुँच गर्न पासवर्ड आवश्यक पर्दछ।"
@@ -1727,13 +1727,13 @@ msgstr "जडान गर्नुहोस्"
 msgid "Reconnecting."
 msgstr "जडान"
 
-#: vnc/vncclientthread.cpp:567
+#: vnc/vncclientthread.cpp:562
 #, fuzzy, kde-format
 #| msgid "Connect"
 msgid "Reconnected."
 msgstr "जडान गर्नुहोस्"
 
-#: vnc/vncclientthread.cpp:569
+#: vnc/vncclientthread.cpp:564
 #, fuzzy, kde-format
 #| msgid "Connection"
 msgid "Connected."
@@ -1743,7 +1743,7 @@ msgstr "जडान"
 #: vnc/vncpreferences.ui:23
 #, fuzzy, kde-format
 #| msgid "Connection &type:"
-msgid "Connection type:"
+msgid "Connection &type:"
 msgstr "जडान प्रकार:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_Quality)
@@ -1789,15 +1789,75 @@ msgstr "न्यून गुणस्तर (मोडेम, ISDN, ढिल�
 msgid "Scale to Size:"
 msgstr "दृश्य मापन गर्नुहोस्"
 
-#: vnc/vncview.cpp:292
+#. i18n: ectx: property (text), widget (QCheckBox, use_ssh_tunnel)
+#: vnc/vncpreferences.ui:204
+#, kde-format
+msgid "Connect via SSH tunnel"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, ssh_groupBox)
+#: vnc/vncpreferences.ui:211
+#, kde-format
+msgid "SSH tunnel options"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, use_loopback)
+#: vnc/vncpreferences.ui:217
+#, kde-format
+msgid "Tunnel via loopback address"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: vnc/vncpreferences.ui:224
+#, kde-format
+msgid "Port:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: vnc/vncpreferences.ui:244
+#, fuzzy, kde-format
+#| msgid "Enter special keys"
+msgid "User name:"
+msgstr "विशेष कुञ्जी प्रविष्ट गर्नुहोस्।"
+
+#: vnc/vncsshtunnelthread.cpp:108
+#, fuzzy, kde-format
+#| msgid "Connection"
+msgid "Error connecting to %1: %2"
+msgstr "जडान"
+
+#: vnc/vncsshtunnelthread.cpp:128
+#, fuzzy, kde-format
+#| msgid "Authenticating..."
+msgid "Error authenticating with password: %1"
+msgstr "प्रमाणीकरण गर्दैछ..."
+
+#: vnc/vncsshtunnelthread.cpp:134 vnc/vncsshtunnelthread.cpp:152
+#: vnc/vncsshtunnelthread.cpp:158
+#, kde-format
+msgid "Error creating tunnel socket"
+msgstr ""
+
+#: vnc/vncview.cpp:341
 #, fuzzy, kde-format
 #| msgid "Authentication failed. Connection aborted."
 msgid "Authentication failed. Please try again."
 msgstr "प्रमाणीकरण असफल भयो। जडान परित्याग गरियो।"
 
-#: vnc/vncview.cpp:317 vnc/vncview.cpp:319
+#: vnc/vncview.cpp:369
+#, fuzzy, kde-format
+#| msgid "Please enter the password."
+msgid "Please enter the SSH password."
+msgstr "कृपया पासवर्ड प्रविष्ट गर्नुहोस्।"
+
+#: vnc/vncview.cpp:391 vnc/vncview.cpp:393
 #, kde-format
 msgid "VNC failure"
+msgstr ""
+
+#: vnc/vncview.cpp:402 vnc/vncview.cpp:404
+#, kde-format
+msgid "SSH Tunnel failure"
 msgstr ""
 
 #: vnc/vncviewfactory.cpp:65
@@ -2139,9 +2199,6 @@ msgstr ""
 
 #~ msgid "RDP Host Preferences for %1"
 #~ msgstr "%1 का लागि आर डी पी होस्ट प्राथमिकता"
-
-#~ msgid "Please enter the password."
-#~ msgstr "कृपया पासवर्ड प्रविष्ट गर्नुहोस्।"
 
 #~ msgid ""
 #~ "Show Preferences: %1, Resolution: %2x%3, Color Depth: %4, Keymap: %5, "
