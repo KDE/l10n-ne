@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-21 03:38+0200\n"
+"POT-Creation-Date: 2018-10-22 03:39+0200\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1725,7 +1725,7 @@ msgid "Normal"
 msgstr "सामान्य"
 
 #: core/app/main/digikamapp_setup.cpp:912
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:660
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:497
 #, kde-format
 msgid "Flipped Horizontally"
 msgstr "तेर्सो तरिकाले घुमाइएको"
@@ -1736,7 +1736,7 @@ msgid "Rotated Upside Down"
 msgstr ""
 
 #: core/app/main/digikamapp_setup.cpp:916
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:664
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:501
 #, kde-format
 msgid "Flipped Vertically"
 msgstr "ठाडो तरिकाले घुमाइएको"
@@ -1747,7 +1747,7 @@ msgid "Rotated Right / Horiz. Flipped"
 msgstr "९० डिग्रीमा घुमाइएको / तेर्सो तरिकाले घुमाइएको"
 
 #: core/app/main/digikamapp_setup.cpp:920
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:672
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:509
 #, fuzzy, kde-format
 msgid "Rotated Right"
 msgstr "तल-दायाँ"
@@ -1758,7 +1758,7 @@ msgid "Rotated Right / Vert. Flipped"
 msgstr "९० डिग्रिमा घुमाइएको / ठाडो तरिकाले घुमाइएको"
 
 #: core/app/main/digikamapp_setup.cpp:924
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:668
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:505
 #, fuzzy, kde-format
 msgid "Rotated Left"
 msgstr "घुमाउनुहोस्"
@@ -1927,8 +1927,8 @@ msgid "Import"
 msgstr "आयात"
 
 #: core/app/main/main.cpp:84 core/app/views/welcomepageview.cpp:207
-#: core/libs/album/albummanager.cpp:2969 core/libs/album/albummanager.cpp:2999
-#: core/libs/album/albummanager.cpp:3042 core/libs/album/albummanager.cpp:3072
+#: core/libs/album/albummanager.cpp:2988 core/libs/album/albummanager.cpp:3019
+#: core/libs/album/albummanager.cpp:3062 core/libs/album/albummanager.cpp:3092
 #, kde-format
 msgid "digiKam"
 msgstr "डिजिक्याम"
@@ -3770,74 +3770,74 @@ msgstr "सङ्कलन"
 msgid "Searches"
 msgstr "खोजी"
 
-#: core/libs/album/albummanager.cpp:1929
+#: core/libs/album/albummanager.cpp:1945
 #, kde-format
 msgid "The collection location supplied is invalid or currently not available."
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:1937
+#: core/libs/album/albummanager.cpp:1953
 #, kde-format
 msgid "No album for collection location: Internal error"
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:1953
+#: core/libs/album/albummanager.cpp:1969
 #, kde-format
 msgid "No parent found for album."
 msgstr "एल्बमका लागि प्रमूल फेला परेन ।"
 
-#: core/libs/album/albummanager.cpp:1960
+#: core/libs/album/albummanager.cpp:1976
 #, kde-format
 msgid "Album name cannot be empty."
 msgstr "एल्बमको नाम खाली हुनसक्दैन ।"
 
-#: core/libs/album/albummanager.cpp:1966
+#: core/libs/album/albummanager.cpp:1982
 #, kde-format
 msgid "Album name cannot contain '/'."
 msgstr "एल्बमको नाममा '/' हुनु हुँदैन ।"
 
-#: core/libs/album/albummanager.cpp:1972
+#: core/libs/album/albummanager.cpp:1988
 #, kde-format
 msgid "createPAlbum does not accept the root album as parent."
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:1986
+#: core/libs/album/albummanager.cpp:2002
 #, fuzzy, kde-format
 msgid "An existing album has the same name."
 msgstr "सोहि नामको अर्को एल्बम अवस्थित छ ।"
 
-#: core/libs/album/albummanager.cpp:2002
+#: core/libs/album/albummanager.cpp:2018
 #, fuzzy, kde-format
 msgid "Failed to create directory '%1'"
 msgstr "एल्बम पुन: नामकरण गर्न असफल"
 
-#: core/libs/album/albummanager.cpp:2011
+#: core/libs/album/albummanager.cpp:2027
 #, kde-format
 msgid "Failed to add album to database"
 msgstr "डाटाबेसमा एल्बम थप्न असफल"
 
-#: core/libs/album/albummanager.cpp:2038 core/libs/album/albummanager.cpp:2136
-#: core/libs/album/albummanager.cpp:2240 core/libs/album/albummanager.cpp:2307
-#: core/libs/album/albummanager.cpp:2345 core/libs/album/albummanager.cpp:2427
+#: core/libs/album/albummanager.cpp:2054 core/libs/album/albummanager.cpp:2151
+#: core/libs/album/albummanager.cpp:2255 core/libs/album/albummanager.cpp:2322
+#: core/libs/album/albummanager.cpp:2360 core/libs/album/albummanager.cpp:2442
 #, kde-format
 msgid "No such album"
 msgstr "त्यस्तो एल्बम छैन"
 
-#: core/libs/album/albummanager.cpp:2044
+#: core/libs/album/albummanager.cpp:2060
 #, kde-format
 msgid "Cannot rename root album"
 msgstr "रूट एल्बम पुन: नामकरण गर्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2050
+#: core/libs/album/albummanager.cpp:2066
 #, fuzzy, kde-format
 msgid "Cannot rename album root album"
 msgstr "रूट एल्बम पुन: नामकरण गर्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2056
+#: core/libs/album/albummanager.cpp:2072
 #, kde-format
 msgid "Album name cannot contain '/'"
 msgstr "एल्बम नाममा '/' हुनु हुँदैन"
 
-#: core/libs/album/albummanager.cpp:2063
+#: core/libs/album/albummanager.cpp:2079
 #, fuzzy, kde-format
 msgid ""
 "Another album with the same name already exists.\n"
@@ -3846,52 +3846,52 @@ msgstr ""
 "सोहि नामको अर्को एल्बम अवस्थित छ \n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: core/libs/album/albummanager.cpp:2087
+#: core/libs/album/albummanager.cpp:2103
 #, kde-format
 msgid "Failed to rename Album"
 msgstr "एल्बम पुन: नामकरण गर्न असफल"
 
-#: core/libs/album/albummanager.cpp:2142
+#: core/libs/album/albummanager.cpp:2157
 #, kde-format
 msgid "Cannot edit root album"
 msgstr "रूट एल्बम सम्पादन गर्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2168
+#: core/libs/album/albummanager.cpp:2183
 #, kde-format
 msgid "No parent found for tag"
 msgstr "ट्यागका लागि प्रमूल फेला परेन"
 
-#: core/libs/album/albummanager.cpp:2175
+#: core/libs/album/albummanager.cpp:2190
 #, kde-format
 msgid "Tag name cannot be empty"
 msgstr "ट्याग नाम खाली हुन सक्दैन"
 
-#: core/libs/album/albummanager.cpp:2181 core/libs/album/albummanager.cpp:2319
+#: core/libs/album/albummanager.cpp:2196 core/libs/album/albummanager.cpp:2334
 #, kde-format
 msgid "Tag name cannot contain '/'"
 msgstr "ट्याग नाममा '/' हुनु हुँदैन"
 
-#: core/libs/album/albummanager.cpp:2188 core/libs/tags/tageditdlg.cpp:471
+#: core/libs/album/albummanager.cpp:2203 core/libs/tags/tageditdlg.cpp:471
 #, fuzzy, kde-format
 msgid "Tag name already exists"
 msgstr "फाइल पहिल्यै अवस्थित छ"
 
-#: core/libs/album/albummanager.cpp:2197
+#: core/libs/album/albummanager.cpp:2212
 #, kde-format
 msgid "Failed to add tag to database"
 msgstr "डाटाबेसमा ट्याग थप्न असफल"
 
-#: core/libs/album/albummanager.cpp:2246
+#: core/libs/album/albummanager.cpp:2261
 #, kde-format
 msgid "Cannot delete Root Tag"
 msgstr "रूट ट्याग मेट्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2313 core/libs/album/albummanager.cpp:2522
+#: core/libs/album/albummanager.cpp:2328 core/libs/album/albummanager.cpp:2537
 #, kde-format
 msgid "Cannot edit root tag"
 msgstr "रूट ट्याग सम्पादन गर्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2326
+#: core/libs/album/albummanager.cpp:2341
 #, fuzzy, kde-format
 msgid ""
 "Another tag with the same name already exists.\n"
@@ -3900,17 +3900,17 @@ msgstr ""
 "सोहि नामको अर्को एल्बम अवस्थित छ \n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: core/libs/album/albummanager.cpp:2351
+#: core/libs/album/albummanager.cpp:2366
 #, kde-format
 msgid "Attempt to move TAlbum to nowhere"
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:2357
+#: core/libs/album/albummanager.cpp:2372
 #, kde-format
 msgid "Cannot move root tag"
 msgstr "रूट ट्याग सार्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2365
+#: core/libs/album/albummanager.cpp:2380
 #, fuzzy, kde-format
 msgid ""
 "Another tag with the same name already exists.\n"
@@ -3919,28 +3919,28 @@ msgstr ""
 "सोहि नामको अर्को एल्बम अवस्थित छ \n"
 "कृपया अर्को नाम छनोट गर्नुहोस्"
 
-#: core/libs/album/albummanager.cpp:2433
+#: core/libs/album/albummanager.cpp:2448
 #, fuzzy, kde-format
 #| msgid "Cannot move root tag"
 msgid "Cannot merge root tag"
 msgstr "रूट ट्याग सार्न सकिदैन"
 
-#: core/libs/album/albummanager.cpp:2439
+#: core/libs/album/albummanager.cpp:2454
 #, kde-format
 msgid "Only a tag without children can be merged!"
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:2447
+#: core/libs/album/albummanager.cpp:2462
 #, fuzzy, kde-format
 msgid "Do you want to merge tag '%1' into tag '%2'?"
 msgstr "मेटाडेटा"
 
-#: core/libs/album/albummanager.cpp:2516
+#: core/libs/album/albummanager.cpp:2531
 #, kde-format
 msgid "No such tag"
 msgstr "त्यस्तो ट्याग छैन"
 
-#: core/libs/album/albummanager.cpp:3458
+#: core/libs/album/albummanager.cpp:3491
 #, fuzzy, kde-format
 msgid ""
 "This operation can take a long time in the background.\n"
@@ -5809,7 +5809,7 @@ msgstr "सूचना..."
 #: core/libs/imageproperties/imagepropertiessidebar.cpp:253
 #: core/libs/imageproperties/imagepropertiessidebardb.cpp:528
 #: core/libs/imageproperties/imagepropertiessidebardb.cpp:542
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:674
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:511
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:354
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:389
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:421
@@ -7613,12 +7613,12 @@ msgstr "<p>यहाँ छविको स्याचुरेसन समा
 msgid "Info..."
 msgstr "सूचना..."
 
-#: core/libs/dimg/filters/icc/icctransformfilter.cpp:112
+#: core/libs/dimg/filters/icc/icctransformfilter.cpp:113
 #, fuzzy, kde-format
 msgid "Input color profile \"%1\" not available"
 msgstr "प्रोफाइल उपलब्ध छैन..."
 
-#: core/libs/dimg/filters/icc/icctransformfilter.cpp:116
+#: core/libs/dimg/filters/icc/icctransformfilter.cpp:117
 #, fuzzy, kde-format
 msgid "Output color profile \"%1\" not available"
 msgstr "प्रोफाइल उपलब्ध छैन..."
@@ -10613,78 +10613,78 @@ msgstr ""
 msgid "Image %1 could not be renamed"
 msgstr ""
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:656
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:493
 #, kde-format
 msgid "Unspecified"
 msgstr ""
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:658
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:495
 #, fuzzy, kde-format
 msgctxt "Rotation of an unrotated image"
 msgid "Normal"
 msgstr "सामान्य"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:662
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:499
 #, fuzzy, kde-format
 msgid "Rotated by 180 Degrees"
 msgstr "१८० डिग्रीमा घुमाउनुहोस्"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:666
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:503
 #, fuzzy, kde-format
 msgid "Flipped Horizontally and Rotated Left"
 msgstr "तेर्सो तरिकाले घुमाइएको"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:670
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:507
 #, fuzzy, kde-format
 msgid "Flipped Vertically and Rotated Left"
 msgstr "ठाडो तरिकाले घुमाइएको"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:710
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:547
 #, fuzzy, kde-format
 msgctxt "Temperature in Kelvin"
 msgid "%1 K"
 msgstr "%1 bpp"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:733
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:746
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:570
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:583
 #, fuzzy, kde-format
 msgctxt "For use in longitude coordinate"
 msgid "West"
 msgstr "रिसेट गर्नुहोस्"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:733
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:746
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:570
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:583
 #, fuzzy, kde-format
 msgctxt "For use in longitude coordinate"
 msgid "East"
 msgstr "अन्तिम"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:763
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:776
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:600
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:613
 #, fuzzy, kde-format
 msgctxt "For use in latitude coordinate"
 msgid "North"
 msgstr "दुबै"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:763
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:776
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:600
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:613
 #, fuzzy, kde-format
 msgctxt "For use in latitude coordinate"
 msgid "South"
 msgstr "दुबै"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:785
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:622
 #, fuzzy, no-c-format, kde-format
 msgctxt "Height in meters"
 msgid "%1m"
 msgstr "%1 bpp"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:927
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:765
 #, kde-format
 msgid "Flash has been fired"
 msgstr ""
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:928
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:766
 #, kde-format
 msgid "Flash with red-eye reduction mode"
 msgstr ""
@@ -18910,14 +18910,14 @@ msgstr "छवि सम्पादक"
 msgid "Cancel current operation"
 msgstr "क्यामेरा सूचना"
 
-#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:326
+#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:327
 #, fuzzy, kde-format
 #| msgid "unknown"
 msgctxt "average scene luminance value unknown"
 msgid "unknown"
 msgstr "अज्ञात"
 
-#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:867
+#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:868
 #, kde-format
 msgid ""
 "Cannot run %1:\n"
@@ -19907,17 +19907,17 @@ msgstr "जडान असफल भयो"
 msgid "Unknown input file in the project file: <filename>%1</filename>"
 msgstr "\"%1\" फाइल अपलोड गर्न असफल"
 
-#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:173
+#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:174
 #, kde-format
 msgid "Input image cannot be loaded for preview generation."
 msgstr ""
 
-#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:216
+#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:217
 #, fuzzy, kde-format
 msgid "Tiff image creation failed."
 msgstr "फाइल सिर्जना मिति देखाउनुहोस्"
 
-#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:233
+#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:234
 #, fuzzy, kde-format
 msgid "Raw file conversion failed."
 msgstr "कलरस्पेस"
@@ -36562,7 +36562,7 @@ msgstr "फोल्डर सूचीकरण समाप्त भयो...
 msgid "All batch queues finished"
 msgstr "फोल्डर सूचीकरण समाप्त भयो..."
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:552
+#: core/utilities/queuemanager/manager/batchtool.cpp:553
 #, fuzzy, kde-format
 msgid "No setting available"
 msgstr "विकल्प उपलब्ध छैन"
