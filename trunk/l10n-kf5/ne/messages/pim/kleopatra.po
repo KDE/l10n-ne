@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-19 03:20+0100\n"
+"POT-Creation-Date: 2019-02-28 03:18+0100\n"
 "PO-Revision-Date: 2007-09-09 17:32+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -794,7 +794,7 @@ msgstr ""
 "DirMngr प्रक्रिया ।"
 
 #: src/commands/exportpaperkeycommand.cpp:146
-#: src/commands/exportsecretkeycommand.cpp:156
+#: src/commands/exportsecretkeycommand.cpp:162
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "An error occurred when trying to clear the CRL cache. The output from "
@@ -808,21 +808,34 @@ msgstr ""
 "CRL क्यास खाली गर्ने प्रयास गर्दा एउटा त्रुटि उत्पन्न भयो । DirMngr को निर्गत:\n"
 "%1 थियो"
 
-#: src/commands/exportsecretkeycommand.cpp:137
+#: src/commands/exportsecretkeycommand.cpp:97
+#, fuzzy, kde-format
+#| msgid "Export Secret Key..."
+msgid "Export Secret Key"
+msgstr "गोप्य कुञ्जी निर्यात गर्नुहोस्..."
+
+#: src/commands/exportsecretkeycommand.cpp:101
+#: src/commands/exportsecretkeycommand.cpp:102
+#, fuzzy, kde-format
+#| msgid "Secret Key Export"
+msgid "Secret Key Files"
+msgstr "गोप्य कुञ्जी निर्यात"
+
+#: src/commands/exportsecretkeycommand.cpp:143
 #, fuzzy, kde-format
 #| msgid "Secret Key Export"
 msgctxt "@title:window"
 msgid "Secret Key Export Error"
 msgstr "गोप्य कुञ्जी निर्यात"
 
-#: src/commands/exportsecretkeycommand.cpp:142
+#: src/commands/exportsecretkeycommand.cpp:148
 #, fuzzy, kde-format
 #| msgid "Secret-Key Export Failed"
 msgctxt "@title:window"
 msgid "Secret Key Export Finished"
 msgstr "गोप्य कुञ्जी निर्यात गर्न असफल भयो"
 
-#: src/commands/exportsecretkeycommand.cpp:148
+#: src/commands/exportsecretkeycommand.cpp:154
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "The DirMngr process that tried to clear the CRL cache ended prematurely "
@@ -836,7 +849,7 @@ msgstr ""
 "अनपेक्षित त्रुटिका कारणले असामयिक रूपमा अन्त्य भएका CRL क्यास खाली गर्न प्रयास गर्ने "
 "DirMngr प्रक्रिया ।"
 
-#: src/commands/exportsecretkeycommand.cpp:163
+#: src/commands/exportsecretkeycommand.cpp:169
 #, fuzzy, kde-format
 #| msgid "Secret keys imported:"
 msgctxt "@info"
@@ -4236,7 +4249,7 @@ msgstr "प्रमाणपत्र मेट्नुहोस्"
 #. i18n: ectx: property (text), widget (QPushButton, certifyBtn)
 #: src/dialogs/certificatedetailswidget.ui:67
 #: src/dialogs/certifycertificatedialog.cpp:199
-#: src/newcertificatewizard/newcertificatewizard.cpp:1646
+#: src/newcertificatewizard/newcertificatewizard.cpp:1649
 #, fuzzy, kde-format
 #| msgid "Certificate Usage"
 msgid "Certify"
@@ -4730,70 +4743,6 @@ msgstr ""
 #| msgid "For &encrypting only"
 msgid "Export..."
 msgstr "गुप्तिकरणका लागि मात्र"
-
-#: src/dialogs/exportsecretkeydialog.cpp:104
-#, fuzzy, kde-format
-#| msgid "Secret Key Export"
-msgid "Secret Key Files"
-msgstr "गोप्य कुञ्जी निर्यात"
-
-#: src/dialogs/exportsecretkeydialog.cpp:128
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete this certificate?"
-#| msgid_plural "Do you really want to delete these %1 certificates?"
-msgctxt "@info"
-msgid "Please select export options for %1:"
-msgstr "तपाईँ यो प्रमाणपत्र वास्तवमै मेट्न चाहनुहुन्छ ?"
-
-#: src/dialogs/exportsecretkeydialog.cpp:142
-#, kde-format
-msgid "Secret Key Files (*.pem *.p12 *.gpg *.asc *.pgp)"
-msgstr ""
-
-#: src/dialogs/exportsecretkeydialog.cpp:221
-#, kde-format
-msgctxt "@info"
-msgid "You have to enter an output filename."
-msgstr ""
-
-#: src/dialogs/exportsecretkeydialog.cpp:222
-#: src/dialogs/exportsecretkeydialog.cpp:231
-#, fuzzy, kde-format
-#| msgid "Not imported:"
-msgctxt "@title"
-msgid "Incomplete data"
-msgstr "आयात नगरिएका:"
-
-#: src/dialogs/exportsecretkeydialog.cpp:230
-#, kde-format
-msgctxt "@info"
-msgid "You have to choose a passphrase character set."
-msgstr ""
-
-#. i18n: ectx: property (windowTitle), widget (QDialog, ExportSecretKeyDialog)
-#: src/dialogs/exportsecretkeydialog.ui:13
-#, fuzzy, kde-format
-#| msgid "Export Certificates..."
-msgid "Export Secret Certificate"
-msgstr "प्रमाणपत्र निर्यात गर्नुहोस्..."
-
-#. i18n: ectx: property (text), widget (QLabel, outputFileLB)
-#: src/dialogs/exportsecretkeydialog.ui:26
-#, kde-format
-msgid "Output file:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, charsetLB)
-#: src/dialogs/exportsecretkeydialog.ui:36
-#, kde-format
-msgid "Passphrase charset:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, armorCB)
-#: src/dialogs/exportsecretkeydialog.ui:66
-#, kde-format
-msgid "ASCII armor"
-msgstr ""
 
 #: src/dialogs/gencardkeydialog.cpp:77
 #: src/newcertificatewizard/newcertificatewizard.cpp:1708
@@ -6424,20 +6373,20 @@ msgctxt "@title"
 msgid "Key Pair Creation Wizard"
 msgstr "प्रमाणपत्र मेट्न असफल भयो"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1638
+#: src/newcertificatewizard/newcertificatewizard.cpp:1639
 #, fuzzy, kde-format
 #| msgid "For &signing only"
 msgid "Sign"
 msgstr "साइनिङका लागि मात्र"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1642
+#: src/newcertificatewizard/newcertificatewizard.cpp:1643
 #: src/newcertificatewizard/newcertificatewizard.cpp:1671
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
 msgid "Encrypt"
 msgstr "गुप्तिकरणका लागि मात्र"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1649
+#: src/newcertificatewizard/newcertificatewizard.cpp:1646
 #, kde-format
 msgid "Authenticate"
 msgstr ""
@@ -8598,6 +8547,24 @@ msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
 #, fuzzy
+#~| msgid "Do you really want to delete this certificate?"
+#~| msgid_plural "Do you really want to delete these %1 certificates?"
+#~ msgctxt "@info"
+#~ msgid "Please select export options for %1:"
+#~ msgstr "तपाईँ यो प्रमाणपत्र वास्तवमै मेट्न चाहनुहुन्छ ?"
+
+#, fuzzy
+#~| msgid "Not imported:"
+#~ msgctxt "@title"
+#~ msgid "Incomplete data"
+#~ msgstr "आयात नगरिएका:"
+
+#, fuzzy
+#~| msgid "Export Certificates..."
+#~ msgid "Export Secret Certificate"
+#~ msgstr "प्रमाणपत्र निर्यात गर्नुहोस्..."
+
+#, fuzzy
 #~| msgid "Delete Certificates"
 #~ msgid "Please select a certificate."
 #~ msgstr "प्रमाणपत्र मेट्नुहोस्"
@@ -9209,11 +9176,6 @@ msgstr ""
 #~| msgid "Could not generate certificate: %1"
 #~ msgid "Could not determine parent directory of \"%1\""
 #~ msgstr "प्रमाणपत्र उत्पन्न गर्न सकेन: %1"
-
-#, fuzzy
-#~| msgid "Export Secret Key..."
-#~ msgid "Export Secret Key"
-#~ msgstr "गोप्य कुञ्जी निर्यात गर्नुहोस्..."
 
 #~ msgid "Certificate Download Failed"
 #~ msgstr "प्रमाणपत्र डाउनलोड गर्न असफल भयो"
