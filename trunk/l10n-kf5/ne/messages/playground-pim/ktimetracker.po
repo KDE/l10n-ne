@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-31 03:12+0200\n"
+"POT-Creation-Date: 2019-06-01 03:13+0200\n"
 "PO-Revision-Date: 2007-09-07 12:56+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -417,7 +417,7 @@ msgstr "मुख्य उपकरणपट्टी"
 msgid "Tasks"
 msgstr "कार्य"
 
-#: src/main.cpp:87 src/model/event.cpp:129 src/model/eventsmodel.cpp:132
+#: src/main.cpp:87 src/model/event.cpp:125 src/model/eventsmodel.cpp:132
 #, kde-format
 msgid "KTimeTracker"
 msgstr "केडीई समय ट्र्याकर"
@@ -756,45 +756,33 @@ msgstr ""
 "गर्नुहोस् र ~/.kde/share/apps/kabc/lock/ बाट यसको नामसँग सम्बन्धित ताल्चा लगाउने कुनै "
 "पनि फाइल हटाउनुहोस् ।"
 
-#: src/taskview.cpp:213
+#: src/taskview.cpp:210
 #, kde-format
 msgid "Your virtual desktop number is too high, desktop tracking will not work"
 msgstr ""
 
-#: src/taskview.cpp:332
-#, fuzzy, kde-format
-#| msgid "Could not open \"%1\"."
-msgid "Could not save. Disk full?"
-msgstr "\"%1\" खोल्न सकेन ।"
-
-#: src/taskview.cpp:334
-#, fuzzy, kde-format
-#| msgid "Could not open \"%1\"."
-msgid "Could not save."
-msgstr "\"%1\" खोल्न सकेन ।"
-
-#: src/taskview.cpp:374
+#: src/taskview.cpp:366
 #, kde-format
 msgid "Stopping timers..."
 msgstr ""
 
-#: src/taskview.cpp:374
+#: src/taskview.cpp:366
 #, fuzzy, kde-format
 #| msgid "&Cancel"
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: src/taskview.cpp:466
+#: src/taskview.cpp:458
 #, kde-format
 msgid "New Task"
 msgstr "नयाँ कार्य"
 
-#: src/taskview.cpp:476 src/taskview.cpp:555
+#: src/taskview.cpp:468 src/taskview.cpp:547
 #, kde-format
 msgid "Unnamed Task"
 msgstr "नाम नदिइएको कार्य"
 
-#: src/taskview.cpp:495
+#: src/taskview.cpp:487
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error storing new task. Your changes were not saved. Make sure you can "
@@ -811,22 +799,22 @@ msgstr ""
 "गर्नुहोस् र ~/.kde/share/apps/kabc/lock/ बाट यसको नामसँग सम्बन्धित ताल्चा लगाउने कुनै "
 "पनि फाइल हटाउनुहोस् ।"
 
-#: src/taskview.cpp:533
+#: src/taskview.cpp:525
 #, kde-format
 msgid "New Sub Task"
 msgstr "नयाँ उप-कार्य"
 
-#: src/taskview.cpp:550
+#: src/taskview.cpp:542
 #, kde-format
 msgid "Edit Task"
 msgstr "कार्य सम्पादन गर्नुहोस्"
 
-#: src/taskview.cpp:586 src/taskview.cpp:628 src/taskview.cpp:649
+#: src/taskview.cpp:578 src/taskview.cpp:620 src/taskview.cpp:641
 #, kde-format
 msgid "No task selected."
 msgstr "कार्य चयन गरिएको छैन ।"
 
-#: src/taskview.cpp:633
+#: src/taskview.cpp:625
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to delete the task named\n"
@@ -840,7 +828,7 @@ msgstr ""
 "\"%1\" नाम गरिएको कार्य र यसको पूरै इतिहास मेट्न निश्चित हुनुहुन्छ ?\n"
 "द्रष्टव्य: यसका सबै सहायक कार्य र तीनका इतिहास पनि मेटिन्छन् ।"
 
-#: src/taskview.cpp:637
+#: src/taskview.cpp:629
 #, fuzzy, kde-format
 #| msgid "Deleting Task"
 msgid "Deleting Task"
@@ -850,6 +838,19 @@ msgstr "कार्य मेट्दै"
 #, kde-format
 msgid "Error loading \"%1\": could not find parent (uid=%2)"
 msgstr "\"%1\" लोड गर्दा त्रुटि: प्यारेन्ट (uid=%2) फेला पार्न सकेन"
+
+#: src/timetrackerstorage.cpp:255
+#, fuzzy, kde-format
+#| msgid "Could not open \"%1\"."
+msgctxt "%1=lock file path"
+msgid "Could not write lock file %1. Disk full?"
+msgstr "\"%1\" खोल्न सकेन ।"
+
+#: src/timetrackerstorage.cpp:262
+#, kde-format
+msgctxt "%1=destination file path/URL"
+msgid "Failed to save iCalendar file as %1."
+msgstr ""
 
 #: src/timetrackerwidget.cpp:122
 #, kde-format
@@ -1251,6 +1252,11 @@ msgstr ""
 msgctxt "combox entry for lowest priority"
 msgid "9 (lowest)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Could not open \"%1\"."
+#~ msgid "Could not save."
+#~ msgstr "\"%1\" खोल्न सकेन ।"
 
 #, fuzzy
 #~| msgid "&Export"
