@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-22 02:53+0200\n"
+"POT-Creation-Date: 2019-06-23 02:55+0200\n"
 "PO-Revision-Date: 2007-11-04 18:29+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -300,7 +300,7 @@ msgid ""
 "Root privileges are required to complete renaming. Do you want to continue?"
 msgstr ""
 
-#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:549
+#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:529
 #, fuzzy, kde-format
 #| msgid "Could Not Create Symbolic Link"
 msgid "Create Symlink"
@@ -3802,13 +3802,13 @@ msgstr ""
 "<p>तपाईँले ड्रप डाउन मेनुको प्रिसेट फिल्टरहरूबाट एक चयन गर्नसक्नुहुन्छ, वा पाठक्षेत्रमा अनुकूल "
 "फिल्टर प्रत्यक्ष प्रविष्ट गर्न सक्नुहुन्छ ।<p>वाइल्डकार्ड जस्तै * र ? हरू स्वीकृत छन्</qt>"
 
-#: filewidgets/knewfilemenu.cpp:389
+#: filewidgets/knewfilemenu.cpp:395
 #, fuzzy, kde-format
 #| msgid "Store"
 msgid "Sorry"
 msgstr "भण्डारण गर्नुहोस्"
 
-#: filewidgets/knewfilemenu.cpp:398
+#: filewidgets/knewfilemenu.cpp:404
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
@@ -3818,63 +3818,38 @@ msgstr ""
 "<qt>निर्दिष्ट गरिएको आदेश चलाउन असक्षम भयो । फाइल वा फोल्डर <b>%1</b> अवस्थित छैन ।"
 "</qt>"
 
-#: filewidgets/knewfilemenu.cpp:416
+#: filewidgets/knewfilemenu.cpp:526 filewidgets/knewfilemenu.cpp:607
 #, fuzzy, kde-format
-#| msgid "Creating directory"
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "फोल्डर सिर्जना गर्दै"
+#| msgid "Device name"
+msgid "File name:"
+msgstr "यन्त्र नाम"
 
-#: filewidgets/knewfilemenu.cpp:418 filewidgets/knewfilemenu.cpp:867
+#: filewidgets/knewfilemenu.cpp:611
+#, fuzzy, kde-format
+#| msgid "Destination URL"
+msgid "Create link to URL"
+msgstr "गन्तव्य यूआरएल"
+
+#: filewidgets/knewfilemenu.cpp:657 filewidgets/knewfilemenu.cpp:714
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:847
 #, fuzzy, kde-format
 #| msgid "Ru&n as a different user"
 msgctxt "@action:button"
 msgid "Enter a Different Name"
 msgstr "फरक प्रयोगकर्ताको रूपमा चलाउनुहोस्"
 
-#: filewidgets/knewfilemenu.cpp:422
-#, fuzzy, kde-format
-#| msgid "Creating directory"
-msgid "Create hidden directory?"
-msgstr "फोल्डर सिर्जना गर्दै"
-
-#: filewidgets/knewfilemenu.cpp:432
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr ""
-
-#: filewidgets/knewfilemenu.cpp:434 widgets/executablefileopendialog.cpp:36
-#, kde-format
-msgid "Do not ask again"
-msgstr ""
-
-#: filewidgets/knewfilemenu.cpp:546 filewidgets/knewfilemenu.cpp:627
-#, fuzzy, kde-format
-#| msgid "Device name"
-msgid "File name:"
-msgstr "यन्त्र नाम"
-
-#: filewidgets/knewfilemenu.cpp:631
-#, fuzzy, kde-format
-#| msgid "Destination URL"
-msgid "Create link to URL"
-msgstr "गन्तव्य यूआरएल"
-
-#: filewidgets/knewfilemenu.cpp:677 filewidgets/knewfilemenu.cpp:734
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr ""
-
-#: filewidgets/knewfilemenu.cpp:871
+#: filewidgets/knewfilemenu.cpp:851
 #, fuzzy, kde-format
 #| msgid "Invalid Filenames"
 msgid "Invalid Directory Name"
 msgstr "अवैद्य फाइलनाम"
 
-#: filewidgets/knewfilemenu.cpp:880
+#: filewidgets/knewfilemenu.cpp:860
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3882,37 +3857,81 @@ msgid ""
 "it is reserved for use by the operating system."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1140
+#: filewidgets/knewfilemenu.cpp:1060
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> cannot be used because it is reserved for "
+"use by the operating system."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1068
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> starts with a dot, so it will be hidden by "
+"default."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1085
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders, like so:"
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1095
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1107
+#, kde-format
+msgid "Slashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1113
+#, kde-format
+msgid "Backslashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1122
+#, kde-format
+msgid ""
+"Starting a file or folder name with a tilde is not recommended because it "
+"may be confusing or dangerous when using the terminal to delete things."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1195
 #, fuzzy, kde-format
 #| msgid "C&reate"
 msgid "Create New"
 msgstr "सिर्जना गर्नुहोस्"
 
-#: filewidgets/knewfilemenu.cpp:1155
+#: filewidgets/knewfilemenu.cpp:1210
 #, fuzzy, kde-format
 #| msgid "Device"
 msgid "Link to Device"
 msgstr "यन्त्र"
 
-#: filewidgets/knewfilemenu.cpp:1209
+#: filewidgets/knewfilemenu.cpp:1264
 #, fuzzy, kde-format
 #| msgid "New Folder"
 msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "नयाँ फोल्डर"
 
-#: filewidgets/knewfilemenu.cpp:1219
+#: filewidgets/knewfilemenu.cpp:1275
 #, fuzzy, kde-format
 #| msgid "New Folder"
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "नयाँ फोल्डर"
 
-#: filewidgets/knewfilemenu.cpp:1222
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
+#: filewidgets/knewfilemenu.cpp:1285
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgid "Create new folder in %1:"
 msgstr ""
 "यसमा नयाँ फोल्डर सिर्जना गर्नुहोस्:\n"
 "%1"
@@ -7492,6 +7511,11 @@ msgstr ""
 msgid "What do you wish to do with this executable file?"
 msgstr "के तपाईँ वालेट फाइलमा पासफ्रेज भण्डारण गर्न चाहनुहुन्छ?"
 
+#: widgets/executablefileopendialog.cpp:36
+#, kde-format
+msgid "Do not ask again"
+msgstr ""
+
 #: widgets/executablefileopendialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Exec"
@@ -9690,6 +9714,17 @@ msgid ""
 "The remote host did not send any SSL certificates.\n"
 "Aborting because the identity of the host cannot be established."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Creating directory"
+#~ msgctxt "@action:button"
+#~ msgid "Create directory"
+#~ msgstr "फोल्डर सिर्जना गर्दै"
+
+#, fuzzy
+#~| msgid "Creating directory"
+#~ msgid "Create hidden directory?"
+#~ msgstr "फोल्डर सिर्जना गर्दै"
 
 #, fuzzy
 #~| msgid "Show Preview"
