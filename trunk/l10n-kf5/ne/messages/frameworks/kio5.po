@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-03 02:50+0200\n"
+"POT-Creation-Date: 2019-09-04 02:56+0200\n"
 "PO-Revision-Date: 2007-11-04 18:29+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -2313,7 +2313,7 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "कागजात नगरिएको त्रुटि"
 
-#: core/kcoredirlister.cpp:395 widgets/krun.cpp:954 widgets/paste.cpp:275
+#: core/kcoredirlister.cpp:395 widgets/krun.cpp:1019 widgets/paste.cpp:275
 #: widgets/renamedialog.cpp:458
 #, kde-format
 msgid ""
@@ -9224,7 +9224,24 @@ msgstr "स्थानीय फाइल प्रणालीमा कार
 msgid "Advanced Options for %1"
 msgstr "%1 का लागि उन्नत विकल्प"
 
-#: widgets/krun.cpp:204
+#: widgets/krun.cpp:254
+#, kde-format
+msgctxt "Warning about executing unknown program"
+msgid "Warning"
+msgstr ""
+
+#: widgets/krun.cpp:271
+#, kde-format
+msgctxt "program name follows in a line edit below"
+msgid "This will start the program:"
+msgstr ""
+
+#: widgets/krun.cpp:281
+#, kde-format
+msgid "If you do not trust this program, click Cancel"
+msgstr ""
+
+#: widgets/krun.cpp:347
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -9233,7 +9250,19 @@ msgstr ""
 "<qt>प्रविष्ट गर्न अक्षम <b>%1</b>भयो ।\n"
 "तपाईँलाई यो स्थान तोक्नका लागि पहुँच अधिकार छैन ।</qt>"
 
-#: widgets/krun.cpp:234
+#: widgets/krun.cpp:374
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
+#| "does not exist.</qt>"
+msgid ""
+"<qt>Unable to make file <b>%1</b> executable.\n"
+"%2.</qt>"
+msgstr ""
+"<qt>निर्दिष्ट गरिएको आदेश चलाउन असक्षम भयो । फाइल वा फोल्डर <b>%1</b> अवस्थित छैन ।"
+"</qt>"
+
+#: widgets/krun.cpp:405
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -9242,59 +9271,44 @@ msgstr ""
 "<qt>फाइल <b>%1</b> कार्यान्वयन योग्य कार्यक्रम हो । सुरक्षाका लागि यो सुरु नहुन सक्छ ।</"
 "qt>"
 
-#: widgets/krun.cpp:240
+#: widgets/krun.cpp:411
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>तपाईँलाई <b>%1</b> चलाउन अनुमति नहुन सक्छ ।</qt>"
 
-#: widgets/krun.cpp:270
+#: widgets/krun.cpp:441
 #, kde-format
 msgid "You are not authorized to select an application to open this file."
 msgstr "तपाईँ यो फाइल खोल्न एउटा अनुप्रयोग चयन गर्न अधिकारिक हुनुहुन्न ।"
 
-#: widgets/krun.cpp:332
+#: widgets/krun.cpp:503
 #, kde-format
 msgid "You are not authorized to execute this file."
 msgstr "तपाईँ यो फाइल कार्यान्वयन गर्न आधिकारिक हुनुहुन्न ।"
 
-#: widgets/krun.cpp:356
+#: widgets/krun.cpp:527
 #, kde-format
 msgid "Launching %1"
 msgstr "%1 सुरु गर्दै"
 
-#: widgets/krun.cpp:460
+#: widgets/krun.cpp:631
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr ""
 
-#: widgets/krun.cpp:667
+#: widgets/krun.cpp:783
 #, kde-format
 msgid "You are not authorized to execute this service."
 msgstr "तपाईँ यो सेवा कार्यान्वयन गर्न आधिकारिक हुनुहुन्न ।"
 
-#: widgets/krun.cpp:672
+#: widgets/krun.cpp:813
 #, kde-format
-msgctxt "Warning about executing unknown .desktop file"
-msgid "Warning"
+msgid ""
+"Unable to make the service %1 executable, aborting execution.\n"
+"%2."
 msgstr ""
 
-#: widgets/krun.cpp:689
-#, kde-format
-msgctxt "program name follows in a line edit below"
-msgid "This will start the program:"
-msgstr ""
-
-#: widgets/krun.cpp:706
-#, kde-format
-msgid "If you do not trust this program, click Cancel"
-msgstr ""
-
-#: widgets/krun.cpp:749
-#, kde-format
-msgid "Unable to make the service %1 executable, aborting execution"
-msgstr ""
-
-#: widgets/krun.cpp:989
+#: widgets/krun.cpp:1054
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -9303,13 +9317,13 @@ msgstr ""
 "<qt>निर्दिष्ट गरिएको आदेश चलाउन असक्षम भयो । फाइल वा फोल्डर <b>%1</b> अवस्थित छैन ।"
 "</qt>"
 
-#: widgets/krun.cpp:1049
+#: widgets/krun.cpp:1114
 #, fuzzy, kde-format
 #| msgid "Could not change permissions for %1."
 msgid "Could not find any application or handler for %1"
 msgstr "%1 का लागि अनुमतिहरू परिवर्तन गर्न सकेन ।"
 
-#: widgets/krun.cpp:1671
+#: widgets/krun.cpp:1738
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "'%1' कार्यक्रम फेला पार्न सकेन"
