@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-25 02:28+0200\n"
+"POT-Creation-Date: 2019-10-12 02:34+0200\n"
 "PO-Revision-Date: 2007-08-23 20:10+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -687,19 +687,23 @@ msgstr ""
 msgid "Path to the documentation"
 msgstr ""
 
-#. i18n: ectx: label, entry (Language), group (Documentation)
+#. i18n: ectx: label, entry (ContextPath), group (Documentation)
 #: calligraplansettings.kcfg:364
 #, kde-format
-msgid "The documentation must have been translated to the language"
+msgid "Path to the context help documentation"
+msgstr ""
+
+#. i18n: ectx: label, entry (ContextLanguage), group (Documentation)
+#: calligraplansettings.kcfg:368
+#, kde-format
+msgid ""
+"The context help documentation must have been translated to the language"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_DocumentationPath)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Manager)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
-#: ConfigDocumentationPanel.ui:54 ConfigDocumentationPanel.ui:91
-#: ConfigProjectPanel.ui:41 ConfigProjectPanel.ui:68
-#: kptconfigtaskpanelbase.ui:33 kptconfigtaskpanelbase.ui:65
+#: ConfigDocumentationPanel.ui:40 kptconfigtaskpanelbase.ui:33
+#: kptconfigtaskpanelbase.ui:65
 #, kde-format
 msgid ""
 "The person responsible for this task.\n"
@@ -714,16 +718,48 @@ msgstr ""
 "बटनसँग तपाईँको ठेगाना पुस्तकमा प्रत्यक्ष पहुँच प्राप्त गर्न सक्नुहुन्छ ।"
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: ConfigDocumentationPanel.ui:57
+#: ConfigDocumentationPanel.ui:43
 #, fuzzy, kde-format
-#| msgid "KPlato"
-msgid "Path:"
-msgstr "केडीई प्लाटो"
+#| msgid "Documents"
+msgid "Documentation:"
+msgstr "कागजात"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ConfigDocumentationPanel.ui:73
+#. i18n: ectx: property (text), widget (QLabel, contextlabel)
+#: ConfigDocumentationPanel.ui:79
 #, kde-format
-msgid "Language:"
+msgid "Contex help:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ConfigDocumentationPanel.ui:95
+#, kde-format
+msgid "Context language"
+msgstr ""
+
+#: ConfigProjectPanel.cpp:50
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "The project manager of this project."
+msgstr ""
+
+#: ConfigProjectPanel.cpp:53
+#, fuzzy, kde-kuit-format
+#| msgid "Assign resources:"
+msgctxt "@info:tooltip"
+msgid "Check to enable shared resources"
+msgstr "संसाधन मानाङ्कन गर्नुहोस्:"
+
+#: ConfigProjectPanel.cpp:56
+#, fuzzy, kde-kuit-format
+#| msgid "The calendar defines when the resource is working."
+msgctxt "@info:tooltip"
+msgid "The file where shared resources are defined"
+msgstr "समसाधनले काम गरिरहेको बेला पात्रोले परिभाषा गर्दछ ।"
+
+#: ConfigProjectPanel.cpp:59
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "The directory where projects sharing the resources are placed"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
@@ -734,21 +770,21 @@ msgid "General"
 msgstr "साधारण"
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: ConfigProjectPanel.ui:44
+#: ConfigProjectPanel.ui:42
 #, fuzzy, kde-format
 #| msgid "Page:"
 msgid "&Manager:"
 msgstr "पृष्ठ:"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ConfigProjectPanel.ui:75
+#. i18n: ectx: property (text), widget (QLabel, usrlabel)
+#: ConfigProjectPanel.ui:71
 #, fuzzy, kde-format
 #| msgid "Assign resources:"
 msgid "Use shared resources:"
 msgstr "संसाधन मानाङ्कन गर्नुहोस्:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ConfigProjectPanel.ui:89
+#. i18n: ectx: property (text), widget (QLabel, srflabel)
+#: ConfigProjectPanel.ui:85
 #, fuzzy, kde-format
 #| msgid "Add resource"
 msgid "Shared resource file:"
@@ -756,14 +792,14 @@ msgstr "संसाधन थप्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QPushButton, resourceFileBrowseBtn)
 #. i18n: ectx: property (text), widget (QPushButton, projectsPlaceBrowseBtn)
-#: ConfigProjectPanel.ui:101 ConfigProjectPanel.ui:126
+#: ConfigProjectPanel.ui:97 ConfigProjectPanel.ui:122
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgid "Browse..."
 msgstr "रोज्नुहोस्..."
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: ConfigProjectPanel.ui:114
+#. i18n: ectx: property (text), widget (QLabel, spplabel)
+#: ConfigProjectPanel.ui:110
 #, fuzzy, kde-format
 #| msgid "Assign resources:"
 msgid "Shared projects:"
@@ -771,7 +807,7 @@ msgstr "संसाधन मानाङ्कन गर्नुहोस्:
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
 #. i18n: ectx: attribute (title), widget (QWidget, widget)
-#: ConfigProjectPanel.ui:152 kptconfigtaskpanelbase.ui:481
+#: ConfigProjectPanel.ui:149 kptconfigtaskpanelbase.ui:481
 #, fuzzy, kde-format
 #| msgid "Description"
 msgid "Description"
@@ -1417,9 +1453,9 @@ msgid "Insert after current node"
 msgstr "कागजात घुसाउनुहोस्"
 
 #: kptloadsharedprojectsdialog.cpp:40
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "ResourceAssignmentView"
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Load Resource Assignments"
 msgstr "संसाधन मानाङ्कन दृश्य"
 
@@ -1740,7 +1776,7 @@ msgstr "कार्य प्रगति"
 msgid "Generate reports"
 msgstr "WBS सङ्केत सिर्जना गर्नुहोस्"
 
-#: kptview.cpp:598 kptview.cpp:3303
+#: kptview.cpp:598 kptview.cpp:3304
 #, fuzzy, kde-format
 #| msgid "Task Status"
 msgid "Task Status Report"
@@ -1966,9 +2002,9 @@ msgctxt "@info:tooltip"
 msgid "Generate reports"
 msgstr "WBS सङ्केत सिर्जना गर्नुहोस्"
 
-#: kptview.cpp:732 kptview.cpp:3300 kptviewlistdialog.cpp:122
+#: kptview.cpp:732 kptview.cpp:3301 kptviewlistdialog.cpp:122
 #: kptviewlistdialog.cpp:562
-#, fuzzy, kde-format
+#, fuzzy, kde-format, kde-kuit-format
 #| msgid "Pert"
 msgid "Report"
 msgstr "पर्ट"
@@ -2097,14 +2133,14 @@ msgstr ""
 msgid "Documentation"
 msgstr "कागजात"
 
-#: kptview.cpp:2316
+#: kptview.cpp:2317
 #, kde-format
 msgid ""
 "A task that has been scheduled will be deleted. This will invalidate the "
 "schedule."
 msgstr ""
 
-#: kptview.cpp:2324 kptview.cpp:2328 kptview.cpp:2344 kptview.cpp:2368
+#: kptview.cpp:2325 kptview.cpp:2329 kptview.cpp:2345 kptview.cpp:2369
 #, fuzzy
 #| msgid "Delete Task"
 msgctxt "(qtundo-format)"
@@ -2113,54 +2149,54 @@ msgid_plural "Delete tasks"
 msgstr[0] "कार्य मेट्नुहोस्"
 msgstr[1] "कार्य मेट्नुहोस्"
 
-#: kptview.cpp:2363
+#: kptview.cpp:2364
 #, kde-format
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr ""
 
-#: kptview.cpp:2387
+#: kptview.cpp:2388
 #, fuzzy
 #| msgid "Indent Task"
 msgctxt "(qtundo-format)"
 msgid "Indent task"
 msgstr "इन्डेण्ट कार्य"
 
-#: kptview.cpp:2401
+#: kptview.cpp:2402
 #, fuzzy
 #| msgid "Unindent Task"
 msgctxt "(qtundo-format)"
 msgid "Unindent task"
 msgstr "इन्डेण्ट नगरिएको कार्य"
 
-#: kptview.cpp:2423
+#: kptview.cpp:2424
 #, fuzzy
 #| msgid "Move Task Up"
 msgctxt "(qtundo-format)"
 msgid "Move task up"
 msgstr "कार्य माथि सार्नुहोस्"
 
-#: kptview.cpp:2444
+#: kptview.cpp:2445
 #, fuzzy
 #| msgid "Move Task Down"
 msgctxt "(qtundo-format)"
 msgid "Move task down"
 msgstr "कार्य तल सार्नुहोस्"
 
-#: kptview.cpp:2480
+#: kptview.cpp:2481
 #, fuzzy
 #| msgid "Edit task dependencies"
 msgctxt "(qtundo-format)"
 msgid "Add task dependency"
 msgstr "कार्य निर्भरता सम्पादन गर्नुहोस्"
 
-#: kptview.cpp:2541
+#: kptview.cpp:2542
 #, fuzzy
 #| msgid "Delete Task Dependency"
 msgctxt "(qtundo-format)"
 msgid "Delete task dependency"
 msgstr "कार्य निर्भरता मेट्नुहोस्"
 
-#: kptview.cpp:2578 kptview.cpp:2639
+#: kptview.cpp:2579 kptview.cpp:2640
 #, fuzzy
 #| msgid "Delete Resource"
 msgctxt "(qtundo-format)"
@@ -2169,7 +2205,7 @@ msgid_plural "Delete resources"
 msgstr[0] "संसाधन मेट्नुहोस्"
 msgstr[1] "संसाधन मेट्नुहोस्"
 
-#: kptview.cpp:2583 kptview.cpp:2641
+#: kptview.cpp:2584 kptview.cpp:2642
 #, fuzzy
 #| msgid "Delete Resourcegroup"
 msgctxt "(qtundo-format)"
@@ -2178,88 +2214,88 @@ msgid_plural "Delete resourcegroups"
 msgstr[0] "संसाधन समूह मेट्नुहोस्"
 msgstr[1] "संसाधन समूह मेट्नुहोस्"
 
-#: kptview.cpp:2592 kptview.cpp:2600
+#: kptview.cpp:2593 kptview.cpp:2601
 #, kde-format
 msgid ""
 "A resource that has been scheduled will be deleted. This will invalidate the "
 "schedule."
 msgstr ""
 
-#: kptview.cpp:2637
+#: kptview.cpp:2638
 #, fuzzy
 #| msgid "Delete Resourcegroup"
 msgctxt "(qtundo-format)"
 msgid "Delete resourcegroups and resources"
 msgstr "संसाधन समूह मेट्नुहोस्"
 
-#: kptview.cpp:2808
+#: kptview.cpp:2809
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to download template file: %1"
 msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr "टेम्प्लेट फाइल डाउनलोड गर्न असफल: %1"
 
-#: kptview.cpp:2934
+#: kptview.cpp:2935
 #, fuzzy
 #| msgid "Modify Name"
 msgctxt "(qtundo-format)"
 msgid "Modify name"
 msgstr "नाम परिमार्जन गर्नुहोस्"
 
-#: kptview.cpp:2936
+#: kptview.cpp:2937
 #, fuzzy
 #| msgid "Modify Name"
 msgctxt "(qtundo-format)"
 msgid "Modify task name"
 msgstr "नाम परिमार्जन गर्नुहोस्"
 
-#: kptview.cpp:2937
+#: kptview.cpp:2938
 #, fuzzy
 #| msgid "Modify milestone completion"
 msgctxt "(qtundo-format)"
 msgid "Modify milestone name"
 msgstr "माइलस्टोन समाप्ति परिमार्जन गर्नुहोस्"
 
-#: kptview.cpp:2938
+#: kptview.cpp:2939
 #, fuzzy
 #| msgid "Modify Summary Task"
 msgctxt "(qtundo-format)"
 msgid "Modify summarytask name"
 msgstr "कार्य सारांश परिमार्जन गर्नुहोस्"
 
-#: kptview.cpp:2939
+#: kptview.cpp:2940
 #, fuzzy
 #| msgid "Modify main project"
 msgctxt "(qtundo-format)"
 msgid "Modify project name"
 msgstr "मुख्य परियोजना परिमार्जन गर्नुहोस्"
 
-#: kptview.cpp:3031
+#: kptview.cpp:3032
 #, fuzzy, kde-kuit-format
 #| msgid "Not scheduled"
 msgctxt "@info:status"
 msgid "Not scheduled"
 msgstr "तालिकावद्ध नगरिएको"
 
-#: kptview.cpp:3073
+#: kptview.cpp:3074
 #, fuzzy, kde-format
 #| msgid "Unable to download template file: %1"
 msgid "Failed to open temporary file"
 msgstr "टेम्प्लेट फाइल डाउनलोड गर्न असफल: %1"
 
-#: kptview.cpp:3079
+#: kptview.cpp:3080
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to download template file: %1"
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br/> <filename>%1</filename>"
 msgstr "टेम्प्लेट फाइल डाउनलोड गर्न असफल: %1"
 
-#: kptview.cpp:3087
+#: kptview.cpp:3088
 #, kde-format
 msgid "Work Package: %1"
 msgstr ""
 
-#: kptview.cpp:3088
+#: kptview.cpp:3089
 #, fuzzy, kde-format
 #| msgctxt "<week>-<year>"
 #| msgid "%1-%2"
@@ -2269,68 +2305,68 @@ msgid ""
 "%2"
 msgstr "%1-%2"
 
-#: kptview.cpp:3118
+#: kptview.cpp:3119
 #, fuzzy, kde-format
 #| msgid "Unable to download template file: %1"
 msgid "Failed to open work package file"
 msgstr "टेम्प्लेट फाइल डाउनलोड गर्न असफल: %1"
 
-#: kptview.cpp:3125
+#: kptview.cpp:3126
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to download template file: %1"
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br/><filename>%1</filename>"
 msgstr "टेम्प्लेट फाइल डाउनलोड गर्न असफल: %1"
 
-#: kptview.cpp:3134
+#: kptview.cpp:3135
 #, kde-format
 msgid "Work Package for project: %1"
 msgstr ""
 
-#: kptview.cpp:3199
+#: kptview.cpp:3200
 #, kde-format
 msgid "Do you want to reload task modules?"
 msgstr ""
 
-#: kptview.cpp:3199
+#: kptview.cpp:3200
 #, kde-kuit-format
 msgctxt "@title"
 msgid "Task module changed"
 msgstr ""
 
-#: kptview.cpp:3301
+#: kptview.cpp:3302
 #, fuzzy, kde-format
 #| msgid "Page:"
 msgctxt "Project manager"
 msgid "Manager:"
 msgstr "पृष्ठ:"
 
-#: kptview.cpp:3302
+#: kptview.cpp:3303
 #, fuzzy, kde-format
 #| msgid "Project"
 msgid "Project:"
 msgstr "परियोजना"
 
-#: kptview.cpp:3304
+#: kptview.cpp:3305
 #, kde-format
 msgctxt "As in: Page 1 of 2"
 msgid "of"
 msgstr ""
 
-#: kptview.cpp:3305
+#: kptview.cpp:3306
 #, fuzzy, kde-format
 #| msgid "Page:"
 msgid "Page"
 msgstr "पृष्ठ:"
 
-#: kptview.cpp:3306
+#: kptview.cpp:3307
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "Task name"
 msgid "Name"
 msgstr "नाम"
 
-#: kptview.cpp:3307
+#: kptview.cpp:3308
 #, fuzzy, kde-format
 #| msgid "% Completed"
 msgctxt "Task completion"
@@ -2483,7 +2519,7 @@ msgid "Description:"
 msgstr "वर्णन"
 
 #: kptviewlistdialog.cpp:42
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "View"
 msgctxt "@title:window"
 msgid "Add View"
@@ -2572,7 +2608,7 @@ msgid "Top"
 msgstr "लाई"
 
 #: kptviewlistdialog.cpp:304
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Configure..."
 msgctxt "@title:window"
 msgid "Configure View"
@@ -2589,14 +2625,14 @@ msgid ""
 msgstr ""
 
 #: kptviewlistdialog.cpp:429
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Configure KPlato"
 msgctxt "@title:window"
 msgid "Configure Category"
 msgstr "केडीई प्लाटो कन्फिगर गर्नुहोस्"
 
 #: kptviewlistdialog.cpp:520
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Pert"
 msgctxt "@title:window"
 msgid "Add Report"
@@ -2763,6 +2799,11 @@ msgstr ""
 #, kde-format
 msgid "Publish:"
 msgstr ""
+
+#, fuzzy
+#~| msgid "KPlato"
+#~ msgid "Path:"
+#~ msgstr "केडीई प्लाटो"
 
 #~ msgid "Project"
 #~ msgstr "परियोजना"
@@ -5742,11 +5783,6 @@ msgstr ""
 #~| msgid "The e-mail address of the resource."
 #~ msgid "The e-mail address of the resource"
 #~ msgstr "संसाधनको इमेल ठेगाना ।"
-
-#, fuzzy
-#~| msgid "The calendar defines when the resource is working."
-#~ msgid "The calendar defines when the resource is working"
-#~ msgstr "समसाधनले काम गरिरहेको बेला पात्रोले परिभाषा गर्दछ ।"
 
 #, fuzzy
 #~| msgid "The maximum load that can be assigned."
