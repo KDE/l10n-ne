@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-12 03:37+0100\n"
+"POT-Creation-Date: 2020-03-18 03:29+0100\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -558,13 +558,11 @@ msgid "Configure the view"
 msgstr "मिति र समय कन्फिगर गर्नुहोस्..."
 
 #: actionmanager.cpp:552 actionmanager.cpp:1301 actionmanager.cpp:1337
-#: koeventpopupmenu.cpp:55
 #, kde-format
 msgid "&Show"
 msgstr "देखाउनुहोस्"
 
 #: actionmanager.cpp:557 actionmanager.cpp:1304 actionmanager.cpp:1338
-#: koeventpopupmenu.cpp:58
 #, kde-format
 msgid "&Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
@@ -1686,34 +1684,40 @@ msgstr "शीर्षक:"
 msgid "Text:"
 msgstr "पाठ"
 
-#: dialog/searchdialog.cpp:54
+#: dialog/searchdialog.cpp:55
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Search Calendar"
 msgstr "नयाँ क्यालेन्डर"
 
-#: dialog/searchdialog.cpp:85
+#: dialog/searchdialog.cpp:86
 #, fuzzy, kde-format
 #| msgid "Search"
-msgctxt "search in calendar"
+msgctxt "@action:button search in calendar"
 msgid "&Search"
 msgstr "खोजी"
 
-#: dialog/searchdialog.cpp:87
-#, kde-format
-msgid "Start searching"
-msgstr ""
+#: dialog/searchdialog.cpp:88
+#, fuzzy, kde-format
+#| msgid "Start date: "
+msgctxt "@info:tooltip"
+msgid "Start the search"
+msgstr "सुरु मिति: "
 
-#: dialog/searchdialog.cpp:90
+#: dialog/searchdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid "Press this button to define a new filter."
 msgctxt "@info:whatsthis"
 msgid "Press this button to start the search."
 msgstr "नयाँ फिल्टर परिभाषित गर्न यो बटन थिच्नुहोस् ।"
 
-#: dialog/searchdialog.cpp:131
-#, kde-format
+#: dialog/searchdialog.cpp:151
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid search expression, cannot perform the search. Please enter a "
+#| "search expression using the wildcard characters '*' and '?' where needed."
+msgctxt "@info"
 msgid ""
 "Invalid search expression, cannot perform the search. Please enter a search "
 "expression using the wildcard characters '*' and '?' where needed."
@@ -1721,21 +1725,24 @@ msgstr ""
 "अवैध खोजी अभिव्यक्ति, खोजी सम्पादन गर्न सकिँदैन । कृपया खोजी अभिव्यक्ति आवश्यक हुने ठाउँमा "
 "वाइल्डकार्ड क्यारेक्टर '*' र '?' प्रयोग गरेर प्रविष्ट गर्नुहोस् ।"
 
-#: dialog/searchdialog.cpp:143
+#: dialog/searchdialog.cpp:163
 #, fuzzy, kde-format
 #| msgid "No events were found matching your search expression."
+msgctxt "@info"
 msgid "No items were found that match your search pattern."
 msgstr "तपाईँको खोजी अभिव्यक्तिसँग मिल्दो घटना फेला परेका छैनन् ।"
 
-#: dialog/searchdialog.cpp:144
+#: dialog/searchdialog.cpp:164
 #, fuzzy, kde-format
 #| msgid "Search Columns"
+msgctxt "@title:window"
 msgid "Search Results"
 msgstr "स्तम्भ खोजी गर्नुहोस्"
 
-#: dialog/searchdialog.cpp:147
+#: dialog/searchdialog.cpp:167
 #, fuzzy, kde-format
 #| msgid "Subitems:"
+msgctxt "@label"
 msgid "%1 item"
 msgid_plural "%1 items"
 msgstr[0] "सहायक वस्तु:"
@@ -1945,84 +1952,132 @@ msgstr "थप्नुहोस्"
 msgid "&Cancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: koeventpopupmenu.cpp:61
-#, kde-format
-msgid "&Print..."
-msgstr "मुद्रण गर्नुहोस्..."
-
-#: koeventpopupmenu.cpp:64
+#: koeventpopupmenu.cpp:69
 #, fuzzy, kde-format
-#| msgid "&Print..."
-msgid "Print Previe&w..."
-msgstr "मुद्रण गर्नुहोस्..."
-
-#: koeventpopupmenu.cpp:70
-#, fuzzy, kde-format
-#| msgid "&Cut"
-msgctxt "cut this event"
-msgid "C&ut"
-msgstr "काट्नुहोस्"
+#| msgid "&Show"
+msgctxt "@action:inmenu"
+msgid "&Show"
+msgstr "देखाउनुहोस्"
 
 #: koeventpopupmenu.cpp:73
 #, fuzzy, kde-format
-#| msgid "&Copy"
-msgctxt "copy this event"
-msgid "&Copy"
-msgstr "प्रतिलिपि गर्नुहोस्"
+#| msgid "&Edit..."
+msgctxt "@action:inmenu"
+msgid "&Edit..."
+msgstr "सम्पादन गर्नुहोस्..."
 
 #: koeventpopupmenu.cpp:77
 #, fuzzy, kde-format
-#| msgid "&Date:"
-msgid "&Paste"
-msgstr "मिति:"
-
-#: koeventpopupmenu.cpp:80
-#, fuzzy, kde-format
 #| msgid "&Delete"
-msgctxt "delete this incidence"
+msgctxt "@action:inmenu delete this incidence"
 msgid "&Delete"
 msgstr "मेट्नुहोस्"
 
-#: koeventpopupmenu.cpp:85
+#: koeventpopupmenu.cpp:83
+#, fuzzy, kde-format
+#| msgid "&Print..."
+msgctxt "@action:inmenu"
+msgid "&Print..."
+msgstr "मुद्रण गर्नुहोस्..."
+
+#: koeventpopupmenu.cpp:87
+#, fuzzy, kde-format
+#| msgid "&Print..."
+msgctxt "@action:inmenu"
+msgid "Print Previe&w..."
+msgstr "मुद्रण गर्नुहोस्..."
+
+#: koeventpopupmenu.cpp:109
+#, fuzzy, kde-format
+#| msgid "&Cut"
+msgctxt "@action:inmenu cut this incidence"
+msgid "C&ut"
+msgstr "काट्नुहोस्"
+
+#: koeventpopupmenu.cpp:112
+#, fuzzy, kde-format
+#| msgid "&Copy"
+msgctxt "@action:inmenu copy this incidence"
+msgid "&Copy"
+msgstr "प्रतिलिपि गर्नुहोस्"
+
+#: koeventpopupmenu.cpp:115
+#, fuzzy, kde-format
+#| msgid "&Date:"
+msgctxt "@action:inmenu"
+msgid "&Paste"
+msgstr "मिति:"
+
+#: koeventpopupmenu.cpp:124
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
-msgid "Create To-do"
+msgctxt "@action:inmenu"
+msgid "Create To-do from Event"
 msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
 
-#: koeventpopupmenu.cpp:91
+#: koeventpopupmenu.cpp:128
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
-msgid "Create Event"
+msgctxt "@action:inmenu"
+msgid "Create Note for Event"
 msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
 
-#: koeventpopupmenu.cpp:97
-#, fuzzy, kde-format
-#| msgid "Click to add a new to-do"
-msgid "Create Note"
-msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
-
-#: koeventpopupmenu.cpp:103
+#: koeventpopupmenu.cpp:137
 #, fuzzy, kde-format
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
+msgctxt "@action:inmenu"
 msgid "Togg&le To-do Completed"
 msgstr "शुद्धीकरण समाप्त"
 
-#: koeventpopupmenu.cpp:106
-#, kde-format
+#: koeventpopupmenu.cpp:141
+#, fuzzy, kde-format
+#| msgid "Click to add a new to-do"
+msgctxt "@action:inmenu"
+msgid "Create Event from To-do"
+msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
+
+#: koeventpopupmenu.cpp:145
+#, fuzzy, kde-format
+#| msgid "Click to add a new to-do"
+msgctxt "@action:inmenu"
+msgid "Create Note for To-do"
+msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
+
+#: koeventpopupmenu.cpp:154
+#, fuzzy, kde-format
+#| msgid "&Toggle Reminder"
+msgctxt "@action:inmenu"
 msgid "&Toggle Reminder"
 msgstr "स्मरणकर्ता टगल गर्नुहोस्"
 
-#: koeventpopupmenu.cpp:110
+#: koeventpopupmenu.cpp:163
 #, fuzzy, kde-format
 #| msgid "Dissociate occurrence"
+msgctxt "@action:inmenu"
 msgid "&Dissociate From Recurrence..."
 msgstr "घटना छोड्नुहोस्"
 
-#: koeventpopupmenu.cpp:116
-#, kde-format
-msgid "Send as iCalendar..."
+#: koeventpopupmenu.cpp:172
+#, fuzzy, kde-format
+#| msgid "Send as iCalendar..."
+msgctxt "@action:inmenu"
+msgid "Email as iCalendar..."
 msgstr "आई क्यालेन्डरका रूपमा पठाउनुहोस्..."
+
+#: koeventpopupmenu.cpp:224
+#, fuzzy, kde-format
+#| msgid "&Toggle Reminder"
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder Off"
+msgstr "स्मरणकर्ता टगल गर्नुहोस्"
+
+#: koeventpopupmenu.cpp:225
+#, fuzzy, kde-format
+#| msgid "&Toggle Reminder"
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder On"
+msgstr "स्मरणकर्ता टगल गर्नुहोस्"
 
 #: kohelper.cpp:75
 #, kde-format
@@ -5947,6 +6002,23 @@ msgid "%1"
 msgstr "%1%"
 
 #, fuzzy
+#~| msgid "&Copy"
+#~ msgctxt "copy this event"
+#~ msgid "&Copy"
+#~ msgstr "प्रतिलिपि गर्नुहोस्"
+
+#, fuzzy
+#~| msgid "&Delete"
+#~ msgctxt "delete this incidence"
+#~ msgid "&Delete"
+#~ msgstr "मेट्नुहोस्"
+
+#, fuzzy
+#~| msgid "Click to add a new to-do"
+#~ msgid "Create Note"
+#~ msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
+
+#, fuzzy
 #~| msgid "Forwarding"
 #~ msgid "searching..."
 #~ msgstr "फरवार्डिङ"
@@ -7759,9 +7831,6 @@ msgstr "%1%"
 #~ msgstr ""
 #~ "तपाईँले मुद्रणमा निश्चित कोटि फरक पार्न रङ प्रयोग गर्न चाहनुहुन्छ भने, यो विकल्प जाँच "
 #~ "गर्नुहोस् ।"
-
-#~ msgid "Start date: "
-#~ msgstr "सुरु मिति: "
 
 #~ msgid "End date: "
 #~ msgstr "अन्त्य मिति: "
