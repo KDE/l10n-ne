@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-13 07:47+0200\n"
+"POT-Creation-Date: 2020-07-16 07:42+0200\n"
 "PO-Revision-Date: 2007-09-07 11:50+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1194,7 +1194,7 @@ msgctxt "@info:whatsthis"
 msgid "Enter the name or URL of a text or image file to display."
 msgstr "प्रदर्शनका लागि नाम वा पाठको यूआरएल वा छवि फाइल प्रविष्ट गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:207 editdlgtypes.cpp:806 sounddlg.cpp:195
+#: editdlgtypes.cpp:207 editdlgtypes.cpp:811 sounddlg.cpp:195
 #, fuzzy, kde-format
 #| msgid "Choose a file"
 msgctxt "@info:tooltip"
@@ -1329,42 +1329,56 @@ msgctxt "@info:whatsthis"
 msgid "Execute the specified command now"
 msgstr "अब निर्दिष्ट गरिएको आदेश कार्यान्वयन गर्नुहोस्"
 
-#: editdlgtypes.cpp:774
+#: editdlgtypes.cpp:772 specialactions.cpp:197
+#, kde-format
+msgctxt "@option:check"
+msgid "Do not notify errors"
+msgstr ""
+
+#: editdlgtypes.cpp:773
+#, fuzzy, kde-format
+#| msgid ""
+#| "The default setting for the recurrence rule in the alarm edit dialog."
+msgctxt "@info:whatsthis"
+msgid "Do not show error error message if the command fails."
+msgstr "संसूचक सम्पादन संवादमा पुनरावृत्ति नियमका लागि पूर्वनिर्धारित सटिङ ।"
+
+#: editdlgtypes.cpp:779
 #, fuzzy, kde-format
 #| msgid "Command Output"
 msgctxt "@title:group"
 msgid "Command Output"
 msgstr "आदेश निर्गत"
 
-#: editdlgtypes.cpp:783
+#: editdlgtypes.cpp:788
 #, fuzzy, kde-format
 #| msgid "Check to execute the command in a terminal window"
 msgctxt "@info:whatsthis"
 msgid "Check to execute the command in a terminal window"
 msgstr "टर्मिनल सञ्झ्यालमा आदेश कार्यान्वयन गर्न जाँच गर्नुहोस्"
 
-#: editdlgtypes.cpp:796
+#: editdlgtypes.cpp:801
 #, fuzzy, kde-format
 #| msgid "Enter the name or path of the log file."
 msgctxt "@info:whatsthis"
 msgid "Enter the name or path of the log file."
 msgstr "लग फाइलको नाम वा बाटो प्रविष्ट गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:807
+#: editdlgtypes.cpp:812
 #, fuzzy, kde-format
 #| msgid "Select a log file."
 msgctxt "@info:whatsthis"
 msgid "Select a log file."
 msgstr "लग फाइल चयन गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:810
+#: editdlgtypes.cpp:815
 #, fuzzy, kde-format
 #| msgid "Lo&g to file"
 msgctxt "@option:radio"
 msgid "Log to file"
 msgstr "फाइलमा लग गर्नुहोस्"
 
-#: editdlgtypes.cpp:812
+#: editdlgtypes.cpp:817
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check to log the command output to a local file. The output will be "
@@ -1377,21 +1391,21 @@ msgstr ""
 "स्थानीय फाइलमा आदेश निर्गत लग गर्न जाँच गर्नुहोस् । फाइलको कुनै पनि अवस्थित सामाग्रीमा "
 "निर्गत थपिएको हुन्छ ।"
 
-#: editdlgtypes.cpp:819
+#: editdlgtypes.cpp:824
 #, fuzzy, kde-format
 #| msgid "Discard"
 msgctxt "@option:radio"
 msgid "Discard"
 msgstr "अस्वीकार गर्नुहोस्"
 
-#: editdlgtypes.cpp:821
+#: editdlgtypes.cpp:826
 #, fuzzy, kde-format
 #| msgid "Check to discard command output."
 msgctxt "@info:whatsthis"
 msgid "Check to discard command output."
 msgstr "आदेश निर्गत अस्वीकार गर्न चेक गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:977
+#: editdlgtypes.cpp:988
 #, fuzzy, kde-format
 #| msgid ""
 #| "Log file must be the name or path of a local file, with write permission."
@@ -1400,7 +1414,7 @@ msgid ""
 "Log file must be the name or path of a local file, with write permission."
 msgstr "लग फाइलमा लेख्ने अनुमतिका साथमा, स्थानीय फाइलको नाम वा मार्ग हुनुपर्छ ।"
 
-#: editdlgtypes.cpp:987
+#: editdlgtypes.cpp:998
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "No 'From' email address is configured.\n"
@@ -1413,7 +1427,7 @@ msgstr ""
 "कुनै 'बाट' इमेल ठेगाना कन्फिगर गरिएको छैन ।\n"
 "कृपया केडीई संसूचक प्राथमिकता संवादमा सेट गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:1007
+#: editdlgtypes.cpp:1018
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Command executed:\n"
@@ -1424,49 +1438,49 @@ msgstr ""
 "आदेश कार्यान्वयन गरियो:\n"
 "%1"
 
-#: editdlgtypes.cpp:1041
+#: editdlgtypes.cpp:1052
 #, fuzzy, kde-format
 #| msgid "Copy email to self"
 msgctxt "@option:check"
 msgid "Copy email to self"
 msgstr "इमेल आफ्नो स्थानमा प्रतिलिपि गर्नुहोस्"
 
-#: editdlgtypes.cpp:1071
+#: editdlgtypes.cpp:1082
 #, fuzzy, kde-format
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Email Alarm Template"
 msgstr "नयाँ संसूचक टेम्प्लेट"
 
-#: editdlgtypes.cpp:1071
+#: editdlgtypes.cpp:1082
 #, fuzzy, kde-format
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Email Alarm Template"
 msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
 
-#: editdlgtypes.cpp:1072
+#: editdlgtypes.cpp:1083
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Email Alarm"
 msgstr "इमेल संसूचक"
 
-#: editdlgtypes.cpp:1072
+#: editdlgtypes.cpp:1083
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "Edit Email Alarm"
 msgstr "इमेल संसूचक"
 
-#: editdlgtypes.cpp:1080
+#: editdlgtypes.cpp:1091
 #, fuzzy, kde-format
 #| msgid "Send the email to the specified addressees now"
 msgctxt "@info:whatsthis"
 msgid "Send the email to the specified addressees now"
 msgstr "अब निर्दिष्ट गरिएको ठेगानामा इमेल पठाउनुहोस्"
 
-#: editdlgtypes.cpp:1091
+#: editdlgtypes.cpp:1102
 #, fuzzy, kde-format
 #| msgctxt "'From' email address"
 #| msgid "From:"
@@ -1474,7 +1488,7 @@ msgctxt "@label:listbox 'From' email address"
 msgid "From:"
 msgstr "बाट:"
 
-#: editdlgtypes.cpp:1098
+#: editdlgtypes.cpp:1109
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your email identity, used to identify you as the sender when sending "
@@ -1487,7 +1501,7 @@ msgstr ""
 "तपाईँको ‍इमेल परिचय, इमेल संसूचक पठाउदा तपाईँलाई प्रेषकको रूपमा पहिचान गर्न प्रयोग गरिन्छ "
 "।"
 
-#: editdlgtypes.cpp:1104
+#: editdlgtypes.cpp:1115
 #, fuzzy, kde-format
 #| msgctxt "Email addressee"
 #| msgid "To:"
@@ -1495,7 +1509,7 @@ msgctxt "@label:textbox Email addressee"
 msgid "To:"
 msgstr "लाई:"
 
-#: editdlgtypes.cpp:1110
+#: editdlgtypes.cpp:1121
 #, fuzzy, kde-format
 #| msgid ""
 #| "Enter the addresses of the email recipients. Separate multiple addresses "
@@ -1508,21 +1522,21 @@ msgstr ""
 "इमेल प्रापकको ठेगाना प्रविष्ट गर्नुहोस् । बहुविध ठेगाना अल्पविराम वा अर्धविरामद्वारा "
 "विभाजन गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:1120
+#: editdlgtypes.cpp:1131
 #, fuzzy, kde-format
 #| msgid "Open address book"
 msgctxt "@info:tooltip"
 msgid "Open address book"
 msgstr "ठेगाना पुस्तक खोल्नुहोस्"
 
-#: editdlgtypes.cpp:1121
+#: editdlgtypes.cpp:1132
 #, fuzzy, kde-format
 #| msgid "Select email addresses from your address book."
 msgctxt "@info:whatsthis"
 msgid "Select email addresses from your address book."
 msgstr "तपाईँको ठेगाना पुस्तकबाट इमेल ठेगाना चयन गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:1125
+#: editdlgtypes.cpp:1136
 #, fuzzy, kde-format
 #| msgctxt "Email subject"
 #| msgid "Subject:"
@@ -1530,70 +1544,70 @@ msgctxt "@label:textbox Email subject"
 msgid "Subject:"
 msgstr "विषयवस्तु:"
 
-#: editdlgtypes.cpp:1132
+#: editdlgtypes.cpp:1143
 #, fuzzy, kde-format
 #| msgid "Enter the email subject."
 msgctxt "@info:whatsthis"
 msgid "Enter the email subject."
 msgstr "इमेल विषुवस्तु प्रविष्ट गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:1138
+#: editdlgtypes.cpp:1149
 #, fuzzy, kde-format
 #| msgid "Enter the email message."
 msgctxt "@info:whatsthis"
 msgid "Enter the email message."
 msgstr "इमेल सन्देश प्रविष्ट गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:1146
+#: editdlgtypes.cpp:1157
 #, fuzzy, kde-format
 #| msgid "Attachment&s:"
 msgctxt "@label:listbox"
 msgid "Attachments:"
 msgstr "सङ्लग्नता:"
 
-#: editdlgtypes.cpp:1156
+#: editdlgtypes.cpp:1167
 #, fuzzy, kde-format
 #| msgid "Files to send as attachments to the email."
 msgctxt "@info:whatsthis"
 msgid "Files to send as attachments to the email."
 msgstr "सङ्लग्नताका रूपमा इमेलमा पठाइने फाइल ।"
 
-#: editdlgtypes.cpp:1160 resourceselector.cpp:90
+#: editdlgtypes.cpp:1171 resourceselector.cpp:90
 #, fuzzy, kde-format
 #| msgid "Add..."
 msgctxt "@action:button"
 msgid "Add..."
 msgstr "थप्नुहोस्..."
 
-#: editdlgtypes.cpp:1162
+#: editdlgtypes.cpp:1173
 #, fuzzy, kde-format
 #| msgid "Add an attachment to the email."
 msgctxt "@info:whatsthis"
 msgid "Add an attachment to the email."
 msgstr "इमेलमा सङ्लग्नता थप्नुहोस् ।"
 
-#: editdlgtypes.cpp:1165 resourceselector.cpp:92
+#: editdlgtypes.cpp:1176 resourceselector.cpp:92
 #, fuzzy, kde-format
 #| msgid "Remove"
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
-#: editdlgtypes.cpp:1167
+#: editdlgtypes.cpp:1178
 #, fuzzy, kde-format
 #| msgid "Remove the highlighted attachment from the email."
 msgctxt "@info:whatsthis"
 msgid "Remove the highlighted attachment from the email."
 msgstr "इमेलबाट हाइलाइट गरिएका सङ्लग्नता हटाउनुहोस् ।"
 
-#: editdlgtypes.cpp:1173
+#: editdlgtypes.cpp:1184
 #, fuzzy, kde-format
 #| msgid "If checked, the email will be blind copied to you."
 msgctxt "@info:whatsthis"
 msgid "If checked, the email will be blind copied to you."
 msgstr "जाँच गरिएमा, तपाईँको इमेलमा खाली कपि हुन्छन् ।"
 
-#: editdlgtypes.cpp:1351
+#: editdlgtypes.cpp:1362
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid email address:\n"
@@ -1604,14 +1618,14 @@ msgstr ""
 "अवैध इमेल ठेगाना:\n"
 "%1"
 
-#: editdlgtypes.cpp:1358
+#: editdlgtypes.cpp:1369
 #, fuzzy, kde-format
 #| msgid "No email address specified"
 msgctxt "@info"
 msgid "No email address specified"
 msgstr "इमेल ठेगाना निर्दिष्ट गरिएको छैन"
 
-#: editdlgtypes.cpp:1375
+#: editdlgtypes.cpp:1386
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Invalid email attachment:\n"
@@ -1622,7 +1636,7 @@ msgstr ""
 "अवैध इमेल सङ्लग्नता:\n"
 "%1"
 
-#: editdlgtypes.cpp:1379
+#: editdlgtypes.cpp:1390
 #, fuzzy, kde-format
 #| msgid ""
 #| "Do you really want to send the email now to the specified recipient(s)?"
@@ -1630,21 +1644,21 @@ msgctxt "@info"
 msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr "तपाईँ वास्तवमै निर्दिष्ट गरिएका प्रापक(हरू) लाई अहिले इमेल पठाउन चाहनुहुन्छ ?"
 
-#: editdlgtypes.cpp:1380
+#: editdlgtypes.cpp:1391
 #, fuzzy, kde-format
 #| msgid "Confirm Email"
 msgctxt "@action:button"
 msgid "Confirm Email"
 msgstr "इमेल यकीन गर्नुहोस्"
 
-#: editdlgtypes.cpp:1380
+#: editdlgtypes.cpp:1391
 #, fuzzy, kde-format
 #| msgid "&Send"
 msgctxt "@action:button"
 msgid "Send"
 msgstr "पठाउनुहोस्"
 
-#: editdlgtypes.cpp:1406
+#: editdlgtypes.cpp:1417
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Email sent to:\n"
@@ -1655,7 +1669,7 @@ msgstr ""
 "यसलाई इमेल पठाउनुहोस्:\n"
 "%1%2"
 
-#: editdlgtypes.cpp:1409
+#: editdlgtypes.cpp:1420
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Email sent to:\n"
@@ -1666,42 +1680,42 @@ msgstr ""
 "यसलाई इमेल पठाउनुहोस्:\n"
 "%1%2"
 
-#: editdlgtypes.cpp:1442
+#: editdlgtypes.cpp:1453
 #, fuzzy, kde-format
 #| msgid "Choose File to Attach"
 msgctxt "@title:window"
 msgid "Choose File to Attach"
 msgstr "सङ्लग्न गरिने फाइल रोज्नुहोस्"
 
-#: editdlgtypes.cpp:1519
+#: editdlgtypes.cpp:1530
 #, fuzzy, kde-format
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Audio Alarm Template"
 msgstr "नयाँ संसूचक टेम्प्लेट"
 
-#: editdlgtypes.cpp:1519
+#: editdlgtypes.cpp:1530
 #, fuzzy, kde-format
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Audio Alarm Template"
 msgstr "संसूचक टेम्प्लेट सम्पादन गर्नुहोस्"
 
-#: editdlgtypes.cpp:1520
+#: editdlgtypes.cpp:1531
 #, fuzzy, kde-format
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Audio Alarm"
 msgstr "इमेल संसूचक"
 
-#: editdlgtypes.cpp:1520
+#: editdlgtypes.cpp:1531
 #, fuzzy, kde-format
 #| msgid "Edit Alarm"
 msgctxt "@title:window"
 msgid "Edit Audio Alarm"
 msgstr "संसूचक सम्पादन गर्नुहोस्"
 
-#: editdlgtypes.cpp:1738
+#: editdlgtypes.cpp:1749
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check to enter the contents of a script instead of a shell command line"
@@ -1709,21 +1723,21 @@ msgctxt "@info:whatsthis"
 msgid "Check to enter the contents of a script instead of a shell command line"
 msgstr "शेल आदेश लाइनको साटोमा स्क्रिप्टका सामाग्री प्रविष्ट गर्न जाँच गर्नुहोस्"
 
-#: editdlgtypes.cpp:1744
+#: editdlgtypes.cpp:1755
 #, fuzzy, kde-format
 #| msgid "Enter a shell command to execute."
 msgctxt "@info:whatsthis"
 msgid "Enter a shell command to execute."
 msgstr "कार्यान्वयनका लागि शेल आदेश प्रविष्ट गर्नुहोस् ।"
 
-#: editdlgtypes.cpp:1749
+#: editdlgtypes.cpp:1760
 #, fuzzy, kde-format
 #| msgid "Enter the contents of a script to execute"
 msgctxt "@info:whatsthis"
 msgid "Enter the contents of a script to execute"
 msgstr "कार्यान्वयनका लागि स्क्रिप्टका सामाग्री प्रविष्ट गर्नुहोस्"
 
-#: editdlgtypes.cpp:1805
+#: editdlgtypes.cpp:1816
 #, fuzzy, kde-format
 #| msgid "Enter the contents of a script to execute"
 msgctxt "@info"
@@ -8423,12 +8437,6 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
 "alarm or execute any post-alarm action command."
-msgstr ""
-
-#: specialactions.cpp:197
-#, kde-format
-msgctxt "@option:check"
-msgid "Do not notify errors"
 msgstr ""
 
 #: specialactions.cpp:198
