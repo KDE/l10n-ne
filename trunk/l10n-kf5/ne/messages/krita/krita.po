@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-24 02:10+0200\n"
+"POT-Creation-Date: 2020-07-25 02:09+0200\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -13287,6 +13287,9 @@ msgstr "तह गुण"
 #: plugins/dockers/animation/onion_skins_docker.cpp:58
 #: plugins/dockers/animation/timeline_frames_view.cpp:255
 #: plugins/dockers/layerdocker/LayerBox.cpp:199
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:59
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:63
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:66
 #: plugins/generators/pattern/wdgpatternoptions.ui:116
 #: plugins/generators/pattern/wdgpatternoptions.ui:145
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:41
@@ -16447,8 +16450,10 @@ msgid "Bac&kground Color:"
 msgstr "पृष्ठभूमि रङ"
 
 #. i18n: ectx: property (text), widget (QLabel, lblBackgroundStyle)
+#. i18n: ectx: property (text), widget (QLabel, labelBackground)
 #. i18n: ectx: property (text), widget (QLabel, mLabelBackground)
 #: libs/ui/forms/wdgnewimage.ui:487
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:174
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:390
 #, fuzzy, kde-format
 msgid "Background:"
@@ -17189,9 +17194,11 @@ msgstr "थप्नुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
 #. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), widget (QLabel, labelMode)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libs/ui/forms/wdgselectionoptions.ui:92
 #: plugins/extensions/metadataeditor/editors/exif.ui:555
+#: plugins/filters/halftone/KisHalftoneConfigWidget.ui:46
 #: plugins/python/highpass/highpass.py:65
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:2035
 #, kde-format
@@ -17220,10 +17227,8 @@ msgstr "ज्यामिति विकल्प"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntiAliasing)
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntialiasing)
-#. i18n: ectx: property (text), widget (QCheckBox, ckbAntialiasing)
 #: libs/ui/forms/wdgselectionoptions.ui:181
 #: plugins/extensions/modify_selection/wdg_border_selection.ui:123
-#: plugins/filters/halftone/wdg_halftone_filter.ui:83
 #, kde-format
 msgid "Anti-aliasing"
 msgstr "एन्टि-एलाइजिङन्ट..."
@@ -17341,6 +17346,7 @@ msgstr ""
 #: libs/ui/widgets/KoFillConfigWidget.ui:37
 #: libs/ui/widgets/KoFillConfigWidget.ui:258
 #: plugins/extensions/metadataeditor/editors/exif.ui:666
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:47
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:66
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:118
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:427
@@ -18733,11 +18739,9 @@ msgid "Flow:"
 msgstr "देखाउनुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, brushSizeLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #. i18n: ectx: property (text), widget (QLabel, lblSize)
 #: libs/ui/kis_paintop_box.cc:246 libs/ui/kis_paintop_box.cc:252
-#: plugins/filters/halftone/wdg_halftone_filter.ui:42
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:210
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:198
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1991
@@ -19017,6 +19021,8 @@ msgstr ""
 #: libs/ui/kis_stopgradient_editor.cpp:54
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:1048
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:1054
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:62
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:65
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:40
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:43
 #: plugins/tools/defaulttool/defaulttool/DefaultToolGeometryWidget.cpp:123
@@ -25674,6 +25680,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1356
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:44
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:203
 #, fuzzy, kde-format
 msgid "Intensity"
 msgstr "वर्णन:"
@@ -28414,8 +28422,10 @@ msgid "Flash ener&gy:"
 msgstr "उर्जा फ्ल्यास गर्नुहोस्:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#. i18n: ectx: attribute (title), widget (QWidget, tabPostprocessing)
 #. i18n: ectx: attribute (title), widget (QWidget, tabPostProcessing)
 #: plugins/extensions/metadataeditor/editors/exif.ui:638
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:83
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:327
 #, kde-format
 msgid "Postprocessing"
@@ -29966,8 +29976,6 @@ msgid "Slope, Offset, Power(ASC-CDL)"
 msgstr "समायोजन तह..."
 
 #. i18n: ectx: property (text), widget (KisGradientSlider, cutoffSlider)
-#. i18n: ectx: property (text), widget (KisColorButton, bnforeground)
-#. i18n: ectx: property (text), widget (KisColorButton, bnbackground)
 #. i18n: ectx: property (text), widget (KisColorButton, btnSlope)
 #. i18n: ectx: property (text), widget (KisColorButton, btnPower)
 #. i18n: ectx: property (text), widget (KisColorButton, btnOffset)
@@ -29976,8 +29984,6 @@ msgstr "समायोजन तह..."
 #: plugins/filters/asccdl/wdg_asccdl.ui:24
 #: plugins/filters/asccdl/wdg_asccdl.ui:45
 #: plugins/filters/gradientmap/wdg_gradientmap.ui:26
-#: plugins/filters/halftone/wdg_halftone_filter.ui:26
-#: plugins/filters/halftone/wdg_halftone_filter.ui:33
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:198
 #, fuzzy, kde-format
 #| msgid "Pressure"
@@ -30177,12 +30183,10 @@ msgstr "परिक्रमण"
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #. i18n: ectx: property (text), widget (QLabel, rotationLbl)
 #. i18n: ectx: property (text), widget (QLabel, lblAngle)
-#. i18n: ectx: property (text), widget (QLabel, lbl_angle)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
 #: plugins/filters/blur/wdg_motion_blur.ui:83
 #: plugins/filters/blur/wdgblur.ui:123
-#: plugins/filters/halftone/wdg_halftone_filter.ui:73
 #: plugins/paintops/hatching/wdghatchingoptions.ui:49
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:161
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:177
@@ -30749,9 +30753,7 @@ msgstr "गहिराइ"
 msgid "Emboss with Variable Depth"
 msgstr "चल गहिराइसँग अलंकृत गर्नुहोस्..."
 
-#. i18n: ectx: property (text), widget (QCheckBox, ckbInvert)
 #: plugins/filters/example/example.h:45
-#: plugins/filters/halftone/wdg_halftone_filter.ui:93
 #, kde-format
 msgid "Invert"
 msgstr "उल्टाउनुहोस्"
@@ -30827,22 +30829,55 @@ msgstr " X काट्नुहोस्:"
 msgid "Dither"
 msgstr "अन्य"
 
-#: plugins/filters/halftone/kis_halftone_filter.cpp:56
+#. i18n: ectx: property (windowTitle), widget (QWidget, HalftoneConfigPageWidget)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:20
+#, fuzzy, kde-format
+msgid "Form"
+msgstr "फारमस"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabScreenGenerator)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:48
+#, fuzzy, kde-format
+msgid "Screen Generator"
+msgstr "साधारण"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHardness)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:112
+#, fuzzy, kde-format
+#| msgid "Sharpness:"
+msgid "Hardness:"
+msgstr "तीखो:"
+
+#. i18n: ectx: property (text), widget (QLabel, labelInvert)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:129
+#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:424
+#, fuzzy, kde-format
+#| msgid "Invert"
+msgid "Invert:"
+msgstr "उल्टाउनुहोस्"
+
+#. i18n: ectx: property (text), widget (QLabel, labelForeground)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:143
+#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:356
+#, fuzzy, kde-format
+msgid "Foreground:"
+msgstr "अग्रभूमि रङ"
+
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:45
+#, kde-format
+msgid "Independent Channels"
+msgstr ""
+
+#: plugins/filters/halftone/KisHalftoneFilter.cpp:55
 #, fuzzy, kde-format
 msgid "&Halftone..."
 msgstr "फुट रेखा"
 
-#: plugins/filters/halftone/kis_halftone_filter.h:72
+#: plugins/filters/halftone/KisHalftoneFilter.h:49
 #, fuzzy, kde-format
 #| msgid "Stone"
 msgid "Halftone"
 msgstr "ढुङ्गा"
-
-#. i18n: ectx: property (text), widget (QLabel, lblcolors)
-#: plugins/filters/halftone/wdg_halftone_filter.ui:17
-#, fuzzy, kde-format
-msgid "Colors:"
-msgstr "रङ"
 
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:43
 #, fuzzy, kde-format
@@ -31952,19 +31987,6 @@ msgstr "पुनरावर्तक"
 #, fuzzy, kde-format
 msgid "Transformation"
 msgstr "दृश्य रूपान्तरण"
-
-#. i18n: ectx: property (text), widget (QLabel, labelForeground)
-#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:356
-#, fuzzy, kde-format
-msgid "Foreground:"
-msgstr "अग्रभूमि रङ"
-
-#. i18n: ectx: property (text), widget (QLabel, labelInvert)
-#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:424
-#, fuzzy, kde-format
-#| msgid "Invert"
-msgid "Invert:"
-msgstr "उल्टाउनुहोस्"
 
 #. i18n: ectx: property (text), widget (QLabel, lblRatio)
 #. i18n: ectx: property (text), widget (QLabel, labelBrightness)
@@ -42610,6 +42632,10 @@ msgid "Work Recursively"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Colors:"
+#~ msgstr "रङ"
+
+#, fuzzy
 #~| msgid "Value"
 #~ msgctxt "HSV Value"
 #~ msgid "HSV Value"
@@ -45227,10 +45253,6 @@ msgstr ""
 #~ msgctxt "@action"
 #~ msgid "Brush Smoothing: Stabilizer"
 #~ msgstr "चम्किलोपन"
-
-#, fuzzy
-#~ msgid "Form"
-#~ msgstr "फारमस"
 
 #, fuzzy
 #~ msgid "Show Colorspace Selector"
@@ -69508,11 +69530,6 @@ msgstr ""
 #~| msgid "Opaque"
 #~ msgid "opaque"
 #~ msgstr "अपारदर्शी"
-
-#, fuzzy
-#~| msgid "Sharpness:"
-#~ msgid "hardness"
-#~ msgstr "तीखो:"
 
 #, fuzzy
 #~| msgid "Vertical:"
