@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmfonts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-04 02:14+0200\n"
+"POT-Creation-Date: 2020-07-31 02:21+0200\n"
 "PO-Revision-Date: 2007-11-04 19:44+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -164,6 +164,12 @@ msgctxt "full hinting"
 msgid "Full"
 msgstr "पूरा"
 
+#: package/contents/ui/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr ""
+
 #: package/contents/ui/FontWidget.qml:65
 #, kde-format
 msgid "Select %1 Font..."
@@ -246,56 +252,127 @@ msgstr "मेनु"
 msgid "Window title:"
 msgstr "सञ्झ्याल शीर्षक"
 
-#: package/contents/ui/main.qml:155
+#: package/contents/ui/main.qml:152
 #, fuzzy, kde-format
 #| msgid "Use a&nti-aliasing:"
 msgid "Anti-Aliasing:"
 msgstr "एन्टि-एलाइजिङ प्रयोग गर्नुहोस्:"
 
-#: package/contents/ui/main.qml:156
+#: package/contents/ui/main.qml:157
 #, fuzzy, kde-format
 #| msgctxt "Use anti-aliasing"
 #| msgid "Enabled"
 msgid "Enable"
 msgstr "सक्षम गरियो"
 
-#: package/contents/ui/main.qml:164
+#: package/contents/ui/main.qml:161
+#, kde-kuit-format
+msgctxt "@info:tooltip Anti-Aliasing"
+msgid ""
+"Pixels on displays are generally aligned in a grid. Therefore shapes of "
+"fonts that do not align with this grid will look blocky and wrong unless "
+"<emphasis>anti-aliasing</emphasis> techniques are used to reduce this "
+"effect. You generally want to keep this option enabled unless it causes "
+"problems."
+msgstr ""
+
+#: package/contents/ui/main.qml:169
 #, kde-format
 msgid "Exclude range from anti-aliasing"
 msgstr ""
 
-#: package/contents/ui/main.qml:177 package/contents/ui/main.qml:195
+#: package/contents/ui/main.qml:182 package/contents/ui/main.qml:200
 #, kde-format
 msgid "%1 pt"
 msgstr ""
 
-#: package/contents/ui/main.qml:187
+#: package/contents/ui/main.qml:192
 #, fuzzy, kde-format
 #| msgid " to "
 msgid "to"
 msgstr " to "
 
-#: package/contents/ui/main.qml:211
+#: package/contents/ui/main.qml:214
 #, fuzzy, kde-format
 #| msgid "&Use sub-pixel rendering:"
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Sub-pixel rendering:"
 msgstr "सब-पिक्सेल रेन्डरिङ प्रयोग गर्नुहोस्:"
 
-#: package/contents/ui/main.qml:248
+#: package/contents/ui/main.qml:251
+#, kde-kuit-format
+msgctxt "@info:tooltip Sub-pixel rendering"
+msgid ""
+"<para>On TFT or LCD screens every single pixel is actually composed of three "
+"or four smaller monochrome lights. These <emphasis>sub-pixels</emphasis> can "
+"be changed independently to further improve the quality of displayed fonts.</"
+"para> <para>The rendering quality is only improved if the selection matches "
+"the manner in which the sub-pixels of your display are aligned. Most "
+"displays have a linear ordering of <emphasis>RGB</emphasis> sub-pixels, some "
+"have <emphasis>BGR</emphasis> and some exotic orderings are not supported by "
+"this feature.</para>This does not work with CRT monitors."
+msgstr ""
+
+#: package/contents/ui/main.qml:256
 #, fuzzy, kde-format
 #| msgid "Hinting style: "
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Hinting:"
 msgstr "हिन्टिङ शैली: "
 
-#: package/contents/ui/main.qml:286
+#: package/contents/ui/main.qml:293
+#, kde-kuit-format
+msgctxt "@info:tooltip Hinting"
+msgid ""
+"Hinting is a technique in which hints embedded in a font are used to enhance "
+"the rendering quality especially at small sizes. Stronger hinting generally "
+"leads to sharper edges but the small letters will less closely resemble "
+"their shape at big sizes."
+msgstr ""
+
+#: package/contents/ui/main.qml:301
 #, fuzzy, kde-format
 #| msgid "Force fonts DPI:"
 msgid "Force font DPI:"
 msgstr "डीपीआई फन्ट जोर गर्नुहोस्:"
 
-#: package/contents/ui/main.qml:306
+#: package/contents/ui/main.qml:318
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "<p>This option forces a specific DPI value for fonts. It may be useful "
+#| "when the real DPI of the hardware is not detected properly and it is also "
+#| "often misused when poor quality fonts are used that do not look well with "
+#| "DPI values other than 96 or 120 DPI.</p><p>The use of this option is "
+#| "generally discouraged. For selecting proper DPI value a better option is "
+#| "explicitly configuring it for the whole X server if possible (e.g. "
+#| "DisplaySize in xorg.conf or adding <i>-dpi value</i> to ServerLocalArgs= "
+#| "in $KDEDIR/share/config/kdm/kdmrc). When fonts do not render properly "
+#| "with real DPI value better fonts should be used or configuration of font "
+#| "hinting should be checked.</p>"
+msgctxt "@info:tooltip Force fonts DPI"
+msgid ""
+"<para>This option forces a specific DPI value for fonts. It may be useful "
+"when the real DPI of the hardware is not detected properly and it is also "
+"often misused when poor quality fonts are used that do not look well with "
+"DPI values other than 96 or 120 DPI.</para><para>The use of this option is "
+"generally discouraged.</para><para>If you are using the <emphasis>X Window "
+"System</emphasis>, for selecting the proper DPI value a better option is "
+"explicitly configuring it for the whole X server if possible (e.g. "
+"DisplaySize in xorg.conf). When fonts do not render properly with the real "
+"DPI value better fonts should be used or configuration of font hinting "
+"should be checked.</para>"
+msgstr ""
+"<p>यो विकल्पले फन्टका लागि विशेष डीपीआई मान जोर गर्दछ । हार्डवेयरको वास्तविक डीपीआई "
+"सही तरीकाले पत्ता नलागेको बेला यो उपयोगी हुन सक्छ र यो नराम्रो गुणस्तरको फन्ट प्रयोग "
+"गर्दा कहिलेकाहीँ गलत प्रयोग हुन सक्छ जुन ९६ र १२० डीपीआई भन्दा अन्य डीपीआई मानसँग "
+"राम्रो देखिँदैन ।</p><p>यो विकल्पको प्रयोग सामन्यतया उपेक्षा गरिन्छ । सही डीपीआई मान "
+"चयन गर्नका लागि यदि सम्भव भए पूरै एक्स सर्भरका लागि उत्तम विकल्प सपष्ट रूपमा यसलाई "
+"कन्फिगर गरिरहेको छ ।(e.g. DisplaySize in xorg.conf or adding <i>-dpi value</i> "
+"to ServerLocalArgs= in $KDEDIR/share/config/kdm/kdmrc) । जब फन्ट वास्तविक "
+"डीपीआई मानसँग सही रूपमा रेन्डर गरिरहेको छैन भने उत्तम फन्ट प्रयोग गरिनेछ वा सङ्केत "
+"गरिरहेको फन्टको कन्फिगरेसन जाँच गरिनेछ ।</p>"
+
+#: package/contents/ui/main.qml:324
 #, kde-format
 msgid "Select Font"
 msgstr ""
@@ -395,39 +472,6 @@ msgstr ""
 #~| "If this option is selected, KDE will smooth the edges of curves in fonts."
 #~ msgid "Select this option to smooth the edges of curves in fonts."
 #~ msgstr "यदि यो विकल्प चयन गरिएमा, केडीईले फन्टमा बक्ररेखाका किनाराहरू मिहिन गर्नेछ ।"
-
-#, fuzzy
-#~| msgid ""
-#~| "<p>This option forces a specific DPI value for fonts. It may be useful "
-#~| "when the real DPI of the hardware is not detected properly and it is "
-#~| "also often misused when poor quality fonts are used that do not look "
-#~| "well with DPI values other than 96 or 120 DPI.</p><p>The use of this "
-#~| "option is generally discouraged. For selecting proper DPI value a better "
-#~| "option is explicitly configuring it for the whole X server if possible "
-#~| "(e.g. DisplaySize in xorg.conf or adding <i>-dpi value</i> to "
-#~| "ServerLocalArgs= in $KDEDIR/share/config/kdm/kdmrc). When fonts do not "
-#~| "render properly with real DPI value better fonts should be used or "
-#~| "configuration of font hinting should be checked.</p>"
-#~ msgid ""
-#~ "<p>This option forces a specific DPI value for fonts. It may be useful "
-#~ "when the real DPI of the hardware is not detected properly and it is also "
-#~ "often misused when poor quality fonts are used that do not look well with "
-#~ "DPI values other than 96 or 120 DPI.</p><p>The use of this option is "
-#~ "generally discouraged. For selecting proper DPI value a better option is "
-#~ "explicitly configuring it for the whole X server if possible (e.g. "
-#~ "DisplaySize in xorg.conf). When fonts do not render properly with real "
-#~ "DPI value better fonts should be used or configuration of font hinting "
-#~ "should be checked.</p>"
-#~ msgstr ""
-#~ "<p>यो विकल्पले फन्टका लागि विशेष डीपीआई मान जोर गर्दछ । हार्डवेयरको वास्तविक "
-#~ "डीपीआई सही तरीकाले पत्ता नलागेको बेला यो उपयोगी हुन सक्छ र यो नराम्रो गुणस्तरको "
-#~ "फन्ट प्रयोग गर्दा कहिलेकाहीँ गलत प्रयोग हुन सक्छ जुन ९६ र १२० डीपीआई भन्दा अन्य "
-#~ "डीपीआई मानसँग राम्रो देखिँदैन ।</p><p>यो विकल्पको प्रयोग सामन्यतया उपेक्षा गरिन्छ । "
-#~ "सही डीपीआई मान चयन गर्नका लागि यदि सम्भव भए पूरै एक्स सर्भरका लागि उत्तम विकल्प "
-#~ "सपष्ट रूपमा यसलाई कन्फिगर गरिरहेको छ ।(e.g. DisplaySize in xorg.conf or "
-#~ "adding <i>-dpi value</i> to ServerLocalArgs= in $KDEDIR/share/config/kdm/"
-#~ "kdmrc) । जब फन्ट वास्तविक डीपीआई मानसँग सही रूपमा रेन्डर गरिरहेको छैन भने उत्तम फन्ट "
-#~ "प्रयोग गरिनेछ वा सङ्केत गरिरहेको फन्टको कन्फिगरेसन जाँच गरिनेछ ।</p>"
 
 #, fuzzy
 #~| msgid "Taskbar"
