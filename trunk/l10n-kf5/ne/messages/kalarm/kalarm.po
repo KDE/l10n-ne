@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-28 02:29+0200\n"
+"POT-Creation-Date: 2020-08-31 02:22+0200\n"
 "PO-Revision-Date: 2007-09-07 11:50+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -4317,21 +4317,175 @@ msgctxt "@action"
 msgid "Disa&ble"
 msgstr "अक्षम पार्नुहोस्"
 
-#: messagewin.cpp:329
+#: messagedisplayhelper.cpp:188
 #, fuzzy, kde-format
 #| msgid "Reminder"
 msgctxt "@title:window"
 msgid "Reminder"
 msgstr "सचेतक"
 
-#: messagewin.cpp:329 messagewin.cpp:767
+#: messagedisplayhelper.cpp:189 messagedisplayhelper.cpp:394
 #, fuzzy, kde-format
 #| msgid "Message"
 msgctxt "@title:window"
 msgid "Message"
 msgstr "सन्देश"
 
-#: messagewin.cpp:349
+#: messagedisplayhelper.cpp:202
+#, fuzzy, kde-format
+#| msgid "Reminder"
+msgctxt "@info"
+msgid "Reminder"
+msgstr "सचेतक"
+
+#: messagedisplayhelper.cpp:279
+#, fuzzy, kde-format
+#| msgid "File is a folder"
+msgctxt "@info"
+msgid "File is a folder"
+msgstr "फाइल एउटा फोल्डर हो"
+
+#: messagedisplayhelper.cpp:279
+#, fuzzy, kde-format
+#| msgid "Failed to open file"
+msgctxt "@info"
+msgid "Failed to open file"
+msgstr "फाइल खोल्न असफल"
+
+#: messagedisplayhelper.cpp:279
+#, fuzzy, kde-format
+#| msgid "File not found"
+msgctxt "@info"
+msgid "File not found"
+msgstr "फाइल फेला परेन"
+
+#: messagedisplayhelper.cpp:322
+#, fuzzy, kde-format
+#| msgctxt "Email addressee"
+#| msgid "To:"
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "लाई:"
+
+#: messagedisplayhelper.cpp:324
+#, fuzzy, kde-format
+#| msgctxt "Email subject"
+#| msgid "Subject:"
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "विषयवस्तु:"
+
+#: messagedisplayhelper.cpp:338
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "@title:window"
+msgid "Error"
+msgstr "त्रुटि"
+
+#: messagedisplayhelper.cpp:466
+#, fuzzy, kde-format
+#| msgid "Today"
+msgctxt "@info"
+msgid "Today"
+msgstr "आज"
+
+#: messagedisplayhelper.cpp:468
+#, fuzzy, kde-format
+#| msgid "Tomorrow"
+#| msgid_plural "in %1 days' time"
+msgctxt "@info"
+msgid "Tomorrow"
+msgid_plural "in %1 days' time"
+msgstr[0] "भोली"
+msgstr[1] "%1 दिनको अवधिमा"
+
+#: messagedisplayhelper.cpp:470
+#, fuzzy, kde-format
+#| msgid "in 1 week's time"
+#| msgid_plural "in %1 weeks' time"
+msgctxt "@info"
+msgid "in 1 week's time"
+msgid_plural "in %1 weeks' time"
+msgstr[0] "१ हप्ताको अवधिमा"
+msgstr[1] "%1 हप्ताको अवधिमा"
+
+#: messagedisplayhelper.cpp:484
+#, fuzzy, kde-format
+#| msgid "in 1 minute's time"
+#| msgid_plural "in %1 minutes' time"
+msgctxt "@info"
+msgid "in 1 minute's time"
+msgid_plural "in %1 minutes' time"
+msgstr[0] "१ मिनेटको अवधिमा"
+msgstr[1] "%1 मिनेटको अवधिमा"
+
+#: messagedisplayhelper.cpp:486
+#, fuzzy, kde-format
+#| msgid "in 1 hour's time"
+#| msgid_plural "in %1 hours' time"
+msgctxt "@info"
+msgid "in 1 hour's time"
+msgid_plural "in %1 hours' time"
+msgstr[0] "१ घण्टाको अवधिमा"
+msgstr[1] "%1 घण्टाको अवधिमा"
+
+#: messagedisplayhelper.cpp:489
+#, fuzzy, kde-format
+#| msgid "1 Hour"
+#| msgid_plural "%1 Hours"
+msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "१ घण्टा"
+msgstr[1] "%1 घण्टा"
+
+#: messagedisplayhelper.cpp:490
+#, fuzzy, kde-format
+#| msgid "in 1 minute's time"
+#| msgid_plural "in %1 minutes' time"
+msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
+msgid "in %2 1 minute's time"
+msgid_plural "in %2 %1 minutes' time"
+msgstr[0] "१ मिनेटको अवधिमा"
+msgstr[1] "%1 मिनेटको अवधिमा"
+
+#: messagedisplayhelper.cpp:793
+#, fuzzy, kde-format
+#| msgid "Unable to speak message"
+msgctxt "@info"
+msgid "Unable to speak message"
+msgstr "सन्देश वाचन गर्न असमर्थ"
+
+#: messagedisplayhelper.cpp:793
+#, kde-format
+msgctxt "@info"
+msgid "Text-to-speech subsystem is not available"
+msgstr ""
+
+#: messagedisplayhelper.cpp:956
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Cannot open audio file:\n"
+#| "%1"
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr ""
+"अडियो फाइल खुलाउन सकिँदैन:\n"
+"%1"
+
+#: messagedisplayhelper.cpp:1054
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "Error attaching file:\n"
+#| "%1"
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr ""
+"फाइल सङ्लग्न गर्दा त्रुटि:\n"
+"%1"
+
+#: messagewindow.cpp:253
 #, fuzzy, kde-format
 #| msgid ""
 #| "The scheduled date/time for the message (as opposed to the actual time of "
@@ -4342,126 +4496,89 @@ msgid ""
 "display)."
 msgstr "सन्देशका लागि तालिकावद्ध मिति/समय (प्रदर्शनको वास्तविक समयको विपरित रूपमा) ।"
 
-#: messagewin.cpp:359
-#, fuzzy, kde-format
-#| msgid "Reminder"
-msgctxt "@info"
-msgid "Reminder"
-msgstr "सचेतक"
-
-#: messagewin.cpp:383
+#: messagewindow.cpp:270
 #, fuzzy, kde-format
 #| msgid "The file whose contents are displayed below"
 msgctxt "@info:whatsthis"
 msgid "The file whose contents are displayed below"
 msgstr "तल सामाग्री प्रदर्शित हुने फाइल"
 
-#: messagewin.cpp:454
+#: messagewindow.cpp:304
 #, fuzzy, kde-format
 #| msgid "The contents of the file to be displayed"
 msgctxt "@info:whatsthis"
 msgid "The contents of the file to be displayed"
 msgstr "प्रदर्शित हुने फाइलका सामग्री"
 
-#: messagewin.cpp:460
-#, fuzzy, kde-format
-#| msgid "File is a folder"
-msgctxt "@info"
-msgid "File is a folder"
-msgstr "फाइल एउटा फोल्डर हो"
-
-#: messagewin.cpp:460
-#, fuzzy, kde-format
-#| msgid "Failed to open file"
-msgctxt "@info"
-msgid "Failed to open file"
-msgstr "फाइल खोल्न असफल"
-
-#: messagewin.cpp:460
-#, fuzzy, kde-format
-#| msgid "File not found"
-msgctxt "@info"
-msgid "File not found"
-msgstr "फाइल फेला परेन"
-
-#: messagewin.cpp:480
+#: messagewindow.cpp:324
 #, fuzzy, kde-format
 #| msgid "The alarm message"
 msgctxt "@info:whatsthis"
 msgid "The alarm message"
 msgstr "संसूचक सन्देश"
 
-#: messagewin.cpp:507
+#: messagewindow.cpp:351
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The output of the alarm's command"
 msgstr ""
 
-#: messagewin.cpp:549
+#: messagewindow.cpp:384
 #, fuzzy, kde-format
 #| msgid "The email to send"
 msgctxt "@info:whatsthis"
 msgid "The email to send"
 msgstr "पठाइने इमेल"
 
-#: messagewin.cpp:553
-#, fuzzy, kde-format
-#| msgctxt "Email addressee"
-#| msgid "To:"
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "लाई:"
-
-#: messagewin.cpp:560
-#, fuzzy, kde-format
-#| msgctxt "Email subject"
-#| msgid "Subject:"
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "विषयवस्तु:"
-
-#: messagewin.cpp:586
-#, fuzzy, kde-format
-#| msgid "Error"
-msgctxt "@title:window"
-msgid "Error"
-msgstr "त्रुटि"
-
-#: messagewin.cpp:606
+#: messagewindow.cpp:440
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not display this error message again for this alarm"
 msgstr ""
 
-#: messagewin.cpp:625
+#: messagewindow.cpp:459
 #, fuzzy, kde-format
 #| msgid "Acknowledge the alarm"
 msgctxt "@info:whatsthis"
 msgid "Acknowledge the alarm"
 msgstr "संसूचक स्वीकार गर्नुहोस्"
 
-#: messagewin.cpp:630
+#: messagewindow.cpp:464
 #, fuzzy, kde-format
 #| msgid "&Edit..."
 msgctxt "@action:button"
 msgid "&Edit..."
 msgstr "सम्पादन गर्नुहोस्..."
 
-#: messagewin.cpp:635
+#: messagewindow.cpp:469
+#, fuzzy, kde-format
+#| msgid "Edit the alarm."
+msgctxt "@info:tooltip"
+msgid "Edit the alarm"
+msgstr "संसूचक सम्पादन गर्नुहोस् ।"
+
+#: messagewindow.cpp:470
 #, fuzzy, kde-format
 #| msgid "Edit the alarm."
 msgctxt "@info:whatsthis"
 msgid "Edit the alarm."
 msgstr "संसूचक सम्पादन गर्नुहोस् ।"
 
-#: messagewin.cpp:639
+#: messagewindow.cpp:474
 #, fuzzy, kde-format
 #| msgid "&Defer..."
 msgctxt "@action:button"
 msgid "&Defer..."
 msgstr "पछि सार्नुहोस्..."
 
-#: messagewin.cpp:644
+#: messagewindow.cpp:479
+#, fuzzy, kde-format
+#| msgid "Defer the alarm until the specified time."
+msgctxt "@info:tooltip"
+msgid "Defer the alarm until later"
+msgstr "निर्दिष्ट गरिएको समयसम्म संसूचक सार्नुहोस् ।"
+
+#: messagewindow.cpp:480
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Defer the alarm until later.\n"
@@ -4474,180 +4591,77 @@ msgstr ""
 "संसूचक पछिसम्म सार्नुहोस् ।\n"
 "तपाईँलाई संसूचक पुन: प्रदर्शित हुने समयमा निर्दिष्ट गर्न प्रोत्साहित गरिनेछ ।"
 
-#: messagewin.cpp:658 sounddlg.cpp:446
+#: messagewindow.cpp:494 sounddlg.cpp:446
 #, fuzzy, kde-format
 #| msgid "Stop sound"
 msgctxt "@info:tooltip"
 msgid "Stop sound"
 msgstr "ध्वनि बन्द गर्नुहोस्"
 
-#: messagewin.cpp:659 sounddlg.cpp:447
+#: messagewindow.cpp:495 sounddlg.cpp:447
 #, fuzzy, kde-format
 #| msgid "Stop playing the sound"
 msgctxt "@info:whatsthis"
 msgid "Stop playing the sound"
 msgstr "ध्वनि बजाउन बन्द गर्नुहोस्"
 
-#: messagewin.cpp:671
+#: messagewindow.cpp:509
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info:tooltip Locate this email in KMail"
 msgid "Locate in <application>KMail</application>"
 msgstr "केडीई मेलमा यो इमेल स्थापना गर्न असमर्थ"
 
-#: messagewin.cpp:672
+#: messagewindow.cpp:510
 #, fuzzy, kde-kuit-format
 #| msgid "Locate and highlight this email in KMail"
 msgctxt "@info:whatsthis"
 msgid "Locate and highlight this email in <application>KMail</application>"
 msgstr "यो इमेललाई केडीई मेलमा स्थापना गर्नुहोस् र हाइलाइट गर्नुहोस्"
 
-#: messagewin.cpp:680
+#: messagewindow.cpp:518
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info:tooltip"
 msgid "Activate <application>KAlarm</application>"
 msgstr "केडीई मेलमा यो इमेल स्थापना गर्न असमर्थ"
 
-#: messagewin.cpp:681
+#: messagewindow.cpp:519
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info:whatsthis"
 msgid "Activate <application>KAlarm</application>"
 msgstr "केडीई मेलमा यो इमेल स्थापना गर्न असमर्थ"
 
-#: messagewin.cpp:847
-#, fuzzy, kde-format
-#| msgid "Today"
-msgctxt "@info"
-msgid "Today"
-msgstr "आज"
-
-#: messagewin.cpp:849
-#, fuzzy, kde-format
-#| msgid "Tomorrow"
-#| msgid_plural "in %1 days' time"
-msgctxt "@info"
-msgid "Tomorrow"
-msgid_plural "in %1 days' time"
-msgstr[0] "भोली"
-msgstr[1] "%1 दिनको अवधिमा"
-
-#: messagewin.cpp:851
-#, fuzzy, kde-format
-#| msgid "in 1 week's time"
-#| msgid_plural "in %1 weeks' time"
-msgctxt "@info"
-msgid "in 1 week's time"
-msgid_plural "in %1 weeks' time"
-msgstr[0] "१ हप्ताको अवधिमा"
-msgstr[1] "%1 हप्ताको अवधिमा"
-
-#: messagewin.cpp:865
-#, fuzzy, kde-format
-#| msgid "in 1 minute's time"
-#| msgid_plural "in %1 minutes' time"
-msgctxt "@info"
-msgid "in 1 minute's time"
-msgid_plural "in %1 minutes' time"
-msgstr[0] "१ मिनेटको अवधिमा"
-msgstr[1] "%1 मिनेटको अवधिमा"
-
-#: messagewin.cpp:867
-#, fuzzy, kde-format
-#| msgid "in 1 hour's time"
-#| msgid_plural "in %1 hours' time"
-msgctxt "@info"
-msgid "in 1 hour's time"
-msgid_plural "in %1 hours' time"
-msgstr[0] "१ घण्टाको अवधिमा"
-msgstr[1] "%1 घण्टाको अवधिमा"
-
-#: messagewin.cpp:870
-#, fuzzy, kde-format
-#| msgid "1 Hour"
-#| msgid_plural "%1 Hours"
-msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "१ घण्टा"
-msgstr[1] "%1 घण्टा"
-
-#: messagewin.cpp:871
-#, fuzzy, kde-format
-#| msgid "in 1 minute's time"
-#| msgid_plural "in %1 minutes' time"
-msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
-msgid "in %2 1 minute's time"
-msgid_plural "in %2 %1 minutes' time"
-msgstr[0] "१ मिनेटको अवधिमा"
-msgstr[1] "%1 मिनेटको अवधिमा"
-
-#: messagewin.cpp:1333
-#, fuzzy, kde-format
-#| msgid "Unable to speak message"
-msgctxt "@info"
-msgid "Unable to speak message"
-msgstr "सन्देश वाचन गर्न असमर्थ"
-
-#: messagewin.cpp:1333
-#, kde-format
-msgctxt "@info"
-msgid "Text-to-speech subsystem is not available"
-msgstr ""
-
-#: messagewin.cpp:1496
-#, fuzzy, kde-kuit-format
-#| msgid ""
-#| "Cannot open audio file:\n"
-#| "%1"
-msgctxt "@info"
-msgid "Cannot open audio file: <filename>%1</filename>"
-msgstr ""
-"अडियो फाइल खुलाउन सकिँदैन:\n"
-"%1"
-
-#: messagewin.cpp:1594
-#, fuzzy, kde-kuit-format
-#| msgid ""
-#| "Error attaching file:\n"
-#| "%1"
-msgctxt "@info"
-msgid ""
-"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
-msgstr ""
-"फाइल सङ्लग्न गर्दा त्रुटि:\n"
-"%1"
-
-#: messagewin.cpp:1930
+#: messagewindow.cpp:1087
 #, fuzzy, kde-format
 #| msgid "Do you really want to acknowledge this alarm?"
 msgctxt "@info"
 msgid "Do you really want to acknowledge this alarm?"
 msgstr "तपाईँ वास्तवमै यो संसूचकलाई स्वीकार गर्न चाहनुहुन्छ ?"
 
-#: messagewin.cpp:1931
+#: messagewindow.cpp:1088
 #, fuzzy, kde-format
 #| msgid "Acknowledge Alarm"
 msgctxt "@action:button"
 msgid "Acknowledge Alarm"
 msgstr "स्वीकृत संसूचक"
 
-#: messagewin.cpp:1931
+#: messagewindow.cpp:1088
 #, fuzzy, kde-format
 #| msgid "&Acknowledge"
 msgctxt "@action:button"
 msgid "Acknowledge"
 msgstr "स्वीकृत"
 
-#: messagewin.cpp:2002
+#: messagewindow.cpp:1152
 #, fuzzy, kde-kuit-format
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info"
 msgid "Unable to locate this email in <application>KMail</application>"
 msgstr "केडीई मेलमा यो इमेल स्थापना गर्न असमर्थ"
 
-#: messagewin.cpp:2166
+#: messagewindow.cpp:1316
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Beginning of alarm list reached.\n"
