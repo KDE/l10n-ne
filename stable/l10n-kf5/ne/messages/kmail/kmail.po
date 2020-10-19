@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-15 08:28+0200\n"
+"POT-Creation-Date: 2020-10-19 08:28+0200\n"
 "PO-Revision-Date: 2007-09-10 16:41+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1310,7 +1310,7 @@ msgid "Repl&y Subject Prefixes"
 msgstr "जवाफ विषयवस्तु उपसर्ग"
 
 #: configuredialog/configurecomposerpage.cpp:673
-#: configuredialog/configurecomposerpage.cpp:703
+#: configuredialog/configurecomposerpage.cpp:704
 #, kde-format
 msgid ""
 "Recognize any sequence of the following prefixes\n"
@@ -1320,21 +1320,21 @@ msgstr ""
 "(प्रविष्टि केस सम्वेदनशील नियमित अभिव्यक्ति हुन्):"
 
 #: configuredialog/configurecomposerpage.cpp:683
-#: configuredialog/configurecomposerpage.cpp:772
-#: configuredialog/configurecomposerpage.cpp:1157
+#: configuredialog/configurecomposerpage.cpp:774
+#: configuredialog/configurecomposerpage.cpp:1160
 #, kde-format
 msgid "A&dd..."
 msgstr "थप्नुहोस्..."
 
 #: configuredialog/configurecomposerpage.cpp:683
-#: configuredialog/configurecomposerpage.cpp:925
-#: configuredialog/configurecomposerpage.cpp:1157
+#: configuredialog/configurecomposerpage.cpp:928
+#: configuredialog/configurecomposerpage.cpp:1160
 #, kde-format
 msgid "Re&move"
 msgstr "हटाउनुहोस्"
 
 #: configuredialog/configurecomposerpage.cpp:684
-#: configuredialog/configurecomposerpage.cpp:1158
+#: configuredialog/configurecomposerpage.cpp:1161
 #, kde-format
 msgid "Mod&ify..."
 msgstr "परिमार्जन गर्नुहोस्..."
@@ -1344,34 +1344,46 @@ msgstr "परिमार्जन गर्नुहोस्..."
 msgid "Enter new reply prefix:"
 msgstr "नयाँ जवाफ उपसर्ग प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configurecomposerpage.cpp:699
+#: configuredialog/configurecomposerpage.cpp:686
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
+msgid "Do you want to remove reply prefix?"
+msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
+
+#: configuredialog/configurecomposerpage.cpp:700
 #, kde-format
 msgid "For&ward Subject Prefixes"
 msgstr "विषयवस्तु उपसर्ग पठाउनुहोस्"
 
-#: configuredialog/configurecomposerpage.cpp:711 identity/identitypage.cpp:291
+#: configuredialog/configurecomposerpage.cpp:712 identity/identitypage.cpp:291
 #, kde-format
 msgid "Add..."
 msgstr "थप्नुहोस्..."
 
 #. i18n: ectx: property (text), widget (QPushButton, mRemoveButton)
-#: configuredialog/configurecomposerpage.cpp:712
-#: configuredialog/configurecomposerpage.cpp:772 ui/identitypage.ui:66
+#: configuredialog/configurecomposerpage.cpp:713
+#: configuredialog/configurecomposerpage.cpp:774 ui/identitypage.ui:66
 #, kde-format
 msgid "Remo&ve"
 msgstr "हटाउनुहोस्"
 
-#: configuredialog/configurecomposerpage.cpp:713 identity/identitypage.cpp:293
+#: configuredialog/configurecomposerpage.cpp:714 identity/identitypage.cpp:293
 #, kde-format
 msgid "Modify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
-#: configuredialog/configurecomposerpage.cpp:714
+#: configuredialog/configurecomposerpage.cpp:715
 #, kde-format
 msgid "Enter new forward prefix:"
 msgstr "नयाँ अगाडि उपसर्ग प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configurecomposerpage.cpp:764
+#: configuredialog/configurecomposerpage.cpp:716
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
+msgid "Do you want to remove forward prefix?"
+msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
+
+#: configuredialog/configurecomposerpage.cpp:766
 #, kde-format
 msgid ""
 "This list is checked for every outgoing message from the top to the bottom "
@@ -1381,92 +1393,98 @@ msgstr ""
 "बाह्यगमन सन्देशका लागि चेक गरिन्छ ।"
 
 #. i18n: ectx: property (text), widget (QPushButton, mModifyButton)
-#: configuredialog/configurecomposerpage.cpp:773 ui/identitypage.ui:40
+#: configuredialog/configurecomposerpage.cpp:775 ui/identitypage.ui:40
 #, kde-format
 msgid "&Modify..."
 msgstr "परिमार्जन गर्नुहोस्..."
 
-#: configuredialog/configurecomposerpage.cpp:773
+#: configuredialog/configurecomposerpage.cpp:775
 #, kde-format
 msgid "Enter charset:"
 msgstr "चारसेट प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configurecomposerpage.cpp:779
+#: configuredialog/configurecomposerpage.cpp:776
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
+msgid "Do you want to remove this selected charset?"
+msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
+
+#: configuredialog/configurecomposerpage.cpp:782
 #, kde-format
 msgid "&Keep original charset when replying or forwarding (if possible)"
 msgstr "जवाफ दिन वा पठाउनका लागि मौलिक चारसेट राख्नुहोस् (सम्भव भएमा)"
 
-#: configuredialog/configurecomposerpage.cpp:814
+#: configuredialog/configurecomposerpage.cpp:817
 #, kde-format
 msgid "This charset is not supported."
 msgstr "यो चारसेट समर्थित छैन ।"
 
-#: configuredialog/configurecomposerpage.cpp:879
+#: configuredialog/configurecomposerpage.cpp:882
 #, kde-format
 msgid "&Use custom message-id suffix"
 msgstr "अनुकूल सन्देश आईडी प्रत्यय प्रयोग गर्नुहोस्"
 
-#: configuredialog/configurecomposerpage.cpp:892
+#: configuredialog/configurecomposerpage.cpp:895
 #, kde-format
 msgid "Custom message-&id suffix:"
 msgstr "अनुकूल सन्देश आईडी प्रत्यय:"
 
-#: configuredialog/configurecomposerpage.cpp:904
+#: configuredialog/configurecomposerpage.cpp:907
 #, kde-format
 msgid "Define custom mime header fields:"
 msgstr "अनुकूल माइम हेडर फिल्ड परिभाषित गर्नुहोस्:"
 
-#: configuredialog/configurecomposerpage.cpp:912
+#: configuredialog/configurecomposerpage.cpp:915
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "@title:column Name of the mime header."
 msgid "Name"
 msgstr "नाम"
 
-#: configuredialog/configurecomposerpage.cpp:913
+#: configuredialog/configurecomposerpage.cpp:916
 #, fuzzy, kde-format
 #| msgid "Value"
 msgctxt "@title:column Value of the mimeheader."
 msgid "Value"
 msgstr "मान"
 
-#: configuredialog/configurecomposerpage.cpp:921
+#: configuredialog/configurecomposerpage.cpp:924
 #, fuzzy, kde-format
 #| msgid "Ne&w"
 msgctxt "@action:button Add new mime header field."
 msgid "Ne&w"
 msgstr "नयाँ"
 
-#: configuredialog/configurecomposerpage.cpp:934
+#: configuredialog/configurecomposerpage.cpp:937
 #, fuzzy, kde-format
 #| msgid "&Name:"
 msgctxt "@label:textbox Name of the mime header."
 msgid "&Name:"
 msgstr "नाम:"
 
-#: configuredialog/configurecomposerpage.cpp:944
+#: configuredialog/configurecomposerpage.cpp:947
 #, kde-format
 msgid "&Value:"
 msgstr "मान:"
 
-#: configuredialog/configurecomposerpage.cpp:1086
+#: configuredialog/configurecomposerpage.cpp:1089
 #, kde-format
 msgid ""
 "'Content-Type' is not an authorized string. This header will be not saved."
 msgstr ""
 
-#: configuredialog/configurecomposerpage.cpp:1086
+#: configuredialog/configurecomposerpage.cpp:1089
 #, fuzzy, kde-format
 #| msgid "&Enable signature"
 msgid "Invalid header"
 msgstr "हस्ताक्षर सक्षम पार्नुहोस्"
 
-#: configuredialog/configurecomposerpage.cpp:1128
+#: configuredialog/configurecomposerpage.cpp:1131
 #, kde-format
 msgid "Outlook-compatible attachment naming"
 msgstr "आउटलुक मिल्दो सङ्लग्नता नामकरण"
 
-#: configuredialog/configurecomposerpage.cpp:1131
+#: configuredialog/configurecomposerpage.cpp:1134
 #, kde-format
 msgid ""
 "Turn this option on to make Outlook(tm) understand attachment names "
@@ -1475,41 +1493,47 @@ msgstr ""
 "अङ्ग्रेजी बाहेकका क्यारेक्टर समावेश गर्ने सङ्लग्नता नाम आउटलुक(tm) बुझ्ने बनाउन यो विकल्प "
 "खोल्नुहोस् ।"
 
-#: configuredialog/configurecomposerpage.cpp:1140
+#: configuredialog/configurecomposerpage.cpp:1143
 #, kde-format
 msgid "E&nable detection of missing attachments"
 msgstr "छुटेका सङ्लग्नता पत्ता लगाउन सक्षम पार्नुहोस्"
 
-#: configuredialog/configurecomposerpage.cpp:1146
+#: configuredialog/configurecomposerpage.cpp:1149
 #, kde-format
 msgid "Recognize any of the following key words as intention to attach a file:"
 msgstr "फाइल सङ्लग्न गर्न इच्छा अनुसार तलका कुनै पनि शब्दकुञ्जी पहिचान गर्नुहोस्:"
 
-#: configuredialog/configurecomposerpage.cpp:1159
+#: configuredialog/configurecomposerpage.cpp:1162
 #, kde-format
 msgid "Enter new key word:"
 msgstr "नयाँ शब्दकुञ्जी प्रविष्ट गर्नुहोस्:"
 
-#: configuredialog/configurecomposerpage.cpp:1167
+#: configuredialog/configurecomposerpage.cpp:1163
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
+msgid "Do you want to remove this attachment word?"
+msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
+
+#: configuredialog/configurecomposerpage.cpp:1171
 #, fuzzy, kde-format
 #| msgid "Has Attachment"
 msgid "Maximum Attachment Size:"
 msgstr "सङ्लग्नता छ"
 
-#: configuredialog/configurecomposerpage.cpp:1174
+#: configuredialog/configurecomposerpage.cpp:1178
 #, fuzzy, kde-format
 #| msgid " MB"
 msgctxt "spinbox suffix: unit for kilobyte"
 msgid " kB"
 msgstr " मेगा बाइट"
 
-#: configuredialog/configurecomposerpage.cpp:1176
+#: configuredialog/configurecomposerpage.cpp:1180
 #, fuzzy, kde-format
 #| msgid "Log size limit:"
 msgid "No limit"
 msgstr "लग साइज सीमा:"
 
-#: configuredialog/configurecomposerpage.cpp:1204
+#: configuredialog/configurecomposerpage.cpp:1208
 #, kde-format
 msgid ""
 "You have chosen to encode attachment names containing non-English characters "
@@ -1658,7 +1682,13 @@ msgstr "S/MIME वैधता"
 msgid "Email Address:"
 msgstr "इमेल ठेगाना"
 
-#: configuredialog/configuresecuritypage.cpp:129
+#: configuredialog/configuresecuritypage.cpp:102
+#, fuzzy, kde-format
+#| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
+msgid "Do you want to remove this email address?"
+msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
+
+#: configuredialog/configuresecuritypage.cpp:130
 #, fuzzy, kde-format
 #| msgid ""
 #| "Changing the global threading setting will override all folder specific "
@@ -1667,42 +1697,42 @@ msgid ""
 "Changing the global HTML setting will override all folder specific values."
 msgstr "विश्वव्यापी थ्रेडिङ सेटिङ परिवर्तन गर्दा सबै फोल्डर निर्दिष्ट मान अधिरोहण गर्नेछ ।"
 
-#: configuredialog/configuresecuritypage.cpp:330
-#: configuredialog/configuresecuritypage.cpp:333
-#: configuredialog/configuresecuritypage.cpp:335
-#: configuredialog/configuresecuritypage.cpp:337
-#: configuredialog/configuresecuritypage.cpp:340
-#: configuredialog/configuresecuritypage.cpp:342
+#: configuredialog/configuresecuritypage.cpp:331
+#: configuredialog/configuresecuritypage.cpp:334
+#: configuredialog/configuresecuritypage.cpp:336
+#: configuredialog/configuresecuritypage.cpp:338
+#: configuredialog/configuresecuritypage.cpp:341
+#: configuredialog/configuresecuritypage.cpp:343
 #, kde-format
 msgid " day"
 msgid_plural " days"
 msgstr[0] " दिन"
 msgstr[1] " दिन"
 
-#: configuredialog/configuresecuritypage.cpp:374
+#: configuredialog/configuresecuritypage.cpp:375
 #, kde-format
 msgid ""
 "The module is missing. Please verify your installation. This module is "
 "provided by Kleopatra."
 msgstr ""
 
-#: configuredialog/configuresecuritypage.cpp:379
+#: configuredialog/configuresecuritypage.cpp:380
 #, kde-format
 msgid "GnuPG Configure Module Error"
 msgstr ""
 
-#: configuredialog/configuresecuritypage.cpp:449
+#: configuredialog/configuresecuritypage.cpp:450
 #, kde-format
 msgid "This option requires dirmngr >= 0.9.0"
 msgstr "यो विकल्पलाई dirmngr >= 0.9.0 आवश्यक हुन्छ"
 
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: configuredialog/configuresecuritypage.cpp:561 ui/smimeconfiguration.ui:186
+#: configuredialog/configuresecuritypage.cpp:562 ui/smimeconfiguration.ui:186
 #, kde-format
 msgid "no proxy"
 msgstr "प्रोक्सी होइन"
 
-#: configuredialog/configuresecuritypage.cpp:563
+#: configuredialog/configuresecuritypage.cpp:564
 #, kde-format
 msgid "(Current system setting: %1)"
 msgstr "(हालको प्रणाली सेटिङ: %1)"
@@ -8132,11 +8162,6 @@ msgstr ""
 #~ msgid "Show Message"
 #~ msgstr "नयाँ सन्देश"
 
-#, fuzzy
-#~| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
-#~ msgid "Do you want to remove selected item?"
-#~ msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
-
 #~ msgid "Filter Log Viewer"
 #~ msgstr "फिल्टर लग दर्शक"
 
@@ -9394,11 +9419,6 @@ msgstr ""
 
 #~ msgid "New &Window"
 #~ msgstr "नयाँ सञ्झ्याल"
-
-#, fuzzy
-#~| msgid "<qt>Do you really want to remove the identity named <b>%1</b>?</qt>"
-#~ msgid "Do you want to remove account '%1'?"
-#~ msgstr "<qt>तपाईँ वास्तवमै <b>%1</b> नामकरण गरिएको परिचय हटाउन चाहनुहुन्छ ?</qt>"
 
 #, fuzzy
 #~| msgid "Remove Entry"
