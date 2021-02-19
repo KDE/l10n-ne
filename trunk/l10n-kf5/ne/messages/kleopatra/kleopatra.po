@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-11 02:45+0100\n"
+"POT-Creation-Date: 2021-02-19 03:29+0100\n"
 "PO-Revision-Date: 2007-09-09 17:32+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -997,12 +997,6 @@ msgid ""
 msgstr ""
 "CRL फाइल आयात गर्ने प्रयास गर्दा एउटा त्रुटि उत्पन्न भयो । GpgSM को निर्गत:\n"
 "%1 थियो"
-
-#: src/commands/editgroupcommand.cpp:76 src/dialogs/editgroupdialog.cpp:281
-#, kde-format
-msgctxt "@title:window"
-msgid "Edit Group"
-msgstr ""
 
 #: src/commands/encryptclipboardcommand.cpp:144
 #: src/commands/encryptclipboardcommand.cpp:158
@@ -2693,6 +2687,48 @@ msgstr "ब्याकइन्ड त्रुटि: %1/%2/%3 का ला�
 msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr "ब्याकइन्ड त्रुटि: %1/%2/%3: %4 %5 का लागि gpgconf सँग गलत प्रकार छ"
 
+#: src/conf/groupsconfigwidget.cpp:87 src/dialogs/editgroupdialog.cpp:104
+#: src/dialogs/editgroupdialog.cpp:148
+#, fuzzy, kde-format
+#| msgid "Search:"
+msgctxt "Placeholder text"
+msgid "Search..."
+msgstr "खोजी गर्नुहोस्:"
+
+#: src/conf/groupsconfigwidget.cpp:107
+#, fuzzy, kde-format
+#| msgid "A.k.a."
+msgid "New"
+msgstr "A.k.a."
+
+#: src/conf/groupsconfigwidget.cpp:110
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: src/conf/groupsconfigwidget.cpp:114 src/view/keylistcontroller.cpp:412
+#, kde-format
+msgid "Delete"
+msgstr "मेट्नुहोस्"
+
+#: src/conf/groupsconfigwidget.cpp:181
+#, kde-format
+msgctxt "default name for new group of keys"
+msgid "New Group"
+msgstr ""
+
+#: src/conf/groupsconfigwidget.cpp:185
+#, kde-format
+msgctxt "@title:window a group of keys"
+msgid "New Group"
+msgstr ""
+
+#: src/conf/groupsconfigwidget.cpp:217
+#, kde-format
+msgctxt "@title:window a group of keys"
+msgid "Edit Group"
+msgstr ""
+
 #: src/conf/kleopageconfigdialog.cpp:97
 #, kde-format
 msgid ""
@@ -3702,28 +3738,28 @@ msgid "Please enter a name or email address..."
 msgstr ""
 
 #: src/crypto/gui/certificatelineedit.cpp:122
-#: src/crypto/gui/certificatelineedit.cpp:202
-#: src/crypto/gui/certificatelineedit.cpp:206
+#: src/crypto/gui/certificatelineedit.cpp:209
+#: src/crypto/gui/certificatelineedit.cpp:213
 #, fuzzy, kde-format
 #| msgid "&Details"
 msgid "Click for details."
 msgstr "विस्तृत विवरण"
 
-#: src/crypto/gui/certificatelineedit.cpp:182
-#: src/crypto/gui/certificatelineedit.cpp:191
+#: src/crypto/gui/certificatelineedit.cpp:189
+#: src/crypto/gui/certificatelineedit.cpp:198
 #, fuzzy, kde-format
 #| msgid "Current Maintainer"
 msgid "Open selection dialog."
 msgstr "हालको मर्मतकर्ता"
 
-#: src/crypto/gui/certificatelineedit.cpp:188
+#: src/crypto/gui/certificatelineedit.cpp:195
 #, fuzzy, kde-format
 #| msgid "Delete Certificates"
 msgid "Multiple certificates"
 msgstr "प्रमाणपत्र मेट्नुहोस्"
 
-#: src/crypto/gui/certificatelineedit.cpp:209
-#: src/crypto/gui/certificatelineedit.cpp:213
+#: src/crypto/gui/certificatelineedit.cpp:216
+#: src/crypto/gui/certificatelineedit.cpp:220
 #, kde-format
 msgid "No matching certificates found.<br/>Click here to import a certificate."
 msgstr ""
@@ -3995,17 +4031,26 @@ msgstr ""
 msgid "You need to select a signing certificate to proceed."
 msgstr ""
 
-#: src/crypto/gui/signemailwizard.cpp:72
+#: src/crypto/gui/signemailwizard.cpp:73
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "You need to select an OpenPGP signing certificate to proceed."
+msgstr "CA प्रमाणपत्र मेट्दैछ"
+
+#: src/crypto/gui/signemailwizard.cpp:75
+#, fuzzy, kde-format
+#| msgid "Deleting CA Certificates"
+msgid "You need to select an S/MIME signing certificate to proceed."
+msgstr "CA प्रमाणपत्र मेट्दैछ"
+
+#: src/crypto/gui/signemailwizard.cpp:78
 #, kde-format
-msgid "You need to select an %1 signing certificate to proceed."
+msgid ""
+"You need to select an OpenPGP signing certificate and an S/MIME signing "
+"certificate to proceed."
 msgstr ""
 
-#: src/crypto/gui/signemailwizard.cpp:74
-#, kde-format
-msgid "You need to select %1 and %2 signing certificates to proceed."
-msgstr ""
-
-#: src/crypto/gui/signemailwizard.cpp:106
+#: src/crypto/gui/signemailwizard.cpp:110
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgctxt "@title:window"
@@ -4063,7 +4108,7 @@ msgid ""
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:280
-#: src/crypto/gui/signencryptfileswizard.cpp:295 src/view/padwidget.cpp:476
+#: src/crypto/gui/signencryptfileswizard.cpp:294 src/view/padwidget.cpp:477
 #, kde-format
 msgctxt ""
 "%1 is a placeholder for the name of a compliance mode. E.g. NATO RESTRICTED "
@@ -4072,7 +4117,7 @@ msgid "%1 communication possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:282
-#: src/crypto/gui/signencryptfileswizard.cpp:297 src/view/padwidget.cpp:478
+#: src/crypto/gui/signencryptfileswizard.cpp:296 src/view/padwidget.cpp:479
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgctxt ""
@@ -4192,52 +4237,52 @@ msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:225
+#: src/crypto/gui/signencryptfileswizard.cpp:224
 #, fuzzy, kde-format
 #| msgid "New signatures:"
 msgid "The S/MIME signature."
 msgstr "नयाँ हस्ताक्षर:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:226
+#: src/crypto/gui/signencryptfileswizard.cpp:225
 #, fuzzy, kde-format
 #| msgid "New signatures:"
 msgid "The signature."
 msgstr "नयाँ हस्ताक्षर:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:227
+#: src/crypto/gui/signencryptfileswizard.cpp:226
 #, fuzzy, kde-format
 #| msgid "Deleting keys..."
 msgid "The signed and encrypted file."
 msgstr "कुञ्जी मेट्दैछ..."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:228
+#: src/crypto/gui/signencryptfileswizard.cpp:227
 #, fuzzy, kde-format
 #| msgid "Select CRL File"
 msgid "The encrypted file."
 msgstr "CRL फाइल चयन गर्नुहोस्"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:229
+#: src/crypto/gui/signencryptfileswizard.cpp:228
 #, kde-format
 msgid "The S/MIME encrypted file."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:230
+#: src/crypto/gui/signencryptfileswizard.cpp:229
 #, kde-format
 msgid "Output directory."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:300
+#: src/crypto/gui/signencryptfileswizard.cpp:299
 #, kde-format
 msgid "Next"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:359
+#: src/crypto/gui/signencryptfileswizard.cpp:358
 #, kde-format
 msgctxt "@title"
 msgid "Results"
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:361
+#: src/crypto/gui/signencryptfileswizard.cpp:360
 #, kde-format
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
@@ -4333,51 +4378,51 @@ msgstr ""
 msgid "No certificate selected"
 msgstr "प्रमाणपत्र मेट्न असफल भयो"
 
-#: src/crypto/gui/signerresolvepage.cpp:288
+#: src/crypto/gui/signerresolvepage.cpp:292
 #, kde-format
 msgid "Sign and encrypt (OpenPGP only)"
 msgstr ""
 
-#: src/crypto/gui/signerresolvepage.cpp:294
+#: src/crypto/gui/signerresolvepage.cpp:298
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
 msgid "Encrypt only"
 msgstr "गुप्तिकरणका लागि मात्र"
 
-#: src/crypto/gui/signerresolvepage.cpp:299
+#: src/crypto/gui/signerresolvepage.cpp:303
 #, fuzzy, kde-format
 #| msgid "For &signing only"
 msgid "Sign only"
 msgstr "साइनिङका लागि मात्र"
 
-#: src/crypto/gui/signerresolvepage.cpp:304
+#: src/crypto/gui/signerresolvepage.cpp:308
 #, kde-format
 msgid "Encryption Options"
 msgstr ""
 
-#: src/crypto/gui/signerresolvepage.cpp:307
+#: src/crypto/gui/signerresolvepage.cpp:311
 #, kde-format
 msgid "Text output (ASCII armor)"
 msgstr ""
 
-#: src/crypto/gui/signerresolvepage.cpp:312
+#: src/crypto/gui/signerresolvepage.cpp:316
 #, fuzzy, kde-format
 #| msgid "Canceled."
 msgid "Signing Options"
 msgstr "रद्द गरियो ।"
 
-#: src/crypto/gui/signerresolvepage.cpp:317
+#: src/crypto/gui/signerresolvepage.cpp:321
 #, kde-format
 msgid "Signer:"
 msgstr ""
 
-#: src/crypto/gui/signerresolvepage.cpp:332
+#: src/crypto/gui/signerresolvepage.cpp:336
 #, fuzzy, kde-format
 #| msgid "Save Certificate"
 msgid "Change Signing Certificates..."
 msgstr "प्रमाणपत्र बचत गर्नुहोस्"
 
-#: src/crypto/gui/signerresolvepage.cpp:494
+#: src/crypto/gui/signerresolvepage.cpp:498
 #, kde-format
 msgid "<b>Choose Operation to be Performed</b>"
 msgstr ""
@@ -5266,13 +5311,6 @@ msgstr "क्रम सङ्ख्या"
 msgid "Available keys:"
 msgstr ""
 
-#: src/dialogs/editgroupdialog.cpp:104 src/dialogs/editgroupdialog.cpp:148
-#, fuzzy, kde-format
-#| msgid "Search:"
-msgctxt "Placeholder text"
-msgid "Search..."
-msgstr "खोजी गर्नुहोस्:"
-
 #: src/dialogs/editgroupdialog.cpp:129
 #, kde-format
 msgid "Add the selected keys to the group"
@@ -5288,6 +5326,12 @@ msgstr ""
 #| msgid "&Details"
 msgid "Group keys:"
 msgstr "विस्तृत विवरण"
+
+#: src/dialogs/editgroupdialog.cpp:278
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Group"
+msgstr ""
 
 #: src/dialogs/expirydialog.cpp:133
 #, fuzzy, kde-format
@@ -5419,48 +5463,19 @@ msgid ""
 "generation."
 msgstr ""
 
-#: src/dialogs/groupdetailsdialog.cpp:74
-#, kde-format
-msgid "Edit"
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:135
+#: src/dialogs/groupdetailsdialog.cpp:128
 #, fuzzy, kde-format
 #| msgid "&Details"
 msgctxt "@title:window"
 msgid "Group Details"
 msgstr "विस्तृत विवरण"
 
-#: src/dialogs/groupdetailsdialog.cpp:149
+#: src/dialogs/groupdetailsdialog.cpp:141
 #, kde-format
-msgid "This group is locked down. It cannot be edited by you."
+msgid "Note: This group is defined in the configuration files of gpg."
 msgstr ""
 
-#: src/dialogs/groupdetailsdialog.cpp:151
-#, kde-format
-msgid "Edit this group"
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:154
-#, kde-format
-msgid ""
-"This group cannot be edited with Kleopatra. It is defined in the "
-"configuration files of gpg."
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:156
-#, kde-format
-msgid ""
-"This group is implicitly defined by tags assigned to keys. You need to "
-"change the tags of keys to add keys to or remove keys from the group."
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:160
-#, kde-format
-msgid "This group cannot be edited with Kleopatra."
-msgstr ""
-
-#: src/dialogs/lookupcertificatesdialog.cpp:107 src/view/padwidget.cpp:451
+#: src/dialogs/lookupcertificatesdialog.cpp:107 src/view/padwidget.cpp:452
 #, fuzzy, kde-format
 #| msgid "Imported:"
 msgid "Import"
@@ -8558,11 +8573,6 @@ msgid "Stop Operation"
 msgstr "सञ्चालन रोक्नुहोस्"
 
 #: src/view/keylistcontroller.cpp:412
-#, kde-format
-msgid "Delete"
-msgstr "मेट्नुहोस्"
-
-#: src/view/keylistcontroller.cpp:412
 #, fuzzy, kde-format
 #| msgid "Delete Certificates"
 msgid "Delete selected certificates"
@@ -8799,7 +8809,7 @@ msgstr ""
 msgid "Set initial PIN"
 msgstr "फन्ट सेट गर्नुहोस्..."
 
-#: src/view/padwidget.cpp:76 src/view/padwidget.cpp:462
+#: src/view/padwidget.cpp:76 src/view/padwidget.cpp:463
 #, fuzzy, kde-format
 #| msgid "For &encrypting only"
 msgid "Sign / Encrypt Notepad"
@@ -8845,13 +8855,13 @@ msgstr "गुप्तिकरणका लागि मात्र"
 msgid "Decrypt / Verify"
 msgstr "कुञ्जी मेट्दैछ..."
 
-#: src/view/padwidget.cpp:412
+#: src/view/padwidget.cpp:413
 #, fuzzy, kde-format
 #| msgid "Imported:"
 msgid "Importing..."
 msgstr "आयातित:"
 
-#: src/view/padwidget.cpp:450 src/view/padwidget.cpp:459
+#: src/view/padwidget.cpp:451 src/view/padwidget.cpp:460
 #, kde-format
 msgctxt ""
 "1 is an operation to apply to the notepad. Like Sign/Encrypt or just Encrypt."
