@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-12 03:05+0100\n"
+"POT-Creation-Date: 2021-02-27 02:44+0100\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1017,23 +1017,22 @@ msgstr ""
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:220
 #, kde-format
-msgid "\"No category\" color (for \"Only category\" drawing schemes)"
+msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
 #, kde-format
 msgid ""
-"Select a color to use for the \"no category\" or \"unset category\" "
-"situation, when an item does not belong to any category. This color is used "
-"when drawing items in the agenda or month views using the \"Only category\" "
-"scheme."
+"Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
+"item does not have any tags.  This color is used when drawing items in the "
+"agenda or month views using the \"Only tag\" scheme."
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:222
 #, kde-format
-msgid "Use this color when drawing items without a category"
+msgid "Use this color when drawing items without any tags"
 msgstr ""
 
 #: kdatepickerpopup.cpp:89
@@ -1557,9 +1556,14 @@ msgstr "मुद्रण त्रुटि"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:381
 #: printing/calprintincidenceconfig_base.ui:127
-#, kde-format
+#: printing/calprintmonthconfig_base.ui:306
+#: printing/calprintweekconfig_base.ui:388
+#, fuzzy, kde-format
+#| msgid ""
+#| "If you want to use colors to distinguish certain categories on the print, "
+#| "check this option."
 msgid ""
-"If you want to use colors to distinguish certain categories on the print, "
+"If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
 msgstr ""
 "तपाईँले मुद्रणमा निश्चित कोटि फरक पार्न रङ प्रयोग गर्न चाहनुहुन्छ भने, यो विकल्प जाँच "
@@ -1697,8 +1701,10 @@ msgstr[1] "%1 मिनेट"
 
 #: printing/calprintdefaultplugins.cpp:359
 #: printing/calprintdefaultplugins.cpp:631
-#, kde-format
-msgctxt "Spacer for the joined list of categories"
+#, fuzzy, kde-format
+#| msgctxt "Spacer for the joined list of categories"
+#| msgid ", "
+msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
 
@@ -1879,8 +1885,8 @@ msgstr "सेटिङ: "
 
 #: printing/calprintdefaultplugins.cpp:630
 #, kde-format
-msgid "Categories: "
-msgstr "कोटि: "
+msgid "Tags: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:795
 #: printing/calprintdefaultplugins.cpp:1107
@@ -2538,19 +2544,6 @@ msgstr "हप्ता सङ्ख्या मुद्रण गर्नु
 msgid "Check this option to show note lines."
 msgstr "तपाईँ हालको समय लाईनमा सेकेन्ड देखाउन चाहनुहुन्छ भने यो बाकस जाँच गर्नुहोस् ।"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
-#: printing/calprintmonthconfig_base.ui:306
-#, fuzzy, kde-format
-#| msgid ""
-#| "The timetable view supports colors. If you want to make use of colors you "
-#| "should check this option. The category colors will be used."
-msgid ""
-"If you want to make use of colors you should check this option. The category "
-"colors will be used."
-msgstr ""
-"समयतालिका दृश्यले रङ समर्थन गर्छ । तपाईँले रङको प्रयोग गर्ने बनाउन चाहेमा यो विकल्प जाँच "
-"गर्नुपर्छ । कोटि रङ प्रयोग गरिन्छ ।"
-
 #: printing/calprintpluginbase.cpp:141
 #, kde-format
 msgid "This printing style does not have any configuration options."
@@ -2901,16 +2894,6 @@ msgstr "तपाईँ हालको समय लाईनमा सेक�
 #| msgid "S&how time as:"
 msgid "Show note &lines in Filofax layout"
 msgstr "यस रूपमा समय देखाउनुहोस्:"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
-#: printing/calprintweekconfig_base.ui:388
-#, kde-format
-msgid ""
-"The timetable view supports colors. If you want to make use of colors you "
-"should check this option. The category colors will be used."
-msgstr ""
-"समयतालिका दृश्यले रङ समर्थन गर्छ । तपाईँले रङको प्रयोग गर्ने बनाउन चाहेमा यो विकल्प जाँच "
-"गर्नुपर्छ । कोटि रङ प्रयोग गरिन्छ ।"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:31
@@ -3291,6 +3274,27 @@ msgstr "%1 %2"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#~ msgid "Categories: "
+#~ msgstr "कोटि: "
+
+#, fuzzy
+#~| msgid ""
+#~| "The timetable view supports colors. If you want to make use of colors "
+#~| "you should check this option. The category colors will be used."
+#~ msgid ""
+#~ "If you want to make use of colors you should check this option. The "
+#~ "category colors will be used."
+#~ msgstr ""
+#~ "समयतालिका दृश्यले रङ समर्थन गर्छ । तपाईँले रङको प्रयोग गर्ने बनाउन चाहेमा यो विकल्प "
+#~ "जाँच गर्नुपर्छ । कोटि रङ प्रयोग गरिन्छ ।"
+
+#~ msgid ""
+#~ "The timetable view supports colors. If you want to make use of colors you "
+#~ "should check this option. The category colors will be used."
+#~ msgstr ""
+#~ "समयतालिका दृश्यले रङ समर्थन गर्छ । तपाईँले रङको प्रयोग गर्ने बनाउन चाहेमा यो विकल्प "
+#~ "जाँच गर्नुपर्छ । कोटि रङ प्रयोग गरिन्छ ।"
 
 #, fuzzy
 #~| msgid "Summary"

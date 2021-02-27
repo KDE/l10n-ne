@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-15 02:55+0100\n"
+"POT-Creation-Date: 2021-02-27 02:47+0100\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -1062,8 +1062,9 @@ msgid "Manage View &Filters..."
 msgstr "दृश्य फिल्टर प्रबन्ध गर्नुहोस्..."
 
 #: actionmanager.cpp:685
-#, kde-format
-msgid "Manage C&ategories..."
+#, fuzzy, kde-format
+#| msgid "Manage C&ategories..."
+msgid "Manage T&ags..."
 msgstr "कोटि प्रबन्ध गर्नुहोस्..."
 
 #: actionmanager.cpp:690
@@ -3295,7 +3296,7 @@ msgstr "क्यालेन्डर आयात गर्नुहोस्"
 msgid ""
 "Enable this option to include birthdays from your calendar in the upcoming "
 "special occasions summary. Typically, these are events with the \"Birthday\" "
-"category."
+"tag."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAnniversariesFromCalBox)
@@ -3310,7 +3311,7 @@ msgstr ""
 msgid ""
 "Enable this option to include anniversaries from your calendar in the "
 "upcoming special occasions summary. Typically, these are events with the "
-"\"Anniversary\" category."
+"\"Anniversary\" tag."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowHolidaysFromCalBox)
@@ -3326,7 +3327,7 @@ msgstr "क्यालेन्डर आयात गर्नुहोस्"
 msgid ""
 "Enable this option to include holidays from your calendar in the upcoming "
 "special occasions summary. These are events from your configured holiday "
-"region, or events with the \"Holiday\" category."
+"region, or events with the \"Holiday\" tag."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowHolidaysFromCalBox)
@@ -3347,7 +3348,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "Enable this option to include events from your calendar with the \"special "
-"occasion\" category."
+"occasion\" tag."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSpecialsFromCalBox)
@@ -3584,11 +3585,10 @@ msgid "Colors"
 msgstr ""
 
 #: prefs/koprefsdialogcolorsandfonts.cpp:88
-#, fuzzy, kde-format
-#| msgid "Categories"
+#, kde-format
 msgctxt "@title:group"
-msgid "Categories"
-msgstr "कोटि"
+msgid "Tags"
+msgstr ""
 
 #: prefs/koprefsdialogcolorsandfonts.cpp:102
 #, fuzzy, kde-format
@@ -3597,8 +3597,8 @@ msgstr "कोटि"
 #| "selected category color using the button below."
 msgctxt "@info:whatsthis"
 msgid ""
-"Select here the event category you want to modify. You can change the "
-"selected category color using the button below."
+"Select the tag you want to modify. You can change the selected tag's color "
+"using the adjacent color button."
 msgstr ""
 "यहाँ तपाईँले परिमार्जन गर्न चाहेको घटना कोटि चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग गरेर "
 "चयन गरिएको कोटि रङ परिवर्तन गर्न सक्नुहुन्छ ।"
@@ -3606,13 +3606,10 @@ msgstr ""
 #: prefs/koprefsdialogcolorsandfonts.cpp:110
 #, fuzzy, kde-format
 #| msgid ""
-#| "Choose here the color of the event category selected using the combo box "
-#| "above."
+#| "Choose here the color of the resource selected using the combo box above."
 msgctxt "@info:whatsthis"
-msgid ""
-"Choose here the color of the event category selected using the combo box "
-"above."
-msgstr "माथिको कम्बो बाकस प्रयोग गरेर यहाँ चयन गरिएको घटना कोटिको रङ रोज्नुहोस् ।"
+msgid "Choose the color of the tag selected in the adjacent combo box."
+msgstr "यहाँ माथिको कम्बो बाकस प्रयोग गरेर चयन गरिएको स्रोतको रङ रोज्नुहोस् ।"
 
 #: prefs/koprefsdialogcolorsandfonts.cpp:118
 #, fuzzy, kde-format
@@ -4322,15 +4319,15 @@ msgstr ""
 #: settings/korganizer.kcfg:105
 #, fuzzy, kde-format
 #| msgid "To-do due today color"
-msgid "To-dos use category colors"
+msgid "To-dos use tag colors"
 msgstr "गर्नुपर्ने कार्यको आज म्याद समाप्त हुने रङ"
 
 #. i18n: ectx: whatsthis, entry, group (General View)
 #: settings/korganizer.kcfg:106
 #, kde-format
 msgid ""
-"Check this box so that to-dos will use category colors and not colors "
-"specific to their due, due today or overdue state"
+"Check this box so that to-dos will use tag colors and not colors specific to "
+"their due, due today or overdue state"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (General View)
@@ -4600,17 +4597,19 @@ msgstr ""
 #. i18n: ectx: label, entry, group (Agenda View)
 #. i18n: ectx: label, entry, group (Month View)
 #: settings/korganizer.kcfg:198 settings/korganizer.kcfg:288
-#, kde-format
-msgid "Category inside, calendar outside"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Calendar"
+msgid "Tag inside, calendar outside"
+msgstr "क्यालेन्डर"
 
 #. i18n: ectx: whatsthis, entry, group (Agenda View)
-#: settings/korganizer.kcfg:199
+#. i18n: ectx: whatsthis, entry, group (Month View)
+#: settings/korganizer.kcfg:199 settings/korganizer.kcfg:289
 #, kde-format
 msgid ""
-"Select the \"Category inside, calendar outside\" option if you would like to "
-"draw calendar items in their associated category color, with the item's "
-"border drawn in the color of its calendar. Please use the Colors and Fonts "
+"Select the \"Tag inside, calendar outside\" option if you would like to draw "
+"calendar items using their associated tag color, with the item's border "
+"drawn in the color of its calendar.  Please use the Colors and Fonts "
 "configuration page for setting these colors."
 msgstr ""
 
@@ -4618,8 +4617,8 @@ msgstr ""
 #: settings/korganizer.kcfg:200
 #, kde-format
 msgid ""
-"Draw agenda items in their category color inside and calendar color for "
-"their border"
+"Draw agenda items with their tag color inside and calendar color for their "
+"border"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Agenda View)
@@ -4627,16 +4626,17 @@ msgstr ""
 #: settings/korganizer.kcfg:203 settings/korganizer.kcfg:293
 #, fuzzy, kde-format
 #| msgid "Calendar"
-msgid "Calendar inside, category outside"
+msgid "Calendar inside, tag outside"
 msgstr "क्यालेन्डर"
 
 #. i18n: ectx: whatsthis, entry, group (Agenda View)
-#: settings/korganizer.kcfg:204
+#. i18n: ectx: whatsthis, entry, group (Month View)
+#: settings/korganizer.kcfg:204 settings/korganizer.kcfg:294
 #, kde-format
 msgid ""
-"Select the \"Calendar inside, category outside\" option if you would like to "
-"draw calendar items in their associated calendar color, with the item's "
-"border drawn in the color of its category. Please use the Colors and Fonts "
+"Select the \"Calendar inside, tag outside\" option if you would like to draw "
+"calendar items using their associated calendar color, with the item's border "
+"drawn in the color of its tag.  Please use the Colors and Fonts "
 "configuration page for setting these colors."
 msgstr ""
 
@@ -4644,8 +4644,8 @@ msgstr ""
 #: settings/korganizer.kcfg:205
 #, kde-format
 msgid ""
-"Draw agenda items in their calendar color inside and category color for "
-"their border"
+"Draw agenda items with their calendar color inside and tag color for their "
+"border"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Agenda View)
@@ -4653,22 +4653,22 @@ msgstr ""
 #: settings/korganizer.kcfg:208 settings/korganizer.kcfg:298
 #, fuzzy, kde-format
 #| msgid "Any category"
-msgid "Only category"
+msgid "Only tag"
 msgstr "कुनै पनि कोटि"
 
 #. i18n: ectx: whatsthis, entry, group (Agenda View)
 #: settings/korganizer.kcfg:209
 #, kde-format
 msgid ""
-"Select the \"Only category\" option if you would like to draw calendar items "
-"(both inside and border) in the color of their associated category. Please "
+"Select the \"Only tag\" option if you would like to draw calendar items "
+"(both inside and border) using the color of their associated tag.  Please "
 "use the Colors and Fonts configuration page for setting these colors."
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Agenda View)
 #: settings/korganizer.kcfg:210
 #, kde-format
-msgid "Draw agenda items using their category color for the inside and border"
+msgid "Draw agenda items using their tag color for the inside and border"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Agenda View)
@@ -4684,7 +4684,7 @@ msgstr "क्यालेन्डर"
 #, kde-format
 msgid ""
 "Select the \"Only calendar\" option if you would like to draw calendar items "
-"(both inside and border) in the color of their calendar. Please use the "
+"(both inside and border) using the color of their calendar. Please use the "
 "Colors and Fonts configuration page for setting these colors."
 msgstr ""
 
@@ -4875,39 +4875,19 @@ msgstr ""
 "यदि यो बाकस जाँच गरिएमा, तपाईँलाई महिना दृश्यका लागि केही खाली स्थान फाइदा हुनेछ, तर "
 "मिति नेभिगेटर, वस्तु विस्तृत विवरण र स्रोत सूचीजस्ता, अन्य विजेट प्रदर्शित गेरिने छैन ।"
 
-#. i18n: ectx: whatsthis, entry, group (Month View)
-#: settings/korganizer.kcfg:289
-#, kde-format
-msgid ""
-"Select the \"Category inside, calendar outside\" option if you would like to "
-"draw calendar items in their associated category color, with the item's "
-"border drawn in the color of its calendar.  Please use the Colors and Fonts "
-"configuration page for setting these colors."
-msgstr ""
-
 #. i18n: ectx: tooltip, entry, group (Month View)
 #: settings/korganizer.kcfg:290
 #, kde-format
 msgid ""
-"Draw month items in their category color inside and calendar color for their "
+"Draw month items with their tag color inside and calendar color for their "
 "border"
-msgstr ""
-
-#. i18n: ectx: whatsthis, entry, group (Month View)
-#: settings/korganizer.kcfg:294
-#, kde-format
-msgid ""
-"Select the \"Calendar inside, category outside\" option if you would like to "
-"draw calendar items in their associated calendar color, with the item's "
-"border drawn in the color of its category.  Please use the Colors and Fonts "
-"configuration page for setting these colors."
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Month View)
 #: settings/korganizer.kcfg:295
 #, kde-format
 msgid ""
-"Draw month items in their calendar color inside and category color for their "
+"Draw month items with their calendar color inside and tag color for their "
 "border"
 msgstr ""
 
@@ -4915,15 +4895,15 @@ msgstr ""
 #: settings/korganizer.kcfg:299
 #, kde-format
 msgid ""
-"Select the \"Only category\" option if you would like to draw calendar items "
-"(both inside and border) in the color of their associated category.  Please "
-"use the Colors and Fonts configuration page for setting these colors."
+"Select the \"Only tag\" option if you would like to draw calendar items "
+"(both inside and border) in the color of their associated tag.  Please use "
+"the Colors and Fonts configuration page for setting these colors."
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Month View)
 #: settings/korganizer.kcfg:300
 #, kde-format
-msgid "Draw month items using their category color for the inside and border"
+msgid "Draw month items using their tag color for the inside and border"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Month View)
@@ -5329,8 +5309,8 @@ msgstr "पूर्वनिर्धारित घटना रङ"
 #| "separate color for each event category below."
 msgid ""
 "Select the default event color here. The default event color will be used "
-"for events categories in your Month. Note that you can specify a separate "
-"color for each event category below."
+"for events in your Month. Note that you can specify a separate color for "
+"each event tag below."
 msgstr ""
 "पूर्वनिर्धरित घटना रङ यहाँ चयन गर्नुहोस् । पूर्वनिर्धारित घटना रङ तपाईँको एजेन्डामा कोटि "
 "छुट्याएका घटनाका लागि प्रयोग गरिन्छ । याद गर्नुहोस् तपाईँले तल कोटि छुट्याएका घटनाका "
@@ -5454,15 +5434,18 @@ msgstr "निस्क्रिय गर्नुपर्ने कार्�
 #. i18n: ectx: property (title), widget (QGroupBox, mCategoriesButtonGroup)
 #: ui/filteredit_base.ui:228
 #, kde-format
-msgid "Categories"
-msgstr "कोटि"
+msgid "Tags"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mCatHideCheck)
 #: ui/filteredit_base.ui:272
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "When this option is enabled, this filter will show all items which do "
+#| "<i>not</i> contain the selected categories."
 msgid ""
-"When this option is enabled, this filter will show all items which do "
-"<i>not</i> contain the selected categories."
+"When this option is chosen, this filter will show all items which do <i>not</"
+"i> contain any of the selected tags."
 msgstr ""
 "यो विकल्प सक्षम छ भने, यो फिल्टरले चयन गरिएका कोटि समावेश <i>नगर्ने</i> वस्तु देखाउछ ।"
 
@@ -5474,10 +5457,13 @@ msgstr "चयन गरिएका बहेक सबै देखाउन�
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, mCatShowCheck)
 #: ui/filteredit_base.ui:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "When this option is enabled, this filter will show all items containing "
+#| "at least the selected items."
 msgid ""
-"When this option is enabled, this filter will show all items containing at "
-"least the selected items."
+"When this option is chosen, this filter will show all items containing any "
+"of the selected tags."
 msgstr ""
 "यो विकल्प सक्षम पार्दा, यो फिल्टरले चयन गरिएका सबैभन्दा कम वस्तु समावेश गर्ने वस्तु देखाउछ ।"
 
@@ -5916,24 +5902,24 @@ msgstr "यसमा खोजी गर्नुहोस्"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, categoryCheck)
 #: ui/searchdialog_base.ui:127
-#, kde-format
-msgid "Include item categories in your search"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Description"
+msgid "Include item tags in your search"
+msgstr "वर्णन"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, categoryCheck)
 #: ui/searchdialog_base.ui:130
 #, fuzzy, kde-format
 #| msgid "Check this box if you want to show seconds on the current-time line."
 msgid ""
-"Check this box if you want to match item categories against your search "
-"pattern."
+"Check this box if you want to match item tags against your search pattern."
 msgstr "तपाईँ हालको समय लाईनमा सेकेन्ड देखाउन चाहनुहुन्छ भने यो बाकस जाँच गर्नुहोस् ।"
 
 #. i18n: ectx: property (text), widget (QCheckBox, categoryCheck)
 #: ui/searchdialog_base.ui:133
 #, kde-format
-msgid "Cate&gories"
-msgstr "कोटि"
+msgid "Ta&gs"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, locationCheck)
 #: ui/searchdialog_base.ui:140
@@ -6381,6 +6367,40 @@ msgstr "%1%"
 msgctxt "4 digit year"
 msgid "%1"
 msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgctxt "@title:group"
+#~ msgid "Categories"
+#~ msgstr "कोटि"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select here the event category you want to modify. You can change the "
+#~| "selected category color using the button below."
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Select here the event category you want to modify. You can change the "
+#~ "selected category color using the button below."
+#~ msgstr ""
+#~ "यहाँ तपाईँले परिमार्जन गर्न चाहेको घटना कोटि चयन गर्नुहोस् । तपाईँले तलको बटन प्रयोग "
+#~ "गरेर चयन गरिएको कोटि रङ परिवर्तन गर्न सक्नुहुन्छ ।"
+
+#, fuzzy
+#~| msgid ""
+#~| "Choose here the color of the event category selected using the combo box "
+#~| "above."
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Choose here the color of the event category selected using the combo box "
+#~ "above."
+#~ msgstr "माथिको कम्बो बाकस प्रयोग गरेर यहाँ चयन गरिएको घटना कोटिको रङ रोज्नुहोस् ।"
+
+#~ msgid "Categories"
+#~ msgstr "कोटि"
+
+#~ msgid "Cate&gories"
+#~ msgstr "कोटि"
 
 #, fuzzy
 #~| msgid "Send as iCalendar..."
