@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-25 02:15+0100\n"
+"POT-Creation-Date: 2021-03-26 02:14+0100\n"
 "PO-Revision-Date: 2007-08-24 15:02+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -6791,14 +6791,18 @@ msgid "Active Author Profile"
 msgstr "प्रोफाइल लागू गर्नुहोस्"
 
 #. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
-#: krita/kritamenu.action:1695 krita/kritamenu.action:1697
+#: krita/kritamenu.action:1695
 #, fuzzy, kde-format
 msgctxt "action"
-msgid "Reset Krita Configurations"
-msgstr "दृश्य रूपान्तरण"
+msgid "Reset All Settings"
+msgstr "सबै चयन गर्नुहोस्"
+
+#. i18n: context: Action (reset_configurations), Actions (Settings), ActionCollection (Menu)
+#: krita/kritamenu.action:1697
+#, fuzzy, kde-format
+msgctxt "action"
+msgid "Reset All Settings to Default"
+msgstr "पुर्वनिर्धारित"
 
 #. i18n: context: Action (options_configure_keybinding), Actions (Settings), ActionCollection (Menu)
 #: krita/kritamenu.action:1705
@@ -9688,7 +9692,7 @@ msgid "Behind"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpCopy2.h:32
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:73
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:74
 #: plugins/generators/seexpr/kis_wdg_seexpr_presets_save.cpp:67
 #, fuzzy, kde-format
 msgid "Copy"
@@ -11516,8 +11520,8 @@ msgstr "स्रोत फाइल:"
 #: plugins/extensions/qmic/QMic.cpp:52 plugins/extensions/qmic/QMic.cpp:78
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:182
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:187
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:238
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:243
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:270
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:275
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:286
 #: plugins/extensions/resourcemanager/resourcemanager.cpp:221
 #: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:393
@@ -11555,55 +11559,55 @@ msgstr "बचत गर्नका लागि फाइल सिर्ज�
 msgid "2. The resource location at %1 is not writable."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:468
+#: libs/resources/KisResourceLocator.cpp:471
 #, fuzzy, kde-format
 msgid "Could not add %1 to the database"
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: libs/resources/KisResourceLocator.cpp:484
+#: libs/resources/KisResourceLocator.cpp:487
 #, fuzzy, kde-format
 msgid "Could not remove storage %1 from the database"
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: libs/resources/KisResourceLocator.cpp:499
+#: libs/resources/KisResourceLocator.cpp:502
 #, kde-format
 msgid ""
 "Krita is running for the first time. Initialization will take some time."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:506
+#: libs/resources/KisResourceLocator.cpp:509
 #, fuzzy, kde-format
 #| msgid "Could not create the file for saving"
 msgid "3. Could not create the resource location at %1."
 msgstr "बचत गर्नका लागि फाइल सिर्जना गर्न सकिएन"
 
-#: libs/resources/KisResourceLocator.cpp:519
-#: libs/resources/KisResourceLocator.cpp:535
+#: libs/resources/KisResourceLocator.cpp:522
+#: libs/resources/KisResourceLocator.cpp:538
 #, fuzzy, kde-format
 msgid "Could not copy resource %1 to %2"
 msgstr "छविमा तह थप्न सकेन ।"
 
-#: libs/resources/KisResourceLocator.cpp:531
+#: libs/resources/KisResourceLocator.cpp:534
 #, fuzzy, kde-format
 msgid "Installing the resources from bundle %1."
 msgstr "कन्फिगरेसन"
 
-#: libs/resources/KisResourceLocator.cpp:553
+#: libs/resources/KisResourceLocator.cpp:556
 #, fuzzy, kde-format
 msgid "Initializing the resources."
 msgstr "संसाधन"
 
-#: libs/resources/KisResourceLocator.cpp:567
+#: libs/resources/KisResourceLocator.cpp:570
 #, kde-format
 msgid "Could not add storage %1 to the cache database"
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:588
+#: libs/resources/KisResourceLocator.cpp:591
 #, fuzzy, kde-format
 msgid "Temporary Resources"
 msgstr "कागजात आयात गर्नुहोस्।"
 
-#: libs/resources/KisResourceLocator.cpp:700
+#: libs/resources/KisResourceLocator.cpp:703
 #, fuzzy, kde-format
 #| msgid "Could not add layer to image."
 msgid "Could not synchronize %1 with the database"
@@ -11857,7 +11861,7 @@ msgstr "थम्वनेल दृश्य"
 #. i18n: ectx: property (text), widget (QRadioButton, btnAllView)
 #. i18n: ectx: property (text), widget (QPushButton, deleteAllAssistantsButton)
 #. i18n: ectx: property (text), widget (QPushButton, bnDelete)
-#: libs/resources/KisTagModel.cpp:93 libs/resources/KisTagModel.cpp:255
+#: libs/resources/KisTagModel.cpp:100 libs/resources/KisTagModel.cpp:262
 #: libs/ui/widgets/kis_paintop_presets_popup.cpp:616
 #: plugins/assistants/Assistants/AssistantsToolOptions.ui:225
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:70
@@ -11866,17 +11870,17 @@ msgstr "थम्वनेल दृश्य"
 msgid "All"
 msgstr "Alt+A"
 
-#: libs/resources/KisTagModel.cpp:120 libs/resources/KisTagModel.cpp:265
+#: libs/resources/KisTagModel.cpp:127 libs/resources/KisTagModel.cpp:272
 #, fuzzy, kde-format
 msgid "All Untagged"
 msgstr "Glsl छवि"
 
-#: libs/resources/KisTagModel.cpp:258
+#: libs/resources/KisTagModel.cpp:265
 #, fuzzy, kde-format
 msgid "All Resources"
 msgstr "संसाधन"
 
-#: libs/resources/KisTagModel.cpp:268
+#: libs/resources/KisTagModel.cpp:275
 #, fuzzy, kde-format
 msgid "All Untagged Resources"
 msgstr "संसाधन"
@@ -12119,8 +12123,8 @@ msgid "<qt>Show the tag box options.</qt>"
 msgstr ""
 
 #: libs/resourcewidgets/KisTagToolButton.cpp:63
-#: libs/resourcewidgets/TagActions.cpp:140
-#: libs/resourcewidgets/TagActions.cpp:159
+#: libs/resourcewidgets/TagActions.cpp:139
+#: libs/resourcewidgets/TagActions.cpp:158
 #, fuzzy, kde-format
 #| msgid "New Image"
 msgid "New tag"
@@ -14539,6 +14543,23 @@ msgstr "पृष्ठभूमि"
 #, fuzzy, kde-format
 msgid "Row count"
 msgstr "पृष्ठभूमि"
+
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:65
+#, fuzzy, kde-format
+msgid "Save New Brush Preset"
+msgstr "प्रिसेट:"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSaveBrushPreset)
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:80
+#: libs/ui/forms/wdgsavebrushpreset.ui:24
+#, fuzzy, kde-format
+msgid "Save Brush Preset"
+msgstr "प्रिसेट:"
+
+#: libs/ui/dialogs/KisDlgSavePreset.cpp:128
+#, kde-format
+msgid "Preset Icon Library"
+msgstr ""
 
 #: libs/ui/dialogs/KisRecoverNamedAutosaveDialog.cpp:32
 #, kde-format
@@ -17733,13 +17754,6 @@ msgstr "राउन्ड क्याप"
 msgid "Vertical radius of rectangle corners"
 msgstr ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSaveBrushPreset)
-#: libs/ui/forms/wdgsavebrushpreset.ui:24
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:79
-#, fuzzy, kde-format
-msgid "Save Brush Preset"
-msgstr "प्रिसेट:"
-
 #. i18n: ectx: property (text), widget (QLabel, newBrushNameLabel)
 #: libs/ui/forms/wdgsavebrushpreset.ui:35
 #, fuzzy, kde-format
@@ -20739,7 +20753,7 @@ msgstr "छविको रुपमा तह बचत गर्नुहो�
 
 #: libs/ui/KisMainWindow.cpp:1841
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:177
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:231
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:263
 #, fuzzy, kde-format
 msgid "You don't have any resource bundles enabled."
 msgstr "बचत गर्नका लागि फाइल सिर्जना गर्न सकिएन"
@@ -20754,7 +20768,7 @@ msgstr ""
 
 #: libs/ui/KisMainWindow.cpp:1855
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:187
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:243
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:275
 #, kde-format
 msgid ""
 "\n"
@@ -23314,16 +23328,6 @@ msgctxt "%1 is the name of a brush engine"
 msgid "%1 Engine"
 msgstr "रङ दायरा"
 
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:64
-#, fuzzy, kde-format
-msgid "Save New Brush Preset"
-msgstr "प्रिसेट:"
-
-#: libs/ui/widgets/kis_paintop_presets_save.cpp:127
-#, kde-format
-msgid "Preset Icon Library"
-msgstr ""
-
 #: libs/ui/widgets/kis_preset_live_preview_view.cpp:170
 #, kde-format
 msgid "No Preview for this engine"
@@ -23718,7 +23722,7 @@ msgstr "मा"
 #: plugins/filters/asccdl/wdg_asccdl.ui:21
 #: plugins/filters/asccdl/wdg_asccdl.ui:28
 #: plugins/filters/asccdl/wdg_asccdl.ui:49
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:190
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:189
 #, fuzzy, kde-format
 #| msgid "Pressure"
 msgid "PushButton"
@@ -28273,7 +28277,7 @@ msgstr "फिकाहरियो"
 #, kde-format
 msgctxt "@tooltip"
 msgid ""
-"Save palette explicitely, will also happen automatically on exiting Krita."
+"Save palette explicitly, will also happen automatically on exiting Krita."
 msgstr ""
 
 #: plugins/dockers/palettedocker/palettedocker_dock.cpp:368
@@ -31278,7 +31282,7 @@ msgid "Create"
 msgstr "सिर्जना गर्नुहोस्"
 
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:147
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:287
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:319
 #, fuzzy, kde-format
 msgctxt ""
 "In bundle manager; press button to deactivate the bundle (remove resources "
@@ -31287,7 +31291,7 @@ msgid "Deactivate"
 msgstr "सक्रिय तह"
 
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:181
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:237
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:269
 #, kde-format
 msgid ""
 "\n"
@@ -31306,26 +31310,26 @@ msgstr ""
 msgid "Select the bundle"
 msgstr "चयन गर्नुहोस्"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:291
-#, fuzzy, kde-format
-msgctxt ""
-"In bundle manager; press button to activate the bundle (add resources from "
-"the bundle to the available resources)"
-msgid "Activate"
-msgstr "सक्रिय तह"
-
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:340
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:217
 #, kde-format
 msgid "New name for the bundle"
 msgstr ""
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:340
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:217
 #, fuzzy, kde-format
 #| msgid "The file %1 does not exist."
 msgid ""
 "The old filename %1 is taken.\n"
 "New name:"
 msgstr "फाइल %1 अवस्थित छैन ।"
+
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:323
+#, fuzzy, kde-format
+msgctxt ""
+"In bundle manager; press button to activate the bundle (add resources from "
+"the bundle to the available resources)"
+msgid "Activate"
+msgstr "सक्रिय तह"
 
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:60
 #, fuzzy, kde-format
@@ -38089,7 +38093,7 @@ msgstr "वर्ग"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkInvert)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, btnAntialiasing)
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:109
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:238
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:235
 #, kde-format
 msgid "The border of the brush will be smoothed to avoid aliasing"
 msgstr ""
@@ -38496,39 +38500,39 @@ msgid "Texturing Mode:"
 msgstr "मिटरिङ मोड:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpacing_2)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:180
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:179
 #, fuzzy, kde-format
 msgid "Cutoff"
 msgstr "कफी"
 
 #. i18n: ectx: property (text), widget (QLabel, lblNeutralPoint)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:201
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:199
 #, fuzzy, kde-format
 msgid "Neutral Point"
 msgstr "लक्ष्य:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSpikes)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:225
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:222
 #, fuzzy, kde-format
 msgid "Horizontal Offset:"
 msgstr "तेर्सो;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkInvert)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:241
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:238
 #, fuzzy, kde-format
 msgid "Invert Pattern"
 msgstr "संतृप्ति"
 
 #. i18n: ectx: property (text), widget (QCheckBox, randomOffsetY)
 #. i18n: ectx: property (text), widget (QCheckBox, randomOffsetX)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:251
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:280
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:248
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:277
 #, fuzzy, kde-format
 msgid "Random Offset"
 msgstr "अनियमित होहल्ला..."
 
 #. i18n: ectx: property (text), widget (QLabel, lblRandomness)
-#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:264
+#: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:261
 #, fuzzy, kde-format
 msgid "Vertical Offset:"
 msgstr "ठाडो:"
@@ -45964,6 +45968,11 @@ msgid "Reference Images Tool"
 msgstr "सन्दर्भ छवि:"
 
 #, fuzzy
+#~ msgctxt "action"
+#~ msgid "Reset Krita Configurations"
+#~ msgstr "दृश्य रूपान्तरण"
+
+#, fuzzy
 #~ msgid "Resource Folder"
 #~ msgstr "स्रोत फाइल:"
 
@@ -48979,10 +48988,6 @@ msgstr "सन्दर्भ छवि:"
 #, fuzzy
 #~ msgid "Subtract (Shortcut S)"
 #~ msgstr "छोटो"
-
-#, fuzzy
-#~ msgid "Reset All Rings"
-#~ msgstr "सबै चयन गर्नुहोस्"
 
 #, fuzzy
 #~ msgid "Reset Selected Ring"
@@ -55666,11 +55671,6 @@ msgstr "सन्दर्भ छवि:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Invert Saturation"
 #~ msgstr "संतृप्ति"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reset to Default"
-#~ msgstr "पुर्वनिर्धारित"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
