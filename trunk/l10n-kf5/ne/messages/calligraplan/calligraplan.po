@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-29 00:17+0000\n"
+"POT-Creation-Date: 2021-10-01 00:19+0000\n"
 "PO-Revision-Date: 2007-08-23 20:10+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -569,87 +569,72 @@ msgstr ""
 msgid "List of paths to project templates"
 msgstr ""
 
-#: config/ConfigDialog.cpp:34
+#. i18n: ectx: label, entry (AutoSave), group (Interface)
+#: calligraplansettings.kcfg:387
+#, fuzzy, kde-format
+#| msgid "Add Interval"
+msgid "Autosave interval"
+msgstr "अन्तराल थप्नुहोस्"
+
+#. i18n: ectx: label, entry (CreateBackupFile), group (Interface)
+#: calligraplansettings.kcfg:391
+#, fuzzy, kde-format
+#| msgid "Create sub-schedule"
+msgid "Create a backup file"
+msgstr "सहायक-तालिका सिर्जना गर्नुहोस्"
+
+#: config/ConfigDialog.cpp:36
 #, fuzzy, kde-format
 #| msgid "Project Settings"
 msgid "Project Defaults"
 msgstr "परियोजना सेटिङ"
 
-#: config/ConfigDialog.cpp:35 kptview.cpp:621
+#: config/ConfigDialog.cpp:37 kptview.cpp:621
 #, kde-format
 msgid "Work & Vacation"
 msgstr "कार्य र विदा"
 
-#: config/ConfigDialog.cpp:36
+#: config/ConfigDialog.cpp:38
 #, kde-format
 msgid "Task Defaults"
 msgstr "कार्य पूर्वानिर्धारण"
 
-#: config/ConfigDialog.cpp:37
+#: config/ConfigDialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Task Progress"
 msgid "Task Colors"
 msgstr "कार्य प्रगति"
 
-#: config/ConfigDialog.cpp:39
+#: config/ConfigDialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Task notes."
 msgid "Task Modules"
 msgstr "कार्य द्रष्टव्य ।"
 
-#: config/ConfigDialog.cpp:43
+#: config/ConfigDialog.cpp:45
 #, fuzzy, kde-format
 #| msgid "Resource not available"
 msgid "Work Package"
 msgstr "संसाधन उपलब्ध छैन"
 
-#: config/ConfigDialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Documents"
-msgid "Documentation"
-msgstr "कागजात"
-
-#: config/ConfigDialog.cpp:47
+#: config/ConfigDialog.cpp:48
 #, fuzzy, kde-format
 #| msgid "Generate Report"
 msgid "Project Templates"
 msgstr "प्रतिवेदन उत्पन्न्न गर्नुहोस्"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
-#: config/ConfigDocumentationPanel.ui:40 config/kptconfigtaskpanelbase.ui:33
-#: config/kptconfigtaskpanelbase.ui:65
-#, kde-format
-msgid ""
-"The person responsible for this task.\n"
-"\n"
-"This is not limited to persons available in a resource group but can be "
-"anyone. You can even directly access your address book with the Choose "
-"button."
-msgstr ""
-"यो कार्यका लागि व्यक्ति उत्तरदायी छ ।\n"
-"\n"
-"संसाधन समूहमा उपलब्ध व्यक्ति सीमित गरिएको छैन तर जो कोही पनि हुन सक्छ । तपाईँले छनौट "
-"बटनसँग तपाईँको ठेगाना पुस्तकमा प्रत्यक्ष पहुँच प्राप्त गर्न सक्नुहुन्छ ।"
-
-#. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: config/ConfigDocumentationPanel.ui:43
+#: config/ConfigDialog.cpp:54
 #, fuzzy, kde-format
 #| msgid "Documents"
-msgid "Documentation:"
+msgctxt "@title:tab Document settings page"
+msgid "Document"
 msgstr "कागजात"
 
-#. i18n: ectx: property (text), widget (QLabel, contextlabel)
-#: config/ConfigDocumentationPanel.ui:79
-#, kde-format
-msgid "Context help:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: config/ConfigDocumentationPanel.ui:95
-#, kde-format
-msgid "Context language"
-msgstr ""
+#: config/ConfigDialog.cpp:58
+#, fuzzy, kde-format
+#| msgid "Documents"
+msgid "Documentation"
+msgstr "कागजात"
 
 #: config/ConfigProjectPanel.cpp:36
 #, kde-kuit-format
@@ -795,8 +780,8 @@ msgid "Week"
 msgstr "हप्ता"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GenerateHolidays)
-#: config/ConfigWorkVacationPanel.ui:73 kptmaindocument.cpp:1663
-#: kptmaindocument.cpp:1667
+#: config/ConfigWorkVacationPanel.ui:73 kptmaindocument.cpp:1680
+#: kptmaindocument.cpp:1684
 #, kde-format
 msgid "Holidays"
 msgstr ""
@@ -1006,6 +991,22 @@ msgstr "त्रुटि"
 msgctxt "@title:tab"
 msgid "Milestone"
 msgstr "माइलस्टोन"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
+#: config/kptconfigtaskpanelbase.ui:33 config/kptconfigtaskpanelbase.ui:65
+#, kde-format
+msgid ""
+"The person responsible for this task.\n"
+"\n"
+"This is not limited to persons available in a resource group but can be "
+"anyone. You can even directly access your address book with the Choose "
+"button."
+msgstr ""
+"यो कार्यका लागि व्यक्ति उत्तरदायी छ ।\n"
+"\n"
+"संसाधन समूहमा उपलब्ध व्यक्ति सीमित गरिएको छैन तर जो कोही पनि हुन सक्छ । तपाईँले छनौट "
+"बटनसँग तपाईँको ठेगाना पुस्तकमा प्रत्यक्ष पहुँच प्राप्त गर्न सक्नुहुन्छ ।"
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
 #: config/kptconfigtaskpanelbase.ui:36
@@ -1499,61 +1500,76 @@ msgstr ""
 "%1)\n"
 "यसलाई केडीई प्लाटो को यो संस्करणमा खोल्दा केही सूचना हराउने छ ।"
 
-#: kptmaindocument.cpp:1068 kptmaindocument.cpp:1116 kptmaindocument.cpp:1263
+#: kptmaindocument.cpp:1069 kptmaindocument.cpp:1280
 #, kde-format
 msgid "Internal error, failed to insert file."
 msgstr ""
 
-#: kptmaindocument.cpp:1294
+#: kptmaindocument.cpp:1131
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Failed to load shared resources into project %1:<nl/>Internal error, failed "
+"to insert file."
+msgstr ""
+
+#: kptmaindocument.cpp:1141
+#, fuzzy, kde-kuit-format
+#| msgid "Assign resources:"
+msgctxt "@info"
+msgid "Failed to load shared resources into project %1:<nl/>%2"
+msgstr "संसाधन मानाङ्कन गर्नुहोस्:"
+
+#: kptmaindocument.cpp:1311
 #, fuzzy
 #| msgid "The project name."
 msgctxt "(qtundo-format)"
 msgid "Insert project"
 msgstr "परियोजना नाम ।"
 
-#: kptmaindocument.cpp:1374
+#: kptmaindocument.cpp:1391
 #, fuzzy, kde-format
 #| msgid "Group"
 msgid "Group: %1"
 msgstr "समूह"
 
-#: kptmaindocument.cpp:1381
+#: kptmaindocument.cpp:1398
 #, fuzzy, kde-format
 #| msgid "Resources"
 msgid "Resource: %1"
 msgstr "संसाधन"
 
-#: kptmaindocument.cpp:1386
+#: kptmaindocument.cpp:1403
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Calendar: %1"
 msgstr "पात्रो"
 
-#: kptmaindocument.cpp:1393
+#: kptmaindocument.cpp:1410
 #, kde-format
 msgid ""
 "Shared resources has been removed from the shared resources file.\n"
 "Select how they shall be treated in this project."
 msgstr ""
 
-#: kptmaindocument.cpp:1396
+#: kptmaindocument.cpp:1413
 #, fuzzy, kde-kuit-format
 #| msgid "Assign resources:"
 msgctxt "@title:window"
 msgid "Shared resources"
 msgstr "संसाधन मानाङ्कन गर्नुहोस्:"
 
-#: kptmaindocument.cpp:1398
+#: kptmaindocument.cpp:1415
 #, kde-format
 msgid "Convert"
 msgstr ""
 
-#: kptmaindocument.cpp:1399
+#: kptmaindocument.cpp:1416
 #, kde-format
 msgid "Keep"
 msgstr ""
 
-#: kptmaindocument.cpp:1633
+#: kptmaindocument.cpp:1650
 #, kde-format
 msgctxt "Base calendar name"
 msgid "Base"
@@ -2473,6 +2489,11 @@ msgid "The description of the category"
 msgstr "खाताको वर्णन"
 
 #, fuzzy
+#~| msgid "Documents"
+#~ msgid "Documentation:"
+#~ msgstr "कागजात"
+
+#, fuzzy
 #~| msgid "Assign resources:"
 #~ msgid "Directory that contains projects that share resources"
 #~ msgstr "संसाधन मानाङ्कन गर्नुहोस्:"
@@ -2534,11 +2555,6 @@ msgstr "खाताको वर्णन"
 #~| msgid "Description"
 #~ msgid "Description..."
 #~ msgstr "वर्णन"
-
-#, fuzzy
-#~| msgid "Documents"
-#~ msgid "Documents..."
-#~ msgstr "कागजात"
 
 #~ msgid "Indent Task"
 #~ msgstr "इन्डेण्ट कार्य"
@@ -4457,9 +4473,6 @@ msgstr "खाताको वर्णन"
 #~ msgid "To:"
 #~ msgstr "लाई:"
 
-#~ msgid "Add Interval"
-#~ msgstr "अन्तराल थप्नुहोस्"
-
 #~ msgid "Stretch last section"
 #~ msgstr "अन्तिम खण्ड तन्काउनुहोस्"
 
@@ -5100,9 +5113,6 @@ msgstr "खाताको वर्णन"
 
 #~ msgid "Delete Selected Schedules"
 #~ msgstr "चयन गरिएका तलिका मेट्नुहोस्"
-
-#~ msgid "Create sub-schedule"
-#~ msgstr "सहायक-तालिका सिर्जना गर्नुहोस्"
 
 #, fuzzy
 #~| msgid "PertResult"
