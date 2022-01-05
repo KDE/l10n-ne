@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-20 00:19+0000\n"
+"POT-Creation-Date: 2022-01-05 00:47+0000\n"
 "PO-Revision-Date: 2007-11-01 20:27+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -792,7 +792,7 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_WindowSnapZone)
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_CenterSnapZone)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_FocusStealingPreventionLevel)
-#: focus.ui:118 moving.ui:53 moving.ui:75 moving.ui:97
+#: focus.ui:118 moving.ui:33 moving.ui:65 moving.ui:97
 #, fuzzy, kde-format
 #| msgctxt "Focus Stealing Prevention Level"
 #| msgid "None"
@@ -1241,40 +1241,15 @@ msgstr "बीचको बटन:"
 msgid "Behavior on <em>right</em> click onto the maximize button."
 msgstr "ठूलो पार्ने बटनको <em>दायाँ</em> क्लिक गर्दा व्यवहार ।"
 
-#. i18n: ectx: property (text), widget (QLabel, geometryTipLabel)
-#: moving.ui:20
-#, kde-format
-msgid "Window &geometry:"
-msgstr ""
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_GeometryTip)
-#: moving.ui:30
-#, kde-format
-msgid ""
-"Enable this option if you want a window's geometry to be displayed while it "
-"is being moved or resized. The window position relative to the top-left "
-"corner of the screen is displayed together with its size."
-msgstr ""
-"यदि तपाईँ यसलाई सार्दा वा रिसाइज भइरहदा सञ्झ्यालको रखागणित प्रदर्शित गर्न चाहनुहुन्छ "
-"भने यो विकल्प सक्षम पार्नुहोस् । सञ्झ्याल स्थिति सम्बन्धित पर्दाको माथिल्लो बायाँ कुनामा "
-"यसको आकारमा प्रदर्शित हुन्छ ।"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_GeometryTip)
-#: moving.ui:33
-#, fuzzy, kde-format
-#| msgid "Display window &geometry when moving or resizing"
-msgid "Display when moving or resizing"
-msgstr "सार्दा वा रिसाइज गर्दा सञ्झ्याल रेखागणित प्रदर्शन गर्नुहोस्"
-
 #. i18n: ectx: property (text), widget (QLabel, borderSnapLabel)
-#: moving.ui:40
+#: moving.ui:20
 #, fuzzy, kde-format
 #| msgid "&Border snap zone:"
 msgid "Screen &edge snap zone:"
 msgstr "किनारा स्न्याप क्षेत्र:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_BorderSnapZone)
-#: moving.ui:50
+#: moving.ui:30
 #, fuzzy, kde-format
 #| msgid ""
 #| "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
@@ -1290,15 +1265,21 @@ msgstr ""
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_BorderSnapZone)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_WindowSnapZone)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_CenterSnapZone)
-#: moving.ui:56 moving.ui:78 moving.ui:100
+#: moving.ui:36 moving.ui:68 moving.ui:100
 #, fuzzy, kde-format
 #| msgid " pixel"
 #| msgid_plural " pixels"
 msgid " px"
 msgstr "पिक्सेल"
 
+#. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
+#: moving.ui:52
+#, kde-format
+msgid "&Window snap zone:"
+msgstr "सञ्झ्याल स्न्याप क्षेत्र:"
+
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_WindowSnapZone)
-#: moving.ui:72
+#: moving.ui:62
 #, kde-format
 msgid ""
 "Here you can set the snap zone for windows, i.e. the 'strength' of the "
@@ -1307,6 +1288,13 @@ msgid ""
 msgstr ""
 "यहाँ तपाईँले सञ्झ्यालका लागि स्न्याप क्षेत्र सेट गर्न सक्नुहुन्छ, जस्तै: म्याग्नेटिक फिल्डको शक्ति "
 "जसले सञ्झ्याललाई अन्य सञ्झ्यालको नजिक सार्दा एक अर्कामा स्न्याप गराउँछ ।"
+
+#. i18n: ectx: property (text), widget (QLabel, centerSnaplabel)
+#: moving.ui:84
+#, fuzzy, kde-format
+#| msgid "&Border snap zone:"
+msgid "&Center snap zone:"
+msgstr "किनारा स्न्याप क्षेत्र:"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_CenterSnapZone)
 #: moving.ui:94
@@ -1323,8 +1311,15 @@ msgstr ""
 "यहाँ तपाईँले पर्दा किनाराका लागि स्न्याप क्षेत्र सेट गर्न सक्नुहुन्छ, जस्तै: म्याग्नेटिक फिल्डको "
 "'शक्ति' जसले यसको नजिक सञ्झ्याल सार्दा किनारामा सञ्झ्याललाई स्न्याप पार्छ ।"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_SnapOnlyWhenOverlapping)
+#. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
 #: moving.ui:113
+#, fuzzy, kde-format
+#| msgid "Windows"
+msgid "&Snap windows:"
+msgstr "सञ्झ्याल"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_SnapOnlyWhenOverlapping)
+#: moving.ui:123
 #, kde-format
 msgid ""
 "Here you can set that windows will be only snapped if you try to overlap "
@@ -1335,31 +1330,11 @@ msgstr ""
 "सञ्झ्याल अन्य सञ्झ्याल वा किनारामा मात्र आउदा तीनिहरू स्न्याप हुने छैनन् ।"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SnapOnlyWhenOverlapping)
-#: moving.ui:116
+#: moving.ui:126
 #, fuzzy, kde-format
 #| msgid "Snap windows onl&y when overlapping"
 msgid "Only when overlapping"
 msgstr "खप्ट्याउदा सञ्झ्याल मात्र स्न्याप हुन्छ"
-
-#. i18n: ectx: property (text), widget (QLabel, windowSnapLabel)
-#: moving.ui:123
-#, kde-format
-msgid "&Window snap zone:"
-msgstr "सञ्झ्याल स्न्याप क्षेत्र:"
-
-#. i18n: ectx: property (text), widget (QLabel, centerSnaplabel)
-#: moving.ui:133
-#, fuzzy, kde-format
-#| msgid "&Border snap zone:"
-msgid "&Center snap zone:"
-msgstr "किनारा स्न्याप क्षेत्र:"
-
-#. i18n: ectx: property (text), widget (QLabel, OverlapSnapLabel)
-#: moving.ui:143
-#, fuzzy, kde-format
-#| msgid "Windows"
-msgid "&Snap windows:"
-msgstr "सञ्झ्याल"
 
 #: windows.cpp:98
 #, kde-format
@@ -1416,6 +1391,20 @@ msgid ""
 "activation policy and will not work. You very likely want to use <em>Focus "
 "follows mouse (mouse precedence)</em> instead!"
 msgstr ""
+
+#~ msgid ""
+#~ "Enable this option if you want a window's geometry to be displayed while "
+#~ "it is being moved or resized. The window position relative to the top-"
+#~ "left corner of the screen is displayed together with its size."
+#~ msgstr ""
+#~ "यदि तपाईँ यसलाई सार्दा वा रिसाइज भइरहदा सञ्झ्यालको रखागणित प्रदर्शित गर्न "
+#~ "चाहनुहुन्छ भने यो विकल्प सक्षम पार्नुहोस् । सञ्झ्याल स्थिति सम्बन्धित पर्दाको माथिल्लो "
+#~ "बायाँ कुनामा यसको आकारमा प्रदर्शित हुन्छ ।"
+
+#, fuzzy
+#~| msgid "Display window &geometry when moving or resizing"
+#~ msgid "Display when moving or resizing"
+#~ msgstr "सार्दा वा रिसाइज गर्दा सञ्झ्याल रेखागणित प्रदर्शन गर्नुहोस्"
 
 #~ msgid "Maximize (vertical only)"
 #~ msgstr "ठूलो पार्नुहोस् (ठाडो मात्र)"
