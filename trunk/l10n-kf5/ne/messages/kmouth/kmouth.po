@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmouth\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-11 00:38+0000\n"
+"POT-Creation-Date: 2022-03-16 00:38+0000\n"
 "PO-Revision-Date: 2007-08-19 15:01+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -848,33 +848,33 @@ msgstr "बचत गर्ने वा नगर्ने सोध्नु�
 msgid "Text-to-Speech"
 msgstr "पाठ वाचक"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, useQtSpeech)
-#: texttospeechconfigurationui.ui:35
-#, fuzzy, kde-format
-#| msgid ""
-#| "This check box specifies KMouth tries to use the KTTSD speech service "
-#| "prior to calling the speech synthesizer directly. The KTTSD speech "
-#| "service is a KDE daemon which gives KDE applications a standardized "
-#| "interface for speech synthesis and is currently developed in CVS."
-msgid ""
-"<html><head/><body><p>This check box specifies KMouth tries to use the "
-"system speech service prior to calling the speech synthesizer directly. The "
-"system speech service is a Qt library which wraps speech-dispatcher on "
-"linux, and native speech systems on other platforms.</p></body></html>"
-msgstr ""
-"यो जाँच बाकसले वाचन सिन्थेसाइजर प्रत्यक्ष रुपमा कल गर्नु भन्दा पहिले KTTSD वाचन सेवा "
-"प्रयोग गर्न केडीई माउथको प्रयास निर्दिष्ट गर्छ । KTTSD वाचन हालै सी भी एस मा विकास "
-"गरिएको र वाचन सिन्थेसिसका लागि केडीई अनुप्रयोगको मानक इन्टरफेस दिने केडीई डेइमन हो ।"
-
-#. i18n: ectx: property (text), widget (QCheckBox, useQtSpeech)
-#: texttospeechconfigurationui.ui:38
+#. i18n: ectx: property (title), widget (QGroupBox, qtspeechGroupBox)
+#: texttospeechconfigurationui.ui:32
 #, kde-format
 msgid "&Use default speech system"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: texttospeechconfigurationui.ui:41
+#, kde-format
+msgid "&Engine:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: texttospeechconfigurationui.ui:61
+#, kde-format
+msgid "&Voice:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, alternativeGroupBox)
+#: texttospeechconfigurationui.ui:87
+#, kde-format
+msgid "Alternative"
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (QLabel, urlLabel)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlReq)
-#: texttospeechconfigurationui.ui:72 texttospeechconfigurationui.ui:95
+#: texttospeechconfigurationui.ui:120 texttospeechconfigurationui.ui:143
 #, no-c-format, kde-format
 msgid ""
 "This field specifies both the command used for speaking texts and its "
@@ -892,30 +892,14 @@ msgstr ""
 "%% -- प्रतिशत चिन्ह"
 
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
-#: texttospeechconfigurationui.ui:75
+#: texttospeechconfigurationui.ui:123
 #, fuzzy, kde-format
 #| msgid "C&ommand for speaking texts:"
-msgid "Alternative command for speaking &texts:"
+msgid "Command for speaking &texts:"
 msgstr "पाठ वाचनका लागि आदेश"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, characterCodingLabel)
-#. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: texttospeechconfigurationui.ui:127 texttospeechconfigurationui.ui:140
-#, kde-format
-msgid ""
-"This combo box specifies which character encoding is used for passing the "
-"text."
-msgstr "यो कम्बो बाकसले पाठलाई पास गर्नका लागि प्रयोग गर्ने सङ्केतन निर्दिष्ट गर्छ ।"
-
-#. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: texttospeechconfigurationui.ui:130
-#, fuzzy, kde-format
-#| msgid "Character &encoding:"
-msgid "Character encodin&g:"
-msgstr "क्यारेक्टर सङ्केतन:"
-
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, stdInButton)
-#: texttospeechconfigurationui.ui:149
+#: texttospeechconfigurationui.ui:152
 #, kde-format
 msgid ""
 "This check box specifies whether the text is sent as standard input to the "
@@ -924,12 +908,28 @@ msgstr ""
 "यो जाँच बाकसले वाचन सिन्थेसाइजर मानक आगतका रुपमा पाठ पठाएको नपठाएको निर्दिष्ट गर्छ ।"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stdInButton)
-#: texttospeechconfigurationui.ui:152
+#: texttospeechconfigurationui.ui:155
 #, kde-format
 msgid "Send the data as standard &input"
 msgstr "मानक आगतका रुपमा डेटा पठाउनुहोस्"
 
-#: texttospeechconfigurationwidget.cpp:46
+#. i18n: ectx: property (whatsThis), widget (QLabel, characterCodingLabel)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
+#: texttospeechconfigurationui.ui:185 texttospeechconfigurationui.ui:198
+#, kde-format
+msgid ""
+"This combo box specifies which character encoding is used for passing the "
+"text."
+msgstr "यो कम्बो बाकसले पाठलाई पास गर्नका लागि प्रयोग गर्ने सङ्केतन निर्दिष्ट गर्छ ।"
+
+#. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
+#: texttospeechconfigurationui.ui:188
+#, fuzzy, kde-format
+#| msgid "Character &encoding:"
+msgid "Character encodin&g:"
+msgstr "क्यारेक्टर सङ्केतन:"
+
+#: texttospeechconfigurationwidget.cpp:65
 #: wordcompletion/dictionarycreationwizard.cpp:116
 #, fuzzy, kde-format
 #| msgid "Local"
@@ -937,14 +937,14 @@ msgctxt "Local characterset"
 msgid "Local"
 msgstr "स्थानीय"
 
-#: texttospeechconfigurationwidget.cpp:49
+#: texttospeechconfigurationwidget.cpp:68
 #, fuzzy, kde-format
 #| msgid "Latin1"
 msgctxt "Latin1 characterset"
 msgid "Latin1"
 msgstr "ल्याटिन 1"
 
-#: texttospeechconfigurationwidget.cpp:50
+#: texttospeechconfigurationwidget.cpp:69
 #: wordcompletion/dictionarycreationwizard.cpp:120
 #, kde-format
 msgid "Unicode"
@@ -1365,6 +1365,23 @@ msgstr "शब्दकोश पद वर्णन गर्दैछ..."
 #, kde-format
 msgid "Performing spell check..."
 msgstr "हिज्जे परीक्षण सम्पादन गर्दैछ..."
+
+#, fuzzy
+#~| msgid ""
+#~| "This check box specifies KMouth tries to use the KTTSD speech service "
+#~| "prior to calling the speech synthesizer directly. The KTTSD speech "
+#~| "service is a KDE daemon which gives KDE applications a standardized "
+#~| "interface for speech synthesis and is currently developed in CVS."
+#~ msgid ""
+#~ "<html><head/><body><p>This check box specifies KMouth tries to use the "
+#~ "system speech service prior to calling the speech synthesizer directly. "
+#~ "The system speech service is a Qt library which wraps speech-dispatcher "
+#~ "on linux, and native speech systems on other platforms.</p></body></html>"
+#~ msgstr ""
+#~ "यो जाँच बाकसले वाचन सिन्थेसाइजर प्रत्यक्ष रुपमा कल गर्नु भन्दा पहिले KTTSD वाचन सेवा "
+#~ "प्रयोग गर्न केडीई माउथको प्रयास निर्दिष्ट गर्छ । KTTSD वाचन हालै सी भी एस मा "
+#~ "विकास गरिएको र वाचन सिन्थेसिसका लागि केडीई अनुप्रयोगको मानक इन्टरफेस दिने केडीई "
+#~ "डेइमन हो ।"
 
 #, fuzzy
 #~| msgid "KMouth"
