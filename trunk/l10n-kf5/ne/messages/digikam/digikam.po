@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-24 00:41+0000\n"
+"POT-Creation-Date: 2022-05-25 00:42+0000\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -24976,12 +24976,17 @@ msgstr "साधारण सेटिङ"
 msgid "Export by Web Service"
 msgstr "स्याचुरेसन:"
 
-#: core/dplugins/rawimport/darktable/rawimportdarktableplugin.cpp:281
+#: core/dplugins/rawimport/darktable/rawimportdarktableplugin.cpp:282
 #, kde-format
 msgid ""
 "Error to import RAW image with DarkTable\n"
 "Close this dialog to load RAW image with native import tool"
 msgstr ""
+
+#: core/dplugins/rawimport/darktable/rawimportdarktableplugin.cpp:297
+#, fuzzy, kde-format
+msgid "DarkTable Raw Conversion"
+msgstr "कलरस्पेस"
 
 #: core/dplugins/rawimport/native/rawimport.cpp:73
 #, fuzzy, kde-format
@@ -25154,19 +25159,29 @@ msgstr "पूर्वनिर्धारित प्रोफाइल प�
 msgid "Use general Raw decoding settings to load this image in editor."
 msgstr ""
 
-#: core/dplugins/rawimport/rawtherapee/rawimportrawtherapeeplugin.cpp:220
+#: core/dplugins/rawimport/rawtherapee/rawimportrawtherapeeplugin.cpp:221
 #, kde-format
 msgid ""
 "Error to import RAW image with RawTherapee\n"
 "Close this dialog to load RAW image with native import tool"
 msgstr ""
 
-#: core/dplugins/rawimport/ufraw/rawimportufrawplugin.cpp:213
+#: core/dplugins/rawimport/rawtherapee/rawimportrawtherapeeplugin.cpp:236
+#, fuzzy, kde-format
+msgid "RawTherapee Raw Conversion"
+msgstr "कलरस्पेस"
+
+#: core/dplugins/rawimport/ufraw/rawimportufrawplugin.cpp:212
 #, kde-format
 msgid ""
 "Error to import RAW image with UFRaw\n"
 "Close this dialog to load RAW image with native import tool"
 msgstr ""
+
+#: core/dplugins/rawimport/ufraw/rawimportufrawplugin.cpp:227
+#, fuzzy, kde-format
+msgid "UFRaw Raw Conversion"
+msgstr "कलरस्पेस"
 
 #: core/libs/album/engine/album.cpp:378
 #: core/libs/database/utils/ifaces/dio.cpp:714
@@ -29487,7 +29502,7 @@ msgctxt "Convert image bit depth"
 msgid "Convert Depth"
 msgstr "रूपान्तरण गर्नुहोस्"
 
-#: core/libs/dimg/filters/dimgfiltermanager.cpp:435
+#: core/libs/dimg/filters/dimgfiltermanager.cpp:438
 #, fuzzy, kde-format
 msgid "Unknown filter"
 msgstr "अज्ञात त्रुटि"
@@ -38602,7 +38617,7 @@ msgstr ""
 msgid "Toggle playing in a loop"
 msgstr "लुपमा प्रर्दशन"
 
-#: core/libs/video/qtav/src/codec/AVDecoder.cpp:112
+#: core/libs/video/qtav/src/codec/AVDecoder.cpp:138
 #, fuzzy, kde-format
 msgid "No codec could be found for: "
 msgstr "अडियो फाइल"
@@ -38714,17 +38729,17 @@ msgstr ""
 msgid "Multithread decoding may crash"
 msgstr ""
 
-#: core/libs/video/qtav/src/codec/video/VideoDecoderVAAPI.cpp:390
+#: core/libs/video/qtav/src/codec/video/VideoDecoderVAAPI.cpp:403
 #, kde-format
 msgid "Decoding surfaces 0: auto"
 msgstr ""
 
-#: core/libs/video/qtav/src/codec/video/VideoDecoderVAAPI.cpp:391
+#: core/libs/video/qtav/src/codec/video/VideoDecoderVAAPI.cpp:404
 #, kde-format
 msgid "Maybe faster"
 msgstr ""
 
-#: core/libs/video/qtav/src/codec/video/VideoDecoderVAAPI.cpp:732
+#: core/libs/video/qtav/src/codec/video/VideoDecoderVAAPI.cpp:745
 #, kde-format
 msgid "VA API version %1.%2; Vendor: %3;"
 msgstr ""
@@ -38890,7 +38905,7 @@ msgstr "निर्यात"
 msgid "Access denied"
 msgstr "मार्गमा पहुँच गर्न अस्विकार गर्यो"
 
-#: core/libs/video/qtav/src/filter/LibAVFilter.cpp:350
+#: core/libs/video/qtav/src/filter/LibAVFilter.cpp:360
 #, fuzzy, kde-format
 msgid "Options:"
 msgstr "इन्टरफेस विकल्प"
@@ -39506,17 +39521,17 @@ msgstr "लोड गर्नुहोस्..."
 msgid "Embedded JPEG Preview"
 msgstr "सम्मिलित पूर्वावलोकन देखाउनुहोस्"
 
-#: core/libs/widgets/graphicsview/dimgpreviewitem.cpp:217
+#: core/libs/widgets/graphicsview/dimgpreviewitem.cpp:221
 #, kde-format
 msgid "Half Size Raw Preview"
 msgstr ""
 
-#: core/libs/widgets/graphicsview/dimgpreviewitem.cpp:229
+#: core/libs/widgets/graphicsview/dimgpreviewitem.cpp:233
 #, kde-format
 msgid "Reduced Size Preview"
 msgstr ""
 
-#: core/libs/widgets/graphicsview/dimgpreviewitem.cpp:242
+#: core/libs/widgets/graphicsview/dimgpreviewitem.cpp:246
 #, fuzzy, kde-format
 msgid "Failed to load image"
 msgstr "\"%1\" छवि लोड गर्न असफल"
@@ -54625,53 +54640,59 @@ msgstr ""
 
 #: core/utilities/setup/album/setupalbumview.cpp:319
 #, kde-format
+msgctxt "@item Original, full-size data as RAW image preview source"
+msgid "Raw data in full size (high quality)"
+msgstr ""
+
+#: core/utilities/setup/album/setupalbumview.cpp:321
+#, kde-format
 msgid "Preview image is converted to 8 bits for a faster viewing"
 msgstr ""
 
-#: core/utilities/setup/album/setupalbumview.cpp:320
+#: core/utilities/setup/album/setupalbumview.cpp:322
 #, kde-format
 msgid ""
 "Uncheck this if you do not want to convert a 16 bits preview image to 8 bits."
 msgstr ""
 
-#: core/utilities/setup/album/setupalbumview.cpp:322
+#: core/utilities/setup/album/setupalbumview.cpp:324
 #: core/utilities/setup/camera/setupcamera.cpp:552
 #, kde-format
 msgid "Show icons and text over preview"
 msgstr ""
 
-#: core/utilities/setup/album/setupalbumview.cpp:323
+#: core/utilities/setup/album/setupalbumview.cpp:325
 #: core/utilities/setup/camera/setupcamera.cpp:553
 #, kde-format
 msgid ""
 "Uncheck this if you do not want to see icons and text in the image preview."
 msgstr ""
 
-#: core/utilities/setup/album/setupalbumview.cpp:339
+#: core/utilities/setup/album/setupalbumview.cpp:341
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Preview"
 msgstr "पूर्वावलोकन अन्त्य गर्नुहोस्"
 
-#: core/utilities/setup/album/setupalbumview.cpp:354
+#: core/utilities/setup/album/setupalbumview.cpp:356
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Full-Screen"
 msgstr "पूरा पर्दा मोडमा उपकरणपट्टी लुकाउनुहोस्"
 
-#: core/utilities/setup/album/setupalbumview.cpp:359
+#: core/utilities/setup/album/setupalbumview.cpp:361
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Mime Types"
 msgstr "छवि बचत गर्नुहोस्"
 
-#: core/utilities/setup/album/setupalbumview.cpp:362
+#: core/utilities/setup/album/setupalbumview.cpp:364
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "Categories"
 msgstr "मितिद्वारा"
 
-#: core/utilities/setup/album/setupalbumview.cpp:513
+#: core/utilities/setup/album/setupalbumview.cpp:515
 #, kde-format
 msgctxt "@info"
 msgid ""
