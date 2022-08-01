@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-25 00:46+0000\n"
+"POT-Creation-Date: 2022-08-01 00:44+0000\n"
 "PO-Revision-Date: 2007-08-24 15:27+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -3201,7 +3201,7 @@ msgstr "यो कागजातमा पाना छैन (तालिक�
 msgid "Invalid document. Sheet name is empty."
 msgstr "अवैद्य कागजात । पाना नाम खाली छ ।"
 
-#: core/Map.cpp:242 engine/MapBase.cpp:186
+#: core/Map.cpp:242 engine/MapBase.cpp:187
 #, kde-format
 msgid "Sheet%1"
 msgstr "पाना%1"
@@ -3364,15 +3364,15 @@ msgstr ""
 msgid "Related Functions"
 msgstr "<h2>सम्बन्धित प्रकार्य</h2><ul>"
 
-#: engine/Localization.cpp:237
-#, kde-format
-msgid "false"
-msgstr "बेठीक"
-
-#: engine/Localization.cpp:237
+#: engine/Localization.cpp:413
 #, kde-format
 msgid "true"
 msgstr "ठीक"
+
+#: engine/Localization.cpp:414
+#, kde-format
+msgid "false"
+msgstr "बेठीक"
 
 #: engine/SheetBase.cpp:343
 #, kde-format
@@ -18043,10 +18043,9 @@ msgstr "चयन गरिएका क्षेत्रमा तल्लो
 msgid "All Borders"
 msgstr "सबै किनारा"
 
-#: ui/CellToolBase.cpp:319 ui/CellToolBase.cpp:546
-#: ui/dialogs/FormulaDialog.cpp:84 ui/dialogs/FormulaDialog.cpp:190
-#: ui/dialogs/FormulaDialog.cpp:722 ui/dialogs/ValidityDialog.cpp:64
-#: ui/FilterPopup.cpp:55
+#: ui/CellToolBase.cpp:319 ui/dialogs/FormulaDialog.cpp:84
+#: ui/dialogs/FormulaDialog.cpp:190 ui/dialogs/FormulaDialog.cpp:722
+#: ui/dialogs/ValidityDialog.cpp:64 ui/FilterPopup.cpp:55
 #, kde-format
 msgid "All"
 msgstr "सबै"
@@ -18494,7 +18493,7 @@ msgstr "कक्ष हटाउनुहोस्..."
 msgid "Removes the cells from the spreadsheet"
 msgstr "स्प्रेडसिटबाट कक्ष हटाउनुहोस्"
 
-#: ui/CellToolBase.cpp:547
+#: ui/CellToolBase.cpp:546 ui/CellToolBase.cpp:547
 #, kde-format
 msgid "Clear All"
 msgstr "सबै खाली गर्नुहोस्"
@@ -18863,7 +18862,7 @@ msgstr "सूत्र चयन"
 msgid "Insert a function"
 msgstr "प्रकार्य घुसाउनुहोस्"
 
-#: ui/CellToolBase.cpp:730 ui/CellToolBase.cpp:2931
+#: ui/CellToolBase.cpp:730 ui/CellToolBase.cpp:2930
 #, kde-format
 msgid "Others..."
 msgstr "अन्य..."
@@ -19136,13 +19135,13 @@ msgstr "लिङ्क घुसाउनुहोस्"
 msgid "Edit Link"
 msgstr "लिङ्क सम्पादन गर्नुहोस्"
 
-#: ui/CellToolBase.cpp:2573 ui/CellToolBase.cpp:2585 ui/CellToolBase.cpp:2607
-#: ui/CellToolBase.cpp:2894 ui/CellToolBase.cpp:2906
+#: ui/CellToolBase.cpp:2572 ui/CellToolBase.cpp:2584 ui/CellToolBase.cpp:2606
+#: ui/CellToolBase.cpp:2893 ui/CellToolBase.cpp:2905
 #, kde-format
 msgid "You must select multiple cells."
 msgstr "तपाईँले बहुविध कक्ष चयन गर्नुपर्छ ।"
 
-#: ui/CellToolBase.cpp:2812
+#: ui/CellToolBase.cpp:2811
 #, fuzzy, kde-format
 #| msgid ""
 #| "No database drivers available.  To use this feature you need to install "
@@ -19154,7 +19153,7 @@ msgstr ""
 "डाटाबेस ड्राइभर उपलब्ध छैन ।  यो विशेषता प्रयोग गर्न तपाईँले आवश्यकिय Qt 3 डाटाबेस "
 "ड्राइभर स्थापना गर्नु आवश्यक हुन्छ ।"
 
-#: ui/CellToolBase.cpp:3395
+#: ui/CellToolBase.cpp:3394
 #, fuzzy
 #| msgid "Replace Named Area"
 msgctxt "(qtundo-format)"
@@ -19584,7 +19583,7 @@ msgctxt "(qtundo-format)"
 msgid "Remove Cells"
 msgstr "कक्ष हटाउनुहोस्"
 
-#: ui/commands/DeleteCommand.cpp:20
+#: ui/commands/DeleteCommand.cpp:22
 #, fuzzy
 #| msgid "Delete"
 msgctxt "(qtundo-format)"
@@ -19605,14 +19604,14 @@ msgctxt "(qtundo-format)"
 msgid "Decrease Indentation"
 msgstr "इन्डेन्ट घटाउनुहोस्"
 
-#: ui/commands/LinkCommand.cpp:25
+#: ui/commands/LinkCommand.cpp:23
 #, fuzzy
 #| msgid "Remove Link"
 msgctxt "(qtundo-format)"
 msgid "Remove Link"
 msgstr "लिङ्क हटाउनुहोस्"
 
-#: ui/commands/LinkCommand.cpp:25
+#: ui/commands/LinkCommand.cpp:23
 #, fuzzy
 #| msgid "Set Link"
 msgctxt "(qtundo-format)"
@@ -21617,26 +21616,6 @@ msgstr "कक्षको साइज"
 msgid "Cell or Named Area:"
 msgstr "नयाँ नामाकरण गरिएको क्षेत्र"
 
-#: ui/dialogs/LinkDialog.cpp:288
-#, kde-format
-msgid "Internet address is empty"
-msgstr "इन्टरनेट ठेगाना खाली छ"
-
-#: ui/dialogs/LinkDialog.cpp:290
-#, kde-format
-msgid "Mail address is empty"
-msgstr "मेल ठेगाना खाली छ"
-
-#: ui/dialogs/LinkDialog.cpp:292
-#, kde-format
-msgid "File name is empty"
-msgstr "फाइल नाम खाली छ"
-
-#: ui/dialogs/LinkDialog.cpp:294
-#, kde-format
-msgid "Destination cell is empty"
-msgstr "गन्तव्य कक्ष खाली छ"
-
 #: ui/dialogs/ListDialog.cpp:47
 #, kde-format
 msgid "Custom Lists"
@@ -23016,6 +22995,18 @@ msgstr ""
 #, kde-format
 msgid "Open Link?"
 msgstr "लिङ्क खोल्नुहुन्छ ?"
+
+#~ msgid "Internet address is empty"
+#~ msgstr "इन्टरनेट ठेगाना खाली छ"
+
+#~ msgid "Mail address is empty"
+#~ msgstr "मेल ठेगाना खाली छ"
+
+#~ msgid "File name is empty"
+#~ msgstr "फाइल नाम खाली छ"
+
+#~ msgid "Destination cell is empty"
+#~ msgstr "गन्तव्य कक्ष खाली छ"
 
 #~ msgid "You cannot change a protected sheet"
 #~ msgstr "तपाईँले सुरक्षण गरिएको पाना परिवर्तन गर्न सक्नुहुदैन ।"
