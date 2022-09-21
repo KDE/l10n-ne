@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-20 00:43+0000\n"
+"POT-Creation-Date: 2022-09-21 00:43+0000\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -9112,6 +9112,7 @@ msgid "Use Color Management for Printing"
 msgstr "मुद्रणका लागि रङ व्यवस्थापन प्रयोग गर्नुहोस्"
 
 #: core/dplugins/editor/file/print/printoptionspage.cpp:92
+#: core/libs/imgqsort/imagequalitysettings.cpp:454
 #: core/utilities/maintenance/maintenancedlg.cpp:343
 #: core/utilities/maintenance/maintenancedlg.cpp:363
 #, kde-format
@@ -33642,50 +33643,13 @@ msgstr "केन्द्र"
 msgid "Select All"
 msgstr "सबै चयन गर्नुहोस्"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:127
-#, kde-format
-msgctxt "@label"
-msgid ""
-"These settings determines the quality of an image and convert it into a "
-"score, stored in database. This property can be evaluated by two ways: using "
-"four basic factors sabotaging the images (blur, noise, exposure, and "
-"compression), or using a deep learning neural network engine. The first one "
-"helps to determine whether images are distorted by the basic factors, "
-"however it demands some drawbacks as fine-tuning from the user’s side and it "
-"cannot work along the aesthetic image processing. The second one uses an IA "
-"approach based on %1 model to predict the score. As deep learning is an end-"
-"to-end solution, it doesn’t require hyper-parameter settings, and make this "
-"feature easier to use."
-msgstr ""
-
-#: core/libs/imgqsort/imagequalitysettings.cpp:136
-#, fuzzy, kde-format
-#| msgid "&Sort Images"
-msgctxt "@label"
-msgid "aesthetic image quality"
-msgstr "छवि क्रमबद्ध गर्नुहोस्"
-
-#: core/libs/imgqsort/imagequalitysettings.cpp:141
-#, fuzzy, kde-format
-msgctxt "@option:check"
-msgid "Enable Image Quality Sorting"
-msgstr "छवि सम्पादक"
-
-#: core/libs/imgqsort/imagequalitysettings.cpp:142
-#, fuzzy, kde-format
-msgctxt "@info:tooltip"
-msgid ""
-"Enable this option to assign automatically Pick Labels based on image "
-"quality."
-msgstr "<p>अभिमुखीकरणको सेटिङ स्वचालित गर्न यो विकल्प सक्षम पार्नुहोस् ।"
-
-#: core/libs/imgqsort/imagequalitysettings.cpp:155
+#: core/libs/imgqsort/imagequalitysettings.cpp:124
 #, kde-format
 msgctxt "@option:check"
 msgid "Assign 'Rejected' Label to Low Quality Pictures"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:156
+#: core/libs/imgqsort/imagequalitysettings.cpp:125
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -33693,13 +33657,13 @@ msgid ""
 "assigned to Rejected label."
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:168
+#: core/libs/imgqsort/imagequalitysettings.cpp:137
 #, kde-format
 msgctxt "@option:check"
 msgid "Assign 'Pending' Label to Medium Quality Pictures"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:169
+#: core/libs/imgqsort/imagequalitysettings.cpp:138
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -33707,13 +33671,13 @@ msgid ""
 "be assigned to Pending label."
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:181
+#: core/libs/imgqsort/imagequalitysettings.cpp:150
 #, kde-format
 msgctxt "@option:check"
 msgid "Assign 'Accepted' Label to High Quality Pictures"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:182
+#: core/libs/imgqsort/imagequalitysettings.cpp:151
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -33721,13 +33685,13 @@ msgid ""
 "be assigned to Accepted label."
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:195
+#: core/libs/imgqsort/imagequalitysettings.cpp:164
 #, kde-format
 msgctxt "@option:radio"
 msgid "Detect Aesthetic Image using Deep Learning"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:197
+#: core/libs/imgqsort/imagequalitysettings.cpp:166
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -33735,13 +33699,13 @@ msgid ""
 "The aesthetic detection engine use deep learning model to classify images"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:202
+#: core/libs/imgqsort/imagequalitysettings.cpp:171
 #, kde-format
 msgctxt "@option:radio"
 msgid "Detect Quality Using Basic Factors"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:204
+#: core/libs/imgqsort/imagequalitysettings.cpp:173
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -33749,124 +33713,149 @@ msgid ""
 "exposure, and compression)."
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:215
+#: core/libs/imgqsort/imagequalitysettings.cpp:184
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Rejected threshold:"
 msgstr "रेन्डरिङ इन्टेन्ट:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:220
+#: core/libs/imgqsort/imagequalitysettings.cpp:189
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Threshold below which all pictures are assigned Rejected Label"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:222
+#: core/libs/imgqsort/imagequalitysettings.cpp:191
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Pending threshold:"
 msgstr "रेन्डरिङ इन्टेन्ट:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:227
+#: core/libs/imgqsort/imagequalitysettings.cpp:196
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Threshold below which all pictures are assigned Pending Label"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:229
+#: core/libs/imgqsort/imagequalitysettings.cpp:198
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Accepted threshold:"
 msgstr "रेन्डरिङ इन्टेन्ट:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:234
+#: core/libs/imgqsort/imagequalitysettings.cpp:203
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Threshold above which all pictures are assigned Accepted Label"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:236
+#: core/libs/imgqsort/imagequalitysettings.cpp:205
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Detect Blur"
 msgstr "एल्बम चयन गर्नुहोस्"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:237
+#: core/libs/imgqsort/imagequalitysettings.cpp:206
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Detect the amount of blur in the images passed to it"
 msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:239
+#: core/libs/imgqsort/imagequalitysettings.cpp:208
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Blur Weight:"
 msgstr "चम्किलोपन:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:244
+#: core/libs/imgqsort/imagequalitysettings.cpp:213
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Weight to assign to Blur Algorithm"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:246
+#: core/libs/imgqsort/imagequalitysettings.cpp:215
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Detect Noise"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:247
+#: core/libs/imgqsort/imagequalitysettings.cpp:216
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Detect the amount of noise in the images passed to it"
 msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:249
+#: core/libs/imgqsort/imagequalitysettings.cpp:218
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Noise Weight:"
 msgstr "उचाइ:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:254
+#: core/libs/imgqsort/imagequalitysettings.cpp:223
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Weight to assign to Noise Algorithm"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:256
+#: core/libs/imgqsort/imagequalitysettings.cpp:225
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Detect Compression"
 msgstr "PNG सङ्कुचन:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:257
+#: core/libs/imgqsort/imagequalitysettings.cpp:226
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Detect the amount of compression in the images passed to it"
 msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:259
+#: core/libs/imgqsort/imagequalitysettings.cpp:228
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Compression Weight:"
 msgstr "PNG सङ्कुचन:"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:264
+#: core/libs/imgqsort/imagequalitysettings.cpp:233
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Weight to assign to Compression Algorithm"
 msgstr ""
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:266
+#: core/libs/imgqsort/imagequalitysettings.cpp:235
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Detect Under and Over Exposure"
 msgstr "कुनै पनि चयन नगर्नुहोस्"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:267
+#: core/libs/imgqsort/imagequalitysettings.cpp:236
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Detect if the images are under-exposed or over-exposed"
+msgstr ""
+
+#: core/libs/imgqsort/imagequalitysettings.cpp:450
+#, fuzzy, kde-format
+#| msgid "Revert to default settings"
+msgctxt "@option:radio"
+msgid "Use default settings"
+msgstr "पूर्वनिर्धारित सेटिङ उल्टाउनुहोस्"
+
+#: core/libs/imgqsort/imagequalitysettings.cpp:451
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use the default quality sorting parameters configured in Setup dialog."
+msgstr ""
+
+#: core/libs/imgqsort/imagequalitysettings.cpp:458
+#, fuzzy, kde-format
+msgctxt "@option:radio"
+msgid "Use custom settings"
+msgstr "अनुकूल"
+
+#: core/libs/imgqsort/imagequalitysettings.cpp:459
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use custom parameters to perform quality sorting instead default one."
 msgstr ""
 
 #: core/libs/iojobs/iojob.cpp:70
@@ -35104,13 +35093,13 @@ msgctxt "info"
 msgid "Binary data %1 bytes"
 msgstr ""
 
-#: core/libs/metadataengine/exiftool/exiftoolprocess.cpp:377
+#: core/libs/metadataengine/exiftool/exiftoolprocess.cpp:412
 #, fuzzy, kde-format
 #| msgid "File does not exist"
 msgid "ExifTool does not exists or exec permission is missing"
 msgstr "फाइल अवस्थित छैन"
 
-#: core/libs/metadataengine/exiftool/exiftoolprocess.cpp:391
+#: core/libs/metadataengine/exiftool/exiftoolprocess.cpp:426
 #, fuzzy, kde-format
 #| msgid "File does not exist"
 msgid "Perl does not exists or exec permission is missing"
@@ -41277,7 +41266,7 @@ msgid "Gowtham Ashok"
 msgstr ""
 
 #: core/libs/widgets/mainview/daboutdata.cpp:214
-#: core/utilities/maintenance/imagequalitysorter.cpp:106
+#: core/utilities/maintenance/imagequalitysorter.cpp:108
 #: core/utilities/maintenance/maintenancedlg.cpp:345
 #, fuzzy, kde-format
 msgid "Image Quality Sorter"
@@ -41904,7 +41893,7 @@ msgctxt "@action: button"
 msgid "Open Setup Dialog..."
 msgstr "डाउनलोड संवाद खोल्दा"
 
-#: core/libs/widgets/metadata/exiftool/exiftoollistview.cpp:249
+#: core/libs/widgets/metadata/exiftool/exiftoollistview.cpp:248
 #: core/libs/widgets/metadata/exiv2/metadatalistview.cpp:138
 #, fuzzy, kde-format
 msgid ""
@@ -60561,7 +60550,7 @@ msgstr "छवि सम्पादक"
 msgctxt "@title"
 msgid ""
 "Image Quality Sorter Settings\n"
-"Customize settings to perform image triaging by quality"
+"Customize default settings to perform image triaging by quality"
 msgstr ""
 
 #: core/utilities/setup/setup.cpp:206
@@ -60991,6 +60980,29 @@ msgid ""
 "li><li>~/.local/share/icc/</li><li>~/.color/icc/</li></ul>On your system, "
 "currently these paths exist and are scanned:<ul><li>%1</li></ul>"
 msgstr ""
+
+#: core/utilities/setup/setupimagequalitysorter.cpp:54
+#, kde-format
+msgctxt "@label"
+msgid ""
+"These settings determines the quality of an image and convert it into a "
+"score, stored in database. This property can be evaluated by two ways: using "
+"four basic factors sabotaging the images (blur, noise, exposure, and "
+"compression), or using a deep learning neural network engine. The first one "
+"helps to determine whether images are distorted by the basic factors, "
+"however it demands some drawbacks as fine-tuning from the user’s side and it "
+"cannot work along the aesthetic image processing. The second one uses an IA "
+"approach based on %1 model to predict the score. As deep learning is an end-"
+"to-end solution, it doesn’t require hyper-parameter settings, and make this "
+"feature easier to use."
+msgstr ""
+
+#: core/utilities/setup/setupimagequalitysorter.cpp:63
+#, fuzzy, kde-format
+#| msgid "&Sort Images"
+msgctxt "@label"
+msgid "aesthetic image quality"
+msgstr "छवि क्रमबद्ध गर्नुहोस्"
 
 #: core/utilities/setup/setuplighttable.cpp:91
 #, kde-format
@@ -61477,6 +61489,18 @@ msgstr "<p>सबै फिल्टर परिमितिहरूलाई 
 msgctxt "@info"
 msgid "Do you want to reset all video settings to the default value?"
 msgstr "<p>सबै फिल्टर परिमितिहरूलाई तिनीहरूको पूर्वनिर्धारित मानमा रिसेट गर्नुहोस् ।"
+
+#, fuzzy
+#~ msgctxt "@option:check"
+#~ msgid "Enable Image Quality Sorting"
+#~ msgstr "छवि सम्पादक"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "Enable this option to assign automatically Pick Labels based on image "
+#~ "quality."
+#~ msgstr "<p>अभिमुखीकरणको सेटिङ स्वचालित गर्न यो विकल्प सक्षम पार्नुहोस् ।"
 
 #, fuzzy
 #~| msgid "digiKam"
@@ -64147,9 +64171,6 @@ msgstr "<p>सबै फिल्टर परिमितिहरूलाई 
 #, fuzzy
 #~ msgid "Seconds to fine tune camera offset."
 #~ msgstr "माउन्ट गरिएको क्यामेरा"
-
-#~ msgid "Revert to default settings"
-#~ msgstr "पूर्वनिर्धारित सेटिङ उल्टाउनुहोस्"
 
 #, fuzzy
 #~ msgctxt "@action:inmenu"
