@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-22 00:42+0000\n"
+"POT-Creation-Date: 2022-09-23 00:42+0000\n"
 "PO-Revision-Date: 2007-08-19 14:42+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -6510,6 +6510,27 @@ msgctxt "@info"
 msgid ""
 "<para>This Batch Queue Manager tool can apply metadata template over images."
 "</para>"
+msgstr "कलरस्पेस"
+
+#: core/dplugins/bqm/metadata/qualitysort/qualitysortplugin.cpp:46
+#, fuzzy, kde-format
+msgctxt "@title"
+msgid "Image Quality Sort"
+msgstr "छवि सम्पादक"
+
+#: core/dplugins/bqm/metadata/qualitysort/qualitysortplugin.cpp:61
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "A tool to assign pick label metadata by image quality"
+msgstr "<p>अभिमुखीकरणको सेटिङ स्वचालित गर्न यो विकल्प सक्षम पार्नुहोस् ।"
+
+#: core/dplugins/bqm/metadata/qualitysort/qualitysortplugin.cpp:66
+#, fuzzy, kde-kuit-format
+#| msgid "Color Space"
+msgctxt "@info"
+msgid ""
+"<para>This Batch Queue Manager tool will assign a pick label metadata value "
+"by parsing image and estimate the quality.</para>"
 msgstr "कलरस्पेस"
 
 #: core/dplugins/bqm/metadata/removemetadata/removemetadata.cpp:103
@@ -21303,7 +21324,7 @@ msgstr ""
 msgid "Slideshow"
 msgstr "स्लाइड प्रर्दशन"
 
-#: core/dplugins/generic/view/slideshow/common/slideshowloader.cpp:664
+#: core/dplugins/generic/view/slideshow/common/slideshowloader.cpp:665
 #, fuzzy, kde-format
 msgctxt ""
 "Reason for inhibiting the screensaver activation, when the presentation mode "
@@ -33786,10 +33807,13 @@ msgid "Detect the amount of blur in the images passed to it"
 msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
 
 #: core/libs/imgqsort/imagequalitysettings.cpp:208
+#: core/libs/imgqsort/imagequalitysettings.cpp:218
+#: core/libs/imgqsort/imagequalitysettings.cpp:228
 #, fuzzy, kde-format
+#| msgid "Height:"
 msgctxt "@label"
-msgid "Blur Weight:"
-msgstr "चम्किलोपन:"
+msgid "Weight:"
+msgstr "उचाइ:"
 
 #: core/libs/imgqsort/imagequalitysettings.cpp:213
 #, kde-format
@@ -33809,12 +33833,6 @@ msgctxt "@info:tooltip"
 msgid "Detect the amount of noise in the images passed to it"
 msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
 
-#: core/libs/imgqsort/imagequalitysettings.cpp:218
-#, fuzzy, kde-format
-msgctxt "@label"
-msgid "Noise Weight:"
-msgstr "उचाइ:"
-
 #: core/libs/imgqsort/imagequalitysettings.cpp:223
 #, kde-format
 msgctxt "@info:tooltip"
@@ -33832,12 +33850,6 @@ msgstr "PNG सङ्कुचन:"
 msgctxt "@info:tooltip"
 msgid "Detect the amount of compression in the images passed to it"
 msgstr "<p>छवि सम्पादक क्षेत्रमा प्रयोग गर्नका लागि पृष्ठभूमि रङ अनुकूलन गर्नुहोस् ।"
-
-#: core/libs/imgqsort/imagequalitysettings.cpp:228
-#, fuzzy, kde-format
-msgctxt "@label"
-msgid "Compression Weight:"
-msgstr "PNG सङ्कुचन:"
 
 #: core/libs/imgqsort/imagequalitysettings.cpp:233
 #, kde-format
@@ -60980,18 +60992,18 @@ msgstr ""
 msgctxt "@label"
 msgid ""
 "These settings determines the quality of an image and convert it into a "
-"score, stored in database. This property can be evaluated by two ways: using "
-"four basic factors sabotaging the images (blur, noise, exposure, and "
-"compression), or using a deep learning neural network engine. The first one "
-"helps to determine whether images are distorted by the basic factors, "
-"however it demands some drawbacks as fine-tuning from the user’s side and it "
-"cannot work along the aesthetic image processing. The second one uses an IA "
-"approach based on %1 model to predict the score. As deep learning is an end-"
-"to-end solution, it doesn’t require hyper-parameter settings, and make this "
-"feature easier to use."
+"score, stored in database as Pick Label property. This information can be "
+"evaluated by two ways: using four basic factors sabotaging the images (blur, "
+"noise, exposure, and compression), or using a deep learning neural network "
+"engine. The first one helps to determine whether images are distorted by the "
+"basic factors, however it demands some drawbacks as fine-tuning from the "
+"user’s side and it cannot work along the aesthetic image processing. The "
+"second one uses an IA approach based on %1 model to predict the score. As "
+"deep learning is an end-to-end solution, it doesn’t require hyper-parameter "
+"settings, and make this feature easier to use."
 msgstr ""
 
-#: core/utilities/setup/setupimagequalitysorter.cpp:63
+#: core/utilities/setup/setupimagequalitysorter.cpp:64
 #, fuzzy, kde-format
 #| msgid "&Sort Images"
 msgctxt "@label"
@@ -61485,16 +61497,24 @@ msgid "Do you want to reset all video settings to the default value?"
 msgstr "<p>सबै फिल्टर परिमितिहरूलाई तिनीहरूको पूर्वनिर्धारित मानमा रिसेट गर्नुहोस् ।"
 
 #, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Blur Weight:"
+#~ msgstr "चम्किलोपन:"
+
+#, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Noise Weight:"
+#~ msgstr "उचाइ:"
+
+#, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Compression Weight:"
+#~ msgstr "PNG सङ्कुचन:"
+
+#, fuzzy
 #~ msgctxt "@option:check"
 #~ msgid "Enable Image Quality Sorting"
 #~ msgstr "छवि सम्पादक"
-
-#, fuzzy
-#~ msgctxt "@info:tooltip"
-#~ msgid ""
-#~ "Enable this option to assign automatically Pick Labels based on image "
-#~ "quality."
-#~ msgstr "<p>अभिमुखीकरणको सेटिङ स्वचालित गर्न यो विकल्प सक्षम पार्नुहोस् ।"
 
 #, fuzzy
 #~| msgid "digiKam"
